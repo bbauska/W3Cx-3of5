@@ -4,7 +4,7 @@
 > ### - About W3C
 > ### - Why accessibility is important
 > ### - Why internationalization is important
-> ### - W3C tools
+> ### - W3C tools
 
 ## Course Introduction and Practical Information
 > ### * Course syllabus
