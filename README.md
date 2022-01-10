@@ -2,7 +2,7 @@
 
 ## About W3C and the Web
 > ### - About W3C
-> ### = Why accessibility is important
+> ### - Why accessibility is important
 > ### - Why internationalization is important
 > ### - W3C tools
 
