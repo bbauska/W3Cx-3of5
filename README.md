@@ -1,21 +1,23 @@
 # HTML5.1x - HTML5 Coding Essentials and Best Practices - W3Cx  
 
-## About W3C and the Web (OPTIONAL)  
- - About W3C      
- - Why accessibility is important      
- - Why internationalization is important      
- - W3C tools  
+## About W3C and the Web
+> ### - About W3C
+> ### = Why accessibility is important
+> ### - Why internationalization is important
+> ### - W3C tools
 
-## Course Introduction and Practical Information    
-- Course syllabus      
-- Getting around the course      
-- Grading and due dates      
-- Course tools      
-- Welcome survey  
+## Course Introduction and Practical Information
+> ### * Course syllabus
+> ### * Getting around the course
+> ### * Grading and due dates
+> ### * Course tools
+> ### * Welcome survey
+
+# [Module 3: Specific HTML targeting with CSS selectors](https://github.com/bbauska/CSS.0x-W3Cx/blob/master/module3/module3.md)
 
 ## Week 1: HTML5 Basics      
-1.1 Video introduction - Week 1      
-1.2 From HTML1.0 to HTML5      
+>  ### 1.1 Video introduction - Week 1
+>1.2 From HTML1.0 to HTML5      
 1.3 New structural elements      
 1.4 Other elements and attributes      
 1.5 Microdata      
