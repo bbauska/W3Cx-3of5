@@ -1,79 +1,93 @@
-**W3Cx-3of5-HTML5.1x -- Coding Essentials** and Best Practices
+## **W3Cx-3of5-HTML5.1x -- Coding Essentials** and Best Practices
+<!------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------- readme.md in W3Cx-3of5.bauska.org -------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------ linux logo ------------------------------------------------------->
+<p align="center">
+<img src="/images/image001.png?raw=true"
+	alt="W3Cx logo"
+	width="40%">
+&nbsp;
+<br/>
+<!-- [Decentraland](https://www.youtube.com/watch?app=desktop&v=qGgYEwJrw0w/).  --->
+
+</p>  
+<br/>
 <!-------------------------------------------------------------------------------------------------
 
 # W3Cx-3of5-HTML5.1x - HTML5 Coding Essentials and Best Practices
 
-#### W3Cx: HTML5 Coding Essentials and Best Practices
+### W3Cx: HTML5 Coding Essentials and Best Practices
 
 ## Course outline
 
 ## About W3C and the Web
-> #### - About W3C
-> #### - Why accessibility is important
-> #### - Why internationalization is important
-> #### - W3C tools
+> ### - About W3C
+> ### - Why accessibility is important
+> ### - Why internationalization is important
+> ### - W3C tools
 
 ## Course Introduction and Practical Information
-> #### * Course syllabus
-> #### * Getting around the course
-> #### * Grading and due dates
-> #### * Course tools
-> #### * Welcome survey
+> ### * Course syllabus
+> ### * Getting around the course
+> ### * Grading and due dates
+> ### * Course tools
+> ### * Welcome survey
 
-## [Module 1: HTML5 Basics](https://github.com/bbauska/W3Cx-3of5-HTML5.1x/blob/master/modules/module1.md)
-> #### 1.1 Introduction - Module 1
-> #### 1.2 From HTML1.0 to HTML5
-> #### 1.3 New structural elements
-> #### 1.4 Other elements and attributes
-> #### 1.5 Microdata
-> #### 1.6 Exercises
+## [**Module 1: HTML5 Basics**](#ch1)
+>### 1.1 [**Introduction - Module 1**](#ch1-1)
+>### 1.2 [**From HTML1.0 to HTML5**](#ch1-2)
+>### 1.3 [**New structural elements**](#ch1-3)
+>### 1.4 [**Other elements and attributes**](#ch1-4)
+>### 1.5 [**Microdata**](#ch1-5)
+>### 1.6 [**Exercises**](#ch1-6)
 
-## [Module 2: HTML5 Multimedia](https://github.com/bbauska/W3Cx-3of5-HTML5.1x/blob/master/modules/module2.md)
-> #### 2.1 Introduction - Module 2
-> #### 2.2 Streaming multimedia content: the video and audio elements      
-> #### 2.3 Subtitles and closed captions
-> #### 2.4 Enhanced HTML5 media players and frameworks
-> #### 2.5 Webcam, microphone: the getUserMedia API
-> #### 2.6 Exercises - Module 2
+## [**Module 2: HTML5 Multimedia**](#ch3)
+>### 2.1 [**Introduction - Module 2**](#ch2-1)
+>### 2.2 [**Streaming multimedia content: the video and audio elements**](#ch2-2)
+>### 2.3 [**Subtitles and closed captions**](#ch2-3)
+>### 2.4 [**Enhanced HTML5 media players and frameworks**](#ch2-4)
+>### 2.5 [**Webcam, microphone: the getUserMedia API**](#ch2-5)
+>### 2.6 [**Exercises - Module 2**](#ch2-6)
 
-## [Module 3: HTML5 Graphics](https://github.com/bbauska/W3Cx-3of5-HTML5.1x/blob/master/modules/module3.md)
-> #### 3.1 Introduction - Module 3
-> #### 3.2 Basics of HTML5 canvas
-> #### 3.3 Immediate drawing mode: rectangles, text, images
-> #### 3.4 Path drawing mode: lines, circles, arcs, curves and other path drawing methods
-> #### 3.5 Colors, gradients, patterns, shadows, etc.
-> #### 3.6 Exercises - Module 3
+## [**Module 3: HTML5 Graphics**](#ch3)
+>### 3.1 [**Introduction - Module 3**](#ch3-1)
+>### 3.2 [**Basics of HTML5 canvas**](#ch3-2)
+>### 3.3 [**Immediate drawing mode: rectangles, text, images**](#ch3-3)
+>### 3.4 [**Path drawing mode: lines, circles, arcs, curves and other path drawing methods**](#ch3-4)
+>### 3.5 [**Colors, gradients, patterns, shadows, etc.**](#ch3-5)
+>### 3.6 [**Exercises - Module 3**](#ch3-6)
 
-## [Module 4: HTML5 Animation](https://github.com/bbauska/W3Cx-3of5-HTML5.1x/blob/master/modules/module4.md)
-> #### 4.1 Introduction - Module 4
-> #### 4.2 Basic animation techniques
-> #### 4.3 Canvas and user interaction (keyboard, mouse)
-> #### 4.4 A glimpse of advanced canvas functionalities
-> #### 4.5 Exercises - Module 4
+## [**Module 4: HTML5 Animation**](#ch4)
+>### 4.1 [**Introduction - Module 4**](#ch4-1)
+>### 4.2 [**Basic animation techniques**](#ch4-2)
+>### 4.3 [**Canvas and user interaction (keyboard, mouse)**](#ch4-3)
+>### 4.4 [**A glimpse of advanced canvas functionalities**](#ch4-4)
+>### 4.5 [**Exercises - Module 4**](#ch4-5)
 
-## [Module 5: HTML5 Forms](https://github.com/bbauska/W3Cx-3of5-HTML5.1x/blob/master/modules/module5.md)
-> #### 5.1 Introduction - Module 5
-> #### 5.2 Introduction to HTML5 Forms
-> #### 5.3 Accessible forms
-> #### 5.4 New <input> types
-> #### 5.5 New forms attributes
-> #### 5.6 New elements related to forms
-> #### 5.7 Form validation API
-> #### 5.8 Exercises - Module 5
+## [**Module 5: HTML5 Forms**](#ch5)
+>### 5.1 [**Introduction - Module 5**](#ch5-1)
+>### 5.2 [**Introduction to HTML5 Forms**](#ch5-2)
+>### 5.3 [**Accessible forms**](#ch5-3)
+>### 5.4 [**New <input> types**](#ch5-4)
+>### 5.5 [**New forms attributes**](#ch5-5)
+>### 5.6 [**New elements related to forms**](#ch5-6)
+>### 5.7 [**Form validation API**](#ch5-7)
+>### 5.8 [**Exercises - Module 5**](#ch5-8)
 
-## [Module 6: HTML5 Basic APIs](https://github.com/bbauska/W3Cx-3of5-HTML5.1x/blob/master/modules/module6.md)
-> #### 6.1 Introduction - Module 6
-> #### 6.2 Introduction to HTML5 APIs
-> #### 6.3 HTML5 Cache
-> #### 6.4 The Web Storage API
-> #### 6.5 The File API
-> #### 6.6 The geolocation API
+## [**Module 6: HTML5 Basic APIs**](#ch6)
+>### 6.1 [**Introduction - Module 6**](#ch6-1)
+>### 6.2 [**Introduction to HTML5 APIs**](#ch6-2)
+>### 6.3 [**HTML5 Cache**](#ch6-3)
+>### 6.4 [**The Web Storage API**](#ch6-4)
+>### 6.5 [**The File API**](#ch6-5)
+>### 6.6 [**The geolocation API**](#ch6-6)
 
+**[`^        back to top        ^`](#table-of-contents)**
 
+<h2 id="ch1">Chapter 1. Introduction to Blockchain</h2>
 
 -------------------------------------------------------------------------------------------------->
-![](./images/image001.png){width="5.0in"
-height="2.912457349081365in"}
 
 ## Course information
 
@@ -29377,7 +29391,7 @@ reasons the embedded version cannot run in this page):
 > .setPopupContent(r.html \|\| r.name)
 >
 > .openPopup();
->
+>29,419
 > } else {
 >
 > marker = L.marker(r.center)
