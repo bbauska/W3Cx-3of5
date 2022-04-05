@@ -9,9 +9,9 @@
 &nbsp;
 <br/>
 
-##Course outline
+## Course outline
 
-## [**About W3C and the Web**](@cha)
+## [**About W3C and the Web**](#cha)
 >### - [**About W3C**](#cha-1)
 >### - [**Why accessibility is important**](#cha-2)
 >### - [**Why internationalization is important**](#cha-3)
@@ -75,105 +75,102 @@
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h2 id="ch1">Chapter 1. Introduction to Blockchain</h2>
-
 ## Course information
 
-## [Welcome to \"HTML5 Coding Essentials and Best Practices\"](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@fe4b04eac16347dface5e174795aae7b)
+## [Welcome to \"HTML5 Coding Essentials and Best Practices\"]
 
--   [Course outline](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@f986688cf5ae4d9d918008d22dd8ca4f)
+-   Course outline
 
--   [Course forums](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@8eda836bdae64ea6a7049167d3df0103)
+-   Course forums
 
--   [Course tools](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@6e08852c95b64d048f80b551d6710d75)
+-   Course tools
 
--   [About W3C and the Web](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@32d5132514f445e5ae64ff0c90f42817)
+-   About W3C and the Web
 
 W3C has designed a [**\"Front-End Web Developer\" (FEWD) Professional Certificate**](https://www.edx.org/professional-certificate/front-end-web-developer-9) where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript. The **W3C FEWD** program is composed of 5 courses:
 
-1.  **5.0x [HTML5 and CSS Fundamentals](https://www.edx.org/course/html5-and-css-fundamentals)**
+1.  **5.0x HTML5 and CSS Fundamentals**
 
-2.  **This course: 5.1x [HTML5 Coding Essentials and Best Practices](https://www.edx.org/course/html5-coding-essentials-and-best-practices)**
+2.  **This course: 5.1x HTML5 Coding Essentials and Best Practices**
 
-3.  **5.2x [HTML5 Apps and Games](https://www.edx.org/course/html5-apps-and-games)**
+3.  **5.2x HTML5 Apps and Games**
 
-4.  [**CSS Basics**](https://www.edx.org/course/css-basics)
+4.  **CSS Basics**
 
-5.  [**JavaScript Introduction**](https://www.edx.org/course/javascript-introduction)
+5.  **JavaScript Introduction**
 
 **\
 **Table of Contents -- **W3Cx-HTML5.1x** -- **Coding Essentials and Best Practices**
 
 Module 1: HTML5 Basics
 
-a)  [**Video introduction - Module 1**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@f0615074b42f41f78ae9551d1b1993fb)
+a)  [**Video introduction - Module 1**
 
-b)  [**From HTML1.0 to HTML5**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@804b2e29c27e47f880b2f9558da428f0)
+b)  [**From HTML1.0 to HTML5**
 
-c)  [**Structural elements**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@ef075a883df1447698d557fe6f6222d0)
+c)  [**Structural elements**
 
-d)  [**Other elements and attributes**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@c991659e48ff4f7184ca5a7e19a5bd35)
+d)  **Other elements and attributes**
 
-e)  [**Microdata**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@3f763dcde9b44f109f3acf8797c0aa7a)
+e)  **Microdata**
 
 Module 2: HTML5 Multimedia
 
-a)  [**Video introduction - Module 2**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@2b267c3e0f4441d08a4e6a8b6c02b28a)
+a)  [**Video introduction - Module 2**
 
-b)  [**Streaming multimedia content**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@fc45a01ee7174e14854f7dfa92f06e98)
+b)  [**Streaming multimedia content**
 
-c)  [**Subtitles and closed captions**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@218efad8c472443393765b9d7bdcdb61)
+c)  [**Subtitles and closed captions**
 
-d)  [**Webcam, microphone: the getUserMedia API**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@4aa31cdb46a84cacab3f1846b871d646)
+d)  [**Webcam, microphone: the getUserMedia API**
 
 Module 3: HTML5 Graphics
 
-a)  [**Video introduction - Module 3**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@ded2a06bb07a49d391b603255fc5e33a)
+a)  [**Video introduction - Module 3**
 
-b)  [**Basics of HTML5 canvas**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@e3a3a3f09eec4a7b82b2ac4661014cf9)
+b)  [**Basics of HTML5 canvas**
 
-c)  [**Immediate drawing mode**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@ae2f57da0ea74a5891cc0e593e0c22ce)
+c)  [**Immediate drawing mode**
 
-d)  [**Path drawing mode**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@6bdf6b332e5241518b831fb0c5d2d8bc)
+d)  [**Path drawing mode**
 
-e)  [**Colors, gradients, patterns, etc.**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@055d8d10959d42659513be618efb7536)
+e)  [**Colors, gradients, patterns, etc.**
 
 Module 4: HTML5 Animations
 
-a)  ##### [**Video introduction - Module 4**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@d0e624484fb34460b8a3b739550a0247)
+a)  ##### [**Video introduction - Module 4**
 
-b)  ##### [**Basic animation techniques**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@c355200d650c46da80dcccfce5ac3cff)
+b)  ##### [**Basic animation techniques**
 
-c)  ##### [**Canvas and user interaction**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@f5e2205a990443909491195f3f38811f)
+c)  ##### **Canvas and user interaction**
 
 Module 5: HTML5 Forms
 
-a)  ##### [**Video introduction - Module 5**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@debf471862e34c13b6caafbbf09c8674)
+a)  ##### **Video introduction - Module 5**
 
-b)  ##### [**Elements and attributes**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@96341535caab41b6ba7305edb5cc5c85)
+b)  ##### **Elements and attributes**
 
-c)  ##### [**Accessible forms**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@44531be3beee456bb3c0a2c8b03e9aeb)
+c)  ##### **Accessible forms**
 
-d)  ##### [**Input types**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@66d1519efebf474f9e44a38f27c87070)
+d)  ##### **Input types**
 
-e)  ##### [**Form attributes**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@ebf0549597664ec28143671d44fa0df2)
+e)  ##### **Form attributes**
 
-f)  ##### [**Elements related to forms**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@149dc9d071dc4ff786d8c588324b711c)
+f)  ##### **Elements related to forms**
 
-g)  ##### [**Form validation API**](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@bd7b248659f7435bad3fd68a6f650aeb)
+g)  ##### **Form validation API**
 
 Module 6: HTML5 Basic APIs
 
-a)  ##### [Video introduction - Module 6](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@0ddd743d9c2c41edad386a9512c9c06c)
+a)  ##### Video introduction - Module 6
 
-b)  ##### [The Web Storage API](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@85b967a0f6974cbc8bec616ab2f1652f)
+b)  ##### The Web Storage API
 
-c)  ##### [The File API](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@29136d039ef340beb2c5766d1819f47f)
+c)  ##### The File API
 
-d)  ##### [The Geolocation API](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@e51de6d1dea04e6e98074f40975b0be7)
+d)  ##### The Geolocation API
 
-## [Welcome to \"HTML5 Coding Essentials and Best Practices\"](https://learning.edx.org/course/course-v1:W3Cx+HTML5.1x+2T2020/block-v1:W3Cx+HTML5.1x+2T2020+type@sequential+block@fe4b04eac16347dface5e174795aae7b)
-
+## Welcome to \"HTML5 Coding Essentials and Best Practices\"
 This course is a natural follow up of the [CSS Basics](https://www.edx.org/course/css-basics) and  [HTML5 & CSS Fundamentals](https://www.edx.org/course/html5-and-css-fundamentals) courses. As such, required prerequisites are:
 
 -   Be comfortable putting together an HTML document,
