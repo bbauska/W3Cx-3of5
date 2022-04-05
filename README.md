@@ -12,12 +12,14 @@
 <h2 align="center">Course outline</h2>
 
 <h2>About W3C and the Web</h2>
+
 > ### - About W3C
 > ### - Why accessibility is important
 > ### - Why internationalization is important
 > ### - W3C tools
 
 <h2>Course Introduction and Practical Information</h2>
+
 > ### * Course syllabus
 > ### * Getting around the course
 > ### * Grading and due dates
