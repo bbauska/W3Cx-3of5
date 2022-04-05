@@ -9,22 +9,20 @@
 &nbsp;
 <br/>
 
-<h2 align="center">Course outline</h2>
+##Course outline
 
-<h2>About W3C and the Web</h2>
+## [**About W3C and the Web**](@cha)
+>### - [**About W3C**](#cha-1)
+>### - [**Why accessibility is important**](#cha-2)
+>### - [**Why internationalization is important**](#cha-3)
+>### - [**W3C tools**](#cha-4)
 
-> ### - About W3C
-> ### - Why accessibility is important
-> ### - Why internationalization is important
-> ### - W3C tools
-
-<h2>Course Introduction and Practical Information</h2>
-
-> ### * Course syllabus
-> ### * Getting around the course
-> ### * Grading and due dates
-> ### * Course tools
-> ### * Welcome survey
+## [**Course Introduction and Practical Information**](#chb)
+>### * [**Course syllabus**](#chb-1)
+>### * [**Getting around the course**](#chb-2)
+>### * [**Grading and due dates**](#chb-3)
+>### * [**Course tools**](#chb-4)
+>### * [**Welcome survey**](#chb-5)
 
 ## [**Module 1: HTML5 Basics**](#ch1)
 >### 1.1 [**Introduction - Module 1**](#ch1-1)
