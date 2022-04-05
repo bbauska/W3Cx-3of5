@@ -1,22 +1,23 @@
-## **W3Cx-HTML5.1x -- Coding Essentials** and Best Practices
+<h2 align="center"><b><i>W3Cx-HTML5.1x -- Coding Essentials</i></b> and Best Practices</h2>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- readme.md of W3Cx-3of5-Coding-Essentials ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image001.png?raw=true"
 	alt="W3Cx logo"
-	width="40%">
+	width="55%">
 &nbsp;
 <br/>
-## Course outline
 
-## About W3C and the Web
+<h2 align="center">Course outline</h2>
+
+<h2>About W3C and the Web</h2>
 > ### - About W3C
 > ### - Why accessibility is important
 > ### - Why internationalization is important
 > ### - W3C tools
 
-## Course Introduction and Practical Information
+<h2>Course Introduction and Practical Information</h2>
 > ### * Course syllabus
 > ### * Getting around the course
 > ### * Grading and due dates
