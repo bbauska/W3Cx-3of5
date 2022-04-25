@@ -4,8 +4,8 @@
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image001.png?raw=true"
-	alt="W3Cx logo"
-	width="55%">
+   alt="W3Cx logo"
+   width="55%">
 &nbsp;
 <br/>
 
@@ -88,87 +88,6 @@
 -   About W3C and the Web
 
 W3C has designed a [**\"Front-End Web Developer\" (FEWD) Professional Certificate**](https://www.edx.org/professional-certificate/front-end-web-developer-9) where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript. The **W3C FEWD** program is composed of 5 courses:
-
-1.  **5.0x HTML5 and CSS Fundamentals**
-
-2.  **This course: 5.1x HTML5 Coding Essentials and Best Practices**
-
-3.  **5.2x HTML5 Apps and Games**
-
-4.  **CSS Basics**
-
-5.  **JavaScript Introduction**
-
-**\
-**Table of Contents -- **W3Cx-HTML5.1x** -- **Coding Essentials and Best Practices**
-
-Module 1: HTML5 Basics
-
-a)  [**Video introduction - Module 1**
-
-b)  [**From HTML1.0 to HTML5**
-
-c)  [**Structural elements**
-
-d)  **Other elements and attributes**
-
-e)  **Microdata**
-
-Module 2: HTML5 Multimedia
-
-a)  [**Video introduction - Module 2**
-
-b)  [**Streaming multimedia content**
-
-c)  [**Subtitles and closed captions**
-
-d)  [**Webcam, microphone: the getUserMedia API**
-
-Module 3: HTML5 Graphics
-
-a)  [**Video introduction - Module 3**
-
-b)  [**Basics of HTML5 canvas**
-
-c)  [**Immediate drawing mode**
-
-d)  [**Path drawing mode**
-
-e)  [**Colors, gradients, patterns, etc.**
-
-Module 4: HTML5 Animations
-
-a)  ##### [**Video introduction - Module 4**
-
-b)  ##### [**Basic animation techniques**
-
-c)  ##### **Canvas and user interaction**
-
-Module 5: HTML5 Forms
-
-a)  ##### **Video introduction - Module 5**
-
-b)  ##### **Elements and attributes**
-
-c)  ##### **Accessible forms**
-
-d)  ##### **Input types**
-
-e)  ##### **Form attributes**
-
-f)  ##### **Elements related to forms**
-
-g)  ##### **Form validation API**
-
-Module 6: HTML5 Basic APIs
-
-a)  ##### Video introduction - Module 6
-
-b)  ##### The Web Storage API
-
-c)  ##### The File API
-
-d)  ##### The Geolocation API
 
 ## Welcome to \"HTML5 Coding Essentials and Best Practices\"
 This course is a natural follow up of the [CSS Basics](https://www.edx.org/course/css-basics) and  [HTML5 & CSS Fundamentals](https://www.edx.org/course/html5-and-css-fundamentals) courses. As such, required prerequisites are:
