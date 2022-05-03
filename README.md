@@ -94,13 +94,17 @@
 
 W3C has designed a [**\"Front-End Web Developer\" (FEWD) Professional Certificate**](https://www.edx.org/professional-certificate/front-end-web-developer-9) where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript. The **W3C FEWD** program is composed of 5 courses:
 
-## Welcome to \"HTML5 Coding Essentials and Best Practices\"
-This course is a natural follow up of the [CSS Basics](https://www.edx.org/course/css-basics) and  [HTML5 & CSS Fundamentals](https://www.edx.org/course/html5-and-css-fundamentals) courses. As such, required prerequisites are:
+1.	CSS Basics
+2.	5.0x HTML5 and CSS Fundamentals
+3.	This course: 5.1x HTML5 Coding Essentials and Best Practices
+4.	5.2x HTML5 Apps and Games
+5.	JavaScript Introduction
+
+<h3>Welcome to "HTML5 Coding Essentials and Best Practices"</h3>
+This course is a natural follow up of the [CSS Basics](https://www.edx.org/course/css-basics) and [HTML5 & CSS Fundamentals](https://www.edx.org/course/html5-and-css-fundamentals) courses. As such, required prerequisites are:
 
 -   Be comfortable putting together an HTML document,
-
 -   Have minimal familiarity with CSS,
-
 -   Basic knowledge of JavaScript and DOM APis is sufficient, and this course will include a recap of basics. You are also more than welcome to follow the [JavaScript Introduction](https://www.edx.org/course/javascript-introduction) course (introductory level).
 
 During this course, you will learn:
@@ -123,10 +127,12 @@ The HTML5 course team is thrilled to guide you in your learning experience. We a
 
 <h3>Online Code Editors:</h3>
 
-[JS Bin](https://jsbin.com](https://jsbin.com/)
+[JS Bin](https://jsbin.com)
+
 [CodePen Tutorial](https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843)
 
 [CodePen](https://codepen.io])
+
 [CodePen CSS Tutorial](https://css-tricks.com/video-screencasts/112-using-codepen/)
 
 <h3>Web Editors:</h3>
@@ -156,16 +162,6 @@ Here are a few possibilities for Web editors:
 <h3>Online Editors:</h3>
 
 To help you practice during the whole duration of the course, we use the following interactive online editors. Pretty much all the course\'s examples actually use these tools.
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------------- 02. jsbin logo ----------------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center">
-<img src="/images/image002.png?raw=true"
-   alt="JS Bin logo"
-   width="15%">
-&nbsp;
-<br/>
 
 [JS Bin](https://jsbin.com/)
 
@@ -306,7 +302,15 @@ W3C\'s primary activity is to develop protocols and guidelines that ensure long-
 
 ### A few history bits
 
-![Tim Berners-Lee at his desk in CERN, 1994](media/image10.jpeg){width="2.0in" height="2.0in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 10. Tim Berners-Lee, WWW developer ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image004.png?raw=true"
+   alt="Tim Berners-Lee at his desk in CERN, Switzerland, 1994"
+   width="15%">
+&nbsp;
+<br/>
 
 Tim Berners-Lee at his desk in CERN, 1994
 
@@ -470,7 +474,15 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 
 *Example*: See the W3C logo below. It contains a link that points to the W3C Web site. The text alternative is going to be a brief description of the link target.
 
-![](media/image11.png){width="1.1041666666666667in" height="0.65625in"}
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------------------- 11. W3C logo ------------------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image011.png?raw=true"
+   alt="W3C logo"
+   width="15%">
+&nbsp;
+<br/>
 
 <https://www.w3.org/Icons/w3c_home>
 
@@ -481,16 +493,14 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 > \</a\>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 12. HTML5 logo () ----------------------->
+<!--------------------------------------- 12. html5 logo ----------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image012.png?raw=true"
    alt="HTML5 logo"
-   width="55%">
+   width="15%">
 &nbsp;
 <br/>
-
-![](media/image12.png){width="1.8229166666666667in" height="2.3958333333333335in"}
 
 > \<!DOCTYPE html\>
 >
@@ -512,9 +522,17 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 >
 > \... \<!\-- The rest is content \--\>
 
-![Some of the new structural elements introduced by HTML5: section, article, etc.](media/image13.jpeg){width="5.0in" height="3.75in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------- 13. new structural elements in html5 ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image013.png?raw=true"
+   alt="Some of the new structural elements introduced by HTML5: section, article, etc."
+   width="55%">
+&nbsp;
+<br/>
 
-#### History
+<h3>History</h3>
 
 As Web site layouts evolve, HTML5 structural elements such as lists, paragraphs, tables, etc. show their limits. Today, many Web sites offer navigation menus, tabbed panels, headers, footers, and so on. The way these \"parts\"\' are implemented relies heavily on \<div\> and \<span\> elements with different id and class attributes, lots of CSS and lots of JavaScript code to apply custom styles and behaviors.
 
@@ -536,7 +554,7 @@ So various studies have been conducted in order to identify the most popular ids
 
 Quoting from this [article](https://dev.opera.com/articles/new-structural-elements-in-html5/): \"During the creation of HTML5, Ian Hickson used Google\'s tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA (\"Metadata Analysis and Mining Application\"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics\".
 
-#### New elements added to the HTML5 set
+<h3>New elements added to the HTML5 set</h3>
 
 The results of these surveys led to the addition of new structural elements in HTML5. For example, the very popular \<div class=\"header\"\> led to the creation of a \<header\> element, \<div class=\"aside\"\> to a \<aside\> element, etc.
 
@@ -570,7 +588,7 @@ And there is no \<content\> element even though the \<div class=\"content\"\>
 
 Read also at the end of this section about the new \<main\> element. This element is [part of the HTML5 recommendation](https://www.w3.org/TR/html5/grouping-content.html#the-main-element) and  an integral part of the HTML document structure.
 
-### External resources:
+<h3>External resources:</h3>
 
 -   A Smashing Magazine article: [Structural Semantics: The Importance Of HTML5 Sectioning Elements](https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/)
 
@@ -582,11 +600,19 @@ Let\'s study [an example we put on JsBin](https://jsbin.com/bucokav/edit?html,o
 
 #### Use a \<header\> at the top of the blog
 
-![image of the header element at the top of the blog](media/image14.jpeg){width="3.0104166666666665in" height="0.5in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 14. image of header element at top of blog --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image014.jpeg?raw=true"
+   alt="Image of the header element at the top of the blog"
+   width="25%">
+&nbsp;
+<br/>
 
 This is an example of one way to organize a blog. Here, we have designed the HTML page using a \<header\> element that contains the \"Simple HTML5 blog\" text that appears on top of the page.
 
-##### HTML code:
+<h4>HTML code:</h4>
 
 > \<!DOCTYPE html\>
 >
@@ -1244,9 +1270,17 @@ Let\'s clarify this by looking at some example code:
 
 The corresponding outline is:
 
-![outline of previous example](media/image26.jpeg){width="5.5in" height="2.4097714348206476in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 26. outline of previous example --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image026.jpeg?raw=true"
+   alt="Outline of previous example"
+   width="55%">
+&nbsp;
+<br/>
 
- In the above example, please note two things:
+In the above example, please note two things:
 
 1.  The outline shows an \"Untitled body\" at the root of the hierarchy,
 
@@ -1308,7 +1342,15 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 
 The outline of the last example looks like this:
 
-![outline of last example](media/image27.jpeg){width="5.0in" height="1.7697648731408573in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 27. outline of previous example --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image027.jpeg?raw=true"
+   alt="Outline of last example"
+   width="55%">
+&nbsp;
+<br/>
 
 Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning root\", and would also need a heading.
 
@@ -1364,7 +1406,15 @@ This example has two headings in the \<header\>:
 
 Here is the resulting table of contents, notice the two subsections that appear, one for the H1, one for the H2:
 
-![](media/image28.jpeg){width="5.0in" height="0.7570089676290463in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 28. outline of previous example --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image028.jpeg?raw=true"
+   alt="Outline of previous example"
+   width="55%">
+&nbsp;
+<br/>
 
 Indeed, HTML does not have a dedicated mechanism for marking up subheadings, alternative titles or taglines. 
 
@@ -1446,15 +1496,31 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 
 Both of the examples above are semantically identical and produce the same outline:
 
-![outline of previous examples](media/image29.jpeg){width="5.0in" height="2.4492508748906388in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 29. outline of previous example --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image029.jpeg?raw=true"
+   alt="Outline of previous example"
+   width="55%">
+&nbsp;
+<br/>
 
-### 1.2.4 The HTML5 Logo
+<h3>1.2.4 The HTML5 Logo</h3>
 
 Here is the HTML5 logo! It has been [unveiled on 18 January 2011,](https://www.w3.org/blog/2011/01/an-html5-logo/) so way before HTML5 became a Web standard. This logo represents HTML5, the cornerstone for modern Web applications.
 
-![HTML5 logo](media/image30.png){width="2.0in" height="2.0121270778652667in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 30. html5 logo --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image030.ppg?raw=true"
+   alt="HTML5 logo"
+   width="15%">
+&nbsp;
+<br/>
 
-### 1.3 Structural Elements
+<h3 id="ch1-3">1.3 New Structural Elements</h3>
 
 Changes have been made to particular elements in HTML5 making it simpler to use. In this section, we will look at some examples highlighting these improvements, including:
 
@@ -1466,7 +1532,7 @@ Changes have been made to particular elements in HTML5 making it simpler to u
 
 -   the new structural elements that have been added, etc.
 
-### A minimal HTML5 document
+<h3>A minimal HTML5 document</h3>
 
 > \<!DOCTYPE html\>
 >
@@ -1518,11 +1584,11 @@ Let\'s compare it to the HTML4 minimal document below (taken from [this source]
 >
 > \</html\>
 
-### Simpler character set definition
+<h4>Simpler character set definition</h4>
 
 One word about the \<meta charset=\"utf-8\"\> at line 4 in the HTML5 version: it is a **best practice** to declare the character set of your document to protect against [a serious security risk](https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7). For more details, please refer to the \"Why Internationalization is important\" section in the Course intro chapter.
 
-### No more complicated DOCTYPE definitions
+<h4>No more complicated DOCTYPE definitions</h4>
 
 The \"DOCTYPE\" (Document Type Declaration) is used by tools such as HTML validators (i.e.  [the W3C validator](https://validator.w3.org/)), and specifies the rules used by  an HTML or an XHTML page. These rules are contained in special documents called \"Document Type Definitions\" (also abbreviated as DTDs), written in a language that may seem a bit barbaric to humans (they are intended to be read by software), and hosted by W3C.
 
@@ -1536,7 +1602,7 @@ With HTML5, there is only one way to indicate the doctype, and it\'s so simple t
 
 1.  \<!doctype html\>
 
-### The \"TYPE\" attribute is optional
+<h4>The \"TYPE\" attribute is optional</h4>
 
 With a rel=\"stylesheet\" attribute, it is no longer necessary to indicate type=\"text/css\" (from [the specification](https://www.w3.org/TR/html5/links.html#link-type-stylesheet): \"the default type for resources given by the  [stylesheet](https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet)  keyword is text/css.\")
 
@@ -3006,7 +3072,7 @@ This example also uses all the structuring elements we saw: main, article, secti
 
 -   On MDN\'s Web Docs: the [float CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/float) and the [clear CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/clear)
 
-### 1.4.1 The \<details\> and \<summary\> Elements
+<h3 id="ch1-4">1.4.1 The \<details\> and \<summary\> Elements</h3>
 
 These elements have been introduced for displaying a foldable zone in an HTML document.
 
@@ -3024,7 +3090,7 @@ And here is what is displayed after clicking on the small arrow-shaped icon to t
 
 ![Example of summary details unfolded](media/image42.jpeg){width="3.34375in" height="1.5625in"}
 
-**Here is the code of this example:**
+<b>Here is the code of this example:</b>
 
 > \<!DOCTYPE html\>
 >
