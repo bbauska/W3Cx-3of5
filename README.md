@@ -9,7 +9,7 @@
 &nbsp;
 <br/>
 
-<h2>Course outline</h2>
+## [Table of Contents](#table-of-contents)
 
 ## [**About W3C and the Web**](#cha)
 >### - [**About W3C**](#cha-1)
