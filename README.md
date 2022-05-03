@@ -153,12 +153,12 @@ Here are a few possibilities for Web editors:
 To help you practice during the whole duration of the course, we use the following interactive online editors. Pretty much all the course\'s examples actually use these tools.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- jsbin logo ----------------------->
+<!--------------------------------------- 02. jsbin logo ----------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image002.png?raw=true"
    alt="JS Bin logo"
-   width="55%">
+   width="15%">
 &nbsp;
 <br/>
 
@@ -168,14 +168,25 @@ JS Bin is an open source collaborative Web development debugging tool. Most of t
 
 Tutorials can be found on the Web (such as[ this one](https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843)) or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it\'s always better to be logged in (it\'s free) if you do not want to lose your contributions/personal work.
 
--   ![CodePen logo](media/image3.png){width="0.7291666666666666in" height="0.7291666666666666in"}** CodePen** (<https://codepen.io/>)\
-    CodePen is an HTML, CSS, and JavaScript code editor that previews/showcases your code bits in your browser. It helps with cross-device testing, real-time remote pair programming and teaching.
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------------- 03. codepen logo ---------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image003.png?raw=true"
+   alt="CodePen logo"
+   width="15%">
+&nbsp;
+<br/>
+[CodePen](https://codepen.io/)
+
+CodePen is an HTML, CSS, and JavaScript code editor that previews/showcases your code bits in your browser.
+It helps with cross-device testing, real-time remote pair programming and teaching.
 
 Here\'s an article of interest if you use CodePen: [Things you can do with CodePen](https://codepen.io/brentmiller/post/things-you-can-do-with-codepen) \[Brent Miller, February 6, 2019\].
 
 There are many other handy tools such as [JSFiddle](https://jsfiddle.net/), and [Dabblet](https://dabblet.com/). Please share your favorite tool on the discussion forum, and explain why! Share also your own code contributions, such as a nice canvas animation, a great looking HTML5 form, etc.
 
-### Browser Compatibility:
+<h3>Browser Compatibility:</h3>
 
 The term browser compatibility refers to the ability of a given Web site to appear fully functional on the browsers available in the market.
 
@@ -185,30 +196,47 @@ To make the Web evolve in a sane and sustainable way for both users and develope
 
 We are then providing references to the browser support of HTML5 features presented in this course using 2 resources: [Can I Use](https://caniuse.com/) and [Mozilla Developer Network (MDN) Web Docs](https://developer.mozilla.org/en-US/).
 
-### Can I use
+<h3>Can I use</h3>
 
-[Can I Use](https://caniuse.com/) provides up-to-date tables for support of front-end Web technologies on desktop and mobile Web browsers. Below is a snapshot of what information is given by CanIUse when searching for \"CSS3 colors\".
+[Can I Use](https://caniuse.com/) provides up-to-date tables for support of front-end Web technologies on desktop and mobile Web browsers. Below is a snapshot of what information is given by CanIUse when searching for "CSS3 colors".
 
-![Example of a CanIUse browser support table (using CSS3 colors)](media/image4.png){width="5.0in" height="2.148759842519685in"}
+[Example of a CanIUse browser support table (using CSS3 colors)](media/image4.png)
 
-### MDN Web Docs
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------- 04. caniuse example -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image004.png?raw=true"
+   alt="Example CSS in CanIUse"
+   width="55%">
+&nbsp;
+<br/>
 
-![Logo of MDN Web Docs](media/image5.png){width="3.0in" height="0.9453379265091864in"}
+<h3>MDN Web Docs</h3>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------------------- 05. mdn web docs --------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image005.png?raw=true"
+   alt="Logo of MDN Web Docs"
+   width="15%">
+&nbsp;
+<br/>
 
 To help developers make these decisions consciously rather than accidentally, [MDN Web Docs](https://developer.mozilla.org/) provides browser compatibility tables in its documentation pages, so that when looking up a feature you're considering for your project, you know exactly which browsers will support it.
 
-## External resources:
+<h3>External resources:</h3>
 
 -   [MDN browser compatibility data: Taking the guesswork out of web compatibility](https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/)
 
 ```{=html}
-<!-- -->
+<!-- I don't know what goes here.  Stay tuned -->
 ```
 -   [Caniuse and MDN compatibility data collaboration](https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/)
 
-## W3C Validators: 
+<h3>W3C Validators: </h3>
 
-For over 15 years, the W3C has been developing and hosting [**[free]{.underline}** and **[open source]{.underline}** tools](https://w3c.github.io/developers/) used every day by **millions of Web developers and Web designers**. All the tools listed below are Web-based, and are available as downloadable sources or as free services on the [W3C Developers tools ](https://w3c.github.io/developers/tools/)site.
+For over 15 years, the W3C has been developing and hosting [**[free]** and **[open source]** tools](https://w3c.github.io/developers/) used every day by **millions of Web developers and Web designers**. All the tools listed below are Web-based, and are available as downloadable sources or as free services on the [W3C Developers tools ](https://w3c.github.io/developers/tools/)site.
 
 ## W3C Validator
 
@@ -1434,19 +1462,19 @@ Changes have been made to particular elements in HTML5 making it simpler to u
 
 Let\'s compare it to the HTML4 minimal document below (taken from [this source](https://www.sitepoint.com/a-minimal-html-document/)). Differences are underlined in red:
 
-> [\<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"https://www.w3.org/TR/html4/strict.dtd\"\>]{.underline}
+> [\<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"https://www.w3.org/TR/html4/strict.dtd\"\>]
 >
 > \<html lang=\"en\"\>
 >
 > \<head\>
 >
->     \<meta http-equiv[=\"content-type\" ]{.underline}content[=\"text/html\"]{.underline} charset=\"utf-8\"\>
+>     \<meta http-equiv[=\"content-type\" ]content[=\"text/html\"]charset=\"utf-8\"\>
 >
 >     \<title\>title\</title\>
 >
->     \<link rel=\"stylesheet\" **type[=\"text/css\"]{.underline}** href=\"style.css\"\>
+>     \<link rel=\"stylesheet\" **type[=\"text/css\"]** href=\"style.css\"\>
 >
->     \<script type[=\"text/javascript\"]{.underline} src=\"script.js\"\>\</script\>
+>     \<script type[=\"text/javascript\"] src=\"script.js\"\>\</script\>
 >
 > \</head\>
 >
@@ -3369,11 +3397,11 @@ Here are some extracts from a Java Servlet that generate a zip file and forces t
 
 12.          // generate a HTTP response that forces the download
 
-13.          [response.setContentType(\"application/zip\");]{.underline}
+13.          [response.setContentType(\"application/zip\");]
 
-14.          [response.setHeader(\"Content-Disposition\",]{.underline}
+14.          [response.setHeader(\"Content-Disposition\",]
 
-15.                             [\"attachment; filename=\\\"DATA.ZIP\\\"\");]{.underline}
+15.                             [\"attachment; filename=\\\"DATA.ZIP\\\"\");]
 
 16.          sos.write(zip); sos.flush();
 
@@ -3395,7 +3423,7 @@ The above example will cause the browser that invoked this server-side code to
 
 HTML5 proposes the use of a new attribute named download to download resources rather than navigating to them. The example below shows how to trigger the download of an image by the browser (instead of rendering it, which is the default behavior) with a name different from the name of the resource.
 
-1.  \<a href=\"normal.gif\" [download]{.underline}=[\"MichelBuffa.gif\"]{.underline}\>
+1.  \<a href=\"normal.gif\" [download]=[\"MichelBuffa.gif\"]\>
 
 2.      download a picture of Michel Buffa
 
@@ -3451,19 +3479,19 @@ Both [Google translate](https://translate.google.com/) and [Microsoft online 
 
 #### Example illustrating how to specify parts of an HTML element that should not be translated:
 
-1.  \<span **[translate=\"no\"]{.underline}** class=\"author\"\>[Michel Ham]{.underline}\</span\>
+1.  \<span **[translate=\"no\"]** class=\"author\"\>[Michel Ham]\</span\>
 
 In the above example, a \<span\> element defines an author (of a blog, for example) who is named Michel Ham. However, his family name is the same as pork and would be translated to \"Michel Jambon\" in French, or Michel Jamón in Spanish\...
 
 Using the translate=\"no\" attribute should prevent this behavior\...
 
-1.  \<span **[translate=\"no\"]{.underline}** class=\"author\"\>[Michel Ham]{.underline}\</span\> is a professor
+1.  \<span **[translate=\"no\"]** class=\"author\"\>[Michel Ham]\</span\> is a professor
 
 2.  from the University of Nice,France.
 
 Will be correctly translated into French by:
 
-1.  \"[Michel Ham]{.underline} est un professeur de l\'Université de Nice, France.\"
+1.  \"[Michel Ham] est un professeur de l\'Université de Nice, France.\"
 
 \...where all of the end of the sentence has been translated except the author\'s name.
 
@@ -3471,7 +3499,7 @@ Will be correctly translated into French by:
 
 When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true. 
 
-1.  \<p **[translate=\"no\"]{.underline}**\>This is a text in a paragraph element, that should not be translated: the p element has a translate=\"no\" attribute.[\<span\> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too\</span\>]{.underline}. This is the end of the paragraph\...\</ p\>
+1.  \<p **[translate=\"no\"]**\>This is a text in a paragraph element, that should not be translated: the p element has a translate=\"no\" attribute.[\<span\> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too\</span\>]. This is the end of the paragraph\...\</ p\>
 
 ### External resources:
 
@@ -3493,7 +3521,7 @@ This information is not visible to humans: it is pure *semantic information*. 
 
 ### Quick example of microdata that describes a person
 
-1.  \<section [itemscope itemtype=\"https://schema.org/Person\"]{.underline}\>
+1.  \<section [itemscope itemtype=\"https://schema.org/Person\"]\>
 
 2.      \<h1\>Contact Information\</h1\>
 
@@ -3501,15 +3529,15 @@ This information is not visible to humans: it is pure *semantic information*. 
 
 4.        \<dt\>Name\</dt\>
 
-5.        \<dd [itemprop=\"name\"]{.underline}\>Michel Buffa\</dd\>
+5.        \<dd [itemprop=\"name\"]\>Michel Buffa\</dd\>
 
 6.        \<dt\>Position\</dt\>
 
-7.        \<dd\>\<span [itemprop=\"jobTitle\"]{.underline}\>
+7.        \<dd\>\<span [itemprop=\"jobTitle\"]\>
 
 8.             Professor/Researcher/Scientist\</span\> for
 
-9.            \<span [itemprop=\"affiliation\"]{.underline}\>
+9.            \<span [itemprop=\"affiliation\"]\>
 
 10.               University of Côte d\'Azur, France
 
@@ -3527,11 +3555,11 @@ This information is not visible to humans: it is pure *semantic information*. 
 
 17.        \<li\>\<a href=\"https://www.twitter.com/micbuffa\"
 
-18.               [itemprop=\"url\"]{.underline}\>Twitter profile\</a\>\</li\>
+18.               [itemprop=\"url\"]\>Twitter profile\</a\>\</li\>
 
 19.        \<li\>\<a href=\"https://www.blogger.com/micbuffa\"
 
-20.               [itemprop=\"url\"]{.underline}\>Michel Buffa\'s blog\</a\>\</li\>
+20.               [itemprop=\"url\"]\>Michel Buffa\'s blog\</a\>\</li\>
 
 21.     \</ul\>
 
@@ -3549,23 +3577,23 @@ We can also add another embedded data item in the middle, such as the person\'s 
 
 5.  
 
-6.  \<dd [itemprop=]{.underline}\"address\"[ itemscope]{.underline}
+6.  \<dd [itemprop=]\"address\"[ itemscope]
 
 7.      itemtype=\"https://schema.org/PostalAddress\"\>
 
-8.      \<span [itemprop=]{.underline}\"streetAddress\"\>10 promenade des anglais\</span\>\<br\>
+8.      \<span [itemprop=]\"streetAddress\"\>10 promenade des anglais\</span\>\<br\>
 
-9.      \<span [itemprop=]{.underline}\"addressLocality\"\>Nice\</span\>,
+9.      \<span [itemprop=]\"addressLocality\"\>Nice\</span\>,
 
-10.     \<span [itemprop=]{.underline}\"addressRegion\"\>Alpes maritimes, France\</span\>
+10.     \<span [itemprop=]\"addressRegion\"\>Alpes maritimes, France\</span\>
 
-11.     \<span [itemprop=]{.underline}\"postalCode\"\>06410\</span\>\<br\>
+11.     \<span [itemprop=]\"postalCode\"\>06410\</span\>\<br\>
 
-12.     \<span [itemprop=]{.underline}\"addressCountry\"[ itemscope]{.underline}
+12.     \<span [itemprop=]\"addressCountry\"[ itemscope]
 
-13.           [itemtype=]{.underline}\"https://schema.org/Country\"\>
+13.           [itemtype=]\"https://schema.org/Country\"\>
 
-14.          \<span [itemprop=]{.underline}\"name\"\>France\</span\>
+14.          \<span [itemprop=]\"name\"\>France\</span\>
 
 15.     \</span\>
 
@@ -3639,7 +3667,7 @@ Source code:
 
 7.  \<body\>
 
-8.  \<div [itemscope itemtype=\"https://schema.org/Person\"]{.underline}\>
+8.  \<div [itemscope itemtype=\"https://schema.org/Person\"]\>
 
 9.      My name is \<span itemprop=\"name\"\>Michel Buffa\</span\>,
 
@@ -3657,7 +3685,7 @@ Source code:
 
 16.     \<span itemprop=\"address\" itemscope
 
-17.         [itemtype=\"https://schema.org/PostalAddress\"]{.underline}\>
+17.         [itemtype=\"https://schema.org/PostalAddress\"]\>
 
 18.          \<span itemprop=\"addressLocality\"\>Biot\</span\>, in a region named
 
@@ -3745,17 +3773,17 @@ Now that you have defined a container element, you may add properties to the HTM
 
 4.           \<dt\>Name\</dt\>
 
-5.           \<dd **[itemprop=\"name\"]{.underline}**\>Michel Buffa\</dd\>
+5.           \<dd **[itemprop=\"name\"]**\>Michel Buffa\</dd\>
 
 6.           \<dt\>Position\</dt\>
 
-7.           \<dd\>\<span **[itemprop=\"jobTitle\"]{.underline}**\>
+7.           \<dd\>\<span **[itemprop=\"jobTitle\"]**\>
 
 8.                 Professor/Researcher/Scientist
 
 9.               \</span\> for
 
-10.              \<span **[itemprop=\"affiliation\"]{.underline}**\>University of Nice,
+10.              \<span **[itemprop=\"affiliation\"]**\>University of Nice,
 
 11.                     France
 
@@ -3771,11 +3799,11 @@ Now that you have defined a container element, you may add properties to the HTM
 
 17.          \<li\>\<a href=\"https://www.twitter.com/micbuffa\"
 
-18.             ** [itemprop=\"url\"]{.underline}**\>Twitter profile\</a\>\</li\>
+18.             ** [itemprop=\"url\"]**\>Twitter profile\</a\>\</li\>
 
 19.          \<li\>\<a href=\"https://www.blogger.com/micbuffa\"
 
-20.              **[itemprop=\"url\"]{.underline}**\>Michel Buffa\'s blog\</a\>\</li\>
+20.              **[itemprop=\"url\"]**\>Michel Buffa\'s blog\</a\>\</li\>
 
 21.      \</ul\>
 
@@ -3807,9 +3835,9 @@ Again, look at the Person/Address example:
 
 5.  
 
-6.  \<dd itemprop=\"address\"[ itemscope]{.underline}
+6.  \<dd itemprop=\"address\"[ itemscope]
 
-7.      [itemtype=\"https://schema.org/PostalAddress\"]{.underline}\>
+7.      [itemtype=\"https://schema.org/PostalAddress\"]\>
 
 8.       \<span itemprop=\"streetAddress\"\>10 promenade des anglais\</span\>\<br\>
 
@@ -3821,7 +3849,7 @@ Again, look at the Person/Address example:
 
 12.      \<span itemprop=\"addressCountry\" itemscope
 
-13.            [itemtype=\"https://schema.org/Country\"]{.underline}\>
+13.            [itemtype=\"https://schema.org/Country\"]\>
 
 14.           \<span itemprop=\"name\"\>France\</span\>
 
@@ -3849,11 +3877,11 @@ It is possible to use the same property name several times in one microdata obj
 
 3.  \<ul\>
 
-4.  \<li\>\<a href=\"https://www.twitter.com/micbuffa\"[ itemprop=\"url\"]{.underline}\>Twitter
+4.  \<li\>\<a href=\"https://www.twitter.com/micbuffa\"[ itemprop=\"url\"]\>Twitter
 
 5.        profile\</a\>\</li\>
 
-6.  \<li\>\<a href=\"https://www.blogger.com/micbuffa\"[ itemprop=\"url\"]{.underline}\>Michel
+6.  \<li\>\<a href=\"https://www.blogger.com/micbuffa\"[ itemprop=\"url\"]\>Michel
 
 7.        Buffa\'s blog\</a\>\</li\>
 
@@ -3873,7 +3901,7 @@ Here are some microdata that represent a song. In this example, at line 5 we
 
 4.  \<li\>Name: \<span itemprop=\"name\"\>Please buy me on itunes, I need money!\</span\>\</li\>
 
-5.  \<li\>Band: \<span [itemprop=\"genre keywords\"]{.underline}\>[Punk, Ska]{.underline}\</span\>\</li\>
+5.  \<li\>Band: \<span [itemprop=\"genre keywords\"]\>[Punk, Ska]\</span\>\</li\>
 
 6.  \</ul\>
 
@@ -5582,7 +5610,7 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 
 24. 00:00:36.000 \--\> 00:00:40.000
 
-25. This cue contains **\<u\>**underlined**\</u\>** text.
+25. This cue contains **\<u\>** **\</u\>** text.
 
 26. 
 
@@ -7332,7 +7360,7 @@ So yes, during this course, in particular in Modules 3 and 4, you will have to d
 
 Here we provide a basic introduction to JavaScript. If you want to learn more, many resources are available on the Web; this document is simply here to give you a head start. Remember that one great thing about these MOOCs courses is that everybody can help each other. Some students are very good in JavaScript and are usually very happy to help others when they encounter difficulties.
 
-**You will learn a lot by looking at examples, tweaking them, cloning and modifying them, etc.** Many previous students who were real JavaScript beginners managed to do [all]{.underline} the assignments (drawing and animating a monster with keyboard/mouse interaction)! And they did this by just studying the provided examples.
+**You will learn a lot by looking at examples, tweaking them, cloning and modifying them, etc.** Many previous students who were real JavaScript beginners managed to do [all] the assignments (drawing and animating a monster with keyboard/mouse interaction)! And they did this by just studying the provided examples.
 
 ### External resources
 
@@ -18277,7 +18305,7 @@ Resizing a canvas can be tricky if we don\'t know a few rules that might not be�
 
 -   Changing the width or height property of a canvas in JavaScript erases its content and resets its context,
 
--   Using percentages (%) in the CSS width and height properties of a canvas *does not change its number of pixels/resolution*[.]{.underline} Instead, it scales the existing pixels without erasing the content, giving a blurry effect when a canvas becomes larger, for example.
+-   Using percentages (%) in the CSS width and height properties of a canvas *does not change its number of pixels/resolution*[.] Instead, it scales the existing pixels without erasing the content, giving a blurry effect when a canvas becomes larger, for example.
 
 Before looking at how best to handle canvas resizing, let\'s see some examples below:
 
@@ -18349,7 +18377,7 @@ This is the trick to create a really responsive canvas:
 
 3.  Use a resize listener on the  parent of the canvas,
 
-4.  Change the width and height properties of the canvas [from the JavaScript resize listener function]{.underline} (content will be erased),
+4.  Change the width and height properties of the canvas [from the JavaScript resize listener function] (content will be erased),
 
 5.  Redraw the content, scaled accordingly to the size of the parent.
 
@@ -19499,9 +19527,9 @@ If the value entered using a keyboard is not a valid number, or is not in the ra
 
 If the difference between the value you enter and min is a multiple of step, then it gets the CSS pseudo class :valid , otherwise it will be *invalid*. Example: if min=1 and step=5, the field will be valid with value=1, 6, 11, 16 etc. if min=0, with value=0, 5, 10, 15 etc.
 
-**WARNING 1**: **Using a step attribute with an integer value will make the arrows increment/decrement the current value with the step value, and [make the input field valid only when ]{.underline}the difference between the value you enter and min is a multiple of step. **
+**WARNING 1**: **Using a step attribute with an integer value will make the arrows increment/decrement the current value with the step value, and [make the input field valid only when ]the difference between the value you enter and min is a multiple of step. **
 
-**WARNING 2: by default, omitting the step attribute is equivalent to step=\"1\", [so for entering float values, it is necessary to use step=\"any\" or step equal to a floating point value such as step=\"0.1\"]{.underline}.**\
+**WARNING 2: by default, omitting the step attribute is equivalent to step=\"1\", [so for entering float values, it is necessary to use step=\"any\" or step equal to a floating point value such as step=\"0.1\"].**\
 \
 **With step=\"any\", floating point values are valid, but vertical arrows will increment/decrement the value by one. If step=\"0.1\", arrows will increment/decrement by 0.1, etc.**
 
