@@ -118,11 +118,13 @@ The HTML5 course team is thrilled to guide you in your learning experience. We a
 
 <h3>Online Code Editors:</h3>
 
-**[JS Bin]**: [[https://jsbin.com](https://jsbin.com/) ([[JS Bin tutorial]](https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843))
+[JS Bin](https://jsbin.com](https://jsbin.com/)
+[CodePen Tutorial](https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843)
 
-**[CodePen]**: [[https://codepen.io](https://codepen.io/) ([[CodePen tutorial]](https://css-tricks.com/video-screencasts/112-using-codepen/))
+[CodePen](https://codepen.io])
+[CodePen CSS Tutorial](https://css-tricks.com/video-screencasts/112-using-codepen/)
 
-##### Web Editors:
+<h3>Web Editors:</h3>
 
 While any text editor, like NotePad or TextEdit, can be used to create Web pages, they don\'t necessarily offer a lot of help towards that end. Other options offer more facilities for error checking, syntax coloring and saving some typing by filling things out for you.
 
@@ -146,14 +148,25 @@ Here are a few possibilities for Web editors:
 
 -   [Vim](https://www.vim.org/) or [Emacs](https://www.gnu.org/software/emacs/) - great editors, but if you\'re not already familiar with these, this isn\'t the time to try.
 
-##### Online Editors:
+<h3>Online Editors:</h3>
 
 To help you practice during the whole duration of the course, we use the following interactive online editors. Pretty much all the course\'s examples actually use these tools.
 
--   ![JS Bin logo](media/image2.png){width="0.7291666666666666in" height="0.7291666666666666in"} **JS Bin** (<https://jsbin.com/>)\
-    JS Bin is an open source collaborative Web development debugging tool. Most of the examples that are in this course are on JSBin.\
-    \
-    Tutorials can be found on the Web (such as[ this one](https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843)) or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it\'s always better to be logged in (it\'s free) if you do not want to lose your contributions/personal work.
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- jsbin logo ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image002.png?raw=true"
+   alt="JS Bin logo"
+   width="55%">
+&nbsp;
+<br/>
+
+[JS Bin](https://jsbin.com/)
+
+JS Bin is an open source collaborative Web development debugging tool. Most of the examples that are in this course are on JSBin.
+
+Tutorials can be found on the Web (such as[ this one](https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843)) or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it\'s always better to be logged in (it\'s free) if you do not want to lose your contributions/personal work.
 
 -   ![CodePen logo](media/image3.png){width="0.7291666666666666in" height="0.7291666666666666in"}** CodePen** (<https://codepen.io/>)\
     CodePen is an HTML, CSS, and JavaScript code editor that previews/showcases your code bits in your browser. It helps with cross-device testing, real-time remote pair programming and teaching.
@@ -432,6 +445,16 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 > \<img src=\"https://w3.org/Icons/w3c_home.png\" width=\"72\" height=\"48\" alt=\"World Wide Web Consortium\"\>
 >
 > \</a\>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 12. HTML5 logo () ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image012.png?raw=true"
+   alt="HTML5 logo"
+   width="55%">
+&nbsp;
+<br/>
 
 ![](media/image12.png){width="1.8229166666666667in" height="2.3958333333333335in"}
 
@@ -24439,3 +24462,5 @@ The end.
 05.02.2022 pm
 
 **[`^        back to top        ^`](#table-of-contents)**
+
+<b><i>5-3-2021 Tue 11:57am</i></b>
