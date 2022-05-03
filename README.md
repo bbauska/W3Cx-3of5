@@ -9,16 +9,10 @@
 &nbsp;
 <br/>
 
-:alien;  :sob;  :cold_sweat;
+:alien:  :sob:  :cold_sweat:
 
-<!---- right arrow ---->
-&#955;
-<!---- left arrow ---->
-&#9658;
-<!---- oriental ---->
-&#767;
-<!---- tilde ---->
-&#2400;
+<!---- right arrow , left arrow , oriental , tilde ---->
+&#955;   &#9658;  &#767;  &#2400;
 
 ## [Table of Contents](#table-of-contents)
 
@@ -24502,4 +24496,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<b><i>5-3-2021 Tue 11:57am</i></b>
+<b><i>5-3-2021 Tue 3:27pm</i></b>
