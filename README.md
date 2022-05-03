@@ -20,9 +20,7 @@
 ## [**Course Introduction and Practical Information**](#chb)
 >### * [**Course syllabus**](#chb-1)
 >### * [**Getting around the course**](#chb-2)
->### * [**Grading and due dates**](#chb-3)
->### * [**Course tools**](#chb-4)
->### * [**Welcome survey**](#chb-5)
+>### * [**Course tools**](#chb-3)
 
 ## [**Module 1: HTML5 Basics**](#ch1)
 >### 1.1 [**Introduction - Module 1**](#ch1-1)
@@ -79,7 +77,7 @@
 
 <h2> Course information</h2>
 
-<h3>Welcome to \"HTML5 Coding Essentials and Best Practices\"</h3>
+<h3>Welcome to "HTML5 Coding Essentials and Best Practices"</h3>
 
 -   Course outline
 
