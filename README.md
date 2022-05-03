@@ -9,6 +9,15 @@
 &nbsp;
 <br/>
 
+<!---- right arrow ---->
+&#955;
+<!---- left arrow ---->
+&#9658;
+<!---- oriental ---->
+&#767;
+<!---- tilde ---->
+&#2400;
+
 ## [Table of Contents](#table-of-contents)
 
 ## [**About W3C and the Web**](#cha)
