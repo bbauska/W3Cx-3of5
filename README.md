@@ -9,7 +9,7 @@
 &nbsp;
 <br/>
 
-## Course outline
+<h2>Course outline</h2>
 
 ## [**About W3C and the Web**](#cha)
 >### - [**About W3C**](#cha-1)
@@ -77,9 +77,9 @@
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-## Course information
+<h2> Course information</h2>
 
-## [Welcome to \"HTML5 Coding Essentials and Best Practices\"]
+<h3>Welcome to \"HTML5 Coding Essentials and Best Practices\"</h3>
 
 -   Course outline
 
@@ -118,11 +118,11 @@ During this course, you will learn:
 
 The HTML5 course team is thrilled to guide you in your learning experience. We are committed to teach you how to code Web pages, and how to do it the correct way. We encourage you to create Web pages and apps and share them in the discussion forums. Have fun!
 
-##### Online Code Editors:
+<h3>Online Code Editors:</h3>
 
-**[JS Bin]{.underline}**: [[https://jsbin.com]{.underline}](https://jsbin.com/) ([[JS Bin tutorial]{.underline}](https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843))
+**[JS Bin]**: [[https://jsbin.com](https://jsbin.com/) ([[JS Bin tutorial]](https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843))
 
-**[CodePen]{.underline}**: [[https://codepen.io]{.underline}](https://codepen.io/) ([[CodePen tutorial]{.underline}](https://css-tricks.com/video-screencasts/112-using-codepen/))
+**[CodePen]**: [[https://codepen.io](https://codepen.io/) ([[CodePen tutorial]](https://css-tricks.com/video-screencasts/112-using-codepen/))
 
 ##### Web Editors:
 
