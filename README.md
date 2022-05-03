@@ -1,6 +1,6 @@
 <h2 align="center"><b><i>W3Cx-3of5-HTML5.1x -- Coding Essentials</i></b> and Best Practices</h2>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- readme.md of W3Cx-3of5-Coding-Essentials ----------------------->
+<!-------------------------- readme.md of W3Cx-3of5-Coding-Essentials ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image001.png?raw=true"
@@ -9,7 +9,7 @@
 &nbsp;
 <br/>
 
-:alien:  :sob:  :cold_sweat:
+:alien:  :sob:  :cold_sweat: :point_up:  :cancer:  :smile:
 
 <!---- right arrow , left arrow , oriental , tilde ---->
 &#955;   &#9658;  &#767;  &#2400;
@@ -182,6 +182,7 @@ Tutorials can be found on the Web (such as[ this one](https://code.tutsplus.com
    width="15%">
 &nbsp;
 <br/>
+
 [CodePen](https://codepen.io/)
 
 CodePen is an HTML, CSS, and JavaScript code editor that previews/showcases your code bits in your browser.
@@ -785,7 +786,17 @@ Now, we have one big \<section\> element that contains a set of \<article\> e
 
 Note that the H2, article, article header, etc. will be styled using these rules.
 
-#### Add a \<header\> at the beginning of each \<article\>
+<h3>Add a <header> at the beginning of each <article></h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 17. image of header at top of each article --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image017.jpeg?raw=true"
+   alt="Image of the header at the top of each article"
+   width="55%">
+&nbsp;
+<br/>
 
 ![image of the header at the top of each article](media/image17.jpeg){width="5.0in" height="1.3553116797900262in"}
 
@@ -853,7 +864,15 @@ Example for the first blog article:
 
 Also note the way we included a figure using the new \"HTML5\" method, using a \<figure\>..\</figure\> element that embedded a \<img src=\.../\> element together with a \<figcaption\> element. 
 
-![image of figure and figcaption that embed an img](media/image18.jpeg){width="5.0in" height="2.688033683289589in"}
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------------- 18. figure and figcaptin ------------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image018.jpeg?raw=true"
+   alt="Image of figure and figure caption that embed and image"
+   width="55%">
+&nbsp;
+<br/>
 
 Here is the CSS for the \<figcaption\> element we have used in the example (we did not apply any style to the \<figure\> element):
 
@@ -889,7 +908,15 @@ Here is the CSS for the \<figcaption\> element we have used in the example (we
 
 After the long \<section\> element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, \"aside\"! This is done using - you already guessed it - an \<aside\> element:
 
-![image of the tag cloud defined as an aside element](media/image19.jpeg){width="2.3958333333333335in" height="2.6770833333333335in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------- 19. image of tag cloud defined as aside element ------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image019.jpeg?raw=true"
+   alt="W3Cx logo"
+   width="35%">
+&nbsp;
+<br/>
 
 > \<section\>
 >
@@ -23119,11 +23146,19 @@ This first example is useful for forms that allow the user to select one or more
 
 [Example on JSBin](https://jsbin.com/laseye/edit?html,output) or try it below in your browser:
 
-![](media/image321.png){width="4.0in" height="0.5657360017497812in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 321. preview of selected images ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image001.png?raw=true"
+   alt="Preview of Seleted Images"
+   width="45%">
+&nbsp;
+<br/>
 
-##### Preview of selected images:
+<h4>Preview of selected images:</h4>
 
-##### Source code extract:
+<h4>Source code extract:</h4>
 
 > \<label for=\"files\"\>Choose multiple files:\</label\>
 >
@@ -23195,13 +23230,13 @@ This first example is useful for forms that allow the user to select one or more
 >
 > }
 
-##### **Explanations:**
+<h4>Explanations:</h4>
 
 -   *Line 35:* starts the reading of the file f. When f is read, the onload callback will be called.
 
 -   *Lines 25-31:* we build, using the DOM API, a \<span class=\"thumb\"\>\...\</span\> and inside we add an \<img src=the data url\> element with its src attribute equal to the url of the image that has been read (the image content as dataURL is in e.target.result). Finally, at *line 31*, we insert the span in the document before the current children of the \<output id=\"list\"\> element (declared at *line 5*).
 
-##### Example #2: read a single local image file and use it with drawImage in a canvas
+<h4>Example #2: read a single local image file and use it with drawImage in a canvas</h4>
 
 [Try it on JSBin](https://jsbin.com/miciqu/edit?html,output)
 
@@ -23209,7 +23244,7 @@ This first example is useful for forms that allow the user to select one or more
 
 *Errata*: the above screenshot says \"choose multiple files\", but the example only works with a single file.
 
-##### **Source code extract:**
+<h4>Source code extract:</h4>
 
 > function drawImage(imageFile) {
 >
@@ -23267,17 +23302,17 @@ This first example is useful for forms that allow the user to select one or more
 >
 > }
 
-##### **Explanations:**
+<h4>Explanations:</h4>
 
 Remember how we worked with images on a canvas. We had to create an empty image object (*line 8*), set the src attribute of the image object (*line 23*), then use an image.onload callback (*line 15*), and we could only draw from inside the callback (*line 17*). This time, it\'s exactly the same, except that the URL comes from e.target.result in the reader.onload callback (*line 23*).
 
-##### Example #3 (advanced): an instagram-like photo filter application
+<h4>Example #3 (advanced): an instagram-like photo filter application</h4>
 
 Another very impressive example, has been developed by \@GeorgianaB, a student of the first iteration of this course (see her [other creations/examples](https://codepen.io/giana/)). This Web application reads local image files, draws them into a canvas element and proposes different filters. This example is given \"as is\" for those of you who would like to go further. Just click on the link (or on the image below) and look at the source code.
 
 [Try this example online on gitHub](https://gianablantin.github.io/CanvasFilters/).
 
-##### Introduction
+<h4>Introduction</h4>
 
 This chapter presents the new Geolocation API and illustrates its use with several examples.
 
@@ -23289,7 +23324,7 @@ It is possible to prompt the user to activate the GPS (this is what most GPS nav
 
 [Browser support for the Geolocation API](https://caniuse.com/#feat=geolocation) is excellent, both on mobile and on desktop devices.
 
-##### **Typical use**
+<h4>Typical use</h4>
 
 > navigator.geolocation.getCurrentPosition(showPosition, onError);
 >
@@ -23371,9 +23406,9 @@ Source code of this typical example:
 >
 > \</html\>
 
-##### ![geolocation callback illustration](media/image324.jpeg){width="5.0in" height="1.4939555993000875in"}
+![geolocation callback illustration](media/image324.jpeg){width="5.0in" height="1.4939555993000875in"}
 
-**Explanations:**
+<b>Explanations:</b>
 
 -   *Line 14* checks if the Web browser supports the geolocation API by testing the variable navigator.geolocation. If not null, then the geolocation API is supported.
 
@@ -23381,7 +23416,7 @@ Source code of this typical example:
 
 -   *Line 22:* the position objects has a coords property that is the object that holds the longitude and the latitude.
 
-##### **External resources:**
+<h4>External resources:</h4>
 
 -   The W3C specification: [Geolocation API](https://www.w3.org/TR/geolocation-API/)
 
@@ -23393,7 +23428,7 @@ Source code of this typical example:
 
     -   on MDN: [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API#Browser_compatibility)
 
-## 6.4.2 The coords object properties
+<h3>6.4.2 The coords object properties</h3>
 
 In the previous example, we used the coords property of the position passed as an input parameter to the callback function. This coords object has many properties:
 
@@ -23401,7 +23436,7 @@ In the previous example, we used the coords property of the position passed as
 
 Not all these values may be available in all Web browsers. When one of these properties is null, it means that it is not available (often the case of the altitudeAccuracy)
 
-## 6.4.3 Geolocation error codes
+<h3>6.4.3 Geolocation error codes</h3>
 
 In the last example, we used the navigator.geolocation. getCurrentPosition(showPosition) with only one callback function (in the case of success), but it is also possible to pass a second parameter that is another callback function called in the case of error.
 
@@ -23409,7 +23444,7 @@ A slightly different version of the previous example [shows how to properly che
 
 ![geolocation error](media/image326.jpeg){width="6.5in" height="3.16875in"}
 
-## Source code of the example:
+<h3>Source code of the example:</h3>
 
 > \<!DOCTYPE html\>
 >
@@ -23497,7 +23532,7 @@ A slightly different version of the previous example [shows how to properly che
 >
 > \</html\>
 
-## 6.4.4 Tracking a position
+<h3>6.4.4 Tracking a position</h3>
 
 In order to track the current position, the geolocation API provides a method similar to the getCurrentPosition(onSuccess, onError) named watchPosition(onSuccess, onError). 
 
@@ -23507,7 +23542,7 @@ When getCurrentPosition gives a position when called, watchPosition does the
 
 -   It returns an id so that you can use the clearWatch(id) method to stop the current tracking.
 
-## Typical use
+<h3>Typical use</h3>
 
 > // get an id of the current tracking, the showPosition callback is like the one we saw in earlier examples.
 >
@@ -23521,15 +23556,15 @@ When getCurrentPosition gives a position when called, watchPosition does the
 
 As a test, you may just try to change getCurrentPosition to watchPosition in the previous examples, and try this code using a mobile phone or tablet, walk for 20 meters and see the position changing.
 
-## Options available when using the geolocation API, in particular real time tracking
+<h3>Options available when using the geolocation API, in particular real time tracking</h3>
 
 Several options are available when using HTML5 geolocation. We can pass a third parameter to the getCurrentPosition and watchPosition methods, that will hold one or several of the following options:
 
 ![](media/image327.png){width="6.5in" height="1.7645833333333334in"}
 
-## Example of use
+<h3>Example of use</h3>
 
-##### Source code:
+<h4>Source code:</h4>
 
 > // Just ask to turn GPS on, if available
 >
@@ -23567,7 +23602,7 @@ Several options are available when using HTML5 geolocation. We can pass a third 
 
 Look for the explanations in the lines of comment.
 
-## 6.4.5 Geolocation and maps
+<h3>6.4.5 Geolocation and maps</h3>
 
 This section presents an example of how to get an interactive map, using [the Leaflet API for OpenStreetMap](https://leafletjs.com/reference-1.6.0.html), and gives links to more resources. Did you know that you can even get an estimation of a physical address from the longitude and latitude, using online Web services?
 
@@ -23579,7 +23614,7 @@ This example is just given \"as is\", as there are so many possibilities for r
 
 ![](media/image329.png){width="4.979166666666667in" height="3.1458333333333335in"}
 
-##### JS
+<h4>JS</h4>
 
 > function getLocation(e) {
 >
@@ -23641,7 +23676,7 @@ This example is just given \"as is\", as there are so many possibilities for r
 >
 > }
 
-##### CSS
+<h4>CSS</h4>
 
 > html, body {
 >
@@ -23675,7 +23710,7 @@ This example is just given \"as is\", as there are so many possibilities for r
 >
 > }
 
-##### HTML
+<h4>HTML</h4>
 
 > \<html\>
 >
