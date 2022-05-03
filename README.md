@@ -9,6 +9,8 @@
 &nbsp;
 <br/>
 
+:alien;  :sob;  :cold_sweat;
+
 <!---- right arrow ---->
 &#955;
 <!---- left arrow ---->
