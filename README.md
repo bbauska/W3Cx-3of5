@@ -1,4 +1,4 @@
-<h2 align="center"><b><i>W3Cx-HTML5.1x -- Coding Essentials</i></b> and Best Practices</h2>
+<h2 align="center"><b><i>W3Cx-3of5-HTML5.1x -- Coding Essentials</i></b> and Best Practices</h2>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- readme.md of W3Cx-3of5-Coding-Essentials ----------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -73,7 +73,9 @@
 >### 6.5 [**The File API**](#ch6-5)
 >### 6.6 [**The geolocation API**](#ch6-6)
 
-**[`^        back to top        ^`](#table-of-contents)**
+<div align="right">
+  <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
 
 ## Course information
 
@@ -10130,7 +10132,12 @@ Source code:
 
 See picture below :
 
-![drawing images with subimages](media/image133.png){width="3.875in" height="4.010416666666667in"}
+<p align="center">
+<img src="/images/image133.png?raw=true"
+   alt="Drawing Images with Subimages"
+   width="55%">
+&nbsp;
+<br/>
 
 ### Example #2: different variants of drawImage(\...)
 
@@ -13074,7 +13081,12 @@ Code source:
 
 Try this:
 
-![](media/image164.png){width="6.5in" height="2.047222222222222in"}
+<p align="center">
+<img src="/images/image164.png?raw=true"
+   alt=" "
+   width="85%">
+&nbsp;
+<br/>
 
 HTML
 
@@ -13160,7 +13172,12 @@ In this example we use the closePath() method to draw a line between the last 
 
 Note how the different parts are linked together and make a \"path\":
 
-![path composition explained](media/image165.png){width="6.020833333333333in" height="2.21875in"}
+<p align="center">
+<img src="/images/image165.png?raw=true"
+   alt="Path composition explained"
+   width="85%">
+&nbsp;
+<br/>
 
 ### Interesting, interactive tool for generating code that draws Bézier curves
 
@@ -13192,7 +13209,12 @@ Note that:
 
 Here is an example that shows how to draw different filled rectangles in blue, with different levels of transparency:
 
-![](media/image166.png){width="6.5in" height="2.0680555555555555in"}
+<p align="center">
+<img src="/images/image166.png?raw=true"
+   alt=" "
+   width="85%">
+&nbsp;
+<br/>
 
 HTML
 
@@ -24416,3 +24438,6 @@ Click on the Codepen logo (on the top right) so to run the [online example](htt
 > \</html\>
 
 The end.
+05.02.2022 pm
+
+**[`^        back to top        ^`](#table-of-contents)**
