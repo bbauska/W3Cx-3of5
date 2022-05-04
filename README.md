@@ -80,27 +80,25 @@
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
+<h2>About W3C and the Web</h2>
+
 <h2> Course information</h2>
 
 <h3>Welcome to "HTML5 Coding Essentials and Best Practices"</h3>
 
--   Course outline
-
+-   Course outline (syllabus)
 -   Course forums
-
 -   Course tools
-
 -   About W3C and the Web
 
 W3C has designed a [**\"Front-End Web Developer\" (FEWD) Professional Certificate**](https://www.edx.org/professional-certificate/front-end-web-developer-9) where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript. The **W3C FEWD** program is composed of 5 courses:
 
 1.	CSS Basics
 2.	5.0x HTML5 and CSS Fundamentals
-3.	This course: 5.1x HTML5 Coding Essentials and Best Practices
+3.	This course: <b>5.1x HTML5 Coding Essentials and Best Practices</b>
 4.	5.2x HTML5 Apps and Games
 5.	JavaScript Introduction
 
-<h3>Welcome to "HTML5 Coding Essentials and Best Practices"</h3>
 This course is a natural follow up of the [CSS Basics](https://www.edx.org/course/css-basics) and [HTML5 & CSS Fundamentals](https://www.edx.org/course/html5-and-css-fundamentals) courses. As such, required prerequisites are:
 
 -   Be comfortable putting together an HTML document,
@@ -163,7 +161,17 @@ Here are a few possibilities for Web editors:
 
 To help you practice during the whole duration of the course, we use the following interactive online editors. Pretty much all the course\'s examples actually use these tools.
 
-[JS Bin](https://jsbin.com/)
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------------------- 02. jsbin logo ----------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image002.png?raw=true"
+   alt="JSBin logo"
+   width="15%">
+&nbsp;
+<br/>
+
+   - [JS Bin](https://jsbin.com/)
 
 JS Bin is an open source collaborative Web development debugging tool. Most of the examples that are in this course are on JSBin.
 
@@ -179,7 +187,7 @@ Tutorials can be found on the Web (such as[ this one](https://code.tutsplus.com
 &nbsp;
 <br/>
 
-[CodePen](https://codepen.io/)
+   - [CodePen](https://codepen.io/)
 
 CodePen is an HTML, CSS, and JavaScript code editor that previews/showcases your code bits in your browser.
 It helps with cross-device testing, real-time remote pair programming and teaching.
@@ -2469,91 +2477,77 @@ This example has two headings in the \<header\>:
 
 Here is the resulting table of contents, notice the two subsections that appear, one for the H1, one for the H2:
 
-![](media/image28.jpeg){width="5.572916666666667in" height="0.84375in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 28. example structural elements --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image028.jpeg?raw=true"
+   alt=""
+   width="55%">
+&nbsp;
+<br/>
 
 Indeed, HTML does not have a dedicated mechanism for marking up subheadings, alternative titles or taglines. 
 
 If you do not want the subtitles to be included in the table of contents, just use standard markup, for example \<p\> elements, as shown in the next example. Of course, CSS rules can be applied to change colors, sizes, etc.
 
 1.  \<header\>
-
 2.      \<h1\>HTML 5.1 Nightly\</h1\>
-
 3.      \<p\>A vocabulary and associated APIs for HTML and XHTML\</p\>
-
 4.      \<p\>Editor\'s Draft 9 May 2013\</p\>
-
 5.  \</header\>
 
 ### **Best practice #2**: try not to rely on implicit sectioning, use \<section\>, \<article\>, etc. instead of just \<h1\>\...\<h6\>
 
 The example below defines several implicit \"sections\" by using \<Hx\> directly (at *lines 7 and 9*):
 
-**Ok version (no explicit sections everywhere):**
+<b>Ok version (no explicit sections everywhere):</b>
 
 1.  \<body\>
-
 2.  **\<h4\>Apples\</h4\>**
-
 3.  \<p\>Apples are fruit.\</p\>
-
 4.  \<section\>
-
 5.       \<h2\>Taste\</h2\>
-
 6.       \<p\>They taste lovely.\</p\>
-
 7.       \<h6\>Sweet\</h6\>
-
 8.       \<p\>Red apples are sweeter than green ones.\</p\>
-
 9.       **\<h1\>Color\</h1\>**
-
 10.      \<p\>Apples come in various colors.\</p\>
-
 11. \</section\>
-
 12. \</body\>
 
-**Better version (best practice):**
+<b>Better version (best practice):</b>
 
 1.  \<body\>
-
 2.  \<h1\>Apples\</h1\>
-
 3.  \<p\>Apples are fruit.\</p\>
-
 4.  **\<section\>**
-
 5.       **\<h2\>Taste\</h2\>**
-
 6.       \<p\>They taste lovely.\</p\>
-
 7.       **\<section\>**
-
 8.           **\<h3\>Sweet\</h3\>**
-
 9.           \<p\>Red apples are sweeter than green ones.\</p\>
-
 10.      \</section\>
-
 11. \</section\>
-
 12. **\<section\>**
-
 13.      **\<h2\>Color\</h2\>**
-
 14.      \<p\>Apples come in various colors.\</p\>
-
 15. \</section\>
-
 16. \</body\>
 
 Both of the examples above are semantically identical and produce the same outline:
 
-![outline of previous examples](media/image29.jpeg){width="5.0in" height="2.449251968503937in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 29. outline of previous examples ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image029.jpeg?raw=true"
+   alt="CodePen logo"
+   width="45%">
+&nbsp;
+<br/>
 
-### 1.3.7 Embedding a Table of Contents
+<h3 id="ch3-7">1.3.7 Embedding a Table of Contents
 
 Here we propose a small piece of JavaScript code you can use in your documents to display an embedded table of contents. 
 
@@ -24597,4 +24591,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<b><i>5-3-2021 Tue 3:27pm</i></b>
+<b><i>5-3-2021 Tue 5:17pm</i></b>
