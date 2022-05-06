@@ -4,15 +4,14 @@
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image001.png?raw=true"
-   alt="W3Cx logo"
+   alt="W3Cx 3of5 HTML5.1 Coding Essentials and Best Practices logo"
    width="55%">
 &nbsp;
 <br/>
 
-:alien:  :sob:  :cold_sweat: :point_up:  :cancer:  :smile:
-
+<!---- :alien:  :sob:  :cold_sweat: :point_up:  :cancer:  :smile:   --->
 <!---- right arrow , left arrow , oriental , tilde ---->
-&#955;   &#9658;  &#767;  &#2400;
+<!---- &#955;   &#9658;  &#767;  &#2400;  --->
 
 ## [Table of Contents](#table-of-contents)
 
@@ -4856,9 +4855,23 @@ This example gives the first steps towards writing a custom video player. It sho
 
 Try it online:
 
-![](media/image78.png){width="6.0in" height="1.866026902887139in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------------- 78.  ---------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image078.png?raw=true"
+   alt=""
+   width="65%" />
+&nbsp;
 
-![](media/image79.png){width="4.0in" height="3.684478346456693in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------------- 79.  ---------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image079.png?raw=true"
+   alt=""
+   width="45%" />
+&nbsp;
 
 ##### Source code extract:
 
@@ -4924,7 +4937,14 @@ Try it online:
 
 This example listens to the ended event, and calls a callback function when the video is ended.
 
-![](media/image80.png){width="6.5in" height="2.095138888888889in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------------- 80.  ---------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image080.png?raw=true"
+   alt=""
+   width="65%" />
+&nbsp;
 
 \<video src=\"video.ogv\" id=\"myVideo\"\>
 
@@ -4954,7 +4974,14 @@ This example detects the end of a video, then loads the next video, changes the�
 
 Check the online example below: use the progress cursor to go near the end of the first video that is being played, and see how it continues with the next video. 
 
-![](media/image81.png){width="6.5in" height="2.08125in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------------- 81.  ---------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image081.png?raw=true"
+   alt=""
+   width="65%" />
+&nbsp;
 
 Source code:
 
@@ -5064,7 +5091,14 @@ Some examples are given \"as is\", such as the custom video player that uses SV
 
 Please see this example online, originally written by [Chris Heilmann](https://christianheilmann.com/), and tuned by us ;).
 
-![](media/image82.png){width="6.5in" height="2.1020833333333333in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------------- 82.  ---------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image082.png?raw=true"
+   alt=""
+   width="65%" />
+&nbsp;
 
 Don\'t forget to click the JavaScript and CSS tabs of the CodePen in order to display the JavaScript code that creates the buttons on the right of the video, and the CSS that processes the different clicks and applies CSS3 transforms.
 
@@ -5080,7 +5114,14 @@ This example shows a lot:
 
 This example also shows how to handle failures. See the code and play with this example below:
 
-![](media/image83.png){width="6.5in" height="2.067361111111111in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------------- 83.  ---------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image083.png?raw=true"
+   alt=""
+   width="65%" />
+&nbsp;
 
 Below is a piece of code for handling errors during video playback:
 
@@ -5152,7 +5193,14 @@ function logEvent(evt, color) {
 
 See the [example online](https://jsbin.com/xororol/3/edit?html,output) here too.
 
-![](media/image84.png){width="6.5in" height="2.067361111111111in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------------- 84.  ---------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image084.png?raw=true"
+   alt=""
+   width="65%" />
+&nbsp;
 
 Note that on mobile phones, the video does not start until the user presses the play control or clicks on the video picture. Using the \"canplaythrough\" event is a trick to call a function that starts the video player as soon as the page is loaded on desktop. This event is not supported by mobile devices, so if you try this example on a mobile, the video will not start automatically.
 
@@ -5248,7 +5296,14 @@ Source code extract:
 
 This is the ultimate way of doing a real custom player: redesign your own controls using SVG shapes! This example (try it [online](https://www.w3.org/2010/Talks/0430-www2010-plh/video-player.xhtml)) is given \"as is\" for those of you who may be curious.
 
-![snapshot of the online example of a custom XHTML5/SVG video player. The image shows a cup of coffee on a table](media/image85.png){width="3.0in" height="2.7333333333333334in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------------- 85. cup on table ---------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image085.png?raw=true"
+   alt="Snapshot of the Online Example of a Custom XHTML5/SVG Video Player.  Image Shows a Cup of Coffee on a Table"
+   width="25%" />
+&nbsp;
 
 ### Example #5: a custom video player written by a previous student
 
@@ -5596,7 +5651,14 @@ For this, use any sort of open source, free or commercial video encoding softwar
 
 So, let\'s suppose you have a video like the one below (we included it on YouTube for practical reasons). This video has subtitles (you can activate them in the YouTube player), but the goal of this lesson is to explain how we made them without using the YouTube embedded tools, which do not allow export the subtitle file to be exported in the webVTT format.
 
-![](media/image87.png){width="4.0in" height="2.255314960629921in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------------- 87.  ---------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image087.png?raw=true"
+   alt=""
+   width="25%" />
+&nbsp;
 
 And if you\'ve also got it in mp4/H264 and in webm formats, here is how you can embed it in your page using the video element:
 
@@ -23207,7 +23269,7 @@ This first example is useful for forms that allow the user to select one or more
 [Example on JSBin](https://jsbin.com/laseye/edit?html,output) or try it below in your browser:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 321. preview of selected images ---------------------------->
+<!------------------------------ 321. preview of selected images --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image001.png?raw=true"
@@ -24587,8 +24649,7 @@ Click on the Codepen logo (on the top right) so to run the [online example](htt
 > \</html\>
 
 The end.
-05.02.2022 pm
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<b><i>5-3-2021 Tue 5:17pm</i></b>
+<b><i>5-5-2021 Thur 11:18pm</i></b>
