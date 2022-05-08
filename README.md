@@ -527,7 +527,7 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 <br/>
 
 <https://www.w3.org/Icons/w3c_home>
-```{=html}
+```
    <a href="https://w3.org">
    <img src="https://w3.org/Icons/w3c_home.png" width="72" height="48" alt="World Wide Web Consortium">
    </a>
@@ -541,7 +541,7 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
    width="15%">
 &nbsp;
 <br/>
-```{=html}
+```
    <!DOCTYPE html>
    <html lang="en">
    <head>
@@ -698,7 +698,7 @@ This is an example of one way to organize a blog. Here, we have designed the HTM
 The navigation menu just below the header is a \<nav\> element. For the purpose of this example we haven\'t provided any value for the hyperlinks\...
 
 <h4>HTML code:</h4>
-```{=html}
+```
 > \<!DOCTYPE html\>
 >
 > \<html lang=\"en\"\>
@@ -734,7 +734,7 @@ The navigation menu just below the header is a \<nav\> element. For the purpos
 > **\</nav\>**
 ```
 And here is the CSS we used in this example for the \<nav\> element:
-```{=css}
+```
 > nav {
 >
 >     font-size: 1.5em;
@@ -1669,7 +1669,7 @@ If you look at the \"minimal document\" example, or at other examples in this co
 
 -   Many elements no longer need a closing tag: \</li\>, \</dt\>, \</dd\>, \</tr\>, \</th\>, \</td\>, \</thead\>, \</tfoot\>, \</tbody\>, \</option\>, \</optgroup\>, \</p\> (in most cases), \</head\>, \</body\> and \</html\>. Older browsers often add closing tags automatically at render time. We recommend, however, closing tags that would naturally be closed: the ones that delimit a particular zone in the document.
 
-```{=html}
+```
 <!-- -->
 ```
 -   Attribute values only need to be quoted if they contain spaces or some non-alphanumeric characters, instead of writing \<link rel=\"stylesheet\" href=\"style.css\"\>, we could have used \<link rel=stylesheet href=style.css\>. However, for compatibility with older browsers, it is wiser to still use quotes\...
@@ -3485,7 +3485,7 @@ For example,  HTML code such as this:
 
 1.  \<a href=\"toto.jpg\"\>
 
-```{=html}
+```
 <!-- -->
 ```
 1.      please right click this link to download
@@ -5421,12 +5421,12 @@ The example uses a \<track\> element to insert basic *captions* to the video
 
 -   The \<track\> element at *line 9* has an attribute named kind that indicates the type of the track that is included. Possible values are: subtitles, captions, descriptions, chapters or metadata.
 
-```{=html}
+```
 <!-- -->
 ```
 -    The \<track\> element also has an attribute default that indicates that we want this track to be displayed by default when reading the video.
 
-```{=html}
+```
 <!-- -->
 ```
 -   We also used  an attribute named crossorigin that is necessary just to run this demo, as it is required by the server that hosts the video from this example (server = codepen.io, but as the video and .vtt files come from another origin -another server-, this attribute is necessary).
@@ -10967,12 +10967,12 @@ As a reminder: an immediate mode means \"executing a call to a drawing method me
 
 -   In the previous examples, we saw how to draw rectangles using the fillRect(x, y, width, height) and strokeRect(x, y, width, height) methods of the context.
 
-```{=html}
+```
 <!-- -->
 ```
 -   We also learned how to draw a text message using the fillText(message, x, y) and strokeText(message, x, y) methods that draws a text in filled and wireframe mode, respectively.
 
-```{=html}
+```
 <!-- -->
 ```
 -   These methods, along with the drawImage(\...) method already seen in section 3.3.3, are *\"immediate methods\"*: as soon as they are executed, the results are displayed on screen, the drawings are performed, pixels on the canvas area change their colors, etc.
@@ -11831,7 +11831,7 @@ Notice the save/restore of the context at the beginning/end of the function. Thi
 
 -   *Line 13* starts a new path so that the function will only draw what it is meant to draw: a single line.
 
-```{=html}
+```
 <!-- -->
 ```
 -   *Lines 15-17* move the \"pen\" at (x1, y1) then draw a line to (x2, y2), and the stroke at *line 17* makes it appear on the screen.
@@ -12006,12 +12006,12 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 
 -   An arrow is made of one line (the arrow body) and three connected lines (the arrow head). 
 
-```{=html}
+```
 <!-- -->
 ```
 -   As we modify some context properties in this function, we call save() and restore() at the beginning and at the end of the function.
 
-```{=html}
+```
 <!-- -->
 ```
 -   This function can be improved in many ways: adding shadows, using fill() instead of stroke(), which gives strange results when the width is too big, etc.
@@ -14499,7 +14499,7 @@ There are a few steps we have to take before doing this:
 
     1.  var imageObj = new Image();
 
-```{=html}
+```
 <!-- -->
 ```
 1.  **Define a callback function that will be called once the image has been fully loaded** in memory; we cannot draw before the image has been loaded.
@@ -14510,14 +14510,14 @@ There are a few steps we have to take before doing this:
 
     3.  }
 
-```{=html}
+```
 <!-- -->
 ```
 1.  **Set the source of this image to the URL of the pattern**:
 
     1.  imageObj.src = \"https://www.myserver.com/myRepeatablePattern.png\";
 
-```{=html}
+```
 <!-- -->
 ```
 1.  **Create a pattern object from the loaded image:**\
@@ -14535,7 +14535,7 @@ There are a few steps we have to take before doing this:
 
     6.  };
 
-```{=html}
+```
 <!-- -->
 ```
 1.  **Inside the callback function (or inside a function called from inside the callback) ,we can finally draw**:
@@ -16510,12 +16510,12 @@ Source code:
 
 -   *Lines 52-61*: The code for launching and stopping the animation is similar to that from the previous example.
 
-```{=html}
+```
 <!-- -->
 ```
 -   *Lines 34-50*: The code that draws the monster is that which we saw earlier when we presented the 2D transformations. Best practice is to save and restore the context at the beginning and end of each function that changes the context.
 
-```{=html}
+```
 <!-- -->
 ```
 -   *Lines 21-32*: **The most interesting part is the animation loop** that implements the basic animation steps: *clear-draw-move*. In order to make a shape \"movable\", we use some \"state variables\" for its position and angle, and we modify them at each iteration (*lines 29-32*). We will see later on how to modify the value of these variables on user interactions (keyboard, mouse, etc.).
@@ -18725,7 +18725,7 @@ In that course, you will learn:
 
 -   **Small game framework / object oriented JavaScript / advanced event handling / collision detection / time based animation** - see [example online](https://jsbin.com/jifutoj/1/edit?html,js,console,output).
 
-```{=html}
+```
 <!-- -->
 ```
 -   **Sprite based animation**: like this [one](https://jsbin.com/libakum/1/edit?html,js,console,output) (this is ugly code to demonstrate the principle - in the course we develop a clean, sprite animation framework). Use the arrow keys after clicking in the canvas. It\'s better to try in standalone mode (click on the small black arrow in the top right of the JSBin window).
@@ -18812,7 +18812,7 @@ GUI: Graphical User Interface
 
 -   [Simple chart with a GUI](https://jsbin.com/gesive/edit?html,js,console,output) (see screenshot on the right)
 
-```{=html}
+```
 <!-- -->
 ```
 -   [Final version with different types of charts and a GUI](https://jsbin.com/ralonem/1/edit?html,js,output)  (see screenshot below)
@@ -24025,7 +24025,7 @@ Google reverse geocoding example (screenshot only) :
 ![](media/image330.png){width="4.0in" height="3.23374343832021in"}
 
 Source code of this example (in order to run it, you need a Google API key, used at *line 6*).
-```{=html}
+```
 <!DOCTYPE html>
 
 > <html lang="en">
@@ -24216,7 +24216,7 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 </p>
 
 <h4>HTML</h4>
-```{=html}
+```
     <!DOCTYPE html>
    
     <html>
@@ -24368,7 +24368,7 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 <h4>Example #3: shows the address on the map, from your current longitude and latitude</h4>
 
 <h4>HTML</h4>
-```{=html}
+```
     <!DOCTYPE html>
    
     <html>
@@ -24538,7 +24538,7 @@ This is just a variation of the previous examples. We embedded the interactive m
 Click on the Codepen logo (on the top right) so to run the [online example](https://codepen.io/w3devcampus/pen/MWKEJqM) (for security reasons the embedded version cannot run in this page):
 
 <h4>HTML</h4>
-```{=html}
+```
  <!DOCTYPE html>
 
  <html>
