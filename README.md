@@ -79,46 +79,48 @@
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h2>About W3C and the Web</h2>
+<h2 id-"cha-1">About W3C and the Web</h2>
 
 <h2> Course information</h2>
 
 <h3>Welcome to "HTML5 Coding Essentials and Best Practices"</h3>
+<ul>
+<li>Course outline (syllabus)</li>
+<li>Course forums</li>
+<li>Course tools</li>
+<li>About W3C and the Web</li>
+</ul>
 
--   Course outline (syllabus)
--   Course forums
--   Course tools
--   About W3C and the Web
+W3C has designed a [**\"Front-End Web Developer\" (FEWD) Professional Certificate**](https://www.edx.org/professional-certificate/front-end-web-developer-9) where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript. 
 
-W3C has designed a [**\"Front-End Web Developer\" (FEWD) Professional Certificate**](https://www.edx.org/professional-certificate/front-end-web-developer-9) where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript. The **W3C FEWD** program is composed of 5 courses:
+The **W3C FEWD** program is composed of 5 courses:
+<ol type="1">
+<li>CSS Basics</li>
+<li>5.0x HTML5 and CSS Fundamentals</li>
+<li>This course: <b>5.1x HTML5 Coding Essentials and Best Practices</b></li>
+<li>5.2x HTML5 Apps and Games</li>
+<li>JavaScript Introduction</li>
+</ol>
 
-1.	CSS Basics
-2.	5.0x HTML5 and CSS Fundamentals
-3.	This course: <b>5.1x HTML5 Coding Essentials and Best Practices</b>
-4.	5.2x HTML5 Apps and Games
-5.	JavaScript Introduction
+This course is a natural follow up of the [CSS Basics](https://www.edx.org/course/css-basics) and [HTML5 & CSS Fundamentals](https://www.edx.org/course/html5-and-css-fundamentals) courses. 
 
-This course is a natural follow up of the [CSS Basics](https://www.edx.org/course/css-basics) and [HTML5 & CSS Fundamentals](https://www.edx.org/course/html5-and-css-fundamentals) courses. As such, required prerequisites are:
-
--   Be comfortable putting together an HTML document,
--   Have minimal familiarity with CSS,
--   Basic knowledge of JavaScript and DOM APis is sufficient, and this course will include a recap of basics. You are also more than welcome to follow the [JavaScript Introduction](https://www.edx.org/course/javascript-introduction) course (introductory level).
+As such, required prerequisites are:
+<ul>
+<li>Be comfortable putting together an HTML document,</li>
+<li>Have minimal familiarity with CSS,</li>
+<li>Basic knowledge of JavaScript and DOM APis is sufficient, and this course will include a recap of basics. You are also more than welcome to follow the [JavaScript Introduction](https://www.edx.org/course/javascript-introduction) course (introductory level).</li>
+</ul>
 
 During this course, you will learn:
-
--   Learn the simplified HTML5 tags, and how to use microdata
-
--   Play with the audio and video tags
-
--   Use the Webcam
-
--   Draw and animate fun Web graphics
-
--   Discover HTML5 form features
-
--   Test the basic APIs, such as Web storage and geolocation
-
--   And most of all, practice coding techniques thanks to multiple interactive examples
+<ul>
+<li>Learn the simplified HTML5 tags, and how to use microdata<br/>&nbsp;</li>
+<li>Play with the audio and video tags<br/>&nbsp;</li>
+<li>Use the Webcam<br/>&nbsp;</li>
+<li>Draw and animate fun Web graphics<br/>&nbsp;</li>
+<li>Discover HTML5 form features<br/>&nbsp;</li>
+<li>Test the basic APIs, such as Web storage and geolocation<br/>&nbsp;</li>
+<li>And most of all, practice coding techniques thanks to multiple interactive examples.</li>
+</ul>
 
 The HTML5 course team is thrilled to guide you in your learning experience. We are committed to teach you how to code Web pages, and how to do it the correct way. We encourage you to create Web pages and apps and share them in the discussion forums. Have fun!
 
@@ -223,7 +225,7 @@ We are then providing references to the browser support of HTML5 features presen
 
 <h3>MDN Web Docs</h3>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------------- 05. mdn web docs --------------------------------------->
+<!------------------------------------ 05. mdn web docs logo ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image005.png?raw=true"
@@ -238,76 +240,109 @@ To help developers make these decisions consciously rather than accidentally, [
 
 -   [MDN browser compatibility data: Taking the guesswork out of web compatibility](https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/)
 
-```{=html}
-<!-- I don't know what goes here.  Stay tuned -->
-```
 -   [Caniuse and MDN compatibility data collaboration](https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/)
 
 <h3>W3C Validators: </h3>
 
 For over 15 years, the W3C has been developing and hosting [**[free]** and **[open source]** tools](https://w3c.github.io/developers/) used every day by **millions of Web developers and Web designers**. All the tools listed below are Web-based, and are available as downloadable sources or as free services on the [W3C Developers tools ](https://w3c.github.io/developers/tools/)site.
 
-## W3C Validator
+<h3>W3C Validator</h3>
 
 The [W3C validator](https://validator.w3.org/) checks the [markup validity](https://validator.w3.org/docs/help.html#validation_basics) of various Web document formats, such as HTML. Note that you are automatically directed to the [Nu Html Checker](https://validator.w3.org/nu/) when validating an HTML5 document.
 
-## CSS Validator
+<h3>CSS Validator</h3>
 
 The [CSS validator](https://jigsaw.w3.org/css-validator/) checks Cascading Style Sheets (CSS) and (X)HTML documents that use CSS stylesheets.
 
-![Laptop showing unicorn validator](media/image6.png){width="1.9895833333333333in" height="1.6354166666666667in"}
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 06. laptop showing unicorn validator ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image006.png?raw=true"
+   alt="Laptop Showing Unicorn Validator"
+   width="25%" />
+</p>
 
-## Unicorn
+<h3>Unicorn</h3>
 
 [Unicorn](https://validator.w3.org/unicorn/) is W3C\'s unified validator, which helps people improve the quality of their Web pages by performing a variety of checks. Unicorn gathers the results of the popular HTML and CSS validators, as well as other useful services, such as Internationalization, RSS/Atom feeds and http headers.
 
-## Internationalization Checker
+<h3 id="cha-3">Internationalization Checker</h3>
 
 The [W3C Internationalization Checker](https://validator.w3.org/i18n-checker/) provides information about various internationalization-related aspects of your page, including the HTTP headers that affect it. It will also report a number of issues and offer advice about how to resolve them.
 
-## Link Checker
+<h3>Link Checker</h3>
 
 The [W3C Link Checker](https://validator.w3.org/checklink) looks for issues in links, anchors and referenced objects in a Web page, CSS style sheet, or recursively on a whole Web site. For best results, it is recommended to first ensure that the documents checked use valid [(X)HTML Markup](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/).
 
-## W3C Cheatsheet
+<h3>W3C Cheatsheet</h3>
 
 The [W3C cheatsheet](https://www.w3.org/2009/cheatsheet/) provides quick access to useful information from a variety of specifications published by W3C. It aims at giving in a very compact and mobile-friendly format a compilation of useful knowledge extracted from W3C specifications, completed by summaries of guidelines developed at W3C, in particular Web accessibility guidelines, the Mobile Web Best Practices, and a number of internationalization tips.
 
-![W3C Cheatsheet snapshot image](media/image7.png){width="3.7291666666666665in" height="2.6041666666666665in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 07. w3c cheat sheet snapshot image ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image007.png?raw=true"
+   alt="W3C Cheat Sheet snapshot image"
+   width="35%" />
+</p>
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- ##. (##) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image###.png?raw=true"
+   alt=" "
+   width="##%" />
+</p>
 
 Its main feature is a lookup search box, where one can start typing a keyword and get a list of matching properties/elements/attributes/functions in the above-mentioned specifications, and further details on those when selecting the one of interest.
 
-## The W3C cheatsheet is only available as a [pure Web application](https://dev.w3.org/2009/cheatsheet/doc/).
+<h4>The W3C cheatsheet is only available as a <a href="https://dev.w3.org/2009/cheatsheet/doc/">pure Web application</a>.</h4>
 
-## Help Build the Web Platform
+<h3>Help Build the Web Platform</h3>
 
 Most of the technologies you use when developing Web applications and Web sites are designed and standardized in W3C in a completely open and transparent process.
 
 In fact, all W3C specifications are developed in public [GitHub repositories](https://github.com/w3c/), so if you are familiar with GitHub, you already know how to contribute to W3C specifications! This is all about raising issues (with feedback and suggestions) and/or bringing pull requests to fix identified issues.
 
-## Contribute
+<h3>Contribute</h3>
 
 Contributing to this standardization process might be a bit scary or hard to approach at first, but understanding at a deeper level how these technologies are built is a great way to build your expertise.
 
-![Logo of GitHub (the Octocat)](media/image8.png){width="0.7916666666666666in" height="0.65625in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 08. github (the octocat) logo (##) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image008.png?raw=true"
+   alt="Github (the octocat) logo"
+   width="15%" />
+</p>
 
 If you\'re looking to an easy way to dive into this standardization processes, check out which [issues in the W3C GitHub repositories have been marked as \"good first issue\"](https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues) and see if you find anything where you think you would be ready to help.
 
-## Shape the future
+<h3>Shape the future</h3>
 
-![Logo of the W3C Web Incubator Community Group](media/image9.png){width="2.40625in" height="0.6666666666666666in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------- 09. w3c web incubator community group logo (##) ------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image009.png?raw=true"
+   alt="W3C Web Incubator Community Group logo"
+   width="25%" />
+</p>
 
 Another approach is to go and bring feedback on ideas for future technologies: the [W3C Web Platform Community Incubator Group](https://wicg.io/) was built as an easy place to get started to provide feedback on new proposals or bring brand-new proposals for consideration.
 
 Happy Web building!
 
-## What is W3C?
+<h3 id="cha-3">What is W3C?</h3>
 
-### As steward of global Web standards, W3C\'s mission is to safeguard the openness, accessibility, and freedom of the World Wide Web from a technical perspective.
+As steward of global Web standards, W3C\'s mission is to safeguard the openness, accessibility, and freedom of the World Wide Web from a technical perspective.
 
 W3C\'s primary activity is to develop protocols and guidelines that ensure long-term growth for the Web. The widely adopted Web standards define key parts of what actually makes the World Wide Web work.
 
-### A few history bits
+<h3>A few history bits</h3>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 10. Tim Berners-Lee, WWW developer ------------------------------>
@@ -329,7 +364,7 @@ In April 1995, [Inria](https://www.inria.fr/) became the first European W3C ho
 
 In addition to these four Host locations that employ W3C staff, there are [W3C Offices](https://www.w3.org/Consortium/Offices/staff) around the globe that support the developer communities in their regions and organize local events. Find the one next to your place!
 
-### A few figures
+<h3>A few figures</h3>
 
 As of June 2020, W3C:
 
@@ -24652,4 +24687,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<b><i>5-5-2021 Thur 11:18pm</i></b>
+<h3><b><i>5-7-2021 Sat 7:31pm</i></b></h3>
