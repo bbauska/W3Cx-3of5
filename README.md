@@ -163,7 +163,7 @@ Here are a few possibilities for Web editors:
 To help you practice during the whole duration of the course, we use the following interactive online editors. Pretty much all the course\'s examples actually use these tools.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------------- 02. jsbin logo ----------------------------------------->
+<!------------------------------------- 02. jsbin logo (04) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image002.png?raw=true"
@@ -179,7 +179,7 @@ JS Bin is an open source collaborative Web development debugging tool. Most of t
 Tutorials can be found on the Web (such as[ this one](https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843)) or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it\'s always better to be logged in (it\'s free) if you do not want to lose your contributions/personal work.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 03. codepen logo ---------------------------------------->
+<!------------------------------------ 03. codepen logo (04) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image003.png?raw=true"
@@ -214,7 +214,7 @@ We are then providing references to the browser support of HTML5 features presen
 [Example of a CanIUse browser support table (using CSS3 colors)](media/image4.png)
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 04. caniuse example -------------------------------------->
+<!---------------------------------- 04. caniuse example (05) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image004.png?raw=true"
@@ -225,7 +225,7 @@ We are then providing references to the browser support of HTML5 features presen
 
 <h3>MDN Web Docs</h3>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------ 05. mdn web docs logo ------------------------------------->
+<!---------------------------------- 05. mdn web docs logo (05) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image005.png?raw=true"
@@ -255,7 +255,7 @@ The [W3C validator](https://validator.w3.org/) checks the [markup validity](h
 The [CSS validator](https://jigsaw.w3.org/css-validator/) checks Cascading Style Sheets (CSS) and (X)HTML documents that use CSS stylesheets.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 06. laptop showing unicorn validator ------------------------------>
+<!-------------------------- 06. laptop showing unicorn validator (06) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image006.png?raw=true"
@@ -280,7 +280,7 @@ The [W3C Link Checker](https://validator.w3.org/checklink) looks for issues in
 The [W3C cheatsheet](https://www.w3.org/2009/cheatsheet/) provides quick access to useful information from a variety of specifications published by W3C. It aims at giving in a very compact and mobile-friendly format a compilation of useful knowledge extracted from W3C specifications, completed by summaries of guidelines developed at W3C, in particular Web accessibility guidelines, the Mobile Web Best Practices, and a number of internationalization tips.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 07. w3c cheat sheet snapshot image ------------------------------->
+<!--------------------------- 07. w3c cheat sheet snapshot image (07) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image007.png?raw=true"
@@ -311,7 +311,7 @@ In fact, all W3C specifications are developed in public [GitHub repositories](h
 Contributing to this standardization process might be a bit scary or hard to approach at first, but understanding at a deeper level how these technologies are built is a great way to build your expertise.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 08. github (the octocat) logo (##) ------------------------------->
+<!----------------------------- 08. github (the octocat) logo (07) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image008.png?raw=true"
@@ -324,7 +324,7 @@ If you\'re looking to an easy way to dive into this standardization processes, c
 <h3>Shape the future</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 09. w3c web incubator community group logo (##) ------------------------>
+<!----------------------- 09. w3c web incubator community group logo (08) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image009.png?raw=true"
@@ -345,7 +345,7 @@ W3C\'s primary activity is to develop protocols and guidelines that ensure long-
 <h3>A few history bits</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 10. Tim Berners-Lee, WWW developer ------------------------------>
+<!-------------------------- 10. Tim Berners-Lee, WWW developer (08) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image004.png?raw=true"
@@ -382,7 +382,7 @@ As of June 2020, W3C:
 
 -   Has a [technical staff](https://www.w3.org/People/) composed of 64 people, spread on all five continents.
 
-## The Web is Amazing!
+<h4>The Web is Amazing!</h4>
 
 People often use the words \"Internet\" and \"Web\" interchangeably, but this usage is technically incorrect.
 
@@ -517,25 +517,23 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 *Example*: See the W3C logo below. It contains a link that points to the W3C Web site. The text alternative is going to be a brief description of the link target.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------------- 11. W3C logo ------------------------------------------>
+<!-------------------------------------- 11. W3C logo (13) --------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image011.png?raw=true"
    alt="W3C logo"
-   width="15%">
+   width="15%" />
 &nbsp;
 <br/>
 
 <https://www.w3.org/Icons/w3c_home>
-
-> \<a href=\"https://w3.org\"\>
->
-> \<img src=\"https://w3.org/Icons/w3c_home.png\" width=\"72\" height=\"48\" alt=\"World Wide Web Consortium\"\>
->
-> \</a\>
-
+```{=html}
+   <a href="https://w3.org">
+   <img src="https://w3.org/Icons/w3c_home.png" width="72" height="48" alt="World Wide Web Consortium">
+   </a>
+```
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------------- 12. html5 logo ----------------------------------------->
+<!------------------------------------- 12. html5 logo (13) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image012.png?raw=true"
@@ -543,34 +541,25 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
    width="15%">
 &nbsp;
 <br/>
-
-> \<!DOCTYPE html\>
->
-> \<html lang=\"en\"\>
->
-> \<head\>
->
->   \<meta charset=\"utf-8\"\>
->
->    \<title\>Page Title\</title\>
->
->    \<link rel=\"stylesheet\" href=\"style.css\"\>
->
->    \<script src=\"script.js\"\>\</script\>
->
-> \</head\>
->
-> \<body\>
->
-> \... \<!\-- The rest is content \--\>
-
+```{=html}
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+   <meta charset="utf-8">
+    <title>Page Title</title>
+    <link rel=\"stylesheet\" href=\"style.css\"\>
+    <script src=\"script.js\"\>\</script\>
+ </head>
+ <body>
+ ... <!-- The rest is content -->
+```
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 13. new structural elements in html5 ------------------------------->
+<!-------------------------- 13. new structural elements in html5 (14) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image013.png?raw=true"
    alt="Some of the new structural elements introduced by HTML5: section, article, etc."
-   width="55%">
+   width="55%" />
 &nbsp;
 <br/>
 
@@ -643,11 +632,11 @@ Let\'s study [an example we put on JsBin](https://jsbin.com/bucokav/edit?html,o
 #### Use a \<header\> at the top of the blog
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 14. image of header element at top of blog --------------------------->
+<!----------------------------- 14. image 'Simple HTML5 Blog' (16) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image014.jpeg?raw=true"
-   alt="Image of the header element at the top of the blog"
+   alt="Simple HTML5 Blog"
    width="25%">
 &nbsp;
 <br/>
@@ -697,13 +686,19 @@ This is an example of one way to organize a blog. Here, we have designed the HTM
 > }
 
 #### Use a \<nav\> for the navigation menu just below the header
-
-![image of the navigation menu](media/image15.jpeg){width="3.2708333333333335in" height="0.5416666666666666in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 15. imge of the navigaton menu (17) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image015.png?raw=true"
+   alt="Navigation Menu"
+   width="35%" />
+</p>
 
 The navigation menu just below the header is a \<nav\> element. For the purpose of this example we haven\'t provided any value for the hyperlinks\...
 
-##### **HTML code:**
-
+<h4>HTML code:</h4>
+```{=html}
 > \<!DOCTYPE html\>
 >
 > \<html lang=\"en\"\>
@@ -737,9 +732,9 @@ The navigation menu just below the header is a \<nav\> element. For the purpos
 >     \</ul\>
 >
 > **\</nav\>**
-
+```
 And here is the CSS we used in this example for the \<nav\> element:
-
+```{=css}
 > nav {
 >
 >     font-size: 1.5em;
@@ -783,7 +778,7 @@ And here is the CSS we used in this example for the \<nav\> element:
 >     color: #fff
 >
 > }
-
+```
 #### A \<section\> for each month and an \<article\> for each post in the blog
 
 Now, we have one big \<section\> element that contains a set of \<article\> elements...
