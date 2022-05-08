@@ -91,7 +91,7 @@
 <li>About W3C and the Web</li>
 </ul>
 
-W3C has designed a [**\"Front-End Web Developer\" (FEWD) Professional Certificate**](https://www.edx.org/professional-certificate/front-end-web-developer-9) where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript. 
+W3C has designed a [**"Front-End Web Developer" (FEWD) Professional Certificate**](https://www.edx.org/professional-certificate/front-end-web-developer-9) where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript. 
 
 The **W3C FEWD** program is composed of 5 courses:
 <ol type="1">
@@ -136,21 +136,21 @@ The HTML5 course team is thrilled to guide you in your learning experience. We a
 
 <h3>Web Editors:</h3>
 
-While any text editor, like NotePad or TextEdit, can be used to create Web pages, they don\'t necessarily offer a lot of help towards that end. Other options offer more facilities for error checking, syntax coloring and saving some typing by filling things out for you.
+While any text editor, like NotePad or TextEdit, can be used to create Web pages, they don't necessarily offer a lot of help towards that end. Other options offer more facilities for error checking, syntax coloring and saving some typing by filling things out for you.
 
 Here are a few possibilities for Web editors:
 
--   [Notepad](https://notepad-plus-plus.org/) - on Windows PC\'s
+-   [Notepad](https://notepad-plus-plus.org/) - on Windows PC's
 
 -   [Visual Studio Code](https://code.visualstudio.com/) - a free open source editor that can run on any operating system. Many developers are already familiar with Visual Studio Code. Many coding videos in this course are demonstrated using Visual Studio Code.
 
 -   [XCode](https://developer.apple.com/xcode/) - Mac developers may be familiar with XCode
 
--   TextEdit - this is available on Macs, but be sure you\'re [saving as plain text](https://discussions.apple.com/message/5014514#5014514), not as a \".rtf\" or \".doc\" file.
+-   TextEdit - this is available on Macs, but be sure you're [saving as plain text](https://discussions.apple.com/message/5014514#5014514), not as a ".rtf" or ".doc" file.
 
 -   [Sublime Text](https://www.sublimetext.com/) - it is quite popular with developers, though there can be a bit of a learning curve to use its many features.
 
--   [BlueGriffon](http://bluegriffon.org/) - a WYSIWYG (\"What You See Is What You Get\") content editor for the World Wide Web. Powered by Gecko, the rendering engine of Firefox, it\'s a modern and robust solution to edit Web pages in conformance to the latest Web Standards.
+-   [BlueGriffon](http://bluegriffon.org/) - a WYSIWYG ("What You See Is What You Get") content editor for the World Wide Web. Powered by Gecko, the rendering engine of Firefox, it\'s a modern and robust solution to edit Web pages in conformance to the latest Web Standards.
 
 -   [Atom](https://atom.io/) - another cross platform editor, created by [GitHub](https://github.com/).
 
@@ -2638,7 +2638,14 @@ They are also useful for checking the presence of headings in each sectioning c
 
 ### 1.3.8 The \<main\> Element
 
-### ![main element funny](media/image31.jpeg){width="2.0in" height="1.875in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 31. (##) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image031.jpeg?raw=true"
+   alt="Main Element Funny"
+   width="25%" />
+</p>
 
 If you use \<nav\> / \<header\> / \<footer\> etc. to structure your document, you can also use \<main\> to identify the main content of the document. Doing so provides a navigable document structure for assistive technology users as well as styling hooks for devs.
 
@@ -2836,7 +2843,14 @@ Let\'s go back to our blog example and see what can be improved:
 
 [The blog example is online at JsBin](https://jsbin.com/heboke/edit?html,output):  let\'s see below what the Google Chrome HTML5 Outliner extension showed.
 
-![image of the blog table of content, that shows an untitled nav entry](media/image32.jpeg){width="5.0in" height="2.244121828521435in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------- 32. image of teh blog toc, show an untitled nav entry (##) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image032.jpeg?raw=true"
+   alt="Image of the Blog Table of Contents, that show an untitled nav entry"
+   width="65%" />
+</p>
 
 Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an \<article\> that is in a \<section\> (this corresponds to the third example given in the \"heading and sectioning elements\" part of the course):
 
@@ -24011,20 +24025,20 @@ Google reverse geocoding example (screenshot only) :
 ![](media/image330.png){width="4.0in" height="3.23374343832021in"}
 
 Source code of this example (in order to run it, you need a Google API key, used at *line 6*).
+```{=html}
+<!DOCTYPE html>
 
-\<!DOCTYPE html\>
-
-> \<html lang=\"en\"\>
+> <html lang="en">
 >
-> \<head\>
+> <head>
 >
-> \<meta charset=\"utf-8\"\>
+> <meta charset="utf-8">
 >
-> \<title\>Js bin \</title\>
+> <title>Js bin </title>
 >
->     \<script src=\"https://maps.googleapis.com/maps/api/js?key=PUT_HERE_YOUR_API_KEY&v=3.exp&sensor=false\"\>\</script\>
+>     <script src="https://maps.googleapis.com/maps/api/js?key=PUT_HERE_YOUR_API_KEY&v=3.exp&sensor=false"></script>
 >
-> \<script\>
+> <script>
 >
 > // p elements for displaying lat / long and address
 >
@@ -24044,9 +24058,9 @@ Source code of this example (in order to run it, you need a Google API key, used
 >
 > function init() {
 >
->     displayCoords=document.getElementById(\"msg\");
+>     displayCoords=document.getElementById("msg");
 >
->     myAddress = document.getElementById(\"address\");
+>     myAddress = document.getElementById("address");
 >
 >     geocoder = new google.maps.Geocoder();
 >
@@ -24060,11 +24074,11 @@ Source code of this example (in order to run it, you need a Google API key, used
 >
 >        center: latlng,
 >
->        mapTypeId: \'roadmap\'
+>        mapTypeId: 'roadmap'
 >
 >     }
 >
->     map = new google.maps.Map(document.getElementById(\'map_canvas\'), mapOptions);
+>     map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 >
 > } // end of init()
 >
@@ -24078,7 +24092,7 @@ Source code of this example (in order to run it, you need a Google API key, used
 >
 >     } else {
 >
->        displayCoords.innerHTML=\"Geolocation API not supported by your browser.\";
+>        displayCoords.innerHTML="Geolocation API not supported by your browser.";
 >
 >     }
 >
@@ -24088,9 +24102,9 @@ Source code of this example (in order to run it, you need a Google API key, used
 >
 > function showPosition(position) {
 >
->     displayCoords.innerHTML=\"Latitude: \" + position.coords.latitude +
+>     displayCoords.innerHTML="Latitude: " + position.coords.latitude +
 >
->                             \"\<br /\>Longitude: \" + position.coords.longitude;
+>                             "<br />Longitude: " + position.coords.longitude;
 >
 >     // Display the map
 >
@@ -24104,23 +24118,23 @@ Source code of this example (in order to run it, you need a Google API key, used
 >
 >    // Ask google geocoder for an address once we get a longitude and
 >
->    // a latitude. In fact, the reverse geocoder sends back an array of \"guesses\"
+>    // a latitude. In fact, the reverse geocoder sends back an array of "guesses"
 >
 >    // i.e. not just one address object, but several. Each entry in this array
 >
->    // has several properties such as street, city, etc. We use the \"formatted_address\"
+>    // has several properties such as street, city, etc. We use the "formatted_address"
 >
 >    // one here, but it might be interesting to get the detailed properties in other
 >
 >    // applications like a form with street, city, zip code etc.
 >
->    geocoder.geocode({\'latLng\': latlng},reverseGeocoderSuccess);
+>    geocoder.geocode({'latLng': latlng},reverseGeocoderSuccess);
 >
 >    function reverseGeocoderSuccess(results, status) {
 >
 >      if (status == google.maps.GeocoderStatus.OK) {
 >
->         if (results\[1\]) {
+>         if (results[1]) {
 >
 >            map.setZoom(11);
 >
@@ -24132,23 +24146,23 @@ Source code of this example (in order to run it, you need a Google API key, used
 >
 >                         });
 >
->            infowindow.setContent(results\[1\].formatted_address);
+>            infowindow.setContent(results[1].formatted_address);
 >
 >            infowindow.open(map, marker);
 >
 >            // Display address as text in the page
 >
->            myAddress.innerHTML=\"Adress: \" + results\[0\].formatted_address; 
+>            myAddress.innerHTML="Adress: " + results[0].formatted_address; 
 >
 >         } else {
 >
->            alert(\'No surface address found\');
+>            alert('No surface address found');
 >
 >         }
 >
 >       } else {
 >
->          alert(\'Geocoder failed due to: \' + status);
+>          alert('Geocoder failed due to: ' + status);
 >
 >       }
 >
@@ -24156,530 +24170,542 @@ Source code of this example (in order to run it, you need a Google API key, used
 >
 > } // end of showOnGoogleMap
 >
-> \</script\>
+> </script>
 >
-> \</head\>
+> </head>
 >
-> \<body onload=\"init()\"\>
+> <body onload="init()">
 >
-> \<title\>HTML5 + Geolocalisation + Google Maps API Reverse Geocoding\</title\>
+> <title>HTML5 + Geolocalisation + Google Maps API Reverse Geocoding</title>
 >
-> \<p id=\"msg\"\>Click the button to get your coordinates:\</p\>
+> <p id="msg">Click the button to get your coordinates:</p>
 >
-> \<p id=\"address\"\>\</p\>
+> <p id="address"></p>
 >
-> \<button onclick=\"getLocation()\"\>Where am I ?\</button\>
+> <button onclick="getLocation()">Where am I ?</button>
 >
-> \<div id=\"map_canvas\" style=\"width: 500px; height: 300px\"\>\</div\>
+> <div id="map_canvas" style="width: 500px; height: 300px"></div>
 >
-> \</body\>
+> </body>
 >
-> \</html\>
-
+> </html>
+```
 Gisgraphy (free service) reverse geocoding example (screenshot only, click on it to see [the demo on the Gisgraphy website](https://services.gisgraphy.com/static/leaflet/index.html)):
 
-![](media/image331.png){width="5.0in" height="3.1073720472440947in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 331. (##) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image331.png?raw=true"
+   alt=" "
+   width="65%" />
+</p>
 
-##### Example #2: reverse geocoding + OpenStreetMap
+<h4>Example #2: reverse geocoding + OpenStreetMap</h4>
 
 Important note: these examples below rely on an external [GitHub resource](https://github.com/perliedman/leaflet-control-geocoder). No related questions are asked in this module\'s exerises or final exam.
 
 Please, pan and zoom on the map and click. The longitude and latitude are computed from your click and a free reverse geocoding service is used to convert to a physical address.
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 332. (##) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image332.png?raw=true"
+   alt=" "
+   width="65%" />
+</p>
 
-![](media/image332.png){width="4.958333333333333in" height="3.1666666666666665in"}
+<h4>HTML</h4>
+```{=html}
+    <!DOCTYPE html>
+   
+    <html>
+   
+    <head>
+   
+    <title>Leaflet Control Geocoder</title>
+   
+    <meta charset="utf-8" />
+   
+    <meta
+   
+    name="viewport"
+   
+    content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
+   
+    />
+   
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
+   
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+   
+    <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
+   
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+   
+    <style type="text/css">
+   
+    body {
+   
+    margin: 0;
+   
+    }
+   
+    #map {
+   
+    position: absolute;
+   
+    width: 100%;
+   
+    height: 100%;
+   
+    }
+   
+    </style>
+   
+    </head>
+   
+    <body>
+   
+    <div id="map"></div>
+   
+    <script type="text/javascript">
+   
+    var map = L.map('map').setView([0, 0], 2);
+   
+    var geocoder = L.Control.Geocoder.nominatim();
+   
+    if (URLSearchParams && location.search) {
+   
+    // parse /?geocoder=nominatim from URL
+   
+    var params = new URLSearchParams(location.search);
+   
+    var geocoderString = params.get('geocoder');
+   
+    if (geocoderString && L.Control.Geocoder[geocoderString]) {
+   
+    console.log('Using geocoder', geocoderString);
+   
+    geocoder = L.Control.Geocoder[geocoderString]();
+   
+    } else if (geocoderString) {
+   
+    console.warn('Unsupported geocoder', geocoderString);
+   
+    }
+   
+    }
+   
+    var control = L.Control.geocoder({
+   
+    query: 'Moon',
+   
+    placeholder: 'Search here...',
+   
+    geocoder: geocoder
+   
+    }).addTo(map);
+   
+    var marker;
+   
+    setTimeout(function() {
+   
+    control.setQuery('Earth');
+   
+    }, 12000);
+   
+    L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+   
+    attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+   
+    }).addTo(map);
+   
+    map.on('click', function(e) {
+   
+    console.log(e.latlng)
+   
+    geocoder.reverse(e.latlng, map.options.crs.scale(map.getZoom()), function(results) {
+   
+    var r = results[0];
+   
+    if (r) {
+   
+    if (marker) {
+   
+    marker
+   
+    .setLatLng(r.center)
+   
+    .setPopupContent(r.html || r.name)
+   
+    .openPopup();
+   
+    } else {
+   
+    marker = L.marker(r.center)
+   
+    .bindPopup(r.name)
+   
+    .addTo(map)
+   
+    .openPopup();
+   
+    }
+   
+    }
+   
+    });
+   
+    });
+   
+    </script>
 
-##### HTML
+    </body>
 
-> \<!DOCTYPE html\>
->
-> \<html\>
->
-> \<head\>
->
-> \<title\>Leaflet Control Geocoder\</title\>
->
-> \<meta charset=\"utf-8\" /\>
->
-> \<meta
->
-> name=\"viewport\"
->
-> content=\"width=device-width, user-scalable=no initial-scale=1, maximum-scale=1\"
->
-> /\>
->
-> \<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@latest/dist/leaflet.css\" /\>
->
-> \<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css\" /\>
->
-> \<script src=\"https://unpkg.com/leaflet@latest/dist/leaflet-src.js\"\>\</script\>
->
-> \<script src=\"https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js\"\>\</script\>
->
-> \<style type=\"text/css\"\>
->
-> body {
->
-> margin: 0;
->
-> }
->
-> #map {
->
-> position: absolute;
->
-> width: 100%;
->
-> height: 100%;
->
-> }
->
-> \</style\>
->
-> \</head\>
->
-> \<body\>
->
-> \<div id=\"map\"\>\</div\>
->
-> \<script type=\"text/javascript\"\>
->
-> var map = L.map(\'map\').setView(\[0, 0\], 2);
->
-> var geocoder = L.Control.Geocoder.nominatim();
->
-> if (URLSearchParams && location.search) {
->
-> // parse /?geocoder=nominatim from URL
->
-> var params = new URLSearchParams(location.search);
->
-> var geocoderString = params.get(\'geocoder\');
->
-> if (geocoderString && L.Control.Geocoder\[geocoderString\]) {
->
-> console.log(\'Using geocoder\', geocoderString);
->
-> geocoder = L.Control.Geocoder\[geocoderString\]();
->
-> } else if (geocoderString) {
->
-> console.warn(\'Unsupported geocoder\', geocoderString);
->
-> }
->
-> }
->
-> var control = L.Control.geocoder({
->
-> query: \'Moon\',
->
-> placeholder: \'Search here\...\',
->
-> geocoder: geocoder
->
-> }).addTo(map);
->
-> var marker;
->
-> setTimeout(function() {
->
-> control.setQuery(\'Earth\');
->
-> }, 12000);
->
-> L.tileLayer(\'https://{s}.tile.osm.org/{z}/{x}/{y}.png\', {
->
-> attribution: \'&copy; \<a href=\"https://osm.org/copyright\"\>OpenStreetMap\</a\> contributors\'
->
-> }).addTo(map);
->
-> map.on(\'click\', function(e) {
->
-> console.log(e.latlng)
->
-> geocoder.reverse(e.latlng, map.options.crs.scale(map.getZoom()), function(results) {
->
-> var r = results\[0\];
->
-> if (r) {
->
-> if (marker) {
->
-> marker
->
-> .setLatLng(r.center)
->
-> .setPopupContent(r.html \|\| r.name)
->
-> .openPopup();
->
-> } else {
->
-> marker = L.marker(r.center)
->
-> .bindPopup(r.name)
->
-> .addTo(map)
->
-> .openPopup();
->
-> }
->
-> }
->
-> });
->
-> });
->
-> \</script\>
->
-> \</body\>
->
-> \</html\>
+ </html>
+```
+<h4>Example #3: shows the address on the map, from your current longitude and latitude</h4>
 
-##### Example #3: shows the address on the map, from your current longitude and latitude
+<h4>HTML</h4>
+```{=html}
+    <!DOCTYPE html>
+   
+    <html>
+   
+    <head>
+   
+    <title>Leaflet Control Geocoder</title>
+   
+    <meta charset="utf-8" />
+   
+    <meta
+   
+    name="viewport"
+   
+    content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
+   
+    />
+   
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css\" />
+   
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+   
+    <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
+   
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+   
+ <style type="text/css">
 
-##### HTML
+ body {
 
-> \<!DOCTYPE html\>
->
-> \<html\>
->
-> \<head\>
->
-> \<title\>Leaflet Control Geocoder\</title\>
->
-> \<meta charset=\"utf-8\" /\>
->
-> \<meta
->
-> name=\"viewport\"
->
-> content=\"width=device-width, user-scalable=no initial-scale=1, maximum-scale=1\"
->
-> /\>
->
-> \<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@latest/dist/leaflet.css\" /\>
->
-> \<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css\" /\>
->
-> \<script src=\"https://unpkg.com/leaflet@latest/dist/leaflet-src.js\"\>\</script\>
->
-> \<script src=\"https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js\"\>\</script\>
->
-> \<style type=\"text/css\"\>
->
-> body {
->
-> margin: 0;
->
-> }
->
-> #map {
->
-> position: absolute;
->
-> width: 100%;
->
-> height: 100%;
->
-> }
->
-> \</style\>
->
-> \</head\>
->
-> \<body\>
->
-> \<div id=\"map\"\>\</div\>
->
-> \<script type=\"text/javascript\"\>
->
-> var geocoder = L.Control.Geocoder.nominatim();
->
-> var map, marker, latitude, longitude;
->
-> function getLocation() {
->
-> if (!navigator.geolocation) {
->
-> alert(\"Browser doesn\'t support geolocation\");
->
-> } else {
->
-> navigator.geolocation.getCurrentPosition(success, error);
->
-> }
->
-> }
->
-> // Get current position successfully
->
-> function success(position) {
->
-> latitude = position.coords.latitude;
->
-> longitude = position.coords.longitude;
->
-> // Instance map using leaflet
->
-> map = L.map(\'map\').setView(\[latitude, longitude\], 13);
->
-> // Tile layer using key api at cloudmade.com
->
-> L.tileLayer(\'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\', {
->
-> key: \'760506895e284217a7442ce2efe97797\',
->
-> styleId: 103288,
->
-> maxZoom: 16
->
-> }).addTo(map);
->
-> // Marker using leaflet
->
-> marker = L.marker(\[latitude, longitude\]).addTo(map);
->
-> // Popup in leaflet
->
-> marker.bindPopup(\'\<p\>\</p\>\').openPopup();
->
-> getPhysicalAddress({lat:latitude, lng:longitude});
->
-> }
->
-> // Get current position fail
->
-> function error() {
->
-> alert(\'Get current position fail. Please access codepen to get geolocation.\');
->
-> }
->
-> var marker;
->
-> function getPhysicalAddress(latlong) {
->
-> geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
->
-> var r = results\[0\];
->
-> if (r) {
->
-> if (marker) {
->
-> marker
->
-> .setLatLng(r.center)
->
-> .setPopupContent(r.html \|\| r.name)
->
-> .openPopup();
->
-> } else {
->
-> marker = L.marker(r.center)
->
-> .bindPopup(r.name)
->
-> .addTo(map)
->
-> .openPopup();
->
-> }
->
-> }
->
-> });
->
-> }
->
-> getLocation();
->
-> \</script\>
->
-> \</body\>
->
-> \</html\>
+ margin: 0;
 
-##### Example #4: use of geolocation, map and reverse geocoder in a HTML form
+ }
+
+ #map {
+
+ position: absolute;
+
+ width: 100%;
+
+ height: 100%;
+
+ }
+
+ </style>
+
+ </head>
+
+ <body>
+
+ <div id="map"></div>
+
+ <script type="text/javascript">
+
+ var geocoder = L.Control.Geocoder.nominatim();
+
+ var map, marker, latitude, longitude;
+
+ function getLocation() {
+
+ if (!navigator.geolocation) {
+
+ alert("Browser doesn't support geolocation");
+
+ } else {
+
+ navigator.geolocation.getCurrentPosition(success, error);
+
+ }
+
+ }
+
+ // Get current position successfully
+
+ function success(position) {
+
+ latitude = position.coords.latitude;
+
+ longitude = position.coords.longitude;
+
+ // Instance map using leaflet
+
+ map = L.map('map').setView([latitude, longitude], 13);
+
+ // Tile layer using key api at cloudmade.com
+
+ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+
+ key: '760506895e284217a7442ce2efe97797',
+
+ styleId: 103288,
+
+ maxZoom: 16
+
+ }).addTo(map);
+
+ // Marker using leaflet
+
+ marker = L.marker([latitude, longitude]).addTo(map);
+
+ // Popup in leaflet
+
+ marker.bindPopup('<p></p>').openPopup();
+
+ getPhysicalAddress({lat:latitude, lng:longitude});
+
+ }
+
+ // Get current position fail
+
+ function error() {
+
+ alert('Get current position fail. Please access codepen to get geolocation.');
+
+ }
+
+ var marker;
+
+ function getPhysicalAddress(latlong) {
+
+ geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
+
+ var r = results[0];
+
+ if (r) {
+
+ if (marker) {
+
+ marker
+
+ .setLatLng(r.center)
+
+ .setPopupContent(r.html || r.name)
+
+ .openPopup();
+
+ } else {
+
+ marker = L.marker(r.center)
+
+ .bindPopup(r.name)
+
+ .addTo(map)
+
+ .openPopup();
+
+ }
+
+ }
+
+ });
+
+ }
+
+ getLocation();
+
+ </script>
+
+ </body>
+
+ </html>
+```
+<h4>Example #4: use of geolocation, map and reverse geocoder in a HTML form</h4>
 
 This is just a variation of the previous examples. We embedded the interactive map in a form, and we display the results of the reverse geocoder in a form field. This example might be useful if you want to pre-fill the address of a registration form, depending on the current location of the person who is registering.
 
 Click on the Codepen logo (on the top right) so to run the [online example](https://codepen.io/w3devcampus/pen/MWKEJqM) (for security reasons the embedded version cannot run in this page):
 
-##### HTML
+<h4>HTML</h4>
+```{=html}
+ <!DOCTYPE html>
 
-> \<!DOCTYPE html\>
->
-> \<html\>
->
-> \<head\>
->
-> \<title\>Gimmee My Location\</title\>
->
-> \<meta charset=\"utf-8\" /\>
->
-> \<meta
->
-> name=\"viewport\"
->
-> content=\"width=device-width, user-scalable=no initial-scale=1, maximum-scale=1\"
->
-> /\>
->
-> \<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@latest/dist/leaflet.css\" /\>
->
-> \<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css\" /\>
->
-> \<script src=\"https://unpkg.com/leaflet@latest/dist/leaflet-src.js\"\>\</script\>
->
-> \<script src=\"https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js\"\>\</script\>
->
-> \</head\>
->
-> \<body onload=\"getLocation();\"\>
->
-> \<h1\>Example of the use of reverse geocoder in a form\</h1\>
->
-> \<form\>
->
-> \<fieldset\>
->
-> \<legend\>Form example with map and address\...\</legend\>
->
-> \<div id=\"map\" style=\"width: 500px; height: 300px\"\>\</div\>
->
-> \</fieldset\>
->
-> \<fieldset\>
->
-> \<legend\>Surface address\</legend\>
->
-> \<input id=\"surfaceAddress\" size=110 type=\"text\"\>
->
-> \</fieldset\>
->
-> \</form\>
->
-> \<div id=\"map\"\>\</div\>
->
-> \<script type=\"text/javascript\"\>
->
-> var geocoder = L.Control.Geocoder.nominatim();
->
-> var map, marker, latitude, longitude;
->
-> function getLocation() {
->
-> if (!navigator.geolocation) {
->
-> alert(\"Browser doesn\'t support geolocation\");
->
-> } else {
->
-> navigator.geolocation.getCurrentPosition(success, error);
->
-> }
->
-> }
->
-> // Get current position successfully
->
-> function success(position) {
->
-> latitude = position.coords.latitude;
->
-> longitude = position.coords.longitude;
->
-> // Instance map using leaflet
->
-> map = L.map(\'map\').setView(\[latitude, longitude\], 13);
->
-> // Tile layer using key api at cloudmade.com
->
-> L.tileLayer(\'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\', {
->
-> key: \'760506895e284217a7442ce2efe97797\',
->
-> styleId: 103288,
->
-> maxZoom: 16
->
-> }).addTo(map);
->
-> // Marker using leaflet
->
-> marker = L.marker(\[latitude, longitude\]).addTo(map);
->
-> // Popup in leaflet
->
-> marker.bindPopup(\'\<p\>\</p\>\').openPopup();
->
-> getPhysicalAddress({lat:latitude, lng:longitude});
->
-> }
->
-> // Get current position fail
->
-> function error() {
->
-> alert(\'Get current position fail. Please access codepen to get geolocation.\');
->
-> }
->
-> var marker;
->
-> function getPhysicalAddress(latlong) {
->
-> geocoder.reverse(latlong, 500000, function(results) {
->
-> var r = results\[0\];
->
-> console.log(r.name);
->
-> document.querySelector(\"#surfaceAddress\").value = r.name;
->
-> if (r) {
->
-> if (marker) {
->
-> marker
->
-> .setLatLng(r.center)
->
-> .setPopupContent(r.html \|\| r.name)
->
-> .openPopup();
->
-> } else {
->
-> marker = L.marker(r.center)
->
-> .bindPopup(r.name)
->
-> .addTo(map)
->
-> .openPopup();
->
-> }
->
-> }
->
-> });
->
-> }
->
-> \</script\>
->
-> \</body\>
->
-> \</html\>
+ <html>
 
+ <head>
+
+ <title>Gimmee My Location</title>
+
+ <meta charset="utf-8" />
+
+ <meta
+
+ name="viewport"
+
+ content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
+
+ />
+
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
+
+ <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+ <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
+
+ <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+ </head>
+
+ <body onload="getLocation();">
+
+ <h1>Example of the use of reverse geocoder in a form</h1>
+
+ <form>
+
+ <fieldset>
+
+ <legend>Form example with map and address...</legend>
+
+ <div id="map" style="width: 500px; height: 300px"></div>
+
+ </fieldset>
+
+ <fieldset>
+
+ <legend>Surface address</legend>
+
+ <input id="surfaceAddress" size=110 type="text">
+
+ <fieldset>
+
+ <form>
+
+ <div id="map"></div>
+
+ <script type="text/javascript">
+
+ var geocoder = L.Control.Geocoder.nominatim();
+
+ var map, marker, latitude, longitude;
+
+ function getLocation() {
+
+ if (!navigator.geolocation) {
+
+ alert("Browser doesn't support geolocation");
+
+ } else {
+ navigator.geolocation.getCurrentPosition(success, error);
+
+ }
+
+ }
+
+ // Get current position successfully
+
+ function success(position) {
+
+ latitude = position.coords.latitude;
+
+ longitude = position.coords.longitude;
+
+ // Instance map using leaflet
+
+ map = L.map('map').setView([latitude, longitude], 13);
+
+ // Tile layer using key api at cloudmade.com
+
+ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}{x}{y}.png', {
+
+ key: '760506895e284217a7442ce2efe97797',
+
+ styleId: 103288,
+
+ maxZoom: 16
+
+ }).addTo(map);
+
+ // Marker using leaflet
+
+ marker = L.marker([latitude, longitude]).addTo(map);
+
+ // Popup in leaflet
+
+ marker.bindPopup('<p></p>').openPopup();
+
+ getPhysicalAddress({lat:latitude, lng:longitude});
+
+ }
+
+ // Get current position fail
+
+ function error() {
+
+ alert('Get current position fail. Please access codepen to get geolocation.');
+
+ }
+
+ var marker;
+
+ function getPhysicalAddress(latlong) {
+
+ geocoder.reverse(latlong, 500000, function(results) {
+
+ var r = results[0];
+
+ console.log(r.name);
+
+ document.querySelector("#surfaceAddress").value = r.name;
+
+ if (r) {
+
+ if (marker) {
+
+ marker
+
+ .setLatLng(r.center)
+
+ .setPopupContent(r.html || r.name)
+
+ .openPopup();
+
+ } else {
+
+ marker = L.marker(r.center)
+
+ .bindPopup(r.name)
+
+ .addTo(map)
+
+ .openPopup();
+
+ }
+
+ }
+
+ });
+
+ }
+
+ <script>
+
+ </body>
+
+ </html>
+```
 The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>5-7-2021 Sat 7:31pm</i></b></h3>
+<h3><b><i>5-7-2021 Sat 11:23pm</i></b></h3>
