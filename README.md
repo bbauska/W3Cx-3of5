@@ -23774,11 +23774,25 @@ This section presents an example of how to get an interactive map, using [the 
 
 How to get a map centered on your longitude and latitude
 
-![](media/image328.png){width="6.5in" height="2.357638888888889in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 328. openstreetmap test (444) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image328.png?raw=true"
+   alt="Example/Test OpenStreetMap"
+   width="85%" />
+</p>
 
 This example is just given \"as is\", as there are so many possibilities for rendering a map with [the Leaflet API for OpenStreetMaps](https://leafletjs.com/reference-1.6.0.html). However, we think having such a basic example might be useful.
 
-![](media/image329.png){width="4.979166666666667in" height="3.1458333333333335in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 329. openstreetmap test (444) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image329.png?raw=true"
+   alt="Example/Test OpenStreetMap"
+   width="50%" />
+</p>
 
 <h4>JS</h4>
 
@@ -24022,7 +24036,14 @@ Example #1: how to get a physical address from the longitude and latitude
 
 Google reverse geocoding example (screenshot only) :
 
-![](media/image330.png){width="4.0in" height="3.23374343832021in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------ 330. google reverse geocoding example (447) --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image330.png?raw=true"
+   alt="Gisgraphy"
+   width="45%" />
+</p>
 
 Source code of this example (in order to run it, you need a Google API key, used at *line 6*).
 ```
@@ -24193,11 +24214,11 @@ Source code of this example (in order to run it, you need a Google API key, used
 Gisgraphy (free service) reverse geocoding example (screenshot only, click on it to see [the demo on the Gisgraphy website](https://services.gisgraphy.com/static/leaflet/index.html)):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 331. (##) ------------------------------->
+<!------------------------------------ 331. gisgraphy (449) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image331.png?raw=true"
-   alt=" "
+   alt="Gisgraphy"
    width="65%" />
 </p>
 
@@ -24207,11 +24228,11 @@ Important note: these examples below rely on an external [GitHub resource](http
 
 Please, pan and zoom on the map and click. The longitude and latitude are computed from your click and a free reverse geocoding service is used to convert to a physical address.
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 332. (##) ------------------------------->
+<!------------------------ 332. reverse geocoding - openstreetmap (449) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image332.png?raw=true"
-   alt=" "
+   alt="Reverse Geocoding - OpenStreetMap"
    width="65%" />
 </p>
 
@@ -24708,4 +24729,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>5-7-2021 Sat 11:23pm</i></b></h3>
+<h3><b><i>5-10-2022 Tue 8:36am</i></b></h3>
