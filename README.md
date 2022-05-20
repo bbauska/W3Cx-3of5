@@ -9253,128 +9253,69 @@ ctx.restore();
 
 }
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<title\>2D transformation\</title\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<style\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>2D transformation</title>
+<meta charset="utf-8"/>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var canvas, ctx;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 // 3 - we can draw, try to change these values
-
 ctx.translate(100, 100);
-
 ctx.rotate(Math.PI/4);
-
 ctx.scale(0.5, 0.5);
-
 // Draw the monster at (0, 0)
-
 drawMonster(0, 0);
-
 // draw a filled rectagle at (250, 0)
-
 ctx.fillRect(250, 0, 100, 100);
-
-drawCoordinateSystem(\'red\', 10);
-
+drawCoordinateSystem('red', 10);
 }
-
 function drawMonster(x, y) {
-
 // head
-
-ctx.fillStyle=\'lightgreen\';
-
+ctx.fillStyle='lightgreen';
 ctx.fillRect(0,0,200,200);
-
 // eyes
-
-ctx.fillStyle=\'red\';
-
+ctx.fillStyle='red';
 ctx.fillRect(35,30,20,20);
-
 ctx.fillRect(140,30,20,20);
-
 // interior of eye
-
-ctx.fillStyle=\'yellow\';
-
+ctx.fillStyle='yellow';
 ctx.fillRect(43,37,10,10);
-
 ctx.fillRect(143,37,10,10);
-
 // Nose
-
-ctx.fillStyle=\'black\';
-
+ctx.fillStyle='black';
 ctx.fillRect(90,70,20,80);
-
 // Mouth
-
-ctx.fillStyle=\'purple\';
-
+ctx.fillStyle='purple';
 ctx.fillRect(60,165,80,20);
-
 }
-
 function drawCoordinateSystem(color, width) {
-
 // coordinate system at (0, 0)
-
 drawArrow(ctx, 0, 0, 100, 0, width, color);
-
 drawArrow(ctx, 0, 0, 0, 100, width, color);
-
 }
-
-\</script\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height=\"400\"\>
-
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\</body\>
-
-\</html\>
-
+</canvas>
+</body>
+</html>
+```
 1.  ctx.translate(100, 100);
 
 2.  ctx.rotate(Math.PI/4);
