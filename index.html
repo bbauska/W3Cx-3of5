@@ -1,0 +1,700 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@bbauska 
+msmithnova
+/
+HTML51x
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+HTML51x/index.html
+@msmithnova
+msmithnova Add links for a couple projects.
+Latest commit dd76d2a on Mar 27, 2018
+ History
+ 1 contributor
+659 lines (659 sloc)  64.5 KB
+   
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache">
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 Tutorial Blog</title>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Polyfill support of details element in Edge and older browsers -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/details-element-polyfill.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>HTML 5 Tutorial Blog</h1>
+        <figure>
+            <img src="img/HTML5_Logo_512.png" alt="HTML5 logo in png format." width="100" height="100">
+            <figcaption>This is how the HTML5 logo looks in PNG format. This is also an example of using the figure and ficaption tags.</figcaption>
+        </figure>
+        <nav>
+            <h4>Navigation Bar</h4>
+            <ul>
+                <li>Nav1</li>
+                <li>Nav2</li>
+                <li>Nav3</li>
+                <li>Nav4</li>
+                <li>Nav5</li>
+                <li>Nav6</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="body">
+        <main>
+            <section>
+                <h2>HTML5 Basics</h2>
+                <article>
+                    <header>
+                        <h3>About This Blog</h3>
+                        <time datetime="2017-12-17">December 17, 2017</time>
+                    </header>
+                    <p>This site was created based on the edX course HTML5 Coding Essentials and Best Practices by W3C.</p>
+                    <p>The course did not have a main project that you built on throughout it so I created my own. I decided to summarize the course contents in this format while using the concepts presented in the course to create it.</p>
+                    <p>There is some cool optional projects in the course which are listed below.</p>
+                    <p class="live-source-links">Custom Video Player<a href="https://msmithnova.github.io/HTML52x/project2/" target="_blank">Live Page</a><a href="https://github.com/msmithnova/HTML52x/tree/master/project2" target="_blank">Source Page</a></p>
+                    <p class="live-source-links">Picture Album Browser<a href="https://msmithnova.github.io/JS0x/projects/3.2/" target="_blank">Live Page</a><a href="https://github.com/msmithnova/JS0x/tree/master/projects/3.2" target="_blank">Source Page</a></p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Greater Simplicity</h3>
+                        <time datetime="2017-12-16">December 16, 2017</time>
+                    </header>
+                    <p>HTML5 has a simpler DOCTYPE definition and many attributes and end tags are optional. It also has several new structural elements. A minimal HTML5 document is shown below.</p>
+                    <div class="code" w3-include-html="snippet/minimal-html.html"></div>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>New Structural Elements</h3>
+                        <time datetime="2017-12-17">December 17, 2017</time>
+                    </header>
+                    <p>HTML5 has many new structural elements. These elements are &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;article&gt;, &lt;section&gt;, &lt;time&gt;, &lt;aside&gt;, &lt;figure&gt;, &lt;figcaption&gt; and &lt;main&gt;.</p>
+                    <p>You can have multiple elements of most of these and can nest most of them inside each other. You can only have one main. Below is a code tree that shows the basic structure of this site. As you can see, there is a header and footer in the body as well as each article. There are several sections and each section has several articles. It only has one aside but you could have one for each article or section if it made sense. Each section or article can have its own nav etc.</p>
+                    <div class="code" w3-include-html="snippet/structure.html"></div>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Sectioning Elements and Headings</h3>
+                        <time datetime="2017-12-17">December 17, 2017</time>
+                    </header>
+                    <p>Headings &lt;h1&gt; to &lt;h6&gt; implicitly section a document while the new tags section, article, nav and aside explicitly section a document.</p>
+                    <p>The HTML5 specification says that "each sectioning element potentially has a heading and has also an outline associated".</p>
+                    <p>There are many browser extensions that will show an outline of your document as seen in the image below. Just search for HTML5 outliner.</p>
+                    <div class="example">
+                        <img src="img/outliner.jpg" alt="Image of outliner extension output.">
+                    </div>
+                    <p>The image is for this page as it was when this was written. There are some duplicate section and article names as temporary placeholders. More important to note is is the "Untitled" ASIDE. It shows that way because the aside did not have a &lt;h1&gt;..&lt;h6&gt; tag at the time and thus needed one added.</p>
+                    <p>You may notice that the nav bar has a title and that it is visible. Sometimes you will not want a nav to have a visible heading and it is recommended to position it off screen rather that using display: none or visibility: hidden. This is a better option for assistive technologies. See <a href="https://developer.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/" target="_blank">this</a> article.</a></p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>&lt;details&gt; and &lt;summary&gt; Elements</h3>
+                        <time datetime="2017-12-17">December 17, 2017</time>
+                    </header>
+                    <p>Accordian content is not a new thing but the &lt;details&gt; and &lt;summary&gt; elements make it easy. Here is an example that only contains text but it could contain a form, images and more.</p>
+                    <details>
+                        <summary>This is the summary.</summary>
+                        <p>This is the additional content.</p>
+                    </details>
+                    <p>Here is the code that created the above accordian.</p>
+                    <div class="code" w3-include-html="snippet/details-summary.html"></div>
+                    <p>As of this writing Edge and some older browsers do not support this and here is one of the many polyfills you can add to the head of your document to add support.</p>
+                    <div class="code">&lt;script src="js/details-element-polyfill.js"&gt;&lt;/script&gt;</div>
+                    <p>Check out <a href="http://caniuse.com/" target="_blank">http://caniuse.com/</a>, <a href="http://modernizr.com/" target="_blank">http://modernizr.com/</a> and <a href="http://shouldiprefix.com/" target="_blank">http://shouldiprefix.com/</a> for more information on supporting newer concepts across browsers.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>&lt;time&gt; and &lt;mark&gt; Elements</h3>
+                        <time datetime="2017-12-17">December 17, 2017</time>
+                    </header>
+                    <p>The &lt;time&gt; element is useful for marking time or durarion in a document. It has a human readable part and a machine readable part. The dates on these articles use it. Check it out on <a href="https://www.w3schools.com/tags/tag_time.asp" target="_blank">w3schools</a>.</p>
+                    <p>The &lt;mark&gt; element <mark>highlights</mark> part of your document like a highlighter and can be styled with CSS. Check it out on <a href="https://www.w3schools.com/tags/tag_mark.asp" target="_blank">w3schools</a>.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>download and translate Attributes</h3>
+                        <time datetime="2017-12-17">December 17, 2017</time>
+                    </header>
+                    <p>The download attribute can be used to force a link to be downloaded rather than displayed. Example below.</p>
+                    <a href="img/HTML5_Logo_512.png" download="html5logo.png">Download HTML5 Logo</a>
+                    <p>Here is the code.</p>
+                    <div class="code">&lt;a href="img/HTML5_Logo_512.png" download="html5logo.png"&gt;Download HTML5 Logo&lt;/a&gt;</div>
+                    <p>The translate attribute can be set to yes or no and can be used so that translation tools do not translate certain parts of your document. One example is that it would not make sense to translate code blocks like on this page.</p>
+                    <p>I could manually add this attribute to all code blocks but I figured it would be easier and more interesting to use javascript. Here is the code.</p>
+                    <div class="code" w3-include-html="snippet/translate-js.html"></div>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Microdata</h3>
+                        <time datetime="2017-12-17">December 17, 2017</time>
+                    </header>
+                    <p>Adding microdata to web pages helps search engines to better understand the pages' content, their topics, etc. The main purpose of microdata is Search Engine Optimization although it can be used for other purposes as well.</p>
+                    <p>These articles are supposed to be brief introductions and not full tutorials. Hopefully the articles will give you a taste and make you want to search out more information. A proper covering of microdata would be way too long so I present you <a href="http://diveinto.html5doctor.com/extensibility.html" target="_blank">this</a> page as one option.</p>
+                    <p>At the time of writing this I have not added any microdata to this page.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+            </section>
+            <section>
+                <h2>HTML5 Multimedia</h2>
+                <article>
+                    <header>
+                        <h3>The &lt;video&gt; Element</h3>
+                        <time datetime="2017-12-18">December 18, 2017</time>
+                    </header>
+                    <p>The &lt;video&gt; element allows you to embed video in your page without complex code or Flash. The video below is the first minute of <a href="https://peach.blender.org/" target="_blank">Big Buck Bunny</a> used under the <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0</a> license.</p>
+                    <video width="640" height="360" controls poster="img/big-buck-bunny.png" preload="none"> 
+                        <source src=video/big_buck_bunny.webm type=video/webm /> 
+                        <source src=video/big_buck_bunny.ogv type=video/ogg /> 
+                        <source src=video/big_buck_bunny.mp4 type=video/mp4 />
+                        Your browser does not support the &lt;video&gt; element.
+                    </video>
+                    <p>Sample code. Providing multiple sources is good as some browsers only support certain formats. The poster is an optional image to display when loaded. The controls attribute is to display controls to play, stop, etc.</p>
+                    <p>The preload attribute can be set to none, metadata or auto. It is only valid if the autoplay attribute is not used. I used none here so it did not delay loading of other items. Notice the time does not show a duration.</p>
+                    <div class="code" w3-include-html="snippet/video.html"></div>
+                    <p>Note: You cannot directly embed videos from most social web sites such as YouTube, Dailymotion etc. They have different embed scripts.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>The &lt;audio&gt; Element</h3>
+                        <time datetime="2017-12-18">December 18, 2017</time>
+                    </header>
+                    <p>The &lt;audio&gt; element is similar to the &lt;video&gt; element without the video related attributes like poster.</p>
+                    <audio controls="controls" preload="metadata" loop>
+                        <source src="audio/horse.ogg" type="audio/ogg" />
+                        <source src="audio/horse.mp3" type="audio/mp3" />
+                        <p>Your browser does not support the audio element.</p>
+                        <p>Download the audio/video in <a href="audio/horse.ogg">OGG</a> or <a href="audio/horse.mp3">MP3</a> format.</p>
+                    </audio>
+                    <p>The above element was done using the below code. Notice how it is very similar. The controls attribute was given a value in this one but it will work the same with any value or no value. Also note that there are download links provided in case the &lt;audio&gt; element is not supported.</p>
+                    <p>In this example I used the metadata value for preload thus it knows the duraion. I also used the loop attribute so the audio continuously loops when playing.</p>
+                    <div class="code" w3-include-html="snippet/audio.html"></div>
+                    <p>You can style the &lt;video&gt; and &lt;audio&gt; elements using CSS and JS. Here are some links to some examples.</p>
+                    <p><a href="https://jsbin.com/zoquru/2/edit?html,css,output" target="_blank">The horse audio above with image and border.</a></p>
+                    <p><a href="https://jsbin.com/gezudoy/edit?html,css,js,console,output" target="_blank">Full width, resizable, borderless video.</a></p>
+                    <p><a href="https://jsbin.com/tahipaw/2/edit?html,output" target="_blank">Full screen video with CSS.</a></p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Control &lt;audio&gt; and &lt;video&gt; Elements from JS</h3>
+                        <time datetime="2017-12-19">December 19, 2017</time>
+                    </header>
+                    <p>You can control many aspects of &lt;audio&gt; and &lt;video&gt; elements from Javascript. First you have to either select an element from the DOM or create one.</p>
+                    <p>Once you have an element stored in a variable, let's say vid, you can manipulate its methods like play(), pause() etc. (eg. vid.play();)</p>
+                    <p>You can manipulate its properties such as source, duration, current position and volume. (eg. vid.controls = true;)</p>
+                    <p>You can respond to events using callbacks such as when it starts or ends or gets paused.</p>
+                    <p>Check out <a href="https://www.w3.org/2010/05/video/mediaevents.html" target="_blank">this</a> page for a demonstration of many of these.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>A Custom Video Player Written by Me</h3>
+                        <time datetime="2017-12-19">December 19, 2017</time>
+                    </header>
+                    <p>Works great in Chrome. Needs work for Firefox and Edge. Has many fatures.</p>
+                    <p><a href="https://msmithnova.github.io/HTML52x/project2/" target="_blank">Link to Live Page</a></p>
+                    <p><a href="https://github.com/msmithnova/HTML52x/tree/master/project2" target="_blank">Link to Source Page</a></p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>The &lt;track&gt; Element</h3>
+                        <time datetime="2017-12-20">December 20, 2017</time>
+                    </header>
+                    <p>The &lt;track&gt; element allows you to add captions, subtitles, descriptions and metadata to your videos. The WebVTT format is used for describing a track file.</p>
+                    <p>The &lt;track&gt; element has a kind attribute. The kind attribute can be subtitles, captions, descriptions, chapters or metadata. (eg. kind="subtitles")</p>
+                    <p>Another attribute is default which is used to select the default track if more than one is provided.</p>
+                    <p>The label attribute is what will be displayed to the user in the default HTML5 video player. (eg. label="English Subtitles")</p>
+                    <p>There is a srclang attribute to specify the langage. (eg. srlang="en")</p>
+                    <p>Here is an <a href="https://jsbin.com/dixeyak/2/edit?html,output" target="_blank">example</a>.</p>
+                    <p>Visit the <a href="https://www.w3schools.com/tags/tag_track.asp" target="_blank">w3schools page</a> for more information.</p>
+                    <p>Complete details on the VTT format are available <a href="https://w3c.github.io/webvtt/" target="_blank">here</a>.</p>
+                    <p>Check out <a href="https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video" target="_blank">this link</a> to see how to manipulate track information with CSS and Javascript.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Karaoke Player Written by Me</h3>
+                        <time datetime="2017-12-20">December 20, 2017</time>
+                    </header>
+                    <p>Information</p>
+                    <p><a href="#" target="_blank">Link to Live Page</a></p>
+                    <p><a href="#" target="_blank">Link to Source Page</a></p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Webcam, Microphone and the getUserMedia API</h3>
+                        <time datetime="2017-12-20">December 20, 2017</time>
+                    </header>
+                    <p>Typical usage is to set the src attribute of the &lt;video&gt; or &lt;audio&gt; element to the live stream.</p>
+                    <p>To get this stream you would use navigator.getUserMedia(params, onSuccess, onError)</p>
+                    <p>Here is an <a href="https://jsbin.com/nitijub/1/edit?html,output" target="_blank">example</a> of using the webcam.</p>
+                    <p>Here is an <a href="https://webaudiodemos.appspot.com/input/index.html" target="_blank">example</a> of real time audio processing of the microphone input.</p>                    <footer>Written by Michael Smith</footer>
+                </article>
+            </section>
+            <section>
+                <h2>HTML5 Graphics</h2>
+                <article>
+                    <header>
+                        <h3>The &lt;canvas&gt; Element</h3>
+                        <time datetime="2017-12-20">December 20, 2017</time>
+                    </header>
+                    <p>The canvas can be used for drawing pixel based graphics for graphs, game graphics and other images on the fly.</p>
+                    <p>It supports drawing many shapes including lines, rectangles, ellipses, arcs, curves, text and images.</p>
+                    <p>The canvas can handle doing animations at 60 frames per second and has very good support in almost all major browsers.</p>
+                    <p>The canvas coordinate system uses (0, 0) as the top left corner like many others.</p>
+                    <p>Here is my canvas. I added a border around it for visualization purposes. It is 600 pixels wide and 300 pixels tall.</p>
+                    <canvas id="myCanvas" width="600" height="300">Canvas is disabled or not supported.</canvas>
+                    <p>Make sure the JS isn't called until you know the page is loaded using onload or similar. We store the canvas in a variable and then define a context for it.</p>
+                    <p>Then we draw some rectangles. The fillStyle determines the color of filled rectangles and the strokeStyle determines the color of the wireframe ones.</p>
+                    <p>Notice how the rectangles stack on top of each other in the order they are drawn, how you can see behind the wireframe ones and the second strokeRect uses the color previously set.</p>
+                    <p>We also have a clearRect which pokes a hole in the green rectangle.</p>
+                    <p>The drawMonster function just draws some rectangles the same way. Notice that when I draw it at (0, 0) it is not in the top left because of the translate before it.</p>
+                    <p>Also notice that the next translate is based on the new coordinate system of the first translate.</p>
+                    <p>The second time we draw the monster using the same call but it appears differently because of the transformations.</p>
+                    <p>Doing the translate, rotate and scale in a different order would have a different result. This is the order recommended most of the time.</p>
+                    <p>Notice the last rectangle is drawn in the same spot the second monster starts and it is purple because the last thing drawn on the monster is the mouth which is purple.</p>
+                    <div class="code" w3-include-html="snippet/canvas1.html"></div>
+                    <p>When doing transformations or calling functions that will change the context it is a good idea to save the current context so it can be restored.</p>
+                    <p>This is done using ctx.save(); and ctx.restore(); and is good practice to save at the start of a function and restore at the end of a function.</p>
+                    <p>Note: These rectangles as well as text and images are drawn in "immediate mode". "Path mode" or "buffered mode" is used for lines, arcs, curves and can also be used for rectangles. We'll see that later.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Drawing Text on the Canvas</h3>
+                        <time datetime="2017-12-21">December 21, 2017</time>
+                    </header>
+                    <p>You can draw text on the canvas with fillText and strokeText. You can specify how the text is drawn using the font property of the context. The font property is CSS-compliant ant thus you can specify the style, weight, size and face.</p>
+                    <canvas id="myCanvas2" width="600" height="300">Canvas is disabled or not supported.</canvas>
+                    <p>You can see in the code below how we draw strokeText on top of fillText to give the ext a border. You can also see how we specify font properties in different ways.</p>
+                    <p>The last example uses the optional last parameter of maxWidth to constarin the text to the width specified.</p>
+                    <p>The part in the middle measures the text and then draws a baseline under it with the legth of the text's width.</p>
+                    <div class="code" w3-include-html="snippet/canvas2.html"></div>
+                    <p>You can also change the way the text is drawn horizontally with the textBaseline property and the horizontal alignment with the textAlign property.
+                     Check out <a href="https://jsbin.com/haxiru/1/edit?html,output" target="_blank">this</a> and <a href="https://jsbin.com/yapiqi/1/edit?html,output" target="_blank">this</a> for demonstrations.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Drawing Images on the Canvas</h3>
+                        <time datetime="2017-12-21">December 21, 2017</time>
+                    </header>
+                    <p>Images must be fully loaded before they are drawn. For this reason they are loaded asynchronously in the background </p>
+                    <canvas id="myCanvas3" width="600" height="300">Canvas is disabled or not supported.</canvas>
+                    <p>In the code below we create an Image object and set up an onload callback. At the bottom we specify the source which stsrts loading the image. Once it is loaded the onload callback gets called.</p>
+                    <p>In the callback we draw the image three diferent ways. The first is in the top corner with a width and height of 100. The second starts from the bottom corner of the first and has a width and height of 200.</p>
+                    <p>The third is a little different. It selects a portion of the original starting at (50,0) with dimensions of (400,100) and then draws it on the canvas at (300,0) with dimensions of (175,50).</p>
+                    <div class="code" w3-include-html="snippet/canvas3.html"></div>
+                    <p>The image source can also be a video stream, another canvas or an &lt;img&gt; element.</p>
+                    <p>Check out <a href="https://jsbin.com/canotip/1/edit?html,output" target="_blank">this</a> link to see an example of drawing an image from a video source.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Path Mode Drawing</h3>
+                        <time datetime="2017-12-21">December 21, 2017</time>
+                    </header>
+                    <p>Path drawing mode is faster than immediate mode and can be used for drawing many things.</p>
+                    <canvas id="myCanvas4" width="400" height="200">Canvas is disabled or not supported.</canvas>
+                    <p>In the code below you see the path mode version of drawing rectangles. Note that when I draw the third rectangle, the red wireframe, that it also redraws the previous rectangle as a red wireframe as well.</p>
+                    <p>This is because it is still in the buffer since we did not call beginPath in between them. Also note that only two lines of the triangle are specifically drawn. The other is drawn because of the closePath line.</p>
+                    <div class="code" w3-include-html="snippet/canvas4.html"></div>
+                    <p>Visit the <a href="https://www.w3schools.com/graphics/canvas_intro.asp" target="_blank">w3schools Canvas Tutorial</a> for more canvas drawing like arcs, curves, transformations and more.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Transparency, Gradients and More</h3>
+                        <time datetime="2017-12-21">December 21, 2017</time>
+                    </header>
+                    <p>Here is an example of drawing using the alpha channel and drawing using a gradient.</p>
+                    <canvas id="myCanvas5" width="600" height="300">Canvas is disabled or not supported.</canvas>
+                    <p>The first part of the code draws three rectangles using different values for the transparency.</p>
+                    <p>I then create a rainbow gradient. The first line determines the placement and direction of the gradient. The color stops define the colors it uses. I then set the fillStyle to this gradient and draw some rectangles to show what gets displayed.</p>
+                    <div class="code" w3-include-html="snippet/canvas5.html"></div>
+                    <p>You can also apply gradients to stroke objects and create radial gradients. You can use shadows and style lines.</p>
+                    <p>Check out <a href="https://www.w3schools.com/graphics/canvas_reference.asp" target="_blank">w3schools Canvas Reference</a> for information on these options and more.</p>
+                    <p>Also check out <a href="https://jsbin.com/sevecukuwu/1/edit?html,output" target="_blank">this</a> link for an example of drawing with patterns and loading multiple images.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Multiple Image Viewer written by Me</h3>
+                        <time datetime="2017-12-21">December 21, 2017</time>
+                    </header>
+                    <p>Has albums and scrollable image selection.</p>
+                    <p><a href="https://msmithnova.github.io/JS0x/projects/3.2/" target="_blank">Link to Live Page</a></p>
+                    <p><a href="https://github.com/msmithnova/JS0x/tree/master/projects/3.2" target="_blank">Link to Source Page</a></p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+            </section>
+            <section>
+                <h2>HTML5 Animations</h2>
+                <article>
+                    <header>
+                        <h3>Basic Animation in the Canvas</h3>
+                        <time datetime="2017-12-22">December 22, 2017</time>
+                    </header>
+                    <p>Basic animation consists of clearing the screen/canvas, drawing something on it, change some property of it and then repeat. Doing this fast enough will result in aniimation. An animation done at 60 frames per second (fps) can be smoother then one done at 30fps.</p>
+                    <p>Before HTML5 and canvas this was done using divs, css backgrounds and positioning as well as Javascript.</p>
+                    <p>The two methods used for animation were setinterval(function, ms) and setTimeout(function, ms). The diference in these is that seInterval will run every n milliseconds where setTimeout will run once after n milliseconds and you would generally call it again at the end of the function.</p>
+                    <p>The new HTML5 method is requestAnimationFrame(function). There is no second parameter as it is set to 16.6ms to produce a 60fps animation.</p>
+                    <p>Below I set up three canvas elements and put CSS borders around them so you can see where they are. The first uses setInterval, the second uses setTimeout and the third uses requestAnimationFrame to animate a rectangle.</p>
+                    <canvas id="myCanvas6-1" width="200" height="100">Canvas is disabled or not supported.</canvas>
+                    <canvas id="myCanvas6-2" width="200" height="100">Canvas is disabled or not supported.</canvas>
+                    <canvas id="myCanvas6-3" width="200" height="100">Canvas is disabled or not supported.</canvas>
+                    <p>As you can see in the code below, animation is not that difficult. We get the canvas and context as usual. We set the starting X of the rectangle and the number of pixels to move (speed) each update. Then we simply call one of the three animation funcions with a callback that does the update.</p>
+                    <p>In the animate function we clear the canvas, draw the rectangle and then update the position for the next call. Since setTimeout and requestAnimationFrame only run once we call them again at the end of the function.</p>
+                    <p>I have setInterval being called every 33ms, about 30fps, setTimeout at 22ms, about 45fps and requestAnimationFrame runs at about 60fps as long as the system it is running on can support that rate.</p>
+                    <div class="code" w3-include-html="snippet/canvas6.html"></div>
+                    <p>setInterval will execute the function passed as first parameter every n milliseconds regardless of when the function was last called or how long the function takes to execute. If the function takes longer than the interval, then setInterval might queue too many function executions back to back when the interval is too short, leading to unpredictable results.</p>
+                    <p>setTimeout solves thi issue since it only runs once and is not called again until the end of the callback. However, both have problems with no being very prcise in their timing which may be noticeable in some situations.</p>
+                    <p>requestAnimationFrame uses a high resolution timer which makes it more accurate, it also provides an extra parameter to the callback which is a high resolution time. It is useful in time-based animation which can account for any difference in the timing.</p>
+                    <p>Check out <a href="https://jsbin.com/jukoniz/1/edit?html,output" target="_blank">this</a> link for an animation that uses start and stop buttons, transformations and shows where the timestamp mentioned above comes from although it is not used.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Keyboard and Mouse Events in the Canvas</h3>
+                        <time datetime="2017-12-23">December 23, 2017</time>
+                    </header>
+                    <p>Below is a table drawn on a canvas to show some keyboard and mouse handling. It is designed so it only works when the mouse pointer is within the canvas. When the mouse moves inside the canvas the border turns blue to show it has focus.</p>
+                    <p>While inside the canvas the page will capture several keyboard and mouse events. Note: mouseover only triggers when the mouse is moved outside the canvas and then back in.</p>
+                    <p>Move the mouse around, click some buttons and press some keyboard keys to see what happens.</p>
+                    <canvas id="myCanvas7" width="600" height="300" tabindex="1">Canvas is disabled or not supported.</canvas>
+                    <p>Last mouse event: <span  id="mouseEvent"></span></p>
+                    <p>Canvas mouse position: <span id="mousePos"></span></p>
+                    <hr>
+                    <p>There is a lot going on in the code so I split it up into three sections. The first section has the main code and the next two sections have a few functions that are needed.</p>
+                    <p>The first two lines get the canvas and context as usual. We want a 3x4 table so I calculate cellWidth and cellHeight from the canvas width and height. I set the font and and place the textBaseline at middle so it is easy to center the text vertically in the cell.</p>
+                    <p>I call a function drawGrid to draw the grid which we'll look at later. I then get the spans for the mouse event and mouse position texts. I then add the needed event listeners.</p>
+                    <p>The first two event listeners are mouseenter and mouseout. These are used to have the canvas get and lose focus without having to click on it. It is required to have focus to capture the events atttached to it.</p>
+                    <p>The next four mouse event listeners handle the text displayed in the spans. The mousedown event also uses event.button to display the button pressed. It also uses preventDefault to stop the page from selecting text when the buton is pressed quickly.</p>
+                    <p>The mousemove event calls the showMousePos function which calculates the mouse position on the canvas by subtracting where the top left of the canvas is on the page compared to where the mouse is on the page as a whole.</p>
+                    <p>The last two event listeners set up the callbacks for the keydown and keyup events.</p>
+                    <div class="code" w3-include-html="snippet/canvas7-1.html"></div>
+                    <p>Inside these functions the cells are cleared before updating each text. We add 1 to the cellWidth and cellHeight start and subtract 2 for the end so it doesn't clear the lines made in drawGrid.</p>
+                    <p>The text itself is drawn using an X padding of 10 and centered vertically using 1.5, 2.5 etc.</p>
+                    <p>We use event.keyCode, event.key and event.code for the text to be drawn in the table. We also use preventDefault to stop the page from moving around etc while pressing keys.</p>
+                    <div class="code" w3-include-html="snippet/canvas7-2.html"></div>
+                    <p>In the drawGrid function we use for loops to draw the lines and then fillText for the labels. We use similar calculations here as above.</p>
+                    <div class="code" w3-include-html="snippet/canvas7-3.html"></div>
+                    <p>Check out <a href="https://jsbin.com/hovopim/edit?html,output" target="_blank">this</a> link for an example of combining key and mouse events with animation.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Resizing a Canvas</h3>
+                        <time datetime="2017-12-23">December 23, 2017</time>
+                    </header>
+                    <p>Changing the width or height property of a canvas in Javascript erases its content and resets its context. Using percentages in the CSS width and height properties does not change the nuber of pixels but scales the existing pixels which is likely undesireable a most times.</p>
+                    <p>To create a responsive canvas, first enclose it in a div or some other parent element. Use percentages to change the parent element. Use a resize listener on the parent and inside the listener use Javascript to change the width and height of the canvas. Redraw the canvas at the appropriate scale.</p>
+                    <p>Here is a <a href="https://jsbin.com/fayire/1/edit?html,output" target="_blank">link</a> with an example.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Animation Example written by Me</h3>
+                        <time datetime="2017-12-23">December 23, 2017</time>
+                    </header>
+                    <p>Decide on some animation example. Maybe a small game.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+            </section>
+            <section>
+                <h2>HTML5 Forms</h2>
+                <article>
+                    <header>
+                        <h3>Exploring Several Options with Forms</h3>
+                        <time datetime="2017-12-24">December 24, 2017</time>
+                    </header>
+                    <p>Basic HTML forms have not changed much since 1997 until HTML5. This may not be apparent to most users since they were usually enhanced with custom Javascript or the use of frameworks.</p>
+                    <p>HTML5 introduces some new elements, many new input types, built-in validation, CSS pseudo classes and more.</p>
+                    <p>Some of these new input types are very helpful for mobile browsers including the ability to use contextual keyboards.</p>
+                    <p>Not all of these options are fully supported on all browsers. Check the <a href="https://caniuse.com/" target="_blank">caniuse</a> website for support, polyfills to add support etc.</p>
+                    <p>Many of the input types can use attributes value, min, max, step and list.</p>
+                    <form action="" method="POST" id="myForm">
+                        <fieldset id="accountInfo">
+                            <legend>Account Information</legend>
+                            <ul>
+                                <li>
+                                    <label for="firstname">First Name:</label>
+                                    <input type="text" name="firstname" id="firstname" required placeholder="John">
+                                </li>
+                                <li>
+                                    <label for="lastname">Last name:</label>
+                                    <input type="text" name="lastname" id="lastname" required placeholder="Doe">
+                                </li>
+                                <li>
+                                    <label for="username">Username:</label>
+                                    <input type="text" name="username" id="username" required pattern="\w{5,50}" placeholder="john_doe">
+                                    <span>Must be 5 to 50 characters.</span>
+                                </li>
+                                <li>
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email" required placeholder="johndoe@anonymous.net">
+                                </li>
+                                <li>
+                                    <label for="password1">Password:</label>
+                                    <input type="password" name="password1" id="password1" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain a lowercase and uppercase leter and a number. Minimum length of 8 characters.">
+                                </li>
+                                <li>
+                                    <label for="password2">Repeat Password:</label>
+                                    <input type="password" name="password2" id="password2" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset id="otherInfo">
+                            <legend>Other Information</legend>
+                            <ul>
+                                <li>
+                                    <label for="age">Age:</label>
+                                    <input type="number" name="age" id="age">
+                                </li>
+                                <li>
+                                    <label for="birthdate">Birth Date:</label>
+                                    <input type="date" name="birthdate" id="birthdate">
+                                </li>
+                                <li>
+                                    <label for="favcolor">Favorite Color:</label>
+                                    <input type="color" name="favcolor" id="favcolor" value="#0000FF" list="popColors">
+                                    <datalist id="popColors">
+                                        <option>#FF0000</option>
+                                        <option>#00FF00</option>
+                                        <option>#0000FF</option>
+                                        <option>#FFFF00</option>
+                                        <option>#FF00FF</option>
+                                        <option>#00FFFF</option>
+                                        <option>#0088FF</option>
+                                        <option>#8800FF</option>
+                                        <option>#00FF88</option>
+                                        <option>#88FF00</option>
+                                        <option>#FF0088</option>
+                                        <option>#FF8800</option>
+                                    </datalist>
+                                </li>
+                                <li>
+                                    <label for="telnumber">Telephone Number:</label>
+                                    <input type="tel" name="telnumber" id="telnumber" placeholder="(555) 555-5555" pattern="^(?\d{3})?[-\s]\d{3}[-\s]\d{4}.*?\)">
+                                </li>
+                                <li>
+                                    <label for="favurl">Favorite URL (Default Validation): </label>
+                                    <input type="url" name="favurl" id="favurl">
+                                </li>
+                                <li>
+                                    <label for="favurl2">Favorite URL (Custom Validation):</label>
+                                    <input type="url" name="favurl2" id="favurl2" placeholder="http://www.domain.com" pattern="(http|https|ftp)\:\/\/[a-zA-Z0-9\-\.\/]*">
+                                </li>
+                                <li>
+                                    <label for="numrange">Number Range:</label>
+                                    <input type="range" name="numrange" id="numrange" value="75" min="25" max="300" step="25">
+                                    <output id="numrangevalue">25</output>
+                                </li>
+                                <li>
+                                    <label for="formsearch">Form Search:</label>
+                                    <input type="search" name="formsearch" id="formsearch">
+                                </li>
+                                <li>
+                                    <label for="dtime">Date Time:</label>
+                                    <input type="datetime" name="dtime" id="dtime">
+                                </li>
+                                <li>
+                                    <label for="dtlocal">Date Time Local:</label>
+                                    <input type="datetime-local" name="dtlocal" id="dtlocal">
+                                </li>
+                                <li>
+                                    <label for="favweek">Favorite Week:</label>
+                                    <input type="week" name="favweek" id="favweek">
+                                </li>
+                                <li>
+                                    <label for="favmonth">Favorite Month:</label>
+                                    <input type="month" name="favmonth" id="favmonth">
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <button id="submitButton">Submit</button>
+                    </form>
+                    <p>There is a lot of html in this one so I will not reproduce it below. I recommend using the devtools to inspect it. I will show the CSS and Javascript below for convenience.</p>
+                    <p>The first thing I will point out is the use of 'fieldset' and 'legend'. This not only helps to keep related information together but also helps with accessibility.</p>
+                    <p>Each input also has a 'label for' element. This helps to describe the element and also helps for selecting elements as clicking on the text selects the input element.</p>
+                    <p>All the 'Account Information' fields use CSS to color the fields based on their validity since they all have the 'required' atribute.</p>
+                    <p>There are many types of inputs that accept varying types of input as seen. Some of these use special attributes to do different things.</p>
+                    <p>For the first two I just use 'required' which makes it so the field must be filled in and 'placeholder' to show some sample text.</p>
+                    <p>The username field adds the 'pattern' attribute which uses a regex to restrict the field to between 5 and 50 characters. It also uses a span that is not displayed once the field is valid using CSS.</p>
+                    <p>The email field just uses the default validation to decide whether the field is valid or not.</p>
+                    <p>The password fields also use a regex pattern to require one lowercase and one uppercase letter as well as one number. It also restricts it to at least 8 characters.</p>
+                    <p>The first password field also uses a 'title' attribute to provide a tooltip that specifies what is required instead of the span used for username.</p>
+                    <p>The second password field uses javascript to specify custom validation that requires it to match the first password field.</p>
+                    <p>The lower part has similar attributes except the range input also uses a default 'value', 'min', 'max' and 'step' attributes.</p>
+                    <hr>
+                    <p>The CSS</p>
+                    <p>Most of it is pretty basic except the selection of the inputs using the 'valid' and 'invalid' pseudo selectors. Of note here is I also use the 'not' to exclude two fields.</p>
+                    <p>Also of note is the last two selectors that hide or show the span on the username field.</p>
+                    <div class="code" w3-include-html="snippet/form-css.html"></div>
+                    <p>The Javascript</p>
+                    <p>Aside from the password validation metioned above there is also code to show the numeric value of the range input.</p>
+                    <div class="code" w3-include-html="snippet/form-js.html"></div>
+                    <p>There is a lot more I have not covered and <a href="https://www.wufoo.com/html5/" target="_blank">this site</a> covers the really well.</p>
+                    <p>Here is a nice <a href="http://dev.dhc3.intrasoft-intl.com/html5/iomgi/form.html" target="_blank">example</a> of form styling.</p>
+                    <p>This <a href="https://jsbin.com/fatube/edit?html,output" target="_blank">example</a> shows how you can use for elements not just for forms but also to control other elements.</p>
+                    <p>Using labels on options is also possible as shown in <a href="https://jsbin.com/gezawe/1/edit?html,output" target="_blank">this example</a>.</p>
+                    <p>This <a href="https://jsbin.com/hudafo/1/edit?html,output" target="_blank">example</a> shows using min, max and step in a date input type.</p>
+                    <p>Here is a <a href="http://www.cssportal.com/style-input-range/" target="_blank">site</a> that helps styling sliders or can give you some inspiration.</p>
+                    <p>In this <a href="https://jsbin.com/povekur/1/edit?html,output" target="_blank">example</a> it shows aggregation of error messages and overiding default behaviour.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+            </section>
+            <section>
+                <h2>HTML5 Basic APIs</h2>
+                <article>
+                    <header>
+                        <h3>HTML5 Cache</h3>
+                        <time datetime="2017-12-24">December 24, 2017</time>
+                    </header>
+                    <p>The HTML5 cache can be used to decrease load times and bandwidth use as well as make pages or entire sites work while offline. This is good for desktop computers and great for mobile devices.</p>
+                    <p>Previously, caching was done by the browser and a developer had little choice on what was and wasn't cached. Now a developer can define what should and shouldn't be cached.</p>
+                    <p>Any part or functions of a web site that does not need immediate communication with the server can be cached and work offline.</p>
+                    <p>This is done with a manifest file which lists the files needed to be cached. This includes files from othe sites if needed (like jquery etc). It can also list files not to cache.</p>
+                    <p>A good place to start is by getting <a href="http://westciv.com/tools/manifestR/" target="_blank">manifestR</a> which will help you create a manifest file.</p>
+                    <p>The manifest file should have an appcache extension like manifest.appcache. You also need the manifest attribute in the html tag of each page you want to cache. The attributes value is set to the filename.</p>
+                    <p>It is good to watch the console in the devtools when you first add caching and then go offline or stop the server (you ar working on a test server and not a production server right?) to test it.</p>
+                    <hr>
+                    <p>Example html tag.</p>
+                    <div class="code">&lt;html lang="en" manifest="manifest.appcache"&gt;</div>
+                    <p>If a file is available in the cache it will always be retrieved from the cache. You can, however, make it update the cache by modifying the manifest file.</p>
+                    <p>If one file cannot be retrieved and cached then no files will be. There is no partial update so make sure to verify your manifest. <a href="http://manifesto.ericdelabar.com/" target="_blank">Manifesto</a> is one option.</p>
+                    <p>The manifest file must start with CACHE MANIFEST and is followed by the files that need to be cached. You can optionally include comments to organize the file which helps when you need to update it.</p>
+                    <p>You can also optionally include 3 sections: CACHE, FALLBACK and NETWORK. If you specify one, you should specify all three.</p>
+                    <p>The CACHE section is for the files that must be cached. Wildcards are not allowed in this section.</p>
+                    <p>The NETWORK section specifies files that should NOT be cached. Using a wildcard * is common practice and means "do not cache all files not in CACHE or FALLBACK sections".</p>
+                    <p>The FALLBACK section specifies resources that will be displayed when a user requests a resource not available while offline like a login page.</p>
+                    <p>Using "/ /offline.html" would cause offline.html to be displayed for anything that is not cached. Using "/images/ /images/missing.png" would display missing.png for any images not cached.</p>
+                    <hr>
+                    <p>Here is the manifest file for this site at the time of writing this. The second line with #version... is useful for forcing an update.</p>
+                    <p>The cache will not be updated just because you modify the html, css or other file. It will only be updated if the manifest file changes so you can simply change the version or date.</p>
+                    <p>When refreshing the page it will still load from the disk but it will check the manifest file, realize it is changed and update the cache. So you will see changes on the following refresh.</p>
+                    <div class="code" w3-include-html="manifest.appcache"></div>
+                    <p>Notice at the bottom here that I have smaller fallback videos that will play when offline and basically say "It appears you are offline".</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>The Web Storage API</h3>
+                        <time datetime="2017-12-25">December 25, 2017</time>
+                    </header>
+                    <p>The Web Storage API provides two interfaces called sessionStorage and localStorage. They both allow for the storage of key-value pairs of data.</p>
+                    <p>It is similar to cookies but the main difference is the amount of data able to be stored is much larger.</p>
+                    <p>The sessionStorage data is erased when the tab/browser is closed. The localStorage will remain until the data is deleted.</p>
+                    <p>There is only one key-value store per domain which follows the <a href="https://en.wikipedia.org/wiki/Same-origin_policy" target="_blank">same origin policy</a>.</p>
+                    <p>Storing and retrieving data is very simple as seen in the snippet below.</p>
+                    <div class="code" w3-include-html="snippet/webstorage.html"></div>
+                    <p>Check out <a href="https://jsbin.com/zezudo/edit?html,output" target="_blank">this</a> site for a basic example of storing form data as you type it and restoring it.
+                     This can be very helpful if something happens to close the page. When you go back, you don't have to start over.</p>
+                    <p>There are also several methods that can be used with the Web Storage API.</p>
+                    <p>The setItem(key, value) method will set a key to the corresponding value. This can be useful with a key "First Name" which would not be able to be used using the dot notation above.</p>
+                    <p>The getItem(key) method will get the value that is associated with the given key.</p>
+                    <p>The removeItem(key) method will remove the key-value pair associated with that key.</p>
+                    <p>The clear() method will erase everthing stored. Mostly used only when testing and from the devtools console.</p>
+                    <p>You can also use localStorage.length and iterate through each key with localStorage.key(i) to get the value of each key.</p>
+                    <p>Another method of accessing the values is by using localStorage[key].</p>
+                    <p>This <a href="https://jsbin.com/nedigi/edit?html,css,output" target="_blank">example</a> shows all of these in use.</p>
+                    <p>A very good use of the localStorage is to save your settings of a web app so the next time you come back it remembers your settings.</p>
+                    <p>Here is a great <a href="https://jsbin.com/volicig/edit?html,js,console,output" target="_blank">example</a> that shows working with
+                        generic reusable functions to save form data without having to know the number of fields, the names of the fields etc.</p>
+                    <p>It is generally advised to keep data stored in localStorage below 5MB. This is mostly an arbitrary number but if you need a lot more storage than this you are likely better off using indexedDB.</p>
+                    <p>This data may be wiped with cookies or by other means. If it is very important for your app to have this data or you want it to be shared across multiple devices you will have to synchronize it with data stored on the server.</p>
+                    <p>If you want to store more than simple strings in the store you can use JSON objects. Use the JSON method stringify to convert it to a string and use the method parse to restore it.</p>
+                    <p>Here is a simple <a href="https://jsbin.com/ciricis/2/edit?html,console,output" target="_blank">example</a>.</p>
+                    <p>A more complete <a href="https://jsbin.com/karoboj/3/edit?html,css,console,output" target="_blank">example</a>.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>The File API</h3>
+                        <time datetime="2017-12-25">December 25, 2017</time>
+                    </header>
+                    <p>Prior to HTML5, file management was limited to pretty much sending and receiving files.</p>
+                    <p>The file API allows client-side JavaScript to work with local files without having to send them to the server.</p>
+                    <p>The file API reads files and encodes them in what is called a data url. Here is the first piece of one "data:image/jpeg;base64,/9j/4AAQSkZJRgA"</p>
+                    <p>The above data url is a small image of a kitten which was only 14k in size. As a data url it is almost 18k. If you had the full thing you could paste it in a tab and see the image.</p>
+                    <p>Try uploading a file to <a href="http://dataurl.net/#dataurlmaker" target="_blank">dataurl.net</a> to create your own and test it out.</p>
+                    <p>Try this <a href="https://jsbin.com/nituko/1/edit?html,output" target="_blank">example</a> to see image previews of files you load from your local disk.</p>
+                    <p>This <a href="https://jsbin.com/deboja/edit?html,output" target="_blank">example</a> shows how to read metadata of files and also shows the optional accept attribute to filter files.</p>
+                    <p>Aside from readAsDataURL there are two other methods for reading files. They are readAsText and readAsArrayBuffer.</p>
+                    <p>The readAsText method is used similar to the readAsDataURL method.</p>
+                    <p>Here is an <a href="https://jsbin.com/xewemi/edit?html,output" target="_blank">example</a> of reading a single text file.</p>
+                    <p>The readAsArrayBuffer method is not used as often and is for loading "raw" binary data.</p>
+                    <p>It can be used for loading sound samples into memory for use with the WebAudio API or loading textures for WebGL and 3D animation.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>The Geolocation API</h3>
+                        <time datetime="2017-12-25">December 25, 2017</time>
+                    </header>
+                    <p>The geolocation API uses several means to get the current location including GPS, GSM/3G triangulation, Wifi, IP address, etc.</p>
+                    <p>Here is a quick <a href="https://jsbin.com/toyeley/1/edit?html,output" target="_blank">example</a> of getting coordinates.</p>
+                    <p>The coords object has properties of latitude, longitude, altitude, accuracy, altitudeAccuracy, heading and speed. Not all may be available and will be set to null if not available.</p>
+                    <p>Here is an <a href="https://jsbin.com/zanukun/edit?html,output" target="_blank">example</a> of dealing with errors.</p>
+                    <p>Tracking the current position is done with watchPosition(onSuccess, onError). It returns an id that can be used with clearWatch(id) to stop tracking.</p>
+                    <p>You can pass a third parameter to the getCurrentPosition and watchPosition methods that can contain one or more options including enableHighAccuracy, maximumAge and timeout.</p>
+                    <p>A sample usage is watchId=navigator.geolocation.watchPosition(onSuccess, onError, {enableHighAccuracy:true, maximumAge:30000, timeout:27000});</p>
+                    <p>This <a href="https://jsbin.com/wubuxuz/1/edit?html,css,output" target="_blank">example</a> shows a static google map centered on the longitude and latitude.</p>
+                    <p>This <a href="https://jsbin.com/gijasam/1/edit?html,output" target="_blank">example</a> uses an interactive google map and tries to get an approximate address.</p>
+                    <p>This <a href="https://jsbin.com/qovute/1/edit?html,output" target="_blank">example</a> shows how to autofill form fields using the location.</p>
+                    <footer>Written by Michael Smith</footer>
+                </article>
+            </section>
+        </main>
+        <aside>
+            <h2>Aside content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla, est sit amet blandit eleifend, ligula diam sodales enim, in consequat nulla leo vel quam. Aliquam maximus quam ante, sit amet fringilla orci varius nec. Nam bibendum dui id ullamcorper posuere. Vestibulum lobortis erat ut nibh malesuada, nec consequat mi porta. In eget massa risus. Aliquam egestas lorem nec sodales venenatis. Pellentesque accumsan, quam et maximus efficitur, eros mi porta nisi, sed bibendum felis turpis sed massa. In semper nec felis ut pharetra. Nulla lacus lacus, malesuada nec mi tincidunt, condimentum facilisis tortor. In condimentum tortor ut est molestie sodales.</p>
+            <p>Vestibulum vel tempor erat, sit amet posuere libero. Morbi at pharetra libero. Aliquam imperdiet quam quis ex congue ornare. In a massa sem. Mauris vel lacinia metus. Donec eu mauris quis metus faucibus finibus nec vitae tellus. Suspendisse ut mi consectetur, maximus ligula sit amet, mollis augue. Nunc mollis id nulla eu commodo. Duis dolor turpis, sodales eget pellentesque id, congue eu arcu. Duis velit massa, sollicitudin id vulputate vel, faucibus id justo.</p>
+            <p>Fusce facilisis libero sit amet condimentum euismod. Maecenas tortor turpis, pharetra quis vehicula id, dignissim id magna. Suspendisse vitae purus consequat, blandit sem id, suscipit erat. Nunc pretium consequat leo eu porta. Nulla porttitor, dui sit amet hendrerit rutrum, diam dolor mattis augue, ut posuere metus erat ac eros. Morbi vitae pellentesque augue. Nullam ligula diam, pharetra pulvinar blandit sed, euismod id diam.</p>
+            <p>Sed non cursus elit, in fermentum dui. Sed convallis ultrices urna, quis pulvinar massa eleifend et. Sed euismod accumsan leo at tempor. Aenean molestie posuere mattis. Aenean ultrices ipsum a lectus iaculis, nec lacinia sem gravida. Aenean eu eros tellus. Morbi sed lectus est. Aenean imperdiet rutrum ullamcorper. Donec eget volutpat ipsum.</p>
+            <p>Morbi consectetur velit eget ullamcorper finibus. Suspendisse quis ex vel metus suscipit faucibus eget ut magna. Ut dignissim malesuada nulla, at imperdiet odio molestie a. Fusce tincidunt ante semper lectus rutrum, convallis pellentesque lorem auctor. Nam nec odio nisl. Duis vehicula eros pulvinar lectus tristique, a congue magna ornare. Phasellus euismod arcu magna, ut dignissim nibh ullamcorper et. Duis eu lorem imperdiet, fermentum erat ut, varius dui.</p>
+        </aside>
+    </div>
+    <footer id="body-footer">Site design by Michael Smith</footer>
+</body>
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
