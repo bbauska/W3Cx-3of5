@@ -1,5 +1,26 @@
-W3Cx-3of5-HTML5.1x – Coding Essentials and Best Practices
- 
+<h2 align="center">W3Cx Front-End Web Developer</h2>
+<br/>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- readme.md of W3Cx-3of5-HTML5.1x -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------------ w3c logo -------------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/w3c-logo.png?raw=true"
+   width="35%"
+   alt="W3C logo" />
+</p>
+
+<h3 align="center">W3Cx-3of5-HTML5.1x - Coding Essentials and Best Practices</h3>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 01. W3Cx-3of5-HTML5.1x logo (01) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image001.png?raw=true"
+   width="65%"
+   alt="W3Cx HTML 5.1x logo" />
+</p>
+
 Course information
 Welcome to "HTML5 Coding Essentials and Best Practices"
 •	Course outline 
@@ -13,8 +34,20 @@ W3C has designed a "Front-End Web Developer" (FEWD) Professional Certificate whe
 4.	5.2x HTML5 Apps and Games
 5.	JavaScript Introduction
 
- 
-Table of Contents – W3Cx-3of5-HTML5.1x – Coding Essentials and Best Practices
+## [Table of Contents](#table-of-contents)
+
+## [**About W3C and the Web**](#cha)
+>### - [**About W3C and the Web**](#cha-1)
+>### - [**Why accessibility is important**](#cha-2)
+>### - [**Why internationalization is important**](#cha-3)
+
+## [**Course information**](#chb)
+>### * [**Welcome to "HTML5 and CSS Fundamentals"**](#chb-1)
+>### * [**Course practical information**](#chb-2)
+>### * [**Course tools**](#chb-3)
+
+## [Module 1: HTML Basics](/modules/module1.md)
+
 Module 1: HTML5 Basics
 1.1.	Introduction – Module 1: HTML5 Basics
 1.2.	From HTML1.0 to HTML5
