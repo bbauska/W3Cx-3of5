@@ -6,7 +6,7 @@
 <!------------------------------------------ w3cx logo ------------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/w3c-logo.png?raw=true"
+<img src="./images/image011.png?raw=true"
    width="35%"
    alt="W3C logo" />
 </p>
@@ -299,15 +299,6 @@ The [W3C cheatsheet](https://www.w3.org/2009/cheatsheet/) provides quick acces
    alt="W3C Cheat Sheet snapshot image"
    width="35%" />
 </p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- ##. (##) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center">
-<img src="/images/image###.png?raw=true"
-   alt=" "
-   width="##%" />
-</p>
-
 Its main feature is a lookup search box, where one can start typing a keyword and get a list of matching properties/elements/attributes/functions in the above-mentioned specifications, and further details on those when selecting the one of interest.
 
 <h4>The W3C cheatsheet is only available as a <a href="https://dev.w3.org/2009/cheatsheet/doc/">pure Web application</a>.</h4>
@@ -805,7 +796,7 @@ Note that the H2, article, article header, etc. will be styled using these rules
 &nbsp;
 <br/>
 
-![image of the header at the top of each article](./images/image917.jpeg){width="5.0in" height="1.3553116797900262in"}
+![image of the header at the top of each article](./images/image017.jpeg){width="5.0in" height="1.3553116797900262in"}
 
 Next, in each article in the section we have a header (to display the article title), paragraphs (article content), and so on.
 
@@ -1980,7 +1971,7 @@ You can use \<div\> elements in all cases where the proposed structural elemen
 
 This chart from the [HTML5 Doctor Web site](https://html5doctor.com/) may help you decide whether or not to use a \<div\>:
 
-![flow chart about using header, H1, etc.](./images/image24.png){width="6.5in" height="4.600694444444445in"}
+![flow chart about using header, H1, etc.](./images/image024.png){width="6.5in" height="4.600694444444445in"}
 
 ### 1.3.5 Headings and Structural Elements
 
@@ -2004,7 +1995,7 @@ Since the very beginning, HTML has had heading elements: \<h1\>\...\<h6\>. Thes
 
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 
-![outliner in action from the previous example](./images/image25.png){width="6.5in" height="3.5097222222222224in"}
+![outliner in action from the previous example](./images/image025.png){width="6.5in" height="3.5097222222222224in"}
 
 In the above outline, note that we have only used H1\... H6 elements, without any new HTML5 structural elements such as \<section\> or \<article\>.
 
@@ -2076,7 +2067,7 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 
 ###### The corresponding outline is:
 
-![outline of previous example](./images/image26.jpeg){width="6.0in" height="2.6333333333333333in"}
+![outline of previous example](./images/image026.jpeg){width="6.0in" height="2.6333333333333333in"}
 
 In the above example, please note two things:
 
@@ -2561,7 +2552,7 @@ We need to add a heading in the \<nav\> element. This will both fix the outlin
 
 **Here is the fixed result:**
 
-![good outline without the untitled nav](./images/image33.jpeg){width="5.0in" height="3.3931627296587927in"}
+![good outline without the untitled nav](./images/image033.jpeg){width="5.0in" height="3.3931627296587927in"}
 
 A common remark from Web designers is: \"we do not want a heading content displayed systematically after a \<nav\>, or an \<aside\> element\...\"
 
@@ -2635,7 +2626,7 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 
 -   [Check it online with this JsBin](https://jsbin.com/heboke/edit?html,output)
 
-![blog with embedded table of contents](./images/image34.jpeg){width="5.0in" height="2.8536340769903763in"}
+![blog with embedded table of contents](./images/image034.jpeg){width="5.0in" height="2.8536340769903763in"}
 
 ### 1.3.10 Examples of Page Layouts
 
@@ -2683,11 +2674,11 @@ Here we use the CSS rule float:left for the \<section\> and the CSS rule 
 
 You can look at the complete CSS code in the interactive example below (click on the CSS or HTML text in the menu bar below, or click \"edit on codepen\" to change the code and see the results):
 
-![](./images/image35.png){width="6.5in" height="2.529166666666667in"}
+![](./images/image035.png){width="6.5in" height="2.529166666666667in"}
 
 [Also available online at JSBin](https://jsbin.com/dufapo/edit?html,css,output).
 
-![](./images/image36.png){width="6.5in" height="3.527083333333333in"}
+![](./images/image036.png){width="6.5in" height="3.527083333333333in"}
 
 ### Example #2: three sections centered, of equal size, also using the float and width CSS properties
 
@@ -2737,20 +2728,20 @@ Instead of having one element with a float:left and one element with a float:
 
 **Look at the CSS code in the example below:**
 
-![](./images/image37.png){width="6.5in" height="2.329861111111111in"}
+![](./images/image037.png){width="6.5in" height="2.329861111111111in"}
 
 ### Example #3: same result using the CSS flex property
 
 This example uses the CSS flex property to achieve a result similar to the one shown in Example 2.\
 There are many articles on Flexbox and we recommend those from Rachel Andrew on Smashing Magazine: \"[Use cases for Flexbox](https://www.smashingmagazine.com/2018/10/flexbox-use-cases/)\", \"[Flexbox: how big is that flexible box](https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/)\", etc.
 
-![](./images/image38.png){width="6.5in" height="2.357638888888889in"}
+![](./images/image038.png){width="6.5in" height="2.357638888888889in"}
 
 ### Example #4: another example written by a student, that uses the flex property
 
 This example also uses all the structuring elements we saw: main, article, section, etc. It uses only the simplest parts of the FlexBox CSS module, so it should be easy to understand, even for CSS beginners:
 
-![](./images/image39.png){width="6.5in" height="3.467361111111111in"}
+![](./images/image039.png){width="6.5in" height="3.467361111111111in"}
 
 ### External resources
 
@@ -2768,17 +2759,17 @@ These elements have been introduced for displaying a foldable zone in an HTML do
 
 In the screenshot below, taken from the W3C specification page, the text next to the horizontal arrow is a \<summary\> element, and the text displayed when we click on the summary part, is the \<details\> element. This is a sort of \"accordion\" with foldable content.
 
-![Example of summary details elements from the W3C specification](./images/image40.png){width="3.0in" height="5.791303587051619in"}
+![Example of summary details elements from the W3C specification](./images/image040.png){width="3.0in" height="5.791303587051619in"}
 
 The \<details\> element generates a simple widget to show/hide element contents, optionally by clicking on its child \<summary\> element.
 
 Here is an example of what can be done using these elements ) see the [online version on JSBin](https://jsbin.com/yociyel/1/edit?html,css,js,output):
 
-![Example of folded summary details](./images/image41.jpeg){width="3.4791666666666665in" height="2.0729166666666665in"}
+![Example of folded summary details](./images/image041.jpeg){width="3.4791666666666665in" height="2.0729166666666665in"}
 
 And here is what is displayed after clicking on the small arrow-shaped icon to the left of the summary:
 
-![Example of summary details unfolded](./images/image42.jpeg){width="3.34375in" height="1.5625in"}
+![Example of summary details unfolded](./images/image042.jpeg){width="3.34375in" height="1.5625in"}
 
 <b>Here is the code of this example:</b>
 
@@ -2812,15 +2803,15 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> elem
 
 **Step 1: all folded:**
 
-![Other example, unfolded](./images/image43.jpeg){width="3.3229166666666665in" height="0.4270833333333333in"}
+![Other example, unfolded](./images/image043.jpeg){width="3.3229166666666665in" height="0.4270833333333333in"}
 
 **Step 2: click on top level summary icon, the first \"hidden\" part appears\...**
 
-![The unfolded content contains in turn a summary details folded](./images/image44.jpeg){width="3.3333333333333335in" height="2.1875in"}
+![The unfolded content contains in turn a summary details folded](./images/image044.jpeg){width="3.3333333333333335in" height="2.1875in"}
 
 **Step3: click on embedded summary icon inside the part that has been previously unfolded**
 
-![We unfolded the summary details inside the previous summary details. Recursive accordeons!](./images/image45.jpeg){width="3.25in" height="3.6875in"}
+![We unfolded the summary details inside the previous summary details. Recursive accordeons!](./images/image045.jpeg){width="3.25in" height="3.6875in"}
 
 **Source code of this example, see the summary/details inside another one:**
 
@@ -2858,7 +2849,7 @@ There are CSS pseudo classes to style this icon when it is in the open or clos
 
 Example1 (see [online example](https://jsbin.com/tomehim/1/edit?html,css,output)):
 
-![Styling the open/close icon](./images/image46.jpeg){width="3.4583333333333335in" height="0.4166666666666667in"}
+![Styling the open/close icon](./images/image046.jpeg){width="3.4583333333333335in" height="0.4166666666666667in"}
 
 The color and background of the icon on the left are specified by the following CSS rule, which uses the pseudo class ::-webkit-details-marker
 
@@ -2872,7 +2863,7 @@ In this example: red arrow, white background.
 
 4.  }
 
-![Styled summary details icon, unfolded state](./images/image47.jpeg){width="3.7708333333333335in" height="1.8125in"}
+![Styled summary details icon, unfolded state](./images/image047.jpeg){width="3.7708333333333335in" height="1.8125in"}
 
 Once opened, the selector details\[open\] can style the icon when \<details\> is unfolded. In this example: blue arrow, turquoise background. Here is the corresponding CSS rule:
 
@@ -2888,9 +2879,9 @@ It is also possible to change the icon itself using the CSS pseudo class :after
 
 **Example 2 (see it [online](https://jsbin.com/sajusop/edit?html,css,output)):**
 
-![A + as a custom open icon for summary](./images/image43.jpeg){width="3.40625in" height="0.4375in"}
+![A + as a custom open icon for summary](./images/image043.jpeg){width="3.40625in" height="0.4375in"}
 
-![A \"-\" as a custom close icon](./images/image48.jpeg){width="3.4791666666666665in" height="1.6458333333333333in"}
+![A \"-\" as a custom close icon](./images/image048.jpeg){width="3.4791666666666665in" height="1.6458333333333333in"}
 
 CSS rules used in this example:
 
@@ -2934,7 +2925,7 @@ Use a \"-\" shaped icon, white, when details are displayed:
 
 ### 1.4.2 The \<time\> and \<mark\> Elements
 
-![Picture of a clock with the words \'it\'s about time\'](./images/image49.jpeg){width="2.0in" height="1.9085422134733159in"}
+![Picture of a clock with the words \'it\'s about time\'](./images/image049.jpeg){width="2.0in" height="1.9085422134733159in"}
 
 ### The \<time\> element
 
@@ -2998,7 +2989,7 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
 
 Duration values use the prefix "P" for "period" as in \<time datetime=\"P4D\"\> (period = four days)\...
 
-![funny pict duration values](./images/image50.jpeg){width="2.0in" height="2.0608694225721784in"}
+![funny pict duration values](./images/image050.jpeg){width="2.0in" height="2.0608694225721784in"}
 
 So you start the attribute string value with a \"P\", followed by a duration value that ends with another letter indicating the unit used: \"D\" for \"days\",  "H" for hours, "M" for minutes and "S" for seconds. 
 
@@ -3042,7 +3033,7 @@ Used without attributes, the value between the opening \<time\> and closing \
 
 ### The \<mark\> element
 
-![Picture of a yellow hightlighter pen](./images/image51.jpeg){width="4.34375in" height="0.9791666666666666in"}
+![Picture of a yellow hightlighter pen](./images/image051.jpeg){width="4.34375in" height="0.9791666666666666in"}
 
 The HTML \<mark\> tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.
 
@@ -3080,7 +3071,7 @@ Source code:
 
 Example 2:
 
-![Another example for marking code](./images/image52.jpeg){width="4.6875in" height="0.9375in"}
+![Another example for marking code](./images/image052.jpeg){width="4.6875in" height="0.9375in"}
 
 Source code:
 
@@ -3102,7 +3093,7 @@ If you don\'t like the default yellow background, you may use CSS to change the 
 
 For example:
 
-![style the mark element with CSS](./images/image53.jpeg){width="4.28125in" height="1.34375in"}
+![style the mark element with CSS](./images/image053.jpeg){width="4.28125in" height="1.34375in"}
 
 \... comes with this CSS rule:
 
@@ -3207,7 +3198,7 @@ The above example will cause the browser that invoked this server-side code to
 
 ### To download a file using an arbitrary name: the download attribute
 
-![Picture of a road sign with the words \'New Way\'](./images/image54.jpeg){width="1.2708333333333333in" height="0.9791666666666666in"}
+![Picture of a road sign with the words \'New Way\'](./images/image054.jpeg){width="1.2708333333333333in" height="0.9791666666666666in"}
 
 HTML5 proposes the use of a new attribute named download to download resources rather than navigating to them. The example below shows how to trigger the download of an image by the browser (instead of rendering it, which is the default behavior) with a name different from the name of the resource.
 
@@ -3219,13 +3210,13 @@ HTML5 proposes the use of a new attribute named download to download resourc
 
 This will indeed force the download of an image with a filename different from its original filename on the server side. Here is a screen capture of the Web browser while downloading the picture. We can see in the status bar the name of the link (the image is \"normal.gif\") and the downloaded file is \"MichelBuffa.gif\":
 
-![Image saved with another names thanks to the download attribute](./images/image55.png){width="2.375in" height="0.71875in"}
+![Image saved with another names thanks to the download attribute](./images/image055.png){width="2.375in" height="0.71875in"}
 
 **WARNING**: since 2015, and for security reasons, **the image should be located on the same domain as the HTML page that contains the link** (using a relative URL works well, for example, but linking a page on another domain will not work - it will keep its original name).
 
 #### Interesting applications: serverless download
 
-![no server picture](./images/image56.jpeg){width="3.2395833333333335in" height="0.8958333333333334in"}
+![no server picture](./images/image056.jpeg){width="3.2395833333333335in" height="0.8958333333333334in"}
 
 ##### Serverless download demo (by E.Bilderman)
 
@@ -3235,7 +3226,7 @@ We won\'t detail this demo here, but take a look if you are curious to see wha
 
 We have also put the simplified [source code of this demo on JSBin.com](https://jsbin.com/muluwey/1/edit?html,css,js,output) for you to play with.
 
-![Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server.](./images/image57.png){width="5.0in" height="4.820754593175853in"}
+![Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server.](./images/image057.png){width="5.0in" height="4.820754593175853in"}
 
 #### External resources:
 
@@ -3429,7 +3420,7 @@ Different use cases:
 
 After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.
 
-![Picture of diverse tools used by workers](./images/image58.jpeg){width="2.0in" height="2.0in"}
+![Picture of diverse tools used by workers](./images/image058.jpeg){width="2.0in" height="2.0in"}
 
 One of the most popular resources for testing microdata (as well as microformats and RDFa) is this [Google page about understanding how structured data works](https://developers.google.com/search/docs/guides/intro-structured-data). This page contains a link to a structured data testing tool that you can use to see how Google recognizes the semantic data you embed in your HTML code.
 
@@ -3489,11 +3480,11 @@ Source code:
 
 Rendering of the page in a browser:
 
-![Rendering of Michel Buffa home page](./images/image59.jpeg){width="6.5in" height="1.0298611111111111in"}
+![Rendering of Michel Buffa home page](./images/image059.jpeg){width="6.5in" height="1.0298611111111111in"}
 
 Here is what Google sees of the page. We just entered its [URL](https://output.jsbin.com/gunuzus/1) in the [Google page about rich snippets and structured data](https://developers.google.com/search/docs/guides/intro-structured-data):
 
-![Microdata of the example, as seen by Google](./images/image60.png){width="5.0in" height="2.4758213035870518in"}
+![Microdata of the example, as seen by Google](./images/image060.png){width="5.0in" height="2.4758213035870518in"}
 
 Note that the address is a fully featured embedded object in the Person\'s description.
 
@@ -3501,11 +3492,11 @@ Note that the address is a fully featured embedded object in the Person\'s descr
 
 The [Live Microdata Web site](https://foolip.org/microdatajs/live/)  is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
 
-![example of live microdata from the previous example. Microdata are displayed as json objects](./images/image61.jpeg){width="6.0in" height="5.615387139107612in"}
+![example of live microdata from the previous example. Microdata are displayed as json objects](./images/image061.jpeg){width="6.0in" height="5.615387139107612in"}
 
 And the JSON view of the microdata:
 
-![JSON view of the microdata](./images/image62.jpeg){width="4.0in" height="4.4615365266841644in"}
+![JSON view of the microdata](./images/image062.jpeg){width="4.0in" height="4.4615365266841644in"}
 
 ### 1.5.3 Adding Microdata to an HTML Page
 
@@ -3541,7 +3532,7 @@ If you are a developer and if you are familiar with object oriented programming,
 
 **Vocabularies are meant to be shared**
 
-![Picture wish words \'time to share\'](./images/image63.jpeg){width="2.6145833333333335in" height="1.7395833333333333in"}
+![Picture wish words \'time to share\'](./images/image063.jpeg){width="2.6145833333333335in" height="1.7395833333333333in"}
 
 If one of the existing vocabularies available at the schema.org Web site fits your needs, you should reuse it, as the most popular vocabularies are becoming de facto standards and will be taken into account by Web crawlers, browsers, and browser extensions.
 
@@ -3747,7 +3738,7 @@ To automatically generate microdata for describing persons, restaurants, movie
 
 Example:
 
-![Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata](./images/image64.jpeg){width="6.5in" height="3.3743055555555554in"}
+![Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata](./images/image064.jpeg){width="6.5in" height="3.3743055555555554in"}
 
 ### 1.5.5 Examples of Well Structured Documents with Microdata
 
@@ -3763,17 +3754,17 @@ Visit the [exemple #1 online](https://jsbin.com/cuzipa/edit?html,css,output).
 
 Structure:
 
-![picture of the first about me page example. Shows the table of content](./images/image65.jpeg){width="4.0625in" height="4.010416666666667in"}
+![picture of the first about me page example. Shows the table of content](./images/image065.jpeg){width="4.0625in" height="4.010416666666667in"}
 
 Microdata:
 
-![microdata from the example page](./images/image66.jpeg){width="5.0in" height="3.7708333333333335in"}
+![microdata from the example page](./images/image066.jpeg){width="5.0in" height="3.7708333333333335in"}
 
 ### Example #2
 
 View the [example #2 online](https://jsbin.com/karemi/1/edit?html,output).
 
-![Example page, shows table of content](./images/image67.jpeg){width="4.958333333333333in" height="3.4375in"}
+![Example page, shows table of content](./images/image067.jpeg){width="4.958333333333333in" height="3.4375in"}
 
 ## Module 2: HTML5 Multimedia
 
@@ -3786,7 +3777,7 @@ Until 2012, it was only possible to integrate an audio or video player using the
 
 Check the HTML code of the following CodePen:
 
-![](./images/image68.png){width="6.5in" height="2.061111111111111in"}
+![](./images/image068.png){width="6.5in" height="2.061111111111111in"}
 
 Please note that:
 
@@ -3820,7 +3811,7 @@ Here is the HTML code you need to copy and paste in order to embed a video:
 
 The YouTube video embedded in this page by the above code: it\'s HTML5 but it\'s not a \<video\> element directly inserted in the HTML of this page, it\'s an \<iframe\>.
 
-![](./images/image69.png){width="5.84375in" height="3.28125in"}
+![](./images/image069.png){width="5.84375in" height="3.28125in"}
 
 ### Support for different video CODECS (mp4, ogG, avi, etc.)
 
@@ -3980,7 +3971,7 @@ To add some styling to the basic example we saw when we introduced the \<audio\
 
 Please move the mouse pointer over this player\'s elements: 
 
-![Two gery-black horses in a field](./images/image70.jpeg){width="2.0833333333333335in" height="1.5625in"}
+![Two gery-black horses in a field](./images/image070.jpeg){width="2.0833333333333335in" height="1.5625in"}
 
 Press Play to hear the horse ! 
 
@@ -4112,7 +4103,7 @@ CSS source code:
 
 See this** **[example online](https://jsbin.com/zoquru/4/edit?html,css,output) (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it\'s playing.
 
-![](./images/image71.png){width="5.947916666666667in" height="3.4895833333333335in"}
+![](./images/image071.png){width="5.947916666666667in" height="3.4895833333333335in"}
 
 This example uses the pseudo CSS class :hover in order to track the mouseover event. On mouseover, it uses a CSS transition property that interpolates the changes in the scale and orientation of the video element (done using a transform CSS property).
 
@@ -4168,7 +4159,7 @@ Example #1: with a regular video
 
 Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 
-![](./images/image72.png){width="6.5in" height="2.0680555555555555in"}
+![](./images/image072.png){width="6.5in" height="2.0680555555555555in"}
 
 Here is the HTML code. It\'s really simple, just notice the \<body onload=\"init();\"\> which calls the JavaScript init() function right after the page is loaded.
 
@@ -4256,7 +4247,7 @@ And now the JavaScript code:
 
 Full width, resizable, borderless YouTube video. To do this: just 100% standard CSS + DOM manipulation using JavaScript.
 
-![](./images/image73.png){width="5.0in" height="1.564636920384952in"}
+![](./images/image073.png){width="5.0in" height="1.564636920384952in"}
 
 The CSS and JavaScript codes for this example are exactly the same as in Example #1.
 
@@ -4266,7 +4257,7 @@ The CSS and JavaScript codes for this example are exactly the same as in Exam
 
 In this example, the video does not rescale; it\'s just cropped if the browser window is resized. Enlarge your browser and you\'ll see a man with a phone on the right. Resize your browser and you\'ll see only part of the video.
 
-![](./images/image74.png){width="5.0in" height="1.5854702537182852in"}
+![](./images/image074.png){width="5.0in" height="1.5854702537182852in"}
 
 **CSS code:**
 
@@ -4400,35 +4391,25 @@ The trick here is that:
 
 Full screen video that resizes and keeps its ratio, using the viewport units.
 
-![](./images/image75.png){width="6.5in" height="2.061111111111111in"}
+![](./images/image075.png){width="6.5in" height="2.061111111111111in"}
 
 This time we obtain the same result as with the first example that used JavaScript and a resize event. The video resizes correctly and keeps its ratio.
 
-CSS code:
+<h4>CSS code:</h4>
 
+```css
 body {
-
    margin: 0;
-
 }
-
- 
-
- 
 
 video {
-
    position: absolute;
-
    width: 100vw;
-
    height: 100vh;
-
    object-fit: cover;
-
    object-position: center center;
-
 }
+```
 
 ### Discussion: why can\'t we achieve perfect resizing with only CSS and the use of properties width=100% and height=100%?
 
@@ -4482,7 +4463,7 @@ This will create a complete video player for the file \"video.mp4\", with contro
 
 Please look at this interesting example:
 
-![](./images/image76.png){width="6.5in" height="2.061111111111111in"}Note that in order to play the video, you must click on the \"vid.play()\" text. To pause it, you click on the \"vid.pause()\" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
+![](./images/image076.png){width="6.5in" height="2.061111111111111in"}Note that in order to play the video, you must click on the \"vid.play()\" text. To pause it, you click on the \"vid.pause()\" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
 
 **Conclusion**:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let\'s see a little more of what we can do using the JavaScript API of the \<video\> element (it will be an identical approach for the \<audio\> element, since it shares the same API by a very small margin).
 
@@ -4498,7 +4479,7 @@ The list of properties can be found at the [W3C HTML5 Video Events and API](htt
 
 Try the [direct link](https://www.w3.org/2010/05/video/mediaevents.html), and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
 
-![](./images/image77.png){width="6.5in" height="4.313194444444444in"}
+![](./images/image077.png){width="6.5in" height="4.313194444444444in"}
 
 #### Here is a table that shows the most interesting methods, properties, and events provided by the \<video\> element API
 
@@ -5044,7 +5025,7 @@ It is worth mentioning that most browsers work well with WebVTT, even if the MIM
 
 Here is an example of a video element that includes a \<track\> element in the .vtt (WebVTT) format (*line 9 *in the source code shown below):
 
-![](./images/image86.png){width="6.5in" height="2.0881944444444445in"}
+![](./images/image086.png){width="6.5in" height="2.0881944444444445in"}
 
 The example uses a \<track\> element to insert basic *captions* to the video: sounds and music are described, in addition to standard *subtitles* that correspond to what the different movie characters say.
 
@@ -5391,17 +5372,17 @@ Many tools - both free and commercial - are available to add subtitles to a vid
 
 Go to the above Web site, click on the \"subtitle a video\" link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it\'s better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.
 
-![](./images/image88.png){width="4.0in" height="3.3752187226596675in"}
+![](./images/image088.png){width="4.0in" height="3.3752187226596675in"}
 
 Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:
 
-![](./images/image89.png){width="6.0in" height="5.204489282589677in"}
+![](./images/image089.png){width="6.0in" height="5.204489282589677in"}
 
 Note that YouTube can also help you \"make subtitles\" with its speech recognition tool, but you will only be able to export in .srt format afterwards. You will have to convert this format afterwards to .vtt.
 
 ### Try your subtitled/captioned video
 
-![](./images/image90.png){width="4.0in" height="2.306801181102362in"}
+![](./images/image090.png){width="4.0in" height="2.306801181102362in"}
 
 ### 2.3.4 Styling Captions
 
@@ -5409,7 +5390,7 @@ In this section, we will look at different possibilities for styling and positio
 
 The example below shows how we can do that (play the video for 40s, look at the positions and styles of the subtitles and captions, look at the HTML):
 
-![](./images/image91.png){width="6.0in" height="1.9147419072615923in"}
+![](./images/image091.png){width="6.0in" height="1.9147419072615923in"}
 
 The WebVTT file is shown below. Notice the new attributes that have been added on the right end of the duration values:
 
@@ -5519,7 +5500,7 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 
 ### How to position the subtitles
 
-![](./images/image92.png){width="6.5in" height="6.856944444444444in"}
+![](./images/image092.png){width="6.5in" height="6.856944444444444in"}
 
 The video example tests nearly all the possibilities for positioning subtitles/captions, styling (using HTML element wrapping with \<b\>, \<i\>,  etc.), voicing (subtitles corresponding to different characters will be displayed in different colors) and CSS styling.
 
@@ -5545,7 +5526,7 @@ And so on. Please look at the video as it is self-explanatory.
 
 One can use the HTML elements  \<b\>, \<i\>, \<u\> to modify the rendering of subtitles and captions, as illustrated in the example below:
 
-![](./images/image93.png){width="6.5in" height="2.8361111111111112in"}
+![](./images/image093.png){width="6.5in" height="2.8361111111111112in"}
 
 ### Using CSS classes for styling
 
@@ -5555,7 +5536,7 @@ It is possible to style using CSS classes as part of a cue value, using the \<
 
 2.  Browsers that support ::cue CSS should make it red.\</c\>
 
-![Snaphot of a video frame showing a cue containing the class \'myclass\'. Browsers that support ::cue CSS should make it red](./images/image94.jpeg){width="6.5in" height="2.8097222222222222in"}
+![Snaphot of a video frame showing a cue containing the class \'myclass\'. Browsers that support ::cue CSS should make it red](./images/image094.jpeg){width="6.5in" height="2.8097222222222222in"}
 
 CSS rules used in this example:
 
@@ -5579,7 +5560,7 @@ Support differs from one browser to another, see [this compatibility table](htt
 
 Here is an example that shows the voices of the different characters displayed with different colors:
 
-![](./images/image95.png){width="6.5in" height="2.765277777777778in"}
+![](./images/image095.png){width="6.5in" height="2.765277777777778in"}
 
 Using the \<v\> tag, you will distinguish different voices that should be displayed in different colors (depending on the HTML5 video player implementation). See the CSS presented in the previous section to see how to specify the colors for the different voices.
 
@@ -5673,7 +5654,7 @@ Example of a WebVTT file that defines chapters:
 
 An example of what you can achieve using chapters, using the [JW Player](https://www.jwplayer.com/):
 
-![](./images/image96.png){width="6.5in" height="2.527083333333333in"}
+![](./images/image096.png){width="6.5in" height="2.527083333333333in"}
 
 ### 2.3.6 Tools for Creating WebVTT Files
 
@@ -5709,13 +5690,13 @@ The \<track\> element comes with a powerful API that is used to develop many
 
 This example shows a video with an enhanced progress bar that displays the different chapters as small \"clickable\" squares. Furthermore, using the JavaScript API of the \<track\> element, this Web site builds a navigation menu (on the right of the video):
 
-![navigation menu using the track javascript api](./images/image97.jpeg){width="6.5in" height="3.5965277777777778in"}
+![navigation menu using the track javascript api](./images/image097.jpeg){width="6.5in" height="3.5965277777777778in"}
 
 #### Example #2: sync video with Google Map and Google Street View
 
 Check [this demo](https://simpl.info/track/map/index.html) (only on Chrome) by [Sam Dutton](https://samdutton.com/): it shows a video that comes with a WebVTT file that contains longitudes and latitudes. When the video plays, JavaScript functions are called at given times and get the longitude and latitude. A Google Map and a Google Street views are updated in real time.
 
-![video sync with map and street view](./images/image98.jpeg){width="6.5in" height="5.80625in"}
+![video sync with map and street view](./images/image098.jpeg){width="6.5in" height="5.80625in"}
 
 #### Example #3: sync guitar tablatures and music score with a video
 
@@ -5723,7 +5704,7 @@ This example shows how we manage to render music scores in real time as the vi
 
 Some JavaScript code listens to the ontimeupdate event while the video is playing. We use the currentTime property of the video to know exactly where we are in the video. Finally, we also rely on an external library to render in an HTML5 canvas the bars corresponding to the current video explanations. We render in real time guitar pro tablatures using the alphatab.net library.
 
-![](./images/image99.png){width="5.0in" height="2.784694881889764in"}
+![](./images/image099.png){width="5.0in" height="2.784694881889764in"}
 
 ### 2.3.8 Enhanced HTML5 Video Players
 
