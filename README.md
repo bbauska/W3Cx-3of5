@@ -686,6 +686,7 @@ This is an example of one way to organize a blog. Here, we have designed the HTM
 The navigation menu just below the header is a \<nav\> element. For the purpose of this example we haven\'t provided any value for the hyperlinks\...
 
 <h4>HTML code:</h4>
+
 ```
 > <!DOCTYPE html>
 > <html lang="en">
@@ -705,7 +706,9 @@ The navigation menu just below the header is a \<nav\> element. For the purpos
 >     </ul>
 > **</nav>**
 ```
+
 And here is the CSS we used in this example for the \<nav\> element:
+
 ```
 > nav {
 >     font-size: 1.5em;
@@ -737,58 +740,44 @@ Now, we have one big \<section\> element that contains a set of \<article\> e
 
 ![image of sections that contain articles](media/image016.jpeg){width="5.0in" height="2.185184820647419in"}
 
-**HTML code:**
+<h4>HTML code:</h4>
+
 ```
-> \<section\>
->    \<article\>
->     \...
->    \</article\>
->    \<article\>
->     \...
->    \</article\>
->    \<article\>
->     \...
->    \</article\>
->
-> \</section\>
+> <section>
+>    <article>
+>     ...
+>    </article>
+>    <article>
+>     ...
+>    </article>
+>    <article>
+>     ...
+>    </article>
+> </section>
+```
 
 **And here is the CSS:**
 
+```
 > section {
->
 >    float: left;
->
 >    padding: 35px 0;
->
 >    position: relative;
->
 >    width: 70%
->
 > }
->
 > section article {
->
 >    margin: 0 50px 40px;
->
 >    padding: 25px 0 0;
->
 >    position: relative
->
 > }
->
 > section header {
->
 >    font-size: 1em;
->
 >    padding: 0;
->
 > }
->
 > section h2 {
->
 >    font-size: 2.3em;
->
 > }
+```
 
 Note that the H2, article, article header, etc. will be styled using these rules.
 
@@ -810,61 +799,36 @@ Next, in each article in the section we have a header (to display the article ti
 
 Example for the first blog article:
 
-> \<section\>
->
->    \<article\>
->
->      \<header\>
->
->          \<h2\>\<a href=\"\"\>Information about this example\</a\>\</h2\>
->
->      \</header\>
->
->      \<p\>Try to move the mouse on different elements. The structure will be
->
+```
+> <section>
+>    <article>
+>      <header>
+>          <h2><a href="">Information about this example</a></h2>
+>      </header>
+>      <p>Try to move the mouse on different elements. The structure will be
 >      highlighted and you will be able
->
 >      to see the different inclusions of elements one in each other. If you
->
 >      move the cursor to this sentence, it will be highlighted in dark grey,
->
 >      showing the presence of an &lt;article&gt; element, surrounded by a
->
 >      &lt;section&gt; element (light grey), etc. So we have some articles in
->
 >      a single section element. The page title at the top is a &lt;header&gt;
->
 >      element, while the tag cloud on the right is a &lt;aside&gt; element. The
->
->      main menu on top (with Blog, About, Contact) is a &lt;nav&gt; element.\</p\>
->
->      \<figure\>
->
->          \<img src=\"HTML5-tags.png\"
->
->              alt=\"Example of HTML5 structural tags\" /\>
->
->          \<figcaption\>
->
+>      main menu on top (with Blog, About, Contact) is a &lt;nav&gt; element.</p>
+>      <figure>
+>          <img src="HTML5-tags.png"
+>              alt="Example of HTML5 structural tags" />
+>          <figcaption>
 >              Fig. 1 : an example of how new structural elements could
->
 >              be used. This page put a &lt;nav&gt; on top, and does not have
->
 >              headers and footer for each article, like in this figure,
->
->              but it could\... By the way this is a
->
->              &lt;figcaption&gt; inside a &lt;figure&gt; element\...
->
->          \</figcaption\>
->
->     \</figure\>
->
->    \</article\>
->
->    \...
->
-> \</section\>
+>              but it could... By the way this is a
+>              &lt;figcaption&gt; inside a &lt;figure&gt; element...
+>          </figcaption>
+>     </figure>
+>    </article>
+>    ...
+> </section>
+```
 
 #### Use \<figure\> and \<figcaption\> and embed \<img\> inside
 
@@ -875,40 +839,34 @@ Also note the way we included a figure using the new \"HTML5\" method, using a 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image018.jpeg?raw=true"
-   alt="Image of figure and figure caption that embed and image"
+   alt="Image of figure and figure caption that embed an image"
    width="55%">
 &nbsp;
 <br/>
 
 Here is the CSS for the \<figcaption\> element we have used in the example (we did not apply any style to the \<figure\> element):
 
-**HTML code:**
+<h4>HTML code:</h4>
 
-1.  \<figure\>
+```
+1.  <figure>
+2.  <img src="HTML5-tags.png"
+    a.  alt="Example of HTML5 structural tags" />
+3.  <figcaption>
+    a.  Fig. 1 : an example of how .....
+4.  </figcaption>
+5.  </figure>
+```
 
-2.  \<img src=\"HTML5-tags.png\"
+<h4>CSS code:</h4>
 
-    a.  alt=\"Example of HTML5 structural tags\" /\>
-
-3.  \<figcaption\>
-
-    a.  Fig. 1 : an example of how \.....
-
-4.  \</figcaption\>
-
-5.  \</figure\>
-
-**CSS code:**
-
+```
 1.  figcaption {
-
 2.  font-style:italic;
-
 3.  font-size: 0.8em;
-
 4.  width: 100%
-
 5.  }
+```
 
 #### Use an \<aside\> element to display a tag cloud on the\... side of the main content
 
@@ -924,71 +882,49 @@ After the long \<section\> element that contains all the blog articles display
 &nbsp;
 <br/>
 
-> \<section\>
->
-> \.... all \<article\>\... \</article\> here\....
->
-> \</section\>
->
-> **\<aside\>**
->
->    \<h2\>Tag cloud\</h2\>
->
->    \<ul class=\"tag-cloud\"\>
->
->        \<li\>\<a href=\"\" rel=\"tag\" class=\"w2\"\>ajax\</a\>\</li\>
->
->        \<li\>\<a href=\"\" rel=\"tag\" class=\"w8\"\>apple\</a\>\</li\>
->
->        \<li\>\<a href=\"\" rel=\"tag\" class=\"w3\"\>css\</a\>\</li\>
->
->        \...
->
->    \</ul\>
->
-> **\</aside\>**
->
-> \...
+```
+> <section>
+> .... all <article>... </article> here....
+> </section>
+> **<aside>**
+>    <h2>Tag cloud</h2>
+>    <ul class="tag-cloud">
+>        <li><a href="" rel="tag" class="w2">ajax</a></li>
+>        <li><a href="" rel="tag" class="w8">apple</a></li>
+>        <li><a href="" rel="tag" class="w3">css</a></li>
+>        ...
+>    </ul>
+> **</aside>**
+> ...
+```
 
 We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at [the code of the online example](https://jsbin.com/bucokav/edit?html,output).
 
 **Here is the CSS for the \<aside\> element:**
 
+```
 > aside {
->
 >     float: right;
->
 >     padding: 70px 0 30px;
->
 >     position: relative;
->
 >     width: 25%
->
 > }
->
 > aside h2 {
->
 >     color: #888;
->
 >     font-size: 1.8em
->
 > }
->
 > aside .tag-cloud {
->
 >     padding: 15px 35px 10px 0;
->
 >     text-align: center
->
 > }
->
 > \...
+```
 
 We used a float:right CSS rule to put the tag cloud on the right\... In the following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
 
 **Here is the result:**
 
-![The aside tag cloud on the right](media/image20.jpeg){width="5.0in" height="1.6762817147856517in"}
+![The aside tag cloud on the right](./images/image020.jpeg){width="5.0in" height="1.6762817147856517in"}
 
 #### Add a \<footer\> at the end of the blog
 
@@ -996,6 +932,7 @@ We used a float:right CSS rule to put the tag cloud on the right\... In the fo
 
 Finally, we added a \<footer\> element (*lines 12-14* below) after the tag cloud definition, to display a page footer:
 
+```
 > \<html\>
 >
 > \...
@@ -1025,9 +962,11 @@ Finally, we added a \<footer\> element (*lines 12-14* below) after the tag cl
 > \</body\>
 >
 > \</html\>
+```
 
 **With this CSS rule:**
 
+```
 > footer {
 >
 >     clear: both;
@@ -1037,16 +976,17 @@ Finally, we added a \<footer\> element (*lines 12-14* below) after the tag cl
 >     padding: 10px 50px
 >
 > }
+```
 
 And here is the result at the bottom of the page:
 
-![The resulting footer at the bottom of the page](media/image22.jpeg){width="5.0in" height="1.757425634295713in"}
+![The resulting footer at the bottom of the page](./images/image022.jpeg){width="5.0in" height="1.757425634295713in"}
 
 **More on \<article\> and \<section\>**
 
 Can an \<article\> contain a \<section\>?
 
-![Picture of \'eisher\' hands](media/image23.jpeg){width="2.4270833333333335in" height="1.3333333333333333in"}
+![Picture of \'eisher\' hands](./images/image023.jpeg){width="2.4270833333333335in" height="1.3333333333333333in"}
 
 It may not be clear whether a \<section\> may contain one or several \<article\> elements or if an \<article\> may contain one or several \<section\> elements.
 
@@ -1058,6 +998,7 @@ The \<article\> element was designed for stand-alone parts of a document that 
 
 Example of a blog post defined as a long \<article\>, that is in turn cut into smaller \<section\> elements:
 
+```
 > \<article id=\"id1\"\>
 >
 >    \<section id=\"id1part1\"\>
@@ -1079,6 +1020,7 @@ Example of a blog post defined as a long \<article\>, that is in turn cut into 
 >    \</section\>
 >
 > \</article\>
+```
 
 The blog example from the previous part of the course, on the other hand, uses a single \<section\> that contains several \<article\> elements.
 
@@ -1090,41 +1032,26 @@ Can you put a \<nav\> in an \<article\>?
 
 Yes you can, in case you would like to propose some navigation links with each blog post, for example:
 
-> \<article\>
->
->    \<header\>
->
->      \<h1\>Blog post title\</h1\>
->
->        \<p\>Author: Michel\</p\>
->
->    \</header\>
->
->    **\<nav\>**
->
->        **\<ul\>**
->
->            \<li\>\<a href=\"\...\"\>Next post\</a\>\</li\>
->
->            \<li\>\<a href=\"\...\"\>Previous post\</a\>\</li\>
->
->            \<li\>\<a href=\"\...\"\>Contact author\</a\>\</li\>
->
->        **\</ul\>**
->
->    **\</nav\>**
->
->    \<p\>Content\...\</p\>
->
->    \<footer\>
->
->      \<p\>Posted by Michel, the \<time datetime=\"2012-02-02\"\>February 2,
->
->      2012\</time\> \</p\>
->
->    \</footer\>
->
-> \</article\>
+```
+> <article>
+>    <header>
+>      <h1>Blog post title</h1>
+>        <p>Author: Michel</p>
+>    </header>
+>    **<nav>**
+>        **<ul>**
+>            <li><a href="...">Next post</a></li>
+>            <li><a href="...">Previous post</a></li>
+>            <li><a href="...">Contact author</a>\</li>
+>        **</ul>**
+>    **</nav>**
+>    <p>Content...</p>
+>    <footer>
+>      <p>Posted by Michel, the <time datetime="2012-02-02">February 2,
+>      2012</time> </p>
+>    </footer>
+> <article>
+```
 
 In that case, the \<nav\> element proposes navigation links to the next or previous blog post, as well as a link to contact the author of the blog post.
 
@@ -1144,7 +1071,7 @@ You can use \<div\> elements in all cases where the proposed structural elemen
 
 This chart from the [HTML5 Doctor Web site](https://html5doctor.com/) may help you decide whether or not to use a \<div\>:
 
-![flow chart about using header, H1, etc.](media/image24.png){width="7.0in" height="4.954590988626422in"}
+![flow chart about using header, H1, etc.](./images/image024.png){width="7.0in" height="4.954590988626422in"}
 
 ### Headings & Structural Elements
 
@@ -1184,29 +1111,25 @@ The HTML5 specification says that \"each sectioning element potentially has a he
 
 \<h1\>\...\<h6\> are called **headings**, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
 
-> \<body\>
+```
+> <body>
+>     <h1>Title of my document</h1>
+>     ...
 >
->     \<h1\>Title of my document\</h1\>
->
->     \...
->
-> \</body\>
+> </body>
+```
 
 **\... defines the header of a section *implicitly*, while:**
 
-> \<body\>
->
->    \...
->
->    \<section\>
->
->       \<h1\>Title of my section\</h1\>
->
->       \...
->
->    \</section\>
->
-> \</body\>
+```
+> <body>
+>    ...
+>    <section>
+>       <h1>Title of my section</h1>
+>       ...
+>    </section>
+> </body>
+```
 
 **\... defines the heading of *the explicit section* (its parent element \<section\>).**
 
@@ -1218,35 +1141,22 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 
 Let\'s clarify this by looking at some example code:
 
-> \<body\>
->
-> \<section\>
->
->     \<h1\>This H1 is the heading of an explicit section\</h1\>
->
->     \...
->
->        \<h2\>This H2 is a subheading, part of the same section
->
->            (lower rank)\</h2\>
->
->             \....
->
->     \<h1\>This H1 starts an implicit new section in the explicit
->
->         section (equal or higher rank)\</h1\>
->
->         \...
->
->         \<h2\>This is a H2 heading in the new section that has
->
->             just started\</h2\>
->
->             \...
->
-> \</section\>
->
-> \</body\>
+> <body>
+> <section>
+>     <h1>This H1 is the heading of an explicit section\</h1>
+>     ...
+>        <h2>This H2 is a subheading, part of the same section
+>            (lower rank)</h2>
+>             ....
+>     <h1>This H1 starts an implicit new section in the explicit
+>         section (equal or higher rank)</h1>
+>         ...
+>         <h2>This is a H2 heading in the new section that has
+              just started</h2>
+>             ...
+> </section>
+> </body>
+```
 
 The corresponding outline is:
 
@@ -2169,41 +2079,26 @@ Indeed, we can also have a \<section\> that regroups all blog posts per mont
 
 Yes, you can, in case you would like to propose some navigation links with each blog post, for example:
 
-> \<article\>
->
->    \<header\>
->
->      \<h1\>Blog post title\</h1\>
->
->        \<p\>Author: Michel\</p\>
->
->    \</header\>
->
->    **\<nav\>**
->
->        **\<ul\>**
->
+```
+> <article>
+>    <header>
+>      <h1>Blog post title</h1>
+>        <p>Author: Michel</p>
+>    </header>
+>    **<nav>**
+>        **<ul>**
 >            \<li\>\<a href=\"\...\"\>Next post\</a\>\</li\>
->
 >            \<li\>\<a href=\"\...\"\>Previous post\</a\>\</li\>
->
 >            \<li\>\<a href=\"\...\"\>Contact author\</a\>\</li\>
->
 >        **\</ul\>**
->
 >    **\</nav\>**
->
 >    \<p\>Content\...\</p\>
->
 >    \<footer\>
->
 >      \<p\>Posted by Michel, the \<time datetime=\"2012-02-02\"\>February 2,
->
 >      2012\</time\> \</p\>
->
 >    \</footer\>
->
 > \</article\>
+```
 
 In that case, the \<nav\> element proposes navigation links to the next or previous blog post, as well as a link to contact the author of the blog post.
 
@@ -2263,29 +2158,19 @@ The HTML5 specification says that \"each sectioning element potentially has a he
 
 \<h1\>\...\<h6\> are called **headings**, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
 
-> \<body\>
->
->     \<h1\>Title of my document\</h1\>
->
->     \...
->
-> \</body\>
->
-> \... defines the header of a section *implicitly*, while:
->
-> \<body\>
->
->    \...
->
->    \<section\>
->
->       \<h1\>Title of my section\</h1\>
->
->       \...
->
->    \</section\>
->
-> \</body\>
+> <body>
+>     <h1>Title of my document</h1>
+>     ...
+> </body>
+> ... defines the header of a section *implicitly*, while:
+> <body>
+>    ...
+>    <section>
+>       <h1>Title of my section</h1>
+>       ...
+>    </section>
+> </body>
+```
 
 ###### \... defines the heading of *the explicit section* (its parent element \<section\>).
 
@@ -2347,45 +2232,31 @@ Here are some examples:
 
 **Good (heading in each explicit section):**
 
+```
 ####### \<section\>
-
 #######     \<h1\>Blog post of April 2020\</h1\>
-
 #######     \...
-
 ####### \</section\>
-
 **Good (heading  in a \<header\> does not change anything)**
-
 ####### \<section\>
-
 #######    **\<header\>**
-
 #######       **\<h1\>Blog post of April 2020\</h1\>**
-
 #######       **\<p\>Posted by Michel Buffa\...\</p\>**
-
 #######    **\</header\>**
-
 ####### \...
-
 ####### \</section\>
-
+```
 **Bad (there is no Hx after the \<section\> -\> no heading):**
 
-####### \<section\>
-
-#######    \<header\>
-
-#######       \<p class=\"article title\"\>Blog post of April 2020\</p\>
-
-#######       \<p\>Posted by Michel Buffa\...\</p\>
-
-#######    \</header\>
-
-#######    \...
-
-####### \</section\>
+```
+####### <section>
+#######    <header>
+#######       <p class="article title">Blog post of April 2020</p>
+#######       <p>Posted by Michel Buffa...</p>
+#######    </header>
+#######    ...
+####### </section>
+```
 
 The last example is bad for accessibility reasons. A screen reader that vocalizes the page will just say \"Entering section\", while in the previous two good examples it would say \"entering section with heading Blog Posts of April 2020\". You can also check if your headings and sectioning elements are ok by using a browser extension that displays the outline of the document (just search for \"html5 outliner\" in your browser\'s extension search engine).
 
@@ -2399,25 +2270,18 @@ Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning
 
 **Final good version:**
 
-> \<body\>
->
->     **\<h1\>Example Blog\</h1\>**
->
->     \<section\>
->
->        \<header\>
->
->           **\<h2\>Blog post of April 2020\</h2\>**
->
->           \<p\>Posted by Michel Buffa\...\</p\>
->
->        \</header\>
->
->       \<p\>Content of the blog post\...\</p\>
->
->    \</section\>
->
-> \</body\>
+```
+> <body>
+>     **<h1>Example Blog</h1>**
+>     <section>
+>        <header>
+>           **<h2>Blog post of April 2020</h2>**
+>           <p>Posted by Michel Buffa...</p>
+>        </header>
+>       <p>Content of the blog post...</p>
+>    </section>
+> </body>
+```
 
 In red, the sectioning root (\<body\>) and the sectioning elements (\<section\> here\...), each have a heading.
 
@@ -2435,17 +2299,14 @@ You can use heading elements \<h1\>\...\<h6\> in a \<header\> but be careful
 
 This example has two headings in the \<header\>:
 
-1.  \<section\>
-
-2.     \<header\>
-
-3.       \<h1\>Some text in a h1 in a header of a section\</h1\>
-
-4.       \<h2\>This a h2 in the header\...\</h2\>
-
-5.     \</header\>
-
-6.  \</section\>
+```
+1.  <section>
+2.     <header>
+3.       <h1>Some text in a h1 in a header of a section</h1>
+4.       <h2>This a h2 in the header...</h2>
+5.     </header>
+6.  </section>
+```
 
 Here is the resulting table of contents, notice the two subsections that appear, one for the H1, one for the H2:
 
@@ -2463,11 +2324,13 @@ Indeed, HTML does not have a dedicated mechanism for marking up subheadings, alt
 
 If you do not want the subtitles to be included in the table of contents, just use standard markup, for example \<p\> elements, as shown in the next example. Of course, CSS rules can be applied to change colors, sizes, etc.
 
-1.  \<header\>
-2.      \<h1\>HTML 5.1 Nightly\</h1\>
-3.      \<p\>A vocabulary and associated APIs for HTML and XHTML\</p\>
-4.      \<p\>Editor\'s Draft 9 May 2013\</p\>
-5.  \</header\>
+```
+1.  <header>
+2.      <h1>HTML 5.1 Nightly</h1>
+3.      <p>A vocabulary and associated APIs for HTML and XHTML</p>
+4.      <p>Editor's Draft 9 May 2013</p>
+5.  </header>
+```
 
 ### **Best practice #2**: try not to rely on implicit sectioning, use \<section\>, \<article\>, etc. instead of just \<h1\>\...\<h6\>
 
@@ -2475,37 +2338,41 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 
 <b>Ok version (no explicit sections everywhere):</b>
 
-1.  \<body\>
-2.  **\<h4\>Apples\</h4\>**
-3.  \<p\>Apples are fruit.\</p\>
-4.  \<section\>
-5.       \<h2\>Taste\</h2\>
-6.       \<p\>They taste lovely.\</p\>
-7.       \<h6\>Sweet\</h6\>
-8.       \<p\>Red apples are sweeter than green ones.\</p\>
-9.       **\<h1\>Color\</h1\>**
-10.      \<p\>Apples come in various colors.\</p\>
-11. \</section\>
-12. \</body\>
+```
+1.  <body>
+2.  **<h4>Apples</h4>**
+3.  <p>Apples are fruit.</p>
+4.  <section>
+5.       <h2>Taste</h2>
+6.       <p>They taste lovely.</p>
+7.       <h6>Sweet<h6>
+8.       <p>Red apples are sweeter than green ones.</p\>
+9.       **<h1>Color</h1>**
+10.      <p>Apples come in various colors.</p>
+11. </section>
+12. </body>
+```
 
 <b>Better version (best practice):</b>
 
-1.  \<body\>
-2.  \<h1\>Apples\</h1\>
-3.  \<p\>Apples are fruit.\</p\>
-4.  **\<section\>**
-5.       **\<h2\>Taste\</h2\>**
-6.       \<p\>They taste lovely.\</p\>
-7.       **\<section\>**
-8.           **\<h3\>Sweet\</h3\>**
-9.           \<p\>Red apples are sweeter than green ones.\</p\>
-10.      \</section\>
-11. \</section\>
-12. **\<section\>**
-13.      **\<h2\>Color\</h2\>**
-14.      \<p\>Apples come in various colors.\</p\>
-15. \</section\>
-16. \</body\>
+```
+1.  <body>
+2.  <h1>Apples</h1>
+3.  <p>Apples are fruit.</p>
+4.  **<section>**
+5.       **<h2>Taste</h2>**
+6.       <p>They taste lovely.</p>
+7.       **<section>**
+8.           **<h3>Sweet</h3>**
+9.           <p>Red apples are sweeter than green ones.</p>
+10.      </section>
+11. </section>
+12. **<section>**
+13.      **<h2>Color</h2>**
+14.      <p>Apples come in various colors.</p>
+15. </section>
+16. </body>
+```
 
 Both of the examples above are semantically identical and produce the same outline:
 
@@ -2527,51 +2394,32 @@ This example is a simple document, with a hyperlink that, once clicked, displays
 
 [Online example at JsBin](https://jsbin.com/tolagec/1/edit?html,css,js,output).
 
-Extract of source code:
+<h4>Extract of source code:</h4>
 
-1.  \<body\>
-
-2.  \<h1\>This is an example of embedded table of content\</h1\>
-
-3.  \<section\>
-
-4.       \<header\>
-
-5.           \<h1\>First section of the document (this is a h1)\</h1\>
-
-6.           This is a subheading\...
-
-7.       \</header\>
-
-8.       \<h2\>First subsection of the first section (a h2)\</h2\>
-
-9.       \<p\>Blah Blah\...\</p\>
-
-10.  \</section\>
-
-11. \<section\>
-
-12.      \<h1\>Second section of the document (a h1)\</h1\>
-
-13.      \<h2\>First subsection (a h2)\</h2\>
-
-14. \</section\>
-
-15. \<aside\>
-
-16.      \<h3\>Table of contents\</h3\>
-
-17.      **\<a href=\"javascript:(function(){\...})();\"**
-
-18. **        title=\"TableDeMatiere\"\>**
-
+```
+1.  <body>
+2.  <h1>This is an example of embedded table of content</h1>
+3.  <section>
+4.       <header>
+5.           <h1>First section of the document (this is a h1)</h1>
+6.           This is a subheading...
+7.       </header>
+8.       <h2>First subsection of the first section (a h2)</h2>
+9.       <p>Blah Blah...</p>
+10.  </section>
+11. <section>
+12.      <h1>Second section of the document (a h1)</h1>
+13.      <h2>First subsection (a h2)</h2>
+14. </section>
+15. <aside>
+16.      <h3>Table of contents</h3>
+17.      **<a href="javascript:(function(){...})();"**
+18. **        title="TableDeMatiere">**
 19. **        Click here to display the table of contents!**
-
-20. **     \</a\>**
-
-21. \</aside\>
-
-22. \</body\>
+20. **     </a>**
+21. </aside>
+22. </body>
+```
 
 **Best practice**: visualizing the table of contents is useful for debugging the structure of your page, and checking the presence of headings after sectioning content.
 
@@ -20895,27 +20743,19 @@ Submit form
 
 **Extract from source code:**
 
-1.  \<form class=\"myForm\"\>
-
-2.    \<fieldset\>
-
-3.      \<legend\>Type invalid values and see the result\</legend\>
-
-4.      \<label for=\"myEmail\" class=\"formLabel\"\>E-mail:\</label\>
-
-5.      \<input type=\"email\" id=\"myEmail\"
-
-6.             **title=\"You don\'t know what an email address looks like, do you?\"**
-
-7.             required/\>\<br\>
-
-8.  \...
-
-9.      \<button\>Submit form\</button\>\<br /\>
-
-10.   \</fieldset\>
-
-11. \</form\>
+```
+1.  <form class="myForm">
+2.    <fieldset>
+3.      <legend\>Type invalid values and see the result</legend\>
+4.      <label for="myEmail" class="formLabel">E-mail:</label>
+5.      <input type="email" id="myEmail"
+6.             **title="You don't know what an email address looks like, do you?"**
+7.             required/><br>
+8.  ...
+9.      <button>Submit form</button><br />
+10.   </fieldset>
+11. </form>
+```
 
 *Beware* that browser implementations may differ. Chrome, Opera will display the title attribute value in error message bubbles when the form is submitted, while Safari and FireFox (desktop and mobile) will simply ignore it.
 
@@ -22551,7 +22391,7 @@ Try a variation of the above code in your browser, that displays the file conten
 
 Choose a text file:\
 \
-![](media/image313.png){width="4.0in" height="0.7021369203849519in"}
+![](.images/image313.png){width="4.0in" height="0.7021369203849519in"}
 
 In the following pages, we look at different examples that read file contents as text, dataURL and binary.
 
@@ -22569,71 +22409,41 @@ Let\'s start by reading a pure text file
 
 ##### Complete source code:
 
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.  \<head\>
-
 4.  \<meta charset=\"utf-8\"\>
-
 5.  \<title\>Example of use of FileReader with a text file\</title\>
-
 6.  \</head\>
-
 7.  \<body\>
-
 8.  \<label for=\"files\"\>Choose a text file:\</label\>\<input type=\"file\" id=\"file\"
-
 9.                             **onchange=\"readFileContent(this.files)\"**/\>\<br/\>
-
 10. \<p\>
-
 11. \<textarea rows=15 cols=50 id=\"fileContent\"\>\</textarea\>
-
 12. 
-
 13. \<script\>
-
 14. function readFileContent(files) {
-
 15.      console.log(\"In readFileContent\");
-
 16.      var reader = new FileReader();
-
 17. 
-
 18.     // **Executed last**: called when the file content is loaded, **e.target.result** is
-
 19.     // The content
-
 20.     reader.onload = function(e) {
-
 21.         // display content in the textarea with id=\"fileContent\"
-
 22.         document.getElementById(\"fileContent\").value=** e.target.result;**
-
 23.     };
-
 24. 
-
 25.     console.log(\"Reading file:\" + files\[0\].name);
-
 26. 
-
 27.     // **Executed first:** start reading the file asynchronously , will call the onload
-
 28.     // callback when the file is read
-
 29.     **reader.readAsText(files\[0\]);**
-
 30. }
-
 31. \</script\>
-
 32. \</body\>
-
 33. \</html\>
+```
 
 This example is the one at the end of the previous page. This time, we show the complete source code above. Remember that the instruction at *line 29* is executed first, then when the file is read, the browser will call asynchronously the onload callback at *line 20*.
 
@@ -22642,93 +22452,54 @@ This example is the one at the end of the previous page. This time, we show the 
 [Example on JSBin](https://jsbin.com/zaheyu/edit?html,output), or try it below in your browser.\
 This time, please select multiple text files (using shift for multiple selection):
 
-![](media/image315.png){width="4.0in" height="0.7899464129483814in"}
+![](images/image315.png){width="4.0in" height="0.7899464129483814in"}
 
-##### Source code:
+<h4>Source code:</h4>
 
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.  \<head\>
-
 4.  \<meta charset=\"utf-8\"\>
-
 5.  \<title\>Example of use of FileReader with a text file\</title\>
-
 6.  \</head\>
-
 7.  \<body\>
-
 8.  \<label for=\"files\"\>Choose multiple text files:\</label\>
-
 9.  \<input type=\"file\" id=\"files\"
-
 10.        multiple onchange=\"readFilesAndDisplayAsText(this.files);\"/\>\<br/\>
-
 11. \<p\>
-
 12. \<textarea rows=30 cols=50 id=\"filesContent\"\>\</textarea\>
-
 13. 
-
 14. \<script\>
-
 15. var filesContent = document.getElementById(\"filesContent\");
-
 16. 
-
 17. function readFilesAndDisplayAsText(files) {
-
 18.      console.log(\"dans read files\");
-
 19.      // Loop through the FileList
-
 20.      for (var i = 0, f; f = files\[i\]; i++) {
-
 21. 
-
 22.          var reader = new FileReader();
-
 23. 
-
 24.          // Add an onload listener to the reader
-
 25.          addOnLoadListener(reader, f.name);
-
 26.          // start reading, will call the listener later, when the file f is read
-
 27.          reader.readAsText(f);
-
 28. 
-
 29.      }
-
 30. }
-
 31. 
-
 32. function addOnLoadListener(reader, name) {
-
 33.      // Add an onload listener that will be able to print the name of the
-
 34.      // file\...
-
 35.      reader.onload = function(e) {
-
 36.          filesContent.value += \"###### READING FILE \" + name + \" ######\";
-
 37.          filesContent.value += e.target.result;
-
 38.      };
-
 39. }
-
 40. \</script\>
-
 41. \</body\>
-
 42. \</html\>
+```
 
 ##### **Explanations**:
 
@@ -22760,29 +22531,22 @@ The WebAudio API is useful for reading audio sound samples from memory (no strea
 
 [Example on JSBin](https://jsbin.com/xepexuy/1/edit?html,output) (does not work on IE, as it does not support the WebAudio API). We could not embed it here on the edX platform as it prevents code that uses Ajax to run in its pages.
 
-![local audio player](media/image316.jpeg){width="5.0in" height="3.591346237970254in"}
+![local audio player](./images/image316.jpeg){width="5.0in" height="3.591346237970254in"}
 
 Source code extract:
 
+```
 > // User selects file. Read it as an ArrayBuffer and pass to the API.
->
 > var fileInput = document.querySelector(\'input\[type=\"file\"\]\');
->
 > fileInput.addEventListener(\'change\', function(e) {
->
 >    var reader = new FileReader();
->
 >    reader.onload = function(e) {
->
 >       initSound(e.target.result);
->
 >    };
->
 >    // THIS IS THE INTERESTING PART!
->
 >    reader.readAsArrayBuffer(this.files\[0\]);
->
 > }, false);
+```
 
 **Explanations:**
 
@@ -22812,15 +22576,17 @@ If we set the src attribute of an image element \<img src=\"data:image/png\...
 
 In your browser, you will see a small red circle rendered by this source code:
 
-> \<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
+```
+> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
 >
 > AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 >
-> 9TXL0Y4OHwAAAABJRU5ErkJggg==\" alt=\"Red square\" width=50 height=50/\>
+> 9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red square" width=50 height=50/>
+```
 
 And here is the result:
 
-![](media/image318.png){width="0.5208333333333334in" height="0.5208333333333334in"}
+![](./images/image318.png){width="0.5208333333333334in" height="0.5208333333333334in"}
 
 This dataURL format enables file content to be stored in a base64 format (as a string), and adds the MIME type specification of the content. The dataURL can therefore store a file as a URL readable with modern browsers. It is becoming more commonly used on the Web, especially for mobile applications, as inlining images reduces the number of HTTP requests and makes the Web page load faster.
 
@@ -22858,75 +22624,40 @@ This first example is useful for forms that allow the user to select one or more
 
 <h4>Source code extract:</h4>
 
-> \<label for=\"files\"\>Choose multiple files:\</label\>
->
-> \<input type=\"file\" id=\"files\" multiple
->
->         onchange=\"readFilesAndDisplayPreview(this.files);\"/\>\<br/\>
->
-> \<p\>Preview of selected images:\</p\>
->
-> \<output id=\"list\"\>\</output\>
->
->  
->
-> \<script\>
->
+```
+> <label for="files">Choose multiple files:</label>
+> <input type="file" id="files" multiple
+>         onchange="readFilesAndDisplayPreview(this.files);"/><br/>
+> <p>Preview of selected images:</p>
+> <output id="list"></output>
+> <script>
 >   function readFilesAndDisplayPreview(files) {
->
 >     // Loop through the FileList and render image files as thumbnails.
->
->     for (var i = 0, f; f = files\[i\]; i++) {
->
->  
->
+>     for (var i = 0, f; f = files[i]; i++) {
 >     // Only process image files.
->
->     if (!f.type.match(\'image.\*\')) {
->
->         continue;
->
+>     if (!f.type.match('image.*')) {
+>          continue;
 >     }
->
->  
->
 >     var reader = new FileReader();
->
 >  
->
 >     //capture the file information.
->
 >     reader.onload = function(e) {
->
 >         // Render thumbnail. e.target.result = the image content
->
 >         // as a data URL
->
->        // create a span with CSS class=\"thumb\", for nicer layout
->
->        var span = document.createElement(\'span\');
->
->        // Add an img src=\... in the span, with src= the dataURL of
->
+>        // create a span with CSS class="thumb", for nicer layout
+>        var span = document.createElement('span');
+>        // Add an img src=... in the span, with src= the dataURL of
 >        // the image
->
->        span.innerHTML = \"\<img class=\'thumb\' src=\'\" +
->
->                          e.target.result + \"\' alt=\'a picture\'/\>\";
->
+>        span.innerHTML = "<img class='thumb' src='" +
+>                          e.target.result + "' alt='a picture'/>";
 >        // Insert the span in the output id=list
->
->        document.getElementById(\'list\').insertBefore(span, null);
->
+>        document.getElementById('list').insertBefore(span, null);
 >    };
->
 >   // Read in the image file as a data URL.
->
 >   reader.readAsDataURL(f);
->
 >  }
->
 > }
+```
 
 <h4>Explanations:</h4>
 
@@ -22944,61 +22675,36 @@ This first example is useful for forms that allow the user to select one or more
 
 <h4>Source code extract:</h4>
 
+```
 > function drawImage(imageFile) {
->
 >    var reader = new FileReader();
->
 >  
->
 >    //capture the file information.
->
 >    reader.onload = function(e) {
->
 >       // For drawing an image on a canvas we
->
 >       // need an image object
->
 >       var img = new Image();
->
 >       // Even if the file has been read, decoding
->
 >       // the dataURL format may take some time
->
 >       // so we need to use the regular way of
->
 >       // working with images: onload callback    
->
 >       // that will be called after setting the src attribute
->
 >       img.onload = function(e) {
->
 >          // draw the image!
->
 >          ctx.drawImage(img, 0, 0, 400, 400);
->
 >       }
->
 >       // e.target.result is the dataURL, so we set the
->
 >       // src if the image with it. This will call
->
 >       // asynchonously the onload callback
->
 >       img.src= e.target.result;
->
 >   };
->
 >   // Read in the image file as a data URL.
->
 >   reader.readAsDataURL(imageFile);
->
 > }
->
 > function readFileAndDraw(files) {
->
->     drawImage(files\[0\]);
->
+>     drawImage(files[0]);
 > }
+```
 
 <h4>Explanations:</h4>
 
@@ -23024,25 +22730,18 @@ It is possible to prompt the user to activate the GPS (this is what most GPS nav
 
 <h4>Typical use</h4>
 
+```
 > navigator.geolocation.getCurrentPosition(showPosition, onError);
->
 >  
->
 > function showPosition(position) {
->
->     console.log(\"latitude is: \" + position.coords.latitude);
->
->     console.log(\"longitude is: \" + position.coords.longitude);
->
+>     console.log("latitude is: " + position.coords.latitude);
+>     console.log("longitude is: " + position.coords.longitude);
 > }
->
 >  
->
 > function onError(err) {
->
->     console.log(\"Could not get the position\");
->
+>     console.log("Could not get the position");
 > }
+```
 
 [This online example at JSBin](https://jsbin.com/toyeley/1/edit?html,output) shows how to get the current longitude and latitude and display them in an HTML page. Try it below in your browser:
 
@@ -23054,57 +22753,35 @@ Note that the first time you execute this example, for privacy reasons, the brow
 
 Source code of this typical example:
 
+```
 > \<!DOCTYPE html\>
->
 > \<html lang=\"en\"\>
->
 > \<head\>
->
 > \<meta charset=\"utf-8\"\>
->
 > \<title\>Basic example of use of the geolocation API\</title\>
->
 > \</head\>
->
 > \<body\>
->
 > \<p id=\"msg\"\>Click the button to get your coordinates:\</p\>
->
 > \<button onclick=\"getLocation()\"\>Where am I ?\</button\>
->
 > \<script\>
->
 > var displayCoords=document.getElementById(\"msg\");
->
 > function getLocation() {
->
 > if (navigator.geolocation) {
->
 > navigator.geolocation.getCurrentPosition(showPosition);
->
 > } else {
->
 > displayCoords.innerHTML=\"Geolocation API not supported by your browser.\";
->
 > }
->
 > }
->
 > function showPosition(position) {
->
 > displayCoords.innerHTML=\"Latitude: \" + position.coords.latitude +
->
 > \"\<br /\>Longitude: \" + position.coords.longitude;
->
 > }
->
 > \</script\>
->
 > \</body\>
->
 > \</html\>
+```
 
-![geolocation callback illustration](media/image324.jpeg){width="5.0in" height="1.4939555993000875in"}
+![geolocation callback illustration](./images/image324.jpeg){width="5.0in" height="1.4939555993000875in"}
 
 <b>Explanations:</b>
 
@@ -23140,95 +22817,55 @@ In the last example, we used the navigator.geolocation. getCurrentPosition(show
 
 A slightly different version of the previous example [shows how to properly check against the different possible errors](https://jsbin.com/bafusik/edit?html,output). Try it, then turn your WiFi off or unplug your Ethernet cable (or turn off GPS and 3G/4G on a mobile phone). You should see an error message \"*Error during geolocation: Location could not be obtained though the available means*\":
 
-![geolocation error](media/image326.jpeg){width="6.5in" height="3.16875in"}
+![geolocation error](./images/image326.jpeg){width="6.5in" height="3.16875in"}
 
 <h3>Source code of the example:</h3>
 
-> \<!DOCTYPE html\>
->
-> \<html lang=\"en\"\>
->
-> \<head\>
->
-> \<meta charset=\"utf-8\"\>
->
-> \<title\>Basic example of use of the geolocation API\</title\>
->
-> \</head\>
->
-> \<body\>
->
-> \<p id=\"msg\"\>Click the button to get your coordinates:\</p\>
->
-> \<button onclick=\"getLocation()\"\>Where am I ?\</button\>
->
-> \<script\>
->
->    var displayCoords=document.getElementById(\"msg\");
->
+```
+> <!DOCTYPE html>
+> <html lang="en">
+> <head>
+> <meta charset="utf-8">
+> <title>Basic example of use of the geolocation API</title>
+> </head>
+> <body>
+> <p id="msg">Click the button to get your coordinates:</p>
+> <button onclick="getLocation()">Where am I ?</button>
+> <script>
+>    var displayCoords=document.getElementById("msg");
 >    function getLocation() {
->
 >       if (navigator.geolocation) {
->
 >          navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
->
 >       } else {
->
->         displayCoords.innerHTML=\"Geolocation API not supported by your browser.\";
->
+>         displayCoords.innerHTML="Geolocation API not supported by your browser.";
 >       }
->
 >    }
->
 >    function showPosition(position) {
->
->       displayCoords.innerHTML=\"Latitude: \" + position.coords.latitude +
->
->                                \"\<br /\>Longitude: \" + position.coords.longitude;
->
+>       displayCoords.innerHTML="Latitude: " + position.coords.latitude +
+>                                "\<br /\>Longitude: \" + position.coords.longitude;
 >    }
->
 >    function errorPosition(error) {
->
->       var info = \"Error during geolocation: \";
->
+>       var info = "Error during geolocation: ";
 >       switch(error.code) {
->
 >          case error.TIMEOUT:
->
->             info += \"Timeout !\";
->
+>             info += "Timeout !";
 >             break;
->
 >          case error.PERMISSION_DENIED:
->
->             info += \"Permission denied, geolocation could not be obtained\...\";
->
+>             info += "Permission denied, geolocation could not be obtained...";
 >             break;
->
 >          case error.POSITION_UNAVAILABLE:
->
->             info += \"Location could not be obtained though the available means\...\";
->
+>             info += "Location could not be obtained though the available means...";
 >             break;
->
 >          case error.UNKNOWN_ERROR:
->
->             info += \"Unknown error\";
->
+>             info += "Unknown error";
 >             break;
->
 >       }
->
 >       displayCoords.innerHTML = info;
->
 >     }
->
-> \</script\>
->
-> \</body\>
->
-> \</html\>
+> </script>
+> </body>
+> </html>
+```
 
 <h3>6.4.4 Tracking a position</h3>
 
@@ -23328,102 +22965,63 @@ This example is just given \"as is\", as there are so many possibilities for r
 
 <h4>JS</h4>
 
+```
 > function getLocation(e) {
->
 > e.preventDefault();
->
 > if (!navigator.geolocation) {
->
 > alert(\"Browser doesn\'t support geolocation\");
->
 > } else {
->
 > navigator.geolocation.getCurrentPosition(success, error);
->
 > }
->
 > }
->
 > // Get current position successfully
->
 > function success(position) {
->
 > var map, marker,
->
 > latitude = position.coords.latitude,
->
 > longitude = position.coords.longitude;
->
 > // Instance map using leaflet
->
 > map = L.map(\'map\').setView(\[latitude, longitude\], 13);
->
 > // Tile layer using key api at cloudmade.com
->
 > L.tileLayer(\'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\', {
->
 > key: \'760506895e284217a7442ce2efe97797\',
->
 > styleId: 103288,
->
 > maxZoom: 16
->
 > }).addTo(map);
->
 > // Marker using leaflet
->
 > marker = L.marker(\[latitude, longitude\]).addTo(map);
->
 > // Popup in leaflet
->
 > marker.bindPopup(\'\<p\>Your location\</p\>\').openPopup();
->
 > }
->
 > // Get current position fail
->
 > function error() {
->
 > alert(\'Get current position fail. Please access codepen to get geolocation.\');
->
 > }
+```
 
 <h4>CSS</h4>
 
+```
 > html, body {
->
 > height: 100%
->
 > }
->
 > .map {
->
 > height: 300px;
->
 > }
->
 > .btn {
->
 > background-color: rgba(10, 10, 230, .5);
->
 > border: 0;
->
 > color: #fff;
->
 > padding: 10px;
->
 > text-shadow: 0 0 1px rgba(0, 0, 0, .3);
->
 > text-decoration: none;
->
 > margin: 0.5rem 0 1rem;
->
 > display: inline-block;
->
 > }
+```
 
 <h4>HTML</h4>
 
+```
 > \<html\>
 >
 > \<head\>
@@ -23447,34 +23045,26 @@ This example is just given \"as is\", as there are so many possibilities for r
 > \</body\>
 >
 > \</html\>
+```
 
 ##### Source code extract:
 
 ##### HTML part:
 
+```
 > \<html\>
->
 > \<head\>
->
 >   \<meta charset=\"utf-8\"\>
->
 >   \<title\>OpenStreetMap Example\</title\>
->
 >   \<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.0.3/dist/leaflet.css\"\>
->
 >   \<script src=\"https://unpkg.com/leaflet@1.0.3/dist/leaflet.js\"\>\</script\>
->
 > \</head\>
->
 > \<body\>
->
 >   \<button class=\"btn\" onclick=\"getLocation(event)\"\>Click to show your location with OpenStreetMap\</button\>
->
 >   \<div id=\"map\" class=\"map\"\>\</div\>
->
 > \</body\>
->
 > \</html\>
+```
 
 -   *Lines 5 and 6* are the required files to use the Leaflet API (this is the official name of the OpenStreetMaps API),
 
@@ -23482,73 +23072,38 @@ This example is just given \"as is\", as there are so many possibilities for r
 
 ##### JavaScript part:
 
+```css
 function getLocation(e) {
-
   e.preventDefault();
-
   if (!navigator.geolocation) {
-
-    alert(\"Browser doesn\'t support geolocation\");
-
+    alert("Browser doesn't support geolocation");
   } else {
-
     navigator.geolocation.getCurrentPosition(success, error);
-
   }
-
 }
-
- 
-
 // Get current position successfully
-
 function success(position) {
-
   var map, marker,
-
   latitude = position.coords.latitude,
-
   longitude = position.coords.longitude;
-
   // Instance map using leaflet
-
-  map = L.map(\'map\').setView(\[latitude, longitude\], 13);
-
+  map = L.map('map').setView([latitude, longitude], 13);
   // Tile layer using key api at cloudmade.com
-
-  L.tileLayer(\'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\', {
-
-    key: \'760506895e284217a7442ce2efe97797\',
-
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    key: '760506895e284217a7442ce2efe97797',
     styleId: 103288,
-
     maxZoom: 16
-
   }).addTo(map);
-
- 
-
   // Marker using leaflet
-
-  marker = L.marker(\[latitude, longitude\]).addTo(map);
-
- 
-
+  marker = L.marker([latitude, longitude]).addTo(map);
   // Popup in leaflet
-
-  marker.bindPopup(\'\<p\>Your location\</p\>\').openPopup();
-
+  marker.bindPopup('<p>Your location</p>').openPopup();
 }
-
- 
-
 // Get current position fail
-
 function error() {
-
-  alert(\'Get current position fail. Please access codepen to get geolocation.\');
-
+  alert('Get current position fail. Please access codepen to get geolocation.');
 }
+```
 
 -   *Line 6* uses the [Geolocation API](https://www.w3.org/TR/geolocation-API/) to get the current position, in case of success it calls the success function, passing the location as parameter,
 
@@ -23580,168 +23135,90 @@ Google reverse geocoding example (screenshot only) :
 Source code of this example (in order to run it, you need a Google API key, used at *line 6*).
 
 ```
-<!DOCTYPE html>
-
+> <!DOCTYPE html>
 > <html lang="en">
->
 > <head>
->
 > <meta charset="utf-8">
->
 > <title>Js bin </title>
->
 >     <script src="https://maps.googleapis.com/maps/api/js?key=PUT_HERE_YOUR_API_KEY&v=3.exp&sensor=false"></script>
->
 > <script>
->
 > // p elements for displaying lat / long and address
->
 > var displayCoords, myAddress;
->
 > // used with the google apis
->
 > var geocoder;
->
 > var map;
->
 > var infowindow = new google.maps.InfoWindow();
->
 > var marker;
->
 > // Called when the page is loaded
->
 > function init() {
->
 >     displayCoords=document.getElementById("msg");
->
 >     myAddress = document.getElementById("address");
->
 >     geocoder = new google.maps.Geocoder();
->
 >     // In order to show something even before a user clicks on the button
->
 >     var latlng = new google.maps.LatLng(34.0144, -6.83);
->
 >     var mapOptions = {
->
 >        zoom: 8,
->
 >        center: latlng,
->
 >        mapTypeId: 'roadmap'
->
 >     }
->
 >     map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
->
 > } // end of init()
 >
 > // Called when the button is clicked
->
 > function getLocation() {
->
 >     if (navigator.geolocation) {
->
 >        navigator.geolocation.getCurrentPosition(showPosition);
->
 >     } else {
->
 >        displayCoords.innerHTML="Geolocation API not supported by your browser.";
->
 >     }
->
 > }
->
 > // Called when a position is available
->
 > function showPosition(position) {
->
 >     displayCoords.innerHTML="Latitude: " + position.coords.latitude +
->
 >                             "<br />Longitude: " + position.coords.longitude;
->
 >     // Display the map
->
 >     showOnGoogleMap(new google.maps.LatLng(position.coords.latitude,       
->
 >                                            position.coords.longitude));
->
 >  }
->
 >  function showOnGoogleMap(latlng) {
->
 >    // Ask google geocoder for an address once we get a longitude and
->
 >    // a latitude. In fact, the reverse geocoder sends back an array of "guesses"
->
 >    // i.e. not just one address object, but several. Each entry in this array
->
 >    // has several properties such as street, city, etc. We use the "formatted_address"
->
 >    // one here, but it might be interesting to get the detailed properties in other
->
 >    // applications like a form with street, city, zip code etc.
->
 >    geocoder.geocode({'latLng': latlng},reverseGeocoderSuccess);
->
 >    function reverseGeocoderSuccess(results, status) {
->
 >      if (status == google.maps.GeocoderStatus.OK) {
->
 >         if (results[1]) {
->
 >            map.setZoom(11);
->
 >            marker = new google.maps.Marker({
->
 >                                 position: latlng,
->
 >                                 map: map
->
 >                         });
->
 >            infowindow.setContent(results[1].formatted_address);
->
 >            infowindow.open(map, marker);
->
 >            // Display address as text in the page
 >
 >            myAddress.innerHTML="Adress: " + results[0].formatted_address; 
 >
 >         } else {
->
 >            alert('No surface address found');
->
 >         }
->
 >       } else {
->
 >          alert('Geocoder failed due to: ' + status);
->
 >       }
->
 >     } // end of reverseGeocoderSuccess
->
 > } // end of showOnGoogleMap
->
 > </script>
->
 > </head>
->
 > <body onload="init()">
->
 > <title>HTML5 + Geolocalisation + Google Maps API Reverse Geocoding</title>
->
 > <p id="msg">Click the button to get your coordinates:</p>
->
 > <p id="address"></p>
->
 > <button onclick="getLocation()">Where am I ?</button>
->
 > <div id="map_canvas" style="width: 500px; height: 300px"></div>
->
 > </body>
->
 > </html>
 ```
 
@@ -23846,12 +23323,13 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
     });
     </script>
     </body>
-
  </html>
 ```
+
 <h4>Example #3: shows the address on the map, from your current longitude and latitude</h4>
 
 <h4>HTML</h4>
+
 ```
    <!DOCTYPE html>
     <html>
