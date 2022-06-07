@@ -211,7 +211,7 @@ We are then providing references to the browser support of HTML5 features presen
 
 [Can I Use](https://caniuse.com/) provides up-to-date tables for support of front-end Web technologies on desktop and mobile Web browsers. Below is a snapshot of what information is given by CanIUse when searching for "CSS3 colors".
 
-[Example of a CanIUse browser support table (using CSS3 colors)](media/image4.png)
+[Example of a CanIUse browser support table (using CSS3 colors)](./images/image004.png)
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 04. caniuse example (05) ------------------------------------>
@@ -738,7 +738,7 @@ And here is the CSS we used in this example for the \<nav\> element:
 
 Now, we have one big \<section\> element that contains a set of \<article\> elements...
 
-![image of sections that contain articles](media/image016.jpeg){width="5.0in" height="2.185184820647419in"}
+![image of sections that contain articles](./images/image016.jpeg){width="5.0in" height="2.185184820647419in"}
 
 <h4>HTML code:</h4>
 
@@ -793,7 +793,7 @@ Note that the H2, article, article header, etc. will be styled using these rules
 &nbsp;
 <br/>
 
-![image of the header at the top of each article](media/image17.jpeg){width="5.0in" height="1.3553116797900262in"}
+![image of the header at the top of each article](./images/image917.jpeg){width="5.0in" height="1.3553116797900262in"}
 
 Next, in each article in the section we have a header (to display the article title), paragraphs (article content), and so on.
 
@@ -928,7 +928,7 @@ We used a float:right CSS rule to put the tag cloud on the right\... In the fo
 
 #### Add a \<footer\> at the end of the blog
 
-![image of the blog footer](media/image21.jpeg){width="2.1875in" height="0.7916666666666666in"}
+![image of the blog footer](./images/image021.jpeg){width="2.1875in" height="0.7916666666666666in"}
 
 Finally, we added a \<footer\> element (*lines 12-14* below) after the tag cloud definition, to display a page footer:
 
@@ -1095,7 +1095,7 @@ Since the very beginning, HTML has had heading elements: \<h1\>\...\<h6\>. Thes
 
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 
-![outliner in action from the previous example](media/image25.png){width="6.0in" height="3.239747375328084in"}
+![outliner in action from the previous example](./images/image025.png){width="6.0in" height="3.239747375328084in"}
 
 In the above outline, note that we have only used H1\... H6 elements, without any new HTML5 structural elements such as \<section\> or \<article\>.
 
@@ -1531,7 +1531,7 @@ If you look at the \"minimal document\" example, or at other examples in this co
 
 ### New structural elements
 
-![Some of the new structural elements introduced by HTML5: section, article, etc.](media/image13.jpeg){width="6.5in" height="4.875in"}
+![Some of the new structural elements introduced by HTML5: section, article, etc.](./images/image013.jpeg){width="6.5in" height="4.875in"}
 
 #### History
 
@@ -1603,207 +1603,135 @@ Let\'s study [an example we put on JsBin](https://jsbin.com/bucokav/edit?html,o
 
 #### Use a \<header\> at the top of the blog
 
-![image of the header element at the top of the blog](media/image14.jpeg){width="3.0104166666666665in" height="0.5in"}
+![image of the header element at the top of the blog](./images/image014.jpeg){width="3.0104166666666665in" height="0.5in"}
 
 This is an example of one way to organize a blog. Here, we have designed the HTML page using a \<header\> element that contains the \"Simple HTML5 blog\" text that appears on top of the page.
 
-> HTML code:
->
+<h4>HTML code:</h4>
+
+```
 > \<!DOCTYPE html\>
->
 >    \<html lang=\"en\"\>
->
 >       \<head\>
->
 >          \<meta charset=\"utf-8\"/\>
->
 >          \<title\>Simple HTML5 blog\</title\>
->
 >       \</head\>
->
 >       \<body\>
->
 >          \<header\>
->
 >             \<h1\>Simple \<span\>HTML5\</span\> blog\</h1\>
->
 >          \</header\>
->
 > \...
 
 **The CSS rules we used:**
 
 > header {
->
 >     color: #007e99;
->
 >     font-size: 2.5em;
->
 >     padding: 20px 50px
->
 > }
->
 > header span {
->
 >     color: #722
->
 > }
+```
 
 #### Use a \<nav\> for the navigation menu just below the header
 
-![image of the navigation menu](media/image15.jpeg){width="3.2708333333333335in" height="0.5416666666666666in"}
+![image of the navigation menu](./images/image015.jpeg){width="3.2708333333333335in" height="0.5416666666666666in"}
 
 The navigation menu just below the header is a \<nav\> element. For the purpose of this example we haven\'t provided any value for the hyperlinks\...
 
 ##### **HTML code:**
 
-> \<!DOCTYPE html\>
->
-> \<html lang=\"en\"\>
->
-> \<head\>
->
->    \<meta charset=\"utf-8\"/\>
->
->    \<title\>Simple HTML5 blog\</title\>
->
-> \</head\>
->
-> \<body\>
->
-> \<header\>
->
->    \<h1\>Simple \<span\>HTML5\</span\> blog\</h1\>
->
-> \</header\>
->
-> **\<nav\>**
->
->     \<ul\>
->
->        \<li\>\<span\>Blog\</span\>\</li\>
->
->        \<li\>\<a href=\"\"\>About\</a\>\</li\>
->
->        \<li\>\<a href=\"\"\>Contact\</a\>\</li\>
->
->     \</ul\>
->
-> **\</nav\>**
+> <!DOCTYPE html>
+> <html lang="en">
+> <head>
+>    <meta charset="utf-8"/>
+>    <title>Simple HTML5 blog</title>
+> </head>
+> <body>
+> <header>
+>    <h1>Simple <span>HTML5</span> blog</h1>
+> </header>
+> **<nav>**
+>     <ul>
+>        <li><span>Blog</span></li>
+>        <li><a href="">About</a></li>
+>        <li><a href="">Contact</a></li>
+>     </ul>
+> **</nav>**
+```
 
 **And here is the CSS we used in this example for the \<nav\> element:**
 
+```
 > nav {
->
 >     font-size: 1.5em;
->
 >     margin: 5px 0;
->
 >     padding: 20px 50px
->
 > }
->
 > nav li {
->
 >     display: inline;
->
 >     margin: 0 15px
->
 > }
->
 > nav li:first-child {
->
 >     margin-left: 0
->
 > }
->
-> \* html nav ul {
->
+> * html nav ul {
 >     margin-left: -15px
->
 > }
->
 > nav span, nav a {
->
 >     padding: 3px 15px 4px
->
 > }
->
 > nav span {
->
 >     background: #722;
->
 >     color: #fff
->
 > }
+```
 
 #### A \<section\> for each month and an \<article\> for each post in the blog
 
 Now, we have one big \<section\> element that contains a set of \<article\> elements\...
 
-![image of sections that contain articles](media/image16.jpeg){width="5.0in" height="2.185184820647419in"}
+![image of sections that contain articles](./images/image016.jpeg){width="5.0in" height="2.185184820647419in"}
 
 **HTML code:**
 
-> \<section\>
->
->    \<article\>
->
->     \...
->
->    \</article\>
->
->    \<article\>
->
->     \...
->
->    \</article\>
->
->    \<article\>
->
->     \...
->
->    \</article\>
->
-> \</section\>
+```
+> <section>
+>    <article>
+>     ...
+>    </article>
+>    <article>
+>     ...
+>    </article>
+>    <article>
+>     ...
+>    </article>
+> </section>
+```
 
 **And here is the CSS:**
 
+```
 > section {
->
 >    float: left;
->
 >    padding: 35px 0;
->
 >    position: relative;
->
 >    width: 70%
->
 > }
->
 > section article {
->
 >    margin: 0 50px 40px;
->
 >    padding: 25px 0 0;
->
 >    position: relative
->
 > }
->
 > section header {
->
 >    font-size: 1em;
->
 >    padding: 0;
->
 > }
->
 > section h2 {
->
 >    font-size: 2.3em;
->
 > }
+```
 
 Note that the H2, article, article header, etc. will be styled using these rules.
 
@@ -1815,56 +1743,32 @@ Next, in each article in the section we have a header (to display the article ti
 
 Example for the first blog article:
 
+```
 > \<section\>
->
 >    \<article\>
->
 >      \<header\>
->
 >          \<h2\>\<a href=\"\"\>Information about this example\</a\>\</h2\>
->
 >      \</header\>
->
 >      \<p\>Try to move the mouse on different elements. The structure will be
->
 >      highlighted and you will be able
->
 >      to see the different inclusions of elements one in each other. If you
->
 >      move the cursor to this sentence, it will be highlighted in dark grey,
->
 >      showing the presence of an &lt;article&gt; element, surrounded by a
->
 >      &lt;section&gt; element (light grey), etc. So we have some articles in
->
 >      a single section element. The page title at the top is a &lt;header&gt;
->
 >      element, while the tag cloud on the right is a &lt;aside&gt; element. The
->
 >      main menu on top (with Blog, About, Contact) is a &lt;nav&gt; element.\</p\>
->
 >      \<figure\>
->
 >          \<img src=\"HTML5-tags.png\"
->
 >              alt=\"Example of HTML5 structural tags\" /\>
->
 >          \<figcaption\>
->
 >              Fig. 1 : an example of how new structural elements could
->
 >              be used. This page put a &lt;nav&gt; on top, and does not have
->
 >              headers and footer for each article, like in this figure,
->
 >              but it could\... By the way this is a
->
 >              &lt;figcaption&gt; inside a &lt;figure&gt; element\...
->
 >          \</figcaption\>
->
 >     \</figure\>
->
 >    \</article\>
 >
 >    \...
@@ -1879,163 +1783,117 @@ Also note the way we included a figure using the new \"HTML5\" method, using a 
 
 Here is the CSS for the \<figcaption\> element we have used in the example (we did not apply any style to the \<figure\> element):
 
-> HTML code:
->
-> \<figure\>
->
->     \<img src=\"HTML5-tags.png\"
->
->          alt=\"Example of HTML5 structural tags\" /\>
->
->     \<figcaption\>
->
->         Fig. 1 : an example of how \.....
->
->     \</figcaption\>
->
-> \</figure\>
->
-> CSS code:
->
+<h4>HTML code:</h4>
+
+```
+> <figure>
+>     <img src="HTML5-tags.png"
+>          alt="Example of HTML5 structural tags" />
+>     <figcaption>
+>         Fig. 1 : an example of how .....
+>     </figcaption>
+> </figure>
+```
+
+<h4>CSS code:</h4>
+
+```
 > figcaption {
->
 >     font-style:italic;
->
 >     font-size: 0.8em;
->
 >     width: 100%
->
 > }
+```
 
 #### Use an \<aside\> element to display a tag cloud on the\... side of the main content
 
 After the long \<section\> element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, \"aside\"! This is done using - you already guessed it - an \<aside\> element:
 
-![image of the tag cloud defined as an aside element](media/image19.jpeg){width="2.3958333333333335in" height="2.6770833333333335in"}
+![image of the tag cloud defined as an aside element](./images/image019.jpeg){width="2.3958333333333335in" height="2.6770833333333335in"}
 
-> \<section\>
->
-> \.... all \<article\>\... \</article\> here\....
->
-> \</section\>
->
-> **\<aside\>**
->
->    \<h2\>Tag cloud\</h2\>
->
->    \<ul class=\"tag-cloud\"\>
->
->        \<li\>\<a href=\"\" rel=\"tag\" class=\"w2\"\>ajax\</a\>\</li\>
->
->        \<li\>\<a href=\"\" rel=\"tag\" class=\"w8\"\>apple\</a\>\</li\>
->
->        \<li\>\<a href=\"\" rel=\"tag\" class=\"w3\"\>css\</a\>\</li\>
->
->        \...
->
->    \</ul\>
->
-> **\</aside\>**
->
-> \...
+```
+> <section>
+> .... all <article>... </article> here....
+> </section>
+> **<aside>**
+>    <h2>Tag cloud</h2>
+>    <ul class="tag-cloud">
+>        <li><a href="" rel="tag" class="w2">ajax</a></li>
+>        <li><a href="" rel="tag" class="w8">apple</a></li>
+>        <li><a href="" rel="tag" class="w3">css</a></li>
+>        ...
+>    </ul>
+> **</aside>**
+> ...
+```
 
 We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at [the code of the online example](https://jsbin.com/bucokav/edit?html,output).
 
 **Here is the CSS for the \<aside\> element:**
 
+```
 > aside {
->
 >     float: right;
->
 >     padding: 70px 0 30px;
->
 >     position: relative;
->
 >     width: 25%
->
 > }
->
 > aside h2 {
->
 >     color: #888;
->
 >     font-size: 1.8em
->
 > }
->
 > aside .tag-cloud {
->
 >     padding: 15px 35px 10px 0;
->
 >     text-align: center
->
 > }
->
-> \...
+> ...
+```
 
 We used a float:right CSS rule to put the tag cloud on the right\... In a following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
 
 ###### **Here is the result:**
 
-![The aside tag cloud on the right](media/image20.jpeg){width="5.0in" height="1.6762817147856517in"}
+![The aside tag cloud on the right](./images/image020.jpeg){width="5.0in" height="1.6762817147856517in"}
 
 #### Add a \<footer\> at the end of the blog
 
-![image of the blog footer](media/image21.jpeg){width="2.1875in" height="0.7916666666666666in"}
+![image of the blog footer](./images/image021.jpeg){width="2.1875in" height="0.7916666666666666in"}
 
 ###### Finally, we added a \<footer\> element (*lines 12-14* below) after the tag cloud definition, to display a page footer:
 
-> \<html\>
->
-> \...
->
-> \<body\>
->
-> \...
->
-> \<section\>
->
-> \...
->
-> \</section\>
->
-> \<aside\>
->
-> \...
->
-> \</aside\>
->
-> \<footer\>
->
->    \<p\>&copy; 2009 Some blog\</p\>
->
-> \</footer\>
->
-> \</body\>
->
-> \</html\>
->
+```
+> <html>
+> ...
+> <body>
+> ...
+> <section>
+> ...
+> </section>
+> <aside>
+> ...
+> </aside>
+> <footer>
+>    <p>&copy; 2009 Some blog</p>
+> </footer>
+> </body>
+> </html>
 > With this CSS rule:
->
 > footer {
->
 >     clear: both;
->
 >     color: #777;
->
 >     padding: 10px 50px
->
 > }
+```
 
 ###### **And here is the result at the bottom of the page:**
 
-![The resulting footer at the bottom of the page](media/image22.jpeg){width="5.0in" height="1.757425634295713in"}
+![The resulting footer at the bottom of the page](./images/image022.jpeg){width="5.0in" height="1.757425634295713in"}
 
 ### 1.3.4 More on \<article\> and \<section\>
 
 ### Can an \<article\> contain a \<section\>?
 
-![Picture of \'eisher\' hands](media/image23.jpeg){width="2.4270833333333335in" height="1.3333333333333333in"}
+![Picture of \'eisher\' hands](./images/image023.jpeg){width="2.4270833333333335in" height="1.3333333333333333in"}
 
 It may not be clear whether a \<section\> may contain one or several \<article\> elements or if an \<article\> may contain one or several \<section\> elements.
 
@@ -2047,27 +1905,19 @@ It may not be clear whether a \<section\> may contain one or several \<article
 
 ###### Example of a blog post defined as a long \<article\>, that is in turn cut into smaller \<section\> elements:
 
-> \<article id=\"id1\"\>
->
->    \<section id=\"id1part1\"\>
->
->      \<h2\>Introduction\</h2\>
->
->    \</section\>
->
->    \<section id=\"id1part2\"\>
->
->      \<h2\>My travel to India\</h2\>
->
->    \</section\>
->
->    \<section id=\"id1part3\"\>
->
->      \<h2\>Return to France\</h2\>
->
->    \</section\>
->
-> \</article\>
+```
+> <article id="id1">
+>    <section id="id1part1">
+>      <h2>Introduction</h2>
+>    </section\>
+>    <section id="id1part2">
+>      <h2>My travel to India</h2>
+>    </section>
+>    <section id="id1part3">
+>      <h2>Return to France</h2>
+>    </section>
+> </article>
+```
 
 The blog example from the previous part of the course, on the other hand, uses a single \<section\> that contains several \<article\> elements.
 
@@ -2087,17 +1937,17 @@ Yes, you can, in case you would like to propose some navigation links with each 
 >    </header>
 >    **<nav>**
 >        **<ul>**
->            \<li\>\<a href=\"\...\"\>Next post\</a\>\</li\>
->            \<li\>\<a href=\"\...\"\>Previous post\</a\>\</li\>
->            \<li\>\<a href=\"\...\"\>Contact author\</a\>\</li\>
->        **\</ul\>**
->    **\</nav\>**
->    \<p\>Content\...\</p\>
->    \<footer\>
->      \<p\>Posted by Michel, the \<time datetime=\"2012-02-02\"\>February 2,
->      2012\</time\> \</p\>
->    \</footer\>
-> \</article\>
+>            <li><a href="...">Next post</a></li>
+>            <li><a href="...">Previous post</a></li>
+>            <li><a href="...">Contact author</a></li>
+>        **</ul>**
+>    **</nav>**
+>    <p\>Content...</p>
+>    <footer>
+>      <p>Posted by Michel, the <time datetime="2012-02-02">February 2,
+>      2012</time> </p>
+>    </footer>
+> </article>
 ```
 
 In that case, the \<nav\> element proposes navigation links to the next or previous blog post, as well as a link to contact the author of the blog post.
@@ -2118,7 +1968,7 @@ You can use \<div\> elements in all cases where the proposed structural elemen
 
 This chart from the [HTML5 Doctor Web site](https://html5doctor.com/) may help you decide whether or not to use a \<div\>:
 
-![flow chart about using header, H1, etc.](media/image24.png){width="6.5in" height="4.600694444444445in"}
+![flow chart about using header, H1, etc.](./images/image24.png){width="6.5in" height="4.600694444444445in"}
 
 ### 1.3.5 Headings and Structural Elements
 
@@ -2142,7 +1992,7 @@ Since the very beginning, HTML has had heading elements: \<h1\>\...\<h6\>. Thes
 
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 
-![outliner in action from the previous example](media/image25.png){width="6.5in" height="3.5097222222222224in"}
+![outliner in action from the previous example](./images/image25.png){width="6.5in" height="3.5097222222222224in"}
 
 In the above outline, note that we have only used H1\... H6 elements, without any new HTML5 structural elements such as \<section\> or \<article\>.
 
@@ -2214,7 +2064,7 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 
 ###### The corresponding outline is:
 
-![outline of previous example](media/image26.jpeg){width="6.0in" height="2.6333333333333333in"}
+![outline of previous example](./images/image26.jpeg){width="6.0in" height="2.6333333333333333in"}
 
 In the above example, please note two things:
 
@@ -2264,7 +2114,7 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 
 The outline of the last example looks like this:
 
-![outline of last example](media/image27.jpeg){width="6.5in" height="2.3006944444444444in"}
+![outline of last example](./images/image027.jpeg){width="6.5in" height="2.3006944444444444in"}
 
 Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning root\", and would also need a heading.
 
@@ -2699,7 +2549,7 @@ We need to add a heading in the \<nav\> element. This will both fix the outlin
 
 **Here is the fixed result:**
 
-![good outline without the untitled nav](media/image33.jpeg){width="5.0in" height="3.3931627296587927in"}
+![good outline without the untitled nav](./images/image33.jpeg){width="5.0in" height="3.3931627296587927in"}
 
 A common remark from Web designers is: \"we do not want a heading content displayed systematically after a \<nav\>, or an \<aside\> element\...\"
 
@@ -2773,7 +2623,7 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 
 -   [Check it online with this JsBin](https://jsbin.com/heboke/edit?html,output)
 
-![blog with embedded table of contents](media/image34.jpeg){width="5.0in" height="2.8536340769903763in"}
+![blog with embedded table of contents](./images/image34.jpeg){width="5.0in" height="2.8536340769903763in"}
 
 ### 1.3.10 Examples of Page Layouts
 
@@ -2821,11 +2671,11 @@ Here we use the CSS rule float:left for the \<section\> and the CSS rule 
 
 You can look at the complete CSS code in the interactive example below (click on the CSS or HTML text in the menu bar below, or click \"edit on codepen\" to change the code and see the results):
 
-![](media/image35.png){width="6.5in" height="2.529166666666667in"}
+![](./images/image35.png){width="6.5in" height="2.529166666666667in"}
 
 [Also available online at JSBin](https://jsbin.com/dufapo/edit?html,css,output).
 
-![](media/image36.png){width="6.5in" height="3.527083333333333in"}
+![](./images/image36.png){width="6.5in" height="3.527083333333333in"}
 
 ### Example #2: three sections centered, of equal size, also using the float and width CSS properties
 
@@ -2875,20 +2725,20 @@ Instead of having one element with a float:left and one element with a float:
 
 **Look at the CSS code in the example below:**
 
-![](media/image37.png){width="6.5in" height="2.329861111111111in"}
+![](./images/image37.png){width="6.5in" height="2.329861111111111in"}
 
 ### Example #3: same result using the CSS flex property
 
 This example uses the CSS flex property to achieve a result similar to the one shown in Example 2.\
 There are many articles on Flexbox and we recommend those from Rachel Andrew on Smashing Magazine: \"[Use cases for Flexbox](https://www.smashingmagazine.com/2018/10/flexbox-use-cases/)\", \"[Flexbox: how big is that flexible box](https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/)\", etc.
 
-![](media/image38.png){width="6.5in" height="2.357638888888889in"}
+![](./images/image38.png){width="6.5in" height="2.357638888888889in"}
 
 ### Example #4: another example written by a student, that uses the flex property
 
 This example also uses all the structuring elements we saw: main, article, section, etc. It uses only the simplest parts of the FlexBox CSS module, so it should be easy to understand, even for CSS beginners:
 
-![](media/image39.png){width="6.5in" height="3.467361111111111in"}
+![](./images/image39.png){width="6.5in" height="3.467361111111111in"}
 
 ### External resources
 
@@ -2906,17 +2756,17 @@ These elements have been introduced for displaying a foldable zone in an HTML do
 
 In the screenshot below, taken from the W3C specification page, the text next to the horizontal arrow is a \<summary\> element, and the text displayed when we click on the summary part, is the \<details\> element. This is a sort of \"accordion\" with foldable content.
 
-![Example of summary details elements from the W3C specification](media/image40.png){width="3.0in" height="5.791303587051619in"}
+![Example of summary details elements from the W3C specification](./images/image40.png){width="3.0in" height="5.791303587051619in"}
 
 The \<details\> element generates a simple widget to show/hide element contents, optionally by clicking on its child \<summary\> element.
 
 Here is an example of what can be done using these elements ) see the [online version on JSBin](https://jsbin.com/yociyel/1/edit?html,css,js,output):
 
-![Example of folded summary details](media/image41.jpeg){width="3.4791666666666665in" height="2.0729166666666665in"}
+![Example of folded summary details](./images/image41.jpeg){width="3.4791666666666665in" height="2.0729166666666665in"}
 
 And here is what is displayed after clicking on the small arrow-shaped icon to the left of the summary:
 
-![Example of summary details unfolded](media/image42.jpeg){width="3.34375in" height="1.5625in"}
+![Example of summary details unfolded](./images/image42.jpeg){width="3.34375in" height="1.5625in"}
 
 <b>Here is the code of this example:</b>
 
@@ -2950,15 +2800,15 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> elem
 
 **Step 1: all folded:**
 
-![Other example, unfolded](media/image43.jpeg){width="3.3229166666666665in" height="0.4270833333333333in"}
+![Other example, unfolded](./images/image43.jpeg){width="3.3229166666666665in" height="0.4270833333333333in"}
 
 **Step 2: click on top level summary icon, the first \"hidden\" part appears\...**
 
-![The unfolded content contains in turn a summary details folded](media/image44.jpeg){width="3.3333333333333335in" height="2.1875in"}
+![The unfolded content contains in turn a summary details folded](./images/image44.jpeg){width="3.3333333333333335in" height="2.1875in"}
 
 **Step3: click on embedded summary icon inside the part that has been previously unfolded**
 
-![We unfolded the summary details inside the previous summary details. Recursive accordeons!](media/image45.jpeg){width="3.25in" height="3.6875in"}
+![We unfolded the summary details inside the previous summary details. Recursive accordeons!](./images/image45.jpeg){width="3.25in" height="3.6875in"}
 
 **Source code of this example, see the summary/details inside another one:**
 
@@ -2996,7 +2846,7 @@ There are CSS pseudo classes to style this icon when it is in the open or clos
 
 Example1 (see [online example](https://jsbin.com/tomehim/1/edit?html,css,output)):
 
-![Styling the open/close icon](media/image46.jpeg){width="3.4583333333333335in" height="0.4166666666666667in"}
+![Styling the open/close icon](./images/image46.jpeg){width="3.4583333333333335in" height="0.4166666666666667in"}
 
 The color and background of the icon on the left are specified by the following CSS rule, which uses the pseudo class ::-webkit-details-marker
 
@@ -3010,7 +2860,7 @@ In this example: red arrow, white background.
 
 4.  }
 
-![Styled summary details icon, unfolded state](media/image47.jpeg){width="3.7708333333333335in" height="1.8125in"}
+![Styled summary details icon, unfolded state](./images/image47.jpeg){width="3.7708333333333335in" height="1.8125in"}
 
 Once opened, the selector details\[open\] can style the icon when \<details\> is unfolded. In this example: blue arrow, turquoise background. Here is the corresponding CSS rule:
 
@@ -3026,9 +2876,9 @@ It is also possible to change the icon itself using the CSS pseudo class :after
 
 **Example 2 (see it [online](https://jsbin.com/sajusop/edit?html,css,output)):**
 
-![A + as a custom open icon for summary](media/image43.jpeg){width="3.40625in" height="0.4375in"}
+![A + as a custom open icon for summary](./images/image43.jpeg){width="3.40625in" height="0.4375in"}
 
-![A \"-\" as a custom close icon](media/image48.jpeg){width="3.4791666666666665in" height="1.6458333333333333in"}
+![A \"-\" as a custom close icon](./images/image48.jpeg){width="3.4791666666666665in" height="1.6458333333333333in"}
 
 CSS rules used in this example:
 
@@ -3072,7 +2922,7 @@ Use a \"-\" shaped icon, white, when details are displayed:
 
 ### 1.4.2 The \<time\> and \<mark\> Elements
 
-![Picture of a clock with the words \'it\'s about time\'](media/image49.jpeg){width="2.0in" height="1.9085422134733159in"}
+![Picture of a clock with the words \'it\'s about time\'](./images/image49.jpeg){width="2.0in" height="1.9085422134733159in"}
 
 ### The \<time\> element
 
@@ -3136,7 +2986,7 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
 
 Duration values use the prefix "P" for "period" as in \<time datetime=\"P4D\"\> (period = four days)\...
 
-![funny pict duration values](media/image50.jpeg){width="2.0in" height="2.0608694225721784in"}
+![funny pict duration values](./images/image50.jpeg){width="2.0in" height="2.0608694225721784in"}
 
 So you start the attribute string value with a \"P\", followed by a duration value that ends with another letter indicating the unit used: \"D\" for \"days\",  "H" for hours, "M" for minutes and "S" for seconds. 
 
@@ -3180,7 +3030,7 @@ Used without attributes, the value between the opening \<time\> and closing \
 
 ### The \<mark\> element
 
-![Picture of a yellow hightlighter pen](media/image51.jpeg){width="4.34375in" height="0.9791666666666666in"}
+![Picture of a yellow hightlighter pen](./images/image51.jpeg){width="4.34375in" height="0.9791666666666666in"}
 
 The HTML \<mark\> tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.
 
@@ -3218,7 +3068,7 @@ Source code:
 
 Example 2:
 
-![Another example for marking code](media/image52.jpeg){width="4.6875in" height="0.9375in"}
+![Another example for marking code](./images/image52.jpeg){width="4.6875in" height="0.9375in"}
 
 Source code:
 
@@ -3240,7 +3090,7 @@ If you don\'t like the default yellow background, you may use CSS to change the 
 
 For example:
 
-![style the mark element with CSS](media/image53.jpeg){width="4.28125in" height="1.34375in"}
+![style the mark element with CSS](./images/image53.jpeg){width="4.28125in" height="1.34375in"}
 
 \... comes with this CSS rule:
 
@@ -3345,7 +3195,7 @@ The above example will cause the browser that invoked this server-side code to
 
 ### To download a file using an arbitrary name: the download attribute
 
-![Picture of a road sign with the words \'New Way\'](media/image54.jpeg){width="1.2708333333333333in" height="0.9791666666666666in"}
+![Picture of a road sign with the words \'New Way\'](./images/image54.jpeg){width="1.2708333333333333in" height="0.9791666666666666in"}
 
 HTML5 proposes the use of a new attribute named download to download resources rather than navigating to them. The example below shows how to trigger the download of an image by the browser (instead of rendering it, which is the default behavior) with a name different from the name of the resource.
 
@@ -3357,13 +3207,13 @@ HTML5 proposes the use of a new attribute named download to download resourc
 
 This will indeed force the download of an image with a filename different from its original filename on the server side. Here is a screen capture of the Web browser while downloading the picture. We can see in the status bar the name of the link (the image is \"normal.gif\") and the downloaded file is \"MichelBuffa.gif\":
 
-![Image saved with another names thanks to the download attribute](media/image55.png){width="2.375in" height="0.71875in"}
+![Image saved with another names thanks to the download attribute](./images/image55.png){width="2.375in" height="0.71875in"}
 
 **WARNING**: since 2015, and for security reasons, **the image should be located on the same domain as the HTML page that contains the link** (using a relative URL works well, for example, but linking a page on another domain will not work - it will keep its original name).
 
 #### Interesting applications: serverless download
 
-![no server picture](media/image56.jpeg){width="3.2395833333333335in" height="0.8958333333333334in"}
+![no server picture](./images/image56.jpeg){width="3.2395833333333335in" height="0.8958333333333334in"}
 
 ##### Serverless download demo (by E.Bilderman)
 
@@ -3373,7 +3223,7 @@ We won\'t detail this demo here, but take a look if you are curious to see wha
 
 We have also put the simplified [source code of this demo on JSBin.com](https://jsbin.com/muluwey/1/edit?html,css,js,output) for you to play with.
 
-![Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server.](media/image57.png){width="5.0in" height="4.820754593175853in"}
+![Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server.](./images/image57.png){width="5.0in" height="4.820754593175853in"}
 
 #### External resources:
 
@@ -3567,7 +3417,7 @@ Different use cases:
 
 After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.
 
-![Picture of diverse tools used by workers](media/image58.jpeg){width="2.0in" height="2.0in"}
+![Picture of diverse tools used by workers](./images/image58.jpeg){width="2.0in" height="2.0in"}
 
 One of the most popular resources for testing microdata (as well as microformats and RDFa) is this [Google page about understanding how structured data works](https://developers.google.com/search/docs/guides/intro-structured-data). This page contains a link to a structured data testing tool that you can use to see how Google recognizes the semantic data you embed in your HTML code.
 
@@ -3627,11 +3477,11 @@ Source code:
 
 Rendering of the page in a browser:
 
-![Rendering of Michel Buffa home page](media/image59.jpeg){width="6.5in" height="1.0298611111111111in"}
+![Rendering of Michel Buffa home page](./images/image59.jpeg){width="6.5in" height="1.0298611111111111in"}
 
 Here is what Google sees of the page. We just entered its [URL](https://output.jsbin.com/gunuzus/1) in the [Google page about rich snippets and structured data](https://developers.google.com/search/docs/guides/intro-structured-data):
 
-![Microdata of the example, as seen by Google](media/image60.png){width="5.0in" height="2.4758213035870518in"}
+![Microdata of the example, as seen by Google](./images/image60.png){width="5.0in" height="2.4758213035870518in"}
 
 Note that the address is a fully featured embedded object in the Person\'s description.
 
@@ -3639,11 +3489,11 @@ Note that the address is a fully featured embedded object in the Person\'s descr
 
 The [Live Microdata Web site](https://foolip.org/microdatajs/live/)  is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
 
-![example of live microdata from the previous example. Microdata are displayed as json objects](media/image61.jpeg){width="6.0in" height="5.615387139107612in"}
+![example of live microdata from the previous example. Microdata are displayed as json objects](./images/image61.jpeg){width="6.0in" height="5.615387139107612in"}
 
 And the JSON view of the microdata:
 
-![JSON view of the microdata](media/image62.jpeg){width="4.0in" height="4.4615365266841644in"}
+![JSON view of the microdata](./images/image62.jpeg){width="4.0in" height="4.4615365266841644in"}
 
 ### 1.5.3 Adding Microdata to an HTML Page
 
@@ -3679,7 +3529,7 @@ If you are a developer and if you are familiar with object oriented programming,
 
 **Vocabularies are meant to be shared**
 
-![Picture wish words \'time to share\'](media/image63.jpeg){width="2.6145833333333335in" height="1.7395833333333333in"}
+![Picture wish words \'time to share\'](./images/image63.jpeg){width="2.6145833333333335in" height="1.7395833333333333in"}
 
 If one of the existing vocabularies available at the schema.org Web site fits your needs, you should reuse it, as the most popular vocabularies are becoming de facto standards and will be taken into account by Web crawlers, browsers, and browser extensions.
 
@@ -3885,7 +3735,7 @@ To automatically generate microdata for describing persons, restaurants, movie
 
 Example:
 
-![Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata](media/image64.jpeg){width="6.5in" height="3.3743055555555554in"}
+![Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata](./images/image64.jpeg){width="6.5in" height="3.3743055555555554in"}
 
 ### 1.5.5 Examples of Well Structured Documents with Microdata
 
@@ -3901,17 +3751,17 @@ Visit the [exemple #1 online](https://jsbin.com/cuzipa/edit?html,css,output).
 
 Structure:
 
-![picture of the first about me page example. Shows the table of content](media/image65.jpeg){width="4.0625in" height="4.010416666666667in"}
+![picture of the first about me page example. Shows the table of content](./images/image65.jpeg){width="4.0625in" height="4.010416666666667in"}
 
 Microdata:
 
-![microdata from the example page](media/image66.jpeg){width="5.0in" height="3.7708333333333335in"}
+![microdata from the example page](./images/image66.jpeg){width="5.0in" height="3.7708333333333335in"}
 
 ### Example #2
 
 View the [example #2 online](https://jsbin.com/karemi/1/edit?html,output).
 
-![Example page, shows table of content](media/image67.jpeg){width="4.958333333333333in" height="3.4375in"}
+![Example page, shows table of content](./images/image67.jpeg){width="4.958333333333333in" height="3.4375in"}
 
 ## Module 2: HTML5 Multimedia
 
@@ -3924,7 +3774,7 @@ Until 2012, it was only possible to integrate an audio or video player using the
 
 Check the HTML code of the following CodePen:
 
-![](media/image68.png){width="6.5in" height="2.061111111111111in"}
+![](./images/image68.png){width="6.5in" height="2.061111111111111in"}
 
 Please note that:
 
@@ -3958,7 +3808,7 @@ Here is the HTML code you need to copy and paste in order to embed a video:
 
 The YouTube video embedded in this page by the above code: it\'s HTML5 but it\'s not a \<video\> element directly inserted in the HTML of this page, it\'s an \<iframe\>.
 
-![](media/image69.png){width="5.84375in" height="3.28125in"}
+![](./images/image69.png){width="5.84375in" height="3.28125in"}
 
 ### Support for different video CODECS (mp4, ogG, avi, etc.)
 
@@ -4118,7 +3968,7 @@ To add some styling to the basic example we saw when we introduced the \<audio\
 
 Please move the mouse pointer over this player\'s elements: 
 
-![Two gery-black horses in a field](media/image70.jpeg){width="2.0833333333333335in" height="1.5625in"}
+![Two gery-black horses in a field](./images/image70.jpeg){width="2.0833333333333335in" height="1.5625in"}
 
 Press Play to hear the horse ! 
 
@@ -4250,7 +4100,7 @@ CSS source code:
 
 See this** **[example online](https://jsbin.com/zoquru/4/edit?html,css,output) (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it\'s playing.
 
-![](media/image71.png){width="5.947916666666667in" height="3.4895833333333335in"}
+![](./images/image71.png){width="5.947916666666667in" height="3.4895833333333335in"}
 
 This example uses the pseudo CSS class :hover in order to track the mouseover event. On mouseover, it uses a CSS transition property that interpolates the changes in the scale and orientation of the video element (done using a transform CSS property).
 
@@ -4306,7 +4156,7 @@ Example #1: with a regular video
 
 Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 
-![](media/image72.png){width="6.5in" height="2.0680555555555555in"}
+![](./images/image72.png){width="6.5in" height="2.0680555555555555in"}
 
 Here is the HTML code. It\'s really simple, just notice the \<body onload=\"init();\"\> which calls the JavaScript init() function right after the page is loaded.
 
@@ -4394,7 +4244,7 @@ And now the JavaScript code:
 
 Full width, resizable, borderless YouTube video. To do this: just 100% standard CSS + DOM manipulation using JavaScript.
 
-![](media/image73.png){width="5.0in" height="1.564636920384952in"}
+![](./images/image73.png){width="5.0in" height="1.564636920384952in"}
 
 The CSS and JavaScript codes for this example are exactly the same as in Example #1.
 
@@ -4404,7 +4254,7 @@ The CSS and JavaScript codes for this example are exactly the same as in Exam
 
 In this example, the video does not rescale; it\'s just cropped if the browser window is resized. Enlarge your browser and you\'ll see a man with a phone on the right. Resize your browser and you\'ll see only part of the video.
 
-![](media/image74.png){width="5.0in" height="1.5854702537182852in"}
+![](./images/image74.png){width="5.0in" height="1.5854702537182852in"}
 
 **CSS code:**
 
@@ -4538,7 +4388,7 @@ The trick here is that:
 
 Full screen video that resizes and keeps its ratio, using the viewport units.
 
-![](media/image75.png){width="6.5in" height="2.061111111111111in"}
+![](./images/image75.png){width="6.5in" height="2.061111111111111in"}
 
 This time we obtain the same result as with the first example that used JavaScript and a resize event. The video resizes correctly and keeps its ratio.
 
@@ -4620,7 +4470,7 @@ This will create a complete video player for the file \"video.mp4\", with contro
 
 Please look at this interesting example:
 
-![](media/image76.png){width="6.5in" height="2.061111111111111in"}Note that in order to play the video, you must click on the \"vid.play()\" text. To pause it, you click on the \"vid.pause()\" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
+![](./images/image76.png){width="6.5in" height="2.061111111111111in"}Note that in order to play the video, you must click on the \"vid.play()\" text. To pause it, you click on the \"vid.pause()\" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
 
 **Conclusion**:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let\'s see a little more of what we can do using the JavaScript API of the \<video\> element (it will be an identical approach for the \<audio\> element, since it shares the same API by a very small margin).
 
@@ -4636,7 +4486,7 @@ The list of properties can be found at the [W3C HTML5 Video Events and API](htt
 
 Try the [direct link](https://www.w3.org/2010/05/video/mediaevents.html), and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
 
-![](media/image77.png){width="6.5in" height="4.313194444444444in"}
+![](./images/image77.png){width="6.5in" height="4.313194444444444in"}
 
 #### Here is a table that shows the most interesting methods, properties, and events provided by the \<video\> element API
 
@@ -5182,7 +5032,7 @@ It is worth mentioning that most browsers work well with WebVTT, even if the MIM
 
 Here is an example of a video element that includes a \<track\> element in the .vtt (WebVTT) format (*line 9 *in the source code shown below):
 
-![](media/image86.png){width="6.5in" height="2.0881944444444445in"}
+![](./images/image86.png){width="6.5in" height="2.0881944444444445in"}
 
 The example uses a \<track\> element to insert basic *captions* to the video: sounds and music are described, in addition to standard *subtitles* that correspond to what the different movie characters say.
 
@@ -5529,17 +5379,17 @@ Many tools - both free and commercial - are available to add subtitles to a vid
 
 Go to the above Web site, click on the \"subtitle a video\" link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it\'s better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.
 
-![](media/image88.png){width="4.0in" height="3.3752187226596675in"}
+![](./images/image88.png){width="4.0in" height="3.3752187226596675in"}
 
 Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:
 
-![](media/image89.png){width="6.0in" height="5.204489282589677in"}
+![](./images/image89.png){width="6.0in" height="5.204489282589677in"}
 
 Note that YouTube can also help you \"make subtitles\" with its speech recognition tool, but you will only be able to export in .srt format afterwards. You will have to convert this format afterwards to .vtt.
 
 ### Try your subtitled/captioned video
 
-![](media/image90.png){width="4.0in" height="2.306801181102362in"}
+![](./images/image90.png){width="4.0in" height="2.306801181102362in"}
 
 ### 2.3.4 Styling Captions
 
@@ -5547,7 +5397,7 @@ In this section, we will look at different possibilities for styling and positio
 
 The example below shows how we can do that (play the video for 40s, look at the positions and styles of the subtitles and captions, look at the HTML):
 
-![](media/image91.png){width="6.0in" height="1.9147419072615923in"}
+![](./images/image91.png){width="6.0in" height="1.9147419072615923in"}
 
 The WebVTT file is shown below. Notice the new attributes that have been added on the right end of the duration values:
 
@@ -5657,7 +5507,7 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 
 ### How to position the subtitles
 
-![](media/image92.png){width="6.5in" height="6.856944444444444in"}
+![](./images/image92.png){width="6.5in" height="6.856944444444444in"}
 
 The video example tests nearly all the possibilities for positioning subtitles/captions, styling (using HTML element wrapping with \<b\>, \<i\>,  etc.), voicing (subtitles corresponding to different characters will be displayed in different colors) and CSS styling.
 
@@ -5683,7 +5533,7 @@ And so on. Please look at the video as it is self-explanatory.
 
 One can use the HTML elements  \<b\>, \<i\>, \<u\> to modify the rendering of subtitles and captions, as illustrated in the example below:
 
-![](media/image93.png){width="6.5in" height="2.8361111111111112in"}
+![](./images/image93.png){width="6.5in" height="2.8361111111111112in"}
 
 ### Using CSS classes for styling
 
@@ -5693,7 +5543,7 @@ It is possible to style using CSS classes as part of a cue value, using the \<
 
 2.  Browsers that support ::cue CSS should make it red.\</c\>
 
-![Snaphot of a video frame showing a cue containing the class \'myclass\'. Browsers that support ::cue CSS should make it red](media/image94.jpeg){width="6.5in" height="2.8097222222222222in"}
+![Snaphot of a video frame showing a cue containing the class \'myclass\'. Browsers that support ::cue CSS should make it red](./images/image94.jpeg){width="6.5in" height="2.8097222222222222in"}
 
 CSS rules used in this example:
 
@@ -5717,7 +5567,7 @@ Support differs from one browser to another, see [this compatibility table](htt
 
 Here is an example that shows the voices of the different characters displayed with different colors:
 
-![](media/image95.png){width="6.5in" height="2.765277777777778in"}
+![](./images/image95.png){width="6.5in" height="2.765277777777778in"}
 
 Using the \<v\> tag, you will distinguish different voices that should be displayed in different colors (depending on the HTML5 video player implementation). See the CSS presented in the previous section to see how to specify the colors for the different voices.
 
@@ -5811,7 +5661,7 @@ Example of a WebVTT file that defines chapters:
 
 An example of what you can achieve using chapters, using the [JW Player](https://www.jwplayer.com/):
 
-![](media/image96.png){width="6.5in" height="2.527083333333333in"}
+![](./images/image96.png){width="6.5in" height="2.527083333333333in"}
 
 ### 2.3.6 Tools for Creating WebVTT Files
 
@@ -5847,13 +5697,13 @@ The \<track\> element comes with a powerful API that is used to develop many
 
 This example shows a video with an enhanced progress bar that displays the different chapters as small \"clickable\" squares. Furthermore, using the JavaScript API of the \<track\> element, this Web site builds a navigation menu (on the right of the video):
 
-![navigation menu using the track javascript api](media/image97.jpeg){width="6.5in" height="3.5965277777777778in"}
+![navigation menu using the track javascript api](./images/image97.jpeg){width="6.5in" height="3.5965277777777778in"}
 
 #### Example #2: sync video with Google Map and Google Street View
 
 Check [this demo](https://simpl.info/track/map/index.html) (only on Chrome) by [Sam Dutton](https://samdutton.com/): it shows a video that comes with a WebVTT file that contains longitudes and latitudes. When the video plays, JavaScript functions are called at given times and get the longitude and latitude. A Google Map and a Google Street views are updated in real time.
 
-![video sync with map and street view](media/image98.jpeg){width="6.5in" height="5.80625in"}
+![video sync with map and street view](./images/image98.jpeg){width="6.5in" height="5.80625in"}
 
 #### Example #3: sync guitar tablatures and music score with a video
 
@@ -5861,7 +5711,7 @@ This example shows how we manage to render music scores in real time as the vi
 
 Some JavaScript code listens to the ontimeupdate event while the video is playing. We use the currentTime property of the video to know exactly where we are in the video. Finally, we also rely on an external library to render in an HTML5 canvas the bars corresponding to the current video explanations. We render in real time guitar pro tablatures using the alphatab.net library.
 
-![](media/image99.png){width="5.0in" height="2.784694881889764in"}
+![](./images/image99.png){width="5.0in" height="2.784694881889764in"}
 
 ### 2.3.8 Enhanced HTML5 Video Players
 
@@ -5909,7 +5759,7 @@ For those of you interested in this particular topic, here is a very good resou
 
 Open source, and made for developers, [video.js](https://videojs.com/) comes with many plugins (chapters, thumbnails etc.). 
 
-![VideoJS examples](media/image100.png){width="6.145833333333333in" height="4.395833333333333in"}
+![VideoJS examples](./images/image100.png){width="6.145833333333333in" height="4.395833333333333in"}
 
 ### Which should I use? the \<video\> element and my own customization or an out of the box enhanced player?
 
@@ -5927,23 +5777,23 @@ Popular players such as  [JWPlayer](https://www.jwplayer.com/) have many expl
 
 Scrub Bar thumbnails (JWPlayer)
 
-![scrub bar thumbnails](media/image101.jpeg){width="4.84375in" height="3.6458333333333335in"}
+![scrub bar thumbnails](./images/image101.jpeg){width="4.84375in" height="3.6458333333333335in"}
 
 Custom look\'n\'feel and logo (Sublime video player):
 
-![custom look\'n\'feel and logo](media/image102.jpeg){width="5.0in" height="2.8125in"}
+![custom look\'n\'feel and logo](./images/image102.jpeg){width="5.0in" height="2.8125in"}
 
 Chapters and chapter thumbnails (JWPlayer):
 
-![chapters and chapter thumbnails](media/image103.png){width="5.229166666666667in" height="2.3333333333333335in"}
+![chapters and chapter thumbnails](./images/image103.png){width="5.229166666666667in" height="2.3333333333333335in"}
 
 PayPal accessible player:
 
-![paypal accessible player](media/image104.png){width="5.427083333333333in" height="3.4895833333333335in"}
+![paypal accessible player](./images/image104.png){width="5.427083333333333in" height="3.4895833333333335in"}
 
 LeanBack (says \"free for non-commercial use\", licensing is not very clear\...):
 
-![](media/image105.png){width="6.0in" height="5.586537620297463in"}
+![](./images/image105.png){width="6.0in" height="5.586537620297463in"}
 
 ### 2.4.1 Webcam
 
@@ -5961,7 +5811,7 @@ This API is one component of the [WebRTC specification](https://www.w3.org/TR/w
 
 The getUserMedia API, when dealing with video streams, is always used in conjunction with the \<video\> element.
 
-![screenshot of a simple Web camera webcam display in a Web page](media/image106.jpeg){width="3.3020833333333335in" height="3.15625in"}
+![screenshot of a simple Web camera webcam display in a Web page](./images/image106.jpeg){width="3.3020833333333335in" height="3.15625in"}
 
 ### Typical use of the getUserMedia API with a Webcam
 
@@ -6041,7 +5891,7 @@ Let\'s see some more examples of what we can do with the getUserMedia API: start
 
 ### How to stop/release the Webcam
 
-![Resulting image of Michel Buffa using his WebCam, with two custom controls below: \'Start WebCam\' and \'Stop WebCam\'](media/image107.jpeg){width="3.1875in" height="3.4583333333333335in"}
+![Resulting image of Michel Buffa using his WebCam, with two custom controls below: \'Start WebCam\' and \'Stop WebCam\'](./images/image107.jpeg){width="3.1875in" height="3.4583333333333335in"}
 
 \<!DOCTYPE html\>
 
@@ -6579,7 +6429,7 @@ Check out the [WebAudio demonstrations](https://webaudiodemos.appspot.com/) w
 
 The image below is taken from [one of the demonstrations](https://webaudiodemos.appspot.com/input/index.html), where the sound captured by the microphone is processed in real time. We get visualizations of the signal in real time as an animated waveform, animated frequencies or animated audiogram. If we connect an electric guitar to the sound card input, then this demonstration shows that we can recreate with WebAudio most of the classic effects used by guitarists (delay, reverb, distortion, chorus, etc.).
 
-![webaudio live processing](media/image110.jpeg){width="5.0in" height="3.9796970691163605in"}
+![webaudio live processing](./images/image110.jpeg){width="5.0in" height="3.9796970691163605in"}
 
 ### 2.4.4 Webcam Resolution
 
@@ -6589,7 +6439,7 @@ For more information, this [article on MDN about the getUserMedia API](https:/
 
 **Typical use:**
 
-![](media/image111.png){width="6.5in" height="2.0569444444444445in"}
+![](./images/image111.png){width="6.5in" height="2.0569444444444445in"}
 
 **JS**
 
@@ -6785,7 +6635,7 @@ For more information, this [article on MDN about the getUserMedia API](https:/
 >
 > \</html\>
 
-![](media/image112.png){width="4.385416666666667in" height="5.25in"}
+![](./images/image112.png){width="4.385416666666667in" height="5.25in"}
 
 Code source extract related to the \"constraint\" object which specifies the desired resolutions:
 
@@ -6843,7 +6693,7 @@ Here are some other constraints you can set. In particular, look at the ones for
 
 -   Resource: [WebRTC samples: Select sources & outputs](https://webrtc.github.io/samples/src/content/devices/input-output/)
 
-![webapp for selecting audio and video input/output](media/image113.jpeg){width="4.145833333333333in" height="4.697916666666667in"}
+![webapp for selecting audio and video input/output](./images/image113.jpeg){width="4.145833333333333in" height="4.697916666666667in"}
 
 Source code extract:
 ```
@@ -6875,7 +6725,7 @@ This MediaRecoredr API allows to record / capture the audio or video stream. The
 
 For example, the MediaRecorder API is used to record the video stream from a WebCam as a file saved on the hard disk. Below is a screenshot of an application allowing to record the WebCam. You will be able to run this example a little further, but for security reasons, it cannot run directly in this Web page.
 
-![Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element](media/image114.jpeg){width="3.8854166666666665in" height="2.3229166666666665in"}
+![Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element](./images/image114.jpeg){width="3.8854166666666665in" height="2.3229166666666665in"}
 
 Let\'s record, replay and download the video stream captured using a Webcam. You can test it below by clicking on \"CodePen\" at the top right:
 
@@ -7204,7 +7054,7 @@ A trick consists in creating, on the fly, an invisible link with a download at
 
 ### 3.2.1 About JavaScript and HTML5
 
-![JavaScript logo](media/image115.png){width="1.0in" height="1.0in"}
+![JavaScript logo](./images/image115.png){width="1.0in" height="1.0in"}
 
 HTML5 is composed of new elements, but it also comes with many JavaScript APIs for controlling video and sound, drawing and animating things in the new \<canvas\> element, for offline applications, persistence, geolocation, orientation, etc.
 
@@ -7269,23 +7119,23 @@ The only line of code we have is console.log(\"Some JavaScript code has been ex
 
 This means \"display in the JavaScript console the message\...\". If we open the console tab provided by jsbin.com in a dedicated tab (that redirects all console.log() messages), and re-execute the page (just type a space at the end of a line, this will re-render the page and display the message in the console), we see the message in the console tab, as well as in the dev. tools console. This is illustrated by the image below:
 
-![java script console view 1](media/image116.jpeg){width="5.0in" height="2.65625in"}
+![java script console view 1](./images/image116.jpeg){width="5.0in" height="2.65625in"}
 
 It is also possible to use the \"real dev. tool console\", and for this I recommend running the application in a single window, not in the JS Bin editor. Press the black arrow on the top right of the output window - this will render the page as a standalone Web page, then press *F12*. You should see:
 
-![view of the javascript console](media/image117.jpeg){width="4.0in" height="3.3867125984251967in"}
+![view of the javascript console](./images/image117.jpeg){width="4.0in" height="3.3867125984251967in"}
 
 Ok, now, let\'s make an error: change console.log() into conso**lll**e.log(). Let\'s see what happens:
 
-![view of the javascript console](media/image118.jpeg){width="5.0in" height="4.207420166229221in"}
+![view of the javascript console](./images/image118.jpeg){width="5.0in" height="4.207420166229221in"}
 
 And if we run it standalone and use the dev. tool console:
 
-![View of the JavaScript console](media/image119.jpeg){width="5.0in" height="2.508445975503062in"}
+![View of the JavaScript console](./images/image119.jpeg){width="5.0in" height="2.508445975503062in"}
 
 And if we click on the line number in the right, the dev. tool shows the source code centered on the line that caused the error:
 
-![View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc.](media/image120.jpeg){width="5.0in" height="4.183226159230096in"}
+![View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc.](./images/image120.jpeg){width="5.0in" height="4.183226159230096in"}
 
 Without such tools, debugging JavaScript code is impossible. So you need to look at some basic tutorials on how to use the dev. tools of your browsers, since they differ from one another in the way they work - although the principles remain the same.
 
@@ -7295,7 +7145,7 @@ Some of you may not be used to \"asynchronous programming\", \"callbacks\" etc. 
 
 ### 3.2.2 The \<canvas\> Element
 
-![canvas element logo](media/image121.jpeg){width="1.0in" height="1.0in"}
+![canvas element logo](./images/image121.jpeg){width="1.0in" height="1.0in"}
 
 The \<canvas\> tag was introduced into the HTML specification around 2010 as a \"Flash killer.\" At the time, popular video games used this proprietary technology and only a few browsers supported it. The HTML canvas allows drawing and animation at 60 frames per second, in 2D or 3D.
 
@@ -7313,19 +7163,19 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 
 [Foot Chinko](https://www.ravalmatic.com/portfolio/footchinko/) is one popular free HTML5 games:
 
-![foot chinko one of the best html5 2D game of 2015](media/image122.jpeg){width="4.0in" height="5.304965004374453in"}
+![foot chinko one of the best html5 2D game of 2015](./images/image122.jpeg){width="4.0in" height="5.304965004374453in"}
 
 #### Example #2
 
 Lots of data visualization tools and JavaScript libraries use the HTML5 canvas element for [Data visualization](http://www.creativebloq.com/design-tools/data-visualization-712402):
 
-![html5 data visualization](media/image123.jpeg){width="5.0in" height="3.3043471128608926in"}
+![html5 data visualization](./images/image123.jpeg){width="5.0in" height="3.3043471128608926in"}
 
 #### Example #3
 
 A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), that runs at 60 frames per second in an HTML5 canvas element:
 
-![A version of the game Galaxian that runs at 60 frames/s in a canvas.](media/image124.jpeg){width="5.0in" height="3.1185859580052493in"}
+![A version of the game Galaxian that runs at 60 frames/s in a canvas.](./images/image124.jpeg){width="5.0in" height="3.1185859580052493in"}
 
 Performance is  good and animation is generally very smooth, since most Web browsers (mobile and desktop) support hardware acceleration.
 
@@ -7367,17 +7217,17 @@ We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.or
 
 1.  As a [PDF file](https://courses.edx.org/assets/courseware/v1/4b7360cab7f3bf439c26782ec47cf7a8/asset-v1:W3Cx+HTML5.1x+2T2020+type@asset+block/Infopgraphic-CanvasCheatSheet-Final2.pdf), this canvas cheatsheet:
 
-![snapshot of an HTML Canvas cheatsheet from skilled.com](media/image125.png){width="6.5in" height="5.470138888888889in"}
+![snapshot of an HTML Canvas cheatsheet from skilled.com](./images/image125.png){width="6.5in" height="5.470138888888889in"}
 
 2.  Another resource, as an [HTML file](https://simon.html5.org/dump/html5-canvas-cheat-sheet.html):
 
-![Snapshot of a canvas sheet API](media/image126.png){width="6.5in" height="4.809722222222222in"}
+![Snapshot of a canvas sheet API](./images/image126.png){width="6.5in" height="4.809722222222222in"}
 
 ### 3.2.5 Coordinate System
 
 The coordinate system used for drawing in canvases is similar to the one used by many drawing APIs like Java2D: the (0 , 0) is in the top left corner while the X axis is going to the right and the Y axis to the bottom, as  shown in the following picture:
 
-![coordinate system](media/image127.png){width="5.46875in" height="4.53125in"}
+![coordinate system](./images/image127.png){width="5.46875in" height="4.53125in"}
 
 -   **X** axis is horizontal, directed to the right 
 
@@ -7616,7 +7466,7 @@ The two first parameters are the coordinates of the top left corner of the recta
 
 Produces this result:
 
-![filled rectangle with pink color](media/image128.jpeg){width="2.59375in" height="2.5833333333333335in"}
+![filled rectangle with pink color](./images/image128.jpeg){width="2.59375in" height="2.5833333333333335in"}
 
 -   #### strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape\'s outline should be rendered
 
@@ -7629,7 +7479,7 @@ The possible values are the same as those for the fillStyle property: a color,
 ```
 \... gives this result:
 
-![stroked rectangle - border is in blue](media/image129.jpeg){width="2.5833333333333335in" height="2.6041666666666665in"}
+![stroked rectangle - border is in blue](./images/image129.jpeg){width="2.5833333333333335in" height="2.6041666666666665in"}
 
 Only the outline of the rectangle will be drawn, and it will be drawn using the value of the strokeStyle property.
 
@@ -7643,7 +7493,7 @@ Actually it draws it in a color called \"transparent black\" (!) that correspond
 ```
 The result is:
 
-![The use of ClearRect draws a white rectangle against the pink background](media/image130.jpeg){width="2.6770833333333335in" height="2.6770833333333335in"}
+![The use of ClearRect draws a white rectangle against the pink background](./images/image130.jpeg){width="2.6770833333333335in" height="2.6770833333333335in"}
 
 ### Let\'s see some simple examples
 
@@ -7910,7 +7760,7 @@ At *line 10*, we called the drawSomething(\...) function with 0 and 100 as p
 
 If you look at the code of the modified function, you will see that each call to fillRect(\...) uses the x and y parameters instead of hard coded values. In this way, if we call it with parameters (0, 100), then all rectangles will be drawn 100 pixels to the bottom (offset in y). Here is the result:
 
-![rectangles are drawn 100 pixels towards the bottom](media/image131.jpeg){width="2.9895833333333335in" height="3.0in"}
+![rectangles are drawn 100 pixels towards the bottom](./images/image131.jpeg){width="2.9895833333333335in" height="3.0in"}
 
 -   #### Now, let\'s draw a small monster\'s head with rectangles
 
@@ -8982,7 +8832,7 @@ We slightly modified the function that draws the monster:
 
 -   We restored it at the end (BEST PRACTICE).
 
-![example of context save / restore : a monster is drawn by a function that saves and restored the context, then a rectangle is draw, with context as it was previously ](media/image132.jpeg){width="4.083333333333333in" height="4.09375in"}
+![example of context save / restore : a monster is drawn by a function that saves and restored the context, then a rectangle is draw, with context as it was previously ](./images/image132.jpeg){width="4.083333333333333in" height="4.09375in"}
 
 Source code extract of this function: notice at *lines 3 *and* 26* how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (l*ines 7-8*). The rest of the code is nearly the same as in the last version of the monster example.
 
@@ -10463,7 +10313,7 @@ Your browser does not support the canvas tag.\</canvas\>
 
 On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawing all these rectangles:
 
-![Image of the devtool console that shows random time values. The average time elapsed is around 4s](media/image134.jpeg){width="6.5in" height="1.3833333333333333in"}
+![Image of the devtool console that shows random time values. The average time elapsed is around 4s](./images/image134.jpeg){width="6.5in" height="1.3833333333333333in"}
 
 ### Path mode
 
@@ -10559,7 +10409,7 @@ And here is what the timer gives: a slightly faster execution time. Changing 100
 
 **Path mode is faster than immediate mode! We have now an average time of 3.1ms**
 
-![Image of the devtool console that shows random time values. The average time elapsed is around 3.1ms](media/image135.jpeg){width="6.5in" height="1.5576388888888888in"}
+![Image of the devtool console that shows random time values. The average time elapsed is around 3.1ms](./images/image135.jpeg){width="6.5in" height="1.5576388888888888in"}
 
 #### Reset the path mode buffer
 
@@ -10631,7 +10481,7 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 
 See the example below:
 
-![](media/image136.png){width="6.5in" height="2.0722222222222224in"}
+![](./images/image136.png){width="6.5in" height="2.0722222222222224in"}
 
 HTML
 
@@ -10739,7 +10589,7 @@ In this example, the entire grid is drawn during the execution of the last line 
 
 Try this:
 
-![](media/image137.png){width="6.5in" height="2.0722222222222224in"}
+![](./images/image137.png){width="6.5in" height="2.0722222222222224in"}
 
 HTML
 
@@ -10821,7 +10671,7 @@ This example shows that filled and wireframe shapes should be drawn differently 
 
 Try this:
 
-![](media/image138.png){width="6.5in" height="2.0861111111111112in"}
+![](./images/image138.png){width="6.5in" height="2.0861111111111112in"}
 
 Code source:
 
@@ -10865,7 +10715,7 @@ In this last example, we simply called the moveTo() method between each part o
 
 Let\'s look at the drawing from the last example of the previous section:
 
-![](media/image139.png){width="6.5in" height="2.0569444444444445in"}
+![](./images/image139.png){width="6.5in" height="2.0569444444444445in"}
 
 HTML
 
@@ -10927,7 +10777,7 @@ In this example, we will draw the two parts of the path with different styles: t
 
 What we will try first is to call stroke() after the first half of the path, then call fill() after the second half of the path:
 
-![](media/image140.png){width="6.5in" height="2.0631944444444446in"}
+![](./images/image140.png){width="6.5in" height="2.0631944444444446in"}
 
 HTML
 
@@ -11045,7 +10895,7 @@ using the ctx.beginPath() method, as shown in the next example.
 
 #### Now, the right way!
 
-![](media/image141.png){width="6.5in" height="2.0701388888888888in"}
+![](./images/image141.png){width="6.5in" height="2.0701388888888888in"}
 
 HTML
 
@@ -11218,7 +11068,7 @@ Notice the save/restore of the context at the beginning/end of the function. Thi
 
 Here is an example:
 
-![](media/image142.png){width="6.5in" height="2.0569444444444445in"}
+![](./images/image142.png){width="6.5in" height="2.0569444444444445in"}
 
 HTML
 
@@ -11398,7 +11248,7 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 
 #### Example #2
 
-![](media/image143.png){width="6.5in" height="2.0569444444444445in"}
+![](./images/image143.png){width="6.5in" height="2.0569444444444445in"}
 
 HTML
 
@@ -11514,7 +11364,7 @@ This [article on drawing lines and arcs with arrow heads](http://www.dbp-consul
 
 Screenshot from a demo available on the above Web site:
 
-![](media/image144.png){width="2.0in" height="2.026147200349956in"}
+![](./images/image144.png){width="2.0in" height="2.026147200349956in"}
 
 In a later part of the course dedicated to curve drawing in a canvas, we will also show how to draw curved arrows, with very simple code (much simpler than the one used for drawing the clock\'s hands above).
 
@@ -11524,7 +11374,7 @@ The ctx.closePath() method indicates that we would like a closed path: draw fr
 
 Try this:
 
-![](media/image145.png){width="6.5in" height="2.0840277777777776in"}
+![](./images/image145.png){width="6.5in" height="2.0840277777777776in"}
 
 HTML
 
@@ -11618,7 +11468,7 @@ The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is usefu
 
 *Note*: the figures in this page have been borrowed from the [HTML5 Canvas Tutorials](https://www.html5canvastutorials.com/tutorials/html5-canvas-arcs/) Web site.
 
-![HTML5 Canvas Arc Diagram: drawing circle, coordinate system](media/image146.jpeg){width="5.1875in" height="3.3020833333333335in"}
+![HTML5 Canvas Arc Diagram: drawing circle, coordinate system](./images/image146.jpeg){width="5.1875in" height="3.3020833333333335in"}
 
 ### Typical usage
 
@@ -11640,7 +11490,7 @@ The last parameter is optional and has a value of false by default. If true, 
 
 Try this example:
 
-![](media/image147.png){width="6.5in" height="2.0430555555555556in"}
+![](./images/image147.png){width="6.5in" height="2.0430555555555556in"}
 
 \<!DOCTYPE html\>
 
@@ -11710,11 +11560,11 @@ And if we change the last parameter of the arc function call (*line 3*) to tr
 
 Then, the result is the \"complementary\" of the previous arc:
 
-![](media/image148.png){width="6.5in" height="2.0569444444444445in"}
+![](./images/image148.png){width="6.5in" height="2.0569444444444445in"}
 
 #### Example #2: drawing a Full circle (filled + outlined)
 
-![](media/image149.png){width="6.5in" height="2.0701388888888888in"}
+![](./images/image149.png){width="6.5in" height="2.0701388888888888in"}
 
 Source code:
 
@@ -11778,11 +11628,11 @@ Notice that we called ctx.arc() only once! And drew it twice, with different s
 
 #### Project #1: modify the [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO) in order to get:
 
-![half circle](media/image150.jpeg){width="2.6145833333333335in" height="1.28125in"}
+![half circle](./images/image150.jpeg){width="2.6145833333333335in" height="1.28125in"}
 
 #### Project #2: make a small program that draws a smiling head like this (or make something better!)
 
-![smiling head](media/image151.jpeg){width="3.0in" height="2.5104166666666665in"}
+![smiling head](./images/image151.jpeg){width="3.0in" height="2.5104166666666665in"}
 
 ### 3.4.9 Drawing Rounded Rectangles
 
@@ -11790,7 +11640,7 @@ There is another method called ctx.arcTo(x1, y1, x2, y2, radius), which is a b
 
 In fact, the arcTo(\...) method draws an arc of a circle depending on some tangents. Let\'s look at these pictures for a better understanding:
 
-![There are three diagrams all drawn on canvas dynamically. The arcTo really uses arcTo() with reduced alpha, and the rest of the diagram is calculated in JavaScript and drawn with lineTo and arc. ](media/image152.jpeg){width="6.5in" height="1.8243055555555556in"}
+![There are three diagrams all drawn on canvas dynamically. The arcTo really uses arcTo() with reduced alpha, and the rest of the diagram is calculated in JavaScript and drawn with lineTo and arc. ](./images/image152.jpeg){width="6.5in" height="1.8243055555555556in"}
 
 ### Typical use
 
@@ -11818,7 +11668,7 @@ It works like this:
 
 #### Example #1: simple use
 
-![](media/image153.png){width="6.5in" height="2.05in"}
+![](./images/image153.png){width="6.5in" height="2.05in"}
 
 HTML
 
@@ -11882,7 +11732,7 @@ Source code extract:
 
 Try this:
 
-![](media/image154.png){width="6.5in" height="2.0701388888888888in"}
+![](./images/image154.png){width="6.5in" height="2.0701388888888888in"}
 
 HTML
 
@@ -12026,7 +11876,7 @@ In this example, each call to ctx.arcTo(\...) draws a side plus a corner. This
 
 This example at JS Bin is the same as the previous one, except that we added at the end of the roundedRect function the same lines of code that draw the rounded rectangle, but using lineTo instead of arcTo. Just take a look!
 
-![](media/image155.png){width="6.5in" height="2.036111111111111in"}
+![](./images/image155.png){width="6.5in" height="2.036111111111111in"}
 
 HTML
 
@@ -12160,7 +12010,7 @@ which might be easier than trying to figure out where the arc will end like this
 
 This could be particularly helpful if you are dealing with something other than a rectangle, like this rounded triangle:
 
-![](media/image156.png){width="6.5in" height="2.0701388888888888in"}
+![](./images/image156.png){width="6.5in" height="2.0701388888888888in"}
 
 HTML
 
@@ -12244,7 +12094,7 @@ roundedTriangle(ctx,200,15,300,150,15,100,20,true,true);
 
 ### Introduction
 
-![HTML5 Canvas Quadratic Curve Diagram](media/image157.png){width="5.5in" height="2.5729166666666665in"}
+![HTML5 Canvas Quadratic Curve Diagram](./images/image157.png){width="5.5in" height="2.5729166666666665in"}
 
 (Picture taken from the [HTML5 Canvas Tutorials](https://www.html5canvastutorials.com/tutorials/html5-canvas-quadratic-curves/) Web site)
 
@@ -12274,7 +12124,7 @@ The control point controls the curvature - if we move the control point farther 
 
 #### Example #1: quadratic curve
 
-![](media/image158.png){width="6.5in" height="2.05in"}
+![](./images/image158.png){width="6.5in" height="2.05in"}
 
 Source code:
 
@@ -12306,7 +12156,7 @@ We set a starting point in *line 6*: moveTo(\...), then set the control and e
 
 Try this:
 
-![](media/image159.png){width="6.5in" height="2.0701388888888888in"}
+![](./images/image159.png){width="6.5in" height="2.0701388888888888in"}
 
 HTML
 
@@ -12380,7 +12230,7 @@ Source code:
 
 We propose a useful function for drawing curved arrows. See this example:
 
-![](media/image160.png){width="6.5in" height="2.040277777777778in"}
+![](./images/image160.png){width="6.5in" height="2.040277777777778in"}
 
 JS
 
@@ -12586,7 +12436,7 @@ Notice that once again, as we modify the context properties (color, lineWidth) i
 
 Bézier curves are interesting. They are mostly used for drawing \"S\" shapes or asymmetric curves.
 
-![bezier curve in S](media/image161.jpeg){width="2.75in" height="1.875in"}
+![bezier curve in S](./images/image161.jpeg){width="2.75in" height="1.875in"}
 
 (image taken from [SitePoint](https://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html))
 
@@ -12594,7 +12444,7 @@ Bézier curves are defined by a context point, like quadratic curves, two contr
 
 The first part of the curve is tangential to the imaginary line defined by the context point and the first control point. The second part of the curve is tangential to the imaginary line defined by the second control point and the ending point.
 
-![bezier curve control points](media/image162.png){width="5.010416666666667in" height="2.3020833333333335in"}
+![bezier curve control points](./images/image162.png){width="5.010416666666667in" height="2.3020833333333335in"}
 
 (Picture taken from the [HTML5 Canvas Tutorials](https://www.html5canvastutorials.com/tutorials/html5-canvas-bezier-curves/) Web site)
 
@@ -12630,7 +12480,7 @@ Source code:
 
 Try this:
 
-![](media/image163.png){width="6.5in" height="2.0819444444444444in"}
+![](./images/image163.png){width="6.5in" height="2.0819444444444444in"}
 
 HTML
 
@@ -12925,7 +12775,7 @@ Your browser does not support the canvas tag.
 
 It is possible to define the stroke or the fill style as a \"gradient\", a set of interpolated colors, like in this example below:
 
-![](media/image167.png){width="6.5in" height="2.0819444444444444in"}
+![](./images/image167.png){width="6.5in" height="2.0819444444444444in"}
 
 JS
 
@@ -13057,13 +12907,13 @@ If you modify the source code that defines the direction of the gradient as foll
 
 \... then you will define a gradient that goes from the top left corner of the canvas to the bottom right of the canvas. Let\'s see what it does:
 
-![](media/image168.png){width="6.5in" height="2.061111111111111in"}
+![](./images/image168.png){width="6.5in" height="2.061111111111111in"}
 
 #### Example #2: drawing shapes that do not cover the whole gradient
 
 Instead of drawing a filled rectangle that covers the whole surface of the canvas, let\'s draw several smaller rectangles:
 
-![](media/image169.png){width="6.5in" height="2.075in"}
+![](./images/image169.png){width="6.5in" height="2.075in"}
 
 Note that the canvas has its default background color where we did not draw anything. And where we have drawn rectangles, we can see \"through\" and the colors from the gradient are visible.
 
@@ -13135,7 +12985,7 @@ The two loops (*lines 11-15*) draw only one cell out of two (see the j = i % 2�
 
 This code is much more complex than the previous one, taking 16 lines instead of 13, but is much more powerful. Try to call the function with a value of 10, 20, or 2\... 
 
-![](media/image170.png){width="6.5in" height="2.075in"}
+![](./images/image170.png){width="6.5in" height="2.075in"}
 
 JS
 
@@ -13233,7 +13083,7 @@ border: 1px solid black;
 
 Just as we used fillStyle and fillRect for drawing rectangles filled with a gradient, we can also use strokeStyle and strokeRect in order to draw wireframed rectangles. In the next example, which is just a variation of the previous one, we have used the lineWidth property to set the outline of the rectangles at 5 pixels:
 
-![](media/image171.png){width="6.5in" height="2.040277777777778in"}
+![](./images/image171.png){width="6.5in" height="2.040277777777778in"}
 
 JS
 
@@ -13355,7 +13205,7 @@ Let\'s go back to the very first example on this page - the one with the blue-wh
 
 Like in the first example we will draw a filled rectangle that is the same size as the canvas:
 
-![](media/image172.png){width="6.5in" height="2.0541666666666667in"}
+![](./images/image172.png){width="6.5in" height="2.0541666666666667in"}
 
 JS
 
@@ -13439,7 +13289,7 @@ Nothing special; we will \"see through the drawn shapes\", and the parts of th
 
 And if we draw the same rectangle with the canvas size, here is the result:
 
-![](media/image173.png){width="6.5in" height="2.088888888888889in"}
+![](./images/image173.png){width="6.5in" height="2.088888888888889in"}
 
 ##### JS
 
@@ -13523,7 +13373,7 @@ We can\'t! At least we can\'t without recreating it for each cell!
 
 It suffices to create a new gradient before drawing each filled rectangle, and set it with the starting and ending point of its direction/virtual line accordingly to the rectangle coordinates. Try this:
 
-![](media/image174.png){width="6.5in" height="2.0819444444444444in"}
+![](./images/image174.png){width="6.5in" height="2.0819444444444444in"}
 
 ##### JS
 
@@ -13673,7 +13523,7 @@ Radial gradients are for creating gradients that propagate/interpolate colors al
 
 Here is an example of a radial gradient that interpolates the color of the rainbow:
 
-![](media/image175.png){width="6.5in" height="2.095138888888889in"}
+![](./images/image175.png){width="6.5in" height="2.095138888888889in"}
 
 ##### JS
 
@@ -13769,7 +13619,7 @@ The method from the context object createRadialGradient(cx1, cy1, radius1, cx2,
 
 In the above example, the gradients starts at a circle located at (150, 100), with a radius of 30, and propagates to a circle with the same center as the first (150, 100), but with a bigger radius of 100, as shown below:
 
-![radial gradient](media/image176.jpeg){width="4.041666666666667in" height="2.8020833333333335in"}
+![radial gradient](./images/image176.jpeg){width="4.041666666666667in" height="2.8020833333333335in"}
 
 We added color stops using a method similar to that used for linear gradients.
 
@@ -13781,7 +13631,7 @@ You get some nice effects; here we set the second circle\'s center 60 pixels 
 
 Here is the result:
 
-![](media/image177.png){width="6.5in" height="2.0541666666666667in"}
+![](./images/image177.png){width="6.5in" height="2.0541666666666667in"}
 
 JS
 
@@ -13942,7 +13792,7 @@ There are a few steps we have to take before doing this:
 
 Here we have two rectangles drawn using a pattern (an image that can be repeated along the X and Y axis). The first is a filled rectangle while the second is \"stroked\" with a lineWidth of 20 pixels:
 
-![](media/image178.png){width="6.5in" height="2.0631944444444446in"}
+![](./images/image178.png){width="6.5in" height="2.0631944444444446in"}
 
 JS
 
@@ -14136,7 +13986,7 @@ JavaScript source code:
 
 To \"better\" see the repeatability of the pattern, here is the same example with a 1000x1000 pixel wide canvas:
 
-![](media/image179.png){width="6.5in" height="2.0631944444444446in"}
+![](./images/image179.png){width="6.5in" height="2.0631944444444446in"}
 
 JS
 
@@ -14244,7 +14094,7 @@ Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just chan
 
 Below are 4 rectangles drawn with 4 different patterns.
 
-![4 rectangles drawn with different patterns](media/image180.jpeg){width="3.78125in" height="3.78125in"}
+![4 rectangles drawn with different patterns](./images/image180.jpeg){width="3.78125in" height="3.78125in"}
 
 We said earlier that we cannot draw before the image used by a pattern is loaded. This can become rapidly complicated if we need to draw using multiple patterns. We need a way to load all images and then, *only when all images have been loaded, start drawing*.
 
@@ -14258,7 +14108,7 @@ When all images have been loaded, we call a callback function that has been pass
 
 The complete example code that produces the result shown at the beginning of this page is the following:
 
-![](media/image181.png){width="6.5in" height="2.0701388888888888in"}
+![](./images/image181.png){width="6.5in" height="2.0701388888888888in"}
 
 HTML
 
@@ -14538,7 +14388,7 @@ Here is the function:
 
 ### Context properties to draw with shadows
 
-![a green shadowed rectangle](media/image182.jpeg){width="2.5625in" height="1.4583333333333333in"}
+![a green shadowed rectangle](./images/image182.jpeg){width="2.5625in" height="1.4583333333333333in"}
 
 There are 4 properties of the canvas context that are useful for indicating that we want to draw shapes with shadows:
 
@@ -14554,7 +14404,7 @@ There are 4 properties of the canvas context that are useful for indicating that
 
 #### Example #1: simple shadows
 
-![](media/image183.png){width="6.5in" height="2.0770833333333334in"}
+![](./images/image183.png){width="6.5in" height="2.0770833333333334in"}
 
 JS
 
@@ -14758,7 +14608,7 @@ Let\'s take a [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO), t
 
 And here is the result:
 
-![](media/image184.png){width="6.5in" height="2.0701388888888888in"}
+![](./images/image184.png){width="6.5in" height="2.0701388888888888in"}
 
 HTML
 
@@ -14912,7 +14762,7 @@ Correct version of the code:
 
 And here is the final result:
 
-![](media/image185.png){width="6.5in" height="2.0631944444444446in"}
+![](./images/image185.png){width="6.5in" height="2.0631944444444446in"}
 
 HTML
 
@@ -15048,7 +14898,7 @@ We have seen this before. This is done by changing the value (in pixels) of the�
 
 Here is a complete example where we draw with a lineWidth of 20 pixels:
 
-![](media/image186.png){width="6.5in" height="2.0701388888888888in"}
+![](./images/image186.png){width="6.5in" height="2.0701388888888888in"}
 
 Source code:
 
@@ -15128,11 +14978,11 @@ Source code:
 
 The lineCap property of the context indicates the way line end caps are rendered. Possible values are butt (default), round, square (from top to bottom in the next illustration). Note that a value of \"round\" or \"square\" makes the lines slightly longer than the default value \"butt\".
 
-![line cap values](media/image187.png){width="2.09375in" height="1.3958333333333333in"}
+![line cap values](./images/image187.png){width="2.09375in" height="1.3958333333333333in"}
 
 Try this:
 
-![](media/image188.png){width="6.5in" height="2.0701388888888888in"}
+![](./images/image188.png){width="6.5in" height="2.0701388888888888in"}
 
 HTML
 
@@ -15206,7 +15056,7 @@ The lineJoin property of the context indicates the way corners are rendered, w
 
 Try this:
 
-![](media/image189.png){width="6.5in" height="2.0909722222222222in"}
+![](./images/image189.png){width="6.5in" height="2.0909722222222222in"}
 
 \<!DOCTYPE html\>
 
@@ -15276,11 +15126,11 @@ The miterLimit property value corresponds to the maximum miter length: the dis
 
 In order to avoid this situation, we can set the miterLimit property of the context to a threshold value. If the miter length exceeds the miterLimit value, then the corner will be rendered as if the lineJoin property had been set to \"bevel\" and the corner will be \"cut\".
 
-![miterLimit property shown with 3 different angles, we see that the part tha goes out of the angle can become very long](media/image190.gif){width="2.0520833333333335in" height="1.0416666666666667in"}
+![miterLimit property shown with 3 different angles, we see that the part tha goes out of the angle can become very long](./images/image190.gif){width="2.0520833333333335in" height="1.0416666666666667in"}
 
 You can try an interactive example here:
 
-![](media/image191.png){width="6.5in" height="2.0770833333333334in"}
+![](./images/image191.png){width="6.5in" height="2.0770833333333334in"}
 
 In the example, try different values for the miterLimit property. You\'ll see that the way the corners are rendered changes at values around 2 and 3.
 
@@ -15310,7 +15160,7 @@ Even before HTML5 and the introduction of the canvas element, people created HT
 
 During the late 1990s and early 2000s, JavaScript became increasingly popular. The community created a first \'umbrella term\' describing a collection of technologies used together to create interactive and animated Web sites - [DHTML (Dynamic HTML)](https://en.wikipedia.org/wiki/Dynamic_HTML). For example, check the [games developed at this time by Brent Silby](https://def-logic.com/) (they all use DHTML).
 
-![A mario like DHTML game](media/image192.png){width="2.3541666666666665in" height="1.9166666666666667in"}
+![A mario like DHTML game](./images/image192.png){width="2.3541666666666665in" height="1.9166666666666667in"}
 
 For animation, the setInterval(function, ms) and setTimeout(function, ms) methods were the only solutions. Both methods take a function as the first parameter, and a number of milliseconds as the second parameter.
 
@@ -16479,7 +16329,7 @@ At *line 2*, the value \"37\" is the key code that corresponds to the left arro
 
 A lot of people think that the canvas element is not able to get key events. Many examples on the Web handle key events on canvas by adding a listener to the window object directly, like this:
 
-![](media/image193.png){width="6.5in" height="2.05625in"}
+![](./images/image193.png){width="6.5in" height="2.05625in"}
 
 \<!DOCTYPE html\>
 
@@ -16575,7 +16425,7 @@ Indeed this solution works well if you write a game, and want to detect events w
 
 #### Example #2: moving the monster with the keyboard
 
-![](media/image194.png){width="6.5in" height="2.0770833333333334in"}
+![](./images/image194.png){width="6.5in" height="2.0770833333333334in"}
 
 HTML
 
@@ -16887,7 +16737,7 @@ And we force the canvas to get the focus with:
 
 Now, if we try an example with the above canvas declaration, we show when an HTML element has the focus: a border is added to it.
 
-![](media/image195.png){width="6.5in" height="2.0909722222222222in"}
+![](./images/image195.png){width="6.5in" height="2.0909722222222222in"}
 
 HTML
 
@@ -16967,7 +16817,7 @@ return false;
 
 Note that the line that forces the focus to the canvas is commented by default. Try to click on the canvas, then press a key, then click out of the canvas, then press a key: this time nothing happens!
 
-![a border appears when the canvas has the focus](media/image196.jpeg){width="4.927083333333333in" height="2.9479166666666665in"}
+![a border appears when the canvas has the focus](./images/image196.jpeg){width="4.927083333333333in" height="2.9479166666666665in"}
 
 Extract from the code:
 
@@ -17021,7 +16871,7 @@ Here is a modified version of the \"move monster example\" seen earlier. This t
 
 When the mouse enters the canvas we call canvas.focus() to set the focus to the canvas, and when the mouse cursor goes out of the canvas, we call canvas.blur() to unset the focus.
 
-![](media/image197.png){width="6.5in" height="2.0770833333333334in"}
+![](./images/image197.png){width="6.5in" height="2.0770833333333334in"}
 
 HTML
 
@@ -17303,7 +17153,7 @@ The event received by the listener function will be used for getting the button 
 
 ### The different mouse events
 
-![Mouse events illustrated](media/image198.png){width="3.6145833333333335in" height="2.6354166666666665in"}
+![Mouse events illustrated](./images/image198.png){width="3.6145833333333335in" height="2.6354166666666665in"}
 
 We saw in the last example how to detect the mouseenter and mouseout events.
 
@@ -17333,7 +17183,7 @@ Fortunately, there exists a method for getting the position and size of any elem
 
 Play with the example below that show the problem:
 
-![](media/image199.png){width="4.0in" height="2.4978882327209098in"}
+![](./images/image199.png){width="4.0in" height="2.4978882327209098in"}
 
 JS
 
@@ -17501,11 +17351,11 @@ WRONG code:
 
 Here is the result, when the mouse is approximately at the top left corner of the canvas:
 
-![bad mouse coords](media/image200.jpeg){width="6.5in" height="2.1791666666666667in"}
+![bad mouse coords](./images/image200.jpeg){width="6.5in" height="2.1791666666666667in"}
 
 GOOD version of the code:
 
-![](media/image201.png){width="4.0in" height="2.4978882327209098in"}
+![](./images/image201.png){width="4.0in" height="2.4978882327209098in"}
 
 function getMousePos(canvas, evt) {
 
@@ -17525,15 +17375,15 @@ function getMousePos(canvas, evt) {
 
 Result (the cursor is approximately at the top left corner):
 
-![mouse at zero zero](media/image202.jpeg){width="3.0in" height="1.6956528871391077in"}
+![mouse at zero zero](./images/image202.jpeg){width="3.0in" height="1.6956528871391077in"}
 
 ### How to display the mouse position, and the mouse button that has been pressed or released
 
 This example uses the previous function for computing the mouse position correctly. It listens to mousemove, mousedown and mouseup events, and shows how to get the mouse button number using the evt.button property.
 
-![](media/image203.png){width="4.0in" height="2.4978882327209098in"}
+![](./images/image203.png){width="4.0in" height="2.4978882327209098in"}
 
-![mouse event example](media/image204.jpeg){width="5.0in" height="1.8146380139982503in"}
+![mouse event example](./images/image204.jpeg){width="5.0in" height="1.8146380139982503in"}
 
 Extract from source code:
 
@@ -17625,7 +17475,7 @@ Extract from source code:
 
 This example shows an animation at 60 frames/s using requestAnimationFrame, were the monster is drawn at the mouse position, and if a mouse button is pressed, the monster starts rotating around its center. If we release the mouse button, the rotation stops:
 
-![](media/image205.png){width="4.0in" height="2.56540135608049in"}
+![](./images/image205.png){width="4.0in" height="2.56540135608049in"}
 
 Code:
 
@@ -17731,7 +17581,7 @@ This example shows one very important good practice when doing animation and int
 
 #### Example #2: draw in a canvas as if you were using a pencil
 
-![](media/image206.png){width="4.0in" height="2.56540135608049in"}
+![](./images/image206.png){width="4.0in" height="2.56540135608049in"}
 
 Source code:
 
@@ -17813,7 +17663,7 @@ We had to define a variable started=false; as we cannot draw any line before 
 
 #### Example #3: same as example #2 but we draw only when a mouse button is pressed
 
-![](media/image207.png){width="4.0in" height="2.56540135608049in"}
+![](./images/image207.png){width="4.0in" height="2.56540135608049in"}
 
 We just added mouseup and  mousedown listeners, extract from the source code:
 
@@ -17891,7 +17741,7 @@ Before looking at how best to handle canvas resizing, let\'s see some examples 
 
 #### Example #1: changing the size of a canvas on the fly erases its content!
 
-![](media/image208.png){width="4.0in" height="2.5492661854768155in"}
+![](./images/image208.png){width="4.0in" height="2.5492661854768155in"}
 
 Code:
 
@@ -17921,11 +17771,11 @@ Code:
 
 This time we are using a similar example as above, but we removed the button for resizing it, and we set the size of the canvas to 100x100 pixels. Instead of drawing inside, we draw two lines that join the diagonals.
 
-![](media/image209.png){width="4.0in" height="2.5492661854768155in"}
+![](./images/image209.png){width="4.0in" height="2.5492661854768155in"}
 
 Then, we added this CSS rule:
 
-![](media/image210.png){width="4.0in" height="2.5492661854768155in"}
+![](./images/image210.png){width="4.0in" height="2.5492661854768155in"}
 
 It\'s the same example as before, just adding this CSS code:
 
@@ -17961,7 +17811,7 @@ This is the trick to create a really responsive canvas:
 
 Yep, this is not a straightforward process\...
 
-![div and canvas inside. Div has CSS width=100% and height = 50%](media/image211.jpeg){width="5.572916666666667in" height="3.03125in"}
+![div and canvas inside. Div has CSS width=100% and height = 50%](./images/image211.jpeg){width="5.572916666666667in" height="3.03125in"}
 
 HTML code:
 
@@ -18033,11 +17883,11 @@ JavaScript code for the resize event listener:
 
 See the complete example that corresponds to the above code:
 
-![](media/image212.png){width="4.0in" height="2.5492661854768155in"}
+![](./images/image212.png){width="4.0in" height="2.5492661854768155in"}
 
 #### Example #4: the same example with the monster 
 
-![](media/image213.png){width="4.0in" height="2.5492661854768155in"}
+![](./images/image213.png){width="4.0in" height="2.5492661854768155in"}
 
 When the canvas is resized, its width became smaller than the monster\'s size. We **scale** down the monster (using ctx.scale!)
 
@@ -18110,7 +17960,7 @@ In that course, you will learn:
 ```
 -   **Sprite based animation**: like this [one](https://jsbin.com/libakum/1/edit?html,js,console,output) (this is ugly code to demonstrate the principle - in the course we develop a clean, sprite animation framework). Use the arrow keys after clicking in the canvas. It\'s better to try in standalone mode (click on the small black arrow in the top right of the JSBin window).
 
-![sprite sheet](media/image214.png){width="3.0in" height="3.538461286089239in"}
+![sprite sheet](./images/image214.png){width="3.0in" height="3.538461286089239in"}
 
 ### 5.1.1 Video Intro - Module 5
 
@@ -18162,7 +18012,7 @@ It uses the geolocation API presented in Module 6 for auto-filling the address i
 
 Feel free to look at the source code in the [online example](https://jsbin.com/sivula/edit):
 
-![](media/image215.jpeg){width="4.0in" height="3.3186811023622047in"}
+![](./images/image215.jpeg){width="4.0in" height="3.3186811023622047in"}
 
 ### 5.2.3 Input Elements and Attributes
 
@@ -18221,7 +18071,7 @@ The example shown in the video shows some best practices for writing accessible 
 
 The following additional example shows the same best practices but presents a more complete form with CSS rules to make a nice layout. See it [online](https://jsbin.com/zubitex/1/edit?html,output), and illustrated with the screenshot below. It is adapted from [this very good MDN\'s article \"How to structure a web form\"](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form).
 
-![Form layout example](media/image216.jpeg){width="3.0in" height="3.9012346894138235in"}
+![Form layout example](./images/image216.jpeg){width="3.0in" height="3.9012346894138235in"}
 
 ### 5.3.1 Accessible Forms
 
@@ -18257,7 +18107,7 @@ Forms can be visually and cognitively complex and difficult to use. Accessible f
 
 Form fields and other form controls usually have visible labels, such as \"E-mail Address:\" as the label for a text field (see figure below).
 
-![form label text](media/image217.png){width="2.5208333333333335in" height="0.3020833333333333in"}
+![form label text](./images/image217.png){width="2.5208333333333335in" height="0.3020833333333333in"}
 
 When these labels are marked up correctly, people can interact with them using only the keyboard, using voice input, and using screen readers. Also, the label itself becomes clickable, which enables a person who has difficulty clicking on small radio buttons or checkboxes to click anywhere on the label text.
 
@@ -18271,7 +18121,7 @@ Click on the label, not on the input field to see the effect.
 
 Top of Form
 
-First name:![](media/image218.wmf)
+First name:![](./images/image218.wmf)
 
 Source code:
 
@@ -18299,8 +18149,8 @@ Click on the label \"Subscribe to newsletter\" to see what this does.
 
 Top of Form
 
-First name:![](media/image218.wmf)\
-Subscribe to newsletter![](media/image219.wmf)
+First name:![](./images/image218.wmf)\
+Subscribe to newsletter![](./images/image219.wmf)
 
 Source code:
 
@@ -18340,12 +18190,12 @@ These give the same results:
 Submit Cancel\
 \
 \... while li*nes 3 and 4* render as:\
-![](media/image220.wmf) 
+![](./images/image220.wmf) 
 
 ### Labeling text areas
 
 Enter your address:\
-![](media/image221.wmf)
+![](./images/image221.wmf)
 
 Source code:
 
@@ -18365,11 +18215,11 @@ In the example below, there are three radio buttons that allow the user to choos
 
 Top of Form
 
-Output format![](media/image222.wmf)Text file\
+Output format![](./images/image222.wmf)Text file\
 \
-![](media/image222.wmf)CSV file\
+![](./images/image222.wmf)CSV file\
 \
-![](media/image222.wmf)HTML file
+![](./images/image222.wmf)HTML file
 
 Bottom of Form
 
@@ -18407,11 +18257,11 @@ Top of Form
 
 I want to receive
 
-![](media/image219.wmf)The weekly newsletter
+![](./images/image219.wmf)The weekly newsletter
 
-![](media/image219.wmf)Offers from the company
+![](./images/image219.wmf)Offers from the company
 
-![](media/image219.wmf)Offers from associated companies
+![](./images/image219.wmf)Offers from associated companies
 
 Bottom of Form
 
@@ -18449,7 +18299,7 @@ MDN\'s Web docs [article on \<input\> types](https://developer.mozilla.org/en
 
 Now, let\'s play with some of these input types and attributes.
 
-![HTML4 old HTML5 new](media/image223.jpeg){width="2.0in" height="1.5972222222222223in"}
+![HTML4 old HTML5 new](./images/image223.jpeg){width="2.0in" height="1.5972222222222223in"}
 
 ### 5.4.2 "color"
 
@@ -18457,7 +18307,7 @@ For years, we used hundreds of lines of JavaScript for selecting colors. Now, it
 
 Here is how it looks on some mobile devices:
 
-![HTML5 input type=color on an android phone](media/image224.jpeg){width="4.0in" height="3.0in"}
+![HTML5 input type=color on an android phone](./images/image224.jpeg){width="4.0in" height="3.0in"}
 
 ### Typical use
 
@@ -18481,13 +18331,13 @@ Try \<input type=\"color\"\> online with this[ JSBin example](https://jsbin.c
 
 Here is the result on Google Chrome (works with other browsers too, though the *look and feel* may differ):
 
-![input type=color in google chrome](media/image225.jpeg){width="4.0in" height="3.2051695100612423in"}
+![input type=color in google chrome](./images/image225.jpeg){width="4.0in" height="3.2051695100612423in"}
 
 #### Example: changing the background color of the page
 
 The \<input type=\"color\"\> can fire change or input events. Here is an example that changes the background color of the page when a color is chosen. [Try it online at JSBin](https://jsbin.com/jozuter/1/edit?html,css,js,console,output).
 
-![change background color of the body](media/image226.jpeg){width="4.0in" height="3.6217300962379704in"}
+![change background color of the body](./images/image226.jpeg){width="4.0in" height="3.6217300962379704in"}
 
 Source code:
 
@@ -18525,7 +18375,7 @@ By default, the color selector offers many options that may either frighten some
 
 Example: click the black rectangle on the right:  . The following should be displayed:
 
-![restricted choice of color](media/image227.jpeg){width="3.0in" height="1.872483595800525in"}
+![restricted choice of color](./images/image227.jpeg){width="3.0in" height="1.872483595800525in"}
 
 [Online example at JSBin](https://jsbin.com/lahapu/edit?html,output)
 
@@ -18561,7 +18411,7 @@ For years, date and time pickers in HTML forms made Web developers rely heavily 
 
 Below are a few screenshots of the HTML5 date picker on several mobile devices. Note that the native date pickers of the operating systems are used:
 
-![date picker 1](media/image228.png){width="2.0in" height="3.0in"}![date picker 2 on mobile](media/image229.jpeg){width="1.0in" height="1.778261154855643in"}![date picker 3 on mobile](media/image230.png){width="3.0in" height="1.734491469816273in"}
+![date picker 1](./images/image228.png){width="2.0in" height="3.0in"}![date picker 2 on mobile](./images/image229.jpeg){width="1.0in" height="1.778261154855643in"}![date picker 3 on mobile](./images/image230.png){width="3.0in" height="1.734491469816273in"}
 
 The problem is different on a desktop. While it\'s great to have native support for a date picker, Web developers would sometimes prefer 100% control over the *look and feel* of the date picker widget. For this purpose, the solution undoubtedly lies with the new [Web Components](https://webcomponents.org/) (a way to make custom reusable widgets in HTML/CSS/JS), to be detailed in the W3Cx HTML5 Apps and Games course
 
@@ -18569,7 +18419,7 @@ Why don\'t you try it yourself? Just click on this input field:    
 
 With Firefox, it shows this date picker widget:
 
-![Firefox desktop date picker](media/image231.png){width="2.0in" height="1.5789468503937008in"}
+![Firefox desktop date picker](./images/image231.png){width="2.0in" height="1.5789468503937008in"}
 
 On non-supported browsers, it defaults to an \<input type=\"text\"\> input field.
 
@@ -18593,7 +18443,7 @@ The \<input type=\"date\"\> comes with several useful attributes. In particula
 
 Try this example: just click the next input field: , or [try it online on JSBin](https://jsbin.com/faluta/1/edit?html,output) if you want to tweak the source code: 
 
-![input type = date with min and max attributes. This will render two non selectable areas (dates before min and dates after max). Only the dates between min and max are selectable in the displayed calendar.](media/image232.jpeg){width="4.0in" height="2.2641021434820647in"}
+![input type = date with min and max attributes. This will render two non selectable areas (dates before min and dates after max). Only the dates between min and max are selectable in the displayed calendar.](./images/image232.jpeg){width="4.0in" height="2.2641021434820647in"}
 
 Source code:
 
@@ -18617,7 +18467,7 @@ Using the value attribute for setting a date, and using step=7 for example, 
 
 Example: we want to celebrate birthday parties only on Saturdays, [check this on JSBin](https://jsbin.com/hudafo/1/edit?html,output)! (screenshot from Chrome).
 
-![use of the step attribute, select only saturdays](media/image233.png){width="4.0in" height="2.1055555555555556in"}
+![use of the step attribute, select only saturdays](./images/image233.png){width="4.0in" height="2.1055555555555556in"}
 
 Extract from source code:
 
@@ -18637,7 +18487,7 @@ Extract from source code:
 
 [Online example at JSBin](https://jsbin.com/gezawe/1/edit?html,output) (screenshot from Chrome).
 
-![restrict choices using a datalist element](media/image234.jpeg){width="4.0in" height="1.4850426509186352in"}
+![restrict choices using a datalist element](./images/image234.jpeg){width="4.0in" height="1.4850426509186352in"}
 
 Extract from source code:
 
@@ -18733,11 +18583,11 @@ The object returned to the input event handler has a useful property named valu
 
 [The following example at JSBin](https://jsbin.com/renevaf/edit?html,output) shows how to ascertain whether a date is in the past or in the future: 
 
-![date in the past, it\'s ok](media/image235.jpeg){width="4.0in" height="2.7547003499562557in"}
+![date in the past, it\'s ok](./images/image235.jpeg){width="4.0in" height="2.7547003499562557in"}
 
 While if we enter a date in the future:
 
-![date in the future: bad](media/image236.jpeg){width="3.0in" height="1.482557961504812in"}
+![date in the future: bad](./images/image236.jpeg){width="3.0in" height="1.482557961504812in"}
 
 Extract from source code:
 
@@ -18807,29 +18657,29 @@ Some screenshots from Opera desktops and Safari IOS:
 
 \<input type=\"time\"\>:
 
-![time](media/image237.png){width="3.03125in" height="0.4270833333333333in"}
+![time](./images/image237.png){width="3.03125in" height="0.4270833333333333in"}
 
-![input type=time safari IOS](media/image238.png){width="2.0in" height="3.0in"}
+![input type=time safari IOS](./images/image238.png){width="2.0in" height="3.0in"}
 
 \<input type=\"datetime\"\>
 
-![datetime](media/image239.png){width="2.0in" height="1.9115649606299212in"}
+![datetime](./images/image239.png){width="2.0in" height="1.9115649606299212in"}
 
-![input type=datetime on safari IOS](media/image240.png){width="2.0in" height="3.0in"}
+![input type=datetime on safari IOS](./images/image240.png){width="2.0in" height="3.0in"}
 
 \<input type=\"datetime-local\"\>
 
-![datetime-local example](media/image241.png){width="2.0in" height="1.8679866579177602in"}
+![datetime-local example](./images/image241.png){width="2.0in" height="1.8679866579177602in"}
 
 \<input type=\"week\"\>:
 
-![week](media/image242.jpeg){width="4.0in" height="1.2696576990376203in"}
+![week](./images/image242.jpeg){width="4.0in" height="1.2696576990376203in"}
 
 \<input type=\"month\"\>:
 
-![month](media/image243.jpeg){width="4.0in" height="1.4222222222222223in"}
+![month](./images/image243.jpeg){width="4.0in" height="1.4222222222222223in"}
 
-![input type=month safari IOS](media/image244.png){width="2.0in" height="3.0in"}
+![input type=month safari IOS](./images/image244.png){width="2.0in" height="3.0in"}
 
 ### 5.4.4 "e-mail", "tel", "URL", and "search"
 
@@ -18839,7 +18689,7 @@ Let\'s study 4 input types: email\", \"tel\", \"URL\" and \"search\".
 
 This input type is relatively straightforward to use. In mobile applications, this new input type pops up a keyboard layout adapted to email input. Note the \"@\" key, the \".\" key, etc.
 
-![contextual mobile keyboard for entering an email address](media/image245.jpeg){width="2.0in" height="3.0in"}
+![contextual mobile keyboard for entering an email address](./images/image245.jpeg){width="2.0in" height="3.0in"}
 
 This input type is very interesting as it provides default validation behaviors:
 
@@ -18853,7 +18703,7 @@ Typical use:
 
 [Online example at CodePen](https://codepen.io/w3devcampus/pen/aWXKWR)
 
-![](media/image246.png){width="3.0in" height="1.9131353893263343in"}
+![](./images/image246.png){width="3.0in" height="1.9131353893263343in"}
 
 Try it on your browser:                         Enter your email: 
 
@@ -18895,13 +18745,13 @@ Note the CSS rule that turns the background color of the email input field to p
 
 This input field is really useful on smartphones and tablets, as it makes the browser pop up a keyboard layout suitable for entering phone numbers:
 
-![mobile keyboard 1 for input type=tel](media/image247.png){width="2.0in" height="1.6131386701662291in"}![other mobile keyboard for input type=tel](media/image248.png){width="2.0in" height="1.4700853018372704in"}
+![mobile keyboard 1 for input type=tel](./images/image247.png){width="2.0in" height="1.6131386701662291in"}![other mobile keyboard for input type=tel](./images/image248.png){width="2.0in" height="1.4700853018372704in"}
 
 This input type is often used with the new placeholder and pattern attributes that are detailed in another section of this course. It is supported by all recent major Web browsers, on mobile devices and desktops.
 
 [Online example on CodePen](https://codepen.io/w3devcampus/pen/Njozvd)
 
-![](media/image249.png){width="3.0in" height="1.9131353893263343in"}
+![](./images/image249.png){width="3.0in" height="1.9131353893263343in"}
 
 Try it in your browser (we used the same CSS for changing the background-color when the input value is invalid):
 
@@ -18949,7 +18799,7 @@ Source code:
 
 This input field is really useful on smartphones and tablets, as it makes the browser pop up a keyboard layout suitable for entering URLs:
 
-![mobile keyboard for entering URLs](media/image250.png){width="2.0in" height="1.6934306649168853in"}
+![mobile keyboard for entering URLs](./images/image250.png){width="2.0in" height="1.6934306649168853in"}
 
 This field is also compatible with *the validation API* (more on this in another section).
 
@@ -19011,7 +18861,7 @@ The search type is used for search fields (i.e., for a search engine). A search 
 
 The specification does not state what the GUI should look like, so current implementations show variations in the look and feel.
 
-![input type=search rendered on a smartphone](media/image251.jpeg){width="4.0in" height="3.0098293963254594in"}
+![input type=search rendered on a smartphone](./images/image251.jpeg){width="4.0in" height="3.0098293963254594in"}
 
 Typical use:
 
@@ -19027,15 +18877,15 @@ Typical use:
 
 Results on Chrome and Opera desktop - notice the small cross on the right when one enters a value:
 
-![input type=search in google chrome and opera](media/image252.jpeg){width="4.0in" height="0.6690912073490813in"}
+![input type=search in google chrome and opera](./images/image252.jpeg){width="4.0in" height="0.6690912073490813in"}
 
 Same example with Safari desktop, this time the second line with an attribute results=5 shows a small icon on the left:
 
-![input type=search on safari](media/image253.jpeg){width="4.0in" height="1.0114063867016623in"}
+![input type=search on safari](./images/image253.jpeg){width="4.0in" height="1.0114063867016623in"}
 
 Example that shows a drop down list of recent searches (Safari screenshot borrowed from [this excellent site about HTML5 forms that is worth reading](https://www.wufoo.com/html5/types/5-search.html)):
 
-![example 2 of input type=search on safari, shows recent results](media/image254.png){width="2.0in" height="2.62711832895888in"}
+![example 2 of input type=search on safari, shows recent results](./images/image254.png){width="2.0in" height="2.62711832895888in"}
 
 Source code for the knowledge check below
 
@@ -19087,11 +18937,11 @@ Example: **\<input type=\"number\" value=\"25\" min=\"0\" step=\"5\" max=\
 
 Screenshot example taken with a mobile device :
 
-![numeric keyboard on safari IOS](media/image255.png){width="2.0in" height="1.3413659230096238in"}
+![numeric keyboard on safari IOS](./images/image255.png){width="2.0in" height="1.3413659230096238in"}
 
 Examples on desktop (the width will be adjusted depending on the min and max attributes):
 
-![input type=number example](media/image256.jpeg){width="3.25in" height="0.4791666666666667in"}
+![input type=number example](./images/image256.jpeg){width="3.25in" height="0.4791666666666667in"}
 
 Typical usage
 
@@ -19113,7 +18963,7 @@ If the difference between the value you enter and min is a multiple of step
 
 [Online example in CodePen](https://codepen.io/w3devcampus/pen/GJrQzP):  (try changing the attribute values, use step=\"any\" and try float values, etc).
 
-![](media/image257.png){width="4.0in" height="2.550847550306212in"}
+![](./images/image257.png){width="4.0in" height="2.550847550306212in"}
 
 Or, do it here in your browser (Manually enter a value that is not in the range, or not a multiple of 5, try the up and down arrows, etc.):
 
@@ -19161,17 +19011,17 @@ Source code:
 
 ### 5.4.6 "range"
 
-![zipper with funny label input type=range](media/image258.jpeg){width="5.0in" height="1.498931539807524in"}
+![zipper with funny label input type=range](./images/image258.jpeg){width="5.0in" height="1.498931539807524in"}
 
 This input type renders as a slider. It accepts the same attributes as the \<input type=\"number\"\> : min, max, step and value.
 
 Example of rendering on a desktop:
 
-![input type=range](media/image259.jpeg){width="3.0in" height="0.8983048993875765in"}
+![input type=range](./images/image259.jpeg){width="3.0in" height="0.8983048993875765in"}
 
 And on mobile devices:
 
-![ios range input](media/image260.png){width="2.0in" height="3.0in"}![input type=range android](media/image261.jpeg){width="2.0in" height="3.5555555555555554in"}
+![ios range input](./images/image260.png){width="2.0in" height="3.0in"}![input type=range android](./images/image261.jpeg){width="2.0in" height="3.5555555555555554in"}
 
 Typical use
 
@@ -19183,7 +19033,7 @@ But most of the time, you will need a visual feedback that shows the current va
 
 [This online example on CodePen](https://codepen.io/w3devcampus/pen/BRMVGW) shows how to add a visual feedback using a very short JavaScript function and an \<output\> element. Just click and drag the small cursor of the slider (or use up and down arrow keys when the field has the focus):
 
-![](media/image262.png){width="5.0in" height="3.1885586176727907in"}
+![](./images/image262.png){width="5.0in" height="3.1885586176727907in"}
 
 Source code:
 
@@ -19259,7 +19109,7 @@ Source code:
 
 ## Snapping behavior and the step attribute
 
-![jumps + steps](media/image263.jpeg){width="3.1041666666666665in" height="1.4791666666666667in"}
+![jumps + steps](./images/image263.jpeg){width="3.1041666666666665in" height="1.4791666666666667in"}
 
 When you click and drag the slider, it \"jumps\" to some snap points corresponding to the integer values of the range defined by the min and max attributes. The \"size of the jumps\" depends on the value of the step attribute.
 
@@ -19282,7 +19132,7 @@ So, for accepting float values, it is necessary to use step=\"any\", or step eq
 
 Adding \"ticks\" to the range slider using a \<datalist\> element
 
-![complicated ticks on a rule](media/image264.jpeg){width="4.416666666666667in" height="1.375in"}
+![complicated ticks on a rule](./images/image264.jpeg){width="4.416666666666667in" height="1.375in"}
 
 Using the \<datalist\> element, it\'s possible to display \"ticks\" above the range slider, at given positions.
 
@@ -19378,7 +19228,7 @@ value=5 min=0, max=10 step=\"any\", ticks at 0, 5 and 10:  
 
 In this chapter, we go over the form attributes that have been introduced by HTML5.
 
-![html5 form attributes](media/image265.jpeg){width="2.5in" height="1.8730883639545057in"}
+![html5 form attributes](./images/image265.jpeg){width="2.5in" height="1.8730883639545057in"}
 
 We have already seen the use of pseudo CSS classes used together with the input field and form validation (pattern attribute, input:invalid CSS rule). We also briefly looked at the use of the placeholder attributes for displaying a helper message in the input field.
 
@@ -19394,11 +19244,11 @@ This attribute is useful for putting input fields outside the form itself. The 
 
 [Try this interactive example in CodePen](http://codepen.io/w3devcampus/pen/jmdpyv),  or try it directly in your browser:
 
-Enter your name (field outside the form): ![](media/image266.wmf)
+Enter your name (field outside the form): ![](./images/image266.wmf)
 
 ##### Top of Form
 
-Choose optionFree registering![](media/image219.wmf)Premium![](media/image219.wmf) Send form
+Choose optionFree registering![](./images/image219.wmf)Premium![](./images/image219.wmf) Send form
 
 Bottom of Form
 
@@ -19460,7 +19310,7 @@ This attribute applies either to the \<form\> element or on individual \<inpu
 
 Possible values of this attribute: on/off.
 
-![on off funny picture](media/image267.jpeg){width="1.6354166666666667in" height="1.2291666666666667in"}
+![on off funny picture](./images/image267.jpeg){width="1.6354166666666667in" height="1.2291666666666667in"}
 
 If applied to the \<form\> element, all input fields attached to the form (inside or linked to it using the form attribute), will have auto-completion set by default to the value of the autocomplete attribute of the form.
 
@@ -19472,7 +19322,7 @@ This attribute targets most input types (those that allow typing in them).
 
 ### Typical use
 
-![example of use of the autocomplete attribute](media/image268.jpeg){width="4.0in" height="2.9568482064741906in"}
+![example of use of the autocomplete attribute](./images/image268.jpeg){width="4.0in" height="2.9568482064741906in"}
 
 Try it in your browser here:
 
@@ -19530,9 +19380,9 @@ Here is the result in your browser:
 
 Top of Form
 
-Example of use of the autofocus attributeThis is an input field:![](media/image266.wmf)
+Example of use of the autofocus attributeThis is an input field:![](./images/image266.wmf)
 
-Enter at least 6 chars, max 9 chars (this field has the autofocus attribute):![](media/image218.wmf)
+Enter at least 6 chars, max 9 chars (this field has the autofocus attribute):![](./images/image218.wmf)
 
 Bottom of Form
 
@@ -19632,7 +19482,7 @@ Please try it in your  browser (Type \"F\", \"E\", \"O\", C\" etc., or just cli
 
 Top of Form
 
-List attributePreferred browser![](media/image269.wmf) ![](media/image270.wmf)
+List attributePreferred browser![](./images/image269.wmf) ![](./images/image270.wmf)
 
 Bottom of Form
 
@@ -19676,7 +19526,7 @@ A **must read**: a good catalog of ready-to-go patterns is available at html5pa
 
 You can also try [this online JavaScript RegExps tester](https://regex101.com/#javascript), and follow [this tutorial about \"using JavaScript RegExps\"](https://regexone.com/) that has step by step exercises and explanations.
 
-![html5patterns.com screenshot that shows a menu on the left with categories and patterns on the right](media/image271.jpeg){width="4.020833333333333in" height="2.4895833333333335in"}
+![html5patterns.com screenshot that shows a menu on the left with categories and patterns on the right](./images/image271.jpeg){width="4.020833333333333in" height="2.4895833333333335in"}
 
 ### Typical use
 
@@ -19698,7 +19548,7 @@ Just add a pattern attribute with a value that is the JavaScript regular expre
 
 Try this [online example at JSBin ](https://jsbin.com/xeyuqux/1/edit?html,output)or directly in your browser below:
 
-Please enter a 3 letter country code (green = valid, pink = invalid): ![](media/image266.wmf)
+Please enter a 3 letter country code (green = valid, pink = invalid): ![](./images/image266.wmf)
 
 With the previous example, until the value of the input field is equal to 3 alphabetic characters, the field is invalid.
 
@@ -19756,7 +19606,7 @@ Try this [example online](https://jsbin.com/bozudeg/1/edit?html,output) or in 
 
 Attributes used: placeholder (for displaying a ghost example value), pattern, required (empty field = invalid)\...
 
-Enter a pseudo (6-12 characters): ![](media/image218.wmf)
+Enter a pseudo (6-12 characters): ![](./images/image218.wmf)
 
 Complete source code:
 
@@ -20064,7 +19914,7 @@ The first shows a form with two submit buttons: 
 
 -   the second button submits to another action specified by its formaction attribute.
 
-![](media/image272.png){width="4.0in" height="1.6570155293088364in"}
+![](./images/image272.png){width="4.0in" height="1.6570155293088364in"}
 
 The second example shows a form with two submit buttons:
 
@@ -20072,7 +19922,7 @@ The second example shows a form with two submit buttons:
 
 -   the second button using a POST:
 
-![](media/image273.png){width="4.0in" height="1.4247790901137358in"}
+![](./images/image273.png){width="4.0in" height="1.4247790901137358in"}
 
 ### 5.5.11 formnovalidate
 
@@ -20138,9 +19988,9 @@ Possible values for the formtarget attributes are:
 
 Top of Form
 
-Given name: ![](media/image269.wmf)\
-Family name: ![](media/image269.wmf)\
-![](media/image274.wmf) ![](media/image275.wmf)
+Given name: ![](./images/image269.wmf)\
+Family name: ![](./images/image269.wmf)\
+![](./images/image274.wmf) ![](./images/image275.wmf)
 
 Source code:
 
@@ -20232,7 +20082,7 @@ The possible values for this field are:
 
 [Try this online example at JSBin](https://jsbin.com/lokukam/4/edit?html,output)
 
-![example of use of the formenctype attribute](media/image276.png){width="4.0in" height="1.2413790463692038in"}
+![example of use of the formenctype attribute](./images/image276.png){width="4.0in" height="1.2413790463692038in"}
 
 Source code:
 
@@ -20282,11 +20132,11 @@ Source code:
 
 If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,output) standalone mode (click the black arrow on the top right of the output tab, in JSBin), you should see this:
 
-![js bin screenshot of the above example](media/image277.png){width="5.0in" height="2.931089238845144in"}
+![js bin screenshot of the above example](./images/image277.png){width="5.0in" height="2.931089238845144in"}
 
 Then, open the devtools and go to the \"Network\" tab, click on the POST request. Once done, click on the right on the \"Header\" tab to see the HTTP headers, and scroll down, you should see the form-data entries in the header, like in this screenshot:
 
-![](media/image278.png){width="5.0in" height="3.4780982064741908in"}
+![](./images/image278.png){width="5.0in" height="3.4780982064741908in"}
 
 And if you start again and click on the left submit button, the one without the formenctype attribute, you should see that the form content has been submitted \"normally\" (default value is \"urlencoded\", spaces are replaced by \"+\", etc.). Here is a screenshot of what you should see:
 
@@ -20324,7 +20174,7 @@ Let\'s look at the HTML5 elements related to forms (specifically: \<datalist\>,
 
 The output element represents the result of a computation or user action. You can see it as a \"specialized \<div\> or \<span\>\" for displaying interactive results.
 
-![example of output element use](media/image279.jpeg){width="3.0in" height="0.7894739720034996in"}
+![example of output element use](./images/image279.jpeg){width="3.0in" height="0.7894739720034996in"}
 
 Typical use / interactive examples
 
@@ -20396,7 +20246,7 @@ The \<meter\> element displays colored bars to represent numeric values.
 
 It can be useful to display a colored gauge to show disk usage, to highlight the relevance of a query result, or the fraction of a voting population that favours a particular candidate, etc. This element is often used with the \<input type=\"range\"\> field as an instant feedback indicator.
 
-![picture of a meter example](media/image280.jpeg){width="5.0in" height="0.8374792213473315in"}
+![picture of a meter example](./images/image280.jpeg){width="5.0in" height="0.8374792213473315in"}
 
 The \<meter\> element should not be used to indicate progress. You should instead use a \<progress\> element.
 
@@ -20444,7 +20294,7 @@ Source code of the example:
 
 **Explanations:**
 
-![The link between the slider (an \<input type=range\>) and the meter element is done using an input event handler (oninput=\"effect(\...)\" line 4. The effect JavaScript function will change the current value of the \<meter\> element (line 9) and update the displayed html content of the \<output\> element (line 10)](media/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
+![The link between the slider (an \<input type=range\>) and the meter element is done using an input event handler (oninput=\"effect(\...)\" line 4. The effect JavaScript function will change the current value of the \<meter\> element (line 9) and update the displayed html content of the \<output\> element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
 
 The link between the slider (an \<input type=range\>) and the meter element is done using an input event handler (oninput=\"effect(\...)\") at li*ne 4*.
 
@@ -20478,7 +20328,7 @@ The \<progress\> element is similar to \<meter\> but it is used for progress
 
 1.  \<progress id=pr value=50 min=0 max=100\>
 
-![picture of a funny progress meme syaing \'Every mistake you make is progress\'](media/image282.jpeg){width="0.9479166666666666in" height="1.0625in"}
+![picture of a funny progress meme syaing \'Every mistake you make is progress\'](./images/image282.jpeg){width="0.9479166666666666in" height="1.0625in"}
 
 Gives:  
 
@@ -20486,7 +20336,7 @@ The browser calculates the percentage corresponding to the value, min and m
 
 If no value attribute is set, the progress bar will display an \"indeterminate look\", that may slightly vary among different browser implementations. 
 
-![indeterminate progress bar screenshot](media/image283.jpeg){width="5.052083333333333in" height="0.6354166666666666in"}
+![indeterminate progress bar screenshot](./images/image283.jpeg){width="5.052083333333333in" height="0.6354166666666666in"}
 
 Typical use
 
@@ -20522,11 +20372,11 @@ Source code:
 
 The \<datalist\> form element is useful for linking a list of choices to an input element.
 
-![example of datalist for autocompletion](media/image284.png){width="2.8854166666666665in" height="1.5729166666666667in"} ![Another example of use of datalist](media/image285.png){width="2.8958333333333335in" height="0.625in"}
+![example of datalist for autocompletion](./images/image284.png){width="2.8854166666666665in" height="1.5729166666666667in"} ![Another example of use of datalist](./images/image285.png){width="2.8958333333333335in" height="0.625in"}
 
 We have already seen this element in action with different \<input\> elements, such as \<input type=\"color\"\>, \<input type=\"date\"\>, or \<input type=\"range\"\>.
 
-![restricted choice of color](media/image227.jpeg){width="1.5520833333333333in" height="0.96875in"}![restrict choices using a datalist element](media/image286.jpeg){width="6.260416666666667in" height="2.625in"}![example of datalist for sliders ticks](media/image287.jpeg){width="6.5in" height="0.45416666666666666in"}
+![restricted choice of color](./images/image227.jpeg){width="1.5520833333333333in" height="0.96875in"}![restrict choices using a datalist element](./images/image286.jpeg){width="6.260416666666667in" height="2.625in"}![example of datalist for sliders ticks](./images/image287.jpeg){width="6.5in" height="0.45416666666666666in"}
 
 It is often \"linked\" to input fields either for restricting the value set that can be proposed  (i.e., restricted set of colors or possible dates, or for displaying slider ticks, as shown above), **but it may also be used in a more general way, for providing client-side auto-completion without the need to use JavaScript.**
 
@@ -20538,7 +20388,7 @@ The input field is related to the datalist that will propose auto-completion bas
 
 Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,output), or try it here in your browser (type the name of your favorite browser):
 
-![](media/image288.png){width="6.5in" height="0.58125in"}
+![](./images/image288.png){width="6.5in" height="0.58125in"}
 
 Source code of this example:
 
@@ -20586,7 +20436,7 @@ A first step to improve your HTML form is to add some CSS rules to your input fi
 
 Also, at the time of submitting the form, some extra messages may be displayed as pop up text bubbles.
 
-![bubble message example](media/image289.png){width="3.3020833333333335in" height="1.2916666666666667in"}The default bubble message and visual feedback differ from one implementation to another, but they may be customized, with some limitations that will be explained later.
+![bubble message example](./images/image289.png){width="3.3020833333333335in" height="1.2916666666666667in"}The default bubble message and visual feedback differ from one implementation to another, but they may be customized, with some limitations that will be explained later.
 
 For example, browsers may provides default feedback on the input field\'s border (red = invalid, green = ok). This default behavior can be overridden by CSS rules as illustrated in the section about new input type attributes. 
 
@@ -20763,11 +20613,11 @@ You must also take care of the different languages, otherwise you will get error
 
 Google Chrome on a French desktop computer:
 
-![Chrome shows native error message localized and the title attribute content as is](media/image290.jpeg){width="6.5in" height="2.3944444444444444in"}
+![Chrome shows native error message localized and the title attribute content as is](./images/image290.jpeg){width="6.5in" height="2.3944444444444444in"}
 
 Same example on FireFox, the title attribute is ignored:
 
-![same example on firefox, the title attribute is ignored](media/image291.jpeg){width="6.447916666666667in" height="2.1041666666666665in"}
+![same example on firefox, the title attribute is ignored](./images/image291.jpeg){width="6.447916666666667in" height="2.1041666666666665in"}
 
 **The built-in validation system is an improvement on what existed before HTML5 (i.e., nothing), but additional work is required if you want fully localized, hand-made validation feedback.**\
 \
@@ -20785,9 +20635,9 @@ Or you may try it here in your browser:
 
 Top of Form
 
-Example use of the validation API, enter different passwords and submit Password: ![](media/image266.wmf)
+Example use of the validation API, enter different passwords and submit Password: ![](./images/image266.wmf)
 
-Repeat password: ![](media/image218.wmf)
+Repeat password: ![](./images/image218.wmf)
 
 Submit
 
@@ -20913,7 +20763,7 @@ The possible values for the validity property are: 
 
 Here is [an example at JSBin that shows how to test the different types of validation errors](https://jsbin.com/nalaxeg/1/edit?html,output), or you may try it here in your browser (enter bad values, too big, too small, enter invalid characters, etc.):
 
-![](media/image292.png){width="6.5in" height="0.7840277777777778in"}
+![](./images/image292.png){width="6.5in" height="0.7840277777777778in"}
 
 **Source code:**
 
@@ -21011,7 +20861,7 @@ This is useful for making custom error messages. More about this topic in the ne
 
 Custom validation: changing the default behavior, aggregating error messages, removing bubbles, etc.
 
-![](media/image293.png){width="3.5in" height="1.7576082677165354in"}
+![](./images/image293.png){width="3.5in" height="1.7576082677165354in"}
 
 #### Criticism of the default behavior of HTML5 built-in validation
 
@@ -21031,7 +20881,7 @@ Here is [an adaptation of work presented at the developer.telerik.com Web site]
 
 Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output) or try it here in your browser: enter invalid values and submit with one or two invalid fields.
 
-![](media/image294.png){width="6.5in" height="1.7381944444444444in"}
+![](./images/image294.png){width="6.5in" height="1.7381944444444444in"}
 
 **Complete source code:**
 
@@ -21293,9 +21143,9 @@ This week, we will look at some of the most useful APIs. Others will be covered 
 
 -   **The \"Web Storage\" API, sort of \"super cookies\", for storing pairs of key/values client side.** This API is useful for enabling Web sites to save/restore their state, or for writing *serverless* applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.
 
--   **The File API, that enables Web applications to work with local files**. For example, a picture editor, or media player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.
+-   **The File API, that enables Web applications to work with local files**. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.
 
-> ![you are here sign](media/image295.jpeg){width="3.125in" height="1.6354166666666667in"}
+> ![you are here sign](./images/image295.jpeg){width="3.125in" height="1.6354166666666667in"}
 
 -   **The Geolocation API for obtaining data such as longitude, latitude, altitude (when available), and speed**. You will learn how to write applications in combination with interactive maps. You will also learn how to guess the address of a user, for example for pre-filling a registration form with the city, country, and zip code that corresponds with the current location.
 
@@ -21309,7 +21159,7 @@ Indeed, Web Storage provides two interfaces - sessionStorage and localStorag
 
 For convenience, we will mainly illustrate the localStorage object. Just change \"local\" to \"session\" and it should work (this time with a session lifetime).
 
-![key value pairs](media/image296.png){width="1.7291666666666667in" height="1.6979166666666667in"}
+![key value pairs](./images/image296.png){width="1.7291666666666667in" height="1.6979166666666667in"}
 
 ### Simple key-value stores, one per domain (following the same origin policy)!
 
@@ -21343,11 +21193,11 @@ This data is located in a store attached to the origin of the page. We created[�
 
 Once opened in your browser, the JavaScript code is executed. With the browser dev. tools, we can check what has been stored in the localStorage for this domain:
 
-![example of localStorage](media/image297.jpeg){width="6.5in" height="5.430555555555555in"}
+![example of localStorage](./images/image297.jpeg){width="6.5in" height="5.430555555555555in"}
 
 Here is a view of the devtools. In more recent versions of Google Chrome, the \"Resources\" tab is named \"Applications\":
 
-![dev tools can be used to show what is in the local storage](media/image298.jpeg){width="6.5in" height="6.209027777777778in"}
+![dev tools can be used to show what is in the local storage](./images/image298.jpeg){width="6.5in" height="6.209027777777778in"}
 
 ### Differences with cookies?
 
@@ -21383,7 +21233,7 @@ We just added input event listeners to each input field. For example, in order t
 
 Where firstName in red is the key and this.value the current value of the input field.
 
-![As we are filing a form text input type, its content is saved in local storage. The image shows the httml coe of the input type, that as a oninput=\'localStorage.firstName = this.value\". Devtools are open on the \"Applications\" tab and show the LocalStorage content. It has the same value as what has been typed in the form firstName field.](media/image299.jpeg){width="6.5in" height="3.7506944444444446in"}
+![As we are filing a form text input type, its content is saved in local storage. The image shows the httml coe of the input type, that as a oninput=\'localStorage.firstName = this.value\". Devtools are open on the \"Applications\" tab and show the LocalStorage content. It has the same value as what has been typed in the form firstName field.](./images/image299.jpeg){width="6.5in" height="3.7506944444444446in"}
 
 In the same way, we added an input listener to all the input fields in this example\'s form.
 
@@ -21501,7 +21351,7 @@ Local stores (localStorage or sessionStorage) can also be iterated through in 
 
 Students may note that something seems a bit off in the example above: instead of calling localStorage.getItem(k), we simply access localStorage\[k\]. Why? Because keys in the local store can also be accessed as if the store were a simple JavaScript object. So instead of localStorage.getItem(\"foo\") and localStorage.setItem(\"foo\", \"bar\"), one can write localStorage.foo and localStorage.foo = \"bar\". Of course there are limitations to this mapping: any string can serve as a key, so that localStorage.getItem(\"one two three\") works, whereas that string would not be a valid identifier after the dot (but it could still work as localStorage\[\"one two three\"\]).
 
-### ![example with buttons that shown how to iterate on localStorage, clear it etc.](media/image300.jpeg){width="4.072916666666667in" height="2.5729166666666665in"}
+### ![example with buttons that shown how to iterate on localStorage, clear it etc.](./images/image300.jpeg){width="4.072916666666667in" height="2.5729166666666665in"}
 
 ### Example that shows all the methods of the local storage API in action
 
@@ -21649,17 +21499,17 @@ Source code:
 
 Local stores are also useful for** saving/restoring user preferences** of Web Applications. For example, the JS Bin tool you have been using since the beginning of this course uses localStorage to store the list of tabs you open, and their width:
 
-![example of preferences](media/image301.jpeg){width="6.5in" height="4.3125in"}
+![example of preferences](./images/image301.jpeg){width="6.5in" height="4.3125in"}
 
 This way, the next time you come back to JSBin, \"it will remember your last settings\".
 
 Another example is a guitar FX processor / amp simulator your instructor is writing with some of his students. It uses localStorage to save/restore presets values:
 
-![guitar fx processor uses localStorage](media/image302.jpeg){width="6.5in" height="5.986111111111111in"}
+![guitar fx processor uses localStorage](./images/image302.jpeg){width="6.5in" height="5.986111111111111in"}
 
 ### Save/restore preferences
 
-![animated rectangle with GUI](media/image303.jpeg){width="2.78125in" height="1.96875in"}
+![animated rectangle with GUI](./images/image303.jpeg){width="2.78125in" height="1.96875in"}
 
 Original example on JSBin:
 
@@ -21907,7 +21757,7 @@ There are some simple approaches, such as creating your own minimal record forma
 
 Let\'s try a simple toy example ([online at JSBin](https://jsbin.com/ciricis/2/edit?html,console,output)).  The example below saves a JavaScript object in JSON, then restores it and checks that the object properties are still there!
 
-![JSON save / load in localStorage](media/image304.png){width="6.5in" height="2.236111111111111in"}
+![JSON save / load in localStorage](./images/image304.png){width="6.5in" height="2.236111111111111in"}
 
 ##### Source code:
 
@@ -21963,7 +21813,7 @@ Let\'s try a simple toy example ([online at JSBin](https://jsbin.com/ciricis/2/e
 
 [Online example on JSBin that saves in localStorage an array of contacts in JSON](https://jsbin.com/nejewiw/2/edit?html,js,console,output)
 
-![localStorage JSON](media/image305.png){width="6.5in" height="5.879166666666666in"}
+![localStorage JSON](./images/image305.png){width="6.5in" height="5.879166666666666in"}
 
 ##### Example #2: a form and a table that displays the contacts stored in localStorage
 
@@ -21971,11 +21821,11 @@ Let\'s try a simple toy example ([online at JSBin](https://jsbin.com/ciricis/2/e
 
 Add contacts using the form, see how the HTML table is updated. Try to reload the page: data are persisted in localStorage. 
 
-![serverless contact manager](media/image306.png){width="6.5in" height="5.7875in"}
+![serverless contact manager](./images/image306.png){width="6.5in" height="5.7875in"}
 
 Examine the localStorage:
 
-![localStorage view in devtools shows the data](media/image307.png){width="6.5in" height="3.9756944444444446in"}
+![localStorage view in devtools shows the data](./images/image307.png){width="6.5in" height="3.9756944444444446in"}
 
 The source code for this example is a bit long, and we suggest that you examine it in the JS Bin tool. We extensively commented it. It uses:
 
@@ -21989,7 +21839,7 @@ It shows how to use the DOM API for dynamically updating the page content (build
 
 The objective of this chapter is to provide an overview of the File API.
 
-![sound sample editor serverless](media/image308.jpeg){width="4.0in" height="2.057415791776028in"}
+![sound sample editor serverless](./images/image308.jpeg){width="4.0in" height="2.057415791776028in"}
 
 Before HTML5, file management was limited to multipart forms and to Ajax for sending/requesting files to/from a remote Web server.
 
@@ -21997,9 +21847,9 @@ Possible actions were limited, both for the developer and the user. However, HT
 
 Imagine a multimedia player that accesses (in read-only) your file system, reads your audio and video files, etc., such as the [Remo Music player](https://chrome.google.com/webstore/detail/remo-music-player/ajilpdcmebalpffmjjopcingplogifhb) below, or an application that edits the audio content of local mp3 files, for example, the [HYA-WAVE sound editor](https://wav.hya.io/#/fx) (screenshot above).
 
-![audio player that plays local files](media/image309.jpeg){width="4.0in" height="2.2272725284339456in"}
+![audio player that plays local files](./images/image309.jpeg){width="4.0in" height="2.2272725284339456in"}
 
-![polarr photo editor uses the File API](media/image310.jpeg){width="4.0in" height="3.270939413823272in"}
+![polarr photo editor uses the File API](./images/image310.jpeg){width="4.0in" height="3.270939413823272in"}
 
 ##### **External resources**
 
@@ -22097,7 +21947,7 @@ filters, but you can also find some new on the Chrome store. I installed one tha
 
 All this here is HTML5, this is canvas, these are form elements we saw the last week, some canvas here, or image elements and so on.
 
-![](media/image311.png){width="6.5in" height="1.7972222222222223in"}
+![](./images/image311.png){width="6.5in" height="1.7972222222222223in"}
 
 **Source code:**
 
@@ -22321,7 +22171,7 @@ The [HTML5 File API specification](https://www.w3.org/TR/FileAPI/) introduces 
 
 We will not use all of these interfaces, but let\'s explain the difference between Blob and File, as most of the methods exposed by the FileReader interface take indiscriminately a Blob or a File as parameter.
 
-![the blob movie poster](media/image312.jpeg){width="1.96875in" height="3.0104166666666665in"}
+![the blob movie poster](./images/image312.jpeg){width="1.96875in" height="3.0104166666666665in"}
 
 ##### **The Blob object**
 
@@ -22405,7 +22255,7 @@ Let\'s start by reading a pure text file
 
 [Example at JSBin](https://jsbin.com/xewemi/edit?html,output), or try it below in your browser:
 
-![](media/image314.png){width="4.0in" height="0.7899464129483814in"}
+![](./images/image314.png){width="4.0in" height="0.7899464129483814in"}
 
 ##### Complete source code:
 
@@ -22570,7 +22420,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12
 
 This data URL in a browser address bar should look like this:
 
-![data url in adress bar shows a red circle](media/image317.jpeg){width="6.5in" height="0.5097222222222222in"}
+![data url in adress bar shows a red circle](./images/image317.jpeg){width="6.5in" height="0.5097222222222222in"}
 
 If we set the src attribute of an image element \<img src=\"data:image/png\....\"\> with the data URL of the above screenshot, it will work exactly as if you used a URL that started with https://
 
@@ -22592,15 +22442,15 @@ This dataURL format enables file content to be stored in a base64 format (as
 
 You will find lots of Web sites and tools for generating dataURL from files, such as [Image to Data URI converter](https://ezgif.com/image-to-datauri) (screenshot below):
 
-![Online service that converts uploaded images to data uris\... we see an image and its ascii encoded data uri version.](media/image319.jpeg){width="5.0in" height="6.385149825021872in"}
+![Online service that converts uploaded images to data uris\... we see an image and its ascii encoded data uri version.](./images/image319.jpeg){width="5.0in" height="6.385149825021872in"}
 
 With the above example, you can copy and paste the characters on the left and use them with an \<img src=\"\...\"\>. Just set the src attribute with it!
 
-Notice that you can encode any type of file as dataURL, but this format is most frequently used with media files (images, audio, video).
+Notice that you can encode any type of file as dataURL, but this format is most frequently used with ./images files (images, audio, video).
 
 Example of HTML5 logo embedded in a document without any real image, just a dataURL and CSS:
 
-![Screenshot of JsBin example that shows the HTML5 logo inserted before a div using CSS](media/image320.jpeg){width="5.0in" height="4.557692475940508in"}
+![Screenshot of JsBin example that shows the HTML5 logo inserted before a div using CSS](./images/image320.jpeg){width="5.0in" height="4.557692475940508in"}
 
 ##### Examples
 
@@ -22669,7 +22519,7 @@ This first example is useful for forms that allow the user to select one or more
 
 [Try it on JSBin](https://jsbin.com/miciqu/edit?html,output)
 
-![read image as dataURL and draw inside a canvas. Jsbin screenshot](media/image322.jpeg){width="5.0in" height="3.9925218722659666in"}
+![read image as dataURL and draw inside a canvas. Jsbin screenshot](./images/image322.jpeg){width="5.0in" height="3.9925218722659666in"}
 
 *Errata*: the above screenshot says \"choose multiple files\", but the example only works with a single file.
 
@@ -22720,7 +22570,7 @@ Another very impressive example, has been developed by \@GeorgianaB, a student o
 
 This chapter presents the new Geolocation API and illustrates its use with several examples.
 
-![W3C Geolocation icon](media/image323.png){width="2.0in" height="0.851240157480315in"}
+![W3C Geolocation icon](./images/image323.png){width="2.0in" height="0.851240157480315in"}
 
 The Geolocation HTML5 JavaScript API is implemented by most modern Web browsers, and uses different means to get the current location: GPS, GSM/3G triangulation, Wifi, IP address, etc.
 
@@ -22807,7 +22657,7 @@ Source code of this typical example:
 
 In the previous example, we used the coords property of the position passed as an input parameter to the callback function. This coords object has many properties:
 
-![](media/image325.png){width="6.5in" height="3.35in"}
+![](./images/image325.png){width="6.5in" height="3.35in"}
 
 Not all these values may be available in all Web browsers. When one of these properties is null, it means that it is not available (often the case of the altitudeAccuracy)
 
@@ -22895,45 +22745,31 @@ As a test, you may just try to change getCurrentPosition to watchPosition in
 
 Several options are available when using HTML5 geolocation. We can pass a third parameter to the getCurrentPosition and watchPosition methods, that will hold one or several of the following options:
 
-![](media/image327.png){width="6.5in" height="1.7645833333333334in"}
+![](./images/image327.png){width="6.5in" height="1.7645833333333334in"}
 
 <h3>Example of use</h3>
 
 <h4>Source code:</h4>
 
+```
 > // Just ask to turn GPS on, if available
->
 > navigator.geolocation.getCurrentPosition(onSuccess, onError,
->
 >                                      {enableHighAccuracy:true});
->
 > // maximumAge = 10 mins, the position can be cached for 10 mins,
->
 > // useful when in tunnels\...When the device tries to get
->
 > // a position, if it does not succeed, then go on error
->
 > // immediately
->
 > navigator.geolocation.getCurrentPosition(onSuccess, onError,
->
 >                                 {maximumAge:600000, timeout:0});
->
 > // Position will never come from the cache (maximumAge: 0), and
->
 > // if after 0.1s the position could not be computed, then go on
->
 > // error
->
 > navigator.geolocation.getCurrentPosition(onSuccess, onError,
->
 >                                    {maximumAge:0, timeout:100});
->
 > // Ask for GPS, cache for 30s, 27s before going on error\...
->
 > watchId=navigator.geolocation.watchPosition(onSuccess, onError,
->
 >     {enableHighAccuracy:true, maximumAge:30000, timeout:27000});
+```
 
 Look for the explanations in the lines of comment.
 
@@ -23022,29 +22858,18 @@ This example is just given \"as is\", as there are so many possibilities for r
 <h4>HTML</h4>
 
 ```
-> \<html\>
->
-> \<head\>
->
-> \<meta charset=\"utf-8\"\>
->
-> \<title\>OpenStreetMap Example\</title\>
->
-> \<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.0.3/dist/leaflet.css\"\>
->
-> \<script src=\"https://unpkg.com/leaflet@1.0.3/dist/leaflet.js\"\>\</script\>
->
-> \</head\>
->
-> \<body\>
->
-> \<button class=\"btn\" onclick=\"getLocation(event)\"\>Click to show your location with OpenStreetMap\</button\>
->
-> \<div id=\"map\" class=\"map\"\>\</div\>
->
-> \</body\>
->
-> \</html\>
+> <html>
+> <head>
+> <meta charset="utf-8"\>
+> <title>OpenStreetMap Example</title>
+> <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+> <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+> </head>
+> <body>
+> <button class="btn" onclick="getLocation(event)">Click to show your location with OpenStreetMap</button>
+> <div id="map" class="map"></div>
+> </body>
+> </html>
 ```
 
 ##### Source code extract:
@@ -23052,18 +22877,18 @@ This example is just given \"as is\", as there are so many possibilities for r
 ##### HTML part:
 
 ```
-> \<html\>
-> \<head\>
->   \<meta charset=\"utf-8\"\>
->   \<title\>OpenStreetMap Example\</title\>
->   \<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.0.3/dist/leaflet.css\"\>
->   \<script src=\"https://unpkg.com/leaflet@1.0.3/dist/leaflet.js\"\>\</script\>
-> \</head\>
-> \<body\>
->   \<button class=\"btn\" onclick=\"getLocation(event)\"\>Click to show your location with OpenStreetMap\</button\>
->   \<div id=\"map\" class=\"map\"\>\</div\>
-> \</body\>
-> \</html\>
+> <html>
+> <head>
+>   <meta charset="utf-8">
+>   <title>OpenStreetMap Example</title>
+>   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+>   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+> </head>
+> <body>
+>   <button class="btn" onclick="getLocation(event)">Click to show your location with OpenStreetMap</button>
+>   <div id="map" class="map"></div>
+> </body>
+> </html>
 ```
 
 -   *Lines 5 and 6* are the required files to use the Leaflet API (this is the official name of the OpenStreetMaps API),
@@ -23513,4 +23338,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>5-10-2022 Tue 8:36am</i></b></h3>
+<h3><b><i>06-06-2022 Mon 9:03pm</i></b></h3>
