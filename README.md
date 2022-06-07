@@ -6999,35 +6999,20 @@ For more information, this [article on MDN about the getUserMedia API](https:/
 Code source extract related to the \"constraint\" object which specifies the desired resolutions:
 
 1.  var vgaConstraints = {
-
 2.     **video: {**
-
 3.  **      width: { max: 640 },**
-
 4.  **      height: { max: 360 }**
-
 5.  **   }**
-
 6.  };
-
 7.  var hdConstraints = {
-
 8.    ** video: {**
-
 9.  **      width: { min: 1280 },**
-
 10. **      height: { min: 720 }**
-
 11. **   }**
-
 12. };
-
 13.  
-
 14. let constraints = hdConstraints;
-
 15. navigator.mediaDevices.getUserMedia(constraints)
-
 16. .then((stream) =\> {\...}
 
 ### How to check which resolutions are supported by a browser?
@@ -7037,53 +7022,32 @@ Use this [Web app that ](https://webrtchacks.github.io/WebRTC-Camera-Resolutio
 ### Selecting the front or rear camera on smartphones
 
 Here are some other constraints you can set. In particular, look at the ones for selecting the front or rear camera (smartphones):
-
+```
 1.  **// more on video resolution**
-
 2.  **constraints = {**
-
 3.      video: {
-
 4.          width: { min: 1024,** ideal: 1280**, max: 1920 },
-
 5.         height: { min: 776,** ideal: 720**, max: 1080 }
-
 6.      }
-
 7.  }
-
 8.  **// Framerate**
-
 9.  **constraints = { video: { frameRate: { ideal: 10, max: 15 } } };**
-
 10.  
-
 11. **// front and back camera (mobile), some examples**
-
 12. **var front = false;**
-
 13. 
-
 14. document.getElementById(\'flip-button\').onclick = function() {\
         front = !front;\
     };
-
 15. **// toggle front and back camera (mobile) by clicking a button**
-
 16. **constraints = { video: { facingMode: (front? \"user\" : \"environment\") } };**
-
 17.  
-
 18. **// prefer front camera**
-
 19. constraints = { audio: true,** video: { facingMode: \"user\" }** }
-
 20.  
-
 21. **// require rear camera**
-
 22. constraints = { audio: true,** video: { facingMode: { exact: \"environment\" } }** }
-
+```
 ### Select input/output for audio and video streams
 
 -   Resource: [WebRTC samples: Select sources & outputs](https://webrtc.github.io/samples/src/content/devices/input-output/)
@@ -7091,46 +7055,28 @@ Here are some other constraints you can set. In particular, look at the ones for
 ![webapp for selecting audio and video input/output](media/image113.jpeg){width="4.145833333333333in" height="4.697916666666667in"}
 
 Source code extract:
-
+```
 1.  function gotDevices(deviceInfos) {
-
 2.      for (var i = 0; i !== deviceInfos.length; ++i) {
-
 3.          var deviceInfo = deviceInfos\[i\];
-
 4.          console.log(\"device with id: \" + deviceInfo.deviceId);
-
 5.          // possible values: audioinput, audiooutput, videoinput
-
 6.          console.log(\"device with kind: \" + deviceInfo.kind);
-
 7.          // \'speaker\' or \'camera\' for example
-
 8.          console.log(\"device with label: \" + deviceInfo.label);
-
 9.          //\... should build a menu, test kind/label and set
-
 10.         // audioSource and videoSource variables
-
 11.     }
-
 12. }
-
 13. // \...
-
 14. var constraints = {
-
 15.     audio: {**deviceId: audioSource **? {exact: audioSource} : undefined},
-
 16.     video: {**deviceId: videoSource **? {exact: videoSource} : undefined}
-
 17. };
-
 18. 
-
 19. navigator.mediaDevices.getUserMedia(constraints).
-
 20. then(gotStream).then(gotDevices).catch(handleError)
+```
 
 ### 2.4.5 The MediaRecorder API
 
@@ -7143,73 +7089,40 @@ For example, the MediaRecorder API is used to record the video stream from a Web
 Let\'s record, replay and download the video stream captured using a Webcam. You can test it below by clicking on \"CodePen\" at the top right:
 
 **JS**
-
+```
 > var mediaRecorder;
->
 > var recordedBlobs;
->
 > var gumVideo = document.querySelector(\'video#gum\');
->
 > var recordedVideo = document.querySelector(\'video#recorded\');
->
 > var recordButton = document.querySelector(\'button#record\');
->
 > var playButton = document.querySelector(\'button#play\');
->
 > var downloadButton = document.querySelector(\'button#download\');
->
 > recordButton.onclick = toggleRecording;
->
 > playButton.onclick = play;
->
 > downloadButton.onclick = download;
->
 > // get stream using getUserMedia
->
 > navigator.mediaDevices.getUserMedia({ audio: true,video: true})
->
 > .then((stream) =\> {
->
 > recordButton.disabled = false;
->
 > console.log(\'getUserMedia() got stream: \', stream);
->
 > window.stream = stream;
->
 > gumVideo.srcObject = stream;
->
 > })
->
 > .catch((error) =\> {
->
 > console.log(\'navigator.getUserMedia error: \', error);
->
 > });
->
 > function handleDataAvailable(event) {
->
 > if (event.data && event.data.size \> 0) {
->
 > recordedBlobs.push(event.data);
->
 > }
->
 > }
->
 > function handleStop(event) {
->
 > console.log(\'Recorder stopped: \', event);
->
 > }
->
 > function toggleRecording() {
->
 > if (recordButton.textContent === \'Start Recording\') {
->
 > startRecording();
->
 > } else {
->
 > stopRecording();
 >
 > recordButton.textContent = \'Start Recording\';
@@ -7217,95 +7130,53 @@ Let\'s record, replay and download the video stream captured using a Webcam. You
 > playButton.disabled = false;
 >
 > downloadButton.disabled = false;
->
 > }
->
 > }
->
 > // create the media recorder
->
 > function startRecording() {
->
 > recordedBlobs = \[\];
->
 > try {
->
 > mediaRecorder = new MediaRecorder(window.stream);
->
 > } catch (e) {
->
 > console.error(\'Exception while creating MediaRecorder: \' + e);
->
 > return;
->
 > }
->
 > console.log(\'Created MediaRecorder\', mediaRecorder);
->
 > recordButton.textContent = \'Stop Recording\';
->
 > playButton.disabled = true;
->
 > downloadButton.disabled = true;
->
 > mediaRecorder.onstop = handleStop;
->
 > mediaRecorder.ondataavailable = handleDataAvailable;
->
 > mediaRecorder.start(10); // collect 10ms of data
->
 > console.log(\'MediaRecorder started\', mediaRecorder);
->
 > }
->
 > function stopRecording() {
->
 > mediaRecorder.stop();
->
 > console.log(\'Recorded Blobs: \', recordedBlobs);
->
 > recordedVideo.controls = true;
->
 > }
->
 > function play() {
->
 > var superBuffer = new Blob(recordedBlobs, {type: \'video/webm\'});
->
 > recordedVideo.src = window.URL.createObjectURL(superBuffer);
->
 > }
->
 > function download() {
->
 > var blob = new Blob(recordedBlobs, {type: \'video/webm\'});
->
 > var url = window.URL.createObjectURL(blob);
->
 > var a = document.createElement(\'a\');
->
 > a.style.display = \'none\';
->
 > a.href = url;
->
 > a.download = \'test.webm\';
->
 > document.body.appendChild(a);
->
 > a.click();
->
 > setTimeout(function() {
->
 > document.body.removeChild(a);
->
 > window.URL.revokeObjectURL(url);
->
 > }, 100);
->
 > }
+```
 
 **CSS**
-
+```
 > /\*
 >
 > \* Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
@@ -7401,9 +7272,9 @@ Let\'s record, replay and download the video stream captured using a Webcam. You
 > }
 >
 > }
-
-**HTML**
-
+```
+<h4>HTML</h4>
+```
 > \<!DOCTYPE html\>
 >
 > \<html\>
@@ -7447,7 +7318,7 @@ Let\'s record, replay and download the video stream captured using a Webcam. You
 > \</body\>
 >
 > \</html\>
-
+```
 Click \"start recording\", then press the play button on the video element on the right of the app. You can also click the \"download\" button to download a .webm file, playable offline with a media player such as [VLC](https://www.videolan.org/) or online in a Web page with the \<video\> element.
 
 ### Five steps are needed to use the mediaRecorder object
@@ -7465,27 +7336,19 @@ Source code extract:
 #### 2 - Add a \"data handler\" and call the start() method of the mediaRecorder object
 
 **Source code extract:**
-
+```
 1.  var recordedChunks = \[\]; // will hold the recorded stream
-
 2.  mediaRecorder.ondataavailable = handleDataAvailable;
-
 3.  mediaRecorder.start();
-
 4.   
-
 5.  function handleDataAvailable(event) {
-
 6.     if (event.data.size \> 0) {
-
 7.        recordedChunks.push(event.data);
-
 8.     } else {
-
 9.     // \...
-
 10. }
-
+```
+   
 **Explanations:**
 
 -   *Line 1*: we declare an array of bytes that will hold the recorded stream.
@@ -7800,146 +7663,80 @@ So, let\'s first get the context (do this only once):
 
 ### Complete example that draws a filled rectangle in red
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<style\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\<title\>Canvas\</title\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<script\>
-
+</style>
+<title>Canvas</title>
+<meta charset="utf-8"/>
+<script>
 var canvas, ctx;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 // 3 - we can draw
-
 drawSomething();
-
 }
-
 function drawSomething() {
-
 // draw a red rectangle
-
 ctx.fillStyle=\'#FF0000\';
-
 ctx.fillRect(0,0,80,100);
-
 }
-
-\</script\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"200\" height=\"200\"\>
-
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="200" height="200">
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\</body\>
-
-\</html\>
-
+</canvas>
+</body>
+</html>
+```
 Source code:
-
-1.  \<!DOCTYPE html\>
-
-2.  \<html lang=\"en\"\>
-
-3.     \<head\>
-
-4.        \<style\>
-
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.     <head>
+4.        <style>
 5.           #myCanvas {
-
 6.              border: 1px solid black;
-
 7.           }
-
-8.        \</style\>
-
-9.        \<title\>Canvas\</title\>
-
-10.       \<meta charset=\"utf-8\"/\>
-
-11.       \<script\>
-
+8.        </style>
+9.        <title>Canvas</title>
+10.       <meta charset="utf-8"/>
+11.       <script>
 12.          var canvas, ctx;
-
 13.          function init() {
-
 14. // This function is called after the page is loaded
-
 15. // 1 - Get the canvas
-
-16.          canvas = document.getElementById(\'myCanvas\');
-
+16.          canvas = document.getElementById('myCanvas');
 17. // 2 - Get the context
-
-18.          ctx=canvas.getContext(\'2d\');
-
+18.          ctx=canvas.getContext('2d');
 19. // 3 - we can draw
-
 20.          drawSomething();
-
 21.       }
-
 22.       function drawSomething() {
-
 23. // draw a red rectangle
-
-24.          ctx.fillStyle=\'#FF0000\';
-
+24.          ctx.fillStyle='#FF0000';
 25.          ctx.fillRect(0,0,80,100);
-
 26.       }
-
-27.       \</script\>
-
-28.    \</head\>
-
-29.    \<body onload=\"init();\"\>
-
-30.      \<canvas id=\"myCanvas\" width=\"200\" height=\"200\"\>
-
+27.       </script>
+28.    </head>
+29.    <body onload="init();">
+30.      <canvas id="myCanvas" width="200" height="200">
 31.       Your browser does not support the canvas tag.
-
-32.      \</canvas\>
-
-33.    \</body\>
-
-34. \</html\>
-
+32.      </canvas>
+33.    </body>
+34. </html>
+```
 #### **Explanations**
 
 **Only access elements when the DOM is ready:**
@@ -8008,9 +7805,7 @@ Later on we\'ll see that there are ways to save and restore this whole set of v
 Its value can be one of the following:
 
 -   a color,
-
 -   a pattern (texture), or
-
 -   a gradient.
 
 The default value is the color black. Any kind of drawing in \"fill mode\" will use the value of this property to determine how to render the \"filled part\" of the drawing: any filled rectangle will be filled black by default, any filled circle will be filled in black, and so on.
@@ -8026,7 +7821,6 @@ fillStyle and the other context properties can be considered to be \"global var
 The two first parameters are the coordinates of the top left corner of the rectangle. This method uses the current value of the fillStyle property to determine how to fill the rectangle.
 
 1.  ctx.fillStyle=\'pink\';
-
 2.  ctx.fillRect(10,10,200,200);
 
 Produces this result:
@@ -8038,11 +7832,10 @@ Produces this result:
 The possible values are the same as those for the fillStyle property: a color, a pattern, or a gradient. This property will be taken into account when wireframe shapes are drawn.
 
 -   #### strokeRect(x, y, width, height): like fillRect(\...), but instead of drawing a filled rectangle the rectangle is drawn in wireframe mode
-
+```
 1.  ctx.strokeStyle=\'blue\';
-
 2.  ctx.strokeRect(10,10,200,200);
-
+```
 \... gives this result:
 
 ![stroked rectangle - border is in blue](media/image129.jpeg){width="2.5833333333333335in" height="2.6041666666666665in"}
@@ -8052,13 +7845,11 @@ Only the outline of the rectangle will be drawn, and it will be drawn using the 
 -   #### clearRect(x, y, width, height): a call to this method erases the specified rectangle
 
 Actually it draws it in a color called \"transparent black\" (!) that corresponds to the initial state of the rectangle as if no drawing had occurred.
-
+```
 1.  ctx.fillStyle=\'pink\';
-
 2.  ctx.fillRect(10,10,200,200);
-
 3.  ctx.clearRect(50, 50, 20, 20);
-
+```
 The result is:
 
 ![The use of ClearRect draws a white rectangle against the pink background](media/image130.jpeg){width="2.6770833333333335in" height="2.6770833333333335in"}
@@ -8068,19 +7859,14 @@ The result is:
 #### Example #1: draw a wireframe red rectangle, width lineWidth = 3 pixels
 
 Extract from the source code (the part that draws the rectangle):
-
+```
 1.  function drawSomething() {
-
 2.       // draw a red rectangle, line width=3 pixels
-
 3.       ctx.lineWidth=3;
-
 4.       ctx.strokeStyle=\'red\';
-
 5.       ctx.strokeRect(10,10,80,100);
-
 6.  }
-
+```
 Here, we used \"stroke\" instead of \"fill\" in the property and method names (*lines 4 and 5*): strokeStyle instead of fillStyle, strokeRect(\...) instead of fillRect(\...).
 
 We also introduced a new property of the context, that applies only when drawing in \"stroke\" mode, the lineWidth property (*line 3*), that is used for setting the width of the shape outline. The value is in pixels.
@@ -8089,138 +7875,76 @@ We also introduced a new property of the context, that applies only when drawing
 
 Let\'s continue with another example. This time we will draw several shapes that share the same colors - they will be filled in red, with a blue outline. We also show how to draw a text message with a given font.
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<title\>Drawing with outline\</title\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<style\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Drawing with outline\</title\>
+<meta charset="utf-8"/>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var canvas, ctx;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 // 3 - we can draw
-
 drawSomething();
-
 }
-
 function drawSomething() {
-
 // set the global context values
-
 ctx.lineWidth=5;
-
-ctx.fillStyle=\'red\';
-
-ctx.strokeStyle=\'blue\'
-
+ctx.fillStyle='red';
+ctx.strokeStyle='blue'
 // font for all text drawing
-
-ctx.font = \'italic 20pt Calibri\';
-
+ctx.font = 'italic 20pt Calibri';
 // Draw the two filled red rectangles
-
 ctx.fillRect(10, 30, 70, 150);
-
 ctx.fillRect(110, 30, 70, 150);
-
 // Draw the two blue wireframe rectangles
-
 ctx.strokeRect(10, 30, 70, 150);
-
 ctx.strokeRect(110, 30, 70, 150);
-
 // Draw a message above the rectangles
-
-ctx.fillText(\"hello\", 70, 22);
-
+ctx.fillText("hello", 70, 22);
 }
-
-\</script\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"200\" height=\"200\"\>
-
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="200" height="200">
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\</body\>
-
-\</html\>
-
+</canvas>
+</body>
+</html>
+```
 Source code extract:
-
+```
 1.  function drawSomething() {
-
 2.       // set the global context values
-
 3.      ctx.lineWidth=5;
-
-4.      ctx.fillStyle=\'red\';
-
-5.      ctx.strokeStyle=\'blue\'
-
+4.      ctx.fillStyle='red';
+5.      ctx.strokeStyle='blue'
 6.      // font for all text drawing
-
-7.      ctx.font = \'italic 20pt Calibri\';
-
+7.      ctx.font = 'italic 20pt Calibri';
 8.  
-
 9.      // Draw the two filled red rectangles
-
 10.     ctx.fillRect(10, 30, 70, 150);
-
 11.     ctx.fillRect(110, 30, 70, 150);
-
 12. 
-
 13.     // Draw the two blue wireframe rectangles
-
 14.     ctx.strokeRect(10, 30, 70, 150);
-
 15.     ctx.strokeRect(110, 30, 70, 150);
-
 16. 
-
 17.     // Draw a message above the rectangles
-
-18.     ctx.fillText(\"hello\", 70, 22);
-
+18.     ctx.fillText("hello", 70, 22);
 19. }
-
+```
 This example shows the \"global\" nature of the context properties. Once you set the filled color to red, any shapes you draw in filled mode will be red. This is true for all the context properties. We set some of these properties in *lines 3-7*, and all following calls to context methods for drawing rectangles or text will depend on them. The two filled rectangles at *lines 10-11* will be red, the two wireframe rectangles drawn at *lines 14-15* will be blue, etc.
 
 *Line 18* shows how to draw a text message at an X position of 70 and a Y position of 22. The font is set at *line 7* using the font property of the context.  The syntax is the same we use in CSS for using \"system fonts\".
@@ -8259,174 +7983,98 @@ Let\'s start with some simple examples before looking at how we use 2D transform
 
 If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) and another at (150, 0), and a third at (300, 0), here is the result and the corresponding code:
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<title\>Let\'s draw three rectangles!\</title\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<style\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title\>Let's draw three rectangles!</title>
+<meta charset="utf-8"/>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var canvas, ctx;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 // 3 - we can draw
-
 drawSomething();
-
 }
-
 function drawSomething() {
-
 // draw a red rectangle
-
-ctx.fillStyle=\'lightgreen\';
-
+ctx.fillStyle='lightgreen';
 ctx.fillRect(0,0,100,200);
-
 ctx.fillRect(150,0,100,200);
-
 ctx.fillRect(300,0,100,200);
-
 }
-
-\</script\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height=\"400\"\>
-
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\</body\>
-
-\</html\>
-
+</canvas>
+</body>
+</html>
+```
 JavaScript code extract:
-
+```
 1.  function drawSomething() {
-
-2.       ctx.fillStyle=\'lightgreen\';
-
+2.       ctx.fillStyle='lightgreen';
 3.   
-
 4.       ctx.fillRect(0,0,100,200);
-
 5.       ctx.fillRect(150,0,100,200);
-
 6.       ctx.fillRect(300,0,100,200);
-
 7.  }
-
+```
 -   #### Let\'s modify the code so that we can draw these rectangles at any X and Y position
 
 What if we wanted to draw these 3 rectangles at another position, as a group? We would like to draw all of them a little closer to the bottom, for example\... Let\'s add some parameters to the function:  the X and Y position of the rectangles.
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html\>
-
-\<head lang=\"en\"\>
-
-\<title\>Draw 3 rectangles at any X and Y position\</title\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<style\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<title>Draw 3 rectangles at any X and Y position</title>
+<meta charset="utf-8"/>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var canvas, ctx;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 // 3 - we can draw
-
 drawSomething(0, 100);
-
 }
-
 function drawSomething(x, y) {
-
 // draw a red rectangle
-
-ctx.fillStyle=\'lightgreen\';
-
+ctx.fillStyle='lightgreen';
 ctx.fillRect(x,y,100,200);
-
 ctx.fillRect(x+150,y,100,200);
-
 ctx.fillRect(x+300,y,100,200);
-
 }
-
-\</script\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height=\"400\"\>
-
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\</body\>
-
-\</html\>
-
+</canvas>
+</body>
+</html>
+```
 Code extract:
 
 1.  var canvas, ctx;
@@ -22008,7 +21656,7 @@ Source code extract (only addition to the previous example):
 
 The tests at *lines 7, 10, 13*, etc., verify that data has been saved, before trying to restore it. Without these tests, it would put the \"undefined\" string as the value of input fields with no corresponding data to restore.
 
-## 6.2.3 localStorage and sessionStorage
+<h3>6.2.3 localStorage and sessionStorage</h3>
 
 This time we will look at another example that uses new methods from the API:
 
@@ -22430,7 +22078,7 @@ These generic functions can be used in many different projects
 
 Indeed, if you look carefully, you will see that these functions are really useful. You may easily embed them in your own projects, or perhaps adapt them for a particular need (i.e. for saving input type=\"checkboxes\" that work a bit differently), etc.
 
-## 6.2.6 Size limitations, etc.
+<h3>6.2.6 Size limitations, etc.</h3>
 
 Few things to remember, from the Web storage specification:
 
@@ -22460,7 +22108,7 @@ Note that if all you need is to store session-based data in a manner that is mor
 
 **By using sessionStorage, the data you store will be scoped and therefore not leak across tabs!**
 
-## 6.2.7 Storing more than strings? Use JSON!
+<h3>6.2.7 Storing more than strings? Use JSON!</h3>
 
 Storing strings is all well and good, but it quickly becomes limiting: you may want to store more complex data with at least a modicum of structure.
 
@@ -22554,7 +22202,7 @@ HTML5 form elements with builtin and custom validation (the date cannot be in th
 
 It shows how to use the DOM API for dynamically updating the page content (build the HTML table from the array of contacts, add a new line when a new contact is submitted, etc.)
 
-## 6.3.1 Introduction
+<h3>6.3.1 Introduction</h3>
 
 The objective of this chapter is to provide an overview of the File API.
 
@@ -22578,7 +22226,7 @@ Imagine a multimedia player that accesses (in read-only) your file system, reads
 
 -   MDN\'s Web Docs: [Using files from web applications](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications)
 
-## 6.3.2 Working with local files
+<h3>6.3.2 Working with local files</h3>
 
 Hi! Welcome for this second video of module 6, in which we will talk about the file Javascript API.
 
@@ -22908,7 +22556,7 @@ Most of the time, we will work with File objects. Blob objects will have rea
 
 If you are interested in seeing how Blob objects can be used, [here is an example \"as is\" that shows how to download an image using Xhr2](https://jsbin.com/jefitop/1/edit?html,output) (Xml Http Request version 2). The examples uses a \<progress\> element to show the download progress, and uses xhr.responseType = \'blob\'; to indicate that the file we are going to download is a binary file (a blob). Try the example, then comment the line with responseType=\'blob\'. In this case, you will notice that the image file is not properly decoded by the browser and is not displayed in the page. We explain Xhr2 in the [W3C HTML5 Apps and Games](https://www.edx.org/course/html5-apps-and-games) course.
 
-## 6.3.5 Reading file content
+<h3>6.3.5 Reading file content</h3>
 
 In order to read the content of a file, different steps required. Let\'s see how to do it.
 
@@ -22964,7 +22612,7 @@ Choose a text file:\
 
 In the following pages, we look at different examples that read file contents as text, dataURL and binary.
 
-## 6.3.6 Read file content as text
+<h3>6.3.6 Read file content as text</h3>
 
 Let\'s start by reading a pure text file
 
@@ -23157,7 +22805,7 @@ Note that you can optionally indicate the encoding of the file you are going to 
 
 3.  \...
 
-## 6.3.7 Read file content as binary
+<h3>6.3.7 Read file content as binary</h3>
 
 This method is rarely used, except for loading \"raw\" binary data. For images you would like to see in your HTML page using the \<img src= tag\> or for drawing in a canvas, or for audio and video files that you would like to play using the \<audio\> or \<video\> elements, it would be preferable to use the readAsDataURL method presented on the next page of the course.
 
@@ -23203,7 +22851,7 @@ Source code extract:
 
 -   *Line 7 *is the onload callback, executed when the file content is loaded in memory. We pass the file content to the initSound function (see JSBin example for complete source code) that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio works only with uncompressed audio formats in memory), and to play it.
 
-## 6.3.8 Read file content as dataURL
+<h3>6.3.8 Read file content as dataURL</h3>
 
 ##### What is a data URL?
 
@@ -23965,7 +23613,7 @@ function error() {
 
 -   The rest is a basic use of the Leaflet API. Notice at *line 17* that \'map\' is the id of the \<div\> from the HTML part of the code.
 
-## 6.4.6 Reverse geocoding
+<h3>6.4.6 Reverse geocoding</h3>
 
 Different Web services can be used to get an address from longitude and latitude. Most are free of charge, but they will ask you to register an API key and enter your credit card number. If you send too many requests, you will be charged.Such a service is the [Google Reverse Geocoding JavaScript API](https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse). For those of you who are really interested to know how this API works, please read the Google documentation and tutorials.
 
@@ -23987,6 +23635,7 @@ Google reverse geocoding example (screenshot only) :
 </p>
 
 Source code of this example (in order to run it, you need a Google API key, used at *line 6*).
+
 ```
 <!DOCTYPE html>
 
@@ -24152,6 +23801,7 @@ Source code of this example (in order to run it, you need a Google API key, used
 >
 > </html>
 ```
+
 Gisgraphy (free service) reverse geocoding example (screenshot only, click on it to see [the demo on the Gisgraphy website](https://services.gisgraphy.com/static/leaflet/index.html)):
 
 <!------------------------------------------------------------------------------------------------>
@@ -24178,151 +23828,80 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 </p>
 
 <h4>HTML</h4>
+
 ```
     <!DOCTYPE html>
-   
     <html>
-   
     <head>
-   
     <title>Leaflet Control Geocoder</title>
-   
     <meta charset="utf-8" />
-   
     <meta
-   
     name="viewport"
-   
     content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
-   
     />
-   
     <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
-   
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-   
     <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
-   
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-   
     <style type="text/css">
-   
     body {
-   
     margin: 0;
-   
     }
-   
     #map {
-   
     position: absolute;
-   
     width: 100%;
-   
     height: 100%;
-   
     }
-   
     </style>
-   
     </head>
-   
     <body>
-   
     <div id="map"></div>
-   
     <script type="text/javascript">
-   
     var map = L.map('map').setView([0, 0], 2);
-   
     var geocoder = L.Control.Geocoder.nominatim();
-   
     if (URLSearchParams && location.search) {
-   
     // parse /?geocoder=nominatim from URL
-   
     var params = new URLSearchParams(location.search);
-   
     var geocoderString = params.get('geocoder');
-   
     if (geocoderString && L.Control.Geocoder[geocoderString]) {
-   
     console.log('Using geocoder', geocoderString);
-   
     geocoder = L.Control.Geocoder[geocoderString]();
-   
     } else if (geocoderString) {
-   
     console.warn('Unsupported geocoder', geocoderString);
-   
     }
-   
     }
-   
     var control = L.Control.geocoder({
-   
     query: 'Moon',
-   
     placeholder: 'Search here...',
-   
     geocoder: geocoder
-   
     }).addTo(map);
-   
     var marker;
-   
     setTimeout(function() {
-   
     control.setQuery('Earth');
-   
     }, 12000);
-   
     L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-   
     attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
-   
     }).addTo(map);
-   
     map.on('click', function(e) {
-   
     console.log(e.latlng)
-   
     geocoder.reverse(e.latlng, map.options.crs.scale(map.getZoom()), function(results) {
-   
     var r = results[0];
-   
     if (r) {
-   
     if (marker) {
-   
     marker
-   
     .setLatLng(r.center)
-   
     .setPopupContent(r.html || r.name)
-   
     .openPopup();
-   
     } else {
-   
     marker = L.marker(r.center)
-   
     .bindPopup(r.name)
-   
     .addTo(map)
-   
     .openPopup();
-   
     }
-   
     }
-   
     });
-   
     });
-   
     </script>
-
     </body>
 
  </html>
@@ -24331,168 +23910,89 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 
 <h4>HTML</h4>
 ```
-    <!DOCTYPE html>
-   
+   <!DOCTYPE html>
     <html>
-   
     <head>
-   
     <title>Leaflet Control Geocoder</title>
-   
     <meta charset="utf-8" />
-   
     <meta
-   
     name="viewport"
-   
     content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
-   
     />
-   
     <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css\" />
-   
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-   
     <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
-   
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-   
  <style type="text/css">
-
  body {
-
  margin: 0;
-
  }
-
  #map {
-
  position: absolute;
-
  width: 100%;
-
  height: 100%;
-
  }
-
  </style>
-
  </head>
-
  <body>
-
  <div id="map"></div>
-
  <script type="text/javascript">
-
  var geocoder = L.Control.Geocoder.nominatim();
-
  var map, marker, latitude, longitude;
-
  function getLocation() {
-
  if (!navigator.geolocation) {
-
  alert("Browser doesn't support geolocation");
-
  } else {
-
  navigator.geolocation.getCurrentPosition(success, error);
-
  }
-
  }
-
  // Get current position successfully
-
  function success(position) {
-
  latitude = position.coords.latitude;
-
  longitude = position.coords.longitude;
-
  // Instance map using leaflet
-
  map = L.map('map').setView([latitude, longitude], 13);
-
  // Tile layer using key api at cloudmade.com
-
  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-
  key: '760506895e284217a7442ce2efe97797',
-
  styleId: 103288,
-
  maxZoom: 16
-
  }).addTo(map);
-
  // Marker using leaflet
-
  marker = L.marker([latitude, longitude]).addTo(map);
-
  // Popup in leaflet
-
  marker.bindPopup('<p></p>').openPopup();
-
  getPhysicalAddress({lat:latitude, lng:longitude});
-
  }
-
  // Get current position fail
-
  function error() {
-
  alert('Get current position fail. Please access codepen to get geolocation.');
-
  }
-
  var marker;
-
  function getPhysicalAddress(latlong) {
-
  geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
-
  var r = results[0];
-
  if (r) {
-
  if (marker) {
-
  marker
-
  .setLatLng(r.center)
-
  .setPopupContent(r.html || r.name)
-
  .openPopup();
-
  } else {
-
  marker = L.marker(r.center)
-
  .bindPopup(r.name)
-
  .addTo(map)
-
  .openPopup();
-
  }
-
  }
-
  });
-
  }
-
  getLocation();
-
  </script>
-
  </body>
-
  </html>
 ```
+
 <h4>Example #4: use of geolocation, map and reverse geocoder in a HTML form</h4>
 
 This is just a variation of the previous examples. We embedded the interactive map in a form, and we display the results of the reverse geocoder in a form field. This example might be useful if you want to pre-fill the address of a registration form, depending on the current location of the person who is registering.
@@ -24500,172 +24000,94 @@ This is just a variation of the previous examples. We embedded the interactive m
 Click on the Codepen logo (on the top right) so to run the [online example](https://codepen.io/w3devcampus/pen/MWKEJqM) (for security reasons the embedded version cannot run in this page):
 
 <h4>HTML</h4>
+
 ```
  <!DOCTYPE html>
-
  <html>
-
  <head>
-
  <title>Gimmee My Location</title>
-
  <meta charset="utf-8" />
-
  <meta
-
  name="viewport"
-
  content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
-
  />
-
  <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
-
  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-
  <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
-
  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-
  </head>
-
  <body onload="getLocation();">
-
  <h1>Example of the use of reverse geocoder in a form</h1>
-
  <form>
-
  <fieldset>
-
  <legend>Form example with map and address...</legend>
-
  <div id="map" style="width: 500px; height: 300px"></div>
-
  </fieldset>
-
  <fieldset>
-
  <legend>Surface address</legend>
-
  <input id="surfaceAddress" size=110 type="text">
-
  <fieldset>
-
  <form>
-
  <div id="map"></div>
-
  <script type="text/javascript">
-
  var geocoder = L.Control.Geocoder.nominatim();
-
  var map, marker, latitude, longitude;
-
  function getLocation() {
-
  if (!navigator.geolocation) {
-
  alert("Browser doesn't support geolocation");
-
  } else {
- navigator.geolocation.getCurrentPosition(success, error);
-
+navigator.geolocation.getCurrentPosition(success, error);
  }
-
  }
-
  // Get current position successfully
-
  function success(position) {
-
  latitude = position.coords.latitude;
 
  longitude = position.coords.longitude;
-
  // Instance map using leaflet
-
  map = L.map('map').setView([latitude, longitude], 13);
-
  // Tile layer using key api at cloudmade.com
-
  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}{x}{y}.png', {
-
  key: '760506895e284217a7442ce2efe97797',
-
  styleId: 103288,
-
  maxZoom: 16
-
  }).addTo(map);
-
  // Marker using leaflet
-
  marker = L.marker([latitude, longitude]).addTo(map);
-
  // Popup in leaflet
-
  marker.bindPopup('<p></p>').openPopup();
-
  getPhysicalAddress({lat:latitude, lng:longitude});
-
  }
-
  // Get current position fail
-
  function error() {
-
  alert('Get current position fail. Please access codepen to get geolocation.');
-
  }
-
  var marker;
-
  function getPhysicalAddress(latlong) {
-
  geocoder.reverse(latlong, 500000, function(results) {
-
  var r = results[0];
-
  console.log(r.name);
-
  document.querySelector("#surfaceAddress").value = r.name;
-
  if (r) {
-
  if (marker) {
-
  marker
-
  .setLatLng(r.center)
-
  .setPopupContent(r.html || r.name)
-
  .openPopup();
-
  } else {
-
  marker = L.marker(r.center)
-
  .bindPopup(r.name)
-
  .addTo(map)
-
  .openPopup();
-
  }
-
  }
-
  });
-
  }
-
  <script>
-
  </body>
-
  </html>
 ```
+
 The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
