@@ -541,6 +541,7 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
    width="15%">
 &nbsp;
 <br/>
+
 ```
    <!DOCTYPE html>
    <html lang="en">
@@ -553,6 +554,7 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
  <body>
  ... <!-- The rest is content -->
 ```
+
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 13. new structural elements in html5 (14) --------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -591,29 +593,28 @@ The results of these surveys led to the addition of new structural elements in H
 
 Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\'s surveys gave birth to these new elements (click on the element\'s name to go to the W3C specification about this element):
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  HTML5 structural elements with descriptions.                                                                                                                                                
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  HTML5 element                                                                                                                                                                               Description
+HTML5 structural elements with descriptions.
 
-  [**\<header\>**](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>
+HTML5 element
 
-  [**\<footer\>**](https://www.w3.org/TR/html5/sections.html#the-footer-element)                                                                                                              Contains the footer of a site, a long \<article\>, or a long \<section\>
+Description
 
-  [**\<nav\>**](https://www.w3.org/TR/html5/sections.html#the-nav-element)                                                                                                                    Section that contains the main navigation links (within the document or to other pages).
+[**\<header\>**](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>
+[**\<footer\>**](https://www.w3.org/TR/html5/sections.html#the-footer-element)                                                                                                              Contains the footer of a site, a long \<article\>, or a long \<section\>
 
-  [**\<article\>**](https://www.w3.org/TR/html5/sections.html#the-article-element)                                                                                                            Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.
+[**\<nav\>**](https://www.w3.org/TR/html5/sections.html#the-nav-element)                                                                                                                    Section that contains the main navigation links (within the document or to other pages).
 
-  [**\<section\>**](https://www.w3.org/TR/html5/sections.html#the-section-element)                                                                                                            Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.
+[**\<article\>**](https://www.w3.org/TR/html5/sections.html#the-article-element)                                                                                                            Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.
 
-  [**\<time\>**](https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element)                                                                                                      Used for marking up times and dates.
+[**\<section\>**](https://www.w3.org/TR/html5/sections.html#the-section-element)                                                                                                            Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.
 
-  [**\<aside\>**](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.
+[**\<time\>**](https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element)                                                                                                      Used for marking up times and dates.
 
-  [**\<figure\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [**\<figcaption\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
+[**\<aside\>**](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.
 
-  [**\<main\>**](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                 The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. **There can be only one \<main\> element in a document.**
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[**\<figure\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [**\<figcaption\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
+
+[**\<main\>**](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                 The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. **There can be only one \<main\> element in a document.**
 
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
 
@@ -645,45 +646,32 @@ This is an example of one way to organize a blog. Here, we have designed the HTM
 
 <h4>HTML code:</h4>
 
-> \<!DOCTYPE html\>
->
->    \<html lang=\"en\"\>
->
->       \<head\>
->
->          \<meta charset=\"utf-8\"/\>
->
->          \<title\>Simple HTML5 blog\</title\>
->
->       \</head\>
->
->       \<body\>
->
->          \<header\>
->
->             \<h1\>Simple \<span\>HTML5\</span\> blog\</h1\>
->
->          \</header\>
->
-> \...
+```
+> <!DOCTYPE html>
+>    <html lang="en">
+>       <head>
+>          <meta charset="utf-8"/>
+>          <title>Simple HTML5 blog</title>
+>       </head>
+>       <body>
+>          <header>
+>             <h1>Simple <span>HTML5</span> blog</h1>
+>          </header>
+> ...
+```
 
 ##### The CSS rules we used:
 
+```
 > header {
->
 >     color: #007e99;
->
 >     font-size: 2.5em;
->
 >     padding: 20px 50px
->
 > }
->
 > header span {
->
 >     color: #722
->
 > }
+```
 
 #### Use a \<nav\> for the navigation menu just below the header
 <!------------------------------------------------------------------------------------------------>
@@ -699,112 +687,67 @@ The navigation menu just below the header is a \<nav\> element. For the purpos
 
 <h4>HTML code:</h4>
 ```
-> \<!DOCTYPE html\>
->
-> \<html lang=\"en\"\>
->
-> \<head\>
->
->    \<meta charset=\"utf-8\"/\>
->
->    \<title\>Simple HTML5 blog\</title\>
->
-> \</head\>
->
-> \<body\>
->
-> \<header\>
->
->    \<h1\>Simple \<span\>HTML5\</span\> blog\</h1\>
->
-> \</header\>
->
-> **\<nav\>**
->
->     \<ul\>
->
->        \<li\>\<span\>Blog\</span\>\</li\>
->
->        \<li\>\<a href=\"\"\>About\</a\>\</li\>
->
->        \<li\>\<a href=\"\"\>Contact\</a\>\</li\>
->
->     \</ul\>
->
-> **\</nav\>**
+> <!DOCTYPE html>
+> <html lang="en">
+> <head>
+>    <meta charset="utf-8"/>
+>    <title>Simple HTML5 blog</title>
+> </head>
+> <body>
+> <header>
+>    <h1>Simple <span>HTML5</span> blog</h1>
+> </header>
+> **<nav>**
+>     <ul>
+>        <li><span>Blog</span></li>
+>        <li><a href="">About</a></li>
+>        <li><a href="">Contact</a></li>
+>     </ul>
+> **</nav>**
 ```
 And here is the CSS we used in this example for the \<nav\> element:
 ```
 > nav {
->
 >     font-size: 1.5em;
->
 >     margin: 5px 0;
->
 >     padding: 20px 50px
->
 > }
->
 > nav li {
->
 >     display: inline;
->
 >     margin: 0 15px
->
 > }
->
 > nav li:first-child {
->
 >     margin-left: 0
->
 > }
->
-> \* html nav ul {
->
+> * html nav ul {
 >     margin-left: -15px
->
 > }
->
 > nav span, nav a {
->
 >     padding: 3px 15px 4px
->
 > }
->
 > nav span {
->
 >     background: #722;
->
 >     color: #fff
->
 > }
 ```
+
 #### A \<section\> for each month and an \<article\> for each post in the blog
 
 Now, we have one big \<section\> element that contains a set of \<article\> elements...
 
-![image of sections that contain articles](media/image16.jpeg){width="5.0in" height="2.185184820647419in"}
+![image of sections that contain articles](media/image016.jpeg){width="5.0in" height="2.185184820647419in"}
 
 **HTML code:**
-
+```
 > \<section\>
->
 >    \<article\>
->
 >     \...
->
 >    \</article\>
->
 >    \<article\>
->
 >     \...
->
 >    \</article\>
->
 >    \<article\>
->
 >     \...
->
 >    \</article\>
 >
 > \</section\>
