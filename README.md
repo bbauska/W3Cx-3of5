@@ -221,9 +221,9 @@ We are then providing references to the browser support of HTML5 features presen
 
 <h3>Can I use</h3>
 
-[Can I Use](https://caniuse.com/) provides up-to-date tables for support of front-end Web technologies on desktop and mobile Web browsers. Below is a snapshot of what information is given by CanIUse when searching for "CSS3 colors".
+(Can I Use) <a href="https://caniuse.com/"> provides up-to-date tables for support of front-end Web technologies on desktop and mobile Web browsers. Below is a snapshot of what information is given by CanIUse when searching for "CSS3 colors".</a>
 
-[Example of a CanIUse browser support table (using CSS3 colors)](./images/image004.png)
+<a href="./images/image004.png">Example of a CanIUse browser support table (using CSS3 colors)</a>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 04. caniuse example (05) ------------------------------------>
