@@ -221,9 +221,9 @@ We are then providing references to the browser support of HTML5 features presen
 
 <h3>Can I use</h3>
 
-(Can I Use) <a href="https://caniuse.com/"> provides up-to-date tables for support of front-end Web technologies on desktop and mobile Web browsers. Below is a snapshot of what information is given by CanIUse when searching for "CSS3 colors".</a>
+<a href="https://caniuse.com/">Can I Use</a> provides up-to-date tables for support of front-end Web technologies on desktop and mobile Web browsers. Below is a snapshot of what information is given by CanIUse when searching for "CSS3 colors".</a>
 
-<a href="./images/image004.png">Example of a CanIUse browser support table (using CSS3 colors)</a>
+Example of a <a href="./images/image004.png">CanIUse browser</a> support table (using CSS3 colors).
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 04. caniuse example (05) ------------------------------------>
@@ -231,7 +231,7 @@ We are then providing references to the browser support of HTML5 features presen
 <p align="center">
 <img src="/images/image004.png?raw=true"
    alt="Example CSS in CanIUse"
-   width="55%">
+   width="65%">
 &nbsp;
 <br/>
 
@@ -297,7 +297,7 @@ The [W3C cheatsheet](https://www.w3.org/2009/cheatsheet/) provides quick acces
 <p align="center">
 <img src="/images/image007.png?raw=true"
    alt="W3C Cheat Sheet snapshot image"
-   width="35%" />
+   width="65%" />
 </p>
 Its main feature is a lookup search box, where one can start typing a keyword and get a list of matching properties/elements/attributes/functions in the above-mentioned specifications, and further details on those when selecting the one of interest.
 
@@ -353,7 +353,7 @@ W3C\'s primary activity is to develop protocols and guidelines that ensure long-
 <p align="center">
 <img src="/images/image004.png?raw=true"
    alt="Tim Berners-Lee at his desk in CERN, Switzerland, 1994"
-   width="15%">
+   width="65%">
 &nbsp;
 <br/>
 
@@ -501,15 +501,13 @@ Good page titles are particularly important for orientation --- to help people k
 
 *Example*:
 
-> \<head\>
->
-> \...
->
-> \<title\>Web Accessibility Initiative (WAI) - home page\</title\>
->
-> \...
->
-> \</head\>
+```html5
+> <head>
+> ...
+> <title>Web Accessibility Initiative (WAI) - home page</title>
+> ...
+> </head>
+```
 
 ### Example 2: image text alternatives (\"alt text\")
 
@@ -529,7 +527,8 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 &nbsp;
 <br/>
 
-<https://www.w3.org/Icons/w3c_home>
+<p align="center"><a href="https://www.w3.org/Icons/w3c_home">W3C Home</a></p>
+
 ```
    <a href="https://w3.org">
    <img src="https://w3.org/Icons/w3c_home.png" width="72" height="48" alt="World Wide Web Consortium">
@@ -545,14 +544,14 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 &nbsp;
 <br/>
 
-```
+```html5
    <!DOCTYPE html>
    <html lang="en">
    <head>
    <meta charset="utf-8">
     <title>Page Title</title>
-    <link rel=\"stylesheet\" href=\"style.css\"\>
-    <script src=\"script.js\"\>\</script\>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
  </head>
  <body>
  ... <!-- The rest is content -->
@@ -562,7 +561,7 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 <!-------------------------- 13. new structural elements in html5 (14) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image013.png?raw=true"
+<img src="/images/image013.jpeg?raw=true"
    alt="Some of the new structural elements introduced by HTML5: section, article, etc."
    width="55%" />
 &nbsp;
@@ -649,7 +648,7 @@ This is an example of one way to organize a blog. Here, we have designed the HTM
 
 <h4>HTML code:</h4>
 
-```
+```html5
 > <!DOCTYPE html>
 >    <html lang="en">
 >       <head>
