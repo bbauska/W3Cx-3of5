@@ -170,6 +170,10 @@ Here are a few possibilities for Web editors:
 
 -   [Vim](https://www.vim.org/) or [Emacs](https://www.gnu.org/software/emacs/) - great editors, but if you\'re not already familiar with these, this isn\'t the time to try.
 
+<div align="right">
+  <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
+
 <h3>Online Editors:</h3>
 
 To help you practice during the whole duration of the course, we use the following interactive online editors. Pretty much all the course\'s examples actually use these tools.
@@ -209,6 +213,10 @@ Here\'s an article of interest if you use CodePen: [Things you can do with Code
 
 There are many other handy tools such as [JSFiddle](https://jsfiddle.net/), and [Dabblet](https://dabblet.com/). Please share your favorite tool on the discussion forum, and explain why! Share also your own code contributions, such as a nice canvas animation, a great looking HTML5 form, etc.
 
+<div align="right">
+  <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
+
 <h3>Browser Compatibility:</h3>
 
 The term browser compatibility refers to the ability of a given Web site to appear fully functional on the browsers available in the market.
@@ -242,7 +250,7 @@ Example of a <a href="./images/image004.png">CanIUse browser</a> support table (
 <p align="center">
 <img src="/images/image005.png?raw=true"
    alt="Logo of MDN Web Docs"
-   width="15%">
+   width="35%">
 &nbsp;
 <br/>
 
@@ -677,7 +685,7 @@ This is an example of one way to organize a blog. Here, we have designed the HTM
 
 #### Use a \<nav\> for the navigation menu just below the header
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 15. imge of the navigaton menu (17) ------------------------------>
+<!----------------------------- 15. image of the navigaton menu (17) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image015.png?raw=true"
