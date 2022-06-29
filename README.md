@@ -7305,6 +7305,7 @@ So, let\'s first get the context (do this only once):
 ### Complete example that draws a filled rectangle in red
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -7341,7 +7342,9 @@ Your browser does not support the canvas tag.
 </body>
 </html>
 ```
+
 Source code:
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -7378,6 +7381,7 @@ Source code:
 33.    </body>
 34. </html>
 ```
+
 #### **Explanations**
 
 **Only access elements when the DOM is ready:**
@@ -7461,8 +7465,10 @@ fillStyle and the other context properties can be considered to be \"global var
 
 The two first parameters are the coordinates of the top left corner of the rectangle. This method uses the current value of the fillStyle property to determine how to fill the rectangle.
 
-1.  ctx.fillStyle=\'pink\';
+```
+1.  ctx.fillStyle='pink';
 2.  ctx.fillRect(10,10,200,200);
+```
 
 Produces this result:
 
@@ -7486,11 +7492,13 @@ Only the outline of the rectangle will be drawn, and it will be drawn using the 
 -   #### clearRect(x, y, width, height): a call to this method erases the specified rectangle
 
 Actually it draws it in a color called \"transparent black\" (!) that corresponds to the initial state of the rectangle as if no drawing had occurred.
+
 ```
 1.  ctx.fillStyle=\'pink\';
 2.  ctx.fillRect(10,10,200,200);
 3.  ctx.clearRect(50, 50, 20, 20);
 ```
+
 The result is:
 
 ![The use of ClearRect draws a white rectangle against the pink background](./images/image130.jpeg){width="2.6770833333333335in" height="2.6770833333333335in"}
@@ -7500,6 +7508,7 @@ The result is:
 #### Example #1: draw a wireframe red rectangle, width lineWidth = 3 pixels
 
 Extract from the source code (the part that draws the rectangle):
+
 ```
 1.  function drawSomething() {
 2.       // draw a red rectangle, line width=3 pixels
@@ -7508,6 +7517,7 @@ Extract from the source code (the part that draws the rectangle):
 5.       ctx.strokeRect(10,10,80,100);
 6.  }
 ```
+
 Here, we used \"stroke\" instead of \"fill\" in the property and method names (*lines 4 and 5*): strokeStyle instead of fillStyle, strokeRect(\...) instead of fillRect(\...).
 
 We also introduced a new property of the context, that applies only when drawing in \"stroke\" mode, the lineWidth property (*line 3*), that is used for setting the width of the shape outline. The value is in pixels.
@@ -7517,6 +7527,7 @@ We also introduced a new property of the context, that applies only when drawing
 Let\'s continue with another example. This time we will draw several shapes that share the same colors - they will be filled in red, with a blue outline. We also show how to draw a text message with a given font.
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -7564,7 +7575,9 @@ Your browser does not support the canvas tag.
 </body>
 </html>
 ```
+
 Source code extract:
+
 ```
 1.  function drawSomething() {
 2.       // set the global context values
@@ -7586,6 +7599,7 @@ Source code extract:
 18.     ctx.fillText("hello", 70, 22);
 19. }
 ```
+
 This example shows the \"global\" nature of the context properties. Once you set the filled color to red, any shapes you draw in filled mode will be red. This is true for all the context properties. We set some of these properties in *lines 3-7*, and all following calls to context methods for drawing rectangles or text will depend on them. The two filled rectangles at *lines 10-11* will be red, the two wireframe rectangles drawn at *lines 14-15* will be blue, etc.
 
 *Line 18* shows how to draw a text message at an X position of 70 and a Y position of 22. The font is set at *line 7* using the font property of the context.  The syntax is the same we use in CSS for using \"system fonts\".
@@ -7625,6 +7639,7 @@ Let\'s start with some simple examples before looking at how we use 2D transform
 If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) and another at (150, 0), and a third at (300, 0), here is the result and the corresponding code:
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -7663,7 +7678,9 @@ Your browser does not support the canvas tag.
 </body>
 </html>
 ```
+
 JavaScript code extract:
+
 ```
 1.  function drawSomething() {
 2.       ctx.fillStyle='lightgreen';
@@ -7673,11 +7690,13 @@ JavaScript code extract:
 6.       ctx.fillRect(300,0,100,200);
 7.  }
 ```
+
 -   #### Let\'s modify the code so that we can draw these rectangles at any X and Y position
 
 What if we wanted to draw these 3 rectangles at another position, as a group? We would like to draw all of them a little closer to the bottom, for example\... Let\'s add some parameters to the function:  the X and Y position of the rectangles.
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -7716,45 +7735,30 @@ Your browser does not support the canvas tag.
 </body>
 </html>
 ```
+
 Code extract:
 
+```
 1.  var canvas, ctx;
-
 2.  
-
 3.  function init() {
-
 4.      // This function is called after the page is loaded
-
 5.      // 1 - Get the canvas
-
 6.      canvas = document.getElementById(\'myCanvas\');
-
 7.      // 2 - Get the context
-
 8.      ctx=canvas.getContext(\'2d\');
-
 9.      // 3 - we can draw
-
 10.     drawSomething(**0, 100**);
-
 11. }
-
 12. 
-
 13. function drawSomething(**x, y**) {
-
 14.     // draw 3 rectangles
-
 15.     ctx.fillStyle=\'lightgreen\';
-
 16.     ctx.fillRect(**x,y**,100,200);
-
 17.     ctx.fillRect(**x+150**,y,100,200);
-
 18.     ctx.fillRect(**x+300**,y,100,200);
-
 19. }
+```
 
 At *line 10*, we called the drawSomething(\...) function with 0 and 100 as parameters, meaning \"please add an offset of 0 in X and 100 in Y directions to what is drawn by the function\...
 
@@ -7768,151 +7772,85 @@ Now we can start having some fun\... let\'s draw a monster\'s head using only r
 
 HTML
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<title\>Monster\'s head with rectangles\</title\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<style\>
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Monster's head with rectangles</title>
+<meta charset="utf-8"/>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var canvas, ctx;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 // 3 - we can draw
-
 drawMonster(0, 0);
-
 }
-
 function drawMonster(x, y) {
-
 // draw a red rectangle
-
 // head
-
-ctx.fillStyle=\'lightgreen\';
-
+ctx.fillStyle='lightgreen';
 ctx.fillRect(x,y,200,200);
-
 // eyes
-
-ctx.fillStyle=\'red\';
-
+ctx.fillStyle='red';
 ctx.fillRect(x+35,y+30,20,20);
-
 ctx.fillRect(x+140,y+30,20,20);
-
 // interior of eye
-
-ctx.fillStyle=\'yellow\';
-
+ctx.fillStyle='yellow';
 ctx.fillRect(x+43,y+37,10,10);
-
 ctx.fillRect(x+143,y+37,10,10);
-
 // Nose
-
-ctx.fillStyle=\'black\';
-
+ctx.fillStyle='black';
 ctx.fillRect(x+90,y+70,20,80);
-
 // Mouth
-
-ctx.fillStyle=\'purple\';
-
+ctx.fillStyle='purple';
 ctx.fillRect(x+60,y+165,80,20);
-
 }
-
-\</script\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height=\"400\"\>
-
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\</body\>
-
-\</html\>
+</canvas>
+</body>
+</html>
+```
 
 An extract of the JavaScript source code is:
 
+```
 1.  function drawMonster(x, y) {
-
 2.     // head
-
 3.     ctx.fillStyle=\'lightgreen\';
-
 4.     ctx.fillRect(x,y,200,200);
-
 5.  
-
 6.     // eyes
-
 7.     ctx.fillStyle=\'red\';
-
 8.     ctx.fillRect(x+35,y+30,20,20);
-
 9.     ctx.fillRect(x+140,y+30,20,20);
-
 10. 
-
 11.    // interior of eye
-
 12.    ctx.fillStyle=\'yellow\';
-
 13.    ctx.fillRect(x+43,y+37,10,10);
-
 14.    ctx.fillRect(x+143,y+37,10,10);
-
 15. 
-
 16.    // Nose
-
 17.    ctx.fillStyle=\'black\';
-
 18.    ctx.fillRect(x+90,y+70,20,80);
-
 19. 
-
 20.    // Mouth
-
 21.    ctx.fillStyle=\'purple\';
-
 22.    ctx.fillRect(x+60,y+165,80,20);
-
 23. }
+```
 
 As you can see, the code uses the same technique, becomes less and less readable. The Xs and Ys at the beginning of each call makes understanding the code harder, etc.
 
@@ -19488,31 +19426,21 @@ Bottom of Form
 
 Source code extract:
 
-1.  \<form\>
-
-2.      \...
-
-3.      \<input **list=\"browsers\"** id=\"mybrowser\" /\>
-
+```
+1.  <form>
+2.      ...
+3.      <input **list="browsers"** id="mybrowser" />
 4.  
-
-5.      \<datalist **id=\"browsers\"**\>
-
-6.         \<option value=\"Internet Explorer\"\>
-
-7.         \<option value=\"Firefox\"\>
-
-8.         \<option value=\"Chrome\"\>
-
-9.         \<option value=\"Opera\"\>
-
-10.        \<option value=\"Safari\"\>
-
-11.     \</datalist\>
-
-12. \...
-
-13. \</form\>
+5.      <datalist **id="browsers"**>
+6.         <option value="Internet Explorer">
+7.         <option value="Firefox">
+8.         <option value="Chrome">
+9.         <option value="Opera">
+10.        <option value="Safari">
+11.     </datalist>
+12. ...
+13. </form>
+```
 
 At *lines 3* and *5*, the value of the list attribute of the input field must match the one of the id of the \<datalist\> element.
 
@@ -19532,15 +19460,14 @@ You can also try [this online JavaScript RegExps tester](https://regex101.com/#
 
 Just add a pattern attribute with a value that is the JavaScript regular expression that must match the entire string entered in the field. Note that the empty string is valid by default (except if the required attribute is used - this makes empty fields invalid).
 
-**It\'s best practice to systematically add a title attribute with a value that indicates what constitutes a valid entry.** More on this in the section of this course dedicated to form validation.
+It\'s best practice to systematically add a title attribute with a value that indicates what constitutes a valid entry.** More on this in the section of this course dedicated to form validation.
 
-1.  \<input type=\"text\" name=\"country_code\"
-
-2.         **pattern=\"\[A-Za-z\]{3}\"**
-
-3.         title=\"3 letter country code\"
-
-4.  /\>
+```
+1.  <input type="text" name="country_code"
+2.         pattern="[A-Za-z]{3}"
+3.         title="3 letter country code"
+4.  />
+```
 
 ### Examples
 
@@ -19556,49 +19483,30 @@ As seen in the previous examples, we used some CSS pseudo classes for automatica
 
 Complete source code:
 
-1.  \<!DOCTYPE html\>
-
-2.  \<html lang=\"en\"\>
-
-3.  \<head\>
-
-4.  \<meta charset=\"utf-8\"\>
-
-5.  \<title\>Example of the pattern attribute\</title\>
-
-6.  \<style\>
-
-7.      **input:invalid {**
-
-8.          **background-color: lightPink;**
-
-9.      **}**
-
-10.     **input:valid {**
-
-11.         **background-color: lightGreen;**
-
-12.     **}**
-
-13. \</style\>
-
-14. \</head\>
-
-15. \<body\>
-
-16.   \<label for=\"code\"\>Please enter a 3 letter country code:\</label\>
-
-17.   \<input type=\"text\" name=\"country_code\"
-
-18.          **pattern=\"\[A-Za-z\]{3}\"**
-
-19.          title=\"3 letter country code\"
-
-20.          id=\"code\"/\>
-
-21. \</body\>
-
-22. \</html\>
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset="utf-8">
+5.  <title>Example of the pattern attribute</title>
+6.  <style>
+7.      input:invalid {
+8.          background-color: lightPink;
+9.      }
+10.     input:valid {
+11.         background-color: lightGreen;
+12.     }
+13. </style>
+14. </head>
+15. <body>
+16.   <label for="code">Please enter a 3 letter country code:</label>
+17.   <input type="text" name="country_code"
+18.          pattern="[A-Za-z]{3}"
+19.          title="3 letter country code"
+20.          id="code"/>
+21. </body>
+22. </html>
+```
 
 #### Example #2: mixing several other attributes with the pattern attribute
 
@@ -19610,51 +19518,31 @@ Enter a pseudo (6-12 characters): ![](./images/image218.wmf)
 
 Complete source code:
 
-1.  \<!DOCTYPE html\>
-
-2.  \<html lang=\"en\"\>
-
-3.  \<head\> \<meta charset=\"utf-8\"\>
-
-4.    \<title\>Example of use of new HTML5 input field attributes\</title\>
-
-5.    \<style\>
-
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head> <meta charset="utf-8">
+4.    <title>Example of use of new HTML5 input field attributes</title>
+5.    <style>
 6.        input:focus:invalid { background-color: lightPink;}
-
 7.        input:valid { background-color:lightGreen; }
-
 8.        input:required {border: 2px solid red; }
-
 9.        input:optional {border: 2px solid green; }
-
-10.   \</style\>
-
-11. \</head\>
-
-12. \<body\>
-
-13. \<p\>Attributes used: placeholder (for displaying a ghost example value), pattern, required (empty = invalid)\...
-
-14. \<p\>
-
-15. \<label for=\"inputID\"\>Enter a pseudo (6-12 characters): \</label\>
-
-16. \<input id=\"inputID\" name=\"Name\"
-
-17.        **placeholder=\"Name\"**
-
-18.        **pattern=\"\\w{6,12}\"**
-
-19.        **required**
-
-20. **       title=\"6-12 characters allowed please\"**
-
-21.        type=\"text\" /\>
-
-22. \</body\>
-
-23. \</html\>
+10.   </style>
+11. </head>
+12. <body>
+13. <p>Attributes used: placeholder (for displaying a ghost example value), pattern, required (empty = invalid)...
+14. <p>
+15. <label for="inputID">Enter a pseudo (6-12 characters): </label>
+16. <input id="inputID" name="Name"
+17.        placeholder="Name"
+18.        pattern="w{6,12}"
+19.        required
+20.        title="6-12 characters allowed please"
+21.        type="text" />
+22. </body>
+23. </html>
+```
 
 #### Example #3: an \<input type=\"url\"\> element with a pattern attribute allowing only certain protocols
 
@@ -23288,7 +23176,6 @@ navigator.geolocation.getCurrentPosition(success, error);
  // Get current position successfully
  function success(position) {
  latitude = position.coords.latitude;
-
  longitude = position.coords.longitude;
  // Instance map using leaflet
  map = L.map('map').setView([latitude, longitude], 13);
@@ -23338,4 +23225,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>06-06-2022 Mon 9:03pm</i></b></h3>
+<h3><b><i>06-29-2022 Tue 7:39pm</i></b></h3>
