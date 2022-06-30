@@ -553,14 +553,14 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 <br/>
 
 ```html5
-   <!DOCTYPE html>
+<!DOCTYPE html>
    <html lang="en">
    <head>
    <meta charset="utf-8">
-    <title>Page Title</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
- </head>
+   <title>Page Title</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+   </head>
  <body>
  ... <!-- The rest is content -->
 ```
@@ -657,30 +657,30 @@ This is an example of one way to organize a blog. Here, we have designed the HTM
 <h4>HTML code:</h4>
 
 ```html5
-> <!DOCTYPE html>
->    <html lang="en">
->       <head>
->          <meta charset="utf-8"/>
->          <title>Simple HTML5 blog</title>
->       </head>
->       <body>
->          <header>
->             <h1>Simple <span>HTML5</span> blog</h1>
->          </header>
-> ...
+<!DOCTYPE html>
+   <html lang="en">
+      <head>
+         <meta charset="utf-8"/>
+         <title>Simple HTML5 blog</title>
+      </head>
+      <body>
+         <header>
+            <h1>Simple <span>HTML5</span> blog</h1>
+         </header>
+...
 ```
 
 ##### The CSS rules we used:
 
 ```
-> header {
->     color: #007e99;
->     font-size: 2.5em;
->     padding: 20px 50px
-> }
-> header span {
->     color: #722
-> }
+header {
+    color: #007e99;
+    font-size: 2.5em;
+    padding: 20px 50px
+}
+header span {
+    color: #722
+}
 ```
 
 #### Use a \<nav\> for the navigation menu just below the header
@@ -698,50 +698,50 @@ The navigation menu just below the header is a \<nav\> element. For the purpos
 <h4>HTML code:</h4>
 
 ```
-> <!DOCTYPE html>
-> <html lang="en">
-> <head>
->    <meta charset="utf-8"/>
->    <title>Simple HTML5 blog</title>
-> </head>
-> <body>
-> <header>
->    <h1>Simple <span>HTML5</span> blog</h1>
-> </header>
-> **<nav>**
->     <ul>
->        <li><span>Blog</span></li>
->        <li><a href="">About</a></li>
->        <li><a href="">Contact</a></li>
->     </ul>
-> **</nav>**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8"/>
+   <title>Simple HTML5 blog</title>
+</head>
+<body>
+<header>
+   <h1>Simple <span>HTML5</span> blog</h1>
+</header>
+<nav>
+    <ul>
+       <li><span>Blog</span></li>
+       <li><a href="">About</a></li>
+       <li><a href="">Contact</a></li>
+    </ul>
+</nav>
 ```
 
 And here is the CSS we used in this example for the \<nav\> element:
 
 ```
-> nav {
->     font-size: 1.5em;
->     margin: 5px 0;
->     padding: 20px 50px
-> }
-> nav li {
->     display: inline;
->     margin: 0 15px
-> }
-> nav li:first-child {
->     margin-left: 0
-> }
-> * html nav ul {
->     margin-left: -15px
-> }
-> nav span, nav a {
->     padding: 3px 15px 4px
-> }
-> nav span {
->     background: #722;
->     color: #fff
-> }
+nav {
+    font-size: 1.5em;
+    margin: 5px 0;
+    padding: 20px 50px
+}
+nav li {
+    display: inline;
+    margin: 0 15px
+}
+nav li:first-child {
+    margin-left: 0
+}
+* html nav ul {
+    margin-left: -15px
+}
+nav span, nav a {
+    padding: 3px 15px 4px
+}
+nav span {
+    background: #722;
+    color: #fff
+}
 ```
 
 #### A \<section\> for each month and an \<article\> for each post in the blog
@@ -753,40 +753,40 @@ Now, we have one big \<section\> element that contains a set of \<article\> e
 <h4>HTML code:</h4>
 
 ```
-> <section>
->    <article>
->     ...
->    </article>
->    <article>
->     ...
->    </article>
->    <article>
->     ...
->    </article>
-> </section>
+<section>
+   <article>
+    ...
+   </article>
+   <article>
+    ...
+   </article>
+   <article>
+    ...
+   </article>
+</section>
 ```
 
 **And here is the CSS:**
 
 ```
-> section {
->    float: left;
->    padding: 35px 0;
->    position: relative;
->    width: 70%
-> }
-> section article {
->    margin: 0 50px 40px;
->    padding: 25px 0 0;
->    position: relative
-> }
-> section header {
->    font-size: 1em;
->    padding: 0;
-> }
-> section h2 {
->    font-size: 2.3em;
-> }
+section {
+   float: left;
+   padding: 35px 0;
+   position: relative;
+   width: 70%
+}
+section article {
+   margin: 0 50px 40px;
+   padding: 25px 0 0;
+   position: relative
+}
+section header {
+   font-size: 1em;
+   padding: 0;
+}
+section h2 {
+   font-size: 2.3em;
+}
 ```
 
 Note that the H2, article, article header, etc. will be styled using these rules.
@@ -810,34 +810,34 @@ Next, in each article in the section we have a header (to display the article ti
 Example for the first blog article:
 
 ```
-> <section>
->    <article>
->      <header>
->          <h2><a href="">Information about this example</a></h2>
->      </header>
->      <p>Try to move the mouse on different elements. The structure will be
->      highlighted and you will be able
->      to see the different inclusions of elements one in each other. If you
->      move the cursor to this sentence, it will be highlighted in dark grey,
->      showing the presence of an &lt;article&gt; element, surrounded by a
->      &lt;section&gt; element (light grey), etc. So we have some articles in
->      a single section element. The page title at the top is a &lt;header&gt;
->      element, while the tag cloud on the right is a &lt;aside&gt; element. The
->      main menu on top (with Blog, About, Contact) is a &lt;nav&gt; element.</p>
->      <figure>
->          <img src="HTML5-tags.png"
->              alt="Example of HTML5 structural tags" />
->          <figcaption>
->              Fig. 1 : an example of how new structural elements could
->              be used. This page put a &lt;nav&gt; on top, and does not have
->              headers and footer for each article, like in this figure,
->              but it could... By the way this is a
->              &lt;figcaption&gt; inside a &lt;figure&gt; element...
->          </figcaption>
->     </figure>
->    </article>
->    ...
-> </section>
+<section>
+   <article>
+     <header>
+         <h2><a href="">Information about this example</a></h2>
+     </header>
+     <p>Try to move the mouse on different elements. The structure will be
+     highlighted and you will be able
+     to see the different inclusions of elements one in each other. If you
+     move the cursor to this sentence, it will be highlighted in dark grey,
+     showing the presence of an &lt;article&gt; element, surrounded by a
+     &lt;section&gt; element (light grey), etc. So we have some articles in
+     a single section element. The page title at the top is a &lt;header&gt;
+     element, while the tag cloud on the right is a &lt;aside&gt; element. The
+     main menu on top (with Blog, About, Contact) is a &lt;nav&gt; element.</p>
+     <figure>
+         <img src="HTML5-tags.png"
+             alt="Example of HTML5 structural tags" />
+         <figcaption>
+             Fig. 1 : an example of how new structural elements could
+             be used. This page put a &lt;nav&gt; on top, and does not have
+             headers and footer for each article, like in this figure,
+             but it could... By the way this is a
+             &lt;figcaption&gt; inside a &lt;figure&gt; element...
+         </figcaption>
+    </figure>
+   </article>
+   ...
+</section>
 ```
 
 #### Use \<figure\> and \<figcaption\> and embed \<img\> inside
@@ -893,19 +893,19 @@ After the long \<section\> element that contains all the blog articles display
 <br/>
 
 ```
-> <section>
-> .... all <article>... </article> here....
-> </section>
-> **<aside>**
->    <h2>Tag cloud</h2>
->    <ul class="tag-cloud">
->        <li><a href="" rel="tag" class="w2">ajax</a></li>
->        <li><a href="" rel="tag" class="w8">apple</a></li>
->        <li><a href="" rel="tag" class="w3">css</a></li>
->        ...
->    </ul>
-> **</aside>**
-> ...
+<section>
+.... all <article>... </article> here....
+</section>
+<aside>
+   <h2>Tag cloud</h2>
+   <ul class="tag-cloud">
+       <li><a href="" rel="tag" class="w2">ajax</a></li>
+       <li><a href="" rel="tag" class="w8">apple</a></li>
+       <li><a href="" rel="tag" class="w3">css</a></li>
+       ...
+   </ul>
+</aside>
+...
 ```
 
 We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at [the code of the online example](https://jsbin.com/bucokav/edit?html,output).
@@ -913,21 +913,21 @@ We are not going to show the complete CSS here as it uses some tricks to display
 **Here is the CSS for the \<aside\> element:**
 
 ```
-> aside {
->     float: right;
->     padding: 70px 0 30px;
->     position: relative;
->     width: 25%
-> }
-> aside h2 {
->     color: #888;
->     font-size: 1.8em
-> }
-> aside .tag-cloud {
->     padding: 15px 35px 10px 0;
->     text-align: center
-> }
-> \...
+aside {
+    float: right;
+    padding: 70px 0 30px;
+    position: relative;
+    width: 25%
+}
+aside h2 {
+    color: #888;
+    font-size: 1.8em
+}
+aside .tag-cloud {
+    padding: 15px 35px 10px 0;
+    text-align: center
+}
+...
 ```
 
 We used a float:right CSS rule to put the tag cloud on the right\... In the following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
@@ -943,49 +943,31 @@ We used a float:right CSS rule to put the tag cloud on the right\... In the fo
 Finally, we added a \<footer\> element (*lines 12-14* below) after the tag cloud definition, to display a page footer:
 
 ```
-> \<html\>
->
-> \...
->
-> \<body\>
->
-> \...
->
-> \<section\>
->
-> \...
->
-> \</section\>
->
-> \<aside\>
->
-> \...
->
-> \</aside\>
->
-> \<footer\>
->
->    \<p\>&copy; 2009 Some blog\</p\>
->
-> \</footer\>
->
-> \</body\>
->
-> \</html\>
+<html>
+...
+<body>
+...
+<section>
+...
+</section>
+<aside>
+...
+</aside>
+<footer>
+   <p>&copy; 2009 Some blog</p>
+</footer>
+</body>
+</html>
 ```
 
 **With this CSS rule:**
 
 ```
-> footer {
->
->     clear: both;
->
->     color: #777;
->
->     padding: 10px 50px
->
-> }
+footer {
+    clear: both;
+    color: #777;
+    padding: 10px 50px
+}
 ```
 
 And here is the result at the bottom of the page:
@@ -1009,58 +991,48 @@ The \<article\> element was designed for stand-alone parts of a document that 
 Example of a blog post defined as a long \<article\>, that is in turn cut into smaller \<section\> elements:
 
 ```
-> \<article id=\"id1\"\>
->
->    \<section id=\"id1part1\"\>
->
->      \<h2\>Introduction\</h2\>
->
->    \</section\>
->
->    \<section id=\"id1part2\"\>
->
->      \<h2\>My travel to India\</h2\>
->
->    \</section\>
->
->    \<section id=\"id1part3\"\>
->
->      \<h2\>Return to France\</h2\>
->
->    \</section\>
->
-> \</article\>
+<article id="id1">
+   <section id="id1part1">
+      <h2>Introduction</h2>
+    </section>
+    <section id="id1part2">
+      <h2\>My travel to India</h2>
+    </section>
+    <section id="id1part3">
+      <h2>Return to France</h2\>
+    </section>
+</article>
 ```
 
 The blog example from the previous part of the course, on the other hand, uses a single \<section\> that contains several \<article\> elements.
 
 Indeed, we can also have a \<section\> that regroups all blog posts per month, each one being an \<article\> element.
 
-**A \<section\> may be cut into different \<article\> elements, too!**
+A \<section\> may be cut into different \<article\> elements, too!
 
 Can you put a \<nav\> in an \<article\>?
 
 Yes you can, in case you would like to propose some navigation links with each blog post, for example:
 
 ```
-> <article>
->    <header>
->      <h1>Blog post title</h1>
->        <p>Author: Michel</p>
->    </header>
->    **<nav>**
->        **<ul>**
->            <li><a href="...">Next post</a></li>
->            <li><a href="...">Previous post</a></li>
->            <li><a href="...">Contact author</a>\</li>
->        **</ul>**
->    **</nav>**
->    <p>Content...</p>
->    <footer>
->      <p>Posted by Michel, the <time datetime="2012-02-02">February 2,
->      2012</time> </p>
->    </footer>
-> <article>
+<article>
+   <header>
+     <h1>Blog post title</h1>
+       <p>Author: Michel</p>
+   </header>
+   <nav>
+       <ul>
+           <li><a href="...">Next post</a></li>
+           <li><a href="...">Previous post</a></li>
+           <li><a href="...">Contact author</a>\</li>
+       </ul>
+   </nav>
+   <p>Content...</p>
+   <footer>
+     <p>Posted by Michel, the <time datetime="2012-02-02">February 2,
+     2012</time> </p>
+   </footer>
+<article>
 ```
 
 In that case, the \<nav\> element proposes navigation links to the next or previous blog post, as well as a link to contact the author of the blog post.
@@ -1122,26 +1094,25 @@ The HTML5 specification says that \"each sectioning element potentially has a he
 \<h1\>\...\<h6\> are called **headings**, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
 
 ```
-> <body>
->     <h1>Title of my document</h1>
->     ...
->
-> </body>
+<body>
+    <h1>Title of my document</h1>
+    ...
+</body>
 ```
 
-**\... defines the header of a section *implicitly*, while:**
+... defines the header of a section *implicitly*, while:
 
 ```
-> <body>
->    ...
->    <section>
->       <h1>Title of my section</h1>
->       ...
->    </section>
-> </body>
+<body>
+   ...
+   <section>
+      <h1>Title of my section</h1>
+      ...
+   </section>
+</body>
 ```
 
-**\... defines the heading of *the explicit section* (its parent element \<section\>).**
+\... defines the heading of *the explicit section* (its parent element \<section\>).
 
 ### Use multiple headings of different rank with sectioning content
 
@@ -1151,21 +1122,22 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 
 Let\'s clarify this by looking at some example code:
 
-> <body>
-> <section>
->     <h1>This H1 is the heading of an explicit section\</h1>
->     ...
->        <h2>This H2 is a subheading, part of the same section
->            (lower rank)</h2>
->             ....
->     <h1>This H1 starts an implicit new section in the explicit
->         section (equal or higher rank)</h1>
->         ...
->         <h2>This is a H2 heading in the new section that has
-              just started</h2>
->             ...
-> </section>
-> </body>
+```
+<body>
+<section>
+     <h1>This H1 is the heading of an explicit section</h1>
+     ...
+        <h2>This H2 is a subheading, part of the same section
+            (lower rank)</h2>
+             ....
+     <h1>This H1 starts an implicit new section in the explicit
+         section (equal or higher rank)</h1>
+         ...
+        <h2>This is a H2 heading in the new section that has
+            just started</h2>
+            ...
+</section>
+</body>
 ```
 
 The corresponding outline is:
@@ -1196,45 +1168,37 @@ Here are some examples:
 
 ##### **Good (heading in each explicit section):**
 
-> \<section\>
->
->     **\<h1\>Blog post of April 2020\</h1\>**
->
->     \...
->
-> \</section\>
+```
+<section>
+    <h1>Blog post of April 2020</h1>
+    ...
+</section>
+```
 
 ##### **Good (heading in a \<header\> does not change anything)**
 
-> \<section\>
->
->    **\<header\>**
->
->       **\<h1\>Blog post of April 2020\</h1\>**
->
->       **\<p\>Posted by Michel Buffa\...\</p\>**
->
->    **\</header\>**
->
-> \...
->
-> \</section\>
+```
+<section>
+    <header>**
+       <h1>Blog post of April 2020</h1>
+       <p>Posted by Michel Buffa...</p>
+  </header>
+...
+</section>
+```
 
 ##### **Bad (there is no Hx after the \<section\> -\> no heading):**
 
-> \<section\>
->
->    \<header\>
->
->       \<p class=\"article title\"\>Blog post of April 2020\</p\>
->
->       \<p\>Posted by Michel Buffa\...\</p\>
->
->    \</header\>
->
->    \...
->
-> \</section\>
+```
+<section>
+    <header>
+       <p class="article title">Blog post of April 2020</p>
+       <p>Posted by Michel Buffa...</p>
+
+    </header>
+   ...
+</section>
+```
 
 The last example is bad for accessibility reasons. A screen reader that vocalizes the page will just say \"Entering section\", while in the previous two good examples it would say \"entering section with heading Blog Posts of April 2020\". You can also check if your headings and sectioning elements are ok by using a browser extension that displays the outline of the document (just search for \"html5 outliner\" in your browser\'s extension search engine).
 
@@ -1256,25 +1220,18 @@ Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning
 
 **Final good version:**
 
-> \<body\>
->
->     **\<h1\>Example Blog\</h1\>**
->
->     \<section\>
->
->        \<header\>
->
->           **\<h2\>Blog post of April 2020\</h2\>**
->
->           \<p\>Posted by Michel Buffa\...\</p\>
->
->        \</header\>
->
->       \<p\>Content of the blog post\...\</p\>
->
->    \</section\>
->
-> \</body\>
+```
+<body>
+    <h1>Example Blog</h1>
+    <section\>
+       <header>
+          <h2>Blog post of April 2020</h2>
+          <p>Posted by Michel Buffa...</p>
+       </header>
+      <p>Content of the blog post...</p>
+   </section>
+</body>
+```
 
 In red, the sectioning root (\<body\>) and the sectioning elements (\<section\> here\...), each have a heading.
 
@@ -1292,17 +1249,14 @@ You can use heading elements \<h1\>\...\<h6\> in a \<header\> but be careful
 
 This example has two headings in the \<header\>:
 
-> \<section\>
->
->    \<header\>
->
->      \<h1\>Some text in a h1 in a header of a section\</h1\>
->
->      \<h2\>This a h2 in the header\...\</h2\>
->
->    \</header\>
->
-> \</section\>
+```
+<section>
+   <header>
+     <h1>Some text in a h1 in a header of a section</h1>
+     <h2>This a h2 in the header...</h2>
+   </header>
+</section>
+```
 
 Here is the resulting table of contents, notice the two subsections that appear, one for the H1, one for the H2:
 
@@ -1320,15 +1274,13 @@ Indeed, HTML does not have a dedicated mechanism for marking up subheadings, alt
 
 If you do not want the subtitles to be included in the table of contents, just use standard markup, for example \<p\> elements, as shown in the next example. Of course, CSS rules can be applied to change colors, sizes, etc.
 
-> \<header\>
->
->     \<h1\>HTML 5.1 Nightly\</h1\>
->
->     \<p\>A vocabulary and associated APIs for HTML and XHTML\</p\>
->
->     \<p\>Editor\'s Draft 9 May 2013\</p\>
->
-> \</header\>
+```
+<header>
+    <h1>HTML 5.1 Nightly</h1>
+    <p>A vocabulary and associated APIs for HTML and XHTML</p>
+    <p>Editor's Draft 9 May 2013</p>
+</header>
+```
 
 **Best practice #2**: try not to rely on implicit sectioning, use \<section\>, \<article\>, etc. instead of just \<h1\>\...\<h6\>
 
@@ -1336,6 +1288,7 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 
 **Ok version (no explicit sections everywhere):**
 
+```
 > \<body\>
 >
 > **\<h4\>Apples\</h4\>**
@@ -1359,9 +1312,11 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 > \</section\>
 >
 > \</body\>
+```
 
 **Better version (best practice):**
 
+```
 > \<body\>
 >
 > \<h1\>Apples\</h1\>
@@ -1393,6 +1348,7 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 > \</section\>
 >
 > \</body\>
+```
 
 Both of the examples above are semantically identical and produce the same outline:
 
@@ -1434,55 +1390,37 @@ Changes have been made to particular elements in HTML5 making it simpler to u
 
 <h3>A minimal HTML5 document</h3>
 
-> \<!DOCTYPE html\>
->
-> \<html lang=\"en\"\>
->
-> \<head\>
->
->    \<meta charset=\"utf-8\"\>
->
->    \<title\>Page Title\</title\>
->
->    \<link rel=\"stylesheet\" href=\"style.css\"\>
->
->    \<script src=\"script.js\"\>\</script\>
->
-> \</head\>
->
-> \<body\>
->
-> \... \<!\-- The rest is content \--\>
->
-> \</body\>
->
-> \</html\>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <title>Page Title\</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+... <!-- The rest is content -->
+</body>
+</html>
+```
 
 Let\'s compare it to the HTML4 minimal document below (taken from [this source](https://www.sitepoint.com/a-minimal-html-document/)). Differences are underlined in red:
 
-> [\<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"https://www.w3.org/TR/html4/strict.dtd\"\>]
->
-> \<html lang=\"en\"\>
->
-> \<head\>
->
->     \<meta http-equiv[=\"content-type\" ]content[=\"text/html\"]charset=\"utf-8\"\>
->
->     \<title\>title\</title\>
->
->     \<link rel=\"stylesheet\" **type[=\"text/css\"]** href=\"style.css\"\>
->
->     \<script type[=\"text/javascript\"] src=\"script.js\"\>\</script\>
->
-> \</head\>
->
-> \<body\>
->
-> \...
->
-> \</body\>
->
-> \</html\>
+```
+[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">]
+<html lang="en">
+<head\>
+     <meta http-equiv[="content-type\" ]content[="text/html"]charset="utf-8">
+     <title>title</title>
+     <link rel="stylesheet" type[="text/css"] href="style.css">
+     <script type[="text/javascript"] src="script.js"></script>
+ </head>
+ <body>
+...
+</body>
+</html>
+```
 
 <h4>Simpler character set definition</h4>
 
@@ -1620,28 +1558,30 @@ This is an example of one way to organize a blog. Here, we have designed the HTM
 <h4>HTML code:</h4>
 
 ```
-> \<!DOCTYPE html\>
->    \<html lang=\"en\"\>
->       \<head\>
->          \<meta charset=\"utf-8\"/\>
->          \<title\>Simple HTML5 blog\</title\>
->       \</head\>
->       \<body\>
->          \<header\>
->             \<h1\>Simple \<span\>HTML5\</span\> blog\</h1\>
->          \</header\>
-> \...
+<!DOCTYPE html>
+   <html lang="en">
+      <head>
+         <meta charset="utf-8"/>
+         <title>Simple HTML5 blog</title>
+      </head>
+      <body>
+         <header>
+            <h1>Simple <span>HTML5</span> blog</h1>
+         </header>
+...
+```
 
 **The CSS rules we used:**
 
-> header {
->     color: #007e99;
->     font-size: 2.5em;
->     padding: 20px 50px
-> }
-> header span {
->     color: #722
-> }
+```
+header {
+    color: #007e99;
+    font-size: 2.5em;
+    padding: 20px 50px
+}
+header span {
+    color: #722
+}
 ```
 
 #### Use a \<nav\> for the navigation menu just below the header
