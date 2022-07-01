@@ -501,29 +501,29 @@ Two examples are provided below  but you can find more tips and information in 
 
 -   [Easy Checks - A First Review of Web Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/)
 
-### Example #1: page title
+<h3>Example #1: page title</h3>
 
 Good page titles are particularly important for orientation --- to help people know where they are and move between pages open in their browser. The first thing screen readers say when the user goes to a different Web page is the page title. In the Web page markup, they are the words \<title\> within the \<head\>.
 
-***Check #1*: There is a title that adequately and briefly describes the content of a page, and it distinguishes the page from other Web pages.**
+<b><i>Check #1</i>: There is a title that adequately and briefly describes the content of a page, and it distinguishes the page from other Web pages.</b>
 
-*Example*:
+<i>Example</i>:
 
 ```html5
-> <head>
-> ...
-> <title>Web Accessibility Initiative (WAI) - home page</title>
-> ...
-> </head>
+<head>
+...
+<title>Web Accessibility Initiative (WAI) - home page</title>
+...
+</head>
 ```
 
-### Example 2: image text alternatives (\"alt text\")
+<h3>Example 2: image text alternatives (\"alt text\")</h3>
 
 Text alternatives (\"alt text\") are a primary way of making visual information accessible, because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user. Providing text alternatives allows the information to be rendered in a variety of ways by a variety of user agents. For example, a person who cannot see a picture can have the text alternative read aloud using synthesized speech.
 
-***Check #2*: Every image has alt with appropriate alternative text.**
+<i><b>Check #2</i>: Every image has alt with appropriate alternative text.</b>
 
-*Example*: See the W3C logo below. It contains a link that points to the W3C Web site. The text alternative is going to be a brief description of the link target.
+<i>Example</i>: See the W3C logo below. It contains a link that points to the W3C Web site. The text alternative is going to be a brief description of the link target.
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 11. W3C logo (13) --------------------------------------->
@@ -538,10 +538,11 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 <p align="center"><a href="https://www.w3.org/Icons/w3c_home">W3C Home</a></p>
 
 ```
-   <a href="https://w3.org">
-   <img src="https://w3.org/Icons/w3c_home.png" width="72" height="48" alt="World Wide Web Consortium">
-   </a>
+<a href="https://w3.org">
+<img src="https://w3.org/Icons/w3c_home.png" width="72" height="48" alt="World Wide Web Consortium">
+</a>
 ```
+
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------- 12. html5 logo (13) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -636,11 +637,11 @@ Read also at the end of this section about the new \<main\> element. This elemen
 
 -   A Dev. Opera article: [New Structural Elements in HTML5](https://dev.opera.com/articles/new-structural-elements-in-html5/)
 
-### A blog example that uses the structural elements
+<h3>A blog example that uses the structural elements</h3>
 
 Let\'s study [an example we put on JsBin](https://jsbin.com/bucokav/edit?html,output) (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
 
-#### Use a \<header\> at the top of the blog
+<h4>Use a \<header\> at the top of the blog</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 14. image 'Simple HTML5 Blog' (16) ------------------------------->
@@ -670,7 +671,7 @@ This is an example of one way to organize a blog. Here, we have designed the HTM
 ...
 ```
 
-##### The CSS rules we used:
+<h4>The CSS rules we used:</h4>
 
 ```
 header {
@@ -683,12 +684,13 @@ header span {
 }
 ```
 
-#### Use a \<nav\> for the navigation menu just below the header
+<h4>Use a \<nav\> for the navigation menu just below the header</h4>
+
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 15. image of the navigaton menu (17) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image015.png?raw=true"
+<img src="/images/image015.jpeg?raw=true"
    alt="Navigation Menu"
    width="35%" />
 </p>
@@ -744,11 +746,18 @@ nav span {
 }
 ```
 
-#### A \<section\> for each month and an \<article\> for each post in the blog
+<h4>A \<section\> for each month and an \<article\> for each post in the blog</h4>
 
 Now, we have one big \<section\> element that contains a set of \<article\> elements...
 
-![image of sections that contain articles](./images/image016.jpeg){width="5.0in" height="2.185184820647419in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------- 16. image of sections that contain articles (xx) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image016.jpeg?raw=true"
+   alt="Image of sections that contain articles"
+   width="65%" />
+</p>
 
 <h4>HTML code:</h4>
 
@@ -766,7 +775,7 @@ Now, we have one big \<section\> element that contains a set of \<article\> e
 </section>
 ```
 
-**And here is the CSS:**
+<b>And here is the CSS:</b>
 
 ```
 section {
@@ -791,7 +800,7 @@ section h2 {
 
 Note that the H2, article, article header, etc. will be styled using these rules.
 
-<h3>Add a <header> at the beginning of each <article></h4>
+<h3>Add a \<header\> at the beginning of each \<article\></h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 17. image of header at top of each article --------------------------->
@@ -802,8 +811,6 @@ Note that the H2, article, article header, etc. will be styled using these rules
    width="55%">
 &nbsp;
 <br/>
-
-![image of the header at the top of each article](./images/image017.jpeg){width="5.0in" height="1.3553116797900262in"}
 
 Next, in each article in the section we have a header (to display the article title), paragraphs (article content), and so on.
 
@@ -840,7 +847,7 @@ Example for the first blog article:
 </section>
 ```
 
-#### Use \<figure\> and \<figcaption\> and embed \<img\> inside
+<h4>Use \<figure\> and \<figcaption\> and embed \<img\> inside</h4>
 
 Also note the way we included a figure using the new \"HTML5\" method, using a \<figure\>..\</figure\> element that embedded a \<img src=\.../\> element together with a \<figcaption\> element. 
 
@@ -878,7 +885,7 @@ Here is the CSS for the \<figcaption\> element we have used in the example (we
 5.  }
 ```
 
-#### Use an \<aside\> element to display a tag cloud on the\... side of the main content
+<h4>Use an \<aside\> element to display a tag cloud on the\... side of the main content</h4>
 
 After the long \<section\> element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, \"aside\"! This is done using - you already guessed it - an \<aside\> element:
 
@@ -910,7 +917,7 @@ After the long \<section\> element that contains all the blog articles display
 
 We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at [the code of the online example](https://jsbin.com/bucokav/edit?html,output).
 
-**Here is the CSS for the \<aside\> element:**
+<b>Here is the CSS for the \<aside\> element:</b>
 
 ```
 aside {
@@ -932,11 +939,19 @@ aside .tag-cloud {
 
 We used a float:right CSS rule to put the tag cloud on the right\... In the following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
 
-**Here is the result:**
+<b>Here is the result:</b>
 
-![The aside tag cloud on the right](./images/image020.jpeg){width="5.0in" height="1.6762817147856517in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 20. the aside tag on the right (xx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image020.jpeg?raw=true"
+   alt="The aside tag cloud on the right"
+   width="65%">
+&nbsp;
+<br/>
 
-#### Add a \<footer\> at the end of the blog
+<h4>Add a \<footer\> at the end of the blog</h4>
 
 ![image of the blog footer](./images/image021.jpeg){width="2.1875in" height="0.7916666666666666in"}
 
