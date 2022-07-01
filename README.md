@@ -22432,31 +22432,31 @@ Note that the first time you execute this example, for privacy reasons, the brow
 Source code of this typical example:
 
 ```
-> \<!DOCTYPE html\>
-> \<html lang=\"en\"\>
-> \<head\>
-> \<meta charset=\"utf-8\"\>
-> \<title\>Basic example of use of the geolocation API\</title\>
-> \</head\>
-> \<body\>
-> \<p id=\"msg\"\>Click the button to get your coordinates:\</p\>
-> \<button onclick=\"getLocation()\"\>Where am I ?\</button\>
-> \<script\>
-> var displayCoords=document.getElementById(\"msg\");
-> function getLocation() {
-> if (navigator.geolocation) {
-> navigator.geolocation.getCurrentPosition(showPosition);
-> } else {
-> displayCoords.innerHTML=\"Geolocation API not supported by your browser.\";
-> }
-> }
-> function showPosition(position) {
-> displayCoords.innerHTML=\"Latitude: \" + position.coords.latitude +
-> \"\<br /\>Longitude: \" + position.coords.longitude;
-> }
-> \</script\>
-> \</body\>
-> \</html\>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Basic example of use of the geolocation API</title>
+</head>
+<body>
+<p id="msg">Click the button to get your coordinates:</p>
+<button onclick="getLocation()">Where am I ?</button>
+<script>
+var displayCoords=document.getElementById("msg");
+function getLocation() {
+if (navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(showPosition);
+} else {
+displayCoords.innerHTML="Geolocation API not supported by your browser.";
+}
+}
+function showPosition(position) {
+displayCoords.innerHTML="Latitude: " + position.coords.latitude +
+"<br />Longitude: " + position.coords.longitude;
+}
+</script>
+</body>
+</html>
 ```
 
 ![geolocation callback illustration](./images/image324.jpeg){width="5.0in" height="1.4939555993000875in"}
@@ -22500,49 +22500,49 @@ A slightly different version of the previous example [shows how to properly che
 <h3>Source code of the example:</h3>
 
 ```
-> <!DOCTYPE html>
-> <html lang="en">
-> <head>
-> <meta charset="utf-8">
-> <title>Basic example of use of the geolocation API</title>
-> </head>
-> <body>
-> <p id="msg">Click the button to get your coordinates:</p>
-> <button onclick="getLocation()">Where am I ?</button>
-> <script>
->    var displayCoords=document.getElementById("msg");
->    function getLocation() {
->       if (navigator.geolocation) {
->          navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
->       } else {
->         displayCoords.innerHTML="Geolocation API not supported by your browser.";
->       }
->    }
->    function showPosition(position) {
->       displayCoords.innerHTML="Latitude: " + position.coords.latitude +
->                                "\<br /\>Longitude: \" + position.coords.longitude;
->    }
->    function errorPosition(error) {
->       var info = "Error during geolocation: ";
->       switch(error.code) {
->          case error.TIMEOUT:
->             info += "Timeout !";
->             break;
->          case error.PERMISSION_DENIED:
->             info += "Permission denied, geolocation could not be obtained...";
->             break;
->          case error.POSITION_UNAVAILABLE:
->             info += "Location could not be obtained though the available means...";
->             break;
->          case error.UNKNOWN_ERROR:
->             info += "Unknown error";
->             break;
->       }
->       displayCoords.innerHTML = info;
->     }
-> </script>
-> </body>
-> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Basic example of use of the geolocation API</title>
+</head>
+<body>
+<p id="msg">Click the button to get your coordinates:</p>
+<button onclick="getLocation()">Where am I ?</button>
+<script>
+   var displayCoords=document.getElementById("msg");
+   function getLocation() {
+      if (navigator.geolocation) {
+         navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
+      } else {
+        displayCoords.innerHTML="Geolocation API not supported by your browser.";
+      }
+   }
+   function showPosition(position) {
+      displayCoords.innerHTML="Latitude: " + position.coords.latitude +
+                               "\<br /\>Longitude: \" + position.coords.longitude;
+   }
+   function errorPosition(error) {
+      var info = "Error during geolocation: ";
+      switch(error.code) {
+         case error.TIMEOUT:
+            info += "Timeout !";
+            break;
+         case error.PERMISSION_DENIED:
+            info += "Permission denied, geolocation could not be obtained...";
+            break;
+         case error.POSITION_UNAVAILABLE:
+            info += "Location could not be obtained though the available means...";
+            break;
+         case error.UNKNOWN_ERROR:
+            info += "Unknown error";
+            break;
+      }
+      displayCoords.innerHTML = info;
+    }
+</script>
+</body>
+</html>
 ```
 
 <h3>6.4.4 Tracking a position</h3>
@@ -22580,23 +22580,23 @@ Several options are available when using HTML5 geolocation. We can pass a third 
 <h4>Source code:</h4>
 
 ```
-> // Just ask to turn GPS on, if available
-> navigator.geolocation.getCurrentPosition(onSuccess, onError,
->                                      {enableHighAccuracy:true});
-> // maximumAge = 10 mins, the position can be cached for 10 mins,
-> // useful when in tunnels\...When the device tries to get
-> // a position, if it does not succeed, then go on error
-> // immediately
-> navigator.geolocation.getCurrentPosition(onSuccess, onError,
->                                 {maximumAge:600000, timeout:0});
-> // Position will never come from the cache (maximumAge: 0), and
-> // if after 0.1s the position could not be computed, then go on
-> // error
-> navigator.geolocation.getCurrentPosition(onSuccess, onError,
->                                    {maximumAge:0, timeout:100});
-> // Ask for GPS, cache for 30s, 27s before going on error\...
-> watchId=navigator.geolocation.watchPosition(onSuccess, onError,
->     {enableHighAccuracy:true, maximumAge:30000, timeout:27000});
+// Just ask to turn GPS on, if available
+navigator.geolocation.getCurrentPosition(onSuccess, onError,
+                                     {enableHighAccuracy:true});
+// maximumAge = 10 mins, the position can be cached for 10 mins,
+// useful when in tunnels\...When the device tries to get
+// a position, if it does not succeed, then go on error
+// immediately
+navigator.geolocation.getCurrentPosition(onSuccess, onError,
+                                {maximumAge:600000, timeout:0});
+// Position will never come from the cache (maximumAge: 0), and
+// if after 0.1s the position could not be computed, then go on
+// error
+navigator.geolocation.getCurrentPosition(onSuccess, onError,
+                                   {maximumAge:0, timeout:100});
+// Ask for GPS, cache for 30s, 27s before going on error\...
+watchId=navigator.geolocation.watchPosition(onSuccess, onError,
+    {enableHighAccuracy:true, maximumAge:30000, timeout:27000});
 ```
 
 Look for the explanations in the lines of comment.
@@ -22630,74 +22630,74 @@ This example is just given \"as is\", as there are so many possibilities for r
 <h4>JS</h4>
 
 ```
-> function getLocation(e) {
-> e.preventDefault();
-> if (!navigator.geolocation) {
-> alert(\"Browser doesn\'t support geolocation\");
-> } else {
-> navigator.geolocation.getCurrentPosition(success, error);
-> }
-> }
-> // Get current position successfully
-> function success(position) {
-> var map, marker,
-> latitude = position.coords.latitude,
-> longitude = position.coords.longitude;
-> // Instance map using leaflet
-> map = L.map(\'map\').setView(\[latitude, longitude\], 13);
-> // Tile layer using key api at cloudmade.com
-> L.tileLayer(\'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png\', {
-> key: \'760506895e284217a7442ce2efe97797\',
-> styleId: 103288,
-> maxZoom: 16
-> }).addTo(map);
-> // Marker using leaflet
-> marker = L.marker(\[latitude, longitude\]).addTo(map);
-> // Popup in leaflet
-> marker.bindPopup(\'\<p\>Your location\</p\>\').openPopup();
-> }
-> // Get current position fail
-> function error() {
-> alert(\'Get current position fail. Please access codepen to get geolocation.\');
-> }
+function getLocation(e) {
+e.preventDefault();
+if (!navigator.geolocation) {
+alert("Browser doesn't support geolocation");
+} else {
+navigator.geolocation.getCurrentPosition(success, error);
+}
+}
+// Get current position successfully
+function success(position) {
+var map, marker,
+latitude = position.coords.latitude,
+longitude = position.coords.longitude;
+// Instance map using leaflet
+map = L.map('map').setView([latitude, longitude], 13);
+// Tile layer using key api at cloudmade.com
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+key: '760506895e284217a7442ce2efe97797',
+styleId: 103288,
+maxZoom: 16
+}).addTo(map);
+// Marker using leaflet
+marker = L.marker([latitude, longitude]).addTo(map);
+// Popup in leaflet
+marker.bindPopup('<p>Your location</p>').openPopup();
+}
+// Get current position fail
+function error() {
+alert('Get current position fail. Please access codepen to get geolocation.');
+}
 ```
 
 <h4>CSS</h4>
 
 ```
-> html, body {
-> height: 100%
-> }
-> .map {
-> height: 300px;
-> }
-> .btn {
-> background-color: rgba(10, 10, 230, .5);
-> border: 0;
-> color: #fff;
-> padding: 10px;
-> text-shadow: 0 0 1px rgba(0, 0, 0, .3);
-> text-decoration: none;
-> margin: 0.5rem 0 1rem;
-> display: inline-block;
-> }
+html, body {
+height: 100%
+}
+.map {
+height: 300px;
+}
+.btn {
+background-color: rgba(10, 10, 230, .5);
+border: 0;
+color: #fff;
+padding: 10px;
+text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+text-decoration: none;
+margin: 0.5rem 0 1rem;
+display: inline-block;
+}
 ```
 
 <h4>HTML</h4>
 
 ```
-> <html>
-> <head>
-> <meta charset="utf-8"\>
-> <title>OpenStreetMap Example</title>
-> <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
-> <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-> </head>
-> <body>
-> <button class="btn" onclick="getLocation(event)">Click to show your location with OpenStreetMap</button>
-> <div id="map" class="map"></div>
-> </body>
-> </html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OpenStreetMap Example</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+</head>
+<body>
+<button class="btn" onclick="getLocation(event)">Click to show your location with OpenStreetMap</button>
+<div id="map" class="map"></div>
+</body>
+</html>
 ```
 
 ##### Source code extract:
@@ -22705,18 +22705,18 @@ This example is just given \"as is\", as there are so many possibilities for r
 ##### HTML part:
 
 ```
-> <html>
-> <head>
->   <meta charset="utf-8">
+<html>
+<head>
+  <meta charset="utf-8">
 >   <title>OpenStreetMap Example</title>
 >   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
 >   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-> </head>
-> <body>
->   <button class="btn" onclick="getLocation(event)">Click to show your location with OpenStreetMap</button>
->   <div id="map" class="map"></div>
-> </body>
-> </html>
+</head>
+<body>
+  <button class="btn" onclick="getLocation(event)">Click to show your location with OpenStreetMap</button>
+  <div id="map" class="map"></div>
+</body>
+</html>
 ```
 
 -   *Lines 5 and 6* are the required files to use the Leaflet API (this is the official name of the OpenStreetMaps API),
@@ -22788,91 +22788,88 @@ Google reverse geocoding example (screenshot only) :
 Source code of this example (in order to run it, you need a Google API key, used at *line 6*).
 
 ```
-> <!DOCTYPE html>
-> <html lang="en">
-> <head>
-> <meta charset="utf-8">
-> <title>Js bin </title>
->     <script src="https://maps.googleapis.com/maps/api/js?key=PUT_HERE_YOUR_API_KEY&v=3.exp&sensor=false"></script>
-> <script>
-> // p elements for displaying lat / long and address
-> var displayCoords, myAddress;
-> // used with the google apis
-> var geocoder;
-> var map;
-> var infowindow = new google.maps.InfoWindow();
-> var marker;
-> // Called when the page is loaded
-> function init() {
->     displayCoords=document.getElementById("msg");
->     myAddress = document.getElementById("address");
->     geocoder = new google.maps.Geocoder();
->     // In order to show something even before a user clicks on the button
->     var latlng = new google.maps.LatLng(34.0144, -6.83);
->     var mapOptions = {
->        zoom: 8,
->        center: latlng,
->        mapTypeId: 'roadmap'
->     }
->     map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-> } // end of init()
->
-> // Called when the button is clicked
-> function getLocation() {
->     if (navigator.geolocation) {
->        navigator.geolocation.getCurrentPosition(showPosition);
->     } else {
->        displayCoords.innerHTML="Geolocation API not supported by your browser.";
->     }
-> }
-> // Called when a position is available
-> function showPosition(position) {
->     displayCoords.innerHTML="Latitude: " + position.coords.latitude +
->                             "<br />Longitude: " + position.coords.longitude;
->     // Display the map
->     showOnGoogleMap(new google.maps.LatLng(position.coords.latitude,       
->                                            position.coords.longitude));
->  }
->  function showOnGoogleMap(latlng) {
->    // Ask google geocoder for an address once we get a longitude and
->    // a latitude. In fact, the reverse geocoder sends back an array of "guesses"
->    // i.e. not just one address object, but several. Each entry in this array
->    // has several properties such as street, city, etc. We use the "formatted_address"
->    // one here, but it might be interesting to get the detailed properties in other
->    // applications like a form with street, city, zip code etc.
->    geocoder.geocode({'latLng': latlng},reverseGeocoderSuccess);
->    function reverseGeocoderSuccess(results, status) {
->      if (status == google.maps.GeocoderStatus.OK) {
->         if (results[1]) {
->            map.setZoom(11);
->            marker = new google.maps.Marker({
->                                 position: latlng,
->                                 map: map
->                         });
->            infowindow.setContent(results[1].formatted_address);
->            infowindow.open(map, marker);
->            // Display address as text in the page
->
->            myAddress.innerHTML="Adress: " + results[0].formatted_address; 
->
->         } else {
->            alert('No surface address found');
->         }
->       } else {
->          alert('Geocoder failed due to: ' + status);
->       }
->     } // end of reverseGeocoderSuccess
-> } // end of showOnGoogleMap
-> </script>
-> </head>
-> <body onload="init()">
-> <title>HTML5 + Geolocalisation + Google Maps API Reverse Geocoding</title>
-> <p id="msg">Click the button to get your coordinates:</p>
-> <p id="address"></p>
-> <button onclick="getLocation()">Where am I ?</button>
-> <div id="map_canvas" style="width: 500px; height: 300px"></div>
-> </body>
-> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Js bin </title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=PUT_HERE_YOUR_API_KEY&v=3.exp&sensor=false"></script>
+<script>
+// p elements for displaying lat / long and address
+var displayCoords, myAddress;
+// used with the google apis
+var geocoder;
+var map;
+var infowindow = new google.maps.InfoWindow();
+var marker;
+// Called when the page is loaded
+function init() {
+    displayCoords=document.getElementById("msg");
+    myAddress = document.getElementById("address");
+    geocoder = new google.maps.Geocoder();
+    // In order to show something even before a user clicks on the button
+    var latlng = new google.maps.LatLng(34.0144, -6.83);
+    var mapOptions = {
+       zoom: 8,
+       center: latlng,
+       mapTypeId: 'roadmap'
+    }
+    map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+} // end of init()
+// Called when the button is clicked
+function getLocation() {
+    if (navigator.geolocation) {
+       navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+       displayCoords.innerHTML="Geolocation API not supported by your browser.";
+    }
+}
+// Called when a position is available
+function showPosition(position) {
+    displayCoords.innerHTML="Latitude: " + position.coords.latitude +
+                            "<br />Longitude: " + position.coords.longitude;
+    // Display the map
+    showOnGoogleMap(new google.maps.LatLng(position.coords.latitude,       
+                                           position.coords.longitude));
+ }
+ function showOnGoogleMap(latlng) {
+   // Ask google geocoder for an address once we get a longitude and
+   // a latitude. In fact, the reverse geocoder sends back an array of "guesses"
+   // i.e. not just one address object, but several. Each entry in this array
+   // has several properties such as street, city, etc. We use the "formatted_address"
+   // one here, but it might be interesting to get the detailed properties in other
+   // applications like a form with street, city, zip code etc.
+   geocoder.geocode({'latLng': latlng},reverseGeocoderSuccess);
+   function reverseGeocoderSuccess(results, status) {
+     if (status == google.maps.GeocoderStatus.OK) {
+        if (results[1]) {
+           map.setZoom(11);
+           marker = new google.maps.Marker({
+                                position: latlng,
+                                map: map
+                        });
+           infowindow.setContent(results[1].formatted_address);
+           infowindow.open(map, marker);
+           // Display address as text in the page
+           myAddress.innerHTML="Adress: " + results[0].formatted_address; 
+        } else {
+           alert('No surface address found');
+        }
+      } else {
+         alert('Geocoder failed due to: ' + status);
+      }
+    } // end of reverseGeocoderSuccess
+} // end of showOnGoogleMap
+</script>
+</head>
+<body onload="init()">
+<title>HTML5 + Geolocalisation + Google Maps API Reverse Geocoding</title>
+<p id="msg">Click the button to get your coordinates:</p>
+<p id="address"></p>
+<button onclick="getLocation()">Where am I ?</button>
+<div id="map_canvas" style="width: 500px; height: 300px"></div>
+</body>
+</html>
 ```
 
 Gisgraphy (free service) reverse geocoding example (screenshot only, click on it to see [the demo on the Gisgraphy website](https://services.gisgraphy.com/static/leaflet/index.html)):
@@ -22993,7 +22990,7 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
     name="viewport"
     content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
     />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css\" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
@@ -23165,4 +23162,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>06-29-2022 Tue 7:39pm</i></b></h3>
+<h3><b><i>06-30-2022 Thu 4:57pm</i></b></h3>
