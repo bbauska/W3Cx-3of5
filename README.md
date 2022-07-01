@@ -347,7 +347,7 @@ Another approach is to go and bring feedback on ideas for future technologies: t
 
 Happy Web building!
 
-<h3 id="cha-3">What is W3C?</h3>
+<h3 id="cha-1">What is W3C?</h3>
 
 As steward of global Web standards, W3C\'s mission is to safeguard the openness, accessibility, and freedom of the World Wide Web from a technical perspective.
 
@@ -356,7 +356,7 @@ W3C\'s primary activity is to develop protocols and guidelines that ensure long-
 <h3>A few history bits</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 10. Tim Berners-Lee, WWW developer (08) ----------------------------->
+<!-------------------------- 04. Tim Berners-Lee, WWW developer (08) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image004.png?raw=true"
@@ -894,7 +894,7 @@ After the long \<section\> element that contains all the blog articles display
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image019.jpeg?raw=true"
-   alt="W3Cx logo"
+   alt="Image of tag cloud defined as aside element"
    width="35%">
 &nbsp;
 <br/>
@@ -12594,169 +12594,114 @@ Note that:
 -   *Line 4* defines a \"transparent color\", the \"a\" of \"rgba\" means \"alpha channel\". Its value is between 0 and 1, where 0 means \"completely transparent\" and 1 means \"opaque\".
 
 Here is an example that shows how to draw different filled rectangles in blue, with different levels of transparency:
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 166. example (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image166.png?raw=true"
+   width="85%"
+   alt="Example" />
+</p>
 
-<p align="center">
-<img src="/images/image166.png?raw=true"
-   alt=" "
-   width="85%">
-&nbsp;
-<br/>
+<h4>HTML</h4>
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Colors and transparency\</title\>
-
-\<style\>
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Colors and transparency</title>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var canvas, ctx;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 // 3 - we can draw
-
 drawSomething();
-
 }
-
 function drawSomething() {
-
 // set the global context values
-
-ctx.fillStyle=\'rgba(0, 0, 255, 0.2)\';
-
+ctx.fillStyle='rgba(0, 0, 255, 0.2)';
 // Draw the two filled red rectangles
-
 ctx.fillRect(150, 20, 200, 100);
-
 ctx.fillRect(100, 50, 200, 100);
-
-ctx.fillStyle = \"blue\";
-
+ctx.fillStyle = "blue";
 ctx.fillRect(50, 100, 200, 100);
-
 }
-
-\</script\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height=\"220\"\>
-
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="220">
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\</body\>
-
-\</html\>
+</canvas>
+</body>
+</html>
+```
 
 ### 3.5.2 Canvas Context: Linear Gradients
 
 It is possible to define the stroke or the fill style as a \"gradient\", a set of interpolated colors, like in this example below:
 
-![](./images/image167.png){width="6.5in" height="2.0819444444444444in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 167. example (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image167.png?raw=true"
+   width="85%"
+   alt="Example" />
+</p>
 
-JS
+<h4>JS</h4>
 
+```
 var canvas, ctx, grdFrenchFlag;
-
 function init() {
-
 // Good practice 1: set global vars canvas, ctx, gradients, etc here
-
 canvas = document.querySelector(\'#myCanvas1\');
-
 ctx = canvas.getContext(\'2d\');
-
 // The gradient we create is also a global variable, we
-
 // will be able to reuse it for drawing different shapes
-
 // in different functions
-
 grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 0);
-
 // Try adding colors with first parameter between 0 and 1
-
 grdFrenchFlag.addColorStop(0, \"blue\");
-
 grdFrenchFlag.addColorStop(0.5, \"white\");
-
 grdFrenchFlag.addColorStop(1, \"red\");
-
 draw();
-
 }
-
 function draw() {
-
 ctx.fillStyle = grdFrenchFlag;
-
 ctx.fillRect(0, 0, 300, 200);
-
 }
+```
 
-HTML
+<h4>HTML</h4>
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Linear gradients\</title\>
-
-\<style\>
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Linear gradients</title>
+<style>
 #myCanvas1 {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas1\" width=\"300\" height=200\>Your browser does not support the canvas tag.\</canvas\>
-
-\</body\>
-
-\</html\>
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
+</body>
+</html>
+```
 
 **A linear gradient is seen as an \"invisible\" rectangle in which a set of colors are interpolated along a line.**
 
@@ -22323,7 +22268,7 @@ This first example is useful for forms that allow the user to select one or more
 <!------------------------------ 321. preview of selected images --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image001.png?raw=true"
+<img src="/images/image332.png?raw=true"
    alt="Preview of Seleted Images"
    width="45%">
 &nbsp;
@@ -23193,4 +23138,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>06-30-2022 Thu 4:57pm</i></b></h3>
+<h3><b><i>07-01-2022 Thu 8:47am</i></b></h3>
