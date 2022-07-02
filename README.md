@@ -262,6 +262,10 @@ To help developers make these decisions consciously rather than accidentally, [
 
 -   [Caniuse and MDN compatibility data collaboration](https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/)
 
+<div align="right">
+  <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
+
 <h3>W3C Validators: </h3>
 
 For over 15 years, the W3C has been developing and hosting [**[free]** and **[open source]** tools](https://w3c.github.io/developers/) used every day by **millions of Web developers and Web designers**. All the tools listed below are Web-based, and are available as downloadable sources or as free services on the [W3C Developers tools ](https://w3c.github.io/developers/tools/)site.
@@ -310,6 +314,10 @@ The [W3C cheatsheet](https://www.w3.org/2009/cheatsheet/) provides quick acces
 Its main feature is a lookup search box, where one can start typing a keyword and get a list of matching properties/elements/attributes/functions in the above-mentioned specifications, and further details on those when selecting the one of interest.
 
 <h4>The W3C cheatsheet is only available as a <a href="https://dev.w3.org/2009/cheatsheet/doc/">pure Web application</a>.</h4>
+
+<div align="right">
+  <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
 
 <h3>Help Build the Web Platform</h3>
 
@@ -393,6 +401,10 @@ As of June 2020, W3C:
 
 -   Has a [technical staff](https://www.w3.org/People/) composed of 64 people, spread on all five continents.
 
+<div align="right">
+  <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
+
 <h4>The Web is Amazing!</h4>
 
 People often use the words \"Internet\" and \"Web\" interchangeably, but this usage is technically incorrect.
@@ -449,7 +461,11 @@ A collection of connected web pages that are publicly accessible and under a sin
 
 Web pages are connected using [Hypertext Transfer Protocol](https://www.lifewire.com/hypertext-transfer-protocol-817944) (HTTP), the coding language that allows you to visit any public web page. By clicking a [hyperlink](https://www.lifewire.com/how-do-hyperlinks-work-2483287) or entering a [Uniform Resource Locator](https://www.lifewire.com/what-is-a-url-2626035) (URL), the browser uses this unique address to find and access a web page. [Search engines](https://www.lifewire.com/best-search-engines-2483352) like Google make it easy to filter the billions of web pages now populating the web by locating the articles, videos, and other media you want to find based on your search criteria.
 
-<h3>Final Verdict: You Can\'t Have the Web Without the Internet</h3>
+<div align="right">
+  <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
+
+<h3>Final Verdict: You Can't Have the Web Without the Internet</h3>
 
 Plain and simple, the internet allows access to the World Wide Web. Without it, we have no way of accessing the thousands of websites out there. For most online needs, however, the web is the easiest to use. Each serves an important purpose.
 
@@ -508,7 +524,6 @@ Good page titles are particularly important for orientation --- to help people k
 <b><i>Check #1</i>: There is a title that adequately and briefly describes the content of a page, and it distinguishes the page from other Web pages.</b>
 
 <i>Example</i>:
-
 ```html5
 <head>
 ...
@@ -516,7 +531,6 @@ Good page titles are particularly important for orientation --- to help people k
 ...
 </head>
 ```
-
 <h3>Example 2: image text alternatives (\"alt text\")</h3>
 
 Text alternatives (\"alt text\") are a primary way of making visual information accessible, because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user. Providing text alternatives allows the information to be rendered in a variety of ways by a variety of user agents. For example, a person who cannot see a picture can have the text alternative read aloud using synthesized speech.
@@ -536,13 +550,11 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 <br/>
 
 <p align="center"><a href="https://www.w3.org/Icons/w3c_home">W3C Home</a></p>
-
 ```
 <a href="https://w3.org">
 <img src="https://w3.org/Icons/w3c_home.png" width="72" height="48" alt="World Wide Web Consortium">
 </a>
 ```
-
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------- 12. html5 logo (13) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -552,7 +564,6 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
    width="15%">
 &nbsp;
 <br/>
-
 ```html5
 <!DOCTYPE html>
    <html lang="en">
@@ -565,7 +576,6 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
  <body>
  ... <!-- The rest is content -->
 ```
-
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 13. new structural elements in html5 (14) --------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -582,15 +592,13 @@ As Web site layouts evolve, HTML5 structural elements such as lists, paragraphs,
 
 However, there are some issues with this approach:
 
--   id and class names differ from one developer to another, from one country to another, etc.
-
--   Even with the same ids and class names, the css rules may be different
-
--   JavaScript libraries have become increasingly heavy over the years
-
--   Web pages have become increasingly heavy over the years!
-
--   These elements can not be handled by the Web browser natively\...
+<ul>
+<li>id and class names differ from one developer to another, from one country to another, etc,</li><br/>
+<li>Even with the same ids and class names, the css rules may be different,</li><br/>
+<li<JavaScript libraries have become increasingly heavy over the years,</li><br/>
+<li<Web pages have become increasingly heavy over the years!</li><br/>
+<li<These elements can not be handled by the Web browser natively\...</li><br/>
+</ul>
 
 Even if differences exist between ids, classes and css/js implementations, they also share common behaviors, layouts, and \"ways of doing things\" that could be guessed at first glance by a human.
 
@@ -606,11 +614,10 @@ Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\
 
 HTML5 structural elements with descriptions.
 
-HTML5 element
-
-Description
+HTML5 element  Description
 
 [**\<header\>**](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>
+
 [**\<footer\>**](https://www.w3.org/TR/html5/sections.html#the-footer-element)                                                                                                              Contains the footer of a site, a long \<article\>, or a long \<section\>
 
 [**\<nav\>**](https://www.w3.org/TR/html5/sections.html#the-nav-element)                                                                                                                    Section that contains the main navigation links (within the document or to other pages).
@@ -697,8 +704,7 @@ header span {
 
 The navigation menu just below the header is a \<nav\> element. For the purpose of this example we haven\'t provided any value for the hyperlinks\...
 
-<h4>HTML code:</h4>
-
+<b>HTML code:</b>
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -718,9 +724,7 @@ The navigation menu just below the header is a \<nav\> element. For the purpos
     </ul>
 </nav>
 ```
-
-And here is the CSS we used in this example for the \<nav\> element:
-
+<b>And here is the CSS we used in this example for the \<nav\> element:</b>
 ```
 nav {
     font-size: 1.5em;
@@ -745,8 +749,7 @@ nav span {
     color: #fff
 }
 ```
-
-<h4>A \<section\> for each month and an \<article\> for each post in the blog</h4>
+<h4>A <section> for each month and an <article> for each post in the blog</h4>
 
 Now, we have one big \<section\> element that contains a set of \<article\> elements...
 
@@ -759,7 +762,7 @@ Now, we have one big \<section\> element that contains a set of \<article\> e
    width="65%" />
 </p>
 
-<h4>HTML code:</h4>
+<b>HTML code:</b>
 
 ```
 <section>
@@ -12069,269 +12072,171 @@ Try this:
 
 HTML
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Lines connected with a quadratic curve - Example #2\</title\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas1\" height = 400 width=\"800\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.querySelector(\'#myCanvas1\');
-
-var context=canvas.getContext(\'2d\');
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lines connected with a quadratic curve - Example #2</title>
+</head>
+<body>
+<canvas id="myCanvas1" height = 400 width="800">Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.querySelector('#myCanvas1');
+var context=canvas.getContext('2d');
 context.beginPath();
-
 context.moveTo(100, 20);
-
 context.lineTo(200, 80);
-
 context.quadraticCurveTo(230, 200, 250, 20);
-
 context.lineTo(500, 90);
-
 context.lineWidth = 5;
-
-context.strokeStyle = \"#0000ff\";
-
+context.strokeStyle = "#0000ff";
 context.stroke();
-
-\</script\>
-
-\</body\>
-
-\</html\>
+</script>
+</body>
+</html>
+```
 
 Source code:
 
+```
 1.  context.beginPath();
-
 2.  
-
 3.  context.moveTo(100, 20);
-
 4.  context.lineTo(200, 80);
-
 5.  context.quadraticCurveTo(230, 200, 250, 20);
-
 6.  context.lineTo(500, 90);
-
 7.  
-
 8.  context.lineWidth = 5;
-
-9.  context.strokeStyle = \"#0000ff\";
-
+9.  context.strokeStyle = "#0000ff";
 10. context.stroke();
+```
 
 ### 3.4.11 Curved Arrows
 
 We propose a useful function for drawing curved arrows. See this example:
 
-![](./images/image160.png){width="6.5in" height="2.040277777777778in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 209.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image160.png?raw=true"
+   alt=""
+   width="65%">
+&nbsp;
+<br/>
 
-JS
+<h4>JS</h4>
 
-var canvas = document.querySelector(\'#myCanvas\');
-
-var ctx = canvas.getContext(\'2d\');
-
+```
+var canvas = document.querySelector('#myCanvas');
+var ctx = canvas.getContext('2d');
 var contextX = 100;
-
 var contextY = 10;
-
 var endPointX = 200;
-
 var endPointY = 120;
-
 var controlPointX = 35;
-
 var controlPointY = 70;
-
 drawCurvedArrow(contextX, contextY,
-
 endPointX, endPointY,
-
 controlPointX, controlPointY,
-
 3, // arrowWidth, try 30 for example !
-
-20, // width of the arrow head, try smaller values, 10\...
-
-\'blue\');
-
+20, // width of the arrow head, try smaller values, 10...
+'blue');
 function drawCurvedArrow(startPointX, startPointY,
-
 endPointX, endPointY,
-
 quadPointX, quadPointY,
-
 lineWidth,
-
 arrowWidth,
-
 color) {
-
-// GOOD PRACTICE: the function changes color and lineWidth -\> save context!
-
+// GOOD PRACTICE: the function changes color and lineWidth -> save context!
 ctx.save();
-
 ctx.strokeStyle = color;
-
 ctx.lineWidth = lineWidth;
-
 // angle of the end tangeant, useful for drawing the arrow head
-
 var arrowAngle = Math.atan2(quadPointX - endPointX, quadPointY - endPointY) + Math.PI;
-
 // start a new path
-
 ctx.beginPath();
-
 ctx.moveTo(startPointX, startPointY);
-
 ctx.quadraticCurveTo(quadPointX, quadPointY, endPointX, endPointY);
-
 ctx.moveTo(endPointX - (arrowWidth \* Math.sin(arrowAngle - Math.PI / 6)),
-
-endPointY - (arrowWidth \* Math.cos(arrowAngle - Math.PI / 6)));
-
+endPointY - (arrowWidth * Math.cos(arrowAngle - Math.PI / 6)));
 ctx.lineTo(endPointX, endPointY);
-
 ctx.lineTo(endPointX - (arrowWidth \* Math.sin(arrowAngle + Math.PI / 6)),
-
-endPointY - (arrowWidth \* Math.cos(arrowAngle + Math.PI / 6)));
-
+endPointY - (arrowWidth * Math.cos(arrowAngle + Math.PI / 6)));
 ctx.stroke();
-
 ctx.closePath();
-
-// GOOD PRACTICE -\> restore the context as we saved it at the beginning
-
+// GOOD PRACTICE -> restore the context as we saved it at the beginning
 // of the function
-
 ctx.restore();
-
 }
+```
 
 CSS
 
+```
 #myCanvas {
-
 border: 1px solid black;
-
 }
+```
 
-HTML
+<h4>HTML<h4>
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Curved arrows\</title\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\" width=\"250\" height=\"150\"\>\</canvas\>
-
-\</body\>
-
-\</html\>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Curved arrows</title>
+</head>
+<body>
+<canvas id="myCanvas" width="250" height="150"></canvas>
+</body>
+</html>
+```
 
 Source code of the function that draws a curved arrow:
 
+```
 1.  function drawCurvedArrow(startPointX, startPointY,
-
 2.                           endPointX, endPointY,
-
 3.                           quadPointX, quadPointY,
-
 4.                           lineWidth,
-
 5.                           arrowWidth,
-
 6.                           color) {
-
 7.      // BEST PRACTICE: the function changes color and lineWidth -\> save context!
-
 8.      ctx.save();
-
 9.  
-
 10.     ctx.strokeStyle = color;
-
 11.     ctx.lineWidth = lineWidth;
-
 12.  
-
 13.     // angle of the end tangeant, useful for drawing the arrow head
-
 14.     var arrowAngle = Math.atan2(quadPointX - endPointX, quadPointY - endPointY) + Math.PI;
-
 15.  
-
 16.     // start a new path
-
 17.     ctx.beginPath();
-
 18. 
-
 19.     // Body of the arrow
-
 20.     ctx.moveTo(startPointX, startPointY);
-
 21.     ctx.quadraticCurveTo(quadPointX, quadPointY, endPointX, endPointY);
-
 22. 
-
 23.     // Head of the arrow
-
 24.     ctx.moveTo(endPointX - (arrowWidth \* Math.sin(arrowAngle - Math.PI / 6)),
-
 25.                endPointY - (arrowWidth \* Math.cos(arrowAngle - Math.PI / 6)));
-
 26.  
-
 27.     ctx.lineTo(endPointX, endPointY);
-
 28.  
-
 29.     ctx.lineTo(endPointX - (arrowWidth \* Math.sin(arrowAngle + Math.PI / 6)),
-
 30.                endPointY - (arrowWidth \* Math.cos(arrowAngle + Math.PI / 6)));
-
 31.  
-
 32.     ctx.stroke();
-
 33.     ctx.closePath();
-
 34. 
-
 35.     // BEST PRACTICE -\> restore the context as we saved it at the beginning
-
 36.     // of the function
-
 37.     ctx.restore();
-
 38. }
+```
 
 This function takes as parameters the start and end points, the control point of the curve, the arrow width, the width of the arrow head.
 
@@ -12339,13 +12244,21 @@ It computes the angle of the arrow at its endpoint (*line 14*) in order to compu
 
 Notice that once again, as we modify the context properties (color, lineWidth) in the body of the function, we save and restore the context at the beginning / end of the function.
 
-# 3.4.12 Bézier curves
+<h3>3.4.12 Bézier curves</h3>
 
-### Introduction
+<h4>Introduction</h4>
 
 Bézier curves are interesting. They are mostly used for drawing \"S\" shapes or asymmetric curves.
 
-![bezier curve in S](./images/image161.jpeg){width="2.75in" height="1.875in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 161.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image161.jpeg?raw=true"
+   alt="Bezier curve in S"
+   width="35%">
+&nbsp;
+<br/>
 
 (image taken from [SitePoint](https://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html))
 
@@ -12353,7 +12266,15 @@ Bézier curves are defined by a context point, like quadratic curves, two contr
 
 The first part of the curve is tangential to the imaginary line defined by the context point and the first control point. The second part of the curve is tangential to the imaginary line defined by the second control point and the ending point.
 
-![bezier curve control points](./images/image162.png){width="5.010416666666667in" height="2.3020833333333335in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 162. bezier curve control points (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image162.png?raw=true"
+   alt="Bezier curve control points"
+   width="65%" />
+&nbsp;
+<br/>
 
 (Picture taken from the [HTML5 Canvas Tutorials](https://www.html5canvastutorials.com/tutorials/html5-canvas-bezier-curves/) Web site)
 
@@ -12369,19 +12290,15 @@ The best way to understand how they work is to check out one of these interactiv
 
 Source code:
 
+```
 1.  ctx.moveTo(contextX, contextY);
-
 2.  context.bezierCurveTo(controlX1, controlY1, controlX2, controlY2, endX, endY);
-
 3.  // Optional : set lineWidth and stroke color
-
 4.  context.lineWidth = 5;
-
-5.  context.strokeStyle = \"#0000ff\";
-
+5.  context.strokeStyle = "#0000ff";
 6.  // Draw!
-
 7.  ctx.stroke();
+```
 
 ## Examples
 
@@ -12389,84 +12306,67 @@ Source code:
 
 Try this:
 
-![](./images/image163.png){width="6.5in" height="2.0819444444444444in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 163.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image163.png?raw=true"
+   alt=""
+   width="65%">
+&nbsp;
+<br/>
 
-HTML
+<h4>HTML</h4>
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Bézier curve - Example #1\</title\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas1\" height = 400 width=\"800\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.querySelector(\'#myCanvas1\');
-
-var context=canvas.getContext(\'2d\');
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bézier curve - Example #1</title>
+</head>
+<body>
+<canvas id="myCanvas1" height = 400 width="800"\>Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.querySelector('#myCanvas1');
+var context=canvas.getContext('2d');
 context.beginPath();
-
 context.moveTo(100, 20);
-
 // TRY uncommenting these lines !
-
 //context.lineTo(200, 80);
-
 //context.quadraticCurveTo(230, 200, 250, 20);
-
 context.bezierCurveTo(290, -40, 200, 200, 400, 100);
-
 //context.lineTo(500, 90);
-
 // TRY TO UNCOMMENT THIS LINE
-
 //context.closePath();
-
 context.lineWidth = 5;
-
-context.strokeStyle = \"#0000ff\";
-
+context.strokeStyle = "#0000ff";
 context.stroke();
-
-\</script\>
-
-\</body\>
-
-\</html\>
+</script>
+</body>
+</html>
+```
 
 Code source:
 
+```
 1.  context.beginPath();
-
 2.  
-
 3.  context.moveTo(100, 20);
-
 4.  context.bezierCurveTo(290, -40, 200, 200, 400, 100);
-
 5.  
-
 6.  context.lineWidth = 5;
-
 7.  context.strokeStyle = \"#0000ff\";
-
 8.  context.stroke();
+```
 
 #### Example #2: path with bezier curve, quadratic curve and line in the same, closed path
 
 Try this:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------- 164.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image164.png?raw=true"
    alt=" "
@@ -12476,83 +12376,51 @@ Try this:
 
 HTML
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Path with Bézier curve, quadratic curve and line in the same, closed path - Example #2\</title\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas1\" height = 400 width=\"800\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.querySelector(\'#myCanvas1\');
-
-var context=canvas.getContext(\'2d\');
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Path with Bézier curve, quadratic curve and line in the same, closed path - Example #2</title>
+</head>
+<body>
+<canvas id="myCanvas1 height = 400 width="800">Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.querySelector('#myCanvas1');
+var context=canvas.getContext('2d');
 context.beginPath();
-
 context.moveTo(100, 20);
-
 context.lineTo(200, 160);
-
 context.quadraticCurveTo(230, 200, 250, 120);
-
 context.bezierCurveTo(290, -40, 300, 200, 400, 150);
-
 context.lineTo(500, 90);
-
 // TRY TO COMMENT THIS LINE
-
 context.closePath();
-
 context.lineWidth = 5;
-
-context.strokeStyle = \"#0000ff\";
-
+context.strokeStyle = "#0000ff";
 context.stroke();
-
-\</script\>
-
-\</body\>
+</script>
+</body>
+```
 
 Extract from source code:
 
+```
 1.  context.beginPath();
-
 2.  
-
 3.  context.moveTo(100, 20);
-
 4.  
-
 5.  context.lineTo(200, 160);
-
 6.  context.quadraticCurveTo(230, 200, 250, 120);
-
 7.  context.bezierCurveTo(290, -40, 300, 200, 400, 150);
-
 8.  context.lineTo(500, 90);
-
 9.  
-
 10. // TRY COMMENTING THIS LINE OUT
-
 11. context.closePath();
-
 12. context.lineWidth = 5;
-
 13. context.strokeStyle = \"#0000ff\";
-
 14. context.stroke();
+```
 
 In this example we use the closePath() method to draw a line between the last path point and the first path point (*line 11*), so that the drawing looks like a pair of goggles.
 
@@ -12579,13 +12447,12 @@ Let\'s look at color in a little more detail, and see how we can use gradients 
 
 You can use [the same syntax for colors that is supported by CSS3](https://www.w3.org/TR/css3-color/). The next lines show possible values/syntaxes.
 
-1.  ctx.strokeStyle = \'red\';
-
-2.  ctx.fillStyle = \"#00ff00\";
-
-3.  ctx.strokeStyle = \"rgb(0, 0, 255)\";
-
-4.  ctx.fillStyle = \"rgba(0, 0, 255, 0.5)\";
+```
+1.  ctx.strokeStyle = 'red';
+2.  ctx.fillStyle = "#00ff00";
+3.  ctx.strokeStyle = "rgb(0, 0, 255)";
+4.  ctx.fillStyle = "rgba(0, 0, 255, 0.5)";
+```
 
 Note that:
 
@@ -17241,91 +17108,53 @@ This example uses the previous function for computing the mouse position correct
 
 Extract from source code:
 
+```
 1.  var canvas, ctx, mousePos, mouseButton;
-
 2.   
-
 3.  window.onload = function init() {
-
 4.      canvas = document.getElementById(\'myCanvas\');
-
 5.      ctx = canvas.getContext(\'2d\');
-
 6.   
-
 7.      **canvas.addEventListener(\'mousemove\', function (evt) {**
-
 8.          **mousePos = getMousePos(canvas, evt);**
-
 9.          var message = \'Mouse position: \' + mousePos.x + \',\' + mousePos.y;
-
 10.         writeMessage(canvas, message);
-
 11.     }, false);
-
 12.  
-
 13.     **canvas.addEventListener(\'mousedown\', function (evt) {**
-
 14.         **mouseButton = evt.button;**
-
 15.         var message = \"Mouse button \" + evt.button + \" down at position: \" + mousePos.x + \',\' + mousePos.y;
-
 16.         writeMessage(canvas, message);
-
 17.     }, false);
-
 18.  
-
 19.     **canvas.addEventListener(\'mouseup\', function (evt) {**
-
 20.         var message = \"Mouse up at position: \" + mousePos.x + \',\' + mousePos.y;
-
 21.         writeMessage(canvas, message);
-
 22.     }, false);
-
 23. };
-
 24.   
-
 25. function writeMessage(canvas, message) {
-
 26.    ctx.save();
-
 27.    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 28.    ctx.font = \'18pt Calibri\';
-
 29.    ctx.fillStyle = \'black\';
-
 30.    ctx.fillText(message, 10, 25);
-
 31.    ctx.restore();
-
 32. }
-
 33.  
-
 34. function getMousePos(canvas, evt) {
-
-35.    **// necessary to take into account CSS boudaries**
-
-36.   ** var rect = canvas.getBoundingClientRect();**
-
+35.    // necessary to take into account CSS boudaries
+36.    var rect = canvas.getBoundingClientRect();
 37.    return {
-
-38.       **x: evt.clientX - rect.left**,
-
-39.       **y: evt.clientY - rect.top**
-
+38.       x: evt.clientX - rect.left,
+39.       y: evt.clientY - rect.top
 40.    };
-
 41. }
+```
 
-### More examples
+<h4>More examples</h4>
 
-#### Example #1: move the monster with the mouse, rotate it when a mouse button is pressed
+<h4>Example #1: move the monster with the mouse, rotate it when a mouse button is pressed</h4>
 
 This example shows an animation at 60 frames/s using requestAnimationFrame, were the monster is drawn at the mouse position, and if a mouse button is pressed, the monster starts rotating around its center. If we release the mouse button, the rotation stops:
 
@@ -17333,255 +17162,150 @@ This example shows an animation at 60 frames/s using requestAnimationFrame, wer
 
 Code:
 
+```
 var canvas, ctx;
-
-var** monsterX=100, monsterY=100, monsterAngle=0**;
-
+var monsterX=100, monsterY=100, monsterAngle=0;
 var incrementX = 0;
-
-var** incrementAngle =0;**
-
-**var mousePos;**
+var incrementAngle =0;
+var mousePos;
 
 function init() {
-
-    \...
-
+    ...
     // 3bis - Add mouse listeners
-
     **canvas.addEventListener(\'mousemove\', handleMousemove, false);**
-
     **canvas.addEventListener(\'mousedown\', handleMousedown, false);**
-
     **canvas.addEventListener(\'mouseup\', handleMouseup, false);**
-
- 
-
     // 4 - Start the animation
-
     requestId = requestAnimationFrame(animationLoop);
-
 }
-
 function** handleMousemove**(evt) {
-
     **// The mousePos will be taken into account in the animationLoop**
-
     **mousePos = getMousePos(canvas, evt);**
-
 }
-
 function handleMousedown(evt) {
-
    **// the increment on the angle will be**
-
    **// taken into account in the animationLoop**
-
    **incrementAngle = 0.1;**
-
 }
-
 function** handleMouseup(evt)** {
-
     **incrementAngle = 0;  // stops the rotation**
-
 }
-
 function getMousePos(canvas, evt) {
-
- \... // same as before
-
+ ... // same as before
 }
-
-\...
-
+...
 function animationLoop() {
-
    // 1 - Clear
-
    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
- 
-
    // 2 - Draw
-
    drawMonster(monsterX, monsterY, monsterAngle, \'green\', \'yellow\');
-
- 
-
    // 3 - Move
-
-   **if(mousePos !== undefined) { // test necessary, maybe the mouse is not yet on canvas**
-
+   if(mousePos !== undefined) { // test necessary, maybe the mouse is not yet on canvas
       **monsterX = mousePos.x;**
-
       **monsterY = mousePos.y;**
-
       **monsterAngle += incrementAngle;**
-
    }
-
-   \...
-
- 
-
+   ...
    // call again mainloop after 16.6 ms (60 frames/s)
-
    requestId = requestAnimationFrame(animationLoop);
-
 }
+```
 
 This example shows one very important good practice when doing animation and interaction: if you want to achieve a smooth animation, set the state variables 60 times/s inside the animation loop (lines 45-49), depending on increments you set in event listeners (lines 23-31).
 
-#### Example #2: draw in a canvas as if you were using a pencil
+<h4>Example #2: draw in a canvas as if you were using a pencil</h4>
 
 ![](./images/image206.png){width="4.0in" height="2.56540135608049in"}
 
 Source code:
 
-\...
-
-\<script\>
-
+```
+...
+<script>
 var canvas, ctx, previousMousePos;
-
-\...
+...
 
 function drawLineImmediate(x1, y1, x2, y2) {
-
     // a line is a path with a single draw order
-
     // we need to do this in this example otherwise
-
     // at each mouse event we would draw the whole path
-
     // from the beginning. Remember that lines
-
     // normally are only usable in path mode
-
     ctx.beginPath();
-
     ctx.moveTo(x1, y1);
-
     ctx.lineTo(x2, y2);
-
     ctx.stroke();
-
 }
-
- 
-
 function handleMouseMove(evt) {
-
      var mousePos = getMousePos(canvas, evt);
-
- 
-
      // Let\'s draw some lines that follow the mouse pos
-
      if (!started) {
-
          previousMousePos = mousePos; // get the current mouse position
-
          started = true;
-
      } else {
-
          // We need to have two consecutive mouse positions before drawing a line
-
          drawLineImmediate(previousMousePos.x, previousMousePos.y,
-
                            mousePos.x,         mousePos.y);
-
          previousMousePos = mousePos;
-
      }
-
 }
-
  window.onload = function () {
-
-   \...
-
+   ...
    started = false;
-
- 
-
-   **canvas.addEventListener(\'mousemove\', handleMouseMove, false);**
-
+   canvas.addEventListener(\'mousemove\', handleMouseMove, false);
 };
-
-\</script\>
+</script>
+```
 
 We had to define a variable started=false; as we cannot draw any line before the mouse moved (we need at least two consecutive positions). This is done in the test at *line 21*.
 
 #### Example #3: same as example #2 but we draw only when a mouse button is pressed
 
-![](./images/image207.png){width="4.0in" height="2.56540135608049in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 207.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image207.png?raw=true"
+   alt=""
+   width="45%">
+&nbsp;
+<br/>
 
 We just added mouseup and  mousedown listeners, extract from the source code:
 
+```
 1.  function handleMouseMove(evt) {
-
 2.       var mousePos = getMousePos(canvas, evt);
-
 3.   
-
-4.       // Let\'s draw some lines that follow the mouse pos
-
+4.       // Let's draw some lines that follow the mouse pos
 5.       if (painting) {
-
 6.           drawLineImmediate(previousMousePos.x, previousMousePos.y,
-
 7.                             mousePos.x,         mousePos.y);
-
 8.           previousMousePos = mousePos;
-
 9.       }
-
 10. }
-
 11. 
-
 12. function clicked(evt) {
-
 13.     previousMousePos = getMousePos(canvas, evt);
-
 14.     painting = true;
-
 15. }
-
 16.  
-
 17. function released(evt) {
-
 18.     painting = false;
-
 19. }
-
 20.  
-
 21.  window.onload = function () {
-
 22.     canvas = document.getElementById(\'myCanvas\');
-
 23.     ctx = canvas.getContext(\'2d\');
-
 24.     painting = false;
-
 25.  
-
 26.     canvas.addEventListener(\'mousemove\', handleMouseMove, false);
-
 27.     canvas.addEventListener(\'mousedown\', clicked);
-
 28.     canvas.addEventListener(\'mouseup\', released);
-
 29. };
+```
 
-### 
-
-### 4.3.4 Responsive Canvas
+<h3>4.3.4 Responsive Canvas</h3>
 
 Resizing a canvas can be tricky if we don\'t know a few rules that might not be easily guessed:
 
@@ -17595,67 +17319,80 @@ Before looking at how best to handle canvas resizing, let\'s see some examples 
 
 #### Example #1: changing the size of a canvas on the fly erases its content!
 
-![](./images/image208.png){width="4.0in" height="2.5492661854768155in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 208.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image208.png?raw=true"
+   alt=" "
+   width="45%">
+&nbsp;
+<br/>
 
 Code:
 
-1.  \<script\>
-
-2.  \...
-
+```
+1.  <script>
+2.  ...
 3.  function resizeCanvas() {
-
 4.       **canvas.width = 300;**
-
 5.  }
-
 6.   
-
-7.  \</script\>
-
-8.  \...
-
-9.  \<button **onclick=\"resizeCanvas();**\"\>
-
+7.  </script>
+8.  ...
+9.  <button **onclick="resizeCanvas();**">
 10.     Click this button to resize the canvas and erase it!
+11. </button>
+```
 
-11. \</button\>
-
-#### Example #2 : resize a canvas using CSS width and height properties with percentages
+<h4>Example #2 : resize a canvas using CSS width and height properties with percentages</h4>
 
 This time we are using a similar example as above, but we removed the button for resizing it, and we set the size of the canvas to 100x100 pixels. Instead of drawing inside, we draw two lines that join the diagonals.
 
-![](./images/image209.png){width="4.0in" height="2.5492661854768155in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 209.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image209.png?raw=true"
+   alt=""
+   width="65%">
+&nbsp;
+<br/>
 
 Then, we added this CSS rule:
 
-![](./images/image210.png){width="4.0in" height="2.5492661854768155in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 210. (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image210.png?raw=true"
+   alt=" "
+   width="45%">
+&nbsp;
+<br/>
 
 It\'s the same example as before, just adding this CSS code:
 
-1.  \<style\>
-
+```
+1.  <style>
 2.      #myCanvas {
-
 3.         border: 1px solid black;
-
-4.         **width:100%**
-
+4.         width:100%
 5.      }
-
-6.  \</style\>
+6.  </style>
+```
 
 And the result shows clearly that the resolution is still the same, only the pixels are bigger!
 
-***BEST PRACTICE: never use CSS percentages on a canvas width or height!***
+<b><i>BEST PRACTICE: never use CSS percentages on a canvas width or height!</i></b>
 
-#### Example #3: a responsive canvas using a resize listener +  a parent element
+<h4>Example #3: a responsive canvas using a resize listener +  a parent element</h4>
 
 This is the trick to create a really responsive canvas:
 
 1.  Embed it in a \<div\> or in any parent container,
 
-2.  Use CSS with percentages on the width and the height CSS properties **of the parent,**
+2.  Use CSS with percentages on the width and the height CSS properties <b>of the parent,</b>
 
 3.  Use a resize listener on the  parent of the canvas,
 
@@ -17665,158 +17402,145 @@ This is the trick to create a really responsive canvas:
 
 Yep, this is not a straightforward process\...
 
-![div and canvas inside. Div has CSS width=100% and height = 50%](./images/image211.jpeg){width="5.572916666666667in" height="3.03125in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 211. div and canvas inside; div has css width=100% and height=50% (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image211.jpeg?raw=true"
+   alt="DIV and canvas inside: div has css width=100% and height=50%"
+   width="65%">
+&nbsp;
+<br/>
 
-HTML code:
+<b>HTML code:</b>
 
-1.  **\<div id=\"parentDiv\"\>**
+```
+1.  <div id="parentDiv">
+2.      <canvas id="myCanvas" width="100" height="100" ></canvas>
+3.  </div>
+```
 
-2.      \<canvas id=\"myCanvas\" width=\"100\" height=\"100\" \>\</canvas\>
+<b>CSS code:</b>
 
-3.  **\</div\>**
-
-CSS code:
-
-1.  \<style\>
-
+```
+1.  <style>
 2.      #parentDiv {
-
-3.          **width:100%;**
-
-4.          **height:50%;**
-
+3.          width:100%;
+4.          height:50%;
 5.          margin-right: 10px;
-
 6.          border: 1px solid red;
-
 7.      }
-
 8.   
-
 9.      canvas {
-
 10.        border: 2px solid black;
-
 11.     }
+12. </style>
+```
 
-12. \</style\>
+<b>JavaScript code for the resize event listener:</b>
 
-JavaScript code for the resize event listener:
-
+```
 1.  function init() {
-
-2.     \...
-
-3.     // IMPORTANT: there is NO WAY to listen to a DIV\'s resize
-
+2.     ...
+3.     // IMPORTANT: there is NO WAY to listen to a DIV's resize
 4.     // listen to the window instead.
-
-5.     window.addEventListener(\'resize\',     
-
+5.     window.addEventListener('resize',     
 6.                              resizeCanvasAccordingToParentSize, false);
-
-7.     \...
-
+7.     ...
 8.  }
-
 9.   
-
 10. function resizeCanvasAccordingToParentSize() {
-
-11.      **// adjust canvas size, take parent\'s size, this erases content**
-
-12.      **canvas.width = divcanvas.clientWidth;**
-
-13.      **canvas.height = divcanvas.clientHeight;**
-
-14.      \...
-
+11.      // adjust canvas size, take parent's size, this erases content
+12.      canvas.width = divcanvas.clientWidth;
+13.      canvas.height = divcanvas.clientHeight;
+14.      ...
 15.      // draw something, taking into account the new canvas size
-
 16. }
+```
 
 See the complete example that corresponds to the above code:
 
-![](./images/image212.png){width="4.0in" height="2.5492661854768155in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------- 212.  (xxx) -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image212.png?raw=true"
+   alt=" "
+   width="55%" />
+&nbsp;
+<br/>
 
-#### Example #4: the same example with the monster 
+<h4>Example #4: the same example with the monster</h4>
 
-![](./images/image213.png){width="4.0in" height="2.5492661854768155in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------- 213. (xxx) -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image213.png?raw=true"
+   alt=" "
+   width="55%" />
+&nbsp;
+<br/>
 
 When the canvas is resized, its width became smaller than the monster\'s size. We **scale** down the monster (using ctx.scale!)
 
 The code is very similar to the previous example, we just replaced drawDiagonals() by drawMonster(\...), and we added a test in the drawMonster(\...) function for scaling the monster if it\'s bigger than the canvas width (look at *lines 10-16*), this is a common trick:
 
+```
 1.  function drawMonster(x, y, angle, headColor, eyeColor) {
-
 2.       // GOOD PRACTICE: SAVE CONTEXT AND RESTORE IT AT THE END
-
 3.       ctx.save();
-
 4.  
-
 5.       // Moves the coordinate system so that the monster is drawn
-
 6.       // at position (x, y)
-
 7.       ctx.translate(x, y);
-
 8.       ctx.rotate(angle);
-
 9.  
-
 10.      // Adjust the scale of the monster (200x200) if the canvas
-
 11.      // is too small
-
-12.      if(canvas.width \< 200) {
-
+12.      if(canvas.width < 200) {
 13.          var scaleX = canvas.width/200;
-
 14.          var scaleY = scaleX;
-
-15.      **}**
-
+15.      }
 16.      ctx.scale(scaleX, scaleY);
-
 17. 
-
 18.      // head
-
 19.      ctx.fillStyle=headColor;
-
 20.      ctx.fillRect(0,0,200,200);
-
-21.      \...
-
+21.      ...
 22. }
+```
 
-### 
-
-### 4.3.5 Advanced Canvas
+<h3>4.3.5 Advanced Canvas</h3>
 
 The canvas API is a \"big beast\", and we have presented all the essential techniques for drawing and animating. However, we could not fit everything in this course. Exotic features that are rarely used by developers, or advanced techniques that require more than 20 lines of JavaScript, have been put aside for [the W3Cx HTML5 Apps and Games course](https://www.edx.org/course/html5-apps-and-games).
 
 In that course, you will learn:
 
--   **Techniques useful for writing HTML5 games**: time-based animation, advanced user interactions (detecting multiple keys plus mouse plus gamepad plus touch events all at the same time in a single version of the code), sprite based animation, collision detection, particle animation;
+<ul>
+<li>Techniques useful for writing HTML5 games**: time-based animation, advanced user interactions (detecting multiple keys plus mouse plus gamepad plus touch events all at the same time in a single version of the code), sprite based animation, collision detection, particle animation;</li><br/>
+<li>Pixel-level operations:** special FX like blue-screen videos and augmented reality;</li><br/>
+<li>And many other things, such as**: masking/clipping, stacking canvases in layers, composition modes, saving and restoring canvas contents, saving canvas content to disk client-side, drawing a canvas into a canvas, etc.</li><br/>
+</ul>
 
--   **Pixel-level operations:** special FX like blue-screen videos and augmented reality;
+<h4>Examples studied in the HTML5 Apps and Games course</h4>
 
--   **And many other things, such as**: masking/clipping, stacking canvases in layers, composition modes, saving and restoring canvas contents, saving canvas content to disk client-side, drawing a canvas into a canvas, etc.
+<ul>
+<li>Small game framework / object oriented JavaScript / advanced event handling / collision detection / time based animation** - see [example online](https://jsbin.com/jifutoj/1/edit?html,js,console,output).</li>
+<li>Sprite based animation**: like this [one](https://jsbin.com/libakum/1/edit?html,js,console,output) (this is ugly code to demonstrate the principle - in the course we develop a clean, sprite animation framework). Use the arrow keys after clicking in the canvas. It\'s better to try in standalone mode (click on the small black arrow in the top right of the JSBin window).</li><br/>
+</ul>
 
-### Examples studied in the HTML5 Apps and Games course
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------- 214. sprite sheet (xxx) -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image214.png?raw=true"
+   alt="Sprite sheet"
+   width="35%" />
+&nbsp;
+<br/>
 
--   **Small game framework / object oriented JavaScript / advanced event handling / collision detection / time based animation** - see [example online](https://jsbin.com/jifutoj/1/edit?html,js,console,output).
-
-```
-<!-- -->
-```
--   **Sprite based animation**: like this [one](https://jsbin.com/libakum/1/edit?html,js,console,output) (this is ugly code to demonstrate the principle - in the course we develop a clean, sprite animation framework). Use the arrow keys after clicking in the canvas. It\'s better to try in standalone mode (click on the small black arrow in the top right of the JSBin window).
-
-![sprite sheet](./images/image214.png){width="3.0in" height="3.538461286089239in"}
-
-### 5.1.1 Video Intro - Module 5
+<h3>5.1.1 Video Intro - Module 5</h3>
 
 Congratulations! You made it to module 5.
 
@@ -17834,30 +17558,27 @@ These additions are very handy when used on mobile devices but raised many criti
 
 The course discusses all the cases and recommend solutions and good practices. Of course, like usual, many examples will be provided that you can run directly this time in the course pages, but also as standalone examples hosted on the JS Bin Web site. If you try to modify them or creates your own examples, please share in the discussion forums as usual. Have fun!
 
-### 5.2.1 Introduction
+<h3>5.2.1 Introduction</h3>
 
 With HTML5, forms, which had shown little improvement since 1997, evolved considerably.  To achieve this, Web developers relied on many popular JavaScript frameworks for validating input formats, providing various input GUIs, such as calendars for dates, sliders, etc. Frameworks such as jQueryUI, Dojo, and Sencha, all provide a widget set for improving forms. Furthermore, it was time to take into account the specifics of mobile web applications, where the GUI of a date chooser cannot be the same as a 400x400 pixel wide calendar on a desktop. Contextual virtual keyboards provided the way forward on smartphones and tablets thanks to Apple, Google and others.
 
 HTML5 took all this into account and thus provides:
-
--   A set of input fields that include a validation API and visual feedback, contextualized keyboards, etc. Of course the look and feel depends on the web browser\'s implementations, but the HTML5 forms specification introduced 13 new \<input type=\.../\> fields:  email, tel, color, url, date, datetime, datetime-local, month, week, time, range, number and search.
-
--   Built-in validation system: JavaScript API for custom validation, CSS pseudo classes that are useful for changing an input field style depending on the validity of the input.
-
--   Other goodies, such as the option to set an input field out of a \<form\>, new elements such as \<datalist\> for autocompletion, \<output\> for feedback, etc.
+<ul>
+<li>A set of input fields that include a validation API and visual feedback, contextualized keyboards, etc. Of course the look and feel depends on the web browser\'s implementations, but the HTML5 forms specification introduced 13 new \<input type=\.../\> fields:  email, tel, color, url, date, datetime, datetime-local, month, week, time, range, number and search.</li><br/>
+<li>Built-in validation system: JavaScript API for custom validation, CSS pseudo classes that are useful for changing an input field style depending on the validity of the input.</li><br/>
+<li>Other goodies, such as the option to set an input field out of a \<form\>, new elements such as \<datalist\> for autocompletion, \<output\> for feedback, etc.</li><br/>
+</ul>
 
 Examples of contextual keyboards are shown above; they differ depending on the type of  \<input\> fields in the \<form\>. \
 In the examples, we can see: email, URL, and phone number. Look at the different keyboard layouts. The last picture is a date picker from an IOS phone.
 
-### External resources:
+<h4>External resources:</h4>
 
 -   From the specification: [Forms](https://html.spec.whatwg.org/multipage/forms.html)
 
 -   From MDN\'s Web Docs: [\<form\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
 
-### 
-
-### 5.2.2 Example
+<h3>5.2.2 Example</h3>
 
 There is a lot of course content covered this week, and before we get into all the details of the elements and attributes introduced by HTML5, we suggest playing with running examples of full featured forms.
 
@@ -17866,25 +17587,33 @@ It uses the geolocation API presented in Module 6 for auto-filling the address i
 
 Feel free to look at the source code in the [online example](https://jsbin.com/sivula/edit):
 
-![](./images/image215.jpeg){width="4.0in" height="3.3186811023622047in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------- 215.  (xxx) -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image215.png?raw=true"
+   alt=" "
+   width="45%" />
+&nbsp;
+<br/>
 
-### 5.2.3 Input Elements and Attributes
+<h3>5.2.3 Input Elements and Attributes</h3>
 
-### Live coding video 1: using input elements as widgets to control a Web application
+<h4>Live coding video 1: using input elements as widgets to control a Web application</h4>
 
 \<here\>
 
-### Live coding video 2: creating GUI elements dynamically
+<h4>Live coding video 2: creating GUI elements dynamically</h4>
 
 \<and here\>
 
 Input elements, in particular the elements introduced by HTML5, can be used as widgets to control the behavior of a Web application. In this situation, they do not need to be inside a \<form\> element. We just bind event listeners to them and we use them as client-side widgets.
 
-### Examples
+<h4>Examples</h4>
 
 GUI: Graphical User Interface
 
-#### Example #1: choose the color, line width and speed of an animation
+<h4>Example #1: choose the color, line width and speed of an animation</h4>
 
 -   [Bouncing rectangle without GUI](https://jsbin.com/ciwefo/1/edit?html,css,output)
 
@@ -17896,16 +17625,13 @@ GUI: Graphical User Interface
 
 -   [Simple chart with a GUI](https://jsbin.com/gesive/edit?html,js,console,output) (see screenshot on the right)
 
-```
-<!-- -->
-```
 -   [Final version with different types of charts and a GUI](https://jsbin.com/ralonem/1/edit?html,js,output)  (see screenshot below)
 
-### 5.2.4 Best Practices
+<h3>5.2.4 Best Practices</h3>
 
-### Live coding video 3: HTML5 forms - best practices
+<h4>Live coding video 3: HTML5 forms - best practices</h4>
 
-## \<here\>
+\<here\>
 
 The example used in the video is available [online at JSBin](https://jsbin.com/jagodi/edit?html,css,output). A screenshot of the resulted form is shown on the right.
 
@@ -17925,9 +17651,17 @@ The example shown in the video shows some best practices for writing accessible 
 
 The following additional example shows the same best practices but presents a more complete form with CSS rules to make a nice layout. See it [online](https://jsbin.com/zubitex/1/edit?html,output), and illustrated with the screenshot below. It is adapted from [this very good MDN\'s article \"How to structure a web form\"](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form).
 
-![Form layout example](./images/image216.jpeg){width="3.0in" height="3.9012346894138235in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------- 212. form layout example -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image212.jpeg?raw=true"
+   alt="Form layout example"
+   width="35%" />
+&nbsp;
+<br/>
 
-### 5.3.1 Accessible Forms
+<h3>5.3.1 Accessible Forms</h3>
 
 Forms are commonly used to enable user interaction in Web sites and Web applications. For example, they are used for login, registering, commenting, and purchasing.
 
@@ -22224,6 +21958,16 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12
 
 This data URL in a browser address bar should look like this:
 
+<!------------------------------------------------------------------------------------------------>
+<!-------------------- 317. data url in address bar shows a red cirle (xxx) ---------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image317.jpeg?raw=true"
+   alt="Data url in address bar shows a red circle"
+   width="85%" />
+&nbsp;
+<br/>
+
 ![data url in adress bar shows a red circle](./images/image317.jpeg){width="6.5in" height="0.5097222222222222in"}
 
 If we set the src attribute of an image element \<img src=\"data:image/png\....\"\> with the data URL of the above screenshot, it will work exactly as if you used a URL that started with https://
@@ -22265,7 +22009,7 @@ This first example is useful for forms that allow the user to select one or more
 [Example on JSBin](https://jsbin.com/laseye/edit?html,output) or try it below in your browser:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 321. preview of selected images --------------------------------->
+<!------------------------------ 332. preview of selected images --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image332.png?raw=true"
