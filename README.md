@@ -857,7 +857,7 @@ Example for the first blog article:
 Also note the way we included a figure using the new \"HTML5\" method, using a \<figure\>..\</figure\> element that embedded a \<img src=\.../\> element together with a \<figcaption\> element. 
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 18. figure and figcaptin ------------------------------------>
+<!---------------------------------- 18. figure and figcaption (xx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image018.jpeg?raw=true"
@@ -986,7 +986,7 @@ Finally, we added a \<footer\> element (*lines 12-14* below) after the tag cl
 </html>
 ```
 
-**With this CSS rule:**
+<b>With this CSS rule:</b>
 
 ```
 footer {
@@ -998,13 +998,27 @@ footer {
 
 And here is the result at the bottom of the page:
 
-![The resulting footer at the bottom of the page](./images/image022.jpeg){width="5.0in" height="1.757425634295713in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------- 22. the resulting footer at the bottom of the page (xx) -------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image022.jpeg?raw=true"
+   alt="Image of the Blog Footer"
+   width="65%" />
+</p>
 
-**More on \<article\> and \<section\>**
+<b>More on \<article\> and \<section\></b>
 
 Can an \<article\> contain a \<section\>?
 
-![Picture of \'eisher\' hands](./images/image023.jpeg){width="2.4270833333333335in" height="1.3333333333333333in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 23. picture of eisher (xx) --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image023.jpeg?raw=true"
+   alt="Picture of Eisher"
+   width="25%" />
+</p>
 
 It may not be clear whether a \<section\> may contain one or several \<article\> elements or if an \<article\> may contain one or several \<section\> elements.
 
@@ -1012,7 +1026,7 @@ The \<article\> element was designed for stand-alone parts of a document that 
 
 \<section\> elements are used to cut a logical part into subparts.
 
-**An \<article\> may be cut into different \<section\> elements!**
+<b>An \<article\> may be cut into different \<section\> elements!</b>
 
 Example of a blog post defined as a long \<article\>, that is in turn cut into smaller \<section\> elements:
 
@@ -1767,7 +1781,15 @@ Example for the first blog article:
 
 Also note the way we included a figure using the new \"HTML5\" method, using a \<figure\>..\</figure\> element that embedded a \<img src=\.../\> element together with a \<figcaption\> element. 
 
-![image of figure and figcaption that embed an img](media/image18.jpeg){width="6.0in" height="3.2256430446194226in"}
+<!------------------------------------------------------------------------------------------------>
+<!---------------- 18. image of figure and figcaption that embed an img (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image018.jpeg?raw=true"
+   alt="image of figure and figcaption that embed an img"
+   width="65%" />
+&nbsp;
+<br/>
 
 Here is the CSS for the \<figcaption\> element we have used in the example (we did not apply any style to the \<figure\> element):
 
@@ -1797,7 +1819,15 @@ figcaption {
 
 After the long \<section\> element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, \"aside\"! This is done using - you already guessed it - an \<aside\> element:
 
-![image of the tag cloud defined as an aside element](./images/image019.jpeg){width="2.3958333333333335in" height="2.6770833333333335in"}
+<!------------------------------------------------------------------------------------------------>
+<!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image019.jpeg?raw=true"
+   alt="image of the tag cloud defined as an aside element"
+   width="25%" />
+&nbsp;
+<br/>
 
 ```
 <section>
@@ -1841,10 +1871,28 @@ We used a float:right CSS rule to put the tag cloud on the right\... In a foll
 
 ###### **Here is the result:**
 
+<!------------------------------------------------------------------------------------------------>
+<!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image019.jpeg?raw=true"
+   alt="image of the tag cloud defined as an aside element"
+   width="25%" />
+&nbsp;
+<br/>
 ![The aside tag cloud on the right](./images/image020.jpeg){width="5.0in" height="1.6762817147856517in"}
 
 #### Add a \<footer\> at the end of the blog
 
+<!------------------------------------------------------------------------------------------------>
+<!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image019.jpeg?raw=true"
+   alt="image of the tag cloud defined as an aside element"
+   width="25%" />
+&nbsp;
+<br/>
 ![image of the blog footer](./images/image021.jpeg){width="2.1875in" height="0.7916666666666666in"}
 
 ###### Finally, we added a \<footer\> element (*lines 12-14* below) after the tag cloud definition, to display a page footer:
@@ -1879,11 +1927,41 @@ footer {
 
 ###### **And here is the result at the bottom of the page:**
 
+<!------------------------------------------------------------------------------------------------>
+<!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image019.jpeg?raw=true"
+   alt="image of the tag cloud defined as an aside element"
+   width="25%" />
+&nbsp;
+<br/>
+
 ![The resulting footer at the bottom of the page](./images/image022.jpeg){width="5.0in" height="1.757425634295713in"}
 
-### 1.3.4 More on \<article\> and \<section\>
+<h3>1.3.4 More on \<article\> and \<section\></h3>
 
-### Can an \<article\> contain a \<section\>?
+<h4>Can an \<article\> contain a \<section\>?</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!---------------- xx.  (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/imagexx.jpeg?raw=true"
+   alt=""
+   width="25%" />
+&nbsp;
+<br/>
+
+<!------------------------------------------------------------------------------------------------>
+<!---------------- xx.  (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/imagexx.jpeg?raw=true"
+   alt=""
+   width="25%" />
+&nbsp;
+<br/>
 
 ![Picture of \'eisher\' hands](./images/image023.jpeg){width="2.4270833333333335in" height="1.3333333333333333in"}
 
@@ -1960,6 +2038,16 @@ You can use \<div\> elements in all cases where the proposed structural elemen
 
 This chart from the [HTML5 Doctor Web site](https://html5doctor.com/) may help you decide whether or not to use a \<div\>:
 
+<!------------------------------------------------------------------------------------------------>
+<!---------------- xx.  (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/imagexx.jpeg?raw=true"
+   alt=""
+   width="25%" />
+&nbsp;
+<br/>
+
 ![flow chart about using header, H1, etc.](./images/image024.png){width="6.5in" height="4.600694444444445in"}
 
 ### 1.3.5 Headings and Structural Elements
@@ -1983,6 +2071,15 @@ Since the very beginning, HTML has had heading elements: \<h1\>\...\<h6\>. Thes
 ###### This is a H6 heading
 
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. Here is the result for the previous example:
+<!------------------------------------------------------------------------------------------------>
+<!---------------- xx.  (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/imagexx.jpeg?raw=true"
+   alt=""
+   width="25%" />
+&nbsp;
+<br/>
 
 ![outliner in action from the previous example](./images/image025.png){width="6.5in" height="3.5097222222222224in"}
 
@@ -2055,6 +2152,15 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 ###### \</body\>
 
 ###### The corresponding outline is:
+<!------------------------------------------------------------------------------------------------>
+<!---------------- xx.  (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/imagexx.jpeg?raw=true"
+   alt=""
+   width="25%" />
+&nbsp;
+<br/>
 
 ![outline of previous example](./images/image026.jpeg){width="6.0in" height="2.6333333333333333in"}
 
@@ -2105,6 +2211,15 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 **UPDATE : **For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as [table-of-contents-crx](https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f) for Chrome or [Outline sidebar](https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search) for Firefox.
 
 The outline of the last example looks like this:
+<!------------------------------------------------------------------------------------------------>
+<!---------------- xx.  (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/imagexx.jpeg?raw=true"
+   alt=""
+   width="25%" />
+&nbsp;
+<br/>
 
 ![outline of last example](./images/image027.jpeg){width="6.5in" height="2.3006944444444444in"}
 
@@ -2201,16 +2316,16 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 1.  <body>
 2.  <h1>Apples</h1>
 3.  <p>Apples are fruit.</p>
-4.  **<section>**
-5.       **<h2>Taste</h2>**
+4.  <section>
+5.       <h2>Taste</h2>
 6.       <p>They taste lovely.</p>
-7.       **<section>**
-8.           **<h3>Sweet</h3>**
+7.       <section>
+8.           <h3>Sweet</h3>
 9.           <p>Red apples are sweeter than green ones.</p>
 10.      </section>
 11. </section>
-12. **<section>**
-13.      **<h2>Color</h2>**
+12. <section>
+13.      <h2>Color</h2>
 14.      <p>Apples come in various colors.</p>
 15. </section>
 16. </body>
@@ -2228,7 +2343,7 @@ Both of the examples above are semantically identical and produce the same out
 &nbsp;
 <br/>
 
-<h3 id="ch3-7">1.3.7 Embedding a Table of Contents
+<h3 id="ch1-3-7">1.3.7 Embedding a Table of Contents
 
 Here we propose a small piece of JavaScript code you can use in your documents to display an embedded table of contents. 
 
@@ -2541,6 +2656,16 @@ We need to add a heading in the \<nav\> element. This will both fix the outlin
 
 **Here is the fixed result:**
 
+<!------------------------------------------------------------------------------------------------>
+<!---------------- xx.  (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/imagexx.jpeg?raw=true"
+   alt=""
+   width="25%" />
+&nbsp;
+<br/>
+
 ![good outline without the untitled nav](./images/image033.jpeg){width="5.0in" height="3.3931627296587927in"}
 
 A common remark from Web designers is: \"we do not want a heading content displayed systematically after a \<nav\>, or an \<aside\> element\...\"
@@ -2614,6 +2739,15 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 ### Finally, the fixed example
 
 -   [Check it online with this JsBin](https://jsbin.com/heboke/edit?html,output)
+<!------------------------------------------------------------------------------------------------>
+<!---------------- xx.  (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/imagexx.jpeg?raw=true"
+   alt=""
+   width="25%" />
+&nbsp;
+<br/>
 
 ![blog with embedded table of contents](./images/image034.jpeg){width="5.0in" height="2.8536340769903763in"}
 
@@ -2629,89 +2763,74 @@ The 4 examples below are given \"as is\" to give you some hints. There are lots 
 
 This example uses the following HTML structure (notice that we use the \"HTML entity syntax\" for displaying \"\<\" or \"\>\". For example, &lt; displays a \"\<\" character).
 
-1.  \<header\>
-
-2.  \<code\>&lt;header&gt;\</code\>
-
-3.  \</header\>
-
+1.  <header\>
+2.  <code\>&lt;header&gt;\</code\>
+3.  </header\>
 4.   
-
-5.  \<section\>
-
-6.  \<code\>&lt;section&gt; \<br\> float: left;\</code\>
-
-7.  \</section\>
-
+5.  <section\>
+6.  <code\>&lt;section&gt; \<br\> float: left;\</code\>
+7.  </section\>
 8.   
-
-9.  \<aside\>
-
-10. \<code\>&lt;aside&gt; \<br\> float: right;\</code\>
-
-11. \</aside\>
-
+9.  <aside\>
+10. <code\> right;\</code\>
+11. </aside\>
 12.  
-
-13. \<footer\>
-
-14. \<code\>&lt;footer&gt;\</code\>
-
-15. \</footer\>
+13. <footer>
+14. <code>&lt;footer&gt;</code>
+15. </footer>
 
 Here we use the CSS rule float:left for the \<section\> and the CSS rule float:right for the \<aside\>. When an element floats, it goes out of the normal flow of the HTML element. Then by default it floats to the edge of its parent; and its size depends on the elements it contains. So, in order to fill the whole horizontal space, we prefer here to \"force the width\" by setting the CSS width property with a percentage.  So we took width: 63% for the \<section\> on the left and width:30% for the \<aside\> on the right.
 
 You can look at the complete CSS code in the interactive example below (click on the CSS or HTML text in the menu bar below, or click \"edit on codepen\" to change the code and see the results):
-
-![](./images/image035.png){width="6.5in" height="2.529166666666667in"}
+<!------------------------------------------------------------------------------------------------>
+<!---------------- xx.  (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image035.png?raw=true"
+   alt=""
+   width="65%" />
+&nbsp;
+<br/>
 
 [Also available online at JSBin](https://jsbin.com/dufapo/edit?html,css,output).
 
-![](./images/image036.png){width="6.5in" height="3.527083333333333in"}
+<!------------------------------------------------------------------------------------------------>
+<!---------------- 36.  (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image036.png?raw=true"
+   alt=""
+   width="65%" />
+&nbsp;
+<br/>
 
-### Example #2: three sections centered, of equal size, also using the float and width CSS properties
+<h4>Example #2: three sections centered, of equal size, also using the float and width CSS properties</h4>
 
 Here we show how to make a 3 column layout using the CSS float property.
 
-**HTML code:**
+<b>HTML code:</b>
 
+```
 1.  \<header\>
-
 2.  \<code\>&lt;header&gt;\</code\>
-
 3.  \</header\>
-
 4.   
-
 5.  \<section\>
-
 6.  \<code\>&lt;section&gt; \<br\> float: left;\</code\>
-
 7.  \</section\>
-
 8.   
-
 9.  \<section\>
-
 10. \<code\>&lt;section&gt; \<br\> float: left;\</code\>
-
 11. \</section\>
-
 12.  
-
 13. \<section\>
-
 14. \<code\>&lt;section&gt; \<br\> float: left;\</code\>
-
 15. \</section\>
-
 16.  
-
 17. \<footer\>
-
 18. \<code\>&lt;footer&gt;\</code\>
-
 19. \</footer\>
+```
 
 Instead of having one element with a float:left and one element with a float:right property, we instead use float:left for all three of them, and we give a  width:30% CSS property value to each \<section\>. We also set a small margin so that the colums have a gap between them.
 
