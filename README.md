@@ -6393,7 +6393,7 @@ We will look at this example in greater detail in the next course section (relat
 
 -   [Webcam Toy](https://webcamtoy.com/): video effects on Paul Neave\'s webcam (using WebGL)
 
-### 2.4.3 Using the Microphone
+<h3>2.4.3 Using the Microphone</h3>
 
 Instead of using the getUserMedia API with: navigator.getUserMedia({video:true}, onSuccess, onError), it is also possible to use {audio:true} for the first parameter. In this case, only the microphone input will be captured. Notice that {video:true, audio:true} is also accepted, if you write a video conferencing system and need to capture both the audio and the video (this is often the case when writing WebRTC applications).
 
@@ -6405,18 +6405,19 @@ The image below is taken from [one of the demonstrations](https://webaudiodemos
 
 ![webaudio live processing](./images/image110.jpeg){width="5.0in" height="3.9796970691163605in"}
 
-### 2.4.4 Webcam Resolution
+<h3>2.4.4 Webcam Resolution</h3>
 
 It is possible to set \"hints\" for the preferred cam/resolution during video capture. This is done by using a [\"constraint\" object ](https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4)that is passed as a parameter to the getUserMedia(\...) method. It\'s just the same object we passed in the basic example: navigator.getUserMedia(**{video:true}**, success, error) except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.
 
 For more information, this [article on MDN about the getUserMedia API](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) gives great examples on how to set the camera resolution and/or to choose the front or back camera when using a mobile phone.  
 
-**Typical use:**
+<b>Typical use:</b>
 
 ![](./images/image111.png){width="6.5in" height="2.0569444444444445in"}
 
-**JS**
+<b>JS</b>
 
+```
 > var vgaButton, qvgaButton, hdButton, dimensions, video, stream;
 >
 > function init() {
@@ -6564,77 +6565,58 @@ For more information, this [article on MDN about the getUserMedia API](https:/
 **HTML**
 
 > \<!DOCTYPE html\>
->
 > \<html lang=\"en\"\>
->
 > \<head\>
->
 > \<meta charset=\"utf-8\"/\>
->
 > \<title\>getUserMedia constraints for Webcam resolutions\</title\>
->
 > \</head\>
->
 > \<body onload=\"init();\"\>
->
 > \<h1\>Set the camera resolution\</h1\>
->
 > Example adapted from:
->
 > \<a href=\"https://www.simpl.info/getusermedia/constraints/\"\>
->
 > https://www.simpl.info/getusermedia/constraints/
->
 > \</a\>
->
 > \<br\>
->
 > \<p\>Click a button to call \<code\>getUserMedia()\</code\> with appropriate resolution. \</p\>
->
 > \<div id=\"buttons\"\>
->
 > \<button id=\"qvga\"\>QVGA\</button\>
->
 > \<button id=\"vga\"\>VGA\</button\>
->
 > \<button id=\"hd\"\>HD\</button\>
->
 > \</div\>
->
 > \<p id=\"dimensions\"\>\</p\>
->
 > \<video autoplay\>\</video\>
->
 > \</body\>
->
 > \</html\>
+```
 
 ![](./images/image112.png){width="4.385416666666667in" height="5.25in"}
 
 Code source extract related to the \"constraint\" object which specifies the desired resolutions:
 
+```
 1.  var vgaConstraints = {
-2.     **video: {**
-3.  **      width: { max: 640 },**
-4.  **      height: { max: 360 }**
-5.  **   }**
+2.     video: {
+3.        width: { max: 640 },
+4.        height: { max: 360 }
+5.     }
 6.  };
 7.  var hdConstraints = {
-8.    ** video: {**
-9.  **      width: { min: 1280 },**
-10. **      height: { min: 720 }**
-11. **   }**
+8.     video: {
+9.        width: { min: 1280 },
+10.       height: { min: 720 }
+11.    }
 12. };
 13.  
 14. let constraints = hdConstraints;
 15. navigator.mediaDevices.getUserMedia(constraints)
 16. .then((stream) =\> {\...}
+```
 
-### How to check which resolutions are supported by a browser?
+<h4>How to check which resolutions are supported by a browser?</h4>
 
 Use this [Web app that ](https://webrtchacks.github.io/WebRTC-Camera-Resolution/)systematically tests a set of \"preferred resolutions\" and compared them to the actual resolutions returned by the browser. Remember that the requested resolution is a hint, and there is no real guarantee that your configuration will allow it.
 
-### Selecting the front or rear camera on smartphones
+<h4>Selecting the front or rear camera on smartphones</h4>
 
 Here are some other constraints you can set. In particular, look at the ones for selecting the front or rear camera (smartphones):
 ```
@@ -6663,9 +6645,11 @@ Here are some other constraints you can set. In particular, look at the ones for
 21. **// require rear camera**
 22. constraints = { audio: true,** video: { facingMode: { exact: \"environment\" } }** }
 ```
-### Select input/output for audio and video streams
+
+<h4>Select input/output for audio and video streams</h4>
 
 -   Resource: [WebRTC samples: Select sources & outputs](https://webrtc.github.io/samples/src/content/devices/input-output/)
+
 
 ![webapp for selecting audio and video input/output](./images/image113.jpeg){width="4.145833333333333in" height="4.697916666666667in"}
 
@@ -6703,7 +6687,8 @@ For example, the MediaRecorder API is used to record the video stream from a Web
 
 Let\'s record, replay and download the video stream captured using a Webcam. You can test it below by clicking on \"CodePen\" at the top right:
 
-**JS**
+<b>JS</b>
+
 ```
 > var mediaRecorder;
 > var recordedBlobs;
@@ -6749,15 +6734,15 @@ Let\'s record, replay and download the video stream captured using a Webcam. You
 > }
 > // create the media recorder
 > function startRecording() {
-> recordedBlobs = \[\];
+> recordedBlobs = [];
 > try {
 > mediaRecorder = new MediaRecorder(window.stream);
 > } catch (e) {
-> console.error(\'Exception while creating MediaRecorder: \' + e);
+> console.error('Exception while creating MediaRecorder: ' + e);
 > return;
 > }
-> console.log(\'Created MediaRecorder\', mediaRecorder);
-> recordButton.textContent = \'Stop Recording\';
+> console.log('Created MediaRecorder', mediaRecorder);
+> recordButton.textContent = 'Stop Recording\';
 > playButton.disabled = true;
 > downloadButton.disabled = true;
 > mediaRecorder.onstop = handleStop;
@@ -6767,20 +6752,20 @@ Let\'s record, replay and download the video stream captured using a Webcam. You
 > }
 > function stopRecording() {
 > mediaRecorder.stop();
-> console.log(\'Recorded Blobs: \', recordedBlobs);
+> console.log('Recorded Blobs: ', recordedBlobs);
 > recordedVideo.controls = true;
 > }
 > function play() {
-> var superBuffer = new Blob(recordedBlobs, {type: \'video/webm\'});
+> var superBuffer = new Blob(recordedBlobs, {type: 'video/webm'});
 > recordedVideo.src = window.URL.createObjectURL(superBuffer);
 > }
 > function download() {
-> var blob = new Blob(recordedBlobs, {type: \'video/webm\'});
+> var blob = new Blob(recordedBlobs, {type: 'video/webm'});
 > var url = window.URL.createObjectURL(blob);
 > var a = document.createElement(\'a\');
-> a.style.display = \'none\';
+> a.style.display = 'none';
 > a.href = url;
-> a.download = \'test.webm\';
+> a.download = 'test.webm\';
 > document.body.appendChild(a);
 > a.click();
 > setTimeout(function() {
@@ -6790,155 +6775,91 @@ Let\'s record, replay and download the video stream captured using a Webcam. You
 > }
 ```
 
-**CSS**
+<b>CSS</b>
+
 ```
-> /\*
->
-> \* Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
->
-> \*
->
-> \* Use of this source code is governed by a BSD-style license
->
-> \* that can be found in the LICENSE file in the root of the source
->
-> \* tree.
->
-> \*/
->
+> /*
+> * Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+> *
+> * Use of this source code is governed by a BSD-style license
+> * that can be found in the LICENSE file in the root of the source
+> * tree.
+> */
 > button {
->
 > margin: 0 3px 10px 0;
->
 > padding-left: 2px;
->
 > padding-right: 2px;
->
 > width: 99px;
->
 > }
->
 > button:last-of-type {
->
 > margin: 0;
->
 > }
->
 > p.borderBelow {
->
 > margin: 0 0 20px 0;
->
 > padding: 0 0 20px 0;
->
 > }
->
 > video {
->
 > height: 232px;
->
 > margin: 0 12px 20px 0;
->
 > vertical-align: top;
->
 > width: calc(20em - 10px);
->
 > }
->
 > video:last-of-type {
->
 > margin: 0 0 20px 0;
->
 > }
->
 > video#gumVideo {
->
 > margin: 0 20px 20px 0;
->
 > }
->
-> \@media screen and (max-width: 500px) {
->
+> @media screen and (max-width: 500px) {
 > button {
->
 > font-size: 0.8em;
->
 > width: calc(33% - 5px);
->
 > }
->
 > }
->
-> \@media screen and (max-width: 720px) {
->
+> @media screen and (max-width: 720px) {
 > video {
->
-> height: calc((50vw - 48px) \* 3 / 4);
->
+> height: calc((50vw - 48px) * 3 / 4);
 > margin: 0 10px 10px 0;
->
 > width: calc(50vw - 48px);
->
 > }
->
 > video#gumVideo {
->
 > margin: 0 10px 10px 0;
->
 > }
->
 > }
 ```
+
 <h4>HTML</h4>
+
 ```
-> \<!DOCTYPE html\>
->
-> \<html\>
->
-> \<head\>
->
-> \<meta charset=\"utf-8\"\>
->
-> \<meta name=\"viewport\" content=\"width=device-width\"\>
->
-> \<title\>MediaRecorder API usage\</title\>
->
-> \</head\>
->
-> \<body\>
->
-> \<div id=\"container\"\>
->
-> \<h1\>\<a href=\"//webrtc.github.io/samples/\" title=\"WebRTC samples homepage\"\>WebRTC example:\</a\> \<span\>MediaRecorder\</span\>\</h1\>
->
-> \<p\>For more info, see the \<a href=\"https://w3c.github.io/mediacapture-record/MediaRecorder.html\" title=\"W3C MediaStream Recording API - Editor\'s Draft\"\>MediaStream Recording API Editor\'s Draft\</a\>.\</p\>
->
-> \<video id=\"gum\" autoplay muted\>\</video\>
->
-> \<video id=\"recorded\" loop controls\>\</video\>
->
-> \<div\>
->
-> \<button id=\"record\" disabled\>Start Recording\</button\>
->
-> \<button id=\"play\" disabled\>Play\</button\>
->
-> \<button id=\"download\" disabled\>Download\</button\>
->
-> \</div\>
->
-> \<a href=\"https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record\" title=\"View source for this page on GitHub\" id=\"viewSource\"\>View source on GitHub\</a\>
->
-> \</div\>
->
-> \</body\>
->
-> \</html\>
+> <!DOCTYPE html>
+> <html>
+> <head>
+> <meta charset="utf-8">
+> <meta name="viewport" content="width=device-width">
+> <title>MediaRecorder API usage</title>
+> </head>
+> <body>
+> <div id="container">
+> <h1><a href="//webrtc.github.io/samples/" title="WebRTC samples homepage">WebRTC example:</a> <span>MediaRecorder</span></h1>
+> <p>For more info, see the <a href="https://w3c.github.io/mediacapture-record/MediaRecorder.html" title="W3C MediaStream Recording API - Editor's Draft">MediaStream Recording API Editor's Draft</a>.</p>
+> <video id="gum" autoplay muted></video>
+> <video id="recorded" loop controls></video>
+> <div>
+> <button id="record" disabled>Start Recording</button>
+> <button id="play" disabled>Play</button>
+> <button id="download" disabled>Download</button>
+> </div>
+> <a href="https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+> </div>
+> </body>
+> </html>
 ```
+
 Click \"start recording\", then press the play button on the video element on the right of the app. You can also click the \"download\" button to download a .webm file, playable offline with a media player such as [VLC](https://www.videolan.org/) or online in a Web page with the \<video\> element.
 
-### Five steps are needed to use the mediaRecorder object
+<h4>Five steps are needed to use the mediaRecorder object</h4>
 
-#### 1 - Create a mediaRecorder from a stream
+<h4>1 - Create a mediaRecorder from a stream</h4>
 
 Source code extract:
 
@@ -6948,9 +6869,9 @@ Source code extract:
 
 \... where stream is typically the object returned by the call to getUserMedia (see previous examples).
 
-#### 2 - Add a \"data handler\" and call the start() method of the mediaRecorder object
+<h4>2 - Add a \"data handler\" and call the start() method of the mediaRecorder object</h4>
 
-**Source code extract:**
+<b>Source code extract:</b>
 ```
 1.  var recordedChunks = \[\]; // will hold the recorded stream
 2.  mediaRecorder.ondataavailable = handleDataAvailable;
@@ -6964,7 +6885,7 @@ Source code extract:
 10. }
 ```
    
-**Explanations:**
+<b>Explanations:</b>
 
 -   *Line 1*: we declare an array of bytes that will hold the recorded stream.
 
@@ -6972,61 +6893,50 @@ Source code extract:
 
 -   *Lines 5-10*: this function collects the chunk of data that corresponds to a few seconds of video, and stores it in the recordedChunks byte array.
 
-#### 3 - When you\'ve finished recording, tell the mediaRecorder to stop
+<h4>3 - When you\'ve finished recording, tell the mediaRecorder to stop</h4>
 
 When you\'re done, you need to call the stop() method of the mediaRecorder object. This will end the periodic execution of the handleDataAvailable method, and stop the data capture.
 
 1.  mediaRecorder.stop();
 
-#### 4 - Create a BLOB (Binary Large Object) with the collected data, and use it to set the src attribute of an HTML5 video player
+<h4>4 - Create a BLOB (Binary Large Object) with the collected data, and use it to set the src attribute of an HTML5 video player</h4>
 
 This piece of code creates a blob with the recordedChunks array. Use the URL.createObjectURL(recordedChunks) standard method to create another object that can be used as a value to set the src attribute of an HTML5 video element.
 
 Like that, the recorded stream can be played using a standard HTML5 \<video\> element.
 
+```
 1.  function play() {
-
 2.     var superBuffer = new Blob(recordedChunks);
-
 3.     videoElement.src =
-
 4.           window.URL.createObjectURL(superBuffer);
-
 5.  }
+```
 
-#### 5 - Download the captured stream
+<h4>5 - Download the captured stream</h4>
 
 A trick consists in creating, on the fly, an invisible link with a download attribute (see Module 1) and a href attribute  that points to the blob object containing the recorded stream encoded using a given codec, then generate programmatically a click event on the link. This will force the browser to download a file of type video/webm to the hard disk.
 
+```
 1.  function download() {
-
 2.  var blob = new Blob(recordedChunks, {
-
 3.  type: \'video/webm\'
-
 4.  });
-
 5.  var url = URL.createObjectURL(blob);
-
 6.  var a = document.createElement(\'a\');
-
 7.  document.body.appendChild(a);
-
 8.  a.style = \'display: none\';
-
 9.  a.href = url;
-
 10. a.download = \'test.webm\';
-
 11. a.click();
-
 12. window.URL.revokeObjectURL(url);
-
 13. }
+```
 
-### 3.1.1 HTML5 Graphics
+<h3>3.1.1 HTML5 Graphics</h3>
 
-### 3.2.1 About JavaScript and HTML5
+<h3>3.2.1 About JavaScript and HTML5</h3>
+
 
 ![JavaScript logo](./images/image115.png){width="1.0in" height="1.0in"}
 
@@ -7036,15 +6946,15 @@ So yes, during this course, in particular in Modules 3 and 4, you will have to d
 
 Here we provide a basic introduction to JavaScript. If you want to learn more, many resources are available on the Web; this document is simply here to give you a head start. Remember that one great thing about these MOOCs courses is that everybody can help each other. Some students are very good in JavaScript and are usually very happy to help others when they encounter difficulties.
 
-**You will learn a lot by looking at examples, tweaking them, cloning and modifying them, etc.** Many previous students who were real JavaScript beginners managed to do [all] the assignments (drawing and animating a monster with keyboard/mouse interaction)! And they did this by just studying the provided examples.
+<b>You will learn a lot by looking at examples, tweaking them, cloning and modifying them, etc.</b> Many previous students who were real JavaScript beginners managed to do [all] the assignments (drawing and animating a monster with keyboard/mouse interaction)! And they did this by just studying the provided examples.
 
-### External resources
+<h4>External resources</h4>
 
 -   The[ JavaScript Introduction](https://www.edx.org/course/javascript-introduction) course on W3Cx!
 
 -   Mozilla Developper Network [has a JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
-### What do you need? How to debug? How to catch errors?
+<h4>What do you need? How to debug? How to catch errors?</h4>
 
 We will not look at the JavaScript syntax here, but more at \"JavaScript in the browser\", how it works, how to start writing code, etc.
 
@@ -9520,7 +9430,9 @@ Source code:
 -   drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh): for drawing sub-images, (sx, sy, sw, sh) define the source rectangle, while dx, dy, dw, sh define the target rectangle. If these rectangles don\'t have the same size, the source sub-image is resized.
 
 See picture below :
-
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 133. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image133.png?raw=true"
    alt="Drawing Images with Subimages"
@@ -12117,7 +12029,7 @@ Source code:
 We propose a useful function for drawing curved arrows. See this example:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------- 209.  (xxx) ------------>
+<!----------- 160.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image160.png?raw=true"
@@ -12425,7 +12337,9 @@ Extract from source code:
 In this example we use the closePath() method to draw a line between the last path point and the first path point (*line 11*), so that the drawing looks like a pair of goggles.
 
 Note how the different parts are linked together and make a \"path\":
-
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 165. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image165.png?raw=true"
    alt="Path composition explained"
@@ -21968,8 +21882,6 @@ This data URL in a browser address bar should look like this:
 &nbsp;
 <br/>
 
-![data url in adress bar shows a red circle](./images/image317.jpeg){width="6.5in" height="0.5097222222222222in"}
-
 If we set the src attribute of an image element \<img src=\"data:image/png\....\"\> with the data URL of the above screenshot, it will work exactly as if you used a URL that started with https://
 
 In your browser, you will see a small red circle rendered by this source code:
@@ -21983,8 +21895,15 @@ In your browser, you will see a small red circle rendered by this source code:
 ```
 
 And here is the result:
-
-![](./images/image318.png){width="0.5208333333333334in" height="0.5208333333333334in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------- 318.  (xxx) ---------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image318.png?raw=true"
+   alt="image 318"
+   width="15%" />
+&nbsp;
+<br/>
 
 This dataURL format enables file content to be stored in a base64 format (as a string), and adds the MIME type specification of the content. The dataURL can therefore store a file as a URL readable with modern browsers. It is becoming more commonly used on the Web, especially for mobile applications, as inlining images reduces the number of HTTP requests and makes the Web page load faster.
 
@@ -21998,11 +21917,19 @@ Notice that you can encode any type of file as dataURL, but this format is most
 
 Example of HTML5 logo embedded in a document without any real image, just a dataURL and CSS:
 
-![Screenshot of JsBin example that shows the HTML5 logo inserted before a div using CSS](./images/image320.jpeg){width="5.0in" height="4.557692475940508in"}
+<!------------------------------------------------------------------------------------------------>
+<!- 320. screenshot of jsbin examle shows the html5 logo insterted before a div using css (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image317.jpeg?raw=true"
+   alt="Data url in address bar shows a red circle"
+   width="65%" />
+&nbsp;
+<br/>
 
-##### Examples
+<h4>Examples</h4>
 
-##### Example #1: read images as data URL and display previews in the page
+<h4>Example #1: read images as data URL and display previews in the page</h4>
 
 This first example is useful for forms that allow the user to select one or more pictures. Before sending the form, you might want to get a preview of the pictures in the HTML page. The reader.readAsDataUrl method is used for that.
 
@@ -22420,9 +22347,9 @@ display: inline-block;
 </html>
 ```
 
-##### Source code extract:
+<h4>Source code extract:</h4>
 
-##### HTML part:
+<h4>HTML part:>/h4>
 
 ```
 <html>
@@ -22443,7 +22370,7 @@ display: inline-block;
 
 -   *Line 10* is the \<div\> container that will be used to display the interactive map
 
-##### JavaScript part:
+<h4>JavaScript part:</h4>
 
 ```css
 function getLocation(e) {
