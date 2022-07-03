@@ -93,7 +93,7 @@
 
 <h2 id-"cha-1">About W3C and the Web</h2>
 
-<h2> Course information</h2>
+<h2>Course information</h2>
 
 <h3>Welcome to "HTML5 Coding Essentials and Best Practices"</h3>
 <ul>
@@ -109,12 +109,12 @@ The <b>W3C FEWD</b> program is composed of 5 courses:
 <ol type="1">
 <li>CSS Basics</li>
 <li>5.0x HTML5 and CSS Fundamentals</li>
-<li>This course: <b>5.1x HTML5 Coding Essentials and Best Practices</b></li>
+<li>This course: <b><i>5.1x HTML5 Coding Essentials and Best Practices</i></b></li>
 <li>5.2x HTML5 Apps and Games</li>
 <li>JavaScript Introduction</li>
 </ol>
 
-This course is a natural follow up of the <a href="https://www.edx.org/course/css-basics">CSS Basics</a> and <a href="https://www.edx.org/course/html5-and-css-fundamentals">HTML5 & CSS Fundamentals</a> courses.
+This course is a natural follow up to the <a href="https://www.edx.org/course/css-basics">CSS Basics</a> and <a href="https://www.edx.org/course/html5-and-css-fundamentals">HTML5 & CSS Fundamentals</a> courses.
 
 As such, required prerequisites are:
 <ul>
