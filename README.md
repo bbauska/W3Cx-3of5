@@ -258,9 +258,10 @@ To help developers make these decisions consciously rather than accidentally, [
 
 <h3>External resources:</h3>
 
--   [MDN browser compatibility data: Taking the guesswork out of web compatibility](https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/)
-
--   [Caniuse and MDN compatibility data collaboration](https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/)
+<ul>
+<li<a href="https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/" target="_blank">MDN browser compatibility data: Taking the guesswork out of web compatibility</a>.</li><br/>
+<li><a href="https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/" target="_blank">Caniuse and MDN compatibility data collaboration</a>.</li><br/>
+</ul>
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -268,13 +269,13 @@ To help developers make these decisions consciously rather than accidentally, [
 
 <h3>W3C Validators: </h3>
 
-For over 15 years, the W3C has been developing and hosting <a href="https://w3c.github.io/developers/>free and open source</a> used every day by millions of Web developers and Web designers. 
+For over 15 years, the W3C has been developing and hosting <a href="https://w3c.github.io/developers/" target="_blank">free and open source tools</a> used every day by millions of Web developers and Web designers. 
 
-All the tools listed below are Web-based, and are available as downloadable sources or as free services on the <a href="https://w3c.github.io/developers/tools/)site">W3C Developers tools</a>.
+All the tools listed below are Web-based, and are available as downloadable sources or as free services on the <a href="https://w3c.github.io/developers/tools/">W3C Developers tools</a> site.
 
 <h3>W3C Validator</h3>
 
-The <a href="https://validator.w3.org/">W3C validator</a> checks the <a href="https://validator.w3.org/docs/help.html#validation_basics">markup validity</a> of various Web document formats, such as HTML. Note that you are automatically directed to the <a href="https://validator.w3.org/nu/">Nu Html Checker</a> when validating an HTML5 document.
+The <a href="https://validator.w3.org/" target="__blank">W3C validator</a> checks the <a href="https://validator.w3.org/docs/help.html#validation_basics">markup validity</a> of various Web document formats, such as HTML. Note that you are automatically directed to the <a href="https://validator.w3.org/nu/">Nu Html Checker</a> when validating an HTML5 document.
 
 <h3>CSS Validator</h3>
 
@@ -291,19 +292,19 @@ The <a href="https://jigsaw.w3.org/css-validator/">CSS validator</a> checks Ca
 
 <h3>Unicorn</h3>
 
-[Unicorn](https://validator.w3.org/unicorn/) is W3C\'s unified validator, which helps people improve the quality of their Web pages by performing a variety of checks. Unicorn gathers the results of the popular HTML and CSS validators, as well as other useful services, such as Internationalization, RSS/Atom feeds and http headers.
+<a href="https://validator.w3.org/unicorn/">Unicorn</a> is W3C\'s unified validator, which helps people improve the quality of their Web pages by performing a variety of checks. Unicorn gathers the results of the popular HTML and CSS validators, as well as other useful services, such as Internationalization, RSS/Atom feeds and http headers.
 
 <h3 id="cha-3">Internationalization Checker</h3>
 
-The [W3C Internationalization Checker](https://validator.w3.org/i18n-checker/) provides information about various internationalization-related aspects of your page, including the HTTP headers that affect it. It will also report a number of issues and offer advice about how to resolve them.
+The <a href="https://validator.w3.org/i18n-checker/"> W3C Internationalization Checker</a> provides information about various internationalization-related aspects of your page, including the HTTP headers that affect it. It will also report a number of issues and offer advice about how to resolve them.
 
 <h3>Link Checker</h3>
 
-The [W3C Link Checker](https://validator.w3.org/checklink) looks for issues in links, anchors and referenced objects in a Web page, CSS style sheet, or recursively on a whole Web site. For best results, it is recommended to first ensure that the documents checked use valid [(X)HTML Markup](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/).
+The <a href="https://validator.w3.org/checklink"> W3C Link Checker</a> looks for issues in links, anchors and referenced objects in a Web page, CSS style sheet, or recursively on a whole Web site. For best results, it is recommended to first ensure that the documents checked use valid <a href="https://validator.w3.org/">(X)HTML Markup</a> and <a href="https://jigsaw.w3.org/css-validator/">CSS</a>.
 
 <h3>W3C Cheatsheet</h3>
 
-The [W3C cheatsheet](https://www.w3.org/2009/cheatsheet/) provides quick access to useful information from a variety of specifications published by W3C. It aims at giving in a very compact and mobile-friendly format a compilation of useful knowledge extracted from W3C specifications, completed by summaries of guidelines developed at W3C, in particular Web accessibility guidelines, the Mobile Web Best Practices, and a number of internationalization tips.
+The <a href="https://www.w3.org/2009/cheatsheet/">W3C cheatsheet</a> provides quick access to useful information from a variety of specifications published by W3C. It aims at giving in a very compact and mobile-friendly format a compilation of useful knowledge extracted from W3C specifications, completed by summaries of guidelines developed at W3C, in particular Web accessibility guidelines, the Mobile Web Best Practices, and a number of internationalization tips.
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 07. w3c cheat sheet snapshot image (07) ---------------------------->
@@ -311,7 +312,7 @@ The [W3C cheatsheet](https://www.w3.org/2009/cheatsheet/) provides quick acces
 <p align="center">
 <img src="/images/image007.png?raw=true"
    alt="W3C Cheat Sheet snapshot image"
-   width="65%" />
+   width="75%" />
 </p>
 Its main feature is a lookup search box, where one can start typing a keyword and get a list of matching properties/elements/attributes/functions in the above-mentioned specifications, and further details on those when selecting the one of interest.
 
@@ -325,7 +326,7 @@ Its main feature is a lookup search box, where one can start typing a keyword an
 
 Most of the technologies you use when developing Web applications and Web sites are designed and standardized in W3C in a completely open and transparent process.
 
-In fact, all W3C specifications are developed in public [GitHub repositories](https://github.com/w3c/), so if you are familiar with GitHub, you already know how to contribute to W3C specifications! This is all about raising issues (with feedback and suggestions) and/or bringing pull requests to fix identified issues.
+In fact, all W3C specifications are developed in public <a href="https://github.com/w3c/">GitHub repositories</a>, so if you are familiar with GitHub, you already know how to contribute to W3C specifications! This is all about raising issues (with feedback and suggestions) and/or bringing pull requests to fix identified issues.
 
 <h3>Contribute</h3>
 
@@ -339,6 +340,8 @@ Contributing to this standardization process might be a bit scary or hard to app
    alt="Github (the octocat) logo"
    width="15%" />
 </p>
+
+If you\'re looking to an easy way to dive into this standardization processes, check out which [issues in the W3C GitHub repositories have been marked as \"good first issue\"](https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues) and see if you find anything where you think you would be ready to help.
 
 If you\'re looking to an easy way to dive into this standardization processes, check out which [issues in the W3C GitHub repositories have been marked as \"good first issue\"](https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues) and see if you find anything where you think you would be ready to help.
 
