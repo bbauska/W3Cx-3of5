@@ -343,8 +343,6 @@ Contributing to this standardization process might be a bit scary or hard to app
 
 If you\'re looking to an easy way to dive into this standardization processes, check out which [issues in the W3C GitHub repositories have been marked as \"good first issue\"](https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues) and see if you find anything where you think you would be ready to help.
 
-If you\'re looking to an easy way to dive into this standardization processes, check out which [issues in the W3C GitHub repositories have been marked as \"good first issue\"](https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues) and see if you find anything where you think you would be ready to help.
-
 <h3>Shape the future</h3>
 
 <!------------------------------------------------------------------------------------------------>
@@ -392,19 +390,15 @@ In addition to these four Host locations that employ W3C staff, there are [W3C 
 
 As of June 2020, W3C:
 
--   Is a [member](https://www.w3.org/Consortium/Member/List)-driven organization composed of nearly 430 companies, universities, start-ups, etc. from all over the world.
-
--   Holds 44 [technical groups](https://www.w3.org/groups/), including Working and Interest Groups where technical specifications are discussed and developed.
-
--   Published over 7,181 [published technical reports](https://www.w3.org/TR/), including 430 Web standards (or W3C Recommendations) - since January 1st,1995.
-
--   Runs a [translation program](https://www.w3.org/Consortium/Translation/) to foster the translation of its specifications: see the [translation matrix](https://www.w3.org/Consortium/Translation/matrix.html) currently listing 304 available translations of W3C recommendations.
-
--   Hosts 337 [Community and Business Groups](https://www.w3.org/community/groups/), where developers, designers, and anyone passionate about the Web have a place to hold discussions and publish ideas.
-
--   Gathers over12,912active participants constituting the W3C community.
-
--   Has a [technical staff](https://www.w3.org/People/) composed of 64 people, spread on all five continents.
+<ul>
+<li>Is a <a href="https://www.w3.org/Consortium/Member/List)-driven">member</a>-driven organization composed of nearly 430 companies, universities, start-ups, etc. from all over the world.</li><br/>
+<li>Holds 44 <a href="https://www.w3.org/groups/">technical groups</a>, including Working and Interest Groups where technical specifications are discussed and developed.</li><br/>
+<li>Published over 7,181 <a href="https://www.w3.org/TR/">published technical reports</a>, including 430 Web standards (or W3C Recommendations) - since January 1st,1995.</li><br/>
+<li>Runs a <a href="https://www.w3.org/Consortium/Translation/">translation program</a> to foster the translation of its specifications: see the [translation matrix](https://www.w3.org/Consortium/Translation/matrix.html) currently listing 304 available translations of W3C recommendations.</li><br/>
+<li>Hosts 337 <a href="https://www.w3.org/community/groups/">Community and Business Groups</a>, where developers, designers, and anyone passionate about the Web have a place to hold discussions and publish ideas.</li><br/>
+<li>Gathers over 12,912 active participants constituting the W3C community.</li><br/>
+<li>Has a <a href="https://www.w3.org/People/">technical staff</a> composed of 64 people, spread on all five continents.</li><br/>
+</ul>
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
