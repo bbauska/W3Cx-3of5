@@ -268,15 +268,17 @@ To help developers make these decisions consciously rather than accidentally, [
 
 <h3>W3C Validators: </h3>
 
-For over 15 years, the W3C has been developing and hosting [**[free]** and **[open source]** tools](https://w3c.github.io/developers/) used every day by **millions of Web developers and Web designers**. All the tools listed below are Web-based, and are available as downloadable sources or as free services on the [W3C Developers tools ](https://w3c.github.io/developers/tools/)site.
+For over 15 years, the W3C has been developing and hosting <a href="https://w3c.github.io/developers/>free and open source</a> used every day by millions of Web developers and Web designers. 
+
+All the tools listed below are Web-based, and are available as downloadable sources or as free services on the <a href="https://w3c.github.io/developers/tools/)site">W3C Developers tools</a>.
 
 <h3>W3C Validator</h3>
 
-The [W3C validator](https://validator.w3.org/) checks the [markup validity](https://validator.w3.org/docs/help.html#validation_basics) of various Web document formats, such as HTML. Note that you are automatically directed to the [Nu Html Checker](https://validator.w3.org/nu/) when validating an HTML5 document.
+The <a href="https://validator.w3.org/">W3C validator</a> checks the <a href="https://validator.w3.org/docs/help.html#validation_basics">markup validity</a> of various Web document formats, such as HTML. Note that you are automatically directed to the <a href="https://validator.w3.org/nu/">Nu Html Checker</a> when validating an HTML5 document.
 
 <h3>CSS Validator</h3>
 
-The [CSS validator](https://jigsaw.w3.org/css-validator/) checks Cascading Style Sheets (CSS) and (X)HTML documents that use CSS stylesheets.
+The <a href="https://jigsaw.w3.org/css-validator/">CSS validator</a> checks Cascading Style Sheets (CSS) and (X)HTML documents that use CSS stylesheets.
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 06. laptop showing unicorn validator (06) --------------------------->
@@ -411,7 +413,7 @@ People often use the words \"Internet\" and \"Web\" interchangeably, but this us
 
 The Web is an application of the Internet. The Web is the most popular way of accessing the Internet, but other applications of the Internet are [e-mail ](https://en.wikipedia.org/wiki/Email)and [ftp](https://en.wikipedia.org/wiki/File_Transfer_Protocol) for example. One analogy equates the Internet to a road network where the Web is a car, the email is a bicycle, etc.  Read [this article](https://www.lifewire.com/difference-between-the-internet-and-the-web-2483335) for more details about the difference between Internet and the Web.
 
-**Internet**
+<b>Internet</b>
 
 -   A global network of networks and computers.
 
@@ -421,7 +423,7 @@ The Web is an application of the Internet. The Web is the most popular way of ac
 
 -   Can access through a variety of ways.
 
-**Web**
+<b>Web</b>
 
 -   A collection of information accessed through the internet.
 
@@ -955,8 +957,14 @@ We used a float:right CSS rule to put the tag cloud on the right\... In the fo
 <br/>
 
 <h4>Add a \<footer\> at the end of the blog</h4>
-
-![image of the blog footer](./images/image021.jpeg){width="2.1875in" height="0.7916666666666666in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 21. image of the blog footer (xx) --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image021.jpeg?raw=true"
+   alt="Image of the Blog Footer"
+   width="25%" />
+</p>
 
 Finally, we added a \<footer\> element (*lines 12-14* below) after the tag cloud definition, to display a page footer:
 
@@ -21850,9 +21858,9 @@ Source code extract:
 > }, false);
 ```
 
-**Explanations:**
+<b>Explanations:</b>
 
--   *Line 2: *we get a pointer to the file selector, the variable fileInput.
+-   <i>Line 2:</i> we get a pointer to the file selector, the variable fileInput.
 
 -   *Line 4: *we define a change listener. In this example, we use an anonymous function directly included in the listener definition (the listener is the function(e) {\...}).
 
@@ -22809,4 +22817,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-01-2022 Thu 8:47am</i></b></h3>
+<h3><b><i>07-02-2022 Thu 8:11pm</i></b></h3>
