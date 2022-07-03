@@ -259,7 +259,7 @@ To help developers make these decisions consciously rather than accidentally, [
 <h3>External resources:</h3>
 
 <ul>
-<li<a href="https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/" target="_blank">MDN browser compatibility data: Taking the guesswork out of web compatibility</a>.</li><br/>
+<li><a href="https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/" target="_blank">MDN browser compatibility data: Taking the guesswork out of web compatibility</a>.</li><br/>
 <li><a href="https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/" target="_blank">Caniuse and MDN compatibility data collaboration</a>.</li><br/>
 </ul>
 
@@ -269,9 +269,9 @@ To help developers make these decisions consciously rather than accidentally, [
 
 <h3>W3C Validators: </h3>
 
-For over 15 years, the W3C has been developing and hosting <a href="https://w3c.github.io/developers/" target="_blank">free and open source tools</a> used every day by millions of Web developers and Web designers. 
+For over 15 years, the W3C has been developing and hosting <a href="https://w3c.github.io/developers/" target="_blank">free and open source tools</a> used every day by millions of Web developers and Web designers.
 
-All the tools listed below are Web-based, and are available as downloadable sources or as free services on the <a href="https://w3c.github.io/developers/tools/">W3C Developers tools</a> site.
+All the tools listed below are Web-based, and are available as downloadable sources or as free services on the <a href="https://w3c.github.io/developers/tools/" target="_blank">W3C Developers tools</a> site.
 
 <h3>W3C Validator</h3>
 
@@ -279,7 +279,7 @@ The <a href="https://validator.w3.org/" target="__blank">W3C validator</a> che
 
 <h3>CSS Validator</h3>
 
-The <a href="https://jigsaw.w3.org/css-validator/">CSS validator</a> checks Cascading Style Sheets (CSS) and (X)HTML documents that use CSS stylesheets.
+The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a> checks Cascading Style Sheets (CSS) and (X)HTML documents that use CSS stylesheets.
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 06. laptop showing unicorn validator (06) --------------------------->
@@ -292,19 +292,19 @@ The <a href="https://jigsaw.w3.org/css-validator/">CSS validator</a> checks Ca
 
 <h3>Unicorn</h3>
 
-<a href="https://validator.w3.org/unicorn/">Unicorn</a> is W3C\'s unified validator, which helps people improve the quality of their Web pages by performing a variety of checks. Unicorn gathers the results of the popular HTML and CSS validators, as well as other useful services, such as Internationalization, RSS/Atom feeds and http headers.
+<a href="https://validator.w3.org/unicorn/" target="_blank">Unicorn</a> is W3C\'s unified validator, which helps people improve the quality of their Web pages by performing a variety of checks. Unicorn gathers the results of the popular HTML and CSS validators, as well as other useful services, such as Internationalization, RSS/Atom feeds and http headers.
 
 <h3 id="cha-3">Internationalization Checker</h3>
 
-The <a href="https://validator.w3.org/i18n-checker/"> W3C Internationalization Checker</a> provides information about various internationalization-related aspects of your page, including the HTTP headers that affect it. It will also report a number of issues and offer advice about how to resolve them.
+The <a href="https://validator.w3.org/i18n-checker/" target="_blank">W3C Internationalization Checker</a> provides information about various internationalization-related aspects of your page, including the HTTP headers that affect it. It will also report a number of issues and offer advice about how to resolve them.
 
 <h3>Link Checker</h3>
 
-The <a href="https://validator.w3.org/checklink"> W3C Link Checker</a> looks for issues in links, anchors and referenced objects in a Web page, CSS style sheet, or recursively on a whole Web site. For best results, it is recommended to first ensure that the documents checked use valid <a href="https://validator.w3.org/">(X)HTML Markup</a> and <a href="https://jigsaw.w3.org/css-validator/">CSS</a>.
+The <a href="https://validator.w3.org/checklink" target="_blank">W3C Link Checker</a> looks for issues in links, anchors and referenced objects in a Web page, CSS style sheet, or recursively on a whole Web site. For best results, it is recommended to first ensure that the documents checked use valid <a href="https://validator.w3.org/" target="_blank">(X)HTML Markup</a> and <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS</a>.
 
 <h3>W3C Cheatsheet</h3>
 
-The <a href="https://www.w3.org/2009/cheatsheet/">W3C cheatsheet</a> provides quick access to useful information from a variety of specifications published by W3C. It aims at giving in a very compact and mobile-friendly format a compilation of useful knowledge extracted from W3C specifications, completed by summaries of guidelines developed at W3C, in particular Web accessibility guidelines, the Mobile Web Best Practices, and a number of internationalization tips.
+The <a href="https://www.w3.org/2009/cheatsheet/" target="_blank">W3C cheatsheet</a> provides quick access to useful information from a variety of specifications published by W3C. It aims at giving in a very compact and mobile-friendly format a compilation of useful knowledge extracted from W3C specifications, completed by summaries of guidelines developed at W3C, in particular Web accessibility guidelines, the Mobile Web Best Practices, and a number of internationalization tips.
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 07. w3c cheat sheet snapshot image (07) ---------------------------->
@@ -312,11 +312,11 @@ The <a href="https://www.w3.org/2009/cheatsheet/">W3C cheatsheet</a> provides 
 <p align="center">
 <img src="/images/image007.png?raw=true"
    alt="W3C Cheat Sheet snapshot image"
-   width="75%" />
+   width="65%" />
 </p>
 Its main feature is a lookup search box, where one can start typing a keyword and get a list of matching properties/elements/attributes/functions in the above-mentioned specifications, and further details on those when selecting the one of interest.
 
-<h4>The W3C cheatsheet is only available as a <a href="https://dev.w3.org/2009/cheatsheet/doc/">pure Web application</a>.</h4>
+<h4>The W3C cheatsheet is only available as a <a href="https://dev.w3.org/2009/cheatsheet/doc/" target="_blank">pure Web application</a>.</h4>
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -326,7 +326,7 @@ Its main feature is a lookup search box, where one can start typing a keyword an
 
 Most of the technologies you use when developing Web applications and Web sites are designed and standardized in W3C in a completely open and transparent process.
 
-In fact, all W3C specifications are developed in public <a href="https://github.com/w3c/">GitHub repositories</a>, so if you are familiar with GitHub, you already know how to contribute to W3C specifications! This is all about raising issues (with feedback and suggestions) and/or bringing pull requests to fix identified issues.
+In fact, all W3C specifications are developed in public <a href="https://github.com/w3c/" target="_blank">GitHub repositories</a>, so if you are familiar with GitHub, you already know how to contribute to W3C specifications! This is all about raising issues (with feedback and suggestions) and/or bringing pull requests to fix identified issues.
 
 <h3>Contribute</h3>
 
@@ -394,7 +394,7 @@ As of June 2020, W3C:
 <li>Is a <a href="https://www.w3.org/Consortium/Member/List)-driven">member</a>-driven organization composed of nearly 430 companies, universities, start-ups, etc. from all over the world.</li><br/>
 <li>Holds 44 <a href="https://www.w3.org/groups/">technical groups</a>, including Working and Interest Groups where technical specifications are discussed and developed.</li><br/>
 <li>Published over 7,181 <a href="https://www.w3.org/TR/">published technical reports</a>, including 430 Web standards (or W3C Recommendations) - since January 1st,1995.</li><br/>
-<li>Runs a <a href="https://www.w3.org/Consortium/Translation/">translation program</a> to foster the translation of its specifications: see the [translation matrix](https://www.w3.org/Consortium/Translation/matrix.html) currently listing 304 available translations of W3C recommendations.</li><br/>
+<li>Runs a <a href="https://www.w3.org/Consortium/Translation/">translation program</a> to foster the translation of its specifications: see the <a href="https://www.w3.org/Consortium/Translation/matrix.html">translation matrix</a> currently listing 304 available translations of W3C recommendations.</li><br/>
 <li>Hosts 337 <a href="https://www.w3.org/community/groups/">Community and Business Groups</a>, where developers, designers, and anyone passionate about the Web have a place to hold discussions and publish ideas.</li><br/>
 <li>Gathers over 12,912 active participants constituting the W3C community.</li><br/>
 <li>Has a <a href="https://www.w3.org/People/">technical staff</a> composed of 64 people, spread on all five continents.</li><br/>
@@ -408,33 +408,35 @@ As of June 2020, W3C:
 
 People often use the words \"Internet\" and \"Web\" interchangeably, but this usage is technically incorrect.
 
-The Web is an application of the Internet. The Web is the most popular way of accessing the Internet, but other applications of the Internet are [e-mail ](https://en.wikipedia.org/wiki/Email)and [ftp](https://en.wikipedia.org/wiki/File_Transfer_Protocol) for example. One analogy equates the Internet to a road network where the Web is a car, the email is a bicycle, etc.  Read [this article](https://www.lifewire.com/difference-between-the-internet-and-the-web-2483335) for more details about the difference between Internet and the Web.
+The Web is an application of the Internet. 
 
-<b>Internet</b>
+The Web is the most popular way of accessing the Internet, but other applications of the Internet are <a href="https://en.wikipedia.org/wiki/Email">e-mail</a> and <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol">ftp</a> for example. 
 
--   A global network of networks and computers.
+One analogy equates the Internet to a road network where the Web is a car, the email is a bicycle, etc.  Read <a href="https://www.lifewire.com/difference-between-the-internet-and-the-web-2483335">this article</a> for more details about the difference between Internet and the Web.
 
--   The network infrastructure.
+<h4>Internet</h4>
 
--   Information travels via network protocols.
+<ul>
+<li>A global network of networks and computers.</li><br>
+<li>The network infrastructure.</li><br>
+<li>Information travels via network protocols.</li><br>
+<li>Can access through a variety of ways.</li><br>
+</ul>
 
--   Can access through a variety of ways.
+<h4>Web</h4>
 
-<b>Web</b>
+<ul>
+<li>A collection of information accessed through the internet.</li><br>
+<li>Information travels primarily through HTTP.</li><br>
+<li>Uses browsers to access documents and web pages.</li><br>
+<li>Navigation to other pages occurs through hyperlinks.</li><br>
+</ul>
 
--   A collection of information accessed through the internet.
+The internet is a global network of billions of servers, computers, and other <a href="https://www.lifewire.com/computer-hardware-2625895">hardware</a> devices. Each device can connect with any other device as long as both are connected to the internet using a valid <a href="https://www.lifewire.com/what-is-an-ip-address-2625920">IP address</a>. The internet makes the information sharing system known as the web possible.
 
--   Information travels primarily through HTTP.
+The web, which is short for <a href="https://www.lifewire.com/around-the-web-4781469">World Wide Web</a>, is one of the ways information is shared on the internet (others include <a href="https://www.lifewire.com/electronic-mail-overview-1164107">email</a>, File Transfer Protocol <a href="https://www.thoughtco.com/ftp-defined-2654479">(FTP)</a>, and <a href="https://www.lifewire.com/what-is-instant-messaging-2483319">instant messaging</a> services. The web is composed of billions of connected digital documents that are viewed in a web browser, such as Chrome, <a href="https://www.lifewire.com/what-is-safari-4173608">Safari</a>, Microsoft Edge, <a href="https://www.lifewire.com/the-history-of-firefox-446233">Firefox</a>, and others.
 
--   Uses browsers to access documents and web pages.
-
--   Navigation to other pages occurs through hyperlinks.
-
-The internet is a global network of billions of servers, computers, and other [hardware](https://www.lifewire.com/computer-hardware-2625895) devices. Each device can connect with any other device as long as both are connected to the internet using a valid [IP address](https://www.lifewire.com/what-is-an-ip-address-2625920). The internet makes the information sharing system known as the web possible.
-
-The web, which is short for [World Wide Web](https://www.lifewire.com/around-the-web-4781469), is one of the ways information is shared on the internet (others include [email](https://www.lifewire.com/electronic-mail-overview-1164107), File Transfer Protocol ([FTP](https://www.thoughtco.com/ftp-defined-2654479)), and [instant messaging](https://www.lifewire.com/what-is-instant-messaging-2483319) services). The web is composed of billions of connected digital documents that are viewed in a web browser, such as Chrome, [Safari](https://www.lifewire.com/what-is-safari-4173608), Microsoft Edge, [Firefox](https://www.lifewire.com/the-history-of-firefox-446233), and others.
-
-Think of the internet as a library. Think of the books, magazines, newspapers, DVDs, [audiobooks](https://www.lifewire.com/what-are-audiobooks-2438535), and other media it contains as websites.
+Think of the internet as a library. Think of the books, magazines, newspapers, DVDs, <a href="https://www.lifewire.com/what-are-audiobooks-2438535">audiobooks</a>, and other media it contains as websites.
 
 Both the internet and the web serve unique purposes but work hand in hand to provide information, entertainment, and other services to the public.
 
@@ -454,7 +456,7 @@ The credited inventor of the World Wide Web is Tim Berners-Lee.
 
 You have to access the internet to view the World Wide Web and the web pages or other content it contains. The web is the collective name for all the pages, sites, documents, and other media that are served to visitors.
 
-The web consists of digital documents, referred to as web pages, that are viewable through [web browser](https://www.lifewire.com/what-is-a-browser-446234) software on devices like smartphones, tablets, and computers. These pages contain many types of content, including static content like encyclopedia pages, but also dynamic content like [eBay](https://www.lifewire.com/a-primer-to-ebay-basics-2483229) sales, stocks, weather, news, and traffic reports.
+The web consists of digital documents, referred to as web pages, that are viewable through <a href="https://www.lifewire.com/what-is-a-browser-446234">web browser</a> software on devices like smartphones, tablets, and computers. These pages contain many types of content, including static content like encyclopedia pages, but also dynamic content like <a href="https://www.lifewire.com/a-primer-to-ebay-basics-2483229">eBay</a> sales, stocks, weather, news, and traffic reports.
 
 A collection of connected web pages that are publicly accessible and under a single domain name is referred to as a website.
 
