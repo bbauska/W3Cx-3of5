@@ -103,9 +103,9 @@
 <li>About W3C and the Web</li>
 </ul>
 
-W3C has designed a [**"Front-End Web Developer" (FEWD) Professional Certificate**](https://www.edx.org/professional-certificate/front-end-web-developer-9) where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript. 
+W3C has designed a <a href="https://www.edx.org/professional-certificate/front-end-web-developer-9">"Front-End Web Developer" (FEWD) Professional Certificate</a> where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript.
 
-The **W3C FEWD** program is composed of 5 courses:
+The <b>W3C FEWD</b> program is composed of 5 courses:
 <ol type="1">
 <li>CSS Basics</li>
 <li>5.0x HTML5 and CSS Fundamentals</li>
@@ -114,13 +114,13 @@ The **W3C FEWD** program is composed of 5 courses:
 <li>JavaScript Introduction</li>
 </ol>
 
-This course is a natural follow up of the [CSS Basics](https://www.edx.org/course/css-basics) and [HTML5 & CSS Fundamentals](https://www.edx.org/course/html5-and-css-fundamentals) courses. 
+This course is a natural follow up of the <a href="https://www.edx.org/course/css-basics">CSS Basics</a> and <a href="https://www.edx.org/course/html5-and-css-fundamentals">HTML5 & CSS Fundamentals</a> courses.
 
 As such, required prerequisites are:
 <ul>
 <li>Be comfortable putting together an HTML document,</li>
 <li>Have minimal familiarity with CSS,</li>
-<li>Basic knowledge of JavaScript and DOM APis is sufficient, and this course will include a recap of basics. You are also more than welcome to follow the [JavaScript Introduction](https://www.edx.org/course/javascript-introduction) course (introductory level).</li>
+<li>Basic knowledge of JavaScript and DOM APis is sufficient, and this course will include a recap of basics. You are also more than welcome to follow the <a href="https://www.edx.org/course/javascript-introduction" target="_blank">JavaScript Introduction</a> course (introductory level).</li>
 </ul>
 
 During this course, you will learn:
@@ -138,13 +138,13 @@ The HTML5 course team is thrilled to guide you in your learning experience. We a
 
 <h3>Online Code Editors:</h3>
 
-[JS Bin](https://jsbin.com)
+<a href="https://jsbin.com">JS Bin</a>
 
-[CodePen Tutorial](https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843)
+<a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843">CodePen Tutorial</a>
 
-[CodePen](https://codepen.io])
+<a href="https://codepen.io">CodePen</a>
 
-[CodePen CSS Tutorial](https://css-tricks.com/video-screencasts/112-using-codepen/)
+<a href="https://css-tricks.com/video-screencasts/112-using-codepen/">CodePen CSS Tutorial</a>
 
 <h3>Web Editors:</h3>
 
@@ -22939,4 +22939,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-02-2022 Thu 8:11pm</i></b></h3>
+<h3><b><i>07-03-2022 Thu 7:54am</i></b></h3>
