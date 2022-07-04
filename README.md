@@ -204,7 +204,9 @@ Tutorials can be found on the Web (such as[ this one](https://code.tutsplus.com
 &nbsp;
 <br/>
 
-   - [CodePen](https://codepen.io/)
+<ul>
+<li><a href="https://codepen.io/">CodePen</a></li><br/>
+</ul>
 
 CodePen is an HTML, CSS, and JavaScript code editor that previews/showcases your code bits in your browser.
 It helps with cross-device testing, real-time remote pair programming and teaching.
@@ -2420,169 +2422,97 @@ This element is subject to some constraints:
 
 And finally, here are some examples (from [the HTML5 specification](https://www.w3.org/TR/html5/grouping-content.html#the-main-element))  that mix the \<main\> element with the other sectioning elements already seen in the course:
 
+```
 1.  \<!\-- other content \--\>
-
 2.  
-
 3.  \<main\>
-
 4.  
-
 5.     \<h1\>Skateboards\</h1\>
-
 6.     \<p\>The skateboard helps kids to get around.\</p\>
-
 7.  
-
 8.     \<article\>
-
 9.        \<h2\>Longboards\</h2\>
-
 10.       \<p\>Longboards are a type of skateboard with a longer
-
 11. wheelbase and larger, softer wheels.\</p\>
-
 12.       \<p\>\... \</p\>
-
 13.       \<p\>\... \</p\>
-
 14.    \</article\>
-
 15. 
-
 16.    \<article\>
-
 17.       \<h2\>Electric Skateboards\</h2\>
-
 18.       \<p\>These no longer require the propelling of the skateboard by means of the feet; rather an electric motor propels the board, fed by an electric battery.\</p\>
-
 19.       \<p\>\... \</p\>
-
 20.       \<p\>\... \</p\>
-
 21.    \</article\>
-
 22. 
-
 23. \</main\>
-
 24.  
-
 25. \<!\-- other content \--\>
+```
 
 Here is another example (also from the specification). Here the \<main\> element contains a \<nav\> element consisting of links to subsections of the main content:
 
 1.  \<!DOCTYPE html\>
-
 2.     \<html lang=\"en\"\>
-
 3.        \<head\>
-
 4.           \<meta charset=\"utf-8\"/\>
-
 5.           \<title\>Graduation Ceremony Summer 2022\</title\>
-
 6.        \</head\>
-
 7.        \<body\>
-
 8.         \<header\>The Lawson Academy:
-
 9.           \<nav\>
-
 10.             \<h2\>Click these links to navigate\...\</h2\>
-
 11.             \<ul\>
-
 12.                \<li\>\<a href=\"courses.html\"\>Courses\</a\>\</li\>
-
 13.                \<li\>\<a href=\"fees.html\"\>Fees\</a\>\</li\>
-
 14.                \<li\>\<a\>Graduation\</a\>\</li\>
-
 15.             \</ul\>
-
 16.          \</nav\>
-
 17.       \</header\>
-
 18.       \<main\>
-
 19.          \<h1\>Graduation\</h1\>
-
 20.          \<nav\>
-
 21.             \<h2\>Please choose:\</h2\>
-
 22.             \<ul\>
-
 23.                \<li\>\<a href=\"#ceremony\"\>Ceremony\</a\>\</li\>
-
 24.                \<li\>\<a href=\"#graduates\"\>Graduates\</a\>\</li\>
-
 25.                \<li\>\<a href=\"#awards\"\>Awards\</a\>\</li\>
-
 26.             \</ul\>
-
 27.          \</nav\>
-
 28.          \<h2 id=\"ceremony\"\>Ceremony\</h2\>
-
 29.          \<p\>Opening Procession\</p\>
-
 30.          \<p\>Speech by Valedictorian\</p\>
-
 31.          \<p\>Speech by Class President\</p\>
-
 32.          \<p\>Presentation of Diplomas\</p\>
-
 33.          \<p\>Closing Speech by Headmaster\</p\>
-
 34.          \<h2 id=\"graduates\"\>Graduates\</h2\>
-
 35.          \<ul\>
-
 36.             \<li\>Eileen Williams\</li\>
-
 37.             \<li\>Andy Maseyk\</li\>
-
 38.             \<li\>Blanca Sainz Garcia\</li\>
-
 39.             \<li\>Clara Faulkner\</li\>
-
 40.             \<li\>Gez Lemon\</li\>
-
 41.             \<li\>Eloisa Faulkner\</li\>
-
 42.          \</ul\>
-
 43.          \<h2 id=\"awards\"\>Awards\</h2\>
-
 44.             \<ul\>
-
 45.                \<li\>Clara Faulkner\</li\>
-
 46.                \<li\>Eloisa Faulkner\</li\>
-
 47.                \<li\>Blanca Sainz Garcia\</li\>
-
 48.             \</ul\>
-
 49.          \</main\>
-
 50.       \<footer\>Copyright 2012 B.lawson\</footer\>
-
 51.    \</body\>
-
 52. \</html\>
+```
 
-### Best practice
+<h4>Best practice</h4>
 
 For accessibility matters, a best practice is to split your page content into \"regions\" defined by the five 5 elements (aside, footer, header, main and nav) learned this week. 
 
 We recommend this article written by Steve Faulkner: \"[Easy content organisation with HTML5](https://www.paciellogroup.com/blog/2015/09/easy-content-organisation-with-html5/)\" (24 September 2015). Steve explains in details how to organize an HTML document into \"regions\" based on the semantic markup elements we have seen so far during Module 1 of this course.
 
-### External resources:
+<h4>External resources:</h4>
 
 -   This [document](https://www.w3.org/TR/html5/grouping-content.html#the-main-element) has been written by the W3C HTML5 Working Group, which details the different use-cases for this element
 
@@ -2590,7 +2520,7 @@ We recommend this article written by Steve Faulkner: \"[Easy content organisatio
 
 -   On MDN\'s Web Docs: the [main element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main)
 
-### 1.3.9 The Blog Example, Applying Best Practices
+<h3 id="ch1-3-9">1.3.9 The Blog Example, Applying Best Practices</h3>
 
 Let\'s go back to our blog example and see what can be improved:
 
@@ -2613,57 +2543,41 @@ Let\'s go back to our blog example and see what can be improved:
 
 Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an \<article\> that is in a \<section\> (this corresponds to the third example given in the \"heading and sectioning elements\" part of the course):
 
+```
 1.  **\<section\>**
-
 2.     \<header\>
-
 3.       **\<h1\>Blog posts for April 2012\</h1\>**
-
 4.     \</header\>
-
 5.     **\<article\>**
-
 6.       \<header\>
-
 7.         **\<h1\>\<a href=\"\"\>Information about this example\</a\>\</h1\>**
-
 8.         This example is a modified version of \<a href=\"https://example.com/blog/index.html\"\>https://example.com/blog/index.html\</a\>
-
 9.       \</header\>
-
 10.      \...
-
 11.    \</article\>
-
 12. \</section\>
+```
 
 With this technique, parts of the document can be moved more easily, or integrated inside an RSS stream, without the need to renumber the headings.
 
 Beware that this technique will require you to use some CSS styling, and may confuse some screen readers that do not yet take into account this way of computing the heading hierarchy. A simple fix is to use an H1 right after the \<body\> and use only H2\...H6 inside \<section\>, \<article\>, \<nav\> and \<aside\>.
 
-### Let\'s fix the missing heading
+<h4>Let's fix the missing heading</h4>
 
 We need to add a heading in the \<nav\> element. This will both fix the outline of the document by removing the untitled entry, and will also make screen readers happy as they will better vocalize the structure of the page (it will say \"entering nav\" followed by the vocalization of the heading content).
 
+```
 1.  \<nav\>
-
 2.     **\<header\>**
-
 3.       **\<h1\>Navigation menu\</h1\>**
-
 4.     **\</header\>**
-
 5.     \<ul\>
-
 6.       \<li\>\<span\>Blog\</span\>\</li\>
-
 7.       \<li\>\<a href=\"\"\>About\</a\>\</li\>
-
 8.       \<li\>\<a href=\"\"\>Contact\</a\>\</li\>
-
 9.     \</ul\>
-
 10. \</nav\>
+```
 
 **Here is the fixed result:**
 
@@ -2671,13 +2585,11 @@ We need to add a heading in the \<nav\> element. This will both fix the outlin
 <!---------------- xx.  (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/imagexx.jpeg?raw=true"
-   alt=""
-   width="25%" />
+<img src="/images/image033.jpeg?raw=true"
+   alt="Good outline without the untitled nav"
+   width="55%" />
 &nbsp;
 <br/>
-
-![good outline without the untitled nav](./images/image033.jpeg){width="5.0in" height="3.3931627296587927in"}
 
 A common remark from Web designers is: \"we do not want a heading content displayed systematically after a \<nav\>, or an \<aside\> element\...\"
 
@@ -2693,37 +2605,28 @@ In the previous section, we saw how to embed a table of contents using some Jav
 
 Let\'s add this piece of code (we removed the JS details from this extract):
 
+```
 1.  \<aside\>
-
 2.     \<h1\>
-
 3.       \<a href=\"javascript:(function(){\...});\"
-
 4.          title=\"TableOfContents\"\>
-
 5.          Click here to display the table of contents!
-
 6.       \</a\>
-
 7.     \</h1\>
-
 8.  \</aside\>
+```
 
 We also added a \<main\> element to identify the main content of the page composed of the big section with all blog posts:
 
+```
 1.  \<main\>
-
 2.    \<section\>
-
 3.       \<header\>
-
 4.           \<h2\>Blog posts for April 2012\</h2\>
-
 5.       \</header\>
-
 6.       \...
-
 7.  \</main\>
+```
 
 ### Use H1 as top level headings only, use H2\...H6 in sectioning content
 
@@ -2735,17 +2638,14 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 
 **Extract from source code:**
 
+```
 1.  \<nav\>
-
 2.     \<header\>
-
 3.       **\<h2\>Navigation menu\</h2\>**
-
 4.     \</header\>
-
 5.     \...
-
 6.  \</nav\>
+``
 
 ### Finally, the fixed example
 
@@ -2774,6 +2674,7 @@ The 4 examples below are given \"as is\" to give you some hints. There are lots 
 
 This example uses the following HTML structure (notice that we use the \"HTML entity syntax\" for displaying \"\<\" or \"\>\". For example, &lt; displays a \"\<\" character).
 
+```
 1.  <header\>
 2.  <code\>&lt;header&gt;\</code\>
 3.  </header\>
@@ -2789,6 +2690,7 @@ This example uses the following HTML structure (notice that we use the \"HTML en
 13. <footer>
 14. <code>&lt;footer&gt;</code>
 15. </footer>
+```
 
 Here we use the CSS rule float:left for the \<section\> and the CSS rule float:right for the \<aside\>. When an element floats, it goes out of the normal flow of the HTML element. Then by default it floats to the edge of its parent; and its size depends on the elements it contains. So, in order to fill the whole horizontal space, we prefer here to \"force the width\" by setting the CSS width property with a percentage.  So we took width: 63% for the \<section\> on the left and width:30% for the \<aside\> on the right.
 
@@ -2878,43 +2780,37 @@ These elements have been introduced for displaying a foldable zone in an HTML do
 
 In the screenshot below, taken from the W3C specification page, the text next to the horizontal arrow is a \<summary\> element, and the text displayed when we click on the summary part, is the \<details\> element. This is a sort of \"accordion\" with foldable content.
 
+
 ![Example of summary details elements from the W3C specification](./images/image040.png){width="3.0in" height="5.791303587051619in"}
 
 The \<details\> element generates a simple widget to show/hide element contents, optionally by clicking on its child \<summary\> element.
 
 Here is an example of what can be done using these elements ) see the [online version on JSBin](https://jsbin.com/yociyel/1/edit?html,css,js,output):
 
+
 ![Example of folded summary details](./images/image041.jpeg){width="3.4791666666666665in" height="2.0729166666666665in"}
 
 And here is what is displayed after clicking on the small arrow-shaped icon to the left of the summary:
+
 
 ![Example of summary details unfolded](./images/image042.jpeg){width="3.34375in" height="1.5625in"}
 
 <b>Here is the code of this example:</b>
 
+```
 > \<!DOCTYPE html\>
->
 > \<html lang=\"en\"\> \...
->
 > \<body\>
->
 > \<details\>
->
 > \<summary\>
->
 > How to beat the boss\...spoiler alert !
->
 > \</summary\>
->
 > \<p\> Just aim to the red spots near his eyes\</p\>
->
 > \<p\>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.\</p\>
->
 > \</details\>
->
 > \</body\>
->
 > \</html\>
+```
 
 The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> element. By clicking on the icon at the left of the summary, the content of the \<details\> value is displayed/hidden.
 
@@ -2934,33 +2830,22 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> elem
 
 **Source code of this example, see the summary/details inside another one:**
 
+```
 > \<details\>
->
 > \<summary\>
->
 > How to beat the boss\...spoiler alert !
->
 > \</summary\>
->
 > \<p\> Just aim to the red spots near his eyes\</p\>
->
 > \<p\>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.\</p\>
->
 > \<details\>
->
 > \<summary\>
->
 > Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
->
 > \</summary\>
->
 > \<p\>Before finishing him, try to cut his trail, you will get a new weapon\</p\>
->
 > \<p\>Just try to stay behind him as long as you can, hitting his tail with your melee weapon, after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.\</p\>
->
 > \</details\>
->
 > \</details\>
+```
 
 ### CSS pseudo classes for styling summary icons
 
@@ -2974,25 +2859,23 @@ The color and background of the icon on the left are specified by the following 
 
 In this example: red arrow, white background.
 
+```
 1.  summary::-webkit-details-marker {
-
 2.  color:#FF0000;
-
 3.  background:#FFFFFF;
-
 4.  }
+```
 
 ![Styled summary details icon, unfolded state](./images/image047.jpeg){width="3.7708333333333335in" height="1.8125in"}
 
 Once opened, the selector details\[open\] can style the icon when \<details\> is unfolded. In this example: blue arrow, turquoise background. Here is the corresponding CSS rule:
 
+```
 1.  details\[open\] summary::-webkit-details-marker {
-
 2.  color:#0000FF;
-
 3.  background:#00FFFF;
-
 4.  }
+```
 
 It is also possible to change the icon itself using the CSS pseudo class :after
 
@@ -3006,37 +2889,28 @@ CSS rules used in this example:
 
 Use a \"+\" shaped icon, pink, bold, etc\... :
 
+```
 1.  summary:after {
-
 2.  content: \"+\";
-
 3.  color: #FF00FF;
-
 4.  float: left;
-
 5.  font-size: 1.5em;
-
 6.  font-weight: bold;
-
 7.  margin: -5px 5px 0 0;
-
 8.  padding: 0;
-
 9.  text-align: center;
-
 10. width: 20px;
-
 11. }
+```
 
 Use a \"-\" shaped icon, white, when details are displayed:
 
+```
 1.  details\[open\] summary:after {
-
 2.  content: \"-\";
-
 3.  color: #FFFFFF
-
 4.  }
+```
 
 ### Current browser support
 
@@ -4743,27 +4617,19 @@ This example listens to the ended event, and calls a callback function when th
    width="65%" />
 &nbsp;
 
-\<video src=\"video.ogv\" id=\"myVideo\"\>
-
+```
+<video src="video.ogv" id="myVideo"\>
     video not supported
-
-\</video\>
-
-\<script type=\'text/javascript\'\>
-
-  var vid = document.querySelector(\'#myVideo\');
-
-  vid.addEventListener(\'ended\', playNextVideo, false);
-
+</video>
+<script type=\'text/javascript'>
+  var vid = document.querySelector('#myVideo');
+  vid.addEventListener('ended', playNextVideo, false);
   function playNextVideo(e) {
-
      // Whatever you want to do after the event, change the src attribute
-
      // of the video element, for example, in order to play another video
-
   }
-
-\</script\>
+</script\>
+```
 
 ### Example #3: how to manage playlists - sequential movies
 
@@ -4780,93 +4646,52 @@ Check the online example below: use the progress cursor to go near the end of th
    width="65%" />
 &nbsp;
 
-Source code:
+<h4>Source code:</h4>
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-  \<head\>
-
-    \<meta charset=\"utf-8\"/\>
-
-    \<title\>Sequential Movies\</title\>
-
-    \<script\>
-
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Sequential Movies</title>    <script>
       var myVideo;
-
       var currentVideo = 0;
-
-      var sources = \[
-
-        \"https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4\",
-
-        \"https://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4\"
-
-        \];
-
+      var sources = [
+        "https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4",
+        "https://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4"
+        ];
 // Set the src of the video to the next URL in the playlist
-
 // If at the end we start again from beginning (the modulo
-
 // source.length does that)
-
       function loadNextVideo() {
-
-        myVideo.src = sources\[currentVideo % sources.length\]
-
+        myVideo.src = sources\[currentVideo % sources.length]
         myVideo.load();
-
         currentVideo++;
-
       }
-
 // listener plays the video
-
     function loadAndplayNextVideo() {
-
-      console.log(\"playing \" + sources\[currentVideo % sources.length\])
-
+      console.log("playing " + sources\[currentVideo % sources.length])
       loadNextVideo();
-
       myVideo.play();
-
     }
-
 // Called when the page is loaded
-
     function init(){
-
 // get the video element using the DOM api
-
     myVideo = document.querySelector(\"#myVideo\");
-
 // Defines a callback function called each time a video ended
-
     myVideo.addEventListener(\'ended\', loadAndplayNextVideo, false);
-
 // Loads the first video when the page is loaded
-
     loadNextVideo();
-
     }
-
-  \</script\>
-
-\</head\>
-
-\<body onload=\"init()\"\>
-
-    \<video id=\"myVideo\"
-
-      controls\>
-
-    \</video\>
-
-\</body\>
-
-\</html\>
+  </script>
+</head>
+<body onload="init()">
+    <video id="myVideo"
+      controls>
+    </video>
+</body>
+</html>
+```
 
 Explanations:
 
@@ -4878,7 +4703,7 @@ Explanations:
 
 -   *Lines 17-21*: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources \[currentVideo % sources.length\], we set the src of the video element to sources\[0\], then to sources\[1\], and, as we increment the currentVideo index each time (line 19), if it becomes greater than 1, the modulo (the \"%\" symbol is the modulo in JavaScript) will make it \"loop\" between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.
 
-### 2.2.8 \[Advanced\] Extended Examples
+<h3 id="ch2-2-8">2.2.8 [Advanced\] Extended Examples</h3>
 
 In this section, we propose five extended examples that use more JavaScript and more complex CSS manipulation. They might be a little hard to understand if you are a JavaScript beginner, but don\'t be afraid to try and test them, look at the code, etc.
 
@@ -5108,7 +4933,7 @@ This is more an example than a tutorial. Maurice, a student who followed the pre
 
 Here is the online example. We recommend that you look at the source code:
 
-### 2.3.1 HTML5 Captioning
+<h3 id="ch2-3-1">2.3.1 HTML5 Captioning</h3>
 
 This section introduces the HTML5 \<track\> element, useful for adding closed captions, subtitles, descriptions, and metadata to your videos. It comes with a new JavaScript API.
 
@@ -5238,7 +5063,7 @@ Note the use of some new attributes in the \<track\> element:
 
 -   An article from 3playmedia: [How to create a WebVTT file](https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/)
 
-### 2.3.2 The WebVTT Format
+<h3 id="ch2-3">2.3.2 The WebVTT Format</h3>
 
 The \"[WebVTT: The Web Video Text Tracks Format](http://dev.w3.org/html5/webvtt/)\" defines files that contain text for captions and subtitles, and much more\... The WebVTT files are used with the src attribute of the \<track\> element, that can be used inside a \<video\>\...\</video\>.
 
@@ -14221,83 +14046,51 @@ ctx.shadowOffsetY = 15; // vertical offset
 
 HTML
 
-\<!DOCTYPE html\>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Simple shadows - Example #1</title>
+</head>
+<body onload = init();>
+<canvas id="myCanvas" width="400" height =800>
+Your browser does not support the canvas tag.</canvas>
+</body>
+</html>
+```
 
-\<html lang=\"en\"\>
+<h4>JavaScript source code:</h4>
 
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Simple shadows - Example #1\</title\>
-
-\</head\>
-
-\<body onload = init();\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height =800\>
-
-Your browser does not support the canvas tag.\</canvas\>
-
-\</body\>
-
-\</html\>
-
-JavaScript source code:
-
+```
 1.  var canvas, ctx;
-
 2.  
-
 3.  function init() {
-
 4.      canvas = document.getElementById(\'myCanvas\');
-
 5.      ctx = canvas.getContext(\'2d\');
-
 6.  
-
 7.      // call to a function that will set the 4 context properties for shadows
-
 8.      setShadow();
-
 9.      // all drawings that will occur will cast shadows
-
 10. 
-
 11.     // first green filled rectangle
-
 12.     ctx.fillStyle = \"#22FFDD\"; 
-
 13.     ctx.fillRect(20, 20, 200, 100);
-
 14. 
-
 15.     // second stroked rectangle
-
 16.     ctx.strokeStyle = \"purple\"; 
-
 17.     ctx.lineWidth=10;
-
 18.     ctx.strokeRect(20, 150, 200, 100);
-
 19. }
-
 20.  
-
 21. // We define the 4 properties in a dedicated function, for clarity
-
 22. function setShadow() {
-
 23.     ctx.shadowColor = \"Grey\";    // color
-
 24.     ctx.shadowBlur = 20;         // blur level
-
 25.     ctx.shadowOffsetX = 15;      // horizontal offset
-
 26.     ctx.shadowOffsetY = 15;      // vertical offset
-
 27. }
+```
 
 **Explanations:**
 
@@ -14311,187 +14104,106 @@ JavaScript source code:
 
 Let\'s take a [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO), the one that draws a filled circle with an outline. And, let\'s add a shadow to it using the following code:
 
-1.  \...
-
+```
+1.  ...
 2.  ctx.beginPath();
-
 3.  
-
 4.  // Add to the path a full circle (from 0 to 2PI)
-
 5.  ctx.arc(centerX, centerY, radius, 0, 2\*Math.PI, false);
-
 6.  
-
 7.  // With path drawing you can change the context
-
 8.  // properties until a call to stroke() or fill() is performed
-
 9.  ctx.fillStyle = \"lightBlue\";
-
 10. 
-
 11. **// add shadows before drawing the filled circle**
-
 12. **addShadows();**
-
 13. 
-
 14. // Draws the filled circle in light blue
-
 15. ctx.fill();
-
 16. 
-
 17. // Prepare for the outline
-
 18. ctx.lineWidth = 5;
-
 19. ctx.strokeStyle = \"black\";
-
 20. 
-
 21. // draws the path AGAIN (the circle), this
-
 22. // time in wireframe
-
 23. ctx.stroke();
-
 24. 
-
 25. // Notice we only once called context.arc()! And drew it twice
-
 26. // with different styles
-
 27. \...
-
 28.  
-
 29. function** addShadows()** {
-
 30.     ctx.shadowColor = \"Grey\"; // color
-
 31.     ctx.shadowBlur = 20;      // blur level
-
 32.     ctx.shadowOffsetX = 15;   // horizontal offset
-
 33.     ctx.shadowOffsetY = 15;   // vertical offset
-
 34. }
+```
 
 And here is the result:
 
+
 ![](./images/image184.png){width="6.5in" height="2.0701388888888888in"}
 
-HTML
+<h4>HTML</h4>
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Unwanted shadows - Example #2\</title\>
-
-\<style\>
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Unwanted shadows - Example #2</title>
+<style>
 body {
-
 margin: 0px;
-
 padding: 0px;
-
 }
-
 #myCanvas {
-
 border: 1px solid #9C9898;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var canvas, ctx;
-
 window.onload = function(){
-
-canvas = document.getElementById(\"myCanvas\");
-
-ctx = canvas.getContext(\"2d\");
-
+canvas = document.getElementById("myCanvas");
+ctx = canvas.getContext("2d");
 var centerX = canvas.width / 2;
-
 var centerY = canvas.height / 2;
-
 var radius = 70;
-
 ctx.beginPath();
-
 // Add to the path a full circle (from 0 to 2PI)
-
-ctx.arc(centerX, centerY, radius, 0, 2\*Math.PI, false);
-
+ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
 // With path drawing you can change the context
-
 // properties until a call to stroke() or fill() is performed
-
-ctx.fillStyle = \"lightBlue\";
-
+ctx.fillStyle = "lightBlue";
 // add shadows before drawing the filled circle
-
 addShadows();
-
 // Draws the filled circle in light blue
-
 ctx.fill();
-
 // Prepare for the outline
-
 ctx.lineWidth = 5;
-
 ctx.strokeStyle = \"black\";
-
 // draws AGAIN the path (the circle), this
-
 // time in wireframe
-
 ctx.stroke();
-
 // Notice we called context.arc() only once ! And drew it twice
-
 // with different styles
-
 };
-
 function addShadows() {
-
-ctx.shadowColor = \"Grey\"; // color
-
+ctx.shadowColor = "Grey"; // color
 ctx.shadowBlur = 20; // blur level
-
 ctx.shadowOffsetX = 15; // horizontal offset
-
 ctx.shadowOffsetY = 15; // vertical offset
-
 }
-
-\</script\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\" width=\"578\" height=\"200\"\>
-
-\</canvas\>
-
-\</body\>
-
-\</html\>
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="578" height="200">
+</canvas>
+</body>
+</html>
+```
 
 Ah, indeed, the call to ctx.fill() casts a shadow, but the call to ctx.stroke(), that paints the whole path again, casts a shadow too, and this time the outline produces an unwanted shadow\... How can we avoid this effect, while using the same technique for drawing the path?
 
@@ -14499,39 +14211,25 @@ The trick is to save the context before setting the shadow properties, then dr
 
 Correct version of the code:
 
-1.  \...
-
+```
+1.  ...
 2.  // save the context before setting shadows and drawing the filled circle
-
 3.   ctx.save();
-
 4.  
-
 5.  // With path drawing you can change the context
-
 6.  // properties until a call to stroke() or fill() is performed
-
-7.   ctx.fillStyle = \"lightBlue\";
-
+7.   ctx.fillStyle = "lightBlue";
 8.  
-
 9.  // add shadows before drawing the filled circle
-
 10.  addShadows();
-
 11. 
-
 12. // Draws the filled circle in light blue
-
 13.  ctx.fill();
-
 14. 
-
 15. // restore the context to its previous saved state
-
 16.  ctx.restore();
-
-17. \...
+17. ...
+```
 
 And here is the final result:
 
@@ -19676,49 +19374,31 @@ The possible values for this field are:
 
 Source code:
 
-1.  \<!DOCTYPE html\>
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.    <head>
+4.      <meta charset="utf-8">
+5.      <title\>Jsbin</title>
+6.    </head>
+7.    <body>
+8.      <form action="defaultAction.php" method="post"
+9.        enctype="application/x-www-form-urlencoded">
+10.       <label for="givenName">Given name:</label>
+11.       <input type="text" name="givenName" id="givenName"><br>
+12.       <label for="familyName">Family name:</label>
+13.       <input type="text" name="familyName" id="familyName"><br>
+14.       <input type="submit" value="Submit">
+15.       <input type="submit"
+16.         formenctype="multipart/form-data"
+17.         value="Submit as Multipart/form-data">
+18.     </form>
+19.     <p><b>Note:</b> The formenctype attribute is not supported by all browsers.</p>
+20.   </body>
+21. </html>
+```
 
-2.  \<html lang=\"en\"\>
-
-3.    \<head\>
-
-4.      \<meta charset=\"utf-8\"\>
-
-5.      \<title\>Jsbin\</title\>
-
-6.    \</head\>
-
-7.    \<body\>
-
-8.      \<form action=\"defaultAction.php\" method=\"post\"
-
-9.        enctype=\"application/x-www-form-urlencoded\"\>
-
-10.       \<label for=\"givenName\"\>Given name:\</label\>
-
-11.       \<input type=\"text\" name=\"givenName\" id=\"givenName\"\>\<br\>
-
-12.       \<label for=\"familyName\"\>Family name:\</label\>
-
-13.       \<input type=\"text\" name=\"familyName\" id=\"familyName\"\>\<br\>
-
-14.       \<input type=\"submit\" value=\"Submit\"\>
-
-15.       \<input type=\"submit\"
-
-16.         formenctype=\"multipart/form-data\"
-
-17.         value=\"Submit as Multipart/form-data\"\>
-
-18.     \</form\>
-
-19.     \<p\>\<b\>Note:\</b\> The formenctype attribute is not supported by all browsers.\</p\>
-
-20.   \</body\>
-
-21. \</html\>
-
-### Explanations and how to see the difference between the two kinds of formenctype values
+<h4>Explanations and how to see the difference between the two kinds of formenctype values</h4>
 
 If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,output) standalone mode (click the black arrow on the top right of the output tab, in JSBin), you should see this:
 
@@ -19726,11 +19406,12 @@ If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,ou
 
 Then, open the devtools and go to the \"Network\" tab, click on the POST request. Once done, click on the right on the \"Header\" tab to see the HTTP headers, and scroll down, you should see the form-data entries in the header, like in this screenshot:
 
+
 ![](./images/image278.png){width="5.0in" height="3.4780982064741908in"}
 
 And if you start again and click on the left submit button, the one without the formenctype attribute, you should see that the form content has been submitted \"normally\" (default value is \"urlencoded\", spaces are replaced by \"+\", etc.). Here is a screenshot of what you should see:
 
-### 5.6.1 HTML5 Forms Elements
+<h3 id="ch5-6">5.6.1 HTML5 Forms Elements</h3>
 
 Let\'s look at the HTML5 elements related to forms (specifically: \<datalist\>, \<output\>, \<meter\>  and \<progress\> elements).
 
@@ -19760,7 +19441,7 @@ Let\'s look at the HTML5 elements related to forms (specifically: \<datalist\>,
 | \* Not really useful for most developers. |                                   |
 +-------------------------------------------+-----------------------------------+
 
-### 5.6.2 \<output\>
+<h3>5.6.2 <output></h3>
 
 The output element represents the result of a computation or user action. You can see it as a \"specialized \<div\> or \<span\>\" for displaying interactive results.
 
@@ -19770,17 +19451,15 @@ Typical use / interactive examples
 
 [Do not hesitate to play with the source code of these examples online at JSBin](https://jsbin.com/yuvani/1/edit?html,output).
 
-#### Example #1
+<h4>Example #1</h4>
 
-1.  \<form oninput=\"o.value=a.value\*b.value\"\>
-
-2.       \<input type=\"number\" name=\"a\" id=\"a\" value=\"2\"\> x
-
-3.       \<input type=\"number\" name=\"b\" id=\"b\" value=\"3\"\> =
-
-4.       **\<output for=\"a b\" name=\"o\"\>6\</output\>**
-
-5.  \</form\>
+```
+1.  <form oninput="o.value=a.valueb.value">
+2.       <input type="number" name="a" id="a" value="2"> x
+3.       <input type="number" name="b" id="b" value="3"> =
+4.       <output for="a b" name="o">6</output>
+5.  </form>
+```
 
 The oninput event handler directly uses the \<output\> element using the value of its name attribute.
 
@@ -19798,7 +19477,7 @@ Top of Form
 
 -   form:  associates the \<output\> element with its form owner. The value must be the id of a form in the same document. This allows you to place an \<output\> element outside of the \<form\> with which it is associated.
 
-#### Example #2
+<h4>Example #2</h4>
 
 Top of Form
 
@@ -19808,21 +19487,16 @@ Bottom of Form
 
 Source code:
 
+```
 1.  \<form \>
-
 2.     \<input name=\"a\" value=\"50\" type=\"range\"
-
 3.            oninput=\"x.value = a.valueAsNumber + b.valueAsNumber;
-
 4.            y.value = this.value;\"/\>
-
 5.     \<output id=\"y\"\>50\</output\> +
-
 6.     \<input name=\"b\" value=\"50\" type=\"number\" /\> =
-
 7.     \<output name=\"x\" id=\"x\" for=\"a b\"\>\</output\>
-
 8.  \</form\>
+```
 
 HTML5 has introduced new input field properties: valueAsNumber and valueAsDate.The last example is similar to the previous one except that we use an addition instead of a multiplication.
 
