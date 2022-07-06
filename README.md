@@ -3763,7 +3763,7 @@ View the [example #2 online](https://jsbin.com/karemi/1/edit?html,output).
 
 ### 
 
-### 2.2.1 The \<video\> Element
+<h3 id="ch2-2-1">2.2.1 The <video> Element</h3>
 
 Until 2012, it was only possible to integrate an audio or video player using the proprietary Flash technology, marketed by the company Macromedia (later acquired by Adobe). The \<video\> element of HTML5 is one of the three \"Flash killers\" (the others being \<audio\> for the sound and \<canvas\> for drawing and animation).\
 *(Note that Adobe [no longer supports Flash Player](https://www.adobe.com/products/flashplayer/end-of-life.html) since December 31, 2020)*
@@ -3822,9 +3822,8 @@ This is one of the main problems encountered in recent years: codec support was 
 
 -   Article from HTML5 Rocks: [Media](https://www.html5rocks.com/en/tutorials/video/basics/)
 
-### 
 
-### 2.2.2 The \<audio\> Element
+<h3 id="ch2-2-2">2.2.2 The <audio> Element</h3>
 
 HTML5 audio is composed of several layers:
 
@@ -3894,7 +3893,7 @@ External resources
 
 -   From MDN\'s Web Docs: [\<audio\>: The Embed Audio element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
 
-### 2.2.3 Attributes of \<video\> and \<audio\>
+<h3 id="ch2-2-3">2.2.3 Attributes of <video> and <audio></h3>
 
 ### Most useful attributes of the \<video\> element 
 
@@ -3952,7 +3951,7 @@ The attributes you can use with the \<audio\> element are a subset of those a
 
 As with the \<video\> element, the same best practice in regard to preload and autoplay attributes should be followed.
 
-### 2.2.4 Styling Media Players with CSS
+<h3 id="ch2-2-4">2.2.4 Styling Media Players with CSS</h3>
 
 The \<video\> and \<audio\> elements are just like other HTML elements, so CSS can be used for styling, including CSS transitions, animations, etc.
 
@@ -4428,7 +4427,7 @@ Setting the video to 100% width and height results in different behavior:
 
 -   If the browser window is made wide and short, the video is full width, the height is taller than the window, and part of the video is not visible. It seems that just using % does not get us the same effect.
 
-### 2.2.5 Control Players From JavaScript
+<h3 id="ch2-2-5">2.2.5 Control Players From JavaScript</h3>
 
 The \<video\> and \<audio\> elements have methods, properties/attributes and events that can be manipulated with JavaScript. Using the DOM API, it\'s possible to manipulate an audio or video element as a JavaScript object that has:
 
@@ -4460,7 +4459,7 @@ Please look at this interesting example:
 
 **Conclusion**:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let\'s see a little more of what we can do using the JavaScript API of the \<video\> element (it will be an identical approach for the \<audio\> element, since it shares the same API by a very small margin).
 
-### 2.2.6 The JavaScript API
+<h3 id="ch2-2-6">2.2.6 The JavaScript API</h3>
 
 ### Methods, properties, and events
 
@@ -4516,7 +4515,7 @@ We provide this as a quick reminder - keep in mind that the [complete list](htt
 
 In the next pages, let\'s see, through a set of examples, how to use these most important properties, methods, and events\...
 
-### 2.2.7 The \<video\> Element JavaScript API
+<h3 id="ch2-2-7">2.2.7 The \<video\> Element JavaScript API</h3>
 
 The JavaScript API is useful for implementing playlists, making custom user interfaces and many other interesting things. The \"enhanced HTML5 multimedia players\" lesson presented further on the course relies heavily on this API.
 
@@ -5063,7 +5062,7 @@ Note the use of some new attributes in the \<track\> element:
 
 -   An article from 3playmedia: [How to create a WebVTT file](https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/)
 
-<h3 id="ch2-3">2.3.2 The WebVTT Format</h3>
+<h3 id="ch2-3-2">2.3.2 The WebVTT Format</h3>
 
 The \"[WebVTT: The Web Video Text Tracks Format](http://dev.w3.org/html5/webvtt/)\" defines files that contain text for captions and subtitles, and much more\... The WebVTT files are used with the src attribute of the \<track\> element, that can be used inside a \<video\>\...\</video\>.
 
@@ -5265,7 +5264,7 @@ The displayed text can span multiple lines, but blank lines are not allowed, as 
 
 -   An unofficial [Live WebbVTT format](https://quuz.org/webvtt/)
 
-### 2.3.3 Adding Subtitles to a Video
+<h3 id="ch2-3-3">2.3.3 Adding Subtitles to a Video</h3
 
 Let\'s look at a simple example. First, you need a video on one of the formats/codecs supported by the browsers you target. A recommended codec is mp4/H264, but other formats, such as webm, may have some advantages if the browser supports them. For example, webm allows the video to start playing after a much shorter buffering time. In other words, try if possible to provide the video encoded with more than one codec.
 
@@ -5328,7 +5327,7 @@ Note that YouTube can also help you \"make subtitles\" with its speech recogniti
 
 ![](./images/image090.png){width="4.0in" height="2.306801181102362in"}
 
-### 2.3.4 Styling Captions
+<h3 id="ch2-3-4">2.3.4 Styling Captions</h3>
 
 In this section, we will look at different possibilities for styling and positioning  the text displayed as captions/subtitles while playing a video.
 
@@ -5516,7 +5515,7 @@ Example source code:
 
 3.  \<v Jane\>That would make me Jane!
 
-### 2.3.5 Chapter
+<h3 id="ch2-3-5">2.3.5 Chapter</h3>
 
 When you play a movie in DVD or Blu-Ray format, a menu appears on the screen: play a movie, choose subtitles, etc. Usually there is also a \"chapters\" menu that allows you to quickly access a part of the movie. With videos on the Web, one can also indicate the chapter breakdown, using WebVTT files and a \<track\> element/tag.
 
@@ -5600,7 +5599,7 @@ An example of what you can achieve using chapters, using the [JW Player](https:
 
 ![](./images/image096.png){width="6.5in" height="2.527083333333333in"}
 
-### 2.3.6 Tools for Creating WebVTT Files
+<h3 id="ch2-3-6">2.3.6 Tools for Creating WebVTT Files</h3>
 
 Many tools are available to make and edit HTML5 video and caption/subtitles:
 
@@ -5612,7 +5611,7 @@ Many tools are available to make and edit HTML5 video and caption/subtitles:
 
 We do not claim that these are the best tools, so feel free to share your discoveries in the discussion forum!
 
-### 2.3.7 The \<track\> JavaScript API
+<h3 id="ch2-3-7">2.3.7 The \<track\> JavaScript API</h3>
 
 Most \"complex\" HTML elements like forms, audio or video players, come with a JavaScript API that allows you to control them programmatically, customize them, etc.
 
@@ -5650,7 +5649,7 @@ Some JavaScript code listens to the ontimeupdate event while the video is play
 
 ![](./images/image099.png){width="5.0in" height="2.784694881889764in"}
 
-### 2.3.8 Enhanced HTML5 Video Players
+<h3 id="ch2-3-8">2.3.8 Enhanced HTML5 Video Players</h3>
 
 There are numerous \"enhanced\" video players; most are free and open source, some are commercial. They offer lots of features, which are listed below. Not all of these features are available in every player, this list just illustrates what can be added to the standard \<video\> element. 
 
@@ -5732,7 +5731,7 @@ LeanBack (says \"free for non-commercial use\", licensing is not very clear\...)
 
 ![](./images/image105.png){width="6.0in" height="5.586537620297463in"}
 
-### 2.4.1 Webcam
+<h3 id="ch2-4-1">2.4.1 Webcam</h3>
 
 ### Introduction
 
@@ -6063,97 +6062,53 @@ let filters = \[
 \'blur\',
 
 \'brightness\',
-
 \'contrast\',
-
 \'hue-rotate\', \'hue-rotate2\', \'hue-rotate3\',
-
 \'saturate\',
-
 \'invert\'
-
 \];
-
 function changeFilter(el) {
-
 // Remove all CSS classes for element el
-
 el.className = \'\';
-
 // Choose a CSS class name
-
 console.log(\"toggling effect: \" + filters\[idx % filters.length\]);
-
 let effect = filters\[idx++ % filters.length\];
-
 el.classList.add(effect);
-
 }
 
-Css
-
+<h4>CSS</h4>
+```
 #output {
-
 width: 307px;
-
 height: 250px;
-
 background: rgba(255,255,255,0.5);
-
 border: 1px solid #ccc;
-
 }
-
 #screenshot-stream {
-
 width: initial;
-
 height: initial;
-
 }
-
 #screenshot {
-
 vertical-align: top;
-
 }
-
 .blur {
-
 filter: blur(3px);
-
 }
-
 .brightness {
-
 filter: brightness(5);
-
 }
-
 .contrast {
-
 filter: contrast(8);
-
 }
-
 .hue-rotate {
-
 filter: hue-rotate(90deg);
-
 }
-
 .hue-rotate2 {
-
 filter: hue-rotate(180deg);
-
 }
-
 .hue-rotate3 {
-
 filter: hue-rotate(270deg);
-
 }
-
 .saturate {
 
 filter: saturate(10);
@@ -6165,65 +6120,46 @@ filter: saturate(10);
 filter: grayscale(1);
 
 }
-
 .sepia {
-
 filter: sepia(1);
-
 }
-
 .invert {
-
 filter: invert(1)
-
 }
+```
 
-Html
-
-\<!DOCTYPE html\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
 \<html lang=\"en\"\>
-
 \<head\>
-
 \<meta charset=\"utf-8\"\>
-
 \<title\>Webcam and CSS effects\</title\>
-
 \</head\>
-
 \<body \>
-
 \<h1\>Example of CSS effects on a live video stream\</h1\>
-
 \<p\>
-
 Click the button \"start webcam at the end of this page, then click on the video to toggle the different effects.\</p\>
-
 \</p\>
-
 \<video onclick=\"changeFilter(this);\" width=400 height=400 id=\"video\" controls autoplay\>\</video\>
-
 \<p\>
-
 \<button onclick=\"startWebcam();\"\>Start WebCam\</button\>
-
 \<button onclick=\"stopWebcam();\"\>Stop WebCam\</button\>
-
 \</p\>
-
 \</body\>
-
 \</html\>
+```
 
-#### Taking a snapshot from the live Webcam stream
+<h4>Taking a snapshot from the live Webcam stream</h4>
 
 The trick is to copy and paste the current image from the video stream into a \<canvas\> element.
 
+
 ![](media/image109.png){width="6.5in" height="2.0909722222222222in"}
 
-JS
 
+<h4>JS</h4>
+```
 > //\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 >
 > // GET USER MEDIA CODE
@@ -6297,60 +6233,42 @@ JS
 > ctx.drawImage(video, 0,0, canvas.width, canvas.height);
 >
 > }
+```
 
-CSS
-
+<h4>CSS</h4>
+```
 > canvas {
->
 > border:1px solid black;
->
 > }
+```
 
-HTML
-
-> \<!DOCTYPE html\>
->
-> \<html lang=\"en\"\>
->
-> \<head\>
->
-> \<title\>WebCam screenshot\</title\>
->
-> \<meta charset=\"utf-8\"/\>
->
-> \</head\>
->
-> \<body onload=\"init();\"\>
->
-> \<h1\>Take a snapshot of the current video stream\</h1\>
->
+<h4>HTML</h4>
+```
+> <!DOCTYPE html>
+> <html lang="en">
+> <head>
+> <title>WebCam screenshot</title>
+> <meta charset="utf-8"/>
+> </head>
+> <body onload="init();">
+> <h1>Take a snapshot of the current video stream</h1>
 > Check the CSS and JavaScript tabs. Click on the Start WebCam button.
->
-> \<p\>
->
-> \<button onclick=\"startWebcam();\"\>Start WebCam\</button\>
->
-> \<button onclick=\"stopWebcam();\"\>Stop WebCam\</button\>
->
-> \<button onclick=\"snapshot();\"\>Prendre un screenshot\</button\>
->
-> \</p\>
->
-> \<video onclick=\"snapshot(this);\" width=200 height=200 id=\"video\" controls autoplay\>\</video\>
->
-> \<p\>
->
-> Screenshots : \<p\>
->
-> \<canvas id=\"myCanvas\" width=\"200\" height=\"150\"\>\</canvas\>
->
-> \</body\>
->
-> \</html\>
+> <p>
+> <button onclick="startWebcam();">Start WebCam</button\>
+> <button onclick="stopWebcam();">Stop WebCam</button>
+> <button onclick="snapshot();">Prendre un screenshot</button>
+> </p>
+> <video onclick="snapshot(this);" width=200 height=200 id="video" controls autoplay></video>
+> <p>
+> Screenshots : <p>
+> <canvas id="myCanvas" width="200" height="150"></canvas>
+> </body>
+> </html>
+```
 
 We will look at this example in greater detail in the next course section (related to the \<canvas\> element).
 
-### Impressive demonstrations available on the Web
+<h4>Impressive demonstrations available on the Web</h4>
 
 -   [WebCam pixelization! Fun!](https://codepen.io/dlueth/pen/zBhwv)
 
@@ -6366,7 +6284,14 @@ Check out the [WebAudio demonstrations](https://webaudiodemos.appspot.com/) w
 
 The image below is taken from [one of the demonstrations](https://webaudiodemos.appspot.com/input/index.html), where the sound captured by the microphone is processed in real time. We get visualizations of the signal in real time as an animated waveform, animated frequencies or animated audiogram. If we connect an electric guitar to the sound card input, then this demonstration shows that we can recreate with WebAudio most of the classic effects used by guitarists (delay, reverb, distortion, chorus, etc.).
 
-![webaudio live processing](./images/image110.jpeg){width="5.0in" height="3.9796970691163605in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 110. webaudio live processing (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image110.jpeg?raw=true"
+   width="55%"
+   alt="WebAudio Live Processing" />
+</p>
 
 <h3>2.4.4 Webcam Resolution</h3>
 
@@ -6376,165 +6301,105 @@ For more information, this [article on MDN about the getUserMedia API](https:/
 
 <b>Typical use:</b>
 
-![](./images/image111.png){width="6.5in" height="2.0569444444444445in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 111.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image111.png?raw=true"
+   width="65%"
+   alt="" />
+</p>
 
 <b>JS</b>
 
 ```
 > var vgaButton, qvgaButton, hdButton, dimensions, video, stream;
->
 > function init() {
->
-> vgaButton = document.querySelector(\'button#vga\');
->
-> qvgaButton = document.querySelector(\'button#qvga\');
->
-> hdButton = document.querySelector(\'button#hd\');
->
-> dimensions = document.querySelector(\'p#dimensions\');
->
-> video = document.querySelector(\'video\');
->
+> vgaButton = document.querySelector('button#vga');
+> qvgaButton = document.querySelector('button#qvga');
+> hdButton = document.querySelector('button#hd');
+> dimensions = document.querySelector('p#dimensions');
+> video = document.querySelector('video');
 > // Defines event listeners for the buttons that set the resolution
->
 > qvgaButton.onclick = function() {
->
 > getMedia(qvgaConstraints);
->
 > };
->
 > vgaButton.onclick = function() {
->
 > getMedia(vgaConstraints);
->
 > };
->
 > hdButton.onclick = function() {
->
 > getMedia(hdConstraints);
->
 > };
->
 > // Trick: check regularly the size of the video element and display it
->
 > // When getUserMedia is called the video element changes it sizes but for
->
-> // a while its size is zero pixels\... o we check every half a second
->
-> video.addEventListener(\'play\', function() {
->
+> // a while its size is zero pixels... o we check every half a second
+> video.addEventListener('play', function() {
 > setTimeout(function() {
->
 > displayVideoDimensions();
->
 > }, 500);
->
 > });
->
 > }
->
 > // The different values for the constraints on resolution
->
 > var qvgaConstraints = {
->
 > video: {
->
 > width: { max: 320 },
->
 > height: { max: 180 }
->
 > }
->
 > };
->
 > var vgaConstraints = {
->
 > video: {
->
 > width: { max: 640 },
->
 > height: { max: 360 }
->
 > }
->
 > };
->
 > var hdConstraints = {
->
 > video: {
->
 > width: { min: 1280 },
->
 > height: { min: 720 }
->
 > }
->
 > };
->
-> ^//\ The\ function\ that\ is\ called\ when\ a\ button\ has\ been\ clicked:\ starts\ the\ video^
->
-> ^//\ with\ the\ preferred\ resolution^
->
-> ^function\ getMedia(constraints)\ {^
->
-> ^if\ (!!stream)\ {^
->
-> ^video.srcObject\ =\ null;^
->
-> ^stream.getTracks()\[0\].stop();^
->
-> ^}^
->
-> ^navigator.mediaDevices.getUserMedia(constraints)^
->
-> ^.then((stream)\ =\>\ {^
->
-> ^video.srcObject\ =\ stream;^
->
-> ^video.play();^
->
-> ^window.stream\ =\ stream;^
->
-> ^})^
->
-> ^.catch((error)\ =\>{^
->
-> ^console.log(\'navigator.getUserMedia\ error:\ \',\ error);^
->
-> ^});^
->
-> ^}^
->
+> // The function that is called when a button has been clicked: starts the video^
+> // with the preferred resolution^
+> function\ getMedia(constraints) {^
+> if\ (!!stream) {^
+> video.srcObject = null;^
+> stream.getTracks()[0].stop();^
+> }^
+> navigator.mediaDevices.getUserMedia(constraints)^
+> .then((stream) => {^
+> video.srcObject = stream;^
+> video.play();^
+> window.stream = stream;^
+> })
+> .catch((error)\ =\>{^
+> console.log(\'navigator.getUserMedia\ error:\ \',\ error);^
+> });^
+> }^
 > ^//\ util\ function\ that\ is\ called\ by\ the\ setInterval(\...)\ every\ 0.5s,\ for^
->
 > ^//\ displaying\ the\ video\ dimensions^
->
 > ^function\ displayVideoDimensions()\ {^
->
 > ^dimensions.innerHTML\ =\ \'Actual\ video\ dimensions:\ \'\ +\ video.videoWidth\ +^
->
 > ^\'x\'\ +\ video.videoHeight\ +\ \'px.\';^
->
 > ^}^
+```
 
-**CSS**
-
+<h4>CSS</h4>
+```
 > video {
->
 > border:1px solid;
->
 > }
+```
 
-**HTML**
-
-> \<!DOCTYPE html\>
-> \<html lang=\"en\"\>
-> \<head\>
-> \<meta charset=\"utf-8\"/\>
-> \<title\>getUserMedia constraints for Webcam resolutions\</title\>
-> \</head\>
-> \<body onload=\"init();\"\>
-> \<h1\>Set the camera resolution\</h1\>
+<h4>HTML</h4>
+```
+> <!DOCTYPE html>
+> <html lang="en"\>
+> <head>
+> <meta charset="utf-8"/>
+> <title>getUserMedia constraints for Webcam resolutions\</title\>
+> </head>
+> <body onload="init();">
+> <h1>Set the camera resolution</h1>
 > Example adapted from:
 > \<a href=\"https://www.simpl.info/getusermedia/constraints/\"\>
 > https://www.simpl.info/getusermedia/constraints/
@@ -6552,7 +6417,14 @@ For more information, this [article on MDN about the getUserMedia API](https:/
 > \</html\>
 ```
 
-![](./images/image112.png){width="4.385416666666667in" height="5.25in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 112.  (xxx) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image112.png?raw=true"
+   width="45%"
+   alt="" />
+</p>
 
 Code source extract related to the \"constraint\" object which specifies the desired resolutions:
 
@@ -6613,8 +6485,14 @@ Here are some other constraints you can set. In particular, look at the ones for
 
 -   Resource: [WebRTC samples: Select sources & outputs](https://webrtc.github.io/samples/src/content/devices/input-output/)
 
-
-![webapp for selecting audio and video input/output](./images/image113.jpeg){width="4.145833333333333in" height="4.697916666666667in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 113. webapp for selecting audio and video input/output (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image113.jpeg?raw=true"
+   width="45%"
+   alt="webapp for selecting audio and video input/output" />
+</p>
 
 Source code extract:
 ```
@@ -6646,7 +6524,14 @@ This MediaRecoredr API allows to record / capture the audio or video stream. The
 
 For example, the MediaRecorder API is used to record the video stream from a WebCam as a file saved on the hard disk. Below is a screenshot of an application allowing to record the WebCam. You will be able to run this example a little further, but for security reasons, it cannot run directly in this Web page.
 
-![Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element](./images/image114.jpeg){width="3.8854166666666665in" height="2.3229166666666665in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 114. Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image114.jpeg?raw=true"
+   width="40%"
+   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element" />
+</p>
 
 Let\'s record, replay and download the video stream captured using a Webcam. You can test it below by clicking on \"CodePen\" at the top right:
 
@@ -6896,9 +6781,9 @@ A trick consists in creating, on the fly, an invisible link with a download at
 13. }
 ```
 
-<h3>3.1.1 HTML5 Graphics</h3>
+<h3 id="ch3-1-1">3.1.1 HTML5 Graphics</h3>
 
-<h3>3.2.1 About JavaScript and HTML5</h3>
+<h3 id="ch3-2-1">3.2.1 About JavaScript and HTML5</h3>
 
 
 ![JavaScript logo](./images/image115.png){width="1.0in" height="1.0in"}
@@ -6990,7 +6875,7 @@ Without such tools, debugging JavaScript code is impossible. So you need to look
 
 Some of you may not be used to \"asynchronous programming\", \"callbacks\" etc. We recommend to read [this article on WikiPedia](https://en.wikipedia.org/wiki/Callback_%28computer_programming%29) and [this thread on StackOverflow](https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java).
 
-### 3.2.2 The \<canvas\> Element
+<h3 id="ch3-2-2">3.2.2 The \<canvas\> Element</h3>
 
 ![canvas element logo](./images/image121.jpeg){width="1.0in" height="1.0in"}
 
@@ -7042,7 +6927,7 @@ Performance is  good and animation is generally very smooth, since most Web bro
 
     -   MDN\'s [compatibility table of \<canvas\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#Browser_compatibility)
 
-### 3.2.3 Canvas and Accessibility
+<h3 id="ch3-2-3">3.2.3 Canvas and Accessibility</h3>
 
 The dynamic nature of the \<canvas\> element has made it difficult to use in applications that need to be accessible to people with disabilities. To be accessible, it must meet the following principles:
 
@@ -7058,7 +6943,7 @@ Read more on this topic: 
 
 -   From the W3C wiki: [Canvas Element Accessibility Issues](https://www.w3.org/html/wg/wiki/AddedElementCanvas)
 
-### 3.2.4 HTML Canvas Cheatsheet
+<h3 id="ch3-2-4">3.2.4 HTML Canvas Cheatsheet</h3>
 
 We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.org/wiki/Cheat_sheet)) below. Do not hesitate to keep your favorite one open in a separate browser ta
 
@@ -7070,7 +6955,7 @@ We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.or
 
 ![Snapshot of a canvas sheet API](./images/image126.png){width="6.5in" height="4.809722222222222in"}
 
-### 3.2.5 Coordinate System
+<h3 id="ch3-2-5">3.2.5 Coordinate System</h3>
 
 The coordinate system used for drawing in canvases is similar to the one used by many drawing APIs like Java2D: the (0 , 0) is in the top left corner while the X axis is going to the right and the Y axis to the bottom, as  shown in the following picture:
 
@@ -7080,7 +6965,7 @@ The coordinate system used for drawing in canvases is similar to the one used by
 
 -   **Y** axis is vertical, directed downwards
 
-### 3.2.6 Drawing Rectangles in a Canvas
+<h3 id="ch3-2-6">3.2.6 Drawing Rectangles in a Canvas</h3>
 
 Small errata about what I said in the above video: \"*So let\'s get the canvas using the DOM API method document.getElementById() or better, use document.querySelector() that is a more recent method **from the DOM API**\"*..
 
@@ -7282,7 +7167,7 @@ The way the rectangle will be filled depends on the current value of several pro
 5.  **Draw some shapes**:\
     ctx.fillRect(0,0,80,100)
 
-### 3.2.7 Drawing Principles
+<h3 id="ch3-2-7">3.2.7 Drawing Principles</h3>
 
 ### More about the \"context\" object
 
@@ -7469,7 +7354,7 @@ If you would like to draw the filled text message in green, for example, you sho
 
 -   To set the character font use the ctx.font property; the value is a font in CSS syntax, for example:  ctx.font = \'italic 20pt Calibri\';
 
-### 3.2.8 Transformations
+<h3 id="ch3-2-8">3.2.8 Transformations</h3>
 
 We now introduce the basics of 2D transformations, a powerful tool that will make things easier as soon as you have to:
 
@@ -8410,7 +8295,7 @@ Your browser does not support the canvas tag.
 
 Aha, this is a very interesting question\... the answer is in the next page!
 
-### 3.2.9 Saving and Restoring the Context
+<h3 id="ch3-2-9">3.2.9 Saving and Restoring the Context</h3>
 
 There are two methods for saving and restoring the context properties: ctx.save()and ctx.restore().
 
@@ -8677,7 +8562,7 @@ Source code extract of this function: notice at *lines 3 *and* 26* how we sa
 
 ### 
 
-### 3.3.1 Immediate Mode
+<h3 id="ch3-3-1">3.3.1 Immediate Mode</h3>
 
 In the previous sections, we learned how to draw filled or wireframe rectangles.
 
@@ -8803,7 +8688,7 @@ ctx.restore();
 
 \</html\>
 
-### 3.3.2 Drawing Text
+<h3 id="ch3-3-2">3.3.2 Drawing Text</h3>
 
 The canvas API provides two main methods for drawing text: ctx.strokeText(message, x, y) and ctx.fillText(message, x, y).\
 It also provides a set of context properties for setting the character font and style, for laying out the text, etc.
@@ -9302,7 +9187,7 @@ Typical use (source code taken from the above example):
 
 10. context.fillText(\"right\", 250, 100);
 
-### 3.3.3 Drawing Images
+<h3 id="ch3-3-3">3.3.3 Drawing Images</h3>
 
 Working with images is rather simple, except that we need the images to be fully loaded into memory before drawing them. Loading images is an *asynchronous* process we need to take care of. Working with multiple images might also be difficult for beginners. We present a multiple image loader later on in this course.
 
@@ -9732,7 +9617,7 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 
 The **[DOM Level 2 Events specification](https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents) **says: \"*The load event occurs when the DOM implementation finishes loading **all content** within a document, all frames within a FRAMESET, or an OBJECT element.*\"
 
-### 3.3.4 Drawing Images from a Video Stream
+<h3 id="ch3-3-4">3.3.4 Drawing Images from a Video Stream</h3>
 
 The drawImage(\...) function can take a video element as its first parameter. The image that will be drawn is the one currently played by the video stream. This can be done at video frequency on most modern computers or mobile devices.
 
@@ -9976,7 +9861,7 @@ Explanations:
 
 -   *Line 21*: We implemented a rotating video effect in the drawRotatingVideo. The use of context save/restore is primordial as this function changes the coordinate system at each call, translating and rotating it. Notice the extra translation at *line 31* that translates the coordinate system backwards with half of the size of the image that is drawn. We did this in order to make the image rotate around the center of the rectangle, instead of around the top left corner at (0, 0) by default. Try commenting out this line in the running example and you will see what we mean.
 
-3.4.1 Immediate Mode vs. Path Mode
+<h3 id="ch3-4-1">3.4.1 Immediate Mode vs. Path Mode</h3
 
 ### Immediate mode
 
@@ -10230,7 +10115,7 @@ Summary of path mode principles
 
 5.  Path drawing is faster than immediate drawing (parallelization is possible)
 
-### 3.4.2 A Warning
+<h3 id="ch3-4-2">3.4.2 A Warning</h3>
 
 **Warning**: you do not need to spend too much time on each part of this sub-section
 
@@ -10242,7 +10127,7 @@ You do not need to memorize or learn by heart all the examples in the following
 
 Also, do not forget to use your favorite HTML5 canvas cheatsheet (provided before in the last section). You will find it very helpful when you start playing with the canvas.
 
-### 3.4.3 Drawing Lines
+<h3 id="ch3-4-3">3.4.3 Drawing Lines</h3>
 
 We have been drawing rectangles so far.
 
@@ -10496,7 +10381,7 @@ Code source:
 
 In this last example, we simply called the moveTo() method between each part of the path (*lines 5 and 10*). And we called stroke() (*line 16*) only once to draw the whole path.
 
-### 3.4.4 Drawing Lines with Different Styles
+<h3 id="ch3-4-4">3.4.4 Drawing Lines with Different Styles</h3>
 
 ### Common mistake: drawing the same path twice
 
@@ -10796,7 +10681,7 @@ Source code:
 
 This time, in order to draw the two shapes differently, we defined two separate paths. The way to do this is just to call ctx.beginPath() to start a new path. In this example, the first path has been drawn in wireframe mode, then a new path has been started that is drawn in filled mode.
 
-### 3.4.5 Drawing Lines in Immediate Mode
+<h3 id="ch3-4-5">3.4.5 Drawing Lines in Immediate Mode</h3>
 
 Sometimes, it might be useful to draw just one line.
 
@@ -10931,7 +10816,7 @@ Source code extract:
 
 3.  drawLine(10, 100, 100, 10, \'green\', 10);
 
-### 3.4.6 Drawing Arrows
+<h3 id="ch3-4-6">3.4.6 Drawing Arrows</h3>
 
 In this section, we present a function that draws arrows in a canvas.
 
@@ -11155,7 +11040,7 @@ Screenshot from a demo available on the above Web site:
 
 In a later part of the course dedicated to curve drawing in a canvas, we will also show how to draw curved arrows, with very simple code (much simpler than the one used for drawing the clock\'s hands above).
 
-### 3.4.7 Closing a Path
+<h3 id="ch3-4-7">3.4.7 Closing a Path</h3>
 
 The ctx.closePath() method indicates that we would like a closed path: draw from the last point to the first.
 
@@ -11249,7 +11134,7 @@ Explanations:
 
 Try commenting the *line 10* in the online example and see the results!
 
-### 3.4.8 Drawing Circles and Arcs
+<h3 id="ch3-4-8">3.4.8 Drawing Circles and Arcs</h3>
 
 The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is useful for drawing arcs of circles. It takes the center of the circle/arc, its radius, the starting angle of the arc (turning clockwise), the ending angle of the arc, and an optional parameter we will talk about later.
 
@@ -11421,7 +11306,7 @@ Notice that we called ctx.arc() only once! And drew it twice, with different s
 
 ![smiling head](./images/image151.jpeg){width="3.0in" height="2.5104166666666665in"}
 
-### 3.4.9 Drawing Rounded Rectangles
+<h3 id="ch3-4-9">3.4.9 Drawing Rounded Rectangles</h3>
 
 There is another method called ctx.arcTo(x1, y1, x2, y2, radius), which is a bit complex to use, but very practical for drawing rounded rectangles.
 
@@ -11596,66 +11481,38 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 \</body\>
 
 Source code:
-
+```
 1.  var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke) {
-
 2.      ctx.beginPath();
-
 3.  
-
 4.     // draw top and top right corner
-
 5.     ctx.moveTo(x+radius,y);
-
 6.     ctx.arcTo(x+width,y,x+width,y+radius,radius);
-
 7.     // draw right side and bottom right corner
-
 8.     ctx.arcTo(x+width,y+height,x+width-radius,y+height,radius);
-
 9.     // draw bottom and bottom left corner
-
 10.    ctx.arcTo(x,y+height,x,y+height-radius,radius);
-
 11.    // draw left and top left corner
-
 12.    ctx.arcTo(x,y,x+radius,y,radius);
-
 13. 
-
 14.    if(fill) {
-
 15.       ctx.fill();
-
 16.    }
-
 17. 
-
 18.    if(stroke){
-
 19.       ctx.stroke();
-
 20.    }
-
 21. }
-
 22. 
-
 23. var canvas = document.getElementById(\'myCanvas\');
-
 24. var ctx    = canvas.getContext(\'2d\');
-
 25. 
-
 26. ctx.strokeStyle = \'rgb(150,0,0)\';
-
 27. ctx.fillStyle   = \'rgb(0,150,0)\';
-
 28. ctx.lineWidth   = 7;
-
 29. 
-
 30. roundedRect(ctx, 15, 15, 160, 120, 20, true, true);
+```
 
 In this example, each call to ctx.arcTo(\...) draws a side plus a corner. This makes us suspect that the arcTo() method has been designed primarily for drawing rounded rectangles\...
 
@@ -11666,218 +11523,127 @@ This example at JS Bin is the same as the previous one, except that we added at 
 ![](./images/image155.png){width="6.5in" height="2.036111111111111in"}
 
 HTML
-
+```
 \<!DOCTYPE html\>
-
 \<html lang=\"en\"\>
-
 \<head\>
-
 \<meta charset=\"utf-8\"/\>
-
 \<title\>Comparison between lineTo and arcTo - Example #3\</title\>
-
 \</head\>
-
 \<body\>
-
 \<canvas id=\"myCanvas\"\>Your browser does not support the canvas tag.\</canvas\>
-
 \<script type=\"text/javascript\"\>
-
 var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke)
-
 {
-
 ctx.beginPath();
-
 // draw top and top right corner
-
 ctx.moveTo(x+radius,y);
-
 ctx.arcTo(x+width,y,x+width,y+radius,radius);
-
 // draw right side and bottom right corner
-
 ctx.arcTo(x+width,y+height,x+width-radius,y+height,radius);
-
 // draw bottom and bottom left corner
-
 ctx.arcTo(x,y+height,x,y+height-radius,radius);
-
 // draw left and top left corner
-
 ctx.arcTo(x,y,x+radius,y,radius);
-
 if(fill){
-
 ctx.fill();
-
 }
-
 if(stroke){
-
 ctx.stroke();
-
 }
-
 // Draws the square using lineTo instead of arcTo,
-
 // just to compare both methods
-
 ctx.save();
-
 ctx.strokeStyle=\"pink\";
-
 ctx.lineWidth=3; // ou ce que tu veux
-
 ctx.beginPath();
-
 ctx.moveTo(x,y);
-
 ctx.lineTo(x+width, y);
-
 ctx.lineTo(x+width, y+height);
-
 ctx.lineTo(x, y+height);
-
 ctx.closePath();
-
 ctx.stroke();
-
 ctx.restore();
-
 }
-
 var canvas=document.getElementById(\'myCanvas\');
-
 var ctx=canvas.getContext(\'2d\');
-
 ctx.strokeStyle=\'rgb(150,0,0)\';
-
 ctx.fillStyle=\'rgb(0,150,0)\';
-
 ctx.lineWidth=7;
-
 roundedRect(ctx,15,15,160,120,20,true,true);
-
 \</script\>
-
 \</body\>
-
 \</html\>
+```
 
 Red = arcTo and Pink = lineTo
 
 #### Example #4: use the unrounded vertices in arcTo
 
 For drawing a rounded square, this code also works:
-
+```
 1.  ctx.moveTo(x+radius, y);
-
 2.  ctx.arcTo(x+width, y,x+width, y+height, radius);
-
 3.  ctx.arcTo(x+width, y+height, x, y+height, radius); 
-
 4.  ctx.arcTo(x, y+height, x, y,radius);
-
 5.  ctx.arcTo(x, y, x+width, y,radius);
-
+```
 which might be easier than trying to figure out where the arc will end like this:
-
+```
 1.  ctx.moveTo(x+radius, y);
-
 2.  ctx.arcTo(x+width, y, x+width, y+radius, radius);
-
 3.  ctx.arcTo(x+width, y+height, x+width-radius, y+height,radius); 
-
 4.  ctx.arcTo(x, y+height, x, y+height-radius, radius);
-
 5.  ctx.arcTo(x, y, x+radius, y,radius);
+```
 
 This could be particularly helpful if you are dealing with something other than a rectangle, like this rounded triangle:
 
 ![](./images/image156.png){width="6.5in" height="2.0701388888888888in"}
 
 HTML
-
+```
 \<!DOCTYPE html\>
-
 \<html lang=\"en\"\>
-
 \<head\>
-
 \<meta charset=\"utf-8\"/\>
-
 \<title\>Use the unrounded vertices in arcTo - Example #4\</title\>
-
 \</head\>
-
 \<body\>
-
 \<canvas id=\"myCanvas\"\>Your browser does not support the canvas tag.\</canvas\>
-
 \<script type=\"text/javascript\"\>
-
 var roundedTriangle=function(ctx,x1,y1,x2,y2,x3,y3,radius,fill,stroke)
-
 {
-
 ctx.beginPath();
-
 // start at the middle of the side between x1,y1 and x2,y2
-
 ctx.moveTo((x1+x2)/2,(y1+y2)/2);
-
 // go around the x2,y2 vertex
-
 ctx.arcTo(x2,y2,x3,y3,radius);
-
 // go around the x3,y3 vertex
-
 ctx.arcTo(x3,y3,x1,y1,radius);
-
 // go around the x1,y1 vertex
-
 ctx.arcTo(x1,y1,x2,y2,radius);
-
 // and close the triangle with a line to the starting point
-
 ctx.lineTo((x1+x2)/2,(y1+y2)/2);
-
 if(fill){
-
 ctx.fill();
-
 }
-
 if(stroke){
-
 ctx.stroke();
-
 }
-
 }
-
 var canvas=document.getElementById(\'myCanvas\');
-
 var ctx=canvas.getContext(\'2d\');
-
 ctx.strokeStyle=\'rgb(150,0,0)\';
-
 ctx.fillStyle=\'rgb(0,150,0)\';
-
 ctx.lineWidth=7;
-
 roundedTriangle(ctx,200,15,300,150,15,100,20,true,true);
-
 \</script\>
-
 \</body\>
-
 \</html\>
+```
 
-### 3.4.10 Quadratic Curves
+<h3 id="ch3-4-10">3.4.10 Quadratic Curves</h3>
 
 ### Introduction
 
@@ -11914,28 +11680,19 @@ The control point controls the curvature - if we move the control point farther 
 ![](./images/image158.png){width="6.5in" height="2.05in"}
 
 Source code:
-
+```
 1.  var canvas=document.querySelector(\'#myCanvas1\');
-
 2.  var context=canvas.getContext(\'2d\');
-
 3.   
-
 4.  context.beginPath();
-
 5.   
-
 6.  context.moveTo(100, 20);
-
 7.  context.quadraticCurveTo(230, 200, 250, 20);
-
 8.   
-
 9.  context.lineWidth = 5;
-
 10. context.strokeStyle = \"#0000ff\";
-
 11. context.stroke();
+```
 
 We set a starting point in *line 6*: moveTo(\...), then set the control and ending points with a call to quadraticCurve(\...), at *line 7*, then set some properties for color, thickness, and finally we call the stroke() method for drawing the curve.
 
@@ -11987,7 +11744,7 @@ Source code:
 10. context.stroke();
 ```
 
-### 3.4.11 Curved Arrows
+<h3 id="ch3-4-11">3.4.11 Curved Arrows</h3>
 
 We propose a useful function for drawing curved arrows. See this example:
 
@@ -12119,7 +11876,7 @@ It computes the angle of the arrow at its endpoint (*line 14*) in order to compu
 
 Notice that once again, as we modify the context properties (color, lineWidth) in the body of the function, we save and restore the context at the beginning / end of the function.
 
-<h3>3.4.12 Bézier curves</h3>
+<h3 id="ch3-4-12">3.4.12 Bézier curves</h3>
 
 <h4>Introduction</h4>
 
@@ -12314,7 +12071,7 @@ Note how the different parts are linked together and make a \"path\":
 
 This Bézier tool (\"HTML5 \<canvas\> bezierCurveTo command generator\") is available [online](https://www.victoriakirst.com/beziertool/): try it!
 
-### 3.5.1 Canvas Context: Colors
+<h3 id="ch3-5-1">3.5.1 Canvas Context: Colors</h3>
 
 In previous examples, we saw how to set the current color using the strokeStyle and fillStyle properties of the canvas context object.
 
@@ -12390,7 +12147,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-### 3.5.2 Canvas Context: Linear Gradients
+<h3 id="ch3-5-2">3.5.2 Canvas Context: Linear Gradients</h3>
 
 It is possible to define the stroke or the fill style as a \"gradient\", a set of interpolated colors, like in this example below:
 
@@ -13115,7 +12872,7 @@ We wrote a function setGradient(startX, startY, endX, endY) that creates a gra
 
 In the drawCheckBoard(\...) function we call it just before drawing rectangles. In this way, each rectangle is drawn using its own gradient.
 
-### 3.5.3 Canvas Context: Radial Gradients
+<h3 id="ch3-5-3">3.5.3 Canvas Context: Radial Gradients</h3>
 
 Radial gradients are for creating gradients that propagate/interpolate colors along circles instead of propagating/interpolating along a virtual line, like linear gradients.
 
@@ -13123,95 +12880,60 @@ Here is an example of a radial gradient that interpolates the color of the rainb
 
 ![](./images/image175.png){width="6.5in" height="2.095138888888889in"}
 
-##### JS
-
+<h4>JS</h4>
+```
 > var canvas, ctx, grd;
->
 > function init() {
->
 > // Good practice 1: set global vars canvas, ctx, gradients, etc here
->
 > canvas = document.querySelector(\'#myCanvas1\');
->
 > ctx = canvas.getContext(\'2d\');
->
 > grd = ctx.createRadialGradient(150, 100, 30, 150, 100, 100);
->
 > grd.addColorStop(0, \"red\");
->
 > grd.addColorStop(0.17, \"orange\");
->
 > grd.addColorStop(0.33, \"yellow\");
->
 > grd.addColorStop(0.5, \"green\");
->
 > grd.addColorStop(0.666, \"blue\");
->
 > grd.addColorStop(1, \"violet\");
->
 > draw();
->
 > }
->
 > function draw() {
->
 > ctx.fillStyle = grd;
->
 > ctx.fillRect(0, 0, 300, 200);
->
 > }
+```
 
-##### HTML
-
-> \<!DOCTYPE html\>
->
+<h4>HTML</h4>
+```
+> <!DOCTYPE html>
 > \<html lang=\"en\"\>
->
 > \<head\>
->
 > \<meta charset=\"utf-8\"\>
->
 > \<title\>Radial gradients\</title\>
->
 > \<style\>
->
 > #myCanvas1 {
->
 > border: 1px solid black;
->
 > }
->
 > \</style\>
->
 > \</head\>
->
 > \<body onload=\"init();\"\>
->
 > \<canvas id=\"myCanvas1\" width=\"300\" height=200\>Your browser does not support the canvas tag.\</canvas\>
->
 > \</body\>
->
 > \</html\>
+```
 
 The gradient is defined as follows:
 
+```
 1.  var grd = context.**createRadialGradient(150, 100, 30, 150, 100, 100);**
-
 2.  grd.addColorStop(0, \"red\");
-
 3.  grd.addColorStop(0.17, \"orange\");
-
 4.  grd.addColorStop(0.33, \"yellow\");
-
 5.  grd.addColorStop(0.5, \"green\");
-
 6.  grd.addColorStop(0.666, \"blue\");
-
 7.  grd.addColorStop(1, \"violet\");
-
 8.  
-
 9.  context.fillStyle = grd;
+```
 
 The method from the context object createRadialGradient(cx1, cy1, radius1, cx2, cy2, radius2) takes as the first three parameters the \"starting\" circle of the gradient, and as the three last parameters, the \"ending circle\".
 
@@ -13231,75 +12953,46 @@ Here is the result:
 
 ![](./images/image177.png){width="6.5in" height="2.0541666666666667in"}
 
-JS
-
+<h4>JS</h4>
+```
 var canvas, ctx, grd;
-
 function init() {
-
 // Good practice 1: set global vars canvas, ctx, gradients, etc here
-
 canvas = document.querySelector(\'#myCanvas1\');
-
 ctx = canvas.getContext(\'2d\');
-
 grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
-
 grd.addColorStop(0, \"red\");
-
 grd.addColorStop(0.17, \"orange\");
-
 grd.addColorStop(0.33, \"yellow\");
-
 grd.addColorStop(0.5, \"green\");
-
 grd.addColorStop(0.666, \"blue\");
-
 grd.addColorStop(1, \"violet\");
-
 draw();
-
 }
-
 function draw() {
-
 ctx.fillStyle = grd;
-
 ctx.fillRect(0, 0, 300, 200);
-
 }
+```
 
 HTML
-
+```
 \<!DOCTYPE html\>
-
 \<html lang=\"en\"\>
-
 \<head\>
-
 \<meta charset=\"utf-8\"\>
-
 \<title\>Radial gradients with offset circles\</title\>
-
 \<style\>
-
 #myCanvas1 {
-
 border: 1px solid black;
-
 }
-
 \</style\>
-
 \</head\>
-
 \<body onload=\"init();\"\>
-
 \<canvas id=\"myCanvas1\" width=\"300\" height=200\>Your browser does not support the canvas tag.\</canvas\>
-
 \</body\>
-
 \</html\>
+```
 
 ### What happens if the gradient is smaller or larger than the shapes we draw?
 
@@ -13313,7 +13006,7 @@ We call the \"first color\" the color defined for the inner circle, the \"last 
 
 -   The colors between the two circles will be interpolated.
 
-### 3.5.4 Canvas Context: Patterns/Textures
+<h3 id="ch3-5-4">3.5.4 Canvas Context: Patterns/Textures</h3>
 
 ### Principle
 
@@ -13328,7 +13021,7 @@ There are a few steps we have to take before doing this:
     1.  var imageObj = new Image();
 
 ```
-<!-- -->
+
 ```
 1.  **Define a callback function that will be called once the image has been fully loaded** in memory; we cannot draw before the image has been loaded.
 
@@ -13346,7 +13039,7 @@ There are a few steps we have to take before doing this:
     1.  imageObj.src = \"https://www.myserver.com/myRepeatablePattern.png\";
 
 ```
-<!-- -->
+
 ```
 1.  **Create a pattern object from the loaded image:**\
     As soon as step 3 is executed, an HTTP request is sent in background by the browser, and when the image is loaded in memory, the callback defined at step 2 is called. We create a pattern object inside, from the loaded image:
@@ -13364,7 +13057,7 @@ There are a few steps we have to take before doing this:
     6.  };
 
 ```
-<!-- -->
+
 ```
 1.  **Inside the callback function (or inside a function called from inside the callback) ,we can finally draw**:
 
@@ -13393,192 +13086,106 @@ Here we have two rectangles drawn using a pattern (an image that can be repeated
 ![](./images/image178.png){width="6.5in" height="2.0631944444444446in"}
 
 JS
-
+```
 var canvas, ctx, pattern1;
-
 function init() {
-
 canvas = document.querySelector(\'#myCanvas\');
-
 ctx = canvas.getContext(\'2d\');
-
 // We need 1) to create an empty image object, 2) to set a callback function
-
 // that will be called when the image is fully loaded, 3) to create a
-
 // pattern object, 4) to set the fillStyle or the strokeStyle property of
-
 // the context with this pattern, 5) to draw something
-
 // WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -\> draw from inside the
-
 // onload callback only !
-
 // Allocate an image
-
 var imageObj = new Image();
-
 // callback called asynchronously, after the src attribute of imageObj is set
-
 imageObj.onload = function(){
-
 // We enter here only when the image has been loaded by the browser
-
 // Pattern creation using the image object
-
 // Instead of \"repeat\", try different values : repeat-x, repeat-y,
-
 // or no-repeat, You may draw larger shapes in order to see
-
 // different results
-
 // It is a good practice to leave this as a global variable if it
-
 // will be reused by other functions
-
 pattern1 = ctx.createPattern(imageObj, \"repeat\");
-
 // Draw a textured rectangle
-
 ctx.fillStyle = pattern1;
-
 ctx.fillRect(10, 10, 200, 200);
-
 // And a wireframe one
-
 ctx.lineWidth=20;
-
 ctx.strokeStyle=pattern1;
-
 ctx.strokeRect(230, 20, 150, 100);
-
 };
-
 // This will tell the browser to send an asynchronous request.
-
 // When the browser will get an answer, the callback above will be called
-
 imageObj.src = \"https://mainline.i3s.unice.fr/mooc/pattern1.jpg\";
-
 }
+```
 
 HTML
-
+```
 \<!DOCTYPE html\>
-
 \<html lang=\"en\"\>
-
 \<head\>
-
 \<meta charset=\"utf-8\"\>
-
 \<title\>Drawing two rectangles with a pattern - Example #1\</title\>
-
 \</head\>
-
 \<body onload=\"init();\"\>
-
 \<canvas id=\"myCanvas\" width=\"500\" height=\"400\"\>
-
 Your browser does not support the canvas tag. \</canvas\>
-
 \</body\>
-
 \</html\>
-
+```
 JavaScript source code:
-
+```
 1.  var canvas, ctx, pattern1;
-
 2.   
-
 3.  function init() {
-
 4.     canvas = document.querySelector(\'#myCanvas\');
-
 5.     ctx = canvas.getContext(\'2d\');
-
 6.  
-
 7.     // We need 1) to create an empty image object, 2) to set a callback function
-
 8.     // that will be called when the image is fully loaded, 3) to create a
-
 9.     // pattern object, 4) to set the fillStyle or the strokeStyle property of
-
 10.    // the context with this pattern, 5) to draw something
-
 11.    **// WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -\> draw from inside the**
-
 12. **   // onload callback only !**
-
 13. 
-
 14. 
-
 15.    // 1 - Allocate an image
-
 16.    var imageObj = new Image();
-
 17.  
-
 18.    // 2 - callback called asynchronously, after the src attribute of imageObj
-
 19.    // is set
-
 20.    imageObj.onload = function(){
-
 21.       // We enter here only when the image has been loaded by the browser
-
 22.       // 4 - Pattern creation using the image object
-
 23.       // Instead of \"repeat\", try different values : repeat-x, repeat-y,
-
 24.       // or no-repeat, You may draw larger shapes in order to see
-
 25.       // different results
-
 26.       // It is good practice to leave this as a global variable if it
-
 27.       // will be reused by other functions
-
 28. 
-
 29.       pattern1 = ctx.createPattern(imageObj, \"repeat\");
-
 30. 
-
 31.       // 5 - Draw things. Here a textured rectangle
-
 32.       ctx.fillStyle = pattern1;
-
 33.       ctx.fillRect(10, 10, 200, 200);
-
 34. 
-
 35.       // \... And a wireframe one
-
 36.       ctx.lineWidth=20;
-
 37.       ctx.strokeStyle=pattern1;
-
 38.       ctx.strokeRect(230, 20, 150, 100);
-
 39.   };
-
 40. 
-
 41.   // 3 - Send the request to load the image
-
 42.   // Setting the src attribute will tell the browser to send an asynchronous
-
 43.   // request.
-
 44.   // When the browser gets an answer, the callback above will be called
-
 45.   imageObj.src = \"https://mainline.i3s.unice.fr/mooc/pattern1.jpg\";
-
 46. }
+```
 
 #### Example 2: the repeatability of a pattern
 
@@ -13587,106 +13194,63 @@ To \"better\" see the repeatability of the pattern, here is the same example wit
 ![](./images/image179.png){width="6.5in" height="2.0631944444444446in"}
 
 JS
-
+```
 var canvas, ctx, pattern1;
-
 function init() {
-
 canvas = document.querySelector(\'#myCanvas\');
-
 ctx = canvas.getContext(\'2d\');
-
 // We need 1) to create an empty image object, 2) to set a callback function
-
 // that will be called when the image is fully loaded, 3) to create a
-
 // pattern object, 4) to set the fillStyle or the strokeStyle property of
-
 // the context with this pattern, 5) to draw something
-
 // WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -\> draw from inside the
-
 // onload callback only !
-
 // Allocate an image
-
 var imageObj = new Image();
-
 // callback called asynchronously, after the src attribute of imageObj is set
-
 imageObj.onload = function(){
-
 // We enter here only when the image has been loaded by the browser
-
 // Pattern creation using the image object
-
 // Instead of \"repeat\", try different values : repeat-x, repeat-y,
-
 // or no-repeat, You may draw larger shapes in order to see
-
 // different results
-
 // It is a good practice to leave this as a global variable if it
-
 // will be reused by other functions
-
 pattern1 = ctx.createPattern(imageObj, \"repeat\");
-
 // Draw a textured rectangle
-
 ctx.fillStyle = pattern1;
-
 ctx.fillRect(10, 10, 500, 800);
-
 // And a wireframe one
-
 ctx.lineWidth=50;
-
 ctx.strokeStyle=pattern1;
-
 ctx.strokeRect(650, 20, 300, 800);
-
 };
-
 // This will tell the browser to send an asynchronous request.
-
 // When the browser will get an answer, the callback above will be called
-
 imageObj.src = \"https://mainline.i3s.unice.fr/mooc/pattern1.jpg\";
-
 }
+```
 
 HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Repeatability of a pattern - Example #2\</title\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"1000\" height=\"1000\"\>
-
-Your browser does not support the canvas tag. \</canvas\>
-
-\</body\>
-
-\</html\>
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Repeatability of a pattern - Example #2</title>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="1000" height="1000">
+Your browser does not support the canvas tag. </canvas>
+</body>
+</html>
+```
 You can change the way the pattern is repeated by modifying the second parameter of this method:
-
 1.  pattern1 = ctx.createPattern(imageObj, \"**repeat**\");
 
 Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just change this line in the online example and you will see live results.
 
-### 3.5.5 A Multiple Image Loader
+<h3 id="ch3-5-5">3.5.5 A Multiple Image Loader</h3>
 
 ### Draw with multiple patterns? We need to load all of them before drawing! 
 
@@ -17411,7 +16975,7 @@ The following additional example shows the same best practices but presents a mo
 &nbsp;
 <br/>
 
-<h3>5.3.1 Accessible Forms</h3>
+<h3 id="ch5-3-1">5.3.1 Accessible Forms</h3>
 
 Forms are commonly used to enable user interaction in Web sites and Web applications. For example, they are used for login, registering, commenting, and purchasing.
 
@@ -18000,26 +17564,35 @@ Some screenshots from Opera desktops and Safari IOS:
 ![input type=time safari IOS](./images/image238.png){width="2.0in" height="3.0in"}
 
 \<input type=\"datetime\"\>
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 239.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image239.png?raw=true"
+   width="20%"
+   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element" />
+</p>
 
-![datetime](./images/image239.png){width="2.0in" height="1.9115649606299212in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 240.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image240.png?raw=true"
+   width="20%"
+   alt="Input type=datetime on Safari IOS" />
+</p>
 
-![input type=datetime on safari IOS](./images/image240.png){width="2.0in" height="3.0in"}
-
+```
 \<input type=\"datetime-local\"\>
-
 ![datetime-local example](./images/image241.png){width="2.0in" height="1.8679866579177602in"}
-
 \<input type=\"week\"\>:
-
 ![week](./images/image242.jpeg){width="4.0in" height="1.2696576990376203in"}
-
 \<input type=\"month\"\>:
-
 ![month](./images/image243.jpeg){width="4.0in" height="1.4222222222222223in"}
-
 ![input type=month safari IOS](./images/image244.png){width="2.0in" height="3.0in"}
+```
 
-### 5.4.4 "e-mail", "tel", "URL", and "search"
+<h3 id="ch5-4-4">5.4.4 "e-mail", "tel", "URL", and "search"</h3>
 
 Let\'s study 4 input types: email\", \"tel\", \"URL\" and \"search\".
 
@@ -18045,37 +17618,24 @@ Typical use:
 
 Try it on your browser:                         Enter your email: 
 
-1.  \<!DOCTYPE html\>
-
-2.  \<html lang=\"en\"\>
-
-3.  \<head\>
-
-4.  \<meta charset=\"utf-8\"\>
-
-5.  \<title\>Example of input type=email\</title\>
-
-6.  \<style\>
-
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset="utf-8">
+5.  <title>Example of input type=email</title>
+6.  <style>
 7.  input:invalid {
-
 8.  background-color:pink;
-
 9.  }
-
-10. \</style\>
-
-11. \</head\>
-
-12. \<body\>
-
-13. \<label for=\"email\"\>Enter your email \</label\>
-
-14. \<input type=\"email\" id=\"email\"\>
-
-15. \</body\>
-
-16. \</html\>
+10. </style>
+11. </head>
+12. <body>
+13. <label for="email">Enter your email </label>
+14. <input type="email" id="email">
+15. </body>
+16. </html>
+```
 
 Note the CSS rule that turns the background color of the email input field to pink if a user enters an invalid address (*lines 7-8*). Also note that the validation is based only on matching a regular expression (the address should contain a \"@\",  a \".\", etc.). It does not check if the address is an existing one.
 
@@ -18095,43 +17655,27 @@ Try it in your browser (we used the same CSS for changing the background-color w
 
 Enter a telephone number: 
 
-Source code:
-
-1.  \<!DOCTYPE html\>
-
-2.  \<html lang=\"en\"\>
-
-3.  \<head\>
-
-4.  \<meta charset=\"utf-8\"\>
-
-5.  \<title\>Example of input type=tel\</title\>
-
-6.  \<style\>
-
+<h4>Source code:</h4>
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset=\"utf-8\"\>
+5.  <title>Example of input type=tel\</title\>
+6.  <style\>
 7.  input:invalid {
-
 8.  background-color:pink;
-
 9.  }
-
-10. \</style\>
-
-11. \</head\>
-
-12. \<body\>
-
-13. \<label for=\"tel\"\>Enter a telephone number:\</label\>
-
-14. \<input type=\"tel\" id=\"tel\"
-
-15. placeholder=\"(555) 555-5555\"
-
-16. pattern=\"\^(?\\d{3})?\[-\\s\]\\d{3}\[-\\s\]\\d{4}.\*?\\)\"/\>
-
-17. \</body\>
-
-18. \</html\>
+10. </style>
+11. </head>
+12. <body>
+13. <label for="tel">Enter a telephone number:</label\>
+14. <input type="tel" id="tel"
+15. placeholder="(555) 555-5555"
+16. pattern="^(?d{3})?[-s]\\d{3}\[-\\s\]\\d{4}.\*?\\)\"/\>
+17. </body>
+18. </html>
+```
 
 \<input type=\"URL\"\> 
 
@@ -18149,47 +17693,29 @@ Enter a URL (default validation): 
 
 Enter a URL (custom validation, must start with http, https or ftp): 
 
-Source code:
-
+<h4>Source code:</h4>
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.  \<head \>
-
 4.  \<meta charset=\"utf-8\"\>
-
 5.  \<title\>Example of input type=url\</title\>
-
 6.  \<style\>
-
 7.  input:invalid {
-
 8.  background-color: lightPink;
-
 9.  }
-
 10. \</style\>
-
 11. \</head\>
-
 12. \<body\>
-
 13. \<label for=\"url1\"\>Enter a URL (default validation):\</label\>
-
 14. \<input type=\"url\" id=\"url1\"/\>
-
 15. \<p\>
-
 16. \<label for=\"url2\"\>Enter a URL (custom validation, must start with http, https or ftp):\</label\>
-
 17. \<input id=\"url2\" type=\"url\" placeholder=\"https://www.domain.com\"
-
 18. pattern=\"(http\|https\|ftp)\\:\\/\\/\[a-zA-Z0-9\\-\\.\\/\]\*\"/\>\<p\>
-
 19. \</body\>
-
 20. \</html\>
+```
 
 *Lines 16-17* show the use of a pattern attribute with a JavaScript regexp that accepts only URLs starting with http, https or ftp. More details on the pattern attribute are given in the section that presents the new HTML5 form attributes.
 
@@ -18201,17 +17727,14 @@ The specification does not state what the GUI should look like, so current impl
 
 ![input type=search rendered on a smartphone](./images/image251.jpeg){width="4.0in" height="3.0098293963254594in"}
 
-Typical use:
-
+<h4>Typical use:</h4>
+```
 > \<label for=\"search1\"\>Simple search: \</label\>
->
 > \<input type=search id=\"search1\"\>
->
 > \<p\>
->
 > \<label for=\"search2\"\>Search with attribute \<code\>results=5\</code\> (try with Safari): \</label\>
->
 > \<input type=search id=\"search2\" results=5\>
+```
 
 Results on Chrome and Opera desktop - notice the small cross on the right when one enters a value:
 
@@ -18226,46 +17749,29 @@ Example that shows a drop down list of recent searches (Safari screenshot borro
 ![example 2 of input type=search on safari, shows recent results](./images/image254.png){width="2.0in" height="2.62711832895888in"}
 
 Source code for the knowledge check below
-
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html\>
-
 3.  \<head\>
-
 4.  \<meta charset=\"utf-8\"\>
-
 5.  \<title\>Example of input type=email\</title\>
-
 6.  \<style\>
-
 7.  input:? {
-
 8.  background-color:pink;
-
 9.  }
-
 10. input:?? {
-
 11. background-color:lightGreen;
-
 12. }
-
 13. \</style\>
-
 14. \</head\>
-
 15. \<body\>
-
 16. \<label for=\"email\"\>Enter your email:\</label\>
-
 17. \<input type=\"email\" id=\"email\"\>
-
 18. \</body\>
-
 19. \</html\>
+```
 
-### 5.4.5 "number"
+<h3 id="ch5-4-5">5.4.5 "number"</h3>
 
 This input field is useful for entering numerical values (integer or float), but not for entering zip codes. On desktop implementations and on some mobile implementations, it provides a user interface with small vertical arrows for incrementing/decrementing the current value, while on mobiles it will display a numeric keyboard.
 
@@ -18307,47 +17813,30 @@ Or, do it here in your browser (Manually enter a value that is not in the range,
 
 Quantity (between 0 and 500, should be a multiple of 5 otherwise it\'s invalid): 
 
-Source code:
-
+<h4>Source code:</h4>
+```
 1.  \<!DOCTYPE html\>
-
 2.  \....
-
 3.  \<style\>
-
 4.  #number:invalid {
-
 5.  background-color:pink;
-
 6.  **}**
-
 7.  #number:valid {
-
 8.  background-color:lightGreen;
-
 9.  **}**
-
-10. \</style\>
-
-11. \</head\>
-
-12. \<body\>
-
-13. Example of \<code\>\<input type=number\>\</code\>:\<p\>
-
-14. \<label for=\"number\"\>Quantity (between 0 and 500, should be a multiple of 5 otherwise it\'s invalid): \</label\>
-
-15. \<input type=\"number\" id=\"number\" value=\"25\" min=\"0\" step=\"5\" max=\"500\"/\>
-
-16. \<p\>
-
+10. </style>
+11. </head>
+12. <body>
+13. Example of <code><input type=number></code>:<p>
+14. <label for="number">Quantity (between 0 and 500, should be a multiple of 5 otherwise it\'s invalid): \</label\>
+15. <input type=\"number\" id=\"number\" value=\"25\" min=\"0\" step=\"5\" max=\"500\"/\>
+16. <p\>
 17. Change the different values for attributes step, max, min, value. Don\'t forget to try step=\"any\" for float values\...
+18. </body\>
+19. </html\>
+```
 
-18. \</body\>
-
-19. \</html\>
-
-### 5.4.6 "range"
+<h3 id="ch5-4-6">5.4.6 "range"</h3>
 
 ![zipper with funny label input type=range](./images/image258.jpeg){width="5.0in" height="1.498931539807524in"}
 
@@ -18361,7 +17850,7 @@ And on mobile devices:
 
 ![ios range input](./images/image260.png){width="2.0in" height="3.0in"}![input type=range android](./images/image261.jpeg){width="2.0in" height="3.5555555555555554in"}
 
-Typical use
+<h4>Typical use</h4>
 
 The basic use is to specify at least the value, min and max attributes, and eventually the step attribute, too:
 
@@ -18373,79 +17862,46 @@ But most of the time, you will need a visual feedback that shows the current va
 
 ![](./images/image262.png){width="5.0in" height="3.1885586176727907in"}
 
-Source code:
-
+<h4>Source code:</h4>
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.  \<head\>
-
 4.  \<meta charset=\"utf-8\"\>
-
 5.  \<title\>Example of input type=tel\</title\>
-
 6.  \<style\>
-
 7.  #rangeValue1 {
-
 8.  border:1px solid black;
-
 9.  padding:2px;
-
 10. }
-
 11. \</style\>
-
 12. \<script\>
-
 13. window.onload = function() {
-
 14. // Called when the page is loaded, for displaying initial value in the output
-
 15. printValue(\'slider1\',\'rangeValue1\');
-
 16. }
-
 17. function printValue(sliderId, outputId) {
-
 18. var x = document.getElementById(outputId);
-
 19. var y = document.getElementById(sliderId);
-
 20. x.value = y.value;
-
 21. }
-
 22. \</script\>
-
 23. \</head\>
-
 24. \<body\>
-
 25. \<form \>
-
 26. \<label for=\"slider1\"\>Select a value:\</label\>
-
 27. \<input id=\"slider1\" type=\"range\"
-
 28. min=\"100\" max=\"500\" step=\"10\" value=\"150\"
-
 29. oninput=\"printValue(\'slider1\',\'rangeValue1\')\"/\>
-
 30. \<output id=\"rangeValue1\"\>\</output\>
-
 31. \</form\>
-
 32. \<br/\>
-
 33. Play with attributes: value, min, max, step\...
-
 34. \</body\>
-
 35. \</html\>
+```
 
-## Snapping behavior and the step attribute
+<h4>Snapping behavior and the step attribute</h4>
 
 ![jumps + steps](./images/image263.jpeg){width="3.1041666666666665in" height="1.4791666666666667in"}
 
@@ -18473,32 +17929,22 @@ Adding \"ticks\" to the range slider using a \<datalist\> element
 ![complicated ticks on a rule](./images/image264.jpeg){width="4.416666666666667in" height="1.375in"}
 
 Using the \<datalist\> element, it\'s possible to display \"ticks\" above the range slider, at given positions.
-
+```
 1.  \<label for=\"slider2\"\>value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:\</label\>
-
 2.  \<input id=\"slider2\" type=\"range\"
-
 3.  list=\"ticks2\"
-
 4.  min=\"0\" max=\"10\" step=\"1\" value=\"5\"/\>
-
 5.  \<datalist id=ticks2\>
-
 6.  \<option\>0\</option\>
-
 7.  \<option\>2\</option\>
-
 8.  \<option\>4\</option\>
-
 9.  \<option\>6\</option\>
-
 10. \<option\>8\</option\>
-
 11. \<option\>10\</option\>
-
 12. \</datalist\>
+```
 
- Try the sliders below:
+<h4>Try the sliders below:</h4>
 
 value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:  
 
@@ -18508,7 +17954,7 @@ value=5 min=0, max=10 step=\"0.5\", ticks at 0, 0.5, 1, 2, 4, 8:  
 
 value=5 min=0, max=10 step=\"any\", ticks at 0, 5 and 10:  
 
-## External resources
+<h4>External resources</h4>
 
 -   You can use CSS for \"standard\" styling (size, color, background color, etc.) . However, some custom attributes are available. Check [this article from CSS tricks](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/).
 
@@ -18562,7 +18008,7 @@ value=5 min=0, max=10 step=\"any\", ticks at 0, 5 and 10:  
 
 -   MDN\'s Web Docs: [\<input type=range\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
 
-### 5.5.1 Form Attributes
+<h3>5.5.1 Form Attributes</h3>
 
 In this chapter, we go over the form attributes that have been introduced by HTML5.
 
@@ -18574,17 +18020,17 @@ In this section, we cover the rest of the form attributes and provide further ex
 
 In another part of the course, about form validation and visual feedback using CSS, we examine some of the most useful attributes in even greater detail.
 
-### 5.5.2 form
+<h3 id="ch5-5-2">>5.5.2 form</h3>
 
 This attribute is useful for putting input fields outside the form itself. The form attribute of an external input field must share the same value as the id of the form the field belongs to. This is useful when using \<fieldset\> elements for making the page/form layout easier.
 
-## Typical use
+<h4>Typical use</h4>
 
 [Try this interactive example in CodePen](http://codepen.io/w3devcampus/pen/jmdpyv),  or try it directly in your browser:
 
 Enter your name (field outside the form): ![](./images/image266.wmf)
 
-##### Top of Form
+<h4>Top of Form</h4>
 
 Choose optionFree registering![](./images/image219.wmf)Premium![](./images/image219.wmf) Send form
 
@@ -22664,4 +22110,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-05-2022 Tue 10:19pm</i></b></h3>
+<h3><b><i>07-06-2022 Wed 3:33pm</i></b></h3>
