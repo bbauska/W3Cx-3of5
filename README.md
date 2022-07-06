@@ -21103,7 +21103,15 @@ It shows how to use the DOM API for dynamically updating the page content (build
 
 The objective of this chapter is to provide an overview of the File API.
 
-![sound sample editor serverless](./images/image308.jpeg){width="4.0in" height="2.057415791776028in"}
+
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 308. sound sample editor serverless (xxx) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image308.jpeg?raw=true"
+   alt="sound sample editor serverless"
+   width="45%">
+&nbsp;
 
 Before HTML5, file management was limited to multipart forms and to Ajax for sending/requesting files to/from a remote Web server.
 
@@ -21111,9 +21119,23 @@ Possible actions were limited, both for the developer and the user. However, HT
 
 Imagine a multimedia player that accesses (in read-only) your file system, reads your audio and video files, etc., such as the [Remo Music player](https://chrome.google.com/webstore/detail/remo-music-player/ajilpdcmebalpffmjjopcingplogifhb) below, or an application that edits the audio content of local mp3 files, for example, the [HYA-WAVE sound editor](https://wav.hya.io/#/fx) (screenshot above).
 
-![audio player that plays local files](./images/image309.jpeg){width="4.0in" height="2.2272725284339456in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 309. audio player that plays local files (xxx) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image309.jpeg?raw=true"
+   alt="audio player that plays local files"
+   width="45%">
+&nbsp;
 
-![polarr photo editor uses the File API](./images/image310.jpeg){width="4.0in" height="3.270939413823272in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 310. polarr photo editor uses the File API (xxx) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image310.jpeg?raw=true"
+   alt="polarr photo editor uses the File API"
+   width="45%">
+&nbsp;
 
 ##### **External resources**
 
@@ -21211,7 +21233,14 @@ filters, but you can also find some new on the Chrome store. I installed one tha
 
 All this here is HTML5, this is canvas, these are form elements we saw the last week, some canvas here, or image elements and so on.
 
-![](./images/image311.png){width="6.5in" height="1.7972222222222223in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 311.  (xxx) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image311.png?raw=true"
+   alt=""
+   width="65%">
+&nbsp;
 
 <h4>Source code:</h4>
 
@@ -21369,7 +21398,14 @@ The [HTML5 File API specification](https://www.w3.org/TR/FileAPI/) introduces 
 
 We will not use all of these interfaces, but let\'s explain the difference between Blob and File, as most of the methods exposed by the FileReader interface take indiscriminately a Blob or a File as parameter.
 
-![the blob movie poster](./images/image312.jpeg){width="1.96875in" height="3.0104166666666665in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 312. the blob movie poster (xxx) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image312.jpeg?raw=true"
+   alt="The Blob Movie Poster"
+   width="25%">
+&nbsp;
 
 <h4>The Blob object</h4>
 
@@ -21430,7 +21466,14 @@ Try a variation of the above code in your browser, that displays the file conten
 
 Choose a text file:\
 
-![](.images/image313.png){width="4.0in" height="0.7021369203849519in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 313.  (xxx) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image313.png?raw=true"
+   alt=""
+   width="45%">
+&nbsp;
 
 In the following pages, we look at different examples that read file contents as text, dataURL and binary.
 
@@ -21670,7 +21713,15 @@ This dataURL format enables file content to be stored in a base64 format (as
 
 You will find lots of Web sites and tools for generating dataURL from files, such as [Image to Data URI converter](https://ezgif.com/image-to-datauri) (screenshot below):
 
-![Online service that converts uploaded images to data uris\... we see an image and its ascii encoded data uri version.](./images/image319.jpeg){width="5.0in" height="6.385149825021872in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------ 319. Online service that converts uploaded images to data uris... ----------------->
+<!-------------- we see an image and its ascii encoded data uri version (xxx) -------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image319.jpeg?raw=true"
+   alt="Online service that converts uploaded images to data uris...we see an image and its ascii encoded data uri version"
+   width="55%" />
+</p>
 
 With the above example, you can copy and paste the characters on the left and use them with an \<img src=\"\...\"\>. Just set the src attribute with it!
 
@@ -21882,8 +21933,14 @@ displayCoords.innerHTML="Latitude: " + position.coords.latitude +
 </body>
 </html>
 ```
-
-![geolocation callback illustration](./images/image324.jpeg){width="5.0in" height="1.4939555993000875in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 324. geolocation callback illustration (xxx) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image324.jpeg?raw=true"
+   alt="Geolocation Callback Illustration"
+   width="55%" />
+</p>
 
 <b>Explanations:</b>
 
@@ -21909,7 +21966,14 @@ displayCoords.innerHTML="Latitude: " + position.coords.latitude +
 
 In the previous example, we used the coords property of the position passed as an input parameter to the callback function. This coords object has many properties:
 
-![](./images/image325.png){width="6.5in" height="3.35in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 325.  (xxx) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image325.png?raw=true"
+   alt=" "
+   width="85%" />
+</p>
 
 Not all these values may be available in all Web browsers. When one of these properties is null, it means that it is not available (often the case of the altitudeAccuracy)
 
@@ -21919,7 +21983,14 @@ In the last example, we used the navigator.geolocation. getCurrentPosition(show
 
 A slightly different version of the previous example [shows how to properly check against the different possible errors](https://jsbin.com/bafusik/edit?html,output). Try it, then turn your WiFi off or unplug your Ethernet cable (or turn off GPS and 3G/4G on a mobile phone). You should see an error message \"*Error during geolocation: Location could not be obtained though the available means*\":
 
-![geolocation error](./images/image326.jpeg){width="6.5in" height="3.16875in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 326. geolocation error (xxx) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image326.jpeg?raw=true"
+   alt="Geolocation error"
+   width="85%" />
+</p>
 
 <h3>Source code of the example:</h3>
 
@@ -21997,7 +22068,14 @@ As a test, you may just try to change getCurrentPosition to watchPosition in
 
 Several options are available when using HTML5 geolocation. We can pass a third parameter to the getCurrentPosition and watchPosition methods, that will hold one or several of the following options:
 
-![](./images/image327.png){width="6.5in" height="1.7645833333333334in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 327.  (4xx) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image327.png?raw=true"
+   alt="Example/Test OpenStreetMap"
+   width="85%" />
+</p>
 
 <h3>Example of use</h3>
 
@@ -22586,4 +22664,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-03-2022 Thu 7:54am</i></b></h3>
+<h3><b><i>07-05-2022 Tue 10:19pm</i></b></h3>
