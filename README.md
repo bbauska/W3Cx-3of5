@@ -39,53 +39,53 @@
 >### * [**Course tools**](#chb-3)
 
 ## [**Module 1: HTML5 Basics**](#ch1)
->### 1.1 [**Introduction - Module 1**](#ch1-1)
->### 1.2 [**From HTML1.0 to HTML5**](#ch1-2)
->### 1.3 [**New structural elements**](#ch1-3)
->### 1.4 [**Other elements and attributes**](#ch1-4)
->### 1.5 [**Microdata**](#ch1-5)
->### 1.6 [**Exercises**](#ch1-6)
+>### 1.1 [**Introduction - Module 1**](#ch1-1-1)
+>### 1.2 [**From HTML1.0 to HTML5**](#ch1-2-1)
+>### 1.3 [**New structural elements**](#ch1-3-1)
+>### 1.4 [**Other elements and attributes**](#ch1-4-1)
+>### 1.5 [**Microdata**](#ch1-5-1)
+>### 1.6 [**Exercises**](#ch1-6-1)
 
 ## [**Module 2: HTML5 Multimedia**](#ch3)
->### 2.1 [**Introduction - Module 2**](#ch2-1)
->### 2.2 [**Streaming multimedia content: the video and audio elements**](#ch2-2)
->### 2.3 [**Subtitles and closed captions**](#ch2-3)
->### 2.4 [**Enhanced HTML5 media players and frameworks**](#ch2-4)
->### 2.5 [**Webcam, microphone: the getUserMedia API**](#ch2-5)
->### 2.6 [**Exercises - Module 2**](#ch2-6)
+>### 2.1 [**Introduction - Module 2**](#ch2-1-1)
+>### 2.2 [**Streaming multimedia content: the video and audio elements**](#ch2-2-1)
+>### 2.3 [**Subtitles and closed captions**](#ch2-3-1)
+>### 2.4 [**Enhanced HTML5 media players and frameworks**](#ch2-4-1)
+>### 2.5 [**Webcam, microphone: the getUserMedia API**](#ch2-5-1)
+>### 2.6 [**Exercises - Module 2**](#ch2-6-1)
 
 ## [**Module 3: HTML5 Graphics**](#ch3)
->### 3.1 [**Introduction - Module 3**](#ch3-1)
->### 3.2 [**Basics of HTML5 canvas**](#ch3-2)
->### 3.3 [**Immediate drawing mode: rectangles, text, images**](#ch3-3)
->### 3.4 [**Path drawing mode: lines, circles, arcs, curves and other path drawing methods**](#ch3-4)
->### 3.5 [**Colors, gradients, patterns, shadows, etc.**](#ch3-5)
->### 3.6 [**Exercises - Module 3**](#ch3-6)
+>### 3.1 [**Introduction - Module 3**](#ch3-1-1)
+>### 3.2 [**Basics of HTML5 canvas**](#ch3-2-1)
+>### 3.3 [**Immediate drawing mode: rectangles, text, images**](#ch3-3-1)
+>### 3.4 [**Path drawing mode: lines, circles, arcs, curves and other path drawing methods**](#ch3-4-1)
+>### 3.5 [**Colors, gradients, patterns, shadows, etc.**](#ch3-5-1)
+>### 3.6 [**Exercises - Module 3**](#ch3-6-1)
 
 ## [**Module 4: HTML5 Animation**](#ch4)
->### 4.1 [**Introduction - Module 4**](#ch4-1)
->### 4.2 [**Basic animation techniques**](#ch4-2)
->### 4.3 [**Canvas and user interaction (keyboard, mouse)**](#ch4-3)
->### 4.4 [**A glimpse of advanced canvas functionalities**](#ch4-4)
->### 4.5 [**Exercises - Module 4**](#ch4-5)
+>### 4.1 [**Introduction - Module 4**](#ch4-1-1)
+>### 4.2 [**Basic animation techniques**](#ch4-2-1)
+>### 4.3 [**Canvas and user interaction (keyboard, mouse)**](#ch4-3-1)
+>### 4.4 [**A glimpse of advanced canvas functionalities**](#ch4-4-1)
+>### 4.5 [**Exercises - Module 4**](#ch4-5-1)
 
 ## [**Module 5: HTML5 Forms**](#ch5)
->### 5.1 [**Introduction - Module 5**](#ch5-1)
->### 5.2 [**Introduction to HTML5 Forms**](#ch5-2)
->### 5.3 [**Accessible forms**](#ch5-3)
->### 5.4 [**New <input> types**](#ch5-4)
->### 5.5 [**New forms attributes**](#ch5-5)
->### 5.6 [**New elements related to forms**](#ch5-6)
->### 5.7 [**Form validation API**](#ch5-7)
->### 5.8 [**Exercises - Module 5**](#ch5-8)
+>### 5.1 [**Introduction - Module 5**](#ch5-1-1)
+>### 5.2 [**Introduction to HTML5 Forms**](#ch5-2-1)
+>### 5.3 [**Accessible forms**](#ch5-3-1)
+>### 5.4 [**New <input> types**](#ch5-4-1)
+>### 5.5 [**New forms attributes**](#ch5-5-1)
+>### 5.6 [**New elements related to forms**](#ch5-6-1)
+>### 5.7 [**Form validation API**](#ch5-7-1)
+>### 5.8 [**Exercises - Module 5**](#ch5-8-1)
 
 ## [**Module 6: HTML5 Basic APIs**](#ch6)
->### 6.1 [**Introduction - Module 6**](#ch6-1)
->### 6.2 [**Introduction to HTML5 APIs**](#ch6-2)
->### 6.3 [**HTML5 Cache**](#ch6-3)
->### 6.4 [**The Web Storage API**](#ch6-4)
->### 6.5 [**The File API**](#ch6-5)
->### 6.6 [**The geolocation API**](#ch6-6)
+>### 6.1 [**Introduction - Module 6**](#ch6-1-1)
+>### 6.2 [**Introduction to HTML5 APIs**](#ch6-2-1)
+>### 6.3 [**HTML5 Cache**](#ch6-3-1)
+>### 6.4 [**The Web Storage API**](#ch6-4-1)
+>### 6.5 [**The File API**](#ch6-5-1)
+>### 6.6 [**The geolocation API**](#ch6-6-1)
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -483,28 +483,23 @@ The Web has become an essential aspect of our daily lives, and everyone should h
 <h3>Who is impacted?</h3>
 
 Web accessibility addresses all disabilities, including hearing, learning and cognitive, neurological, physical, speech, and visual disabilities. Some examples of Web accessibility features include:
-
--   *Captions* on audio and multimedia content for people who are hard of hearing;
-
--   *Clear and consistent layout* for people with learning and cognitive disabilities;
-
--   *Keyboard support* for people with physical disabilities and who do not use a mouse;
-
--   *Text alternatives* for people with visual disabilities and who are using screen readers;
+<ul>
+<li><i>Captions</i> on audio and multimedia content for people who are hard of hearing;</li>
+<li><i>Clear and consistent layout</i> for people with learning and cognitive disabilities;</li>
+<li><i>Keyboard support</i> for people with physical disabilities and who do not use a mouse;</li>
+<li><i>Text alternatives</i> for people with visual disabilities and who are using screen readers;</li>
+</ul>
 
 <h3>Web accessibility benefits people with and w*ithout* disabilities</h3>
 
 Web accessibility features also benefit many more users, such as:
-
--   People with temporary situational limitations, such as a broken arm;
-
--   People using mobile devices, televisions, and other access channels;
-
--   People using older computers, with low bandwidth, and other limitations;
-
--   People who are new to computers, to the Web, or to your own Web site;
-
--   People who are not fluent in the language of your particular Web site;
+<ul>
+<li>People with temporary situational limitations, such as a broken arm;</li>
+<li>People using mobile devices, televisions, and other access channels;</li>
+<li>People using older computers, with low bandwidth, and other limitations;</li>
+<li>People who are new to computers, to the Web, or to your own Web site;</li>
+<li>People who are not fluent in the language of your particular Web site;</li>
+</ul>
 
 The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. When Web pages, Web technologies, Web tools, or Web applications are badly designed, they can create barriers that exclude people from using the Web. More information is available in the [W3C Accessibility](https://www.w3.org/standards/webdesign/accessibility) overview.
 
@@ -516,9 +511,10 @@ Remember that when developing or redesigning a website or Web application, it is
 
 Two examples are provided below  but you can find more tips and information in these 2 resources:
 
--   [Tips for Getting Started with Web Accessibility](https://www.w3.org/WAI/gettingstarted/tips/)
-
--   [Easy Checks - A First Review of Web Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/)
+<ul>
+<li><a href="https://www.w3.org/WAI/gettingstarted/tips/">Tips for Getting Started with Web Accessibility]</a></li>
+<li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks - A First Review of Web Accessibility</a></li>
+</ul>
 
 <h3>Example #1: page title</h3>
 
@@ -527,6 +523,7 @@ Good page titles are particularly important for orientation --- to help people k
 <b><i>Check #1</i>: There is a title that adequately and briefly describes the content of a page, and it distinguishes the page from other Web pages.</b>
 
 <i>Example</i>:
+
 ```html5
 <head>
 ...
@@ -22082,4 +22079,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-06-2022 Wed 3:33pm</i></b></h3>
+<h3><b><i>07-08-2022 Fri 7:19aam</i></b></h3>
