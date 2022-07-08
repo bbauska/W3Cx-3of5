@@ -611,7 +611,7 @@ Even if differences exist between ids, classes and css/js implementations, they
 
 So various studies have been conducted in order to identify the most popular ids, class names, widgets, etc. used on the Web:
 
-Quoting from this >a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">article: </a>"During the creation of HTML5, Ian Hickson used Google\'s tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA (\"Metadata Analysis and Mining Application\"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics\".
+Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">article: </a>"During the creation of HTML5, Ian Hickson used Google\'s tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA (\"Metadata Analysis and Mining Application\"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics\".
 
 <h3>New elements added to the HTML5 set</h3>
 
@@ -685,7 +685,7 @@ This is an example of one way to organize a blog. Here, we have designed the HTM
 
 <h4>The CSS rules we used:</h4>
 
-```
+```css
 header {
     color: #007e99;
     font-size: 2.5em;
@@ -711,7 +711,7 @@ The navigation menu just below the header is a \<nav\> element. For the purpos
 
 <h4>HTML code:</h4>
 
-```
+```html5
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -733,7 +733,7 @@ The navigation menu just below the header is a \<nav\> element. For the purpos
 
 <h4>And here is the CSS we used in this example for the <nav> element:</h4>
 
-```
+```css
 nav {
     font-size: 1.5em;
     margin: 5px 0;
