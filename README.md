@@ -534,7 +534,7 @@ Good page titles are particularly important for orientation --- to help people k
 ...
 </head>
 ```
-<h3>Example 2: image text alternatives (\"alt text\")</h3>
+<h3>Example 2: image text alternatives ("alt text")</h3>
 
 Text alternatives (\"alt text\") are a primary way of making visual information accessible, because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user. Providing text alternatives allows the information to be rendered in a variety of ways by a variety of user agents. For example, a person who cannot see a picture can have the text alternative read aloud using synthesized speech.
 
@@ -553,11 +553,13 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 <br/>
 
 <p align="center"><a href="https://www.w3.org/Icons/w3c_home">W3C Home</a></p>
+
 ```
 <a href="https://w3.org">
 <img src="https://w3.org/Icons/w3c_home.png" width="72" height="48" alt="World Wide Web Consortium">
 </a>
 ```
+
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------- 12. html5 logo (13) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -567,7 +569,8 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
    width="15%">
 &nbsp;
 <br/>
-```html5
+
+```
 <!DOCTYPE html>
    <html lang="en">
    <head>
@@ -579,6 +582,7 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
  <body>
  ... <!-- The rest is content -->
 ```
+
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 13. new structural elements in html5 (14) --------------------------->
 <!------------------------------------------------------------------------------------------------>
