@@ -693,7 +693,7 @@ header span {
 }
 ```
 
-<h4>Use a <nav> for the navigation menu just below the header</h4>
+<h4>Use a \<nav\> for the navigation menu just below the header</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 15. image of the navigaton menu (17) ----------------------------->
@@ -755,7 +755,7 @@ nav span {
 }
 ```
 
-<h4>A <section> for each month and an <article> for each post in the blog</h4>
+<h4>A \<section\> for each month and an <article> for each post in the blog</h4>
 
 Now, we have one big \<section\> element that contains a set of \<article\> elements...
 
@@ -783,7 +783,6 @@ Now, we have one big \<section\> element that contains a set of \<article\> e
    </article>
 </section>
 ```
-
 <h4>And here is the CSS:</h4>
 
 ```
@@ -809,7 +808,7 @@ section h2 {
 
 Note that the H2, article, article header, etc. will be styled using these rules.
 
-<h3>Add a \<header\> at the beginning of each \<article\></h4>
+<h3>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 17. image of header at top of each article --------------------------->
@@ -856,7 +855,7 @@ Example for the first blog article:
 </section>
 ```
 
-<h4>Use \<figure\> and \<figcaption\> and embed \<img\> inside</h4>
+<h4>Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside</h4>
 
 Also note the way we included a figure using the new \"HTML5\" method, using a \<figure\>..\</figure\> element that embedded a \<img src=\.../\> element together with a \<figcaption\> element. 
 
