@@ -602,16 +602,16 @@ However, there are some issues with this approach:
 <ul>
 <li>id and class names differ from one developer to another, from one country to another, etc,</li><br/>
 <li>Even with the same ids and class names, the css rules may be different,</li><br/>
-<li<JavaScript libraries have become increasingly heavy over the years,</li><br/>
-<li<Web pages have become increasingly heavy over the years!</li><br/>
-<li<These elements can not be handled by the Web browser natively\...</li><br/>
+<li>JavaScript libraries have become increasingly heavy over the years,</li><br/>
+<li>Web pages have become increasingly heavy over the years!</li><br/>
+<li<These elements can not be handled by the Web browser natively...</li><br/>
 </ul>
 
 Even if differences exist between ids, classes and css/js implementations, they also share common behaviors, layouts, and \"ways of doing things\" that could be guessed at first glance by a human.
 
 So various studies have been conducted in order to identify the most popular ids, class names, widgets, etc. used on the Web:
 
-Quoting from this [article](https://dev.opera.com/articles/new-structural-elements-in-html5/): \"During the creation of HTML5, Ian Hickson used Google\'s tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA (\"Metadata Analysis and Mining Application\"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics\".
+Quoting from this >a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">article: </a>"During the creation of HTML5, Ian Hickson used Google\'s tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA (\"Metadata Analysis and Mining Application\"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics\".
 
 <h3>New elements added to the HTML5 set</h3>
 
@@ -619,9 +619,7 @@ The results of these surveys led to the addition of new structural elements in H
 
 Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\'s surveys gave birth to these new elements (click on the element\'s name to go to the W3C specification about this element):
 
-HTML5 structural elements with descriptions.
-
-HTML5 element  Description
+<h4>HTML5 structural element and Description</h4>
 
 [**\<header\>**](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>
 
@@ -646,16 +644,16 @@ And there is no \<content\> element even though the \<div class=\"content\"\>
 Read also at the end of this section about the new \<main\> element. This element is [part of the HTML5 recommendation](https://www.w3.org/TR/html5/grouping-content.html#the-main-element) and  an integral part of the HTML document structure.
 
 <h3>External resources:</h3>
-
--   A Smashing Magazine article: [Structural Semantics: The Importance Of HTML5 Sectioning Elements](https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/)
-
--   A Dev. Opera article: [New Structural Elements in HTML5](https://dev.opera.com/articles/new-structural-elements-in-html5/)
+<ul>
+<li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/">Structural Semantics: The Importance Of HTML5 Sectioning Elements.</a></li>
+<li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">New Structural Elements in HTML5.</a></li>
+</ul>
 
 <h3>A blog example that uses the structural elements</h3>
 
 Let\'s study [an example we put on JsBin](https://jsbin.com/bucokav/edit?html,output) (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
 
-<h4>Use a \<header\> at the top of the blog</h4>
+<h4>Use a <header> at the top of the blog</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 14. image 'Simple HTML5 Blog' (16) ------------------------------->
@@ -698,7 +696,7 @@ header span {
 }
 ```
 
-<h4>Use a \<nav\> for the navigation menu just below the header</h4>
+<h4>Use a <nav> for the navigation menu just below the header</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 15. image of the navigaton menu (17) ----------------------------->
@@ -711,7 +709,8 @@ header span {
 
 The navigation menu just below the header is a \<nav\> element. For the purpose of this example we haven\'t provided any value for the hyperlinks\...
 
-<b>HTML code:</b>
+<h4>HTML code:</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -731,7 +730,9 @@ The navigation menu just below the header is a \<nav\> element. For the purpos
     </ul>
 </nav>
 ```
-<b>And here is the CSS we used in this example for the \<nav\> element:</b>
+
+<h4>And here is the CSS we used in this example for the <nav> element:</h4>
+
 ```
 nav {
     font-size: 1.5em;
@@ -756,6 +757,7 @@ nav span {
     color: #fff
 }
 ```
+
 <h4>A <section> for each month and an <article> for each post in the blog</h4>
 
 Now, we have one big \<section\> element that contains a set of \<article\> elements...
@@ -769,7 +771,7 @@ Now, we have one big \<section\> element that contains a set of \<article\> e
    width="65%" />
 </p>
 
-<b>HTML code:</b>
+<h4>HTML code:</h4>
 
 ```
 <section>
@@ -785,7 +787,7 @@ Now, we have one big \<section\> element that contains a set of \<article\> e
 </section>
 ```
 
-<b>And here is the CSS:</b>
+<h4>And here is the CSS:</h4>
 
 ```
 section {
@@ -927,7 +929,7 @@ After the long \<section\> element that contains all the blog articles display
 
 We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at [the code of the online example](https://jsbin.com/bucokav/edit?html,output).
 
-<b>Here is the CSS for the \<aside\> element:</b>
+<h4>Here is the CSS for the \<aside\> element:</h4>
 
 ```
 aside {
@@ -949,7 +951,7 @@ aside .tag-cloud {
 
 We used a float:right CSS rule to put the tag cloud on the right\... In the following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
 
-<b>Here is the result:</b>
+<h4>Here is the result:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 20. the aside tag on the right (xx) ------------------------------>
@@ -991,7 +993,7 @@ Finally, we added a \<footer\> element (*lines 12-14* below) after the tag cl
 </html>
 ```
 
-<b>With this CSS rule:</b>
+<h4>With this CSS rule:</h4>
 
 ```
 footer {
@@ -1012,7 +1014,7 @@ And here is the result at the bottom of the page:
    width="65%" />
 </p>
 
-<b>More on \<article\> and \<section\></b>
+<h4>More on \<article\> and \<section\></h4>
 
 Can an \<article\> contain a \<section\>?
 
@@ -1031,7 +1033,7 @@ The \<article\> element was designed for stand-alone parts of a document that 
 
 \<section\> elements are used to cut a logical part into subparts.
 
-<b>An \<article\> may be cut into different \<section\> elements!</b>
+<h4>An <article> may be cut into different <section> elements!</h4>
 
 Example of a blog post defined as a long \<article\>, that is in turn cut into smaller \<section\> elements:
 
@@ -1276,7 +1278,7 @@ The outline of the last example looks like this:
 
 Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning root\", and would also need a heading.
 
-<b>Final good version:</b>
+<h4>Final good version:</h4>
 
 ```
 <body>
@@ -1293,7 +1295,7 @@ Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning
 
 In red, the sectioning root (\<body\>) and the sectioning elements (\<section\> here\...), each have a heading.
 
-<b>To sum up:</b>
+<h4>To sum up:</h4>
 
 -   Always use a heading element after a sectioning</lement, for example \<section\>**\<Hx\>\...\</Hx\>\...**\</section\>, and after \<body\>, where **x** can be 1..6,
 
@@ -1344,7 +1346,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 
 The example below defines several implicit \"sections\" by using \<Hx\> directly (at *lines 7 and 9*):
 
-<b>Ok version (no explicit sections everywhere):</b>
+<h4>Ok version (no explicit sections everywhere):</h4>
 
 ```
 <body>
@@ -1361,7 +1363,7 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 </body>
 ```
 
-<b>Better version (best practice):</b>
+<h4>Better version (best practice):</h4>
 
 ```
 <body>
@@ -1616,7 +1618,7 @@ This is an example of one way to organize a blog. Here, we have designed the HTM
 ...
 ```
 
-<b>The CSS rules we used:</b>
+<h4>The CSS rules we used:</h4>
 
 ```
 header {
@@ -1665,7 +1667,7 @@ The navigation menu just below the header is a \<nav\> element. For the purpos
 </nav>
 ```
 
-<b>And here is the CSS we used in this example for the \<nav\> element:</b>
+<h4>And here is the CSS we used in this example for the \<nav\> element:</h4>
 
 ```
 nav {
@@ -2010,7 +2012,7 @@ The blog example from the previous part of the course, on the other hand, uses a
 
 Indeed, we can also have a \<section\> that regroups all blog posts per month, each one being an \<article\> element.
 
-<b>A \<section\> may be cut into different \<article\> elements, too!</b>
+<h4>A \<section\> may be cut into different \<article\> elements, too!</h4>
 
 <h3>Can you put a \<nav\> in an \<article\>?</h3>
 
@@ -2310,7 +2312,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 
 The example below defines several implicit \"sections\" by using \<Hx\> directly (at *lines 7 and 9*):
 
-<b>Ok version (no explicit sections everywhere):</b>
+<h4>Ok version (no explicit sections everywhere):</h4>
 
 ```
 1.  <body>
