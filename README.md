@@ -614,7 +614,8 @@ Quoting from this <a href="https://dev.opera.com/articles/new-structural-elemen
 
 The results of these surveys led to the addition of new structural elements in HTML5. For example, the very popular \<div class=\"header\"\> led to the creation of a \<header\> element, \<div class=\"aside\"\> to a \<aside\> element, etc.
 
-Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\'s surveys gave birth to these new elements (click on the element\'s name to go to the W3C specification about this element):
+Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\'s surveys gave birth to these new elements (click on the element\'s name to go to 
+the W3C specification about this element):
 
 <h4>HTML5 structural element and Description</h4>
 
