@@ -2783,20 +2783,42 @@ These elements have been introduced for displaying a foldable zone in an HTML do
 
 In the screenshot below, taken from the W3C specification page, the text next to the horizontal arrow is a \<summary\> element, and the text displayed when we click on the summary part, is the \<details\> element. This is a sort of \"accordion\" with foldable content.
 
-
-![Example of summary details elements from the W3C specification](./images/image040.png){width="3.0in" height="5.791303587051619in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 40. example of summary details elements from the w3c specs (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image040.png?raw=true"
+   alt="Example of Summary Details Elements from the W3C specification"
+   width="35%">
+&nbsp;
+<br/>
 
 The \<details\> element generates a simple widget to show/hide element contents, optionally by clicking on its child \<summary\> element.
 
 Here is an example of what can be done using these elements ) see the [online version on JSBin](https://jsbin.com/yociyel/1/edit?html,css,js,output):
 
-
-![Example of folded summary details](./images/image041.jpeg){width="3.4791666666666665in" height="2.0729166666666665in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 41. example of folded summary details (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image040.png?raw=true"
+   alt="example of Folded Summary Details"
+   width="35%">
+&nbsp;
+<br/>
 
 And here is what is displayed after clicking on the small arrow-shaped icon to the left of the summary:
 
 
-![Example of summary details unfolded](./images/image042.jpeg){width="3.34375in" height="1.5625in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 42. Example of summary details unfolded (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image042.jpeg?raw=true"
+   alt="Example of summary details unfolded"
+   width="35%">
+&nbsp;
+<br/>
 
 <b>Here is the code of this example:</b>
 
@@ -2821,33 +2843,60 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> elem
 
 **Step 1: all folded:**
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Other example, unfolded](./images/image043.jpeg){width="3.3229166666666665in" height="0.4270833333333333in"}
 
 **Step 2: click on top level summary icon, the first \"hidden\" part appears\...**
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![The unfolded content contains in turn a summary details folded](./images/image044.jpeg){width="3.3333333333333335in" height="2.1875in"}
 
 **Step3: click on embedded summary icon inside the part that has been previously unfolded**
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![We unfolded the summary details inside the previous summary details. Recursive accordeons!](./images/image045.jpeg){width="3.25in" height="3.6875in"}
 
 **Source code of this example, see the summary/details inside another one:**
 
 ```
-> \<details\>
-> \<summary\>
-> How to beat the boss\...spoiler alert !
-> \</summary\>
-> \<p\> Just aim to the red spots near his eyes\</p\>
-> \<p\>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.\</p\>
-> \<details\>
-> \<summary\>
+> <details>
+> <summary>
+> How to beat the boss...spoiler alert !
+> </summary>
+> <p> Just aim to the red spots near his eyes</p>
+> <p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
+> <details>
+> <summary>
 > Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
-> \</summary\>
-> \<p\>Before finishing him, try to cut his trail, you will get a new weapon\</p\>
-> \<p\>Just try to stay behind him as long as you can, hitting his tail with your melee weapon, after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.\</p\>
-> \</details\>
-> \</details\>
+> </summary>
+> <p>Before finishing him, try to cut his trail, you will get a new weapon\</p\>
+> <p>Just try to stay behind him as long as you can, hitting his tail with your melee weapon, after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.\</p\>
+> </details>
+> </details>
 ```
 
 ### CSS pseudo classes for styling summary icons
@@ -2856,6 +2905,15 @@ There are CSS pseudo classes to style this icon when it is in the open or clos
 
 Example1 (see [online example](https://jsbin.com/tomehim/1/edit?html,css,output)):
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Styling the open/close icon](./images/image046.jpeg){width="3.4583333333333335in" height="0.4166666666666667in"}
 
 The color and background of the icon on the left are specified by the following CSS rule, which uses the pseudo class ::-webkit-details-marker
@@ -2869,6 +2927,15 @@ In this example: red arrow, white background.
 4.  }
 ```
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Styled summary details icon, unfolded state](./images/image047.jpeg){width="3.7708333333333335in" height="1.8125in"}
 
 Once opened, the selector details\[open\] can style the icon when \<details\> is unfolded. In this example: blue arrow, turquoise background. Here is the corresponding CSS rule:
@@ -2884,8 +2951,26 @@ It is also possible to change the icon itself using the CSS pseudo class :after
 
 **Example 2 (see it [online](https://jsbin.com/sajusop/edit?html,css,output)):**
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![A + as a custom open icon for summary](./images/image043.jpeg){width="3.40625in" height="0.4375in"}
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![A \"-\" as a custom close icon](./images/image048.jpeg){width="3.4791666666666665in" height="1.6458333333333333in"}
 
 CSS rules used in this example:
@@ -2920,6 +3005,16 @@ Use a \"-\" shaped icon, white, when details are displayed:
 -   On CanIUse: [compatibility table for details and summary elements](https://caniuse.com/#feat=details)
 
 ### 1.4.2 The \<time\> and \<mark\> Elements
+
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 
 ![Picture of a clock with the words \'it\'s about time\'](./images/image049.jpeg){width="2.0in" height="1.9085422134733159in"}
 
@@ -2985,6 +3080,15 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
 
 Duration values use the prefix "P" for "period" as in \<time datetime=\"P4D\"\> (period = four days)\...
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![funny pict duration values](./images/image050.jpeg){width="2.0in" height="2.0608694225721784in"}
 
 So you start the attribute string value with a \"P\", followed by a duration value that ends with another letter indicating the unit used: \"D\" for \"days\",  "H" for hours, "M" for minutes and "S" for seconds. 
@@ -3029,6 +3133,15 @@ Used without attributes, the value between the opening \<time\> and closing \
 
 ### The \<mark\> element
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Picture of a yellow hightlighter pen](./images/image051.jpeg){width="4.34375in" height="0.9791666666666666in"}
 
 The HTML \<mark\> tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.
@@ -3044,44 +3157,41 @@ Some use cases:
 Example 1: <https://jsbin.com/tafelic/edit?html,output>
 
 Source code:
-
+```
 \<!DOCTYPE html\>
-
 \<html lang=\"en\"\>
-
 \<head\>
-
 \<meta charset=utf-8 /\>
-
 \<title\>JS Bin\</title\>
-
 \</head\>
-
 \<body\>
-
 \<p\>Project is due in **\<mark\>.zip format\</mark\>** next monday.\</p\>
-
 \</body\>
-
 \</html\>
+```
 
 Example 2:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Another example for marking code](./images/image052.jpeg){width="4.6875in" height="0.9375in"}
 
 Source code:
-
-\<body\>
-
-\<pre\>
-
-\<code\>\<mark\>var\</mark\> i = 3;\</code\>
-
-\</pre\>
-
-\<p\>The var keyword is used to declare a variable in JavaScript.\</p\>
-
-\</body\>
+```
+<body>
+<pre>
+<code><mark>var</mark> i = 3;</code>
+</pre>
+<p>The var keyword is used to declare a variable in JavaScript.</p>
+</body>
+```
 
 #### Change the default style of the \<mark\> element
 
@@ -3089,19 +3199,25 @@ If you don\'t like the default yellow background, you may use CSS to change the 
 
 For example:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![style the mark element with CSS](./images/image053.jpeg){width="4.28125in" height="1.34375in"}
 
+```
 \... comes with this CSS rule:
-
+```
 1.  mark {
-
 2.      background-color: green;
-
 3.      color: yellow;
-
 4.  }
-
-#### 
+```
 
 #### External resources:
 
@@ -3126,20 +3242,17 @@ For example,  HTML code such as this:
 1.  \<a href=\"toto.jpg\"\>
 
 ```
-<!-- -->
+
 ```
 1.      please right click this link to download
-
 2.      the toto.jpg picture\</a\>
-
+```
 \...will ask the remote HTTP server to send back the toto.jpg file. The browser will receive in the response HTTP header from the server (and by default the browser will display the image in a new tab):
-
+```
 1.  \...
-
 2.  Content-type: image/jpg
-
 3.  \...
-
+```
 However, if the link points to some PHP code,  Java servlet code, or any kind of script/application on the server side, this remote server code can send in its HTTP response a Content-type that may force the browser to download the image instead of rendering it.
 
 It may also propose a name for the file to be downloaded that may be different from the one that appears in the URL of the href attribute. This can be done by generating, in addition to the Content-type line in the response HTTP header, a Content-Disposition line that looks like this:
@@ -3147,53 +3260,43 @@ It may also propose a name for the file to be downloaded that may be different f
 1.  Content-Disposition: attachment; filename=\"MyImage.png\";
 
 Here are some extracts from a Java Servlet that generate a zip file and forces the browser to propose downloading it using a specified name:
-
+```
 1.  protected void doGet(HttpServletRequest request, HttpServletResponse response)
-
 2.  throws ServletException, IOException {
-
 3.     try {
-
 4.       // Build the zip file
-
 5.         String path = getServletContext().getRealPath(\"data\");
-
 6.         File directory = new File(path);
-
 7.         String\[\] files = directory.list();
-
 8.         if (files != null && files.length \> 0) {
-
 9.           byte\[\] zip = zipFiles(directory, files);
-
 10.          ServletOutputStream sos = response.getOutputStream();
-
 11. 
-
 12.          // generate a HTTP response that forces the download
-
 13.          [response.setContentType(\"application/zip\");]
-
 14.          [response.setHeader(\"Content-Disposition\",]
-
 15.                             [\"attachment; filename=\\\"DATA.ZIP\\\"\");]
-
 16.          sos.write(zip); sos.flush();
-
 17.        }
-
 18.     } catch (Exception e) {
-
 19.        e.printStackTrace();
-
 20.     }
-
 21. }
+```
 
 The above example will cause the browser that invoked this server-side code to start the download of a file named \"DATA.ZIP\".
 
 ### To download a file using an arbitrary name: the download attribute
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Picture of a road sign with the words \'New Way\'](./images/image054.jpeg){width="1.2708333333333333in" height="0.9791666666666666in"}
 
 HTML5 proposes the use of a new attribute named download to download resources rather than navigating to them. The example below shows how to trigger the download of an image by the browser (instead of rendering it, which is the default behavior) with a name different from the name of the resource.
@@ -3206,12 +3309,30 @@ HTML5 proposes the use of a new attribute named download to download resourc
 
 This will indeed force the download of an image with a filename different from its original filename on the server side. Here is a screen capture of the Web browser while downloading the picture. We can see in the status bar the name of the link (the image is \"normal.gif\") and the downloaded file is \"MichelBuffa.gif\":
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Image saved with another names thanks to the download attribute](./images/image055.png){width="2.375in" height="0.71875in"}
 
 **WARNING**: since 2015, and for security reasons, **the image should be located on the same domain as the HTML page that contains the link** (using a relative URL works well, for example, but linking a page on another domain will not work - it will keep its original name).
 
 #### Interesting applications: serverless download
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![no server picture](./images/image056.jpeg){width="3.2395833333333335in" height="0.8958333333333334in"}
 
 ##### Serverless download demo (by E.Bilderman)
@@ -3222,6 +3343,15 @@ We won\'t detail this demo here, but take a look if you are curious to see wha
 
 We have also put the simplified [source code of this demo on JSBin.com](https://jsbin.com/muluwey/1/edit?html,css,js,output) for you to play with.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server.](./images/image057.png){width="5.0in" height="4.820754593175853in"}
 
 #### External resources:
@@ -3415,7 +3545,15 @@ Different use cases:
 ### Introduction
 
 After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.
-
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Picture of diverse tools used by workers](./images/image058.jpeg){width="2.0in" height="2.0in"}
 
 One of the most popular resources for testing microdata (as well as microformats and RDFa) is this [Google page about understanding how structured data works](https://developers.google.com/search/docs/guides/intro-structured-data). This page contains a link to a structured data testing tool that you can use to see how Google recognizes the semantic data you embed in your HTML code.
@@ -3475,11 +3613,28 @@ Source code:
 23. \</html\>
 
 Rendering of the page in a browser:
-
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Rendering of Michel Buffa home page](./images/image059.jpeg){width="6.5in" height="1.0298611111111111in"}
 
 Here is what Google sees of the page. We just entered its [URL](https://output.jsbin.com/gunuzus/1) in the [Google page about rich snippets and structured data](https://developers.google.com/search/docs/guides/intro-structured-data):
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Microdata of the example, as seen by Google](./images/image060.png){width="5.0in" height="2.4758213035870518in"}
 
 Note that the address is a fully featured embedded object in the Person\'s description.
@@ -3488,10 +3643,27 @@ Note that the address is a fully featured embedded object in the Person\'s descr
 
 The [Live Microdata Web site](https://foolip.org/microdatajs/live/)  is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![example of live microdata from the previous example. Microdata are displayed as json objects](./images/image061.jpeg){width="6.0in" height="5.615387139107612in"}
 
 And the JSON view of the microdata:
-
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![JSON view of the microdata](./images/image062.jpeg){width="4.0in" height="4.4615365266841644in"}
 
 ### 1.5.3 Adding Microdata to an HTML Page
@@ -3528,6 +3700,15 @@ If you are a developer and if you are familiar with object oriented programming,
 
 **Vocabularies are meant to be shared**
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Picture wish words \'time to share\'](./images/image063.jpeg){width="2.6145833333333335in" height="1.7395833333333333in"}
 
 If one of the existing vocabularies available at the schema.org Web site fits your needs, you should reuse it, as the most popular vocabularies are becoming de facto standards and will be taken into account by Web crawlers, browsers, and browser extensions.
@@ -3702,6 +3883,15 @@ To automatically generate microdata for describing persons, restaurants, movie
 
 Example:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata](./images/image064.jpeg){width="6.5in" height="3.3743055555555554in"}
 
 <h3 id="ch1-5-5">1.5.5 Examples of Well Structured Documents with Microdata</h3>
@@ -3718,16 +3908,43 @@ Visit the [exemple #1 online](https://jsbin.com/cuzipa/edit?html,css,output).
 
 Structure:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![picture of the first about me page example. Shows the table of content](./images/image065.jpeg){width="4.0625in" height="4.010416666666667in"}
 
 Microdata:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![microdata from the example page](./images/image066.jpeg){width="5.0in" height="3.7708333333333335in"}
 
 <h4>Example #2</h4>
 
 View the [example #2 online](https://jsbin.com/karemi/1/edit?html,output).
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Example page, shows table of content](./images/image067.jpeg){width="4.958333333333333in" height="3.4375in"}
 
 <h3 id="ch2-1">Module 2: HTML5 Multimedia</h3>
@@ -3739,6 +3956,15 @@ Until 2012, it was only possible to integrate an audio or video player using the
 
 Check the HTML code of the following CodePen:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image068.png){width="6.5in" height="2.061111111111111in"}
 
 Please note that:
@@ -3932,6 +4158,15 @@ To add some styling to the basic example we saw when we introduced the \<audio\
 
 Please move the mouse pointer over this player\'s elements: 
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Two gery-black horses in a field](./images/image070.jpeg){width="2.0833333333333335in" height="1.5625in"}
 
 Press Play to hear the horse ! 
@@ -4064,6 +4299,15 @@ CSS source code:
 
 See this** **[example online](https://jsbin.com/zoquru/4/edit?html,css,output) (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it\'s playing.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image071.png){width="5.947916666666667in" height="3.4895833333333335in"}
 
 This example uses the pseudo CSS class :hover in order to track the mouseover event. On mouseover, it uses a CSS transition property that interpolates the changes in the scale and orientation of the video element (done using a transform CSS property).
@@ -4120,6 +4364,15 @@ Example #1: with a regular video
 
 Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image072.png){width="6.5in" height="2.0680555555555555in"}
 
 Here is the HTML code. It\'s really simple, just notice the \<body onload=\"init();\"\> which calls the JavaScript init() function right after the page is loaded.
@@ -4218,6 +4471,15 @@ The CSS and JavaScript codes for this example are exactly the same as in Exam
 
 In this example, the video does not rescale; it\'s just cropped if the browser window is resized. Enlarge your browser and you\'ll see a man with a phone on the right. Resize your browser and you\'ll see only part of the video.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image074.png){width="5.0in" height="1.5854702537182852in"}
 
 **CSS code:**
@@ -4352,6 +4614,15 @@ The trick here is that:
 
 Full screen video that resizes and keeps its ratio, using the viewport units.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image075.png){width="6.5in" height="2.061111111111111in"}
 
 This time we obtain the same result as with the first example that used JavaScript and a resize event. The video resizes correctly and keeps its ratio.
@@ -4424,6 +4695,15 @@ This will create a complete video player for the file \"video.mp4\", with contro
 
 Please look at this interesting example:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image076.png){width="6.5in" height="2.061111111111111in"}Note that in order to play the video, you must click on the \"vid.play()\" text. To pause it, you click on the \"vid.pause()\" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
 
 **Conclusion**:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let\'s see a little more of what we can do using the JavaScript API of the \<video\> element (it will be an identical approach for the \<audio\> element, since it shares the same API by a very small margin).
@@ -4440,6 +4720,15 @@ The list of properties can be found at the [W3C HTML5 Video Events and API](htt
 
 Try the [direct link](https://www.w3.org/2010/05/video/mediaevents.html), and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image077.png){width="6.5in" height="4.313194444444444in"}
 
 #### Here is a table that shows the most interesting methods, properties, and events provided by the \<video\> element API
@@ -4937,6 +5226,15 @@ It is worth mentioning that most browsers work well with WebVTT, even if the MIM
 
 Here is an example of a video element that includes a \<track\> element in the .vtt (WebVTT) format (*line 9 *in the source code shown below):
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image086.png){width="6.5in" height="2.0881944444444445in"}
 
 The example uses a \<track\> element to insert basic *captions* to the video: sounds and music are described, in addition to standard *subtitles* that correspond to what the different movie characters say.
@@ -5054,142 +5352,76 @@ In the interactive example presented before, we used a file called sintel-capti
 \</video\>
 
 And here is an extract of the corresponding [sintel-captions.vtt](https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt) file:
-
+```
 1.  WEBVTT
-
 2.  
-
 3.  00:00:01.000 \--\> 00:00:02.042
-
 4.  (drumbeat)
-
 5.  
-
 6.  00:00:07.167 \--\> 00:00:12.025
-
 7.  (plaintive violin solo playing)
-
 8.  
-
 9.  00:00:15.000 \--\> 00:00:18.183
-
 10. (wind whistling)
-
 11. 
-
 12. 00:00:24.167 \--\> 00:00:27.025
-
 13. (orchestra music swells)
-
 14. 
-
 15. 00:00:43.033 \--\> 00:00:43.192
-
 16. (weapons clash)
-
 17. 
-
 18. 00:00:44.000 \--\> 00:00:44.175
-
 19. (gasps)
-
 20. 
-
 21. 00:00:44.183 \--\> 00:00:45.158
-
 22. (grunts)
-
 23. 
-
 24. 00:00:45.167 \--\> 00:00:47.058
-
 25. (groaning)
-
 26. 
-
 27. 00:00:54.192 \--\> 00:00:55.150
-
 28. (blade rings)
-
 29. 
-
 30. 00:00:55.158 \--\> 00:00:57.008
-
 31. (bellowing)
-
 32. 
-
 33. 00:00:57.017 \--\> 00:00:58.067
-
 34. (grunting)
-
 35. 
-
 36. 00:00:59.075 \--\> 00:01:00.133
-
 37. (panting)
-
 38. 
-
 39. 00:01:05.108 \--\> 00:01:06.125
-
 40. (cries out in agony)
-
 41. 
-
 42. 00:01:08.050 \--\> 00:01:09.058
-
 43. (panting)
-
 44. 
-
 45. 00:01:12.092 \--\> 00:01:13.142
-
 46. (panting)
-
 47. 
-
 48. 00:01:14.017 \--\> 00:01:18.125
-
 49. (orchestra plays ominous low notes)
-
 50. 
-
 51. 00:01:31.058 \--\> 00:01:35.133
-
 52. (plaintive violin solo returns)
-
 53. 
-
 54. 00:01:46.158 \--\> 00:01:49.058
-
 55. This blade has a dark past.
-
 56. 
-
 57. 00:01:51.092 \--\> 00:01:54.108
-
 58. It has shed much innocent blood.
-
 59. 
-
 60. 00:01:57.083 \--\> 00:02:00.000
-
 61. You\'re a fool for traveling alone
-
 62. so completely unprepared.
-
 63. 
-
 64. 00:02:01.100 \--\> 00:02:03.033
-
 65. You\'re lucky your blood\'s still flowing.
-
 66. 
-
 67. 00:02:04.183 \--\> 00:02:06.075
-
 68. Thank you.
+```
 
 This format is rather simple, but we still recommend reading [this excellent article from Mozilla Developer Network ](https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API)that explains in detail all the different options.
 
@@ -5283,16 +5515,43 @@ Now, we need to create a WebVTT file for this video. How can we synchronize an E
 Many tools - both free and commercial - are available to add subtitles to a video. Most are native applications you need to install on your computer. However, a free and very practical tool is available for doing this 100% in a Web browser: [amara](https://amara.org/en/).
 
 Go to the above Web site, click on the \"subtitle a video\" link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it\'s better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 
 ![](./images/image088.png){width="4.0in" height="3.3752187226596675in"}
 
 Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 
 ![](./images/image089.png){width="6.0in" height="5.204489282589677in"}
 
 Note that YouTube can also help you \"make subtitles\" with its speech recognition tool, but you will only be able to export in .srt format afterwards. You will have to convert this format afterwards to .vtt.
 
 ### Try your subtitled/captioned video
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 
 ![](./images/image090.png){width="4.0in" height="2.306801181102362in"}
 
@@ -5301,6 +5560,15 @@ Note that YouTube can also help you \"make subtitles\" with its speech recogniti
 In this section, we will look at different possibilities for styling and positioning  the text displayed as captions/subtitles while playing a video.
 
 The example below shows how we can do that (play the video for 40s, look at the positions and styles of the subtitles and captions, look at the HTML):
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 
 ![](./images/image091.png){width="6.0in" height="1.9147419072615923in"}
 
@@ -5411,6 +5679,15 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 52. That\'s it! For now\...
 
 ### How to position the subtitles
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 
 ![](./images/image092.png){width="6.5in" height="6.856944444444444in"}
 
@@ -5437,6 +5714,15 @@ And so on. Please look at the video as it is self-explanatory.
 ### Use of \<b\>, \<i\>, \<u\> for styling subtitles / captions
 
 One can use the HTML elements  \<b\>, \<i\>, \<u\> to modify the rendering of subtitles and captions, as illustrated in the example below:
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 
 ![](./images/image093.png){width="6.5in" height="2.8361111111111112in"}
 
@@ -5447,6 +5733,15 @@ It is possible to style using CSS classes as part of a cue value, using the \<
 1.  \<c.myclass\>This cue contains the class \"myclass\".
 
 2.  Browsers that support ::cue CSS should make it red.\</c\>
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 
 ![Snaphot of a video frame showing a cue containing the class \'myclass\'. Browsers that support ::cue CSS should make it red](./images/image094.jpeg){width="6.5in" height="2.8097222222222222in"}
 
@@ -5471,6 +5766,15 @@ Support differs from one browser to another, see [this compatibility table](htt
 ### Using voicing for styling: the \<v\> element
 
 Here is an example that shows the voices of the different characters displayed with different colors:
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 
 ![](./images/image095.png){width="6.5in" height="2.765277777777778in"}
 
@@ -5565,6 +5869,15 @@ Example of a WebVTT file that defines chapters:
 25. Styled WebVTT file
 
 An example of what you can achieve using chapters, using the [JW Player](https://www.jwplayer.com/):
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 
 ![](./images/image096.png){width="6.5in" height="2.527083333333333in"}
 
@@ -5601,12 +5914,30 @@ The \<track\> element comes with a powerful API that is used to develop many
 #### Example #1: add a navigation menu to start playing the video at given chapters
 
 This example shows a video with an enhanced progress bar that displays the different chapters as small \"clickable\" squares. Furthermore, using the JavaScript API of the \<track\> element, this Web site builds a navigation menu (on the right of the video):
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 
 ![navigation menu using the track javascript api](./images/image097.jpeg){width="6.5in" height="3.5965277777777778in"}
 
 #### Example #2: sync video with Google Map and Google Street View
 
 Check [this demo](https://simpl.info/track/map/index.html) (only on Chrome) by [Sam Dutton](https://samdutton.com/): it shows a video that comes with a WebVTT file that contains longitudes and latitudes. When the video plays, JavaScript functions are called at given times and get the longitude and latitude. A Google Map and a Google Street views are updated in real time.
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 
 ![video sync with map and street view](./images/image098.jpeg){width="6.5in" height="5.80625in"}
 
@@ -5615,6 +5946,15 @@ Check [this demo](https://simpl.info/track/map/index.html) (only on Chrome) by
 This example shows how we manage to render music scores in real time as the video plays. 
 
 Some JavaScript code listens to the ontimeupdate event while the video is playing. We use the currentTime property of the video to know exactly where we are in the video. Finally, we also rely on an external library to render in an HTML5 canvas the bars corresponding to the current video explanations. We render in real time guitar pro tablatures using the alphatab.net library.
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 
 ![](./images/image099.png){width="5.0in" height="2.784694881889764in"}
 
@@ -5664,6 +6004,15 @@ For those of you interested in this particular topic, here is a very good resou
 
 Open source, and made for developers, [video.js](https://videojs.com/) comes with many plugins (chapters, thumbnails etc.). 
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![VideoJS examples](./images/image100.png){width="6.145833333333333in" height="4.395833333333333in"}
 
 ### Which should I use? the \<video\> element and my own customization or an out of the box enhanced player?
@@ -5686,18 +6035,54 @@ Scrub Bar thumbnails (JWPlayer)
 
 Custom look\'n\'feel and logo (Sublime video player):
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![custom look\'n\'feel and logo](./images/image102.jpeg){width="5.0in" height="2.8125in"}
 
 Chapters and chapter thumbnails (JWPlayer):
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![chapters and chapter thumbnails](./images/image103.png){width="5.229166666666667in" height="2.3333333333333335in"}
 
 PayPal accessible player:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![paypal accessible player](./images/image104.png){width="5.427083333333333in" height="3.4895833333333335in"}
 
 LeanBack (says \"free for non-commercial use\", licensing is not very clear\...):
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image105.png){width="6.0in" height="5.586537620297463in"}
 
 <h3 id="ch2-4-1">2.4.1 Webcam</h3>
@@ -5716,6 +6101,15 @@ This API is one component of the [WebRTC specification](https://www.w3.org/TR/w
 
 The getUserMedia API, when dealing with video streams, is always used in conjunction with the \<video\> element.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![screenshot of a simple Web camera webcam display in a Web page](./images/image106.jpeg){width="3.3020833333333335in" height="3.15625in"}
 
 ### Typical use of the getUserMedia API with a Webcam
@@ -5796,157 +6190,99 @@ Let\'s see some more examples of what we can do with the getUserMedia API: start
 
 ### How to stop/release the Webcam
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Resulting image of Michel Buffa using his WebCam, with two custom controls below: \'Start WebCam\' and \'Stop WebCam\'](./images/image107.jpeg){width="3.1875in" height="3.4583333333333335in"}
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Webcam start/stop\</title\>
-
-\<script\>
-
+```
+<!DOCTYPE html\>
+<html lang=\"en\"\>
+<head\>
+<meta charset=\"utf-8\"\>
+<title\>Webcam start/stop\</title\>
+<script\>
 let webcamStream;
-
 function startWebcam() {
-
 // request video and audio stream from the user\'s webcam
-
 navigator.mediaDevices.getUserMedia({
-
 audio: true,
-
 video: true
-
 }).then((stream) =\> {
-
 let video = document.querySelector(\'#video\');
-
 video.srcObject = stream;
-
 video.play();
-
 webcamStream = stream;
-
 }).catch((error) =\> {
-
 console.log(\'navigator.getUserMedia error: \', error);
-
 });
 
 }
-
 function stopWebcam() {
-
 webcamStream.getTracks()\[0\].stop(); // audio
-
 webcamStream.getTracks()\[1\].stop(); // video
-
 }
-
-\</script\>
-
-\</head\>
-
-\<body \>
-
-\<video width=400 height=400 id=\"video\" controls\>\</video\>
-
-\<p\>
-
-\<button onclick=\"startWebcam();\"\>Start WebCam\</button\>
-
-\<button onclick=\"stopWebcam();\"\>Stop WebCam\</button\>
-
-\</p\>
-
-\</body\>
-
+</script\>
+</head\>
+<body \>
+<video width=400 height=400 id=\"video\" controls\>\</video\>
+<p\>
+<button onclick=\"startWebcam();\"\>Start WebCam\</button\>
+<button onclick=\"stopWebcam();\"\>Stop WebCam\</button\>
+</p\>
+</body\>
 \</html\>
+```
 
 In order to stop the Webcam and make the hardware \"unlock it\", you need to call the stop() method of the video stream.
 
 Code source:
-
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.  \<head\>
-
 4.  \<meta charset=\"utf-8\"\>
-
 5.  \<title\>Webcam start/stop\</title\>
-
 6.  \<script\>
-
 7.    let webcamStream;
-
 8.   
-
 9.    function startWebcam() {
-
 10.     // request video and audio stream from the user\'s webcam
-
 11.     navigator.mediaDevices.getUserMedia({
-
 12.       audio: true,
-
 13.       video: true
-
 14.     }).then((stream) =\> {
-
 15.       let video = document.querySelector(\'#video\');
-
 16.       video.srcObject = stream;
-
 17.       video.play();
-
 18.  
-
 19.       webcamStream = stream;
-
 20.     }).catch((error) =\> {
-
 21.         console.log(\'navigator.getUserMedia error: \', error);
-
 22.     });
-
 23.   }
-
 24.  
-
 25.   function stopWebcam() {
-
 26.     webcamStream.getTracks()\[0\].stop(); // audio
-
 27.     webcamStream.getTracks()\[1\].stop(); // video
-
 28.   }
-
 29. \</script\>
-
 30. \</head\>
-
 31. \<body \>
-
 32.   \<video width=400 height=400 id=\"video\" controls\>\</video\>
-
 33.   \<p\>
-
 34.   \<button onclick=\"startWebcam();\"\>Start WebCam\</button\>
-
 35.   \<button onclick=\"stopWebcam();\"\>Stop WebCam\</button\>
-
 36.   \</p\>
-
 37. \</body\>
-
 38. \</html\>
+```
 
 **Explanations:**
 
@@ -15042,140 +15378,80 @@ It has, however, several advantages over setInterval and setTimeout:
 You will note that  requestAnimationFrame(function) is used like setTimeout(function, delay). A call to requestAnimationFrame just asks the browser to call the function passed as a parameter ONCE, **and the target delay is fixed**, and corresponds to a 60 frames/s frame rate (16.6ms). Notice that an id is used for stopping an animation with cancelAnimationFrame(id). 
 
 Source code:
-
+```
 1.  \<body onload=\"init();\"\>
-
 2.  \<script\>
-
 3.  var canvas, ctx;
-
 4.  
-
 5.  function init() {
-
 6.     // This function is called after the page is loaded
-
 7.     // 1 - Get the canvas
-
 8.     canvas = document.getElementById(\'myCanvas\');
-
 9.     // 2 - Get the context
-
 10.    ctx=canvas.getContext(\'2d\');
-
 11. 
-
 12.    // 3 - start the animation
-
 13.    startAnimation();
-
 14. }
-
 15.  
-
 16.  **var id;**
-
 17.  function animationLoop(timeStamp) {
-
 18.    // 1 - Clear
-
 19.    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 20.    // 2 Draw
-
 21.    drawShapes(\...);
-
 22.    // 3 Move
-
 23.    moveShapes(\...);
-
 24.    // call mainloop  again after 16.6ms (corresponds to 60 frames/second)
-
 25.    **id = requestAnimationFrame(animationLoop);**
-
 26. }
-
 27.  
-
 28.  function startAnimation() {
-
 29.    **id = requestAnimationFrame(animationLoop);**
-
 30. }
-
 31.  function stopAnimation() {
-
 32.    if (id) {
-
 33.       **cancelAnimationFrame(id);**
-
 34.    }
-
 35. }
-
 36. \</script\>
-
 37. \</body\>
+```
 
-### Example: animate the monster with requestAnimationFrame
+<h4>Example: animate the monster with requestAnimationFrame</h4>
 
 Check the example below:
 
 Source code extract - please compare with the previous example that used setInterval():
-
+```
 1.  function animationLoop(timeStamp) {
-
 2.      // 1 - Clear
-
 3.      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 4.   
-
 5.      // 2 - Draw
-
 6.      drawMonster(monsterX, monsterY, monsterAngle, \'green\', \'yellow\');
-
 7.   
-
 8.      // 3 - Move
-
 9.      monsterX += 10;
-
 10.     monsterX %= canvas.width
-
 11.     monsterAngle+= 0.01;
-
 12.  
-
 13.     **// call mainloop again after 16.6 ms (60 frames/s)**
-
 14.     **requestId = requestAnimationFrame(animationLoop);**
-
 15. }
-
 16. 
-
 17. function start() {
-
 18.     **// Start the animation loop, targets 60 frames/s, this**
-
 19. **    // calls animationLoop only ONCE!**
-
 20.     **requestId = requestAnimationFrame(animationLoop);**
-
 21. }
-
 22. 
-
 23. function stop() {
-
 24.     if (requestId) {
-
 25.         **cancelAnimationFrame(requestId);**
-
 26.     }
-
 27. }
+```
 
 Notice that calling requestAnimationFrame(animationLoop) at* line 19*, and after that from within the loop at line 14, asks the browser to call the animationLoop function so that the delta between calls will be **as close as possible to 16.6ms  (this corresponds to 1/60th of a second)**.
 
@@ -15210,12 +15486,11 @@ The events are called *DOM events*, and we use the *DOM JavaScript API* to cr
 #### First method: declare event handlers in the HTML code
 
 You will often find this in examples on the Web:
-
+```
 1.  \<div id=\"someDiv\" **onclick=\"alert(\'clicked!\');\"**\>
-
 2.      content of the div
-
 3.  \</div\>
+```
 
 Note: this is not the recommended way to handle events, even if it\'s very easy to use. Mixing the \'visual layer\' (HTML) and the \'logic layer\' (JavaScript) in one place is ok for small examples (we have used this in some examples in this course) but is not the recommended way for full scale applications where a clean separation is best.
 
@@ -15234,12 +15509,11 @@ This method is fine, but  you will not be able to attach several listener funct
 #### Third method: register a callback to the event listener with the addEventListener method
 
 This is how we do it:
-
+```
 1.  document.getElementById(\'someDiv\').addEventListener(\'click\', function(evt) {
-
 2.      alert(\'clicked!\');
-
 3.  }, false);
+```
 
 The third parameter is not important for now, just set it to false, or simply do not add a third parameter.
 
@@ -15260,67 +15534,42 @@ Let\'s see next how to deal with the keyboard and the mouse. In the [W3Cx HTML5
 ### Source code for the knowledge check 4.3.1
 
 [Online example on JS Bin](http://jsbin.com/korele/edit)
-
-1.  \<!DOCTYPE html\>
-
-2.  \<html lang=\"en\"\>
-
-3.  \<head\>
-
-4.  \<meta charset=\"utf-8\"\>
-
-5.  \<title\>Click on button\</title\>
-
-6.  \</head\>
-
-7.  \<body\>
-
-8.     **\<button id=\"myButton\"\>Click me!\</button\>**
-
-9.  \<script\>
-
-10.    var button = document.getElementById(\'myButton\');
-
-11.    **// Define a click listener on the button**
-
-12. **   button.addEventListener(\'click\', processClick);**
-
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset="utf-8">
+5.  <title>Click on button</title>
+6.  </head>
+7.  <body>
+8.     <button id="myButton">Click me!</button>
+9.  <script>
+10.    var button = document.getElementById('myButton');
+11.    // Define a click listener on the button
+12.    button.addEventListener('click', processClick;**
 13. 
-
 14.    // callback
-
-15.    function processClick(**event**) {
-
-16.       console.log(\"Button clicked\");
-
+15.    function processClick(event) {
+16.       console.log("Button clicked");
 17. 
-
-18.       **// What is the event parameter?**
-
+18.       // What is the event parameter?
 19.    }
-
-20. \</script\>
-
-21. \</body\>
-
-22. \</html\>
-
+20. </script>
+21. </body>
+22. </html>
+```
 ### 
 
-### 4.3.2 Keyboard Interaction, Key Events
+<h3 id="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
 
 When you listen to keyboard related events (keydown, keyup or keypressed), the event parameter passed to the listener function will contain the code of the key that fired the event. Then it is possible to test what key has been pressed or released, like this:
-
+```
 1.  window.addEventListener(\'keydown\', function(event) {
-
 2.     if (**event.keyCode === 37**) {
-
 3.       //left arrow was pressed
-
 4.     }
-
 5.  }, false);
-
+```
 At *line 2*, the value \"37\" is the key code that corresponds to the left arrow. It might be difficult to know the correspondences between real keyboard keys and codes, so here are handy pointers:
 
 -   Try key codes with this [interactive test page](http://www.asquare.net/javascript/tests/KeyCode.html)
@@ -18057,11 +18306,12 @@ Source code:
 
 *Lines 12* and *22* shows the form attribute. Make sure that its value matches the id of the form!
 
-### 5.5.3 autocomplete
+<h3 id="5-5-3">5.5.3 autocomplete</h3>
 
 This attribute applies either to the \<form\> element or on individual \<input\> elements. It specifies when input fields must autocomplete the user\'s input based on the user\'s typing history. 
 
 Possible values of this attribute: on/off.
+
 
 ![on off funny picture](./images/image267.jpeg){width="1.6354166666666667in" height="1.2291666666666667in"}
 
@@ -18456,98 +18706,54 @@ Without the multiple attributeEnter several email addresses: Submit
 Bottom of Form
 
 Complete source code:
-
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.     \<head\>
-
 4.        \<meta charset=\"utf-8\"\>
-
 5.        \<title\>Jsbin\</title\>
-
 6.        \<style\>
-
 7.           input:invalid {
-
 8.           background-color: lightPink;
-
 9.           }
-
 10.          input:valid {
-
 11.          background-color: lightGreen;
-
 12.          }
-
 13.          fieldset {
-
 14.          border:1px solid;
-
 15.          padding:20px;
-
 16.          }
-
 17.       \</style\>
-
 18.    \</head\>
-
 19. 
-
 20.    \<body\>
-
 21.       \<p\>This form uses: \<code\>\<input type=\"email\" name=\"myemail\" \<b\>multiple\</b\>&gt;\</code\>\</p\>
-
 22. 
-
 23.       \<form\>
-
 24.          \<fieldset\>
-
 25.             \<legend\>With the multiple attribute \</legend\>
-
 26.             \<label\>Enter several email addresses: \</label\>
-
 27.             \<input type=\"email\" name=\"myemail\" title=\"you can enter multiple emails addresses, separated by a comma\" multiple/\>
-
 28.             \<button\>Submit\</button\>
-
 29.          \</fieldset\>
-
 30.       \</form\>
-
 31.    \<p\>
-
 32.       \<p\>This form does not use the multiple attribute:\</p\>
-
 33. 
-
 34.       \<form\>
-
 35.          \<fieldset\>
-
 36.             \<legend\>Without the multiple attribute \</legend\>
-
 37.             \<label\>Enter several email addresses: \</label\>
-
 38.             \<input type=\"email\" name=\"myemail\" title=\"only one address please!\"/\>
-
 39.             \<button\>Submit\</button\>
-
 40.          \</fieldset\>
-
 41.       \</form\>
-
 42.    \<p\>
-
 43.       Type in a list of email addresses separated by a comma. Look at the input field background color (pink = invalid, green = valid), try to submit. \</p\>
-
 44.    \</body\>
-
 45. \</html\>
-
 46.  
+```
 
 **Best practice:  add a title attribute indicating what you expect as a valid entry** (*lines 25* and *38*). If you enter bad values and submit, you will see in the error message the string value of the title attribute.
 
@@ -18578,28 +18784,24 @@ You might just glance at them and/or try the examples. The next pages cover thei
 ### 5.5.10 formaction and formmethod
 
 These attributes are targeted to the \<input type=\"submit\"\> input fields. They are rarely used.
-
-1.  \<input type=\"submit\"
-
-2.  formaction=\"preview.php\" formmethod=\"get\" value=\"Preview\"\>
+```
+1.  <input type="submit"
+2.  formaction="preview.php" formmethod="get" value="Preview">
+```
 
 When you use an \<input type=\"submit\"\> field with the formaction attribute, the action attribute value of the form is overridden. The form will be submitted to the URL / value of the formaction attribute of the  \<input type=\"submit\"\> field.
 
 The formmethod attribute does the same with the POST/GET method attribute of the form. If an \<input type=\"submit\"\> has a formmethod attribute, it overrides the value of the method attribute of the form.
 
 ### Typical use
-
-1.  \<form action=\"post.php\" method=\"post\"\>
-
-2.       \<input type=\"submit\"
-
-3.              **formaction=\"preview.php\" formmethod=\"get\"**
-
-4.              value=\"Preview\"\>
-
-5.       \<input type=\"submit\" value=\"Send\"\>
-
-6.  \</form\>
+```
+1.  <form action="post.php" method="post">
+2.       <input type="submit"
+3.              formaction="preview.php" formmethod="get"
+4.              value="Preview">
+5.       <input type="submit" value="Send">
+6.  </form>
+```
 
 *Line 3* overrides the values set in *line 1*. 
 
@@ -18616,7 +18818,15 @@ The first shows a form with two submit buttons: 
 -   the first button submits to the default URL specified by the action attribute of the form,
 
 -   the second button submits to another action specified by its formaction attribute.
-
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image272.png){width="4.0in" height="1.6570155293088364in"}
 
 The second example shows a form with two submit buttons:
@@ -18625,6 +18835,15 @@ The second example shows a form with two submit buttons:
 
 -   the second button using a POST:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image273.png){width="4.0in" height="1.4247790901137358in"}
 
 ### 5.5.11 formnovalidate
@@ -18693,6 +18912,15 @@ Top of Form
 
 Given name: ![](./images/image269.wmf)\
 Family name: ![](./images/image269.wmf)\
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image274.wmf) ![](./images/image275.wmf)
 
 Source code:
@@ -18785,6 +19013,15 @@ The possible values for this field are:
 
 [Try this online example at JSBin](https://jsbin.com/lokukam/4/edit?html,output)
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![example of use of the formenctype attribute](./images/image276.png){width="4.0in" height="1.2413790463692038in"}
 
 Source code:
@@ -18817,11 +19054,29 @@ Source code:
 
 If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,output) standalone mode (click the black arrow on the top right of the output tab, in JSBin), you should see this:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![js bin screenshot of the above example](./images/image277.png){width="5.0in" height="2.931089238845144in"}
 
 Then, open the devtools and go to the \"Network\" tab, click on the POST request. Once done, click on the right on the \"Header\" tab to see the HTTP headers, and scroll down, you should see the form-data entries in the header, like in this screenshot:
 
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image278.png){width="5.0in" height="3.4780982064741908in"}
 
 And if you start again and click on the left submit button, the one without the formenctype attribute, you should see that the form content has been submitted \"normally\" (default value is \"urlencoded\", spaces are replaced by \"+\", etc.). Here is a screenshot of what you should see:
@@ -18860,6 +19115,15 @@ Let\'s look at the HTML5 elements related to forms (specifically: \<datalist\>,
 
 The output element represents the result of a computation or user action. You can see it as a \"specialized \<div\> or \<span\>\" for displaying interactive results.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![example of output element use](./images/image279.jpeg){width="3.0in" height="0.7894739720034996in"}
 
 Typical use / interactive examples
@@ -18925,6 +19189,15 @@ The \<meter\> element displays colored bars to represent numeric values.
 
 It can be useful to display a colored gauge to show disk usage, to highlight the relevance of a query result, or the fraction of a voting population that favours a particular candidate, etc. This element is often used with the \<input type=\"range\"\> field as an instant feedback indicator.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![picture of a meter example](./images/image280.jpeg){width="5.0in" height="0.8374792213473315in"}
 
 The \<meter\> element should not be used to indicate progress. You should instead use a \<progress\> element.
@@ -19007,6 +19280,15 @@ The \<progress\> element is similar to \<meter\> but it is used for progress
 
 1.  \<progress id=pr value=50 min=0 max=100\>
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![picture of a funny progress meme syaing \'Every mistake you make is progress\'](./images/image282.jpeg){width="0.9479166666666666in" height="1.0625in"}
 
 Gives:  
@@ -19015,6 +19297,15 @@ The browser calculates the percentage corresponding to the value, min and m
 
 If no value attribute is set, the progress bar will display an \"indeterminate look\", that may slightly vary among different browser implementations. 
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![indeterminate progress bar screenshot](./images/image283.jpeg){width="5.052083333333333in" height="0.6354166666666666in"}
 
 Typical use
@@ -19051,10 +19342,28 @@ Source code:
 
 The \<datalist\> form element is useful for linking a list of choices to an input element.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![example of datalist for autocompletion](./images/image284.png){width="2.8854166666666665in" height="1.5729166666666667in"} ![Another example of use of datalist](./images/image285.png){width="2.8958333333333335in" height="0.625in"}
 
 We have already seen this element in action with different \<input\> elements, such as \<input type=\"color\"\>, \<input type=\"date\"\>, or \<input type=\"range\"\>.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![restricted choice of color](./images/image227.jpeg){width="1.5520833333333333in" height="0.96875in"}![restrict choices using a datalist element](./images/image286.jpeg){width="6.260416666666667in" height="2.625in"}![example of datalist for sliders ticks](./images/image287.jpeg){width="6.5in" height="0.45416666666666666in"}
 
 It is often \"linked\" to input fields either for restricting the value set that can be proposed  (i.e., restricted set of colors or possible dates, or for displaying slider ticks, as shown above), **but it may also be used in a more general way, for providing client-side auto-completion without the need to use JavaScript.**
@@ -19067,6 +19376,15 @@ The input field is related to the datalist that will propose auto-completion bas
 
 Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,output), or try it here in your browser (type the name of your favorite browser):
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image288.png){width="6.5in" height="0.58125in"}
 
 Source code of this example:
@@ -19292,10 +19610,28 @@ You must also take care of the different languages, otherwise you will get error
 
 Google Chrome on a French desktop computer:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![Chrome shows native error message localized and the title attribute content as is](./images/image290.jpeg){width="6.5in" height="2.3944444444444444in"}
 
 Same example on FireFox, the title attribute is ignored:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![same example on firefox, the title attribute is ignored](./images/image291.jpeg){width="6.447916666666667in" height="2.1041666666666665in"}
 
 **The built-in validation system is an improvement on what existed before HTML5 (i.e., nothing), but additional work is required if you want fully localized, hand-made validation feedback.**\
@@ -19308,6 +19644,15 @@ There is a JavaScript API for form validation. This API will let you use your ow
 
 ### Typical use
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 [Example of password checking at JSBin](https://jsbin.com/hovato/1/edit?html,output),  be careful to try this example in JS Bin standalone mode (click the small black arrow on the top right of the output tab).
 
 Or you may try it here in your browser:
@@ -19442,6 +19787,15 @@ The possible values for the validity property are: 
 
 Here is [an example at JSBin that shows how to test the different types of validation errors](https://jsbin.com/nalaxeg/1/edit?html,output), or you may try it here in your browser (enter bad values, too big, too small, enter invalid characters, etc.):
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image292.png){width="6.5in" height="0.7840277777777778in"}
 
 **Source code:**
@@ -19540,6 +19894,15 @@ This is useful for making custom error messages. More about this topic in the ne
 
 Custom validation: changing the default behavior, aggregating error messages, removing bubbles, etc.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image293.png){width="3.5in" height="1.7576082677165354in"}
 
 #### Criticism of the default behavior of HTML5 built-in validation
@@ -19560,6 +19923,15 @@ Here is [an adaptation of work presented at the developer.telerik.com Web site]
 
 Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output) or try it here in your browser: enter invalid values and submit with one or two invalid fields.
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![](./images/image294.png){width="6.5in" height="1.7381944444444444in"}
 
 **Complete source code:**
@@ -19792,7 +20164,7 @@ Explanations:
 
 -   *Lines 90-93*: The focus is given to the first invalid field that shows an error message.
 
-### 6.1.1 Video Intro -- Module 6
+<h3 id="6-1-1">6.1.1 Video Intro -- Module 6</h3>
 
 Final week!
 
@@ -19806,7 +20178,7 @@ Finally, we will look at the geolocation API that is useful for locating the per
 
 Instead of typing the zip code, entering the city, entering the country, you can guess that automatically and propose the form that is already filled with the address. I really enjoyed teaching you this HTML5 basic course and I\'m looking forward to meeting you the next HTML5 part-2 course that would address more advanced topics
 
-## 6.1.2 HTML5 JavaScript APIs
+<h3 id="6-1-2">6.1.2 HTML5 JavaScript APIs</h3>
 
 We have already studied some of the HTML5 JavaScript APIs, including:
 
@@ -19838,6 +20210,15 @@ Indeed, Web Storage provides two interfaces - sessionStorage and localStorag
 
 For convenience, we will mainly illustrate the localStorage object. Just change \"local\" to \"session\" and it should work (this time with a session lifetime).
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![key value pairs](./images/image296.png){width="1.7291666666666667in" height="1.6979166666666667in"}
 
 ### Simple key-value stores, one per domain (following the same origin policy)!
@@ -19872,10 +20253,28 @@ This data is located in a store attached to the origin of the page. We created[�
 
 Once opened in your browser, the JavaScript code is executed. With the browser dev. tools, we can check what has been stored in the localStorage for this domain:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![example of localStorage](./images/image297.jpeg){width="6.5in" height="5.430555555555555in"}
 
 Here is a view of the devtools. In more recent versions of Google Chrome, the \"Resources\" tab is named \"Applications\":
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![dev tools can be used to show what is in the local storage](./images/image298.jpeg){width="6.5in" height="6.209027777777778in"}
 
 ### Differences with cookies?
@@ -19995,18 +20394,14 @@ As you can easily guess from the above, we use var value = getItem(key) to ret
 -   ##### The key can contain spaces, for example we can write: localStorage.setItem(\"Instructor\'s name\", \"Michel\"); and var name =  localStorage.getItem(\"Instructor\'s name\");, while var name = localStorage.Instructor\'s name; will not work!
 
 -   ##### In a loop or in an iterator, sometimes we need to set/get localStorage values using this syntax, for example: 
-
-1.  var inputField = document.getElementById(\"firstName\");
-
+```
+1.  var inputField = document.getElementById("firstName");
 2.  saveInputFieldValue(inputField);
-
-3.  \... 
-
+3.  ... 
 4.  function saveInputFieldValue(field) {
-
 5.      localStorage.setItem(field.id, field.value);
-
 6.  }
+```
 
 ### Deleting a key with removeItem(key), or all keys with clear()
 
@@ -20019,14 +20414,12 @@ One way of handling this is to add a user interface button that calls clear() 
 ### Iterating local stores
 
 Local stores (localStorage or sessionStorage) can also be iterated through in order to list all the content that they contain. The order is not guaranteed, but this may be useful at times (if only for debugging purposes!). The following code lists everything in the current store:
-
+```
 1.  for (var i = 0, n = localStorage.length; i \< n; i++) {
-
 2.      var k = localStorage.**key(i)**;
-
 3.      console.log(k + \": \" +** localStorage\[k\]**); // get the ith value, the one with a key that is in the variable k.
-
 4.  }
+```
 
 Students may note that something seems a bit off in the example above: instead of calling localStorage.getItem(k), we simply access localStorage\[k\]. Why? Because keys in the local store can also be accessed as if the store were a simple JavaScript object. So instead of localStorage.getItem(\"foo\") and localStorage.setItem(\"foo\", \"bar\"), one can write localStorage.foo and localStorage.foo = \"bar\". Of course there are limitations to this mapping: any string can serve as a key, so that localStorage.getItem(\"one two three\") works, whereas that string would not be a valid identifier after the dot (but it could still work as localStorage\[\"one two three\"\]).
 
@@ -20039,138 +20432,74 @@ Students may note that something seems a bit off in the example above: instead o
 Then click on the second button to add data to the store, click on the third to remove data. Finally, the last one clears the whole data store.
 
 Source code:
-
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.  \<head\>
-
 4.  \<meta charset=utf-8 /\>
-
 5.  \<title\>Example of localStorare API use\</title\>
-
 6.  \<script\>
-
 7.     // Using localStorage
-
 8.     var counter = localStorage.getItem(\"count\") \|\| 0;
-
 9.     counter++;
-
 10.    localStorage.setItem(\"count\", counter);
-
 11. 
-
 12.    function getCountValue() {
-
 13.       // retrieve data
-
 14.       document.querySelector(\"#counter\").innerHTML = localStorage.count;
-
 15.    }
-
 16. 
-
 17.    function seeAllKeyValuePairsStored() {
-
 18.       // clear list first
-
 19.       document.querySelector(\'#list\').innerHTML=\"\";
-
 20. 
-
 21.       for (var i = 0, n = localStorage.length; i \< n; i++) {
-
 22.          var key = localStorage.key(i);
-
 23.          var value = localStorage\[key\];
-
 24.          console.log(key + \": \" + value);
-
 25. 
-
 26.          var li = document.createElement(\'li\');
-
 27.          li.innerHTML = key + \": \" + value;
-
 28.          document.querySelector(\'#list\').insertBefore(li, null);
-
 29.       }
-
 30.    }
-
 31. 
-
 32.    function resetStore() {
-
 33.         // erase all key values from store
-
 34.         localStorage.clear();
-
 35.         // reset displayed list too
-
 36.        document.querySelector(\'#list\').innerHTML=\"\";
-
 37.    }
-
 38. 
-
 39.    function addSomeData() {
-
 40.       // store data
-
 41.       localStorage.lastName = \"Buffa\";
-
 42.       localStorage.firstName = \"Michel\";
-
 43.       // refresh display
-
 44.       seeAllKeyValuePairsStored();
-
 45.    }
-
 46. 
-
 47.    function removeSomeData() {
-
 48.       // store data
-
 49.       localStorage.removeItem(\"lastName\");
-
 50.       localStorage.removeItem(\"firstName\");
-
 51.       // refresh display
-
 52.       seeAllKeyValuePairsStored();
-
 53.    }
-
 54. \</script\>
-
 55. \</head\>
-
 56. \<body onload=\"getCountValue()\"\>
-
 57.    \<h1\>Number of times this page has been seen on this browser: \<span id=\"counter\"\>\</span\>\</h1\>
-
 58. 
-
 59.    \<button onclick=\"seeAllKeyValuePairsStored()\"\>Show all key value pairs stored in localStorage\</button\>\<br/\>
-
 60.    \<output id=\"list\"\>\</output\>
-
 61.  
-
 62.    \<button onclick=\"addSomeData()\"\>Add some data to the store\</button\>\<br/\>
-
 63.    \<button onclick=\"removeSomeData()\"\>Remove some data\</button\>\<br/\>
-
 64.    \<button onclick=\"resetStore()\"\>reset store (erase all key/value pairs)\</button\>
-
 65. \</body\>
-
 66. \</html\>
+```
 
  You can check in the Chrome dev. tools user interface that the content of the localStorage changes as you click on the buttons.
 
@@ -20178,17 +20507,43 @@ Source code:
 
 Local stores are also useful for** saving/restoring user preferences** of Web Applications. For example, the JS Bin tool you have been using since the beginning of this course uses localStorage to store the list of tabs you open, and their width:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![example of preferences](./images/image301.jpeg){width="6.5in" height="4.3125in"}
 
 This way, the next time you come back to JSBin, \"it will remember your last settings\".
 
 Another example is a guitar FX processor / amp simulator your instructor is writing with some of his students. It uses localStorage to save/restore presets values:
 
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image000.jpeg?raw=true"
+   alt=""
+   width="35%">
+&nbsp;
+<br/>
 ![guitar fx processor uses localStorage](./images/image302.jpeg){width="6.5in" height="5.986111111111111in"}
 
 ### Save/restore preferences
 
-![animated rectangle with GUI](./images/image303.jpeg){width="2.78125in" height="1.96875in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 303. animate rectangle with gui (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image303.jpeg?raw=true"
+   alt="Animated Rectangle with GUI"
+   width="35%">
+&nbsp;
+<br/>
 
 Original example on JSBin:
 
@@ -20202,8 +20557,8 @@ We used the same generic code for saving/restoring input fields\' values we saw
 
 The function initPreferences is executed when the page is loaded.
 
-##### **Source code extract:**
-
+<h4>Source code extract:</h4>
+```
 > function initPreferences() {
 >
 >    console.log(\"Adding input listener to all input fields\");
@@ -20281,8 +20636,9 @@ The function initPreferences is executed when the page is loaded.
 >    ctx.lineWidth = parseInt(lineWidthWidget.value);
 >
 > }
+```
 
-##### **6.2.5 Example 3**
+<h3 is="6-2-5">6.2.5 Example 3</h3>
 
 [Online example at JSBin](https://jsbin.com/zowise/edit?html,js,output)
 
@@ -20298,36 +20654,25 @@ We start writing an init() function that is called when the page is loaded. Th
 
 2.  Restore the last saved value for each input field, if present.
 
-##### Source code:
-
+<h4>Source code:</h4>
+```
 > // Called when the page is loaded
->
 > window.onload = init;
->
 >  
->
 > function init() {
->
 >    console.log(\"Adding input listener to all input fields\");
->
 >    // add an input listener to all input fields
->
 >    var listOfInputsInForm = document.querySelectorAll(\"input\");
->
 >    for(var i= 0; i \< listOfInputsInForm.length; i++) {
->
 >       addInputListener(listOfInputsInForm\[i\]);
->
 >    }
->
 >    // restore form content with previously saved values
->
 >    restoreFormContent();
->
 > }
+```
 
 And here is the addInputListener(inputField) function. It takes an input field as parameter and attaches an oninput listener to it, that will save the field\'s content each time a value is entered. The key will be the id of the input field (*line 3*):
-
+```
 > function addInputListener(inputField) {
 >
 >     inputField.addEventListener(\'input\', function(event) {
@@ -20337,52 +20682,35 @@ And here is the addInputListener(inputField) function. It takes an input field
 >      }, false);
 >
 > }
+```
 
 Note that at *line 2*, we use addEventListener (that is not using the oninput property here). adddEventListener doesnot replace existing oninput definitions and keep all existing listeners unchanged.
 
 ##### Restore all input fields\' content using a generic function
 
 We have seen how to save all input fields\' content on the fly. Now, let\'s see how we can restore saved values and update the form. This is done using the function restoreFormContent():
-
+```
 > function restoreFormContent() {
->
 >    console.log(\"restoring form content from localStorage\");
->
 >    // get the list of all input elements in the form
->
 >    var listOfInputsInForm = document.querySelectorAll(\"input\");
->
 >    // For each input element,
->
 >    // - get its id (that is also the key for it\'s saved content
->
 >    // in the localStorage)
->
 >    // - get the value associated with the id/key in the local
->
 >    // storage
->
 >    // - If the value is not undefined, restore the value
->
 >    // of the input field
->
 >    for(var i= 0; i \< listOfInputsInForm.length; i++) {
->
 >      var fieldToRestore = listOfInputsInForm\[i\];
->
 >      var id = fieldToRestore.id;
->
 >      var savedValue = localStorage.getItem(id);
->
 >      if(savedValue !== undefined) {
->
 >         fieldToRestore.value = savedValue;
->
 >      }
->
 >    }
->
 > }
+```
 
 In this function, we first get the list of input fields (*line 5*), then iterate on it (*line 14*). For each input field, we get its id, which value is the key in localStorage for the previous data saved for this field (*lines 15-16*). Then if the value is not undefined, we restore it by setting the value of the input field (*lines 19-20*).
 
@@ -20390,7 +20718,7 @@ These generic functions can be used in many different projects
 
 Indeed, if you look carefully, you will see that these functions are really useful. You may easily embed them in your own projects, or perhaps adapt them for a particular need (i.e. for saving input type=\"checkboxes\" that work a bit differently), etc.
 
-<h3>6.2.6 Size limitations, etc.</h3>
+<h3 is="6-2-6">6.2.6 Size limitations, etc.</h3>
 
 Few things to remember, from the Web storage specification:
 
@@ -20420,7 +20748,7 @@ Note that if all you need is to store session-based data in a manner that is mor
 
 **By using sessionStorage, the data you store will be scoped and therefore not leak across tabs!**
 
-<h3>6.2.7 Storing more than strings? Use JSON!</h3>
+<h3 is="6-2-7">6.2.7 Storing more than strings? Use JSON!</h3>
 
 Storing strings is all well and good, but it quickly becomes limiting: you may want to store more complex data with at least a modicum of structure.
 
@@ -20428,55 +20756,47 @@ There are some simple approaches, such as creating your own minimal record forma
 
 [JSON](https://www.json.org/) provides a great way of encoding and decoding data that is a really good match for JavaScript. You have to be careful not to use circular data structures or non-serializable objects, but in the vast majority of cases, plugging JSON support into your local store is straightforward.
 
-##### **Typical usage**
-
+<h4>Typical usage</h4>
+```
 1.  locaStorage.key = JSON.stringify(object); // or\...
-
 2.  localStorage.setItem(key, JSON.stringify(object));
+```
 
 Let\'s try a simple toy example ([online at JSBin](https://jsbin.com/ciricis/2/edit?html,console,output)).  The example below saves a JavaScript object in JSON, then restores it and checks that the object properties are still there!
 
-![JSON save / load in localStorage](./images/image304.png){width="6.5in" height="2.236111111111111in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 304. json save/load in local storage (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image304.png?raw=true"
+   alt="JSON Save/Load in local storage"
+   width="65%">
+&nbsp;
+<br/>
 
-##### Source code:
-
-> \<!DOCTYPE html\>
->
-> \<html lang=\"en\"\>
->
-> \<head\>
->
-> \<meta charset=utf-8 /\>
->
-> \<title\>Storing JSON Objects with Local Storage\</title\>
->
-> \<script\>
->
->     var personObject= {\'givenName\': \'Michel\', \'familyName\': \'Buffa\'};
->
+<h4>Source code:</h4>
+```
+> <!DOCTYPE html>
+> <html lang="en">
+> <head>
+> <meta charset=utf-8 />
+> <title>Storing JSON Objects with Local Storage</title>
+> <script>
+>     var personObject= {'givenName': 'Michel', 'familyName': 'Buffa'};
 >     // Store the object as a JSON String
->
->     localStorage.setItem(\'testObject\', JSON.stringify(personObject));
->
+>     localStorage.setItem('testObject', JSON.stringify(personObject));
 >     // Retrieve the object from storage
->
->     var retrievedObject = JSON.parse(localStorage.getItem(\'testObject\'));
->
->     console.log(retrievedObject.firstName + \" \" + retrievedObject.lastName);
->
->    // then you can use retrievedObject.givenName, retrievedObject.familyName\...
->
-> \</script\>
->
-> \</head\>
->
-> \<body\>
->
-> \</body\>
->
-> \</html\>
+>     var retrievedObject = JSON.parse(localStorage.getItem('testObject'));
+>     console.log(retrievedObject.firstName + " " + retrievedObject.lastName);
+>    // then you can use retrievedObject.givenName, retrievedObject.familyName...
+> </script>
+> </head>
+> <body>
+> </body>
+> </html>
+```
 
-##### **Explanations:**
+<h4>Explanations:</h4>
 
 -   Line 7: we built a JavaScript object that contains a person.
 
@@ -20486,13 +20806,21 @@ Let\'s try a simple toy example ([online at JSBin](https://jsbin.com/ciricis/2/e
 
 -   Line 15: we print the values of the object properties.
 
-##### **Examples**
+<h4>Examples</h4>
 
-##### Example #1: showing how we can save a form\'s content in JSON
+<h4>Example #1: showing how we can save a form\'s content in JSON</h4>
 
 [Online example on JSBin that saves in localStorage an array of contacts in JSON](https://jsbin.com/nejewiw/2/edit?html,js,console,output)
 
-![localStorage JSON](./images/image305.png){width="6.5in" height="5.879166666666666in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 305. local storage json (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image305.png?raw=true"
+   alt="localStorage JSON"
+   width="65%">
+&nbsp;
+<br/>
 
 ##### Example #2: a form and a table that displays the contacts stored in localStorage
 
@@ -20500,11 +20828,27 @@ Let\'s try a simple toy example ([online at JSBin](https://jsbin.com/ciricis/2/e
 
 Add contacts using the form, see how the HTML table is updated. Try to reload the page: data are persisted in localStorage. 
 
-![serverless contact manager](./images/image306.png){width="6.5in" height="5.7875in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 306. serverless contact manager (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image306.jpeg?raw=true"
+   alt="Serverless Contact Manager"
+   width="65%">
+&nbsp;
+<br/>
 
 Examine the localStorage:
 
-![localStorage view in devtools shows the data](./images/image307.png){width="6.5in" height="3.9756944444444446in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 307. localStorage view in devtools shows the data (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image307.png?raw=true"
+   alt="localStorage view in devtools shows the data"
+   width="65%">
+&nbsp;
+<br/>
 
 The source code for this example is a bit long, and we suggest that you examine it in the JS Bin tool. We extensively commented it. It uses:
 
@@ -20517,7 +20861,6 @@ It shows how to use the DOM API for dynamically updating the page content (build
 <h3 id="ch6-3-1">6.3.1 Introduction</h3>
 
 The objective of this chapter is to provide an overview of the File API.
-
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 308. sound sample editor serverless (xxx) ----------------------------->
@@ -20659,6 +21002,7 @@ All this here is HTML5, this is canvas, these are form elements we saw the last 
 
 <h4>Source code:</h4>
 
+```
 > <!DOCTYPE html>
 > <html lang="en">
 > <head>
