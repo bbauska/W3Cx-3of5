@@ -651,7 +651,7 @@ Read also at the end of this section about the new \<main\> element. This elemen
 
 Let\'s study [an example we put on JsBin](https://jsbin.com/bucokav/edit?html,output) (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
 
-<h4>Use a <header> at the top of the blog</h4>
+<h4>Use a &lt;header&gt; at the top of the blog</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 14. image 'Simple HTML5 Blog' (16) ------------------------------->
@@ -694,7 +694,7 @@ header span {
 }
 ```
 
-<h4>Use a \<nav\> for the navigation menu just below the header</h4>
+<h4>Use a &lt;nav&gt; for the navigation menu just below the header</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 15. image of the navigaton menu (17) ----------------------------->
@@ -729,7 +729,7 @@ The navigation menu just below the header is a \<nav\> element. For the purpos
 </nav>
 ```
 
-<h4>And here is the CSS we used in this example for the <nav> element:</h4>
+<h4>And here is the CSS we used in this example for the &lt;nav&gt; element:</h4>
 
 ```css
 nav {
@@ -756,7 +756,7 @@ nav span {
 }
 ```
 
-<h4>A \<section\> for each month and an <article> for each post in the blog</h4>
+<h4>A &lt;section&gt; for each month and an &lt;article&gt; for each post in the blog</h4>
 
 Now, we have one big \<section\> element that contains a set of \<article\> elements...
 
@@ -894,7 +894,7 @@ Here is the CSS for the \<figcaption\> element we have used in the example (we
 5.  }
 ```
 
-<h4>Use an \<aside\> element to display a tag cloud on the\... side of the main content</h4>
+<h4>Use an &lt;aside&gt; element to display a tag cloud on the \... side of the main content</h4>
 
 After the long \<section\> element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, \"aside\"! This is done using - you already guessed it - an \<aside\> element:
 
@@ -926,7 +926,7 @@ After the long \<section\> element that contains all the blog articles display
 
 We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at [the code of the online example](https://jsbin.com/bucokav/edit?html,output).
 
-<h4>Here is the CSS for the \<aside\> element:</h4>
+<h4>Here is the CSS for the &lt;aside&gt; element:</h4>
 
 ```
 aside {
@@ -960,7 +960,7 @@ We used a float:right CSS rule to put the tag cloud on the right\... In the fo
 &nbsp;
 <br/>
 
-<h4>Add a \<footer\> at the end of the blog</h4>
+<h4>Add a &lt;footer&gt; at the end of the blog</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 21. image of the blog footer (xx) --------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -1011,7 +1011,7 @@ And here is the result at the bottom of the page:
    width="65%" />
 </p>
 
-<h4>More on \<article\> and \<section\></h4>
+<h4>More on &lt;article&gt; and &lt;section&gt;</h4>
 
 Can an \<article\> contain a \<section\>?
 
@@ -1030,7 +1030,7 @@ The \<article\> element was designed for stand-alone parts of a document that 
 
 \<section\> elements are used to cut a logical part into subparts.
 
-<h4>An <article> may be cut into different <section> elements!</h4>
+<h4>An &lt;article&gt; may be cut into different &lt;section&gt; elements!</h4>
 
 Example of a blog post defined as a long \<article\>, that is in turn cut into smaller \<section\> elements:
 
@@ -1298,7 +1298,7 @@ In red, the sectioning root (\<body\>) and the sectioning elements (\<section\>�
 
 -   Or, use a \<header\> element, like in \<section\>**\<header\>\<Hx\>\...\</Hx\>\.....\</header\>**\...\</section\>
 
-<h4>More about the \<header\> element</h4>
+<h4>More about the &lt;header&gt; element</h4>
 
 <b>The \<header\> element is just a container. It is not taken into account for defining new sections of a document nor does it affect the hierarchy levels.</b>
 
@@ -1585,7 +1585,7 @@ Read also at the end of this section about the new \<main\> element .  This e
 
 Let\'s study [an example we put on JsBin](https://jsbin.com/bucokav/edit?html,output) (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
 
-<h4>Use a \<header\> at the top of the blog</h4>
+<h4>Use a &lt;header&gt; at the top of the blog</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 14. image of the header element at the top of the blog (xx) ------------------->
@@ -1628,7 +1628,7 @@ header span {
 }
 ```
 
-<h4>Use a \<nav\> for the navigation menu just below the header</h4>
+<h4>Use a &lt;nav&gt; for the navigation menu just below the header</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 15. image of the navigation menu (xx) ------------------->
@@ -1664,7 +1664,7 @@ The navigation menu just below the header is a \<nav\> element. For the purpos
 </nav>
 ```
 
-<h4>And here is the CSS we used in this example for the \<nav\> element:</h4>
+<h4>And here is the CSS we used in this example for the &lt;nav&gt; element:</h4>
 
 ```
 nav {
@@ -1691,7 +1691,7 @@ nav span {
 }
 ```
 
-<h4>A \<section\> for each month and an \<article\> for each post in the blog</h4>
+<h4>A &lt;section&gt; for each month and an &lt;article&gt; for each post in the blog</h4>
 
 Now, we have one big \<section\> element that contains a set of \<article\> elements\...
 
@@ -1746,7 +1746,7 @@ Now, we have one big \<section\> element that contains a set of \<article\> 
 
 Note that the H2, article, article header, etc. will be styled using these rules.
 
-<h4>Add a \<header\> at the beginning of each \<article\></h4>
+<h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 17. image of the header at the top of each article (xx) ------------------->
@@ -1952,12 +1952,19 @@ footer {
    width="25%" />
 &nbsp;
 <br/>
+<!------------------------------------------------------------------------------------------------>
+<!---------------- 22. the resulting footer at the bottom of the page (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image022.jpeg?raw=true"
+   alt="image of the tag cloud defined as an aside element"
+   width="55%" />
+&nbsp;
+<br/>
 
-![The resulting footer at the bottom of the page](./images/image022.jpeg){width="5.0in" height="1.757425634295713in"}
+<h3>1.3.4 More on &lt;article&gt; and &lt;section&gt;</h3>
 
-<h3>1.3.4 More on \<article\> and \<section\></h3>
-
-<h4>Can an \<article\> contain a \<section\>?</h4>
+<h4>Can an &lt;article&gt; contain a &lt;section&gt;?</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- xx.  (xx) ------------------->
@@ -2009,9 +2016,9 @@ The blog example from the previous part of the course, on the other hand, uses a
 
 Indeed, we can also have a \<section\> that regroups all blog posts per month, each one being an \<article\> element.
 
-<h4>A \<section\> may be cut into different \<article\> elements, too!</h4>
+<h4>A &lt;section&gt; may be cut into different &lt;article&gt; elements, too!</h4>
 
-<h3>Can you put a \<nav\> in an \<article\>?</h3>
+<h3>Can you put a &lt;nav&gt; in an &lt;article&gt;?</h3>
 
 Yes, you can, in case you would like to propose some navigation links with each blog post, for example:
 
@@ -2313,14 +2320,14 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 
 ```
 1.  <body>
-2.  **<h4>Apples</h4>**
+2.  <h4>Apples</h4>
 3.  <p>Apples are fruit.</p>
 4.  <section>
 5.       <h2>Taste</h2>
 6.       <p>They taste lovely.</p>
 7.       <h6>Sweet<h6>
 8.       <p>Red apples are sweeter than green ones.</p\>
-9.       **<h1>Color</h1>**
+9.       <h1>Color</h1>
 10.      <p>Apples come in various colors.</p>
 11. </section>
 12. </body>
@@ -5695,9 +5702,10 @@ The video example tests nearly all the possibilities for positioning subtitles/
 
 It is possible to locate the cues in the video viewport using absolute or relative values. The attributes that position the text are located on the same line as the cue definition, like at *line 9* of the previous WebVTT example file:
 
+```
 9.  00:00:11.000 \--\> 00:00:15.000** position:5% align:start**
-
 10. This cue is positioned at the left side of the video.
+```
 
 There are several possible values:
 
@@ -5734,30 +5742,24 @@ It is possible to style using CSS classes as part of a cue value, using the \<
 
 2.  Browsers that support ::cue CSS should make it red.\</c\>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 94.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image094.jpeg?raw=true"
+   alt="Snaphot of a video frame showing a cue containing the class \'myclass\'. Browsers that support ::cue CSS should make it red"
+   width="65%">
 &nbsp;
 <br/>
 
-![Snaphot of a video frame showing a cue containing the class \'myclass\'. Browsers that support ::cue CSS should make it red](./images/image094.jpeg){width="6.5in" height="2.8097222222222222in"}
-
 CSS rules used in this example:
-
-1.  \<style type=\"text/css\"\>
-
+```
+1.  <style type="text/css">
 2.       ::cue(.myclass) { color: red; }
-
-3.       ::cue(v\[voice=\"Tarzan\"\]) { color: blue; }
-
-4.       ::cue(v\[voice=\"Jane\"\]) { color: green; }
-
+3.       ::cue(v[voice="Tarzan"]) { color: blue; }
+4.       ::cue(v[voice="Jane"]) { color: green; }
 5.       ::cue(#bigtext) { font-size: 150%; }
-
-6.  \</style\>
+6.  </style>
+```
 
 The ::cue pseudo element selector is used to match \"cues\" in the webVTT file. You add parenthesis and a secondary CSS selector to match cues that have a particular id, or a particular CSS class, etc. Look at the CSS above and at the extract from the webVTT file, play the video, you will understand how the above CSS classes affect the rendering of the subtitles for Jane and Tarzan\'s voices.
 
@@ -5767,48 +5769,39 @@ Support differs from one browser to another, see [this compatibility table](htt
 
 Here is an example that shows the voices of the different characters displayed with different colors:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 95.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image095.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-
-![](./images/image095.png){width="6.5in" height="2.765277777777778in"}
 
 Using the \<v\> tag, you will distinguish different voices that should be displayed in different colors (depending on the HTML5 video player implementation). See the CSS presented in the previous section to see how to specify the colors for the different voices.
 
 Example source code:
-
-1.  00:00:56.000 \--\> 00:01:04.000
-
-2.  \<v Tarzan\>Me Tarzan\...
-
-3.  \<v Jane\>That would make me Jane!
+```
+1.  00:00:56.000 --> 00:01:04.000
+2.  <v Tarzan>Me Tarzan...
+3.  <v Jane>That would make me Jane!
+```
 
 <h3 id="ch2-3-5">2.3.5 Chapter</h3>
 
 When you play a movie in DVD or Blu-Ray format, a menu appears on the screen: play a movie, choose subtitles, etc. Usually there is also a \"chapters\" menu that allows you to quickly access a part of the movie. With videos on the Web, one can also indicate the chapter breakdown, using WebVTT files and a \<track\> element/tag.
 
 Adding chapters is very similar to adding subtitles/captions. Look at *line 5* in the code below, where we use an extra \<track\> element with a kind=\"chapters\" attribute.
-
-1.  \<video poster=\"webvtt_talk.png\" style=\"width:100%\" preload=\"metadata\"\>
-
-2.      \<source src=\"webvtt_talk.webm\"\>
-
-3.      \<source src=\"webvtt_talk.mp4\"\>
-
-4.      \<source src=\"webvtt_talk.ogv\"\>
-
-5.      \<track id=\"nav\" src=\"webvtt_talk_navigation.vtt\" **kind=\"chapters\"** srclang=\"en\"\>
-
-6.      \<track id=\"cc\" src=\"webvtt_talk_captions.vtt\" kind=\"captions\"
-
-7.            label=\"captions\" srclang=\"en\" default\>
-
-8.  \</video\>
+```
+1.  <video poster="webvtt_talk.png" style="width:100%" preload="metadata">
+2.      <source src="webvtt_talk.webm">
+3.      <source src="webvtt_talk.mp4">
+4.      <source src="webvtt_talk.ogv">
+5.      <track id="nav" src="webvtt_talk_navigation.vtt" **kind="chapters"** srclang="en">
+6.      <track id="cc" src="webvtt_talk_captions.vtt" kind="captions"
+7.            label="captions" srclang="en" default>
+8.  </video>
+```
 
 Here is an example of WebVTT files with defined chapters. Each \"CUE\" at *lines 3, 7, 11*, \... can bear any name. We use \"Chapter 1, Chapter 2, Ending, etc.\" but you are free to name them as you wish.
 
@@ -5818,68 +5811,44 @@ Often, the \<video\> elements rendered in standard browsers ignore chapters, but
 
 Example of a WebVTT file that defines chapters:
 
+```
 1.  WEBVTT FILE
-
 2.   
-
 3.  Chapter 1
-
 4.  00:00:00.000 \--\> 00:00:10.700
-
 5.  Title Slide
-
 6.   
-
 7.  Chapter 2
-
 8.  00:00:10.700 \--\> 00:00:47.600
-
 9.  Introduction by Naomi Black
-
 10.  
-
 11. Chapter 3
-
 12. 00:00:47.600 \--\> 00:01:50.100
-
 13. Impact of Captions on the Web
-
 14.  
-
 15. Chapter 4
-
 16. 00:01:50.100 \--\> 00:03:33.000
-
 17. Requirements of a Video text format
-
 18.  
-
 19. Ending
-
 20. 00:03:33.000 \--\> 00:04:57.766
-
 21. Simple WebVTT file
-
 22.  
-
 23. Greetings 6
-
 24. 00:04:57.766 \--\> 00:06:16.666
-
 25. Styled WebVTT file
+```
 
 An example of what you can achieve using chapters, using the [JW Player](https://www.jwplayer.com/):
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 00.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image096.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-
-![](./images/image096.png){width="6.5in" height="2.527083333333333in"}
 
 <h3 id="ch2-3-6">2.3.6 Tools for Creating WebVTT Files</h3>
 
@@ -5915,31 +5884,27 @@ The \<track\> element comes with a powerful API that is used to develop many
 
 This example shows a video with an enhanced progress bar that displays the different chapters as small \"clickable\" squares. Furthermore, using the JavaScript API of the \<track\> element, this Web site builds a navigation menu (on the right of the video):
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 00. navigation menu using the track javascript api (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image097.jpeg?raw=true"
+   alt="navigation menu using the track javascript api"
+   width="65%">
 &nbsp;
 <br/>
-
-![navigation menu using the track javascript api](./images/image097.jpeg){width="6.5in" height="3.5965277777777778in"}
 
 #### Example #2: sync video with Google Map and Google Street View
 
 Check [this demo](https://simpl.info/track/map/index.html) (only on Chrome) by [Sam Dutton](https://samdutton.com/): it shows a video that comes with a WebVTT file that contains longitudes and latitudes. When the video plays, JavaScript functions are called at given times and get the longitude and latitude. A Google Map and a Google Street views are updated in real time.
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 98.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image098.jpeg?raw=true"
+   alt="video sync with map and street view"
+   width="65%">
 &nbsp;
 <br/>
-
-![video sync with map and street view](./images/image098.jpeg){width="6.5in" height="5.80625in"}
 
 #### Example #3: sync guitar tablatures and music score with a video
 
@@ -5950,13 +5915,11 @@ Some JavaScript code listens to the ontimeupdate event while the video is play
 <!----------------------------- 00.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image099.png?raw=true"
    alt=""
-   width="35%">
+   width="55%">
 &nbsp;
 <br/>
-
-![](./images/image099.png){width="5.0in" height="2.784694881889764in"}
 
 <h3 id="ch2-3-8">2.3.8 Enhanced HTML5 Video Players</h3>
 
@@ -6005,15 +5968,14 @@ For those of you interested in this particular topic, here is a very good resou
 Open source, and made for developers, [video.js](https://videojs.com/) comes with many plugins (chapters, thumbnails etc.). 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 100.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image100.png?raw=true"
+   alt="Video JS Examples"
+   width="65%">
 &nbsp;
 <br/>
-![VideoJS examples](./images/image100.png){width="6.145833333333333in" height="4.395833333333333in"}
 
 ### Which should I use? the \<video\> element and my own customization or an out of the box enhanced player?
 
@@ -6031,33 +5993,39 @@ Popular players such as  [JWPlayer](https://www.jwplayer.com/) have many expl
 
 Scrub Bar thumbnails (JWPlayer)
 
-![scrub bar thumbnails](./images/image101.jpeg){width="4.84375in" height="3.6458333333333335in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 101. scrub bar thumbnailes (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image101.jpeg?raw=true"
+   alt="Scrub Bar Thumbnails"
+   width="45%">
+&nbsp;
+<br/>
 
 Custom look\'n\'feel and logo (Sublime video player):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 102.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image002.jpeg?raw=true"
+   alt="Custom Look and Feel and logo"
+   width="55%">
 &nbsp;
 <br/>
-![custom look\'n\'feel and logo](./images/image102.jpeg){width="5.0in" height="2.8125in"}
 
 Chapters and chapter thumbnails (JWPlayer):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 103. chapters and chapter thumbnails (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image103.png?raw=true"
+   alt="Chapter and Chapter Thumbnails"
+   width="55%">
 &nbsp;
 <br/>
-![chapters and chapter thumbnails](./images/image103.png){width="5.229166666666667in" height="2.3333333333333335in"}
 
 PayPal accessible player:
 
@@ -6194,23 +6162,22 @@ Let\'s see some more examples of what we can do with the getUserMedia API: start
 <!----------------------------- 00.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image107.jpeg?raw=true"
+   alt="Resulting image of Michel Buffa using his WebCam, with two custom controls below"
    width="35%">
 &nbsp;
 <br/>
-![Resulting image of Michel Buffa using his WebCam, with two custom controls below: \'Start WebCam\' and \'Stop WebCam\'](./images/image107.jpeg){width="3.1875in" height="3.4583333333333335in"}
 
 ```
-<!DOCTYPE html\>
-<html lang=\"en\"\>
-<head\>
-<meta charset=\"utf-8\"\>
-<title\>Webcam start/stop\</title\>
-<script\>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Webcam start/stop</title>
+<script>
 let webcamStream;
 function startWebcam() {
-// request video and audio stream from the user\'s webcam
+// request video and audio stream from the user's webcam
 navigator.mediaDevices.getUserMedia({
 audio: true,
 video: true
@@ -6219,69 +6186,68 @@ let video = document.querySelector(\'#video\');
 video.srcObject = stream;
 video.play();
 webcamStream = stream;
-}).catch((error) =\> {
-console.log(\'navigator.getUserMedia error: \', error);
+}).catch((error) => {
+console.log('navigator.getUserMedia error: ', error);
 });
-
 }
 function stopWebcam() {
-webcamStream.getTracks()\[0\].stop(); // audio
-webcamStream.getTracks()\[1\].stop(); // video
+webcamStream.getTracks()[0].stop(); // audio
+webcamStream.getTracks()[1].stop(); // video
 }
-</script\>
-</head\>
-<body \>
+</script>
+</head>
+<body >
 <video width=400 height=400 id=\"video\" controls\>\</video\>
-<p\>
+<p>
 <button onclick=\"startWebcam();\"\>Start WebCam\</button\>
 <button onclick=\"stopWebcam();\"\>Stop WebCam\</button\>
-</p\>
-</body\>
-\</html\>
+</p>
+</body>
+</html>
 ```
 
 In order to stop the Webcam and make the hardware \"unlock it\", you need to call the stop() method of the video stream.
 
 Code source:
 ```
-1.  \<!DOCTYPE html\>
-2.  \<html lang=\"en\"\>
-3.  \<head\>
-4.  \<meta charset=\"utf-8\"\>
-5.  \<title\>Webcam start/stop\</title\>
-6.  \<script\>
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset="utf-8">
+5.  <title>Webcam start/stop</title>
+6.  <script>
 7.    let webcamStream;
 8.   
 9.    function startWebcam() {
-10.     // request video and audio stream from the user\'s webcam
+10.     // request video and audio stream from the user's webcam
 11.     navigator.mediaDevices.getUserMedia({
 12.       audio: true,
 13.       video: true
-14.     }).then((stream) =\> {
-15.       let video = document.querySelector(\'#video\');
+14.     }).then((stream) => {
+15.       let video = document.querySelector(\'#video');
 16.       video.srcObject = stream;
 17.       video.play();
 18.  
 19.       webcamStream = stream;
-20.     }).catch((error) =\> {
-21.         console.log(\'navigator.getUserMedia error: \', error);
+20.     }).catch((error) => {
+21.         console.log('navigator.getUserMedia error: ', error);
 22.     });
 23.   }
 24.  
 25.   function stopWebcam() {
-26.     webcamStream.getTracks()\[0\].stop(); // audio
-27.     webcamStream.getTracks()\[1\].stop(); // video
+26.     webcamStream.getTracks()[0\].stop(); // audio
+27.     webcamStream.getTracks()[1\].stop(); // video
 28.   }
-29. \</script\>
-30. \</head\>
-31. \<body \>
-32.   \<video width=400 height=400 id=\"video\" controls\>\</video\>
-33.   \<p\>
-34.   \<button onclick=\"startWebcam();\"\>Start WebCam\</button\>
-35.   \<button onclick=\"stopWebcam();\"\>Stop WebCam\</button\>
-36.   \</p\>
-37. \</body\>
-38. \</html\>
+29. </script>
+30. </head>
+31. <body>
+32.   <video width=400 height=400 id="video" controls></video>
+33.   <p>
+34.   <button onclick="startWebcam();">Start WebCam</button>
+35.   <button onclick="stopWebcam();">Stop WebCam</button>
+36.   </p>
+37. </body>
+38. </html>
 ```
 
 **Explanations:**
@@ -6313,73 +6279,50 @@ Try this example that shows how to use the getUserMedia API. Note the CSS effect
 let video;
 
 let webcamStream;
-
+```
 function startWebcam() {
-
 // request video and audio stream from the user\'s webcam
-
 navigator.mediaDevices.getUserMedia({
-
 audio: true,
-
 video: true
-
 }).then((stream) =\> {
-
 let video = document.querySelector(\'#video\');
-
 video.srcObject = stream;
-
 video.play();
-
 webcamStream = stream;
-
 }).catch((error) =\> {
-
 console.log(\'navigator.getUserMedia error: \', error);
-
 });
-
 }
-
 function stopWebcam() {
-
 webcamStream.getTracks()\[0\].stop(); // audio
-
 webcamStream.getTracks()\[1\].stop(); // video
-
 }
-
+```
 //\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
 // CODE FOR CHANGING CSS FILTERS
-
 //\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
+```
 let idx = 0;
-
-let filters = \[
-
-\'grayscale\',
-
-\'sepia\',
-
-\'blur\',
-
-\'brightness\',
-\'contrast\',
-\'hue-rotate\', \'hue-rotate2\', \'hue-rotate3\',
-\'saturate\',
-\'invert\'
-\];
+let filters = [
+'grayscale',
+'sepia',
+'blur',
+'brightness',
+'contrast',
+'hue-rotate', 'hue-rotate2', 'hue-rotate3',
+'saturate',
+'invert'
+];
 function changeFilter(el) {
 // Remove all CSS classes for element el
-el.className = \'\';
+el.className = '';
 // Choose a CSS class name
-console.log(\"toggling effect: \" + filters\[idx % filters.length\]);
-let effect = filters\[idx++ % filters.length\];
+console.log("toggling effect: " + filters[idx  filters.length]);
+let effect = filters[idx++ % filters.length];
 el.classList.add(effect);
 }
+```
 
 <h4>CSS</h4>
 ```
@@ -6415,15 +6358,10 @@ filter: hue-rotate(180deg);
 filter: hue-rotate(270deg);
 }
 .saturate {
-
 filter: saturate(10);
-
 }
-
 .grayscale {
-
 filter: grayscale(1);
-
 }
 .sepia {
 filter: sepia(1);
@@ -6436,23 +6374,23 @@ filter: invert(1)
 <h4>HTML</h4>
 ```
 <!DOCTYPE html>
-\<html lang=\"en\"\>
-\<head\>
-\<meta charset=\"utf-8\"\>
-\<title\>Webcam and CSS effects\</title\>
-\</head\>
-\<body \>
-\<h1\>Example of CSS effects on a live video stream\</h1\>
-\<p\>
-Click the button \"start webcam at the end of this page, then click on the video to toggle the different effects.\</p\>
-\</p\>
-\<video onclick=\"changeFilter(this);\" width=400 height=400 id=\"video\" controls autoplay\>\</video\>
-\<p\>
-\<button onclick=\"startWebcam();\"\>Start WebCam\</button\>
-\<button onclick=\"stopWebcam();\"\>Stop WebCam\</button\>
-\</p\>
-\</body\>
-\</html\>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Webcam and CSS effects</title>
+</head>
+<body>
+<h1>Example of CSS effects on a live video stream</h1>
+<p>
+Click the button "start webcam at the end of this page, then click on the video to toggle the different effects.</p>
+</p>
+<video onclick="changeFilter(this);" width=400 height=400 id="video" controls autoplay></video>
+<p>
+<button onclick="startWebcam();">Start WebCam\</button>
+<button onclick="stopWebcam();">Stop WebCam</button>
+</p>
+</body>
+</html>
 ```
 
 <h4>Taking a snapshot from the live Webcam stream</h4>
@@ -22423,4 +22361,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-08-2022 Fri 7:19aam</i></b></h3>
+<h3><b><i>07-09-2022 Sat 8:50pm</i></b></h3>
