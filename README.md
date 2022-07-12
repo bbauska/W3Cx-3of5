@@ -161,7 +161,7 @@ Here are a few possibilities for Web editors:
 <li><a href="http://bluegriffon.org/">BlueGriffon</a> - a WYSIWYG ("What You See Is What You Get") content editor for the World Wide Web. Powered by Gecko, the rendering engine of Firefox, it\'s a modern and robust solution to edit Web pages in conformance to the latest Web Standards.</li>
 <li><a href="https://atom.io/">Atom</a> - another cross platform editor, created by <a href="https://github.com/">GitHub</a>.</li>
 <li><a href="https://github.com/">GitHub</a> itself - check <a href="https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1">this resource that explains how to create a Web site using GitHub</a>.</li>
-<li><a href="https://www.vim.org/">Vim/a> or <a href="https://www.gnu.org/software/emacs/">Emacs</a> - great editors, but if you&apos;re not already familiar with these, this isn&apos;t the time to try.</li>
+<li><a href="https://www.vim.org/">Vim</a> or <a href="https://www.gnu.org/software/emacs/">Emacs</a> - great editors, but if you&apos;re not already familiar with these, this isn&apos;t the time to try.</li>
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -186,7 +186,7 @@ To help you practice during the whole duration of the course, we use the followi
 </ul>
 JS Bin is an open source collaborative Web development debugging tool. Most of the examples that are in this course are on JSBin.
 
-Tutorials can be found on the Web (such as[ <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843">this one</a> or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it&apos;s always better to be logged in (it&apos;s free) if you do not want to lose your contributions/personal work.
+Tutorials can be found on the Web such as <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843">this one</a> or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it&apos;s always better to be logged in (it&apos;s free) if you do not want to lose your contributions/personal work.
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------ 03. codepen logo (04) ------------------------------------->
@@ -205,7 +205,7 @@ Tutorials can be found on the Web (such as[ <a href="https://code.tutsplus.com/
 CodePen is an HTML, CSS, and JavaScript code editor that previews/showcases your code bits in your browser.
 It helps with cross-device testing, real-time remote pair programming and teaching.
 
-Here\'s an article of interest if you use CodePen: [Things you can do with CodePen](https://codepen.io/brentmiller/post/things-you-can-do-with-codepen) \[Brent Miller, February 6, 2019\].
+Here&apos;s an article of interest if you use CodePen: <a href="https://codepen.io/brentmiller/post/things-you-can-do-with-codepen">Things you can do with CodePen</a> [Brent Miller, February 6, 2019\].
 
 There are many other handy tools such as [JSFiddle](https://jsfiddle.net/), and [Dabblet](https://dabblet.com/). Please share your favorite tool on the discussion forum, and explain why! Share also your own code contributions, such as a nice canvas animation, a great looking HTML5 form, etc.
 
