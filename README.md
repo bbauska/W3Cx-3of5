@@ -103,7 +103,7 @@
 <li>About W3C and the Web</li>
 </ul>
 
-W3C has designed a <a href="https://www.edx.org/professional-certificate/front-end-web-developer-9">"Front-End Web Developer" (FEWD) Professional Certificate</a> where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript.
+W3C has designed a <a href="https://www.edx.org/professional-certificate/front-end-web-developer-9" target="_blank">"Front-End Web Developer" (FEWD) Professional Certificate</a> where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript.
 
 The <b>W3C FEWD</b> program is composed of 5 courses:
 <ol type="1">
@@ -114,7 +114,7 @@ The <b>W3C FEWD</b> program is composed of 5 courses:
 <li>JavaScript Introduction</li>
 </ol>
 
-This course is a natural follow up to the <a href="https://www.edx.org/course/css-basics">CSS Basics</a> and <a href="https://www.edx.org/course/html5-and-css-fundamentals">HTML5 & CSS Fundamentals</a> courses.
+This course is a natural follow up to the <a href="https://www.edx.org/course/css-basics" target="_blank">CSS Basics</a> and <a href="https://www.edx.org/course/html5-and-css-fundamentals" target="_blank">HTML5 & CSS Fundamentals</a> courses.
 
 As such, required prerequisites are:
 <ul>
@@ -277,7 +277,7 @@ All the tools listed below are Web-based, and are available as downloadable sour
 
 <h3>W3C Validator</h3>
 
-The <a href="https://validator.w3.org/" target="__blank">W3C validator</a> checks the <a href="https://validator.w3.org/docs/help.html#validation_basics">markup validity</a> of various Web document formats, such as HTML. Note that you are automatically directed to the <a href="https://validator.w3.org/nu/">Nu Html Checker</a> when validating an HTML5 document.
+The <a href="https://validator.w3.org/" target="__blank">W3C validator</a> checks the <a href="https://validator.w3.org/docs/help.html#validation_basics" target="_blank">markup validity</a> of various Web document formats, such as HTML. Note that you are automatically directed to the <a href="https://validator.w3.org/nu/" target="_blank">Nu Html Checker</a> when validating an HTML5 document.
 
 <h3>CSS Validator</h3>
 
@@ -382,9 +382,9 @@ Tim Berners-Lee at his desk in CERN, 1994
 
 [Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/) wrote a [proposal](https://www.w3.org/History/1989/proposal.html) in 1989 for a system called the World Wide Web. He then created the first Web browser, server, and Web page. He wrote the first specifications for URLs, HTTP, and HTML.
 
-In October 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology, Laboratory for Computer Science \[MIT/LCS\] in collaboration with [CERN](https://home.cern/), where the Web originated (see information on the [original CERN Server](https://www.w3.org/Daemon/)), with support from DARPA and the [European Commission](https://ec.europa.eu/index_en.htm).
+In October 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology, Laboratory for Computer Science \[MIT/LCS\] in collaboration with <a href="https://home.cern/">CERN</a>, where the Web originated (see information on the <a href="https://www.w3.org/Daemon/">original CERN Server</a>, with support from DARPA and the <a href="https://ec.europa.eu/index_en.htm">European Commission</a>.
 
-In April 1995, [Inria](https://www.inria.fr/) became the first European W3C host, followed by [Keio University of Japan](https://www.keio.ac.jp/) (Shonan Fujisawa Campus) in Asia in 1996. In 2003, [ERCIM](https://www.ercim.eu/) took over the role of European W3C Host from Inria. In 2013, W3C announced [Beihang University](https://ev.buaa.edu.cn/) as the fourth Host.
+In April 1995, <a href="https://www.inria.fr/">Inria</a> became the first European W3C host, followed by <a href="https://www.keio.ac.jp/>Keio University of Japan</a> (Shonan Fujisawa Campus) in Asia in 1996. In 2003, <a href="https://www.ercim.eu/">ERCIM</a> took over the role of European W3C Host from Inria. In 2013, W3C announced <a href="https://ev.buaa.edu.cn/">Beihang University</a> as the fourth Host.
 
 In addition to these four Host locations that employ W3C staff, there are [W3C Offices](https://www.w3.org/Consortium/Offices/staff) around the globe that support the developer communities in their regions and organize local events. Find the one next to your place!
 
@@ -1043,7 +1043,7 @@ Example of a blog post defined as a long \<article\>, that is in turn cut into 
       <h2\>My travel to India</h2>
     </section>
     <section id="id1part3">
-      <h2>Return to France</h2\>
+      <h2>Return to France</h2>
     </section>
 </article>
 ```
@@ -8518,23 +8518,19 @@ Your browser does not support the canvas tag.
 </body>
 </html>
 ```
+
+```
 1.  ctx.translate(100, 100);
-
 2.  ctx.rotate(Math.PI/4);
-
 3.  ctx.scale(0.5, 0.5);
-
 4.  
-
 5.  // Draw the monster at (0, 0)
-
 6.  drawMonster(0, 0);
-
 7.  // Draw a filled rectagle at (250, 0)
-
 8.  ctx.fillRect(250, 0, 100, 100);
+```
 
-### How can we reset the coordinate system, how can we go back to the previous one?
+<h4>How can we reset the coordinate system, how can we go back to the previous one?</h4>
 
 Aha, this is a very interesting question\... the answer is in the next page!
 
@@ -8551,189 +8547,104 @@ Multiple contexts can be backed up consecutively and restored. Contexts saved w
 ***Best practice**: save the context at the beginning of any function*\
 *that changes the context, restore it at the end of the function!*
 
-### Example of a function that changes the context and restores it after execution
+<h4>Example of a function that changes the context and restores it after execution</h4>
 
-JS
-
+<h4>JS</h4>
+```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
-
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
-
 //variables to be used when creating the arrow
-
 var headlen = 10;
-
 var angle = Math.atan2(toy-fromy,tox-fromx);
-
 ctx.save();
-
 ctx.strokeStyle = color;
-
 //starting path of the arrow from the start square to the end square and drawing the stroke
-
 ctx.beginPath();
-
 ctx.moveTo(fromx, fromy);
-
 ctx.lineTo(tox, toy);
-
 ctx.lineWidth = arrowWidth;
-
 ctx.stroke();
-
 //starting a new path from the head of the arrow to one of the sides of the point
-
 ctx.beginPath();
-
 ctx.moveTo(tox, toy);
-
-ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),toy-headlen\*Math.sin(angle-Math.PI/7));
-
+ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
 //path from the side point of the arrow, to the other side point
-
-ctx.lineTo(tox-headlen\*Math.cos(angle+Math.PI/7),toy-headlen\*Math.sin(angle+Math.PI/7));
-
+ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
 //path from the side point back to the tip of the arrow, and then again to the opposite side point
-
 ctx.lineTo(tox, toy);
-
 ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),toy-headlen\*Math.sin(angle-Math.PI/7));
-
 //draws the paths created above
-
 ctx.stroke();
-
 ctx.restore();
-
 }
+```
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<title\>Saving and restoring the context\</title\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<style\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Saving and restoring the context</title>
+<meta charset="utf-8"/\>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var canvas, ctx;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 // 3 - we can draw, try to change these values
-
-drawMonster(200, 100, Math.PI/4, \'lightGreen\', \'yellow\');
-
-// draw another rectangle at (0, 0), you will see it\'s black
-
+drawMonster(200, 100, Math.PI/4, 'lightGreen', 'yellow');
+// draw another rectangle at (0, 0), you will see it's black
 // (default color), and at the top left corner of the canvas
-
 // (original position of the coordinate system)
-
 ctx.fillRect(0, 0, 80, 80);
-
 }
-
 function drawMonster(x, y, angle, headColor, eyeColor) {
-
 // GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
-
 ctx.save();
-
 // Moves the coordinate system so that the monster is drawn
-
 // at position (x, y)
-
 ctx.translate(x, y);
-
 ctx.rotate(angle)
-
 // head
-
 ctx.fillStyle=headColor;
-
 ctx.fillRect(0,0,200,200);
-
 // eyes
-
-ctx.fillStyle=\'red\';
-
+ctx.fillStyle='red';
 ctx.fillRect(35,30,20,20);
-
 ctx.fillRect(140,30,20,20);
-
 // interior of eye
-
 ctx.fillStyle=eyeColor;
-
 ctx.fillRect(43,37,10,10);
-
 ctx.fillRect(143,37,10,10);
-
 // Nose
-
-ctx.fillStyle=\'black\';
-
+ctx.fillStyle='black';
 ctx.fillRect(90,70,20,80);
-
 // Mouth
-
-ctx.fillStyle=\'purple\';
-
+ctx.fillStyle='purple';
 ctx.fillRect(60,165,80,20);
-
 // coordinate system at (0, 0)
-
-drawArrow(ctx, 0, 0, 100, 0, 10, \'red\');
-
-drawArrow(ctx, 0, 0, 0, 100, 10, \'red\');
-
+drawArrow(ctx, 0, 0, 100, 0, 10, 'red');
+drawArrow(ctx, 0, 0, 0, 100, 10, 'red');
 // GOOD PRACTICE !
-
 ctx.restore();
-
 }
-
-\</script\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height=\"400\"\>
-
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\</body\>
-
-\</html\>
+</canvas>
+</body>
+</html>
+```
 
 We slightly modified the function that draws the monster:
 
@@ -8745,65 +8656,47 @@ We slightly modified the function that draws the monster:
 
 -   We restored it at the end (BEST PRACTICE).
 
-![example of context save / restore : a monster is drawn by a function that saves and restored the context, then a rectangle is draw, with context as it was previously ](./images/image132.jpeg){width="4.083333333333333in" height="4.09375in"}
+<~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 132. laptop showing unicorn validator (06) --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image132.jpeg?raw=true"
+   alt="Example of context save-restore: a monster drawn by a function that saves and restored the context, then a rectangle is drawn, with context as it was previously"
+   width="40%" />
+</p>
 
 Source code extract of this function: notice at *lines 3 *and* 26* how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (l*ines 7-8*). The rest of the code is nearly the same as in the last version of the monster example.
 
+```
 1.  function drawMonster(x, y, angle, headColor, eyeColor) {
-
 2.      // BEST PRACTICE: SAVE CONTEXT AND RESTORE IT AT THE END
-
 3.      ctx.save();
-
 4.  
-
 5.      // Moves the coordinate system so that the monster is drawn
-
 6.      // at position (x, y)
-
 7.      ctx.translate(x, y);
-
 8.      ctx.rotate(angle);
-
 9.  
-
 10.     // head
-
 11.     ctx.fillStyle=headColor;
-
 12.     ctx.fillRect(0,0,200,200);
-
 13. 
-
 14.     // eyes
-
 15.     ctx.fillStyle=\'red\';
-
 16.     ctx.fillRect(35,30,20,20);
-
 17.     ctx.fillRect(140,30,20,20);
-
 18. 
-
 19.     // interior of eye
-
 20.     ctx.fillStyle=eyeColor;
-
 21.     ctx.fillRect(43,37,10,10);
-
 22.     ctx.fillRect(143,37,10,10);
-
 23.  
-
 24.     \...
-
 25.     // BEST PRACTICE!
-
 26.     ctx.restore();
-
 27. }
-
-### 
+```
 
 <h3 id="ch3-3-1">3.3.1 Immediate Mode</h3>
 
@@ -8815,121 +8708,69 @@ While drawing rectangles with strokeRect or fillRect, drawing text or drawing
 
 Another mode called \"path mode\" or \"buffered mode\" will be seen later in this course, which will be useful for drawing lines, curves, arcs, and also rectangles. Rectangles are the only shapes that have methods for drawing them *immediately* and also other methods for drawing them in \"*path/buffered mode*\".
 
-### Example: drawing rectangles in immediate mode using bests practices
+<h4>Example: drawing rectangles in immediate mode using bests practices</h4>
 
 Let\'s give an example that draws several rectangles, filled or wireframe, with different colors and line widths:
 
-HTML
+<h4>HTML</h4>
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<title\>Immediate mode\</title\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<style\>
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Immediate mode</title>
+<meta charset="utf-8"/>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var canvas, ctx;
-
 window.onload = function () {
-
 canvas = document.getElementById(\'myCanvas\');
-
 ctx = canvas.getContext(\'2d\');
-
 // black rectangle, default color (black)
-
 ctx.fillRect(10, 10, 100, 100);
-
 // outlined rectangle, default color
-
 ctx.strokeRect(150, 10, 100, 100);
-
 // outlined rectangle filled in red, outline blue
-
 ctx.fillStyle = \'red\';
-
 ctx.strokeStyle = \'lightBlue\';
-
 ctx.lineWidth = 10;
-
 ctx.fillRect(100, 150, 150, 150);
-
 ctx.strokeRect(100, 150, 150, 150);
-
 // A function to automatize previous drawing
-
 var angle = Math.PI / 10;
-
 drawFilledRectangle(300, 150, 150, 150, \'pink\', \'green\', 10, angle);
-
 drawFilledRectangle(300, 150, 150, 150, \'yellow\', \'purple\', 10, angle + 0.5);
-
 };
-
 function drawFilledRectangle(x, y, w, h, fillColor, strokeColor, lw, angle) {
-
 // GOOD PRACTICE : save if the function change the context or coordinate
-
 // system
-
 ctx.save();
-
 // position coordinate system
-
 ctx.translate(x, y);
-
 ctx.rotate(angle);
-
 // set colors, line width\...
-
 ctx.lineWidth = lw;
-
 ctx.fillStyle = fillColor;
-
 ctx.strokeStyle = strokeColor;
-
 // draw at 0, 0 as we translated the coordinate
-
 // system already
-
 ctx.fillRect(0, 0, w, h);
-
 ctx.strokeRect(0, 0, w, h);
-
 // GOOD PRACTICE : a restore for a save!
-
 ctx.restore();
-
 }
-
-\</script\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\" width=\"578\" height=\"400\"\>
-
-\</canvas\>
-
-\</body\>
-
-\</html\>
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="578" height="400">
+</canvas>
+</body>
+</html>
+```
 
 <h3 id="ch3-3-2">3.3.2 Drawing Text</h3>
 
@@ -19049,7 +18890,7 @@ Let\'s look at the HTML5 elements related to forms (specifically: \<datalist\>,
 | \* Not really useful for most developers. |                                   |
 +-------------------------------------------+-----------------------------------+
 
-<h3>5.6.2 <output></h3>
+<h3 id="ch5-6-2">5.6.2 <output></h3>
 
 The output element represents the result of a computation or user action. You can see it as a \"specialized \<div\> or \<span\>\" for displaying interactive results.
 
@@ -19128,12 +18969,12 @@ The \<meter\> element displays colored bars to represent numeric values.
 It can be useful to display a colored gauge to show disk usage, to highlight the relevance of a query result, or the fraction of a voting population that favours a particular candidate, etc. This element is often used with the \<input type=\"range\"\> field as an instant feedback indicator.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 280.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image280.jpeg?raw=true"
    alt=""
-   width="35%">
+   width="50%">
 &nbsp;
 <br/>
 ![picture of a meter example](./images/image280.jpeg){width="5.0in" height="0.8374792213473315in"}
@@ -19353,7 +19194,7 @@ Source code of this example:
 
 As you can see at l*ines 2* and *4*, the id and list attributes match. The \<datalist\> element is wrapped around a set of  \<option\> that are available for selection by another form control (in this example the input field from *line 2*).
 
-### 5.7.1 Introduction
+<h3 id="ch5-7-1">5.7.1 Introduction</h3>
 
 In this section of the course, we will look at CSS pseudo classes that are useful for giving instant feedback when the user\'s input is not valid. We will also look at the new JavaScript API introduced by HTML5 for validating forms and form elements.
 
@@ -19361,7 +19202,7 @@ In the following pages, we will first illustrate the concept of form validation 
 
 Form validation is [supported](https://caniuse.com/#feat=form-validation) by all modern browsers.
 
-### 5.7.2 Automate Visual Feedback While Typing
+<h3 id="ch5-7-2">5.7.2 Automate Visual Feedback While Typing</h3>
 
 Most modern browsers propose default behavior for validating input fields and forms.
 
@@ -19691,7 +19532,7 @@ At *lines 18* and *20* we added an input event listener: each time a key i
 
 *Lines 28* and *29* get the input fields\' values, and* lines 30-35* check if the passwords are the same and set the validity of the field using the validation API\'s method setCustomValidity(error_message).
 
-## 5.7.4 The validity property of input fields
+<h3 id="ch5-7-4">5.7.4 The validity property of input fields</h3>
 
 The validity property of input fields helps to get error details when the field is *invalid*. This property tests the different types of validation error.
 
@@ -19726,15 +19567,14 @@ The possible values for the validity property are: 
 Here is [an example at JSBin that shows how to test the different types of validation errors](https://jsbin.com/nalaxeg/1/edit?html,output), or you may try it here in your browser (enter bad values, too big, too small, enter invalid characters, etc.):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 292.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image292.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-![](./images/image292.png){width="6.5in" height="0.7840277777777778in"}
 
 **Source code:**
 
@@ -19828,20 +19668,19 @@ It is also possible to get the validation error message, using the validationMe
 
 This is useful for making custom error messages. More about this topic in the next section of the course.
 
-## 5.7.5 Changing the default behavior
+<h3 id="ch5-7-5">5.7.5 Changing the default behavior</h3>
 
 Custom validation: changing the default behavior, aggregating error messages, removing bubbles, etc.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 293.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image293.png?raw=true"
    alt=""
    width="35%">
 &nbsp;
 <br/>
-![](./images/image293.png){width="3.5in" height="1.7576082677165354in"}
 
 #### Criticism of the default behavior of HTML5 built-in validation
 
@@ -19862,15 +19701,14 @@ Here is [an adaptation of work presented at the developer.telerik.com Web site]
 Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output) or try it here in your browser: enter invalid values and submit with one or two invalid fields.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 294.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image294.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-![](./images/image294.png){width="6.5in" height="1.7381944444444444in"}
 
 **Complete source code:**
 
@@ -22361,4 +22199,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-09-2022 Sat 8:50pm</i></b></h3>
+<h3><b><i>07-11-2022 10:19pm</i></b></h3>
