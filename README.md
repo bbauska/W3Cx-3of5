@@ -152,23 +152,16 @@ While any text editor, like NotePad or TextEdit, can be used to create Web pages
 
 Here are a few possibilities for Web editors:
 
--   [Notepad](https://notepad-plus-plus.org/) - on Windows PC's
-
--   [Visual Studio Code](https://code.visualstudio.com/) - a free open source editor that can run on any operating system. Many developers are already familiar with Visual Studio Code. Many coding videos in this course are demonstrated using Visual Studio Code.
-
--   [XCode](https://developer.apple.com/xcode/) - Mac developers may be familiar with XCode
-
--   TextEdit - this is available on Macs, but be sure you're [saving as plain text](https://discussions.apple.com/message/5014514#5014514), not as a ".rtf" or ".doc" file.
-
--   [Sublime Text](https://www.sublimetext.com/) - it is quite popular with developers, though there can be a bit of a learning curve to use its many features.
-
--   [BlueGriffon](http://bluegriffon.org/) - a WYSIWYG ("What You See Is What You Get") content editor for the World Wide Web. Powered by Gecko, the rendering engine of Firefox, it\'s a modern and robust solution to edit Web pages in conformance to the latest Web Standards.
-
--   [Atom](https://atom.io/) - another cross platform editor, created by [GitHub](https://github.com/).
-
--   [GitHub](https://github.com/) itself - check [this resource that explains how to create a Web site using GitHub](https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1).
-
--   [Vim](https://www.vim.org/) or [Emacs](https://www.gnu.org/software/emacs/) - great editors, but if you\'re not already familiar with these, this isn\'t the time to try.
+<ul>
+<li><a href="https://notepad-plus-plus.org/">Notepad</a> - on Windows PC&apos;s.</li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a> - a free open source editor that can run on any operating system. Many developers are already familiar with Visual Studio Code. Many coding videos in this course are demonstrated using Visual Studio Code.</li>
+<li><a href="https://developer.apple.com/xcode/">XCode</a> - Mac developers may be familiar with XCode.</li>
+<li><a href="https://discussions.apple.com/message/5014514#5014514">TextEdit - this is available on Macs</a>, but be sure you&apos;re [saving as plain text, not as a ".rtf" or ".doc" file.</li>
+<li><a href="https://www.sublimetext.com/">Sublime Text</a> - it is quite popular with developers, though there can be a bit of a learning curve to use its many features.</li>
+<li><a href="http://bluegriffon.org/">BlueGriffon</a> - a WYSIWYG ("What You See Is What You Get") content editor for the World Wide Web. Powered by Gecko, the rendering engine of Firefox, it\'s a modern and robust solution to edit Web pages in conformance to the latest Web Standards.</li>
+<li><a href="https://atom.io/">Atom</a> - another cross platform editor, created by <a href="https://github.com/">GitHub</a>.</li>
+<li><a href="https://github.com/">GitHub</a> itself - check <a href="https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1">this resource that explains how to create a Web site using GitHub</a>.</li>
+<li><a href="https://www.vim.org/">Vim/a> or <a href="https://www.gnu.org/software/emacs/">Emacs</a> - great editors, but if you&apos;re not already familiar with these, this isn&apos;t the time to try.</li>
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -188,11 +181,12 @@ To help you practice during the whole duration of the course, we use the followi
 &nbsp;
 <br/>
 
-   - [JS Bin](https://jsbin.com/)
-
+<ul>
+<li><a href="https://jsbin.com/">JS Bin</a></li>
+</ul>
 JS Bin is an open source collaborative Web development debugging tool. Most of the examples that are in this course are on JSBin.
 
-Tutorials can be found on the Web (such as[ this one](https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843)) or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it\'s always better to be logged in (it\'s free) if you do not want to lose your contributions/personal work.
+Tutorials can be found on the Web (such as[ <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843">this one</a> or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it&apos;s always better to be logged in (it&apos;s free) if you do not want to lose your contributions/personal work.
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------ 03. codepen logo (04) ------------------------------------->
@@ -3207,18 +3201,17 @@ If you don\'t like the default yellow background, you may use CSS to change the 
 For example:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 53. style the mark element with CSS (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image053.jpeg?raw=true"
+   alt="Style the mark element with CSS"
+   width="45%">
 &nbsp;
 <br/>
-![style the mark element with CSS](./images/image053.jpeg){width="4.28125in" height="1.34375in"}
 
-```
 \... comes with this CSS rule:
+
 ```
 1.  mark {
 2.      background-color: green;
@@ -3226,19 +3219,18 @@ For example:
 4.  }
 ```
 
-#### External resources:
+<h4>External resources:</h4>
+<ul>
+<li>From the specification: <https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element>
 
--   From the specification: <https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element>
+<li>On MDN\'s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark"></a></li>
+<li>MDN\'s browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark#Browser_compatibility">table</a> for &lt;time&gt;</li>
+<li>An article on Web Platform News: <a href="https://webplatform.news/issues/2019-02-28">The &lt;mark&gt; element could help make your text more scannable</a></li>
+</ul>
 
--   On MDN\'s Web Docs: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark>
+<h3 id="ch1-4-3">1.4.3 The Download and Translate Attributes</h3>
 
-    -   MDN\'s browser compatibility [table](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark#Browser_compatibility) for \<time\>
-
--   An article on Web Platform News: \"[The \<mark\> element could help make your text more scannable](https://webplatform.news/issues/2019-02-28)\"
-
-### 1.4.3 The Download and Translate Attributes
-
-### The old way to download files using HTML and HTTP
+<h4>The old way to download files using HTML and HTTP</h4>
 
 Everyone knows the classic way to make hyperlinks, using \<a href=\"\...\"\>some text\</a\>. What happens when you click on the hyperlink depends on the MIME type received by the browser. If you link to a file the browser knows how to render (an html page, a gif, jpg, or png image, etc.) there is a good chance that the MIME type received by the browser will be something like this:
 
@@ -3246,20 +3238,23 @@ Everyone knows the classic way to make hyperlinks, using \<a href=\"\...\"\>som
 
 For example,  HTML code such as this:
 
+```
 1.  \<a href=\"toto.jpg\"\>
-
 ```
 
 ```
 1.      please right click this link to download
 2.      the toto.jpg picture\</a\>
 ```
+
 \...will ask the remote HTTP server to send back the toto.jpg file. The browser will receive in the response HTTP header from the server (and by default the browser will display the image in a new tab):
+
 ```
 1.  \...
 2.  Content-type: image/jpg
 3.  \...
 ```
+
 However, if the link points to some PHP code,  Java servlet code, or any kind of script/application on the server side, this remote server code can send in its HTTP response a Content-type that may force the browser to download the image instead of rendering it.
 
 It may also propose a name for the file to be downloaded that may be different from the one that appears in the URL of the href attribute. This can be done by generating, in addition to the Content-type line in the response HTTP header, a Content-Disposition line that looks like this:
@@ -3267,6 +3262,7 @@ It may also propose a name for the file to be downloaded that may be different f
 1.  Content-Disposition: attachment; filename=\"MyImage.png\";
 
 Here are some extracts from a Java Servlet that generate a zip file and forces the browser to propose downloading it using a specified name:
+
 ```
 1.  protected void doGet(HttpServletRequest request, HttpServletResponse response)
 2.  throws ServletException, IOException {
@@ -3296,15 +3292,14 @@ The above example will cause the browser that invoked this server-side code to
 ### To download a file using an arbitrary name: the download attribute
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!------------ 54. picture of a road sign with the words 'new way' (54) ---------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image054.jpeg?raw=true"
+   alt="Picture of a road sign with the words New Way"
+   width="15%">
 &nbsp;
 <br/>
-![Picture of a road sign with the words \'New Way\'](./images/image054.jpeg){width="1.2708333333333333in" height="0.9791666666666666in"}
 
 HTML5 proposes the use of a new attribute named download to download resources rather than navigating to them. The example below shows how to trigger the download of an image by the browser (instead of rendering it, which is the default behavior) with a name different from the name of the resource.
 
@@ -3317,30 +3312,28 @@ HTML5 proposes the use of a new attribute named download to download resourc
 This will indeed force the download of an image with a filename different from its original filename on the server side. Here is a screen capture of the Web browser while downloading the picture. We can see in the status bar the name of the link (the image is \"normal.gif\") and the downloaded file is \"MichelBuffa.gif\":
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!------------ 55. image saved with another names thanks to the download attribute (xx) ---------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image055.png?raw=true"
    alt=""
-   width="35%">
+   width="25%">
 &nbsp;
 <br/>
-![Image saved with another names thanks to the download attribute](./images/image055.png){width="2.375in" height="0.71875in"}
 
 **WARNING**: since 2015, and for security reasons, **the image should be located on the same domain as the HTML page that contains the link** (using a relative URL works well, for example, but linking a page on another domain will not work - it will keep its original name).
 
 #### Interesting applications: serverless download
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 56. no server picture (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image056.jpeg?raw=true"
+   alt="No Server Picture"
    width="35%">
 &nbsp;
 <br/>
-![no server picture](./images/image056.jpeg){width="3.2395833333333335in" height="0.8958333333333334in"}
 
 ##### Serverless download demo (by E.Bilderman)
 
@@ -22199,4 +22192,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-11-2022 10:19pm</i></b></h3>
+<h3><b><i>07-12-2022 8:34am</i></b></h3>
