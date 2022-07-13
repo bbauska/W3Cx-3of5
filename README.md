@@ -152,15 +152,15 @@ While any text editor, like NotePad or TextEdit, can be used to create Web pages
 
 Here are a few possibilities for Web editors:
 <ul>
-<li><a href="https://notepad-plus-plus.org/">Notepad</a> - on Windows PC's
-<li><a href="https://code.visualstudio.com/">Visual Studio Code</a> - a free open source editor that can run on any operating system. Many developers are already familiar with Visual Studio Code. Many coding videos in this course are demonstrated using Visual Studio Code.
-<li><a href="[XCode](https://developer.apple.com/xcode/) - Mac developers may be familiar with XCode
-<li><a href=" TextEdit - this is available on Macs, but be sure you're [saving as plain text](https://discussions.apple.com/message/5014514#5014514), not as a ".rtf" or ".doc" file.
-<li><a href="[Sublime Text](https://www.sublimetext.com/) - it is quite popular with developers, though there can be a bit of a learning curve to use its many features.
-<li><a href="[BlueGriffon](http://bluegriffon.org/) - a WYSIWYG ("What You See Is What You Get") content editor for the World Wide Web. Powered by Gecko, the rendering engine of Firefox, it&apos;s a modern and robust solution to edit Web pages in conformance to the latest Web Standards.
-<li><a href="[Atom](https://atom.io/) - another cross platform editor, created by [GitHub](https://github.com/).
-<li><a href="[GitHub](https://github.com/) itself - check [this resource that explains how to create a Web site using GitHub](https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1).
-<li><a href="https://www.vim.org/">Vim</a> or <a href="https://www.gnu.org/software/emacs/">Emacs</a> - great editors, but if you&apos;re not already familiar with these, this isn&apos;'t the time to try.
+<li><a href="https://notepad-plus-plus.org/">Notepad</a> - on Windows PC's.</li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a> - a free open source editor that can run on any operating system. Many developers are already familiar with Visual Studio Code. Many coding videos in this course are demonstrated using Visual Studio Code.</li>
+<li><a href="https://developer.apple.com/xcode/">XCode</a> - Mac developers may be familiar with XCode.</li>
+<li>TextEdit - this is available on Macs, but be sure you're <a href="https://discussions.apple.com/message/5014514#5014514">saving as plain text</a>, not as a ".rtf" or ".doc" file.</li>
+<li><a href="https://www.sublimetext.com/">Sublime Text</a> - it is quite popular with developers, though there can be a bit of a learning curve to use its many features.</li>
+<li><a href="http://bluegriffon.org/">BlueGriffon</a> - a WYSIWYG ("What You See Is What You Get") content editor for the World Wide Web. Powered by Gecko, the rendering engine of Firefox, it&apos;s a modern and robust solution to edit Web pages in conformance to the latest Web Standards.</li>
+<li><a href="https://atom.io/">Atom</a> - another cross platform editor, created by <a href="https://github.com">GitHub</a>.</li>
+<li><a href="https://github.com/">GitHub</a> itself - check <a href="https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1">this resource that explains how to create a Web site using GitHub</a>.</li>
+<li><a href="https://www.vim.org/">Vim</a> or <a href="https://www.gnu.org/software/emacs/">Emacs</a> - great editors, but if you&apos;re not already familiar with these, this isn&apos;t the time to try.</li>
 </ul>
 
 <div align="right">
@@ -180,12 +180,12 @@ To help you practice during the whole duration of the course, we use the followi
    width="15%">
 &nbsp;
 <br/>
-
-   - [JS Bin](https://jsbin.com/)
-
+<ul>
+<li><a href="https://jsbin.com/">JS Bin</a>.</li>
+</ul>
 JS Bin is an open source collaborative Web development debugging tool. Most of the examples that are in this course are on JSBin.
 
-Tutorials can be found on the Web (such as[ this one](https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843)) or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it&apos;'s always better to be logged in (it&apos;'s free) if you do not want to lose your contributions/personal work.
+Tutorials can be found on the Web (such as <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843">this one)</a> or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it&apos;'s always better to be logged in (it&apos;'s free) if you do not want to lose your contributions/personal work.
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------ 03. codepen logo (04) ------------------------------------->
@@ -22416,4 +22416,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-12-2022 Tue 5:29pm</i></b></h3>
+<h3><b><i>07-12-2022 Fri 5:29pm</i></b></h3>
