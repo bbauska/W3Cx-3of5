@@ -185,7 +185,7 @@ To help you practice during the whole duration of the course, we use the followi
 </ul>
 JS Bin is an open source collaborative Web development debugging tool. Most of the examples that are in this course are on JSBin.
 
-Tutorials can be found on the Web (such as <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843">this one)</a> or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it&apos;'s always better to be logged in (it&apos;'s free) if you do not want to lose your contributions/personal work.
+Tutorials can be found on the Web (such as <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843">this one)</a> or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it&apos;s always better to be logged in (it&apos;s free) if you do not want to lose your contributions/personal work.
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------ 03. codepen logo (04) ------------------------------------->
@@ -204,7 +204,7 @@ Tutorials can be found on the Web (such as <a href="https://code.tutsplus.com/tu
 CodePen is an HTML, CSS, and JavaScript code editor that previews/showcases your code bits in your browser.
 It helps with cross-device testing, real-time remote pair programming and teaching.
 
-Here&apos;'s an article of interest if you use CodePen: [Things you can do with CodePen](https://codepen.io/brentmiller/post/things-you-can-do-with-codepen) &lbrack;Brent Miller, February 6, 2019&rbrack;].
+Here&apos;s an article of interest if you use CodePen: [Things you can do with CodePen](https://codepen.io/brentmiller/post/things-you-can-do-with-codepen) &lbrack;Brent Miller, February 6, 2019&rbrack;].
 
 There are many other handy tools such as [JSFiddle](https://jsfiddle.net/), and [Dabblet](https://dabblet.com/). Please share your favorite tool on the discussion forum, and explain why! Share also your own code contributions, such as a nice canvas animation, a great looking HTML5 form, etc.
 
@@ -336,7 +336,7 @@ Contributing to this standardization process might be a bit scary or hard to app
    width="15%" />
 </p>
 
-If you&apos;'re looking to an easy way to dive into this standardization processes, check out which [issues in the W3C GitHub repositories have been marked as &quot;good first issue&quot;](https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues) and see if you find anything where you think you would be ready to help.
+If you&apos;re looking to an easy way to dive into this standardization processes, check out which [issues in the W3C GitHub repositories have been marked as &quot;good first issue&quot;](https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues) and see if you find anything where you think you would be ready to help.
 
 <h3>Shape the future</h3>
 
@@ -1491,7 +1491,7 @@ Here again, the type attribute has been omitted. Just as a reminder, the old way
 
 <h3>More flexible syntax constraints</h3>
 
-If you look at the &quot;minimal document&quot; example, or at other examples in this course, you won&apos;t find a lot of differences compared to the same code in XHTML: attribute values are surrounded by quotes, all elements are written in lower case, etc. This is because we are used to writing this way, but HTML5 also supports a simplified syntax:
+If you look at the &quot;minimal document&quot; example, or at other examples in this course, you won&&lbra;t find a lot of differences compared to the same code in XHTML: attribute values are surrounded by quotes, all elements are written in lower case, etc. This is because we are used to writing this way, but HTML5 also supports a simplified syntax:
 
 -   Thanks to HTML5, you can omit quotes (not always, but most of the time) or use uppercase, lowercase or a combination of the two.
 
@@ -4014,10 +4014,10 @@ This is one of the main problems encountered in recent years: codec support was 
 <h3 id="ch2-2-2">2.2.2 The <audio> Element</h3>
 
 HTML5 audio is composed of several layers:
-
--   The** **&lt;audio&gt; element is useful for embedding an audio player into a Web page. It is dedicated for **streamed audio**. It is very similar to the &lt;video&gt; element, both in its use and in its API.
-
--   The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.).
+<ul>
+<li>The** **&lt;audio&gt; element is useful for embedding an audio player into a Web page. It is dedicated for **streamed audio**. It is very similar to the &lt;video&gt; element, both in its use and in its API.</li>
+<li>The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.).</li>
+</ul>
 
 This course will focus on the &lt;audio&gt; element. We present the [Web Audio API](https://www.w3.org/TR/webaudio/) and other advanced HTML5 features in the [W3Cx HTML5 Apps and Games course](https://www.edx.org/course/html5-apps-and-games).
 
@@ -4077,53 +4077,49 @@ Notice the other similarities: between the &lt;audio&gt;\...&lt;/audio&gt; tag
 
 External resources
 
--   From W3C&apos;s specification: [The audio element](https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element)
-
--   From MDN&apos;s Web Docs: [&lt;audio&gt;: The Embed Audio element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
+<ul>
+<li>From W3C&apos;s specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element">The audio element</a>.</li>
+<li>From MDN&apos;s Web Docs: [&lt;audio&gt;: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">The Embed Audio element</a>.</li>
+</ul>
 
 <h3 id="ch2-2-3">2.2.3 Attributes of <video> and <audio></h3>
 
-### Most useful attributes of the &lt;video&gt; element 
+<h4>Most useful attributes of the &lt;video&gt; element</h4>
 
 Here are the most common attributes you can use with the &lt;video&gt; element. They are self explanatory\...
 
--   src: source of the video.
+<ul>
+<li>src: source of the video.</li>
+<li>width and height: size of the video. If unspecified, the default width and height of the video will be used. If you specify one dimension but not the other, the browser will adjust the size of the unspecified dimension to preserve the aspect ratio of the video.</li>
+<li>controls: If this boolean attribute is present, the browser displays its own controls for video playback and volume.</li>
+<li>poster: This attribute allows you to specify an image that the browser will use while video is being downloaded, or until the user starts playing the video. If this attribute is not specified, the first frame of the video will be used instead.</li>
+<li>autoplay: This attribute asks the browser to start playing the video automatically as soon as the page is ready.</li>
+<li>preload:  The preload attribute is used when autoplay is not used. It tells the browser what to do before a user plays a video. This attribute is a hint - the browser may ignore it. While autoplay and preload are mutually exclusive, if both are present, then preload is ignored. Possible values:</li>
+<ul>
+    <li>none: do nothing. This saves bandwidth, no video will be downloaded in background before a user or a call to the play() method starts playing the video.</li>
+    <li>metadata: download metadata, such as length of the video or its format.</li>
+    <li>auto (default value): the browser will decide. This will depend on the implementation, and on the kind of connection: wifi, 3G, data roaming etc.</li>
+	</ul>
+<li>loop: Another boolean attribute that indicates to play the video in loop mode (and it starts again when finished).</li>
+</ul>
 
--   width and height: size of the video. If unspecified, the default width and height of the video will be used. If you specify one dimension but not the other, the browser will adjust the size of the unspecified dimension to preserve the aspect ratio of the video.
-
--   controls: If this boolean attribute is present, the browser displays its own controls for video playback and volume.
-
--   poster: This attribute allows you to specify an image that the browser will use while video is being downloaded, or until the user starts playing the video. If this attribute is not specified, the first frame of the video will be used instead.
-
--   autoplay: This attribute asks the browser to start playing the video automatically as soon as the page is ready.
-
--   preload:  The preload attribute is used when autoplay is not used. It tells the browser what to do before a user plays a video. This attribute is a hint - the browser may ignore it. While autoplay and preload are mutually exclusive, if both are present, then preload is ignored. Possible values:
-
-    -   none: do nothing. This saves bandwidth, no video will be downloaded in background before a user or a call to the play() method starts playing the video.
-
-    -   metadata: download metadata, such as length of the video or its format.
-
-    -   auto (default value): the browser will decide. This will depend on the implementation, and on the kind of connection: wifi, 3G, data roaming etc.
-
--   loop: Another boolean attribute that indicates to play the video in loop mode (and it starts again when finished).
-
-#### Be careful if you target mobile applications or if you have multiple videos on the same page
+<h4>Be careful if you target mobile applications or if you have multiple videos on the same page</h4>
 
 The autoplay attribute is not recommended if your Web site targets mobile applications (actually, it is often ignored by mobile browsers), as it may consume bandwidth even if the user is not interested in watching the proposed video. If you target mobile devices, we recommend using preload=none as well, as the default value for this attribute is auto.
 
 **Best practice**: do not use autoplay and add preload=&quot;none&quot; if you target mobile devices or if you have multiple audio/video files on the same page.  For example, [this page](https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html) contains many audio elements and it does not make sense to have them preload or autoplay.
 
-#### About the poster attribute
+<h4>About the poster attribute</h4>
 
 If the poster attribute is missing, usually the first non-blank frame of the video will be used as the image that is shown when the video is not playing. 
 
-#### About the autoplay attribute for general use
+<h4>About the autoplay attribute for general use</h4>
 
 Do not abuse of the autoplay attribute. We talked earlier about mobile applications, but even on desktop applications it&apos;s usually a bad idea to use it (except for WebCams and for some animations with small video loops, without sound, or for sites like YouTube, with just videos).
 
 **Best practice**: think twice before using the autoplay attribute, even for desktop applications.
 
-### Attributes of the &lt;audio&gt; element
+<h4>Attributes of the &lt;audio&gt; element</h4>
 
 The attributes you can use with the &lt;audio&gt; element are a subset of those available for the &lt;video&gt; element. Except for the poster attribute, they are all recognized and have the expected meanings: 
 
@@ -4143,7 +4139,7 @@ As with the &lt;video&gt; element, the same best practice in regard to prelo
 
 The &lt;video&gt; and &lt;audio&gt; elements are just like other HTML elements, so CSS can be used for styling, including CSS transitions, animations, etc.
 
-### An example of an audio player with some style
+<h4>An example of an audio player with some style</h4>
 
 You can try this example [online at JSBin](https://jsbin.com/zoquru/2/edit?html,css,output).
 
@@ -4152,200 +4148,131 @@ To add some styling to the basic example we saw when we introduced the &lt;audi
 Please move the mouse pointer over this player&apos;s elements: 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 70. Two gery-black horses in a field (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image070.jpeg?raw=true"
+   alt="Two gery-black horses in a field"
+   width="25%">
 &nbsp;
 <br/>
-![Two gery-black horses in a field](./images/image070.jpeg){width="2.0833333333333335in" height="1.5625in"}
 
 Press Play to hear the horse ! 
 
- **HTML source code:**
-
+<h4>HTML source code:</h4>
+```
 1.  &lt;figure id=&quot;figaudio1&quot;&gt;
-
 2.    &lt;img id=&quot;imghorse&quot; width=&quot;200&quot;
-
 3.       src=&quot;https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg&quot;
-
 4.       alt = &quot;a horse&quot;/&gt;
-
 5.    &lt;figcaption id=&quot;figcptionaudio1&quot;&gt; Press Play to hear the horse!
-
 6.      &lt;audio controls=&quot;controls&quot;&gt;
-
 7.         &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;
-
 8.                 type=&quot;audio/ogg&quot; /&gt;
-
 9.         &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;
-
 10.                type=&quot;audio/mp3&quot; /&gt;
-
 11.        Your browser does not support the audio element.
-
 12.        Download the audio/video in
-
 13.        &lt;a href="https://mainline.i3s.unice.fr/mooc/horse.ogg"&gt;OGG&lt;/a&gt;
-
 14.      or &lt;a href="https://mainline.i3s.unice.fr/mooc/horse.mp3"&gt;MP3&lt;/a&gt;
-
 15.         format.
-
 16.    &lt;/audio&gt;
-
 17. &lt;/figcaption&gt;
-
 18. &lt;/figure&gt;
+```
 
-CSS source code:
+<h4>CSS source code:</h4>
 
+```
 1.  #figaudio1 {
-
 2.      width : 420px;;
-
 3.      text-align:center;
-
 4.      padding : 6px;
-
 5.      background : white;
-
 6.      margin : 0 11px 0px 0;
-
 7.      border :solid 1px #888888;
-
 8.      border-radius : 8px ;
-
 9.  }
-
 10.  
-
 11. #figcptionaudio1 {
-
 12.     font-size : .8em;
-
 13.     padding : 6px 8px;
-
 14.     background : #dddddd;
-
 15.     display :block;
-
 16.     text-align :center;
-
 17.     font-family : georgia, serif;
-
 18.     font-style : italic;
-
 19.     border-radius : 7px ;
-
 20. }
-
 21.  
-
 22. #figaudio1 &gt; img {
-
 23.     background : #eeeeee;
-
 24.     padding : 5px;
-
 25.     border : solid 1px #444444;
-
 26. }
-
 27.  
-
 28. /\* For audio and img transitions/animation \*/
-
 29. audio, #figaudio1 &gt; img {
-
 30.     transition:all 0.5s;
-
 31. }
-
 32.  
-
 33. #figaudio1 &gt; img:hover {
-
 34.     box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-
 35.     transform: scale(1.05);
-
 36. }
-
 37.  
-
 38. audio:hover, audio:focus, audio:active {
-
 39.     box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-
 40.     transform: scale(1.05);
-
 41. }
+```
 
-### Changing the size of a video on the fly using CSS transforms
+<h4>Changing the size of a video on the fly using CSS transforms</h4>
 
-#### Resizing and rotating a video as the mouse pointer comes over it
+<h4>Resizing and rotating a video as the mouse pointer comes over it</h4>
 
-See this** **[example online](https://jsbin.com/zoquru/4/edit?html,css,output) (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it&apos;s playing.
+See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example online</a> (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it&apos;s playing.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 71.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image071.png?raw=true"
    alt=""
-   width="35%">
+   width="55%">
 &nbsp;
 <br/>
-![](./images/image071.png){width="5.947916666666667in" height="3.4895833333333335in"}
 
 This example uses the pseudo CSS class :hover in order to track the mouseover event. On mouseover, it uses a CSS transition property that interpolates the changes in the scale and orientation of the video element (done using a transform CSS property).
 
 The corresponding HTML source code is:
 
+```
 1.  &lt;video **id=&quot;w3devCampusVideo&quot;** autoplay controls&gt;
-
 2.  
-
 3.       &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
-
 4.               type=video/webm&gt;
-
 5.       &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
-
 6.               type=video/ogg&gt;
-
 7.       &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
-
 8.               type=video/mp4&gt;
-
 9.  &lt;/video&gt;
+```
 
 \... and the CSS source code is as follows:
-
+```
 1.  #w3devCampusVideo {
-
 2.      width: 300px;
-
 3.      **transition: all 0.5s ease-in-out;**
-
 4.  }
-
 5.   
-
 6.  #w3devCampusVideo**:hover** {
-
 7.      width:400px;
-
 8.      transform:rotate(-5deg);
-
 9.  }
+```
 
-#### Fullscreen video that resizes and maintains ratios
+<h4>Fullscreen video that resizes and maintains ratios</h4>
 
 This is a trendy way of displaying videos.
 
@@ -4353,251 +4280,180 @@ Below you will find two examples that show how to do this trick. The first is fo
 
 The interesting part is that we use a 100% standard (and really small and simple) JavaScript code here to handle the window resize events and we just set regular CSS properties width and height of the video element, to resize the video.
 
-Example #1: with a regular video
+<h4>Example #1: with a regular video</h4>
 
 Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 72.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image072.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-![](./images/image072.png){width="6.5in" height="2.0680555555555555in"}
 
 Here is the HTML code. It&apos;s really simple, just notice the &lt;body onload=&quot;init();&quot;&gt; which calls the JavaScript init() function right after the page is loaded.
 
+```
 1.  &lt;!DOCTYPE html&gt;
-
 2.  &lt;html lang=&quot;en&quot;&gt;
-
 3.  &lt;head&gt;
-
 4.      &lt;meta charset=&quot;utf-8&quot;&gt;
-
 5.      &lt;title&gt;Full width video like PayPal site&lt;/title&gt;
-
 6.  &lt;/head&gt;
-
 7.  &lt;body onload=&quot;init();&quot;&gt;
-
 8.      &lt;video id=&quot;myVideo&quot; autoplay&gt;
-
 9.        &lt;source
-
 10.           src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
-
 11.           type=video/webm&gt;
-
 12.       &lt;source
-
 13.           src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
-
 14.           type=video/ogg&gt;
-
 15.       &lt;source
-
 16.           src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
-
 17.           type=video/mp4&gt;
-
 18.     &lt;/video&gt;
-
 19. &lt;/body&gt;
+```
 
 Here is the CSS (remove margins, remove padding, hide parts that could overflow from the &lt;body&gt;):
 
+```
 body {
-
     margin:0;
-
     padding:0;
-
     overflow:hidden;
-
 }
+```
 
 And now the JavaScript code:
 
+```
 > var video;
->
 >  
->
 > function init() {
->
 >    // function called when the page is loaded
->
 >    video = document.querySelector(&quot;#myVideo&quot;);
->
 >    // For initial value
->
 >    video.width = window.innerWidth;
->
 >    video.height = window.innerHeight;
->
 >    // For dealing with window resize
->
 >    window.onresize = function() {
->
 >        video.width = window.innerWidth;
->
 >        video.height = window.innerHeight;
->
 >    };
->
 > }
+```
 
-##### **Example #2: with a YouTube video**
+<h4>Example #2: with a YouTube video</h4>
 
 Full width, resizable, borderless YouTube video. To do this: just 100% standard CSS + DOM manipulation using JavaScript.
 
-![](./images/image073.png){width="5.0in" height="1.564636920384952in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 73.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image073.png?raw=true"
+   alt=""
+   width="55%">
+&nbsp;
+<br/>
 
 The CSS and JavaScript codes for this example are exactly the same as in Example #1.
 
-#### Full screen video, pure CSS approaches
+<h4>Full screen video, pure CSS approaches</h4>
 
 1.  Let&apos;s use the video from the PayPal Web site, played full screen using only very simple CSS.
 
 In this example, the video does not rescale; it&apos;s just cropped if the browser window is resized. Enlarge your browser and you&apos;ll see a man with a phone on the right. Resize your browser and you&apos;ll see only part of the video.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 74.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image074.png?raw=true"
    alt=""
-   width="35%">
+   width="55%">
 &nbsp;
 <br/>
-![](./images/image074.png){width="5.0in" height="1.5854702537182852in"}
 
-**CSS code:**
-
+<h4>CSS code:</h4>
+```
 > body {
->
 >   margin:0;
->
 >   padding:0;
->
 >   overflow:hidden;
->
 > }
 >
 >  
 >
 > video {
->
 >   width:100%;
->
 >   height:auto;
->
 > }
+```
 
 2.  Full screen video with CSS effects
 
 This time the video is zoomed in so that it&apos;s much bigger than the browser&apos;s window. When we resize the browser, the part of the video that is visible adapts itself. It&apos;s not &quot;real resize&quot; of the video. Try this [example and read the explanation in this article by Dudley Storey](https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video).
 
-HTML code:
+<h4>HTML code:</h4>
 
+```
 > &lt;!DOCTYPE html&gt;
->
 > &lt;html lang=&quot;en&quot;&gt;
->
 > &lt;head&gt;
->
 >    &lt;meta charset=&quot;utf-8&quot;&gt;
->
 >    &lt;title&gt;Full screen video with CSS effects &lt;/title&gt;
->
 > &lt;/head&gt;
->
 > &lt;body&gt;
->
 > &lt;header&gt;
->
 >  &lt;video autoplay loop=&quot;&quot;
->
 >   poster=&quot;https://mainline.i3s.unice.fr/mooc/polina.jpg&quot;
->
 >   id=&quot;bgvid&quot;&gt;
->
 >     &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.webm&quot;
->
 >             type=&quot;video/webm&quot;&gt;
->
 >     &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.mp4&quot;
->
 >             type=&quot;video/mp4&quot;&gt;
->
 >  &lt;/video&gt;
->
 > &lt;/header&gt;
->
 > &lt;section&gt;
->
 > &lt;h1&gt;Full screen video with CSS effects&lt;/h1&gt;
->
 > &lt;/section&gt;
->
 > &lt;/body&gt;
->
 > &lt;/html&gt;
+```
 
-**CSS code:**
-
+<h4>CSS code:</h4>
+```
 > html, body{
->
 >     color:white;
->
 >     height: 100%;
->
 > }
->
 > header{
->
 >     height: 100%;
->
 >     background-image: url(&apos;https://mainline.i3s.unice.fr/mooc/dots.png&apos;),                             url(&apos;#&apos;);
->
 >     background-repeat: repeat, no-repeat;
->
 >     background-size: auto, cover;
->
 >     background-position: center center, top left;
->
 >     font-family: sans-serif;
->
 >     color: #051a00;
->
 > }
->
 >  
->
 > header video {
->
 >     position:fixed;
->
 >     top:50%;
->
 >     left:50%;
->
 >     min-width:100%;
->
 >     min-height:100%;
->
 >     width:auto;
->
 >     height:auto;
->
 >     z-index:-100;
->
 >     transform:translateX(-50%) translateY(-50%);
->
 > }
+```
 
 The trick here is that:
 
@@ -4608,15 +4464,14 @@ The trick here is that:
 Full screen video that resizes and keeps its ratio, using the viewport units.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 75.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image075.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-![](./images/image075.png){width="6.5in" height="2.061111111111111in"}
 
 This time we obtain the same result as with the first example that used JavaScript and a resize event. The video resizes correctly and keeps its ratio.
 
@@ -4689,15 +4544,15 @@ This will create a complete video player for the file &quot;video.mp4&quot;, wit
 Please look at this interesting example:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 76.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image076.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-![](./images/image076.png){width="6.5in" height="2.061111111111111in"}Note that in order to play the video, you must click on the &quot;vid.play()&quot; text. To pause it, you click on the &quot;vid.pause()&quot; text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
+Note that in order to play the video, you must click on the &quot;vid.play()&quot; text. To pause it, you click on the &quot;vid.pause()&quot; text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
 
 **Conclusion**:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let&apos;s see a little more of what we can do using the JavaScript API of the &lt;video&gt; element (it will be an identical approach for the &lt;audio&gt; element, since it shares the same API by a very small margin).
 
@@ -4714,15 +4569,14 @@ The list of properties can be found at the [W3C HTML5 Video Events and API](htt
 Try the [direct link](https://www.w3.org/2010/05/video/mediaevents.html), and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 77.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image077.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-![](./images/image077.png){width="6.5in" height="4.313194444444444in"}
 
 #### Here is a table that shows the most interesting methods, properties, and events provided by the &lt;video&gt; element API
 
