@@ -467,9 +467,9 @@ Plain and simple, the internet allows access to the World Wide Web. Without it, 
 
 <h3>Why Accessibility is Important</h3>
 
-*The power of the Web is in its universality.*\
-*Access by everyone regardless of disability is an essential aspect.*\
-**Tim Berners-Lee, W3C Director and inventor of the World Wide Web**
+The power of the Web is in its universality.
+Access by everyone regardless of disability is an essential aspect.
+Tim Berners-Lee, W3C Director and inventor of the World Wide Web
 
 The Web has become an essential aspect of our daily lives, and everyone should have access to this technology. Web accessibility focuses on ensuring equivalent access for people with disabilities. It is increasingly important to many organizations and governments from around the world, and has many business benefits. Access to information, including on the Web, is also recognized by the UN Convention on the Rights of Persons with Disabilities (CRPD).
 
@@ -698,7 +698,7 @@ header span {
    width="35%" />
 </p>
 
-The navigation menu just below the header is a &lt;nav&gt; element. For the purpose of this example we haven&apos;t provided any value for the hyperlinks\...
+The navigation menu just below the header is a &lt;nav&gt; element. For the purpose of this example we haven&apos;t provided any value for the hyperlinks&period;&period;&period;
 
 <h4>HTML code:</h4>
 
@@ -851,7 +851,7 @@ Example for the first blog article:
 
 <h4>Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside</h4>
 
-Also note the way we included a figure using the new &quot;HTML5&quot; method, using a &lt;figure&gt;..&lt;/figure&gt; element that embedded a &lt;img src=\.../&gt; element together with a &lt;figcaption&gt; element. 
+Also note the way we included a figure using the new &quot;HTML5&quot; method, using a &lt;figure&gt;..&lt;figure&gt; element that embedded a &lt;img src=&period;&period;&period;&gt; element together with a &lt;figcaption&gt; element.
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 18. figure and figcaption (xx) ------------------------------>
@@ -887,7 +887,7 @@ Here is the CSS for the &lt;figcaption&gt; element we have used in the example
 5.  }
 ```
 
-<h4>Use an &lt;aside&gt; element to display a tag cloud on the\... side of the main content</h4>
+<h4>Use an &lt;aside&gt; element to display a tag cloud on the&period;&period;&period; side of the main content</h4>
 
 After the long &lt;section&gt; element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, &quot;aside&quot;! This is done using - you already guessed it - an &lt;aside&gt; element:
 
@@ -939,7 +939,7 @@ aside .tag-cloud {
 ...
 ```
 
-We used a float:right CSS rule to put the tag cloud on the right\... In the following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
+We used a float:right CSS rule to put the tag cloud on the right&period;&period;&period; In the following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
 
 <h4>Here is the result:</h4>
 
@@ -1102,9 +1102,9 @@ This chart from the <a href="https://html5doctor.com/">HTML5 Doctor Web site</
 
 We will now present some best practices for starting to use &lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;, in particular concerning the use of headings (h1, h2, h3, h4, h5 and h6).
 
-Use &lt;h1&gt;\...&lt;h6&gt; for the headings
+Use &lt;h1&gt;&period;&period;&period;&lt;h6&gt; for the headings
 
-Since the very beginning, HTML has had heading elements: &lt;h1&gt;\...&lt;h6&gt;. These elements are used to display headings with different sizes by default, when no CSS is used.  The following example shows 6 sentences that are surrounded by &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; and &lt;h6&gt;:
+Since the very beginning, HTML has had heading elements: &lt;h1&gt;&period;&period;&period;&lt;h6&gt;. These elements are used to display headings with different sizes by default, when no CSS is used.  The following example shows 6 sentences that are surrounded by &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; and &lt;h6&gt;:
 
 # This is a H1 heading
 
@@ -1129,7 +1129,7 @@ These headings define a hierarchy, as shown by the default sizes given by the br
    width="65%" />
 </p>
 
-In the above outline, note that we have only used H1\... H6 elements, without any new HTML5 structural elements such as &lt;section&gt; or &lt;article&gt;.
+In the above outline, note that we have only used H1&period;&period;&period;H6 elements, without any new HTML5 structural elements such as &lt;section&gt; or &lt;article&gt;.
 
 Here is a list of browser extensions you can try, for visualizing the outline of a document: <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> (Chrome extension) or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">this Firefox extension</a>.
 
@@ -1141,7 +1141,7 @@ The &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt; elements
 
 The HTML5 specification says that &quot;each sectioning element potentially has a heading and has also an outline associated&quot;.
 
-&lt;h1&gt;\...&lt;h6&gt; are called **headings**, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
+&lt;h1&gt;&period;&period;&period;&lt;h6&gt; are called <b>headings</b>, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
 
 ```
 <body>
@@ -1162,11 +1162,11 @@ The HTML5 specification says that &quot;each sectioning element potentially has 
 </body>
 ```
 
-\... defines the heading of *the explicit section* (its parent element &lt;section&gt;).
+&period;&period;&period; defines the heading of *the explicit section* (its parent element &lt;section&gt;).
 
 <h3>Use multiple headings of different rank with sectioning content</h3>
 
-The first element of a heading content in an element of sectioning content represents the heading for that section (the &lt;section&gt;&lt;h1&gt;\...&lt;/h1&gt;&lt;/section&gt; in the above example).
+The first element of a heading content in an element of sectioning content represents the heading for that section (the &lt;section&gt;&lt;h1&gt;&period;&period;&period;&lt;/h1&gt;&lt;/section&gt; in the above example).
 
 Subsequent headings of equal or higher rank start new (implied) sections, headings of lower rank start implied subsections that are part of the previous one. In both cases, the element represents the heading of the implied section.
 
@@ -1212,7 +1212,7 @@ In the above example, please note two things:
 
 Best practice #1: always add a heading to explicit sectioning content
 
-It&apos;s always better - mainly for accessibility reasons - to include a heading (a &lt;h1&gt;, &lt;h2&gt;\...&lt;h6&gt;) in each sectioning element (&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also after the &lt;body&gt; element (called a &quot;sectioning root&quot;). 
+It&apos;s always better - mainly for accessibility reasons - to include a heading (a &lt;h1&gt;, &lt;h2&gt;&period;&period;&period;&lt;h6&gt;) in each sectioning element (&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also after the &lt;body&gt; element (called a &quot;sectioning root&quot;). 
 
 Here are some examples:
 
@@ -1283,13 +1283,13 @@ Notice that &lt;body&gt; is also a sectioning element. It&apos;s called a &quo
 </body>
 ```
 
-In red, the sectioning root (&lt;body&gt;) and the sectioning elements (&lt;section&gt; here\...), each have a heading.
+In red, the sectioning root (&lt;body&gt;) and the sectioning elements (&lt;section&gt; here&period;&period;&period;), each have a heading.
 
 <h4>To sum up:</h4>
-
--   Always use a heading element after a sectioning</lement, for example &lt;section&gt;**&lt;Hx&gt;\...&lt;/Hx&gt;\...**&lt;/section&gt;, and after &lt;body&gt;, where **x** can be 1..6,
-
--   Or, use a &lt;header&gt; element, like in &lt;section&gt;**&lt;header&gt;&lt;Hx&gt;\...&lt;/Hx&gt;\.....&lt;/header&gt;**\...&lt;/section&gt;
+<ul>
+<li>Always use a heading element after a sectioning</lement, for example &lt;section&gt;<b>&lt;Hx&gt;&period;&period;&period;&lt;/Hx&gt;&period;&period;&period;</b>&lt;/section&gt;, and after &lt;body&gt;, where **x** can be 1..6,</li>
+<li>Or, use a &lt;header&gt; element, like in &lt;section&gt;<b>&lt;header&gt;&lt;Hx&gt;\...&lt;/Hx&gt;&period;&period;&period;&lt;/header&gt;</b>&period;&period;&period;&lt;/section&gt;</li>
+</ul>
 
 <h4>More about the &lt;header&gt; element</h4>
 
@@ -1332,7 +1332,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 </header>
 ```
 
-<b>Best practice #2</b>: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;\...&lt;h6&gt;
+<b>Best practice #2</b>: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;&period;&period;&period;&lt;h6&gt;
 
 The example below defines several implicit &quot;sections&quot; by using &lt;Hx&gt; directly (at *lines 7 and 9*):
 
@@ -1497,7 +1497,7 @@ If you look at the &quot;minimal document&quot; example, or at other examples in
 
 -   Many elements no longer need a closing tag: &lt;/li&gt;, &lt;/dt&gt;, &lt;/dd&gt;, &lt;/tr&gt;, &lt;/th&gt;, &lt;/td&gt;, &lt;/thead&gt;, &lt;/tfoot&gt;, &lt;/tbody&gt;, &lt;/option&gt;, &lt;/optgroup&gt;, &lt;/p&gt; (in most cases), &lt;/head&gt;, &lt;/body&gt; and &lt;/html&gt;. Older browsers often add closing tags automatically at render time. We recommend, however, closing tags that would naturally be closed: the ones that delimit a particular zone in the document.
 
--   Attribute values only need to be quoted if they contain spaces or some non-alphanumeric characters, instead of writing &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;, we could have used &lt;link rel=stylesheet href=style.css&gt;. However, for compatibility with older browsers, it is wiser to still use quotes\...
+-   Attribute values only need to be quoted if they contain spaces or some non-alphanumeric characters, instead of writing &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;, we could have used &lt;link rel=stylesheet href=style.css&gt;. However, for compatibility with older browsers, it is wiser to still use quotes&period;&period;&period;
 
 <h3>1.3.2 Structural Elements</h3>
 
@@ -1633,7 +1633,7 @@ header span {
 &nbsp;
 <br/>
 
-The navigation menu just below the header is a &lt;nav&gt; element. For the purpose of this example we haven&apos;t provided any value for the hyperlinks\...
+The navigation menu just below the header is a &lt;nav&gt; element. For the purpose of this example we haven&apos;t provided any value for the hyperlinks&period;&period;&period;
 
 <h4>HTML code:</h4>
 
@@ -1686,7 +1686,7 @@ nav span {
 
 <h4>A &lt;section&gt; for each month and an &lt;article&gt; for each post in the blog</h4>
 
-Now, we have one big &lt;section&gt; element that contains a set of &lt;article&gt; elements\...
+Now, we have one big &lt;section&gt; element that contains a set of &lt;article&gt; elements&period;&period;&period;
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 16. image of sections that contain articles (xx) ------------------->
@@ -1788,7 +1788,7 @@ Example for the first blog article:
 
 #### Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside
 
-Also note the way we included a figure using the new &quot;HTML5&quot; method, using a &lt;figure&gt;..&lt;/figure&gt; element that embedded a &lt;img src=\.../&gt; element together with a &lt;figcaption&gt; element. 
+Also note the way we included a figure using the new &quot;HTML5&quot; method, using a &lt;figure&gt;..&lt;/figure&gt; element that embedded a &lt;img src=&period;&period;&period;/&gt; element together with a &lt;figcaption&gt; element. 
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 18. image of figure and figcaption that embed an img (xx) ------------------->
@@ -1824,7 +1824,7 @@ figcaption {
 }
 ```
 
-#### Use an &lt;aside&gt; element to display a tag cloud on the\... side of the main content
+#### Use an &lt;aside&gt; element to display a tag cloud on the&period;&period;&period; side of the main content
 
 After the long &lt;section&gt; element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, &quot;aside&quot;! This is done using - you already guessed it - an &lt;aside&gt; element:
 
@@ -1876,7 +1876,7 @@ aside .tag-cloud {
 ...
 ```
 
-We used a float:right CSS rule to put the tag cloud on the right\... In a following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
+We used a float:right CSS rule to put the tag cloud on the right&period;&period;&period; In a following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
 
 ###### **Here is the result:**
 
@@ -1894,17 +1894,16 @@ We used a float:right CSS rule to put the tag cloud on the right\... In a foll
 #### Add a &lt;footer&gt; at the end of the blog
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
+<!---------------- 21. image of the blog footer (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image019.jpeg?raw=true"
-   alt="image of the tag cloud defined as an aside element"
+<img src="/images/image021.jpeg?raw=true"
+   alt="image of the blog footer"
    width="25%" />
 &nbsp;
 <br/>
-![image of the blog footer](./images/image021.jpeg){width="2.1875in" height="0.7916666666666666in"}
 
-###### Finally, we added a &lt;footer&gt; element (*lines 12-14* below) after the tag cloud definition, to display a page footer:
+<h4>Finally, we added a &lt;footer&gt; element (*lines 12-14* below) after the tag cloud definition, to display a page footer:</h4>
 
 ```
 <html>
@@ -2063,9 +2062,9 @@ This chart from the [HTML5 Doctor Web site](https://html5doctor.com/) may hel
 
 We will now present some best practices for starting to use &lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;, in particular concerning the use of headings (h1, h2, h3, h4, h5 and h6).
 
-### Use &lt;h1&gt;\...&lt;h6&gt; for the headings
+### Use &lt;h1&gt;&period;&period;&period;&lt;h6&gt; for the headings
 
-Since the very beginning, HTML has had heading elements: &lt;h1&gt;\...&lt;h6&gt;. These elements are used to display headings with different sizes by default, when no CSS is used.  The following example shows 6 sentences that are surrounded by &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; and &lt;h6&gt;:
+Since the very beginning, HTML has had heading elements: &lt;h1&gt;&period;&period;&period;&lt;h6&gt;. These elements are used to display headings with different sizes by default, when no CSS is used.  The following example shows 6 sentences that are surrounded by &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; and &lt;h6&gt;:
 
 # This is a H1 heading
 
@@ -2092,7 +2091,7 @@ These headings define a hierarchy, as shown by the default sizes given by the br
 
 ![outliner in action from the previous example](./images/image025.png){width="6.5in" height="3.5097222222222224in"}
 
-In the above outline, note that we have only used H1\... H6 elements, without any new HTML5 structural elements such as &lt;section&gt; or &lt;article&gt;.
+In the above outline, note that we have only used H1&period;&period;&period;H6 elements, without any new HTML5 structural elements such as &lt;section&gt; or &lt;article&gt;.
 
 Here is a list of browser extensions you can try, for visualizing the outline of a document: [table-of-contents-crx](https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f) Chrome extension or [this Firefox extension](https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search).
 
@@ -2104,7 +2103,7 @@ The &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt; elements
 
 The HTML5 specification says that &quot;each sectioning element potentially has a heading and has also an outline associated&quot;.
 
-&lt;h1&gt;\...&lt;h6&gt; are called **headings**, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
+&lt;h1&gt;&period;&period;&period;&lt;h6&gt; are called <b>headings</b>, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
 
 > <body>
 >     <h1>Title of my document</h1>
@@ -2120,11 +2119,11 @@ The HTML5 specification says that &quot;each sectioning element potentially has 
 > </body>
 ```
 
-###### \... defines the heading of *the explicit section* (its parent element &lt;section&gt;).
+<h4>&period;&period;&period; defines the heading of <i>the explicit section</i> (its parent element &lt;section&gt;).</h4>
 
 ### Use multiple headings of different rank with sectioning content
 
-The first element of a heading content in an element of sectioning content represents the heading for that section (the &lt;section&gt;&lt;h1&gt;\...&lt;/h1&gt;&lt;/section&gt; in the above example).
+The first element of a heading content in an element of sectioning content represents the heading for that section (the &lt;section&gt;&lt;h1&gt;&period;&period;&period;&lt;/h1&gt;&lt;/section&gt; in the above example).
 
 Subsequent headings of equal or higher rank start new (implied) sections, headings of lower rank start implied subsections that are part of the previous one. In both cases, the element represents the heading of the implied section.
 
@@ -2136,25 +2135,25 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 
 ######     &lt;h1&gt;This H1 is the heading of an explicit section&lt;/h1&gt;
 
-######     \...
+######     &period;&period;&period;
 
 ######        &lt;h2&gt;This H2 is a subheading, part of the same section
 
 ######            (lower rank)&lt;/h2&gt;
 
-######             \....
+######             &period;&period;&period;
 
 ######     &lt;h1&gt;This H1 starts an implicit new section in the explicit
 
 ######         section (equal or higher rank)&lt;/h1&gt;
 
-######         \...
+######         &period;&period;&period;
 
 ######         &lt;h2&gt;This is a H2 heading in the new section that has
 
 ######             just started&lt;/h2&gt;
 
-######             \...
+######             &period;&period;&period;
 
 ###### &lt;/section&gt;
 
@@ -2183,7 +2182,7 @@ In the above example, please note two things:
 
 ### **Best practice #1**: always add a heading to explicit sectioning content
 
-It&apos;s always better - mainly for accessibility reasons - to include a heading (a &lt;h1&gt;, &lt;h2&gt;\...&lt;h6&gt;) in each sectioning element (&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also after the &lt;body&gt; element (called a &quot;sectioning root&quot;). 
+It&apos;s always better - mainly for accessibility reasons - to include a heading (a &lt;h1&gt;, &lt;h2&gt;&period;&period;&period;&lt;h6&gt;) in each sectioning element (&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also after the &lt;body&gt; element (called a &quot;sectioning root&quot;). 
 
 Here are some examples:
 
@@ -2192,15 +2191,15 @@ Here are some examples:
 ```
 ####### &lt;section&gt;
 #######     &lt;h1&gt;Blog post of April 2020&lt;/h1&gt;
-#######     \...
+#######     &period;&period;&period;
 ####### &lt;/section&gt;
 **Good (heading  in a &lt;header&gt; does not change anything)**
 ####### &lt;section&gt;
 #######    **&lt;header&gt;**
 #######       **&lt;h1&gt;Blog post of April 2020&lt;/h1&gt;**
-#######       **&lt;p&gt;Posted by Michel Buffa\...&lt;/p&gt;**
+#######       **&lt;p&gt;Posted by Michel Buffa&period;&period;&period;&lt;/p&gt;**
 #######    **&lt;/header&gt;**
-####### \...
+####### &period;&period;&period;
 ####### &lt;/section&gt;
 ```
 **Bad (there is no Hx after the &lt;section&gt; -&gt; no heading):**
@@ -2249,19 +2248,19 @@ Notice that &lt;body&gt; is also a sectioning element. It&apos;s called a &quo
 > </body>
 ```
 
-In red, the sectioning root (&lt;body&gt;) and the sectioning elements (&lt;section&gt; here\...), each have a heading.
+In red, the sectioning root (&lt;body&gt;) and the sectioning elements (&lt;section&gt; here&period;&period;&period;), each have a heading.
 
-**To sum up:**
+<b>To sum up:</b>
+<ul>
+<li>Always use a heading element after a sectioning element, for example &lt;section&gt;<b>&lt;Hx&gt;&period;&period;&period;&lt;/Hx&gt;&period;&period;&period;</b>&lt;/section&gt;, and after &lt;body&gt;, where **x** can be 1..6,</li>
+<li>Or, use a &lt;header&gt; element, like in &lt;section&gt;<b>&lt;header&gt;&lt;Hx&gt;&period;&period;&period;&lt;/Hx&gt;&period;&period;&period;&lt;/header&gt;</b>&period;&period;&period;&lt;/section&gt;</li>
+</ul>
 
--   Always use a heading element after a sectioning element, for example &lt;section&gt;**&lt;Hx&gt;\...&lt;/Hx&gt;\...**&lt;/section&gt;, and after &lt;body&gt;, where **x** can be 1..6,
-
--   Or, use a &lt;header&gt; element, like in &lt;section&gt;**&lt;header&gt;&lt;Hx&gt;\...&lt;/Hx&gt;\.....&lt;/header&gt;**\...&lt;/section&gt;
-
-#### More about the &lt;header&gt; element
+<h4>More about the &lt;header&gt; element</h4>
 
 The &lt;header&gt; element is just a container. It is not taken into account for defining new sections of a document nor does it affect the hierarchy levels. 
 
-You can use heading elements &lt;h1&gt;\...&lt;h6&gt; in a &lt;header&gt; but be careful if you use more than one, as the rules explained in the previous part of the course will apply and may generate implicit &quot;sections&quot; in the header.
+You can use heading elements &lt;h1&gt;&period;&period;&period;&lt;h6&gt; in a &lt;header&gt; but be careful if you use more than one, as the rules explained in the previous part of the course will apply and may generate implicit &quot;sections&quot; in the header.
 
 This example has two headings in the &lt;header&gt;:
 
@@ -2298,7 +2297,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 5.  </header>
 ```
 
-### **Best practice #2**: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;\...&lt;h6&gt;
+### **Best practice #2**: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;&period;&period;&period;&lt;h6&gt;
 
 The example below defines several implicit &quot;sections&quot; by using &lt;Hx&gt; directly (at *lines 7 and 9*):
 
@@ -2406,7 +2405,7 @@ They are also useful for checking the presence of headings in each sectioning c
 
 If you use &lt;nav&gt; / &lt;header&gt; / &lt;footer&gt; etc. to structure your document, you can also use &lt;main&gt; to identify the main content of the document. Doing so provides a navigable document structure for assistive technology users as well as styling hooks for devs.
 
-We have seen the different sectioning elements of HTML5, so why didn&apos;t we talk about the &lt;main&gt; element earlier in this part of the course? Shouldn&apos;t  &lt;main&gt;\...&lt;/main&gt; be used in place of  &lt;div class=&quot;main&quot;&gt;\...&lt;/div&gt;?
+We have seen the different sectioning elements of HTML5, so why didn&apos;t we talk about the &lt;main&gt; element earlier in this part of the course? Shouldn&apos;t  &lt;main&gt;&period;&period;&period;&lt;/main&gt; be used in place of  &lt;div class=&quot;main&quot;&gt;&period;&period;&period;&lt;/div&gt;?
 
 The &lt;main&gt; element is supported by major modern browsers (see the corresponding [support table](https://caniuse.com/#feat=mdn-html_elements_main) on CanIUse and [MDN&apos;s brower compatibility page](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main#Browser_compatibility)).
 
@@ -2419,7 +2418,7 @@ This element is subject to some constraints:
 And finally, here are some examples (from [the HTML5 specification](https://www.w3.org/TR/html5/grouping-content.html#the-main-element))  that mix the &lt;main&gt; element with the other sectioning elements already seen in the course:
 
 ```
-1.  &lt;!\-- other content \--&gt;
+1.  &lt;!&ndash;&ndash; other content &ndash;&ndash;&gt;
 2.  
 3.  &lt;main&gt;
 4.  
@@ -2430,20 +2429,20 @@ And finally, here are some examples (from [the HTML5 specification](https://www
 9.        &lt;h2&gt;Longboards&lt;/h2&gt;
 10.       &lt;p&gt;Longboards are a type of skateboard with a longer
 11. wheelbase and larger, softer wheels.&lt;/p&gt;
-12.       &lt;p&gt;\... &lt;/p&gt;
-13.       &lt;p&gt;\... &lt;/p&gt;
+12.       &lt;p&gt;&period;&period;&period; &lt;/p&gt;
+13.       &lt;p&gt;&period;&period;&period; &lt;/p&gt;
 14.    &lt;/article&gt;
 15. 
 16.    &lt;article&gt;
 17.       &lt;h2&gt;Electric Skateboards&lt;/h2&gt;
 18.       &lt;p&gt;These no longer require the propelling of the skateboard by means of the feet; rather an electric motor propels the board, fed by an electric battery.&lt;/p&gt;
-19.       &lt;p&gt;\... &lt;/p&gt;
-20.       &lt;p&gt;\... &lt;/p&gt;
+19.       &lt;p&gt;&period;&period;&period; &lt;/p&gt;
+20.       &lt;p&gt;&period;&period;&period; &lt;/p&gt;
 21.    &lt;/article&gt;
 22. 
 23. &lt;/main&gt;
 24.  
-25. &lt;!\-- other content \--&gt;
+25. &lt;!&ndash;&ndash; other content &ndash;&ndash;&gt;
 ```
 
 Here is another example (also from the specification). Here the &lt;main&gt; element contains a &lt;nav&gt; element consisting of links to subsections of the main content:
@@ -2457,7 +2456,7 @@ Here is another example (also from the specification). Here the &lt;main&gt; e
 7.        &lt;body&gt;
 8.         &lt;header&gt;The Lawson Academy:
 9.           &lt;nav&gt;
-10.             &lt;h2&gt;Click these links to navigate\...&lt;/h2&gt;
+10.             &lt;h2&gt;Click these links to navigate&period;&period;&period;&lt;/h2&gt;
 11.             &lt;ul&gt;
 12.                &lt;li&gt;&lt;a href=&quot;courses.html&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
 13.                &lt;li&gt;&lt;a href=&quot;fees.html&quot;&gt;Fees&lt;/a&gt;&lt;/li&gt;
@@ -2549,14 +2548,14 @@ Also note that in this example, we used H1s after each sectioning element, and 
 7.         **&lt;h1&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h1&gt;**
 8.         This example is a modified version of &lt;a href=&quot;https://example.com/blog/index.html&quot;&gt;https://example.com/blog/index.html&lt;/a&gt;
 9.       &lt;/header&gt;
-10.      \...
+10.      &period;&period;&period;
 11.    &lt;/article&gt;
 12. &lt;/section&gt;
 ```
 
 With this technique, parts of the document can be moved more easily, or integrated inside an RSS stream, without the need to renumber the headings.
 
-Beware that this technique will require you to use some CSS styling, and may confuse some screen readers that do not yet take into account this way of computing the heading hierarchy. A simple fix is to use an H1 right after the &lt;body&gt; and use only H2\...H6 inside &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt;.
+Beware that this technique will require you to use some CSS styling, and may confuse some screen readers that do not yet take into account this way of computing the heading hierarchy. A simple fix is to use an H1 right after the &lt;body&gt; and use only H2&period;&period;&period;H6 inside &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt;.
 
 <h4>Let's fix the missing heading</h4>
 
@@ -2587,15 +2586,15 @@ We need to add a heading in the &lt;nav&gt; element. This will both fix the ou
 &nbsp;
 <br/>
 
-A common remark from Web designers is: &quot;we do not want a heading content displayed systematically after a &lt;nav&gt;, or an &lt;aside&gt; element\...&quot;
+A common remark from Web designers is: &quot;we do not want a heading content displayed systematically after a &lt;nav&gt;, or an &lt;aside&gt; element&period;&period;&period;&quot;
 
-**BEST PRACTICE #1: **In order to NOT display the heading content on screen  the recommended technique  is described in [this article by Steve Faulkner](https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/). Do not use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies. **\
-\
-**As an illustration of the recommended technique, see [this JSBin version of the blog example](https://jsbin.com/savabo/edit?html,output) that hides the &lt;h2&gt;Navigation menu&lt;/h2&gt; from the &lt;nav&gt;\...&lt;/nav&gt; element, using the CSS technique explained in the above link.
+<b>BEST PRACTICE #1: </b>In order to NOT display the heading content on screen  the recommended technique  is described in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/">this article by Steve Faulkner</a>. Do not use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies. 
 
-**BEST PRACTICE #2: **it is not advised to include interactive content (links, controls etc) that is hidden offscreen (it is in fact a violation of the [W3C WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/)). All interactive content must have a visible focus indicator (and be on screen when focused).
+<b>As an illustration of the recommended technique, see <a href="https://jsbin.com/savabo/edit?html,output">this JSBin version of the blog example</a> that hides the &lt;h2&gt;Navigation menu&lt;/h2&gt; from the &lt;nav&gt;&period;&period;&period;&lt;/nav&gt; element, using the CSS technique explained in the above link.
 
-### Embedding a table of contents and adding a &lt;main&gt; element
+<b>BEST PRACTICE #2: </b>it is not advised to include interactive content (links, controls etc) that is hidden offscreen (it is in fact a violation of the <a href="https://www.w3.org/TR/WCAG20/">W3C WCAG 2.0 Guidelines</a>. All interactive content must have a visible focus indicator (and be on screen when focused).
+
+<h4>Embedding a table of contents and adding a &lt;main&gt; element</h4>
 
 In the previous section, we saw how to embed a table of contents using some JavaScript code borrowed from the Google Chrome HTML5 outliner extension.
 
@@ -2604,7 +2603,7 @@ Let&apos;s add this piece of code (we removed the JS details from this extract):
 ```
 1.  &lt;aside&gt;
 2.     &lt;h1&gt;
-3.       &lt;a href=&quot;javascript:(function(){\...});&quot;
+3.       &lt;a href=&quot;javascript:(function(){&period;&period;&period;});&quot;
 4.          title=&quot;TableOfContents&quot;&gt;
 5.          Click here to display the table of contents!
 6.       &lt;/a&gt;
@@ -2620,11 +2619,11 @@ We also added a &lt;main&gt; element to identify the main content of the page 
 3.       &lt;header&gt;
 4.           &lt;h2&gt;Blog posts for April 2012&lt;/h2&gt;
 5.       &lt;/header&gt;
-6.       \...
+6.       &period;&period;&period;
 7.  &lt;/main&gt;
 ```
 
-### Use H1 as top level headings only, use H2\...H6 in sectioning content
+<h4>Use H1 as top level headings only, use H2&period;&period;&period;H6 in sectioning content</h4>
 
 As explained in the article [HTML5 Document Outline](https://www.paciellogroup.com/blog/2013/10/html5-document-outline/) and in [the W3C HTML Wiki](https://www.w3.org/wiki/HTML/Usage/Headings) , it is risky to use nested H1s, as browsers do not correctly implement the &quot;outline algorithm&quot;.
 
@@ -2632,14 +2631,14 @@ The blog example uses nested H1's. If you check it with [the W3C conformance 
 
 While this is just a warning, we do prefer to use H1s only as top level elements, and replace the H1s we had after &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt; elements respectively by a H2s and H3s. 
 
-**Extract from source code:**
+<b>Extract from source code:</b>
 
 ```
 1.  &lt;nav&gt;
 2.     &lt;header&gt;
 3.       **&lt;h2&gt;Navigation menu&lt;/h2&gt;**
 4.     &lt;/header&gt;
-5.     \...
+5.     &period;&period;&period;
 6.  &lt;/nav&gt;
 ``
 
@@ -2658,7 +2657,7 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 
 ![blog with embedded table of contents](./images/image034.jpeg){width="5.0in" height="2.8536340769903763in"}
 
-### 1.3.10 Examples of Page Layouts
+<h3 id="ch1-3-10">1.3.10 Examples of Page Layouts</h3>
 
 In this section, we show some &quot;classic&quot; CSS layout techniques for designing an HTML page that uses the new sectioning elements. 
 
@@ -2749,8 +2748,10 @@ Instead of having one element with a float:left and one element with a float:
 
 ### Example #3: same result using the CSS flex property
 
-This example uses the CSS flex property to achieve a result similar to the one shown in Example 2.\
+This example uses the CSS flex property to achieve a result similar to the one shown in Example 2.
 There are many articles on Flexbox and we recommend those from Rachel Andrew on Smashing Magazine: &quot;[Use cases for Flexbox](https://www.smashingmagazine.com/2018/10/flexbox-use-cases/)&quot;, &quot;[Flexbox: how big is that flexible box](https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/)&quot;, etc.
+
+
 
 ![](./images/image038.png){width="6.5in" height="2.357638888888889in"}
 
@@ -2817,11 +2818,11 @@ And here is what is displayed after clicking on the small arrow-shaped icon to t
 
 ```
 > &lt;!DOCTYPE html&gt;
-> &lt;html lang=&quot;en&quot;&gt; \...
+> &lt;html lang=&quot;en&quot;&gt; &period;&period;&period;
 > &lt;body&gt;
 > &lt;details&gt;
 > &lt;summary&gt;
-> How to beat the boss\...spoiler alert !
+> How to beat the boss&period;&period;&period;spoiler alert !
 > &lt;/summary&gt;
 > &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
 > &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
@@ -2830,48 +2831,45 @@ And here is what is displayed after clicking on the small arrow-shaped icon to t
 > &lt;/html&gt;
 ```
 
-The &lt;summary&gt;\...&lt;/summary&gt; is inside a &lt;details&gt;\...&lt;/details&gt; element. By clicking on the icon at the left of the summary, the content of the &lt;details&gt; value is displayed/hidden.
+The &lt;summary&gt;&period;&period;&period;&lt;/summary&gt; is inside a &lt;details&gt;&period;&period;&period;&lt;/details&gt; element. By clicking on the icon at the left of the summary, the content of the &lt;details&gt; value is displayed/hidden.
 
 &lt;details&gt; blocks can be embedded inside one another, like in this [example](https://jsbin.com/dejagi/edit?html,css,output):
 
 **Step 1: all folded:**
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 43.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image043.jpeg?raw=true"
+   alt="Other example, unfolded"
    width="35%">
 &nbsp;
 <br/>
-![Other example, unfolded](./images/image043.jpeg){width="3.3229166666666665in" height="0.4270833333333333in"}
 
-**Step 2: click on top level summary icon, the first &quot;hidden&quot; part appears\...**
+<b>Step 2: click on top level summary icon, the first &quot;hidden&quot; part appears&period;&period;&period;</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 44.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image044.jpeg?raw=true"
+   alt="The unfolded content contains in turn a summary detail folded"
    width="35%">
 &nbsp;
 <br/>
-![The unfolded content contains in turn a summary details folded](./images/image044.jpeg){width="3.3333333333333335in" height="2.1875in"}
 
-**Step3: click on embedded summary icon inside the part that has been previously unfolded**
+<b>Step3: click on embedded summary icon inside the part that has been previously unfolded</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 45.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image045.jpeg?raw=true"
+   alt="We unfolded the summary details inside the previous summary details. Recursive accordeons!"
    width="35%">
 &nbsp;
 <br/>
-![We unfolded the summary details inside the previous summary details. Recursive accordeons!](./images/image045.jpeg){width="3.25in" height="3.6875in"}
 
 **Source code of this example, see the summary/details inside another one:**
 
@@ -2892,22 +2890,21 @@ The &lt;summary&gt;\...&lt;/summary&gt; is inside a &lt;details&gt;\...&lt;/d
 > </details>
 ```
 
-### CSS pseudo classes for styling summary icons
+<h4>CSS pseudo classes for styling summary icons</h4>
 
 There are CSS pseudo classes to style this icon when it is in the open or closed state. Support for these is still incomplete as of June 2020 (works on Google Chrome, Opera, Safari, not in FF).
 
 Example1 (see [online example](https://jsbin.com/tomehim/1/edit?html,css,output)):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 46.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image046.jpeg?raw=true"
+   alt="Styling the open/close icon"
    width="35%">
 &nbsp;
 <br/>
-![Styling the open/close icon](./images/image046.jpeg){width="3.4583333333333335in" height="0.4166666666666667in"}
 
 The color and background of the icon on the left are specified by the following CSS rule, which uses the pseudo class ::-webkit-details-marker
 
@@ -2921,15 +2918,14 @@ In this example: red arrow, white background.
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 47.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image047.jpeg?raw=true"
+   alt="Styled summary details icon, unfolded state"
    width="35%">
 &nbsp;
 <br/>
-![Styled summary details icon, unfolded state](./images/image047.jpeg){width="3.7708333333333335in" height="1.8125in"}
 
 Once opened, the selector details&lbrack;open&rbrack; can style the icon when &lt;details&gt; is unfolded. In this example: blue arrow, turquoise background. Here is the corresponding CSS rule:
 
@@ -2945,30 +2941,28 @@ It is also possible to change the icon itself using the CSS pseudo class :after
 **Example 2 (see it [online](https://jsbin.com/sajusop/edit?html,css,output)):**
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 43.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image043.jpeg?raw=true"
+   alt="A + as a custom open icon for summary"
    width="35%">
 &nbsp;
 <br/>
-![A + as a custom open icon for summary](./images/image043.jpeg){width="3.40625in" height="0.4375in"}
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 48.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image048.jpeg?raw=true"
+   alt="A &quot;-&quot; as a custom close icon"
    width="35%">
 &nbsp;
 <br/>
-![A &quot;-&quot; as a custom close icon](./images/image048.jpeg){width="3.4791666666666665in" height="1.6458333333333333in"}
 
 CSS rules used in this example:
 
-Use a &quot;+&quot; shaped icon, pink, bold, etc\... :
+Use a &quot;+&quot; shaped icon, pink, bold, etc&period;&period;&period; :
 
 ```
 1.  summary:after {
@@ -2993,25 +2987,23 @@ Use a &quot;-&quot; shaped icon, white, when details are displayed:
 4.  }
 ```
 
-### Current browser support
+<h4>Current browser support</h4>
 
 -   On CanIUse: [compatibility table for details and summary elements](https://caniuse.com/#feat=details)
 
-### 1.4.2 The &lt;time&gt; and &lt;mark&gt; Elements
+<h3 id="ch1-4-2">1.4.2 The &lt;time&gt; and &lt;mark&gt; Elements</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 49.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image049.jpeg?raw=true"
+   alt="Picture of a clock with the words &apos;it&apos;s about time&apos;"
+   width="25%">
 &nbsp;
 <br/>
 
-![Picture of a clock with the words &apos;it&apos;s about time&apos;](./images/image049.jpeg){width="2.0in" height="1.9085422134733159in"}
-
-### The &lt;time&gt; element
+<h4>The &lt;time&gt; element</h4>
 
 The &lt;time&gt; element is useful for marking a time or a duration in a document.
 
@@ -3039,7 +3031,7 @@ The datetime attribute can be used for indicating a date/time or a duration.
 
 **Date/time values**
 
-Supports different specifications of time such as &quot;a year&quot;, &quot;a month in a year&quot;, &quot;a week in a year&quot;, &quot;a time&quot;, etc\... 
+Supports different specifications of time such as &quot;a year&quot;, &quot;a month in a year&quot;, &quot;a week in a year&quot;, &quot;a time&quot;, etc&period;&period;&period;
 
 ##### 
 
@@ -3071,18 +3063,17 @@ Supports different specifications of time such as &quot;a year&quot;, &quot;a mo
 
 #### Duration values
 
-Duration values use the prefix "P" for "period" as in &lt;time datetime=&quot;P4D&quot;&gt; (period = four days)\...
+Duration values use the prefix "P" for "period" as in &lt;time datetime=&quot;P4D&quot;&gt; (period = four days)&period;&period;&period;
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 50.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image050.jpeg?raw=true"
+   alt="Funny pict duration values"
+   width="25%">
 &nbsp;
 <br/>
-![funny pict duration values](./images/image050.jpeg){width="2.0in" height="2.0608694225721784in"}
 
 So you start the attribute string value with a &quot;P&quot;, followed by a duration value that ends with another letter indicating the unit used: &quot;D&quot; for &quot;days&quot;,  "H" for hours, "M" for minutes and "S" for seconds. 
 
@@ -3127,15 +3118,14 @@ Used without attributes, the value between the opening &lt;time&gt; and closin
 ### The &lt;mark&gt; element
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 51.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image051.jpeg?raw=true"
+   alt="Picture of a yellow hightlighter pen"
+   width="45%">
 &nbsp;
 <br/>
-![Picture of a yellow hightlighter pen](./images/image051.jpeg){width="4.34375in" height="0.9791666666666666in"}
 
 The HTML &lt;mark&gt; tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.
 
@@ -3149,7 +3139,7 @@ Some use cases:
 
 Example 1: <https://jsbin.com/tafelic/edit?html,output>
 
-Source code:
+<h4>Source code:</h4>
 ```
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -3163,20 +3153,19 @@ Source code:
 &lt;/html&gt;
 ```
 
-Example 2:
+<h4>Example 2:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 52.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image052.jpeg?raw=true"
+   alt="Another example for marking code"
+   width="45%">
 &nbsp;
 <br/>
-![Another example for marking code](./images/image052.jpeg){width="4.6875in" height="0.9375in"}
 
-Source code:
+<h4>Source code:</h4>
 ```
 <body>
 <pre>
@@ -3193,18 +3182,17 @@ If you don&apos;t like the default yellow background, you may use CSS to change 
 For example:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 53.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image053.jpeg?raw=true"
+   alt="Style the mark element with CSS"
+   width="45%">
 &nbsp;
 <br/>
-![style the mark element with CSS](./images/image053.jpeg){width="4.28125in" height="1.34375in"}
 
 ```
-\... comes with this CSS rule:
+&period;&period;&period; comes with this CSS rule:
 ```
 1.  mark {
 2.      background-color: green;
@@ -3226,7 +3214,7 @@ For example:
 
 ### The old way to download files using HTML and HTTP
 
-Everyone knows the classic way to make hyperlinks, using &lt;a href=&quot;\...&quot;&gt;some text&lt;/a&gt;. What happens when you click on the hyperlink depends on the MIME type received by the browser. If you link to a file the browser knows how to render (an html page, a gif, jpg, or png image, etc.) there is a good chance that the MIME type received by the browser will be something like this:
+Everyone knows the classic way to make hyperlinks, using &lt;a href=&quot;&period;&period;&period;&quot;&gt;some text&lt;/a&gt;. What happens when you click on the hyperlink depends on the MIME type received by the browser. If you link to a file the browser knows how to render (an html page, a gif, jpg, or png image, etc.) there is a good chance that the MIME type received by the browser will be something like this:
 
 1.  Content-type: text/html, text/plain, image/gif, image/jpg, etc.
 
@@ -3240,11 +3228,11 @@ For example,  HTML code such as this:
 1.      please right click this link to download
 2.      the toto.jpg picture&lt;/a&gt;
 ```
-\...will ask the remote HTTP server to send back the toto.jpg file. The browser will receive in the response HTTP header from the server (and by default the browser will display the image in a new tab):
+&period;&period;&period;will ask the remote HTTP server to send back the toto.jpg file. The browser will receive in the response HTTP header from the server (and by default the browser will display the image in a new tab):
 ```
-1.  \...
+1.  &period;&period;&period;
 2.  Content-type: image/jpg
-3.  \...
+3.  &period;&period;&period;
 ```
 However, if the link points to some PHP code,  Java servlet code, or any kind of script/application on the server side, this remote server code can send in its HTTP response a Content-type that may force the browser to download the image instead of rendering it.
 
@@ -3268,7 +3256,7 @@ Here are some extracts from a Java Servlet that generate a zip file and forces t
 12.          // generate a HTTP response that forces the download
 13.          [response.setContentType(&quot;application/zip&quot;);]
 14.          [response.setHeader(&quot;Content-Disposition&quot;,]
-15.                             [&quot;attachment; filename=&amp;amp;quot;DATA.ZIP\&amp;quot;&quot;);]
+15.                             [&quot;attachment; filename=&amp;amp;quot;DATA.ZIP&amp;quot;&quot;);]
 16.          sos.write(zip); sos.flush();
 17.        }
 18.     } catch (Exception e) {
@@ -3282,15 +3270,14 @@ The above example will cause the browser that invoked this server-side code to
 ### To download a file using an arbitrary name: the download attribute
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 54.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image054.jpeg?raw=true"
+   alt="Picture of a road sign with the words &apos;New Way&apos;"
+   width="15%">
 &nbsp;
 <br/>
-![Picture of a road sign with the words &apos;New Way&apos;](./images/image054.jpeg){width="1.2708333333333333in" height="0.9791666666666666in"}
 
 HTML5 proposes the use of a new attribute named download to download resources rather than navigating to them. The example below shows how to trigger the download of an image by the browser (instead of rendering it, which is the default behavior) with a name different from the name of the resource.
 
@@ -3303,30 +3290,28 @@ HTML5 proposes the use of a new attribute named download to download resourc
 This will indeed force the download of an image with a filename different from its original filename on the server side. Here is a screen capture of the Web browser while downloading the picture. We can see in the status bar the name of the link (the image is &quot;normal.gif&quot;) and the downloaded file is &quot;MichelBuffa.gif&quot;:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 55.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image055.png?raw=true"
+   alt="Image saved with another names thanks to the download attribute"
+   width="25%">
+&nbsp;
+<br/>
+
+<b>WARNING</b>: since 2015, and for security reasons, **the image should be located on the same domain as the HTML page that contains the link** (using a relative URL works well, for example, but linking a page on another domain will not work - it will keep its original name).
+
+<h4>Interesting applications: serverless download</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 56.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image056.jpeg?raw=true"
+   alt="No server picture"
    width="35%">
 &nbsp;
 <br/>
-![Image saved with another names thanks to the download attribute](./images/image055.png){width="2.375in" height="0.71875in"}
-
-**WARNING**: since 2015, and for security reasons, **the image should be located on the same domain as the HTML page that contains the link** (using a relative URL works well, for example, but linking a page on another domain will not work - it will keep its original name).
-
-#### Interesting applications: serverless download
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
-&nbsp;
-<br/>
-![no server picture](./images/image056.jpeg){width="3.2395833333333335in" height="0.8958333333333334in"}
 
 ##### Serverless download demo (by E.Bilderman)
 
@@ -3337,15 +3322,14 @@ We won&apos;t detail this demo here, but take a look if you are curious to see
 We have also put the simplified [source code of this demo on JSBin.com](https://jsbin.com/muluwey/1/edit?html,css,js,output) for you to play with.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 57.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image057.png?raw=true"
+   alt="Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server."
+   width="55%">
 &nbsp;
 <br/>
-![Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server.](./images/image057.png){width="5.0in" height="4.820754593175853in"}
 
 #### External resources:
 
@@ -3379,9 +3363,9 @@ Both [Google translate](https://translate.google.com/) and [Microsoft online 
 
 1.  &lt;span **[translate=&quot;no&quot;]** class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt;
 
-In the above example, a &lt;span&gt; element defines an author (of a blog, for example) who is named Michel Ham. However, his family name is the same as pork and would be translated to &quot;Michel Jambon&quot; in French, or Michel Jamón in Spanish\...
+In the above example, a &lt;span&gt; element defines an author (of a blog, for example) who is named Michel Ham. However, his family name is the same as pork and would be translated to &quot;Michel Jambon&quot; in French, or Michel Jamón in Spanish&period;&period;&period;
 
-Using the translate=&quot;no&quot; attribute should prevent this behavior\...
+Using the translate=&quot;no&quot; attribute should prevent this behavior&period;&period;&period;
 
 1.  &lt;span **[translate=&quot;no&quot;]** class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt; is a professor
 
@@ -3391,15 +3375,15 @@ Will be correctly translated into French by:
 
 1.  &quot;[Michel Ham] est un professeur de l&apos;Université de Nice, France.&quot;
 
-\...where all of the end of the sentence has been translated except the author&apos;s name.
+&period;&period;&period;where all of the end of the sentence has been translated except the author&apos;s name.
 
-#### Inheritance between elements
+<h4>Inheritance between elements</h4>
 
 When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true. 
 
-1.  &lt;p **[translate=&quot;no&quot;]**&gt;This is a text in a paragraph element, that should not be translated: the p element has a translate=&quot;no&quot; attribute.[&lt;span&gt; This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too&lt;/span&gt;]. This is the end of the paragraph\...&lt;/ p&gt;
+1.  &lt;p <b>[translate=&quot;no&quot;]</b>&gt;This is a text in a paragraph element, that should not be translated: the p element has a translate=&quot;no&quot; attribute.[&lt;span&gt; This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too&lt;/span&gt;]. This is the end of the paragraph&period;&period;&period;&lt;/ p&gt;
 
-### External resources:
+<h4>External resources:</h4>
 
 -   From the specification: [the translate attribute](https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute)
 
@@ -3409,7 +3393,7 @@ When you define an element as not being translatable, its children inherit this 
 
 -   An article from W3C&apos;s Internationalization Activity: [&quot;Using HTML&apos;s translate attribute&quot;](https://www.w3.org/International/questions/qa-translate-flag)
 
-### 1.5 Microdata
+<h3 id="ch1-5">1.5 Microdata</h3>
 
 There are several ways to provide machine-readable content embedded in a classical Web document: [HTML+RDFa](https://www.w3.org/TR/html-rdfa/), [microformats](http://microformats.org/), [JSON-LD](https://json-ld.org/), HTML5 microdata. In this section, we focus on microdata.
 
@@ -3417,137 +3401,95 @@ Adding microdata to Web pages helps search engines to better understand the page
 
 This information is not visible to humans: it is pure *semantic information*. Popular kinds of microdata are events, a person&apos;s profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. 
 
-### Quick example of microdata that describes a person
+<h4>Quick example of microdata that describes a person</h4>
 
+```
 1.  &lt;section [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
-
 2.      &lt;h1&gt;Contact Information&lt;/h1&gt;
-
 3.      &lt;dl&gt;
-
 4.        &lt;dt&gt;Name&lt;/dt&gt;
-
 5.        &lt;dd [itemprop=&quot;name&quot;]&gt;Michel Buffa&lt;/dd&gt;
-
 6.        &lt;dt&gt;Position&lt;/dt&gt;
-
 7.        &lt;dd&gt;&lt;span [itemprop=&quot;jobTitle&quot;]&gt;
-
 8.             Professor/Researcher/Scientist&lt;/span&gt; for
-
 9.            &lt;span [itemprop=&quot;affiliation&quot;]&gt;
-
 10.               University of Côte d&apos;Azur, France
-
 11.           &lt;/span&gt;
-
 12.       &lt;/dd&gt;
-
 13.     &lt;/dl&gt;
-
-14.     &lt;!\-- SURFACE ADDRESS GOES HERE \--&gt;
-
+14.     &lt;!&ndash;&ndash; SURFACE ADDRESS GOES HERE &ndash;&ndash;&gt;
 15.     &lt;h1&gt;My different online public accounts&lt;/h1&gt;
-
 16.     &lt;ul&gt;
-
 17.        &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;
-
 18.               [itemprop=&quot;url&quot;]&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
-
 19.        &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
-
 20.               [itemprop=&quot;url&quot;]&gt;Michel Buffa&apos;s blog&lt;/a&gt;&lt;/li&gt;
-
 21.     &lt;/ul&gt;
-
 22. &lt;/section&gt;
+```
 
 We can also add another embedded data item in the middle, such as the person&apos;s address:
 
-1.  \...
-
+```
+1.  &period;&period;&period;
 2.  &lt;/dl&gt;
-
 3.  
-
-4.  &lt;!\-- SURFACE ADDRESS GOES HERE \--&gt;
-
+4.  &lt;!&ndash;&ndash; SURFACE ADDRESS GOES HERE &ndash;&ndash;&gt;
 5.  
-
 6.  &lt;dd [itemprop=]&quot;address&quot;[ itemscope]
-
 7.      itemtype=&quot;https://schema.org/PostalAddress&quot;&gt;
-
 8.      &lt;span [itemprop=]&quot;streetAddress&quot;&gt;10 promenade des anglais&lt;/span&gt;&lt;br&gt;
-
 9.      &lt;span [itemprop=]&quot;addressLocality&quot;&gt;Nice&lt;/span&gt;,
-
 10.     &lt;span [itemprop=]&quot;addressRegion&quot;&gt;Alpes maritimes, France&lt;/span&gt;
-
 11.     &lt;span [itemprop=]&quot;postalCode&quot;&gt;06410&lt;/span&gt;&lt;br&gt;
-
 12.     &lt;span [itemprop=]&quot;addressCountry&quot;[ itemscope]
-
 13.           [itemtype=]&quot;https://schema.org/Country&quot;&gt;
-
 14.          &lt;span [itemprop=]&quot;name&quot;&gt;France&lt;/span&gt;
-
 15.     &lt;/span&gt;
-
 16. &lt;/dd&gt;
-
 17. 
-
 18. &lt;h1&gt;My different online public accounts&lt;/h1&gt;
-
 19. 
-
-20. \...
+20. &period;&period;&period;
+```
 
 In the following sections, we look more closely at the itemprop, itemscope and itemtype attributes.
 
-### Data that can be processed, organized, structured, or presented in a given context
+<h4>Data that can be processed, organized, structured, or presented in a given context</h4>
 
 Different use cases:
+<ul>
+<li>The browser, or a browser extension, may interpret the last example as an address and may propose to send it to a map application,</li>
+<li>A Web crawler may interpret this as an address and display it in its responses using a dedicated presentation layout,</li>
+<li>Some JavaScript code in the page can access this data,</li>
+<li>With other types of microdata, for events, for example, the browser may pop up a calendar application, etc.</li>
+</ul>
 
--   The browser, or a browser extension, may interpret the last example as an address and may propose to send it to a map application,
+<b>Note</b>: For advanced users, Microdata is very similar to <a href="http://microformats.org/">microformats</a>, which use HTML classes, or to <a href="https://www.w3.org/TR/xhtml-rdfa-primer/">RDFa</a>, which doesn&apos;t validate in HTML4 or HTML5. Because RDFa was considered to be too hard for authors to write, microdata is HTML5&apos;s answer to help embed semantics into html documents.
 
--   A Web crawler may interpret this as an address and display it in its responses using a dedicated presentation layout,
+<h4>External resources</h4>
 
--   Some JavaScript code in the page can access this data,
+<li><a href="https://www.w3.org/TR/microdata/">W3C&apos;s HTML Microdata Working Draft</a>,</li>
+<li>MDN&apos;s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata">Microdata</a>,</li>
+<li>Very good [Microdata](https://journal.code4lib.org/articles/6400) paper from code{4}lib journal,</li>
+<li><a href="https://dev.opera.com/articles/microdata-and-the-microdata-dom-api/">Microdata and the microdata DOM API</a>, old article from dev.opera.com,</li>
+<li><a href="https://diveinto.html5doctor.com/extensibility.html">Chapter from Mark Pilgrim&apos;s book about microdata</a>, very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.
+</ul>
 
--   With other types of microdata, for events, for example, the browser may pop up a calendar application, etc.
-
-**Note**: For advanced users, Microdata is very similar to [microformats](http://microformats.org/), which use HTML classes, or to [RDFa](https://www.w3.org/TR/xhtml-rdfa-primer/), which doesn&apos;t validate in HTML4 or HTML5. Because RDFa was considered to be too hard for authors to write, microdata is HTML5&apos;s answer to help embed semantics into html documents.
-
-### External resources
-
--   [W3C&apos;s HTML Microdata Working Draft](https://www.w3.org/TR/microdata/)
-
--   MDN&apos;s Web Docs: [Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)
-
--   Very good [Microdata](https://journal.code4lib.org/articles/6400) paper from code{4}lib journal
-
--   [Microdata and the microdata DOM API](https://dev.opera.com/articles/microdata-and-the-microdata-dom-api/), old article from dev.opera.com
-
--   [Chapter from Mark Pilgrim&apos;s book about microdata](https://diveinto.html5doctor.com/extensibility.html), very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.
-
-### 1.5.2 Testing Tools
+<h3 id="ch1-5-2">1.5.2 Testing Tools</h3>
 
 ### Introduction
 
 After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 58.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image058.jpeg?raw=true"
+   alt="Picture of diverse tools used by workers"
+   width="25%">
 &nbsp;
 <br/>
-![Picture of diverse tools used by workers](./images/image058.jpeg){width="2.0in" height="2.0in"}
 
 One of the most popular resources for testing microdata (as well as microformats and RDFa) is this [Google page about understanding how structured data works](https://developers.google.com/search/docs/guides/intro-structured-data). This page contains a link to a structured data testing tool that you can use to see how Google recognizes the semantic data you embed in your HTML code.
 
@@ -3559,76 +3501,54 @@ Let&apos;s have a look now at a (small) example of an about page. It renders as 
 
 Source code:
 
+```
 1.  &lt;!DOCTYPE html&gt;
-
 2.  &lt;html lang=&quot;en&quot;&gt;
-
 3.  &lt;head&gt;
-
 4.  &lt;meta charset=utf-8 /&gt;
-
 5.  &lt;title&gt;Michel Buffa&lt;/title&gt;
-
 6.  &lt;/head&gt;
-
 7.  &lt;body&gt;
-
 8.  &lt;div [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
-
 9.      My name is &lt;span itemprop=&quot;name&quot;&gt;Michel Buffa&lt;/span&gt;,
-
 10.     And I&apos;m a &lt;span itemprop=&quot;jobTitle&quot;&gt;professor/researcher&lt;/span&gt; at
-
 11.      &lt;a href=&quot;https://www.i3s.unice.fr/&quot; itemprop=&quot;affiliation&quot;&gt;I3S
-
 12.     Laboratory&lt;/a&gt; in the south of France, near the city of Nice. My
-
 13.     email
-
 14.     is : &lt;span itemprop=&quot;email&quot;&gt;micbuffa@gmail.com&lt;/span&gt;.
-
 15.     I live in the city of
-
 16.     &lt;span itemprop=&quot;address&quot; itemscope
-
 17.         [itemtype=&quot;https://schema.org/PostalAddress&quot;]&gt;
-
 18.          &lt;span itemprop=&quot;addressLocality&quot;&gt;Biot&lt;/span&gt;, in a region named
-
 19.          &lt;span itemprop=&quot;addressRegion&quot;&gt;Alpes Maritimes&lt;/span&gt;
-
 20.     &lt;/span&gt;
-
 21. &lt;/div&gt;
-
 22. &lt;/body&gt;
-
 23. &lt;/html&gt;
+```
 
 Rendering of the page in a browser:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 59.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image059.jpeg?raw=true"
+   alt="Rendering of Michel Buffa home page"
+   width="65%">
 &nbsp;
 <br/>
-![Rendering of Michel Buffa home page](./images/image059.jpeg){width="6.5in" height="1.0298611111111111in"}
 
 Here is what Google sees of the page. We just entered its [URL](https://output.jsbin.com/gunuzus/1) in the [Google page about rich snippets and structured data](https://developers.google.com/search/docs/guides/intro-structured-data):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 60.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image060.png?raw=true"
+   alt="Microdata of the example, as seen by Google"
+   width="55%">
 &nbsp;
 <br/>
-![Microdata of the example, as seen by Google](./images/image060.png){width="5.0in" height="2.4758213035870518in"}
 
 Note that the address is a fully featured embedded object in the Person&apos;s description.
 
@@ -3637,47 +3557,45 @@ Note that the address is a fully featured embedded object in the Person&apos;s d
 The [Live Microdata Web site](https://foolip.org/microdatajs/live/)  is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 61.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image061.jpeg?raw=true"
+   alt="Example of live microdata from the previous example. Microdata are displayed as json objects"
+   width="65%">
 &nbsp;
 <br/>
-![example of live microdata from the previous example. Microdata are displayed as json objects](./images/image061.jpeg){width="6.0in" height="5.615387139107612in"}
 
 And the JSON view of the microdata:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 62.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image062.jpeg?raw=true"
+   alt="JSON view of the microdata"
+   width="45%">
 &nbsp;
 <br/>
-![JSON view of the microdata](./images/image062.jpeg){width="4.0in" height="4.4615365266841644in"}
 
-### 1.5.3 Adding Microdata to an HTML Page
+<h3 id="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
 
-### Basic steps
+<h4>Basic steps</h4>
 
 Adding microdata to an HTML page is a really simple task and requires only three attributes: itemscope, itemtype  and itemprop.
 
-#### 1 - Define a container element by adding an itemscope attribute
+<h4>1 - Define a container element by adding an itemscope attribute</h4>
 
 First, you need to add an itemscope attribute to an HTML element. This will define the &quot;global object&quot; for which we will define properties. This element can be of different types that we will describe later, but for now let us keep looking at the same example we used in previous sections:
 
+```
 1.  &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
-
 2.  \...
-
 3.  &lt;/section&gt;
+```
 
 We will look at the itemtype attribute later. Now that we have defined a global wrapper object/element (a Person in this case), we can  add properties inside this element to define the first name, last name, etc.
 
-#### 2 - Specify the vocabulary used for your microdata with the itemtype attribute of the container element
+<h4>2 - Specify the vocabulary used for your microdata with the itemtype attribute of the container element</h4>
 
 HTML5 proposes semantic elements for representing sections, articles, headers, etc, but it does not propose any specific elements or attributes to describe an address, a product, a person, etc.
 
@@ -3691,72 +3609,52 @@ We notice that one property, such as the address of a Person, may use another vo
 
 If you are a developer and if you are familiar with object oriented programming, think of properties as class attributes and think of vocabularies as classes.
 
-**Vocabularies are meant to be shared**
+<b>Vocabularies are meant to be shared</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 63.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image063.jpeg?raw=true"
+   alt="Picture wish words &apos;time to share&apos;"
+   width="25%">
 &nbsp;
 <br/>
-![Picture wish words &apos;time to share&apos;](./images/image063.jpeg){width="2.6145833333333335in" height="1.7395833333333333in"}
 
 If one of the existing vocabularies available at the schema.org Web site fits your needs, you should reuse it, as the most popular vocabularies are becoming de facto standards and will be taken into account by Web crawlers, browsers, and browser extensions.
 
 However, if you do not find a vocabulary corresponding to your needs, keep in mind that anyone can define a microdata vocabulary and start embedding custom properties in their own Web pages. You need to define a namespace and put a description of your vocabulary in a Web page that has the name of your vocabulary.
 
-#### 3 - Add properties using the itemprop attribute in HTML elements inside the container
+<h3>3 - Add properties using the itemprop attribute in HTML elements inside the container</h3>
 
-**Basics:**
+<b>Basics:</b>
 
 Now that you have defined a container element, you may add properties to the HTML inside:
 
+```
 1.  &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
-
 2.       &lt;h1&gt;Contact Information&lt;/h1&gt;
-
 3.       &lt;dl&gt;
-
 4.           &lt;dt&gt;Name&lt;/dt&gt;
-
 5.           &lt;dd **[itemprop=&quot;name&quot;]**&gt;Michel Buffa&lt;/dd&gt;
-
 6.           &lt;dt&gt;Position&lt;/dt&gt;
-
 7.           &lt;dd&gt;&lt;span **[itemprop=&quot;jobTitle&quot;]**&gt;
-
 8.                 Professor/Researcher/Scientist
-
 9.               &lt;/span&gt; for
-
 10.              &lt;span **[itemprop=&quot;affiliation&quot;]**&gt;University of Nice,
-
 11.                     France
-
 12.              &lt;/span&gt;
-
 13.           &lt;/dd&gt;
-
 14.      &lt;/dl&gt;
-
 15.      &lt;h1&gt;My different online public accounts&lt;/h1&gt;
-
 16.      &lt;ul&gt;
-
 17.          &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;
-
 18.             ** [itemprop=&quot;url&quot;]**&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
-
 19.          &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
-
 20.              **[itemprop=&quot;url&quot;]**&gt;Michel Buffa&apos;s blog&lt;/a&gt;&lt;/li&gt;
-
 21.      &lt;/ul&gt;
-
 22. &lt;/section&gt;
+```
 
 In this example, the container is a &lt;section&gt; that corresponds to a Person (we have one clue here: the name of the vocabulary given by the itemtype attribute), and each property defined inside this section is identified by the value of the itemprop attribute of sub-elements.
 
@@ -3877,15 +3775,14 @@ To automatically generate microdata for describing persons, restaurants, movie
 Example:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 64.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image064.jpeg?raw=true"
+   alt="Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata"
+   width="65%">
 &nbsp;
 <br/>
-![Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata](./images/image064.jpeg){width="6.5in" height="3.3743055555555554in"}
 
 <h3 id="ch1-5-5">1.5.5 Examples of Well Structured Documents with Microdata</h3>
 
@@ -3902,43 +3799,40 @@ Visit the [exemple #1 online](https://jsbin.com/cuzipa/edit?html,css,output).
 Structure:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 65.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image065.jpeg?raw=true"
+   alt="Picture of the first about me page example. Shows the table of content"
+   width="45%">
 &nbsp;
 <br/>
-![picture of the first about me page example. Shows the table of content](./images/image065.jpeg){width="4.0625in" height="4.010416666666667in"}
 
-Microdata:
+<h4>Microdata:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 66.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image066.jpeg?raw=true"
+   alt="Microdata from the example page"
+   width="55%">
 &nbsp;
 <br/>
-![microdata from the example page](./images/image066.jpeg){width="5.0in" height="3.7708333333333335in"}
 
 <h4>Example #2</h4>
 
 View the [example #2 online](https://jsbin.com/karemi/1/edit?html,output).
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 67.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image067.jpeg?raw=true"
+   alt="Example page, shows table of content"
+   width="45%">
 &nbsp;
 <br/>
-![Example page, shows table of content](./images/image067.jpeg){width="4.958333333333333in" height="3.4375in"}
 
 <h3 id="ch2-1">Module 2: HTML5 Multimedia</h3>
 
@@ -3950,35 +3844,33 @@ Until 2012, it was only possible to integrate an audio or video player using the
 Check the HTML code of the following CodePen:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 68.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image068.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-![](./images/image068.png){width="6.5in" height="2.061111111111111in"}
 
 Please note that:
-
--   The controls attribute indicates that a control panel with play/stop/volume/progress widgets should be displayed;
-
--   Usually the browser  will use the first format it recognizes  (in this case, the browser checks whether mp4 is supported, and if not, it will check for the ogg format, and so on). Some browsers may use a different heuristic and choose a &quot;preferred&quot; format;
-
--   The &lt;video&gt; element is a DOM member, so  CSS styling can be applied, as well as manipulation using the DOM API.
+<ul>
+<li>The controls attribute indicates that a control panel with play/stop/volume/progress widgets should be displayed;</li>
+<li>Usually the browser  will use the first format it recognizes  (in this case, the browser checks whether mp4 is supported, and if not, it will check for the ogg format, and so on). Some browsers may use a different heuristic and choose a &quot;preferred&quot; format;</li>
+<li>The &lt;video&gt; element is a DOM member, so  CSS styling can be applied, as well as manipulation using the DOM API.</li>
+</ul>
 
 You will learn more about the different attributes of the &lt;video&gt; element later on in the course.
 
-### Current browser support for the &lt;video&gt; element
+<h4>Current browser support for the &lt;video&gt; element</h4>
 
 The &lt;video&gt; element is supported by all major browsers. See the [support table from CanIUse.](https://caniuse.com/video)
 
-### Restriction: you cannot embed a YouTube or DailyMotion video using the &lt;video&gt; element
+<h4>Restriction: you cannot embed a YouTube or DailyMotion video using the &lt;video&gt; element</h4>
 
 Help! &lt;video src=&quot;my youtube video URL&quot;&gt;&lt;/video&gt; does not work! 
 
-**BEWARE**: *you cannot directly embed videos from most of the popular Web sites such as YouTube, Dailymotion, Vimeo, etc. For commercial reasons, and because advertising is automatically added to the videos, these Web sites do not allow &quot;regular&quot; embedding of their videos.*
+<b>BEWARE</b>: *you cannot directly embed videos from most of the popular Web sites such as YouTube, Dailymotion, Vimeo, etc. For commercial reasons, and because advertising is automatically added to the videos, these Web sites do not allow &quot;regular&quot; embedding of their videos.*
 
 While they use HTML5 to render their videos, these hosting sites (YouTube, etc.) use rather complex techniques in order to prevent you from using them with the &lt;video&gt;element. Instead, you often need to embed an &lt;iframe&gt; that will render the HTML5 videos in your Web site, and of course, the advertising that comes along with them.
 
@@ -3992,7 +3884,15 @@ Here is the HTML code you need to copy and paste in order to embed a video:
 
 The YouTube video embedded in this page by the above code: it&apos;s HTML5 but it&apos;s not a &lt;video&gt; element directly inserted in the HTML of this page, it&apos;s an &lt;iframe&gt;.
 
-![](./images/image069.png){width="5.84375in" height="3.28125in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 69.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image069.png?raw=true"
+   alt=""
+   width="55%">
+&nbsp;
+<br/>
 
 ### Support for different video CODECS (mp4, ogG, avi, etc.)
 
@@ -6031,7 +5931,7 @@ startWebCam();
 
 Support of getUserMedia/stream is [very good in all modern browsers](https://caniuse.com/stream), including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.
 
-### 2.4.1 More On getUserMedia
+<h3 id="ch2-4-1">2.4.1 More On getUserMedia</h3>
 
 Let&apos;s see some more examples of what we can do with the getUserMedia API: start/stop the Webcam, take a screenshot from the current video stream from the Webcam, and apply CSS effects in real time. Below, we give links to some cool examples available on the Web.
 
@@ -8658,61 +8558,35 @@ We slightly modified the function that draws the monster:
 
 Source code extract of this function: notice at *lines 3 *and* 26* how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (l*ines 7-8*). The rest of the code is nearly the same as in the last version of the monster example.
 
+```
 1.  function drawMonster(x, y, angle, headColor, eyeColor) {
-
 2.      // BEST PRACTICE: SAVE CONTEXT AND RESTORE IT AT THE END
-
 3.      ctx.save();
-
 4.  
-
 5.      // Moves the coordinate system so that the monster is drawn
-
 6.      // at position (x, y)
-
 7.      ctx.translate(x, y);
-
 8.      ctx.rotate(angle);
-
 9.  
-
 10.     // head
-
 11.     ctx.fillStyle=headColor;
-
 12.     ctx.fillRect(0,0,200,200);
-
 13. 
-
 14.     // eyes
-
 15.     ctx.fillStyle=&apos;red&apos;;
-
 16.     ctx.fillRect(35,30,20,20);
-
 17.     ctx.fillRect(140,30,20,20);
-
 18. 
-
 19.     // interior of eye
-
 20.     ctx.fillStyle=eyeColor;
-
 21.     ctx.fillRect(43,37,10,10);
-
 22.     ctx.fillRect(143,37,10,10);
-
 23.  
-
 24.     \...
-
 25.     // BEST PRACTICE!
-
 26.     ctx.restore();
-
 27. }
-
-### 
+```
 
 <h3 id="ch3-3-1">3.3.1 Immediate Mode</h3>
 
@@ -14321,11 +14195,11 @@ You can try an interactive example here:
 
 In the example, try different values for the miterLimit property. You&apos;ll see that the way the corners are rendered changes at values around 2 and 3.
 
-### 4.1.1 Video Intro -- Module 4
+<h3 id="ch4-1-1">4.1.1 Video Intro -- Module 4</h3>
 
 1:17 video explaining animation.
 
-### 4.2.1 Animation Techniques
+<h3 id="ch4-2-1">4.2.1 Animation Techniques</h3>
 
 In order to perform an animation, we need to:
 
@@ -14341,7 +14215,7 @@ These are the basic steps for animating objects in a canvas. The order of the st
 
 Step 1 could be avoided if you redraw the whole canvas content during step 2.
 
-### Before HTML5
+<h4>Before HTML5</h4>
 
 Even before HTML5 and the introduction of the canvas element, people created HTML games. They used CSS backgrounds inside &lt;div&gt; elements, and used to change the CSS top, left, width and height properties of the divs to animate graphic images on the screen.
 
@@ -16937,7 +16811,7 @@ These additions are very handy when used on mobile devices but raised many criti
 
 The course discusses all the cases and recommend solutions and good practices. Of course, like usual, many examples will be provided that you can run directly this time in the course pages, but also as standalone examples hosted on the JS Bin Web site. If you try to modify them or creates your own examples, please share in the discussion forums as usual. Have fun!
 
-<h3>5.2.1 Introduction</h3>
+<h3 id="ch5-2-1">5.2.1 Introduction</h3>
 
 With HTML5, forms, which had shown little improvement since 1997, evolved considerably.  To achieve this, Web developers relied on many popular JavaScript frameworks for validating input formats, providing various input GUIs, such as calendars for dates, sliders, etc. Frameworks such as jQueryUI, Dojo, and Sencha, all provide a widget set for improving forms. Furthermore, it was time to take into account the specifics of mobile web applications, where the GUI of a date chooser cannot be the same as a 400x400 pixel wide calendar on a desktop. Contextual virtual keyboards provided the way forward on smartphones and tablets thanks to Apple, Google and others.
 
@@ -17256,7 +17130,7 @@ WAI-ARIA provides a grouping role that functions similarly to fieldset and le
 
 WAI-ARIA roles are very important in the accessibility world, and we invite you to see an example provided in the [associated WAI tutorial](https://www.w3.org/WAI/tutorials/forms/grouping/#associating-related-controls-with-wai-aria). See also this MDN&apos;s article about about [WAI-ARIA roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
 
-### 5.4.1 Input Types
+<h3 id="ch5-4-1">5.4.1 Input Types</h3>
 
 In this section, we briefly present the input types, attributes, and elements related to the forms that came with HTML5. Details are given later, illustrated by multiple interactive examples.
 
@@ -18628,7 +18502,7 @@ In the following pages, we present a set of rarely used attributes introduced by
 
 You might just glance at them and/or try the examples. The next pages cover their usage and you are welcome to use them for future reference (for those of you who like to cover the topics completely).
 
-### 5.5.10 formaction and formmethod
+<h3 id="ch5-5-10">5.5.10 formaction and formmethod</h3>
 
 These attributes are targeted to the &lt;input type=&quot;submit&quot;&gt; input fields. They are rarely used.
 ```
@@ -18693,7 +18567,7 @@ The second example shows a form with two submit buttons:
 <br/>
 ![](./images/image273.png){width="4.0in" height="1.4247790901137358in"}
 
-### 5.5.11 formnovalidate
+<h3 id="ch5-5-11">5.5.11 formnovalidate</h3>
 
 The formnovalidate attribute is targeted to the &lt;input type=&quot;submit&quot;&gt; input fields. This attribute is rarely used, so there will be no questions about it in the end of the week&apos;s exercises.
 
@@ -18703,41 +18577,33 @@ In general, such forms have two submit buttons, one with the formnovalidate at
 
 Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,output)):
 
+```
 1.  &lt;form action=&quot;form.php&quot;&gt;
-
 2.     &lt;fieldset&gt;
-
 3.       &lt;legend&gt;Example of formnovalidate attribute&lt;/legend&gt;
-
 4.       &lt;label for=&quot;email&quot;&gt;E-mail:&lt;/label&gt;
-
 5.       &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot;/&gt;&lt;br&gt;
-
 6.       &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;&lt;br&gt;
-
 7.       **&lt;input type=&quot;submit&quot;**
-
 8.              **formnovalidate** 
-
 9.              **value=&quot;Submit without validation&quot; /&gt;**
-
 10. &lt;/fieldset&gt;
-
 11. &lt;/form&gt;
+```
 
-### 5.5.12 formtarget
+<h3 id="ch5-5-12">5.5.12 formtarget</h3>
 
 The formtarget attribute is targeted to the &lt;input type=&quot;submit&quot;&gt; input fields. This attribute is rarely used.
 
 This attribute&apos;s value indicates where the response from the form submission should be displayed. 
 
-### Typical use
+<h4>Typical use</h4>
 
+```
 1.  &lt;input type=&quot;submit&quot;
-
 2.         **formtarget=&quot;\_blank&quot;**
-
 3.         value=&quot;Submit but show results in a new window/tab&quot;&gt;
+```
 
 Possible values for the formtarget attributes are:
 
@@ -18751,7 +18617,7 @@ Possible values for the formtarget attributes are:
 
 -   framename: the response is displayed in a named iframe
 
-### Complete example
+<h4>Complete example</h4>
 
 [Online example at JSBin ](https://jsbin.com/godice/2/edit?html,output)or try it in your browser below:
 
@@ -18792,7 +18658,7 @@ Source code:
 
 10. &lt;/form&gt;
 
-### 5.5.13 formenctype
+<h3 id="ch5-5-13">5.5.13 formenctype</h3>
 
 A word about the enctype attribute of the &lt;form&gt; element
 
@@ -19262,7 +19128,7 @@ Source code of this example:
 
 As you can see at l*ines 2* and *4*, the id and list attributes match. The &lt;datalist&gt; element is wrapped around a set of  &lt;option&gt; that are available for selection by another form control (in this example the input field from *line 2*).
 
-### 5.7.1 Introduction
+<h3 id="ch5-7-1">5.7.1 Introduction</h3>
 
 In this section of the course, we will look at CSS pseudo classes that are useful for giving instant feedback when the user&apos;s input is not valid. We will also look at the new JavaScript API introduced by HTML5 for validating forms and form elements.
 
@@ -20047,7 +19913,7 @@ This week, we will look at some of the most useful APIs. Others will be covered 
 
 -   **The Geolocation API for obtaining data such as longitude, latitude, altitude (when available), and speed**. You will learn how to write applications in combination with interactive maps. You will also learn how to guess the address of a user, for example for pre-filling a registration form with the city, country, and zip code that corresponds with the current location.
 
-## 6.2.1 The Web storage API
+<h3 id="ch6-2-1">6.2.1 The Web storage API</h3>
 
 The Web storage API introduces &quot;two related mechanisms, similar to HTTP session cookies, for storing structured data on the client side&quot;.
 
@@ -22270,4 +22136,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-12-2022 Fri 5:29pm</i></b></h3>
+<h3><b><i>07-13-2022 10:18pm</i></b></h3>
