@@ -1288,7 +1288,7 @@ In red, the sectioning root (&lt;body&gt;) and the sectioning elements (&lt;sect
 <h4>To sum up:</h4>
 <ul>
 <li>Always use a heading element after a sectioning</lement, for example &lt;section&gt;<b>&lt;Hx&gt;&period;&period;&period;&lt;/Hx&gt;&period;&period;&period;</b>&lt;/section&gt;, and after &lt;body&gt;, where **x** can be 1..6,</li>
-<li>Or, use a &lt;header&gt; element, like in &lt;section&gt;<b>&lt;header&gt;&lt;Hx&gt;\...&lt;/Hx&gt;&period;&period;&period;&lt;/header&gt;</b>&period;&period;&period;&lt;/section&gt;</li>
+<li>Or, use a &lt;header&gt; element, like in &lt;section&gt;<b>&lt;header&gt;&lt;Hx&gt;...&lt;/Hx&gt;&period;&period;&period;&lt;/header&gt;</b>&period;&period;&period;&lt;/section&gt;</li>
 </ul>
 
 <h4>More about the &lt;header&gt; element</h4>
@@ -1523,7 +1523,7 @@ However, there are some issues with this approach:
 <li>Even with the same ids and class names, the css rules may be different.</li><br/>
 <li>JavaScript libraries have become increasingly heavy over the years.</li><br/>
 <li>Web pages have become increasingly heavy over the years!</li><br/>
-<li>These elements can not be handled by the Web browser natively\...</li><br/>
+<li>These elements can not be handled by the Web browser natively&period;&period;&period;</li><br/>
 </ul>
 
 Even if differences exist between ids, classes and css/js implementations, they also share common behaviors, layouts, and &quot;ways of doing things&quot; that could be guessed at first glance by a human.
@@ -3478,7 +3478,7 @@ Different use cases:
 
 <h3 id="ch1-5-2">1.5.2 Testing Tools</h3>
 
-### Introduction
+<h4>Introduction</h4>
 
 After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.
 <!------------------------------------------------------------------------------------------------>
@@ -3493,7 +3493,7 @@ After seeing the principle of embedding microdata in an HTML page, we now presen
 
 One of the most popular resources for testing microdata (as well as microformats and RDFa) is this [Google page about understanding how structured data works](https://developers.google.com/search/docs/guides/intro-structured-data). This page contains a link to a structured data testing tool that you can use to see how Google recognizes the semantic data you embed in your HTML code.
 
-### Testing a real interactive example with an &quot;about page&quot; for Michel Buffa
+<h4>Testing a real interactive example with an &quot;about page&quot; for Michel Buffa</h4>
 
 Let&apos;s have a look now at a (small) example of an about page. It renders as a very simple paragraph that explains who Michel Buffa is\... But we embedded Microdata, so it&apos;s interesting to see how a search engine sees it, and how it may produce &quot;augmented search results&quot;.
 
@@ -3538,7 +3538,7 @@ Rendering of the page in a browser:
 &nbsp;
 <br/>
 
-Here is what Google sees of the page. We just entered its [URL](https://output.jsbin.com/gunuzus/1) in the [Google page about rich snippets and structured data](https://developers.google.com/search/docs/guides/intro-structured-data):
+Here is what Google sees of the page. We just entered its <a href="https://output.jsbin.com/gunuzus/1">URL</a> in the <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Google page about rich snippets and structured data:</a>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 60.  (xx) ------------------------------->
@@ -3552,12 +3552,12 @@ Here is what Google sees of the page. We just entered its [URL](https://output
 
 Note that the address is a fully featured embedded object in the Person&apos;s description.
 
-### Live Microdata
+<h4>Live Microdata</h4>
 
-The [Live Microdata Web site](https://foolip.org/microdatajs/live/)  is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
+The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 61.  (xx) ------------------------------->
+<!----------------------------- 61. example of live microdata (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image061.jpeg?raw=true"
@@ -3583,19 +3583,19 @@ And the JSON view of the microdata:
 
 Adding microdata to an HTML page is a really simple task and requires only three attributes: itemscope, itemtype  and itemprop.
 
-<h4>1 - Define a container element by adding an itemscope attribute</h4>
+<h4 style="color:red;">1 - Define a container element by adding an itemscope attribute</h4>
 
 First, you need to add an itemscope attribute to an HTML element. This will define the &quot;global object&quot; for which we will define properties. This element can be of different types that we will describe later, but for now let us keep looking at the same example we used in previous sections:
 
 ```
-1.  &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
-2.  \...
-3.  &lt;/section&gt;
+1.  <section itemscope itemtype=https://schema.org/Person">
+2.  ...
+3.  </section>
 ```
 
 We will look at the itemtype attribute later. Now that we have defined a global wrapper object/element (a Person in this case), we can  add properties inside this element to define the first name, last name, etc.
 
-<h4>2 - Specify the vocabulary used for your microdata with the itemtype attribute of the container element</h4>
+<h4 style="color:red;">2 - Specify the vocabulary used for your microdata with the itemtype attribute of the container element</h4>
 
 HTML5 proposes semantic elements for representing sections, articles, headers, etc, but it does not propose any specific elements or attributes to describe an address, a product, a person, etc.
 
@@ -3632,28 +3632,28 @@ However, if you do not find a vocabulary corresponding to your needs, keep in mi
 Now that you have defined a container element, you may add properties to the HTML inside:
 
 ```
-1.  &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
-2.       &lt;h1&gt;Contact Information&lt;/h1&gt;
-3.       &lt;dl&gt;
-4.           &lt;dt&gt;Name&lt;/dt&gt;
-5.           &lt;dd **[itemprop=&quot;name&quot;]**&gt;Michel Buffa&lt;/dd&gt;
-6.           &lt;dt&gt;Position&lt;/dt&gt;
-7.           &lt;dd&gt;&lt;span **[itemprop=&quot;jobTitle&quot;]**&gt;
+1.  <section itemscope itemtype="https://schema.org/Person">
+2.       <h1>Contact Information</h1>
+3.       <dl>
+4.           <dt>Name</dt>
+5.           <dd [itemprop="name:>Michel Buffa</dd>
+6.           <dt>Position</dt>
+7.           <dd><span itemprop="jobTitle">
 8.                 Professor/Researcher/Scientist
-9.               &lt;/span&gt; for
-10.              &lt;span **[itemprop=&quot;affiliation&quot;]**&gt;University of Nice,
+9.               </span> for
+10.              <span itemprop="affiliation">University of Nice,
 11.                     France
-12.              &lt;/span&gt;
-13.           &lt;/dd&gt;
-14.      &lt;/dl&gt;
-15.      &lt;h1&gt;My different online public accounts&lt;/h1&gt;
-16.      &lt;ul&gt;
-17.          &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;
-18.             ** [itemprop=&quot;url&quot;]**&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
-19.          &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
-20.              **[itemprop=&quot;url&quot;]**&gt;Michel Buffa&apos;s blog&lt;/a&gt;&lt;/li&gt;
-21.      &lt;/ul&gt;
-22. &lt;/section&gt;
+12.              </span>
+13.           </dd>
+14.      </dl>
+15.      <h1>My different online public accounts</h1>
+16.      <ul>
+17.          <li><a href="https://www.twitter.com/micbuffa"
+18.             itemprop="url">Twitter profile</a></li>
+19.          <li><a href="https://www.blogger.com/micbuffa"
+20.             itemprop="url">Michel Buffa's blog</a></li>
+21.      </ul>
+22. </section>
 ```
 
 In this example, the container is a &lt;section&gt; that corresponds to a Person (we have one clue here: the name of the vocabulary given by the itemtype attribute), and each property defined inside this section is identified by the value of the itemprop attribute of sub-elements.
@@ -3726,7 +3726,7 @@ And so on\...
 
 Now, let&apos;s see what elements are compatible with the itemprop attribute and where the values of the properties are located, depending on each element type.
 
-#### The HTML elements compatible with the itemprop attribute
+<h4>The HTML elements compatible with the itemprop attribute</h4>
 
 If the itemprop attribute appears on a:
 
@@ -21736,4 +21736,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-13-2022 10:18pm</i></b></h3>
+<h3><b><i>07-14-2022 2:53am</i></b></h3>
