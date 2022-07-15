@@ -1449,7 +1449,7 @@ Let&apos;s compare it to the HTML4 minimal document below (taken from [this sou
 
 <h4>Simpler character set definition</h4>
 
-One word about the &lt;meta charset=&quot;utf-8&quot;&gt; at line 4 in the HTML5 version: it is a **best practice** to declare the character set of your document to protect against [a serious security risk](https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7). For more details, please refer to the &quot;Why Internationalization is important&quot; section in the Course intro chapter.
+One word about the &lt;meta charset=&quot;utf-8&quot;&gt; at line 4 in the HTML5 version: it is a <b>best practice</b> to declare the character set of your document to protect against [a serious security risk](https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7). For more details, please refer to the &quot;Why Internationalization is important&quot; section in the Course intro chapter.
 
 <h4>No more complicated DOCTYPE definitions</h4>
 
@@ -1739,7 +1739,7 @@ Now, we have one big &lt;section&gt; element that contains a set of &lt;artic
 
 Note that the H2, article, article header, etc. will be styled using these rules.
 
-<h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
+<h4>Add a &lt;header&gt; at the beginning of each &lt;article></h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 17. image of the header at the top of each article (xx) ------------------->
@@ -1765,20 +1765,20 @@ Example for the first blog article:
      highlighted and you will be able
      to see the different inclusions of elements one in each other. If you
      move the cursor to this sentence, it will be highlighted in dark grey,
-     showing the presence of an &lt;article&gt; element, surrounded by a
-     &lt;section&gt; element (light grey), etc. So we have some articles in
-     a single section element. The page title at the top is a &lt;header&gt;
-     element, while the tag cloud on the right is a &lt;aside&gt; element. The
-     main menu on top (with Blog, About, Contact) is a &lt;nav&gt; element.</p>
+     showing the presence of an &lt;article> element, surrounded by a
+     &lt;section> element (light grey), etc. So we have some articles in
+     a single section element. The page title at the top is a &lt;header>
+     element, while the tag cloud on the right is a &lt;aside> element. The
+     main menu on top (with Blog, About, Contact) is a &lt;nav> element.</p>
      <figure>
          <img src="HTML5-tags.png"
              alt="Example of HTML5 structural tags" />
          <figcaption>
              Fig. 1 : an example of how new structural elements could
-             be used. This page put a &lt;nav&gt; on top, and does not have
+             be used. This page put a &lt;nav> on top, and does not have
              headers and footer for each article, like in this figure,
              but it could... By the way this is a
-             &lt;figcaption&gt; inside a &lt;figure&gt; element...
+             &lt;figcaption> inside a &lt;figure> element...
          </figcaption>
     </figure>
    </article>
@@ -1786,7 +1786,7 @@ Example for the first blog article:
 </section>
 ```
 
-#### Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside
+<h4>Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside</h4>
 
 Also note the way we included a figure using the new &quot;HTML5&quot; method, using a &lt;figure&gt;..&lt;/figure&gt; element that embedded a &lt;img src=&period;&period;&period;/&gt; element together with a &lt;figcaption&gt; element. 
 
@@ -1824,7 +1824,7 @@ figcaption {
 }
 ```
 
-#### Use an &lt;aside&gt; element to display a tag cloud on the&period;&period;&period; side of the main content
+<h4>Use an &lt;aside&gt; element to display a tag cloud on the&period;&period;&period; side of the main content</h4>
 
 After the long &lt;section&gt; element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, &quot;aside&quot;! This is done using - you already guessed it - an &lt;aside&gt; element:
 
@@ -1962,16 +1962,14 @@ footer {
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- xx.  (xx) ------------------->
+<!---------------- 23.  (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/imagexx.jpeg?raw=true"
-   alt=""
+<img src="/images/image023.jpeg?raw=true"
+   alt="Picture of &apos;eisher&apos; hands"
    width="25%" />
 &nbsp;
 <br/>
-
-![Picture of &apos;eisher&apos; hands](./images/image023.jpeg){width="2.4270833333333335in" height="1.3333333333333333in"}
 
 It may not be clear whether a &lt;section&gt; may contain one or several &lt;article&gt; elements or if an &lt;article&gt; may contain one or several &lt;section&gt; elements.
 
@@ -1979,15 +1977,14 @@ It may not be clear whether a &lt;section&gt; may contain one or several &lt;a
 
 -   &lt;section&gt; elements are used to cut a logical part into subparts.
 
-**An &lt;article&gt; may be cut into different &lt;section&gt; elements!**
+<b>An &lt;article&gt; may be cut into different &lt;section&gt; elements!</b>
 
-###### Example of a blog post defined as a long &lt;article&gt;, that is in turn cut into smaller &lt;section&gt; elements:
-
+<h4>Example of a blog post defined as a long &lt;article&gt;, that is in turn cut into smaller &lt;section&gt; elements:</h4>
 ```
 <article id="id1">
    <section id="id1part1">
      <h2>Introduction</h2>
-   </section&gt;
+   </section>
    <section id="id1part2">
      <h2>My travel to India</h2>
    </section>
@@ -2020,7 +2017,7 @@ Yes, you can, in case you would like to propose some navigation links with each 
            <li><a href="...">Contact author</a></li>
        </ul>
    </nav>
-   <p&gt;Content...</p>
+   <p>Content...</p>
    <footer>
      <p>Posted by Michel, the <time datetime="2012-02-02">February 2,
      2012</time> </p>
@@ -2032,7 +2029,7 @@ In that case, the &lt;nav&gt; element proposes navigation links to the next or
 
 Also note that we used in that example a &lt;footer&gt; element in the blog post.
 
-### What about the &lt;div&gt; element? Is it still useful?
+<h4>What about the &lt;div&gt; element? Is it still useful?</h4>
 
 The new elements have been primarily designed to better structure the code of HTML pages such as those generated by blog or CMS software, however do not forget that they add new semantics and will be taken into account by :
 
@@ -2047,22 +2044,20 @@ You can use &lt;div&gt; elements in all cases where the proposed structural el
 This chart from the [HTML5 Doctor Web site](https://html5doctor.com/) may help you decide whether or not to use a &lt;div&gt;:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- xx.  (xx) ------------------->
+<!---------------- 24. flow chart about using header, H1, etc. (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/imagexx.jpeg?raw=true"
-   alt=""
-   width="25%" />
+<img src="/images/image024.png?raw=true"
+   alt="flow chart about using header, H1, etc."
+   width="65%" />
 &nbsp;
 <br/>
 
-![flow chart about using header, H1, etc.](./images/image024.png){width="6.5in" height="4.600694444444445in"}
-
-### 1.3.5 Headings and Structural Elements
+<h3 id="ch1-3-5">1.3.5 Headings and Structural Elements</h3>
 
 We will now present some best practices for starting to use &lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;, in particular concerning the use of headings (h1, h2, h3, h4, h5 and h6).
 
-### Use &lt;h1&gt;&period;&period;&period;&lt;h6&gt; for the headings
+<h4>Use &lt;h1&gt;&period;&period;&period;&lt;h6&gt; for the headings</h4>
 
 Since the very beginning, HTML has had heading elements: &lt;h1&gt;&period;&period;&period;&lt;h6&gt;. These elements are used to display headings with different sizes by default, when no CSS is used.  The following example shows 6 sentences that are surrounded by &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; and &lt;h6&gt;:
 
@@ -2080,24 +2075,22 @@ Since the very beginning, HTML has had heading elements: &lt;h1&gt;&period;&per
 
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 <!------------------------------------------------------------------------------------------------>
-<!---------------- xx.  (xx) ------------------->
+<!---------------- 25. outliner in action from the previous example (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/imagexx.jpeg?raw=true"
-   alt=""
-   width="25%" />
+<img src="/images/image025.png?raw=true"
+   alt="Outliner in action from the previous example"
+   width="65%" />
 &nbsp;
 <br/>
-
-![outliner in action from the previous example](./images/image025.png){width="6.5in" height="3.5097222222222224in"}
 
 In the above outline, note that we have only used H1&period;&period;&period;H6 elements, without any new HTML5 structural elements such as &lt;section&gt; or &lt;article&gt;.
 
 Here is a list of browser extensions you can try, for visualizing the outline of a document: [table-of-contents-crx](https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f) Chrome extension or [this Firefox extension](https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search).
 
-### Using headings and new sectioning elements (section, article, aside, nav)
+<h4>Using headings and new sectioning elements (section, article, aside, nav)</h4>
 
-#### Definition of heading content and sectioning content
+<h4>Definition of heading content and sectioning content</h4>
 
 The &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt; elements are called **&quot;sectioning elements&quot;**. They cut a document into slices we call** &quot;sections&quot;.**
 
@@ -2127,91 +2120,75 @@ The first element of a heading content in an element of sectioning content repre
 
 Subsequent headings of equal or higher rank start new (implied) sections, headings of lower rank start implied subsections that are part of the previous one. In both cases, the element represents the heading of the implied section.
 
-###### Let&apos;s clarify this by looking at some example code:
-
-###### &lt;body&gt;
-
-###### &lt;section&gt;
-
-######     &lt;h1&gt;This H1 is the heading of an explicit section&lt;/h1&gt;
-
-######     &period;&period;&period;
-
-######        &lt;h2&gt;This H2 is a subheading, part of the same section
-
-######            (lower rank)&lt;/h2&gt;
-
-######             &period;&period;&period;
-
-######     &lt;h1&gt;This H1 starts an implicit new section in the explicit
-
-######         section (equal or higher rank)&lt;/h1&gt;
-
-######         &period;&period;&period;
-
-######         &lt;h2&gt;This is a H2 heading in the new section that has
-
-######             just started&lt;/h2&gt;
-
-######             &period;&period;&period;
-
-###### &lt;/section&gt;
-
-###### &lt;/body&gt;
-
-###### The corresponding outline is:
+```
+<h7> Let&apos;s clarify this by looking at some example code:
+<h7> &lt;body>
+<h7> &lt;section>
+<h7>     &lt;h1>This H1 is the heading of an explicit section&lt;/h1>
+<h7>     &period;&period;&period;
+<h7>        &lt;h2>This H2 is a subheading, part of the same section
+<h7>            (lower rank)&lt;/h2>
+<h7>             &period;&period;&period;
+<h7>     &lt;h1>This H1 starts an implicit new section in the explicit
+<h7>         section (equal or higher rank)&lt;/h1>
+<h7>         &period;&period;&period;
+<h7>         &lt;h2>This is a H2 heading in the new section that has
+<h7>             just started&lt;/h2>
+<h7>             &period;&period;&period;
+<h7> &lt;/section>
+<h7> &lt;/body>
+<h7> The corresponding outline is:
+```
 <!------------------------------------------------------------------------------------------------>
-<!---------------- xx.  (xx) ------------------->
+<!---------------- 26.  (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/imagexx.jpeg?raw=true"
-   alt=""
-   width="25%" />
+<img src="/images/image026.jpeg?raw=true"
+   alt="Outline of previous example"
+   width="60%" />
 &nbsp;
 <br/>
 
-![outline of previous example](./images/image026.jpeg){width="6.0in" height="2.6333333333333333in"}
-
 In the above example, please note two things:
+<ol>
+<li>1.  The outline shows an &quot;Untitled body&quot; at the root of the hierarchy,</li>
+<li>2.  The default size for the H1 and H2 is the same (!). Indeed, when we start a &lt;h1&gt; inside a &lt;section&gt; the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
+</ol>
 
-1.  The outline shows an &quot;Untitled body&quot; at the root of the hierarchy,
+<h3 id="ch1-3-6">1.3.6 Best Practices When Using Sectioning Elements</h3>
 
-2.  The default size for the H1 and H2 is the same (!). Indeed, when we start a &lt;h1&gt; inside a &lt;section&gt; the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.
-
-### 1.3.6 Best Practices When Using Sectioning Elements
-
-### **Best practice #1**: always add a heading to explicit sectioning content
+<h4<b>Best practice #1</b>: always add a heading to explicit sectioning content</h4>
 
 It&apos;s always better - mainly for accessibility reasons - to include a heading (a &lt;h1&gt;, &lt;h2&gt;&period;&period;&period;&lt;h6&gt;) in each sectioning element (&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also after the &lt;body&gt; element (called a &quot;sectioning root&quot;). 
 
 Here are some examples:
 
-**Good (heading in each explicit section):**
+<b>Good (heading in each explicit section):</b>
 
 ```
-####### &lt;section&gt;
-#######     &lt;h1&gt;Blog post of April 2020&lt;/h1&gt;
-#######     &period;&period;&period;
-####### &lt;/section&gt;
-**Good (heading  in a &lt;header&gt; does not change anything)**
-####### &lt;section&gt;
-#######    **&lt;header&gt;**
-#######       **&lt;h1&gt;Blog post of April 2020&lt;/h1&gt;**
-#######       **&lt;p&gt;Posted by Michel Buffa&period;&period;&period;&lt;/p&gt;**
-#######    **&lt;/header&gt;**
-####### &period;&period;&period;
-####### &lt;/section&gt;
+<h7> &lt;section></h7>
+<h7>     &lt;h1>Blog post of April 2020&lt;/h1>
+<h7>     &period;&period;&period;
+ &lt;/section>
+<b>Good (heading  in a &lt;header> does not change anything)</b>
+<h7> &lt;section>
+<h7>    <b>&lt;header></b>
+<h7>       <b>&lt;h1>Blog post of April 2020&lt;/h1></b>
+<h7>       <b>&lt;p>Posted by Michel Buffa&period;&period;&period;&lt;/p></b>
+<h7>    <b>&lt;/header></b>
+<h7> &period;&period;&period;
+<h7> &lt;/section>
 ```
-**Bad (there is no Hx after the &lt;section&gt; -&gt; no heading):**
+<b>Bad (there is no Hx after the &lt;section&gt; -&gt; no heading):</b>
 
 ```
-####### <section>
-#######    <header>
-#######       <p class="article title">Blog post of April 2020</p>
-#######       <p>Posted by Michel Buffa...</p>
-#######    </header>
-#######    ...
-####### </section>
+<h7> <section></h7>
+<h7>    <header></h7>
+<h7>       <p class="article title">Blog post of April 2020</p></h7>
+<h7>       <p>Posted by Michel Buffa...</p></h7>
+<h7>    </header></h7>
+<h7>    ...
+<h7> </section></h7>
 ```
 
 The last example is bad for accessibility reasons. A screen reader that vocalizes the page will just say &quot;Entering section&quot;, while in the previous two good examples it would say &quot;entering section with heading Blog Posts of April 2020&quot;. You can also check if your headings and sectioning elements are ok by using a browser extension that displays the outline of the document (just search for &quot;html5 outliner&quot; in your browser&apos;s extension search engine).
@@ -2297,7 +2274,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 5.  </header>
 ```
 
-### **Best practice #2**: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;&period;&period;&period;&lt;h6&gt;
+<h4><b>Best practice #2</b>: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;&period;&period;&period;&lt;h6&gt;</h4>
 
 The example below defines several implicit &quot;sections&quot; by using &lt;Hx&gt; directly (at *lines 7 and 9*):
 
@@ -2305,13 +2282,13 @@ The example below defines several implicit &quot;sections&quot; by using &lt;H
 
 ```
 1.  <body>
-2.  **<h4>Apples</h4>**
+2.  <h4>Apples</h4>
 3.  <p>Apples are fruit.</p>
 4.  <section>
 5.       <h2>Taste</h2>
 6.       <p>They taste lovely.</p>
 7.       <h6>Sweet<h6>
-8.       <p>Red apples are sweeter than green ones.</p&gt;
+8.       <p>Red apples are sweeter than green ones.</p>
 9.       **<h1>Color</h1>**
 10.      <p>Apples come in various colors.</p>
 11. </section>
@@ -2378,21 +2355,21 @@ This example is a simple document, with a hyperlink that, once clicked, displays
 14. </section>
 15. <aside>
 16.      <h3>Table of contents</h3>
-17.      **<a href="javascript:(function(){...})();"**
-18. **        title="TableDeMatiere">**
-19. **        Click here to display the table of contents!**
-20. **     </a>**
+17.      <a href="javascript:(function(){...})();"
+18.         title="TableDeMatiere">
+19.         Click here to display the table of contents!
+20.      </a>
 21. </aside>
 22. </body>
 ```
 
-**Best practice**: visualizing the table of contents is useful for debugging the structure of your page, and checking the presence of headings after sectioning content.
+<b>Best practice</b>: visualizing the table of contents is useful for debugging the structure of your page, and checking the presence of headings after sectioning content.
 
 Indeed, tools that generate the table of contents are a good way to debug the structure of your page. Is the hierarchy correct? Is it what I wanted when I designed my page?
 
 They are also useful for checking the presence of headings in each sectioning content. If some headings are missing, the table of contents will display some &quot;untitled entries&quot;. Remember that having a heading after each sectioning content is a good practice in terms of accessibility.
 
-### 1.3.8 The &lt;main&gt; Element
+<h3 id="ch1-3-8">1.3.8 The &lt;main&gt; Element</h3>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 31. (##) ------------------------------->
@@ -2418,87 +2395,87 @@ This element is subject to some constraints:
 And finally, here are some examples (from [the HTML5 specification](https://www.w3.org/TR/html5/grouping-content.html#the-main-element))  that mix the &lt;main&gt; element with the other sectioning elements already seen in the course:
 
 ```
-1.  &lt;!&ndash;&ndash; other content &ndash;&ndash;&gt;
+1.  &lt;!&ndash;&ndash; other content &ndash;&ndash;>
 2.  
-3.  &lt;main&gt;
+3.  &lt;main>
 4.  
-5.     &lt;h1&gt;Skateboards&lt;/h1&gt;
-6.     &lt;p&gt;The skateboard helps kids to get around.&lt;/p&gt;
+5.     &lt;h1>Skateboards&lt;/h1>
+6.     &lt;p>The skateboard helps kids to get around.&lt;/p>
 7.  
-8.     &lt;article&gt;
-9.        &lt;h2&gt;Longboards&lt;/h2&gt;
-10.       &lt;p&gt;Longboards are a type of skateboard with a longer
-11. wheelbase and larger, softer wheels.&lt;/p&gt;
-12.       &lt;p&gt;&period;&period;&period; &lt;/p&gt;
-13.       &lt;p&gt;&period;&period;&period; &lt;/p&gt;
-14.    &lt;/article&gt;
+8.     &lt;article>
+9.        &lt;h2>Longboards&lt;/h2>
+10.       &lt;p>Longboards are a type of skateboard with a longer
+11. wheelbase and larger, softer wheels.&lt;/p>
+12.       &lt;p>&period;&period;&period; &lt;/p>
+13.       &lt;p>&period;&period;&period; &lt;/p>
+14.    &lt;/article>
 15. 
-16.    &lt;article&gt;
-17.       &lt;h2&gt;Electric Skateboards&lt;/h2&gt;
-18.       &lt;p&gt;These no longer require the propelling of the skateboard by means of the feet; rather an electric motor propels the board, fed by an electric battery.&lt;/p&gt;
-19.       &lt;p&gt;&period;&period;&period; &lt;/p&gt;
-20.       &lt;p&gt;&period;&period;&period; &lt;/p&gt;
-21.    &lt;/article&gt;
+16.    &lt;article>
+17.       &lt;h2>Electric Skateboards&lt;/h2>
+18.       &lt;p>These no longer require the propelling of the skateboard by means of the feet; rather an electric motor propels the board, fed by an electric battery.&lt;/p>
+19.       &lt;p>&period;&period;&period; &lt;/p>
+20.       &lt;p>&period;&period;&period; &lt;/p>
+21.    &lt;/article>
 22. 
-23. &lt;/main&gt;
+23. &lt;/main>
 24.  
-25. &lt;!&ndash;&ndash; other content &ndash;&ndash;&gt;
+25. &lt;!&ndash;&ndash; other content &ndash;&ndash;>
 ```
 
-Here is another example (also from the specification). Here the &lt;main&gt; element contains a &lt;nav&gt; element consisting of links to subsections of the main content:
+Here is another example (also from the specification). Here the &lt;main> element contains a &lt;nav> element consisting of links to subsections of the main content:
 
-1.  &lt;!DOCTYPE html&gt;
-2.     &lt;html lang=&quot;en&quot;&gt;
-3.        &lt;head&gt;
-4.           &lt;meta charset=&quot;utf-8&quot;/&gt;
-5.           &lt;title&gt;Graduation Ceremony Summer 2022&lt;/title&gt;
-6.        &lt;/head&gt;
-7.        &lt;body&gt;
-8.         &lt;header&gt;The Lawson Academy:
-9.           &lt;nav&gt;
-10.             &lt;h2&gt;Click these links to navigate&period;&period;&period;&lt;/h2&gt;
-11.             &lt;ul&gt;
-12.                &lt;li&gt;&lt;a href=&quot;courses.html&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
-13.                &lt;li&gt;&lt;a href=&quot;fees.html&quot;&gt;Fees&lt;/a&gt;&lt;/li&gt;
-14.                &lt;li&gt;&lt;a&gt;Graduation&lt;/a&gt;&lt;/li&gt;
-15.             &lt;/ul&gt;
-16.          &lt;/nav&gt;
-17.       &lt;/header&gt;
-18.       &lt;main&gt;
-19.          &lt;h1&gt;Graduation&lt;/h1&gt;
-20.          &lt;nav&gt;
-21.             &lt;h2&gt;Please choose:&lt;/h2&gt;
-22.             &lt;ul&gt;
-23.                &lt;li&gt;&lt;a href=&quot;#ceremony&quot;&gt;Ceremony&lt;/a&gt;&lt;/li&gt;
-24.                &lt;li&gt;&lt;a href=&quot;#graduates&quot;&gt;Graduates&lt;/a&gt;&lt;/li&gt;
-25.                &lt;li&gt;&lt;a href=&quot;#awards&quot;&gt;Awards&lt;/a&gt;&lt;/li&gt;
-26.             &lt;/ul&gt;
-27.          &lt;/nav&gt;
-28.          &lt;h2 id=&quot;ceremony&quot;&gt;Ceremony&lt;/h2&gt;
-29.          &lt;p&gt;Opening Procession&lt;/p&gt;
-30.          &lt;p&gt;Speech by Valedictorian&lt;/p&gt;
-31.          &lt;p&gt;Speech by Class President&lt;/p&gt;
-32.          &lt;p&gt;Presentation of Diplomas&lt;/p&gt;
-33.          &lt;p&gt;Closing Speech by Headmaster&lt;/p&gt;
-34.          &lt;h2 id=&quot;graduates&quot;&gt;Graduates&lt;/h2&gt;
-35.          &lt;ul&gt;
-36.             &lt;li&gt;Eileen Williams&lt;/li&gt;
-37.             &lt;li&gt;Andy Maseyk&lt;/li&gt;
-38.             &lt;li&gt;Blanca Sainz Garcia&lt;/li&gt;
-39.             &lt;li&gt;Clara Faulkner&lt;/li&gt;
-40.             &lt;li&gt;Gez Lemon&lt;/li&gt;
-41.             &lt;li&gt;Eloisa Faulkner&lt;/li&gt;
-42.          &lt;/ul&gt;
-43.          &lt;h2 id=&quot;awards&quot;&gt;Awards&lt;/h2&gt;
-44.             &lt;ul&gt;
-45.                &lt;li&gt;Clara Faulkner&lt;/li&gt;
-46.                &lt;li&gt;Eloisa Faulkner&lt;/li&gt;
-47.                &lt;li&gt;Blanca Sainz Garcia&lt;/li&gt;
-48.             &lt;/ul&gt;
-49.          &lt;/main&gt;
-50.       &lt;footer&gt;Copyright 2012 B.lawson&lt;/footer&gt;
-51.    &lt;/body&gt;
-52. &lt;/html&gt;
+1.  &lt;!DOCTYPE html>
+2.     &lt;html lang=&quot;en&quot;>
+3.        &lt;head>
+4.           &lt;meta charset=&quot;utf-8&quot;/>
+5.           &lt;title>Graduation Ceremony Summer 2022&lt;/title>
+6.        &lt;/head>
+7.        &lt;body>
+8.         &lt;header>The Lawson Academy:
+9.           &lt;nav>
+10.             &lt;h2>Click these links to navigate&period;&period;&period;&lt;/h2>
+11.             &lt;ul>
+12.                &lt;li>&lt;a href=&quot;courses.html&quot;>Courses&lt;/a>&lt;/li>
+13.                &lt;li>&lt;a href=&quot;fees.html&quot;>Fees&lt;/a>&lt;/li>
+14.                &lt;li>&lt;a>Graduation&lt;/a>&lt;/li>
+15.             &lt;/ul>
+16.          &lt;/nav>
+17.       &lt;/header>
+18.       &lt;main>
+19.          &lt;h1>Graduation&lt;/h1>
+20.          &lt;nav>
+21.             &lt;h2>Please choose:&lt;/h2>
+22.             &lt;ul>
+23.                &lt;li>&lt;a href=&quot;#ceremony&quot;>Ceremony&lt;/a>&lt;/li>
+24.                &lt;li>&lt;a href=&quot;#graduates&quot;>Graduates&lt;/a>&lt;/li>
+25.                &lt;li>&lt;a href=&quot;#awards&quot;>Awards&lt;/a>&lt;/li>
+26.             &lt;/ul>
+27.          &lt;/nav>
+28.          &lt;h2 id=&quot;ceremony&quot;>Ceremony&lt;/h2>
+29.          &lt;p>Opening Procession&lt;/p>
+30.          &lt;p>Speech by Valedictorian&lt;/p>
+31.          &lt;p>Speech by Class President&lt;/p>
+32.          &lt;p>Presentation of Diplomas&lt;/p>
+33.          &lt;p>Closing Speech by Headmaster&lt;/p>
+34.          &lt;h2 id=&quot;graduates&quot;>Graduates&lt;/h2>
+35.          &lt;ul>
+36.             &lt;li>Eileen Williams&lt;/li>
+37.             &lt;li>Andy Maseyk&lt;/li>
+38.             &lt;li>Blanca Sainz Garcia&lt;/li>
+39.             &lt;li>Clara Faulkner&lt;/li>
+40.             &lt;li>Gez Lemon&lt;/li>
+41.             &lt;li>Eloisa Faulkner&lt;/li>
+42.          &lt;/ul>
+43.          &lt;h2 id=&quot;awards&quot;>Awards&lt;/h2>
+44.             &lt;ul>
+45.                &lt;li>Clara Faulkner&lt;/li>
+46.                &lt;li>Eloisa Faulkner&lt;/li>
+47.                &lt;li>Blanca Sainz Garcia&lt;/li>
+48.             &lt;/ul>
+49.          &lt;/main>
+50.       &lt;footer>Copyright 2012 B.lawson&lt;/footer>
+51.    &lt;/body>
+52. &lt;/html>
 ```
 
 <h4>Best practice</h4>
@@ -2519,13 +2496,12 @@ We recommend this article written by Steve Faulkner: &quot;[Easy content organis
 
 Let&apos;s go back to our blog example and see what can be improved:
 
--   Do we have a heading after each sectioning element?
-
--   Did we use sectioning elements or implicit sections?
-
--   Can we embed a table of contents?
-
-[The blog example is online at JsBin](https://jsbin.com/heboke/edit?html,output):  let&apos;s see below what the Google Chrome HTML5 Outliner extension showed.
+<ul>
+<li>Do we have a heading after each sectioning element?</li>
+<li>Did we use sectioning elements or implicit sections?</li>
+<li>Can we embed a table of contents?</li>
+</ul>
+<a href="https://jsbin.com/heboke/edit?html,output">The blog example is online at JsBin</a>:  let&apos;s see below what the Google Chrome HTML5 Outliner extension showed.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------- 32. image of teh blog toc, show an untitled nav entry (##) ------------------->
@@ -2539,18 +2515,18 @@ Let&apos;s go back to our blog example and see what can be improved:
 Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an &lt;article&gt; that is in a &lt;section&gt; (this corresponds to the third example given in the &quot;heading and sectioning elements&quot; part of the course):
 
 ```
-1.  **&lt;section&gt;**
-2.     &lt;header&gt;
-3.       **&lt;h1&gt;Blog posts for April 2012&lt;/h1&gt;**
-4.     &lt;/header&gt;
-5.     **&lt;article&gt;**
-6.       &lt;header&gt;
-7.         **&lt;h1&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h1&gt;**
-8.         This example is a modified version of &lt;a href=&quot;https://example.com/blog/index.html&quot;&gt;https://example.com/blog/index.html&lt;/a&gt;
-9.       &lt;/header&gt;
+1.  **<section>**
+2.     <header>
+3.       **<h1>Blog posts for April 2012</h1>**
+4.     </header>
+5.     **<article>**
+6.       <header>
+7.         **<h1><a href=&quot;&quot;>Information about this example</a></h1>**
+8.         This example is a modified version of <a href=&quot;https://example.com/blog/index.html&quot;>https://example.com/blog/index.html</a>
+9.       </header>
 10.      &period;&period;&period;
-11.    &lt;/article&gt;
-12. &lt;/section&gt;
+11.    </article>
+12. </section>
 ```
 
 With this technique, parts of the document can be moved more easily, or integrated inside an RSS stream, without the need to renumber the headings.
@@ -2562,16 +2538,16 @@ Beware that this technique will require you to use some CSS styling, and may con
 We need to add a heading in the &lt;nav&gt; element. This will both fix the outline of the document by removing the untitled entry, and will also make screen readers happy as they will better vocalize the structure of the page (it will say &quot;entering nav&quot; followed by the vocalization of the heading content).
 
 ```
-1.  &lt;nav&gt;
-2.     **&lt;header&gt;**
-3.       **&lt;h1&gt;Navigation menu&lt;/h1&gt;**
-4.     **&lt;/header&gt;**
-5.     &lt;ul&gt;
-6.       &lt;li&gt;&lt;span&gt;Blog&lt;/span&gt;&lt;/li&gt;
-7.       &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-8.       &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-9.     &lt;/ul&gt;
-10. &lt;/nav&gt;
+1.  <nav>
+2.     <b><header></b>
+3.       <b><h1><Navigation menu></h1></b>
+4.     <b><header></b>
+5.     <ul>
+6.       <li><span>Blog</span></li>
+7.       <li><a href="">About</a></li>
+8.       <li><a href=""<Contact></a></li>
+9.     </ul>
+10. </nav>
 ```
 
 **Here is the fixed result:**
@@ -2601,26 +2577,26 @@ In the previous section, we saw how to embed a table of contents using some Jav
 Let&apos;s add this piece of code (we removed the JS details from this extract):
 
 ```
-1.  &lt;aside&gt;
-2.     &lt;h1&gt;
-3.       &lt;a href=&quot;javascript:(function(){&period;&period;&period;});&quot;
+1.  <aside&gt;
+2.     <h1&gt;
+3.       <a href=&quot;javascript:(function(){&period;&period;&period;});&quot;
 4.          title=&quot;TableOfContents&quot;&gt;
 5.          Click here to display the table of contents!
-6.       &lt;/a&gt;
-7.     &lt;/h1&gt;
-8.  &lt;/aside&gt;
+6.       </a&gt;
+7.     </h1&gt;
+8.  </aside&gt;
 ```
 
 We also added a &lt;main&gt; element to identify the main content of the page composed of the big section with all blog posts:
 
 ```
-1.  &lt;main&gt;
-2.    &lt;section&gt;
-3.       &lt;header&gt;
-4.           &lt;h2&gt;Blog posts for April 2012&lt;/h2&gt;
-5.       &lt;/header&gt;
+1.  <main&gt;
+2.    <section&gt;
+3.       <header&gt;
+4.           <h2&gt;Blog posts for April 2012</h2&gt;
+5.       </header&gt;
 6.       &period;&period;&period;
-7.  &lt;/main&gt;
+7.  </main&gt;
 ```
 
 <h4>Use H1 as top level headings only, use H2&period;&period;&period;H6 in sectioning content</h4>
@@ -2634,12 +2610,12 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 <b>Extract from source code:</b>
 
 ```
-1.  &lt;nav&gt;
-2.     &lt;header&gt;
-3.       **&lt;h2&gt;Navigation menu&lt;/h2&gt;**
-4.     &lt;/header&gt;
+1.  <nav&gt;
+2.     <header&gt;
+3.       **<h2&gt;Navigation menu</h2&gt;**
+4.     </header&gt;
 5.     &period;&period;&period;
-6.  &lt;/nav&gt;
+6.  </nav&gt;
 ``
 
 ### Finally, the fixed example
@@ -2671,19 +2647,19 @@ This example uses the following HTML structure (notice that we use the &quot;HTM
 
 ```
 1.  <header&gt;
-2.  <code&gt;&lt;header&gt;&lt;/code&gt;
+2.  <code&gt;<header&gt;</code&gt;
 3.  </header&gt;
 4.   
 5.  <section&gt;
-6.  <code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
+6.  <code&gt;<section&gt; <br&gt; float: left;</code&gt;
 7.  </section&gt;
 8.   
 9.  <aside&gt;
-10. <code&gt; right;&lt;/code&gt;
+10. <code&gt; right;</code&gt;
 11. </aside&gt;
 12.  
 13. <footer>
-14. <code>&lt;footer&gt;</code>
+14. <code><footer&gt;</code>
 15. </footer>
 ```
 
@@ -2719,24 +2695,24 @@ Here we show how to make a 3 column layout using the CSS float property.
 <b>HTML code:</b>
 
 ```
-1.  &lt;header&gt;
-2.  &lt;code&gt;&lt;header&gt;&lt;/code&gt;
-3.  &lt;/header&gt;
+1.  <header&gt;
+2.  <code&gt;<header&gt;</code&gt;
+3.  </header&gt;
 4.   
-5.  &lt;section&gt;
-6.  &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
-7.  &lt;/section&gt;
+5.  <section&gt;
+6.  <code&gt;<section&gt; <br&gt; float: left;</code&gt;
+7.  </section&gt;
 8.   
-9.  &lt;section&gt;
-10. &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
-11. &lt;/section&gt;
+9.  <section&gt;
+10. <code&gt;<section&gt; <br&gt; float: left;</code&gt;
+11. </section&gt;
 12.  
-13. &lt;section&gt;
-14. &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
-15. &lt;/section&gt;
+13. <section&gt;
+14. <code&gt;<section&gt; <br&gt; float: left;</code&gt;
+15. </section&gt;
 16.  
-17. &lt;footer&gt;
-18. &lt;code&gt;&lt;footer&gt;&lt;/code&gt;
+17. <footer&gt;
+18. <code&gt;&lt;footer&gt;&lt;/code&gt;
 19. &lt;/footer&gt;
 ```
 
@@ -21736,4 +21712,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-14-2022 2:53am</i></b></h3>
+<h3><b><i>07-13-2022 10:18pm</i></b></h3>
