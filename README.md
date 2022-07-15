@@ -125,12 +125,12 @@ As such, required prerequisites are:
 
 During this course, you will learn:
 <ul>
-<li>Learn the simplified HTML5 tags, and how to use microdata<br/>&nbsp;</li>
-<li>Play with the audio and video tags<br/>&nbsp;</li>
-<li>Use the Webcam<br/>&nbsp;</li>
-<li>Draw and animate fun Web graphics<br/>&nbsp;</li>
-<li>Discover HTML5 form features<br/>&nbsp;</li>
-<li>Test the basic APIs, such as Web storage and geolocation<br/>&nbsp;</li>
+<li>Learn the simplified HTML5 tags, and how to use microdata,</li>
+<li>Play with the audio and video tags,</li>
+<li>Use the Webcam,</li>
+<li>Draw and animate fun Web graphics,</li>
+<li>Discover HTML5 form features,</li>
+<li>Test the basic APIs, such as Web storage and geolocation,</li>
 <li>And most of all, practice coding techniques thanks to multiple interactive examples.</li>
 </ul>
 
@@ -138,13 +138,13 @@ The HTML5 course team is thrilled to guide you in your learning experience. We a
 
 <h3>Online Code Editors:</h3>
 
-<a href="https://jsbin.com">JS Bin</a>
+<a href="https://jsbin.com" target="_blank">JS Bin</a>
 
-<a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843">CodePen Tutorial</a>
+<a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843" target="_blank">CodePen Tutorial</a>
 
-<a href="https://codepen.io">CodePen</a>
+<a href="https://codepen.io" target="_blank">CodePen</a>
 
-<a href="https://css-tricks.com/video-screencasts/112-using-codepen/">CodePen CSS Tutorial</a>
+<a href="https://css-tricks.com/video-screencasts/112-using-codepen/" target="_blank">CodePen CSS Tutorial</a>
 
 <h3>Web Editors:</h3>
 
@@ -153,15 +153,15 @@ While any text editor, like NotePad or TextEdit, can be used to create Web pages
 Here are a few possibilities for Web editors:
 
 <ul>
-<li><a href="https://notepad-plus-plus.org/">Notepad</a> - on Windows PC&apos;s.</li>
-<li><a href="https://code.visualstudio.com/">Visual Studio Code</a> - a free open source editor that can run on any operating system. Many developers are already familiar with Visual Studio Code. Many coding videos in this course are demonstrated using Visual Studio Code.</li>
-<li><a href="https://developer.apple.com/xcode/">XCode</a> - Mac developers may be familiar with XCode.</li>
-<li><a href="https://discussions.apple.com/message/5014514#5014514">TextEdit - this is available on Macs</a>, but be sure you&apos;re [saving as plain text, not as a ".rtf" or ".doc" file.</li>
-<li><a href="https://www.sublimetext.com/">Sublime Text</a> - it is quite popular with developers, though there can be a bit of a learning curve to use its many features.</li>
-<li><a href="http://bluegriffon.org/">BlueGriffon</a> - a WYSIWYG ("What You See Is What You Get") content editor for the World Wide Web. Powered by Gecko, the rendering engine of Firefox, it\'s a modern and robust solution to edit Web pages in conformance to the latest Web Standards.</li>
-<li><a href="https://atom.io/">Atom</a> - another cross platform editor, created by <a href="https://github.com/">GitHub</a>.</li>
-<li><a href="https://github.com/">GitHub</a> itself - check <a href="https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1">this resource that explains how to create a Web site using GitHub</a>.</li>
-<li><a href="https://www.vim.org/">Vim</a> or <a href="https://www.gnu.org/software/emacs/">Emacs</a> - great editors, but if you&apos;re not already familiar with these, this isn&apos;t the time to try.</li>
+<li><a href="https://notepad-plus-plus.org/" target="_blank">Notepad</a> - on Windows PC&apos;s.</li>
+<li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> - a free open source editor that can run on any operating system. Many developers are already familiar with Visual Studio Code. Many coding videos in this course are demonstrated using Visual Studio Code.</li>
+<li><a href="https://developer.apple.com/xcode/" target="_blank">XCode</a> - Mac developers may be familiar with XCode.</li>
+<li><a href="https://discussions.apple.com/message/5014514#5014514" target="_blank">TextEdit - this is available on Macs</a>, but be sure you&apos;re [saving as plain text, not as a ".rtf" or ".doc" file.</li>
+<li><a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a> - it is quite popular with developers, though there can be a bit of a learning curve to use its many features.</li>
+<li><a href="http://bluegriffon.org/" target="_blank">BlueGriffon</a> - a WYSIWYG ("What You See Is What You Get") content editor for the World Wide Web. Powered by Gecko, the rendering engine of Firefox, it's a modern and robust solution to edit Web pages in conformance to the latest Web Standards.</li>
+<li><a href="https://atom.io/" target="_blank">Atom</a> - another cross platform editor, created by <a href="https://github.com/">GitHub</a>.</li>
+<li><a href="https://github.com/" target="_blank">GitHub</a> itself - check <a href="https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1">this resource that explains how to create a Web site using GitHub</a>.</li>
+<li><a href="https://www.vim.org/" target="_blank">Vim</a> or <a href="https://www.gnu.org/software/emacs/" target="_blank">Emacs</a> - great editors, but if you&apos;re not already familiar with these, this isn&apos;t the time to try.</li>
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -186,7 +186,7 @@ To help you practice during the whole duration of the course, we use the followi
 </ul>
 JS Bin is an open source collaborative Web development debugging tool. Most of the examples that are in this course are on JSBin.
 
-Tutorials can be found on the Web such as <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843">this one</a> or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it&apos;s always better to be logged in (it&apos;s free) if you do not want to lose your contributions/personal work.
+Tutorials can be found on the Web such as <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843" target="_blank">this one</a> or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it&apos;s always better to be logged in (it&apos;s free) if you do not want to lose your contributions/personal work.
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------ 03. codepen logo (04) ------------------------------------->
@@ -201,13 +201,12 @@ Tutorials can be found on the Web such as <a href="https://code.tutsplus.com/tut
 <ul>
 <li><a href="https://codepen.io/">CodePen</a></li><br/>
 </ul>
-
 CodePen is an HTML, CSS, and JavaScript code editor that previews/showcases your code bits in your browser.
 It helps with cross-device testing, real-time remote pair programming and teaching.
 
-Here&apos;s an article of interest if you use CodePen: <a href="https://codepen.io/brentmiller/post/things-you-can-do-with-codepen">Things you can do with CodePen</a> [Brent Miller, February 6, 2019\].
+Here&apos;s an article of interest if you use CodePen: <a href="https://codepen.io/brentmiller/post/things-you-can-do-with-codepen" target="_blank">Things you can do with CodePen</a> [Brent Miller, February 6, 2019\].
 
-There are many other handy tools such as [JSFiddle](https://jsfiddle.net/), and [Dabblet](https://dabblet.com/). Please share your favorite tool on the discussion forum, and explain why! Share also your own code contributions, such as a nice canvas animation, a great looking HTML5 form, etc.
+There are many other handy tools such as <a href="https://jsfiddle.net/" target="_blank">JSFiddle</a>, and <a href="https://dabblet.com/" target="_blank">Dabblet</a>. Please share your favorite tool on the discussion forum, and explain why! Share also your own code contributions, such as a nice canvas animation, a great looking HTML5 form, etc.
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -219,9 +218,9 @@ The term browser compatibility refers to the ability of a given Web site to appe
 
 The most powerful aspect of the Web is what makes it so challenging to build for: its universality. When you create a Web site, you're writing code that needs to be understood by many different browsers on different devices and operating systems!
 
-To make the Web evolve in a sane and sustainable way for both users and developers, browser vendors work together to standardize new features, whether it's a new [HTML element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), [CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index), or [JavaScript API](https://developer.mozilla.org/en-US/docs/Web/API). But different vendors have different priorities, resources, and release cycles --- so it's very unlikely that a new feature will land on all the major browsers at once. As a Web developer, this is something you must consider if you're relying on a feature to build your site.
+To make the Web evolve in a sane and sustainable way for both users and developers, browser vendors work together to standardize new features, whether it's a new <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML element</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index">CSS property</a>, or <a href="https://developer.mozilla.org/en-US/docs/Web/API">JavaScript API</a>. But different vendors have different priorities, resources, and release cycles --- so it's very unlikely that a new feature will land on all the major browsers at once. As a Web developer, this is something you must consider if you're relying on a feature to build your site.
 
-We are then providing references to the browser support of HTML5 features presented in this course using 2 resources: [Can I Use](https://caniuse.com/) and [Mozilla Developer Network (MDN) Web Docs](https://developer.mozilla.org/en-US/).
+We are then providing references to the browser support of HTML5 features presented in this course using 2 resources: <a href="https://caniuse.com/" target="_blank">Can I Use</a> and <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network (MDN) Web Docs</a>.
 
 <h3>Can I use</h3>
 
@@ -250,13 +249,13 @@ Example of a <a href="./images/image004.png">CanIUse browser</a> support table (
 &nbsp;
 <br/>
 
-To help developers make these decisions consciously rather than accidentally, [MDN Web Docs](https://developer.mozilla.org/) provides browser compatibility tables in its documentation pages, so that when looking up a feature you're considering for your project, you know exactly which browsers will support it.
+To help developers make these decisions consciously rather than accidentally, <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a> provides browser compatibility tables in its documentation pages, so that when looking up a feature you're considering for your project, you know exactly which browsers will support it.
 
-<h3>External resources:</h3>
+<h4>External resources:</h4>
 
 <ul>
-<li><a href="https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/" target="_blank">MDN browser compatibility data: Taking the guesswork out of web compatibility</a>.</li><br/>
-<li><a href="https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/" target="_blank">Caniuse and MDN compatibility data collaboration</a>.</li><br/>
+<li><a href="https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/" target="_blank">MDN browser compatibility data: Taking the guesswork out of web compatibility</a>.</li>
+<li><a href="https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/" target="_blank">Caniuse and MDN compatibility data collaboration</a>.</li>
 </ul>
 
 <div align="right">
@@ -337,9 +336,9 @@ Contributing to this standardization process might be a bit scary or hard to app
    width="15%" />
 </p>
 
-If you\'re looking to an easy way to dive into this standardization processes, check out which [issues in the W3C GitHub repositories have been marked as \"good first issue\"](https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues) and see if you find anything where you think you would be ready to help.
+If you\'re looking to an easy way to dive into this standardization processes, check out which <a href="https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues">issues in the W3C GitHub repositories have been marked as \"good first issue\"</a> and see if you find anything where you think you would be ready to help.
 
-<h3>Shape the future</h3>
+<h4>Shape the future</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 09. w3c web incubator community group logo (08) ------------------------>
@@ -360,7 +359,7 @@ As steward of global Web standards, W3C\'s mission is to safeguard the openness,
 
 W3C\'s primary activity is to develop protocols and guidelines that ensure long-term growth for the Web. The widely adopted Web standards define key parts of what actually makes the World Wide Web work.
 
-<h3>A few history bits</h3>
+<h4>A few history bits</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 04. Tim Berners-Lee, WWW developer (08) ----------------------------->
@@ -374,26 +373,25 @@ W3C\'s primary activity is to develop protocols and guidelines that ensure long-
 
 Tim Berners-Lee at his desk in CERN, 1994
 
-[Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/) wrote a [proposal](https://www.w3.org/History/1989/proposal.html) in 1989 for a system called the World Wide Web. He then created the first Web browser, server, and Web page. He wrote the first specifications for URLs, HTTP, and HTML.
+<a href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a> wrote a <a href="https://www.w3.org/History/1989/proposal.html">proposal</a> in 1989 for a system called the World Wide Web. He then created the first Web browser, server, and Web page. He wrote the first specifications for URLs, HTTP, and HTML.
 
 In October 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology, Laboratory for Computer Science \[MIT/LCS\] in collaboration with <a href="https://home.cern/">CERN</a>, where the Web originated (see information on the <a href="https://www.w3.org/Daemon/">original CERN Server</a>, with support from DARPA and the <a href="https://ec.europa.eu/index_en.htm">European Commission</a>.
 
 In April 1995, <a href="https://www.inria.fr/">Inria</a> became the first European W3C host, followed by <a href="https://www.keio.ac.jp/>Keio University of Japan</a> (Shonan Fujisawa Campus) in Asia in 1996. In 2003, <a href="https://www.ercim.eu/">ERCIM</a> took over the role of European W3C Host from Inria. In 2013, W3C announced <a href="https://ev.buaa.edu.cn/">Beihang University</a> as the fourth Host.
 
-In addition to these four Host locations that employ W3C staff, there are [W3C Offices](https://www.w3.org/Consortium/Offices/staff) around the globe that support the developer communities in their regions and organize local events. Find the one next to your place!
+In addition to these four Host locations that employ W3C staff, there are <a href="https://www.w3.org/Consortium/Offices/staff">W3C Offices</a> around the globe that support the developer communities in their regions and organize local events. Find the one next to your place!
 
-<h3>A few figures</h3>
+<h4>A few figures</h4>
 
 As of June 2020, W3C:
-
 <ul>
-<li>Is a <a href="https://www.w3.org/Consortium/Member/List)-driven">member</a>-driven organization composed of nearly 430 companies, universities, start-ups, etc. from all over the world.</li><br/>
-<li>Holds 44 <a href="https://www.w3.org/groups/">technical groups</a>, including Working and Interest Groups where technical specifications are discussed and developed.</li><br/>
-<li>Published over 7,181 <a href="https://www.w3.org/TR/">published technical reports</a>, including 430 Web standards (or W3C Recommendations) - since January 1st,1995.</li><br/>
-<li>Runs a <a href="https://www.w3.org/Consortium/Translation/">translation program</a> to foster the translation of its specifications: see the <a href="https://www.w3.org/Consortium/Translation/matrix.html">translation matrix</a> currently listing 304 available translations of W3C recommendations.</li><br/>
-<li>Hosts 337 <a href="https://www.w3.org/community/groups/">Community and Business Groups</a>, where developers, designers, and anyone passionate about the Web have a place to hold discussions and publish ideas.</li><br/>
-<li>Gathers over 12,912 active participants constituting the W3C community.</li><br/>
-<li>Has a <a href="https://www.w3.org/People/">technical staff</a> composed of 64 people, spread on all five continents.</li><br/>
+<li>Is a <a href="https://www.w3.org/Consortium/Member/List)-driven">member</a>-driven organization composed of nearly 430 companies, universities, start-ups, etc. from all over the world.</li>
+<li>Holds 44 <a href="https://www.w3.org/groups/">technical groups</a>, including Working and Interest Groups where technical specifications are discussed and developed.</li>
+<li>Published over 7,181 <a href="https://www.w3.org/TR/">published technical reports</a>, including 430 Web standards (or W3C Recommendations) - since January 1st,1995.</li>
+<li>Runs a <a href="https://www.w3.org/Consortium/Translation/">translation program</a> to foster the translation of its specifications: see the <a href="https://www.w3.org/Consortium/Translation/matrix.html">translation matrix</a> currently listing 304 available translations of W3C recommendations.</li>
+<li>Hosts 337 <a href="https://www.w3.org/community/groups/">Community and Business Groups</a>, where developers, designers, and anyone passionate about the Web have a place to hold discussions and publish ideas.</li>
+<li>Gathers over 12,912 active participants constituting the W3C community.</li>
+<li>Has a <a href="https://www.w3.org/People/">technical staff</a> composed of 64 people, spread on all five continents.</li>
 </ul>
 
 <div align="right">
@@ -413,19 +411,19 @@ One analogy equates the Internet to a road network where the Web is a car, the e
 <h4>Internet</h4>
 
 <ul>
-<li>A global network of networks and computers.</li><br>
-<li>The network infrastructure.</li><br>
-<li>Information travels via network protocols.</li><br>
-<li>Can access through a variety of ways.</li><br>
+<li>A global network of networks and computers.</li>
+<li>The network infrastructure.</li>
+<li>Information travels via network protocols.</li>
+<li>Can access through a variety of ways.</li>
 </ul>
 
 <h4>Web</h4>
 
 <ul>
-<li>A collection of information accessed through the internet.</li><br>
-<li>Information travels primarily through HTTP.</li><br>
-<li>Uses browsers to access documents and web pages.</li><br>
-<li>Navigation to other pages occurs through hyperlinks.</li><br>
+<li>A collection of information accessed through the internet.</li>
+<li>Information travels primarily through HTTP.</li>
+<li>Uses browsers to access documents and web pages.</li>
+<li>Navigation to other pages occurs through hyperlinks.</li>
 </ul>
 
 The internet is a global network of billions of servers, computers, and other <a href="https://www.lifewire.com/computer-hardware-2625895">hardware</a> devices. Each device can connect with any other device as long as both are connected to the internet using a valid <a href="https://www.lifewire.com/what-is-an-ip-address-2625920">IP address</a>. The internet makes the information sharing system known as the web possible.
@@ -456,25 +454,25 @@ The web consists of digital documents, referred to as web pages, that are viewab
 
 A collection of connected web pages that are publicly accessible and under a single domain name is referred to as a website.
 
-Web pages are connected using [Hypertext Transfer Protocol](https://www.lifewire.com/hypertext-transfer-protocol-817944) (HTTP), the coding language that allows you to visit any public web page. By clicking a [hyperlink](https://www.lifewire.com/how-do-hyperlinks-work-2483287) or entering a [Uniform Resource Locator](https://www.lifewire.com/what-is-a-url-2626035) (URL), the browser uses this unique address to find and access a web page. [Search engines](https://www.lifewire.com/best-search-engines-2483352) like Google make it easy to filter the billions of web pages now populating the web by locating the articles, videos, and other media you want to find based on your search criteria.
+Web pages are connected using <a href="https://www.lifewire.com/hypertext-transfer-protocol-817944">Hypertext Transfer Protocol</a> (HTTP), the coding language that allows you to visit any public web page. By clicking a <a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287">hyperlink</a> or entering a <a href="https://www.lifewire.com/what-is-a-url-2626035">Uniform Resource Locator</a> (URL), the browser uses this unique address to find and access a web page. <a href="https://www.lifewire.com/best-search-engines-2483352">Search engines</a> like Google make it easy to filter the billions of web pages now populating the web by locating the articles, videos, and other media you want to find based on your search criteria.
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3>Final Verdict: You Can't Have the Web Without the Internet</h3>
+<h4>Final Verdict: You Can't Have the Web Without the Internet</h4>
 
 Plain and simple, the internet allows access to the World Wide Web. Without it, we have no way of accessing the thousands of websites out there. For most online needs, however, the web is the easiest to use. Each serves an important purpose.
 
-<h3>Why Accessibility is Important</h3>
+<h4>Why Accessibility is Important</h4>
 
-*The power of the Web is in its universality.*\
-*Access by everyone regardless of disability is an essential aspect.*\
-**Tim Berners-Lee, W3C Director and inventor of the World Wide Web**
+<i>The power of the Web is in its universality.</ki>
+<i>Access by everyone regardless of disability is an essential aspect.</i>
+<b>Tim Berners-Lee, W3C Director and inventor of the World Wide Web</b>
 
 The Web has become an essential aspect of our daily lives, and everyone should have access to this technology. Web accessibility focuses on ensuring equivalent access for people with disabilities. It is increasingly important to many organizations and governments from around the world, and has many business benefits. Access to information, including on the Web, is also recognized by the UN Convention on the Rights of Persons with Disabilities (CRPD).
 
-<h3>Who is impacted?</h3>
+<h4>Who is impacted?</h4>
 
 Web accessibility addresses all disabilities, including hearing, learning and cognitive, neurological, physical, speech, and visual disabilities. Some examples of Web accessibility features include:
 <ul>
@@ -495,7 +493,7 @@ Web accessibility features also benefit many more users, such as:
 <li>People who are not fluent in the language of your particular Web site;</li>
 </ul>
 
-The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. When Web pages, Web technologies, Web tools, or Web applications are badly designed, they can create barriers that exclude people from using the Web. More information is available in the [W3C Accessibility](https://www.w3.org/standards/webdesign/accessibility) overview.
+The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. When Web pages, Web technologies, Web tools, or Web applications are badly designed, they can create barriers that exclude people from using the Web. More information is available in the <a href="https://www.w3.org/standards/webdesign/accessibility">W3C Accessibility</a> overview.
 
 <h3>First Steps in Web Accessibility</h3>
 
@@ -575,7 +573,7 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 13. new structural elements in html5 (14) --------------------------->
+<!-------------------------- 13. new structural elements in html5 (13) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image013.jpeg?raw=true"
@@ -611,7 +609,7 @@ The results of these surveys led to the addition of new structural elements in H
 Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\'s surveys gave birth to these new elements (click on the element\'s name to go to 
 the W3C specification about this element):
 
-<h4>HTML5 structural element and Description</h4>
+<h4>HTML5 structural element and description</h4>
 
 [**\<header\>**](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>
 
@@ -691,7 +689,7 @@ header span {
 <h4>Use a &lt;nav&gt; for the navigation menu just below the header</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 15. image of the navigaton menu (17) ----------------------------->
+<!----------------------------- 15. image of the navigaton menu (16) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image015.jpeg?raw=true"
@@ -1390,7 +1388,7 @@ Both of the examples above are semantically identical and produce the same out
 
 <h3>1.2.4 The HTML5 Logo</h3>
 
-Here is the HTML5 logo! It has been [unveiled on 18 January 2011,](https://www.w3.org/blog/2011/01/an-html5-logo/) so way before HTML5 became a Web standard. This logo represents HTML5, the cornerstone for modern Web applications.
+Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-html5-logo/">unveiled on 18 January 2011</a>, so way before HTML5 became a Web standard. This logo represents HTML5, the cornerstone for modern Web applications.
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------ 30. html5 logo (xx) --------------------------------------->
@@ -1405,17 +1403,14 @@ Here is the HTML5 logo! It has been [unveiled on 18 January 2011,](https://www.
 <h3 id="ch1-3">1.3 New Structural Elements</h3>
 
 Changes have been made to particular elements in HTML5 making it simpler to use. In this section, we will look at some examples highlighting these improvements, including:
-
--   the new doctype definition;
-
--   the fact that the \"type\" attribute of elements such as \<link\> or \<script\> are now optional;
-
--   the syntax constraints that have been relaxed;
-
--   the new structural elements that have been added, etc.
+<ul>
+<li>the new doctype definition;</li>
+<li>the fact that the \"type\" attribute of elements such as \<link\> or \<script\> are now optional;</li>
+<li>the syntax constraints that have been relaxed;</li>
+<li>the new structural elements that have been added, etc.</li>
+</ul>
 
 <h3>A minimal HTML5 document</h3>
-
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -1431,7 +1426,7 @@ Changes have been made to particular elements in HTML5 making it simpler to u
 </html>
 ```
 
-Let\'s compare it to the HTML4 minimal document below (taken from [this source](https://www.sitepoint.com/a-minimal-html-document/)). Differences are underlined in red:
+Let\'s compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/">this source</a>.
 
 ```
 [<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">]
@@ -1450,7 +1445,7 @@ Let\'s compare it to the HTML4 minimal document below (taken from [this source]
 
 <h4>Simpler character set definition</h4>
 
-One word about the \<meta charset=\"utf-8\"\> at line 4 in the HTML5 version: it is a **best practice** to declare the character set of your document to protect against [a serious security risk](https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7). For more details, please refer to the \"Why Internationalization is important\" section in the Course intro chapter.
+One word about the \<meta charset=\"utf-8\"\> at line 4 in the HTML5 version: it is a <b>best practice</b> to declare the character set of your document to protect against <a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7">a serious security risk</a>). For more details, please refer to the \"Why Internationalization is important\" section in the Course intro chapter.
 
 <h4>No more complicated DOCTYPE definitions</h4>
 
@@ -1461,46 +1456,45 @@ DTDs are not used by current Web browsers to  validate the structure of an HTML
 Old HTML1 Web pages will not be rendered the same way as new HTML5 pages, since, in the 90\'s, some of them were written by hand and may contain errors, embedded HTML elements, etc.
 
 With HTML4, doctype definitions looked like this:<br/>
-
+```
 \<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"https://www.w3.org/TR/html4/loose.dtd\"\>, which was even more complicated as one had to choose between three different possibilities (doctypes could be transitional, strict, or frameset). Most of the time, the doctype definition was copied and pasted from one document to another and was nearly impossible to memorize.
-
+```
 With HTML5, there is only one way to indicate the doctype, and it\'s so simple there is no reason to forget it:
-
+```
 1.  \<!doctype html\>
-
+```
 <h4>The "TYPE" attribute is optional</h4>
 
 With a rel=\"stylesheet\" attribute, it is no longer necessary to indicate type=\"text/css\" (from [the specification](https://www.w3.org/TR/html5/links.html#link-type-stylesheet): \"the default type for resources given by the  [stylesheet](https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet)  keyword is text/css.\")
 
 The \"type\" attribute is not needed in HTML5, and even old browsers will use text/css as the default type for stylesheets today. So, either way, you can omit the \"type\" attribute altogether and use:
-
+```
 1.  \<link href=\"file.css\" rel=\"stylesheet\"/\>
-
+```
 instead of:
-
+```
 1.  \<link href=\"file.css\" rel=\"stylesheet\" type=\"text/css\"/\>
-
+```
 We will not go into detail about the \<link\> element, but the fact that the type attribute is becoming optional shows the current direction taken by HTML5: towards greater simplicity.
 
 Please see how to include a JavaScript file in our page:
-
+```
 1.  \<script src=\"script.js\"\>\</script\>
-
+```
 Here again, the type attribute has been omitted. Just as a reminder, the old way to do the same thing is: 
-
+```
 1.  \<script type=\"text/javascript\" src=\"script.js\"\>\</script\>
-
+```
 <h3>More flexible syntax constraints</h3>
 
 If you look at the \"minimal document\" example, or at other examples in this course, you won\'t find a lot of differences compared to the same code in XHTML: attribute values are surrounded by quotes, all elements are written in lower case, etc. This is because we are used to writing this way, but HTML5 also supports a simplified syntax:
+<ul>
+<li>Thanks to HTML5, you can omit quotes (not always, but most of the time) or use uppercase, lowercase or a combination of the two.</li><br>
+<li>Many elements no longer need a closing tag: \</li\>, \</dt\>, \</dd\>, \</tr\>, \</th\>, \</td\>, \</thead\>, \</tfoot\>, \</tbody\>, \</option\>, \</optgroup\>, \</p\> (in most cases), \</head\>, \</body\> and \</html\>. Older browsers often add closing tags automatically at render time. We recommend, however, closing tags that would naturally be closed: the ones that delimit a particular zone in the document.</li><br>
+<li>Attribute values only need to be quoted if they contain spaces or some non-alphanumeric characters, instead of writing \<link rel=\"stylesheet\" href=\"style.css\"\>, we could have used \<link rel=stylesheet href=style.css\>. However, for compatibility with older browsers, it is wiser to still use quotes\...</li>
+</ul>
 
--   Thanks to HTML5, you can omit quotes (not always, but most of the time) or use uppercase, lowercase or a combination of the two.
-
--   Many elements no longer need a closing tag: \</li\>, \</dt\>, \</dd\>, \</tr\>, \</th\>, \</td\>, \</thead\>, \</tfoot\>, \</tbody\>, \</option\>, \</optgroup\>, \</p\> (in most cases), \</head\>, \</body\> and \</html\>. Older browsers often add closing tags automatically at render time. We recommend, however, closing tags that would naturally be closed: the ones that delimit a particular zone in the document.
-
--   Attribute values only need to be quoted if they contain spaces or some non-alphanumeric characters, instead of writing \<link rel=\"stylesheet\" href=\"style.css\"\>, we could have used \<link rel=stylesheet href=style.css\>. However, for compatibility with older browsers, it is wiser to still use quotes\...
-
-<h3>1.3.2 Structural Elements</h3>
+<h3 id="ch1-3-2">1.3.2 Structural Elements</h3>
 
 <h3>New structural elements</h3>
 
@@ -1568,16 +1562,15 @@ And there is no \<content\> element even though the \<div class=\"content\"\>
 Read also at the end of this section about the new \<main\> element .  This element is [part of the HTML5 recommendation](https://www.w3.org/TR/html5/grouping-content.html#the-main-element) and  an integral part of the HTML document structure.
 
 <h3>External resources:</h3>
-
--   A Smashing Magazine article: [Structural Semantics: The Importance Of HTML5 Sectioning Elements](https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/)
-
--   A Dev. Opera article: [New Structural Elements in HTML5](https://dev.opera.com/articles/new-structural-elements-in-html5/)
-
-<h3>1.3.3 Mixing All Elements Together: A Blog Example</h3>
+<ul>
+<li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/">Structural Semantics: The Importance Of HTML5 Sectioning Elements</a></li>
+<li>A Dev. Opera article: [New Structural Elements in HTML5](https://dev.opera.com/articles/new-structural-elements-in-html5/)</li>
+</ul>
+<h3 id="ch1-3-3">1.3.3 Mixing All Elements Together: A Blog Example</h3>
 
 <h3>A blog example that uses the structural elements</h3>
 
-Let\'s study [an example we put on JsBin](https://jsbin.com/bucokav/edit?html,output) (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
+Let\'s study <a href="https://jsbin.com/bucokav/edit?html,output ">an example we put on JsBin</a> (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
 
 <h4>Use a &lt;header&gt; at the top of the blog</h4>
 
@@ -1787,7 +1780,7 @@ Example for the first blog article:
 </section>
 ```
 
-#### Use \<figure\> and \<figcaption\> and embed \<img\> inside
+<h4>Use \<figure\> and \<figcaption\> and embed \<img\> inside</h4>
 
 Also note the way we included a figure using the new \"HTML5\" method, using a \<figure\>..\</figure\> element that embedded a \<img src=\.../\> element together with a \<figcaption\> element. 
 
@@ -1825,7 +1818,7 @@ figcaption {
 }
 ```
 
-#### Use an \<aside\> element to display a tag cloud on the\... side of the main content
+<h4>Use an \<aside\> element to display a tag cloud on the\... side of the main content</h4>
 
 After the long \<section\> element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, \"aside\"! This is done using - you already guessed it - an \<aside\> element:
 
@@ -1855,9 +1848,9 @@ After the long \<section\> element that contains all the blog articles display
 ...
 ```
 
-We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at [the code of the online example](https://jsbin.com/bucokav/edit?html,output).
+We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at <a href="https://jsbin.com/bucokav/edit?html,output">the code of the online example</a>.
 
-**Here is the CSS for the \<aside\> element:**
+<b>Here is the CSS for the \<aside\> element:</b>
 
 ```
 aside {
@@ -1879,33 +1872,31 @@ aside .tag-cloud {
 
 We used a float:right CSS rule to put the tag cloud on the right\... In a following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
 
-###### **Here is the result:**
+<h4><b>Here is the result:</b></h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image019.jpeg?raw=true"
-   alt="image of the tag cloud defined as an aside element"
-   width="25%" />
+   alt="The aside tag cloud on the right"
+   width="50%" />
 &nbsp;
 <br/>
-![The aside tag cloud on the right](./images/image020.jpeg){width="5.0in" height="1.6762817147856517in"}
 
-#### Add a \<footer\> at the end of the blog
+<h4>Add a \<footer\> at the end of the blog</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
+<!---------------- 20. image of the tag cloud defined as an aside element (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image019.jpeg?raw=true"
-   alt="image of the tag cloud defined as an aside element"
+<img src="/images/image020.jpeg?raw=true"
+   alt="image of the blog footer"
    width="25%" />
 &nbsp;
 <br/>
-![image of the blog footer](./images/image021.jpeg){width="2.1875in" height="0.7916666666666666in"}
 
-###### Finally, we added a \<footer\> element (*lines 12-14* below) after the tag cloud definition, to display a page footer:
+<h4>Finally, we added a \<footer\> element (<i>lines 12-14* below) after the tag cloud definition, to display a page footer:</h4>
 
 ```
 <html>
@@ -1935,7 +1926,7 @@ footer {
 }
 ```
 
-###### **And here is the result at the bottom of the page:**
+<h4><b>And here is the result at the bottom of the page:</b></h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
@@ -1956,41 +1947,29 @@ footer {
 &nbsp;
 <br/>
 
-<h3>1.3.4 More on &lt;article&gt; and &lt;section&gt;</h3>
+<h3 id="ch1-3-4">1.3.4 More on &lt;article&gt; and &lt;section&gt;</h3>
 
 <h4>Can an &lt;article&gt; contain a &lt;section&gt;?</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- xx.  (xx) ------------------->
+<!---------------- 23. pictures of eisher hands (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/imagexx.jpeg?raw=true"
-   alt=""
+<img src="/images/image023.jpeg?raw=true"
+   alt="Picture of 'eisher' hands" 
    width="25%" />
 &nbsp;
 <br/>
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------- xx.  (xx) ------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center">
-<img src="/images/imagexx.jpeg?raw=true"
-   alt=""
-   width="25%" />
-&nbsp;
-<br/>
-
-![Picture of \'eisher\' hands](./images/image023.jpeg){width="2.4270833333333335in" height="1.3333333333333333in"}
 
 It may not be clear whether a \<section\> may contain one or several \<article\> elements or if an \<article\> may contain one or several \<section\> elements.
+<ul>
+<li>The \<article\> element was designed for stand-alone parts of a document that could eventually be syndicated in RSS streams.</li>
+<li> \<section\> elements are used to cut a logical part into subparts.</li>
+</ul>
 
--   The \<article\> element was designed for stand-alone parts of a document that could eventually be syndicated in RSS streams.
+<b>An \<article\> may be cut into different \<section\> elements!</b>
 
--   \<section\> elements are used to cut a logical part into subparts.
-
-**An \<article\> may be cut into different \<section\> elements!**
-
-###### Example of a blog post defined as a long \<article\>, that is in turn cut into smaller \<section\> elements:
+<h4>Example of a blog post defined as a long \<article\>, that is in turn cut into smaller \<section\> elements:</h4>
 
 ```
 <article id="id1">
@@ -2041,51 +2020,50 @@ In that case, the \<nav\> element proposes navigation links to the next or pre
 
 Also note that we used in that example a \<footer\> element in the blog post.
 
-### What about the \<div\> element? Is it still useful?
+<h4>What about the \<div\> element? Is it still useful?</h4>
 
 The new elements have been primarily designed to better structure the code of HTML pages such as those generated by blog or CMS software, however do not forget that they add new semantics and will be taken into account by :
+<ul>
+<li>Browsers natively or browsers\' extensions, i.e. for automatically generating a table of contents, an outline view of the document, for applying default CSS rules to these elements, etc. See for example the [table-of-contents-crx extension](https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f) (Chrome extension). More on that in the next section of the course.</li>
 
--   Browsers natively or browsers\' extensions, i.e. for automatically generating a table of contents, an outline view of the document, for applying default CSS rules to these elements, etc. See for example the [table-of-contents-crx extension](https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f) (Chrome extension). More on that in the next section of the course.
+<li>Text to speech: https://www.w3.org/WAI/perspective-videos/speech/</li>
 
--   Text to speech: https://www.w3.org/WAI/perspective-videos/speech/
-
--   Web crawlers, etc.
+<li>Web crawlers, etc.</li>
+</ul>
 
 You can use \<div\> elements in all cases where the proposed structural elements do not fit your needs: for defining some content that should be styled, for example.
 
 This chart from the [HTML5 Doctor Web site](https://html5doctor.com/) may help you decide whether or not to use a \<div\>:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- xx.  (xx) ------------------->
+<!---------------- 24.  (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/imagexx.jpeg?raw=true"
-   alt=""
-   width="25%" />
+<img src="/images/image024.png?raw=true"
+   alt="Flow chart about using header, H1, etc."
+   width="65%" />
 &nbsp;
 <br/>
 
-![flow chart about using header, H1, etc.](./images/image024.png){width="6.5in" height="4.600694444444445in"}
-
-### 1.3.5 Headings and Structural Elements
+<h3 id="ch1-3-5">1.3.5 Headings and Structural Elements</h3>
 
 We will now present some best practices for starting to use \<section\>, \<article\>, \<nav\>, \<aside\>, in particular concerning the use of headings (h1, h2, h3, h4, h5 and h6).
 
-### Use \<h1\>\...\<h6\> for the headings
+<h4>Use \<h1\>\...\<h6\> for the headings</h4>
 
 Since the very beginning, HTML has had heading elements: \<h1\>\...\<h6\>. These elements are used to display headings with different sizes by default, when no CSS is used.  The following example shows 6 sentences that are surrounded by \<h1\>, \<h2\>, \<h3\>, \<h4\>, \<h5\> and \<h6\>:
 
-# This is a H1 heading
+<h1>This is a H1 heading</h1>
 
-## This is a H2 heading
+<h2>This is a H2 heading</h2>
 
-### This is a H3 heading
+<h3>This is a H3 heading</h3>
 
-#### This is a H4 heading
+<h4>This is a H4 heading</h4>
 
-##### This is a H5 heading
+<h5>This is a H5 heading</h5>
 
-###### This is a H6 heading
+<h6>This is a H6 heading</h6>
 
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 <!------------------------------------------------------------------------------------------------>
@@ -2187,7 +2165,7 @@ In the above example, please note two things:
 
 2.  The default size for the H1 and H2 is the same (!). Indeed, when we start a \<h1\> inside a \<section\> the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.
 
-### 1.3.6 Best Practices When Using Sectioning Elements
+<h3 id="ch1-3-6">1.3.6 Best Practices When Using Sectioning Elements</h3>
 
 ### **Best practice #1**: always add a heading to explicit sectioning content
 
@@ -2229,16 +2207,14 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 
 The outline of the last example looks like this:
 <!------------------------------------------------------------------------------------------------>
-<!---------------- xx.  (xx) ------------------->
+<!---------------- 27.  (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/imagexx.jpeg?raw=true"
-   alt=""
-   width="25%" />
+<img src="/images/image027.jpeg?raw=true"
+   alt="Outline of last example"
+   width="65%" />
 &nbsp;
 <br/>
-
-![outline of last example](./images/image027.jpeg){width="6.5in" height="2.3006944444444444in"}
 
 Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning root\", and would also need a heading.
 
@@ -2246,10 +2222,10 @@ Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning
 
 ```
 > <body>
->     **<h1>Example Blog</h1>**
+>     <b><h1>Example Blog</h1></b>
 >     <section>
 >        <header>
->           **<h2>Blog post of April 2020</h2>**
+>           <b><h2>Blog post of April 2020</h2></b>
 >           <p>Posted by Michel Buffa...</p>
 >        </header>
 >       <p>Content of the blog post...</p>
@@ -2259,13 +2235,13 @@ Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning
 
 In red, the sectioning root (\<body\>) and the sectioning elements (\<section\> here\...), each have a heading.
 
-**To sum up:**
+<b>To sum up:</b>
 
--   Always use a heading element after a sectioning element, for example \<section\>**\<Hx\>\...\</Hx\>\...**\</section\>, and after \<body\>, where **x** can be 1..6,
+-   Always use a heading element after a sectioning element, for example \<section\><b>\<Hx\>\...\</Hx\>\...</b>\</section\>, and after \<body\>, where <b>x</b> can be 1..6,
 
--   Or, use a \<header\> element, like in \<section\>**\<header\>\<Hx\>\...\</Hx\>\.....\</header\>**\...\</section\>
+-   Or, use a \<header\> element, like in \<section\><b>\<header\>\<Hx\>\...\</Hx\>\.....\</header\></b>\...\</section\>
 
-#### More about the \<header\> element
+<h4>More about the \<header\> element</h4>
 
 The \<header\> element is just a container. It is not taken into account for defining new sections of a document nor does it affect the hierarchy levels. 
 
@@ -2306,7 +2282,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 5.  </header>
 ```
 
-### **Best practice #2**: try not to rely on implicit sectioning, use \<section\>, \<article\>, etc. instead of just \<h1\>\...\<h6\>
+<h4><b>Best practice #2</b>: try not to rely on implicit sectioning, use \<section\>, \<article\>, etc. instead of just \<h1\>\...\<h6\></h4>
 
 The example below defines several implicit \"sections\" by using \<Hx\> directly (at *lines 7 and 9*):
 
@@ -2380,28 +2356,28 @@ This example is a simple document, with a hyperlink that, once clicked, displays
 7.       </header>
 8.       <h2>First subsection of the first section (a h2)</h2>
 9.       <p>Blah Blah...</p>
-10.  </section>
+10. </section>
 11. <section>
 12.      <h1>Second section of the document (a h1)</h1>
 13.      <h2>First subsection (a h2)</h2>
 14. </section>
 15. <aside>
 16.      <h3>Table of contents</h3>
-17.      **<a href="javascript:(function(){...})();"**
-18. **        title="TableDeMatiere">**
-19. **        Click here to display the table of contents!**
-20. **     </a>**
+17.      <b><a href="javascript:(function(){...})();"</b>
+18. <b>        title="TableDeMatiere"></b>
+19. <b>        Click here to display the table of contents!</b>
+20. <b>     </a></b>
 21. </aside>
 22. </body>
 ```
 
-**Best practice**: visualizing the table of contents is useful for debugging the structure of your page, and checking the presence of headings after sectioning content.
+<b>Best practice</b>: visualizing the table of contents is useful for debugging the structure of your page, and checking the presence of headings after sectioning content.
 
 Indeed, tools that generate the table of contents are a good way to debug the structure of your page. Is the hierarchy correct? Is it what I wanted when I designed my page?
 
 They are also useful for checking the presence of headings in each sectioning content. If some headings are missing, the table of contents will display some \"untitled entries\". Remember that having a heading after each sectioning content is a good practice in terms of accessibility.
 
-### 1.3.8 The \<main\> Element
+<h3 id="ch1-3-8">1.3.8 The \<main\> Element</h3>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 31. (##) ------------------------------->
@@ -2597,76 +2573,76 @@ We need to add a heading in the \<nav\> element. This will both fix the outlin
 
 A common remark from Web designers is: \"we do not want a heading content displayed systematically after a \<nav\>, or an \<aside\> element\...\"
 
-**BEST PRACTICE #1: **In order to NOT display the heading content on screen  the recommended technique  is described in [this article by Steve Faulkner](https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/). Do not use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies. **\
-\
-**As an illustration of the recommended technique, see [this JSBin version of the blog example](https://jsbin.com/savabo/edit?html,output) that hides the \<h2\>Navigation menu\</h2\> from the \<nav\>\...\</nav\> element, using the CSS technique explained in the above link.
+<b>BEST PRACTICE #1: </b>In order to NOT display the heading content on screen the recommended technique is described in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/">this article by Steve Faulkner</a>. Do not use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies. **\
 
-**BEST PRACTICE #2: **it is not advised to include interactive content (links, controls etc) that is hidden offscreen (it is in fact a violation of the [W3C WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/)). All interactive content must have a visible focus indicator (and be on screen when focused).
+<b>As an illustration of the recommended technique, see <a href="https://jsbin.com/savabo/edit?html,output">this JSBin version of the blog example</a> that hides the \<h2\>Navigation menu\</h2\> from the \<nav\>\...\</nav\> element, using the CSS technique explained in the above link.
 
-### Embedding a table of contents and adding a \<main\> element
+<b>BEST PRACTICE #2: </b>it is not advised to include interactive content (links, controls etc) that is hidden offscreen it is in fact a violation of the <a href="https://www.w3.org/TR/WCAG20/)">W3C WCAG 2.0 Guidelines</a>. All interactive content must have a visible focus indicator (and be on screen when focused).
+
+<h4>Embedding a table of contents and adding a \<main\> element</h4>
 
 In the previous section, we saw how to embed a table of contents using some JavaScript code borrowed from the Google Chrome HTML5 outliner extension.
 
 Let\'s add this piece of code (we removed the JS details from this extract):
 
 ```
-1.  \<aside\>
-2.     \<h1\>
-3.       \<a href=\"javascript:(function(){\...});\"
-4.          title=\"TableOfContents\"\>
+1.  <aside>
+2.     <h1>
+3.       <a href="javascript:(function(){...});"
+4.          title="TableOfContents">
 5.          Click here to display the table of contents!
-6.       \</a\>
-7.     \</h1\>
-8.  \</aside\>
+6.       </a>
+7.     </h1>
+8.  </aside>
 ```
 
 We also added a \<main\> element to identify the main content of the page composed of the big section with all blog posts:
 
 ```
-1.  \<main\>
-2.    \<section\>
-3.       \<header\>
-4.           \<h2\>Blog posts for April 2012\</h2\>
-5.       \</header\>
-6.       \...
-7.  \</main\>
+1.  <main>
+2.    <section>
+3.       <header>
+4.           <h2>Blog posts for April 2012</h2>
+5.       </header>
+6.       ...
+7.  </main>
 ```
 
-### Use H1 as top level headings only, use H2\...H6 in sectioning content
+<h4>Use H1 as top level headings only, use H2\...H6 in sectioning content</h4>
 
-As explained in the article [HTML5 Document Outline](https://www.paciellogroup.com/blog/2013/10/html5-document-outline/) and in [the W3C HTML Wiki](https://www.w3.org/wiki/HTML/Usage/Headings) , it is risky to use nested H1s, as browsers do not correctly implement the \"outline algorithm\".
+As explained in the article <a href="https://www.paciellogroup.com/blog/2013/10/html5-document-outline/">HTML5 Document Outline</a> and in <a href="https://www.w3.org/wiki/HTML/Usage/Headings">the W3C HTML Wiki</a>, it is risky to use nested H1s, as browsers do not correctly implement the \"outline algorithm\".
 
-The blog example uses nested H1's. If you check it with [the W3C conformance checker](https://validator.w3.org/nu), it issues a warning: \"*Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).*\"
+The blog example uses nested H1's. If you check it with <a href="https://validator.w3.org/nu">the W3C conformance checker</a>, it issues a warning: \"*Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).*\"
 
 While this is just a warning, we do prefer to use H1s only as top level elements, and replace the H1s we had after \<section\>, \<article\>, \<nav\> and \<aside\> elements respectively by a H2s and H3s. 
 
-**Extract from source code:**
+<b>Extract from source code:</b>
 
 ```
-1.  \<nav\>
-2.     \<header\>
-3.       **\<h2\>Navigation menu\</h2\>**
-4.     \</header\>
-5.     \...
-6.  \</nav\>
+1.  <nav>
+2.     <header>
+3.       <h2>Navigation menu</h2>
+4.     </header>
+5.     ...
+6.  </nav>
 ``
 
-### Finally, the fixed example
+<h4>Finally, the fixed example</h4>
+<ul>
+<li><a href="https://jsbin.com/heboke/edit?html,output">Check it online with this JsBin</a>.</li>
+</ul>
 
--   [Check it online with this JsBin](https://jsbin.com/heboke/edit?html,output)
 <!------------------------------------------------------------------------------------------------>
-<!---------------- xx.  (xx) ------------------->
+<!---------------- 34. blog with embedded table of contents (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/imagexx.jpeg?raw=true"
-   alt=""
-   width="25%" />
+<img src="/images/image034.jpeg?raw=true"
+   alt="Blog with embedded table of contents"
+   width="50%" />
 &nbsp;
 <br/>
 
-![blog with embedded table of contents](./images/image034.jpeg){width="5.0in" height="2.8536340769903763in"}
-
-### 1.3.10 Examples of Page Layouts
+<h3 id="ch1-3-10">1.3.10 Examples of Page Layouts</h3>
 
 In this section, we show some \"classic\" CSS layout techniques for designing an HTML page that uses the new sectioning elements. 
 
@@ -2753,30 +2729,51 @@ Instead of having one element with a float:left and one element with a float:
 
 **Look at the CSS code in the example below:**
 
-![](./images/image037.png){width="6.5in" height="2.329861111111111in"}
+<!------------------------------------------------------------------------------------------------>
+<!---------------- 37.  (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image037.png?raw=true"
+   alt=""
+   width="65%" />
+&nbsp;
+<br/>
 
-### Example #3: same result using the CSS flex property
+<h4>Example #3: same result using the CSS flex property</h4>
 
-This example uses the CSS flex property to achieve a result similar to the one shown in Example 2.\
+This example uses the CSS flex property to achieve a result similar to the one shown in Example 2.
 There are many articles on Flexbox and we recommend those from Rachel Andrew on Smashing Magazine: \"[Use cases for Flexbox](https://www.smashingmagazine.com/2018/10/flexbox-use-cases/)\", \"[Flexbox: how big is that flexible box](https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/)\", etc.
+<!------------------------------------------------------------------------------------------------>
+<!---------------- 38.  (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image038.png?raw=true"
+   alt=""
+   width="65%" />
+&nbsp;
+<br/>
 
-![](./images/image038.png){width="6.5in" height="2.357638888888889in"}
-
-### Example #4: another example written by a student, that uses the flex property
+<h4>Example #4: another example written by a student, that uses the flex property</h4>
 
 This example also uses all the structuring elements we saw: main, article, section, etc. It uses only the simplest parts of the FlexBox CSS module, so it should be easy to understand, even for CSS beginners:
 
-![](./images/image039.png){width="6.5in" height="3.467361111111111in"}
+<!------------------------------------------------------------------------------------------------>
+<!---------------- 39.  (xx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image039.png?raw=true"
+   alt=""
+   width="65%" />
+&nbsp;
+<br/>
 
-### External resources
-
--   An article on CSS Tricks: [All about floats](https://css-tricks.com/all-about-floats/)
-
--   Old but good article on \"A List Apart\" (ALA): [CSS Floats 101](https://alistapart.com/article/css-floats-101)
-
--   Another article on Lifewire:[ Understanding CSS float](https://www.lifewire.com/understanding-css-float-3466205)
-
--   On MDN\'s Web Docs: the [float CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/float) and the [clear CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/clear)
+<h4>External resources</h4>
+<ul>
+<li>An article on CSS Tricks: <a href="https://css-tricks.com/all-about-floats/">All about floats</a></li>
+<li>Old but good article on \"A List Apart\" (ALA): <a href="https://alistapart.com/article/css-floats-101">CSS Floats 101</a></li>
+<li>Another article on Lifewire:<a href="https://www.lifewire.com/understanding-css-float-3466205"> Understanding CSS float</a></li>
+<li>On MDN\'s Web Docs: the [float CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/float) and the [clear CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/clear)</li>
+</ul>
 
 <h3 id="ch1-4">1.4.1 The \<details\> and \<summary\> Elements</h3>
 
@@ -2824,64 +2821,61 @@ And here is what is displayed after clicking on the small arrow-shaped icon to t
 <b>Here is the code of this example:</b>
 
 ```
-> \<!DOCTYPE html\>
-> \<html lang=\"en\"\> \...
-> \<body\>
-> \<details\>
-> \<summary\>
-> How to beat the boss\...spoiler alert !
-> \</summary\>
-> \<p\> Just aim to the red spots near his eyes\</p\>
-> \<p\>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.\</p\>
-> \</details\>
-> \</body\>
-> \</html\>
+> <!DOCTYPE html>
+> <html lang="en"> ...
+> <body>
+> <details>
+> <summary>
+> How to beat the boss...spoiler alert !
+> </summary>
+> <p> Just aim to the red spots near his eyes</p>
+> <p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
+> </details>
+> </body>
+> </html>
 ```
 
 The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> element. By clicking on the icon at the left of the summary, the content of the \<details\> value is displayed/hidden.
 
-\<details\> blocks can be embedded inside one another, like in this [example](https://jsbin.com/dejagi/edit?html,css,output):
+\<details\> blocks can be embedded inside one another, like in this <a href="https://jsbin.com/dejagi/edit?html,css,output">example</a>:
 
-**Step 1: all folded:**
+<b>Step 1: all folded:</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 43.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image043.jpeg?raw=true"
+   alt="Other example, unfolded"
    width="35%">
 &nbsp;
 <br/>
-![Other example, unfolded](./images/image043.jpeg){width="3.3229166666666665in" height="0.4270833333333333in"}
 
-**Step 2: click on top level summary icon, the first \"hidden\" part appears\...**
+<b>Step 2: click on top level summary icon, the first \"hidden\" part appears\...</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 44.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image044.jpeg?raw=true"
+   alt="The unfolded content contains in turn a summary details folded"
    width="35%">
 &nbsp;
 <br/>
-![The unfolded content contains in turn a summary details folded](./images/image044.jpeg){width="3.3333333333333335in" height="2.1875in"}
 
-**Step3: click on embedded summary icon inside the part that has been previously unfolded**
+<b>Step3: click on embedded summary icon inside the part that has been previously unfolded</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 45.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image045.jpeg?raw=true"
+   alt="We unfolded the summary details inside the previous summary details. Recursive accordeons!"
    width="35%">
 &nbsp;
 <br/>
-![We unfolded the summary details inside the previous summary details. Recursive accordeons!](./images/image045.jpeg){width="3.25in" height="3.6875in"}
 
-**Source code of this example, see the summary/details inside another one:**
+<b>Source code of this example, see the summary/details inside another one:</b>
 
 ```
 > <details>
@@ -2900,22 +2894,21 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> elem
 > </details>
 ```
 
-### CSS pseudo classes for styling summary icons
+<h4>CSS pseudo classes for styling summary icons</h4>
 
 There are CSS pseudo classes to style this icon when it is in the open or closed state. Support for these is still incomplete as of June 2020 (works on Google Chrome, Opera, Safari, not in FF).
 
-Example1 (see [online example](https://jsbin.com/tomehim/1/edit?html,css,output)):
+Example1 see <a href="https://jsbin.com/tomehim/1/edit?html,css,output">online example</a>:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 46.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image046.jpeg?raw=true"
+   alt="Styling the open/close icon"
    width="35%">
 &nbsp;
 <br/>
-![Styling the open/close icon](./images/image046.jpeg){width="3.4583333333333335in" height="0.4166666666666667in"}
 
 The color and background of the icon on the left are specified by the following CSS rule, which uses the pseudo class ::-webkit-details-marker
 
@@ -2929,15 +2922,14 @@ In this example: red arrow, white background.
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 47.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image047.jpeg?raw=true"
+   alt="Styled summary details icon, unfolded state"
    width="35%">
 &nbsp;
 <br/>
-![Styled summary details icon, unfolded state](./images/image047.jpeg){width="3.7708333333333335in" height="1.8125in"}
 
 Once opened, the selector details\[open\] can style the icon when \<details\> is unfolded. In this example: blue arrow, turquoise background. Here is the corresponding CSS rule:
 
@@ -2950,29 +2942,27 @@ Once opened, the selector details\[open\] can style the icon when \<details\>
 
 It is also possible to change the icon itself using the CSS pseudo class :after
 
-**Example 2 (see it [online](https://jsbin.com/sajusop/edit?html,css,output)):**
+<b>Example 2 (see it <a href="https://jsbin.com/sajusop/edit?html,css,output">online</a>):</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 43.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image043.jpeg?raw=true"
+   alt="A + as a custom open icon for summary"
    width="35%">
 &nbsp;
 <br/>
-![A + as a custom open icon for summary](./images/image043.jpeg){width="3.40625in" height="0.4375in"}
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 48.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image048.jpeg?raw=true"
+   alt="A \"-\" as a custom close icon"
    width="35%">
 &nbsp;
 <br/>
-![A \"-\" as a custom close icon](./images/image048.jpeg){width="3.4791666666666665in" height="1.6458333333333333in"}
 
 CSS rules used in this example:
 
@@ -3001,25 +2991,24 @@ Use a \"-\" shaped icon, white, when details are displayed:
 4.  }
 ```
 
-### Current browser support
+<h4>Current browser support</h4>
+<ul>
+<li>On CanIUse: <a href="https://caniuse.com/#feat=details">compatibility table for details and summary elements</li>
+</ul>
 
--   On CanIUse: [compatibility table for details and summary elements](https://caniuse.com/#feat=details)
-
-### 1.4.2 The \<time\> and \<mark\> Elements
+<h3 id="ch1-4-2">1.4.2 The \<time\> and \<mark\> Elements</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 49.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image049.jpeg?raw=true"
+   alt="Picture of a clock with the words \'it\'s about time\'"
+   width="20%">
 &nbsp;
 <br/>
 
-![Picture of a clock with the words \'it\'s about time\'](./images/image049.jpeg){width="2.0in" height="1.9085422134733159in"}
-
-### The \<time\> element
+<h4>The \<time\> element</h4>
 
 The \<time\> element is useful for marking a time or a duration in a document.
 
@@ -3027,29 +3016,23 @@ It provides both a human readable part (the part between \<time\> and \</time
 
 The machine readable part adds semantics that can be used by search engines for indexing, by browsers or by browser extensions, or by JavaScript code. Useful scenarios include generating alerts for birthdays, automatically adding dates or events that contain \<time\> elements in a calendar, etc.
 
-**Example:**
-
+<b>Example:</b>
+```
 1.  We open at **\<time\>10:00\</time\>** every morning.
-
 2.  
-
 3.  I have a meeting the **\<time datetime=\"2020-02-14\"\>Monday 14/02/2020.\</time\>**.
-
 4.  Blog posts from the year **\<time datetime=\"2020\"\>2020\</time\>**.
-
 5.  Archives, blog posts for **\<time datetime=\"2020-04\"\>April 2020\</time\>**
-
 6.  This recipe was published by Michel the **\<time datetime=\"2020-04-16\"\>April 16, 2020\</time\>**.
+```
 
-### The datetime attribute
+<h4>The datetime attribute</h4>
 
 The datetime attribute can be used for indicating a date/time or a duration.
 
 **Date/time values**
 
 Supports different specifications of time such as \"a year\", \"a month in a year\", \"a week in a year\", \"a time\", etc\... 
-
-##### 
 
 ##### Here are some examples:
 
@@ -14408,7 +14391,7 @@ Your browser does not support the canvas tag.
 
 **Errata**: in the video, we use speed +=1; in order to increment the speed of the rectangle each time it bounces (in the changeColor() function). This is not correct as speed can be negative. The online example fixes this by using speed += Math.sign(speed) \* 1; instead this will add +1 or -1 depending on the sign of speed.
 
-### 4.2.3 Animating Using setInterval()
+<h3 id="ch4-2-3">4.2.3 Animating Using setInterval()</h3>
 
 The setInterval(\...) function is still popular on the Web, and even though this is not the recommended way to do 60 frames/second canvas animation, it is worth understanding how it works.
 
@@ -15247,15 +15230,15 @@ Using time-based animation, and more generally, using the canvas element for wri
 
 Current [support](https://caniuse.com/requestanimationframe) is really good and all modern browsers support this API.
 
-### 4.3.1 Events: Input and Output
+<h3 is="ch4-3-1">4.3.1 Events: Input and Output</h3>
 
 In JavaScript, we treat events made by users as an input, and we manipulate the DOM structure as an output. Most of the time in games/animations, we will change state variables of moving objects, such as position or speed of an alien ship, and the animation loop will take care of these variables to move the objects.
 
 The events are called *DOM events*, and we use the *DOM JavaScript API* to create *event handlers*.
 
-### There are three ways to manage events in the DOM structure
+<h4>There are three ways to manage events in the DOM structure</h4>
 
-#### First method: declare event handlers in the HTML code
+<h4>First method: declare event handlers in the HTML code</h4>
 
 You will often find this in examples on the Web:
 ```
@@ -15269,16 +15252,14 @@ Note: this is not the recommended way to handle events, even if it\'s very easy 
 #### Second method: add an event handler to an HTML element in JavaScript
 
 Here is an example:
-
+```
 1.  document.getElementById(\'someDiv\').onclick = function(evt) {
-
 2.    alert(\'clicked!\');
-
 3.  }
-
+```
 This method is fine, but  you will not be able to attach several listener functions. If you need to do this, the preferred version is the next one.
 
-#### Third method: register a callback to the event listener with the addEventListener method
+<h4>Third method: register a callback to the event listener with the addEventListener method</h4>
 
 This is how we do it:
 ```
@@ -15289,23 +15270,21 @@ This is how we do it:
 
 The third parameter is not important for now, just set it to false, or simply do not add a third parameter.
 
-### The DOM event that is passed to the event listener function
+<h4>The DOM event that is passed to the event listener function</h4>
 
 When you create an EventListener and attach it to an element,  an event object will be passed as a parameter to your callback, just like this:
-
+```
 1.  element.addEventListener(\'click\', function(**event**) {
-
 2.     **// now you can use the event object inside the callback**
-
 3.  }, false);
-
+```
 Depending on the type of event you are listening to, we will use different properties from the event object in order to get useful information like: \"what keys have been pressed down?\", \"what is the position of the mouse cursor?\", \"which mouse button is down?\", etc.
 
 Let\'s see next how to deal with the keyboard and the mouse. In the [W3Cx HTML5 Apps and Games](https://www.edx.org/course/html5-apps-and-games) course, we look at additional APIs such as [the gamePad API](https://www.w3.org/TR/gamepad/) for using USB or wireless gamepads/joysticks/game controllers.
 
-### Source code for the knowledge check 4.3.1
+<h4>Source code for the knowledge check 4.3.1</h3>
 
-[Online example on JS Bin](http://jsbin.com/korele/edit)
+<a href="http://jsbin.com/korele/edit">Online example on JS Bin</a>
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15330,8 +15309,6 @@ Let\'s see next how to deal with the keyboard and the mouse. In the [W3Cx HTML5
 21. </body>
 22. </html>
 ```
-### 
-
 <h3 id="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
 
 When you listen to keyboard related events (keydown, keyup or keypressed), the event parameter passed to the listener function will contain the code of the key that fired the event. Then it is possible to test what key has been pressed or released, like this:
@@ -15348,103 +15325,67 @@ At *line 2*, the value \"37\" is the key code that corresponds to the left arro
 
 -   And find a list of keyCodes in this [CSS Tricks article](https://css-tricks.com/snippets/javascript/javascript-keycodes/#keycode-values))
 
-### Examples
+<h4>Examples</h4>
 
-#### Example #1: adding a key listener to the window object
+<h4>Example #1: adding a key listener to the window object</h4>
 
 A lot of people think that the canvas element is not able to get key events. Many examples on the Web handle key events on canvas by adding a listener to the window object directly, like this:
 
 ![](./images/image193.png){width="6.5in" height="2.05625in"}
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Adding a key listener to the window object - Example #1\</title\>
-
-\<style\>
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Adding a key listener to the window object - Example #1</title>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\<body onload=\"init();\"\>
-
-\<p\>
-
+</style>
+<body onload="init();">
+<p>
+```
 This example shows how to handle key events in a canvas by adding a key listener to the window object. Like that, all key press in the document will trigger the event listener function.\</p\>
 
-\<canvas id=\"myCanvas\" width=\"350\" height=\"200\"\>
-
-\</canvas\>
-
-\<script\>
-
+```
+<canvas id="myCanvas" width="350" height="200">
+</canvas>
+<script>
 var canvas;
-
 function init() {
-
 // This will work when you press a key, anywhere on the document
-
-window.addEventListener(\'keydown\', handleKeydown, false);
-
+window.addEventListener('keydown', handleKeydown, false);
 }
-
 function handleKeydown(e){
-
-alert(\'keycode: \'+e.keyCode);
-
+alert('keycode: '+e.keyCode);
 return false;
-
 };
+</script>
+</body>
+</html>
+```
 
-\</script\>
-
-\</body\>
-
-\</html\>
-
-Code source extract:
-
-1.  \<canvas id=\"myCanvas\" width=\"350\" height=\"200\"\>
-
-2.  \</canvas\>
-
+<h4>Code source extract:</h4>
+```
+1.  <canvas id="myCanvas" width="350" height="200">
+2.  </canvas>
 3.   
-
-4.  \<script\>
-
+4.  <script>
 5.  
-
 6.  function init() {
-
-7.      **// This will work when you press a key, anywhere on the document**
-
-8.      **window.addEventListener(\'keydown\', handleKeydown, false);**
-
+7.      // This will work when you press a key, anywhere on the document
+8.      window.addEventListener('keydown', handleKeydown, false);
 9.  }
-
 10.  
-
 11.  
-
 12. function handleKeydown(e){
-
-13.     alert(\'keycode: \'+e.keyCode);
-
+13.     alert('keycode: '+e.keyCode);
 14.     return false;
-
 15. };
-
-16. \</script\>
+16. </script>
+```
 
 Indeed this solution works well if you write a game, and want to detect events wherever the mouse cursor is, and without worrying about what HTML element has the focus, etc\...
 
@@ -16716,7 +16657,7 @@ Yep, this is not a straightforward process\...
 &nbsp;
 <br/>
 
-<b>HTML code:</b>
+<h4>HTML code:</h4>
 
 ```
 1.  <div id="parentDiv">
@@ -16901,7 +16842,7 @@ Feel free to look at the source code in the [online example](https://jsbin.com/
 &nbsp;
 <br/>
 
-<h3>5.2.3 Input Elements and Attributes</h3>
+<h3 id="ch5-2-3">5.2.3 Input Elements and Attributes</h3>
 
 <h4>Live coding video 1: using input elements as widgets to control a Web application</h4>
 
@@ -20091,52 +20032,33 @@ This time, we want the form content to be restored on page load/reload. We will 
 [Complete example on JSBin](https://jsbin.com/yivocuz/edit?html,js,output): enter data and press reload at any time. The form content is restored!
 
 Source code extract (only addition to the previous example):
-
+```
 1.  // Called when the page is loaded
-
 2.  window.onload = restoreFormContent;
-
 3.   
-
 4.  function restoreFormContent() {
-
 5.     console.log(\"restoring form content from localStorage\");
-
 6.  
-
 7.     if(localStorage.firstName !== undefined)
-
 8.       document.getElementById(\"firstName\").value = localStorage.firstName;
-
 9.  
-
 10.    if(localStorage.lastName !== undefined)
-
 11.      document.getElementById(\"lastName\").value = localStorage.lastName;
-
 12. 
-
 13.    if(localStorage.email !== undefined)
-
 14.      document.getElementById(\"email\").value = localStorage.email;
-
 15.  
-
 16.    if(localStorage.age !== undefined)
-
 17.      document.getElementById(\"age\").value = localStorage.age;
-
 18. 
-
 19.    if(localStorage.date !== undefined)
-
 20.      document.getElementById(\"date\").value = localStorage.date;
-
 21. }
+```
 
 The tests at *lines 7, 10, 13*, etc., verify that data has been saved, before trying to restore it. Without these tests, it would put the \"undefined\" string as the value of input fields with no corresponding data to restore.
 
-<h3>6.2.3 localStorage and sessionStorage</h3>
+<h3 id="ch6-2-3">6.2.3 localStorage and sessionStorage</h3>
 
 This time we will look at another example that uses new methods from the API:
 
@@ -22192,4 +22114,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-13-2022 6:54pm</i></b></h3>
+<h3><b><i>07-13-2022 10:21pm</i></b></h3>
