@@ -2067,31 +2067,30 @@ Since the very beginning, HTML has had heading elements: \<h1\>\...\<h6\>. Thes
 
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 <!------------------------------------------------------------------------------------------------>
-<!---------------- xx.  (xx) ------------------->
+<!---------------- 25.  (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/imagexx.jpeg?raw=true"
-   alt=""
-   width="25%" />
+<img src="/images/image025.png?raw=true"
+   alt="outliner in action from the previous example"
+   width="65%" />
 &nbsp;
 <br/>
-
-![outliner in action from the previous example](./images/image025.png){width="6.5in" height="3.5097222222222224in"}
 
 In the above outline, note that we have only used H1\... H6 elements, without any new HTML5 structural elements such as \<section\> or \<article\>.
 
 Here is a list of browser extensions you can try, for visualizing the outline of a document: [table-of-contents-crx](https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f) Chrome extension or [this Firefox extension](https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search).
 
-### Using headings and new sectioning elements (section, article, aside, nav)
+<h4>Using headings and new sectioning elements (section, article, aside, nav)</h4>
 
-#### Definition of heading content and sectioning content
+<h4>Definition of heading content and sectioning content</h4>
 
 The \<section\>, \<article\>, \<nav\> and \<aside\> elements are called **\"sectioning elements\"**. They cut a document into slices we call** \"sections\".**
 
 The HTML5 specification says that \"each sectioning element potentially has a heading and has also an outline associated\".
 
-\<h1\>\...\<h6\> are called **headings**, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
+\<h1\>\...\<h6\> are called <b>headings</b>, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
 
+```
 > <body>
 >     <h1>Title of my document</h1>
 >     ...
@@ -2106,47 +2105,33 @@ The HTML5 specification says that \"each sectioning element potentially has a he
 > </body>
 ```
 
-###### \... defines the heading of *the explicit section* (its parent element \<section\>).
+<h4>... defines the heading of *the explicit section* (its parent element \<section\>).</h4>
 
-### Use multiple headings of different rank with sectioning content
+<h4>Use multiple headings of different rank with sectioning content</h4>
 
 The first element of a heading content in an element of sectioning content represents the heading for that section (the \<section\>\<h1\>\...\</h1\>\</section\> in the above example).
 
 Subsequent headings of equal or higher rank start new (implied) sections, headings of lower rank start implied subsections that are part of the previous one. In both cases, the element represents the heading of the implied section.
 
-###### Let\'s clarify this by looking at some example code:
-
-###### \<body\>
-
-###### \<section\>
-
-######     \<h1\>This H1 is the heading of an explicit section\</h1\>
-
-######     \...
-
-######        \<h2\>This H2 is a subheading, part of the same section
-
-######            (lower rank)\</h2\>
-
-######             \....
-
-######     \<h1\>This H1 starts an implicit new section in the explicit
-
-######         section (equal or higher rank)\</h1\>
-
-######         \...
-
-######         \<h2\>This is a H2 heading in the new section that has
-
-######             just started\</h2\>
-
-######             \...
-
-###### \</section\>
-
-###### \</body\>
-
-###### The corresponding outline is:
+```
+<h6>Let\'s clarify this by looking at some example code:
+<h6> \<body\>
+<h6> \<section\>
+<h6>     \<h1\>This H1 is the heading of an explicit section\</h1\>
+<h6>     \...
+<h6>        \<h2\>This H2 is a subheading, part of the same section
+<h6>            (lower rank)\</h2\>
+<h6>             \....
+<h6>     \<h1\>This H1 starts an implicit new section in the explicit
+<h6>         section (equal or higher rank)\</h1\>
+<h6>         \...
+<h6>         \<h2\>This is a H2 heading in the new section that has
+<h6>             just started\</h2\>
+<h6>             \...
+<h6> \</section\>
+<h6> \</body\>
+<h6> The corresponding outline is:
+```
 <!------------------------------------------------------------------------------------------------>
 <!---------------- xx.  (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -2167,43 +2152,43 @@ In the above example, please note two things:
 
 <h3 id="ch1-3-6">1.3.6 Best Practices When Using Sectioning Elements</h3>
 
-### **Best practice #1**: always add a heading to explicit sectioning content
+### <b>Best practice #1</b>: always add a heading to explicit sectioning content
 
 It\'s always better - mainly for accessibility reasons - to include a heading (a \<h1\>, \<h2\>\...\<h6\>) in each sectioning element (\<section\>, \<article\>, \<nav\>, \<aside\>), but also after the \<body\> element (called a \"sectioning root\"). 
 
 Here are some examples:
 
-**Good (heading in each explicit section):**
+<b>Good (heading in each explicit section):</b>
 
 ```
-####### \<section\>
-#######     \<h1\>Blog post of April 2020\</h1\>
-#######     \...
-####### \</section\>
-**Good (heading  in a \<header\> does not change anything)**
-####### \<section\>
-#######    **\<header\>**
-#######       **\<h1\>Blog post of April 2020\</h1\>**
-#######       **\<p\>Posted by Michel Buffa\...\</p\>**
-#######    **\</header\>**
-####### \...
-####### \</section\>
+<h6> \<section\>
+<h6>     \<h1\>Blog post of April 2020\</h1\>
+<h6>     \...
+<h6> \</section\>
+<b>Good (heading  in a \<header\> does not change anything)</b>
+<h6> \<section\>
+<h6>    <b>\<header\></b>
+<h6>       <b>\<h1\>Blog post of April 2020\</h1\></b>
+<h6>       <b>\<p\>Posted by Michel Buffa\...\</p\></b>
+<h6>    <b>\</header\></b>
+<h6> \...
+<h6> \</section\>
 ```
-**Bad (there is no Hx after the \<section\> -\> no heading):**
+<b>Bad (there is no Hx after the \<section\> -\> no heading):</b>
 
 ```
-####### <section>
-#######    <header>
-#######       <p class="article title">Blog post of April 2020</p>
-#######       <p>Posted by Michel Buffa...</p>
-#######    </header>
-#######    ...
-####### </section>
+<h6> <section>
+<h6>    <header>
+<h6>       <p class="article title">Blog post of April 2020</p>
+<h6>       <p>Posted by Michel Buffa...</p>
+<h6>    </header>
+<h6>    ...
+<h6> </section>
 ```
 
 The last example is bad for accessibility reasons. A screen reader that vocalizes the page will just say \"Entering section\", while in the previous two good examples it would say \"entering section with heading Blog Posts of April 2020\". You can also check if your headings and sectioning elements are ok by using a browser extension that displays the outline of the document (just search for \"html5 outliner\" in your browser\'s extension search engine).
 
-**UPDATE : **For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as [table-of-contents-crx](https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f) for Chrome or [Outline sidebar](https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search) for Firefox.
+<b>UPDATE : </b>For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as [table-of-contents-crx](https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f) for Chrome or [Outline sidebar](https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search) for Firefox.
 
 The outline of the last example looks like this:
 <!------------------------------------------------------------------------------------------------>
@@ -2218,7 +2203,7 @@ The outline of the last example looks like this:
 
 Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning root\", and would also need a heading.
 
-**Final good version:**
+<b>Final good version:</b>
 
 ```
 > <body>
@@ -2524,13 +2509,13 @@ Let\'s go back to our blog example and see what can be improved:
 Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an \<article\> that is in a \<section\> (this corresponds to the third example given in the \"heading and sectioning elements\" part of the course):
 
 ```
-1.  **\<section\>**
+1.  <b>\<section\></b>
 2.     \<header\>
-3.       **\<h1\>Blog posts for April 2012\</h1\>**
+3.       <b>\<h1\>Blog posts for April 2012\</h1\></b>
 4.     \</header\>
-5.     **\<article\>**
+5.     <b>\<article\></b>
 6.       \<header\>
-7.         **\<h1\>\<a href=\"\"\>Information about this example\</a\>\</h1\>**
+7.         <b>\<h1\>\<a href=\"\"\>Information about this example\</a\>\</h1\></b>
 8.         This example is a modified version of \<a href=\"https://example.com/blog/index.html\"\>https://example.com/blog/index.html\</a\>
 9.       \</header\>
 10.      \...
@@ -2548,9 +2533,9 @@ We need to add a heading in the \<nav\> element. This will both fix the outlin
 
 ```
 1.  \<nav\>
-2.     **\<header\>**
-3.       **\<h1\>Navigation menu\</h1\>**
-4.     **\</header\>**
+2.     <b>\<header\></b>
+3.       <b>\<h1\>Navigation menu\</h1\></b>
+4.     <b>\</header\></b>
 5.     \<ul\>
 6.       \<li\>\<span\>Blog\</span\>\</li\>
 7.       \<li\>\<a href=\"\"\>About\</a\>\</li\>
@@ -2559,7 +2544,7 @@ We need to add a heading in the \<nav\> element. This will both fix the outlin
 10. \</nav\>
 ```
 
-**Here is the fixed result:**
+<b>Here is the fixed result:</b>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- xx.  (xx) ------------------->
@@ -2573,7 +2558,7 @@ We need to add a heading in the \<nav\> element. This will both fix the outlin
 
 A common remark from Web designers is: \"we do not want a heading content displayed systematically after a \<nav\>, or an \<aside\> element\...\"
 
-<b>BEST PRACTICE #1: </b>In order to NOT display the heading content on screen the recommended technique is described in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/">this article by Steve Faulkner</a>. Do not use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies. **\
+<b>BEST PRACTICE #1: </b>In order to NOT display the heading content on screen the recommended technique is described in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/">this article by Steve Faulkner</a>. Do not use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies. <b>\
 
 <b>As an illustration of the recommended technique, see <a href="https://jsbin.com/savabo/edit?html,output">this JSBin version of the blog example</a> that hides the \<h2\>Navigation menu\</h2\> from the \<nav\>\...\</nav\> element, using the CSS technique explained in the above link.
 
@@ -2727,7 +2712,7 @@ Here we show how to make a 3 column layout using the CSS float property.
 
 Instead of having one element with a float:left and one element with a float:right property, we instead use float:left for all three of them, and we give a  width:30% CSS property value to each \<section\>. We also set a small margin so that the colums have a gap between them.
 
-**Look at the CSS code in the example below:**
+<b>Look at the CSS code in the example below:</b>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 37.  (xx) ------------------->
@@ -3018,19 +3003,19 @@ The machine readable part adds semantics that can be used by search engines for 
 
 <b>Example:</b>
 ```
-1.  We open at **\<time\>10:00\</time\>** every morning.
+1.  We open at <b><time>10:00</time> every morning.
 2.  
-3.  I have a meeting the **\<time datetime=\"2020-02-14\"\>Monday 14/02/2020.\</time\>**.
-4.  Blog posts from the year **\<time datetime=\"2020\"\>2020\</time\>**.
-5.  Archives, blog posts for **\<time datetime=\"2020-04\"\>April 2020\</time\>**
-6.  This recipe was published by Michel the **\<time datetime=\"2020-04-16\"\>April 16, 2020\</time\>**.
+3.  I have a meeting the <b><time datetime="2020-02-14">Monday 14/02/2020.</time></b>.
+4.  Blog posts from the year <b>\<time datetime=\"2020\"\>2020\</time\></b>.
+5.  Archives, blog posts for <b>\<time datetime=\"2020-04\"\>April 2020\</time\></b>
+6.  This recipe was published by Michel the <b>\<time datetime=\"2020-04-16\"\>April 16, 2020\</time\></b>.
 ```
 
 <h4>The datetime attribute</h4>
 
 The datetime attribute can be used for indicating a date/time or a duration.
 
-**Date/time values**
+<b>Date/time values</b>
 
 Supports different specifications of time such as \"a year\", \"a month in a year\", \"a week in a year\", \"a time\", etc\... 
 
@@ -3149,7 +3134,7 @@ Source code:
 \<title\>JS Bin\</title\>
 \</head\>
 \<body\>
-\<p\>Project is due in **\<mark\>.zip format\</mark\>** next monday.\</p\>
+\<p\>Project is due in <b>\<mark\>.zip format\</mark\></b> next monday.\</p\>
 \</body\>
 \</html\>
 ```
@@ -3304,7 +3289,7 @@ This will indeed force the download of an image with a filename different from i
 &nbsp;
 <br/>
 
-**WARNING**: since 2015, and for security reasons, **the image should be located on the same domain as the HTML page that contains the link** (using a relative URL works well, for example, but linking a page on another domain will not work - it will keep its original name).
+<b>WARNING</b>: since 2015, and for security reasons, <b>the image should be located on the same domain as the HTML page that contains the link</b> (using a relative URL works well, for example, but linking a page on another domain will not work - it will keep its original name).
 
 #### Interesting applications: serverless download
 
@@ -3367,13 +3352,13 @@ Both [Google translate](https://translate.google.com/) and [Microsoft online 
 
 #### Example illustrating how to specify parts of an HTML element that should not be translated:
 
-1.  \<span **[translate=\"no\"]** class=\"author\"\>[Michel Ham]\</span\>
+1.  \<span <b>[translate=\"no\"]</b> class=\"author\"\>[Michel Ham]\</span\>
 
 In the above example, a \<span\> element defines an author (of a blog, for example) who is named Michel Ham. However, his family name is the same as pork and would be translated to \"Michel Jambon\" in French, or Michel Jamón in Spanish\...
 
 Using the translate=\"no\" attribute should prevent this behavior\...
 
-1.  \<span **[translate=\"no\"]** class=\"author\"\>[Michel Ham]\</span\> is a professor
+1.  \<span <b>[translate=\"no\"]</b> class=\"author\"\>[Michel Ham]\</span\> is a professor
 
 2.  from the University of Nice,France.
 
@@ -3387,7 +3372,7 @@ Will be correctly translated into French by:
 
 When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true. 
 
-1.  \<p **[translate=\"no\"]**\>This is a text in a paragraph element, that should not be translated: the p element has a translate=\"no\" attribute.[\<span\> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too\</span\>]. This is the end of the paragraph\...\</ p\>
+1.  \<p <b>[translate=\"no\"]</b>\>This is a text in a paragraph element, that should not be translated: the p element has a translate=\"no\" attribute.[\<span\> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too\</span\>]. This is the end of the paragraph\...\</ p\>
 
 ### External resources:
 
@@ -3491,7 +3476,7 @@ Different use cases:
 
 -   With other types of microdata, for events, for example, the browser may pop up a calendar application, etc.
 
-**Note**: For advanced users, Microdata is very similar to [microformats](http://microformats.org/), which use HTML classes, or to [RDFa](https://www.w3.org/TR/xhtml-rdfa-primer/), which doesn't validate in HTML4 or HTML5. Because RDFa was considered to be too hard for authors to write, microdata is HTML5\'s answer to help embed semantics into html documents.
+<b>Note</b>: For advanced users, Microdata is very similar to [microformats](http://microformats.org/), which use HTML classes, or to [RDFa](https://www.w3.org/TR/xhtml-rdfa-primer/), which doesn't validate in HTML4 or HTML5. Because RDFa was considered to be too hard for authors to write, microdata is HTML5\'s answer to help embed semantics into html documents.
 
 ### External resources
 
@@ -3751,7 +3736,7 @@ Again, look at the Person/Address example:
 ```
 The properties at *lines 8-12* refer to the address nested microdata (they are defined in the Address vocabulary, not the Person vocabulary), and \"France\" (*line 14*) is a property that refers to the Country vocabulary.
 
-**Several properties with the same name but different values**
+<b>Several properties with the same name but different values</b>
 
 It is possible to use the same property name several times in one microdata object, but with different values:
 ```
@@ -3766,7 +3751,7 @@ It is possible to use the same property name several times in one microdata obj
 ```
 This defines the fact that Michel Buffa has two online accounts, and the two properties have the name url, each with its own value.
 
-**It is possible to set more than one property at once, with the same value**
+<b>It is possible to set more than one property at once, with the same value</b>
 
 Here are some microdata that represent a song. In this example, at line 5 we set  two different properties: genre and keywords with the same value (see the [MusicRecording schema definition](https://schema.org/MusicRecording)):
 ```
@@ -3932,13 +3917,13 @@ The \<video\> element is supported by all major browsers. See the [support ta
 
 Help! \<video src=\"my youtube video URL\"\>\</video\> does not work! 
 
-**BEWARE**: *you cannot directly embed videos from most of the popular Web sites such as YouTube, Dailymotion, Vimeo, etc. For commercial reasons, and because advertising is automatically added to the videos, these Web sites do not allow \"regular\" embedding of their videos.*
+<b>BEWARE</b>: *you cannot directly embed videos from most of the popular Web sites such as YouTube, Dailymotion, Vimeo, etc. For commercial reasons, and because advertising is automatically added to the videos, these Web sites do not allow \"regular\" embedding of their videos.*
 
 While they use HTML5 to render their videos, these hosting sites (YouTube, etc.) use rather complex techniques in order to prevent you from using them with the \<video\>element. Instead, you often need to embed an \<iframe\> that will render the HTML5 videos in your Web site, and of course, the advertising that comes along with them.
 
 Usually you have an \"embed\" button close to the videos that prompts you with some HTML code that you can copy and paste for embedding.
 
-**An example using YouTube:**
+<b>An example using YouTube:</b>
 
 Here is the HTML code you need to copy and paste in order to embed a video:
 
@@ -3969,7 +3954,7 @@ This is one of the main problems encountered in recent years: codec support was 
 
 HTML5 audio is composed of several layers:
 
--   The** **\<audio\> element is useful for embedding an audio player into a Web page. It is dedicated for **streamed audio**. It is very similar to the \<video\> element, both in its use and in its API.
+-   The<b> </b>\<audio\> element is useful for embedding an audio player into a Web page. It is dedicated for <b>streamed audio</b>. It is very similar to the \<video\> element, both in its use and in its API.
 
 -   The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.).
 
@@ -4065,7 +4050,7 @@ Here are the most common attributes you can use with the \<video\> element. T
 
 The autoplay attribute is not recommended if your Web site targets mobile applications (actually, it is often ignored by mobile browsers), as it may consume bandwidth even if the user is not interested in watching the proposed video. If you target mobile devices, we recommend using preload=none as well, as the default value for this attribute is auto.
 
-**Best practice**: do not use autoplay and add preload=\"none\" if you target mobile devices or if you have multiple audio/video files on the same page.  For example, [this page](https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html) contains many audio elements and it does not make sense to have them preload or autoplay.
+<b>Best practice</b>: do not use autoplay and add preload=\"none\" if you target mobile devices or if you have multiple audio/video files on the same page.  For example, [this page](https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html) contains many audio elements and it does not make sense to have them preload or autoplay.
 
 #### About the poster attribute
 
@@ -4075,7 +4060,7 @@ If the poster attribute is missing, usually the first non-blank frame of the v
 
 Do not abuse of the autoplay attribute. We talked earlier about mobile applications, but even on desktop applications it\'s usually a bad idea to use it (except for WebCams and for some animations with small video loops, without sound, or for sites like YouTube, with just videos).
 
-**Best practice**: think twice before using the autoplay attribute, even for desktop applications.
+<b>Best practice</b>: think twice before using the autoplay attribute, even for desktop applications.
 
 ### Attributes of the \<audio\> element
 
@@ -4118,133 +4103,78 @@ Please move the mouse pointer over this player\'s elements: 
 
 Press Play to hear the horse ! 
 
- **HTML source code:**
-
+ <b>HTML source code:</b>
+```
 1.  \<figure id=\"figaudio1\"\>
-
 2.    \<img id=\"imghorse\" width=\"200\"
-
 3.       src=\"https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg\"
-
 4.       alt = \"a horse\"/\>
-
 5.    \<figcaption id=\"figcptionaudio1\"\> Press Play to hear the horse!
-
 6.      \<audio controls=\"controls\"\>
-
 7.         \<source src=\"https://mainline.i3s.unice.fr/mooc/horse.ogg\"
-
 8.                 type=\"audio/ogg\" /\>
-
 9.         \<source src=\"https://mainline.i3s.unice.fr/mooc/horse.mp3\"
-
 10.                type=\"audio/mp3\" /\>
-
 11.        Your browser does not support the audio element.
-
 12.        Download the audio/video in
-
 13.        \<a href="https://mainline.i3s.unice.fr/mooc/horse.ogg"\>OGG\</a\>
-
 14.      or \<a href="https://mainline.i3s.unice.fr/mooc/horse.mp3"\>MP3\</a\>
-
 15.         format.
-
 16.    \</audio\>
-
 17. \</figcaption\>
-
 18. \</figure\>
+```
 
 CSS source code:
-
+```
 1.  #figaudio1 {
-
 2.      width : 420px;;
-
 3.      text-align:center;
-
 4.      padding : 6px;
-
 5.      background : white;
-
 6.      margin : 0 11px 0px 0;
-
 7.      border :solid 1px #888888;
-
 8.      border-radius : 8px ;
-
 9.  }
-
 10.  
-
 11. #figcptionaudio1 {
-
 12.     font-size : .8em;
-
 13.     padding : 6px 8px;
-
 14.     background : #dddddd;
-
 15.     display :block;
-
 16.     text-align :center;
-
 17.     font-family : georgia, serif;
-
 18.     font-style : italic;
-
 19.     border-radius : 7px ;
-
 20. }
-
 21.  
-
 22. #figaudio1 \> img {
-
 23.     background : #eeeeee;
-
 24.     padding : 5px;
-
 25.     border : solid 1px #444444;
-
 26. }
-
 27.  
-
 28. /\* For audio and img transitions/animation \*/
-
 29. audio, #figaudio1 \> img {
-
 30.     transition:all 0.5s;
-
 31. }
-
 32.  
-
 33. #figaudio1 \> img:hover {
-
 34.     box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-
 35.     transform: scale(1.05);
-
 36. }
-
 37.  
-
 38. audio:hover, audio:focus, audio:active {
-
 39.     box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-
 40.     transform: scale(1.05);
-
 41. }
+```
 
-### Changing the size of a video on the fly using CSS transforms
+<h4>Changing the size of a video on the fly using CSS transforms</h4>
 
-#### Resizing and rotating a video as the mouse pointer comes over it
+<h4>Resizing and rotating a video as the mouse pointer comes over it</h4>
 
-See this** **[example online](https://jsbin.com/zoquru/4/edit?html,css,output) (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it\'s playing.
+See this [example online](https://jsbin.com/zoquru/4/edit?html,css,output) (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it\'s playing.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 00.  (xx) ------------------------------->
@@ -4260,46 +4190,32 @@ See this** **[example online](https://jsbin.com/zoquru/4/edit?html,css,output)�
 This example uses the pseudo CSS class :hover in order to track the mouseover event. On mouseover, it uses a CSS transition property that interpolates the changes in the scale and orientation of the video element (done using a transform CSS property).
 
 The corresponding HTML source code is:
-
-1.  \<video **id=\"w3devCampusVideo\"** autoplay controls\>
-
+```
+1.  \<video <b>id=\"w3devCampusVideo\"</b> autoplay controls\>
 2.  
-
 3.       \<source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
-
 4.               type=video/webm\>
-
 5.       \<source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
-
 6.               type=video/ogg\>
-
 7.       \<source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
-
 8.               type=video/mp4\>
-
 9.  \</video\>
+```
 
 \... and the CSS source code is as follows:
-
+```
 1.  #w3devCampusVideo {
-
 2.      width: 300px;
-
-3.      **transition: all 0.5s ease-in-out;**
-
+3.      <b>transition: all 0.5s ease-in-out;</b>
 4.  }
-
 5.   
-
-6.  #w3devCampusVideo**:hover** {
-
+6.  #w3devCampusVideo</b>:hover</b> {
 7.      width:400px;
-
 8.      transform:rotate(-5deg);
-
 9.  }
+```
 
-#### Fullscreen video that resizes and maintains ratios
+<h4>Fullscreen video that resizes and maintains ratios</h4>
 
 This is a trendy way of displaying videos.
 
@@ -4312,70 +4228,48 @@ Example #1: with a regular video
 Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 72.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image072.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-![](./images/image072.png){width="6.5in" height="2.0680555555555555in"}
 
 Here is the HTML code. It\'s really simple, just notice the \<body onload=\"init();\"\> which calls the JavaScript init() function right after the page is loaded.
-
-1.  \<!DOCTYPE html\>
-
-2.  \<html lang=\"en\"\>
-
-3.  \<head\>
-
-4.      \<meta charset=\"utf-8\"\>
-
-5.      \<title\>Full width video like PayPal site\</title\>
-
-6.  \</head\>
-
-7.  \<body onload=\"init();\"\>
-
-8.      \<video id=\"myVideo\" autoplay\>
-
-9.        \<source
-
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.      <meta charset="utf-8">
+5.      <title>Full width video like PayPal site</title>
+6.  </head>
+7.  <body onload="init();">
+8.      <video id="myVideo" autoplay>
+9.        <source
 10.           src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
-
-11.           type=video/webm\>
-
-12.       \<source
-
+11.           type=video/webm>
+12.       <source
 13.           src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
-
-14.           type=video/ogg\>
-
-15.       \<source
-
+14.           type=video/ogg>
+15.       <source
 16.           src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
-
-17.           type=video/mp4\>
-
-18.     \</video\>
-
-19. \</body\>
+17.           type=video/mp4>
+18.     </video>
+19. </body>
+```
 
 Here is the CSS (remove margins, remove padding, hide parts that could overflow from the \<body\>):
-
+```
 body {
-
     margin:0;
-
     padding:0;
-
     overflow:hidden;
-
 }
-
+```
 And now the JavaScript code:
-
+```
 > var video;
 >
 >  
@@ -4403,12 +4297,21 @@ And now the JavaScript code:
 >    };
 >
 > }
+```
 
-##### **Example #2: with a YouTube video**
+<h4><b>Example #2: with a YouTube video</b></h4>
 
 Full width, resizable, borderless YouTube video. To do this: just 100% standard CSS + DOM manipulation using JavaScript.
 
-![](./images/image073.png){width="5.0in" height="1.564636920384952in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 73.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image073.png?raw=true"
+   alt=""
+   width="50%">
+&nbsp;
+<br/>
 
 The CSS and JavaScript codes for this example are exactly the same as in Example #1.
 
@@ -4419,18 +4322,17 @@ The CSS and JavaScript codes for this example are exactly the same as in Exam
 In this example, the video does not rescale; it\'s just cropped if the browser window is resized. Enlarge your browser and you\'ll see a man with a phone on the right. Resize your browser and you\'ll see only part of the video.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 74.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image074.png?raw=true"
    alt=""
-   width="35%">
+   width="50%">
 &nbsp;
 <br/>
-![](./images/image074.png){width="5.0in" height="1.5854702537182852in"}
 
-**CSS code:**
-
+<h4>CSS code:</h4>
+```
 > body {
 >
 >   margin:0;
@@ -4450,13 +4352,14 @@ In this example, the video does not rescale; it\'s just cropped if the browser w
 >   height:auto;
 >
 > }
+```
 
 2.  Full screen video with CSS effects
 
 This time the video is zoomed in so that it\'s much bigger than the browser\'s window. When we resize the browser, the part of the video that is visible adapts itself. It\'s not \"real resize\" of the video. Try this [example and read the explanation in this article by Dudley Storey](https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video).
 
-HTML code:
-
+<h4>HTML code:</h4>
+```
 > \<!DOCTYPE html\>
 >
 > \<html lang=\"en\"\>
@@ -4500,9 +4403,10 @@ HTML code:
 > \</body\>
 >
 > \</html\>
+```
 
-**CSS code:**
-
+<h4>CSS code:</h4>
+```
 > html, body{
 >
 >     color:white;
@@ -4552,6 +4456,7 @@ HTML code:
 >     transform:translateX(-50%) translateY(-50%);
 >
 > }
+```
 
 The trick here is that:
 
@@ -4562,15 +4467,14 @@ The trick here is that:
 Full screen video that resizes and keeps its ratio, using the viewport units.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 75.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image075.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-![](./images/image075.png){width="6.5in" height="2.061111111111111in"}
 
 This time we obtain the same result as with the first example that used JavaScript and a resize event. The video resizes correctly and keeps its ratio.
 
@@ -4602,7 +4506,7 @@ Let\'s use the same video to compare the different approaches again:
 
 Resizing the browser window shows that #1 (JavaScript) and #3 (viewport units) behave in the same way: the width or height of the video always fills the window (whichever is smaller), and we always see the whole video.
 
-**Conclusion**: we can get full size video without JavaScript by using viewport units (vw and vh), unless we need to support some old browsers (see their [current support on CanIUse](https://caniuse.com/#feat=viewport-units)).
+<b>Conclusion</b>: we can get full size video without JavaScript by using viewport units (vw and vh), unless we need to support some old browsers (see their [current support on CanIUse](https://caniuse.com/#feat=viewport-units)).
 
 Setting the video to 100% width and height results in different behavior:
 
@@ -4618,23 +4522,21 @@ Setting the video to 100% width and height results in different behavior:
 
 The \<video\> and \<audio\> elements have methods, properties/attributes and events that can be manipulated with JavaScript. Using the DOM API, it\'s possible to manipulate an audio or video element as a JavaScript object that has:
 
--   **Methods** for controlling the behavior, such as play(), pause(), etc.
+-   <b>Methods</b> for controlling the behavior, such as play(), pause(), etc.
 
--   **Properties** (duration, current position, etc.), either in read/write mode (such as volume), or in read-only mode (such as encoding, duration, etc.)
+-   <b>Properties</b> (duration, current position, etc.), either in read/write mode (such as volume), or in read-only mode (such as encoding, duration, etc.)
 
--   **Events** generated during the life cycle of the element that can be processed using JavaScript callbacks. It is also possible to send events to control the video player
+-   <b>Events</b> generated during the life cycle of the element that can be processed using JavaScript callbacks. It is also possible to send events to control the video player
 
 The set of properties/attributes/methods of the \<audio\> and \<video\> elements is called an \"API\" (Application Programming Interface). For example, we will speak here of the \"media API\" to talk about the associated API.
 
 Like any HTML element, the \<video\> element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a \<video\> element:
-
+```
 1.  var video = document.createElement(\'video\');
-
 2.  video.src = \'video.mp4\';
-
 3.  video.controls = true;
-
 4.  document.body.appendChild(video);
+```
 
 This will create a complete video player for the file \"video.mp4\", with control buttons, and will add it to the \<body\> element of the page.
 
@@ -4643,17 +4545,17 @@ This will create a complete video player for the file \"video.mp4\", with contro
 Please look at this interesting example:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 76.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image076.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
 ![](./images/image076.png){width="6.5in" height="2.061111111111111in"}Note that in order to play the video, you must click on the \"vid.play()\" text. To pause it, you click on the \"vid.pause()\" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
 
-**Conclusion**:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let\'s see a little more of what we can do using the JavaScript API of the \<video\> element (it will be an identical approach for the \<audio\> element, since it shares the same API by a very small margin).
+<b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let\'s see a little more of what we can do using the JavaScript API of the \<video\> element (it will be an identical approach for the \<audio\> element, since it shares the same API by a very small margin).
 
 <h3 id="ch2-2-6">2.2.6 The JavaScript API</h3>
 
@@ -4668,26 +4570,25 @@ The list of properties can be found at the [W3C HTML5 Video Events and API](htt
 Try the [direct link](https://www.w3.org/2010/05/video/mediaevents.html), and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 77.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image077.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-![](./images/image077.png){width="6.5in" height="4.313194444444444in"}
 
 #### Here is a table that shows the most interesting methods, properties, and events provided by the \<video\> element API
 
 We provide this as a quick reminder - keep in mind that the [complete list](https://html.spec.whatwg.org/multipage/media.html#mediaevents) is much longer! 
 
   ------------------------------------------------------------------------
-  **Methods**        **Properties**                   **Events**
+  <b>Methods</b>        <b>Properties</b>                   <b>Events</b>
   ------------------ -------------------------------- --------------------
-  **play()**         **currentSrc**                   **play**
+  <b>play()</b>         <b>currentSrc</b>                   <b>play</b>
 
-  **pause()**        **currentTime**                  **pause**
+  <b>pause()</b>        <b>currentTime</b>                  <b>pause</b>
 
   load()             startTime (readonly)             progress
 
@@ -4709,13 +4610,13 @@ We provide this as a quick reminder - keep in mind that the [complete list](htt
 
                      volume                           
 
-                     **height**                       
+                     <b>height</b>                       
 
-                     **width**                        
+                     <b>width</b>                        
 
-                     **seekable (readonly)**          
+                     <b>seekable (readonly)</b>          
 
-                     **played (readonly)**            
+                     <b>played (readonly)</b>            
   ------------------------------------------------------------------------
 
 In the next pages, let\'s see, through a set of examples, how to use these most important properties, methods, and events\...
@@ -4749,56 +4650,32 @@ Try it online:
 &nbsp;
 
 ##### Source code extract:
-
-\<video id=\"vid\" controls\>
-
-\<source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
-
-         type=video/webm\>
-
-\...
-
-\</video\>
-
-\<p\>Example of custom controls:\</p\>
-
-\<button onclick=\"playVideo();\" style=\"cursor: pointer;\"\>Play\</button\>
-
- 
-
-\<button onclick=\"pauseVideo();\" style=\"cursor: pointer;\"\>Pause\</button\>
-
- 
-
-\<button onclick=\"rewindVideo();\" style=\"cursor: pointer;\"\>
-
-       Back to beginning\</button\>
-
-\<script\>
-
-    vid = document.querySelector(\"#vid\");
-
+```
+<video id="vid" controls>
+<source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
+         type=video/webm>
+...
+</video\>
+<p>Example of custom controls:</p>
+<button onclick="playVideo();" style="cursor: pointer;">Play</button>
+<button onclick="pauseVideo();" style="cursor: pointer;">Pause</button>
+<button onclick="rewindVideo();" style="cursor: pointer;">
+       Back to beginning</button>
+<script>
+    vid = document.querySelector("#vid");
     function playVideo() {
-
        vid.play();
-
     }
-
-    function pauseVideo() {
-
+    function pauseVideo() {
        vid.pause();
-
     }
-
     function rewindVideo() {
-
        vid.currentTime = 0;
-
     }
+</script>
+```
 
-\</script\>
-
- **Explanations:**
+<b>Explanations:</b>
 
 -   *Lines 7, 9 and 11*: we add a click listener to each button, in order to call a JavaScript function when each button is clicked.
 
@@ -4950,72 +4827,42 @@ This example also shows how to handle failures. See the code and play with this
 &nbsp;
 
 Below is a piece of code for handling errors during video playback:
-
+```
 \...
-
 vid.addEventListener(\'error\', function(evt) {
-
     logEvent(evt,\'red\');
-
 }, false);
-
 \...
-
 function logEvent(evt, color) {
-
     switch (evt.type) {
-
        \...
-
        case \'error\':
-
            var error = document.querySelector(\'video\').error;
-
            switch (error.code) {
-
              case error.MEDIA_ERR_ABORTED:
-
                 note.innerHTML = \"fetching aborted at the user\'s request\";
-
                 break;
-
              case error.MEDIA_ERR_NETWORK:
-
                 note.innerHTML = \"a network error caused the browser to stop fetching the media\";
-
                 break;
-
              case error.MEDIA_ERR_DECODE:
-
                 note.innerHTML = \"an error occurred while decoding the media\";
-
                 break;
-
              case error.MEDIA_ERR_SRC_NOT_SUPPORTED:
-
                 note.innerHTML = \"the media indicated by the src
-
                                   attribute was not suitable\";
-
                 break;
-
              default:
-
                 note.innerHTML = \"an error occurred\";
-
                 break;
-
            }
-
            break;
-
        }
-
- \...
-
+...
 }
+```
 
-### Example #3: how to display a percentage of buffering when using a slow connection
+<h4>Example #3: how to display a percentage of buffering when using a slow connection</h4>
 
 See the [example online](https://jsbin.com/xororol/3/edit?html,output) here too.
 
@@ -5033,92 +4880,52 @@ Note that on mobile phones, the video does not start until the user presses the 
 As explained by the [Apple Developer Web site](https://developer.apple.com/):  \"The buffered property is a TimeRanges object: an array of start and stop times, not a single value. Consider what happens if the person watching the media uses the time scrubber to jump forward to a point in the movie that hasn't loaded yet---the movie stops loading and jumps forward to the new point in time, then starts buffering again from there. So the buffered property can contain an array of discontinuous ranges. The example simply seeks the end of the array and reads the last value, so it actually shows the percentage into the movie duration for which there is data. \"
 
 Source code extract:
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-  \<head\>
-
-    \<title\>JavaScript Progress Monitor\</title\>
-
-    \<meta charset=\"utf-8\"/\>
-
-    \<script\>
-
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Progress Monitor</title>
+    <meta charset="utf-8"/>
+    <script>
       function getPercentProg() {
-
-          var myVideo = document.getElementsByTagName(\'video\')\[0\];
-
+          var myVideo = document.getElementsByTagName('video')[0];
           var endBuf = myVideo.buffered.end(0);
-
-          var soFar = parseInt(((endBuf / myVideo.duration) \* 100));
-
-          document.getElementById(\"loadStatus\").innerHTML = soFar + \'%\';
-
+          var soFar = parseInt(((endBuf / myVideo.duration) * 100));
+          document.getElementById("loadStatus").innerHTML = soFar + '%';
       }
-
       // Will be called as soon as the page is ready on desktop computer,
-
       // Only when a user clicks on play control or image on mobile
-
       function myAutoPlay() {
-
-          var myVideo = document.getElementsByTagName(\'video\')\[0\];
-
+          var myVideo = document.getElementsByTagName('video')[0];
           myVideo.play();
-
       }
-
       function addMyListeners(){
-
-          var myVideo = document.getElementsByTagName(\'video\')\[0\];
-
-          myVideo.addEventListener(\'progress\', getPercentProg, false);
-
+          var myVideo = document.getElementsByTagName('video')[0];
+          myVideo.addEventListener('progress', getPercentProg, false);
           // Calls autoplay only if the device is adapted
+          myVideo.addEventListener('canplaythrough\', myAutoPlay, false);
+     }
+  </script>
+</head>
+<body onload="addMyListeners()">
+    <h1>Check progression of buffering before playing a movie. Useful withy
+        slow connexion (3G, etc.)</h1>
+    <div>
+      <video controls>
+          <source src=https://html5doctor.com/demos/video-canvas-magic/video.webm
+                  type=video/webm>
+          <source src=https://html5doctor.com/demos/video-canvas-magic/video.ogg  
+                  type=video/ogg>
+          <source src=https://html5doctor.com/demos/video-canvas-magic/video.mp4
+                  type=video/mp4>
+      </video>
+      <p id="loadStatus">Buffering...</p>
+    </div>
+</body>
+</html>
+```
 
-          myVideo.addEventListener(\'canplaythrough\', myAutoPlay, false);
-
-      }
-
-  \</script\>
-
-\</head\>
-
-\<body onload=\"addMyListeners()\"\>
-
-    \<h1\>Check progression of buffering before playing a movie. Useful withy
-
-        slow connexion (3G, etc.)\</h1\>
-
-    \<div\>
-
-      \<video controls\>
-
-          \<source src=https://html5doctor.com/demos/video-canvas-magic/video.webm
-
-                  type=video/webm\>
-
-          \<source src=https://html5doctor.com/demos/video-canvas-magic/video.ogg  
-
-                  type=video/ogg\>
-
-          \<source src=https://html5doctor.com/demos/video-canvas-magic/video.mp4
-
-                  type=video/mp4\>
-
-      \</video\>
-
-      \<p id=\"loadStatus\"\>Buffering\...\</p\>
-
-    \</div\>
-
-\</body\>
-
-\</html\>
-
-### Example #4: how to use SVG elements as external controllers
+<h4>Example #4: how to use SVG elements as external controllers</h4>
 
 This is the ultimate way of doing a real custom player: redesign your own controls using SVG shapes! This example (try it [online](https://www.w3.org/2010/Talks/0430-www2010-plh/video-player.xhtml)) is given \"as is\" for those of you who may be curious.
 
@@ -5145,80 +4952,70 @@ The WebVTT format used for describing a track file is also presented in this c
 
 ### Most of the major desktop browsers support HTML5 captioning
 
-Please check the[ browser support](https://caniuse.com/mdn-html_elements_track) related to the \<track\> element support by browsers.
+Please check thea href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the \<track\> element support by browsers.
 
 ### Some definitions
 
--   **closed captions **describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).
+-   <b>closed captions </b>describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).
 
--   **subtitles **are only for spoken words.
+-   <b>subtitles </b>are only for spoken words.
 
 The accessibility features of TV programs often propose both options for people with hearing deficiencies. 
 
 ### Typical use: add a subtitle/caption track to a \<video\> element
 
-**Important warning!!**
+<b>Important warning!!</b>
 
 The \<track\> element cannot be used with a file:// URL. Please use https:// and a Web server. Your server must use a special MIME format for the .vtt files: text/vtt;charset=utf-8 (set by default on most servers now).
 
 Examples of the lines to add to an Apache Web server:
-
-1.  \<Files mysubtitle.vtt\>
-
+```
+1.  <Files mysubtitle.vtt>
 2.  ForceType text/vtt;charset=utf-8
-
-3.  \</Files\>
+3.  </Files>
+```
 
 It is worth mentioning that most browsers work well with WebVTT, even if the MIME type is not defined.
 
 Here is an example of a video element that includes a \<track\> element in the .vtt (WebVTT) format (*line 9 *in the source code shown below):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 86.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image086.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-![](./images/image086.png){width="6.5in" height="2.0881944444444445in"}
 
 The example uses a \<track\> element to insert basic *captions* to the video: sounds and music are described, in addition to standard *subtitles* that correspond to what the different movie characters say.
 
-\<video height=\"272\" width=\"640\"
+```
+<video height="272" width="640"
+       poster="https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg"
+       <b>crossorigin="anonymous"</b>
+       controls>
+   <source src="https://mainline.i3s.unice.fr/mooc/sintel.mp4"
+           type="video/mp4">
+   <source src="https://mainline.i3s.unice.fr/mooc/sintel.webm"
+           type="video/webm">
+   <b><track src="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt"</b>
+<b>          kind="captions" label="Closed Captions" default></b>
+</video>
+```
 
-       poster=\"https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg\"
-
-       **crossorigin=\"anonymous\"**
-
-       controls\>
-
-   \<source src=\"https://mainline.i3s.unice.fr/mooc/sintel.mp4\"
-
-           type=\"video/mp4\"\>
-
-   \<source src=\"https://mainline.i3s.unice.fr/mooc/sintel.webm\"
-
-           type=\"video/webm\"\>
-
-   **\<track src=\"https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt\"**
-
-**          kind=\"captions\" label=\"Closed Captions\" default\>**
-
-\</video\>
-
-**Notes:**
+**Notes:</b>
 
 -   The \<track\> element at *line 9* has an attribute named kind that indicates the type of the track that is included. Possible values are: subtitles, captions, descriptions, chapters or metadata.
 
 ```
-<!-- -->
+
 ```
 -    The \<track\> element also has an attribute default that indicates that we want this track to be displayed by default when reading the video.
 
 ```
-<!-- -->
+
 ```
 -   We also used  an attribute named crossorigin that is necessary just to run this demo, as it is required by the server that hosts the video from this example (server = codepen.io, but as the video and .vtt files come from another origin -another server-, this attribute is necessary).
 
@@ -5228,37 +5025,24 @@ Multiple tracks are needed to support different langages, video captions for the
 
 Below is an example ([from the specification](https://html.spec.whatwg.org/multipage/media.html#the-track-element)) that includes multiple \<track\> elements (subtitles for three languages and captions only for English):
 
+```
 \<video src=\"brave.webm\"\>
-
    \<track kind=subtitles src=brave.en.vtt
-
           srclang=en
-
           label=\"English\"\>
-
    \<track kind=captions src=brave.en.hoh.vtt
-
           srclang=en
-
           label=\"English for the Hard of Hearing\"\>
-
    \<track kind=subtitles src=brave.fr.vtt
-
           srclang=fr
-
           lang=fr 
-
           label=\"Français\"\>
-
    \<track kind=subtitles src=brave.de.vtt
-
           srclang=de
-
           lang=de
-
           label=\"Deutsch\"\>
-
 \</video\>
+```
 
 Note the use of some new attributes in the \<track\> element:
 
@@ -5292,7 +5076,7 @@ In the interactive example presented before, we used a file called sintel-capti
 
    \...
 
-   \<track src=\"https://mainline.i3s.unice.fr/mooc/**sintel-captions.vtt**\"
+   \<track src=\"https://mainline.i3s.unice.fr/mooc/**sintel-captions.vtt</b>\"
 
           kind=\"captions\" label=\"Closed Captions\" default\>
 
@@ -5374,7 +5158,7 @@ This format is rather simple, but we still recommend reading [this excellent ar
 
 Each \"element\" in this file has a starting and ending time, plus a value (the text that will be displayed), followed by a blank line (blank lines are separators between elements).
 
-**Each element is called \"a cue\"**, and may optionally have an ID that will be useful when using the track element JavaScript API, in particular the getCueById() method of TextTrack objects.
+**Each element is called \"a cue\"</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, in particular the getCueById() method of TextTrack objects.
 
 Example of a .vtt file with numeric IDs:
 
@@ -5508,135 +5292,83 @@ In this section, we will look at different possibilities for styling and positio
 
 The example below shows how we can do that (play the video for 40s, look at the positions and styles of the subtitles and captions, look at the HTML):
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 91.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image091.png?raw=true"
    alt=""
-   width="35%">
+   width="60%">
 &nbsp;
 <br/>
-
-![](./images/image091.png){width="6.0in" height="1.9147419072615923in"}
 
 The WebVTT file is shown below. Notice the new attributes that have been added on the right end of the duration values:
 
+```
 1.  WEBVTT
-
 2.  
-
 3.  00:00:01.000 \--\> 00:00:05.000
-
 4.  These captions test some features of the WebVTT formats
-
 5.  
-
 6.  00:00:06.000 \--\> 00:00:10.000** line:5%**
-
 7.  This cue is positioned at the top of the video
-
 8.  
-
 9.  00:00:11.000 \--\> 00:00:15.000** position:5% align:start**
-
 10. This cue is positioned at the left side of the video.
-
 11. 
-
 12. 00:00:16.000 \--\> 00:00:20.000 position:95%** align:end**
-
 13. And this one ate the right side.
-
 14. 
-
 15. 00:00:21.000 \--\> 00:00:25.000** size:33%**
-
 16. This cue is only a third of the width of the video, hence the multiple line breaks.
-
 17. 
-
 18. 00:00:26.000 \--\> 00:00:30.000
-
 19. This cue contains **\<b\>**bold**\</b\>** text.
-
 20. 
-
 21. 00:00:31.000 \--\> 00:00:35.000
-
 22. This cue contains **\<i\>**italic**\</i\>** text.
-
 23. 
-
 24. 00:00:36.000 \--\> 00:00:40.000
-
 25. This cue contains **\<u\>** **\</u\>** text.
-
 26. 
-
 27. 00:00:41.000 \--\> 00:00:45.000
-
 28. This cue contains **\<b\>\<i\>\<u\>**bold, italic, underlined**\</u\>\</i\>\</b\>** text.
-
 29. 
-
 30. 00:00:46.000 \--\> 00:00:50.000
-
 31. **\<c.myclass\>**This cue contains the class \"myclass\".
-
 32. Browsers that support ::cue CSS should make it red.**\</c\>**
-
 33. 
-
 34. 00:00:51.000 \--\> 00:00:55.000
-
 35. The following cue contains two voices.
-
 36. Tarzan should be blue and Jane green.
-
 37. 
-
 38. 00:00:56.000 \--\> 00:01:00.000
-
 39. \<v Tarzan\>Me Tarzan\...
-
 40. \<v Jane\>That would make me Jane!
-
 41. 
-
 42. bigtext
-
 43. 00:01:01.000 \--\> 00:01:05.000
-
 44. This cue has a unique id.
-
 45. Using CSS, its font size should be 150%.
-
 46. 
-
 47. 00:01:06.000 \--\> 00:01:10.000
-
 48. The \<00:01:06.333\>text \<00:01:06.666\>in \<00:01:07.000\>this \<00:01:07.333\>cue \<00:01:07.666\>should \<00:01:08.000\>grow
-
 49. \<00:01:08.333\>one \<00:01:08.666\>word \<00:01:09.000\>at \<00:01:09.333\>a \<00:01:09.666\>time
-
 50. 
-
 51. 00:01:11.000 \--\> 00:01:15.000
-
 52. That\'s it! For now\...
+```
 
-### How to position the subtitles
+<h4>How to position the subtitles</h4>
+
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 92.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image092.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-
-![](./images/image092.png){width="6.5in" height="6.856944444444444in"}
 
 The video example tests nearly all the possibilities for positioning subtitles/captions, styling (using HTML element wrapping with \<b\>, \<i\>,  etc.), voicing (subtitles corresponding to different characters will be displayed in different colors) and CSS styling.
 
@@ -21667,10 +21399,10 @@ display: inline-block;
 </body>
 </html>
 ```
-
--   *Lines 5 and 6* are the required files to use the Leaflet API (this is the official name of the OpenStreetMaps API),
-
--   *Line 10* is the \<div\> container that will be used to display the interactive map
+<ul>
+<li><i>Lines 5 and 6</i> are the required files to use the Leaflet API (this is the official name of the OpenStreetMaps API),</li>
+<li><i>Line 10</i> is the \<div\> container that will be used to display the interactive map.</li>
+</ul>
 
 <h4>JavaScript part:</h4>
 
@@ -21707,11 +21439,11 @@ function error() {
 }
 ```
 
--   *Line 6* uses the [Geolocation API](https://www.w3.org/TR/geolocation-API/) to get the current position, in case of success it calls the success function, passing the location as parameter,
-
--   *Lines 13 and 14* show how to get the longitude and latitude properties from the location,
-
--   The rest is a basic use of the Leaflet API. Notice at *line 17* that \'map\' is the id of the \<div\> from the HTML part of the code.
+<ul>
+<li><i>Line 6</i> uses the [Geolocation API](https://www.w3.org/TR/geolocation-API/) to get the current position, in case of success it calls the success function, passing the location as parameter,
+<li><i>Lines 13 and 14></i> show how to get the longitude and latitude properties from the location,</li>
+<li>The rest is a basic use of the Leaflet API. Notice at <i>line 17</i> that \'map\' is the id of the \<div\> from the HTML part of the code.</li>
+</ul>
 
 <h3>6.4.6 Reverse geocoding</h3>
 
