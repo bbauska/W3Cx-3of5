@@ -1896,7 +1896,7 @@ We used a float:right CSS rule to put the tag cloud on the right\... In a foll
 &nbsp;
 <br/>
 
-<h4>Finally, we added a \<footer\> element (<i>lines 12-14* below) after the tag cloud definition, to display a page footer:</h4>
+<h4>Finally, we added a \<footer\> element (<i>lines 12-14</i> below) after the tag cloud definition, to display a page footer:</h4>
 
 ```
 <html>
@@ -3454,50 +3454,32 @@ This information is not visible to humans: it is pure *semantic information*. 
 22. \</section\>
 
 We can also add another embedded data item in the middle, such as the person\'s address:
-
-1.  \...
-
-2.  \</dl\>
-
+```
+1.  ...
+2.  </dl>
 3.  
-
-4.  \<!\-- SURFACE ADDRESS GOES HERE \--\>
-
+4.  <!-- SURFACE ADDRESS GOES HERE -->
 5.  
-
-6.  \<dd [itemprop=]\"address\"[ itemscope]
-
-7.      itemtype=\"https://schema.org/PostalAddress\"\>
-
-8.      \<span [itemprop=]\"streetAddress\"\>10 promenade des anglais\</span\>\<br\>
-
-9.      \<span [itemprop=]\"addressLocality\"\>Nice\</span\>,
-
-10.     \<span [itemprop=]\"addressRegion\"\>Alpes maritimes, France\</span\>
-
-11.     \<span [itemprop=]\"postalCode\"\>06410\</span\>\<br\>
-
-12.     \<span [itemprop=]\"addressCountry\"[ itemscope]
-
-13.           [itemtype=]\"https://schema.org/Country\"\>
-
-14.          \<span [itemprop=]\"name\"\>France\</span\>
-
-15.     \</span\>
-
-16. \</dd\>
-
+6.  <dd [itemprop=]"address"[ itemscope]
+7.      itemtype="https://schema.org/PostalAddress">
+8.      <span [itemprop=]"streetAddress">10 promenade des anglais</span><br>
+9.      <span [itemprop=]"addressLocality">Nice</span>,
+10.     <span [itemprop=]"addressRegion">Alpes maritimes, France</span>
+11.     <span [itemprop=]"postalCode">06410</span><br>
+12.     <span [itemprop=]"addressCountry"[ itemscope]
+13.           [itemtype=]"https://schema.org/Country"\>
+14.          <span [itemprop=]"name">France</span>
+15.     </span>
+16. </dd>
 17. 
-
-18. \<h1\>My different online public accounts\</h1\>
-
+18. <h1>My different online public accounts</h1>
 19. 
-
-20. \...
+20. ...
+```
 
 In the following sections, we look more closely at the itemprop, itemscope and itemtype attributes.
 
-### Data that can be processed, organized, structured, or presented in a given context
+<h4>Data that can be processed, organized, structured, or presented in a given context</h4>
 
 Different use cases:
 
@@ -3523,25 +3505,27 @@ Different use cases:
 
 -   [Chapter from Mark Pilgrim\'s book about microdata](https://diveinto.html5doctor.com/extensibility.html), very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.
 
-### 1.5.2 Testing Tools
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- Chapter 1-5-2. testing tools (xx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch1-5-2">1.5.2 Testing Tools</h3>
 
-### Introduction
+<h4>Introduction</h4>
 
 After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 58.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image058.jpeg?raw=true"
+   alt="Picture of diverse tools used by workers"
+   width="20%">
 &nbsp;
 <br/>
-![Picture of diverse tools used by workers](./images/image058.jpeg){width="2.0in" height="2.0in"}
 
 One of the most popular resources for testing microdata (as well as microformats and RDFa) is this [Google page about understanding how structured data works](https://developers.google.com/search/docs/guides/intro-structured-data). This page contains a link to a structured data testing tool that you can use to see how Google recognizes the semantic data you embed in your HTML code.
 
-### Testing a real interactive example with an \"about page\" for Michel Buffa
+<h4>Testing a real interactive example with an \"about page\" for Michel Buffa</h4>
 
 Let\'s have a look now at a (small) example of an about page. It renders as a very simple paragraph that explains who Michel Buffa is\... But we embedded Microdata, so it\'s interesting to see how a search engine sees it, and how it may produce \"augmented search results\".
 
@@ -3639,35 +3623,36 @@ The [Live Microdata Web site](https://foolip.org/microdatajs/live/)  is a bit 
 
 And the JSON view of the microdata:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 62.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image062.jpeg?raw=true"
+   alt="JSON view of the microdata"
+   width="40%">
 &nbsp;
 <br/>
-![JSON view of the microdata](./images/image062.jpeg){width="4.0in" height="4.4615365266841644in"}
 
-### 1.5.3 Adding Microdata to an HTML Page
+<!------------------------------------------------------------------------------------------------>
+<!-------------------- Chapter 1-5-3. adding microdata to an html page (xx) ---------------------->
+<!------------------------------------------------------------------------------------------------>
+<ch id="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
 
-### Basic steps
+<h4>Basic steps</h4>
 
 Adding microdata to an HTML page is a really simple task and requires only three attributes: itemscope, itemtype  and itemprop.
 
-#### 1 - Define a container element by adding an itemscope attribute
+<h4>1 - Define a container element by adding an itemscope attribute</h4>
 
 First, you need to add an itemscope attribute to an HTML element. This will define the \"global object\" for which we will define properties. This element can be of different types that we will describe later, but for now let us keep looking at the same example we used in previous sections:
-
-1.  \<section itemscope itemtype=\"https://schema.org/Person\"\>
-
-2.  \...
-
-3.  \</section\>
+```
+1.  <section itemscope itemtype="https://schema.org/Person">
+2.  ...
+3.  </section>
+```
 
 We will look at the itemtype attribute later. Now that we have defined a global wrapper object/element (a Person in this case), we can  add properties inside this element to define the first name, last name, etc.
 
-#### 2 - Specify the vocabulary used for your microdata with the itemtype attribute of the container element
+<h4>2 - Specify the vocabulary used for your microdata with the itemtype attribute of the container element</h4>
 
 HTML5 proposes semantic elements for representing sections, articles, headers, etc, but it does not propose any specific elements or attributes to describe an address, a product, a person, etc.
 
@@ -3681,79 +3666,58 @@ We notice that one property, such as the address of a Person, may use another vo
 
 If you are a developer and if you are familiar with object oriented programming, think of properties as class attributes and think of vocabularies as classes.
 
-**Vocabularies are meant to be shared**
+<b>Vocabularies are meant to be shared</b>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 00.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image063.jpeg?raw=true"
+   alt="Picture wish words \'time to share\'"
+   width="25%">
 &nbsp;
 <br/>
-![Picture wish words \'time to share\'](./images/image063.jpeg){width="2.6145833333333335in" height="1.7395833333333333in"}
 
 If one of the existing vocabularies available at the schema.org Web site fits your needs, you should reuse it, as the most popular vocabularies are becoming de facto standards and will be taken into account by Web crawlers, browsers, and browser extensions.
 
 However, if you do not find a vocabulary corresponding to your needs, keep in mind that anyone can define a microdata vocabulary and start embedding custom properties in their own Web pages. You need to define a namespace and put a description of your vocabulary in a Web page that has the name of your vocabulary.
 
-#### 3 - Add properties using the itemprop attribute in HTML elements inside the container
+<h4>3 - Add properties using the itemprop attribute in HTML elements inside the container</h4>
 
-**Basics:**
+<b>Basics:</b>
 
 Now that you have defined a container element, you may add properties to the HTML inside:
-
-1.  \<section itemscope itemtype=\"https://schema.org/Person\"\>
-
-2.       \<h1\>Contact Information\</h1\>
-
-3.       \<dl\>
-
-4.           \<dt\>Name\</dt\>
-
-5.           \<dd **[itemprop=\"name\"]**\>Michel Buffa\</dd\>
-
-6.           \<dt\>Position\</dt\>
-
-7.           \<dd\>\<span **[itemprop=\"jobTitle\"]**\>
-
+```
+1.  <section itemscope itemtype="https://schema.org/Person">
+2.       <h1>Contact Information</h1>
+3.       <dl>
+4.           <dt>Name</dt>
+5.           <dd [itemprop="name"]>Michel Buffa</dd>
+6.           <dt>Position</dt>
+7.           <dd><span [itemprop="jobTitle"]>
 8.                 Professor/Researcher/Scientist
-
-9.               \</span\> for
-
-10.              \<span **[itemprop=\"affiliation\"]**\>University of Nice,
-
+9.               </span> for
+10.              <span [itemprop="affiliation"]>University of Nice,
 11.                     France
-
-12.              \</span\>
-
-13.           \</dd\>
-
-14.      \</dl\>
-
-15.      \<h1\>My different online public accounts\</h1\>
-
-16.      \<ul\>
-
-17.          \<li\>\<a href=\"https://www.twitter.com/micbuffa\"
-
-18.             ** [itemprop=\"url\"]**\>Twitter profile\</a\>\</li\>
-
-19.          \<li\>\<a href=\"https://www.blogger.com/micbuffa\"
-
-20.              **[itemprop=\"url\"]**\>Michel Buffa\'s blog\</a\>\</li\>
-
-21.      \</ul\>
-
-22. \</section\>
+12.              </span>
+13.           </dd>
+14.      </dl>
+15.      <h1>My different online public accounts</h1>
+16.      <ul>
+17.          <li><a href="https://www.twitter.com/micbuffa"
+18.              [itemprop="url"]>Twitter profile</a></li>
+19.          <li><a href="https://www.blogger.com/micbuffa"
+20.              [itemprop="url\"]>Michel Buffa's blog</a></li>
+21.      </ul>
+22. </section>
+```
 
 In this example, the container is a \<section\> that corresponds to a Person (we have one clue here: the name of the vocabulary given by the itemtype attribute), and each property defined inside this section is identified by the value of the itemprop attribute of sub-elements.
 
 The line: 
-
-1.  \<dd itemprop=\"name\"\>Michel Buffa\</dd\>
-
+```
+1.  <dd itemprop="name"Michel Buffa</dd\>
+```
 \...defines a property called \"name\" that has a value of \"Michel Buffa\" (the text value between the opening and closing tags of the \<dd\> element).
 
 Nesting microdata items
@@ -14229,7 +14193,7 @@ You can try an interactive example here:
 
 In the example, try different values for the miterLimit property. You\'ll see that the way the corners are rendered changes at values around 2 and 3.
 
-### 4.1.1 Video Intro -- Module 4
+<h3 id="ch4-1-1">4.1.1 Video Intro -- Module 4</h3>
 
 1:17 video explaining animation.
 
@@ -16785,7 +16749,7 @@ In that course, you will learn:
 &nbsp;
 <br/>
 
-<h3>5.1.1 Video Intro - Module 5</h3>
+<h3 id="ch5-1-1">5.1.1 Video Intro - Module 5</h3>
 
 Congratulations! You made it to module 5.
 
@@ -17420,79 +17384,76 @@ The object returned to the input event handler has a useful property named valu
 
 While if we enter a date in the future:
 
-![date in the future: bad](./images/image236.jpeg){width="3.0in" height="1.482557961504812in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 236.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image236.jpeg?raw=true"
+   width="30%"
+   alt="Date in the future: bad" />
+</p>
 
 Extract from source code:
-
+```
 1.  \<body\>
-
 2.  \<label for=\"birthDate\"\>Enter your birth date: \</label\>\<p\>
-
 3.  **\<input type=\"date\" id=\"birthDate\" \>**
-
 4.  \<p\>
-
 5.  You picked: \<span id=\"pickedDate\"\>\</span\>\<p\>
-
 6.  \<span id=\"pastFuture\"\>\</span\>
-
 7.  \</p\>
-
 8.  \<script\>
-
 9.  var field = document.querySelector(\"#birthDate\");
-
 10. var result = document.querySelector(\"#pickedDate\");
-
 11. var pastFuture = document.querySelector(\"#pastFuture\");
-
 12. **field.oninput **= function(evt) {
-
 13. **var date = this.value;**
-
 14. pickedDate.innerHTML = \"\<b\>\"+date+\"\</b\>\";
-
 15. **if(date.valueAsDate \<= new Date())** {
-
 16. pastFuture.style.color = \'green\';
-
 17. pastFuture.innerHTML = \"\<b\>Date in the past, ok!\</b\>\"
-
 18. } else {
-
 19. pastFuture.style.color = \'red\';
-
 20. pastFuture.innerHTML = \"\<b\>Date in the future, you\'re not even born!\</b\>\"
-
 21. }
-
 22. }
-
 23. \</script\>
-
 24. \</body\>
+```
 
-*Lines 17-23* show how we can compare the date picked in the calendar widget with the current date. Note that we can compare any given dates using JavaScript. To check that the chosen date is before 2000 we would do this:
-
-> if(this.valueAsDate \<= new Date(2000,1,1)) {
->
-> \...
->
+<i>Lines 17-23</i> show how we can compare the date picked in the calendar widget with the current date. Note that we can compare any given dates using JavaScript. To check that the chosen date is before 2000 we would do this:
+```
+> if(this.valueAsDate <= new Date(2000,1,1)) {
+> ...
 > }
->
-> \<input type=\"datetime\"\>, \"week\", \"month\", \"datetime-local\", etc.
+> <input type="datetime">, "week", "month", "datetime-local", etc.
+```
 
 The HTML5 specification indicates that we can use \<input type=\"date\"\> and \<input type=\"time\"\> while for some years (before the specification became a frozen standard in October 2014), other variants were also present, such as type=datetime, datetime-local, month and week.
 
 [Here is an interactive example at JSBin](https://jsbin.com/supope/1/edit) where you can change the type of date chooser and try all the different possible values for the type attribute of date pickers.
 
 Some screenshots from Opera desktops and Safari IOS:
+```
+<input type=\"time\"\>:
+```
 
-\<input type=\"time\"\>:
-
-![time](./images/image237.png){width="3.03125in" height="0.4270833333333333in"}
-
-![input type=time safari IOS](./images/image238.png){width="2.0in" height="3.0in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 237.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image237.png?raw=true"
+   width="30%"
+   alt="Time" />
+</p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 238.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image238.png?raw=true"
+   width="20%"
+   alt="Input type=time safari IOS" />
+</p>
 
 \<input type=\"datetime\"\>
 <!------------------------------------------------------------------------------------------------>
@@ -17514,11 +17475,11 @@ Some screenshots from Opera desktops and Safari IOS:
 </p>
 
 ```
-\<input type=\"datetime-local\"\>
+<input type="datetime-local">
 ![datetime-local example](./images/image241.png){width="2.0in" height="1.8679866579177602in"}
-\<input type=\"week\"\>:
+<input type="week">:
 ![week](./images/image242.jpeg){width="4.0in" height="1.2696576990376203in"}
-\<input type=\"month\"\>:
+<input type=\"month\">:
 ![month](./images/image243.jpeg){width="4.0in" height="1.4222222222222223in"}
 ![input type=month safari IOS](./images/image244.png){width="2.0in" height="3.0in"}
 ```
@@ -17530,8 +17491,14 @@ Let\'s study 4 input types: email\", \"tel\", \"URL\" and \"search\".
 \<input type=\"email\"\>
 
 This input type is relatively straightforward to use. In mobile applications, this new input type pops up a keyboard layout adapted to email input. Note the \"@\" key, the \".\" key, etc.
-
-![contextual mobile keyboard for entering an email address](./images/image245.jpeg){width="2.0in" height="3.0in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 245.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image245.jpeg?raw=true"
+   width="20%"
+   alt="contextual mobile keyboard for entering an email address" />
+</p>
 
 This input type is very interesting as it provides default validation behaviors:
 
@@ -17545,7 +17512,14 @@ Typical use:
 
 [Online example at CodePen](https://codepen.io/w3devcampus/pen/aWXKWR)
 
-![](./images/image246.png){width="3.0in" height="1.9131353893263343in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 246.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image246.png?raw=true"
+   width="30%"
+   alt="" />
+</p>
 
 Try it on your browser:                         Enter your email: 
 
@@ -17574,13 +17548,35 @@ Note the CSS rule that turns the background color of the email input field to p
 
 This input field is really useful on smartphones and tablets, as it makes the browser pop up a keyboard layout suitable for entering phone numbers:
 
-![mobile keyboard 1 for input type=tel](./images/image247.png){width="2.0in" height="1.6131386701662291in"}![other mobile keyboard for input type=tel](./images/image248.png){width="2.0in" height="1.4700853018372704in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 247.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image247.png?raw=true"
+   width="20%"
+   alt="Mobile keyboard 1 for input type=tel" />
+</p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 248.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image248.png?raw=true"
+   width="20%"
+   alt="Other mobile keyboard 1 for input type=tel" />
+</p>
 
 This input type is often used with the new placeholder and pattern attributes that are detailed in another section of this course. It is supported by all recent major Web browsers, on mobile devices and desktops.
 
 [Online example on CodePen](https://codepen.io/w3devcampus/pen/Njozvd)
 
-![](./images/image249.png){width="3.0in" height="1.9131353893263343in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 249.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image249.png?raw=true"
+   width="30%"
+   alt="" />
+</p>
 
 Try it in your browser (we used the same CSS for changing the background-color when the input value is invalid):
 
@@ -17612,7 +17608,14 @@ Enter a telephone number: 
 
 This input field is really useful on smartphones and tablets, as it makes the browser pop up a keyboard layout suitable for entering URLs:
 
-![mobile keyboard for entering URLs](./images/image250.png){width="2.0in" height="1.6934306649168853in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 250.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image250.png?raw=true"
+   width="20%"
+   alt="Mobile keyboard for entering URLs" />
+</p>
 
 This field is also compatible with *the validation API* (more on this in another section).
 
@@ -20907,14 +20910,13 @@ All these methods take as a unique parameter a File object (for example, a fil
 ```
 
 The above code shows how a file can be read as text. The function is called, for example by clicking on the button corresponding to a \<input type=\"file\" id=\"file\"  onchange=\"readFileContent(this.files)\"/\>, and by choosing a file.
-
--   *Line 12* is executed first, and asks the Reader object to read the file f as text. As this takes some time, it\'s an asynchronous operation that will be executed by the browser in the background. When the file is read, the reader.onload callback function is called.
-
--   *Line 4* is executed after *line 12*, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.
-
+<ul>
+<li><i>Line 12</i> is executed first, and asks the Reader object to read the file f as text. As this takes some time, it\'s an asynchronous operation that will be executed by the browser in the background. When the file is read, the reader.onload callback function is called.</li>
+<li><i>Line 4</i> is executed after *line 12*, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
+</ul>
 Try a variation of the above code in your browser, that displays the file content in a text area. This example is detailed further in the course. Click and select a text file below:
 
-Choose a text file:\
+Choose a text file:
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 313.  (xxx) ----------------------------->
@@ -20927,15 +20929,15 @@ Choose a text file:\
 
 In the following pages, we look at different examples that read file contents as text, dataURL and binary.
 
-<h3>6.3.6 Read file content as text</h3>
+<h3 id="ch6-3-6">6.3.6 Read file content as text</h3>
 
 Let\'s start by reading a pure text file
 
-##### **Examples**
+<h4>Examples</h4>
 
-##### Example #1: read a single file\'s content
+<h4>Example #1: read a single file\'s content</h4>
 
-[Example at JSBin](https://jsbin.com/xewemi/edit?html,output), or try it below in your browser:
+<a href="https://jsbin.com/xewemi/edit?html,output">Example at JSBin</a>, or try it below in your browser:
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 314.  (xxx) ----------------------------->
@@ -20987,9 +20989,9 @@ Let\'s start by reading a pure text file
 
 This example is the one at the end of the previous page. This time, we show the complete source code above. Remember that the instruction at *line 29* is executed first, then when the file is read, the browser will call asynchronously the onload callback at *line 20*.
 
-##### Example #2: a variation of the previous one, using multiple files
+<h4>Example #2: a variation of the previous one, using multiple files</h4>
 
-[Example on JSBin](https://jsbin.com/zaheyu/edit?html,output), or try it below in your browser.\
+<a href="https://jsbin.com/zaheyu/edit?html,output">Example on JSBin</a>, or try it below in your browser.
 This time, please select multiple text files (using shift for multiple selection):
 
 <!------------------------------------------------------------------------------------------------>
@@ -21005,26 +21007,26 @@ This time, please select multiple text files (using shift for multiple selection
 <h4>Source code:</h4>
 
 ```
-1.  \<!DOCTYPE html\>
-2.  \<html lang=\"en\"\>
-3.  \<head\>
-4.  \<meta charset=\"utf-8\"\>
-5.  \<title\>Example of use of FileReader with a text file\</title\>
-6.  \</head\>
-7.  \<body\>
-8.  \<label for=\"files\"\>Choose multiple text files:\</label\>
-9.  \<input type=\"file\" id=\"files\"
-10.        multiple onchange=\"readFilesAndDisplayAsText(this.files);\"/\>\<br/\>
-11. \<p\>
-12. \<textarea rows=30 cols=50 id=\"filesContent\"\>\</textarea\>
+1.  <!DOCTYPE html\>
+2.  <html lang=\"en\"\>
+3.  <head\>
+4.  <meta charset=\"utf-8\"\>
+5.  <title\>Example of use of FileReader with a text file\</title\>
+6.  </head\>
+7.  <body\>
+8.  <label for="files">Choose multiple text files:</label>
+9.  <input type="file" id="files"
+10.        multiple onchange="readFilesAndDisplayAsText(this.files);"/><br/>
+11. <p>
+12. <textarea rows=30 cols=50 id="filesContent"></textarea>
 13. 
-14. \<script\>
-15. var filesContent = document.getElementById(\"filesContent\");
+14. <script>
+15. var filesContent = document.getElementById("filesContent");
 16. 
 17. function readFilesAndDisplayAsText(files) {
-18.      console.log(\"dans read files\");
+18.      console.log("dans read files");
 19.      // Loop through the FileList
-20.      for (var i = 0, f; f = files\[i\]; i++) {
+20.      for (var i = 0, f; f = files[i]; i++) {
 21. 
 22.          var reader = new FileReader();
 23. 
@@ -21038,34 +21040,33 @@ This time, please select multiple text files (using shift for multiple selection
 31. 
 32. function addOnLoadListener(reader, name) {
 33.      // Add an onload listener that will be able to print the name of the
-34.      // file\...
+34.      // file...
 35.      reader.onload = function(e) {
-36.          filesContent.value += \"###### READING FILE \" + name + \" ######\";
+36.          filesContent.value += "###### READING FILE " + name + " ######";
 37.          filesContent.value += e.target.result;
 38.      };
 39. }
-40. \</script\>
-41. \</body\>
-42. \</html\>
+40. </script>
+41. </body>
+42. </html>
 ```
 
-##### **Explanations**:
+<h4>Explanations</h4>
 
 This example is similar to the previous one, except that this time we read multiple files.
 
-*Line 20:* this is the for loop that will iterate on the files object passed as parameter by the onchange listener declaration at *line 10.*
+<i>Line 20:</i> this is the for loop that will iterate on the files object passed as parameter by the onchange listener declaration at *line 10.*
 
-*Line 25:* instead of declaring the onload listener with a reader.onload =\... directly in the loop, this time we preferred to write a separate function that will do this. This technique is useful when you want the listener to work with extra variables computed in the loop (in our case, the name of the file).
+<i>Line 25:</i> instead of declaring the onload listener with a reader.onload =\... directly in the loop, this time we preferred to write a separate function that will do this. This technique is useful when you want the listener to work with extra variables computed in the loop (in our case, the name of the file).
 
 <h4>About charter encoding</h4>
 
 Note that you can optionally indicate the encoding of the file you are going to read (default is UTF-8):
-
-1.  reader.readAsText(file, \'UTF-8\');
-
-2.  reader.readAsText(file, \'ISO-8859-1\');
-
-3.  \...
+```
+1.  reader.readAsText(file, 'UTF-8');
+2.  reader.readAsText(file, 'ISO-8859-1');
+3.  ...
+```
 
 <h3 id="ch6-3-7">6.3.7 Read file content as binary</h3>
 
@@ -21073,11 +21074,11 @@ This method is rarely used, except for loading \"raw\" binary data. For images y
 
 readAsArrayBuffer is often used for purposes such as reading audio samples that should be loaded in memory and played using the WebAudio API, or for loading textures that you will use with WebGL for 3D animations.
 
-##### Example: read a local audio file and play it with the WebAudio API
+<h4>Example: read a local audio file and play it with the WebAudio API</h4>
 
 The WebAudio API is useful for reading audio sound samples from memory (no streaming), and has been designed for music application and games. This example shows how a local audio file can be read and played directly in the browser, without the need for a server!
 
-[Example on JSBin](https://jsbin.com/xepexuy/1/edit?html,output) (does not work on IE, as it does not support the WebAudio API). We could not embed it here on the edX platform as it prevents code that uses Ajax to run in its pages.
+<a href="https://jsbin.com/xepexuy/1/edit?html,output">Example on JSBin</a> (does not work on IE, as it does not support the WebAudio API). We could not embed it here on the edX platform as it prevents code that uses Ajax to run in its pages.
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 316.  (xxx) ----------------------------->
@@ -21089,8 +21090,7 @@ The WebAudio API is useful for reading audio sound samples from memory (no strea
 &nbsp;
 <br/>
 
-Source code extract:
-
+<h4>Source code extract:</h4>
 ```
 > // User selects file. Read it as an ArrayBuffer and pass to the API.
 > var fileInput = document.querySelector(\'input\[type=\"file\"\]\');
@@ -21105,18 +21105,16 @@ Source code extract:
 ```
 
 <b>Explanations:</b>
+<ul>
+<li><i>Line 2:</i>we get a pointer to the file selector, the variable fileInput.</li>
+<li><i>Line 4:</i>we define a change listener. In this example, we use an anonymous function directly included in the listener definition (the listener is the function(e) {\...}).</li>
+<li><i>Line 11:</i>when a user chooses a file, the listener will be executed. Line 11 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.</li>
+<li><i>Line 7:</i>is the onload callback, executed when the file content is loaded in memory. We pass the file content to the initSound function (see JSBin example for complete source code) that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio works only with uncompressed audio formats in memory), and to play it.</li>
+</ul>
 
--   <i>Line 2:</i> we get a pointer to the file selector, the variable fileInput.
+<h3 id="ch6-3-8">6.3.8 Read file content as dataURL</h3>
 
--   *Line 4: *we define a change listener. In this example, we use an anonymous function directly included in the listener definition (the listener is the function(e) {\...}).
-
--   *Line 11: *when a user chooses a file, the listener will be executed. Line 11 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.
-
--   *Line 7 *is the onload callback, executed when the file content is loaded in memory. We pass the file content to the initSound function (see JSBin example for complete source code) that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio works only with uncompressed audio formats in memory), and to play it.
-
-<h3>6.3.8 Read file content as dataURL</h3>
-
-##### What is a data URL?
+<h4>What is a data URL?</h4>
 
 A data URL is a URL that includes type and content at the same time. It is useful, for example,  for in-lining images or videos in the HTML of a Web page (on mobile devices, this may speed up the loading of the page by reducing the number of HTTP requests).
 
@@ -21161,7 +21159,7 @@ And here is the result:
 
 This dataURL format enables file content to be stored in a base64 format (as a string), and adds the MIME type specification of the content. The dataURL can therefore store a file as a URL readable with modern browsers. It is becoming more commonly used on the Web, especially for mobile applications, as inlining images reduces the number of HTTP requests and makes the Web page load faster.
 
-You will find lots of Web sites and tools for generating dataURL from files, such as [Image to Data URI converter](https://ezgif.com/image-to-datauri) (screenshot below):
+You will find lots of Web sites and tools for generating dataURL from files, such as <a href="https://ezgif.com/image-to-datauri">Image to Data URI converter</a> (screenshot below):
 
 <!------------------------------------------------------------------------------------------------>
 <!------------ 319. Online service that converts uploaded images to data uris... ----------------->
@@ -21195,7 +21193,7 @@ Example of HTML5 logo embedded in a document without any real image, just a data
 
 This first example is useful for forms that allow the user to select one or more pictures. Before sending the form, you might want to get a preview of the pictures in the HTML page. The reader.readAsDataUrl method is used for that.
 
-[Example on JSBin](https://jsbin.com/laseye/edit?html,output) or try it below in your browser:
+<a href="https://jsbin.com/laseye/edit?html,output">Example on JSBin</a> or try it below in your browser:
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 332. preview of selected images --------------------------------->
@@ -21247,14 +21245,13 @@ This first example is useful for forms that allow the user to select one or more
 ```
 
 <h4>Explanations:</h4>
-
--   *Line 35:* starts the reading of the file f. When f is read, the onload callback will be called.
-
--   *Lines 25-31:* we build, using the DOM API, a \<span class=\"thumb\"\>\...\</span\> and inside we add an \<img src=the data url\> element with its src attribute equal to the url of the image that has been read (the image content as dataURL is in e.target.result). Finally, at *line 31*, we insert the span in the document before the current children of the \<output id=\"list\"\> element (declared at *line 5*).
-
+<ul>
+<li><i>Line 35:</i> starts the reading of the file f. When f is read, the onload callback will be called.</li>
+<li><i>Lines 25-31:</i> we build, using the DOM API, a \<span class=\"thumb\"\>\...\</span\> and inside we add an \<img src=the data url\> element with its src attribute equal to the url of the image that has been read (the image content as dataURL is in e.target.result). Finally, at *line 31*, we insert the span in the document before the current children of the \<output id=\"list\"\> element (declared at *line 5*).</li>
+</ul>
 <h4>Example #2: read a single local image file and use it with drawImage in a canvas</h4>
 
-[Try it on JSBin](https://jsbin.com/miciqu/edit?html,output)
+<a href="https://jsbin.com/miciqu/edit?html,output">Try it on JSBin</a>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 322.  (xxx) ----------------------------->
