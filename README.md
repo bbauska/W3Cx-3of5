@@ -464,9 +464,9 @@ Web pages are connected using <a href="https://www.lifewire.com/hypertext-trans
 
 Plain and simple, the internet allows access to the World Wide Web. Without it, we have no way of accessing the thousands of websites out there. For most online needs, however, the web is the easiest to use. Each serves an important purpose.
 
-<h4>Why Accessibility is Important</h4>
+<h4 id="cha-2">Why Accessibility is Important</h4>
 
-<i>The power of the Web is in its universality.</ki>
+<i>The power of the Web is in its universality.</i>
 <i>Access by everyone regardless of disability is an essential aspect.</i>
 <b>Tim Berners-Lee, W3C Director and inventor of the World Wide Web</b>
 
