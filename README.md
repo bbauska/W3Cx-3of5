@@ -6699,9 +6699,14 @@ A trick consists in creating, on the fly, an invisible link with a download at
 <h3 id="ch3-1-1">3.1.1 HTML5 Graphics</h3>
 
 <h3 id="ch3-2-1">3.2.1 About JavaScript and HTML5</h3>
-
-
-![JavaScript logo](./images/image115.png){width="1.0in" height="1.0in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 115. javascript logo (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image115.png?raw=true"
+   width="10%"
+   alt="JavaScript logo" />
+</p>
 
 HTML5 is composed of new elements, but it also comes with many JavaScript APIs for controlling video and sound, drawing and animating things in the new \<canvas\> element, for offline applications, persistence, geolocation, orientation, etc.
 
@@ -6765,24 +6770,58 @@ The H1 element, for example, does not exist in the Document Object Model, and ha
 The only line of code we have is console.log(\"Some JavaScript code has been executed\");
 
 This means \"display in the JavaScript console the message\...\". If we open the console tab provided by jsbin.com in a dedicated tab (that redirects all console.log() messages), and re-execute the page (just type a space at the end of a line, this will re-render the page and display the message in the console), we see the message in the console tab, as well as in the dev. tools console. This is illustrated by the image below:
-
-![java script console view 1](./images/image116.jpeg){width="5.0in" height="2.65625in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 116. javascript console view (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image116.jpeg?raw=true"
+   width="50%"
+   alt="JavaScript console view" />
+</p>
 
 It is also possible to use the \"real dev. tool console\", and for this I recommend running the application in a single window, not in the JS Bin editor. Press the black arrow on the top right of the output window - this will render the page as a standalone Web page, then press *F12*. You should see:
 
-![view of the javascript console](./images/image117.jpeg){width="4.0in" height="3.3867125984251967in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 117. view of the javascript console (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image117.jpeg?raw=true"
+   width="40%"
+   alt="View of the JavaScript console" />
+</p>
 
 Ok, now, let\'s make an error: change console.log() into conso**lll**e.log(). Let\'s see what happens:
 
-![view of the javascript console](./images/image118.jpeg){width="5.0in" height="4.207420166229221in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 118. view of the javascript console (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image118.jpeg?raw=true"
+   width="50%"
+   alt="View of the JavaScript console" />
+</p>
 
 And if we run it standalone and use the dev. tool console:
 
-![View of the JavaScript console](./images/image119.jpeg){width="5.0in" height="2.508445975503062in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 119. view of the javascript console (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image119.jpeg?raw=true"
+   width="50%"
+   alt="View of the JavaScript console" />
+</p>
 
 And if we click on the line number in the right, the dev. tool shows the source code centered on the line that caused the error:
 
-![View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc.](./images/image120.jpeg){width="5.0in" height="4.183226159230096in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 120. view of the javascript console (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image120.jpeg?raw=true"
+   width="50%"
+   alt="View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc." />
+</p>
 
 Without such tools, debugging JavaScript code is impossible. So you need to look at some basic tutorials on how to use the dev. tools of your browsers, since they differ from one another in the way they work - although the principles remain the same.
 
@@ -6792,6 +6831,14 @@ Some of you may not be used to \"asynchronous programming\", \"callbacks\" etc. 
 
 <h3 id="ch3-2-2">3.2.2 The \<canvas\> Element</h3>
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 120. view of the javascript console (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image120.jpeg?raw=true"
+   width="50%"
+   alt="View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc." />
+</p>
 ![canvas element logo](./images/image121.jpeg){width="1.0in" height="1.0in"}
 
 The \<canvas\> tag was introduced into the HTML specification around 2010 as a \"Flash killer.\" At the time, popular video games used this proprietary technology and only a few browsers supported it. The HTML canvas allows drawing and animation at 60 frames per second, in 2D or 3D.
@@ -6810,19 +6857,40 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 
 [Foot Chinko](https://www.ravalmatic.com/portfolio/footchinko/) is one popular free HTML5 games:
 
-![foot chinko one of the best html5 2D game of 2015](./images/image122.jpeg){width="4.0in" height="5.304965004374453in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 122. foot chinko one of the best html5 2D game of 2015 (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image122.jpeg?raw=true"
+   width="40%"
+   alt="Foot chinko one of the best html5 2D game of 2015" />
+</p>
 
 #### Example #2
 
 Lots of data visualization tools and JavaScript libraries use the HTML5 canvas element for [Data visualization](http://www.creativebloq.com/design-tools/data-visualization-712402):
 
-![html5 data visualization](./images/image123.jpeg){width="5.0in" height="3.3043471128608926in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 123. html5 data visualization (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image123.jpeg?raw=true"
+   width="50%"
+   alt="html5 data visualization" />
+</p>
 
 #### Example #3
 
 A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), that runs at 60 frames per second in an HTML5 canvas element:
 
-![A version of the game Galaxian that runs at 60 frames/s in a canvas.](./images/image124.jpeg){width="5.0in" height="3.1185859580052493in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image124.jpeg?raw=true"
+   width="50%"
+   alt="A version of the game Galaxian that runs at 60 frames/s in a canvas." />
+</p>
 
 Performance is  good and animation is generally very smooth, since most Web browsers (mobile and desktop) support hardware acceleration.
 
@@ -6864,17 +6932,38 @@ We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.or
 
 1.  As a [PDF file](https://courses.edx.org/assets/courseware/v1/4b7360cab7f3bf439c26782ec47cf7a8/asset-v1:W3Cx+HTML5.1x+2T2020+type@asset+block/Infopgraphic-CanvasCheatSheet-Final2.pdf), this canvas cheatsheet:
 
-![snapshot of an HTML Canvas cheatsheet from skilled.com](./images/image125.png){width="6.5in" height="5.470138888888889in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 125. snapshot of an HTML Canvas cheatsheet from skilled.com (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image125.png?raw=true"
+   width="65%"
+   alt="snapshot of an HTML Canvas cheatsheet from skilled.com." />
+</p>
 
 2.  Another resource, as an [HTML file](https://simon.html5.org/dump/html5-canvas-cheat-sheet.html):
 
-![Snapshot of a canvas sheet API](./images/image126.png){width="6.5in" height="4.809722222222222in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 126. snapshot of a Canvas cheatsheet API (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image126.png?raw=true"
+   width="65%"
+   alt="Snapshot of a Canvas cheatsheet API." />
+</p>
 
 <h3 id="ch3-2-5">3.2.5 Coordinate System</h3>
 
 The coordinate system used for drawing in canvases is similar to the one used by many drawing APIs like Java2D: the (0 , 0) is in the top left corner while the X axis is going to the right and the Y axis to the bottom, as  shown in the following picture:
 
-![coordinate system](./images/image127.png){width="5.46875in" height="4.53125in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 127. coordinate system (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image127.png?raw=true"
+   width="55%"
+   alt="Coordinate system" />
+</p>
 
 -   **X** axis is horizontal, directed to the right 
 
