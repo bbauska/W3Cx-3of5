@@ -886,7 +886,7 @@ Here is the CSS for the \<figcaption\> element we have used in the example (we
 5.  }
 ```
 
-<h4>Use an &lt;aside&gt; element to display a tag cloud on the \... side of the main content</h4>
+<h4>Use an &lt;aside&gt; element to display a tag cloud on the ... side of the main content</h4>
 
 After the long \<section\> element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, \"aside\"! This is done using - you already guessed it - an \<aside\> element:
 
@@ -1032,7 +1032,7 @@ Example of a blog post defined as a long \<article\>, that is in turn cut into 
       <h2>Introduction</h2>
     </section>
     <section id="id1part2">
-      <h2\>My travel to India</h2>
+      <h2>My travel to India</h2>
     </section>
     <section id="id1part3">
       <h2>Return to France</h2>
@@ -1060,7 +1060,7 @@ Yes you can, in case you would like to propose some navigation links with each b
        <ul>
            <li><a href="...">Next post</a></li>
            <li><a href="...">Previous post</a></li>
-           <li><a href="...">Contact author</a>\</li>
+           <li><a href="...">Contact author</a></li>
        </ul>
    </nav>
    <p>Content...</p>
@@ -1272,7 +1272,7 @@ Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning
 ```
 <body>
     <h1>Example Blog</h1>
-    <section\>
+    <section>
        <header>
           <h2>Blog post of April 2020</h2>
           <p>Posted by Michel Buffa...</p>
@@ -13121,217 +13121,123 @@ The complete example code that produces the result shown at the beginning of thi
 
 ![](./images/image181.png){width="6.5in" height="2.0701388888888888in"}
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>A multiple image loader\</title\>
-
-\<style\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>A multiple image loader</title>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var canvas, ctx;
-
 // List of images to load, we used a JavaScript object instead of
-
 // an array, so that named indexes (aka properties)
-
-// can be used -\> easier to manipulate
-
+// can be used -> easier to manipulate
 var imagesToLoad = {
-
-flowers: \'https://i.ibb.co/4NN9Sgn/flowers.jpg\',
-
-lion: \'https://i.ibb.co/3NyqKnY/lion.jpg\',
-
-blackAndWhiteLys: \'https://i.ibb.co/VNLVpcL/final.jpg\',
-
+flowers: 'https://i.ibb.co/4NN9Sgn/flowers.jpg',
+lion: 'https://i.ibb.co/3NyqKnY/lion.jpg',
+blackAndWhiteLys: 'https://i.ibb.co/VNLVpcL/final.jpg',
 tiledFloor:
-
-\'https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg\'
-
+'https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg{
 };
-
 function loadImages(imagesToBeLoaded, drawCallback) {
-
 var imagesLoaded = {};
-
 var loadedImages = 0;
-
 var numberOfImagesToLoad = 0;
-
 // get num of sources
-
 for(var name in imagesToBeLoaded) {
-
 numberOfImagesToLoad++;
-
 }
-
 for(var name in imagesToBeLoaded) {
-
-imagesLoaded\[name\] = new Image();
-
-imagesLoaded\[name\].onload = function() {
-
-if(++loadedImages \>= numberOfImagesToLoad) {
-
+imagesLoaded[name] = new Image();
+imagesLoaded[name].onload = function() {
+if(++loadedImages >= numberOfImagesToLoad) {
 drawCallback(imagesLoaded);
-
 } // if
-
 }; // function
-
-imagesLoaded\[name\].src = imagesToBeLoaded\[name\];
-
+imagesLoaded\[name].src = imagesToBeLoaded[name];
 } // for
-
 } // function
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 loadImages(imagesToLoad, function(imagesLoaded) {
-
-patternFlowers = ctx.createPattern(imagesLoaded.flowers, \'repeat\');
-
-patternLion = ctx.createPattern(imagesLoaded.lion, \'repeat\');
-
-patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, \'repeat\');
-
-patternFloor = ctx.createPattern(imagesLoaded.tiledFloor, \'repeat\');
-
+patternFlowers = ctx.createPattern(imagesLoaded.flowers, 'repeat');
+patternLion = ctx.createPattern(imagesLoaded.lion, 'repeat');
+patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, 'repeat');
+patternFloor = ctx.createPattern(imagesLoaded.tiledFloor, 'repeat');
 drawRectanglesWithPatterns();
-
 });
-
 }
-
 function drawRectanglesWithPatterns() {
-
 ctx.fillStyle=patternFloor;
-
 ctx.fillRect(0,0,200,200);
-
 ctx.fillStyle=patternLion;
-
 ctx.fillRect(200,0,200,200);
-
 ctx.fillStyle=patternFlowers;
-
 ctx.fillRect(0,200,200,200);
-
 ctx.fillStyle=patternBW;
-
 ctx.fillRect(200,200,200,200);
-
 }
-
-\</script\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height=\"400\"\>
-
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\</body\>
+</canvas>
+</body>
+```
 
 Define the list of images to be loaded:
 
+```
 1.  // List of images to load, we used a JavaScript object instead of
-
 2.  // an array, so that named indexes (aka properties)
-
 3.  // can be used -\> easier to read
-
 4.  var imagesToLoad = {
-
 5.       flowers: \'https://i.ibb.co/4NN9Sgn/flowers.jpg\',
-
 6.       lion: \'https://i.ibb.co/3NyqKnY/lion.jpg\',
-
-7.       blackAndWhiteLys: \'https://i.ibb.co/VNLVpcL/final.jpg\',
-
+7.       blackAndWhiteLys: \'https://i.ibb.co/VNLVpcL/final.jpg',
 8.       tiledFloor:
-
-9.        \'https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg\'
-
+9.        'https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg'
 10. };
+```
 
 Notice that instead of using a traditional array, we defined this list as a JavaScript object, with properties whose names will be easier to manipulate (flowers, lion, tiledFloor, etc.).
 
 ### The image loader function
 
+```
 1.  function loadImages(imagesToBeLoaded, drawCallback) {
-
 2.       var imagesLoaded = {};
-
 3.       var loadedImages = 0;
-
 4.       var numberOfImagesToLoad = 0;
-
 5.  
-
 6.       // get num of images to load
-
 7.       for(var name in imagesToBeLoaded) {
-
 8.           numberOfImagesToLoad++;
-
 9.       }
-
 10. 
-
 11.      for(var name in imagesToBeLoaded) {
-
-12.          imagesLoaded\[name\] = new Image();
-
+12.          imagesLoaded[name] = new Image();
 13. 
-
-14.          imagesLoaded\[name\].onload = function() {
-
-15.              if(++loadedImages \>= numberOfImagesToLoad) {
-
+14.          imagesLoaded[name].onload = function() {
+15.              if(++loadedImages >= numberOfImagesToLoad) {
 16.                  drawCallback(imagesLoaded);
-
 17.              } // if
-
 18.          }; // function
-
-19.          imagesLoaded\[name\].src = imagesToBeLoaded\[name\];
-
+19.          imagesLoaded[name].src = imagesToBeLoaded[name];
 20.       } // for
-
 21. } // function
+```
 
 **Explanations:**
 
@@ -13343,21 +13249,16 @@ Notice that instead of using a traditional array, we defined this list as a Java
 
 ### Example of use of this loader
 
+```
 1.  loadImages(imagesToLoad, function(imagesLoaded) {
-
-2.      patternFlowers = ctx.createPattern(imagesLoaded.flowers, \'repeat\');
-
-3.      patternLion    = ctx.createPattern(imagesLoaded.lion, \'repeat\');
-
-4.      patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, \'repeat\');
-
-5.      patternFloor   = ctx.createPattern(imagesLoaded.tiledFloor, \'repeat\');
-
+2.      patternFlowers = ctx.createPattern(imagesLoaded.flowers, 'repeat');
+3.      patternLion    = ctx.createPattern(imagesLoaded.lion, 'repeat');
+4.      patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, 'repeat');
+5.      patternFloor   = ctx.createPattern(imagesLoaded.tiledFloor, 'repeat');
 6.  
-
 7.      drawRectanglesWithPatterns();
-
 8.  });
+```
 
 **Explanations:**
 
@@ -13367,39 +13268,35 @@ Notice that instead of using a traditional array, we defined this list as a Java
 
 -   *Line 7*: then we call a function that will draw the rectangles. 
 
-Here is the function:
-
+<h4>Here is the function:</h4>
+```
 1.  function drawRectanglesWithPatterns() {
-
 2.      ctx.fillStyle=patternFloor;
-
 3.      ctx.fillRect(0,0,200,200);
-
 4.  
-
 5.      ctx.fillStyle=patternLion;
-
 6.      ctx.fillRect(200,0,200,200);
-
 7.  
-
 8.      ctx.fillStyle=patternFlowers;
-
 9.      ctx.fillRect(0,200,200,200);
-
 10.  
-
 11.     ctx.fillStyle=patternBW;
-
 12.     ctx.fillRect(200,200,200,200);
-
 13. }
+```
 
 ### 3.5.6 Drawing Shadows
 
 ### Context properties to draw with shadows
 
-![a green shadowed rectangle](./images/image182.jpeg){width="2.5625in" height="1.4583333333333333in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 182.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image182.jpeg?raw=true"
+   width="25%"
+   alt="A green shadowed rectangle" />
+</p>
 
 There are 4 properties of the canvas context that are useful for indicating that we want to draw shapes with shadows:
 
@@ -13415,49 +13312,39 @@ There are 4 properties of the canvas context that are useful for indicating that
 
 #### Example #1: simple shadows
 
-![](./images/image183.png){width="6.5in" height="2.0770833333333334in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 183.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image183.png?raw=true"
+   width="65%"
+   alt="image183.png" />
+</p>
 
-JS
-
+<h4>JS</h4>
+```
 var canvas, ctx;
-
 function init() {
-
-canvas = document.getElementById(\'myCanvas\');
-
-ctx = canvas.getContext(\'2d\');
-
+canvas = document.getElementById('myCanvas');
+ctx = canvas.getContext('2d');
 setShadow();
-
 // first green filled rectangle
-
-ctx.fillStyle = \"#22FFDD\"; // rectangle color
-
+ctx.fillStyle = "#22FFDD"; // rectangle color
 ctx.fillRect(20, 20, 200, 100);
-
 // second stroked rectangle
-
-ctx.strokeStyle = \"purple\"; // rectangle color
-
+ctx.strokeStyle = "purple"; // rectangle color
 ctx.lineWidth=10;
-
 ctx.strokeRect(20, 150, 200, 100);
-
 }
-
 function setShadow() {
-
-ctx.shadowColor = \"Grey\"; // color
-
+ctx.shadowColor = "Grey"; // color
 ctx.shadowBlur = 20; // blur level
-
 ctx.shadowOffsetX = 15; // horizontal offset
-
 ctx.shadowOffsetY = 15; // vertical offset
-
 }
+```
 
-HTML
+<h4>HTML</h4>
 
 ```
 <!DOCTYPE html>
@@ -13479,26 +13366,26 @@ Your browser does not support the canvas tag.</canvas>
 1.  var canvas, ctx;
 2.  
 3.  function init() {
-4.      canvas = document.getElementById(\'myCanvas\');
-5.      ctx = canvas.getContext(\'2d\');
+4.      canvas = document.getElementById('myCanvas');
+5.      ctx = canvas.getContext('2d');
 6.  
 7.      // call to a function that will set the 4 context properties for shadows
 8.      setShadow();
 9.      // all drawings that will occur will cast shadows
 10. 
 11.     // first green filled rectangle
-12.     ctx.fillStyle = \"#22FFDD\"; 
+12.     ctx.fillStyle = "#22FFDD"; 
 13.     ctx.fillRect(20, 20, 200, 100);
 14. 
 15.     // second stroked rectangle
-16.     ctx.strokeStyle = \"purple\"; 
+16.     ctx.strokeStyle = "purple"; 
 17.     ctx.lineWidth=10;
 18.     ctx.strokeRect(20, 150, 200, 100);
 19. }
 20.  
 21. // We define the 4 properties in a dedicated function, for clarity
 22. function setShadow() {
-23.     ctx.shadowColor = \"Grey\";    // color
+23.     ctx.shadowColor = "Grey";    // color
 24.     ctx.shadowBlur = 20;         // blur level
 25.     ctx.shadowOffsetX = 15;      // horizontal offset
 26.     ctx.shadowOffsetY = 15;      // vertical offset
@@ -13526,7 +13413,7 @@ Let\'s take a [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO), t
 6.  
 7.  // With path drawing you can change the context
 8.  // properties until a call to stroke() or fill() is performed
-9.  ctx.fillStyle = \"lightBlue\";
+9.  ctx.fillStyle = "lightBlue";
 10. 
 11. **// add shadows before drawing the filled circle**
 12. **addShadows();**
@@ -13536,7 +13423,7 @@ Let\'s take a [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO), t
 16. 
 17. // Prepare for the outline
 18. ctx.lineWidth = 5;
-19. ctx.strokeStyle = \"black\";
+19. ctx.strokeStyle = "black";
 20. 
 21. // draws the path AGAIN (the circle), this
 22. // time in wireframe
@@ -13544,10 +13431,10 @@ Let\'s take a [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO), t
 24. 
 25. // Notice we only once called context.arc()! And drew it twice
 26. // with different styles
-27. \...
+27. ...
 28.  
 29. function** addShadows()** {
-30.     ctx.shadowColor = \"Grey\"; // color
+30.     ctx.shadowColor = "Grey"; // color
 31.     ctx.shadowBlur = 20;      // blur level
 32.     ctx.shadowOffsetX = 15;   // horizontal offset
 33.     ctx.shadowOffsetY = 15;   // vertical offset
@@ -13556,8 +13443,14 @@ Let\'s take a [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO), t
 
 And here is the result:
 
-
-![](./images/image184.png){width="6.5in" height="2.0701388888888888in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 184.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image184.png?raw=true"
+   width="65%"
+   alt="image185.png" />
+</p>
 
 <h4>HTML</h4>
 
@@ -13596,7 +13489,7 @@ addShadows();
 ctx.fill();
 // Prepare for the outline
 ctx.lineWidth = 5;
-ctx.strokeStyle = \"black\";
+ctx.strokeStyle = "black";
 // draws AGAIN the path (the circle), this
 // time in wireframe
 ctx.stroke();
@@ -13645,218 +13538,140 @@ Correct version of the code:
 ```
 
 And here is the final result:
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 185.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image185.png?raw=true"
+   width="65%"
+   alt="image185.png" />
+</p>
 
-![](./images/image185.png){width="6.5in" height="2.0631944444444446in"}
-
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Unwanted shadows disappear- Example #2 bis\</title\>
-
-\<style\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Unwanted shadows disappear- Example #2 bis</title>
+<style>
 body {
-
 margin: 0px;
-
 padding: 0px;
-
 }
-
 #myCanvas {
-
 border: 1px solid #9C9898;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var canvas, ctx;
-
 window.onload = function(){
-
-canvas = document.getElementById(\"myCanvas\");
-
-ctx = canvas.getContext(\"2d\");
-
+canvas = document.getElementById("myCanvas");
+ctx = canvas.getContext("2d");
 var centerX = canvas.width / 2;
-
 var centerY = canvas.height / 2;
-
 var radius = 70;
-
 ctx.beginPath();
-
 // Add to the path a full circle (from 0 to 2PI)
-
-ctx.arc(centerX, centerY, radius, 0, 2\*Math.PI, false);
-
+ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
 // save the context before setting shadows and drawing the filled circle
-
 ctx.save();
-
 // With path drawing you can change the context
-
 // properties until a call to stroke() or fill() is performed
-
-ctx.fillStyle = \"lightBlue\";
-
+ctx.fillStyle = "lightBlue";
 // add shadows before drawing the filled circle
-
 addShadows();
-
 // Draws the filled circle in light blue
-
 ctx.fill();
-
 // restore the context to its previous saved state
-
 ctx.restore();
-
 // Prepare for the outline
-
 ctx.lineWidth = 5;
-
-ctx.strokeStyle = \"black\";
-
+ctx.strokeStyle = "black";
 // draws AGAIN the path (the circle), this
-
 // time in wireframe
-
 ctx.stroke();
-
 // Notice we called context.arc() only once ! And drew it twice
-
 // with different styles
-
 };
-
 function addShadows() {
-
-ctx.shadowColor = \"Grey\"; // color
-
+ctx.shadowColor = "Grey"; // color
 ctx.shadowBlur = 20; // blur level
-
 ctx.shadowOffsetX = 15; // horizontal offset
-
 ctx.shadowOffsetY = 15; // vertical offset
-
 }
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="578" height="200">
+</canvas>
+</body>
+</html>
+```
 
-\</script\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\" width=\"578\" height=\"200\"\>
-
-\</canvas\>
-
-\</body\>
-
-\</html\>
-
-### 3.5.7 Styling Lines
+<h3 id="ch3-5-7">3.5.7 Styling Lines</h3>
 
 Several context properties can be used to set the thickness of the shape outlines, the way line end caps are drawn, etc.
 
 They apply to all shapes that are drawn in path mode (lines, curves, arcs) and some also apply to rectangles.
 
-### Examples of line styles
+<h4>Examples of line styles</h4>
 
-#### Example #1: changing the line thickness
+<h4>Example #1: changing the line thickness</h4>
 
 We have seen this before. This is done by changing the value (in pixels) of the lineWidth property of the context:
-
-1.  **ctx.lineWidth = 10;** // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels
-
+```
+1.  <b>ctx.lineWidth = 10;</b> // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels
+```
 Here is a complete example where we draw with a lineWidth of 20 pixels:
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 186. image186.png (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image186.png?raw=true"
+   width="65%"
+   alt="image186.png" />
+</p>
 
-![](./images/image186.png){width="6.5in" height="2.0701388888888888in"}
-
-Source code:
-
-1.  \<!DOCTYPE html\>
-
-2.  \<html lang=\"en\"\>
-
-3.    \<head\>
-
-4.      \<meta charset=\"utf-8\"\>
-
-5.      \<title\>A simple example of lineWidth property use\</title\>
-
+<h4>Source code:</h4>
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.    <head>
+4.      <meta charset="utf-8">
+5.      <title>A simple example of lineWidth property use</title>
 6.  
-
-7.    \</head\>
-
-8.    \<body\>
-
-9.      \<canvas id=\"myCanvas\" width=\"500\"\>Your browser does not support the canvas tag.\</canvas\>
-
-10.     \<script\>
-
-11.       var canvas = document.getElementById(\'myCanvas\');
-
-12.       var ctx = canvas.getContext(\'2d\');
-
+7.    </head>
+8.    <body>
+9.      <canvas id="myCanvas" width="500">Your browser does not support the canvas tag.</canvas>
+10.     <script>
+11.       var canvas = document.getElementById('myCanvas');
+12.       var ctx = canvas.getContext('2d');
 13.  
-
 14. // first path
-
 15.       ctx.moveTo(20, 20);
-
 16.       ctx.lineTo(100, 100);
-
 17.       ctx.lineTo(100, 0);
-
 18.  
-
 19.  
-
 20. // second part of the path
-
 21.       ctx.moveTo(120, 20);
-
 22.       ctx.lineTo(200, 100);
-
 23.       ctx.lineTo(200, 0);
-
 24.  
-
 25. // indicate stroke color + draw first part of the path
-
-26.       ctx.strokeStyle = \"#0000FF\";
-
+26.       ctx.strokeStyle = "#0000FF";
 27. // Current line thickness is 20 pixels
-
 28.       ctx.lineWidth = 20;
-
 29.       ctx.stroke();
-
 30.  
-
 31. // Draws a rectangle
-
 32.       ctx.strokeRect(230, 10, 100, 100);
-
-33.       \</script\>
-
+33.       </script>
 34.  
-
-35.     \</body\>
-
-36. \</html\>
+35.     </body>
+36. </html>
+```
 
 #### Example #2: changing the end caps of a line
 
@@ -13868,29 +13683,25 @@ Try this:
 
 ![](./images/image188.png){width="6.5in" height="2.0701388888888888in"}
 
-HTML
+<h4>HTML</h4>
 
-\<!DOCTYPE html\>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Changing the end caps of a line - Example #2</title>
+</head>
 
-\<html lang=\"en\"\>
+<body>
 
-\<head\>
+<canvas id="myCanvas" width="500">Your browser does not support the canvas tag.</canvas>
 
-\<meta charset=\"utf-8\"\>
+<script>
 
-\<title\>Changing the end caps of a line - Example #2\</title\>
+var canvas = document.getElementById('myCanvas');
 
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\" width=\"500\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script\>
-
-var canvas = document.getElementById(\'myCanvas\');
-
-var ctx = canvas.getContext(\'2d\');
+var ctx = canvas.getContext('2d');
 
 // first path
 
@@ -13910,7 +13721,7 @@ ctx.lineTo(200, 30);
 
 // indicate stroke color + draw first part of the path
 
-ctx.strokeStyle = \"#0000FF\";
+ctx.strokeStyle = "#0000FF";
 
 // Current line thickness is 20 pixels
 
@@ -13918,7 +13729,7 @@ ctx.lineWidth = 20;
 
 // Try different values : butt, square, round
 
-ctx.lineCap = \"round\";
+ctx.lineCap = "round";
 
 ctx.stroke();
 
@@ -13926,11 +13737,11 @@ ctx.stroke();
 
 ctx.strokeRect(230, 10, 100, 100);
 
-\</script\>
+</script>
 
-\</body\>
+</body>
 
-\</html\>
+</html>
 
 Note that in this example, the rectangle is not affected. It has no line ends visible - all its sides meet. However, the next property we\'re going to look at will have an effect on rectangles!
 
@@ -13940,71 +13751,49 @@ The lineJoin property of the context indicates the way corners are rendered, w
 
 Try this:
 
-![](./images/image189.png){width="6.5in" height="2.0909722222222222in"}
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Setting the type of corner when two lines meet - Example #3\</title\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\" width=\"500\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script\>
-
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 189.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image189.png?raw=true"
+   width="65%"
+   alt="image189.png" />
+</p>
+```
+<!DOCTYPE html\>
+<html lang=\"en\"\>
+<head\>
+<meta charset=\"utf-8\"\>
+<title\>Setting the type of corner when two lines meet - Example #3\</title\>
+</head\>
+<body\>
+<canvas id=\"myCanvas\" width=\"500\"\>Your browser does not support the canvas tag.\</canvas\>
+<script\>
 var canvas = document.getElementById(\'myCanvas\');
-
 var ctx = canvas.getContext(\'2d\');
-
 // first path
-
 ctx.moveTo(20,20);
-
 ctx.lineTo(100, 100);
-
 ctx.lineTo(100,30);
-
 // second part of the path
-
 ctx.moveTo(120,20);
-
 ctx.lineTo(200, 100);
-
 ctx.lineTo(200,30);
-
 // indicate stroke color + draw first part of the path
-
 ctx.strokeStyle = \"#0000FF\";
-
 // Current line thickness is 20 pixels
-
 ctx.lineWidth = 20;
-
 // Try different values : miter(default), bevel, round
-
 ctx.lineJoin=\"round\";
-
 ctx.stroke();
-
 // Draws a rectangle
-
 ctx.strokeRect(230, 10, 100, 100);
+</script\>
+</body\>
+</html\>
+```
 
-\</script\>
-
-\</body\>
-
-\</html\>
-
-#### Example #4: specific case of lineJoin=\"miter\", the miterLimit property, a way to avoid looooooong corners!
+<h4>Example #4: specific case of lineJoin=\"miter\", the miterLimit property, a way to avoid looooooong corners!</h4>
 
 The miterLimit property value corresponds to the maximum miter length: the distance between the inner corner and the outer corner where two lines meet. When the angle of a corner between two lines gets smaller, the miter length grows and can become too long.
 
@@ -14014,7 +13803,14 @@ In order to avoid this situation, we can set the miterLimit property of the co
 
 You can try an interactive example here:
 
-![](./images/image191.png){width="6.5in" height="2.0770833333333334in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 191. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image191.png?raw=true"
+   width="65%"
+   alt="image191.png" />
+</p>
 
 In the example, try different values for the miterLimit property. You\'ll see that the way the corners are rendered changes at values around 2 and 3.
 
@@ -14022,7 +13818,7 @@ In the example, try different values for the miterLimit property. You\'ll see 
 
 1:17 video explaining animation.
 
-### 4.2.1 Animation Techniques
+<h3 id="ch4-2-1">4.2.1 Animation Techniques<h3>
 
 In order to perform an animation, we need to:
 
@@ -14038,147 +13834,98 @@ These are the basic steps for animating objects in a canvas. The order of the st
 
 Step 1 could be avoided if you redraw the whole canvas content during step 2.
 
-### Before HTML5
+<h4>Before HTML5</h4>
 
 Even before HTML5 and the introduction of the canvas element, people created HTML games. They used CSS backgrounds inside \<div\> elements, and used to change the CSS top, left, width and height properties of the divs to animate graphic images on the screen.
 
 During the late 1990s and early 2000s, JavaScript became increasingly popular. The community created a first \'umbrella term\' describing a collection of technologies used together to create interactive and animated Web sites - [DHTML (Dynamic HTML)](https://en.wikipedia.org/wiki/Dynamic_HTML). For example, check the [games developed at this time by Brent Silby](https://def-logic.com/) (they all use DHTML).
 
-![A mario like DHTML game](./images/image192.png){width="2.3541666666666665in" height="1.9166666666666667in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 192. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image192.png?raw=true"
+   width="25%"
+   alt="A mario like DHTML game" />
+</p>
 
 For animation, the setInterval(function, ms) and setTimeout(function, ms) methods were the only solutions. Both methods take a function as the first parameter, and a number of milliseconds as the second parameter.
 
 The only difference is that the code provided to setInterval will run every n milliseconds whereas the code in setTimeout will run only once after n milliseconds (meaning that we will have to repeat a call to setTimeout at step 4 above).
 
-### After HTML5
+<h4>After HTML5</h4>
 
 The methods described above are now completed by a new method that comes with multiple advantages: the requestAnimationFrame API.
 
 We will compare the old methods with the new one, and implement the same  example with each of them to highlight the differences.
 
-### 4.2.2 Basic Animation Techniques
+<h3 id="ch4-2-2">4.2.2 Basic Animation Techniques</h3>
 
 Below is the example shown in the video, with source code:
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Animation\</title\>
-
-\<style\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Animation</title>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var canvas, ctx;
-
 var rectangleX = 0;
-
-var colors = \[\'red\', \'blue\', \'green\'\];
-
+var colors = ['red', 'blue', 'green'];
 var currentColor = 0;
-
 var speed = 3;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 // 3 - we can draw
-
 //setInterval(animate, 100);
-
 //setTimeout(animate, 100);
-
 requestAnimationFrame(animate);
-
 setInterval(changeColor, 1000);
-
 }
-
 function animate() {
-
 // - 1 clear canvas
-
 ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 // 2 - draw a red rectangle
-
 ctx.fillRect(rectangleX,0,80,100);
-
 // 3 - move the shapes
-
 rectangleX = rectangleX +speed;
-
-if((rectangleX+80 \> 200) \|\| (rectangleX \<= 0)){
-
+if((rectangleX+80 > 200) || (rectangleX <= 0)){
 speed = -speed;
-
 }
-
 // Call again the anilate function after 100ms
-
 //setTimeout(animate, 100);
-
 requestAnimationFrame(animate);
-
 }
-
 function changeColor() {
-
-ctx.fillStyle= colors\[currentColor%3\];
-
+ctx.fillStyle= colors[currentColor%3];
 currentColor += 1;
-
 // Comment next line if you do not want to change the speed at
-
 // each bounce
-
-speed += Math.sign(speed)\*1;
-
-console.log(\"speed = \" + speed)
-
+speed += Math.sign(speed)*1;
+console.log("speed = " + speed)
 }
-
-\</script\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"200\" height=\"200\"\>
-
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="200" height="200">
 Your browser does not support the canvas tag.
+</canvas>
+</body>
+</html>
+```
 
-\</canvas\>
-
-\</body\>
-
-\</html\>
-
-**Errata**: in the video, we use speed +=1; in order to increment the speed of the rectangle each time it bounces (in the changeColor() function). This is not correct as speed can be negative. The online example fixes this by using speed += Math.sign(speed) \* 1; instead this will add +1 or -1 depending on the sign of speed.
+<b>Errata</b>: in the video, we use speed +=1; in order to increment the speed of the rectangle each time it bounces (in the changeColor() function). This is not correct as speed can be negative. The online example fixes this by using speed += Math.sign(speed) \* 1; instead this will add +1 or -1 depending on the sign of speed.
 
 <h3 id="ch4-2-3">4.2.3 Animating Using setInterval()</h3>
 
@@ -14188,444 +13935,247 @@ Syntax: setInterval(function, ms);
 
 The setInterval(\...) function calls another function or evaluates an expression at specified intervals of time (in milliseconds), and returns the unique id of the action. You can always stop it by calling the clearInterval(id) function with the interval identifier as an argument.
 
-### Basic example that shows how to animate a DIV using the DOM API
+<h4>Basic example that shows how to animate a DIV using the DOM API</h4>
 
 This is how pre-HTML5 games were written. Before the introduction of the canvas element, developers made games using div elements. By changing their background color, top and left CSS positions, it was possible to animate characters in games. The animation was created by calling repeatedly a function that did the drawing, using the JavaScript setInterval or setTimeout functions.
 
 Please try this example that moves/animates a div using setInterval:
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>setInterval for animation\</title\>
-
-\<style\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>setInterval for animation</title>
+<style>
 #animatedDIV {
-
 position:absolute;
-
 background-color:red;
-
 color:white;
-
 height:100px;
-
 }
-
-\</style\>
-
-\</head\>
-
-\<body\>
-
-\<button onclick=\"start()\"\>Start animation\</button\>
-
-\<button onclick=\"stop()\"\>Stop animation\</button\>
-
-\<div\>
-
-\<div id=\"animatedDIV\"\>Animated DIV :-)\</div\>
-
-\</div\>
-
-\<script\>
-
-var elm = document.getElementById(\"animatedDIV\");
-
+</style>
+</head>
+<body>
+<button onclick="start()">Start animation</button>
+<button onclick="stop()">Stop animation</button>
+<div>
+<div id="animatedDIV">Animated DIV :-)</div>
+</div>
+<script>
+var elm = document.getElementById("animatedDIV");
 var requestId;
-
 var x = 0;
-
 function render(time) {
-
-elm.style.left = x++ + \"px\";
-
+elm.style.left = x++ + "px";
 }
-
 function start() {
-
 requestId = setInterval(render, 10);
-
 }
-
 function stop() {
-
 if (requestId) {
-
 clearInterval(requestId);
-
 }
-
 }
-
-\</script\>
-
-\</body\>
-
-\</html\>
+</script>
+</body>
+</html>
+```
 
 Extract from the source code:
-
-1.  \<body\>
-
-2.     \<div id=\"animatedDIV\"\>Animated DIV :-)\</div\>
-
+```
+1.  <body>
+2.     <div id="animatedDIV">Animated DIV :-)</div>
 3.  
-
-4.     \<button onclick=\"start()\"\>Start animation\</button\>
-
-5.     \<button onclick=\"stop()\"\>Stop animation\</button\>
-
+4.     <button onclick="start()">Start animation</button>
+5.     <button onclick="stop()">Stop animation</button>
 6.  
-
-7.     \<script\>
-
-8.         var elm = document.getElementById(\"animatedDIV\");
-
+7.     <script>
+8.         var elm = document.getElementById("animatedDIV");
 9.         var requestId;
-
 10.        var x = 0;
-
 11. 
-
 12.        function render(time) {
-
-13.            elm.style.left = x++ + \"px\";
-
+13.            elm.style.left = x++ + "px";
 14.        }
-
 15. 
-
 16.        function start() {
-
 17.            **requestId = setInterval(render, 10);**
-
 18.        }
-
 19. 
-
 20.        function stop() {
-
 21.            if (requestId) {
-
 22.                **clearInterval(requestId);**
-
 23.            }
-
 24.        }
-
-25.     \</script\>
-
-26. \</body\>
+25.     </script>
+26. </body>
+```
 
 Here, we define a \<div\> element, (see the online source code for the CSS properties involved), and we use the setInterval method (*line 17*) to call every 10ms the render() method that will just increment the position of this element. Notice that since we\'re using the DOM, the horizontal position of the div is modified by changing its left CSS property.
 
 The call to setInterval returns an id we can use to stop the animation, by calling clearInterval (*line 22*).
 
-### Animate a monster in a canvas, using setInterval
+<h4>Animate a monster in a canvas, using setInterval</h4>
 
 We use the drawMonster() function:
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>setInterval and monster animation\</title\>
-
-\<style\>
-
-\<style\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>setInterval and monster animation</title>
+<style>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height=\"400\"\>
-
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\<p\>
-
-\<button onclick=\"start()\"\>Start animation\</button\>
-
-\<button onclick=\"stop()\"\>Stop animation\</button\>
-
-\<script\>
-
+</canvas>
+<p>
+<button onclick="start()">Start animation</button>
+<button onclick="stop()">Stop animation</button>
+<script>
 var canvas, ctx;
-
 var monsterX=100, monsterY=100, monsterAngle=0;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 }
-
 function animationLoop() {
-
 // 1 - Clear the canvas
-
 ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 // 2 Draw the monster using variables for pos, angle, etc.
-
-drawMonster(monsterX, monsterY, monsterAngle, \'green\', \'yellow\');
-
+drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
 // 3 Move the monster (change pos, angle, size, etc.)
-
 monsterX += 10;
-
 monsterX %= canvas.width
-
 monsterAngle+= 0.01;
-
 }
-
 function drawMonster(x, y, angle, headColor, eyeColor) {
-
 // GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
-
 ctx.save();
-
 // Moves the coordinate system so that the monster is drawn
-
 // at position (x, y)
-
 ctx.translate(x, y);
-
 ctx.rotate(angle)
-
 // head
-
 ctx.fillStyle=headColor;
-
 ctx.fillRect(0,0,200,200);
-
 // eyes
-
-ctx.fillStyle=\'red\';
-
+ctx.fillStyle='red';
 ctx.fillRect(35,30,20,20);
-
 ctx.fillRect(140,30,20,20);
-
 // interior of eye
-
 ctx.fillStyle=eyeColor;
-
 ctx.fillRect(43,37,10,10);
-
 ctx.fillRect(143,37,10,10);
-
 // Nose
-
-ctx.fillStyle=\'black\';
-
+ctx.fillStyle='black';
 ctx.fillRect(90,70,20,80);
-
 // Mouth
-
-ctx.fillStyle=\'purple\';
-
+ctx.fillStyle='purple';
 ctx.fillRect(60,165,80,20);
-
 // GOOD PRACTICE !
-
 ctx.restore();
-
 }
-
 function start() {
-
 // Start the animation loop, change 20 for bigger values
-
 requestId = setInterval(animationLoop, 20);
-
 }
-
 function stop() {
-
 if (requestId) {
-
 clearInterval(requestId);
-
 }
-
 }
+</script>
+</body>
+</html>
+```
 
-\</script\>
-
-\</body\>
-
-\</html\>
-
-Source code:
-
-1.  \<body onload=\"init();\"\>
-
-2.      \<canvas id=\"myCanvas\" width=\"400\" height=\"400\"\>
-
+<h4>Source code:</h4>
+```
+1.  <body onload="init();">
+2.      <canvas id="myCanvas" width="400" height="400">
 3.          Your browser does not support the canvas tag.
-
-4.      \</canvas\>
-
-5.      \<p\>
-
-6.      \<button onclick=\"start()\"\>Start animation\</button\>
-
-7.      \<button onclick=\"stop()\"\>Stop animation\</button\>
-
+4.      </canvas>
+5.      <p>
+6.      <button onclick="start()">Start animation</button>
+7.      <button onclick="stop()">Stop animation</button>
 8.  
-
-9.      \<script\>
-
+9.      <script>
 10.         var canvas, ctx;
-
 11.         var monsterX=100, monsterY=100, monsterAngle=0;
-
 12. 
-
 13.         function init() {
-
 14.             // This function is called after the page is loaded
-
 15.             // 1 - Get the canvas
-
-16.             canvas = document.getElementById(\'myCanvas\');
-
+16.             canvas = document.getElementById('myCanvas');
 17.             // 2 - Get the context
-
-18.             ctx=canvas.getContext(\'2d\');
-
+18.             ctx=canvas.getContext('2d');
 19.         }
-
 20. 
-
 21.         function animationLoop() {
-
 22.             // 1 - Clear the canvas
-
 23.             ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 24. 
-
 25.             // 2 Draw the monster using variables for pos, angle, etc.
-
-26.            drawMonster(monsterX, monsterY, monsterAngle, \'green\', \'yellow\');
-
+26.            drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
 27. 
-
 28.            // 3 Move the monster (change pos, angle, size, etc.)
-
 29.            monsterX += 10;
-
 30.            monsterX %= canvas.width
-
 31.            monsterAngle+= 0.01;
-
 32.         }
-
 33. 
-
 34.         function drawMonster(x, y, angle, headColor, eyeColor) {
-
 35.         // BEST PRACTICE: SAVE CONTEXT AND RESTORE IT AT THE END
-
 36.         ctx.save();
-
 37. 
-
 38.         // Moves the coordinate system so that the monster is drawn
-
 39.         // at position (x, y)
-
 40.         ctx.translate(x, y);
-
 41.         ctx.rotate(angle)
-
 42. 
-
 43.         // head
-
 44.         ctx.fillStyle=headColor;
-
 45.         ctx.fillRect(0,0,200,200);
-
-46.         \...
-
+46.         ...
 47. 
-
 48.         // BEST PRACTICE!
-
 49.         ctx.restore();
-
 50.      }
-
 51. 
-
 52.      function start() {
-
 53.          // Start the animation loop, change 20 for bigger values
-
 54.          **requestId = setInterval(animationLoop, 20);**
-
 55.      }
-
 56. 
-
 57.      function stop() {
-
 58.          if (requestId) {
-
 59.              **clearInterval(requestId);**
-
 60.          }
-
 61.      }
-
-62. \</script\>
-
-63. \</body\>
+62. </script>
+63. </body>
+```
 
 **Explanations:**
 
 -   *Lines 52-61*: The code for launching and stopping the animation is similar to that from the previous example.
 
 ```
-<!-- -->
+
 ```
 -   *Lines 34-50*: The code that draws the monster is that which we saw earlier when we presented the 2D transformations. Best practice is to save and restore the context at the beginning and end of each function that changes the context.
 
@@ -14664,166 +14214,88 @@ This function works like setInterval(\...) with one difference: it calls your 
 Check the example below (click on start animation):
 
 HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Monster animated in a canvas with setTimeout\</title\>
-
-\<style type=\"text/css\"\>
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Monster animated in a canvas with setTimeout</title>
+<style type="text/css">
 canvas {
-
 border:1px solid black;
-
 }
-
-\</style\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height=\"400\"\>
-
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\<p\>
-
-\<button onclick=\"start()\"\>Start animation\</button\>
-
-\<button onclick=\"stop()\"\>Stop animation\</button\>
-
-\<script\>
-
+</canvas>
+<p>
+<button onclick="start()">Start animation</button>
+<button onclick="stop()">Stop animation</button>
+<script>
 var canvas, ctx;
-
 var monsterX=100, monsterY=100, monsterAngle=0;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 }
-
 function animationLoop() {
-
 // 1 - Clear
-
 ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 // 2 Draw
-
-drawMonster(monsterX, monsterY, monsterAngle, \'green\', \'yellow\');
-
+drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
 // 3 Move
-
 monsterX += 10;
-
 monsterX %= canvas.width
-
 monsterAngle+= 0.01;
-
 // call again mainloop after 20ms
-
 requestId = setTimeout(animationLoop, 20);
-
 }
-
 function drawMonster(x, y, angle, headColor, eyeColor) {
-
 // GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
-
 ctx.save();
-
 // Moves the coordinate system so that the monster is drawn
-
 // at position (x, y)
-
 ctx.translate(x, y);
-
 ctx.rotate(angle)
-
 // head
-
 ctx.fillStyle=headColor;
-
 ctx.fillRect(0,0,200,200);
-
 // eyes
-
-ctx.fillStyle=\'red\';
-
+ctx.fillStyle='red';
 ctx.fillRect(35,30,20,20);
-
 ctx.fillRect(140,30,20,20);
-
 // interior of eye
-
 ctx.fillStyle=eyeColor;
-
 ctx.fillRect(43,37,10,10);
-
 ctx.fillRect(143,37,10,10);
-
 // Nose
-
-ctx.fillStyle=\'black\';
-
+ctx.fillStyle='black';
 ctx.fillRect(90,70,20,80);
-
 // Mouth
-
-ctx.fillStyle=\'purple\';
-
+ctx.fillStyle='purple';
 ctx.fillRect(60,165,80,20);
-
 // GOOD PRACTICE !
-
 ctx.restore();
-
 }
-
 function start() {
-
 // Start the animation loop, change 20 for bigger
-
 // values
-
 requestId = setTimeout(animationLoop, 20);
-
 }
-
 function stop() {
-
 if (requestId) {
-
 clearTimeout(requestId);
-
 }
-
 }
-
-\</script\>
-
-\</body\>
-
-\</html\>
+</script>
+</body>
+</html>
+```
 
 This is similar to the previous example except that we called setTimeout(function, delay) instead of setInterval(function, period). **As setTimeout runs the function passed as the first parameter only once, we also have to call it at the end of the loop**.
 
@@ -14839,7 +14311,7 @@ Extract from source code:
 
 5.     // 2 Draw
 
-6.     drawMonster(monsterX, monsterY, monsterAngle, \'green\', \'yellow\');
+6.     drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
 
 7.  
 
@@ -14923,16 +14395,16 @@ You will note that  requestAnimationFrame(function) is used like setTimeout(
 
 Source code:
 ```
-1.  \<body onload=\"init();\"\>
-2.  \<script\>
+1.  <body onload="init();">
+2.  <script>
 3.  var canvas, ctx;
 4.  
 5.  function init() {
 6.     // This function is called after the page is loaded
 7.     // 1 - Get the canvas
-8.     canvas = document.getElementById(\'myCanvas\');
+8.     canvas = document.getElementById('myCanvas');
 9.     // 2 - Get the context
-10.    ctx=canvas.getContext(\'2d\');
+10.    ctx=canvas.getContext('2d');
 11. 
 12.    // 3 - start the animation
 13.    startAnimation();
@@ -14943,9 +14415,9 @@ Source code:
 18.    // 1 - Clear
 19.    ctx.clearRect(0, 0, canvas.width, canvas.height);
 20.    // 2 Draw
-21.    drawShapes(\...);
+21.    drawShapes(...);
 22.    // 3 Move
-23.    moveShapes(\...);
+23.    moveShapes(...);
 24.    // call mainloop  again after 16.6ms (corresponds to 60 frames/second)
 25.    **id = requestAnimationFrame(animationLoop);**
 26. }
@@ -14958,8 +14430,8 @@ Source code:
 33.       **cancelAnimationFrame(id);**
 34.    }
 35. }
-36. \</script\>
-37. \</body\>
+36. </script>
+37. </body>
 ```
 
 <h4>Example: animate the monster with requestAnimationFrame</h4>
@@ -14973,7 +14445,7 @@ Source code extract - please compare with the previous example that used setInt
 3.      ctx.clearRect(0, 0, canvas.width, canvas.height);
 4.   
 5.      // 2 - Draw
-6.      drawMonster(monsterX, monsterY, monsterAngle, \'green\', \'yellow\');
+6.      drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
 7.   
 8.      // 3 - Move
 9.      monsterX += 10;
@@ -15031,9 +14503,9 @@ The events are called *DOM events*, and we use the *DOM JavaScript API* to cr
 
 You will often find this in examples on the Web:
 ```
-1.  \<div id=\"someDiv\" **onclick=\"alert(\'clicked!\');\"**\>
+1.  <div id="someDiv" **onclick="alert('clicked!');"**>
 2.      content of the div
-3.  \</div\>
+3.  </div>
 ```
 
 Note: this is not the recommended way to handle events, even if it\'s very easy to use. Mixing the \'visual layer\' (HTML) and the \'logic layer\' (JavaScript) in one place is ok for small examples (we have used this in some examples in this course) but is not the recommended way for full scale applications where a clean separation is best.
@@ -15042,8 +14514,8 @@ Note: this is not the recommended way to handle events, even if it\'s very easy 
 
 Here is an example:
 ```
-1.  document.getElementById(\'someDiv\').onclick = function(evt) {
-2.    alert(\'clicked!\');
+1.  document.getElementById('someDiv').onclick = function(evt) {
+2.    alert('clicked!');
 3.  }
 ```
 This method is fine, but  you will not be able to attach several listener functions. If you need to do this, the preferred version is the next one.
@@ -15052,8 +14524,8 @@ This method is fine, but  you will not be able to attach several listener funct
 
 This is how we do it:
 ```
-1.  document.getElementById(\'someDiv\').addEventListener(\'click\', function(evt) {
-2.      alert(\'clicked!\');
+1.  document.getElementById('someDiv').addEventListener('click', function(evt) {
+2.      alert('clicked!');
 3.  }, false);
 ```
 
@@ -15063,11 +14535,11 @@ The third parameter is not important for now, just set it to false, or simply d
 
 When you create an EventListener and attach it to an element,  an event object will be passed as a parameter to your callback, just like this:
 ```
-1.  element.addEventListener(\'click\', function(**event**) {
+1.  element.addEventListener('click', function(**event**) {
 2.     **// now you can use the event object inside the callback**
 3.  }, false);
 ```
-Depending on the type of event you are listening to, we will use different properties from the event object in order to get useful information like: \"what keys have been pressed down?\", \"what is the position of the mouse cursor?\", \"which mouse button is down?\", etc.
+Depending on the type of event you are listening to, we will use different properties from the event object in order to get useful information like: "what keys have been pressed down?\", \"what is the position of the mouse cursor?\", \"which mouse button is down?\", etc.
 
 Let\'s see next how to deal with the keyboard and the mouse. In the [W3Cx HTML5 Apps and Games](https://www.edx.org/course/html5-apps-and-games) course, we look at additional APIs such as [the gamePad API](https://www.w3.org/TR/gamepad/) for using USB or wireless gamepads/joysticks/game controllers.
 
@@ -15102,7 +14574,7 @@ Let\'s see next how to deal with the keyboard and the mouse. In the [W3Cx HTML5
 
 When you listen to keyboard related events (keydown, keyup or keypressed), the event parameter passed to the listener function will contain the code of the key that fired the event. Then it is possible to test what key has been pressed or released, like this:
 ```
-1.  window.addEventListener(\'keydown\', function(event) {
+1.  window.addEventListener('keydown', function(event) {
 2.     if (**event.keyCode === 37**) {
 3.       //left arrow was pressed
 4.     }
@@ -15184,195 +14656,105 @@ Indeed this solution works well if you write a game, and want to detect events w
 
 HTML
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Moving the monster with the keyboard - Example #2\</title\>
-
-\<style type=\"text/css\"\>
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moving the monster with the keyboard - Example #2</title>
+<style type="text/css">
 canvas {
-
 border:1px solid black;
-
 }
-
-\</style\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height=\"400\"\>
-
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\<p\>
-
-\<script\>
-
+</canvas>
+<p>
+<script>
 var canvas, ctx;
-
 var monsterX=100, monsterY=100, monsterAngle=0;
-
 var incrementX = 0;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 // 3 add key listeners to the window element
-
-window.addEventListener(\'keydown\', handleKeydown, false);
-
-window.addEventListener(\'keyup\', handleKeyup, false);
-
+window.addEventListener('keydown', handleKeydown, false);
+window.addEventListener('keyup', handleKeyup, false);
 // 4 - start the animation
-
 requestId = requestAnimationFrame(animationLoop);
-
 }
-
 function handleKeydown(evt) {
-
 if (evt.keyCode === 37) {
-
 //left key
-
 incrementX = -1;
-
 } else if (evt.keyCode === 39) {
-
 // right key
-
 incrementX = 1;
-
 }
-
 }
-
 function handleKeyup(evt) {
-
 incrementX = 0;
-
 }
-
 function animationLoop() {
-
 // 1 - Clear
-
 ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 // 2 Draw
-
-drawMonster(monsterX, monsterY, monsterAngle, \'green\', \'yellow\');
-
+drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
 // 3 Move
-
 monsterX += incrementX;
-
 // call again mainloop after 16.6 ms (60 frames/s)
-
 requestId = requestAnimationFrame(animationLoop);
-
 }
-
 function drawMonster(x, y, angle, headColor, eyeColor) {
-
 // GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
-
 ctx.save();
-
 // Moves the coordinate system so that the monster is drawn
-
 // at position (x, y)
-
 ctx.translate(x, y);
-
 ctx.rotate(angle)
-
 // head
-
 ctx.fillStyle=headColor;
-
 ctx.fillRect(0,0,200,200);
-
 // eyes
-
-ctx.fillStyle=\'red\';
-
+ctx.fillStyle='red';
 ctx.fillRect(35,30,20,20);
-
 ctx.fillRect(140,30,20,20);
-
 // interior of eye
-
 ctx.fillStyle=eyeColor;
-
 ctx.fillRect(43,37,10,10);
-
 ctx.fillRect(143,37,10,10);
-
 // Nose
-
-ctx.fillStyle=\'black\';
-
+ctx.fillStyle='black';
 ctx.fillRect(90,70,20,80);
-
 // Mouth
-
-ctx.fillStyle=\'purple\';
-
+ctx.fillStyle='purple';
 ctx.fillRect(60,165,80,20);
-
 // GOOD PRACTICE !
-
 ctx.restore();
-
 }
-
 function start() {
-
 // Start the animation loop, targets 60 frames/s
-
 requestId = requestAnimationFrame(animationLoop);
-
 }
-
 function stop() {
-
 if (requestId) {
-
 cancelAnimationFrame(requestId);
-
 }
-
 }
+</script>
+</body>
+</html>
+```
 
-\</script\>
-
-\</body\>
-
-\</html\>
-
-Code:
-
-1.  \<script\>
+<h4>Code:<.h4>
+```
+1.  <script>
 
 2.  var canvas, ctx;
 
@@ -15390,21 +14772,21 @@ Code:
 
 9.      // 1 - Get the canvas
 
-10.     canvas = document.getElementById(\'myCanvas\');
+10.     canvas = document.getElementById('myCanvas');
 
 11.  
 
 12.     // 2 - Get the context
 
-13.     ctx=canvas.getContext(\'2d\');
+13.     ctx=canvas.getContext('2d');
 
 14.  
 
 15.     **// 3 add key listeners to the window element**
 
-16.     **window.addEventListener(\'keydown\', handleKeydown, false);**
+16.     **window.addEventListener('keydown', handleKeydown, false);**
 
-17.     **window.addEventListener(\'keyup\', handleKeyup, false);**
+17.     **window.addEventListener('keyup', handleKeyup, false);**
 
 18. 
 
@@ -15452,7 +14834,7 @@ Code:
 
 40.     // 2 Draw
 
-41.     drawMonster(monsterX, monsterY, monsterAngle, \'green\', \'yellow\');
+41.     drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
 
 42.  
 
@@ -15468,7 +14850,7 @@ Code:
 
 48. }
 
-49. \</script\>
+49. </script>
 
 #### Example #3: what if I want to listen to key events only in my canvas?
 
@@ -15478,15 +14860,15 @@ The tabindex attribute of the canvas element makes it focusable. Without it, i
 
 The trick is to declare the canvas like this:
 
-1.  \<canvas id=\"myCanvas\" width=\"350\" **tabindex=\"1\"** height=\"200\"\>
+1.  <canvas id="myCanvas" width="350" **tabindex="1"** height="200">
 
-2.  \</canvas\>
+2.  </canvas>
 
 And we force the canvas to get the focus with:
 
-1.  canvas=document.getElementById(\'myCanvas\');
+1.  canvas=document.getElementById('myCanvas');
 
-2.  \...
+2.  ...
 
 3.  **canvas.focus();**
 
@@ -15496,17 +14878,17 @@ Now, if we try an example with the above canvas declaration, we show when an HT
 
 HTML
 
-\<!DOCTYPE html\>
+<!DOCTYPE html>
 
-\<html lang=\"en\"\>
+<html lang="en">
 
-\<head\>
+<head>
 
-\<meta charset=\"utf-8\"\>
+<meta charset="utf-8">
 
-\<title\>Listening to key events only in the canvas - Example #3\</title\>
+<title>Listening to key events only in the canvas - Example #3</title>
 
-\<style type=\"text/css\"\>
+<style type="text/css">
 
 canvas {
 
@@ -15514,107 +14896,79 @@ border:1px solid black;
 
 }
 
-\</style\>
+</style>
 
-\</head\>
+</head>
 
-\<body onload=\"init();\"\>
+<body onload="init();">
 
 This example shows how to handle key events in a canvas by adding a key listener to the canvas object (see the blue border around the canvas\... it shows that the canvas has the focus. Try to click outside of the canvas: it will lose the focus).
 
-\<p\>
+<p>
 
 If you don\'t want a border to appear when you click on the canvas, set its style to outline: none
 
-\</p\>
+</p>
 
-\<p\>Press a key when the canvas has the focus: an alert will display the keycode of the key you pressed. Problem: if the canvas looses the focus, key press are no more detected\...\</p\>
+\<p\>Press a key when the canvas has the focus: an alert will display the keycode of the key you pressed. Problem: if the canvas looses the focus, key press are no more detected\...\</p>
 
-\<canvas id=\"myCanvas\" width=\"350\" tabindex=\"1\" height=\"200\"\>
+<canvas id="myCanvas" width="350" tabindex="1" height="200">
 
-\</canvas\>
-
-\<script\>
-
+</canvas>
+<script>
 var canvas;
-
 function init() {
-
-canvas=document.getElementById(\'myCanvas\');
-
+canvas=document.getElementById('myCanvas');
 // This will work only if the canvas has the focus
-
-canvas.addEventListener(\'keydown\', handleKeydown, false);
-
+canvas.addEventListener('keydown', handleKeydown, false);
 // We can set the focus on the canvas like that:
-
 //canvas.focus();
-
-// \... but it will stop working if we click somewhere else
-
+// ... but it will stop working if we click somewhere else
 // in the document
-
 }
-
 function handleKeydown(e){
-
-alert(\'keycode: \'+e.keyCode);
-
+alert('keycode: '+e.keyCode);
 return false;
-
 };
-
-\</script\>
-
-\</body\>
-
-\</html\>
+</script>
+</body>
+</html\>
+```
 
 Note that the line that forces the focus to the canvas is commented by default. Try to click on the canvas, then press a key, then click out of the canvas, then press a key: this time nothing happens!
 
-![a border appears when the canvas has the focus](./images/image196.jpeg){width="4.927083333333333in" height="2.9479166666666665in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 196. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image196.jpeg?raw=true"
+   width="50%"
+   alt="image196.jpeg a border appears when the canvas has the focus" />
+</p>
 
 Extract from the code:
-
+```
 1.  var canvas;
-
 2.  
-
 3.  function init() {
-
-4.       canvas=document.getElementById(\'myCanvas\');
-
+4.       canvas=document.getElementById('myCanvas');
 5.   
-
 6.       // This will work only if the canvas has the focus
-
-7.       **canvas.addEventListener(\'keydown\', handleKeydown, false);**
-
+7.       **canvas.addEventListener('keydown', handleKeydown, false);**
 8.  
-
 9.       **// We can set the focus on the canvas like this:**
-
 10.      **//canvas.focus();**
-
 11. 
-
-12.      // \... but it will stop working if we click somewhere else
-
+12.      // ... but it will stop working if we click somewhere else
 13.      // in the document
-
 14. }
-
 15.  
-
 16.  
-
 17. function handleKeydown(e){
-
-18.      alert(\'keycode: \'+e.keyCode);
-
+18.      alert('keycode: '+e.keyCode);
 19.      return false;
-
 20. };
+```
 
 *Line 10* is useful to initially set the focus on the canvas, but this trick will not work if we click somewhere else in the HTML page.
 
@@ -15626,289 +14980,178 @@ Here is a modified version of the \"move monster example\" seen earlier. This t
 
 When the mouse enters the canvas we call canvas.focus() to set the focus to the canvas, and when the mouse cursor goes out of the canvas, we call canvas.blur() to unset the focus.
 
-![](./images/image197.png){width="6.5in" height="2.0770833333333334in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 197.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image197.png?raw=true"
+   alt="image197.png"
+   width="65%">
+&nbsp;
+<br/>
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Setting the focus when the mouse cursor enters the canvas - Example #4\</title\>
-
-\<style type=\"text/css\"\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Setting the focus when the mouse cursor enters the canvas - Example #4</title>
+<style type="text/css">
 canvas {
-
 border:1px solid black;
-
 }
-
-\</style\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" tabindex=\"1\" width=\"400\" height=\"400\"\>
-
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" tabindex="1" width="400" height="400">
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\<p\>
-
-\<script\>
-
+</canvas>
+<p>
+<script>
 var canvas, ctx;
-
 var monsterX=100, monsterY=100, monsterAngle=0;
-
 var incrementX = 0;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 // 3 add key listeners to the window element
-
-canvas.addEventListener(\'keydown\', handleKeydown, false);
-
-canvas.addEventListener(\'keyup\', handleKeyup, false);
-
-canvas.addEventListener(\'mouseenter\', setFocus, false);
-
-canvas.addEventListener(\'mouseout\', unsetFocus, false);
-
+canvas.addEventListener('keydown', handleKeydown, false);
+canvas.addEventListener('keyup', handleKeyup, false);
+canvas.addEventListener('mouseenter', setFocus, false);
+canvas.addEventListener('mouseout', unsetFocus, false);
 // 4 - start the animation
-
 requestId = requestAnimationFrame(animationLoop);
-
 }
-
 function setFocus(evt) {
-
 canvas.focus();
-
 };
-
 function unsetFocus(evt) {
-
 canvas.blur();
-
 incrementX = 0; // I added this line
-
 };
-
 function handleKeydown(evt) {
-
 if (evt.keyCode === 37) {
-
 //left key
-
 incrementX = -1;
-
 } else if (evt.keyCode === 39) {
-
 // right key
-
 incrementX = 1;
-
 }
-
 }
-
 function handleKeyup(evt) {
-
 incrementX = 0;
-
 }
-
 function animationLoop() {
-
 // 1 - Clear
-
 ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 // 2 Draw
-
-drawMonster(monsterX, monsterY, monsterAngle, \'green\', \'yellow\');
-
+drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
 // 3 Move
-
 monsterX += incrementX;
-
 // call again mainloop after 16.6 ms (60 frames/s)
-
 requestId = requestAnimationFrame(animationLoop);
-
 }
-
 function drawMonster(x, y, angle, headColor, eyeColor) {
-
 // GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
-
 ctx.save();
-
 // Moves the coordinate system so that the monster is drawn
-
 // at position (x, y)
-
 ctx.translate(x, y);
-
 ctx.rotate(angle)
-
 // head
-
 ctx.fillStyle=headColor;
-
 ctx.fillRect(0,0,200,200);
-
 // eyes
-
-ctx.fillStyle=\'red\';
-
+ctx.fillStyle='red';
 ctx.fillRect(35,30,20,20);
-
 ctx.fillRect(140,30,20,20);
-
 // interior of eye
-
 ctx.fillStyle=eyeColor;
-
 ctx.fillRect(43,37,10,10);
-
 ctx.fillRect(143,37,10,10);
-
 // Nose
-
-ctx.fillStyle=\'black\';
-
+ctx.fillStyle='black';
 ctx.fillRect(90,70,20,80);
-
 // Mouth
-
-ctx.fillStyle=\'purple\';
-
+ctx.fillStyle='purple';
 ctx.fillRect(60,165,80,20);
-
 // GOOD PRACTICE !
-
 ctx.restore();
-
 }
-
 function start() {
-
 // Start the animation loop, targets 60 frames/s
-
 requestId = requestAnimationFrame(animationLoop);
-
 }
-
 function stop() {
-
 if (requestId) {
-
 cancelAnimationFrame(requestId);
-
 }
-
 }
-
-\</script\>
-
-\</body\>
-
-\</html\>
+</script>
+</body>
+</html>
+```
 
 Code:
-
+```
 1.  function init() {
-
 2.     // This function is called after the page is loaded
-
 3.     // 1 - Get the canvas
-
-4.     canvas = document.getElementById(\'myCanvas\');
-
+4.     canvas = document.getElementById('myCanvas');
 5.     // 2 - Get the context
-
-6.     ctx=canvas.getContext(\'2d\');
-
+6.     ctx=canvas.getContext('2d');
 7.  
-
 8.     // 3 - Add key listeners to the window element
-
-9.     canvas.addEventListener(\'keydown\', handleKeydown, false);
-
-10.    canvas.addEventListener(\'keyup\', handleKeyup, false);
-
+9.     canvas.addEventListener('keydown', handleKeydown, false);
+10.    canvas.addEventListener('keyup', handleKeyup, false);
 11. 
-
-12.    canvas.addEventListener(\'mouseenter\', setFocus, false);
-
-13.    canvas.addEventListener(\'mouseout\', unsetFocus, false);
-
+12.    canvas.addEventListener('mouseenter', setFocus, false);
+13.    canvas.addEventListener('mouseout', unsetFocus, false);
 14. 
-
 15.    // 4 - Start the animation
-
 16.    requestId = requestAnimationFrame(animationLoop);
-
 17. }
-
 18. 
-
 19. function setFocus(evt) {
-
 20.     canvas.focus();
-
 21. };
-
 22. 
-
 23. 
-
 24. function unsetFocus(evt) {
-
 25.    canvas.blur();
-
 26.    incrementX = 0; // stop the monster if the mouse exists the canvas
-
 27. };
-
+```
 The third parameter (false) of *lines 12* and *13* means \"we do not want to propagate the event to the ancestors of the canvas in the DOM.\" 
 
-### 4.3.3 Mouse Interaction, Mouse Events
+<h3 id="ch4-3-3">4.3.3 Mouse Interaction, Mouse Events</h3>
 
 Detecting mouse events in a canvas is quite straightforward: you add an event listener to the canvas, and the browser invokes that listener when the event occurs.
 
 The example below is about listening to mouseup and mousedown events (when a user presses or releases any mouse button):
-
-1.  canvas.addEventListener(\'mousedown\', function (evt) {
-
+```
+1.  canvas.addEventListener('mousedown', function (evt) {
 2.  // do something with to the mousedown event
-
 3.  });
+```
 
-The event received by the listener function will be used for getting the button number or the coordinates of the mouse cursor. Before looking at different examples, let\'s look at the different event types we can listen to.
+The event received by the listener function will be used for getting the button number or the coordinates of the mouse cursor. Before looking at different examples, let's look at the different event types we can listen to.
 
 ### The different mouse events
 
-![Mouse events illustrated](./images/image198.png){width="3.6145833333333335in" height="2.6354166666666665in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 198.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image198.png?raw=true"
+   alt="Mouse events illustrated"
+   width="35%">
+&nbsp;
+<br/>
 
 We saw in the last example how to detect the mouseenter and mouseout events.
 
@@ -15938,7 +15181,15 @@ Fortunately, there exists a method for getting the position and size of any elem
 
 Play with the example below that show the problem:
 
-![](./images/image199.png){width="4.0in" height="2.4978882327209098in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 199.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image199.png?raw=true"
+   alt=""
+   width="25%">
+&nbsp;
+<br/>
 
 JS
 
@@ -16106,11 +15357,27 @@ WRONG code:
 
 Here is the result, when the mouse is approximately at the top left corner of the canvas:
 
-![bad mouse coords](./images/image200.jpeg){width="6.5in" height="2.1791666666666667in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 200.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image200.jpeg?raw=true"
+   alt="Bad mouse coordinates"
+   width="65%">
+&nbsp;
+<br/>
 
 GOOD version of the code:
 
-![](./images/image201.png){width="4.0in" height="2.4978882327209098in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 201.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image201.png?raw=true"
+   alt=""
+   width="40%">
+&nbsp;
+<br/>
 
 function getMousePos(canvas, evt) {
 
@@ -16130,15 +15397,39 @@ function getMousePos(canvas, evt) {
 
 Result (the cursor is approximately at the top left corner):
 
-![mouse at zero zero](./images/image202.jpeg){width="3.0in" height="1.6956528871391077in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 202.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image202.jpeg?raw=true"
+   alt="Mouse at zero zero"
+   width="30%">
+&nbsp;
+<br/>
 
 ### How to display the mouse position, and the mouse button that has been pressed or released
 
 This example uses the previous function for computing the mouse position correctly. It listens to mousemove, mousedown and mouseup events, and shows how to get the mouse button number using the evt.button property.
 
-![](./images/image203.png){width="4.0in" height="2.4978882327209098in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 203.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image203.png?raw=true"
+   alt=""
+   width="40%">
+&nbsp;
+<br/>
 
-![mouse event example](./images/image204.jpeg){width="5.0in" height="1.8146380139982503in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 204.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image204.jpeg?raw=true"
+   alt="Mouse event example"
+   width="50%">
+&nbsp;
+<br/>
 
 Extract from source code:
 
