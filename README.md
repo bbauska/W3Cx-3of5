@@ -1445,11 +1445,15 @@ Let's compare it to the HTML4 minimal document below (taken from <a href="https
 
 <h4>Simpler character set definition</h4>
 
-One word about the <meta charset=\"utf-8\"\> at line 4 in the HTML5 version: it is a <b>best practice</b> to declare the character set of your document to protect against <a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7">a serious security risk</a>). For more details, please refer to the \"Why Internationalization is important\" section in the Course intro chapter.
+One word about the <meta charset=\"utf-8\"\> at line 4 in the HTML5 version: it is a <b>best practice</b> to declare the character set of your document to protect against 
+<a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7">a serious security risk</a>. For more details, please refer to the \"Why Internationalization is 
+important\" section in the Course intro chapter.
 
 <h4>No more complicated DOCTYPE definitions</h4>
 
-The \"DOCTYPE\" (Document Type Declaration) is used by tools such as HTML validators (i.e.  [the W3C validator](https://validator.w3.org/)), and specifies the rules used by  an HTML or an XHTML page. These rules are contained in special documents called \"Document Type Definitions\" (also abbreviated as DTDs), written in a language that may seem a bit barbaric to humans (they are intended to be read by software), and hosted by W3C.
+The \"DOCTYPE\" (Document Type Declaration) is used by tools such as HTML validators (i.e.  [the W3C validator](https://validator.w3.org/)), 
+and specifies the rules used by  an HTML or an XHTML page. These rules are contained in special documents called \"Document Type Definitions\" 
+(also abbreviated as DTDs), written in a language that may seem a bit barbaric to humans (they are intended to be read by software), and hosted by W3C.
 
 DTDs are not used by current Web browsers to  validate the structure of an HTML page, as  they \"read\" the code without using the DTD to decipher it, using only \"rules\" contained in their own \"HTML engine\", but it is still preferable to indicate the doctype as modern browsers have several rendering engines that are chosen depending on the doctype.
 
@@ -1457,7 +1461,8 @@ Old HTML1 Web pages will not be rendered the same way as new HTML5 pages, since,
 
 With HTML4, doctype definitions looked like this:<br/>
 ```
-\<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"https://www.w3.org/TR/html4/loose.dtd\"\>, which was even more complicated as one had to choose between three different possibilities (doctypes could be transitional, strict, or frameset). Most of the time, the doctype definition was copied and pasted from one document to another and was nearly impossible to memorize.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">, which was even more complicated as one had to choose between three different possibilities (doctypes could be transitional, strict, or frameset). Most of the time, the doctype definition was copied and pasted from one document 
+to another and was nearly impossible to memorize.
 ```
 With HTML5, there is only one way to indicate the doctype, and it\'s so simple there is no reason to forget it:
 ```
@@ -1469,29 +1474,31 @@ With a rel=\"stylesheet\" attribute, it is no longer necessary to indicate ty
 
 The \"type\" attribute is not needed in HTML5, and even old browsers will use text/css as the default type for stylesheets today. So, either way, you can omit the \"type\" attribute altogether and use:
 ```
-1.  \<link href=\"file.css\" rel=\"stylesheet\"/\>
+1.  <link href="file.css" rel="stylesheet"/>
 ```
 instead of:
 ```
-1.  \<link href=\"file.css\" rel=\"stylesheet\" type=\"text/css\"/\>
+1.  <link href="file.css" rel="stylesheet" type="text/css"/>
 ```
 We will not go into detail about the \<link\> element, but the fact that the type attribute is becoming optional shows the current direction taken by HTML5: towards greater simplicity.
 
 Please see how to include a JavaScript file in our page:
 ```
-1.  \<script src=\"script.js\"\>\</script\>
+1.  <script src="script.js"></script>
 ```
 Here again, the type attribute has been omitted. Just as a reminder, the old way to do the same thing is: 
 ```
-1.  \<script type=\"text/javascript\" src=\"script.js\"\>\</script\>
+1.  <script type="text/javascript" src="script.js"></script>
 ```
 <h3>More flexible syntax constraints</h3>
 
 If you look at the \"minimal document\" example, or at other examples in this course, you won\'t find a lot of differences compared to the same code in XHTML: attribute values are surrounded by quotes, all elements are written in lower case, etc. This is because we are used to writing this way, but HTML5 also supports a simplified syntax:
 <ul>
 <li>Thanks to HTML5, you can omit quotes (not always, but most of the time) or use uppercase, lowercase or a combination of the two.</li><br>
-<li>Many elements no longer need a closing tag: \</li\>, \</dt\>, \</dd\>, \</tr\>, \</th\>, \</td\>, \</thead\>, \</tfoot\>, \</tbody\>, \</option\>, \</optgroup\>, \</p\> (in most cases), \</head\>, \</body\> and \</html\>. Older browsers often add closing tags automatically at render time. We recommend, however, closing tags that would naturally be closed: the ones that delimit a particular zone in the document.</li><br>
-<li>Attribute values only need to be quoted if they contain spaces or some non-alphanumeric characters, instead of writing \<link rel=\"stylesheet\" href=\"style.css\"\>, we could have used \<link rel=stylesheet href=style.css\>. However, for compatibility with older browsers, it is wiser to still use quotes\...</li>
+<li>Many elements no longer need a closing tag: </li>, </dt>, </dd>, </tr>, </th>, </td>, </thead>, </tfoot>, </tbody>, </option>, </optgroup>, </p> (in most cases), </head>, 
+</body> and </html>. Older browsers often add closing tags automatically at render time. We recommend, however, closing tags that would naturally be closed: the ones that 
+delimit a particular zone in the document.</li><br>
+<li>Attribute values only need to be quoted if they contain spaces or some non-alphanumeric characters, instead of writing <link rel="stylesheet" href="style.css">, we could have used <link rel=stylesheet href=style.css\>. However, for compatibility with older browsers, it is wiser to still use quotes...</li>
 </ul>
 
 <h3 id="ch1-3-2">1.3.2 Structural Elements</h3>
@@ -1518,7 +1525,7 @@ However, there are some issues with this approach:
 <li>Even with the same ids and class names, the css rules may be different.</li><br/>
 <li>JavaScript libraries have become increasingly heavy over the years.</li><br/>
 <li>Web pages have become increasingly heavy over the years!</li><br/>
-<li>These elements can not be handled by the Web browser natively\...</li><br/>
+<li>These elements can not be handled by the Web browser natively...</li><br/>
 </ul>
 
 Even if differences exist between ids, classes and css/js implementations, they also share common behaviors, layouts, and \"ways of doing things\" that could be guessed at first glance by a human.
@@ -1564,7 +1571,7 @@ Read also at the end of this section about the new \<main\> element .  This e
 <h3>External resources:</h3>
 <ul>
 <li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/">Structural Semantics: The Importance Of HTML5 Sectioning Elements</a></li>
-<li>A Dev. Opera article: [New Structural Elements in HTML5](https://dev.opera.com/articles/new-structural-elements-in-html5/)</li>
+<li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">New Structural Elements in HTML5</a></li>
 </ul>
 <h3 id="ch1-3-3">1.3.3 Mixing All Elements Together: A Blog Example</h3>
 
@@ -1708,7 +1715,7 @@ Now, we have one big \<section\> element that contains a set of \<article\> 
 > </section>
 ```
 
-**And here is the CSS:**
+<b>And here is the CSS:</b>
 
 ```
 > section {
@@ -1736,11 +1743,11 @@ Note that the H2, article, article header, etc. will be styled using these rules
 <h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 17. image of the header at the top of each article (xx) ------------------->
+<!------------------ 17. image of the header at the top of each article (xx) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image017.jpeg?raw=true"
-   alt="image of the header at the top of each article"
+   alt="Image of the header at the top of each article"
    width="65%" />
 &nbsp;
 <br/>
@@ -1759,20 +1766,20 @@ Example for the first blog article:
      highlighted and you will be able
      to see the different inclusions of elements one in each other. If you
      move the cursor to this sentence, it will be highlighted in dark grey,
-     showing the presence of an &lt;article&gt; element, surrounded by a
-     &lt;section&gt; element (light grey), etc. So we have some articles in
-     a single section element. The page title at the top is a &lt;header&gt;
-     element, while the tag cloud on the right is a &lt;aside&gt; element. The
-     main menu on top (with Blog, About, Contact) is a &lt;nav&gt; element.</p>
+     showing the presence of an <article> element, surrounded by a
+     <section> element (light grey), etc. So we have some articles in
+     a single section element. The page title at the top is a <header>
+     element, while the tag cloud on the right is a <aside> element. The
+     main menu on top (with Blog, About, Contact) is a <nav> element.</p>
      <figure>
          <img src="HTML5-tags.png"
              alt="Example of HTML5 structural tags" />
          <figcaption>
              Fig. 1 : an example of how new structural elements could
-             be used. This page put a &lt;nav&gt; on top, and does not have
+             be used. This page put a <nav> on top, and does not have
              headers and footer for each article, like in this figure,
              but it could... By the way this is a
-             &lt;figcaption&gt; inside a &lt;figure&gt; element...
+             <figcaption> inside a <figure> element...
          </figcaption>
     </figure>
    </article>
@@ -1780,7 +1787,7 @@ Example for the first blog article:
 </section>
 ```
 
-<h4>Use \<figure\> and \<figcaption\> and embed \<img\> inside</h4>
+<h4>Use <figure> and <figcaption> and embed <img> inside</h4>
 
 Also note the way we included a figure using the new \"HTML5\" method, using a \<figure\>..\</figure\> element that embedded a \<img src=\.../\> element together with a \<figcaption\> element. 
 
@@ -1818,7 +1825,7 @@ figcaption {
 }
 ```
 
-<h4>Use an \<aside\> element to display a tag cloud on the\... side of the main content</h4>
+<h4>Use an <aside> element to display a tag cloud on the... side of the main content</h4>
 
 After the long \<section\> element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, \"aside\"! This is done using - you already guessed it - an \<aside\> element:
 
@@ -1850,7 +1857,7 @@ After the long \<section\> element that contains all the blog articles display
 
 We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at <a href="https://jsbin.com/bucokav/edit?html,output">the code of the online example</a>.
 
-<b>Here is the CSS for the \<aside\> element:</b>
+<b>Here is the CSS for the <aside> element:</b>
 
 ```
 aside {
@@ -2146,8 +2153,8 @@ The corresponding outline is:
 
 In the above example, please note two things:
 <ol>
-<li>The outline shows an \"Untitled body\" at the root of the hierarchy,</li>
-<li>The default size for the H1 and H2 is the same (!). Indeed, when we start a \<h1\> inside a \<section\> the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
+<li>The outline shows an "Untitled body" at the root of the hierarchy,</li>
+<li>The default size for the H1 and H2 is the same (!). Indeed, when we start a <h1> inside a <section> the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
 </ol>
 
 <h3 id="ch1-3-6">1.3.6 Best Practices When Using Sectioning Elements</h3>
@@ -2997,7 +3004,7 @@ Use a \"-\" shaped icon, white, when details are displayed:
 &nbsp;
 <br/>
 
-<h4>The \<time\> element</h4>
+<h4>The <time> element</h4>
 
 The \<time\> element is useful for marking a time or a duration in a document.
 
@@ -3023,7 +3030,7 @@ The datetime attribute can be used for indicating a date/time or a duration.
 
 Supports different specifications of time such as \"a year\", \"a month in a year\", \"a week in a year\", \"a time\", etc\... 
 
-#<h4>Here are some examples:
+#<h4>Here are some examples:</h4>
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------
   Different syntaxes of the datetime attribute   
@@ -3049,7 +3056,7 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
   \<time datetime=\"09:00+05:45\"\>              9:00 in the morning, GMT plus 5 hours 45 minutes, (for example, Nepal is 5:45 ahead of  GMT)
   ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<h4>Duration values
+<h4>Duration values</h4>
 
 Duration values use the prefix "P" for "period" as in \<time datetime=\"P4D\"\> (period = four days)\...
 
@@ -3077,22 +3084,19 @@ From Bruce Lawson\'s article : *\"Whichever you choose, it's represented intern
 *You still can't represent dates before the Christian era, as years can't be negative. Neither can you indicate date ranges. To mark up From "21/02/2012 to 25/02/2012″, use two separate \<time\> elements.\"*
 
 Examples:
+```
+<h2>Recipe:</h2>
+<ul>
+  <li> Preparation time: <time datetime="PT30M">30 minutes</time> </li>
+  <li> Cooking time:     <time datetime="PT10M">10 minutes</time> </li>
+</ul>
+```
 
-\<h2\>Recipe:\</h2\>
-
-\<ul\>
-
-  \<li\> Preparation time: \<time datetime=\"PT30M\"\>30 minutes\</time\> \</li\>
-
-  \<li\> Cooking time:     \<time datetime=\"PT10M\"\>10 minutes\</time\> \</li\>
-
-\</ul\>
-
-<h4>The \<time\> element with no attributes
+<h4>The \<time\> element with no attributes</h4>
 
 Used without attributes, the value between the opening \<time\> and closing \</time\> should follow the syntax given by the specification so that machines can understand it (same syntax as the one presented for the datetime attribute in the previous section). However it is recommended to use a datetime attribute, as it gives more freedom in the way you can display the date/time/duration in a human-readable form. 
 
-<h4>External resources:
+<h4>External resources:</h4>
 
 -   From the specification: <https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element>
 
@@ -3104,7 +3108,7 @@ Used without attributes, the value between the opening \<time\> and closing \
 
 -   A CSS Tricks\' article: \"[The \'time\' element](https://css-tricks.com/time-element/)
 
-### The \<mark\> element
+<h4>The <mark> element</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 00.  (xx) ------------------------------->
@@ -3166,7 +3170,7 @@ Source code:
 </body>
 ```
 
-<h4>Change the default style of the \<mark\> element
+<h4>Change the default style of the <mark> element</h4>
 
 If you don\'t like the default yellow background, you may use CSS to change the style of the \<mark\> element:
 
@@ -3295,7 +3299,7 @@ This will indeed force the download of an image with a filename different from i
 
 <b>WARNING</b>: since 2015, and for security reasons, <b>the image should be located on the same domain as the HTML page that contains the link</b> (using a relative URL works well, for example, but linking a page on another domain will not work - it will keep its original name).
 
-<h4>Interesting applications: serverless download
+<h4>Interesting applications: serverless download</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 56. no server picture (xx) ------------------------------->
@@ -3326,7 +3330,7 @@ We have also put the simplified [source code of this demo on JSBin.com](https:/
 <br/>
 ![Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server.](./images/image057.png){width="5.0in" height="4.820754593175853in"}
 
-<h4> External resources:
+<h4> External resources:</h4>
 
 -   From the specification: [downloading resources](https://www.w3.org/TR/2014/REC-html5-20141028/links.html#downloading-resources)
 
@@ -3348,13 +3352,13 @@ Use cases include:
 
 Both [Google translate](https://translate.google.com/) and [Microsoft online translation services](https://www.microsofttranslator.com/) already offer the ability to prevent translation of content by adding markup to your content, although they do it in (multiple) different ways. Hopefully, the new attribute will help significantly by providing a standard approach.
 
-<h4> Principle: give hints to translating tools
+<h4> Principle: give hints to translating tools</h4>
 
 [The specification about the translate attribute](https://www.w3.org/TR/html5/dom.html#the-translate-attribute) tells us that  *\"The translate attribute is an enumerated attribute that is used to specify whether an element\'s attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.*
 
 *The attribute\'s keywords are the empty string, yes, and no. The empty string and the yes keyword map to the yes state. The no keyword maps to the no state. In addition, there is a third state, the inherit state, which is the missing value default (and the invalid value default).\"*
 
-<h4> Example illustrating how to specify parts of an HTML element that should not be translated:
+<h4> Example illustrating how to specify parts of an HTML element that should not be translated:</h4>
 
 1.  \<span <b>[translate=\"no\"]</b> class=\"author\"\>[Michel Ham]\</span\>
 
@@ -3372,7 +3376,7 @@ Will be correctly translated into French by:
 
 \...where all of the end of the sentence has been translated except the author\'s name.
 
-<h4> Inheritance between elements
+<h4> Inheritance between elements</h4>
 
 When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true. 
 
@@ -3771,7 +3775,7 @@ And so on\...
 
 Now, let\'s see what elements are compatible with the itemprop attribute and where the values of the properties are located, depending on each element type.
 
-<h4> The HTML elements compatible with the itemprop attribute
+<h4> The HTML elements compatible with the itemprop attribute</h4>
 
 If the itemprop attribute appears on a:
 
@@ -3807,7 +3811,7 @@ Or for an \<a\> element, the value will be the value of the href attribute:
 
 There are many tools available (most are free) that you can use for generating, visualizing and debugging microdata. We list some of them in this page, but feel free to share the tools you find / like in the forums.
 
-<h4> Microdata generators
+<h4>Microdata generators</h4>
 
 To automatically generate microdata for describing persons, restaurants, movies, products, organizations, etc., there is a wide variety of microdata generators such as these listed below (but do not hesitate to search for \"microdata generators\" using your favorite search engine, and you will find lots!):
 
@@ -4050,17 +4054,17 @@ Here are the most common attributes you can use with the \<video\> element. T
 
 -   loop: Another boolean attribute that indicates to play the video in loop mode (and it starts again when finished).
 
-<h4> Be careful if you target mobile applications or if you have multiple videos on the same page
+<h4> Be careful if you target mobile applications or if you have multiple videos on the same page</h4>
 
 The autoplay attribute is not recommended if your Web site targets mobile applications (actually, it is often ignored by mobile browsers), as it may consume bandwidth even if the user is not interested in watching the proposed video. If you target mobile devices, we recommend using preload=none as well, as the default value for this attribute is auto.
 
 <b>Best practice</b>: do not use autoplay and add preload=\"none\" if you target mobile devices or if you have multiple audio/video files on the same page.  For example, [this page](https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html) contains many audio elements and it does not make sense to have them preload or autoplay.
 
-<h4> About the poster attribute
+<h4> About the poster attribute</h4>
 
 If the poster attribute is missing, usually the first non-blank frame of the video will be used as the image that is shown when the video is not playing. 
 
-<h4> About the autoplay attribute for general use
+<h4> About the autoplay attribute for general use</h4>
 
 Do not abuse of the autoplay attribute. We talked earlier about mobile applications, but even on desktop applications it\'s usually a bad idea to use it (except for WebCams and for some animations with small video loops, without sound, or for sites like YouTube, with just videos).
 
@@ -4319,7 +4323,7 @@ Full width, resizable, borderless YouTube video. To do this: just 100% standard 
 
 The CSS and JavaScript codes for this example are exactly the same as in Example #1.
 
-<h4> Full screen video, pure CSS approaches
+<h4> Full screen video, pure CSS approaches</h4>
 
 1.  Let\'s use the video from the PayPal Web site, played full screen using only very simple CSS.
 
@@ -4583,7 +4587,7 @@ Try the [direct link](https://www.w3.org/2010/05/video/mediaevents.html), and p
 &nbsp;
 <br/>
 
-<h4> Here is a table that shows the most interesting methods, properties, and events provided by the \<video\> element API
+<h4> Here is a table that shows the most interesting methods, properties, and events provided by the \<video\> element API</h4>
 
 We provide this as a quick reminder - keep in mind that the [complete list](https://html.spec.whatwg.org/multipage/media.html#mediaevents) is much longer! 
 
@@ -4653,7 +4657,7 @@ Try it online:
    width="45%" />
 &nbsp;
 
-<h4>Source code extract:
+<h4>Source code extract:</h4>
 ```
 <video id="vid" controls>
 <source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
@@ -5556,7 +5560,7 @@ The \<track\> element comes with a powerful API that is used to develop many
 
 ### Examples of use
 
-<h4> Example #1: add a navigation menu to start playing the video at given chapters
+<h4> Example #1: add a navigation menu to start playing the video at given chapters</h4>
 
 This example shows a video with an enhanced progress bar that displays the different chapters as small \"clickable\" squares. Furthermore, using the JavaScript API of the \<track\> element, this Web site builds a navigation menu (on the right of the video):
 <!------------------------------------------------------------------------------------------------>
@@ -5569,7 +5573,7 @@ This example shows a video with an enhanced progress bar that displays the diffe
 &nbsp;
 <br/>
 
-<h4> Example #2: sync video with Google Map and Google Street View
+<h4> Example #2: sync video with Google Map and Google Street View</h4>
 
 Check [this demo](https://simpl.info/track/map/index.html) (only on Chrome) by [Sam Dutton](https://samdutton.com/): it shows a video that comes with a WebVTT file that contains longitudes and latitudes. When the video plays, JavaScript functions are called at given times and get the longitude and latitude. A Google Map and a Google Street views are updated in real time.
 <!------------------------------------------------------------------------------------------------>
@@ -5582,7 +5586,7 @@ Check [this demo](https://simpl.info/track/map/index.html) (only on Chrome) by
 &nbsp;
 <br/>
 
-<h4> Example #3: sync guitar tablatures and music score with a video
+<h4> Example #3: sync guitar tablatures and music score with a video</h4>
 
 This example shows how we manage to render music scores in real time as the video plays. 
 
@@ -5940,7 +5944,7 @@ Code source:
 
 ### Other examples that mix what we\'ve seen in previous chapters, but this time with a live video stream
 
-<h4> Applying CSS effects on a video element with a live webcam
+<h4> Applying CSS effects on a video element with a live webcam</h4>
 
 ![Resulting image of Michel Buffa using his WebCam with css filter effects on live stream](media/image108.jpeg){width="3.0in" height="4.110464785651794in"}
 
@@ -6629,10 +6633,10 @@ Click \"start recording\", then press the play button on the video element on th
 <h4>1 - Create a mediaRecorder from a stream</h4>
 
 Source code extract:
-
+```
 1.  var options = {mimeType: \'video/webm; codecs=vp9\'};
-
 2.  mediaRecorder = new MediaRecorder(stream, options);
+```
 
 \... where stream is typically the object returned by the call to getUserMedia (see previous examples).
 
@@ -20833,4 +20837,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-13-2022 10:21pm</i></b></h3>
+<h3><b><i>07-16-2022 2:47am</i></b></h3>
