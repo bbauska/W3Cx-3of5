@@ -5222,32 +5222,23 @@ So, let\'s suppose you have a video like the one below (we included it on YouTub
 &nbsp;
 
 And if you\'ve also got it in mp4/H264 and in webm formats, here is how you can embed it in your page using the video element:
+```
+<video id="myVideo" width=500 controls>
+  <source
+      src="videos/SameOldSongAndDanceRogerLathaudPart1MidRes.mp4"
+      type="video/mp4">
+  <source
+      src="videos/SameOldSongAndDanceRogerLathaudPart1MidRes.webm"
+      type="video/webm">
 
-\<video id=\"myVideo\" width=500 controls\>
-
-  \<source  
-
-      src=\"videos/SameOldSongAndDanceRogerLathaudPart1MidRes.mp4\"
-
-      type=\"video/mp4\"\>
-
-  \<source   
-
-      src=\"videos/SameOldSongAndDanceRogerLathaudPart1MidRes.webm\"
-
-      type=\"video/webm\"\>
-
- 
-
-  \<track src=\"videos/subtitles.vtt\"   
-
-         kind=\"subtitles\" srclang=\"en\" default\>
-
-\</video\>
+  <track src="videos/subtitles.vtt"
+         kind="subtitles" srclang="en" default>
+</video>
+```
 
 At *line 9*, we added a \<track\> element to add English subtitles, as the guitar teacher there is speaking in French. We will now explain how we created this subtitle track.
 
-### Adding subtitles to the video
+<h4>Adding subtitles to the video</h4>
 
 Now, we need to create a WebVTT file for this video. How can we synchronize an English translation of what the guitar teacher says in French?
 
@@ -5255,44 +5246,38 @@ Many tools - both free and commercial - are available to add subtitles to a vid
 
 Go to the above Web site, click on the \"subtitle a video\" link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it\'s better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 88.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image088.png?raw=true"
    alt=""
-   width="35%">
+   width="40%">
 &nbsp;
 <br/>
-
-![](./images/image088.png){width="4.0in" height="3.3752187226596675in"}
 
 Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 99.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image099.png?raw=true"
    alt=""
-   width="35%">
+   width="60%">
 &nbsp;
 <br/>
-
-![](./images/image089.png){width="6.0in" height="5.204489282589677in"}
 
 Note that YouTube can also help you \"make subtitles\" with its speech recognition tool, but you will only be able to export in .srt format afterwards. You will have to convert this format afterwards to .vtt.
 
-### Try your subtitled/captioned video
+<h4>Try your subtitled/captioned video</h4>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 90.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image090.png?raw=true"
    alt=""
-   width="35%">
+   width="40%">
 &nbsp;
 <br/>
-
-![](./images/image090.png){width="4.0in" height="2.306801181102362in"}
 
 <h3 id="ch2-3-4">2.3.4 Styling Captions</h3>
 
@@ -5403,16 +5388,14 @@ And so on. Please look at the video as it is self-explanatory.
 
 One can use the HTML elements  \<b\>, \<i\>, \<u\> to modify the rendering of subtitles and captions, as illustrated in the example below:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 93.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image093.png?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-
-![](./images/image093.png){width="6.5in" height="2.8361111111111112in"}
 
 ### Using CSS classes for styling
 
@@ -5521,7 +5504,7 @@ Example of a WebVTT file that defines chapters:
 
 An example of what you can achieve using chapters, using the [JW Player](https://www.jwplayer.com/):
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 96.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image096.png?raw=true"
@@ -5564,7 +5547,7 @@ The \<track\> element comes with a powerful API that is used to develop many
 
 This example shows a video with an enhanced progress bar that displays the different chapters as small \"clickable\" squares. Furthermore, using the JavaScript API of the \<track\> element, this Web site builds a navigation menu (on the right of the video):
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00. navigation menu using the track javascript api (xx) ------------------------------->
+<!----------------------------- 97. navigation menu using the track javascript api (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image097.jpeg?raw=true"
@@ -5592,7 +5575,7 @@ This example shows how we manage to render music scores in real time as the vi
 
 Some JavaScript code listens to the ontimeupdate event while the video is playing. We use the currentTime property of the video to know exactly where we are in the video. Finally, we also rely on an external library to render in an HTML5 canvas the bars corresponding to the current video explanations. We render in real time guitar pro tablatures using the alphatab.net library.
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 99.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image099.png?raw=true"
@@ -5710,38 +5693,36 @@ Chapters and chapter thumbnails (JWPlayer):
 PayPal accessible player:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 104.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image104.png?raw=true"
+   alt="Paypal accessible player"
+   width="55%">
 &nbsp;
 <br/>
-![paypal accessible player](./images/image104.png){width="5.427083333333333in" height="3.4895833333333335in"}
 
 LeanBack (says \"free for non-commercial use\", licensing is not very clear\...):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 105.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image105.png?raw=true"
    alt=""
-   width="35%">
+   width="60%">
 &nbsp;
 <br/>
-![](./images/image105.png){width="6.0in" height="5.586537620297463in"}
 
 <h3 id="ch2-4-1">2.4.1 Webcam</h3>
 
-### Introduction
+<h4>Introduction</h4>
 
 HTML5 has introduced, with the getUserMedia and MediaDevices APIs, a way to control webcams and microphones programmatically. This allows, for example, to create an identification form where one can simply click on a button to capture his portrait from the Webcam of his computer or smartphone. It will also allow to record a video or audio extract (for example for a \"telephone answering machine\" type application), to create video conference applications running in the Web browser, or even musical applications if you plug a guitar into a sound card. The possibilities are numerous.\
-\
+
 We will therefore study together how to access the audio and video streams of the hardware on which a Web application is going to run, and how to parameterize them (choice of camera, resolution, etc.).
 
-### The getUserMedia API
+<h4>The getUserMedia API</h4>
 
 The [getUserMedia API](https://www.w3.org/TR/mediacapture-streams/) is useful for controlling a Webcam video stream.
 
@@ -5750,96 +5731,67 @@ This API is one component of the [WebRTC specification](https://www.w3.org/TR/w
 The getUserMedia API, when dealing with video streams, is always used in conjunction with the \<video\> element.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 106.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image106.jpeg?raw=true"
+   alt="Screenshot of a simple Web camera webcam display in a Web page."
+   width="30%">
 &nbsp;
 <br/>
-![screenshot of a simple Web camera webcam display in a Web page](./images/image106.jpeg){width="3.3020833333333335in" height="3.15625in"}
 
-### Typical use of the getUserMedia API with a Webcam
+<h4>Typical use of the getUserMedia API with a Webcam</h4>
 
 The main idea is to set the srcObject attribute of a \<video\> element to the live video stream object coming out of the Webcam. To get this stream, you\'ll have to call the navigator.getUserMedia(params) method from the getUserMedia API, that returns an ES6 promise (ES stands for \"ECMAScript\" and is the scripting language that forms the basis of JavaScript). Do not panic if you do not know ES6\'s promises! The syntax is very simple, and you\'ll learn what you need from the provided examples.
 
 The stream is passed as a parameter to the then() method returned by the promise, as in this typical example (you can run it and see the result by clicking on the \"CodePen\" logo at the top right):
 
-\<video id=\"myVideo\" autoplay\>Fallback msg here.\</video\>
-
-\<script\>
-
+```
+<video id="myVideo" autoplay>Fallback msg here.</video>
+<script>
 if (navigator.mediaDevices.getUserMedia) {
-
-// request video and audio stream from the user\'s webcam
-
+// request video and audio stream from the user's webcam
 navigator.mediaDevices.getUserMedia({
-
 audio: true,
-
 video: true
-
-}).then((stream) =\> {
-
-let video = document.querySelector(\'#myVideo\');
-
+}).then((stream) => {
+let video = document.querySelector('#myVideo');
 video.srcObject = stream;
-
 video.play();
-
-}).catch((error) =\> {
-
-console.log(\'navigator.getUserMedia error: \', error);
-
+}).catch((error) => {
+console.log('navigator.getUserMedia error: ', error);
 });
-
 }
-
-\</script\>
-
+</script>
 We can also simplify the code by using a writing with async/await of JavaScript:
-
-\<video id=\"myVideo\" autoplay\>Fallback msg here.\</video\>
-
-\<script\>
-
+<video id="myVideo" autoplay>Fallback msg here.</video>
+<script>
 async function startWebCam() {
-
-// request video and audio stream from the user\'s webcam
-
+// request video and audio stream from the user's webcam
 let stream = await navigator.mediaDevices.getUserMedia({
-
 audio: true,
-
 video: true
-
 });
-
-let video = document.querySelector(\'#myVideo\');
-
+let video = document.querySelector('#myVideo');
 video.srcObject = stream;
-
 video.play();
-
 }
-
 startWebCam();
-
-\</script\>
+</script>
+```
 
 **HTTPS is mandatory:** for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.
 
 Support of getUserMedia/stream is [very good in all modern browsers](https://caniuse.com/stream), including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.
 
-### 2.4.1 More On getUserMedia
+<h3 id="ch2-4-1">2.4.1 More On getUserMedia</h3>
 
 Let\'s see some more examples of what we can do with the getUserMedia API: start/stop the Webcam, take a screenshot from the current video stream from the Webcam, and apply CSS effects in real time. Below, we give links to some cool examples available on the Web.
 
-### How to stop/release the Webcam
+<h4>How to stop/release the Webcam</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 107.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image107.jpeg?raw=true"
