@@ -2056,7 +2056,7 @@ This chart from the [HTML5 Doctor Web site](https://html5doctor.com/) may hel
 
 We will now present some best practices for starting to use \<section\>, \<article\>, \<nav\>, \<aside\>, in particular concerning the use of headings (h1, h2, h3, h4, h5 and h6).
 
-<h4>Use <h1>...<h6> for the headings</h4>
+<h4>Use &lt;h1&gt;...&lt;h6&gt; for the headings</h4>
 
 Since the very beginning, HTML has had heading elements: \<h1\>\...\<h6\>. These elements are used to display headings with different sizes by default, when no CSS is used.  The following example shows 6 sentences that are surrounded by \<h1\>, \<h2\>, \<h3\>, \<h4\>, \<h5\> and \<h6\>:
 
