@@ -377,7 +377,7 @@ Tim Berners-Lee at his desk in CERN, 1994
 
 In October 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology, Laboratory for Computer Science \[MIT/LCS\] in collaboration with <a href="https://home.cern/">CERN</a>, where the Web originated (see information on the <a href="https://www.w3.org/Daemon/">original CERN Server</a>, with support from DARPA and the <a href="https://ec.europa.eu/index_en.htm">European Commission</a>.
 
-In April 1995, <a href="https://www.inria.fr/">Inria</a> became the first European W3C host, followed by <a href="https://www.keio.ac.jp/>Keio University of Japan</a> (Shonan Fujisawa Campus) in Asia in 1996. In 2003, <a href="https://www.ercim.eu/">ERCIM</a> took over the role of European W3C Host from Inria. In 2013, W3C announced <a href="https://ev.buaa.edu.cn/">Beihang University</a> as the fourth Host.
+In April 1995, <a href="https://www.inria.fr/">Inria</a> became the first European W3C host, followed by <a href="https://www.keio.ac.jp/">Keio University of Japan</a> (Shonan Fujisawa Campus) in Asia in 1996. In 2003, <a href="https://www.ercim.eu/">ERCIM</a> took over the role of European W3C Host from Inria. In 2013, W3C announced <a href="https://ev.buaa.edu.cn/">Beihang University</a> as the fourth Host.
 
 In addition to these four Host locations that employ W3C staff, there are <a href="https://www.w3.org/Consortium/Offices/staff">W3C Offices</a> around the globe that support the developer communities in their regions and organize local events. Find the one next to your place!
 
@@ -2373,10 +2373,10 @@ Indeed, tools that generate the table of contents are a good way to debug the 
 
 They are also useful for checking the presence of headings in each sectioning content. If some headings are missing, the table of contents will display some \"untitled entries\". Remember that having a heading after each sectioning content is a good practice in terms of accessibility.
 
-<h3 id="ch1-3-8">1.3.8 The \<main\> Element</h3>
+<h3 id="ch1-3-8">1.3.8 The <main> Element</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 31. (##) ------------------------------->
+<!----------------------------- 31. the main element (##) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image031.jpeg?raw=true"
@@ -2388,7 +2388,7 @@ If you use \<nav\> / \<header\> / \<footer\> etc. to structure your docume
 
 We have seen the different sectioning elements of HTML5, so why didn\'t we talk about the \<main\> element earlier in this part of the course? Shouldn\'t  \<main\>\...\</main\> be used in place of  \<div class=\"main\"\>\...\</div\>?
 
-The \<main\> element is supported by major modern browsers (see the corresponding [support table](https://caniuse.com/#feat=mdn-html_elements_main) on CanIUse and [MDN\'s brower compatibility page](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main#Browser_compatibility)).
+The \<main\> element is supported by major modern browsers (see the corresponding <a hre="https://caniuse.com/#feat=mdn-html_elements_main">[support table]</a> on CanIUse and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main#Browser_compatibility">MDN\'s brower compatibility page</a>.
 
 This element is subject to some constraints:
 
@@ -2396,90 +2396,90 @@ This element is subject to some constraints:
 
 -   It must not be a descendant of an \<article\>,\<aside\>, \<footer\>, \<header\>, or \<nav\> element.
 
-And finally, here are some examples (from [the HTML5 specification](https://www.w3.org/TR/html5/grouping-content.html#the-main-element))  that mix the \<main\> element with the other sectioning elements already seen in the course:
+And finally, here are some examples (from <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">the HTML5 specification</a>) that mix the \<main\> element with the other sectioning elements already seen in the course:
 
 ```
-1.  \<!\-- other content \--\>
+1.  <!-- other content -->
 2.  
-3.  \<main\>
+3.  <main>
 4.  
-5.     \<h1\>Skateboards\</h1\>
-6.     \<p\>The skateboard helps kids to get around.\</p\>
+5.     <h1>Skateboards</h1>
+6.     <p>The skateboard helps kids to get around.</p>
 7.  
-8.     \<article\>
-9.        \<h2\>Longboards\</h2\>
-10.       \<p\>Longboards are a type of skateboard with a longer
-11. wheelbase and larger, softer wheels.\</p\>
-12.       \<p\>\... \</p\>
-13.       \<p\>\... \</p\>
-14.    \</article\>
+8.     <article>
+9.        <h2>Longboards</h2>
+10.       <p>Longboards are a type of skateboard with a longer
+11. wheelbase and larger, softer wheels.</p>
+12.       <p>... </p>
+13.       <p>... </p>
+14.    </article>
 15. 
-16.    \<article\>
-17.       \<h2\>Electric Skateboards\</h2\>
-18.       \<p\>These no longer require the propelling of the skateboard by means of the feet; rather an electric motor propels the board, fed by an electric battery.\</p\>
-19.       \<p\>\... \</p\>
-20.       \<p\>\... \</p\>
-21.    \</article\>
+16.    <article>
+17.       <h2>Electric Skateboards</h2>
+18.       <p>These no longer require the propelling of the skateboard by means of the feet; rather an electric motor propels the board, fed by an electric battery.</p>
+19.       <p>... </p>
+20.       <p>... </p>
+21.    </article>
 22. 
-23. \</main\>
+23. </main>
 24.  
-25. \<!\-- other content \--\>
+25. <!-- other content -->
 ```
 
 Here is another example (also from the specification). Here the \<main\> element contains a \<nav\> element consisting of links to subsections of the main content:
 
-1.  \<!DOCTYPE html\>
-2.     \<html lang=\"en\"\>
-3.        \<head\>
-4.           \<meta charset=\"utf-8\"/\>
-5.           \<title\>Graduation Ceremony Summer 2022\</title\>
-6.        \</head\>
-7.        \<body\>
-8.         \<header\>The Lawson Academy:
-9.           \<nav\>
-10.             \<h2\>Click these links to navigate\...\</h2\>
-11.             \<ul\>
-12.                \<li\>\<a href=\"courses.html\"\>Courses\</a\>\</li\>
-13.                \<li\>\<a href=\"fees.html\"\>Fees\</a\>\</li\>
-14.                \<li\>\<a\>Graduation\</a\>\</li\>
-15.             \</ul\>
-16.          \</nav\>
-17.       \</header\>
-18.       \<main\>
-19.          \<h1\>Graduation\</h1\>
-20.          \<nav\>
-21.             \<h2\>Please choose:\</h2\>
-22.             \<ul\>
-23.                \<li\>\<a href=\"#ceremony\"\>Ceremony\</a\>\</li\>
-24.                \<li\>\<a href=\"#graduates\"\>Graduates\</a\>\</li\>
-25.                \<li\>\<a href=\"#awards\"\>Awards\</a\>\</li\>
-26.             \</ul\>
-27.          \</nav\>
-28.          \<h2 id=\"ceremony\"\>Ceremony\</h2\>
-29.          \<p\>Opening Procession\</p\>
-30.          \<p\>Speech by Valedictorian\</p\>
-31.          \<p\>Speech by Class President\</p\>
-32.          \<p\>Presentation of Diplomas\</p\>
-33.          \<p\>Closing Speech by Headmaster\</p\>
-34.          \<h2 id=\"graduates\"\>Graduates\</h2\>
-35.          \<ul\>
-36.             \<li\>Eileen Williams\</li\>
-37.             \<li\>Andy Maseyk\</li\>
-38.             \<li\>Blanca Sainz Garcia\</li\>
-39.             \<li\>Clara Faulkner\</li\>
-40.             \<li\>Gez Lemon\</li\>
-41.             \<li\>Eloisa Faulkner\</li\>
-42.          \</ul\>
-43.          \<h2 id=\"awards\"\>Awards\</h2\>
-44.             \<ul\>
-45.                \<li\>Clara Faulkner\</li\>
-46.                \<li\>Eloisa Faulkner\</li\>
-47.                \<li\>Blanca Sainz Garcia\</li\>
-48.             \</ul\>
-49.          \</main\>
-50.       \<footer\>Copyright 2012 B.lawson\</footer\>
-51.    \</body\>
-52. \</html\>
+1.  <!DOCTYPE html>
+2.     <html lang="en">
+3.        <head>
+4.           <meta charset="utf-8"/>
+5.           <title>Graduation Ceremony Summer 2022</title>
+6.        </head>
+7.        <body>
+8.         <header>The Lawson Academy:
+9.           <nav>
+10.             <h2>Click these links to navigate...</h2>
+11.             <ul>
+12.                <li><a href="courses.html">Courses</a></li>
+13.                <li><a href="fees.html">Fees</a></li>
+14.                <li><a>Graduation</a></li>
+15.             </ul>
+16.          </nav>
+17.       </header>
+18.       <main>
+19.          <h1>Graduation</h1>
+20.          <nav>
+21.             <h2>Please choose:</h2>
+22.             <ul>
+23.                <li><a href="#ceremony">Ceremony</a></li>
+24.                <li><a href="#graduates">Graduates</a></li>
+25.                <li><a href="#awards">Awards</a></li>
+26.             </ul>
+27.          </nav>
+28.          <h2 id="ceremony">Ceremony</h2>
+29.          <p>Opening Procession</p>
+30.          <p>Speech by Valedictorian</p>
+31.          <p>Speech by Class President</p>
+32.          <p>Presentation of Diplomas</p>
+33.          <p>Closing Speech by Headmaster</p>
+34.          <h2 id="graduates">Graduates</h2>
+35.          <ul>
+36.             <li>Eileen Williams</li>
+37.             <li>Andy Maseyk</li>
+38.             <li>Blanca Sainz Garcia</li>
+39.             <li>Clara Faulkner</li>
+40.             <li>Gez Lemon</li>
+41.             <li>Eloisa Faulkner</li>
+42.          </ul>
+43.          <h2 id="awards">Awards</h2>
+44.             <ul>
+45.                <li>Clara Faulkner</li>
+46.                <li>Eloisa Faulkner</li>
+47.                <li>Blanca Sainz Garcia</li>
+48.             </ul>
+49.          </main>
+50.       <footer>Copyright 2012 B.lawson</footer>
+51.    </body>
+52. </html>
 ```
 
 <h4>Best practice</h4>
@@ -2489,24 +2489,22 @@ For accessibility matters, a best practice is to split your page content into \"
 We recommend this article written by Steve Faulkner: \"[Easy content organisation with HTML5](https://www.paciellogroup.com/blog/2015/09/easy-content-organisation-with-html5/)\" (24 September 2015). Steve explains in details how to organize an HTML document into \"regions\" based on the semantic markup elements we have seen so far during Module 1 of this course.
 
 <h4>External resources:</h4>
-
--   This [document](https://www.w3.org/TR/html5/grouping-content.html#the-main-element) has been written by the W3C HTML5 Working Group, which details the different use-cases for this element
-
--   [Rationale and use cases for standardizing a \'main content\' HTML feature](https://www.w3.org/html/wg/wiki/User:Sfaulkne/main-usecases)
-
--   On MDN\'s Web Docs: the [main element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main)
+<ul>
+<li>This <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">document</a> has been written by the W3C HTML5 Working Group, which details the different use-cases for this element.</li>
+<li><a href="https://www.w3.org/html/wg/wiki/User:Sfaulkne/main-usecases">Rationale and use cases for standardizing a \'main content\' HTML feature</a>.</li>
+<l>On MDN\'s Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">main element.</a>
+</ul>
 
 <h3 id="ch1-3-9">1.3.9 The Blog Example, Applying Best Practices</h3>
 
 Let\'s go back to our blog example and see what can be improved:
+<ul>
+<li>Do we have a heading after each sectioning element?</li>
+<li>Did we use sectioning elements or implicit sections?</li>
+<li>Can we embed a table of contents?</li>
+</ul>
 
--   Do we have a heading after each sectioning element?
-
--   Did we use sectioning elements or implicit sections?
-
--   Can we embed a table of contents?
-
-[The blog example is online at JsBin](https://jsbin.com/heboke/edit?html,output):  let\'s see below what the Google Chrome HTML5 Outliner extension showed.
+<a href="https://jsbin.com/heboke/edit?html,output">The blog example is online at JsBin</a>:  let\'s see below what the Google Chrome HTML5 Outliner extension showed.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------- 32. image of teh blog toc, show an untitled nav entry (##) ------------------->
@@ -2520,18 +2518,18 @@ Let\'s go back to our blog example and see what can be improved:
 Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an \<article\> that is in a \<section\> (this corresponds to the third example given in the \"heading and sectioning elements\" part of the course):
 
 ```
-1.  <b>\<section\></b>
-2.     \<header\>
-3.       <b>\<h1\>Blog posts for April 2012\</h1\></b>
-4.     \</header\>
-5.     <b>\<article\></b>
-6.       \<header\>
-7.         <b>\<h1\>\<a href=\"\"\>Information about this example\</a\>\</h1\></b>
-8.         This example is a modified version of \<a href=\"https://example.com/blog/index.html\"\>https://example.com/blog/index.html\</a\>
-9.       \</header\>
-10.      \...
-11.    \</article\>
-12. \</section\>
+1.  <b><section></b>
+2.     <header>
+3.       <b><h1>Blog posts for April 2012</h1></b>
+4.     </header>
+5.     <b><article></b>
+6.       <header>
+7.         <b><h1><a href="">Information about this example</a></h1></b>
+8.         This example is a modified version of <a href="https://example.com/blog/index.html">https://example.com/blog/index.html</a>
+9.       </header>
+10.      ...
+11.    </article>
+12. </section>
 ```
 
 With this technique, parts of the document can be moved more easily, or integrated inside an RSS stream, without the need to renumber the headings.
@@ -2543,22 +2541,22 @@ Beware that this technique will require you to use some CSS styling, and may con
 We need to add a heading in the \<nav\> element. This will both fix the outline of the document by removing the untitled entry, and will also make screen readers happy as they will better vocalize the structure of the page (it will say \"entering nav\" followed by the vocalization of the heading content).
 
 ```
-1.  \<nav\>
-2.     <b>\<header\></b>
-3.       <b>\<h1\>Navigation menu\</h1\></b>
-4.     <b>\</header\></b>
-5.     \<ul\>
-6.       \<li\>\<span\>Blog\</span\>\</li\>
-7.       \<li\>\<a href=\"\"\>About\</a\>\</li\>
-8.       \<li\>\<a href=\"\"\>Contact\</a\>\</li\>
-9.     \</ul\>
-10. \</nav\>
+1.  <nav>
+2.     <b><header></b>
+3.       <b><h1>Navigation menu</h1></b>
+4.     <b></header></b>
+5.     <ul>
+6.       <li><span>Blog</span></li>
+7.       <li><a href="">About</a></li>
+8.       <li><a href="">Contact</a></li>
+9.     </ul>
+10. </nav>
 ```
 
 <b>Here is the fixed result:</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- xx.  (xx) ------------------->
+<!---------------- 33.  (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image033.jpeg?raw=true"
@@ -2646,29 +2644,29 @@ We embed examples from this [very good post about \"Positioning content\"](http
 
 The 4 examples below are given \"as is\" to give you some hints. There are lots of other possibilities on using CSS to position element.
 
-### Example #1: a \<section\> on the left and an \<aside\> on the right, using the float and width CSS properties
+<h4>Example #1: a <section> on the left and an <aside> on the right, using the float and width CSS properties</4>
 
 This example uses the following HTML structure (notice that we use the \"HTML entity syntax\" for displaying \"\<\" or \"\>\". For example, &lt; displays a \"\<\" character).
 
 ```
-1.  <header\>
-2.  <code\>&lt;header&gt;\</code\>
-3.  </header\>
+1.  <header>
+2.  <code>&lt;header&gt;</code>
+3.  </header>
 4.   
-5.  <section\>
-6.  <code\>&lt;section&gt; \<br\> float: left;\</code\>
-7.  </section\>
+5.  <section>
+6.  <code>&lt;section&gt; <br> float: left;</code>
+7.  </section>
 8.   
-9.  <aside\>
-10. <code\> right;\</code\>
-11. </aside\>
+9.  <aside>
+10. <code> right;</code>
+11. </aside>
 12.  
 13. <footer>
 14. <code>&lt;footer&gt;</code>
 15. </footer>
 ```
 
-Here we use the CSS rule float:left for the \<section\> and the CSS rule float:right for the \<aside\>. When an element floats, it goes out of the normal flow of the HTML element. Then by default it floats to the edge of its parent; and its size depends on the elements it contains. So, in order to fill the whole horizontal space, we prefer here to \"force the width\" by setting the CSS width property with a percentage.  So we took width: 63% for the \<section\> on the left and width:30% for the \<aside\> on the right.
+Here we use the CSS rule float:left for the <section\> and the CSS rule float:right for the \<aside\>. When an element floats, it goes out of the normal flow of the HTML element. Then by default it floats to the edge of its parent; and its size depends on the elements it contains. So, in order to fill the whole horizontal space, we prefer here to \"force the width\" by setting the CSS width property with a percentage.  So we took width: 63% for the \<section\> on the left and width:30% for the \<aside\> on the right.
 
 You can look at the complete CSS code in the interactive example below (click on the CSS or HTML text in the menu bar below, or click \"edit on codepen\" to change the code and see the results):
 <!------------------------------------------------------------------------------------------------>
@@ -2681,7 +2679,7 @@ You can look at the complete CSS code in the interactive example below (click on
 &nbsp;
 <br/>
 
-[Also available online at JSBin](https://jsbin.com/dufapo/edit?html,css,output).
+<a href="https://jsbin.com/dufapo/edit?html,css,output">Also available online at JSBin</a>.
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 36.  (xx) ------------------->
@@ -2700,25 +2698,25 @@ Here we show how to make a 3 column layout using the CSS float property.
 <b>HTML code:</b>
 
 ```
-1.  \<header\>
-2.  \<code\>&lt;header&gt;\</code\>
-3.  \</header\>
+1.  <header>
+2.  <code>&lt;header&gt;</code>
+3.  </header>
 4.   
-5.  \<section\>
-6.  \<code\>&lt;section&gt; \<br\> float: left;\</code\>
-7.  \</section\>
+5.  <section>
+6.  <code>&lt;section&gt; <br> float: left;</code>
+7.  </section>
 8.   
-9.  \<section\>
-10. \<code\>&lt;section&gt; \<br\> float: left;\</code\>
-11. \</section\>
+9.  <section>
+10. <code>&lt;section&gt; <br> float: left;</code>
+11. </section>
 12.  
-13. \<section\>
-14. \<code\>&lt;section&gt; \<br\> float: left;\</code\>
-15. \</section\>
+13. <section>
+14. <code>&lt;section&gt; <br> float: left;</code>
+15. </section>
 16.  
-17. \<footer\>
-18. \<code\>&lt;footer&gt;\</code\>
-19. \</footer\>
+17. <footer>
+18. <code>&lt;footer&gt;</code>
+19. </footer>
 ```
 
 Instead of having one element with a float:left and one element with a float:right property, we instead use float:left for all three of them, and we give a  width:30% CSS property value to each \<section\>. We also set a small margin so that the colums have a gap between them.
@@ -2768,10 +2766,10 @@ This example also uses all the structuring elements we saw: main, article, secti
 <li>An article on CSS Tricks: <a href="https://css-tricks.com/all-about-floats/">All about floats</a></li>
 <li>Old but good article on \"A List Apart\" (ALA): <a href="https://alistapart.com/article/css-floats-101">CSS Floats 101</a></li>
 <li>Another article on Lifewire:<a href="https://www.lifewire.com/understanding-css-float-3466205"> Understanding CSS float</a></li>
-<li>On MDN\'s Web Docs: the [float CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/float) and the [clear CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/clear)</li>
+<li>On MDN\'s Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">float CSS property</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear">clear CSS property</a></li>
 </ul>
 
-<h3 id="ch1-4">1.4.1 The \<details\> and \<summary\> Elements</h3>
+<h3 id="ch1-4">1.4.1 The <details> and <summary> Elements</h3>
 
 These elements have been introduced for displaying a foldable zone in an HTML document.
 
@@ -2884,8 +2882,8 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> elem
 > <summary>
 > Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
 > </summary>
-> <p>Before finishing him, try to cut his trail, you will get a new weapon\</p\>
-> <p>Just try to stay behind him as long as you can, hitting his tail with your melee weapon, after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.\</p\>
+> <p>Before finishing him, try to cut his trail, you will get a new weapon</p>
+> <p>Just try to stay behind him as long as you can, hitting his tail with your melee weapon, after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.</p>
 > </details>
 > </details>
 ```
@@ -2927,10 +2925,10 @@ In this example: red arrow, white background.
 &nbsp;
 <br/>
 
-Once opened, the selector details\[open\] can style the icon when \<details\> is unfolded. In this example: blue arrow, turquoise background. Here is the corresponding CSS rule:
+Once opened, the selector details[open] can style the icon when <details> is unfolded. In this example: blue arrow, turquoise background. Here is the corresponding CSS rule:
 
 ```
-1.  details\[open\] summary::-webkit-details-marker {
+1.  details[open] summary::-webkit-details-marker {
 2.  color:#0000FF;
 3.  background:#00FFFF;
 4.  }
@@ -2966,7 +2964,7 @@ Use a \"+\" shaped icon, pink, bold, etc\... :
 
 ```
 1.  summary:after {
-2.  content: \"+\";
+2.  content: "+";
 3.  color: #FF00FF;
 4.  float: left;
 5.  font-size: 1.5em;
@@ -2981,15 +2979,15 @@ Use a \"+\" shaped icon, pink, bold, etc\... :
 Use a \"-\" shaped icon, white, when details are displayed:
 
 ```
-1.  details\[open\] summary:after {
-2.  content: \"-\";
+1.  details[open] summary:after {
+2.  content: "-";
 3.  color: #FFFFFF
 4.  }
 ```
 
 <h4>Current browser support</h4>
 <ul>
-<li>On CanIUse: <a href="https://caniuse.com/#feat=details">compatibility table for details and summary elements</li>
+<li>On CanIUse: <a href="https://caniuse.com/#feat=details">compatibility table for details and summary elements</a></li>
 </ul>
 
 <h3 id="ch1-4-2">1.4.2 The \<time\> and \<mark\> Elements</h3>
@@ -3017,9 +3015,9 @@ The machine readable part adds semantics that can be used by search engines for 
 1.  We open at <b><time>10:00</time> every morning.
 2.  
 3.  I have a meeting the <b><time datetime="2020-02-14">Monday 14/02/2020.</time></b>.
-4.  Blog posts from the year <b>\<time datetime=\"2020\"\>2020\</time\></b>.
-5.  Archives, blog posts for <b>\<time datetime=\"2020-04\"\>April 2020\</time\></b>
-6.  This recipe was published by Michel the <b>\<time datetime=\"2020-04-16\"\>April 16, 2020\</time\></b>.
+4.  Blog posts from the year <b><time datetime="2020">2020</time></b>.
+5.  Archives, blog posts for <b><time datetime="2020-04">April 2020</time></b>
+6.  This recipe was published by Michel the <b><time datetime="2020-04-16">April 16, 2020</time></b>.
 ```
 
 <h4>The datetime attribute</h4>
@@ -3030,7 +3028,7 @@ The datetime attribute can be used for indicating a date/time or a duration.
 
 Supports different specifications of time such as \"a year\", \"a month in a year\", \"a week in a year\", \"a time\", etc\... 
 
-#<h4>Here are some examples:</h4>
+<h4>Here are some examples:</h4>
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------
   Different syntaxes of the datetime attribute   
@@ -3097,54 +3095,49 @@ Examples:
 Used without attributes, the value between the opening \<time\> and closing \</time\> should follow the syntax given by the specification so that machines can understand it (same syntax as the one presented for the datetime attribute in the previous section). However it is recommended to use a datetime attribute, as it gives more freedom in the way you can display the date/time/duration in a human-readable form. 
 
 <h4>External resources:</h4>
-
--   From the specification: <https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element>
-
--   On MDN\'s Web Docs: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time>
-
--   MDN\'s browser compatibility [table](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility) for \<time\>
-
--   Old but interesting article by Bruce Lawson: <https://www.brucelawson.co.uk/2012/best-of-time/>
-
--   A CSS Tricks\' article: \"[The \'time\' element](https://css-tricks.com/time-element/)
+<ul>
+<li>From the specification: <https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element></li>
+<li>On MDN\'s Web Docs: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time></li>
+<li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility">table</a> for <time></li>
+<li>Old but interesting article by Bruce Lawson: <https://www.brucelawson.co.uk/2012/best-of-time/></li>
+<li>A CSS Tricks' article: "<a href="(https://css-tricks.com/time-element/">[The 'time' element]</a></li>
+</ul>
 
 <h4>The <mark> element</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 51.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image051.jpeg?raw=true"
+   alt="Picture of a yellow hightlighter pen."
+   width="45%">
 &nbsp;
 <br/>
-![Picture of a yellow hightlighter pen](./images/image051.jpeg){width="4.34375in" height="0.9791666666666666in"}
 
 The HTML \<mark\> tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.
 
 Some use cases:
-
--   Display search results with search strings highlighted in the results.
-
--   \>Highlight important parts of a text, such as \"quoting parts\", etc.
-
--   Replace \<strong\> and \<em\> with \<mark\> when suitable.
+<ul>
+<li>Display search results with search strings highlighted in the results.</li.
+<li>Highlight important parts of a text, such as "quoting parts", etc.</li>
+<li>Replace <strong> and <em> with <mark> when suitable.</li>
+</ul>
 
 Example 1: <https://jsbin.com/tafelic/edit?html,output>
 
 Source code:
 ```
-\<!DOCTYPE html\>
-\<html lang=\"en\"\>
-\<head\>
-\<meta charset=utf-8 /\>
-\<title\>JS Bin\</title\>
-\</head\>
-\<body\>
-\<p\>Project is due in <b>\<mark\>.zip format\</mark\></b> next monday.\</p\>
-\</body\>
-\</html\>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
+<body>
+<p>Project is due in <b><mark>.zip format</mark></b> next monday.</p>
+</body>
+</html>
 ```
 
 Example 2:
@@ -3186,7 +3179,7 @@ For example:
 &nbsp;
 <br/>
 
-\... comes with this CSS rule:
+... comes with this CSS rule:
 
 ```
 1.  mark {
@@ -3215,27 +3208,28 @@ Everyone knows the classic way to make hyperlinks, using \<a href=\"\...\"\>som
 For example,  HTML code such as this:
 
 ```
-1.  \<a href=\"toto.jpg\"\>
+1.  <a href="toto.jpg">
 ```
 
 ```
 1.      please right click this link to download
-2.      the toto.jpg picture\</a\>
+2.      the toto.jpg picture</a>
 ```
 
 \...will ask the remote HTTP server to send back the toto.jpg file. The browser will receive in the response HTTP header from the server (and by default the browser will display the image in a new tab):
 
 ```
-1.  \...
+1.  ...
 2.  Content-type: image/jpg
-3.  \...
+3.  ...
 ```
 
 However, if the link points to some PHP code,  Java servlet code, or any kind of script/application on the server side, this remote server code can send in its HTTP response a Content-type that may force the browser to download the image instead of rendering it.
 
 It may also propose a name for the file to be downloaded that may be different from the one that appears in the URL of the href attribute. This can be done by generating, in addition to the Content-type line in the response HTTP header, a Content-Disposition line that looks like this:
-
-1.  Content-Disposition: attachment; filename=\"MyImage.png\";
+```
+1.  Content-Disposition: attachment; filename="MyImage.png";
+```
 
 Here are some extracts from a Java Servlet that generate a zip file and forces the browser to propose downloading it using a specified name:
 
@@ -3244,17 +3238,17 @@ Here are some extracts from a Java Servlet that generate a zip file and forces t
 2.  throws ServletException, IOException {
 3.     try {
 4.       // Build the zip file
-5.         String path = getServletContext().getRealPath(\"data\");
+5.         String path = getServletContext().getRealPath("data");
 6.         File directory = new File(path);
-7.         String\[\] files = directory.list();
-8.         if (files != null && files.length \> 0) {
-9.           byte\[\] zip = zipFiles(directory, files);
+7.         String[] files = directory.list();
+8.         if (files != null && files.length > 0) {
+9.           byte[] zip = zipFiles(directory, files);
 10.          ServletOutputStream sos = response.getOutputStream();
 11. 
 12.          // generate a HTTP response that forces the download
-13.          [response.setContentType(\"application/zip\");]
-14.          [response.setHeader(\"Content-Disposition\",]
-15.                             [\"attachment; filename=\\\"DATA.ZIP\\\"\");]
+13.          [response.setContentType("application/zip");]
+14.          [response.setHeader("Content-Disposition",]
+15.                             ["attachment; filename="DATA.ZIP"");]
 16.          sos.write(zip); sos.flush();
 17.        }
 18.     } catch (Exception e) {
@@ -3263,9 +3257,9 @@ Here are some extracts from a Java Servlet that generate a zip file and forces t
 21. }
 ```
 
-The above example will cause the browser that invoked this server-side code to start the download of a file named \"DATA.ZIP\".
+The above example will cause the browser that invoked this server-side code to start the download of a file named "DATA.ZIP\".
 
-### To download a file using an arbitrary name: the download attribute
+<h4>To download a file using an arbitrary name: the download attribute</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------ 54. picture of a road sign with the words 'new way' (54) ---------->
@@ -3279,11 +3273,11 @@ The above example will cause the browser that invoked this server-side code to
 
 HTML5 proposes the use of a new attribute named download to download resources rather than navigating to them. The example below shows how to trigger the download of an image by the browser (instead of rendering it, which is the default behavior) with a name different from the name of the resource.
 
-1.  \<a href=\"normal.gif\" [download]=[\"MichelBuffa.gif\"]\>
+1.  <a href="normal.gif" [download]=["MichelBuffa.gif"]>
 
 2.      download a picture of Michel Buffa
 
-3.  \</a\>
+3.  </a>
 
 This will indeed force the download of an image with a filename different from its original filename on the server side. Here is a screen capture of the Web browser while downloading the picture. We can see in the status bar the name of the link (the image is \"normal.gif\") and the downloaded file is \"MichelBuffa.gif\":
 
@@ -3323,12 +3317,11 @@ We have also put the simplified [source code of this demo on JSBin.com](https:/
 <!----------------------------- 00.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image057.png?raw=true"
+   alt="Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server"
+   width="50%">
 &nbsp;
 <br/>
-![Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server.](./images/image057.png){width="5.0in" height="4.820754593175853in"}
 
 <h4> External resources:</h4>
 
@@ -3336,7 +3329,7 @@ We have also put the simplified [source code of this demo on JSBin.com](https:/
 
 -   From CanIUse: the [browser support of the download attribute](https://caniuse.com/#feat=download)
 
-### The HTML5 translate attribute
+<h4>The HTML5 translate attribute</h4>
 
 HTML5 gives us a new translate attribute. This attribute is used to limit the impact of  translation tools such as [Google Translate](https://translate.google.com/) by prohibiting the translation of certain content. In many cases some parts of a document should not be translated.
 
@@ -3359,29 +3352,28 @@ Both [Google translate](https://translate.google.com/) and [Microsoft online 
 *The attribute\'s keywords are the empty string, yes, and no. The empty string and the yes keyword map to the yes state. The no keyword maps to the no state. In addition, there is a third state, the inherit state, which is the missing value default (and the invalid value default).\"*
 
 <h4> Example illustrating how to specify parts of an HTML element that should not be translated:</h4>
-
-1.  \<span <b>[translate=\"no\"]</b> class=\"author\"\>[Michel Ham]\</span\>
-
+```
+1.  <span <b>[translate="no"]</b> class="author">[Michel Ham]</span\>
+```
 In the above example, a \<span\> element defines an author (of a blog, for example) who is named Michel Ham. However, his family name is the same as pork and would be translated to \"Michel Jambon\" in French, or Michel Jamón in Spanish\...
 
 Using the translate=\"no\" attribute should prevent this behavior\...
-
-1.  \<span <b>[translate=\"no\"]</b> class=\"author\"\>[Michel Ham]\</span\> is a professor
-
+```
+1.  <span <b>[translate=\"no\"]</b> class="author">[Michel Ham]</span> is a professor
 2.  from the University of Nice,France.
-
+```
 Will be correctly translated into French by:
-
-1.  \"[Michel Ham] est un professeur de l\'Université de Nice, France.\"
-
+```
+1.  "[Michel Ham] est un professeur de l'Université de Nice, France."
+```
 \...where all of the end of the sentence has been translated except the author\'s name.
 
 <h4> Inheritance between elements</h4>
 
 When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true. 
-
-1.  \<p <b>[translate=\"no\"]</b>\>This is a text in a paragraph element, that should not be translated: the p element has a translate=\"no\" attribute.[\<span\> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too\</span\>]. This is the end of the paragraph\...\</ p\>
-
+```
+1.  <p <b>[translate="no"]</b>>This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.[<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>]. This is the end of the paragraph\...</ p\>
+```
 ### External resources:
 
 -   From the specification: [the translate attribute](https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute)
@@ -3392,7 +3384,7 @@ When you define an element as not being translatable, its children inherit this 
 
 -   An article from W3C\'s Internationalization Activity: [\"Using HTML\'s translate attribute\"](https://www.w3.org/International/questions/qa-translate-flag)
 
-### 1.5 Microdata
+<h3 id="ch1-5">1.5 Microdata</h3>
 
 There are several ways to provide machine-readable content embedded in a classical Web document: [HTML+RDFa](https://www.w3.org/TR/html-rdfa/), [microformats](http://microformats.org/), [JSON-LD](https://json-ld.org/), HTML5 microdata. In this section, we focus on microdata.
 
