@@ -3854,30 +3854,28 @@ Structure:
 Microdata:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 66.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image066.jpeg?raw=true"
+   alt="Microdata from the example page."
+   width="50%">
 &nbsp;
 <br/>
-![microdata from the example page](./images/image066.jpeg){width="5.0in" height="3.7708333333333335in"}
 
-<h4>Example #2</h4>
+<h4>Example #2:</h4>
 
-View the [example #2 online](https://jsbin.com/karemi/1/edit?html,output).
+View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 online</a>.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 67.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image067.jpeg?raw=true"
+   alt="Example page, shows table of contents."
+   width="50%">
 &nbsp;
 <br/>
-![Example page, shows table of content](./images/image067.jpeg){width="4.958333333333333in" height="3.4375in"}
 
 <h3 id="ch2-1">Module 2: HTML5 Multimedia</h3>
 
@@ -3889,15 +3887,14 @@ Until 2012, it was only possible to integrate an audio or video player using the
 Check the HTML code of the following CodePen:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 68.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image068.jpeg?raw=true"
    alt=""
-   width="35%">
+   width="65%">
 &nbsp;
 <br/>
-![](./images/image068.png){width="6.5in" height="2.061111111111111in"}
 
 Please note that:
 
@@ -3909,11 +3906,11 @@ Please note that:
 
 You will learn more about the different attributes of the \<video\> element later on in the course.
 
-### Current browser support for the \<video\> element
+<h4>Current browser support for the \<video\> element</h4>
 
 The \<video\> element is supported by all major browsers. See the [support table from CanIUse.](https://caniuse.com/video)
 
-### Restriction: you cannot embed a YouTube or DailyMotion video using the \<video\> element
+<h4>Restriction: you cannot embed a YouTube or DailyMotion video using the \<video\> element</h4>
 
 Help! \<video src=\"my youtube video URL\"\>\</video\> does not work! 
 
@@ -3931,24 +3928,29 @@ Here is the HTML code you need to copy and paste in order to embed a video:
 
 The YouTube video embedded in this page by the above code: it\'s HTML5 but it\'s not a \<video\> element directly inserted in the HTML of this page, it\'s an \<iframe\>.
 
-![](./images/image069.png){width="5.84375in" height="3.28125in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 69.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image069.png?raw=true"
+   alt=""
+   width="60%">
+&nbsp;
+<br/>
 
-### Support for different video CODECS (mp4, ogG, avi, etc.)
+<h4>Support for different video CODECS (mp4, ogG, avi, etc.)</h4>
 
 This is one of the main problems encountered in recent years: codec support was not the same from one browser to another, for commercial/economic reasons. For example, between 2010 and 2013, Firefox only supported the ogg/oggm format. It did not support mp3/mp4 encoding for audio/video, while Internet Explorer only supported H.264 encoding. Since 2012, things have changed with browser updates and today most popular formats are supported.
 
 *The recommended CODEC, which works in all popular browsers: H264/mp4.*
 
-### External resources
-
--   From W3C\'s specification: [The video element](https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element)
-
--   MDN\'s Web Docs:  [\<video\>: The Video Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)
-
--   From Apple\'s developer site: [Safari HTML5 audio and video guide](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/ControllingMediaWithJavaScript/ControllingMediaWithJavaScript.html)
-
--   Article from HTML5 Rocks: [Media](https://www.html5rocks.com/en/tutorials/video/basics/)
-
+<h4>External resources</h4>
+<ul>
+<li>From W3C\'s specification: [The video element](https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element)</li>
+<li>MDN\'s Web Docs:  [\<video\>: The Video Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)</li>
+<li>From Apple\'s developer site: [Safari HTML5 audio and video guide](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/ControllingMediaWithJavaScript/ControllingMediaWithJavaScript.html)</li>
+<li>Article from HTML5 Rocks: [Media](https://www.html5rocks.com/en/tutorials/video/basics/)</li>
+</ul>
 
 <h3 id="ch2-2-2">2.2.2 The <audio> Element</h3>
 
@@ -3962,63 +3964,45 @@ This course will focus on the \<audio\> element. We present the [Web Audio A
 
 The attributes, event set and JavaScript API  of the \<audio\> element are just a \"reduced\" version of the ones from the \<video\> element, and here we will only address the differences and peculiarities.
 
-### The \<audio\> element, basic usage
+<h4>The <audio> element, basic usage</h4>
 
 Here is a simple example (also available [online example from JSBin](https://jsbin.com/yogojis/edit?html,output)):
 
 Press play to stream the neigh of a horse:   
 
 As you can see, the code is very similar to the basic \<video\> element usage.
-
-1.  \<!DOCTYPE html\>
-
-2.  \<html lang=\"en\"\>
-
-3.     \<head\>
-
-4.        \<meta charset=\"utf-8\"/\>
-
-5.        \<title\>horse song\</title\>
-
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.     <head>
+4.        <meta charset="utf-8"/>
+5.        <title>horse song</title>
 6.  
-
-7.     \</head\>
-
-8.     \<body\>
-
-9.        \<audio controls=\"controls\"\>
-
-10.          \<source src=\"https://mainline.i3s.unice.fr/mooc/horse.ogg\" type=\"audio/ogg\" /\>
-
-11.          \<source src=\"https://mainline.i3s.unice.fr/mooc/horse.mp3\" type=\"audio/mp3\" /\>
-
+7.     </head>
+8.     <body>
+9.        <audio controls="controls">
+10.          <source src="https://mainline.i3s.unice.fr/mooc/horse.ogg" type="audio/ogg" />
+11.          <source src="https://mainline.i3s.unice.fr/mooc/horse.mp3" type="audio/mp3" />
 12.             Your browser does not support the audio element.
-
 13.             Download the audio/video in
-
-14.          \<a href=\"https://mainline.i3s.unice.fr/mooc/horse.ogg\"\>OGG\</a\>
-
-15.          or \<a href=\"https://mainline.i3s.unice.fr/mooc/horse.mp3\"\>MP3\</a\>
-
+14.          <a href="https://mainline.i3s.unice.fr/mooc/horse.ogg">OGG</a>
+15.          or <a href="https://mainline.i3s.unice.fr/mooc/horse.mp3">MP3</a>
 16.          format.
-
-17.       \</audio\>
-
+17.       </audio>
 18. 
-
-19.    \</body\>
-
-20. \</html\>
+19.    </body>
+20. </html>
+```
 
 In this example, just as for the \<video\> element, we used the controls attribute in order to render the play/stop, time, volume and progress widgets.
 
 Notice the other similarities: between the \<audio\>\...\</audio\> tags, we added a text message that is displayed if the Web browser doesn\'t support the \<audio\> element, and we used several \<source\>\...\</source\> elements that link to different audio formats for the same file. The browser will use the first format it recognizes.
 
-External resources
-
--   From W3C\'s specification: [The audio element](https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element)
-
--   From MDN\'s Web Docs: [\<audio\>: The Embed Audio element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
+<h4>External resources</h4>
+<ul>
+<li>From W3C\'s specification: [The audio element](https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element)</li>
+<li>From MDN\'s Web Docs: [\<audio\>: The Embed Audio element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)</li>
+</ul>
 
 <h3 id="ch2-2-3">2.2.3 Attributes of <video> and <audio></h3>
 
@@ -4105,24 +4089,24 @@ Press Play to hear the horse ! 
 
  <b>HTML source code:</b>
 ```
-1.  \<figure id=\"figaudio1\"\>
-2.    \<img id=\"imghorse\" width=\"200\"
-3.       src=\"https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg\"
-4.       alt = \"a horse\"/\>
-5.    \<figcaption id=\"figcptionaudio1\"\> Press Play to hear the horse!
-6.      \<audio controls=\"controls\"\>
-7.         \<source src=\"https://mainline.i3s.unice.fr/mooc/horse.ogg\"
-8.                 type=\"audio/ogg\" /\>
-9.         \<source src=\"https://mainline.i3s.unice.fr/mooc/horse.mp3\"
-10.                type=\"audio/mp3\" /\>
+1.  <figure id="figaudio1">
+2.    <img id="imghorse" width="200"
+3.       src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg"
+4.       alt = "a horse"/>
+5.    <figcaption id="figcptionaudio1"> Press Play to hear the horse!
+6.      <audio controls="controls">
+7.         <source src="https://mainline.i3s.unice.fr/mooc/horse.ogg"
+8.                 type="audio/ogg" />
+9.         <source src="https://mainline.i3s.unice.fr/mooc/horse.mp3"
+10.                type="audio/mp3" />
 11.        Your browser does not support the audio element.
 12.        Download the audio/video in
-13.        \<a href="https://mainline.i3s.unice.fr/mooc/horse.ogg"\>OGG\</a\>
-14.      or \<a href="https://mainline.i3s.unice.fr/mooc/horse.mp3"\>MP3\</a\>
+13.        <a href="https://mainline.i3s.unice.fr/mooc/horse.ogg">OGG</a>
+14.      or <a href="https://mainline.i3s.unice.fr/mooc/horse.mp3">MP3</a>
 15.         format.
-16.    \</audio\>
-17. \</figcaption\>
-18. \</figure\>
+16.    </audio>
+17. </figcaption>
+18. </figure>
 ```
 
 CSS source code:
@@ -4148,18 +4132,18 @@ CSS source code:
 19.     border-radius : 7px ;
 20. }
 21.  
-22. #figaudio1 \> img {
+22. #figaudio1 > img {
 23.     background : #eeeeee;
 24.     padding : 5px;
 25.     border : solid 1px #444444;
 26. }
 27.  
-28. /\* For audio and img transitions/animation \*/
-29. audio, #figaudio1 \> img {
+28. /* For audio and img transitions/animation */
+29. audio, #figaudio1 > img {
 30.     transition:all 0.5s;
 31. }
 32.  
-33. #figaudio1 \> img:hover {
+33. #figaudio1 > img:hover {
 34.     box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
 35.     transform: scale(1.05);
 36. }
@@ -4191,15 +4175,15 @@ This example uses the pseudo CSS class :hover in order to track the mouseover
 
 The corresponding HTML source code is:
 ```
-1.  \<video <b>id=\"w3devCampusVideo\"</b> autoplay controls\>
+1.  <video <b>id="w3devCampusVideo"</b> autoplay controls>
 2.  
-3.       \<source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
-4.               type=video/webm\>
-5.       \<source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
-6.               type=video/ogg\>
-7.       \<source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
-8.               type=video/mp4\>
-9.  \</video\>
+3.       <source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
+4.               type=video/webm>
+5.       <source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
+6.               type=video/ogg>
+7.       <source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
+8.               type=video/mp4>
+9.  </video>
 ```
 
 \... and the CSS source code is as follows:
@@ -4271,31 +4255,18 @@ body {
 And now the JavaScript code:
 ```
 > var video;
->
 >  
->
 > function init() {
->
 >    // function called when the page is loaded
->
 >    video = document.querySelector(\"#myVideo\");
->
 >    // For initial value
->
 >    video.width = window.innerWidth;
->
 >    video.height = window.innerHeight;
->
 >    // For dealing with window resize
->
 >    window.onresize = function() {
->
 >        video.width = window.innerWidth;
->
 >        video.height = window.innerHeight;
->
 >    };
->
 > }
 ```
 
@@ -4334,23 +4305,14 @@ In this example, the video does not rescale; it\'s just cropped if the browser w
 <h4>CSS code:</h4>
 ```
 > body {
->
 >   margin:0;
->
 >   padding:0;
->
 >   overflow:hidden;
->
 > }
->
 >  
->
 > video {
->
 >   width:100%;
->
 >   height:auto;
->
 > }
 ```
 
@@ -4361,100 +4323,55 @@ This time the video is zoomed in so that it\'s much bigger than the browser\'s w
 <h4>HTML code:</h4>
 ```
 > \<!DOCTYPE html\>
->
 > \<html lang=\"en\"\>
->
 > \<head\>
->
 >    \<meta charset=\"utf-8\"\>
->
 >    \<title\>Full screen video with CSS effects \</title\>
->
 > \</head\>
->
 > \<body\>
->
 > \<header\>
->
 >  \<video autoplay loop=\"\"
->
 >   poster=\"https://mainline.i3s.unice.fr/mooc/polina.jpg\"
->
 >   id=\"bgvid\"\>
->
 >     \<source src=\"https://mainline.i3s.unice.fr/mooc/polina.webm\"
->
 >             type=\"video/webm\"\>
->
 >     \<source src=\"https://mainline.i3s.unice.fr/mooc/polina.mp4\"
->
 >             type=\"video/mp4\"\>
->
 >  \</video\>
->
 > \</header\>
->
 > \<section\>
->
 > \<h1\>Full screen video with CSS effects\</h1\>
->
 > \</section\>
->
 > \</body\>
->
 > \</html\>
 ```
 
 <h4>CSS code:</h4>
 ```
 > html, body{
->
 >     color:white;
->
 >     height: 100%;
->
 > }
->
 > header{
->
 >     height: 100%;
->
 >     background-image: url(\'https://mainline.i3s.unice.fr/mooc/dots.png\'),                             url(\'#\');
->
 >     background-repeat: repeat, no-repeat;
->
 >     background-size: auto, cover;
->
 >     background-position: center center, top left;
->
 >     font-family: sans-serif;
->
 >     color: #051a00;
->
 > }
->
 >  
->
 > header video {
->
 >     position:fixed;
->
 >     top:50%;
->
 >     left:50%;
->
 >     min-width:100%;
->
 >     min-height:100%;
->
 >     width:auto;
->
 >     height:auto;
->
 >     z-index:-100;
->
 >     transform:translateX(-50%) translateY(-50%);
->
 > }
 ```
 
@@ -4494,7 +4411,7 @@ video {
 }
 ```
 
-### Discussion: why can\'t we achieve perfect resizing with only CSS and the use of properties width=100% and height=100%?
+<h4>Discussion: why can\'t we achieve perfect resizing with only CSS and the use of properties width=100% and height=100%?</h4>
 
 Let\'s use the same video to compare the different approaches again:
 
@@ -4532,8 +4449,8 @@ The set of properties/attributes/methods of the \<audio\> and \<video\> elements
 
 Like any HTML element, the \<video\> element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a \<video\> element:
 ```
-1.  var video = document.createElement(\'video\');
-2.  video.src = \'video.mp4\';
+1.  var video = document.createElement('video');
+2.  video.src = 'video.mp4';
 3.  video.controls = true;
 4.  document.body.appendChild(video);
 ```
@@ -4559,7 +4476,7 @@ Please look at this interesting example:
 
 <h3 id="ch2-2-6">2.2.6 The JavaScript API</h3>
 
-### Methods, properties, and events
+<h4>Methods, properties, and events</h4>
 
 The JavaScript API gives you powerful tools to manipulate the \<video\> element, as the video object provides many properties, methods and events.
 
@@ -4625,7 +4542,7 @@ In the next pages, let\'s see, through a set of examples, how to use these most 
 
 The JavaScript API is useful for implementing playlists, making custom user interfaces and many other interesting things. The \"enhanced HTML5 multimedia players\" lesson presented further on the course relies heavily on this API.
 
-### Example #1: how to use external buttons to control the player\'s behavior
+<h4>Example #1: how to use external buttons to control the player\'s behavior</h4>
 
 This example gives the first steps towards writing a custom video player. It shows basic usage of the JavaScript API for adding custom buttons to play/pause the video or to go back to the beginning by setting the currentTime property to zero.
 
@@ -4685,7 +4602,7 @@ Try it online:
 
 -   *Line 24*: we modify the currentTime property in order to rewind the video. Note that vid.load() also rewinds the video, shows the poster image again, but also pauses the video. By using currentTime=0, the playback does not stop.
 
-### Example #2: how to detect the end of a video and start another one
+<h4>Example #2: how to detect the end of a video and start another one</h4>
 
 This example listens to the ended event, and calls a callback function when the video is ended.
 
@@ -4712,7 +4629,7 @@ This example listens to the ended event, and calls a callback function when th
 </script\>
 ```
 
-### Example #3: how to manage playlists - sequential movies
+<h4>Example #3: how to manage playlists - sequential movies</h4>
 
 This example detects the end of a video, then loads the next video, changes the src attribute of the video element and plays the video.
 
@@ -4790,7 +4707,7 @@ In this section, we propose five extended examples that use more JavaScript and
 
 Some examples are given \"as is\", such as the custom video player that uses SVG (at the end of the page); if you are interested, you may view the code. 
 
-### Example #1: a player showing the use of every type of CSS3 transformation
+<h4>Example #1: a player showing the use of every type of CSS3 transformation</h4>
 
 Please see this example online, originally written by [Chris Heilmann](https://christianheilmann.com/), and tuned by us ;).
 
@@ -4813,7 +4730,7 @@ This example shows a lot:
 
 -   It shows how to handle DOM events using JavaScript and how to modify CSS properties of the \<video\> element from JavaScript.
 
-### Example #2: how to track all possible events and manipulate many properties
+<h4>Example #2: how to track all possible events and manipulate many properties
 
 This example also shows how to handle failures. See the code and play with this example below:
 
@@ -4938,7 +4855,7 @@ This is the ultimate way of doing a real custom player: redesign your own contro
    width="25%" />
 &nbsp;
 
-### Example #5: a custom video player written by a previous student
+<h4>Example #5: a custom video player written by a previous student
 
 This is more an example than a tutorial. Maurice, a student who followed the precursor version of this MOOC, had the assignment to write a custom video player with playlist, video thumbnails, custom play/pause/next/previous/volume controls, and present it in a Web page that used a nice layout based on the HTML5 structuring elements studied previously.
 
@@ -4950,11 +4867,11 @@ This section introduces the HTML5 \<track\> element, useful for adding closed
 
 The WebVTT format used for describing a track file is also presented in this chapter.
 
-### Most of the major desktop browsers support HTML5 captioning
+<h4>Most of the major desktop browsers support HTML5 captioning
 
 Please check thea href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the \<track\> element support by browsers.
 
-### Some definitions
+<h4>Some definitions
 
 -   <b>closed captions </b>describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).
 
@@ -4962,7 +4879,7 @@ Please check thea href="https://caniuse.com/mdn-html_elements_track">browser sup
 
 The accessibility features of TV programs often propose both options for people with hearing deficiencies. 
 
-### Typical use: add a subtitle/caption track to a \<video\> element
+<h4>Typical use: add a subtitle/caption track to a \<video\> element
 
 <b>Important warning!!</b>
 
@@ -5019,7 +4936,7 @@ The example uses a \<track\> element to insert basic *captions* to the video
 ```
 -   We also used  an attribute named crossorigin that is necessary just to run this demo, as it is required by the server that hosts the video from this example (server = codepen.io, but as the video and .vtt files come from another origin -another server-, this attribute is necessary).
 
-### Multiple tracks may be included in a video element
+<h4>Multiple tracks may be included in a video element
 
 Multiple tracks are needed to support different langages, video captions for the hearing-impaired, subtitles, etc.
 
@@ -5050,7 +4967,7 @@ Note the use of some new attributes in the \<track\> element:
 
 -   srclang:  gives the language for the text track data. The value must be a valid [BCP 47 language tag](https://tools.ietf.org/html/bcp47). This attribute must be present if [the element\'s kind attribute](https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind) is in the [subtitles state](https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles).
 
-### External resources
+<h4>External resources
 
 -   From the HTML specification: [The track element](https://html.spec.whatwg.org/multipage/media.html#the-track-element)
 
@@ -5192,7 +5109,7 @@ The displayed text can span multiple lines, but blank lines are not allowed, as 
 
 3.  \<p\>so completely unprepared.\</p\>
 
-### External resource:
+<h4>External resource:
 
 -   An unofficial [Live WebbVTT format](https://quuz.org/webvtt/)
 
@@ -5376,7 +5293,7 @@ There are several possible values:
 
 And so on. Please look at the video as it is self-explanatory.
 
-### Use of \<b\>, \<i\>, \<u\> for styling subtitles / captions
+<h4>Use of \<b\>, \<i\>, \<u\> for styling subtitles / captions
 
 One can use the HTML elements  \<b\>, \<i\>, \<u\> to modify the rendering of subtitles and captions, as illustrated in the example below:
 <!------------------------------------------------------------------------------------------------>
@@ -5389,7 +5306,7 @@ One can use the HTML elements  \<b\>, \<i\>, \<u\> to modify the rendering of
 &nbsp;
 <br/>
 
-### Using CSS classes for styling
+<h4>Using CSS classes for styling
 
 It is possible to style using CSS classes as part of a cue value, using the \<c\> element. You can specify the CSS class that should be applied by adding \".\" followed by the name of your CSS class. Here is an example:
 
@@ -5420,7 +5337,7 @@ The ::cue pseudo element selector is used to match \"cues\" in the webVTT fil
 
 Support differs from one browser to another, see [this compatibility table](https://caniuse.com/#feat=webvtt) (from CanIuse). Note however that most of the enhanced players presented further on in the course provide full support.
 
-### Using voicing for styling: the \<v\> element
+<h4>Using voicing for styling: the \<v\> element
 
 Here is an example that shows the voices of the different characters displayed with different colors:
 <!------------------------------------------------------------------------------------------------>
@@ -5533,7 +5450,7 @@ The \<track\> element comes with a powerful API that is used to develop many
 
 -   Etc.
 
-### Examples of use
+<h4>Examples of use
 
 <h4> Example #1: add a navigation menu to start playing the video at given chapters</h4>
 
@@ -5582,11 +5499,11 @@ There are numerous \"enhanced\" video players; most are free and open source, so
 
 We call them \"HTML5 enhanced video players\" because on top of being based on the \<video\> element, they come with custom features, custom look\'n\'feel, chapters, etc., based on a JavaScript API that makes such customization possible.
 
-### Accessible players
+<h4>Accessible players
 
 For those of you interested in this particular topic, here is a very good resource that compares most of the players presented in this section, in terms of accessibility. This resource has links to players designed especially for people with disabilities: [accessible media players and resources](https://www.digitala11y.com/accessible-jquery-html5-media-players/).
 
-### Advantages and disadvantages of using a custom player
+<h4>Advantages and disadvantages of using a custom player
 
 **Advantages of enhanced video players:**
 
@@ -5618,7 +5535,7 @@ For those of you interested in this particular topic, here is a very good resou
 
 -   Lightweight: no need to download lots of JavaScript and CSS code
 
-### Video.js: a framework for building your own custom video player
+<h4>Video.js: a framework for building your own custom video player
 
 Open source, and made for developers, [video.js](https://videojs.com/) comes with many plugins (chapters, thumbnails etc.). 
 
@@ -5632,7 +5549,7 @@ Open source, and made for developers, [video.js](https://videojs.com/) comes w
 &nbsp;
 <br/>
 
-### Which should I use? the \<video\> element and my own customization or an out of the box enhanced player?
+<h4>Which should I use? the \<video\> element and my own customization or an out of the box enhanced player?
 
 Either solution (basic player or enhanced player) is good and HTML5 compliant.
 
@@ -5644,7 +5561,7 @@ Popular players such as  [JWPlayer](https://www.jwplayer.com/) have many expl
 
 -   [10 HTML5 video players compared](https://toppersworld.com/10-html5-video-players-as-alternatives-to-flash-player/)
 
-### Example screenshots
+<h4>Example screenshots
 
 Scrub Bar thumbnails (JWPlayer)
 
@@ -5886,7 +5803,7 @@ Code source:
 
 -   *Lines 25-27*: a function for stopping the Webcam. We use the global variable webcamStream here, that has been initialized when we started using the Webcam in *line 19*. We have to stop separately the audio and the video streams.
 
-### Other examples that mix what we\'ve seen in previous chapters, but this time with a live video stream
+<h4>Other examples that mix what we\'ve seen in previous chapters, but this time with a live video stream
 
 <h4> Applying CSS effects on a video element with a live webcam</h4>
 
@@ -6385,7 +6302,7 @@ Source code extract:
 20. then(gotStream).then(gotDevices).catch(handleError)
 ```
 
-### 2.4.5 The MediaRecorder API
+<h3 id="ch2-4-5">2.4.5 The MediaRecorder API</h3>
 
 This MediaRecoredr API allows to record / capture the audio or video stream. There are many sources for audio or video streams, but we will only consider here the streams coming from a WebCam or a sound input (i.e. microphone).
 
@@ -6777,7 +6694,7 @@ And if we click on the line number in the right, the dev. tool shows the source 
 
 Without such tools, debugging JavaScript code is impossible. So you need to look at some basic tutorials on how to use the dev. tools of your browsers, since they differ from one another in the way they work - although the principles remain the same.
 
-### About the asynchronous nature of JavaScript
+<h4>About the asynchronous nature of JavaScript
 
 Some of you may not be used to \"asynchronous programming\", \"callbacks\" etc. We recommend to read [this article on WikiPedia](https://en.wikipedia.org/wiki/Callback_%28computer_programming%29) and [this thread on StackOverflow](https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java).
 
@@ -6801,7 +6718,7 @@ Indeed, the canvas JavaScript drawing API supports different kind of shapes: lin
 
 The canvas is also used to do animations at 60 frames per second (useful for games), to display videos with special effects, to display a webcam stream, and so on.
 
-### Examples
+<h4>Examples
 
 Here are some fun examples that show the interest of the HTML5 canvas.
 
@@ -6848,7 +6765,7 @@ Performance is  good and animation is generally very smooth, since most Web bro
 
 **Note**: 3D drawing using the WebGL API is also possible in a \<canvas\>, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a \<canvas\>: [BabylonJS](https://www.babylonjs.com/) and [ThreeJS](https://threejs.org/).
 
-### External resources
+<h4>External resources
 
 -   Comprehensive [HTML5 canvas tutorials](https://www.html5canvastutorials.com/)
 
@@ -6927,7 +6844,7 @@ Small errata about what I said in the above video: \"*So let\'s get the canvas u
 
 The part is bold is not correct: querySelector, technically, comes from [Selectors API](https://www.w3.org/TR/selectors-api/). Just in case some people would like to check the specification.\\
 
-### Detailed explanation of the example shown in the above video
+<h4>Detailed explanation of the example shown in the above video
 
 Here are the different steps, in a little more detail, of the example demonstrated in the above video:
 
@@ -6990,7 +6907,7 @@ So, let\'s first get the context (do this only once):
 
 1.  ctx.fillRect(0,0,80,100);
 
-### Complete example that draws a filled rectangle in red
+<h4>Complete example that draws a filled rectangle in red
 
 <h4>HTML</h4>
 
@@ -7104,7 +7021,7 @@ This line is a call to the method fillRect(top left X coordinate, top left Y co
 
 The way the rectangle will be filled depends on the current value of several properties of the context, in particular the value of the fillStyle property. So, in our case, the rectangle will be red.
 
-### Summary of the different steps
+<h4>Summary of the different steps
 
 1.  **Declare the canvas,** remembering to add an id attribute, and fallback content:  \
     \<canvas id=\"myCanvas\" width=\"200\" height=\"200\"\>\
@@ -7125,13 +7042,13 @@ The way the rectangle will be filled depends on the current value of several pro
 
 <h3 id="ch3-2-7">3.2.7 Drawing Principles</h3>
 
-### More about the \"context\" object
+<h4>More about the \"context\" object
 
 Before we go on, we should take some time to clarify the way we draw on HTML5 canvases. We already mentioned that we use a graphic context for all the main operations. Whenever a shape, a text, or an image is drawn, the current values of the different properties of the graphic context are taken into account. Some are relevant only for certain kinds of shapes or drawing modes, but you must be aware that it is always the current values of these drawing properties that are used.
 
 Later on we\'ll see that there are ways to save and restore this whole set of values, but for now, let\'s examine in greater detail some of the properties and methods we\'ve already encountered, and introduce new ones.
 
-### More about properties and methods of the context object
+<h4>More about properties and methods of the context object
 
 -   <h4> **fillStyle** is a property of the context, similar in a way to a CSS property
 
@@ -7191,7 +7108,7 @@ The result is:
 
 ![The use of ClearRect draws a white rectangle against the pink background](./images/image130.jpeg){width="2.6770833333333335in" height="2.6770833333333335in"}
 
-### Let\'s see some simple examples
+<h4>Let\'s see some simple examples
 
 <h4> Example #1: draw a wireframe red rectangle, width lineWidth = 3 pixels
 
@@ -7294,7 +7211,7 @@ This example shows the \"global\" nature of the context properties. Once you set
 
 If you would like to draw the filled text message in green, for example, you should set the ctx.fillStyle property to \"green\" after you draw the rectangles and before you draw the text (i.e just before *line 18*).
 
-### Summary of what we\'ve learned
+<h4>Summary of what we\'ve learned
 
 -   \"stroke\" means \"wireframe\" or \"outlined\". It is a prefix for setting properties or calling methods that will affect wireframe shapes.
 
@@ -7320,7 +7237,7 @@ We now introduce the basics of 2D transformations, a powerful tool that will mak
 
 Let\'s start with some simple examples before looking at how we use 2D transforms.
 
-### Examples
+<h4>Examples
 
 -   <h4> Let\'s draw three rectangles!
 
@@ -7544,7 +7461,7 @@ As you can see, the code uses the same technique, becomes less and less readabl
 
 However, there is a way to simplify this =\> 2D geometric transformations! 
 
-### Geometric transformations: changing the coordinate system
+<h4>Geometric transformations: changing the coordinate system
 
 The idea behind 2D transformations is that instead of modifying all the coordinates passed as parameters to each call to drawing methods like fillRect(\...), we will keep all the drawing code \"as is\". For example, if the monster of our previous example was drawn at (0, 0), we could just translate (or rotate, or scale) the original coordinate system.
 
@@ -7790,17 +7707,17 @@ ctx.beginPath();
 
 ctx.moveTo(tox, toy);
 
-ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),toy-headlen\*Math.sin(angle-Math.PI/7));
+ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
 
 //path from the side point of the arrow, to the other side point
 
-ctx.lineTo(tox-headlen\*Math.cos(angle+Math.PI/7),toy-headlen\*Math.sin(angle+Math.PI/7));
+ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
 
 //path from the side point back to the tip of the arrow, and then again to the opposite side point
 
 ctx.lineTo(tox, toy);
 
-ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),toy-headlen\*Math.sin(angle-Math.PI/7));
+ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
 
 //draws the paths created above
 
@@ -7812,17 +7729,17 @@ ctx.restore();
 
 HTML
 
-\<!DOCTYPE html\>
+<!DOCTYPE html>
 
-\<html lang=\"en\"\>
+<html lang="en">
 
-\<head\>
+<head>
 
-\<title\>Translated monster\'s head\</title\>
+<title>Translated monster's head</title>
 
-\<meta charset=\"utf-8\"/\>
+<meta charset="utf-8"/>
 
-\<style\>
+<style>
 
 #myCanvas {
 
@@ -7830,9 +7747,9 @@ border: 1px solid black;
 
 }
 
-\</style\>
+</style>
 
-\<script\>
+<script>
 
 var canvas, ctx;
 
@@ -7842,11 +7759,11 @@ function init() {
 
 // 1 - Get the canvas
 
-canvas = document.getElementById(\'myCanvas\');
+canvas = document.getElementById('myCanvas');
 
 // 2 - Get the context
 
-ctx=canvas.getContext(\'2d\');
+ctx=canvas.getContext('2d');
 
 // 3 - we can draw, try to change these values
 
@@ -7860,13 +7777,13 @@ function drawMonster(x, y) {
 
 // head
 
-ctx.fillStyle=\'lightgreen\';
+ctx.fillStyle='lightgreen';
 
 ctx.fillRect(0,0,200,200);
 
 // eyes
 
-ctx.fillStyle=\'red\';
+ctx.fillStyle='red';
 
 ctx.fillRect(35,30,20,20);
 
@@ -7874,7 +7791,7 @@ ctx.fillRect(140,30,20,20);
 
 // interior of eye
 
-ctx.fillStyle=\'yellow\';
+ctx.fillStyle='yellow';
 
 ctx.fillRect(43,37,10,10);
 
@@ -7882,39 +7799,39 @@ ctx.fillRect(143,37,10,10);
 
 // Nose
 
-ctx.fillStyle=\'black\';
+ctx.fillStyle='black';
 
 ctx.fillRect(90,70,20,80);
 
 // Mouth
 
-ctx.fillStyle=\'purple\';
+ctx.fillStyle='purple';
 
 ctx.fillRect(60,165,80,20);
 
 // coordinate system at (0, 0)
 
-drawArrow(ctx, 0, 0, 100, 0, 10, \'red\');
+drawArrow(ctx, 0, 0, 100, 0, 10, 'red');
 
-drawArrow(ctx, 0, 0, 0, 100, 10, \'red\');
+drawArrow(ctx, 0, 0, 0, 100, 10, 'red');
 
 }
 
-\</script\>
+</script>
 
-\</head\>
+</head>
 
-\<body onload=\"init();\"\>
+<body onload="init();">
 
-\<canvas id=\"myCanvas\" width=\"400\" height=\"400\"\>
+<canvas id="myCanvas" width="400" height="400">
 
 Your browser does not support the canvas tag.
 
-\</canvas\>
+</canvas>
 
-\</body\>
+</body>
 
-\</html\>
+</html>
 
 JavaScript code extract:
 
@@ -7953,220 +7870,127 @@ ctx.strokeStyle = color;
 //starting path of the arrow from the start square to the end square and drawing the stroke
 
 ctx.beginPath();
-
 ctx.moveTo(fromx, fromy);
-
 ctx.lineTo(tox, toy);
-
 ctx.lineWidth = arrowWidth;
-
 ctx.stroke();
-
 //starting a new path from the head of the arrow to one of the sides of the point
-
 ctx.beginPath();
-
 ctx.moveTo(tox, toy);
-
-ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),toy-headlen\*Math.sin(angle-Math.PI/7));
-
+ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
 //path from the side point of the arrow, to the other side point
-
-ctx.lineTo(tox-headlen\*Math.cos(angle+Math.PI/7),toy-headlen\*Math.sin(angle+Math.PI/7));
-
+ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
 //path from the side point back to the tip of the arrow, and then again to the opposite side point
-
 ctx.lineTo(tox, toy);
-
-ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),toy-headlen\*Math.sin(angle-Math.PI/7));
-
+ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
 //draws the paths created above
-
 ctx.stroke();
-
 ctx.restore();
-
 }
+```
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<title\>Translated, rotated, and scaled monster\'s head\</title\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<style\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Translated, rotated, and scaled monster's head</title>
+<meta charset="utf-8"/>
+<style>
 #myCanvas {
-
 border: 1px solid black;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var canvas, ctx;
-
 function init() {
-
 // This function is called after the page is loaded
-
 // 1 - Get the canvas
-
-canvas = document.getElementById(\'myCanvas\');
-
+canvas = document.getElementById('myCanvas');
 // 2 - Get the context
-
-ctx=canvas.getContext(\'2d\');
-
+ctx=canvas.getContext('2d');
 // 3 - we can draw, try to change these values
-
 ctx.translate(100, 100);
-
 ctx.rotate(Math.PI/4);
-
 ctx.scale(0.5, 0.5);
-
 drawMonster(0, 0);
-
 }
-
 function drawMonster(x, y) {
-
 // head
-
-ctx.fillStyle=\'lightgreen\';
-
+ctx.fillStyle='lightgreen';
 ctx.fillRect(0,0,200,200);
-
 // eyes
-
-ctx.fillStyle=\'red\';
-
+ctx.fillStyle='red';
 ctx.fillRect(35,30,20,20);
-
 ctx.fillRect(140,30,20,20);
-
 // interior of eye
-
-ctx.fillStyle=\'yellow\';
-
+ctx.fillStyle='yellow';
 ctx.fillRect(43,37,10,10);
-
 ctx.fillRect(143,37,10,10);
-
 // Nose
-
-ctx.fillStyle=\'black\';
-
+ctx.fillStyle='black';
 ctx.fillRect(90,70,20,80);
-
 // Mouth
-
-ctx.fillStyle=\'purple\';
-
+ctx.fillStyle='purple';
 ctx.fillRect(60,165,80,20);
-
 // coordinate system at (0, 0)
-
-drawArrow(ctx, 0, 0, 100, 0, 10, \'red\');
-
-drawArrow(ctx, 0, 0, 0, 100, 10, \'red\');
-
+drawArrow(ctx, 0, 0, 100, 0, 10, 'red');
+drawArrow(ctx, 0, 0, 0, 100, 10, 'red');
 }
-
-\</script\>
-
-\</head\>
-
-\<body onload=\"init();\"\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height=\"400\"\>
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
+```
 
 Your browser does not support the canvas tag.
-
-\</canvas\>
-
-\</body\>
-
-\</html\>
+```
+</canvas>
+</body>
+</html>
+```
 
 And here is the code of the transformations we used, followed by the call to the function that draws the monster:
-
+```
 1.  ctx.translate(100, 100);
-
 2.  ctx.rotate(Math.PI/4);
-
 3.  ctx.scale(0.5, 0.5);
-
 4.   
-
 5.  drawMonster(0, 0);
-
+```
 -   <h4> BEWARE: all drawings to come will be in that modified coordinate system!
 
 If we draw two shapes at two different positions, they will be relative to this new coordinate system.
 
-JS
+<h4>JS</h4>
 
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
-
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
-
 //variables to be used when creating the arrow
-
 var headlen = 10;
-
 var angle = Math.atan2(toy-fromy,tox-fromx);
-
 ctx.save();
-
 ctx.strokeStyle = color;
-
 //starting path of the arrow from the start square to the end square and drawing the stroke
-
 ctx.beginPath();
-
 ctx.moveTo(fromx, fromy);
-
 ctx.lineTo(tox, toy);
-
 ctx.lineWidth = arrowWidth;
-
 ctx.stroke();
-
 //starting a new path from the head of the arrow to one of the sides of the point
-
 ctx.beginPath();
-
 ctx.moveTo(tox, toy);
-
-ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),toy-headlen\*Math.sin(angle-Math.PI/7));
-
+ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
 //path from the side point of the arrow, to the other side point
-
-ctx.lineTo(tox-headlen\*Math.cos(angle+Math.PI/7),toy-headlen\*Math.sin(angle+Math.PI/7));
-
+ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
 //path from the side point back to the tip of the arrow, and then again to the opposite side point
-
 ctx.lineTo(tox, toy);
-
-ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),toy-headlen\*Math.sin(angle-Math.PI/7));
-
+ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
 //draws the paths created above
-
 ctx.stroke();
-
 ctx.restore();
-
 }
+```
 
 <h4>HTML</h4>
 ```
@@ -8245,7 +8069,7 @@ Your browser does not support the canvas tag.
 
 <h4>How can we reset the coordinate system, how can we go back to the previous one?</h4>
 
-Aha, this is a very interesting question\... the answer is in the next page!
+Aha, this is a very interesting question... the answer is in the next page!
 
 <h3 id="ch3-2-9">3.2.9 Saving and Restoring the Context</h3>
 
@@ -8285,7 +8109,7 @@ ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math
 ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
 //path from the side point back to the tip of the arrow, and then again to the opposite side point
 ctx.lineTo(tox, toy);
-ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),toy-headlen\*Math.sin(angle-Math.PI/7));
+ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
 //draws the paths created above
 ctx.stroke();
 ctx.restore();
@@ -8298,7 +8122,7 @@ ctx.restore();
 <html lang="en">
 <head>
 <title>Saving and restoring the context</title>
-<meta charset="utf-8"/\>
+<meta charset="utf-8"/>
 <style>
 #myCanvas {
 border: 1px solid black;
@@ -8396,7 +8220,7 @@ Source code extract of this function: notice at *lines 3 *and* 26* how we sa
 12.     ctx.fillRect(0,0,200,200);
 13. 
 14.     // eyes
-15.     ctx.fillStyle=\'red\';
+15.     ctx.fillStyle='red';
 16.     ctx.fillRect(35,30,20,20);
 17.     ctx.fillRect(140,30,20,20);
 18. 
@@ -8405,7 +8229,7 @@ Source code extract of this function: notice at *lines 3 *and* 26* how we sa
 21.     ctx.fillRect(43,37,10,10);
 22.     ctx.fillRect(143,37,10,10);
 23.  
-24.     \...
+24.     ...
 25.     // BEST PRACTICE!
 26.     ctx.restore();
 27. }
@@ -8441,22 +8265,22 @@ border: 1px solid black;
 <script>
 var canvas, ctx;
 window.onload = function () {
-canvas = document.getElementById(\'myCanvas\');
-ctx = canvas.getContext(\'2d\');
+canvas = document.getElementById('myCanvas');
+ctx = canvas.getContext('2d');
 // black rectangle, default color (black)
 ctx.fillRect(10, 10, 100, 100);
 // outlined rectangle, default color
 ctx.strokeRect(150, 10, 100, 100);
 // outlined rectangle filled in red, outline blue
-ctx.fillStyle = \'red\';
-ctx.strokeStyle = \'lightBlue\';
+ctx.fillStyle = 'red';
+ctx.strokeStyle = 'lightBlue';
 ctx.lineWidth = 10;
 ctx.fillRect(100, 150, 150, 150);
 ctx.strokeRect(100, 150, 150, 150);
 // A function to automatize previous drawing
 var angle = Math.PI / 10;
-drawFilledRectangle(300, 150, 150, 150, \'pink\', \'green\', 10, angle);
-drawFilledRectangle(300, 150, 150, 150, \'yellow\', \'purple\', 10, angle + 0.5);
+drawFilledRectangle(300, 150, 150, 150, 'pink', 'green', 10, angle);
+drawFilledRectangle(300, 150, 150, 150, 'yellow', 'purple', 10, angle + 0.5);
 };
 function drawFilledRectangle(x, y, w, h, fillColor, strokeColor, lw, angle) {
 // GOOD PRACTICE : save if the function change the context or coordinate
@@ -8465,7 +8289,7 @@ ctx.save();
 // position coordinate system
 ctx.translate(x, y);
 ctx.rotate(angle);
-// set colors, line width\...
+// set colors, line width...
 ctx.lineWidth = lw;
 ctx.fillStyle = fillColor;
 ctx.strokeStyle = strokeColor;
@@ -8490,73 +8314,50 @@ ctx.restore();
 The canvas API provides two main methods for drawing text: ctx.strokeText(message, x, y) and ctx.fillText(message, x, y).\
 It also provides a set of context properties for setting the character font and style, for laying out the text, etc.
 
-### Typical use
+<h4>Typical use</h4>
 
 Look at the example below, and change the position where the text is drawn, change font attributes, etc.:
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html\>
-
-\<head\>
-
-\<title\>Drawing text\</title\>
-
-\<meta charset=\"utf-8\"/\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\" width=500 height=300\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.getElementById(\'myCanvas\');
-
-var context=canvas.getContext(\'2d\');
-
-context.font = \"60pt Calibri\";
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drawing text</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<canvas id="myCanvas" width=500 height=300>Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var context=canvas.getContext('2d');
+context.font = "60pt Calibri";
 context.lineWidth = 3;
+context.strokeStyle = "blue";
+context.fillStyle = "red";
+context.fillText("Hello World!", 10, 100);
+context.strokeText("Hello World!", 10, 100);
+</script>
+</body>
+</html>
+```
 
-context.strokeStyle = \"blue\";
+<h4>source code extract:</h4>
 
-context.fillStyle = \"red\";
-
-context.fillText(\"Hello World!\", 10, 100);
-
-context.strokeText(\"Hello World!\", 10, 100);
-
-\</script\>
-
-\</body\>
-
-\</html\>
-
-ource code extract:
-
+```
 1.  context.font = \"60pt Calibri\";
-
 2.  // .. set color, lineWidth, shadow etc.
-
 3.  
-
 4.  // 10, 10 is the start of the baseline, bottom of left leg of the \"H\" in the
-
 5.  // \"Hello World\" example.
-
 6.  context.fillText(\"Hello World!\", 10, 10);
-
 7.  // Or
-
 8.  context.strokeText(\"Hello World!\", 10, 10);
+```
 
-### Properties and methods useful for drawing text
+<h4>Properties and methods useful for drawing text</h4>
 
-<h4> Choosing the font: the context.font property
+<h4>Choosing the font: the context.font property</h4>
 
 It is possible to draw text in a canvas using the font property of the context to specify the font style (plain, bold, italic), the size, and the font name. Other properties such as strokeStyle or fillStyle, as well as other properties that are detailed in the next pages, are also going to be taken into account.
 
@@ -8582,279 +8383,165 @@ Examples: 
 
 -   context.font = \"italic bold 36px Arial\";
 
-<h4> Drawing text in solid or wireframe: the fillText() or strokeText() methods
+<h4>Drawing text in solid or wireframe: the fillText() or strokeText() methods</h4>
 
 The fillText(message, x, y) or strokeText(message, x, y) methods from the context will actually draw a text message at the origin of the baseline position. In the \"Hello World\" example, this is located at the bottom of the left leg of the \"H\".
 
 There is a fourth optional parameter maxWidth that forces the text to fit into a given width, distorting it if necessary:
-
+```
 1.  context.strokeText(\"Hello World!\", x, y \[, maxWidth\]);
-
 2.  context.fillText(\"Hello World!\", x, y \[, maxWidth\]);
+```
 
-<h4> Forcing a text not to exceed a certain width: the maxWidth property 
-
-\<!DOCTYPE html\>
-
-\<html\>
-
-\<head\>
-
-\<title\>Drawing text: the maxWidth property\</title\>
-
-\<meta charset=\"utf-8\"/\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\" width=500 height=300\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.getElementById(\'myCanvas\');
-
-var context=canvas.getContext(\'2d\');
-
-context.font = \"60pt Calibri\";
-
+<h4> Forcing a text not to exceed a certain width: the maxWidth property</h4>
+```
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drawing text: the maxWidth property</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<canvas id="myCanvas" width=500 height=300>Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var context=canvas.getContext('2d');
+context.font = "60pt Calibri";
 context.lineWidth = 3;
-
-context.strokeStyle = \"blue\";
-
-context.fillStyle = \"red\";
-
-context.fillText(\"Hello World!\", 10, 100);
-
-context.strokeText(\"Hello World!\", 10, 100);
-
+context.strokeStyle = "blue";
+context.fillStyle = "red";
+context.fillText("Hello World!", 10, 100);
+context.strokeText("Hello World!", 10, 100);
 // Draw text with constrained width
+context.fillText("Hello World!", 10, 160, 250);
+context.strokeText("Hello World!", 10, 160, 250);
+context.fillText("Hello World!", 10, 220, 150);
+context.strokeText("Hello World!", 10, 220, 150);
+</script>
+</body>
+</html>
+```
 
-context.fillText(\"Hello World!\", 10, 160, 250);
-
-context.strokeText(\"Hello World!\", 10, 160, 250);
-
-context.fillText(\"Hello World!\", 10, 220, 150);
-
-context.strokeText(\"Hello World!\", 10, 220, 150);
-
-\</script\>
-
-\</body\>
-
-\</html\>
-
-ource code extract:
-
-1.  \...
-
-2.  context.font = \"60pt Calibri\";
-
+<h4>source code extract:</h4>
+```
+1.  ...
+2.  context.font = "60pt Calibri";
 3.  context.lineWidth = 3;
-
-4.  context.strokeStyle = \"blue\";
-
-5.  context.fillStyle = \"red\";
-
+4.  context.strokeStyle = "blue";
+5.  context.fillStyle = "red";
 6.  
-
-7.  context.fillText(\"Hello World!\", 10, 100);
-
-8.  context.strokeText(\"Hello World!\", 10, 100);
-
+7.  context.fillText("Hello World!", 10, 100);
+8.  context.strokeText("Hello World!", 10, 100);
 9.  
-
 10. // Draw text with constrained width of 250 pixels
-
-11. context.fillText(\"Hello World!\", 10, 160, **250**);
-
-12. context.strokeText(\"Hello World!\", 10, 160, **250**);
-
+11. context.fillText("Hello World!", 10, 160, **250**);
+12. context.strokeText("Hello World!", 10, 160, **250**);
 13. 
-
 14. // Constrain width to 150 pixels
+15. context.fillText("Hello World!", 10, 220, **150**);
+16. context.strokeText("Hello World!", 10, 220, **150**);
 
-15. context.fillText(\"Hello World!\", 10, 220, **150**);
-
-16. context.strokeText(\"Hello World!\", 10, 220, **150**);
-
-<h4> Measuring the width of a given text (bounding box) with the ctx.measureText()method
+<h4>Measuring the width of a given text (bounding box) with the ctx.measureText()method</h4>
 
 The ctx.measureText() method can be used to get the current width in pixels of a given text, taking into account the diverse properties involved such as font, size, shadow, lineWidth, etc.
 
-HTML
+<h4>HTML</h4>
 
-\<!DOCTYPE html\>
-
-\<html\>
-
-\<head\>
-
-\<title\>Drawing text: the ctx.measureText() method\</title\>
-
-\<meta charset=\"utf-8\"/\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\" width=500 height=300\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.getElementById(\'myCanvas\');
-
-var context=canvas.getContext(\'2d\');
-
-context.font = \"60pt Calibri\";
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drawing text: the ctx.measureText() method</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<canvas id="myCanvas" width=500 height=300>Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var context=canvas.getContext('2d');
+context.font = "60pt Calibri";
 context.lineWidth = 3;
-
-context.strokeStyle = \"blue\";
-
-context.fillStyle = \"red\";
-
-context.fillText(\"Hello World!\", 10, 100);
-
-context.strokeText(\"Hello World!\", 10, 100);
-
-var textMetrics = context.measureText(\"Hello World!\");
-
+context.strokeStyle = "blue";
+context.fillStyle = "red";
+context.fillText("Hello World!", 10, 100);
+context.strokeText("Hello World!", 10, 100);
+var textMetrics = context.measureText("Hello World!");
 var width = textMetrics.width;
-
-context.font = \"20pt Arial\";
-
-context.fillText(\"Width of previous text: \" + width + \"pixels\", 10, 150);
-
+context.font = "20pt Arial";
+context.fillText("Width of previous text: " + width + "pixels", 10, 150);
 // Draw the baseline of the given width
-
 context.moveTo(10, 100);
-
 context.lineTo(width+10, 100);
-
 context.stroke();
-
-\</script\>
-
-\</body\>
-
-\</html\>
+</script>
+</body>
+</html>
+```
 
 Source code extract from this example:
 
-1.  context.font = \"60pt Calibri\";
-
+1.  context.font = "60pt Calibri";
 2.  context.lineWidth = 3;
-
-3.  context.strokeStyle = \"blue\";
-
-4.  context.fillStyle = \"red\";
-
+3.  context.strokeStyle = "blue";
+4.  context.fillStyle = "red";
 5.  
-
-6.  context.fillText(\"Hello World!\", 10, 100);
-
-7.  context.strokeText(\"Hello World!\", 10, 100);
-
+6.  context.fillText("Hello World!", 10, 100);
+7.  context.strokeText("Hello World!", 10, 100);
 8.  
-
-9.  **var textMetrics = context.measureText(\"Hello World!\");**
-
+9.  **var textMetrics = context.measureText("Hello World!");**
 10. **var width = textMetrics.width;**
-
 11. 
-
 12. // Draw a text that displays the width of the previous drawn text
-
-13. context.font = \"20pt Arial\";
-
-14. context.fillText(\"Width of previous text: \" + width + \"pixels\", 10, 150);
-
+13. context.font = "20pt Arial";
+14. context.fillText("Width of previous text: " + width + "pixels", 10, 150);
 15. 
-
 16. // Draw the baseline of the given width
-
 17. context.moveTo(10, 100);
-
 18. context.lineTo(width+10, 100);
-
 19. context.stroke();
+```
 
-<h4> Changing the way the text is horizontally drawn: the ctx.textbaseline property
+<h4>Changing the way the text is horizontally drawn: the ctx.textbaseline property</h4>
 
 The textBaseline property of the context is used to specify the different ways one can position the baseline of a given text:
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html\>
-
-\<head\>
-
-\<title\>Drawing text: the ctx.textbaseline property\</title\>
-
-\<meta charset=\"utf-8\"/\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\" width=500 height=300\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.getElementById(\'myCanvas\');
-
-var context=canvas.getContext(\'2d\');
-
-context.strokeStyle = \"#000000\";
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drawing text: the ctx.textbaseline property</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<canvas id="myCanvas" width=500 height=300>Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var context=canvas.getContext('2d');
+context.strokeStyle = "#000000";
 context.lineWidth = 1;
-
 context.beginPath();
-
 context.moveTo( 0, 75);
-
 context.lineTo(500, 75);
-
 context.stroke();
-
 context.closePath();
-
-context.font = \"16px Verdana\";
-
-context.fillStyle = \"#000000\";
-
-context.textBaseline = \"top\";
-
-context.fillText(\"top\", 0, 75);
-
-context.textBaseline = \"hanging\";
-
-context.fillText(\"hanging\", 40, 75);
-
-context.textBaseline = \"middle\";
-
-context.fillText(\"middle\", 120, 75);
-
-context.textBaseline = \"alphabetic\";
-
-context.fillText(\"alphabetic\", 200, 75);
-
-context.textBaseline = \"ideographic\";
-
-context.fillText(\"ideographic\", 300, 75);
-
-context.textBaseline = \"bottom\";
-
-context.fillText(\"bottom-glyph\", 400, 75);
-
-\</script\>
-
-\</body\>
-
-\</html\>
+context.font = "16px Verdana";
+context.fillStyle = "#000000";
+context.textBaseline = "top";
+context.fillText("top", 0, 75);
+context.textBaseline = "hanging";
+context.fillText("hanging", 40, 75);
+context.textBaseline = "middle";
+context.fillText("middle", 120, 75);
+context.textBaseline = "alphabetic";
+context.fillText("alphabetic", 200, 75);
+context.textBaseline = "ideographic";
+context.fillText("ideographic", 300, 75);
+context.textBaseline = "bottom";
+context.fillText("bottom-glyph", 400, 75);
+</script>
+</body>
+</html>
+```
 
 The example above shows the different possible values for this property and the corresponding results. The default value is \"alphabetic\" and corresponds to what has been used in the previous \"Hello World\" example.
 
@@ -8890,99 +8577,60 @@ Typical use (taken from the example above):
 
 6.  context.fillText(\"middle\", 120, 75);
 
-<h4> Setting the horizontal justification of a text with the textAlign property
+<h4> Setting the horizontal justification of a text with the textAlign property</h4>
 
 The textAlign property of the context tells how the x parameter will be used when calling strokeText(\"some text\", x, y) and fillText(\"some text\", x, y). For example, with textAlign=\"center\", the x parameter gives the position of the vertical center of the text, while in textAlign=\"right\", x corresponds to the rightmost position of the text.
 
-HTML
-
+<h4>HTML</h4>
+```
 \<!DOCTYPE html\>
-
 \<html\>
-
 \<head\>
-
 \<title\>Drawing text: the textAlign property\</title\>
-
 \<meta charset=\"utf-8\"/\>
-
 \</head\>
-
 \<body\>
-
 \<canvas id=\"myCanvas\" width=500 height=120\>Your browser does not support the canvas tag.\</canvas\>
-
 \<script type=\"text/javascript\"\>
-
 var canvas=document.getElementById(\'myCanvas\');
-
 var context=canvas.getContext(\'2d\');
-
 context.stokeStyle = \"#000000\";
-
 context.lineWidth = 1;
-
 context.beginPath();
-
 context.moveTo( 250, 0);
-
 context.lineTo( 250, 130);
-
 context.stroke();
-
 context.closePath();
-
 context.font = \"16px Verdana\";
-
 context.fillStyle = \"#000000\";
-
 context.textAlign = \"center\";
-
 context.fillText(\"center\", 250, 20);
-
 context.textAlign = \"start\";
-
 context.fillText(\"start\", 250, 40);
-
 context.textAlign = \"end\";
-
 context.fillText(\"end\", 250, 60);
-
 context.textAlign = \"left\";
-
 context.fillText(\"left\", 250, 80);
-
 context.textAlign = \"right\";
-
 context.fillText(\"right\", 250, 100);
-
 \</script\>
-
 \</body\>
-
 \</html\>
+```
 
 Typical use (source code taken from the above example):
-
+```
 1.  context.textAlign = \"center\";
-
 2.  context.fillText(\"center\", 250, 20);
-
 3.  context.textAlign = \"start\";
-
 4.  context.fillText(\"start\", 250, 40);
-
 5.  context.textAlign = \"end\";
-
 6.  context.fillText(\"end\", 250, 60);
-
 7.  context.textAlign = \"left\";
-
 8.  context.fillText(\"left\", 250, 80);
-
 9.  context.textAlign = \"right\";
-
 10. context.fillText(\"right\", 250, 100);
+```
 
 <h3 id="ch3-3-3">3.3.3 Drawing Images</h3>
 
@@ -8994,67 +8642,40 @@ It is also possible to draw images from a video stream, images corresponding to 
 
 But let\'s start with a basic example!
 
-### Example #1: drawing an image in a canvas
+<h4>Example #1: drawing an image in a canvas</h4>
 
 Source code:
-
-1.  \<!DOCTYPE HTML\>
-
-2.  \<html lang=\"en\"\>
-
-3.     \<head\>
-
-4.        \<meta charset=\"utf-8\"/\>
-
-5.        \<title\>Simple image drawing in a canvas\</title\>
-
-6.        \<script\>
-
+```
+1.  <!DOCTYPE HTML>
+2.  <html lang="en">
+3.     <head>
+4.        <meta charset="utf-8"/>
+5.        <title>Simple image drawing in a canvas</title>
+6.        <script>
 7.           window.onload = function () {
-
 8.  // Necessity to run this code only after the web page has been loaded.
-
-9.           var canvas = document.getElementById(\"myCanvas\");
-
-10.          var context = canvas.getContext(\"2d\");
-
+9.           var canvas = document.getElementById("myCanvas");
+10.          var context = canvas.getContext("2d");
 11.          var imageObj = new Image();
-
-12. // Callback function called by the imageObj.src = \.... line
-
+12. // Callback function called by the imageObj.src = .... line
 13. //located after this function
-
 14. **         **imageObj.onload = function () {
-
 15. // Draw the image only when we have the guarantee
-
 16. // that it has been loaded
-
 17.          context.drawImage(imageObj, 0, 0);
-
 18.       };
-
 19.  
-
 20. // Calls the imageObj.onload function asynchronously
-
 21.       imageObj.src =
-
-22.          \"https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png\";
-
+22.          "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png";
 23.       };
-
-24.       \</script\>
-
-25.    \</head\>
-
-26.    \<body\>
-
-27.       \<canvas id=\"myCanvas\" width=\"512\" height=\"512\"\>\</canvas\>
-
-28.    \</body\>
-
-29. \</html\>
+24.       </script>
+25.    </head>
+26.    <body>
+27.       <canvas id="myCanvas" width="512" height="512"></canvas>
+28.    </body>
+29. </html>
+```
 
 **Explanations:**
 
@@ -9089,76 +8710,44 @@ See picture below :
 
 This example illustrates the use of the different variants of the drawImage method:
 
-HTML
-
-\<!DOCTYPE HTML\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Drawing images: drawImage variants\</title\>
-
-\<script\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Drawing images: drawImage variants</title>
+<script>
 window.onload = function() {
-
-var canvas = document.getElementById(\"myCanvas\");
-
-var context = canvas.getContext(\"2d\");
-
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
 var imageObj = new Image();
-
 imageObj.onload = function() {
-
 // Try commenting/uncommenting the following lines to see the
-
 // effect of the different drawImage variants
-
 // Original, big image
-
 // context.drawImage(imageObj, 0, 10);
-
 // Original image drawn with size = 100x100 pixels
-
 context.drawImage(imageObj, 0, 10, 100, 100);
-
 // with size = 150x150
-
 context.drawImage(imageObj, 80, 10, 150, 150);
-
 // with size = 200x200
-
 context.drawImage(imageObj, 210, 10, 200, 200);
-
 // draw the sub image at 0, 0, width = 512, height = 100
-
 // at position 100, 250, with a width of 256 and a height of 50
-
 context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
-
 };
-
-imageObj.src = \"https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png\";
-
+imageObj.src = "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png";
 };
-
-\</script\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\" width=\"512\" height=\"512\"\>\</canvas\>
-
-\</body\>
-
-\</html\>
-
-CSS
-
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="512" height="512"></canvas>
+</body>
+</html>
+```
+<h4>CSS</h4>
+```
 #myCanvas {
 
 border:1px solid black;
@@ -9207,39 +8796,29 @@ Source code extract:
 
 20. };
 
-21. imageObj.src = \"https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png\";
+21. imageObj.src = "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png";
 
 22. };
 
-### Example #3: draw an image defined in the page by an \<img src=\"\...\"\> element
+### Example #3: draw an image defined in the page by an <img src=\"\...\"\> element
 
-Sometimes, you may want to draw an image that is already declared in the HTML document as an \<img src=\"\...\"\> element. Remember that when you add an \<img\> in the document, the browser starts downloading it in background. 
+Sometimes, you may want to draw an image that is already declared in the HTML document as an <img src=\"\...\"\> element. Remember that when you add an \<img\> in the document, the browser starts downloading it in background. 
 
 You could try drawing it using some code like this:
-
-1.  \<body\>
-
-2.  \<canvas id=\"myCanvas\" width=\"512\" height=\"512\"\>\</canvas\>
-
-3.  \<p\>Original image as an \<img\> element:\</p\>
-
-4.  **\<img id=\"logo\"**
-
-5.  **src=\"https://fc07.deviantart.net/fs70/f/2013/149/b/8/texture_85_by_voyager168-d670m68.jpg\"\>**
-
-6.  \<script\>
-
-7.       canvas = document.getElementById(\"myCanvas\");
-
-8.       var ctx = canvas.getContext(\"2d\");
-
-9.       var logo = document.querySelector(\"#logo\");
-
+```
+1.  <body>
+2.  <canvas id="myCanvas" width="512" height="512"></canvas>
+3.  <p>Original image as an <img> element:</p>
+4.  **<img id="logo"**
+5.  **src="https://fc07.deviantart.net/fs70/f/2013/149/b/8/texture_85_by_voyager168-d670m68.jpg">**
+6.  <script>
+7.       canvas = document.getElementById("myCanvas");
+8.       var ctx = canvas.getContext("2d");
+9.       var logo = document.querySelector("#logo");
 10.      **ctx.drawImage(logo, 0, 0, 100, 100);**
-
-11. \</script\>
-
-12. \</body\>
+11. </script>
+12. </body>
+```
 
 Although you will find many examples on the Web that do it this way, they will only work most of the time with small images, or with images that are in the browser\'s cache. Remember that** you cannot draw an image that has not been fully loaded!**
 
@@ -9250,37 +8829,36 @@ If you try to draw an image that is not loaded or partially loaded, you will ha
 
 The right way to do this is shown in this online example, that starts drawing only from the onload callback function:
 
-CSS
-
+<h4>CSS</h4>
+```
 #myCanvas {
-
 border:1px solid black;
-
 }
+```
 
-HTML
+<h4>HTML</h4>
+```
+<!DOCTYPE HTML>
 
-\<!DOCTYPE HTML\>
+<html lang="en">
 
-\<html lang=\"en\"\>
+<head>
 
-\<head\>
+<meta charset="utf-8"/>
 
-\<meta charset=\"utf-8\"/\>
+<title>Drawing an image with &lt;img&gt;</title>
 
-\<title\>Drawing an image with &lt;img&gt;\</title\>
-
-\<script\>
+<script>
 
 var canvas, context, imageObj;
 
 window.onload = function() {
 
-canvas = document.getElementById(\"myCanvas\");
+canvas = document.getElementById("myCanvas");
 
-context = canvas.getContext(\"2d\");
+context = canvas.getContext("2d");
 
-imageObj = document.querySelector(\"#logo\");
+imageObj = document.querySelector("#logo");
 
 drawAllImages();
 
@@ -9288,7 +8866,7 @@ drawAllImages();
 
 function drawAllImages() {
 
-console.log(\"image is already loaded, we draw it!\");
+console.log("image is already loaded, we draw it!");
 
 // Original image drawn with size = 100x100 pixels
 
@@ -9310,107 +8888,73 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 
 }
 
-\</script\>
+</script>
 
-\</head\>
+</head>
 
-\<body\>
+<body>
 
-\<p\>A canvas with an image that is further in the page, loaded by the &lt;img src=\...&gt; tag. This is not the recommended way to load images, except if the image is already in your page. Use the onload callback to be sure that the image is in the page. \</p\>
+<p>A canvas with an image that is further in the page, loaded by the &lt;img src=...&gt; tag. This is not the recommended way to load images, except if the image is already in your page. Use the onload callback to be sure that the image is in the page. </p>
 
-\<canvas id=\"myCanvas\" width=\"512\" height=\"512\"\>\</canvas\>
+<canvas id="myCanvas" width="512" height="512"></canvas>
 
-\<p\>Original image is an &lt;img&gt; element:
+<p>Original image is an &lt;img&gt; element:
 
-\</p\>
+</p>
 
-\<img id=\"logo\" src=\"https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png\" alt=\"html5 logo\"\>
+<img id="logo" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="html5 logo">
 
-\</body\>
+</body>
 
-\</html\>
+</html>
 
 With large image files, this will not break nor produce unexpected results:
 
-CSS
-
+<h4>CSS</h4>
+```
 #myCanvas {
-
 border:1px solid black;
-
 }
+```
 
-HTML
-
-\<!DOCTYPE HTML\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Using a large image\</title\>
-
-\<script\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Using a large image</title>
+<script>
 let canvas, context;
-
-window.onload = () =\> {
-
-canvas = document.getElementById(\"myCanvas\");
-
-context = canvas.getContext(\"2d\");
-
+window.onload = () => {
+canvas = document.getElementById("myCanvas");
+context = canvas.getContext("2d");
 draw();
-
 };
-
 function draw() {
-
-var imageObj = document.querySelector(\"#logo\");
-
-console.log(\"Image has been loaded, let\'s draw it!\");
-
+var imageObj = document.querySelector("#logo");
+console.log("Image has been loaded, let's draw it!");
 // Original image drawn with size = 100x100 pixels
-
 context.drawImage(imageObj, 0, 10, 100, 100);
-
 // with size = 150x150
-
 context.drawImage(imageObj, 80, 10, 150, 150);
-
 // with size = 200x200
-
 context.drawImage(imageObj, 210, 10, 200, 200);
-
 // draw the sub image at 0, 0, width = 512, height = 100
-
 // at position 100, 250, with a width of 256 and a height of 50
-
 context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
-
 }
-
-\</script\>
-
-\</head\>
-
-\<body\>
-
-\<p\>It is possible that the drawing in the canvas below appears only after a few seconds, because the image is very large!\</p\>
-
-\<canvas id=\"myCanvas\" width=\"512\" height=\"512\"\>\</canvas\>
-
-\<p\>Very large original image, declared as an &lt;img&gt; element:
-
-\</p\>
-
-\<img id=\"logo\" alt=\"logo\" src=\"https://mainline.i3s.unice.fr/mooc/texture_85_by_voyager168-d670m68.jpg\" width=\"512\" height=\"512\"\>
-
-\</body\>
-
-\</html\>
+</script>
+</head>
+<body>
+<p>It is possible that the drawing in the canvas below appears only after a few seconds, because the image is very large!</p>
+<canvas id="myCanvas" width="512" height="512"></canvas>
+<p>Very large original image, declared as an &lt;img&gt; element:
+</p>
+<img id="logo" alt="logo" src="https://mainline.i3s.unice.fr/mooc/texture_85_by_voyager168-d670m68.jpg" width="512" height="512">
+</body>
+</html>
+```
 
 The **[DOM Level 2 Events specification](https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents) **says: \"*The load event occurs when the DOM implementation finishes loading **all content** within a document, all frames within a FRAMESET, or an OBJECT element.*\"
 
@@ -9418,235 +8962,129 @@ The **[DOM Level 2 Events specification](https://www.w3.org/TR/DOM-Level-2-Even
 
 The drawImage(\...) function can take a video element as its first parameter. The image that will be drawn is the one currently played by the video stream. This can be done at video frequency on most modern computers or mobile devices.
 
-HTML
-
-\<!DOCTYPE HTML\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Drawing images from a video stream\</title\>
-
-\<style\>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Drawing images from a video stream</title>
+<style>
 body {
-
 margin: 10px;
-
 padding: 0px;
-
 }
-
 #myCanvas {
-
 border: 10px solid red;
-
 }
-
-\</style\>
-
-\<script\>
-
+</style>
+<script>
 var video;
-
 var canvas, ctx;
-
 var angle = 0;
-
 function init() {
-
-video = document.getElementById(\'sourcevid\');
-
-canvas = document.getElementById(\'myCanvas\');
-
-ctx = canvas.getContext(\'2d\');
-
-setInterval(\"processFrame()\", 25);
-
+video = document.getElementById('sourcevid');
+canvas = document.getElementById('myCanvas');
+ctx = canvas.getContext('2d');
+setInterval("processFrame()", 25);
 }
-
 function processFrame() {
-
 // Uncomment next line for drawing 100% copy of the video content
-
 //ctx.drawImage(video, 0, 0);
-
 // Comment these 4 lines if you uncommented the previous one
-
 ctx.drawImage(video, 0, 0, 320, 180);
-
 drawRotatingVideo(480, 90);
-
 ctx.drawImage(video, 0, 180, 320, 180);
-
 ctx.drawImage(video, 320, 180, 320, 180);
-
 }
-
 function drawRotatingVideo(x, y) {
-
 // Clear thze zone at the top right quarter of the canvas
-
 ctx.clearRect(320, 0, 320, 180);
-
 // We are going to change the coordinate system, save the context !
-
 ctx.save();
-
-// translate, rotate and recenter the image at its \"real\" center,
-
+// translate, rotate and recenter the image at its "real" center,
 //not the top left corner
-
 ctx.translate(x, y);
-
 ctx.rotate(angle += 0.01);
-
 ctx.translate(-80, -45);
-
 ctx.drawImage(video, 0, 0, 160, 90);
-
 // restore the context
-
 ctx.restore();
-
 }
-
-\</script\>
-
-\</head\>
-
-\<body onload=\"init()\" \>
-
-\<p\>This is a \<code\>&lt;video&gt;\</code\> element: \</p\>
-
-\<video id=\"sourcevid\" autoplay loop\>
-
-\<source src=\"https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.mp4\" type=\"video/mp4\" /\>
-
-\<source src=\"https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.ogv\" type=\"video/ogg\"/\>
-
-\</video\>
-
-\<p\>This is a \<code\>&lt;canvas&gt;\</code\> element: \</p\>
-
-\<canvas id=\"myCanvas\" width=\"620\" height=\"360\"\>\</canvas\>
-
-\</body\>
-
-\</html\>
+</script>
+</head>
+<body onload="init()" >
+<p>This is a <code>&lt;video&gt;</code> element: </p>
+<video id="sourcevid" autoplay loop>
+<source src="https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.mp4" type="video/mp4" />
+<source src="https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.ogv" type="video/ogg"/>
+</video>
+<p>This is a <code>&lt;canvas&gt;</code> element: </p>
+<canvas id="myCanvas" width="620" height="360"></canvas>
+</body>
+</html>
+```
 
 This example shows:
 
--   a \<video\> element on top, and four images drawn in a canvas below.
+-   a <video\> element on top, and four images drawn in a canvas below.
 
 -   The images are drawn every XXX milliseconds using the setInterval(function, delay) method.
 
 Source code extract:
-
-1.  \<script\>
-
+```
+1.  <script>
 2.     var video;
-
 3.     var canvas, ctx;
-
 4.     var angle = 0;
-
 5.   
-
 6.  function init() {
-
-7.     video = document.getElementById(\'sourcevid\');
-
-8.     canvas = document.getElementById(\'myCanvas\');
-
-9.     ctx = canvas.getContext(\'2d\');
-
+7.     video = document.getElementById('sourcevid');
+8.     canvas = document.getElementById('myCanvas');
+9.     ctx = canvas.getContext('2d');
 10.  
-
-11.    setInterval(\"processFrame()\", 25); // call processFrame each 25ms
-
+11.    setInterval("processFrame()", 25); // call processFrame each 25ms
 12. }
-
 13.  
-
 14. function processFrame() {
-
 15.     ctx.drawImage(video, 0, 0, 320, 180);
-
 16.     drawRotatingVideo(480, 90);
-
 17.     ctx.drawImage(video, 0, 180, 320, 180);
-
 18.     ctx.drawImage(video, 320, 180, 320, 180);
-
 19. }
-
 20.  
-
 21. function drawRotatingVideo(x, y) {
-
 22.      // Clear the zone at the top right quarter of the canvas
-
 23.     ctx.clearRect(320, 0, 320, 180);
-
 24.  
-
 25.     // We are going to change the coordinate system, save the context!
-
 26.     ctx.save();
-
-27.     // translate, rotate and recenter the image at its \"real\" center,
-
+27.     // translate, rotate and recenter the image at its "real" center,
 28.     //not the top left corner
-
 29.     ctx.translate(x, y);
-
 30.     ctx.rotate(angle += 0.01); // rotate and increment the current angle
-
 31.     ctx.translate(-80, -45);
-
 32.  
-
 33.     ctx.drawImage(video, 0, 0, 160, 90);
-
 34.  
-
 35.     // restore the context
-
 36.     ctx.restore();
-
 37. }
-
-38. \</script\>
-
-39. \</head\>
-
+38. </script>
+39. </head>
 40.  
-
-41. \<body onload=\"init()\" \>
-
-42. \<p\>This is a \<video\> element: \</p\>
-
-43. \<video id=\"sourcevid\" autoplay=\"true\" loop=\"true\"\>
-
-44. \<source src=\"https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.mp4\"
-
-45.          type=\"video/mp4\" /\>
-
-46. \<source src=\"https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.ogv\"
-
-47.          type=\"video/ogg\"/\>
-
-48. \</video\>
-
-49. \<p\>This is a \<canvas\> element: \</p\>
-
-50. \<canvas id=\"myCanvas\" width=\"620\" height=\"360\"\>\</canvas\>
-
-51. \</body\>
+41. <body onload="init()" >
+42. <p>This is a <video> element: </p>
+43. <video id="sourcevid" autoplay="true" loop="true">
+44. <source src="https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.mp4"
+45.          type="video/mp4" />
+46. <source src="https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.ogv"
+47.          type="video/ogg"/>
+48. </video>
+49. <p>This is a <canvas> element: </p>
+50. <canvas id="myCanvas" width="620" height="360"></canvas>
+51. </body>
+```
 
 Explanations:
 
@@ -9660,7 +9098,7 @@ Explanations:
 
 <h3 id="ch3-4-1">3.4.1 Immediate Mode vs. Path Mode</h3
 
-### Immediate mode
+<h4>Immediate mode</h4>
 
 As a reminder: an immediate mode means \"executing a call to a drawing method means *immediately* drawing in the canvas\". The drawing appears as soon as the design instruction is executed.
 
@@ -9678,105 +9116,64 @@ As a reminder: an immediate mode means \"executing a call to a drawing method me
 
 Here is an example that draws 1000 random rectangles in a canvas, using immediate mode rectangle drawing calls:
 
-JS
-
+<h4>JS</h4>
+```
 var canvas, ctx, w, h;
-
 function init() {
-
 canvas = document.getElementById(\'myCanvas\');
-
 ctx = canvas.getContext(\'2d\');
-
 w = canvas.width;
-
 h = canvas.height;
-
 console.time(\"time to draw\");
-
 for(var i=0; i \< 1000; i++) {
-
 var x = Math.random() \* w;
-
 var y = Math.random() \* h;
-
 var width = Math.random() \* w;
-
 var height = Math.random() \* h;
-
 ctx.strokeRect(x, y, width, height);
-
 }
-
 console.timeEnd(\"time to draw\");
-
 }
+```
 
-HTML
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Canvas</title>
+</head>
+<body onload = init();>
+<canvas id="myCanvas" width="400" height =400>
+Your browser does not support the canvas tag.</canvas>
+</body>
+</html>
+```
 
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Canvas\</title\>
-
-\</head\>
-
-\<body onload = init();\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height =400\>
-
-Your browser does not support the canvas tag.\</canvas\>
-
-\</body\>
-
-\</html\>
-
+```
 1.  var canvas, ctx, w, h;
-
 2.  
-
 3.  function init() {
-
-4.      canvas = document.getElementById(\'myCanvas\');
-
-5.      ctx = canvas.getContext(\'2d\');
-
+4.      canvas = document.getElementById('myCanvas');
+5.      ctx = canvas.getContext('2d');
 6.  
-
 7.      w = canvas.width;
-
 8.      h = canvas.height;
-
 9.  
-
-10.     console.time(\"time to draw\");
-
+10.     console.time("time to draw");
 11. 
-
-12.     for(var i=0; i \< 1000; i++) {
-
-13.        var x = Math.random() \* w;
-
-14.        var y = Math.random() \* h;
-
-15.        var width = Math.random() \* w;
-
-16.        var height = Math.random() \* h;
-
+12.     for(var i=0; i < 1000; i++) {
+13.        var x = Math.random() * w;
+14.        var y = Math.random() * h;
+15.        var width = Math.random() * w;
+16.        var height = Math.random() * h;
 17. 
-
 18.        ctx.strokeRect(x, y, width, height);
-
 19.     }
-
-20.     console.timeEnd(\"time to draw\");
-
+20.     console.timeEnd("time to draw");
 21. }
+```
 
 *Lines 12-18* draw 1000 rectangles of random sizes in immediate mode. We also measure the time using the usual console.time(name_of_timer) and console.timeEnd(name_of_timer) that will write in the browser console the time elapsed. Note that console.time(\...) and console.timeEnd(\...) display results only in the browser\'s console, not in the JSBin console.
 
@@ -9784,7 +9181,7 @@ On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawin
 
 ![Image of the devtool console that shows random time values. The average time elapsed is around 4s](./images/image134.jpeg){width="6.5in" height="1.3833333333333333in"}
 
-### Path mode
+<h4>Path mode</h4>
 
 There is another drawing mode called \"path drawing mode\" where you first send drawing orders to the graphics processor, and these orders are stored in a buffer. Then you call methods to draw the whole buffer at once. There are also methods to erase the buffer\'s content.
 
@@ -9792,83 +9189,55 @@ Path drawing mode allows parallelism: if you need to draw 10,000 rectangles, it\
 
 Same example as before, this time using the buffered mode for drawing rectangles:
 
-JS
+<h4>JS</h4>
 
+```
 var canvas, ctx, w, h;
-
 function init() {
-
 canvas = document.getElementById(\'myCanvas\');
-
 ctx = canvas.getContext(\'2d\');
-
 w = canvas.width;
-
 h = canvas.height;
-
 console.time(\"time to draw\");
-
 for(var i=0; i \< 1000; i++) {
-
 var x = Math.random() \* w;
-
 var y = Math.random() \* h;
-
 var width = Math.random() \* w;
-
 var height = Math.random() \* h;
-
 ctx.rect(x, y, width, height);
-
 }
-
 ctx.stroke();
-
-console.timeEnd(\"time to draw\");
-
+console.timeEnd("time to draw");
 }
+```
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Canvas\</title\>
-
-\</head\>
-
-\<body onload = init();\>
-
-\<canvas id=\"myCanvas\" width=\"400\" height =400\>
-
-Your browser does not support the canvas tag.\</canvas\>
-
-\</body\>
-
-\</html\>
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Canvas</title>
+</head>
+<body onload = init();>
+<canvas id="myCanvas" width="400" height =400>
+Your browser does not support the canvas tag.</canvas>
+</body>
+</html>
+```
 
 Extract from source code (the part that draws the rectangles):
 
-1.  for(var i=0; i \< 1000; i++) {
-
-2.  var x = Math.random() \* w;
-
-3.  var y = Math.random() \* h;
-
-4.  var width = Math.random() \* w;
-
-5.  var height = Math.random() \* h;
-
+```
+1.  for(var i=0; i < 1000; i++) {
+2.  var x = Math.random() * w;
+3.  var y = Math.random() * h;
+4.  var width = Math.random() * w;
+5.  var height = Math.random() * h;
 6.  ctx.rect(x, y, width, height); // store a rectangle in path/buffer
-
 7.  }
-
 8.  ctx.stroke(); // draws the whole buffer (the 1000 rectangles) at once
+```
 
 Instead of calling strokeRect(\...) or fillRect(\...), we just call the rect(\...) method of the context (*line 7*). This is how we can delay the drawing of the rectangles. The 1000 rectangles are stored in a buffer in the hardware.
 
@@ -9885,20 +9254,14 @@ And here is what the timer gives: a slightly faster execution time. Changing 100
 A call to ctx.beginPath() will reset the buffer (empty its contents). We will see many more examples of using the path drawing mode in another further section.
 
 1.  // start a new buffer / path
-
 2.  ctx.beginPath();
-
 3.  // all these orders are in a buffer/path
-
 4.  ctx.moveTo(10, 10);
-
 5.  ctx.lineTo(100, 100);
-
 6.  ctx.lineTo(150, 70);
-
 7.  // Draw the buffer
-
 8.  ctx.stroke();
+```
 
 Summary of path mode principles
 
@@ -9946,301 +9309,192 @@ Here are the 5 different steps:
 
 Note the call to ctx.stroke() or ctx.fill() will use the current values of the strokeStyle or fillStyle properties. It is possible to call ctx.moveTo(x, y) in the middle of steps 1 through 5 in order to move the pen somewhere else without connecting to the last drawn line.
 
-### Drawing a grid
+<h4>Drawing a grid</h4>
 
 See the example below:
 
 ![](./images/image136.png){width="6.5in" height="2.0722222222222224in"}
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Drawing a grid\</title\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.getElementById(\'myCanvas\');
-
-var ctx=canvas.getContext(\'2d\');
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Drawing a grid</title>
+</head>
+<body>
+<canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
 // Vertical lines
-
-for (var x = 0.5; x \< 500; x += 10) {
-
+for (var x = 0.5; x < 500; x += 10) {
 ctx.moveTo(x, 0);
-
 ctx.lineTo(x, 375);
-
 }
-
 // Horizontal lines
-
-for (var y = 0.5; y \< 375; y += 10) {
-
+for (var y = 0.5; y < 375; y += 10) {
 ctx.moveTo(0, y);
-
 ctx.lineTo(500, y);
-
 }
-
 // Draw in blue
-
-ctx.strokeStyle = \"#0000FF\";
-
+ctx.strokeStyle = "#0000FF";
 // Before the execution of the next line nothing as been drawn yet !
-
 ctx.stroke();
-
-\</script\>
-
-\</body\>
-
-\</html\>
+</script>
+</body>
+</html>
+```
 
 Code source extract:
 
-1.  var canvas=document.getElementById(\'myCanvas\');
-
-2.  var ctx=canvas.getContext(\'2d\');
-
+```
+1.  var canvas=document.getElementById('myCanvas');
+2.  var ctx=canvas.getContext('2d');
 3.  
-
 4.  // Vertical lines
-
-5.  for (var x = 0.5; x \< 500; x += 10) {
-
+5.  for (var x = 0.5; x < 500; x += 10) {
 6.      ctx.moveTo(x, 0);
-
 7.      ctx.lineTo(x, 375);
-
 8.  }
-
 9.  
-
 10. // Horizontal lines
-
-11. for (var y = 0.5; y \< 375; y += 10) {
-
+11. for (var y = 0.5; y < 375; y += 10) {
 12.     ctx.moveTo(0, y);
-
 13.     ctx.lineTo(500, y);
-
 14. }
-
 15.  
-
 16. // Draw in blue
-
-17. ctx.strokeStyle = \"#0000FF\";
-
+17. ctx.strokeStyle = "#0000FF";
 18.  
-
 19. // Until the execution of the next line, nothing has been drawn!
-
 20. ctx.stroke();
+```
 
 In this example, the entire grid is drawn during the execution of the last line of code, with the single call to ctx.stroke().
 
-### Mixing filled and wireframe shapes (and immediate and path modes)
+<h4>Mixing filled and wireframe shapes (and immediate and path modes)</h4>
 
 Try this:
 
 ![](./images/image137.png){width="6.5in" height="2.0722222222222224in"}
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Canvas\</title\>
-
-\</head\>
-
-\<canvas id=\"myCanvas\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.getElementById(\'myCanvas\');
-
-var ctx=canvas.getContext(\'2d\');
-
-ctx.fillStyle=\'#FF0000\';
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Canvas</title>
+</head>
+<canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
+ctx.fillStyle='#FF0000';
 ctx.fillRect(0,0,80,100);
-
 ctx.moveTo(0,0);
-
 ctx.lineTo(100, 100);
-
 ctx.lineTo(100,0);
-
-ctx.strokeStyle = \"#0000FF\";
-
+ctx.strokeStyle = "#0000FF";
 ctx.stroke();
+</script>
+</body>
+</html>
+```
 
-\</script\>
+<h4>Code source:</h4>
 
-\</body\>
-
-\</html\>
-
-Code source:
-
-1.  var canvas=document.getElementById(\'myCanvas\');
-
-2.  var ctx=canvas.getContext(\'2d\');
-
+```
+1.  var canvas=document.getElementById('myCanvas');
+2.  var ctx=canvas.getContext('2d');
 3.  
-
 4.  // a filled rectangle in immediate mode
-
-5.  ctx.fillStyle=\'#FF0000\';
-
+5.  ctx.fillStyle='#FF0000';
 6.  ctx.fillRect(0,0,80,100);
-
 7.  
-
 8.  // two consecutive lines in path mode
-
 9.  ctx.moveTo(0,0);
-
 10. ctx.lineTo(100, 100);
-
 11. ctx.lineTo(100,0);
-
 12. 
-
 13. // draws only the two lines in wireframe mode
-
-14. ctx.strokeStyle = \"#0000FF\";
-
+14. ctx.strokeStyle = "#0000FF";
 15. ctx.stroke();
+```
 
 This example shows that filled and wireframe shapes should be drawn differently (here a filled rectangle is drawn using a call to the fillRect(\...) method while a wireframe set of connected lines is drawn using the stroke() method of the context).
 
-### Drawing a single path made with disconnected lines / parts
+<h4>Drawing a single path made with disconnected lines / parts</h4>
 
 Try this:
 
 ![](./images/image138.png){width="6.5in" height="2.0861111111111112in"}
 
-Code source:
-
-1.  var canvas=document.getElementById(\'myCanvas\');
-
-2.  var ctx=canvas.getContext(\'2d\');
-
+<h4>Code source:</h4>
+```
+1.  var canvas=document.getElementById('myCanvas');
+2.  var ctx=canvas.getContext('2d');
 3.  
-
 4.  // first part of the path
-
 5.  ctx.moveTo(20,20);
-
 6.  ctx.lineTo(100, 100);
-
 7.  ctx.lineTo(100,0);
-
 8.  
-
-9.  // second part of the path, moveTo(\...) is used to \"jump\" to another place
-
+9.  // second part of the path, moveTo(...) is used to "jump" to another place
 10. ctx.moveTo(120,20);
-
 11. ctx.lineTo(200, 100);
-
 12. ctx.lineTo(200,0);
-
 13. 
-
 14. // indicate stroke color + draw the path
-
-15. ctx.strokeStyle = \"#0000FF\";
-
+15. ctx.strokeStyle = "#0000FF";
 16. ctx.stroke();
+```
 
 In this last example, we simply called the moveTo() method between each part of the path (*lines 5 and 10*). And we called stroke() (*line 16*) only once to draw the whole path.
 
 <h3 id="ch3-4-4">3.4.4 Drawing Lines with Different Styles</h3>
 
-### Common mistake: drawing the same path twice
+<h4>Common mistake: drawing the same path twice</h4>
 
 Let\'s look at the drawing from the last example of the previous section:
 
 ![](./images/image139.png){width="6.5in" height="2.0569444444444445in"}
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Drawing disconnected lines\</title\>
-
-\</head\>
-
-\<canvas id=\"myCanvas\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.getElementById(\'myCanvas\');
-
-var ctx=canvas.getContext(\'2d\');
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Drawing disconnected lines</title>
+</head>
+<canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
 // first part of the path
-
 ctx.moveTo(20,20);
-
 ctx.lineTo(100, 100);
-
 ctx.lineTo(100,0);
-
-// second part of the path, moveTo(\...) is used to \"jump\" to another place
-
+// second part of the path, moveTo(...) is used to "jump" to another place
 ctx.moveTo(120,20);
-
 ctx.lineTo(200, 100);
-
 ctx.lineTo(200,0);
-
 // indicate stroke color + draw the path
-
-ctx.strokeStyle = \"#0000FF\";
-
+ctx.strokeStyle = "#0000FF";
 ctx.stroke();
-
-\</script\>
-
-\</body\>
-
-\</html\>
+</script>
+</body>
+</html>
+```
 
 Imagine that we would like to draw them with different styles and colors: the shape on the left will stay as it is now (blue, wireframe), while the shape on the right will be filled, colored in pink. Let\'s look at how we can do this\...
 
-### Drawing two paths with different styles: the WRONG and the right way!
+<h4>Drawing two paths with different styles: the WRONG and the right way!</h4>
 
-<h4> First, the wrong way!
+<h4>First, the wrong way!</h4>
 
 In this example, we will draw the two parts of the path with different styles: the first part in wireframe mode, and the second part in filled mode.
 
@@ -10248,105 +9502,61 @@ What we will try first is to call stroke() after the first half of the path, t
 
 ![](./images/image140.png){width="6.5in" height="2.0631944444444446in"}
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Drawing two paths with different styles: the wrong way!\</title\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.getElementById(\'myCanvas\');
-
-var ctx=canvas.getContext(\'2d\');
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Drawing two paths with different styles: the wrong way!</title>
+</head>
+<body>
+<canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
 // first part of the path
-
 ctx.moveTo(20,20);
-
 ctx.lineTo(100, 100);
-
 ctx.lineTo(100,0);
-
 // indicate stroke color + draw first part of the path
-
-ctx.strokeStyle = \"#0000FF\";
-
+ctx.strokeStyle = "#0000FF";
 ctx.stroke();
-
 // second part of the path
-
 ctx.moveTo(120,20);
-
 ctx.lineTo(200, 100);
-
 ctx.lineTo(200,0);
-
 // indicate stroke color + draw the path
-
-ctx.fillStyle = \"pink\";
-
+ctx.fillStyle = "pink";
 ctx.fill();
+</script>
+</body>
+</html>
+```
 
-\</script\>
-
-\</body\>
-
-\</html\>
-
-Here is the code:
-
-1.  var canvas=document.getElementById(\'myCanvas\');
-
-2.  var ctx=canvas.getContext(\'2d\');
-
+<h4>Here is the code:</h4>
+```
+1.  var canvas=document.getElementById('myCanvas');
+2.  var ctx=canvas.getContext('2d');
 3.  
-
 4.  // first part of the path
-
 5.  ctx.moveTo(20,20);
-
 6.  ctx.lineTo(100, 100);
-
 7.  ctx.lineTo(100,0);
-
 8.  
-
 9.  // indicate stroke color + draw first part of the path
-
-10. ctx.strokeStyle = \"#0000FF\";
-
+10. ctx.strokeStyle = "#0000FF";
 11. ctx.stroke();
-
 12. 
-
 13. // second part of the path
-
 14. ctx.moveTo(120,20);
-
 15. ctx.lineTo(200, 100);
-
 16. ctx.lineTo(200,0);
-
 17. 
-
 18. // indicate stroke color + draw the path
-
 19. ctx.fillStyle = \"pink\";
-
 20. ctx.fill();
+```
 
 Hey - it does not work! Weirdly, the two parts of the path are filled in pink! But we called stroke() after the first half of the path was drawn (lines 5-8). Then we called fill() only after the second part of the path was specified (lines 14-19)\... so, what happened?
 
@@ -10366,115 +9576,66 @@ using the ctx.beginPath() method, as shown in the next example.
 
 ![](./images/image141.png){width="6.5in" height="2.0701388888888888in"}
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Drawing two paths with different styles: the right way!\</title\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.getElementById(\'myCanvas\');
-
-var ctx=canvas.getContext(\'2d\');
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Drawing two paths with different styles: the right way!</title>
+</head>
+<body>
+<canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
 // first part of the path
-
 ctx.moveTo(20,20);
-
 ctx.lineTo(100, 100);
-
 ctx.lineTo(100,0);
-
 // indicate stroke color + draw first part of the path
-
-ctx.strokeStyle = \"#0000FF\";
-
+ctx.strokeStyle = "#0000FF";
 ctx.stroke();
-
 // start a new path, empty the current buffer
-
 ctx.beginPath();
-
 // second part of the path
-
 ctx.moveTo(120,20);
-
 ctx.lineTo(200, 100);
-
 ctx.lineTo(200,0);
-
 // indicate stroke color + draw the path
-
-ctx.fillStyle = \"pink\";
-
+ctx.fillStyle = "pink";
 ctx.fill();
+</script>
+</body>
+</html>
+```
 
-\</script\>
-
-\</body\>
-
-\</html\>
-
-Source code:
-
-1.  var canvas=document.getElementById(\'myCanvas\');
-
-2.  var ctx=canvas.getContext(\'2d\');
-
+<h4>Source code:</h4>
+```
+1.  var canvas=document.getElementById('myCanvas');
+2.  var ctx=canvas.getContext('2d');
 3.  
-
 4.  // first part of the path
-
 5.  ctx.moveTo(20,20);
-
 6.  ctx.lineTo(100, 100);
-
 7.  ctx.lineTo(100,0);
-
 8.  
-
 9.  // indicate stroke color + draw first part of the path
-
-10. ctx.strokeStyle = \"#0000FF\";
-
+10. ctx.strokeStyle = "#0000FF";
 11. ctx.stroke();
-
 12. 
-
 13. // start a new path, empty the current buffer
-
 14. ctx.beginPath();
-
 15. 
-
 16. // second part of the path
-
 17. ctx.moveTo(120,20);
-
 18. ctx.lineTo(200, 100);
-
 19. ctx.lineTo(200,0);
-
 20. 
-
 21. // indicate stroke color + draw the path
-
-22. ctx.fillStyle = \"pink\";
-
+22. ctx.fillStyle = "pink";
 23. ctx.fill();
+```
 
 This time, in order to draw the two shapes differently, we defined two separate paths. The way to do this is just to call ctx.beginPath() to start a new path. In this example, the first path has been drawn in wireframe mode, then a new path has been started that is drawn in filled mode.
 
@@ -10485,53 +9646,35 @@ Sometimes, it might be useful to draw just one line.
 It\'s interesting to see how we can write a single \"draw line\" function that takes the start and end coordinates, the color, the line width, etc., and give the impression of being done in \"immediate\" mode.
 
 Here is the code for this \"utility\" function that you may find useful:
-
+```
 1.  function drawLine(x1, y1, x2, y2, color, width) {
-
 2.      ctx.save();
-
 3.  
-
 4.      // set color and lineWidth, if these parameters
-
 5.      // are not defined, do nothing (default values)
-
 6.      if(color)
-
 7.          ctx.strokeStyle = color;
-
 8.  
-
 9.      if(width)
-
 10.         ctx.lineWidth = width;
-
 11. 
-
 12.     // start a new path
-
 13.     ctx.beginPath();
-
 14. 
-
 15.     ctx.moveTo(x1, y1);
-
 16.     ctx.lineTo(x2, y2);
-
 17.     ctx.stroke();
-
 18. 
-
 19.     ctx.restore();
-
 20. }
+```
 
 Notice the save/restore of the context at the beginning/end of the function. This is REALLY a best practice to avoid affecting other functions\' context.
 
 -   *Line 13* starts a new path so that the function will only draw what it is meant to draw: a single line.
 
 ```
-<!-- -->
+
 ```
 -   *Lines 15-17* move the \"pen\" at (x1, y1) then draw a line to (x2, y2), and the stroke at *line 17* makes it appear on the screen.
 
@@ -10539,79 +9682,49 @@ Here is an example:
 
 ![](./images/image142.png){width="6.5in" height="2.0569444444444445in"}
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Drawing lines in immediate mode\</title\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.getElementById(\'myCanvas\');
-
-var ctx=canvas.getContext(\'2d\');
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Drawing lines in immediate mode</title>
+</head>
+<body>
+<canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
 drawLine(0, 0, 100, 100);
-
-drawLine(0, 50, 150, 200, \'red\');
-
-drawLine(10, 100, 100, 10, \'green\', 10);
-
+drawLine(0, 50, 150, 200, 'red');
+drawLine(10, 100, 100, 10, 'green', 10);
 function drawLine(x1, y1, x2, y2, color, width) {
-
 ctx.save();
-
 // set color and lineWidth, if these parameters
-
 // are not defined, do nothing (default values)
-
 if(color)
-
 ctx.strokeStyle = color;
-
 if(width)
-
 ctx.lineWidth = width;
-
 // start a new path
-
 ctx.beginPath();
-
 ctx.moveTo(x1, y1);
-
 ctx.lineTo(x2, y2);
-
 ctx.stroke();
-
 ctx.restore();
-
 }
-
-\</script\>
-
-\</body\>
-
-\</html\>
+</script>
+</body>
+</html>
+```
 
 Source code extract:
 
+```
 1.  drawLine(0, 0, 100, 100);
-
-2.  drawLine(0, 50, 150, 200, \'red\');
-
-3.  drawLine(10, 100, 100, 10, \'green\', 10);
+2.  drawLine(0, 50, 150, 200, 'red');
+3.  drawLine(10, 100, 100, 10, 'green', 10);
+```
 
 <h3 id="ch3-4-6">3.4.6 Drawing Arrows</h3>
 
@@ -10619,213 +9732,131 @@ In this section, we present a function that draws arrows in a canvas.
 
 You may find multiple implementations on the Web for drawing arrows in a canvas, but the one we are presenting has the advantage of being rather simple and enables you to set the color and line width of the arrows.
 
-### Examples
+<h4>Examples</h4>
 
 <h4> Example #1:
 
+```
 1.  // Adapted from : https://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
-
 2.  function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
-
 3.      //variables to be used when creating the arrow
-
 4.      var headlen = 10;
-
 5.      var angle = Math.atan2(toy-fromy,tox-fromx);
-
 6.   
-
 7.      ctx.save();
-
 8.      ctx.strokeStyle = color;
-
 9.   
-
 10.     //starting path of the arrow from the start square to the end square
-
 11.     //and drawing the stroke
-
 12.     ctx.beginPath();
-
 13.     ctx.moveTo(fromx, fromy);
-
 14.     ctx.lineTo(tox, toy);
-
 15.     ctx.lineWidth = arrowWidth;
-
 16.     ctx.stroke();
-
 17.  
-
 18.     //starting a new path from the head of the arrow to one of the sides of
-
 19.     //the point
-
 20.     ctx.beginPath();
-
 21.     ctx.moveTo(tox, toy);
-
-22.     ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),
-
-23.                toy-headlen\*Math.sin(angle-Math.PI/7));
-
+22.     ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+23.                toy-headlen*Math.sin(angle-Math.PI/7));
 24.  
-
 25.     //path from the side point of the arrow, to the other side point
-
-26.     ctx.lineTo(tox-headlen\*Math.cos(angle+Math.PI/7),
-
-27.                toy-headlen\*Math.sin(angle+Math.PI/7));
-
+26.     ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),
+27.                toy-headlen*Math.sin(angle+Math.PI/7));
 28.  
-
 29.     //path from the side point back to the tip of the arrow, and then
-
 30.     //again to the opposite side point
-
 31.     ctx.lineTo(tox, toy);
-
-32.     ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),
-
-33.                toy-headlen\*Math.sin(angle-Math.PI/7));
-
+32.     ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+33.                toy-headlen*Math.sin(angle-Math.PI/7));
 34.  
-
 35.     //draws the paths created above
-
 36.     ctx.stroke();
-
 37. 
-
 38.     ctx.restore();
-
 39. }
+```
 
 **Explanations:**
 
 -   An arrow is made of one line (the arrow body) and three connected lines (the arrow head). 
 
 ```
-<!-- -->
+
 ```
 -   As we modify some context properties in this function, we call save() and restore() at the beginning and at the end of the function.
 
 ```
-<!-- -->
+
 ```
 -   This function can be improved in many ways: adding shadows, using fill() instead of stroke(), which gives strange results when the width is too big, etc.
 
-<h4> Example #2
+<h4>Example #2</h4>
 
 ![](./images/image143.png){width="6.5in" height="2.0569444444444445in"}
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Drawing arrows\</title\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.getElementById(\'myCanvas\');
-
-var ctx=canvas.getContext(\'2d\');
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Drawing arrows</title>
+</head>
+<body>
+<canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
 // Adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
-
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
-
 //variables to be used when creating the arrow
-
 var headlen = 10;
-
 var angle = Math.atan2(toy-fromy,tox-fromx);
-
 ctx.save();
-
 ctx.strokeStyle = color;
-
 //starting path of the arrow from the start square to the end square
-
 //and drawing the stroke
-
 ctx.beginPath();
-
 ctx.moveTo(fromx, fromy);
-
 ctx.lineTo(tox, toy);
-
 ctx.lineWidth = arrowWidth;
-
 ctx.stroke();
-
 //starting a new path from the head of the arrow to one of the sides of
-
 //the point
-
 ctx.beginPath();
-
 ctx.moveTo(tox, toy);
-
-ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),
-
-toy-headlen\*Math.sin(angle-Math.PI/7));
-
+ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+toy-headlen*Math.sin(angle-Math.PI/7));
 //path from the side point of the arrow, to the other side point
-
-ctx.lineTo(tox-headlen\*Math.cos(angle+Math.PI/7),
-
-toy-headlen\*Math.sin(angle+Math.PI/7));
-
+ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),
+toy-headlen*Math.sin(angle+Math.PI/7));
 //path from the side point back to the tip of the arrow, and then
-
 //again to the opposite side point
-
 ctx.lineTo(tox, toy);
-
-ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),
-
-toy-headlen\*Math.sin(angle-Math.PI/7));
-
+ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+toy-headlen*Math.sin(angle-Math.PI/7));
 //draws the paths created above
-
 ctx.stroke();
-
 ctx.restore();
-
 }
-
-drawArrow(ctx, 10, 10, 100, 100, 10, \'red\');
-
-drawArrow(ctx, 100, 10, 140, 140, 3, \'black\');
-
-\</script\>
-
-\</body\>
-
-\</html\>
+drawArrow(ctx, 10, 10, 100, 100, 10, 'red');
+drawArrow(ctx, 100, 10, 140, 140, 3, 'black');
+</script>
+</body>
+</html>
+```
 
 Source code extract:
 
-1.  drawArrow(ctx, 10, 10, 100, 100, 10, \'red\');
-
+```
+1.  drawArrow(ctx, 10, 10, 100, 100, 10, 'red');
 2.  
+3.  drawArrow(ctx, 100, 10, 140, 140, 3, 'black');
+```
 
-3.  drawArrow(ctx, 100, 10, 140, 140, 3, \'black\');
-
-### How to draw nicer arrows?
+<h4>How to draw nicer arrows?</h4>
 
 On the Web, you will find many different ways to draw arrows.
 
@@ -10845,53 +9876,32 @@ Try this:
 
 ![](./images/image145.png){width="6.5in" height="2.0840277777777776in"}
 
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Closing a path\</title\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
-var canvas=document.getElementById(\'myCanvas\');
-
-var ctx=canvas.getContext(\'2d\');
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Closing a path</title>
+</head>
+<body>
+<canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
 // Path made of three points (defines two lines)
-
 ctx.moveTo(20,20);
-
 ctx.lineTo(100, 100);
-
 ctx.lineTo(100,0);
-
 // Close the path, try commenting this line
-
 ctx.closePath();
-
 // indicate stroke color + draw first part of the path
-
-ctx.strokeStyle = \"blue\";
-
+ctx.strokeStyle = "blue";
 ctx.stroke();
-
-\</script\>
-
-\</body\>
-
-\</html\>
+</script>
+</body>
+</html>
+```
 
 Source code:
 
@@ -16424,26 +15434,26 @@ Enter a URL (custom validation, must start with http, https or ftp): 
 
 <h4>Source code:</h4>
 ```
-1.  \<!DOCTYPE html\>
-2.  \<html lang=\"en\"\>
-3.  \<head \>
-4.  \<meta charset=\"utf-8\"\>
-5.  \<title\>Example of input type=url\</title\>
-6.  \<style\>
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head >
+4.  <meta charset="utf-8">
+5.  <title>Example of input type=url</title>
+6.  <style>
 7.  input:invalid {
 8.  background-color: lightPink;
 9.  }
-10. \</style\>
-11. \</head\>
-12. \<body\>
-13. \<label for=\"url1\"\>Enter a URL (default validation):\</label\>
-14. \<input type=\"url\" id=\"url1\"/\>
-15. \<p\>
-16. \<label for=\"url2\"\>Enter a URL (custom validation, must start with http, https or ftp):\</label\>
-17. \<input id=\"url2\" type=\"url\" placeholder=\"https://www.domain.com\"
-18. pattern=\"(http\|https\|ftp)\\:\\/\\/\[a-zA-Z0-9\\-\\.\\/\]\*\"/\>\<p\>
-19. \</body\>
-20. \</html\>
+10. </style>
+11. </head>
+12. <body>
+13. <label for="url1">Enter a URL (default validation):</label>
+14. <input type="url" id="url1"/>
+15. <p>
+16. <label for="url2">Enter a URL (custom validation, must start with http, https or ftp):</label>
+17. <input id="url2" type="url" placeholder="https://www.domain.com"
+18. pattern="(http|https|ftp)://[a-zA-Z0-9-./]*"/><p>
+19. </body>
+20. </html>
 ```
 
 *Lines 16-17* show the use of a pattern attribute with a JavaScript regexp that accepts only URLs starting with http, https or ftp. More details on the pattern attribute are given in the section that presents the new HTML5 form attributes.
@@ -16458,11 +15468,11 @@ The specification does not state what the GUI should look like, so current impl
 
 <h4>Typical use:</h4>
 ```
-> \<label for=\"search1\"\>Simple search: \</label\>
-> \<input type=search id=\"search1\"\>
-> \<p\>
-> \<label for=\"search2\"\>Search with attribute \<code\>results=5\</code\> (try with Safari): \</label\>
-> \<input type=search id=\"search2\" results=5\>
+> <label for="search1">Simple search: </label>
+> <input type=search id="search1">
+> <p>
+> <label for="search2">Search with attribute <code>results=5</code> (try with Safari): </label>
+> <input type=search id="search2" results=5>
 ```
 
 Results on Chrome and Opera desktop - notice the small cross on the right when one enters a value:
@@ -16479,25 +15489,25 @@ Example that shows a drop down list of recent searches (Safari screenshot borro
 
 Source code for the knowledge check below
 ```
-1.  \<!DOCTYPE html\>
-2.  \<html\>
-3.  \<head\>
-4.  \<meta charset=\"utf-8\"\>
-5.  \<title\>Example of input type=email\</title\>
-6.  \<style\>
+1.  <!DOCTYPE html>
+2.  <html>
+3.  <head>
+4.  <meta charset="utf-8">
+5.  <title>Example of input type=email</title>
+6.  <style>
 7.  input:? {
 8.  background-color:pink;
 9.  }
 10. input:?? {
 11. background-color:lightGreen;
 12. }
-13. \</style\>
-14. \</head\>
-15. \<body\>
-16. \<label for=\"email\"\>Enter your email:\</label\>
-17. \<input type=\"email\" id=\"email\"\>
-18. \</body\>
-19. \</html\>
+13. </style>
+14. </head>
+15. <body>
+16. <label for="email">Enter your email:</label>
+17. <input type="email" id="email">
+18. </body>
+19. </html>
 ```
 
 <h3 id="ch5-4-5">5.4.5 "number"</h3>
@@ -17714,13 +16724,13 @@ So in the previous example, with the value of the optimum attribute set to 19
 
 So, a \<meter\> element used for displaying blood pressure might be a good candidate for setting the optimum value to \"Range 2\", and a \<meter\> element used for displaying memory usage might be a good candidate for setting the optimum value to \"Range 1\", meaning that a low memory usage is \"good\".
 
-### External resources
+<h4>External resources</h4>
 
 -   From MDN\'s Web  Docs: [The HTML Meter element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter)
 
 -   Good blog post: [How to use and style the meter element](https://www.hongkiat.com/blog/style-html5-meter/)
 
-### 5.6.4 \<progress\>
+<h3 id="ch5-6-4">5.6.4 <progress></h3>
 
 The \<progress\> element is similar to \<meter\> but it is used for progress bars (i.e., the percentage of a file being uploaded, etc.):
 
@@ -17730,12 +16740,11 @@ The \<progress\> element is similar to \<meter\> but it is used for progress
 <!----------------------------- 00.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image282.jpeg?raw=true"
+   alt="Picture of a funny progress meme saying 'Every mistake you make is progress."
+   width="10%">
 &nbsp;
 <br/>
-![picture of a funny progress meme syaing \'Every mistake you make is progress\'](./images/image282.jpeg){width="0.9479166666666666in" height="1.0625in"}
 
 Gives:  
 
@@ -17744,17 +16753,16 @@ The browser calculates the percentage corresponding to the value, min and m
 If no value attribute is set, the progress bar will display an \"indeterminate look\", that may slightly vary among different browser implementations. 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 283.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image283.jpeg?raw=true"
+   alt="Indetermined progress bar screenshot."
+   width="50%">
 &nbsp;
 <br/>
-![indeterminate progress bar screenshot](./images/image283.jpeg){width="5.052083333333333in" height="0.6354166666666666in"}
 
-Typical use
+<h4>Typical use</h4>
 
 [Here is an online example at JSBin](https://jsbin.com/hebiju/edit?html,output), or try it below in your browser:  
 
@@ -17766,38 +16774,40 @@ The progress below is defined like this:
 
 Download progress: 
 
-Source code:
-
-1.  Download progress: **\<progress id=pr value=100 min=0 max=1000\>\</progress\>**
-
-2.  \<script\>
-
+<h4>Source code:</h4>
+```
+1.  Download progress: **<progress id=pr value=100 min=0 max=1000></progress>**
+2.  <script>
 3.     var i=0;
-
 4.     setInterval(function () {
-
 5.         i = (i+1) %1000;
-
-6.         document.getElementById(\'pr\').value = i;
-
+6.         document.getElementById('pr').value = i;
 7.     },1);
+8.  </script>
+```
 
-8.  \</script\>
-
-### 5.6.5 \<datalist\>
+<h3 id="ch5-6-5">5.6.5 <datalist></h3>
 
 The \<datalist\> form element is useful for linking a list of choices to an input element.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 284.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image284.png?raw=true"
+   alt="Example of datalist for autocompletion."
+   width="30%">
 &nbsp;
 <br/>
-![example of datalist for autocompletion](./images/image284.png){width="2.8854166666666665in" height="1.5729166666666667in"} ![Another example of use of datalist](./images/image285.png){width="2.8958333333333335in" height="0.625in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 285.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image285.png?raw=true"
+   alt="Another example of use of datalist."
+   width="30%">
+&nbsp;
+<br/>
 
 We have already seen this element in action with different \<input\> elements, such as \<input type=\"color\"\>, \<input type=\"date\"\>, or \<input type=\"range\"\>.
 
