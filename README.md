@@ -362,16 +362,16 @@ W3C\'s primary activity is to develop protocols and guidelines that ensure long-
 <h4>A few history bits</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 04. Tim Berners-Lee, WWW developer (08) ----------------------------->
+<!-------------------------- 10. Tim Berners-Lee, WWW developer (08) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image004.png?raw=true"
+<img src="/images/image010.jpeg?raw=true"
    alt="Tim Berners-Lee at his desk in CERN, Switzerland, 1994"
    width="65%">
 &nbsp;
 <br/>
 
-Tim Berners-Lee at his desk in CERN, 1994
+<h6 align="center">Tim Berners-Lee at his desk in CERN, 1994</h6>
 
 <a href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a> wrote a <a href="https://www.w3.org/History/1989/proposal.html">proposal</a> in 1989 for a system called the World Wide Web. He then created the first Web browser, server, and Web page. He wrote the first specifications for URLs, HTTP, and HTML.
 
