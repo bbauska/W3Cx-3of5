@@ -2155,7 +2155,7 @@ The corresponding outline is:
 In the above example, please note two things:
 <ol type="1">
 <li>The outline shows an "Untitled body" at the root of the hierarchy,</li>
-<li>The default size for the H1 and H2 is the same (!). Indeed, when we start a <h1> inside a <section> the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
+<li>The default size for the H1 and H2 is the same (!). Indeed, when we start a &lt;h1&gt; inside a &lt;section&gt; the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
 </ol>
 
 <h3 id="ch1-3-6">1.3.6 Best Practices When Using Sectioning Elements</h3>
@@ -2186,7 +2186,7 @@ Here are some examples:
 </section>
 ```
 
-<b>Bad (there is no Hx after the \<section\> -\> no heading):</b>
+<b>Bad (there is no Hx after the &lt;section&gt; - no heading):</b>
 
 ```
 <section>
@@ -2428,7 +2428,7 @@ And finally, here are some examples (from <a href="https://www.w3.org/TR/html5/
 ```
 
 Here is another example (also from the specification). Here the \<main\> element contains a \<nav\> element consisting of links to subsections of the main content:
-
+```
 1.  <!DOCTYPE html>
 2.     <html lang="en">
 3.        <head>
