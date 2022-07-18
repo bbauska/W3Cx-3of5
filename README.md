@@ -41,7 +41,7 @@
 ## [**Module 1: HTML5 Basics**](#ch1)
 >### 1.1 [**Introduction - Module 1**](#ch1-1-1)
 >### 1.2 [**From HTML1.0 to HTML5**](#ch1-2-1)
->### 1.3 [**New structural elements**](#ch1-3-1)
+>### 1.3 [**New structural elements**](#ch1-3)
 >### 1.4 [**Other elements and attributes**](#ch1-4-1)
 >### 1.5 [**Microdata**](#ch1-5-1)
 >### 1.6 [**Exercises**](#ch1-6-1)
@@ -15237,8 +15237,14 @@ Enter a URL (custom validation, must start with http, https or ftp): 
 The search type is used for search fields (i.e., for a search engine). A search field behaves like a regular text field, except that it may provide some feedback GUI for stopping the current request and emptying the search field, or it may provide a drop-down list of recent search results.
 
 The specification does not state what the GUI should look like, so current implementations show variations in the look and feel.
-
-![input type=search rendered on a smartphone](./images/image251.jpeg){width="4.0in" height="3.0098293963254594in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 251.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image251.jpeg?raw=true"
+   width="40%"
+   alt="input type=search rendered on a smartphone" />
+</p>
 
 <h4>Typical use:</h4>
 ```
@@ -15251,15 +15257,36 @@ The specification does not state what the GUI should look like, so current impl
 
 Results on Chrome and Opera desktop - notice the small cross on the right when one enters a value:
 
-![input type=search in google chrome and opera](./images/image252.jpeg){width="4.0in" height="0.6690912073490813in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 252.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image252.jpeg?raw=true"
+   width="40%"
+   alt="input type=search in google chrome and opera" />
+</p>
 
 Same example with Safari desktop, this time the second line with an attribute results=5 shows a small icon on the left:
 
-![input type=search on safari](./images/image253.jpeg){width="4.0in" height="1.0114063867016623in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 253.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image253.jpeg?raw=true"
+   width="40%"
+   alt="input type=search on safari" />
+</p>
 
 Example that shows a drop down list of recent searches (Safari screenshot borrowed from [this excellent site about HTML5 forms that is worth reading](https://www.wufoo.com/html5/types/5-search.html)):
 
-![example 2 of input type=search on safari, shows recent results](./images/image254.png){width="2.0in" height="2.62711832895888in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 254.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image254.png?raw=true"
+   width="20%"
+   alt="Example 2 of input type=search on safari, shows recent results" />
+</p>
 
 Source code for the knowledge check below
 ```
@@ -15294,11 +15321,25 @@ Example: **\<input type=\"number\" value=\"25\" min=\"0\" step=\"5\" max=\
 
 Screenshot example taken with a mobile device :
 
-![numeric keyboard on safari IOS](./images/image255.png){width="2.0in" height="1.3413659230096238in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 255.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image255.png?raw=true"
+   width="20%"
+   alt="Numeric keyboard on Safari IOS" />
+</p>
 
 Examples on desktop (the width will be adjusted depending on the min and max attributes):
 
-![input type=number example](./images/image256.jpeg){width="3.25in" height="0.4791666666666667in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 256.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image256.jpeg?raw=true"
+   width="35%"
+   alt="input type=number example" />
+</p>
 
 Typical usage
 
@@ -15320,7 +15361,14 @@ If the difference between the value you enter and min is a multiple of step
 
 [Online example in CodePen](https://codepen.io/w3devcampus/pen/GJrQzP):  (try changing the attribute values, use step=\"any\" and try float values, etc).
 
-![](./images/image257.png){width="4.0in" height="2.550847550306212in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 257.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image257.png?raw=true"
+   width="40%"
+   alt="" />
+</p>
 
 Or, do it here in your browser (Manually enter a value that is not in the range, or not a multiple of 5, try the up and down arrows, etc.):
 
