@@ -1397,7 +1397,7 @@ Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-
 <p align="center">
 <img src="/images/image030.png?raw=true"
    alt="HTML5 logo"
-   width="15%">
+   width="35%">
 &nbsp;
 <br/>
 
@@ -1462,9 +1462,11 @@ Old HTML1 Web pages will not be rendered the same way as new HTML5 pages, since,
 
 With HTML4, doctype definitions looked like this:<br/>
 ```
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">, which was even more complicated as one had to choose between three different possibilities (doctypes could be transitional, strict, or frameset). Most of the time, the doctype definition was copied and pasted from one document 
-to another and was nearly impossible to memorize.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">, 
 ```
+which was even more complicated as one had to choose between three different possibilities (doctypes could be transitional, strict, or frameset). Most of the time, the doctype definition was copied and pasted from one document 
+to another and was nearly impossible to memorize.
+
 With HTML5, there is only one way to indicate the doctype, and it\'s so simple there is no reason to forget it:
 ```
 1.  <!doctype html>
@@ -1495,10 +1497,8 @@ Here again, the type attribute has been omitted. Just as a reminder, the old way
 
 If you look at the \"minimal document\" example, or at other examples in this course, you won\'t find a lot of differences compared to the same code in XHTML: attribute values are surrounded by quotes, all elements are written in lower case, etc. This is because we are used to writing this way, but HTML5 also supports a simplified syntax:
 <ul>
-<li>Thanks to HTML5, you can omit quotes (not always, but most of the time) or use uppercase, lowercase or a combination of the two.</li><br>
-<li>Many elements no longer need a closing tag: </li>, </dt>, </dd>, </tr>, </th>, </td>, </thead>, </tfoot>, </tbody>, </option>, </optgroup>, </p> (in most cases), </head>, 
-</body> and </html>. Older browsers often add closing tags automatically at render time. We recommend, however, closing tags that would naturally be closed: the ones that 
-delimit a particular zone in the document.</li><br>
+<li>Thanks to HTML5, you can omit quotes (not always, but most of the time) or use uppercase, lowercase or a combination of the two.</li>
+<li>Many elements no longer need a closing tag: &lt;&sol;li&gt;, &lt;&sol;dt&gt;, &lt;&sol;dd&gt;, &lt;&sol;tr&gt;, &lt;&sol;th&gt;, &lt;&sol;td&gt;, &lt;&sol;thead&gt;, &lt;&sol;tfoot&gt;, &lt;&sol;tbody&gt;, &lt;&sol;option&gt;, &lt;&sol;optgroup&gt;, &lt;&sol;p&gt;, (in most cases), &lt;&sol;head&gt;, &lt;&sol;body&gt;, and &lt;&sol;html&gt;. Older browsers often add closing tags automatically at render time. We recommend, however, closing tags that would naturally be closed: the ones that delimit a particular zone in the document.</li>
 <li>Attribute values only need to be quoted if they contain spaces or some non-alphanumeric characters, instead of writing <link rel="stylesheet" href="style.css">, we could have used <link rel=stylesheet href=style.css\>. However, for compatibility with older browsers, it is wiser to still use quotes...</li>
 </ul>
 
@@ -19564,4 +19564,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-17-2022 9:06pm</i></b></h3>
+<h3><b><i>07-18-2022 6:09am</i></b></h3>
