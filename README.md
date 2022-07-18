@@ -828,20 +828,20 @@ Example for the first blog article:
      highlighted and you will be able
      to see the different inclusions of elements one in each other. If you
      move the cursor to this sentence, it will be highlighted in dark grey,
-     showing the presence of an &lt;article&gt; element, surrounded by a
-     &lt;section&gt; element (light grey), etc. So we have some articles in
-     a single section element. The page title at the top is a &lt;header&gt;
-     element, while the tag cloud on the right is a &lt;aside&gt; element. The
-     main menu on top (with Blog, About, Contact) is a &lt;nav&gt; element.</p>
+     showing the presence of an <article> element, surrounded by a
+     <section> element (light grey), etc. So we have some articles in
+     a single section element. The page title at the top is a <header>
+     element, while the tag cloud on the right is a <aside> element. The
+     main menu on top (with Blog, About, Contact) is a <nav> element.</p>
      <figure>
          <img src="HTML5-tags.png"
              alt="Example of HTML5 structural tags" />
          <figcaption>
              Fig. 1 : an example of how new structural elements could
-             be used. This page put a &lt;nav&gt; on top, and does not have
+             be used. This page put a <nav> on top, and does not have
              headers and footer for each article, like in this figure,
              but it could... By the way this is a
-             &lt;figcaption&gt; inside a &lt;figure&gt; element...
+             <figcaption> inside a <figure> element...
          </figcaption>
     </figure>
    </article>
@@ -1858,7 +1858,7 @@ After the long \<section\> element that contains all the blog articles display
 
 We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at <a href="https://jsbin.com/bucokav/edit?html,output">the code of the online example</a>.
 
-<b>Here is the CSS for the &lt;aside&gt; element:</b>
+<h4>Here is the CSS for the &lt;aside&gt; element:</h4>
 
 ```
 aside {
@@ -2652,11 +2652,11 @@ This example uses the following HTML structure (notice that we use the \"HTML en
 
 ```
 1.  <header>
-2.  <code>&lt;header&gt;</code>
+2.  <code><header></code>
 3.  </header>
 4.   
 5.  <section>
-6.  <code>&lt;section&gt; <br> float: left;</code>
+6.  <code><section> <br> float: left;</code>
 7.  </section>
 8.   
 9.  <aside>
@@ -2664,7 +2664,7 @@ This example uses the following HTML structure (notice that we use the \"HTML en
 11. </aside>
 12.  
 13. <footer>
-14. <code>&lt;footer&gt;</code>
+14. <code><footer></code>
 15. </footer>
 ```
 
@@ -2701,23 +2701,23 @@ Here we show how to make a 3 column layout using the CSS float property.
 
 ```
 1.  <header>
-2.  <code>&lt;header&gt;</code>
+2.  <code><header></code>
 3.  </header>
 4.   
 5.  <section>
-6.  <code>&lt;section&gt; <br> float: left;</code>
+6.  <code><section> <br> float: left;</code>
 7.  </section>
 8.   
 9.  <section>
-10. <code>&lt;section&gt; <br> float: left;</code>
+10. <code><section> <br> float: left;</code>
 11. </section>
 12.  
 13. <section>
-14. <code>&lt;section&gt; <br> float: left;</code>
+14. <code><section> <br> float: left;</code>
 15. </section>
 16.  
 17. <footer>
-18. <code>&lt;footer&gt;</code>
+18. <code><footer></code>
 19. </footer>
 ```
 
@@ -8646,7 +8646,7 @@ border:1px solid black;
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Drawing an image with &lt;img&gt;</title>
+<title>Drawing an image with <img></title>
 <script>
 var canvas, context, imageObj;
 window.onload = function() {
@@ -8670,9 +8670,9 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 </script>
 </head>
 <body>
-<p>A canvas with an image that is further in the page, loaded by the &lt;img src=...&gt; tag. This is not the recommended way to load images, except if the image is already in your page. Use the onload callback to be sure that the image is in the page. </p>
+<p>A canvas with an image that is further in the page, loaded by the <img src=...> tag. This is not the recommended way to load images, except if the image is already in your page. Use the onload callback to be sure that the image is in the page. </p>
 <canvas id="myCanvas" width="512" height="512"></canvas>
-<p>Original image is an &lt;img&gt; element:
+<p>Original image is an &lt;img> element:
 </p>
 <img id="logo" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="html5 logo">
 </body>
@@ -8720,7 +8720,7 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 <body>
 <p>It is possible that the drawing in the canvas below appears only after a few seconds, because the image is very large!</p>
 <canvas id="myCanvas" width="512" height="512"></canvas>
-<p>Very large original image, declared as an &lt;img&gt; element:
+<p>Very large original image, declared as an &lt;img> element:
 </p>
 <img id="logo" alt="logo" src="https://mainline.i3s.unice.fr/mooc/texture_85_by_voyager168-d670m68.jpg" width="512" height="512">
 </body>
@@ -8785,12 +8785,12 @@ ctx.restore();
 </script>
 </head>
 <body onload="init()" >
-<p>This is a <code>&lt;video&gt;</code> element: </p>
+<p>This is a <code>&lt;video></code> element: </p>
 <video id="sourcevid" autoplay loop>
 <source src="https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.mp4" type="video/mp4" />
 <source src="https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.ogv" type="video/ogg"/>
 </video>
-<p>This is a <code>&lt;canvas&gt;</code> element: </p>
+<p>This is a <code>&lt;canvas></code> element: </p>
 <canvas id="myCanvas" width="620" height="360"></canvas>
 </body>
 </html>
@@ -15957,7 +15957,7 @@ Complete source code:
 18.    \</head\>
 19. 
 20.    \<body\>
-21.       \<p\>This form uses: \<code\>\<input type=\"email\" name=\"myemail\" \<b\>multiple\</b\>&gt;\</code\>\</p\>
+21.       \<p\>This form uses: \<code\>\<input type=\"email\" name=\"myemail\" \<b\>multiple\</b\>>\</code\>\</p\>
 22. 
 23.       \<form\>
 24.          \<fieldset\>
