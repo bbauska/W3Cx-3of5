@@ -7466,116 +7466,68 @@ However, there is a way to simplify this =\> 2D geometric transformations! 
 The idea behind 2D transformations is that instead of modifying all the coordinates passed as parameters to each call to drawing methods like fillRect(\...), we will keep all the drawing code \"as is\". For example, if the monster of our previous example was drawn at (0, 0), we could just translate (or rotate, or scale) the original coordinate system.
 
 Let\'s take a piece of code that draws something corresponding to the original coordinate system, located at the top left corner of the canvas:
-
+```
 1.  function drawMonster(x, y) {
-
 2.     // head
-
 3.     ctx.fillStyle=\'lightgreen\';
-
 4.     ctx.fillRect(0,0,200,200);
-
 5.  
-
 6.     // eyes
-
 7.     ctx.fillStyle=\'red\';
-
 8.     ctx.fillRect(35,30,20,20);
-
 9.     ctx.fillRect(140,30,20,20);
-
 10. 
-
 11.    // interior of eye
-
 12.    ctx.fillStyle=\'yellow\';
-
 13.    ctx.fillRect(43,37,10,10);
-
 14.    ctx.fillRect(143,37,10,10);
-
 15. 
-
 16.    // Nose
-
 17.    ctx.fillStyle=\'black\';
-
 18.    ctx.fillRect(90,70,20,80);
-
 19. 
-
 20.    // Mouth
-
 21.    ctx.fillStyle=\'purple\';
-
 22.    ctx.fillRect(60,165,80,20);
-
 23. 
-
 24.    // coordinate system at (0, 0)
-
 25.    drawArrow(ctx, 0, 0, 100, 0, 10, \'red\');
-
 26.    drawArrow(ctx, 0, 0, 0, 100, 10, \'red\');
-
 27. }
+```
 
 This code is the just the same as in the previous example except that we removed all Xs and Yx in the code. We also added at the end *(lines 25-26*) two lines of code that draw the coordinate system. The drawArrow(startX, startY, endX, endY, width, color) function is a utility function that we will present later. You can see it in the JS source code of the pen below:
 
-JS
-
+<h4>JS</h4>
+```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
-
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
-
 //variables to be used when creating the arrow
-
 var headlen = 10;
-
 var angle = Math.atan2(toy-fromy,tox-fromx);
-
 ctx.save();
-
 ctx.strokeStyle = color;
-
 //starting path of the arrow from the start square to the end square and drawing the stroke
-
 ctx.beginPath();
-
 ctx.moveTo(fromx, fromy);
-
 ctx.lineTo(tox, toy);
-
 ctx.lineWidth = arrowWidth;
-
 ctx.stroke();
-
 //starting a new path from the head of the arrow to one of the sides of the point
-
 ctx.beginPath();
-
 ctx.moveTo(tox, toy);
-
 ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),toy-headlen\*Math.sin(angle-Math.PI/7));
-
 //path from the side point of the arrow, to the other side point
-
 ctx.lineTo(tox-headlen\*Math.cos(angle+Math.PI/7),toy-headlen\*Math.sin(angle+Math.PI/7));
-
 //path from the side point back to the tip of the arrow, and then again to the opposite side point
-
 ctx.lineTo(tox, toy);
-
 ctx.lineTo(tox-headlen\*Math.cos(angle-Math.PI/7),toy-headlen\*Math.sin(angle-Math.PI/7));
-
 //draws the paths created above
-
 ctx.stroke();
-
 ctx.restore();
 }
 ```
+
 <h4>HTML</h4>
 ```
 <!DOCTYPE html>
@@ -7623,10 +7575,11 @@ drawArrow(ctx, 0, 0, 0, 100, 10, 'red');
 }
 </script>
 ```
+
 Note that the X and Y parameters are useless for now\...
-
+```
 -   <h4> Translation using ctx.translate(offsetX, offsetY)
-
+```
 Now, instead of simply calling drawMonster(0, 0), we will call first ctx.translate(100, 100), and look at the result below:
 
 <h4>JS</h4>
@@ -7715,7 +7668,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-JavaScript code extract:
+<h4>JavaScript code extract:</h4>
 ```
 1.  ctx.translate(100, 100);
 2.  drawMonster(0, 0);
@@ -7723,13 +7676,15 @@ JavaScript code extract:
 
 *Line 1* changes the position of the coordinate system, *line 2* draws a monster in the new translated coordinate system. All subsequent calls to drawing methods will be affected and will work in this new system too.
 
--   <h4> Other transformations: rotate, scale
+<ul>
+<li>/<h4> Other transformations: rotate, scale</h4></li>
+</ul>
 
 There are other transformations available:
-
--   ctx.rotate(angle), with angle in radians. Note that the order of transformations is important: usually we translate, then rotate, then scale\... If you change this order, you need to know what you are doing\...
-
--   ctx.scale (sx, sy), where scale(1, 1) corresponds to \"no zoom\", scale(2, 2) corresponds to \"zooming 2x\" and scale(0.5, 0.5) corresponds to zooming out to see the drawings half as big as before. If you do not use the same values for sx and sy, you do \"asymmetric scaling\", you can distort a shape horizontally or vertically. Try changing the values in the source code of the next online examples.
+<ul>
+<li>ctx.rotate(angle), with angle in radians. Note that the order of transformations is important: usually we translate, then rotate, then scale\... If you change this order, you need to know what you are doing\...</li>
+<li>ctx.scale (sx, sy), where scale(1, 1) corresponds to \"no zoom\", scale(2, 2) corresponds to \"zooming 2x\" and scale(0.5, 0.5) corresponds to zooming out to see the drawings half as big as before. If you do not use the same values for sx and sy, you do \"asymmetric scaling\", you can distort a shape horizontally or vertically. Try changing the values in the source code of the next online examples.</li>
+</ul>
 
 Here is the previous example, but this time we translated the coordinate system, then rotated it with an angle equal to PI/4 , then we scaled it so that units are half as big:
 
@@ -7815,10 +7770,7 @@ drawArrow(ctx, 0, 0, 0, 100, 10, 'red');
 </head>
 <body onload="init();">
 <canvas id="myCanvas" width="400" height="400">
-```
-
 Your browser does not support the canvas tag.
-```
 </canvas>
 </body>
 </html>
@@ -7832,12 +7784,14 @@ And here is the code of the transformations we used, followed by the call to the
 4.   
 5.  drawMonster(0, 0);
 ```
--   <h4> BEWARE: all drawings to come will be in that modified coordinate system!
+<ul>
+<li><h4>BEWARE: all drawings to come will be in that modified coordinate system!</h4></li>
+</ul>
 
 If we draw two shapes at two different positions, they will be relative to this new coordinate system.
 
 <h4>JS</h4>
-
+```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
 //variables to be used when creating the arrow
@@ -7955,8 +7909,8 @@ A call to ctx.save() will probably save the context property values in a hardw
 
 Multiple contexts can be backed up consecutively and restored. Contexts saved will be stacked, the last one that has been saved will be restored by the next call to restore(), so it is very important to have one restore for each save.
 
-***Best practice**: save the context at the beginning of any function*\
-*that changes the context, restore it at the end of the function!*
+<b>Best practice</b>: save the context at the beginning of any function
+<i>that changes the context, restore it at the end of the function!</i>
 
 <h4>Example of a function that changes the context and restores it after execution</h4>
 
@@ -8058,14 +8012,12 @@ Your browser does not support the canvas tag.
 ```
 
 We slightly modified the function that draws the monster:
-
--   We added parameters for setting the position and orientation of the monster, and added calls to ctx.translate(x, y) and ctx.rotate(angle) in the function.
-
--   We added parameters for the head color and eye color.
-
--   We saved the context at the beginning of the function (BEST PRACTICE),
-
--   We restored it at the end (BEST PRACTICE).
+<ul>
+<li>We added parameters for setting the position and orientation of the monster, and added calls to ctx.translate(x, y) and ctx.rotate(angle) in the function.</li>
+<li>We added parameters for the head color and eye color.</li>
+<li>We saved the context at the beginning of the function (BEST PRACTICE),</li>
+<li>We restored it at the end (BEST PRACTICE).</li>
+</ul>
 
 <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
 <!------------------------------------------------------------------------------------------------>
@@ -8237,25 +8189,21 @@ It is possible to draw text in a canvas using the font property of the context
 
 The font property accepts values like: font-style,  font-weight, font-size, font-face.
 
-Accepted values are: 
+Accepted values are:
+<ul>
+<li>font-style: normal, italic, oblique</li>
+<li>font-weight: normal, bold, bolder, lighter</li>
+<li>font-size: a size in pixels or in points, such as 60pt, 20px, 36px, etc.</li>
+<li>font-face:  Arial, Calibri, Times, Courier, etc. Some font faces may not work in all browsers.</li>
+</ul>
 
--   font-style: normal, italic, oblique
-
--   font-weight: normal, bold, bolder, lighter
-
--   font-size: a size in pixels or in points, such as 60pt, 20px, 36px, etc. 
-
--   font-face:  Arial, Calibri, Times, Courier, etc. Some font faces may not work in all browsers.
-
-Examples: 
-
--   context.font = \"60pt Calibri\";
-
--   context.font = \"normal normal 20px Verdana\";
-
--   context.font = \"normal 36px Arial\";
-
--   context.font = \"italic bold 36px Arial\";
+<h4>Examples:</h4>
+<ul>
+<li>context.font = \"60pt Calibri\";</li>
+<li>context.font = \"normal normal 20px Verdana\";</li>
+<li>context.font = \"normal 36px Arial\";</li>
+<li>context.font = \"italic bold 36px Arial\";</li>
+</ul>
 
 <h4>Drawing text in solid or wireframe: the fillText() or strokeText() methods</h4>
 
@@ -8314,13 +8262,14 @@ context.strokeText("Hello World!", 10, 220, 150);
 14. // Constrain width to 150 pixels
 15. context.fillText("Hello World!", 10, 220, **150**);
 16. context.strokeText("Hello World!", 10, 220, **150**);
+```
 
 <h4>Measuring the width of a given text (bounding box) with the ctx.measureText()method</h4>
 
 The ctx.measureText() method can be used to get the current width in pixels of a given text, taking into account the diverse properties involved such as font, size, shadow, lineWidth, etc.
 
 <h4>HTML</h4>
-
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -8351,8 +8300,8 @@ context.stroke();
 </html>
 ```
 
-Source code extract from this example:
-
+<h4>Source code extract from this example:</h4>
+```
 1.  context.font = "60pt Calibri";
 2.  context.lineWidth = 3;
 3.  context.strokeStyle = "blue";
@@ -8457,53 +8406,53 @@ The textAlign property of the context tells how the x parameter will be used
 
 <h4>HTML</h4>
 ```
-\<!DOCTYPE html\>
-\<html\>
-\<head\>
-\<title\>Drawing text: the textAlign property\</title\>
-\<meta charset=\"utf-8\"/\>
-\</head\>
-\<body\>
-\<canvas id=\"myCanvas\" width=500 height=120\>Your browser does not support the canvas tag.\</canvas\>
-\<script type=\"text/javascript\"\>
-var canvas=document.getElementById(\'myCanvas\');
-var context=canvas.getContext(\'2d\');
-context.stokeStyle = \"#000000\";
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drawing text: the textAlign property</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<canvas id="myCanvas" width=500 height=120>Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var context=canvas.getContext('2d');
+context.stokeStyle = "#000000";
 context.lineWidth = 1;
 context.beginPath();
 context.moveTo( 250, 0);
 context.lineTo( 250, 130);
 context.stroke();
 context.closePath();
-context.font = \"16px Verdana\";
-context.fillStyle = \"#000000\";
-context.textAlign = \"center\";
-context.fillText(\"center\", 250, 20);
-context.textAlign = \"start\";
-context.fillText(\"start\", 250, 40);
-context.textAlign = \"end\";
-context.fillText(\"end\", 250, 60);
-context.textAlign = \"left\";
-context.fillText(\"left\", 250, 80);
-context.textAlign = \"right\";
-context.fillText(\"right\", 250, 100);
-\</script\>
-\</body\>
-\</html\>
+context.font = "16px Verdana";
+context.fillStyle = "#000000";
+context.textAlign = "center";
+context.fillText("center", 250, 20);
+context.textAlign = "start";
+context.fillText("start", 250, 40);
+context.textAlign = "end";
+context.fillText("end", 250, 60);
+context.textAlign = "left";
+context.fillText("left", 250, 80);
+context.textAlign = "right";
+context.fillText("right", 250, 100);
+</script>
+</body>
+</html>
 ```
 
 Typical use (source code taken from the above example):
 ```
-1.  context.textAlign = \"center\";
-2.  context.fillText(\"center\", 250, 20);
-3.  context.textAlign = \"start\";
-4.  context.fillText(\"start\", 250, 40);
-5.  context.textAlign = \"end\";
-6.  context.fillText(\"end\", 250, 60);
-7.  context.textAlign = \"left\";
-8.  context.fillText(\"left\", 250, 80);
-9.  context.textAlign = \"right\";
-10. context.fillText(\"right\", 250, 100);
+1.  context.textAlign = "center";
+2.  context.fillText("center", 250, 20);
+3.  context.textAlign = "start";
+4.  context.fillText("start", 250, 40);
+5.  context.textAlign = "end";
+6.  context.fillText("end", 250, 60);
+7.  context.textAlign = "left";
+8.  context.fillText("left", 250, 80);
+9.  context.textAlign = "right";
+10. context.fillText("right", 250, 100);
 ```
 
 <h3 id="ch3-3-3">3.3.3 Drawing Images</h3>
@@ -8580,7 +8529,7 @@ See picture below :
 &nbsp;
 <br/>
 
-### Example #2: different variants of drawImage(\...)
+<h4>Example #2: different variants of drawImage(\...)</h4>
 
 This example illustrates the use of the different variants of the drawImage method:
 
@@ -8623,58 +8572,37 @@ imageObj.src = "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png";
 <h4>CSS</h4>
 ```
 #myCanvas {
-
 border:1px solid black;
-
 }
+```
 
-Source code extract:
-
+<h4>Source code extract:</h4>
+```
 1.  var imageObj = new Image();
-
 2.   
-
 3.  imageObj.onload = function() {
-
 4.     // Try commenting/uncommenting the following lines to see the
-
 5.     // effect of the different drawImage variants
-
 6.  
-
 7.     // Original, big image
-
 8.     // context.drawImage(imageObj, 0, 10);
-
 9.  
-
 10.    // Original image drawn with size = 100x100 pixels
-
 11.    context.drawImage(imageObj, 0, 10, 100, 100);
-
 12.    // with size = 150x150
-
 13.    context.drawImage(imageObj, 80, 10, 150, 150);
-
 14.    // with size = 200x200
-
 15.    context.drawImage(imageObj, 210, 10, 200, 200);
-
 16.  
-
 17.   // draw the sub image at 0, 0, width = 512, height = 100
-
 18.   // at position 100, 250, with a width of 256 and a height of 50
-
 19.   context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
-
 20. };
-
 21. imageObj.src = "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png";
-
 22. };
+```
 
-### Example #3: draw an image defined in the page by an <img src=\"\...\"\> element
+<h4>Example #3: draw an image defined in the page by an <img src=\"\...\"\> element</h4>
 
 Sometimes, you may want to draw an image that is already declared in the HTML document as an <img src=\"\...\"\> element. Remember that when you add an \<img\> in the document, the browser starts downloading it in background. 
 
@@ -8713,74 +8641,41 @@ border:1px solid black;
 <h4>HTML</h4>
 ```
 <!DOCTYPE HTML>
-
 <html lang="en">
-
 <head>
-
 <meta charset="utf-8"/>
-
 <title>Drawing an image with &lt;img&gt;</title>
-
 <script>
-
 var canvas, context, imageObj;
-
 window.onload = function() {
-
 canvas = document.getElementById("myCanvas");
-
 context = canvas.getContext("2d");
-
 imageObj = document.querySelector("#logo");
-
 drawAllImages();
-
 };
-
 function drawAllImages() {
-
 console.log("image is already loaded, we draw it!");
-
 // Original image drawn with size = 100x100 pixels
-
 context.drawImage(imageObj, 0, 10, 100, 100);
-
 // with size = 150x150
-
 context.drawImage(imageObj, 80, 10, 150, 150);
-
 // with size = 200x200
-
 context.drawImage(imageObj, 210, 10, 200, 200);
-
 // draw the sub image at 0, 0, width = 512, height = 100
-
 // at position 100, 250, with a width of 256 and a height of 50
-
 context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
-
 }
-
 </script>
-
 </head>
-
 <body>
-
 <p>A canvas with an image that is further in the page, loaded by the &lt;img src=...&gt; tag. This is not the recommended way to load images, except if the image is already in your page. Use the onload callback to be sure that the image is in the page. </p>
-
 <canvas id="myCanvas" width="512" height="512"></canvas>
-
 <p>Original image is an &lt;img&gt; element:
-
 </p>
-
 <img id="logo" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="html5 logo">
-
 </body>
-
 </html>
+```
 
 With large image files, this will not break nor produce unexpected results:
 
@@ -8900,12 +8795,12 @@ ctx.restore();
 ```
 
 This example shows:
+<ul>
+<li>a &lt;video&gt; element on top, and four images drawn in a canvas below.</li>
+<li>The images are drawn every XXX milliseconds using the setInterval(function, delay) method.</li>
+</ul>
 
--   a <video\> element on top, and four images drawn in a canvas below.
-
--   The images are drawn every XXX milliseconds using the setInterval(function, delay) method.
-
-Source code extract:
+<h4>Source code extract:</h4>
 ```
 1.  <script>
 2.     var video;
@@ -8979,14 +8874,16 @@ As a reminder: an immediate mode means \"executing a call to a drawing method me
 -   In the previous examples, we saw how to draw rectangles using the fillRect(x, y, width, height) and strokeRect(x, y, width, height) methods of the context.
 
 ```
-<!-- -->
+
 ```
 -   We also learned how to draw a text message using the fillText(message, x, y) and strokeText(message, x, y) methods that draws a text in filled and wireframe mode, respectively.
 
 ```
-<!-- -->
+
 ```
--   These methods, along with the drawImage(\...) method already seen in section 3.3.3, are *\"immediate methods\"*: as soon as they are executed, the results are displayed on screen, the drawings are performed, pixels on the canvas area change their colors, etc.
+<ul>
+<li>These methods, along with the drawImage(\...) method already seen in section 3.3.3, are *\"immediate methods\"*: as soon as they are executed, the results are displayed on screen, the drawings are performed, pixels on the canvas area change their colors, etc.</li>
+</ul>
 
 Here is an example that draws 1000 random rectangles in a canvas, using immediate mode rectangle drawing calls:
 
@@ -9053,6 +8950,8 @@ Your browser does not support the canvas tag.</canvas>
 
 On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawing all these rectangles:
 
+
+********************************** image ***********************************
 ![Image of the devtool console that shows random time values. The average time elapsed is around 4s](./images/image134.jpeg){width="6.5in" height="1.3833333333333333in"}
 
 <h4>Path mode</h4>
@@ -9121,12 +9020,13 @@ And here is what the timer gives: a slightly faster execution time. Changing 100
 
 **Path mode is faster than immediate mode! We have now an average time of 3.1ms**
 
+********************************** image ***********************************
 ![Image of the devtool console that shows random time values. The average time elapsed is around 3.1ms](./images/image135.jpeg){width="6.5in" height="1.5576388888888888in"}
 
-<h4> Reset the path mode buffer
+<h4>Reset the path mode buffer</h4>
 
 A call to ctx.beginPath() will reset the buffer (empty its contents). We will see many more examples of using the path drawing mode in another further section.
-
+```
 1.  // start a new buffer / path
 2.  ctx.beginPath();
 3.  // all these orders are in a buffer/path
@@ -9187,6 +9087,7 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 
 See the example below:
 
+********************************** image ***********************************
 ![](./images/image136.png){width="6.5in" height="2.0722222222222224in"}
 
 <h4>HTML</h4>
@@ -9221,7 +9122,7 @@ ctx.stroke();
 </html>
 ```
 
-Code source extract:
+<h4>Code source extract:</h4>
 
 ```
 1.  var canvas=document.getElementById('myCanvas');
@@ -9251,7 +9152,7 @@ In this example, the entire grid is drawn during the execution of the last line 
 <h4>Mixing filled and wireframe shapes (and immediate and path modes)</h4>
 
 Try this:
-
+********************************** image ***********************************
 ![](./images/image137.png){width="6.5in" height="2.0722222222222224in"}
 
 <h4>HTML</h4>
@@ -9303,7 +9204,7 @@ This example shows that filled and wireframe shapes should be drawn differently 
 <h4>Drawing a single path made with disconnected lines / parts</h4>
 
 Try this:
-
+********************************** image ***********************************
 ![](./images/image138.png){width="6.5in" height="2.0861111111111112in"}
 
 <h4>Code source:</h4>
@@ -9333,7 +9234,7 @@ In this last example, we simply called the moveTo() method between each part o
 <h4>Common mistake: drawing the same path twice</h4>
 
 Let\'s look at the drawing from the last example of the previous section:
-
+********************************** image ***********************************
 ![](./images/image139.png){width="6.5in" height="2.0569444444444445in"}
 
 <h4>HTML</h4>
@@ -9374,6 +9275,7 @@ In this example, we will draw the two parts of the path with different styles: t
 
 What we will try first is to call stroke() after the first half of the path, then call fill() after the second half of the path:
 
+********************************** image ***********************************
 ![](./images/image140.png){width="6.5in" height="2.0631944444444446in"}
 
 <h4>HTML</h4>
@@ -9447,7 +9349,7 @@ What happened is:
 using the ctx.beginPath() method, as shown in the next example.
 
 <h4> Now, the right way!
-
+********************************** image ***********************************
 ![](./images/image141.png){width="6.5in" height="2.0701388888888888in"}
 
 <h4>HTML</h4>
@@ -9553,7 +9455,7 @@ Notice the save/restore of the context at the beginning/end of the function. Thi
 -   *Lines 15-17* move the \"pen\" at (x1, y1) then draw a line to (x2, y2), and the stroke at *line 17* makes it appear on the screen.
 
 Here is an example:
-
+********************************** image ***********************************
 ![](./images/image142.png){width="6.5in" height="2.0569444444444445in"}
 
 <h4>HTML</h4>
@@ -9608,7 +9510,7 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 
 <h4>Examples</h4>
 
-<h4> Example #1:
+<h4>Example #1:</h4>
 
 ```
 1.  // Adapted from : https://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -9656,18 +9558,13 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 
 -   An arrow is made of one line (the arrow body) and three connected lines (the arrow head). 
 
-```
-
-```
 -   As we modify some context properties in this function, we call save() and restore() at the beginning and at the end of the function.
 
-```
-
-```
 -   This function can be improved in many ways: adding shadows, using fill() instead of stroke(), which gives strange results when the width is too big, etc.
 
 <h4>Example #2</h4>
 
+********************************** image ***********************************
 ![](./images/image143.png){width="6.5in" height="2.0569444444444445in"}
 
 <h4>HTML</h4>
@@ -9722,7 +9619,7 @@ drawArrow(ctx, 100, 10, 140, 140, 3, 'black');
 </html>
 ```
 
-Source code extract:
+<h4>Source code extract:</h4>
 
 ```
 1.  drawArrow(ctx, 10, 10, 100, 100, 10, 'red');
@@ -9738,6 +9635,7 @@ This [article on drawing lines and arcs with arrow heads](http://www.dbp-consul
 
 Screenshot from a demo available on the above Web site:
 
+********************************** image ***********************************
 ![](./images/image144.png){width="2.0in" height="2.026147200349956in"}
 
 In a later part of the course dedicated to curve drawing in a canvas, we will also show how to draw curved arrows, with very simple code (much simpler than the one used for drawing the clock\'s hands above).
@@ -9747,7 +9645,7 @@ In a later part of the course dedicated to curve drawing in a canvas, we will al
 The ctx.closePath() method indicates that we would like a closed path: draw from the last point to the first.
 
 Try this:
-
+********************************** image ***********************************
 ![](./images/image145.png){width="6.5in" height="2.0840277777777776in"}
 
 <h4>HTML</h4>
@@ -19665,4 +19563,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-16-2022 11:01pm</i></b></h3>
+<h3><b><i>07-17-2022 9:06pm</i></b></h3>
