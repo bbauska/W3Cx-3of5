@@ -1098,7 +1098,7 @@ This chart from the <a href="https://html5doctor.com/">HTML5 Doctor Web site</
    width="85%" />
 </p>
 
-<h3>Headings & Structural Elements</h3>
+<h3 id="ch1-3-5">1.3.5 Headings and Structural Elements</h3>
 
 We will now present some best practices for starting to use \<section\>, \<article\>, \<nav\>, \<aside\>, in particular concerning the use of headings (h1, h2, h3, h4, h5 and h6).
 
@@ -1164,7 +1164,7 @@ The HTML5 specification says that \"each sectioning element potentially has a he
 
 \... defines the heading of *the explicit section* (its parent element \<section\>).
 
-<h3>Use multiple headings of different rank with sectioning content</h3>
+<h4>Use multiple headings of different rank with sectioning content</h4>
 
 The first element of a heading content in an element of sectioning content represents the heading for that section (the \<section\>\<h1\>\...\</h1\>\</section\> in the above example).
 
@@ -1229,7 +1229,7 @@ Here are some examples:
 
 ```
 <section>
-    <header>**
+    <header>
        <h1>Blog post of April 2020</h1>
        <p>Posted by Michel Buffa...</p>
   </header>
@@ -1286,10 +1286,10 @@ Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning
 In red, the sectioning root (\<body\>) and the sectioning elements (\<section\> here\...), each have a heading.
 
 <h4>To sum up:</h4>
-
--   Always use a heading element after a sectioning</lement, for example \<section\>**\<Hx\>\...\</Hx\>\...**\</section\>, and after \<body\>, where **x** can be 1..6,
-
--   Or, use a \<header\> element, like in \<section\>**\<header\>\<Hx\>\...\</Hx\>\.....\</header\>**\...\</section\>
+<ul>
+<li>Always use a heading element after a sectioning</lement, for example \<section\>**\<Hx\>\...\</Hx\>\...**\</section\>, and after \<body\>, where <b>x</b> can be 1..6,</li>
+<li>Or, use a \<header\> element, like in \<section\><b>\<header\>\<Hx\>\...\</Hx\>\.....\</header\></b>\...\</section\></li>
+</ul>
 
 <h4>More about the &lt;header&gt; element</h4>
 
@@ -1412,6 +1412,7 @@ Changes have been made to particular elements in HTML5 making it simpler to u
 </ul>
 
 <h3>A minimal HTML5 document</h3>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -1430,7 +1431,7 @@ Changes have been made to particular elements in HTML5 making it simpler to u
 Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/">this source</a>.
 
 ```
-[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">]
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
      <meta http-equiv[="content-type" ]content[="text/html"]charset="utf-8">
@@ -1460,14 +1461,14 @@ DTDs are not used by current Web browsers to  validate the structure of an HTML
 
 Old HTML1 Web pages will not be rendered the same way as new HTML5 pages, since, in the 90\'s, some of them were written by hand and may contain errors, embedded HTML elements, etc.
 
-With HTML4, doctype definitions looked like this:<br/>
+<h5>With HTML4, doctype definitions looked like this:</h5>
 ```
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">, 
 ```
 which was even more complicated as one had to choose between three different possibilities (doctypes could be transitional, strict, or frameset). Most of the time, the doctype definition was copied and pasted from one document 
 to another and was nearly impossible to memorize.
 
-With HTML5, there is only one way to indicate the doctype, and it\'s so simple there is no reason to forget it:
+<h5>With HTML5, there is only one way to indicate the doctype, and it\'s so simple there is no reason to forget it:</h5>
 ```
 1.  <!doctype html>
 ```
@@ -1522,11 +1523,11 @@ As Web site layouts evolve, HTML5 structural elements such as lists, paragraphs,
 
 However, there are some issues with this approach:
 <ul>
-<li>id and class names differ from one developer to another, from one country to another, etc.</li><br/>
-<li>Even with the same ids and class names, the css rules may be different.</li><br/>
-<li>JavaScript libraries have become increasingly heavy over the years.</li><br/>
-<li>Web pages have become increasingly heavy over the years!</li><br/>
-<li>These elements can not be handled by the Web browser natively...</li><br/>
+<li>id and class names differ from one developer to another, from one country to another, etc.</li>
+<li>Even with the same ids and class names, the css rules may be different.</li>
+<li>JavaScript libraries have become increasingly heavy over the years.</li>
+<li>Web pages have become increasingly heavy over the years!</li>
+<li>These elements can not be handled by the Web browser natively...</li>
 </ul>
 
 Even if differences exist between ids, classes and css/js implementations, they also share common behaviors, layouts, and \"ways of doing things\" that could be guessed at first glance by a human.
@@ -1544,25 +1545,24 @@ Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   HTML5 structural elements with descriptions.                                                                                                                                                
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  HTML5 element                                                                                                                                                                               Description
 
-  [**\<header\>**](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>
+  [<b>\<header\></b>](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>.
 
-  [**\<footer\>**](https://www.w3.org/TR/html5/sections.html#the-footer-element)                                                                                                              Contains the footer of a site, a long \<article\>, or a long \<section\>
+  [<b>\<footer\></b>](https://www.w3.org/TR/html5/sections.html#the-footer-element)                                                                                                              Contains the footer of a site, a long \<article\>, or a long \<section\>.
 
-  [**\<nav\>**](https://www.w3.org/TR/html5/sections.html#the-nav-element)                                                                                                                    Section that contains the main navigation links (within the document or to other pages).
+  [<b>\<nav\></b>](https://www.w3.org/TR/html5/sections.html#the-nav-element)                                                                                                                    Section that contains the main navigation links (within the document or to other pages).
 
-  [**\<article\>**](https://www.w3.org/TR/html5/sections.html#the-article-element)                                                                                                            Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.
+  [<b>\<article\></b>](https://www.w3.org/TR/html5/sections.html#the-article-element)                                                                                                            Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.
 
-  [**\<section\>**](https://www.w3.org/TR/html5/sections.html#the-section-element)                                                                                                            Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.
+  [<b>\<section\></b>](https://www.w3.org/TR/html5/sections.html#the-section-element)                                                                                                            Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.
 
-  [**\<time\>**](https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element)                                                                                                      Used for marking up times and dates.
+  [<b>\<time\></b>](https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element)                                                                                                      Used for marking up times and dates.
 
-  [**\<aside\>**](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.
+  [<b>\<aside\></b>](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.
 
-  [**\<figure\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [**\<figcaption\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
+  [<b>\<figure\></b>](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [<b>\<figcaption\></b>](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
 
-  [**\<main\>**](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                 The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. **There can be only one \<main\> element in a document.**
+  [<b>\<main\></b>]<a href="https://www.w3.org/TR/html5/sections.html#the-aside-element"><b>&lt;main&gt;</b></a>                                                                                                                 The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one \<main\> element in a document.</b>
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
@@ -2992,7 +2992,7 @@ Use a \"-\" shaped icon, white, when details are displayed:
 <li>On CanIUse: <a href="https://caniuse.com/#feat=details">compatibility table for details and summary elements</a></li>
 </ul>
 
-<h3 id="ch1-4-2">1.4.2 The \<time\> and \<mark\> Elements</h3>
+<h3 id="ch1-4-2">1.4.2 The &lt;time&gt; and &lt;mark&gt; Elements</h3>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 49.  (xx) ------------------------------->
@@ -3061,15 +3061,14 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
 Duration values use the prefix "P" for "period" as in \<time datetime=\"P4D\"\> (period = four days)\...
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 50.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image050.jpeg?raw=true"
+   alt="Funny picture duration values"
+   width="20%">
 &nbsp;
 <br/>
-![funny pict duration values](./images/image050.jpeg){width="2.0in" height="2.0608694225721784in"}
 
 So you start the attribute string value with a \"P\", followed by a duration value that ends with another letter indicating the unit used: \"D\" for \"days\",  "H" for hours, "M" for minutes and "S" for seconds. 
 
@@ -3079,9 +3078,9 @@ Using a "T" after the "P" marker allows you to indicate a more accurate duration
 
 Alternatively, you could use also a duration time component.
 
-From Bruce Lawson\'s article : *\"Whichever you choose, it's represented internally as a number of seconds. Because of this, you can't specify a duration in terms of months, because a month isn't a precise number of seconds; a month can last from 28 to 31 days. Similarly, a year isn't a precise number of seconds; it's 12 months and February sometimes has an extra day.*
+From Bruce Lawson\'s article : <i>\"Whichever you choose, it's represented internally as a number of seconds. Because of this, you can't specify a duration in terms of months, because a month isn't a precise number of seconds; a month can last from 28 to 31 days. Similarly, a year isn't a precise number of seconds; it's 12 months and February sometimes has an extra day.</i>
 
-*You still can't represent dates before the Christian era, as years can't be negative. Neither can you indicate date ranges. To mark up From "21/02/2012 to 25/02/2012″, use two separate \<time\> elements.\"*
+<i>You still can't represent dates before the Christian era, as years can't be negative. Neither can you indicate date ranges. To mark up From "21/02/2012 to 25/02/2012″, use two separate \<time\> elements.\"</i>
 
 Examples:
 ```
@@ -3336,20 +3335,18 @@ We have also put the simplified [source code of this demo on JSBin.com](https:/
 HTML5 gives us a new translate attribute. This attribute is used to limit the impact of  translation tools such as [Google Translate](https://translate.google.com/) by prohibiting the translation of certain content. In many cases some parts of a document should not be translated.
 
 Use cases include:
+<ul>
+<li>HTML pages that contain source code: you would certainly not like to see the Java or PHP or whatever programming language parts of your page translated into another spoken language!</li>
+<li>Video game Web sites that propose cheat codes; the codes do not have to be translated,</li>
+<li>Street names, author names in an \"about\" page must not be translated,</li>
+<li>etc.</li>
+</ul>
 
--   HTML pages that contain source code: you would certainly not like to see the Java or PHP or whatever programming language parts of your page translated into another spoken language!
-
--   Video game Web sites that propose cheat codes; the codes do not have to be translated,
-
--   Street names, author names in an \"about\" page must not be translated,
-
--   etc.
-
-Both [Google translate](https://translate.google.com/) and [Microsoft online translation services](https://www.microsofttranslator.com/) already offer the ability to prevent translation of content by adding markup to your content, although they do it in (multiple) different ways. Hopefully, the new attribute will help significantly by providing a standard approach.
+Both <a href="https://translate.google.com/">Google translate</a> and <a href="https://www.microsofttranslator.com/">Microsoft online translation services</a> already offer the ability to prevent translation of content by adding markup to your content, although they do it in (multiple) different ways. Hopefully, the new attribute will help significantly by providing a standard approach.
 
 <h4> Principle: give hints to translating tools</h4>
 
-[The specification about the translate attribute](https://www.w3.org/TR/html5/dom.html#the-translate-attribute) tells us that  *\"The translate attribute is an enumerated attribute that is used to specify whether an element\'s attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.*
+<a href="https://www.w3.org/TR/html5/dom.html#the-translate-attribute">The specification about the translate attribute</a> tells us that  <i>\"The translate attribute is an enumerated attribute that is used to specify whether an element\'s attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.*
 
 *The attribute\'s keywords are the empty string, yes, and no. The empty string and the yes keyword map to the yes state. The no keyword maps to the no state. In addition, there is a third state, the inherit state, which is the missing value default (and the invalid value default).\"*
 
@@ -3361,7 +3358,7 @@ In the above example, a \<span\> element defines an author (of a blog, for exa
 
 Using the translate=\"no\" attribute should prevent this behavior\...
 ```
-1.  <span <b>[translate=\"no\"]</b> class="author">[Michel Ham]</span> is a professor
+1.  <span <b>[translate="no"]</b> class="author">[Michel Ham]</span> is a professor
 2.  from the University of Nice,France.
 ```
 Will be correctly translated into French by:
@@ -3394,51 +3391,31 @@ Adding microdata to Web pages helps search engines to better understand the page
 
 This information is not visible to humans: it is pure *semantic information*. Popular kinds of microdata are events, a person\'s profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. 
 
-### Quick example of microdata that describes a person
-
-1.  \<section [itemscope itemtype=\"https://schema.org/Person\"]\>
-
-2.      \<h1\>Contact Information\</h1\>
-
-3.      \<dl\>
-
-4.        \<dt\>Name\</dt\>
-
-5.        \<dd [itemprop=\"name\"]\>Michel Buffa\</dd\>
-
-6.        \<dt\>Position\</dt\>
-
-7.        \<dd\>\<span [itemprop=\"jobTitle\"]\>
-
-8.             Professor/Researcher/Scientist\</span\> for
-
-9.            \<span [itemprop=\"affiliation\"]\>
-
-10.               University of Côte d\'Azur, France
-
-11.           \</span\>
-
-12.       \</dd\>
-
-13.     \</dl\>
-
-14.     \<!\-- SURFACE ADDRESS GOES HERE \--\>
-
-15.     \<h1\>My different online public accounts\</h1\>
-
-16.     \<ul\>
-
-17.        \<li\>\<a href=\"https://www.twitter.com/micbuffa\"
-
-18.               [itemprop=\"url\"]\>Twitter profile\</a\>\</li\>
-
-19.        \<li\>\<a href=\"https://www.blogger.com/micbuffa\"
-
-20.               [itemprop=\"url\"]\>Michel Buffa\'s blog\</a\>\</li\>
-
-21.     \</ul\>
-
-22. \</section\>
+<h4>Quick example of microdata that describes a person</h4>
+```
+1.  <section [itemscope itemtype="https://schema.org/Person"]>
+2.      <h1>Contact Information</h1>
+3.      <dl>
+4.        <dt>Name</dt>
+5.        <dd [itemprop="name"]>Michel Buffa</dd>
+6.        <dt>Position</dt>
+7.        <dd><span [itemprop="jobTitle"]>
+8.             Professor/Researcher/Scientist</span> for
+9.            <span [itemprop="affiliation"]>
+10.               University of Côte d'Azur, France
+11.           </span>
+12.       </dd>
+13.     </dl>
+14.     <!-- SURFACE ADDRESS GOES HERE -->
+15.     <h1>My different online public accounts</h1>
+16.     <ul>
+17.        <li><a href="https://www.twitter.com/micbuffa"
+18.               [itemprop="url"]>Twitter profile</a></li>
+19.        <li><a href="https://www.blogger.com/micbuffa"
+20.               [itemprop="url"]>Michel Buffa's blog</a></li>
+21.     </ul>
+22. </section>
+```
 
 We can also add another embedded data item in the middle, such as the person\'s address:
 ```
