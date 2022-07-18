@@ -136,7 +136,7 @@ During this course, you will learn:
 
 The HTML5 course team is thrilled to guide you in your learning experience. We are committed to teach you how to code Web pages, and how to do it the correct way. We encourage you to create Web pages and apps and share them in the discussion forums. Have fun!
 
-<h3>Online Code Editors:</h3>
+<h4>Online Code Editors:</h4>
 
 <a href="https://jsbin.com" target="_blank">JS Bin</a>
 
@@ -146,7 +146,7 @@ The HTML5 course team is thrilled to guide you in your learning experience. We a
 
 <a href="https://css-tricks.com/video-screencasts/112-using-codepen/" target="_blank">CodePen CSS Tutorial</a>
 
-<h3>Web Editors:</h3>
+<h4>Web Editors:</h4>
 
 While any text editor, like NotePad or TextEdit, can be used to create Web pages, they don't necessarily offer a lot of help towards that end. Other options offer more facilities for error checking, syntax coloring and saving some typing by filling things out for you.
 
@@ -168,7 +168,7 @@ Here are a few possibilities for Web editors:
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3>Online Editors:</h3>
+<h4>Online Editors:</h4>
 
 To help you practice during the whole duration of the course, we use the following interactive online editors. Pretty much all the course\'s examples actually use these tools.
 
@@ -213,7 +213,7 @@ There are many other handy tools such as <a href="https://jsfiddle.net/" targe
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3>Browser Compatibility:</h3>
+<h4>Browser Compatibility:</h4>
 
 The term browser compatibility refers to the ability of a given Web site to appear fully functional on the browsers available in the market.
 
@@ -223,7 +223,7 @@ To make the Web evolve in a sane and sustainable way for both users and develope
 
 We are then providing references to the browser support of HTML5 features presented in this course using 2 resources: <a href="https://caniuse.com/" target="_blank">Can I Use</a> and <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network (MDN) Web Docs</a>.
 
-<h3>Can I use</h3>
+<h4>Can I use</h4>
 
 <a href="https://caniuse.com/">Can I Use</a> provides up-to-date tables for support of front-end Web technologies on desktop and mobile Web browsers. Below is a snapshot of what information is given by CanIUse when searching for "CSS3 colors".</a>
 
@@ -239,7 +239,7 @@ Example of a <a href="./images/image004.png">CanIUse browser</a> support table (
 &nbsp;
 <br/>
 
-<h3>MDN Web Docs</h3>
+<h4>MDN Web Docs</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 05. mdn web docs logo (05) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -263,7 +263,7 @@ To help developers make these decisions consciously rather than accidentally, <
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3>W3C Validators: </h3>
+<h4>W3C Validators:</h4>
 
 For over 15 years, the W3C has been developing and hosting <a href="https://w3c.github.io/developers/" target="_blank">free and open source tools</a> used every day by millions of Web developers and Web designers.
 
@@ -273,7 +273,7 @@ All the tools listed below are Web-based, and are available as downloadable sour
 
 The <a href="https://validator.w3.org/" target="__blank">W3C validator</a> checks the <a href="https://validator.w3.org/docs/help.html#validation_basics" target="_blank">markup validity</a> of various Web document formats, such as HTML. Note that you are automatically directed to the <a href="https://validator.w3.org/nu/" target="_blank">Nu Html Checker</a> when validating an HTML5 document.
 
-<h3>CSS Validator</h3>
+<h4>CSS Validator</h4>
 
 The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a> checks Cascading Style Sheets (CSS) and (X)HTML documents that use CSS stylesheets.
 
@@ -286,7 +286,7 @@ The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validato
    width="25%" />
 </p>
 
-<h3>Unicorn</h3>
+<h4>Unicorn</h4>
 
 <a href="https://validator.w3.org/unicorn/" target="_blank">Unicorn</a> is W3C\'s unified validator, which helps people improve the quality of their Web pages by performing a variety of checks. Unicorn gathers the results of the popular HTML and CSS validators, as well as other useful services, such as Internationalization, RSS/Atom feeds and http headers.
 
@@ -294,11 +294,11 @@ The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validato
 
 The <a href="https://validator.w3.org/i18n-checker/" target="_blank">W3C Internationalization Checker</a> provides information about various internationalization-related aspects of your page, including the HTTP headers that affect it. It will also report a number of issues and offer advice about how to resolve them.
 
-<h3>Link Checker</h3>
+<h4>Link Checker</h4>
 
 The <a href="https://validator.w3.org/checklink" target="_blank">W3C Link Checker</a> looks for issues in links, anchors and referenced objects in a Web page, CSS style sheet, or recursively on a whole Web site. For best results, it is recommended to first ensure that the documents checked use valid <a href="https://validator.w3.org/" target="_blank">(X)HTML Markup</a> and <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS</a>.
 
-<h3>W3C Cheatsheet</h3>
+<h4>W3C Cheatsheet</h4>
 
 The <a href="https://www.w3.org/2009/cheatsheet/" target="_blank">W3C cheatsheet</a> provides quick access to useful information from a variety of specifications published by W3C. It aims at giving in a very compact and mobile-friendly format a compilation of useful knowledge extracted from W3C specifications, completed by summaries of guidelines developed at W3C, in particular Web accessibility guidelines, the Mobile Web Best Practices, and a number of internationalization tips.
 
@@ -318,13 +318,13 @@ Its main feature is a lookup search box, where one can start typing a keyword an
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3>Help Build the Web Platform</h3>
+<h4>Help Build the Web Platform</h4>
 
 Most of the technologies you use when developing Web applications and Web sites are designed and standardized in W3C in a completely open and transparent process.
 
 In fact, all W3C specifications are developed in public <a href="https://github.com/w3c/" target="_blank">GitHub repositories</a>, so if you are familiar with GitHub, you already know how to contribute to W3C specifications! This is all about raising issues (with feedback and suggestions) and/or bringing pull requests to fix identified issues.
 
-<h3>Contribute</h3>
+<h4>Contribute</h4>
 
 Contributing to this standardization process might be a bit scary or hard to approach at first, but understanding at a deeper level how these technologies are built is a great way to build your expertise.
 
@@ -483,7 +483,7 @@ Web accessibility addresses all disabilities, including hearing, learning and co
 <li><i>Text alternatives</i> for people with visual disabilities and who are using screen readers;</li>
 </ul>
 
-<h3>Web accessibility benefits people with and w*ithout* disabilities</h3>
+<h4>Web accessibility benefits people with and w*ithout* disabilities</h4>
 
 Web accessibility features also benefit many more users, such as:
 <ul>
@@ -496,7 +496,7 @@ Web accessibility features also benefit many more users, such as:
 
 The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. When Web pages, Web technologies, Web tools, or Web applications are badly designed, they can create barriers that exclude people from using the Web. More information is available in the <a href="https://www.w3.org/standards/webdesign/accessibility">W3C Accessibility</a> overview.
 
-<h3>First Steps in Web Accessibility</h3>
+<h4>First Steps in Web Accessibility</h4>
 
 There are many simple Web accessibility improvements that you can implement and check right away, even when you are new to this topic.
 
@@ -509,7 +509,7 @@ Two examples are provided below  but you can find more tips and information in 
 <li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks - A First Review of Web Accessibility</a></li>
 </ul>
 
-<h3>Example #1: page title</h3>
+<h4>Example #1: page title</h4>
 
 Good page titles are particularly important for orientation --- to help people know where they are and move between pages open in their browser. The first thing screen readers say when the user goes to a different Web page is the page title. In the Web page markup, they are the words \<title\> within the \<head\>.
 
@@ -524,7 +524,8 @@ Good page titles are particularly important for orientation --- to help people k
 ...
 </head>
 ```
-<h3>Example 2: image text alternatives ("alt text")</h3>
+
+<h4>Example 2: image text alternatives ("alt text")</h4>
 
 Text alternatives (\"alt text\") are a primary way of making visual information accessible, because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user. Providing text alternatives allows the information to be rendered in a variety of ways by a variety of user agents. For example, a person who cannot see a picture can have the text alternative read aloud using synthesized speech.
 
@@ -583,7 +584,7 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 &nbsp;
 <br/>
 
-<h3>History</h3>
+<h4>History</h4>
 
 As Web site layouts evolve, HTML5 structural elements such as lists, paragraphs, tables, etc. show their limits. Today, many Web sites offer navigation menus, tabbed panels, headers, footers, and so on. The way these \"parts\"\' are implemented relies heavily on \<div\> and \<span\> elements with different id and class attributes, lots of CSS and lots of JavaScript code to apply custom styles and behaviors.
 
@@ -603,7 +604,7 @@ So various studies have been conducted in order to identify the most popular ids
 
 Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">article: </a>"During the creation of HTML5, Ian Hickson used Google\'s tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA (\"Metadata Analysis and Mining Application\"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics\".
 
-<h3>New elements added to the HTML5 set</h3>
+<h4>New elements added to the HTML5 set</h4>
 
 The results of these surveys led to the addition of new structural elements in HTML5. For example, the very popular \<div class=\"header\"\> led to the creation of a \<header\> element, \<div class=\"aside\"\> to a \<aside\> element, etc.
 
@@ -634,13 +635,13 @@ And there is no \<content\> element even though the \<div class=\"content\"\>
 
 Read also at the end of this section about the new \<main\> element. This element is [part of the HTML5 recommendation](https://www.w3.org/TR/html5/grouping-content.html#the-main-element) and  an integral part of the HTML document structure.
 
-<h3>External resources:</h3>
+<h4>External resources:</h4>
 <ul>
 <li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/">Structural Semantics: The Importance Of HTML5 Sectioning Elements.</a></li>
 <li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">New Structural Elements in HTML5.</a></li>
 </ul>
 
-<h3>A blog example that uses the structural elements</h3>
+<h4>A blog example that uses the structural elements</h4>
 
 Let\'s study [an example we put on JsBin](https://jsbin.com/bucokav/edit?html,output) (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
 
@@ -802,7 +803,7 @@ section h2 {
 
 Note that the H2, article, article header, etc. will be styled using these rules.
 
-<h3>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
+<h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 17. image of header at top of each article --------------------------->
@@ -1076,7 +1077,7 @@ In that case, the \<nav\> element proposes navigation links to the next or pre
 
 Also note that we used in that example a \<footer\> element in the blog post.
 
-<h3>What about the <div> element? Is it still useful?</h3>
+<h4>What about the &lt;div&gt; element? Is it still useful?</h4>
 
 The new elements have been primarily designed to better structure the code of HTML pages such as those generated by blog or CMS software, however do not forget that they add new semantics and will be taken into account by:
 <ul>
@@ -1133,7 +1134,7 @@ In the above outline, note that we have only used H1\... H6 elements, without
 
 Here is a list of browser extensions you can try, for visualizing the outline of a document: <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> (Chrome extension) or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">this Firefox extension</a>.
 
-<h3>Using headings and new sectioning elements (section, article, aside, nav)</h3>
+<h4>Using headings and new sectioning elements (section, article, aside, nav)</h4>
 
 <h4>Definition of heading content and sectioning content</h4>
 
@@ -1208,7 +1209,7 @@ In the above example, please note two things:
 
 2.  The default size for the H1 and H2 is the same (!). Indeed, when we start a \<h1\> inside a \<section\> the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.
 
-<h3>Best Practices when using Sectioning Elements</h3>
+<h4>Best Practices when using Sectioning Elements</h4>
 
 Best practice #1: always add a heading to explicit sectioning content
 
@@ -1411,7 +1412,7 @@ Changes have been made to particular elements in HTML5 making it simpler to u
 <li>the new structural elements that have been added, etc.</li>
 </ul>
 
-<h3>A minimal HTML5 document</h3>
+<h4>A minimal HTML5 document</h4>
 
 ```
 <!DOCTYPE html>
@@ -1494,7 +1495,7 @@ Here again, the type attribute has been omitted. Just as a reminder, the old way
 ```
 1.  <script type="text/javascript" src="script.js"></script>
 ```
-<h3>More flexible syntax constraints</h3>
+<h4>More flexible syntax constraints</h4>
 
 If you look at the \"minimal document\" example, or at other examples in this course, you won\'t find a lot of differences compared to the same code in XHTML: attribute values are surrounded by quotes, all elements are written in lower case, etc. This is because we are used to writing this way, but HTML5 also supports a simplified syntax:
 <ul>
@@ -1505,7 +1506,7 @@ If you look at the \"minimal document\" example, or at other examples in this co
 
 <h3 id="ch1-3-2">1.3.2 Structural Elements</h3>
 
-<h3>New structural elements</h3>
+<h4>New structural elements</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------- 13. some of the new structural elements introducted by html5 (xx) ---------------->
@@ -1562,21 +1563,21 @@ Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\
 
   [<b>\<figure\></b>](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [<b>\<figcaption\></b>](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
 
-  [<b>\<main\></b>]<a href="https://www.w3.org/TR/html5/sections.html#the-aside-element"><b>&lt;main&gt;</b></a>                                                                                                                 The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one \<main\> element in a document.</b>
+  <a href="https://www.w3.org/TR/html5/sections.html#the-aside-element"><b>&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b>
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
 
 Read also at the end of this section about the new \<main\> element .  This element is [part of the HTML5 recommendation](https://www.w3.org/TR/html5/grouping-content.html#the-main-element) and  an integral part of the HTML document structure.
 
-<h3>External resources:</h3>
+<h4>External resources:</h4>
 <ul>
 <li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/">Structural Semantics: The Importance Of HTML5 Sectioning Elements</a></li>
 <li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">New Structural Elements in HTML5</a></li>
 </ul>
 <h3 id="ch1-3-3">1.3.3 Mixing All Elements Together: A Blog Example</h3>
 
-<h3>A blog example that uses the structural elements</h3>
+<h4>A blog example that uses the structural elements</h4>
 
 Let\'s study <a href="https://jsbin.com/bucokav/edit?html,output ">an example we put on JsBin</a> (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
 
