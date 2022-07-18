@@ -162,6 +162,7 @@ Here are a few possibilities for Web editors:
 <li><a href="https://atom.io/" target="_blank">Atom</a> - another cross platform editor, created by <a href="https://github.com/">GitHub</a>.</li>
 <li><a href="https://github.com/" target="_blank">GitHub</a> itself - check <a href="https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1">this resource that explains how to create a Web site using GitHub</a>.</li>
 <li><a href="https://www.vim.org/" target="_blank">Vim</a> or <a href="https://www.gnu.org/software/emacs/" target="_blank">Emacs</a> - great editors, but if you&apos;re not already familiar with these, this isn&apos;t the time to try.</li>
+</ul>
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -2491,8 +2492,8 @@ We recommend this article written by Steve Faulkner: \"[Easy content organisatio
 <h4>External resources:</h4>
 <ul>
 <li>This <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">document</a> has been written by the W3C HTML5 Working Group, which details the different use-cases for this element.</li>
-<li><a href="https://www.w3.org/html/wg/wiki/User:Sfaulkne/main-usecases">Rationale and use cases for standardizing a \'main content\' HTML feature</a>.</li>
-<li>On MDN\'s Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">main element.</a></li>
+<li><a href="https://www.w3.org/html/wg/wiki/User:Sfaulkne/main-usecases">Rationale and use cases for standardizing a 'main content' HTML feature</a>.</li>
+<li>On MDN's Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">main element.</a></li>
 </ul>
 
 <h3 id="ch1-3-9">1.3.9 The Blog Example, Applying Best Practices</h3>
@@ -2503,11 +2504,12 @@ Let\'s go back to our blog example and see what can be improved:
 <li>Did we use sectioning elements or implicit sections?</li>
 <li>Can we embed a table of contents?</li>
 </ul>
+<br/>
 
 <a href="https://jsbin.com/heboke/edit?html,output">The blog example is online at JsBin</a>:  let\'s see below what the Google Chrome HTML5 Outliner extension showed.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------- 32. image of teh blog toc, show an untitled nav entry (##) ------------------->
+<!----------------- 32. image of the blog toc, show an untitled nav entry (52) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image032.jpeg?raw=true"
@@ -2518,11 +2520,11 @@ Let\'s go back to our blog example and see what can be improved:
 Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an \<article\> that is in a \<section\> (this corresponds to the third example given in the \"heading and sectioning elements\" part of the course):
 
 ```
-1.  <b><section></b>
+1.  <section>
 2.     <header>
 3.       <b><h1>Blog posts for April 2012</h1></b>
 4.     </header>
-5.     <b><article></b>
+5.     <article>
 6.       <header>
 7.         <b><h1><a href="">Information about this example</a></h1></b>
 8.         This example is a modified version of <a href="https://example.com/blog/index.html">https://example.com/blog/index.html</a>
@@ -2542,8 +2544,8 @@ We need to add a heading in the \<nav\> element. This will both fix the outlin
 
 ```
 1.  <nav>
-2.     <b><header></b>
-3.       <b><h1>Navigation menu</h1></b>
+2.     <header>
+3.       <h1>Navigation menu</h1>
 4.     <b></header></b>
 5.     <ul>
 6.       <li><span>Blog</span></li>
@@ -2556,7 +2558,7 @@ We need to add a heading in the \<nav\> element. This will both fix the outlin
 <b>Here is the fixed result:</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 33.  (xx) ------------------->
+<!---------------------- 33. good outline without the untitled nav (53) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image033.jpeg?raw=true"
@@ -2567,13 +2569,13 @@ We need to add a heading in the \<nav\> element. This will both fix the outlin
 
 A common remark from Web designers is: \"we do not want a heading content displayed systematically after a \<nav\>, or an \<aside\> element\...\"
 
-<b>BEST PRACTICE #1: </b>In order to NOT display the heading content on screen the recommended technique is described in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/">this article by Steve Faulkner</a>. Do not use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies. <b>\
+<b>BEST PRACTICE #1:</b> In order to NOT display the heading content on screen the recommended technique is described in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/">this article by Steve Faulkner</a>. Do not use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies.
 
-<b>As an illustration of the recommended technique, see <a href="https://jsbin.com/savabo/edit?html,output">this JSBin version of the blog example</a> that hides the \<h2\>Navigation menu\</h2\> from the \<nav\>\...\</nav\> element, using the CSS technique explained in the above link.
+As an illustration of the recommended technique, see <a href="https://jsbin.com/savabo/edit?html,output">this JSBin version of the blog example</a> that hides the \<h2\>Navigation menu\</h2\> from the \<nav\>\...\</nav\> element, using the CSS technique explained in the above link.
 
-<b>BEST PRACTICE #2: </b>it is not advised to include interactive content (links, controls etc) that is hidden offscreen it is in fact a violation of the <a href="https://www.w3.org/TR/WCAG20/)">W3C WCAG 2.0 Guidelines</a>. All interactive content must have a visible focus indicator (and be on screen when focused).
+<b>BEST PRACTICE #2:</b> It is not advised to include interactive content (links, controls etc) that is hidden offscreen it is in fact a violation of the <a href="https://www.w3.org/TR/WCAG20/)">W3C WCAG 2.0 Guidelines</a>. All interactive content must have a visible focus indicator (and be on screen when focused).
 
-<h4>Embedding a table of contents and adding a \<main\> element</h4>
+<h4>Embedding a table of contents and adding a &lt;main&gt; element</h4>
 
 In the previous section, we saw how to embed a table of contents using some JavaScript code borrowed from the Google Chrome HTML5 outliner extension.
 
@@ -2602,7 +2604,7 @@ We also added a \<main\> element to identify the main content of the page comp
 7.  </main>
 ```
 
-<h4>Use H1 as top level headings only, use H2\...H6 in sectioning content</h4>
+<h4>Use H1 as top level headings only, use H2...H6 in sectioning content</h4>
 
 As explained in the article <a href="https://www.paciellogroup.com/blog/2013/10/html5-document-outline/">HTML5 Document Outline</a> and in <a href="https://www.w3.org/wiki/HTML/Usage/Headings">the W3C HTML Wiki</a>, it is risky to use nested H1s, as browsers do not correctly implement the \"outline algorithm\".
 
@@ -2619,7 +2621,7 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 4.     </header>
 5.     ...
 6.  </nav>
-``
+```
 
 <h4>Finally, the fixed example</h4>
 <ul>
@@ -2627,7 +2629,7 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 34. blog with embedded table of contents (xx) ------------------->
+<!----------------------- 34. blog with embedded table of contents (55) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image034.jpeg?raw=true"
@@ -17892,7 +17894,7 @@ Note that if all you need is to store session-based data in a manner that is mor
 
 **Cookies\' security drawback: **if a user has two tabs open to the same site, they will share the same cookies. Which is to say that if you are storing information about a given operation using cookies in one tab, that information will leak to the other side --- this can be confusing if the user is performing different tasks in each.
 
-**By using sessionStorage, the data you store will be scoped and therefore not leak across tabs!**
+<b>By using sessionStorage, the data you store will be scoped and therefore not leak across tabs!</b>
 
 <h3 is="6-2-7">6.2.7 Storing more than strings? Use JSON!</h3>
 
@@ -17900,15 +17902,15 @@ Storing strings is all well and good, but it quickly becomes limiting: you may 
 
 There are some simple approaches, such as creating your own minimal record format (e.g. a string with fields separated with a given character, using join() on store and split() upon retrieval) or using multiple keys (e.g. post_17_title, post_17_content, post_17_author, etc.). But these are really hacks. Thankfully, there\'s a better way,  JSON.stringify() and JSON.parse() methods.
 
-[JSON](https://www.json.org/) provides a great way of encoding and decoding data that is a really good match for JavaScript. You have to be careful not to use circular data structures or non-serializable objects, but in the vast majority of cases, plugging JSON support into your local store is straightforward.
+<a href="https://www.json.org/">JSON</a> provides a great way of encoding and decoding data that is a really good match for JavaScript. You have to be careful not to use circular data structures or non-serializable objects, but in the vast majority of cases, plugging JSON support into your local store is straightforward.
 
 <h4>Typical usage</h4>
 ```
-1.  locaStorage.key = JSON.stringify(object); // or\...
+1.  locaStorage.key = JSON.stringify(object); // or...
 2.  localStorage.setItem(key, JSON.stringify(object));
 ```
 
-Let\'s try a simple toy example ([online at JSBin](https://jsbin.com/ciricis/2/edit?html,console,output)).  The example below saves a JavaScript object in JSON, then restores it and checks that the object properties are still there!
+Let\'s try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,console,output">online at JSBin</a>).  The example below saves a JavaScript object in JSON, then restores it and checks that the object properties are still there!
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 304. json save/load in local storage (xx) ------------------------------->
@@ -17956,7 +17958,7 @@ Let\'s try a simple toy example ([online at JSBin](https://jsbin.com/ciricis/2/e
 
 <h4>Example #1: showing how we can save a form\'s content in JSON</h4>
 
-[Online example on JSBin that saves in localStorage an array of contacts in JSON](https://jsbin.com/nejewiw/2/edit?html,js,console,output)
+<a href="https://jsbin.com/nejewiw/2/edit?html,js,console,output">Online example on JSBin that saves in localStorage an array of contacts in JSON</a>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 305. local storage json (xx) ------------------------------->
@@ -17970,7 +17972,7 @@ Let\'s try a simple toy example ([online at JSBin](https://jsbin.com/ciricis/2/e
 
 <h4>Example #2: a form and a table that displays the contacts stored in localStorage</h4>
 
-[Example on JSBin](https://jsbin.com/karoboj/3/edit?html,css,console,output) 
+<a href="https://jsbin.com/karoboj/3/edit?html,css,console,output">Example on JSBin</a>
 
 Add contacts using the form, see how the HTML table is updated. Try to reload the page: data are persisted in localStorage. 
 
@@ -18291,15 +18293,14 @@ Select several images: \<input type=\"file\" accept=\"image/\*\" multiple o
 
 <h3 id="ch6-3-4">6.3.4 Blob and File</h3>
 
-The [HTML5 File API specification](https://www.w3.org/TR/FileAPI/) introduces several interfaces:
+The <a href="https://www.w3.org/TR/FileAPI/">HTML5 File API specification</a> introduces several interfaces:
+<ul>
 
--   the** [FileList](https://www.w3.org/TR/FileAPI/#filelist-section) **interface (we already met it: the files property is a FileList,
-
--   the[** File**](https://www.w3.org/TR/FileAPI/#file-section) interface that is useful for getting details about a file (the file variable in the for loop of the last example illustrates this),
-
--   the** [Blob](https://www.w3.org/TR/FileAPI/#blob-section)** interface helps read binary data (only) that is accessed slice by slice (as chunks of data, each one being a \"Blob\"),
-
--   and the** [FileReader](https://www.w3.org/TR/FileAPI/#APIASynch)** interface for reading file content (we will see how to use it in the next section of the course).
+<li>the <a href="https://www.w3.org/TR/FileAPI/#filelist-section">FileList</a> interface (we already met it) the files property is a FileList,</li>
+<li>the <a href="https://www.w3.org/TR/FileAPI/#file-section">File</a> interface that is useful for getting details about a file (the file variable in the for loop of the last example illustrates this),</li>
+<li>the <a href="https://www.w3.org/TR/FileAPI/#blob-section">Blob</a> interface helps read binary data (only) that is accessed slice by slice (as chunks of data, each one being a "Blob"),</li>
+<li>and the <a href="https://www.w3.org/TR/FileAPI/#APIASynch">FileReader</a> interface for reading file content (we will see how to use it in the next section of the course).</li>
+</ul>
 
 We will not use all of these interfaces, but let\'s explain the difference between Blob and File, as most of the methods exposed by the FileReader interface take indiscriminately a Blob or a File as parameter.
 
@@ -18314,7 +18315,7 @@ We will not use all of these interfaces, but let\'s explain the difference betwe
 
 <h4>The Blob object</h4>
 
-**An object of type Blob is a structure that represents binary data available as read-only.** Most of the time, you will only encounter these objects when you handle files.
+<b>An object of type Blob is a structure that represents binary data available as read-only.</b> Most of the time, you will only encounter these objects when you handle files.
 
 Blob objects have two properties, namely:size and type, which respectively retrieve the size in bytes of the data handled by the Blob and their MIME type.
 
