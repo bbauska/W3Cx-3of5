@@ -1288,8 +1288,8 @@ In red, the sectioning root (\<body\>) and the sectioning elements (\<section\>�
 
 <h4>To sum up:</h4>
 <ul>
-<li>Always use a heading element after a sectioning</lement, for example \<section\>**\<Hx\>\...\</Hx\>\...**\</section\>, and after \<body\>, where <b>x</b> can be 1..6,</li>
-<li>Or, use a \<header\> element, like in \<section\><b>\<header\>\<Hx\>\...\</Hx\>\.....\</header\></b>\...\</section\></li>
+<li>Always use a heading element after a sectioning element, for example &lt;section&gt;&lt;Hx&gt;...&lt;/Hx&gt;...&lt;section&gt;, and after &lt;body&gt;, where <b>x</b> can be 1..6,</li>
+<li>Or, use a &lt;header&gt; element, like in &lt;section&gt;&lt;header&gt;&lt;Hx&gt;...&lt;Hx&gt;.....&lt;header&gt;...&lt;section&gt;</li>
 </ul>
 
 <h4>More about the &lt;header&gt; element</h4>
@@ -1312,7 +1312,7 @@ This example has two headings in the \<header\>:
 Here is the resulting table of contents, notice the two subsections that appear, one for the H1, one for the H2:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 28. outline of previous example --------------------------------->
+<!---------------------------- 28. outline of previous example (xx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image028.jpeg?raw=true"
@@ -1379,7 +1379,7 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 Both of the examples above are semantically identical and produce the same outline:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 29. outline of previous example --------------------------------->
+<!---------------------------- 29. outline of previous example (xx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image029.jpeg?raw=true"
@@ -1627,11 +1627,11 @@ header span {
 <h4>Use a &lt;nav&gt; for the navigation menu just below the header</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 15. image of the navigation menu (xx) ------------------->
+<!--------------------------- 15. image of the navigation menu (xx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image015.jpeg?raw=true"
-   alt="image of the navigation menu"
+   alt="Image of the navigation menu."
    width="35%" />
 &nbsp;
 <br/>
@@ -1696,7 +1696,7 @@ Now, we have one big \<section\> element that contains a set of \<article\> 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image016.jpeg?raw=true"
-   alt="image of sections that contain articles"
+   alt="Image of sections that contain articles."
    width="65%" />
 &nbsp;
 <br/>
@@ -2647,9 +2647,9 @@ We embed examples from this [very good post about \"Positioning content\"](http
 
 The 4 examples below are given \"as is\" to give you some hints. There are lots of other possibilities on using CSS to position element.
 
-<h4>Example #1: a <section> on the left and an <aside> on the right, using the float and width CSS properties</4>
+<h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, using the float and width CSS properties</4>
 
-This example uses the following HTML structure (notice that we use the \"HTML entity syntax\" for displaying \"\<\" or \"\>\". For example, &lt; displays a \"\<\" character).
+This example uses the following HTML structure (notice that we use the \"HTML entity syntax\" for displaying \"\<\" or \"\>\". For example, displays a \"\<\" character).
 
 ```
 1.  <header>
@@ -2673,7 +2673,7 @@ Here we use the CSS rule float:left for the <section\> and the CSS rule f
 
 You can look at the complete CSS code in the interactive example below (click on the CSS or HTML text in the menu bar below, or click \"edit on codepen\" to change the code and see the results):
 <!------------------------------------------------------------------------------------------------>
-<!---------------- xx.  (xx) ------------------->
+<!---------------- 35.  (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image035.png?raw=true"
@@ -2767,19 +2767,19 @@ This example also uses all the structuring elements we saw: main, article, secti
 <h4>External resources</h4>
 <ul>
 <li>An article on CSS Tricks: <a href="https://css-tricks.com/all-about-floats/">All about floats</a></li>
-<li>Old but good article on \"A List Apart\" (ALA): <a href="https://alistapart.com/article/css-floats-101">CSS Floats 101</a></li>
+<li>Old but good article on "A List Apart" (ALA): <a href="https://alistapart.com/article/css-floats-101">CSS Floats 101</a></li>
 <li>Another article on Lifewire:<a href="https://www.lifewire.com/understanding-css-float-3466205"> Understanding CSS float</a></li>
 <li>On MDN\'s Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">float CSS property</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear">clear CSS property</a></li>
 </ul>
 
-<h3 id="ch1-4">1.4.1 The <details> and <summary> Elements</h3>
+<h3 id="ch1-4-1">1.4.1 The &lt;details&gt; and &lt;summary&gt; Elements</h3>
 
 These elements have been introduced for displaying a foldable zone in an HTML document.
 
 In the screenshot below, taken from the W3C specification page, the text next to the horizontal arrow is a \<summary\> element, and the text displayed when we click on the summary part, is the \<details\> element. This is a sort of \"accordion\" with foldable content.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 40. example of summary details elements from the w3c specs (xx) ------------------------------->
+<!-------------- 40. example of summary details elements from the w3c specs (xx) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image040.png?raw=true"
@@ -3370,11 +3370,11 @@ Will be correctly translated into French by:
 
 <h4> Inheritance between elements</h4>
 
-When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true. 
+When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true.
 ```
-1.  <p <b>[translate="no"]</b>>This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.[<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>]. This is the end of the paragraph\...</ p\>
+1.  <p <b>[translate="no"]</b>>This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.[<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>]. This is the end of the paragraph\...</p>
 ```
-### External resources:
+<h4>External resources:</h4
 
 -   From the specification: [the translate attribute](https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute)
 
@@ -3458,8 +3458,7 @@ Different use cases:
 
 <b>Note</b>: For advanced users, Microdata is very similar to [microformats](http://microformats.org/), which use HTML classes, or to [RDFa](https://www.w3.org/TR/xhtml-rdfa-primer/), which doesn't validate in HTML4 or HTML5. Because RDFa was considered to be too hard for authors to write, microdata is HTML5\'s answer to help embed semantics into html documents.
 
-### External resources
-
+<h4>External resources</h4>
 -   [W3C\'s HTML Microdata Working Draft](https://www.w3.org/TR/microdata/)
 
 -   MDN\'s Web Docs: [Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)
@@ -3496,53 +3495,32 @@ Let\'s have a look now at a (small) example of an about page. It renders as a ve
 
 [Online example at JsBin](https://jsbin.com/gunuzus/1/edit?html,output)
 
-Source code:
-
+<h4>Source code:</h4>
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.  \<head\>
-
 4.  \<meta charset=utf-8 /\>
-
 5.  \<title\>Michel Buffa\</title\>
-
 6.  \</head\>
-
 7.  \<body\>
-
 8.  \<div [itemscope itemtype=\"https://schema.org/Person\"]\>
-
 9.      My name is \<span itemprop=\"name\"\>Michel Buffa\</span\>,
-
 10.     And I\'m a \<span itemprop=\"jobTitle\"\>professor/researcher\</span\> at
-
 11.      \<a href=\"https://www.i3s.unice.fr/\" itemprop=\"affiliation\"\>I3S
-
 12.     Laboratory\</a\> in the south of France, near the city of Nice. My
-
 13.     email
-
 14.     is : \<span itemprop=\"email\"\>micbuffa@gmail.com\</span\>.
-
 15.     I live in the city of
-
 16.     \<span itemprop=\"address\" itemscope
-
 17.         [itemtype=\"https://schema.org/PostalAddress\"]\>
-
 18.          \<span itemprop=\"addressLocality\"\>Biot\</span\>, in a region named
-
 19.          \<span itemprop=\"addressRegion\"\>Alpes Maritimes\</span\>
-
 20.     \</span\>
-
 21. \</div\>
-
 22. \</body\>
-
 23. \</html\>
+```
 
 Rendering of the page in a browser:
 <!------------------------------------------------------------------------------------------------>
@@ -3751,33 +3729,32 @@ Now, let\'s see what elements are compatible with the itemprop attribute and w
 
 If the itemprop attribute appears on a:
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Elements that can be associated with microdata              
-  ----------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Elements that can be associated with microdata
   HTML5 elements                                              microdata value associated
 
   \<a\>, \<area\>, \<audio\>, \<embed\>, \<iframe\>, \        The data is the url in the element\'s href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person\'s photo and downloaded accordingly.
   \<img\>, \<link\>, \<object\>, \<source\>, or \<video\> \   
-  element                                                     
+  element
 
   \<time\> element                                            The data is the time in the element\'s datetime attribute. This lets you, for example, just say \"last week\" in your text content but still indicate exact date and time.
 
   \<meta\> element                                            The data is whatever appears in the content attribute of the \<meta\> element. This is used when you need to include some data that isn\'t actually in the text of your page.
 
   anything else                                               The data is whatever is in the text of the element.
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 For example, the value of a property defined in an \<img\> element will be the value of the src attribute:
-
-1.  \<img itemprop=\"image\" src=\"MichelBuffa.png\" alt=\"A great professor\"\>
-
+```
+1.  <img itemprop="image" src="MichelBuffa.png" alt="A great professor">
+```
 Or for a \<time\>, it will be the value of the datetime attribute:
 
-1.  \<time itemprop=\"birthday\" datetime=\"1965-04-16\"\>April 16, 1965\</time\>
-
+```
+1.  <time itemprop="birthday" datetime="1965-04-16">April 16, 1965</time>
+```
 Or for an \<a\> element, the value will be the value of the href attribute:
-
-1.  \<a href=\"https://www.twitter.com/micbuffa\" itemprop=\"url\"\>profile\</a\>
+```
+1.  <a href="https://www.twitter.com/micbuffa" itemprop="url">profile</a>
+```
 
 <h3 id="ch1-5-4">1.5.4 Microdata Tools</h3>
 
@@ -3796,15 +3773,14 @@ To automatically generate microdata for describing persons, restaurants, movie
 Example:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 64.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image064.jpeg?raw=true"
+   alt="Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata."
+   width="65%">
 &nbsp;
 <br/>
-![Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata](./images/image064.jpeg){width="6.5in" height="3.3743055555555554in"}
 
 <h3 id="ch1-5-5">1.5.5 Examples of Well Structured Documents with Microdata</h3>
 
@@ -3821,15 +3797,14 @@ Visit the [exemple #1 online](https://jsbin.com/cuzipa/edit?html,css,output).
 Structure:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 65.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image065.jpeg?raw=true"
+   alt="Picture of the first about me page example. Shows the table of contents."
+   width="40%">
 &nbsp;
 <br/>
-![picture of the first about me page example. Shows the table of content](./images/image065.jpeg){width="4.0625in" height="4.010416666666667in"}
 
 Microdata:
 
@@ -4302,28 +4277,28 @@ This time the video is zoomed in so that it\'s much bigger than the browser\'s w
 
 <h4>HTML code:</h4>
 ```
-> \<!DOCTYPE html\>
-> \<html lang=\"en\"\>
-> \<head\>
->    \<meta charset=\"utf-8\"\>
->    \<title\>Full screen video with CSS effects \</title\>
-> \</head\>
-> \<body\>
-> \<header\>
->  \<video autoplay loop=\"\"
->   poster=\"https://mainline.i3s.unice.fr/mooc/polina.jpg\"
->   id=\"bgvid\"\>
->     \<source src=\"https://mainline.i3s.unice.fr/mooc/polina.webm\"
->             type=\"video/webm\"\>
->     \<source src=\"https://mainline.i3s.unice.fr/mooc/polina.mp4\"
->             type=\"video/mp4\"\>
->  \</video\>
-> \</header\>
-> \<section\>
-> \<h1\>Full screen video with CSS effects\</h1\>
-> \</section\>
-> \</body\>
-> \</html\>
+> <!DOCTYPE html>
+> <html lang="en">
+> <head>
+>    <meta charset="utf-8">
+>    <title>Full screen video with CSS effects </title>
+> </head>
+> <body>
+> <header>
+>  <video autoplay loop=""
+>   poster="https://mainline.i3s.unice.fr/mooc/polina.jpg"
+>   id="bgvid">
+>     <source src="https://mainline.i3s.unice.fr/mooc/polina.webm"
+>             type="video/webm\"\>
+>     <source src="https://mainline.i3s.unice.fr/mooc/polina.mp4"
+>             type="video/mp4">
+> </video>
+> </header>
+> <section>
+> <h1>Full screen video with CSS effects</h1>
+> </section>
+> </body>
+> </html>
 ```
 
 <h4>CSS code:</h4>
@@ -7349,13 +7324,22 @@ At *line 10*, we called the drawSomething(\...) function with 0 and 100 as p
 
 If you look at the code of the modified function, you will see that each call to fillRect(\...) uses the x and y parameters instead of hard coded values. In this way, if we call it with parameters (0, 100), then all rectangles will be drawn 100 pixels to the bottom (offset in y). Here is the result:
 
-![rectangles are drawn 100 pixels towards the bottom](./images/image131.jpeg){width="2.9895833333333335in" height="3.0in"}
-
--   <h4> Now, let\'s draw a small monster\'s head with rectangles
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 131.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image131.jpeg?raw=true"
+   alt="Rectangles are drawn 100 pixels towards the bottom."
+   width="30%" >
+&nbsp;
+<br/>
+<ul>
+<li><h4>Now, let\'s draw a small monster\'s head with rectangles</li>
+</ul>
 
 Now we can start having some fun\... let\'s draw a monster\'s head using only rectangles:
 
-HTML
+<h4>HTML</h4>
 
 ```
 <!DOCTYPE html>
