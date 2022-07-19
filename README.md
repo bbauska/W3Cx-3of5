@@ -1238,7 +1238,7 @@ Here are some examples:
 </section>
 ```
 
-<h4>Bad (there is no Hx after the <section> - no heading):</h4>
+<h4>Bad (there is no Hx after the &lt;section&gt; - no heading):</h4>
 
 ```
 <section>
@@ -1288,8 +1288,8 @@ In red, the sectioning root (\<body\>) and the sectioning elements (\<section\>�
 
 <h4>To sum up:</h4>
 <ul>
-<li>Always use a heading element after a sectioning</lement, for example \<section\>\<Hx\>\...\</Hx\>\...\</section\>, and after \<body\>, where <b>x</b> can be 1..6,</li>
-<li>Or, use a \<header\> element, like in \<section\><b>\<header\>\<Hx\>\...\</Hx\>\.....\</header\></b>\...\</section\></li>
+<li>Always use a heading element after a sectionine element, for example &lt;section&gt; &lt;Hx&gt; ...&lt;Hx&gt;...&lt;section&gt;, and after &lt;body&gt;, where <b>x</b> can be 1..6,</li>
+<li>Or, use a &lt;header&gt; element, like in &lt;section&gt;<b>&lt;header&gt;&lt;Hx&gt;...&lt;Hx&gt;.....&lt;header&gt;</b>...&lt;section&gt;</li>
 </ul>
 
 <h4>More about the &lt;header&gt; element</h4>
@@ -1407,7 +1407,7 @@ Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-
 Changes have been made to particular elements in HTML5 making it simpler to use. In this section, we will look at some examples highlighting these improvements, including:
 <ul>
 <li>the new doctype definition;</li>
-<li>the fact that the "type" attribute of elements such as <link> or <script> are now optional;</li>
+<li>the fact that the "type" attribute of elements such as &lt;link&gt; or &lt;script&gt; are now optional;</li>
 <li>the syntax constraints that have been relaxed;</li>
 <li>the new structural elements that have been added, etc.</li>
 </ul>
@@ -1463,16 +1463,20 @@ DTDs are not used by current Web browsers to  validate the structure of an HTML
 Old HTML1 Web pages will not be rendered the same way as new HTML5 pages, since, in the 90\'s, some of them were written by hand and may contain errors, embedded HTML elements, etc.
 
 <h5>With HTML4, doctype definitions looked like this:</h5>
+
 ```
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">, 
 ```
+
 which was even more complicated as one had to choose between three different possibilities (doctypes could be transitional, strict, or frameset). Most of the time, the doctype definition was copied and pasted from one document 
 to another and was nearly impossible to memorize.
 
 <h5>With HTML5, there is only one way to indicate the doctype, and it\'s so simple there is no reason to forget it:</h5>
+
 ```
 1.  <!doctype html>
 ```
+
 <h4>The "TYPE" attribute is optional</h4>
 
 With a rel=\"stylesheet\" attribute, it is no longer necessary to indicate type=\"text/css\" (from [the specification](https://www.w3.org/TR/html5/links.html#link-type-stylesheet): \"the default type for resources given by the  [stylesheet](https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet)  keyword is text/css.\")
@@ -1543,11 +1547,9 @@ The results of these surveys led to the addition of new structural elements in H
 
 Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\'s surveys gave birth to these new elements (click on the element\'s name to go to the W3C specification about this element):
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  HTML5 structural elements with descriptions.                                                                                                                                                
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<h3>HTML5 structural elements with descriptions.</h3>
 
-  [<b>\<header\></b>](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>.
+<a href="https://www.w3.org/TR/html5/sections.html#the-header-element">[<b>&lt;header&gt;</b>]</a>                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>.
 
   [<b>\<footer\></b>](https://www.w3.org/TR/html5/sections.html#the-footer-element)                                                                                                              Contains the footer of a site, a long \<article\>, or a long \<section\>.
 
@@ -1563,8 +1565,7 @@ Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\
 
   [<b>\<figure\></b>](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [<b>\<figcaption\></b>](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
 
-  <a href="https://www.w3.org/TR/html5/sections.html#the-aside-element"><b>&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b>
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  <a href="https://www.w3.org/TR/html5/sections.html#the-aside-element">&lt;main&gt;</a> The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b>
 
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
 
@@ -1659,9 +1660,7 @@ The navigation menu just below the header is a \<nav\> element. For the purpos
     </ul>
 </nav>
 ```
-
 <h4>And here is the CSS we used in this example for the &lt;nav&gt; element:</h4>
-
 ```
 nav {
     font-size: 1.5em;
@@ -2647,7 +2646,7 @@ We embed examples from this [very good post about \"Positioning content\"](http
 
 The 4 examples below are given \"as is\" to give you some hints. There are lots of other possibilities on using CSS to position element.
 
-<h4>Example #1: a <section> on the left and an <aside> on the right, using the float and width CSS properties</h4>
+<h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, using the float and width CSS properties</h4>
 
 This example uses the following HTML structure (notice that we use the \"HTML entity syntax\" for displaying \"\<\" or \"\>\". For example, &lt; displays a \"\<\" character).
 
