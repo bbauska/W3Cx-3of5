@@ -15015,15 +15015,43 @@ Some screenshots from Opera desktops and Safari IOS:
    alt="Input type=datetime on Safari IOS" />
 </p>
 
-```
 <input type="datetime-local">
-![datetime-local example](./images/image241.png){width="2.0in" height="1.8679866579177602in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 241.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image241.png?raw=true"
+   width="20%"
+   alt="datetime-local example" />
+</p>
+
 <input type="week">:
-![week](./images/image242.jpeg){width="4.0in" height="1.2696576990376203in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 240.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image242.jpeg?raw=true"
+   width="40%"
+   alt="Week" />
+</p>
 <input type=\"month\">:
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 243.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image243.jpeg?raw=true"
+   width="40%"
+   alt="Month" />
+</p>
 ![month](./images/image243.jpeg){width="4.0in" height="1.4222222222222223in"}
-![input type=month safari IOS](./images/image244.png){width="2.0in" height="3.0in"}
-```
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 244.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image244.jpeg?raw=true"
+   width="20%"
+   alt="input type=month safari" />
+</p>
 
 <h3 id="ch5-4-4">5.4.4 "e-mail", "tel", "URL", and "search"</h3>
 
@@ -15050,8 +15078,7 @@ If the value entered does not contain an \"@\", and does not look like an emai
 See the next example to see this in action. More details will be presented in a later section dedicated to form validation.
 
 Typical use:
-
-[Online example at CodePen](https://codepen.io/w3devcampus/pen/aWXKWR)
+<a href="https://codepen.io/w3devcampus/pen/aWXKWR">Online example at CodePen</a>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 246.  (xxx) ------------------->
@@ -15318,10 +15345,10 @@ If the difference between the value you enter and min is a multiple of step
 **WARNING 1**: **Using a step attribute with an integer value will make the arrows increment/decrement the current value with the step value, and [make the input field valid only when ]the difference between the value you enter and min is a multiple of step. **
 
 **WARNING 2: by default, omitting the step attribute is equivalent to step=\"1\", [so for entering float values, it is necessary to use step=\"any\" or step equal to a floating point value such as step=\"0.1\"].**\
-\
+
 **With step=\"any\", floating point values are valid, but vertical arrows will increment/decrement the value by one. If step=\"0.1\", arrows will increment/decrement by 0.1, etc.**
 
-[Online example in CodePen](https://codepen.io/w3devcampus/pen/GJrQzP):  (try changing the attribute values, use step=\"any\" and try float values, etc).
+<a href="https://codepen.io/w3devcampus/pen/GJrQzP):">Online example in CodePen</a> try changing the attribute values, use step=\"any\" and try float values, etc).
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 257.  (xxx) ------------------->
@@ -15338,40 +15365,69 @@ Quantity (between 0 and 500, should be a multiple of 5 otherwise it\'s invalid):
 
 <h4>Source code:</h4>
 ```
-1.  \<!DOCTYPE html\>
-2.  \....
-3.  \<style\>
+1.  <!DOCTYPE html>
+2.  ....
+3.  <style>
 4.  #number:invalid {
 5.  background-color:pink;
-6.  **}**
+6.  }
 7.  #number:valid {
 8.  background-color:lightGreen;
-9.  **}**
+9.  }
 10. </style>
 11. </head>
 12. <body>
 13. Example of <code><input type=number></code>:<p>
-14. <label for="number">Quantity (between 0 and 500, should be a multiple of 5 otherwise it\'s invalid): \</label\>
-15. <input type=\"number\" id=\"number\" value=\"25\" min=\"0\" step=\"5\" max=\"500\"/\>
-16. <p\>
-17. Change the different values for attributes step, max, min, value. Don\'t forget to try step=\"any\" for float values\...
-18. </body\>
-19. </html\>
+14. <label for="number">Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid): </label>
+15. <input type="number" id="number" value="25" min="0" step="5" max="500"/>
+16. <p>
+17. Change the different values for attributes step, max, min, value. Don't forget to try step="any" for float values...
+18. </body>
+19. </html>
 ```
 
 <h3 id="ch5-4-6">5.4.6 "range"</h3>
 
-![zipper with funny label input type=range](./images/image258.jpeg){width="5.0in" height="1.498931539807524in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 258.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image258.jpeg?raw=true"
+   width="50%"
+   alt="zipper with funny label input type=range" />
+</p>
 
 This input type renders as a slider. It accepts the same attributes as the \<input type=\"number\"\> : min, max, step and value.
 
 Example of rendering on a desktop:
 
-![input type=range](./images/image259.jpeg){width="3.0in" height="0.8983048993875765in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 259.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image259.jpeg?raw=true"
+   width="30%"
+   alt="input type=range" />
+</p>
 
 And on mobile devices:
 
-![ios range input](./images/image260.png){width="2.0in" height="3.0in"}![input type=range android](./images/image261.jpeg){width="2.0in" height="3.5555555555555554in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 260.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image260.png?raw=true"
+   width="20%"
+   alt="ios range input" />
+</p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 261.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image261.jpeg?raw=true"
+   width="20%"
+   alt="input type=range android" />
+</p>
 
 <h4>Typical use</h4>
 
@@ -15383,7 +15439,14 @@ But most of the time, you will need a visual feedback that shows the current va
 
 [This online example on CodePen](https://codepen.io/w3devcampus/pen/BRMVGW) shows how to add a visual feedback using a very short JavaScript function and an \<output\> element. Just click and drag the small cursor of the slider (or use up and down arrow keys when the field has the focus):
 
-![](./images/image262.png){width="5.0in" height="3.1885586176727907in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 262.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image262.png?raw=true"
+   width="50%"
+   alt="" />
+</p>
 
 <h4>Source code:</h4>
 ```
@@ -15426,7 +15489,14 @@ But most of the time, you will need a visual feedback that shows the current va
 
 <h4>Snapping behavior and the step attribute</h4>
 
-![jumps + steps](./images/image263.jpeg){width="3.1041666666666665in" height="1.4791666666666667in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 263.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image263.jpeg?raw=true"
+   width="30%"
+   alt="jumps + steps" />
+</p>
 
 When you click and drag the slider, it \"jumps\" to some snap points corresponding to the integer values of the range defined by the min and max attributes. The \"size of the jumps\" depends on the value of the step attribute.
 
@@ -15449,7 +15519,14 @@ So, for accepting float values, it is necessary to use step=\"any\", or step eq
 
 Adding \"ticks\" to the range slider using a \<datalist\> element
 
-![complicated ticks on a rule](./images/image264.jpeg){width="4.416666666666667in" height="1.375in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 264.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image264.jpeg?raw=true"
+   width="45%"
+   alt="complicated ticks on a rule" />
+</p>
 
 Using the \<datalist\> element, it\'s possible to display \"ticks\" above the range slider, at given positions.
 ```
@@ -15535,7 +15612,14 @@ value=5 min=0, max=10 step=\"any\", ticks at 0, 5 and 10:  
 
 In this chapter, we go over the form attributes that have been introduced by HTML5.
 
-![html5 form attributes](./images/image265.jpeg){width="2.5in" height="1.8730883639545057in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 265.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image265.jpeg?raw=true"
+   width="25%"
+   alt="html5 form attributes" />
+</p>
 
 We have already seen the use of pseudo CSS classes used together with the input field and form validation (pattern attribute, input:invalid CSS rule). We also briefly looked at the use of the placeholder attributes for displaying a helper message in the input field.
 
