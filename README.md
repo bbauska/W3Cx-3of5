@@ -41,7 +41,7 @@
 ## [**Module 1: HTML5 Basics**](#ch1)
 >### 1.1 [**Introduction - Module 1**](#ch1-1-1)
 >### 1.2 [**From HTML1.0 to HTML5**](#ch1-2-1)
->### 1.3 [**New structural elements**](#ch1-3)
+>### 1.3 [**New structural elements**](#ch1-3=1)
 >### 1.4 [**Other elements and attributes**](#ch1-4-1)
 >### 1.5 [**Microdata**](#ch1-5-1)
 >### 1.6 [**Exercises**](#ch1-6-1)
@@ -1627,7 +1627,7 @@ header span {
 <h4>Use a &lt;nav&gt; for the navigation menu just below the header</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 15. image of the navigation menu (xx) ------------------------------>
+<!--------------------------- 15. image of the navigation menu (36) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image015.jpeg?raw=true"
@@ -1686,13 +1686,12 @@ nav span {
     color: #fff
 }
 ```
-
 <h4>A &lt;section&gt; for each month and an &lt;article&gt; for each post in the blog</h4>
 
 Now, we have one big \<section\> element that contains a set of \<article\> elements\...
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 16. image of sections that contain articles (xx) ------------------->
+<!--------------------- 16. image of sections that contain articles (37) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image016.jpeg?raw=true"
@@ -1704,40 +1703,40 @@ Now, we have one big \<section\> element that contains a set of \<article\> 
 <h4>HTML code:</h4>
 
 ```
-> <section>
->    <article>
->     ...
->    </article>
->    <article>
->     ...
->    </article>
->    <article>
->     ...
->    </article>
-> </section>
+<section>
+   <article>
+    ...
+   </article>
+   <article>
+    ...
+   </article>
+   <article>
+    ...
+   </article>
+</section>
 ```
 
 <b>And here is the CSS:</b>
 
 ```
-> section {
->    float: left;
->    padding: 35px 0;
->    position: relative;
->    width: 70%
-> }
-> section article {
->    margin: 0 50px 40px;
->    padding: 25px 0 0;
->    position: relative
-> }
-> section header {
->    font-size: 1em;
->    padding: 0;
-> }
-> section h2 {
->    font-size: 2.3em;
-> }
+section {
+   float: left;
+   padding: 35px 0;
+   position: relative;
+   width: 70%
+}
+section article {
+   margin: 0 50px 40px;
+   padding: 25px 0 0;
+   position: relative
+}
+section header {
+   font-size: 1em;
+   padding: 0;
+}
+section h2 {
+   font-size: 2.3em;
+}
 ```
 
 Note that the H2, article, article header, etc. will be styled using these rules.
@@ -1745,7 +1744,7 @@ Note that the H2, article, article header, etc. will be styled using these rules
 <h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------ 17. image of the header at the top of each article (xx) --------------------->
+<!------------------ 17. image of the header at the top of each article (37) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image017.jpeg?raw=true"
@@ -1794,11 +1793,11 @@ Example for the first blog article:
 Also note the way we included a figure using the new \"HTML5\" method, using a \<figure\>..\</figure\> element that embedded a \<img src=\.../\> element together with a \<figcaption\> element. 
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 18. image of figure and figcaption that embed an img (xx) ------------------->
+<!------------------ 18. image of figure and figcaption that embed an img (38) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image018.jpeg?raw=true"
-   alt="image of figure and figcaption that embed an img"
+   alt="Image of figure and figcaption that embed an img."
    width="65%" />
 &nbsp;
 <br/>
@@ -1827,16 +1826,16 @@ figcaption {
 }
 ```
 
-<h4>Use an &lt;aside&gt; element to display a tag cloud on the... side of the main content</h4>
+<h4>Use an &lt;aside&gt; element to display a tag cloud on the ... side of the main content</h4>
 
 After the long \<section\> element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, \"aside\"! This is done using - you already guessed it - an \<aside\> element:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
+<!---------------- 19. image of the tag cloud defined as an aside element (39) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image019.jpeg?raw=true"
-   alt="image of the tag cloud defined as an aside element"
+   alt="Image of the tag cloud defined as an aside element."
    width="25%" />
 &nbsp;
 <br/>
@@ -1881,14 +1880,14 @@ aside .tag-cloud {
 
 We used a float:right CSS rule to put the tag cloud on the right\... In a following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
 
-<h4><b>Here is the result:</b></h4>
+<h4>Here is the result:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
+<!---------------- 19. image of the tag cloud defined as an aside element (40) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image019.jpeg?raw=true"
-   alt="The aside tag cloud on the right"
+   alt="The aside tag cloud on the right."
    width="50%" />
 &nbsp;
 <br/>
@@ -1896,16 +1895,16 @@ We used a float:right CSS rule to put the tag cloud on the right\... In a foll
 <h4>Add a &lt;footer&gt; at the end of the blog</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 20. image of the tag cloud defined as an aside element (xx) ------------------->
+<!---------------- 20. image of the tag cloud defined as an aside element (40) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image020.jpeg?raw=true"
-   alt="image of the blog footer"
+   alt="Image of the blog footer."
    width="25%" />
 &nbsp;
 <br/>
 
-<h4>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below) after the tag cloud definition, to display a page footer:</h4>
+<h5>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below) after the tag cloud definition, to display a page footer:</h5>
 
 ```
 <html>
@@ -1938,7 +1937,7 @@ footer {
 <h4><b>And here is the result at the bottom of the page:</b></h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
+<!---------------- 19. image of the tag cloud defined as an aside element (41) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image019.jpeg?raw=true"
@@ -1947,12 +1946,12 @@ footer {
 &nbsp;
 <br/>
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 22. the resulting footer at the bottom of the page (xx) ------------------->
+<!------------------ 22. the resulting footer at the bottom of the page (41) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image022.jpeg?raw=true"
-   alt="image of the tag cloud defined as an aside element"
-   width="55%" />
+   alt="Image of the tag cloud defined as an aside element."
+   width="25%" />
 &nbsp;
 <br/>
 
@@ -1961,7 +1960,7 @@ footer {
 <h4>Can an &lt;article&gt; contain a &lt;section&gt;?</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 23. pictures of eisher hands (xx) ------------------->
+<!----------------------------- 23. pictures of eisher hands (41) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image023.jpeg?raw=true"
@@ -1975,7 +1974,6 @@ It may not be clear whether a \<section\> may contain one or several \<article
 <li>The <article> element was designed for stand-alone parts of a document that could eventually be syndicated in RSS streams.</li>
 <li> <section> elements are used to cut a logical part into subparts.</li>
 </ul>
-<br/>
 
 <b>An &lt;article&gt; may be cut into different &lt;section&gt; elements!</b>
 
@@ -2035,7 +2033,7 @@ Also note that we used in that example a \<footer\> element in the blog post.
 The new elements have been primarily designed to better structure the code of HTML pages such as those generated by blog or CMS software, however do not forget that they add new semantics and will be taken into account by :
 <ul>
 <li>Browsers natively or browsers' extensions, i.e. for automatically generating a table of contents, an outline view of the document, for applying default CSS rules to these elements, etc. See for example the <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx extension</a> (Chrome extension). More on that in the next section of the course.</li>
-<li>Text to speech: <a href="https://www.w3.org/WAI/perspective-videos/speech/"></a></li>
+<li>Text to speech: <a href="https://www.w3.org/WAI/perspective-videos/speech/"></a>w3.org</li>
 <li>Web crawlers, etc.</li>
 </ul>
 
@@ -2044,7 +2042,7 @@ You can use \<div\> elements in all cases where the proposed structural elemen
 This chart from the <a href="https://html5doctor.com/">HTML5 Doctor Web site</a> may help you decide whether or not to use a &lt;div&gt;:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 24.  (xx) ------------------->
+<!----------------------------- 24. html5 element flowchart (43) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image024.png?raw=true"
@@ -2075,7 +2073,7 @@ Since the very beginning, HTML has had heading elements: \<h1\>\...\<h6\>. Thes
 
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define an outline of the document. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 25.  (xx) ------------------->
+<!------------------ 25. example hg headings without structural elements (44) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image025.png?raw=true"
@@ -2099,22 +2097,20 @@ The HTML5 specification says that \"each sectioning element potentially has a he
 \<h1\>\...\<h6\> are called <b>headings</b>, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
 
 ```
-> <body>
->     <h1>Title of my document</h1>
->     ...
-> </body>
-```
+<body>
+    <h1>Title of my document</h1>
+    ...
+</body>
 ... defines the header of a section <i>implicitly</i>, while:
+<body>
+   ...
+   <section>
+      <h1>Title of my section</h1>
+      ...
+   </section>
+</body>
 ```
-> <body>
->    ...
->    <section>
->       <h1>Title of my section</h1>
->       ...
->    </section>
-> </body>
-```
-<h4>... defines the heading of the explicit section (its parent element &lt;section&gt;).</h4>
+<h4>... defines the heading of the <i>explicit section</i> (its parent element &lt;section&gt;).</h4>
 
 <h4>Use multiple headings of different rank with sectioning content</h4>
 
@@ -2144,7 +2140,7 @@ Let\'s clarify this by looking at some example code:
 The corresponding outline is:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 26. outline of previous example (xx) ------------------->
+<!---------------------------- 26. outline of previous example (45) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image026.jpeg?raw=true"
@@ -7987,7 +7983,6 @@ We slightly modified the function that draws the monster:
 <li>We restored it at the end (BEST PRACTICE).</li>
 </ul>
 
-<~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 132. laptop showing unicorn validator (06) --------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -8914,13 +8909,18 @@ Your browser does not support the canvas tag.</canvas>
 21. }
 ```
 
-*Lines 12-18* draw 1000 rectangles of random sizes in immediate mode. We also measure the time using the usual console.time(name_of_timer) and console.timeEnd(name_of_timer) that will write in the browser console the time elapsed. Note that console.time(\...) and console.timeEnd(\...) display results only in the browser\'s console, not in the JSBin console.
+<i>Lines 12-18</i> draw 1000 rectangles of random sizes in immediate mode. We also measure the time using the usual console.time(name_of_timer) and console.timeEnd(name_of_timer) that will write in the browser console the time elapsed. Note that console.time(\...) and console.timeEnd(\...) display results only in the browser\'s console, not in the JSBin console.
 
 On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawing all these rectangles:
 
-
-********************************** image ***********************************
-![Image of the devtool console that shows random time values. The average time elapsed is around 4s](./images/image134.jpeg){width="6.5in" height="1.3833333333333333in"}
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 134.  (xxx) --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image134.jpeg?raw=true"
+   alt="Image of the devtool console that shows random time values. The average time elapsed is around 4s."
+   width="65%" />
+</p>
 
 <h4>Path mode</h4>
 
@@ -15960,86 +15960,61 @@ Source code extract:
 
 8.  /\>
 
-### 5.5.7 min, max and step
+<h3 id-"ch5-5-7">5.5.7 min, max and step</h3>
 
 These attributes are useful for several input types such as number, range, date and  time (and other variants).
 
 The min and max attributes are used to set ranges to input fields that accept numerical values or a date/time.
 
-**Their detailed use with these input fields have already been explained in section 5.4 of this course dedicated to these particular input field types.**
+Their detailed use with these input fields have already been explained in section 5.4 of this course dedicated to these particular input field types.
 
-Typical use
-
-1.  \<input id=\"mydate\" name=\"mydate\"
-
-2.         type=\"date\"
-
-3.        ** min=\"2012-01-01\"**
-
-4.         **max=\"2013-01-01\"**
-
-5.         value=\"2012-01-01\"
-
-6.  /\>
-
+<h4>Typical use</h4>
+```
+1.  <input id="mydate" name="mydate"
+2.         type="date"
+3.        ** min="2012-01-01"**
+4.         **max="2013-01-01"**
+5.         value="2012-01-01"
+6.  />
 7.   
-
-8.  \<input name=\"time\" id=\"time\" type=\"time\"
-
-9.          **min=\"09:00\"**
-
-10.         **max=\"17:00\"**
-
-11.         value=\"12:00\"
-
-12. /\>
-
+8.  <input name="time" id="time" type="time"
+9.          **min="09:00"**
+10.         **max="17:00"**
+11.         value="12:00"
+12. />
 13.  
+14. <input id="range" name="range" type="range" **min="0" max="100" step="5"**/>
+```
 
-14. \<input id=\"range\" name=\"range\" type=\"range\" **min=\"0\" max=\"100\" step=\"5\"**/\>
-
-### 5.5.8 multiple
+<h3 id="ch5-5-8">5.5.8 multiple</h3>
 
 The multiple attribute is used with email and file input types. It\'s a Boolean attribute, so here are the different syntax possibilities:
-
--   \<input type=\"email\|file\" multiple\>
-
--   \<input type=\"email\|file\" multiple=\"multiple\"\>
-
--   \<input type=\"email\|file\" multiple=\"\"\>
+<ul>
+<li> &lt;input type="email&gt;file" multiple&gt;</li>
+<li> &lt;input type="email&gt;file" multiple="multiple"&gt;</li>
+<li> &lt;input type="email&gt;file" multiple=""&gt;</li>
+</ul>
 
 With \<input type=\"email\"\>
 
-With the \<input type=\"email\"\>, this attribute enables the user to enter *a set of addresses, separated by a comma* instead of a single address. Entering several addresses will keep the input field *valid*.
+With the \<input type=\"email\"\>, this attribute enables the user to enter a set of addresses, separated by a comma instead of a single address. Entering several addresses will keep the input field valid.
 
-[Online example at JSBin ](https://jsbin.com/mexirif/1/edit?html,output)
+<a href="https://jsbin.com/mexirif/1/edit?html,output">Online example at JSBin</a>
 
 Or try it below in your browser: type in a list of email addresses separated by a comma, then look at the input field background color (pink = invalid, green = valid), and then submit:
 
 This form uses: \<input type=\"email\" name=\"myemail\" **multiple**\>
 
-Top of Form
-
-With the multiple attributeEnter several email addresses: Submit
-
-Bottom of Form
-
-This form does not use the multiple attribute:
-
-Top of Form
-
-Without the multiple attributeEnter several email addresses: Submit
-
-Bottom of Form
+******************* image here ***********************
 
 Complete source code:
 ```
-1.  \<!DOCTYPE html\>
-2.  \<html lang=\"en\"\>
-3.     \<head\>
-4.        \<meta charset=\"utf-8\"\>
-5.        \<title\>Jsbin\</title\>
-6.        \<style\>
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.     <head>
+4.        <meta charset="utf-8">
+5.        <title>Jsbin</title>
+6.        <style>
 7.           input:invalid {
 8.           background-color: lightPink;
 9.           }
@@ -16050,35 +16025,35 @@ Complete source code:
 14.          border:1px solid;
 15.          padding:20px;
 16.          }
-17.       \</style\>
-18.    \</head\>
+17.       </style>
+18.    </head>
 19. 
-20.    \<body\>
-21.       \<p\>This form uses: \<code\>\<input type=\"email\" name=\"myemail\" \<b\>multiple\</b\>>\</code\>\</p\>
+20.    <body>
+21.       <p>This form uses: <code><input type="email" name="myemail" <b>multiple</b>></code></p>
 22. 
-23.       \<form\>
-24.          \<fieldset\>
-25.             \<legend\>With the multiple attribute \</legend\>
-26.             \<label\>Enter several email addresses: \</label\>
-27.             \<input type=\"email\" name=\"myemail\" title=\"you can enter multiple emails addresses, separated by a comma\" multiple/\>
-28.             \<button\>Submit\</button\>
-29.          \</fieldset\>
-30.       \</form\>
-31.    \<p\>
-32.       \<p\>This form does not use the multiple attribute:\</p\>
+23.       <form>
+24.          <fieldset>
+25.             <legend>With the multiple attribute </legend>
+26.             <label>Enter several email addresses: </label>
+27.             <input type="email" name="myemail" title="you can enter multiple emails addresses, separated by a comma" multiple/>
+28.             <button>Submit</button>
+29.          </fieldset>
+30.       </form>
+31.    <p>
+32.       <p>This form does not use the multiple attribute:</p>
 33. 
-34.       \<form\>
-35.          \<fieldset\>
-36.             \<legend\>Without the multiple attribute \</legend\>
-37.             \<label\>Enter several email addresses: \</label\>
-38.             \<input type=\"email\" name=\"myemail\" title=\"only one address please!\"/\>
-39.             \<button\>Submit\</button\>
-40.          \</fieldset\>
-41.       \</form\>
-42.    \<p\>
-43.       Type in a list of email addresses separated by a comma. Look at the input field background color (pink = invalid, green = valid), try to submit. \</p\>
-44.    \</body\>
-45. \</html\>
+34.       <form>
+35.          <fieldset>
+36.             <legend>Without the multiple attribute </legend>
+37.             <label>Enter several email addresses: </label>
+38.             <input type="email" name="myemail" title="only one address please!"/>
+39.             <button>Submit</button>
+40.          </fieldset>
+41.       </form>
+42.    <p>
+43.       Type in a list of email addresses separated by a comma. Look at the input field background color (pink = invalid, green = valid), try to submit. </p>
+44.    </body>
+45. </html>
 46.  
 ```
 
@@ -16102,13 +16077,13 @@ Example without the multiple attribute:
 
 Use the standard key modifiers (shift, control, command) for selecting multiple files when the file chooser dialog popup.
 
-### 5.5.9 a warning
+h3 id="ch5-5-9">5.5.9 a warning</h3>
 
 In the following pages, we present a set of rarely used attributes introduced by HTML5. 
 
 You might just glance at them and/or try the examples. The next pages cover their usage and you are welcome to use them for future reference (for those of you who like to cover the topics completely).
 
-### 5.5.10 formaction and formmethod
+<h3 id="ch5-5-10">5.5.10 formaction and formmethod</h3>
 
 These attributes are targeted to the \<input type=\"submit\"\> input fields. They are rarely used.
 ```
@@ -16120,7 +16095,7 @@ When you use an \<input type=\"submit\"\> field with the formaction attribut
 
 The formmethod attribute does the same with the POST/GET method attribute of the form. If an \<input type=\"submit\"\> has a formmethod attribute, it overrides the value of the method attribute of the form.
 
-### Typical use
+<h4>Typical use</h4>
 ```
 1.  <form action="post.php" method="post">
 2.       <input type="submit"
@@ -16130,9 +16105,9 @@ The formmethod attribute does the same with the POST/GET method attribute of
 6.  </form>
 ```
 
-*Line 3* overrides the values set in *line 1*. 
+<i>Line 3</i> overrides the values set in <i>line 1</i>. 
 
-### Examples
+<h4>Examples</h4>
 
 Here are two online examples at JSBin:
 
@@ -16146,15 +16121,14 @@ The first shows a form with two submit buttons: 
 
 -   the second button submits to another action specified by its formaction attribute.
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 272.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image272.png?raw=true"
    alt=""
-   width="35%">
+   width="40%">
 &nbsp;
 <br/>
-![](./images/image272.png){width="4.0in" height="1.6570155293088364in"}
 
 The second example shows a form with two submit buttons:
 
@@ -16181,42 +16155,32 @@ This atrribute allows the submission of a form even if it contains  *invalid*�
 In general, such forms have two submit buttons, one with the formnovalidate attribute set to a non null value and one without.
 
 Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,output)):
+```
+1.  <form action="form.php">
+2.     <fieldset>
+3.       <legend>Example of formnovalidate attribute</legend>
+4.       <label for="email">E-mail:</label>
+5.       <input type="email" name="email" id="email"/><br>
+6.       <input type="submit" value="Submit" /><br>
+7.       <input type="submit"
+8.              formnovalidate 
+9.              value="Submit without validation" />
+10. </fieldset>
+11. </form>
+```
 
-1.  \<form action=\"form.php\"\>
-
-2.     \<fieldset\>
-
-3.       \<legend\>Example of formnovalidate attribute\</legend\>
-
-4.       \<label for=\"email\"\>E-mail:\</label\>
-
-5.       \<input type=\"email\" name=\"email\" id=\"email\"/\>\<br\>
-
-6.       \<input type=\"submit\" value=\"Submit\" /\>\<br\>
-
-7.       **\<input type=\"submit\"**
-
-8.              **formnovalidate** 
-
-9.              **value=\"Submit without validation\" /\>**
-
-10. \</fieldset\>
-
-11. \</form\>
-
-### 5.5.12 formtarget
+<h3 id="ch5-5-12">5.5.12 formtarget</h3>
 
 The formtarget attribute is targeted to the \<input type=\"submit\"\> input fields. This attribute is rarely used.
 
 This attribute\'s value indicates where the response from the form submission should be displayed. 
 
-### Typical use
-
-1.  \<input type=\"submit\"
-
-2.         **formtarget=\"\_blank\"**
-
-3.         value=\"Submit but show results in a new window/tab\"\>
+<h4>Typical use</h4>
+```
+1.  <input type="submit"
+2.         **formtarget="_blank"**
+3.         value="Submit but show results in a new window/tab">
+```
 
 Possible values for the formtarget attributes are:
 
@@ -16230,48 +16194,34 @@ Possible values for the formtarget attributes are:
 
 -   framename: the response is displayed in a named iframe
 
-### Complete example
+<h4>Complete example</h4>
 
-[Online example at JSBin ](https://jsbin.com/godice/2/edit?html,output)or try it in your browser below:
+<a href="https://jsbin.com/godice/2/edit?html,output">Online example at JSBin</a> or try it in your browser below:
 
-Top of Form
 
 Given name: ![](./images/image269.wmf)\
 Family name: ![](./images/image269.wmf)\
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 274. wmf by microoft so you know it's absolute bullshit (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
-&nbsp;
-<br/>
-![](./images/image274.wmf) ![](./images/image275.wmf)
+<!-- ![](./images/image274.wmf) ![](./images/image275.wmf)
+-->
 
 Source code:
-
+```
 1.  \<form action=\"defaultAction.php\"\>
-
 2.       \<label for=\"givenName\"\>Given name:\</label\>
-
 3.       \<input type=\"text\" name=\"givenName\" id=\"givenName\"\>\<br\>
-
 4.       \<label for=\"familyName\"\>Family name:\</label\>
-
 5.       \<input type=\"text\" name=\"familyName\" id=\"familyName\"\>\<br\>
-
 6.       \<input type=\"submit\" value=\"Submit as usual\"\>
-
 7.       \<input type=\"submit\"
-
 8.             **formtarget=\"\_blank\"**
-
 9.             value=\"Submit but show results in a new window/tab\"\>
-
 10. \</form\>
+```
 
-### 5.5.13 formenctype
+<h3 id="ch5-5-13">5.5.13 formenctype</h3>
 
 A word about the enctype attribute of the \<form\> element
 
@@ -16279,53 +16229,39 @@ The enctype attribute existed before HTML5. It is often used together with for
 
 [Online example at JSBin](https://jsbin.com/magexat/3/edit?html,output):
 
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.    \<head\>
-
 4.      \<meta charset=\"utf-8\"\>
-
 5.      \<title\>Jsbin\</title\>
-
 6.    \</head\>
-
 7.    \<body\>
-
 8.      \<form action=\"default.php\" method=\"post\" enctype=\"multipart/form-data\"\>
-
 9.        Given name: \<input type=\"text\" name=\"gname\"\>\<br\>
-
 10.       Family name: \<input type=\"text\" name=\"fname\"\>\<br\>
-
 11.       \<input type=\"submit\" value=\"Submit\"\>
-
 12.     \</form\>
-
 13.   \</body\>
-
 14. \</html\>
+```
 
 Note that when you send form content using Ajax, this attribute is not needed, as you will specify the type of data sent to the remote server in JavaScript, using the [FormData object](https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects).
 
-### As an attribute of the \<input type=\"submit\" enctype=\...\> element
+<h4>As an attribute of the &lt;input type="submit" enctype=...&gt; element</h4>
 
 Since HTML5, this attribute can also be used in \<input type=\"submit\"\> input fields.
 
 If an \<input type=\"submit\"\> field has this attribute, then, **when submitted using method=POST**, the browser will send the form content encoded with the method specified by the formenctype attribute. And this overrides the value of the enctype attribute specified in the \<form enctype=\...\> element (or its default value, if not present).
 
-### Typical use
-
-1.  \<form action=\"defaultAction.php\"\>
-
-2.     \...
-
-3.     **\<input type=\"submit\" formenctype=\"multipart/form-data\"**
-
-4.            **value=\"Submit as Multipart/form-data\"\>**
-
-5.  \</form\>
+<h4>Typical use</h4>
+```
+1.  <form action="defaultAction.php">
+2.     ...
+3.     <input type="submit" formenctype="multipart/form-data"
+4.            value="Submit as Multipart/form-data">
+5.  </form>
+```
 
 The possible values for this field are:
 
@@ -16340,11 +16276,11 @@ The possible values for this field are:
 [Try this online example at JSBin](https://jsbin.com/lokukam/4/edit?html,output)
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!---------------------- 276. xample of use of the formenctype attribute (xx) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image276.png?raw=true"
+   alt="Example of use of the formenctype attribute."
    width="35%">
 &nbsp;
 <br/>
@@ -16357,7 +16293,7 @@ Source code:
 2.  <html lang="en">
 3.    <head>
 4.      <meta charset="utf-8">
-5.      <title\>Jsbin</title>
+5.      <title>Jsbin</title>
 6.    </head>
 7.    <body>
 8.      <form action="defaultAction.php" method="post"
@@ -16381,33 +16317,31 @@ Source code:
 If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,output) standalone mode (click the black arrow on the top right of the output tab, in JSBin), you should see this:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 277. jsbin screenshoit of the above example (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image277.png?raw=true"
+   alt="JSBin screenshot of the above example."
+   width="50%">
 &nbsp;
 <br/>
-![js bin screenshot of the above example](./images/image277.png){width="5.0in" height="2.931089238845144in"}
 
 Then, open the devtools and go to the \"Network\" tab, click on the POST request. Once done, click on the right on the \"Header\" tab to see the HTTP headers, and scroll down, you should see the form-data entries in the header, like in this screenshot:
 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 278.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image278.png?raw=true"
    alt=""
-   width="35%">
+   width="50%">
 &nbsp;
 <br/>
-![](./images/image278.png){width="5.0in" height="3.4780982064741908in"}
 
 And if you start again and click on the left submit button, the one without the formenctype attribute, you should see that the form content has been submitted \"normally\" (default value is \"urlencoded\", spaces are replaced by \"+\", etc.). Here is a screenshot of what you should see:
 
-<h3 id="ch5-6">5.6.1 HTML5 Forms Elements</h3>
+<h3 id="ch5-6-1">5.6.1 HTML5 Forms Elements</h3>
 
 Let\'s look at the HTML5 elements related to forms (specifically: \<datalist\>, \<output\>, \<meter\>  and \<progress\> elements).
 
@@ -16442,15 +16376,14 @@ Let\'s look at the HTML5 elements related to forms (specifically: \<datalist\>,
 The output element represents the result of a computation or user action. You can see it as a \"specialized \<div\> or \<span\>\" for displaying interactive results.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!--------------------------- 279. example of output element use (xx) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image279.jpeg?raw=true"
+   alt="Example of output element use."
+   width="30%">
 &nbsp;
 <br/>
-![example of output element use](./images/image279.jpeg){width="3.0in" height="0.7894739720034996in"}
 
 Typical use / interactive examples
 
@@ -16493,14 +16426,14 @@ Bottom of Form
 Source code:
 
 ```
-1.  \<form \>
-2.     \<input name=\"a\" value=\"50\" type=\"range\"
-3.            oninput=\"x.value = a.valueAsNumber + b.valueAsNumber;
-4.            y.value = this.value;\"/\>
-5.     \<output id=\"y\"\>50\</output\> +
-6.     \<input name=\"b\" value=\"50\" type=\"number\" /\> =
-7.     \<output name=\"x\" id=\"x\" for=\"a b\"\>\</output\>
-8.  \</form\>
+1.  <form >
+2.     <input name="a" value="50" type="range"
+3.            oninput="x.value = a.valueAsNumber + b.valueAsNumber;
+4.            y.value = this.value;"/>
+5.     <output id="y">50</output> +
+6.     <input name="b" value="50" type="number" /> =
+7.     <output name="x" id="x" for="a b"></output>
+8.  </form>
 ```
 
 HTML5 has introduced new input field properties: valueAsNumber and valueAsDate.The last example is similar to the previous one except that we use an addition instead of a multiplication.
@@ -16509,68 +16442,58 @@ As input field values are considered as strings by JavaScript, using x.value = 
 
 This is why we used the valueAsNumber property also introduced by HTML5 for some input fields such as \<input type=\"range\"\> and \<input type=\"number\"\>, we also encountered the valueAsDate properties when we studied \<input type=\"date\"\>.
 
-<h3 id="ch5-6-3">5.6.3 <meter></h3>
+<h3 id="ch5-6-3">5.6.3 &lt;meter&gt;</h3>
 
 The \<meter\> element displays colored bars to represent numeric values.
 
 It can be useful to display a colored gauge to show disk usage, to highlight the relevance of a query result, or the fraction of a voting population that favours a particular candidate, etc. This element is often used with the \<input type=\"range\"\> field as an instant feedback indicator.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 280.  (xx) ------------------------------->
+<!----------------------------- 280. picture of a meter example (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image280.jpeg?raw=true"
-   alt=""
+   alt="Picture of a meter example."
    width="50%">
 &nbsp;
 <br/>
-![picture of a meter example](./images/image280.jpeg){width="5.0in" height="0.8374792213473315in"}
 
 The \<meter\> element should not be used to indicate progress. You should instead use a \<progress\> element.
 
-### Typical use
-
+<h4>Typical use</h4>
+```
 1.  Storage space used: **\<meter value=75 min=0 low=20 high=80 max=100 optimum=50\>\</meter\>**
+```
 
 The \<meter\> element uses the easy-to-understand value, min, max, low, high and optimum attributes. The optimum attribute, along with min, low, high and max attributes will affect the color of the bar, and of course the constraint min \< low \< high \< max should be respected.
 
 More explanations about the colors and the meaning of the optimum attribute will come further in this lesson.
 
-### Interactive example
+<h4>Interactive example</h4>
 
-[Try the next example online at JSBin](https://jsbin.com/jumahox/1/edit?html,output) or just play with it in your browser by dragging the slider below:
+<a href="https://jsbin.com/jumahox/1/edit?html,output">Try the next example online at JSBin</a> or just play with it in your browser by dragging the slider below:
 
 \<meter value=75 min=0 low=20 high=80 max=100 optimum=19\>\</meter\>
 
 Grades:  
 
-Source code of the example:
-
-1.  \<p\>Grades: **\<meter id=\"meter2\" value=\"75\" min=\"0\" low=\"20\" high=\"80\" max=\"100\"\>\</meter\>**
-
+<h4>Source code of the example:</h4>
+```
+1.  <p>Grades: **<meter id="meter2" value="75" min="0" low="20" high="80" max="100"></meter>**
 2.  
-
-3.  \<input min=\"0\" max=\"100\" value=\"75\" id=\"meter2range\"
-
-4.         oninput=\"effect(\'meter2\', \'meter2range\')\" type=\"range\"\>
-
-5.  \<output id=\"meter2val\" for=\"meter2range\"\>\</output\>\</p\>
-
-6.  \<script\>
-
+3.  <input min="0" max="100" value="75" id="meter2range"
+4.         oninput="effect('meter2', 'meter2range')" type="range">
+5.  <output id="meter2val" for="meter2range"></output></p>
+6.  <script>
 7.  function effect(meter, meterrange) {
-
 8.       var currVal = document.getElementById(meterrange).value;
-
 9.       document.getElementById(meter).value = currVal;
-
-10.      document.getElementById(meter+ \"val\").innerHTML = currVal;
-
+10.      document.getElementById(meter+ "val").innerHTML = currVal;
 11. }
+12. </script>
+```
 
-12. \</script\>
-
-**Explanations:**
+<h4>Explanations:</h4>
 
 ![The link between the slider (an \<input type=range\>) and the meter element is done using an input event handler (oninput=\"effect(\...)\" line 4. The effect JavaScript function will change the current value of the \<meter\> element (line 9) and update the displayed html content of the \<output\> element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
 
@@ -16581,12 +16504,11 @@ The effect JavaScript function will change the current value of the \<meter\> el
 The color of the gauge changes depending on the attribute\'s values
 
 The optimum attribute indicates the optimal numeric value and gives an indication where along the range is considered preferable. Just think of the \<meter\> ranges as follows:
-
--   Range 1: between min and low
-
--   Range 2: between low and high
-
--   Range 3: between high and max
+<ul>
+<li>Range 1: between min and low</li>
+<li>Range 2: between low and high</li>
+<li>Range 3: between high and max</li>
+</ul>
 
 \... and depending on the value you set to optimum attribute, one of the ranges above becomes the \"good (optimum)\" range.
 
@@ -16595,19 +16517,19 @@ So in the previous example, with the value of the optimum attribute set to 19
 So, a \<meter\> element used for displaying blood pressure might be a good candidate for setting the optimum value to \"Range 2\", and a \<meter\> element used for displaying memory usage might be a good candidate for setting the optimum value to \"Range 1\", meaning that a low memory usage is \"good\".
 
 <h4>External resources</h4>
+<ul>
+<li>From MDN's Web  Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter">The HTML Meter element</a>.</li>
+<li>Good blog post: <a href="">How to use and style the meter element</a>.</li>
+</ul>
 
--   From MDN\'s Web  Docs: [The HTML Meter element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter)
-
--   Good blog post: [How to use and style the meter element](https://www.hongkiat.com/blog/style-html5-meter/)
-
-<h3 id="ch5-6-4">5.6.4 <progress></h3>
+<h3 id="ch5-6-4">5.6.4 &lt;progress&gt;</h3>
 
 The \<progress\> element is similar to \<meter\> but it is used for progress bars (i.e., the percentage of a file being uploaded, etc.):
 
 1.  \<progress id=pr value=50 min=0 max=100\>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 282. funny progress meme (339) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image282.jpeg?raw=true"
@@ -16623,7 +16545,7 @@ The browser calculates the percentage corresponding to the value, min and m
 If no value attribute is set, the progress bar will display an \"indeterminate look\", that may slightly vary among different browser implementations. 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 283.  (xx) ------------------------------->
+<!----------------------- 283. indetermined progres bar screenshot (339) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image283.jpeg?raw=true"
@@ -16634,19 +16556,20 @@ If no value attribute is set, the progress bar will display an \"indeterminate
 
 <h4>Typical use</h4>
 
-[Here is an online example at JSBin](https://jsbin.com/hebiju/edit?html,output), or try it below in your browser:  
+<a href="https://jsbin.com/hebiju/edit?html,output">Here is an online example at JSBin]</a>, or try it below in your browser:  
 
 This example uses some JavaScript to simulate a download progress by changing in real time the value attribute.
 
 The progress below is defined like this:
-
+```
 \<progress id=pr value=100 max=1000\>
+```
 
 Download progress: 
 
 <h4>Source code:</h4>
 ```
-1.  Download progress: **<progress id=pr value=100 min=0 max=1000></progress>**
+1.  Download progress: <progress id=pr value=100 min=0 max=1000></progress>
 2.  <script>
 3.     var i=0;
 4.     setInterval(function () {
@@ -16686,7 +16609,7 @@ We have already seen this element in action with different \<input\> elements,
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image227.jpeg?raw=true"
-   alt="estricted choice of color."
+   alt="Restricted choice of color-blue,green,red."
    width="15%">
 &nbsp;
 <br/>
@@ -16715,9 +16638,9 @@ It works with the new list attribute of input fields introduced by HTML5. **T
 
 The input field is related to the datalist that will propose auto-completion based on \<datalist\> values.
 
-### Typical use for auto-completion
+<h4>Typical use for auto-completion</h4>
 
-Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,output), or try it here in your browser (type the name of your favorite browser):
+Here is an <a href="(https://jsbin.com/tiqexel/1/edit?html,output">online example at JSBin</a>, or try it here in your browser (type the name of your favorite browser):
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 288.  (xx) ------------------------------->
@@ -16934,14 +16857,14 @@ Same example on FireFox, the title attribute is ignored:
 
 **We will show solutions in the last section of this week\'s course.**
 
-<h3 od=ch5-7-3">5.7.3 JavaScript Form Validation API</h3>
+<h3 id="ch5-7-3">5.7.3 JavaScript Form Validation API</h3>
 
 There is a JavaScript API for form validation. This API will let you use your own validation algorithm (i.e. check that you have entered the same password in two different input fields), and customize error messages. Also, together with some HTML/CSS/JavaScript you will be able to make your own message bubbles.
 
 ### Typical use
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- not local.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="https://jsbin.com/hovato/1/edit?html,output"
@@ -17018,34 +16941,26 @@ At *lines 18* and *20* we added an input event listener: each time a key i
 The validity property of input fields helps to get error details when the field is *invalid*. This property tests the different types of validation error.
 
 Here is how to get the validity property of an input field:
-
-1.  var input = document.getElementById(\'IdOfField\');
-
+```
+1.  var input = document.getElementById('IdOfField');
 2.  
-
-3.  var validityState_object =** input.validity;**
+3.  var validityState_object = input.validity;
+```
 
 The possible values for the validity property are: 
+<ul>
+<li>valueMissing</li>
+<li>typeMismatch</li>
+<li>patternMismatch</li>
+<li>tooLong</li>
+<li>rangeUnderflow</li>
+<li>rangeOverflow</li>
+<li>stepMismatch</li>
+<li>valid</li>
+<li>customError</li>
+</ul>
 
--   valueMissing 
-
--   typeMismatch
-
--   patternMismatch
-
--   tooLong
-
--   rangeUnderflow 
-
--   rangeOverflow
-
--   stepMismatch
-
--   valid 
-
--   customError
-
-Here is [an example at JSBin that shows how to test the different types of validation errors](https://jsbin.com/nalaxeg/1/edit?html,output), or you may try it here in your browser (enter bad values, too big, too small, enter invalid characters, etc.):
+Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JSBin that shows how to test the different types of validation errors</a>, or you may try it here in your browser (enter bad values, too big, too small, enter invalid characters, etc.):
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 292.  (xx) ------------------------------->
@@ -17054,98 +16969,59 @@ Here is [an example at JSBin that shows how to test the different types of vali
 <img src="/images/image292.png?raw=true"
    alt=""
    width="65%">
-&nbsp;
 <br/>
 
-**Source code:**
-
-1.  \<!DOCTYPE html\>
-
-2.  \<html lang=\"en\"\>
-
-3.  \...
-
-4.  \<body\>
-
+<h4>Source code:</h4>
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  ...
+4.  <body>
 5.  
-
-6.  \<script\>
-
+6.  <script>
 7.  function validate() {
-
-8.       var input = document.getElementById(\'b\');
-
-9.      ** var validityState_object = input.validity;**
-
+8.       var input = document.getElementById('b');
+9.       var validityState_object = input.validity;
 10.  
-
 11.      if(validityState_object.valueMissing) {
-
-12.          input.setCustomValidity(\'Please set an age (required)\');
-
+12.          input.setCustomValidity('Please set an age (required)');
 13.      } else if (validityState_object.rangeUnderflow) {
-
-14.          input.setCustomValidity(\'Your value is too low\');
-
+14.          input.setCustomValidity('Your value is too low');
 15.      } else if (validityState_object.rangeOverflow) {
-
-16.          input.setCustomValidity(\'Your value is too high\');
-
+16.          input.setCustomValidity('Your value is too high');
 17.      } else if (validityState_object.typeMismatch) {
-
-18.          input.setCustomValidity(\'Type mismatch\');
-
+18.          input.setCustomValidity('Type mismatch');
 19.      } else if (validityState_object.tooLong) {
-
-20.          input.setCustomValidity(\'Too long\');
-
+20.          input.setCustomValidity('Too long');
 21.      } else if (validityState_object.stepMismatch) {
-
-22.          input.setCustomValidity(\'stepMismatch\');
-
+22.          input.setCustomValidity('stepMismatch');
 23.      } else if (validityState_object.patternMismatch) {
-
-24.          input.setCustomValidity(\'patternMismatch\');
-
+24.          input.setCustomValidity('patternMismatch');
 25.      } else {
-
-26.          input.setCustomValidity(\'\');
-
+26.          input.setCustomValidity('');
 27.      }
-
 28. }
-
-29. \</script\>
-
-30. \<form class=\"myForm\"\>
-
-31. \<label for=\"b\"\>Enter a value between 10 and 20: \</label\>
-
+29. </script>
+30. <form class="myForm">
+31. <label for="b">Enter a value between 10 and 20: </label>
 32.  
-
-33. \<input type=\"number\" name=\"text\" id=\"b\" min=\"10\" max=\"20\"
-
-34.         required **oninput=\'validate();\'**/\>
-
-35. \<button\>Submit\</button\>
-
-36. \</form\>
-
+33. <input type="number" name="text" id="b" min="10" max="20"
+34.         required oninput='validate();'/>
+35. <button>Submit</button>
+36. </form>
 37. 
+38. </body>
+39. </html>
+```
 
-38. \</body\>
-
-39. \</html\>
-
-### The validationMessage property
+<h4>The validationMessage property</h4>
 
 It is also possible to get the validation error message, using the validationMessage property of input fields.
-
-1.  var input = document.getElementById(\'b\');
-
+```
+1.  var input = document.getElementById('b');
 2.   
-
-3.  console.log(\"Validation message = \" +** input.validationMessage**);
+3.  console.log("Validation message = " +** input.validationMessage**);
+```
 
 This is useful for making custom error messages. More about this topic in the next section of the course.
 
@@ -17175,11 +17051,11 @@ The techniques we have seen so far for enhancing HTML forms are powerful and pr
 
 **However, the validation API gives enough power to make your own validation behavior, overriding the default when necessary.**
 
-Here is [an adaptation of work presented at the developer.telerik.com Web site](https://www.telerik.com/blogs/building-html5-form-validation-bubble-replacements).  This link is really worth reading, as it presents different approaches and gives external references for those who would like to go further.
+Here is <a href="https://jsbin.com/povekur/1/edit?html,output">an adaptation of work presented at the developer.telerik.com Web site</a>.  This link is really worth reading, as it presents different approaches and gives external references for those who would like to go further.
 
-### Example that shows aggregation of error messages + overriding default behavior
+<h4>Example that shows aggregation of error messages + overriding default behavior</h4>
 
-Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output) or try it here in your browser: enter invalid values and submit with one or two invalid fields.
+Try the <a href="https://jsbin.com/povekur/1/edit?html,output">online example at JSBin,</a> or try it here in your browser: enter invalid values and submit with one or two invalid fields.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 294.  (xx) ------------------------------->
@@ -17191,217 +17067,114 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 &nbsp;
 <br/>
 
-**Complete source code:**
-
-1.  \<!DOCTYPE html\>
-
-2.  \<html lang=\"en\"\>
-
-3.  \<head\>
-
-4.     \<meta charset=\"utf-8\"\>
-
-5.     \<title\>Aggregating error messages\</title\>
-
-6.     \<style\>
-
+<h4>Complete source code:</h4>
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.     <meta charset="utf-8">
+5.     <title>Aggregating error messages</title>
+6.     <style>
 7.         input:invalid { background-color: lightPink;}
-
 8.         input:valid { background-color:lightGreen; }
-
 9.         input:required {border: 2px solid red;}
-
 10.        input:optional {border: 2px solid green;}
-
 11.  
-
 12.        .error-messages {
-
 13.            display: none;
-
 14.            margin: 0 10px 15px 10px;
-
 15.            padding: 8px 35px 8px 30px;
-
 16.            color: #B94A48;
-
 17.            background-color: #F2DEDE;
-
 18.            border: 2px solid #EED3D7;
-
 19.            border-radius: 4px;
-
 20.        }
-
 21.        fieldset {
-
 22.           border:1px solid;
-
 23.           padding:20px;
-
 24.        }
-
-25.     \</style\>
-
-26. \</head\>
-
-27. \<body\>
-
-28. \<form\>
-
-29.      \<fieldset\>
-
-30.          \<legend\>Submit with one or two invalid fields\</legend\>
-
+25.     </style>
+26. </head>
+27. <body>
+28. <form>
+29.      <fieldset>
+30.          <legend>Submit with one or two invalid fields</legend>
 31. 
-
-32.          \<ul class=\"error-messages\"\>\</ul\>
-
+32.          <ul class="error-messages"></ul>
 33. 
-
-34.          \<label for=\"name\"\>Name:\</label\>
-
-35.          \<input id=\"name\" name=\"name\" required\>
-
-36.          \<p\>
-
-37.          \<label for=\"email\"\>Email:\</label\>
-
-38.          \<input id=\"email\" name=\"email\" type=\"email\" required\>
-
-39.          \<p\>
-
-40.          \<button\>Submit\</button\>
-
-41.      \</fieldset\>
-
-42. \</form\>
-
+34.          <label for="name">Name:</label>
+35.          <input id="name" name="name" required>
+36.          <p>
+37.          <label for="email">Email:</label>
+38.          <input id="email" name="email" type="email" required>
+39.          <p>
+40.          <button>Submit</button>
+41.      </fieldset>
+42. </form>
 43.  
-
-44. \<script\>
-
+44. <script>
 45.     function replaceValidationUI(form) {
-
 46.        // Suppress the default bubbles
-
-47.           form.addEventListener(\"invalid\", function (event) {
-
+47.           form.addEventListener("invalid", function (event) {
 48.           event.preventDefault();
-
 49.        }, true);
-
 50.  
-
 51.        // Support Safari, iOS Safari, and the Android browser --- each of which
-
 52.        // do not prevent form submissions by default
-
-53.        form.addEventListener(\"submit\", function (event) {
-
+53.        form.addEventListener("submit", function (event) {
 54.           if (!this.checkValidity()) {
-
 55.              event.preventDefault();
-
 56.           }
-
 57.        });
-
 58.  
-
 59.        // Container that holds error messages. By default it has a CSS
-
 60.        // display:none property
-
-61.        var errorMessages = form.querySelector(\".error-messages\");
-
+61.        var errorMessages = form.querySelector(".error-messages");
 62.  
-
-63.        var submitButton = form.querySelector(\"button:not(\[type=button\]),
-
-64.                                               input\[type=submit\]\");
-
+63.        var submitButton = form.querySelector("button:not([type=button]),
+64.                                               input[type=submit]");
 65.  
-
-66.        submitButton.addEventListener(\"click\", function (event) {
-
-67.            var invalidFields = form.querySelectorAll(\"input:invalid\");
-
-68.            var listHtml = \"\";
-
-69.            var errorMessagesContainer = form.querySelector(\".error-messages\");
-
+66.        submitButton.addEventListener("click", function (event) {
+67.            var invalidFields = form.querySelectorAll("input:invalid");
+68.            var listHtml = "";
+69.            var errorMessagesContainer = form.querySelector(".error-messages");
 70.            var label;
-
 71.  
-
-72.            // Get the labels\' values of their name attributes + the validation error
-
+72.            // Get the labels' values of their name attributes + the validation error
 73.            // message of the corresponding input field using the validationMessage
-
 74.            // property of input fields
-
-75.            // We build a list of \<li\>\...\</li\> that we add to the error message container
-
-76.            for (var i = 0; i \< invalidFields.length; i++) {
-
-77.                label = form.querySelector(\"label\[for=\" + invalidFields\[ i \].id + \"\]\");
-
-78.                listHtml += \"\<li\>\" +
-
+75.            // We build a list of <li>...</li> that we add to the error message container
+76.            for (var i = 0; i < invalidFields.length; i++) {
+77.                label = form.querySelector("label[for=" + invalidFields[ i ].id + "]");
+78.                listHtml += "<li>" +
 79.                            label.innerHTML +
-
-80.                            \" \" +
-
-81.                            invalidFields\[ i \].validationMessage +
-
-82.                            \"\</li\>\";
-
+80.                            " " +
+81.                            invalidFields[ i ].validationMessage +
+82.                            "</li>";
 83.            }
-
 84.  
-
 85.            // Update the list with the new error messages
-
 86.            errorMessagesContainer.innerHTML = listHtml;
-
 87.  
-
 88.            // If there are errors, give focus to the first invalid field and show
-
 89.            // the error messages container by setting its CSS property display=block
-
-90.            if (invalidFields.length \> 0) {
-
-91.               invalidFields\[ 0 \].focus();
-
-92.               errorMessagesContainer.style.display = \"block\";
-
+90.            if (invalidFields.length > 0) {
+91.               invalidFields[ 0 ].focus();
+92.               errorMessagesContainer.style.display = "block";
 93.            }
-
 94.        });
-
 95.    }
-
 96.  
-
 97.    // Replace the validation UI for all forms
-
-98.    var forms = document.querySelectorAll(\"form\");
-
+98.    var forms = document.querySelectorAll("form");
 99. 
-
-100.    for (var i = 0; i \< forms.length; i++) {
-
-101.        replaceValidationUI(forms\[ i \]);
-
+100.    for (var i = 0; i < forms.length; i++) {
+101.        replaceValidationUI(forms[ i ]);
 102.    }
-
-103. \</script\>
-
-104. \</body\>
-
-105. \</html\>
+103. </script>
+104. </body>
+105. </html>
+```
 
 Explanations:
 
@@ -17421,7 +17194,7 @@ Explanations:
 
 -   *Lines 90-93*: The focus is given to the first invalid field that shows an error message.
 
-<h3 id="6-1-1">6.1.1 Video Intro -- Module 6</h3>
+<h3 id="ch6-1-1">6.1.1 Video Intro -- Module 6</h3>
 
 Final week!
 
@@ -17435,7 +17208,7 @@ Finally, we will look at the geolocation API that is useful for locating the per
 
 Instead of typing the zip code, entering the city, entering the country, you can guess that automatically and propose the form that is already filled with the address. I really enjoyed teaching you this HTML5 basic course and I\'m looking forward to meeting you the next HTML5 part-2 course that would address more advanced topics
 
-<h3 id="6-1-2">6.1.2 HTML5 JavaScript APIs</h3>
+<h3 id="ch6-1-2">6.1.2 HTML5 JavaScript APIs</h3>
 
 We have already studied some of the HTML5 JavaScript APIs, including:
 
@@ -17453,11 +17226,12 @@ This week, we will look at some of the most useful APIs. Others will be covered 
 
 -   **The File API, that enables Web applications to work with local files**. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.
 
+
 > ![you are here sign](./images/image295.jpeg){width="3.125in" height="1.6354166666666667in"}
 
 -   **The Geolocation API for obtaining data such as longitude, latitude, altitude (when available), and speed**. You will learn how to write applications in combination with interactive maps. You will also learn how to guess the address of a user, for example for pre-filling a registration form with the city, country, and zip code that corresponds with the current location.
 
-## 6.2.1 The Web storage API
+<h3 id="ch6-2-1">6.2.1 The Web storage API</h3>
 
 The Web storage API introduces \"two related mechanisms, similar to HTTP session cookies, for storing structured data on the client side\".
 
@@ -17482,29 +17256,20 @@ For convenience, we will mainly illustrate the localStorage object. Just chang
 
 localStorage is a simple key-value store, in which the keys and values are strings. There is only one store per domain. This functionality is exposed through the globally available localStorage object. The same applies to sessionStorage.
 
-**Example:**
-
+<h4>Example:</h4>
+```
 1.  // Using localStorage
-
 2.  
-
 3.  // store data
-
-4.  localStorage.lastName = \"Bunny\";
-
-5.  localStorage.firstName = \"Bugs\";
-
-6.  localStorage.location = \"Earth\";
-
+4.  localStorage.lastName = "Bunny";
+5.  localStorage.firstName = "Bugs";
+6.  localStorage.location = "Earth";
 7.  
-
 8.  // retrieve data
-
 9.  var lastName = localStorage.lastName;
-
 10. var firstName = localStorage.firstName;
-
 11. var location = localStorage.location;
+```
 
 This data is located in a store attached to the origin of the page. We created[ a JSBin example in which we included the above code](https://jsbin.com/povuqa/1/edit).
 
@@ -17514,7 +17279,7 @@ Once opened in your browser, the JavaScript code is executed. With the browser d
 <!----------------------------- 00.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image297.jpeg?raw=true"
    alt=""
    width="35%">
 &nbsp;
@@ -19657,4 +19422,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-18-2022 6:09am</i></b></h3>
+<h3><b><i>07-19-2022 15:51 zulu</i></b></h3>
