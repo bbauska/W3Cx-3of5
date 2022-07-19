@@ -483,7 +483,7 @@ Web accessibility addresses all disabilities, including hearing, learning and co
 <li><i>Text alternatives</i> for people with visual disabilities and who are using screen readers;</li>
 </ul>
 
-<h4>Web accessibility benefits people with and w*ithout* disabilities</h4>
+<h4>Web accessibility benefits people with and without disabilities</h4>
 
 Web accessibility features also benefit many more users, such as:
 <ul>
@@ -613,23 +613,23 @@ the W3C specification about this element):
 
 <h4>HTML5 structural element and description</h4>
 
-[**\<header\>**](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>
+[\<header\>](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>
 
-[**\<footer\>**](https://www.w3.org/TR/html5/sections.html#the-footer-element)                                                                                                              Contains the footer of a site, a long \<article\>, or a long \<section\>
+[\<footer\>](https://www.w3.org/TR/html5/sections.html#the-footer-element)                                                                                                              Contains the footer of a site, a long \<article\>, or a long \<section\>
 
-[**\<nav\>**](https://www.w3.org/TR/html5/sections.html#the-nav-element)                                                                                                                    Section that contains the main navigation links (within the document or to other pages).
+[\<nav\>](https://www.w3.org/TR/html5/sections.html#the-nav-element)                                                                                                                    Section that contains the main navigation links (within the document or to other pages).
 
-[**\<article\>**](https://www.w3.org/TR/html5/sections.html#the-article-element)                                                                                                            Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.
+[\<article\>](https://www.w3.org/TR/html5/sections.html#the-article-element)                                                                                                            Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.
 
-[**\<section\>**](https://www.w3.org/TR/html5/sections.html#the-section-element)                                                                                                            Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.
+[\<section\>](https://www.w3.org/TR/html5/sections.html#the-section-element)                                                                                                            Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.
 
-[**\<time\>**](https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element)                                                                                                      Used for marking up times and dates.
+[\<time\>](https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element)                                                                                                      Used for marking up times and dates.
 
-[**\<aside\>**](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.
+[\<aside\>](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.
 
-[**\<figure\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [**\<figcaption\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
+[\<figure\>](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [\<figcaption\>](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
 
-[**\<main\>**](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                 The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. **There can be only one \<main\> element in a document.**
+[\<main\>](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                 The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. There can be only one \<main\> element in a document.
 
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
 
@@ -738,7 +738,7 @@ nav li {
 nav li:first-child {
     margin-left: 0
 }
-* html nav ul {
+ html nav ul {
     margin-left: -15px
 }
 nav span, nav a {
@@ -964,7 +964,7 @@ We used a float:right CSS rule to put the tag cloud on the right\... In the fo
    width="25%" />
 </p>
 
-Finally, we added a \<footer\> element (*lines 12-14* below) after the tag cloud definition, to display a page footer:
+Finally, we added a \<footer\> element (lines 12-14 below) after the tag cloud definition, to display a page footer:
 
 ```
 <html>
@@ -1119,7 +1119,7 @@ Since the very beginning, HTML has had heading elements: \<h1\>\...\<h6\>. Thes
 
 ###### This is a H6 heading
 
-These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. Here is the result for the previous example:
+These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define an outline of the document. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 25. outliner in action from the previous example (xx) ----------------------->
@@ -1142,7 +1142,7 @@ The \<section\>, \<article\>, \<nav\> and \<aside\> elements are called <b>
 
 The HTML5 specification says that \"each sectioning element potentially has a heading and has also an outline associated\".
 
-\<h1\>\...\<h6\> are called **headings**, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
+\<h1\>\...\<h6\> are called headings, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
 
 ```
 <body>
@@ -1151,7 +1151,7 @@ The HTML5 specification says that \"each sectioning element potentially has a he
 </body>
 ```
 
-... defines the header of a section *implicitly*, while:
+... defines the header of a section implicitly, while:
 
 ```
 <body>
@@ -1163,7 +1163,7 @@ The HTML5 specification says that \"each sectioning element potentially has a he
 </body>
 ```
 
-\... defines the heading of *the explicit section* (its parent element \<section\>).
+\... defines the heading of the explicit section (its parent element \<section\>).
 
 <h4>Use multiple headings of different rank with sectioning content</h4>
 
@@ -1335,7 +1335,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 
 <b>Best practice #2</b>: try not to rely on implicit sectioning, use \<section\>, \<article\>, etc. instead of just \<h1\>\...\<h6\>
 
-The example below defines several implicit \"sections\" by using \<Hx\> directly (at *lines 7 and 9*):
+The example below defines several implicit \"sections\" by using \<Hx\> directly (at lines 7 and 9):
 
 <h4>Ok version (no explicit sections everywhere):</h4>
 
@@ -1675,7 +1675,7 @@ nav li {
 nav li:first-child {
     margin-left: 0
 }
-* html nav ul {
+ html nav ul {
     margin-left: -15px
 }
 nav span, nav a {
@@ -2073,7 +2073,7 @@ Since the very beginning, HTML has had heading elements: \<h1\>\...\<h6\>. Thes
 
 <h6>This is a H6 heading</h6>
 
-These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. Here is the result for the previous example:
+These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define an outline of the document. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 25.  (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -2282,7 +2282,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 
 <h4><b>Best practice #2</b>: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;...&lt;h6&gt;</h4>
 
-The example below defines several implicit \"sections\" by using \<Hx\> directly (at *lines 7 and 9*):
+The example below defines several implicit \"sections\" by using \<Hx\> directly (at lines 7 and 9):
 
 <h4>Ok version (no explicit sections everywhere):</h4>
 
@@ -2609,7 +2609,7 @@ We also added a \<main\> element to identify the main content of the page comp
 
 As explained in the article <a href="https://www.paciellogroup.com/blog/2013/10/html5-document-outline/">HTML5 Document Outline</a> and in <a href="https://www.w3.org/wiki/HTML/Usage/Headings">the W3C HTML Wiki</a>, it is risky to use nested H1s, as browsers do not correctly implement the \"outline algorithm\".
 
-The blog example uses nested H1's. If you check it with <a href="https://validator.w3.org/nu">the W3C conformance checker</a>, it issues a warning: \"*Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).*\"
+The blog example uses nested H1's. If you check it with <a href="https://validator.w3.org/nu">the W3C conformance checker</a>, it issues a warning: \"Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).\"
 
 While this is just a warning, we do prefer to use H1s only as top level elements, and replace the H1s we had after \<section\>, \<article\>, \<nav\> and \<aside\> elements respectively by a H2s and H3s. 
 
@@ -3005,7 +3005,7 @@ Use a \"-\" shaped icon, white, when details are displayed:
 &nbsp;
 <br/>
 
-<h4>The <time> element</h4>
+<h4>The &lt;time&gt; element</h4>
 
 The \<time\> element is useful for marking a time or a duration in a document.
 
@@ -3033,9 +3033,8 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
 
 <h4>Here are some examples:</h4>
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------
-  Different syntaxes of the datetime attribute   
-  ---------------------------------------------- ----------------------------------------------------------------------------------------------------------
+  Different syntaxes of the datetime attribute
+  
   datetime attribute values                      Interpretation
 
   \<time datetime=\"2020\"\>                     The year 2020
@@ -3055,7 +3054,6 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
   \<time datetime=\"09:00-05\"\>                 9:00 in the morning, GMT minus 5 hours
 
   \<time datetime=\"09:00+05:45\"\>              9:00 in the morning, GMT plus 5 hours 45 minutes, (for example, Nepal is 5:45 ahead of  GMT)
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <h4>Duration values</h4>
 
@@ -3092,20 +3090,20 @@ Examples:
 </ul>
 ```
 
-<h4>The \<time\> element with no attributes</h4>
+<h4>The &lt;time&gt; element with no attributes</h4>
 
 Used without attributes, the value between the opening \<time\> and closing \</time\> should follow the syntax given by the specification so that machines can understand it (same syntax as the one presented for the datetime attribute in the previous section). However it is recommended to use a datetime attribute, as it gives more freedom in the way you can display the date/time/duration in a human-readable form. 
 
 <h4>External resources:</h4>
 <ul>
-<li>From the specification: <https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element></li>
-<li>On MDN\'s Web Docs: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time></li>
-<li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility">table</a> for <time></li>
-<li>Old but interesting article by Bruce Lawson: <https://www.brucelawson.co.uk/2012/best-of-time/></li>
-<li>A CSS Tricks' article: "<a href="(https://css-tricks.com/time-element/">[The 'time' element]</a></li>
+<li>From the specification: <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element">html.specs.whatwg.org/multipage/text-level-semantics.html</a></li>
+<li>On MDN\'s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">developer.mozilla.org/en-US/docs/HTML/Element/time</a></li>
+<li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility">table</a> for &lt;time&gt;</a></li>
+<li>Old but interesting article by Bruce Lawson: <a href="https://www.brucelawson.co.uk/2012/best-of-time/">www.brucelawson.co.uk/2012/best-of-time/</a></li>
+<li>A CSS Tricks' article: <a href="(https://css-tricks.com/time-element/">'The 'time' element</a>.</li>
 </ul>
 
-<h4>The <mark> element</h4>
+<h4>The &lt;mark&gt; element</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 51.  (xx) ------------------------------->
@@ -3119,16 +3117,16 @@ Used without attributes, the value between the opening \<time\> and closing \
 
 The HTML \<mark\> tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.
 
-Some use cases:
+<h4>Some use cases:</h4>
 <ul>
 <li>Display search results with search strings highlighted in the results.</li.
 <li>Highlight important parts of a text, such as "quoting parts", etc.</li>
-<li>Replace <strong> and <em> with <mark> when suitable.</li>
+<li>Replace <strong> and &lt;em&gt; with &lt;mark&gt; when suitable.</li>
 </ul>
 
-Example 1: <https://jsbin.com/tafelic/edit?html,output>
+<a href="https://jsbin.com/tafelic/edit?html,output">Example 1:</a>
 
-Source code:
+<h4>Source code:</h4>
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -3142,20 +3140,19 @@ Source code:
 </html>
 ```
 
-Example 2:
+<h4>Example 2:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!------------ 52. the var keyword is used to declare a variable in javascript (66) -------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image052.jpeg?raw=true"
+   alt="The var keyword is used to declare a variable in JavaScript."
+   width="45%">
 &nbsp;
 <br/>
-![Another example for marking code](./images/image052.jpeg){width="4.6875in" height="0.9375in"}
 
-Source code:
+<h4>Source code:</h4>
 ```
 <body>
 <pre>
@@ -3165,18 +3162,18 @@ Source code:
 </body>
 ```
 
-<h4>Change the default style of the <mark> element</h4>
+<h4>Change the default style of the &lt;mark&gt; element</h4>
 
 If you don\'t like the default yellow background, you may use CSS to change the style of the \<mark\> element:
 
-For example:
+,h4>For example:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 53. style the mark element with CSS (xx) ------------------------------->
+<!----------- 53. the var keyword is used to declare a variable in javascript (xx) --------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image053.jpeg?raw=true"
-   alt="Style the mark element with CSS"
+   alt="The var keyword is used to declare a variable in JavaScript."
    width="45%">
 &nbsp;
 <br/>
@@ -3194,9 +3191,9 @@ For example:
 <ul>
 <li>From the specification: <https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element>
 
-<li>On MDN\'s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark"></a></li>
-<li>MDN\'s browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark#Browser_compatibility">table</a> for &lt;time&gt;</li>
-<li>An article on Web Platform News: <a href="https://webplatform.news/issues/2019-02-28">The &lt;mark&gt; element could help make your text more scannable</a></li>
+<li>On MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark">developer.mozilla.org.</a></li>
+<li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark#Browser_compatibility">table</a> for &lt;time&gt;.</li>
+<li>An article on Web Platform News: <a href="https://webplatform.news/issues/2019-02-28">The &lt;mark&gt; element could help make your text more scannable.</a></li>
 </ul>
 
 <h3 id="ch1-4-3">1.4.3 The Download and Translate Attributes</h3>
@@ -3204,18 +3201,15 @@ For example:
 <h4>The old way to download files using HTML and HTTP</h4>
 
 Everyone knows the classic way to make hyperlinks, using \<a href=\"\...\"\>some text\</a\>. What happens when you click on the hyperlink depends on the MIME type received by the browser. If you link to a file the browser knows how to render (an html page, a gif, jpg, or png image, etc.) there is a good chance that the MIME type received by the browser will be something like this:
-
+```
 1.  Content-type: text/html, text/plain, image/gif, image/jpg, etc.
-
+```
 For example,  HTML code such as this:
 
 ```
 1.  <a href="toto.jpg">
-```
-
-```
-1.      please right click this link to download
-2.      the toto.jpg picture</a>
+2.      please right click this link to download
+3.      the toto.jpg picture</a>
 ```
 
 \...will ask the remote HTTP server to send back the toto.jpg file. The browser will receive in the response HTTP header from the server (and by default the browser will display the image in a new tab):
@@ -3264,27 +3258,26 @@ The above example will cause the browser that invoked this server-side code to
 <h4>To download a file using an arbitrary name: the download attribute</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------ 54. picture of a road sign with the words 'new way' (54) ---------->
+<!------------ 54. picture of a road sign with the words 'new way' (68) ---------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image054.jpeg?raw=true"
-   alt="Picture of a road sign with the words New Way"
+   alt="Picture of a road sign with the words New Way."
    width="15%">
 &nbsp;
 <br/>
 
 HTML5 proposes the use of a new attribute named download to download resources rather than navigating to them. The example below shows how to trigger the download of an image by the browser (instead of rendering it, which is the default behavior) with a name different from the name of the resource.
-
+```
 1.  <a href="normal.gif" [download]=["MichelBuffa.gif"]>
-
 2.      download a picture of Michel Buffa
-
 3.  </a>
+```
 
 This will indeed force the download of an image with a filename different from its original filename on the server side. Here is a screen capture of the Web browser while downloading the picture. We can see in the status bar the name of the link (the image is \"normal.gif\") and the downloaded file is \"MichelBuffa.gif\":
 
 <!------------------------------------------------------------------------------------------------>
-<!------------ 55. image saved with another names thanks to the download attribute (xx) ---------->
+<!---------- 55. image saved with another names thanks to the download attribute (68) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image055.png?raw=true"
@@ -3298,11 +3291,11 @@ This will indeed force the download of an image with a filename different from i
 <h4>Interesting applications: serverless download</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 56. no server picture (xx) ------------------------------->
+<!--------------------------- 56. no servers no worries picture (68) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image056.jpeg?raw=true"
-   alt="No Server Picture"
+   alt="No Servers No Worries"
    width="35%">
 &nbsp;
 <br/>
@@ -3316,26 +3309,26 @@ We won\'t detail this demo here, but take a look if you are curious to see wha
 We have also put the simplified [source code of this demo on JSBin.com](https://jsbin.com/muluwey/1/edit?html,css,js,output) for you to play with.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------ 57. demo of the html5 download attribute (69) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image057.png?raw=true"
-   alt="Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server"
+   alt="Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server."
    width="50%">
 &nbsp;
 <br/>
 
 <h4> External resources:</h4>
-
--   From the specification: [downloading resources](https://www.w3.org/TR/2014/REC-html5-20141028/links.html#downloading-resources)
-
--   From CanIUse: the [browser support of the download attribute](https://caniuse.com/#feat=download)
+<ul>
+<li>From the specification: <a href="https://www.w3.org/TR/2014/REC-html5-20141028/links.html#downloading-resources">downloading resources.</a></li>
+<li>From CanIUse: <a href="https://caniuse.com/#feat=download">the browser support of the download attribute.</a></li>
+</ul>
 
 <h4>The HTML5 translate attribute</h4>
 
-HTML5 gives us a new translate attribute. This attribute is used to limit the impact of  translation tools such as [Google Translate](https://translate.google.com/) by prohibiting the translation of certain content. In many cases some parts of a document should not be translated.
+HTML5 gives us a new translate attribute. This attribute is used to limit the impact of  translation tools such as <a href="https://translate.google.com/">Google Translate</a> by prohibiting the translation of certain content. In many cases some parts of a document should not be translated.
 
-Use cases include:
+<h4>Use cases include:</h4>
 <ul>
 <li>HTML pages that contain source code: you would certainly not like to see the Java or PHP or whatever programming language parts of your page translated into another spoken language!</li>
 <li>Video game Web sites that propose cheat codes; the codes do not have to be translated,</li>
@@ -3347,9 +3340,9 @@ Both <a href="https://translate.google.com/">Google translate</a> and <a href
 
 <h4> Principle: give hints to translating tools</h4>
 
-<a href="https://www.w3.org/TR/html5/dom.html#the-translate-attribute">The specification about the translate attribute</a> tells us that  <i>\"The translate attribute is an enumerated attribute that is used to specify whether an element\'s attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.*
+<a href="https://www.w3.org/TR/html5/dom.html#the-translate-attribute">The specification about the translate attribute</a> tells us that  <i>\"The translate attribute is an enumerated attribute that is used to specify whether an element\'s attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.
 
-*The attribute\'s keywords are the empty string, yes, and no. The empty string and the yes keyword map to the yes state. The no keyword maps to the no state. In addition, there is a third state, the inherit state, which is the missing value default (and the invalid value default).\"*
+The attribute\'s keywords are the empty string, yes, and no. The empty string and the yes keyword map to the yes state. The no keyword maps to the no state. In addition, there is a third state, the inherit state, which is the missing value default (and the invalid value default).\"*
 
 <h4> Example illustrating how to specify parts of an HTML element that should not be translated:</h4>
 ```
@@ -3524,28 +3517,26 @@ Let\'s have a look now at a (small) example of an about page. It renders as a ve
 
 Rendering of the page in a browser:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 59.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image059.jpeg?raw=true"
+   alt="Rendering of Michel Buffa home page"
+   width="65%">
 &nbsp;
 <br/>
-![Rendering of Michel Buffa home page](./images/image059.jpeg){width="6.5in" height="1.0298611111111111in"}
 
 Here is what Google sees of the page. We just entered its [URL](https://output.jsbin.com/gunuzus/1) in the [Google page about rich snippets and structured data](https://developers.google.com/search/docs/guides/intro-structured-data):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 60.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image060.png?raw=true"
+   alt="Microdata of the example, as seen by Google"
+   width="50%">
 &nbsp;
 <br/>
-![Microdata of the example, as seen by Google](./images/image060.png){width="5.0in" height="2.4758213035870518in"}
 
 Note that the address is a fully featured embedded object in the Person\'s description.
 
@@ -3554,15 +3545,14 @@ Note that the address is a fully featured embedded object in the Person\'s descr
 The [Live Microdata Web site](https://foolip.org/microdatajs/live/)  is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 61.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image061.jpeg?raw=true"
+   alt="example of live microdata from the previous example. Microdata are displayed as json objects"
+   width="60%">
 &nbsp;
 <br/>
-![example of live microdata from the previous example. Microdata are displayed as json objects](./images/image061.jpeg){width="6.0in" height="5.615387139107612in"}
 
 And the JSON view of the microdata:
 <!------------------------------------------------------------------------------------------------>
@@ -3612,7 +3602,7 @@ If you are a developer and if you are familiar with object oriented programming,
 <b>Vocabularies are meant to be shared</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 63.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image063.jpeg?raw=true"
@@ -3650,7 +3640,7 @@ Now that you have defined a container element, you may add properties to the HTM
 17.          <li><a href="https://www.twitter.com/micbuffa"
 18.              [itemprop="url"]>Twitter profile</a></li>
 19.          <li><a href="https://www.blogger.com/micbuffa"
-20.              [itemprop="url\"]>Michel Buffa's blog</a></li>
+20.              [itemprop="url"]>Michel Buffa's blog</a></li>
 21.      </ul>
 22. </section>
 ```
@@ -3659,7 +3649,7 @@ In this example, the container is a \<section\> that corresponds to a Person (
 
 The line: 
 ```
-1.  <dd itemprop="name"Michel Buffa</dd\>
+1.  <dd itemprop="name"Michel Buffa</dd>
 ```
 \...defines a property called \"name\" that has a value of \"Michel Buffa\" (the text value between the opening and closing tags of the \<dd\> element).
 
@@ -3678,7 +3668,7 @@ Again, look at the Person/Address example:
 5.  
 6.  <dd itemprop="address"[ itemscope]
 7.      [itemtype="https://schema.org/PostalAddress"]>
-8.       <span itemprop="streetAddress">10 promenade des anglais\</span><br>
+8.       <span itemprop="streetAddress">10 promenade des anglais</span><br>
 9.       <span itemprop="addressLocality">Nice</span>,
 10.      <span itemprop="addressRegion">Alpes maritimes, France</span>
 11.      <span itemprop="postalCode">06410</span><br>
@@ -4030,15 +4020,14 @@ To add some styling to the basic example we saw when we introduced the \<audio\
 Please move the mouse pointer over this player\'s elements: 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 70.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image070.jpeg?raw=true"
+   alt="Two gery-black horses in a field"
+   width="20%">
 &nbsp;
 <br/>
-![Two gery-black horses in a field](./images/image070.jpeg){width="2.0833333333333335in" height="1.5625in"}
 
 Press Play to hear the horse ! 
 
@@ -4116,15 +4105,14 @@ CSS source code:
 See this [example online](https://jsbin.com/zoquru/4/edit?html,css,output) (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it\'s playing.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 71.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image071.png?raw=true"
    alt=""
-   width="35%">
+   width="60%">
 &nbsp;
 <br/>
-![](./images/image071.png){width="5.947916666666667in" height="3.4895833333333335in"}
 
 This example uses the pseudo CSS class :hover in order to track the mouseover event. On mouseover, it uses a CSS transition property that interpolates the changes in the scale and orientation of the video element (done using a transform CSS property).
 
@@ -4381,24 +4369,21 @@ Resizing the browser window shows that #1 (JavaScript) and #3 (viewport units) b
 <b>Conclusion</b>: we can get full size video without JavaScript by using viewport units (vw and vh), unless we need to support some old browsers (see their [current support on CanIUse](https://caniuse.com/#feat=viewport-units)).
 
 Setting the video to 100% width and height results in different behavior:
-
--   100% means 100% of the size of the \<body\> tag.
-
--   The body tag\'s width is 100% of the browser window width, so the video is always full width.
-
--   The body tag\'s height, however, is determined by the size of its children: the body tag\'s height grows and shrinks to accommodate the size of the children.
-
--   If the browser window is made wide and short, the video is full width, the height is taller than the window, and part of the video is not visible. It seems that just using % does not get us the same effect.
+<ul>
+<li>100% means 100% of the size of the \<body\> tag.</li>
+<li>The body tag\'s width is 100% of the browser window width, so the video is always full width.</li>
+<li>The body tag\'s height, however, is determined by the size of its children: the body tag\'s height grows and shrinks to accommodate the size of the children.</li>
+<li>If the browser window is made wide and short, the video is full width, the height is taller than the window, and part of the video is not visible. It seems that just using % does not get us the same effect.</li>
+</ul>
 
 <h3 id="ch2-2-5">2.2.5 Control Players From JavaScript</h3>
 
 The \<video\> and \<audio\> elements have methods, properties/attributes and events that can be manipulated with JavaScript. Using the DOM API, it\'s possible to manipulate an audio or video element as a JavaScript object that has:
-
--   <b>Methods</b> for controlling the behavior, such as play(), pause(), etc.
-
--   <b>Properties</b> (duration, current position, etc.), either in read/write mode (such as volume), or in read-only mode (such as encoding, duration, etc.)
-
--   <b>Events</b> generated during the life cycle of the element that can be processed using JavaScript callbacks. It is also possible to send events to control the video player
+<ul>
+<li><b>Methods</b> for controlling the behavior, such as play(), pause(), etc.</li>
+<li><b>Properties</b> (duration, current position, etc.), either in read/write mode (such as volume), or in read-only mode (such as encoding, duration, etc.)</li>
+<li><b>Events</b> generated during the life cycle of the element that can be processed using JavaScript callbacks. It is also possible to send events to control the video player.</li>
+</ul>
 
 The set of properties/attributes/methods of the \<audio\> and \<video\> elements is called an \"API\" (Application Programming Interface). For example, we will speak here of the \"media API\" to talk about the associated API.
 
@@ -4412,7 +4397,7 @@ Like any HTML element, the \<video\> element can be manipulated/created using 
 
 This will create a complete video player for the file \"video.mp4\", with control buttons, and will add it to the \<body\> element of the page.
 
-### Example that shows how to call play/pause or rewind a video
+<h4>Example that shows how to call play/pause or rewind a video</h4>
 
 Please look at this interesting example:
 
@@ -4425,7 +4410,7 @@ Please look at this interesting example:
    width="65%">
 &nbsp;
 <br/>
-![](./images/image076.png){width="6.5in" height="2.061111111111111in"}Note that in order to play the video, you must click on the \"vid.play()\" text. To pause it, you click on the \"vid.pause()\" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
+Note that in order to play the video, you must click on the \"vid.play()\" text. To pause it, you click on the \"vid.pause()\" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
 
 <b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let\'s see a little more of what we can do using the JavaScript API of the \<video\> element (it will be an identical approach for the \<audio\> element, since it shares the same API by a very small margin).
 
@@ -4435,11 +4420,11 @@ Please look at this interesting example:
 
 The JavaScript API gives you powerful tools to manipulate the \<video\> element, as the video object provides many properties, methods and events.
 
-The complete list of events can be found in the [HTML5 living standard specification](https://html.spec.whatwg.org/multipage/embedded-content.html#event-definitions).
+The complete list of events can be found in the <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#event-definitions">HTML5 living standard specification</a>.
 
-The list of properties can be found at the [W3C HTML5 Video Events and API](https://www.w3.org/2010/05/video/mediaevents.html) page. This page is interesting for Web developers because it shows an interactive view of the different values and events changing over time while the video is playing within the page.
+The list of properties can be found at the <a href="https://www.w3.org/2010/05/video/mediaevents.html">W3C HTML5 Video Events and API</a> page. This page is interesting for Web developers because it shows an interactive view of the different values and events changing over time while the video is playing within the page.
 
-Try the [direct link](https://www.w3.org/2010/05/video/mediaevents.html), and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
+Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link</a>, and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 77.  (xx) ------------------------------->
@@ -5121,10 +5106,10 @@ Go to the above Web site, click on the \"subtitle a video\" link, then follow t
 
 Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 99.  (xx) ------------------------------->
+<!----------------------------- 89.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image099.png?raw=true"
+<img src="/images/image089.png?raw=true"
    alt=""
    width="60%">
 &nbsp;
@@ -7031,25 +7016,41 @@ The two first parameters are the coordinates of the top left corner of the recta
 ```
 
 Produces this result:
-
-![filled rectangle with pink color](./images/image128.jpeg){width="2.59375in" height="2.5833333333333335in"}
-
--   <h4> strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape\'s outline should be rendered
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 128.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image128.jpeg?raw=true"
+   width="25%"
+   alt="Filled rectangle with pink color." />
+</p>
+<ul>
+<li><h4> strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape\'s outline should be rendered</li>
+</ul>
 
 The possible values are the same as those for the fillStyle property: a color, a pattern, or a gradient. This property will be taken into account when wireframe shapes are drawn.
-
--   <h4> strokeRect(x, y, width, height): like fillRect(\...), but instead of drawing a filled rectangle the rectangle is drawn in wireframe mode
+<ul>
+<li><h4> strokeRect(x, y, width, height): like fillRect(\...), but instead of drawing a filled rectangle the rectangle is drawn in wireframe mode</li>
+</ul>
 ```
 1.  ctx.strokeStyle=\'blue\';
 2.  ctx.strokeRect(10,10,200,200);
 ```
 \... gives this result:
 
-![stroked rectangle - border is in blue](./images/image129.jpeg){width="2.5833333333333335in" height="2.6041666666666665in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 129.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image129.jpeg?raw=true"
+   width="25%"
+   alt="Stroked rectangle - border is in blue." />
+</p>
 
 Only the outline of the rectangle will be drawn, and it will be drawn using the value of the strokeStyle property.
-
--   <h4> clearRect(x, y, width, height): a call to this method erases the specified rectangle
+<ul>
+<li><h4> clearRect(x, y, width, height): a call to this method erases the specified rectangle</li>
+</ul>
 
 Actually it draws it in a color called \"transparent black\" (!) that corresponds to the initial state of the rectangle as if no drawing had occurred.
 
@@ -7060,10 +7061,16 @@ Actually it draws it in a color called \"transparent black\" (!) that correspond
 ```
 
 The result is:
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 130.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image130.jpeg?raw=true"
+   width="25%"
+   alt="The use of ClearRect draws a white rectangle against the pink background." />
+</p>
 
-![The use of ClearRect draws a white rectangle against the pink background](./images/image130.jpeg){width="2.6770833333333335in" height="2.6770833333333335in"}
-
-<h4>Let\'s see some simple examples
+<h4>Let's see some simple examples
 
 <h4> Example #1: draw a wireframe red rectangle, width lineWidth = 3 pixels
 
@@ -7136,7 +7143,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-Source code extract:
+<h4>Source code extract:</h4>
 
 ```
 1.  function drawSomething() {
@@ -7167,34 +7174,30 @@ This example shows the \"global\" nature of the context properties. Once you set
 If you would like to draw the filled text message in green, for example, you should set the ctx.fillStyle property to \"green\" after you draw the rectangles and before you draw the text (i.e just before *line 18*).
 
 <h4>Summary of what we\'ve learned
-
--   \"stroke\" means \"wireframe\" or \"outlined\". It is a prefix for setting properties or calling methods that will affect wireframe shapes.
-
--   \"fill\" is a prefix for filled shapes.
-
--   To set the properties of wireframe shapes use ctx.**stroke**Style= \..., for filled shapes use ctx.**fill**Style=\... So far the values we have used are colors, expressed as strings. Example: ctx.strokeStyle  = \'blue\';
-
--   To draw a wireframe rectangle use ctx.strokeRect(x, y, width, height), to draw a filled rectangle use ctx.fillRect(x, y, width, height);
-
--   To set the line width of wireframe shapes, use the ctx.lineWidth property. Example ctx.lineWidth = 10; ctx.strokeRect(0, 0, 100, 100);  will draw a 100x100 rectangle in wireframe mode, with an outline width of 10 pixels.
-
--   To draw a text message use ctx.strokeText(message, x, y) or ctx.fillText(message, x, y), for wireframe text or filled text respectively.
-
--   To set the character font use the ctx.font property; the value is a font in CSS syntax, for example:  ctx.font = \'italic 20pt Calibri\';
+<ul>
+<li>"stroke" means "wireframe" or "outlined". It is a prefix for setting properties or calling methods that will affect wireframe shapes.</li>
+<li>"fill" is a prefix for filled shapes.</li>
+<li>To set the properties of wireframe shapes use ctx.strokeStyle ..., for filled shapes use ctx.fillStyle... So far the values we have used are colors, expressed as strings. Example: ctx.strokeStyle  = 'blue';
+<li>To draw a wireframe rectangle use ctx.strokeRect(x, y, width, height), to draw a filled rectangle use ctx.fillRect(x, y, width, height);</li>
+<li>To set the line width of wireframe shapes, use the ctx.lineWidth property. Example ctx.lineWidth = 10; ctx.strokeRect(0, 0, 100, 100);  will draw a 100x100 rectangle in wireframe mode, with an outline width of 10 pixels.</li>
+<li>To draw a text message use ctx.strokeText(message, x, y) or ctx.fillText(message, x, y), for wireframe text or filled text respectively.</li>
+<li>To set the character font use the ctx.font property; the value is a font in CSS syntax, for example:  ctx.font = 'italic 20pt Calibri';</li>
+</ul>
 
 <h3 id="ch3-2-8">3.2.8 Transformations</h3>
 
 We now introduce the basics of 2D transformations, a powerful tool that will make things easier as soon as you have to:
-
--   Draw complex shapes at given positions, with given orientations and sizes,
-
--   Draw shapes relative to one another.
+<ul>
+<li>Draw complex shapes at given positions, with given orientations and sizes,</li>
+<li>Draw shapes relative to one another.</li>
+</ul>
 
 Let\'s start with some simple examples before looking at how we use 2D transforms.
 
 <h4>Examples
-
--   <h4> Let\'s draw three rectangles!
+<ul>
+<li><h4> Let\'s draw three rectangles!</li>
+</ul>
 
 If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) and another at (150, 0), and a third at (300, 0), here is the result and the corresponding code:
 
@@ -7250,8 +7253,9 @@ JavaScript code extract:
 6.       ctx.fillRect(300,0,100,200);
 7.  }
 ```
-
--   <h4> Let\'s modify the code so that we can draw these rectangles at any X and Y position
+<ul>
+<li><h4> Let\'s modify the code so that we can draw these rectangles at any X and Y position</li>
+</ul>
 
 What if we wanted to draw these 3 rectangles at another position, as a group? We would like to draw all of them a little closer to the bottom, for example\... Let\'s add some parameters to the function:  the X and Y position of the rectangles.
 
@@ -7296,7 +7300,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-Code extract:
+<h4>Code extract:</h4>
 
 ```
 1.  var canvas, ctx;
@@ -15043,7 +15047,6 @@ Some screenshots from Opera desktops and Safari IOS:
    width="40%"
    alt="Month" />
 </p>
-![month](./images/image243.jpeg){width="4.0in" height="1.4222222222222223in"}
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 244.  (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -16160,17 +16163,16 @@ The second example shows a form with two submit buttons:
 -   the second button using a POST:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 273.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image273.png?raw=true"
    alt=""
-   width="35%">
+   width="40%">
 &nbsp;
 <br/>
-![](./images/image273.png){width="4.0in" height="1.4247790901137358in"}
 
-### 5.5.11 formnovalidate
+<h3 id="ch5-5-11">5.5.11 formnovalidate</h3>
 
 The formnovalidate attribute is targeted to the \<input type=\"submit\"\> input fields. This attribute is rarely used, so there will be no questions about it in the end of the week\'s exercises.
 
@@ -19034,7 +19036,7 @@ A slightly different version of the previous example [shows how to properly che
 </html>
 ```
 
-<h3>6.4.4 Tracking a position</h3>
+<h3 id="ch6-4-4">6.4.4 Tracking a position</h3>
 
 In order to track the current position, the geolocation API provides a method similar to the getCurrentPosition(onSuccess, onError) named watchPosition(onSuccess, onError). 
 
@@ -19044,21 +19046,18 @@ When getCurrentPosition gives a position when called, watchPosition does the
 
 -   It returns an id so that you can use the clearWatch(id) method to stop the current tracking.
 
-<h3>Typical use</h3>
-
+<h4>Typical use</h4>
+```
 > // get an id of the current tracking, the showPosition callback is like the one we saw in earlier examples.
->
 > var watchPosId = navigator.geolocation.watchPosition(showPosition);
->
-> \...
->
+> ...
 > // stop the tracking
->
 > navigator.geolocation.clearWatch(watchPosId);
+```
 
 As a test, you may just try to change getCurrentPosition to watchPosition in the previous examples, and try this code using a mobile phone or tablet, walk for 20 meters and see the position changing.
 
-<h3>Options available when using the geolocation API, in particular real time tracking</h3>
+<h4>Options available when using the geolocation API, in particular real time tracking</h4>
 
 Several options are available when using HTML5 geolocation. We can pass a third parameter to the getCurrentPosition and watchPosition methods, that will hold one or several of the following options:
 
@@ -19071,7 +19070,7 @@ Several options are available when using HTML5 geolocation. We can pass a third 
    width="85%" />
 </p>
 
-<h3>Example of use</h3>
+<h4>Example of use</h4>
 
 <h4>Source code:</h4>
 
@@ -19080,7 +19079,7 @@ Several options are available when using HTML5 geolocation. We can pass a third 
 navigator.geolocation.getCurrentPosition(onSuccess, onError,
                                      {enableHighAccuracy:true});
 // maximumAge = 10 mins, the position can be cached for 10 mins,
-// useful when in tunnels\...When the device tries to get
+// useful when in tunnels...When the device tries to get
 // a position, if it does not succeed, then go on error
 // immediately
 navigator.geolocation.getCurrentPosition(onSuccess, onError,
@@ -19090,36 +19089,36 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError,
 // error
 navigator.geolocation.getCurrentPosition(onSuccess, onError,
                                    {maximumAge:0, timeout:100});
-// Ask for GPS, cache for 30s, 27s before going on error\...
+// Ask for GPS, cache for 30s, 27s before going on error...
 watchId=navigator.geolocation.watchPosition(onSuccess, onError,
     {enableHighAccuracy:true, maximumAge:30000, timeout:27000});
 ```
 
 Look for the explanations in the lines of comment.
 
-<h3>6.4.5 Geolocation and maps</h3>
+<h3 id="ch6-4-5">6.4.5 Geolocation and maps</h3>
 
-This section presents an example of how to get an interactive map, using [the Leaflet API for OpenStreetMap](https://leafletjs.com/reference-1.6.0.html), and gives links to more resources. Did you know that you can even get an estimation of a physical address from the longitude and latitude, using online Web services?
+This section presents an example of how to get an interactive map, using <a href="https://leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMap</a>, and gives links to more resources. Did you know that you can even get an estimation of a physical address from the longitude and latitude, using online Web services?
 
-How to get a map centered on your longitude and latitude
+How to get a map centered on your longitude and latitude.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 328. openstreetmap test (444) ---------------------------------->
+<!------------------------------- 328. openstreetmap test (392) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image328.png?raw=true"
-   alt="Example/Test OpenStreetMap"
+   alt="Example/Test OpenStreetMap - geolocation and leaflet."
    width="85%" />
 </p>
 
 This example is just given \"as is\", as there are so many possibilities for rendering a map with [the Leaflet API for OpenStreetMaps](https://leafletjs.com/reference-1.6.0.html). However, we think having such a basic example might be useful.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 329. openstreetmap test (444) ---------------------------------->
+<!------------------------------- 329. openstreetmap test (392) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image329.png?raw=true"
-   alt="Example/Test OpenStreetMap"
+   alt="Example/Test OpenStreetMap - show your location."
    width="50%" />
 </p>
 
@@ -19216,7 +19215,7 @@ display: inline-block;
 ```
 <ul>
 <li><i>Lines 5 and 6</i> are the required files to use the Leaflet API (this is the official name of the OpenStreetMaps API),</li>
-<li><i>Line 10</i> is the \<div\> container that will be used to display the interactive map.</li>
+<li><i>Line 10</i> is the &lt;div&gt; container that will be used to display the interactive map.</li>
 </ul>
 
 <h4>JavaScript part:</h4>
@@ -19257,7 +19256,7 @@ function error() {
 <ul>
 <li><i>Line 6</i> uses the [Geolocation API](https://www.w3.org/TR/geolocation-API/) to get the current position, in case of success it calls the success function, passing the location as parameter,
 <li><i>Lines 13 and 14></i> show how to get the longitude and latitude properties from the location,</li>
-<li>The rest is a basic use of the Leaflet API. Notice at <i>line 17</i> that \'map\' is the id of the \<div\> from the HTML part of the code.</li>
+<li>The rest is a basic use of the Leaflet API. Notice at <i>line 17</i> that \'map\' is the id of the &lt;div&gt; from the HTML part of the code.</li>
 </ul>
 
 <h3>6.4.6 Reverse geocoding</h3>
