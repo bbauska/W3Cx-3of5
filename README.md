@@ -3004,7 +3004,7 @@ Use a \"-\" shaped icon, white, when details are displayed:
 &nbsp;
 <br/>
 
-<h4>The <time> element</h4>
+<h4>The &lt;time&gt; element</h4>
 
 The \<time\> element is useful for marking a time or a duration in a document.
 
@@ -3032,9 +3032,8 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
 
 <h4>Here are some examples:</h4>
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------
   Different syntaxes of the datetime attribute   
-  ---------------------------------------------- ----------------------------------------------------------------------------------------------------------
+
   datetime attribute values                      Interpretation
 
   \<time datetime=\"2020\"\>                     The year 2020
@@ -3054,7 +3053,6 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
   \<time datetime=\"09:00-05\"\>                 9:00 in the morning, GMT minus 5 hours
 
   \<time datetime=\"09:00+05:45\"\>              9:00 in the morning, GMT plus 5 hours 45 minutes, (for example, Nepal is 5:45 ahead of  GMT)
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <h4>Duration values</h4>
 
@@ -3091,20 +3089,20 @@ Examples:
 </ul>
 ```
 
-<h4>The \<time\> element with no attributes</h4>
+<h4>The &lt;time&gt; element with no attributes</h4>
 
 Used without attributes, the value between the opening \<time\> and closing \</time\> should follow the syntax given by the specification so that machines can understand it (same syntax as the one presented for the datetime attribute in the previous section). However it is recommended to use a datetime attribute, as it gives more freedom in the way you can display the date/time/duration in a human-readable form. 
 
 <h4>External resources:</h4>
 <ul>
-<li>From the specification: <https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element></li>
-<li>On MDN\'s Web Docs: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time></li>
-<li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility">table</a> for <time></li>
-<li>Old but interesting article by Bruce Lawson: <https://www.brucelawson.co.uk/2012/best-of-time/></li>
-<li>A CSS Tricks' article: "<a href="(https://css-tricks.com/time-element/">[The 'time' element]</a></li>
+<li>From the specification: <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element">html.spec.whatwg.org</a>. </li>
+<li>On MDN\'s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">developer.mozilla.org</a>.</li>
+<li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility">table</a> for &lt;time&gt;</li>
+<li>Old but interesting article by Bruce Lawson: <a href="https://www.brucelawson.co.uk/2012/best-of-time">brucelawson.co.uk</a></li>
+<li>A CSS Tricks' article: <a href="https://css-tricks.com/time-element/">The 'time' element</a></li>
 </ul>
 
-<h4>The <mark> element</h4>
+<h4>The &lt;mark&gt; element</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 51.  (xx) ------------------------------->
@@ -3122,10 +3120,10 @@ Some use cases:
 <ul>
 <li>Display search results with search strings highlighted in the results.</li.
 <li>Highlight important parts of a text, such as "quoting parts", etc.</li>
-<li>Replace <strong> and <em> with <mark> when suitable.</li>
+<li>Replace &lt;strong&gt; and &lt;em&gt; with &lt;mark&gt; when suitable.</li>
 </ul>
 
-Example 1: <https://jsbin.com/tafelic/edit?html,output>
+Example 1: <a href="https://jsbin.com/tafelic/edit?html,output">Click here.</a>
 
 Source code:
 ```
@@ -3144,15 +3142,14 @@ Source code:
 Example 2:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 52.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image052.jpeg?raw=true"
+   alt="Another example for marking code."
+   width="45%">
 &nbsp;
 <br/>
-![Another example for marking code](./images/image052.jpeg){width="4.6875in" height="0.9375in"}
 
 Source code:
 ```
@@ -3747,37 +3744,35 @@ And so on\...
 Now, let\'s see what elements are compatible with the itemprop attribute and where the values of the properties are located, depending on each element type.
 
 <h4> The HTML elements compatible with the itemprop attribute</h4>
-
+```
 If the itemprop attribute appears on a:
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Elements that can be associated with microdata              
-  ----------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   HTML5 elements                                              microdata value associated
 
-  \<a\>, \<area\>, \<audio\>, \<embed\>, \<iframe\>, \        The data is the url in the element\'s href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person\'s photo and downloaded accordingly.
-  \<img\>, \<link\>, \<object\>, \<source\>, or \<video\> \   
+  <a>, <area>, <audio>, <embed>, <iframe>,         The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person's photo and downloaded accordingly.
+  <img>, <link>, <object>, <source>, or <video>    
   element                                                     
 
-  \<time\> element                                            The data is the time in the element\'s datetime attribute. This lets you, for example, just say \"last week\" in your text content but still indicate exact date and time.
+  <time> element                                            The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time.
 
-  \<meta\> element                                            The data is whatever appears in the content attribute of the \<meta\> element. This is used when you need to include some data that isn\'t actually in the text of your page.
+  <meta> element                                            The data is whatever appears in the content attribute of the <meta> element. This is used when you need to include some data that isn't actually in the text of your page.
 
   anything else                                               The data is whatever is in the text of the element.
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
 
 For example, the value of a property defined in an \<img\> element will be the value of the src attribute:
-
-1.  \<img itemprop=\"image\" src=\"MichelBuffa.png\" alt=\"A great professor\"\>
-
+```
+1.  <img itemprop="image" src="MichelBuffa.png" alt="A great professor">
+```
 Or for a \<time\>, it will be the value of the datetime attribute:
-
-1.  \<time itemprop=\"birthday\" datetime=\"1965-04-16\"\>April 16, 1965\</time\>
-
+```
+1.  <time itemprop="birthday" datetime="1965-04-16">April 16, 1965</time>
+```
 Or for an \<a\> element, the value will be the value of the href attribute:
-
-1.  \<a href=\"https://www.twitter.com/micbuffa\" itemprop=\"url\"\>profile\</a\>
-
+```
+1.  <a href="https://www.twitter.com/micbuffa" itemprop="url">profile</a>
+```
 <h3 id="ch1-5-4">1.5.4 Microdata Tools</h3>
 
 There are many tools available (most are free) that you can use for generating, visualizing and debugging microdata. We list some of them in this page, but feel free to share the tools you find / like in the forums.
