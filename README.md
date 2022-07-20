@@ -1509,7 +1509,7 @@ If you look at the \"minimal document\" example, or at other examples in this co
 <h4>New structural elements</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------- 13. some of the new structural elements introducted by html5 (xx) ---------------->
+<!------------- 13. some of the new structural elements introducted by html5 (33) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image013.jpeg?raw=true"
@@ -1543,29 +1543,19 @@ The results of these surveys led to the addition of new structural elements in H
 
 Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\'s surveys gave birth to these new elements (click on the element\'s name to go to the W3C specification about this element):
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  HTML5 structural elements with descriptions.                                                                                                                                                
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-  [<b>\<header\></b>](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>.
-
-  [<b>\<footer\></b>](https://www.w3.org/TR/html5/sections.html#the-footer-element)                                                                                                              Contains the footer of a site, a long \<article\>, or a long \<section\>.
-
-  [<b>\<nav\></b>](https://www.w3.org/TR/html5/sections.html#the-nav-element)                                                                                                                    Section that contains the main navigation links (within the document or to other pages).
-
-  [<b>\<article\></b>](https://www.w3.org/TR/html5/sections.html#the-article-element)                                                                                                            Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.
-
-  [<b>\<section\></b>](https://www.w3.org/TR/html5/sections.html#the-section-element)                                                                                                            Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.
-
-  [<b>\<time\></b>](https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element)                                                                                                      Used for marking up times and dates.
-
-  [<b>\<aside\></b>](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.
-
-  [<b>\<figure\></b>](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [<b>\<figcaption\></b>](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
-
-  <a href="https://www.w3.org/TR/html5/sections.html#the-aside-element"><b>&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b>
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+<h4>HTML5 structural elements with descriptions.</h4>
+<ul>
+<li><a href="https://www.w3.org/TR/html5/sections.html#the-header-element">[<b>&lt;header&gt;</b>]</a>  Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;.</li>
+<li><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element">[<b>&lt;footer&gt;</b>]</a>  Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
+<li><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element">[<b>&lt;nav&gt;</b>]</a>  Section that contains the main navigation links (within the document or to other pages).</li>
+<li><a href="https://www.w3.org/TR/html5/sections.html#the-article-element">[<b>&lt;article&gt;</b>]</a>  Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</li>
+<li><a href="https://www.w3.org/TR/html5/sections.html#the-section-element">[<b>&lt;section&gt;</b>]</a>  Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.</li>
+<li><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element">[<b>&lt;time&gt;</b>]</a>  Used for marking up times and dates.</li>
+<li><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element">[<b>&lt;aside&gt;</b>]</a>  Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</li>
+<li><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element">[<b>&lt;figure&gt;</b>]</a> and <a href="https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element">[<b>&lt;figcaption&gt;</b>]</a>. Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</li>
+<li><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element"><b>&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b></li>
+</ul>
+  
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
 
 Read also at the end of this section about the new \<main\> element .  This element is [part of the HTML5 recommendation](https://www.w3.org/TR/html5/grouping-content.html#the-main-element) and  an integral part of the HTML document structure.
@@ -2157,7 +2147,7 @@ In the above example, please note two things:
 
 <h3 id="ch1-3-6">1.3.6 Best Practices When Using Sectioning Elements</h3>
 
-<h4><b>Best practice #1</b>: always add a heading to explicit sectioning content</h4>
+<h4>Best practice #1: always add a heading to explicit sectioning content</h4>
 
 It\'s always better - mainly for accessibility reasons - to include a heading (a \<h1\>, \<h2\>\...\<h6\>) in each sectioning element (\<section\>, \<article\>, \<nav\>, \<aside\>), but also after the \<body\> element (called a \"sectioning root\"). 
 
@@ -2197,7 +2187,7 @@ Here are some examples:
 
 The last example is bad for accessibility reasons. A screen reader that vocalizes the page will just say \"Entering section\", while in the previous two good examples it would say \"entering section with heading Blog Posts of April 2020\". You can also check if your headings and sectioning elements are ok by using a browser extension that displays the outline of the document (just search for \"html5 outliner\" in your browser\'s extension search engine).
 
-<b>UPDATE: </b>For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as [table-of-contents-crx](https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f) for Chrome or [Outline sidebar](https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search) for Firefox.
+<b>UPDATE: </b>For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">Outline sidebar</a> for Firefox.
 
 The outline of the last example looks like this:
 <!------------------------------------------------------------------------------------------------>
@@ -2215,25 +2205,25 @@ Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning
 <b>Final good version:</b>
 
 ```
-> <body>
->     <b><h1>Example Blog</h1></b>
->     <section>
->        <header>
->           <b><h2>Blog post of April 2020</h2></b>
->           <p>Posted by Michel Buffa...</p>
->        </header>
->       <p>Content of the blog post...</p>
->    </section>
-> </body>
+<body>
+    <b><h1>Example Blog</h1></b>
+    <section>
+       <header>
+          <b><h2>Blog post of April 2020</h2></b>
+          <p>Posted by Michel Buffa...</p>
+       </header>
+      <p>Content of the blog post...</p>
+   </section>
+</body>
 ```
 
 In red, the sectioning root (\<body\>) and the sectioning elements (\<section\> here\...), each have a heading.
 
 <b>To sum up:</b>
-
--   Always use a heading element after a sectioning element, for example \<section\><b>\<Hx\>\...\</Hx\>\...</b>\</section\>, and after \<body\>, where <b>x</b> can be 1..6,
-
--   Or, use a \<header\> element, like in \<section\><b>\<header\>\<Hx\>\...\</Hx\>\.....\</header\></b>\...\</section\>
+<ul>
+<li>Always use a heading element after a sectioning element, for example &lt;section&gt;<b>&lt;Hx&gt;...&lt;/Hx&gt;...</b>&lt;section&gt;, and after &lt;body&gt;, where <b>x</b> can be 1..6,</li>
+<li>Or, use a &lt;header&gt; element, like in &lt;section&gt;<b>&lt;header&gt;&lt;Hx&gt;...&lt;Hx&gt;.....&lt;header&gt;</b>...&lt;section&gt;</li>
+</ul>
 
 <h4>More about the &lt;header&gt; element</h4>
 
@@ -13768,36 +13758,23 @@ function getMousePos(canvas, evt) {
 }
 
 WRONG code:
-
+```
 1.  \...
-
 2.  canvas.addEventListener(\'mousemove\', function (evt) {
-
 3.      mousePos = getMousePos(canvas, evt);
-
 4.      var message = \'Mouse position: \' + mousePos.x + \',\' + mousePos.y;
-
 5.      writeMessage(canvas, message);
-
 6.  }, false);
-
 7.   
-
 8.  \...
-
 9.  function getMousePos(canvas, evt) {
-
 10.    // WRONG!!!
-
 11.    return {
-
 12.       x: evt.clientX,
-
 13.       y: evt.clientY
-
 14.    };
-
 15. }
+```
 
 Here is the result, when the mouse is approximately at the top left corner of the canvas:
 
@@ -13824,20 +13801,15 @@ GOOD version of the code:
 <br/>
 
 function getMousePos(canvas, evt) {
-
-   **// necessary to take into account CSS boundaries**
-
-   **var rect = canvas.getBoundingClientRect();**
-
+```
+   // necessary to take into account CSS boundaries
+   var rect = canvas.getBoundingClientRect();
    return {
-
-      x: evt.clientX **- rect.left,**
-
-      y: evt.clientY **- rect.top**
-
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top
    };
-
 }
+```
 
 Result (the cursor is approximately at the top left corner):
 
@@ -13851,7 +13823,7 @@ Result (the cursor is approximately at the top left corner):
 &nbsp;
 <br/>
 
-### How to display the mouse position, and the mouse button that has been pressed or released
+<h4>How to display the mouse position, and the mouse button that has been pressed or released</h4>
 
 This example uses the previous function for computing the mouse position correctly. It listens to mousemove, mousedown and mouseup events, and shows how to get the mouse button number using the evt.button property.
 
@@ -13881,23 +13853,23 @@ Extract from source code:
 1.  var canvas, ctx, mousePos, mouseButton;
 2.   
 3.  window.onload = function init() {
-4.      canvas = document.getElementById(\'myCanvas\');
-5.      ctx = canvas.getContext(\'2d\');
+4.      canvas = document.getElementById('myCanvas');
+5.      ctx = canvas.getContext('2d');
 6.   
-7.      **canvas.addEventListener(\'mousemove\', function (evt) {**
+7.      **canvas.addEventListener('mousemove', function (evt) {**
 8.          **mousePos = getMousePos(canvas, evt);**
-9.          var message = \'Mouse position: \' + mousePos.x + \',\' + mousePos.y;
+9.          var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
 10.         writeMessage(canvas, message);
 11.     }, false);
 12.  
-13.     **canvas.addEventListener(\'mousedown\', function (evt) {**
+13.     **canvas.addEventListener('mousedown', function (evt) {**
 14.         **mouseButton = evt.button;**
-15.         var message = \"Mouse button \" + evt.button + \" down at position: \" + mousePos.x + \',\' + mousePos.y;
+15.         var message = "Mouse button " + evt.button + " down at position: " + mousePos.x + ',' + mousePos.y;
 16.         writeMessage(canvas, message);
 17.     }, false);
 18.  
-19.     **canvas.addEventListener(\'mouseup\', function (evt) {**
-20.         var message = \"Mouse up at position: \" + mousePos.x + \',\' + mousePos.y;
+19.     **canvas.addEventListener('mouseup', function (evt) {**
+20.         var message = "Mouse up at position: " + mousePos.x + ',' + mousePos.y;
 21.         writeMessage(canvas, message);
 22.     }, false);
 23. };
@@ -13905,8 +13877,8 @@ Extract from source code:
 25. function writeMessage(canvas, message) {
 26.    ctx.save();
 27.    ctx.clearRect(0, 0, canvas.width, canvas.height);
-28.    ctx.font = \'18pt Calibri\';
-29.    ctx.fillStyle = \'black\';
+28.    ctx.font = '18pt Calibri';
+29.    ctx.fillStyle = 'black';
 30.    ctx.fillText(message, 10, 25);
 31.    ctx.restore();
 32. }
@@ -13941,9 +13913,9 @@ var mousePos;
 function init() {
     ...
     // 3bis - Add mouse listeners
-    **canvas.addEventListener(\'mousemove\', handleMousemove, false);**
-    **canvas.addEventListener(\'mousedown\', handleMousedown, false);**
-    **canvas.addEventListener(\'mouseup\', handleMouseup, false);**
+    **canvas.addEventListener('mousemove', handleMousemove, false);**
+    **canvas.addEventListener('mousedown', handleMousedown, false);**
+    **canvas.addEventListener('mouseup', handleMouseup, false);**
     // 4 - Start the animation
     requestId = requestAnimationFrame(animationLoop);
 }
@@ -13967,7 +13939,7 @@ function animationLoop() {
    // 1 - Clear
    ctx.clearRect(0, 0, canvas.width, canvas.height);
    // 2 - Draw
-   drawMonster(monsterX, monsterY, monsterAngle, \'green\', \'yellow\');
+   drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
    // 3 - Move
    if(mousePos !== undefined) { // test necessary, maybe the mouse is not yet on canvas
       **monsterX = mousePos.x;**
@@ -14007,7 +13979,7 @@ function drawLineImmediate(x1, y1, x2, y2) {
 }
 function handleMouseMove(evt) {
      var mousePos = getMousePos(canvas, evt);
-     // Let\'s draw some lines that follow the mouse pos
+     // Let's draw some lines that follow the mouse pos
      if (!started) {
          previousMousePos = mousePos; // get the current mouse position
          started = true;
@@ -14021,7 +13993,7 @@ function handleMouseMove(evt) {
  window.onload = function () {
    ...
    started = false;
-   canvas.addEventListener(\'mousemove\', handleMouseMove, false);
+   canvas.addEventListener('mousemove', handleMouseMove, false);
 };
 </script>
 ```
@@ -14064,23 +14036,23 @@ We just added mouseup and  mousedown listeners, extract from the source code
 19. }
 20.  
 21.  window.onload = function () {
-22.     canvas = document.getElementById(\'myCanvas\');
-23.     ctx = canvas.getContext(\'2d\');
+22.     canvas = document.getElementById('myCanvas');
+23.     ctx = canvas.getContext('2d');
 24.     painting = false;
 25.  
-26.     canvas.addEventListener(\'mousemove\', handleMouseMove, false);
-27.     canvas.addEventListener(\'mousedown\', clicked);
-28.     canvas.addEventListener(\'mouseup\', released);
+26.     canvas.addEventListener('mousemove', handleMouseMove, false);
+27.     canvas.addEventListener('mousedown', clicked);
+28.     canvas.addEventListener('mouseup', released);
 29. };
 ```
 
-<h3>4.3.4 Responsive Canvas</h3>
+<h3 id="ch4-3-4">4.3.4 Responsive Canvas</h3>
 
 Resizing a canvas can be tricky if we don\'t know a few rules that might not be easily guessed:
-
--   Changing the width or height property of a canvas in JavaScript erases its content and resets its context,
-
--   Using percentages (%) in the CSS width and height properties of a canvas *does not change its number of pixels/resolution*[.] Instead, it scales the existing pixels without erasing the content, giving a blurry effect when a canvas becomes larger, for example.
+<ul>
+<li>Changing the width or height property of a canvas in JavaScript erases its content and resets its context,</li>
+<li>Using percentages (%) in the CSS width and height properties of a canvas *does not change its number of pixels/resolution*[.] Instead, it scales the existing pixels without erasing the content, giving a blurry effect when a canvas becomes larger, for example.</li>
+</ul>
 
 Before looking at how best to handle canvas resizing, let\'s see some examples below:
 
@@ -14098,18 +14070,18 @@ Before looking at how best to handle canvas resizing, let\'s see some examples 
 &nbsp;
 <br/>
 
-Code:
+<h4>Code:</h4>
 
 ```
 1.  <script>
 2.  ...
 3.  function resizeCanvas() {
-4.       **canvas.width = 300;**
+4.       canvas.width = 300;
 5.  }
 6.   
 7.  </script>
 8.  ...
-9.  <button **onclick="resizeCanvas();**">
+9.  <button onclick="resizeCanvas();">
 10.     Click this button to resize the canvas and erase it!
 11. </button>
 ```
@@ -14158,16 +14130,13 @@ And the result shows clearly that the resolution is still the same, only the pix
 <h4>Example #3: a responsive canvas using a resize listener +  a parent element</h4>
 
 This is the trick to create a really responsive canvas:
-
-1.  Embed it in a \<div\> or in any parent container,
-
-2.  Use CSS with percentages on the width and the height CSS properties <b>of the parent,</b>
-
-3.  Use a resize listener on the  parent of the canvas,
-
-4.  Change the width and height properties of the canvas [from the JavaScript resize listener function] (content will be erased),
-
-5.  Redraw the content, scaled accordingly to the size of the parent.
+<ol type="1">
+<li>Embed it in a \<div\> or in any parent container,</li>
+<li>Use CSS with percentages on the width and the height CSS properties <b>of the parent,</b></li>
+<li>Use a resize listener on the  parent of the canvas,</li>
+<li>Change the width and height properties of the canvas [from the JavaScript resize listener function] (content will be erased),</li>
+<li>Redraw the content, scaled accordingly to the size of the parent.</li>
+</ol>
 
 Yep, this is not a straightforward process\...
 
