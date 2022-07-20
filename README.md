@@ -806,7 +806,7 @@ Note that the H2, article, article header, etc. will be styled using these rules
 <h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 17. image of header at top of each article --------------------------->
+<!---------------------- 17. image of header at top of each article (xx) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image017.jpeg?raw=true"
@@ -817,7 +817,7 @@ Note that the H2, article, article header, etc. will be styled using these rules
 
 Next, in each article in the section we have a header (to display the article title), paragraphs (article content), and so on.
 
-Example for the first blog article:
+<h4>Example for the first blog article:</h4>
 
 ```
 <section>
@@ -849,13 +849,12 @@ Example for the first blog article:
    ...
 </section>
 ```
-
 <h4>Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside</h4>
 
 Also note the way we included a figure using the new \"HTML5\" method, using a \<figure\>..\</figure\> element that embedded a \<img src=\.../\> element together with a \<figcaption\> element. 
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 18. figure and figcaption (xx) ------------------------------>
+<!---------------------------------- 18. figure and figcaption (19) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image018.jpeg?raw=true"
@@ -893,7 +892,7 @@ Here is the CSS for the \<figcaption\> element we have used in the example (we
 After the long \<section\> element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, \"aside\"! This is done using - you already guessed it - an \<aside\> element:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 19. image of tag cloud defined as aside element ------------------------>
+<!--------------------- 19. image of tag cloud defined as aside element (20)---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image019.jpeg?raw=true"
@@ -945,7 +944,7 @@ We used a float:right CSS rule to put the tag cloud on the right\... In the fo
 <h4>Here is the result:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 20. the aside tag on the right (xx) ------------------------------>
+<!----------------------------- 20. the aside tag on the right (21) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image020.jpeg?raw=true"
@@ -956,7 +955,7 @@ We used a float:right CSS rule to put the tag cloud on the right\... In the fo
 
 <h4>Add a &lt;footer&gt; at the end of the blog</h4>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 21. image of the blog footer (xx) --------------------------->
+<!------------------------------ 21. image of the blog footer (21) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image021.jpeg?raw=true"
@@ -997,7 +996,7 @@ footer {
 And here is the result at the bottom of the page:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------- 22. the resulting footer at the bottom of the page (xx) -------------------->
+<!------------------- 22. the resulting footer at the bottom of the page (21) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image022.jpeg?raw=true"
@@ -1010,7 +1009,7 @@ And here is the result at the bottom of the page:
 Can an \<article\> contain a \<section\>?
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 23. picture of eisher (xx) --------------------------->
+<!--------------------------------- 23. picture of eisher (22) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image023.jpeg?raw=true"
@@ -1091,7 +1090,7 @@ You can use \<div\> elements in all cases where the proposed structural elemen
 This chart from the <a href="https://html5doctor.com/">HTML5 Doctor Web site</a> may help you decide whether or not to use a \<div\>:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 24. html5 doctor web site. whether or not to use a <dev> (xx) ------------------>
+<!--------------- 24. html5 doctor web site. whether or not to use a <dev> (24) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image024.png?raw=true"
@@ -1122,7 +1121,7 @@ Since the very beginning, HTML has had heading elements: \<h1\>\...\<h6\>. Thes
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define an outline of the document. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------ 25. outliner in action from the previous example (xx) ----------------------->
+<!------------------ 25. outliner in action from the previous example (25) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image025.png?raw=true"
@@ -1194,7 +1193,7 @@ Let\'s clarify this by looking at some example code:
 The corresponding outline is:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 26. outline of previous example --------------------------------->
+<!---------------------------- 26. outline of previous example (26) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image026.jpeg?raw=true"
@@ -1204,10 +1203,10 @@ The corresponding outline is:
 <br/>
 
 In the above example, please note two things:
-
-1.  The outline shows an \"Untitled body\" at the root of the hierarchy,
-
-2.  The default size for the H1 and H2 is the same (!). Indeed, when we start a \<h1\> inside a \<section\> the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.
+<ol type="1">
+<li>The outline shows an \"Untitled body\" at the root of the hierarchy,</li>
+<li>The default size for the H1 and H2 is the same (!). Indeed, when we start a \<h1\> inside a \<section\> the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
+</ol>
 
 <h4>Best Practices when using Sectioning Elements</h4>
 
@@ -1258,7 +1257,7 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 The outline of the last example looks like this:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 27. outline of previous example --------------------------------->
+<!---------------------------- 27. outline of previous example (27) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image027.jpeg?raw=true"
@@ -1312,7 +1311,7 @@ This example has two headings in the \<header\>:
 Here is the resulting table of contents, notice the two subsections that appear, one for the H1, one for the H2:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 28. outline of previous example (xx) ------------------------------>
+<!---------------------------- 28. outline of previous example (28) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image028.jpeg?raw=true"
@@ -1402,7 +1401,7 @@ Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-
 &nbsp;
 <br/>
 
-<h3 id="ch1-3">1.3 New Structural Elements</h3>
+<h3 id="ch1-3">1.3 Structural Elements</h3>
 
 Changes have been made to particular elements in HTML5 making it simpler to use. In this section, we will look at some examples highlighting these improvements, including:
 <ul>
@@ -1504,7 +1503,7 @@ If you look at the \"minimal document\" example, or at other examples in this co
 <li>Attribute values only need to be quoted if they contain spaces or some non-alphanumeric characters, instead of writing <link rel="stylesheet" href="style.css">, we could have used <link rel=stylesheet href=style.css\>. However, for compatibility with older browsers, it is wiser to still use quotes...</li>
 </ul>
 
-<h3 id="ch1-3-2">1.3.2 Structural Elements</h3>
+<h3 id="ch1-3-2">1.3.2 New Structural Elements</h3>
 
 <h4>New structural elements</h4>
 
@@ -1545,14 +1544,14 @@ Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\
 
 <h4>HTML5 structural elements with descriptions.</h4>
 <ul>
-<li><a href="https://www.w3.org/TR/html5/sections.html#the-header-element">[<b>&lt;header&gt;</b>]</a>  Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;.</li>
-<li><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element">[<b>&lt;footer&gt;</b>]</a>  Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
-<li><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element">[<b>&lt;nav&gt;</b>]</a>  Section that contains the main navigation links (within the document or to other pages).</li>
-<li><a href="https://www.w3.org/TR/html5/sections.html#the-article-element">[<b>&lt;article&gt;</b>]</a>  Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</li>
-<li><a href="https://www.w3.org/TR/html5/sections.html#the-section-element">[<b>&lt;section&gt;</b>]</a>  Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.</li>
-<li><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element">[<b>&lt;time&gt;</b>]</a>  Used for marking up times and dates.</li>
-<li><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element">[<b>&lt;aside&gt;</b>]</a>  Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</li>
-<li><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element">[<b>&lt;figure&gt;</b>]</a> and <a href="https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element">[<b>&lt;figcaption&gt;</b>]</a>. Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</li>
+<li><a href="https://www.w3.org/TR/html5/sections.html#the-header-element"><b>&lt;header&gt;</b></a>  Introduction of "sectioning elements": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;.</li>
+<li><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element"><b>&lt;footer&gt;</b></a>  Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
+<li><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element"><b>&lt;nav&gt;</b></a>  Section that contains the main navigation links (within the document or to other pages).</li>
+<li><a href="https://www.w3.org/TR/html5/sections.html#the-article-element"><b>&lt;article&gt;</b></a>  Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</li>
+<li><a href="https://www.w3.org/TR/html5/sections.html#the-section-element"><b>&lt;section&gt;</b></a>  Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.</li>
+<li><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element"><b>&lt;time&gt;</b></a>  Used for marking up times and dates.</li>
+<li><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element"><b>&lt;aside&gt;</b></a>  Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</li>
+<li><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element"><b>&lt;figure&gt;</b></a> and <a href="https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element"><b>&lt;figcaption&gt;</b></a>  Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</li>
 <li><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element"><b>&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b></li>
 </ul>
   
@@ -1565,16 +1564,17 @@ Read also at the end of this section about the new \<main\> element .  This e
 <li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/">Structural Semantics: The Importance Of HTML5 Sectioning Elements</a></li>
 <li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">New Structural Elements in HTML5</a></li>
 </ul>
+
 <h3 id="ch1-3-3">1.3.3 Mixing All Elements Together: A Blog Example</h3>
 
 <h4>A blog example that uses the structural elements</h4>
 
-Let\'s study <a href="https://jsbin.com/bucokav/edit?html,output ">an example we put on JsBin</a> (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
+Let\'s study <a href="https://jsbin.com/bucokav/edit?html,output">an example we put on JsBin</a> (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
 
 <h4>Use a &lt;header&gt; at the top of the blog</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 14. image of the header element at the top of the blog (xx) ------------------->
+<!---------------- 14. image of the header element at the top of the blog (35) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image014.jpeg?raw=true"
@@ -2127,7 +2127,7 @@ Let\'s clarify this by looking at some example code:
 </body>
 ```
 
-The corresponding outline is:
+<h4>The corresponding outline is:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 26. outline of previous example (45) ------------------------------>
@@ -2153,7 +2153,7 @@ It\'s always better - mainly for accessibility reasons - to include a heading (
 
 Here are some examples:
 
-<b>Good (heading in each explicit section):</b>
+<h4>Good (heading in each explicit section):</h4>
 
 ```
 <section>
@@ -2162,7 +2162,7 @@ Here are some examples:
 </section>
 ```
 
-<b>Good (heading  in a \<header\> does not change anything)</b>
+<h4>Good (heading  in a \<header\> does not change anything)</h4>
 ```
 <section>
    <b><header></b>
@@ -2173,7 +2173,7 @@ Here are some examples:
 </section>
 ```
 
-<b>Bad (there is no Hx after the &lt;section&gt; - no heading):</b>
+<h4>Bad (there is no Hx after the &lt;section&gt; - no heading):</h4>
 
 ```
 <section>
@@ -2191,7 +2191,7 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 
 The outline of the last example looks like this:
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 27.  (xx) ------------------->
+<!---------------- 27. outline of last example (46) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image027.jpeg?raw=true"
@@ -2245,7 +2245,7 @@ This example has two headings in the \<header\>:
 Here is the resulting table of contents, notice the two subsections that appear, one for the H1, one for the H2:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 28. example structural elements --------------------------------->
+<!---------------------------- 28. example structural elements (47) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image028.jpeg?raw=true"
@@ -2311,7 +2311,7 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 Both of the examples above are semantically identical and produce the same outline:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 29. outline of previous examples ------------------------------>
+<!----------------------------- 29. outline of previous examples (48) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image029.jpeg?raw=true"
@@ -2765,7 +2765,7 @@ These elements have been introduced for displaying a foldable zone in an HTML do
 In the screenshot below, taken from the W3C specification page, the text next to the horizontal arrow is a \<summary\> element, and the text displayed when we click on the summary part, is the \<details\> element. This is a sort of \"accordion\" with foldable content.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------- 40. example of summary details elements from the w3c specs (xx) ----------------->
+<!-------------- 40. example of summary details elements from the w3c specs (59) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image040.png?raw=true"
@@ -2779,10 +2779,10 @@ The \<details\> element generates a simple widget to show/hide element content
 Here is an example of what can be done using these elements ) see the [online version on JSBin](https://jsbin.com/yociyel/1/edit?html,css,js,output):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 41. example of folded summary details (xx) ------------------------------->
+<!------------------------- 41. example of folded summary details (59) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image040.png?raw=true"
+<img src="/images/image041.png?raw=true"
    alt="example of Folded Summary Details"
    width="35%">
 &nbsp;
@@ -2792,7 +2792,7 @@ And here is what is displayed after clicking on the small arrow-shaped icon to t
 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 42. Example of summary details unfolded (xx) ------------------------------->
+<!------------------------ 42. Example of summary details unfolded (60) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image042.jpeg?raw=true"
@@ -2804,18 +2804,18 @@ And here is what is displayed after clicking on the small arrow-shaped icon to t
 <b>Here is the code of this example:</b>
 
 ```
-> <!DOCTYPE html>
-> <html lang="en"> ...
-> <body>
-> <details>
-> <summary>
-> How to beat the boss...spoiler alert !
-> </summary>
-> <p> Just aim to the red spots near his eyes</p>
-> <p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
-> </details>
-> </body>
-> </html>
+<!DOCTYPE html>
+<html lang="en"> ...
+<body>
+<details>
+<summary>
+How to beat the boss...spoiler alert !
+</summary>
+<p> Just aim to the red spots near his eyes</p>
+<p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
+</details>
+</body>
+</html>
 ```
 
 The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> element. By clicking on the icon at the left of the summary, the content of the \<details\> value is displayed/hidden.
@@ -2825,7 +2825,7 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> elem
 <b>Step 1: all folded:</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 43.  (xx) ------------------------------->
+<!----------------------------- 43. step one, unfolded example (60) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image043.jpeg?raw=true"
@@ -2837,7 +2837,7 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> elem
 <b>Step 2: click on top level summary icon, the first \"hidden\" part appears\...</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 44.  (xx) ------------------------------->
+<!------------------------- 44. step two, click top level summary (60) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image044.jpeg?raw=true"
@@ -2849,7 +2849,7 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> elem
 <b>Step3: click on embedded summary icon inside the part that has been previously unfolded</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 45.  (xx) ------------------------------->
+<!---------------------- 45. step three, click embeeded summary icon (61) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image045.jpeg?raw=true"
@@ -2884,7 +2884,7 @@ There are CSS pseudo classes to style this icon when it is in the open or clos
 Example1 see <a href="https://jsbin.com/tomehim/1/edit?html,css,output">online example</a>:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 46.  (xx) ------------------------------->
+<!------------------------ 46. how to beat the boss. spoiler alert (61) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image046.jpeg?raw=true"
@@ -2905,7 +2905,7 @@ In this example: red arrow, white background.
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 47.  (xx) ------------------------------->
+<!-------------------------- 47. how to beat the boss, continued (62) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image047.jpeg?raw=true"
@@ -2928,7 +2928,7 @@ It is also possible to change the icon itself using the CSS pseudo class :after
 <b>Example 2 (see it <a href="https://jsbin.com/sajusop/edit?html,css,output">online</a>):</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 43.  (xx) ------------------------------->
+<!--------------------------- 43. using css pseudo class after (62) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image043.jpeg?raw=true"
@@ -2938,7 +2938,7 @@ It is also possible to change the icon itself using the CSS pseudo class :after
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 48.  (xx) ------------------------------->
+<!----------------------------- 48.  (62) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image048.jpeg?raw=true"
@@ -2947,7 +2947,7 @@ It is also possible to change the icon itself using the CSS pseudo class :after
 &nbsp;
 <br/>
 
-CSS rules used in this example:
+<h4>CSS rules used in this example:</h4>
 
 Use a \"+\" shaped icon, pink, bold, etc\... :
 
@@ -2982,7 +2982,7 @@ Use a \"-\" shaped icon, white, when details are displayed:
 <h3 id="ch1-4-2">1.4.2 The &lt;time&gt; and &lt;mark&gt; Elements</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 49.  (xx) ------------------------------->
+<!---------------------- 49. picture of a clock with it's about time (63) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image049.jpeg?raw=true"
@@ -3064,10 +3064,9 @@ Using a "T" after the "P" marker allows you to indicate a more accurate duration
 Alternatively, you could use also a duration time component.
 
 From Bruce Lawson\'s article : <i>\"Whichever you choose, it's represented internally as a number of seconds. Because of this, you can't specify a duration in terms of months, because a month isn't a precise number of seconds; a month can last from 28 to 31 days. Similarly, a year isn't a precise number of seconds; it's 12 months and February sometimes has an extra day.</i>
-
 <i>You still can't represent dates before the Christian era, as years can't be negative. Neither can you indicate date ranges. To mark up From "21/02/2012 to 25/02/2012″, use two separate \<time\> elements.\"</i>
 
-Examples:
+<h4>Examples:</h4>
 ```
 <h2>Recipe:</h2>
 <ul>
@@ -3082,11 +3081,11 @@ Used without attributes, the value between the opening \<time\> and closing \
 
 <h4>External resources:</h4>
 <ul>
-<li>From the specification: <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element">html.specs.whatwg.org/multipage/text-level-semantics.html</a></li>
-<li>On MDN\'s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">developer.mozilla.org/en-US/docs/HTML/Element/time</a></li>
-<li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility">table</a> for &lt;time&gt;</a></li>
-<li>Old but interesting article by Bruce Lawson: <a href="https://www.brucelawson.co.uk/2012/best-of-time/">www.brucelawson.co.uk/2012/best-of-time/</a></li>
-<li>A CSS Tricks' article: <a href="(https://css-tricks.com/time-element/">'The 'time' element</a>.</li>
+<li>From the specification: <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element">html.specs.whatwg.org/multipage/text-level-semantics.html</a>.</li>
+<li>On MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">developer.mozilla.org/en-US/docs/HTML/Element/time</a>.</li>
+<li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility">table</a> for &lt;time&gt;</a>.</li>
+<li>Old but interesting article by Bruce Lawson: <a href="https://www.brucelawson.co.uk/2012/best-of-time/">www.brucelawson.co.uk/2012/best-of-time/</a>.</li>
+<li>A CSS Tricks' article: <a href="https://css-tricks.com/time-element/">The 'time' element</a>.</li>
 </ul>
 
 <h4>The &lt;mark&gt; element</h4>
@@ -3105,14 +3104,15 @@ The HTML \<mark\> tag is used for indicating text as marked or highlighted for
 
 <h4>Some use cases:</h4>
 <ul>
-<li>Display search results with search strings highlighted in the results.</li.
+<li>Display search results with search strings highlighted in the results.</li>
 <li>Highlight important parts of a text, such as "quoting parts", etc.</li>
-<li>Replace <strong> and &lt;em&gt; with &lt;mark&gt; when suitable.</li>
+<li>Replace &lt;strong&gt; and &lt;em&gt; with &lt;mark&gt; when suitable.</li>
 </ul>
 
 <a href="https://jsbin.com/tafelic/edit?html,output">Example 1:</a>
 
 <h4>Source code:</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -3152,10 +3152,10 @@ The HTML \<mark\> tag is used for indicating text as marked or highlighted for
 
 If you don\'t like the default yellow background, you may use CSS to change the style of the \<mark\> element:
 
-,h4>For example:</h4>
+<h4>For example:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------- 53. the var keyword is used to declare a variable in javascript (xx) --------------->
+<!----------- 53. the var keyword is used to declare a variable in javascript (66) --------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image053.jpeg?raw=true"
@@ -3175,8 +3175,7 @@ If you don\'t like the default yellow background, you may use CSS to change the 
 
 <h4>External resources:</h4>
 <ul>
-<li>From the specification: <https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element>
-
+<li>From the specification: <a href=https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element">Click here.</a></li>
 <li>On MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark">developer.mozilla.org.</a></li>
 <li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark#Browser_compatibility">table</a> for &lt;time&gt;.</li>
 <li>An article on Web Platform News: <a href="https://webplatform.news/issues/2019-02-28">The &lt;mark&gt; element could help make your text more scannable.</a></li>
@@ -3244,7 +3243,7 @@ The above example will cause the browser that invoked this server-side code to
 <h4>To download a file using an arbitrary name: the download attribute</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------ 54. picture of a road sign with the words 'new way' (68) ---------->
+<!------------------ 54. picture of a road sign with the words 'new way' (68) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image054.jpeg?raw=true"
@@ -3286,13 +3285,13 @@ This will indeed force the download of an image with a filename different from i
 &nbsp;
 <br/>
 
-<h4Serverless download demo (by E.Bilderman)</h4>
+<h4>Serverless download demo (by E.Bilderman)</h4>
 
 This demo shows the use of the download attribute together with the HTML5 File, FileSystem and FileWriter APIs (to be studied later in this course) for generating on-the-fly content from JavaScript code, and proposing downloading it to a file.  
 
 We won\'t detail this demo here, but take a look if you are curious to see what can be done with this new download attribute. As the FileWriter and FileSystem APIs are still supported only by Google Chrome (other browsers need polyfills), you will need Google Chrome to try it.
 
-We have also put the simplified [source code of this demo on JSBin.com](https://jsbin.com/muluwey/1/edit?html,css,js,output) for you to play with.
+We have also put the simplified <a href="https://jsbin.com/muluwey/1/edit?html,css,js,output">source code of this demo on JSBin.com</a> for you to play with.
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 57. demo of the html5 download attribute (69) ------------------------->
@@ -3318,7 +3317,7 @@ HTML5 gives us a new translate attribute. This attribute is used to limit the 
 <ul>
 <li>HTML pages that contain source code: you would certainly not like to see the Java or PHP or whatever programming language parts of your page translated into another spoken language!</li>
 <li>Video game Web sites that propose cheat codes; the codes do not have to be translated,</li>
-<li>Street names, author names in an \"about\" page must not be translated,</li>
+<li>Street names, author names in an "about" page must not be translated,</li>
 <li>etc.</li>
 </ul>
 
@@ -3328,12 +3327,13 @@ Both <a href="https://translate.google.com/">Google translate</a> and <a href
 
 <a href="https://www.w3.org/TR/html5/dom.html#the-translate-attribute">The specification about the translate attribute</a> tells us that  <i>\"The translate attribute is an enumerated attribute that is used to specify whether an element\'s attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.
 
-The attribute\'s keywords are the empty string, yes, and no. The empty string and the yes keyword map to the yes state. The no keyword maps to the no state. In addition, there is a third state, the inherit state, which is the missing value default (and the invalid value default).\"*
+The attribute\'s keywords are the empty string, yes, and no. The empty string and the yes keyword map to the yes state. The no keyword maps to the no state. In addition, there is a third state, the inherit state, which is the missing value default (and the invalid value default).
 
-<h4> Example illustrating how to specify parts of an HTML element that should not be translated:</h4>
+<h4>Example illustrating how to specify parts of an HTML element that should not be translated:</h4>
 ```
-1.  <span <b>[translate="no"]</b> class="author">[Michel Ham]</span\>
+1.  <span <b>[translate="no"]</b> class="author">[Michel Ham]</span>
 ```
+
 In the above example, a \<span\> element defines an author (of a blog, for example) who is named Michel Ham. However, his family name is the same as pork and would be translated to \"Michel Jambon\" in French, or Michel Jamón in Spanish\...
 
 Using the translate=\"no\" attribute should prevent this behavior\...
@@ -3347,29 +3347,27 @@ Will be correctly translated into French by:
 ```
 \...where all of the end of the sentence has been translated except the author\'s name.
 
-<h4> Inheritance between elements</h4>
+<h4>Inheritance between elements</h4>
 
 When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true.
 ```
-1.  <p <b>[translate="no"]</b>>This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.[<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>]. This is the end of the paragraph\...</p>
+1.  <p <b>[translate="no"]</b>This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.[<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>]. This is the end of the paragraph\...</p>
 ```
-<h4>External resources:</h4
+<h4>External resources:</h4>
+<ul>
+<li>From the specification: <a href="https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute">the translate attribute</a></li>
+<li>From MDN\'s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate</a></li>
+<li>Its corresponding <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate#Browser_compatibility">browser compatibility table</a></li>
+<li>An article from W3C\'s Internationalization Activity: <a href="https://www.w3.org/International/questions/qa-translate-flag">"Using HTML\'s translate attribute"</a>
+</ul>
 
--   From the specification: [the translate attribute](https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute)
+<h3 id="ch1-5-1">1.5.1 Microdata</h3>
 
--   From MDN\'s Web Docs: <https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate>
+There are several ways to provide machine-readable content embedded in a classical Web document: <a href="https://www.w3.org/TR/html-rdfa/">HTML+RDFa</a>, <a href="http://microformats.org/">microformats</a>, <a href="https://json-ld.org/">JSON-LD</a>, HTML5 microdata. In this section, we focus on microdata.
 
-    -   Its corresponding [browser compatibility table](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate#Browser_compatibility)
+Adding microdata to Web pages helps search engines to better understand the pages\' content, their topics, etc. The main purpose of microdata is <a href="https://en.wikipedia.org/wiki/Search_engine_optimization)(SEO">Search Engine Optimization</a>SEO.
 
--   An article from W3C\'s Internationalization Activity: [\"Using HTML\'s translate attribute\"](https://www.w3.org/International/questions/qa-translate-flag)
-
-<h3 id="ch1-5">1.5 Microdata</h3>
-
-There are several ways to provide machine-readable content embedded in a classical Web document: [HTML+RDFa](https://www.w3.org/TR/html-rdfa/), [microformats](http://microformats.org/), [JSON-LD](https://json-ld.org/), HTML5 microdata. In this section, we focus on microdata.
-
-Adding microdata to Web pages helps search engines to better understand the pages\' content, their topics, etc. The main purpose of microdata is [Search Engine Optimization ](https://en.wikipedia.org/wiki/Search_engine_optimization)(SEO).
-
-This information is not visible to humans: it is pure *semantic information*. Popular kinds of microdata are events, a person\'s profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. 
+This information is not visible to humans: it is pure <i>semantic information</i>. Popular kinds of microdata are events, a person\'s profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. 
 
 <h4>Quick example of microdata that describes a person</h4>
 ```
@@ -3426,16 +3424,14 @@ In the following sections, we look more closely at the itemprop, itemscope a
 <h4>Data that can be processed, organized, structured, or presented in a given context</h4>
 
 Different use cases:
+<ul>
+<li>The browser, or a browser extension, may interpret the last example as an address and may propose to send it to a map application,</li>
+<li>A Web crawler may interpret this as an address and display it in its responses using a dedicated presentation layout,</li>
+<li>Some JavaScript code in the page can access this data,</li>
+<li>With other types of microdata, for events, for example, the browser may pop up a calendar application, etc.</li>
+</ul>
 
--   The browser, or a browser extension, may interpret the last example as an address and may propose to send it to a map application,
-
--   A Web crawler may interpret this as an address and display it in its responses using a dedicated presentation layout,
-
--   Some JavaScript code in the page can access this data,
-
--   With other types of microdata, for events, for example, the browser may pop up a calendar application, etc.
-
-<b>Note</b>: For advanced users, Microdata is very similar to [microformats](http://microformats.org/), which use HTML classes, or to [RDFa](https://www.w3.org/TR/xhtml-rdfa-primer/), which doesn't validate in HTML4 or HTML5. Because RDFa was considered to be too hard for authors to write, microdata is HTML5\'s answer to help embed semantics into html documents.
+<b>Note</b>: For advanced users, Microdata is very similar to <a href="http://microformats.org/">microformats</a>, which use HTML classes, or to <a href="https://www.w3.org/TR/xhtml-rdfa-primer/">RDFa</a>, which doesn't validate in HTML4 or HTML5. Because RDFa was considered to be too hard for authors to write, microdata is HTML5\'s answer to help embed semantics into html documents.
 
 <h4>External resources</h4>
 -   [W3C\'s HTML Microdata Working Draft](https://www.w3.org/TR/microdata/)
@@ -3668,7 +3664,7 @@ Again, look at the Person/Address example:
 19. 
 20. ...
 ```
-The properties at *lines 8-12* refer to the address nested microdata (they are defined in the Address vocabulary, not the Person vocabulary), and \"France\" (*line 14*) is a property that refers to the Country vocabulary.
+The properties at <i>lines 8-12</i> refer to the address nested microdata (they are defined in the Address vocabulary, not the Person vocabulary), and \"France\" (<i>line 14</i>) is a property that refers to the Country vocabulary.
 
 <b>Several properties with the same name but different values</b>
 
@@ -3799,7 +3795,7 @@ Microdata:
 View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 online</a>.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 67.  (xx) ------------------------------->
+<!-------------------------- 67. example page, table of contents (81) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image067.jpeg?raw=true"
@@ -3810,7 +3806,7 @@ View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 onlin
 
 <h3 id="ch2-1">Module 2: HTML5 Multimedia</h3>
 
-<h3 id="ch2-2-1">2.2.1 The <video> Element</h3>
+<h3 id="ch2-2-1">2.2.1 The &lt;video&gt; Element</h3>
 
 Until 2012, it was only possible to integrate an audio or video player using the proprietary Flash technology, marketed by the company Macromedia (later acquired by Adobe). The \<video\> element of HTML5 is one of the three \"Flash killers\" (the others being \<audio\> for the sound and \<canvas\> for drawing and animation).\
 *(Note that Adobe [no longer supports Flash Player](https://www.adobe.com/products/flashplayer/end-of-life.html) since December 31, 2020)*
@@ -3818,7 +3814,7 @@ Until 2012, it was only possible to integrate an audio or video player using the
 Check the HTML code of the following CodePen:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 68.  (xx) ------------------------------->
+<!------------------------- 68. example sample page using codepen (82) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image068.jpeg?raw=true"
@@ -3828,20 +3824,19 @@ Check the HTML code of the following CodePen:
 <br/>
 
 Please note that:
-
--   The controls attribute indicates that a control panel with play/stop/volume/progress widgets should be displayed;
-
--   Usually the browser  will use the first format it recognizes  (in this case, the browser checks whether mp4 is supported, and if not, it will check for the ogg format, and so on). Some browsers may use a different heuristic and choose a \"preferred\" format;
-
--   The \<video\> element is a DOM member, so  CSS styling can be applied, as well as manipulation using the DOM API.
+<ul>
+<li>The controls attribute indicates that a control panel with play/stop/volume/progress widgets should be displayed;</li>
+<li>Usually the browser  will use the first format it recognizes  (in this case, the browser checks whether mp4 is supported, and if not, it will check for the ogg format, and so on). Some browsers may use a different heuristic and choose a \"preferred\" format;</li>
+<li>The &lt;video&gt; element is a DOM member, so  CSS styling can be applied, as well as manipulation using the DOM API.</li>
+</ul>
 
 You will learn more about the different attributes of the \<video\> element later on in the course.
 
-<h4>Current browser support for the \<video\> element</h4>
+<h4>Current browser support for the &lt;video&gt; element</h4>
 
 The \<video\> element is supported by all major browsers. See the [support table from CanIUse.](https://caniuse.com/video)
 
-<h4>Restriction: you cannot embed a YouTube or DailyMotion video using the \<video\> element</h4>
+<h4>Restriction: you cannot embed a YouTube or DailyMotion video using the &lt;video&gt; element</h4>
 
 Help! \<video src=\"my youtube video URL\"\>\</video\> does not work! 
 
@@ -3854,8 +3849,9 @@ Usually you have an \"embed\" button close to the videos that prompts you with
 <b>An example using YouTube:</b>
 
 Here is the HTML code you need to copy and paste in order to embed a video:
-
-1.  \<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/WMFXg-kni0U\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\>\</iframe\>
+```
+1.  <iframe width="560" height="315" src="https://www.youtube.com/embed/WMFXg-kni0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```
 
 The YouTube video embedded in this page by the above code: it\'s HTML5 but it\'s not a \<video\> element directly inserted in the HTML of this page, it\'s an \<iframe\>.
 
@@ -6627,14 +6623,13 @@ Some of you may not be used to \"asynchronous programming\", \"callbacks\" etc. 
 <h3 id="ch3-2-2">3.2.2 The \<canvas\> Element</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 120. view of the javascript console (xxx) ------------------->
+<!--------------- 121. canvas element logo (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image120.jpeg?raw=true"
-   width="50%"
-   alt="View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc." />
+<img src="./images/image121.jpeg?raw=true"
+   width="10%"
+   alt="Canvas element logo." />
 </p>
-![canvas element logo](./images/image121.jpeg){width="1.0in" height="1.0in"}
 
 The \<canvas\> tag was introduced into the HTML specification around 2010 as a \"Flash killer.\" At the time, popular video games used this proprietary technology and only a few browsers supported it. The HTML canvas allows drawing and animation at 60 frames per second, in 2D or 3D.
 
