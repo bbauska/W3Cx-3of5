@@ -2162,7 +2162,7 @@ Here are some examples:
 </section>
 ```
 
-<h4>Good (heading  in a \<header\> does not change anything)</h4>
+<h4>Good (heading in a &lt;header&gt; does not change anything)</h4>
 ```
 <section>
    <b><header></b>
@@ -2191,7 +2191,7 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 
 The outline of the last example looks like this:
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 27. outline of last example (46) ------------------->
+<!------------------------------ 27. outline of last example (46) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image027.jpeg?raw=true"
@@ -2364,7 +2364,7 @@ They are also useful for checking the presence of headings in each sectioning co
 <h3 id="ch1-3-8">1.3.8 The &lt;main&gt; Element</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 31. the main element (##) ------------------------------->
+<!---------------------------------- 31. the main element (49) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image031.jpeg?raw=true"
@@ -2376,13 +2376,13 @@ If you use \<nav\> / \<header\> / \<footer\> etc. to structure your document, yo
 
 We have seen the different sectioning elements of HTML5, so why didn\'t we talk about the \<main\> element earlier in this part of the course? Shouldn\'t  \<main\>\...\</main\> be used in place of  \<div class=\"main\"\>\...\</div\>?
 
-The \<main\> element is supported by major modern browsers (see the corresponding <a hre="https://caniuse.com/#feat=mdn-html_elements_main">[support table]</a> on CanIUse and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main#Browser_compatibility">MDN\'s brower compatibility page</a>.
+The \<main\> element is supported by major modern browsers (see the corresponding <a href="https://caniuse.com/#feat=mdn-html_elements_main">support table</a> on CanIUse and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main#Browser_compatibility">MDN\'s brower compatibility page</a>.
 
 This element is subject to some constraints:
-
--   There must not be more than one \<main\> element in a document,
-
--   It must not be a descendant of an \<article\>,\<aside\>, \<footer\>, \<header\>, or \<nav\> element.
+<ul>
+<li>There must not be more than one &lt;main&gt; element in a document,</li>
+<li>It must not be a descendant of an &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;, &lt;header&gt;, or &lt;nav&gt; element.</li>
+</ul>
 
 And finally, here are some examples (from <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">the HTML5 specification</a>) that mix the \<main\> element with the other sectioning elements already seen in the course:
 
@@ -2491,7 +2491,6 @@ Let\'s go back to our blog example and see what can be improved:
 <li>Did we use sectioning elements or implicit sections?</li>
 <li>Can we embed a table of contents?</li>
 </ul>
-<br/>
 
 <a href="https://jsbin.com/heboke/edit?html,output">The blog example is online at JsBin</a>:  let\'s see below what the Google Chrome HTML5 Outliner extension showed.
 
@@ -2543,7 +2542,6 @@ We need to add a heading in the \<nav\> element. This will both fix the outline 
 ```
 
 <b>Here is the fixed result:</b>
-
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 33. good outline without the untitled nav (53) -------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4843,7 +4841,7 @@ The example uses a \<track\> element to insert basic *captions* to the video: so
 </video>
 ```
 
-**Notes:</b>
+<b>Notes:</b>
 
 -   The \<track\> element at *line 9* has an attribute named kind that indicates the type of the track that is included. Possible values are: subtitles, captions, descriptions, chapters or metadata.
 
@@ -4996,7 +4994,7 @@ This format is rather simple, but we still recommend reading [this excellent art
 
 Each \"element\" in this file has a starting and ending time, plus a value (the text that will be displayed), followed by a blank line (blank lines are separators between elements).
 
-**Each element is called \"a cue\"</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, in particular the getCueById() method of TextTrack objects.
+<b>Each element is called \"a cue\"</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, in particular the getCueById() method of TextTrack objects.
 
 Example of a .vtt file with numeric IDs:
 
@@ -5132,13 +5130,13 @@ The WebVTT file is shown below. Notice the new attributes that have been added o
 3.  00:00:01.000 \--\> 00:00:05.000
 4.  These captions test some features of the WebVTT formats
 5.  
-6.  00:00:06.000 \--\> 00:00:10.000** line:5%**
+6.  00:00:06.000 \--\> 00:00:10.000 line:5%
 7.  This cue is positioned at the top of the video
 8.  
-9.  00:00:11.000 \--\> 00:00:15.000** position:5% align:start**
+9.  00:00:11.000 \--\> 00:00:15.000 position:5% align:start
 10. This cue is positioned at the left side of the video.
 11. 
-12. 00:00:16.000 \--\> 00:00:20.000 position:95%** align:end**
+12. 00:00:16.000 \--\> 00:00:20.000 position:95% align:end
 13. And this one ate the right side.
 14. 
 15. 00:00:21.000 \--\> 00:00:25.000** size:33%**
@@ -15584,7 +15582,7 @@ value=5 min=0, max=10 step=\"any\", ticks at 0, 5 and 10:
 In this chapter, we go over the form attributes that have been introduced by HTML5.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 265.  (xxx) ------------------->
+<!--------------- 265. html5 form attributes (319) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image265.jpeg?raw=true"
@@ -15604,7 +15602,7 @@ This attribute is useful for putting input fields outside the form itself. The f
 
 <h4>Typical use</h4>
 
-[Try this interactive example in CodePen](http://codepen.io/w3devcampus/pen/jmdpyv),  or try it directly in your browser:
+<a href="http://codepen.io/w3devcampus/pen/jmdpyv">Try this interactive example in CodePen</a>,  or try it directly in your browser:
 
 Enter your name (field outside the form): ![](./images/image266.wmf)
 
@@ -15650,8 +15648,14 @@ This attribute applies either to the \<form\> element or on individual \<input\>
 
 Possible values of this attribute: on/off.
 
-</h4>
-![on off funny picture](./images/image267.jpeg){width="1.6354166666666667in" height="1.2291666666666667in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 267. keep calm and switch it off and on again (321) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image267.jpeg?raw=true"
+   width="16%"
+   alt="Keep calm and switch off and on, again." />
+</p>
 
 If applied to the \<form\> element, all input fields attached to the form (inside or linked to it using the form attribute), will have auto-completion set by default to the value of the autocomplete attribute of the form.
 
@@ -15661,9 +15665,16 @@ Sometimes this autocomplete behavior is disabled by default in some Web browsers
 
 This attribute targets most input types (those that allow typing in them).
 
-### Typical use
+<h4>Typical use</h4>
 
-![example of use of the autocomplete attribute](./images/image268.jpeg){width="4.0in" height="2.9568482064741906in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 268. example of use of the autocomplete attribute (321) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image268.jpeg?raw=true"
+   width="40%"
+   alt="Keep calm and switch off and on, again." />
+</p>
 
 Try it in your browser here:
 
@@ -15696,7 +15707,7 @@ Source code extract:
 13. </form>
 ```
 
-<h3 id="ch5-5-4">/5.5.4 autofocus</h3>
+<h3 id="ch5-5-4">5.5.4 autofocus</h3>
 
 This attribute is useful for transferring the focus to a field other than the first field in a page/form (by default the first input field has the focus).
 
@@ -15716,7 +15727,7 @@ Enter at least 6 chars, max 9 chars (this field has the autofocus attribute):![]
 
 Bottom of Form
 
-**Notice that the focus in on the second input field, thanks to the autofocus attribute.**
+<b>Notice that the focus in on the second input field, thanks to the autofocus attribute.</b>
 
 Extract from source code:
 ```
@@ -15734,13 +15745,13 @@ Extract from source code:
 12. </form>
 ```
 
-### Note about Boolean attributes syntax
+<h4>Note about Boolean attributes syntax<h4>
 
-**Important: **: For \"Boolean\" attributes, such as autofocus, required, optional, etc., you are able to either write autofocus=\"autofocus\", or just use the attribute name \"autofocus\" without setting a value.
+<b>Important: </b>: For \"Boolean\" attributes, such as autofocus, required, optional, etc., you are able to either write autofocus=\"autofocus\", or just use the attribute name \"autofocus\" without setting a value.
 
-Read [these explanations](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes) for a complete description of the syntax of Boolean attributes.
+Read <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes">these explanations</a> for a complete description of the syntax of Boolean attributes.
 
-### Source code for the knowledge check 5.5.4
+<h4>Source code for the knowledge check 5.5.4</h4>
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15779,7 +15790,7 @@ Here is a small code extract from a more complete example shown in the section a
 Please try it in your  browser (Type \"F\", \"E\", \"O\", C\" etc., or just click inside the field and use the drop down menu). Note that you can also enter any value; if it does not start with one of these letters it will be accepted but will not trigger auto-completion.
 
 Top of Form
-
+<!------------------------------------- wmf shit ------------------------------------------------->
 List attributePreferred browser![](./images/image269.wmf) ![](./images/image270.wmf)
 
 Bottom of Form
@@ -15789,9 +15800,9 @@ Source code extract:
 ```
 1.  <form>
 2.      ...
-3.      <input **list="browsers"** id="mybrowser" />
+3.      <input list="browsers"** id="mybrowser" />
 4.  
-5.      <datalist **id="browsers"**>
+5.      <datalist id="browsers"**>
 6.         <option value="Internet Explorer">
 7.         <option value="Firefox">
 8.         <option value="Chrome">
@@ -15814,8 +15825,14 @@ A **must read**: a good catalog of ready-to-go patterns is available at html5pat
 
 You can also try [this online JavaScript RegExps tester](https://regex101.com/#javascript), and follow [this tutorial about \"using JavaScript RegExps\"](https://regexone.com/) that has step by step exercises and explanations.
 
-
-![html5patterns.com screenshot that shows a menu on the left with categories and patterns on the right](./images/image271.jpeg){width="4.020833333333333in" height="2.4895833333333335in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 271.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image271.jpeg?raw=true"
+   width="40%"
+   alt="html5patterns.com screenshot that shows a menu on the left with categories and patterns on the right" />
+</p>
 
 <h4>Typical use</h4>
 
@@ -15834,7 +15851,7 @@ It\'s best practice to systematically add a title attribute with a value that in
 
 <h4>Example #1</h4>
 
-Try this [online example at JSBin ](https://jsbin.com/xeyuqux/1/edit?html,output)or directly in your browser below:
+Try this <a href="https://jsbin.com/xeyuqux/1/edit?html,output)or">online example at JSBin </a> directly in your browser below:
 
 Please enter a 3 letter country code (green = valid, pink = invalid): ![](./images/image266.wmf)
 
@@ -15842,7 +15859,7 @@ With the previous example, until the value of the input field is equal to 3 alph
 
 As seen in the previous examples, we used some CSS pseudo classes for automatically setting the background-color of the input field as we type.
 
-Complete source code:
+<h4>Complete source code:</h4>
 
 ```
 1.  <!DOCTYPE html>
@@ -15871,13 +15888,13 @@ Complete source code:
 
 <h4>Example #2: mixing several other attributes with the pattern attribute</h4>
 
-Try this [example online](https://jsbin.com/bozudeg/1/edit?html,output) or in your browser below:
+Try this <a href="https://jsbin.com/bozudeg/1/edit?html,output">example online</a> or in your browser below:
 
 Attributes used: placeholder (for displaying a ghost example value), pattern, required (empty field = invalid)\...
 
 Enter a pseudo (6-12 characters): ![](./images/image218.wmf)
 
-Complete source code:
+<h4>Complete source code:</h4>
 
 ```
 1.  <!DOCTYPE html>
@@ -15905,22 +15922,23 @@ Complete source code:
 23. </html>
 ```
 
-<h4>Example #3: an \<input type=\"url\"\> element with a pattern attribute allowing only certain protocols</h4>
+<h4>Example #3: an &lt;input type="url"&gt; element with a pattern attribute allowing only certain protocols</h4>
 
-[Online example at JSBin ](https://jsbin.com/nulahey/1/edit?html,output)or try it in your browser:
+<a href="https://jsbin.com/nulahey/1/edit?html,output)or">Online example at JSBin </a> try it in your browser:
 
 Enter the URL of your repository (http, https or ftp): 
 
-Source code extract:
-
-1.  \<input
-2.      id=\"website\"
-3.      name=\"url\"
-4.      type=\"url\"
-5.      placeholder=\"http://www.domain.com\"
-6.      title=\"http, https or ftp allowed\"
-7.      pattern=\"(http\|https\|ftp)\\:\\/\\/\[a-zA-Z0-9\\-\\.\\/\]\*\"
+<h4>Source code extract:</h4>
+```
+1.  <input
+2.      id="website"
+3.      name="url"
+4.      type="url"
+5.      placeholder="http://www.domain.com"
+6.      title="http, https or ftp allowed"
+7.      pattern="(http|https|ftp)://[a-zA-Z0-9-./]"
 8.  />
+```
 
 <h3 id-"ch5-5-7">5.5.7 min, max and step</h3>
 
@@ -15934,18 +15952,18 @@ Their detailed use with these input fields have already been explained in sectio
 ```
 1.  <input id="mydate" name="mydate"
 2.         type="date"
-3.        ** min="2012-01-01"**
-4.         **max="2013-01-01"**
+3.         min="2012-01-01"
+4.         max="2013-01-01"
 5.         value="2012-01-01"
 6.  />
 7.   
 8.  <input name="time" id="time" type="time"
-9.          **min="09:00"**
-10.         **max="17:00"**
+9.          min="09:00"
+10.         max="17:00"
 11.         value="12:00"
 12. />
 13.  
-14. <input id="range" name="range" type="range" **min="0" max="100" step="5"**/>
+14. <input id="range" name="range" type="range" min="0" max="100" step="5"/>
 ```
 
 <h3 id="ch5-5-8">5.5.8 multiple</h3>
@@ -15967,9 +15985,9 @@ Or try it below in your browser: type in a list of email addresses separated by 
 
 This form uses: \<input type=\"email\" name=\"myemail\" **multiple**\>
 
-******************* image here ***********************
+<!--- ******************* image here *********************** --->
 
-Complete source code:
+<h4>Complete source code:</h4>
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -16019,7 +16037,7 @@ Complete source code:
 46.  
 ```
 
-**Best practice:  add a title attribute indicating what you expect as a valid entry** (*lines 25* and *38*). If you enter bad values and submit, you will see in the error message the string value of the title attribute.
+<b>Best practice:  add a title attribute indicating what you expect as a valid entry</b> (<i>lines 25</i> and <i>38</i>). If you enter bad values and submit, you will see in the error message the string value of the title attribute.
 
 With \<input type=\"file\"\>
 
@@ -16039,7 +16057,7 @@ Example without the multiple attribute:
 
 Use the standard key modifiers (shift, control, command) for selecting multiple files when the file chooser dialog popup.
 
-h3 id="ch5-5-9">5.5.9 a warning</h3>
+<h3 id="ch5-5-9">5.5.9 a warning</h3>
 
 In the following pages, we present a set of rarely used attributes introduced by HTML5. 
 
@@ -16072,16 +16090,16 @@ The formmethod attribute does the same with the POST/GET method attribute of the
 <h4>Examples</h4>
 
 Here are two online examples at JSBin:
+<ul>
+<li><a href="https://jsbin.com/tequkak/2/edit?html,output">Example 1</a></li>
+<li<a href="https://jsbin.com/tequkak/2/edit?html,output">Example 2</a></li>
+</ul>
 
--   [Example 1](https://jsbin.com/tequkak/2/edit?html,output) 
-
--   [Example 2](https://jsbin.com/tequkak/2/edit?html,output)
-
-The first shows a form with two submit buttons: 
-
--   the first button submits to the default URL specified by the action attribute of the form,
-
--   the second button submits to another action specified by its formaction attribute.
+The first shows a form with two submit buttons:
+<ul>
+<li>the first button submits to the default URL specified by the action attribute of the form,</li>
+<li>the second button submits to another action specified by its formaction attribute.</li>
+</ul>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 272.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -16093,10 +16111,10 @@ The first shows a form with two submit buttons:
 <br/>
 
 The second example shows a form with two submit buttons:
-
--   the first button submits using a GET,
-
--   the second button using a POST:
+<ul>
+<li>the first button submits using a GET,</li>
+<li>the second button using a POST:</li>
+</ul>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 273.  (xx) ------------------------------->
@@ -16140,7 +16158,7 @@ This attribute\'s value indicates where the response from the form submission sh
 <h4>Typical use</h4>
 ```
 1.  <input type="submit"
-2.         **formtarget="_blank"**
+2.         formtarget="_blank"**
 3.         value="Submit but show results in a new window/tab">
 ```
 
@@ -16178,7 +16196,7 @@ Source code:
 5.       \<input type=\"text\" name=\"familyName\" id=\"familyName\"\>\<br\>
 6.       \<input type=\"submit\" value=\"Submit as usual\"\>
 7.       \<input type=\"submit\"
-8.             **formtarget=\"\_blank\"**
+8.             formtarget=\"\_blank\"**
 9.             value=\"Submit but show results in a new window/tab\"\>
 10. \</form\>
 ```
@@ -16214,7 +16232,7 @@ Note that when you send form content using Ajax, this attribute is not needed, a
 
 Since HTML5, this attribute can also be used in \<input type=\"submit\"\> input fields.
 
-If an \<input type=\"submit\"\> field has this attribute, then, **when submitted using method=POST**, the browser will send the form content encoded with the method specified by the formenctype attribute. And this overrides the value of the enctype attribute specified in the \<form enctype=\...\> element (or its default value, if not present).
+If an \<input type=\"submit\"\> field has this attribute, then, <b>when submitted using method=POST**, the browser will send the form content encoded with the method specified by the formenctype attribute. And this overrides the value of the enctype attribute specified in the \<form enctype=\...\> element (or its default value, if not present).
 
 <h4>Typical use</h4>
 ```
@@ -16369,7 +16387,7 @@ Top of Form
 
  x  = 6
 
-**Explanations about the attributes specific to the \<output\> element:**
+<b>Explanations about the attributes specific to the \<output\> element:**
 
 -   for: a space-separated list containing the elements\' ids whose values went into the calculation.
 
@@ -16594,9 +16612,9 @@ We have already seen this element in action with different \<input\> elements, s
 &nbsp;
 <br/>
 
-It is often \"linked\" to input fields either for restricting the value set that can be proposed  (i.e., restricted set of colors or possible dates, or for displaying slider ticks, as shown above), **but it may also be used in a more general way, for providing client-side auto-completion without the need to use JavaScript.**
+It is often \"linked\" to input fields either for restricting the value set that can be proposed  (i.e., restricted set of colors or possible dates, or for displaying slider ticks, as shown above), <b>but it may also be used in a more general way, for providing client-side auto-completion without the need to use JavaScript.**
 
-It works with the new list attribute of input fields introduced by HTML5. **The id of the \<datalist\> must match the value of the list attribute in the input field. A datalist can be shared by several input fields. **It suffices that their list attribute matches the id of the datalist element.
+It works with the new list attribute of input fields introduced by HTML5. <b>The id of the \<datalist\> must match the value of the list attribute in the input field. A datalist can be shared by several input fields. <b>It suffices that their list attribute matches the id of the datalist element.
 
 The input field is related to the datalist that will propose auto-completion based on \<datalist\> values.
 
@@ -16617,9 +16635,9 @@ Here is an <a href="(https://jsbin.com/tiqexel/1/edit?html,output">online exampl
 Source code of this example:
 ```
 1.  <form action="demo_form.asp" method="get">
-2.       <input **list="browsers"** name="browser" />
+2.       <input list="browsers"** name="browser" />
 3.  
-4.       <datalist **id="browsers"**>
+4.       <datalist id="browsers"**>
 5.           <option value="Internet Explorer">
 6.           <option value="Firefox">
 7.           <option value="Chrome">
@@ -16718,7 +16736,7 @@ Submit form
 
 Try the online example with different Web browsers, both with and without the CSS rules. See the differences between FireFox/Chrome/Opera in the default visual feedback behavior. Don\'t worry: all default behavior can be overridden if you provide your own CSS rules.
 
-**Best practice:  We recommend that you ALWAYS provide default CSS rules that give visual feedback to the user\'s input.**
+Best practice:  We recommend that you ALWAYS provide default CSS rules that give visual feedback to the user\'s input.**
 
 Example #2: add CSS transitions + an icon/marker to the right of the input fields
 
@@ -16731,21 +16749,21 @@ Homepage (URL):
 Phone number: 
 Submit form
 
-**Bottom of Form**
+<b>Bottom of Form</b>
 
 <h4>Source code extract:</h4>
 ```
 1.  .myForm input:focus {
-2.    ** padding-right:70px;**
+2.     padding-right:70px;**
 3.  }
 4.  .myForm input {
-5.    ** transition: padding .25s;**
+5.     transition: padding .25s;**
 6.  }
 7.  
-8.  .myForm **input:required:valid **{
+8.  .myForm input:required:valid **{
 9.     background:url('https://i.imgur.com/BJolppS.png') no-repeat right top;
 10. }
-11. .myForm **input:required **{
+11. .myForm input:required **{
 12.    background:url('https://i.imgur.com/7pIN7wz.png') no-repeat right top;
 13. }
 ```
@@ -16769,7 +16787,7 @@ Homepage (URL):
 Phone number: 
 Submit form
 
-**Bottom of Form**
+<b>Bottom of Form</b>
 
 <h4>Extract from source code:</h4>
 
@@ -16779,7 +16797,7 @@ Submit form
 3.      <legend>Type invalid values and see the result</legend>
 4.      <label for="myEmail" class="formLabel">E-mail:</label>
 5.      <input type="email" id="myEmail"
-6.             **title="You don't know what an email address looks like, do you?"**
+6.             title="You don't know what an email address looks like, do you?"
 7.             required/><br>
 8.  ...
 9.      <button>Submit form</button><br />
@@ -17238,37 +17256,35 @@ This data is located in a store attached to the origin of the page. We created[ 
 Once opened in your browser, the JavaScript code is executed. With the browser dev. tools, we can check what has been stored in the localStorage for this domain:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 297. example of localstorage (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image297.jpeg?raw=true"
-   alt=""
-   width="35%">
+   alt="Example of localStorage"
+   width="65%">
 &nbsp;
 <br/>
-![example of localStorage](./images/image297.jpeg){width="6.5in" height="5.430555555555555in"}
 
 Here is a view of the devtools. In more recent versions of Google Chrome, the \"Resources\" tab is named \"Applications\":
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!------------- 298. dev tools can be used to show what is in the local storage (xx) ------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image298.jpeg?raw=true"
+   alt="dev tools can be used to show what is in the local storage"
+   width="65%">
 &nbsp;
 <br/>
-![dev tools can be used to show what is in the local storage](./images/image298.jpeg){width="6.5in" height="6.209027777777778in"}
 
-### Differences with cookies?
+<h4>Differences with cookies?</h4>
 
 Cookies are also a popular way to store key-value pairs. Web Storage, however, is a more powerful technique than cookies. The main difference is in size limits: cookies are limited to a few KBytes whereas Web Storage may extend to several MBytes. Also cookies generate additional HTTP request traffic (whether to request a Web page, an image, a stylesheet, a JavaScript file, etc.).
 
 Objects managed by Web Storage are no longer carried on the network and HTTP, and are easily accessible (read, change and delete) from JavaScript, using the Web Storage API.
 
-### External resources
-
+<h4>External resources</h4>
+<ul>
 -   From W3C\'s specification: [The W3C Web Storage API recommendation](https://www.w3.org/TR/webstorage/)
 
 -   An Interesting article on Web.dev: [Storage for the Web](https://web.dev/storage-for-the-web/)
@@ -17299,7 +17315,7 @@ Where firstName in red is the key and this.value the current value of the input 
 
 In the same way, we added an input listener to all the input fields in this example\'s form.
 
-### Restoring the form content on page load/reload
+<h4>Restoring the form content on page load/reload</h4>
 
 This time, we want the form content to be restored on page load/reload. We will add a restoreFormContent() function in the JavaScript code that will be called each time the page is loaded. In this function, we will read the saved data and set the input fields\' values.
 
@@ -17348,9 +17364,9 @@ This time we will look at another example that uses new methods from the API:
 
 If you want to keep a simple counter of the number of times a given user has loaded your application, you can use the following code (just to show how to use setItem/removeItem methods):
 ```
-1.  var counter = localStorage.getItem(\"count\") \|\| 0;
+1.  var counter = localStorage.getItem("count") || 0;
 2.  counter++;
-3.  localStorage.setItem(\"count\", counter);
+3.  localStorage.setItem("count", counter);
 ```
 
 As you can easily guess from the above, we use var value = getItem(key) to retrieve a key\'s value and setItem(key, value) to set it. This is similar to what we saw in the examples of the page above, except that this time:
@@ -17531,87 +17547,49 @@ The function initPreferences is executed when the page is loaded.
 <h4>Source code extract:</h4>
 ```
 > function initPreferences() {
->
 >    console.log("Adding input listener to all input fields");
->
 >    // add an input listener to all input fields
->
 >    var listOfInputsInForm = document.querySelectorAll("input");
->
 >    for(var i= 0; i < listOfInputsInForm.length; i++) {
->
 >       addInputListener(listOfInputsInForm[i]);
->
 >    }
->
 >    // restore preferences
->
 >    restorePreferences();
->
 >    applyGUIvalues(); // Use the input fields' values we just restored to set internal 
->
 >                      // size, incX, color, lineWidth variables
->
 > }
->
 >  
->
 > function addInputListener(inputField) {
->
 > // same as before
->
 > }
->
 >  
->
 > function restorePreferences() {
->
 > // same as old restoreFormContent
->
 > }
->
 >  
->
 > function applyGUIvalues() {
->
 >    // Check restored input field content to set the size of the rectangle
->
 >    var sizeWidget = document.getElementById("size");
->
 >    size = Math.sign(incX)*parseInt(sizeWidget.value);
->
 >    // also update the outline element's value
->
 >    document.getElementById("sizeValue").innerHTML = size;
->
 >    // Check restored input field content to set the color of the rectangle
->
 >    var colorWidget = document.getElementById("color");
->
 >    ctx.fillStyle = colorWidget.value;
->
 >    // Check restored input field content to set the speed of the rectangle
->
 >    var speedWidget = document.getElementById("speed");
->
 >    incX = Math.sign(incX)*parseInt(speedWidget.value);
->
 >    // also update the outline element's value
->
 >    document.getElementById("speedValue").innerHTML = Math.abs(incX);
->
 >    // Check restored input field content to set the lineWidth of the rectangle
->
 >    var lineWidthWidget = document.getElementById("lineWidth");
->
 >    ctx.lineWidth = parseInt(lineWidthWidget.value);
->
 > }
 ```
 
-<h3 is="6-2-5">6.2.5 Example 3</h3>
+<h3 id="ch6-2-5">6.2.5 Example 3</h3>
 
-[Online example at JSBin](https://jsbin.com/zowise/edit?html,js,output)
+<a href="https://jsbin.com/zowise/edit?html,js,output">Online example at JSBin</a>
 
 This time, using the setItem and getItem method we saw earlier in the course, we could write some generic functions for saving/restoring input fields\' content, without having advance knowledge about the number of fields in the form, their types, their ids, etc.
 
@@ -17645,13 +17623,9 @@ We start writing an init() function that is called when the page is loaded. This
 And here is the addInputListener(inputField) function. It takes an input field as parameter and attaches an oninput listener to it, that will save the field\'s content each time a value is entered. The key will be the id of the input field (*line 3*):
 ```
 > function addInputListener(inputField) {
->
 >     inputField.addEventListener('input', function(event) {
->
 >         localStorage.setItem(inputField.id, inputField.value);
->
 >      }, false);
->
 > }
 ```
 
@@ -17689,7 +17663,7 @@ These generic functions can be used in many different projects
 
 Indeed, if you look carefully, you will see that these functions are really useful. You may easily embed them in your own projects, or perhaps adapt them for a particular need (i.e. for saving input type=\"checkboxes\" that work a bit differently), etc.
 
-<h3 is="6-2-6">6.2.6 Size limitations, etc.</h3>
+<h3 id="ch6-2-6">6.2.6 Size limitations, etc.</h3>
 
 Few things to remember, from the Web storage specification:
 
@@ -18150,7 +18124,7 @@ Most of the time, we will work with File objects. Blob objects will have real in
 
 If you are interested in seeing how Blob objects can be used, [here is an example \"as is\" that shows how to download an image using Xhr2](https://jsbin.com/jefitop/1/edit?html,output) (Xml Http Request version 2). The examples uses a \<progress\> element to show the download progress, and uses xhr.responseType = \'blob\'; to indicate that the file we are going to download is a binary file (a blob). Try the example, then comment the line with responseType=\'blob\'. In this case, you will notice that the image file is not properly decoded by the browser and is not displayed in the page. We explain Xhr2 in the [W3C HTML5 Apps and Games](https://www.edx.org/course/html5-apps-and-games) course.
 
-<h3>6.3.5 Reading file content</h3>
+<h3 id="ch6-3-5">6.3.5 Reading file content</h3>
 
 In order to read the content of a file, different steps required. Let\'s see how to do it.
 
@@ -18414,13 +18388,11 @@ In your browser, you will see a small red circle rendered by this source code:
 
 ```
 > <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
->
 > AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
->
 > 9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red square" width=50 height=50/>
 ```
 
-And here is the result:
+<h4>And here is the result:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 318.  (xxx) ---------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19377,4 +19349,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-20-2022 11:07pm</i></b></h3>
+<h3><b><i>07-21-2022 12:32am</i></b></h3>
