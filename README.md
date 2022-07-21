@@ -612,24 +612,15 @@ Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\'
 the W3C specification about this element):
 
 <h4>HTML5 structural element and description</h4>
-
-[\<header\>](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>
-
-[\<footer\>](https://www.w3.org/TR/html5/sections.html#the-footer-element)                                                                                                              Contains the footer of a site, a long \<article\>, or a long \<section\>
-
-[\<nav\>](https://www.w3.org/TR/html5/sections.html#the-nav-element)                                                                                                                    Section that contains the main navigation links (within the document or to other pages).
-
-[\<article\>](https://www.w3.org/TR/html5/sections.html#the-article-element)                                                                                                            Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.
-
-[\<section\>](https://www.w3.org/TR/html5/sections.html#the-section-element)                                                                                                            Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.
-
-[\<time\>](https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element)                                                                                                      Used for marking up times and dates.
-
-[\<aside\>](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.
-
-[\<figure\>](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [\<figcaption\>](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
-
-[\<main\>](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                 The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. There can be only one \<main\> element in a document.
+<a href="https://www.w3.org/TR/html5/sections.html#the-header-element">[&lt;<header&gt;]</a> Introduction of "sectioning elements": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;
+<a href="https://www.w3.org/TR/html5/sections.html#the-footer-element">[&lt;footer&gt;]</a>  Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;
+<a href="https://www.w3.org/TR/html5/sections.html#the-nav-element">[&gt;nav&gt;]</a>  Section that contains the main navigation links (within the document or to other pages).
+<a href="https://www.w3.org/TR/html5/sections.html#the-article-element">[&lt;article&gt;]</a>  Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.
+<a href="https://www.w3.org/TR/html5/sections.html#the-section-element">[&lt;section&gt;]</a>  Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.
+<a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element">[&lt;time&gt;]</a>  Used for marking up times and dates.
+<a href="https://www.w3.org/TR/html5/sections.html#the-aside-element">[&lt;aside&gt;]</a>  Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.
+<a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element">[&lt;figure&gt;]</a> and <a href="https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element">[&lt;figcaption&gt;]</a>  Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
+<a href="https://www.w3.org/TR/html5/sections.html#the-aside-element">[&lt;main&gt;]</a>  The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. There can be only one &lt;main&gt; element in a document.
 
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
 
@@ -1204,7 +1195,7 @@ The corresponding outline is:
 
 In the above example, please note two things:
 <ol type="1">
-<li>The outline shows an \"Untitled body\" at the root of the hierarchy,</li>
+<li>The outline shows an "Untitled body" at the root of the hierarchy,</li>
 <li>The default size for the H1 and H2 is the same (!). Indeed, when we start a \<h1\> inside a \<section\> the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
 </ol>
 
@@ -19349,4 +19340,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-21-2022 12:32am</i></b></h3>
+<h3><b><i>07-20-2022 11:07pm</i></b></h3>
