@@ -3128,7 +3128,8 @@ The HTML \<mark\> tag is used for indicating text as marked or highlighted for r
 <br/>
 
 <h4>Source code:</h4>
-```
+
+```html5
 <body>
 <pre>
 <code><mark>var</mark> i = 3;</code>
@@ -3314,12 +3315,13 @@ Both <a href="https://translate.google.com/">Google translate</a> and <a href="h
 
 <h4> Principle: give hints to translating tools</h4>
 
-<a href="https://www.w3.org/TR/html5/dom.html#the-translate-attribute">The specification about the translate attribute</a> tells us that  <i>\"The translate attribute is an enumerated attribute that is used to specify whether an element\'s attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.
+<a href="https://www.w3.org/TR/html5/dom.html#the-translate-attribute">The specification about the translate attribute</a> tells us that \"The translate attribute is an enumerated attribute that is used to specify whether an element\'s attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.
 
 The attribute\'s keywords are the empty string, yes, and no. The empty string and the yes keyword map to the yes state. The no keyword maps to the no state. In addition, there is a third state, the inherit state, which is the missing value default (and the invalid value default).
 
 <h4>Example illustrating how to specify parts of an HTML element that should not be translated:</h4>
-```
+
+```h5ml5
 1.  <span <b>[translate="no"]</b> class="author">[Michel Ham]</span>
 ```
 
@@ -3339,15 +3341,17 @@ Will be correctly translated into French by:
 <h4>Inheritance between elements</h4>
 
 When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true.
+
+```html5
+1.  <p><b>[translate="no"]</b>This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.[<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>]. This is the end of the paragraph\...</p>
 ```
-1.  <p <b>[translate="no"]</b>This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.[<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>]. This is the end of the paragraph\...</p>
-```
+
 <h4>External resources:</h4>
 <ul>
 <li>From the specification: <a href="https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute">the translate attribute</a></li>
-<li>From MDN\'s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate</a></li>
+<li>From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate</a></li>
 <li>Its corresponding <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate#Browser_compatibility">browser compatibility table</a></li>
-<li>An article from W3C\'s Internationalization Activity: <a href="https://www.w3.org/International/questions/qa-translate-flag">"Using HTML\'s translate attribute"</a>
+<li>An article from W3C\'s Internationalization Activity: <a href="https://www.w3.org/International/questions/qa-translate-flag">"Using HTML's translate attribute"</a>
 </ul>
 
 <h3 id="ch1-5-1">1.5.1 Microdata</h3>
@@ -3359,7 +3363,8 @@ Adding microdata to Web pages helps search engines to better understand the page
 This information is not visible to humans: it is pure <i>semantic information</i>. Popular kinds of microdata are events, a person\'s profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. 
 
 <h4>Quick example of microdata that describes a person</h4>
-```
+
+```html5
 1.  <section [itemscope itemtype="https://schema.org/Person"]>
 2.      <h1>Contact Information</h1>
 3.      <dl>
@@ -3385,7 +3390,8 @@ This information is not visible to humans: it is pure <i>semantic information</i
 ```
 
 We can also add another embedded data item in the middle, such as the person\'s address:
-```
+
+```html5
 1.  ...
 2.  </dl>
 3.  
@@ -3423,15 +3429,13 @@ Different use cases:
 <b>Note</b>: For advanced users, Microdata is very similar to <a href="http://microformats.org/">microformats</a>, which use HTML classes, or to <a href="https://www.w3.org/TR/xhtml-rdfa-primer/">RDFa</a>, which doesn't validate in HTML4 or HTML5. Because RDFa was considered to be too hard for authors to write, microdata is HTML5\'s answer to help embed semantics into html documents.
 
 <h4>External resources</h4>
--   [W3C\'s HTML Microdata Working Draft](https://www.w3.org/TR/microdata/)
-
--   MDN\'s Web Docs: [Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)
-
--   Very good [Microdata](https://journal.code4lib.org/articles/6400) paper from code{4}lib journal
-
--   [Microdata and the microdata DOM API](https://dev.opera.com/articles/microdata-and-the-microdata-dom-api/), old article from dev.opera.com
-
--   [Chapter from Mark Pilgrim\'s book about microdata](https://diveinto.html5doctor.com/extensibility.html), very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.
+<ul>
+<li><a href="https://www.w3.org/TR/microdata/">W3C's HTML Microdata Working Draft</a>.</li>
+<li>MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata">Microdata</a>.</li>
+<li>Very good <a href="https://journal.code4lib.org/articles/6400">Microdata</a> paper from code{4}lib journal.</li>
+<li><a href="https://dev.opera.com/articles/microdata-and-the-microdata-dom-api/">Microdata and the microdata DOM API</a>, old article from dev.opera.com.</li>
+<li><a href="https://diveinto.html5doctor.com/extensibility.html">Chapter from Mark Pilgrim\'s book about microdata</a>, very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.</li>
+</ul>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- Chapter 1-5-2. testing tools (xx) -------------------------------->
@@ -3442,7 +3446,7 @@ Different use cases:
 
 After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 58.  (xx) ------------------------------->
+<!--------------------------- 58. diverse tools used by workers (73) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image058.jpeg?raw=true"
@@ -3461,34 +3465,34 @@ Let\'s have a look now at a (small) example of an about page. It renders as a ve
 
 <h4>Source code:</h4>
 ```
-1.  \<!DOCTYPE html\>
-2.  \<html lang=\"en\"\>
-3.  \<head\>
-4.  \<meta charset=utf-8 /\>
-5.  \<title\>Michel Buffa\</title\>
-6.  \</head\>
-7.  \<body\>
-8.  \<div [itemscope itemtype=\"https://schema.org/Person\"]\>
-9.      My name is \<span itemprop=\"name\"\>Michel Buffa\</span\>,
-10.     And I\'m a \<span itemprop=\"jobTitle\"\>professor/researcher\</span\> at
-11.      \<a href=\"https://www.i3s.unice.fr/\" itemprop=\"affiliation\"\>I3S
-12.     Laboratory\</a\> in the south of France, near the city of Nice. My
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset=utf-8 />
+5.  <title>Michel Buffa</title>
+6.  </head>
+7.  <body>
+8.  <div [itemscope itemtype="https://schema.org/Person"]>
+9.      My name is <span itemprop="name"\>Michel Buffa\</span\>,
+10.     And I'm a <span itemprop="jobTitle">professor/researcher</span> at
+11.      <a href="https://www.i3s.unice.fr/" itemprop=\"affiliation">I3S
+12.     Laboratory</a\> in the south of France, near the city of Nice. My
 13.     email
-14.     is : \<span itemprop=\"email\"\>micbuffa@gmail.com\</span\>.
+14.     is : <span itemprop="email">micbuffa@gmail.com</span>.
 15.     I live in the city of
-16.     \<span itemprop=\"address\" itemscope
-17.         [itemtype=\"https://schema.org/PostalAddress\"]\>
-18.          \<span itemprop=\"addressLocality\"\>Biot\</span\>, in a region named
-19.          \<span itemprop=\"addressRegion\"\>Alpes Maritimes\</span\>
-20.     \</span\>
-21. \</div\>
-22. \</body\>
-23. \</html\>
+16.     <span itemprop="address" itemscope
+17.         [itemtype="https://schema.org/PostalAddress"]>
+18.          <span itemprop="addressLocality">Biot</span>, in a region named
+19.          <span itemprop="addressRegion\">Alpes Maritimes</span>
+20.     </span\>
+21. </div>
+22. </body>
+23. </html>
 ```
 
 Rendering of the page in a browser:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 59.  (xx) ------------------------------->
+<!--------------------------- 59. example page by michell buffa (73) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image059.jpeg?raw=true"
@@ -3497,10 +3501,10 @@ Rendering of the page in a browser:
 &nbsp;
 <br/>
 
-Here is what Google sees of the page. We just entered its [URL](https://output.jsbin.com/gunuzus/1) in the [Google page about rich snippets and structured data](https://developers.google.com/search/docs/guides/intro-structured-data):
+Here is what Google sees of the page. We just entered its <a href="https://output.jsbin.com/gunuzus/1">URL</a> in the <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Google page about rich snippets and structured data</a>:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 60.  (xx) ------------------------------->
+<!------------------------------------- 60. person(1) (74) --------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image060.png?raw=true"
@@ -3511,12 +3515,12 @@ Here is what Google sees of the page. We just entered its [URL](https://output.j
 
 Note that the address is a fully featured embedded object in the Person\'s description.
 
-### Live Microdata
+<h4>Live Microdata</h4>
 
-The [Live Microdata Web site](https://foolip.org/microdatajs/live/)  is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
+The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 61.  (xx) ------------------------------->
+<!----------------------------------- 61. live microdata (74) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image061.jpeg?raw=true"
@@ -3527,7 +3531,7 @@ The [Live Microdata Web site](https://foolip.org/microdatajs/live/)  is a bit si
 
 And the JSON view of the microdata:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 62.  (xx) ------------------------------->
+<!----------------------------- 62. json view of the microdata (75) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image062.jpeg?raw=true"
@@ -3537,7 +3541,7 @@ And the JSON view of the microdata:
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------- Chapter 1-5-3. adding microdata to an html page (xx) ---------------------->
+<!-------------------- Chapter 1-5-3. adding microdata to an html page (75) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <ch id="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
 
@@ -19340,4 +19344,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-20-2022 11:07pm</i></b></h3>
+<h3><b><i>07-21-2022 18:21 zulu</i></b></h3>
