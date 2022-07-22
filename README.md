@@ -3436,7 +3436,7 @@ Different use cases:
 <li>MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata">Microdata</a>.</li>
 <li>Very good <a href="https://journal.code4lib.org/articles/6400">Microdata</a> paper from code{4}lib journal.</li>
 <li><a href="https://dev.opera.com/articles/microdata-and-the-microdata-dom-api/">Microdata and the microdata DOM API</a>, old article from dev.opera.com.</li>
-<li><a href="https://diveinto.html5doctor.com/extensibility.html">Chapter from Mark Pilgrim\'s book about microdata</a>, very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.</li>
+<li><a href="https://diveinto.html5doctor.com/extensibility.html">Chapter from Mark Pilgrim's book about microdata</a>, very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.</li>
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
@@ -3459,11 +3459,11 @@ After seeing the principle of embedding microdata in an HTML page, we now presen
 
 One of the most popular resources for testing microdata (as well as microformats and RDFa) is this [Google page about understanding how structured data works](https://developers.google.com/search/docs/guides/intro-structured-data). This page contains a link to a structured data testing tool that you can use to see how Google recognizes the semantic data you embed in your HTML code.
 
-<h4>Testing a real interactive example with an \"about page\" for Michel Buffa</h4>
+<h4>Testing a real interactive example with an "about page" for Michel Buffa</h4>
 
 Let\'s have a look now at a (small) example of an about page. It renders as a very simple paragraph that explains who Michel Buffa is\... But we embedded Microdata, so it\'s interesting to see how a search engine sees it, and how it may produce \"augmented search results\".
 
-[Online example at JsBin](https://jsbin.com/gunuzus/1/edit?html,output)
+<a href="https://jsbin.com/gunuzus/1/edit?html,output">Online example at JsBin</a>
 
 <h4>Source code:</h4>
 ```
@@ -3545,7 +3545,7 @@ And the JSON view of the microdata:
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- Chapter 1-5-3. adding microdata to an html page (75) ---------------------->
 <!------------------------------------------------------------------------------------------------>
-<ch id="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
+<h3 id="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
 
 <h4>Basic steps</h4>
 
@@ -3576,7 +3576,7 @@ We notice that one property, such as the address of a Person, may use another vo
 
 If you are a developer and if you are familiar with object oriented programming, think of properties as class attributes and think of vocabularies as classes.
 
-<b>Vocabularies are meant to be shared</b>
+<h4>Vocabularies are meant to be shared</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------------- 63. time to share (76) ------------------------------------->
@@ -3628,6 +3628,7 @@ The line:
 ```
 1.  <dd itemprop="name"Michel Buffa</dd>
 ```
+
 \...defines a property called \"name\" that has a value of \"Michel Buffa\" (the text value between the opening and closing tags of the \<dd\> element).
 
 Nesting microdata items
@@ -3636,7 +3637,8 @@ As we saw with the Person/Address example at the beginning of this chapter, it i
 
 Give an element inside a microdata container its own itemscope attribute with the recommended itemtype attribute for indicating the name of the vocabulary used by the nested microdata.
 
-Again, look at the Person/Address example:
+<h4>Again, look at the Person/Address example:</h4>
+
 ```
 1.  ...
 2.  </dl>
@@ -3661,7 +3663,7 @@ Again, look at the Person/Address example:
 ```
 The properties at <i>lines 8-12</i> refer to the address nested microdata (they are defined in the Address vocabulary, not the Person vocabulary), and \"France\" (<i>line 14</i>) is a property that refers to the Country vocabulary.
 
-<b>Several properties with the same name but different values</b>
+<h4>Several properties with the same name but different values</h4>
 
 It is possible to use the same property name several times in one microdata object, but with different values:
 ```
@@ -3676,7 +3678,7 @@ It is possible to use the same property name several times in one microdata obje
 ```
 This defines the fact that Michel Buffa has two online accounts, and the two properties have the name url, each with its own value.
 
-<b>It is possible to set more than one property at once, with the same value</b>
+<h4>It is possible to set more than one property at once, with the same value</h4>
 
 Here are some microdata that represent a song. In this example, at line 5 we set  two different properties: genre and keywords with the same value (see the [MusicRecording schema definition](https://schema.org/MusicRecording)):
 ```
@@ -3927,7 +3929,7 @@ Notice the other similarities: between the \<audio\>\...\</audio\> tags, we adde
 
 <h3 id="ch2-2-3">2.2.3 Attributes of <video> and <audio></h3>
 
-### Most useful attributes of the \<video\> element 
+<h4>Most useful attributes of the &lt;video&gt; element</h4>
 
 Here are the most common attributes you can use with the \<video\> element. They are self explanatory\...
 
@@ -3957,17 +3959,17 @@ The autoplay attribute is not recommended if your Web site targets mobile applic
 
 <b>Best practice</b>: do not use autoplay and add preload=\"none\" if you target mobile devices or if you have multiple audio/video files on the same page.  For example, [this page](https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html) contains many audio elements and it does not make sense to have them preload or autoplay.
 
-<h4> About the poster attribute</h4>
+<h4>About the poster attribute</h4>
 
 If the poster attribute is missing, usually the first non-blank frame of the video will be used as the image that is shown when the video is not playing. 
 
-<h4> About the autoplay attribute for general use</h4>
+<h4>About the autoplay attribute for general use</h4>
 
 Do not abuse of the autoplay attribute. We talked earlier about mobile applications, but even on desktop applications it\'s usually a bad idea to use it (except for WebCams and for some animations with small video loops, without sound, or for sites like YouTube, with just videos).
 
 <b>Best practice</b>: think twice before using the autoplay attribute, even for desktop applications.
 
-### Attributes of the \<audio\> element
+<h4>Attributes of the &lt;audio&gt; element</h4>
 
 The attributes you can use with the \<audio\> element are a subset of those available for the \<video\> element. Except for the poster attribute, they are all recognized and have the expected meanings: 
 
@@ -3987,7 +3989,7 @@ As with the \<video\> element, the same best practice in regard to preload and a
 
 The \<video\> and \<audio\> elements are just like other HTML elements, so CSS can be used for styling, including CSS transitions, animations, etc.
 
-### An example of an audio player with some style
+<h4>An example of an audio player with some style</h4>
 
 You can try this example [online at JSBin](https://jsbin.com/zoquru/2/edit?html,css,output).
 
@@ -5865,73 +5867,39 @@ The trick is to copy and paste the current image from the video stream into a \<
 > // GET USER MEDIA CODE
 >
 > //\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
->
 > let video;
->
 > let webcamStream;
->
 > function startWebcam() {
->
 > // request video and audio stream from the user\'s webcam
->
 > navigator.mediaDevices.getUserMedia({
->
 > audio: true,
->
 > video: true
->
 > }).then((stream) =\> {
->
 > video = document.querySelector(\'#video\');
->
 > video.srcObject = stream;
->
 > video.play();
->
 > webcamStream = stream;
->
 > }).catch((error) =\> {
->
 > console.log(\'navigator.getUserMedia error: \', error);
->
 > });
->
 > }
->
 > function stopWebcam() {
->
 > webcamStream.getTracks()\[0\].stop(); // audio
->
 > webcamStream.getTracks()\[1\].stop(); // video
->
 > }
->
 > //\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
->
 > // TAKE A SNAPSHOT CODE
->
 > //\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
->
 > var canvas, ctx;
->
 > function init() {
->
 > // Get the canvas and obtain a context for
->
 > // drawing in it
->
 > canvas = document.getElementById(\"myCanvas\");
->
 > ctx = canvas.getContext(\'2d\');
->
 > }
->
 > function snapshot() {
->
 > // Draws current image from the video element into the canvas
->
 > ctx.drawImage(video, 0,0, canvas.width, canvas.height);
->
 > }
 ```
 
@@ -5974,7 +5942,7 @@ We will look at this example in greater detail in the next course section (relat
 
 -   [Webcam Toy](https://webcamtoy.com/): video effects on Paul Neave\'s webcam (using WebGL)
 
-<h3>2.4.3 Using the Microphone</h3>
+<h3 id="ch2-4-3">2.4.3 Using the Microphone</h3>
 
 Instead of using the getUserMedia API with: navigator.getUserMedia({video:true}, onSuccess, onError), it is also possible to use {audio:true} for the first parameter. In this case, only the microphone input will be captured. Notice that {video:true, audio:true} is also accepted, if you write a video conferencing system and need to capture both the audio and the video (this is often the case when writing WebRTC applications).
 
@@ -5993,7 +5961,7 @@ The image below is taken from [one of the demonstrations](https://webaudiodemos.
    alt="WebAudio Live Processing" />
 </p>
 
-<h3>2.4.4 Webcam Resolution</h3>
+<h3 id="ch2-4-4">2.4.4 Webcam Resolution</h3>
 
 It is possible to set \"hints\" for the preferred cam/resolution during video capture. This is done by using a [\"constraint\" object ](https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4)that is passed as a parameter to the getUserMedia(\...) method. It\'s just the same object we passed in the basic example: navigator.getUserMedia(**{video:true}**, success, error) except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.
 
@@ -6010,7 +5978,7 @@ For more information, this [article on MDN about the getUserMedia API](https://d
    alt="" />
 </p>
 
-<b>JS</b>
+<h4>JS</h4>
 
 ```
 > var vgaButton, qvgaButton, hdButton, dimensions, video, stream;
@@ -6093,28 +6061,28 @@ For more information, this [article on MDN about the getUserMedia API](https://d
 <h4>HTML</h4>
 ```
 > <!DOCTYPE html>
-> <html lang="en"\>
+> <html lang="en">
 > <head>
 > <meta charset="utf-8"/>
-> <title>getUserMedia constraints for Webcam resolutions\</title\>
+> <title>getUserMedia constraints for Webcam resolutions</title\>
 > </head>
 > <body onload="init();">
 > <h1>Set the camera resolution</h1>
 > Example adapted from:
-> \<a href=\"https://www.simpl.info/getusermedia/constraints/\"\>
+> <a href="https://www.simpl.info/getusermedia/constraints/">
 > https://www.simpl.info/getusermedia/constraints/
-> \</a\>
-> \<br\>
-> \<p\>Click a button to call \<code\>getUserMedia()\</code\> with appropriate resolution. \</p\>
-> \<div id=\"buttons\"\>
-> \<button id=\"qvga\"\>QVGA\</button\>
-> \<button id=\"vga\"\>VGA\</button\>
-> \<button id=\"hd\"\>HD\</button\>
-> \</div\>
-> \<p id=\"dimensions\"\>\</p\>
-> \<video autoplay\>\</video\>
-> \</body\>
-> \</html\>
+> </a>
+> <br>
+> <p>Click a button to call <code>getUserMedia()</code> with appropriate resolution. </p>
+> <div id="buttons">
+> <button id="qvga">QVGA</button>
+> <button id="vga">VGA</button>
+> <button id="hd">HD</button>
+> </div>
+> <p id="dimensions"></p>
+> <video autoplay></video>
+> </body>
+> </html>
 ```
 
 <!------------------------------------------------------------------------------------------------>
@@ -6194,7 +6162,7 @@ Here are some other constraints you can set. In particular, look at the ones for
    alt="webapp for selecting audio and video input/output" />
 </p>
 
-Source code extract:
+<h4>Source code extract:</h4>
 ```
 1.  function gotDevices(deviceInfos) {
 2.      for (var i = 0; i !== deviceInfos.length; ++i) {
@@ -6235,7 +6203,7 @@ For example, the MediaRecorder API is used to record the video stream from a Web
 
 Let\'s record, replay and download the video stream captured using a Webcam. You can test it below by clicking on \"CodePen\" at the top right:
 
-<b>JS</b>
+<h4>JS</h4>
 
 ```
 > var mediaRecorder;
@@ -6323,7 +6291,7 @@ Let\'s record, replay and download the video stream captured using a Webcam. You
 > }
 ```
 
-<b>CSS</b>
+<h4>CSS</h4>
 
 ```
 > /*
@@ -6613,7 +6581,7 @@ And if we click on the line number in the right, the dev. tool shows the source 
 
 Without such tools, debugging JavaScript code is impossible. So you need to look at some basic tutorials on how to use the dev. tools of your browsers, since they differ from one another in the way they work - although the principles remain the same.
 
-<h4>About the asynchronous nature of JavaScript
+<h4>About the asynchronous nature of JavaScript</h4>
 
 Some of you may not be used to \"asynchronous programming\", \"callbacks\" etc. We recommend to read [this article on WikiPedia](https://en.wikipedia.org/wiki/Callback_%28computer_programming%29) and [this thread on StackOverflow](https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java).
 
@@ -6636,11 +6604,11 @@ Indeed, the canvas JavaScript drawing API supports different kind of shapes: lin
 
 The canvas is also used to do animations at 60 frames per second (useful for games), to display videos with special effects, to display a webcam stream, and so on.
 
-<h4>Examples
+<h4>Examples</h4>
 
 Here are some fun examples that show the interest of the HTML5 canvas.
 
-<h4> Example #1
+<h4>Example #1</h4>
 
 [Foot Chinko](https://www.ravalmatic.com/portfolio/footchinko/) is one popular free HTML5 games:
 
@@ -6653,7 +6621,7 @@ Here are some fun examples that show the interest of the HTML5 canvas.
    alt="Foot chinko one of the best html5 2D game of 2015" />
 </p>
 
-<h4> Example #2
+<h4>Example #2</h4>
 
 Lots of data visualization tools and JavaScript libraries use the HTML5 canvas element for [Data visualization](http://www.creativebloq.com/design-tools/data-visualization-712402):
 
@@ -6666,7 +6634,7 @@ Lots of data visualization tools and JavaScript libraries use the HTML5 canvas e
    alt="html5 data visualization" />
 </p>
 
-<h4> Example #3
+<h4>Example #3</h4>
 
 A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), that runs at 60 frames per second in an HTML5 canvas element:
 
@@ -6683,7 +6651,7 @@ Performance is  good and animation is generally very smooth, since most Web brow
 
 **Note**: 3D drawing using the WebGL API is also possible in a \<canvas\>, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a \<canvas\>: [BabylonJS](https://www.babylonjs.com/) and [ThreeJS](https://threejs.org/).
 
-<h4>External resources
+<h4>External resources</h4>
 
 -   Comprehensive [HTML5 canvas tutorials](https://www.html5canvastutorials.com/)
 
@@ -6762,21 +6730,18 @@ Small errata about what I said in the above video: \"*So let\'s get the canvas u
 
 The part is bold is not correct: querySelector, technically, comes from [Selectors API](https://www.w3.org/TR/selectors-api/). Just in case some people would like to check the specification.\\
 
-<h4>Detailed explanation of the example shown in the above video
+<h4>Detailed explanation of the example shown in the above video</h4>
 
 Here are the different steps, in a little more detail, of the example demonstrated in the above video:
 
-<h4> 1 - Add the \<canvas\> element into an HTML page
-
-1.  \<canvas id=\"myCanvas\" width=\"300\" height=\"225\"\>
-
+<h4>1 - Add the &lt;canvas&gt; element into an HTML page</h4>
+```
+1.  <canvas id="myCanvas" width="300" height="225">
 2.  Fallback content that will be displayed in case the web browser
-
 3.  does not support the canvas tag or in case scripting
-
 4.  is disabled.
-
-5.  \</canvas\>
+5.  </canvas>
+```
 
 Place code similar to the above somewhere in an HTML page. This example defines an area of 300 by 225 pixels on which content can be rendered with JavaScript.
 
@@ -6784,48 +6749,45 @@ Normally you should see nothing as a result; by default canvases are \"transpare
 For example, you can add a border to the canvas (or change the background color, or put an image in the background).
 
 The three lines of CSS will create a border around the canvas with id=\"myCanvas\", of 1 pixel width, in black:
-
-1.  \<style\>
-
+```
+1.  <style>
 2.      #myCanvas {
-
 3.          border:1px solid black;
-
 4.      }
+5.  </style>
+```
 
-5.  \</style\>
-
-<h4> 2 - Select the \<canvas\> element for use from JavaScript
+<h4>2 - Select the &lt;canvas&gt; element for use from JavaScript</h4>
 
 We can have more than one \<canvas\> in a single page, and canvases will be manipulated with JavaScript like other elements in the DOM.
 
 For example with:
-
+```
 1.  var canvas = document.getElementById(\"myCanvas\");
-
+```
 \... or with the querySelector() method introduced by HTML5, that use the CSS selector syntax for selecting elements:
-
+```
 1.  var canvas = document.querySelector(\"#myCanvas\");
-
-<h4> 3 - Get a \"2D context\" associated with the canvas
+```
+<h4>3 - Get a \"2D context\" associated with the canvas</h4>
 
 This step is useful for drawing and setting drawing properties (color, etc.)
 
 Once we have a pointer to the \<canvas\>, we can get a \"context\". This particular object is the core of the canvas JavaScript API. It provides methods for drawing, like fillRect(x, y, width, height) for example, that draws a filled rectangle, and properties for setting the color, shadows, gradients, etc.
 
 So, let\'s first get the context (do this only once):
-
+```
 1.  var ctx=canvas.getContext(\'2d\');
-
+```
 \... then, set the color for drawing filled shapes:
-
+```
 1.  ctx.fillStyle=\'red\';
-
+```
 \... and draw a filled rectangle:
-
+```
 1.  ctx.fillRect(0,0,80,100);
-
-<h4>Complete example that draws a filled rectangle in red
+```
+<h4>Complete example that draws a filled rectangle in red</h4>
 
 <h4>HTML</h4>
 
@@ -6866,7 +6828,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-Source code:
+<h4>Source code:</h4>
 
 ```
 1.  <!DOCTYPE html>
@@ -6905,7 +6867,7 @@ Source code:
 34. </html>
 ```
 
-<h4> **Explanations**
+<h4>Explanations</h4>
 
 **Only access elements when the DOM is ready:**
 
@@ -6968,7 +6930,7 @@ Later on we\'ll see that there are ways to save and restore this whole set of va
 
 <h4>More about properties and methods of the context object
 
--   <h4> **fillStyle** is a property of the context, similar in a way to a CSS property
+-   <h4> **fillStyle** is a property of the context, similar in a way to a CSS property</h4>
 
 Its value can be one of the following:
 
@@ -6984,7 +6946,7 @@ Note that we will study in detail how to use colors, gradients and patterns late
 
 fillStyle and the other context properties can be considered to be \"global variables\" of the context.
 
--   <h4> fillRect(x, y, width, height):  a call to this method draws a filled rectangle
+-   <h4>fillRect(x, y, width, height):  a call to this method draws a filled rectangle</h4>
 
 The two first parameters are the coordinates of the top left corner of the rectangle. This method uses the current value of the fillStyle property to determine how to fill the rectangle.
 
@@ -7003,12 +6965,12 @@ Produces this result:
    alt="Filled rectangle with pink color." />
 </p>
 <ul>
-<li><h4> strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape\'s outline should be rendered</li>
+<li><h4>strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape\'s outline should be rendered</h4></li>
 </ul>
 
 The possible values are the same as those for the fillStyle property: a color, a pattern, or a gradient. This property will be taken into account when wireframe shapes are drawn.
 <ul>
-<li><h4> strokeRect(x, y, width, height): like fillRect(\...), but instead of drawing a filled rectangle the rectangle is drawn in wireframe mode</li>
+<li><h4>strokeRect(x, y, width, height): like fillRect(\...), but instead of drawing a filled rectangle the rectangle is drawn in wireframe mode</h4></li>
 </ul>
 ```
 1.  ctx.strokeStyle=\'blue\';
@@ -7048,9 +7010,9 @@ The result is:
    alt="The use of ClearRect draws a white rectangle against the pink background." />
 </p>
 
-<h4>Let's see some simple examples
+<h4>Let's see some simple examples</h4>
 
-<h4> Example #1: draw a wireframe red rectangle, width lineWidth = 3 pixels
+<h4>Example #1: draw a wireframe red rectangle, width lineWidth = 3 pixels</h4>
 
 Extract from the source code (the part that draws the rectangle):
 
@@ -7067,7 +7029,7 @@ Here, we used \"stroke\" instead of \"fill\" in the property and method names (*
 
 We also introduced a new property of the context, that applies only when drawing in \"stroke\" mode, the lineWidth property (*line 3*), that is used for setting the width of the shape outline. The value is in pixels.
 
-<h4> Example #2: draw two filled red rectangles with a blue outline of 5 pixels and some text
+<h4>Example #2: draw two filled red rectangles with a blue outline of 5 pixels and some text</h4>
 
 Let\'s continue with another example. This time we will draw several shapes that share the same colors - they will be filled in red, with a blue outline. We also show how to draw a text message with a given font.
 
@@ -7174,7 +7136,7 @@ Let\'s start with some simple examples before looking at how we use 2D transform
 
 <h4>Examples
 <ul>
-<li><h4> Let\'s draw three rectangles!</li>
+<li><h4>Let's draw three rectangles!</h4></li>
 </ul>
 
 If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) and another at (150, 0), and a third at (300, 0), here is the result and the corresponding code:
@@ -7220,7 +7182,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-JavaScript code extract:
+<h4>JavaScript code extract:</h4>
 
 ```
 1.  function drawSomething() {
@@ -7232,7 +7194,7 @@ JavaScript code extract:
 7.  }
 ```
 <ul>
-<li><h4> Let\'s modify the code so that we can draw these rectangles at any X and Y position</li>
+<li><h4>Let's modify the code so that we can draw these rectangles at any X and Y position</h4></li>
 </ul>
 
 What if we wanted to draw these 3 rectangles at another position, as a group? We would like to draw all of them a little closer to the bottom, for example\... Let\'s add some parameters to the function:  the X and Y position of the rectangles.
@@ -7316,7 +7278,7 @@ If you look at the code of the modified function, you will see that each call to
 &nbsp;
 <br/>
 <ul>
-<li><h4>Now, let\'s draw a small monster\'s head with rectangles</li>
+<li><h4>Now, let\'s draw a small monster\'s head with rectangles</h4></li>
 </ul>
 
 Now we can start having some fun\... let\'s draw a monster\'s head using only rectangles:
@@ -7375,7 +7337,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-An extract of the JavaScript source code is:
+<h4>An extract of the JavaScript source code is:</h4>
 
 ```
 1.  function drawMonster(x, y) {
@@ -7407,7 +7369,7 @@ As you can see, the code uses the same technique, becomes less and less readable
 
 However, there is a way to simplify this =\> 2D geometric transformations! 
 
-<h4>Geometric transformations: changing the coordinate system
+<h4>Geometric transformations: changing the coordinate system</h4>
 
 The idea behind 2D transformations is that instead of modifying all the coordinates passed as parameters to each call to drawing methods like fillRect(\...), we will keep all the drawing code \"as is\". For example, if the monster of our previous example was drawn at (0, 0), we could just translate (or rotate, or scale) the original coordinate system.
 
@@ -7623,7 +7585,7 @@ Your browser does not support the canvas tag.
 *Line 1* changes the position of the coordinate system, *line 2* draws a monster in the new translated coordinate system. All subsequent calls to drawing methods will be affected and will work in this new system too.
 
 <ul>
-<li>/<h4> Other transformations: rotate, scale</h4></li>
+<li><h4>Other transformations: rotate, scale</h4></li>
 </ul>
 
 There are other transformations available:
@@ -10648,7 +10610,7 @@ Note how the different parts are linked together and make a \"path\":
 &nbsp;
 <br/>
 
-### Interesting, interactive tool for generating code that draws Bézier curves
+<h4>Interesting, interactive tool for generating code that draws Bézier curves</h4>
 
 This Bézier tool (\"HTML5 \<canvas\> bezierCurveTo command generator\") is available [online](https://www.victoriakirst.com/beziertool/): try it!
 
@@ -10658,7 +10620,7 @@ In previous examples, we saw how to set the current color using the strokeStyle 
 
 Let\'s look at color in a little more detail, and see how we can use gradients or patterns/textures/images (in other words: fill shapes or fill the outline of the shapes with some images that repeat themselves).
 
-### Colors and transparency
+<h4>Colors and transparency</h4>
 
 You can use [the same syntax for colors that is supported by CSS3](https://www.w3.org/TR/css3-color/). The next lines show possible values/syntaxes.
 
@@ -10972,8 +10934,15 @@ border: 1px solid black;
 <h4>Example #3: drawing outlined shapes with gradients</h4>
 
 Just as we used fillStyle and fillRect for drawing rectangles filled with a gradient, we can also use strokeStyle and strokeRect in order to draw wireframed rectangles. In the next example, which is just a variation of the previous one, we have used the lineWidth property to set the outline of the rectangles at 5 pixels:
-
-![](./images/image171.png){width="6.5in" height="2.040277777777778in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 171.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image171.png?raw=true"
+   alt="image171.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>JS</h4>
 
@@ -11269,7 +11238,15 @@ Radial gradients are for creating gradients that propagate/interpolate colors al
 
 Here is an example of a radial gradient that interpolates the color of the rainbow:
 
-![](./images/image175.png){width="6.5in" height="2.095138888888889in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 175.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image175.png?raw=true"
+   alt="image175.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>JS</h4>
 ```
@@ -11330,19 +11307,37 @@ The method from the context object createRadialGradient(cx1, cy1, radius1, cx2, 
 
 In the above example, the gradients starts at a circle located at (150, 100), with a radius of 30, and propagates to a circle with the same center as the first (150, 100), but with a bigger radius of 100, as shown below:
 
-![radial gradient](./images/image176.jpeg){width="4.041666666666667in" height="2.8020833333333335in"}
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------------- 176. radial gradient (xx) ------------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image176.jpeg?raw=true"
+   alt="image176.jpeg"
+   width="40%">
+&nbsp;
+<br/>
 
 We added color stops using a method similar to that used for linear gradients.
 
-### What happens if the circles are not located at the same place?
+<h4>What happens if the circles are not located at the same place?</h4>
 
 You get some nice effects; here we set the second circle\'s center 60 pixels to the right of the first circle\'s center (cx = 210 instead of 150):
 
 1.  grd = ctx.createRadialGradient(150, 100, 30, **210**, 100, 100);
 
-Here is the result:
+<h4>Here is the result:</h4>
 
-![](./images/image177.png){width="6.5in" height="2.0541666666666667in"}
+
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 177.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image177.png?raw=true"
+   alt="image177.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>JS</h4>
 ```
@@ -11366,7 +11361,7 @@ ctx.fillRect(0, 0, 300, 200);
 }
 ```
 
-HTML
+<h4>HTML</h4>
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11461,7 +11456,7 @@ Here we have two rectangles drawn using a pattern (an image that can be repeated
 &nbsp;
 <br/>
 
-JS
+<h4>JS</h4>
 ```
 var canvas, ctx, pattern1;
 function init() {
