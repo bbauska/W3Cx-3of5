@@ -6502,10 +6502,10 @@ Here we provide a basic introduction to JavaScript. If you want to learn more, m
 <b>You will learn a lot by looking at examples, tweaking them, cloning and modifying them, etc.</b> Many previous students who were real JavaScript beginners managed to do [all] the assignments (drawing and animating a monster with keyboard/mouse interaction)! And they did this by just studying the provided examples.
 
 <h4>External resources</h4>
-
--   The[ JavaScript Introduction](https://www.edx.org/course/javascript-introduction) course on W3Cx!
-
--   Mozilla Developper Network [has a JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+<ul>
+<li>The <a href="https://www.edx.org/course/javascript-introduction"> JavaScript Introduction</a> course on W3Cx!</li>
+<li>Mozilla Developper Network <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">has a JS guide</a></li>
+</ul>
 
 <h4>What do you need? How to debug? How to catch errors?</h4>
 
@@ -6515,8 +6515,9 @@ First of all, you need to find a way to debug your code and see errors. If your 
 
 For that you will use **the dev. tools of your browser**. Press *F12* in Windows or *cmd-alt-i* in Mac to open the dev. tools, then go to the console tab: **this is where errors will be displayed**, or messages of your own (use the console.log(string) JavaScript function in the JavaScript code embedded in your html page). In the console, you will be able to type any JavaScript command.
 
-Let\'s look at [ this example on JS Bin](https://jsbin.com/visariz/1/edit?html,output):
+Let\'s look at <a href="https://jsbin.com/visariz/1/edit?html,output"> this example on JS Bin</a>:
 
+```
 +----+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 1  | \<!DOCTYPE html\>                                                                                                                                                      |
 |    |                                                                                                                                                                        |
@@ -6545,23 +6546,25 @@ Let\'s look at [ this example on JS Bin](https://jsbin.com/visariz/1/edit?html,o
 | 13 | \</[**html**](https://december.com/html/4/element/html.html)\>                                                                                                         |
 +====+========================================================================================================================================================================+
 +----+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+```
 
 The simplest way to add JavaScript code in an HTML page, is by using the \<script\>\...\</script\> element.
 
-**The code in this example is executed sequentially when the page is loaded**: the JavaScript code is executed before the browser could see the rest of the page (as the \<script\>\</script\> is located before the \<body\>).
+<b>The code in this example is executed sequentially when the page is loaded</b>: the JavaScript code is executed before the browser could see the rest of the page (as the \<script\>\</script\> is located before the \<body\>).
 
 The H1 element, for example, does not exist in the Document Object Model, and has not yet been displayed when the JavaScript code is executed. If we move the \<script\>\</script\> at the end of the document, then the H1 would have been built before the JavaScript code is executed.
 
 The only line of code we have is console.log(\"Some JavaScript code has been executed\");
 
 This means \"display in the JavaScript console the message\...\". If we open the console tab provided by jsbin.com in a dedicated tab (that redirects all console.log() messages), and re-execute the page (just type a space at the end of a line, this will re-render the page and display the message in the console), we see the message in the console tab, as well as in the dev. tools console. This is illustrated by the image below:
+
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 116. javascript console view (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image116.jpeg?raw=true"
    width="50%"
-   alt="JavaScript console view" />
+   alt="JavaScript console view." />
 </p>
 
 It is also possible to use the \"real dev. tool console\", and for this I recommend running the application in a single window, not in the JS Bin editor. Press the black arrow on the top right of the output window - this will render the page as a standalone Web page, then press *F12*. You should see:
@@ -8967,8 +8970,15 @@ And here is what the timer gives: a slightly faster execution time. Changing 100
 
 **Path mode is faster than immediate mode! We have now an average time of 3.1ms**
 
-********************************** image ***********************************
-![Image of the devtool console that shows random time values. The average time elapsed is around 3.1ms](./images/image135.jpeg){width="6.5in" height="1.5576388888888888in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 135.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image135.jpeg?raw=true"
+   alt="Image of the devtool console that shows random time values. The average time elapsed is around 3.1ms."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>Reset the path mode buffer</h4>
 
@@ -9033,9 +9043,15 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of the s
 <h4>Drawing a grid</h4>
 
 See the example below:
-
-********************************** image ***********************************
-![](./images/image136.png){width="6.5in" height="2.0722222222222224in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 136.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image136.png?raw=true"
+   alt="image136.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9098,9 +9114,16 @@ In this example, the entire grid is drawn during the execution of the last line 
 
 <h4>Mixing filled and wireframe shapes (and immediate and path modes)</h4>
 
-Try this:
-********************************** image ***********************************
-![](./images/image137.png){width="6.5in" height="2.0722222222222224in"}
+<h4>Try this:</h4>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 137.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image137.png?raw=true"
+   alt="image137.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9151,8 +9174,15 @@ This example shows that filled and wireframe shapes should be drawn differently 
 <h4>Drawing a single path made with disconnected lines / parts</h4>
 
 Try this:
-********************************** image ***********************************
-![](./images/image138.png){width="6.5in" height="2.0861111111111112in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 138.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image138.png?raw=true"
+   alt="image138.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>Code source:</h4>
 ```
@@ -9181,8 +9211,15 @@ In this last example, we simply called the moveTo() method between each part of 
 <h4>Common mistake: drawing the same path twice</h4>
 
 Let\'s look at the drawing from the last example of the previous section:
-********************************** image ***********************************
-![](./images/image139.png){width="6.5in" height="2.0569444444444445in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 139.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image139.png?raw=true"
+   alt="image139.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9221,9 +9258,15 @@ Imagine that we would like to draw them with different styles and colors: the sh
 In this example, we will draw the two parts of the path with different styles: the first part in wireframe mode, and the second part in filled mode.
 
 What we will try first is to call stroke() after the first half of the path, then call fill() after the second half of the path:
-
-********************************** image ***********************************
-![](./images/image140.png){width="6.5in" height="2.0631944444444446in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 140.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image140.png?raw=true"
+   alt="image140.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9295,9 +9338,16 @@ What happened is:
 **Important**: If you do not want to draw parts of the same path several times, you need to draw two different paths,\
 using the ctx.beginPath() method, as shown in the next example.
 
-<h4> Now, the right way!
-********************************** image ***********************************
-![](./images/image141.png){width="6.5in" height="2.0701388888888888in"}
+<h4> Now, the right way!</h4>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 141.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image141.png?raw=true"
+   alt="image141.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9369,6 +9419,7 @@ Sometimes, it might be useful to draw just one line.
 It\'s interesting to see how we can write a single \"draw line\" function that takes the start and end coordinates, the color, the line width, etc., and give the impression of being done in \"immediate\" mode.
 
 Here is the code for this \"utility\" function that you may find useful:
+
 ```
 1.  function drawLine(x1, y1, x2, y2, color, width) {
 2.      ctx.save();
@@ -9402,8 +9453,15 @@ Notice the save/restore of the context at the beginning/end of the function. Thi
 -   *Lines 15-17* move the \"pen\" at (x1, y1) then draw a line to (x2, y2), and the stroke at *line 17* makes it appear on the screen.
 
 Here is an example:
-********************************** image ***********************************
-![](./images/image142.png){width="6.5in" height="2.0569444444444445in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 142.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image142.png?raw=true"
+   alt="image142.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9441,7 +9499,7 @@ ctx.restore();
 </html>
 ```
 
-Source code extract:
+<h4>Source code extract:</h4>
 
 ```
 1.  drawLine(0, 0, 100, 100);
@@ -9510,9 +9568,15 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 -   This function can be improved in many ways: adding shadows, using fill() instead of stroke(), which gives strange results when the width is too big, etc.
 
 <h4>Example #2</h4>
-
-********************************** image ***********************************
-![](./images/image143.png){width="6.5in" height="2.0569444444444445in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 143.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image143.png?raw=true"
+   alt="image143.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9581,9 +9645,15 @@ On the Web, you will find many different ways to draw arrows.
 This [article on drawing lines and arcs with arrow heads](http://www.dbp-consulting.com/tutorials/canvas/CanvasArrow.html) is worth reading. It details how to draw arrows with curved heads and different styles for the head. Note, however, that you will need to modify some parts if you want it to support different line widths, etc.
 
 Screenshot from a demo available on the above Web site:
-
-********************************** image ***********************************
-![](./images/image144.png){width="2.0in" height="2.026147200349956in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 144.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image144.png?raw=true"
+   alt="image144.png"
+   width="20%">
+&nbsp;
+<br/>
 
 In a later part of the course dedicated to curve drawing in a canvas, we will also show how to draw curved arrows, with very simple code (much simpler than the one used for drawing the clock\'s hands above).
 
@@ -9592,8 +9662,15 @@ In a later part of the course dedicated to curve drawing in a canvas, we will al
 The ctx.closePath() method indicates that we would like a closed path: draw from the last point to the first.
 
 Try this:
-********************************** image ***********************************
-![](./images/image145.png){width="6.5in" height="2.0840277777777776in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 145.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image145.png?raw=true"
+   alt="image145.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9622,35 +9699,24 @@ ctx.stroke();
 </html>
 ```
 
-Source code:
+<h4>Source code:</h4>
 
+```
 1.  var canvas=document.getElementById(\'myCanvas\');
-
 2.  var ctx=canvas.getContext(\'2d\');
-
 3.  
-
 4.  // Path made of three points (defines two lines)
-
 5.  ctx.moveTo(20,20);
-
 6.  ctx.lineTo(100, 100);
-
 7.  ctx.lineTo(100,0);
-
 8.  
-
 9.  // Close the path, try commenting this line
-
 10. ctx.closePath();
-
 11. 
-
 12. // indicate stroke color + draw first part of the path
-
 13. ctx.strokeStyle = \"blue\";
-
 14. ctx.stroke();
+```
 
 Explanations:
 
@@ -9666,105 +9732,112 @@ The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is useful 
 
 *Note*: the figures in this page have been borrowed from the [HTML5 Canvas Tutorials](https://www.html5canvastutorials.com/tutorials/html5-canvas-arcs/) Web site.
 
-![HTML5 Canvas Arc Diagram: drawing circle, coordinate system](./images/image146.jpeg){width="5.1875in" height="3.3020833333333335in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 146.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image146.jpeg?raw=true"
+   alt="HTML5 canvas arc diagram drawing circle, coordinate system."
+   width="50%">
+&nbsp;
+<br/>
 
-### Typical usage
+<h4>Typical usage</h4>
 
 Typical usage for drawing an arc/circle/ellipse is:
 
+```
 1.  ctx.arc(centerX, centerY, radius, startAngle, endAngle); // clockwise drawing
-
 2.  
-
 3.  ctx.arc(centerX, centerY, radius, startAngle, endAngle, **false**);
+```
 
 The angles are in radians (between 0 and 2\*Math.PI). The arc is drawn clockwise. Beware that this may not seem natural if you\'re used to the trigonometric order.
 
 The last parameter is optional and has a value of false by default. If true, instead of drawing an arc of circle that corresponds to the parameters, *it will draw its complementary*. See the examples below to see the difference.
 
-### Examples
+<h4>Examples</h4>
 
-<h4> Example #1: drawing an arc with radius = 50, starting angle = 0, end angle = PI/2
+<h4>Example #1: drawing an arc with radius = 50, starting angle = 0, end angle = PI/2
 
 Try this example:
 
-![](./images/image147.png){width="6.5in" height="2.0430555555555556in"}
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Drawing an arc\</title\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\" width=\"500\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 147.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image147.png?raw=true"
+   alt="image147.png"
+   width="65%">
+&nbsp;
+<br/>
+```
+<!DOCTYPE html\>
+<html lang=\"en\"\>
+<head\>
+<meta charset=\"utf-8\"/\>
+<title\>Drawing an arc\</title\>
+</head\>
+<body\>
+<canvas id=\"myCanvas\" width=\"500\"\>Your browser does not support the canvas tag.\</canvas\>
+<script type=\"text/javascript\"\>
 var canvas=document.getElementById(\'myCanvas\');
-
 var ctx=canvas.getContext(\'2d\');
-
 ctx.beginPath();
-
 // try to set the last parameter to true or remove it
-
 ctx.arc(100,75,50,0,Math.PI/2);
-
 ctx.lineWidth=10;
-
 ctx.stroke();
+</script\>
+</body\>
+</html\>
+```
 
-\</script\>
-
-\</body\>
-
-\</html\>
-
-Code source extract:
-
+<h4>Code source extract:</h4>
+```
 1.  ctx.beginPath();
-
 2.  // we ommited the last parameter
-
 3.  ctx.arc(100, 75, 50, 0, Math.PI/2);
-
 4.   
-
 5.  ctx.lineWidth = 10;
-
 6.  ctx.stroke();
+```
 
 And if we change the last parameter of the arc function call (*line 3*) to true (we omitted it, so it took a value of false by default) :
-
+```
 1.  ctx.beginPath();
-
 2.  // we omitted the last parameter
-
 3.  ctx.arc(100, 75, 50, 0, Math.PI/2, **true**);
-
 4.   
-
 5.  ctx.lineWidth = 10;
-
 6.  ctx.stroke();
+```
 
 Then, the result is the \"complementary\" of the previous arc:
 
-![](./images/image148.png){width="6.5in" height="2.0569444444444445in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 148.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image148.png?raw=true"
+   alt="image148.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4> Example #2: drawing a Full circle (filled + outlined)
 
-![](./images/image149.png){width="6.5in" height="2.0701388888888888in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 149.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image149.png?raw=true"
+   alt="image149.png"
+   width="65%">
+&nbsp;
+<br/>
 
-Source code:
+<h4>Source code:</h4>
 ```
 1.  var canvas = document.getElementById("myCanvas");
 2.  var ctx = canvas.getContext("2d");
@@ -9799,7 +9872,7 @@ Notice that we called ctx.arc() only once! And drew it twice, with different sty
 
 <h4>Proposed projects</h4>
 
-<h4>Project #1: modify the [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO) in order to get:</h4>
+<h4>Project #1: modify the <a href="https://codepen.io/w3devcampus/pen/YzZBxmO">previous example</a> in order to get:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 150. half circle (xxx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -9830,7 +9903,7 @@ In fact, the arcTo(\...) method draws an arc of a circle depending on some tange
 
 ![There are three diagrams all drawn on canvas dynamically. The arcTo really uses arcTo() with reduced alpha, and the rest of the diagram is calculated in JavaScript and drawn with lineTo and arc. ](./images/image152.jpeg){width="6.5in" height="1.8243055555555556in"}
 
-### Typical use
+<h4>Typical use</h4>
 
 1.  ctx.moveTo(x0, y0);
 
@@ -10237,7 +10310,7 @@ context.stroke();
 </html>
 ```
 
-Source code:
+<h4>Source code:</h4>
 
 ```
 1.  context.beginPath();
@@ -10400,7 +10473,7 @@ Bézier curves are interesting. They are mostly used for drawing \"S\" shapes or
 &nbsp;
 <br/>
 
-(image taken from [SitePoint](https://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html))
+(image taken from <a href="https://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html">SitePoint</a>)
 
 Bézier curves are defined by a context point, like quadratic curves, two control points that define two tangents, and an ending point.
 
@@ -10902,116 +10975,69 @@ Just as we used fillStyle and fillRect for drawing rectangles filled with a grad
 
 ![](./images/image171.png){width="6.5in" height="2.040277777777778in"}
 
-JS
+<h4>JS</h4>
 
+```
 var canvas, ctx, grdFrenchFlag;
-
 function init() {
-
 // Good practice 1: set global vars canvas, ctx, gradients, etc here
-
 canvas = document.querySelector('#myCanvas1');
-
 ctx = canvas.getContext('2d');
-
 // The gradient we create is also a global variable, we
-
 // will be able to reuse it for drawing different shapes
-
 // in different functions
-
 grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
-
 // Try adding colors with first parameter between 0 and 1
-
 grdFrenchFlag.addColorStop(0, "blue");
-
 grdFrenchFlag.addColorStop(0.5, "white");
-
 grdFrenchFlag.addColorStop(1, "red");
-
 drawCheckboard(5);
-
 }
-
 // n = number of cells per row/column
-
 function drawCheckboard(n) {
-
 ctx.strokeStyle = grdFrenchFlag;
-
 ctx.lineWidth=10;
-
 var l = canvas.width;
-
 var h = canvas.height;
-
 var cellWidth = l / n;
-
 var cellHeight = h / n;
-
 for(i = 0; i < n; i++) {
-
 for(j = i % 2; j < n; j+=2) {
-
 ctx.strokeRect(cellWidth*(i), cellHeight*j, cellWidth, cellHeight);
-
 }
-
 }
+```
 
-HTML
-
+<h4>HTML</h4>
+```
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <meta charset="utf-8">
-
 <title>Drawing outlined shapes with gradients - Example #3</title>
-
 <style>
-
 #myCanvas1 {
-
 border: 1px solid black;
-
 }
-
 </style>
-
 </head>
-
 <body onload="init();">
-
 <canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
-
 </body>
-
 </html>
+```
 
-Extract from source code:
-
+<h4>Extract from source code:</h4>
+```
 1.  function drawCheckboard(n) {
-
 2.      **ctx.strokeStyle = grdFrenchFlag;**
-
 3.  **    ctx.lineWidth=10;**
-
 4.      ...
-
 5.      for(i = 0; i < n; i++) {
-
 6.          for(j = i % 2; j < n; j++) {
-
 7.              ctx.**stroke**Rect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
-
 8.          }
-
 9.      }
-
 10. }
 
 <h4>Example #4: what happens if we define a gradient smaller than the canvas?</h4>
@@ -11425,8 +11451,15 @@ There are a few steps we have to take before doing this:
 
 Here we have two rectangles drawn using a pattern (an image that can be repeated along the X and Y axis). The first is a filled rectangle while the second is \"stroked\" with a lineWidth of 20 pixels:
 
-
-![](./images/image178.png){width="6.5in" height="2.0631944444444446in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 178.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image178.png?raw=true"
+   alt="image178.png"
+   width="65%">
+&nbsp;
+<br/>
 
 JS
 ```
@@ -11534,7 +11567,15 @@ JavaScript source code:
 
 To \"better\" see the repeatability of the pattern, here is the same example with a 1000x1000 pixel wide canvas:
 
-![](./images/image179.png){width="6.5in" height="2.0631944444444446in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 179.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image179.png?raw=true"
+   alt="image179.png"
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>JS</h4>
 ```
@@ -11574,7 +11615,7 @@ imageObj.src = \"https://mainline.i3s.unice.fr/mooc/pattern1.jpg\";
 }
 ```
 
-HTML
+<h4>HTML</h4>
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11595,11 +11636,19 @@ Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just change th
 
 <h3 id="ch3-5-5">3.5.5 A Multiple Image Loader</h3>
 
-### Draw with multiple patterns? We need to load all of them before drawing! 
+<h4>Draw with multiple patterns? We need to load all of them before drawing!</h4>
 
 Below are 4 rectangles drawn with 4 different patterns.
 
-![4 rectangles drawn with different patterns](./images/image180.jpeg){width="3.78125in" height="3.78125in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 180.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image180.jpeg?raw=true"
+   alt="4 rectangles drawn with different patterns"
+   width="40%">
+&nbsp;
+<br/>
 
 We said earlier that we cannot draw before the image used by a pattern is loaded. This can become rapidly complicated if we need to draw using multiple patterns. We need a way to load all images and then, *only when all images have been loaded, start drawing*.
 
@@ -11616,7 +11665,7 @@ The complete example code that produces the result shown at the beginning of thi
 <!----------------------------- 181.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image281.png?raw=true"
+<img src="/images/image181.png?raw=true"
    alt=""
    width="65%">
 &nbsp;
@@ -11784,9 +11833,9 @@ Notice that instead of using a traditional array, we defined this list as a Java
 13. }
 ```
 
-### 3.5.6 Drawing Shadows
+<h3 id="ch3-5-6">3.5.6 Drawing Shadows</h3>
 
-### Context properties to draw with shadows
+<h4>Context properties to draw with shadows</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 182.  (xxx) -------------------------------->
@@ -12774,65 +12823,41 @@ clearTimeout(requestId);
 
 This is similar to the previous example except that we called setTimeout(function, delay) instead of setInterval(function, period). **As setTimeout runs the function passed as the first parameter only once, we also have to call it at the end of the loop**.
 
-Extract from source code:
+<h4>Extract from source code:</h4>
 
+```
 1.  function animationLoop() {
-
 2.     // 1 - Clear
-
 3.     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 4.  
-
 5.     // 2 Draw
-
 6.     drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
-
 7.  
-
 8.     // 3 Move
-
 9.     monsterX += 10;
-
 10.    monsterX %= canvas.width
-
 11.    monsterAngle+= 0.01;
-
 12. 
-
 13.    **// call mainloop again after 20ms**
-
 14.    **requestId = setTimeout(animationLoop, 20);**
-
 15. }
-
 16.  
-
 17. function start() {
-
 18.    // Start the animation loop, change 20 for bigger
-
 19.    // values
-
 20.    **requestId = setTimeout(animationLoop, 20);**
-
 21. }
-
 22. 
-
 23. function stop() {
-
 24.    if (requestId) {
-
 25.       **clearTimeout(requestId);**
-
 26.    }
-
 27. }
+```
 
 This function is certainly more suitable for doing graphic animation, such as for writing an HTML5 game. It will never interrupt an ongoing animation, even if the instructions inside the animation loop take too long.
 
-### Problems with setInterval() and setTimeout()
+<h4>Problems with setInterval() and setTimeout()</h4>
 
 setTimeout does not \"wait\"  during the timeout period. It lets the rest of the JavaScript code run. It schedules a new call to the function passed as first parameter with a timer running in the background. This might cause it to take slightly longer than the expected timeout period to start executing. 
 
@@ -12844,7 +12869,7 @@ Here comes the [requestAnimationFrame API,](https://www.w3.org/TR/html51/webappa
 
 ***For 60 frames/second animation, use requestAnimationFrame!***
 
-### 4.2.5 The requestAnimationFrame API
+<h3 id="ch4-2-5">4.2.5 The requestAnimationFrame API</h3>
 
 The best way to make animation at 60 frames per second: requestAnimationFrame!
 
@@ -12864,7 +12889,7 @@ It has, however, several advantages over setInterval and setTimeout:
 
 -   **CPU/GPU optimization, battery saved on mobiles**:  if the JavaScript execution is occurring in a tab/window which is not visible, it doesn't have to be drawn. However the animation loop is still executed (objects will be moved, not drawn). This is the same when a mobile phone or tablet screen is black or if the application is put in background.
 
-### Typical use
+<h4>Typical use</h4>
 
 You will note that  requestAnimationFrame(function) is used like setTimeout(function, delay). A call to requestAnimationFrame just asks the browser to call the function passed as a parameter ONCE, **and the target delay is fixed**, and corresponds to a 60 frames/s frame rate (16.6ms). Notice that an id is used for stopping an animation with cancelAnimationFrame(id). 
 
@@ -12946,7 +12971,7 @@ Source code extract - please compare with the previous example that used setInte
 
 Notice that calling requestAnimationFrame(animationLoop) at* line 19*, and after that from within the loop at line 14, asks the browser to call the animationLoop function so that the delta between calls will be **as close as possible to 16.6ms  (this corresponds to 1/60th of a second)**.
 
-### Is the 16.6ms delay really accurate? Can we trust it?
+<h4>Is the 16.6ms delay really accurate? Can we trust it?</h4>
 
 This target may be hard to reach if:
 
@@ -13569,7 +13594,7 @@ The example below is about listening to mouseup and mousedown events (when a use
 
 The event received by the listener function will be used for getting the button number or the coordinates of the mouse cursor. Before looking at different examples, let's look at the different event types we can listen to.
 
-### The different mouse events
+<h4>The different mouse events</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------- 198.  (xxx) ------------>
@@ -13597,7 +13622,7 @@ There are other events related to the mouse:
 
 -   mousemove: fired while the mouse moves over the element. Each time the mouse moves, a new event is fired, unlike with mouseover or mouseenter, where only one event is fired.
 
-### The tricky part: accurately getting the mouse position relative to the canvas
+<h4>The tricky part: accurately getting the mouse position relative to the canvas</h4>
 
 When you listen to any of the above events, the event object (we call it a \"DOM event\"), passed to the listener function, has properties that correspond to the mouse coordinates: clientX and clientY.
 
@@ -14405,11 +14430,11 @@ Since HTML5 provides functionalities to assist with accessibility, developers sh
 
 Examples for each of these two basic guidelines are given in the following pages.
 
-### Further reading
+<h4>Further reading</h4>
 
 The WAI Web site hosts a [Forms tutorial](https://www.w3.org/WAI/tutorials/forms/) where to find all guidelines to follow in order to make your forms truly accessible: labeling controls, grouping controls, form instructions, validating input, user notifications, multi-page forms, and custom controls.
 
-### 5.3.2 Why is this Important?
+<h3 is="xh5-3-2">5.3.2 Why is this Important?</h3>
 
 Forms can be visually and cognitively complex and difficult to use. Accessible forms are easier to use for everyone, including people with disabilities.
 
@@ -14421,9 +14446,9 @@ Forms can be visually and cognitively complex and difficult to use. Accessible f
 
 -   **People using screen readers** can identify and understand form controls more easily because they are associated with labels, field sets, and other structural elements.
 
-### 5.3.3 Labeling Controls
+<h3 id="ch5-3-3">5.3.3 Labeling Controls</h3>
 
-### Labels need to describe the purpose of the form control
+<h4>Labels need to describe the purpose of the form control</h4>
 
 Form fields and other form controls usually have visible labels, such as \"E-mail Address:\" as the label for a text field (see figure below).
 
@@ -14431,7 +14456,7 @@ Form fields and other form controls usually have visible labels, such as \"E-mai
 
 When these labels are marked up correctly, people can interact with them using only the keyboard, using voice input, and using screen readers. Also, the label itself becomes clickable, which enables a person who has difficulty clicking on small radio buttons or checkboxes to click anywhere on the label text.
 
-### Associating labels explicitly
+<h4>Associating labels explicitly</h4>
 
 Whenever possible, use the label element to explicitly associate text with form elements. The for attribute of the label must exactly match the id of the form control. 
 
@@ -14486,7 +14511,7 @@ Bottom of Form
 
 5.  \<input type=\"checkbox\" name=\"subscribe\" id=\"subscribe\"\>
 
-### Labeling buttons
+<h4>Labeling buttons</h4>
 
 The label of a \<button\> element is set inside the element and can include markup. This allows advanced accessibility hints to be included, such as marking up language change. Example: \<button\>Mon \<span lang=\"fr\"\>bouton\</span\>\</button\>,for a button with a label in French.
 
@@ -14509,7 +14534,7 @@ Submit Cancel
 \... while li*nes 3 and 4* render as:\
 ![](./images/image220.wmf) 
 
-### Labeling text areas
+<h4>Labeling text areas</h4>
 
 Enter your address:\
 ![](./images/image221.wmf)
@@ -14594,13 +14619,13 @@ Source code:
 8.  </fieldset>
 ```
 
-### Associating related controls with WAI-ARIA
+<h4>Associating related controls with WAI-ARIA</h4>
 
 WAI-ARIA provides a grouping role that functions similarly to fieldset and legend. For example, a div element can have role=group to indicate that the contained elements are members of a group.
 
 WAI-ARIA roles are very important in the accessibility world, and we invite you to see an example provided in the [associated WAI tutorial](https://www.w3.org/WAI/tutorials/forms/grouping/#associating-related-controls-with-wai-aria). See also this MDN\'s article about about [WAI-ARIA roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
 
-### 5.4.1 Input Types
+<h3 id="ch5-4-1">5.4.1 Input Types</h3>
 
 In this section, we briefly present the input types, attributes, and elements related to the forms that came with HTML5. Details are given later, illustrated by multiple interactive examples.
 
@@ -14612,7 +14637,7 @@ Now, let\'s play with some of these input types and attributes.
 
 ![HTML4 old HTML5 new](./images/image223.jpeg){width="2.0in" height="1.5972222222222223in"}
 
-### 5.4.2 "color"
+<h3 id="ch5-4-2">5.4.2 "color"</h3>
 
 For years, we used hundreds of lines of JavaScript for selecting colors. Now, it\'s bundled in the browser!
 
@@ -14620,7 +14645,7 @@ Here is how it looks on some mobile devices:
 
 ![HTML5 input type=color on an android phone](./images/image224.jpeg){width="4.0in" height="3.0in"}
 
-### Typical use
+<h4>Typical use</h4>
 
 Inserting a color chooser is as simple as:
 ```
@@ -14646,7 +14671,7 @@ The \<input type=\"color\"\> can fire change or input events. Here is an example
 
 ![change background color of the body](./images/image226.jpeg){width="4.0in" height="3.6217300962379704in"}
 
-Source code:
+<h4>Source code:</h4>
 ```
 1.  \<!DOCTYPE html\>
 2.  \<html lang=\"en\"\>\<head\>\</head\>
@@ -14663,7 +14688,7 @@ Source code:
 13. \</html\>
 ```
 
-### Offer a limited choice of colors
+<h4>Offer a limited choice of colors</h4>
 
 By default, the color selector offers many options that may either frighten some users or just not be appropriate for the purpose of the application. 
 
@@ -14671,29 +14696,31 @@ By default, the color selector offers many options that may either frighten some
 
 Example: click the black rectangle on the right:  . The following should be displayed:
 
-![restricted choice of color](./images/image227.jpeg){width="3.0in" height="1.872483595800525in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 227. restricted choice of color (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image227.jpeg?raw=true"
+   width="30%"
+   alt="Restricted choice of color." />
+</p>
 
 [Online example at JSBin](https://jsbin.com/lahapu/edit?html,output)
 
-Source code extract:
-
-1.  \<input type=\"color\" value=\"#333333\" **list=\"colors\"**\>
-
+<h4>Source code extract:</h4>
+```
+1.  <input type="color" value="#333333" list="colors">
 2.  
-
-3.  \<datalist **id=\"colors\"**\>
-
-4.       \<option\>#0000FF\</option\>
-
-5.       \<option\>#00FF00\</option\>
-
-6.       \<option\>#FF0000\</option\>
-
-7.  \</datalist\>
+3.  <datalist id="colors">
+4.       <option>#0000FF</option>
+5.       <option>#00FF00</option>
+6.       <option>#FF0000</option>
+7.  </datalist>
+```
 
 Note that the id of the \<datalist\> element should be the same as the value of the list attribute of the input field.
 
-### What are the main problems with this element?
+<h4>What are the main problems with this element?</h4>
 
 The main criticism that Web designers make about this element is related to its default appearance being strongly dependent on the browser and its underlying operating system. Changing the *look and feel* is not possible, except with the use of the options we saw in the previous sections of this page. This problem is also true for other input elements that renders as complex widgets, like \<input type=\"date\"\> and its variants.
 
@@ -14701,7 +14728,7 @@ Another problem is that there is no way to control where the dialog that contain
 
 The solution proposed by the W3C and its contributors is called *Web Components*, a new approach for designing HTML5 widgets, that is covered in the W3Cx HTML5 Apps and Games course.
 
-### 5.4.3 "date"
+<h3 id="ch5-4-3">5.4.3 "date"</h3>
 
 For years, date and time pickers in HTML forms made Web developers rely heavily on JavaScript based widgets. The process is simpler in HTML5, which provides a special control to handle this specific kind of data natively.
 
@@ -16186,16 +16213,16 @@ Family name: ![](./images/image269.wmf)\
 
 Source code:
 ```
-1.  \<form action=\"defaultAction.php\"\>
-2.       \<label for=\"givenName\"\>Given name:\</label\>
-3.       \<input type=\"text\" name=\"givenName\" id=\"givenName\"\>\<br\>
-4.       \<label for=\"familyName\"\>Family name:\</label\>
-5.       \<input type=\"text\" name=\"familyName\" id=\"familyName\"\>\<br\>
-6.       \<input type=\"submit\" value=\"Submit as usual\"\>
-7.       \<input type=\"submit\"
-8.             formtarget=\"\_blank\"**
-9.             value=\"Submit but show results in a new window/tab\"\>
-10. \</form\>
+1.  <form action="defaultAction.php">
+2.       <label for="givenName\>Given name:</label>
+3.       <input type="text" name="givenName" id="givenName"><br>
+4.       <label for="familyName">Family name:</label>
+5.       <input type="text" name="familyName" id="familyName"><br>
+6.       <input type="submit" value="Submit as usual">
+7.       <input type="submit"
+8.             formtarget="_blank"**
+9.             value="Submit but show results in a new window/tab">
+10. </form>
 ```
 
 <h3 id="ch5-5-13">5.5.13 formenctype</h3>
@@ -16207,20 +16234,20 @@ The enctype attribute existed before HTML5. It is often used together with forms
 [Online example at JSBin](https://jsbin.com/magexat/3/edit?html,output):
 
 ```
-1.  \<!DOCTYPE html\>
-2.  \<html lang=\"en\"\>
-3.    \<head\>
-4.      \<meta charset=\"utf-8\"\>
-5.      \<title\>Jsbin\</title\>
-6.    \</head\>
-7.    \<body\>
-8.      \<form action=\"default.php\" method=\"post\" enctype=\"multipart/form-data\"\>
-9.        Given name: \<input type=\"text\" name=\"gname\"\>\<br\>
-10.       Family name: \<input type=\"text\" name=\"fname\"\>\<br\>
-11.       \<input type=\"submit\" value=\"Submit\"\>
-12.     \</form\>
-13.   \</body\>
-14. \</html\>
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.    <head>
+4.      <meta charset="utf-8">
+5.      <title>Jsbin</title>
+6.    </head>
+7.    <body>
+8.      <form action="default.php" method="post" enctype="multipart/form-data">
+9.        Given name: <input type="text" name="gname"><br>
+10.       Family name: <input type="text" name="fname"><br>
+11.       <input type="submit" value="Submit">
+12.     </form>
+13.   </body>
+14. </html>
 ```
 
 Note that when you send form content using Ajax, this attribute is not needed, as you will specify the type of data sent to the remote server in JavaScript, using the [FormData object](https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects).
@@ -16248,7 +16275,7 @@ The possible values for this field are:
 
 -   text/plain: some encoding is done on standard characters like space (that becomes a \"+\"), nothing is done for special characters.
 
-### Example
+<h4>Example</h4>
 
 [Try this online example at JSBin](https://jsbin.com/lokukam/4/edit?html,output)
 
@@ -16258,10 +16285,9 @@ The possible values for this field are:
 <p align="center">
 <img src="/images/image276.png?raw=true"
    alt="Example of use of the formenctype attribute."
-   width="35%">
+   width="40%">
 &nbsp;
 <br/>
-![example of use of the formenctype attribute](./images/image276.png){width="4.0in" height="1.2413790463692038in"}
 
 Source code:
 
@@ -16348,7 +16374,7 @@ Let\'s look at the HTML5 elements related to forms (specifically: \<datalist\>, 
 | \* Not really useful for most developers. |                                   |
 +-------------------------------------------+-----------------------------------+
 
-<h3 id="ch5-6-2">5.6.2 <output></h3>
+<h3 id="ch5-6-2">5.6.2 &lt;output&gt;</h3>
 
 The output element represents the result of a computation or user action. You can see it as a \"specialized \<div\> or \<span\>\" for displaying interactive results.
 
@@ -16771,7 +16797,7 @@ The rule at *line 1* says that any time we click on an input field, it will enla
 
 The rules at *lines 8* and 1*1* target the input fields with a required attribute. They will change the background by displaying a small green or red icon, corresponding to the valid/invalid status of the input field.
 
-### Use the title attribute for specifying a custom message
+<h4>Use the title attribute for specifying a custom message</h4>
 
 You can simply use the input\'s title attribute to provide a message for pattern-mismatches, and more generally for all validation errors. This solution is really neat and doesn\'t require JavaScript!
 
@@ -16838,7 +16864,7 @@ Same example on FireFox, the title attribute is ignored:
 
 There is a JavaScript API for form validation. This API will let you use your own validation algorithm (i.e. check that you have entered the same password in two different input fields), and customize error messages. Also, together with some HTML/CSS/JavaScript you will be able to make your own message bubbles.
 
-### Typical use
+<h4>Typical use</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- not local.  (xx) ------------------------------->
@@ -17219,17 +17245,16 @@ Indeed, Web Storage provides two interfaces - sessionStorage and localStorage - 
 For convenience, we will mainly illustrate the localStorage object. Just change \"local\" to \"session\" and it should work (this time with a session lifetime).
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 296.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image296.png?raw=true"
+   alt="Key value pairs."
+   width="15%">
 &nbsp;
 <br/>
-![key value pairs](./images/image296.png){width="1.7291666666666667in" height="1.6979166666666667in"}
 
-### Simple key-value stores, one per domain (following the same origin policy)!
+<h4>Simple key-value stores, one per domain (following the same origin policy)!</h4>
 
 localStorage is a simple key-value store, in which the keys and values are strings. There is only one store per domain. This functionality is exposed through the globally available localStorage object. The same applies to sessionStorage.
 
@@ -17494,7 +17519,7 @@ Then click on the second button to add data to the store, click on the third to 
 Local stores are also useful for<b> saving/restoring user preferences<b> of Web Applications. For example, the JS Bin tool you have been using since the beginning of this course uses localStorage to store the list of tabs you open, and their width:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 301.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image301.jpeg?raw=true"
