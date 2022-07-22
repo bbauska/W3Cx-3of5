@@ -2989,10 +2989,11 @@ It provides both a human readable part (the part between \<time\> and \</time\>)
 The machine readable part adds semantics that can be used by search engines for indexing, by browsers or by browser extensions, or by JavaScript code. Useful scenarios include generating alerts for birthdays, automatically adding dates or events that contain \<time\> elements in a calendar, etc.
 
 <h4>Example:</h4>
-```
+
+```html5
 1.  We open at <b><time>10:00</time> every morning.
 2.  
-3.  I have a meeting the <b><time datetime="2020-02-14">Monday 14/02/2020.</time></b>.
+3.  I have a meeting the <b><time datetime="2020-02-14">Monday 14/02/2020.</time>.
 4.  Blog posts from the year <b><time datetime="2020">2020</time></b>.
 5.  Archives, blog posts for <b><time datetime="2020-04">April 2020</time></b>
 6.  This recipe was published by Michel the <b><time datetime="2020-04-16">April 16, 2020</time></b>.
@@ -3002,7 +3003,7 @@ The machine readable part adds semantics that can be used by search engines for 
 
 The datetime attribute can be used for indicating a date/time or a duration.
 
-<b>Date/time values</b>
+<h4>Date/time values</h4>
 
 Supports different specifications of time such as \"a year\", \"a month in a year\", \"a week in a year\", \"a time\", etc\... 
 
@@ -3010,25 +3011,25 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
 
 Different syntaxes of the datetime attribute
   
-  datetime attribute values                      Interpretation
+datetime attribute values                      Interpretation
 
-  \<time datetime=\"2020\"\>                     The year 2020
+\<time datetime=\"2020\"\>                     The year 2020
 
-  \<time datetime=\"2020-11\"\>                  November 2020
+\<time datetime=\"2020-11\"\>                  November 2020
 
-  \<time datetime=\"11-13\"\>                    November 13th (any year)
+\<time datetime=\"11-13\"\>                    November 13th (any year)
 
-  \<time datetime=\"2020-W21\"\>                 Week 21 from year 2020
+\<time datetime=\"2020-W21\"\>                 Week 21 from year 2020
 
-  \<time datetime=\"2020-11-13 09:00\"\>         November 13th year 2020, time = 9:00
+\<time datetime=\"2020-11-13 09:00\"\>         November 13th year 2020, time = 9:00
 
-  \<time datetime=\"2020-11-13T09:00\"\>         Same as previous example, both syntaxes are supported, with and without the \"T\" between date and time.
+\<time datetime=\"2020-11-13T09:00\"\>         Same as previous example, both syntaxes are supported, with and without the \"T\" between date and time.
 
-  \<time datetime=\"09:00Z\"\>                   9:00 in the morning, GMT
+\<time datetime=\"09:00Z\"\>                   9:00 in the morning, GMT
 
-  \<time datetime=\"09:00-05\"\>                 9:00 in the morning, GMT minus 5 hours
+\<time datetime=\"09:00-05\"\>                 9:00 in the morning, GMT minus 5 hours
 
-  \<time datetime=\"09:00+05:45\"\>              9:00 in the morning, GMT plus 5 hours 45 minutes, (for example, Nepal is 5:45 ahead of  GMT)
+\<time datetime=\"09:00+05:45\"\>              9:00 in the morning, GMT plus 5 hours 45 minutes, (for example, Nepal is 5:45 ahead of  GMT)
 
 <h4>Duration values</h4>
 
