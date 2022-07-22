@@ -1736,7 +1736,7 @@ Note that the H2, article, article header, etc. will be styled using these rules
 
 Next, in each article in the section we have a header (to display the article title), paragraphs (article content), and so on.
 
-Example for the first blog article:
+<h4>Example for the first blog article:</h4>
 
 ```
 <section>
@@ -2099,7 +2099,7 @@ The first element of a heading content in an element of sectioning content repre
 
 Subsequent headings of equal or higher rank start new (implied) sections, headings of lower rank start implied subsections that are part of the previous one. In both cases, the element represents the heading of the implied section.
 
-Let\'s clarify this by looking at some example code:
+<h4>Let's clarify this by looking at some example code:</h4>
 ```
 <body>
 <section>
@@ -2146,7 +2146,7 @@ Here are some examples:
 
 <h4>Good (heading in each explicit section):</h4>
 
-```
+```html5
 <section>
     <h1>Blog post of April 2020</h1>
     ...
@@ -2154,7 +2154,8 @@ Here are some examples:
 ```
 
 <h4>Good (heading in a &lt;header&gt; does not change anything)</h4>
-```
+
+```html5
 <section>
    <b><header></b>
       <b><h1>Blog post of April 2020</h1></b>
@@ -2622,7 +2623,7 @@ We embed examples from this [very good post about \"Positioning content\"](https
 
 The 4 examples below are given \"as is\" to give you some hints. There are lots of other possibilities on using CSS to position element.
 
-<h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, using the float and width CSS properties</4>
+<h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, using the float and width CSS properties</h4>
 
 This example uses the following HTML structure (notice that we use the \"HTML entity syntax\" for displaying \"\<\" or \"\>\". For example, displays a \"\<\" character).
 
@@ -2648,11 +2649,11 @@ Here we use the CSS rule float:left for the <section\> and the CSS rule float:ri
 
 You can look at the complete CSS code in the interactive example below (click on the CSS or HTML text in the menu bar below, or click \"edit on codepen\" to change the code and see the results):
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 35.  (xx) ------------------->
+<!------------------------ 35. example from the live coding video (56) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image035.png?raw=true"
-   alt=""
+   alt="Example from the live coding video."
    width="65%" />
 &nbsp;
 <br/>
@@ -2660,7 +2661,7 @@ You can look at the complete CSS code in the interactive example below (click on
 <a href="https://jsbin.com/dufapo/edit?html,css,output">Also available online at JSBin</a>.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 36.  (xx) ------------------->
+<!---------------------- 36. three sections, centered, of equal size (56) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image036.png?raw=true"
@@ -2673,7 +2674,7 @@ You can look at the complete CSS code in the interactive example below (click on
 
 Here we show how to make a 3 column layout using the CSS float property.
 
-<b>HTML code:</b>
+<h4>HTML code:</h4>
 
 ```
 1.  <header>
@@ -2699,14 +2700,14 @@ Here we show how to make a 3 column layout using the CSS float property.
 
 Instead of having one element with a float:left and one element with a float:right property, we instead use float:left for all three of them, and we give a  width:30% CSS property value to each \<section\>. We also set a small margin so that the colums have a gap between them.
 
-<b>Look at the CSS code in the example below:</b>
+<h4>Look at the CSS code in the example below:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 37.  (xx) ------------------->
+<!------------------- 37. three column layout using css float property (57) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image037.png?raw=true"
-   alt=""
+   alt="Three column layout using css float property."
    width="65%" />
 &nbsp;
 <br/>
@@ -2716,11 +2717,11 @@ Instead of having one element with a float:left and one element with a float:rig
 This example uses the CSS flex property to achieve a result similar to the one shown in Example 2.
 There are many articles on Flexbox and we recommend those from Rachel Andrew on Smashing Magazine: \"[Use cases for Flexbox](https://www.smashingmagazine.com/2018/10/flexbox-use-cases/)\", \"[Flexbox: how big is that flexible box](https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/)\", etc.
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 38.  (xx) ------------------->
+<!--------------------- 38. same as above but using css flex property (57) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image038.png?raw=true"
-   alt=""
+   alt="Example page using the css flex property."
    width="65%" />
 &nbsp;
 <br/>
@@ -2730,11 +2731,11 @@ There are many articles on Flexbox and we recommend those from Rachel Andrew on 
 This example also uses all the structuring elements we saw: main, article, section, etc. It uses only the simplest parts of the FlexBox CSS module, so it should be easy to understand, even for CSS beginners:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 39.  (xx) ------------------->
+<!------------------------------- 39. another flex example (57) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image039.png?raw=true"
-   alt=""
+   alt="Another css flex example."
    width="65%" />
 &nbsp;
 <br/>
@@ -2758,7 +2759,7 @@ In the screenshot below, taken from the W3C specification page, the text next to
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image040.png?raw=true"
-   alt="Example of Summary Details Elements from the W3C specification"
+   alt="Example of summary details elements from the W3C specification."
    width="35%">
 &nbsp;
 <br/>
@@ -2771,21 +2772,20 @@ Here is an example of what can be done using these elements ) see the [online ve
 <!------------------------- 41. example of folded summary details (59) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image041.png?raw=true"
-   alt="example of Folded Summary Details"
+<img src="/images/image041.jpeg?raw=true"
+   alt="Example of folded summary details."
    width="35%">
 &nbsp;
 <br/>
 
 And here is what is displayed after clicking on the small arrow-shaped icon to the left of the summary:
 
-
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 42. Example of summary details unfolded (60) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image042.jpeg?raw=true"
-   alt="Example of summary details unfolded"
+   alt="Example of summary details unfolded."
    width="35%">
 &nbsp;
 <br/>
@@ -2850,20 +2850,20 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> element.
 <b>Source code of this example, see the summary/details inside another one:</b>
 
 ```
-> <details>
-> <summary>
-> How to beat the boss...spoiler alert !
-> </summary>
-> <p> Just aim to the red spots near his eyes</p>
-> <p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
-> <details>
-> <summary>
-> Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
-> </summary>
-> <p>Before finishing him, try to cut his trail, you will get a new weapon</p>
-> <p>Just try to stay behind him as long as you can, hitting his tail with your melee weapon, after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.</p>
-> </details>
-> </details>
+<details>
+<summary>
+How to beat the boss...spoiler alert !
+</summary>
+<p> Just aim to the red spots near his eyes</p>
+<p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
+<details>
+<summary>
+Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
+</summary>
+<p>Before finishing him, try to cut his trail, you will get a new weapon</p>
+<p>Just try to stay behind him as long as you can, hitting his tail with your melee weapon, after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.</p>
+</details>
+</details>
 ```
 
 <h4>CSS pseudo classes for styling summary icons</h4>
@@ -2898,7 +2898,7 @@ In this example: red arrow, white background.
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image047.jpeg?raw=true"
-   alt="Styled summary details icon, unfolded state"
+   alt="Styled summary details icon, unfolded state."
    width="35%">
 &nbsp;
 <br/>
@@ -2921,13 +2921,13 @@ It is also possible to change the icon itself using the CSS pseudo class :after
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image043.jpeg?raw=true"
-   alt="A + as a custom open icon for summary"
+   alt="A + as a custom open icon for summary."
    width="35%">
 &nbsp;
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 48.  (62) ------------------------------->
+<!------------------------ 48. spoiler alert - how to beat the boss (62) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image048.jpeg?raw=true"
@@ -2988,7 +2988,7 @@ It provides both a human readable part (the part between \<time\> and \</time\>)
 
 The machine readable part adds semantics that can be used by search engines for indexing, by browsers or by browser extensions, or by JavaScript code. Useful scenarios include generating alerts for birthdays, automatically adding dates or events that contain \<time\> elements in a calendar, etc.
 
-<b>Example:</b>
+<h4>Example:</h4>
 ```
 1.  We open at <b><time>10:00</time> every morning.
 2.  
@@ -3008,7 +3008,7 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
 
 <h4>Here are some examples:</h4>
 
-  Different syntaxes of the datetime attribute
+Different syntaxes of the datetime attribute
   
   datetime attribute values                      Interpretation
 
@@ -3035,11 +3035,11 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
 Duration values use the prefix "P" for "period" as in \<time datetime=\"P4D\"\> (period = four days)\...
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 50.  (xx) ------------------------------->
+<!----------------------------------- 50. musical notes (64) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image050.jpeg?raw=true"
-   alt="Funny picture duration values"
+   alt="Musical notes."
    width="20%">
 &nbsp;
 <br/>
@@ -3056,7 +3056,8 @@ From Bruce Lawson\'s article : <i>\"Whichever you choose, it's represented inter
 <i>You still can't represent dates before the Christian era, as years can't be negative. Neither can you indicate date ranges. To mark up From "21/02/2012 to 25/02/2012″, use two separate \<time\> elements.\"</i>
 
 <h4>Examples:</h4>
-```
+
+```html5
 <h2>Recipe:</h2>
 <ul>
   <li> Preparation time: <time datetime="PT30M">30 minutes</time> </li>
@@ -3080,7 +3081,7 @@ Used without attributes, the value between the opening \<time\> and closing \</t
 <h4>The &lt;mark&gt; element</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 51.  (xx) ------------------------------->
+<!---------------------- 51. picture of a yellow highlighter marker (65) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image051.jpeg?raw=true"
