@@ -612,7 +612,7 @@ Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\'
 the W3C specification about this element):
 
 <h4>HTML5 structural element and description</h4>
-<a href="https://www.w3.org/TR/html5/sections.html#the-header-element">[&lt;<header&gt;]</a> Introduction of "sectioning elements": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;
+<a href="https://www.w3.org/TR/html5/sections.html#the-header-element">[&lt;header&gt;]</a> Introduction of "sectioning elements": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;
 <a href="https://www.w3.org/TR/html5/sections.html#the-footer-element">[&lt;footer&gt;]</a>  Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;
 <a href="https://www.w3.org/TR/html5/sections.html#the-nav-element">[&gt;nav&gt;]</a>  Section that contains the main navigation links (within the document or to other pages).
 <a href="https://www.w3.org/TR/html5/sections.html#the-article-element">[&lt;article&gt;]</a>  Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.
@@ -746,7 +746,7 @@ nav span {
 Now, we have one big \<section\> element that contains a set of \<article\> elements...
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 16. image of sections that contain articles (xx) ----------------------->
+<!--------------- 16. one big section that contains several article elements (17) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image016.jpeg?raw=true"
@@ -797,7 +797,7 @@ Note that the H2, article, article header, etc. will be styled using these rules
 <h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 17. image of header at top of each article (xx) ------------------------->
+<!------------------- 17. image of header at beginning of each article (18) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image017.jpeg?raw=true"
@@ -3577,7 +3577,7 @@ If you are a developer and if you are familiar with object oriented programming,
 <b>Vocabularies are meant to be shared</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 63.  (xx) ------------------------------->
+<!----------------------------------- 63. time to share (76) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image063.jpeg?raw=true"
