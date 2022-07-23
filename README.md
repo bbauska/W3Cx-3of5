@@ -3741,7 +3741,7 @@ To automatically generate microdata for describing persons, restaurants, movies,
 <h4>Example:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 64.  (xx) ------------------------------->
+<!------------------------- 64. example microdata person generator (80) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image064.jpeg?raw=true"
@@ -3765,7 +3765,7 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">exemple #1 onl
 <h4>Structure:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 65.  (xx) ------------------------------->
+<!----------------------- 65. picture of 1st about me page example (80) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image065.jpeg?raw=true"
@@ -3774,10 +3774,10 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">exemple #1 onl
 &nbsp;
 <br/>
 
-Microdata:
+<h4>Microdata:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 66.  (xx) ------------------------------->
+<!-------------------------- 66. microdata from the example page (81) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image066.jpeg?raw=true"
@@ -3852,7 +3852,7 @@ Here is the HTML code you need to copy and paste in order to embed a video:
 The YouTube video embedded in this page by the above code: it\'s HTML5 but it\'s not a \<video\> element directly inserted in the HTML of this page, it\'s an \<iframe\>.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 69.  (xx) ------------------------------->
+<!----------------------------------- 69. example jsbin (83) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image069.png?raw=true"
@@ -3865,29 +3865,29 @@ The YouTube video embedded in this page by the above code: it\'s HTML5 but it\'s
 
 This is one of the main problems encountered in recent years: codec support was not the same from one browser to another, for commercial/economic reasons. For example, between 2010 and 2013, Firefox only supported the ogg/oggm format. It did not support mp3/mp4 encoding for audio/video, while Internet Explorer only supported H.264 encoding. Since 2012, things have changed with browser updates and today most popular formats are supported.
 
-*The recommended CODEC, which works in all popular browsers: H264/mp4.*
+<i>The recommended CODEC, which works in all popular browsers: H264/mp4.</i>
 
 <h4>External resources</h4>
 <ul>
-<li>From W3C\'s specification: [The video element](https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element)</li>
-<li>MDN\'s Web Docs:  [\<video\>: The Video Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)</li>
-<li>From Apple\'s developer site: [Safari HTML5 audio and video guide](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/ControllingMediaWithJavaScript/ControllingMediaWithJavaScript.html)</li>
-<li>Article from HTML5 Rocks: [Media](https://www.html5rocks.com/en/tutorials/video/basics/)</li>
+<li>From W3C's specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element">The video element</a></li>
+<li>MDN's Web Docs:  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">&lt;video&gt;: The Video Embed element</a></li>
+<li>From Apple's developer site: <a href="https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/ControllingMediaWithJavaScript/ControllingMediaWithJavaScript.html">Safari HTML5 audio and video guide</a></li>
+<li>Article from HTML5 Rocks: <a href="https://www.html5rocks.com/en/tutorials/video/basics/">Media</a></li>
 </ul>
 
-<h3 id="ch2-2-2">2.2.2 The <audio> Element</h3>
+<h3 id="ch2-2-2">2.2.2 The &lt;audio&gt; Element</h3>
 
 HTML5 audio is composed of several layers:
+<ul>
+<li>The &lt;audio&gt; element is useful for embedding an audio player into a Web page. It is dedicated for <b>streamed audio. It is very similar to the &lt;video&gt; element, both in its use and in its API.</li>
+<li>The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.).</li>
+</ul>
 
--   The<b> </b>\<audio\> element is useful for embedding an audio player into a Web page. It is dedicated for <b>streamed audio</b>. It is very similar to the \<video\> element, both in its use and in its API.
-
--   The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.).
-
-This course will focus on the \<audio\> element. We present the [Web Audio API](https://www.w3.org/TR/webaudio/) and other advanced HTML5 features in the [W3Cx HTML5 Apps and Games course](https://www.edx.org/course/html5-apps-and-games).
+This course will focus on the \<audio\> element. We present the <a href="https://www.w3.org/TR/webaudio/">Web Audio API</a> and other advanced HTML5 features in the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games course</a>.
 
 The attributes, event set and JavaScript API  of the \<audio\> element are just a \"reduced\" version of the ones from the \<video\> element, and here we will only address the differences and peculiarities.
 
-<h4>The <audio> element, basic usage</h4>
+<h4>The &lt;audio&gt; element, basic usage</h4>
 
 Here is a simple example (also available [online example from JSBin](https://jsbin.com/yogojis/edit?html,output)):
 
@@ -3932,26 +3932,18 @@ Notice the other similarities: between the \<audio\>\...\</audio\> tags, we adde
 <h4>Most useful attributes of the &lt;video&gt; element</h4>
 
 Here are the most common attributes you can use with the \<video\> element. They are self explanatory\...
-
--   src: source of the video.
-
--   width and height: size of the video. If unspecified, the default width and height of the video will be used. If you specify one dimension but not the other, the browser will adjust the size of the unspecified dimension to preserve the aspect ratio of the video.
-
--   controls: If this boolean attribute is present, the browser displays its own controls for video playback and volume.
-
--   poster: This attribute allows you to specify an image that the browser will use while video is being downloaded, or until the user starts playing the video. If this attribute is not specified, the first frame of the video will be used instead.
-
--   autoplay: This attribute asks the browser to start playing the video automatically as soon as the page is ready.
-
--   preload:  The preload attribute is used when autoplay is not used. It tells the browser what to do before a user plays a video. This attribute is a hint - the browser may ignore it. While autoplay and preload are mutually exclusive, if both are present, then preload is ignored. Possible values:
-
-    -   none: do nothing. This saves bandwidth, no video will be downloaded in background before a user or a call to the play() method starts playing the video.
-
-    -   metadata: download metadata, such as length of the video or its format.
-
-    -   auto (default value): the browser will decide. This will depend on the implementation, and on the kind of connection: wifi, 3G, data roaming etc.
-
--   loop: Another boolean attribute that indicates to play the video in loop mode (and it starts again when finished).
+<ul>
+<li>src: source of the video.</li>
+<li>width and height: size of the video. If unspecified, the default width and height of the video will be used. If you specify one dimension but not the other, the browser will adjust the size of the unspecified dimension to preserve the aspect ratio of the video.</li>
+<li>controls: If this boolean attribute is present, the browser displays its own controls for video playback and volume.</li>
+<li>poster: This attribute allows you to specify an image that the browser will use while video is being downloaded, or until the user starts playing the video. If this attribute is not specified, the first frame of the video will be used instead.</li>
+<li>autoplay: This attribute asks the browser to start playing the video automatically as soon as the page is ready.</li>
+<li>preload:  The preload attribute is used when autoplay is not used. It tells the browser what to do before a user plays a video. This attribute is a hint - the browser may ignore it. While autoplay and preload are mutually exclusive, if both are present, then preload is ignored. Possible values:</li>
+<li>none: do nothing. This saves bandwidth, no video will be downloaded in background before a user or a call to the play() method starts playing the video.</li>
+<li>metadata: download metadata, such as length of the video or its format.</li>
+<li>auto (default value): the browser will decide. This will depend on the implementation, and on the kind of connection: wifi, 3G, data roaming etc.</li>
+<li>loop: Another boolean attribute that indicates to play the video in loop mode (and it starts again when finished).</li>
+</ul>
 
 <h4> Be careful if you target mobile applications or if you have multiple videos on the same page</h4>
 
@@ -3972,16 +3964,13 @@ Do not abuse of the autoplay attribute. We talked earlier about mobile applicati
 <h4>Attributes of the &lt;audio&gt; element</h4>
 
 The attributes you can use with the \<audio\> element are a subset of those available for the \<video\> element. Except for the poster attribute, they are all recognized and have the expected meanings: 
-
--   src: source of an audio stream.
-
--   controls: if this attribute is present, the browser displays its own controls for audio playback and volume.
-
--   autoplay: tells the browser to start playing the audio stream automatically as soon as the page is ready - please read details in the above table.
-
--   preload: tells the browser what to do before a user plays a sound - please read details in the above table.
-
--   loop:  indicates to play the audio stream in loop mode (start again when finished).
+<ul>
+<li>src: source of an audio stream.</li>
+<li>controls: if this attribute is present, the browser displays its own controls for audio playback and volume.</li>
+<li>autoplay: tells the browser to start playing the audio stream automatically as soon as the page is ready - please read details in the above table.</li>
+<li>preload: tells the browser what to do before a user plays a sound - please read details in the above table.</li>
+<li>loop:  indicates to play the audio stream in loop mode (start again when finished).</li>
+</ul>
 
 As with the \<video\> element, the same best practice in regard to preload and autoplay attributes should be followed.
 
@@ -3998,7 +3987,7 @@ To add some styling to the basic example we saw when we introduced the \<audio\>
 Please move the mouse pointer over this player\'s elements: 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 70.  (xx) ------------------------------->
+<!------------------------- 70. two gery-black horses in a field (86) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image070.jpeg?raw=true"
@@ -4009,7 +3998,7 @@ Please move the mouse pointer over this player\'s elements:
 
 Press Play to hear the horse ! 
 
- <b>HTML source code:</b>
+<h4>HTML source code:</h4>
 ```
 1.  <figure id="figaudio1">
 2.    <img id="imghorse" width="200"
@@ -4031,7 +4020,7 @@ Press Play to hear the horse !
 18. </figure>
 ```
 
-CSS source code:
+<h4>CSS source code:</h4>
 ```
 1.  #figaudio1 {
 2.      width : 420px;;
@@ -4080,10 +4069,10 @@ CSS source code:
 
 <h4>Resizing and rotating a video as the mouse pointer comes over it</h4>
 
-See this [example online](https://jsbin.com/zoquru/4/edit?html,css,output) (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it\'s playing.
+See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example online</a> (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it\'s playing.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 71.  (xx) ------------------------------->
+<!----------------------------- 71. example jsbin (88) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image071.png?raw=true"
@@ -4133,11 +4122,11 @@ Example #1: with a regular video
 Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 72.  (xx) ------------------------------->
+<!------------------------ 72. example jsbin with a regular video (89) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image072.png?raw=true"
-   alt=""
+   alt="Example jsbin with a regular video."
    width="65%">
 &nbsp;
 <br/>
@@ -4191,16 +4180,16 @@ And now the JavaScript code:
 > }
 ```
 
-<h4><b>Example #2: with a YouTube video</b></h4>
+<h4>Example #2: with a YouTube video</h4>
 
 Full width, resizable, borderless YouTube video. To do this: just 100% standard CSS + DOM manipulation using JavaScript.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 73.  (xx) ------------------------------->
+<!----------------------------- 73. 2nd example jsbin (90) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image073.png?raw=true"
-   alt=""
+   alt="Second example with jsbin."
    width="50%">
 &nbsp;
 <br/>
@@ -4214,11 +4203,11 @@ The CSS and JavaScript codes for this example are exactly the same as in Example
 In this example, the video does not rescale; it\'s just cropped if the browser window is resized. Enlarge your browser and you\'ll see a man with a phone on the right. Resize your browser and you\'ll see only part of the video.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 74.  (xx) ------------------------------->
+<!----------------------------- 74. second example, continued (90) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image074.png?raw=true"
-   alt=""
+   alt="Second example, continued."
    width="50%">
 &nbsp;
 <br/>
@@ -4305,11 +4294,11 @@ The trick here is that:
 Full screen video that resizes and keeps its ratio, using the viewport units.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 75.  (xx) ------------------------------->
+<!----------------------------- 75. example using viewport units (92) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image075.png?raw=true"
-   alt=""
+   alt="Example using viewport units."
    width="65%">
 &nbsp;
 <br/>
@@ -6639,7 +6628,7 @@ Lots of data visualization tools and JavaScript libraries use the HTML5 canvas e
 A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), that runs at 60 frames per second in an HTML5 canvas element:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (xxx) ------------------->
+<!--------------- 124. a version of the game galaxian that runs at 60 frames/s in a canvas. (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image124.jpeg?raw=true"
@@ -6652,18 +6641,16 @@ Performance is  good and animation is generally very smooth, since most Web brow
 **Note**: 3D drawing using the WebGL API is also possible in a \<canvas\>, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a \<canvas\>: [BabylonJS](https://www.babylonjs.com/) and [ThreeJS](https://threejs.org/).
 
 <h4>External resources</h4>
-
--   Comprehensive [HTML5 canvas tutorials](https://www.html5canvastutorials.com/)
-
--   An [HTML Canvas Deep Dive](https://joshondesign.com/p/books/canvasdeepdive/title.html)
-
--   MDN\'s Web docs: [\<canvas\>: The Graphics Canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas)
-
--   The \<canvas\> element is well supported by browsers:
-
-    -   CanIUse: [browser support table](https://caniuse.com/canvas)
-
-    -   MDN\'s [compatibility table of \<canvas\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#Browser_compatibility)
+<ul>
+<li>Comprehensive <a href="https://www.html5canvastutorials.com/">HTML5 canvas tutorials</a></li>
+<li>An <a href="https://joshondesign.com/p/books/canvasdeepdive/title.html">HTML Canvas Deep Dive</a></li>
+<li>MDN's Web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas">&lt;canvas&gt;: The Graphics Canvas element</a></li>
+<li>The &lt;canvas&gt; element is well supported by browsers:</li>
+	<ul>
+    <li>CanIUse: <a href="https://caniuse.com/canvas">browser support table</a></li>
+    <li>MDN's <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#Browser_compatibility">compatibility table of &lt;canvas&gt;
+	</ul>
+</ul>
 
 <h3 id="ch3-2-3">3.2.3 Canvas and Accessibility</h3>
 
@@ -19366,4 +19353,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-21-2022 18:21 zulu</i></b></h3>
+<h3><b><i>07-22-2022 22:14 zulu</i></b></h3>
