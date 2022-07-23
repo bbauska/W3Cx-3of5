@@ -4369,11 +4369,11 @@ This will create a complete video player for the file \"video.mp4\", with contro
 Please look at this interesting example:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 76.  (xx) ------------------------------->
+<!--------------------- 76. example jsbin play/pause or rewind video (94) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image076.png?raw=true"
-   alt=""
+   alt="Example jsbin play/pause or rewind video."
    width="65%">
 &nbsp;
 <br/>
@@ -4394,18 +4394,43 @@ The list of properties can be found at the <a href="https://www.w3.org/2010/05/v
 Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link</a>, and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 77.  (xx) ------------------------------->
+<!---------------------------- 77. html5 video events and api (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image077.png?raw=true"
-   alt=""
+   alt="HTML5 video events and API."
    width="65%">
 &nbsp;
 <br/>
 
-<h4> Here is a table that shows the most interesting methods, properties, and events provided by the \<video\> element API</h4>
+<h4> Here is a table that shows the most interesting methods, properties, and events provided by the &lt;video&gt; element API</h4>
 
-We provide this as a quick reminder - keep in mind that the [complete list](https://html.spec.whatwg.org/multipage/media.html#mediaevents) is much longer! 
+We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer! 
+
+<!------------------------------------------------------------ my work ------------------------------------------>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+
+<h3>Elements that can be associated with Microdata</h3>
+
+<table style="width:100%">
+  <tr>
+    <th>HTML5 Elements</th>
+    <th>Microdata Value Associated</th>
+  </tr>
+  <tr>
+  /td>
+    <td>The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person's photo and downloaded accordingly.</td>
+  </tr>
+</table>
+
+<p>To undestand the example better, we have added borders to the table.</p>
+
+<!------------------------------------------------------------ my work ------------------------------------------>
+
 
   ------------------------------------------------------------------------
   <b>Methods</b>        <b>Properties</b>                   <b>Events</b>
