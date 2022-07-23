@@ -3353,7 +3353,7 @@ When you define an element as not being translatable, its children inherit this 
 <li>From the specification: <a href="https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute">the translate attribute</a></li>
 <li>From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate</a></li>
 <li>Its corresponding <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate#Browser_compatibility">browser compatibility table</a></li>
-<li>An article from W3C\'s Internationalization Activity: <a href="https://www.w3.org/International/questions/qa-translate-flag">"Using HTML's translate attribute"</a>
+<li>An article from W3C's Internationalization Activity: <a href="https://www.w3.org/International/questions/qa-translate-flag">"Using HTML's translate attribute"</a>
 </ul>
 
 <h3 id="ch1-5-1">1.5.1 Microdata</h3>
@@ -3466,7 +3466,8 @@ Let\'s have a look now at a (small) example of an about page. It renders as a ve
 <a href="https://jsbin.com/gunuzus/1/edit?html,output">Online example at JsBin</a>
 
 <h4>Source code:</h4>
-```
+
+```html5
 1.  <!DOCTYPE html>
 2.  <html lang="en">
 3.  <head>
@@ -3531,13 +3532,14 @@ The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> i
 &nbsp;
 <br/>
 
-And the JSON view of the microdata:
+<h4>And the JSON view of the microdata:</h4>
+
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 62. json view of the microdata (75) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image062.jpeg?raw=true"
-   alt="JSON view of the microdata"
+   alt="JSON view of the microdata."
    width="40%">
 &nbsp;
 <br/>
@@ -3712,6 +3714,7 @@ If the itemprop attribute appears on a:
   anything else                                               The data is whatever is in the text of the element.
 
 For example, the value of a property defined in an \<img\> element will be the value of the src attribute:
+
 ```
 1.  <img itemprop="image" src="MichelBuffa.png" alt="A great professor">
 ```
@@ -3721,6 +3724,7 @@ Or for a \<time\>, it will be the value of the datetime attribute:
 1.  <time itemprop="birthday" datetime="1965-04-16">April 16, 1965</time>
 ```
 Or for an \<a\> element, the value will be the value of the href attribute:
+
 ```
 1.  <a href="https://www.twitter.com/micbuffa" itemprop="url">profile</a>
 ```
@@ -3984,7 +3988,7 @@ You can try this example [online at JSBin](https://jsbin.com/zoquru/2/edit?html,
 
 To add some styling to the basic example we saw when we introduced the \<audio\> element, we just add a \<figure\> with two children: an \<img\> and a \<figcaption\>. Inside the \<figcaption\> we add the \<audio\> element from the previous example.
 
-Please move the mouse pointer over this player\'s elements: 
+Please move the mouse pointer over this player\'s elements:
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 70. two gery-black horses in a field (86) ---------------------------->
@@ -4072,7 +4076,7 @@ Press Play to hear the horse !
 See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example online</a> (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it\'s playing.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 71. example jsbin (88) ------------------------------->
+<!----------------------------------- 71. example jsbin (88) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image071.png?raw=true"
@@ -4155,6 +4159,7 @@ Here is the HTML code. It\'s really simple, just notice the \<body onload=\"init
 ```
 
 Here is the CSS (remove margins, remove padding, hide parts that could overflow from the \<body\>):
+
 ```
 body {
     margin:0;
@@ -4163,6 +4168,7 @@ body {
 }
 ```
 And now the JavaScript code:
+
 ```
 > var video;
 >  
@@ -4232,57 +4238,57 @@ This time the video is zoomed in so that it\'s much bigger than the browser\'s w
 
 <h4>HTML code:</h4>
 ```
-> <!DOCTYPE html>
-> <html lang="en">
-> <head>
->    <meta charset="utf-8">
->    <title>Full screen video with CSS effects </title>
-> </head>
-> <body>
-> <header>
->  <video autoplay loop=""
->   poster="https://mainline.i3s.unice.fr/mooc/polina.jpg"
->   id="bgvid">
->     <source src="https://mainline.i3s.unice.fr/mooc/polina.webm"
->             type="video/webm\"\>
->     <source src="https://mainline.i3s.unice.fr/mooc/polina.mp4"
->             type="video/mp4">
-> </video>
-> </header>
-> <section>
-> <h1>Full screen video with CSS effects</h1>
-> </section>
-> </body>
-> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Full screen video with CSS effects </title>
+</head>
+<body>
+<header>
+ <video autoplay loop=""
+  poster="https://mainline.i3s.unice.fr/mooc/polina.jpg"
+  id="bgvid">
+    <source src="https://mainline.i3s.unice.fr/mooc/polina.webm"
+            type="video/webm\"\>
+    <source src="https://mainline.i3s.unice.fr/mooc/polina.mp4"
+            type="video/mp4">
+</video>
+</header>
+<section>
+<h1>Full screen video with CSS effects</h1>
+</section>
+</body>
+</html>
 ```
 
 <h4>CSS code:</h4>
 ```
-> html, body{
->     color:white;
->     height: 100%;
-> }
-> header{
->     height: 100%;
->     background-image: url(\'https://mainline.i3s.unice.fr/mooc/dots.png\'),                             url(\'#\');
->     background-repeat: repeat, no-repeat;
->     background-size: auto, cover;
->     background-position: center center, top left;
->     font-family: sans-serif;
->     color: #051a00;
-> }
->  
-> header video {
->     position:fixed;
->     top:50%;
->     left:50%;
->     min-width:100%;
->     min-height:100%;
->     width:auto;
->     height:auto;
->     z-index:-100;
->     transform:translateX(-50%) translateY(-50%);
-> }
+html, body{
+    color:white;
+    height: 100%;
+}
+header{
+    height: 100%;
+    background-image: url(\'https://mainline.i3s.unice.fr/mooc/dots.png\'),                             url(\'#\');
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: center center, top left;
+    font-family: sans-serif;
+    color: #051a00;
+}
+ 
+header video {
+    position:fixed;
+    top:50%;
+    left:50%;
+    min-width:100%;
+    min-height:100%;
+    width:auto;
+    height:auto;
+    z-index:-100;
+    transform:translateX(-50%) translateY(-50%);
+}
 ```
 
 The trick here is that:
@@ -4403,7 +4409,7 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link<
 &nbsp;
 <br/>
 
-<h4> Here is a table that shows the most interesting methods, properties, and events provided by the &lt;video&gt; element API</h4>
+<h4>Here is a table that shows the most interesting methods, properties, and events provided by the &lt;video&gt; element API</h4>
 
 We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer! 
 
@@ -4422,12 +4428,12 @@ table, th, td {
     <th>Microdata Value Associated</th>
   </tr>
   <tr>
-  /td>
+  </td>
     <td>The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person's photo and downloaded accordingly.</td>
   </tr>
 </table>
 
-<p>To undestand the example better, we have added borders to the table.</p>
+<p>To understand the example better, we have added borders to the table.</p>
 
 <!------------------------------------------------------------ my work ------------------------------------------>
 
@@ -13157,9 +13163,10 @@ Indeed this solution works well if you write a game, and want to detect events w
 
 <h4>Example #2: moving the monster with the keyboard</h4>
 
+
 ![](./images/image194.png){width="6.5in" height="2.0770833333333334in"}
 
-HTML
+<h4>HTML</h4>
 
 ```
 <!DOCTYPE html>
@@ -13317,61 +13324,44 @@ If you add a key listener to a canvas element, the problem is that it will get e
 The tabindex attribute of the canvas element makes it focusable. Without it, it will never get the focus!
 
 The trick is to declare the canvas like this:
-
+```
 1.  <canvas id="myCanvas" width="350" **tabindex="1"** height="200">
-
 2.  </canvas>
+```
 
 And we force the canvas to get the focus with:
-
+```
 1.  canvas=document.getElementById('myCanvas');
-
 2.  ...
-
 3.  **canvas.focus();**
+```
 
 Now, if we try an example with the above canvas declaration, we show when an HTML element has the focus: a border is added to it.
 
+
+
 ![](./images/image195.png){width="6.5in" height="2.0909722222222222in"}
 
-HTML
-
+<h4>HTML</h4>
+```
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <meta charset="utf-8">
-
 <title>Listening to key events only in the canvas - Example #3</title>
-
 <style type="text/css">
-
 canvas {
-
 border:1px solid black;
-
 }
-
 </style>
-
 </head>
-
 <body onload="init();">
-
 This example shows how to handle key events in a canvas by adding a key listener to the canvas object (see the blue border around the canvas\... it shows that the canvas has the focus. Try to click outside of the canvas: it will lose the focus).
-
 <p>
-
-If you don\'t want a border to appear when you click on the canvas, set its style to outline: none
-
+If you don't want a border to appear when you click on the canvas, set its style to outline: none
 </p>
-
-\<p\>Press a key when the canvas has the focus: an alert will display the keycode of the key you pressed. Problem: if the canvas looses the focus, key press are no more detected\...\</p>
-
+<p>Press a key when the canvas has the focus: an alert will display the keycode of the key you pressed. Problem: if the canvas looses the focus, key press are no more detected...</p>
 <canvas id="myCanvas" width="350" tabindex="1" height="200">
-
 </canvas>
 <script>
 var canvas;
@@ -13390,7 +13380,7 @@ return false;
 };
 </script>
 </body>
-</html\>
+</html>
 ```
 
 Note that the line that forces the focus to the canvas is commented by default. Try to click on the canvas, then press a key, then click out of the canvas, then press a key: this time nothing happens!
@@ -13404,7 +13394,7 @@ Note that the line that forces the focus to the canvas is commented by default. 
    alt="image196.jpeg a border appears when the canvas has the focus" />
 </p>
 
-Extract from the code:
+<h4>Extract from the code:</h4>
 ```
 1.  var canvas;
 2.  
@@ -13554,7 +13544,7 @@ cancelAnimationFrame(requestId);
 </html>
 ```
 
-Code:
+<h4>Code:</h4>
 ```
 1.  function init() {
 2.     // This function is called after the page is loaded
@@ -13584,6 +13574,7 @@ Code:
 26.    incrementX = 0; // stop the monster if the mouse exists the canvas
 27. };
 ```
+
 The third parameter (false) of *lines 12* and *13* means \"we do not want to propagate the event to the ancestors of the canvas in the DOM.\" 
 
 <h3 id="ch4-3-3">4.3.3 Mouse Interaction, Mouse Events</h3>
@@ -13649,148 +13640,91 @@ Play with the example below that show the problem:
 &nbsp;
 <br/>
 
-JS
-
-var canvas, ctx, mousePos, mouseButton;
-
-window.onload = function init() {
-
-canvas = document.getElementById(\'myCanvas\');
-
-ctx = canvas.getContext(\'2d\');
-
-canvas.addEventListener(\'mousemove\', function (evt) {
-
-mousePos = getMousePos(canvas, evt);
-
-var message = \'Mouse position: \' + mousePos.x + \',\' + mousePos.y;
-
-writeMessage(canvas, message);
-
-}, false);
-
-canvas.addEventListener(\'mousedown\', function (evt) {
-
-mouseButton = evt.button;
-
-var message = \"Mouse button \" + evt.button + \" down at position: \" + mousePos.x + \',\' + mousePos.y;
-
-writeMessage(canvas, message);
-
-}, false);
-
-canvas.addEventListener(\'mouseup\', function (evt) {
-
-var message = \"Mouse up at position: \" + mousePos.x + \',\' + mousePos.y;
-
-writeMessage(canvas, message);
-
-}, false);
-
-};
-
-function writeMessage(canvas, message) {
-
-ctx.save();
-
-ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-ctx.font = \'18pt Calibri\';
-
-ctx.fillStyle = \'black\';
-
-ctx.fillText(message, 10, 25);
-
-ctx.restore();
-
-}
-
-function getMousePos(canvas, evt) {
-
-// necessary to take into account CSS boudaries
-
-var rect = canvas.getBoundingClientRect();
-
-return {
-
-x: evt.clientX - rect.left,
-
-y: evt.clientY - rect.top
-
-};
-
-}
-
-CS
-
-canvas {
-
-border:1px solid black
-
-}
-
-HTML
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"\>
-
-\<title\>Mouse event - Good code\</title\>
-
-\<style\>
-
-body {
-
-margin: 20px;
-
-padding: 0px;
-
-}
-
-\</style\>
-
-\</head\>
-
-\<body\>
-
-This is a canvas:\<p\>\</p\>
-
-\<canvas id=\"myCanvas\" width=\"578\" height=\"200\"\>\</canvas\>
-
-\</body\>
-
-\</html\>
-
-function getMousePos(canvas, evt) {
-
-   **// necessary to take into account CSS boundaries**
-
-   **var rect = canvas.getBoundingClientRect();**
-
-   return {
-
-      x: evt.clientX **- rect.left,**
-
-      y: evt.clientY **- rect.top**
-
-   };
-
-}
-
-WRONG code:
+<h4>JS</h4>
 ```
-1.  \...
-2.  canvas.addEventListener(\'mousemove\', function (evt) {
+var canvas, ctx, mousePos, mouseButton;
+window.onload = function init() {
+canvas = document.getElementById('myCanvas');
+ctx = canvas.getContext('2d');
+canvas.addEventListener('mousemove', function (evt) {
+mousePos = getMousePos(canvas, evt);
+var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+writeMessage(canvas, message);
+}, false);
+canvas.addEventListener('mousedown', function (evt) {
+mouseButton = evt.button;
+var message = "Mouse button " + evt.button + " down at position: " + mousePos.x + ',' + mousePos.y;
+writeMessage(canvas, message);
+}, false);
+canvas.addEventListener('mouseup', function (evt) {
+var message = "Mouse up at position: " + mousePos.x + ',' + mousePos.y;
+writeMessage(canvas, message);
+}, false);
+};
+function writeMessage(canvas, message) {
+ctx.save();
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+ctx.font = '18pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText(message, 10, 25);
+ctx.restore();
+}
+function getMousePos(canvas, evt) {
+// necessary to take into account CSS boudaries
+var rect = canvas.getBoundingClientRect();
+return {
+x: evt.clientX - rect.left,
+y: evt.clientY - rect.top
+};
+}
+```
+
+<h4>CS</h4>
+```
+canvas {
+border:1px solid black
+}
+```
+
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mouse event - Good code</title>
+<style>
+body {
+margin: 20px;
+padding: 0px;
+}
+</style>
+</head>
+<body>
+This is a canvas:<p></p>
+<canvas id="myCanvas" width="578" height="200"></canvas>
+</body>
+</html>
+function getMousePos(canvas, evt) {
+   **// necessary to take into account CSS boundaries**
+   **var rect = canvas.getBoundingClientRect();**
+   return {
+      x: evt.clientX **- rect.left,**
+      y: evt.clientY **- rect.top**
+   };
+}
+```
+
+<h4>WRONG code:</h4>
+```
+1.  ...
+2.  canvas.addEventListener('mousemove', function (evt) {
 3.      mousePos = getMousePos(canvas, evt);
-4.      var message = \'Mouse position: \' + mousePos.x + \',\' + mousePos.y;
+4.      var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
 5.      writeMessage(canvas, message);
 6.  }, false);
 7.   
-8.  \...
+8.  ...
 9.  function getMousePos(canvas, evt) {
 10.    // WRONG!!!
 11.    return {
@@ -13812,7 +13746,7 @@ Here is the result, when the mouse is approximately at the top left corner of th
 &nbsp;
 <br/>
 
-GOOD version of the code:
+<h4>GOOD version of the code:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------- 201.  (xxx) ------------>
@@ -13824,8 +13758,8 @@ GOOD version of the code:
 &nbsp;
 <br/>
 
-function getMousePos(canvas, evt) {
 ```
+function getMousePos(canvas, evt) {
    // necessary to take into account CSS boundaries
    var rect = canvas.getBoundingClientRect();
    return {
@@ -13871,7 +13805,7 @@ This example uses the previous function for computing the mouse position correct
 &nbsp;
 <br/>
 
-Extract from source code:
+<h4>Extract from source code:</h4>
 
 ```
 1.  var canvas, ctx, mousePos, mouseButton;
@@ -13923,9 +13857,17 @@ Extract from source code:
 
 This example shows an animation at 60 frames/s using requestAnimationFrame, were the monster is drawn at the mouse position, and if a mouse button is pressed, the monster starts rotating around its center. If we release the mouse button, the rotation stops:
 
-![](./images/image205.png){width="4.0in" height="2.56540135608049in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 205.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image205.png?raw=true"
+   alt=""
+   width="40%">
+&nbsp;
+<br/>
 
-Code:
+<h4>Code:</h4>
 
 ```
 var canvas, ctx;
@@ -13980,9 +13922,18 @@ This example shows one very important good practice when doing animation and int
 
 <h4>Example #2: draw in a canvas as if you were using a pencil</h4>
 
-![](./images/image206.png){width="4.0in" height="2.56540135608049in"}
 
-Source code:
+<!------------------------------------------------------------------------------------------------>
+<!----------- 206.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image206.png?raw=true"
+   alt=""
+   width="40%">
+&nbsp;
+<br/>
+
+<h4>Source code:</h4>
 
 ```
 ...
@@ -14075,7 +14026,7 @@ We just added mouseup and  mousedown listeners, extract from the source code:
 Resizing a canvas can be tricky if we don\'t know a few rules that might not be easily guessed:
 <ul>
 <li>Changing the width or height property of a canvas in JavaScript erases its content and resets its context,</li>
-<li>Using percentages (%) in the CSS width and height properties of a canvas *does not change its number of pixels/resolution*[.] Instead, it scales the existing pixels without erasing the content, giving a blurry effect when a canvas becomes larger, for example.</li>
+<li>Using percentages (%) in the CSS width and height properties of a canvas <i>does not change its number of pixels/resolution</i>[.] Instead, it scales the existing pixels without erasing the content, giving a blurry effect when a canvas becomes larger, for example.</li>
 </ul>
 
 Before looking at how best to handle canvas resizing, let\'s see some examples below:
@@ -14124,7 +14075,7 @@ This time we are using a similar example as above, but we removed the button for
 &nbsp;
 <br/>
 
-Then, we added this CSS rule:
+<h4>Then, we added this CSS rule:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------- 210. (xxx) ------------>
@@ -14457,7 +14408,15 @@ Forms can be visually and cognitively complex and difficult to use. Accessible f
 
 Form fields and other form controls usually have visible labels, such as \"E-mail Address:\" as the label for a text field (see figure below).
 
-![form label text](./images/image217.png){width="2.5208333333333335in" height="0.3020833333333333in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 217.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image217.png?raw=true"
+   alt="Form label text."
+   width="25%">
+&nbsp;
+<br/>
 
 When these labels are marked up correctly, people can interact with them using only the keyboard, using voice input, and using screen readers. Also, the label itself becomes clickable, which enables a person who has difficulty clicking on small radio buttons or checkboxes to click anywhere on the label text.
 
@@ -14505,16 +14464,13 @@ Subscribe to newsletter![](./images/image219.wmf)
 Source code:
 
 Bottom of Form
-
-1.  \<label for=\"firstname\"\>First name:\</label\>
-
-2.  \<input type=\"text\" name=\"firstname\" id=\"firstname\"\>\<br\>
-
+```
+1.  <label for="firstname">First name:</label>
+2.  <input type="text" name="firstname" id="firstname"><br>
 3.  
-
-4.  \<label for=\"subscribe\"\>Subscribe to newsletter\</label\>
-
-5.  \<input type=\"checkbox\" name=\"subscribe\" id=\"subscribe\"\>
+4.  <label for="subscribe">Subscribe to newsletter</label>
+5.  <input type="checkbox" name="subscribe" id="subscribe">
+```
 
 <h4>Labeling buttons</h4>
 
@@ -14570,31 +14526,21 @@ Output format![](./images/image222.wmf)Text file
 
 Bottom of Form
 
-Source code:
-
+<h4>Source code:</h4>
+```
 1.  <fieldset>
-
 2.  <legend>Output format</legend>
-
 3.  <div>
-
 4.  <input type="radio" name="format" id="txt" value="txt" checked>
-
 5.  <label for="txt">Text file</label>
-
 6.  </div>
-
 7.  <div>
-
 8.  <input type="radio" name="format" id="csv" value="csv">
-
 9.  <label for="csv">CSV file</label>
-
 10. </div>
-
 11. [...]
-
 12. </fieldset>
+```
 
 <h4>Example #2: checkboxes
 
@@ -14612,7 +14558,7 @@ I want to receive
 
 Bottom of Form
 
-Source code:
+<h4>Source code:</h4>
 ```
 1.  <fieldset>
 2.  <legend>I want to receive</legend>
@@ -14639,8 +14585,15 @@ Compared to HTML4, HTML5 introduced 13 new input types, covering most of the nee
 MDN\'s Web docs [article on \<input\> types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#%3Cinput%3E_types) lists all input types and highlights those that came with HTML5.
 
 Now, let\'s play with some of these input types and attributes.
-
-![HTML4 old HTML5 new](./images/image223.jpeg){width="2.0in" height="1.5972222222222223in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 223.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image223.jpeg?raw=true"
+   alt="html4 old html5 new"
+   width="65%">
+&nbsp;
+<br/>
 
 <h3 id="ch5-4-2">5.4.2 "color"</h3>
 
@@ -14648,7 +14601,15 @@ For years, we used hundreds of lines of JavaScript for selecting colors. Now, it
 
 Here is how it looks on some mobile devices:
 
-![HTML5 input type=color on an android phone](./images/image224.jpeg){width="4.0in" height="3.0in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 224.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image224.jpeg?raw=true"
+   alt="HTML5 input type=color on an android phone."
+   width="40%">
+&nbsp;
+<br/>
 
 <h4>Typical use</h4>
 
@@ -14668,29 +14629,44 @@ Try \<input type=\"color\"\> online with this[ JSBin example](https://jsbin.com/
 
 Here is the result on Google Chrome (works with other browsers too, though the *look and feel* may differ):
 
-![input type=color in google chrome](./images/image225.jpeg){width="4.0in" height="3.2051695100612423in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 225.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image225.jpeg?raw=true"
+   alt="."
+   width="40%">
+&nbsp;
+<br/>
 
 <h4>Example: changing the background color of the page</h4>
 
 The \<input type=\"color\"\> can fire change or input events. Here is an example that changes the background color of the page when a color is chosen. [Try it online at JSBin](https://jsbin.com/jozuter/1/edit?html,css,js,console,output).
-
-![change background color of the body](./images/image226.jpeg){width="4.0in" height="3.6217300962379704in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------- 226.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image226.jpeg?raw=true"
+   alt="Change background color of the body."
+   width="40%">
+&nbsp;
+<br/>
 
 <h4>Source code:</h4>
 ```
-1.  \<!DOCTYPE html\>
-2.  \<html lang=\"en\"\>\<head\>\</head\>
-3.  \<body\>
-4.    Select a color : \<input type=\"color\" id=\"colorChooser\"/\>
-5.    \<script\>
-6.       var colorInputField = document.querySelector(\"#colorChooser\");
+1.  <!DOCTYPE html>
+2.  <html lang="en"><head></head>
+3.  <body>
+4.    Select a color : <input type="color" id="colorChooser"/>
+5.    <script>
+6.       var colorInputField = document.querySelector("#colorChooser");
 7.  
-8.       **colorInputField.addEventListener(\'input\', function(evt) {**
+8.       **colorInputField.addEventListener('input', function(evt) {**
 9.  **          document.body.style.backgroundColor = this.value;**
 10. **      }, false);**
-11. **\</script\>**
-12. \</body\>
-13. \</html\>
+11. **</script>**
+12. </body>
+13. </html>
 ```
 
 <h4>Offer a limited choice of colors</h4>
@@ -14783,7 +14759,7 @@ On non-supported browsers, it defaults to an \<input type=\"text\"\> input field
 
 ### Typical use of \<input type=\"date\"\>
 
-<h4>Default use
+<h4>Default use</h4>
 
 The default usage is something like:
 ```
@@ -14802,7 +14778,7 @@ Try this example: just click the next input field: , or [try it online on JSBin]
 
 ![input type = date with min and max attributes. This will render two non selectable areas (dates before min and dates after max). Only the dates between min and max are selectable in the displayed calendar.](./images/image232.jpeg){width="4.0in" height="2.2641021434820647in"}
 
-Source code:
+<h4>Source code:</h4>
 ```
 1.  ...
 2.  <input type="date"
@@ -14813,7 +14789,7 @@ Source code:
 7.  ...
 ```
 
-<h4>Choosing one day in a given week, etc. with the step: attribute
+<h4>Choosing one day in a given week, etc. with the step: attribute</h4>
 
 Using the value attribute for setting a date, and using step=7 for example, will make acceptable only the day of the week that corresponds to the value\'s day (e.g.: only Mondays). Using step=2 will make acceptable only every other day, etc.
 
@@ -14827,8 +14803,7 @@ Example: we want to celebrate birthday parties only on Saturdays, [check this on
    width="40%"
    alt="Use of the step attribute, select only saturdays." />
 </p>
-
-Extract from source code:
+<h4>Extract from source code:</h4>
 ```
 1.  <input type="date"
 2.      id="birthdayParty"
@@ -14838,7 +14813,7 @@ Extract from source code:
 6.      **step="7"**>
 ```
 
-<h4>Combining with the \<datalist\> element to restrict the choice of possible values
+<h4>Combining with the \<datalist\> element to restrict the choice of possible values</h4>
 
 [Online example at JSBin](https://jsbin.com/gezawe/1/edit?html,output) (screenshot from Chrome).
 
@@ -14851,17 +14826,17 @@ Extract from source code:
    alt="Restrict choices using a datalist element." />
 </p>
 
-Extract from source code:
+<h4>Extract from source code:</h4>
 ```
-> <input type="date"
->     id="birthdayParty"
->     list="birthdayPartyPossibleDates"
->     value="2015-06-20">
-> <datalist id="birthdayPartyPossibleDates">
->      <option label="Best for me">2015-06-20</option>
->      <option label="Ok for me too ">2015-06-27</option>
->      <option label="This one is a sunday, hmmm">2015-06-28</option>
-> </datalist>
+<input type="date"
+    id="birthdayParty"
+    list="birthdayPartyPossibleDates"
+    value="2015-06-20">
+<datalist id="birthdayPartyPossibleDates">
+     <option label="Best for me">2015-06-20</option>
+     <option label="Ok for me too ">2015-06-27</option>
+     <option label="This one is a sunday, hmmm">2015-06-28</option>
+</datalist>
 ```
 
 **The list attribute of the input element must match the id attribute of the datalist element.**
@@ -14933,7 +14908,7 @@ While if we enter a date in the future:
    alt="Date in the future: bad" />
 </p>
 
-Extract from source code:
+<h4>Extract from source code:</h4>
 ```
 1.  <body>
 2.  <label for="birthDate">Enter your birth date: </label><p>
@@ -15448,41 +15423,41 @@ But most of the time, you will need a visual feedback that shows the current val
 
 <h4>Source code:</h4>
 ```
-1.  \<!DOCTYPE html\>
-2.  \<html lang=\"en\"\>
-3.  \<head\>
-4.  \<meta charset=\"utf-8\"\>
-5.  \<title\>Example of input type=tel\</title\>
-6.  \<style\>
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset="utf-8">
+5.  <title>Example of input type=tel</title>
+6.  <style>
 7.  #rangeValue1 {
 8.  border:1px solid black;
 9.  padding:2px;
 10. }
-11. \</style\>
-12. \<script\>
+11. </style>
+12. <script>
 13. window.onload = function() {
 14. // Called when the page is loaded, for displaying initial value in the output
-15. printValue(\'slider1\',\'rangeValue1\');
+15. printValue('slider1','rangeValue1');
 16. }
 17. function printValue(sliderId, outputId) {
 18. var x = document.getElementById(outputId);
 19. var y = document.getElementById(sliderId);
 20. x.value = y.value;
 21. }
-22. \</script\>
-23. \</head\>
-24. \<body\>
-25. \<form \>
-26. \<label for=\"slider1\"\>Select a value:\</label\>
-27. \<input id=\"slider1\" type=\"range\"
-28. min=\"100\" max=\"500\" step=\"10\" value=\"150\"
-29. oninput=\"printValue(\'slider1\',\'rangeValue1\')\"/\>
-30. \<output id=\"rangeValue1\"\>\</output\>
-31. \</form\>
-32. \<br/\>
+22. </script>
+23. </head>
+24. <body>
+25. <form>
+26. <label for="slider1">Select a value:</label>
+27. <input id="slider1" type="range"
+28. min="100" max="500" step="10" value="150"
+29. oninput="printValue('slider1','rangeValue1')"/>
+30. <output id="rangeValue1"></output>
+31. </form>
+32. <br/>
 33. Play with attributes: value, min, max, step\...
-34. \</body\>
-35. \</html\>
+34. </body>
+35. </html>
 ```
 
 <h4>Snapping behavior and the step attribute</h4>
@@ -15528,18 +15503,18 @@ Adding \"ticks\" to the range slider using a \<datalist\> element
 
 Using the \<datalist\> element, it\'s possible to display \"ticks\" above the range slider, at given positions.
 ```
-1.  \<label for=\"slider2\"\>value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:\</label\>
-2.  \<input id=\"slider2\" type=\"range\"
-3.  list=\"ticks2\"
-4.  min=\"0\" max=\"10\" step=\"1\" value=\"5\"/\>
-5.  \<datalist id=ticks2\>
-6.  \<option\>0\</option\>
-7.  \<option\>2\</option\>
-8.  \<option\>4\</option\>
-9.  \<option\>6\</option\>
-10. \<option\>8\</option\>
-11. \<option\>10\</option\>
-12. \</datalist\>
+1.  <label for="slider2">value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:</label>
+2.  <input id="slider2" type="range"
+3.  list="ticks2"
+4.  min="0" max="10" step="1" value="5"/>
+5.  <datalist id=ticks2>
+6.  <option>0</option>
+7.  <option>2</option>
+8.  <option>4</option>
+9.  <option>6</option>
+10. <option>8</option>
+11. <option>10</option>
+12. </datalist>
 ```
 
 <h4>Try the sliders below:</h4>
@@ -15719,7 +15694,7 @@ Bottom of Form
 
 To see auto-completion in action: enter something in both fields and submit the form. Then enter the same thing: you will see that only the second input field offers auto-completion.
 
-Source code extract:
+<h4>Source code extract:</h4>
 ```
 1.  <form submit="test.php" method="post" **autocomplete="on"**>
 2.      ...
