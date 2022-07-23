@@ -6898,17 +6898,17 @@ Good practice is to get the canvas, the context, the width and height of the can
 **After the context is set, we can draw, but first let\'s set the current color for filled shapes:**
 
 The example shows the use of the fillStyle property at *line 24* - useful for specifying the way shapes will be filled. In our case this line indicates the color of all the filled shapes we are going to draw:
-
+```
 1.  ctx.fillStyle=\'#FF0000\';
-
+```
 The context property named fillStyle is used here. This property can be set with a color, a gradient, or a pattern. We will see examples of these later on in the course.
 
 The example says that all filled shapes will use the color \"#FF0000\", which corresponds to a pure red color using the CSS RGB hexadecimal encoding (we could also have used ctx.fillStyle=\'red\');
 
 **Then we can draw:**
-
+```
 1.  ctx.fillRect(0,0,80,100);
-
+```
 This line is a call to the method fillRect(top left X coordinate, top left Y coordinate, width, height), which draws a filled rectangle.
 
 The way the rectangle will be filled depends on the current value of several properties of the context, in particular the value of the fillStyle property. So, in our case, the rectangle will be red.
@@ -11011,12 +11011,12 @@ border: 1px solid black;
 <h4>Extract from source code:</h4>
 ```
 1.  function drawCheckboard(n) {
-2.      **ctx.strokeStyle = grdFrenchFlag;**
-3.  **    ctx.lineWidth=10;**
+2.      <b>ctx.strokeStyle = grdFrenchFlag;</b>
+3.  <b>    ctx.lineWidth=10;</b>
 4.      ...
 5.      for(i = 0; i < n; i++) {
 6.          for(j = i % 2; j < n; j++) {
-7.              ctx.**stroke**Rect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
+7.              ctx.<b>stroke</b>Rect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
 8.          }
 9.      }
 10. }
@@ -11087,7 +11087,7 @@ We notice that \"before\" the gradient starts, the first color of the gradient i
 
 Nothing special; we will \"see through the drawn shapes\", and the parts of the gradient that are located in the canvas area will be shown. You can try this example that defines a gradient twice the size of the canvas: 
 ```
-1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, **600, 400**);
+1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, <b>600, 400</b>);
 ```
 And if we draw the same rectangle with the canvas size, here is the result:
 
@@ -11153,7 +11153,7 @@ We can\'t! At least we can\'t without recreating it for each cell!
 It suffices to create a new gradient before drawing each filled rectangle, and set it with the starting and ending point of its direction/virtual line accordingly to the rectangle coordinates. Try this:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 174. (xxx) -------------------------------->
+<!------------------------------ 174. example jsbin gradients and rectangles (xxx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image174.png?raw=true"
@@ -11211,8 +11211,8 @@ border: 1px solid black;
 </html>
 ```
 
-Extract from source code:
-
+<h4>Extract from source code:</h4>
+```
 > function setGradient(x, y, width, height) {
 >     grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
 >     grdFrenchFlag.addColorStop(0, "blue");
@@ -11251,66 +11251,66 @@ Radial gradients are for creating gradients that propagate/interpolate colors al
 Here is an example of a radial gradient that interpolates the color of the rainbow:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 175.  (xx) ------------------------------->
+<!----------------- 175. example jsbin: canvas context: radial gradients (233) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image175.png?raw=true"
-   alt="image175.png"
+   alt="Example jsbin: canvas context: radial gradients."
    width="65%">
 &nbsp;
 <br/>
 
 <h4>JS</h4>
 ```
-> var canvas, ctx, grd;
-> function init() {
-> // Good practice 1: set global vars canvas, ctx, gradients, etc here
-> canvas = document.querySelector('#myCanvas1');
-> ctx = canvas.getContext('2d');
-> grd = ctx.createRadialGradient(150, 100, 30, 150, 100, 100);
-> grd.addColorStop(0, "red");
-> grd.addColorStop(0.17, "orange");
-> grd.addColorStop(0.33, "yellow");
-> grd.addColorStop(0.5, "green");
-> grd.addColorStop(0.666, "blue");
-> grd.addColorStop(1, "violet");
-> draw();
-> }
-> function draw() {
-> ctx.fillStyle = grd;
-> ctx.fillRect(0, 0, 300, 200);
-> }
+var canvas, ctx, grd;
+function init() {
+// Good practice 1: set global vars canvas, ctx, gradients, etc here
+canvas = document.querySelector('#myCanvas1');
+ctx = canvas.getContext('2d');
+grd = ctx.createRadialGradient(150, 100, 30, 150, 100, 100);
+grd.addColorStop(0, "red");
+grd.addColorStop(0.17, "orange");
+grd.addColorStop(0.33, "yellow");
+grd.addColorStop(0.5, "green");
+grd.addColorStop(0.666, "blue");
+grd.addColorStop(1, "violet");
+draw();
+}
+function draw() {
+ctx.fillStyle = grd;
+ctx.fillRect(0, 0, 300, 200);
+}
 ```
 
 <h4>HTML</h4>
 ```
-> <!DOCTYPE html>
-> <html lang="en">
-> <head>
-> <meta charset="utf-8">
-> \<title\>Radial gradients\</title\>
-> \<style\>
-> #myCanvas1 {
-> border: 1px solid black;
-> }
-> \</style\>
-> \</head\>
-> \<body onload=\"init();\"\>
-> \<canvas id=\"myCanvas1\" width=\"300\" height=200\>Your browser does not support the canvas tag.\</canvas\>
-> \</body\>
-> \</html\>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Radial gradients</title>
+<style>
+#myCanvas1 {
+border: 1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
+</body>
+</html>
 ```
 
-The gradient is defined as follows:
+<h4>The gradient is defined as follows:</h4>
 
 ```
-1.  var grd = context.**createRadialGradient(150, 100, 30, 150, 100, 100);**
-2.  grd.addColorStop(0, \"red\");
-3.  grd.addColorStop(0.17, \"orange\");
-4.  grd.addColorStop(0.33, \"yellow\");
-5.  grd.addColorStop(0.5, \"green\");
-6.  grd.addColorStop(0.666, \"blue\");
-7.  grd.addColorStop(1, \"violet\");
+1.  var grd = context.createRadialGradient(150, 100, 30, 150, 100, 100);
+2.  grd.addColorStop(0, "red");
+3.  grd.addColorStop(0.17, "orange");
+4.  grd.addColorStop(0.33, "yellow");
+5.  grd.addColorStop(0.5, "green");
+6.  grd.addColorStop(0.666, "blue");
+7.  grd.addColorStop(1, "violet");
 8.  
 9.  context.fillStyle = grd;
 ```
@@ -11319,13 +11319,12 @@ The method from the context object createRadialGradient(cx1, cy1, radius1, cx2, 
 
 In the above example, the gradients starts at a circle located at (150, 100), with a radius of 30, and propagates to a circle with the same center as the first (150, 100), but with a bigger radius of 100, as shown below:
 
-
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 176. radial gradient (xx) ------------------------------------>
+<!--------------------------------- 176. radial gradient (234) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image176.jpeg?raw=true"
-   alt="image176.jpeg"
+   alt="Radial gradient."
    width="40%">
 &nbsp;
 <br/>
@@ -11335,18 +11334,17 @@ We added color stops using a method similar to that used for linear gradients.
 <h4>What happens if the circles are not located at the same place?</h4>
 
 You get some nice effects; here we set the second circle\'s center 60 pixels to the right of the first circle\'s center (cx = 210 instead of 150):
-
-1.  grd = ctx.createRadialGradient(150, 100, 30, **210**, 100, 100);
+```
+1.  grd = ctx.createRadialGradient(150, 100, 30, <b>210</b>, 100, 100);
+```
 
 <h4>Here is the result:</h4>
-
-
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 177.  (xx) ------------------------------->
+<!------------------------- 177. example jsbin: radial gradient (235) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image177.png?raw=true"
-   alt="image177.png"
+   alt="Example jsbin: radial gradient."
    width="65%">
 &nbsp;
 <br/>
@@ -11397,12 +11395,11 @@ border: 1px solid black;
 A gradient is an invisible shape on the screen: the radial gradient is made of two circles: an inner and an outer circle. Between these two circles, colors are interpolated.
 
 We call the \"first color\" the color defined for the inner circle, the \"last color\" the last color of the gradient, that corresponds to the outer circle:
-
--   The color inside the first circle will be the first color. In our example above, the first color is red: and the small circle of the gradient in our example is filled in red!
-
--   The color outside the outer circle will be the last color of the gradient - which is not interpolated. The last color in our example is purple, and it fills the rest of the filled rectangle area \"after\" the external circle of the gradient.
-
--   The colors between the two circles will be interpolated.
+<ul>
+<li>The color inside the first circle will be the first color. In our example above, the first color is red: and the small circle of the gradient in our example is filled in red!</li>
+<li>The color outside the outer circle will be the last color of the gradient - which is not interpolated. The last color in our example is purple, and it fills the rest of the filled rectangle area \"after\" the external circle of the gradient.</li>
+<li>The colors between the two circles will be interpolated.</li>
+</ul>
 
 <h3 id="ch3-5-4">3.5.4 Canvas Context: Patterns/Textures</h3>
 
@@ -11414,41 +11411,41 @@ To illustrate this principle, in the next examples, we are going to draw rectang
 
 There are a few steps we have to take before doing this:
 
-1.  **Create a JavaScript image object**
-    1.  var imageObj = new Image();
+1.  <b>Create a JavaScript image object</b>
 ```
+    var imageObj = new Image();
 ```
-1.  **Define a callback function that will be called once the image has been fully loaded** in memory; we cannot draw before the image has been loaded.
+
+2.  <b>Define a callback function that will be called once the image has been fully loaded</b> in memory; we cannot draw before the image has been loaded.
+```
     1.  imageObj.onload = function(){
     2.  ...
     3.  }
 ```
 
+3.  <b>Set the source of this image to the URL of the pattern</b>:
 ```
-1.  **Set the source of this image to the URL of the pattern**:
     1.  imageObj.src = "https://www.myserver.com/myRepeatablePattern.png";
 ```
-```
-1.  **Create a pattern object from the loaded image:**
+4.  <b>Create a pattern object from the loaded image:</b>
     As soon as step 3 is executed, an HTTP request is sent in background by the browser, and when the image is loaded in memory, the callback defined at step 2 is called. We create a pattern object inside, from the loaded image:
+```
     1.  // callback called asynchronously, after the src attribute of imageObj is set
     2.  imageObj.onload = function(){ 
     3.      // We enter here when the image is loaded, we create a pattern object.
     4.      // It is good practice to set this as a global variable, easier to share
-    5.      **pattern1 = ctx.createPattern(imageObj, "repeat");**
+    5.      pattern1 = ctx.createPattern(imageObj, "repeat");
     6.  };
 ```
-
-```
-1.  **Inside the callback function (or inside a function called from inside the callback) ,we can finally draw**:
+5.  <b>Inside the callback function (or inside a function called from inside the callback) ,we can finally draw</b>:
 ```
     1.  // callback called asynchronously, after the src attribute of imageObj is set
     2.  imageObj.onload = function(){
     3.      pattern1 = ctx.createPattern(imageObj, "repeat");
     4.  
-    5.  **    // Draw a textured rectangle**
-    6.  **    ctx.fillStyle = pattern1;**
-    7.  **    ctx.fillRect(10, 10, 500, 800);**
+    5.      // Draw a textured rectangle
+    6.      ctx.fillStyle = pattern1;
+    7.      ctx.fillRect(10, 10, 500, 800);
     8.  };
 ```
 
@@ -11459,11 +11456,11 @@ There are a few steps we have to take before doing this:
 Here we have two rectangles drawn using a pattern (an image that can be repeated along the X and Y axis). The first is a filled rectangle while the second is \"stroked\" with a lineWidth of 20 pixels:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 178.  (xx) ------------------------------->
+<!---- 178. example jsbin: draw two rectangles with a pattern (one filled, one stroked) (237) ---->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image178.png?raw=true"
-   alt="image178.png"
+   alt="Example #1: draw two rectangles with a pattern (one filled, one stroked)."
    width="65%">
 &nbsp;
 <br/>
@@ -11506,21 +11503,22 @@ imageObj.src = \"https://mainline.i3s.unice.fr/mooc/pattern1.jpg\";
 }
 ```
 
-HTML
+<h4>HTML</h4>
 ```
-\<!DOCTYPE html\>
-\<html lang=\"en\"\>
-\<head\>
-\<meta charset=\"utf-8\"\>
-\<title\>Drawing two rectangles with a pattern - Example #1\</title\>
-\</head\>
-\<body onload=\"init();\"\>
-\<canvas id=\"myCanvas\" width=\"500\" height=\"400\"\>
-Your browser does not support the canvas tag. \</canvas\>
-\</body\>
-\</html\>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Drawing two rectangles with a pattern - Example #1</title>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="500" height="400">
+Your browser does not support the canvas tag. <canvas>
+</body>
+</html>
 ```
-JavaScript source code:
+
+<h4>JavaScript source code:</h4>
 ```
 1.  var canvas, ctx, pattern1;
 2.   
@@ -15826,7 +15824,7 @@ List attributePreferred browser![](./images/image269.wmf) ![](./images/image270.
 
 Bottom of Form
 
-Source code extract:
+<h4>Source code extract:</h4>
 
 ```
 1.  <form>
@@ -15850,14 +15848,14 @@ At <i>lines 3</i> and <i>5</i>, the value of the list attribute of the input fie
 
 The pattern attribute enables the validation of the user\'s input on the fly (also at submission time), based on **regular expressions**. It applies to the text, search, url, tel, email, and password input types. 
 
-The pattern attribute follows the syntax of [JavaScript regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). 
+The pattern attribute follows the syntax of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">JavaScript regular expressions</a>. 
 
-A **must read**: a good catalog of ready-to-go patterns is available at html5pattern.com, an excellent Web site that proposes plenty of JavaScript patterns for the pattern attribute of HTML5 forms. The left hand menu proposes categorized patterns for [postal codes](http://html5pattern.com/Postal_Codes), [dates](http://html5pattern.com/Dates), [phones](http://html5pattern.com/Phones), etc. 
+A <b>must read</b>: a good catalog of ready-to-go patterns is available at html5pattern.com, an excellent Web site that proposes plenty of JavaScript patterns for the pattern attribute of HTML5 forms. The left hand menu proposes categorized patterns for <a href="http://html5pattern.com/Postal_Codes">postal codes</a>, <a href="http://html5pattern.com/Dates">dates</a>, <a href="http://html5pattern.com/Phones">phones</a>], etc. 
 
-You can also try [this online JavaScript RegExps tester](https://regex101.com/#javascript), and follow [this tutorial about \"using JavaScript RegExps\"](https://regexone.com/) that has step by step exercises and explanations.
+You can also try <a href="https://regex101.com/#javascript">this online JavaScript RegExps tester</a>, and follow <a href="https://regexone.com/">this tutorial about "using JavaScript RegExps"</a> that has step by step exercises and explanations.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 271.  (xxx) ------------------->
+<!--------------- 271.  (325) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image271.jpeg?raw=true"
@@ -16014,7 +16012,7 @@ With the \<input type=\"email\"\>, this attribute enables the user to enter a se
 
 Or try it below in your browser: type in a list of email addresses separated by a comma, then look at the input field background color (pink = invalid, green = valid), and then submit:
 
-This form uses: \<input type=\"email\" name=\"myemail\" **multiple**\>
+This form uses: \<input type=\"email\" name=\"myemail\" <b>multiple</b>\>
 
 <!--- ******************* image here *********************** --->
 
@@ -16189,7 +16187,7 @@ This attribute\'s value indicates where the response from the form submission sh
 <h4>Typical use</h4>
 ```
 1.  <input type="submit"
-2.         formtarget="_blank"**
+2.         formtarget="_blank"
 3.         value="Submit but show results in a new window/tab">
 ```
 
