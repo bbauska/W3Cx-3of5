@@ -8005,58 +8005,59 @@ Let\'s give an example that draws several rectangles, filled or wireframe, with 
 ```
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Immediate mode</title>
-<meta charset="utf-8"/>
+   <head>
+   <title>Immediate mode</title>
+   <meta charset="utf-8"/>
 <style>
-#myCanvas {
-border: 1px solid black;
-}
+   #myCanvas {
+   border: 1px solid black;
+   }
 </style>
+
 <script>
-var canvas, ctx;
-window.onload = function () {
-canvas = document.getElementById('myCanvas');
-ctx = canvas.getContext('2d');
-// black rectangle, default color (black)
-ctx.fillRect(10, 10, 100, 100);
-// outlined rectangle, default color
-ctx.strokeRect(150, 10, 100, 100);
-// outlined rectangle filled in red, outline blue
-ctx.fillStyle = 'red';
-ctx.strokeStyle = 'lightBlue';
-ctx.lineWidth = 10;
-ctx.fillRect(100, 150, 150, 150);
-ctx.strokeRect(100, 150, 150, 150);
-// A function to automatize previous drawing
-var angle = Math.PI / 10;
-drawFilledRectangle(300, 150, 150, 150, 'pink', 'green', 10, angle);
-drawFilledRectangle(300, 150, 150, 150, 'yellow', 'purple', 10, angle + 0.5);
-};
-function drawFilledRectangle(x, y, w, h, fillColor, strokeColor, lw, angle) {
-// GOOD PRACTICE : save if the function change the context or coordinate
-// system
-ctx.save();
-// position coordinate system
-ctx.translate(x, y);
-ctx.rotate(angle);
-// set colors, line width...
-ctx.lineWidth = lw;
-ctx.fillStyle = fillColor;
-ctx.strokeStyle = strokeColor;
-// draw at 0, 0 as we translated the coordinate
-// system already
-ctx.fillRect(0, 0, w, h);
-ctx.strokeRect(0, 0, w, h);
-// GOOD PRACTICE : a restore for a save!
-ctx.restore();
-}
+   var canvas, ctx;
+   window.onload = function () {
+   canvas = document.getElementById('myCanvas');
+   ctx = canvas.getContext('2d');
+   // black rectangle, default color (black)
+   ctx.fillRect(10, 10, 100, 100);
+   // outlined rectangle, default color
+   ctx.strokeRect(150, 10, 100, 100);
+   // outlined rectangle filled in red, outline blue
+   ctx.fillStyle = 'red';
+   ctx.strokeStyle = 'lightBlue';
+   ctx.lineWidth = 10;
+   ctx.fillRect(100, 150, 150, 150);
+   ctx.strokeRect(100, 150, 150, 150);
+   // A function to automatize previous drawing
+   var angle = Math.PI / 10;
+   drawFilledRectangle(300, 150, 150, 150, 'pink', 'green', 10, angle);
+   drawFilledRectangle(300, 150, 150, 150, 'yellow', 'purple', 10, angle + 0.5);
+   };
+   function drawFilledRectangle(x, y, w, h, fillColor, strokeColor, lw, angle) {
+            // GOOD PRACTICE : save if the function change the context or coordinate
+            // system
+            ctx.save();
+            // position coordinate system
+            ctx.translate(x, y);
+            ctx.rotate(angle);
+            // set colors, line width...
+            ctx.lineWidth = lw;
+            ctx.fillStyle = fillColor;
+            ctx.strokeStyle = strokeColor;
+            // draw at 0, 0 as we translated the coordinate
+            // system already
+            ctx.fillRect(0, 0, w, h);
+            ctx.strokeRect(0, 0, w, h);
+            // GOOD PRACTICE : a restore for a save!
+            ctx.restore();
+         }
 </script>
 </head>
-<body>
-<canvas id="myCanvas" width="578" height="400">
-</canvas>
-</body>
+   <body>
+      <canvas id="myCanvas" width="578" height="400">
+      </canvas>
+   </body>
 </html>
 ```
 
@@ -8073,37 +8074,37 @@ Look at the example below, and change the position where the text is drawn, chan
 ```
 <!DOCTYPE html>
 <html>
-<head>
-<title>Drawing text</title>
-<meta charset="utf-8"/>
-</head>
-<body>
-<canvas id="myCanvas" width=500 height=300>Your browser does not support the canvas tag.</canvas>
-<script type="text/javascript">
-var canvas=document.getElementById('myCanvas');
-var context=canvas.getContext('2d');
-context.font = "60pt Calibri";
-context.lineWidth = 3;
-context.strokeStyle = "blue";
-context.fillStyle = "red";
-context.fillText("Hello World!", 10, 100);
-context.strokeText("Hello World!", 10, 100);
-</script>
-</body>
+   <head>
+      <title>Drawing text</title>
+      <meta charset="utf-8"/>
+   </head>
+   <body>
+      <canvas id="myCanvas" width=500 height=300>Your browser does not support the canvas tag.</canvas>
+   <script type="text/javascript">
+      var canvas=document.getElementById('myCanvas');
+      var context=canvas.getContext('2d');
+      context.font = "60pt Calibri";
+      context.lineWidth = 3;
+      context.strokeStyle = "blue";
+      context.fillStyle = "red";
+      context.fillText("Hello World!", 10, 100);
+      context.strokeText("Hello World!", 10, 100);
+   </script>
+   </body>
 </html>
 ```
 
 <h4>source code extract:</h4>
 
 ```
-1.  context.font = \"60pt Calibri\";
+1.  context.font = "60pt Calibri";
 2.  // .. set color, lineWidth, shadow etc.
 3.  
-4.  // 10, 10 is the start of the baseline, bottom of left leg of the \"H\" in the
-5.  // \"Hello World\" example.
-6.  context.fillText(\"Hello World!\", 10, 10);
+4.  // 10, 10 is the start of the baseline, bottom of left leg of the "H" in the
+5.  // "Hello World\" example.
+6.  context.fillText("Hello World!", 10, 10);
 7.  // Or
-8.  context.strokeText(\"Hello World!\", 10, 10);
+8.  context.strokeText("Hello World!", 10, 10);
 ```
 
 <h4>Properties and methods useful for drawing text</h4>
@@ -8114,7 +8115,7 @@ It is possible to draw text in a canvas using the font property of the context t
 
 The font property accepts values like: font-style,  font-weight, font-size, font-face.
 
-Accepted values are:
+<h4>Accepted values are:</h4>
 <ul>
 <li>font-style: normal, italic, oblique</li>
 <li>font-weight: normal, bold, bolder, lighter</li>
@@ -8124,10 +8125,10 @@ Accepted values are:
 
 <h4>Examples:</h4>
 <ul>
-<li>context.font = \"60pt Calibri\";</li>
-<li>context.font = \"normal normal 20px Verdana\";</li>
-<li>context.font = \"normal 36px Arial\";</li>
-<li>context.font = \"italic bold 36px Arial\";</li>
+<li>context.font = "60pt Calibri";</li>
+<li>context.font = "normal normal 20px Verdana";</li>
+<li>context.font = "normal 36px Arial";</li>
+<li>context.font = "italic bold 36px Arial";</li>
 </ul>
 
 <h4>Drawing text in solid or wireframe: the fillText() or strokeText() methods</h4>
@@ -8136,40 +8137,42 @@ The fillText(message, x, y) or strokeText(message, x, y) methods from the contex
 
 There is a fourth optional parameter maxWidth that forces the text to fit into a given width, distorting it if necessary:
 ```
-1.  context.strokeText(\"Hello World!\", x, y \[, maxWidth\]);
-2.  context.fillText(\"Hello World!\", x, y \[, maxWidth\]);
+1.  context.strokeText("Hello World!", x, y [, maxWidth]);
+2.  context.fillText("Hello World!", x, y [, maxWidth]);
 ```
 
 <h4> Forcing a text not to exceed a certain width: the maxWidth property</h4>
+
 ```
 <!DOCTYPE html>
 <html>
-<head>
-<title>Drawing text: the maxWidth property</title>
-<meta charset="utf-8"/>
-</head>
-<body>
-<canvas id="myCanvas" width=500 height=300>Your browser does not support the canvas tag.</canvas>
-<script type="text/javascript">
-var canvas=document.getElementById('myCanvas');
-var context=canvas.getContext('2d');
-context.font = "60pt Calibri";
-context.lineWidth = 3;
-context.strokeStyle = "blue";
-context.fillStyle = "red";
-context.fillText("Hello World!", 10, 100);
-context.strokeText("Hello World!", 10, 100);
-// Draw text with constrained width
-context.fillText("Hello World!", 10, 160, 250);
-context.strokeText("Hello World!", 10, 160, 250);
-context.fillText("Hello World!", 10, 220, 150);
-context.strokeText("Hello World!", 10, 220, 150);
-</script>
+   <head>
+   <title>Drawing text: the maxWidth property</title>
+   <meta charset="utf-8"/>
+   </head>
+   <body>
+   <canvas id="myCanvas" width=500 height=300>Your browser does not support the canvas tag.</canvas>
+   <script type="text/javascript">
+      var canvas=document.getElementById('myCanvas');
+      var context=canvas.getContext('2d');
+      context.font = "60pt Calibri";
+      context.lineWidth = 3;
+      context.strokeStyle = "blue";
+      context.fillStyle = "red";
+      context.fillText("Hello World!", 10, 100);
+      context.strokeText("Hello World!", 10, 100);
+      // Draw text with constrained width
+      context.fillText("Hello World!", 10, 160, 250);
+      context.strokeText("Hello World!", 10, 160, 250);
+      context.fillText("Hello World!", 10, 220, 150);
+      context.strokeText("Hello World!", 10, 220, 150);
+   </script>
 </body>
 </html>
 ```
 
 <h4>source code extract:</h4>
+
 ```
 1.  ...
 2.  context.font = "60pt Calibri";
@@ -8181,12 +8184,12 @@ context.strokeText("Hello World!", 10, 220, 150);
 8.  context.strokeText("Hello World!", 10, 100);
 9.  
 10. // Draw text with constrained width of 250 pixels
-11. context.fillText("Hello World!", 10, 160, **250**);
-12. context.strokeText("Hello World!", 10, 160, **250**);
+11. context.fillText("Hello World!", 10, 160, <b>250</b>);
+12. context.strokeText("Hello World!", 10, 160, <b>250</b>);
 13. 
 14. // Constrain width to 150 pixels
-15. context.fillText("Hello World!", 10, 220, **150**);
-16. context.strokeText("Hello World!", 10, 220, **150**);
+15. context.fillText("Hello World!", 10, 220, <b>150</b>);
+16. context.strokeText("Hello World!", 10, 220, <b>150</b>);
 ```
 
 <h4>Measuring the width of a given text (bounding box) with the ctx.measureText()method</h4>
@@ -8194,38 +8197,40 @@ context.strokeText("Hello World!", 10, 220, 150);
 The ctx.measureText() method can be used to get the current width in pixels of a given text, taking into account the diverse properties involved such as font, size, shadow, lineWidth, etc.
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html>
 <head>
-<title>Drawing text: the ctx.measureText() method</title>
-<meta charset="utf-8"/>
+   <title>Drawing text: the ctx.measureText() method</title>
+   <meta charset="utf-8"/>
 </head>
 <body>
-<canvas id="myCanvas" width=500 height=300>Your browser does not support the canvas tag.</canvas>
+   <canvas id="myCanvas" width=500 height=300>Your browser does not support the canvas tag.</canvas>
 <script type="text/javascript">
-var canvas=document.getElementById('myCanvas');
-var context=canvas.getContext('2d');
-context.font = "60pt Calibri";
-context.lineWidth = 3;
-context.strokeStyle = "blue";
-context.fillStyle = "red";
-context.fillText("Hello World!", 10, 100);
-context.strokeText("Hello World!", 10, 100);
-var textMetrics = context.measureText("Hello World!");
-var width = textMetrics.width;
-context.font = "20pt Arial";
-context.fillText("Width of previous text: " + width + "pixels", 10, 150);
-// Draw the baseline of the given width
-context.moveTo(10, 100);
-context.lineTo(width+10, 100);
-context.stroke();
+   var canvas=document.getElementById('myCanvas');
+   var context=canvas.getContext('2d');
+   context.font = "60pt Calibri";
+   context.lineWidth = 3;
+   context.strokeStyle = "blue";
+   context.fillStyle = "red";
+   context.fillText("Hello World!", 10, 100);
+   context.strokeText("Hello World!", 10, 100);
+   var textMetrics = context.measureText("Hello World!");
+   var width = textMetrics.width;
+   context.font = "20pt Arial";
+   context.fillText("Width of previous text: " + width + "pixels", 10, 150);
+   // Draw the baseline of the given width
+   context.moveTo(10, 100);
+   context.lineTo(width+10, 100);
+   context.stroke();
 </script>
 </body>
 </html>
 ```
 
 <h4>Source code extract from this example:</h4>
+
 ```
 1.  context.font = "60pt Calibri";
 2.  context.lineWidth = 3;
@@ -8235,8 +8240,8 @@ context.stroke();
 6.  context.fillText("Hello World!", 10, 100);
 7.  context.strokeText("Hello World!", 10, 100);
 8.  
-9.  **var textMetrics = context.measureText("Hello World!");**
-10. **var width = textMetrics.width;**
+9.  <b>var textMetrics = context.measureText("Hello World!");</b>
+10. <b>var width = textMetrics.width;</b>
 11. 
 12. // Draw a text that displays the width of the previous drawn text
 13. context.font = "20pt Arial";
@@ -8253,39 +8258,40 @@ context.stroke();
 The textBaseline property of the context is used to specify the different ways one can position the baseline of a given text:
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html>
 <head>
-<title>Drawing text: the ctx.textbaseline property</title>
-<meta charset="utf-8"/>
+   <title>Drawing text: the ctx.textbaseline property</title>
+   <meta charset="utf-8"/>
 </head>
 <body>
-<canvas id="myCanvas" width=500 height=300>Your browser does not support the canvas tag.</canvas>
-<script type="text/javascript">
-var canvas=document.getElementById('myCanvas');
-var context=canvas.getContext('2d');
-context.strokeStyle = "#000000";
-context.lineWidth = 1;
-context.beginPath();
-context.moveTo( 0, 75);
-context.lineTo(500, 75);
-context.stroke();
-context.closePath();
-context.font = "16px Verdana";
-context.fillStyle = "#000000";
-context.textBaseline = "top";
-context.fillText("top", 0, 75);
-context.textBaseline = "hanging";
-context.fillText("hanging", 40, 75);
-context.textBaseline = "middle";
-context.fillText("middle", 120, 75);
-context.textBaseline = "alphabetic";
-context.fillText("alphabetic", 200, 75);
-context.textBaseline = "ideographic";
-context.fillText("ideographic", 300, 75);
-context.textBaseline = "bottom";
-context.fillText("bottom-glyph", 400, 75);
+   <canvas id="myCanvas" width=500 height=300>Your browser does not support the canvas tag.</canvas>
+   <script type="text/javascript">
+   var canvas=document.getElementById('myCanvas');
+   var context=canvas.getContext('2d');
+   context.strokeStyle = "#000000";
+   context.lineWidth = 1;
+   context.beginPath();
+   context.moveTo( 0, 75);
+   context.lineTo(500, 75);
+   context.stroke();
+   context.closePath();
+   context.font = "16px Verdana";
+   context.fillStyle = "#000000";
+   context.textBaseline = "top";
+   context.fillText("top", 0, 75);
+   context.textBaseline = "hanging";
+   context.fillText("hanging", 40, 75);
+   context.textBaseline = "middle";
+   context.fillText("middle", 120, 75);
+   context.textBaseline = "alphabetic";
+   context.fillText("alphabetic", 200, 75);
+   context.textBaseline = "ideographic";
+   context.fillText("ideographic", 300, 75);
+   context.textBaseline = "bottom";
+   context.fillText("bottom-glyph", 400, 75);
 </script>
 </body>
 </html>
@@ -8312,18 +8318,14 @@ Possible values:
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Typical use (taken from the example above):
-
-1.  **context.textBaseline = \"top\";**
-
-2.  context.fillText(\"top\", 0, 75);
-
-3.  **context.textBaseline = \"hanging\";**
-
-4.  context.fillText(\"hanging\", 40, 75);
-
-5.  **context.textBaseline = \"middle\";**
-
-6.  context.fillText(\"middle\", 120, 75);
+```
+1.  **context.textBaseline = "top";**
+2.  context.fillText("top", 0, 75);
+3.  **context.textBaseline = "hanging";**
+4.  context.fillText("hanging", 40, 75);
+5.  **context.textBaseline = "middle";**
+6.  context.fillText("middle", 120, 75);
+```
 
 <h4> Setting the horizontal justification of a text with the textAlign property</h4>
 
@@ -8454,7 +8456,7 @@ See picture below :
 &nbsp;
 <br/>
 
-<h4>Example #2: different variants of drawImage(\...)</h4>
+<h4>Example #2: different variants of drawImage(...)</h4>
 
 This example illustrates the use of the different variants of the drawImage method:
 
@@ -8527,7 +8529,7 @@ border:1px solid black;
 22. };
 ```
 
-<h4>Example #3: draw an image defined in the page by an <img src=\"\...\"\> element</h4>
+<h4>Example #3: draw an image defined in the page by an <img src=\"..."> element</h4>
 
 Sometimes, you may want to draw an image that is already declared in the HTML document as an <img src=\"\...\"\> element. Remember that when you add an \<img\> in the document, the browser starts downloading it in background. 
 
@@ -8536,13 +8538,13 @@ You could try drawing it using some code like this:
 1.  <body>
 2.  <canvas id="myCanvas" width="512" height="512"></canvas>
 3.  <p>Original image as an <img> element:</p>
-4.  **<img id="logo"**
-5.  **src="https://fc07.deviantart.net/fs70/f/2013/149/b/8/texture_85_by_voyager168-d670m68.jpg">**
+4.  <b><img id="logo"</b>
+5.  <b>src="https://fc07.deviantart.net/fs70/f/2013/149/b/8/texture_85_by_voyager168-d670m68.jpg"></b>
 6.  <script>
 7.       canvas = document.getElementById("myCanvas");
 8.       var ctx = canvas.getContext("2d");
 9.       var logo = document.querySelector("#logo");
-10.      **ctx.drawImage(logo, 0, 0, 100, 100);**
+10.      <b>ctx.drawImage(logo, 0, 0, 100, 100);</b>
 11. </script>
 12. </body>
 ```
@@ -16055,7 +16057,7 @@ Example with \<input type=file multiple\>
 
                     Select one or more files: 
 
-Example without the multiple attribute:
+Example without the multiple attribute:3.3.
 
                     Select only one file: 
 
