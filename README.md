@@ -3840,7 +3840,7 @@ The \<video\> element is supported by all major browsers. See the [support table
 
 Help! \<video src=\"my youtube video URL\"\>\</video\> does not work! 
 
-<b>BEWARE</b>: *you cannot directly embed videos from most of the popular Web sites such as YouTube, Dailymotion, Vimeo, etc. For commercial reasons, and because advertising is automatically added to the videos, these Web sites do not allow \"regular\" embedding of their videos.*
+<b>BEWARE</b>: <i>you cannot directly embed videos from most of the popular Web sites such as YouTube, Dailymotion, Vimeo, etc. For commercial reasons, and because advertising is automatically added to the videos, these Web sites do not allow \"regular\" embedding of their videos.*
 
 While they use HTML5 to render their videos, these hosting sites (YouTube, etc.) use rather complex techniques in order to prevent you from using them with the \<video\>element. Instead, you often need to embed an \<iframe\> that will render the HTML5 videos in your Web site, and of course, the advertising that comes along with them.
 
@@ -3931,7 +3931,7 @@ Notice the other similarities: between the \<audio\>\...\</audio\> tags, we adde
 <li>From MDN\'s Web Docs: [\<audio\>: The Embed Audio element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)</li>
 </ul>
 
-<h3 id="ch2-2-3">2.2.3 Attributes of <video> and <audio></h3>
+<h3 id="ch2-2-3">2.2.3 Attributes of &lt;video&gt; and &lt;audio&gt;</h3>
 
 <h4>Most useful attributes of the &lt;video&gt; element</h4>
 
@@ -3984,7 +3984,7 @@ The \<video\> and \<audio\> elements are just like other HTML elements, so CSS c
 
 <h4>An example of an audio player with some style</h4>
 
-You can try this example [online at JSBin](https://jsbin.com/zoquru/2/edit?html,css,output).
+You can try this example <a href="https://jsbin.com/zoquru/2/edit?html,css,output">online at JSBin</a>.
 
 To add some styling to the basic example we saw when we introduced the \<audio\> element, we just add a \<figure\> with two children: an \<img\> and a \<figcaption\>. Inside the \<figcaption\> we add the \<audio\> element from the previous example.
 
@@ -4000,10 +4000,11 @@ Please move the mouse pointer over this player\'s elements:
 &nbsp;
 <br/>
 
-Press Play to hear the horse ! 
+Press Play to hear the horse !
 
 <h4>HTML source code:</h4>
-```
+
+```html5
 1.  <figure id="figaudio1">
 2.    <img id="imghorse" width="200"
 3.       src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg"
@@ -4025,7 +4026,8 @@ Press Play to hear the horse !
 ```
 
 <h4>CSS source code:</h4>
-```
+
+```css
 1.  #figaudio1 {
 2.      width : 420px;;
 3.      text-align:center;
@@ -4087,7 +4089,8 @@ See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example onlin
 
 This example uses the pseudo CSS class :hover in order to track the mouseover event. On mouseover, it uses a CSS transition property that interpolates the changes in the scale and orientation of the video element (done using a transform CSS property).
 
-The corresponding HTML source code is:
+<h4>The corresponding HTML source code is:</h4>
+
 ```
 1.  <video <b>id="w3devCampusVideo"</b> autoplay controls>
 2.  
@@ -4100,8 +4103,9 @@ The corresponding HTML source code is:
 9.  </video>
 ```
 
-\... and the CSS source code is as follows:
-```
+<h4>... and the CSS source code is as follows:</h4>
+
+```css
 1.  #w3devCampusVideo {
 2.      width: 300px;
 3.      <b>transition: all 0.5s ease-in-out;</b>
@@ -4121,7 +4125,7 @@ Below you will find two examples that show how to do this trick. The first is fo
 
 The interesting part is that we use a 100% standard (and really small and simple) JavaScript code here to handle the window resize events and we just set regular CSS properties width and height of the video element, to resize the video.
 
-Example #1: with a regular video
+<h4>Example #1: with a regular video</h4>
 
 Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 
@@ -4135,7 +4139,8 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 &nbsp;
 <br/>
 
-Here is the HTML code. It\'s really simple, just notice the \<body onload=\"init();\"\> which calls the JavaScript init() function right after the page is loaded.
+<h4>Here is the HTML code.</h4>
+It\'s really simple, just notice the \<body onload=\"init();\"\> which calls the JavaScript init() function right after the page is loaded.
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -4158,7 +4163,8 @@ Here is the HTML code. It\'s really simple, just notice the \<body onload=\"init
 19. </body>
 ```
 
-Here is the CSS (remove margins, remove padding, hide parts that could overflow from the \<body\>):
+<h4>Here is the CSS</h4>
+(remove margins, remove padding, hide parts that could overflow from the \<body\>):
 
 ```
 body {
@@ -4167,23 +4173,23 @@ body {
     overflow:hidden;
 }
 ```
-And now the JavaScript code:
+<h4>And now the JavaScript code:</h4>
 
 ```
-> var video;
->  
-> function init() {
->    // function called when the page is loaded
->    video = document.querySelector(\"#myVideo\");
->    // For initial value
->    video.width = window.innerWidth;
->    video.height = window.innerHeight;
->    // For dealing with window resize
->    window.onresize = function() {
->        video.width = window.innerWidth;
->        video.height = window.innerHeight;
->    };
-> }
+var video;
+ 
+function init() {
+   // function called when the page is loaded
+   video = document.querySelector(\"#myVideo\");
+   // For initial value
+   video.width = window.innerWidth;
+   video.height = window.innerHeight;
+   // For dealing with window resize
+   window.onresize = function() {
+       video.width = window.innerWidth;
+       video.height = window.innerHeight;
+   };
+}
 ```
 
 <h4>Example #2: with a YouTube video</h4>
@@ -4202,9 +4208,9 @@ Full width, resizable, borderless YouTube video. To do this: just 100% standard 
 
 The CSS and JavaScript codes for this example are exactly the same as in Example #1.
 
-<h4> Full screen video, pure CSS approaches</h4>
+<h4>Full screen video, pure CSS approaches</h4>
 
-1.  Let\'s use the video from the PayPal Web site, played full screen using only very simple CSS.
+1. Let\'s use the video from the PayPal Web site, played full screen using only very simple CSS.
 
 In this example, the video does not rescale; it\'s just cropped if the browser window is resized. Enlarge your browser and you\'ll see a man with a phone on the right. Resize your browser and you\'ll see only part of the video.
 
@@ -4232,7 +4238,7 @@ In this example, the video does not rescale; it\'s just cropped if the browser w
 > }
 ```
 
-2.  Full screen video with CSS effects
+2. Full screen video with CSS effects
 
 This time the video is zoomed in so that it\'s much bigger than the browser\'s window. When we resize the browser, the part of the video that is visible adapts itself. It\'s not \"real resize\" of the video. Try this [example and read the explanation in this article by Dudley Storey](https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video).
 
@@ -4292,10 +4298,10 @@ header video {
 ```
 
 The trick here is that:
-
-1.  the video is in the header, and the header has a plotted transparent background image (\"dots.png\") that is repeated in X and Y (see *lines 8* and *9*).
-
-2.  The video is positioned so that it\'s origin (top left corner) is away from the visible surface (*line 25*), while it is set to take 100% of the surface (*lines 20* and *21*).
+<ol type="1">
+<li>the video is in the header, and the header has a plotted transparent background image ("dots.png") that is repeated in X and Y (see <i>lines 8</i> and <i>9</i>).</li>
+<li>The video is positioned so that it\'s origin (top left corner) is away from the visible surface (<i>line 25</i>), while it is set to take 100% of the surface (<i>lines 20</i> and <i>21</i>).</li>
+</ol>
 
 Full screen video that resizes and keeps its ratio, using the viewport units.
 
@@ -4643,25 +4649,23 @@ Check the online example below: use the progress cursor to go near the end of th
 </html>
 ```
 
-Explanations:
-
--   *Line 9*: the JavaScript array that contains the URLs of the videos in the playlist. In this example, we\'ve got only two of them, but if the array is larger the example still works.
-
--   *Line 44*: when the page is loaded, an init() function is called.
-
--   *Lines 34-40*: we use the DOM to get the JavaScript object corresponding to the video element, then define a listener for the ended event. Each time a video ends, the loadAndplayNextVideo() callback is called. As the video element has no src attribute by default, we also preload the first video (call to loadNextVideo() at *line 38*).
-
--   *Lines 17-21*: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources \[currentVideo % sources.length\], we set the src of the video element to sources\[0\], then to sources\[1\], and, as we increment the currentVideo index each time (line 19), if it becomes greater than 1, the modulo (the \"%\" symbol is the modulo in JavaScript) will make it \"loop\" between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.
+<h4>Explanations:</h4>
+<ul>
+<li><i>Line 9</i>: the JavaScript array that contains the URLs of the videos in the playlist. In this example, we've got only two of them, but if the array is larger the example still works.</li>
+<li><i>Line 44</i>: when the page is loaded, an init() function is called.</li>
+<li><i>Lines 34-40</i>: we use the DOM to get the JavaScript object corresponding to the video element, then define a listener for the ended event. Each time a video ends, the loadAndplayNextVideo() callback is called. As the video element has no src attribute by default, we also preload the first video (call to loadNextVideo() at <i>line 38</i>).</li>
+<li><i>Lines 17-21</i>: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources \[currentVideo % sources.length\], we set the src of the video element to sources\[0\], then to sources\[1\], and, as we increment the currentVideo index each time (line 19), if it becomes greater than 1, the modulo (the \"%\" symbol is the modulo in JavaScript) will make it \"loop\" between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.</li>
+</ul>
 
 <h3 id="ch2-2-8">2.2.8 [Advanced\] Extended Examples</h3>
 
 In this section, we propose five extended examples that use more JavaScript and more complex CSS manipulation. They might be a little hard to understand if you are a JavaScript beginner, but don\'t be afraid to try and test them, look at the code, etc.
 
-Some examples are given \"as is\", such as the custom video player that uses SVG (at the end of the page); if you are interested, you may view the code. 
+Some examples are given \"as is\", such as the custom video player that uses SVG (at the end of the page); if you are interested, you may view the code.
 
 <h4>Example #1: a player showing the use of every type of CSS3 transformation</h4>
 
-Please see this example online, originally written by [Chris Heilmann](https://christianheilmann.com/), and tuned by us ;).
+Please see this example online, originally written by <a href="https://christianheilmann.com/">Chris Heilmann<a>, and tuned by us ;).
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 82.  ---------------------------------------->
@@ -4675,14 +4679,13 @@ Please see this example online, originally written by [Chris Heilmann](https://c
 Don\'t forget to click the JavaScript and CSS tabs of the CodePen in order to display the JavaScript code that creates the buttons on the right of the video, and the CSS that processes the different clicks and applies CSS3 transforms.
 
 This example shows a lot:
+<ul>
+<li>It uses the HTML5 elements &lt;nav&gt;, &lt;footer&gt;, &lt;header&gt;.</li>
+<li>It shows the use of CSS3 2D transformations (scale, translate, and rotate).</li>
+<li>It shows how to handle DOM events using JavaScript and how to modify CSS properties of the &lt;video&gt; element from JavaScript.</li>
+</ul>
 
--   It uses the HTML5 elements \<nav\>, \<footer\>, \<header\>.
-
--   It shows the use of CSS3 2D transformations (scale, translate, and rotate).
-
--   It shows how to handle DOM events using JavaScript and how to modify CSS properties of the \<video\> element from JavaScript.
-
-<h4>Example #2: how to track all possible events and manipulate many properties
+<h4>Example #2: how to track all possible events and manipulate many properties</h4>
 
 This example also shows how to handle failures. See the code and play with this example below:
 
@@ -4697,32 +4700,32 @@ This example also shows how to handle failures. See the code and play with this 
 
 Below is a piece of code for handling errors during video playback:
 ```
-\...
-vid.addEventListener(\'error\', function(evt) {
-    logEvent(evt,\'red\');
+...
+vid.addEventListener('error', function(evt) {
+    logEvent(evt,'red');
 }, false);
-\...
+...
 function logEvent(evt, color) {
     switch (evt.type) {
-       \...
-       case \'error\':
-           var error = document.querySelector(\'video\').error;
+       ...
+       case 'error':
+           var error = document.querySelector('video').error;
            switch (error.code) {
              case error.MEDIA_ERR_ABORTED:
-                note.innerHTML = \"fetching aborted at the user\'s request\";
+                note.innerHTML = "fetching aborted at the user's request";
                 break;
              case error.MEDIA_ERR_NETWORK:
-                note.innerHTML = \"a network error caused the browser to stop fetching the media\";
+                note.innerHTML = "a network error caused the browser to stop fetching the media";
                 break;
              case error.MEDIA_ERR_DECODE:
-                note.innerHTML = \"an error occurred while decoding the media\";
+                note.innerHTML = "an error occurred while decoding the media";
                 break;
              case error.MEDIA_ERR_SRC_NOT_SUPPORTED:
-                note.innerHTML = \"the media indicated by the src
-                                  attribute was not suitable\";
+                note.innerHTML = "the media indicated by the src
+                                  attribute was not suitable";
                 break;
              default:
-                note.innerHTML = \"an error occurred\";
+                note.innerHTML = "an error occurred";
                 break;
            }
            break;
@@ -4733,7 +4736,7 @@ function logEvent(evt, color) {
 
 <h4>Example #3: how to display a percentage of buffering when using a slow connection</h4>
 
-See the [example online](https://jsbin.com/xororol/3/edit?html,output) here too.
+See the <a href="https://jsbin.com/xororol/3/edit?html,output">example online</a> here too.
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 84.  ---------------------------------------->
@@ -4841,7 +4844,8 @@ The accessibility features of TV programs often propose both options for people 
 
 The \<track\> element cannot be used with a file:// URL. Please use https:// and a Web server. Your server must use a special MIME format for the .vtt files: text/vtt;charset=utf-8 (set by default on most servers now).
 
-Examples of the lines to add to an Apache Web server:
+<h4>Examples of the lines to add to an Apache Web server:</h4>
+
 ```
 1.  <Files mysubtitle.vtt>
 2.  ForceType text/vtt;charset=utf-8
@@ -4882,48 +4886,42 @@ The example uses a \<track\> element to insert basic *captions* to the video: so
 
 -   The \<track\> element at *line 9* has an attribute named kind that indicates the type of the track that is included. Possible values are: subtitles, captions, descriptions, chapters or metadata.
 
-```
-
-```
 -    The \<track\> element also has an attribute default that indicates that we want this track to be displayed by default when reading the video.
 
-```
-
-```
 -   We also used  an attribute named crossorigin that is necessary just to run this demo, as it is required by the server that hosts the video from this example (server = codepen.io, but as the video and .vtt files come from another origin -another server-, this attribute is necessary).
 
-<h4>Multiple tracks may be included in a video element
+<h4>Multiple tracks may be included in a video element</h4>
 
 Multiple tracks are needed to support different langages, video captions for the hearing-impaired, subtitles, etc.
 
 Below is an example ([from the specification](https://html.spec.whatwg.org/multipage/media.html#the-track-element)) that includes multiple \<track\> elements (subtitles for three languages and captions only for English):
 
 ```
-\<video src=\"brave.webm\"\>
-   \<track kind=subtitles src=brave.en.vtt
+<video src="brave.webm">
+   <track kind=subtitles src=brave.en.vtt
           srclang=en
-          label=\"English\"\>
-   \<track kind=captions src=brave.en.hoh.vtt
+          label="English">
+   <track kind=captions src=brave.en.hoh.vtt
           srclang=en
-          label=\"English for the Hard of Hearing\"\>
-   \<track kind=subtitles src=brave.fr.vtt
+          label="English for the Hard of Hearing">
+   <track kind=subtitles src=brave.fr.vtt
           srclang=fr
           lang=fr 
-          label=\"Français\"\>
-   \<track kind=subtitles src=brave.de.vtt
+          label="Français">
+   <track kind=subtitles src=brave.de.vtt
           srclang=de
           lang=de
-          label=\"Deutsch\"\>
-\</video\>
+          label="Deutsch">
+</video>
 ```
 
 Note the use of some new attributes in the \<track\> element:
 
 -   label: the label value will be displayed in the GUI control that is included in the default HTML5 video player,
 
--   srclang:  gives the language for the text track data. The value must be a valid [BCP 47 language tag](https://tools.ietf.org/html/bcp47). This attribute must be present if [the element\'s kind attribute](https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind) is in the [subtitles state](https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles).
+-   srclang:  gives the language for the text track data. The value must be a valid <a href="https://tools.ietf.org/html/bcp47">BCP 47 language tag</a>.  This attribute must be present if <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind">the element's kind attribute</a> is in the <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles">subtitles state</a>.
 
-<h4>External resources
+<h4>External resources</h4>
 
 -   From the HTML specification: [The track element](https://html.spec.whatwg.org/multipage/media.html#the-track-element)
 
@@ -4939,21 +4937,16 @@ The \"[WebVTT: The Web Video Text Tracks Format](http://dev.w3.org/html5/webvtt/
 
 In the interactive example presented before, we used a file called sintel-captions.vtt:
 
-\<video height=\"272\" width=\"640\"
-
-       poster=\"https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg\"
-
-       crossorigin=\"anonymous\"
-
-       controls\>
-
-   \...
-
-   \<track src=\"https://mainline.i3s.unice.fr/mooc/**sintel-captions.vtt</b>\"
-
-          kind=\"captions\" label=\"Closed Captions\" default\>
-
-\</video\>
+```
+<video height="272" width="640"
+       poster="https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg"
+       crossorigin="anonymous"
+       controls>
+   ...
+   <track src="https://mainline.i3s.unice.fr/mooc/**sintel-captions.vtt"
+          kind="captions" label="Closed Captions" default>
+</video>
+```
 
 And here is an extract of the corresponding [sintel-captions.vtt](https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt) file:
 ```
@@ -5035,41 +5028,37 @@ Each \"element\" in this file has a starting and ending time, plus a value (the 
 
 Example of a .vtt file with numeric IDs:
 
+```
 1.  9
-
 2.  00:00:21.000 \--\> 00:00:22.000
-
 3.  to hear from \<u\>you\</u\>
-
 4.  
-
 5.  10
-
 6.  00:00:22.500 \--\> 00:00:25.000
-
 7.  We want to hear what inspires you as a developer
+```
 
 IDs may also be defined as strings, and values can use HTML as well:
 
+```
 1.  Opening
-
 2.  00:00:00.000 \--\> 00:00:30.000
-
 3.  Welcome to our \<i\>nice film\</i\>
+```
 
 The displayed text can span multiple lines, but blank lines are not allowed, as they would be interpreted as a separator:
 
+```
 1.  00:01:57.083 \--\> 00:02:00.000
-
 2.  \<p\>You\'re a fool for traveling alone\</p\>
-
 3.  \<p\>so completely unprepared.\</p\>
+```
 
-<h4>External resource:
+<h4>External resource:</h4>
 
 -   An unofficial [Live WebbVTT format](https://quuz.org/webvtt/)
 
-<h3 id="ch2-3-3">2.3.3 Adding Subtitles to a Video</h3
+<h3 id="ch2-3-3">2.3.3 Adding Subtitles to a Video</h3>
 
 Let\'s look at a simple example. First, you need a video on one of the formats/codecs supported by the browsers you target. A recommended codec is mp4/H264, but other formats, such as webm, may have some advantages if the browser supports them. For example, webm allows the video to start playing after a much shorter buffering time. In other words, try if possible to provide the video encoded with more than one codec.
 
@@ -5087,6 +5076,7 @@ So, let\'s suppose you have a video like the one below (we included it on YouTub
 &nbsp;
 
 And if you\'ve also got it in mp4/H264 and in webm formats, here is how you can embed it in your page using the video element:
+
 ```
 <video id="myVideo" width=500 controls>
   <source
@@ -5262,7 +5252,7 @@ One can use the HTML elements  \<b\>, \<i\>, \<u\> to modify the rendering of su
 &nbsp;
 <br/>
 
-<h4>Using CSS classes for styling
+<h4>Using CSS classes for styling</h4>
 
 It is possible to style using CSS classes as part of a cue value, using the \<c\> element. You can specify the CSS class that should be applied by adding \".\" followed by the name of your CSS class. Here is an example:
 
@@ -5293,7 +5283,7 @@ The ::cue pseudo element selector is used to match \"cues\" in the webVTT file. 
 
 Support differs from one browser to another, see [this compatibility table](https://caniuse.com/#feat=webvtt) (from CanIuse). Note however that most of the enhanced players presented further on in the course provide full support.
 
-<h4>Using voicing for styling: the \<v\> element
+<h4>Using voicing for styling: the &lt;v&gt; element</h4>
 
 Here is an example that shows the voices of the different characters displayed with different colors:
 <!------------------------------------------------------------------------------------------------>
@@ -5308,7 +5298,7 @@ Here is an example that shows the voices of the different characters displayed w
 
 Using the \<v\> tag, you will distinguish different voices that should be displayed in different colors (depending on the HTML5 video player implementation). See the CSS presented in the previous section to see how to specify the colors for the different voices.
 
-Example source code:
+<h4>Example source code:</h4>
 ```
 1.  00:00:56.000 --> 00:01:04.000
 2.  <v Tarzan>Me Tarzan...
@@ -5382,15 +5372,13 @@ An example of what you can achieve using chapters, using the [JW Player](https:/
 
 Many tools are available to make and edit HTML5 video and caption/subtitles:
 
--   **Tools for converting existing file formats to  WebVTT files**, such as [Simple SubRip to WebVTT](https://atelier.u-sub.net/srt2vtt/) converter, which is popular in the DivX/AVI/Mkv/mp4 scene. Do a quick Web search and you will get plenty of other results.
-
--   **Tools for creating subtitles/captions from scratch. Use these to generate a WebVTT file. **You can embed the \<track\> element in your own videos, on your own Web pages, or upload the WebVTT file to YouTube.  We recommend [amara](https://amara.org/en/). It\'s a free online tool that is very easy to use. There are also apps such as[ Subs Factory](https://www.macupdate.com/app/mac/25826/subs-factory) (Mac OS), [Jubler](https://jubler.org/) or [Subtitle Edit](https://nikse.dk/SubtitleEdit) (Windows).
-
--   **Enhanced HTML5 video players** that use the \<video\>, \<source\> and \<track\> elements under the hood. They also provide many extra features, including **support for subtitle/caption formats other than WebVTT (by converting on the fly)**.
+<li><b><i>Tools for converting existing file formats to WebVTT files</i></b>, such as <a href="https://atelier.u-sub.net/srt2vtt/">Simple SubRip to WebVTT</a> converter, which is popular in the DivX/AVI/Mkv/mp4 scene. Do a quick Web search and you will get plenty of other results.</li>
+<li><b><i>Tools for creating subtitles/captions from scratch. Use these to generate a WebVTT file. </i></b>You can embed the &lt;track&gt; element in your own videos, on your own Web pages, or upload the WebVTT file to YouTube.  We recommend [amara](https://amara.org/en/). It\'s a free online tool that is very easy to use. There are also apps such as <a href="https://www.macupdate.com/app/mac/25826/subs-factory">Subs Factory</a> (Mac OS), <a href="https://jubler.org/">Jubler</a> or <a href="https://nikse.dk/SubtitleEdit">Subtitle Edit</a> (Windows).</li>
+<li><b><i>Enhanced HTML5 video players</i></b> that use the &lt;video&gt;, &lt;source&gt; and &lt;track&gt; elements under the hood. They also provide many extra features, including **support for subtitle/caption formats other than WebVTT (by converting on the fly)**.
 
 We do not claim that these are the best tools, so feel free to share your discoveries in the discussion forum!
 
-<h3 id="ch2-3-7">2.3.7 The \<track\> JavaScript API</h3>
+<h3 id="ch2-3-7">2.3.7 The &lt;track&gt; JavaScript API</h3>
 
 Most \"complex\" HTML elements like forms, audio or video players, come with a JavaScript API that allows you to control them programmatically, customize them, etc.
 
@@ -5406,7 +5394,7 @@ The \<track\> element comes with a powerful API that is used to develop many int
 
 -   Etc.
 
-<h4>Examples of use
+<h4>Examples of use</h4>
 
 <h4> Example #1: add a navigation menu to start playing the video at given chapters</h4>
 
@@ -5455,7 +5443,7 @@ There are numerous \"enhanced\" video players; most are free and open source, so
 
 We call them \"HTML5 enhanced video players\" because on top of being based on the \<video\> element, they come with custom features, custom look\'n\'feel, chapters, etc., based on a JavaScript API that makes such customization possible.
 
-<h4>Accessible players
+<h4>Accessible players</h4>
 
 For those of you interested in this particular topic, here is a very good resource that compares most of the players presented in this section, in terms of accessibility. This resource has links to players designed especially for people with disabilities: [accessible media players and resources](https://www.digitala11y.com/accessible-jquery-html5-media-players/).
 
@@ -5491,7 +5479,7 @@ For those of you interested in this particular topic, here is a very good resour
 
 -   Lightweight: no need to download lots of JavaScript and CSS code
 
-<h4>Video.js: a framework for building your own custom video player
+<h4>Video.js: a framework for building your own custom video player</h4>
 
 Open source, and made for developers, [video.js](https://videojs.com/) comes with many plugins (chapters, thumbnails etc.). 
 
@@ -19370,4 +19358,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-25-2022 00:14 zulu</i></b></h3>
+<h3><b><i>07-25-2022 01:13 zulu</i></b></h3>
