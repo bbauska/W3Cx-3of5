@@ -4343,9 +4343,9 @@ Resizing the browser window shows that #1 (JavaScript) and #3 (viewport units) b
 
 Setting the video to 100% width and height results in different behavior:
 <ul>
-<li>100% means 100% of the size of the \<body\> tag.</li>
-<li>The body tag\'s width is 100% of the browser window width, so the video is always full width.</li>
-<li>The body tag\'s height, however, is determined by the size of its children: the body tag\'s height grows and shrinks to accommodate the size of the children.</li>
+<li>100% means 100% of the size of the &lt;body&gt; tag.</li>
+<li>The body tag's width is 100% of the browser window width, so the video is always full width.</li>
+<li>The body tag's height, however, is determined by the size of its children: the body tag's height grows and shrinks to accommodate the size of the children.</li>
 <li>If the browser window is made wide and short, the video is full width, the height is taller than the window, and part of the video is not visible. It seems that just using % does not get us the same effect.</li>
 </ul>
 
@@ -4383,7 +4383,9 @@ Please look at this interesting example:
    width="65%">
 &nbsp;
 <br/>
-Note that in order to play the video, you must click on the \"vid.play()\" text. To pause it, you click on the \"vid.pause()\" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
+</p>
+
+Note that in order to play the video, you must click on the "vid.play()" text. To pause it, you click on the "vid.pause()" text, and so on. <i>Notice the text at the top of the video, as well as the transparency.</i> The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
 
 <b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let\'s see a little more of what we can do using the JavaScript API of the \<video\> element (it will be an identical approach for the \<audio\> element, since it shares the same API by a very small margin).
 
@@ -4393,11 +4395,11 @@ Note that in order to play the video, you must click on the \"vid.play()\" text.
 
 The JavaScript API gives you powerful tools to manipulate the \<video\> element, as the video object provides many properties, methods and events.
 
-The complete list of events can be found in the <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#event-definitions">HTML5 living standard specification</a>.
+The complete list of events can be found in the <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#event-definitions" target="_blank">HTML5 living standard specification</a>.
 
-The list of properties can be found at the <a href="https://www.w3.org/2010/05/video/mediaevents.html">W3C HTML5 Video Events and API</a> page. This page is interesting for Web developers because it shows an interactive view of the different values and events changing over time while the video is playing within the page.
+The list of properties can be found at the <a href="https://www.w3.org/2010/05/video/mediaevents.html" target="_blank">W3C HTML5 Video Events and API</a> page. This page is interesting for Web developers because it shows an interactive view of the different values and events changing over time while the video is playing within the page.
 
-Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link</a>, and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
+Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html" target="_blank">direct link</a>, and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 77. html5 video events and api (xx) ------------------------------->
@@ -4436,51 +4438,86 @@ table, th, td {
 <p>To understand the example better, we have added borders to the table.</p>
 
 <!------------------------------------------------------------ my work ------------------------------------------>
+<div class="row">
+  <div class="Methos"></div>
+  <div class="Properties"></div>
+  <div class="Events"></div>
+</div>
+<style>
+* {
+  box-sizing: border-box;
+}
 
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
 
-  ------------------------------------------------------------------------
-  <b>Methods</b>        <b>Properties</b>                   <b>Events</b>
-  ------------------ -------------------------------- --------------------
-  <b>play()</b>         <b>currentSrc</b>                   <b>play</b>
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
 
-  <b>pause()</b>        <b>currentTime</b>                  <b>pause</b>
+<h2>Three Equal Columns</h2>
 
-  load()             startTime (readonly)             progress
-
-  canPlayType()      videoWidth                       error
-
-                     videoHeight                      timeupdate
-
-                     duration (readonly)              ended
-
-                     ended (readonly)                 abort
-
-                     error                            empty
-
-                     paused (readonly)                emptied
-
-                     muted                            waiting
-
-                     seeking                          loadedmetadata
-
-                     volume                           
-
-                     <b>height</b>                       
-
-                     <b>width</b>                        
-
-                     <b>seekable (readonly)</b>          
-
-                     <b>played (readonly)</b>            
-  ------------------------------------------------------------------------
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Methods</h2>
+    <p>play()</p>
+	<p>pause()</p>
+    <p>load()</p>
+	<p>canPlayType()</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Properties</h2>
+    <p>currentSrc</p>
+    <p>currentTime</p>
+    <p>startTime (readonly)</p>
+    <p>videoWidth</p>
+    <p>videoHeght</p>
+    <p>duration (readonly)</p>
+    <p>ended (readonly)</p>
+    <p>error</p>
+    <p>paused (readonly)</p>
+    <p>muted</p>
+    <p>seeking</p>
+    <p>volume</p>
+    <p>height</p>
+    <p>width</p>
+    <p>seekable (readonly)</p>
+    <p>played (readonly)</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Events</h2>
+    <p>play</p>
+    <p>pause</p>
+    <p>progress</p>
+    <p>error</p>
+    <p>timeupdate</p>
+    <p>ended</p>
+    <p>abort</p>
+    <p>empty</p>
+    <p>emptied</p>
+    <p>waiting</p>
+    <p>loadedmetadata</p>
+  </div>
+</div>
 
 In the next pages, let\'s see, through a set of examples, how to use these most important properties, methods, and events\...
 
-<h3 id="ch2-2-7">2.2.7 The \<video\> Element JavaScript API</h3>
+<h3 id="ch2-2-7">2.2.7 The &lt;video&gt; Element JavaScript API</h3>
 
 The JavaScript API is useful for implementing playlists, making custom user interfaces and many other interesting things. The \"enhanced HTML5 multimedia players\" lesson presented further on the course relies heavily on this API.
 
-<h4>Example #1: how to use external buttons to control the player\'s behavior</h4>
+<h4>Example #1: how to use external buttons to control the player's behavior</h4>
 
 This example gives the first steps towards writing a custom video player. It shows basic usage of the JavaScript API for adding custom buttons to play/pause the video or to go back to the beginning by setting the currentTime property to zero.
 
@@ -4496,7 +4533,7 @@ Try it online:
 &nbsp;
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 79.  ---------------------------------------->
+<!-------------------------------------- 79. example 1 (97) ---------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image079.png?raw=true"
@@ -4505,6 +4542,7 @@ Try it online:
 &nbsp;
 
 <h4>Source code extract:</h4>
+
 ```
 <video id="vid" controls>
 <source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
@@ -4530,22 +4568,20 @@ Try it online:
 </script>
 ```
 
-<b>Explanations:</b>
-
--   *Lines 7, 9 and 11*: we add a click listener to each button, in order to call a JavaScript function when each button is clicked.
-
--   *Line 14*: using the DOM API, we get the JavaScript object that corresponds to the video element we inserted in the HTML document. This line is outside a function, it will be executed when the page loads.
-
--   *Lines 17 and 20*: we call methods from the API for playing/pausing the video.
-
--   *Line 24*: we modify the currentTime property in order to rewind the video. Note that vid.load() also rewinds the video, shows the poster image again, but also pauses the video. By using currentTime=0, the playback does not stop.
+<h4>Explanations:</h4>
+<ul>
+<li><i>Lines 7, 9 and 11</i>: we add a click listener to each button, in order to call a JavaScript function when each button is clicked.</li>
+<li><i>Line 14</i>: using the DOM API, we get the JavaScript object that corresponds to the video element we inserted in the HTML document. This line is outside a function, it will be executed when the page loads.</li>
+<li><i>Lines 17 and 20</i>: we call methods from the API for playing/pausing the video.</li>
+<li><i>Line 24</i>: we modify the currentTime property in order to rewind the video. Note that vid.load() also rewinds the video, shows the poster image again, but also pauses the video. By using currentTime=0, the playback does not stop.</li>
+</ul>
 
 <h4>Example #2: how to detect the end of a video and start another one</h4>
 
 This example listens to the ended event, and calls a callback function when the video is ended.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 80.  ---------------------------------------->
+<!-------------------------------------- 80. example 2 (98) ---------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image080.png?raw=true"
@@ -4554,17 +4590,17 @@ This example listens to the ended event, and calls a callback function when the 
 &nbsp;
 
 ```
-<video src="video.ogv" id="myVideo"\>
+<video src="video.ogv" id="myVideo">
     video not supported
 </video>
-<script type=\'text/javascript'>
+<script type='text/javascript'>
   var vid = document.querySelector('#myVideo');
   vid.addEventListener('ended', playNextVideo, false);
   function playNextVideo(e) {
      // Whatever you want to do after the event, change the src attribute
      // of the video element, for example, in order to play another video
   }
-</script\>
+</script>
 ```
 
 <h4>Example #3: how to manage playlists - sequential movies</h4>
@@ -4574,7 +4610,7 @@ This example detects the end of a video, then loads the next video, changes the 
 Check the online example below: use the progress cursor to go near the end of the first video that is being played, and see how it continues with the next video. 
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 81.  ---------------------------------------->
+<!-------------------------------------- 81. example 3 (98)  ---------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image081.png?raw=true"
@@ -4732,9 +4768,12 @@ See the [example online](https://jsbin.com/xororol/3/edit?html,output) here too.
 
 Note that on mobile phones, the video does not start until the user presses the play control or clicks on the video picture. Using the \"canplaythrough\" event is a trick to call a function that starts the video player as soon as the page is loaded on desktop. This event is not supported by mobile devices, so if you try this example on a mobile, the video will not start automatically.
 
-As explained by the [Apple Developer Web site](https://developer.apple.com/):  \"The buffered property is a TimeRanges object: an array of start and stop times, not a single value. Consider what happens if the person watching the media uses the time scrubber to jump forward to a point in the movie that hasn't loaded yet---the movie stops loading and jumps forward to the new point in time, then starts buffering again from there. So the buffered property can contain an array of discontinuous ranges. The example simply seeks the end of the array and reads the last value, so it actually shows the percentage into the movie duration for which there is data. \"
+As explained by the <a href="https://developer.apple.com/">Apple Developer Web site</a>: "The buffered property is a TimeRanges object: an array of start and stop times, 
+not a single value. Consider what happens if the person watching the media uses the time scrubber to jump forward to a point in the movie that hasn't loaded yet---the 
+movie stops loading and jumps forward to the new point in time, then starts buffering again from there. So the buffered property can contain an array of discontinuous 
+ranges. The example simply seeks the end of the array and reads the last value, so it actually shows the percentage into the movie duration for which there is data."
 
-Source code extract:
+<h4>Source code extract:</h4>
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -4785,7 +4824,7 @@ Source code extract:
 This is the ultimate way of doing a real custom player: redesign your own controls using SVG shapes! This example (try it [online](https://www.w3.org/2010/Talks/0430-www2010-plh/video-player.xhtml)) is given \"as is\" for those of you who may be curious.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 85. cup on table ---------------------------------------->
+<!----------------------------------- 85. cup on table (###) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image085.png?raw=true"
@@ -4793,9 +4832,10 @@ This is the ultimate way of doing a real custom player: redesign your own contro
    width="25%" />
 &nbsp;
 
-<h4>Example #5: a custom video player written by a previous student
+<h4>Example #5: a custom video player written by a previous student</h4>
 
-This is more an example than a tutorial. Maurice, a student who followed the precursor version of this MOOC, had the assignment to write a custom video player with playlist, video thumbnails, custom play/pause/next/previous/volume controls, and present it in a Web page that used a nice layout based on the HTML5 structuring elements studied previously.
+This is more an example than a tutorial. Maurice, a student who followed the precursor version of this MOOC, had the assignment to write a custom video player with playlist, 
+video thumbnails, custom play/pause/next/previous/volume controls, and present it in a Web page that used a nice layout based on the HTML5 structuring elements studied previously.
 
 Here is the online example. We recommend that you look at the source code:
 
@@ -4805,19 +4845,19 @@ This section introduces the HTML5 \<track\> element, useful for adding closed ca
 
 The WebVTT format used for describing a track file is also presented in this chapter.
 
-<h4>Most of the major desktop browsers support HTML5 captioning
+<h4>Most of the major desktop browsers support HTML5 captioning</h4>
 
-Please check thea href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the \<track\> element support by browsers.
+Please check the <a href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the \<track\> element support by browsers.
 
-<h4>Some definitions
-
--   <b>closed captions </b>describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).
-
--   <b>subtitles </b>are only for spoken words.
+<h4>Some definitions</h4>
+<ul>
+<li><b>closed captions </b>describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).</li>
+<li><b>subtitles </b>are only for spoken words.</li>
+</ul>
 
 The accessibility features of TV programs often propose both options for people with hearing deficiencies. 
 
-<h4>Typical use: add a subtitle/caption track to a \<video\> element
+<h4>Typical use: add a subtitle/caption track to a &lt;video&gt; element</h4>
 
 <b>Important warning!!</b>
 
@@ -6422,12 +6462,11 @@ Source code extract:
 ```
    
 <b>Explanations:</b>
-
--   *Line 1*: we declare an array of bytes that will hold the recorded stream.
-
--   *Line 2*: we declare the callback function that will be called while the stream is being captured. While the Webcam will be used, every xxx seconds, chunks of data will be passed to the handleDataAvailable function.
-
--   *Lines 5-10*: this function collects the chunk of data that corresponds to a few seconds of video, and stores it in the recordedChunks byte array.
+<ul>
+<li><i>Line 1</i>: we declare an array of bytes that will hold the recorded stream.</li>
+<li><i>Line 2</i>: we declare the callback function that will be called while the stream is being captured. While the Webcam will be used, every xxx seconds, chunks of data will be passed to the handleDataAvailable function.</li>
+<li><i>Lines 5-10</i>: this function collects the chunk of data that corresponds to a few seconds of video, and stores it in the recordedChunks byte array.</li>
+</ul>
 
 <h4>3 - When you\'ve finished recording, tell the mediaRecorder to stop</h4>
 
@@ -19353,4 +19392,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-22-2022 22:14 zulu</i></b></h3>
+<h3><b><i>07-24-2022 23:47 zulu</i></b></h3>
