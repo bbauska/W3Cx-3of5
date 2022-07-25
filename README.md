@@ -2745,7 +2745,7 @@ This example also uses all the structuring elements we saw: main, article, secti
 <li>An article on CSS Tricks: <a href="https://css-tricks.com/all-about-floats/">All about floats</a></li>
 <li>Old but good article on "A List Apart" (ALA): <a href="https://alistapart.com/article/css-floats-101">CSS Floats 101</a></li>
 <li>Another article on Lifewire:<a href="https://www.lifewire.com/understanding-css-float-3466205"> Understanding CSS float</a></li>
-<li>On MDN\'s Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">float CSS property</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear">clear CSS property</a></li>
+<li>On MDN's Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">float CSS property</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear">clear CSS property</a></li>
 </ul>
 
 <h3 id="ch1-4-1">1.4.1 The &lt;details&gt; and &lt;summary&gt; Elements</h3>
@@ -3883,7 +3883,7 @@ This is one of the main problems encountered in recent years: codec support was 
 
 HTML5 audio is composed of several layers:
 <ul>
-<li>The &lt;audio&gt; element is useful for embedding an audio player into a Web page. It is dedicated for <b>streamed audio. It is very similar to the &lt;video&gt; element, both in its use and in its API.</li>
+<li>The &lt;audio&gt; element is useful for embedding an audio player into a Web page. It is dedicated for streamed audio. It is very similar to the &lt;video&gt; element, both in its use and in its API.</li>
 <li>The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.).</li>
 </ul>
 
@@ -14347,9 +14347,9 @@ GUI: Graphical User Interface
 
 <h4>Example #1: choose the color, line width and speed of an animation</h4>
 
--   [Bouncing rectangle without GUI](https://jsbin.com/ciwefo/1/edit?html,css,output)
-
--   [Bouncing rectangle with GUI](https://jsbin.com/newojij/1/edit?html,css,output) (see screenshot at the top right of this page)
+<ll><a href="https://jsbin.com/ciwefo/1/edit?html,css,output">Bouncing rectangle without GUI.</a></li>
+<li><a href="https://jsbin.com/newojij/1/edit?html,css,output">Bouncing rectangle with GUI</a> (see screenshot at the top right of this page).<.li>
+</ul>
 
 <h4>Example #2: data visualization control</h4>
 
@@ -14359,7 +14359,7 @@ GUI: Graphical User Interface
 
 -   [Final version with different types of charts and a GUI](https://jsbin.com/ralonem/1/edit?html,js,output)  (see screenshot below)
 
-<h3>5.2.4 Best Practices</h3>
+<h3 id="ch5-2-4">5.2.4 Best Practices</h3>
 
 <h4>Live coding video 3: HTML5 forms - best practices</h4>
 
@@ -15600,7 +15600,7 @@ value=5 min=0, max=10 step=\"any\", ticks at 0, 5 and 10:
 
 -   MDN\'s Web Docs: [\<input type=range\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
 
-<h3>5.5.1 Form Attributes</h3>
+<h3 id="ch5-5-1">5.5.1 Form Attributes</h3>
 
 In this chapter, we go over the form attributes that have been introduced by HTML5.
 
@@ -16581,7 +16581,7 @@ Download progress:
 8.  </script>
 ```
 
-<h3 id="ch5-6-5">5.6.5 <datalist></h3>
+<h3 id="ch5-6-5">5.6.5 &lt;datalist&gt;</h3>
 
 The \<datalist\> form element is useful for linking a list of choices to an input element.
 
@@ -19370,4 +19370,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-24-2022 23:58 zulu</i></b></h3>
+<h3><b><i>07-25-2022 00:14 zulu</i></b></h3>
