@@ -4413,29 +4413,7 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html" target="_bla
 
 <h4>Here is a table that shows the most interesting methods, properties, and events provided by the &lt;video&gt; element API</h4>
 
-We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer! 
-
-<!------------------------------------------------------------ my work ------------------------------------------>
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
-
-<h3>Elements that can be associated with Microdata</h3>
-
-<table style="width:100%">
-  <tr>
-    <th>HTML5 Elements</th>
-    <th>Microdata Value Associated</th>
-  </tr>
-  <tr>
-  </td>
-    <td>The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person's photo and downloaded accordingly.</td>
-  </tr>
-</table>
-
-<p>To understand the example better, we have added borders to the table.</p>
+We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer!
 
 <!------------------------------------------------------------ my work ------------------------------------------>
 <div class="row">
@@ -4466,7 +4444,7 @@ table, th, td {
 </head>
 <body>
 
-<h2>Three Equal Columns</h2>
+<h2>...</h2>
 
 <div class="row">
   <div class="column" style="background-color:#aaa;">
@@ -19392,4 +19370,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-24-2022 23:47 zulu</i></b></h3>
+<h3><b><i>07-24-2022 23:58 zulu</i></b></h3>
