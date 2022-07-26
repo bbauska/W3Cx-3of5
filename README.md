@@ -451,11 +451,11 @@ The credited inventor of the World Wide Web is Tim Berners-Lee.
 
 You have to access the internet to view the World Wide Web and the web pages or other content it contains. The web is the collective name for all the pages, sites, documents, and other media that are served to visitors.
 
-The web consists of digital documents, referred to as web pages, that are viewable through <a href="https://www.lifewire.com/what-is-a-browser-446234">web browser</a> software on devices like smartphones, tablets, and computers. These pages contain many types of content, including static content like encyclopedia pages, but also dynamic content like <a href="https://www.lifewire.com/a-primer-to-ebay-basics-2483229">eBay</a> sales, stocks, weather, news, and traffic reports.
+The web consists of digital documents, referred to as web pages, that are viewable through <a href="https://www.lifewire.com/what-is-a-browser-446234">web browser</a> software on devices like smartphones, tablets, and computers. These pages contain many types of content, including static content like encyclopedia pages, but also dynamic content like <a href="https://www.lifewire.com/a-primer-to-ebay-basics-2483229" target="_blank" rel="noopener noreferrer">eBay</a> sales, stocks, weather, news, and traffic reports.
 
 A collection of connected web pages that are publicly accessible and under a single domain name is referred to as a website.
 
-Web pages are connected using <a href="https://www.lifewire.com/hypertext-transfer-protocol-817944">Hypertext Transfer Protocol</a> (HTTP), the coding language that allows you to visit any public web page. By clicking a <a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287">hyperlink</a> or entering a <a href="https://www.lifewire.com/what-is-a-url-2626035">Uniform Resource Locator</a> (URL), the browser uses this unique address to find and access a web page. <a href="https://www.lifewire.com/best-search-engines-2483352">Search engines</a> like Google make it easy to filter the billions of web pages now populating the web by locating the articles, videos, and other media you want to find based on your search criteria.
+Web pages are connected using <a href="https://www.lifewire.com/hypertext-transfer-protocol-817944">Hypertext Transfer Protocol</a> (HTTP), the coding language that allows you to visit any public web page. By clicking a <a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287">hyperlink</a> or entering a <a href="https://www.lifewire.com/what-is-a-url-2626035" target="_blank" rel="noopener noreferrer">Uniform Resource Locator</a> (URL), the browser uses this unique address to find and access a web page. <a href="https://www.lifewire.com/best-search-engines-2483352">Search engines</a> like Google make it easy to filter the billions of web pages now populating the web by locating the articles, videos, and other media you want to find based on your search criteria.
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -494,7 +494,7 @@ Web accessibility features also benefit many more users, such as:
 <li>People who are not fluent in the language of your particular Web site;</li>
 </ul>
 
-The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. When Web pages, Web technologies, Web tools, or Web applications are badly designed, they can create barriers that exclude people from using the Web. More information is available in the <a href="https://www.w3.org/standards/webdesign/accessibility">W3C Accessibility</a> overview.
+The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. When Web pages, Web technologies, Web tools, or Web applications are badly designed, they can create barriers that exclude people from using the Web. More information is available in the <a href="https://www.w3.org/standards/webdesign/accessibility" target="_blank" rel="noopener noreferrer">W3C Accessibility</a> overview.
 
 <h4>First Steps in Web Accessibility</h4>
 
@@ -505,8 +505,8 @@ Remember that when developing or redesigning a website or Web application, it is
 Two examples are provided below  but you can find more tips and information in these 2 resources:
 
 <ul>
-<li><a href="https://www.w3.org/WAI/gettingstarted/tips/">Tips for Getting Started with Web Accessibility]</a></li>
-<li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks - A First Review of Web Accessibility</a></li>
+<li><a href="https://www.w3.org/WAI/gettingstarted/tips/" target="_blank" rel="noopener noreferrer">Tips for Getting Started with Web Accessibility]</a></li>
+<li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/" target="_blank" rel="noopener noreferrer">Easy Checks - A First Review of Web Accessibility</a></li>
 </ul>
 
 <h4>Example #1: page title</h4>
@@ -543,7 +543,7 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 &nbsp;
 <br/>
 
-<p align="center"><a href="https://www.w3.org/Icons/w3c_home">W3C Home</a></p>
+<p align="center"><a href="https://www.w3.org/Icons/w3c_home" target="_blank" rel="noopener noreferrer">W3C Home</a></p>
 
 ```
 <a href="https://w3.org">
@@ -602,7 +602,7 @@ Even if differences exist between ids, classes and css/js implementations, they
 
 So various studies have been conducted in order to identify the most popular ids, class names, widgets, etc. used on the Web:
 
-Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">article: </a>"During the creation of HTML5, Ian Hickson used Google\'s tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA (\"Metadata Analysis and Mining Application\"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics\".
+Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">article: </a>"During the creation of HTML5, Ian Hickson used Google\'s tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA (\"Metadata Analysis and Mining Application\"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics\".
 
 <h4>New elements added to the HTML5 set</h4>
 
@@ -637,8 +637,8 @@ Read also at the end of this section about the new \<main\> element. This elemen
 
 <h4>External resources:</h4>
 <ul>
-<li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/">Structural Semantics: The Importance Of HTML5 Sectioning Elements.</a></li>
-<li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">New Structural Elements in HTML5.</a></li>
+<li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/" target="_blank" rel="noopener noreferrer">Structural Semantics: The Importance Of HTML5 Sectioning Elements.</a></li>
+<li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">New Structural Elements in HTML5.</a></li>
 </ul>
 
 <h4>A blog example that uses the structural elements</h4>
@@ -755,11 +755,11 @@ nav span {
 Now, we have one big \<section\> element that contains a set of \<article\> elements...
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 16. image of sections that contain articles (xx) ----------------------->
+<!---------------------- 16. image of sections that contain articles (17) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image016.jpeg?raw=true"
-   alt="Image of sections that contain articles"
+   alt="Image of sections that contain articles."
    width="65%" />
 </p>
 
@@ -806,11 +806,11 @@ Note that the H2, article, article header, etc. will be styled using these rules
 <h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 17. image of header at top of each article --------------------------->
+<!---------------------- 17. image of header at top of each article (18) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image017.jpeg?raw=true"
-   alt="Image of the header at the top of each article"
+   alt="Image of the header at the top of each article."
    width="55%">
 &nbsp;
 <br/>
@@ -855,11 +855,11 @@ Example for the first blog article:
 Also note the way we included a figure using the new \"HTML5\" method, using a \<figure\>..\</figure\> element that embedded a \<img src=\.../\> element together with a \<figcaption\> element. 
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 18. figure and figcaption (xx) ------------------------------>
+<!---------------------------------- 18. figure and figcaption (19) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image018.jpeg?raw=true"
-   alt="Image of figure and figure caption that embed an image"
+   alt="Image of figure and figure caption that embed an image."
    width="55%">
 &nbsp;
 <br/>
@@ -893,11 +893,11 @@ Here is the CSS for the \<figcaption\> element we have used in the example (we
 After the long \<section\> element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, \"aside\"! This is done using - you already guessed it - an \<aside\> element:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 19. image of tag cloud defined as aside element ------------------------>
+<!--------------------- 19. image of tag cloud defined as aside element (20) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image019.jpeg?raw=true"
-   alt="Image of tag cloud defined as aside element"
+   alt="Image of tag cloud defined as aside element."
    width="35%">
 &nbsp;
 <br/>
@@ -918,7 +918,7 @@ After the long \<section\> element that contains all the blog articles display
 ...
 ```
 
-We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at [the code of the online example](https://jsbin.com/bucokav/edit?html,output).
+We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at <a href="https://jsbin.com/bucokav/edit?html,output">the code of the online example</a>.
 
 <h4>Here is the CSS for the &lt;aside&gt; element:</h4>
 
@@ -945,26 +945,26 @@ We used a float:right CSS rule to put the tag cloud on the right\... In the fo
 <h4>Here is the result:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 20. the aside tag on the right (xx) ------------------------------>
+<!----------------------------- 20. the aside tag on the right (21) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image020.jpeg?raw=true"
-   alt="The aside tag cloud on the right"
+   alt="The aside tag cloud on the right."
    width="65%">
 &nbsp;
 <br/>
 
 <h4>Add a &lt;footer&gt; at the end of the blog</h4>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 21. image of the blog footer (xx) --------------------------->
+<!------------------------------ 21. image of the blog footer (21) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image021.jpeg?raw=true"
-   alt="Image of the Blog Footer"
+   alt="Image of the blog footer."
    width="25%" />
 </p>
 
-Finally, we added a \<footer\> element (*lines 12-14* below) after the tag cloud definition, to display a page footer:
+Finally, we added a \<footer\> element (<i>lines 12-14</i> below) after the tag cloud definition, to display a page footer:
 
 ```
 <html>
@@ -997,11 +997,11 @@ footer {
 And here is the result at the bottom of the page:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------- 22. the resulting footer at the bottom of the page (xx) -------------------->
+<!------------------- 22. the resulting footer at the bottom of the page (21) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image022.jpeg?raw=true"
-   alt="Image of the Blog Footer"
+   alt="Image of the blog footer."
    width="65%" />
 </p>
 
@@ -1010,11 +1010,11 @@ And here is the result at the bottom of the page:
 Can an \<article\> contain a \<section\>?
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 23. picture of eisher (xx) --------------------------->
+<!---------------------------------- 23. picture of eisher (22) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image023.jpeg?raw=true"
-   alt="Picture of Eisher"
+   alt="Picture of eisher."
    width="25%" />
 </p>
 
@@ -1091,11 +1091,11 @@ You can use \<div\> elements in all cases where the proposed structural elemen
 This chart from the <a href="https://html5doctor.com/">HTML5 Doctor Web site</a> may help you decide whether or not to use a \<div\>:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 24. html5 doctor web site. whether or not to use a <dev> (xx) ------------------>
+<!--------------- 24. html5 doctor web site. whether or not to use a <dev> (24) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image024.png?raw=true"
-   alt="HTML5 Doctor Web site.  Whether or not to use a 'dev'"
+   alt="HTML5 Doctor Web site.  Whether or not to use a 'dev'."
    width="85%" />
 </p>
 
@@ -1122,11 +1122,11 @@ Since the very beginning, HTML has had heading elements: \<h1\>\...\<h6\>. Thes
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------ 25. outliner in action from the previous example (xx) ----------------------->
+<!------------------ 25. outliner in action from the previous example (25) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image025.png?raw=true"
-   alt="Outliner in action from the previous example"
+   alt="Outliner in action from the previous example."
    width="65%" />
 </p>
 
@@ -1262,7 +1262,7 @@ The outline of the last example looks like this:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image027.jpeg?raw=true"
-   alt="Outline of last example"
+   alt="Outline of last example."
    width="55%">
 &nbsp;
 <br/>
@@ -1316,7 +1316,7 @@ Here is the resulting table of contents, notice the two subsections that appear
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image028.jpeg?raw=true"
-   alt="Outline of previous example"
+   alt="Outline of previous example."
    width="55%">
 &nbsp;
 <br/>
@@ -1383,7 +1383,7 @@ Both of the examples above are semantically identical and produce the same out
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image029.jpeg?raw=true"
-   alt="Outline of previous example"
+   alt="Outline of previous example."
    width="55%">
 &nbsp;
 <br/>
@@ -1545,32 +1545,23 @@ The results of these surveys led to the addition of new structural elements in H
 
 Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\'s surveys gave birth to these new elements (click on the element\'s name to go to the W3C specification about this element):
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  HTML5 structural elements with descriptions.                                                                                                                                                
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<h4>HTML5 structural elements with descriptions</h4>
+<ul>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-header-element">&lt;header&gt;</b></a>Introduction of "sectioning elements": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;.</li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element">&lt;footer&gt;</b</a>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element">&lt;nav&gt;</b></a>Section that contains the main navigation links (within the document or to other pages).</li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-article-element">&lt;article&gt;</b></a>Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-section-element">&lt;section&gt;</b></a>Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.</li>
+<li><b><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element">&lt;time&gt;</b></a>Used for marking up times and dates.</li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element">&lt;aside&gt;</b></a>Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</li>
+<li><b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element">&lt;figure&gt;</b></a> and <b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element">&lt;figcaption&gt;</b></a>Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</li>
+</ul>
 
-  [<b>\<header\></b>](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>.
-
-  [<b>\<footer\></b>](https://www.w3.org/TR/html5/sections.html#the-footer-element)                                                                                                              Contains the footer of a site, a long \<article\>, or a long \<section\>.
-
-  [<b>\<nav\></b>](https://www.w3.org/TR/html5/sections.html#the-nav-element)                                                                                                                    Section that contains the main navigation links (within the document or to other pages).
-
-  [<b>\<article\></b>](https://www.w3.org/TR/html5/sections.html#the-article-element)                                                                                                            Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.
-
-  [<b>\<section\></b>](https://www.w3.org/TR/html5/sections.html#the-section-element)                                                                                                            Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.
-
-  [<b>\<time\></b>](https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element)                                                                                                      Used for marking up times and dates.
-
-  [<b>\<aside\></b>](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.
-
-  [<b>\<figure\></b>](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [<b>\<figcaption\></b>](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
-
-  <a href="https://www.w3.org/TR/html5/sections.html#the-aside-element"><b>&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b>
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<a href="https://www.w3.org/TR/html5/sections.html#the-aside-element"><b>&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b>
 
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
 
-Read also at the end of this section about the new \<main\> element .  This element is [part of the HTML5 recommendation](https://www.w3.org/TR/html5/grouping-content.html#the-main-element) and  an integral part of the HTML document structure.
+Read also at the end of this section about the new \<main\> element .  This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">part of the HTML5 recommendation</a> and  an integral part of the HTML document structure.
 
 <h4>External resources:</h4>
 <ul>
@@ -1581,7 +1572,7 @@ Read also at the end of this section about the new \<main\> element .  This e
 
 <h4>A blog example that uses the structural elements</h4>
 
-Let\'s study <a href="https://jsbin.com/bucokav/edit?html,output ">an example we put on JsBin</a> (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
+Let\'s study <a href="https://jsbin.com/bucokav/edit?html,output" >an example we put on JsBin</a> (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
 
 <h4>Use a &lt;header&gt; at the top of the blog</h4>
 
