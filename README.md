@@ -1548,16 +1548,15 @@ Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\
 <h4>HTML5 structural elements with descriptions</h4>
 <ul>
 <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-header-element">&lt;header&gt;</b></a>Introduction of "sectioning elements": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;.</li>
-<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element">&lt;footer&gt;</b</a>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element">&lt;footer&gt;</b></a>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
 <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element">&lt;nav&gt;</b></a>Section that contains the main navigation links (within the document or to other pages).</li>
 <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-article-element">&lt;article&gt;</b></a>Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</li>
 <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-section-element">&lt;section&gt;</b></a>Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.</li>
 <li><b><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element">&lt;time&gt;</b></a>Used for marking up times and dates.</li>
 <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element">&lt;aside&gt;</b></a>Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</li>
 <li><b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element">&lt;figure&gt;</b></a> and <b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element">&lt;figcaption&gt;</b></a>Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element">&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b></li>
 </ul>
-
-<a href="https://www.w3.org/TR/html5/sections.html#the-aside-element"><b>&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b>
 
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
 
@@ -1577,7 +1576,7 @@ Let\'s study <a href="https://jsbin.com/bucokav/edit?html,output" >an example w
 <h4>Use a &lt;header&gt; at the top of the blog</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 14. image of the header element at the top of the blog (xx) ------------------->
+<!---------------- 14. image of the header element at the top of the blog (35) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image014.jpeg?raw=true"
@@ -1620,7 +1619,7 @@ header span {
 <h4>Use a &lt;nav&gt; for the navigation menu just below the header</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 15. image of the navigation menu (xx) ------------------------------>
+<!--------------------------- 15. image of the navigation menu (36) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image015.jpeg?raw=true"
@@ -1685,7 +1684,7 @@ nav span {
 Now, we have one big \<section\> element that contains a set of \<article\> elements\...
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 16. image of sections that contain articles (xx) ------------------->
+<!---------------------- 16. image of sections that contain articles (37) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image016.jpeg?raw=true"
@@ -1713,24 +1712,24 @@ Now, we have one big \<section\> element that contains a set of \<article\> 
 <b>And here is the CSS:</b>
 
 ```
-> section {
->    float: left;
->    padding: 35px 0;
->    position: relative;
->    width: 70%
-> }
-> section article {
->    margin: 0 50px 40px;
->    padding: 25px 0 0;
->    position: relative
-> }
-> section header {
->    font-size: 1em;
->    padding: 0;
-> }
-> section h2 {
->    font-size: 2.3em;
-> }
+section {
+   float: left;
+   padding: 35px 0;
+   position: relative;
+   width: 70%
+}
+section article {
+   margin: 0 50px 40px;
+   padding: 25px 0 0;
+   position: relative
+}
+section header {
+   font-size: 1em;
+   padding: 0;
+}
+section h2 {
+   font-size: 2.3em;
+}
 ```
 
 Note that the H2, article, article header, etc. will be styled using these rules.
@@ -1738,11 +1737,11 @@ Note that the H2, article, article header, etc. will be styled using these rules
 <h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------ 17. image of the header at the top of each article (xx) --------------------->
+<!------------------ 17. image of the header at the top of each article (37) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image017.jpeg?raw=true"
-   alt="Image of the header at the top of each article"
+   alt="Image of the header at the top of each article."
    width="65%" />
 &nbsp;
 <br/>
@@ -1787,11 +1786,11 @@ Example for the first blog article:
 Also note the way we included a figure using the new \"HTML5\" method, using a \<figure\>..\</figure\> element that embedded a \<img src=\.../\> element together with a \<figcaption\> element. 
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 18. image of figure and figcaption that embed an img (xx) ------------------->
+<!----------------- 18. image of figure and figcaption that embed an img (38) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image018.jpeg?raw=true"
-   alt="image of figure and figcaption that embed an img"
+   alt="image of figure and figcaption that embed an img."
    width="65%" />
 &nbsp;
 <br/>
@@ -1825,11 +1824,11 @@ figcaption {
 After the long \<section\> element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, \"aside\"! This is done using - you already guessed it - an \<aside\> element:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
+<!---------------- 19. image of the tag cloud defined as an aside element (39) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image019.jpeg?raw=true"
-   alt="image of the tag cloud defined as an aside element"
+   alt="image of the tag cloud defined as an aside element."
    width="25%" />
 &nbsp;
 <br/>
@@ -1877,11 +1876,11 @@ We used a float:right CSS rule to put the tag cloud on the right\... In a foll
 <h4><b>Here is the result:</b></h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
+<!---------------- 19. image of the tag cloud defined as an aside element (40) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image019.jpeg?raw=true"
-   alt="The aside tag cloud on the right"
+   alt="The aside tag cloud on the right."
    width="50%" />
 &nbsp;
 <br/>
@@ -1889,11 +1888,11 @@ We used a float:right CSS rule to put the tag cloud on the right\... In a foll
 <h4>Add a &lt;footer&gt; at the end of the blog</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 20. image of the tag cloud defined as an aside element (xx) ------------------->
+<!---------------- 20. image of the tag cloud defined as an aside element (40) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image020.jpeg?raw=true"
-   alt="image of the blog footer"
+   alt="Image of the blog footer."
    width="25%" />
 &nbsp;
 <br/>
@@ -1931,20 +1930,11 @@ footer {
 <h4><b>And here is the result at the bottom of the page:</b></h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 19. image of the tag cloud defined as an aside element (xx) ------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center">
-<img src="/images/image019.jpeg?raw=true"
-   alt="image of the tag cloud defined as an aside element"
-   width="25%" />
-&nbsp;
-<br/>
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 22. the resulting footer at the bottom of the page (xx) ------------------->
+<!------------------- 22. the resulting footer at the bottom of the page (41) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image022.jpeg?raw=true"
-   alt="image of the tag cloud defined as an aside element"
+   alt="Image of the tag cloud defined as an aside element."
    width="55%" />
 &nbsp;
 <br/>
@@ -1954,11 +1944,11 @@ footer {
 <h4>Can an &lt;article&gt; contain a &lt;section&gt;?</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 23. pictures of eisher hands (xx) ------------------->
+<!----------------------------- 23. pictures of eisher hands (41) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image023.jpeg?raw=true"
-   alt="Picture of 'eisher' hands" 
+   alt="Picture of 'eisher' hands."
    width="25%" />
 &nbsp;
 <br/>
@@ -2037,7 +2027,7 @@ You can use \<div\> elements in all cases where the proposed structural elemen
 This chart from the <a href="https://html5doctor.com/">HTML5 Doctor Web site</a> may help you decide whether or not to use a &lt;div&gt;:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 24.  (xx) ------------------->
+<!------------------------- 24. chart from html5 doctor web site (43) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image024.png?raw=true"
@@ -2068,7 +2058,7 @@ Since the very beginning, HTML has had heading elements: \<h1\>\...\<h6\>. Thes
 
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 25.  (xx) ------------------->
+<!--------------------------------- 25. headings 1 thru 6 (44) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image025.png?raw=true"
@@ -2137,11 +2127,11 @@ Let\'s clarify this by looking at some example code:
 The corresponding outline is:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 26. outline of previous example (xx) ------------------->
+<!--------------------------- 26. outline of previous example (45) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image026.jpeg?raw=true"
-   alt="outline of previous example"
+   alt="Outline of previous example."
    width="60%" />
 &nbsp;
 <br/>
@@ -2198,11 +2188,11 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 
 The outline of the last example looks like this:
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 27.  (xx) ------------------->
+<!---------------------------- 27. outline of the last example (46) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image027.jpeg?raw=true"
-   alt="Outline of last example"
+   alt="Outline of last example."
    width="65%" />
 &nbsp;
 <br/>
@@ -2252,11 +2242,11 @@ This example has two headings in the \<header\>:
 Here is the resulting table of contents, notice the two subsections that appear, one for the H1, one for the H2:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 28. example structural elements --------------------------------->
+<!---------------------------- 28. example structural elements (47) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image028.jpeg?raw=true"
-   alt=""
+   alt="Example structural elements."
    width="55%">
 &nbsp;
 <br/>
@@ -2287,7 +2277,7 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 5.       <h2>Taste</h2>
 6.       <p>They taste lovely.</p>
 7.       <h6>Sweet<h6>
-8.       <p>Red apples are sweeter than green ones.</p\>
+8.       <p>Red apples are sweeter than green ones.</p>
 9.       <h1>Color</h1>
 10.      <p>Apples come in various colors.</p>
 11. </section>
@@ -2318,11 +2308,11 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 Both of the examples above are semantically identical and produce the same outline:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 29. outline of previous examples ------------------------------>
+<!---------------------------- 29. outline of previous examples (48) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image029.jpeg?raw=true"
-   alt="CodePen logo"
+   alt="Outline of the previous example."
    width="45%">
 &nbsp;
 <br/>
@@ -2371,11 +2361,11 @@ They are also useful for checking the presence of headings in each sectioning c
 <h3 id="ch1-3-8">1.3.8 The &lt;main&gt; Element</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 31. the main element (##) ------------------------------->
+<!---------------------------------- 31. the main element (49) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image031.jpeg?raw=true"
-   alt="Main Element Funny"
+   alt="Main element funny."
    width="25%" />
 </p>
 
