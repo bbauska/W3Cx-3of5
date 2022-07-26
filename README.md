@@ -3854,16 +3854,15 @@ Check the HTML code of the following CodePen:
 <br/>
 
 Please note that:
-
--   The controls attribute indicates that a control panel with play/stop/volume/progress widgets should be displayed;
-
--   Usually the browser  will use the first format it recognizes  (in this case, the browser checks whether mp4 is supported, and if not, it will check for the ogg format, and so on). Some browsers may use a different heuristic and choose a \"preferred\" format;
-
--   The \<video\> element is a DOM member, so  CSS styling can be applied, as well as manipulation using the DOM API.
+<ul>
+<li>The controls attribute indicates that a control panel with play/stop/volume/progress widgets should be displayed;</li>
+<li>Usually the browser  will use the first format it recognizes  (in this case, the browser checks whether mp4 is supported, and if not, it will check for the ogg format, and so on). Some browsers may use a different heuristic and choose a "preferred" format;</li>
+<li>The &lt;video&gt; element is a DOM member, so  CSS styling can be applied, as well as manipulation using the DOM API.</li>
+</ul;>
 
 You will learn more about the different attributes of the \<video\> element later on in the course.
 
-<h4>Current browser support for the \<video\> element</h4>
+<h4>Current browser support for the &lt;video&gt; element</h4>
 
 The \<video\> element is supported by all major browsers. See the <a href="https://caniuse.com/video">support table from CanIUse.</a>
 
@@ -3881,7 +3880,9 @@ Usually you have an \"embed\" button close to the videos that prompts you with
 
 Here is the HTML code you need to copy and paste in order to embed a video:
 
-1.  \<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/WMFXg-kni0U\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\>\</iframe\>
+```
+1.  <iframe width="560" height="315" src="https://www.youtube.com/embed/WMFXg-kni0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```
 
 The YouTube video embedded in this page by the above code: it\'s HTML5 but it\'s not a \<video\> element directly inserted in the HTML of this page, it\'s an \<iframe\>.
 
@@ -3899,29 +3900,29 @@ The YouTube video embedded in this page by the above code: it\'s HTML5 but it\'s
 
 This is one of the main problems encountered in recent years: codec support was not the same from one browser to another, for commercial/economic reasons. For example, between 2010 and 2013, Firefox only supported the ogg/oggm format. It did not support mp3/mp4 encoding for audio/video, while Internet Explorer only supported H.264 encoding. Since 2012, things have changed with browser updates and today most popular formats are supported.
 
-*The recommended CODEC, which works in all popular browsers: H264/mp4.*
+<i>The recommended CODEC, which works in all popular browsers: H264/mp4.</i>
 
 <h4>External resources</h4>
 <ul>
-<li>From W3C\'s specification: [The video element](https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element)</li>
-<li>MDN\'s Web Docs:  [\<video\>: The Video Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)</li>
+<li>From W3C\'s specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element">The video element</a></li>
+<li>MDN\'s Web Docs: <a href="(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">&lt;video&g;: The Video Embed element</a>)</li>
 <li>From Apple\'s developer site: [Safari HTML5 audio and video guide](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/ControllingMediaWithJavaScript/ControllingMediaWithJavaScript.html)</li>
-<li>Article from HTML5 Rocks: [Media](https://www.html5rocks.com/en/tutorials/video/basics/)</li>
+<li>Article from HTML5 Rocks: <a href="https://www.html5rocks.com/en/tutorials/video/basics/">Media</a></li>
 </ul>
 
 <h3 id="ch2-2-2">2.2.2 The <audio> Element</h3>
 
 HTML5 audio is composed of several layers:
-
--   The<b> </b>\<audio\> element is useful for embedding an audio player into a Web page. It is dedicated for <b>streamed audio</b>. It is very similar to the \<video\> element, both in its use and in its API.
-
--   The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.).
+<ul>
+<li>The<b> </b>\<audio\> element is useful for embedding an audio player into a Web page. It is dedicated for <b>streamed audio</b>. It is very similar to the \<video\> element, both in its use and in its API.</li>
+<li>The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.)</li>
+</ul>
 
 This course will focus on the \<audio\> element. We present the [Web Audio API](https://www.w3.org/TR/webaudio/) and other advanced HTML5 features in the [W3Cx HTML5 Apps and Games course](https://www.edx.org/course/html5-apps-and-games).
 
 The attributes, event set and JavaScript API  of the \<audio\> element are just a \"reduced\" version of the ones from the \<video\> element, and here we will only address the differences and peculiarities.
 
-<h4>The <audio> element, basic usage</h4>
+<h4>The &lt;audio&gt; element, basic usage</h4>
 
 Here is a simple example (also available [online example from JSBin](https://jsbin.com/yogojis/edit?html,output)):
 
