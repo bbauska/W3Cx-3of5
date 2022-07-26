@@ -1547,31 +1547,31 @@ Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\
 
 <h4>HTML5 structural elements with descriptions</h4>
 <ul>
-<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-header-element">&lt;header&gt;</b></a>Introduction of "sectioning elements": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;.</li>
-<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element">&lt;footer&gt;</b></a>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
-<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element">&lt;nav&gt;</b></a>Section that contains the main navigation links (within the document or to other pages).</li>
-<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-article-element">&lt;article&gt;</b></a>Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</li>
-<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-section-element">&lt;section&gt;</b></a>Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.</li>
-<li><b><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element">&lt;time&gt;</b></a>Used for marking up times and dates.</li>
-<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element">&lt;aside&gt;</b></a>Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</li>
-<li><b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element">&lt;figure&gt;</b></a> and <b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element">&lt;figcaption&gt;</b></a>Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</li>
-<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element">&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b></li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-header-element" target="_blank">&lt;header&gt;</b></a>Introduction of "sectioning elements": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;.</li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element" target="_blank">&lt;footer&gt;</b></a>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element" target="_blank">&lt;nav&gt;</b></a>Section that contains the main navigation links (within the document or to other pages).</li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-article-element" target="_blank">&lt;article&gt;</b></a>Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-section-element" target="_blank">&lt;section&gt;</b></a>Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.</li>
+<li><b><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element" target="_blank">&lt;time&gt;</b></a>Used for marking up times and dates.</li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank">&lt;aside&gt;</b></a>Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</li>
+<li><b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element" target="_blank">&lt;figure&gt;</b></a> and <b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element">&lt;figcaption&gt;</b></a>Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</li>
+<li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank">&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b></li>
 </ul>
 
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
 
-Read also at the end of this section about the new \<main\> element .  This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">part of the HTML5 recommendation</a> and  an integral part of the HTML document structure.
+Read also at the end of this section about the new \<main\> element .  This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank">part of the HTML5 recommendation</a> and  an integral part of the HTML document structure.
 
 <h4>External resources:</h4>
 <ul>
-<li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/">Structural Semantics: The Importance Of HTML5 Sectioning Elements</a></li>
-<li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">New Structural Elements in HTML5</a></li>
+<li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/" target="_blank">Structural Semantics: The Importance Of HTML5 Sectioning Elements</a></li>
+<li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank">New Structural Elements in HTML5</a></li>
 </ul>
 <h3 id="ch1-3-3">1.3.3 Mixing All Elements Together: A Blog Example</h3>
 
 <h4>A blog example that uses the structural elements</h4>
 
-Let\'s study <a href="https://jsbin.com/bucokav/edit?html,output" >an example we put on JsBin</a> (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
+Let\'s study <a href="https://jsbin.com/bucokav/edit?html,output" target="_blank">an example we put on JsBin</a> (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the \"Bins/create milestone\" menu, share your version with others in the forums, etc. Don\'t  hesitate to play with the source code, you will never break anything).
 
 <h4>Use a &lt;header&gt; at the top of the blog</h4>
 
@@ -1849,7 +1849,7 @@ After the long \<section\> element that contains all the blog articles display
 ...
 ```
 
-We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at <a href="https://jsbin.com/bucokav/edit?html,output">the code of the online example</a>.
+We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at <a href="https://jsbin.com/bucokav/edit?html,output" target="_blank">the code of the online example</a>.
 
 <h4>Here is the CSS for the &lt;aside&gt; element:</h4>
 
@@ -2017,14 +2017,14 @@ Also note that we used in that example a \<footer\> element in the blog post.
 
 The new elements have been primarily designed to better structure the code of HTML pages such as those generated by blog or CMS software, however do not forget that they add new semantics and will be taken into account by :
 <ul>
-<li>Browsers natively or browsers' extensions, i.e. for automatically generating a table of contents, an outline view of the document, for applying default CSS rules to these elements, etc. See for example the <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx extension</a> (Chrome extension). More on that in the next section of the course.</li>
-<li>Text to speech: <a href="https://www.w3.org/WAI/perspective-videos/speech/"></a></li>
+<li>Browsers natively or browsers' extensions, i.e. for automatically generating a table of contents, an outline view of the document, for applying default CSS rules to these elements, etc. See for example the <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" target="_blank">table-of-contents-crx extension</a> (Chrome extension). More on that in the next section of the course.</li>
+<li>Text to speech: <a href="https://www.w3.org/WAI/perspective-videos/speech/" target="_blank"></a></li>
 <li>Web crawlers, etc.</li>
 </ul>
 
 You can use \<div\> elements in all cases where the proposed structural elements do not fit your needs: for defining some content that should be styled, for example.
 
-This chart from the <a href="https://html5doctor.com/">HTML5 Doctor Web site</a> may help you decide whether or not to use a &lt;div&gt;:
+This chart from the <a href="https://html5doctor.com/" target="_blank">HTML5 Doctor Web site</a> may help you decide whether or not to use a &lt;div&gt;:
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 24. chart from html5 doctor web site (43) ---------------------------->
@@ -2069,7 +2069,7 @@ These headings define a hierarchy, as shown by the default sizes given by the br
 
 In the above outline, note that we have only used H1\... H6 elements, without any new HTML5 structural elements such as \<section\> or \<article\>.
 
-Here is a list of browser extensions you can try, for visualizing the outline of a document: <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> Chrome extension or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">this Firefox extension</a>.
+Here is a list of browser extensions you can try, for visualizing the outline of a document: <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" target="_blank">table-of-contents-crx</a> Chrome extension or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" target="_blank">this Firefox extension</a>.
 
 <h4>Using headings and new sectioning elements (section, article, aside, nav)</h4>
 
@@ -2323,7 +2323,7 @@ Here we propose a small piece of JavaScript code you can use in your documents 
 
 This example is a simple document, with a hyperlink that, once clicked, displays the table of contents in an \<aside\> element in the main \<section\>. Just look at the source code and copy/paste the link into your own HTML documents.
 
-<a href="https://jsbin.com/tolagec/1/edit?html,css,js,output">Online example at JsBin</a>.
+<a href="https://jsbin.com/tolagec/1/edit?html,css,js,output" target="_blank">Online example at JsBin</a>.
 
 <h4>Extract of source code:</h4>
 
@@ -2373,7 +2373,7 @@ If you use \<nav\> / \<header\> / \<footer\> etc. to structure your docume
 
 We have seen the different sectioning elements of HTML5, so why didn\'t we talk about the \<main\> element earlier in this part of the course? Shouldn\'t  \<main\>\...\</main\> be used in place of  \<div class=\"main\"\>\...\</div\>?
 
-The \<main\> element is supported by major modern browsers (see the corresponding <a hre="https://caniuse.com/#feat=mdn-html_elements_main">[support table]</a> on CanIUse and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main#Browser_compatibility">MDN\'s brower compatibility page</a>.
+The \<main\> element is supported by major modern browsers (see the corresponding <a href="https://caniuse.com/#feat=mdn-html_elements_main" target="_blank">support table</a> on CanIUse and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main#Browser_compatibility" target="_blank">MDN\'s brower compatibility page</a>.
 
 This element is subject to some constraints:
 
@@ -2381,7 +2381,7 @@ This element is subject to some constraints:
 
 -   It must not be a descendant of an \<article\>,\<aside\>, \<footer\>, \<header\>, or \<nav\> element.
 
-And finally, here are some examples (from <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">the HTML5 specification</a>) that mix the \<main\> element with the other sectioning elements already seen in the course:
+And finally, here are some examples (from <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank">the HTML5 specification</a>) that mix the \<main\> element with the other sectioning elements already seen in the course:
 
 ```
 1.  <!-- other content -->
@@ -2471,13 +2471,13 @@ Here is another example (also from the specification). Here the \<main\> eleme
 
 For accessibility matters, a best practice is to split your page content into \"regions\" defined by the five 5 elements (aside, footer, header, main and nav) learned this week. 
 
-We recommend this article written by Steve Faulkner: \"[Easy content organisation with HTML5](https://www.paciellogroup.com/blog/2015/09/easy-content-organisation-with-html5/)\" (24 September 2015). Steve explains in details how to organize an HTML document into \"regions\" based on the semantic markup elements we have seen so far during Module 1 of this course.
+We recommend this article written by Steve Faulkner: \"<a href="https://www.paciellogroup.com/blog/2015/09/easy-content-organisation-with-html5/" target="_blank">Easy content organisation with HTML5</a>" (24 September 2015). Steve explains in details how to organize an HTML document into \"regions\" based on the semantic markup elements we have seen so far during Module 1 of this course.
 
 <h4>External resources:</h4>
 <ul>
-<li>This <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">document</a> has been written by the W3C HTML5 Working Group, which details the different use-cases for this element.</li>
-<li><a href="https://www.w3.org/html/wg/wiki/User:Sfaulkne/main-usecases">Rationale and use cases for standardizing a 'main content' HTML feature</a>.</li>
-<li>On MDN's Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">main element.</a></li>
+<li>This <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank">document</a> has been written by the W3C HTML5 Working Group, which details the different use-cases for this element.</li>
+<li><a href="https://www.w3.org/html/wg/wiki/User:Sfaulkne/main-usecases" target="_blank">Rationale and use cases for standardizing a 'main content' HTML feature</a>.</li>
+<li>On MDN's Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank">main element.</a></li>
 </ul>
 
 <h3 id="ch1-3-9">1.3.9 The Blog Example, Applying Best Practices</h3>
@@ -2490,7 +2490,7 @@ Let\'s go back to our blog example and see what can be improved:
 </ul>
 <br/>
 
-<a href="https://jsbin.com/heboke/edit?html,output">The blog example is online at JsBin</a>:  let\'s see below what the Google Chrome HTML5 Outliner extension showed.
+<a href="https://jsbin.com/heboke/edit?html,output" target="_blank">The blog example is online at JsBin</a>:  let\'s see below what the Google Chrome HTML5 Outliner extension showed.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------- 32. image of the blog toc, show an untitled nav entry (52) ------------------->
@@ -2553,11 +2553,11 @@ We need to add a heading in the \<nav\> element. This will both fix the outlin
 
 A common remark from Web designers is: \"we do not want a heading content displayed systematically after a \<nav\>, or an \<aside\> element\...\"
 
-<b>BEST PRACTICE #1:</b> In order to NOT display the heading content on screen the recommended technique is described in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/">this article by Steve Faulkner</a>. Do not use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies.
+<b>BEST PRACTICE #1:</b> In order to NOT display the heading content on screen the recommended technique is described in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/" target="_blank">this article by Steve Faulkner</a>. Do not use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies.
 
-As an illustration of the recommended technique, see <a href="https://jsbin.com/savabo/edit?html,output">this JSBin version of the blog example</a> that hides the \<h2\>Navigation menu\</h2\> from the \<nav\>\...\</nav\> element, using the CSS technique explained in the above link.
+As an illustration of the recommended technique, see <a href="https://jsbin.com/savabo/edit?html,output" target="_blank">this JSBin version of the blog example</a> that hides the \<h2\>Navigation menu\</h2\> from the \<nav\>\...\</nav\> element, using the CSS technique explained in the above link.
 
-<b>BEST PRACTICE #2:</b> It is not advised to include interactive content (links, controls etc) that is hidden offscreen it is in fact a violation of the <a href="https://www.w3.org/TR/WCAG20/)">W3C WCAG 2.0 Guidelines</a>. All interactive content must have a visible focus indicator (and be on screen when focused).
+<b>BEST PRACTICE #2:</b> It is not advised to include interactive content (links, controls etc) that is hidden offscreen it is in fact a violation of the <a href="https://www.w3.org/TR/WCAG20/)" target="_blank">W3C WCAG 2.0 Guidelines</a>. All interactive content must have a visible focus indicator (and be on screen when focused).
 
 <h4>Embedding a table of contents and adding a &lt;main&gt; element</h4>
 
@@ -2590,9 +2590,9 @@ We also added a \<main\> element to identify the main content of the page comp
 
 <h4>Use H1 as top level headings only, use H2...H6 in sectioning content</h4>
 
-As explained in the article <a href="https://www.paciellogroup.com/blog/2013/10/html5-document-outline/">HTML5 Document Outline</a> and in <a href="https://www.w3.org/wiki/HTML/Usage/Headings">the W3C HTML Wiki</a>, it is risky to use nested H1s, as browsers do not correctly implement the \"outline algorithm\".
+As explained in the article <a href="https://www.paciellogroup.com/blog/2013/10/html5-document-outline/" target="_blank">HTML5 Document Outline</a> and in <a href="https://www.w3.org/wiki/HTML/Usage/Headings">the W3C HTML Wiki</a>, it is risky to use nested H1s, as browsers do not correctly implement the \"outline algorithm\".
 
-The blog example uses nested H1's. If you check it with <a href="https://validator.w3.org/nu">the W3C conformance checker</a>, it issues a warning: \"*Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).*\"
+The blog example uses nested H1's. If you check it with <a href="https://validator.w3.org/nu" target="_blank">the W3C conformance checker</a>, it issues a warning: \"*Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).*\"
 
 While this is just a warning, we do prefer to use H1s only as top level elements, and replace the H1s we had after \<section\>, \<article\>, \<nav\> and \<aside\> elements respectively by a H2s and H3s. 
 
@@ -2609,7 +2609,7 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 
 <h4>Finally, the fixed example</h4>
 <ul>
-<li><a href="https://jsbin.com/heboke/edit?html,output">Check it online with this JsBin</a>.</li>
+<li><a href="https://jsbin.com/heboke/edit?html,output" target="_blank">Check it online with this JsBin</a>.</li>
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
@@ -2665,7 +2665,7 @@ You can look at the complete CSS code in the interactive example below (click on
 &nbsp;
 <br/>
 
-<a href="https://jsbin.com/dufapo/edit?html,css,output">Also available online at JSBin</a>.
+<a href="https://jsbin.com/dufapo/edit?html,css,output" target="_blank">Also available online at JSBin</a>.
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 36.  (xx) ------------------->
@@ -2749,10 +2749,10 @@ This example also uses all the structuring elements we saw: main, article, secti
 
 <h4>External resources</h4>
 <ul>
-<li>An article on CSS Tricks: <a href="https://css-tricks.com/all-about-floats/">All about floats</a></li>
-<li>Old but good article on "A List Apart" (ALA): <a href="https://alistapart.com/article/css-floats-101">CSS Floats 101</a></li>
-<li>Another article on Lifewire:<a href="https://www.lifewire.com/understanding-css-float-3466205"> Understanding CSS float</a></li>
-<li>On MDN\'s Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">float CSS property</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear">clear CSS property</a></li>
+<li>An article on CSS Tricks: <a href="https://css-tricks.com/all-about-floats/" target="_blank">All about floats</a></li>
+<li>Old but good article on "A List Apart" (ALA): <a href="https://alistapart.com/article/css-floats-101" target="_blank">CSS Floats 101</a></li>
+<li>Another article on Lifewire:<a href="https://www.lifewire.com/understanding-css-float-3466205" target="_blank"> Understanding CSS float</a></li>
+<li>On MDN\'s Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank">float CSS property</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear" target="_blank">clear CSS property</a></li>
 </ul>
 
 <h3 id="ch1-4-1">1.4.1 The &lt;details&gt; and &lt;summary&gt; Elements</h3>
@@ -2817,7 +2817,7 @@ And here is what is displayed after clicking on the small arrow-shaped icon to t
 
 The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> element. By clicking on the icon at the left of the summary, the content of the \<details\> value is displayed/hidden.
 
-\<details\> blocks can be embedded inside one another, like in this <a href="https://jsbin.com/dejagi/edit?html,css,output">example</a>:
+\<details\> blocks can be embedded inside one another, like in this <a href="https://jsbin.com/dejagi/edit?html,css,output" target="_blank">example</a>:
 
 <b>Step 1: all folded:</b>
 
@@ -2878,7 +2878,7 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> elem
 
 There are CSS pseudo classes to style this icon when it is in the open or closed state. Support for these is still incomplete as of June 2020 (works on Google Chrome, Opera, Safari, not in FF).
 
-Example1 see <a href="https://jsbin.com/tomehim/1/edit?html,css,output">online example</a>:
+Example1 see <a href="https://jsbin.com/tomehim/1/edit?html,css,output" target="_blank">online example</a>:
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 46.  (xx) ------------------------------->
@@ -2922,7 +2922,7 @@ Once opened, the selector details[open] can style the icon when <details> is
 
 It is also possible to change the icon itself using the CSS pseudo class :after
 
-<b>Example 2 (see it <a href="https://jsbin.com/sajusop/edit?html,css,output">online</a>):</b>
+<b>Example 2 (see it <a href="https://jsbin.com/sajusop/edit?html,css,output" target="_blank">online</a>):</b>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 43.  (xx) ------------------------------->
@@ -2973,7 +2973,7 @@ Use a \"-\" shaped icon, white, when details are displayed:
 
 <h4>Current browser support</h4>
 <ul>
-<li>On CanIUse: <a href="https://caniuse.com/#feat=details">compatibility table for details and summary elements</a></li>
+<li>On CanIUse: <a href="https://caniuse.com/#feat=details" target="_blank">compatibility table for details and summary elements</a></li>
 </ul>
 
 <h3 id="ch1-4-2">1.4.2 The &lt;time&gt; and &lt;mark&gt; Elements</h3>
@@ -3081,11 +3081,11 @@ Used without attributes, the value between the opening \<time\> and closing \
 
 <h4>External resources:</h4>
 <ul>
-<li>From the specification: <https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element></li>
-<li>On MDN\'s Web Docs: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time></li>
+<li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element">From the specification:</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">On MDN's Web Docs:></a></li>
 <li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility">table</a> for <time></li>
-<li>Old but interesting article by Bruce Lawson: <https://www.brucelawson.co.uk/2012/best-of-time/></li>
-<li>A CSS Tricks' article: "<a href="(https://css-tricks.com/time-element/">[The 'time' element]</a></li>
+<li><a href="https://www.brucelawson.co.uk/2012/best-of-time">Old but interesting article by Bruce Lawson:</a></li>
+<li>A CSS Tricks' article: "<a href="(https://css-tricks.com/time-element/">The 'time' element</a></li>
 </ul>
 
 <h4>The <mark> element</h4>
@@ -13006,17 +13006,17 @@ The third parameter is not important for now, just set it to false, or simply d
 
 When you create an EventListener and attach it to an element,  an event object will be passed as a parameter to your callback, just like this:
 ```
-1.  element.addEventListener('click', function(**event**) {
-2.     **// now you can use the event object inside the callback**
+1.  element.addEventListener('click', function(<b>event</b>) {
+2.     <b>// now you can use the event object inside the callback</b>
 3.  }, false);
 ```
 Depending on the type of event you are listening to, we will use different properties from the event object in order to get useful information like: "what keys have been pressed down?\", \"what is the position of the mouse cursor?\", \"which mouse button is down?\", etc.
 
-Let\'s see next how to deal with the keyboard and the mouse. In the [W3Cx HTML5 Apps and Games](https://www.edx.org/course/html5-apps-and-games) course, we look at additional APIs such as [the gamePad API](https://www.w3.org/TR/gamepad/) for using USB or wireless gamepads/joysticks/game controllers.
+Let\'s see next how to deal with the keyboard and the mouse. In the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games</a>, we look at additional APIs such as <a href="https://www.w3.org/TR/gamepad/">the gamePad API</a> for using USB or wireless gamepads/joysticks/game controllers.
 
 <h4>Source code for the knowledge check 4.3.1</h4>
 
-<a href="http://jsbin.com/korele/edit">Online example on JS Bin</a>
+<a href="http://jsbin.com/korele/edit" target="_blank">Online example on JS Bin</a>
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
