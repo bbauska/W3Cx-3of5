@@ -1016,7 +1016,7 @@ footer {
    alt="Picture of eisher."
    width="25%" />
 </p>
-<p>It may not be clear whether a &lt;section&gt; may contain one or several &lt;article&gt; elements or if an &lt;article&gt; may contain one or several &lt;section\&gt;elements.</p>
+<p>It may not be clear whether a &lt;section&gt; may contain one or several &lt;article&gt; elements or if an &lt;article&gt; may contain one or several &lt;section&gt; elements.</p>
 
 <p>The &lt;article&gt; element was designed for stand-alone parts of a document that could eventually be syndicated in RSS streams.</p>
 
@@ -8420,7 +8420,7 @@ But let\'s start with a basic example!
 
 <h4>Example #1: drawing an image in a canvas</h4>
 
-Source code:
+<h4>Source code:</h4>
 ```
 1.  <!DOCTYPE HTML>
 2.  <html lang="en">
@@ -8453,7 +8453,7 @@ Source code:
 29. </html>
 ```
 
-**Explanations:**
+<b>Explanations:</b>
 
 1.  We have to **create a JavaScript Image object** (*line 10*),
 
@@ -8471,7 +8471,7 @@ Source code:
 
 -   drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh): for drawing sub-images, (sx, sy, sw, sh) define the source rectangle, while dx, dy, dw, sh define the target rectangle. If these rectangles don\'t have the same size, the source sub-image is resized.
 
-See picture below :
+<h5>See picture below:</h5>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 133. (xxx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -8487,6 +8487,7 @@ See picture below :
 This example illustrates the use of the different variants of the drawImage method:
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE HTML>
 <html lang="en">
@@ -8522,7 +8523,9 @@ imageObj.src = "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png";
 </body>
 </html>
 ```
+
 <h4>CSS</h4>
+
 ```
 #myCanvas {
 border:1px solid black;
@@ -8530,6 +8533,7 @@ border:1px solid black;
 ```
 
 <h4>Source code extract:</h4>
+
 ```
 1.  var imageObj = new Image();
 2.   
@@ -8559,7 +8563,7 @@ border:1px solid black;
 
 Sometimes, you may want to draw an image that is already declared in the HTML document as an <img src=\"\...\"\> element. Remember that when you add an \<img\> in the document, the browser starts downloading it in background. 
 
-You could try drawing it using some code like this:
+<h5>You could try drawing it using some code like this:</h5>
 ```
 1.  <body>
 2.  <canvas id="myCanvas" width="512" height="512"></canvas>
@@ -8579,8 +8583,7 @@ Although you will find many examples on the Web that do it this way, they wil
 
 If you try to draw an image that is not loaded or partially loaded, you will have unexpected results!
 
-**Best practice: ***only draw an image that is fully loaded, use*\
-*the onload callback!*
+<p><b>Best practice:</b> only draw an image that is fully loaded, use the onload callback!</p>
 
 The right way to do this is shown in this online example, that starts drawing only from the onload callback function:
 
@@ -8903,9 +8906,15 @@ Your browser does not support the canvas tag.</canvas>
 
 On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawing all these rectangles:
 
-
-********************************** image ***********************************
-![Image of the devtool console that shows random time values. The average time elapsed is around 4s](./images/image134.jpeg){width="6.5in" height="1.3833333333333333in"}
+<!------------------------------------------------------------------------------------------------>
+<!----- 134. mage of the devtool console that shows random time values.  Avg time is 4s. (xxx) --->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image134.jpeg?raw=true"
+   alt="Image of the devtool console that shows random time values.  Avg time is 4s."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>Path mode</h4>
 
@@ -8971,10 +8980,17 @@ The call to ctx.stroke() (*line 9*) or to its sister method ctx.fill() will 
 
 And here is what the timer gives: a slightly faster execution time. Changing 1000 to 100,000 will give even larger differences.
 
-**Path mode is faster than immediate mode! We have now an average time of 3.1ms**
+<b>Path mode is faster than immediate mode! We have now an average time of 3.1ms</b>
 
-********************************** image ***********************************
-![Image of the devtool console that shows random time values. The average time elapsed is around 3.1ms](./images/image135.jpeg){width="6.5in" height="1.5576388888888888in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 135. mage of the devtool console that shows random time values.  Avg time is 3.1ms. (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image135.jpeg?raw=true"
+   alt="Image of the devtool console that shows random time values.  Avg time is 3.1ms."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>Reset the path mode buffer</h4>
 
@@ -9038,10 +9054,17 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 
 <h4>Drawing a grid</h4>
 
-See the example below:
+<h5>See the example below:</h5>
 
-********************************** image ***********************************
-![](./images/image136.png){width="6.5in" height="2.0722222222222224in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 136.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image136.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9104,9 +9127,17 @@ In this example, the entire grid is drawn during the execution of the last line 
 
 <h4>Mixing filled and wireframe shapes (and immediate and path modes)</h4>
 
-Try this:
-********************************** image ***********************************
-![](./images/image137.png){width="6.5in" height="2.0722222222222224in"}
+<h5>Try this:</h5>
+
+<!------------------------------------------------------------------------------------------------>
+<!--- 137.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image137.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9158,7 +9189,15 @@ This example shows that filled and wireframe shapes should be drawn differently 
 
 Try this:
 ********************************** image ***********************************
-![](./images/image138.png){width="6.5in" height="2.0861111111111112in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 138.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image138.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>Code source:</h4>
 ```
@@ -9188,7 +9227,15 @@ In this last example, we simply called the moveTo() method between each part o
 
 Let\'s look at the drawing from the last example of the previous section:
 ********************************** image ***********************************
-![](./images/image139.png){width="6.5in" height="2.0569444444444445in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 139.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image139.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9229,7 +9276,15 @@ In this example, we will draw the two parts of the path with different styles: t
 What we will try first is to call stroke() after the first half of the path, then call fill() after the second half of the path:
 
 ********************************** image ***********************************
-![](./images/image140.png){width="6.5in" height="2.0631944444444446in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 140.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image140.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9298,12 +9353,21 @@ What happened is:
 2.  Then, the call to fill() at line 20 has drawn the whole path again, but in pink and in filled mode. But this time the path corresponds to lines 5-7 plus lines 14-16 that make up the second shape on the right.\
     *So the path that has been drawn this time is made of both of the triangles.*
 
-**Important**: If you do not want to draw parts of the same path several times, you need to draw two different paths,\
+<b>Important</b>: If you do not want to draw parts of the same path several times, you need to draw two different paths,\
 using the ctx.beginPath() method, as shown in the next example.
 
-<h4> Now, the right way!
+<h4> Now, the right way!</h4>
+
 ********************************** image ***********************************
-![](./images/image141.png){width="6.5in" height="2.0701388888888888in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 141.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image141.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9374,7 +9438,7 @@ Sometimes, it might be useful to draw just one line.
 
 It\'s interesting to see how we can write a single \"draw line\" function that takes the start and end coordinates, the color, the line width, etc., and give the impression of being done in \"immediate\" mode.
 
-Here is the code for this \"utility\" function that you may find useful:
+<h5>Here is the code for this "utility" function that you may find useful:</h5>
 ```
 1.  function drawLine(x1, y1, x2, y2, color, width) {
 2.      ctx.save();
@@ -9399,17 +9463,22 @@ Here is the code for this \"utility\" function that you may find useful:
 ```
 
 Notice the save/restore of the context at the beginning/end of the function. This is REALLY a best practice to avoid affecting other functions\' context.
+<ul>
+<li><i>Line 13</i> starts a new path so that the function will only draw what it is meant to draw: a single line.</li>
+<li><i>Lines 15-17</i> move the "pen" at (x1, y1) then draw a line to (x2, y2), and the stroke at <i>line 17</i> makes it appear on the screen.</li>
+</ul>
 
--   *Line 13* starts a new path so that the function will only draw what it is meant to draw: a single line.
+<h4>Here is an example:</h4>
 
-```
-
-```
--   *Lines 15-17* move the \"pen\" at (x1, y1) then draw a line to (x2, y2), and the stroke at *line 17* makes it appear on the screen.
-
-Here is an example:
-********************************** image ***********************************
-![](./images/image142.png){width="6.5in" height="2.0569444444444445in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 142.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image142.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9447,7 +9516,7 @@ ctx.restore();
 </html>
 ```
 
-Source code extract:
+<h4>Source code extract:</h4>
 
 ```
 1.  drawLine(0, 0, 100, 100);
@@ -9517,8 +9586,15 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 
 <h4>Example #2</h4>
 
-********************************** image ***********************************
-![](./images/image143.png){width="6.5in" height="2.0569444444444445in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 143.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image143.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9588,8 +9664,15 @@ This [article on drawing lines and arcs with arrow heads](http://www.dbp-consul
 
 Screenshot from a demo available on the above Web site:
 
-********************************** image ***********************************
-![](./images/image144.png){width="2.0in" height="2.026147200349956in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 144.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image144.png?raw=true"
+   alt="."
+   width="20%">
+&nbsp;
+<br/>
 
 In a later part of the course dedicated to curve drawing in a canvas, we will also show how to draw curved arrows, with very simple code (much simpler than the one used for drawing the clock\'s hands above).
 
@@ -9597,9 +9680,16 @@ In a later part of the course dedicated to curve drawing in a canvas, we will al
 
 The ctx.closePath() method indicates that we would like a closed path: draw from the last point to the first.
 
-Try this:
-********************************** image ***********************************
-![](./images/image145.png){width="6.5in" height="2.0840277777777776in"}
+<h5>Try this:</h5>
+<!------------------------------------------------------------------------------------------------>
+<!--- 145.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image145.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -9629,36 +9719,24 @@ ctx.stroke();
 ```
 
 Source code:
-
+```
 1.  var canvas=document.getElementById(\'myCanvas\');
-
 2.  var ctx=canvas.getContext(\'2d\');
-
 3.  
-
 4.  // Path made of three points (defines two lines)
-
 5.  ctx.moveTo(20,20);
-
 6.  ctx.lineTo(100, 100);
-
 7.  ctx.lineTo(100,0);
-
 8.  
-
 9.  // Close the path, try commenting this line
-
 10. ctx.closePath();
-
 11. 
-
 12. // indicate stroke color + draw first part of the path
-
 13. ctx.strokeStyle = \"blue\";
-
 14. ctx.stroke();
+```
 
-Explanations:
+<h5>Explanations:</h5>
 
 -   *Lines 5-7* corresponds to a path made of two consecutive lines. If we just call stroke() after that, two lines will be drawn on the canvas.
 
@@ -9672,105 +9750,110 @@ The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is usefu
 
 *Note*: the figures in this page have been borrowed from the [HTML5 Canvas Tutorials](https://www.html5canvastutorials.com/tutorials/html5-canvas-arcs/) Web site.
 
-![HTML5 Canvas Arc Diagram: drawing circle, coordinate system](./images/image146.jpeg){width="5.1875in" height="3.3020833333333335in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------- 146. html5 canvas arc diagram: drawing circle coordinate system (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image146.jpeg?raw=true"
+   alt="HTML5 canvas arc diagram: drawing circle, coordinate system."
+   width="50%">
+&nbsp;
+<br/>
 
-### Typical usage
+<h4>Typical usage</h4>
 
 Typical usage for drawing an arc/circle/ellipse is:
-
+```
 1.  ctx.arc(centerX, centerY, radius, startAngle, endAngle); // clockwise drawing
-
 2.  
-
 3.  ctx.arc(centerX, centerY, radius, startAngle, endAngle, **false**);
+```
 
 The angles are in radians (between 0 and 2\*Math.PI). The arc is drawn clockwise. Beware that this may not seem natural if you\'re used to the trigonometric order.
 
 The last parameter is optional and has a value of false by default. If true, instead of drawing an arc of circle that corresponds to the parameters, *it will draw its complementary*. See the examples below to see the difference.
 
-### Examples
+<h4>Examples</h4>
 
 <h4> Example #1: drawing an arc with radius = 50, starting angle = 0, end angle = PI/2
 
-Try this example:
-
-![](./images/image147.png){width="6.5in" height="2.0430555555555556in"}
-
-\<!DOCTYPE html\>
-
-\<html lang=\"en\"\>
-
-\<head\>
-
-\<meta charset=\"utf-8\"/\>
-
-\<title\>Drawing an arc\</title\>
-
-\</head\>
-
-\<body\>
-
-\<canvas id=\"myCanvas\" width=\"500\"\>Your browser does not support the canvas tag.\</canvas\>
-
-\<script type=\"text/javascript\"\>
-
+<h5>Try this example:</h5>
+<!------------------------------------------------------------------------------------------------>
+<!--- 147.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image147.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
+```
+<!DOCTYPE html\>
+<html lang=\"en\"\>
+<head\>
+<meta charset=\"utf-8\"/\>
+<title\>Drawing an arc\</title\>
+</head\>
+<body\>
+<canvas id=\"myCanvas\" width=\"500\"\>Your browser does not support the canvas tag.\</canvas\>
+<script type=\"text/javascript\"\>
 var canvas=document.getElementById(\'myCanvas\');
-
 var ctx=canvas.getContext(\'2d\');
-
 ctx.beginPath();
-
 // try to set the last parameter to true or remove it
-
 ctx.arc(100,75,50,0,Math.PI/2);
-
 ctx.lineWidth=10;
-
 ctx.stroke();
+</script\>
+</body\>
+</html\>
+```
 
-\</script\>
-
-\</body\>
-
-\</html\>
-
-Code source extract:
-
+<h4>Code source extract:</h4>
+```
 1.  ctx.beginPath();
-
 2.  // we ommited the last parameter
-
 3.  ctx.arc(100, 75, 50, 0, Math.PI/2);
-
 4.   
-
 5.  ctx.lineWidth = 10;
-
 6.  ctx.stroke();
+```
 
 And if we change the last parameter of the arc function call (*line 3*) to true (we omitted it, so it took a value of false by default) :
 
+```
 1.  ctx.beginPath();
-
 2.  // we omitted the last parameter
-
 3.  ctx.arc(100, 75, 50, 0, Math.PI/2, **true**);
-
 4.   
-
 5.  ctx.lineWidth = 10;
-
 6.  ctx.stroke();
+```
 
 Then, the result is the \"complementary\" of the previous arc:
+<!------------------------------------------------------------------------------------------------>
+<!--- 148.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image148.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
-![](./images/image148.png){width="6.5in" height="2.0569444444444445in"}
+<h4> Example #2: drawing a Full circle (filled + outlined)</h4>
 
-<h4> Example #2: drawing a Full circle (filled + outlined)
+<!------------------------------------------------------------------------------------------------>
+<!--- 149.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image149.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
-![](./images/image149.png){width="6.5in" height="2.0701388888888888in"}
-
-Source code:
+<h4>Source code:</h4>
 ```
 1.  var canvas = document.getElementById("myCanvas");
 2.  var ctx = canvas.getContext("2d");
@@ -9811,7 +9894,7 @@ Notice that we called ctx.arc() only once! And drew it twice, with different s
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image150.jpeg?raw=true"
-   alt="image150.jpeg - half circle"
+   alt="image150.jpeg - half circle."
    width="25%">
 &nbsp;
 <br/>
@@ -9834,29 +9917,34 @@ There is another method called ctx.arcTo(x1, y1, x2, y2, radius), which is a b
 
 In fact, the arcTo(\...) method draws an arc of a circle depending on some tangents. Let\'s look at these pictures for a better understanding:
 
-![There are three diagrams all drawn on canvas dynamically. The arcTo really uses arcTo() with reduced alpha, and the rest of the diagram is calculated in JavaScript and drawn with lineTo and arc. ](./images/image152.jpeg){width="6.5in" height="1.8243055555555556in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 152.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image152.jpeg?raw=true"
+   alt="There are three (3) diagrams, all drawn on canvas dynamically. The arcTo really uses carTo() with reduced alpha, and the rest of the diagram is calculated in JavaScript and drawn with lineTo and arc."
+   width="65%">
+&nbsp;
+<br/>
 
-### Typical use
+<h4>Typical use</h4>
 
+```
 1.  ctx.moveTo(x0, y0);
-
 2.  
-
 3.  ctx.arcTo(x1, y1, x2, y2, radius);
+```
 
 This method can be confusing. It was defined mainly for drawing rounded shapes like rounded rectangles. We used an excerpt here from the excellent [tutorial on the arcTo(\...) method](http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html).
 
-It works like this:
-
+<h4>It works like this:</h4>
+```
 1.  Draw an imaginary line through (x0,y0) and (x1,y1), draw another imaginary line through (x1,y1) and (x2,y2),
-
 2.  Take an imaginary circle of radius r, and slide it up between the two lines until it just touches both lines. The two points at which the circle touches the lines are called the tangent points.
-
 3.  arcTo(x1, y1, x2, y2, r) will draw a line from the current point (x0,y0) to the first tangent point on the line from (x0,y0) to (x1,y1),
-
 4.  It will also draw an arc from that tangent point to the other tangent point on the line from (x1,y1) to (x2,y2) along the circumference of the circle.
-
 5.  Finally, it adds the tangent point where the arc ends up, on the line from (x1,y1) to (x2,y2) to the path as the new current point on the path.
+```
 
 <h4>Examples</h4>
 
@@ -9908,7 +9996,7 @@ context.stroke();
 
 <h4>Example #2: draw A rounded rectangle</h4>
 
-Try this:
+<h5>Try this:</h5>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 154. (xxx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -10906,125 +10994,87 @@ border: 1px solid black;
 
 Just as we used fillStyle and fillRect for drawing rectangles filled with a gradient, we can also use strokeStyle and strokeRect in order to draw wireframed rectangles. In the next example, which is just a variation of the previous one, we have used the lineWidth property to set the outline of the rectangles at 5 pixels:
 
-![](./images/image171.png){width="6.5in" height="2.040277777777778in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 171.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image171.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
-JS
-
+<h4>JS</h4>
+```
 var canvas, ctx, grdFrenchFlag;
-
 function init() {
-
 // Good practice 1: set global vars canvas, ctx, gradients, etc here
-
 canvas = document.querySelector('#myCanvas1');
-
 ctx = canvas.getContext('2d');
-
 // The gradient we create is also a global variable, we
-
 // will be able to reuse it for drawing different shapes
-
 // in different functions
-
 grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
-
 // Try adding colors with first parameter between 0 and 1
-
 grdFrenchFlag.addColorStop(0, "blue");
-
 grdFrenchFlag.addColorStop(0.5, "white");
-
 grdFrenchFlag.addColorStop(1, "red");
-
 drawCheckboard(5);
-
 }
-
 // n = number of cells per row/column
-
 function drawCheckboard(n) {
-
 ctx.strokeStyle = grdFrenchFlag;
-
 ctx.lineWidth=10;
-
 var l = canvas.width;
-
 var h = canvas.height;
-
 var cellWidth = l / n;
-
 var cellHeight = h / n;
-
 for(i = 0; i < n; i++) {
-
 for(j = i % 2; j < n; j+=2) {
-
 ctx.strokeRect(cellWidth*(i), cellHeight*j, cellWidth, cellHeight);
-
 }
-
 }
+```
 
-HTML
-
+<h4>HTML</h4>
+```
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <meta charset="utf-8">
-
 <title>Drawing outlined shapes with gradients - Example #3</title>
-
 <style>
-
 #myCanvas1 {
-
 border: 1px solid black;
-
 }
-
 </style>
-
 </head>
-
 <body onload="init();">
-
 <canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
-
 </body>
-
 </html>
+```
 
-Extract from source code:
-
+<h4>Extract from source code:</h4>
+```
 1.  function drawCheckboard(n) {
-
 2.      **ctx.strokeStyle = grdFrenchFlag;**
-
 3.  **    ctx.lineWidth=10;**
-
 4.      ...
-
 5.      for(i = 0; i < n; i++) {
-
 6.          for(j = i % 2; j < n; j++) {
-
 7.              ctx.**stroke**Rect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
-
 8.          }
-
 9.      }
-
 10. }
+```
 
 <h4>Example #4: what happens if we define a gradient smaller than the canvas?</h4>
 
 Let's go back to the very first example on this page - the one with the blue-white-red interpolated French flag. This time we will define a smaller gradient. Instead of going from (0, 0) to (300, 0), it will go from (100, 0) to (200, 0), while the canvas remains the same (width=300, height=200).
-
+```
 1.  grdFrenchFlag = ctx.createLinearGradient(**100, 0, 200, 0**);
+```
 
 Like in the first example we will draw a filled rectangle that is the same size as the canvas:
 
@@ -11122,6 +11172,7 @@ ctx.fillStyle = grdFrenchFlag;
 ctx.fillRect(0, 0, 300, 200);
 }
 ```
+
 <h4>HTML</h4>
 ```
 <!DOCTYPE html>
@@ -11163,32 +11214,32 @@ It suffices to create a new gradient before drawing each filled rectangle, and s
 
 <h4>JS</h4>
 ```
-> var canvas, ctx, grdFrenchFlag;
-> function init() {
-> // Good practice 1: set global vars canvas, ctx, gradients, etc here
-> canvas = document.querySelector('#myCanvas1');
-> ctx = canvas.getContext('2d');
-> drawCheckboard(5);
-> }
-> function setGradient(x, y, width, height) {
-> grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
-> grdFrenchFlag.addColorStop(0, "blue");
-> grdFrenchFlag.addColorStop(0.5, "white");
-> grdFrenchFlag.addColorStop(1, "red");
-> ctx.fillStyle = grdFrenchFlag;
-> }
-> // n = number of cells per row/column
-> function drawCheckboard(n) {
-> var l = canvas.width;
-> var h = canvas.height;
-> var cellWidth = l / n;
-> var cellHeight = h / n;
-> for(i = 0; i < n; i+=2) {
-> for(j = 0; j < n; j++) {
-> var x = cellWidth*(i+j%2);
-> var y = cellHeight*j;
-> setGradient(x, y, x+cellWidth, y+cellHeight);
-> ctx.fillRect(x, y, cellWidth, cellHeight);
+var canvas, ctx, grdFrenchFlag;
+function init() {
+// Good practice 1: set global vars canvas, ctx, gradients, etc here
+canvas = document.querySelector('#myCanvas1');
+ctx = canvas.getContext('2d');
+drawCheckboard(5);
+}
+function setGradient(x, y, width, height) {
+grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
+grdFrenchFlag.addColorStop(0, "blue");
+grdFrenchFlag.addColorStop(0.5, "white");
+grdFrenchFlag.addColorStop(1, "red");
+ctx.fillStyle = grdFrenchFlag;
+}
+// n = number of cells per row/column
+function drawCheckboard(n) {
+var l = canvas.width;
+var h = canvas.height;
+var cellWidth = l / n;
+var cellHeight = h / n;
+for(i = 0; i < n; i+=2) {
+for(j = 0; j < n; j++) {
+var x = cellWidth*(i+j%2);
+var y = cellHeight*j;
+setGradient(x, y, x+cellWidth, y+cellHeight);
+ctx.fillRect(x, y, cellWidth, cellHeight);
 ```
 
 <h4>HTML</h4>
@@ -11210,33 +11261,32 @@ border: 1px solid black;
 </html>
 ```
 
-Extract from source code:
-
-> function setGradient(x, y, width, height) {
->     grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
->     grdFrenchFlag.addColorStop(0, "blue");
->     grdFrenchFlag.addColorStop(0.5, "white");
->     grdFrenchFlag.addColorStop(1, "red");
->     // set the new gradient to the current fillStyle
->     ctx.fillStyle = grdFrenchFlag;
-> }
->  
-> // n = number of cells per row/column
-> function drawCheckboard(n) {
->    var l = canvas.width;
->    var h = canvas.height;
->  
->    var cellWidth = l / n;
->    var cellHeight = h / n;
->    for(i = 0; i < n; i+=2) {
->      for(j = 0; j < n; j++) {
->         var x = cellWidth*(i+j%2);
->         var y = cellHeight*j;
->         setGradient(x, y, x+cellWidth, y+cellHeight);
->         ctx.fillRect(x, y, cellWidth, cellHeight);
->      }
->    }
-> }
+<h4>Extract from source code:</h4>
+```
+function setGradient(x, y, width, height) {
+    grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
+    grdFrenchFlag.addColorStop(0, "blue");
+    grdFrenchFlag.addColorStop(0.5, "white");
+    grdFrenchFlag.addColorStop(1, "red");
+    // set the new gradient to the current fillStyle
+    ctx.fillStyle = grdFrenchFlag;
+}
+ 
+// n = number of cells per row/column
+function drawCheckboard(n) {
+   var l = canvas.width;
+   var h = canvas.height;
+   var cellWidth = l / n;
+   var cellHeight = h / n;
+   for(i = 0; i < n; i+=2) {
+     for(j = 0; j < n; j++) {
+        var x = cellWidth*(i+j%2);
+        var y = cellHeight*j;
+        setGradient(x, y, x+cellWidth, y+cellHeight);
+        ctx.fillRect(x, y, cellWidth, cellHeight);
+     }
+   }
+}
 ```
 
 We wrote a function setGradient(startX, startY, endX, endY) that creates a gradient and set the fillStyle context property so that any filled shape drawn will have this gradient.
@@ -11248,8 +11298,15 @@ In the drawCheckBoard(\...) function we call it just before drawing rectangles
 Radial gradients are for creating gradients that propagate/interpolate colors along circles instead of propagating/interpolating along a virtual line, like linear gradients.
 
 Here is an example of a radial gradient that interpolates the color of the rainbow:
-
-![](./images/image175.png){width="6.5in" height="2.095138888888889in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 175.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image175.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>JS</h4>
 ```
@@ -11292,7 +11349,7 @@ Here is an example of a radial gradient that interpolates the color of the rainb
 > \</html\>
 ```
 
-The gradient is defined as follows:
+<h4>The gradient is defined as follows:</h4>
 
 ```
 1.  var grd = context.**createRadialGradient(150, 100, 30, 150, 100, 100);**
@@ -11309,20 +11366,34 @@ The gradient is defined as follows:
 The method from the context object createRadialGradient(cx1, cy1, radius1, cx2, cy2, radius2) takes as the first three parameters the \"starting\" circle of the gradient, and as the three last parameters, the \"ending circle\".
 
 In the above example, the gradients starts at a circle located at (150, 100), with a radius of 30, and propagates to a circle with the same center as the first (150, 100), but with a bigger radius of 100, as shown below:
-
-![radial gradient](./images/image176.jpeg){width="4.041666666666667in" height="2.8020833333333335in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 176.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image176.jpeg?raw=true"
+   alt="Radial gradient."
+   width="40%">
+&nbsp;
+<br/>
 
 We added color stops using a method similar to that used for linear gradients.
 
-### What happens if the circles are not located at the same place?
+<h4>What happens if the circles are not located at the same place?</h4>
 
 You get some nice effects; here we set the second circle\'s center 60 pixels to the right of the first circle\'s center (cx = 210 instead of 150):
 
 1.  grd = ctx.createRadialGradient(150, 100, 30, **210**, 100, 100);
 
-Here is the result:
-
-![](./images/image177.png){width="6.5in" height="2.0541666666666667in"}
+<h4>Here is the result:</h4>
+<!------------------------------------------------------------------------------------------------>
+<!--- 177.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image177.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>JS</h4>
 ```
@@ -11346,7 +11417,7 @@ ctx.fillRect(0, 0, 300, 200);
 }
 ```
 
-HTML
+<h4>HTML</h4>
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11432,9 +11503,17 @@ There are a few steps we have to take before doing this:
 Here we have two rectangles drawn using a pattern (an image that can be repeated along the X and Y axis). The first is a filled rectangle while the second is \"stroked\" with a lineWidth of 20 pixels:
 
 
-![](./images/image178.png){width="6.5in" height="2.0631944444444446in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 178.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image178.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
-JS
+<h4>JS</h4>
 ```
 var canvas, ctx, pattern1;
 function init() {
@@ -11472,21 +11551,22 @@ imageObj.src = \"https://mainline.i3s.unice.fr/mooc/pattern1.jpg\";
 }
 ```
 
-HTML
+<h4>HTML</h4>
 ```
-\<!DOCTYPE html\>
-\<html lang=\"en\"\>
-\<head\>
-\<meta charset=\"utf-8\"\>
-\<title\>Drawing two rectangles with a pattern - Example #1\</title\>
-\</head\>
-\<body onload=\"init();\"\>
-\<canvas id=\"myCanvas\" width=\"500\" height=\"400\"\>
-Your browser does not support the canvas tag. \</canvas\>
-\</body\>
-\</html\>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Drawing two rectangles with a pattern - Example #1</title>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="500" height="400">
+Your browser does not support the canvas tag. </canvas>
+</body>
+</html>
 ```
-JavaScript source code:
+
+<h4>JavaScript source code:</h4>
 ```
 1.  var canvas, ctx, pattern1;
 2.   
@@ -11540,7 +11620,15 @@ JavaScript source code:
 
 To \"better\" see the repeatability of the pattern, here is the same example with a 1000x1000 pixel wide canvas:
 
-![](./images/image179.png){width="6.5in" height="2.0631944444444446in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 179.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image179.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>JS</h4>
 ```
@@ -11580,7 +11668,7 @@ imageObj.src = \"https://mainline.i3s.unice.fr/mooc/pattern1.jpg\";
 }
 ```
 
-HTML
+<h4>HTML</h4>
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11594,6 +11682,7 @@ Your browser does not support the canvas tag. </canvas>
 </body>
 </html>
 ```
+
 You can change the way the pattern is repeated by modifying the second parameter of this method:
 1.  pattern1 = ctx.createPattern(imageObj, \"**repeat**\");
 
@@ -11601,11 +11690,19 @@ Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just chan
 
 <h3 id="ch3-5-5">3.5.5 A Multiple Image Loader</h3>
 
-### Draw with multiple patterns? We need to load all of them before drawing! 
+<h4>Draw with multiple patterns? We need to load all of them before drawing!</h4>
 
 Below are 4 rectangles drawn with 4 different patterns.
 
-![4 rectangles drawn with different patterns](./images/image180.jpeg){width="3.78125in" height="3.78125in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------ 180. four rectangles drawn with different patterns (xxx) -------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image180.jpeg?raw=true"
+   alt="Four rectangles drawn with different patterns."
+   width="35%">
+&nbsp;
+<br/>
 
 We said earlier that we cannot draw before the image used by a pattern is loaded. This can become rapidly complicated if we need to draw using multiple patterns. We need a way to load all images and then, *only when all images have been loaded, start drawing*.
 
@@ -11619,7 +11716,15 @@ When all images have been loaded, we call a callback function that has been pass
 
 The complete example code that produces the result shown at the beginning of this page is the following:
 
-![](./images/image181.png){width="6.5in" height="2.0701388888888888in"}
+<!------------------------------------------------------------------------------------------------>
+<!--- 181.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image181.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 ```
@@ -11696,7 +11801,7 @@ Your browser does not support the canvas tag.
 </body>
 ```
 
-Define the list of images to be loaded:
+<h4>Define the list of images to be loaded:</h4>
 
 ```
 1.  // List of images to load, we used a JavaScript object instead of
@@ -11713,7 +11818,7 @@ Define the list of images to be loaded:
 
 Notice that instead of using a traditional array, we defined this list as a JavaScript object, with properties whose names will be easier to manipulate (flowers, lion, tiledFloor, etc.).
 
-### The image loader function
+<h4>The image loader function</h4>
 
 ```
 1.  function loadImages(imagesToBeLoaded, drawCallback) {
@@ -11739,7 +11844,7 @@ Notice that instead of using a traditional array, we defined this list as a Java
 21. } // function
 ```
 
-**Explanations:**
+<b>Explanations:</b>
 
 -   This function takes as a parameter the list of images to be loaded, and a drawCallback function that will be called only once all images have been loaded. This callback takes as a parameter a new object that is the list of images that have been loaded (see *line 16*).
 
@@ -11747,7 +11852,7 @@ Notice that instead of using a traditional array, we defined this list as a Java
 
 -   When an image comes in, the onload callback is called (*line 14*) and inside, we increment the number of images loaded (*line 15*) and test if this number is \>=  the total number of images that should be loaded. If this is the case, the callback function is called (*line 16*).
 
-### Example of use of this loader
+<h4>Example of use of this loader</h4>
 
 ```
 1.  loadImages(imagesToLoad, function(imagesLoaded) {
@@ -11760,7 +11865,7 @@ Notice that instead of using a traditional array, we defined this list as a Java
 8.  });
 ```
 
-**Explanations:**
+<b>Explanations:</b>
 
 -   *Line 1* is the call to the image loader, the first parameter is the list of images to be loaded, while the second parameter is the callback function that will be called once all images have been loaded.
 
@@ -11785,17 +11890,17 @@ Notice that instead of using a traditional array, we defined this list as a Java
 13. }
 ```
 
-### 3.5.6 Drawing Shadows
+<h3 id="ch3-5-6">3.5.6 Drawing Shadows</h3>
 
-### Context properties to draw with shadows
+<h4>Context properties to draw with shadows</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 182.  (xxx) -------------------------------->
+<!------------------------------ 182. a green shadow rectangle (xxx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image182.jpeg?raw=true"
    width="25%"
-   alt="A green shadowed rectangle" />
+   alt="A green shadowed rectangle." />
 </p>
 
 There are 4 properties of the canvas context that are useful for indicating that we want to draw shapes with shadows:
@@ -11892,7 +11997,7 @@ Your browser does not support the canvas tag.</canvas>
 27. }
 ```
 
-**Explanations:**
+<b>Explanations:</b>
 
 -   *Lines 21-27*: we set the 4 properties that define shadows in a dedicated function, for better clarity.
 
@@ -11941,7 +12046,7 @@ Let\'s take a [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO), t
 34. }
 ```
 
-And here is the result:
+<h4>And here is the result:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 184.  (xxx) -------------------------------->
@@ -12015,7 +12120,7 @@ Ah, indeed, the call to ctx.fill() casts a shadow, but the call to ctx.stroke
 
 The trick is to save the context before setting the shadow properties, then draw the filled circle, then restore the context (to its previous state: without shadows), then draw the outlined circle by calling ctx.stroke().
 
-Correct version of the code:
+<h4>Correct version of the code:</h4>
 
 ```
 1.  ...
@@ -12037,7 +12142,7 @@ Correct version of the code:
 17. ...
 ```
 
-And here is the final result:
+<h4>And here is the final result:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 185.  (xxx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -12124,6 +12229,7 @@ We have seen this before. This is done by changing the value (in pixels) of the�
 1.  <b>ctx.lineWidth = 10;</b> // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels
 ```
 Here is a complete example where we draw with a lineWidth of 20 pixels:
+
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 186. image186.png (xxx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -12176,12 +12282,26 @@ Here is a complete example where we draw with a lineWidth of 20 pixels:
 <h4>Example #2: changing the end caps of a line</h4>
 
 The lineCap property of the context indicates the way line end caps are rendered. Possible values are butt (default), round, square (from top to bottom in the next illustration). Note that a value of \"round\" or \"square\" makes the lines slightly longer than the default value \"butt\".
+<!------------------------------------------------------------------------------------------------>
+<!--- 187.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image187.png?raw=true"
+   alt="Line cap values."
+   width="20%">
+&nbsp;
+<br/>
 
-![line cap values](./images/image187.png){width="2.09375in" height="1.3958333333333333in"}
-
-Try this:
-
-![](./images/image188.png){width="6.5in" height="2.0701388888888888in"}
+<h4>Try this:</h4>
+<!------------------------------------------------------------------------------------------------>
+<!--- 188.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image188.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 
 <h4>HTML</h4>
 
@@ -12225,7 +12345,7 @@ Note that in this example, the rectangle is not affected. It has no line ends vi
 
 The lineJoin property of the context indicates the way corners are rendered, when two lines meet. Possible values are miter (the default) for creating sharp corners, round, or bevel for \"cut corners\".
 
-Try this:
+<h4>Try this:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 189.  (xxx) -------------------------------->
@@ -12235,6 +12355,7 @@ Try this:
    width="65%"
    alt="image189.png" />
 </p>
+
 ```
 <!DOCTYPE html\>
 <html lang=\"en\"\>
@@ -12274,10 +12395,17 @@ ctx.strokeRect(230, 10, 100, 100);
 The miterLimit property value corresponds to the maximum miter length: the distance between the inner corner and the outer corner where two lines meet. When the angle of a corner between two lines gets smaller, the miter length grows and can become too long.
 
 In order to avoid this situation, we can set the miterLimit property of the context to a threshold value. If the miter length exceeds the miterLimit value, then the corner will be rendered as if the lineJoin property had been set to \"bevel\" and the corner will be \"cut\".
+<!------------------------------------------------------------------------------------------------>
+<!--- 190.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image190.gif?raw=true"
+   alt="miterLimit property shown with 3 different angles, we see that the part that goes out of the angle becomes very long."
+   width="20%">
+&nbsp;
+<br/>
 
-![miterLimit property shown with 3 different angles, we see that the part tha goes out of the angle can become very long](./images/image190.gif){width="2.0520833333333335in" height="1.0416666666666667in"}
-
-You can try an interactive example here:
+<h4>You can try an interactive example here:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 191. (xxx) -------------------------------->
@@ -12322,7 +12450,7 @@ During the late 1990s and early 2000s, JavaScript became increasingly popular. 
 <p align="center" width="100%">
 <img src="./images/image192.png?raw=true"
    width="25%"
-   alt="A mario like DHTML game" />
+   alt="A mario like DHTML game." />
 </p>
 
 For animation, the setInterval(function, ms) and setTimeout(function, ms) methods were the only solutions. Both methods take a function as the first parameter, and a number of milliseconds as the second parameter.
@@ -12459,7 +12587,7 @@ clearInterval(requestId);
 </html>
 ```
 
-Extract from the source code:
+<h4>Extract from the source code:</h4>
 ```
 1.  <body>
 2.     <div id="animatedDIV">Animated DIV :-)</div>
@@ -12646,18 +12774,12 @@ clearInterval(requestId);
 63. </body>
 ```
 
-**Explanations:**
+<b>Explanations:</b>
 
 -   *Lines 52-61*: The code for launching and stopping the animation is similar to that from the previous example.
 
-```
-
-```
 -   *Lines 34-50*: The code that draws the monster is that which we saw earlier when we presented the 2D transformations. Best practice is to save and restore the context at the beginning and end of each function that changes the context.
 
-```
-
-```
 -   *Lines 21-32*: **The most interesting part is the animation loop** that implements the basic animation steps: *clear-draw-move*. In order to make a shape \"movable\", we use some \"state variables\" for its position and angle, and we modify them at each iteration (*lines 29-32*). We will see later on how to modify the value of these variables on user interactions (keyboard, mouse, etc.).
 
 <h4>Problems with setInterval</h4>
@@ -12672,8 +12794,8 @@ The setInterval function may become hard to debug, particularly if you run se
 
 setInterval will execute the function passed as first parameter every n milliseconds regardless of when the function was last called or how long the function takes to execute. If the function takes longer than the interval, then setInterval might queue too many function executions back to back when the interval is too short, leading to unpredictable results. 
 
-***BEST PRACTICE**: AVOID using setInterval for animating in a canvas,*\
-*except for trivial cases (change a color every second).*
+<b>BEST PRACTICE<b>: AVOID using setInterval for animating in a canvas,\
+except for trivial cases (change a color every second).
 
 <h3 id="ch4-2-4">4.2.4 Animating Using setTimeout()</h3>
 
@@ -12775,65 +12897,40 @@ clearTimeout(requestId);
 
 This is similar to the previous example except that we called setTimeout(function, delay) instead of setInterval(function, period). **As setTimeout runs the function passed as the first parameter only once, we also have to call it at the end of the loop**.
 
-Extract from source code:
-
+<h4>Extract from source code:</h4>
+```
 1.  function animationLoop() {
-
 2.     // 1 - Clear
-
 3.     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 4.  
-
 5.     // 2 Draw
-
 6.     drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
-
 7.  
-
 8.     // 3 Move
-
 9.     monsterX += 10;
-
 10.    monsterX %= canvas.width
-
 11.    monsterAngle+= 0.01;
-
 12. 
-
 13.    **// call mainloop again after 20ms**
-
 14.    **requestId = setTimeout(animationLoop, 20);**
-
 15. }
-
 16.  
-
 17. function start() {
-
 18.    // Start the animation loop, change 20 for bigger
-
 19.    // values
-
 20.    **requestId = setTimeout(animationLoop, 20);**
-
 21. }
-
 22. 
-
 23. function stop() {
-
 24.    if (requestId) {
-
 25.       **clearTimeout(requestId);**
-
 26.    }
-
 27. }
+```
 
 This function is certainly more suitable for doing graphic animation, such as for writing an HTML5 game. It will never interrupt an ongoing animation, even if the instructions inside the animation loop take too long.
 
-### Problems with setInterval() and setTimeout()
+<h4>Problems with setInterval() and setTimeout()</h4>
 
 setTimeout does not \"wait\"  during the timeout period. It lets the rest of the JavaScript code run. It schedules a new call to the function passed as first parameter with a timer running in the background. This might cause it to take slightly longer than the expected timeout period to start executing. 
 
@@ -12841,11 +12938,11 @@ This problem also occurs with setInterval, the timing is not \"very\" reliable.
 
 Here comes the [requestAnimationFrame API,](https://www.w3.org/TR/html51/webappapis.html#animation-frames) a very good companion to the canvas API!
 
-***BEST PRACTICE**: AVOID using setTimeout for animating in a canvas, except for trivial cases.*
+<b>BEST PRACTICE</b>: AVOID using setTimeout for animating in a canvas, except for trivial cases.
 
-***For 60 frames/second animation, use requestAnimationFrame!***
+For 60 frames/second animation, use requestAnimationFrame!
 
-### 4.2.5 The requestAnimationFrame API
+<h3 id="ch4-2-5">4.2.5 The requestAnimationFrame API</h3>
 
 The best way to make animation at 60 frames per second: requestAnimationFrame!
 
@@ -12865,11 +12962,11 @@ It has, however, several advantages over setInterval and setTimeout:
 
 -   **CPU/GPU optimization, battery saved on mobiles**:  if the JavaScript execution is occurring in a tab/window which is not visible, it doesn't have to be drawn. However the animation loop is still executed (objects will be moved, not drawn). This is the same when a mobile phone or tablet screen is black or if the application is put in background.
 
-### Typical use
+<h4>Typical use</h4>
 
 You will note that  requestAnimationFrame(function) is used like setTimeout(function, delay). A call to requestAnimationFrame just asks the browser to call the function passed as a parameter ONCE, **and the target delay is fixed**, and corresponds to a 60 frames/s frame rate (16.6ms). Notice that an id is used for stopping an animation with cancelAnimationFrame(id). 
 
-Source code:
+<h4>Source code:</h4>
 ```
 1.  <body onload="init();">
 2.  <script>
@@ -12912,9 +13009,9 @@ Source code:
 
 <h4>Example: animate the monster with requestAnimationFrame</h4>
 
-Check the example below:
+<h4>Check the example below:</h4>
 
-Source code extract - please compare with the previous example that used setInterval():
+<h4>Source code extract - please compare with the previous example that used setInterval():</h4>
 ```
 1.  function animationLoop(timeStamp) {
 2.      // 1 - Clear
@@ -12947,7 +13044,7 @@ Source code extract - please compare with the previous example that used setInt
 
 Notice that calling requestAnimationFrame(animationLoop) at* line 19*, and after that from within the loop at line 14, asks the browser to call the animationLoop function so that the delta between calls will be **as close as possible to 16.6ms  (this corresponds to 1/60th of a second)**.
 
-### Is the 16.6ms delay really accurate? Can we trust it?
+<h4>Is the 16.6ms delay really accurate? Can we trust it?</h4>
 
 This target may be hard to reach if:
 
@@ -12965,7 +13062,7 @@ The timeStamp parameter of the animationLoop function (*line 1* in the abov
 
 Using time-based animation, and more generally, using the canvas element for writing HTML5 games, is part of the W3Cx HTML5 Apps and Games course.
 
-Current [support](https://caniuse.com/requestanimationframe) is really good and all modern browsers support this API.
+Current <a href="https://caniuse.com/requestanimationframe">support</a> is really good and all modern browsers support this API.
 
 <h3 is="ch4-3-1">4.3.1 Events: Input and Output</h3>
 
@@ -12988,7 +13085,7 @@ Note: this is not the recommended way to handle events, even if it\'s very easy 
 
 <h4>Second method: add an event handler to an HTML element in JavaScript</h4>
 
-Here is an example:
+<h4>Here is an example:</h4>
 ```
 1.  document.getElementById('someDiv').onclick = function(evt) {
 2.    alert('clicked!');
@@ -12998,7 +13095,7 @@ This method is fine, but  you will not be able to attach several listener funct
 
 <h4>Third method: register a callback to the event listener with the addEventListener method</h4>
 
-This is how we do it:
+<h4>This is how we do it:</h4>
 ```
 1.  document.getElementById('someDiv').addEventListener('click', function(evt) {
 2.      alert('clicked!');
@@ -13046,6 +13143,7 @@ Let\'s see next how to deal with the keyboard and the mouse. In the <a href="ht
 21. </body>
 22. </html>
 ```
+
 <h3 id="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
 
 When you listen to keyboard related events (keydown, keyup or keypressed), the event parameter passed to the listener function will contain the code of the key that fired the event. Then it is possible to test what key has been pressed or released, like this:
@@ -13067,8 +13165,14 @@ At *line 2*, the value \"37\" is the key code that corresponds to the left arro
 <h4>Example #1: adding a key listener to the window object</h4>
 
 A lot of people think that the canvas element is not able to get key events. Many examples on the Web handle key events on canvas by adding a listener to the window object directly, like this:
-
-![](./images/image193.png){width="6.5in" height="2.05625in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 193. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image193.png?raw=true"
+   width="25%"
+   alt="image193.png." />
+</p>
 
 ```
 <!DOCTYPE html>
@@ -13127,10 +13231,16 @@ return false;
 Indeed this solution works well if you write a game, and want to detect events wherever the mouse cursor is, and without worrying about what HTML element has the focus, etc\...
 
 <h4>Example #2: moving the monster with the keyboard</h4>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 194. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image194.png?raw=true"
+   width="65%"
+   alt="." />
+</p>
 
-![](./images/image194.png){width="6.5in" height="2.0770833333333334in"}
-
-HTML
+<h4>HTML</h4>
 
 ```
 <!DOCTYPE html>
@@ -13288,61 +13398,49 @@ If you add a key listener to a canvas element, the problem is that it will get e
 The tabindex attribute of the canvas element makes it focusable. Without it, it will never get the focus!
 
 The trick is to declare the canvas like this:
-
+```
 1.  <canvas id="myCanvas" width="350" **tabindex="1"** height="200">
-
 2.  </canvas>
+```
 
 And we force the canvas to get the focus with:
-
+```
 1.  canvas=document.getElementById('myCanvas');
-
 2.  ...
-
 3.  **canvas.focus();**
+```
 
 Now, if we try an example with the above canvas declaration, we show when an HTML element has the focus: a border is added to it.
 
-![](./images/image195.png){width="6.5in" height="2.0909722222222222in"}
-
-HTML
-
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
-<meta charset="utf-8">
-
-<title>Listening to key events only in the canvas - Example #3</title>
-
-<style type="text/css">
-
-canvas {
-
-border:1px solid black;
-
-}
-
-</style>
-
-</head>
-
-<body onload="init();">
-
-This example shows how to handle key events in a canvas by adding a key listener to the canvas object (see the blue border around the canvas\... it shows that the canvas has the focus. Try to click outside of the canvas: it will lose the focus).
-
-<p>
-
-If you don\'t want a border to appear when you click on the canvas, set its style to outline: none
-
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 195. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image195.png?raw=true"
+   width="25%"
+   alt="." />
 </p>
 
-\<p\>Press a key when the canvas has the focus: an alert will display the keycode of the key you pressed. Problem: if the canvas looses the focus, key press are no more detected\...\</p>
-
+<h4>HTML</h4>
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Listening to key events only in the canvas - Example #3</title>
+<style type="text/css">
+canvas {
+border:1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+This example shows how to handle key events in a canvas by adding a key listener to the canvas object (see the blue border around the canvas\... it shows that the canvas has the focus. Try to click outside of the canvas: it will lose the focus).
+<p>
+If you don\'t want a border to appear when you click on the canvas, set its style to outline: none
+</p>
+<p>Press a key when the canvas has the focus: an alert will display the keycode of the key you pressed. Problem: if the canvas looses the focus, key press are no more detected\...\</p>
 <canvas id="myCanvas" width="350" tabindex="1" height="200">
-
 </canvas>
 <script>
 var canvas;
@@ -13361,7 +13459,7 @@ return false;
 };
 </script>
 </body>
-</html\>
+</html>
 ```
 
 Note that the line that forces the focus to the canvas is commented by default. Try to click on the canvas, then press a key, then click out of the canvas, then press a key: this time nothing happens!
@@ -13372,10 +13470,10 @@ Note that the line that forces the focus to the canvas is commented by default. 
 <p align="center" width="100%">
 <img src="./images/image196.jpeg?raw=true"
    width="50%"
-   alt="image196.jpeg a border appears when the canvas has the focus" />
+   alt="image196.jpeg a border appears when the canvas has the focus." />
 </p>
 
-Extract from the code:
+<h4>Extract from the code:</h4>
 ```
 1.  var canvas;
 2.  
@@ -13525,7 +13623,7 @@ cancelAnimationFrame(requestId);
 </html>
 ```
 
-Code:
+<h4>Code:</h4>
 ```
 1.  function init() {
 2.     // This function is called after the page is loaded
@@ -13570,14 +13668,14 @@ The example below is about listening to mouseup and mousedown events (when a
 
 The event received by the listener function will be used for getting the button number or the coordinates of the mouse cursor. Before looking at different examples, let's look at the different event types we can listen to.
 
-### The different mouse events
+<h4>The different mouse events</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------- 198.  (xxx) ------------>
+<!----------- 198. mouse events illustrated (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image198.png?raw=true"
-   alt="Mouse events illustrated"
+   alt="Mouse events illustrated."
    width="35%">
 &nbsp;
 <br/>
@@ -13598,7 +13696,7 @@ There are other events related to the mouse:
 
 -   mousemove: fired while the mouse moves over the element. Each time the mouse moves, a new event is fired, unlike with mouseover or mouseenter, where only one event is fired.
 
-### The tricky part: accurately getting the mouse position relative to the canvas
+<h4>The tricky part: accurately getting the mouse position relative to the canvas</h4>
 
 When you listen to any of the above events, the event object (we call it a \"DOM event\"), passed to the listener function, has properties that correspond to the mouse coordinates: clientX and clientY.
 
@@ -13620,120 +13718,70 @@ Play with the example below that show the problem:
 &nbsp;
 <br/>
 
-JS
-
+<h4>JS</h4>
+```
 var canvas, ctx, mousePos, mouseButton;
-
 window.onload = function init() {
-
 canvas = document.getElementById(\'myCanvas\');
-
 ctx = canvas.getContext(\'2d\');
-
 canvas.addEventListener(\'mousemove\', function (evt) {
-
 mousePos = getMousePos(canvas, evt);
-
 var message = \'Mouse position: \' + mousePos.x + \',\' + mousePos.y;
-
 writeMessage(canvas, message);
-
 }, false);
-
 canvas.addEventListener(\'mousedown\', function (evt) {
-
 mouseButton = evt.button;
-
 var message = \"Mouse button \" + evt.button + \" down at position: \" + mousePos.x + \',\' + mousePos.y;
-
 writeMessage(canvas, message);
-
 }, false);
-
 canvas.addEventListener(\'mouseup\', function (evt) {
-
 var message = \"Mouse up at position: \" + mousePos.x + \',\' + mousePos.y;
-
 writeMessage(canvas, message);
-
 }, false);
-
 };
-
 function writeMessage(canvas, message) {
-
 ctx.save();
-
 ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 ctx.font = \'18pt Calibri\';
-
 ctx.fillStyle = \'black\';
-
 ctx.fillText(message, 10, 25);
-
 ctx.restore();
-
 }
-
 function getMousePos(canvas, evt) {
-
 // necessary to take into account CSS boudaries
-
 var rect = canvas.getBoundingClientRect();
-
 return {
-
 x: evt.clientX - rect.left,
-
 y: evt.clientY - rect.top
-
 };
-
 }
+```
 
-CS
-
+<h4>CSS</h4>
+```css
 canvas {
-
 border:1px solid black
-
 }
+```
 
-HTML
-
+<h4>HTML</h4>
+```
 \<!DOCTYPE html\>
-
 \<html lang=\"en\"\>
-
 \<head\>
-
 \<meta charset=\"utf-8\"\>
-
 \<title\>Mouse event - Good code\</title\>
-
 \<style\>
-
 body {
-
 margin: 20px;
-
 padding: 0px;
-
 }
-
 \</style\>
-
 \</head\>
-
 \<body\>
-
 This is a canvas:\<p\>\</p\>
-
 \<canvas id=\"myCanvas\" width=\"578\" height=\"200\"\>\</canvas\>
-
 \</body\>
-
 \</html\>
 
 function getMousePos(canvas, evt) {
@@ -13796,7 +13844,7 @@ Here is the result, when the mouse is approximately at the top left corner of th
 &nbsp;
 <br/>
 
-GOOD version of the code:
+<h4>GOOD version of the code:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------- 201.  (xxx) ------------>
@@ -13807,22 +13855,16 @@ GOOD version of the code:
    width="40%">
 &nbsp;
 <br/>
-
+```
 function getMousePos(canvas, evt) {
-
    **// necessary to take into account CSS boundaries**
-
    **var rect = canvas.getBoundingClientRect();**
-
    return {
-
       x: evt.clientX **- rect.left,**
-
       y: evt.clientY **- rect.top**
-
    };
-
 }
+```
 
 Result (the cursor is approximately at the top left corner):
 
@@ -13836,7 +13878,7 @@ Result (the cursor is approximately at the top left corner):
 &nbsp;
 <br/>
 
-### How to display the mouse position, and the mouse button that has been pressed or released
+<h4>How to display the mouse position, and the mouse button that has been pressed or released</h4>
 
 This example uses the previous function for computing the mouse position correctly. It listens to mousemove, mousedown and mouseup events, and shows how to get the mouse button number using the evt.button property.
 
@@ -13860,7 +13902,7 @@ This example uses the previous function for computing the mouse position correct
 &nbsp;
 <br/>
 
-Extract from source code:
+<h4>Extract from source code:</h4>
 
 ```
 1.  var canvas, ctx, mousePos, mouseButton;
