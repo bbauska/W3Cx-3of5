@@ -2988,7 +2988,7 @@ Use a \"-\" shaped icon, white, when details are displayed:
 <h3 id="ch1-4-2">1.4.2 The &lt;time&gt; and &lt;mark&gt; Elements</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 49. it's about time clock (xx) ------------------------------->
+<!------------------------------- 49. it's about time clock (63) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image049.jpeg?raw=true"
@@ -3028,8 +3028,6 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
 
 <h3>Different syntaxes of the datetime attribute</h3>
 
-<h3>datetime attribute value</h3>
-
 | datetime attribute values | Interpretation |
 | ------------------------- | -------------- |
 | &lt;time datetime="2020"&gt; | The year 2020 |
@@ -3040,14 +3038,14 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
 | &lt;time datetime="2020-11-13TO9:00"&gt; | Same as prev ex, both syntaxes are supported, with and without the "T" between date and time |
 | &lt;time datetime="09:00%"&gt; | 9:00 in the morning, GMT |
 | &lt;time datetime="09:00-05"&gt; | 9:00 in the morning, GMT minus 5 hours |
-| &lt;time datetime="09:00+05:45"&gt; | 9:00 in the morning, GMT plus 5 hours 45 mins, (for ex, Nepal is 5:45 ahead of GMT |
+| &lt;time datetime="09:00+05:45"&gt; | 9:00 in the morning, GMT plus 5 hours 45 mins, (for example, Nepal is 5:45 ahead of GMT |
 
 <h4>Duration values</h4>
 
 Duration values use the prefix "P" for "period" as in \<time datetime=\"P4D\"\> (period = four days)\...
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 50.  (xx) ------------------------------->
+<!----------------------------- 50. duration values (64) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image050.jpeg?raw=true"
@@ -3077,22 +3075,21 @@ Examples:
 </ul>
 ```
 <h4>The &lt;time&gt; element with no attributes</h4>
-
-Used without attributes, the value between the opening \<time\> and closing \</time\> should follow the syntax given by the specification so that machines can understand it (same syntax as the one presented for the datetime attribute in the previous section). However it is recommended to use a datetime attribute, as it gives more freedom in the way you can display the date/time/duration in a human-readable form. 
+<p>Used without attributes, the value between the opening &lt;time&gt; and closing &lt;time&gt; should follow the syntax given by the specification so that machines can understand it (same syntax as the one presented for the datetime attribute in the previous section). However it is recommended to use a datetime attribute, as it gives more freedom in the way you can display the date/time/duration in a human-readable form. </p>
 
 <h4>External resources:</h4>
 <ul>
 <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element">From the specification:</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">On MDN's Web Docs:></a></li>
-<li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility">table</a> for <time></li>
+<li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility">table</a> for &lt;time&gt;</li>
 <li><a href="https://www.brucelawson.co.uk/2012/best-of-time">Old but interesting article by Bruce Lawson:</a></li>
-<li>A CSS Tricks' article: "<a href="(https://css-tricks.com/time-element/">The 'time' element</a></li>
+<li>A CSS Tricks' article: "<a href="https://css-tricks.com/time-element/">The 'time' element</a>"</li>
 </ul>
 
 <h4>The &lt;mark&gt; element</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 51.  (xx) ------------------------------->
+<!------------------------------- 51. yellow highlighter pen (65) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image051.jpeg?raw=true"
@@ -3113,7 +3110,8 @@ The HTML \<mark\> tag is used for indicating text as marked or highlighted for
 Example 1: <https://jsbin.com/tafelic/edit?html,output>
 
 <h4>Source code:</h4>
-```
+
+```html5
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -3129,7 +3127,7 @@ Example 1: <https://jsbin.com/tafelic/edit?html,output>
 Example 2:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 52. another example for marking code (xx) --------------------------->
+<!-------------------------- 52. another example for marking code (66) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image052.jpeg?raw=true"
@@ -3152,10 +3150,10 @@ Example 2:
 
 If you don\'t like the default yellow background, you may use CSS to change the style of the \<mark\> element:
 
-For example:
+<h4>For example:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 53. style the mark element with CSS (xx) ------------------------------->
+<!----------------------------- 53. style the mark element with CSS (66) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image053.jpeg?raw=true"
@@ -3164,7 +3162,7 @@ For example:
 &nbsp;
 <br/>
 
-... comes with this CSS rule:
+<h4>... comes with this CSS rule:</h4>
 
 ```
 1.  mark {
@@ -3175,10 +3173,9 @@ For example:
 
 <h4>External resources:</h4>
 <ul>
-<li>From the specification: <https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element>
-
-<li>On MDN\'s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark"></a></li>
-<li>MDN\'s browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark#Browser_compatibility">table</a> for &lt;time&gt;</li>
+<li>From the specification: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element
+<li>On MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark</a></li>
+<li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark#Browser_compatibility">table</a> for &lt;time&gt;</li>
 <li>An article on Web Platform News: <a href="https://webplatform.news/issues/2019-02-28">The &lt;mark&gt; element could help make your text more scannable</a></li>
 </ul>
 
@@ -3457,7 +3454,7 @@ Different use cases:
 -   [Chapter from Mark Pilgrim\'s book about microdata](https://diveinto.html5doctor.com/extensibility.html), very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- Chapter 1-5-2. testing tools (xx) -------------------------------->
+<!----------------------------- Chapter 1-5-2. testing tools (63) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-2">1.5.2 Testing Tools</h3>
 
@@ -19685,4 +19682,4 @@ The end.
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>07-26-2022 5:13pm</i></b></h3>
+<h3><b><i>07-27-2022 7:43am</i></b></h3>
