@@ -1,5 +1,6 @@
 <h2 align="center">W3Cx Front-End Web Developer</h2>
 <br/>
+
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- readme.md of W3Cx-3of5-HTML5.1x -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -3024,65 +3025,22 @@ The datetime attribute can be used for indicating a date/time or a duration.
 Supports different specifications of time such as \"a year\", \"a month in a year\", \"a week in a year\", \"a time\", etc\... 
 
 <h4>Here are some examples:</h4>
-<!---------------------------------------------------------------------------------------------->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-}
-
-.left {
-  width: 35%;
-}
-
-.right {
-  width: 65%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
-</head>
-<body>
 
 <h3>Different syntaxes of the datetime attribute</h3>
 
-<div class="row">
-  <div class="column left" style="background-color:#aaa;">
-    <h2>datetime attribute value</h2>
-    <p>&lt;time datetime="2020"&gt;</p>
-    <p>&lt;time datetime="2020-11"&gt;</p>
-    <p>&lt;time datetime="11-13"&gt;</p>
-    <p>&lt;time datetime="2020-W21"&gt;</p>
-    <p>&lt;time datetime="2020-11-13 09:00"&gt;</p>
-    <p>&lt;time datetime="2020-11-13TO9:00"&gt;</p>
-    <p>&lt;time datetime="09:00%"&gt;</p>
-    <p>&lt;time datetime="09:00-05"&gt;</p>
-    <p>&lt;time datetime="09:00+05:45"&gt;</p>
-  </div>
-  <div class="column right" style="background-color:#bbb;">
-    <h2>Interpretation</h2>
-    <p>The year 2020</p>
-    <p>November 2020</p>
-    <p>November 13th (any year)</p>
-    <p>Week 21 from year 2020</p>
-    <p>November 13th year 2020, time = 9:00</p>
-    <p>Same as previous example, both syntaxes are supported, with and without the "T" between date and time.</p>
-    <p>9:00 in the morning, GMT</p>
-    <p>9:00 in the morning, GMT minus 5 hours</p>
-    <p>9:00 in the morning, GMT plus 5 hours 45 minutes, (for example, Nepal is 5:45 ahead of GMT</p>
-  </div>
-</div>
+<h3>datetime attribute value</h3>
+
+| datetime attribute values | Interpretation |
+| ------------------------- | -------------- |
+| &lt;time datetime="2020"&gt; | The year 2020 |
+| &lt;time datetime="2020-11"&gt; | November 2020 |
+| &lt;time datetime="11-13"&gt; | November 13th (any year) |
+| &lt;time datetime="2020-W21"&gt; | Week 21 from year 2020 |
+| &lt;time datetime="2020-11-13 09:00"&gt; | November 13th year 2020, time = 9:00 |
+| &lt;time datetime="2020-11-13TO9:00"&gt; | Same as prev ex, both syntaxes are supported, with and without the "T" between date and time |
+| &lt;time datetime="09:00%"&gt; | 9:00 in the morning, GMT |
+| &lt;time datetime="09:00-05"&gt; | 9:00 in the morning, GMT minus 5 hours |
+| &lt;time datetime="09:00+05:45"&gt; | 9:00 in the morning, GMT plus 5 hours 45 mins, (for ex, Nepal is 5:45 ahead of GMT |
 
 <h4>Duration values</h4>
 
