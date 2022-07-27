@@ -2626,11 +2626,11 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 
 In this section, we show some \"classic\" CSS layout techniques for designing an HTML page that uses the new sectioning elements. 
 
-We embed examples from this [very good post about \"Positioning content\"](https://learn.shayhowe.com/html-css/positioning-content/). This is a recommended reading as it details how to use the CSS float property to layout a Web page.
+We embed examples from this <a href="https://learn.shayhowe.com/html-css/positioning-content/" target="_blank">very good post about "Positioning content"</a>. This is a recommended reading as it details how to use the CSS float property to layout a Web page.
 
 The 4 examples below are given \"as is\" to give you some hints. There are lots of other possibilities on using CSS to position element.
 
-<h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, using the float and width CSS properties</4>
+<h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, using the float and width CSS properties</h4>
 
 This example uses the following HTML structure (notice that we use the \"HTML entity syntax\" for displaying \"\<\" or \"\>\". For example, displays a \"\<\" character).
 
@@ -2762,25 +2762,25 @@ These elements have been introduced for displaying a foldable zone in an HTML do
 In the screenshot below, taken from the W3C specification page, the text next to the horizontal arrow is a \<summary\> element, and the text displayed when we click on the summary part, is the \<details\> element. This is a sort of \"accordion\" with foldable content.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------- 40. example of summary details elements from the w3c specs (xx) ----------------->
+<!-------------- 40. example of summary details elements from the w3c specs (59) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image040.png?raw=true"
-   alt="Example of Summary Details Elements from the W3C specification"
+   alt="Example of summary details elements from the W3C specification."
    width="35%">
 &nbsp;
 <br/>
 
 The \<details\> element generates a simple widget to show/hide element contents, optionally by clicking on its child \<summary\> element.
 
-Here is an example of what can be done using these elements ) see the [online version on JSBin](https://jsbin.com/yociyel/1/edit?html,css,js,output):
+Here is an example of what can be done using these elements: see the <a href="https://jsbin.com/yociyel/1/edit?html,css,js,output" target="_blank">online version on JSBin</a>:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 41. example of folded summary details (xx) ------------------------------->
+<!------------------------- 41. example of folded summary details (59) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image040.png?raw=true"
-   alt="example of Folded Summary Details"
+   alt="Example of folded summary details."
    width="35%">
 &nbsp;
 <br/>
@@ -2801,18 +2801,18 @@ And here is what is displayed after clicking on the small arrow-shaped icon to t
 <b>Here is the code of this example:</b>
 
 ```
-> <!DOCTYPE html>
-> <html lang="en"> ...
-> <body>
-> <details>
-> <summary>
-> How to beat the boss...spoiler alert !
-> </summary>
-> <p> Just aim to the red spots near his eyes</p>
-> <p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
-> </details>
-> </body>
-> </html>
+<!DOCTYPE html>
+<html lang="en"> ...
+<body>
+<details>
+<summary>
+How to beat the boss...spoiler alert !
+</summary>
+<p> Just aim to the red spots near his eyes</p>
+<p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
+</details>
+</body>
+</html>
 ```
 
 The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> element. By clicking on the icon at the left of the summary, the content of the \<details\> value is displayed/hidden.
@@ -2858,20 +2858,20 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> elem
 <b>Source code of this example, see the summary/details inside another one:</b>
 
 ```
-> <details>
-> <summary>
-> How to beat the boss...spoiler alert !
-> </summary>
-> <p> Just aim to the red spots near his eyes</p>
-> <p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
-> <details>
-> <summary>
-> Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
-> </summary>
-> <p>Before finishing him, try to cut his trail, you will get a new weapon</p>
-> <p>Just try to stay behind him as long as you can, hitting his tail with your melee weapon, after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.</p>
-> </details>
-> </details>
+<details>
+<summary>
+How to beat the boss...spoiler alert !
+</summary>
+<p> Just aim to the red spots near his eyes</p>
+<p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
+<details>
+<summary>
+Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
+</summary>
+<p>Before finishing him, try to cut his trail, you will get a new weapon</p>
+<p>Just try to stay behind him as long as you can, hitting his tail with your melee weapon, after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.</p>
+</details>
+</details>
 ```
 
 <h4>CSS pseudo classes for styling summary icons</h4>
@@ -2979,7 +2979,7 @@ Use a \"-\" shaped icon, white, when details are displayed:
 <h3 id="ch1-4-2">1.4.2 The &lt;time&gt; and &lt;mark&gt; Elements</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 49.  (xx) ------------------------------->
+<!----------------------------- 49. it's about time clock (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image049.jpeg?raw=true"
@@ -2988,7 +2988,7 @@ Use a \"-\" shaped icon, white, when details are displayed:
 &nbsp;
 <br/>
 
-<h4>The <time> element</h4>
+<h4>The &lt;time&gt; element</h4>
 
 The \<time\> element is useful for marking a time or a duration in a document.
 
@@ -2996,14 +2996,14 @@ It provides both a human readable part (the part between \<time\> and \</time
 
 The machine readable part adds semantics that can be used by search engines for indexing, by browsers or by browser extensions, or by JavaScript code. Useful scenarios include generating alerts for birthdays, automatically adding dates or events that contain \<time\> elements in a calendar, etc.
 
-<b>Example:</b>
+<h4>Example:</h4>
 ```
-1.  We open at <b><time>10:00</time> every morning.
+1.  We open at <time>10:00</time> every morning.
 2.  
-3.  I have a meeting the <b><time datetime="2020-02-14">Monday 14/02/2020.</time></b>.
-4.  Blog posts from the year <b><time datetime="2020">2020</time></b>.
-5.  Archives, blog posts for <b><time datetime="2020-04">April 2020</time></b>
-6.  This recipe was published by Michel the <b><time datetime="2020-04-16">April 16, 2020</time></b>.
+3.  I have a meeting the <time datetime="2020-02-14">Monday 14/02/2020.</time>.
+4.  Blog posts from the year <time datetime="2020">2020</time>.
+5.  Archives, blog posts for <time datetime="2020-04">April 2020</time>
+6.  This recipe was published by Michel the <time datetime="2020-04-16">April 16, 2020</time>.
 ```
 
 <h4>The datetime attribute</h4>
@@ -3016,9 +3016,8 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
 
 <h4>Here are some examples:</h4>
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------
   Different syntaxes of the datetime attribute   
-  ---------------------------------------------- ----------------------------------------------------------------------------------------------------------
+
   datetime attribute values                      Interpretation
 
   \<time datetime=\"2020\"\>                     The year 2020
@@ -3038,7 +3037,6 @@ Supports different specifications of time such as \"a year\", \"a month in a yea
   \<time datetime=\"09:00-05\"\>                 9:00 in the morning, GMT minus 5 hours
 
   \<time datetime=\"09:00+05:45\"\>              9:00 in the morning, GMT plus 5 hours 45 minutes, (for example, Nepal is 5:45 ahead of  GMT)
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <h4>Duration values</h4>
 
@@ -3075,7 +3073,7 @@ Examples:
 </ul>
 ```
 
-<h4>The \<time\> element with no attributes</h4>
+<h4>The &lt;time&gt; element with no attributes</h4>
 
 Used without attributes, the value between the opening \<time\> and closing \</time\> should follow the syntax given by the specification so that machines can understand it (same syntax as the one presented for the datetime attribute in the previous section). However it is recommended to use a datetime attribute, as it gives more freedom in the way you can display the date/time/duration in a human-readable form. 
 
@@ -3088,7 +3086,7 @@ Used without attributes, the value between the opening \<time\> and closing \
 <li>A CSS Tricks' article: "<a href="(https://css-tricks.com/time-element/">The 'time' element</a></li>
 </ul>
 
-<h4>The <mark> element</h4>
+<h4>The &lt;mark&gt; element</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 51.  (xx) ------------------------------->
@@ -3346,32 +3344,36 @@ Using the translate=\"no\" attribute should prevent this behavior\...
 2.  from the University of Nice,France.
 ```
 Will be correctly translated into French by:
+
 ```
 1.  "[Michel Ham] est un professeur de l'Université de Nice, France."
 ```
+
 \...where all of the end of the sentence has been translated except the author\'s name.
 
 <h4> Inheritance between elements</h4>
 
 When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true.
+
 ```
 1.  <p <b>[translate="no"]</b>>This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.[<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>]. This is the end of the paragraph\...</p>
 ```
-<h4>External resources:</h4
 
--   From the specification: [the translate attribute](https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute)
-
--   From MDN\'s Web Docs: <https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate>
-
-    -   Its corresponding [browser compatibility table](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate#Browser_compatibility)
-
--   An article from W3C\'s Internationalization Activity: [\"Using HTML\'s translate attribute\"](https://www.w3.org/International/questions/qa-translate-flag)
+<h4>External resources:</h4>
+<ul>
+<li>From the specification: <a href="https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute">the translate attribute</a></li>
+<li>From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate"></li>
+<ul>
+    <li>Its corresponding <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate#Browser_compatibility">browser compatibility table</a></li>
+</ul>
+<li>An article from W3C's Internationalization Activity: <a href="https://www.w3.org/International/questions/qa-translate-flag">"Using HTML's translate attribute"</a></li>
+</ul>
 
 <h3 id="ch1-5">1.5 Microdata</h3>
 
-There are several ways to provide machine-readable content embedded in a classical Web document: [HTML+RDFa](https://www.w3.org/TR/html-rdfa/), [microformats](http://microformats.org/), [JSON-LD](https://json-ld.org/), HTML5 microdata. In this section, we focus on microdata.
+There are several ways to provide machine-readable content embedded in a classical Web document: <a href="https://www.w3.org/TR/html-rdfa/">HTML+RDFa</a>, <a href="http://microformats.org/">microformats</a>, <a href="https://json-ld.org/">JSON-LD</a>, HTML5 microdata. In this section, we focus on microdata.
 
-Adding microdata to Web pages helps search engines to better understand the pages\' content, their topics, etc. The main purpose of microdata is [Search Engine Optimization ](https://en.wikipedia.org/wiki/Search_engine_optimization)(SEO).
+Adding microdata to Web pages helps search engines to better understand the pages\' content, their topics, etc. The main purpose of microdata is <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">Search Engine Optimization</a>(SEO).
 
 This information is not visible to humans: it is pure *semantic information*. Popular kinds of microdata are events, a person\'s profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. 
 
@@ -3507,53 +3509,50 @@ Let\'s have a look now at a (small) example of an about page. It renders as a ve
 
 Rendering of the page in a browser:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------ 59. rendering of michel buffa home page (xx) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image059.jpeg?raw=true"
+   alt="Rendering of Michel Buffa home page."
+   width="65%">
 &nbsp;
 <br/>
-![Rendering of Michel Buffa home page](./images/image059.jpeg){width="6.5in" height="1.0298611111111111in"}
 
 Here is what Google sees of the page. We just entered its [URL](https://output.jsbin.com/gunuzus/1) in the [Google page about rich snippets and structured data](https://developers.google.com/search/docs/guides/intro-structured-data):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!-------------------- 60. microdata of the example, as seen by google (xx) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image060.png?raw=true"
+   alt="Microdata of the example, as seen by Google."
+   width="50%">
 &nbsp;
 <br/>
-![Microdata of the example, as seen by Google](./images/image060.png){width="5.0in" height="2.4758213035870518in"}
 
 Note that the address is a fully featured embedded object in the Person\'s description.
 
-### Live Microdata
+<h4>Live Microdata</h4>
 
-The [Live Microdata Web site](https://foolip.org/microdatajs/live/)  is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
+The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------- 61. example live microdata (xx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image061.jpeg?raw=true"
+   alt="Example of live microdata from the previous example. Microdata are displayed as json objects."
+   width="60%">
 &nbsp;
 <br/>
-![example of live microdata from the previous example. Microdata are displayed as json objects](./images/image061.jpeg){width="6.0in" height="5.615387139107612in"}
 
 And the JSON view of the microdata:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 62.  (xx) ------------------------------->
+<!---------------------------- 62. json view of the microdata (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image062.jpeg?raw=true"
-   alt="JSON view of the microdata"
+   alt="JSON view of the microdata."
    width="40%">
 &nbsp;
 <br/>
@@ -3561,7 +3560,7 @@ And the JSON view of the microdata:
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- Chapter 1-5-3. adding microdata to an html page (xx) ---------------------->
 <!------------------------------------------------------------------------------------------------>
-<ch id="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
+<h3 id="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
 
 <h4>Basic steps</h4>
 
@@ -3595,7 +3594,7 @@ If you are a developer and if you are familiar with object oriented programming,
 <b>Vocabularies are meant to be shared</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 63. time to share (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image063.jpeg?raw=true"
@@ -4631,14 +4630,12 @@ Check the online example below: use the progress cursor to go near the end of th
 ```
 
 Explanations:
-
--   *Line 9*: the JavaScript array that contains the URLs of the videos in the playlist. In this example, we\'ve got only two of them, but if the array is larger the example still works.
-
--   *Line 44*: when the page is loaded, an init() function is called.
-
--   *Lines 34-40*: we use the DOM to get the JavaScript object corresponding to the video element, then define a listener for the ended event. Each time a video ends, the loadAndplayNextVideo() callback is called. As the video element has no src attribute by default, we also preload the first video (call to loadNextVideo() at *line 38*).
-
--   *Lines 17-21*: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources \[currentVideo % sources.length\], we set the src of the video element to sources\[0\], then to sources\[1\], and, as we increment the currentVideo index each time (line 19), if it becomes greater than 1, the modulo (the \"%\" symbol is the modulo in JavaScript) will make it \"loop\" between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.
+<ul>
+<li><i>Line 9</i>: the JavaScript array that contains the URLs of the videos in the playlist. In this example, we've got only two of them, but if the array is larger the example still works.</li>
+<li><i>Line 44</i>: when the page is loaded, an init() function is called.</li>
+<li><i>Lines 34-40</i>: we use the DOM to get the JavaScript object corresponding to the video element, then define a listener for the ended event. Each time a video ends, the loadAndplayNextVideo() callback is called. As the video element has no src attribute by default, we also preload the first video (call to loadNextVideo() at <i>line 38</i>).</li>
+<li><i>Lines 17-21</i>: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources \[currentVideo % sources.length\], we set the src of the video element to sources\[0\], then to sources\[1\], and, as we increment the currentVideo index each time (line 19), if it becomes greater than 1, the modulo (the \"%\" symbol is the modulo in JavaScript) will make it \"loop\" between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.</li>
+</ul>
 
 <h3 id="ch2-2-8">2.2.8 [Advanced\] Extended Examples</h3>
 
@@ -4651,7 +4648,7 @@ Some examples are given \"as is\", such as the custom video player that uses SV
 Please see this example online, originally written by [Chris Heilmann](https://christianheilmann.com/), and tuned by us ;).
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 82.  ---------------------------------------->
+<!-------------------------------------- 82. (xx) ---------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image082.png?raw=true"
@@ -19640,4 +19637,4 @@ The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
-<h3><b><i>07-25-2022 6:35pm</i></b></h3>
+<h3><b><i>07-26-2022 5:13pm</i></b></h3>
