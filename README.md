@@ -350,7 +350,7 @@ If you\'re looking to an easy way to dive into this standardization processes, c
    width="25%" />
 </p>
 
-Another approach is to go and bring feedback on ideas for future technologies: the [W3C Web Platform Community Incubator Group](https://wicg.io/) was built as an easy place to get started to provide feedback on new proposals or bring brand-new proposals for consideration.
+Another approach is to go and bring feedback on ideas for future technologies: the <a href="https://wicg.io/" target="_blank">W3C Web Platform Community Incubator Group</a> was built as an easy place to get started to provide feedback on new proposals or bring brand-new proposals for consideration.
 
 Happy Web building!
 
@@ -374,25 +374,25 @@ W3C\'s primary activity is to develop protocols and guidelines that ensure long-
 
 <h6 align="center">Tim Berners-Lee at his desk in CERN, 1994</h6>
 
-<a href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a> wrote a <a href="https://www.w3.org/History/1989/proposal.html">proposal</a> in 1989 for a system called the World Wide Web. He then created the first Web browser, server, and Web page. He wrote the first specifications for URLs, HTTP, and HTML.
+<a href="https://www.w3.org/People/Berners-Lee/" target="_blank">Tim Berners-Lee</a> wrote a <a href="https://www.w3.org/History/1989/proposal.html" target="_blank">proposal</a> in 1989 for a system called the World Wide Web. He then created the first Web browser, server, and Web page. He wrote the first specifications for URLs, HTTP, and HTML.
 
-In October 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology, Laboratory for Computer Science \[MIT/LCS\] in collaboration with <a href="https://home.cern/">CERN</a>, where the Web originated (see information on the <a href="https://www.w3.org/Daemon/">original CERN Server</a>, with support from DARPA and the <a href="https://ec.europa.eu/index_en.htm">European Commission</a>.
+In October 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology, Laboratory for Computer Science \[MIT/LCS\] in collaboration with <a href="https://home.cern/" target="_blank">CERN</a>, where the Web originated (see information on the <a href="https://www.w3.org/Daemon/" target="_blank">original CERN Server</a>, with support from DARPA and the <a href="https://ec.europa.eu/index_en.htm" target="_blank">European Commission</a>.
 
-In April 1995, <a href="https://www.inria.fr/">Inria</a> became the first European W3C host, followed by <a href="https://www.keio.ac.jp/">Keio University of Japan</a> (Shonan Fujisawa Campus) in Asia in 1996. In 2003, <a href="https://www.ercim.eu/">ERCIM</a> took over the role of European W3C Host from Inria. In 2013, W3C announced <a href="https://ev.buaa.edu.cn/">Beihang University</a> as the fourth Host.
+In April 1995, <a href="https://www.inria.fr/" target="_blank">Inria</a> became the first European W3C host, followed by <a href="https://www.keio.ac.jp/" target="_blank">Keio University of Japan</a> (Shonan Fujisawa Campus) in Asia in 1996. In 2003, <a href="https://www.ercim.eu/" target="_blank">ERCIM</a> took over the role of European W3C Host from Inria. In 2013, W3C announced <a href="https://ev.buaa.edu.cn/" target="_blank">Beihang University</a> as the fourth Host.
 
-In addition to these four Host locations that employ W3C staff, there are <a href="https://www.w3.org/Consortium/Offices/staff">W3C Offices</a> around the globe that support the developer communities in their regions and organize local events. Find the one next to your place!
+In addition to these four Host locations that employ W3C staff, there are <a href="https://www.w3.org/Consortium/Offices/staff" target="_blank">W3C Offices</a> around the globe that support the developer communities in their regions and organize local events. Find the one next to your place!
 
 <h4>A few figures</h4>
 
 As of June 2020, W3C:
 <ul>
-<li>Is a <a href="https://www.w3.org/Consortium/Member/List)-driven">member</a>-driven organization composed of nearly 430 companies, universities, start-ups, etc. from all over the world.</li>
-<li>Holds 44 <a href="https://www.w3.org/groups/">technical groups</a>, including Working and Interest Groups where technical specifications are discussed and developed.</li>
-<li>Published over 7,181 <a href="https://www.w3.org/TR/">published technical reports</a>, including 430 Web standards (or W3C Recommendations) - since January 1st,1995.</li>
-<li>Runs a <a href="https://www.w3.org/Consortium/Translation/">translation program</a> to foster the translation of its specifications: see the <a href="https://www.w3.org/Consortium/Translation/matrix.html">translation matrix</a> currently listing 304 available translations of W3C recommendations.</li>
-<li>Hosts 337 <a href="https://www.w3.org/community/groups/">Community and Business Groups</a>, where developers, designers, and anyone passionate about the Web have a place to hold discussions and publish ideas.</li>
+<li>Is a <a href="https://www.w3.org/Consortium/Member/List)-driven" target="_blank">member</a>-driven organization composed of nearly 430 companies, universities, start-ups, etc. from all over the world.</li>
+<li>Holds 44 <a href="https://www.w3.org/groups/" target="_blank">technical groups</a>, including Working and Interest Groups where technical specifications are discussed and developed.</li>
+<li>Published over 7,181 <a href="https://www.w3.org/TR/" target="_blank">published technical reports</a>, including 430 Web standards (or W3C Recommendations) - since January 1st,1995.</li>
+<li>Runs a <a href="https://www.w3.org/Consortium/Translation/" target="_blank">translation program</a> to foster the translation of its specifications: see the <a href="https://www.w3.org/Consortium/Translation/matrix.html">translation matrix</a> currently listing 304 available translations of W3C recommendations.</li>
+<li>Hosts 337 <a href="https://www.w3.org/community/groups/" target="_blank">Community and Business Groups</a>, where developers, designers, and anyone passionate about the Web have a place to hold discussions and publish ideas.</li>
 <li>Gathers over 12,912 active participants constituting the W3C community.</li>
-<li>Has a <a href="https://www.w3.org/People/">technical staff</a> composed of 64 people, spread on all five continents.</li>
+<li>Has a <a href="https://www.w3.org/People/" target="_blank">technical staff</a> composed of 64 people, spread on all five continents.</li>
 </ul>
 
 <div align="right">
@@ -427,11 +427,11 @@ One analogy equates the Internet to a road network where the Web is a car, the e
 <li>Navigation to other pages occurs through hyperlinks.</li>
 </ul>
 
-The internet is a global network of billions of servers, computers, and other <a href="https://www.lifewire.com/computer-hardware-2625895">hardware</a> devices. Each device can connect with any other device as long as both are connected to the internet using a valid <a href="https://www.lifewire.com/what-is-an-ip-address-2625920">IP address</a>. The internet makes the information sharing system known as the web possible.
+The internet is a global network of billions of servers, computers, and other <a href="https://www.lifewire.com/computer-hardware-2625895" target="_blank">hardware</a> devices. Each device can connect with any other device as long as both are connected to the internet using a valid <a href="https://www.lifewire.com/what-is-an-ip-address-2625920">IP address</a>. The internet makes the information sharing system known as the web possible.
 
-The web, which is short for <a href="https://www.lifewire.com/around-the-web-4781469">World Wide Web</a>, is one of the ways information is shared on the internet (others include <a href="https://www.lifewire.com/electronic-mail-overview-1164107">email</a>, File Transfer Protocol <a href="https://www.thoughtco.com/ftp-defined-2654479">(FTP)</a>, and <a href="https://www.lifewire.com/what-is-instant-messaging-2483319">instant messaging</a> services. The web is composed of billions of connected digital documents that are viewed in a web browser, such as Chrome, <a href="https://www.lifewire.com/what-is-safari-4173608">Safari</a>, Microsoft Edge, <a href="https://www.lifewire.com/the-history-of-firefox-446233">Firefox</a>, and others.
+The web, which is short for <a href="https://www.lifewire.com/around-the-web-4781469" target="_blank">World Wide Web</a>, is one of the ways information is shared on the internet (others include <a href="https://www.lifewire.com/electronic-mail-overview-1164107">email</a>, File Transfer Protocol <a href="https://www.thoughtco.com/ftp-defined-2654479">(FTP)</a>, and <a href="https://www.lifewire.com/what-is-instant-messaging-2483319">instant messaging</a> services. The web is composed of billions of connected digital documents that are viewed in a web browser, such as Chrome, <a href="https://www.lifewire.com/what-is-safari-4173608">Safari</a>, Microsoft Edge, <a href="https://www.lifewire.com/the-history-of-firefox-446233">Firefox</a>, and others.
 
-Think of the internet as a library. Think of the books, magazines, newspapers, DVDs, <a href="https://www.lifewire.com/what-are-audiobooks-2438535">audiobooks</a>, and other media it contains as websites.
+Think of the internet as a library. Think of the books, magazines, newspapers, DVDs, <a href="https://www.lifewire.com/what-are-audiobooks-2438535" target="_blank">audiobooks</a>, and other media it contains as websites.
 
 Both the internet and the web serve unique purposes but work hand in hand to provide information, entertainment, and other services to the public.
 
@@ -451,11 +451,11 @@ The credited inventor of the World Wide Web is Tim Berners-Lee.
 
 You have to access the internet to view the World Wide Web and the web pages or other content it contains. The web is the collective name for all the pages, sites, documents, and other media that are served to visitors.
 
-The web consists of digital documents, referred to as web pages, that are viewable through <a href="https://www.lifewire.com/what-is-a-browser-446234">web browser</a> software on devices like smartphones, tablets, and computers. These pages contain many types of content, including static content like encyclopedia pages, but also dynamic content like <a href="https://www.lifewire.com/a-primer-to-ebay-basics-2483229" target="_blank" rel="noopener noreferrer">eBay</a> sales, stocks, weather, news, and traffic reports.
+The web consists of digital documents, referred to as web pages, that are viewable through <a href="https://www.lifewire.com/what-is-a-browser-446234" target="_blank">web browser</a> software on devices like smartphones, tablets, and computers. These pages contain many types of content, including static content like encyclopedia pages, but also dynamic content like <a href="https://www.lifewire.com/a-primer-to-ebay-basics-2483229" target="_blank" rel="noopener noreferrer">eBay</a> sales, stocks, weather, news, and traffic reports.
 
 A collection of connected web pages that are publicly accessible and under a single domain name is referred to as a website.
 
-Web pages are connected using <a href="https://www.lifewire.com/hypertext-transfer-protocol-817944">Hypertext Transfer Protocol</a> (HTTP), the coding language that allows you to visit any public web page. By clicking a <a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287">hyperlink</a> or entering a <a href="https://www.lifewire.com/what-is-a-url-2626035" target="_blank" rel="noopener noreferrer">Uniform Resource Locator</a> (URL), the browser uses this unique address to find and access a web page. <a href="https://www.lifewire.com/best-search-engines-2483352">Search engines</a> like Google make it easy to filter the billions of web pages now populating the web by locating the articles, videos, and other media you want to find based on your search criteria.
+Web pages are connected using <a href="https://www.lifewire.com/hypertext-transfer-protocol-817944"  target="_blank">Hypertext Transfer Protocol</a> (HTTP), the coding language that allows you to visit any public web page. By clicking a <a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287">hyperlink</a> or entering a <a href="https://www.lifewire.com/what-is-a-url-2626035" target="_blank" rel="noopener noreferrer">Uniform Resource Locator</a> (URL), the browser uses this unique address to find and access a web page. <a href="https://www.lifewire.com/best-search-engines-2483352">Search engines</a> like Google make it easy to filter the billions of web pages now populating the web by locating the articles, videos, and other media you want to find based on your search criteria.
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -817,7 +817,7 @@ Note that the H2, article, article header, etc. will be styled using these rules
 
 Next, in each article in the section we have a header (to display the article title), paragraphs (article content), and so on.
 
-Example for the first blog article:
+<h5>Example for the first blog article:</h5>
 
 ```
 <section>
@@ -889,8 +889,7 @@ Here is the CSS for the \<figcaption\> element we have used in the example (we
 ```
 
 <h4>Use an &lt;aside&gt; element to display a tag cloud on the ... side of the main content</h4>
-
-After the long \<section\> element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, \"aside\"! This is done using - you already guessed it - an \<aside\> element:
+<p>After the long &lt;section&gt; element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, "aside"! This is done using - you already guessed it - an &lt;aside&gt; element:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 19. image of tag cloud defined as aside element (20) --------------------->
@@ -918,7 +917,7 @@ After the long \<section\> element that contains all the blog articles display
 ...
 ```
 
-We are not going to show the complete CSS here as it uses some tricks to display the list as a \"real tag cloud\" that uses JavaScript for handling events, etc. Those who are curious can look at <a href="https://jsbin.com/bucokav/edit?html,output">the code of the online example</a>.
+<p>We are not going to show the complete CSS here as it uses some tricks to display the list as a "real tag cloud" that uses JavaScript for handling events, etc. Those who are curious can look at <a href="https://jsbin.com/bucokav/edit?html,output" target="_blank">the code of the online example</a>.</p>
 
 <h4>Here is the CSS for the &lt;aside&gt; element:</h4>
 
@@ -939,9 +938,9 @@ aside .tag-cloud {
 }
 ...
 ```
-
+<p>
 We used a float:right CSS rule to put the tag cloud on the right\... In the following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
-
+</p>
 <h4>Here is the result:</h4>
 
 <!------------------------------------------------------------------------------------------------>
@@ -964,7 +963,7 @@ We used a float:right CSS rule to put the tag cloud on the right\... In the fo
    width="25%" />
 </p>
 
-Finally, we added a \<footer\> element (<i>lines 12-14</i> below) after the tag cloud definition, to display a page footer:
+<p>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below) after the tag cloud definition, to display a page footer:</p>
 
 ```
 <html>
@@ -994,7 +993,7 @@ footer {
 }
 ```
 
-And here is the result at the bottom of the page:
+<h5>And here is the result at the bottom of the page:</h5>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------- 22. the resulting footer at the bottom of the page (21) -------------------->
@@ -1007,7 +1006,7 @@ And here is the result at the bottom of the page:
 
 <h4>More on &lt;article&gt; and &lt;section&gt;</h4>
 
-Can an \<article\> contain a \<section\>?
+<p>Can an &lt;article&gt; contain a &lt;section&gt;?
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 23. picture of eisher (22) ---------------------------------->
@@ -1017,12 +1016,11 @@ Can an \<article\> contain a \<section\>?
    alt="Picture of eisher."
    width="25%" />
 </p>
+<p>It may not be clear whether a &lt;section&gt; may contain one or several &lt;article&gt; elements or if an &lt;article&gt; may contain one or several &lt;section\&gt;elements.</p>
 
-It may not be clear whether a \<section\> may contain one or several \<article\> elements or if an \<article\> may contain one or several \<section\> elements.
+<p>The &lt;article&gt; element was designed for stand-alone parts of a document that could eventually be syndicated in RSS streams.</p>
 
-The \<article\> element was designed for stand-alone parts of a document that could eventually be syndicated in RSS streams.
-
-\<section\> elements are used to cut a logical part into subparts.
+<p>&lt;section&gt; elements are used to cut a logical part into subparts.</p>
 
 <h4>An &lt;article&gt; may be cut into different &lt;section&gt; elements!</h4>
 
