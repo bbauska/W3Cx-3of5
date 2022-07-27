@@ -1429,7 +1429,9 @@ Changes have been made to particular elements in HTML5 making it simpler to u
 </html>
 ```
 
-**[`^        back to top        ^`](#table-of-contents)**
+<div align="right">
+  <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
 
 Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/">this source</a>.
 
@@ -2548,7 +2550,7 @@ We need to add a heading in the \<nav\> element. This will both fix the outlin
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image033.jpeg?raw=true"
-   alt="Good outline without the untitled nav"
+   alt="Good outline without the untitled nav."
    width="55%" />
 &nbsp;
 <br/>
@@ -2619,7 +2621,7 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image034.jpeg?raw=true"
-   alt="Blog with embedded table of contents"
+   alt="Blog with embedded table of contents."
    width="50%" />
 &nbsp;
 <br/>
@@ -2683,7 +2685,7 @@ You can look at the complete CSS code in the interactive example below (click on
 
 Here we show how to make a 3 column layout using the CSS float property.
 
-<b>HTML code:</b>
+<h4>HTML code:</h4>
 
 ```
 1.  <header>
@@ -2709,7 +2711,7 @@ Here we show how to make a 3 column layout using the CSS float property.
 
 Instead of having one element with a float:left and one element with a float:right property, we instead use float:left for all three of them, and we give a  width:30% CSS property value to each \<section\>. We also set a small margin so that the colums have a gap between them.
 
-<b>Look at the CSS code in the example below:</b>
+<h4>Look at the CSS code in the example below:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 37.  (xx) ------------------->
@@ -2724,7 +2726,8 @@ Instead of having one element with a float:left and one element with a float:
 <h4>Example #3: same result using the CSS flex property</h4>
 
 This example uses the CSS flex property to achieve a result similar to the one shown in Example 2.
-There are many articles on Flexbox and we recommend those from Rachel Andrew on Smashing Magazine: \"[Use cases for Flexbox](https://www.smashingmagazine.com/2018/10/flexbox-use-cases/)\", \"[Flexbox: how big is that flexible box](https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/)\", etc.
+There are many articles on Flexbox and we recommend those from Rachel Andrew on Smashing Magazine: \"<a href="https://www.smashingmagazine.com/2018/10/flexbox-use-cases/">Use cases for Flexbox</a>", \"<a href="https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/">Flexbox: how big is that flexible box</a>", etc.
+
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 38.  (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -2773,6 +2776,10 @@ In the screenshot below, taken from the W3C specification page, the text next 
 &nbsp;
 <br/>
 
+<div align="right">
+  <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
+
 The \<details\> element generates a simple widget to show/hide element contents, optionally by clicking on its child \<summary\> element.
 
 Here is an example of what can be done using these elements: see the <a href="https://jsbin.com/yociyel/1/edit?html,css,js,output" target="_blank">online version on JSBin</a>:
@@ -2788,7 +2795,6 @@ Here is an example of what can be done using these elements: see the <a href="h
 <br/>
 
 And here is what is displayed after clicking on the small arrow-shaped icon to the left of the summary:
-
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 42. Example of summary details unfolded (xx) ------------------------------->
@@ -19638,5 +19644,9 @@ navigator.geolocation.getCurrentPosition(success, error);
 The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
+
+<div align="right">
+  <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
 
 <h3><b><i>07-26-2022 5:13pm</i></b></h3>
