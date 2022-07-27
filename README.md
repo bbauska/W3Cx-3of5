@@ -1429,6 +1429,8 @@ Changes have been made to particular elements in HTML5 making it simpler to u
 </html>
 ```
 
+**[`^        back to top        ^`](#table-of-contents)**
+
 Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/">this source</a>.
 
 ```
