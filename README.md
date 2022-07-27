@@ -3076,7 +3076,6 @@ Examples:
   <li> Cooking time:     <time datetime="PT10M">10 minutes</time> </li>
 </ul>
 ```
-
 <h4>The &lt;time&gt; element with no attributes</h4>
 
 Used without attributes, the value between the opening \<time\> and closing \</time\> should follow the syntax given by the specification so that machines can understand it (same syntax as the one presented for the datetime attribute in the previous section). However it is recommended to use a datetime attribute, as it gives more freedom in the way you can display the date/time/duration in a human-readable form. 
@@ -3104,16 +3103,16 @@ Used without attributes, the value between the opening \<time\> and closing \
 
 The HTML \<mark\> tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.
 
-Some use cases:
+<h4>Some use cases:</h4>
 <ul>
 <li>Display search results with search strings highlighted in the results.</li.
 <li>Highlight important parts of a text, such as "quoting parts", etc.</li>
-<li>Replace <strong> and <em> with <mark> when suitable.</li>
+<li>Replace &lt;strong&gt; and &lt;em&gt; with &lt;mark&gt; when suitable.</li>
 </ul>
 
 Example 1: <https://jsbin.com/tafelic/edit?html,output>
 
-Source code:
+<h4>Source code:</h4>
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -3130,17 +3129,16 @@ Source code:
 Example 2:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!-------------------------- 52. another example for marking code (xx) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image052.jpeg?raw=true"
+   alt="Another example for marking code."
+   width="45%">
 &nbsp;
 <br/>
-![Another example for marking code](./images/image052.jpeg){width="4.6875in" height="0.9375in"}
 
-Source code:
+<h4>Source code:</h4>
 ```
 <body>
 <pre>
@@ -3161,7 +3159,7 @@ For example:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image053.jpeg?raw=true"
-   alt="Style the mark element with CSS"
+   alt="Style the mark element with CSS."
    width="45%">
 &nbsp;
 <br/>
@@ -3249,7 +3247,7 @@ The above example will cause the browser that invoked this server-side code to
 <h4>To download a file using an arbitrary name: the download attribute</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------ 54. picture of a road sign with the words 'new way' (54) ---------->
+<!------------------ 54. picture of a road sign with the words 'new way' (54) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image054.jpeg?raw=true"
@@ -3283,7 +3281,7 @@ This will indeed force the download of an image with a filename different from i
 <h4>Interesting applications: serverless download</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 56. no server picture (xx) ------------------------------->
+<!--------------------------------- 56. no server picture (xx) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image056.jpeg?raw=true"
@@ -3301,7 +3299,7 @@ We won\'t detail this demo here, but take a look if you are curious to see wha
 We have also put the simplified [source code of this demo on JSBin.com](https://jsbin.com/muluwey/1/edit?html,css,js,output) for you to play with.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------------------ 57. serverless download demo (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image057.png?raw=true"
@@ -3467,11 +3465,11 @@ Different use cases:
 
 After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 58.  (xx) ------------------------------->
+<!---------------------- 58. picture of diverse tools used by workers (xx) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image058.jpeg?raw=true"
-   alt="Picture of diverse tools used by workers"
+   alt="Picture of diverse tools used by workers."
    width="20%">
 &nbsp;
 <br/>
@@ -3482,33 +3480,33 @@ One of the most popular resources for testing microdata (as well as microformats
 
 Let\'s have a look now at a (small) example of an about page. It renders as a very simple paragraph that explains who Michel Buffa is\... But we embedded Microdata, so it\'s interesting to see how a search engine sees it, and how it may produce \"augmented search results\".
 
-[Online example at JsBin](https://jsbin.com/gunuzus/1/edit?html,output)
+<a href="https://jsbin.com/gunuzus/1/edit?html,output">Online example at JsBin</a>
 
 <h4>Source code:</h4>
 ```
-1.  \<!DOCTYPE html\>
-2.  \<html lang=\"en\"\>
-3.  \<head\>
-4.  \<meta charset=utf-8 /\>
-5.  \<title\>Michel Buffa\</title\>
-6.  \</head\>
-7.  \<body\>
-8.  \<div [itemscope itemtype=\"https://schema.org/Person\"]\>
-9.      My name is \<span itemprop=\"name\"\>Michel Buffa\</span\>,
-10.     And I\'m a \<span itemprop=\"jobTitle\"\>professor/researcher\</span\> at
-11.      \<a href=\"https://www.i3s.unice.fr/\" itemprop=\"affiliation\"\>I3S
-12.     Laboratory\</a\> in the south of France, near the city of Nice. My
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset=utf-8 />
+5.  <title>Michel Buffa</title>
+6.  </head>
+7.  <body>
+8.  <div [itemscope itemtype="https://schema.org/Person"]>
+9.      My name is <span itemprop="name">Michel Buffa</span>,
+10.     And I'm a <span itemprop="jobTitle">professor/researcher</span> at
+11.      <a href="https://www.i3s.unice.fr/" itemprop="affiliation">I3S
+12.     Laboratory</a> in the south of France, near the city of Nice. My
 13.     email
-14.     is : \<span itemprop=\"email\"\>micbuffa@gmail.com\</span\>.
+14.     is : <span itemprop="email">micbuffa@gmail.com</span>.
 15.     I live in the city of
-16.     \<span itemprop=\"address\" itemscope
-17.         [itemtype=\"https://schema.org/PostalAddress\"]\>
-18.          \<span itemprop=\"addressLocality\"\>Biot\</span\>, in a region named
-19.          \<span itemprop=\"addressRegion\"\>Alpes Maritimes\</span\>
-20.     \</span\>
-21. \</div\>
-22. \</body\>
-23. \</html\>
+16.     <span itemprop="address" itemscope
+17.         [itemtype="https://schema.org/PostalAddress"]>
+18.          <span itemprop="addressLocality">Biot</span>, in a region named
+19.          <span itemprop="addressRegion">Alpes Maritimes</span>
+20.     </span>
+21. </div>
+22. </body>
+23. </html>
 ```
 
 Rendering of the page in a browser:
@@ -5263,7 +5261,7 @@ It is possible to style using CSS classes as part of a cue value, using the \<
 &nbsp;
 <br/>
 
-CSS rules used in this example:
+<h4>CSS rules used in this example:</h4>
 ```
 1.  <style type="text/css">
 2.       ::cue(.myclass) { color: red; }
@@ -16894,11 +16892,11 @@ The rule at *line 1* says that any time we click on an input field, it will en
 
 The rules at *lines 8* and 1*1* target the input fields with a required attribute. They will change the background by displaying a small green or red icon, corresponding to the valid/invalid status of the input field.
 
-### Use the title attribute for specifying a custom message
+<h4>Use the title attribute for specifying a custom message</h4>
 
 You can simply use the input\'s title attribute to provide a message for pattern-mismatches, and more generally for all validation errors. This solution is really neat and doesn\'t require JavaScript!
 
-Try the [online example at JSBin](https://jsbin.com/locedoy/1/edit?html,output), or try it here in your browser (type invalid values and look at the custom messages):
+Try the <a href="https://jsbin.com/locedoy/1/edit?html,output">online example at JSBin</a>, or try it here in your browser (type invalid values and look at the custom messages):
 
 Top of Form
 
