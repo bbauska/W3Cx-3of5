@@ -2203,24 +2203,24 @@ The outline of the last example looks like this:
 
 Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning root\", and would also need a heading.
 
-<b>Final good version:</b>
+<h4>Final good version:</h4>
 
 ```
-> <body>
->     <b><h1>Example Blog</h1></b>
->     <section>
->        <header>
->           <b><h2>Blog post of April 2020</h2></b>
->           <p>Posted by Michel Buffa...</p>
->        </header>
->       <p>Content of the blog post...</p>
->    </section>
-> </body>
+<body>
+    <b><h1>Example Blog</h1></b>
+    <section>
+       <header>
+          <b><h2>Blog post of April 2020</h2></b>
+          <p>Posted by Michel Buffa...</p>
+       </header>
+      <p>Content of the blog post...</p>
+   </section>
+</body>
 ```
 
 In red, the sectioning root (\<body\>) and the sectioning elements (\<section\> here\...), each have a heading.
 
-<b>To sum up:</b>
+<h4>To sum up:</h4>
 
 -   Always use a heading element after a sectioning element, for example \<section\><b>\<Hx\>\...\</Hx\>\...</b>\</section\>, and after \<body\>, where <b>x</b> can be 1..6,
 
@@ -2232,7 +2232,7 @@ The \<header\> element is just a container. It is not taken into account for d
 
 You can use heading elements \<h1\>\...\<h6\> in a \<header\> but be careful if you use more than one, as the rules explained in the previous part of the course will apply and may generate implicit \"sections\" in the header.
 
-This example has two headings in the \<header\>:
+<h5>This example has two headings in the &lt;header&gt;:</h5>
 
 ```
 1.  <section>
@@ -2267,7 +2267,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 5.  </header>
 ```
 
-<h4><b>Best practice #2</b>: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;...&lt;h6&gt;</h4>
+<h4>Best practice #2: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;...&lt;h6&gt;</h4>
 
 The example below defines several implicit \"sections\" by using \<Hx\> directly (at *lines 7 and 9*):
 
@@ -2288,7 +2288,7 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 12. </body>
 ```
 
-<b>Better version (best practice):</b>
+<h4>Better version (best practice):</h4>
 
 ```
 1.  <body>
@@ -3005,6 +3005,7 @@ It provides both a human readable part (the part between \<time\> and \</time
 The machine readable part adds semantics that can be used by search engines for indexing, by browsers or by browser extensions, or by JavaScript code. Useful scenarios include generating alerts for birthdays, automatically adding dates or events that contain \<time\> elements in a calendar, etc.
 
 <h4>Example:</h4>
+
 ```
 1.  We open at <time>10:00</time> every morning.
 2.  
@@ -3023,28 +3024,65 @@ The datetime attribute can be used for indicating a date/time or a duration.
 Supports different specifications of time such as \"a year\", \"a month in a year\", \"a week in a year\", \"a time\", etc\... 
 
 <h4>Here are some examples:</h4>
+<!---------------------------------------------------------------------------------------------->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  Different syntaxes of the datetime attribute   
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
 
-  datetime attribute values                      Interpretation
+.left {
+  width: 35%;
+}
 
-  \<time datetime=\"2020\"\>                     The year 2020
+.right {
+  width: 65%;
+}
 
-  \<time datetime=\"2020-11\"\>                  November 2020
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
 
-  \<time datetime=\"11-13\"\>                    November 13th (any year)
+<h3>Different syntaxes of the datetime attribute</h3>
 
-  \<time datetime=\"2020-W21\"\>                 Week 21 from year 2020
-
-  \<time datetime=\"2020-11-13 09:00\"\>         November 13th year 2020, time = 9:00
-
-  \<time datetime=\"2020-11-13T09:00\"\>         Same as previous example, both syntaxes are supported, with and without the \"T\" between date and time.
-
-  \<time datetime=\"09:00Z\"\>                   9:00 in the morning, GMT
-
-  \<time datetime=\"09:00-05\"\>                 9:00 in the morning, GMT minus 5 hours
-
-  \<time datetime=\"09:00+05:45\"\>              9:00 in the morning, GMT plus 5 hours 45 minutes, (for example, Nepal is 5:45 ahead of  GMT)
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+    <h2>datetime attribute value</h2>
+    <p>&lt;time datetime="2020"&gt;</p>
+    <p>&lt;time datetime="2020-11"&gt;</p>
+    <p>&lt;time datetime="11-13"&gt;</p>
+    <p>&lt;time datetime="2020-W21"&gt;</p>
+    <p>&lt;time datetime="2020-11-13 09:00"&gt;</p>
+    <p>&lt;time datetime="2020-11-13TO9:00"&gt;</p>
+    <p>&lt;time datetime="09:00%"&gt;</p>
+    <p>&lt;time datetime="09:00-05"&gt;</p>
+    <p>&lt;time datetime="09:00+05:45"&gt;</p>
+  </div>
+  <div class="column right" style="background-color:#bbb;">
+    <h2>Interpretation</h2>
+    <p>The year 2020</p>
+    <p>November 2020</p>
+    <p>November 13th (any year)</p>
+    <p>Week 21 from year 2020</p>
+    <p>November 13th year 2020, time = 9:00</p>
+    <p>Same as previous example, both syntaxes are supported, with and without the "T" between date and time.</p>
+    <p>9:00 in the morning, GMT</p>
+    <p>9:00 in the morning, GMT minus 5 hours</p>
+    <p>9:00 in the morning, GMT plus 5 hours 45 minutes, (for example, Nepal is 5:45 ahead of GMT</p>
+  </div>
+</div>
 
 <h4>Duration values</h4>
 
