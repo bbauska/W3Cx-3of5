@@ -1433,7 +1433,7 @@ Changes have been made to particular elements in HTML5 making it simpler to u
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/">this source</a>.
+<h5>Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/" >this source</a>).</h5>
 
 ```
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
@@ -1453,12 +1453,12 @@ Let's compare it to the HTML4 minimal document below (taken from <a href="https
 <h4>Simpler character set definition</h4>
 
 One word about the <meta charset=\"utf-8\"\> at line 4 in the HTML5 version: it is a <b>best practice</b> to declare the character set of your document to protect against 
-<a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7">a serious security risk</a>. For more details, please refer to the \"Why Internationalization is 
+<a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7" >a serious security risk</a>. For more details, please refer to the \"Why Internationalization is 
 important\" section in the Course intro chapter.
 
 <h4>No more complicated DOCTYPE definitions</h4>
 
-The \"DOCTYPE\" (Document Type Declaration) is used by tools such as HTML validators (i.e.  [the W3C validator](https://validator.w3.org/)), 
+The \"DOCTYPE\" (Document Type Declaration) is used by tools such as HTML validators (i.e.  <a href="https://validator.w3.org/">the W3C validator</a>), 
 and specifies the rules used by  an HTML or an XHTML page. These rules are contained in special documents called \"Document Type Definitions\" 
 (also abbreviated as DTDs), written in a language that may seem a bit barbaric to humans (they are intended to be read by software), and hosted by W3C.
 
@@ -1475,13 +1475,15 @@ Old HTML1 Web pages will not be rendered the same way as new HTML5 pages, since,
 which was even more complicated as one had to choose between three different possibilities (doctypes could be transitional, strict, or frameset). Most of the time, the doctype definition was copied and pasted from one document 
 to another and was nearly impossible to memorize.
 
-<h5>With HTML5, there is only one way to indicate the doctype, and it\'s so simple there is no reason to forget it:</h5>
+<h5>With HTML5, there is only one way to indicate the doctype, and it's so simple there is no reason to forget it:</h5>
+
 ```
 1.  <!doctype html>
 ```
+
 <h4>The "TYPE" attribute is optional</h4>
 
-With a rel=\"stylesheet\" attribute, it is no longer necessary to indicate type=\"text/css\" (from [the specification](https://www.w3.org/TR/html5/links.html#link-type-stylesheet): \"the default type for resources given by the  [stylesheet](https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet)  keyword is text/css.\")
+With a rel=\"stylesheet\" attribute, it is no longer necessary to indicate type=\"text/css\" (from <a href="https://www.w3.org/TR/html5/links.html#link-type-stylesheet">the specification</a>: \"the default type for resources given by the <a href="https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet">stylesheet</a> keyword is text/css.\")
 
 The \"type\" attribute is not needed in HTML5, and even old browsers will use text/css as the default type for stylesheets today. So, either way, you can omit the \"type\" attribute altogether and use:
 ```
@@ -1493,7 +1495,7 @@ instead of:
 ```
 We will not go into detail about the \<link\> element, but the fact that the type attribute is becoming optional shows the current direction taken by HTML5: towards greater simplicity.
 
-Please see how to include a JavaScript file in our page:
+<h5>Please see how to include a JavaScript file in our page:</h5>
 ```
 1.  <script src="script.js"></script>
 ```
