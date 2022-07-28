@@ -630,7 +630,7 @@ the W3C specification about this element):
 
 [**\<figure\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [**\<figcaption\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
 
-[**\<main\>**](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                 The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. **There can be only one \<main\> element in a document.**
+[**\<main\>**](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                 The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one \<main\> element in a document.</b>
 
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
 
@@ -1141,7 +1141,7 @@ The \<section\>, \<article\>, \<nav\> and \<aside\> elements are called <b>
 
 The HTML5 specification says that \"each sectioning element potentially has a heading and has also an outline associated\".
 
-\<h1\>\...\<h6\> are called **headings**, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
+\<h1\>\...\<h6\> are called <b>headings</b>, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
 
 ```
 <body>
@@ -1714,7 +1714,7 @@ Now, we have one big \<section\> element that contains a set of \<article\> 
 > </section>
 ```
 
-<b>And here is the CSS:</b>
+<h4>And here is the CSS:</h4>
 
 ```
 section {
@@ -2129,7 +2129,7 @@ Let\'s clarify this by looking at some example code:
 </body>
 ```
 
-The corresponding outline is:
+<h4>The corresponding outline is:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 26. outline of previous example (45) ------------------------------->
@@ -2149,13 +2149,13 @@ In the above example, please note two things:
 
 <h3 id="ch1-3-6">1.3.6 Best Practices When Using Sectioning Elements</h3>
 
-<h4><b>Best practice #1</b>: always add a heading to explicit sectioning content</h4>
+<h4>Best practice #1: always add a heading to explicit sectioning content</h4>
 
 It\'s always better - mainly for accessibility reasons - to include a heading (a \<h1\>, \<h2\>\...\<h6\>) in each sectioning element (\<section\>, \<article\>, \<nav\>, \<aside\>), but also after the \<body\> element (called a \"sectioning root\"). 
 
 Here are some examples:
 
-<b>Good (heading in each explicit section):</b>
+<h4>Good (heading in each explicit section):</h4>
 
 ```
 <section>
@@ -2164,7 +2164,7 @@ Here are some examples:
 </section>
 ```
 
-<b>Good (heading  in a \<header\> does not change anything)</b>
+<h4>Good (heading in a &lt;header&gt; does not change anything)</h4>
 ```
 <section>
    <b><header></b>
@@ -2175,7 +2175,7 @@ Here are some examples:
 </section>
 ```
 
-<b>Bad (there is no Hx after the &lt;section&gt; - no heading):</b>
+<h4>Bad (there is no Hx after the &lt;section&gt; - no heading):</h4>
 
 ```
 <section>
@@ -2189,9 +2189,9 @@ Here are some examples:
 
 The last example is bad for accessibility reasons. A screen reader that vocalizes the page will just say \"Entering section\", while in the previous two good examples it would say \"entering section with heading Blog Posts of April 2020\". You can also check if your headings and sectioning elements are ok by using a browser extension that displays the outline of the document (just search for \"html5 outliner\" in your browser\'s extension search engine).
 
-<b>UPDATE: </b>For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as [table-of-contents-crx](https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f) for Chrome or [Outline sidebar](https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search) for Firefox.
+<b>UPDATE:</b> For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">Outline sidebar</a> for Firefox.
 
-The outline of the last example looks like this:
+<h5>The outline of the last example looks like this:</h5>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 27. outline of the last example (46) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -2219,13 +2219,12 @@ Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning
 </body>
 ```
 
-In red, the sectioning root (\<body\>) and the sectioning elements (\<section\> here\...), each have a heading.
+The sectioning root (\<body\>) and the sectioning elements (\<section\> here\...), each have a heading.
 
 <h4>To sum up:</h4>
-
--   Always use a heading element after a sectioning element, for example \<section\><b>\<Hx\>\...\</Hx\>\...</b>\</section\>, and after \<body\>, where <b>x</b> can be 1..6,
-
--   Or, use a \<header\> element, like in \<section\><b>\<header\>\<Hx\>\...\</Hx\>\.....\</header\></b>\...\</section\>
+<ul>
+<li>Always use a heading element after a sectioning element, for example &lt;section&gt;&lt;Hx&gt;...&lt;Hx&gt;...&lt;section&gt;, and after &lt;body&gt;, where x can be 1..6,
+<li>Or, use a &lt;header&gt; element, like in &lt;section&gt;&lt;header&gt;&lt;Hx&gt;...&lt;Hx&gt;.....&lt;header&gt;...&lt;section&gt;
 
 <h4>More about the &lt;header&gt; element</h4>
 
@@ -2270,7 +2269,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 
 <h4>Best practice #2: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;...&lt;h6&gt;</h4>
 
-The example below defines several implicit \"sections\" by using \<Hx\> directly (at *lines 7 and 9*):
+<p>The example below defines several implicit "sections" by using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):</p>
 
 <h4>Ok version (no explicit sections everywhere):</h4>
 
@@ -2310,10 +2309,10 @@ The example below defines several implicit \"sections\" by using \<Hx\> direc
 16. </body>
 ```
 
-Both of the examples above are semantically identical and produce the same outline:
+<h5>Both of the examples above are semantically identical and produce the same outline:</h5>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 29. outline of previous examples (48) ----------------------------->
+<!---------------------------- 29. outline of previous example (48) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image029.jpeg?raw=true"
@@ -2349,10 +2348,10 @@ This example is a simple document, with a hyperlink that, once clicked, displays
 14. </section>
 15. <aside>
 16.      <h3>Table of contents</h3>
-17.      <b><a href="javascript:(function(){...})();"</b>
-18. <b>        title="TableDeMatiere"></b>
-19. <b>        Click here to display the table of contents!</b>
-20. <b>     </a></b>
+17.      <a href="javascript:(function(){...})();"
+18.         title="TableDeMatiere">
+19.         Click here to display the table of contents!
+20.      </a>
 21. </aside>
 22. </body>
 ```
@@ -3185,17 +3184,16 @@ If you don\'t like the default yellow background, you may use CSS to change the 
 
 Everyone knows the classic way to make hyperlinks, using \<a href=\"\...\"\>some text\</a\>. What happens when you click on the hyperlink depends on the MIME type received by the browser. If you link to a file the browser knows how to render (an html page, a gif, jpg, or png image, etc.) there is a good chance that the MIME type received by the browser will be something like this:
 
+```
 1.  Content-type: text/html, text/plain, image/gif, image/jpg, etc.
+```
 
-For example,  HTML code such as this:
+<h5>For example,  HTML code such as this:</h5>
 
 ```
 1.  <a href="toto.jpg">
-```
-
-```
-1.      please right click this link to download
-2.      the toto.jpg picture</a>
+2.      please right click this link to download
+3.      the toto.jpg picture</a>
 ```
 
 \...will ask the remote HTTP server to send back the toto.jpg file. The browser will receive in the response HTTP header from the server (and by default the browser will display the image in a new tab):
@@ -3255,11 +3253,11 @@ The above example will cause the browser that invoked this server-side code to
 
 HTML5 proposes the use of a new attribute named download to download resources rather than navigating to them. The example below shows how to trigger the download of an image by the browser (instead of rendering it, which is the default behavior) with a name different from the name of the resource.
 
+```
 1.  <a href="normal.gif" [download]=["MichelBuffa.gif"]>
-
 2.      download a picture of Michel Buffa
-
 3.  </a>
+```
 
 This will indeed force the download of an image with a filename different from its original filename on the server side. Here is a screen capture of the Web browser while downloading the picture. We can see in the status bar the name of the link (the image is \"normal.gif\") and the downloaded file is \"MichelBuffa.gif\":
 
@@ -3293,7 +3291,7 @@ This demo shows the use of the download attribute together with the HTML5 File
 
 We won\'t detail this demo here, but take a look if you are curious to see what can be done with this new download attribute. As the FileWriter and FileSystem APIs are still supported only by Google Chrome (other browsers need polyfills), you will need Google Chrome to try it.
 
-We have also put the simplified [source code of this demo on JSBin.com](https://jsbin.com/muluwey/1/edit?html,css,js,output) for you to play with.
+We have also put the simplified <a href="https://jsbin.com/muluwey/1/edit?html,css,js,output">source code of this demo on JSBin.com</a> for you to play with.
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 57. serverless download demo (xx) ------------------------------->
@@ -3306,16 +3304,16 @@ We have also put the simplified [source code of this demo on JSBin.com](https:/
 <br/>
 
 <h4> External resources:</h4>
-
--   From the specification: [downloading resources](https://www.w3.org/TR/2014/REC-html5-20141028/links.html#downloading-resources)
-
--   From CanIUse: the [browser support of the download attribute](https://caniuse.com/#feat=download)
+<ul>
+<li>From the specification: <a href="https://www.w3.org/TR/2014/REC-html5-20141028/links.html#downloading-resources">downloading resources</a>.</li>
+<li>From CanIUse: the <a href="https://caniuse.com/#feat=download">browser support of the download attribute</a>.</li>
+</ul>
 
 <h4>The HTML5 translate attribute</h4>
 
-HTML5 gives us a new translate attribute. This attribute is used to limit the impact of  translation tools such as [Google Translate](https://translate.google.com/) by prohibiting the translation of certain content. In many cases some parts of a document should not be translated.
+HTML5 gives us a new translate attribute. This attribute is used to limit the impact of  translation tools such as <a href="https://translate.google.com/">Google Translate</a> by prohibiting the translation of certain content. In many cases some parts of a document should not be translated.
 
-Use cases include:
+<h5>Use cases include:</h5>
 <ul>
 <li>HTML pages that contain source code: you would certainly not like to see the Java or PHP or whatever programming language parts of your page translated into another spoken language!</li>
 <li>Video game Web sites that propose cheat codes; the codes do not have to be translated,</li>
@@ -4483,7 +4481,7 @@ The JavaScript API is useful for implementing playlists, making custom user inte
 
 This example gives the first steps towards writing a custom video player. It shows basic usage of the JavaScript API for adding custom buttons to play/pause the video or to go back to the beginning by setting the currentTime property to zero.
 
-Try it online:
+<h5>Try it online:</h5>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 78.  ---------------------------------------->
@@ -4665,7 +4663,7 @@ This example shows a lot:
 
 -   It shows how to handle DOM events using JavaScript and how to modify CSS properties of the \<video\> element from JavaScript.
 
-<h4>Example #2: how to track all possible events and manipulate many properties
+<h4>Example #2: how to track all possible events and manipulate many properties</h4>
 
 This example also shows how to handle failures. See the code and play with this example below:
 
@@ -4790,7 +4788,7 @@ This is the ultimate way of doing a real custom player: redesign your own contro
    width="25%" />
 &nbsp;
 
-<h4>Example #5: a custom video player written by a previous student
+<h4>Example #5: a custom video player written by a previous student<h4>
 
 This is more an example than a tutorial. Maurice, a student who followed the precursor version of this MOOC, had the assignment to write a custom video player with playlist, video thumbnails, custom play/pause/next/previous/volume controls, and present it in a Web page that used a nice layout based on the HTML5 structuring elements studied previously.
 
@@ -4802,11 +4800,11 @@ This section introduces the HTML5 \<track\> element, useful for adding closed
 
 The WebVTT format used for describing a track file is also presented in this chapter.
 
-<h4>Most of the major desktop browsers support HTML5 captioning
+<h4>Most of the major desktop browsers support HTML5 captioning</h4>
 
 Please check thea href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the \<track\> element support by browsers.
 
-<h4>Some definitions
+<h4>Some definitions</h4>
 
 -   <b>closed captions </b>describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).
 
@@ -4814,7 +4812,7 @@ Please check thea href="https://caniuse.com/mdn-html_elements_track">browser sup
 
 The accessibility features of TV programs often propose both options for people with hearing deficiencies. 
 
-<h4>Typical use: add a subtitle/caption track to a \<video\> element
+<h4>Typical use: add a subtitle/caption track to a \<video\> element</h4>
 
 <b>Important warning!!</b>
 
@@ -4857,7 +4855,7 @@ The example uses a \<track\> element to insert basic *captions* to the video
 </video>
 ```
 
-**Notes:</b>
+<b>Notes:</b>
 
 -   The \<track\> element at *line 9* has an attribute named kind that indicates the type of the track that is included. Possible values are: subtitles, captions, descriptions, chapters or metadata.
 
@@ -4871,7 +4869,7 @@ The example uses a \<track\> element to insert basic *captions* to the video
 ```
 -   We also used  an attribute named crossorigin that is necessary just to run this demo, as it is required by the server that hosts the video from this example (server = codepen.io, but as the video and .vtt files come from another origin -another server-, this attribute is necessary).
 
-<h4>Multiple tracks may be included in a video element
+<h4>Multiple tracks may be included in a video element</h4>
 
 Multiple tracks are needed to support different langages, video captions for the hearing-impaired, subtitles, etc.
 
@@ -4902,7 +4900,7 @@ Note the use of some new attributes in the \<track\> element:
 
 -   srclang:  gives the language for the text track data. The value must be a valid [BCP 47 language tag](https://tools.ietf.org/html/bcp47). This attribute must be present if [the element\'s kind attribute](https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind) is in the [subtitles state](https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles).
 
-<h4>External resources
+<h4>External resources</h4>
 
 -   From the HTML specification: [The track element](https://html.spec.whatwg.org/multipage/media.html#the-track-element)
 
@@ -5010,7 +5008,7 @@ This format is rather simple, but we still recommend reading [this excellent ar
 
 Each \"element\" in this file has a starting and ending time, plus a value (the text that will be displayed), followed by a blank line (blank lines are separators between elements).
 
-**Each element is called \"a cue\"</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, in particular the getCueById() method of TextTrack objects.
+<b>Each element is called \"a cue\"</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, in particular the getCueById() method of TextTrack objects.
 
 Example of a .vtt file with numeric IDs:
 
@@ -5044,7 +5042,7 @@ The displayed text can span multiple lines, but blank lines are not allowed, as 
 
 3.  \<p\>so completely unprepared.\</p\>
 
-<h4>External resource:
+<h4>External resource:</h4>
 
 -   An unofficial [Live WebbVTT format](https://quuz.org/webvtt/)
 
@@ -5217,22 +5215,20 @@ It is possible to locate the cues in the video viewport using absolute or relati
 ```
 
 There are several possible values:
-
--   **line:5%** means \"vertical position at a line 5% of the height of the video viewport (it will be located at the top of the video, proportional to its vertical size).
-
--   **position:5% align:start** means \"regular location at the bottom of the video, the start of the sentence will be located at 5% of the width of the video\", i.e., near the left side.
-
--   **position:95% align:end** means \"regular location at the bottom of the video, the end of the sentence will be at 95% of the horizontal width of the video\".
-
--   **size:33%** The size of each line will be one third of the size of the video. Since the sentence won\'t fit, it will be displayed in multiple lines.
+<ul>
+<li><b>line:5%</b> means "vertical position at a line 5% of the height of the video viewport (it will be located at the top of the video", proportional to its vertical size).</li>
+<li><b>position:5% align:start</b> means "regular location at the bottom of the video, the start of the sentence will be located at 5% of the width of the video", i.e., near the left side.</li>
+<li><b>position:95% align:end</b> means "regular location at the bottom of the video, the end of the sentence will be at 95% of the horizontal width of the video".</li>
+<li><b>size:33%</b> The size of each line will be one third of the size of the video. Since the sentence won\'t fit, it will be displayed in multiple lines.</li>
+</ul>
 
 And so on. Please look at the video as it is self-explanatory.
 
-<h4>Use of \<b\>, \<i\>, \<u\> for styling subtitles / captions
+<h4>Use of &lt;b&gt;, &lt;i&gt;, &lt;u&gt; for styling subtitles / captions</h4>
 
 One can use the HTML elements  \<b\>, \<i\>, \<u\> to modify the rendering of subtitles and captions, as illustrated in the example below:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 93.  (xx) ------------------------------->
+<!----------------------------- 93.  (113) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image093.png?raw=true"
@@ -5241,7 +5237,7 @@ One can use the HTML elements  \<b\>, \<i\>, \<u\> to modify the rendering of
 &nbsp;
 <br/>
 
-<h4>Using CSS classes for styling
+<h4>Using CSS classes for styling</h4>
 
 It is possible to style using CSS classes as part of a cue value, using the \<c\> element. You can specify the CSS class that should be applied by adding \".\" followed by the name of your CSS class. Here is an example:
 
@@ -5249,7 +5245,7 @@ It is possible to style using CSS classes as part of a cue value, using the \<
 
 2.  Browsers that support ::cue CSS should make it red.\</c\>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 94.  (xx) ------------------------------->
+<!----------------------------- 94.  (113) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image094.jpeg?raw=true"
@@ -5272,11 +5268,11 @@ The ::cue pseudo element selector is used to match \"cues\" in the webVTT fil
 
 Support differs from one browser to another, see [this compatibility table](https://caniuse.com/#feat=webvtt) (from CanIuse). Note however that most of the enhanced players presented further on in the course provide full support.
 
-<h4>Using voicing for styling: the \<v\> element
+<h4>Using voicing for styling: the &lt;v&gt; element</h4>
 
 Here is an example that shows the voices of the different characters displayed with different colors:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 95.  (xx) ------------------------------->
+<!----------------------------- 95. v tag example (114) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image095.png?raw=true"
@@ -5316,7 +5312,7 @@ What makes them special is that the track has an attribute kind=\"chapters\".�
 
 Often, the \<video\> elements rendered in standard browsers ignore chapters, but enhanced HTML5 players take them into account, and it\'s not much of a stretch to make your own enhanced player with a nice chapter presentation, as we\'ll see in a more advanced chapter of this course.  For example, we\'ll generate a custom navigation menu, using the \<track\> JavaScript API (explained later in this section).
 
-Example of a WebVTT file that defines chapters:
+<h4>Example of a WebVTT file that defines chapters:</h4>
 
 ```
 1.  WEBVTT FILE
@@ -5346,13 +5342,13 @@ Example of a WebVTT file that defines chapters:
 25. Styled WebVTT file
 ```
 
-An example of what you can achieve using chapters, using the [JW Player](https://www.jwplayer.com/):
+An example of what you can achieve using chapters, using the <a href="https://www.jwplayer.com/">JW Player</a>:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 96.  (xx) ------------------------------->
+<!----------------------------- 96. using the jw player (115) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image096.png?raw=true"
-   alt=""
+   alt="Using the JW player."
    width="65%">
 &nbsp;
 <br/>
@@ -5360,12 +5356,11 @@ An example of what you can achieve using chapters, using the [JW Player](https:
 <h3 id="ch2-3-6">2.3.6 Tools for Creating WebVTT Files</h3>
 
 Many tools are available to make and edit HTML5 video and caption/subtitles:
-
--   **Tools for converting existing file formats to  WebVTT files**, such as [Simple SubRip to WebVTT](https://atelier.u-sub.net/srt2vtt/) converter, which is popular in the DivX/AVI/Mkv/mp4 scene. Do a quick Web search and you will get plenty of other results.
-
--   **Tools for creating subtitles/captions from scratch. Use these to generate a WebVTT file. **You can embed the \<track\> element in your own videos, on your own Web pages, or upload the WebVTT file to YouTube.  We recommend [amara](https://amara.org/en/). It\'s a free online tool that is very easy to use. There are also apps such as[ Subs Factory](https://www.macupdate.com/app/mac/25826/subs-factory) (Mac OS), [Jubler](https://jubler.org/) or [Subtitle Edit](https://nikse.dk/SubtitleEdit) (Windows).
-
--   **Enhanced HTML5 video players** that use the \<video\>, \<source\> and \<track\> elements under the hood. They also provide many extra features, including **support for subtitle/caption formats other than WebVTT (by converting on the fly)**.
+<ul>
+<li>Tools for converting existing file formats to WebVTT files, such as <a href="https://atelier.u-sub.net/srt2vtt/">Simple SubRip to WebVTT</a> converter, which is popular in the DivX/AVI/Mkv/mp4 scene. Do a quick Web search and you will get plenty of other results.</li>
+<li>Tools for creating subtitles/captions from scratch. Use these to generate a WebVTT file. You can embed the &lt;track&gt; element in your own videos, on your own Web pages, or upload the WebVTT file to YouTube.  We recommend <a href="https://amara.org/en/">amara</a>. It's a free online tool that is very easy to use. There are also apps such as <a href="https://www.macupdate.com/app/mac/25826/subs-factory">Subs Factory</a> (Mac OS), <a href="https://jubler.org/">Jubler</a> or <a href="https://nikse.dk/SubtitleEdit">Subtitle Edit</a>) (Windows).</li>
+<li>Enhanced HTML5 video players that use the &lt;video&gt;, &lt;source&gt; and &lt;track&gt; elements under the hood. They also provide many extra features, including support for subtitle/caption formats other than WebVTT (by converting on the fly).</li>
+</ul>
 
 We do not claim that these are the best tools, so feel free to share your discoveries in the discussion forum!
 
@@ -5385,13 +5380,13 @@ The \<track\> element comes with a powerful API that is used to develop many
 
 -   Etc.
 
-<h4>Examples of use
+<h4>Examples of use</h4>
 
 <h4> Example #1: add a navigation menu to start playing the video at given chapters</h4>
 
 This example shows a video with an enhanced progress bar that displays the different chapters as small \"clickable\" squares. Furthermore, using the JavaScript API of the \<track\> element, this Web site builds a navigation menu (on the right of the video):
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 97. navigation menu using the track javascript api (xx) ------------------------------->
+<!------------------ 97. navigation menu using the track javascript api (117) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image097.jpeg?raw=true"
@@ -5400,15 +5395,15 @@ This example shows a video with an enhanced progress bar that displays the diffe
 &nbsp;
 <br/>
 
-<h4> Example #2: sync video with Google Map and Google Street View</h4>
+<h4>Example #2: sync video with Google Map and Google Street View</h4>
 
-Check [this demo](https://simpl.info/track/map/index.html) (only on Chrome) by [Sam Dutton](https://samdutton.com/): it shows a video that comes with a WebVTT file that contains longitudes and latitudes. When the video plays, JavaScript functions are called at given times and get the longitude and latitude. A Google Map and a Google Street views are updated in real time.
+Check <a href="https://simpl.info/track/map/index.html">this demo</a> (only on Chrome) by <a href="https://samdutton.com/">Sam Dutton</a>: it shows a video that comes with a WebVTT file that contains longitudes and latitudes. When the video plays, JavaScript functions are called at given times and get the longitude and latitude. A Google Map and a Google Street views are updated in real time.
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 98.  (xx) ------------------------------->
+<!----------------------------- 98. video sync with map and street views (117) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image098.jpeg?raw=true"
-   alt="video sync with map and street view"
+   alt="Video sync with map and street views."
    width="65%">
 &nbsp;
 <br/>
@@ -5419,11 +5414,11 @@ This example shows how we manage to render music scores in real time as the vi
 
 Some JavaScript code listens to the ontimeupdate event while the video is playing. We use the currentTime property of the video to know exactly where we are in the video. Finally, we also rely on an external library to render in an HTML5 canvas the bars corresponding to the current video explanations. We render in real time guitar pro tablatures using the alphatab.net library.
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 99.  (xx) ------------------------------->
+<!---- 99. We render in real time guitar pro tablatures using the alphatab.net library (118) ----->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image099.png?raw=true"
-   alt=""
+   alt="We render in real time guitar pro tablatures using the alphatab.net library."
    width="55%">
 &nbsp;
 <br/>
@@ -5434,78 +5429,70 @@ There are numerous \"enhanced\" video players; most are free and open source, so
 
 We call them \"HTML5 enhanced video players\" because on top of being based on the \<video\> element, they come with custom features, custom look\'n\'feel, chapters, etc., based on a JavaScript API that makes such customization possible.
 
-<h4>Accessible players
+<h4>Accessible players</h4>
 
 For those of you interested in this particular topic, here is a very good resource that compares most of the players presented in this section, in terms of accessibility. This resource has links to players designed especially for people with disabilities: [accessible media players and resources](https://www.digitala11y.com/accessible-jquery-html5-media-players/).
 
-<h4>Advantages and disadvantages of using a custom player
+<h4>Advantages and disadvantages of using a custom player</h4>
 
-**Advantages of enhanced video players:**
+<h5>Advantages of enhanced video players:</h5>
 
--   Support for all kinds of subtitle formats
+<ul>
+<li>Support for all kinds of subtitle formats</li>
+<li>Customizable look'n'feel (add your logo, custom themes, etc.)</li>
+<li>Full screen mode without borders on old browsers (today's implementations of the &lt;video&gt; element support full screen mode)</li>
+<li>Consistent look\'n\'feel across browsers (menus for subtitles, etc.)</li>
+<li>1.5x, 2x, 3x speeds for fast playback</li>
+<li>Social buttons for sharing on Facebook, Twitter, etc.</li>
+<li>Support for chapters</li>
+<li>Support for scrub bar thumbnails</li>
+<li>Extra features for better accessibility</li>
+<li>And so on...</li>
+</ul>
 
--   Customizable look\'n\'feel (add your logo, custom themes, etc.)
+<h5>Advantages of relying only on the &lt;video&gt; element rather than on an enhanced player:</h5>
+<ul>
+<li>Total control!</li>
+<li>No need for external dependencies</li>
+<li>Lightweight: no need to download lots of JavaScript and CSS code</li>
+</ul>
 
--   Full screen mode without borders on old browsers (today\'s implementations of the \<video\> element support full screen mode)
+<h4>Video.js: a framework for building your own custom video player</h4>
 
--   Consistent look\'n\'feel across browsers (menus for subtitles, etc.)
-
--   1.5x, 2x, 3x speeds for fast playback
-
--   Social buttons for sharing on Facebook, Twitter, etc.
-
--   Support for chapters
-
--   Support for scrub bar thumbnails
-
--   Extra features for better accessibility
-
--   And so on\...
-
-**Advantages of relying only on the \<video\> element  rather than on an enhanced player:**
-
--   Total control!
-
--   No need for external dependencies
-
--   Lightweight: no need to download lots of JavaScript and CSS code
-
-<h4>Video.js: a framework for building your own custom video player
-
-Open source, and made for developers, [video.js](https://videojs.com/) comes with many plugins (chapters, thumbnails etc.). 
+Open source, and made for developers, <a href="https://videojs.com/">video.js</a> comes with many plugins (chapters, thumbnails etc.).
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 100.  (xx) ------------------------------->
+<!------------------------------ 100. make your player yours (119) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image100.png?raw=true"
-   alt="Video JS Examples"
+   alt="Video JS Examples: Make your player yours."
    width="65%">
 &nbsp;
 <br/>
 
-<h4>Which should I use? the \<video\> element and my own customization or an out of the box enhanced player?
+<h4>Which should I use? the &lt;video&gt; element and my own customization or an out of the box enhanced player?</h4>
 
 Either solution (basic player or enhanced player) is good and HTML5 compliant.
 
 Popular players such as  [JWPlayer](https://www.jwplayer.com/) have many explanations and examples on their Web sites, and are either free of charge or come with free versions.
 
-**Interesting comparisons and reviews are available on the following Web sites:**
+<h5>Interesting comparisons and reviews are available on the following Web sites:</h5>
 
 -   Comparison matrix of most of [existing HTML5 video players](https://videosws.praegnanz.de/)
 
 -   [10 HTML5 video players compared](https://toppersworld.com/10-html5-video-players-as-alternatives-to-flash-player/)
 
-<h4>Example screenshots
+<h4>Example screenshots</h4>
 
 Scrub Bar thumbnails (JWPlayer)
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 101. scrub bar thumbnailes (xx) ------------------------------->
+<!------------------------------ 101. scrub bar thumbnailes (120) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image101.jpeg?raw=true"
-   alt="Scrub Bar Thumbnails"
+   alt="Scrub bar thumbnails."
    width="45%">
 &nbsp;
 <br/>
@@ -5513,11 +5500,11 @@ Scrub Bar thumbnails (JWPlayer)
 Custom look\'n\'feel and logo (Sublime video player):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 102.  (xx) ------------------------------->
+<!-------------------------- 102. custom look and feel and logo (120) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image002.jpeg?raw=true"
-   alt="Custom Look and Feel and logo"
+   alt="Custom look and feel and logo."
    width="55%">
 &nbsp;
 <br/>
@@ -5525,7 +5512,7 @@ Custom look\'n\'feel and logo (Sublime video player):
 Chapters and chapter thumbnails (JWPlayer):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 103. chapters and chapter thumbnails (xx) ------------------------------->
+<!------------------------- 103. chapters and chapter thumbnails (120) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image103.png?raw=true"
@@ -5537,7 +5524,7 @@ Chapters and chapter thumbnails (JWPlayer):
 PayPal accessible player:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 104.  (xx) ------------------------------->
+<!----------------------------- 104. paypal accessible player (121) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image104.png?raw=true"
@@ -5549,11 +5536,11 @@ PayPal accessible player:
 LeanBack (says \"free for non-commercial use\", licensing is not very clear\...):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 105.  (xx) ------------------------------->
+<!--------------------------------- 105. leanback player (121) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image105.png?raw=true"
-   alt=""
+   alt="Leanback player."
    width="60%">
 &nbsp;
 <br/>
@@ -5568,14 +5555,14 @@ We will therefore study together how to access the audio and video streams of th
 
 <h4>The getUserMedia API</h4>
 
-The [getUserMedia API](https://www.w3.org/TR/mediacapture-streams/) is useful for controlling a Webcam video stream.
+The <a href="https://www.w3.org/TR/mediacapture-streams/">getUserMedia API</a> is useful for controlling a Webcam video stream.
 
 This API is one component of the [WebRTC specification](https://www.w3.org/TR/webrtc/). When using getUserMedia, to manage a webcam with its video stream, we will always use it in conjunction with the \<video\> element. We could also use it with the \<audio\> element if we are only interested in using a microphone (i.e. from a computer), or any sound input .
 
 The getUserMedia API, when dealing with video streams, is always used in conjunction with the \<video\> element.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 106.  (xx) ------------------------------->
+<!---------------------------- 106. simple web camera display (122) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image106.jpeg?raw=true"
@@ -5726,7 +5713,7 @@ Code source:
 38. </html>
 ```
 
-**Explanations:**
+<h5>Explanations:</h5>
 
 -   *Lines 11-13*: we call navigator.getUserMedia. The parameters indicate that we want to capture the video and the audio from the current device (default Webcam). The call to getUserMedia returns an ES6 promise: the then(stream) method that follows.
 
@@ -5738,10 +5725,11 @@ Code source:
 
 -   *Lines 25-27*: a function for stopping the Webcam. We use the global variable webcamStream here, that has been initialized when we started using the Webcam in *line 19*. We have to stop separately the audio and the video streams.
 
-<h4>Other examples that mix what we\'ve seen in previous chapters, but this time with a live video stream
+<h4>Other examples that mix what we\'ve seen in previous chapters, but this time with a live video stream</h4>
 
 <h4> Applying CSS effects on a video element with a live webcam</h4>
 
+*************************** image ***************************************
 ![Resulting image of Michel Buffa using his WebCam with css filter effects on live stream](media/image108.jpeg){width="3.0in" height="4.110464785651794in"}
 
 Try this example that shows how to use the getUserMedia API. Note the CSS effects (click on the video to cycle from one effect to another):
@@ -6428,7 +6416,7 @@ Click \"start recording\", then press the play button on the video element on th
 
 <h4>1 - Create a mediaRecorder from a stream</h4>
 
-Source code extract:
+<h5>Source code extract:</h5>
 ```
 1.  var options = {mimeType: \'video/webm; codecs=vp9\'};
 2.  mediaRecorder = new MediaRecorder(stream, options);
@@ -6436,9 +6424,9 @@ Source code extract:
 
 \... where stream is typically the object returned by the call to getUserMedia (see previous examples).
 
-<h4>2 - Add a \"data handler\" and call the start() method of the mediaRecorder object</h4>
+<h4>2 - Add a "data handler" and call the start() method of the mediaRecorder object</h4>
 
-<b>Source code extract:</b>
+<h5>Source code extract:</h5>
 ```
 1.  var recordedChunks = \[\]; // will hold the recorded stream
 2.  mediaRecorder.ondataavailable = handleDataAvailable;
