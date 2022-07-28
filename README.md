@@ -514,7 +514,7 @@ Two examples are provided below  but you can find more tips and information in 
 
 Good page titles are particularly important for orientation --- to help people know where they are and move between pages open in their browser. The first thing screen readers say when the user goes to a different Web page is the page title. In the Web page markup, they are the words \<title\> within the \<head\>.
 
-<b><i>Check #1</i>: There is a title that adequately and briefly describes the content of a page, and it distinguishes the page from other Web pages.</b>
+<h5><i>Check #1</i>: There is a title that adequately and briefly describes the content of a page, and it distinguishes the page from other Web pages.</h5>
 
 <i>Example</i>:
 
@@ -530,7 +530,7 @@ Good page titles are particularly important for orientation --- to help people k
 
 Text alternatives (\"alt text\") are a primary way of making visual information accessible, because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user. Providing text alternatives allows the information to be rendered in a variety of ways by a variety of user agents. For example, a person who cannot see a picture can have the text alternative read aloud using synthesized speech.
 
-<i><b>Check #2</i>: Every image has alt with appropriate alternative text.</b>
+<h5><i>Check #2</i>: Every image has alt with appropriate alternative text.</h5>
 
 <i>Example</i>: See the W3C logo below. It contains a link that points to the W3C Web site. The text alternative is going to be a brief description of the link target.
 
@@ -1701,17 +1701,17 @@ Now, we have one big \<section\> element that contains a set of \<article\> 
 <h4>HTML code:</h4>
 
 ```
-> <section>
->    <article>
->     ...
->    </article>
->    <article>
->     ...
->    </article>
->    <article>
->     ...
->    </article>
-> </section>
+<section>
+   <article>
+    ...
+   </article>
+   <article>
+    ...
+   </article>
+   <article>
+    ...
+   </article>
+</section>
 ```
 
 <h4>And here is the CSS:</h4>
@@ -1878,7 +1878,7 @@ aside .tag-cloud {
 
 We used a float:right CSS rule to put the tag cloud on the right\... In a following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
 
-<h4><b>Here is the result:</b></h4>
+<h4>Here is the result:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 19. image of the tag cloud defined as an aside element (40) ------------------->
@@ -2087,20 +2087,20 @@ The HTML5 specification says that \"each sectioning element potentially has a he
 \<h1\>\...\<h6\> are called <b>headings</b>, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
 
 ```
-> <body>
->     <h1>Title of my document</h1>
->     ...
-> </body>
+<body>
+    <h1>Title of my document</h1>
+    ...
+</body>
 ```
 ... defines the header of a section <i>implicitly</i>, while:
 ```
-> <body>
->    ...
->    <section>
->       <h1>Title of my section</h1>
->       ...
->    </section>
-> </body>
+<body>
+   ...
+   <section>
+      <h1>Title of my section</h1>
+      ...
+   </section>
+</body>
 ```
 <h4>... defines the heading of the explicit section (its parent element &lt;section&gt;).</h4>
 
@@ -2225,6 +2225,7 @@ The sectioning root (\<body\>) and the sectioning elements (\<section\> here\..
 <ul>
 <li>Always use a heading element after a sectioning element, for example &lt;section&gt;&lt;Hx&gt;...&lt;Hx&gt;...&lt;section&gt;, and after &lt;body&gt;, where x can be 1..6,
 <li>Or, use a &lt;header&gt; element, like in &lt;section&gt;&lt;header&gt;&lt;Hx&gt;...&lt;Hx&gt;.....&lt;header&gt;...&lt;section&gt;
+</ul>
 
 <h4>More about the &lt;header&gt; element</h4>
 
@@ -3984,16 +3985,13 @@ Do not abuse of the autoplay attribute. We talked earlier about mobile applica
 <h4>Attributes of the &lt;audio&gt; element</h4>
 
 The attributes you can use with the \<audio\> element are a subset of those available for the \<video\> element. Except for the poster attribute, they are all recognized and have the expected meanings: 
-
--   src: source of an audio stream.
-
--   controls: if this attribute is present, the browser displays its own controls for audio playback and volume.
-
--   autoplay: tells the browser to start playing the audio stream automatically as soon as the page is ready - please read details in the above table.
-
--   preload: tells the browser what to do before a user plays a sound - please read details in the above table.
-
--   loop:  indicates to play the audio stream in loop mode (start again when finished).
+<ul>
+<li>src: source of an audio stream.</li>
+<li>controls: if this attribute is present, the browser displays its own controls for audio playback and volume.</li>
+<li>autoplay: tells the browser to start playing the audio stream automatically as soon as the page is ready - please read details in the above table.</li>
+<li>preload: tells the browser what to do before a user plays a sound - please read details in the above table.</li>
+<li>loop:  indicates to play the audio stream in loop mode (start again when finished).</li>
+</ul>
 
 As with the \<video\> element, the same best practice in regard to preload and autoplay attributes should be followed.
 
@@ -4003,7 +4001,7 @@ The \<video\> and \<audio\> elements are just like other HTML elements, so 
 
 <h4>An example of an audio player with some style</h4>
 
-You can try this example [online at JSBin](https://jsbin.com/zoquru/2/edit?html,css,output).
+You can try this example <a href="https://jsbin.com/zoquru/2/edit?html,css,output">online at JSBin</a>.
 
 To add some styling to the basic example we saw when we introduced the \<audio\> element, we just add a \<figure\> with two children: an \<img\> and a \<figcaption\>. Inside the \<figcaption\> we add the \<audio\> element from the previous example.
 
@@ -4092,7 +4090,7 @@ Press Play to hear the horse ! 
 
 <h4>Resizing and rotating a video as the mouse pointer comes over it</h4>
 
-See this [example online](https://jsbin.com/zoquru/4/edit?html,css,output) (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it\'s playing.
+See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example online</a> (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it\'s playing.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 71.  (xx) ------------------------------->
@@ -4348,35 +4346,32 @@ video {
 
 Let\'s use the same video to compare the different approaches again:
 
-1.  [Original approach](https://jsbin.com/zowuqey/edit?html,css,js,output), using JavaScript. This solution works on any browser, so we will focus on the two following methods, based on pure CSS.
+1.  <a href="https://jsbin.com/zowuqey/edit?html,css,js,output">Original approach</a>, using JavaScript. This solution works on any browser, so we will focus on the two following methods, based on pure CSS.
 
-2.  [Using CSS 100%](https://jsbin.com/sakujuv/1/edit?html,css,output) width and height properties (no JavaScript).
+2.  <a href="https://jsbin.com/sakujuv/1/edit?html,css,output">Using CSS 100%</a> width and height properties (no JavaScript).
 
-3.  [Using CSS viewport ](https://jsbin.com/xureyu/3/edit?html,css,output)units for width and height (no JavaScript).
+3.  <a href="https://jsbin.com/xureyu/3/edit?html,css,output">Using CSS viewport</a> units for width and height (no JavaScript).
 
 Resizing the browser window shows that #1 (JavaScript) and #3 (viewport units) behave in the same way: the width or height of the video always fills the window (whichever is smaller), and we always see the whole video.
 
-<b>Conclusion</b>: we can get full size video without JavaScript by using viewport units (vw and vh), unless we need to support some old browsers (see their [current support on CanIUse](https://caniuse.com/#feat=viewport-units)).
+<b>Conclusion</b>: we can get full size video without JavaScript by using viewport units (vw and vh), unless we need to support some old browsers (see their <a href="https://caniuse.com/#feat=viewport-units">current support on CanIUse</a>).
 
 Setting the video to 100% width and height results in different behavior:
-
--   100% means 100% of the size of the \<body\> tag.
-
--   The body tag\'s width is 100% of the browser window width, so the video is always full width.
-
--   The body tag\'s height, however, is determined by the size of its children: the body tag\'s height grows and shrinks to accommodate the size of the children.
-
--   If the browser window is made wide and short, the video is full width, the height is taller than the window, and part of the video is not visible. It seems that just using % does not get us the same effect.
+<ul>
+<li>100% means 100% of the size of the &lt;body&gt; tag.</li>
+<li>The body tag\'s width is 100% of the browser window width, so the video is always full width.</li>
+<li>The body tag\'s height, however, is determined by the size of its children: the body tag's height grows and shrinks to accommodate the size of the children.</li>
+<li>If the browser window is made wide and short, the video is full width, the height is taller than the window, and part of the video is not visible. It seems that just using % does not get us the same effect.</li>
+</ul>
 
 <h3 id="ch2-2-5">2.2.5 Control Players From JavaScript</h3>
 
 The \<video\> and \<audio\> elements have methods, properties/attributes and events that can be manipulated with JavaScript. Using the DOM API, it\'s possible to manipulate an audio or video element as a JavaScript object that has:
-
--   <b>Methods</b> for controlling the behavior, such as play(), pause(), etc.
-
--   <b>Properties</b> (duration, current position, etc.), either in read/write mode (such as volume), or in read-only mode (such as encoding, duration, etc.)
-
--   <b>Events</b> generated during the life cycle of the element that can be processed using JavaScript callbacks. It is also possible to send events to control the video player
+<ul>
+<li><b>Methods</b> for controlling the behavior, such as play(), pause(), etc.</li>
+<li><b>Properties</b> (duration, current position, etc.), either in read/write mode (such as volume), or in read-only mode (such as encoding, duration, etc.)</li>
+<li><b>Events</b> generated during the life cycle of the element that can be processed using JavaScript callbacks. It is also possible to send events to control the video player.</li>
+</ul>
 
 The set of properties/attributes/methods of the \<audio\> and \<video\> elements is called an \"API\" (Application Programming Interface). For example, we will speak here of the \"media API\" to talk about the associated API.
 
@@ -4418,7 +4413,7 @@ The complete list of events can be found in the [HTML5 living standard specific
 
 The list of properties can be found at the [W3C HTML5 Video Events and API](https://www.w3.org/2010/05/video/mediaevents.html) page. This page is interesting for Web developers because it shows an interactive view of the different values and events changing over time while the video is playing within the page.
 
-Try the [direct link](https://www.w3.org/2010/05/video/mediaevents.html), and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
+Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link</a>, and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 77.  (xx) ------------------------------->
@@ -4476,7 +4471,7 @@ In the next pages, let\'s see, through a set of examples, how to use these most 
 
 The JavaScript API is useful for implementing playlists, making custom user interfaces and many other interesting things. The \"enhanced HTML5 multimedia players\" lesson presented further on the course relies heavily on this API.
 
-<h4>Example #1: how to use external buttons to control the player\'s behavior</h4>
+<h4>Example #1: how to use external buttons to control the player's behavior</h4>
 
 This example gives the first steps towards writing a custom video player. It shows basic usage of the JavaScript API for adding custom buttons to play/pause the video or to go back to the beginning by setting the currentTime property to zero.
 
@@ -4527,14 +4522,12 @@ This example gives the first steps towards writing a custom video player. It sho
 ```
 
 <h5>Explanations:</h5>
-
--   *Lines 7, 9 and 11*: we add a click listener to each button, in order to call a JavaScript function when each button is clicked.
-
--   *Line 14*: using the DOM API, we get the JavaScript object that corresponds to the video element we inserted in the HTML document. This line is outside a function, it will be executed when the page loads.
-
--   *Lines 17 and 20*: we call methods from the API for playing/pausing the video.
-
--   *Line 24*: we modify the currentTime property in order to rewind the video. Note that vid.load() also rewinds the video, shows the poster image again, but also pauses the video. By using currentTime=0, the playback does not stop.
+<ul>
+<li><i>Lines 7, 9 and 11</i>: we add a click listener to each button, in order to call a JavaScript function when each button is clicked.</li>
+<li><i>Line 14</i>: using the DOM API, we get the JavaScript object that corresponds to the video element we inserted in the HTML document. This line is outside a function, it will be executed when the page loads.</li>
+<li><i>Lines 17 and 20</i>: we call methods from the API for playing/pausing the video.</li>
+<li><i>Line 24</i>: we modify the currentTime property in order to rewind the video. Note that vid.load() also rewinds the video, shows the poster image again, but also pauses the video. By using currentTime=0, the playback does not stop.</li>
+</ul>
 
 <h4>Example #2: how to detect the end of a video and start another one</h4>
 
@@ -4553,14 +4546,14 @@ This example listens to the ended event, and calls a callback function when th
 <video src="video.ogv" id="myVideo"\>
     video not supported
 </video>
-<script type=\'text/javascript'>
+<script type='text/javascript'>
   var vid = document.querySelector('#myVideo');
   vid.addEventListener('ended', playNextVideo, false);
   function playNextVideo(e) {
      // Whatever you want to do after the event, change the src attribute
      // of the video element, for example, in order to play another video
   }
-</script\>
+</script>
 ```
 
 <h4>Example #3: how to manage playlists - sequential movies</h4>
@@ -4625,7 +4618,7 @@ Check the online example below: use the progress cursor to go near the end of th
 </html>
 ```
 
-Explanations:
+<h5>Explanations:</h5>
 <ul>
 <li><i>Line 9</i>: the JavaScript array that contains the URLs of the videos in the playlist. In this example, we've got only two of them, but if the array is larger the example still works.</li>
 <li><i>Line 44</i>: when the page is loaded, an init() function is called.</li>
@@ -4633,7 +4626,7 @@ Explanations:
 <li><i>Lines 17-21</i>: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources \[currentVideo % sources.length\], we set the src of the video element to sources\[0\], then to sources\[1\], and, as we increment the currentVideo index each time (line 19), if it becomes greater than 1, the modulo (the \"%\" symbol is the modulo in JavaScript) will make it \"loop\" between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.</li>
 </ul>
 
-<h3 id="ch2-2-8">2.2.8 [Advanced\] Extended Examples</h3>
+<h3 id="ch2-2-8">2.2.8 [Advanced] Extended Examples</h3>
 
 In this section, we propose five extended examples that use more JavaScript and more complex CSS manipulation. They might be a little hard to understand if you are a JavaScript beginner, but don\'t be afraid to try and test them, look at the code, etc.
 
@@ -4655,12 +4648,11 @@ Please see this example online, originally written by [Chris Heilmann](https://
 Don\'t forget to click the JavaScript and CSS tabs of the CodePen in order to display the JavaScript code that creates the buttons on the right of the video, and the CSS that processes the different clicks and applies CSS3 transforms.
 
 This example shows a lot:
-
--   It uses the HTML5 elements \<nav\>, \<footer\>, \<header\>.
-
--   It shows the use of CSS3 2D transformations (scale, translate, and rotate).
-
--   It shows how to handle DOM events using JavaScript and how to modify CSS properties of the \<video\> element from JavaScript.
+<ul>
+<li>It uses the HTML5 elements &lt;nav&gt;, &lt;footer&gt;, &lt;header&gt;.</li>
+<li>It shows the use of CSS3 2D transformations (scale, translate, and rotate).</li>
+<li>It shows how to handle DOM events using JavaScript and how to modify CSS properties of the \<video\> element from JavaScript.</li>
+</ul>
 
 <h4>Example #2: how to track all possible events and manipulate many properties</h4>
 
@@ -4676,33 +4668,34 @@ This example also shows how to handle failures. See the code and play with this
 &nbsp;
 
 Below is a piece of code for handling errors during video playback:
+
 ```
-\...
-vid.addEventListener(\'error\', function(evt) {
-    logEvent(evt,\'red\');
+...
+vid.addEventListener('error', function(evt) {
+    logEvent(evt,'red');
 }, false);
 \...
 function logEvent(evt, color) {
     switch (evt.type) {
-       \...
-       case \'error\':
-           var error = document.querySelector(\'video\').error;
+       ...
+       case 'error':
+           var error = document.querySelector('video').error;
            switch (error.code) {
              case error.MEDIA_ERR_ABORTED:
-                note.innerHTML = \"fetching aborted at the user\'s request\";
+                note.innerHTML = "fetching aborted at the user's request";
                 break;
              case error.MEDIA_ERR_NETWORK:
-                note.innerHTML = \"a network error caused the browser to stop fetching the media\";
+                note.innerHTML = "a network error caused the browser to stop fetching the media";
                 break;
              case error.MEDIA_ERR_DECODE:
-                note.innerHTML = \"an error occurred while decoding the media\";
+                note.innerHTML = "an error occurred while decoding the media";
                 break;
              case error.MEDIA_ERR_SRC_NOT_SUPPORTED:
-                note.innerHTML = \"the media indicated by the src
-                                  attribute was not suitable\";
+                note.innerHTML = "the media indicated by the src
+                                  attribute was not suitable";
                 break;
              default:
-                note.innerHTML = \"an error occurred\";
+                note.innerHTML = "an error occurred";
                 break;
            }
            break;
@@ -4713,7 +4706,7 @@ function logEvent(evt, color) {
 
 <h4>Example #3: how to display a percentage of buffering when using a slow connection</h4>
 
-See the [example online](https://jsbin.com/xororol/3/edit?html,output) here too.
+See the <a href="https://jsbin.com/xororol/3/edit?html,output">example online</a> here too.
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 84.  ---------------------------------------->
@@ -4726,9 +4719,9 @@ See the [example online](https://jsbin.com/xororol/3/edit?html,output) here to
 
 Note that on mobile phones, the video does not start until the user presses the play control or clicks on the video picture. Using the \"canplaythrough\" event is a trick to call a function that starts the video player as soon as the page is loaded on desktop. This event is not supported by mobile devices, so if you try this example on a mobile, the video will not start automatically.
 
-As explained by the [Apple Developer Web site](https://developer.apple.com/):  \"The buffered property is a TimeRanges object: an array of start and stop times, not a single value. Consider what happens if the person watching the media uses the time scrubber to jump forward to a point in the movie that hasn't loaded yet---the movie stops loading and jumps forward to the new point in time, then starts buffering again from there. So the buffered property can contain an array of discontinuous ranges. The example simply seeks the end of the array and reads the last value, so it actually shows the percentage into the movie duration for which there is data. \"
+As explained by the <a href="https://developer.apple.com/">Apple Developer Web site</a>:  \"The buffered property is a TimeRanges object: an array of start and stop times, not a single value. Consider what happens if the person watching the media uses the time scrubber to jump forward to a point in the movie that hasn't loaded yet---the movie stops loading and jumps forward to the new point in time, then starts buffering again from there. So the buffered property can contain an array of discontinuous ranges. The example simply seeks the end of the array and reads the last value, so it actually shows the percentage into the movie duration for which there is data. \"
 
-Source code extract:
+<h5>Source code extract:</h5>
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -4776,7 +4769,7 @@ Source code extract:
 
 <h4>Example #4: how to use SVG elements as external controllers</h4>
 
-This is the ultimate way of doing a real custom player: redesign your own controls using SVG shapes! This example (try it [online](https://www.w3.org/2010/Talks/0430-www2010-plh/video-player.xhtml)) is given \"as is\" for those of you who may be curious.
+This is the ultimate way of doing a real custom player: redesign your own controls using SVG shapes! This example (try it <a href="https://www.w3.org/2010/Talks/0430-www2010-plh/video-player.xhtml">online</a>) is given \"as is\" for those of you who may be curious.
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 85. cup on table ---------------------------------------->
@@ -4801,13 +4794,13 @@ The WebVTT format used for describing a track file is also presented in this c
 
 <h4>Most of the major desktop browsers support HTML5 captioning</h4>
 
-Please check thea href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the \<track\> element support by browsers.
+Please check the <a href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the \<track\> element support by browsers.
 
 <h4>Some definitions</h4>
-
--   <b>closed captions </b>describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).
-
--   <b>subtitles </b>are only for spoken words.
+<ul>
+<li><b>closed captions </b>describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).</li>
+<li><b>subtitles </b>are only for spoken words.</li>
+</ul>
 
 The accessibility features of TV programs often propose both options for people with hearing deficiencies. 
 
@@ -4855,18 +4848,17 @@ The example uses a \<track\> element to insert basic *captions* to the video
 ```
 
 <h5>Notes:</h5>
-
--   The \<track\> element at *line 9* has an attribute named kind that indicates the type of the track that is included. Possible values are: subtitles, captions, descriptions, chapters or metadata.
-
--   The \<track\> element also has an attribute default that indicates that we want this track to be displayed by default when reading the video.
-
--   We also used  an attribute named crossorigin that is necessary just to run this demo, as it is required by the server that hosts the video from this example (server = codepen.io, but as the video and .vtt files come from another origin -another server-, this attribute is necessary).
+<ul>
+<li>The &lt;track&gt; element at <i>line 9</i> has an attribute named kind that indicates the type of the track that is included. Possible values are: subtitles, captions, descriptions, chapters or metadata.</li>
+<li>The &lt;track&gt; element also has an attribute default that indicates that we want this track to be displayed by default when reading the video.</li>
+<li>We also used an attribute named crossorigin that is necessary just to run this demo, as it is required by the server that hosts the video from this example (server = codepen.io, but as the video and .vtt files come from another origin -another server-, this attribute is necessary).</li>
+</ul>
 
 <h4>Multiple tracks may be included in a video element</h4>
 
 Multiple tracks are needed to support different langages, video captions for the hearing-impaired, subtitles, etc.
 
-Below is an example ([from the specification](https://html.spec.whatwg.org/multipage/media.html#the-track-element)) that includes multiple \<track\> elements (subtitles for three languages and captions only for English):
+Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element">from the specification</a>) that includes multiple \<track\> elements (subtitles for three languages and captions only for English):
 
 ```
 <video src="brave.webm">
@@ -4888,20 +4880,18 @@ Below is an example ([from the specification](https://html.spec.whatwg.org/multi
 ```
 
 Note the use of some new attributes in the \<track\> element:
-
--   label: the label value will be displayed in the GUI control that is included in the default HTML5 video player,
-
--   srclang:  gives the language for the text track data. The value must be a valid [BCP 47 language tag](https://tools.ietf.org/html/bcp47). This attribute must be present if [the element\'s kind attribute](https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind) is in the [subtitles state](https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles).
+<ul>
+<li>label: the label value will be displayed in the GUI control that is included in the default HTML5 video player,</li>
+<li>srclang:  gives the language for the text track data. The value must be a valid <a href="https://tools.ietf.org/html/bcp47">BCP 47 language tag</a>. This attribute must be present if <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind">the element's kind attribute</a> is in the <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles">subtitles state</a>.</li>
+</ul>
 
 <h4>External resources</h4>
-
--   From the HTML specification: [The track element](https://html.spec.whatwg.org/multipage/media.html#the-track-element)
-
--   From the W3C specification:  [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
-
--   From MDN\'s Web Docs: [WebVTT ](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API)and [Adding captions and subtitles to HTML5 video](https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video)
-
--   An article from 3playmedia: [How to create a WebVTT file](https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/)
+<ul>
+<li>From the HTML specification: <a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element">The track element</a></li>
+<li>From the W3C specification: <a href="https://www.w3.org/TR/webvtt1/">WebVTT: The Web Video Text Tracks Format</a></li>
+<li>From MDN's Web Docs: <a href="https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/">WebVTT</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video">Adding captions and subtitles to HTML5 video</a></li>
+<li>An article from 3playmedia: <a href="https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/">How to create a WebVTT file</a></li>
+</ul>
 
 <h3 id="ch2-3-2">2.3.2 The WebVTT Format</h3>
 
