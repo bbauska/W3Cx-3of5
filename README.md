@@ -3067,14 +3067,17 @@ From Bruce Lawson\'s article : <i>\"Whichever you choose, it's represented inte
 <i>You still can't represent dates before the Christian era, as years can't be negative. Neither can you indicate date ranges. To mark up From "21/02/2012 to 25/02/2012″, use two separate \<time\> elements.\"</i>
 
 <h5>Examples:</h5>
-```
+
+```html5
 <h2>Recipe:</h2>
 <ul>
   <li> Preparation time: <time datetime="PT30M">30 minutes</time> </li>
   <li> Cooking time:     <time datetime="PT10M">10 minutes</time> </li>
 </ul>
 ```
+
 <h4>The &lt;time&gt; element with no attributes</h4>
+
 <p>Used without attributes, the value between the opening &lt;time&gt; and closing &lt;time&gt; should follow the syntax given by the specification so that machines can understand it (same syntax as the one presented for the datetime attribute in the previous section). However it is recommended to use a datetime attribute, as it gives more freedom in the way you can display the date/time/duration in a human-readable form. </p>
 
 <h4>External resources:</h4>
@@ -3137,7 +3140,8 @@ The HTML \<mark\> tag is used for indicating text as marked or highlighted for
 <br/>
 
 <h4>Source code:</h4>
-```
+
+```html5
 <body>
 <pre>
 <code><mark>var</mark> i = 3;</code>
@@ -3146,7 +3150,7 @@ The HTML \<mark\> tag is used for indicating text as marked or highlighted for
 </body>
 ```
 
-<h4>Change the default style of the <mark> element</h4>
+<h4>Change the default style of the &lt;mark&gt; element</h4>
 
 If you don\'t like the default yellow background, you may use CSS to change the style of the \<mark\> element:
 
@@ -3324,9 +3328,9 @@ HTML5 gives us a new translate attribute. This attribute is used to limit the 
 
 Both <a href="https://translate.google.com/">Google translate</a> and <a href="https://www.microsofttranslator.com/">Microsoft online translation services</a> already offer the ability to prevent translation of content by adding markup to your content, although they do it in (multiple) different ways. Hopefully, the new attribute will help significantly by providing a standard approach.
 
-<h4> Principle: give hints to translating tools</h4>
+<h4>Principle: give hints to translating tools</h4>
 
-<a href="https://www.w3.org/TR/html5/dom.html#the-translate-attribute">The specification about the translate attribute</a> tells us that  <i>\"The translate attribute is an enumerated attribute that is used to specify whether an element\'s attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.*
+<a href="https://www.w3.org/TR/html5/dom.html#the-translate-attribute">The specification about the translate attribute</a> tells us that <i>\"The translate attribute is an enumerated attribute that is used to specify whether an element\'s attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.*
 
 *The attribute\'s keywords are the empty string, yes, and no. The empty string and the yes keyword map to the yes state. The no keyword maps to the no state. In addition, there is a third state, the inherit state, which is the missing value default (and the invalid value default).\"*
 
@@ -4589,7 +4593,7 @@ Check the online example below: use the progress cursor to go near the end of th
 // If at the end we start again from beginning (the modulo
 // source.length does that)
       function loadNextVideo() {
-        myVideo.src = sources\[currentVideo % sources.length]
+        myVideo.src = sources[currentVideo % sources.length]
         myVideo.load();
         currentVideo++;
       }
@@ -4602,9 +4606,9 @@ Check the online example below: use the progress cursor to go near the end of th
 // Called when the page is loaded
     function init(){
 // get the video element using the DOM api
-    myVideo = document.querySelector(\"#myVideo\");
+    myVideo = document.querySelector("#myVideo");
 // Defines a callback function called each time a video ended
-    myVideo.addEventListener(\'ended\', loadAndplayNextVideo, false);
+    myVideo.addEventListener('ended', loadAndplayNextVideo, false);
 // Loads the first video when the page is loaded
     loadNextVideo();
     }
@@ -4634,7 +4638,7 @@ Some examples are given \"as is\", such as the custom video player that uses SV
 
 <h4>Example #1: a player showing the use of every type of CSS3 transformation</h4>
 
-Please see this example online, originally written by [Chris Heilmann](https://christianheilmann.com/), and tuned by us ;).
+Please see this example online, originally written by <a href="https://christianheilmann.com/">Chris Heilmann</a>, and tuned by us ;).
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 82. (xx) ---------------------------------------->
@@ -4674,7 +4678,7 @@ Below is a piece of code for handling errors during video playback:
 vid.addEventListener('error', function(evt) {
     logEvent(evt,'red');
 }, false);
-\...
+...
 function logEvent(evt, color) {
     switch (evt.type) {
        ...
