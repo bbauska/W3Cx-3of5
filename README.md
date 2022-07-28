@@ -1218,7 +1218,7 @@ Here are some examples:
 
 <h4>Good (heading in each explicit section):</h4>
 
-```
+```html5
 <section>
     <h1>Blog post of April 2020</h1>
     ...
@@ -1227,7 +1227,7 @@ Here are some examples:
 
 <h4>Good (heading in a <header> does not change anything)</h4>
 
-```
+```html5
 <section>
     <header>
        <h1>Blog post of April 2020</h1>
@@ -2380,10 +2380,10 @@ We have seen the different sectioning elements of HTML5, so why didn\'t we talk 
 The \<main\> element is supported by major modern browsers (see the corresponding <a href="https://caniuse.com/#feat=mdn-html_elements_main" target="_blank">support table</a> on CanIUse and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main#Browser_compatibility" target="_blank">MDN\'s brower compatibility page</a>.
 
 This element is subject to some constraints:
-
--   There must not be more than one \<main\> element in a document,
-
--   It must not be a descendant of an \<article\>,\<aside\>, \<footer\>, \<header\>, or \<nav\> element.
+<ul>
+<li>There must not be more than one &lt;main&gt; element in a document,</li>
+<li>It must not be a descendant of an &lt;article&gt;,&lt;aside&gt;, &lt;footer&gt;, &lt;header&gt;, or &lt;nav&gt; element.</li>
+</ul>
 
 And finally, here are some examples (from <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank">the HTML5 specification</a>) that mix the \<main\> element with the other sectioning elements already seen in the course:
 
