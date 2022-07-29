@@ -4,7 +4,7 @@
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- readme.md of W3Cx-3of5-HTML5.1x -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------------ w3cx logo ------------------------------------------->
+<!------------------------------------- 11. w3cx logo (01) --------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image011.png?raw=true"
@@ -178,7 +178,7 @@ To help you practice during the whole duration of the course, we use the followi
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image002.png?raw=true"
-   alt="JSBin logo"
+   alt="JSBin logo."
    width="15%">
 &nbsp;
 <br/>
@@ -195,7 +195,7 @@ Tutorials can be found on the Web such as <a href="https://code.tutsplus.com/tut
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image003.png?raw=true"
-   alt="CodePen logo"
+   alt="CodePen logo."
    width="15%">
 &nbsp;
 <br/>
@@ -235,7 +235,7 @@ Example of a <a href="./images/image004.png">CanIUse browser</a> support table (
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image004.png?raw=true"
-   alt="Example CSS in CanIUse"
+   alt="Example CSS in CanIUse."
    width="65%">
 &nbsp;
 <br/>
@@ -246,7 +246,7 @@ Example of a <a href="./images/image004.png">CanIUse browser</a> support table (
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image005.png?raw=true"
-   alt="Logo of MDN Web Docs"
+   alt="Logo of MDN Web Docs."
    width="35%">
 &nbsp;
 <br/>
@@ -283,7 +283,7 @@ The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validato
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image006.png?raw=true"
-   alt="Laptop Showing Unicorn Validator"
+   alt="Laptop Showing Unicorn Validator."
    width="25%" />
 </p>
 
@@ -308,7 +308,7 @@ The <a href="https://www.w3.org/2009/cheatsheet/" target="_blank">W3C cheatshee
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image007.png?raw=true"
-   alt="W3C Cheat Sheet snapshot image"
+   alt="W3C Cheat Sheet snapshot image."
    width="65%" />
 </p>
 Its main feature is a lookup search box, where one can start typing a keyword and get a list of matching properties/elements/attributes/functions in the above-mentioned specifications, and further details on those when selecting the one of interest.
@@ -334,7 +334,7 @@ Contributing to this standardization process might be a bit scary or hard to app
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image008.png?raw=true"
-   alt="Github (the octocat) logo"
+   alt="Github (the octocat) logo."
    width="15%" />
 </p>
 
@@ -347,7 +347,7 @@ If you\'re looking to an easy way to dive into this standardization processes, c
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image009.png?raw=true"
-   alt="W3C Web Incubator Community Group logo"
+   alt="W3C Web Incubator Community Group logo."
    width="25%" />
 </p>
 
@@ -539,7 +539,7 @@ Text alternatives (\"alt text\") are a primary way of making visual information 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image011.png?raw=true"
-   alt="W3C logo"
+   alt="W3C logo."
    width="15%" />
 &nbsp;
 <br/>
@@ -613,7 +613,49 @@ Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\
 the W3C specification about this element):
 
 <h4>HTML5 structural element and description</h4>
-
+<table>
+  <tr>
+    <th>HTML5 element</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>&lt;header&gt;</td>
+    <td>Introduction of "sectioning elements": an article, a section, the entire document (header page). Typically the header of a Web site that appears on the top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;.</td>
+  </tr>
+  <tr>
+    <td>&lt;footer&gt;</td>
+    <td>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;</td>
+  </tr>
+  <tr>
+    <td>&lt;nav&gt;</td>
+    <td>Section that contains the main navigation links (within the document or to other pages).</td>
+  </tr>
+  <tr>
+    <td>&lt;article&gt;</td>
+    <td>Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</td>
+  </tr>
+  <tr>
+    <td>&lt;section&gt;</td>
+    <td>Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.</td>
+  </tr>
+  <tr>
+    <td>&lt;time&gt;</td>
+    <td>Used for marking up times and dates.</td>
+  </tr>
+  <tr>
+    <td>&lt;aside&gt;</td>
+    <td>Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</td>
+  </tr>
+  <tr>
+    <td>&lt;figure&gt; and &lt;figcaption&gt;</td>
+    <td>Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</td>
+  </tr>
+  <tr>
+    <td>&lt;main&gt;</td>
+    <td>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. There can be only one <main> element in a document.</td>
+  </tr>
+</table>
+<!---
 [**\<header\>**](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>
 
 [**\<footer\>**](https://www.w3.org/TR/html5/sections.html#the-footer-element)                                                                                                              Contains the footer of a site, a long \<article\>, or a long \<section\>
@@ -631,6 +673,7 @@ the W3C specification about this element):
 [**\<figure\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [**\<figcaption\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
 
 [**\<main\>**](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                 The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one \<main\> element in a document.</b>
+--->
 
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
 
@@ -19644,4 +19687,4 @@ The end.
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>07-27-2022 7:43am</i></b></h3>
+<h3><b><i>07-29-2022 12:44am</i></b></h3>
