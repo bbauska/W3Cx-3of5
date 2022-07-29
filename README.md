@@ -612,19 +612,19 @@ The results of these surveys led to the addition of new structural elements in H
 Finally, the 20 most popular ids and class names found in Hickson\'s and Opera\'s surveys gave birth to these new elements (click on the element\'s name to go to 
 the W3C specification about this element):
 
-<h4>HTML5 structural element and description</h4>
+<h4>HTML5 structural elements with description</h4>
 <table>
   <tr>
     <th>HTML5 element</th>
     <th>Description</th>
   </tr>
   <tr>
-    <td>&lt;header&gt;</td>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-header-element">&lt;header&gt;</a></td>
     <td>Introduction of "sectioning elements": an article, a section, the entire document (header page). Typically the header of a Web site that appears on the top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;.</td>
   </tr>
   <tr>
     <td>&lt;footer&gt;</td>
-    <td>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;</td>
+    <td>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</td>
   </tr>
   <tr>
     <td>&lt;nav&gt;</td>
@@ -655,25 +655,6 @@ the W3C specification about this element):
     <td>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. There can be only one <main> element in a document.</td>
   </tr>
 </table>
-<!---
-[**\<header\>**](https://www.w3.org/TR/html5/sections.html#the-header-element)                                                                                                              Introduction of \"sectioning elements\": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long \<article\> or of a long \<section\>
-
-[**\<footer\>**](https://www.w3.org/TR/html5/sections.html#the-footer-element)                                                                                                              Contains the footer of a site, a long \<article\>, or a long \<section\>
-
-[**\<nav\>**](https://www.w3.org/TR/html5/sections.html#the-nav-element)                                                                                                                    Section that contains the main navigation links (within the document or to other pages).
-
-[**\<article\>**](https://www.w3.org/TR/html5/sections.html#the-article-element)                                                                                                            Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.
-
-[**\<section\>**](https://www.w3.org/TR/html5/sections.html#the-section-element)                                                                                                            Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.
-
-[**\<time\>**](https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element)                                                                                                      Used for marking up times and dates.
-
-[**\<aside\>**](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.
-
-[**\<figure\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figure-element) and [**\<figcaption\>**](https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element)   Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.
-
-[**\<main\>**](https://www.w3.org/TR/html5/sections.html#the-aside-element)                                                                                                                 The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one \<main\> element in a document.</b>
---->
 
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
 
