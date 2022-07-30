@@ -3268,7 +3268,7 @@ Here are some extracts from a Java Servlet that generate a zip file and forces t
 21. }
 ```
 
-The above example will cause the browser that invoked this server-side code to start the download of a file named "DATA.ZIP\".
+The above example will cause the browser that invoked this server-side code to start the download of a file named \"DATA.ZIP\".
 
 <h4>To download a file using an arbitrary name: the download attribute</h4>
 
@@ -3277,7 +3277,7 @@ The above example will cause the browser that invoked this server-side code to
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image054.jpeg?raw=true"
-   alt="Picture of a road sign with the words New Way"
+   alt="Picture of a road sign with the words 'New Way'."
    width="15%">
 &nbsp;
 <br/>
@@ -3311,7 +3311,7 @@ This will indeed force the download of an image with a filename different from i
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image056.jpeg?raw=true"
-   alt="No Server Picture"
+   alt="No server picture."
    width="35%">
 &nbsp;
 <br/>
@@ -3348,7 +3348,7 @@ HTML5 gives us a new translate attribute. This attribute is used to limit the 
 <ul>
 <li>HTML pages that contain source code: you would certainly not like to see the Java or PHP or whatever programming language parts of your page translated into another spoken language!</li>
 <li>Video game Web sites that propose cheat codes; the codes do not have to be translated,</li>
-<li>Street names, author names in an \"about\" page must not be translated,</li>
+<li>Street names, author names in an "about" page must not be translated,</li>
 <li>etc.</li>
 </ul>
 
@@ -3356,21 +3356,25 @@ Both <a href="https://translate.google.com/">Google translate</a> and <a href
 
 <h4>Principle: give hints to translating tools</h4>
 
-<a href="https://www.w3.org/TR/html5/dom.html#the-translate-attribute">The specification about the translate attribute</a> tells us that <i>\"The translate attribute is an enumerated attribute that is used to specify whether an element\'s attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.*
+<a href="https://www.w3.org/TR/html5/dom.html#the-translate-attribute">The specification about the translate attribute</a> tells us that <i>\"The translate attribute is an enumerated attribute that is used to specify whether an element\'s attribute values and the values of its Text node children are to be translated when the page is localized, or whether to leave them unchanged.</i>
 
-*The attribute\'s keywords are the empty string, yes, and no. The empty string and the yes keyword map to the yes state. The no keyword maps to the no state. In addition, there is a third state, the inherit state, which is the missing value default (and the invalid value default).\"*
+<i>The attribute\'s keywords are the empty string, yes, and no. The empty string and the yes keyword map to the yes state. The no keyword maps to the no state. In addition, there is a third state, the inherit state, which is the missing value default (and the invalid value default).\"</i>
 
 <h4> Example illustrating how to specify parts of an HTML element that should not be translated:</h4>
+
 ```
-1.  <span <b>[translate="no"]</b> class="author">[Michel Ham]</span\>
+1.  <span <b>[translate="no"]</b> class="author">[Michel Ham]</span>
 ```
+
 In the above example, a \<span\> element defines an author (of a blog, for example) who is named Michel Ham. However, his family name is the same as pork and would be translated to \"Michel Jambon\" in French, or Michel Jamón in Spanish\...
 
 Using the translate=\"no\" attribute should prevent this behavior\...
+
 ```
 1.  <span <b>[translate="no"]</b> class="author">[Michel Ham]</span> is a professor
 2.  from the University of Nice,France.
 ```
+
 Will be correctly translated into French by:
 
 ```
@@ -3379,12 +3383,12 @@ Will be correctly translated into French by:
 
 \...where all of the end of the sentence has been translated except the author\'s name.
 
-<h4> Inheritance between elements</h4>
+<h4>Inheritance between elements</h4>
 
 When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true.
 
 ```
-1.  <p <b>[translate="no"]</b>>This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.[<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>]. This is the end of the paragraph\...</p>
+1.  <p translate="no">This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>. This is the end of the paragraph\...</p>
 ```
 
 <h4>External resources:</h4>
@@ -3406,6 +3410,7 @@ Adding microdata to Web pages helps search engines to better understand the page
 This information is not visible to humans: it is pure *semantic information*. Popular kinds of microdata are events, a person\'s profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. 
 
 <h4>Quick example of microdata that describes a person</h4>
+
 ```
 1.  <section [itemscope itemtype="https://schema.org/Person"]>
 2.      <h1>Contact Information</h1>
@@ -3472,18 +3477,15 @@ Different use cases:
 <b>Note</b>: For advanced users, Microdata is very similar to [microformats](http://microformats.org/), which use HTML classes, or to [RDFa](https://www.w3.org/TR/xhtml-rdfa-primer/), which doesn't validate in HTML4 or HTML5. Because RDFa was considered to be too hard for authors to write, microdata is HTML5\'s answer to help embed semantics into html documents.
 
 <h4>External resources</h4>
--   [W3C\'s HTML Microdata Working Draft](https://www.w3.org/TR/microdata/)
-
--   MDN\'s Web Docs: [Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)
-
--   Very good [Microdata](https://journal.code4lib.org/articles/6400) paper from code{4}lib journal
-
--   [Microdata and the microdata DOM API](https://dev.opera.com/articles/microdata-and-the-microdata-dom-api/), old article from dev.opera.com
-
--   [Chapter from Mark Pilgrim\'s book about microdata](https://diveinto.html5doctor.com/extensibility.html), very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.
-
+<ul>
+<li><a href="https://www.w3.org/TR/microdata/">W3C's HTML Microdata Working Draft</a>,</li>
+<li>MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata">Microdata</a>,</li>
+<li>Very good <a href="https://journal.code4lib.org/articles/6400">Microdata</a> paper from code{4}lib journal,</li>
+<li><a href="https://dev.opera.com/articles/microdata-and-the-microdata-dom-api/">Microdata and the microdata DOM API</a>, old article from dev.opera.com,</li>
+<li><a href="https://diveinto.html5doctor.com/extensibility.html">Chapter from Mark Pilgrim's book about microdata</a>, very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.</li>
+</ul>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- Chapter 1-5-2. testing tools (63) -------------------------------->
+<!----------------------------- Chapter 1-5-2. testing tools (72) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-2">1.5.2 Testing Tools</h3>
 
@@ -3491,7 +3493,7 @@ Different use cases:
 
 After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.
 <!------------------------------------------------------------------------------------------------>
-<!---------------------- 58. picture of diverse tools used by workers (xx) ----------------------->
+<!---------------------- 58. picture of diverse tools used by workers (73) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image058.jpeg?raw=true"
@@ -3500,15 +3502,15 @@ After seeing the principle of embedding microdata in an HTML page, we now presen
 &nbsp;
 <br/>
 
-One of the most popular resources for testing microdata (as well as microformats and RDFa) is this [Google page about understanding how structured data works](https://developers.google.com/search/docs/guides/intro-structured-data). This page contains a link to a structured data testing tool that you can use to see how Google recognizes the semantic data you embed in your HTML code.
+One of the most popular resources for testing microdata (as well as microformats and RDFa) is this <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Google page about understanding how structured data works</a>. This page contains a link to a structured data testing tool that you can use to see how Google recognizes the semantic data you embed in your HTML code.
 
-<h4>Testing a real interactive example with an \"about page\" for Michel Buffa</h4>
+<h4>Testing a real interactive example with an "about page" for Michel Buffa</h4>
 
 Let\'s have a look now at a (small) example of an about page. It renders as a very simple paragraph that explains who Michel Buffa is\... But we embedded Microdata, so it\'s interesting to see how a search engine sees it, and how it may produce \"augmented search results\".
 
 <a href="https://jsbin.com/gunuzus/1/edit?html,output">Online example at JsBin</a>
 
-<h4>Source code:</h4>
+<h5>Source code:</h5>
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -3535,9 +3537,9 @@ Let\'s have a look now at a (small) example of an about page. It renders as a ve
 23. </html>
 ```
 
-Rendering of the page in a browser:
+<h5>Rendering of the page in a browser:</h5>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 59. rendering of michel buffa home page (xx) -------------------------->
+<!------------------------ 59. rendering of michel buffa home page (73) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image059.jpeg?raw=true"
@@ -3546,10 +3548,10 @@ Rendering of the page in a browser:
 &nbsp;
 <br/>
 
-Here is what Google sees of the page. We just entered its [URL](https://output.jsbin.com/gunuzus/1) in the [Google page about rich snippets and structured data](https://developers.google.com/search/docs/guides/intro-structured-data):
+Here is what Google sees of the page. We just entered its <a href="https://output.jsbin.com/gunuzus/1">URL</a> in the <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Google page about rich snippets and structured data</a>:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------- 60. microdata of the example, as seen by google (xx) ---------------------->
+<!-------------------- 60. microdata of the example, as seen by google (74) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image060.png?raw=true"
@@ -3565,7 +3567,7 @@ Note that the address is a fully featured embedded object in the Person\'s descr
 The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 61. example live microdata (xx) -------------------------------->
+<!------------------------------- 61. example live microdata (74) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image061.jpeg?raw=true"
@@ -3574,9 +3576,9 @@ The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> i
 &nbsp;
 <br/>
 
-And the JSON view of the microdata:
+<h5>And the JSON view of the microdata:</h5>
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 62. json view of the microdata (xx) ------------------------------->
+<!---------------------------- 62. json view of the microdata (74) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image062.jpeg?raw=true"
@@ -3597,6 +3599,7 @@ Adding microdata to an HTML page is a really simple task and requires only three
 <h4>1 - Define a container element by adding an itemscope attribute</h4>
 
 First, you need to add an itemscope attribute to an HTML element. This will define the \"global object\" for which we will define properties. This element can be of different types that we will describe later, but for now let us keep looking at the same example we used in previous sections:
+
 ```
 1.  <section itemscope itemtype="https://schema.org/Person">
 2.  ...
@@ -3622,11 +3625,11 @@ If you are a developer and if you are familiar with object oriented programming,
 <h5>Vocabularies are meant to be shared</h5>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 63. time to share (xx) ------------------------------->
+<!---------------------------- 63. picture of 'time to share' (76) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image063.jpeg?raw=true"
-   alt="Picture wish words \'time to share\'"
+   alt="Picture wish words 'time to share'"
    width="25%">
 &nbsp;
 <br/>
@@ -3667,10 +3670,12 @@ Now that you have defined a container element, you may add properties to the HTM
 
 In this example, the container is a \<section\> that corresponds to a Person (we have one clue here: the name of the vocabulary given by the itemtype attribute), and each property defined inside this section is identified by the value of the itemprop attribute of sub-elements.
 
-<h5>The line: </h5>
+<h5>The line:</h5>
+
 ```
-1.  <dd itemprop="name"Michel Buffa</dd\>
+1.  <dd itemprop="name"Michel Buffa</dd>
 ```
+
 \...defines a property called \"name\" that has a value of \"Michel Buffa\" (the text value between the opening and closing tags of the \<dd\> element).
 
 <h5>Nesting microdata items</h5>
@@ -3679,7 +3684,8 @@ As we saw with the Person/Address example at the beginning of this chapter, it i
 
 Give an element inside a microdata container its own itemscope attribute with the recommended itemtype attribute for indicating the name of the vocabulary used by the nested microdata.
 
-Again, look at the Person/Address example:
+<h5>Again, look at the Person/Address example:</h5>
+
 ```
 1.  ...
 2.  </dl>
@@ -3702,6 +3708,7 @@ Again, look at the Person/Address example:
 19. 
 20. ...
 ```
+
 The properties at *lines 8-12* refer to the address nested microdata (they are defined in the Address vocabulary, not the Person vocabulary), and \"France\" (*line 14*) is a property that refers to the Country vocabulary.
 
 <h5>Several properties with the same name but different values</h5>
@@ -9621,7 +9628,7 @@ drawArrow(ctx, 100, 10, 140, 140, 3, 'black');
 </html>
 ```
 
-<h4>Source code extract:</h4>
+<h5>Source code extract:</h5>
 
 ```
 1.  drawArrow(ctx, 10, 10, 100, 100, 10, 'red');
@@ -9691,10 +9698,10 @@ ctx.stroke();
 </html>
 ```
 
-Source code:
+<h5>Source code:</h5>
 ```
-1.  var canvas=document.getElementById(\'myCanvas\');
-2.  var ctx=canvas.getContext(\'2d\');
+1.  var canvas=document.getElementById('myCanvas');
+2.  var ctx=canvas.getContext('2d');
 3.  
 4.  // Path made of three points (defines two lines)
 5.  ctx.moveTo(20,20);
@@ -9705,7 +9712,7 @@ Source code:
 10. ctx.closePath();
 11. 
 12. // indicate stroke color + draw first part of the path
-13. ctx.strokeStyle = \"blue\";
+13. ctx.strokeStyle = "blue";
 14. ctx.stroke();
 ```
 
@@ -9721,7 +9728,7 @@ Try commenting the *line 10* in the online example and see the results!
 
 The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is useful for drawing arcs of circles. It takes the center of the circle/arc, its radius, the starting angle of the arc (turning clockwise), the ending angle of the arc, and an optional parameter we will talk about later.
 
-*Note*: the figures in this page have been borrowed from the [HTML5 Canvas Tutorials](https://www.html5canvastutorials.com/tutorials/html5-canvas-arcs/) Web site.
+<i>Note</i>: the figures in this page have been borrowed from the <a href="https://www.html5canvastutorials.com/tutorials/html5-canvas-arcs/">HTML5 Canvas Tutorials</a> Web site.
 
 <!------------------------------------------------------------------------------------------------>
 <!------------- 146. html5 canvas arc diagram: drawing circle coordinate system (xxx) ------------>
@@ -9735,7 +9742,8 @@ The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is usefu
 
 <h4>Typical usage</h4>
 
-Typical usage for drawing an arc/circle/ellipse is:
+<h5>Typical usage for drawing an arc/circle/ellipse is:</h5>
+
 ```
 1.  ctx.arc(centerX, centerY, radius, startAngle, endAngle); // clockwise drawing
 2.  
@@ -9782,7 +9790,7 @@ ctx.stroke();
 </html\>
 ```
 
-<h4>Code source extract:</h4>
+<h5>Code source extract:</h5>
 ```
 1.  ctx.beginPath();
 2.  // we ommited the last parameter
@@ -9826,7 +9834,7 @@ Then, the result is the \"complementary\" of the previous arc:
 &nbsp;
 <br/>
 
-<h4>Source code:</h4>
+<h5>Source code:</h5>
 ```
 1.  var canvas = document.getElementById("myCanvas");
 2.  var ctx = canvas.getContext("2d");
@@ -9956,7 +9964,7 @@ context.stroke();
 </html>
 ```
 
-<h4>Source code extract:</h4>
+<h5>Source code extract:</h5>
 ```
 1.  context.beginPath();
 2.  context.moveTo(0, 20);
@@ -9980,7 +9988,7 @@ context.stroke();
 &nbsp;
 <br/>
 
-<h4>HTML</h4>
+<h5>HTML</h5>
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -10020,7 +10028,7 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 </body>
 ```
 
-<h4>Source code:</h4>
+<h5>Source code:</h5>
 ```
 1.  var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke) {
 2.      ctx.beginPath();
@@ -10237,16 +10245,16 @@ The control point controls the curvature - if we move the control point farther 
 <h4>Example #1: quadratic curve</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 158.  (xxx) -------------------------------->
+<!------------------------------ 158. quadratic curve (xxx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image158.png?raw=true"
-   alt="image158.png - "
+   alt="image158.png - example: quadratic curve."
    width="65%">
 &nbsp;
 <br/>
 
-<h4>Source code:</h4>
+<h5>Source code:</h5>
 ```
 1.  var canvas=document.querySelector('#myCanvas1');
 2.  var context=canvas.getContext('2d');
@@ -10304,7 +10312,7 @@ context.stroke();
 </html>
 ```
 
-Source code:
+<h5>Source code:</h5>
 
 ```
 1.  context.beginPath();
@@ -10387,7 +10395,7 @@ border: 1px solid black;
 }
 ```
 
-<h4>HTML</h4>
+<h4>HTML</h5>
 
 ```
 <!DOCTYPE html>
@@ -10402,7 +10410,7 @@ border: 1px solid black;
 </html>
 ```
 
-Source code of the function that draws a curved arrow:
+<h5>Source code of the function that draws a curved arrow:</h5>
 
 ```
 1.  function drawCurvedArrow(startPointX, startPointY,
@@ -19633,7 +19641,7 @@ navigator.geolocation.getCurrentPosition(success, error);
  </html>
 ```
 
-The end.
+. . .The end.
 
 **[`^        back to top        ^`](#table-of-contents)**
 
@@ -19641,4 +19649,4 @@ The end.
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>07-29-2022 5:54pm</i></b></h3>
+<h3><b><i>07-30-2022 7:49am</i></b></h3>
