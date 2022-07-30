@@ -2116,7 +2116,7 @@ The HTML5 specification says that \"each sectioning element potentially has a he
     ...
 </body>
 ```
-... defines the header of a section <i>implicitly</i>, while:
+<h5>... defines the header of a section <i>implicitly</i>, while:</h5>
 ```
 <body>
    ...
@@ -2126,7 +2126,7 @@ The HTML5 specification says that \"each sectioning element potentially has a he
    </section>
 </body>
 ```
-<h4>... defines the heading of the explicit section (its parent element &lt;section&gt;).</h4>
+<h5>... defines the heading of <i>the explicit section</i> (its parent element &lt;section&gt;).</h5>
 
 <h4>Use multiple headings of different rank with sectioning content</h4>
 
@@ -2134,7 +2134,7 @@ The first element of a heading content in an element of sectioning content repre
 
 Subsequent headings of equal or higher rank start new (implied) sections, headings of lower rank start implied subsections that are part of the previous one. In both cases, the element represents the heading of the implied section.
 
-Let\'s clarify this by looking at some example code:
+<h4>Let's clarify this by looking at some example code:</h4>
 ```
 <body>
 <section>
