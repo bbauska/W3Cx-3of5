@@ -2855,23 +2855,23 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> elem
 <h5>Step 1: all folded:</h5>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 43.  (xx) ------------------------------->
+<!------------------------------------- 43. all folded (60) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image043.jpeg?raw=true"
-   alt="Other example, unfolded"
+   alt="Other example, unfolded."
    width="35%">
 &nbsp;
 <br/>
 
-<h5>Step 2: click on top level summary icon, the first \"hidden\" part appears\...</h5>
+<h5>Step 2: click on top level summary icon, the first "hidden" part appears...</h5>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 44.  (xx) ------------------------------->
+<!---------------------------- 44. click top level summary icon (60) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image044.jpeg?raw=true"
-   alt="The unfolded content contains in turn a summary details folded"
+   alt="The unfolded content contains in turn a summary details folded."
    width="35%">
 &nbsp;
 <br/>
@@ -2879,7 +2879,7 @@ The \<summary\>\...\</summary\> is inside a \<details\>\...\</details\> elem
 <h5>Step3: click on embedded summary icon inside the part that has been previously unfolded</h5>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 45.  (xx) ------------------------------->
+<!--------------------------- 45. click on embedded summary icon (61) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image045.jpeg?raw=true"
@@ -2911,14 +2911,14 @@ Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
 
 There are CSS pseudo classes to style this icon when it is in the open or closed state. Support for these is still incomplete as of June 2020 (works on Google Chrome, Opera, Safari, not in FF).
 
-<h5>Example1 see <a href="https://jsbin.com/tomehim/1/edit?html,css,output" target="_blank">online example</a>:</h5>
+<h5>Example1 (see <a href="https://jsbin.com/tomehim/1/edit?html,css,output" target="_blank">online example</a>):</h5>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 46.  (xx) ------------------------------->
+<!-=-------------------- 46. pseudo classes for styling summary icons (61) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image046.jpeg?raw=true"
-   alt="Styling the open/close icon"
+   alt="Styling the open/close icon."
    width="35%">
 &nbsp;
 <br/>
@@ -2935,16 +2935,18 @@ In this example: red arrow, white background.
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 47.  (xx) ------------------------------->
+<!---------------------------------- 47. unfold and style (62) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image047.jpeg?raw=true"
-   alt="Styled summary details icon, unfolded state"
+   alt="Styled summary details icon, unfolded state."
    width="35%">
 &nbsp;
 <br/>
 
-Once opened, the selector details[open] can style the icon when <details> is unfolded. In this example: blue arrow, turquoise background. Here is the corresponding CSS rule:
+<p>Once opened, the selector details [open] can style the icon when &lt;details&gt; is unfolded. In this example: blue arrow, turquoise background.</p>
+
+<h4>Here is the corresponding CSS rule:</h4>
 
 ```
 1.  details[open] summary::-webkit-details-marker {
@@ -2958,21 +2960,21 @@ It is also possible to change the icon itself using the CSS pseudo class :after
 <h5>Example 2 (see it <a href="https://jsbin.com/sajusop/edit?html,css,output" target="_blank">online</a>):</h5>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 43.  (xx) ------------------------------->
+<!---------------------- 43. a '+' as a custom open icon for summary (62) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image043.jpeg?raw=true"
-   alt="A + as a custom open icon for summary"
+   alt="A "+" as a custom open icon for summary."
    width="35%">
 &nbsp;
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 48.  (xx) ------------------------------->
+<!--------------------------- 48. a '-' as a custom close icon (62) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image048.jpeg?raw=true"
-   alt="A \"-\" as a custom close icon"
+   alt="A "-" as a custom close icon."
    width="35%">
 &nbsp;
 <br/>
