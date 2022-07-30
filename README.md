@@ -484,7 +484,7 @@ Web accessibility addresses all disabilities, including hearing, learning and co
 <li><i>Text alternatives</i> for people with visual disabilities and who are using screen readers;</li>
 </ul>
 
-<h4>Web accessibility benefits people with and w*ithout* disabilities</h4>
+<h4>Web accessibility benefits people with and <i>without</i> disabilities</h4>
 
 Web accessibility features also benefit many more users, such as:
 <ul>
@@ -623,42 +623,42 @@ the W3C specification about this element):
     <td>Introduction of "sectioning elements": an article, a section, the entire document (header page). Typically the header of a Web site that appears on the top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;.</td>
   </tr>
   <tr>
-    <td>&lt;footer&gt;</td>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-footer-element">&lt;footer&gt;</td>
     <td>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</td>
   </tr>
   <tr>
-    <td>&lt;nav&gt;</td>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-nav-element">&lt;nav&gt;</td>
     <td>Section that contains the main navigation links (within the document or to other pages).</td>
   </tr>
   <tr>
-    <td>&lt;article&gt;</td>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-article-element">&lt;article&gt;</td>
     <td>Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</td>
   </tr>
   <tr>
-    <td>&lt;section&gt;</td>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-section-element">&lt;section&gt;</td>
     <td>Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.</td>
   </tr>
   <tr>
-    <td>&lt;time&gt;</td>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-time-element">&lt;time&gt;</td>
     <td>Used for marking up times and dates.</td>
   </tr>
   <tr>
-    <td>&lt;aside&gt;</td>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-aside-element">&lt;aside&gt;</td>
     <td>Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</td>
   </tr>
   <tr>
-    <td>&lt;figure&gt; and &lt;figcaption&gt;</td>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-figure-element">&lt;figure&gt; and <a href="https://html.spec.whatwg.org/multipage/sections.html#the-figcaption-element">&lt;figcaption&gt;</td>
     <td>Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</td>
   </tr>
   <tr>
-    <td>&lt;main&gt;</td>
-    <td>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. There can be only one <main> element in a document.</td>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-main-element">&lt;main&gt;</td>
+    <td>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document</b>.</td>
   </tr>
 </table>
 
 And there is no \<content\> element even though the \<div class=\"content\"\> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is \"default content\". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between \<article\> and \</article\>.
 
-Read also at the end of this section about the new \<main\> element. This element is [part of the HTML5 recommendation](https://www.w3.org/TR/html5/grouping-content.html#the-main-element) and  an integral part of the HTML document structure.
+Read also at the end of this section about the new \<main\> element. This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">part of the HTML5 recommendation</a> and  an integral part of the HTML document structure.
 
 <h4>External resources:</h4>
 <ul>
@@ -1214,7 +1214,7 @@ Let\'s clarify this by looking at some example code:
 </body>
 ```
 
-The corresponding outline is:
+<h4>The corresponding outline is:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 26. outline of previous example (26) ------------------------------>
@@ -1234,11 +1234,11 @@ In the above example, please note two things:
 
 <h4>Best Practices when using Sectioning Elements</h4>
 
-Best practice #1: always add a heading to explicit sectioning content
+<h5>Best practice #1: always add a heading to explicit sectioning content</h5>
 
 It\'s always better - mainly for accessibility reasons - to include a heading (a \<h1\>, \<h2\>\...\<h6\>) in each sectioning element (\<section\>, \<article\>, \<nav\>, \<aside\>), but also after the \<body\> element (called a \"sectioning root\"). 
 
-Here are some examples:
+<h4>Here are some examples:</h4>
 
 <h4>Good (heading in each explicit section):</h4>
 
@@ -1261,7 +1261,7 @@ Here are some examples:
 </section>
 ```
 
-<h4>Bad (there is no Hx after the <section> - no heading):</h4>
+<h4>Bad (there is no Hx after the &lt;section&gt; - no heading):</h4>
 
 ```
 <section>
@@ -1278,7 +1278,7 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 
 <b>UPDATE : </b>For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as [table-of-contents-crx](https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f) for Chrome or [Outline sidebar](https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search) for Firefox.
 
-The outline of the last example looks like this:
+<h4>The outline of the last example looks like this:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 27. outline of previous example (27) ------------------------------>
@@ -1307,7 +1307,7 @@ Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning
 </body>
 ```
 
-In red, the sectioning root (\<body\>) and the sectioning elements (\<section\> here\...), each have a heading.
+The sectioning root (\<body\>) and the sectioning elements (\<section\> here\...), each have a heading.
 
 <h4>To sum up:</h4>
 <ul>
@@ -1321,7 +1321,7 @@ In red, the sectioning root (\<body\>) and the sectioning elements (\<section\>�
 
 You can use heading elements \<h1\>\...\<h6\> in a \<header\> but be careful if you use more than one, as the rules explained in the previous part of the course will apply and may generate implicit \"sections\" in the header.
 
-This example has two headings in the \<header\>:
+<h4>This example has two headings in the &lt;header&gt;:</h4>
 
 ```
 <section>
@@ -1358,7 +1358,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 
 <b>Best practice #2</b>: try not to rely on implicit sectioning, use \<section\>, \<article\>, etc. instead of just \<h1\>\...\<h6\>
 
-The example below defines several implicit \"sections\" by using \<Hx\> directly (at *lines 7 and 9*):
+The example below defines several implicit \"sections\" by using \<Hx\> directly (at <i>lines 7 and 9</i>):
 
 <h4>Ok version (no explicit sections everywhere):</h4>
 
@@ -10646,7 +10646,7 @@ Note how the different parts are linked together and make a \"path\":
 &nbsp;
 <br/>
 
-### Interesting, interactive tool for generating code that draws Bézier curves
+<h4>Interesting, interactive tool for generating code that draws Bézier curves</h4>
 
 This Bézier tool (\"HTML5 \<canvas\> bezierCurveTo command generator\") is available [online](https://www.victoriakirst.com/beziertool/): try it!
 
@@ -10656,7 +10656,7 @@ In previous examples, we saw how to set the current color using the strokeStyle
 
 Let\'s look at color in a little more detail, and see how we can use gradients or patterns/textures/images (in other words: fill shapes or fill the outline of the shapes with some images that repeat themselves).
 
-### Colors and transparency
+<h4>Colors and transparency</h4>
 
 You can use [the same syntax for colors that is supported by CSS3](https://www.w3.org/TR/css3-color/). The next lines show possible values/syntaxes.
 
@@ -10783,7 +10783,7 @@ border: 1px solid black;
 </html>
 ```
 
-<b>A linear gradient is seen as an \"invisible\" rectangle in which a set of colors are interpolated along a line.</b>
+<h5>A linear gradient is seen as an "invisible" rectangle in which a set of colors are interpolated along a line.</h5>
 
 The gradient becomes visible when we draw shapes on top of the invisible gradient, and when the fillStyle or strokeStyle property has for value this gradient.
 
@@ -10799,7 +10799,7 @@ Syntax: 
 ```
 \... where the (x0, y0) and (x1, y1) parameters define \"the direction of the gradient\" (as a vector with a starting and an ending point). This direction is an invisible line along which the colors that compose the gradient will be interpolated.
 
-Let\'s see an example:
+<h4>Let's see an example:</h4
 ```
 1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 0);
 ```
@@ -10881,7 +10881,7 @@ Here is the code that draws the checkboard:
 ```
 This code is rather ugly isn\'t it? It would have been better  to use a loop\...
 
-Here is function that draws a chessboard:
+<h4>Here is function that draws a chessboard:</h4>
 ```
 1.  // n = number of cells per row/column
 2.  function drawCheckboard(n) {
@@ -14446,11 +14446,11 @@ Since HTML5 provides functionalities to assist with accessibility, developers sh
 
 Examples for each of these two basic guidelines are given in the following pages.
 
-### Further reading
+<h4>Further reading</h4>
 
 The WAI Web site hosts a [Forms tutorial](https://www.w3.org/WAI/tutorials/forms/) where to find all guidelines to follow in order to make your forms truly accessible: labeling controls, grouping controls, form instructions, validating input, user notifications, multi-page forms, and custom controls.
 
-### 5.3.2 Why is this Important?
+<h3 id="ch5-3-2">5.3.2 Why is this Important?</h3>
 
 Forms can be visually and cognitively complex and difficult to use. Accessible forms are easier to use for everyone, including people with disabilities.
 
@@ -14462,9 +14462,9 @@ Forms can be visually and cognitively complex and difficult to use. Accessible f
 
 -   **People using screen readers** can identify and understand form controls more easily because they are associated with labels, field sets, and other structural elements.
 
-### 5.3.3 Labeling Controls
+<h3 id="ch5-3-3">5.3.3 Labeling Controls</h3>
 
-### Labels need to describe the purpose of the form control
+<h4>Labels need to describe the purpose of the form control</h4>
 
 Form fields and other form controls usually have visible labels, such as \"E-mail Address:\" as the label for a text field (see figure below).
 
@@ -14472,7 +14472,7 @@ Form fields and other form controls usually have visible labels, such as \"E-mai
 
 When these labels are marked up correctly, people can interact with them using only the keyboard, using voice input, and using screen readers. Also, the label itself becomes clickable, which enables a person who has difficulty clicking on small radio buttons or checkboxes to click anywhere on the label text.
 
-### Associating labels explicitly
+<h4>Associating labels explicitly</h4>
 
 Whenever possible, use the label element to explicitly associate text with form elements. The for attribute of the label must exactly match the id of the form control. 
 
@@ -14484,25 +14484,24 @@ Top of Form
 
 First name:![](./images/image218.wmf)
 
-Source code:
+<h4>Source code:</h4>
 
 Bottom of Form
-
+```
 1.  \<label for=\"first_name\"\>Your First Name\</label\>
-
 2.  \<input id=\"first_name\" type=\"text\" name=\"fname\"/\>
+```
 
 <h4>Example #2</h4>
 
 Note that you can also include the \<input\> element inside the \<label\>\...\</label\> element, and also add a \<span lang=\"en\"\> for example, to indicate the language used in the label. Sometimes, [nesting labels and inputs can also make CSS styling easier and produce better results with screen readers](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#The_%3Clabel%3E_element).
 
-Source code (with \<input\> inside the \<label\>):
-
+<h4>Source code (with &lt;input&gt; inside the &lt;label&gt;):</h4>
+```
 1.  **\<label for=\"first_name\"\>\<span lang=en\"\>**Your First Name**\</span\>**
-
 2.  \<input id=\"first_name\" type=\"text\" name=\"fname\"/\>
-
 3.  **\</label\>**
+```
 
 <h4>Example #3</h4>
 
@@ -14513,27 +14512,24 @@ Top of Form
 First name:![](./images/image218.wmf)\
 Subscribe to newsletter![](./images/image219.wmf)
 
-Source code:
+<h4>Source code:</h4>
 
 Bottom of Form
-
-1.  \<label for=\"firstname\"\>First name:\</label\>
-
-2.  \<input type=\"text\" name=\"firstname\" id=\"firstname\"\>\<br\>
-
+```
+1.  <label for="firstname">First name:</label>
+2.  <input type="text" name="firstname" id="firstname"><br>
 3.  
+4.  <label for="subscribe">Subscribe to newsletter</label>
+5.  <input type="checkbox" name="subscribe" id="subscribe">
+```
 
-4.  \<label for=\"subscribe\"\>Subscribe to newsletter\</label\>
-
-5.  \<input type=\"checkbox\" name=\"subscribe\" id=\"subscribe\"\>
-
-### Labeling buttons
+<h4>Labeling buttons</h4>
 
 The label of a \<button\> element is set inside the element and can include markup. This allows advanced accessibility hints to be included, such as marking up language change. Example: \<button\>Mon \<span lang=\"fr\"\>bouton\</span\>\</button\>,for a button with a label in French.
 
 When using the \<input\> element to create buttons, the label is set in the value attribute of the element. Example: \<input type=\"submit\" value=\"Please submit\"\>, renders a button.
 
-Source code for the \"Submit\" and \"Cancel\" buttons example:
+<h4>Source code for the "Submit" and "Cancel" buttons example:</h4>
 ```
 1.  <button type="submit">Submit</button>
 2.  <button type="button">Cancel</button>
@@ -14550,14 +14546,15 @@ Submit Cancel\
 \... while li*nes 3 and 4* render as:\
 ![](./images/image220.wmf) 
 
-### Labeling text areas
+<h4>Labeling text areas</h4>
 
 Enter your address:\
 ![](./images/image221.wmf)
 
-Source code:
-
-1.  \<label for=\"address\"\>Enter your address:\</label\>\<br\> \<textarea id=\"address\" name=\"addresstext\"\>\</textarea\>
+<h4>Source code:</h4>
+```
+1.  <label for="address">Enter your address:</label><br> <textarea id="address" name="addresstext"></textarea>
+```
 
 <h3 id="ch5-3-4">5.3.4 Grouping Controls</h3>
 
@@ -14581,33 +14578,23 @@ Output format![](./images/image222.wmf)Text file\
 
 Bottom of Form
 
-Source code:
-
+<h4>Source code:</h4>
+```
 1.  <fieldset>
-
 2.  <legend>Output format</legend>
-
 3.  <div>
-
 4.  <input type="radio" name="format" id="txt" value="txt" checked>
-
 5.  <label for="txt">Text file</label>
-
 6.  </div>
-
 7.  <div>
-
 8.  <input type="radio" name="format" id="csv" value="csv">
-
 9.  <label for="csv">CSV file</label>
-
 10. </div>
-
 11. [...]
-
 12. </fieldset>
+```
 
-<h4>Example #2: checkboxes
+<h4>Example #2: checkboxes</h4>
 
 In the example below, there are three checkboxes that are all part of an opt-in function for receiving different types of information.
 
@@ -14623,7 +14610,7 @@ I want to receive
 
 Bottom of Form
 
-Source code:
+<h4>Source code:</h4>
 ```
 1.  <fieldset>
 2.  <legend>I want to receive</legend>
@@ -14635,13 +14622,13 @@ Source code:
 8.  </fieldset>
 ```
 
-### Associating related controls with WAI-ARIA
+<h4>Associating related controls with WAI-ARIA</h4>
 
 WAI-ARIA provides a grouping role that functions similarly to fieldset and legend. For example, a div element can have role=group to indicate that the contained elements are members of a group.
 
 WAI-ARIA roles are very important in the accessibility world, and we invite you to see an example provided in the [associated WAI tutorial](https://www.w3.org/WAI/tutorials/forms/grouping/#associating-related-controls-with-wai-aria). See also this MDN\'s article about about [WAI-ARIA roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
 
-### 5.4.1 Input Types
+<h3 id="ch5-4-1">5.4.1 Input Types</h3>
 
 In this section, we briefly present the input types, attributes, and elements related to the forms that came with HTML5. Details are given later, illustrated by multiple interactive examples.
 
@@ -14651,24 +14638,26 @@ MDN\'s Web docs [article on \<input\> types](https://developer.mozilla.org/en
 
 Now, let\'s play with some of these input types and attributes.
 
+<!---- ************************************************* image 223 ****************************** ----->
 ![HTML4 old HTML5 new](./images/image223.jpeg){width="2.0in" height="1.5972222222222223in"}
 
-### 5.4.2 "color"
+<h3 id="ch5-4-2">5.4.2 "color"</h3>
 
 For years, we used hundreds of lines of JavaScript for selecting colors. Now, it\'s bundled in the browser!
 
 Here is how it looks on some mobile devices:
 
+<!---- ************************************************* image 224 ****************************** ----->
 ![HTML5 input type=color on an android phone](./images/image224.jpeg){width="4.0in" height="3.0in"}
 
-### Typical use
+<h4>Typical use</h4>
 
-Inserting a color chooser is as simple as:
+<h4>Inserting a color chooser is as simple as:</h4>
 ```
-1.  <!DOCTYPE html\>
-2.  <html lang=\"en\"\>\<head\>\...\</head\>
-3.  <body\>
-4.      Choose a color : <b><input type="color" value="#FF00F\"/></b>
+1.  <!DOCTYPE html>
+2.  <html lang="en"><head>...</head>
+3.  <body>
+4.      Choose a color : <b><input type="color" value="#FF00F"/></b>
 5.  </body>
 6.  </html>
 ```
@@ -14678,13 +14667,14 @@ Inserting a color chooser is as simple as:
 Try \<input type=\"color\"\> online with this[ JSBin example](https://jsbin.com/cajuzob/1/edit?html,output). Or do it here in your browser: just click on the purple square below : 
 
 Here is the result on Google Chrome (works with other browsers too, though the *look and feel* may differ):
-
+<!---- ************************************************* image 225 ****************************** ----->
 ![input type=color in google chrome](./images/image225.jpeg){width="4.0in" height="3.2051695100612423in"}
 
 <h4>Example: changing the background color of the page</h4>
 
 The \<input type=\"color\"\> can fire change or input events. Here is an example that changes the background color of the page when a color is chosen. [Try it online at JSBin](https://jsbin.com/jozuter/1/edit?html,css,js,console,output).
 
+<!---- ************************************************* image 226 ****************************** ----->
 ![change background color of the body](./images/image226.jpeg){width="4.0in" height="3.6217300962379704in"}
 
 Source code:
@@ -14704,7 +14694,7 @@ Source code:
 13. \</html\>
 ```
 
-### Offer a limited choice of colors
+<h4>Offer a limited choice of colors</h4>
 
 By default, the color selector offers many options that may either frighten some users or just not be appropriate for the purpose of the application. 
 
@@ -14712,29 +14702,25 @@ By default, the color selector offers many options that may either frighten some
 
 Example: click the black rectangle on the right:  . The following should be displayed:
 
+<!---- ************************************************* image 227 ****************************** ----->
 ![restricted choice of color](./images/image227.jpeg){width="3.0in" height="1.872483595800525in"}
 
-[Online example at JSBin](https://jsbin.com/lahapu/edit?html,output)
+<a href="https://jsbin.com/lahapu/edit?html,output">Online example at JSBin</a>
 
-Source code extract:
-
-1.  \<input type=\"color\" value=\"#333333\" **list=\"colors\"**\>
-
+<h4>Source code extract:</h4>
+```
+1.  <input type="color" value="#333333" **list="colors"**>
 2.  
-
-3.  \<datalist **id=\"colors\"**\>
-
-4.       \<option\>#0000FF\</option\>
-
-5.       \<option\>#00FF00\</option\>
-
-6.       \<option\>#FF0000\</option\>
-
-7.  \</datalist\>
+3.  <datalist **id="colors"**>
+4.       <option>#0000FF</option>
+5.       <option>#00FF00</option>
+6.       <option>#FF0000</option>
+7.  </datalist>
+```
 
 Note that the id of the \<datalist\> element should be the same as the value of the list attribute of the input field.
 
-### What are the main problems with this element?
+<h4>What are the main problems with this element?</h4>
 
 The main criticism that Web designers make about this element is related to its default appearance being strongly dependent on the browser and its underlying operating system. Changing the *look and feel* is not possible, except with the use of the options we saw in the previous sections of this page. This problem is also true for other input elements that renders as complex widgets, like \<input type=\"date\"\> and its variants.
 
@@ -14742,7 +14728,7 @@ Another problem is that there is no way to control where the dialog that contain
 
 The solution proposed by the W3C and its contributors is called *Web Components*, a new approach for designing HTML5 widgets, that is covered in the W3Cx HTML5 Apps and Games course.
 
-### 5.4.3 "date"
+<h3 id="ch5-4-3">5.4.3 "date"</h3>
 
 For years, date and time pickers in HTML forms made Web developers rely heavily on JavaScript based widgets. The process is simpler in HTML5, which provides a special control to handle this specific kind of data natively.
 
@@ -14790,9 +14776,9 @@ With Firefox, it shows this date picker widget:
 
 On non-supported browsers, it defaults to an \<input type=\"text\"\> input field.
 
-### Typical use of \<input type=\"date\"\>
+<h4>Typical use of &lt;input type="date"&gt;</h4>
 
-<h4>Default use
+<h4>Default use</h4>
 
 The default usage is something like:
 ```
@@ -14803,15 +14789,25 @@ Result:             Choose birthday party date:      
 
 Most of the time you will add other attributes to give some restrictions (choose a date in the past, in the future, only on a Saturday, etc.).
 
-<h4>Restrict choice to an interval of dates: attributes min, max and value
+<h4>Restrict choice to an interval of dates: attributes min, max and value</h4>
 
 The \<input type=\"date\"\> comes with several useful attributes. In particular the value, min and max attributes are used to propose a default date, a min and a max date, or for defining an interval of acceptable values.
 
-Try this example: just click the next input field: , or [try it online on JSBin](https://jsbin.com/faluta/1/edit?html,output) if you want to tweak the source code: 
+Try this example: just click the next input field: , or <a href="https://jsbin.com/faluta/1/edit?html,output">try it online on JSBin</a> if you want to tweak the source code: 
 
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 232. only dates between min and max are selectable (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image232.jpeg?raw=true"
+   width="40%"
+   alt="Only dates between min and max are selectable." />
+</p>
+<!-----
 ![input type = date with min and max attributes. This will render two non selectable areas (dates before min and dates after max). Only the dates between min and max are selectable in the displayed calendar.](./images/image232.jpeg){width="4.0in" height="2.2641021434820647in"}
+----->
 
-Source code:
+<h4>Source code:</h4>
 ```
 1.  ...
 2.  <input type="date"
@@ -14822,7 +14818,7 @@ Source code:
 7.  ...
 ```
 
-<h4>Choosing one day in a given week, etc. with the step: attribute
+<h4>Choosing one day in a given week, etc. with the step: attribute</h4>
 
 Using the value attribute for setting a date, and using step=7 for example, will make acceptable only the day of the week that corresponds to the value\'s day (e.g.: only Mondays). Using step=2 will make acceptable only every other day, etc.
 
@@ -14837,7 +14833,7 @@ Example: we want to celebrate birthday parties only on Saturdays, [check this 
    alt="Use of the step attribute, select only saturdays." />
 </p>
 
-Extract from source code:
+<h4>Extract from source code:</h4>
 ```
 1.  <input type="date"
 2.      id="birthdayParty"
@@ -14847,9 +14843,9 @@ Extract from source code:
 6.      **step="7"**>
 ```
 
-<h4>Combining with the \<datalist\> element to restrict the choice of possible values
+<h4>Combining with the \<datalist\> element to restrict the choice of possible values</h4>
 
-[Online example at JSBin](https://jsbin.com/gezawe/1/edit?html,output) (screenshot from Chrome).
+<a href="https://jsbin.com/gezawe/1/edit?html,output">Online example at JSBin</a> (screenshot from Chrome).
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 234.  (xxx) ------------------->
@@ -14860,17 +14856,17 @@ Extract from source code:
    alt="Restrict choices using a datalist element." />
 </p>
 
-Extract from source code:
+<h4>Extract from source code:</h4>
 ```
-> <input type="date"
->     id="birthdayParty"
->     list="birthdayPartyPossibleDates"
->     value="2015-06-20">
-> <datalist id="birthdayPartyPossibleDates">
->      <option label="Best for me">2015-06-20</option>
->      <option label="Ok for me too ">2015-06-27</option>
->      <option label="This one is a sunday, hmmm">2015-06-28</option>
-> </datalist>
+<input type="date"
+    id="birthdayParty"
+    list="birthdayPartyPossibleDates"
+    value="2015-06-20">
+<datalist id="birthdayPartyPossibleDates">
+     <option label="Best for me">2015-06-20</option>
+     <option label="Ok for me too ">2015-06-27</option>
+     <option label="This one is a sunday, hmmm">2015-06-28</option>
+</datalist>
 ```
 
 **The list attribute of the input element must match the id attribute of the datalist element.**
@@ -14879,11 +14875,11 @@ Extract from source code:
 
 <h4>Responding to date changes, trying date/time and other variants</h4>
 
-<h4>Listening to the input event
+<h4>Listening to the input event</h4>
 
 Here is [an interactive example at JSBin](https://jsbin.com/ganipuv/edit?html,output) where you can change the type of date/time chooser. It also shows how to listen to the input event when a date/time is chosen.
 
-<h4>Source code:
+<h4>Source code:</h4>
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en"><head>...</head>
@@ -14942,7 +14938,7 @@ While if we enter a date in the future:
    alt="Date in the future: bad" />
 </p>
 
-Extract from source code:
+<h4>Extract from source code:</h4>
 ```
 1.  <body>
 2.  <label for="birthDate">Enter your birth date: </label><p>
@@ -14972,21 +14968,20 @@ Extract from source code:
 
 <i>Lines 17-23</i> show how we can compare the date picked in the calendar widget with the current date. Note that we can compare any given dates using JavaScript. To check that the chosen date is before 2000 we would do this:
 ```
-> if(this.valueAsDate <= new Date(2000,1,1)) {
-> ...
-> }
-> <input type="datetime">, "week", "month", "datetime-local", etc.
+if(this.valueAsDate <= new Date(2000,1,1)) {
+...
+}
+<input type="datetime">, "week", "month", "datetime-local", etc.
 ```
 
 The HTML5 specification indicates that we can use \<input type=\"date\"\> and \<input type=\"time\"\> while for some years (before the specification became a frozen standard in October 2014), other variants were also present, such as type=datetime, datetime-local, month and week.
 
 [Here is an interactive example at JSBin](https://jsbin.com/supope/1/edit) where you can change the type of date chooser and try all the different possible values for the type attribute of date pickers.
 
-Some screenshots from Opera desktops and Safari IOS:
+<h4>Some screenshots from Opera desktops and Safari IOS:</h4>
 ```
 <input type=\"time\"\>:
 ```
-
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 237.  (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -15011,7 +15006,7 @@ Some screenshots from Opera desktops and Safari IOS:
 <p align="center" width="100%">
 <img src="./images/image239.png?raw=true"
    width="20%"
-   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element" />
+   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element." />
 </p>
 
 <!------------------------------------------------------------------------------------------------>
@@ -15074,7 +15069,7 @@ This input type is relatively straightforward to use. In mobile applications, th
 <p align="center" width="100%">
 <img src="./images/image245.jpeg?raw=true"
    width="20%"
-   alt="contextual mobile keyboard for entering an email address" />
+   alt="Contextual mobile keyboard for entering an email address." />
 </p>
 
 This input type is very interesting as it provides default validation behaviors:
@@ -15143,7 +15138,7 @@ This input field is really useful on smartphones and tablets, as it makes the br
 
 This input type is often used with the new placeholder and pattern attributes that are detailed in another section of this course. It is supported by all recent major Web browsers, on mobile devices and desktops.
 
-[Online example on CodePen](https://codepen.io/w3devcampus/pen/Njozvd)
+<a href="https://codepen.io/w3devcampus/pen/Njozvd">Online example on CodePen</a>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 249.  (xxx) ------------------->
@@ -15245,11 +15240,11 @@ The specification does not state what the GUI should look like, so current impl
 
 <h4>Typical use:</h4>
 ```
-> <label for="search1">Simple search: </label>
-> <input type=search id="search1">
-> <p>
-> <label for="search2">Search with attribute <code>results=5</code> (try with Safari): </label>
-> <input type=search id="search2" results=5>
+<label for="search1">Simple search: </label>
+   <input type=search id="search1">
+   <p>
+   <label for="search2">Search with attribute <code>results=5</code> (try with Safari): </label>
+   <input type=search id="search2" results=5>
 ```
 
 Results on Chrome and Opera desktop - notice the small cross on the right when one enters a value:
@@ -15285,7 +15280,7 @@ Example that shows a drop down list of recent searches (Safari screenshot borro
    alt="Example 2 of input type=search on safari, shows recent results" />
 </p>
 
-Source code for the knowledge check below
+<h4>Source code for the knowledge check below</h>
 ```
 1.  <!DOCTYPE html>
 2.  <html>
@@ -15316,7 +15311,7 @@ For zip codes, a \<input type=\"text\" pattern=\"\...\...\"\> is preferable. S
 
 Example: **\<input type=\"number\" value=\"25\" min=\"0\" step=\"5\" max=\"500\"/\>**
 
-Screenshot example taken with a mobile device :
+<h4>Screenshot example taken with a mobile device:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 255.  (xxx) ------------------->
@@ -15338,7 +15333,7 @@ Examples on desktop (the width will be adjusted depending on the min and max�
    alt="input type=number example" />
 </p>
 
-Typical usage
+<h4>Typical usage</h4>
 
 \<input type=\"number\" value=\"25\" min=\"0\" step=\"5\" max=\"500\"/\>
 
@@ -15407,7 +15402,7 @@ Quantity (between 0 and 500, should be a multiple of 5 otherwise it\'s invalid):
 
 This input type renders as a slider. It accepts the same attributes as the \<input type=\"number\"\> : min, max, step and value.
 
-Example of rendering on a desktop:
+<h4>Example of rendering on a desktop:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 259.  (xxx) ------------------->
@@ -15418,7 +15413,7 @@ Example of rendering on a desktop:
    alt="input type=range" />
 </p>
 
-And on mobile devices:
+<h4>And on mobile devices:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 260.  (xxx) ------------------->
@@ -15509,19 +15504,19 @@ But most of the time, you will need a visual feedback that shows the current va
 When you click and drag the slider, it \"jumps\" to some snap points corresponding to the integer values of the range defined by the min and max attributes. The \"size of the jumps\" depends on the value of the step attribute.
 
 Try these examples in your browser and look at their behavior:
-
+```
 value=5 min=0, max=10 step=1:  
-
 value=12 min=10, max=50 step=4:  
+```
 
 Note that in the previous example, the default value displayed is 14, not 12 (the value just above min plus an integer step value). 12 is not possible so it\'s been \"snapped\" to 14.
-
+```
 value=5 min=0, max=10 step=\"0.5\":  
-
+```
 In the previous example, it\'s necessary to add quotes for setting step=\"0.5\" (while HTML5 authorizes not using quotes for setting integer values to attributes).
-
+```
 value=5 min=0, max=10 step=\"any\":  
-
+```
 **WARNING**: Using a step attribute with an integer value will make the slider jump corresponding to the step value. By default, omitting the step attribute is equivalent to step=\"1\".\
 So, for accepting float values, it is necessary to use step=\"any\", or step equal to a floating point value, such as step=\"0.5\".
 
@@ -15538,29 +15533,27 @@ Adding \"ticks\" to the range slider using a \<datalist\> element
 
 Using the \<datalist\> element, it\'s possible to display \"ticks\" above the range slider, at given positions.
 ```
-1.  \<label for=\"slider2\"\>value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:\</label\>
-2.  \<input id=\"slider2\" type=\"range\"
-3.  list=\"ticks2\"
-4.  min=\"0\" max=\"10\" step=\"1\" value=\"5\"/\>
-5.  \<datalist id=ticks2\>
-6.  \<option\>0\</option\>
-7.  \<option\>2\</option\>
-8.  \<option\>4\</option\>
-9.  \<option\>6\</option\>
-10. \<option\>8\</option\>
-11. \<option\>10\</option\>
-12. \</datalist\>
+1.  <label for="slider2">value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:</label>
+2.  <input id="slider2" type="range"
+3.  list="ticks2"
+4.  min="0" max="10" step="1" value="5"/>
+5.  <datalist id=ticks2>
+6.  <option>0</option>
+7.  <option>2</option>
+8.  <option>4</option>
+9.  <option>6</option>
+10. <option>8</option>
+11. <option>10</option>
+12. </datalist>
 ```
 
 <h4>Try the sliders below:</h4>
-
+```
 value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:  
-
 value=20 min=10, max=50 step=5, ticks at 0, 10, 20, 30, 40 and 50:  
-
 value=5 min=0, max=10 step=\"0.5\", ticks at 0, 0.5, 1, 2, 4, 8:  
-
 value=5 min=0, max=10 step=\"any\", ticks at 0, 5 and 10:  
+```
 
 <h4>External resources</h4>
 
@@ -15687,7 +15680,7 @@ This attribute applies either to the \<form\> element or on individual \<inpu
 
 Possible values of this attribute: on/off.
 
-</h4>
+<!------ ********************* image ***************** ---------->
 ![on off funny picture](./images/image267.jpeg){width="1.6354166666666667in" height="1.2291666666666667in"}
 
 If applied to the \<form\> element, all input fields attached to the form (inside or linked to it using the form attribute), will have auto-completion set by default to the value of the autocomplete attribute of the form.
@@ -15698,8 +15691,9 @@ Sometimes this autocomplete behavior is disabled by default in some Web browsers
 
 This attribute targets most input types (those that allow typing in them).
 
-### Typical use
+<h4>Typical use</h4>
 
+<!------ ********************* image ***************** ---------->
 ![example of use of the autocomplete attribute](./images/image268.jpeg){width="4.0in" height="2.9568482064741906in"}
 
 Try it in your browser here:
@@ -15716,7 +15710,7 @@ Bottom of Form
 
 To see auto-completion in action: enter something in both fields and submit the form. Then enter the same thing: you will see that only the second input field offers auto-completion.
 
-Source code extract:
+<h4>Source code extract:</h4>
 ```
 1.  <form submit="test.php" method="post" **autocomplete="on"**>
 2.      ...
@@ -15733,7 +15727,7 @@ Source code extract:
 13. </form>
 ```
 
-<h3 id="ch5-5-4">/5.5.4 autofocus</h3>
+<h3 id="ch5-5-4">5.5.4 autofocus</h3>
 
 This attribute is useful for transferring the focus to a field other than the first field in a page/form (by default the first input field has the focus).
 
@@ -15755,7 +15749,7 @@ Bottom of Form
 
 **Notice that the focus in on the second input field, thanks to the autofocus attribute.**
 
-Extract from source code:
+<h4>Extract from source code:</h4>
 ```
 1.  <form>
 2.      ...
