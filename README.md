@@ -8371,7 +8371,7 @@ context.fillText("right", 250, 100);
 </html>
 ```
 
-Typical use (source code taken from the above example):
+<h4>Typical use (source code taken from the above example):</h4>
 ```
 1.  context.textAlign = "center";
 2.  context.fillText("center", 250, 20);
@@ -8389,7 +8389,7 @@ Typical use (source code taken from the above example):
 
 Working with images is rather simple, except that we need the images to be fully loaded into memory before drawing them. Loading images is an *asynchronous* process we need to take care of. Working with multiple images might also be difficult for beginners. We present a multiple image loader later on in this course.
 
-**Let\'s say it once again**: To use an image in a canvas, make sure that the image has been loaded by the Web browser before drawing it!
+<b>Let\'s say it once again</b>: To use an image in a canvas, make sure that the image has been loaded by the Web browser before drawing it!
 
 It is also possible to draw images from a video stream, images corresponding to another canvas content, or images that are defined by \<img\> HTML elements in the page. We will see that as well in the following parts of this chapter.
 
@@ -8430,7 +8430,7 @@ But let\'s start with a basic example!
 29. </html>
 ```
 
-<b>Explanations:</b>
+<h4>Explanations:</h4>
 
 1.  We have to **create a JavaScript Image object** (*line 10*),
 
@@ -8459,7 +8459,7 @@ But let\'s start with a basic example!
 &nbsp;
 <br/>
 
-<h4>Example #2: different variants of drawImage(\...)</h4>
+<h4>Example #2: different variants of drawImage(...)</h4>
 
 This example illustrates the use of the different variants of the drawImage method:
 
@@ -8536,7 +8536,7 @@ border:1px solid black;
 22. };
 ```
 
-<h4>Example #3: draw an image defined in the page by an <img src=\"\...\"\> element</h4>
+<h4>Example #3: draw an image defined in the page by an &lt;img src="..."&gt; element</h4>
 
 Sometimes, you may want to draw an image that is already declared in the HTML document as an <img src=\"\...\"\> element. Remember that when you add an \<img\> in the document, the browser starts downloading it in background. 
 
@@ -8545,13 +8545,13 @@ Sometimes, you may want to draw an image that is already declared in the HTML do
 1.  <body>
 2.  <canvas id="myCanvas" width="512" height="512"></canvas>
 3.  <p>Original image as an <img> element:</p>
-4.  **<img id="logo"**
-5.  **src="https://fc07.deviantart.net/fs70/f/2013/149/b/8/texture_85_by_voyager168-d670m68.jpg">**
+4.  <b><img id="logo"</b>
+5.  <b>src="https://fc07.deviantart.net/fs70/f/2013/149/b/8/texture_85_by_voyager168-d670m68.jpg"></b>
 6.  <script>
 7.       canvas = document.getElementById("myCanvas");
 8.       var ctx = canvas.getContext("2d");
 9.       var logo = document.querySelector("#logo");
-10.      **ctx.drawImage(logo, 0, 0, 100, 100);**
+10.      <b>ctx.drawImage(logo, 0, 0, 100, 100);</b>
 11. </script>
 12. </body>
 ```
@@ -8788,7 +8788,7 @@ This example shows:
 51. </body>
 ```
 
-Explanations:
+<h4>Explanations:</h4>
 
 -   *Line 11*: the call to setInterval will make the browser execute the processFrame function each 25ms.
 
@@ -8798,7 +8798,7 @@ Explanations:
 
 -   *Line 21*: We implemented a rotating video effect in the drawRotatingVideo. The use of context save/restore is primordial as this function changes the coordinate system at each call, translating and rotating it. Notice the extra translation at *line 31* that translates the coordinate system backwards with half of the size of the image that is drawn. We did this in order to make the image rotate around the center of the rectangle, instead of around the top left corner at (0, 0) by default. Try commenting out this line in the running example and you will see what we mean.
 
-<h3 id="ch3-4-1">3.4.1 Immediate Mode vs. Path Mode</h3
+<h3 id="ch3-4-1">3.4.1 Immediate Mode vs. Path Mode</h3>
 
 <h4>Immediate mode</h4>
 
@@ -8806,16 +8806,10 @@ As a reminder: an immediate mode means \"executing a call to a drawing method me
 
 -   In the previous examples, we saw how to draw rectangles using the fillRect(x, y, width, height) and strokeRect(x, y, width, height) methods of the context.
 
-```
-
-```
 -   We also learned how to draw a text message using the fillText(message, x, y) and strokeText(message, x, y) methods that draws a text in filled and wireframe mode, respectively.
 
-```
-
-```
 <ul>
-<li>These methods, along with the drawImage(\...) method already seen in section 3.3.3, are *\"immediate methods\"*: as soon as they are executed, the results are displayed on screen, the drawings are performed, pixels on the canvas area change their colors, etc.</li>
+<li>These methods, along with the drawImage(...) method already seen in section 3.3.3, are <i>"immediate methods"</i>: as soon as they are executed, the results are displayed on screen, the drawings are performed, pixels on the canvas area change their colors, etc.</li>
 </ul>
 
 Here is an example that draws 1000 random rectangles in a canvas, using immediate mode rectangle drawing calls:
@@ -15835,7 +15829,7 @@ Source code extract:
 
 At *lines 3* and *5*, the value of the list attribute of the input field must match the one of the id of the \<datalist\> element.
 
-### 5.5.6 pattern
+<h3 id="ch5-5-6">5.5.6 pattern</h3>
 
 The pattern attribute enables the validation of the user\'s input on the fly (also at submission time), based on **regular expressions**. It applies to the text, search, url, tel, email, and password input types. 
 
@@ -15845,9 +15839,10 @@ A **must read**: a good catalog of ready-to-go patterns is available at html5pa
 
 You can also try [this online JavaScript RegExps tester](https://regex101.com/#javascript), and follow [this tutorial about \"using JavaScript RegExps\"](https://regexone.com/) that has step by step exercises and explanations.
 
+<!---- **************************** image ************************ --------------------->
 ![html5patterns.com screenshot that shows a menu on the left with categories and patterns on the right](./images/image271.jpeg){width="4.020833333333333in" height="2.4895833333333335in"}
 
-### Typical use
+<h4>Typical use</h4>
 
 Just add a pattern attribute with a value that is the JavaScript regular expression that must match the entire string entered in the field. Note that the empty string is valid by default (except if the required attribute is used - this makes empty fields invalid).
 
@@ -15864,7 +15859,7 @@ It\'s best practice to systematically add a title attribute with a value that
 
 <h4>Example #1</h4>
 
-Try this [online example at JSBin ](https://jsbin.com/xeyuqux/1/edit?html,output)or directly in your browser below:
+Try this <a href="https://jsbin.com/xeyuqux/1/edit?html,output">online example at JSBin</a> or directly in your browser below:
 
 Please enter a 3 letter country code (green = valid, pink = invalid): ![](./images/image266.wmf)
 
@@ -15872,7 +15867,7 @@ With the previous example, until the value of the input field is equal to 3 alph
 
 As seen in the previous examples, we used some CSS pseudo classes for automatically setting the background-color of the input field as we type.
 
-Complete source code:
+<h4>Complete source code:</h4>
 
 ```
 1.  <!DOCTYPE html>
@@ -15901,7 +15896,7 @@ Complete source code:
 
 <h4>Example #2: mixing several other attributes with the pattern attribute</h4>
 
-Try this [example online](https://jsbin.com/bozudeg/1/edit?html,output) or in your browser below:
+Try this <a href="https://jsbin.com/bozudeg/1/edit?html,output">example online</a> or in your browser below:
 
 Attributes used: placeholder (for displaying a ghost example value), pattern, required (empty field = invalid)\...
 
@@ -15937,29 +15932,23 @@ Complete source code:
 
 <h4>Example #3: an \<input type=\"url\"\> element with a pattern attribute allowing only certain protocols</h4>
 
-[Online example at JSBin ](https://jsbin.com/nulahey/1/edit?html,output)or try it in your browser:
+<a href="https://jsbin.com/nulahey/1/edit?html,output)or">Online example at JSBin</a> try it in your browser:
 
 Enter the URL of your repository (http, https or ftp): 
 
-Source code extract:
+<h4>Source code extract:</h4>
+```
+1.  <input
+2.      id="website"
+3.      name="url"
+4.      type="url"
+5.      placeholder="http://www.domain.com"
+6.      title="http, https or ftp allowed"
+7.      pattern="(http|https|ftp)://[a-zA-Z0-9-./]"
+8.  />
+```
 
-1.  \<input
-
-2.      id=\"website\"
-
-3.      name=\"url\"
-
-4.      type=\"url\"
-
-5.      placeholder=\"http://www.domain.com\"
-
-6.      title=\"http, https or ftp allowed\"
-
-7.      **pattern=\"(http\|https\|ftp)\\:\\/\\/\[a-zA-Z0-9\\-\\.\\/\]\*\"**
-
-8.  /\>
-
-### 5.5.7 min, max and step
+<h3 id="ch5-5-7">5.5.7 min, max and step</h3>
 
 These attributes are useful for several input types such as number, range, date and  time (and other variants).
 
@@ -15967,35 +15956,23 @@ The min and max attributes are used to set ranges to input fields that accep
 
 **Their detailed use with these input fields have already been explained in section 5.4 of this course dedicated to these particular input field types.**
 
-Typical use
-
+<h4>Typical use</h4>
+```
 1.  \<input id=\"mydate\" name=\"mydate\"
-
 2.         type=\"date\"
-
 3.        ** min=\"2012-01-01\"**
-
 4.         **max=\"2013-01-01\"**
-
 5.         value=\"2012-01-01\"
-
 6.  /\>
-
 7.   
-
 8.  \<input name=\"time\" id=\"time\" type=\"time\"
-
 9.          **min=\"09:00\"**
-
 10.         **max=\"17:00\"**
-
 11.         value=\"12:00\"
-
 12. /\>
-
 13.  
-
 14. \<input id=\"range\" name=\"range\" type=\"range\" **min=\"0\" max=\"100\" step=\"5\"**/\>
+```
 
 ### 5.5.8 multiple
 
@@ -19662,4 +19639,4 @@ The end.
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>07-29-2022 12:44am</i></b></h3>
+<h3><b><i>07-29-2022 5:54pm</i></b></h3>
