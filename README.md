@@ -3511,6 +3511,7 @@ Let\'s have a look now at a (small) example of an about page. It renders as a ve
 <a href="https://jsbin.com/gunuzus/1/edit?html,output">Online example at JsBin</a>
 
 <h5>Source code:</h5>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -3588,7 +3589,7 @@ The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> i
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------- Chapter 1-5-3. adding microdata to an html page (xx) ---------------------->
+<!-------------------- Chapter 1-5-3. adding microdata to an html page (75) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
 
@@ -3643,6 +3644,7 @@ However, if you do not find a vocabulary corresponding to your needs, keep in mi
 <h5>Basics:</h5>
 
 Now that you have defined a container element, you may add properties to the HTML inside:
+
 ```
 1.  <section itemscope itemtype="https://schema.org/Person">
 2.       <h1>Contact Information</h1>
@@ -3742,11 +3744,12 @@ And so on\...
 
 Now, let\'s see what elements are compatible with the itemprop attribute and where the values of the properties are located, depending on each element type.
 
-<h4> The HTML elements compatible with the itemprop attribute</h4>
+<h4>The HTML elements compatible with the itemprop attribute</h4>
 
 If the itemprop attribute appears on a:
 
-  Elements that can be associated with microdata
+Elements that can be associated with microdata
+
   HTML5 elements                                              microdata value associated
 
   \<a\>, \<area\>, \<audio\>, \<embed\>, \<iframe\>, \        The data is the url in the element\'s href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person\'s photo and downloaded accordingly.
@@ -3780,14 +3783,13 @@ There are many tools available (most are free) that you can use for generating, 
 <h4>Microdata generators</h4>
 
 To automatically generate microdata for describing persons, restaurants, movies, products, organizations, etc., there is a wide variety of microdata generators such as these listed below (but do not hesitate to search for \"microdata generators\" using your favorite search engine, and you will find lots!):
+<ul>
+<li>The <a href="https://webcode.tools/microdata-generator">Ultimate Microdata Generator</a></li>
+<li>The <a href="https://microdatagenerator.org/">MicroData Generator</a></li>
+<li>The <a href="https://technicalseo.com/tools/schema-markup-generator/">Schema Markup Generator (JSON-LD)</a></li>
+</ul>
 
--   The [Ultimate Microdata Generator](https://webcode.tools/microdata-generator)
-
--   The [MicroData Generator](https://microdatagenerator.org/)
-
--   The [Schema Markup Generator (JSON-LD)](https://technicalseo.com/tools/schema-markup-generator/)
-
-Example:
+<h5>Example:</h5>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 64.  (xx) ------------------------------->
@@ -3809,9 +3811,9 @@ Click on these pages and look at the source code\...
 
 <h4>Example #1</h4>
 
-Visit the [exemple #1 online](https://jsbin.com/cuzipa/edit?html,css,output).
+Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 online</a>.
 
-Structure:
+<h5>Structure:</h5>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 65.  (xx) ------------------------------->
@@ -3823,7 +3825,7 @@ Structure:
 &nbsp;
 <br/>
 
-Microdata:
+<h5>Microdata:</h5>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 66.  (xx) ------------------------------->
@@ -3835,12 +3837,12 @@ Microdata:
 &nbsp;
 <br/>
 
-<h4>Example #2:</h4>
+<h5>Example #2:</h5>
 
 View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 online</a>.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 67. example page - shows microdata  (81) ------------------------------->
+<!-------------------------- 67. example page - shows microdata (81) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image067.jpeg?raw=true"
@@ -3854,9 +3856,9 @@ View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 onlin
 <h3 id="ch2-2-1">2.2.1 The &lt;video&gt; Element</h3>
 
 Until 2012, it was only possible to integrate an audio or video player using the proprietary Flash technology, marketed by the company Macromedia (later acquired by Adobe). The \<video\> element of HTML5 is one of the three \"Flash killers\" (the others being \<audio\> for the sound and \<canvas\> for drawing and animation).\
-*(Note that Adobe [no longer supports Flash Player](https://www.adobe.com/products/flashplayer/end-of-life.html) since December 31, 2020)*
+<i>(Note that Adobe [no longer supports Flash Player](https://www.adobe.com/products/flashplayer/end-of-life.html) since December 31, 2020)</i>
 
-Check the HTML code of the following CodePen:
+<h5>Check the HTML code of the following CodePen:</h5>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 68. simple html5 video player (82) ------------------------------->
@@ -4369,7 +4371,6 @@ This time we obtain the same result as with the first example that used JavaScri
 body {
    margin: 0;
 }
-
 video {
    position: absolute;
    width: 100vw;
@@ -4382,12 +4383,11 @@ video {
 <h4>Discussion: why can\'t we achieve perfect resizing with only CSS and the use of properties width=100% and height=100%?</h4>
 
 Let\'s use the same video to compare the different approaches again:
-
-1.  <a href="https://jsbin.com/zowuqey/edit?html,css,js,output">Original approach</a>, using JavaScript. This solution works on any browser, so we will focus on the two following methods, based on pure CSS.
-
-2.  <a href="https://jsbin.com/sakujuv/1/edit?html,css,output">Using CSS 100%</a> width and height properties (no JavaScript).
-
-3.  <a href="https://jsbin.com/xureyu/3/edit?html,css,output">Using CSS viewport</a> units for width and height (no JavaScript).
+<ol>
+<li><a href="https://jsbin.com/zowuqey/edit?html,css,js,output">Original approach</a>, using JavaScript. This solution works on any browser, so we will focus on the two following methods, based on pure CSS.</li>
+<li><a href="https://jsbin.com/sakujuv/1/edit?html,css,output">Using CSS 100%</a> width and height properties (no JavaScript).</li>
+<li><a href="https://jsbin.com/xureyu/3/edit?html,css,output">Using CSS viewport</a> units for width and height (no JavaScript).</li>
+</ol?
 
 Resizing the browser window shows that #1 (JavaScript) and #3 (viewport units) behave in the same way: the width or height of the video always fills the window (whichever is smaller), and we always see the whole video.
 
@@ -4413,6 +4413,7 @@ The \<video\> and \<audio\> elements have methods, properties/attributes and
 The set of properties/attributes/methods of the \<audio\> and \<video\> elements is called an \"API\" (Application Programming Interface). For example, we will speak here of the \"media API\" to talk about the associated API.
 
 Like any HTML element, the \<video\> element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a \<video\> element:
+
 ```
 1.  var video = document.createElement('video');
 2.  video.src = 'video.mp4';
@@ -4660,7 +4661,7 @@ Check the online example below: use the progress cursor to go near the end of th
 <li><i>Line 9</i>: the JavaScript array that contains the URLs of the videos in the playlist. In this example, we've got only two of them, but if the array is larger the example still works.</li>
 <li><i>Line 44</i>: when the page is loaded, an init() function is called.</li>
 <li><i>Lines 34-40</i>: we use the DOM to get the JavaScript object corresponding to the video element, then define a listener for the ended event. Each time a video ends, the loadAndplayNextVideo() callback is called. As the video element has no src attribute by default, we also preload the first video (call to loadNextVideo() at <i>line 38</i>).</li>
-<li><i>Lines 17-21</i>: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources \[currentVideo % sources.length\], we set the src of the video element to sources\[0\], then to sources\[1\], and, as we increment the currentVideo index each time (line 19), if it becomes greater than 1, the modulo (the \"%\" symbol is the modulo in JavaScript) will make it \"loop\" between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.</li>
+<li><i>Lines 17-21</i>: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources [currentVideo % sources.length], we set the src of the video element to sources[0], then to sources[1], and, as we increment the currentVideo index each time (line 19), if it becomes greater than 1, the modulo (the "%" symbol is the modulo in JavaScript) will make it "loop" between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.</li>
 </ul>
 
 <h3 id="ch2-2-8">2.2.8 [Advanced] Extended Examples</h3>
@@ -4684,7 +4685,7 @@ Please see this example online, originally written by <a href="https://christia
 
 Don\'t forget to click the JavaScript and CSS tabs of the CodePen in order to display the JavaScript code that creates the buttons on the right of the video, and the CSS that processes the different clicks and applies CSS3 transforms.
 
-This example shows a lot:
+<h5>This example shows a lot:</h5>
 <ul>
 <li>It uses the HTML5 elements &lt;nav&gt;, &lt;footer&gt;, &lt;header&gt;.</li>
 <li>It shows the use of CSS3 2D transformations (scale, translate, and rotate).</li>
@@ -4759,6 +4760,7 @@ Note that on mobile phones, the video does not start until the user presses the 
 As explained by the <a href="https://developer.apple.com/">Apple Developer Web site</a>:  \"The buffered property is a TimeRanges object: an array of start and stop times, not a single value. Consider what happens if the person watching the media uses the time scrubber to jump forward to a point in the movie that hasn't loaded yet---the movie stops loading and jumps forward to the new point in time, then starts buffering again from there. So the buffered property can contain an array of discontinuous ranges. The example simply seeks the end of the array and reads the last value, so it actually shows the percentage into the movie duration for which there is data. \"
 
 <h5>Source code extract:</h5>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -4817,7 +4819,7 @@ This is the ultimate way of doing a real custom player: redesign your own contro
    width="25%" />
 &nbsp;
 
-<h4>Example #5: a custom video player written by a previous student<h4>
+<h4>Example #5: a custom video player written by a previous student</h4>
 
 This is more an example than a tutorial. Maurice, a student who followed the precursor version of this MOOC, had the assignment to write a custom video player with playlist, video thumbnails, custom play/pause/next/previous/volume controls, and present it in a Web page that used a nice layout based on the HTML5 structuring elements studied previously.
 
@@ -4839,15 +4841,17 @@ Please check the <a href="https://caniuse.com/mdn-html_elements_track">browser s
 <li><b>subtitles </b>are only for spoken words.</li>
 </ul>
 
+<br/>
+
 The accessibility features of TV programs often propose both options for people with hearing deficiencies. 
 
-<h4>Typical use: add a subtitle/caption track to a \<video\> element</h4>
+<h4>Typical use: add a subtitle/caption track to a &lt;video&gt; element</h4>
 
 <h5>Important warning!!</h5>
 
 The \<track\> element cannot be used with a file:// URL. Please use https:// and a Web server. Your server must use a special MIME format for the .vtt files: text/vtt;charset=utf-8 (set by default on most servers now).
 
-Examples of the lines to add to an Apache Web server:
+<h5>Examples of the lines to add to an Apache Web server:</h5>
 ```
 1.  <Files mysubtitle.vtt>
 2.  ForceType text/vtt;charset=utf-8
@@ -4856,7 +4860,7 @@ Examples of the lines to add to an Apache Web server:
 
 It is worth mentioning that most browsers work well with WebVTT, even if the MIME type is not defined.
 
-Here is an example of a video element that includes a \<track\> element in the .vtt (WebVTT) format (*line 9 *in the source code shown below):
+Here is an example of a video element that includes a \<track\> element in the .vtt (WebVTT) format (<i>line 9 /i> in the source code shown below):
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 86.  (xx) ------------------------------->
@@ -5024,7 +5028,8 @@ Each \"element\" in this file has a starting and ending time, plus a value (the 
 
 <b>Each element is called \"a cue\"</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, in particular the getCueById() method of TextTrack objects.
 
-Example of a .vtt file with numeric IDs:
+<h5>Example of a .vtt file with numeric IDs:</h5>
+
 ```
 1.  9
 2.  00:00:21.000 --> 00:00:22.000
@@ -5035,7 +5040,8 @@ Example of a .vtt file with numeric IDs:
 7.  We want to hear what inspires you as a developer
 ```
 
-IDs may also be defined as strings, and values can use HTML as well:
+<h5>IDs may also be defined as strings, and values can use HTML as well:</h5>
+
 ```
 1.  Opening
 2.  00:00:00.000 --> 00:00:30.000
@@ -5050,8 +5056,8 @@ The displayed text can span multiple lines, but blank lines are not allowed, as 
 ```
 
 <h4>External resource:</h4>
-
--   An unofficial [Live WebbVTT format](https://quuz.org/webvtt/)
+<ul>
+<li>An unofficial <a href="https://quuz.org/webvtt/">Live WebbVTT format</a>
 
 <h3 id="ch2-3-3">2.3.3 Adding Subtitles to a Video</h3
 
@@ -5062,12 +5068,12 @@ For this, use any sort of open source, free or commercial video encoding softwar
 So, let\'s suppose you have a video like the one below (we included it on YouTube for practical reasons). This video has subtitles (you can activate them in the YouTube player), but the goal of this lesson is to explain how we made them without using the YouTube embedded tools, which do not allow export the subtitle file to be exported in the webVTT format.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 87.  ---------------------------------------->
+<!------------------------------ 87. picture guitar picking (108) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image087.png?raw=true"
-   alt=""
-   width="25%" />
+   alt="Picture guitar picking."
+   width="45%" />
 &nbsp;
 
 And if you\'ve also got it in mp4/H264 and in webm formats, here is how you can embed it in your page using the video element:
@@ -5085,32 +5091,32 @@ And if you\'ve also got it in mp4/H264 and in webm formats, here is how yo
 </video>
 ```
 
-At *line 9*, we added a \<track\> element to add English subtitles, as the guitar teacher there is speaking in French. We will now explain how we created this subtitle track.
+At <i>line 9</i>, we added a \<track\> element to add English subtitles, as the guitar teacher there is speaking in French. We will now explain how we created this subtitle track.
 
 <h4>Adding subtitles to the video</h4>
 
 Now, we need to create a WebVTT file for this video. How can we synchronize an English translation of what the guitar teacher says in French?
 
-Many tools - both free and commercial - are available to add subtitles to a video. Most are native applications you need to install on your computer. However, a free and very practical tool is available for doing this 100% in a Web browser: [amara](https://amara.org/en/).
+Many tools - both free and commercial - are available to add subtitles to a video. Most are native applications you need to install on your computer. However, a free and very practical tool is available for doing this 100% in a Web browser: <a href="https://amara.org/en/">amara</a>.
 
 Go to the above Web site, click on the \"subtitle a video\" link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it\'s better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 88.  (xx) ------------------------------->
+<!-------------------------- 88. example subtitles and captions (109) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image088.png?raw=true"
-   alt=""
+   alt="Example subtitles and captions."
    width="40%">
 &nbsp;
 <br/>
 
 Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 99.  (xx) ------------------------------->
+<!------------------------------ 99. youtube make subtitles (110) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image099.png?raw=true"
-   alt=""
+   alt="Youtube make subtitles."
    width="60%">
 &nbsp;
 <br/>
@@ -5119,11 +5125,11 @@ Note that YouTube can also help you \"make subtitles\" with its speech recogniti
 
 <h4>Try your subtitled/captioned video</h4>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 90.  (xx) ------------------------------->
+<!--------------------- 90. example guitar picking subtitle captions (110) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image090.png?raw=true"
-   alt=""
+   alt="Example guitar picking subtitle captions."
    width="40%">
 &nbsp;
 <br/>
@@ -5134,11 +5140,11 @@ In this section, we will look at different possibilities for styling and positio
 
 The example below shows how we can do that (play the video for 40s, look at the positions and styles of the subtitles and captions, look at the HTML):
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 91.  (xx) ------------------------------->
+<!----------------------------------- 91. blank codepen (111) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image091.png?raw=true"
-   alt=""
+   alt="Blank codepen."
    width="60%">
 &nbsp;
 <br/>
@@ -6074,8 +6080,8 @@ For more information, this [article on MDN about the getUserMedia API](https:/
 > };
 > // The function that is called when a button has been clicked: starts the video^
 > // with the preferred resolution^
-> function\ getMedia(constraints) {^
-> if\ (!!stream) {^
+> function getMedia(constraints) {^
+> if (!!stream) {^
 > video.srcObject = null;^
 > stream.getTracks()[0].stop();^
 > }^
@@ -6086,14 +6092,14 @@ For more information, this [article on MDN about the getUserMedia API](https:/
 > window.stream = stream;^
 > })
 > .catch((error)\ =\>{^
-> console.log(\'navigator.getUserMedia\ error:\ \',\ error);^
+> console.log(\'navigator.getUserMedia error:\ \',\ error);^
 > });^
 > }^
-> ^//\ util\ function\ that\ is\ called\ by\ the\ setInterval(\...)\ every\ 0.5s,\ for^
-> ^//\ displaying\ the\ video\ dimensions^
-> ^function\ displayVideoDimensions()\ {^
-> ^dimensions.innerHTML\ =\ \'Actual\ video\ dimensions:\ \'\ +\ video.videoWidth\ +^
-> ^\'x\'\ +\ video.videoHeight\ +\ \'px.\';^
+> ^//\ util function that is called by the setInterval(\...)\ every 0.5s,\ for^
+> ^//\ displaying the video dimensions^
+> ^function displayVideoDimensions()\ {^
+> ^dimensions.innerHTML =\ \'Actual video dimensions:\ \'\ +\ video.videoWidth +^
+> ^\'x\'\ +\ video.videoHeight +\ \'px.\';^
 > ^}^
 ```
 
@@ -6953,7 +6959,7 @@ The way the rectangle will be filled depends on the current value of several pro
 
 <h4>Summary of the different steps
 
-1.  **Declare the canvas,** remembering to add an id attribute, and fallback content:  \
+1.  **Declare the canvas,** remembering to add an id attribute, and fallback content:  
     \<canvas id=\"myCanvas\" width=\"200\" height=\"200\"\>\
     \...fallback content\...\
     \</canvas\>
@@ -6961,10 +6967,10 @@ The way the rectangle will be filled depends on the current value of several pro
 2.  **Get a reference to the canvas in a JavaScript variable** using the DOM API:\
     var canvas=document.getElementById(\'myCanvas\');
 
-3.  **Get the context for drawing in that canvas**:  \
+3.  **Get the context for drawing in that canvas**:  
     var ctx=canvas.getContext(\'2d\');
 
-4.  **Specify some drawing properties** (optional):  \
+4.  **Specify some drawing properties** (optional):  
     ctx.fillStyle=\'#FF0000\';
 
 5.  **Draw some shapes**:\
@@ -10341,7 +10347,7 @@ We propose a useful function for drawing curved arrows. See this example:
 &nbsp;
 <br/>
 
-<h4>JS</h4>
+<h5>JS</h5>
 
 ```
 var canvas = document.querySelector('#myCanvas');
@@ -10387,7 +10393,7 @@ ctx.restore();
 }
 ```
 
-<h4>CSS</h4>
+<h5>CSS</h5>
 
 ```
 #myCanvas {
@@ -10395,7 +10401,7 @@ border: 1px solid black;
 }
 ```
 
-<h4>HTML</h5>
+<h5>HTML</h5>
 
 ```
 <!DOCTYPE html>
@@ -10503,7 +10509,7 @@ The best way to understand how they work is to check out one of these interactiv
 
 <h4>Typical usage of Bézier curves</h4>
 
-Source code:
+<h5>Source code:</h5>
 
 ```
 1.  ctx.moveTo(contextX, contextY);
@@ -10515,9 +10521,9 @@ Source code:
 7.  ctx.stroke();
 ```
 
-## Examples
+<h4>Examples</h4>
 
-<h4>Example #1</h4>
+<h5>Example #1</h5>
 
 Try this:
 
@@ -10531,7 +10537,7 @@ Try this:
 &nbsp;
 <br/>
 
-<h4>HTML</h4>
+<h5>HTML</h5>
 
 ```
 <!DOCTYPE html>
@@ -10562,7 +10568,7 @@ context.stroke();
 </html>
 ```
 
-Code source:
+<h5>Code source:</h5>
 
 ```
 1.  context.beginPath();
@@ -10577,7 +10583,7 @@ Code source:
 
 <h4>Example #2: path with bezier curve, quadratic curve and line in the same, closed path</h4>
 
-Try this:
+<h5>Try this:</h5>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------- 164.  (xxx) ------------>
@@ -10589,7 +10595,7 @@ Try this:
 &nbsp;
 <br/>
 
-HTML
+<h5>HTML</h5>
 
 ```
 <!DOCTYPE html>
@@ -10618,7 +10624,7 @@ context.stroke();
 </body>
 ```
 
-Extract from source code:
+<h5>Extract from source code:</h5>
 
 ```
 1.  context.beginPath();
@@ -10687,7 +10693,7 @@ Here is an example that shows how to draw different filled rectangles in blue, w
    alt="Example" />
 </p>
 
-<h4>HTML</h4>
+<h5>HTML</h5>
 
 ```
 <!DOCTYPE html>
@@ -14346,7 +14352,7 @@ HTML5 took all this into account and thus provides:
 <li>Other goodies, such as the option to set an input field out of a \<form\>, new elements such as \<datalist\> for autocompletion, \<output\> for feedback, etc.</li><br/>
 </ul>
 
-Examples of contextual keyboards are shown above; they differ depending on the type of  \<input\> fields in the \<form\>. \
+Examples of contextual keyboards are shown above; they differ depending on the type of  \<input\> fields in the \<form\>. 
 In the examples, we can see: email, URL, and phone number. Look at the different keyboard layouts. The last picture is a date picker from an IOS phone.
 
 <h4>External resources:</h4>
@@ -14545,8 +14551,8 @@ When using the \<input\> element to create buttons, the label is set in the v
 These give the same results:
 
 *Lines 1 and 2* render as:\
-Submit Cancel\
-\
+Submit Cancel
+
 \... while li*nes 3 and 4* render as:\
 ![](./images/image220.wmf) 
 
@@ -16205,13 +16211,13 @@ This attribute\'s value indicates where the response from the form submission sh
 
 Possible values for the formtarget attributes are:
 
--   \_blank: the response is displayed in a new window or tab
+-   _blank: the response is displayed in a new window or tab
 
--   \_self: the response is displayed in the same frame (this is default)
+-   _self: the response is displayed in the same frame (this is default)
 
--   \_parent: the response is displayed in the parent frame
+-   _parent: the response is displayed in the parent frame
 
--   \_top: the response is displayed in the full body of the window
+-   _top: the response is displayed in the full body of the window
 
 -   framename: the response is displayed in a named iframe
 
@@ -16869,7 +16875,7 @@ Homepage (URL): \
 Phone number: \
 Submit form
 
-**Bottom of Form**
+<h5>Bottom of Form</h5>
 
 <h4>Extract from source code:</h4>
 
@@ -16910,20 +16916,20 @@ Same example on FireFox, the title attribute is ignored:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image291.jpeg?raw=true"
-   alt="same example on firefox, the title attribute is ignored."
+   alt="Same example on firefox, the title attribute is ignored."
    width="65%">
 &nbsp;
 <br/>
 
-**The built-in validation system is an improvement on what existed before HTML5 (i.e., nothing), but additional work is required if you want fully localized, hand-made validation feedback.**\
+<h5>The built-in validation system is an improvement on what existed before HTML5 (i.e., nothing), but additional work is required if you want fully localized, hand-made validation feedback.</h5>
 
-**We will show solutions in the last section of this week\'s course.**
+<h4>We will show solutions in the last section of this week's course.</h4>
 
-<h3 od=ch5-7-3">5.7.3 JavaScript Form Validation API</h3>
+<h3 id=ch5-7-3">5.7.3 JavaScript Form Validation API</h3>
 
 There is a JavaScript API for form validation. This API will let you use your own validation algorithm (i.e. check that you have entered the same password in two different input fields), and customize error messages. Also, together with some HTML/CSS/JavaScript you will be able to make your own message bubbles.
 
-### Typical use
+<h4>Typical use</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 00.  (xx) ------------------------------->
@@ -16948,7 +16954,8 @@ Submit
 
 Bottom of Form
 
-Extract from source code:
+<h5>Extract from source code:</h5>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -16990,13 +16997,13 @@ Extract from source code:
 38. </html>
 ```
 
-**Explanations:**
+<h5>Explanations:</h5>
 
 The validity API proposes a setCustomValidity() method available on input DOM objects. This method allows you to customize error messages. It takes a string parameter. When this string is empty, the element is considered *valid*, when the string is not empty, the field is *invalid* and the validation error message displayed in the bubble will be equal to that string.
 
-At *lines 18* and *20* we added an input event listener: each time a key is typed, the checkPasswords() function is called.
+At <i>lines 18</i> and <i>20</i> we added an input event listener: each time a key is typed, the checkPasswords() function is called.
 
-*Lines 28* and *29* get the input fields\' values, and* lines 30-35* check if the passwords are the same and set the validity of the field using the validation API\'s method setCustomValidity(error_message).
+<i>Lines 28</i> and <i>29</i> get the input fields\' values, and <i>lines 30-35</i> check if the passwords are the same and set the validity of the field using the validation API\'s method setCustomValidity(error_message).
 
 <h3 id="ch5-7-4">5.7.4 The validity property of input fields</h3>
 
@@ -17004,33 +17011,26 @@ The validity property of input fields helps to get error details when the fiel
 
 Here is how to get the validity property of an input field:
 
+```
 1.  var input = document.getElementById(\'IdOfField\');
-
 2.  
-
-3.  var validityState_object =** input.validity;**
+3.  var validityState_object = <b>input.validity;</b>
+```
 
 The possible values for the validity property are: 
+<ul>
+<li>valueMissing</li><br/>
+<li>typeMismatch</li><br/>
+<li>patternMismatch</li><br/>
+<li>tooLong</li><br/>
+<li>rangeUnderflow</li><br/>
+<li>rangeOverflow</li><br/>
+<li>stepMismatch</li><br/>
+<li>valid</li><br/>
+<li>customError</li><br/>
+</ul>
 
--   valueMissing 
-
--   typeMismatch
-
--   patternMismatch
-
--   tooLong
-
--   rangeUnderflow 
-
--   rangeOverflow
-
--   stepMismatch
-
--   valid 
-
--   customError
-
-Here is [an example at JSBin that shows how to test the different types of validation errors](https://jsbin.com/nalaxeg/1/edit?html,output), or you may try it here in your browser (enter bad values, too big, too small, enter invalid characters, etc.):
+Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JSBin that shows how to test the different types of validation errors</a>, or you may try it here in your browser (enter bad values, too big, too small, enter invalid characters, etc.):
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 292.  (xx) ------------------------------->
@@ -17042,95 +17042,58 @@ Here is [an example at JSBin that shows how to test the different types of vali
 &nbsp;
 <br/>
 
-**Source code:**
-
+<h5>Source code:</h5>
+```
 1.  \<!DOCTYPE html\>
-
 2.  \<html lang=\"en\"\>
-
 3.  \...
-
 4.  \<body\>
-
 5.  
-
 6.  \<script\>
-
 7.  function validate() {
-
 8.       var input = document.getElementById(\'b\');
-
 9.      ** var validityState_object = input.validity;**
-
 10.  
-
 11.      if(validityState_object.valueMissing) {
-
 12.          input.setCustomValidity(\'Please set an age (required)\');
-
 13.      } else if (validityState_object.rangeUnderflow) {
-
 14.          input.setCustomValidity(\'Your value is too low\');
-
 15.      } else if (validityState_object.rangeOverflow) {
-
 16.          input.setCustomValidity(\'Your value is too high\');
-
 17.      } else if (validityState_object.typeMismatch) {
-
 18.          input.setCustomValidity(\'Type mismatch\');
-
 19.      } else if (validityState_object.tooLong) {
-
 20.          input.setCustomValidity(\'Too long\');
-
 21.      } else if (validityState_object.stepMismatch) {
-
 22.          input.setCustomValidity(\'stepMismatch\');
-
 23.      } else if (validityState_object.patternMismatch) {
-
 24.          input.setCustomValidity(\'patternMismatch\');
-
 25.      } else {
-
 26.          input.setCustomValidity(\'\');
-
 27.      }
-
 28. }
-
 29. \</script\>
-
 30. \<form class=\"myForm\"\>
-
 31. \<label for=\"b\"\>Enter a value between 10 and 20: \</label\>
-
 32.  
-
 33. \<input type=\"number\" name=\"text\" id=\"b\" min=\"10\" max=\"20\"
-
 34.         required **oninput=\'validate();\'**/\>
-
 35. \<button\>Submit\</button\>
-
 36. \</form\>
-
 37. 
-
 38. \</body\>
-
 39. \</html\>
+```
 
-### The validationMessage property
+<h4>The validationMessage property</h4>
 
 It is also possible to get the validation error message, using the validationMessage property of input fields.
 
+```
 1.  var input = document.getElementById(\'b\');
-
 2.   
-
 3.  console.log(\"Validation message = \" +** input.validationMessage**);
+```
 
 This is useful for making custom error messages. More about this topic in the next section of the course.
 
@@ -17162,7 +17125,7 @@ The techniques we have seen so far for enhancing HTML forms are powerful and pr
 
 Here is [an adaptation of work presented at the developer.telerik.com Web site](https://www.telerik.com/blogs/building-html5-form-validation-bubble-replacements).  This link is really worth reading, as it presents different approaches and gives external references for those who would like to go further.
 
-### Example that shows aggregation of error messages + overriding default behavior
+<h4>Example that shows aggregation of error messages + overriding default behavior</h4>
 
 Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output) or try it here in your browser: enter invalid values and submit with one or two invalid fields.
 
