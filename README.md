@@ -470,13 +470,15 @@ Plain and simple, the internet allows access to the World Wide Web. Without it, 
 
 <i>The power of the Web is in its universality.</i>
 <i>Access by everyone regardless of disability is an essential aspect.</i>
-<h5>Tim Berners-Lee, W3C Director and inventor of the World Wide Web</h5>
+
+<h4>Tim Berners-Lee, W3C Director and inventor of the World Wide Web</h4>
 
 The Web has become an essential aspect of our daily lives, and everyone should have access to this technology. Web accessibility focuses on ensuring equivalent access for people with disabilities. It is increasingly important to many organizations and governments from around the world, and has many business benefits. Access to information, including on the Web, is also recognized by the UN Convention on the Rights of Persons with Disabilities (CRPD).
 
 <h4>Who is impacted?</h4>
 
 Web accessibility addresses all disabilities, including hearing, learning and cognitive, neurological, physical, speech, and visual disabilities. Some examples of Web accessibility features include:
+
 <ul>
 <li><i>Captions</i> on audio and multimedia content for people who are hard of hearing;</li>
 <li><i>Clear and consistent layout</i> for people with learning and cognitive disabilities;</li>
@@ -487,6 +489,7 @@ Web accessibility addresses all disabilities, including hearing, learning and co
 <h4>Web accessibility benefits people with and <i>without</i> disabilities</h4>
 
 Web accessibility features also benefit many more users, such as:
+
 <ul>
 <li>People with temporary situational limitations, such as a broken arm;</li>
 <li>People using mobile devices, televisions, and other access channels;</li>
@@ -842,7 +845,7 @@ Note that the H2, article, article header, etc. will be styled using these rules
 
 Next, in each article in the section we have a header (to display the article title), paragraphs (article content), and so on.
 
-<h5>Example for the first blog article:</h5>
+<h4>Example for the first blog article:</h4>
 
 ```
 <section>
@@ -1018,7 +1021,7 @@ footer {
 }
 ```
 
-<h5>And here is the result at the bottom of the page:</h5>
+<h4>And here is the result at the bottom of the page:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------- 22. the resulting footer at the bottom of the page (21) -------------------->
@@ -1234,7 +1237,7 @@ In the above example, please note two things:
 
 <h4>Best Practices when using Sectioning Elements</h4>
 
-<h5>Best practice #1: always add a heading to explicit sectioning content</h5>
+<h4>Best practice #1: always add a heading to explicit sectioning content</h4>
 
 It\'s always better - mainly for accessibility reasons - to include a heading (a \<h1\>, \<h2\>\...\<h6\>) in each sectioning element (\<section\>, \<article\>, \<nav\>, \<aside\>), but also after the \<body\> element (called a \"sectioning root\"). 
 
@@ -1317,7 +1320,7 @@ The sectioning root (\<body\>) and the sectioning elements (\<section\> here\..
 
 <h4>More about the &lt;header&gt; element</h4>
 
-<h5>The &lt;header&gt; element is just a container. It is not taken into account for defining new sections of a document nor does it affect the hierarchy levels.</h5>
+<h4>The &lt;header&gt; element is just a container. It is not taken into account for defining new sections of a document nor does it affect the hierarchy levels.</h4>
 
 You can use heading elements \<h1\>\...\<h6\> in a \<header\> but be careful if you use more than one, as the rules explained in the previous part of the course will apply and may generate implicit \"sections\" in the header.
 
@@ -1456,9 +1459,9 @@ Changes have been made to particular elements in HTML5 making it simpler to u
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h5>Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/" >this source</a>).</h5>
+<h4>Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/" >this source</a>).</h4>
 
-```
+```html5
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
@@ -1489,7 +1492,7 @@ DTDs are not used by current Web browsers to  validate the structure of an HTML
 
 Old HTML1 Web pages will not be rendered the same way as new HTML5 pages, since, in the 90\'s, some of them were written by hand and may contain errors, embedded HTML elements, etc.
 
-<h5>With HTML4, doctype definitions looked like this:</h5>
+<h4>With HTML4, doctype definitions looked like this:</h4>
 
 ```
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">, 
@@ -1498,7 +1501,7 @@ Old HTML1 Web pages will not be rendered the same way as new HTML5 pages, since,
 which was even more complicated as one had to choose between three different possibilities (doctypes could be transitional, strict, or frameset). Most of the time, the doctype definition was copied and pasted from one document 
 to another and was nearly impossible to memorize.
 
-<h5>With HTML5, there is only one way to indicate the doctype, and it's so simple there is no reason to forget it:</h5>
+<h4>With HTML5, there is only one way to indicate the doctype, and it's so simple there is no reason to forget it:</h4>
 
 ```
 1.  <!doctype html>
@@ -1509,23 +1512,30 @@ to another and was nearly impossible to memorize.
 With a rel=\"stylesheet\" attribute, it is no longer necessary to indicate type=\"text/css\" (from <a href="https://www.w3.org/TR/html5/links.html#link-type-stylesheet">the specification</a>: \"the default type for resources given by the <a href="https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet">stylesheet</a> keyword is text/css.\")
 
 The \"type\" attribute is not needed in HTML5, and even old browsers will use text/css as the default type for stylesheets today. So, either way, you can omit the \"type\" attribute altogether and use:
+
 ```
 1.  <link href="file.css" rel="stylesheet"/>
 ```
-instead of:
+
+<h4>instead of:</h4>
+
 ```
 1.  <link href="file.css" rel="stylesheet" type="text/css"/>
 ```
 We will not go into detail about the \<link\> element, but the fact that the type attribute is becoming optional shows the current direction taken by HTML5: towards greater simplicity.
 
-<h5>Please see how to include a JavaScript file in our page:</h5>
+<h4>Please see how to include a JavaScript file in our page:</h4>
+
 ```
 1.  <script src="script.js"></script>
 ```
+
 Here again, the type attribute has been omitted. Just as a reminder, the old way to do the same thing is: 
+
 ```
 1.  <script type="text/javascript" src="script.js"></script>
 ```
+
 <h4>More flexible syntax constraints</h4>
 
 If you look at the \"minimal document\" example, or at other examples in this course, you won\'t find a lot of differences compared to the same code in XHTML: attribute values are surrounded by quotes, all elements are written in lower case, etc. This is because we are used to writing this way, but HTML5 also supports a simplified syntax:
@@ -1989,7 +1999,7 @@ It may not be clear whether a \<section\> may contain one or several \<article
 </ul>
 <br/>
 
-<h5>An &lt;article&gt; may be cut into different &lt;section&gt; elements!</h5>
+<h4>An &lt;article&gt; may be cut into different &lt;section&gt; elements!</h4>
 
 <h4>Example of a blog post defined as a long &lt;article&gt;, that is in turn cut into smaller &lt;section&gt; elements:</h4>
 
@@ -2110,14 +2120,15 @@ The HTML5 specification says that \"each sectioning element potentially has a he
 
 \<h1\>\...\<h6\> are called <b>headings</b>, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
 
-```
+```html5
 <body>
     <h1>Title of my document</h1>
     ...
 </body>
 ```
-<h5>... defines the header of a section <i>implicitly</i>, while:</h5>
-```
+<h4>... defines the header of a section <i>implicitly</i>, while:</h4>
+
+```html5
 <body>
    ...
    <section>
@@ -2126,7 +2137,8 @@ The HTML5 specification says that \"each sectioning element potentially has a he
    </section>
 </body>
 ```
-<h5>... defines the heading of <i>the explicit section</i> (its parent element &lt;section&gt;).</h5>
+
+<h4>... defines the heading of <i>the explicit section</i> (its parent element &lt;section&gt;)</h4>
 
 <h4>Use multiple headings of different rank with sectioning content</h4>
 
@@ -2135,7 +2147,8 @@ The first element of a heading content in an element of sectioning content repre
 Subsequent headings of equal or higher rank start new (implied) sections, headings of lower rank start implied subsections that are part of the previous one. In both cases, the element represents the heading of the implied section.
 
 <h4>Let's clarify this by looking at some example code:</h4>
-```
+
+```html5
 <body>
 <section>
     <h1>This H1 is the heading of an explicit section</h1>
@@ -2181,7 +2194,7 @@ Here are some examples:
 
 <h4>Good (heading in each explicit section):</h4>
 
-```
+```html5
 <section>
     <h1>Blog post of April 2020</h1>
     ...
@@ -2189,7 +2202,8 @@ Here are some examples:
 ```
 
 <h4>Good (heading in a &lt;header&gt; does not change anything)</h4>
-```
+
+```html5
 <section>
    <b><header></b>
       <b><h1>Blog post of April 2020</h1></b>
@@ -2201,7 +2215,7 @@ Here are some examples:
 
 <h4>Bad (there is no Hx after the &lt;section&gt; - no heading):</h4>
 
-```
+```html5
 <section>
    <header>
       <p class="article title">Blog post of April 2020</p>
@@ -2215,7 +2229,7 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 
 <b>UPDATE:</b> For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">Outline sidebar</a> for Firefox.
 
-<h5>The outline of the last example looks like this:</h5>
+<h4>The outline of the last example looks like this:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 27. outline of the last example (46) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -2230,7 +2244,7 @@ Notice that \<body\> is also a sectioning element. It\'s called a \"sectioning
 
 <h4>Final good version:</h4>
 
-```
+```html5
 <body>
     <b><h1>Example Blog</h1></b>
     <section>
@@ -2257,9 +2271,9 @@ The \<header\> element is just a container. It is not taken into account for d
 
 You can use heading elements \<h1\>\...\<h6\> in a \<header\> but be careful if you use more than one, as the rules explained in the previous part of the course will apply and may generate implicit \"sections\" in the header.
 
-<h5>This example has two headings in the &lt;header&gt;:</h5>
+<h4>This example has two headings in the &lt;header&gt;:</h4>
 
-```
+```html5
 1.  <section>
 2.     <header>
 3.       <h1>Some text in a h1 in a header of a section</h1>
@@ -2284,7 +2298,7 @@ Indeed, HTML does not have a dedicated mechanism for marking up subheadings, alt
 
 If you do not want the subtitles to be included in the table of contents, just use standard markup, for example \<p\> elements, as shown in the next example. Of course, CSS rules can be applied to change colors, sizes, etc.
 
-```
+```html5
 1.  <header>
 2.      <h1>HTML 5.1 Nightly</h1>
 3.      <p>A vocabulary and associated APIs for HTML and XHTML</p>
@@ -2298,7 +2312,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 
 <h4>Ok version (no explicit sections everywhere):</h4>
 
-```
+```html5
 1.  <body>
 2.  <h4>Apples</h4>
 3.  <p>Apples are fruit.</p>
@@ -3751,12 +3765,17 @@ If the itemprop attribute appears on a:
 
 Elements that can be associated with microdata
 | HTML5 elements | microdata value associated |
+| -------------- | -------------------------- |
 | &lt;a&gt;; &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, } The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person\'s photo and downloaded accordingly.
   &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt;  
   element |
+| ------------------------- | -------------- |
 | &lt;time&gt; element | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
-| &lt;meta&gt; element | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn\'t actually in the text of your page. |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| &lt;meta&gt; element | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | anything else | The data is whatever is in the text of the element. |
+| --------------| --------------------------------------------------- |
 
 For example, the value of a property defined in an \<img\> element will be the value of the src attribute:
 
