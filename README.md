@@ -4487,46 +4487,45 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link
 <h4> Here is a table that shows the most interesting methods, properties, and events provided by the \<video\> element API</h4>
 
 We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer! 
-
-  ------------------------------------------------------------------------
-  <b>Methods</b>        <b>Properties</b>                   <b>Events</b>
-  ------------------ -------------------------------- --------------------
-  <b>play()</b>         <b>currentSrc</b>                   <b>play</b>
-
-  <b>pause()</b>        <b>currentTime</b>                  <b>pause</b>
-
-  load()             startTime (readonly)             progress
-
-  canPlayType()      videoWidth                       error
-
-                     videoHeight                      timeupdate
-
-                     duration (readonly)              ended
-
-                     ended (readonly)                 abort
-
-                     error                            empty
-
-                     paused (readonly)                emptied
-
-                     muted                            waiting
-
-                     seeking                          loadedmetadata
-
-                     volume                           
-
-                     <b>height</b>                       
-
-                     <b>width</b>                        
-
-                     <b>seekable (readonly)</b>          
-
-                     <b>played (readonly)</b>            
-  ------------------------------------------------------------------------
+| ------------------------------------------------------------------------
+| <b>Methods</b> | <b>Properties</b> | <b>Events</b>|
+| -------------- | ----------------- | -------------|
+| <b>play()</b>  | <b>currentSrc</b> | <b>play</b> |
+|----------------|-------------------|----------------|
+| <b>pause()</b> | <b>currentTime</b> | <b>pause</b> |
+|----------------| -------------------| ------------ |
+|  load()    |   | startTime (readonly) |            progress |
+|----------------| -------------------| ------------ |
+|  canPlayType() | videoWidth |                     error |
+|----------------| -------------------| ------------ |
+ |               | videoHeight |                     timeupdate |
+|----------------| -------------------| ------------ |
+                 | duration (readonly) |               ended |
+|----------------| -------------------| ------------ |
+                 | ended (readonly)                 abort |
+|----------------| -------------------| ------------ |
+                 | error     |                       empty |
+|----------------| -------------------| ------------ |
+                 | paused (readonly) |               emptied |
+|----------------| ------------------| ------------ |
+                 | muted              |              waiting |
+|----------------| ------------------| ------------ |
+                 | seeking             |             loadedmetadata |
+|----------------| -------------------| ------------ |
+                 | volume           |                
+|----------------| -----------------| ------------ |
+                 | <b>height</b> | 
+|----------------| -------------------| ------------ |
+                 | <b>width</b> |
+|----------------| -------------------| ------------ |
+                 | <b>seekable (readonly)</b> |
+|----------------| -------------------| ------------ |
+                 | <b>played (readonly)</b> |
+|----------------| -------------------| ------------ |
 
 In the next pages, let\'s see, through a set of examples, how to use these most important properties, methods, and events\...
 
-<h3 id="ch2-2-7">2.2.7 The \<video\> Element JavaScript API</h3>
+<h3 id="ch2-2-7">2.2.7 The &lt;video&gt; Element JavaScript API</h3>
 
 The JavaScript API is useful for implementing playlists, making custom user interfaces and many other interesting things. The \"enhanced HTML5 multimedia players\" lesson presented further on the course relies heavily on this API.
 
@@ -19633,4 +19632,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-01-2022 8:06am</i></b></h3>
+<h3><b><i>08-01-2022 11:00pm</i></b></h3>
