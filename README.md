@@ -3307,7 +3307,7 @@ This will indeed force the download of an image with a filename different from i
 <h4>Interesting applications: serverless download</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 56. no server picture (68) ----------------------------------->
+<!--------------------------------- 56. no servers picture (68) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image056.jpeg?raw=true"
@@ -3329,7 +3329,7 @@ We have also put the simplified <a href="https://jsbin.com/muluwey/1/edit?html,
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image057.png?raw=true"
-   alt="Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server"
+   alt="Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server."
    width="50%">
 &nbsp;
 <br/>
@@ -3401,7 +3401,10 @@ When you define an element as not being translatable, its children inherit this 
 <li>An article from W3C's Internationalization Activity: <a href="https://www.w3.org/International/questions/qa-translate-flag">"Using HTML's translate attribute"</a></li>
 </ul>
 
-<h3 id="ch1-5">1.5 Microdata</h3>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- chapter 1-5-1. microdata (71) ---------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch1-5-1">1.5.1 Microdata</h3>
 
 There are several ways to provide machine-readable content embedded in a classical Web document: <a href="https://www.w3.org/TR/html-rdfa/">HTML+RDFa</a>, <a href="http://microformats.org/">microformats</a>, <a href="https://json-ld.org/">JSON-LD</a>, HTML5 microdata. In this section, we focus on microdata.
 
@@ -3464,17 +3467,15 @@ In the following sections, we look more closely at the itemprop, itemscope a
 
 <h4>Data that can be processed, organized, structured, or presented in a given context</h4>
 
-Different use cases:
+<h4>Different use cases:</h4>
+<ul>
+<li>The browser, or a browser extension, may interpret the last example as an address and may propose to send it to a map application,</li>
+<li>A Web crawler may interpret this as an address and display it in its responses using a dedicated presentation layout,</li>
+<li>Some JavaScript code in the page can access this data,</li>
+<li>With other types of microdata, for events, for example, the browser may pop up a calendar application, etc.</li>
+</ul>
 
--   The browser, or a browser extension, may interpret the last example as an address and may propose to send it to a map application,
-
--   A Web crawler may interpret this as an address and display it in its responses using a dedicated presentation layout,
-
--   Some JavaScript code in the page can access this data,
-
--   With other types of microdata, for events, for example, the browser may pop up a calendar application, etc.
-
-<b>Note</b>: For advanced users, Microdata is very similar to [microformats](http://microformats.org/), which use HTML classes, or to [RDFa](https://www.w3.org/TR/xhtml-rdfa-primer/), which doesn't validate in HTML4 or HTML5. Because RDFa was considered to be too hard for authors to write, microdata is HTML5\'s answer to help embed semantics into html documents.
+<b>Note</b>: For advanced users, Microdata is very similar to <a href="http://microformats.org/">microformats</a>, which use HTML classes, or to <a href="https://www.w3.org/TR/xhtml-rdfa-primer/">RDFa</a>, which doesn't validate in HTML4 or HTML5. Because RDFa was considered to be too hard for authors to write, microdata is HTML5\'s answer to help embed semantics into html documents.
 
 <h4>External resources</h4>
 <ul>
@@ -3485,7 +3486,7 @@ Different use cases:
 <li><a href="https://diveinto.html5doctor.com/extensibility.html">Chapter from Mark Pilgrim's book about microdata</a>, very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- Chapter 1-5-2. testing tools (72) -------------------------------->
+<!----------------------------- chapter 1-5-2. testing tools (72) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-2">1.5.2 Testing Tools</h3>
 
@@ -3749,29 +3750,28 @@ Now, let\'s see what elements are compatible with the itemprop attribute and w
 If the itemprop attribute appears on a:
 
 Elements that can be associated with microdata
-
-  HTML5 elements                                              microdata value associated
-
-  \<a\>, \<area\>, \<audio\>, \<embed\>, \<iframe\>, \        The data is the url in the element\'s href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person\'s photo and downloaded accordingly.
-  \<img\>, \<link\>, \<object\>, \<source\>, or \<video\> \   
-  element
-
-  \<time\> element                                            The data is the time in the element\'s datetime attribute. This lets you, for example, just say \"last week\" in your text content but still indicate exact date and time.
-
-  \<meta\> element                                            The data is whatever appears in the content attribute of the \<meta\> element. This is used when you need to include some data that isn\'t actually in the text of your page.
-
-  anything else                                               The data is whatever is in the text of the element.
+| HTML5 elements | microdata value associated |
+| &lt;a&gt;; &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, } The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person\'s photo and downloaded accordingly.
+  &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt;  
+  element |
+| &lt;time&gt; element | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
+| &lt;meta&gt; element | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn\'t actually in the text of your page. |
+| anything else | The data is whatever is in the text of the element. |
 
 For example, the value of a property defined in an \<img\> element will be the value of the src attribute:
+
 ```
 1.  <img itemprop="image" src="MichelBuffa.png" alt="A great professor">
 ```
+
 Or for a \<time\>, it will be the value of the datetime attribute:
 
 ```
 1.  <time itemprop="birthday" datetime="1965-04-16">April 16, 1965</time>
 ```
+
 Or for an \<a\> element, the value will be the value of the href attribute:
+
 ```
 1.  <a href="https://www.twitter.com/micbuffa" itemprop="url">profile</a>
 ```
@@ -4192,6 +4192,7 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 <br/>
 
 Here is the HTML code. It\'s really simple, just notice the \<body onload=\"init();\"\> which calls the JavaScript init() function right after the page is loaded.
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -4215,6 +4216,7 @@ Here is the HTML code. It\'s really simple, just notice the \<body onload=\"ini
 ```
 
 Here is the CSS (remove margins, remove padding, hide parts that could overflow from the \<body\>):
+
 ```
 body {
     margin:0;
@@ -19210,7 +19212,7 @@ function error() {
 <li>The rest is a basic use of the Leaflet API. Notice at <i>line 17</i> that \'map\' is the id of the \<div\> from the HTML part of the code.</li>
 </ul>
 
-<h3>6.4.6 Reverse geocoding</h3>
+<h3 id="ch6-4-6">6.4.6 Reverse geocoding</h3>
 
 Different Web services can be used to get an address from longitude and latitude. Most are free of charge, but they will ask you to register an API key and enter your credit card number. If you send too many requests, you will be charged.Such a service is the [Google Reverse Geocoding JavaScript API](https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse). For those of you who are really interested to know how this API works, please read the Google documentation and tutorials.
 
@@ -19231,7 +19233,7 @@ Google reverse geocoding example (screenshot only) :
    width="45%" />
 </p>
 
-Source code of this example (in order to run it, you need a Google API key, used at *line 6*).
+Source code of this example (in order to run it, you need a Google API key, used at <i>line 6</i>).
 
 ```
 <!DOCTYPE html>
@@ -19514,7 +19516,7 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 
 This is just a variation of the previous examples. We embedded the interactive map in a form, and we display the results of the reverse geocoder in a form field. This example might be useful if you want to pre-fill the address of a registration form, depending on the current location of the person who is registering.
 
-Click on the Codepen logo (on the top right) so to run the [online example](https://codepen.io/w3devcampus/pen/MWKEJqM) (for security reasons the embedded version cannot run in this page):
+Click on the Codepen logo (on the top right) so to run the <a href="https://codepen.io/w3devcampus/pen/MWKEJqM">online example</a> (for security reasons the embedded version cannot run in this page):
 
 <h4>HTML</h4>
 
@@ -19612,4 +19614,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>07-30-2022 7:49am</i></b></h3>
+<h3><b><i>08-01-2022 8:06am</i></b></h3>
