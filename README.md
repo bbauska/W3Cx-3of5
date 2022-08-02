@@ -7,7 +7,7 @@
 <!------------------------------------- 11. w3cx logo (01) --------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/w3cx-logo.jpg?raw=true"
+<img src="./images/image011.png?raw=true"
    width="35%"
    alt="W3C logo" />
 </p>
@@ -3920,11 +3920,11 @@ Usually you have an \"embed\" button close to the videos that prompts you with
 The YouTube video embedded in this page by the above code: it\'s HTML5 but it\'s not a \<video\> element directly inserted in the HTML of this page, it\'s an \<iframe\>.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 69.  (xx) ------------------------------->
+<!-------------------- 69. web of things (wot) explainer video snapshot (83) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image069.png?raw=true"
-   alt=""
+   alt="Web of things (WoT) explainer video snapshot."
    width="60%">
 &nbsp;
 <br/>
@@ -3937,31 +3937,31 @@ This is one of the main problems encountered in recent years: codec support was 
 
 <h4>External resources</h4>
 <ul>
-<li>From W3C\'s specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element">The video element</a></li>
+<li>From W3C's specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element">The video element</a></li>
 <li>MDN\'s Web Docs: <a href="(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">&lt;video&g;: The Video Embed element</a>)</li>
-<li>From Apple\'s developer site: [Safari HTML5 audio and video guide](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/ControllingMediaWithJavaScript/ControllingMediaWithJavaScript.html)</li>
+<li>From Apple's developer site: <a href="https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/ControllingMediaWithJavaScript/ControllingMediaWithJavaScript.html">Safari HTML5 audio and video guide</a>.</li>
 <li>Article from HTML5 Rocks: <a href="https://www.html5rocks.com/en/tutorials/video/basics/">Media</a></li>
 </ul>
 
-<h3 id="ch2-2-2">2.2.2 The <audio> Element</h3>
+<h3 id="ch2-2-2">2.2.2 The &lt;audio&gt; Element</h3>
 
 <h4>HTML5 audio is composed of several layers:</h4>
-<ul>
-<li>The &lt;audio&gt; element is useful for embedding an audio player into a Web page. It is dedicated for <b>streamed audio. It is very similar to the &lt;video&gt; element, both in its use and in its API.</li>
+<ul>"
+<li>The &lt;audio&gt; element is useful for embedding an audio player into a Web page. It is dedicated for <b>streamed audio</b>. It is very similar to the &lt;video&gt; element, both in its use and in its API.</li>
 <li>The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.)</li>
 </ul>
-
-This course will focus on the \<audio\> element. We present the [Web Audio API](https://www.w3.org/TR/webaudio/) and other advanced HTML5 features in the [W3Cx HTML5 Apps and Games course](https://www.edx.org/course/html5-apps-and-games).
+<!----- https://github.com/bbauska/W3Cx-4of5-HTML5.2x --------->
+This course will focus on the \<audio\> element. We present the <a href="https://www.w3.org/TR/webaudio/">Web Audio API</a> and other advanced HTML5 features in the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games course</a>.
 
 The attributes, event set and JavaScript API  of the \<audio\> element are just a \"reduced\" version of the ones from the \<video\> element, and here we will only address the differences and peculiarities.
 
 <h4>The &lt;audio&gt; element, basic usage</h4>
 
-Here is a simple example (also available [online example from JSBin](https://jsbin.com/yogojis/edit?html,output)):
+Here is a simple example (also available <a href="https://jsbin.com/yogojis/edit?html,output">online example from JSBin</a>):
 
 Press play to stream the neigh of a horse:   
 
-As you can see, the code is very similar to the basic \<video\> element usage.
+<h5>As you can see, the code is very similar to the basic &lt;video&gt; element usage.</h5>
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -4869,6 +4869,7 @@ The accessibility features of TV programs often propose both options for people 
 The \<track\> element cannot be used with a file:// URL. Please use https:// and a Web server. Your server must use a special MIME format for the .vtt files: text/vtt;charset=utf-8 (set by default on most servers now).
 
 <h4>Examples of the lines to add to an Apache Web server:</h4>
+
 ```
 1.  <Files mysubtitle.vtt>
 2.  ForceType text/vtt;charset=utf-8
@@ -4889,7 +4890,7 @@ Here is an example of a video element that includes a \<track\> element in the
 &nbsp;
 <br/>
 
-The example uses a \<track\> element to insert basic *captions* to the video: sounds and music are described, in addition to standard *subtitles* that correspond to what the different movie characters say.
+The example uses a \<track\> element to insert basic captions to the video: sounds and music are described, in addition to standard subtitles that correspond to what the different movie characters say.
 
 ```
 <video height="272" width="640"
@@ -4971,75 +4972,75 @@ And here is an extract of the corresponding [sintel-captions.vtt](https://mainl
 ```
 1.  WEBVTT
 2.  
-3.  00:00:01.000 \--\> 00:00:02.042
+3.  00:00:01.000 --> 00:00:02.042
 4.  (drumbeat)
 5.  
-6.  00:00:07.167 \--\> 00:00:12.025
+6.  00:00:07.167 --> 00:00:12.025
 7.  (plaintive violin solo playing)
 8.  
-9.  00:00:15.000 \--\> 00:00:18.183
+9.  00:00:15.000 --> 00:00:18.183
 10. (wind whistling)
 11. 
-12. 00:00:24.167 \--\> 00:00:27.025
+12. 00:00:24.167 --> 00:00:27.025
 13. (orchestra music swells)
 14. 
-15. 00:00:43.033 \--\> 00:00:43.192
+15. 00:00:43.033 --> 00:00:43.192
 16. (weapons clash)
 17. 
-18. 00:00:44.000 \--\> 00:00:44.175
+18. 00:00:44.000 --> 00:00:44.175
 19. (gasps)
 20. 
-21. 00:00:44.183 \--\> 00:00:45.158
+21. 00:00:44.183 --> 00:00:45.158
 22. (grunts)
 23. 
-24. 00:00:45.167 \--\> 00:00:47.058
+24. 00:00:45.167 --> 00:00:47.058
 25. (groaning)
 26. 
-27. 00:00:54.192 \--\> 00:00:55.150
+27. 00:00:54.192 --> 00:00:55.150
 28. (blade rings)
 29. 
-30. 00:00:55.158 \--\> 00:00:57.008
+30. 00:00:55.158 --> 00:00:57.008
 31. (bellowing)
 32. 
-33. 00:00:57.017 \--\> 00:00:58.067
+33. 00:00:57.017 --> 00:00:58.067
 34. (grunting)
 35. 
-36. 00:00:59.075 \--\> 00:01:00.133
+36. 00:00:59.075 --> 00:01:00.133
 37. (panting)
 38. 
-39. 00:01:05.108 \--\> 00:01:06.125
+39. 00:01:05.108 --> 00:01:06.125
 40. (cries out in agony)
 41. 
-42. 00:01:08.050 \--\> 00:01:09.058
+42. 00:01:08.050 --> 00:01:09.058
 43. (panting)
 44. 
-45. 00:01:12.092 \--\> 00:01:13.142
+45. 00:01:12.092 --> 00:01:13.142
 46. (panting)
 47. 
-48. 00:01:14.017 \--\> 00:01:18.125
+48. 00:01:14.017 --> 00:01:18.125
 49. (orchestra plays ominous low notes)
 50. 
-51. 00:01:31.058 \--\> 00:01:35.133
+51. 00:01:31.058 --> 00:01:35.133
 52. (plaintive violin solo returns)
 53. 
-54. 00:01:46.158 \--\> 00:01:49.058
+54. 00:01:46.158 --> 00:01:49.058
 55. This blade has a dark past.
 56. 
-57. 00:01:51.092 \--\> 00:01:54.108
+57. 00:01:51.092 --> 00:01:54.108
 58. It has shed much innocent blood.
 59. 
-60. 00:01:57.083 \--\> 00:02:00.000
+60. 00:01:57.083 --> 00:02:00.000
 61. You\'re a fool for traveling alone
 62. so completely unprepared.
 63. 
-64. 00:02:01.100 \--\> 00:02:03.033
+64. 00:02:01.100 --> 00:02:03.033
 65. You\'re lucky your blood\'s still flowing.
 66. 
-67. 00:02:04.183 \--\> 00:02:06.075
+67. 00:02:04.183 --> 00:02:06.075
 68. Thank you.
 ```
 
-This format is rather simple, but we still recommend reading [this excellent article from Mozilla Developer Network ](https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API)that explains in detail all the different options.
+This format is rather simple, but we still recommend reading <a href="https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API">this excellent article from Mozilla Developer Network</a> that explains in detail all the different options.
 
 Each \"element\" in this file has a starting and ending time, plus a value (the text that will be displayed), followed by a blank line (blank lines are separators between elements).
 
@@ -5094,6 +5095,7 @@ So, let\'s suppose you have a video like the one below (we included it on YouTub
 &nbsp;
 
 And if you\'ve also got it in mp4/H264 and in webm formats, here is how you can embed it in your page using the video element:
+
 ```
 <video id="myVideo" width=500 controls>
   <source
@@ -5171,56 +5173,56 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 ```
 1.  WEBVTT
 2.  
-3.  00:00:01.000 \--\> 00:00:05.000
+3.  00:00:01.000 --> 00:00:05.000
 4.  These captions test some features of the WebVTT formats
 5.  
-6.  00:00:06.000 \--\> 00:00:10.000** line:5%**
+6.  00:00:06.000 --> 00:00:10.000 line:5%
 7.  This cue is positioned at the top of the video
 8.  
-9.  00:00:11.000 \--\> 00:00:15.000** position:5% align:start**
+9.  00:00:11.000 --> 00:00:15.000 position:5% align:start
 10. This cue is positioned at the left side of the video.
 11. 
-12. 00:00:16.000 \--\> 00:00:20.000 position:95%** align:end**
+12. 00:00:16.000 --> 00:00:20.000 position:95% align:end
 13. And this one ate the right side.
 14. 
-15. 00:00:21.000 \--\> 00:00:25.000** size:33%**
+15. 00:00:21.000 --> 00:00:25.000 size:33%
 16. This cue is only a third of the width of the video, hence the multiple line breaks.
 17. 
-18. 00:00:26.000 \--\> 00:00:30.000
-19. This cue contains **\<b\>**bold**\</b\>** text.
+18. 00:00:26.000 --> 00:00:30.000
+19. This cue contains <b>bold</b> text.
 20. 
-21. 00:00:31.000 \--\> 00:00:35.000
-22. This cue contains **\<i\>**italic**\</i\>** text.
+21. 00:00:31.000 --> 00:00:35.000
+22. This cue contains <i>italic</i> text.
 23. 
-24. 00:00:36.000 \--\> 00:00:40.000
-25. This cue contains **\<u\>** **\</u\>** text.
+24. 00:00:36.000 --> 00:00:40.000
+25. This cue contains <u> </u> text.
 26. 
-27. 00:00:41.000 \--\> 00:00:45.000
-28. This cue contains **\<b\>\<i\>\<u\>**bold, italic, underlined**\</u\>\</i\>\</b\>** text.
+27. 00:00:41.000 --> 00:00:45.000
+28. This cue contains <b><i><u>bold, italic, underlined</u></i></b> text.
 29. 
-30. 00:00:46.000 \--\> 00:00:50.000
-31. **\<c.myclass\>**This cue contains the class \"myclass\".
-32. Browsers that support ::cue CSS should make it red.**\</c\>**
+30. 00:00:46.000 --> 00:00:50.000
+31. <c.myclass>This cue contains the class "myclass".
+32. Browsers that support ::cue CSS should make it red.</c>
 33. 
-34. 00:00:51.000 \--\> 00:00:55.000
+34. 00:00:51.000 --> 00:00:55.000
 35. The following cue contains two voices.
 36. Tarzan should be blue and Jane green.
 37. 
-38. 00:00:56.000 \--\> 00:01:00.000
-39. \<v Tarzan\>Me Tarzan\...
-40. \<v Jane\>That would make me Jane!
+38. 00:00:56.000 --> 00:01:00.000
+39. <v Tarzan>Me Tarzan...
+40. <v Jane>That would make me Jane!
 41. 
 42. bigtext
-43. 00:01:01.000 \--\> 00:01:05.000
+43. 00:01:01.000 --> 00:01:05.000
 44. This cue has a unique id.
 45. Using CSS, its font size should be 150%.
 46. 
-47. 00:01:06.000 \--\> 00:01:10.000
-48. The \<00:01:06.333\>text \<00:01:06.666\>in \<00:01:07.000\>this \<00:01:07.333\>cue \<00:01:07.666\>should \<00:01:08.000\>grow
-49. \<00:01:08.333\>one \<00:01:08.666\>word \<00:01:09.000\>at \<00:01:09.333\>a \<00:01:09.666\>time
+47. 00:01:06.000 --> 00:01:10.000
+48. The <00:01:06.333>text <00:01:06.666>in <00:01:07.000>this <00:01:07.333>cue <00:01:07.666>should <00:01:08.000>grow
+49. <00:01:08.333>one <00:01:08.666>word <00:01:09.000>at <00:01:09.333>a <00:01:09.666>time
 50. 
-51. 00:01:11.000 \--\> 00:01:15.000
-52. That\'s it! For now\...
+51. 00:01:11.000 --> 00:01:15.000
+52. That's it! For now\...
 ```
 
 <h4>How to position the subtitles</h4>
@@ -9070,7 +9072,6 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 <br/>
 
 <h4>HTML</h4>
-
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -19630,4 +19631,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-01-2022 11:00pm</i></b></h3>
+<h3><b><i>08-02-2022 8:42am</i></b></h3>
