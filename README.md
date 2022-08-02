@@ -3150,7 +3150,7 @@ The HTML \<mark\> tag is used for indicating text as marked or highlighted for
 <li>Replace &lt;strong&gt; and &lt;em&gt; with &lt;mark&gt; when suitable.</li>
 </ul>
 
-<h5>Example 1: &lt;https://jsbin.com/tafelic/edit?html,output&gt;</h5>
+<h4>Example 1: &lt;https://jsbin.com/tafelic/edit?html,output&gt;</h4>
 
 <h4>Source code:</h4>
 
@@ -3167,7 +3167,7 @@ The HTML \<mark\> tag is used for indicating text as marked or highlighted for
 </html>
 ```
 
-<h5>Example 2:</h5>
+<h4>Example 2:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 52. another example for marking code (66) --------------------------->
@@ -3233,7 +3233,7 @@ Everyone knows the classic way to make hyperlinks, using \<a href=\"\...\"\>som
 1.  Content-type: text/html, text/plain, image/gif, image/jpg, etc.
 ```
 
-<h5>For example, HTML code such as this:</h5>
+<h4>For example, HTML code such as this:</h4>
 
 ```
 1.  <a href="toto.jpg">
@@ -3358,7 +3358,7 @@ We have also put the simplified <a href="https://jsbin.com/muluwey/1/edit?html,
 
 HTML5 gives us a new translate attribute. This attribute is used to limit the impact of  translation tools such as <a href="https://translate.google.com/">Google Translate</a> by prohibiting the translation of certain content. In many cases some parts of a document should not be translated.
 
-<h5>Use cases include:</h5>
+<h4>Use cases include:</h4>
 <ul>
 <li>HTML pages that contain source code: you would certainly not like to see the Java or PHP or whatever programming language parts of your page translated into another spoken language!</li>
 <li>Video game Web sites that propose cheat codes; the codes do not have to be translated,</li>
@@ -3525,7 +3525,7 @@ Let\'s have a look now at a (small) example of an about page. It renders as a ve
 
 <a href="https://jsbin.com/gunuzus/1/edit?html,output">Online example at JsBin</a>
 
-<h5>Source code:</h5>
+<h4>Source code:</h4>
 
 ```
 1.  <!DOCTYPE html>
@@ -3553,7 +3553,7 @@ Let\'s have a look now at a (small) example of an about page. It renders as a ve
 23. </html>
 ```
 
-<h5>Rendering of the page in a browser:</h5>
+<h4>Rendering of the page in a browser:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 59. rendering of michel buffa home page (73) -------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -3592,7 +3592,7 @@ The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> i
 &nbsp;
 <br/>
 
-<h5>And the JSON view of the microdata:</h5>
+<h4>And the JSON view of the microdata:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 62. json view of the microdata (74) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -3638,7 +3638,7 @@ We notice that one property, such as the address of a Person, may use another vo
 
 If you are a developer and if you are familiar with object oriented programming, think of properties as class attributes and think of vocabularies as classes.
 
-<h5>Vocabularies are meant to be shared</h5>
+<h4>Vocabularies are meant to be shared</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 63. picture of 'time to share' (76) ------------------------------->
@@ -3656,7 +3656,7 @@ However, if you do not find a vocabulary corresponding to your needs, keep in mi
 
 <h4>3 - Add properties using the itemprop attribute in HTML elements inside the container</h4>
 
-<h5>Basics:</h5>
+<h4>Basics:</h4>
 
 Now that you have defined a container element, you may add properties to the HTML inside:
 
@@ -3687,7 +3687,7 @@ Now that you have defined a container element, you may add properties to the HTM
 
 In this example, the container is a \<section\> that corresponds to a Person (we have one clue here: the name of the vocabulary given by the itemtype attribute), and each property defined inside this section is identified by the value of the itemprop attribute of sub-elements.
 
-<h5>The line:</h5>
+<h4>The line:</h4>
 
 ```
 1.  <dd itemprop="name"Michel Buffa</dd>
@@ -3695,13 +3695,13 @@ In this example, the container is a \<section\> that corresponds to a Person (
 
 \...defines a property called \"name\" that has a value of \"Michel Buffa\" (the text value between the opening and closing tags of the \<dd\> element).
 
-<h5>Nesting microdata items</h5>
+<h4>Nesting microdata items</h4>
 
 As we saw with the Person/Address example at the beginning of this chapter, it is possible to nest microdata items inside one another.
 
 Give an element inside a microdata container its own itemscope attribute with the recommended itemtype attribute for indicating the name of the vocabulary used by the nested microdata.
 
-<h5>Again, look at the Person/Address example:</h5>
+<h4>Again, look at the Person/Address example:</h4>
 
 ```
 1.  ...
@@ -3728,7 +3728,7 @@ Give an element inside a microdata container its own itemscope attribute wit
 
 The properties at *lines 8-12* refer to the address nested microdata (they are defined in the Address vocabulary, not the Person vocabulary), and \"France\" (*line 14*) is a property that refers to the Country vocabulary.
 
-<h5>Several properties with the same name but different values</h5>
+<h4>Several properties with the same name but different values</h4>
 
 It is possible to use the same property name several times in one microdata object, but with different values:
 ```
@@ -3743,7 +3743,7 @@ It is possible to use the same property name several times in one microdata obj
 ```
 This defines the fact that Michel Buffa has two online accounts, and the two properties have the name url, each with its own value.
 
-<h5>It is possible to set more than one property at once, with the same value</h5>
+<h4>It is possible to set more than one property at once, with the same value</h4>
 
 Here are some microdata that represent a song. In this example, at line 5 we set  two different properties: genre and keywords with the same value (see the [MusicRecording schema definition](https://schema.org/MusicRecording)):
 ```
@@ -3764,18 +3764,15 @@ Now, let\'s see what elements are compatible with the itemprop attribute and w
 If the itemprop attribute appears on a:
 
 Elements that can be associated with microdata
+
 | HTML5 elements | microdata value associated |
-| -------------- | -------------------------- |
-| &lt;a&gt;; &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, } The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person\'s photo and downloaded accordingly.
+| ---------------| ---------------------------|
+| &lt;a&gt;; &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, | The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person\'s photo and downloaded accordingly.
   &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt;  
   element |
-| ------------------------- | -------------- |
 | &lt;time&gt; element | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | &lt;meta&gt; element | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | anything else | The data is whatever is in the text of the element. |
-| --------------| --------------------------------------------------- |
 
 For example, the value of a property defined in an \<img\> element will be the value of the src attribute:
 
@@ -3808,7 +3805,7 @@ To automatically generate microdata for describing persons, restaurants, movie
 <li>The <a href="https://technicalseo.com/tools/schema-markup-generator/">Schema Markup Generator (JSON-LD)</a></li>
 </ul>
 
-<h5>Example:</h5>
+<h4>Example:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 64.  (xx) ------------------------------->
@@ -3832,7 +3829,7 @@ Click on these pages and look at the source code\...
 
 Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 online</a>.
 
-<h5>Structure:</h5>
+<h4>Structure:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 65.  (xx) ------------------------------->
@@ -3844,7 +3841,7 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 &nbsp;
 <br/>
 
-<h5>Microdata:</h5>
+<h4>Microdata:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 66.  (xx) ------------------------------->
@@ -3856,7 +3853,7 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 &nbsp;
 <br/>
 
-<h5>Example #2:</h5>
+<h4>Example #2:</h4>
 
 View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 online</a>.
 
@@ -3877,7 +3874,7 @@ View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 onlin
 Until 2012, it was only possible to integrate an audio or video player using the proprietary Flash technology, marketed by the company Macromedia (later acquired by Adobe). The \<video\> element of HTML5 is one of the three \"Flash killers\" (the others being \<audio\> for the sound and \<canvas\> for drawing and animation).\
 <i>(Note that Adobe [no longer supports Flash Player](https://www.adobe.com/products/flashplayer/end-of-life.html) since December 31, 2020)</i>
 
-<h5>Check the HTML code of the following CodePen:</h5>
+<h4>Check the HTML code of the following CodePen:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 68. simple html5 video player (82) ------------------------------->
@@ -3912,9 +3909,9 @@ While they use HTML5 to render their videos, these hosting sites (YouTube, etc
 
 Usually you have an \"embed\" button close to the videos that prompts you with some HTML code that you can copy and paste for embedding.
 
-<h5>An example using YouTube:</h5>
+<h4>An example using YouTube:</h4>
 
-<h5>Here is the HTML code you need to copy and paste in order to embed a video:</h5>
+<h4>Here is the HTML code you need to copy and paste in order to embed a video:</h4>
 
 ```
 1.  <iframe width="560" height="315" src="https://www.youtube.com/embed/WMFXg-kni0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -3948,7 +3945,7 @@ This is one of the main problems encountered in recent years: codec support was 
 
 <h3 id="ch2-2-2">2.2.2 The <audio> Element</h3>
 
-<h5>HTML5 audio is composed of several layers:</h5>
+<h4>HTML5 audio is composed of several layers:</h4>
 <ul>
 <li>The &lt;audio&gt; element is useful for embedding an audio player into a Web page. It is dedicated for <b>streamed audio. It is very similar to the &lt;video&gt; element, both in its use and in its API.</li>
 <li>The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.)</li>
@@ -4077,7 +4074,7 @@ Please move the mouse pointer over this player\'s elements: 
 
 Press Play to hear the horse ! 
 
-<h5>HTML source code:</h5>
+<h4>HTML source code:</h4>
 ```
 1.  <figure id="figaudio1">
 2.    <img id="imghorse" width="200"
@@ -4099,7 +4096,7 @@ Press Play to hear the horse ! 
 18. </figure>
 ```
 
-<h5>CSS source code:</h5>
+<h4>CSS source code:</h4>
 ```
 1.  #figaudio1 {
 2.      width : 420px;;
@@ -4162,7 +4159,7 @@ See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example onlin
 
 This example uses the pseudo CSS class :hover in order to track the mouseover event. On mouseover, it uses a CSS transition property that interpolates the changes in the scale and orientation of the video element (done using a transform CSS property).
 
-<h5>The corresponding HTML source code is:</h5>
+<h4>The corresponding HTML source code is:</h4>
 ```
 1.  <video <b>id="w3devCampusVideo"</b> autoplay controls>
 2.  
@@ -4175,7 +4172,7 @@ This example uses the pseudo CSS class :hover in order to track the mouseover
 9.  </video>
 ```
 
-<h5>... and the CSS source code is as follows:<h5>
+<h4>... and the CSS source code is as follows:<h4>
 ```
 1.  #w3devCampusVideo {
 2.      width: 300px;
@@ -4366,7 +4363,7 @@ header video {
 }
 ```
 
-<h5>The trick here is that:</h5>
+<h4>The trick here is that:</h4>
 
 1.  the video is in the header, and the header has a plotted transparent background image (\"dots.png\") that is repeated in X and Y (see *lines 8* and *9*).
 
@@ -4487,7 +4484,7 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link
 <h4> Here is a table that shows the most interesting methods, properties, and events provided by the \<video\> element API</h4>
 
 We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer! 
-| ------------------------------------------------------------------------
+| ------------------------------------------------------------------------|
 | <b>Methods</b> | <b>Properties</b> | <b>Events</b>|
 | -------------- | ----------------- | -------------|
 | <b>play()</b>  | <b>currentSrc</b> | <b>play</b> |
@@ -4533,7 +4530,7 @@ The JavaScript API is useful for implementing playlists, making custom user inte
 
 This example gives the first steps towards writing a custom video player. It shows basic usage of the JavaScript API for adding custom buttons to play/pause the video or to go back to the beginning by setting the currentTime property to zero.
 
-<h5>Try it online:</h5>
+<h4>Try it online:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 78.  ---------------------------------------->
@@ -4579,7 +4576,7 @@ This example gives the first steps towards writing a custom video player. It sho
 </script>
 ```
 
-<h5>Explanations:</h5>
+<h4>Explanations:</h4>
 <ul>
 <li><i>Lines 7, 9 and 11</i>: we add a click listener to each button, in order to call a JavaScript function when each button is clicked.</li>
 <li><i>Line 14</i>: using the DOM API, we get the JavaScript object that corresponds to the video element we inserted in the HTML document. This line is outside a function, it will be executed when the page loads.</li>
@@ -4676,7 +4673,7 @@ Check the online example below: use the progress cursor to go near the end of th
 </html>
 ```
 
-<h5>Explanations:</h5>
+<h4>Explanations:</h4>
 <ul>
 <li><i>Line 9</i>: the JavaScript array that contains the URLs of the videos in the playlist. In this example, we've got only two of them, but if the array is larger the example still works.</li>
 <li><i>Line 44</i>: when the page is loaded, an init() function is called.</li>
@@ -4705,7 +4702,7 @@ Please see this example online, originally written by <a href="https://christia
 
 Don\'t forget to click the JavaScript and CSS tabs of the CodePen in order to display the JavaScript code that creates the buttons on the right of the video, and the CSS that processes the different clicks and applies CSS3 transforms.
 
-<h5>This example shows a lot:</h5>
+<h4>This example shows a lot:</h4>
 <ul>
 <li>It uses the HTML5 elements &lt;nav&gt;, &lt;footer&gt;, &lt;header&gt;.</li>
 <li>It shows the use of CSS3 2D transformations (scale, translate, and rotate).</li>
@@ -4779,7 +4776,7 @@ Note that on mobile phones, the video does not start until the user presses the 
 
 As explained by the <a href="https://developer.apple.com/">Apple Developer Web site</a>:  \"The buffered property is a TimeRanges object: an array of start and stop times, not a single value. Consider what happens if the person watching the media uses the time scrubber to jump forward to a point in the movie that hasn't loaded yet---the movie stops loading and jumps forward to the new point in time, then starts buffering again from there. So the buffered property can contain an array of discontinuous ranges. The example simply seeks the end of the array and reads the last value, so it actually shows the percentage into the movie duration for which there is data. \"
 
-<h5>Source code extract:</h5>
+<h4>Source code extract:</h4>
 
 ```
 <!DOCTYPE html>
@@ -4867,11 +4864,11 @@ The accessibility features of TV programs often propose both options for people 
 
 <h4>Typical use: add a subtitle/caption track to a &lt;video&gt; element</h4>
 
-<h5>Important warning!!</h5>
+<h4>Important warning!!</h4>
 
 The \<track\> element cannot be used with a file:// URL. Please use https:// and a Web server. Your server must use a special MIME format for the .vtt files: text/vtt;charset=utf-8 (set by default on most servers now).
 
-<h5>Examples of the lines to add to an Apache Web server:</h5>
+<h4>Examples of the lines to add to an Apache Web server:</h4>
 ```
 1.  <Files mysubtitle.vtt>
 2.  ForceType text/vtt;charset=utf-8
@@ -4908,7 +4905,7 @@ The example uses a \<track\> element to insert basic *captions* to the video
 </video>
 ```
 
-<h5>Notes:</h5>
+<h4>Notes:</h4>
 <ul>
 <li>The &lt;track&gt; element at <i>line 9</i> has an attribute named kind that indicates the type of the track that is included. Possible values are: subtitles, captions, descriptions, chapters or metadata.</li>
 <li>The &lt;track&gt; element also has an attribute default that indicates that we want this track to be displayed by default when reading the video.</li>
@@ -5048,7 +5045,7 @@ Each \"element\" in this file has a starting and ending time, plus a value (the 
 
 <b>Each element is called \"a cue\"</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, in particular the getCueById() method of TextTrack objects.
 
-<h5>Example of a .vtt file with numeric IDs:</h5>
+<h4>Example of a .vtt file with numeric IDs:</h4>
 
 ```
 1.  9
@@ -5060,7 +5057,7 @@ Each \"element\" in this file has a starting and ending time, plus a value (the 
 7.  We want to hear what inspires you as a developer
 ```
 
-<h5>IDs may also be defined as strings, and values can use HTML as well:</h5>
+<h4>IDs may also be defined as strings, and values can use HTML as well:</h4>
 
 ```
 1.  Opening
@@ -5468,7 +5465,7 @@ For those of you interested in this particular topic, here is a very good resou
 
 <h4>Advantages and disadvantages of using a custom player</h4>
 
-<h5>Advantages of enhanced video players:</h5>
+<h4>Advantages of enhanced video players:</h4>
 
 <ul>
 <li>Support for all kinds of subtitle formats</li>
@@ -5483,7 +5480,7 @@ For those of you interested in this particular topic, here is a very good resou
 <li>And so on...</li>
 </ul>
 
-<h5>Advantages of relying only on the &lt;video&gt; element rather than on an enhanced player:</h5>
+<h4>Advantages of relying only on the &lt;video&gt; element rather than on an enhanced player:</h4>
 <ul>
 <li>Total control!</li>
 <li>No need for external dependencies</li>
@@ -5510,7 +5507,7 @@ Either solution (basic player or enhanced player) is good and HTML5 compliant.
 
 Popular players such as  [JWPlayer](https://www.jwplayer.com/) have many explanations and examples on their Web sites, and are either free of charge or come with free versions.
 
-<h5>Interesting comparisons and reviews are available on the following Web sites:</h5>
+<h4>Interesting comparisons and reviews are available on the following Web sites:</h4>
 
 -   Comparison matrix of most of [existing HTML5 video players](https://videosws.praegnanz.de/)
 
@@ -5746,7 +5743,7 @@ Code source:
 38. </html>
 ```
 
-<h5>Explanations:</h5>
+<h4>Explanations:</h4>
 
 -   *Lines 11-13*: we call navigator.getUserMedia. The parameters indicate that we want to capture the video and the audio from the current device (default Webcam). The call to getUserMedia returns an ES6 promise: the then(stream) method that follows.
 
@@ -6449,7 +6446,7 @@ Click \"start recording\", then press the play button on the video element on th
 
 <h4>1 - Create a mediaRecorder from a stream</h4>
 
-<h5>Source code extract:</h5>
+<h4>Source code extract:</h4>
 ```
 1.  var options = {mimeType: \'video/webm; codecs=vp9\'};
 2.  mediaRecorder = new MediaRecorder(stream, options);
@@ -6459,7 +6456,7 @@ Click \"start recording\", then press the play button on the video element on th
 
 <h4>2 - Add a "data handler" and call the start() method of the mediaRecorder object</h4>
 
-<h5>Source code extract:</h5>
+<h4>Source code extract:</h4>
 ```
 1.  var recordedChunks = \[\]; // will hold the recorded stream
 2.  mediaRecorder.ondataavailable = handleDataAvailable;
@@ -8467,15 +8464,15 @@ But let\'s start with a basic example!
 
 <h4>Explanations:</h4>
 
-1.  We have to **create a JavaScript Image object** (*line 10*),
+1.  We have to create a JavaScript Image object (<i>line 10</i>),
 
-2.  When we set the src attribute of this object with the URL of the image file, then **an asynchronous  request is sent in the background by the browser**. Loading a big image may take some time, so the rest of the JavaScript code continues running. This is why we call it \"asynchronous\".
+2.  When we set the src attribute of this object with the URL of the image file, then an asynchronous request is sent in the background by the browser. Loading a big image may take some time, so the rest of the JavaScript code continues running. This is why we call it \"asynchronous\".
 
-3.  When the image file has been loaded, **the browser calls the onload callback associated with the image** (*line 14*). 
+3.  When the image file has been loaded, the browser calls the onload callback associated with the image (<i>line 14</i>).
 
-4.  **We draw the image only from inside this callback**, otherwise we have no guarantee that the image has been loaded and can be usable. The actual drawing here is done *line 17*.
+4.  We draw the image only from inside this callback, otherwise we have no guarantee that the image has been loaded and can be usable. The actual drawing here is done *line 17*.
 
-5.  **There are numerous variants** of the drawImage(\...) context method at *line 17*
+5.  There are numerous variants of the drawImage(\...) context method at <i>line 17</i>
 
 -   drawImage(img, x, y): draws the image at position x, y, keeping the original image size.
 
@@ -8483,7 +8480,7 @@ But let\'s start with a basic example!
 
 -   drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh): for drawing sub-images, (sx, sy, sw, sh) define the source rectangle, while dx, dy, dw, sh define the target rectangle. If these rectangles don\'t have the same size, the source sub-image is resized.
 
-<h5>See picture below:</h5>
+<h4>See picture below:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 133. (xxx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -8575,7 +8572,7 @@ border:1px solid black;
 
 Sometimes, you may want to draw an image that is already declared in the HTML document as an <img src=\"\...\"\> element. Remember that when you add an \<img\> in the document, the browser starts downloading it in background. 
 
-<h5>You could try drawing it using some code like this:</h5>
+<h4>You could try drawing it using some code like this:</h4>
 ```
 1.  <body>
 2.  <canvas id="myCanvas" width="512" height="512"></canvas>
@@ -8591,7 +8588,7 @@ Sometimes, you may want to draw an image that is already declared in the HTML do
 12. </body>
 ```
 
-Although you will find many examples on the Web that do it this way, they will only work most of the time with small images, or with images that are in the browser\'s cache. Remember that** you cannot draw an image that has not been fully loaded!**
+Although you will find many examples on the Web that do it this way, they will only work most of the time with small images, or with images that are in the browser\'s cache. Remember that you cannot draw an image that has not been fully loaded!
 
 If you try to draw an image that is not loaded or partially loaded, you will have unexpected results!
 
@@ -8693,7 +8690,7 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 </html>
 ```
 
-The **[DOM Level 2 Events specification](https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents) **says: \"*The load event occurs when the DOM implementation finishes loading **all content** within a document, all frames within a FRAMESET, or an OBJECT element.*\"
+The **[DOM Level 2 Events specification](https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents) **says: \"*The load event occurs when the DOM implementation finishes loading all content within a document, all frames within a FRAMESET, or an OBJECT element.*\"
 
 <h3 id="ch3-3-4">3.3.4 Drawing Images from a Video Stream</h3>
 
@@ -9014,11 +9011,11 @@ A call to ctx.beginPath() will reset the buffer (empty its contents). We will 
 
 Summary of path mode principles
 
-1.  **Call drawing methods that work in path mode**, for example call ctx.rect(\...) instead of ctx.strokeRect(\...) or ctx.fillRect(\...)
+1.  Call drawing methods that work in path mode, for example call ctx.rect(\...) instead of ctx.strokeRect(\...) or ctx.fillRect(\...)
 
-2.  **Call ctx.stroke() or ctx.fill() to draw the buffer\'s contents**
+2.  Call ctx.stroke() or ctx.fill() to draw the buffer\'s contents
 
-3.  **Beware that the buffer is never emptied, **two consecutive calls to ctx.stroke() will draw the buffer contents twice! Instead, use ctx.beginPath() to empty it if needed
+3.  Beware that the buffer is never emptied, two consecutive calls to ctx.stroke() will draw the buffer contents twice! Instead, use ctx.beginPath() to empty it if needed
 
 4.  It is possible to empty the buffer by calling ctx.beginPath()
 
@@ -9026,13 +9023,13 @@ Summary of path mode principles
 
 <h3 id="ch3-4-2">3.4.2 A Warning</h3>
 
-**Warning**: you do not need to spend too much time on each part of this sub-section
+<b>Warning</b>: you do not need to spend too much time on each part of this sub-section
 
 You do not need to memorize or learn by heart all the examples in the following pages. They are given as references. There will be no quizzes about curves as they are not often done \"by hand\", but are generated by tools such as Adobe Illustrator or online generators.
 
--   **You need to draw arcs?** Then, please use the corresponding section as a reference: you know you will find one or more examples and a detailed explanation.
+-   You need to draw arcs? Then, please use the corresponding section as a reference: you know you will find one or more examples and a detailed explanation.
 
--   **You need to draw lines? Arrows? Curves?** Same thing: go to the corresponding pages and look at the examples!
+-   You need to draw lines? Arrows? Curves? Same thing: go to the corresponding pages and look at the examples!
 
 Also, do not forget to use your favorite HTML5 canvas cheatsheet (provided before in the last section). You will find it very helpful when you start playing with the canvas.
 
@@ -9060,7 +9057,7 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 
 <h4>Drawing a grid</h4>
 
-<h5>See the example below:</h5>
+<h4>See the example below:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!--- 136.  (xxx) -->
@@ -9133,7 +9130,7 @@ In this example, the entire grid is drawn during the execution of the last line 
 
 <h4>Mixing filled and wireframe shapes (and immediate and path modes)</h4>
 
-<h5>Try this:</h5>
+<h4>Try this:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!--- 137.  (xxx) -->
@@ -9444,7 +9441,7 @@ Sometimes, it might be useful to draw just one line.
 
 It\'s interesting to see how we can write a single \"draw line\" function that takes the start and end coordinates, the color, the line width, etc., and give the impression of being done in \"immediate\" mode.
 
-<h5>Here is the code for this "utility" function that you may find useful:</h5>
+<h4>Here is the code for this "utility" function that you may find useful:</h4>
 ```
 1.  function drawLine(x1, y1, x2, y2, color, width) {
 2.      ctx.save();
@@ -9582,7 +9579,7 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 39. }
 ```
 
-**Explanations:**
+<h4>Explanations:</h4>
 
 -   An arrow is made of one line (the arrow body) and three connected lines (the arrow head). 
 
@@ -9654,7 +9651,7 @@ drawArrow(ctx, 100, 10, 140, 140, 3, 'black');
 </html>
 ```
 
-<h5>Source code extract:</h5>
+<h4>Source code extract:</h4>
 
 ```
 1.  drawArrow(ctx, 10, 10, 100, 100, 10, 'red');
@@ -9686,7 +9683,7 @@ In a later part of the course dedicated to curve drawing in a canvas, we will al
 
 The ctx.closePath() method indicates that we would like a closed path: draw from the last point to the first.
 
-<h5>Try this:</h5>
+<h4>Try this:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--- 145.  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
@@ -9724,7 +9721,7 @@ ctx.stroke();
 </html>
 ```
 
-<h5>Source code:</h5>
+<h4>Source code:</h4>
 ```
 1.  var canvas=document.getElementById('myCanvas');
 2.  var ctx=canvas.getContext('2d');
@@ -9742,7 +9739,7 @@ ctx.stroke();
 14. ctx.stroke();
 ```
 
-<h5>Explanations:</h5>
+<h4>Explanations:</h4>
 
 -   *Lines 5-7* corresponds to a path made of two consecutive lines. If we just call stroke() after that, two lines will be drawn on the canvas.
 
@@ -9768,12 +9765,12 @@ The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is usefu
 
 <h4>Typical usage</h4>
 
-<h5>Typical usage for drawing an arc/circle/ellipse is:</h5>
+<h4>Typical usage for drawing an arc/circle/ellipse is:</h4>
 
 ```
 1.  ctx.arc(centerX, centerY, radius, startAngle, endAngle); // clockwise drawing
 2.  
-3.  ctx.arc(centerX, centerY, radius, startAngle, endAngle, **false**);
+3.  ctx.arc(centerX, centerY, radius, startAngle, endAngle, false**);
 ```
 
 The angles are in radians (between 0 and 2\*Math.PI). The arc is drawn clockwise. Beware that this may not seem natural if you\'re used to the trigonometric order.
@@ -9784,7 +9781,7 @@ The last parameter is optional and has a value of false by default. If true, 
 
 <h4> Example #1: drawing an arc with radius = 50, starting angle = 0, end angle = PI/2
 
-<h5>Try this example:</h5>
+<h4>Try this example:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--- 147.  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
@@ -9816,7 +9813,7 @@ ctx.stroke();
 </html\>
 ```
 
-<h5>Code source extract:</h5>
+<h4>Code source extract:</h4>
 ```
 1.  ctx.beginPath();
 2.  // we ommited the last parameter
@@ -9831,7 +9828,7 @@ And if we change the last parameter of the arc function call (*line 3*) to tr
 ```
 1.  ctx.beginPath();
 2.  // we omitted the last parameter
-3.  ctx.arc(100, 75, 50, 0, Math.PI/2, **true**);
+3.  ctx.arc(100, 75, 50, 0, Math.PI/2, true**);
 4.   
 5.  ctx.lineWidth = 10;
 6.  ctx.stroke();
@@ -9860,7 +9857,7 @@ Then, the result is the \"complementary\" of the previous arc:
 &nbsp;
 <br/>
 
-<h5>Source code:</h5>
+<h4>Source code:</h4>
 ```
 1.  var canvas = document.getElementById("myCanvas");
 2.  var ctx = canvas.getContext("2d");
@@ -9868,16 +9865,16 @@ Then, the result is the \"complementary\" of the previous arc:
 4.  var centerY = canvas.height / 2;
 5.  var radius = 70;
 6.  
-7.  **ctx.beginPath();**
+7.  ctx.beginPath();**
 8.  
 9.  // Add to the path a full circle (from 0 to 2PI)
-10. **ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);**
+10. ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);**
 11. 
 12. // With path drawing you can change the context
 13. // properties until a call to stroke() or fill() is performed
 14. ctx.fillStyle = "lightBlue";
 15. // Draws the filled circle in light blue
-16. **ctx.fill();**
+16. ctx.fill();**
 17. 
 18. // Prepare for the outline
 19. ctx.lineWidth = 5;
@@ -9885,9 +9882,9 @@ Then, the result is the \"complementary\" of the previous arc:
 21. 
 22. // draws the path (the circle) AGAIN, this
 23. // time in wireframe
-24. **ctx.stroke();**
+24. ctx.stroke();**
 25. 
-26. **// Notice we called ctx.arc() only once ! And drew it twice**
+26. **// Notice we called ctx.arc() only once ! And drew it twice
 27. **// with different styles**
 ```
 
@@ -9990,7 +9987,7 @@ context.stroke();
 </html>
 ```
 
-<h5>Source code extract:</h5>
+<h4>Source code extract:</h4>
 ```
 1.  context.beginPath();
 2.  context.moveTo(0, 20);
@@ -10003,7 +10000,7 @@ context.stroke();
 
 <h4>Example #2: draw A rounded rectangle</h4>
 
-<h5>Try this:</h5>
+<h4>Try this:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 154. (xxx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -10014,7 +10011,7 @@ context.stroke();
 &nbsp;
 <br/>
 
-<h5>HTML</h5>
+<h4>HTML</h4>
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -10054,7 +10051,7 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 </body>
 ```
 
-<h5>Source code:</h5>
+<h4>Source code:</h4>
 ```
 1.  var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke) {
 2.      ctx.beginPath();
@@ -10280,7 +10277,7 @@ The control point controls the curvature - if we move the control point farther 
 &nbsp;
 <br/>
 
-<h5>Source code:</h5>
+<h4>Source code:</h4>
 ```
 1.  var canvas=document.querySelector('#myCanvas1');
 2.  var context=canvas.getContext('2d');
@@ -10338,7 +10335,7 @@ context.stroke();
 </html>
 ```
 
-<h5>Source code:</h5>
+<h4>Source code:</h4>
 
 ```
 1.  context.beginPath();
@@ -10367,7 +10364,7 @@ We propose a useful function for drawing curved arrows. See this example:
 &nbsp;
 <br/>
 
-<h5>JS</h5>
+<h4>JS</h4>
 
 ```
 var canvas = document.querySelector('#myCanvas');
@@ -10413,7 +10410,7 @@ ctx.restore();
 }
 ```
 
-<h5>CSS</h5>
+<h4>CSS</h4>
 
 ```
 #myCanvas {
@@ -10421,7 +10418,7 @@ border: 1px solid black;
 }
 ```
 
-<h5>HTML</h5>
+<h4>HTML</h4>
 
 ```
 <!DOCTYPE html>
@@ -10436,7 +10433,7 @@ border: 1px solid black;
 </html>
 ```
 
-<h5>Source code of the function that draws a curved arrow:</h5>
+<h4>Source code of the function that draws a curved arrow:</h4>
 
 ```
 1.  function drawCurvedArrow(startPointX, startPointY,
@@ -10529,7 +10526,7 @@ The best way to understand how they work is to check out one of these interactiv
 
 <h4>Typical usage of Bézier curves</h4>
 
-<h5>Source code:</h5>
+<h4>Source code:</h4>
 
 ```
 1.  ctx.moveTo(contextX, contextY);
@@ -10543,7 +10540,7 @@ The best way to understand how they work is to check out one of these interactiv
 
 <h4>Examples</h4>
 
-<h5>Example #1</h5>
+<h4>Example #1</h4>
 
 Try this:
 
@@ -10557,7 +10554,7 @@ Try this:
 &nbsp;
 <br/>
 
-<h5>HTML</h5>
+<h4>HTML</h4>
 
 ```
 <!DOCTYPE html>
@@ -10588,7 +10585,7 @@ context.stroke();
 </html>
 ```
 
-<h5>Code source:</h5>
+<h4>Code source:</h4>
 
 ```
 1.  context.beginPath();
@@ -10603,7 +10600,7 @@ context.stroke();
 
 <h4>Example #2: path with bezier curve, quadratic curve and line in the same, closed path</h4>
 
-<h5>Try this:</h5>
+<h4>Try this:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------- 164.  (xxx) ------------>
@@ -10615,7 +10612,7 @@ context.stroke();
 &nbsp;
 <br/>
 
-<h5>HTML</h5>
+<h4>HTML</h4>
 
 ```
 <!DOCTYPE html>
@@ -10644,7 +10641,7 @@ context.stroke();
 </body>
 ```
 
-<h5>Extract from source code:</h5>
+<h4>Extract from source code:</h4>
 
 ```
 1.  context.beginPath();
@@ -10713,7 +10710,7 @@ Here is an example that shows how to draw different filled rectangles in blue, w
    alt="Example" />
 </p>
 
-<h5>HTML</h5>
+<h4>HTML</h4>
 
 ```
 <!DOCTYPE html>
@@ -10813,7 +10810,7 @@ border: 1px solid black;
 </html>
 ```
 
-<h5>A linear gradient is seen as an "invisible" rectangle in which a set of colors are interpolated along a line.</h5>
+<h4>A linear gradient is seen as an "invisible" rectangle in which a set of colors are interpolated along a line.</h4>
 
 The gradient becomes visible when we draw shapes on top of the invisible gradient, and when the fillStyle or strokeStyle property has for value this gradient.
 
@@ -16895,7 +16892,7 @@ Homepage (URL): \
 Phone number: \
 Submit form
 
-<h5>Bottom of Form</h5>
+<h4>Bottom of Form</h4>
 
 <h4>Extract from source code:</h4>
 
@@ -16941,7 +16938,7 @@ Same example on FireFox, the title attribute is ignored:
 &nbsp;
 <br/>
 
-<h5>The built-in validation system is an improvement on what existed before HTML5 (i.e., nothing), but additional work is required if you want fully localized, hand-made validation feedback.</h5>
+<h4>The built-in validation system is an improvement on what existed before HTML5 (i.e., nothing), but additional work is required if you want fully localized, hand-made validation feedback.</h4>
 
 <h4>We will show solutions in the last section of this week's course.</h4>
 
@@ -16974,7 +16971,7 @@ Submit
 
 Bottom of Form
 
-<h5>Extract from source code:</h5>
+<h4>Extract from source code:</h4>
 
 ```
 1.  <!DOCTYPE html>
@@ -17017,7 +17014,7 @@ Bottom of Form
 38. </html>
 ```
 
-<h5>Explanations:</h5>
+<h4>Explanations:</h4>
 
 The validity API proposes a setCustomValidity() method available on input DOM objects. This method allows you to customize error messages. It takes a string parameter. When this string is empty, the element is considered *valid*, when the string is not empty, the field is *invalid* and the validation error message displayed in the bubble will be equal to that string.
 
@@ -17062,7 +17059,7 @@ Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JS
 &nbsp;
 <br/>
 
-<h5>Source code:</h5>
+<h4>Source code:</h4>
 ```
 1.  \<!DOCTYPE html\>
 2.  \<html lang=\"en\"\>
