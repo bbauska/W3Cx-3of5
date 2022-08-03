@@ -4464,26 +4464,26 @@ Note that in order to play the video, you must click on the \"vid.play()\" text.
 <h3 id="ch2-2-6">2.2.6 The JavaScript API</h3>
 
 <h4>Methods, properties, and events</h4>
+<p>
+The JavaScript API gives you powerful tools to manipulate the &lt;video&gt; element, as the video object provides many properties, methods and events.
 
-The JavaScript API gives you powerful tools to manipulate the \<video\> element, as the video object provides many properties, methods and events.
+The complete list of events can be found in the <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#event-definitions">HTML5 living standard specification</a>.
 
-The complete list of events can be found in the [HTML5 living standard specification](https://html.spec.whatwg.org/multipage/embedded-content.html#event-definitions).
-
-The list of properties can be found at the [W3C HTML5 Video Events and API](https://www.w3.org/2010/05/video/mediaevents.html) page. This page is interesting for Web developers because it shows an interactive view of the different values and events changing over time while the video is playing within the page.
+The list of properties can be found at the <a href="https://www.w3.org/2010/05/video/mediaevents.html">W3C HTML5 Video Events and API</a> page. This page is interesting for Web developers because it shows an interactive view of the different values and events changing over time while the video is playing within the page.
 
 Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link</a>, and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 77.  (xx) ------------------------------->
+<!----------------------------- 77. html5 video events and api (95) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image077.png?raw=true"
-   alt=""
+   alt="HTML5 video events and API."
    width="65%">
 &nbsp;
 <br/>
 
-<h4> Here is a table that shows the most interesting methods, properties, and events provided by the \<video\> element API</h4>
+<h4> Here is a table that shows the most interesting methods, properties, and events provided by the &lt;video&gt; element API</h4>
 
 We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer! 
 | ------------------------------------------------------------------------|
@@ -4535,24 +4535,25 @@ This example gives the first steps towards writing a custom video player. It sho
 <h4>Try it online:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 78.  ---------------------------------------->
+<!-------------------------------- 78. example video player (97) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image078.png?raw=true"
-   alt=""
+   alt="This example gives the first steps towards writing a custom video player."
    width="65%" />
 &nbsp;
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 79.  ---------------------------------------->
+<!----------------------------- 79. example of custom controls (97) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image079.png?raw=true"
-   alt=""
+   alt="Example of custom controls."
    width="45%" />
 &nbsp;
 
 <h4>Source code extract:</h4>
+
 ```
 <video id="vid" controls>
 <source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
@@ -4591,11 +4592,11 @@ This example gives the first steps towards writing a custom video player. It sho
 This example listens to the ended event, and calls a callback function when the video is ended.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 80.  ---------------------------------------->
+<!------------------ 80. example calls a callback function when video ends (98) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image080.png?raw=true"
-   alt=""
+   alt="This example listens to the ended event, and calls a callback function when the video is ended."
    width="65%" />
 &nbsp;
 
