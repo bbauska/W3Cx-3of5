@@ -4,10 +4,10 @@
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- readme.md of W3Cx-3of5-HTML5.1x -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- w3cx logo (01) --------------------------------------->
+<!--------------------------------------- w3cx logo (01) ----------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/w3c-logo.png?raw=true"
+<img src="./images/w3cx-logo.jpg?raw=true"
    width="35%"
    alt="W3C logo" />
 </p>
@@ -103,10 +103,12 @@
 <li>Course tools</li>
 <li>About W3C and the Web</li>
 </ul>
-
+<p>
 W3C has designed a <a href="https://www.edx.org/professional-certificate/front-end-web-developer-9" target="_blank">"Front-End Web Developer" (FEWD) Professional Certificate</a> where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript.
 
 The <b>W3C FEWD</b> program is composed of 5 courses:
+</p>
+
 <ol type="1">
 <li>CSS Basics</li>
 <li>5.0x HTML5 and CSS Fundamentals</li>
@@ -115,16 +117,16 @@ The <b>W3C FEWD</b> program is composed of 5 courses:
 <li>JavaScript Introduction</li>
 </ol>
 
-This course is a natural follow up to the <a href="https://www.edx.org/course/css-basics" target="_blank">CSS Basics</a> and <a href="https://www.edx.org/course/html5-and-css-fundamentals" target="_blank">HTML5 & CSS Fundamentals</a> courses.
+<p>This course is a natural follow up to the <a href="https://www.edx.org/course/css-basics" target="_blank">CSS Basics</a> and <a href="https://www.edx.org/course/html5-and-css-fundamentals" target="_blank">HTML5 & CSS Fundamentals</a> courses.</p>
 
-As such, required prerequisites are:
+<p>As such, required prerequisites are:</p>
 <ul>
 <li>Be comfortable putting together an HTML document,</li>
 <li>Have minimal familiarity with CSS,</li>
 <li>Basic knowledge of JavaScript and DOM APis is sufficient, and this course will include a recap of basics. You are also more than welcome to follow the <a href="https://www.edx.org/course/javascript-introduction" target="_blank">JavaScript Introduction</a> course (introductory level).</li>
 </ul>
 
-During this course, you will learn:
+<h4>During this course, you will learn:</h4>
 <ul>
 <li>Learn the simplified HTML5 tags, and how to use microdata,</li>
 <li>Play with the audio and video tags,</li>
@@ -148,11 +150,11 @@ The HTML5 course team is thrilled to guide you in your learning experience. We a
 <a href="https://css-tricks.com/video-screencasts/112-using-codepen/" target="_blank">CodePen CSS Tutorial</a>
 
 <h4>Web Editors:</h4>
-
+<p>
 While any text editor, like NotePad or TextEdit, can be used to create Web pages, they don't necessarily offer a lot of help towards that end. Other options offer more facilities for error checking, syntax coloring and saving some typing by filling things out for you.
 
 Here are a few possibilities for Web editors:
-
+</p>
 <ul>
 <li><a href="https://notepad-plus-plus.org/" target="_blank">Notepad</a> - on Windows PC&apos;s.</li>
 <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> - a free open source editor that can run on any operating system. Many developers are already familiar with Visual Studio Code. Many coding videos in this course are demonstrated using Visual Studio Code.</li>
@@ -3389,17 +3391,17 @@ Using the translate=\"no\" attribute should prevent this behavior\...
 2.  from the University of Nice,France.
 ```
 
-Will be correctly translated into French by:
+<p>Will be correctly translated into French by:</p>
 
 ```
 1.  "[Michel Ham] est un professeur de l'Université de Nice, France."
 ```
 
-\...where all of the end of the sentence has been translated except the author\'s name.
+<p>...where all of the end of the sentence has been translated except the author's name.</p>
 
 <h4>Inheritance between elements</h4>
 
-When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true.
+<p>When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true.</p>
 
 ```
 1.  <p translate="no">This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>. This is the end of the paragraph\...</p>
@@ -3453,7 +3455,8 @@ This information is not visible to humans: it is pure *semantic information*. 
 22. </section>
 ```
 
-We can also add another embedded data item in the middle, such as the person\'s address:
+<p>We can also add another embedded data item in the middle, such as the person\'s address:</p>
+
 ```
 1.  ...
 2.  </dl>
@@ -7577,6 +7580,7 @@ ctx.restore();
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -7633,25 +7637,26 @@ Your browser does not support the canvas tag.
 ```
 
 <h4>JavaScript code extract:</h4>
+
 ```
 1.  ctx.translate(100, 100);
 2.  drawMonster(0, 0);
 ```
 
-*Line 1* changes the position of the coordinate system, *line 2* draws a monster in the new translated coordinate system. All subsequent calls to drawing methods will be affected and will work in this new system too.
+<i>Line 1</i> changes the position of the coordinate system, <i>line 2</i> draws a monster in the new translated coordinate system. All subsequent calls to drawing methods will be affected and will work in this new system too.
 
 <ul>
-<li>/<h4> Other transformations: rotate, scale</h4></li>
+<li><h4> Other transformations: rotate, scale</h4></li>
 </ul>
 
-There are other transformations available:
+<h5>There are other transformations available:</h5>
 <ul>
-<li>ctx.rotate(angle), with angle in radians. Note that the order of transformations is important: usually we translate, then rotate, then scale\... If you change this order, you need to know what you are doing\...</li>
-<li>ctx.scale (sx, sy), where scale(1, 1) corresponds to \"no zoom\", scale(2, 2) corresponds to \"zooming 2x\" and scale(0.5, 0.5) corresponds to zooming out to see the drawings half as big as before. If you do not use the same values for sx and sy, you do \"asymmetric scaling\", you can distort a shape horizontally or vertically. Try changing the values in the source code of the next online examples.</li>
+<li>ctx.rotate(angle), with angle in radians. Note that the order of transformations is important: usually we translate, then rotate, then scale\... If you change this order, you need to know what you are doing...</li>
+<li>ctx.scale (sx, sy), where scale(1, 1) corresponds to "no zoom", scale(2, 2) corresponds to "zooming 2x" and scale(0.5, 0.5) corresponds to zooming out to see the drawings half as big as before. If you do not use the same values for sx and sy, you do "asymmetric scaling", you can distort a shape horizontally or vertically. Try changing the values in the source code of the next online examples.</li>
 </ul>
-
+<p>
 Here is the previous example, but this time we translated the coordinate system, then rotated it with an angle equal to PI/4 , then we scaled it so that units are half as big:
-
+</p>
 <h4>JS</h4>
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -7983,9 +7988,8 @@ We slightly modified the function that draws the monster:
 <li>We restored it at the end (BEST PRACTICE).</li>
 </ul>
 
-<~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 132. laptop showing unicorn validator (06) --------------------------->
+<!------------------------- 132. laptop showing unicorn validator (06) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image132.jpeg?raw=true"
@@ -7993,7 +7997,7 @@ We slightly modified the function that draws the monster:
    width="40%" />
 </p>
 
-Source code extract of this function: notice at *lines 3 *and* 26* how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (l*ines 7-8*). The rest of the code is nearly the same as in the last version of the monster example.
+<p>Source code extract of this function: notice at *lines 3 *and* 26* how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines 7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
 
 ```
 1.  function drawMonster(x, y, angle, headColor, eyeColor) {
@@ -8026,18 +8030,18 @@ Source code extract of this function: notice at *lines 3 *and* 26* how we sa
 ```
 
 <h3 id="ch3-3-1">3.3.1 Immediate Mode</h3>
-
+<p>
 In the previous sections, we learned how to draw filled or wireframe rectangles.
 
-As soon as the ctx.strokeRect(x, y, width, height) or the ctx.fillRect(x, y, width, height) method is called, a rectangle is indeed drawn *immediately* in the canvas. 
+As soon as the ctx.strokeRect(x, y, width, height) or the ctx.fillRect(x, y, width, height) method is called, a rectangle is indeed drawn <i>immediately</i> in the canvas. 
 
-While drawing rectangles with strokeRect or fillRect, drawing text or drawing images, all these shapes will be drawn in *immediate mode*.
+While drawing rectangles with strokeRect or fillRect, drawing text or drawing images, all these shapes will be drawn in <i>immediate mode</i>.
 
-Another mode called \"path mode\" or \"buffered mode\" will be seen later in this course, which will be useful for drawing lines, curves, arcs, and also rectangles. Rectangles are the only shapes that have methods for drawing them *immediately* and also other methods for drawing them in \"*path/buffered mode*\".
-
+Another mode called "path mode" or "buffered mode" will be seen later in this course, which will be useful for drawing lines, curves, arcs, and also rectangles. Rectangles are the only shapes that have methods for drawing them <i>immediately</i> and also other methods for drawing them in "<i>path/buffered mode</i>".
+</p>
 <h4>Example: drawing rectangles in immediate mode using bests practices</h4>
 
-Let\'s give an example that draws several rectangles, filled or wireframe, with different colors and line widths:
+<p>Let's give an example that draws several rectangles, filled or wireframe, with different colors and line widths:</p>
 
 <h4>HTML</h4>
 
@@ -19631,4 +19635,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-02-2022 8:42am</i></b></h3>
+<h3><b><i>08-01-2022 11:00pm</i></b></h3>
