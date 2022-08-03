@@ -1911,11 +1911,10 @@ aside .tag-cloud {
 }
 ...
 ```
-
-We used a float:right CSS rule to put the tag cloud on the right\... In a following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
-
+<p>
+We used a float:right CSS rule to put the tag cloud on the right... In a following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
+</p>
 <h4>Here is the result:</h4>
-
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 19. image of the tag cloud defined as an aside element (40) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -1927,7 +1926,6 @@ We used a float:right CSS rule to put the tag cloud on the right\... In a foll
 <br/>
 
 <h4>Add a &lt;footer&gt; at the end of the blog</h4>
-
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 20. image of the tag cloud defined as an aside element (40) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -1993,13 +1991,13 @@ footer {
    width="25%" />
 &nbsp;
 <br/>
-
-It may not be clear whether a \<section\> may contain one or several \<article\> elements or if an \<article\> may contain one or several \<section\> elements.
+<p>
+It may not be clear whether a &lt;section&gt; may contain one or several &lt;article&gt; elements or if an &lt;article&gt; may contain one or several &lt;section&gt; elements.
+</p>
 <ul>
-<li>The <article> element was designed for stand-alone parts of a document that could eventually be syndicated in RSS streams.</li>
+<li>The &lt;article&gt; element was designed for stand-alone parts of a document that could eventually be syndicated in RSS streams.</li>
 <li> <section> elements are used to cut a logical part into subparts.</li>
 </ul>
-<br/>
 
 <h4>An &lt;article&gt; may be cut into different &lt;section&gt; elements!</h4>
 
@@ -2018,11 +2016,11 @@ It may not be clear whether a \<section\> may contain one or several \<article
    </section>
 </article>
 ```
+<p>
+The blog example from the previous part of the course, on the other hand, uses a single &lt;section&gt; that contains several &lt;article&gt; elements.
 
-The blog example from the previous part of the course, on the other hand, uses a single \<section\> that contains several \<article\> elements.
-
-Indeed, we can also have a \<section\> that regroups all blog posts per month, each one being an \<article\> element.
-
+Indeed, we can also have a &lt;section&gt; that regroups all blog posts per month, each one being an &lt;article&gt; element.
+</p>
 <h4>A &lt;section&gt; may be cut into different &lt;article&gt; elements, too!</h4>
 
 <h4>Can you put a &lt;nav&gt; in an &lt;article&gt;?</h4>
@@ -3613,34 +3611,35 @@ The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> i
 
 <h4>Basic steps</h4>
 
-Adding microdata to an HTML page is a really simple task and requires only three attributes: itemscope, itemtype  and itemprop.
+<p>Adding microdata to an HTML page is a really simple task and requires only three attributes: itemscope, itemtype  and itemprop.</p>
 
 <h4>1 - Define a container element by adding an itemscope attribute</h4>
 
-First, you need to add an itemscope attribute to an HTML element. This will define the \"global object\" for which we will define properties. This element can be of different types that we will describe later, but for now let us keep looking at the same example we used in previous sections:
+<p>First, you need to add an itemscope attribute to an HTML element. This will define the "global object" for which we will define properties. This element can be of different types that we will describe later, but for now let us keep looking at the same example we used in previous sections:</p>
 
 ```
 1.  <section itemscope itemtype="https://schema.org/Person">
 2.  ...
 3.  </section>
 ```
-
+<p>
 We will look at the itemtype attribute later. Now that we have defined a global wrapper object/element (a Person in this case), we can  add properties inside this element to define the first name, last name, etc.
+</p>
 
 <h4>2 - Specify the vocabulary used for your microdata with the itemtype attribute of the container element</h4>
-
+<p>
 HTML5 proposes semantic elements for representing sections, articles, headers, etc, but it does not propose any specific elements or attributes to describe an address, a product, a person, etc.
 
-We need a special vocabulary to represent a person or a physical address. With microdata you can define your own vocabulary or better, reuse one of the existing popular vocabularies, such as [schema.org](https://schema.org/). 
+We need a special vocabulary to represent a person or a physical address. With microdata you can define your own vocabulary or better, reuse one of the existing popular vocabularies, such as <a href="https://schema.org/">schema.org</a>. 
 
-Microdata works with properties defined as name/value pairs. The names are defined in the corresponding vocabulary. For example, the vocabulary for representing a [Person](https://schema.org/Person) defines a set of property names.
+Microdata works with properties defined as name/value pairs. The names are defined in the corresponding vocabulary. For example, the vocabulary for representing a <a href="https://schema.org/Person">Person</a> defines a set of property names.
 
-As you can see in this small extract from the vocabulary (also called a \"schema\"), a Person can have a name (some text), an Address (the type is defined by another vocabulary named PostalAddress), an affiliation (defined by another vocabulary named Organization) and so on.
+As you can see in this small extract from the vocabulary (also called a "schema"), a Person can have a name (some text), an Address (the type is defined by another vocabulary named PostalAddress), an affiliation (defined by another vocabulary named Organization) and so on.
 
 We notice that one property, such as the address of a Person, may use another vocabulary. Yes, a vocabulary may link to another vocabulary! There is also inheritance between vocabularies! The above screenshot shows that the Person vocabulary inherits from a Thing vocabulary, and the five first properties of the table come from this vocabulary that describes things.
 
 If you are a developer and if you are familiar with object oriented programming, think of properties as class attributes and think of vocabularies as classes.
-
+</p>
 <h4>Vocabularies are meant to be shared</h4>
 
 <!------------------------------------------------------------------------------------------------>
@@ -3652,16 +3651,16 @@ If you are a developer and if you are familiar with object oriented programming,
    width="25%">
 &nbsp;
 <br/>
-
+<p>
 If one of the existing vocabularies available at the schema.org Web site fits your needs, you should reuse it, as the most popular vocabularies are becoming de facto standards and will be taken into account by Web crawlers, browsers, and browser extensions.
 
 However, if you do not find a vocabulary corresponding to your needs, keep in mind that anyone can define a microdata vocabulary and start embedding custom properties in their own Web pages. You need to define a namespace and put a description of your vocabulary in a Web page that has the name of your vocabulary.
-
+</p>
 <h4>3 - Add properties using the itemprop attribute in HTML elements inside the container</h4>
 
 <h4>Basics:</h4>
 
-Now that you have defined a container element, you may add properties to the HTML inside:
+<p>Now that you have defined a container element, you may add properties to the HTML inside:</p>
 
 ```
 1.  <section itemscope itemtype="https://schema.org/Person">
@@ -3695,9 +3694,9 @@ In this example, the container is a \<section\> that corresponds to a Person (
 ```
 1.  <dd itemprop="name"Michel Buffa</dd>
 ```
-
-\...defines a property called \"name\" that has a value of \"Michel Buffa\" (the text value between the opening and closing tags of the \<dd\> element).
-
+<p>
+...defines a property called "name" that has a value of "Michel Buffa" (the text value between the opening and closing tags of the &lt;dd&gt; element).
+</p>
 <h4>Nesting microdata items</h4>
 
 As we saw with the Person/Address example at the beginning of this chapter, it is possible to nest microdata items inside one another.
@@ -14519,28 +14518,29 @@ First name:![](./images/image218.wmf)
 
 <h4>Source code:</h4>
 
-Bottom of Form
+<p>Bottom of Form</p>
+
 ```
-1.  \<label for=\"first_name\"\>Your First Name\</label\>
-2.  \<input id=\"first_name\" type=\"text\" name=\"fname\"/\>
+1.  <label for="first_name">Your First Name</label>
+2.  <input id="first_name" type="text" name="fname"/>
 ```
 
 <h4>Example #2</h4>
-
-Note that you can also include the \<input\> element inside the \<label\>\...\</label\> element, and also add a \<span lang=\"en\"\> for example, to indicate the language used in the label. Sometimes, [nesting labels and inputs can also make CSS styling easier and produce better results with screen readers](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#The_%3Clabel%3E_element).
-
+<p>
+Note that you can also include the &lt;input&gt; element inside the &lt;label&gt;...&lt;label&gt; element, and also add a &lt;span lang="en"&gt; for example, to indicate the language used in the label. Sometimes, <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#The_%3Clabel%3E_element">[nesting labels and inputs can also make CSS styling easier and produce better results with screen readers</a>.
+</p>
 <h4>Source code (with &lt;input&gt; inside the &lt;label&gt;):</h4>
+
 ```
-1.  **\<label for=\"first_name\"\>\<span lang=en\"\>**Your First Name**\</span\>**
-2.  \<input id=\"first_name\" type=\"text\" name=\"fname\"/\>
-3.  **\</label\>**
+1.  <label for=first_name"><span lang=en">Your First Name</span>
+2.  <input id="first_name" type="text" name="fname"/>
+3.  </label>
 ```
 
 <h4>Example #3</h4>
-
-Click on the label \"Subscribe to newsletter\" to see what this does.
-
-Top of Form
+<p>
+Click on the label "Subscribe to newsletter" to see what this does.
+</p>
 
 First name:![](./images/image218.wmf)\
 Subscribe to newsletter![](./images/image219.wmf)
@@ -14601,11 +14601,11 @@ Grouping needs to be carried out visually and in the code, for example, by using
 
 In the example below, there are three radio buttons that allow the user to choose an output format. Radio button groups should always be grouped using \<fieldset\>.
 
-Top of Form
+Output format:
 
-Output format![](./images/image222.wmf)Text file\
+![](./images/image222.wmf)Text file
 
-![](./images/image222.wmf)CSV file\
+![](./images/image222.wmf)CSV file
 
 ![](./images/image222.wmf)HTML file
 
@@ -16800,9 +16800,9 @@ Here is an [online example at JSBin](https://jsbin.com/palifuy/edit?html,output
 
 Top of Form
 
-Type invalid values and submit form to see the resultE-mail: \
-Homepage (URL): \
-Phone number: \
+Type invalid values and submit form to see the resultE-mail: 
+Homepage (URL): 
+Phone number: 
 Submit form
 
 <b>Bottom of Form</b>
@@ -16855,9 +16855,9 @@ Try this [online example at JSBin](https://jsbin.com/zaxije/2/edit) or try it 
 
 Top of Form
 
-Type invalid values and see the resultE-mail: \
-Homepage (URL): \
-Phone number: \
+Type invalid values and see the resultE-mail: 
+Homepage (URL): 
+Phone number: 
 Submit form
 
 **Bottom of Form**
@@ -16893,9 +16893,9 @@ Try the <a href="https://jsbin.com/locedoy/1/edit?html,output">online example a
 
 Top of Form
 
-Type invalid values and see the result, this time with custom messages! E-mail: \
-Homepage (URL): \
-Phone number: \
+Type invalid values and see the result, this time with custom messages! E-mail: 
+Homepage (URL): 
+Phone number: 
 Submit form
 
 <h4>Bottom of Form</h4>
@@ -19635,4 +19635,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-01-2022 11:00pm</i></b></h3>
+<h3><b><i>08-02-2022 10:35pm</i></b></h3>
