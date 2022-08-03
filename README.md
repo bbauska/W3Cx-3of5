@@ -3611,7 +3611,7 @@ The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> i
 
 <h4>Basic steps</h4>
 
-<p>Adding microdata to an HTML page is a really simple task and requires only three attributes: itemscope, itemtype  and itemprop.</p>
+<p>Adding microdata to an HTML page is a really simple task and requires only three attributes: <b>itemscope, itemtype</b>  and <b>itemprop</b>.</p>
 
 <h4>1 - Define a container element by adding an itemscope attribute</h4>
 
@@ -3686,23 +3686,25 @@ However, if you do not find a vocabulary corresponding to your needs, keep in mi
 21.      </ul>
 22. </section>
 ```
-
+<p>
 In this example, the container is a \<section\> that corresponds to a Person (we have one clue here: the name of the vocabulary given by the itemtype attribute), and each property defined inside this section is identified by the value of the itemprop attribute of sub-elements.
-
+</p>
 <h4>The line:</h4>
 
 ```
 1.  <dd itemprop="name"Michel Buffa</dd>
 ```
+
 <p>
 ...defines a property called "name" that has a value of "Michel Buffa" (the text value between the opening and closing tags of the &lt;dd&gt; element).
 </p>
+
 <h4>Nesting microdata items</h4>
 
-As we saw with the Person/Address example at the beginning of this chapter, it is possible to nest microdata items inside one another.
+<p>As we saw with the Person/Address example at the beginning of this chapter, it is possible to nest microdata items inside one another.
 
 Give an element inside a microdata container its own itemscope attribute with the recommended itemtype attribute for indicating the name of the vocabulary used by the nested microdata.
-
+</p>
 <h4>Again, look at the Person/Address example:</h4>
 
 ```
@@ -3727,12 +3729,13 @@ Give an element inside a microdata container its own itemscope attribute wit
 19. 
 20. ...
 ```
-
-The properties at *lines 8-12* refer to the address nested microdata (they are defined in the Address vocabulary, not the Person vocabulary), and \"France\" (*line 14*) is a property that refers to the Country vocabulary.
-
+<p>
+The properties at <i>lines 8-12</i> refer to the address nested microdata (they are defined in the Address vocabulary, not the Person vocabulary), and "France" (<i>line 14</i>) is a property that refers to the Country vocabulary.
+</p>
 <h4>Several properties with the same name but different values</h4>
 
-It is possible to use the same property name several times in one microdata object, but with different values:
+<p>It is possible to use the same property name several times in one microdata object, but with different values:</p>
+
 ```
 1.  ...
 2.  <h1>My different online public accounts</h1>
@@ -3743,11 +3746,13 @@ It is possible to use the same property name several times in one microdata obj
 7.        Buffa's blog</a></li>
 8.  </ul>
 ```
+<p>
 This defines the fact that Michel Buffa has two online accounts, and the two properties have the name url, each with its own value.
 
 <h4>It is possible to set more than one property at once, with the same value</h4>
-
-Here are some microdata that represent a song. In this example, at line 5 we set  two different properties: genre and keywords with the same value (see the [MusicRecording schema definition](https://schema.org/MusicRecording)):
+<p>
+Here are some microdata that represent a song. In this example, at line 5 we set  two different properties: genre and keywords with the same value (see the <a href="https://schema.org/MusicRecording">MusicRecording schema definition</a>):
+</p>
 ```
 1.  <div itemscope itemtype="https://schema.org/MusicRecording">
 2.  <h2>The song I just published</h2>
@@ -3757,10 +3762,11 @@ Here are some microdata that represent a song. In this example, at line 5 we
 6.  </ul>
 7.  </div>
 ```
-And so on\...
 
-Now, let\'s see what elements are compatible with the itemprop attribute and where the values of the properties are located, depending on each element type.
+<p>And so on...
 
+Now, let's see what elements are compatible with the itemprop attribute and where the values of the properties are located, depending on each element type.
+</p>
 <h4>The HTML elements compatible with the itemprop attribute</h4>
 
 If the itemprop attribute appears on a:
