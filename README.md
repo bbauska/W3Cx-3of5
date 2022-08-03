@@ -18795,34 +18795,34 @@ This first example is useful for forms that allow the user to select one or more
 <h4>Source code extract:</h4>
 
 ```
-> function drawImage(imageFile) {
->    var reader = new FileReader();
->  
->    //capture the file information.
->    reader.onload = function(e) {
->       // For drawing an image on a canvas we
->       // need an image object
->       var img = new Image();
->       // Even if the file has been read, decoding
->       // the dataURL format may take some time
->       // so we need to use the regular way of
->       // working with images: onload callback    
->       // that will be called after setting the src attribute
->       img.onload = function(e) {
->          // draw the image!
->          ctx.drawImage(img, 0, 0, 400, 400);
->       }
->       // e.target.result is the dataURL, so we set the
->       // src if the image with it. This will call
->       // asynchonously the onload callback
->       img.src= e.target.result;
->   };
->   // Read in the image file as a data URL.
->   reader.readAsDataURL(imageFile);
-> }
-> function readFileAndDraw(files) {
->     drawImage(files[0]);
-> }
+function drawImage(imageFile) {
+   var reader = new FileReader();
+ 
+   //capture the file information.
+   reader.onload = function(e) {
+      // For drawing an image on a canvas we
+      // need an image object
+      var img = new Image();
+      // Even if the file has been read, decoding
+      // the dataURL format may take some time
+      // so we need to use the regular way of
+      // working with images: onload callback    
+      // that will be called after setting the src attribute
+      img.onload = function(e) {
+         // draw the image!
+         ctx.drawImage(img, 0, 0, 400, 400);
+      }
+      // e.target.result is the dataURL, so we set the
+      // src if the image with it. This will call
+      // asynchonously the onload callback
+      img.src= e.target.result;
+  };
+  // Read in the image file as a data URL.
+  reader.readAsDataURL(imageFile);
+}
+function readFileAndDraw(files) {
+    drawImage(files[0]);
+}
 ```
 
 <h4>Explanations:</h4>
@@ -18833,7 +18833,7 @@ Remember how we worked with images on a canvas. We had to create an empty image 
 
 Another very impressive example, has been developed by \@GeorgianaB, a student of the first iteration of this course (see her [other creations/examples](https://codepen.io/giana/)). This Web application reads local image files, draws them into a canvas element and proposes different filters. This example is given \"as is\" for those of you who would like to go further. Just click on the link (or on the image below) and look at the source code.
 
-[Try this example online on gitHub](https://gianablantin.github.io/CanvasFilters/).
+<a href="https://gianablantin.github.io/CanvasFilters/">Try this example online on gitHub</a>.
 
 <h4>Introduction</h4>
 
@@ -18858,26 +18858,26 @@ It is possible to prompt the user to activate the GPS (this is what most GPS nav
 <h4>Typical use</h4>
 
 ```
-> navigator.geolocation.getCurrentPosition(showPosition, onError);
->  
-> function showPosition(position) {
->     console.log("latitude is: " + position.coords.latitude);
->     console.log("longitude is: " + position.coords.longitude);
-> }
->  
-> function onError(err) {
->     console.log("Could not get the position");
-> }
+navigator.geolocation.getCurrentPosition(showPosition, onError);
+ 
+function showPosition(position) {
+    console.log("latitude is: " + position.coords.latitude);
+    console.log("longitude is: " + position.coords.longitude);
+}
+ 
+function onError(err) {
+    console.log("Could not get the position");
+}
 ```
-
-[This online example at JSBin](https://jsbin.com/toyeley/1/edit?html,output) shows how to get the current longitude and latitude and display them in an HTML page. Try it below in your browser:
+<p>
+<a href="https://jsbin.com/toyeley/1/edit?html,output">This online example at JSBin</a> shows how to get the current longitude and latitude and display them in an HTML page. Try it below in your browser:
 
 Click the button to get your coordinates:
 
 Where am I ?
 
 Note that the first time you execute this example, for privacy reasons, the browser will ask if you agree to share your position with the application.
-
+</p>
 <h4>Source code of this typical example:</h4>
 
 ```
@@ -18916,13 +18916,12 @@ displayCoords.innerHTML="Latitude: " + position.coords.latitude +
    width="55%" />
 </p>
 
-<b>Explanations:</b>
-
--   *Line 14* checks if the Web browser supports the geolocation API by testing the variable navigator.geolocation. If not null, then the geolocation API is supported.
-
--   *Line 15* calls navigator.geolocation.getCurrentPosition(showPosition) passing a callback function as a parameter (in this example we did not specify a callback in case of error). **When a current position is available, the callback function will be called asynchronously, and the input parameter of this callback function will be the current position,** like in the function showPosition(position) of the example.
-
--   *Line 22:* the position objects has a coords property that is the object that holds the longitude and the latitude.
+<h4>Explanations:</h4>
+<ul>
+<li><i>Line 14</i> checks if the Web browser supports the geolocation API by testing the variable navigator.geolocation. If not null, then the geolocation API is supported.</li>
+<li><i>Line 15</i> calls navigator.geolocation.getCurrentPosition(showPosition) passing a callback function as a parameter (in this example we did not specify a callback in case of error). When a current position is available, the callback function will be called asynchronously, and the input parameter of this callback function will be the current position, like in the function showPosition(position) of the example.</li>
+<li><i>Line 22</i> the position objects has a coords property that is the object that holds the longitude and the latitude.</li>
+</ul>
 
 <h4>External resources:</h4>
 
@@ -18937,9 +18936,9 @@ displayCoords.innerHTML="Latitude: " + position.coords.latitude +
     -   on MDN: [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API#Browser_compatibility)
 
 <h3 id="ch6-4-2">6.4.2 The coords object properties</h3>
-
+<p>
 In the previous example, we used the coords property of the position passed as an input parameter to the callback function. This coords object has many properties:
-
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 325.  (xxx) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -18948,15 +18947,15 @@ In the previous example, we used the coords property of the position passed as
    alt=" "
    width="85%" />
 </p>
-
+<p>
 Not all these values may be available in all Web browsers. When one of these properties is null, it means that it is not available (often the case of the altitudeAccuracy)
-
-<h3>6.4.3 Geolocation error codes</h3>
-
+</p>
+<h3 id="ch6-4-3">6.4.3 Geolocation error codes</h3>
+<p>
 In the last example, we used the navigator.geolocation. getCurrentPosition(showPosition) with only one callback function (in the case of success), but it is also possible to pass a second parameter that is another callback function called in the case of error.
 
-A slightly different version of the previous example [shows how to properly check against the different possible errors](https://jsbin.com/bafusik/edit?html,output). Try it, then turn your WiFi off or unplug your Ethernet cable (or turn off GPS and 3G/4G on a mobile phone). You should see an error message \"*Error during geolocation: Location could not be obtained though the available means*\":
-
+A slightly different version of the previous example <a href="https://jsbin.com/bafusik/edit?html,output">shows how to properly check against the different possible errors</a>. Try it, then turn your WiFi off or unplug your Ethernet cable (or turn off GPS and 3G/4G on a mobile phone). You should see an error message Error during geolocation: Location could not be obtained though the available means":
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 326. geolocation error (xxx) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -18966,7 +18965,7 @@ A slightly different version of the previous example [shows how to properly che
    width="85%" />
 </p>
 
-<h3>Source code of the example:</h3>
+<h4>Source code of the example:</h4>
 
 ```
 <!DOCTYPE html>
@@ -19014,7 +19013,7 @@ A slightly different version of the previous example [shows how to properly che
 </html>
 ```
 
-<h3>6.4.4 Tracking a position</h3>
+<h3 id="ch6-4-4">6.4.4 Tracking a position</h3>
 
 In order to track the current position, the geolocation API provides a method similar to the getCurrentPosition(onSuccess, onError) named watchPosition(onSuccess, onError). 
 
@@ -19026,22 +19025,20 @@ When getCurrentPosition gives a position when called, watchPosition does the
 
 <h3>Typical use</h3>
 
-> // get an id of the current tracking, the showPosition callback is like the one we saw in earlier examples.
->
-> var watchPosId = navigator.geolocation.watchPosition(showPosition);
->
-> \...
->
-> // stop the tracking
->
-> navigator.geolocation.clearWatch(watchPosId);
-
+```
+// get an id of the current tracking, the showPosition callback is like the one we saw in earlier examples.
+var watchPosId = navigator.geolocation.watchPosition(showPosition);
+...
+// stop the tracking
+navigator.geolocation.clearWatch(watchPosId);
+```
+<p>
 As a test, you may just try to change getCurrentPosition to watchPosition in the previous examples, and try this code using a mobile phone or tablet, walk for 20 meters and see the position changing.
 
-<h3>Options available when using the geolocation API, in particular real time tracking</h3>
+<h4>Options available when using the geolocation API, in particular real time tracking</h4>
 
 Several options are available when using HTML5 geolocation. We can pass a third parameter to the getCurrentPosition and watchPosition methods, that will hold one or several of the following options:
-
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 327.  (4xx) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19051,7 +19048,7 @@ Several options are available when using HTML5 geolocation. We can pass a third 
    width="85%" />
 </p>
 
-<h3>Example of use</h3>
+<h4>Example of use</h4>
 
 <h4>Source code:</h4>
 
@@ -19077,12 +19074,12 @@ watchId=navigator.geolocation.watchPosition(onSuccess, onError,
 
 Look for the explanations in the lines of comment.
 
-<h3>6.4.5 Geolocation and maps</h3>
+<h3 id="ch6-4-5">6.4.5 Geolocation and maps</h3>
+<p>
+This section presents an example of how to get an interactive map, using <a href="https://leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMap</a>, and gives links to more resources. Did you know that you can even get an estimation of a physical address from the longitude and latitude, using online Web services?
 
-This section presents an example of how to get an interactive map, using [the Leaflet API for OpenStreetMap](https://leafletjs.com/reference-1.6.0.html), and gives links to more resources. Did you know that you can even get an estimation of a physical address from the longitude and latitude, using online Web services?
-
-How to get a map centered on your longitude and latitude
-
+How to get a map centered on your longitude and latitude.
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 328. openstreetmap test (444) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19092,7 +19089,7 @@ How to get a map centered on your longitude and latitude
    width="85%" />
 </p>
 
-This example is just given \"as is\", as there are so many possibilities for rendering a map with [the Leaflet API for OpenStreetMaps](https://leafletjs.com/reference-1.6.0.html). However, we think having such a basic example might be useful.
+<p>This example is just given "as is", as there are so many possibilities for rendering a map with <a href="/leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a basic example might be useful.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 329. openstreetmap test (444) ---------------------------------->
@@ -19241,17 +19238,17 @@ function error() {
 </ul>
 
 <h3 id="ch6-4-6">6.4.6 Reverse geocoding</h3>
-
+<p>
 Different Web services can be used to get an address from longitude and latitude. Most are free of charge, but they will ask you to register an API key and enter your credit card number. If you send too many requests, you will be charged.Such a service is the [Google Reverse Geocoding JavaScript API](https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse). For those of you who are really interested to know how this API works, please read the Google documentation and tutorials.
 
-There is also an interesting Leaflet plugin (an extension to Leaflet) based on the [Gisgraphy](https://www.gisgraphy.com/) (free open source framework) service, that comes with a [nice demo of reverse geocoding](https://services.gisgraphy.com/static/leaflet/index.html).
+There is also an interesting Leaflet plugin (an extension to Leaflet) based on the <a href="https://www.gisgraphy.com/">Gisgraphy</a> (free open source framework) service, that comes with a <a href="https://services.gisgraphy.com/static/leaflet/index.html">nice demo of reverse geocoding</a>.
 
-Let\'s see some examples of use.
+Let's see some examples of use.
 
 Example #1: how to get a physical address from the longitude and latitude
 
 Google reverse geocoding example (screenshot only) :
-
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 330. google reverse geocoding example (447) --------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19642,4 +19639,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-02-2022 10:35pm</i></b></h3>
+<h3><b><i>08-03-2022 10:09am</i></b></h3>
