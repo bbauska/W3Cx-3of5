@@ -5084,9 +5084,10 @@ The displayed text can span multiple lines, but blank lines are not allowed, as 
 
 <h4>External resource:</h4>
 <ul>
-<li>An unofficial <a href="https://quuz.org/webvtt/">Live WebbVTT format</a>
+<li>An unofficial <a href="https://quuz.org/webvtt/">Live WebbVTT format</a></li>
+</ul>
 
-<h3 id="ch2-3-3">2.3.3 Adding Subtitles to a Video</h3
+<h3 id="ch2-3-3">2.3.3 Adding Subtitles to a Video</h3>
 
 Let\'s look at a simple example. First, you need a video on one of the formats/codecs supported by the browsers you target. A recommended codec is mp4/H264, but other formats, such as webm, may have some advantages if the browser supports them. For example, webm allows the video to start playing after a much shorter buffering time. In other words, try if possible to provide the video encoded with more than one codec.
 
@@ -6286,66 +6287,63 @@ Let\'s record, replay and download the video stream captured using a Webcam. You
 <b>JS</b>
 
 ```
-> var mediaRecorder;
-> var recordedBlobs;
-> var gumVideo = document.querySelector(\'video#gum\');
-> var recordedVideo = document.querySelector(\'video#recorded\');
-> var recordButton = document.querySelector(\'button#record\');
-> var playButton = document.querySelector(\'button#play\');
-> var downloadButton = document.querySelector(\'button#download\');
-> recordButton.onclick = toggleRecording;
-> playButton.onclick = play;
-> downloadButton.onclick = download;
-> // get stream using getUserMedia
-> navigator.mediaDevices.getUserMedia({ audio: true,video: true})
-> .then((stream) =\> {
-> recordButton.disabled = false;
-> console.log(\'getUserMedia() got stream: \', stream);
-> window.stream = stream;
-> gumVideo.srcObject = stream;
-> })
-> .catch((error) =\> {
-> console.log(\'navigator.getUserMedia error: \', error);
-> });
-> function handleDataAvailable(event) {
-> if (event.data && event.data.size \> 0) {
-> recordedBlobs.push(event.data);
-> }
-> }
-> function handleStop(event) {
-> console.log(\'Recorder stopped: \', event);
-> }
-> function toggleRecording() {
-> if (recordButton.textContent === \'Start Recording\') {
-> startRecording();
-> } else {
-> stopRecording();
->
-> recordButton.textContent = \'Start Recording\';
->
-> playButton.disabled = false;
->
-> downloadButton.disabled = false;
-> }
-> }
-> // create the media recorder
-> function startRecording() {
-> recordedBlobs = [];
-> try {
-> mediaRecorder = new MediaRecorder(window.stream);
-> } catch (e) {
-> console.error('Exception while creating MediaRecorder: ' + e);
-> return;
-> }
-> console.log('Created MediaRecorder', mediaRecorder);
-> recordButton.textContent = 'Stop Recording\';
-> playButton.disabled = true;
-> downloadButton.disabled = true;
-> mediaRecorder.onstop = handleStop;
-> mediaRecorder.ondataavailable = handleDataAvailable;
-> mediaRecorder.start(10); // collect 10ms of data
-> console.log(\'MediaRecorder started\', mediaRecorder);
-> }
+var mediaRecorder;
+var recordedBlobs;
+var gumVideo = document.querySelector(\'video#gum\');
+var recordedVideo = document.querySelector(\'video#recorded\');
+var recordButton = document.querySelector(\'button#record\');
+var playButton = document.querySelector(\'button#play\');
+var downloadButton = document.querySelector(\'button#download\');
+recordButton.onclick = toggleRecording;
+playButton.onclick = play;
+downloadButton.onclick = download;
+// get stream using getUserMedia
+navigator.mediaDevices.getUserMedia({ audio: true,video: true})
+.then((stream) =\> {
+recordButton.disabled = false;
+console.log(\'getUserMedia() got stream: \', stream);
+window.stream = stream;
+gumVideo.srcObject = stream;
+})
+.catch((error) =\> {
+console.log(\'navigator.getUserMedia error: \', error);
+});
+function handleDataAvailable(event) {
+if (event.data && event.data.size \> 0) {
+recordedBlobs.push(event.data);
+}
+}
+function handleStop(event) {
+console.log(\'Recorder stopped: \', event);
+}
+function toggleRecording() {
+if (recordButton.textContent === \'Start Recording\') {
+startRecording();
+} else {
+stopRecording();
+recordButton.textContent = \'Start Recording\';
+playButton.disabled = false;
+downloadButton.disabled = false;
+}
+}
+// create the media recorder
+function startRecording() {
+recordedBlobs = [];
+try {
+mediaRecorder = new MediaRecorder(window.stream);
+} catch (e) {
+console.error('Exception while creating MediaRecorder: ' + e);
+return;
+}
+console.log('Created MediaRecorder', mediaRecorder);
+recordButton.textContent = 'Stop Recording\';
+playButton.disabled = true;
+downloadButton.disabled = true;
+mediaRecorder.onstop = handleStop;
+mediaRecorder.ondataavailable = handleDataAvailable;
+mediaRecorder.start(10); // collect 10ms of data
+console.log(\'MediaRecorder started\', mediaRecorder);
+}
 > function stopRecording() {
 > mediaRecorder.stop();
 > console.log('Recorded Blobs: ', recordedBlobs);
@@ -6374,81 +6372,81 @@ Let\'s record, replay and download the video stream captured using a Webcam. You
 <b>CSS</b>
 
 ```
-> /*
-> * Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
-> *
-> * Use of this source code is governed by a BSD-style license
-> * that can be found in the LICENSE file in the root of the source
-> * tree.
-> */
-> button {
-> margin: 0 3px 10px 0;
-> padding-left: 2px;
-> padding-right: 2px;
-> width: 99px;
-> }
-> button:last-of-type {
-> margin: 0;
-> }
-> p.borderBelow {
-> margin: 0 0 20px 0;
-> padding: 0 0 20px 0;
-> }
-> video {
-> height: 232px;
-> margin: 0 12px 20px 0;
-> vertical-align: top;
-> width: calc(20em - 10px);
-> }
-> video:last-of-type {
-> margin: 0 0 20px 0;
-> }
-> video#gumVideo {
+/*
+* Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+*
+* Use of this source code is governed by a BSD-style license
+* that can be found in the LICENSE file in the root of the source
+* tree.
+*/
+button {
+margin: 0 3px 10px 0;
+padding-left: 2px;
+padding-right: 2px;
+width: 99px;
+}
+button:last-of-type {
+margin: 0;
+}
+p.borderBelow {
+margin: 0 0 20px 0;
+padding: 0 0 20px 0;
+}
+video {
+height: 232px;
+margin: 0 12px 20px 0;
+vertical-align: top;
+width: calc(20em - 10px);
+}
+video:last-of-type {
+margin: 0 0 20px 0;
+}
+video#gumVideo {
 > margin: 0 20px 20px 0;
-> }
-> @media screen and (max-width: 500px) {
-> button {
-> font-size: 0.8em;
-> width: calc(33% - 5px);
-> }
-> }
-> @media screen and (max-width: 720px) {
-> video {
-> height: calc((50vw - 48px) * 3 / 4);
-> margin: 0 10px 10px 0;
-> width: calc(50vw - 48px);
-> }
-> video#gumVideo {
-> margin: 0 10px 10px 0;
-> }
-> }
+}
+@media screen and (max-width: 500px) {
+button {
+font-size: 0.8em;
+width: calc(33% - 5px);
+}
+}
+@media screen and (max-width: 720px) {
+video {
+height: calc((50vw - 48px) * 3 / 4);
+margin: 0 10px 10px 0;
+width: calc(50vw - 48px);
+}
+video#gumVideo {
+margin: 0 10px 10px 0;
+}
+}
 ```
 
 <h4>HTML</h4>
 
 ```
-> <!DOCTYPE html>
-> <html>
-> <head>
-> <meta charset="utf-8">
-> <meta name="viewport" content="width=device-width">
-> <title>MediaRecorder API usage</title>
-> </head>
-> <body>
-> <div id="container">
-> <h1><a href="//webrtc.github.io/samples/" title="WebRTC samples homepage">WebRTC example:</a> <span>MediaRecorder</span></h1>
-> <p>For more info, see the <a href="https://w3c.github.io/mediacapture-record/MediaRecorder.html" title="W3C MediaStream Recording API - Editor's Draft">MediaStream Recording API Editor's Draft</a>.</p>
-> <video id="gum" autoplay muted></video>
-> <video id="recorded" loop controls></video>
-> <div>
-> <button id="record" disabled>Start Recording</button>
-> <button id="play" disabled>Play</button>
-> <button id="download" disabled>Download</button>
-> </div>
-> <a href="https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
-> </div>
-> </body>
-> </html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>MediaRecorder API usage</title>
+</head>
+<body>
+<div id="container">
+<h1><a href="//webrtc.github.io/samples/" title="WebRTC samples homepage">WebRTC example:</a> <span>MediaRecorder</span></h1>
+<p>For more info, see the <a href="https://w3c.github.io/mediacapture-record/MediaRecorder.html" title="W3C MediaStream Recording API - Editor's Draft">MediaStream Recording API Editor's Draft</a>.</p>
+<video id="gum" autoplay muted></video>
+<video id="recorded" loop controls></video>
+<div>
+<button id="record" disabled>Start Recording</button>
+<button id="play" disabled>Play</button>
+<button id="download" disabled>Download</button>
+</div>
+<a href="https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+</div>
+</body>
+</html>
 ```
 
 Click \"start recording\", then press the play button on the video element on the right of the app. You can also click the \"download\" button to download a .webm file, playable offline with a media player such as [VLC](https://www.videolan.org/) or online in a Web page with the \<video\> element.
@@ -6458,16 +6456,19 @@ Click \"start recording\", then press the play button on the video element on th
 <h4>1 - Create a mediaRecorder from a stream</h4>
 
 <h4>Source code extract:</h4>
+
 ```
 1.  var options = {mimeType: \'video/webm; codecs=vp9\'};
 2.  mediaRecorder = new MediaRecorder(stream, options);
 ```
 
-\... where stream is typically the object returned by the call to getUserMedia (see previous examples).
+<p>
+... where stream is typically the object returned by the call to getUserMedia (see previous examples).</p>
 
 <h4>2 - Add a "data handler" and call the start() method of the mediaRecorder object</h4>
 
 <h4>Source code extract:</h4>
+
 ```
 1.  var recordedChunks = \[\]; // will hold the recorded stream
 2.  mediaRecorder.ondataavailable = handleDataAvailable;
@@ -6481,19 +6482,19 @@ Click \"start recording\", then press the play button on the video element on th
 10. }
 ```
    
-<b>Explanations:</b>
-
--   *Line 1*: we declare an array of bytes that will hold the recorded stream.
-
--   *Line 2*: we declare the callback function that will be called while the stream is being captured. While the Webcam will be used, every xxx seconds, chunks of data will be passed to the handleDataAvailable function.
-
--   *Lines 5-10*: this function collects the chunk of data that corresponds to a few seconds of video, and stores it in the recordedChunks byte array.
+<h4>Explanations:</h4>
+<ul>
+<li><i>Line 1</i>: we declare an array of bytes that will hold the recorded stream.</li>
+<li><i>Line 2</i>: we declare the callback function that will be called while the stream is being captured. While the Webcam will be used, every xxx seconds, chunks of data will be passed to the handleDataAvailable function.</li>
+<li><i>Lines 5-10</i>: this function collects the chunk of data that corresponds to a few seconds of video, and stores it in the recordedChunks byte array.</li>
+</ul>
 
 <h4>3 - When you\'ve finished recording, tell the mediaRecorder to stop</h4>
 
 When you\'re done, you need to call the stop() method of the mediaRecorder object. This will end the periodic execution of the handleDataAvailable method, and stop the data capture.
-
+```
 1.  mediaRecorder.stop();
+```
 
 <h4>4 - Create a BLOB (Binary Large Object) with the collected data, and use it to set the src attribute of an HTML5 video player</h4>
 
@@ -6658,11 +6659,11 @@ And if we click on the line number in the right, the dev. tool shows the source 
 
 Without such tools, debugging JavaScript code is impossible. So you need to look at some basic tutorials on how to use the dev. tools of your browsers, since they differ from one another in the way they work - although the principles remain the same.
 
-<h4>About the asynchronous nature of JavaScript
+<h4>About the asynchronous nature of JavaScript</h4>
 
 Some of you may not be used to \"asynchronous programming\", \"callbacks\" etc. We recommend to read [this article on WikiPedia](https://en.wikipedia.org/wiki/Callback_%28computer_programming%29) and [this thread on StackOverflow](https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java).
 
-<h3 id="ch3-2-2">3.2.2 The \<canvas\> Element</h3>
+<h3 id="ch3-2-2">3.2.2 The &lt;canvas&gt; Element</h3>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 120. view of the javascript console (xxx) ------------------->
@@ -6672,21 +6673,29 @@ Some of you may not be used to \"asynchronous programming\", \"callbacks\" etc. 
    width="50%"
    alt="View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc." />
 </p>
-![canvas element logo](./images/image121.jpeg){width="1.0in" height="1.0in"}
 
-The \<canvas\> tag was introduced into the HTML specification around 2010 as a \"Flash killer.\" At the time, popular video games used this proprietary technology and only a few browsers supported it. The HTML canvas allows drawing and animation at 60 frames per second, in 2D or 3D.
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 121. canvas element logo (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image121.jpeg?raw=true"
+   width="10%"
+   alt="Canvas element logo." />
+</p>
+<p>
+The &lt;canvas&gt; tag was introduced into the HTML specification around 2010 as a "Flash killer." At the time, popular video games used this proprietary technology and only a few browsers supported it. The HTML canvas allows drawing and animation at 60 frames per second, in 2D or 3D.
 
-**The canvas has been designed for pixel-based graphics**, while SVG (Scalable Vector Graphics, another W3C standard) is for vector-based graphics.
+<b>The canvas has been designed for pixel-based graphics</b>, while SVG (Scalable Vector Graphics, another W3C standard) is for vector-based graphics.
 
 Indeed, the canvas JavaScript drawing API supports different kind of shapes: lines, rectangles, ellipses, arcs, curves, text, images. Some drawing styles need to be specified that will affect the way shapes are drawn (color, drawing width, shadows, etc.). An alpha channel for drawing in transparent mode is also supported, as well as many advanced drawing modes and global filters (blur, etc.).
 
 The canvas is also used to do animations at 60 frames per second (useful for games), to display videos with special effects, to display a webcam stream, and so on.
-
-<h4>Examples
+</p>
+<h4>Examples</h4>
 
 Here are some fun examples that show the interest of the HTML5 canvas.
 
-<h4> Example #1
+<h4>Example #1</h4>
 
 [Foot Chinko](https://www.ravalmatic.com/portfolio/footchinko/) is one popular free HTML5 games:
 
@@ -6699,7 +6708,7 @@ Here are some fun examples that show the interest of the HTML5 canvas.
    alt="Foot chinko one of the best html5 2D game of 2015" />
 </p>
 
-<h4> Example #2
+<h4>Example #2</h4>
 
 Lots of data visualization tools and JavaScript libraries use the HTML5 canvas element for [Data visualization](http://www.creativebloq.com/design-tools/data-visualization-712402):
 
@@ -6712,7 +6721,7 @@ Lots of data visualization tools and JavaScript libraries use the HTML5 canvas e
    alt="html5 data visualization" />
 </p>
 
-<h4> Example #3
+<h4>Example #3</h4>
 
 A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), that runs at 60 frames per second in an HTML5 canvas element:
 
@@ -6729,7 +6738,7 @@ Performance is  good and animation is generally very smooth, since most Web bro
 
 **Note**: 3D drawing using the WebGL API is also possible in a \<canvas\>, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a \<canvas\>: [BabylonJS](https://www.babylonjs.com/) and [ThreeJS](https://threejs.org/).
 
-<h4>External resources
+<h4>External resources</h4>
 
 -   Comprehensive [HTML5 canvas tutorials](https://www.html5canvastutorials.com/)
 
@@ -6753,7 +6762,7 @@ The dynamic nature of the \<canvas\> element has made it difficult to use in a
 
 -   Visually indicating whether or not a shape in the canvas had keyboard focus.
 
-Read more on this topic: 
+<h4>Read more on this topic:</h4>
 
 -   An article on [What the canvas element means for accessibility](https://www.creativebloq.com/web-design/canvas-element-accessibility-41514740)
 
@@ -6808,70 +6817,70 @@ Small errata about what I said in the above video: \"*So let\'s get the canvas u
 
 The part is bold is not correct: querySelector, technically, comes from [Selectors API](https://www.w3.org/TR/selectors-api/). Just in case some people would like to check the specification.\\
 
-<h4>Detailed explanation of the example shown in the above video
+<h4>Detailed explanation of the example shown in the above video</h4>
 
 Here are the different steps, in a little more detail, of the example demonstrated in the above video:
 
-<h4> 1 - Add the \<canvas\> element into an HTML page
-
-1.  \<canvas id=\"myCanvas\" width=\"300\" height=\"225\"\>
-
+<h4>1 - Add the &lt;canvas&gt; element into an HTML page</h4>
+```
+1.  <canvas id="myCanvas" width="300" height="225">
 2.  Fallback content that will be displayed in case the web browser
-
 3.  does not support the canvas tag or in case scripting
-
 4.  is disabled.
+5.  </canvas>
+```
 
-5.  \</canvas\>
+<p>Place code similar to the above somewhere in an HTML page. This example defines an area of 300 by 225 pixels on which content can be rendered with JavaScript.
 
-Place code similar to the above somewhere in an HTML page. This example defines an area of 300 by 225 pixels on which content can be rendered with JavaScript.
-
-Normally you should see nothing as a result; by default canvases are \"transparent\". **Make it visible using CSS!**\
+Normally you should see nothing as a result; by default canvases are "transparent". <b>Make it visible using CSS!</b>
 For example, you can add a border to the canvas (or change the background color, or put an image in the background).
+</p>
+<h4>The three lines of CSS will create a border around the canvas with id=\"myCanvas\", of 1 pixel width, in black:</h4>
 
-The three lines of CSS will create a border around the canvas with id=\"myCanvas\", of 1 pixel width, in black:
-
-1.  \<style\>
-
+```
+1.  <style>
 2.      #myCanvas {
-
 3.          border:1px solid black;
-
 4.      }
+5.  </style>
+```
 
-5.  \</style\>
-
-<h4> 2 - Select the \<canvas\> element for use from JavaScript
+<h4>2 - Select the \<canvas\> element for use from JavaScript</h4>
 
 We can have more than one \<canvas\> in a single page, and canvases will be manipulated with JavaScript like other elements in the DOM.
 
-For example with:
-
+<h4>For example with:</h4>
+```
 1.  var canvas = document.getElementById(\"myCanvas\");
+```
 
-\... or with the querySelector() method introduced by HTML5, that use the CSS selector syntax for selecting elements:
-
+<h4>... or with the querySelector() method introduced by HTML5, that use the CSS selector syntax for selecting elements:</h4>
+```
 1.  var canvas = document.querySelector(\"#myCanvas\");
+```
 
-<h4> 3 - Get a \"2D context\" associated with the canvas
-
+<h4>3 - Get a "2D context" associated with the canvas</h4>
+<p>
 This step is useful for drawing and setting drawing properties (color, etc.)
 
-Once we have a pointer to the \<canvas\>, we can get a \"context\". This particular object is the core of the canvas JavaScript API. It provides methods for drawing, like fillRect(x, y, width, height) for example, that draws a filled rectangle, and properties for setting the color, shadows, gradients, etc.
-
-So, let\'s first get the context (do this only once):
-
+Once we have a pointer to the &lt;canvas&gt;, we can get a "context". This particular object is the core of the canvas JavaScript API. It provides methods for drawing, like fillRect(x, y, width, height) for example, that draws a filled rectangle, and properties for setting the color, shadows, gradients, etc.
+</p>
+<h4>So, let's first get the context (do this only once):</h4>
+```
 1.  var ctx=canvas.getContext(\'2d\');
+```
 
-\... then, set the color for drawing filled shapes:
-
+<h4>... then, set the color for drawing filled shapes:</h4>
+```
 1.  ctx.fillStyle=\'red\';
+```
 
-\... and draw a filled rectangle:
-
+<h4>... and draw a filled rectangle:</h4>
+```
 1.  ctx.fillRect(0,0,80,100);
+```
 
-<h4>Complete example that draws a filled rectangle in red
+<h4>Complete example that draws a filled rectangle in red</h4>
 
 <h4>HTML</h4>
 
@@ -6912,7 +6921,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-Source code:
+<h4>Source code:</h4>
 
 ```
 1.  <!DOCTYPE html>
@@ -7068,15 +7077,22 @@ Actually it draws it in a color called \"transparent black\" (!) that correspond
 3.  ctx.clearRect(50, 50, 20, 20);
 ```
 
-The result is:
+<h4>The result is:</h4>
 
-![The use of ClearRect draws a white rectangle against the pink background](./images/image130.jpeg){width="2.6770833333333335in" height="2.6770833333333335in"}
+<!------------------------------------------------------------------------------------------------>
+<!------ 130. the use of clearrrect draws a white rectangle against the pink background (xxx) ---->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image130.jpeg?raw=true"
+   width="25%"
+   alt="The use of ClearRect draws a white rectangle against the pink background." />
+</p>
 
-<h4>Let\'s see some simple examples
+<h4>Let's see some simple examples</h4>
 
-<h4> Example #1: draw a wireframe red rectangle, width lineWidth = 3 pixels
+<h4> Example #1: draw a wireframe red rectangle, width lineWidth = 3 pixels</h4>
 
-Extract from the source code (the part that draws the rectangle):
+<h4>Extract from the source code (the part that draws the rectangle):</h4>
 
 ```
 1.  function drawSomething() {
@@ -7086,14 +7102,15 @@ Extract from the source code (the part that draws the rectangle):
 5.       ctx.strokeRect(10,10,80,100);
 6.  }
 ```
+<p>
+Here, we used "stroke" instead of "fill" in the property and method names (<i>lines 4 and 5</i>): strokeStyle instead of fillStyle, strokeRect(...) instead of fillRect(...).
 
-Here, we used \"stroke\" instead of \"fill\" in the property and method names (*lines 4 and 5*): strokeStyle instead of fillStyle, strokeRect(\...) instead of fillRect(\...).
-
-We also introduced a new property of the context, that applies only when drawing in \"stroke\" mode, the lineWidth property (*line 3*), that is used for setting the width of the shape outline. The value is in pixels.
-
-<h4> Example #2: draw two filled red rectangles with a blue outline of 5 pixels and some text
-
-Let\'s continue with another example. This time we will draw several shapes that share the same colors - they will be filled in red, with a blue outline. We also show how to draw a text message with a given font.
+We also introduced a new property of the context, that applies only when drawing in "stroke" mode, the lineWidth property (<i>line 3</i>), that is used for setting the width of the shape outline. The value is in pixels.
+</p>
+<h4> Example #2: draw two filled red rectangles with a blue outline of 5 pixels and some text</h4>
+<p>
+Let's continue with another example. This time we will draw several shapes that share the same colors - they will be filled in red, with a blue outline. We also show how to draw a text message with a given font.
+</p>
 
 <h4>HTML</h4>
 
@@ -7145,7 +7162,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-Source code extract:
+<h4>Source code extract:</h4>
 
 ```
 1.  function drawSomething() {
@@ -7168,44 +7185,42 @@ Source code extract:
 18.     ctx.fillText("hello", 70, 22);
 19. }
 ```
+<p>
+This example shows the "global" nature of the context properties. Once you set the filled color to red, any shapes you draw in filled mode will be red. This is true for all the context properties. We set some of these properties in *lines 3-7*, and all following calls to context methods for drawing rectangles or text will depend on them. The two filled rectangles at *lines 10-11* will be red, the two wireframe rectangles drawn at *lines 14-15* will be blue, etc.
 
-This example shows the \"global\" nature of the context properties. Once you set the filled color to red, any shapes you draw in filled mode will be red. This is true for all the context properties. We set some of these properties in *lines 3-7*, and all following calls to context methods for drawing rectangles or text will depend on them. The two filled rectangles at *lines 10-11* will be red, the two wireframe rectangles drawn at *lines 14-15* will be blue, etc.
+<i>Line 18</i> shows how to draw a text message at an X position of 70 and a Y position of 22. The font is set at <i>line 7</i> using the font property of the context.  The syntax is the same we use in CSS for using "system fonts".
 
-*Line 18* shows how to draw a text message at an X position of 70 and a Y position of 22. The font is set at *line 7* using the font property of the context.  The syntax is the same we use in CSS for using \"system fonts\".
+If you would like to draw the filled text message in green, for example, you should set the ctx.fillStyle property to "green" after you draw the rectangles and before you draw the text (i.e just before <i>line 18</i>).
+</p>
 
-If you would like to draw the filled text message in green, for example, you should set the ctx.fillStyle property to \"green\" after you draw the rectangles and before you draw the text (i.e just before *line 18*).
-
-<h4>Summary of what we\'ve learned
-
--   \"stroke\" means \"wireframe\" or \"outlined\". It is a prefix for setting properties or calling methods that will affect wireframe shapes.
-
--   \"fill\" is a prefix for filled shapes.
-
--   To set the properties of wireframe shapes use ctx.**stroke**Style= \..., for filled shapes use ctx.**fill**Style=\... So far the values we have used are colors, expressed as strings. Example: ctx.strokeStyle  = \'blue\';
-
--   To draw a wireframe rectangle use ctx.strokeRect(x, y, width, height), to draw a filled rectangle use ctx.fillRect(x, y, width, height);
-
--   To set the line width of wireframe shapes, use the ctx.lineWidth property. Example ctx.lineWidth = 10; ctx.strokeRect(0, 0, 100, 100);  will draw a 100x100 rectangle in wireframe mode, with an outline width of 10 pixels.
-
--   To draw a text message use ctx.strokeText(message, x, y) or ctx.fillText(message, x, y), for wireframe text or filled text respectively.
-
--   To set the character font use the ctx.font property; the value is a font in CSS syntax, for example:  ctx.font = \'italic 20pt Calibri\';
+<h4>Summary of what we\'ve learned</h4>
+<ul>
+<li>"stroke" means "wireframe" or "outlined". It is a prefix for setting properties or calling methods that will affect wireframe shapes.</li>
+<li>"fill" is a prefix for filled shapes.</li>
+<li>To set the properties of wireframe shapes use ctx.<b>stroke</b>Style= ..., for filled shapes use ctx.<b>fill</b>Style=... So far the values we have used are colors, expressed as strings. Example: ctx.strokeStyle  = 'blue';</li>
+<li>To draw a wireframe rectangle use ctx.strokeRect(x, y, width, height), to draw a filled rectangle use ctx.fillRect(x, y, width, height);</li>
+<li>To set the line width of wireframe shapes, use the ctx.lineWidth property. Example ctx.lineWidth = 10; ctx.strokeRect(0, 0, 100, 100);  will draw a 100x100 rectangle in wireframe mode, with an outline width of 10 pixels.</li>
+<li>To draw a text message use ctx.strokeText(message, x, y) or ctx.fillText(message, x, y), for wireframe text or filled text respectively.</li>
+<li>To set the character font use the ctx.font property; the value is a font in CSS syntax, for example:  ctx.font = 'italic 20pt Calibri';</li>
+</ul>
 
 <h3 id="ch3-2-8">3.2.8 Transformations</h3>
-
+<p>
 We now introduce the basics of 2D transformations, a powerful tool that will make things easier as soon as you have to:
-
--   Draw complex shapes at given positions, with given orientations and sizes,
-
--   Draw shapes relative to one another.
-
-Let\'s start with some simple examples before looking at how we use 2D transforms.
-
-<h4>Examples
-
--   <h4> Let\'s draw three rectangles!
-
-If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) and another at (150, 0), and a third at (300, 0), here is the result and the corresponding code:
+</p>
+<ul>
+<li>Draw complex shapes at given positions, with given orientations and sizes,</li>
+<li>Draw shapes relative to one another.</li>
+</ul>
+<p>
+Let's start with some simple examples before looking at how we use 2D transforms.
+</p>
+<h4>Examples</h4>
+<ul>
+<li><h4> Let's draw three rectangles!</li>
+</ul>
+<p>
+If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) and another at (150, 0), and a third at (300, 0), here is the result and the corresponding code:</p>
 
 <h4>HTML</h4>
 
@@ -7334,7 +7349,7 @@ At *line 10*, we called the drawSomething(\...) function with 0 and 100 as p
 If you look at the code of the modified function, you will see that each call to fillRect(\...) uses the x and y parameters instead of hard coded values. In this way, if we call it with parameters (0, 100), then all rectangles will be drawn 100 pixels to the bottom (offset in y). Here is the result:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 131.  (xx) ------------------------------->
+<!-------------- 131. Rectangles are drawn 100 pixels towards the bottom (xx) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image131.jpeg?raw=true"
@@ -7402,7 +7417,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-An extract of the JavaScript source code is:
+<h4>An extract of the JavaScript source code is:</h4>
 
 ```
 1.  function drawMonster(x, y) {
@@ -7472,6 +7487,7 @@ Let\'s take a piece of code that draws something corresponding to the original c
 This code is the just the same as in the previous example except that we removed all Xs and Yx in the code. We also added at the end *(lines 25-26*) two lines of code that draw the coordinate system. The drawArrow(startX, startY, endX, endY, width, color) function is a utility function that we will present later. You can see it in the JS source code of the pen below:
 
 <h4>JS</h4>
+
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
@@ -7502,6 +7518,7 @@ ctx.restore();
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -7652,7 +7669,7 @@ Your browser does not support the canvas tag.
 <i>Line 1</i> changes the position of the coordinate system, <i>line 2</i> draws a monster in the new translated coordinate system. All subsequent calls to drawing methods will be affected and will work in this new system too.
 
 <ul>
-<li><h4> Other transformations: rotate, scale</h4></li>
+<li><h4>Other transformations: rotate, scale</h4></li>
 </ul>
 
 <h5>There are other transformations available:</h5>
@@ -9290,9 +9307,8 @@ In this example, we will draw the two parts of the path with different styles: t
 
 What we will try first is to call stroke() after the first half of the path, then call fill() after the second half of the path:
 
-********************************** image ***********************************
 <!------------------------------------------------------------------------------------------------>
-<!--- 140.  (xxx) -->
+<!-------------------- 140.  (xxx) --------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image140.png?raw=true"
@@ -9373,7 +9389,6 @@ using the ctx.beginPath() method, as shown in the next example.
 
 <h4> Now, the right way!</h4>
 
-********************************** image ***********************************
 <!------------------------------------------------------------------------------------------------>
 <!--- 141.  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
@@ -9803,26 +9818,27 @@ The last parameter is optional and has a value of false by default. If true, 
    width="65%">
 &nbsp;
 <br/>
+
 ```
-<!DOCTYPE html\>
-<html lang=\"en\"\>
-<head\>
-<meta charset=\"utf-8\"/\>
-<title\>Drawing an arc\</title\>
-</head\>
-<body\>
-<canvas id=\"myCanvas\" width=\"500\"\>Your browser does not support the canvas tag.\</canvas\>
-<script type=\"text/javascript\"\>
-var canvas=document.getElementById(\'myCanvas\');
-var ctx=canvas.getContext(\'2d\');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Drawing an arc</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500">Your browser does not support the canvas tag.</canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
 ctx.beginPath();
 // try to set the last parameter to true or remove it
 ctx.arc(100,75,50,0,Math.PI/2);
 ctx.lineWidth=10;
 ctx.stroke();
-</script\>
-</body\>
-</html\>
+</script>
+</body>
+</html>
 ```
 
 <h4>Code source extract:</h4>
@@ -9857,7 +9873,7 @@ Then, the result is the \"complementary\" of the previous arc:
 &nbsp;
 <br/>
 
-<h4> Example #2: drawing a Full circle (filled + outlined)</h4>
+<h4>Example #2: drawing a Full circle (filled + outlined)</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!--- 149.  (xxx) -->
@@ -12256,6 +12272,7 @@ Here is a complete example where we draw with a lineWidth of 20 pixels:
 </p>
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -17550,13 +17567,14 @@ Where firstName in red is the key and this.value the current value of the in
 
 In the same way, we added an input listener to all the input fields in this example\'s form.
 
-### Restoring the form content on page load/reload
+<h4>Restoring the form content on page load/reload</h4>
 
 This time, we want the form content to be restored on page load/reload. We will add a restoreFormContent() function in the JavaScript code that will be called each time the page is loaded. In this function, we will read the saved data and set the input fields\' values.
 
 [Complete example on JSBin](https://jsbin.com/yivocuz/edit?html,js,output): enter data and press reload at any time. The form content is restored!
 
-Source code extract (only addition to the previous example):
+<h4>Source code extract (only addition to the previous example):</h4>
+
 ```
 1.  // Called when the page is loaded
 2.  window.onload = restoreFormContent;
@@ -17598,6 +17616,7 @@ This time we will look at another example that uses new methods from the API:
 <h4>Getting/setting values using the getItem(key) and setItem(key, value) methods</h4>
 
 If you want to keep a simple counter of the number of times a given user has loaded your application, you can use the following code (just to show how to use setItem/removeItem methods):
+
 ```
 1.  var counter = localStorage.getItem(\"count\") \|\| 0;
 2.  counter++;
@@ -17781,83 +17800,44 @@ The function initPreferences is executed when the page is loaded.
 
 <h4>Source code extract:</h4>
 ```
-> function initPreferences() {
->
->    console.log("Adding input listener to all input fields");
->
->    // add an input listener to all input fields
->
->    var listOfInputsInForm = document.querySelectorAll("input");
->
->    for(var i= 0; i < listOfInputsInForm.length; i++) {
->
->       addInputListener(listOfInputsInForm[i]);
->
->    }
->
->    // restore preferences
->
->    restorePreferences();
->
->    applyGUIvalues(); // Use the input fields' values we just restored to set internal 
->
->                      // size, incX, color, lineWidth variables
->
-> }
->
->  
->
-> function addInputListener(inputField) {
->
-> // same as before
->
-> }
->
->  
->
-> function restorePreferences() {
->
-> // same as old restoreFormContent
->
-> }
->
->  
->
-> function applyGUIvalues() {
->
->    // Check restored input field content to set the size of the rectangle
->
->    var sizeWidget = document.getElementById("size");
->
->    size = Math.sign(incX)*parseInt(sizeWidget.value);
->
->    // also update the outline element's value
->
->    document.getElementById("sizeValue").innerHTML = size;
->
->    // Check restored input field content to set the color of the rectangle
->
->    var colorWidget = document.getElementById("color");
->
->    ctx.fillStyle = colorWidget.value;
->
->    // Check restored input field content to set the speed of the rectangle
->
->    var speedWidget = document.getElementById("speed");
->
->    incX = Math.sign(incX)*parseInt(speedWidget.value);
->
->    // also update the outline element's value
->
->    document.getElementById("speedValue").innerHTML = Math.abs(incX);
->
->    // Check restored input field content to set the lineWidth of the rectangle
->
->    var lineWidthWidget = document.getElementById("lineWidth");
->
->    ctx.lineWidth = parseInt(lineWidthWidget.value);
->
-> }
+function initPreferences() {
+   console.log("Adding input listener to all input fields");
+   // add an input listener to all input fields
+   var listOfInputsInForm = document.querySelectorAll("input");
+   for(var i= 0; i < listOfInputsInForm.length; i++) {
+      addInputListener(listOfInputsInForm[i]);
+   }
+   // restore preferences
+   restorePreferences();
+   applyGUIvalues(); // Use the input fields' values we just restored to set internal 
+                     // size, incX, color, lineWidth variables
+}
+ 
+function addInputListener(inputField) {
+// same as before
+}
+function restorePreferences() {
+// same as old restoreFormContent
+}
+ 
+function applyGUIvalues() {
+   // Check restored input field content to set the size of the rectangle
+   var sizeWidget = document.getElementById("size");
+   size = Math.sign(incX)*parseInt(sizeWidget.value);
+   // also update the outline element's value
+   document.getElementById("sizeValue").innerHTML = size;
+   // Check restored input field content to set the color of the rectangle
+   var colorWidget = document.getElementById("color");
+   ctx.fillStyle = colorWidget.value;
+   // Check restored input field content to set the speed of the rectangle
+   var speedWidget = document.getElementById("speed");
+   incX = Math.sign(incX)*parseInt(speedWidget.value);
+   // also update the outline element's value
+   document.getElementById("speedValue").innerHTML = Math.abs(incX);
+   // Check restored input field content to set the lineWidth of the rectangle
+   var lineWidthWidget = document.getElementById("lineWidth");
+   ctx.lineWidth = parseInt(lineWidthWidget.value);
+}
 ```
 
 <h3 is="6-2-5">6.2.5 Example 3</h3>
@@ -17878,32 +17858,28 @@ We start writing an init() function that is called when the page is loaded. Th
 
 <h4>Source code:</h4>
 ```
-> // Called when the page is loaded
-> window.onload = init;
->  
-> function init() {
->    console.log("Adding input listener to all input fields");
->    // add an input listener to all input fields
->    var listOfInputsInForm = document.querySelectorAll("input");
->    for(var i= 0; i < listOfInputsInForm.length; i++) {
->       addInputListener(listOfInputsInForm[i]);
->    }
->    // restore form content with previously saved values
->    restoreFormContent();
-> }
+// Called when the page is loaded
+window.onload = init;
+ 
+function init() {
+   console.log("Adding input listener to all input fields");
+   // add an input listener to all input fields
+   var listOfInputsInForm = document.querySelectorAll("input");
+   for(var i= 0; i < listOfInputsInForm.length; i++) {
+      addInputListener(listOfInputsInForm[i]);
+   }
+   // restore form content with previously saved values
+   restoreFormContent();
+}
 ```
 
 And here is the addInputListener(inputField) function. It takes an input field as parameter and attaches an oninput listener to it, that will save the field\'s content each time a value is entered. The key will be the id of the input field (*line 3*):
 ```
-> function addInputListener(inputField) {
->
->     inputField.addEventListener('input', function(event) {
->
->         localStorage.setItem(inputField.id, inputField.value);
->
->      }, false);
->
-> }
+function addInputListener(inputField) {
+    inputField.addEventListener('input', function(event) {
+        localStorage.setItem(inputField.id, inputField.value);
+     }, false);
+}
 ```
 
 Note that at *line 2*, we use addEventListener (that is not using the oninput property here). adddEventListener doesnot replace existing oninput definitions and keep all existing listeners unchanged.
@@ -17911,27 +17887,28 @@ Note that at *line 2*, we use addEventListener (that is not using the oninpu
 <h4>Restore all input fields\' content using a generic function</h4>
 
 We have seen how to save all input fields\' content on the fly. Now, let\'s see how we can restore saved values and update the form. This is done using the function restoreFormContent():
+
 ```
-> function restoreFormContent() {
->    console.log("restoring form content from localStorage");
->    // get the list of all input elements in the form
->    var listOfInputsInForm = document.querySelectorAll("input");
->    // For each input element,
->    // - get its id (that is also the key for it's saved content
->    // in the localStorage)
->    // - get the value associated with the id/key in the local
->    // storage
->    // - If the value is not undefined, restore the value
->    // of the input field
->    for(var i= 0; i < listOfInputsInForm.length; i++) {
->      var fieldToRestore = listOfInputsInForm[i];
->      var id = fieldToRestore.id;
->      var savedValue = localStorage.getItem(id);
->      if(savedValue !== undefined) {
->         fieldToRestore.value = savedValue;
->      }
->    }
-> }
+function restoreFormContent() {
+   console.log("restoring form content from localStorage");
+   // get the list of all input elements in the form
+   var listOfInputsInForm = document.querySelectorAll("input");
+   // For each input element,
+   // - get its id (that is also the key for it's saved content
+   // in the localStorage)
+   // - get the value associated with the id/key in the local
+   // storage
+   // - If the value is not undefined, restore the value
+   // of the input field
+   for(var i= 0; i < listOfInputsInForm.length; i++) {
+     var fieldToRestore = listOfInputsInForm[i];
+     var id = fieldToRestore.id;
+     var savedValue = localStorage.getItem(id);
+     if(savedValue !== undefined) {
+        fieldToRestore.value = savedValue;
+     }
+   }
+}
 ```
 
 In this function, we first get the list of input fields (*line 5*), then iterate on it (*line 14*). For each input field, we get its id, which value is the key in localStorage for the previous data saved for this field (*lines 15-16*). Then if the value is not undefined, we restore it by setting the value of the input field (*lines 19-20*).
@@ -17970,7 +17947,7 @@ Note that if all you need is to store session-based data in a manner that is mor
 
 <b>By using sessionStorage, the data you store will be scoped and therefore not leak across tabs!</b>
 
-<h3 is="6-2-7">6.2.7 Storing more than strings? Use JSON!</h3>
+<h3 id="6-2-7">6.2.7 Storing more than strings? Use JSON!</h3>
 
 Storing strings is all well and good, but it quickly becomes limiting: you may want to store more complex data with at least a modicum of structure.
 
@@ -19639,4 +19616,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-03-2022 10:09am</i></b></h3>
+<h3><b><i>08-04-2022 12:36am</i></b></h3>
