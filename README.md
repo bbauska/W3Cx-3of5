@@ -4852,11 +4852,11 @@ This is more an example than a tutorial. Maurice, a student who followed the pre
 Here is the online example. We recommend that you look at the source code:
 
 <h3 id="ch2-3-1">2.3.1 HTML5 Captioning</h3>
-
-This section introduces the HTML5 \<track\> element, useful for adding closed captions, subtitles, descriptions, and metadata to your videos. It comes with a new JavaScript API.
+<p>
+This section introduces the HTML5 &lt;track&gt; element, useful for adding closed captions, subtitles, descriptions, and metadata to your videos. It comes with a new JavaScript API.
 
 The WebVTT format used for describing a track file is also presented in this chapter.
-
+</p>
 <h4>Most of the major desktop browsers support HTML5 captioning</h4>
 
 Please check the <a href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the \<track\> element support by browsers.
@@ -4874,9 +4874,9 @@ The accessibility features of TV programs often propose both options for people 
 <h4>Typical use: add a subtitle/caption track to a &lt;video&gt; element</h4>
 
 <h4>Important warning!!</h4>
-
-The \<track\> element cannot be used with a file:// URL. Please use https:// and a Web server. Your server must use a special MIME format for the .vtt files: text/vtt;charset=utf-8 (set by default on most servers now).
-
+<p>
+The &lt;track&gt; element cannot be used with a file:// URL. Please use https:// and a Web server. Your server must use a special MIME format for the .vtt files: text/vtt;charset=utf-8 (set by default on most servers now).
+</p>
 <h4>Examples of the lines to add to an Apache Web server:</h4>
 
 ```
@@ -4884,23 +4884,23 @@ The \<track\> element cannot be used with a file:// URL. Please use https:/
 2.  ForceType text/vtt;charset=utf-8
 3.  </Files>
 ```
-
+<p>
 It is worth mentioning that most browsers work well with WebVTT, even if the MIME type is not defined.
 
-Here is an example of a video element that includes a \<track\> element in the .vtt (WebVTT) format (<i>line 9 /i> in the source code shown below):
-
+Here is an example of a video element that includes a &lt;track&gt; element in the .vtt (WebVTT) format (<i>line 9</i> in the source code shown below):
+</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 86.  (xx) ------------------------------->
+<!--------------------------------- 86. example snapshot (104) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image086.png?raw=true"
-   alt=""
+   alt=""Example using a track element."
    width="65%">
 &nbsp;
 <br/>
-
-The example uses a \<track\> element to insert basic captions to the video: sounds and music are described, in addition to standard subtitles that correspond to what the different movie characters say.
-
+<p>
+The example uses a &lt;track&gt; element to insert basic captions to the video: sounds and music are described, in addition to standard subtitles that correspond to what the different movie characters say.
+</p>
 ```
 <video height="272" width="640"
        poster="https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg"
@@ -4962,10 +4962,11 @@ Note the use of some new attributes in the \<track\> element:
 </ul>
 
 <h3 id="ch2-3-2">2.3.2 The WebVTT Format</h3>
-
-The \"[WebVTT: The Web Video Text Tracks Format](http://dev.w3.org/html5/webvtt/)\" defines files that contain text for captions and subtitles, and much more\... The WebVTT files are used with the src attribute of the \<track\> element, that can be used inside a \<video\>\...\</video\>.
+<p>
+The "<a href="http://dev.w3.org/html5/webvtt/">WebVTT: The Web Video Text Tracks Format</a>" defines files that contain text for captions and subtitles, and much more\... The WebVTT files are used with the src attribute of the &lt;track&gt; element, that can be used inside a &lt;video&gt;...&lt;/video&gt;.
 
 In the interactive example presented before, we used a file called sintel-captions.vtt:
+</p>
 ```
 <video height="272" width="640"
        poster="https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg"
@@ -4977,7 +4978,8 @@ In the interactive example presented before, we used a file called sintel-capti
 </video>
 ```
 
-And here is an extract of the corresponding [sintel-captions.vtt](https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt) file:
+And here is an extract of the corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt">sintel-captions.vtt</a> file:
+
 ```
 1.  WEBVTT
 2.  
@@ -5123,12 +5125,13 @@ And if you\'ve also got it in mp4/H264 and in webm formats, here is how yo
 At <i>line 9</i>, we added a \<track\> element to add English subtitles, as the guitar teacher there is speaking in French. We will now explain how we created this subtitle track.
 
 <h4>Adding subtitles to the video</h4>
-
+<p>
 Now, we need to create a WebVTT file for this video. How can we synchronize an English translation of what the guitar teacher says in French?
 
 Many tools - both free and commercial - are available to add subtitles to a video. Most are native applications you need to install on your computer. However, a free and very practical tool is available for doing this 100% in a Web browser: <a href="https://amara.org/en/">amara</a>.
 
-Go to the above Web site, click on the \"subtitle a video\" link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it\'s better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.
+Go to the above Web site, click on the "subtitle a video" link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it's better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 88. example subtitles and captions (109) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5139,7 +5142,7 @@ Go to the above Web site, click on the \"subtitle a video\" link, then follow t
 &nbsp;
 <br/>
 
-Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:
+<p>Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 99. youtube make subtitles (110) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5238,11 +5241,11 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 <h4>How to position the subtitles</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 92.  (xx) ------------------------------->
+<!----------------------- 92. example video: positioning subtitles (112) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image092.png?raw=true"
-   alt=""
+   alt="Example video: positioning subtitles."
    width="65%">
 &nbsp;
 <br/>
@@ -5252,7 +5255,7 @@ The video example tests nearly all the possibilities for positioning subtitles/
 It is possible to locate the cues in the video viewport using absolute or relative values. The attributes that position the text are located on the same line as the cue definition, like at *line 9* of the previous WebVTT example file:
 
 ```
-9.  00:00:11.000 \--\> 00:00:15.000** position:5% align:start**
+9.  00:00:11.000 \--\> 00:00:15.000<b> position:5% align:start</b>
 10. This cue is positioned at the left side of the video.
 ```
 
@@ -5342,7 +5345,7 @@ Adding chapters is very similar to adding subtitles/captions. Look at *line 5*�
 2.      <source src="webvtt_talk.webm">
 3.      <source src="webvtt_talk.mp4">
 4.      <source src="webvtt_talk.ogv">
-5.      <track id="nav" src="webvtt_talk_navigation.vtt" **kind="chapters"** srclang="en">
+5.      <track id="nav" src="webvtt_talk_navigation.vtt" <b>kind="chapters"<b> srclang="en">
 6.      <track id="cc" src="webvtt_talk_captions.vtt" kind="captions"
 7.            label="captions" srclang="en" default>
 8.  </video>
@@ -5653,7 +5656,7 @@ startWebCam();
 </script>
 ```
 
-**HTTPS is mandatory:** for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.
+<b>HTTPS is mandatory:<b> for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.
 
 Support of getUserMedia/stream is [very good in all modern browsers](https://caniuse.com/stream), including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.
 
@@ -5771,8 +5774,15 @@ Code source:
 
 <h4> Applying CSS effects on a video element with a live webcam</h4>
 
-*************************** image ***************************************
-![Resulting image of Michel Buffa using his WebCam with css filter effects on live stream](media/image108.jpeg){width="3.0in" height="4.110464785651794in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 108. example: css filter effects (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image108.jpeg?raw=true"
+   alt="Resulting image of Michel Buffa using his WebCam with css filter effects on live stream."
+   width="30%">
+&nbsp;
+<br/>
 
 Try this example that shows how to use the getUserMedia API. Note the CSS effects (click on the video to cycle from one effect to another):
 
@@ -5909,110 +5919,75 @@ The trick is to copy and paste the current image from the video stream into a 
 
 <h4>JS</h4>
 ```
-> //\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+//\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+// GET USER MEDIA CODE
+//\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+let video;
+let webcamStream;
+function startWebcam() {
+// request video and audio stream from the user\'s webcam
+navigator.mediaDevices.getUserMedia({
+audio: true,
+video: true
 >
-> // GET USER MEDIA CODE
->
-> //\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
->
-> let video;
->
-> let webcamStream;
->
-> function startWebcam() {
->
-> // request video and audio stream from the user\'s webcam
->
-> navigator.mediaDevices.getUserMedia({
->
-> audio: true,
->
-> video: true
->
-> }).then((stream) =\> {
->
-> video = document.querySelector(\'#video\');
->
-> video.srcObject = stream;
->
-> video.play();
->
-> webcamStream = stream;
->
-> }).catch((error) =\> {
->
-> console.log(\'navigator.getUserMedia error: \', error);
->
-> });
->
-> }
->
-> function stopWebcam() {
->
-> webcamStream.getTracks()\[0\].stop(); // audio
->
-> webcamStream.getTracks()\[1\].stop(); // video
->
-> }
->
-> //\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
->
-> // TAKE A SNAPSHOT CODE
->
-> //\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
->
-> var canvas, ctx;
->
-> function init() {
->
-> // Get the canvas and obtain a context for
->
-> // drawing in it
->
-> canvas = document.getElementById(\"myCanvas\");
->
-> ctx = canvas.getContext(\'2d\');
->
-> }
->
-> function snapshot() {
->
-> // Draws current image from the video element into the canvas
->
-> ctx.drawImage(video, 0,0, canvas.width, canvas.height);
->
-> }
+}).then((stream) =\> {
+video = document.querySelector(\'#video\');
+video.srcObject = stream;
+video.play();
+webcamStream = stream;
+}).catch((error) =\> {
+console.log(\'navigator.getUserMedia error: \', error);
+});
+}
+function stopWebcam() {
+webcamStream.getTracks()\[0\].stop(); // audio
+webcamStream.getTracks()\[1\].stop(); // video
+}
+//---------------------
+// TAKE A SNAPSHOT CODE
+//\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+var canvas, ctx;
+function init() {
+// Get the canvas and obtain a context for
+// drawing in it
+canvas = document.getElementById(\"myCanvas\");
+ctx = canvas.getContext(\'2d\');
+}
+function snapshot() {
+// Draws current image from the video element into the canvas
+ctx.drawImage(video, 0,0, canvas.width, canvas.height);
+}
 ```
 
 <h4>CSS</h4>
 ```
-> canvas {
-> border:1px solid black;
-> }
+canvas {
+border:1px solid black;
+}
 ```
 
 <h4>HTML</h4>
 ```
-> <!DOCTYPE html>
-> <html lang="en">
-> <head>
-> <title>WebCam screenshot</title>
-> <meta charset="utf-8"/>
-> </head>
-> <body onload="init();">
-> <h1>Take a snapshot of the current video stream</h1>
-> Check the CSS and JavaScript tabs. Click on the Start WebCam button.
-> <p>
-> <button onclick="startWebcam();">Start WebCam</button\>
-> <button onclick="stopWebcam();">Stop WebCam</button>
-> <button onclick="snapshot();">Prendre un screenshot</button>
-> </p>
-> <video onclick="snapshot(this);" width=200 height=200 id="video" controls autoplay></video>
-> <p>
-> Screenshots : <p>
-> <canvas id="myCanvas" width="200" height="150"></canvas>
-> </body>
-> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WebCam screenshot</title>
+<meta charset="utf-8"/>
+</head>
+<body onload="init();">
+<h1>Take a snapshot of the current video stream</h1>
+Check the CSS and JavaScript tabs. Click on the Start WebCam button.
+<p>
+<button onclick="startWebcam();">Start WebCam</button\>
+<button onclick="stopWebcam();">Stop WebCam</button>
+<button onclick="snapshot();">Prendre un screenshot</button>
+</p>
+<video onclick="snapshot(this);" width=200 height=200 id="video" controls autoplay></video>
+<p>
+Screenshots : <p>
+<canvas id="myCanvas" width="200" height="150"></canvas>
+</body>
+</html>
 ```
 
 We will look at this example in greater detail in the next course section (related to the \<canvas\> element).
@@ -6062,108 +6037,108 @@ For more information, this [article on MDN about the getUserMedia API](https:/
 <b>JS</b>
 
 ```
-> var vgaButton, qvgaButton, hdButton, dimensions, video, stream;
-> function init() {
-> vgaButton = document.querySelector('button#vga');
-> qvgaButton = document.querySelector('button#qvga');
-> hdButton = document.querySelector('button#hd');
-> dimensions = document.querySelector('p#dimensions');
-> video = document.querySelector('video');
-> // Defines event listeners for the buttons that set the resolution
-> qvgaButton.onclick = function() {
-> getMedia(qvgaConstraints);
-> };
-> vgaButton.onclick = function() {
-> getMedia(vgaConstraints);
-> };
-> hdButton.onclick = function() {
-> getMedia(hdConstraints);
-> };
-> // Trick: check regularly the size of the video element and display it
-> // When getUserMedia is called the video element changes it sizes but for
-> // a while its size is zero pixels... o we check every half a second
-> video.addEventListener('play', function() {
-> setTimeout(function() {
-> displayVideoDimensions();
-> }, 500);
-> });
-> }
-> // The different values for the constraints on resolution
-> var qvgaConstraints = {
-> video: {
-> width: { max: 320 },
-> height: { max: 180 }
-> }
-> };
-> var vgaConstraints = {
-> video: {
-> width: { max: 640 },
-> height: { max: 360 }
-> }
-> };
-> var hdConstraints = {
-> video: {
-> width: { min: 1280 },
-> height: { min: 720 }
-> }
-> };
-> // The function that is called when a button has been clicked: starts the video^
-> // with the preferred resolution^
-> function getMedia(constraints) {^
-> if (!!stream) {^
-> video.srcObject = null;^
-> stream.getTracks()[0].stop();^
-> }^
-> navigator.mediaDevices.getUserMedia(constraints)^
-> .then((stream) => {^
-> video.srcObject = stream;^
-> video.play();^
-> window.stream = stream;^
-> })
-> .catch((error)\ =\>{^
-> console.log(\'navigator.getUserMedia error:\ \',\ error);^
-> });^
-> }^
-> ^//\ util function that is called by the setInterval(\...)\ every 0.5s,\ for^
-> ^//\ displaying the video dimensions^
-> ^function displayVideoDimensions()\ {^
-> ^dimensions.innerHTML =\ \'Actual video dimensions:\ \'\ +\ video.videoWidth +^
-> ^\'x\'\ +\ video.videoHeight +\ \'px.\';^
-> ^}^
+var vgaButton, qvgaButton, hdButton, dimensions, video, stream;
+function init() {
+vgaButton = document.querySelector('button#vga');
+qvgaButton = document.querySelector('button#qvga');
+hdButton = document.querySelector('button#hd');
+dimensions = document.querySelector('p#dimensions');
+video = document.querySelector('video');
+// Defines event listeners for the buttons that set the resolution
+qvgaButton.onclick = function() {
+getMedia(qvgaConstraints);
+};
+vgaButton.onclick = function() {
+getMedia(vgaConstraints);
+};
+hdButton.onclick = function() {
+getMedia(hdConstraints);
+};
+// Trick: check regularly the size of the video element and display it
+// When getUserMedia is called the video element changes it sizes but for
+// a while its size is zero pixels... o we check every half a second
+video.addEventListener('play', function() {
+setTimeout(function() {
+displayVideoDimensions();
+}, 500);
+});
+}
+// The different values for the constraints on resolution
+var qvgaConstraints = {
+video: {
+width: { max: 320 },
+height: { max: 180 }
+}
+};
+var vgaConstraints = {
+video: {
+width: { max: 640 },
+height: { max: 360 }
+}
+};
+var hdConstraints = {
+video: {
+width: { min: 1280 },
+height: { min: 720 }
+}
+};
+// The function that is called when a button has been clicked: starts the video^
+// with the preferred resolution^
+function getMedia(constraints) {^
+if (!!stream) {^
+video.srcObject = null;^
+stream.getTracks()[0].stop();^
+}^
+navigator.mediaDevices.getUserMedia(constraints)^
+.then((stream) => {^
+video.srcObject = stream;^
+video.play();^
+window.stream = stream;^
+})
+.catch((error)\ =\>{^
+console.log(\'navigator.getUserMedia error:\ \',\ error);^
+});^
+}^
+^//\ util function that is called by the setInterval(\...)\ every 0.5s,\ for^
+^//\ displaying the video dimensions^
+^function displayVideoDimensions()\ {^
+^dimensions.innerHTML =\ \'Actual video dimensions:\ \'\ +\ video.videoWidth +^
+^\'x\'\ +\ video.videoHeight +\ \'px.\';^
+^}^
 ```
 
 <h4>CSS</h4>
 ```
-> video {
-> border:1px solid;
-> }
+video {
+border:1px solid;
+}
 ```
 
 <h4>HTML</h4>
 ```
 > <!DOCTYPE html>
-> <html lang="en"\>
+> <html lang="en">
 > <head>
 > <meta charset="utf-8"/>
-> <title>getUserMedia constraints for Webcam resolutions\</title\>
+> <title>getUserMedia constraints for Webcam resolutions</title>
 > </head>
 > <body onload="init();">
 > <h1>Set the camera resolution</h1>
 > Example adapted from:
-> \<a href=\"https://www.simpl.info/getusermedia/constraints/\"\>
+> <a href="https://www.simpl.info/getusermedia/constraints/">
 > https://www.simpl.info/getusermedia/constraints/
-> \</a\>
-> \<br\>
-> \<p\>Click a button to call \<code\>getUserMedia()\</code\> with appropriate resolution. \</p\>
-> \<div id=\"buttons\"\>
-> \<button id=\"qvga\"\>QVGA\</button\>
-> \<button id=\"vga\"\>VGA\</button\>
-> \<button id=\"hd\"\>HD\</button\>
-> \</div\>
-> \<p id=\"dimensions\"\>\</p\>
-> \<video autoplay\>\</video\>
-> \</body\>
-> \</html\>
+> </a>
+> <br>
+> <p>Click a button to call <code>getUserMedia()</code> with appropriate resolution. </p>
+> <div id="buttons">
+> <button id="qvga">QVGA</button>
+> <button id="vga">VGA</button>
+> <button id="hd">HD</button>
+> </div>
+> <p id="dimensions"></p>
+> <video autoplay></video>
+> </body>
+> </html>
 ```
 
 <!------------------------------------------------------------------------------------------------>
@@ -6175,7 +6150,7 @@ For more information, this [article on MDN about the getUserMedia API](https:/
    alt="" />
 </p>
 
-Code source extract related to the \"constraint\" object which specifies the desired resolutions:
+Code source extract related to the "constraint" object which specifies the desired resolutions:
 
 ```
 1.  var vgaConstraints = {
@@ -6193,12 +6168,12 @@ Code source extract related to the \"constraint\" object which specifies the des
 13.  
 14. let constraints = hdConstraints;
 15. navigator.mediaDevices.getUserMedia(constraints)
-16. .then((stream) =\> {\...}
+16. .then((stream) => {...}
 ```
 
 <h4>How to check which resolutions are supported by a browser?</h4>
 
-Use this [Web app that ](https://webrtchacks.github.io/WebRTC-Camera-Resolution/)systematically tests a set of \"preferred resolutions\" and compared them to the actual resolutions returned by the browser. Remember that the requested resolution is a hint, and there is no real guarantee that your configuration will allow it.
+Use this [Web app that ](https://webrtchacks.github.io/WebRTC-Camera-Resolution/)systematically tests a set of "preferred resolutions" and compared them to the actual resolutions returned by the browser. Remember that the requested resolution is a hint, and there is no real guarantee that your configuration will allow it.
 
 <h4>Selecting the front or rear camera on smartphones</h4>
 
@@ -6217,17 +6192,17 @@ Here are some other constraints you can set. In particular, look at the ones for
 11. **// front and back camera (mobile), some examples**
 12. **var front = false;**
 13. 
-14. document.getElementById(\'flip-button\').onclick = function() {\
-        front = !front;\
+14. document.getElementById('flip-button').onclick = function() {
+        front = !front;
     };
 15. **// toggle front and back camera (mobile) by clicking a button**
-16. **constraints = { video: { facingMode: (front? \"user\" : \"environment\") } };**
+16. **constraints = { video: { facingMode: (front? "user" : "environment") } };**
 17.  
 18. **// prefer front camera**
-19. constraints = { audio: true,** video: { facingMode: \"user\" }** }
+19. constraints = { audio: true,** video: { facingMode: "user" }** }
 20.  
 21. **// require rear camera**
-22. constraints = { audio: true,** video: { facingMode: { exact: \"environment\" } }** }
+22. constraints = { audio: true,** video: { facingMode: { exact: "environment" } }** }
 ```
 
 <h4>Select input/output for audio and video streams</h4>
@@ -6247,17 +6222,17 @@ Source code extract:
 ```
 1.  function gotDevices(deviceInfos) {
 2.      for (var i = 0; i !== deviceInfos.length; ++i) {
-3.          var deviceInfo = deviceInfos\[i\];
-4.          console.log(\"device with id: \" + deviceInfo.deviceId);
+3.          var deviceInfo = deviceInfos[i];
+4.          console.log("device with id: " + deviceInfo.deviceId);
 5.          // possible values: audioinput, audiooutput, videoinput
-6.          console.log(\"device with kind: \" + deviceInfo.kind);
-7.          // \'speaker\' or \'camera\' for example
-8.          console.log(\"device with label: \" + deviceInfo.label);
-9.          //\... should build a menu, test kind/label and set
+6.          console.log("device with kind: " + deviceInfo.kind);
+7.          // 'speaker' or 'camera' for example
+8.          console.log("device with label: " + deviceInfo.label);
+9.          //... should build a menu, test kind/label and set
 10.         // audioSource and videoSource variables
 11.     }
 12. }
-13. // \...
+13. // ...
 14. var constraints = {
 15.     audio: {**deviceId: audioSource **? {exact: audioSource} : undefined},
 16.     video: {**deviceId: videoSource **? {exact: videoSource} : undefined}
@@ -6282,46 +6257,46 @@ For example, the MediaRecorder API is used to record the video stream from a Web
    alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element" />
 </p>
 
-Let\'s record, replay and download the video stream captured using a Webcam. You can test it below by clicking on \"CodePen\" at the top right:
+Let's record, replay and download the video stream captured using a Webcam. You can test it below by clicking on "CodePen" at the top right:
 
 <b>JS</b>
 
 ```
 var mediaRecorder;
 var recordedBlobs;
-var gumVideo = document.querySelector(\'video#gum\');
-var recordedVideo = document.querySelector(\'video#recorded\');
-var recordButton = document.querySelector(\'button#record\');
-var playButton = document.querySelector(\'button#play\');
-var downloadButton = document.querySelector(\'button#download\');
+var gumVideo = document.querySelector('video#gum');
+var recordedVideo = document.querySelector('video#recorded');
+var recordButton = document.querySelector('button#record');
+var playButton = document.querySelector('button#play');
+var downloadButton = document.querySelector('button#download');
 recordButton.onclick = toggleRecording;
 playButton.onclick = play;
 downloadButton.onclick = download;
 // get stream using getUserMedia
 navigator.mediaDevices.getUserMedia({ audio: true,video: true})
-.then((stream) =\> {
+.then((stream) => {
 recordButton.disabled = false;
-console.log(\'getUserMedia() got stream: \', stream);
+console.log('getUserMedia() got stream: ', stream);
 window.stream = stream;
 gumVideo.srcObject = stream;
 })
-.catch((error) =\> {
-console.log(\'navigator.getUserMedia error: \', error);
+.catch((error) => {
+console.log('navigator.getUserMedia error: ', error);
 });
 function handleDataAvailable(event) {
-if (event.data && event.data.size \> 0) {
+if (event.data && event.data.size > 0) {
 recordedBlobs.push(event.data);
 }
 }
 function handleStop(event) {
-console.log(\'Recorder stopped: \', event);
+console.log('Recorder stopped: ', event);
 }
 function toggleRecording() {
-if (recordButton.textContent === \'Start Recording\') {
+if (recordButton.textContent === 'Start Recording') {
 startRecording();
 } else {
 stopRecording();
-recordButton.textContent = \'Start Recording\';
+recordButton.textContent = 'Start Recording';
 playButton.disabled = false;
 downloadButton.disabled = false;
 }
@@ -6336,13 +6311,13 @@ console.error('Exception while creating MediaRecorder: ' + e);
 return;
 }
 console.log('Created MediaRecorder', mediaRecorder);
-recordButton.textContent = 'Stop Recording\';
+recordButton.textContent = 'Stop Recording';
 playButton.disabled = true;
 downloadButton.disabled = true;
 mediaRecorder.onstop = handleStop;
 mediaRecorder.ondataavailable = handleDataAvailable;
 mediaRecorder.start(10); // collect 10ms of data
-console.log(\'MediaRecorder started\', mediaRecorder);
+console.log('MediaRecorder started', mediaRecorder);
 }
 > function stopRecording() {
 > mediaRecorder.stop();
@@ -6356,10 +6331,10 @@ console.log(\'MediaRecorder started\', mediaRecorder);
 > function download() {
 > var blob = new Blob(recordedBlobs, {type: 'video/webm'});
 > var url = window.URL.createObjectURL(blob);
-> var a = document.createElement(\'a\');
+> var a = document.createElement('a');
 > a.style.display = 'none';
 > a.href = url;
-> a.download = 'test.webm\';
+> a.download = 'test.webm';
 > document.body.appendChild(a);
 > a.click();
 > setTimeout(function() {
@@ -6449,7 +6424,7 @@ margin: 0 10px 10px 0;
 </html>
 ```
 
-Click \"start recording\", then press the play button on the video element on the right of the app. You can also click the \"download\" button to download a .webm file, playable offline with a media player such as [VLC](https://www.videolan.org/) or online in a Web page with the \<video\> element.
+Click "start recording", then press the play button on the video element on the right of the app. You can also click the "download" button to download a .webm file, playable offline with a media player such as [VLC](https://www.videolan.org/) or online in a Web page with the <video> element.
 
 <h4>Five steps are needed to use the mediaRecorder object</h4>
 
@@ -6458,7 +6433,7 @@ Click \"start recording\", then press the play button on the video element on th
 <h4>Source code extract:</h4>
 
 ```
-1.  var options = {mimeType: \'video/webm; codecs=vp9\'};
+1.  var options = {mimeType: 'video/webm; codecs=vp9'};
 2.  mediaRecorder = new MediaRecorder(stream, options);
 ```
 
@@ -6470,15 +6445,15 @@ Click \"start recording\", then press the play button on the video element on th
 <h4>Source code extract:</h4>
 
 ```
-1.  var recordedChunks = \[\]; // will hold the recorded stream
+1.  var recordedChunks = []; // will hold the recorded stream
 2.  mediaRecorder.ondataavailable = handleDataAvailable;
 3.  mediaRecorder.start();
 4.   
 5.  function handleDataAvailable(event) {
-6.     if (event.data.size \> 0) {
+6.     if (event.data.size > 0) {
 7.        recordedChunks.push(event.data);
 8.     } else {
-9.     // \...
+9.     // ...
 10. }
 ```
    
@@ -6489,9 +6464,9 @@ Click \"start recording\", then press the play button on the video element on th
 <li><i>Lines 5-10</i>: this function collects the chunk of data that corresponds to a few seconds of video, and stores it in the recordedChunks byte array.</li>
 </ul>
 
-<h4>3 - When you\'ve finished recording, tell the mediaRecorder to stop</h4>
+<h4>3 - When you've finished recording, tell the mediaRecorder to stop</h4>
 
-When you\'re done, you need to call the stop() method of the mediaRecorder object. This will end the periodic execution of the handleDataAvailable method, and stop the data capture.
+When you're done, you need to call the stop() method of the mediaRecorder object. This will end the periodic execution of the handleDataAvailable method, and stop the data capture.
 ```
 1.  mediaRecorder.stop();
 ```
@@ -6500,7 +6475,7 @@ When you\'re done, you need to call the stop() method of the mediaRecorder obj
 
 This piece of code creates a blob with the recordedChunks array. Use the URL.createObjectURL(recordedChunks) standard method to create another object that can be used as a value to set the src attribute of an HTML5 video element.
 
-Like that, the recorded stream can be played using a standard HTML5 \<video\> element.
+Like that, the recorded stream can be played using a standard HTML5 <video> element.
 
 ```
 1.  function play() {
@@ -6517,14 +6492,14 @@ A trick consists in creating, on the fly, an invisible link with a download at
 ```
 1.  function download() {
 2.  var blob = new Blob(recordedChunks, {
-3.  type: \'video/webm\'
+3.  type: 'video/webm'
 4.  });
 5.  var url = URL.createObjectURL(blob);
-6.  var a = document.createElement(\'a\');
+6.  var a = document.createElement('a');
 7.  document.body.appendChild(a);
-8.  a.style = \'display: none\';
+8.  a.style = 'display: none';
 9.  a.href = url;
-10. a.download = \'test.webm\';
+10. a.download = 'test.webm\';
 11. a.click();
 12. window.URL.revokeObjectURL(url);
 13. }
@@ -6573,31 +6548,31 @@ Let\'s look at [ this example on JS Bin](https://jsbin.com/visariz/1/edit?html
 |    |                                                                                                                                                                        |
 | 3  |   \<[**head**](https://december.com/html/4/element/head.html)\>                                                                                                        |
 |    |                                                                                                                                                                        |
-| 4  |   \<[**meta**](https://december.com/html/4/element/meta.html) charset=utf-8 /\>                                                                                        |
+| 4  |   \<[<b>meta<b>](https://december.com/html/4/element/meta.html) charset=utf-8 /\>                                                                                        |
 |    |                                                                                                                                                                        |
-| 5  |   \<[**title**](https://december.com/html/4/element/title.html)\>Web Audio API\</[**title**](https://december.com/html/4/element/title.html)\>                         |
+| 5  |   \<[<b>title<b>](https://december.com/html/4/element/title.html)\>Web Audio API\</[<b>title<b>](https://december.com/html/4/element/title.html)\>                         |
 |    |                                                                                                                                                                        |
-| 6  |   \<[**script**](https://december.com/html/4/element/script.html)\>                                                                                                    |
+| 6  |   \<[<b>script<b>](https://december.com/html/4/element/script.html)\>                                                                                                    |
 |    |                                                                                                                                                                        |
 | 7  |    console.log(\"Some JavaScript code has been executed\");                                                                                                            |
 |    |                                                                                                                                                                        |
-| 8  |   \</[**script**](https://december.com/html/4/element/script.html)\>                                                                                                   |
+| 8  |   \</[<b>script<b>](https://december.com/html/4/element/script.html)\>                                                                                                   |
 |    |                                                                                                                                                                        |
-| 9  |   \</[**head**](https://december.com/html/4/element/head.html)\>                                                                                                       |
+| 9  |   \</[<b>head<b>](https://december.com/html/4/element/head.html)\>                                                                                                       |
 |    |                                                                                                                                                                        |
-| 10 |   \<[**body**](https://december.com/html/4/element/body.html)\>                                                                                                        |
+| 10 |   \<[<b>body<b>](https://december.com/html/4/element/body.html)\>                                                                                                        |
 |    |                                                                                                                                                                        |
-| 11 |     \<[**h1**](https://december.com/html/4/element/h1.html)\>JavaScript debugging using the dev tool console\</[**h1**](https://december.com/html/4/element/h1.html)\> |
+| 11 |     \<[<b>h1<b>](https://december.com/html/4/element/h1.html)\>JavaScript debugging using the dev tool console\</[<b>h1<b>](https://december.com/html/4/element/h1.html)\> |
 |    |                                                                                                                                                                        |
-| 12 |   \</[**body**](https://december.com/html/4/element/body.html)\>                                                                                                       |
+| 12 |   \</[<b>body<b>](https://december.com/html/4/element/body.html)\>                                                                                                       |
 |    |                                                                                                                                                                        |
-| 13 | \</[**html**](https://december.com/html/4/element/html.html)\>                                                                                                         |
+| 13 | \</[<b>html<b>](https://december.com/html/4/element/html.html)\>                                                                                                         |
 +====+========================================================================================================================================================================+
 +----+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The simplest way to add JavaScript code in an HTML page, is by using the \<script\>\...\</script\> element.
 
-**The code in this example is executed sequentially when the page is loaded**: the JavaScript code is executed before the browser could see the rest of the page (as the \<script\>\</script\> is located before the \<body\>).
+<b>The code in this example is executed sequentially when the page is loaded<b>: the JavaScript code is executed before the browser could see the rest of the page (as the \<script\>\</script\> is located before the \<body\>).
 
 The H1 element, for example, does not exist in the Document Object Model, and has not yet been displayed when the JavaScript code is executed. If we move the \<script\>\</script\> at the end of the document, then the H1 would have been built before the JavaScript code is executed.
 
@@ -6624,7 +6599,7 @@ It is also possible to use the \"real dev. tool console\", and for this I recomm
    alt="View of the JavaScript console" />
 </p>
 
-Ok, now, let\'s make an error: change console.log() into conso**lll**e.log(). Let\'s see what happens:
+Ok, now, let\'s make an error: change console.log() into conso<b>lll<b>e.log(). Let\'s see what happens:
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 118. view of the javascript console (xxx) ------------------->
@@ -6736,7 +6711,7 @@ A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), th
 
 Performance is  good and animation is generally very smooth, since most Web browsers (mobile and desktop) support hardware acceleration.
 
-**Note**: 3D drawing using the WebGL API is also possible in a \<canvas\>, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a \<canvas\>: [BabylonJS](https://www.babylonjs.com/) and [ThreeJS](https://threejs.org/).
+<b>Note<b>: 3D drawing using the WebGL API is also possible in a \<canvas\>, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a \<canvas\>: [BabylonJS](https://www.babylonjs.com/) and [ThreeJS](https://threejs.org/).
 
 <h4>External resources</h4>
 
@@ -6807,13 +6782,13 @@ The coordinate system used for drawing in canvases is similar to the one used by
    alt="Coordinate system" />
 </p>
 
--   **X** axis is horizontal, directed to the right 
+-   <b>X<b> axis is horizontal, directed to the right 
 
--   **Y** axis is vertical, directed downwards
+-   <b>Y<b> axis is vertical, directed downwards
 
 <h3 id="ch3-2-6">3.2.6 Drawing Rectangles in a Canvas</h3>
 
-Small errata about what I said in the above video: \"*So let\'s get the canvas using the DOM API method document.getElementById() or better, use document.querySelector() that is a more recent method **from the DOM API**\"*..
+Small errata about what I said in the above video: \"*So let\'s get the canvas using the DOM API method document.getElementById() or better, use document.querySelector() that is a more recent method <b>from the DOM API**\"*..
 
 The part is bold is not correct: querySelector, technically, comes from [Selectors API](https://www.w3.org/TR/selectors-api/). Just in case some people would like to check the specification.\\
 
@@ -10327,11 +10302,11 @@ We set a starting point in *line 6*: moveTo(\...), then set the control and e
 Try this:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 159.  (xxx) -------------------------------->
+<!------------------ 159. example: lines connected with quadratic curve (216) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image159.png?raw=true"
-   alt="image159.png - "
+   alt="image159.png - Example: Lines connected with a quadratic curve."
    width="65%">
 &nbsp;
 <br/>
@@ -10383,11 +10358,11 @@ context.stroke();
 We propose a useful function for drawing curved arrows. See this example:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------- 160.  (xxx) ------------>
+<!----------- 160. example: useful function for drawing curved arrows (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image160.png?raw=true"
-   alt=""
+   alt="Example: useful function for drawing curved arrows."
    width="65%">
 &nbsp;
 <br/>
@@ -10503,13 +10478,13 @@ border: 1px solid black;
 37.     ctx.restore();
 38. }
 ```
-
+<p>
 This function takes as parameters the start and end points, the control point of the curve, the arrow width, the width of the arrow head.
 
-It computes the angle of the arrow at its endpoint (*line 14*) in order to compute the rotated endpoints of the two lines of the arrow head *(lines 24* and *29*).
+It computes the angle of the arrow at its endpoint (<i>line 14</i>) in order to compute the rotated endpoints of the two lines of the arrow head <i>(lines 24</i> and <i>29</i>).
 
 Notice that once again, as we modify the context properties (color, lineWidth) in the body of the function, we save and restore the context at the beginning / end of the function.
-
+</p>
 <h3 id="ch3-4-12">3.4.12 Bézier curves</h3>
 
 <h4>Introduction</h4>
@@ -19616,4 +19591,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-04-2022 12:36am</i></b></h3>
+<h3><b><i>08-04-2022 7:30pm</i></b></h3>
