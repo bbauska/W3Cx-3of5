@@ -1846,7 +1846,7 @@ Also note the way we included a figure using the new "HTML5" method, using a &l
 &nbsp;
 <br/>
 
-Here is the CSS for the <figcaption> element we have used in the example (we did not apply any style to the <figure> element):
+<p>Here is the CSS for the &lt;figcaption&gt; element we have used in the example (we did not apply any style to the &lt;figure&gt; element):</p>
 
 <h4>HTML code:</h4>
 
@@ -2087,11 +2087,12 @@ This chart from the <a href="https://html5doctor.com/" target="_blank">HTML5 D
 
 <h3 id="ch1-3-5">1.3.5 Headings and Structural Elements</h3>
 
-We will now present some best practices for starting to use <section>, <article>, <nav>, <aside>, in particular concerning the use of headings (h1, h2, h3, h4, h5 and h6).
+We will now present some best practices for starting to use &lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;, in particular concerning the use of headings (h1, h2, h3, h4, h5 and h6).
 
 <h4>Use &lt;h1&gt;...&lt;h6&gt; for the headings</h4>
-
-Since the very beginning, HTML has had heading elements: <h1>...<h6>. These elements are used to display headings with different sizes by default, when no CSS is used.  The following example shows 6 sentences that are surrounded by <h1>, <h2>, <h3>, <h4>, <h5> and <h6>:
+<p>
+Since the very beginning, HTML has had heading elements: &lt;h1&gt;...&lt;h6&gt;. These elements are used to display headings with different sizes by default, when no CSS is used.  The following example shows 6 sentences that are surrounded by &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; and &lt;h6&gt;:
+</p>
 
 <h1>This is a H1 heading</h1>
 
@@ -2105,7 +2106,7 @@ Since the very beginning, HTML has had heading elements: <h1>...<h6>. These ele
 
 <h6>This is a H6 heading</h6>
 
-These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. Here is the result for the previous example:
+These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define an outline of the document. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 25. headings 1 thru 6 (44) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -2136,6 +2137,7 @@ The HTML5 specification says that "each sectioning element potentially has a hea
     ...
 </body>
 ```
+
 <h4>... defines the header of a section <i>implicitly</i>, while:</h4>
 
 ```html5
