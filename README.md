@@ -459,15 +459,15 @@ The web consists of digital documents, referred to as web pages, that are viewab
 
 A collection of connected web pages that are publicly accessible and under a single domain name is referred to as a website.
 
-Web pages are connected using <a href="https://www.lifewire.com/hypertext-transfer-protocol-817944"  target="_blank">Hypertext Transfer Protocol</a> (HTTP), the coding language that allows you to visit any public web page. By clicking a <a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287">hyperlink</a> or entering a <a href="https://www.lifewire.com/what-is-a-url-2626035" target="_blank" rel="noopener noreferrer">Uniform Resource Locator</a> (URL), the browser uses this unique address to find and access a web page. <a href="https://www.lifewire.com/best-search-engines-2483352">Search engines</a> like Google make it easy to filter the billions of web pages now populating the web by locating the articles, videos, and other media you want to find based on your search criteria.
+Web pages are connected using <a href="https://www.lifewire.com/hypertext-transfer-protocol-817944"  target="_blank">Hypertext Transfer Protocol</a> (HTTP), the coding language that allows you to visit any public web page. By clicking a <a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287">hyperlink</a> or entering a <a href="https://www.lifewire.com/what-is-a-url-2626035" target="_blank" rel="noopener noreferrer">Uniform Resource Locator</a> (URL), the browser uses this unique address to find and access a web page. <a href="https://www.lifewire.com/best-search-engines-2483352">Search engines</a> like Google make it easy to filter the billions of web pages now populating the web by locating the articles, videos, and other media you want to find based on your search criteria.</p>
 </p>
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
 <h4>Final Verdict: You Can't Have the Web Without the Internet</h4>
-
-Plain and simple, the internet allows access to the World Wide Web. Without it, we have no way of accessing the thousands of websites out there. For most online needs, however, the web is the easiest to use. Each serves an important purpose.
+<p>
+Plain and simple, the internet allows access to the World Wide Web. Without it, we have no way of accessing the thousands of websites out there. For most online needs, however, the web is the easiest to use. Each serves an important purpose.</p>
 
 <h4 id="cha-2">Why Accessibility is Important</h4>
 
@@ -479,9 +479,9 @@ Plain and simple, the internet allows access to the World Wide Web. Without it, 
 The Web has become an essential aspect of our daily lives, and everyone should have access to this technology. Web accessibility focuses on ensuring equivalent access for people with disabilities. It is increasingly important to many organizations and governments from around the world, and has many business benefits. Access to information, including on the Web, is also recognized by the UN Convention on the Rights of Persons with Disabilities (CRPD).
 
 <h4>Who is impacted?</h4>
-
+<p>
 Web accessibility addresses all disabilities, including hearing, learning and cognitive, neurological, physical, speech, and visual disabilities. Some examples of Web accessibility features include:
-
+</p>
 <ul>
 <li><i>Captions</i> on audio and multimedia content for people who are hard of hearing;</li>
 <li><i>Clear and consistent layout</i> for people with learning and cognitive disabilities;</li>
@@ -592,10 +592,10 @@ Text alternatives ("alt text") are a primary way of making visual information ac
 <br/>
 
 <h4>History</h4>
+<p>
+As Web site layouts evolve, HTML5 structural elements such as lists, paragraphs, tables, etc. show their limits. Today, many Web sites offer navigation menus, tabbed panels, headers, footers, and so on. The way these "parts"' are implemented relies heavily on &lt;div&gt; and &lt;span&gt; elements with different id and class attributes, lots of CSS and lots of JavaScript code to apply custom styles and behaviors.
 
-As Web site layouts evolve, HTML5 structural elements such as lists, paragraphs, tables, etc. show their limits. Today, many Web sites offer navigation menus, tabbed panels, headers, footers, and so on. The way these "parts"' are implemented relies heavily on <div> and <span> elements with different id and class attributes, lots of CSS and lots of JavaScript code to apply custom styles and behaviors.
-
-However, there are some issues with this approach:
+However, there are some issues with this approach:</p>
 
 <ul>
 <li>id and class names differ from one developer to another, from one country to another, etc,</li>
@@ -604,19 +604,19 @@ However, there are some issues with this approach:
 <li>Web pages have become increasingly heavy over the years!</li>
 <li<These elements can not be handled by the Web browser natively...</li>
 </ul>
-
+<p>
 Even if differences exist between ids, classes and css/js implementations, they also share common behaviors, layouts, and "ways of doing things" that could be guessed at first glance by a human.
 
 So various studies have been conducted in order to identify the most popular ids, class names, widgets, etc. used on the Web:
 
-Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">article: </a>"During the creation of HTML5, Ian Hickson used Google's tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA ("Metadata Analysis and Mining Application"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics".
+Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">article: </a>"During the creation of HTML5, Ian Hickson used Google's tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA ("Metadata Analysis and Mining Application"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics".</p>
 
 <h4>New elements added to the HTML5 set</h4>
-
-The results of these surveys led to the addition of new structural elements in HTML5. For example, the very popular <div class="header"> led to the creation of a <header> element, <div class="aside"> to a <aside> element, etc.
+<p>
+The results of these surveys led to the addition of new structural elements in HTML5. For example, the very popular &lt;div class="header"&gt; led to the creation of a &lt;header&gt; element, &lt;div class="aside"&gt; to a &lt;aside&gt; element, etc.
 
 Finally, the 20 most popular ids and class names found in Hickson's and Opera's surveys gave birth to these new elements (click on the element's name to go to 
-the W3C specification about this element):
+the W3C specification about this element):</p>
 
 <h4>HTML5 structural elements with description</h4>
 <table>
@@ -661,11 +661,11 @@ the W3C specification about this element):
     <td>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document</b>.</td>
   </tr>
 </table>
+<p>
+And there is no <content> element even though the &lt;div class="content"&gt; was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is "default content". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between &lt;article&gt; and &lt;article&gt;.
 
-And there is no <content> element even though the <div class="content"> was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is "default content". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between <article> and </article>.
-
-Read also at the end of this section about the new <main> element. This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">part of the HTML5 recommendation</a> and  an integral part of the HTML document structure.
-
+Read also at the end of this section about the new &lt;main> element. This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">part of the HTML5 recommendation&lt;/a> and  an integral part of the HTML document structure.
+</p>
 <h4>External resources:</h4>
 <ul>
 <li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/" target="_blank" rel="noopener noreferrer">Structural Semantics: The Importance Of HTML5 Sectioning Elements.</a></li>
@@ -673,8 +673,8 @@ Read also at the end of this section about the new <main> element. This element 
 </ul>
 
 <h4>A blog example that uses the structural elements</h4>
-
-Let's study [an example we put on JsBin](https://jsbin.com/bucokav/edit?html,output) (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the "Bins/create milestone" menu, share your version with others in the forums, etc. Don't  hesitate to play with the source code, you will never break anything).
+<p>
+Let's study <a href="https://jsbin.com/bucokav/edit?html,output">an example we put on JsBin</a> (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the "Bins/create milestone" menu, share your version with others in the forums, etc. Don't  hesitate to play with the source code, you will never break anything).</p>
 
 <h4>Use a &lt;header&gt; at the top of the blog</h4>
 
@@ -687,8 +687,8 @@ Let's study [an example we put on JsBin](https://jsbin.com/bucokav/edit?html,ou
    width="25%">
 &nbsp;
 <br/>
-
-This is an example of one way to organize a blog. Here, we have designed the HTML page using a <header> element that contains the "Simple HTML5 blog" text that appears on top of the page.
+<p>
+This is an example of one way to organize a blog. Here, we have designed the HTML page using a &lt;header&gt; element that contains the "Simple HTML5 blog" text that appears on top of the page.</p>
 
 <h4>HTML code:</h4>
 
