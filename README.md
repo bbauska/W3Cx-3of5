@@ -3923,7 +3923,7 @@ The <video> element is supported by all major browsers. See the <a href="http
 
 Help! <video src="my youtube video URL"></video> does not work! 
 
-<b>BEWARE</b>: *you cannot directly embed videos from most of the popular Web sites such as YouTube, Dailymotion, Vimeo, etc. For commercial reasons, and because advertising is automatically added to the videos, these Web sites do not allow "regular" embedding of their videos.*
+<b>BEWARE</b>: you cannot directly embed videos from most of the popular Web sites such as YouTube, Dailymotion, Vimeo, etc. For commercial reasons, and because advertising is automatically added to the videos, these Web sites do not allow "regular" embedding of their videos.
 
 While they use HTML5 to render their videos, these hosting sites (YouTube, etc.) use rather complex techniques in order to prevent you from using them with the <video>element. Instead, you often need to embed an <iframe> that will render the HTML5 videos in your Web site, and of course, the advertising that comes along with them.
 
@@ -3966,14 +3966,16 @@ This is one of the main problems encountered in recent years: codec support was 
 <h3 id="ch2-2-2">2.2.2 The &lt;audio&gt; Element</h3>
 
 <h4>HTML5 audio is composed of several layers:</h4>
-<ul>"
+<ul>
 <li>The &lt;audio&gt; element is useful for embedding an audio player into a Web page. It is dedicated for <b>streamed audio</b>. It is very similar to the &lt;video&gt; element, both in its use and in its API.</li>
 <li>The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.)</li>
 </ul>
 <!----- https://github.com/bbauska/W3Cx-4of5-HTML5.2x --------->
+<p>
 This course will focus on the <audio> element. We present the <a href="https://www.w3.org/TR/webaudio/">Web Audio API</a> and other advanced HTML5 features in the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games course</a>.
 
 The attributes, event set and JavaScript API  of the <audio> element are just a "reduced" version of the ones from the <video> element, and here we will only address the differences and peculiarities.
+</p>
 
 <h4>The &lt;audio&gt; element, basic usage</h4>
 
@@ -3982,6 +3984,7 @@ Here is a simple example (also available <a href="https://jsbin.com/yogojis/edi
 Press play to stream the neigh of a horse:   
 
 <h5>As you can see, the code is very similar to the basic &lt;video&gt; element usage.</h5>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -4005,61 +4008,56 @@ Press play to stream the neigh of a horse:   
 20. </html>
 ```
 
-In this example, just as for the <video> element, we used the controls attribute in order to render the play/stop, time, volume and progress widgets.
+<p>
+In this example, just as for the &lt;video&gt; element, we used the controls attribute in order to render the play/stop, time, volume and progress widgets.
 
-Notice the other similarities: between the <audio>...</audio> tags, we added a text message that is displayed if the Web browser doesn't support the <audio> element, and we used several <source>...</source> elements that link to different audio formats for the same file. The browser will use the first format it recognizes.
-
+Notice the other similarities: between the &lt;audio&gt;...&lt;audio&gt; tags, we added a text message that is displayed if the Web browser doesn't support the &lt;audio&gt; element, and we used several <source>...</source> elements that link to different audio formats for the same file. The browser will use the first format it recognizes.
+</p>
 <h4>External resources</h4>
 <ul>
 <li>From W3C's specification: [The audio element](https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element)</li>
 <li>From MDN's Web Docs: [<audio>: The Embed Audio element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)</li>
 </ul>
 
-<h3 id="ch2-2-3">2.2.3 Attributes of <video> and <audio></h3>
+<h3 id="ch2-2-3">2.2.3 Attributes of &lt;video&gt; and &lt;audio&gt;</h3>
 
-### Most useful attributes of the <video> element 
-
-Here are the most common attributes you can use with the <video> element. They are self explanatory...
-
--   src: source of the video.
-
--   width and height: size of the video. If unspecified, the default width and height of the video will be used. If you specify one dimension but not the other, the browser will adjust the size of the unspecified dimension to preserve the aspect ratio of the video.
-
--   controls: If this boolean attribute is present, the browser displays its own controls for video playback and volume.
-
--   poster: This attribute allows you to specify an image that the browser will use while video is being downloaded, or until the user starts playing the video. If this attribute is not specified, the first frame of the video will be used instead.
-
--   autoplay: This attribute asks the browser to start playing the video automatically as soon as the page is ready.
-
--   preload:  The preload attribute is used when autoplay is not used. It tells the browser what to do before a user plays a video. This attribute is a hint - the browser may ignore it. While autoplay and preload are mutually exclusive, if both are present, then preload is ignored. Possible values:
-
-    -   none: do nothing. This saves bandwidth, no video will be downloaded in background before a user or a call to the play() method starts playing the video.
-
-    -   metadata: download metadata, such as length of the video or its format.
-
-    -   auto (default value): the browser will decide. This will depend on the implementation, and on the kind of connection: wifi, 3G, data roaming etc.
-
--   loop: Another boolean attribute that indicates to play the video in loop mode (and it starts again when finished).
+<h4>Most useful attributes of the <video> element</h4>
+<p>
+Here are the most common attributes you can use with the &lt;video&gt; element. They are self explanatory...</p>
+<ul>
+<li>src: source of the video.</li>
+<li>width and height: size of the video. If unspecified, the default width and height of the video will be used. If you specify one dimension but not the other, the browser will adjust the size of the unspecified dimension to preserve the aspect ratio of the video.</li>
+<li>controls: If this boolean attribute is present, the browser displays its own controls for video playback and volume.</li>
+<li>poster: This attribute allows you to specify an image that the browser will use while video is being downloaded, or until the user starts playing the video. If this attribute is not specified, the first frame of the video will be used instead.</li>
+<li>autoplay: This attribute asks the browser to start playing the video automatically as soon as the page is ready.</li>
+<li>preload:  The preload attribute is used when autoplay is not used. It tells the browser what to do before a user plays a video. This attribute is a hint - the browser may ignore it. While autoplay and preload are mutually exclusive, if both are present, then preload is ignored. Possible values:</li>
+<ul>
+   <li>none: do nothing. This saves bandwidth, no video will be downloaded in background before a user or a call to the play() method starts playing the video.</li>
+   <li>metadata: download metadata, such as length of the video or its format.</li>
+   <li>auto (default value): the browser will decide. This will depend on the implementation, and on the kind of connection: wifi, 3G, data roaming etc.</li>
+   </ul>
+<li>loop: Another boolean attribute that indicates to play the video in loop mode (and it starts again when finished).</li>
+</ul>
 
 <h4> Be careful if you target mobile applications or if you have multiple videos on the same page</h4>
-
-The autoplay attribute is not recommended if your Web site targets mobile applications (actually, it is often ignored by mobile browsers), as it may consume bandwidth even if the user is not interested in watching the proposed video. If you target mobile devices, we recommend using preload=none as well, as the default value for this attribute is auto.
+<p>
+The autoplay attribute is not recommended if your Web site targets mobile applications (actually, it is often ignored by mobile browsers), as it may consume bandwidth even if the user is not interested in watching the proposed video. If you target mobile devices, we recommend using preload=none as well, as the default value for this attribute is auto.</p>
 
 <b>Best practice</b>: do not use autoplay and add preload="none" if you target mobile devices or if you have multiple audio/video files on the same page.  For example, [this page](https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html) contains many audio elements and it does not make sense to have them preload or autoplay.
 
 <h4>About the poster attribute</h4>
-
-If the poster attribute is missing, usually the first non-blank frame of the video will be used as the image that is shown when the video is not playing. 
+<p>
+If the poster attribute is missing, usually the first non-blank frame of the video will be used as the image that is shown when the video is not playing.</p>
 
 <h4>About the autoplay attribute for general use</h4>
-
-Do not abuse of the autoplay attribute. We talked earlier about mobile applications, but even on desktop applications it's usually a bad idea to use it (except for WebCams and for some animations with small video loops, without sound, or for sites like YouTube, with just videos).
+<p>
+Do not abuse of the autoplay attribute. We talked earlier about mobile applications, but even on desktop applications it's usually a bad idea to use it (except for WebCams and for some animations with small video loops, without sound, or for sites like YouTube, with just videos).</p>
 
 <b>Best practice</b>: think twice before using the autoplay attribute, even for desktop applications.
 
 <h4>Attributes of the &lt;audio&gt; element</h4>
-
-The attributes you can use with the <audio> element are a subset of those available for the <video> element. Except for the poster attribute, they are all recognized and have the expected meanings: 
+<p>
+The attributes you can use with the <audio> element are a subset of those available for the <video> element. Except for the poster attribute, they are all recognized and have the expected meanings: </p>
 <ul>
 <li>src: source of an audio stream.</li>
 <li>controls: if this attribute is present, the browser displays its own controls for audio playback and volume.</li>
@@ -4067,20 +4065,20 @@ The attributes you can use with the <audio> element are a subset of those ava
 <li>preload: tells the browser what to do before a user plays a sound - please read details in the above table.</li>
 <li>loop:  indicates to play the audio stream in loop mode (start again when finished).</li>
 </ul>
-
+<p>
 As with the <video> element, the same best practice in regard to preload and autoplay attributes should be followed.
-
+</p>
 <h3 id="ch2-2-4">2.2.4 Styling Media Players with CSS</h3>
-
+<p>
 The <video> and <audio> elements are just like other HTML elements, so CSS can be used for styling, including CSS transitions, animations, etc.
-
+</p>
 <h4>An example of an audio player with some style</h4>
-
+<p>
 You can try this example <a href="https://jsbin.com/zoquru/2/edit?html,css,output">online at JSBin</a>.
 
-To add some styling to the basic example we saw when we introduced the <audio> element, we just add a <figure> with two children: an <img> and a <figcaption>. Inside the <figcaption> we add the <audio> element from the previous example.
+To add some styling to the basic example we saw when we introduced the <audio> element, we just add a &lt;figure&gt; with two children: an &lt;img&gt; and a &lt;figcaption&gt;. Inside the <figcaption> we add the <audio> element from the previous example.
 
-Please move the mouse pointer over this player's elements: 
+Please move the mouse pointer over this player's elements:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 70. two gery-black horses in a field (xx) ------------------------------->
@@ -4091,10 +4089,11 @@ Please move the mouse pointer over this player's elements: 
    width="20%">
 &nbsp;
 <br/>
-
-Press Play to hear the horse ! 
-
+<p>
+Press Play to hear the horse !
+</p>
 <h4>HTML source code:</h4>
+
 ```
 1.  <figure id="figaudio1">
 2.    <img id="imghorse" width="200"
@@ -4117,6 +4116,7 @@ Press Play to hear the horse ! 
 ```
 
 <h4>CSS source code:</h4>
+
 ```
 1.  #figaudio1 {
 2.      width : 420px;;
@@ -4164,8 +4164,8 @@ Press Play to hear the horse ! 
 <h4>Changing the size of a video on the fly using CSS transforms</h4>
 
 <h4>Resizing and rotating a video as the mouse pointer comes over it</h4>
-
-See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example online</a> (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it's playing.
+<p>
+See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example online</a> (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it's playing.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 71.  (xx) ------------------------------->
@@ -4176,10 +4176,11 @@ See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example onlin
    width="60%">
 &nbsp;
 <br/>
-
-This example uses the pseudo CSS class :hover in order to track the mouseover event. On mouseover, it uses a CSS transition property that interpolates the changes in the scale and orientation of the video element (done using a transform CSS property).
+<p>
+This example uses the pseudo CSS class :hover in order to track the mouseover event. On mouseover, it uses a CSS transition property that interpolates the changes in the scale and orientation of the video element (done using a transform CSS property).</p>
 
 <h4>The corresponding HTML source code is:</h4>
+
 ```
 1.  <video <b>id="w3devCampusVideo"</b> autoplay controls>
 2.  
@@ -4192,7 +4193,8 @@ This example uses the pseudo CSS class :hover in order to track the mouseover
 9.  </video>
 ```
 
-<h4>... and the CSS source code is as follows:<h4>
+<h4>... and the CSS source code is as follows:</h4>
+
 ```
 1.  #w3devCampusVideo {
 2.      width: 300px;
@@ -4206,16 +4208,16 @@ This example uses the pseudo CSS class :hover in order to track the mouseover
 ```
 
 <h4>Fullscreen video that resizes and maintains ratios</h4>
-
+<p>
 This is a trendy way of displaying videos.
 
-Below you will find two examples that show how to do this trick. The first is for a "regular" video, using the <video> and <source> elements. This technique can also be used on any YouTube embedded videos (see Example #2 below).
+Below you will find two examples that show how to do this trick. The first is for a "regular" video, using the &lt;video&gt; and &lt;source&gt; elements. This technique can also be used on any YouTube embedded videos (see Example #2 below).
 
 The interesting part is that we use a 100% standard (and really small and simple) JavaScript code here to handle the window resize events and we just set regular CSS properties width and height of the video element, to resize the video.
 
 Example #1: with a regular video
 
-Full width, resizable, borderless video, just using plain CSS and JS DOM events.
+Full width, resizable, borderless video, just using plain CSS and JS DOM events.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 72.  (xx) ------------------------------->
@@ -4227,7 +4229,7 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 &nbsp;
 <br/>
 
-Here is the HTML code. It's really simple, just notice the <body onload="init();"> which calls the JavaScript init() function right after the page is loaded.
+<p>Here is the HTML code. It's really simple, just notice the <body onload="init();"> which calls the JavaScript init() function right after the page is loaded.</p>
 
 ```
 1.  <!DOCTYPE html>
@@ -4251,7 +4253,8 @@ Here is the HTML code. It's really simple, just notice the <body onload="init()
 19. </body>
 ```
 
-Here is the CSS (remove margins, remove padding, hide parts that could overflow from the <body>):
+<p>
+Here is the CSS (remove margins, remove padding, hide parts that could overflow from the &lt;body&gt;):</p>
 
 ```
 body {
@@ -4260,10 +4263,11 @@ body {
     overflow:hidden;
 }
 ```
-And now the JavaScript code:
+
+<p>And now the JavaScript code:</p>
+
 ```
 var video;
- 
 function init() {
    // function called when the page is loaded
    video = document.querySelector("#myVideo");
@@ -4279,9 +4283,9 @@ function init() {
 ```
 
 <h4>Example #2: with a YouTube video</h4>
-
+<p>
 Full width, resizable, borderless YouTube video. To do this: just 100% standard CSS + DOM manipulation using JavaScript.
-
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 73.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4291,14 +4295,15 @@ Full width, resizable, borderless YouTube video. To do this: just 100% standard 
    width="50%">
 &nbsp;
 <br/>
-
+<p>
 The CSS and JavaScript codes for this example are exactly the same as in Example #1.
-
+</p>
 <h4>Full screen video, pure CSS approaches</h4>
-
+<p>
 1.  Let's use the video from the PayPal Web site, played full screen using only very simple CSS.
 
 In this example, the video does not rescale; it's just cropped if the browser window is resized. Enlarge your browser and you'll see a man with a phone on the right. Resize your browser and you'll see only part of the video.
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 74.  (xx) ------------------------------->
@@ -4311,6 +4316,7 @@ In this example, the video does not rescale; it's just cropped if the browser wi
 <br/>
 
 <h4>CSS code:</h4>
+
 ```
 body {
   margin:0;
@@ -4324,11 +4330,13 @@ video {
 }
 ```
 
+<p>
 2.  Full screen video with CSS effects
 
 This time the video is zoomed in so that it's much bigger than the browser's window. When we resize the browser, the part of the video that is visible adapts itself. It's not "real resize" of the video. Try this [example and read the explanation in this article by Dudley Storey](https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video).
-
+</p>
 <h4>HTML code:</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -4355,6 +4363,7 @@ This time the video is zoomed in so that it's much bigger than the browser's win
 ```
 
 <h4>CSS code:</h4>
+
 ```
 html, body{
     color:white;
@@ -4369,7 +4378,6 @@ header{
     font-family: sans-serif;
     color: #051a00;
 }
- 
 header video {
     position:fixed;
     top:50%;
@@ -4384,13 +4392,13 @@ header video {
 ```
 
 <h4>The trick here is that:</h4>
+<p>
+1.  the video is in the header, and the header has a plotted transparent background image ("dots.png") that is repeated in X and Y (see <i>lines 8</i> and <i>9</i>).
 
-1.  the video is in the header, and the header has a plotted transparent background image ("dots.png") that is repeated in X and Y (see *lines 8* and *9*).
-
-2.  The video is positioned so that it's origin (top left corner) is away from the visible surface (*line 25*), while it is set to take 100% of the surface (*lines 20* and *21*).
+2.  The video is positioned so that it's origin (top left corner) is away from the visible surface (<i>line 25</i>), while it is set to take 100% of the surface (<i>lines 20</i> and <i>21</i>).
 
 Full screen video that resizes and keeps its ratio, using the viewport units.
-
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 75.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4400,8 +4408,8 @@ Full screen video that resizes and keeps its ratio, using the viewport units.
    width="65%">
 &nbsp;
 <br/>
-
-This time we obtain the same result as with the first example that used JavaScript and a resize event. The video resizes correctly and keeps its ratio.
+<p>
+This time we obtain the same result as with the first example that used JavaScript and a resize event. The video resizes correctly and keeps its ratio.</p>
 
 <h4>CSS code:</h4>
 
@@ -4419,19 +4427,20 @@ video {
 ```
 
 <h4>Discussion: why can't we achieve perfect resizing with only CSS and the use of properties width=100% and height=100%?</h4>
-
-Let's use the same video to compare the different approaches again:
+<p>
+Let's use the same video to compare the different approaches again:</p>
 <ol>
 <li><a href="https://jsbin.com/zowuqey/edit?html,css,js,output">Original approach</a>, using JavaScript. This solution works on any browser, so we will focus on the two following methods, based on pure CSS.</li>
 <li><a href="https://jsbin.com/sakujuv/1/edit?html,css,output">Using CSS 100%</a> width and height properties (no JavaScript).</li>
 <li><a href="https://jsbin.com/xureyu/3/edit?html,css,output">Using CSS viewport</a> units for width and height (no JavaScript).</li>
-</ol?
-
+</ol>
+<p>
 Resizing the browser window shows that #1 (JavaScript) and #3 (viewport units) behave in the same way: the width or height of the video always fills the window (whichever is smaller), and we always see the whole video.
 
 <b>Conclusion</b>: we can get full size video without JavaScript by using viewport units (vw and vh), unless we need to support some old browsers (see their <a href="https://caniuse.com/#feat=viewport-units">current support on CanIUse</a>).
 
 Setting the video to 100% width and height results in different behavior:
+</p>
 <ul>
 <li>100% means 100% of the size of the &lt;body&gt; tag.</li>
 <li>The body tag's width is 100% of the browser window width, so the video is always full width.</li>
@@ -4440,17 +4449,19 @@ Setting the video to 100% width and height results in different behavior:
 </ul>
 
 <h3 id="ch2-2-5">2.2.5 Control Players From JavaScript</h3>
-
+<p>
 The <video> and <audio> elements have methods, properties/attributes and events that can be manipulated with JavaScript. Using the DOM API, it's possible to manipulate an audio or video element as a JavaScript object that has:
+</p>
 <ul>
 <li><b>Methods</b> for controlling the behavior, such as play(), pause(), etc.</li>
 <li><b>Properties</b> (duration, current position, etc.), either in read/write mode (such as volume), or in read-only mode (such as encoding, duration, etc.)</li>
 <li><b>Events</b> generated during the life cycle of the element that can be processed using JavaScript callbacks. It is also possible to send events to control the video player.</li>
 </ul>
-
+<p>
 The set of properties/attributes/methods of the <audio> and <video> elements is called an "API" (Application Programming Interface). For example, we will speak here of the "media API" to talk about the associated API.
 
 Like any HTML element, the <video> element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a <video> element:
+</p>
 
 ```
 1.  var video = document.createElement('video');
@@ -4459,12 +4470,13 @@ Like any HTML element, the <video> element can be manipulated/created using th
 4.  document.body.appendChild(video);
 ```
 
+<p>
 This will create a complete video player for the file "video.mp4", with control buttons, and will add it to the <body> element of the page.
-
+</p>
 <h4>Example that shows how to call play/pause or rewind a video</h4>
-
+<p>
 Please look at this interesting example:
-
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 76.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4474,9 +4486,9 @@ Please look at this interesting example:
    width="65%">
 &nbsp;
 <br/>
-
+<p>
 Note that in order to play the video, you must click on the "vid.play()" text. To pause it, you click on the "vid.pause()" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
-
+</p>
 <b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let's see a little more of what we can do using the JavaScript API of the <video> element (it will be an identical approach for the <audio> element, since it shares the same API by a very small margin).
 
 <h3 id="ch2-2-6">2.2.6 The JavaScript API</h3>
@@ -4490,7 +4502,7 @@ The complete list of events can be found in the <a href="https://html.spec.what
 The list of properties can be found at the <a href="https://www.w3.org/2010/05/video/mediaevents.html">W3C HTML5 Video Events and API</a> page. This page is interesting for Web developers because it shows an interactive view of the different values and events changing over time while the video is playing within the page.
 
 Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link</a>, and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
-
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 77. html5 video events and api (95) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -4540,15 +4552,19 @@ We provide this as a quick reminder - keep in mind that the <a href="https://ht
                  | <b>played (readonly)</b> |
 |----------------| -------------------| ------------ |
 
+<p>
 In the next pages, let's see, through a set of examples, how to use these most important properties, methods, and events...
+</p>
 
 <h3 id="ch2-2-7">2.2.7 The &lt;video&gt; Element JavaScript API</h3>
-
+<p>
 The JavaScript API is useful for implementing playlists, making custom user interfaces and many other interesting things. The "enhanced HTML5 multimedia players" lesson presented further on the course relies heavily on this API.
+</p>
 
 <h4>Example #1: how to use external buttons to control the player's behavior</h4>
-
+<p>
 This example gives the first steps towards writing a custom video player. It shows basic usage of the JavaScript API for adding custom buttons to play/pause the video or to go back to the beginning by setting the currentTime property to zero.
+</p>
 
 <h4>Try it online:</h4>
 
@@ -4606,9 +4622,9 @@ This example gives the first steps towards writing a custom video player. It sho
 </ul>
 
 <h4>Example #2: how to detect the end of a video and start another one</h4>
-
+<p>
 This example listens to the ended event, and calls a callback function when the video is ended.
-
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 80. example calls a callback function when video ends (98) ------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -4633,11 +4649,11 @@ This example listens to the ended event, and calls a callback function when th
 ```
 
 <h4>Example #3: how to manage playlists - sequential movies</h4>
-
+<p>
 This example detects the end of a video, then loads the next video, changes the src attribute of the video element and plays the video.
 
 Check the online example below: use the progress cursor to go near the end of the first video that is being played, and see how it continues with the next video. 
-
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 81.  ---------------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4703,14 +4719,16 @@ Check the online example below: use the progress cursor to go near the end of th
 </ul>
 
 <h3 id="ch2-2-8">2.2.8 [Advanced] Extended Examples</h3>
-
+<p>
 In this section, we propose five extended examples that use more JavaScript and more complex CSS manipulation. They might be a little hard to understand if you are a JavaScript beginner, but don't be afraid to try and test them, look at the code, etc.
 
 Some examples are given "as is", such as the custom video player that uses SVG (at the end of the page); if you are interested, you may view the code. 
+</p>
 
 <h4>Example #1: a player showing the use of every type of CSS3 transformation</h4>
-
+<p>
 Please see this example online, originally written by <a href="https://christianheilmann.com/">Chris Heilmann</a>, and tuned by us ;).
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 82. (xx) ---------------------------------------->
@@ -4720,8 +4738,9 @@ Please see this example online, originally written by <a href="https://christia
    alt=""
    width="65%" />
 &nbsp;
-
+<p>
 Don't forget to click the JavaScript and CSS tabs of the CodePen in order to display the JavaScript code that creates the buttons on the right of the video, and the CSS that processes the different clicks and applies CSS3 transforms.
+</p>
 
 <h4>This example shows a lot:</h4>
 <ul>
@@ -4731,9 +4750,9 @@ Don't forget to click the JavaScript and CSS tabs of the CodePen in order to di
 </ul>
 
 <h4>Example #2: how to track all possible events and manipulate many properties</h4>
-
+<p>
 This example also shows how to handle failures. See the code and play with this example below:
-
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 83.  ---------------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4742,8 +4761,9 @@ This example also shows how to handle failures. See the code and play with this
    alt=""
    width="65%" />
 &nbsp;
-
+<p>
 Below is a piece of code for handling errors during video playback:
+</p>
 
 ```
 ...
@@ -4781,9 +4801,9 @@ function logEvent(evt, color) {
 ```
 
 <h4>Example #3: how to display a percentage of buffering when using a slow connection</h4>
-
+<p>
 See the <a href="https://jsbin.com/xororol/3/edit?html,output">example online</a> here too.
-
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 84.  ---------------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4792,10 +4812,11 @@ See the <a href="https://jsbin.com/xororol/3/edit?html,output">example online</
    alt=""
    width="65%" />
 &nbsp;
-
+<p>
 Note that on mobile phones, the video does not start until the user presses the play control or clicks on the video picture. Using the "canplaythrough" event is a trick to call a function that starts the video player as soon as the page is loaded on desktop. This event is not supported by mobile devices, so if you try this example on a mobile, the video will not start automatically.
 
 As explained by the <a href="https://developer.apple.com/">Apple Developer Web site</a>:  "The buffered property is a TimeRanges object: an array of start and stop times, not a single value. Consider what happens if the person watching the media uses the time scrubber to jump forward to a point in the movie that hasn't loaded yet---the movie stops loading and jumps forward to the new point in time, then starts buffering again from there. So the buffered property can contain an array of discontinuous ranges. The example simply seeks the end of the array and reads the last value, so it actually shows the percentage into the movie duration for which there is data. "
+</p>
 
 <h4>Source code extract:</h4>
 
@@ -4845,9 +4866,9 @@ As explained by the <a href="https://developer.apple.com/">Apple Developer Web 
 ```
 
 <h4>Example #4: how to use SVG elements as external controllers</h4>
-
+<p>
 This is the ultimate way of doing a real custom player: redesign your own controls using SVG shapes! This example (try it <a href="https://www.w3.org/2010/Talks/0430-www2010-plh/video-player.xhtml">online</a>) is given "as is" for those of you who may be curious.
-
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 85. cup on table ---------------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4858,11 +4879,11 @@ This is the ultimate way of doing a real custom player: redesign your own contro
 &nbsp;
 
 <h4>Example #5: a custom video player written by a previous student</h4>
-
+<p>
 This is more an example than a tutorial. Maurice, a student who followed the precursor version of this MOOC, had the assignment to write a custom video player with playlist, video thumbnails, custom play/pause/next/previous/volume controls, and present it in a Web page that used a nice layout based on the HTML5 structuring elements studied previously.
 
 Here is the online example. We recommend that you look at the source code:
-
+</p>
 <h3 id="ch2-3-1">2.3.1 HTML5 Captioning</h3>
 <p>
 This section introduces the HTML5 &lt;track&gt; element, useful for adding closed captions, subtitles, descriptions, and metadata to your videos. It comes with a new JavaScript API.
@@ -4870,9 +4891,9 @@ This section introduces the HTML5 &lt;track&gt; element, useful for adding cl
 The WebVTT format used for describing a track file is also presented in this chapter.
 </p>
 <h4>Most of the major desktop browsers support HTML5 captioning</h4>
-
+<p>
 Please check the <a href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the <track> element support by browsers.
-
+</p>
 <h4>Some definitions</h4>
 <ul>
 <li><b>closed captions </b>describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).</li>
@@ -4880,8 +4901,9 @@ Please check the <a href="https://caniuse.com/mdn-html_elements_track">browser s
 </ul>
 
 <br/>
-
+<p>
 The accessibility features of TV programs often propose both options for people with hearing deficiencies. 
+</p>
 
 <h4>Typical use: add a subtitle/caption track to a &lt;video&gt; element</h4>
 
@@ -4913,6 +4935,7 @@ Here is an example of a video element that includes a &lt;track&gt; element in
 <p>
 The example uses a &lt;track&gt; element to insert basic captions to the video: sounds and music are described, in addition to standard subtitles that correspond to what the different movie characters say.
 </p>
+
 ```
 <video height="272" width="640"
        poster="https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg"
@@ -4935,10 +4958,11 @@ The example uses a &lt;track&gt; element to insert basic captions to the vid
 </ul>
 
 <h4>Multiple tracks may be included in a video element</h4>
-
+<p>
 Multiple tracks are needed to support different langages, video captions for the hearing-impaired, subtitles, etc.
 
 Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element">from the specification</a>) that includes multiple <track> elements (subtitles for three languages and captions only for English):
+</p>
 
 ```
 <video src="brave.webm">
