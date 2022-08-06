@@ -173,7 +173,7 @@ Here are a few possibilities for Web editors:
 
 <h4>Online Editors:</h4>
 
-<p>To help you practice during the whole duration of the course, we use the following interactive online editors. Pretty much all the course\'s examples actually use these tools.</p>
+<p>To help you practice during the whole duration of the course, we use the following interactive online editors. Pretty much all the course's examples actually use these tools.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------- 02. jsbin logo (04) -------------------------------------->
@@ -204,7 +204,7 @@ Tutorials can be found on the Web such as <a href="https://code.tutsplus.com/tut
 <br/>
 
 <ul>
-<li><a href="https://codepen.io/">CodePen</a></li><br/>
+<li><a href="https://codepen.io/">CodePen</a></li>
 </ul>
 <p>CodePen is an HTML, CSS, and JavaScript code editor that previews/showcases your code bits in your browser.
 It helps with cross-device testing, real-time remote pair programming and teaching.
@@ -267,13 +267,13 @@ To help developers make these decisions consciously rather than accidentally, <
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h4>W3C Validators:</h4>
+<h3>W3C Validators:</h3>
 <p>
 For over 15 years, the W3C has been developing and hosting <a href="https://w3c.github.io/developers/" target="_blank">free and open source tools</a> used every day by millions of Web developers and Web designers.
 
 All the tools listed below are Web-based, and are available as downloadable sources or as free services on the <a href="https://w3c.github.io/developers/tools/" target="_blank">W3C Developers tools</a> site.
 </p>
-<h3>W3C Validator</h3>
+<h4>W3C Validator</h4>
 <p>
 The <a href="https://validator.w3.org/" target="__blank">W3C validator</a> checks the <a href="https://validator.w3.org/docs/help.html#validation_basics" target="_blank">markup validity</a> of various Web document formats, such as HTML. Note that you are automatically directed to the <a href="https://validator.w3.org/nu/" target="_blank">Nu Html Checker</a> when validating an HTML5 document.
 </p>
@@ -475,9 +475,9 @@ Plain and simple, the internet allows access to the World Wide Web. Without it, 
 <i>Access by everyone regardless of disability is an essential aspect.</i>
 
 <h4>Tim Berners-Lee, W3C Director and inventor of the World Wide Web</h4>
-
+<p>
 The Web has become an essential aspect of our daily lives, and everyone should have access to this technology. Web accessibility focuses on ensuring equivalent access for people with disabilities. It is increasingly important to many organizations and governments from around the world, and has many business benefits. Access to information, including on the Web, is also recognized by the UN Convention on the Rights of Persons with Disabilities (CRPD).
-
+</p>
 <h4>Who is impacted?</h4>
 <p>
 Web accessibility addresses all disabilities, including hearing, learning and cognitive, neurological, physical, speech, and visual disabilities. Some examples of Web accessibility features include:
@@ -491,7 +491,7 @@ Web accessibility addresses all disabilities, including hearing, learning and co
 
 <h4>Web accessibility benefits people with and <i>without</i> disabilities</h4>
 
-Web accessibility features also benefit many more users, such as:
+<p>Web accessibility features also benefit many more users, such as:</p>
 
 <ul>
 <li>People with temporary situational limitations, such as a broken arm;</li>
@@ -500,25 +500,25 @@ Web accessibility features also benefit many more users, such as:
 <li>People who are new to computers, to the Web, or to your own Web site;</li>
 <li>People who are not fluent in the language of your particular Web site;</li>
 </ul>
-
-The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. When Web pages, Web technologies, Web tools, or Web applications are badly designed, they can create barriers that exclude people from using the Web. More information is available in the <a href="https://www.w3.org/standards/webdesign/accessibility" target="_blank" rel="noopener noreferrer">W3C Accessibility</a> overview.
+<p>
+The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. When Web pages, Web technologies, Web tools, or Web applications are badly designed, they can create barriers that exclude people from using the Web. More information is available in the <a href="https://www.w3.org/standards/webdesign/accessibility" target="_blank" rel="noopener noreferrer">W3C Accessibility</a> overview.</p>
 
 <h4>First Steps in Web Accessibility</h4>
-
+<p>
 There are many simple Web accessibility improvements that you can implement and check right away, even when you are new to this topic.
 
 Remember that when developing or redesigning a website or Web application, it is best to evaluate accessibility early and throughout the development process to identify accessibility problems early, when it is easier to address them.
 
-Two examples are provided below  but you can find more tips and information in these 2 resources:
+Two examples are provided below but you can find more tips and information in these 2 resources:</p>
 
 <ul>
-<li><a href="https://www.w3.org/WAI/gettingstarted/tips/" target="_blank" rel="noopener noreferrer">Tips for Getting Started with Web Accessibility]</a></li>
-<li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/" target="_blank" rel="noopener noreferrer">Easy Checks - A First Review of Web Accessibility</a></li>
+<li><a href="https://www.w3.org/WAI/gettingstarted/tips/" target="_blank" rel="noopener noreferrer">Tips for Getting Started with Web Accessibility.</a></li>
+<li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/" target="_blank" rel="noopener noreferrer">Easy Checks - A First Review of Web Accessibility.</a></li>
 </ul>
 
 <h4>Example #1: page title</h4>
-
-Good page titles are particularly important for orientation --- to help people know where they are and move between pages open in their browser. The first thing screen readers say when the user goes to a different Web page is the page title. In the Web page markup, they are the words <title> within the <head>.
+<p>
+Good page titles are particularly important for orientation --- to help people know where they are and move between pages open in their browser. The first thing screen readers say when the user goes to a different Web page is the page title. In the Web page markup, they are the words &lt;title&gt; within the &lt;head&gt;.</p>
 
 <h5><i>Check #1</i>: There is a title that adequately and briefly describes the content of a page, and it distinguishes the page from other Web pages.</h5>
 
@@ -533,12 +533,12 @@ Good page titles are particularly important for orientation --- to help people k
 ```
 
 <h4>Example 2: image text alternatives ("alt text")</h4>
-
-Text alternatives ("alt text") are a primary way of making visual information accessible, because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user. Providing text alternatives allows the information to be rendered in a variety of ways by a variety of user agents. For example, a person who cannot see a picture can have the text alternative read aloud using synthesized speech.
+<p>
+Text alternatives ("alt text") are a primary way of making visual information accessible, because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user. Providing text alternatives allows the information to be rendered in a variety of ways by a variety of user agents. For example, a person who cannot see a picture can have the text alternative read aloud using synthesized speech.</p>
 
 <h5><i>Check #2</i>: Every image has alt with appropriate alternative text.</h5>
-
-<i>Example</i>: See the W3C logo below. It contains a link that points to the W3C Web site. The text alternative is going to be a brief description of the link target.
+<p>
+<i>Example</i>: See the W3C logo below. It contains a link that points to the W3C Web site. The text alternative is going to be a brief description of the link target.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------------- 11. W3C logo (13) --------------------------------------->
@@ -729,9 +729,9 @@ header span {
    alt="Navigation Menu"
    width="35%" />
 </p>
-
-The navigation menu just below the header is a <nav> element. For the purpose of this example we haven't provided any value for the hyperlinks...
-
+<p>
+The navigation menu just below the header is a &lt;nav&gt; element. For the purpose of this example we haven't provided any value for the hyperlinks...
+</p>
 <h4>HTML code:</h4>
 
 ```html5
@@ -783,7 +783,7 @@ nav span {
 
 <h4>A &lt;section&gt; for each month and an &lt;article&gt; for each post in the blog</h4>
 
-Now, we have one big <section> element that contains a set of <article> elements...
+<p>Now, we have one big <section> element that contains a set of <article> elements...</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 16. image of sections that contain articles (17) ------------------------>
@@ -832,7 +832,7 @@ section h2 {
 }
 ```
 
-Note that the H2, article, article header, etc. will be styled using these rules.
+<p>Note that the H2, article, article header, etc. will be styled using these rules.</p>
 
 <h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 
@@ -19601,4 +19601,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-05-2022 8:13pm</i></b></h3>
+<h3><b><i>08-05-2022 9:37pm</i></b></h3>
