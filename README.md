@@ -47,7 +47,7 @@
 >### 1.5 [**Microdata**](#ch1-5-1)
 >### 1.6 [**Exercises**](#ch1-6-1)
 
-## [**Module 2: HTML5 Multimedia**](#ch3)
+## [**Module 2: HTML5 Multimedia**](#ch2)
 >### 2.1 [**Introduction - Module 2**](#ch2-1-1)
 >### 2.2 [**Streaming multimedia content: the video and audio elements**](#ch2-2-1)
 >### 2.3 [**Subtitles and closed captions**](#ch2-3-1)
@@ -611,7 +611,7 @@ So various studies have been conducted in order to identify the most popular ids
 
 Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">article: </a>"During the creation of HTML5, Ian Hickson used Google's tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA ("Metadata Analysis and Mining Application"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics".</p>
 
-<h4>New elements added to the HTML5 set</h4>
+<h4 id="ch3-1-1">New elements added to the HTML5 set</h4>
 <p>
 The results of these surveys led to the addition of new structural elements in HTML5. For example, the very popular &lt;div class="header"&gt; led to the creation of a &lt;header&gt; element, &lt;div class="aside"&gt; to a &lt;aside&gt; element, etc.
 
@@ -1184,7 +1184,7 @@ The HTML5 specification says that "each sectioning element potentially has a hea
 </body>
 ```
 
-... defines the header of a section *implicitly*, while:
+<p>... defines the header of a section <i>implicitly</i>, while:</p>
 
 ```
 <body>
@@ -1196,15 +1196,15 @@ The HTML5 specification says that "each sectioning element potentially has a hea
 </body>
 ```
 
-... defines the heading of *the explicit section* (its parent element &lt;section&gt;).
+<p>... defines the heading of <i>the explicit section</i> (its parent element &lt;section&gt;).</p>
 
 <h4>Use multiple headings of different rank with sectioning content</h4>
 
-The first element of a heading content in an element of sectioning content represents the heading for that section (the &lt;section&gt;<h1>...</h1></section> in the above example).
+<p>The first element of a heading content in an element of sectioning content represents the heading for that section (the &lt;section&gt;<h1>...</h1></section> in the above example).
 
 Subsequent headings of equal or higher rank start new (implied) sections, headings of lower rank start implied subsections that are part of the previous one. In both cases, the element represents the heading of the implied section.
 
-Let's clarify this by looking at some example code:
+Let's clarify this by looking at some example code:</p>
 
 ```
 <body>
@@ -1246,7 +1246,7 @@ In the above example, please note two things:
 
 <h4>Best practice #1: always add a heading to explicit sectioning content</h4>
 
-It's always better - mainly for accessibility reasons - to include a heading (a <h1>, <h2>...<h6>) in each sectioning element (&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also after the &lt;body&gt; element (called a "sectioning root"). 
+<p>It's always better - mainly for accessibility reasons - to include a heading (a &lt;h1&gt;, &lt;h2&gt;...&lt;h6&gt;) in each sectioning element (&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also after the &lt;body&gt; element (called a "sectioning root").</p>
 
 <h4>Here are some examples:</h4>
 
@@ -1284,9 +1284,10 @@ It's always better - mainly for accessibility reasons - to include a heading (a
 </section>
 ```
 
+<p>
 The last example is bad for accessibility reasons. A screen reader that vocalizes the page will just say "Entering section", while in the previous two good examples it would say "entering section with heading Blog Posts of April 2020". You can also check if your headings and sectioning elements are ok by using a browser extension that displays the outline of the document (just search for "html5 outliner" in your browser's extension search engine).
 
-<b>UPDATE : </b>For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as [table-of-contents-crx](https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f) for Chrome or [Outline sidebar](https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search) for Firefox.
+<b>UPDATE :</b> For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">Outline sidebar for Firefox</a>.</p>
 
 <h4>The outline of the last example looks like this:</h4>
 
@@ -1317,7 +1318,8 @@ Notice that &lt;body&gt; is also a sectioning element. It's called a "sectioni
 </body>
 ```
 
-The sectioning root (&lt;body&gt;) and the sectioning elements (&lt;section&gt; here...), each have a heading.
+<p>
+The sectioning root (&lt;body&gt;) and the sectioning elements (&lt;section&gt; here...), each have a heading.</p>
 
 <h4>To sum up:</h4>
 <ul>
@@ -17432,7 +17434,7 @@ Explanations:
 
 -   *Lines 90-93*: The focus is given to the first invalid field that shows an error message.
 
-<h3 id="6-1-1">6.1.1 Video Intro -- Module 6</h3>
+<h3 id="ch6-1-1">6.1.1 Video Intro -- Module 6</h3>
 
 Final week!
 
