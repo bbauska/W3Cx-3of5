@@ -94,7 +94,7 @@
 
 <h2 id-"cha-1">About W3C and the Web</h2>
 
-<h2>Course information</h2>
+<h2 id="chb">Course information</h2>
 
 <h3>Welcome to "HTML5 Coding Essentials and Best Practices"</h3>
 <ul>
@@ -139,7 +139,7 @@ The <b>W3C FEWD</b> program is composed of 5 courses:
 
 <p>The HTML5 course team is thrilled to guide you in your learning experience. We are committed to teach you how to code Web pages, and how to do it the correct way. We encourage you to create Web pages and apps and share them in the discussion forums. Have fun!</p>
 
-<h4>Online Code Editors:</h4>
+<h4 id="cha-4">Online Code Editors:</h4>
 
 <a href="https://jsbin.com" target="_blank">JS Bin</a>
 
@@ -459,7 +459,7 @@ The web consists of digital documents, referred to as web pages, that are viewab
 
 A collection of connected web pages that are publicly accessible and under a single domain name is referred to as a website.
 
-Web pages are connected using <a href="https://www.lifewire.com/hypertext-transfer-protocol-817944"  target="_blank">Hypertext Transfer Protocol</a> (HTTP), the coding language that allows you to visit any public web page. By clicking a <a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287">hyperlink</a> or entering a <a href="https://www.lifewire.com/what-is-a-url-2626035" target="_blank" rel="noopener noreferrer">Uniform Resource Locator</a> (URL), the browser uses this unique address to find and access a web page. <a href="https://www.lifewire.com/best-search-engines-2483352">Search engines</a> like Google make it easy to filter the billions of web pages now populating the web by locating the articles, videos, and other media you want to find based on your search criteria.</p>
+Web pages are connected using <a href="https://www.lifewire.com/hypertext-transfer-protocol-817944" target="_blank">Hypertext Transfer Protocol</a> (HTTP), the coding language that allows you to visit any public web page. By clicking a <a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287">hyperlink</a> or entering a <a href="https://www.lifewire.com/what-is-a-url-2626035" target="_blank" rel="noopener noreferrer">Uniform Resource Locator</a> (URL), the browser uses this unique address to find and access a web page. <a href="https://www.lifewire.com/best-search-engines-2483352">Search engines</a> like Google make it easy to filter the billions of web pages now populating the web by locating the articles, videos, and other media you want to find based on your search criteria.</p>
 </p>
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -469,7 +469,7 @@ Web pages are connected using <a href="https://www.lifewire.com/hypertext-trans
 <p>
 Plain and simple, the internet allows access to the World Wide Web. Without it, we have no way of accessing the thousands of websites out there. For most online needs, however, the web is the easiest to use. Each serves an important purpose.</p>
 
-<h4 id="cha-2">Why Accessibility is Important</h4>
+<h4 id="cha-2">a-2 Why Accessibility is Important</h4>
 
 <i>The power of the Web is in its universality.</i>
 <i>Access by everyone regardless of disability is an essential aspect.</i>
@@ -602,7 +602,7 @@ However, there are some issues with this approach:</p>
 <li>Even with the same ids and class names, the css rules may be different,</li>
 <li>JavaScript libraries have become increasingly heavy over the years,</li>
 <li>Web pages have become increasingly heavy over the years!</li>
-<li<These elements can not be handled by the Web browser natively...</li>
+<li>These elements can not be handled by the Web browser natively...</li>
 </ul>
 <p>
 Even if differences exist between ids, classes and css/js implementations, they also share common behaviors, layouts, and "ways of doing things" that could be guessed at first glance by a human.
@@ -611,7 +611,7 @@ So various studies have been conducted in order to identify the most popular ids
 
 Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">article: </a>"During the creation of HTML5, Ian Hickson used Google's tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA ("Metadata Analysis and Mining Application"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics".</p>
 
-<h4 id="ch3-1-1">New elements added to the HTML5 set</h4>
+<h4 id="ch3-1-1">3.1.1 New elements added to the HTML5 set</h4>
 <p>
 The results of these surveys led to the addition of new structural elements in HTML5. For example, the very popular &lt;div class="header"&gt; led to the creation of a &lt;header&gt; element, &lt;div class="aside"&gt; to a &lt;aside&gt; element, etc.
 
@@ -883,7 +883,7 @@ Next, in each article in the section we have a header (to display the article ti
 
 <h4>Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside</h4>
 <p>
-Also note the way we included a figure using the new "HTML5" method, using a &lt;figure&gt;..&lt;figure&gt; element that embedded a &lt;img src=...&gt; element together with a &lt;figcaption&gt; element. 
+Also note the way we included a figure using the new "HTML5" method, using a &lt;figure&gt;..&lt;figure&gt; element that embedded a &lt;img src=...&gt; element together with a &lt;figcaption&gt; element.
 </p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 18. figure and figcaption (19) ------------------------------>
@@ -969,9 +969,11 @@ aside .tag-cloud {
 }
 ...
 ```
+
 <p>
 We used a float:right CSS rule to put the tag cloud on the right... In the following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
 </p>
+
 <h4>Here is the result:</h4>
 
 <!------------------------------------------------------------------------------------------------>
@@ -1139,19 +1141,21 @@ Use &lt;h1&gt;...&lt;h6&gt; for the headings
 Since the very beginning, HTML has had heading elements: &lt;h1&gt;...&lt;h6&gt;. These elements are used to display headings with different sizes by default, when no CSS is used.  The following example shows 6 sentences that are surrounded by &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; and &lt;h6&gt;:
 </p>
 
-# This is a H1 heading
+<h1>This is a H1 heading</h1>
 
-## This is a H2 heading
+<h2>This is a H2 heading</h2>
 
-### This is a H3 heading
+<h3>This is a H3 heading</h3>
 
-#### This is a H4 heading
+<h4>This is a H4 heading</h4>
 
-##### This is a H5 heading
+<h5>This is a H5 heading</h5>
 
-###### This is a H6 heading
+<h6>This is a H6 heading</h6>
 <p>
-These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. Here is the result for the previous example:</p>
+These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. 
+
+Here is the result for the previous example:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 25. outliner in action from the previous example (25) ----------------------->
@@ -1161,15 +1165,15 @@ These headings define a hierarchy, as shown by the default sizes given by the br
    alt="Outliner in action from the previous example."
    width="65%" />
 </p>
-<p>
-In the above outline, note that we have only used H1... H6 elements, without any new HTML5 structural elements such as <section&gt; or <article&gt;.
+
+<p>In the above outline, note that we have only used H1... H6 elements, without any new HTML5 structural elements such as &lt;section&gt; or &lt;article&gt;.
 
 Here is a list of browser extensions you can try, for visualizing the outline of a document: <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> (Chrome extension) or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">this Firefox extension</a>.
 
 <h4>Using headings and new sectioning elements (section, article, aside, nav)</h4>
 
 <h4>Definition of heading content and sectioning content</h4>
-
+<p>
 The &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt; elements are called <b>"sectioning elements"</b>. They cut a document into slices we call <b>"sections"</b>.
 
 The HTML5 specification says that "each sectioning element potentially has a heading and has also an outline associated".
@@ -1196,11 +1200,11 @@ The HTML5 specification says that "each sectioning element potentially has a hea
 </body>
 ```
 
-<p>... defines the heading of <i>the explicit section</i> (its parent element &lt;section&gt;).</p>
+<p>... defines the heading of <i>the explicit section</i> (its parent element &lt;section&gt ;).</p>
 
 <h4>Use multiple headings of different rank with sectioning content</h4>
 
-<p>The first element of a heading content in an element of sectioning content represents the heading for that section (the &lt;section&gt;<h1>...</h1></section> in the above example).
+<p>The first element of a heading content in an element of sectioning content represents the heading for that section (the &lt;section&gt;&lt;h1&gt;...&lt;/h1&gt;&lt;/section&gt; in the above example).
 
 Subsequent headings of equal or higher rank start new (implied) sections, headings of lower rank start implied subsections that are part of the previous one. In both cases, the element represents the heading of the implied section.
 
@@ -1231,16 +1235,16 @@ Let's clarify this by looking at some example code:</p>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image026.jpeg?raw=true"
-   alt="Outline of previous example"
+   alt="Outline of previous example."
    width="55%">
 &nbsp;
 <br/>
 
 In the above example, please note two things:
-
-1.  The outline shows an "Untitled body" at the root of the hierarchy,
-
-2.  The default size for the H1 and H2 is the same (!). Indeed, when we start a <h1> inside a &lt;section&gt; the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.
+<ol type ="1">
+<li>The outline shows an "Untitled body" at the root of the hierarchy,</li>
+<li>The default size for the H1 and H2 is the same (!). Indeed, when we start a <h1> inside a &lt;section&gt; the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
+</ol>
 
 <h4>Best Practices when using Sectioning Elements</h4>
 
@@ -19634,4 +19638,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-07-2022 12:24am</i></b></h3>
+<h3><b><i>08-07-2022 5:19pm</i></b></h3>
