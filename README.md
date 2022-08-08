@@ -897,6 +897,7 @@ Also note the way we included a figure using the new "HTML5" method, using a &l
 <p>
 Here is the CSS for the &lt;figcaption&gt; element we have used in the example (we did not apply any style to the &lt;figure&gt; element):
 </p>
+
 <h4>HTML code:</h4>
 
 ```
@@ -2824,9 +2825,9 @@ This example also uses all the structuring elements we saw: main, article, secti
 
 <h3 id="ch1-4-1">1.4.1 The &lt;details&gt; and &lt;summary&gt; Elements</h3>
 
-These elements have been introduced for displaying a foldable zone in an HTML document.
+<p>These elements have been introduced for displaying a foldable zone in an HTML document.
 
-In the screenshot below, taken from the W3C specification page, the text next to the horizontal arrow is a <summary> element, and the text displayed when we click on the summary part, is the <details> element. This is a sort of "accordion" with foldable content.
+In the screenshot below, taken from the W3C specification page, the text next to the horizontal arrow is a <summary> element, and the text displayed when we click on the summary part, is the <details> element. This is a sort of "accordion" with foldable content.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------- 40. example of summary details elements from the w3c specs (59) ----------------->
@@ -2868,7 +2869,7 @@ And here is what is displayed after clicking on the small arrow-shaped icon to t
 &nbsp;
 <br/>
 
-<h5>Here is the code of this example:</h5>
+<h4>Here is the code of this example:</h4>
 
 ```
 <!DOCTYPE html>
@@ -7795,7 +7796,8 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-And here is the code of the transformations we used, followed by the call to the function that draws the monster:
+<h4>And here is the code of the transformations we used, followed by the call to the function that draws the monster:</h4>
+
 ```
 1.  ctx.translate(100, 100);
 2.  ctx.rotate(Math.PI/4);
@@ -7807,7 +7809,7 @@ And here is the code of the transformations we used, followed by the call to the
 <li><h4>BEWARE: all drawings to come will be in that modified coordinate system!</h4></li>
 </ul>
 
-If we draw two shapes at two different positions, they will be relative to this new coordinate system.
+<p>If we draw two shapes at two different positions, they will be relative to this new coordinate system.</p>
 
 <h4>JS</h4>
 ```
@@ -9378,6 +9380,7 @@ ctx.fill();
 ```
 
 <h4>Here is the code:</h4>
+
 ```
 1.  var canvas=document.getElementById('myCanvas');
 2.  var ctx=canvas.getContext('2d');
@@ -9497,6 +9500,7 @@ Sometimes, it might be useful to draw just one line.
 It's interesting to see how we can write a single "draw line" function that takes the start and end coordinates, the color, the line width, etc., and give the impression of being done in "immediate" mode.
 
 <h4>Here is the code for this "utility" function that you may find useful:</h4>
+
 ```
 1.  function drawLine(x1, y1, x2, y2, color, width) {
 2.      ctx.save();
@@ -10944,9 +10948,10 @@ Instead of drawing a filled rectangle that covers the whole surface of the canva
 &nbsp;
 <br/>
 
-Note that the canvas has its default background color where we did not draw anything. And where we have drawn rectangles, we can see "through" and the colors from the gradient are visible.
+<p>Note that the canvas has its default background color where we did not draw anything. And where we have drawn rectangles, we can see "through" and the colors from the gradient are visible.</p>
 
-Here is the code that draws the checkboard:
+<h4>Here is the code that draws the checkboard:</h4>
+
 ```
 1.  ctx.fillStyle = grdFrenchFlag;
 2.  ctx.fillRect(0, 0, 50, 50);
