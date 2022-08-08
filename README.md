@@ -2210,7 +2210,7 @@ In the above example, please note two things:
 
 <h4>Best practice #1: always add a heading to explicit sectioning content</h4>
 
-It's always better - mainly for accessibility reasons - to include a heading (a <h1>, <h2>...<h6>) in each sectioning element (&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also after the &lt;body&gt; element (called a "sectioning root"). 
+<p>It's always better - mainly for accessibility reasons - to include a heading (a &lt;h1&gt;, &lt;h2&gt;...&lt;h6&gt;) in each sectioning element (&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also after the &lt;body&gt; element (called a "sectioning root"). 
 
 Here are some examples:
 
