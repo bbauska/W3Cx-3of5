@@ -2201,7 +2201,7 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 &nbsp;
 <br/>
 
-In the above example, please note two things:
+<p>In the above example, please note two things:</p>
 <ol type="1">
 <li>The outline shows an "Untitled body" at the root of the hierarchy,</li>
 <li>The default size for the H1 and H2 is the same (!). Indeed, when we start a &lt;h1&gt; inside a &lt;section&gt; the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
@@ -2211,9 +2211,9 @@ In the above example, please note two things:
 
 <h4>Best practice #1: always add a heading to explicit sectioning content</h4>
 
-<p>It's always better - mainly for accessibility reasons - to include a heading (a &lt;h1&gt;, &lt;h2&gt;...&lt;h6&gt;) in each sectioning element (&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also after the &lt;body&gt; element (called a "sectioning root"). 
+<p>It's always better - mainly for accessibility reasons - to include a heading (a &lt;h1&gt;, &lt;h2&gt;...&lt;h6&gt;) in each sectioning element (&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also after the &lt;body&gt; element (called a "sectioning root").</p>
 
-Here are some examples:
+<h4>Here are some examples:</h4>
 
 <h4>Good (heading in each explicit section):</h4>
 
@@ -2248,9 +2248,9 @@ Here are some examples:
 </section>
 ```
 
-The last example is bad for accessibility reasons. A screen reader that vocalizes the page will just say "Entering section", while in the previous two good examples it would say "entering section with heading Blog Posts of April 2020". You can also check if your headings and sectioning elements are ok by using a browser extension that displays the outline of the document (just search for "html5 outliner" in your browser's extension search engine).
+<p>The last example is bad for accessibility reasons. A screen reader that vocalizes the page will just say "Entering section", while in the previous two good examples it would say "entering section with heading Blog Posts of April 2020". You can also check if your headings and sectioning elements are ok by using a browser extension that displays the outline of the document (just search for "html5 outliner" in your browser's extension search engine).
 
-<b>UPDATE:</b> For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">Outline sidebar</a> for Firefox.
+<b>UPDATE:</b> For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">Outline sidebar</a> for Firefox.</p>
 
 <h4>The outline of the last example looks like this:</h4>
 <!------------------------------------------------------------------------------------------------>
@@ -19649,4 +19649,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-07-2022 10:12pm</i></b></h3>
+<h3><b><i>08-07-2022 10:24pm</i></b></h3>
