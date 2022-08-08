@@ -2434,19 +2434,19 @@ They are also useful for checking the presence of headings in each sectioning c
    width="25%" />
 </p>
 
-If you use &lt;nav&gt; / <header> / <footer> etc. to structure your document, you can also use <main> to identify the main content of the document. Doing so provides a navigable document structure for assistive technology users as well as styling hooks for devs.
+If you use &lt;nav&gt; / &lt;header&gt; / &lt;footer&gt; etc. to structure your document, you can also use &lt;main&gt; to identify the main content of the document. Doing so provides a navigable document structure for assistive technology users as well as styling hooks for devs.
 
-We have seen the different sectioning elements of HTML5, so why didn't we talk about the <main> element earlier in this part of the course? Shouldn't  <main>...</main> be used in place of  <div class="main">...</div>?
+We have seen the different sectioning elements of HTML5, so why didn't we talk about the &lt;main&gt; element earlier in this part of the course? Shouldn't &lt;main&gt;...&lt;/main&gt; be used in place of &lt;div class="main"&gt;...&lt;/div&gt;?
 
-The <main> element is supported by major modern browsers (see the corresponding <a href="https://caniuse.com/#feat=mdn-html_elements_main" target="_blank">support table</a> on CanIUse and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main#Browser_compatibility" target="_blank">MDN's brower compatibility page</a>.
+The &lt;main&gt; element is supported by major modern browsers (see the corresponding <a href="https://caniuse.com/#feat=mdn-html_elements_main" target="_blank">support table</a> on CanIUse and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main#Browser_compatibility" target="_blank">MDN's brower compatibility page</a>.
 
-This element is subject to some constraints:
+This element is subject to some constraints:</p>
 <ul>
 <li>There must not be more than one &lt;main&gt; element in a document,</li>
 <li>It must not be a descendant of an &lt;article&gt;,&lt;aside&gt;, &lt;footer&gt;, &lt;header&gt;, or &lt;nav&gt; element.</li>
 </ul>
-
-And finally, here are some examples (from <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank">the HTML5 specification</a>) that mix the <main> element with the other sectioning elements already seen in the course:
+<p>
+And finally, here are some examples (from <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank">the HTML5 specification</a>) that mix the &lt;main&gt; element with the other sectioning elements already seen in the course:</p>
 
 ```
 1.  <!-- other content -->
@@ -2476,7 +2476,8 @@ And finally, here are some examples (from <a href="https://www.w3.org/TR/html5/
 25. <!-- other content -->
 ```
 
-Here is another example (also from the specification). Here the <main> element contains a &lt;nav&gt; element consisting of links to subsections of the main content:
+<p>Here is another example (also from the specification). Here the <main> element contains a &lt;nav&gt; element consisting of links to subsections of the main content:</p>
+
 ```
 1.  <!DOCTYPE html>
 2.     <html lang="en">
@@ -2533,10 +2534,10 @@ Here is another example (also from the specification). Here the <main> element
 ```
 
 <h4>Best practice</h4>
-
+<p>
 For accessibility matters, a best practice is to split your page content into "regions" defined by the five 5 elements (aside, footer, header, main and nav) learned this week. 
 
-We recommend this article written by Steve Faulkner: "<a href="https://www.paciellogroup.com/blog/2015/09/easy-content-organisation-with-html5/" target="_blank">Easy content organisation with HTML5</a>" (24 September 2015). Steve explains in details how to organize an HTML document into "regions" based on the semantic markup elements we have seen so far during Module 1 of this course.
+We recommend this article written by Steve Faulkner: "<a href="https://www.paciellogroup.com/blog/2015/09/easy-content-organisation-with-html5/" target="_blank">Easy content organisation with HTML5</a>" (24 September 2015). Steve explains in details how to organize an HTML document into "regions" based on the semantic markup elements we have seen so far during Module 1 of this course.</p>
 
 <h4>External resources:</h4>
 <ul>
@@ -2546,8 +2547,8 @@ We recommend this article written by Steve Faulkner: "<a href="https://www.pacie
 </ul>
 
 <h3 id="ch1-3-9">1.3.9 The Blog Example, Applying Best Practices</h3>
-
-Let's go back to our blog example and see what can be improved:
+<p>
+Let's go back to our blog example and see what can be improved:</p>
 <ul>
 <li>Do we have a heading after each sectioning element?</li>
 <li>Did we use sectioning elements or implicit sections?</li>
@@ -2566,7 +2567,7 @@ Let's go back to our blog example and see what can be improved:
    width="65%" />
 </p>
 
-Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an &lt;article&gt; that is in a &lt;section&gt; (this corresponds to the third example given in the "heading and sectioning elements" part of the course):
+<p>Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an &lt;article&gt; that is in a &lt;section&gt; (this corresponds to the third example given in the "heading and sectioning elements" part of the course):</p>
 
 ```
 1.  <section>
@@ -2583,23 +2584,23 @@ Also note that in this example, we used H1s after each sectioning element, and 
 12. </section>
 ```
 
-With this technique, parts of the document can be moved more easily, or integrated inside an RSS stream, without the need to renumber the headings.
+<p>With this technique, parts of the document can be moved more easily, or integrated inside an RSS stream, without the need to renumber the headings.
 
-Beware that this technique will require you to use some CSS styling, and may confuse some screen readers that do not yet take into account this way of computing the heading hierarchy. A simple fix is to use an H1 right after the &lt;body&gt; and use only H2...H6 inside &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt;.
+Beware that this technique will require you to use some CSS styling, and may confuse some screen readers that do not yet take into account this way of computing the heading hierarchy. A simple fix is to use an H1 right after the &lt;body&gt; and use only H2...H6 inside &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt;.</p>
 
 <h4>Let's fix the missing heading</h4>
 
-We need to add a heading in the &lt;nav&gt; element. This will both fix the outline of the document by removing the untitled entry, and will also make screen readers happy as they will better vocalize the structure of the page (it will say "entering nav" followed by the vocalization of the heading content).
+<p>We need to add a heading in the &lt;nav&gt; element. This will both fix the outline of the document by removing the untitled entry, and will also make screen readers happy as they will better vocalize the structure of the page (it will say "entering nav" followed by the vocalization of the heading content).</p>
 
 ```
-1.  &lt;nav&gt;
+1.  <nav>
 2.     <header>
-3.       <h1>Navigation menu</h1>
+3.        <h1>Navigation menu</h1>
 4.     <b></header></b>
 5.     <ul>
-6.       <li><span>Blog</span></li>
-7.       <li><a href="">About</a></li>
-8.       <li><a href="">Contact</a></li>
+6.        <li><span>Blog</span></li>
+7.        <li><a href="">About</a></li>
+8.        <li><a href="">Contact</a></li>
 9.     </ul>
 10. </nav>
 ```
@@ -2615,20 +2616,20 @@ We need to add a heading in the &lt;nav&gt; element. This will both fix the ou
    width="55%" />
 &nbsp;
 <br/>
-
+<p>
 A common remark from Web designers is: "we do not want a heading content displayed systematically after a &lt;nav&gt;, or an &lt;aside&gt; element..."
 
 <b>BEST PRACTICE #1:</b> In order to NOT display the heading content on screen the recommended technique is described in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/" target="_blank">this article by Steve Faulkner</a>. Do not use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies.
 
 As an illustration of the recommended technique, see <a href="https://jsbin.com/savabo/edit?html,output" target="_blank">this JSBin version of the blog example</a> that hides the <h2>Navigation menu</h2> from the &lt;nav&gt;...</nav> element, using the CSS technique explained in the above link.
 
-<b>BEST PRACTICE #2:</b> It is not advised to include interactive content (links, controls etc) that is hidden offscreen it is in fact a violation of the <a href="https://www.w3.org/TR/WCAG20/)" target="_blank">W3C WCAG 2.0 Guidelines</a>. All interactive content must have a visible focus indicator (and be on screen when focused).
+<b>BEST PRACTICE #2:</b> It is not advised to include interactive content (links, controls etc) that is hidden offscreen it is in fact a violation of the <a href="https://www.w3.org/TR/WCAG20/)" target="_blank">W3C WCAG 2.0 Guidelines</a>. All interactive content must have a visible focus indicator (and be on screen when focused).</p>
 
 <h4>Embedding a table of contents and adding a &lt;main&gt; element</h4>
-
+<p>
 In the previous section, we saw how to embed a table of contents using some JavaScript code borrowed from the Google Chrome HTML5 outliner extension.
 
-Let's add this piece of code (we removed the JS details from this extract):
+Let's add this piece of code (we removed the JS details from this extract):</p>
 
 ```
 1.  <aside>
@@ -2641,7 +2642,7 @@ Let's add this piece of code (we removed the JS details from this extract):
 8.  </aside>
 ```
 
-We also added a <main> element to identify the main content of the page composed of the big section with all blog posts:
+<p>We also added a <main> element to identify the main content of the page composed of the big section with all blog posts:</p>
 
 ```
 1.  <main>
