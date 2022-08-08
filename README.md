@@ -2605,7 +2605,7 @@ Beware that this technique will require you to use some CSS styling, and may con
 10. </nav>
 ```
 
-<h5>Here is the fixed result:</h5>
+<h4>Here is the fixed result:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 33. good outline without the untitled nav (53) -------------------------->
@@ -2621,7 +2621,7 @@ A common remark from Web designers is: "we do not want a heading content display
 
 <b>BEST PRACTICE #1:</b> In order to NOT display the heading content on screen the recommended technique is described in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/" target="_blank">this article by Steve Faulkner</a>. Do not use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies.
 
-As an illustration of the recommended technique, see <a href="https://jsbin.com/savabo/edit?html,output" target="_blank">this JSBin version of the blog example</a> that hides the <h2>Navigation menu&lt;/h2&gt; from the &lt;nav&gt;...&lt;/nav&gt; element, using the CSS technique explained in the above link.
+As an illustration of the recommended technique, see <a href="https://jsbin.com/savabo/edit?html,output" target="_blank">this JSBin version of the blog example</a> that hides the &lt;h2&gt;Navigation menu&lt;/h2&gt; from the &lt;nav&gt;...&lt;/nav&gt; element, using the CSS technique explained in the above link.
 
 <b>BEST PRACTICE #2:</b> It is not advised to include interactive content (links, controls etc) that is hidden offscreen it is in fact a violation of the <a href="https://www.w3.org/TR/WCAG20/)" target="_blank">W3C WCAG 2.0 Guidelines</a>. All interactive content must have a visible focus indicator (and be on screen when focused).</p>
 
@@ -2642,7 +2642,7 @@ Let's add this piece of code (we removed the JS details from this extract):</p>
 8.  </aside>
 ```
 
-<p>We also added a <main> element to identify the main content of the page composed of the big section with all blog posts:</p>
+<h4>We also added a &lt;main&gt; element to identify the main content of the page composed of the big section with all blog posts:</h4>
 
 ```
 1.  <main>
@@ -2695,8 +2695,8 @@ We embed examples from this <a href="https://learn.shayhowe.com/html-css/positi
 The 4 examples below are given "as is" to give you some hints. There are lots of other possibilities on using CSS to position element.</p>
 
 <h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, using the float and width CSS properties</h4>
-<p>
-This example uses the following HTML structure (notice that we use the "HTML entity syntax" for displaying "<" or ">". For example, displays a "<" character).</p>
+
+<p>This example uses the following HTML structure (notice that we use the "HTML entity syntax" for displaying "<" or ">". For example, displays a "<" character).</p>
 
 ```
 1.  <header>
