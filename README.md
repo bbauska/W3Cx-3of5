@@ -3709,6 +3709,7 @@ However, if you do not find a vocabulary corresponding to your needs, keep in mi
 21.      </ul>
 22. </section>
 ```
+
 <p>
 In this example, the container is a &lt;section&gt; that corresponds to a Person (we have one clue here: the name of the vocabulary given by the itemtype attribute), and each property defined inside this section is identified by the value of the itemprop attribute of sub-elements.
 </p>
@@ -3752,6 +3753,7 @@ Give an element inside a microdata container its own itemscope attribute wit
 19. 
 20. ...
 ```
+
 <p>
 The properties at <i>lines 8-12</i> refer to the address nested microdata (they are defined in the Address vocabulary, not the Person vocabulary), and "France" (<i>line 14</i>) is a property that refers to the Country vocabulary.
 </p>
@@ -3769,6 +3771,7 @@ The properties at <i>lines 8-12</i> refer to the address nested microdata (the
 7.        Buffa's blog</a></li>
 8.  </ul>
 ```
+
 <p>
 This defines the fact that Michel Buffa has two online accounts, and the two properties have the name url, each with its own value.
 
@@ -3776,6 +3779,7 @@ This defines the fact that Michel Buffa has two online accounts, and the two pro
 <p>
 Here are some microdata that represent a song. In this example, at line 5 we set  two different properties: genre and keywords with the same value (see the <a href="https://schema.org/MusicRecording">MusicRecording schema definition</a>):
 </p>
+
 ```
 1.  <div itemscope itemtype="https://schema.org/MusicRecording">
 2.  <h2>The song I just published</h2>
@@ -3788,13 +3792,12 @@ Here are some microdata that represent a song. In this example, at line 5 we
 
 <p>And so on...
 
-Now, let's see what elements are compatible with the itemprop attribute and where the values of the properties are located, depending on each element type.
-</p>
+Now, let's see what elements are compatible with the itemprop attribute and where the values of the properties are located, depending on each element type.</p>
 <h4>The HTML elements compatible with the itemprop attribute</h4>
 
-If the itemprop attribute appears on a:
+<p>If the itemprop attribute appears on a:</p>
 
-Elements that can be associated with microdata
+<h4>Elements that can be associated with microdata</h4>
 
 | HTML5 elements | microdata value associated |
 | ---------------| ---------------------------|
@@ -3804,20 +3807,20 @@ Elements that can be associated with microdata
 | &lt;time&gt; element | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
 | &lt;meta&gt; element | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
 | anything else | The data is whatever is in the text of the element. |
-
-For example, the value of a property defined in an <img> element will be the value of the src attribute:
+<p>
+For example, the value of a property defined in an <img> element will be the value of the src attribute:</p>
 
 ```
 1.  <img itemprop="image" src="MichelBuffa.png" alt="A great professor">
 ```
 
-Or for a <time>, it will be the value of the datetime attribute:
+<p>Or for a <time>, it will be the value of the datetime attribute:</p>
 
 ```
 1.  <time itemprop="birthday" datetime="1965-04-16">April 16, 1965</time>
 ```
 
-Or for an <a> element, the value will be the value of the href attribute:
+<p>Or for an <a> element, the value will be the value of the href attribute:</p>
 
 ```
 1.  <a href="https://www.twitter.com/micbuffa" itemprop="url">profile</a>
@@ -3825,7 +3828,7 @@ Or for an <a> element, the value will be the value of the href attribute:
 
 <h3 id="ch1-5-4">1.5.4 Microdata Tools</h3>
 
-There are many tools available (most are free) that you can use for generating, visualizing and debugging microdata. We list some of them in this page, but feel free to share the tools you find / like in the forums.
+<p>There are many tools available (most are free) that you can use for generating, visualizing and debugging microdata. We list some of them in this page, but feel free to share the tools you find / like in the forums.</p>
 
 <h4>Microdata generators</h4>
 
@@ -3902,8 +3905,8 @@ View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 onlin
 
 <h3 id="ch2-2-1">2.2.1 The &lt;video&gt; Element</h3>
 
-Until 2012, it was only possible to integrate an audio or video player using the proprietary Flash technology, marketed by the company Macromedia (later acquired by Adobe). The <video> element of HTML5 is one of the three "Flash killers" (the others being <audio> for the sound and <canvas> for drawing and animation).
-<i>(Note that Adobe [no longer supports Flash Player](https://www.adobe.com/products/flashplayer/end-of-life.html) since December 31, 2020)</i>
+<p>Until 2012, it was only possible to integrate an audio or video player using the proprietary Flash technology, marketed by the company Macromedia (later acquired by Adobe). The &lt;video&gt; element of HTML5 is one of the three "Flash killers" (the others being &lt;audio&gt; for the sound and &lt;canvas&gt; for drawing and animation).
+<i>(Note that Adobe <a href="https://www.adobe.com/products/flashplayer/end-of-life.html">no longer supports Flash Player</a> since December 31, 2020)</i></p>
 
 <h4>Check the HTML code of the following CodePen:</h4>
 
@@ -3917,28 +3920,28 @@ Until 2012, it was only possible to integrate an audio or video player using the
 &nbsp;
 <br/>
 
-Please note that:
+<h4>Please note that:</h4>
 <ul>
 <li>The controls attribute indicates that a control panel with play/stop/volume/progress widgets should be displayed;</li>
 <li>Usually the browser  will use the first format it recognizes  (in this case, the browser checks whether mp4 is supported, and if not, it will check for the ogg format, and so on). Some browsers may use a different heuristic and choose a "preferred" format;</li>
 <li>The &lt;video&gt; element is a DOM member, so  CSS styling can be applied, as well as manipulation using the DOM API.</li>
 </ul;>
-
-You will learn more about the different attributes of the <video> element later on in the course.
+<p>
+You will learn more about the different attributes of the &lt;video&gt; element later on in the course.
 
 <h4>Current browser support for the &lt;video&gt; element</h4>
-
-The <video> element is supported by all major browsers. See the <a href="https://caniuse.com/video">support table from CanIUse.</a>
+<p>
+The &lt;video&gt; element is supported by all major browsers. See the <a href="https://caniuse.com/video">support table from CanIUse.</a></p>
 
 <h4>Restriction: you cannot embed a YouTube or DailyMotion video using the &lt;video&gt; element</h4>
-
-Help! <video src="my youtube video URL"></video> does not work! 
+<p>
+Help! &lt;video src="my youtube video URL"&gt;&lt;/video&gt; does not work! 
 
 <b>BEWARE</b>: you cannot directly embed videos from most of the popular Web sites such as YouTube, Dailymotion, Vimeo, etc. For commercial reasons, and because advertising is automatically added to the videos, these Web sites do not allow "regular" embedding of their videos.
 
-While they use HTML5 to render their videos, these hosting sites (YouTube, etc.) use rather complex techniques in order to prevent you from using them with the <video>element. Instead, you often need to embed an <iframe> that will render the HTML5 videos in your Web site, and of course, the advertising that comes along with them.
+While they use HTML5 to render their videos, these hosting sites (YouTube, etc.) use rather complex techniques in order to prevent you from using them with the &lt;video&gt;element. Instead, you often need to embed an <iframe> that will render the HTML5 videos in your Web site, and of course, the advertising that comes along with them.
 
-Usually you have an "embed" button close to the videos that prompts you with some HTML code that you can copy and paste for embedding.
+Usually you have an "embed" button close to the videos that prompts you with some HTML code that you can copy and paste for embedding.</p>
 
 <h4>An example using YouTube:</h4>
 
@@ -3948,7 +3951,7 @@ Usually you have an "embed" button close to the videos that prompts you with s
 1.  <iframe width="560" height="315" src="https://www.youtube.com/embed/WMFXg-kni0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
-The YouTube video embedded in this page by the above code: it's HTML5 but it's not a <video> element directly inserted in the HTML of this page, it's an <iframe>.
+<p>The YouTube video embedded in this page by the above code: it's HTML5 but it's not a &lt;video&gt; element directly inserted in the HTML of this page, it's an &lt;iframe&gt;.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 69. web of things (wot) explainer video snapshot (83) --------------------->
@@ -3962,9 +3965,9 @@ The YouTube video embedded in this page by the above code: it's HTML5 but it's n
 
 <h4>Support for different video CODECS (mp4, ogG, avi, etc.)</h4>
 
-This is one of the main problems encountered in recent years: codec support was not the same from one browser to another, for commercial/economic reasons. For example, between 2010 and 2013, Firefox only supported the ogg/oggm format. It did not support mp3/mp4 encoding for audio/video, while Internet Explorer only supported H.264 encoding. Since 2012, things have changed with browser updates and today most popular formats are supported.
+<p>This is one of the main problems encountered in recent years: codec support was not the same from one browser to another, for commercial/economic reasons. For example, between 2010 and 2013, Firefox only supported the ogg/oggm format. It did not support mp3/mp4 encoding for audio/video, while Internet Explorer only supported H.264 encoding. Since 2012, things have changed with browser updates and today most popular formats are supported.
 
-<i>The recommended CODEC, which works in all popular browsers: H264/mp4.</i>
+<i>The recommended CODEC, which works in all popular browsers: H264/mp4.</i></p>
 
 <h4>External resources</h4>
 <ul>
@@ -3983,16 +3986,16 @@ This is one of the main problems encountered in recent years: codec support was 
 </ul>
 <!----- https://github.com/bbauska/W3Cx-4of5-HTML5.2x --------->
 <p>
-This course will focus on the <audio> element. We present the <a href="https://www.w3.org/TR/webaudio/">Web Audio API</a> and other advanced HTML5 features in the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games course</a>.
+This course will focus on the &lt;audio&gt; element. We present the <a href="https://www.w3.org/TR/webaudio/">Web Audio API</a> and other advanced HTML5 features in the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games course</a>.
 
-The attributes, event set and JavaScript API  of the <audio> element are just a "reduced" version of the ones from the <video> element, and here we will only address the differences and peculiarities.
+The attributes, event set and JavaScript API  of the &lt;audio&gt; element are just a "reduced" version of the ones from the <video> element, and here we will only address the differences and peculiarities.
 </p>
 
 <h4>The &lt;audio&gt; element, basic usage</h4>
-
+<p>
 Here is a simple example (also available <a href="https://jsbin.com/yogojis/edit?html,output">online example from JSBin</a>):
 
-Press play to stream the neigh of a horse:   
+Press play to stream the neigh of a horse:</p>
 
 <h5>As you can see, the code is very similar to the basic &lt;video&gt; element usage.</h5>
 
@@ -4027,7 +4030,7 @@ Notice the other similarities: between the &lt;audio&gt;...&lt;audio&gt; tags,
 <h4>External resources</h4>
 <ul>
 <li>From W3C's specification: [The audio element](https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element)</li>
-<li>From MDN's Web Docs: [<audio>: The Embed Audio element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)</li>
+<li>From MDN's Web Docs: [&lt;audio&gt;: The Embed Audio element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)</li>
 </ul>
 
 <h3 id="ch2-2-3">2.2.3 Attributes of &lt;video&gt; and &lt;audio&gt;</h3>
@@ -4052,9 +4055,9 @@ Here are the most common attributes you can use with the &lt;video&gt; element
 
 <h4> Be careful if you target mobile applications or if you have multiple videos on the same page</h4>
 <p>
-The autoplay attribute is not recommended if your Web site targets mobile applications (actually, it is often ignored by mobile browsers), as it may consume bandwidth even if the user is not interested in watching the proposed video. If you target mobile devices, we recommend using preload=none as well, as the default value for this attribute is auto.</p>
+The autoplay attribute is not recommended if your Web site targets mobile applications (actually, it is often ignored by mobile browsers), as it may consume bandwidth even if the user is not interested in watching the proposed video. If you target mobile devices, we recommend using preload=none as well, as the default value for this attribute is auto.
 
-<b>Best practice</b>: do not use autoplay and add preload="none" if you target mobile devices or if you have multiple audio/video files on the same page.  For example, [this page](https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html) contains many audio elements and it does not make sense to have them preload or autoplay.
+<b>Best practice</b>: do not use autoplay and add preload="none" if you target mobile devices or if you have multiple audio/video files on the same page.  For example, <a href="https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html">this page</a> contains many audio elements and it does not make sense to have them preload or autoplay.</p>
 
 <h4>About the poster attribute</h4>
 <p>
@@ -4062,13 +4065,13 @@ If the poster attribute is missing, usually the first non-blank frame of the v
 
 <h4>About the autoplay attribute for general use</h4>
 <p>
-Do not abuse of the autoplay attribute. We talked earlier about mobile applications, but even on desktop applications it's usually a bad idea to use it (except for WebCams and for some animations with small video loops, without sound, or for sites like YouTube, with just videos).</p>
+Do not abuse of the autoplay attribute. We talked earlier about mobile applications, but even on desktop applications it's usually a bad idea to use it (except for WebCams and for some animations with small video loops, without sound, or for sites like YouTube, with just videos).
 
-<b>Best practice</b>: think twice before using the autoplay attribute, even for desktop applications.
+<b>Best practice</b>: think twice before using the autoplay attribute, even for desktop applications.</p>
 
 <h4>Attributes of the &lt;audio&gt; element</h4>
 <p>
-The attributes you can use with the <audio> element are a subset of those available for the <video> element. Except for the poster attribute, they are all recognized and have the expected meanings: </p>
+The attributes you can use with the &lt;audio&gt; element are a subset of those available for the <video> element. Except for the poster attribute, they are all recognized and have the expected meanings: </p>
 <ul>
 <li>src: source of an audio stream.</li>
 <li>controls: if this attribute is present, the browser displays its own controls for audio playback and volume.</li>
@@ -4076,23 +4079,25 @@ The attributes you can use with the <audio> element are a subset of those ava
 <li>preload: tells the browser what to do before a user plays a sound - please read details in the above table.</li>
 <li>loop:  indicates to play the audio stream in loop mode (start again when finished).</li>
 </ul>
+
 <p>
-As with the <video> element, the same best practice in regard to preload and autoplay attributes should be followed.
-</p>
+As with the &lt;video&gt; element, the same best practice in regard to preload and autoplay attributes should be followed.</p>
+
 <h3 id="ch2-2-4">2.2.4 Styling Media Players with CSS</h3>
 <p>
-The <video> and <audio> elements are just like other HTML elements, so CSS can be used for styling, including CSS transitions, animations, etc.
+The &lt;video&gt; and &lt;audio&gt; elements are just like other HTML elements, so CSS can be used for styling, including CSS transitions, animations, etc.
 </p>
+
 <h4>An example of an audio player with some style</h4>
 <p>
 You can try this example <a href="https://jsbin.com/zoquru/2/edit?html,css,output">online at JSBin</a>.
 
-To add some styling to the basic example we saw when we introduced the <audio> element, we just add a &lt;figure&gt; with two children: an &lt;img&gt; and a &lt;figcaption&gt;. Inside the <figcaption> we add the <audio> element from the previous example.
+To add some styling to the basic example we saw when we introduced the &lt;audio&gt; element, we just add a &lt;figure&gt; with two children: an &lt;img&gt; and a &lt;figcaption&gt;. Inside the &lt;figcaption&gt; we add the &lt;audio&gt; element from the previous example.
 
 Please move the mouse pointer over this player's elements:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 70. two gery-black horses in a field (xx) ------------------------------->
+<!-------------------------- 70. two gery-black horses in a field (87) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image070.jpeg?raw=true"
