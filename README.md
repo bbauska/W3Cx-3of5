@@ -611,7 +611,7 @@ So various studies have been conducted in order to identify the most popular ids
 
 Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">article: </a>"During the creation of HTML5, Ian Hickson used Google's tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA ("Metadata Analysis and Mining Application"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics".</p>
 
-<h4 id="ch3-1-1">3.1.1 New elements added to the HTML5 set</h4>
+<h3 id="ch3-1-1">3.1.1 New elements added to the HTML5 set</h3>
 <p>
 The results of these surveys led to the addition of new structural elements in HTML5. For example, the very popular &lt;div class="header"&gt; led to the creation of a &lt;header&gt; element, &lt;div class="aside"&gt; to a &lt;aside&gt; element, etc.
 
@@ -2656,14 +2656,14 @@ Let's add this piece of code (we removed the JS details from this extract):</p>
 ```
 
 <h4>Use H1 as top level headings only, use H2...H6 in sectioning content</h4>
-
+<p>
 As explained in the article <a href="https://www.paciellogroup.com/blog/2013/10/html5-document-outline/" target="_blank">HTML5 Document Outline</a> and in <a href="https://www.w3.org/wiki/HTML/Usage/Headings">the W3C HTML Wiki</a>, it is risky to use nested H1s, as browsers do not correctly implement the "outline algorithm".
 
 The blog example uses nested H1's. If you check it with <a href="https://validator.w3.org/nu" target="_blank">the W3C conformance checker</a>, it issues a warning: "*Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).*"
 
 While this is just a warning, we do prefer to use H1s only as top level elements, and replace the H1s we had after &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt; elements respectively by a H2s and H3s. 
 
-<h5>Extract from source code:</h5>
+<h4>Extract from source code:</h4>
 
 ```
 1.  <nav>
@@ -2698,8 +2698,8 @@ We embed examples from this <a href="https://learn.shayhowe.com/html-css/positi
 The 4 examples below are given "as is" to give you some hints. There are lots of other possibilities on using CSS to position element.
 
 <h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, using the float and width CSS properties</h4>
-
-This example uses the following HTML structure (notice that we use the "HTML entity syntax" for displaying "<" or ">". For example, displays a "<" character).
+<p>
+This example uses the following HTML structure (notice that we use the "HTML entity syntax" for displaying "<" or ">". For example, displays a "<" character).</p>
 
 ```
 1.  <header>
@@ -2719,11 +2719,12 @@ This example uses the following HTML structure (notice that we use the "HTML ent
 15. </footer>
 ```
 
-Here we use the CSS rule float:left for the &lt;section&gt; and the CSS rule float:right for the &lt;aside&gt;. When an element floats, it goes out of the normal flow of the HTML element. Then by default it floats to the edge of its parent; and its size depends on the elements it contains. So, in order to fill the whole horizontal space, we prefer here to "force the width" by setting the CSS width property with a percentage.  So we took width: 63% for the &lt;section&gt; on the left and width:30% for the &lt;aside&gt; on the right.
+<p>Here we use the CSS rule float:left for the &lt;section&gt; and the CSS rule float:right for the &lt;aside&gt;. When an element floats, it goes out of the normal flow of the HTML element. Then by default it floats to the edge of its parent; and its size depends on the elements it contains. So, in order to fill the whole horizontal space, we prefer here to "force the width" by setting the CSS width property with a percentage.  So we took width: 63% for the &lt;section&gt; on the left and width:30% for the &lt;aside&gt; on the right.
 
-You can look at the complete CSS code in the interactive example below (click on the CSS or HTML text in the menu bar below, or click "edit on codepen" to change the code and see the results):
+You can look at the complete CSS code in the interactive example below (click on the CSS or HTML text in the menu bar below, or click "edit on codepen" to change the code and see the results):</p>
+
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 35.  (xx) ------------------->
+<!--------------- 35. header with section float left and aside float right (56) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image035.png?raw=true"
@@ -6519,16 +6520,17 @@ Click "start recording", then press the play button on the video element on the 
 
 <h4>3 - When you've finished recording, tell the mediaRecorder to stop</h4>
 
-When you're done, you need to call the stop() method of the mediaRecorder object. This will end the periodic execution of the handleDataAvailable method, and stop the data capture.
+<p>When you're done, you need to call the stop() method of the mediaRecorder object. This will end the periodic execution of the handleDataAvailable method, and stop the data capture.</p>
+
 ```
 1.  mediaRecorder.stop();
 ```
 
 <h4>4 - Create a BLOB (Binary Large Object) with the collected data, and use it to set the src attribute of an HTML5 video player</h4>
 
-This piece of code creates a blob with the recordedChunks array. Use the URL.createObjectURL(recordedChunks) standard method to create another object that can be used as a value to set the src attribute of an HTML5 video element.
+<p>This piece of code creates a blob with the recordedChunks array. Use the URL.createObjectURL(recordedChunks) standard method to create another object that can be used as a value to set the src attribute of an HTML5 video element.
 
-Like that, the recorded stream can be played using a standard HTML5 <video> element.
+Like that, the recorded stream can be played using a standard HTML5 &lt;video&gt; element.</p>
 
 ```
 1.  function play() {
@@ -6540,7 +6542,7 @@ Like that, the recorded stream can be played using a standard HTML5 <video> el
 
 <h4>5 - Download the captured stream</h4>
 
-A trick consists in creating, on the fly, an invisible link with a download attribute (see Module 1) and a href attribute  that points to the blob object containing the recorded stream encoded using a given codec, then generate programmatically a click event on the link. This will force the browser to download a file of type video/webm to the hard disk.
+<p>A trick consists in creating, on the fly, an invisible link with a download attribute (see Module 1) and a href attribute  that points to the blob object containing the recorded stream encoded using a given codec, then generate programmatically a click event on the link. This will force the browser to download a file of type video/webm to the hard disk.</p>
 
 ```
 1.  function download() {
@@ -17476,106 +17478,104 @@ We have already studied some of the HTML5 JavaScript APIs, including:
 However, HTML5 also comes with several APIs that are not directly related to HTML elements, namely: the Orientation API; the Geolocation API; most APIs related to client-side persistence; the Web Storage API; the Web Workers API; and some other APIs that are not in the HTML5 specification, but are related to it, such as the GamePad API, the Web Audio API, etc.
 
 This week, we will look at some of the most useful APIs. Others will be covered in the [W3C HTML5 Apps and Games course](https://www.edx.org/course/html5-apps-and-games):
+<ul>
+<li><b>The "Web Storage" API, sort of "super cookies", for storing pairs of key/values client side.</b> This API is useful for enabling Web sites to save/restore their state, or for writing *serverless* applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.</li>
+<li><b>The File API, that enables Web applications to work with local files</b>. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.</li>
+</ul>
 
--   **The "Web Storage" API, sort of "super cookies", for storing pairs of key/values client side.** This API is useful for enabling Web sites to save/restore their state, or for writing *serverless* applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 295. 'you are here' sign (353) --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image295.jpeg?raw=true"
+   alt="'You are here' sign."
+   width="35%">
+&nbsp;
+<br/>
 
--   **The File API, that enables Web applications to work with local files**. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.
+<ul>
+<li><b>The Geolocation API for obtaining data such as longitude, latitude, altitude (when available), and speed</b>. You will learn how to write applications in combination with interactive maps. You will also learn how to guess the address of a user, for example for pre-filling a registration form with the city, country, and zip code that corresponds with the current location.</li>
+</ul>
 
-> ![you are here sign](./images/image295.jpeg){width="3.125in" height="1.6354166666666667in"}
+<h3 id="ch6-2-1">6.2.1 The Web storage API</h3>
 
--   **The Geolocation API for obtaining data such as longitude, latitude, altitude (when available), and speed**. You will learn how to write applications in combination with interactive maps. You will also learn how to guess the address of a user, for example for pre-filling a registration form with the city, country, and zip code that corresponds with the current location.
-
-## 6.2.1 The Web storage API
-
-The Web storage API introduces "two related mechanisms, similar to HTTP session cookies, for storing structured data on the client side".
+<p>The Web storage API introduces "two related mechanisms, similar to HTTP session cookies, for storing structured data on the client side".
 
 Indeed, Web Storage provides two interfaces - sessionStorage and localStorage - whose main difference is data longevity. This specification defines an API for persistent data storage of key-value pair data in Web clients.
 
-**With localStorage the data will remain until it is deleted, whereas with sessionStorage the data is erased when the tab/browser is closed.**
+<b>With localStorage the data will remain until it is deleted, whereas with sessionStorage the data is erased when the tab/browser is closed.</b>
 
-For convenience, we will mainly illustrate the localStorage object. Just change "local" to "session" and it should work (this time with a session lifetime).
+For convenience, we will mainly illustrate the localStorage object. Just change "local" to "session" and it should work (this time with a session lifetime).</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!--------------------------------- 296. key value pairs (354) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image296.png?raw=true"
+   alt="Key value pairs."
+   width="17%">
 &nbsp;
 <br/>
-![key value pairs](./images/image296.png){width="1.7291666666666667in" height="1.6979166666666667in"}
 
-### Simple key-value stores, one per domain (following the same origin policy)!
+<h4>Simple key-value stores, one per domain (following the same origin policy)!</h4>
 
 localStorage is a simple key-value store, in which the keys and values are strings. There is only one store per domain. This functionality is exposed through the globally available localStorage object. The same applies to sessionStorage.
 
-**Example:**
+<h4>Example:</h4>
 
+```
 1.  // Using localStorage
-
 2.  
-
 3.  // store data
-
 4.  localStorage.lastName = "Bunny";
-
 5.  localStorage.firstName = "Bugs";
-
 6.  localStorage.location = "Earth";
-
 7.  
-
 8.  // retrieve data
-
 9.  var lastName = localStorage.lastName;
-
 10. var firstName = localStorage.firstName;
-
 11. var location = localStorage.location;
+```
 
-This data is located in a store attached to the origin of the page. We created[ a JSBin example in which we included the above code](https://jsbin.com/povuqa/1/edit).
+<p>This data is located in a store attached to the origin of the page. We created <a href="https://jsbin.com/povuqa/1/edit">a JSBin example in which we included the above code</a>.
 
-Once opened in your browser, the JavaScript code is executed. With the browser dev. tools, we can check what has been stored in the localStorage for this domain:
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
-&nbsp;
-<br/>
-![example of localStorage](./images/image297.jpeg){width="6.5in" height="5.430555555555555in"}
-
-Here is a view of the devtools. In more recent versions of Google Chrome, the "Resources" tab is named "Applications":
+Once opened in your browser, the JavaScript code is executed. With the browser dev. tools, we can check what has been stored in the localStorage for this domain:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 297. example of localStorage (355) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image297.jpeg?raw=true"
+   alt="Examples of read and write localStorage."
+   width="65%">
 &nbsp;
 <br/>
-![dev tools can be used to show what is in the local storage](./images/image298.jpeg){width="6.5in" height="6.209027777777778in"}
 
-### Differences with cookies?
+<p>Here is a view of the devtools. In more recent versions of Google Chrome, the "Resources" tab is named "Applications":</p>
 
-Cookies are also a popular way to store key-value pairs. Web Storage, however, is a more powerful technique than cookies. The main difference is in size limits: cookies are limited to a few KBytes whereas Web Storage may extend to several MBytes. Also cookies generate additional HTTP request traffic (whether to request a Web page, an image, a stylesheet, a JavaScript file, etc.).
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 298. view of the devtools (355) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image298.jpeg?raw=true"
+   alt="View of the devtools. Used to show what is in localStorage."
+   width="65%">
+&nbsp;
+<br/>
 
-Objects managed by Web Storage are no longer carried on the network and HTTP, and are easily accessible (read, change and delete) from JavaScript, using the Web Storage API.
+<h4>Differences with cookies?</h4>
 
-### External resources
+<p>Cookies are also a popular way to store key-value pairs. Web Storage, however, is a more powerful technique than cookies. The main difference is in size limits: cookies are limited to a few KBytes whereas Web Storage may extend to several MBytes. Also cookies generate additional HTTP request traffic (whether to request a Web page, an image, a stylesheet, a JavaScript file, etc.).
 
--   From W3C's specification: [The W3C Web Storage API recommendation](https://www.w3.org/TR/webstorage/)
+Objects managed by Web Storage are no longer carried on the network and HTTP, and are easily accessible (read, change and delete) from JavaScript, using the Web Storage API.</p>
 
--   An Interesting article on Web.dev: [Storage for the Web](https://web.dev/storage-for-the-web/)
+<h4>External resources</h4>
 
--   From MDN's Web Docs: [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
-
+<ul>
+<li>From W3C's specification: <a href="https://www.w3.org/TR/webstorage/">The W3C Web Storage API recommendation</a></li>
+<li>An Interesting article on Web.dev: <a href="https://web.dev/storage-for-the-web/">Storage for the Web</a></li>
+<li>From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">Web Storage API</a></li>
+</ul>
 <h3 id="ch6-2-2">6.2.2 Example 1</h3>
 
 You can start filling this form and come back another day and complete it. It doesn't matter if you closed your browser before coming back. The form never loses what you entered, even if you reload the page, or press "backspace" by mistake. **This form auto saves/restores its content**.
@@ -19649,4 +19649,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-07-2022 5:19pm</i></b></h3>
+<h3><b><i>08-07-2022 10:12pm</i></b></h3>
