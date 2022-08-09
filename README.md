@@ -3794,12 +3794,12 @@ Now, let's see what elements are compatible with the itemprop attribute and wh
 
 <h4>Elements that can be associated with microdata</h4>
 
-| HTML5 elements | microdata value associated |
-| ---------------| -------------------------------------------------------------------|
+| HTML5 elements              | microdata value associated                                                                                                   |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------|
 | &lt;a&gt;, &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt; element | The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person's photo and downloaded accordingly. |
-| &lt;time&gt; element                                                                | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
-| &lt;meta&gt; element                                                                | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
-| anything else                                                                       | The data is whatever is in the text of the element. |
+| &lt;time&gt; element                                                                                                                                       | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
+| &lt;meta&gt; element                                                                                                                                       | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
+| anything else                                                                                                                                              | The data is whatever is in the text of the element. |
 
 <p>
 For example, the value of a property defined in an <img> element will be the value of the src attribute:</p>
@@ -4402,13 +4402,13 @@ header video {
 ```
 
 <h4>The trick here is that:</h4>
-<p>
-1.  the video is in the header, and the header has a plotted transparent background image ("dots.png") that is repeated in X and Y (see <i>lines 8</i> and <i>9</i>).
 
-2.  The video is positioned so that it's origin (top left corner) is away from the visible surface (<i>line 25</i>), while it is set to take 100% of the surface (<i>lines 20</i> and <i>21</i>).
+<ol type="1">
+<li>The video is in the header, and the header has a plotted transparent background image ("dots.png") that is repeated in X and Y (see <i>lines 8</i> and <i>9</i>).</li>
+<li>The video is positioned so that it's origin (top left corner) is away from the visible surface (<i>line 25</i>), while it is set to take 100% of the surface (<i>lines 20</i> and <i>21</i>).
+</ol>
 
-Full screen video that resizes and keeps its ratio, using the viewport units.
-</p>
+<p>Full screen video that resizes and keeps its ratio, using the viewport units.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------- 75. full screen video using viewport units to keep its ration (92) --------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4439,7 +4439,7 @@ video {
 <h4>Discussion: why can't we achieve perfect resizing with only CSS and the use of properties width=100% and height=100%?</h4>
 <p>
 Let's use the same video to compare the different approaches again:</p>
-<ol>
+<ol type="1">
 <li><a href="https://jsbin.com/zowuqey/edit?html,css,js,output">Original approach</a>, using JavaScript. This solution works on any browser, so we will focus on the two following methods, based on pure CSS.</li>
 <li><a href="https://jsbin.com/sakujuv/1/edit?html,css,output">Using CSS 100%</a> width and height properties (no JavaScript).</li>
 <li><a href="https://jsbin.com/xureyu/3/edit?html,css,output">Using CSS viewport</a> units for width and height (no JavaScript).</li>
@@ -4498,7 +4498,7 @@ This will create a complete video player for the file "video.mp4", with control 
 <p>
 Note that in order to play the video, you must click on the "vid.play()" text. To pause it, you click on the "vid.pause()" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
 </p>
-<p><b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let's see a little more of what we can do using the JavaScript API of the <video> element (it will be an identical approach for the <audio> element, since it shares the same API by a very small margin).</p>
+<p><b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let's see a little more of what we can do using the JavaScript API of the &lt;video&gt; element (it will be an identical approach for the &lt;audio&gt; element, since it shares the same API by a very small margin).</p>
 
 <h3 id="ch2-2-6">2.2.6 The JavaScript API</h3>
 
@@ -5279,9 +5279,9 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 &nbsp;
 <br/>
 
-The video example tests nearly all the possibilities for positioning subtitles/captions, styling (using HTML element wrapping with <b>, <i>,  etc.), voicing (subtitles corresponding to different characters will be displayed in different colors) and CSS styling.
+<p>The video example tests nearly all the possibilities for positioning subtitles/captions, styling (using HTML element wrapping with &lt;b&gt;, &lt;i&gt;,  etc.), voicing (subtitles corresponding to different characters will be displayed in different colors) and CSS styling.
 
-It is possible to locate the cues in the video viewport using absolute or relative values. The attributes that position the text are located on the same line as the cue definition, like at *line 9* of the previous WebVTT example file:
+It is possible to locate the cues in the video viewport using absolute or relative values. The attributes that position the text are located on the same line as the cue definition, like at <i>line 9</i> of the previous WebVTT example file:</p>
 
 ```
 9.  00:00:11.000 --> 00:00:15.000<b> position:5% align:start</b>
@@ -17854,20 +17854,18 @@ Indeed, if you look carefully, you will see that these functions are really usef
 <h3 is="6-2-6">6.2.6 Size limitations, etc.</h3>
 
 Few things to remember, from the Web storage specification:
+<ul>
+<li>User agents (browsers) should limit the total amount of space allowed for storage areas.</li>
+<li>User agents may prompt the user when quotas are reached, allowing the user to grant more space to a site. This enables sites to store many user-created documents on the user's computer, for instance.</li>
+<li>User agents should allow users to see how much space each domain is using.</li>
+<li>A mostly arbitrary limit of five megabytes per origin is recommended (translation: give at least 5Mb per origin).</li>
+</ul>
 
--   User agents (browsers) should limit the total amount of space allowed for storage areas.
-
--   User agents may prompt the user when quotas are reached, allowing the user to grant more space to a site. This enables sites to store many user-created documents on the user's computer, for instance.
-
--   User agents should allow users to see how much space each domain is using.
-
--   A mostly arbitrary limit of five megabytes per origin is recommended (translation: give at least 5Mb per origin).
-
-**In many cases, local storage is all that your application will need for saving/loading data on demand**. More complex ways to do it exist, such as IndexedDB, a No SQL database, that proposes transactions and usually comes with far more available space than local storage. IndexedDB usage is for advanced users and will be covered in the W3Cx HTML5 Apps and Games.
+<b>In many cases, local storage is all that your application will need for saving/loading data on demand</b>. More complex ways to do it exist, such as IndexedDB, a No SQL database, that proposes transactions and usually comes with far more available space than local storage. IndexedDB usage is for advanced users and will be covered in the W3Cx HTML5 Apps and Games.
 
 Additionally, there will be a limit on the amount of data that you can store there. Browsers enforce quotas that will prevent you from cluttering your users' drives excessively. These quotas can vary from platform to platform, but are usually reasonably generous for simple cases (around 5MB), so **if you are careful not to store anything huge there, you should be fine.**
 
-**Finally, keep in mind that this storage is not necessarily permanent.** Browsers are inconsistent in how they allow for it to be wiped, but in several cases it gets deleted with cookies --- which is logical when you think of how it can be used for tracking in a similar fashion.
+<b>Finally, keep in mind that this storage is not necessarily permanent.</b> Browsers are inconsistent in how they allow for it to be wiped, but in several cases it gets deleted with cookies --- which is logical when you think of how it can be used for tracking in a similar fashion.
 
 For serious applications, you might want to synchronize existing data with the server on a regular basis, in order to avoid data loss (and in general, because users enjoy using the same service from multiple devices at once). This is a rather complex feat, and frameworks such as Firebase can help. Such techniques are beyond the scope of this course and will not be covered.
 
@@ -17875,13 +17873,13 @@ sessionStorage key/values instead of cookies?
 
 Note that if all you need is to store session-based data in a manner that is more powerful than cookies, you can use the sessionStorage object which works in exactly the same way as localStorage, but the lifetime is limited to a single browser session (lifetime of your tab/window).
 
-**Also note that in addition to being more convenient and capable of storing more data than cookies, it has the advantage of being scoped to a given browser tab (or similar execution context).**
+<b>Also note that in addition to being more convenient and capable of storing more data than cookies, it has the advantage of being scoped to a given browser tab (or similar execution context).</b>
 
-**Cookies' security drawback: **if a user has two tabs open to the same site, they will share the same cookies. Which is to say that if you are storing information about a given operation using cookies in one tab, that information will leak to the other side --- this can be confusing if the user is performing different tasks in each.
+<b>Cookies' security drawback:</b> if a user has two tabs open to the same site, they will share the same cookies. Which is to say that if you are storing information about a given operation using cookies in one tab, that information will leak to the other side --- this can be confusing if the user is performing different tasks in each.
 
 <b>By using sessionStorage, the data you store will be scoped and therefore not leak across tabs!</b>
 
-<h3 id="6-2-7">6.2.7 Storing more than strings? Use JSON!</h3>
+<h3 id="ch6-2-7">6.2.7 Storing more than strings? Use JSON!</h3>
 
 Storing strings is all well and good, but it quickly becomes limiting: you may want to store more complex data with at least a modicum of structure.
 
@@ -17890,6 +17888,7 @@ There are some simple approaches, such as creating your own minimal record forma
 <a href="https://www.json.org/">JSON</a> provides a great way of encoding and decoding data that is a really good match for JavaScript. You have to be careful not to use circular data structures or non-serializable objects, but in the vast majority of cases, plugging JSON support into your local store is straightforward.
 
 <h4>Typical usage</h4>
+
 ```
 1.  locaStorage.key = JSON.stringify(object); // or...
 2.  localStorage.setItem(key, JSON.stringify(object));
@@ -17908,36 +17907,35 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 <br/>
 
 <h4>Source code:</h4>
+
 ```
-> <!DOCTYPE html>
-> <html lang="en">
-> <head>
-> <meta charset=utf-8 />
-> <title>Storing JSON Objects with Local Storage</title>
-> <script>
->     var personObject= {'givenName': 'Michel', 'familyName': 'Buffa'};
->     // Store the object as a JSON String
->     localStorage.setItem('testObject', JSON.stringify(personObject));
->     // Retrieve the object from storage
->     var retrievedObject = JSON.parse(localStorage.getItem('testObject'));
->     console.log(retrievedObject.firstName + " " + retrievedObject.lastName);
->    // then you can use retrievedObject.givenName, retrievedObject.familyName...
-> </script>
-> </head>
-> <body>
-> </body>
-> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8 />
+<title>Storing JSON Objects with Local Storage</title>
+<script>
+    var personObject= {'givenName': 'Michel', 'familyName': 'Buffa'};
+    // Store the object as a JSON String
+    localStorage.setItem('testObject', JSON.stringify(personObject));
+    // Retrieve the object from storage
+    var retrievedObject = JSON.parse(localStorage.getItem('testObject'));
+    console.log(retrievedObject.firstName + " " + retrievedObject.lastName);
+   // then you can use retrievedObject.givenName, retrievedObject.familyName...
+</script>
+</head>
+<body>
+</body>
+</html>
 ```
 
 <h4>Explanations:</h4>
-
--   Line 7: we built a JavaScript object that contains a person.
-
--   Line 10: we store it in localStorage as a JSON string object, with a key equal to testObject.
-
--   Line 13: we restore it from localStorage as a string, and the JSON.parse methods turns it back into a JavaScript object.
-
--   Line 15: we print the values of the object properties.
+<ul>
+<li><i>Line 7</i>: we built a JavaScript object that contains a person.</li>
+<li><i>Line 10</i>: we store it in localStorage as a JSON string object, with a key equal to testObject.</li>
+<li><i>Line 13</i>: we restore it from localStorage as a string, and the JSON.parse methods turns it back into a JavaScript object.</li>
+<li><i>Line 15</i>: we print the values of the object properties.</li>
+</ul>
 
 <h4>Examples</h4>
 
@@ -17959,7 +17957,7 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 
 <a href="https://jsbin.com/karoboj/3/edit?html,css,console,output">Example on JSBin</a>
 
-Add contacts using the form, see how the HTML table is updated. Try to reload the page: data are persisted in localStorage. 
+<p>Add contacts using the form, see how the HTML table is updated. Try to reload the page: data are persisted in localStorage.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 306. serverless contact manager (xx) ------------------------------->
@@ -17971,10 +17969,10 @@ Add contacts using the form, see how the HTML table is updated. Try to reload th
 &nbsp;
 <br/>
 
-Examine the localStorage:
+<h4>Examine the localStorage:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 307. localStorage view in devtools shows the data (xx) ------------------------------->
+<!------------------ 307. localStorage view in devtools shows the data (xxx) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image307.png?raw=true"
@@ -17982,34 +17980,33 @@ Examine the localStorage:
    width="65%">
 &nbsp;
 <br/>
-
-The source code for this example is a bit long, and we suggest that you examine it in the JS Bin tool. We extensively commented it. It uses:
+<p>The source code for this example is a bit long, and we suggest that you examine it in the JS Bin tool. We extensively commented it. It uses:
 
 Well structured pages with the new elements seen during Module 1 (section, article, nav, aside, etc.)
 
 HTML5 form elements with builtin and custom validation (the date cannot be in the past, the firstName and lastName fields do not accept &, #, ! or $ characters), localStorage for saving / restoring an array of contacts in JSON.
 
 It shows how to use the DOM API for dynamically updating the page content (build the HTML table from the array of contacts, add a new line when a new contact is submitted, etc.)
-
+</p>
 <h3 id="ch6-3-1">6.3.1 Introduction</h3>
 
-The objective of this chapter is to provide an overview of the File API.
+<p>The objective of this chapter is to provide an overview of the File API.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 308. sound sample editor serverless (xxx) ----------------------------->
+<!-------------------------- 308. sound sample editor serverless (xxx) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image308.jpeg?raw=true"
    alt="sound sample editor serverless"
    width="45%">
 &nbsp;
-
+<p>
 Before HTML5, file management was limited to multipart forms and to Ajax for sending/requesting files to/from a remote Web server.
 
 Possible actions were limited, both for the developer and the user. However, HTML5 now comes with an API called "File" that holds features for accessing file metadata (name, size, type) from client-side JavaScript. The API also has methods for reading file contents directly in the browser. This is particularly interesting for displaying preview of images before uploading them, or - and this is much more interesting - for developing Web applications that work with local files without the need for a server.
 
-Imagine a multimedia player that accesses (in read-only) your file system, reads your audio and video files, etc., such as the [Remo Music player](https://chrome.google.com/webstore/detail/remo-music-player/ajilpdcmebalpffmjjopcingplogifhb) below, or an application that edits the audio content of local mp3 files, for example, the [HYA-WAVE sound editor](https://wav.hya.io/#/fx) (screenshot above).
-
+Imagine a multimedia player that accesses (in read-only) your file system, reads your audio and video files, etc., such as the [Remo Music player](https://chrome.google.com/webstore/detail/remo-music-player/ajilpdcmebalpffmjjopcingplogifhb) below, or an application that edits the audio content of local mp3 files, for example, the <a href="https://wav.hya.io/#/fx">HYA-WAVE sound editor</a> (screenshot above).
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 309. audio player that plays local files (xxx) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19549,4 +19546,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-08-2022 5:07pm</i></b></h3>
+<h3><b><i>08-09-2022 8:33am</i></b></h3>
