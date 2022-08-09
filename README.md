@@ -3795,14 +3795,15 @@ Now, let's see what elements are compatible with the itemprop attribute and wh
 <h4>Elements that can be associated with microdata</h4>
 
 | HTML5 elements | microdata value associated |
-| ---------------| ---------------------------|
+| ---------------| -------------------------------------------------------------------|
 | &lt;a&gt;, &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;,              | The data is the url in the element's href, src, 
-| &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt; element | or data attribute, as appropriate. For example,
+| &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;,                          | or data attribute, as appropriate. For example,
 | or &lt;video&gt; element                                                            | an image element inside a container of 
-|                                                                                     | personal contact information can be recognized as that person's photo and downloaded accordingly. |
-| &lt;time&gt; element | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
-| &lt;meta&gt; element | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
-| anything else | The data is whatever is in the text of the element. |
+|                                                                                     | personal contact information can be recognized 
+|                                                                                     | as that person's photo and downloaded accordingly. |
+| &lt;time&gt; element                                                                | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
+| &lt;meta&gt; element                                                                | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
+| anything else                                                                       | The data is whatever is in the text of the element. |
 
 <p>
 For example, the value of a property defined in an <img> element will be the value of the src attribute:</p>
