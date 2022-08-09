@@ -3796,11 +3796,7 @@ Now, let's see what elements are compatible with the itemprop attribute and wh
 
 | HTML5 elements | microdata value associated |
 | ---------------| -------------------------------------------------------------------|
-| &lt;a&gt;, &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;,              | The data is the url in the element's href, src, 
-| &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;,                          | or data attribute, as appropriate. For example,
-| or &lt;video&gt; element                                                            | an image element inside a container of 
-|                                                                                     | personal contact information can be recognized 
-|                                                                                     | as that person's photo and downloaded accordingly. |
+| &lt;a&gt;, &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt; element | The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person's photo and downloaded accordingly. |
 | &lt;time&gt; element                                                                | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
 | &lt;meta&gt; element                                                                | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
 | anything else                                                                       | The data is whatever is in the text of the element. |
@@ -3887,7 +3883,7 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 
 <h4>Example #2:</h4>
 
-View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 online</a>.
+<p>View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 online</a>.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 67. example page - shows microdata (81) ----------------------------->
@@ -4182,7 +4178,7 @@ Press Play to hear the horse !
 See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example online</a> (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it's playing.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 71.  (xx) ------------------------------->
+<!----------------------------- 71. resize and rotate a video (88) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image071.png?raw=true"
@@ -4234,16 +4230,16 @@ Example #1: with a regular video
 Full width, resizable, borderless video, just using plain CSS and JS DOM events.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 72.  (xx) ------------------------------->
+<!---------------------------------- 72. body onload=init (89) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image072.png?raw=true"
-   alt=""
+   alt="Example of body onload=init"
    width="65%">
 &nbsp;
 <br/>
 
-<p>Here is the HTML code. It's really simple, just notice the <body onload="init();"> which calls the JavaScript init() function right after the page is loaded.</p>
+<p>Here is the HTML code. It's really simple, just notice the &lt;body onload="init();"&gt; which calls the JavaScript init() function right after the page is loaded.</p>
 
 ```
 1.  <!DOCTYPE html>
@@ -4301,11 +4297,11 @@ function init() {
 Full width, resizable, borderless YouTube video. To do this: just 100% standard CSS + DOM manipulation using JavaScript.
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 73.  (xx) ------------------------------->
+<!------------------- 73. full width resizable borderless youtube video (90) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image073.png?raw=true"
-   alt=""
+   alt="Full width, resizable, borderless youtube video."
    width="50%">
 &nbsp;
 <br/>
@@ -4320,11 +4316,11 @@ In this example, the video does not rescale; it's just cropped if the browser wi
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 74.  (xx) ------------------------------->
+<!------------------- 74. not rescalled but cropped if window is resized (90) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image074.png?raw=true"
-   alt=""
+   alt="Not rescaled but cropped if window is resized."
    width="50%">
 &nbsp;
 <br/>
@@ -4414,11 +4410,11 @@ header video {
 Full screen video that resizes and keeps its ratio, using the viewport units.
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 75.  (xx) ------------------------------->
+<!------------- 75. full screen video using viewport units to keep its ration (92) --------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image075.png?raw=true"
-   alt=""
+   alt="Video which uses viewport to keep its ratio when resized."
    width="65%">
 &nbsp;
 <br/>
@@ -4464,7 +4460,7 @@ Setting the video to 100% width and height results in different behavior:
 
 <h3 id="ch2-2-5">2.2.5 Control Players From JavaScript</h3>
 <p>
-The <video> and <audio> elements have methods, properties/attributes and events that can be manipulated with JavaScript. Using the DOM API, it's possible to manipulate an audio or video element as a JavaScript object that has:
+The &lt;video&gt; and &lt;audio&gt; elements have methods, properties/attributes and events that can be manipulated with JavaScript. Using the DOM API, it's possible to manipulate an audio or video element as a JavaScript object that has:
 </p>
 <ul>
 <li><b>Methods</b> for controlling the behavior, such as play(), pause(), etc.</li>
@@ -4472,9 +4468,9 @@ The <video> and <audio> elements have methods, properties/attributes and eve
 <li><b>Events</b> generated during the life cycle of the element that can be processed using JavaScript callbacks. It is also possible to send events to control the video player.</li>
 </ul>
 <p>
-The set of properties/attributes/methods of the <audio> and <video> elements is called an "API" (Application Programming Interface). For example, we will speak here of the "media API" to talk about the associated API.
+The set of properties/attributes/methods of the &lt;audio&gt; and &lt;video&gt; elements is called an "API" (Application Programming Interface). For example, we will speak here of the "media API" to talk about the associated API.
 
-Like any HTML element, the <video> element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a <video> element:
+Like any HTML element, the &lt;video&gt; element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a &lt;video&gt; element:
 </p>
 
 ```
@@ -4488,22 +4484,21 @@ Like any HTML element, the <video> element can be manipulated/created using th
 This will create a complete video player for the file "video.mp4", with control buttons, and will add it to the &lt;body&gt; element of the page.
 </p>
 <h4>Example that shows how to call play/pause or rewind a video</h4>
-<p>
-Please look at this interesting example:
-</p>
+
+<p>Please look at this interesting example:</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 76.  (xx) ------------------------------->
+<!---------------------------- 76. video with pure dom objects (94) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image076.png?raw=true"
-   alt=""
+   alt="Video using pure DOM objects."
    width="65%">
 &nbsp;
 <br/>
 <p>
 Note that in order to play the video, you must click on the "vid.play()" text. To pause it, you click on the "vid.pause()" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
 </p>
-<b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let's see a little more of what we can do using the JavaScript API of the <video> element (it will be an identical approach for the <audio> element, since it shares the same API by a very small margin).
+<p><b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let's see a little more of what we can do using the JavaScript API of the <video> element (it will be an identical approach for the <audio> element, since it shares the same API by a very small margin).</p>
 
 <h3 id="ch2-2-6">2.2.6 The JavaScript API</h3>
 
@@ -4529,7 +4524,8 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link
 
 <h4> Here is a table that shows the most interesting methods, properties, and events provided by the &lt;video&gt; element API</h4>
 
-We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer! 
+<p>We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer!</p>
+
 | ------------------------------------------------------------------------|
 | <b>Methods</b> | <b>Properties</b> | <b>Events</b>|
 | -------------- | ----------------- | -------------|
@@ -4608,7 +4604,11 @@ This example gives the first steps towards writing a custom video player. It sho
          type=video/webm>
 ...
 </video>
+```
+
 <p>Example of custom controls:</p>
+
+```
 <button onclick="playVideo();" style="cursor: pointer;">Play</button>
 <button onclick="pauseVideo();" style="cursor: pointer;">Pause</button>
 <button onclick="rewindVideo();" style="cursor: pointer;">
