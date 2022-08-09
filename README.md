@@ -1884,7 +1884,7 @@ figcaption {
 
 <h4>Use an &lt;aside&gt; element to display a tag cloud on the... side of the main content</h4>
 
-After the long &lt;section&gt; element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, "aside"! This is done using - you already guessed it - an &lt;aside&gt; element:
+<p>After the long &lt;section&gt; element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, "aside"! This is done using - you already guessed it - an &lt;aside&gt; element:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 19. image of the tag cloud defined as an aside element (39) ------------------->
@@ -2845,7 +2845,7 @@ Here is an example of what can be done using these elements: see the <a href="h
 <!------------------------- 41. example of folded summary details (59) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image040.png?raw=true"
+<img src="/images/image041.jpeg?raw=true"
    alt="Example of folded summary details."
    width="35%">
 &nbsp;
@@ -2854,7 +2854,7 @@ Here is an example of what can be done using these elements: see the <a href="h
 <p>And here is what is displayed after clicking on the small arrow-shaped icon to the left of the summary:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 42. Example of summary details unfolded (xx) ------------------------------->
+<!------------------------ 42. Example of summary details unfolded (59) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image042.jpeg?raw=true"
@@ -2920,7 +2920,7 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 &nbsp;
 <br/>
 
-<h5>Source code of this example, see the summary/details inside another one:</h5>
+<h4>Source code of this example, see the summary/details inside another one:</h4>
 
 ```
 <details>
@@ -2943,10 +2943,10 @@ Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
 
 <p>There are CSS pseudo classes to style this icon when it is in the open or closed state. Support for these is still incomplete as of June 2020 (works on Google Chrome, Opera, Safari, not in FF).</p>
 
-<h5>Example1 (see <a href="https://jsbin.com/tomehim/1/edit?html,css,output" target="_blank">online example</a>):</h5>
+<h4>Example1 (see <a href="https://jsbin.com/tomehim/1/edit?html,css,output" target="_blank">online example</a>):</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!-=-------------------- 46. pseudo classes for styling summary icons (61) ----------------------->
+<!---------------------- 46. pseudo classes for styling summary icons (61) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image046.jpeg?raw=true"
@@ -2989,7 +2989,7 @@ In this example: red arrow, white background.</p>
 
 <p>It is also possible to change the icon itself using the CSS pseudo class :after</p>
 
-<h5>Example 2 (see it <a href="https://jsbin.com/sajusop/edit?html,css,output" target="_blank">online</a>):</h5>
+<h4>Example 2 (see it <a href="https://jsbin.com/sajusop/edit?html,css,output" target="_blank">online</a>):</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 43. a '+' as a custom open icon for summary (62) ------------------------>
@@ -3011,9 +3011,9 @@ In this example: red arrow, white background.</p>
 &nbsp;
 <br/>
 
-<h5>CSS rules used in this example:</h5>
+<h4>CSS rules used in this example:</h4>
 
-<p>Use a "+" shaped icon, pink, bold, etc... :</p>
+<h4>Use a "+" shaped icon, pink, bold, etc... :</h4>
 
 ```
 1.  summary:after {
@@ -3029,7 +3029,7 @@ In this example: red arrow, white background.</p>
 11. }
 ```
 
-<p>Use a "-" shaped icon, white, when details are displayed:</p>
+<h4>Use a "-" shaped icon, white, when details are displayed:</h4>
 
 ```
 1.  details[open] summary:after {
@@ -3078,7 +3078,7 @@ The machine readable part adds semantics that can be used by search engines for 
 
 <p>The datetime attribute can be used for indicating a date/time or a duration.</p>
 
-<h5>Date/time values</h5>
+<h4>Date/time values</h4>
 
 <p>Supports different specifications of time such as "a year", "a month in a year", "a week in a year", "a time", etc... </p>
 
@@ -3140,10 +3140,10 @@ From Bruce Lawson's article : <i>"Whichever you choose, it's represented intern
 
 <h4>External resources:</h4>
 <ul>
-<li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element">From the specification:</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">On MDN's Web Docs:></a></li>
+<li>From the specification: <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element">https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element</a></li>
+<li>On MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time</a></li>
 <li>MDN's browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility">table</a> for &lt;time&gt;</li>
-<li><a href="https://www.brucelawson.co.uk/2012/best-of-time">Old but interesting article by Bruce Lawson:</a></li>
+<li>Old but interesting article by Bruce Lawson: <a href="https://www.brucelawson.co.uk/2012/best-of-time">https://www.brucelawson.co.uk/2012/best-of-time</a></li>
 <li>A CSS Tricks' article: "<a href="https://css-tricks.com/time-element/">The 'time' element</a>"</li>
 </ul>
 
@@ -3159,11 +3159,11 @@ From Bruce Lawson's article : <i>"Whichever you choose, it's represented intern
 &nbsp;
 <br/>
 
-The HTML <mark> tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.
+The HTML &lt;mark&gt; tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.
 
 <h4>Some use cases:</h4>
 <ul>
-<li>Display search results with search strings highlighted in the results.</li.
+<li>Display search results with search strings highlighted in the results.</li>
 <li>Highlight important parts of a text, such as "quoting parts", etc.</li>
 <li>Replace &lt;strong&gt; and &lt;em&gt; with &lt;mark&gt; when suitable.</li>
 </ul>
@@ -3245,7 +3245,7 @@ If you don't like the default yellow background, you may use CSS to change the s
 
 <h4>The old way to download files using HTML and HTTP</h4>
 
-Everyone knows the classic way to make hyperlinks, using <a href="...">some text</a>. What happens when you click on the hyperlink depends on the MIME type received by the browser. If you link to a file the browser knows how to render (an html page, a gif, jpg, or png image, etc.) there is a good chance that the MIME type received by the browser will be something like this:
+Everyone knows the classic way to make hyperlinks, using &lt;a href="..."&gt;some text&lt;/a&gt;. What happens when you click on the hyperlink depends on the MIME type received by the browser. If you link to a file the browser knows how to render (an html page, a gif, jpg, or png image, etc.) there is a good chance that the MIME type received by the browser will be something like this:
 
 ```
 1.  Content-type: text/html, text/plain, image/gif, image/jpg, etc.
@@ -3300,7 +3300,7 @@ Here are some extracts from a Java Servlet that generate a zip file and forces t
 21. }
 ```
 
-The above example will cause the browser that invoked this server-side code to start the download of a file named "DATA.ZIP".
+<p>The above example will cause the browser that invoked this server-side code to start the download of a file named "DATA.ZIP".</p>
 
 <h4>To download a file using an arbitrary name: the download attribute</h4>
 
@@ -3314,18 +3314,18 @@ The above example will cause the browser that invoked this server-side code to
 &nbsp;
 <br/>
 
-HTML5 proposes the use of a new attribute named download to download resources rather than navigating to them. The example below shows how to trigger the download of an image by the browser (instead of rendering it, which is the default behavior) with a name different from the name of the resource.
+<p>HTML5 proposes the use of a new attribute named download to download resources rather than navigating to them. The example below shows how to trigger the download of an image by the browser (instead of rendering it, which is the default behavior) with a name different from the name of the resource.</p>
 
 ```
-1.  <a href="normal.gif" [download]=["MichelBuffa.gif"]>
+1.  <a href="normal.gif" download="MichelBuffa.gif">
 2.      download a picture of Michel Buffa
 3.  </a>
 ```
 
-This will indeed force the download of an image with a filename different from its original filename on the server side. Here is a screen capture of the Web browser while downloading the picture. We can see in the status bar the name of the link (the image is "normal.gif") and the downloaded file is "MichelBuffa.gif":
+<p>This will indeed force the download of an image with a filename different from its original filename on the server side. Here is a screen capture of the Web browser while downloading the picture. We can see in the status bar the name of the link (the image is "normal.gif") and the downloaded file is "MichelBuffa.gif":</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------ 55. image saved with another names thanks to the download attribute (68) ---------->
+<!------------ 55. image saved with another name thanks to the download attribute (68) ----------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image055.png?raw=true"
@@ -3350,11 +3350,11 @@ This will indeed force the download of an image with a filename different from i
 
 <h4>Serverless download demo (by E.Bilderman)</h4>
 
-This demo shows the use of the download attribute together with the HTML5 File, FileSystem and FileWriter APIs (to be studied later in this course) for generating on-the-fly content from JavaScript code, and proposing downloading it to a file.  
+<p>This demo shows the use of the download attribute together with the HTML5 File, FileSystem and FileWriter APIs (to be studied later in this course) for generating on-the-fly content from JavaScript code, and proposing downloading it to a file.  
 
 We won't detail this demo here, but take a look if you are curious to see what can be done with this new download attribute. As the FileWriter and FileSystem APIs are still supported only by Google Chrome (other browsers need polyfills), you will need Google Chrome to try it.
 
-We have also put the simplified <a href="https://jsbin.com/muluwey/1/edit?html,css,js,output">source code of this demo on JSBin.com</a> for you to play with.
+We have also put the simplified <a href="https://jsbin.com/muluwey/1/edit?html,css,js,output">source code of this demo on JSBin.com</a> for you to play with.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 57. serverless download demo (55) ------------------------------->
@@ -3374,7 +3374,7 @@ We have also put the simplified <a href="https://jsbin.com/muluwey/1/edit?html,
 
 <h4>The HTML5 translate attribute</h4>
 
-HTML5 gives us a new translate attribute. This attribute is used to limit the impact of  translation tools such as <a href="https://translate.google.com/">Google Translate</a> by prohibiting the translation of certain content. In many cases some parts of a document should not be translated.
+<p>HTML5 gives us a new translate attribute. This attribute is used to limit the impact of  translation tools such as <a href="https://translate.google.com/">Google Translate</a> by prohibiting the translation of certain content. In many cases some parts of a document should not be translated.</p>
 
 <h4>Use cases include:</h4>
 <ul>
@@ -3384,7 +3384,7 @@ HTML5 gives us a new translate attribute. This attribute is used to limit the 
 <li>etc.</li>
 </ul>
 
-Both <a href="https://translate.google.com/">Google translate</a> and <a href="https://www.microsofttranslator.com/">Microsoft online translation services</a> already offer the ability to prevent translation of content by adding markup to your content, although they do it in (multiple) different ways. Hopefully, the new attribute will help significantly by providing a standard approach.
+<p>Both <a href="https://translate.google.com/">Google translate</a> and <a href="https://www.microsofttranslator.com/">Microsoft online translation services</a> already offer the ability to prevent translation of content by adding markup to your content, although they do it in (multiple) different ways. Hopefully, the new attribute will help significantly by providing a standard approach.</p>
 
 <h4>Principle: give hints to translating tools</h4>
 
@@ -3395,22 +3395,22 @@ Both <a href="https://translate.google.com/">Google translate</a> and <a href
 <h4> Example illustrating how to specify parts of an HTML element that should not be translated:</h4>
 
 ```
-1.  <span <b>[translate="no"]</b> class="author">[Michel Ham]</span>
+1.  <span translate="no" class="author">Michel Ham</span>
 ```
 
-In the above example, a <span> element defines an author (of a blog, for example) who is named Michel Ham. However, his family name is the same as pork and would be translated to "Michel Jambon" in French, or Michel Jamón in Spanish...
+<p>In the above example, a &lt;span&gt; element defines an author (of a blog, for example) who is named Michel Ham. However, his family name is the same as pork and would be translated to "Michel Jambon" in French, or Michel Jamón in Spanish...
 
-Using the translate="no" attribute should prevent this behavior...
+Using the translate="no" attribute should prevent this behavior...</p>
 
 ```
-1.  <span <b>[translate="no"]</b> class="author">[Michel Ham]</span> is a professor
+1.  <span translate="no" class="author">Michel Ham</span> is a professor
 2.  from the University of Nice,France.
 ```
 
 <p>Will be correctly translated into French by:</p>
 
 ```
-1.  "[Michel Ham] est un professeur de l'Université de Nice, France."
+1.  "Michel Ham est un professeur de l'Université de Nice, France."
 ```
 
 <p>...where all of the end of the sentence has been translated except the author's name.</p>
@@ -3420,13 +3420,13 @@ Using the translate="no" attribute should prevent this behavior...
 <p>When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true.</p>
 
 ```
-1.  <p translate="no">This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>. This is the end of the paragraph...</p>
+1.  <p translate="no">This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>. This is the end of the paragraph...</ p>
 ```
 
 <h4>External resources:</h4>
 <ul>
 <li>From the specification: <a href="https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute">the translate attribute</a></li>
-<li>From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate"></li>
+<li>From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate</a></li>
 <ul>
     <li>Its corresponding <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate#Browser_compatibility">browser compatibility table</a></li>
 </ul>
@@ -3438,11 +3438,11 @@ Using the translate="no" attribute should prevent this behavior...
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-1">1.5.1 Microdata</h3>
 
-There are several ways to provide machine-readable content embedded in a classical Web document: <a href="https://www.w3.org/TR/html-rdfa/">HTML+RDFa</a>, <a href="http://microformats.org/">microformats</a>, <a href="https://json-ld.org/">JSON-LD</a>, HTML5 microdata. In this section, we focus on microdata.
+<p>There are several ways to provide machine-readable content embedded in a classical Web document: <a href="https://www.w3.org/TR/html-rdfa/">HTML+RDFa</a>, <a href="http://microformats.org/">microformats</a>, <a href="https://json-ld.org/">JSON-LD</a>, HTML5 microdata. In this section, we focus on microdata.
 
 Adding microdata to Web pages helps search engines to better understand the pages' content, their topics, etc. The main purpose of microdata is <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">Search Engine Optimization</a>(SEO).
 
-This information is not visible to humans: it is pure *semantic information*. Popular kinds of microdata are events, a person's profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. 
+This information is not visible to humans: it is pure *semantic information*. Popular kinds of microdata are events, a person's profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. </p>
 
 <h4>Quick example of microdata that describes a person</h4>
 
@@ -3496,7 +3496,7 @@ This information is not visible to humans: it is pure *semantic information*. 
 20. ...
 ```
 
-In the following sections, we look more closely at the itemprop, itemscope and itemtype attributes.
+<p>In the following sections, we look more closely at the itemprop, itemscope and itemtype attributes.</p>
 
 <h4>Data that can be processed, organized, structured, or presented in a given context</h4>
 
@@ -3508,7 +3508,7 @@ In the following sections, we look more closely at the itemprop, itemscope a
 <li>With other types of microdata, for events, for example, the browser may pop up a calendar application, etc.</li>
 </ul>
 
-<b>Note</b>: For advanced users, Microdata is very similar to <a href="http://microformats.org/">microformats</a>, which use HTML classes, or to <a href="https://www.w3.org/TR/xhtml-rdfa-primer/">RDFa</a>, which doesn't validate in HTML4 or HTML5. Because RDFa was considered to be too hard for authors to write, microdata is HTML5's answer to help embed semantics into html documents.
+<p><b>Note</b>: For advanced users, Microdata is very similar to <a href="http://microformats.org/">microformats</a>, which use HTML classes, or to <a href="https://www.w3.org/TR/xhtml-rdfa-primer/">RDFa</a>, which doesn't validate in HTML4 or HTML5. Because RDFa was considered to be too hard for authors to write, microdata is HTML5's answer to help embed semantics into html documents.</p>
 
 <h4>External resources</h4>
 <ul>
@@ -3525,7 +3525,7 @@ In the following sections, we look more closely at the itemprop, itemscope a
 
 <h4>Introduction</h4>
 
-After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.
+<p>After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 58. picture of diverse tools used by workers (73) ----------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -3536,13 +3536,13 @@ After seeing the principle of embedding microdata in an HTML page, we now presen
 &nbsp;
 <br/>
 
-One of the most popular resources for testing microdata (as well as microformats and RDFa) is this <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Google page about understanding how structured data works</a>. This page contains a link to a structured data testing tool that you can use to see how Google recognizes the semantic data you embed in your HTML code.
+<p>One of the most popular resources for testing microdata (as well as microformats and RDFa) is this <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Google page about understanding how structured data works</a>. This page contains a link to a structured data testing tool that you can use to see how Google recognizes the semantic data you embed in your HTML code.</p>
 
 <h4>Testing a real interactive example with an "about page" for Michel Buffa</h4>
 
-Let's have a look now at a (small) example of an about page. It renders as a very simple paragraph that explains who Michel Buffa is... But we embedded Microdata, so it's interesting to see how a search engine sees it, and how it may produce "augmented search results".
+<p>Let's have a look now at a (small) example of an about page. It renders as a very simple paragraph that explains who Michel Buffa is... But we embedded Microdata, so it's interesting to see how a search engine sees it, and how it may produce "augmented search results".
 
-<a href="https://jsbin.com/gunuzus/1/edit?html,output">Online example at JsBin</a>
+<a href="https://jsbin.com/gunuzus/1/edit?html,output">Online example at JsBin</a></p>
 
 <h4>Source code:</h4>
 
@@ -3583,7 +3583,7 @@ Let's have a look now at a (small) example of an about page. It renders as a ver
 &nbsp;
 <br/>
 
-Here is what Google sees of the page. We just entered its <a href="https://output.jsbin.com/gunuzus/1">URL</a> in the <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Google page about rich snippets and structured data</a>:
+<p>Here is what Google sees of the page. We just entered its <a href="https://output.jsbin.com/gunuzus/1">URL</a> in the <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Google page about rich snippets and structured data</a>:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 60. microdata of the example, as seen by google (74) ---------------------->
@@ -3796,12 +3796,14 @@ Now, let's see what elements are compatible with the itemprop attribute and wh
 
 | HTML5 elements | microdata value associated |
 | ---------------| ---------------------------|
-| &lt;a&gt;; &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, | The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person's photo and downloaded accordingly.
-  &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt;  
-  element |
+| &lt;a&gt;, &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;,              | The data is the url in the element's href, src, 
+| &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt; element | or data attribute, as appropriate. For example,
+| or &lt;video&gt; element                                                            | an image element inside a container of 
+|                                                                                     | personal contact information can be recognized as that person's photo and downloaded accordingly. |
 | &lt;time&gt; element | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
 | &lt;meta&gt; element | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
 | anything else | The data is whatever is in the text of the element. |
+
 <p>
 For example, the value of a property defined in an <img> element will be the value of the src attribute:</p>
 
@@ -3809,13 +3811,13 @@ For example, the value of a property defined in an <img> element will be the v
 1.  <img itemprop="image" src="MichelBuffa.png" alt="A great professor">
 ```
 
-<p>Or for a <time>, it will be the value of the datetime attribute:</p>
+<p>Or for a &lt;time&gt;, it will be the value of the datetime attribute:</p>
 
 ```
 1.  <time itemprop="birthday" datetime="1965-04-16">April 16, 1965</time>
 ```
 
-<p>Or for an <a> element, the value will be the value of the href attribute:</p>
+<p>Or for an &lt;a&gt; element, the value will be the value of the href attribute:</p>
 
 ```
 1.  <a href="https://www.twitter.com/micbuffa" itemprop="url">profile</a>
@@ -3837,7 +3839,7 @@ To automatically generate microdata for describing persons, restaurants, movie
 <h4>Example:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 64.  (xx) ------------------------------->
+<!----------------------------- 64. microdata person generator (80) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image064.jpeg?raw=true"
@@ -3848,11 +3850,11 @@ To automatically generate microdata for describing persons, restaurants, movie
 
 <h3 id="ch1-5-5">1.5.5 Examples of Well Structured Documents with Microdata</h3>
 
-Here, we propose a few links to Web pages that were created by students of previous editions of this course).
+<p>Here, we propose a few links to Web pages that were created by students of previous editions of this course).
 
 The students had to create a Web page to introduce themselves, with some information including: name, job, employer, location, etc., and of course enrich the page with microdata. They also had to follow the best practices concerning the new structural elements, headings, etc.
 
-Click on these pages and look at the source code...
+Click on these pages and look at the source code...</p>
 
 <h4>Example #1</h4>
 
@@ -3861,7 +3863,7 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 <h4>Structure:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 65.  (xx) ------------------------------->
+<!--------------------------- 65. first 'about me' page example (80) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image065.jpeg?raw=true"
@@ -3873,7 +3875,7 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 <h4>Microdata:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 66.  (xx) ------------------------------->
+<!---------------------------- 66. microdata from example page (81) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image066.jpeg?raw=true"
