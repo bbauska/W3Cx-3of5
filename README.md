@@ -2477,7 +2477,7 @@ This element is subject to some constraints:</p>
 25. <!-- other content -->
 ```
 
-<p>Here is another example (also from the specification). Here the <main> element contains a &lt;nav&gt; element consisting of links to subsections of the main content:</p>
+<p>Here is another example (also from the specification). Here the &lt;main&gt; element contains a &lt;nav&gt; element consisting of links to subsections of the main content:</p>
 
 ```
 1.  <!DOCTYPE html>
@@ -2725,7 +2725,7 @@ You can look at the complete CSS code in the interactive example below (click on
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image035.png?raw=true"
-   alt=""
+   alt="Header with section float left and aside float right."
    width="65%" />
 &nbsp;
 <br/>
@@ -2733,11 +2733,11 @@ You can look at the complete CSS code in the interactive example below (click on
 <a href="https://jsbin.com/dufapo/edit?html,css,output" target="_blank">Also available online at JSBin</a>.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 36.  (xx) ------------------->
+<!---------------- 36. michel buffa home page - 3 sections centered (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image036.png?raw=true"
-   alt=""
+   alt="Michel Buffa home page: "
    width="65%" />
 &nbsp;
 <br/>
@@ -11456,6 +11456,7 @@ You get some nice effects; here we set the second circle's center 60 pixels t
 <br/>
 
 <h4>JS</h4>
+
 ```
 var canvas, ctx, grd;
 function init() {
@@ -11478,6 +11479,7 @@ ctx.fillRect(0, 0, 300, 200);
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11518,41 +11520,48 @@ To illustrate this principle, in the next examples, we are going to draw rectan
 
 There are a few steps we have to take before doing this:
 
-1.  **Create a JavaScript image object**
+1.  <b>Create a JavaScript image object</b>
+
+```
     1.  var imageObj = new Image();
 ```
+
+1.  <b>Define a callback function that will be called once the image has been fully loaded</b> in memory; we cannot draw before the image has been loaded.
+
 ```
-1.  **Define a callback function that will be called once the image has been fully loaded** in memory; we cannot draw before the image has been loaded.
     1.  imageObj.onload = function(){
     2.  ...
     3.  }
 ```
 
+1.  <b>Set the source of this image to the URL of the pattern</b>:
+
 ```
-1.  **Set the source of this image to the URL of the pattern**:
     1.  imageObj.src = "https://www.myserver.com/myRepeatablePattern.png";
 ```
+
+1.  <b>Create a pattern object from the loaded image:</b>
+
 ```
-1.  **Create a pattern object from the loaded image:**
     As soon as step 3 is executed, an HTTP request is sent in background by the browser, and when the image is loaded in memory, the callback defined at step 2 is called. We create a pattern object inside, from the loaded image:
     1.  // callback called asynchronously, after the src attribute of imageObj is set
     2.  imageObj.onload = function(){ 
     3.      // We enter here when the image is loaded, we create a pattern object.
     4.      // It is good practice to set this as a global variable, easier to share
-    5.      **pattern1 = ctx.createPattern(imageObj, "repeat");**
+    5.      pattern1 = ctx.createPattern(imageObj, "repeat");
     6.  };
 ```
 
-```
-1.  **Inside the callback function (or inside a function called from inside the callback) ,we can finally draw**:
+1.  <b>Inside the callback function (or inside a function called from inside the callback) ,we can finally draw</b>:
+
 ```
     1.  // callback called asynchronously, after the src attribute of imageObj is set
     2.  imageObj.onload = function(){
     3.      pattern1 = ctx.createPattern(imageObj, "repeat");
     4.  
-    5.  **    // Draw a textured rectangle**
-    6.  **    ctx.fillStyle = pattern1;**
-    7.  **    ctx.fillRect(10, 10, 500, 800);**
+    5.      // Draw a textured rectangle
+    6.      ctx.fillStyle = pattern1;
+    7.      ctx.fillRect(10, 10, 500, 800);
     8.  };
 ```
 
@@ -11560,8 +11569,7 @@ There are a few steps we have to take before doing this:
 
 <h4>Example #1: draw two rectangles with a pattern (one filled, one stroked)</h4>
 
-Here we have two rectangles drawn using a pattern (an image that can be repeated along the X and Y axis). The first is a filled rectangle while the second is "stroked" with a lineWidth of 20 pixels:
-
+<p>Here we have two rectangles drawn using a pattern (an image that can be repeated along the X and Y axis). The first is a filled rectangle while the second is "stroked" with a lineWidth of 20 pixels:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!--- 178.  (xxx) -->
@@ -11574,6 +11582,7 @@ Here we have two rectangles drawn using a pattern (an image that can be repeated
 <br/>
 
 <h4>JS</h4>
+
 ```
 var canvas, ctx, pattern1;
 function init() {
@@ -11612,6 +11621,7 @@ imageObj.src = "https://mainline.i3s.unice.fr/mooc/pattern1.jpg";
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11627,6 +11637,7 @@ Your browser does not support the canvas tag. </canvas>
 ```
 
 <h4>JavaScript source code:</h4>
+
 ```
 1.  var canvas, ctx, pattern1;
 2.   
@@ -11678,7 +11689,7 @@ Your browser does not support the canvas tag. </canvas>
 
 <h4>Example 2: the repeatability of a pattern</h4>
 
-To "better" see the repeatability of the pattern, here is the same example with a 1000x1000 pixel wide canvas:
+<p>To "better" see the repeatability of the pattern, here is the same example with a 1000x1000 pixel wide canvas:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!--- 179.  (xxx) -->
@@ -11691,6 +11702,7 @@ To "better" see the repeatability of the pattern, here is the same example with 
 <br/>
 
 <h4>JS</h4>
+
 ```
 var canvas, ctx, pattern1;
 function init() {
@@ -11729,6 +11741,7 @@ imageObj.src = "https://mainline.i3s.unice.fr/mooc/pattern1.jpg";
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11743,10 +11756,13 @@ Your browser does not support the canvas tag. </canvas>
 </html>
 ```
 
-You can change the way the pattern is repeated by modifying the second parameter of this method:
-1.  pattern1 = ctx.createPattern(imageObj, "**repeat**");
+<h4>You can change the way the pattern is repeated by modifying the second parameter of this method:</h4>
 
-Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just change this line in the online example and you will see live results.
+```
+1.  pattern1 = ctx.createPattern(imageObj, "repeat");
+```
+
+<p>Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just change this line in the online example and you will see live results.</p>
 
 <h3 id="ch3-5-5">3.5.5 A Multiple Image Loader</h3>
 
@@ -11787,6 +11803,7 @@ The complete example code that produces the result shown at the beginning of thi
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11876,7 +11893,7 @@ Your browser does not support the canvas tag.
 10. };
 ```
 
-Notice that instead of using a traditional array, we defined this list as a JavaScript object, with properties whose names will be easier to manipulate (flowers, lion, tiledFloor, etc.).
+<p>Notice that instead of using a traditional array, we defined this list as a JavaScript object, with properties whose names will be easier to manipulate (flowers, lion, tiledFloor, etc.).</p>
 
 <h4>The image loader function</h4>
 
@@ -11905,12 +11922,11 @@ Notice that instead of using a traditional array, we defined this list as a Java
 ```
 
 <b>Explanations:</b>
-
--   This function takes as a parameter the list of images to be loaded, and a drawCallback function that will be called only once all images have been loaded. This callback takes as a parameter a new object that is the list of images that have been loaded (see *line 16*).
-
--   We first count the number of images to load (*lines 7-9*), then for each image to be loaded we create a new JavaScript image object (*line 12*) and set its src attribute (*line 19*) - this will start to load the image.
-
--   When an image comes in, the onload callback is called (*line 14*) and inside, we increment the number of images loaded (*line 15*) and test if this number is >=  the total number of images that should be loaded. If this is the case, the callback function is called (*line 16*).
+<ul>
+<li>This function takes as a parameter the list of images to be loaded, and a drawCallback function that will be called only once all images have been loaded. This callback takes as a parameter a new object that is the list of images that have been loaded (see *line 16*).</li>
+<li>We first count the number of images to load (*lines 7-9*), then for each image to be loaded we create a new JavaScript image object (*line 12*) and set its src attribute (*line 19*) - this will start to load the image.</li>
+<li>When an image comes in, the onload callback is called (*line 14*) and inside, we increment the number of images loaded (*line 15*) and test if this number is >=  the total number of images that should be loaded. If this is the case, the callback function is called (*line 16*).</li>
+</ul>
 
 <h4>Example of use of this loader</h4>
 
@@ -11934,6 +11950,7 @@ Notice that instead of using a traditional array, we defined this list as a Java
 -   *Line 7*: then we call a function that will draw the rectangles. 
 
 <h4>Here is the function:</h4>
+
 ```
 1.  function drawRectanglesWithPatterns() {
 2.      ctx.fillStyle=patternFloor;
@@ -14664,6 +14681,7 @@ Output format:
 Bottom of Form
 
 <h4>Source code:</h4>
+
 ```
 1.  <fieldset>
 2.  <legend>Output format</legend>
@@ -15420,7 +15438,9 @@ Examples on desktop (the width will be adjusted depending on the min and max�
 
 <h4>Typical usage</h4>
 
+```
 <input type="number" value="25" min="0" step="5" max="500"/>
+```
 
 This field accepts specific attributes max, min, step, value (default displayed value). 
 
@@ -15519,13 +15539,15 @@ This input type renders as a slider. It accepts the same attributes as the <inp
 
 <h4>Typical use</h4>
 
-The basic use is to specify at least the value, min and max attributes, and eventually the step attribute, too:
+<p>The basic use is to specify at least the value, min and max attributes, and eventually the step attribute, too:</p>
 
+```
 <input id="slider6" type="range" min="0" max="10" step="2" value="5">
+```
 
-But most of the time, you will need a visual feedback that shows the current value selected by the slider.
+<p>But most of the time, you will need a visual feedback that shows the current value selected by the slider.</p>
 
-[This online example on CodePen](https://codepen.io/w3devcampus/pen/BRMVGW) shows how to add a visual feedback using a very short JavaScript function and an <output> element. Just click and drag the small cursor of the slider (or use up and down arrow keys when the field has the focus):
+<h4><a href="https://codepen.io/w3devcampus/pen/BRMVGW">This online example on CodePen</a> shows how to add a visual feedback using a very short JavaScript function and an &lt;output&gt; element. Just click and drag the small cursor of the slider (or use up and down arrow keys when the field has the focus):</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 262.  (xxx) ------------------->
@@ -15595,17 +15617,21 @@ value=12 min=10, max=50 step=4:  
 ```
 
 Note that in the previous example, the default value displayed is 14, not 12 (the value just above min plus an integer step value). 12 is not possible so it's been "snapped" to 14.
+
 ```
 value=5 min=0, max=10 step="0.5":  
 ```
+
 In the previous example, it's necessary to add quotes for setting step="0.5" (while HTML5 authorizes not using quotes for setting integer values to attributes).
+
 ```
 value=5 min=0, max=10 step="any":  
 ```
+
 **WARNING**: Using a step attribute with an integer value will make the slider jump corresponding to the step value. By default, omitting the step attribute is equivalent to step="1".
 So, for accepting float values, it is necessary to use step="any", or step equal to a floating point value, such as step="0.5".
 
-Adding "ticks" to the range slider using a <datalist> element
+Adding "ticks" to the range slider using a &lt;datalist&gt; element
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 264.  (xxx) ------------------->
@@ -15616,7 +15642,8 @@ Adding "ticks" to the range slider using a <datalist> element
    alt="complicated ticks on a rule" />
 </p>
 
-Using the <datalist> element, it's possible to display "ticks" above the range slider, at given positions.
+<h4>Using the &lt;datalist&gt; element, it's possible to display "ticks" above the range slider, at given positions.</h4>
+
 ```
 1.  <label for="slider2">value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:</label>
 2.  <input id="slider2" type="range"
@@ -15633,6 +15660,7 @@ Using the <datalist> element, it's possible to display "ticks" above the range
 ```
 
 <h4>Try the sliders below:</h4>
+
 ```
 value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:  
 value=20 min=10, max=50 step=5, ticks at 0, 10, 20, 30, 40 and 50:  
@@ -15641,12 +15669,11 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 ```
 
 <h4>External resources</h4>
-
--   You can use CSS for "standard" styling (size, color, background color, etc.) . However, some custom attributes are available. Check [this article from CSS tricks](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/).
-
--   A script that automatically generates ticks, depending on the min, max and step attributes (Codepen from Dudley Storey): [Auto-Generated HTML5 range input Ticks](https://codepen.io/dudleystorey/pen/Klnzy)
-
--   From CSS{Portal}, a CSS generator help you style the html input range tag, very easy to use: [Style Input Range](https://www.cssportal.com/style-input-range/)
+<ul>
+<li>You can use CSS for "standard" styling (size, color, background color, etc.) . However, some custom attributes are available. Check <a href="https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/">this article from CSS tricks</a>.</li>
+<li>A script that automatically generates ticks, depending on the min, max and step attributes (Codepen from Dudley Storey): <a href="https://codepen.io/dudleystorey/pen/Klnzy">Auto-Generated HTML5 range input Ticks</a></li>
+<li>From CSS{Portal}, a CSS generator help you style the html input range tag, very easy to use: <a href="https://www.cssportal.com/style-input-range/">Style Input Range</a></li>
+</ul>
 
 +----------------------------------------------------------------------------------+---------------------------------------+
 | ### **HTML4**                                                                    | ### **HTML5**                         |
@@ -15691,12 +15718,13 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 |                                                                                  |                                       |
 | ** align is deprecated, CSS rules should be used instead                       |                                       |
 +----------------------------------------------------------------------------------+---------------------------------------+
+<ul>
+<li>MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">&lt;input type=range&gt;</a></li>
+</ul>
 
--   MDN's Web Docs: [<input type=range>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
+<h3 id="ch5-5-1">5.5.1 Form Attributes</h3>
 
-<h3>5.5.1 Form Attributes</h3>
-
-In this chapter, we go over the form attributes that have been introduced by HTML5.
+<p>In this chapter, we go over the form attributes that have been introduced by HTML5.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 265.  (xxx) ------------------->
@@ -15718,10 +15746,10 @@ In another part of the course, about form validation and visual feedback using 
 This attribute is useful for putting input fields outside the form itself. The form attribute of an external input field must share the same value as the id of the form the field belongs to. This is useful when using <fieldset> elements for making the page/form layout easier.
 
 <h4>Typical use</h4>
+<p>
+<a href="http://codepen.io/w3devcampus/pen/jmdpyv)">Try this interactive example in CodePen</a>, or try it directly in your browser:
 
-[Try this interactive example in CodePen](http://codepen.io/w3devcampus/pen/jmdpyv),  or try it directly in your browser:
-
-Enter your name (field outside the form): ![](./images/image266.wmf)
+Enter your name (field outside the form): ![](./images/image266.wmf)</p>
 
 <h4>Top of Form</h4>
 
@@ -15761,12 +15789,18 @@ Bottom of Form
 
 <h3 id="5-5-3">5.5.3 autocomplete</h3>
 
-This attribute applies either to the <form> element or on individual <input> elements. It specifies when input fields must autocomplete the user's input based on the user's typing history. 
+This attribute applies either to the &lt;form&gt; element or on individual &lt;input&gt; elements. It specifies when input fields must autocomplete the user's input based on the user's typing history. 
 
 Possible values of this attribute: on/off.
 
-<!------ ********************* image ***************** ---------->
-![on off funny picture](./images/image267.jpeg){width="1.6354166666666667in" height="1.2291666666666667in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 267. on off funny picture (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image267.jpeg?raw=true"
+   width="16%"
+   alt="On/off funny picture." />
+</p>
 
 If applied to the <form> element, all input fields attached to the form (inside or linked to it using the form attribute), will have auto-completion set by default to the value of the autocomplete attribute of the form.
 
@@ -15778,8 +15812,14 @@ This attribute targets most input types (those that allow typing in them).
 
 <h4>Typical use</h4>
 
-<!------ ********************* image ***************** ---------->
-![example of use of the autocomplete attribute](./images/image268.jpeg){width="4.0in" height="2.9568482064741906in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------- 268. example of use of autocomplete attribute (xxx) ------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image268.jpeg?raw=true"
+   width="40%"
+   alt="Example of use of autocomplete attribute." />
+</p>
 
 Try it in your browser here:
 
@@ -15796,6 +15836,7 @@ Bottom of Form
 To see auto-completion in action: enter something in both fields and submit the form. Then enter the same thing: you will see that only the second input field offers auto-completion.
 
 <h4>Source code extract:</h4>
+
 ```
 1.  <form submit="test.php" method="post" **autocomplete="on"**>
 2.      ...
@@ -15930,14 +15971,20 @@ A **must read**: a good catalog of ready-to-go patterns is available at html5pa
 
 You can also try [this online JavaScript RegExps tester](https://regex101.com/#javascript), and follow [this tutorial about "using JavaScript RegExps"](https://regexone.com/) that has step by step exercises and explanations.
 
-<!---- **************************** image ************************ --------------------->
-![html5patterns.com screenshot that shows a menu on the left with categories and patterns on the right](./images/image271.jpeg){width="4.020833333333333in" height="2.4895833333333335in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------- 271. html5patterns.com: menu left, categories & patterns right (xxx) ------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image271.jpeg?raw=true"
+   width="40%"
+   alt="Menu on the left, categories and patterns on the right. html5patterns.com" />
+</p>
 
 <h4>Typical use</h4>
 
 Just add a pattern attribute with a value that is the JavaScript regular expression that must match the entire string entered in the field. Note that the empty string is valid by default (except if the required attribute is used - this makes empty fields invalid).
 
-It's best practice to systematically add a title attribute with a value that indicates what constitutes a valid entry.** More on this in the section of this course dedicated to form validation.
+It's best practice to systematically add a title attribute with a value that indicates what constitutes a valid entry. More on this in the section of this course dedicated to form validation.
 
 ```
 1.  <input type="text" name="country_code"
@@ -16248,55 +16295,44 @@ In general, such forms have two submit buttons, one with the formnovalidate at
 
 Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,output)):
 
+```
 1.  <form action="form.php">
-
 2.     <fieldset>
-
 3.       <legend>Example of formnovalidate attribute</legend>
-
 4.       <label for="email">E-mail:</label>
-
 5.       <input type="email" name="email" id="email"/><br>
-
 6.       <input type="submit" value="Submit" /><br>
-
 7.       **<input type="submit"**
-
 8.              **formnovalidate** 
-
 9.              **value="Submit without validation" />**
-
 10. </fieldset>
-
 11. </form>
+```
 
-### 5.5.12 formtarget
+<h3 id="ch5-5-12">5.5.12 formtarget</h3>
 
-The formtarget attribute is targeted to the <input type="submit"> input fields. This attribute is rarely used.
+The formtarget attribute is targeted to the &lt;input type="submit"&gt; input fields. This attribute is rarely used.
 
 This attribute's value indicates where the response from the form submission should be displayed. 
 
-### Typical use
+<h4>Typical use</h4>
 
+```
 1.  <input type="submit"
-
 2.         **formtarget="_blank"**
-
 3.         value="Submit but show results in a new window/tab">
+```
 
-Possible values for the formtarget attributes are:
+<h4>Possible values for the formtarget attributes are:</h4>
+<ul>
+<li> _blank: the response is displayed in a new window or tab,</li>
+<li> _self: the response is displayed in the same frame (this is default),</li>
+<li> _parent: the response is displayed in the parent frame,</li>
+<li> _top: the response is displayed in the full body of the window,</li>
+<li>framename: the response is displayed in a named iframe.</li>
+</ul>
 
--   _blank: the response is displayed in a new window or tab
-
--   _self: the response is displayed in the same frame (this is default)
-
--   _parent: the response is displayed in the parent frame
-
--   _top: the response is displayed in the full body of the window
-
--   framename: the response is displayed in a named iframe
-
-### Complete example
+<h4>Complete example</h4>
 
 [Online example at JSBin ](https://jsbin.com/godice/2/edit?html,output)or try it in your browser below:
 
@@ -19250,8 +19286,7 @@ Let's see some examples of use.
 
 Example #1: how to get a physical address from the longitude and latitude
 
-Google reverse geocoding example (screenshot only) :
-</p>
+Google reverse geocoding example (screenshot only):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 330. google reverse geocoding example (447) --------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19261,7 +19296,7 @@ Google reverse geocoding example (screenshot only) :
    width="45%" />
 </p>
 
-Source code of this example (in order to run it, you need a Google API key, used at <i>line 6</i>).
+<p>Source code of this example (in order to run it, you need a Google API key, used at <i>line 6</i>).</p>
 
 ```
 <!DOCTYPE html>
@@ -19642,4 +19677,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-08-2022 8:53am</i></b></h3>
+<h3><b><i>08-08-2022 5:07pm</i></b></h3>
