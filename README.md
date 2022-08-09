@@ -3969,7 +3969,7 @@ Usually you have an "embed" button close to the videos that prompts you with s
 <h4>External resources</h4>
 <ul>
 <li>From W3C's specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element">The video element</a></li>
-<li>MDN's Web Docs: <a href="(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">&lt;video&g;: The Video Embed element</a>)</li>
+<li>MDN's Web Docs: <a href="(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">&lt;video&gt;: The Video Embed element</a>)</li>
 <li>From Apple's developer site: <a href="https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/ControllingMediaWithJavaScript/ControllingMediaWithJavaScript.html">Safari HTML5 audio and video guide</a>.</li>
 <li>Article from HTML5 Rocks: <a href="https://www.html5rocks.com/en/tutorials/video/basics/">Media</a></li>
 </ul>
@@ -4026,13 +4026,13 @@ Notice the other similarities: between the &lt;audio&gt;...&lt;audio&gt; tags,
 </p>
 <h4>External resources</h4>
 <ul>
-<li>From W3C's specification: [The audio element](https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element)</li>
-<li>From MDN's Web Docs: [&lt;audio&gt;: The Embed Audio element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)</li>
+<li>From W3C's specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element">The audio element</a></li>
+<li>From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">&lt;audio&gt;: The Embed Audio element</a></li>
 </ul>
 
 <h3 id="ch2-2-3">2.2.3 Attributes of &lt;video&gt; and &lt;audio&gt;</h3>
 
-<h4>Most useful attributes of the <video> element</h4>
+<h4>Most useful attributes of the &lt;video&gt; element</h4>
 <p>
 Here are the most common attributes you can use with the &lt;video&gt; element. They are self explanatory...</p>
 <ul>
