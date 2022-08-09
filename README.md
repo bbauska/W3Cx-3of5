@@ -4527,40 +4527,25 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link
 <p>We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer!</p>
 
 | ------------------------------------------------------------------------|
-| <b>Methods</b> | <b>Properties</b> | <b>Events</b>|
-| -------------- | ----------------- | -------------|
-| <b>play()</b>  | <b>currentSrc</b> | <b>play</b> |
-|----------------|-------------------|----------------|
-| <b>pause()</b> | <b>currentTime</b> | <b>pause</b> |
-|----------------| -------------------| ------------ |
-|  load()    |   | startTime (readonly) |            progress |
-|----------------| -------------------| ------------ |
-|  canPlayType() | videoWidth |                     error |
-|----------------| -------------------| ------------ |
- |               | videoHeight |                     timeupdate |
-|----------------| -------------------| ------------ |
-                 | duration (readonly) |               ended |
-|----------------| -------------------| ------------ |
-                 | ended (readonly)                 abort |
-|----------------| -------------------| ------------ |
-                 | error     |                       empty |
-|----------------| -------------------| ------------ |
-                 | paused (readonly) |               emptied |
-|----------------| ------------------| ------------ |
-                 | muted              |              waiting |
-|----------------| ------------------| ------------ |
-                 | seeking             |             loadedmetadata |
-|----------------| -------------------| ------------ |
-                 | volume           |                
-|----------------| -----------------| ------------ |
-                 | <b>height</b> | 
-|----------------| -------------------| ------------ |
-                 | <b>width</b> |
-|----------------| -------------------| ------------ |
-                 | <b>seekable (readonly)</b> |
-|----------------| -------------------| ------------ |
-                 | <b>played (readonly)</b> |
-|----------------| -------------------| ------------ |
+| <b>Methods</b> | <b>Properties</b>    | <b>Events</b>                   |
+| ------------------------------------------------------------------------|
+| <b>play()</b>  | <b>currentSrc</b>    | <b>play</b>                     |
+| <b>pause()</b> | <b>currentTime</b>   | <b>pause</b>                    |
+|  load()        | startTime (readonly) | progress                        |
+|  canPlayType() | videoWidth           |                     error       |
+|                | videoHeight          |                     timeupdate  |
+|                | duration (readonly)  |               ended             |
+|                | ended (readonly)     |            abort                |
+|                | error                |                       empty     |
+|                 | paused (readonly)    |               emptied           |
+|                 | muted                |              waiting            |
+|                 | seeking              |             loadedmetadata      |
+|                 | volume               |                                 |
+|                 | <b>height</b>        |                                 |
+|                 | <b>width</b>         |                                 |
+|                 | <b>seekable (readonly)</b> |                           |
+|                 | <b>played (readonly)</b>   |                           |
+| ------------------------------------------------------------------------|
 
 <p>
 In the next pages, let's see, through a set of examples, how to use these most important properties, methods, and events...
@@ -4906,7 +4891,7 @@ The WebVTT format used for describing a track file is also presented in this c
 </p>
 <h4>Most of the major desktop browsers support HTML5 captioning</h4>
 <p>
-Please check the <a href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the <track> element support by browsers.
+Please check the <a href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the &lt;track&gt; element support by browsers.
 </p>
 <h4>Some definitions</h4>
 <ul>
@@ -4915,16 +4900,12 @@ Please check the <a href="https://caniuse.com/mdn-html_elements_track">browser s
 </ul>
 
 <br/>
-<p>
-The accessibility features of TV programs often propose both options for people with hearing deficiencies. 
-</p>
+<p>The accessibility features of TV programs often propose both options for people with hearing deficiencies.</p>
 
 <h4>Typical use: add a subtitle/caption track to a &lt;video&gt; element</h4>
 
 <h4>Important warning!!</h4>
-<p>
-The &lt;track&gt; element cannot be used with a file:// URL. Please use https:// and a Web server. Your server must use a special MIME format for the .vtt files: text/vtt;charset=utf-8 (set by default on most servers now).
-</p>
+<p>The &lt;track&gt; element cannot be used with a file:// URL. Please use https:// and a Web server. Your server must use a special MIME format for the .vtt files: text/vtt;charset=utf-8 (set by default on most servers now).</p>
 <h4>Examples of the lines to add to an Apache Web server:</h4>
 
 ```
@@ -4932,11 +4913,10 @@ The &lt;track&gt; element cannot be used with a file:// URL. Please use htt
 2.  ForceType text/vtt;charset=utf-8
 3.  </Files>
 ```
-<p>
-It is worth mentioning that most browsers work well with WebVTT, even if the MIME type is not defined.
 
-Here is an example of a video element that includes a &lt;track&gt; element in the .vtt (WebVTT) format (<i>line 9</i> in the source code shown below):
-</p>
+<p>It is worth mentioning that most browsers work well with WebVTT, even if the MIME type is not defined.
+
+Here is an example of a video element that includes a &lt;track&gt; element in the .vtt (WebVTT) format (<i>line 9</i> in the source code shown below):</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 86. example snapshot (104) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4946,9 +4926,7 @@ Here is an example of a video element that includes a &lt;track&gt; element in
    width="65%">
 &nbsp;
 <br/>
-<p>
-The example uses a &lt;track&gt; element to insert basic captions to the video: sounds and music are described, in addition to standard subtitles that correspond to what the different movie characters say.
-</p>
+<p>The example uses a &lt;track&gt; element to insert basic captions to the video: sounds and music are described, in addition to standard subtitles that correspond to what the different movie characters say.</p>
 
 ```
 <video height="272" width="640"
@@ -4997,7 +4975,7 @@ Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#
 </video>
 ```
 
-Note the use of some new attributes in the <track> element:
+Note the use of some new attributes in the &lt;track&gt; element:
 <ul>
 <li>label: the label value will be displayed in the GUI control that is included in the default HTML5 video player,</li>
 <li>srclang:  gives the language for the text track data. The value must be a valid <a href="https://tools.ietf.org/html/bcp47">BCP 47 language tag</a>. This attribute must be present if <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind">the element's kind attribute</a> is in the <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles">subtitles state</a>.</li>
@@ -5017,6 +4995,7 @@ The "<a href="http://dev.w3.org/html5/webvtt/">WebVTT: The Web Video Text Tracks
 
 In the interactive example presented before, we used a file called sintel-captions.vtt:
 </p>
+
 ```
 <video height="272" width="640"
        poster="https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg"
@@ -5028,7 +5007,7 @@ In the interactive example presented before, we used a file called sintel-capti
 </video>
 ```
 
-And here is an extract of the corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt">sintel-captions.vtt</a> file:
+<p>And here is an extract of the corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt">sintel-captions.vtt</a> file:</p>
 
 ```
 1.  WEBVTT
@@ -5101,11 +5080,11 @@ And here is an extract of the corresponding <a href="https://mainline.i3s.unice
 68. Thank you.
 ```
 
-This format is rather simple, but we still recommend reading <a href="https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API">this excellent article from Mozilla Developer Network</a> that explains in detail all the different options.
+<p>This format is rather simple, but we still recommend reading <a href="https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API">this excellent article from Mozilla Developer Network</a> that explains in detail all the different options.
 
 Each "element" in this file has a starting and ending time, plus a value (the text that will be displayed), followed by a blank line (blank lines are separators between elements).
 
-<b>Each element is called "a cue"</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, in particular the getCueById() method of TextTrack objects.
+<b>Each element is called "a cue"</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, in particular the getCueById() method of TextTrack objects.</p>
 
 <h4>Example of a .vtt file with numeric IDs:</h4>
 
@@ -5127,7 +5106,8 @@ Each "element" in this file has a starting and ending time, plus a value (the te
 3.  Welcome to our <i>nice film</i>
 ```
 
-The displayed text can span multiple lines, but blank lines are not allowed, as they would be interpreted as a separator:
+<p>The displayed text can span multiple lines, but blank lines are not allowed, as they would be interpreted as a separator:</p>
+
 ```
 1.  00:01:57.083 --> 00:02:00.000
 2.  <p>You're a fool for traveling alone</p>
@@ -5141,11 +5121,11 @@ The displayed text can span multiple lines, but blank lines are not allowed, as 
 
 <h3 id="ch2-3-3">2.3.3 Adding Subtitles to a Video</h3>
 
-Let's look at a simple example. First, you need a video on one of the formats/codecs supported by the browsers you target. A recommended codec is mp4/H264, but other formats, such as webm, may have some advantages if the browser supports them. For example, webm allows the video to start playing after a much shorter buffering time. In other words, try if possible to provide the video encoded with more than one codec.
+<p>Let's look at a simple example. First, you need a video on one of the formats/codecs supported by the browsers you target. A recommended codec is mp4/H264, but other formats, such as webm, may have some advantages if the browser supports them. For example, webm allows the video to start playing after a much shorter buffering time. In other words, try if possible to provide the video encoded with more than one codec.
 
-For this, use any sort of open source, free or commercial video encoding software, such as [Handbrake](https://handbrake.fr/) (free, open source) or [Super](https://www.erightsoft.com/SUPER.html) (free). There are also online video encoding services, and you can even upload your video to YouTube, let it encode your video in several resolutions and codecs, and use a browser extension such as [Video DownloadHelper ](https://addons.mozilla.org/fr/firefox/addon/video-downloadhelper/)(for Firefox) or [JDownloader](https://jdownloader.org/), to download the video in your chosen formats.
+For this, use any sort of open source, free or commercial video encoding software, such as <a href="https://handbrake.fr/">Handbrake</a> (free, open source) or <a href="https://www.erightsoft.com/SUPER.html">Super</a> (free). There are also online video encoding services, and you can even upload your video to YouTube, let it encode your video in several resolutions and codecs, and use a browser extension such as <a href="https://addons.mozilla.org/fr/firefox/addon/video-downloadhelper/">Video DownloadHelper</a>(for Firefox) or <a href="https://jdownloader.org/">JDownloader</a>, to download the video in your chosen formats.
 
-So, let's suppose you have a video like the one below (we included it on YouTube for practical reasons). This video has subtitles (you can activate them in the YouTube player), but the goal of this lesson is to explain how we made them without using the YouTube embedded tools, which do not allow export the subtitle file to be exported in the webVTT format.
+So, let's suppose you have a video like the one below (we included it on YouTube for practical reasons). This video has subtitles (you can activate them in the YouTube player), but the goal of this lesson is to explain how we made them without using the YouTube embedded tools, which do not allow export the subtitle file to be exported in the webVTT format.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 87. picture guitar picking (108) -------------------------------->
@@ -5156,7 +5136,7 @@ So, let's suppose you have a video like the one below (we included it on YouTube
    width="45%" />
 &nbsp;
 
-And if you've also got it in mp4/H264 and in webm formats, here is how you can embed it in your page using the video element:
+<p>And if you've also got it in mp4/H264 and in webm formats, here is how you can embed it in your page using the video element:</p>
 
 ```
 <video id="myVideo" width=500 controls>
@@ -5172,7 +5152,7 @@ And if you've also got it in mp4/H264 and in webm formats, here is how you
 </video>
 ```
 
-At <i>line 9</i>, we added a <track> element to add English subtitles, as the guitar teacher there is speaking in French. We will now explain how we created this subtitle track.
+<p>At <i>line 9</i>, we added a <track> element to add English subtitles, as the guitar teacher there is speaking in French. We will now explain how we created this subtitle track.</p>
 
 <h4>Adding subtitles to the video</h4>
 <p>
@@ -5180,8 +5160,7 @@ Now, we need to create a WebVTT file for this video. How can we synchronize an E
 
 Many tools - both free and commercial - are available to add subtitles to a video. Most are native applications you need to install on your computer. However, a free and very practical tool is available for doing this 100% in a Web browser: <a href="https://amara.org/en/">amara</a>.
 
-Go to the above Web site, click on the "subtitle a video" link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it's better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.
-</p>
+Go to the above Web site, click on the "subtitle a video" link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it's better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 88. example subtitles and captions (109) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -11944,7 +11923,7 @@ Your browser does not support the canvas tag.
 8.  });
 ```
 
-<b>Explanations:</b>
+<h4>Explanations:</h4>
 
 -   *Line 1* is the call to the image loader, the first parameter is the list of images to be loaded, while the second parameter is the callback function that will be called once all images have been loaded.
 
@@ -12077,17 +12056,16 @@ Your browser does not support the canvas tag.</canvas>
 27. }
 ```
 
-<b>Explanations:</b>
-
--   *Lines 21-27*: we set the 4 properties that define shadows in a dedicated function, for better clarity.
-
--   *Line 8*: we called this function once before drawing the rectangles.
-
--   *Lines 11-18*: we draw a filled and a stroked rectangle. Both rectangles cast shadows.
+<h4>Explanations:</h4>
+<ul>
+<li><i>Lines 21-27</i>: we set the 4 properties that define shadows in a dedicated function, for better clarity.</li>
+<li><i>Line 8</i>: we called this function once before drawing the rectangles.</li>
+<li><i>Lines 11-18</i>: we draw a filled and a stroked rectangle. Both rectangles cast shadows.</li>
+</ul>
 
 <h4>Example #2: unwanted shadows!</h4>
 
-Let's take a [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO), the one that draws a filled circle with an outline. And, let's add a shadow to it using the following code:
+<p>Let's take a <a href="https://codepen.io/w3devcampus/pen/YzZBxmO">previous example</a>, the one that draws a filled circle with an outline. And, let's add a shadow to it using the following code:</p>
 
 ```
 1.  ...
@@ -12855,7 +12833,7 @@ clearInterval(requestId);
 63. </body>
 ```
 
-<b>Explanations:</b>
+<h4>Explanations:</h4>
 
 -   *Lines 52-61*: The code for launching and stopping the animation is similar to that from the previous example.
 
@@ -16625,23 +16603,24 @@ It can be useful to display a colored gauge to show disk usage, to highlight t
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image280.jpeg?raw=true"
-   alt=""
+   alt="Picture of a meter example."
    width="50%">
 &nbsp;
 <br/>
-![picture of a meter example](./images/image280.jpeg){width="5.0in" height="0.8374792213473315in"}
 
-The <meter> element should not be used to indicate progress. You should instead use a <progress> element.
+The &lt;meter&gt; element should not be used to indicate progress. You should instead use a &lt;progress&gt; element.
 
-### Typical use
+<h4>Typical use</h4>
 
+```
 1.  Storage space used: **<meter value=75 min=0 low=20 high=80 max=100 optimum=50></meter>**
+```
 
-The <meter> element uses the easy-to-understand value, min, max, low, high and optimum attributes. The optimum attribute, along with min, low, high and max attributes will affect the color of the bar, and of course the constraint min < low < high < max should be respected.
+<p>The &lt;meter&gt; element uses the easy-to-understand value, min, max, low, high and optimum attributes. The optimum attribute, along with min, low, high and max attributes will affect the color of the bar, and of course the constraint min < low < high < max should be respected.
 
-More explanations about the colors and the meaning of the optimum attribute will come further in this lesson.
+More explanations about the colors and the meaning of the optimum attribute will come further in this lesson.</p>
 
-### Interactive example
+<h4>Interactive example</h4>
 
 [Try the next example online at JSBin](https://jsbin.com/jumahox/1/edit?html,output) or just play with it in your browser by dragging the slider below:
 
@@ -16649,33 +16628,24 @@ More explanations about the colors and the meaning of the optimum attribute wi
 
 Grades:  
 
-Source code of the example:
+<h4>Source code of the example:</h4>
 
+```
 1.  <p>Grades: **<meter id="meter2" value="75" min="0" low="20" high="80" max="100"></meter>**
-
 2.  
-
 3.  <input min="0" max="100" value="75" id="meter2range"
-
 4.         oninput="effect('meter2', 'meter2range')" type="range">
-
 5.  <output id="meter2val" for="meter2range"></output></p>
-
 6.  <script>
-
 7.  function effect(meter, meterrange) {
-
 8.       var currVal = document.getElementById(meterrange).value;
-
 9.       document.getElementById(meter).value = currVal;
-
 10.      document.getElementById(meter+ "val").innerHTML = currVal;
-
 11. }
-
 12. </script>
+```
 
-**Explanations:**
+<h4>Explanations:</h4>
 
 ![The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the <meter> element (line 9) and update the displayed html content of the <output> element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
 
@@ -17157,6 +17127,7 @@ Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JS
 <br/>
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -17253,219 +17224,117 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 &nbsp;
 <br/>
 
-**Complete source code:**
+<h4>Complete source code:</h4>
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.     <meta charset="utf-8">
-
 5.     <title>Aggregating error messages</title>
-
 6.     <style>
-
 7.         input:invalid { background-color: lightPink;}
-
 8.         input:valid { background-color:lightGreen; }
-
 9.         input:required {border: 2px solid red;}
-
 10.        input:optional {border: 2px solid green;}
-
 11.  
-
 12.        .error-messages {
-
 13.            display: none;
-
 14.            margin: 0 10px 15px 10px;
-
 15.            padding: 8px 35px 8px 30px;
-
 16.            color: #B94A48;
-
 17.            background-color: #F2DEDE;
-
 18.            border: 2px solid #EED3D7;
-
 19.            border-radius: 4px;
-
 20.        }
-
 21.        fieldset {
-
 22.           border:1px solid;
-
 23.           padding:20px;
-
 24.        }
-
 25.     </style>
-
 26. </head>
-
 27. <body>
-
 28. <form>
-
 29.      <fieldset>
-
 30.          <legend>Submit with one or two invalid fields</legend>
-
 31. 
-
 32.          <ul class="error-messages"></ul>
-
 33. 
-
 34.          <label for="name">Name:</label>
-
 35.          <input id="name" name="name" required>
-
 36.          <p>
-
 37.          <label for="email">Email:</label>
-
 38.          <input id="email" name="email" type="email" required>
-
 39.          <p>
-
 40.          <button>Submit</button>
-
 41.      </fieldset>
-
 42. </form>
-
 43.  
-
 44. <script>
-
 45.     function replaceValidationUI(form) {
-
 46.        // Suppress the default bubbles
-
 47.           form.addEventListener("invalid", function (event) {
-
 48.           event.preventDefault();
-
 49.        }, true);
-
 50.  
-
 51.        // Support Safari, iOS Safari, and the Android browser --- each of which
-
 52.        // do not prevent form submissions by default
-
 53.        form.addEventListener("submit", function (event) {
-
 54.           if (!this.checkValidity()) {
-
 55.              event.preventDefault();
-
 56.           }
-
 57.        });
-
 58.  
-
 59.        // Container that holds error messages. By default it has a CSS
-
 60.        // display:none property
-
 61.        var errorMessages = form.querySelector(".error-messages");
-
 62.  
-
 63.        var submitButton = form.querySelector("button:not([type=button]),
-
 64.                                               input[type=submit]");
-
 65.  
-
 66.        submitButton.addEventListener("click", function (event) {
-
 67.            var invalidFields = form.querySelectorAll("input:invalid");
-
 68.            var listHtml = "";
-
 69.            var errorMessagesContainer = form.querySelector(".error-messages");
-
 70.            var label;
-
 71.  
-
 72.            // Get the labels' values of their name attributes + the validation error
-
 73.            // message of the corresponding input field using the validationMessage
-
 74.            // property of input fields
-
 75.            // We build a list of <li>...</li> that we add to the error message container
-
 76.            for (var i = 0; i < invalidFields.length; i++) {
-
 77.                label = form.querySelector("label[for=" + invalidFields[ i ].id + "]");
-
 78.                listHtml += "<li>" +
-
 79.                            label.innerHTML +
-
 80.                            " " +
-
 81.                            invalidFields[ i ].validationMessage +
-
 82.                            "</li>";
-
 83.            }
-
 84.  
-
 85.            // Update the list with the new error messages
-
 86.            errorMessagesContainer.innerHTML = listHtml;
-
 87.  
-
 88.            // If there are errors, give focus to the first invalid field and show
-
 89.            // the error messages container by setting its CSS property display=block
-
 90.            if (invalidFields.length > 0) {
-
 91.               invalidFields[ 0 ].focus();
-
 92.               errorMessagesContainer.style.display = "block";
-
 93.            }
-
 94.        });
-
 95.    }
-
 96.  
-
 97.    // Replace the validation UI for all forms
-
 98.    var forms = document.querySelectorAll("form");
-
 99. 
-
 100.    for (var i = 0; i < forms.length; i++) {
-
 101.        replaceValidationUI(forms[ i ]);
-
 102.    }
-
 103. </script>
-
 104. </body>
-
 105. </html>
+```
 
-Explanations:
+<h4>Explanations:</h4>
 
 -   *Line 32*: we added an empty unnumbered list (<ul>..</ul>) to the form, with the CSS class="error-messages". We will use this class attribute for styling, and hiding by default, the error messages using CSS (see lines *12-20*, *line 13* hides the messages by default).
 
