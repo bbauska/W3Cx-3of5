@@ -3437,7 +3437,7 @@ Using the translate="no" attribute should prevent this behavior...</p>
 
 Adding microdata to Web pages helps search engines to better understand the pages' content, their topics, etc. The main purpose of microdata is <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">Search Engine Optimization</a>(SEO).
 
-This information is not visible to humans: it is pure <i>semantic information</i>. Popular kinds of microdata are events, a person's profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. </p>
+This information is not visible to humans: it is pure <i>semantic information</i>. Popular kinds of microdata are events, a person's profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc.</p>
 
 <h4>Quick example of microdata that describes a person</h4>
 
@@ -7266,7 +7266,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-JavaScript code extract:
+<h4>JavaScript code extract:</h4>
 
 ```
 1.  function drawSomething() {
@@ -7278,9 +7278,11 @@ JavaScript code extract:
 7.  }
 ```
 
--   <h4> Let's modify the code so that we can draw these rectangles at any X and Y position
+<ul>
+<li><h4>Let's modify the code so that we can draw these rectangles at any X and Y position.</h4></li>
+</ul>
 
-What if we wanted to draw these 3 rectangles at another position, as a group? We would like to draw all of them a little closer to the bottom, for example... Let's add some parameters to the function:  the X and Y position of the rectangles.
+<p>What if we wanted to draw these 3 rectangles at another position, as a group? We would like to draw all of them a little closer to the bottom, for example... Let's add some parameters to the function:  the X and Y position of the rectangles.</p>
 
 <h4>HTML</h4>
 
@@ -7323,7 +7325,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-Code extract:
+<h4>Code extract:</h4>
 
 ```
 1.  var canvas, ctx;
@@ -7347,7 +7349,7 @@ Code extract:
 19. }
 ```
 
-At *line 10*, we called the drawSomething(...) function with 0 and 100 as parameters, meaning "please add an offset of 0 in X and 100 in Y directions to what is drawn by the function...
+At <i>line 10</i>, we called the drawSomething(...) function with 0 and 100 as parameters, meaning "please add an offset of 0 in X and 100 in Y directions to what is drawn by the function..."
 
 If you look at the code of the modified function, you will see that each call to fillRect(...) uses the x and y parameters instead of hard coded values. In this way, if we call it with parameters (0, 100), then all rectangles will be drawn 100 pixels to the bottom (offset in y). Here is the result:
 
@@ -7448,15 +7450,16 @@ Your browser does not support the canvas tag.
 23. }
 ```
 
-As you can see, the code uses the same technique, becomes less and less readable. The Xs and Ys at the beginning of each call makes understanding the code harder, etc.
+<p>As you can see, the code uses the same technique, becomes less and less readable. The Xs and Ys at the beginning of each call makes understanding the code harder, etc.
 
-However, there is a way to simplify this => 2D geometric transformations! 
+However, there is a way to simplify this =&gt; 2D geometric transformations!</p>
 
-<h4>Geometric transformations: changing the coordinate system
+<h4>Geometric transformations: changing the coordinate system</h4>
 
-The idea behind 2D transformations is that instead of modifying all the coordinates passed as parameters to each call to drawing methods like fillRect(...), we will keep all the drawing code "as is". For example, if the monster of our previous example was drawn at (0, 0), we could just translate (or rotate, or scale) the original coordinate system.
+<p>The idea behind 2D transformations is that instead of modifying all the coordinates passed as parameters to each call to drawing methods like fillRect(...), we will keep all the drawing code "as is". For example, if the monster of our previous example was drawn at (0, 0), we could just translate (or rotate, or scale) the original coordinate system.
 
-Let's take a piece of code that draws something corresponding to the original coordinate system, located at the top left corner of the canvas:
+Let's take a piece of code that draws something corresponding to the original coordinate system, located at the top left corner of the canvas:</p>
+
 ```
 1.  function drawMonster(x, y) {
 2.     // head
@@ -7487,7 +7490,7 @@ Let's take a piece of code that draws something corresponding to the original co
 27. }
 ```
 
-This code is the just the same as in the previous example except that we removed all Xs and Yx in the code. We also added at the end *(lines 25-26*) two lines of code that draw the coordinate system. The drawArrow(startX, startY, endX, endY, width, color) function is a utility function that we will present later. You can see it in the JS source code of the pen below:
+<p>This code is the same as in the previous example except we removed all Xs and Yx in the code. We also added at the end <i>(lines 25-26</i>) two lines of code that draw the coordinate system. The drawArrow(startX, startY, endX, endY, width, color) function is a utility function that we will present later. You can see it in the JS source code of the pen below:</p>
 
 <h4>JS</h4>
 
@@ -7569,11 +7572,13 @@ drawArrow(ctx, 0, 0, 0, 100, 10, 'red');
 </script>
 ```
 
-Note that the X and Y parameters are useless for now...
+<p>Note that the X and Y parameters are useless for now...</p>
+
 ```
 -   <h4> Translation using ctx.translate(offsetX, offsetY)
 ```
-Now, instead of simply calling drawMonster(0, 0), we will call first ctx.translate(100, 100), and look at the result below:
+
+<p>Now, instead of simply calling drawMonster(0, 0), we will call first ctx.translate(100, 100), and look at the result below:</p>
 
 <h4>JS</h4>
 ```
@@ -7714,6 +7719,7 @@ ctx.restore();
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -7787,6 +7793,7 @@ Your browser does not support the canvas tag.
 <p>If we draw two shapes at two different positions, they will be relative to this new coordinate system.</p>
 
 <h4>JS</h4>
+
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
@@ -7817,6 +7824,7 @@ ctx.restore();
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -7911,6 +7919,7 @@ Multiple contexts can be backed up consecutively and restored. Contexts saved w
 <h4>Example of a function that changes the context and restores it after execution</h4>
 
 <h4>JS</h4>
+
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
@@ -8007,7 +8016,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-We slightly modified the function that draws the monster:
+<p>We slightly modified the function that draws the monster:</p>
 <ul>
 <li>We added parameters for setting the position and orientation of the monster, and added calls to ctx.translate(x, y) and ctx.rotate(angle) in the function.</li>
 <li>We added parameters for the head color and eye color.</li>
@@ -8856,14 +8865,12 @@ This example shows:
 ```
 
 <h4>Explanations:</h4>
-
--   *Line 11*: the call to setInterval will make the browser execute the processFrame function each 25ms.
-
--   *Lines 15, 17 and 18*: in processFrame, drawImage(...) is called 3 times with the video element passed as first parameter.
-
--   *Line 43*: the video element declared at *line 43* has autoplay=true and loop=true, it starts playing the video as soon as possible and will loop it.
-
--   *Line 21*: We implemented a rotating video effect in the drawRotatingVideo. The use of context save/restore is primordial as this function changes the coordinate system at each call, translating and rotating it. Notice the extra translation at *line 31* that translates the coordinate system backwards with half of the size of the image that is drawn. We did this in order to make the image rotate around the center of the rectangle, instead of around the top left corner at (0, 0) by default. Try commenting out this line in the running example and you will see what we mean.
+<ul>
+<li><i>Line 11</i>: the call to setInterval will make the browser execute the processFrame function each 25ms.</li>
+<li><i>Lines 15, 17 and 18</i>: in processFrame, drawImage(...) is called 3 times with the video element passed as first parameter.</li>
+<li><i>Line 43</i>: the video element declared at *line 43* has autoplay=true and loop=true, it starts playing the video as soon as possible and will loop it.</li>
+<li><i>Line 21</i>: We implemented a rotating video effect in the drawRotatingVideo. The use of context save/restore is primordial as this function changes the coordinate system at each call, translating and rotating it. Notice the extra translation at *line 31* that translates the coordinate system backwards with half of the size of the image that is drawn. We did this in order to make the image rotate around the center of the rectangle, instead of around the top left corner at (0, 0) by default. Try commenting out this line in the running example and you will see what we mean.</li>
+</ul>
 
 <h3 id="ch3-4-1">3.4.1 Immediate Mode vs. Path Mode</h3>
 
@@ -9730,6 +9737,7 @@ The ctx.closePath() method indicates that we would like a closed path: draw fr
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -10000,6 +10008,7 @@ This method can be confusing. It was defined mainly for drawing rounded shapes l
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -10048,6 +10057,7 @@ context.stroke();
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -10137,6 +10147,7 @@ This example at JS Bin is the same as the previous one, except that we added at 
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -10225,6 +10236,7 @@ This could be particularly helpful if you are dealing with something other than 
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11013,6 +11025,7 @@ ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11078,6 +11091,7 @@ ctx.strokeRect(cellWidth*(i), cellHeight*j, cellWidth, cellHeight);
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11153,6 +11167,7 @@ ctx.fillRect(0, 0, 300, 200);
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11215,6 +11230,7 @@ ctx.fillRect(0, 0, 300, 200);
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11284,6 +11300,7 @@ ctx.fillRect(x, y, cellWidth, cellHeight);
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11372,6 +11389,7 @@ Here is an example of a radial gradient that interpolates the color of the rainb
 ```
 
 <h4>HTML</h4>
+
 ```
 > <!DOCTYPE html>
 > <html lang="en">
@@ -12587,7 +12605,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-</b>Errata</b>: in the video, we use speed +=1; in order to increment the speed of the rectangle each time it bounces (in the changeColor() function). This is not correct as speed can be negative. The online example fixes this by using speed += Math.sign(speed) * 1; instead this will add +1 or -1 depending on the sign of speed.
+<b>Errata</b>: in the video, we use speed +=1; in order to increment the speed of the rectangle each time it bounces (in the changeColor() function). This is not correct as speed can be negative. The online example fixes this by using speed += Math.sign(speed) * 1; instead this will add +1 or -1 depending on the sign of speed.
 
 <h3 id="ch4-2-3">4.2.3 Animating Using setInterval()</h3>
 
@@ -12684,6 +12702,7 @@ The call to setInterval returns an id we can use to stop the animation, by cal
 We use the drawMonster() function:
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -12766,6 +12785,7 @@ clearInterval(requestId);
 ```
 
 <h4>Source code:</h4>
+
 ```
 1.  <body onload="init();">
 2.      <canvas id="myCanvas" width="400" height="400">
@@ -13245,7 +13265,8 @@ border: 1px solid black;
 <body onload="init();">
 <p>
 ```
-This example shows how to handle key events in a canvas by adding a key listener to the window object. Like that, all key press in the document will trigger the event listener function.</p>
+
+<h4>This example shows how to handle key events in a canvas by adding a key listener to the window object. Like that, all key press in the document will trigger the event listener function.</h4>
 
 ```
 <canvas id="myCanvas" width="350" height="200">
@@ -13266,6 +13287,7 @@ return false;
 ```
 
 <h4>Code source extract:</h4>
+
 ```
 1.  <canvas id="myCanvas" width="350" height="200">
 2.  </canvas>
@@ -13285,7 +13307,7 @@ return false;
 16. </script>
 ```
 
-Indeed this solution works well if you write a game, and want to detect events wherever the mouse cursor is, and without worrying about what HTML element has the focus, etc...
+<p>Indeed this solution works well if you write a game, and want to detect events wherever the mouse cursor is, and without worrying about what HTML element has the focus, etc...</p>
 
 <h4>Example #2: moving the monster with the keyboard</h4>
 <!------------------------------------------------------------------------------------------------>
@@ -13454,7 +13476,8 @@ If you add a key listener to a canvas element, the problem is that it will get e
 
 The tabindex attribute of the canvas element makes it focusable. Without it, it will never get the focus!
 
-The trick is to declare the canvas like this:
+<h4>The trick is to declare the canvas like this:</h4>
+
 ```
 1.  <canvas id="myCanvas" width="350" <b>tabindex="1"</b> height="200">
 2.  </canvas>
@@ -15191,7 +15214,7 @@ Let's study 4 input types: email", "tel", "URL" and "search".
 
 This input type is relatively straightforward to use. In mobile applications, this new input type pops up a keyboard layout adapted to email input. Note the "@" key, the "." key, etc.
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 245.  (xxx) ------------------->
+<!--------------- 245. input values and validation (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image245.jpeg?raw=true"
@@ -15207,7 +15230,8 @@ If the value entered does not contain an "@", and does not look like an email 
 
 See the next example to see this in action. More details will be presented in a later section dedicated to form validation.
 
-Typical use:
+<h4>Typical use:</h4>
+
 <a href="https://codepen.io/w3devcampus/pen/aWXKWR">Online example at CodePen</a>
 
 <!------------------------------------------------------------------------------------------------>
@@ -15809,7 +15833,7 @@ Bottom of Form
 24. </html>
 ```
 
-<i>Lines 12* and <i>22* shows the form attribute. Make sure that its value matches the id of the form!
+<i>Lines 12</i> and <i>22</i> shows the form attribute. Make sure that its value matches the id of the form!
 
 <h3 id="5-5-3">5.5.3 autocomplete</h3>
 
@@ -15983,7 +16007,7 @@ Source code extract:
 13. </form>
 ```
 
-At <i>lines 3* and <i>5*, the value of the list attribute of the input field must match the one of the id of the &lt;datalist&gt; element.
+At <i>lines 3</i> and <i>5</i>, the value of the list attribute of the input field must match the one of the id of the &lt;datalist&gt; element.
 
 <h3 id="ch5-5-6">5.5.6 pattern</h3>
 
@@ -17409,7 +17433,7 @@ We have already studied some of the HTML5 JavaScript APIs, including:
 
 However, HTML5 also comes with several APIs that are not directly related to HTML elements, namely: the Orientation API; the Geolocation API; most APIs related to client-side persistence; the Web Storage API; the Web Workers API; and some other APIs that are not in the HTML5 specification, but are related to it, such as the GamePad API, the Web Audio API, etc.
 
-This week, we will look at some of the most useful APIs. Others will be covered in the [W3C HTML5 Apps and Games course](https://www.edx.org/course/html5-apps-and-games):
+This week, we will look at some of the most useful APIs. Others will be covered in the <a href="https://www.edx.org/course/html5-apps-and-games">W3C HTML5 Apps and Games course</a>:
 <ul>
 <li><b>The "Web Storage" API, sort of "super cookies", for storing pairs of key/values client side.</b> This API is useful for enabling Web sites to save/restore their state, or for writing *serverless* applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.</li>
 <li><b>The File API, that enables Web applications to work with local files</b>. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.</li>
@@ -17564,7 +17588,7 @@ This time, we want the form content to be restored on page load/reload. We will 
 21. }
 ```
 
-The tests at *lines 7, 10, 13*, etc., verify that data has been saved, before trying to restore it. Without these tests, it would put the "undefined" string as the value of input fields with no corresponding data to restore.
+The tests at <i>lines 7, 10, 13</i>, etc., verify that data has been saved, before trying to restore it. Without these tests, it would put the "undefined" string as the value of input fields with no corresponding data to restore.
 
 <h3 id="ch6-2-3">6.2.3 localStorage and sessionStorage</h3>
 
@@ -17788,7 +17812,7 @@ function restorePreferences() {
 function applyGUIvalues() {
    // Check restored input field content to set the size of the rectangle
    var sizeWidget = document.getElementById("size");
-   size = Math.sign(incX)*parseInt(sizeWidget.value);
+   size = Math.sign(incX)parseInt(sizeWidget.value);
    // also update the outline element's value
    document.getElementById("sizeValue").innerHTML = size;
    // Check restored input field content to set the color of the rectangle
@@ -17796,7 +17820,7 @@ function applyGUIvalues() {
    ctx.fillStyle = colorWidget.value;
    // Check restored input field content to set the speed of the rectangle
    var speedWidget = document.getElementById("speed");
-   incX = Math.sign(incX)*parseInt(speedWidget.value);
+   incX = Math.sign(incX)parseInt(speedWidget.value);
    // also update the outline element's value
    document.getElementById("speedValue").innerHTML = Math.abs(incX);
    // Check restored input field content to set the lineWidth of the rectangle
@@ -17807,7 +17831,7 @@ function applyGUIvalues() {
 
 <h3 is="6-2-5">6.2.5 Example 3</h3>
 
-[Online example at JSBin](https://jsbin.com/zowise/edit?html,js,output)
+<a href="https://jsbin.com/zowise/edit?html,js,output">Online example at JSBin</a>
 
 This time, using the setItem and getItem method we saw earlier in the course, we could write some generic functions for saving/restoring input fields' content, without having advance knowledge about the number of fields in the form, their types, their ids, etc.
 
@@ -17838,7 +17862,7 @@ function init() {
 }
 ```
 
-And here is the addInputListener(inputField) function. It takes an input field as parameter and attaches an oninput listener to it, that will save the field's content each time a value is entered. The key will be the id of the input field (*line 3*):
+And here is the addInputListener(inputField) function. It takes an input field as parameter and attaches an oninput listener to it, that will save the field's content each time a value is entered. The key will be the id of the input field (<i>line 3<i>):
 ```
 function addInputListener(inputField) {
     inputField.addEventListener('input', function(event) {
@@ -17847,7 +17871,7 @@ function addInputListener(inputField) {
 }
 ```
 
-Note that at *line 2*, we use addEventListener (that is not using the oninput property here). adddEventListener doesnot replace existing oninput definitions and keep all existing listeners unchanged.
+Note that at <i>line 2<i>, we use addEventListener (that is not using the oninput property here). adddEventListener doesnot replace existing oninput definitions and keep all existing listeners unchanged.
 
 <h4>Restore all input fields' content using a generic function</h4>
 
@@ -17876,7 +17900,7 @@ function restoreFormContent() {
 }
 ```
 
-In this function, we first get the list of input fields (*line 5*), then iterate on it (*line 14*). For each input field, we get its id, which value is the key in localStorage for the previous data saved for this field (*lines 15-16*). Then if the value is not undefined, we restore it by setting the value of the input field (*lines 19-20*).
+In this function, we first get the list of input fields (<i>line 5<i>), then iterate on it (<i>line 14<i>). For each input field, we get its id, which value is the key in localStorage for the previous data saved for this field (<i>lines 15-16<i>). Then if the value is not undefined, we restore it by setting the value of the input field (<i>lines 19-20<i>).
 
 These generic functions can be used in many different projects
 
@@ -18378,7 +18402,7 @@ All these methods take as a unique parameter a File object (for example, a fil
 The above code shows how a file can be read as text. The function is called, for example by clicking on the button corresponding to a <input type="file" id="file"  onchange="readFileContent(this.files)"/>, and by choosing a file.
 <ul>
 <li><i>Line 12</i> is executed first, and asks the Reader object to read the file f as text. As this takes some time, it's an asynchronous operation that will be executed by the browser in the background. When the file is read, the reader.onload callback function is called.</li>
-<li><i>Line 4</i> is executed after *line 12*, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
+<li><i>Line 4</i> is executed after <i>line 12<i>, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
 </ul>
 Try a variation of the above code in your browser, that displays the file content in a text area. This example is detailed further in the course. Click and select a text file below:
 
@@ -18453,7 +18477,7 @@ Let's start by reading a pure text file
 33. </html>
 ```
 
-This example is the one at the end of the previous page. This time, we show the complete source code above. Remember that the instruction at *line 29* is executed first, then when the file is read, the browser will call asynchronously the onload callback at *line 20*.
+This example is the one at the end of the previous page. This time, we show the complete source code above. Remember that the instruction at <i>line 29<i> is executed first, then when the file is read, the browser will call asynchronously the onload callback at <i>line 20<i>.
 
 <h4>Example #2: a variation of the previous one, using multiple files</h4>
 
@@ -18521,7 +18545,7 @@ This time, please select multiple text files (using shift for multiple selection
 
 This example is similar to the previous one, except that this time we read multiple files.
 
-<i>Line 20:</i> this is the for loop that will iterate on the files object passed as parameter by the onchange listener declaration at *line 10.*
+<i>Line 20:</i> this is the for loop that will iterate on the files object passed as parameter by the onchange listener declaration at <i>line 10.<i>
 
 <i>Line 25:</i> instead of declaring the onload listener with a reader.onload =... directly in the loop, this time we preferred to write a separate function that will do this. This technique is useful when you want the listener to work with extra variables computed in the loop (in our case, the name of the file).
 
@@ -18713,7 +18737,7 @@ This first example is useful for forms that allow the user to select one or more
 <h4>Explanations:</h4>
 <ul>
 <li><i>Line 35:</i> starts the reading of the file f. When f is read, the onload callback will be called.</li>
-<li><i>Lines 25-31:</i> we build, using the DOM API, a <span class="thumb">...</span> and inside we add an <img src=the data url> element with its src attribute equal to the url of the image that has been read (the image content as dataURL is in e.target.result). Finally, at *line 31*, we insert the span in the document before the current children of the <output id="list"> element (declared at *line 5*).</li>
+<li><i>Lines 25-31:</i> we build, using the DOM API, a <span class="thumb">...</span> and inside we add an <img src=the data url> element with its src attribute equal to the url of the image that has been read (the image content as dataURL is in e.target.result). Finally, at <i>line 31<i>, we insert the span in the document before the current children of the <output id="list"> element (declared at <i>line 5</i>).</li>
 </ul>
 <h4>Example #2: read a single local image file and use it with drawImage in a canvas</h4>
 
@@ -18729,7 +18753,7 @@ This first example is useful for forms that allow the user to select one or more
 &nbsp;
 <br/>
 
-*Errata*: the above screenshot says "choose multiple files", but the example only works with a single file.
+<i>Errata</i>: the above screenshot says "choose multiple files", but the example only works with a single file.
 
 <h4>Source code extract:</h4>
 
@@ -18766,7 +18790,7 @@ function readFileAndDraw(files) {
 
 <h4>Explanations:</h4>
 
-Remember how we worked with images on a canvas. We had to create an empty image object (*line 8*), set the src attribute of the image object (*line 23*), then use an image.onload callback (*line 15*), and we could only draw from inside the callback (*line 17*). This time, it's exactly the same, except that the URL comes from e.target.result in the reader.onload callback (*line 23*).
+Remember how we worked with images on a canvas. We had to create an empty image object (<i>line 8</i>), set the src attribute of the image object (<i>line 23</i>), then use an image.onload callback (<i>line 15</i>), and we could only draw from inside the callback (<i>line 17</i>). This time, it's exactly the same, except that the URL comes from e.target.result in the reader.onload callback (<i>line 23</i>).
 
 <h4>Example #3 (advanced): an instagram-like photo filter application</h4>
 
@@ -19011,14 +19035,13 @@ watchId=navigator.geolocation.watchPosition(onSuccess, onError,
     {enableHighAccuracy:true, maximumAge:30000, timeout:27000});
 ```
 
-Look for the explanations in the lines of comment.
+<p>Look for the explanations in the lines of comment.</p>
 
 <h3 id="ch6-4-5">6.4.5 Geolocation and maps</h3>
 <p>
 This section presents an example of how to get an interactive map, using <a href="https://leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMap</a>, and gives links to more resources. Did you know that you can even get an estimation of a physical address from the longitude and latitude, using online Web services?
 
-How to get a map centered on your longitude and latitude.
-</p>
+How to get a map centered on your longitude and latitude.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 328. openstreetmap test (444) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19578,4 +19601,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-10-2022 1:28pm</i></b></h3>
+<h3><b><i>08-10-2022 2:06pm</i></b></h3>
