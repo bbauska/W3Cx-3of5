@@ -1444,7 +1444,7 @@ Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-
 <p>Changes have been made to particular elements in HTML5 making it simpler to use. In this section, we will look at some examples highlighting these improvements, including:</p>
 <ul>
 <li>the new doctype definition;</li>
-<li>the fact that the "type" attribute of elements such as <link> or <script> are now optional;</li>
+<li>the fact that the "type" attribute of elements such as <link> or &lt;script&gt; are now optional;</li>
 <li>the syntax constraints that have been relaxed;</li>
 <li>the new structural elements that have been added, etc.</li>
 </ul>
@@ -6700,7 +6700,7 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 
 <h4>Example #1</h4>
 
-[Foot Chinko](https://www.ravalmatic.com/portfolio/footchinko/) is one popular free HTML5 games:
+<p><a href="https://www.ravalmatic.com/portfolio/footchinko/">Foot Chinko</a> is one popular free HTML5 games:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 122. foot chinko one of the best html5 2D game of 2015 (xxx) ------------------->
@@ -6708,12 +6708,12 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 <p align="center" width="100%">
 <img src="./images/image122.jpeg?raw=true"
    width="40%"
-   alt="Foot chinko one of the best html5 2D game of 2015" />
+   alt="Foot chinko one of the best html5 2D game of 2015." />
 </p>
 
 <h4>Example #2</h4>
 
-Lots of data visualization tools and JavaScript libraries use the HTML5 canvas element for [Data visualization](http://www.creativebloq.com/design-tools/data-visualization-712402):
+<p>Lots of data visualization tools and JavaScript libraries use the HTML5 canvas element for <a href="http://www.creativebloq.com/design-tools/data-visualization-712402">Data visualization</a>:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 123. html5 data visualization (xxx) ------------------->
@@ -6726,10 +6726,10 @@ Lots of data visualization tools and JavaScript libraries use the HTML5 canvas e
 
 <h4>Example #3</h4>
 
-A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), that runs at 60 frames per second in an HTML5 canvas element:
+<p>A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), that runs at 60 frames per second in an HTML5 canvas element:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (xxx) ------------------->
+<!------- 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (xxx) -------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image124.jpeg?raw=true"
@@ -6773,23 +6773,23 @@ The dynamic nature of the &lt;canvas&gt; element has made it difficult to use 
 
 <h3 id="ch3-2-4">3.2.4 HTML Canvas Cheatsheet</h3>
 
-We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.org/wiki/Cheat_sheet)) below. Do not hesitate to keep your favorite one open in a separate browser ta
+We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.org/wiki/Cheat_sheet)) below. Do not hesitate to keep your favorite one open in a separate browser tab.
 
 1.  As a [PDF file](https://courses.edx.org/assets/courseware/v1/4b7360cab7f3bf439c26782ec47cf7a8/asset-v1:W3Cx+HTML5.1x+2T2020+type@asset+block/Infopgraphic-CanvasCheatSheet-Final2.pdf), this canvas cheatsheet:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 125. snapshot of an HTML Canvas cheatsheet from skilled.com (xxx) ------------------->
+<!-------------- 125. snapshot of an HTML Canvas cheatsheet from skilled.com (147) --------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image125.png?raw=true"
    width="65%"
-   alt="snapshot of an HTML Canvas cheatsheet from skilled.com." />
+   alt="Snapshot of an HTML Canvas cheatsheet from skilled.com." />
 </p>
 
 2.  Another resource, as an [HTML file](https://simon.html5.org/dump/html5-canvas-cheat-sheet.html):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 126. snapshot of a Canvas cheatsheet API (xxx) ------------------->
+<!----------------------- 126. snapshot of a Canvas cheatsheet API (148) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image126.png?raw=true"
@@ -6825,6 +6825,7 @@ The part is bold is not correct: querySelector, technically, comes from [Selec
 Here are the different steps, in a little more detail, of the example demonstrated in the above video:
 
 <h4>1 - Add the &lt;canvas&gt; element into an HTML page</h4>
+
 ```
 1.  <canvas id="myCanvas" width="300" height="225">
 2.  Fallback content that will be displayed in case the web browser
@@ -6836,8 +6837,7 @@ Here are the different steps, in a little more detail, of the example demonstrat
 <p>Place code similar to the above somewhere in an HTML page. This example defines an area of 300 by 225 pixels on which content can be rendered with JavaScript.
 
 Normally you should see nothing as a result; by default canvases are "transparent". <b>Make it visible using CSS!</b>
-For example, you can add a border to the canvas (or change the background color, or put an image in the background).
-</p>
+For example, you can add a border to the canvas (or change the background color, or put an image in the background).</p>
 <h4>The three lines of CSS will create a border around the canvas with id="myCanvas", of 1 pixel width, in black:</h4>
 
 ```
@@ -6853,11 +6853,13 @@ For example, you can add a border to the canvas (or change the background color,
 We can have more than one &lt;canvas&gt; in a single page, and canvases will be manipulated with JavaScript like other elements in the DOM.
 
 <h4>For example with:</h4>
+
 ```
 1.  var canvas = document.getElementById("myCanvas");
 ```
 
 <h4>... or with the querySelector() method introduced by HTML5, that use the CSS selector syntax for selecting elements:</h4>
+
 ```
 1.  var canvas = document.querySelector("#myCanvas");
 ```
@@ -6869,16 +6871,19 @@ This step is useful for drawing and setting drawing properties (color, etc.)
 Once we have a pointer to the &lt;canvas&gt;, we can get a "context". This particular object is the core of the canvas JavaScript API. It provides methods for drawing, like fillRect(x, y, width, height) for example, that draws a filled rectangle, and properties for setting the color, shadows, gradients, etc.
 </p>
 <h4>So, let's first get the context (do this only once):</h4>
+
 ```
 1.  var ctx=canvas.getContext('2d');
 ```
 
 <h4>... then, set the color for drawing filled shapes:</h4>
+
 ```
 1.  ctx.fillStyle='red';
 ```
 
 <h4>... and draw a filled rectangle:</h4>
+
 ```
 1.  ctx.fillRect(0,0,80,100);
 ```
@@ -6967,11 +6972,11 @@ Your browser does not support the canvas tag.
 
 Only access elements when the DOM is ready:
 
-Notice that we wrote an "init" function (*line 13*) that is called only when the page has been entirely loaded (we say "when the DOM is ready"). There are several ways to do this. In this example we used the <body onload="init();"> method, at *line 29*.
+Notice that we wrote an "init" function (<i>line 13</i>) that is called only when the page has been entirely loaded (we say "when the DOM is ready"). There are several ways to do this. In this example we used the <body onload="init();"> method, at *line 29*.
 
 It's good practice to have such a function, as we cannot access the elements of the page before the page has been loaded entirely and before the DOM is ready.
 
-Another way is to put the JavaScript code at the end of the document (between <script>...</script>), right before the </body>. In this case when the JavaScript code is executed, the DOM has already been constructed.
+Another way is to put the JavaScript code at the end of the document (between &lt;script&gt;...</script>), right before the </body>. In this case when the JavaScript code is executed, the DOM has already been constructed.
 
 Start by getting the canvas and the context:
 
@@ -6983,7 +6988,9 @@ After the context is set, we can draw, but first let's set the current color for
 
 The example shows the use of the fillStyle property at *line 24* - useful for specifying the way shapes will be filled. In our case this line indicates the color of all the filled shapes we are going to draw:
 
+```
 1.  ctx.fillStyle='#FF0000';
+```
 
 The context property named fillStyle is used here. This property can be set with a color, a gradient, or a pattern. We will see examples of these later on in the course.
 
@@ -6991,18 +6998,20 @@ The example says that all filled shapes will use the color "#FF0000", which cor
 
 Then we can draw:
 
+```
 1.  ctx.fillRect(0,0,80,100);
+```
 
 This line is a call to the method fillRect(top left X coordinate, top left Y coordinate, width, height), which draws a filled rectangle.
 
 The way the rectangle will be filled depends on the current value of several properties of the context, in particular the value of the fillStyle property. So, in our case, the rectangle will be red.
 
-<h4>Summary of the different steps
+<h4>Summary of the different steps</h4>
 
 1.  Declare the canvas, remembering to add an id attribute, and fallback content:  
-    <canvas id="myCanvas" width="200" height="200">
+    &lt;canvas id="myCanvas" width="200" height="200"&gt;
     ...fallback content...
-    </canvas>
+    &lt;/canvas&gt;
 
 2.  Get a reference to the canvas in a JavaScript variable using the DOM API:
     var canvas=document.getElementById('myCanvas');
@@ -7018,15 +7027,17 @@ The way the rectangle will be filled depends on the current value of several pro
 
 <h3 id="ch3-2-7">3.2.7 Drawing Principles</h3>
 
-<h4>More about the "context" object
+<h4>More about the "context" object</h4>
 
 Before we go on, we should take some time to clarify the way we draw on HTML5 canvases. We already mentioned that we use a graphic context for all the main operations. Whenever a shape, a text, or an image is drawn, the current values of the different properties of the graphic context are taken into account. Some are relevant only for certain kinds of shapes or drawing modes, but you must be aware that it is always the current values of these drawing properties that are used.
 
 Later on we'll see that there are ways to save and restore this whole set of values, but for now, let's examine in greater detail some of the properties and methods we've already encountered, and introduce new ones.
 
-<h4>More about properties and methods of the context object
+<h4>More about properties and methods of the context object</h4>
 
--   <h4> fillStyle is a property of the context, similar in a way to a CSS property
+```
+-   <h4>fillStyle is a property of the context, similar in a way to a CSS property
+```
 
 Its value can be one of the following:
 
@@ -7042,7 +7053,9 @@ Note that we will study in detail how to use colors, gradients and patterns late
 
 fillStyle and the other context properties can be considered to be "global variables" of the context.
 
+```
 -   <h4> fillRect(x, y, width, height):  a call to this method draws a filled rectangle
+```
 
 The two first parameters are the coordinates of the top left corner of the rectangle. This method uses the current value of the fillStyle property to determine how to fill the rectangle.
 
@@ -7053,12 +7066,22 @@ The two first parameters are the coordinates of the top left corner of the recta
 
 Produces this result:
 
-![filled rectangle with pink color](./images/image128.jpeg){width="2.59375in" height="2.5833333333333335in"}
+<!------------------------------------------------------------------------------------------------>
+<!------ 128. filled rectangle with pink (xxx) ---->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image128.jpeg?raw=true"
+   width="25%"
+   alt="Filled rectangle with pink." />
+</p>
 
+```
 -   <h4> strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape's outline should be rendered
+```
 
 The possible values are the same as those for the fillStyle property: a color, a pattern, or a gradient. This property will be taken into account when wireframe shapes are drawn.
 
+```
 -   <h4> strokeRect(x, y, width, height): like fillRect(...), but instead of drawing a filled rectangle the rectangle is drawn in wireframe mode
 ```
 1.  ctx.strokeStyle='blue';
@@ -7066,7 +7089,14 @@ The possible values are the same as those for the fillStyle property: a color,
 ```
 ... gives this result:
 
-![stroked rectangle - border is in blue](./images/image129.jpeg){width="2.5833333333333335in" height="2.6041666666666665in"}
+<!------------------------------------------------------------------------------------------------>
+<!------ 129. stroked rectangle - border in blue (xxx) ---->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image129.jpeg?raw=true"
+   width="25%"
+   alt="Stroked rectangle - border in blue." />
+</p>
 
 Only the outline of the rectangle will be drawn, and it will be drawn using the value of the strokeStyle property.
 
@@ -8803,13 +8833,14 @@ ctx.restore();
 </html>
 ```
 
-This example shows:
+<h4>This example shows:</h4>
 <ul>
 <li>a &lt;video&gt; element on top, and four images drawn in a canvas below.</li>
 <li>The images are drawn every XXX milliseconds using the setInterval(function, delay) method.</li>
 </ul>
 
 <h4>Source code extract:</h4>
+
 ```
 1.  <script>
 2.     var video;
@@ -13224,6 +13255,7 @@ Let's see next how to deal with the keyboard and the mouse. In the <a href="htt
 <h3 id="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
 
 When you listen to keyboard related events (keydown, keyup or keypressed), the event parameter passed to the listener function will contain the code of the key that fired the event. Then it is possible to test what key has been pressed or released, like this:
+
 ```
 1.  window.addEventListener('keydown', function(event) {
 2.     if (<b>event.keyCode === 37</b>) {
@@ -13231,7 +13263,8 @@ When you listen to keyboard related events (keydown, keyup or keypressed), th
 4.     }
 5.  }, false);
 ```
-At *line 2*, the value "37" is the key code that corresponds to the left arrow. It might be difficult to know the correspondences between real keyboard keys and codes, so here are handy pointers:
+
+At <i>line 2<i>, the value "37" is the key code that corresponds to the left arrow. It might be difficult to know the correspondences between real keyboard keys and codes, so here are handy pointers:
 
 -   Try key codes with this [interactive test page](http://www.asquare.net/javascript/tests/KeyCode.html)
 
@@ -13738,7 +13771,7 @@ cancelAnimationFrame(requestId);
 27. };
 ```
 
-The third parameter (false) of *lines 12* and *13* means "we do not want to propagate the event to the ancestors of the canvas in the DOM." 
+The third parameter (false) of <i>lines 12<i> and <i>13<i> means "we do not want to propagate the event to the ancestors of the canvas in the DOM." 
 
 <h3 id="ch4-3-3">4.3.3 Mouse Interaction, Mouse Events</h3>
 
@@ -13772,7 +13805,7 @@ There are other events related to the mouse:
 
 -   mouseleave: similar to mouseout, fired when the mouse leaves the surface of the element. The difference between mouseleave and mouseout is that mouseleave does not fire when the cursor moves over descendant elements, and mouseout is fired when the element moved is outside of the bounds of the original element or is a child of the original element.
 
--   mouseover: the mouse cursor is moving over the element that listens to that event. A mouseover event occurs on an element when you are over it - *coming from either its child OR parent element*, but a mouseenter event only occurs when the mouse *moves from the parent element to the child element*.
+-   mouseover: the mouse cursor is moving over the element that listens to that event. A mouseover event occurs on an element when you are over it - <i>coming from either its child OR parent element<i>, but a mouseenter event only occurs when the mouse <i>moves from the parent element to the child element<i>.
 
 -   mousedown: fired when a mouse button is pressed.
 
@@ -14141,7 +14174,7 @@ function handleMouseMove(evt) {
 </script>
 ```
 
-We had to define a variable started=false; as we cannot draw any line before the mouse moved (we need at least two consecutive positions). This is done in the test at *line 21*.
+We had to define a variable started=false; as we cannot draw any line before the mouse moved (we need at least two consecutive positions). This is done in the test at <i>line 21<i>.
 
 <h4>Example #3: same as example #2 but we draw only when a mouse button is pressed</h4>
 
@@ -14195,7 +14228,7 @@ Resizing a canvas can be tricky if we don't know a few rules that might not be 
 
 -   Changing the width or height property of a canvas in JavaScript erases its content and resets its context,
 
--   Using percentages (%) in the CSS width and height properties of a canvas *does not change its number of pixels/resolution*[.] Instead, it scales the existing pixels without erasing the content, giving a blurry effect when a canvas becomes larger, for example.
+-   Using percentages (%) in the CSS width and height properties of a canvas <i>does not change its number of pixels/resolution<i>[.] Instead, it scales the existing pixels without erasing the content, giving a blurry effect when a canvas becomes larger, for example.
 
 Before looking at how best to handle canvas resizing, let's see some examples below:
 
@@ -14365,7 +14398,7 @@ See the complete example that corresponds to the above code:
 
 When the canvas is resized, its width became smaller than the monster's size. We <b>scale</b> down the monster (using ctx.scale!)
 
-The code is very similar to the previous example, we just replaced drawDiagonals() by drawMonster(...), and we added a test in the drawMonster(...) function for scaling the monster if it's bigger than the canvas width (look at *lines 10-16*), this is a common trick:
+The code is very similar to the previous example, we just replaced drawDiagonals() by drawMonster(...), and we added a test in the drawMonster(...) function for scaling the monster if it's bigger than the canvas width (look at <i>lines 10-16<i>), this is a common trick:
 
 ```
 1.  function drawMonster(x, y, angle, headColor, eyeColor) {
@@ -14543,7 +14576,7 @@ Since HTML5 provides functionalities to assist with accessibility, developers sh
 
 1.  For every form field, ensure that a descriptive label is provided and use the <label> element to identify each form control.
 
-2.  For larger or complex forms, use the <fieldset> and <legend> elements to respectively group and associate</b> related form controls.
+2.  For larger or complex forms, use the &lt;fieldset&gt; and <legend> elements to respectively group and associate</b> related form controls.
 
 Examples for each of these two basic guidelines are given in the following pages.
 
@@ -14640,6 +14673,7 @@ The label of a <button> element is set inside the element and can include mark
 When using the <input> element to create buttons, the label is set in the value attribute of the element. Example: <input type="submit" value="Please submit">, renders a button.
 
 <h4>Source code for the "Submit" and "Cancel" buttons example:</h4>
+
 ```
 1.  <button type="submit">Submit</button>
 2.  <button type="button">Cancel</button>
@@ -14648,12 +14682,14 @@ When using the <input> element to create buttons, the label is set in the val
 5.  <input type="button" value="Cancel">
 ```
 
-These give the same results:
+<h4>These give the same results:</h4>
 
-*Lines 1 and 2* render as:
+<i>Lines 1 and 2</i> render as:
+
 Submit Cancel
 
-... while li*nes 3 and 4* render as:
+... while <i>lines 3 and 4</i> render as:
+
 ![](./images/image220.wmf) 
 
 <h4>Labeling text areas</h4>
@@ -14662,6 +14698,7 @@ Enter your address:
 ![](./images/image221.wmf)
 
 <h4>Source code:</h4>
+
 ```
 1.  <label for="address">Enter your address:</label><br> <textarea id="address" name="addresstext"></textarea>
 ```
@@ -14672,11 +14709,11 @@ Groupings of form controls, typically groups of related checkboxes and radio but
 
 <h4>Associating related controls with fieldset</h4>
 
-Grouping needs to be carried out visually and in the code, for example, by using the <fieldset> and <legend> elements to associate related form controls. The <fieldset> identifies the entire grouping and <legend> identifies the grouping's descriptive text.
+Grouping needs to be carried out visually and in the code, for example, by using the &lt;fieldset&gt; and <legend> elements to associate related form controls. The &lt;fieldset&gt; identifies the entire grouping and <legend> identifies the grouping's descriptive text.
 
 <h4>Example #1: radio buttons</h4>
 
-In the example below, there are three radio buttons that allow the user to choose an output format. Radio button groups should always be grouped using <fieldset>.
+In the example below, there are three radio buttons that allow the user to choose an output format. Radio button groups should always be grouped using &lt;fieldset&gt;.
 
 Output format:
 
@@ -14722,6 +14759,7 @@ I want to receive
 Bottom of Form
 
 <h4>Source code:</h4>
+
 ```
 1.  <fieldset>
 2.  <legend>I want to receive</legend>
@@ -15791,7 +15829,7 @@ In another part of the course, about form validation and visual feedback using 
 
 <h3 id="ch5-5-2">>5.5.2 form</h3>
 
-This attribute is useful for putting input fields outside the form itself. The form attribute of an external input field must share the same value as the id of the form the field belongs to. This is useful when using <fieldset> elements for making the page/form layout easier.
+This attribute is useful for putting input fields outside the form itself. The form attribute of an external input field must share the same value as the id of the form the field belongs to. This is useful when using &lt;fieldset&gt; elements for making the page/form layout easier.
 
 <h4>Typical use</h4>
 <p>
@@ -16334,15 +16372,15 @@ The second example shows a form with two submit buttons:
 &nbsp;
 <br/>
 
-### 5.5.11 formnovalidate
+<h3 id="ch5-5-11">5.5.11 formnovalidate</h3>
 
 The formnovalidate attribute is targeted to the <input type="submit"> input fields. This attribute is rarely used, so there will be no questions about it in the end of the week's exercises.
 
-This atrribute allows the submission of a form even if it contains  *invalid* fields. For example:  a form that has an <input type="email"> field or a field required and which are not filled. 
+This atrribute allows the submission of a form even if it contains <i>invalid</i> fields. For example: a form that has an &lt;input type="email"&gt; field or a field required and which are not filled. 
 
 In general, such forms have two submit buttons, one with the formnovalidate attribute set to a non null value and one without.
 
-Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,output)):
+Typical use (<a href="https://jsbin.com/doceje/1/edit?html,output">online example at JSBin</a>):
 
 ```
 1.  <form action="form.php">
@@ -16383,7 +16421,7 @@ This attribute's value indicates where the response from the form submission sho
 
 <h4>Complete example</h4>
 
-[Online example at JSBin ](https://jsbin.com/godice/2/edit?html,output)or try it in your browser below:
+<p><a href="https://jsbin.com/godice/2/edit?html,output">Online example at JSBin</a> or try it in your browser below:</p>
 
 Top of Form
 
@@ -16421,45 +16459,34 @@ Family name: ![](./images/image269.wmf)
 
 The enctype attribute existed before HTML5. It is often used together with forms that contain file input fields. For sending files to a remote server, we use <b>"*multipart*" forms</b>. This special encoding of forms needs to be specified using the enctype attribute, as shown in the example below:
 
-[Online example at JSBin](https://jsbin.com/magexat/3/edit?html,output):
+<a href="https://jsbin.com/magexat/3/edit?html,output">Online example at JSBin</a>:
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.    <head>
-
 4.      <meta charset="utf-8">
-
 5.      <title>Jsbin</title>
-
 6.    </head>
-
 7.    <body>
-
 8.      <form action="default.php" method="post" enctype="multipart/form-data">
-
 9.        Given name: <input type="text" name="gname"><br>
-
 10.       Family name: <input type="text" name="fname"><br>
-
 11.       <input type="submit" value="Submit">
-
 12.     </form>
-
 13.   </body>
-
 14. </html>
+```
 
 Note that when you send form content using Ajax, this attribute is not needed, as you will specify the type of data sent to the remote server in JavaScript, using the [FormData object](https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects).
 
-### As an attribute of the <input type="submit" enctype=...> element
+<h4>As an attribute of the &lt;input type="submit" enctype=...&gt; element</h4>
 
-Since HTML5, this attribute can also be used in <input type="submit"> input fields.
+Since HTML5, this attribute can also be used in &lt;input type="submit"&gt; input fields.
 
-If an <input type="submit"> field has this attribute, then, <b>when submitted using method=POST</b>, the browser will send the form content encoded with the method specified by the formenctype attribute. And this overrides the value of the enctype attribute specified in the <form enctype=...> element (or its default value, if not present).
+If an &lt;input type="submit"&gt; field has this attribute, then, <b>when submitted using method=POST</b>, the browser will send the form content encoded with the method specified by the formenctype attribute. And this overrides the value of the enctype attribute specified in the <form enctype=...> element (or its default value, if not present).
 
-### Typical use
+<h4>Typical use:</h4>
 
 ```
 1.  <form action="defaultAction.php">
@@ -16554,7 +16581,7 @@ And if you start again and click on the left submit button, the one without the 
 +===========================================+===================================+
 | -   &lt;form&gt;                              | -   &lt;datalist&gt;                  |
 |                                           |                                   |
-| -   <fieldset>                          | -   <output>                    |
+| -   &lt;fieldset&gt;                          | -   <output>                    |
 |                                           |                                   |
 | -   <legend>                            | -   <meter>                     |
 |                                           |                                   |
