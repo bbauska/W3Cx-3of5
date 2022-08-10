@@ -4738,7 +4738,7 @@ Please see this example online, originally written by <a href="https://christia
 <ul>
 <li>It uses the HTML5 elements &lt;nav&gt;, &lt;footer&gt;, &lt;header&gt;.</li>
 <li>It shows the use of CSS3 2D transformations (scale, translate, and rotate).</li>
-<li>It shows how to handle DOM events using JavaScript and how to modify CSS properties of the <video> element from JavaScript.</li>
+<li>It shows how to handle DOM events using JavaScript and how to modify CSS properties of the &lt;video&gt; element from JavaScript.</li>
 </ul>
 
 <h4>Example #2: how to track all possible events and manipulate many properties</h4>
@@ -5292,7 +5292,7 @@ It is possible to locate the cues in the video viewport using absolute or relati
 
 <h4>Use of &lt;b&gt;, &lt;i&gt;, &lt;u&gt; for styling subtitles / captions</h4>
 
-<p>One can use the HTML elements  <b>, <i>, <u> to modify the rendering of subtitles and captions, as illustrated in the example below:</p>
+<p>One can use the HTML elements &lt;b&gt;, &lt;i&gt;, &lt;u&gt; to modify the rendering of subtitles and captions, as illustrated in the example below:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 93. Use of <b>, <i>, <u> for styling subtitles / captions (113) --------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5306,7 +5306,7 @@ It is possible to locate the cues in the video viewport using absolute or relati
 <h4>Using CSS classes for styling</h4>
 
 <p>It is possible to style using CSS classes as part of a cue value, using the &lt;c&gt; element. You can specify the CSS class that should be applied by adding "." followed by the name of your CSS class. Here is an example:</p>
-<ol type="1">
+<ol type="1" start="1">
 <li>&lt;c.myclass&gt;This cue contains the class "myclass".</li>
 <li>Browsers that support ::cue CSS should make it red.&lt;/c&gt;</li>
 </ol>
@@ -5344,7 +5344,7 @@ Support differs from one browser to another, see <a href="https://caniuse.com/#
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image095.png?raw=true"
-   alt=""
+   alt="Example shows voices of different characters in different colors."
    width="65%">
 &nbsp;
 <br/>
@@ -5378,7 +5378,7 @@ Adding chapters is very similar to adding subtitles/captions. Look at <i>line 5
 
 <p>Here is an example of WebVTT files with defined chapters. Each "CUE" at <i>lines 3, 7, 11</i>, ... can bear any name. We use "Chapter 1, Chapter 2, Ending, etc." but you are free to name them as you wish.
 
-What makes them special is that the track has an attribute kind="chapters". 
+What makes them special is that the track has an attribute kind="chapters".
 
 Often, the &lt;video&gt; elements rendered in standard browsers ignore chapters, but enhanced HTML5 players take them into account, and it's not much of a stretch to make your own enhanced player with a nice chapter presentation, as we'll see in a more advanced chapter of this course.  For example, we'll generate a custom navigation menu, using the &lt;track&gt; JavaScript API (explained later in this section).</p>
 
@@ -5415,7 +5415,7 @@ Often, the &lt;video&gt; elements rendered in standard browsers ignore chapters,
 <p>An example of what you can achieve using chapters, using the <a href="https://www.jwplayer.com/">JW Player</a>:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 96. using the jw player (115) --------------------------------->
+<!-------------------------------- 96. using the jw player (116) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image096.png?raw=true"
@@ -5459,7 +5459,7 @@ The &lt;track&gt; element comes with a powerful API that is used to develop 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image097.jpeg?raw=true"
-   alt="navigation menu using the track javascript api"
+   alt="Navigation menu using the track javascript api."
    width="65%">
 &nbsp;
 <br/>
@@ -5864,6 +5864,7 @@ el.classList.add(effect);
 ```
 
 <h4>CSS</h4>
+
 ```
 #output {
 width: 307px;
@@ -5911,6 +5912,7 @@ filter: invert(1)
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -5934,9 +5936,17 @@ Click the button "start webcam at the end of this page, then click on the video 
 
 <h4>Taking a snapshot from the live Webcam stream</h4>
 
-The trick is to copy and paste the current image from the video stream into a <canvas> element.
+The trick is to copy and paste the current image from the video stream into a &lt;canvas&gt; element.
 
-
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 109.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image109.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
 ![](media/image109.png){width="6.5in" height="2.0909722222222222in"}
 
 
@@ -19543,4 +19553,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-09-2022 8:33am</i></b></h3>
+<h3><b><i>08-10-2022 11:03am</i></b></h3>
