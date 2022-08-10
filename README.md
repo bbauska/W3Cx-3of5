@@ -1154,7 +1154,7 @@ Since the very beginning, HTML has had heading elements: &lt;h1&gt;...&lt;h6&gt
 
 <h6>This is a H6 heading</h6>
 <p>
-These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. 
+These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define <i>an outline of the document</i>. To illustrate this, we have used a browser extension. 
 
 Here is the result for the previous example:</p>
 
@@ -3442,7 +3442,7 @@ Using the translate="no" attribute should prevent this behavior...</p>
 
 Adding microdata to Web pages helps search engines to better understand the pages' content, their topics, etc. The main purpose of microdata is <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">Search Engine Optimization</a>(SEO).
 
-This information is not visible to humans: it is pure *semantic information*. Popular kinds of microdata are events, a person's profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. </p>
+This information is not visible to humans: it is pure <i>semantic information</i>. Popular kinds of microdata are events, a person's profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. </p>
 
 <h4>Quick example of microdata that describes a person</h4>
 
@@ -4494,7 +4494,7 @@ This will create a complete video player for the file "video.mp4", with control 
 &nbsp;
 <br/>
 <p>
-Note that in order to play the video, you must click on the "vid.play()" text. To pause it, you click on the "vid.pause()" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
+Note that in order to play the video, you must click on the "vid.play()" text. To pause it, you click on the "vid.pause()" text, and so on. <i>Notice the text at the top of the video, as well as the transparency.</i> The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
 </p>
 <p><b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let's see a little more of what we can do using the JavaScript API of the &lt;video&gt; element (it will be an identical approach for the &lt;audio&gt; element, since it shares the same API by a very small margin).</p>
 
@@ -5322,6 +5322,7 @@ It is possible to locate the cues in the video viewport using absolute or relati
 <br/>
 
 <h4>CSS rules used in this example:</h4>
+
 ```
 1.  <style type="text/css">
 2.       ::cue(.myclass) { color: red; }
@@ -5379,7 +5380,7 @@ Adding chapters is very similar to adding subtitles/captions. Look at <i>line 5
 
 What makes them special is that the track has an attribute kind="chapters". 
 
-Often, the <video> elements rendered in standard browsers ignore chapters, but enhanced HTML5 players take them into account, and it's not much of a stretch to make your own enhanced player with a nice chapter presentation, as we'll see in a more advanced chapter of this course.  For example, we'll generate a custom navigation menu, using the &lt;track&gt; JavaScript API (explained later in this section).</p>
+Often, the &lt;video&gt; elements rendered in standard browsers ignore chapters, but enhanced HTML5 players take them into account, and it's not much of a stretch to make your own enhanced player with a nice chapter presentation, as we'll see in a more advanced chapter of this course.  For example, we'll generate a custom navigation menu, using the &lt;track&gt; JavaScript API (explained later in this section).</p>
 
 <h4>Example of a WebVTT file that defines chapters:</h4>
 
@@ -5433,7 +5434,7 @@ Often, the <video> elements rendered in standard browsers ignore chapters, but e
 <li>Enhanced HTML5 video players that use the &lt;video&gt;, &lt;source&gt; and &lt;track&gt; elements under the hood. They also provide many extra features, including support for subtitle/caption formats other than WebVTT (by converting on the fly).</li>
 </ul>
 
-We do not claim that these are the best tools, so feel free to share your discoveries in the discussion forum!
+<p>We do not claim that these are the best tools, so feel free to share your discoveries in the discussion forum!</p>
 
 <h3 id="ch2-3-7">2.3.7 The &lt;track&gt; JavaScript API</h3>
 
@@ -5450,7 +5451,7 @@ The &lt;track&gt; element comes with a powerful API that is used to develop 
 
 <h4>Examples of use</h4>
 
-<h4> Example #1: add a navigation menu to start playing the video at given chapters</h4>
+<h4>Example #1: add a navigation menu to start playing the video at given chapters</h4>
 
 <p>This example shows a video with an enhanced progress bar that displays the different chapters as small "clickable" squares. Furthermore, using the JavaScript API of the &lt;track&gt; element, this Web site builds a navigation menu (on the right of the video):</p>
 <!------------------------------------------------------------------------------------------------>
@@ -5495,9 +5496,9 @@ Some JavaScript code listens to the ontimeupdate event while the video is play
 
 <h3 id="ch2-3-8">2.3.8 Enhanced HTML5 Video Players</h3>
 
-There are numerous "enhanced" video players; most are free and open source, some are commercial. They offer lots of features, which are listed below. Not all of these features are available in every player, this list just illustrates what can be added to the standard <video> element. 
+<p>There are numerous "enhanced" video players; most are free and open source, some are commercial. They offer lots of features, which are listed below. Not all of these features are available in every player, this list just illustrates what can be added to the standard <video> element. 
 
-We call them "HTML5 enhanced video players" because on top of being based on the <video> element, they come with custom features, custom look'n'feel, chapters, etc., based on a JavaScript API that makes such customization possible.
+We call them "HTML5 enhanced video players" because on top of being based on the <video> element, they come with custom features, custom look'n'feel, chapters, etc., based on a JavaScript API that makes such customization possible.</p>
 
 <h4>Accessible players</h4>
 
@@ -5532,7 +5533,7 @@ We call them "HTML5 enhanced video players" because on top of being based on the
 <p>Open source, and made for developers, <a href="https://videojs.com/">video.js</a> comes with many plugins (chapters, thumbnails etc.).</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 100. make your player yours (119) ------------------------------->
+<!------------------------------ 100. make your player yours (120) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image100.png?raw=true"
@@ -5557,7 +5558,7 @@ Popular players such as <a href="https://www.jwplayer.com/">JWPlayer</a> have 
 <h4>Scrub Bar thumbnails (JWPlayer)</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 101. scrub bar thumbnailes (120) -------------------------------->
+<!------------------------------ 101. scrub bar thumbnailes (121) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image101.jpeg?raw=true"
@@ -5569,7 +5570,7 @@ Popular players such as <a href="https://www.jwplayer.com/">JWPlayer</a> have 
 <h4>Custom look'n'feel and logo (Sublime video player):</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 102. custom look and feel and logo (120) ---------------------------->
+<!-------------------------- 102. custom look and feel and logo (121) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image002.jpeg?raw=true"
@@ -5581,7 +5582,7 @@ Popular players such as <a href="https://www.jwplayer.com/">JWPlayer</a> have 
 <h4>Chapters and chapter thumbnails (JWPlayer):</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 103. chapters and chapter thumbnails (120) --------------------------->
+<!------------------------- 103. chapters and chapter thumbnails (121) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image103.png?raw=true"
@@ -5593,7 +5594,7 @@ Popular players such as <a href="https://www.jwplayer.com/">JWPlayer</a> have 
 <h4>PayPal accessible player:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 104. paypal accessible player (121) ------------------------------>
+<!----------------------------- 104. paypal accessible player (122) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image104.png?raw=true"
@@ -5602,10 +5603,10 @@ Popular players such as <a href="https://www.jwplayer.com/">JWPlayer</a> have 
 &nbsp;
 <br/>
 
-LeanBack (says "free for non-commercial use", licensing is not very clear...):
+<h4>LeanBack (says "free for non-commercial use", licensing is not very clear...):</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 105. leanback player (121) ----------------------------------->
+<!--------------------------------- 105. leanback player (122) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image105.png?raw=true"
@@ -5680,22 +5681,22 @@ startWebCam();
 </script>
 ```
 
-<b>HTTPS is mandatory:<b> for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.
+<p><b>HTTPS is mandatory:<b> for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.
 
-Support of getUserMedia/stream is [very good in all modern browsers](https://caniuse.com/stream), including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.
+Support of getUserMedia/stream is <a href="https://caniuse.com/stream">very good in all modern browsers</a>, including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.</p>
 
 <h3 id="ch2-4-1">2.4.1 More On getUserMedia</h3>
 
-Let's see some more examples of what we can do with the getUserMedia API: start/stop the Webcam, take a screenshot from the current video stream from the Webcam, and apply CSS effects in real time. Below, we give links to some cool examples available on the Web.
+<p>Let's see some more examples of what we can do with the getUserMedia API: start/stop the Webcam, take a screenshot from the current video stream from the Webcam, and apply CSS effects in real time. Below, we give links to some cool examples available on the Web.</p>
 
 <h4>How to stop/release the Webcam</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 107.  (xx) ------------------------------->
+<!------------------- 107. resizing image of michel buffa using webcam (123) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image107.jpeg?raw=true"
-   alt="Resulting image of Michel Buffa using his WebCam, with two custom controls below"
+   alt="Resulting image of Michel Buffa using his WebCam, with two custom controls below."
    width="35%">
 &nbsp;
 <br/>
@@ -5738,9 +5739,10 @@ webcamStream.getTracks()[1].stop(); // video
 </html>
 ```
 
-In order to stop the Webcam and make the hardware "unlock it", you need to call the stop() method of the video stream.
+<p>In order to stop the Webcam and make the hardware "unlock it", you need to call the stop() method of the video stream.</p>
 
-Code source:
+<h4>Code source:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -5783,16 +5785,13 @@ Code source:
 ```
 
 <h4>Explanations:</h4>
-
--   *Lines 11-13*: we call navigator.getUserMedia. The parameters indicate that we want to capture the video and the audio from the current device (default Webcam). The call to getUserMedia returns an ES6 promise: the then(stream) method that follows.
-
--   *Line 14:* the then(stream) method is called in case of success and gets the current audio/video stream as parameter. This is passed by the browser to your JavaScript code. 
-
--   *Lines 15-19*: The *line 16 *sets the audio/video stream of the default Webcam to the srcObject attribute of the video element, while *line 18* starts displaying it in the video player (there can be more than one Webcam, we'll see how to select one in particular next). *Line 19* stores the stream in a global variable so that we can use it from another function (for stopping/starting the Webcam...)
-
--   *Lines 19-23* define the catch method called in case of error (it could be that the Webcam cannot be accessed, or authorizations have not been granted).
-
--   *Lines 25-27*: a function for stopping the Webcam. We use the global variable webcamStream here, that has been initialized when we started using the Webcam in *line 19*. We have to stop separately the audio and the video streams.
+<ul>
+<li><i>Lines 11-13</i>: we call navigator.getUserMedia. The parameters indicate that we want to capture the video and the audio from the current device (default Webcam). The call to getUserMedia returns an ES6 promise: the then(stream) method that follows.</li>
+<li><i>Line 14:</i> the then(stream) method is called in case of success and gets the current audio/video stream as parameter. This is passed by the browser to your JavaScript code.</li>
+<li><i>Lines 15-19</i>: The <i>line 16</i> sets the audio/video stream of the default Webcam to the srcObject attribute of the video element, while <i>line 18</i> starts displaying it in the video player (there can be more than one Webcam, we'll see how to select one in particular next). <i>Line 19</i> stores the stream in a global variable so that we can use it from another function (for stopping/starting the Webcam...)</li>
+<li><i>Lines 19-23</i> define the catch method called in case of error (it could be that the Webcam cannot be accessed, or authorizations have not been granted).</li>
+<li><i>Lines 25-27</i>: a function for stopping the Webcam. We use the global variable webcamStream here, that has been initialized when we started using the Webcam in <i>line 19</i>. We have to stop separately the audio and the video streams.</li>
+</ul>
 
 <h4>Other examples that mix what we've seen in previous chapters, but this time with a live video stream</h4>
 
@@ -6043,7 +6042,7 @@ The image below is taken from [one of the demonstrations](https://webaudiodemos
 
 <h3>2.4.4 Webcam Resolution</h3>
 
-It is possible to set "hints" for the preferred cam/resolution during video capture. This is done by using a ["constraint" object ](https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4)that is passed as a parameter to the getUserMedia(...) method. It's just the same object we passed in the basic example: navigator.getUserMedia(**{video:true}**, success, error) except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.
+It is possible to set "hints" for the preferred cam/resolution during video capture. This is done by using a ["constraint" object ](https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4)that is passed as a parameter to the getUserMedia(...) method. It's just the same object we passed in the basic example: navigator.getUserMedia(<b>{video:true}</b>, success, error) except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.
 
 For more information, this [article on MDN about the getUserMedia API](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) gives great examples on how to set the camera resolution and/or to choose the front or back camera when using a mobile phone.  
 
@@ -6197,14 +6196,15 @@ Code source extract related to the "constraint" object which specifies the desir
 
 <h4>How to check which resolutions are supported by a browser?</h4>
 
-Use this [Web app that ](https://webrtchacks.github.io/WebRTC-Camera-Resolution/)systematically tests a set of "preferred resolutions" and compared them to the actual resolutions returned by the browser. Remember that the requested resolution is a hint, and there is no real guarantee that your configuration will allow it.
+<p>Use this <a href="https://webrtchacks.github.io/WebRTC-Camera-Resolution/">Web app that</a> systematically tests a set of "preferred resolutions" and compared them to the actual resolutions returned by the browser. Remember that the requested resolution is a hint, and there is no real guarantee that your configuration will allow it.</p>
 
 <h4>Selecting the front or rear camera on smartphones</h4>
 
-Here are some other constraints you can set. In particular, look at the ones for selecting the front or rear camera (smartphones):
+<p>Here are some other constraints you can set. In particular, look at the ones for selecting the front or rear camera (smartphones):</p>
+
 ```
-1.  **// more on video resolution**
-2.  **constraints = {**
+1.  <b>// more on video resolution</b>
+2.  <b>constraints = {</b>
 3.      video: {
 4.          width: { min: 1024,** ideal: 1280**, max: 1920 },
 5.         height: { min: 776,** ideal: 720**, max: 1080 }
@@ -6230,8 +6230,9 @@ Here are some other constraints you can set. In particular, look at the ones for
 ```
 
 <h4>Select input/output for audio and video streams</h4>
-
--   Resource: [WebRTC samples: Select sources & outputs](https://webrtc.github.io/samples/src/content/devices/input-output/)
+<ul>
+<li>Resource: <a href="https://webrtc.github.io/samples/src/content/devices/input-output/">WebRTC samples: Select sources & outputs</a></li>
+</ul>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 113. webapp for selecting audio and video input/output (xxx) ------------------->
@@ -6242,7 +6243,8 @@ Here are some other constraints you can set. In particular, look at the ones for
    alt="webapp for selecting audio and video input/output" />
 </p>
 
-Source code extract:
+<h4>Source code extract:</h4>
+
 ```
 1.  function gotDevices(deviceInfos) {
 2.      for (var i = 0; i !== deviceInfos.length; ++i) {
@@ -6268,9 +6270,9 @@ Source code extract:
 
 <h3 id="ch2-4-5">2.4.5 The MediaRecorder API</h3>
 
-This MediaRecoredr API allows to record / capture the audio or video stream. There are many sources for audio or video streams, but we will only consider here the streams coming from a WebCam or a sound input (i.e. microphone).
+<p>This MediaRecoredr API allows to record / capture the audio or video stream. There are many sources for audio or video streams, but we will only consider here the streams coming from a WebCam or a sound input (i.e. microphone).
 
-For example, the MediaRecorder API is used to record the video stream from a WebCam as a file saved on the hard disk. Below is a screenshot of an application allowing to record the WebCam. You will be able to run this example a little further, but for security reasons, it cannot run directly in this Web page.
+For example, the MediaRecorder API is used to record the video stream from a WebCam as a file saved on the hard disk. Below is a screenshot of an application allowing to record the WebCam. You will be able to run this example a little further, but for security reasons, it cannot run directly in this Web page.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 114. Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element (xxx) ------------------->
@@ -6448,7 +6450,7 @@ margin: 0 10px 10px 0;
 </html>
 ```
 
-Click "start recording", then press the play button on the video element on the right of the app. You can also click the "download" button to download a .webm file, playable offline with a media player such as [VLC](https://www.videolan.org/) or online in a Web page with the <video> element.
+<p>Click "start recording", then press the play button on the video element on the right of the app. You can also click the "download" button to download a .webm file, playable offline with a media player such as <a href="https://www.videolan.org/">VLC</a> or online in a Web page with the &lt;video&gt; element.</p>
 
 <h4>Five steps are needed to use the mediaRecorder object</h4>
 
