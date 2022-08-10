@@ -4223,11 +4223,11 @@ This is a trendy way of displaying videos.
 
 Below you will find two examples that show how to do this trick. The first is for a "regular" video, using the &lt;video&gt; and &lt;source&gt; elements. This technique can also be used on any YouTube embedded videos (see Example #2 below).
 
-The interesting part is that we use a 100% standard (and really small and simple) JavaScript code here to handle the window resize events and we just set regular CSS properties width and height of the video element, to resize the video.
+The interesting part is that we use a 100% standard (and really small and simple) JavaScript code here to handle the window resize events and we just set regular CSS properties width and height of the video element, to resize the video.</p>
 
-Example #1: with a regular video
+<h4>Example #1: with a regular video</h4>
 
-Full width, resizable, borderless video, just using plain CSS and JS DOM events.</p>
+<p>Full width, resizable, borderless video, just using plain CSS and JS DOM events.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 72. body onload=init (89) ----------------------------------->
@@ -4239,7 +4239,7 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 &nbsp;
 <br/>
 
-<p>Here is the HTML code. It's really simple, just notice the &lt;body onload="init();"&gt; which calls the JavaScript init() function right after the page is loaded.</p>
+<h4>Here is the HTML code. It's really simple, just notice the &lt;body onload="init();"&gt; which calls the JavaScript init() function right after the page is loaded.</h4>
 
 ```
 1.  <!DOCTYPE html>
@@ -4263,8 +4263,7 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 19. </body>
 ```
 
-<p>
-Here is the CSS (remove margins, remove padding, hide parts that could overflow from the &lt;body&gt;):</p>
+<h4>Here is the CSS (remove margins, remove padding, hide parts that could overflow from the &lt;body&gt;):</h4>
 
 ```
 body {
@@ -4274,7 +4273,7 @@ body {
 }
 ```
 
-<p>And now the JavaScript code:</p>
+<h4>And now the JavaScript code:</h4>
 
 ```
 var video;
@@ -4293,9 +4292,7 @@ function init() {
 ```
 
 <h4>Example #2: with a YouTube video</h4>
-<p>
-Full width, resizable, borderless YouTube video. To do this: just 100% standard CSS + DOM manipulation using JavaScript.
-</p>
+<p>Full width, resizable, borderless YouTube video. To do this: just 100% standard CSS + DOM manipulation using JavaScript.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------- 73. full width resizable borderless youtube video (90) --------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4305,9 +4302,8 @@ Full width, resizable, borderless YouTube video. To do this: just 100% standard 
    width="50%">
 &nbsp;
 <br/>
-<p>
-The CSS and JavaScript codes for this example are exactly the same as in Example #1.
-</p>
+<p>The CSS and JavaScript codes for this example are exactly the same as in Example #1.</p>
+
 <h4>Full screen video, pure CSS approaches</h4>
 <p>
 1.  Let's use the video from the PayPal Web site, played full screen using only very simple CSS.
@@ -4341,10 +4337,11 @@ video {
 ```
 
 <p>
-2.  Full screen video with CSS effects
+2.  Full screen video with CSS effects.
 
-This time the video is zoomed in so that it's much bigger than the browser's window. When we resize the browser, the part of the video that is visible adapts itself. It's not "real resize" of the video. Try this [example and read the explanation in this article by Dudley Storey](https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video).
+This time the video is zoomed in so that it's much bigger than the browser's window. When we resize the browser, the part of the video that is visible adapts itself. It's not "real resize" of the video. Try this <a href="https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">example and read the explanation in this article by Dudley Storey</a>.
 </p>
+
 <h4>HTML code:</h4>
 
 ```
@@ -4407,8 +4404,9 @@ header video {
 <li>The video is in the header, and the header has a plotted transparent background image ("dots.png") that is repeated in X and Y (see <i>lines 8</i> and <i>9</i>).</li>
 <li>The video is positioned so that it's origin (top left corner) is away from the visible surface (<i>line 25</i>), while it is set to take 100% of the surface (<i>lines 20</i> and <i>21</i>).
 </ol>
+<br />
 
-<p>Full screen video that resizes and keeps its ratio, using the viewport units.</p>
+<h4>Full screen video that resizes and keeps its ratio, using the viewport units.</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------- 75. full screen video using viewport units to keep its ration (92) --------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4526,26 +4524,24 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link
 
 <p>We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer!</p>
 
-| ------------------------------------------------------------------------|
-| <b>Methods</b> | <b>Properties</b>    | <b>Events</b>                   |
-| ------------------------------------------------------------------------|
-| <b>play()</b>  | <b>currentSrc</b>    | <b>play</b>                     |
-| <b>pause()</b> | <b>currentTime</b>   | <b>pause</b>                    |
-|  load()        | startTime (readonly) | progress                        |
-|  canPlayType() | videoWidth           |                     error       |
-|                | videoHeight          |                     timeupdate  |
-|                | duration (readonly)  |               ended             |
-|                | ended (readonly)     |            abort                |
-|                | error                |                       empty     |
-|                 | paused (readonly)    |               emptied           |
-|                 | muted                |              waiting            |
-|                 | seeking              |             loadedmetadata      |
-|                 | volume               |                                 |
-|                 | <b>height</b>        |                                 |
-|                 | <b>width</b>         |                                 |
-|                 | <b>seekable (readonly)</b> |                           |
-|                 | <b>played (readonly)</b>   |                           |
-| ------------------------------------------------------------------------|
+| <b>Methods</b> | <b>Properties</b>          | <b>Events</b>                   |
+| -------------- | -------------------------- | ------------------------------- |
+| <b>play()</b>  | <b>currentSrc</b>          | <b>play</b> |
+| <b>pause()</b> | <b>currentTime</b>         | <b>pause</b> |
+| load()         | startTime (readonly)       | progress |
+| canPlayType()  | videoWidth                 | error |
+|                | videoHeight                | timeupdate |
+|                | duration (readonly)        | ended |
+|                | ended (readonly)           | abort |
+|                | error                      | empty |
+|                | paused (readonly)          | emptied |
+|                | muted                      | waiting |
+|                | seeking                    | loadedmetadata |
+|                | volume                     |                                 |
+|                | <b>height</b>              |                                 |
+|                | <b>width</b>               |                                 |
+|                | <b>seekable (readonly)</b> |                                 |
+|                | <b>played (readonly)</b>   |                                 |
 
 <p>
 In the next pages, let's see, through a set of examples, how to use these most important properties, methods, and events...
@@ -4564,7 +4560,7 @@ This example gives the first steps towards writing a custom video player. It sho
 <h4>Try it online:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 78. example video player (97) -------------------------------->
+<!------------------------------- 78. example video player (97) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image078.png?raw=true"
