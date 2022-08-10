@@ -2284,8 +2284,8 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 
 <h4>To sum up:</h4>
 <ul>
-<li>Always use a heading element after a sectioning element, for example &lt;section&gt;&lt;Hx&gt;...&lt;Hx&gt;...&lt;section&gt;, and after &lt;body&gt;, where x can be 1..6,
-<li>Or, use a &lt;header&gt; element, like in &lt;section&gt;&lt;header&gt;&lt;Hx&gt;...&lt;Hx&gt;.....&lt;header&gt;...&lt;section&gt;
+<li>Always use a heading element after a sectioning element, for example &lt;section&gt;&lt;Hx&gt;...&lt;Hx&gt;...&lt;/section&gt;, and after &lt;/body&gt;, where x can be 1..6,
+<li>Or, use a &lt;header&gt; element, like in &lt;section&gt;&lt;header&gt;&lt;Hx&gt;...&lt;/Hx&gt;.....&lt;/header&gt;...&lt;/section&gt;
 </ul>
 
 <h4>More about the &lt;header&gt; element</h4>
@@ -2329,7 +2329,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 5.  </header>
 ```
 
-<h4>Best practice #2: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;...&lt;h6&gt;</h4>
+<h4>Best practice #2: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;...&lt;h6&gt; </h4>
 
 <p>The example below defines several implicit "sections" by using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):</p>
 
@@ -4529,14 +4529,14 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link
 | <b>play()</b>  | <b>currentSrc</b>          | <b>play</b> |
 | <b>pause()</b> | <b>currentTime</b>         | <b>pause</b> |
 | load()         | startTime (readonly)       | progress |
-| canPlayType()  | videoWidth                 | error |
-|                | videoHeight                | timeupdate |
-|                | duration (readonly)        | ended |
-|                | ended (readonly)           | abort |
-|                | error                      | empty |
-|                | paused (readonly)          | emptied |
-|                | muted                      | waiting |
-|                | seeking                    | loadedmetadata |
+| <b>canPlayType()</b>  | videoWidth                 | <b>error</b> |
+|                | videoHeight                | <b>timeupdate</b> |
+|                | duration (readonly)        | <b>ended</b> |
+|                | ended (readonly)           | <b>abort</b> |
+|                | error                      | <b>empty</b> |
+|                | paused (readonly)          | <b>emptied</b> |
+|                | muted                      | <b>waiting</b> |
+|                | seeking                    | <b>loadedmetadata</b> |
 |                | volume                     |                                 |
 |                | <b>height</b>              |                                 |
 |                | <b>width</b>               |                                 |
@@ -4587,7 +4587,7 @@ This example gives the first steps towards writing a custom video player. It sho
 </video>
 ```
 
-<p>Example of custom controls:</p>
+<h4>Example of custom controls:</h4>
 
 ```
 <button onclick="playVideo();" style="cursor: pointer;">Play</button>
@@ -4617,9 +4617,9 @@ This example gives the first steps towards writing a custom video player. It sho
 </ul>
 
 <h4>Example #2: how to detect the end of a video and start another one</h4>
-<p>
-This example listens to the ended event, and calls a callback function when the video is ended.
-</p>
+
+<p>This example listens to the ended event, and calls a callback function when the video is ended.</p>
+
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 80. example calls a callback function when video ends (98) ------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -4644,65 +4644,65 @@ This example listens to the ended event, and calls a callback function when th
 ```
 
 <h4>Example #3: how to manage playlists - sequential movies</h4>
-<p>
-This example detects the end of a video, then loads the next video, changes the src attribute of the video element and plays the video.
 
-Check the online example below: use the progress cursor to go near the end of the first video that is being played, and see how it continues with the next video. 
-</p>
+<p>This example detects the end of a video, then loads the next video, changes the src attribute of the video element and plays the video.
+
+Check the online example below: use the progress cursor to go near the end of the first video that is being played, and see how it continues with the next video.</p>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 81.  ---------------------------------------->
+<!--------------------------------- 81. example video load (99) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image081.png?raw=true"
-   alt=""
+   alt="This example detects the end of a video, then loads the next video, changes the src attribute of the video element and plays the video."
    width="65%" />
 &nbsp;
 
 <h4>Source code:</h4>
 
 ```
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Sequential Movies</title>    <script>
-      var myVideo;
-      var currentVideo = 0;
-      var sources = [
-        "https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4",
-        "https://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4"
-        ];
-// Set the src of the video to the next URL in the playlist
-// If at the end we start again from beginning (the modulo
-// source.length does that)
-      function loadNextVideo() {
-        myVideo.src = sources[currentVideo % sources.length]
-        myVideo.load();
-        currentVideo++;
-      }
-// listener plays the video
-    function loadAndplayNextVideo() {
-      console.log("playing " + sources[currentVideo % sources.length])
-      loadNextVideo();
-      myVideo.play();
-    }
-// Called when the page is loaded
-    function init(){
-// get the video element using the DOM api
-    myVideo = document.querySelector("#myVideo");
-// Defines a callback function called each time a video ended
-    myVideo.addEventListener('ended', loadAndplayNextVideo, false);
-// Loads the first video when the page is loaded
-    loadNextVideo();
-    }
-  </script>
-</head>
-<body onload="init()">
-    <video id="myVideo"
-      controls>
-    </video>
-</body>
-</html>
+1. <!DOCTYPE html>
+2. <html lang="en">
+3.   <head>
+4.     <meta charset="utf-8"/>
+5.     <title>Sequential Movies</title>
+6.       <script>
+7.         var myVideo;
+8.         var currentVideo = 0;
+9.           var sources = [
+10.           "https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4",
+11.           "https://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4"
+12.        ];
+13. // Set the src of the video to the next URL in the playlist
+14. // If at the end we start again from beginning (the modulo
+15. // source.length does that)
+16.      function loadNextVideo() {
+17.        myVideo.src = sources[currentVideo % sources.length]
+18.        myVideo.load();
+19.        currentVideo++;
+20.      }
+21. // listener plays the video
+22.    function loadAndplayNextVideo() {
+23.      console.log("playing " + sources[currentVideo % sources.length])
+24.      loadNextVideo();
+25.      myVideo.play();
+26.    }
+27. // Called when the page is loaded
+28.    function init(){
+29. // get the video element using the DOM api
+30.    myVideo = document.querySelector("#myVideo");
+31. // Defines a callback function called each time a video ended
+32.    myVideo.addEventListener('ended', loadAndplayNextVideo, false);
+33. // Loads the first video when the page is loaded
+34.    loadNextVideo();
+35.    }
+36. </script>
+37. </head>
+38. <body onload="init()">
+39.    <video id="myVideo"
+40.      controls>
+41.    </video>
+42. </body>
+43. </html>
 ```
 
 <h4>Explanations:</h4>
@@ -4710,15 +4710,14 @@ Check the online example below: use the progress cursor to go near the end of th
 <li><i>Line 9</i>: the JavaScript array that contains the URLs of the videos in the playlist. In this example, we've got only two of them, but if the array is larger the example still works.</li>
 <li><i>Line 44</i>: when the page is loaded, an init() function is called.</li>
 <li><i>Lines 34-40</i>: we use the DOM to get the JavaScript object corresponding to the video element, then define a listener for the ended event. Each time a video ends, the loadAndplayNextVideo() callback is called. As the video element has no src attribute by default, we also preload the first video (call to loadNextVideo() at <i>line 38</i>).</li>
-<li><i>Lines 17-21</i>: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources [currentVideo % sources.length], we set the src of the video element to sources[0], then to sources[1], and, as we increment the currentVideo index each time (line 19), if it becomes greater than 1, the modulo (the "%" symbol is the modulo in JavaScript) will make it "loop" between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.</li>
+<li><i>Lines 17-21</i>: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources [currentVideo % sources.length], we set the src of the video element to sources[0], then to sources[1], and, as we increment the currentVideo index each time (<i>line 19</i>), if it becomes greater than 1, the modulo (the "%" symbol is the modulo in JavaScript) will make it "loop" between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.</li>
 </ul>
 
 <h3 id="ch2-2-8">2.2.8 [Advanced] Extended Examples</h3>
-<p>
-In this section, we propose five extended examples that use more JavaScript and more complex CSS manipulation. They might be a little hard to understand if you are a JavaScript beginner, but don't be afraid to try and test them, look at the code, etc.
 
-Some examples are given "as is", such as the custom video player that uses SVG (at the end of the page); if you are interested, you may view the code. 
-</p>
+<p>In this section, we propose five extended examples that use more JavaScript and more complex CSS manipulation. They might be a little hard to understand if you are a JavaScript beginner, but don't be afraid to try and test them, look at the code, etc.
+
+Some examples are given "as is", such as the custom video player that uses SVG (at the end of the page); if you are interested, you may view the code.</p>
 
 <h4>Example #1: a player showing the use of every type of CSS3 transformation</h4>
 <p>
@@ -4726,16 +4725,14 @@ Please see this example online, originally written by <a href="https://christia
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 82. (xx) ---------------------------------------->
+<!----------- 82. a player showing the use of every type of css3 transformation (100) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image082.png?raw=true"
-   alt=""
+   alt="A player showing the use of every type of CSS3 transformation."
    width="65%" />
 &nbsp;
-<p>
-Don't forget to click the JavaScript and CSS tabs of the CodePen in order to display the JavaScript code that creates the buttons on the right of the video, and the CSS that processes the different clicks and applies CSS3 transforms.
-</p>
+<p>Don't forget to click the JavaScript and CSS tabs of the CodePen in order to display the JavaScript code that creates the buttons on the right of the video, and the CSS that processes the different clicks and applies CSS3 transforms.</p>
 
 <h4>This example shows a lot:</h4>
 <ul>
@@ -4749,11 +4746,11 @@ Don't forget to click the JavaScript and CSS tabs of the CodePen in order to di
 This example also shows how to handle failures. See the code and play with this example below:
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 83.  ---------------------------------------->
+<!----------- 83. how to track all possible events and manipulate many properties (101) ---------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image083.png?raw=true"
-   alt=""
+   alt="How to track all possible events and manipulate many properties."
    width="65%" />
 &nbsp;
 <p>
@@ -4800,18 +4797,16 @@ function logEvent(evt, color) {
 See the <a href="https://jsbin.com/xororol/3/edit?html,output">example online</a> here too.
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 84.  ---------------------------------------->
+<!------- 84. how to display a percentage of buffering when using a slow connection (102) -------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image084.png?raw=true"
-   alt=""
+   alt="How to display a percentage of buffering when using a slow connection."
    width="65%" />
 &nbsp;
-<p>
-Note that on mobile phones, the video does not start until the user presses the play control or clicks on the video picture. Using the "canplaythrough" event is a trick to call a function that starts the video player as soon as the page is loaded on desktop. This event is not supported by mobile devices, so if you try this example on a mobile, the video will not start automatically.
 
-As explained by the <a href="https://developer.apple.com/">Apple Developer Web site</a>:  "The buffered property is a TimeRanges object: an array of start and stop times, not a single value. Consider what happens if the person watching the media uses the time scrubber to jump forward to a point in the movie that hasn't loaded yet---the movie stops loading and jumps forward to the new point in time, then starts buffering again from there. So the buffered property can contain an array of discontinuous ranges. The example simply seeks the end of the array and reads the last value, so it actually shows the percentage into the movie duration for which there is data. "
-</p>
+<p>Note that on mobile phones, the video does not start until the user presses the play control or clicks on the video picture. Using the "canplaythrough" event is a trick to call a function that starts the video player as soon as the page is loaded on desktop. This event is not supported by mobile devices, so if you try this example on a mobile, the video will not start automatically.
+As explained by the <a href="https://developer.apple.com/">Apple Developer Web site</a>:  "The buffered property is a TimeRanges object: an array of start and stop times, not a single value. Consider what happens if the person watching the media uses the time scrubber to jump forward to a point in the movie that hasn't loaded yet---the movie stops loading and jumps forward to the new point in time, then starts buffering again from there. So the buffered property can contain an array of discontinuous ranges. The example simply seeks the end of the array and reads the last value, so it actually shows the percentage into the movie duration for which there is data."</p>
 
 <h4>Source code extract:</h4>
 
@@ -4865,7 +4860,7 @@ As explained by the <a href="https://developer.apple.com/">Apple Developer Web 
 This is the ultimate way of doing a real custom player: redesign your own controls using SVG shapes! This example (try it <a href="https://www.w3.org/2010/Talks/0430-www2010-plh/video-player.xhtml">online</a>) is given "as is" for those of you who may be curious.
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 85. cup on table ---------------------------------------->
+<!----------------------------------- 85. cup on table (103) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image085.png?raw=true"
@@ -4946,11 +4941,10 @@ Here is an example of a video element that includes a &lt;track&gt; element in
 </ul>
 
 <h4>Multiple tracks may be included in a video element</h4>
-<p>
-Multiple tracks are needed to support different langages, video captions for the hearing-impaired, subtitles, etc.
 
-Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element">from the specification</a>) that includes multiple <track> elements (subtitles for three languages and captions only for English):
-</p>
+<p>Multiple tracks are needed to support different langages, video captions for the hearing-impaired, subtitles, etc.
+
+Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element">from the specification</a>) that includes multiple &lt;track&gt; elements (subtitles for three languages and captions only for English):</p>
 
 ```
 <video src="brave.webm">
@@ -5003,7 +4997,7 @@ In the interactive example presented before, we used a file called sintel-capti
 </video>
 ```
 
-<p>And here is an extract of the corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt">sintel-captions.vtt</a> file:</p>
+<h4>And here is an extract of the corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt">sintel-captions.vtt</a> file:</h4>
 
 ```
 1.  WEBVTT
@@ -5148,15 +5142,16 @@ So, let's suppose you have a video like the one below (we included it on YouTube
 </video>
 ```
 
-<p>At <i>line 9</i>, we added a <track> element to add English subtitles, as the guitar teacher there is speaking in French. We will now explain how we created this subtitle track.</p>
+<p>At <i>line 9</i>, we added a &lt;track&gt; element to add English subtitles, as the guitar teacher there is speaking in French. We will now explain how we created this subtitle track.</p>
 
 <h4>Adding subtitles to the video</h4>
-<p>
-Now, we need to create a WebVTT file for this video. How can we synchronize an English translation of what the guitar teacher says in French?
+
+<p>Now, we need to create a WebVTT file for this video. How can we synchronize an English translation of what the guitar teacher says in French?
 
 Many tools - both free and commercial - are available to add subtitles to a video. Most are native applications you need to install on your computer. However, a free and very practical tool is available for doing this 100% in a Web browser: <a href="https://amara.org/en/">amara</a>.
 
 Go to the above Web site, click on the "subtitle a video" link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it's better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.</p>
+
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 88. example subtitles and captions (109) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5178,7 +5173,7 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 &nbsp;
 <br/>
 
-Note that YouTube can also help you "make subtitles" with its speech recognition tool, but you will only be able to export in .srt format afterwards. You will have to convert this format afterwards to .vtt.
+<p>Note that YouTube can also help you "make subtitles" with its speech recognition tool, but you will only be able to export in .srt format afterwards. You will have to convert this format afterwards to .vtt.</p>
 
 <h4>Try your subtitled/captioned video</h4>
 <!------------------------------------------------------------------------------------------------>
@@ -5193,9 +5188,10 @@ Note that YouTube can also help you "make subtitles" with its speech recognition
 
 <h3 id="ch2-3-4">2.3.4 Styling Captions</h3>
 
-In this section, we will look at different possibilities for styling and positioning  the text displayed as captions/subtitles while playing a video.
+<p>In this section, we will look at different possibilities for styling and positioning  the text displayed as captions/subtitles while playing a video.
 
-The example below shows how we can do that (play the video for 40s, look at the positions and styles of the subtitles and captions, look at the HTML):
+The example below shows how we can do that (play the video for 40s, look at the positions and styles of the subtitles and captions, look at the HTML):</p>
+
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------------- 91. blank codepen (111) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -5206,7 +5202,7 @@ The example below shows how we can do that (play the video for 40s, look at the 
 &nbsp;
 <br/>
 
-The WebVTT file is shown below. Notice the new attributes that have been added on the right end of the duration values:
+<p>The WebVTT file is shown below. Notice the new attributes that have been added on the right end of the duration values:</p>
 
 ```
 1.  WEBVTT
@@ -5284,7 +5280,7 @@ It is possible to locate the cues in the video viewport using absolute or relati
 10. This cue is positioned at the left side of the video.
 ```
 
-There are several possible values:
+<h4>There are several possible values:</h4>
 <ul>
 <li><b>line:5%</b> means "vertical position at a line 5% of the height of the video viewport (it will be located at the top of the video", proportional to its vertical size).</li>
 <li><b>position:5% align:start</b> means "regular location at the bottom of the video, the start of the sentence will be located at 5% of the width of the video", i.e., near the left side.</li>
@@ -5292,34 +5288,35 @@ There are several possible values:
 <li><b>size:33%</b> The size of each line will be one third of the size of the video. Since the sentence won't fit, it will be displayed in multiple lines.</li>
 </ul>
 
-And so on. Please look at the video as it is self-explanatory.
+<p>And so on. Please look at the video as it is self-explanatory.</p>
 
 <h4>Use of &lt;b&gt;, &lt;i&gt;, &lt;u&gt; for styling subtitles / captions</h4>
 
-One can use the HTML elements  <b>, <i>, <u> to modify the rendering of subtitles and captions, as illustrated in the example below:
+<p>One can use the HTML elements  <b>, <i>, <u> to modify the rendering of subtitles and captions, as illustrated in the example below:</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 93.  (113) ------------------------------->
+<!---------------- 93. Use of <b>, <i>, <u> for styling subtitles / captions (113) --------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image093.png?raw=true"
-   alt=""
+   alt="This cue contains the class 'myclass'."
    width="65%">
 &nbsp;
 <br/>
 
 <h4>Using CSS classes for styling</h4>
 
-It is possible to style using CSS classes as part of a cue value, using the <c> element. You can specify the CSS class that should be applied by adding "." followed by the name of your CSS class. Here is an example:
+<p>It is possible to style using CSS classes as part of a cue value, using the &lt;c&gt; element. You can specify the CSS class that should be applied by adding "." followed by the name of your CSS class. Here is an example:</p>
+<ol type="1">
+<li>&lt;c.myclass&gt;This cue contains the class "myclass".</li>
+<li>Browsers that support ::cue CSS should make it red.&lt;/c&gt;</li>
+</ol>
 
-1.  <c.myclass>This cue contains the class "myclass".
-
-2.  Browsers that support ::cue CSS should make it red.</c>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 94.  (113) ------------------------------->
+<!---------------------- 94. this cue contains the class 'myclass'  (113) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image094.jpeg?raw=true"
-   alt="Snaphot of a video frame showing a cue containing the class 'myclass'. Browsers that support ::cue CSS should make it red"
+   alt="Snaphot of a video frame showing a cue containing the class 'myclass'. Browsers that support ::cue CSS should make it red."
    width="65%">
 &nbsp;
 <br/>
@@ -5334,15 +5331,15 @@ It is possible to style using CSS classes as part of a cue value, using the <c
 6.  </style>
 ```
 
-The ::cue pseudo element selector is used to match "cues" in the webVTT file. You add parenthesis and a secondary CSS selector to match cues that have a particular id, or a particular CSS class, etc. Look at the CSS above and at the extract from the webVTT file, play the video, you will understand how the above CSS classes affect the rendering of the subtitles for Jane and Tarzan's voices.
+<p>The ::cue pseudo element selector is used to match "cues" in the webVTT file. You add parenthesis and a secondary CSS selector to match cues that have a particular id, or a particular CSS class, etc. Look at the CSS above and at the extract from the webVTT file, play the video, you will understand how the above CSS classes affect the rendering of the subtitles for Jane and Tarzan's voices.
 
-Support differs from one browser to another, see [this compatibility table](https://caniuse.com/#feat=webvtt) (from CanIuse). Note however that most of the enhanced players presented further on in the course provide full support.
+Support differs from one browser to another, see <a href="https://caniuse.com/#feat=webvtt">this compatibility table</a> (from CanIuse). Note however that most of the enhanced players presented further on in the course provide full support.</p>
 
 <h4>Using voicing for styling: the &lt;v&gt; element</h4>
 
-Here is an example that shows the voices of the different characters displayed with different colors:
+<p>Here is an example that shows the voices of the different characters displayed with different colors:</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 95. v tag example (114) ------------------------------->
+<!---------------------------------- 95. v tag example (114) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image095.png?raw=true"
@@ -5351,9 +5348,10 @@ Here is an example that shows the voices of the different characters displayed w
 &nbsp;
 <br/>
 
-Using the <v> tag, you will distinguish different voices that should be displayed in different colors (depending on the HTML5 video player implementation). See the CSS presented in the previous section to see how to specify the colors for the different voices.
+<p>Using the &lt;v&gt; tag, you will distinguish different voices that should be displayed in different colors (depending on the HTML5 video player implementation). See the CSS presented in the previous section to see how to specify the colors for the different voices.</p>
 
-Example source code:
+<h4>Example source code:</h4>
+
 ```
 1.  00:00:56.000 --> 00:01:04.000
 2.  <v Tarzan>Me Tarzan...
@@ -5362,9 +5360,10 @@ Example source code:
 
 <h3 id="ch2-3-5">2.3.5 Chapter</h3>
 
-When you play a movie in DVD or Blu-Ray format, a menu appears on the screen: play a movie, choose subtitles, etc. Usually there is also a "chapters" menu that allows you to quickly access a part of the movie. With videos on the Web, one can also indicate the chapter breakdown, using WebVTT files and a <track> element/tag.
+<p>When you play a movie in DVD or Blu-Ray format, a menu appears on the screen: play a movie, choose subtitles, etc. Usually there is also a "chapters" menu that allows you to quickly access a part of the movie. With videos on the Web, one can also indicate the chapter breakdown, using WebVTT files and a &lt;track&gt; element/tag.
 
-Adding chapters is very similar to adding subtitles/captions. Look at *line 5* in the code below, where we use an extra <track> element with a kind="chapters" attribute.
+Adding chapters is very similar to adding subtitles/captions. Look at <i>line 5</i> in the code below, where we use an extra &lt;track&gt; element with a kind="chapters" attribute.</p>
+
 ```
 1.  <video poster="webvtt_talk.png" style="width:100%" preload="metadata">
 2.      <source src="webvtt_talk.webm">
@@ -5376,11 +5375,11 @@ Adding chapters is very similar to adding subtitles/captions. Look at *line 5*�
 8.  </video>
 ```
 
-Here is an example of WebVTT files with defined chapters. Each "CUE" at *lines 3, 7, 11*, ... can bear any name. We use "Chapter 1, Chapter 2, Ending, etc." but you are free to name them as you wish.
+<p>Here is an example of WebVTT files with defined chapters. Each "CUE" at <i>lines 3, 7, 11</i>, ... can bear any name. We use "Chapter 1, Chapter 2, Ending, etc." but you are free to name them as you wish.
 
 What makes them special is that the track has an attribute kind="chapters". 
 
-Often, the <video> elements rendered in standard browsers ignore chapters, but enhanced HTML5 players take them into account, and it's not much of a stretch to make your own enhanced player with a nice chapter presentation, as we'll see in a more advanced chapter of this course.  For example, we'll generate a custom navigation menu, using the <track> JavaScript API (explained later in this section).
+Often, the <video> elements rendered in standard browsers ignore chapters, but enhanced HTML5 players take them into account, and it's not much of a stretch to make your own enhanced player with a nice chapter presentation, as we'll see in a more advanced chapter of this course.  For example, we'll generate a custom navigation menu, using the &lt;track&gt; JavaScript API (explained later in this section).</p>
 
 <h4>Example of a WebVTT file that defines chapters:</h4>
 
@@ -5412,9 +5411,10 @@ Often, the <video> elements rendered in standard browsers ignore chapters, but e
 25. Styled WebVTT file
 ```
 
-An example of what you can achieve using chapters, using the <a href="https://www.jwplayer.com/">JW Player</a>:
+<p>An example of what you can achieve using chapters, using the <a href="https://www.jwplayer.com/">JW Player</a>:</p>
+
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 96. using the jw player (115) ------------------------------->
+<!-------------------------------- 96. using the jw player (115) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image096.png?raw=true"
@@ -5425,7 +5425,8 @@ An example of what you can achieve using chapters, using the <a href="https://w
 
 <h3 id="ch2-3-6">2.3.6 Tools for Creating WebVTT Files</h3>
 
-Many tools are available to make and edit HTML5 video and caption/subtitles:
+<p>Many tools are available to make and edit HTML5 video and caption/subtitles:</p>
+
 <ul>
 <li>Tools for converting existing file formats to WebVTT files, such as <a href="https://atelier.u-sub.net/srt2vtt/">Simple SubRip to WebVTT</a> converter, which is popular in the DivX/AVI/Mkv/mp4 scene. Do a quick Web search and you will get plenty of other results.</li>
 <li>Tools for creating subtitles/captions from scratch. Use these to generate a WebVTT file. You can embed the &lt;track&gt; element in your own videos, on your own Web pages, or upload the WebVTT file to YouTube.  We recommend <a href="https://amara.org/en/">amara</a>. It's a free online tool that is very easy to use. There are also apps such as <a href="https://www.macupdate.com/app/mac/25826/subs-factory">Subs Factory</a> (Mac OS), <a href="https://jubler.org/">Jubler</a> or <a href="https://nikse.dk/SubtitleEdit">Subtitle Edit</a>) (Windows).</li>
@@ -5434,27 +5435,24 @@ Many tools are available to make and edit HTML5 video and caption/subtitles:
 
 We do not claim that these are the best tools, so feel free to share your discoveries in the discussion forum!
 
-<h3 id="ch2-3-7">2.3.7 The <track> JavaScript API</h3>
+<h3 id="ch2-3-7">2.3.7 The &lt;track&gt; JavaScript API</h3>
 
-Most "complex" HTML elements like forms, audio or video players, come with a JavaScript API that allows you to control them programmatically, customize them, etc.
+<p>Most "complex" HTML elements like forms, audio or video players, come with a JavaScript API that allows you to control them programmatically, customize them, etc.
 
-The <track> element comes with a powerful API that is used to develop many interesting features such as:
-
--   Dynamically building a navigation menu that shows the different chapters of the video,
-
--   Synchronizing page content with timestamps in the WebVTT file (for example: show a map next to the video, that shows the location corresponding to the video content),
-
--   Displaying all the subtitles/captions at once as HTML in the page,
-
--   Making an app for creating on the fly subtitles/captions,
-
--   Etc.
+The &lt;track&gt; element comes with a powerful API that is used to develop many interesting features such as:</p>
+<ul>
+<li>Dynamically building a navigation menu that shows the different chapters of the video,</li>
+<li>Synchronizing page content with timestamps in the WebVTT file (for example: show a map next to the video, that shows the location corresponding to the video content),</li>
+<li>Displaying all the subtitles/captions at once as HTML in the page,</li>
+<li>Making an app for creating on the fly subtitles/captions,</li>
+<li>Etc.</li>
+</ul>
 
 <h4>Examples of use</h4>
 
 <h4> Example #1: add a navigation menu to start playing the video at given chapters</h4>
 
-This example shows a video with an enhanced progress bar that displays the different chapters as small "clickable" squares. Furthermore, using the JavaScript API of the <track> element, this Web site builds a navigation menu (on the right of the video):
+<p>This example shows a video with an enhanced progress bar that displays the different chapters as small "clickable" squares. Furthermore, using the JavaScript API of the &lt;track&gt; element, this Web site builds a navigation menu (on the right of the video):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 97. navigation menu using the track javascript api (117) -------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5467,9 +5465,10 @@ This example shows a video with an enhanced progress bar that displays the diffe
 
 <h4>Example #2: sync video with Google Map and Google Street View</h4>
 
-Check <a href="https://simpl.info/track/map/index.html">this demo</a> (only on Chrome) by <a href="https://samdutton.com/">Sam Dutton</a>: it shows a video that comes with a WebVTT file that contains longitudes and latitudes. When the video plays, JavaScript functions are called at given times and get the longitude and latitude. A Google Map and a Google Street views are updated in real time.
+<p>Check <a href="https://simpl.info/track/map/index.html">this demo</a> (only on Chrome) by <a href="https://samdutton.com/">Sam Dutton</a>: it shows a video that comes with a WebVTT file that contains longitudes and latitudes. When the video plays, JavaScript functions are called at given times and get the longitude and latitude. A Google Map and a Google Street views are updated in real time.</p>
+
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 98. video sync with map and street views (117) ------------------------------->
+<!----------------------- 98. video sync with map and street views (117) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image098.jpeg?raw=true"
@@ -5478,11 +5477,12 @@ Check <a href="https://simpl.info/track/map/index.html">this demo</a> (only on
 &nbsp;
 <br/>
 
-<h4> Example #3: sync guitar tablatures and music score with a video</h4>
+<h4>Example #3: sync guitar tablatures and music score with a video</h4>
 
-This example shows how we manage to render music scores in real time as the video plays. 
+<p>This example shows how we manage to render music scores in real time as the video plays. 
 
-Some JavaScript code listens to the ontimeupdate event while the video is playing. We use the currentTime property of the video to know exactly where we are in the video. Finally, we also rely on an external library to render in an HTML5 canvas the bars corresponding to the current video explanations. We render in real time guitar pro tablatures using the alphatab.net library.
+Some JavaScript code listens to the ontimeupdate event while the video is playing. We use the currentTime property of the video to know exactly where we are in the video. Finally, we also rely on an external library to render in an HTML5 canvas the bars corresponding to the current video explanations. We render in real time guitar pro tablatures using the alphatab.net library.</p>
+
 <!------------------------------------------------------------------------------------------------>
 <!---- 99. We render in real time guitar pro tablatures using the alphatab.net library (118) ----->
 <!------------------------------------------------------------------------------------------------>
@@ -5501,7 +5501,7 @@ We call them "HTML5 enhanced video players" because on top of being based on the
 
 <h4>Accessible players</h4>
 
-For those of you interested in this particular topic, here is a very good resource that compares most of the players presented in this section, in terms of accessibility. This resource has links to players designed especially for people with disabilities: [accessible media players and resources](https://www.digitala11y.com/accessible-jquery-html5-media-players/).
+<p>For those of you interested in this particular topic, here is a very good resource that compares most of the players presented in this section, in terms of accessibility. This resource has links to players designed especially for people with disabilities: <a href="https://www.digitala11y.com/accessible-jquery-html5-media-players/">accessible media players and resources</a>.</p>
 
 <h4>Advantages and disadvantages of using a custom player</h4>
 
@@ -5529,7 +5529,7 @@ For those of you interested in this particular topic, here is a very good resou
 
 <h4>Video.js: a framework for building your own custom video player</h4>
 
-Open source, and made for developers, <a href="https://videojs.com/">video.js</a> comes with many plugins (chapters, thumbnails etc.).
+<p>Open source, and made for developers, <a href="https://videojs.com/">video.js</a> comes with many plugins (chapters, thumbnails etc.).</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 100. make your player yours (119) ------------------------------->
@@ -5542,20 +5542,19 @@ Open source, and made for developers, <a href="https://videojs.com/">video.js</
 <br/>
 
 <h4>Which should I use? the &lt;video&gt; element and my own customization or an out of the box enhanced player?</h4>
+<p>Either solution (basic player or enhanced player) is good and HTML5 compliant.
 
-Either solution (basic player or enhanced player) is good and HTML5 compliant.
-
-Popular players such as  [JWPlayer](https://www.jwplayer.com/) have many explanations and examples on their Web sites, and are either free of charge or come with free versions.
+Popular players such as <a href="https://www.jwplayer.com/">JWPlayer</a> have many explanations and examples on their Web sites, and are either free of charge or come with free versions.</p>
 
 <h4>Interesting comparisons and reviews are available on the following Web sites:</h4>
-
--   Comparison matrix of most of [existing HTML5 video players](https://videosws.praegnanz.de/)
-
--   [10 HTML5 video players compared](https://toppersworld.com/10-html5-video-players-as-alternatives-to-flash-player/)
+<ul>
+<li>Comparison matrix of most of <a href="https://videosws.praegnanz.de/">existing HTML5 video players</a>
+<li><a href="https://toppersworld.com/10-html5-video-players-as-alternatives-to-flash-player/">10 HTML5 video players compared</a>
+</ul>
 
 <h4>Example screenshots</h4>
 
-Scrub Bar thumbnails (JWPlayer)
+<h4>Scrub Bar thumbnails (JWPlayer)</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 101. scrub bar thumbnailes (120) -------------------------------->
@@ -5567,7 +5566,7 @@ Scrub Bar thumbnails (JWPlayer)
 &nbsp;
 <br/>
 
-Custom look'n'feel and logo (Sublime video player):
+<h4>Custom look'n'feel and logo (Sublime video player):</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 102. custom look and feel and logo (120) ---------------------------->
@@ -5579,26 +5578,26 @@ Custom look'n'feel and logo (Sublime video player):
 &nbsp;
 <br/>
 
-Chapters and chapter thumbnails (JWPlayer):
+<h4>Chapters and chapter thumbnails (JWPlayer):</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 103. chapters and chapter thumbnails (120) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image103.png?raw=true"
-   alt="Chapter and Chapter Thumbnails"
+   alt="Chapter and Chapter Thumbnails."
    width="55%">
 &nbsp;
 <br/>
 
-PayPal accessible player:
+<h4>PayPal accessible player:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 104. paypal accessible player (121) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image104.png?raw=true"
-   alt="Paypal accessible player"
+   alt="Paypal accessible player."
    width="55%">
 &nbsp;
 <br/>
