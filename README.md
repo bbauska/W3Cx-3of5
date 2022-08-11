@@ -6568,9 +6568,9 @@ For that you will use the dev. tools of your browser. Press <i>F12</i> in 
 
 Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this example on JS Bin</a>:</p>
 
-+----+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | 1  | &lt;!DOCTYPE html&gt;                                                                                                                                                      |
-+ -- + -----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+ --  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 |    |                                                                                                                                                                        |
 | 2  | &lt;<a href="https://december.com/html/4/element/html.html">html lang="en"</a>&gt;                                                                                              |
 |    |                                                                                                                                                                        |
@@ -6614,7 +6614,7 @@ This means "display in the JavaScript console the message...". If we open the co
    alt="JavaScript console view." />
 </p>
 
-It is also possible to use the "real dev. tool console", and for this I recommend running the application in a single window, not in the JS Bin editor. Press the black arrow on the top right of the output window - this will render the page as a standalone Web page, then press <i>F12</i>. You should see:
+<p>It is also possible to use the "real dev. tool console", and for this I recommend running the application in a single window, not in the JS Bin editor. Press the black arrow on the top right of the output window - this will render the page as a standalone Web page, then press <i>F12</i>. You should see:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 117. javascript debugging using the dev tool console (143) ------------------>
@@ -6625,7 +6625,7 @@ It is also possible to use the "real dev. tool console", and for this I recommen
    alt="Javascript debugging using the dev tool console." />
 </p>
 
-Ok, now, let's make an error: change console.log() into conso<b>lll<b>e.log(). Let's see what happens:
+<p>Ok, now, let's make an error: change console.log() into conso<b>lll<b>e.log(). Let's see what happens:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 118. make an error and see what happens (143) ------------------------->
@@ -6636,7 +6636,7 @@ Ok, now, let's make an error: change console.log() into conso<b>lll<b>e.log()
    alt="Make an error and see what happens." />
 </p>
 
-And if we run it standalone and use the dev. tool console:
+<p>And if we run it standalone and use the dev. tool console:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------- 119. run it standalone and use the dev. tool console  (143) ------------------>
@@ -6647,7 +6647,7 @@ And if we run it standalone and use the dev. tool console:
    alt="Run it standalone and use the dev. tool console." />
 </p>
 
-And if we click on the line number in the right, the dev. tool shows the source code centered on the line that caused the error:
+<p>And if we click on the line number in the right, the dev. tool shows the source code centered on the line that caused the error:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------- 120. click line # on the right, dev tool shows source code (144) ---------------->
@@ -6658,16 +6658,16 @@ And if we click on the line number in the right, the dev. tool shows the source 
    alt="View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc." />
 </p>
 
-<p>Without such tools, debugging JavaScript code is impossible. So you need to look at some basic tutorials on how to use the dev. tools of your browsers, since they differ from one another in the way they work - although the principles remain the same.
+<p>Without such tools, debugging JavaScript code is impossible. So you need to look at some basic tutorials on how to use the dev. tools of your browsers, since they differ from one another in the way they work - although the principles remain the same.</p>
 
 <h4>About the asynchronous nature of JavaScript</h4>
 
-Some of you may not be used to "asynchronous programming", "callbacks" etc. We recommend to read [this article on WikiPedia](https://en.wikipedia.org/wiki/Callback_%28computer_programming%29) and [this thread on StackOverflow](https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java).
+<p>Some of you may not be used to "asynchronous programming", "callbacks" etc. We recommend to read <a href="https://en.wikipedia.org/wiki/Callback_%28computer_programming%29">this article on WikiPedia</a> and <a href="https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java">this thread on StackOverflow</a>.</p>
 
 <h3 id="ch3-2-2">3.2.2 The &lt;canvas&gt; Element</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 121. canvas element (html) logo (144) --------------------------->
+<!---------------------------- 121. canvas element (html) logo (144) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image121.jpeg?raw=true"
@@ -6681,11 +6681,11 @@ Some of you may not be used to "asynchronous programming", "callbacks" etc. We r
 
 Indeed, the canvas JavaScript drawing API supports different kind of shapes: lines, rectangles, ellipses, arcs, curves, text, images. Some drawing styles need to be specified that will affect the way shapes are drawn (color, drawing width, shadows, etc.). An alpha channel for drawing in transparent mode is also supported, as well as many advanced drawing modes and global filters (blur, etc.).
 
-The canvas is also used to do animations at 60 frames per second (useful for games), to display videos with special effects, to display a webcam stream, and so on.
-</p>
-<h4>Examples</h4>
+The canvas is also used to do animations at 60 frames per second (useful for games), to display videos with special effects, to display a webcam stream, and so on.</p>
 
-Here are some fun examples that show the interest of the HTML5 canvas.
+<h3>Examples:</h3>
+
+<p>Here are some fun examples that show the interest of the HTML5 canvas:</p>
 
 <h4>Example #1</h4>
 
@@ -6714,7 +6714,7 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 
 <h4>Example #3</h4>
 
-<p>A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), that runs at 60 frames per second in an HTML5 canvas element:</p>
+<p>A version of the <a href="https://intersoft.itch.io/galaxian">arcade game Galaxian</a>, that runs at 60 frames per second in an HTML5 canvas element:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------- 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (xxx) -------->
@@ -6771,7 +6771,7 @@ Here are some fun examples that show the interest of the HTML5 canvas.
    alt="Downloadable pdf of an HTML Canvas cheatsheet from skilled.com." />
 </p>
 
-2.  Another resource, as an [HTML file](https://simon.html5.org/dump/html5-canvas-cheat-sheet.html):
+<p>2.  Another resource, as an <a href="https://simon.html5.org/dump/html5-canvas-cheat-sheet.html">HTML file</a>:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 126. html of a canvas cheatsheet api (148) --------------------------->
@@ -8054,7 +8054,7 @@ Your browser does not support the canvas tag.
    width="40%" />
 </p>
 
-<p>Source code extract of this function: notice at *lines 3 *and* 26* how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines 7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
+<p>Source code extract of this function: notice at <i>lines 3</i> and <i>26</i> how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines 7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
 
 ```
 1.  function drawMonster(x, y, angle, headColor, eyeColor) {
@@ -8193,7 +8193,7 @@ context.strokeText("Hello World!", 10, 100);
 </html>
 ```
 
-<h4>source code extract:</h4>
+<h4>Source code extract:</h4>
 
 ```
 1.  context.font = "60pt Calibri";
@@ -8269,7 +8269,8 @@ context.strokeText("Hello World!", 10, 220, 150);
 </html>
 ```
 
-<h4>source code extract:</h4>
+<h4>Source code extract:</h4>
+
 ```
 1.  ...
 2.  context.font = "60pt Calibri";
@@ -8326,6 +8327,7 @@ context.stroke();
 ```
 
 <h4>Source code extract from this example:</h4>
+
 ```
 1.  context.font = "60pt Calibri";
 2.  context.lineWidth = 3;
@@ -8494,6 +8496,7 @@ But let's start with a basic example!
 <h4>Example #1: drawing an image in a canvas</h4>
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE HTML>
 2.  <html lang="en">
@@ -8527,22 +8530,23 @@ But let's start with a basic example!
 ```
 
 <h4>Explanations:</h4>
-
+<pre>
 1.  We have to create a JavaScript Image object (<i>line 10</i>),
 
 2.  When we set the src attribute of this object with the URL of the image file, then an asynchronous request is sent in the background by the browser. Loading a big image may take some time, so the rest of the JavaScript code continues running. This is why we call it "asynchronous".
 
 3.  When the image file has been loaded, the browser calls the onload callback associated with the image (<i>line 14</i>).
 
-4.  We draw the image only from inside this callback, otherwise we have no guarantee that the image has been loaded and can be usable. The actual drawing here is done *line 17*.
+4.  We draw the image only from inside this callback, otherwise we have no guarantee that the image has been loaded and can be usable. The actual drawing here is done <i>line 17</i>.
 
 5.  There are numerous variants of the drawImage(...) context method at <i>line 17</i>
+</pre>
 
--   drawImage(img, x, y): draws the image at position x, y, keeping the original image size.
-
--   drawImage(img, x, y, sizeX, sizeY): same as before except that the image drawn is resized.
-
--   drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh): for drawing sub-images, (sx, sy, sw, sh) define the source rectangle, while dx, dy, dw, sh define the target rectangle. If these rectangles don't have the same size, the source sub-image is resized.
+<ul>
+<li>drawImage(img, x, y): draws the image at position x, y, keeping the original image size.</li>
+<li>drawImage(img, x, y, sizeX, sizeY): same as before except that the image drawn is resized.</li>
+<li>drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh): for drawing sub-images, (sx, sy, sw, sh) define the source rectangle, while dx, dy, dw, sh define the target rectangle. If these rectangles don't have the same size, the source sub-image is resized.</li>
+</ul>
 
 <h4>See picture below:</h4>
 <!------------------------------------------------------------------------------------------------>
@@ -8557,7 +8561,7 @@ But let's start with a basic example!
 
 <h4>Example #2: different variants of drawImage(...)</h4>
 
-This example illustrates the use of the different variants of the drawImage method:
+<p>This example illustrates the use of the different variants of the drawImage method:</p>
 
 <h4>HTML</h4>
 
@@ -8755,7 +8759,7 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 </html>
 ```
 
-The [DOM Level 2 Events specification](https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents) says: "*The load event occurs when the DOM implementation finishes loading all content within a document, all frames within a FRAMESET, or an OBJECT element.*"
+The [DOM Level 2 Events specification](https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents) says: "<i>The load event occurs when the DOM implementation finishes loading all content within a document, all frames within a FRAMESET, or an OBJECT element.</i>"
 
 <h3 id="ch3-3-4">3.3.4 Drawing Images from a Video Stream</h3>
 
@@ -8890,15 +8894,15 @@ ctx.restore();
 <ul>
 <li><i>Line 11</i>: the call to setInterval will make the browser execute the processFrame function each 25ms.</li>
 <li><i>Lines 15, 17 and 18</i>: in processFrame, drawImage(...) is called 3 times with the video element passed as first parameter.</li>
-<li><i>Line 43</i>: the video element declared at *line 43* has autoplay=true and loop=true, it starts playing the video as soon as possible and will loop it.</li>
-<li><i>Line 21</i>: We implemented a rotating video effect in the drawRotatingVideo. The use of context save/restore is primordial as this function changes the coordinate system at each call, translating and rotating it. Notice the extra translation at *line 31* that translates the coordinate system backwards with half of the size of the image that is drawn. We did this in order to make the image rotate around the center of the rectangle, instead of around the top left corner at (0, 0) by default. Try commenting out this line in the running example and you will see what we mean.</li>
+<li><i>Line 43</i>: the video element declared at <i>line 43</i> has autoplay=true and loop=true, it starts playing the video as soon as possible and will loop it.</li>
+<li><i>Line 21</i>: We implemented a rotating video effect in the drawRotatingVideo. The use of context save/restore is primordial as this function changes the coordinate system at each call, translating and rotating it. Notice the extra translation at <i>line 31</i> that translates the coordinate system backwards with half of the size of the image that is drawn. We did this in order to make the image rotate around the center of the rectangle, instead of around the top left corner at (0, 0) by default. Try commenting out this line in the running example and you will see what we mean.</li>
 </ul>
 
 <h3 id="ch3-4-1">3.4.1 Immediate Mode vs. Path Mode</h3>
 
 <h4>Immediate mode</h4>
 
-As a reminder: an immediate mode means "executing a call to a drawing method means *immediately* drawing in the canvas". The drawing appears as soon as the design instruction is executed.
+As a reminder: an immediate mode means "executing a call to a drawing method means <i>immediately</i> drawing in the canvas". The drawing appears as soon as the design instruction is executed.
 
 -   In the previous examples, we saw how to draw rectangles using the fillRect(x, y, width, height) and strokeRect(x, y, width, height) methods of the context.
 
@@ -8969,7 +8973,7 @@ Your browser does not support the canvas tag.</canvas>
 21. }
 ```
 
-*Lines 12-18* draw 1000 rectangles of random sizes in immediate mode. We also measure the time using the usual console.time(name_of_timer) and console.timeEnd(name_of_timer) that will write in the browser console the time elapsed. Note that console.time(...) and console.timeEnd(...) display results only in the browser's console, not in the JSBin console.
+<i>Lines 12-18</i> draw 1000 rectangles of random sizes in immediate mode. We also measure the time using the usual console.time(name_of_timer) and console.timeEnd(name_of_timer) that will write in the browser console the time elapsed. Note that console.time(...) and console.timeEnd(...) display results only in the browser's console, not in the JSBin console.
 
 On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawing all these rectangles:
 
@@ -9041,9 +9045,9 @@ Extract from source code (the part that draws the rectangles):
 8.  ctx.stroke(); // draws the whole buffer (the 1000 rectangles) at once
 ```
 
-Instead of calling strokeRect(...) or fillRect(...), we just call the rect(...) method of the context (*line 7*). This is how we can delay the drawing of the rectangles. The 1000 rectangles are stored in a buffer in the hardware.
+Instead of calling strokeRect(...) or fillRect(...), we just call the rect(...) method of the context (<i>line 7</i>). This is how we can delay the drawing of the rectangles. The 1000 rectangles are stored in a buffer in the hardware.
 
-The call to ctx.stroke() (*line 9*) or to its sister method ctx.fill() will draw the entire buffer contents in fill or stroke mode.
+The call to ctx.stroke() (<i>line 9</i>) or to its sister method ctx.fill() will draw the entire buffer contents in fill or stroke mode.
 
 And here is what the timer gives: a slightly faster execution time. Changing 1000 to 100,000 will give even larger differences.
 
@@ -9286,7 +9290,7 @@ This example shows that filled and wireframe shapes should be drawn differently 
 16. ctx.stroke();
 ```
 
-In this last example, we simply called the moveTo() method between each part of the path (*lines 5 and 10*). And we called stroke() (*line 16*) only once to draw the whole path.
+In this last example, we simply called the moveTo() method between each part of the path (<i>lines 5 and 10</i>). And we called stroke() (<i>line 16</i>) only once to draw the whole path.
 
 <h3 id="ch3-4-4">3.4.4 Drawing Lines with Different Styles</h3>
 
@@ -9411,14 +9415,14 @@ ctx.fill();
 
 Hey - it does not work! Weirdly, the two parts of the path are filled in pink! But we called stroke() after the first half of the path was drawn (lines 5-8). Then we called fill() only after the second part of the path was specified (lines 14-19)... so, what happened?
 
-Remember that fill() or stroke() *draws the whole path*, even if it is disconnected, and even if it has already been drawn!
+Remember that fill() or stroke() <i>draws the whole path</i>, even if it is disconnected, and even if it has already been drawn!
 
 What happened is:
 
 1.  The call to stroke() has drawn the path corresponding to the lines 5-7. Indeed, the first part of the path (on the left) has actually been drawn once in wireframe mode, and in blue.
 
 2.  Then, the call to fill() at line 20 has drawn the whole path again, but in pink and in filled mode. But this time the path corresponds to lines 5-7 plus lines 14-16 that make up the second shape on the right.
-    *So the path that has been drawn this time is made of both of the triangles.*
+    <i>So the path that has been drawn this time is made of both of the triangles.</i>
 
 <b>Important</b>: If you do not want to draw parts of the same path several times, you need to draw two different paths,
 using the ctx.beginPath() method, as shown in the next example.
@@ -9806,11 +9810,11 @@ ctx.stroke();
 
 <h4>Explanations:</h4>
 
--   *Lines 5-7* corresponds to a path made of two consecutive lines. If we just call stroke() after that, two lines will be drawn on the canvas.
+-   <i>Lines 5-7</i> corresponds to a path made of two consecutive lines. If we just call stroke() after that, two lines will be drawn on the canvas.
 
--   *Line 10* indicates that we would like *a closed path*. In this case, the call to stroke() at *line 14* will draw the two lines plus an extra line that connects the last point of the path to the first one. It will draw a closed triangle!
+-   <i>Line 10</i> indicates that we would like <i>a closed path</i>. In this case, the call to stroke() at <i>line 14</i> will draw the two lines plus an extra line that connects the last point of the path to the first one. It will draw a closed triangle!
 
-Try commenting the *line 10* in the online example and see the results!
+Try commenting the <i>line 10</i> in the online example and see the results!
 
 <h3 id="ch3-4-8">3.4.8 Drawing Circles and Arcs</h3>
 
@@ -9838,9 +9842,9 @@ The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is usefu
 3.  ctx.arc(centerX, centerY, radius, startAngle, endAngle, false);
 ```
 
-The angles are in radians (between 0 and 2*Math.PI). The arc is drawn clockwise. Beware that this may not seem natural if you're used to the trigonometric order.
+The angles are in radians (between 0 and 2 Math.PI). The arc is drawn clockwise. Beware that this may not seem natural if you're used to the trigonometric order.
 
-The last parameter is optional and has a value of false by default. If true, instead of drawing an arc of circle that corresponds to the parameters, *it will draw its complementary*. See the examples below to see the difference.
+The last parameter is optional and has a value of false by default. If true, instead of drawing an arc of circle that corresponds to the parameters, <i>it will draw its complementary</i>. See the examples below to see the difference.
 
 <h4>Examples</h4>
 
@@ -9889,7 +9893,7 @@ ctx.stroke();
 6.  ctx.stroke();
 ```
 
-And if we change the last parameter of the arc function call (*line 3*) to true (we omitted it, so it took a value of false by default) :
+And if we change the last parameter of the arc function call (<i>line 3</i>) to true (we omitted it, so it took a value of false by default) :
 
 ```
 1.  ctx.beginPath();
@@ -10362,7 +10366,7 @@ The control point controls the curvature - if we move the control point farther 
 11. context.stroke();
 ```
 
-We set a starting point in *line 6*: moveTo(...), then set the control and ending points with a call to quadraticCurve(...), at *line 7*, then set some properties for color, thickness, and finally we call the stroke() method for drawing the curve.
+We set a starting point in <i>line 6</i>: moveTo(...), then set the control and ending points with a call to quadraticCurve(...), at <i>line 7</i>, then set some properties for color, thickness, and finally we call the stroke() method for drawing the curve.
 
 <h4>Example #2: lines connected with a quadratic curve</h4>
 
@@ -10545,6 +10549,7 @@ border: 1px solid black;
 37.     ctx.restore();
 38. }
 ```
+
 <p>
 This function takes as parameters the start and end points, the control point of the curve, the arrow width, the width of the arrow head.
 
@@ -10730,7 +10735,7 @@ context.stroke();
 14. context.stroke();
 ```
 
-In this example we use the closePath() method to draw a line between the last path point and the first path point (*line 11*), so that the drawing looks like a pair of goggles.
+In this example we use the closePath() method to draw a line between the last path point and the first path point (<i>line 11</i>), so that the drawing looks like a pair of goggles.
 
 Note how the different parts are linked together and make a "path":
 <!------------------------------------------------------------------------------------------------>
@@ -10768,7 +10773,7 @@ Note that:
 
 -   All values are strings;
 
--   *Line 4* defines a "transparent color", the "a" of "rgba" means "alpha channel". Its value is between 0 and 1, where 0 means "completely transparent" and 1 means "opaque".
+-   <i>Line 4</i> defines a "transparent color", the "a" of "rgba" means "alpha channel". Its value is between 0 and 1, where 0 means "completely transparent" and 1 means "opaque".
 
 Here is an example that shows how to draw different filled rectangles in blue, with different levels of transparency:
 <!------------------------------------------------------------------------------------------------>
@@ -10999,7 +11004,7 @@ This code is rather ugly isn't it? It would have been better  to use a loop...
 16. }
 ```
 
-The two loops (*lines 11-15*) draw only one cell out of two (see the j = i % 2 at *line 12*). i is the column number and if the column is odd or even, either we draw or we do not draw a rectangle.
+The two loops (<i>lines 11-15</i>) draw only one cell out of two (see the j = i % 2 at <i>line 12</i>). i is the column number and if the column is odd or even, either we draw or we do not draw a rectangle.
 
 This code is much more complex than the previous one, taking 16 lines instead of 13, but is much more powerful. Try to call the function with a value of 10, 20, or 2... 
 
@@ -11133,6 +11138,7 @@ border: 1px solid black;
 ```
 
 <h4>Extract from source code:</h4>
+
 ```
 1.  function drawCheckboard(n) {
 2.      <b>ctx.strokeStyle = grdFrenchFlag;</b>
@@ -11149,6 +11155,7 @@ border: 1px solid black;
 <h4>Example #4: what happens if we define a gradient smaller than the canvas?</h4>
 
 Let's go back to the very first example on this page - the one with the blue-white-red interpolated French flag. This time we will define a smaller gradient. Instead of going from (0, 0) to (300, 0), it will go from (100, 0) to (200, 0), while the canvas remains the same (width=300, height=200).
+
 ```
 1.  grdFrenchFlag = ctx.createLinearGradient(<b>100, 0, 200, 0</b>);
 ```
@@ -11801,7 +11808,7 @@ Below are 4 rectangles drawn with 4 different patterns.
 &nbsp;
 <br/>
 
-We said earlier that we cannot draw before the image used by a pattern is loaded. This can become rapidly complicated if we need to draw using multiple patterns. We need a way to load all images and then, *only when all images have been loaded, start drawing*.
+We said earlier that we cannot draw before the image used by a pattern is loaded. This can become rapidly complicated if we need to draw using multiple patterns. We need a way to load all images and then, <i>only when all images have been loaded, start drawing</i>.
 
 JavaScript is an asynchronous language. When you set the src attribute of an image, then an asynchronous request is sent by the browser, and then after a while, the onload callback is called... The difficult part to understand for those who are not familiar with JavaScript is that these requests are done in parallel and we do not know when, and in what order, the images will be loaded.
 
@@ -11944,9 +11951,9 @@ Your browser does not support the canvas tag.
 
 <b>Explanations:</b>
 <ul>
-<li>This function takes as a parameter the list of images to be loaded, and a drawCallback function that will be called only once all images have been loaded. This callback takes as a parameter a new object that is the list of images that have been loaded (see *line 16*).</li>
-<li>We first count the number of images to load (*lines 7-9*), then for each image to be loaded we create a new JavaScript image object (*line 12*) and set its src attribute (*line 19*) - this will start to load the image.</li>
-<li>When an image comes in, the onload callback is called (*line 14*) and inside, we increment the number of images loaded (*line 15*) and test if this number is >=  the total number of images that should be loaded. If this is the case, the callback function is called (*line 16*).</li>
+<li>This function takes as a parameter the list of images to be loaded, and a drawCallback function that will be called only once all images have been loaded. This callback takes as a parameter a new object that is the list of images that have been loaded (see <i>line 16</i>).</li>
+<li>We first count the number of images to load (<i>lines 7-9</i>), then for each image to be loaded we create a new JavaScript image object (<i>line 12</i>) and set its src attribute (<i>line 19</i>) - this will start to load the image.</li>
+<li>When an image comes in, the onload callback is called (<i>line 14</i>) and inside, we increment the number of images loaded (<i>line 15</i>) and test if this number is >=  the total number of images that should be loaded. If this is the case, the callback function is called (<i>line 16</i>).</li>
 </ul>
 
 <h4>Example of use of this loader</h4>
@@ -11963,12 +11970,11 @@ Your browser does not support the canvas tag.
 ```
 
 <h4>Explanations:</h4>
-
--   *Line 1* is the call to the image loader, the first parameter is the list of images to be loaded, while the second parameter is the callback function that will be called once all images have been loaded.
-
--   *Lines 2-5*: in this callback we create patterns from the loaded images (note the use of the property names imagesLoaded.flowers, etc. that makes the code easier to read).
-
--   *Line 7*: then we call a function that will draw the rectangles. 
+<ul>
+<li><i>Line 1</i> is the call to the image loader, the first parameter is the list of images to be loaded, while the second parameter is the callback function that will be called once all images have been loaded.</li>
+<li><i>Lines 2-5</i>: in this callback we create patterns from the loaded images (note the use of the property names imagesLoaded.flowers, etc. that makes the code easier to read).</li>
+<li><i>Line 7</i>: then we call a function that will draw the rectangles.</li>
+</ul>
 
 <h4>Here is the function:</h4>
 
@@ -12715,9 +12721,9 @@ clearInterval(requestId);
 26. </body>
 ```
 
-Here, we define a <div> element, (see the online source code for the CSS properties involved), and we use the setInterval method (*line 17*) to call every 10ms the render() method that will just increment the position of this element. Notice that since we're using the DOM, the horizontal position of the div is modified by changing its left CSS property.
+Here, we define a <div> element, (see the online source code for the CSS properties involved), and we use the setInterval method (<i>line 17</i>) to call every 10ms the render() method that will just increment the position of this element. Notice that since we're using the DOM, the horizontal position of the div is modified by changing its left CSS property.
 
-The call to setInterval returns an id we can use to stop the animation, by calling clearInterval (*line 22*).
+The call to setInterval returns an id we can use to stop the animation, by calling clearInterval (<i>line 22</i>).
 
 <h4>Animate a monster in a canvas, using setInterval</h4>
 
@@ -12876,11 +12882,11 @@ clearInterval(requestId);
 
 <h4>Explanations:</h4>
 
--   *Lines 52-61*: The code for launching and stopping the animation is similar to that from the previous example.
+-   <i>Lines 52-61</i>: The code for launching and stopping the animation is similar to that from the previous example.
 
--   *Lines 34-50*: The code that draws the monster is that which we saw earlier when we presented the 2D transformations. Best practice is to save and restore the context at the beginning and end of each function that changes the context.
+-   <i>Lines 34-50</i>: The code that draws the monster is that which we saw earlier when we presented the 2D transformations. Best practice is to save and restore the context at the beginning and end of each function that changes the context.
 
--   *Lines 21-32*: <b>The most interesting part is the animation loop</b> that implements the basic animation steps: *clear-draw-move*. In order to make a shape "movable", we use some "state variables" for its position and angle, and we modify them at each iteration (*lines 29-32*). We will see later on how to modify the value of these variables on user interactions (keyboard, mouse, etc.).
+-   <i>Lines 21-32</i>: <b>The most interesting part is the animation loop</b> that implements the basic animation steps: <i>clear-draw-move</i>. In order to make a shape "movable", we use some "state variables" for its position and angle, and we modify them at each iteration (<i>lines 29-32</i>). We will see later on how to modify the value of these variables on user interactions (keyboard, mouse, etc.).
 
 <h4>Problems with setInterval</h4>
 
@@ -12899,13 +12905,13 @@ except for trivial cases (change a color every second).
 
 <h3 id="ch4-2-4">4.2.4 Animating Using setTimeout()</h3>
 
-One thing you should always remember about using setInterval: if we set number of milliseconds at - let's say 20ms - it will call our game loop function EACH 20ms, *even if the previous one is not yet finished*. This may lead to many problems (incomplete rendering, etc.).
+One thing you should always remember about using setInterval: if we set number of milliseconds at - let's say 20ms - it will call our game loop function EACH 20ms, <i>even if the previous one is not yet finished</i>. This may lead to many problems (incomplete rendering, etc.).
 
 That's where we can use another function: 
 
 -   setTimeout(function, ms);
 
-This function works like setInterval(...) with one difference: it calls your function ONCE and *AFTER a given amount of time*.
+This function works like setInterval(...) with one difference: it calls your function ONCE and <i>AFTER a given amount of time</i>.
 
 <h4>Example of the monster animated in a canvas with setTimeout</h4>
 
@@ -13141,7 +13147,7 @@ You will note that  requestAnimationFrame(function) is used like setTimeout(
 27. }
 ```
 
-Notice that calling requestAnimationFrame(animationLoop) at* line 19*, and after that from within the loop at line 14, asks the browser to call the animationLoop function so that the delta between calls will be <b>as close as possible to 16.6ms  (this corresponds to 1/60th of a second)</b>.
+Notice that calling requestAnimationFrame(animationLoop) at <i>line 19</i>, and after that from within the loop at line 14, asks the browser to call the animationLoop function so that the delta between calls will be <b>as close as possible to 16.6ms  (this corresponds to 1/60th of a second)</b>.
 
 <h4>Is the 16.6ms delay really accurate? Can we trust it?</h4>
 
@@ -13157,7 +13163,7 @@ Many HTML5 games perform what we call a "time-based animation". For this, we n
 
 Depending on this time, we can compute the distances that must be achieved by each object on the screen in order to move at a constant speed (for a human eye), independently of the CPU or GPU of the computer or mobile device that is running the game.
 
-The timeStamp parameter of the animationLoop function (*line 1* in the above code) is useful for exactly that: it gives a high resolution time. By measuring deltas between two consecutive calls of the animationLoop, we will know exactly, with a sub-millisecond accuracy, the elapsed time between two frames.
+The timeStamp parameter of the animationLoop function (<i>line 1</i> in the above code) is useful for exactly that: it gives a high resolution time. By measuring deltas between two consecutive calls of the animationLoop, we will know exactly, with a sub-millisecond accuracy, the elapsed time between two frames.
 
 Using time-based animation, and more generally, using the canvas element for writing HTML5 games, is part of the W3Cx HTML5 Apps and Games course.
 
@@ -13167,7 +13173,7 @@ Current <a href="https://caniuse.com/requestanimationframe">support</a> is rea
 
 In JavaScript, we treat events made by users as an input, and we manipulate the DOM structure as an output. Most of the time in games/animations, we will change state variables of moving objects, such as position or speed of an alien ship, and the animation loop will take care of these variables to move the objects.
 
-The events are called *DOM events*, and we use the *DOM JavaScript API* to create *event handlers*.
+The events are called <i>DOM events</i>, and we use the <i>DOM JavaScript API</i> to create <i>event handlers</i>.
 
 <h4>There are three ways to manage events in the DOM structure</h4>
 
@@ -14816,7 +14822,7 @@ Here is how it looks on some mobile devices:
 6.  </html>
 ```
 
-*Note*: In this chapter we are simplifying the examples, as we usually embed input elements in a &lt;form&gt;...</form>.
+<i>Note</i>: In this chapter we are simplifying the examples, as we usually embed input elements in a &lt;form&gt;...</form>.
 
 Try &lt;input type="color"&gt; online with this <a href="https://jsbin.com/cajuzob/1/edit?html,output"> JSBin example</a>. Or do it here in your browser: just click on the purple square below : 
 
@@ -14868,7 +14874,7 @@ The <input type="color"> can fire change or input events. Here is an examp
 
 By default, the color selector offers many options that may either frighten some users or just not be appropriate for the purpose of the application. 
 
-*Good news*: it is possible to restrict the choices, and also simplify the user interface, by using a &lt;datalist&gt; with some <option> elements inside. 
+<i>Good news</i>: it is possible to restrict the choices, and also simplify the user interface, by using a &lt;datalist&gt; with some <option> elements inside. 
 
 Example: click the black rectangle on the right:  . The following should be displayed:
 <!------------------------------------------------------------------------------------------------>
@@ -14899,11 +14905,11 @@ Note that the id of the &lt;datalist&gt; element should be the same as the v
 
 <h4>What are the main problems with this element?</h4>
 
-The main criticism that Web designers make about this element is related to its default appearance being strongly dependent on the browser and its underlying operating system. Changing the *look and feel* is not possible, except with the use of the options we saw in the previous sections of this page. This problem is also true for other input elements that renders as complex widgets, like <input type="date"> and its variants.
+The main criticism that Web designers make about this element is related to its default appearance being strongly dependent on the browser and its underlying operating system. Changing the <i>look and feel</i> is not possible, except with the use of the options we saw in the previous sections of this page. This problem is also true for other input elements that renders as complex widgets, like <input type="date"> and its variants.
 
 Another problem is that there is no way to control where the dialog that contains the color chooser will appear - no positioning via CSS or JavaScript is possible. The specification does not say anything about how to position it over the page, thus the result is vendor specific.
 
-The solution proposed by the W3C and its contributors is called *Web Components*, a new approach for designing HTML5 widgets, that is covered in the W3Cx HTML5 Apps and Games course.
+The solution proposed by the W3C and its contributors is called <i>Web Components</i>, a new approach for designing HTML5 widgets, that is covered in the W3Cx HTML5 Apps and Games course.
 
 <h3 id="ch5-4-3">5.4.3 "date"</h3>
 
@@ -14936,7 +14942,7 @@ Below are a few screenshots of the HTML5 date picker on several mobile devices.�
    alt="Date picker 3 on mobile." />
 </p>
 
-The problem is different on a desktop. While it's great to have native support for a date picker, Web developers would sometimes prefer 100% control over the *look and feel* of the date picker widget. For this purpose, the solution undoubtedly lies with the new [Web Components](https://webcomponents.org/) (a way to make custom reusable widgets in HTML/CSS/JS), to be detailed in the W3Cx HTML5 Apps and Games course
+The problem is different on a desktop. While it's great to have native support for a date picker, Web developers would sometimes prefer 100% control over the <i>look and feel</i> of the date picker widget. For this purpose, the solution undoubtedly lies with the new [Web Components](https://webcomponents.org/) (a way to make custom reusable widgets in HTML/CSS/JS), to be detailed in the W3Cx HTML5 Apps and Games course
 
 Why don't you try it yourself? Just click on this input field:    
 
@@ -15089,13 +15095,13 @@ Here is [an interactive example at JSBin](https://jsbin.com/ganipuv/edit?html,o
 27. </html>
 ```
 
-*Lines 20-26* show how we can detect a date change using JavaScript.
+<i>Lines 20-26</i> show how we can detect a date change using JavaScript.
 
 <h4>Checking if the chosen date is in the past or in the future using the valueAsDate property</h4>
 
 The object returned to the input event handler has a useful property named valueAsDate. This is a JavaScript date object that can be compared to other JavaScript date objects, in particular to the date of the day we can get with var date = new Date();
 
-[The following example at JSBin](https://jsbin.com/renevaf/edit?html,output) shows how to ascertain whether a date is in the past or in the future: 
+<a href="https://jsbin.com/renevaf/edit?html,output">The following example at JSBin</a> shows how to ascertain whether a date is in the past or in the future: 
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 235.  (xxx) ------------------->
@@ -15253,9 +15259,9 @@ This input type is relatively straightforward to use. In mobile applications, th
 
 This input type is very interesting as it provides default validation behaviors:
 
-If the value entered looks like an email address (contains a "@"...), the field is *valid*, and gets the pseudo CSS class  :valid
+If the value entered looks like an email address (contains a "@"...), the field is <i>valid</i>, and gets the pseudo CSS class  :valid
 
-If the value entered does not contain an "@", and does not look like an email address, the field is *invalid* and gets the pseudo CSS class :invalid
+If the value entered does not contain an "@", and does not look like an email address, the field is <i>invalid</i> and gets the pseudo CSS class :invalid
 
 See the next example to see this in action. More details will be presented in a later section dedicated to form validation.
 
@@ -15293,7 +15299,7 @@ Try it on your browser:                         Enter your email: 
 16. </html>
 ```
 
-Note the CSS rule that turns the background color of the email input field to pink if a user enters an invalid address (*lines 7-8*). Also note that the validation is based only on matching a regular expression (the address should contain a "@",  a ".", etc.). It does not check if the address is an existing one.
+Note the CSS rule that turns the background color of the email input field to pink if a user enters an invalid address (<i>lines 7-8</i>). Also note that the validation is based only on matching a regular expression (the address should contain a "@",  a ".", etc.). It does not check if the address is an existing one.
 
 <input type="tel">
 
@@ -15334,6 +15340,7 @@ Try it in your browser (we used the same CSS for changing the background-color w
 Enter a telephone number: 
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15368,7 +15375,7 @@ This input field is really useful on smartphones and tablets, as it makes the br
    alt="Mobile keyboard for entering URLs" />
 </p>
 
-This field is also compatible with *the validation API* (more on this in another section).
+This field is also compatible with <i>the validation API</i> (more on this in another section).
 
 Here is an online example that shows the use of the placeholder and pattern attributes for entering only URLs that start with ftp:// or https://
 
@@ -15402,7 +15409,7 @@ Enter a URL (custom validation, must start with http, https or ftp): 
 20. </html>
 ```
 
-*Lines 16-17* show the use of a pattern attribute with a JavaScript regexp that accepts only URLs starting with http, https or ftp. More details on the pattern attribute are given in the section that presents the new HTML5 form attributes.
+<i>Lines 16-17</i> show the use of a pattern attribute with a JavaScript regexp that accepts only URLs starting with http, https or ftp. More details on the pattern attribute are given in the section that presents the new HTML5 form attributes.
 
 <input type="search">
 
@@ -15523,9 +15530,9 @@ This field accepts specific attributes max, min, step, value (default disp
 
 This input type is very interesting as it provides default validation behaviors:
 
-If the value entered using a keyboard is not a valid number, or is not in the range defined by the min and max attributes, the field is *invalid* and gets the pseudo CSS class :invalid.
+If the value entered using a keyboard is not a valid number, or is not in the range defined by the min and max attributes, the field is <i>invalid</i> and gets the pseudo CSS class :invalid.
 
-If the difference between the value you enter and min is a multiple of step, then it gets the CSS pseudo class :valid , otherwise it will be *invalid*. Example: if min=1 and step=5, the field will be valid with value=1, 6, 11, 16 etc. if min=0, with value=0, 5, 10, 15 etc.
+If the difference between the value you enter and min is a multiple of step, then it gets the CSS pseudo class :valid , otherwise it will be <i>invalid</i>. Example: if min=1 and step=5, the field will be valid with value=1, 6, 11, 16 etc. if min=0, with value=0, 5, 10, 15 etc.
 
 <b>WARNING 1<b>: <b>Using a step attribute with an integer value will make the arrows increment/decrement the current value with the step value, and [make the input field valid only when ]the difference between the value you enter and min is a multiple of step. <b>
 
@@ -16190,7 +16197,7 @@ Their detailed use with these input fields have already been explained in sectio
 14. <input id="range" name="range" type="range" min="0" max="100" step="5"/>
 ```
 
-### 5.5.8 multiple
+<h3 id="ch5-5-8">5.5.8 Multiple attribute</h3>
 
 The multiple attribute is used with email and file input types. It's a Boolean attribute, so here are the different syntax possibilities:
 
@@ -16202,7 +16209,7 @@ The multiple attribute is used with email and file input types. It's a Boo
 
 With <input type="email">
 
-With the <input type="email">, this attribute enables the user to enter *a set of addresses, separated by a comma* instead of a single address. Entering several addresses will keep the input field *valid*.
+With the <input type="email">, this attribute enables the user to enter <i>a set of addresses, separated by a comma</i> instead of a single address. Entering several addresses will keep the input field <i>valid</i>.
 
 [Online example at JSBin ](https://jsbin.com/mexirif/1/edit?html,output)
 
@@ -16322,7 +16329,7 @@ The formmethod attribute does the same with the POST/GET method attribute of
 6.  </form>
 ```
 
-*Line 3* overrides the values set in *line 1*. 
+<i>Line 3</i> overrides the values set in <i>line 1</i>.
 
 <h4>Examples</h4>
 
@@ -16448,7 +16455,7 @@ Family name: ![](./images/image269.wmf)
 
 <p>A word about the enctype attribute of the &lt;form&gt; element
 
-The enctype attribute existed before HTML5. It is often used together with forms that contain file input fields. For sending files to a remote server, we use <b>"*multipart*" forms</b>. This special encoding of forms needs to be specified using the enctype attribute, as shown in the example below:
+The enctype attribute existed before HTML5. It is often used together with forms that contain file input fields. For sending files to a remote server, we use <b>"<i>multipart</i>" forms</b>. This special encoding of forms needs to be specified using the enctype attribute, as shown in the example below:
 
 <a href="https://jsbin.com/magexat/3/edit?html,output">Online example at JSBin</a>:
 
@@ -16567,9 +16574,8 @@ And if you start again and click on the left submit button, the one without the 
 
 <p>Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&gt;, <output>, <meter>  and <progress> elements).
 
-+-------------------------------------------+-----------------------------------+
 | HTML4                                     | HTML5                             |
-+===========================================+===================================+
+|-------------------------------------------|-----------------------------------|
 | -   &lt;form&gt;                              | -   &lt;datalist&gt;                  |
 |                                           |                                   |
 | -   &lt;fieldset&gt;                          | -   <output>                    |
@@ -16722,9 +16728,9 @@ Grades:  
 
 ![The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the <meter> element (line 9) and update the displayed html content of the <output> element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
 
-The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)") at li*ne 4*.
+The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)") at <i>line 4</i>.
 
-The effect JavaScript function will change the current value of the <meter> element (*line 9*) and update the displayed html content of the <output> element (*line 10*).
+The effect JavaScript function will change the current value of the <meter> element (<i>line 9</i>) and update the displayed html content of the <output> element (<i>line 10</i>).
 
 The color of the gauge changes depending on the attribute's values
 
@@ -16893,7 +16899,7 @@ Source code of this example:
 12. </form>
 ```
 
-As you can see at l*ines 2* and *4*, the id and list attributes match. The &lt;datalist&gt; element is wrapped around a set of  <option> that are available for selection by another form control (in this example the input field from *line 2*).
+As you can see at l<i>ines 2</i> and <i>4</i>, the id and list attributes match. The &lt;datalist&gt; element is wrapped around a set of  <option> that are available for selection by another form control (in this example the input field from <i>line 2</i>).
 
 <h3 id="ch5-7-1">5.7.1 Introduction</h3>
 
@@ -17015,9 +17021,9 @@ Submit form
 
 This time, we just added an attribute class="myForm" to our form, in order to avoid interfering with the other examples on this page, and we tweaked the CSS rules a little.
 
-The rule at *line 1* says that any time we click on an input field, it will enlarge itself to the right, while the rule at *line 4* will make it animated.
+The rule at <i>line 1</i> says that any time we click on an input field, it will enlarge itself to the right, while the rule at <i>line 4</i> will make it animated.
 
-The rules at *lines 8* and 1*1* target the input fields with a required attribute. They will change the background by displaying a small green or red icon, corresponding to the valid/invalid status of the input field.
+The rules at <i>lines 8</i> and 1<i>1</i> target the input fields with a required attribute. They will change the background by displaying a small green or red icon, corresponding to the valid/invalid status of the input field.
 
 <h4>Use the title attribute for specifying a custom message</h4>
 
@@ -17050,7 +17056,7 @@ Submit form
 11. </form>
 ```
 
-*Beware* that browser implementations may differ. Chrome, Opera will display the title attribute value in error message bubbles when the form is submitted, while Safari and FireFox (desktop and mobile) will simply ignore it.
+<i>Beware</i> that browser implementations may differ. Chrome, Opera will display the title attribute value in error message bubbles when the form is submitted, while Safari and FireFox (desktop and mobile) will simply ignore it.
 
 You must also take care of the different languages, otherwise you will get error message bubbles that show some parts in the local language, and the message from the title attribute "as is".
 
@@ -17156,7 +17162,7 @@ Bottom of Form
 
 <h4>Explanations:</h4>
 
-The validity API proposes a setCustomValidity() method available on input DOM objects. This method allows you to customize error messages. It takes a string parameter. When this string is empty, the element is considered *valid*, when the string is not empty, the field is *invalid* and the validation error message displayed in the bubble will be equal to that string.
+The validity API proposes a setCustomValidity() method available on input DOM objects. This method allows you to customize error messages. It takes a string parameter. When this string is empty, the element is considered <i>valid</i>, when the string is not empty, the field is <i>invalid</i> and the validation error message displayed in the bubble will be equal to that string.
 
 At <i>lines 18</i> and <i>20</i> we added an input event listener: each time a key is typed, the checkPasswords() function is called.
 
@@ -17164,7 +17170,7 @@ At <i>lines 18</i> and <i>20</i> we added an input event listener: each ti
 
 <h3 id="ch5-7-4">5.7.4 The validity property of input fields</h3>
 
-The validity property of input fields helps to get error details when the field is *invalid*. This property tests the different types of validation error.
+The validity property of input fields helps to get error details when the field is <i>invalid</i>. This property tests the different types of validation error.
 
 Here is how to get the validity property of an input field:
 
@@ -17275,7 +17281,7 @@ The techniques we have seen so far for enhancing HTML forms are powerful and pr
 
 -   Browser support is still not 100% complete (Safari and Internet Explorer still lack several important features),
 
--   It is not possible to aggregate error messages.  On submission, browsers show an error bubble next to the first invalid field, and there is no built-in way to *display all error messages for all invalid fields at the same time*,
+-   It is not possible to aggregate error messages.  On submission, browsers show an error bubble next to the first invalid field, and there is no built-in way to <i>display all error messages for all invalid fields at the same time</i>,
 
 -   You cannot style the bubbles.
 
@@ -17409,21 +17415,21 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 
 <h4>Explanations:</h4>
 
--   *Line 32*: we added an empty unnumbered list (<ul>..</ul>) to the form, with the CSS class="error-messages". We will use this class attribute for styling, and hiding by default, the error messages using CSS (see lines *12-20*, *line 13* hides the messages by default).
+-   <i>Line 32</i>: we added an empty unnumbered list (<ul>..</ul>) to the form, with the CSS class="error-messages". We will use this class attribute for styling, and hiding by default, the error messages using CSS (see lines <i>12-20</i>, <i>line 13</i> hides the messages by default).
 
--   *Lines 97-102* look at all forms in the document and call a function that will replace the default validation behavior for all of them: the replaceValidationUI(form) function.
+-   <i>Lines 97-102</i> look at all forms in the document and call a function that will replace the default validation behavior for all of them: the replaceValidationUI(form) function.
 
--   This function first disables all default behavior (no more display of bubbles during form submission), this is done at *lines 45-57*.
+-   This function first disables all default behavior (no more display of bubbles during form submission), this is done at <i>lines 45-57</i>.
 
--   *Line 66*: we add a click listener to the submit button of the current form.
+-   <i>Line 66</i>: we add a click listener to the submit button of the current form.
 
--   *Line 67* gets all invalid input fields for that form,
+-   <i>Line 67</i> gets all invalid input fields for that form,
 
--   *Lines 76-83*: For each invalid field, we get the value of the name attribute of the corresponding label, we also get the validation error message, and we build a list item(<li>...</li>).
+-   <i>Lines 76-83</i>: For each invalid field, we get the value of the name attribute of the corresponding label, we also get the validation error message, and we build a list item(<li>...</li>).
 
--   *Line 86*: Then we add this list element (a formatted error message corresponding to an invalid input field) to the error message container.
+-   <i>Line 86</i>: Then we add this list element (a formatted error message corresponding to an invalid input field) to the error message container.
 
--   *Lines 90-93*: The focus is given to the first invalid field that shows an error message.
+-   <i>Lines 90-93</i>: The focus is given to the first invalid field that shows an error message.
 
 <h3 id="ch6-1-1">6.1.1 Video Intro -- Module 6</h3>
 
@@ -17453,7 +17459,7 @@ However, HTML5 also comes with several APIs that are not directly related to HTM
 
 This week, we will look at some of the most useful APIs. Others will be covered in the <a href="https://www.edx.org/course/html5-apps-and-games">W3C HTML5 Apps and Games course</a>:
 <ul>
-<li><b>The "Web Storage" API, sort of "super cookies", for storing pairs of key/values client side.</b> This API is useful for enabling Web sites to save/restore their state, or for writing *serverless* applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.</li>
+<li><b>The "Web Storage" API, sort of "super cookies", for storing pairs of key/values client side.</b> This API is useful for enabling Web sites to save/restore their state, or for writing <i>serverless</i> applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.</li>
 <li><b>The File API, that enables Web applications to work with local files</b>. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.</li>
 </ul>
 
