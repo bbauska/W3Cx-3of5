@@ -5568,7 +5568,7 @@ Popular players such as <a href="https://www.jwplayer.com/">JWPlayer</a> have 
 <!---------------------- 102. custom look and feel with html5 logo (121) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image002.jpeg?raw=true"
+<img src="/images/image102.jpeg?raw=true"
    alt="Custom look and feel with html5 logo."
    width="55%">
 &nbsp;
@@ -5790,7 +5790,7 @@ webcamStream.getTracks()[1].stop(); // video
 
 <h4>Other examples that mix what we've seen in previous chapters, but this time with a live video stream</h4>
 
-<h4> Applying CSS effects on a video element with a live webcam</h4>
+<h4>Applying CSS effects on a video element with a live webcam</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 108. example: css filter effects (127) ----------------------------->
@@ -5933,12 +5933,13 @@ Click the button "start webcam at the end of this page, then click on the video 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image109.png?raw=true"
-   alt="."
+   alt="Copy/paste video stream into a canvas."
    width="65%">
 &nbsp;
 <br/>
 
 <h4>JS</h4>
+
 ```
 //--------------------
 // GET USER MEDIA CODE
@@ -5981,6 +5982,7 @@ ctx.drawImage(video, 0,0, canvas.width, canvas.height);
 ```
 
 <h4>CSS</h4>
+
 ```
 canvas {
 border:1px solid black;
@@ -5988,6 +5990,7 @@ border:1px solid black;
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -6019,7 +6022,7 @@ Screenshots : <p>
 <li><a href="https://webcamtoy.com/">Webcam Toy</a>: video effects on Paul Neave's webcam (using WebGL)</li>
 </ul>
 
-<h3>2.4.3 Using the Microphone</h3>
+<h3 id="ch2-4-3">2.4.3 Using the Microphone</h3>
 
 <p>Instead of using the getUserMedia API with: navigator.getUserMedia({video:true}, onSuccess, onError), it is also possible to use {audio:true} for the first parameter. In this case, only the microphone input will be captured. Notice that {video:true, audio:true} is also accepted, if you write a video conferencing system and need to capture both the audio and the video (this is often the case when writing WebRTC applications).
 
