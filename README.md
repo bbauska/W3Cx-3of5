@@ -5832,7 +5832,6 @@ webcamStream.getTracks()[1].stop(); // video
 //------------------------------
 // CODE FOR CHANGING CSS FILTERS
 //------------------------------
-```
 let idx = 0;
 let filters = [
 'grayscale',
@@ -5927,7 +5926,7 @@ Click the button "start webcam at the end of this page, then click on the video 
 
 <h4>Taking a snapshot from the live Webcam stream</h4>
 
-The trick is to copy and paste the current image from the video stream into a &lt;canvas&gt; element.
+<p>The trick is to copy and paste the current image from the video stream into a &lt;canvas&gt; element.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 109. copy/paste video stream into a 'canvas' (129) ----------------------->
@@ -6012,26 +6011,26 @@ Screenshots : <p>
 </html>
 ```
 
-<p>We will look at this example in greater detail in the next course section (related to the &lt;canvas&gt; element).
+<p>We will look at this example in greater detail in the next course section (related to the &lt;canvas&gt; element).</p>
 
 <h4>Impressive demonstrations available on the Web</h4>
-
--   [WebCam pixelization! Fun!](https://codepen.io/dlueth/pen/zBhwv)
-
--   [Webcam Toy](https://webcamtoy.com/): video effects on Paul Neave's webcam (using WebGL)
+<ul>
+<li><a href="https://codepen.io/dlueth/pen/zBhwv">WebCam pixelization! Fun!</a></li>
+<li><a href="https://webcamtoy.com/">Webcam Toy</a>: video effects on Paul Neave's webcam (using WebGL)</li>
+</ul>
 
 <h3>2.4.3 Using the Microphone</h3>
 
-Instead of using the getUserMedia API with: navigator.getUserMedia({video:true}, onSuccess, onError), it is also possible to use {audio:true} for the first parameter. In this case, only the microphone input will be captured. Notice that {video:true, audio:true} is also accepted, if you write a video conferencing system and need to capture both the audio and the video (this is often the case when writing WebRTC applications).
+<p>Instead of using the getUserMedia API with: navigator.getUserMedia({video:true}, onSuccess, onError), it is also possible to use {audio:true} for the first parameter. In this case, only the microphone input will be captured. Notice that {video:true, audio:true} is also accepted, if you write a video conferencing system and need to capture both the audio and the video (this is often the case when writing WebRTC applications).
 
-Apart from videoconferencing, microphone input will be used for music Web apps, from the [WebAudio API](https://www.w3.org/TR/webaudio/). This API focuses on real time sound processing and music synthesis. This API is covered in the advanced W3Cx HTML5 course ([HTML5 Apps and Games](https://www.edx.org/course/html5-apps-and-games)).
+Apart from videoconferencing, microphone input will be used for music Web apps, from the <a href="https://www.w3.org/TR/webaudio/">WebAudio API</a>. This API focuses on real time sound processing and music synthesis. This API is covered in the advanced W3Cx HTML5 course (<a href="https://www.edx.org/course/html5-apps-and-games">HTML5 Apps and Games</a>).
 
-Check out the [WebAudio demonstrations](https://webaudiodemos.appspot.com/) written by Chris Wilson, esp. the one called "Input effects".
+Check out the <a href="https://webaudiodemos.appspot.com/">WebAudio demonstrations</a> written by Chris Wilson, esp. the one called "Input effects".
 
-The image below is taken from [one of the demonstrations](https://webaudiodemos.appspot.com/input/index.html), where the sound captured by the microphone is processed in real time. We get visualizations of the signal in real time as an animated waveform, animated frequencies or animated audiogram. If we connect an electric guitar to the sound card input, then this demonstration shows that we can recreate with WebAudio most of the classic effects used by guitarists (delay, reverb, distortion, chorus, etc.).
+The image below is taken from <a href="https://webaudiodemos.appspot.com/input/index.html">one of the demonstrations</a>, where the sound captured by the microphone is processed in real time. We get visualizations of the signal in real time as an animated waveform, animated frequencies or animated audiogram. If we connect an electric guitar to the sound card input, then this demonstration shows that we can recreate with WebAudio most of the classic effects used by guitarists (delay, reverb, distortion, chorus, etc.).</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 110. webaudio live processing (xxx) ------------------------------>
+<!----------------------------- 110. webaudio live processing (131) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image110.jpeg?raw=true"
@@ -6048,12 +6047,12 @@ For more information, this <a href="https://developer.mozilla.org/en-US/docs/We
 <h4>Typical use:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 111.  (xxx) ------------------------------>
+<!------------------------------ 111. set camera resolution (132) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image111.png?raw=true"
    width="65%"
-   alt="" />
+   alt="Set the camera resolution." />
 </p>
 
 <h4>JS</h4>
@@ -6140,41 +6139,41 @@ border:1px solid;
 <h4>HTML</h4>
 
 ```
-> <!DOCTYPE html>
-> <html lang="en">
-> <head>
-> <meta charset="utf-8"/>
-> <title>getUserMedia constraints for Webcam resolutions</title>
-> </head>
-> <body onload="init();">
-> <h1>Set the camera resolution</h1>
-> Example adapted from:
-> <a href="https://www.simpl.info/getusermedia/constraints/">
-> https://www.simpl.info/getusermedia/constraints/
-> </a>
-> <br>
-> <p>Click a button to call <code>getUserMedia()</code> with appropriate resolution. </p>
-> <div id="buttons">
-> <button id="qvga">QVGA</button>
-> <button id="vga">VGA</button>
-> <button id="hd">HD</button>
-> </div>
-> <p id="dimensions"></p>
-> <video autoplay></video>
-> </body>
-> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>getUserMedia constraints for Webcam resolutions</title>
+</head>
+<body onload="init();">
+  <h1>Set the camera resolution</h1>
+  Example adapted from:
+  <a href="https://www.simpl.info/getusermedia/constraints/">
+  https://www.simpl.info/getusermedia/constraints/
+  </a>
+  <br>
+  <p>Click a button to call <code>getUserMedia()</code> with appropriate resolution. </p>
+  <div id="buttons">
+  <button id="qvga">QVGA</button>
+  <button id="vga">VGA</button>
+  <button id="hd">HD</button>
+  </div>
+<p id="dimensions"></p>
+  <video autoplay></video>
+</body>
+</html>
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 112.  (xxx) ------------------------------>
+<!------------------------------ 112. set camera resolution (134) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image112.png?raw=true"
    width="45%"
-   alt="" />
+   alt="Set the camera resolution." />
 </p>
 
-Code source extract related to the "constraint" object which specifies the desired resolutions:
+<h4>Code source extract related to the "constraint" object which specifies the desired resolutions:</h4>
 
 ```
 1.  var vgaConstraints = {
@@ -6236,12 +6235,12 @@ Code source extract related to the "constraint" object which specifies the desir
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 113. webapp for selecting audio and video input/output (xxx) ------------------->
+<!--------------- 113. webapp for selecting audio and video input/output (135) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image113.jpeg?raw=true"
    width="45%"
-   alt="webapp for selecting audio and video input/output" />
+   alt="Webapp for selecting audio and video input/output." />
 </p>
 
 <h4>Source code extract:</h4>
@@ -6276,15 +6275,16 @@ Code source extract related to the "constraint" object which specifies the desir
 For example, the MediaRecorder API is used to record the video stream from a WebCam as a file saved on the hard disk. Below is a screenshot of an application allowing to record the WebCam. You will be able to run this example a little further, but for security reasons, it cannot run directly in this Web page.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 114. Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element (xxx) ------------------->
+<!--------------- 114. Screenshot showing on the left the webcam video stream, and on the -------->
+<!-------------- right the same stream recorded and playable in a HTML video element (136) ------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image114.jpeg?raw=true"
    width="40%"
-   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element" />
+   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element." />
 </p>
 
-Let's record, replay and download the video stream captured using a Webcam. You can test it below by clicking on "CodePen" at the top right:
+<p>Let's record, replay and download the video stream captured using a Webcam. You can test it below by clicking on "CodePen" at the top right:</p>
 
 <b>JS</b>
 
@@ -6346,29 +6346,29 @@ mediaRecorder.ondataavailable = handleDataAvailable;
 mediaRecorder.start(10); // collect 10ms of data
 console.log('MediaRecorder started', mediaRecorder);
 }
-> function stopRecording() {
-> mediaRecorder.stop();
-> console.log('Recorded Blobs: ', recordedBlobs);
-> recordedVideo.controls = true;
-> }
-> function play() {
-> var superBuffer = new Blob(recordedBlobs, {type: 'video/webm'});
-> recordedVideo.src = window.URL.createObjectURL(superBuffer);
-> }
-> function download() {
-> var blob = new Blob(recordedBlobs, {type: 'video/webm'});
-> var url = window.URL.createObjectURL(blob);
-> var a = document.createElement('a');
-> a.style.display = 'none';
-> a.href = url;
-> a.download = 'test.webm';
-> document.body.appendChild(a);
-> a.click();
-> setTimeout(function() {
-> document.body.removeChild(a);
-> window.URL.revokeObjectURL(url);
-> }, 100);
-> }
+function stopRecording() {
+mediaRecorder.stop();
+console.log('Recorded Blobs: ', recordedBlobs);
+recordedVideo.controls = true;
+}
+function play() {
+var superBuffer = new Blob(recordedBlobs, {type: 'video/webm'});
+recordedVideo.src = window.URL.createObjectURL(superBuffer);
+}
+function download() {
+var blob = new Blob(recordedBlobs, {type: 'video/webm'});
+var url = window.URL.createObjectURL(blob);
+var a = document.createElement('a');
+a.style.display = 'none';
+a.href = url;
+a.download = 'test.webm';
+document.body.appendChild(a);
+a.click();
+setTimeout(function() {
+document.body.removeChild(a);
+window.URL.revokeObjectURL(url);
+}, 100);
+}
 ```
 
 <b>CSS</b>
@@ -6464,8 +6464,7 @@ margin: 0 10px 10px 0;
 2.  mediaRecorder = new MediaRecorder(stream, options);
 ```
 
-<p>
-... where stream is typically the object returned by the call to getUserMedia (see previous examples).</p>
+<p>... where stream is typically the object returned by the call to getUserMedia (see previous examples).</p>
 
 <h4>2 - Add a "data handler" and call the start() method of the mediaRecorder object</h4>
 
@@ -6537,7 +6536,7 @@ Like that, the recorded stream can be played using a standard HTML5 &lt;video&g
 
 <h3 id="ch3-2-1">3.2.1 About JavaScript and HTML5</h3>
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 115. javascript logo (xxx) ------------------->
+<!-------------------------------- 115. javascript logo (140) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image115.png?raw=true"
@@ -6545,60 +6544,59 @@ Like that, the recorded stream can be played using a standard HTML5 &lt;video&g
    alt="JavaScript logo" />
 </p>
 
-HTML5 is composed of new elements, but it also comes with many JavaScript APIs for controlling video and sound, drawing and animating things in the new &lt;canvas&gt; element, for offline applications, persistence, geolocation, orientation, etc.
+<p>HTML5 is composed of new elements, but it also comes with many JavaScript APIs for controlling video and sound, drawing and animating things in the new &lt;canvas&gt; element, for offline applications, persistence, geolocation, orientation, etc.
 
 So yes, during this course, in particular in Modules 3 and 4, you will have to do a bit of JavaScript. <b>But, DON'T PANIC!</b>
 
 Here we provide a basic introduction to JavaScript. If you want to learn more, many resources are available on the Web; this document is simply here to give you a head start. Remember that one great thing about these MOOCs courses is that everybody can help each other. Some students are very good in JavaScript and are usually very happy to help others when they encounter difficulties.
 
-<b>You will learn a lot by looking at examples, tweaking them, cloning and modifying them, etc.</b> Many previous students who were real JavaScript beginners managed to do [all] the assignments (drawing and animating a monster with keyboard/mouse interaction)! And they did this by just studying the provided examples.
+<b>You will learn a lot by looking at examples, tweaking them, cloning and modifying them, etc.</b> Many previous students who were real JavaScript beginners managed to do [all] the assignments (drawing and animating a monster with keyboard/mouse interaction)! And they did this by just studying the provided examples.</p>
 
 <h4>External resources</h4>
-
--   The[ JavaScript Introduction](https://www.edx.org/course/javascript-introduction) course on W3Cx!
-
--   Mozilla Developper Network [has a JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+<ul>
+<li>The <a href="https://www.edx.org/course/javascript-introduction">JavaScript Introduction</a> course on W3Cx!</li>
+<li>Mozilla Developper Network <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">has a JS guide</a></li>
+</ul>
 
 <h4>What do you need? How to debug? How to catch errors?</h4>
 
-We will not look at the JavaScript syntax here, but more at "JavaScript in the browser", how it works, how to start writing code, etc.
+<p>We will not look at the JavaScript syntax here, but more at "JavaScript in the browser", how it works, how to start writing code, etc.
 
 First of all, you need to find a way to debug your code and see errors. If your work does not produce any results, you must know why!
 
-For that you will use the dev. tools of your browser. Press *F12* in Windows or *cmd-alt-i* in Mac to open the dev. tools, then go to the console tab: this is where errors will be displayed, or messages of your own (use the console.log(string) JavaScript function in the JavaScript code embedded in your html page). In the console, you will be able to type any JavaScript command.
+For that you will use the dev. tools of your browser. Press <i>F12</i> in Windows or <i>cmd-alt-i</i> in Mac to open the dev. tools, then go to the console tab: this is where errors will be displayed, or messages of your own (use the console.log(string) JavaScript function in the JavaScript code embedded in your html page). In the console, you will be able to type any JavaScript command.
 
-Let's look at [ this example on JS Bin](https://jsbin.com/visariz/1/edit?html,output):
+Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this example on JS Bin</a>:</p>
 
 +----+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 1  | <!DOCTYPE html>                                                                                                                                                      |
+| 1  | &lt;!DOCTYPE html&gt;                                                                                                                                                      |
++ -- + -----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |    |                                                                                                                                                                        |
-| 2  | <[html lang="en"](https://december.com/html/4/element/html.html)>                                                                                              |
+| 2  | &lt;<a href="https://december.com/html/4/element/html.html">html lang="en"</a>&gt;                                                                                              |
 |    |                                                                                                                                                                        |
-| 3  |   <[head](https://december.com/html/4/element/head.html)>                                                                                                        |
+| 3  |   &lt;<a href="https://december.com/html/4/element/head.html">head</a>&gt;                                                                                                        |
 |    |                                                                                                                                                                        |
-| 4  |   <[<b>meta</b>](https://december.com/html/4/element/meta.html) charset=utf-8 />                                                                                        |
+| 4  |   &lt;<a href="https://december.com/html/4/element/meta.html"><b>meta</b></a> charset=utf-8 /&gt;                                                                                        |
 |    |                                                                                                                                                                        |
-| 5  |   <[<b>title</b>](https://december.com/html/4/element/title.html)>Web Audio API</[<b>title</b>](https://december.com/html/4/element/title.html)>                         |
+| 5  |   &lt;[<b>title</b>](https://december.com/html/4/element/title.html)&gt;Web Audio API&lt;/[<b>title</b>](https://december.com/html/4/element/title.html)&gt;                         |
 |    |                                                                                                                                                                        |
-| 6  |   <[<b>script</b>](https://december.com/html/4/element/script.html)>                                                                                                    |
+| 6  |   &lt;[<b>script</b>](https://december.com/html/4/element/script.html)&gt;                                                                                                    |
 |    |                                                                                                                                                                        |
 | 7  |    console.log("Some JavaScript code has been executed");                                                                                                            |
 |    |                                                                                                                                                                        |
-| 8  |   </[<b>script</b>](https://december.com/html/4/element/script.html)>                                                                                                   |
+| 8  |   &lt;/[<b>script</b>](https://december.com/html/4/element/script.html)&gt;                                                                                                   |
 |    |                                                                                                                                                                        |
-| 9  |   </[<b>head</b>](https://december.com/html/4/element/head.html)>                                                                                                       |
+| 9  |   &lt;/[<b>head</b>](https://december.com/html/4/element/head.html)&gt;                                                                                                       |
 |    |                                                                                                                                                                        |
-| 10 |   <[<b>body</b>](https://december.com/html/4/element/body.html)>                                                                                                        |
+| 10 |   &lt;[<b>body</b>](https://december.com/html/4/element/body.html)&gt;                                                                                                        |
 |    |                                                                                                                                                                        |
-| 11 |     <[<b>h1</b>](https://december.com/html/4/element/h1.html)>JavaScript debugging using the dev tool console</[<b>h1</b>](https://december.com/html/4/element/h1.html)> |
+| 11 |     &lt;[<b>h1</b>](https://december.com/html/4/element/h1.html)&gt;JavaScript debugging using the dev tool console&lt;/[<b>h1</b>](https://december.com/html/4/element/h1.html)&gt; |
 |    |                                                                                                                                                                        |
-| 12 |   </[<b>body</b>](https://december.com/html/4/element/body.html)>                                                                                                       |
+| 12 |   &lt;/[<b>body</b>](https://december.com/html/4/element/body.html)&gt;                                                                                                       |
 |    |                                                                                                                                                                        |
-| 13 | </[<b>html</b>](https://december.com/html/4/element/html.html)>                                                                                                         |
-+====+========================================================================================================================================================================+
-+----+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 13 | &lt;/[<b>html</b>](https://december.com/html/4/element/html.html)&gt;                                                                                                         |
 
-The simplest way to add JavaScript code in an HTML page, is by using the &lt;script&gt;...&lt;/script&gt; element.
+<p>The simplest way to add JavaScript code in an HTML page, is by using the &lt;script&gt;...&lt;/script&gt; element.
 
 <b>The code in this example is executed sequentially when the page is loaded</b>: the JavaScript code is executed before the browser could see the rest of the page (as the &lt;script&gt;&lt;/script&gt; is located before the &lt;body&gt;).
 
@@ -6606,53 +6604,53 @@ The H1 element, for example, does not exist in the Document Object Model, and ha
 
 The only line of code we have is console.log("Some JavaScript code has been executed");
 
-This means "display in the JavaScript console the message...". If we open the console tab provided by jsbin.com in a dedicated tab (that redirects all console.log() messages), and re-execute the page (just type a space at the end of a line, this will re-render the page and display the message in the console), we see the message in the console tab, as well as in the dev. tools console. This is illustrated by the image below:
+This means "display in the JavaScript console the message...". If we open the console tab provided by jsbin.com in a dedicated tab (that redirects all console.log() messages), and re-execute the page (just type a space at the end of a line, this will re-render the page and display the message in the console), we see the message in the console tab, as well as in the dev. tools console. This is illustrated by the image below:</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 116. javascript console view (xxx) ------------------->
+<!---------------------------- 116. javascript console view (142) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image116.jpeg?raw=true"
    width="50%"
-   alt="JavaScript console view" />
+   alt="JavaScript console view." />
 </p>
 
-It is also possible to use the "real dev. tool console", and for this I recommend running the application in a single window, not in the JS Bin editor. Press the black arrow on the top right of the output window - this will render the page as a standalone Web page, then press *F12*. You should see:
+It is also possible to use the "real dev. tool console", and for this I recommend running the application in a single window, not in the JS Bin editor. Press the black arrow on the top right of the output window - this will render the page as a standalone Web page, then press <i>F12</i>. You should see:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 117. view of the javascript console (xxx) ------------------->
+<!------------------ 117. javascript debugging using the dev tool console (143) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image117.jpeg?raw=true"
    width="40%"
-   alt="View of the JavaScript console" />
+   alt="Javascript debugging using the dev tool console." />
 </p>
 
 Ok, now, let's make an error: change console.log() into conso<b>lll<b>e.log(). Let's see what happens:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 118. view of the javascript console (xxx) ------------------->
+<!------------------------ 118. make an error and see what happens (143) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image118.jpeg?raw=true"
    width="50%"
-   alt="View of the JavaScript console" />
+   alt="Make an error and see what happens." />
 </p>
 
 And if we run it standalone and use the dev. tool console:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 119. view of the javascript console (xxx) ------------------->
+<!----------------- 119. run it standalone and use the dev. tool console  (143) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image119.jpeg?raw=true"
    width="50%"
-   alt="View of the JavaScript console" />
+   alt="Run it standalone and use the dev. tool console." />
 </p>
 
 And if we click on the line number in the right, the dev. tool shows the source code centered on the line that caused the error:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 120. view of the javascript console (xxx) ------------------->
+<!-------------- 120. click line # on the right, dev tool shows source code (144) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image120.jpeg?raw=true"
@@ -6660,7 +6658,7 @@ And if we click on the line number in the right, the dev. tool shows the source 
    alt="View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc." />
 </p>
 
-Without such tools, debugging JavaScript code is impossible. So you need to look at some basic tutorials on how to use the dev. tools of your browsers, since they differ from one another in the way they work - although the principles remain the same.
+<p>Without such tools, debugging JavaScript code is impossible. So you need to look at some basic tutorials on how to use the dev. tools of your browsers, since they differ from one another in the way they work - although the principles remain the same.
 
 <h4>About the asynchronous nature of JavaScript</h4>
 
@@ -6669,24 +6667,15 @@ Some of you may not be used to "asynchronous programming", "callbacks" etc. We r
 <h3 id="ch3-2-2">3.2.2 The &lt;canvas&gt; Element</h3>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 120. view of the javascript console (xxx) ------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image120.jpeg?raw=true"
-   width="50%"
-   alt="View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc." />
-</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------- 121. canvas element logo (xxx) ------------------->
+<!-------------------------- 121. canvas element (html) logo (144) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image121.jpeg?raw=true"
-   width="10%"
-   alt="Canvas element logo." />
+   width="15%"
+   alt="canvas element (html) logo." />
 </p>
-<p>
-The &lt;canvas&gt; tag was introduced into the HTML specification around 2010 as a "Flash killer." At the time, popular video games used this proprietary technology and only a few browsers supported it. The HTML canvas allows drawing and animation at 60 frames per second, in 2D or 3D.
+
+<p>The &lt;canvas&gt; tag was introduced into the HTML specification around 2010 as a "Flash killer." At the time, popular video games used this proprietary technology and only a few browsers supported it. The HTML canvas allows drawing and animation at 60 frames per second, in 2D or 3D.
 
 <b>The canvas has been designed for pixel-based graphics</b>, while SVG (Scalable Vector Graphics, another W3C standard) is for vector-based graphics.
 
@@ -6703,12 +6692,12 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 <p><a href="https://www.ravalmatic.com/portfolio/footchinko/">Foot Chinko</a> is one popular free HTML5 games:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 122. foot chinko one of the best html5 2D game of 2015 (xxx) ------------------->
+<!----------------- 122. foot chinko one of the best html5 2D game of 2015 (145) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image122.jpeg?raw=true"
    width="40%"
-   alt="Foot chinko one of the best html5 2D game of 2015." />
+   alt="Foot chinko one of the best html5 2D games of 2015." />
 </p>
 
 <h4>Example #2</h4>
@@ -6716,13 +6705,12 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 <p>Lots of data visualization tools and JavaScript libraries use the HTML5 canvas element for <a href="http://www.creativebloq.com/design-tools/data-visualization-712402">Data visualization</a>:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 123. html5 data visualization (xxx) ------------------->
+<!------------------ 123. html5 data visualization tools and librariea (146) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image123.jpeg?raw=true"
    width="50%"
-   alt="html5 data visualization" />
-</p>
+   alt="HTML5 data visualization tools and libraries." />
 
 <h4>Example #3</h4>
 
@@ -6737,92 +6725,90 @@ Here are some fun examples that show the interest of the HTML5 canvas.
    alt="A version of the game Galaxian that runs at 60 frames/s in a canvas." />
 </p>
 
-Performance is  good and animation is generally very smooth, since most Web browsers (mobile and desktop) support hardware acceleration.
+<p>Performance is  good and animation is generally very smooth, since most Web browsers (mobile and desktop) support hardware acceleration.
 
-<b>Note</b>: 3D drawing using the WebGL API is also possible in a &lt;canvas&gt;, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a &lt;canvas&gt;: [BabylonJS](https://www.babylonjs.com/) and [ThreeJS](https://threejs.org/).
+<b>Note</b>: 3D drawing using the WebGL API is also possible in a &lt;canvas&gt;, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a &lt;canvas&gt;: <a href="https://www.babylonjs.com/">BabylonJS</a> and <a href="https://threejs.org/">ThreeJS</a>.</p>
 
 <h4>External resources</h4>
-
--   Comprehensive [HTML5 canvas tutorials](https://www.html5canvastutorials.com/)
-
--   An [HTML Canvas Deep Dive](https://joshondesign.com/p/books/canvasdeepdive/title.html)
-
--   MDN's Web docs: [&lt;canvas&gt;: The Graphics Canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas)
-
--   The &lt;canvas&gt; element is well supported by browsers:
-
-    -   CanIUse: [browser support table](https://caniuse.com/canvas)
-
-    -   MDN's [compatibility table of &lt;canvas&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#Browser_compatibility)
+<ul>
+<li>Comprehensive <a href="https://www.html5canvastutorials.com/">HTML5 canvas tutorials</a></li>
+<li>An [HTML Canvas <a href="https://joshondesign.com/p/books/canvasdeepdive/title.html">Deep Dive</a></li>
+<li>MDN's Web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas">&lt;canvas&gt;: The Graphics Canvas element</a></li>
+<li>The &lt;canvas&gt; element is well supported by browsers:</li>
+   <ul>
+   <li>CanIUse: <a href="https://caniuse.com/canvas">browser support table</a></li>
+   <li>MDN's <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#Browser_compatibility">compatibility table of &lt;canvas&gt;</a></li>
+   </ul>
+</ul>
 
 <h3 id="ch3-2-3">3.2.3 Canvas and Accessibility</h3>
 
-The dynamic nature of the &lt;canvas&gt; element has made it difficult to use in applications that need to be accessible to people with disabilities. To be accessible, it must meet the following principles:
-
--   Providing alternative content for what is drawn on the &lt;canvas&gt;,
-
--   Exposing the location of shapes, paths, images drawn on the &lt;canvas&gt; to assistive technologies,
-
--   Visually indicating whether or not a shape in the canvas had keyboard focus.
+<p>The dynamic nature of the &lt;canvas&gt; element has made it difficult to use in applications that need to be accessible to people with disabilities. To be accessible, it must meet the following principles:</p>
+<ul>
+<li>Providing alternative content for what is drawn on the &lt;canvas&gt;,</li>
+<li>Exposing the location of shapes, paths, images drawn on the &lt;canvas&gt; to assistive technologies,</li>
+<li>Visually indicating whether or not a shape in the canvas had keyboard focus.</li>
+</ul>
 
 <h4>Read more on this topic:</h4>
-
--   An article on [What the canvas element means for accessibility](https://www.creativebloq.com/web-design/canvas-element-accessibility-41514740)
-
--   From the W3C wiki: [Canvas Element Accessibility Issues](https://www.w3.org/html/wg/wiki/AddedElementCanvas)
+<ul>
+<li>An article on <a href="https://www.creativebloq.com/web-design/canvas-element-accessibility-41514740">What the canvas element means for accessibility</a>
+<li>From the W3C wiki: <a href="https://www.w3.org/html/wg/wiki/AddedElementCanvas">Canvas Element Accessibility Issues</a></li>
+</ul>
 
 <h3 id="ch3-2-4">3.2.4 HTML Canvas Cheatsheet</h3>
 
-We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.org/wiki/Cheat_sheet)) below. Do not hesitate to keep your favorite one open in a separate browser tab.
+<p>We recommend these 2 quick references (or <a href="https://en.wikipedia.org/wiki/Cheat_sheet">cheatsheets</a>) below. Do not hesitate to keep your favorite one open in a separate browser tab.
 
-1.  As a [PDF file](https://courses.edx.org/assets/courseware/v1/4b7360cab7f3bf439c26782ec47cf7a8/asset-v1:W3Cx+HTML5.1x+2T2020+type@asset+block/Infopgraphic-CanvasCheatSheet-Final2.pdf), this canvas cheatsheet:
+1.  As a <a href="https://courses.edx.org/assets/courseware/v1/4b7360cab7f3bf439c26782ec47cf7a8/asset-v1:W3Cx+HTML5.1x+2T2020+type@asset+block/Infopgraphic-CanvasCheatSheet-Final2.pdf">PDF file</a>, this canvas cheatsheet:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------- 125. snapshot of an HTML Canvas cheatsheet from skilled.com (147) --------------->
+<!----------------- 125. pdf of an html canvas cheatsheet from skilled.com (147) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image125.png?raw=true"
    width="65%"
-   alt="Snapshot of an HTML Canvas cheatsheet from skilled.com." />
+   alt="Downloadable pdf of an HTML Canvas cheatsheet from skilled.com." />
 </p>
 
 2.  Another resource, as an [HTML file](https://simon.html5.org/dump/html5-canvas-cheat-sheet.html):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 126. snapshot of a Canvas cheatsheet API (148) ------------------------->
+<!------------------------- 126. html of a canvas cheatsheet api (148) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image126.png?raw=true"
    width="65%"
-   alt="Snapshot of a Canvas cheatsheet API." />
+   alt="HTML5 of a Canvas cheatsheet API." />
 </p>
 
 <h3 id="ch3-2-5">3.2.5 Coordinate System</h3>
 
-The coordinate system used for drawing in canvases is similar to the one used by many drawing APIs like Java2D: the (0 , 0) is in the top left corner while the X axis is going to the right and the Y axis to the bottom, as  shown in the following picture:
+<p>The coordinate system used for drawing in canvases is similar to the one used by many drawing APIs like Java2D: the (0 , 0) is in the top left corner while the X axis is going to the right and the Y axis to the bottom, as  shown in the following picture:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 127. coordinate system (xxx) ------------------->
+<!------------------------ 127. canvas coordinates system diagram (148) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image127.png?raw=true"
    width="55%"
-   alt="Coordinate system." />
+   alt="Canvas coordinates system diagram." />
 </p>
 
--   <b>X</b> axis is horizontal, directed to the right 
-
--   <b>Y</b> axis is vertical, directed downwards
+<ul>
+<li><b>X</b> axis is horizontal, directed to the right</li>
+<li><b>Y</b> axis is vertical, directed downwards</li>
+</ul>
 
 <h3 id="ch3-2-6">3.2.6 Drawing Rectangles in a Canvas</h3>
 
-Small errata about what I said in the above video: "*So let's get the canvas using the DOM API method document.getElementById() or better, use document.querySelector() that is a more recent method <b>from the DOM API</b>"*..
+<p>Small errata about what I said in the above video: <i>"So let's get the canvas using the DOM API method document.getElementById() or better, use document.querySelector() that is a more recent method <b>from the DOM API</b>"</i>.
 
-The part is bold is not correct: querySelector, technically, comes from [Selectors API](https://www.w3.org/TR/selectors-api/). Just in case some people would like to check the specification.
+The part is bold is not correct: querySelector, technically, comes from <a href="https://www.w3.org/TR/selectors-api/">Selectors API</a>. Just in case some people would like to check the specification.</p>
 
 <h4>Detailed explanation of the example shown in the above video</h4>
 
-Here are the different steps, in a little more detail, of the example demonstrated in the above video:
+<p>Here are the different steps, in a little more detail, of the example demonstrated in the above video:</p>
 
 <h4>1 - Add the &lt;canvas&gt; element into an HTML page</h4>
 
@@ -6838,6 +6824,7 @@ Here are the different steps, in a little more detail, of the example demonstrat
 
 Normally you should see nothing as a result; by default canvases are "transparent". <b>Make it visible using CSS!</b>
 For example, you can add a border to the canvas (or change the background color, or put an image in the background).</p>
+
 <h4>The three lines of CSS will create a border around the canvas with id="myCanvas", of 1 pixel width, in black:</h4>
 
 ```
@@ -6850,7 +6837,7 @@ For example, you can add a border to the canvas (or change the background color,
 
 <h4>2 - Select the &lt;canvas&gt; element for use from JavaScript</h4>
 
-We can have more than one &lt;canvas&gt; in a single page, and canvases will be manipulated with JavaScript like other elements in the DOM.
+<p>We can have more than one &lt;canvas&gt; in a single page, and canvases will be manipulated with JavaScript like other elements in the DOM.</p>
 
 <h4>For example with:</h4>
 
@@ -6865,11 +6852,11 @@ We can have more than one &lt;canvas&gt; in a single page, and canvases will b
 ```
 
 <h4>3 - Get a "2D context" associated with the canvas</h4>
-<p>
-This step is useful for drawing and setting drawing properties (color, etc.)
 
-Once we have a pointer to the &lt;canvas&gt;, we can get a "context". This particular object is the core of the canvas JavaScript API. It provides methods for drawing, like fillRect(x, y, width, height) for example, that draws a filled rectangle, and properties for setting the color, shadows, gradients, etc.
-</p>
+<p>This step is useful for drawing and setting drawing properties (color, etc.)
+
+Once we have a pointer to the &lt;canvas&gt;, we can get a "context". This particular object is the core of the canvas JavaScript API. It provides methods for drawing, like fillRect(x, y, width, height) for example, that draws a filled rectangle, and properties for setting the color, shadows, gradients, etc.</p>
+
 <h4>So, let's first get the context (do this only once):</h4>
 
 ```
@@ -6970,13 +6957,13 @@ Your browser does not support the canvas tag.
 
 <h4>Explanations</h4>
 
-Only access elements when the DOM is ready:
+<p>Only access elements when the DOM is ready:
 
-Notice that we wrote an "init" function (<i>line 13</i>) that is called only when the page has been entirely loaded (we say "when the DOM is ready"). There are several ways to do this. In this example we used the <body onload="init();"> method, at *line 29*.
+Notice that we wrote an "init" function (<i>line 13</i>) that is called only when the page has been entirely loaded (we say "when the DOM is ready"). There are several ways to do this. In this example we used the <body onload="init();"> method, at <i>line 29</i>.
 
 It's good practice to have such a function, as we cannot access the elements of the page before the page has been loaded entirely and before the DOM is ready.
 
-Another way is to put the JavaScript code at the end of the document (between &lt;script&gt;...</script>), right before the </body>. In this case when the JavaScript code is executed, the DOM has already been constructed.
+Another way is to put the JavaScript code at the end of the document (between &lt;script&gt;...&lt;/script&gt;), right before the &lt;/body&gt;. In this case when the JavaScript code is executed, the DOM has already been constructed.
 
 Start by getting the canvas and the context:
 
@@ -6986,28 +6973,28 @@ Good practice is to get the canvas, the context, the width and height of the can
 
 After the context is set, we can draw, but first let's set the current color for filled shapes:
 
-The example shows the use of the fillStyle property at *line 24* - useful for specifying the way shapes will be filled. In our case this line indicates the color of all the filled shapes we are going to draw:
+The example shows the use of the fillStyle property at <i>line 24</i> - useful for specifying the way shapes will be filled. In our case this line indicates the color of all the filled shapes we are going to draw:</p>
 
 ```
 1.  ctx.fillStyle='#FF0000';
 ```
 
-The context property named fillStyle is used here. This property can be set with a color, a gradient, or a pattern. We will see examples of these later on in the course.
+<p>The context property named fillStyle is used here. This property can be set with a color, a gradient, or a pattern. We will see examples of these later on in the course.
 
 The example says that all filled shapes will use the color "#FF0000", which corresponds to a pure red color using the CSS RGB hexadecimal encoding (we could also have used ctx.fillStyle='red');
 
-Then we can draw:
+Then we can draw:</p>
 
 ```
 1.  ctx.fillRect(0,0,80,100);
 ```
 
-This line is a call to the method fillRect(top left X coordinate, top left Y coordinate, width, height), which draws a filled rectangle.
+<p>This line is a call to the method fillRect(top left X coordinate, top left Y coordinate, width, height), which draws a filled rectangle.
 
-The way the rectangle will be filled depends on the current value of several properties of the context, in particular the value of the fillStyle property. So, in our case, the rectangle will be red.
+The way the rectangle will be filled depends on the current value of several properties of the context, in particular the value of the fillStyle property. So, in our case, the rectangle will be red.</p>
 
 <h4>Summary of the different steps</h4>
-
+<pre>
 1.  Declare the canvas, remembering to add an id attribute, and fallback content:  
     &lt;canvas id="myCanvas" width="200" height="200"&gt;
     ...fallback content...
@@ -7024,6 +7011,7 @@ The way the rectangle will be filled depends on the current value of several pro
 
 5.  Draw some shapes:
     ctx.fillRect(0,0,80,100)
+</pre>
 
 <h3 id="ch3-2-7">3.2.7 Drawing Principles</h3>
 
@@ -7219,7 +7207,7 @@ Your browser does not support the canvas tag.
 19. }
 ```
 <p>
-This example shows the "global" nature of the context properties. Once you set the filled color to red, any shapes you draw in filled mode will be red. This is true for all the context properties. We set some of these properties in *lines 3-7*, and all following calls to context methods for drawing rectangles or text will depend on them. The two filled rectangles at *lines 10-11* will be red, the two wireframe rectangles drawn at *lines 14-15* will be blue, etc.
+This example shows the "global" nature of the context properties. Once you set the filled color to red, any shapes you draw in filled mode will be red. This is true for all the context properties. We set some of these properties in <i>lines 3-7</i>, and all following calls to context methods for drawing rectangles or text will depend on them. The two filled rectangles at <i>lines 10-11</i> will be red, the two wireframe rectangles drawn at <i>lines 14-15</i> will be blue, etc.
 
 <i>Line 18</i> shows how to draw a text message at an X position of 70 and a Y position of 22. The font is set at <i>line 7</i> using the font property of the context.  The syntax is the same we use in CSS for using "system fonts".
 
@@ -7384,7 +7372,7 @@ At <i>line 10</i>, we called the drawSomething(...) function with 0 and 100 
 If you look at the code of the modified function, you will see that each call to fillRect(...) uses the x and y parameters instead of hard coded values. In this way, if we call it with parameters (0, 100), then all rectangles will be drawn 100 pixels to the bottom (offset in y). Here is the result:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------- 131. Rectangles are drawn 100 pixels towards the bottom (xx) -------------------->
+<!---------------- 131. Rectangles are drawn 100 pixels toward the bottom (xx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image131.jpeg?raw=true"
@@ -7396,7 +7384,7 @@ If you look at the code of the modified function, you will see that each call t
 <li><h4>Now, let's draw a small monster's head with rectangles</li>
 </ul>
 
-Now we can start having some fun... let's draw a monster's head using only rectangles:
+<p>Now we can start having some fun... let's draw a monster's head using only rectangles:</p>
 
 <h4>HTML</h4>
 
@@ -7718,7 +7706,9 @@ Your browser does not support the canvas tag.
 <p>
 Here is the previous example, but this time we translated the coordinate system, then rotated it with an angle equal to PI/4 , then we scaled it so that units are half as big:
 </p>
+
 <h4>JS</h4>
+
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
@@ -7816,6 +7806,7 @@ Your browser does not support the canvas tag.
 4.   
 5.  drawMonster(0, 0);
 ```
+
 <ul>
 <li><h4>BEWARE: all drawings to come will be in that modified coordinate system!</h4></li>
 </ul>
@@ -19628,4 +19619,6 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-10-2022 2:06pm</i></b></h3>
+<h3><b><i>08-11-2022 1:53am</i></b></h3>
+<h2><b><i>08-11-2022 1:53am</i></b></h2>
+<h6><b><i>08-11-2022 1:53am</i></b></h6>
