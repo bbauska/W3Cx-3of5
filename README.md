@@ -7974,6 +7974,7 @@ ctx.restore();
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -8244,6 +8245,7 @@ There is a fourth optional parameter maxWidth that forces the text to fit int
 ```
 
 <h4> Forcing a text not to exceed a certain width: the maxWidth property</h4>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -8298,6 +8300,7 @@ context.strokeText("Hello World!", 10, 220, 150);
 The ctx.measureText() method can be used to get the current width in pixels of a given text, taking into account the diverse properties involved such as font, size, shadow, lineWidth, etc.
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -8358,6 +8361,7 @@ context.stroke();
 The textBaseline property of the context is used to specify the different ways one can position the baseline of a given text:
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -8400,21 +8404,14 @@ The example above shows the different possible values for this property and the 
 
 Possible values:
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Possible values for the textBaseline property   
-  ----------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------
-  top                                             The text is aligned based on the top of the tallest glyph in the text.
-
-  hanging                                         The text is aligned based on the line the text seems to hang from. This is almost identical to top, and in many cases, you cannot see the difference.
-
-  middle                                          The text is aligned according to the middle of the text.
-
-  alphabetic                                      The bottom of vertically oriented glyphs, e.g. western alphabet like the Latin.
-
-  ideographic                                     The bottom of horizontally oriented glyphs.
-
-  bottom                                          The text is aligned based on the bottom of the glyph in the text, that extends furthest down in the text.
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Possible values for the textBaseline property   |
+  ----------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------|
+  top                                           |  The text is aligned based on the top of the tallest glyph in the text. |
+  hanging                                       |  The text is aligned based on the line the text seems to hang from. This is almost identical to top, and in many cases, you cannot see the difference. |
+  middle                                        |  The text is aligned according to the middle of the text. |
+  alphabetic                                    |  The bottom of vertically oriented glyphs, e.g. western alphabet like the Latin. |
+  ideographic                                   |  The bottom of horizontally oriented glyphs. |
+  bottom                                        |  The text is aligned based on the bottom of the glyph in the text, that extends furthest down in the text. |
 
 Typical use (taken from the example above):
 
@@ -8430,11 +8427,12 @@ Typical use (taken from the example above):
 
 6.  context.fillText("middle", 120, 75);
 
-<h4> Setting the horizontal justification of a text with the textAlign property</h4>
+<h4>Setting the horizontal justification of a text with the textAlign property</h4>
 
 The textAlign property of the context tells how the x parameter will be used when calling strokeText("some text", x, y) and fillText("some text", x, y). For example, with textAlign="center", the x parameter gives the position of the vertical center of the text, while in textAlign="right", x corresponds to the rightmost position of the text.
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html>
