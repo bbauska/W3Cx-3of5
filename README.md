@@ -8174,6 +8174,7 @@ It also provides a set of context properties for setting the character font and 
 Look at the example below, and change the position where the text is drawn, change font attributes, etc.:
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -8239,6 +8240,7 @@ Accepted values are:
 The fillText(message, x, y) or strokeText(message, x, y) methods from the context will actually draw a text message at the origin of the baseline position. In the "Hello World" example, this is located at the bottom of the left leg of the "H".
 
 There is a fourth optional parameter maxWidth that forces the text to fit into a given width, distorting it if necessary:
+
 ```
 1.  context.strokeText("Hello World!", x, y [, maxWidth]);
 2.  context.fillText("Hello World!", x, y [, maxWidth]);
@@ -8531,17 +8533,13 @@ But let's start with a basic example!
 ```
 
 <h4>Explanations:</h4>
-<pre>
-1.  We have to create a JavaScript Image object (<i>line 10</i>),
-
-2.  When we set the src attribute of this object with the URL of the image file, then an asynchronous request is sent in the background by the browser. Loading a big image may take some time, so the rest of the JavaScript code continues running. This is why we call it "asynchronous".
-
-3.  When the image file has been loaded, the browser calls the onload callback associated with the image (<i>line 14</i>).
-
-4.  We draw the image only from inside this callback, otherwise we have no guarantee that the image has been loaded and can be usable. The actual drawing here is done <i>line 17</i>.
-
-5.  There are numerous variants of the drawImage(...) context method at <i>line 17</i>
-</pre>
+<ol type="1">
+<li>We have to create a JavaScript Image object (<i>line 10</i>),</li>
+<li>When we set the src attribute of this object with the URL of the image file, then an asynchronous request is sent in the background by the browser. Loading a big image may take some time, so the rest of the JavaScript code continues running. This is why we call it "asynchronous".</li>
+<li>When the image file has been loaded, the browser calls the onload callback associated with the image (<i>line 14</i>).</li>
+<li>We draw the image only from inside this callback, otherwise we have no guarantee that the image has been loaded and can be usable. The actual drawing here is done <i>line 17</i>.</li>
+<li>There are numerous variants of the drawImage(...) context method at <i>line 17</i>.</li>
+</ol>
 
 <ul>
 <li>drawImage(img, x, y): draws the image at position x, y, keeping the original image size.</li>
