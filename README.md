@@ -87,7 +87,7 @@
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h2 id-"cha-1">About W3C and the Web</h2>
+<h2 id-"cha">About W3C and the Web</h2>
 
 <h2 id="chb">Course information</h2>
 
@@ -1237,7 +1237,7 @@ Let's clarify this by looking at some example code:</p>
 <br/>
 
 In the above example, please note two things:
-<ol type ="1">
+<ol type="1">
 <li>The outline shows an "Untitled body" at the root of the hierarchy,</li>
 <li>The default size for the H1 and H2 is the same (!). Indeed, when we start a <h1> inside a &lt;section&gt; the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
 </ol>
@@ -3117,7 +3117,7 @@ Alternatively, you could use also a duration time component.
 
 From Bruce Lawson's article : <i>"Whichever you choose, it's represented internally as a number of seconds. Because of this, you can't specify a duration in terms of months, because a month isn't a precise number of seconds; a month can last from 28 to 31 days. Similarly, a year isn't a precise number of seconds; it's 12 months and February sometimes has an extra day.</i>
 
-<i>You still can't represent dates before the Christian era, as years can't be negative. Neither can you indicate date ranges. To mark up From "21/02/2012 to 25/02/2012″, use two separate <time> elements."</i></p>
+<i>You still can't represent dates before the Christian era, as years can't be negative. Neither can you indicate date ranges. To mark up From "21/02/2012 to 25/02/2012″, use two separate &lt;time&gt; elements."</i></p>
 
 <h4>Examples:</h4>
 
@@ -3797,7 +3797,7 @@ Now, let's see what elements are compatible with the itemprop attribute and wh
 | anything else                                                                                                                                              | The data is whatever is in the text of the element. |
 
 <p>
-For example, the value of a property defined in an <img> element will be the value of the src attribute:</p>
+For example, the value of a property defined in an &lt;img&gt; element will be the value of the src attribute:</p>
 
 ```
 1.  <img itemprop="image" src="MichelBuffa.png" alt="A great professor">
@@ -6570,13 +6570,16 @@ For that you will use the dev. tools of your browser. Press <i>F12</i> in 
 
 Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this example on JS Bin</a>:</p>
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| 1  | &lt;!DOCTYPE html&gt;                                                                                                                                                      |
- --  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| datetime attribute values | Interpretation |
+| ------------------------- | -------------- |
+| &lt;time datetime="2020"&gt; | The year 2020 |
+
+| 1  | &lt;!DOCTYPE html&gt; |
+| -- | --------------------- |
 |    |                                                                                                                                                                        |
-| 2  | &lt;<a href="https://december.com/html/4/element/html.html">html lang="en"</a>&gt;                                                                                              |
+| 2  | &lt;<a href="https://december.com/html/4/element/html.html">html lang="en"</a>&gt; |
 |    |                                                                                                                                                                        |
-| 3  |   &lt;<a href="https://december.com/html/4/element/head.html">head</a>&gt;                                                                                                        |
+| 3  |   &lt;<a href="https://december.com/html/4/element/head.html">head</a>&gt;                                                                     |
 |    |                                                                                                                                                                        |
 | 4  |   &lt;<a href="https://december.com/html/4/element/meta.html"><b>meta</b></a> charset=utf-8 /&gt;                                                                                        |
 |    |                                                                                                                                                                        |
@@ -6996,24 +6999,20 @@ Then we can draw:</p>
 The way the rectangle will be filled depends on the current value of several properties of the context, in particular the value of the fillStyle property. So, in our case, the rectangle will be red.</p>
 
 <h4>Summary of the different steps</h4>
-<pre>
-1.  Declare the canvas, remembering to add an id attribute, and fallback content:  
+<ol type="1">
+<li>Declare the canvas, remembering to add an id attribute, and fallback content:  
     &lt;canvas id="myCanvas" width="200" height="200"&gt;
     ...fallback content...
-    &lt;/canvas&gt;
-
-2.  Get a reference to the canvas in a JavaScript variable using the DOM API:
-    var canvas=document.getElementById('myCanvas');
-
-3.  Get the context for drawing in that canvas:  
-    var ctx=canvas.getContext('2d');
-
-4.  Specify some drawing properties (optional):  
-    ctx.fillStyle='#FF0000';
-
-5.  Draw some shapes:
-    ctx.fillRect(0,0,80,100)
-</pre>
+    &lt;/canvas&gt;</li><br>
+<li>Get a reference to the canvas in a JavaScript variable using the DOM API:
+    var canvas=document.getElementById('myCanvas');</li><br>
+<li>Get the context for drawing in that canvas:  
+    var ctx=canvas.getContext('2d');</li><br>
+<li>Specify some drawing properties (optional):  
+    ctx.fillStyle='#FF0000';</li><br>
+<li>Draw some shapes:
+    ctx.fillRect(0,0,80,100)</li><br>
+</ol>
 
 <h3 id="ch3-2-7">3.2.7 Drawing Principles</h3>
 
@@ -7057,7 +7056,7 @@ The two first parameters are the coordinates of the top left corner of the recta
 Produces this result:
 
 <!------------------------------------------------------------------------------------------------>
-<!------ 128. filled rectangle with pink (xxx) ---->
+<!---------------------------- 128. filled rectangle with pink (153) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image128.jpeg?raw=true"
@@ -7066,7 +7065,7 @@ Produces this result:
 </p>
 
 ```
--   <h4> strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape's outline should be rendered
+-   <h4>strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape's outline should be rendered
 ```
 
 The possible values are the same as those for the fillStyle property: a color, a pattern, or a gradient. This property will be taken into account when wireframe shapes are drawn.
@@ -7080,7 +7079,7 @@ The possible values are the same as those for the fillStyle property: a color,
 <h4>gives this result:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------ 129. stroked rectangle - border in blue (xxx) ---->
+<!----------------------- 129. stroked rectangle - border in blue (154) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image129.jpeg?raw=true"
@@ -7105,7 +7104,7 @@ The possible values are the same as those for the fillStyle property: a color,
 <h4>The result is:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------ 130. the use of clearrrect draws a white rectangle against the pink background (xxx) ---->
+<!------ 130. the use of clearrrect draws a white rectangle against the pink background (155) ---->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image130.jpeg?raw=true"
@@ -8407,9 +8406,9 @@ context.fillText("bottom-glyph", 400, 75);
 </html>
 ```
 
-The example above shows the different possible values for this property and the corresponding results. The default value is "alphabetic" and corresponds to what has been used in the previous "Hello World" example.
+<p>The example above shows the different possible values for this property and the corresponding results. The default value is "alphabetic" and corresponds to what has been used in the previous "Hello World" example.</p>
 
-Possible values:
+<h4>Possible values:</h4>
 
   Possible values for the textBaseline property   |
   ----------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -8420,19 +8419,15 @@ Possible values:
   ideographic                                   |  The bottom of horizontally oriented glyphs. |
   bottom                                        |  The text is aligned based on the bottom of the glyph in the text, that extends furthest down in the text. |
 
-Typical use (taken from the example above):
-
-1.  context.textBaseline = "top";
-
-2.  context.fillText("top", 0, 75);
-
-3.  context.textBaseline = "hanging";
-
-4.  context.fillText("hanging", 40, 75);
-
-5.  context.textBaseline = "middle";
-
-6.  context.fillText("middle", 120, 75);
+<p>Typical use (taken from the example above):</p>
+<ol type="1">
+<li>context.textBaseline = "top";</li>
+<li>context.fillText("top", 0, 75);</li>
+<li>context.textBaseline = "hanging";</li>
+<li>context.fillText("hanging", 40, 75);</li>
+<li>context.textBaseline = "middle";</li>
+<li>context.fillText("middle", 120, 75);</li>
+</ol>
 
 <h4>Setting the horizontal justification of a text with the textAlign property</h4>
 
@@ -8493,13 +8488,13 @@ context.fillText("right", 250, 100);
 
 <h3 id="ch3-3-3">3.3.3 Drawing Images</h3>
 
-Working with images is rather simple, except that we need the images to be fully loaded into memory before drawing them. Loading images is an *asynchronous* process we need to take care of. Working with multiple images might also be difficult for beginners. We present a multiple image loader later on in this course.
+<p>Working with images is rather simple, except that we need the images to be fully loaded into memory before drawing them. Loading images is an <i>asynchronous</i> process we need to take care of. Working with multiple images might also be difficult for beginners. We present a multiple image loader later on in this course.
 
 <b>Let's say it once again</b>: To use an image in a canvas, make sure that the image has been loaded by the Web browser before drawing it!
 
-It is also possible to draw images from a video stream, images corresponding to another canvas content, or images that are defined by <img> HTML elements in the page. We will see that as well in the following parts of this chapter.
+It is also possible to draw images from a video stream, images corresponding to another canvas content, or images that are defined by &lt;img&gt; HTML elements in the page. We will see that as well in the following parts of this chapter.
 
-But let's start with a basic example!
+But let's start with a basic example!</p>
 
 <h4>Example #1: drawing an image in a canvas</h4>
 
@@ -8554,7 +8549,7 @@ But let's start with a basic example!
 
 <h4>See picture below:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 133. (xxx) -------------------------------->
+<!------------------------------ 133. source image, destination canvas (182) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image133.png?raw=true"
@@ -8642,7 +8637,7 @@ border:1px solid black;
 
 <h4>Example #3: draw an image defined in the page by an &lt;img src="..."&gt; element</h4>
 
-Sometimes, you may want to draw an image that is already declared in the HTML document as an <img src="..."> element. Remember that when you add an <img> in the document, the browser starts downloading it in background. 
+<p>Sometimes, you may want to draw an image that is already declared in the HTML document as an <img src="..."> element. Remember that when you add an &lt;img&gt; in the document, the browser starts downloading it in background.</p>
 
 <h4>You could try drawing it using some code like this:</h4>
 
@@ -8661,13 +8656,13 @@ Sometimes, you may want to draw an image that is already declared in the HTML do
 12. </body>
 ```
 
-Although you will find many examples on the Web that do it this way, they will only work most of the time with small images, or with images that are in the browser's cache. Remember that you cannot draw an image that has not been fully loaded!
+<p>Although you will find many examples on the Web that do it this way, they will only work most of the time with small images, or with images that are in the browser's cache. Remember that you cannot draw an image that has not been fully loaded!
 
-If you try to draw an image that is not loaded or partially loaded, you will have unexpected results!
+If you try to draw an image that is not loaded or partially loaded, you will have unexpected results!</p>
 
 <p><b>Best practice:</b> only draw an image that is fully loaded, use the onload callback!</p>
 
-The right way to do this is shown in this online example, that starts drawing only from the onload callback function:
+<p>The right way to do this is shown in this online example, that starts drawing only from the onload callback function:</p>
 
 <h4>CSS</h4>
 ```
@@ -8979,12 +8974,12 @@ Your browser does not support the canvas tag.</canvas>
 21. }
 ```
 
-<i>Lines 12-18</i> draw 1000 rectangles of random sizes in immediate mode. We also measure the time using the usual console.time(name_of_timer) and console.timeEnd(name_of_timer) that will write in the browser console the time elapsed. Note that console.time(...) and console.timeEnd(...) display results only in the browser's console, not in the JSBin console.
+<p><i>Lines 12-18</i> draw 1000 rectangles of random sizes in immediate mode. We also measure the time using the usual console.time(name_of_timer) and console.timeEnd(name_of_timer) that will write in the browser console the time elapsed. Note that console.time(...) and console.timeEnd(...) display results only in the browser's console, not in the JSBin console.
 
-On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawing all these rectangles:
+On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawing all these rectangles:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----- 134. mage of the devtool console that shows random time values.  Avg time is 4s. (xxx) --->
+<!---- 134. image of the devtool console that shows random time values.  Avg time is 4s. (189) --->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image134.jpeg?raw=true"
@@ -8995,11 +8990,11 @@ On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawin
 
 <h4>Path mode</h4>
 
-There is another drawing mode called "path drawing mode" where you first send drawing orders to the graphics processor, and these orders are stored in a buffer. Then you call methods to draw the whole buffer at once. There are also methods to erase the buffer's content.
+<p>There is another drawing mode called "path drawing mode" where you first send drawing orders to the graphics processor, and these orders are stored in a buffer. Then you call methods to draw the whole buffer at once. There are also methods to erase the buffer's content.
 
 Path drawing mode allows parallelism: if you need to draw 10,000 rectangles, it's better to store the orders in the graphics card, then execute the drawing all at once, rather than doing 10,000 immediate calls to strokeRect(...) for example. With the buffered mode, the Graphic Processing Unit (GPU) of the graphics card hardware will be able to parallelize the computations (modern graphics cards can execute hundreds/thousands of things in parallel).
 
-Same example as before, this time using the buffered mode for drawing rectangles:
+Same example as before, this time using the buffered mode for drawing rectangles:</p>
 
 <h4>JS</h4>
 
@@ -9052,16 +9047,16 @@ Your browser does not support the canvas tag.</canvas>
 8.  ctx.stroke(); // draws the whole buffer (the 1000 rectangles) at once
 ```
 
-Instead of calling strokeRect(...) or fillRect(...), we just call the rect(...) method of the context (<i>line 7</i>). This is how we can delay the drawing of the rectangles. The 1000 rectangles are stored in a buffer in the hardware.
+<p>Instead of calling strokeRect(...) or fillRect(...), we just call the rect(...) method of the context (<i>line 7</i>). This is how we can delay the drawing of the rectangles. The 1000 rectangles are stored in a buffer in the hardware.
 
 The call to ctx.stroke() (<i>line 9</i>) or to its sister method ctx.fill() will draw the entire buffer contents in fill or stroke mode.
 
-And here is what the timer gives: a slightly faster execution time. Changing 1000 to 100,000 will give even larger differences.
+And here is what the timer gives: a slightly faster execution time. Changing 1000 to 100,000 will give even larger differences.</p>
 
-<b>Path mode is faster than immediate mode! We have now an average time of 3.1ms</b>
+<h4>Path mode is faster than immediate mode! We have now an average time of 3.1ms</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 135. mage of the devtool console that shows random time values.  Avg time is 3.1ms. (xxx) -->
+<!-- 135. image of the devtool console that shows random time values.  Avg time is 3.1ms. (191) -->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image135.jpeg?raw=true"
@@ -9072,7 +9067,7 @@ And here is what the timer gives: a slightly faster execution time. Changing 100
 
 <h4>Reset the path mode buffer</h4>
 
-A call to ctx.beginPath() will reset the buffer (empty its contents). We will see many more examples of using the path drawing mode in another further section.
+<p>A call to ctx.beginPath() will reset the buffer (empty its contents). We will see many more examples of using the path drawing mode in another further section.</p>
 
 ```
 1.  // start a new buffer / path
@@ -16664,45 +16659,43 @@ And if you start again and click on the left submit button, the one without the 
 
 <p>Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&gt;, <output>, <meter>  and <progress> elements).
 
-| HTML4                                     | HTML5                             |
-|-------------------------------------------|-----------------------------------|
-| -   &lt;form&gt;                              | -   &lt;datalist&gt;                  |
+| HTML4                                      | HTML5                             |
+| ------------------------------------------ | -----------------------------------|
+| -   &lt;form&gt;                              | -   &lt;datalist&gt; |
 |                                           |                                   |
-| -   &lt;fieldset&gt;                          | -   <output>                    |
+| -   &lt;fieldset&gt;                          | -   &lt;output&gt; |
 |                                           |                                   |
-| -   <legend>                            | -   <meter>                     |
+| -   &lt;legend&gt;                            | -   &lt;meter&gt; |
 |                                           |                                   |
-| -   <textarea>                          | -   <progress>                  |
+| -   &lt;textarea&gt;                          | -   &lt;progress&gt; |
 |                                           |                                   |
-| -   <label>                             | -   <keygen> *                 |
+| -   &lt;label&gt;                             | -   &lt;keygen&gt; *  |
 |                                           |                                   |
-| -   <select>                            |                                   |
+| -   &lt;select&gt;                            |                                   |
 |                                           |                                   |
-| -   <option>                            |                                   |
+| -   &lt;option&gt;                            |                                   |
 |                                           |                                   |
-| -   <optgroup>                          |                                   |
+| -   &lt;optgroup&gt;                          |                                   |
 |                                           |                                   |
-| -   <input>                             |                                   |
+| -   &lt;input&gt;                             |                                   |
 |                                           |                                   |
-| -   <button>                            |                                   |
-+-------------------------------------------+-----------------------------------+
-| * Not really useful for most developers. |                                   |
-+-------------------------------------------+-----------------------------------+
+| -   &lt;button&gt;                            |                                   |
+------------------------------------------------------------------------------
+| * Not really useful for most developers. |
 
 <h3 id="ch5-6-2">5.6.2 <output></h3>
 
 The output element represents the result of a computation or user action. You can see it as a "specialized <div> or <span>" for displaying interactive results.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 279. example of output element use (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image279.jpeg?raw=true"
+   alt="Example of output element use."
+   width="30%">
 &nbsp;
 <br/>
-![example of output element use](./images/image279.jpeg){width="3.0in" height="0.7894739720034996in"}
 
 Typical use / interactive examples
 
@@ -16759,13 +16752,13 @@ HTML5 has introduced new input field properties: valueAsNumber and valueAsDa
 
 As input field values are considered as strings by JavaScript, using x.value = a.value + b.value would result in a string concatenation instead of an addition. That's why we use the valueAsNumber property.
 
-This is why we used the valueAsNumber property also introduced by HTML5 for some input fields such as <input type="range"> and <input type="number">, we also encountered the valueAsDate properties when we studied <input type="date">.
+This is why we used the valueAsNumber property also introduced by HTML5 for some input fields such as &lt;input type="range"> and &lt;input type="number">, we also encountered the valueAsDate properties when we studied &lt;input type="date">.
 
 <h3 id="ch5-6-3">5.6.3 <meter></h3>
 
 The <meter> element displays colored bars to represent numeric values.
 
-It can be useful to display a colored gauge to show disk usage, to highlight the relevance of a query result, or the fraction of a voting population that favours a particular candidate, etc. This element is often used with the <input type="range"> field as an instant feedback indicator.
+It can be useful to display a colored gauge to show disk usage, to highlight the relevance of a query result, or the fraction of a voting population that favours a particular candidate, etc. This element is often used with the &lt;input type="range"> field as an instant feedback indicator.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 280.  (xx) ------------------------------->
@@ -16816,9 +16809,9 @@ Grades:  
 
 <h4>Explanations:</h4>
 
-![The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the <meter> element (line 9) and update the displayed html content of the <output> element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
+![The link between the slider (an &lt;input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the <meter> element (line 9) and update the displayed html content of the <output> element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
 
-The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)") at <i>line 4</i>.
+The link between the slider (an &lt;input type=range>) and the meter element is done using an input event handler (oninput="effect(...)") at <i>line 4</i>.
 
 The effect JavaScript function will change the current value of the <meter> element (<i>line 9</i>) and update the displayed html content of the <output> element (<i>line 10</i>).
 
@@ -16924,7 +16917,7 @@ The &lt;datalist&gt; form element is useful for linking a list of choices to a
 &nbsp;
 <br/>
 
-We have already seen this element in action with different <input> elements, such as <input type="color">, <input type="date">, or <input type="range">.
+We have already seen this element in action with different &lt;input> elements, such as &lt;input type="color">, &lt;input type="date">, or &lt;input type="range">.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 227.  (xx) ------------------------------->
@@ -16997,7 +16990,7 @@ As you can see at l<i>ines 2</i> and <i>4</i>, the id and list attributes 
 
 In this section of the course, we will look at CSS pseudo classes that are useful for giving instant feedback when the user's input is not valid. We will also look at the new JavaScript API introduced by HTML5 for validating forms and form elements.
 
-In the following pages, we will first illustrate the concept of form validation with the <input type="email"/> field. It can be generalized to all kind of input types, such as url, number, etc. Some form attributes, such as pattern,  will also affect input field validity!
+In the following pages, we will first illustrate the concept of form validation with the &lt;input type="email"/> field. It can be generalized to all kind of input types, such as url, number, etc. Some form attributes, such as pattern,  will also affect input field validity!
 
 Form validation is [supported](https://caniuse.com/#feat=form-validation) by all modern browsers.
 
@@ -17005,7 +16998,7 @@ Form validation is [supported](https://caniuse.com/#feat=form-validation) by a
 
 Most modern browsers propose default behavior for validating input fields and forms.
 
-The built-in validation system that comes with HTML5 automatically adds a CSS pseudo class to all input fields. Invalid fields (i.e. a badly worded email address in an <input type="email"> input field), will inherit the :invalid pseudo class, valid fields will inherit the :valid pseudo class.
+The built-in validation system that comes with HTML5 automatically adds a CSS pseudo class to all input fields. Invalid fields (i.e. a badly worded email address in an &lt;input type="email"> input field), will inherit the :invalid pseudo class, valid fields will inherit the :valid pseudo class.
 
 A first step to improve your HTML form is to add some CSS rules to your input fields. This adds visual feedback to the validity of input fields values - while the user is typing - such as changing the color of the border of input fields, or green/red icons on the right of the field, as shown in the small picture at the top right of this page.
 
@@ -18345,11 +18338,11 @@ All this here is HTML5, this is canvas, these are form elements we saw the last 
 
 Imagine you have an input field like this:
 
-1.  Select one or more files: <input type="file" id="input"/>
+1.  Select one or more files: &lt;input type="file" id="input"/>
 
 This renders as a "select files" or "browse files" button. If you select one file in the file chooser dialog that has popped up, before HTML5 you couldn't do anything with it in the client-side: no access from JavaScript. With the File API, you can read what we call "file metadata": name, size, type and last modification date.
 
-Look at the code below: the file API defines a files property on the DOM node corresponding to the <input type="file".../> input field. This property is an array.
+Look at the code below: the file API defines a files property on the DOM node corresponding to the &lt;input type="file".../> input field. This property is an array.
 
 In the example below, we get in the selectedFile variable, the metadata related to the first selected file:
 
@@ -18411,7 +18404,7 @@ In the example below, we get in the selectedFile variable, the metadata relate
 
 <h4>Example #2: display metadata of multiple files, use a filter on the file type</h4>
 
-This example is a bit more complicated, as it will display details about all files selected (not only the first) and allows only images to be selected, using the accept attribute of the input field: <input type="file" accept="image/*".../>.
+This example is a bit more complicated, as it will display details about all files selected (not only the first) and allows only images to be selected, using the accept attribute of the input field: &lt;input type="file" accept="image/".../^gt;.
 
 <a href="https://jsbin.com/deboja/edit?html,output">Example on JSBin</a>, or try it in your browser: click on the button, and select multiple image files. Notice that in the file selector, files that are not images will be greyed and non selectable.
 
@@ -18421,7 +18414,7 @@ This example is a bit more complicated, as it will display details about all fil
 
 <h4>Source code extract:</h4>
 
-Select several images: <input type="file" accept="image/*" multiple onchange="filesProcess(this.files)" name="selection"/>
+Select several images: &lt;input type="file" accept="image/" multiple onchange="filesProcess(this.files)" name="selection"/>
 
 ```
 <p>
@@ -18505,7 +18498,7 @@ The file API proposes several methods for reading file content, each taken from 
 
 There are three different methods available for reading a file's content: readAsText, readAsArrayBuffer for binary data and also as readAsDataURL (the content will be a URL you will use to set the src field of an <img src=...>, <audio>, &lt;video&gt;, and also with all existing methods/properties that accept a URL).
 
-All these methods take as a unique parameter a File object (for example, a file chosen by a user after clicking on a <input type=file> input field). Below, we use, as an example, the readAsText method:
+All these methods take as a unique parameter a File object (for example, a file chosen by a user after clicking on a &lt;input type=file> input field). Below, we use, as an example, the readAsText method:
 
 ```
 > function readFileContent(f) {
@@ -18522,7 +18515,7 @@ All these methods take as a unique parameter a File object (for example, a fil
 > }
 ```
 
-The above code shows how a file can be read as text. The function is called, for example by clicking on the button corresponding to a <input type="file" id="file"  onchange="readFileContent(this.files)"/>, and by choosing a file.
+The above code shows how a file can be read as text. The function is called, for example by clicking on the button corresponding to a &lt;input type="file" id="file"  onchange="readFileContent(this.files)"/>, and by choosing a file.
 <ul>
 <li><i>Line 12</i> is executed first, and asks the Reader object to read the file f as text. As this takes some time, it's an asynchronous operation that will be executed by the browser in the background. When the file is read, the reader.onload callback function is called.</li>
 <li><i>Line 4</i> is executed after <i>line 12<i>, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
@@ -18608,11 +18601,11 @@ This example is the one at the end of the previous page. This time, we show the 
 This time, please select multiple text files (using shift for multiple selection):
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 315.  (xxx) ----------------------------->
+<!--------------------------- 315. choose multiple text files (xxx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image315.png?raw=true"
-   alt=""
+   alt="Choose multiple text files."
    width="40%">
 &nbsp;
 <br/>
@@ -18666,11 +18659,11 @@ This time, please select multiple text files (using shift for multiple selection
 
 <h4>Explanations</h4>
 
-This example is similar to the previous one, except that this time we read multiple files.
+<p>This example is similar to the previous one, except that this time we read multiple files.
 
 <i>Line 20:</i> this is the for loop that will iterate on the files object passed as parameter by the onchange listener declaration at <i>line 10.<i>
 
-<i>Line 25:</i> instead of declaring the onload listener with a reader.onload =... directly in the loop, this time we preferred to write a separate function that will do this. This technique is useful when you want the listener to work with extra variables computed in the loop (in our case, the name of the file).
+<i>Line 25:</i> instead of declaring the onload listener with a reader.onload =... directly in the loop, this time we preferred to write a separate function that will do this. This technique is useful when you want the listener to work with extra variables computed in the loop (in our case, the name of the file).</p>
 
 <h4>About charter encoding</h4>
 
@@ -18695,11 +18688,11 @@ The WebAudio API is useful for reading audio sound samples from memory (no strea
 <a href="https://jsbin.com/xepexuy/1/edit?html,output">Example on JSBin</a> (does not work on IE, as it does not support the WebAudio API). We could not embed it here on the edX platform as it prevents code that uses Ajax to run in its pages.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 316.  (xxx) ----------------------------->
+<!----------------- 316. choose an audio file. it will be read as binary (382) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image316.png?raw=true"
-   alt="Local audio player"
+   alt="Local audio player. It will be read as binary."
    width="55%">
 &nbsp;
 <br/>
@@ -18740,11 +18733,11 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12
 This data URL in a browser address bar should look like this:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------- 317. data url in address bar shows a red cirle (xxx) ---------------------->
+<!------------------- 317. data url in address bar shows a red circle (383) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image317.jpeg?raw=true"
-   alt="Data url in address bar shows a red circle"
+   alt="Data url in address bar shows a red circle."
    width="85%" />
 &nbsp;
 <br/>
@@ -18754,20 +18747,19 @@ If we set the src attribute of an image element <img src="data:image/png....">
 In your browser, you will see a small red circle rendered by this source code:
 
 ```
-> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
->
-> AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
->
-> 9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red square" width=50 height=50/>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
+AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
+9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red square" width=50 height=50/>
 ```
 
-And here is the result:
+<h4>And here is the result:</h4>
+
 <!------------------------------------------------------------------------------------------------>
-<!-------------------- 318.  (xxx) ---------------------->
+<!-------------------- 318. small red blob (383) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image318.png?raw=true"
-   alt="image 318"
+   alt="image 318-small red circle or blob."
    width="15%" />
 &nbsp;
 <br/>
@@ -18778,11 +18770,11 @@ You will find lots of Web sites and tools for generating dataURL from files, suc
 
 <!------------------------------------------------------------------------------------------------>
 <!------------ 319. Online service that converts uploaded images to data uris... ----------------->
-<!-------------- we see an image and its ascii encoded data uri version (xxx) -------------------->
+<!-------------- we see an image and its ascii encoded data uri version (384) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image319.jpeg?raw=true"
-   alt="Online service that converts uploaded images to data uris...we see an image and its ascii encoded data uri version"
+   alt="Online service that converts uploaded images to data uris...we see an image and its ascii encoded data uri version."
    width="55%" />
 </p>
 
@@ -18793,11 +18785,11 @@ Notice that you can encode any type of file as dataURL, but this format is most
 Example of HTML5 logo embedded in a document without any real image, just a dataURL and CSS:
 
 <!------------------------------------------------------------------------------------------------>
-<!- 320. screenshot of jsbin examle shows the html5 logo insterted before a div using css (xxx) -->
+<!- 320. screenshot of jsbin examle shows the html5 logo insterted before a div using css (385) -->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image317.jpeg?raw=true"
-   alt="Data url in address bar shows a red circle"
+   alt="Data url in address bar shows a red circle."
    width="65%" />
 &nbsp;
 <br/>
@@ -18811,11 +18803,11 @@ This first example is useful for forms that allow the user to select one or more
 <a href="https://jsbin.com/laseye/edit?html,output">Example on JSBin</a> or try it below in your browser:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 332. preview of selected images --------------------------------->
+<!------------------------------ 332. preview of selected images (386) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image332.png?raw=true"
-   alt="Preview of selected images"
+   alt="Preview of selected images."
    width="45%">
 &nbsp;
 <br/>
@@ -18825,38 +18817,38 @@ This first example is useful for forms that allow the user to select one or more
 <h4>Source code extract:</h4>
 
 ```
-> <label for="files">Choose multiple files:</label>
-> <input type="file" id="files" multiple
->         onchange="readFilesAndDisplayPreview(this.files);"/><br/>
-> <p>Preview of selected images:</p>
-> <output id="list"></output>
-> <script>
->   function readFilesAndDisplayPreview(files) {
->     // Loop through the FileList and render image files as thumbnails.
->     for (var i = 0, f; f = files[i]; i++) {
->     // Only process image files.
->     if (!f.type.match('image.*')) {
->          continue;
->     }
->     var reader = new FileReader();
->  
->     //capture the file information.
->     reader.onload = function(e) {
->         // Render thumbnail. e.target.result = the image content
->         // as a data URL
->        // create a span with CSS class="thumb", for nicer layout
->        var span = document.createElement('span');
->        // Add an img src=... in the span, with src= the dataURL of
->        // the image
->        span.innerHTML = "<img class='thumb' src='" +
->                          e.target.result + "' alt='a picture'/>";
->        // Insert the span in the output id=list
->        document.getElementById('list').insertBefore(span, null);
->    };
->   // Read in the image file as a data URL.
->   reader.readAsDataURL(f);
->  }
-> }
+<label for="files">Choose multiple files:</label>
+<input type="file" id="files" multiple
+        onchange="readFilesAndDisplayPreview(this.files);"/><br/>
+<p>Preview of selected images:</p>
+<output id="list"></output>
+<script>
+  function readFilesAndDisplayPreview(files) {
+    // Loop through the FileList and render image files as thumbnails.
+    for (var i = 0, f; f = files[i]; i++) {
+    // Only process image files.
+    if (!f.type.match('image.*')) {
+         continue;
+    }
+    var reader = new FileReader();
+ 
+    //capture the file information.
+    reader.onload = function(e) {
+        // Render thumbnail. e.target.result = the image content
+        // as a data URL
+       // create a span with CSS class="thumb", for nicer layout
+       var span = document.createElement('span');
+       // Add an img src=... in the span, with src= the dataURL of
+       // the image
+       span.innerHTML = "<img class='thumb' src='" +
+                         e.target.result + "' alt='a picture'/>";
+        // Insert the span in the output id=list
+       document.getElementById('list').insertBefore(span, null);
+   };
+  // Read in the image file as a data URL.
+  reader.readAsDataURL(f);
+ }
+}
 ```
 
 <h4>Explanations:</h4>
@@ -18869,7 +18861,7 @@ This first example is useful for forms that allow the user to select one or more
 <a href="https://jsbin.com/miciqu/edit?html,output">Try it on JSBin</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 322.  (xxx) ----------------------------->
+<!-------------------------- 322.  (388) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image322.jpeg?raw=true"
