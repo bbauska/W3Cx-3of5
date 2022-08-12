@@ -4403,7 +4403,8 @@ header video {
 
 <h4>Full screen video that resizes and keeps its ratio, using the viewport units.</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------- 75. full screen video using viewport units to keep its ration (92) --------------->
+<!------------- 75. full screen video using viewport units to keep its ratio (92) 
+---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image075.png?raw=true"
@@ -4411,8 +4412,7 @@ header video {
    width="65%">
 &nbsp;
 <br/>
-<p>
-This time we obtain the same result as with the first example that used JavaScript and a resize event. The video resizes correctly and keeps its ratio.</p>
+<p>This time we obtain the same result as with the first example that used JavaScript and a resize event. The video resizes correctly and keeps its ratio.</p>
 
 <h4>CSS code:</h4>
 
@@ -4460,11 +4460,10 @@ The &lt;video&gt; and &lt;audio&gt; elements have methods, properties/attrib
 <li><b>Properties</b> (duration, current position, etc.), either in read/write mode (such as volume), or in read-only mode (such as encoding, duration, etc.)</li>
 <li><b>Events</b> generated during the life cycle of the element that can be processed using JavaScript callbacks. It is also possible to send events to control the video player.</li>
 </ul>
-<p>
-The set of properties/attributes/methods of the &lt;audio&gt; and &lt;video&gt; elements is called an "API" (Application Programming Interface). For example, we will speak here of the "media API" to talk about the associated API.
+<br/>
+<p>The set of properties/attributes/methods of the &lt;audio&gt; and &lt;video&gt; elements is called an "API" (Application Programming Interface). For example, we will speak here of the "media API" to talk about the associated API.
 
-Like any HTML element, the &lt;video&gt; element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a &lt;video&gt; element:
-</p>
+Like any HTML element, the &lt;video&gt; element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a &lt;video&gt; element:</p>
 
 ```
 1.  var video = document.createElement('video');
@@ -7074,11 +7073,11 @@ The possible values are the same as those for the fillStyle property: a color,
 
 ```
 -   <h4> strokeRect(x, y, width, height): like fillRect(...), but instead of drawing a filled rectangle the rectangle is drawn in wireframe mode
-```
 1.  ctx.strokeStyle='blue';
 2.  ctx.strokeRect(10,10,200,200);
 ```
-... gives this result:
+
+<h4>gives this result:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------ 129. stroked rectangle - border in blue (xxx) ---->
@@ -7089,11 +7088,13 @@ The possible values are the same as those for the fillStyle property: a color,
    alt="Stroked rectangle - border in blue." />
 </p>
 
-Only the outline of the rectangle will be drawn, and it will be drawn using the value of the strokeStyle property.
+<p>Only the outline of the rectangle will be drawn, and it will be drawn using the value of the strokeStyle property.</p>
 
+```
 -   <h4> clearRect(x, y, width, height): a call to this method erases the specified rectangle
+```
 
-Actually it draws it in a color called "transparent black" (!) that corresponds to the initial state of the rectangle as if no drawing had occurred.
+<p>Actually it draws it in a color called "transparent black" (!) that corresponds to the initial state of the rectangle as if no drawing had occurred.</p>
 
 ```
 1.  ctx.fillStyle='pink';
@@ -7126,8 +7127,8 @@ Actually it draws it in a color called "transparent black" (!) that corresponds 
 5.       ctx.strokeRect(10,10,80,100);
 6.  }
 ```
-<p>
-Here, we used "stroke" instead of "fill" in the property and method names (<i>lines 4 and 5</i>): strokeStyle instead of fillStyle, strokeRect(...) instead of fillRect(...).
+
+<p>Here, we used "stroke" instead of "fill" in the property and method names (<i>lines 4 and 5</i>): strokeStyle instead of fillStyle, strokeRect(...) instead of fillRect(...).
 
 We also introduced a new property of the context, that applies only when drawing in "stroke" mode, the lineWidth property (<i>line 3</i>), that is used for setting the width of the shape outline. The value is in pixels.
 </p>
@@ -7209,6 +7210,7 @@ Your browser does not support the canvas tag.
 18.     ctx.fillText("hello", 70, 22);
 19. }
 ```
+
 <p>
 This example shows the "global" nature of the context properties. Once you set the filled color to red, any shapes you draw in filled mode will be red. This is true for all the context properties. We set some of these properties in <i>lines 3-7</i>, and all following calls to context methods for drawing rectangles or text will depend on them. The two filled rectangles at <i>lines 10-11</i> will be red, the two wireframe rectangles drawn at <i>lines 14-15</i> will be blue, etc.
 
@@ -7375,7 +7377,7 @@ At <i>line 10</i>, we called the drawSomething(...) function with 0 and 100 
 If you look at the code of the modified function, you will see that each call to fillRect(...) uses the x and y parameters instead of hard coded values. In this way, if we call it with parameters (0, 100), then all rectangles will be drawn 100 pixels to the bottom (offset in y). Here is the result:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 131. Rectangles are drawn 100 pixels toward the bottom (xx) ------------------->
+<!---------------- 131. Rectangles are drawn 100 pixels toward the bottom (160) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image131.jpeg?raw=true"
@@ -7602,6 +7604,7 @@ drawArrow(ctx, 0, 0, 0, 100, 10, 'red');
 <p>Now, instead of simply calling drawMonster(0, 0), we will call first ctx.translate(100, 100), and look at the result below:</p>
 
 <h4>JS</h4>
+
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
@@ -7701,11 +7704,12 @@ Your browser does not support the canvas tag.
 <li><h4>Other transformations: rotate, scale</h4></li>
 </ul>
 
-<h5>There are other transformations available:</h5>
+<h4>There are other transformations available:</h4>
 <ul>
 <li>ctx.rotate(angle), with angle in radians. Note that the order of transformations is important: usually we translate, then rotate, then scale... If you change this order, you need to know what you are doing...</li>
 <li>ctx.scale (sx, sy), where scale(1, 1) corresponds to "no zoom", scale(2, 2) corresponds to "zooming 2x" and scale(0.5, 0.5) corresponds to zooming out to see the drawings half as big as before. If you do not use the same values for sx and sy, you do "asymmetric scaling", you can distort a shape horizontally or vertically. Try changing the values in the source code of the next online examples.</li>
 </ul>
+<br/>
 <p>
 Here is the previous example, but this time we translated the coordinate system, then rotated it with an angle equal to PI/4 , then we scaled it so that units are half as big:
 </p>
@@ -8050,7 +8054,7 @@ Your browser does not support the canvas tag.
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 132. laptop showing unicorn validator (06) --------------------------->
+<!------------------------- 132. laptop showing unicorn validator (172) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image132.jpeg?raw=true"
@@ -8058,7 +8062,7 @@ Your browser does not support the canvas tag.
    width="40%" />
 </p>
 
-<p>Source code extract of this function: notice at <i>lines 3</i> and <i>26</i> how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines 7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
+<h4>Source code extract of this function: notice at <i>lines 3</i> and <i>26</i> how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines 7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</h4>
 
 ```
 1.  function drawMonster(x, y, angle, headColor, eyeColor) {
@@ -8100,6 +8104,7 @@ While drawing rectangles with strokeRect or fillRect, drawing text or drawing
 
 Another mode called "path mode" or "buffered mode" will be seen later in this course, which will be useful for drawing lines, curves, arcs, and also rectangles. Rectangles are the only shapes that have methods for drawing them <i>immediately</i> and also other methods for drawing them in "<i>path/buffered mode</i>".
 </p>
+
 <h4>Example: drawing rectangles in immediate mode using bests practices</h4>
 
 <p>Let's give an example that draws several rectangles, filled or wireframe, with different colors and line widths:</p>
@@ -8914,6 +8919,7 @@ As a reminder: an immediate mode means "executing a call to a drawing method mea
 Here is an example that draws 1000 random rectangles in a canvas, using immediate mode rectangle drawing calls:
 
 <h4>JS</h4>
+
 ```
 var canvas, ctx, w, h;
 function init() {
@@ -8934,6 +8940,7 @@ console.timeEnd("time to draw");
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9017,6 +9024,7 @@ console.timeEnd("time to draw");
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9031,7 +9039,7 @@ Your browser does not support the canvas tag.</canvas>
 </html>
 ```
 
-Extract from source code (the part that draws the rectangles):
+<p>Extract from source code (the part that draws the rectangles):</p>
 
 ```
 1.  for(var i=0; i < 1000; i++) {
@@ -9065,6 +9073,7 @@ And here is what the timer gives: a slightly faster execution time. Changing 100
 <h4>Reset the path mode buffer</h4>
 
 A call to ctx.beginPath() will reset the buffer (empty its contents). We will see many more examples of using the path drawing mode in another further section.
+
 ```
 1.  // start a new buffer / path
 2.  ctx.beginPath();
@@ -9137,6 +9146,7 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9210,6 +9220,7 @@ In this example, the entire grid is drawn during the execution of the last line 
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9270,6 +9281,7 @@ This example shows that filled and wireframe shapes should be drawn differently 
 <br/>
 
 <h4>Code source:</h4>
+
 ```
 1.  var canvas=document.getElementById('myCanvas');
 2.  var ctx=canvas.getContext('2d');
@@ -9308,6 +9320,7 @@ Let's look at the drawing from the last example of the previous section:
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9356,6 +9369,7 @@ What we will try first is to call stroke() after the first half of the path, t
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9439,6 +9453,7 @@ using the ctx.beginPath() method, as shown in the next example.
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9473,6 +9488,7 @@ ctx.fill();
 ```
 
 <h4>Source code:</h4>
+
 ```
 1.  var canvas=document.getElementById('myCanvas');
 2.  var ctx=canvas.getContext('2d');
@@ -9551,6 +9567,7 @@ Notice the save/restore of the context at the beginning/end of the function. Thi
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9667,6 +9684,7 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9790,6 +9808,7 @@ ctx.stroke();
 ```
 
 <h4>Source code:</h4>
+
 ```
 1.  var canvas=document.getElementById('myCanvas');
 2.  var ctx=canvas.getContext('2d');
@@ -9883,6 +9902,7 @@ ctx.stroke();
 ```
 
 <h4>Code source extract:</h4>
+
 ```
 1.  ctx.beginPath();
 2.  // we ommited the last parameter
@@ -9927,6 +9947,7 @@ Then, the result is the "complementary" of the previous arc:
 <br/>
 
 <h4>Source code:</h4>
+
 ```
 1.  var canvas = document.getElementById("myCanvas");
 2.  var ctx = canvas.getContext("2d");
@@ -10011,6 +10032,7 @@ In fact, the arcTo(...) method draws an arc of a circle depending on some tan
 This method can be confusing. It was defined mainly for drawing rounded shapes like rounded rectangles. We used an excerpt here from the excellent [tutorial on the arcTo(...) method](http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html).
 
 <h4>It works like this:</h4>
+
 ```
 1.  Draw an imaginary line through (x0,y0) and (x1,y1), draw another imaginary line through (x1,y1) and (x2,y2),
 2.  Take an imaginary circle of radius r, and slide it up between the two lines until it just touches both lines. The two points at which the circle touches the lines are called the tangent points.
@@ -10058,6 +10080,7 @@ context.stroke();
 ```
 
 <h4>Source code extract:</h4>
+
 ```
 1.  context.beginPath();
 2.  context.moveTo(0, 20);
@@ -10123,6 +10146,7 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 ```
 
 <h4>Source code:</h4>
+
 ```
 1.  var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke) {
 2.      ctx.beginPath();
@@ -10228,9 +10252,10 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 
 Red = arcTo and Pink = lineTo
 
-<h4> Example #4: use the unrounded vertices in arcTo</h4>
+<h4>Example #4: use the unrounded vertices in arcTo</h4>
 
-For drawing a rounded square, this code also works:
+<h4>For drawing a rounded square, this code also works:</h4>
+
 ```
 1.  ctx.moveTo(x+radius, y);
 2.  ctx.arcTo(x+width, y,x+width, y+height, radius);
@@ -10239,7 +10264,8 @@ For drawing a rounded square, this code also works:
 5.  ctx.arcTo(x, y, x+width, y,radius);
 ```
 
-which might be easier than trying to figure out where the arc will end like this:
+<h4>which might be easier than trying to figure out where the arc will end like this:</h4>
+
 ```
 1.  ctx.moveTo(x+radius, y);
 2.  ctx.arcTo(x+width, y, x+width, y+radius, radius);
@@ -10326,6 +10352,7 @@ The context point may be defined by a call to the moveTo(x, y) method of the c
 The control point controls the curvature - if we move the control point farther we get a sharper curve.
 
 <h4>Typical use</h4>
+
 ```
 1.  context.moveTo(contextX, contextY);
 2.  context.quadraticCurveTo(controlX, controlY, endX, endY);
@@ -10351,6 +10378,7 @@ The control point controls the curvature - if we move the control point farther 
 <br/>
 
 <h4>Source code:</h4>
+
 ```
 1.  var canvas=document.querySelector('#myCanvas1');
 2.  var context=canvas.getContext('2d');
@@ -10894,51 +10922,61 @@ There are 3 steps:
 
 <h4>Step #1: define a linear gradient</h4>
 
-Syntax: 
+<h4>Syntax:</h4>
+
 ```
 1.  ctx.createLinearGradient(x0,y0,x1,y1);
 ```
-... where the (x0, y0) and (x1, y1) parameters define "the direction of the gradient" (as a vector with a starting and an ending point). This direction is an invisible line along which the colors that compose the gradient will be interpolated.
+
+<p>... where the (x0, y0) and (x1, y1) parameters define "the direction of the gradient" (as a vector with a starting and an ending point). This direction is an invisible line along which the colors that compose the gradient will be interpolated.</p>
 
 <h4>Let's see an example:</h4
+
 ```
 1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 0);
 ```
 
-This line defines the direction of the gradient: a virtual, invisible line that goes from the top left corner of the canvas (0, 0) to the top right corner of the canvas (300, 0). The interpolated colors will propagate along this line. 
+<p>This line defines the direction of the gradient: a virtual, invisible line that goes from the top left corner of the canvas (0, 0) to the top right corner of the canvas (300, 0). The interpolated colors will propagate along this line. 
 
-If this gradient is going to be reused by different functions, it is good practice to create/initialize it in a function called when the page is loaded and to store it in a global variable.
+If this gradient is going to be reused by different functions, it is good practice to create/initialize it in a function called when the page is loaded and to store it in a global variable.</p>
 
 <h4>Step #2: add a number of "color stops" to this gradient</h4>
 
 We will add a set of "colors" and "stops" to this gradient. The stops go from 0 (beginning of the virtual line defined just above), to 1 (end of the virtual line). A color associated with a value of 0.5 will be right in the middle of the virtual line.
 
 Here is an example that corresponds to an interpolated version of the French flag, going from blue to white, then to red, with proportional intervals. We define three colors, blue at position 0, white at position 0.5 and red at position 1:
+
 ```
 1.  grdFrenchFlag.addColorStop(0, "blue");
 2.  grdFrenchFlag.addColorStop(0.5, "white");
 3.  grdFrenchFlag.addColorStop(1, "red");
 ```
+
 <h4>Step 3: draw some shapes</h4>
 
-First, let's set the fillStyle or strokeStyle of the context with this gradient, then let's draw some shapes "on top of the gradient".
+<p>First, let's set the fillStyle or strokeStyle of the context with this gradient, then let's draw some shapes "on top of the gradient".
 
-In our example, the gradient corresponds to an invisible rectangle that fills the canvas. If we draw a rectangle of the canvas size, it should be filled with the entire gradient:
+In our example, the gradient corresponds to an invisible rectangle that fills the canvas. If we draw a rectangle of the canvas size, it should be filled with the entire gradient:</p>
+
 ```
 1.  ctx.fillStyle = grdFrenchFlag;
 2.  ctx.fillRect(0, 0, 300, 200);
 ```
-The result is shown in the [above pen](https://codepen.io/w3devcampus/pen/WNpPZVO): a big rectangle that fills the whole canvas, with colors going from blue (left) to white (middle) to red (right).
+
+<p>The result is shown in the <a href="https://codepen.io/w3devcampus/pen/WNpPZVO">above pen</a>: a big rectangle that fills the whole canvas, with colors going from blue (left) to white (middle) to red (right).</p>
 
 <h4>Examples</h4>
 
 <h4>Example #1: changing the direction of the gradient</h4>
 
-If you modify the source code that defines the direction of the gradient as follows...
+<p>If you modify the source code that defines the direction of the gradient as follows...</p>
+
 ```
 1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
 ```
-... then you will define a gradient that goes from the top left corner of the canvas to the bottom right of the canvas. Let's see what it does:
+
+<p>... then you will define a gradient that goes from the top left corner of the canvas to the bottom right of the canvas. Let's see what it does:</p>
+
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 168. (xxx) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -10981,9 +11019,11 @@ Instead of drawing a filled rectangle that covers the whole surface of the canva
 12. ctx.fillRect(150, 150, 50, 50);
 13. ctx.fillRect(250, 150, 50, 50);
 ```
-This code is rather ugly isn't it? It would have been better  to use a loop...
+
+<p>This code is rather ugly isn't it? It would have been better  to use a loop...</p>
 
 <h4>Here is function that draws a chessboard:</h4>
+
 ```
 1.  // n = number of cells per row/column
 2.  function drawCheckboard(n) {
@@ -11018,6 +11058,7 @@ This code is much more complex than the previous one, taking 16 lines instead of
 <br/>
 
 <h4>JS</h4>
+
 ```
 var canvas, ctx, grdFrenchFlag;
 function init() {
@@ -11085,6 +11126,7 @@ Just as we used fillStyle and fillRect for drawing rectangles filled with a 
 <br/>
 
 <h4>JS</h4>
+
 ```
 var canvas, ctx, grdFrenchFlag;
 function init() {
@@ -11172,6 +11214,7 @@ Like in the first example we will draw a filled rectangle that is the same size�
 <br/>
 
 <h4>JS</h4>
+
 ```
 var canvas, ctx, grdFrenchFlag;
 function init() {
@@ -11219,10 +11262,12 @@ We notice that "before" the gradient starts, the first color of the gradient is 
 <h4>Example #5: what happens if we define a gradient bigger than the canvas?</h4>
 
 Nothing special; we will "see through the drawn shapes", and the parts of the gradient that are located in the canvas area will be shown. You can try this example that defines a gradient twice the size of the canvas: 
+
 ```
 1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, <b>600, 400</b>);
 ```
-And if we draw the same rectangle with the canvas size, here is the result:
+
+<p>And if we draw the same rectangle with the canvas size, here is the result:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 173. (xxx) -------------------------------->
@@ -11235,6 +11280,7 @@ And if we draw the same rectangle with the canvas size, here is the result:
 <br/>
 
 <h4>JS</h4>
+
 ```
 var canvas, ctx, grdFrenchFlag;
 function init() {
@@ -11298,6 +11344,7 @@ It suffices to create a new gradient before drawing each filled rectangle, and s
 <br/>
 
 <h4>JS</h4>
+
 ```
 var canvas, ctx, grdFrenchFlag;
 function init() {
@@ -11348,6 +11395,7 @@ border: 1px solid black;
 ```
 
 <h4>Extract from source code:</h4>
+
 ```
 function setGradient(x, y, width, height) {
     grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
@@ -11395,6 +11443,7 @@ Here is an example of a radial gradient that interpolates the color of the rainb
 <br/>
 
 <h4>JS</h4>
+
 ```
 > var canvas, ctx, grd;
 > function init() {
@@ -12030,6 +12079,7 @@ There are 4 properties of the canvas context that are useful for indicating that
 </p>
 
 <h4>JS</h4>
+
 ```
 var canvas, ctx;
 function init() {
@@ -12255,6 +12305,7 @@ The trick is to save the context before setting the shadow properties, then dr
 </p>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -12327,9 +12378,11 @@ They apply to all shapes that are drawn in path mode (lines, curves, arcs) and s
 <h4>Example #1: changing the line thickness</h4>
 
 We have seen this before. This is done by changing the value (in pixels) of the lineWidth property of the context:
+
 ```
 1.  <b>ctx.lineWidth = 10;</b> // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels
 ```
+
 Here is a complete example where we draw with a lineWidth of 20 pixels:
 
 <!------------------------------------------------------------------------------------------------>
@@ -12571,6 +12624,7 @@ We will compare the old methods with the new one, and implement the same  exam
 Below is the example shown in the video, with source code:
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -12649,6 +12703,7 @@ This is how pre-HTML5 games were written. Before the introduction of the canvas 
 Please try this example that moves/animates a div using setInterval:
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -12691,6 +12746,7 @@ clearInterval(requestId);
 ```
 
 <h4>Extract from the source code:</h4>
+
 ```
 1.  <body>
 2.     <div id="animatedDIV">Animated DIV :-)</div>
@@ -12917,6 +12973,7 @@ This function works like setInterval(...) with one difference: it calls your f
 Check the example below (click on start animation):
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -13003,6 +13060,7 @@ clearTimeout(requestId);
 This is similar to the previous example except that we called setTimeout(function, delay) instead of setInterval(function, period). <b>As setTimeout runs the function passed as the first parameter only once, we also have to call it at the end of the loop</b>.
 
 <h4>Extract from source code:</h4>
+
 ```
 1.  function animationLoop() {
 2.     // 1 - Clear
@@ -13071,6 +13129,7 @@ The requestAnimationFrame(animationLoop) is very similar to setTimeout:
 You will note that  requestAnimationFrame(function) is used like setTimeout(function, delay). A call to requestAnimationFrame just asks the browser to call the function passed as a parameter ONCE, and the target delay is fixed, and corresponds to a 60 frames/s frame rate (16.6ms). Notice that an id is used for stopping an animation with cancelAnimationFrame(id). 
 
 <h4>Source code:</h4>
+
 ```
 1.  <body onload="init();">
 2.  <script>
@@ -13116,6 +13175,7 @@ You will note that  requestAnimationFrame(function) is used like setTimeout(
 <h4>Check the example below:</h4>
 
 <h4>Source code extract - please compare with the previous example that used setInterval():</h4>
+
 ```
 1.  function animationLoop(timeStamp) {
 2.      // 1 - Clear
@@ -13179,6 +13239,7 @@ The events are called <i>DOM events</i>, and we use the <i>DOM JavaScript API<
 <h4>First method: declare event handlers in the HTML code</h4>
 
 You will often find this in examples on the Web:
+
 ```
 1.  <div id="someDiv" <b>onclick="alert('clicked!');"</b>>
 2.      content of the div
@@ -13190,16 +13251,19 @@ Note: this is not the recommended way to handle events, even if it's very easy t
 <h4>Second method: add an event handler to an HTML element in JavaScript</h4>
 
 <h4>Here is an example:</h4>
+
 ```
 1.  document.getElementById('someDiv').onclick = function(evt) {
 2.    alert('clicked!');
 3.  }
 ```
+
 This method is fine, but  you will not be able to attach several listener functions. If you need to do this, the preferred version is the next one.
 
 <h4>Third method: register a callback to the event listener with the addEventListener method</h4>
 
 <h4>This is how we do it:</h4>
+
 ```
 1.  document.getElementById('someDiv').addEventListener('click', function(evt) {
 2.      alert('clicked!');
@@ -13211,11 +13275,13 @@ The third parameter is not important for now, just set it to false, or simply d
 <h4>The DOM event that is passed to the event listener function</h4>
 
 When you create an EventListener and attach it to an element,  an event object will be passed as a parameter to your callback, just like this:
+
 ```
 1.  element.addEventListener('click', function(</b>event</b>) {
 2.     <b>// now you can use the event object inside the callback</b>
 3.  }, false);
 ```
+
 Depending on the type of event you are listening to, we will use different properties from the event object in order to get useful information like: "what keys have been pressed down?", "what is the position of the mouse cursor?", "which mouse button is down?", etc.
 
 Let's see next how to deal with the keyboard and the mouse. In the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games</a>, we look at additional APIs such as <a href="https://www.w3.org/TR/gamepad/">the gamePad API</a> for using USB or wireless gamepads/joysticks/game controllers.
@@ -13223,6 +13289,7 @@ Let's see next how to deal with the keyboard and the mouse. In the <a href="htt
 <h4>Source code for the knowledge check 4.3.1</h4>
 
 <a href="http://jsbin.com/korele/edit" target="_blank">Online example on JS Bin</a>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -13447,6 +13514,7 @@ cancelAnimationFrame(requestId);
 ```
 
 <h4>Code:<.h4>
+
 ```
 1.  <script>
 2.  var canvas, ctx;
@@ -13585,6 +13653,7 @@ Note that the line that forces the focus to the canvas is commented by default. 
 </p>
 
 <h4>Extract from the code:</h4>
+
 ```
 1.  var canvas;
 2.  
@@ -14242,7 +14311,7 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 &nbsp;
 <br/>
 
-Code:
+<h4>Code:</h4>
 
 ```
 1.  <script>
@@ -14654,6 +14723,7 @@ Subscribe to newsletter![](./images/image219.wmf)
 <h4>Source code:</h4>
 
 Bottom of Form
+
 ```
 1.  <label for="firstname">First name:</label>
 2.  <input type="text" name="firstname" id="firstname"><br>
@@ -14992,6 +15062,7 @@ Try this example: just click the next input field: , or <a href="https://jsbin
 ----->
 
 <h4>Source code:</h4>
+
 ```
 1.  ...
 2.  <input type="date"
@@ -15018,6 +15089,7 @@ Example: we want to celebrate birthday parties only on Saturdays, [check this 
 </p>
 
 <h4>Extract from source code:</h4>
+
 ```
 1.  <input type="date"
 2.      id="birthdayParty"
@@ -15041,6 +15113,7 @@ Example: we want to celebrate birthday parties only on Saturdays, [check this 
 </p>
 
 <h4>Extract from source code:</h4>
+
 ```
 <input type="date"
     id="birthdayParty"
@@ -15064,6 +15137,7 @@ If you use the min, max, or step attributes with a list attribute, it may
 Here is [an interactive example at JSBin](https://jsbin.com/ganipuv/edit?html,output) where you can change the type of date/time chooser. It also shows how to listen to the input event when a date/time is chosen.
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en"><head>...</head>
@@ -15123,6 +15197,7 @@ While if we enter a date in the future:
 </p>
 
 <h4>Extract from source code:</h4>
+
 ```
 1.  <body>
 2.  <label for="birthDate">Enter your birth date: </label><p>
@@ -15151,6 +15226,7 @@ While if we enter a date in the future:
 ```
 
 <i>Lines 17-23</i> show how we can compare the date picked in the calendar widget with the current date. Note that we can compare any given dates using JavaScript. To check that the chosen date is before 2000 we would do this:
+
 ```
 if(this.valueAsDate <= new Date(2000,1,1)) {
 ...
@@ -15163,9 +15239,11 @@ The HTML5 specification indicates that we can use <input type="date"> and <in
 [Here is an interactive example at JSBin](https://jsbin.com/supope/1/edit) where you can change the type of date chooser and try all the different possible values for the type attribute of date pickers.
 
 <h4>Some screenshots from Opera desktops and Safari IOS:</h4>
+
 ```
 <input type="time">:
 ```
+
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 237.  (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -15277,7 +15355,7 @@ See the next example to see this in action. More details will be presented in a 
    alt="" />
 </p>
 
-Try it on your browser:                         Enter your email: 
+<h4>Try it on your browser:                     Enter your email: </h4>
 
 ```
 1.  <!DOCTYPE html>
@@ -15385,6 +15463,7 @@ Enter a URL (default validation): 
 Enter a URL (custom validation, must start with http, https or ftp): 
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15425,6 +15504,7 @@ The specification does not state what the GUI should look like, so current impl
 </p>
 
 <h4>Typical use:</h4>
+
 ```
 <label for="search1">Simple search: </label>
    <input type=search id="search1">
@@ -15467,6 +15547,7 @@ Example that shows a drop down list of recent searches (Safari screenshot borro
 </p>
 
 <h4>Source code for the knowledge check below</h>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html>
@@ -15555,6 +15636,7 @@ Or, do it here in your browser (Manually enter a value that is not in the range,
 Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid): 
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  ....
@@ -15642,6 +15724,7 @@ This input type renders as a slider. It accepts the same attributes as the <inp
 </p>
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15694,6 +15777,7 @@ This input type renders as a slider. It accepts the same attributes as the <inp
 When you click and drag the slider, it "jumps" to some snap points corresponding to the integer values of the range defined by the min and max attributes. The "size of the jumps" depends on the value of the step attribute.
 
 Try these examples in your browser and look at their behavior:
+
 ```
 value=5 min=0, max=10 step=1:  
 value=12 min=10, max=50 step=4:  
@@ -15841,6 +15925,7 @@ Choose optionFree registering![](./images/image219.wmf)Premium![](./images/image
 Bottom of Form
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15959,6 +16044,7 @@ Bottom of Form
 <b>Notice that the focus in on the second input field, thanks to the autofocus attribute.</b>
 
 <h4>Extract from source code:</h4>
+
 ```
 1.  <form>
 2.      ...
@@ -15981,6 +16067,7 @@ Bottom of Form
 Read [these explanations](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes) for a complete description of the syntax of Boolean attributes.
 
 <h4>Source code for the knowledge check 5.5.4</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -16024,7 +16111,7 @@ List attributePreferred browser![](./images/image269.wmf) ![](./images/image270
 
 Bottom of Form
 
-Source code extract:
+<h4>Source code extract:</h4>
 
 ```
 1.  <form>
@@ -16123,7 +16210,7 @@ Attributes used: placeholder (for displaying a ghost example value), pattern,
 
 Enter a pseudo (6-12 characters): ![](./images/image218.wmf)
 
-Complete source code:
+<h4>Complete source code:</h4>
 
 ```
 1.  <!DOCTYPE html>
@@ -16158,6 +16245,7 @@ Complete source code:
 Enter the URL of your repository (http, https or ftp): 
 
 <h4>Source code extract:</h4>
+
 ```
 1.  <input
 2.      id="website"
@@ -16231,6 +16319,7 @@ Without the multiple attributeEnter several email addresses: Submit
 Bottom of Form
 
 <h4>Complete source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -16309,6 +16398,7 @@ You might just glance at them and/or try the examples. The next pages cover thei
 <h3 id="ch5-5-10">5.5.10 formaction and formmethod</h3>
 
 These attributes are targeted to the <input type="submit"> input fields. They are rarely used.
+
 ```
 1.  <input type="submit"
 2.  formaction="preview.php" formmethod="get" value="Preview">
@@ -16319,6 +16409,7 @@ When you use an <input type="submit"> field with the formaction attribute, t
 The formmethod attribute does the same with the POST/GET method attribute of the form. If an <input type="submit"> has a formmethod attribute, it overrides the value of the method attribute of the form.
 
 <h4>Typical use</h4>
+
 ```
 1.  <form action="post.php" method="post">
 2.       <input type="submit"
@@ -16798,6 +16889,7 @@ The progress below is defined like this:
 Download progress: 
 
 <h4>Source code:</h4>
+
 ```
 1.  Download progress: <progress id=pr value=100 min=0 max=1000></progress>
 2.  <script>
@@ -16882,7 +16974,8 @@ Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,outp
 &nbsp;
 <br/>
 
-Source code of this example:
+<h4>Source code of this example:</h4>
+
 ```
 1.  <form action="demo_form.asp" method="get">
 2.       <input list="browsers" name="browser" />
@@ -16947,6 +17040,7 @@ Submit form
 <b>Bottom of Form</b>
 
 <h4>Source code extract:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -17002,6 +17096,7 @@ Submit form
 <b>Bottom of Form</b>
 
 <h4>Source code extract:</h4>
+
 ```
 1.  .myForm input:focus {
 2.     padding-right:70px;
@@ -17661,6 +17756,7 @@ One way of handling this is to add a user interface button that calls clear() 
 <h4>Iterating local stores</h4>
 
 Local stores (localStorage or sessionStorage) can also be iterated through in order to list all the content that they contain. The order is not guaranteed, but this may be useful at times (if only for debugging purposes!). The following code lists everything in the current store:
+
 ```
 1.  for (var i = 0, n = localStorage.length; i < n; i++) {
 2.      var k = localStorage.key(i);
@@ -17687,6 +17783,7 @@ Students may note that something seems a bit off in the example above: instead o
 Then click on the second button to add data to the store, click on the third to remove data. Finally, the last one clears the whole data store.
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -17811,6 +17908,7 @@ We used the same generic code for saving/restoring input fields' values we saw 
 The function initPreferences is executed when the page is loaded.
 
 <h4>Source code extract:</h4>
+
 ```
 function initPreferences() {
    console.log("Adding input listener to all input fields");
@@ -17869,6 +17967,7 @@ We start writing an init() function that is called when the page is loaded. Th
 2.  Restore the last saved value for each input field, if present.
 
 <h4>Source code:</h4>
+
 ```
 // Called when the page is loaded
 window.onload = init;
@@ -17885,7 +17984,8 @@ function init() {
 }
 ```
 
-And here is the addInputListener(inputField) function. It takes an input field as parameter and attaches an oninput listener to it, that will save the field's content each time a value is entered. The key will be the id of the input field (<i>line 3<i>):
+<p>And here is the addInputListener(inputField) function. It takes an input field as parameter and attaches an oninput listener to it, that will save the field's content each time a value is entered. The key will be the id of the input field (<i>line 3</i>):</p>
+
 ```
 function addInputListener(inputField) {
     inputField.addEventListener('input', function(event) {
@@ -18575,6 +18675,7 @@ This example is similar to the previous one, except that this time we read multi
 <h4>About charter encoding</h4>
 
 Note that you can optionally indicate the encoding of the file you are going to read (default is UTF-8):
+
 ```
 1.  reader.readAsText(file, 'UTF-8');
 2.  reader.readAsText(file, 'ISO-8859-1');
@@ -18604,6 +18705,7 @@ The WebAudio API is useful for reading audio sound samples from memory (no strea
 <br/>
 
 <h4>Source code extract:</h4>
+
 ```
 > // User selects file. Read it as an ArrayBuffer and pass to the API.
 > var fileInput = document.querySelector('input[type="file"]');
@@ -18845,16 +18947,15 @@ It is possible to prompt the user to activate the GPS (this is what most GPS nav
 
 ```
 navigator.geolocation.getCurrentPosition(showPosition, onError);
- 
 function showPosition(position) {
     console.log("latitude is: " + position.coords.latitude);
     console.log("longitude is: " + position.coords.longitude);
 }
- 
 function onError(err) {
     console.log("Could not get the position");
 }
 ```
+
 <p>
 <a href="https://jsbin.com/toyeley/1/edit?html,output">This online example at JSBin</a> shows how to get the current longitude and latitude and display them in an HTML page. Try it below in your browser:
 
@@ -18893,6 +18994,7 @@ displayCoords.innerHTML="Latitude: " + position.coords.latitude +
 </body>
 </html>
 ```
+
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 324. geolocation callback illustration (xxx) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19018,6 +19120,7 @@ var watchPosId = navigator.geolocation.watchPosition(showPosition);
 // stop the tracking
 navigator.geolocation.clearWatch(watchPosId);
 ```
+
 <p>
 As a test, you may just try to change getCurrentPosition to watchPosition in the previous examples, and try this code using a mobile phone or tablet, walk for 20 meters and see the position changing.
 
@@ -19624,6 +19727,6 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-11-2022 1:53am</i></b></h3>
-<h2><b><i>08-11-2022 1:53am</i></b></h2>
-<h6><b><i>08-11-2022 1:53am</i></b></h6>
+<h3><b><i>08-11-2022 7:27pm</i></b></h3>
+<h2><b><i>08-11-2022 7:27pm</i></b></h2>
+<h6><b><i>08-11-2022 7:27pm</i></b></h6>
