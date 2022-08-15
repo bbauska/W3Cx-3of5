@@ -6845,6 +6845,7 @@ The part is bold is not correct: querySelector, technically, comes from [Selec
 Here are the different steps, in a little more detail, of the example demonstrated in the above video:
 
 <h4>1 - Add the &lt;canvas&gt; element into an HTML page</h4>
+
 ```
 1.  <canvas id="myCanvas" width="300" height="225">
 2.  Fallback content that will be displayed in case the web browser
@@ -6873,11 +6874,13 @@ For example, you can add a border to the canvas (or change the background color,
 We can have more than one <canvas> in a single page, and canvases will be manipulated with JavaScript like other elements in the DOM.
 
 <h4>For example with:</h4>
+
 ```
 1.  var canvas = document.getElementById("myCanvas");
 ```
 
 <h4>... or with the querySelector() method introduced by HTML5, that use the CSS selector syntax for selecting elements:</h4>
+
 ```
 1.  var canvas = document.querySelector("#myCanvas");
 ```
@@ -6889,16 +6892,19 @@ This step is useful for drawing and setting drawing properties (color, etc.)
 Once we have a pointer to the &lt;canvas&gt;, we can get a "context". This particular object is the core of the canvas JavaScript API. It provides methods for drawing, like fillRect(x, y, width, height) for example, that draws a filled rectangle, and properties for setting the color, shadows, gradients, etc.
 </p>
 <h4>So, let's first get the context (do this only once):</h4>
+
 ```
 1.  var ctx=canvas.getContext('2d');
 ```
 
 <h4>... then, set the color for drawing filled shapes:</h4>
+
 ```
 1.  ctx.fillStyle='red';
 ```
 
 <h4>... and draw a filled rectangle:</h4>
+
 ```
 1.  ctx.fillRect(0,0,80,100);
 ```
@@ -7080,10 +7086,12 @@ Produces this result:
 The possible values are the same as those for the fillStyle property: a color, a pattern, or a gradient. This property will be taken into account when wireframe shapes are drawn.
 
 -   <h4> strokeRect(x, y, width, height): like fillRect(...), but instead of drawing a filled rectangle the rectangle is drawn in wireframe mode
+
 ```
 1.  ctx.strokeStyle='blue';
 2.  ctx.strokeRect(10,10,200,200);
 ```
+
 ... gives this result:
 
 ![stroked rectangle - border is in blue](./images/image129.jpeg){width="2.5833333333333335in" height="2.6041666666666665in"}
@@ -7125,6 +7133,7 @@ Actually it draws it in a color called "transparent black" (!) that corresponds 
 5.       ctx.strokeRect(10,10,80,100);
 6.  }
 ```
+
 <p>
 Here, we used "stroke" instead of "fill" in the property and method names (<i>lines 4 and 5</i>): strokeStyle instead of fillStyle, strokeRect(...) instead of fillRect(...).
 
@@ -7208,6 +7217,7 @@ Your browser does not support the canvas tag.
 18.     ctx.fillText("hello", 70, 22);
 19. }
 ```
+
 <p>
 This example shows the "global" nature of the context properties. Once you set the filled color to red, any shapes you draw in filled mode will be red. This is true for all the context properties. We set some of these properties in *lines 3-7*, and all following calls to context methods for drawing rectangles or text will depend on them. The two filled rectangles at *lines 10-11* will be red, the two wireframe rectangles drawn at *lines 14-15* will be blue, etc.
 
@@ -7343,7 +7353,7 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
-Code extract:
+<h4>Code extract:</h4>
 
 ```
 1.  var canvas, ctx;
@@ -7477,6 +7487,7 @@ However, there is a way to simplify this => 2D geometric transformations! 
 The idea behind 2D transformations is that instead of modifying all the coordinates passed as parameters to each call to drawing methods like fillRect(...), we will keep all the drawing code "as is". For example, if the monster of our previous example was drawn at (0, 0), we could just translate (or rotate, or scale) the original coordinate system.
 
 Let's take a piece of code that draws something corresponding to the original coordinate system, located at the top left corner of the canvas:
+
 ```
 1.  function drawMonster(x, y) {
 2.     // head
@@ -7590,12 +7601,15 @@ drawArrow(ctx, 0, 0, 0, 100, 10, 'red');
 ```
 
 Note that the X and Y parameters are useless for now...
+
 ```
 -   <h4> Translation using ctx.translate(offsetX, offsetY)
 ```
+
 Now, instead of simply calling drawMonster(0, 0), we will call first ctx.translate(100, 100), and look at the result below:
 
 <h4>JS</h4>
+
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
@@ -7704,6 +7718,7 @@ Your browser does not support the canvas tag.
 Here is the previous example, but this time we translated the coordinate system, then rotated it with an angle equal to PI/4 , then we scaled it so that units are half as big:
 </p>
 <h4>JS</h4>
+
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
@@ -7734,6 +7749,7 @@ ctx.restore();
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -7800,6 +7816,7 @@ Your browser does not support the canvas tag.
 4.   
 5.  drawMonster(0, 0);
 ```
+
 <ul>
 <li><h4>BEWARE: all drawings to come will be in that modified coordinate system!</h4></li>
 </ul>
@@ -7807,6 +7824,7 @@ Your browser does not support the canvas tag.
 <p>If we draw two shapes at two different positions, they will be relative to this new coordinate system.</p>
 
 <h4>JS</h4>
+
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
@@ -7837,6 +7855,7 @@ ctx.restore();
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -7931,6 +7950,7 @@ Multiple contexts can be backed up consecutively and restored. Contexts saved w
 <h4>Example of a function that changes the context and restores it after execution</h4>
 
 <h4>JS</h4>
+
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
@@ -7961,6 +7981,7 @@ ctx.restore();
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -8160,6 +8181,7 @@ It also provides a set of context properties for setting the character font and 
 Look at the example below, and change the position where the text is drawn, change font attributes, etc.:
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -8225,12 +8247,14 @@ Accepted values are:
 The fillText(message, x, y) or strokeText(message, x, y) methods from the context will actually draw a text message at the origin of the baseline position. In the "Hello World" example, this is located at the bottom of the left leg of the "H".
 
 There is a fourth optional parameter maxWidth that forces the text to fit into a given width, distorting it if necessary:
+
 ```
 1.  context.strokeText("Hello World!", x, y [, maxWidth]);
 2.  context.fillText("Hello World!", x, y [, maxWidth]);
 ```
 
 <h4> Forcing a text not to exceed a certain width: the maxWidth property</h4>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -8260,6 +8284,7 @@ context.strokeText("Hello World!", 10, 220, 150);
 ```
 
 <h4>source code extract:</h4>
+
 ```
 1.  ...
 2.  context.font = "60pt Calibri";
@@ -8284,6 +8309,7 @@ context.strokeText("Hello World!", 10, 220, 150);
 The ctx.measureText() method can be used to get the current width in pixels of a given text, taking into account the diverse properties involved such as font, size, shadow, lineWidth, etc.
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -8316,6 +8342,7 @@ context.stroke();
 ```
 
 <h4>Source code extract from this example:</h4>
+
 ```
 1.  context.font = "60pt Calibri";
 2.  context.lineWidth = 3;
@@ -8343,6 +8370,7 @@ context.stroke();
 The textBaseline property of the context is used to specify the different ways one can position the baseline of a given text:
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -8383,23 +8411,21 @@ context.fillText("bottom-glyph", 400, 75);
 
 The example above shows the different possible values for this property and the corresponding results. The default value is "alphabetic" and corresponds to what has been used in the previous "Hello World" example.
 
-Possible values:
+<h3>Possible values:</h3>
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Possible values for the textBaseline property   
-  ----------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------
-  top                                             The text is aligned based on the top of the tallest glyph in the text.
+|  Possible values for the textBaseline property   |
+  ----------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------|
+  top |                                            The text is aligned based on the top of the tallest glyph in the text. |
 
-  hanging                                         The text is aligned based on the line the text seems to hang from. This is almost identical to top, and in many cases, you cannot see the difference.
+  hanging |                                        The text is aligned based on the line the text seems to hang from. This is almost identical to top, and in many cases, you cannot see the difference. |
 
-  middle                                          The text is aligned according to the middle of the text.
+  middle |                                         The text is aligned according to the middle of the text. |
 
-  alphabetic                                      The bottom of vertically oriented glyphs, e.g. western alphabet like the Latin.
+  alphabetic  |                                    The bottom of vertically oriented glyphs, e.g. western alphabet like the Latin. |
 
-  ideographic                                     The bottom of horizontally oriented glyphs.
+  ideographic  |                                   The bottom of horizontally oriented glyphs. |
 
-  bottom                                          The text is aligned based on the bottom of the glyph in the text, that extends furthest down in the text.
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  bottom  |                                        The text is aligned based on the bottom of the glyph in the text, that extends furthest down in the text. |
 
 Typical use (taken from the example above):
 
@@ -8420,6 +8446,7 @@ Typical use (taken from the example above):
 The textAlign property of the context tells how the x parameter will be used when calling strokeText("some text", x, y) and fillText("some text", x, y). For example, with textAlign="center", the x parameter gives the position of the vertical center of the text, while in textAlign="right", x corresponds to the rightmost position of the text.
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -8457,6 +8484,7 @@ context.fillText("right", 250, 100);
 ```
 
 <h4>Typical use (source code taken from the above example):</h4>
+
 ```
 1.  context.textAlign = "center";
 2.  context.fillText("center", 250, 20);
@@ -8483,6 +8511,7 @@ But let's start with a basic example!
 <h4>Example #1: drawing an image in a canvas</h4>
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE HTML>
 2.  <html lang="en">
@@ -8651,6 +8680,7 @@ If you try to draw an image that is not loaded or partially loaded, you will ha
 The right way to do this is shown in this online example, that starts drawing only from the onload callback function:
 
 <h4>CSS</h4>
+
 ```
 #myCanvas {
 border:1px solid black;
@@ -8658,6 +8688,7 @@ border:1px solid black;
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE HTML>
 <html lang="en">
@@ -8706,6 +8737,7 @@ border:1px solid black;
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE HTML>
 <html lang="en">
@@ -8751,6 +8783,7 @@ The **[DOM Level 2 Events specification](https://www.w3.org/TR/DOM-Level-2-Even
 The drawImage(...) function can take a video element as its first parameter. The image that will be drawn is the one currently played by the video stream. This can be done at video frequency on most modern computers or mobile devices.
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE HTML>
 <html lang="en">
@@ -8820,6 +8853,7 @@ This example shows:
 </ul>
 
 <h4>Source code extract:</h4>
+
 ```
 1.  <script>
 2.     var video;
@@ -8901,6 +8935,7 @@ As a reminder: an immediate mode means "executing a call to a drawing method mea
 Here is an example that draws 1000 random rectangles in a canvas, using immediate mode rectangle drawing calls:
 
 <h4>JS</h4>
+
 ```
 var canvas, ctx, w, h;
 function init() {
@@ -8921,6 +8956,7 @@ console.timeEnd("time to draw");
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9004,6 +9040,7 @@ console.timeEnd("time to draw");
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9052,6 +9089,7 @@ And here is what the timer gives: a slightly faster execution time. Changing 100
 <h4>Reset the path mode buffer</h4>
 
 A call to ctx.beginPath() will reset the buffer (empty its contents). We will see many more examples of using the path drawing mode in another further section.
+
 ```
 1.  // start a new buffer / path
 2.  ctx.beginPath();
@@ -9124,6 +9162,7 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9197,6 +9236,7 @@ In this example, the entire grid is drawn during the execution of the last line 
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9245,7 +9285,6 @@ This example shows that filled and wireframe shapes should be drawn differently 
 <h4>Drawing a single path made with disconnected lines / parts</h4>
 
 Try this:
-********************************** image ***********************************
 <!------------------------------------------------------------------------------------------------>
 <!--- 138.  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
@@ -9257,6 +9296,7 @@ Try this:
 <br/>
 
 <h4>Code source:</h4>
+
 ```
 1.  var canvas=document.getElementById('myCanvas');
 2.  var ctx=canvas.getContext('2d');
@@ -9283,7 +9323,6 @@ In this last example, we simply called the moveTo() method between each part o
 <h4>Common mistake: drawing the same path twice</h4>
 
 Let's look at the drawing from the last example of the previous section:
-********************************** image ***********************************
 <!------------------------------------------------------------------------------------------------>
 <!--- 139.  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
@@ -9295,6 +9334,7 @@ Let's look at the drawing from the last example of the previous section:
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9343,6 +9383,7 @@ What we will try first is to call stroke() after the first half of the path, t
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9426,6 +9467,7 @@ using the ctx.beginPath() method, as shown in the next example.
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9460,6 +9502,7 @@ ctx.fill();
 ```
 
 <h4>Source code:</h4>
+
 ```
 1.  var canvas=document.getElementById('myCanvas');
 2.  var ctx=canvas.getContext('2d');
@@ -9538,6 +9581,7 @@ Notice the save/restore of the context at the beginning/end of the function. Thi
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9654,6 +9698,7 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9717,7 +9762,7 @@ drawArrow(ctx, 100, 10, 140, 140, 3, 'black');
 
 On the Web, you will find many different ways to draw arrows.
 
-This [article on drawing lines and arcs with arrow heads](http://www.dbp-consulting.com/tutorials/canvas/CanvasArrow.html) is worth reading. It details how to draw arrows with curved heads and different styles for the head. Note, however, that you will need to modify some parts if you want it to support different line widths, etc.
+This <a href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArrow.html">article on drawing lines and arcs with arrow heads</a> is worth reading. It details how to draw arrows with curved heads and different styles for the head. Note, however, that you will need to modify some parts if you want it to support different line widths, etc.
 
 Screenshot from a demo available on the above Web site:
 
@@ -9749,6 +9794,7 @@ The ctx.closePath() method indicates that we would like a closed path: draw fr
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9776,6 +9822,7 @@ ctx.stroke();
 ```
 
 <h4>Source code:</h4>
+
 ```
 1.  var canvas=document.getElementById('myCanvas');
 2.  var ctx=canvas.getContext('2d');
@@ -9848,6 +9895,7 @@ The last parameter is optional and has a value of false by default. If true, 
 
 ```
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -9869,6 +9917,7 @@ ctx.stroke();
 ```
 
 <h4>Code source extract:</h4>
+
 ```
 1.  ctx.beginPath();
 2.  // we ommited the last parameter
@@ -9913,6 +9962,7 @@ Then, the result is the "complementary" of the previous arc:
 <br/>
 
 <h4>Source code:</h4>
+
 ```
 1.  var canvas = document.getElementById("myCanvas");
 2.  var ctx = canvas.getContext("2d");
@@ -9997,6 +10047,7 @@ In fact, the arcTo(...) method draws an arc of a circle depending on some tan
 This method can be confusing. It was defined mainly for drawing rounded shapes like rounded rectangles. We used an excerpt here from the excellent [tutorial on the arcTo(...) method](http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html).
 
 <h4>It works like this:</h4>
+
 ```
 1.  Draw an imaginary line through (x0,y0) and (x1,y1), draw another imaginary line through (x1,y1) and (x2,y2),
 2.  Take an imaginary circle of radius r, and slide it up between the two lines until it just touches both lines. The two points at which the circle touches the lines are called the tangent points.
@@ -10019,6 +10070,7 @@ This method can be confusing. It was defined mainly for drawing rounded shapes l
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -10043,6 +10095,7 @@ context.stroke();
 ```
 
 <h4>Source code extract:</h4>
+
 ```
 1.  context.beginPath();
 2.  context.moveTo(0, 20);
@@ -10067,6 +10120,7 @@ context.stroke();
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -10107,6 +10161,7 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 ```
 
 <h4>Source code:</h4>
+
 ```
 1.  var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke) {
 2.      ctx.beginPath();
@@ -10156,6 +10211,7 @@ This example at JS Bin is the same as the previous one, except that we added at 
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -19285,6 +19341,7 @@ display: inline-block;
 </body>
 </html>
 ```
+
 <ul>
 <li><i>Lines 5 and 6</i> are the required files to use the Leaflet API (this is the official name of the OpenStreetMaps API),</li>
 <li><i>Line 10</i> is the <div> container that will be used to display the interactive map.</li>
