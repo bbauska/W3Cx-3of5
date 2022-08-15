@@ -4240,7 +4240,7 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 &nbsp;
 <br/>
 
-<p>Here is the HTML code. It's really simple, just notice the <body onload="init();"> which calls the JavaScript init() function right after the page is loaded.</p>
+<p>Here is the HTML code. It's really simple, just notice the &lt;body onload="init();"&gt; which calls the JavaScript init() function right after the page is loaded.</p>
 
 ```
 1.  <!DOCTYPE html>
@@ -4298,11 +4298,11 @@ function init() {
 Full width, resizable, borderless YouTube video. To do this: just 100% standard CSS + DOM manipulation using JavaScript.
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 73.  (xx) ------------------------------->
+<!----------------------------- 73. example video cropping (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image073.png?raw=true"
-   alt=""
+   alt="Example video cropping."
    width="50%">
 &nbsp;
 <br/>
@@ -11980,15 +11980,13 @@ Your browser does not support the canvas tag.
    alt="A green shadowed rectangle." />
 </p>
 
-There are 4 properties of the canvas context that are useful for indicating that we want to draw shapes with shadows:
-
-1.  shadowColor: color to use for shadows,
-
-2.  shadowBlur: blur level for shadows,
-
-3.  shadowOffsetX: horizontal distance of the shadow from the shape,
-
-4.  shadowOffsetY: vertical distance of the shadow from the shape
+<p>There are 4 properties of the canvas context that are useful for indicating that we want to draw shapes with shadows:</p>
+<ul type="1">
+<li>shadowColor: color to use for shadows,</li>
+<li>shadowBlur: blur level for shadows,</li>
+<li>shadowOffsetX: horizontal distance of the shadow from the shape,</li>
+<li>shadowOffsetY: vertical distance of the shadow from the shape.</li>
+</ul>
 
 <h4>Examples</h4>
 
@@ -12004,6 +12002,7 @@ There are 4 properties of the canvas context that are useful for indicating that
 </p>
 
 <h4>JS</h4>
+
 ```
 var canvas, ctx;
 function init() {
@@ -12075,16 +12074,15 @@ Your browser does not support the canvas tag.</canvas>
 ```
 
 <b>Explanations:</b>
-
--   *Lines 21-27*: we set the 4 properties that define shadows in a dedicated function, for better clarity.
-
--   *Line 8*: we called this function once before drawing the rectangles.
-
--   *Lines 11-18*: we draw a filled and a stroked rectangle. Both rectangles cast shadows.
+<ul>
+<li><i>Lines 21-27</i>: we set the 4 properties that define shadows in a dedicated function, for better clarity.</li>
+<li><i>Line 8</i>: we called this function once before drawing the rectangles.</li>
+<li><i>Lines 11-18</i>: we draw a filled and a stroked rectangle. Both rectangles cast shadows.</li>
+</ul>
 
 <h4>Example #2: unwanted shadows!</h4>
 
-Let's take a [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO), the one that draws a filled circle with an outline. And, let's add a shadow to it using the following code:
+<p>Let's take a <a href="https://codepen.io/w3devcampus/pen/YzZBxmO">previous example</a>, the one that draws a filled circle with an outline. And, let's add a shadow to it using the following code:</p>
 
 ```
 1.  ...
@@ -12230,6 +12228,7 @@ The trick is to save the context before setting the shadow properties, then dr
 </p>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -12302,10 +12301,12 @@ They apply to all shapes that are drawn in path mode (lines, curves, arcs) and s
 <h4>Example #1: changing the line thickness</h4>
 
 We have seen this before. This is done by changing the value (in pixels) of the lineWidth property of the context:
+
 ```
 1.  <b>ctx.lineWidth = 10;</b> // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels
 ```
-Here is a complete example where we draw with a lineWidth of 20 pixels:
+
+<p>Here is a complete example where we draw with a lineWidth of 20 pixels:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 186. image186.png (xxx) -------------------------------->
@@ -12421,7 +12422,7 @@ Note that in this example, the rectangle is not affected. It has no line ends vi
 
 <h4>Example #3: setting the type of corner when two lines meet</h4>
 
-The lineJoin property of the context indicates the way corners are rendered, when two lines meet. Possible values are miter (the default) for creating sharp corners, round, or bevel for "cut corners".
+<p>The lineJoin property of the context indicates the way corners are rendered, when two lines meet. Possible values are miter (the default) for creating sharp corners, round, or bevel for "cut corners".</p>
 
 <h4>Try this:</h4>
 
@@ -12546,6 +12547,7 @@ We will compare the old methods with the new one, and implement the same  exam
 Below is the example shown in the video, with source code:
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -12624,6 +12626,7 @@ This is how pre-HTML5 games were written. Before the introduction of the canvas 
 Please try this example that moves/animates a div using setInterval:
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -12666,6 +12669,7 @@ clearInterval(requestId);
 ```
 
 <h4>Extract from the source code:</h4>
+
 ```
 1.  <body>
 2.     <div id="animatedDIV">Animated DIV :-)</div>
@@ -12704,6 +12708,7 @@ The call to setInterval returns an id we can use to stop the animation, by cal
 We use the drawMonster() function:
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -12786,6 +12791,7 @@ clearInterval(requestId);
 ```
 
 <h4>Source code:</h4>
+
 ```
 1.  <body onload="init();">
 2.      <canvas id="myCanvas" width="400" height="400">
@@ -12890,6 +12896,7 @@ This function works like setInterval(...) with one difference: it calls your f
 Check the example below (click on start animation):
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -12976,6 +12983,7 @@ clearTimeout(requestId);
 This is similar to the previous example except that we called setTimeout(function, delay) instead of setInterval(function, period). **As setTimeout runs the function passed as the first parameter only once, we also have to call it at the end of the loop**.
 
 <h4>Extract from source code:</h4>
+
 ```
 1.  function animationLoop() {
 2.     // 1 - Clear
@@ -13045,6 +13053,7 @@ It has, however, several advantages over setInterval and setTimeout:
 You will note that  requestAnimationFrame(function) is used like setTimeout(function, delay). A call to requestAnimationFrame just asks the browser to call the function passed as a parameter ONCE, **and the target delay is fixed**, and corresponds to a 60 frames/s frame rate (16.6ms). Notice that an id is used for stopping an animation with cancelAnimationFrame(id). 
 
 <h4>Source code:</h4>
+
 ```
 1.  <body onload="init();">
 2.  <script>
@@ -13090,6 +13099,7 @@ You will note that  requestAnimationFrame(function) is used like setTimeout(
 <h4>Check the example below:</h4>
 
 <h4>Source code extract - please compare with the previous example that used setInterval():</h4>
+
 ```
 1.  function animationLoop(timeStamp) {
 2.      // 1 - Clear
@@ -13153,6 +13163,7 @@ The events are called *DOM events*, and we use the *DOM JavaScript API* to cr
 <h4>First method: declare event handlers in the HTML code</h4>
 
 You will often find this in examples on the Web:
+
 ```
 1.  <div id="someDiv" **onclick="alert('clicked!');"**>
 2.      content of the div
@@ -13164,16 +13175,19 @@ Note: this is not the recommended way to handle events, even if it's very easy t
 <h4>Second method: add an event handler to an HTML element in JavaScript</h4>
 
 <h4>Here is an example:</h4>
+
 ```
 1.  document.getElementById('someDiv').onclick = function(evt) {
 2.    alert('clicked!');
 3.  }
 ```
+
 This method is fine, but  you will not be able to attach several listener functions. If you need to do this, the preferred version is the next one.
 
 <h4>Third method: register a callback to the event listener with the addEventListener method</h4>
 
 <h4>This is how we do it:</h4>
+
 ```
 1.  document.getElementById('someDiv').addEventListener('click', function(evt) {
 2.      alert('clicked!');
@@ -13185,11 +13199,13 @@ The third parameter is not important for now, just set it to false, or simply d
 <h4>The DOM event that is passed to the event listener function</h4>
 
 When you create an EventListener and attach it to an element,  an event object will be passed as a parameter to your callback, just like this:
+
 ```
 1.  element.addEventListener('click', function(<b>event</b>) {
 2.     <b>// now you can use the event object inside the callback</b>
 3.  }, false);
 ```
+
 Depending on the type of event you are listening to, we will use different properties from the event object in order to get useful information like: "what keys have been pressed down?", "what is the position of the mouse cursor?", "which mouse button is down?", etc.
 
 Let's see next how to deal with the keyboard and the mouse. In the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games</a>, we look at additional APIs such as <a href="https://www.w3.org/TR/gamepad/">the gamePad API</a> for using USB or wireless gamepads/joysticks/game controllers.
@@ -13197,6 +13213,7 @@ Let's see next how to deal with the keyboard and the mouse. In the <a href="htt
 <h4>Source code for the knowledge check 4.3.1</h4>
 
 <a href="http://jsbin.com/korele/edit" target="_blank">Online example on JS Bin</a>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -13225,6 +13242,7 @@ Let's see next how to deal with the keyboard and the mouse. In the <a href="htt
 <h3 id="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
 
 When you listen to keyboard related events (keydown, keyup or keypressed), the event parameter passed to the listener function will contain the code of the key that fired the event. Then it is possible to test what key has been pressed or released, like this:
+
 ```
 1.  window.addEventListener('keydown', function(event) {
 2.     if (**event.keyCode === 37**) {
@@ -13232,6 +13250,7 @@ When you listen to keyboard related events (keydown, keyup or keypressed), th
 4.     }
 5.  }, false);
 ```
+
 At *line 2*, the value "37" is the key code that corresponds to the left arrow. It might be difficult to know the correspondences between real keyboard keys and codes, so here are handy pointers:
 
 -   Try key codes with this [interactive test page](http://www.asquare.net/javascript/tests/KeyCode.html)
@@ -13266,6 +13285,7 @@ border: 1px solid black;
 <body onload="init();">
 <p>
 ```
+
 This example shows how to handle key events in a canvas by adding a key listener to the window object. Like that, all key press in the document will trigger the event listener function.</p>
 
 ```
@@ -13287,6 +13307,7 @@ return false;
 ```
 
 <h4>Code source extract:</h4>
+
 ```
 1.  <canvas id="myCanvas" width="350" height="200">
 2.  </canvas>
@@ -13416,7 +13437,8 @@ cancelAnimationFrame(requestId);
 </html>
 ```
 
-<h4>Code:<.h4>
+<h4>Code:</h4>
+
 ```
 1.  <script>
 2.  var canvas, ctx;
@@ -13476,12 +13498,14 @@ If you add a key listener to a canvas element, the problem is that it will get e
 The tabindex attribute of the canvas element makes it focusable. Without it, it will never get the focus!
 
 The trick is to declare the canvas like this:
+
 ```
 1.  <canvas id="myCanvas" width="350" **tabindex="1"** height="200">
 2.  </canvas>
 ```
 
 And we force the canvas to get the focus with:
+
 ```
 1.  canvas=document.getElementById('myCanvas');
 2.  ...
@@ -13500,6 +13524,7 @@ Now, if we try an example with the above canvas declaration, we show when an HT
 </p>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -13552,6 +13577,7 @@ Note that the line that forces the focus to the canvas is commented by default. 
 </p>
 
 <h4>Extract from the code:</h4>
+
 ```
 1.  var canvas;
 2.  
@@ -13596,6 +13622,7 @@ When the mouse enters the canvas we call canvas.focus() to set the focus to th
 <br/>
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -13702,6 +13729,7 @@ cancelAnimationFrame(requestId);
 ```
 
 <h4>Code:</h4>
+
 ```
 1.  function init() {
 2.     // This function is called after the page is loaded
@@ -13731,6 +13759,7 @@ cancelAnimationFrame(requestId);
 26.    incrementX = 0; // stop the monster if the mouse exists the canvas
 27. };
 ```
+
 The third parameter (false) of *lines 12* and *13* means "we do not want to propagate the event to the ancestors of the canvas in the DOM." 
 
 <h3 id="ch4-3-3">4.3.3 Mouse Interaction, Mouse Events</h3>
@@ -13738,6 +13767,7 @@ The third parameter (false) of *lines 12* and *13* means "we do not want to 
 Detecting mouse events in a canvas is quite straightforward: you add an event listener to the canvas, and the browser invokes that listener when the event occurs.
 
 The example below is about listening to mouseup and mousedown events (when a user presses or releases any mouse button):
+
 ```
 1.  canvas.addEventListener('mousedown', function (evt) {
 2.  // do something with to the mousedown event
@@ -13797,6 +13827,7 @@ Play with the example below that show the problem:
 <br/>
 
 <h4>JS</h4>
+
 ```
 var canvas, ctx, mousePos, mouseButton;
 window.onload = function init() {
@@ -13836,6 +13867,7 @@ y: evt.clientY - rect.top
 ```
 
 <h4>CSS</h4>
+
 ```css
 canvas {
 border:1px solid black
@@ -13843,6 +13875,7 @@ border:1px solid black
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -13862,55 +13895,40 @@ This is a canvas:<p></p>
 </body>
 </html>
 
+<h4>JS</h4>
+
+```
 function getMousePos(canvas, evt) {
-
    **// necessary to take into account CSS boundaries**
-
-   **var rect = canvas.getBoundingClientRect();**
-
+   **var rect = canvas.getBoundingClientRect();**
    return {
-
       x: evt.clientX **- rect.left,**
-
       y: evt.clientY **- rect.top**
-
    };
-
 }
+```
 
-WRONG code:
+<h4>WRONG code:</h4>
 
+```
 1.  ...
-
 2.  canvas.addEventListener('mousemove', function (evt) {
-
 3.      mousePos = getMousePos(canvas, evt);
-
 4.      var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
-
 5.      writeMessage(canvas, message);
-
 6.  }, false);
-
 7.   
-
 8.  ...
-
 9.  function getMousePos(canvas, evt) {
-
 10.    // WRONG!!!
-
 11.    return {
-
 12.       x: evt.clientX,
-
 13.       y: evt.clientY
-
 14.    };
-
 15. }
+```
 
-Here is the result, when the mouse is approximately at the top left corner of the canvas:
+<h4>Here is the result, when the mouse is approximately at the top left corner of the canvas:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------- 200.  (xxx) ------------>
@@ -13933,6 +13951,7 @@ Here is the result, when the mouse is approximately at the top left corner of th
    width="40%">
 &nbsp;
 <br/>
+
 ```
 function getMousePos(canvas, evt) {
    **// necessary to take into account CSS boundaries**
@@ -13944,7 +13963,7 @@ function getMousePos(canvas, evt) {
 }
 ```
 
-Result (the cursor is approximately at the top left corner):
+<h4>Result (the cursor is approximately at the top left corner):</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------- 202.  (xxx) ------------>
@@ -13958,7 +13977,7 @@ Result (the cursor is approximately at the top left corner):
 
 <h4>How to display the mouse position, and the mouse button that has been pressed or released</h4>
 
-This example uses the previous function for computing the mouse position correctly. It listens to mousemove, mousedown and mouseup events, and shows how to get the mouse button number using the evt.button property.
+<p>This example uses the previous function for computing the mouse position correctly. It listens to mousemove, mousedown and mouseup events, and shows how to get the mouse button number using the evt.button property.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!----------- 203.  (xxx) ------------>
@@ -14034,7 +14053,7 @@ This example shows an animation at 60 frames/s using requestAnimationFrame, wer
 
 ![](./images/image205.png){width="4.0in" height="2.56540135608049in"}
 
-Code:
+<h4>Code:</h4>
 
 ```
 var canvas, ctx;
@@ -14085,13 +14104,13 @@ function animationLoop() {
 }
 ```
 
-This example shows one very important good practice when doing animation and interaction: if you want to achieve a smooth animation, set the state variables 60 times/s inside the animation loop (lines 45-49), depending on increments you set in event listeners (lines 23-31).
+<p>This example shows one very important good practice when doing animation and interaction: if you want to achieve a smooth animation, set the state variables 60 times/s inside the animation loop (lines 45-49), depending on increments you set in event listeners (lines 23-31).</p>
 
 <h4>Example #2: draw in a canvas as if you were using a pencil</h4>
 
 ![](./images/image206.png){width="4.0in" height="2.56540135608049in"}
 
-Source code:
+<h4>Source code:</h4>
 
 ```
 ...
@@ -14131,7 +14150,7 @@ function handleMouseMove(evt) {
 </script>
 ```
 
-We had to define a variable started=false; as we cannot draw any line before the mouse moved (we need at least two consecutive positions). This is done in the test at *line 21*.
+<p>We had to define a variable started=false; as we cannot draw any line before the mouse moved (we need at least two consecutive positions). This is done in the test at <i>line 21</i>.</p>
 
 <h4>Example #3: same as example #2 but we draw only when a mouse button is pressed</h4>
 
@@ -14203,7 +14222,7 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 &nbsp;
 <br/>
 
-Code:
+<h4>Code:</h4>
 
 ```
 1.  <script>
@@ -14245,7 +14264,7 @@ Then, we added this CSS rule:
 &nbsp;
 <br/>
 
-It's the same example as before, just adding this CSS code:
+<p>It's the same example as before, just adding this CSS code:</p>
 
 ```
 1.  <style>
@@ -14294,7 +14313,7 @@ Yep, this is not a straightforward process...
 3.  </div>
 ```
 
-<b>CSS code:</b>
+<h4>CSS code:</h4>
 
 ```
 1.  <style>
@@ -14311,7 +14330,7 @@ Yep, this is not a straightforward process...
 12. </style>
 ```
 
-<b>JavaScript code for the resize event listener:</b>
+<h4>JavaScript code for the resize event listener:</h4>
 
 ```
 1.  function init() {
@@ -14332,7 +14351,7 @@ Yep, this is not a straightforward process...
 16. }
 ```
 
-See the complete example that corresponds to the above code:
+<h4>See the complete example that corresponds to the above code:</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------- 212.  (xxx) -------------------------------------->
@@ -14385,16 +14404,16 @@ The code is very similar to the previous example, we just replaced drawDiagonal
 22. }
 ```
 
-<h3>4.3.5 Advanced Canvas</h3>
+<h3 id="ch4-3-5">4.3.5 Advanced Canvas</h3>
 
 The canvas API is a "big beast", and we have presented all the essential techniques for drawing and animating. However, we could not fit everything in this course. Exotic features that are rarely used by developers, or advanced techniques that require more than 20 lines of JavaScript, have been put aside for [the W3Cx HTML5 Apps and Games course](https://www.edx.org/course/html5-apps-and-games).
 
 In that course, you will learn:
 
 <ul>
-<li>Techniques useful for writing HTML5 games**: time-based animation, advanced user interactions (detecting multiple keys plus mouse plus gamepad plus touch events all at the same time in a single version of the code), sprite based animation, collision detection, particle animation;</li><br/>
-<li>Pixel-level operations:** special FX like blue-screen videos and augmented reality;</li><br/>
-<li>And many other things, such as**: masking/clipping, stacking canvases in layers, composition modes, saving and restoring canvas contents, saving canvas content to disk client-side, drawing a canvas into a canvas, etc.</li><br/>
+<li>Techniques useful for writing HTML5 games: time-based animation, advanced user interactions (detecting multiple keys plus mouse plus gamepad plus touch events all at the same time in a single version of the code), sprite based animation, collision detection, particle animation;</li><br/>
+<li>Pixel-level operations: special FX like blue-screen videos and augmented reality;</li><br/>
+<li>And many other things, such as: masking/clipping, stacking canvases in layers, composition modes, saving and restoring canvas contents, saving canvas content to disk client-side, drawing a canvas into a canvas, etc.</li><br/>
 </ul>
 
 <h4>Examples studied in the HTML5 Apps and Games course</h4>
@@ -14459,7 +14478,7 @@ There is a lot of course content covered this week, and before we get into all
 This example was created by a learner (by Mels Le N.) from a previous version of this course.
 It uses the geolocation API presented in Module 6 for auto-filling the address input fields.
 
-Feel free to look at the source code in the [online example](https://jsbin.com/sivula/edit):
+Feel free to look at the source code in the <a href="https://jsbin.com/sivula/edit"?online example</a>:
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------- 215.  (xxx) -------------------------------------->
@@ -14617,6 +14636,7 @@ Subscribe to newsletter![](./images/image219.wmf)
 <h4>Source code:</h4>
 
 Bottom of Form
+
 ```
 1.  <label for="firstname">First name:</label>
 2.  <input type="text" name="firstname" id="firstname"><br>
@@ -14632,6 +14652,7 @@ The label of a <button> element is set inside the element and can include mark
 When using the <input> element to create buttons, the label is set in the value attribute of the element. Example: <input type="submit" value="Please submit">, renders a button.
 
 <h4>Source code for the "Submit" and "Cancel" buttons example:</h4>
+
 ```
 1.  <button type="submit">Submit</button>
 2.  <button type="button">Cancel</button>
@@ -14654,6 +14675,7 @@ Enter your address:
 ![](./images/image221.wmf)
 
 <h4>Source code:</h4>
+
 ```
 1.  <label for="address">Enter your address:</label><br> <textarea id="address" name="addresstext"></textarea>
 ```
@@ -14714,6 +14736,7 @@ I want to receive
 Bottom of Form
 
 <h4>Source code:</h4>
+
 ```
 1.  <fieldset>
 2.  <legend>I want to receive</legend>
@@ -14756,6 +14779,7 @@ Here is how it looks on some mobile devices:
 <h4>Typical use</h4>
 
 <h4>Inserting a color chooser is as simple as:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en"><head>...</head>
@@ -14781,6 +14805,7 @@ The <input type="color"> can fire change or input events. Here is an examp
 ![change background color of the body](./images/image226.jpeg){width="4.0in" height="3.6217300962379704in"}
 
 Source code:
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en"><head></head>
@@ -14811,6 +14836,7 @@ Example: click the black rectangle on the right:  . The following should be di
 <a href="https://jsbin.com/lahapu/edit?html,output">Online example at JSBin</a>
 
 <h4>Source code extract:</h4>
+
 ```
 1.  <input type="color" value="#333333" **list="colors"**>
 2.  
@@ -14884,10 +14910,12 @@ On non-supported browsers, it defaults to an <input type="text"> input field.
 <h4>Default use</h4>
 
 The default usage is something like:
+
 ```
 1.  <label for="birthday">Choose birthday party date: </label>
 2.  <input type="date" id="birthday">
 ```
+
 Result:             Choose birthday party date:      
 
 Most of the time you will add other attributes to give some restrictions (choose a date in the past, in the future, only on a Saturday, etc.).
@@ -14911,6 +14939,7 @@ Try this example: just click the next input field: , or <a href="https://jsbin
 ----->
 
 <h4>Source code:</h4>
+
 ```
 1.  ...
 2.  <input type="date"
@@ -14937,6 +14966,7 @@ Example: we want to celebrate birthday parties only on Saturdays, [check this 
 </p>
 
 <h4>Extract from source code:</h4>
+
 ```
 1.  <input type="date"
 2.      id="birthdayParty"
@@ -14960,6 +14990,7 @@ Example: we want to celebrate birthday parties only on Saturdays, [check this 
 </p>
 
 <h4>Extract from source code:</h4>
+
 ```
 <input type="date"
     id="birthdayParty"
@@ -14983,6 +15014,7 @@ Example: we want to celebrate birthday parties only on Saturdays, [check this 
 Here is [an interactive example at JSBin](https://jsbin.com/ganipuv/edit?html,output) where you can change the type of date/time chooser. It also shows how to listen to the input event when a date/time is chosen.
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en"><head>...</head>
@@ -15042,6 +15074,7 @@ While if we enter a date in the future:
 </p>
 
 <h4>Extract from source code:</h4>
+
 ```
 1.  <body>
 2.  <label for="birthDate">Enter your birth date: </label><p>
@@ -15070,6 +15103,7 @@ While if we enter a date in the future:
 ```
 
 <i>Lines 17-23</i> show how we can compare the date picked in the calendar widget with the current date. Note that we can compare any given dates using JavaScript. To check that the chosen date is before 2000 we would do this:
+
 ```
 if(this.valueAsDate <= new Date(2000,1,1)) {
 ...
@@ -15082,9 +15116,11 @@ The HTML5 specification indicates that we can use <input type="date"> and <in
 [Here is an interactive example at JSBin](https://jsbin.com/supope/1/edit) where you can change the type of date chooser and try all the different possible values for the type attribute of date pickers.
 
 <h4>Some screenshots from Opera desktops and Safari IOS:</h4>
+
 ```
 <input type="time">:
 ```
+
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 237.  (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -15257,6 +15293,7 @@ Try it in your browser (we used the same CSS for changing the background-color w
 Enter a telephone number: 
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15302,6 +15339,7 @@ Enter a URL (default validation): 
 Enter a URL (custom validation, must start with http, https or ftp): 
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15342,6 +15380,7 @@ The specification does not state what the GUI should look like, so current impl
 </p>
 
 <h4>Typical use:</h4>
+
 ```
 <label for="search1">Simple search: </label>
    <input type=search id="search1">
@@ -15383,7 +15422,8 @@ Example that shows a drop down list of recent searches (Safari screenshot borro
    alt="Example 2 of input type=search on safari, shows recent results" />
 </p>
 
-<h4>Source code for the knowledge check below</h>
+<h4>Source code for the knowledge check below</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html>
@@ -15472,6 +15512,7 @@ Or, do it here in your browser (Manually enter a value that is not in the range,
 Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid): 
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  ....
@@ -15559,6 +15600,7 @@ This input type renders as a slider. It accepts the same attributes as the <inp
 </p>
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15611,6 +15653,7 @@ This input type renders as a slider. It accepts the same attributes as the <inp
 When you click and drag the slider, it "jumps" to some snap points corresponding to the integer values of the range defined by the min and max attributes. The "size of the jumps" depends on the value of the step attribute.
 
 Try these examples in your browser and look at their behavior:
+
 ```
 value=5 min=0, max=10 step=1:  
 value=12 min=10, max=50 step=4:  
@@ -15758,6 +15801,7 @@ Choose optionFree registering![](./images/image219.wmf)Premium![](./images/image
 Bottom of Form
 
 <h4>Source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15876,6 +15920,7 @@ Bottom of Form
 **Notice that the focus in on the second input field, thanks to the autofocus attribute.**
 
 <h4>Extract from source code:</h4>
+
 ```
 1.  <form>
 2.      ...
@@ -15898,6 +15943,7 @@ Bottom of Form
 Read [these explanations](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes) for a complete description of the syntax of Boolean attributes.
 
 <h4>Source code for the knowledge check 5.5.4</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -16075,6 +16121,7 @@ Complete source code:
 Enter the URL of your repository (http, https or ftp): 
 
 <h4>Source code extract:</h4>
+
 ```
 1.  <input
 2.      id="website"
@@ -16095,6 +16142,7 @@ The min and max attributes are used to set ranges to input fields that accep
 **Their detailed use with these input fields have already been explained in section 5.4 of this course dedicated to these particular input field types.**
 
 <h4>Typical use</h4>
+
 ```
 1.  <input id="mydate" name="mydate"
 2.         type="date"
@@ -16112,7 +16160,7 @@ The min and max attributes are used to set ranges to input fields that accep
 14. <input id="range" name="range" type="range" **min="0" max="100" step="5"**/>
 ```
 
-### 5.5.8 multiple
+<h3 id="ch5-5-8">5.5.8 multiple</h3>
 
 The multiple attribute is used with email and file input types. It's a Boolean attribute, so here are the different syntax possibilities:
 
@@ -16126,7 +16174,7 @@ With <input type="email">
 
 With the <input type="email">, this attribute enables the user to enter *a set of addresses, separated by a comma* instead of a single address. Entering several addresses will keep the input field *valid*.
 
-[Online example at JSBin ](https://jsbin.com/mexirif/1/edit?html,output)
+<a href="https://jsbin.com/mexirif/1/edit?html,output">Online example at JSBin</a>
 
 Or try it below in your browser: type in a list of email addresses separated by a comma, then look at the input field background color (pink = invalid, green = valid), and then submit:
 
@@ -16147,6 +16195,7 @@ Without the multiple attributeEnter several email addresses: Submit
 Bottom of Form
 
 <h4>Complete source code:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -16225,6 +16274,7 @@ You might just glance at them and/or try the examples. The next pages cover thei
 <h3 id="ch5-5-10">5.5.10 formaction and formmethod</h3>
 
 These attributes are targeted to the <input type="submit"> input fields. They are rarely used.
+
 ```
 1.  <input type="submit"
 2.  formaction="preview.php" formmethod="get" value="Preview">
@@ -16235,6 +16285,7 @@ When you use an <input type="submit"> field with the formaction attribute, t
 The formmethod attribute does the same with the POST/GET method attribute of the form. If an <input type="submit"> has a formmethod attribute, it overrides the value of the method attribute of the form.
 
 <h4>Typical use</h4>
+
 ```
 1.  <form action="post.php" method="post">
 2.       <input type="submit"
@@ -16747,6 +16798,7 @@ The progress below is defined like this:
 Download progress: 
 
 <h4>Source code:</h4>
+
 ```
 1.  Download progress: **<progress id=pr value=100 min=0 max=1000></progress>**
 2.  <script>
@@ -16831,7 +16883,8 @@ Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,outp
 &nbsp;
 <br/>
 
-Source code of this example:
+<h4>Source code of this example:</h4>
+
 ```
 1.  <form action="demo_form.asp" method="get">
 2.       <input **list="browsers"** name="browser" />
@@ -16896,6 +16949,7 @@ Submit form
 <b>Bottom of Form</b>
 
 <h4>Source code extract:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -16951,6 +17005,7 @@ Submit form
 **Bottom of Form**
 
 <h4>Source code extract:</h4>
+
 ```
 1.  .myForm input:focus {
 2.    ** padding-right:70px;**
