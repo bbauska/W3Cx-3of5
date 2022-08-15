@@ -5297,9 +5297,9 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 &nbsp;
 <br/>
 
-The video example tests nearly all the possibilities for positioning subtitles/captions, styling (using HTML element wrapping with <b>, <i>,  etc.), voicing (subtitles corresponding to different characters will be displayed in different colors) and CSS styling.
+<p>The video example tests nearly all the possibilities for positioning subtitles/captions, styling (using HTML element wrapping with &lt;b&gt;, &lt;i&gt;,  etc.), voicing (subtitles corresponding to different characters will be displayed in different colors) and CSS styling.
 
-It is possible to locate the cues in the video viewport using absolute or relative values. The attributes that position the text are located on the same line as the cue definition, like at *line 9* of the previous WebVTT example file:
+It is possible to locate the cues in the video viewport using absolute or relative values. The attributes that position the text are located on the same line as the cue definition, like at *line 9* of the previous WebVTT example file:</p>
 
 ```
 9.  00:00:11.000 --> 00:00:15.000<b> position:5% align:start</b>
@@ -5314,11 +5314,11 @@ There are several possible values:
 <li><b>size:33%</b> The size of each line will be one third of the size of the video. Since the sentence won't fit, it will be displayed in multiple lines.</li>
 </ul>
 
-And so on. Please look at the video as it is self-explanatory.
+<p>And so on. Please look at the video as it is self-explanatory.</p>
 
 <h4>Use of &lt;b&gt;, &lt;i&gt;, &lt;u&gt; for styling subtitles / captions</h4>
 
-One can use the HTML elements  <b>, <i>, <u> to modify the rendering of subtitles and captions, as illustrated in the example below:
+<p>One can use the HTML elements  &lt;b&gt;, &lt;i&gt;, &lt;u&gt; to modify the rendering of subtitles and captions, as illustrated in the example below:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 93.  (113) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5333,9 +5333,11 @@ One can use the HTML elements  <b>, <i>, <u> to modify the rendering of subti
 
 It is possible to style using CSS classes as part of a cue value, using the <c> element. You can specify the CSS class that should be applied by adding "." followed by the name of your CSS class. Here is an example:
 
+```
 1.  <c.myclass>This cue contains the class "myclass".
-
 2.  Browsers that support ::cue CSS should make it red.</c>
+```
+
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 94.  (113) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5347,6 +5349,7 @@ It is possible to style using CSS classes as part of a cue value, using the <c
 <br/>
 
 <h4>CSS rules used in this example:</h4>
+
 ```
 1.  <style type="text/css">
 2.       ::cue(.myclass) { color: red; }
@@ -5376,6 +5379,7 @@ Here is an example that shows the voices of the different characters displayed w
 Using the <v> tag, you will distinguish different voices that should be displayed in different colors (depending on the HTML5 video player implementation). See the CSS presented in the previous section to see how to specify the colors for the different voices.
 
 Example source code:
+
 ```
 1.  00:00:56.000 --> 00:01:04.000
 2.  <v Tarzan>Me Tarzan...
@@ -5387,6 +5391,7 @@ Example source code:
 When you play a movie in DVD or Blu-Ray format, a menu appears on the screen: play a movie, choose subtitles, etc. Usually there is also a "chapters" menu that allows you to quickly access a part of the movie. With videos on the Web, one can also indicate the chapter breakdown, using WebVTT files and a <track> element/tag.
 
 Adding chapters is very similar to adding subtitles/captions. Look at *line 5* in the code below, where we use an extra <track> element with a kind="chapters" attribute.
+
 ```
 1.  <video poster="webvtt_talk.png" style="width:100%" preload="metadata">
 2.      <source src="webvtt_talk.webm">
@@ -5460,7 +5465,7 @@ We do not claim that these are the best tools, so feel free to share your discov
 
 Most "complex" HTML elements like forms, audio or video players, come with a JavaScript API that allows you to control them programmatically, customize them, etc.
 
-The <track> element comes with a powerful API that is used to develop many interesting features such as:
+The &lt;track&gt; element comes with a powerful API that is used to develop many interesting features such as:
 
 -   Dynamically building a navigation menu that shows the different chapters of the video,
 
@@ -5763,7 +5768,8 @@ webcamStream.getTracks()[1].stop(); // video
 
 In order to stop the Webcam and make the hardware "unlock it", you need to call the stop() method of the video stream.
 
-Code source:
+<h4>Code source:</h4>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -5833,16 +5839,12 @@ Code source:
 
 Try this example that shows how to use the getUserMedia API. Note the CSS effects (click on the video to cycle from one effect to another):
 
-//--------------------
-
-// GET USER MEDIA CODE
-
-//--------------------
-
-let video;
-
-let webcamStream;
 ```
+//--------------------
+// GET USER MEDIA CODE
+//--------------------
+let video;
+let webcamStream;
 function startWebcam() {
 // request video and audio stream from the user's webcam
 navigator.mediaDevices.getUserMedia({
@@ -5861,11 +5863,9 @@ function stopWebcam() {
 webcamStream.getTracks()[0].stop(); // audio
 webcamStream.getTracks()[1].stop(); // video
 }
-```
 //------------------------------
 // CODE FOR CHANGING CSS FILTERS
 //------------------------------
-```
 let idx = 0;
 let filters = [
 'grayscale',
@@ -5888,6 +5888,7 @@ el.classList.add(effect);
 ```
 
 <h4>CSS</h4>
+
 ```
 #output {
 width: 307px;
@@ -5935,6 +5936,7 @@ filter: invert(1)
 ```
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -5965,6 +5967,7 @@ The trick is to copy and paste the current image from the video stream into a 
 
 
 <h4>JS</h4>
+
 ```
 //--------------------
 // GET USER MEDIA CODE
@@ -6007,6 +6010,7 @@ ctx.drawImage(video, 0,0, canvas.width, canvas.height);
 ```
 
 <h4>CSS</h4>
+
 ```
 canvas {
 border:1px solid black;
@@ -6155,6 +6159,7 @@ console.log('navigator.getUserMedia error: ', error);^
 ```
 
 <h4>CSS</h4>
+
 ```
 video {
 border:1px solid;
@@ -6162,30 +6167,31 @@ border:1px solid;
 ```
 
 <h4>HTML</h4>
+
 ```
-> <!DOCTYPE html>
-> <html lang="en">
-> <head>
-> <meta charset="utf-8"/>
-> <title>getUserMedia constraints for Webcam resolutions</title>
-> </head>
-> <body onload="init();">
-> <h1>Set the camera resolution</h1>
-> Example adapted from:
-> <a href="https://www.simpl.info/getusermedia/constraints/">
-> https://www.simpl.info/getusermedia/constraints/
-> </a>
-> <br>
-> <p>Click a button to call <code>getUserMedia()</code> with appropriate resolution. </p>
-> <div id="buttons">
-> <button id="qvga">QVGA</button>
-> <button id="vga">VGA</button>
-> <button id="hd">HD</button>
-> </div>
-> <p id="dimensions"></p>
-> <video autoplay></video>
-> </body>
-> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>getUserMedia constraints for Webcam resolutions</title>
+</head>
+<body onload="init();">
+<h1>Set the camera resolution</h1>
+Example adapted from:
+<a href="https://www.simpl.info/getusermedia/constraints/">
+https://www.simpl.info/getusermedia/constraints/
+</a>
+<br>
+<p>Click a button to call <code>getUserMedia()</code> with appropriate resolution. </p>
+<div id="buttons">
+<button id="qvga">QVGA</button>
+<button id="vga">VGA</button>
+<button id="hd">HD</button>
+</div>
+<p id="dimensions"></p>
+<video autoplay></video>
+</body>
+</html>
 ```
 
 <!------------------------------------------------------------------------------------------------>
@@ -6197,7 +6203,7 @@ border:1px solid;
    alt="" />
 </p>
 
-Code source extract related to the "constraint" object which specifies the desired resolutions:
+<h4>Code source extract related to the "constraint" object which specifies the desired resolutions:</h4>
 
 ```
 1.  var vgaConstraints = {
@@ -6225,6 +6231,7 @@ Use this [Web app that ](https://webrtchacks.github.io/WebRTC-Camera-Resolutio
 <h4>Selecting the front or rear camera on smartphones</h4>
 
 Here are some other constraints you can set. In particular, look at the ones for selecting the front or rear camera (smartphones):
+
 ```
 1.  **// more on video resolution**
 2.  **constraints = {**
@@ -6265,7 +6272,8 @@ Here are some other constraints you can set. In particular, look at the ones for
    alt="webapp for selecting audio and video input/output" />
 </p>
 
-Source code extract:
+<h4>Source code extract:</h4>
+
 ```
 1.  function gotDevices(deviceInfos) {
 2.      for (var i = 0; i !== deviceInfos.length; ++i) {
@@ -6615,8 +6623,6 @@ Let's look at [ this example on JS Bin](https://jsbin.com/visariz/1/edit?html,
 | 12 |   </[<b>body<b>](https://december.com/html/4/element/body.html)>                                                                                                       |
 |    |                                                                                                                                                                        |
 | 13 | </[<b>html<b>](https://december.com/html/4/element/html.html)>                                                                                                         |
-+====+========================================================================================================================================================================+
-+----+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The simplest way to add JavaScript code in an HTML page, is by using the <script>...</script> element.
 
