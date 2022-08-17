@@ -2159,7 +2159,7 @@ Also note that we used in that example a <footer> element in the blog post.</
 <li>Web crawlers, etc.</li>
 </ul>
 
-<p>You can use <div> elements in all cases where the proposed structural elements do not fit your needs: for defining some content that should be styled, for example.
+<p>You can use &lt;div&gt; elements in all cases where the proposed structural elements do not fit your needs: for defining some content that should be styled, for example.
 
 This chart from the <a href="https://html5doctor.com/" target="_blank">HTML5 Doctor Web site</a> may help you decide whether or not to use a &lt;div&gt;:</p>
 
@@ -7492,6 +7492,9 @@ Let's continue with another example. This time we will draw several shapes that 
 
 <h4>HTML</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -7540,7 +7543,12 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
+</details>
+
 <h4>Source code extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  function drawSomething() {
@@ -7563,6 +7571,8 @@ Your browser does not support the canvas tag.
 18.     ctx.fillText("hello", 70, 22);
 19. }
 ```
+
+</details>
 
 <p>
 This example shows the "global" nature of the context properties. Once you set the filled color to red, any shapes you draw in filled mode will be red. This is true for all the context properties. We set some of these properties in *lines 3-7*, and all following calls to context methods for drawing rectangles or text will depend on them. The two filled rectangles at *lines 10-11* will be red, the two wireframe rectangles drawn at *lines 14-15* will be blue, etc.
@@ -7603,6 +7613,9 @@ If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) a
 
 <h4>HTML</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -7642,6 +7655,8 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
+</details>
+
 JavaScript code extract:
 
 ```
@@ -7654,11 +7669,18 @@ JavaScript code extract:
 7.  }
 ```
 
--   <h4> Let's modify the code so that we can draw these rectangles at any X and Y position
+</details>
+
+<ul>
+<li><h4>Let's modify the code so that we can draw these rectangles at any X and Y position</li>
+</ul>
 
 What if we wanted to draw these 3 rectangles at another position, as a group? We would like to draw all of them a little closer to the bottom, for example... Let's add some parameters to the function:  the X and Y position of the rectangles.
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -7699,7 +7721,12 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
+</details>
+
 <h4>Code extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var canvas, ctx;
@@ -7723,7 +7750,9 @@ Your browser does not support the canvas tag.
 19. }
 ```
 
-At *line 10*, we called the drawSomething(...) function with 0 and 100 as parameters, meaning "please add an offset of 0 in X and 100 in Y directions to what is drawn by the function...
+</details>
+
+At <i>line 10</i>, we called the drawSomething(...) function with 0 and 100 as parameters, meaning "please add an offset of 0 in X and 100 in Y directions to what is drawn by the function...
 
 If you look at the code of the modified function, you will see that each call to fillRect(...) uses the x and y parameters instead of hard coded values. In this way, if we call it with parameters (0, 100), then all rectangles will be drawn 100 pixels to the bottom (offset in y). Here is the result:
 
@@ -7743,6 +7772,9 @@ If you look at the code of the modified function, you will see that each call t
 Now we can start having some fun... let's draw a monster's head using only rectangles:
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -7796,7 +7828,12 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
+</details>
+
 <h4>An extract of the JavaScript source code is:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  function drawMonster(x, y) {
@@ -7824,6 +7861,8 @@ Your browser does not support the canvas tag.
 23. }
 ```
 
+</details>
+
 As you can see, the code uses the same technique, becomes less and less readable. The Xs and Ys at the beginning of each call makes understanding the code harder, etc.
 
 However, there is a way to simplify this => 2D geometric transformations! 
@@ -7833,6 +7872,9 @@ However, there is a way to simplify this => 2D geometric transformations! 
 The idea behind 2D transformations is that instead of modifying all the coordinates passed as parameters to each call to drawing methods like fillRect(...), we will keep all the drawing code "as is". For example, if the monster of our previous example was drawn at (0, 0), we could just translate (or rotate, or scale) the original coordinate system.
 
 Let's take a piece of code that draws something corresponding to the original coordinate system, located at the top left corner of the canvas:
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  function drawMonster(x, y) {
@@ -7864,9 +7906,14 @@ Let's take a piece of code that draws something corresponding to the original co
 27. }
 ```
 
+</details>
+
 This code is the just the same as in the previous example except that we removed all Xs and Yx in the code. We also added at the end *(lines 25-26*) two lines of code that draw the coordinate system. The drawArrow(startX, startY, endX, endY, width, color) function is a utility function that we will present later. You can see it in the JS source code of the pen below:
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -7897,7 +7944,12 @@ ctx.restore();
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -7946,6 +7998,8 @@ drawArrow(ctx, 0, 0, 0, 100, 10, 'red');
 </script>
 ```
 
+</details>
+
 Note that the X and Y parameters are useless for now...
 
 ```
@@ -7955,6 +8009,9 @@ Note that the X and Y parameters are useless for now...
 Now, instead of simply calling drawMonster(0, 0), we will call first ctx.translate(100, 100), and look at the result below:
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -7985,7 +8042,12 @@ ctx.restore();
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8042,6 +8104,8 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
+</details>
+
 <h4>JavaScript code extract:</h4>
 
 ```
@@ -8064,6 +8128,9 @@ Your browser does not support the canvas tag.
 Here is the previous example, but this time we translated the coordinate system, then rotated it with an angle equal to PI/4 , then we scaled it so that units are half as big:
 </p>
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -8094,7 +8161,12 @@ ctx.restore();
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8153,6 +8225,8 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
+</details>
+
 <h4>And here is the code of the transformations we used, followed by the call to the function that draws the monster:</h4>
 
 ```
@@ -8170,6 +8244,9 @@ Your browser does not support the canvas tag.
 <p>If we draw two shapes at two different positions, they will be relative to this new coordinate system.</p>
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -8200,7 +8277,12 @@ ctx.restore();
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8265,6 +8347,8 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
+</details>
+
 ```
 1.  ctx.translate(100, 100);
 2.  ctx.rotate(Math.PI/4);
@@ -8297,6 +8381,9 @@ Multiple contexts can be backed up consecutively and restored. Contexts saved w
 
 <h4>JS</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
@@ -8326,7 +8413,12 @@ ctx.restore();
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8394,6 +8486,8 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
+</details>
+
 We slightly modified the function that draws the monster:
 <ul>
 <li>We added parameters for setting the position and orientation of the monster, and added calls to ctx.translate(x, y) and ctx.rotate(angle) in the function.</li>
@@ -8412,6 +8506,9 @@ We slightly modified the function that draws the monster:
 </p>
 
 <p>Source code extract of this function: notice at *lines 3 *and* 26* how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines 7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  function drawMonster(x, y, angle, headColor, eyeColor) {
@@ -8443,6 +8540,8 @@ We slightly modified the function that draws the monster:
 27. }
 ```
 
+</details>
+
 <h3 id="ch3-3-1">3.3.1 Immediate Mode</h3>
 <p>
 In the previous sections, we learned how to draw filled or wireframe rectangles.
@@ -8458,6 +8557,9 @@ Another mode called "path mode" or "buffered mode" will be seen later in this co
 <p>Let's give an example that draws several rectangles, filled or wireframe, with different colors and line widths:</p>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8517,6 +8619,8 @@ ctx.restore();
 </html>
 ```
 
+</details>
+
 <h3 id="ch3-3-2">3.3.2 Drawing Text</h3>
 
 <p>The canvas API provides two main methods for drawing text: ctx.strokeText(message, x, y) and ctx.fillText(message, x, y).
@@ -8527,6 +8631,9 @@ It also provides a set of context properties for setting the character font and 
 <p>Look at the example below, and change the position where the text is drawn, change font attributes, etc.:</p>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8550,6 +8657,8 @@ context.strokeText("Hello World!", 10, 100);
 </body>
 </html>
 ```
+
+</details>
 
 <h4>Source code extract:</h4>
 
@@ -8601,6 +8710,9 @@ There is a fourth optional parameter maxWidth that forces the text to fit int
 
 <h4> Forcing a text not to exceed a certain width: the maxWidth property</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -8629,7 +8741,12 @@ context.strokeText("Hello World!", 10, 220, 150);
 </html>
 ```
 
+</details>
+
 <h4>source code extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  ...
@@ -8650,11 +8767,16 @@ context.strokeText("Hello World!", 10, 220, 150);
 16. context.strokeText("Hello World!", 10, 220, **150**);
 ```
 
+</details>
+
 <h4>Measuring the width of a given text (bounding box) with the ctx.measureText()method</h4>
 
 The ctx.measureText() method can be used to get the current width in pixels of a given text, taking into account the diverse properties involved such as font, size, shadow, lineWidth, etc.
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8687,7 +8809,12 @@ context.stroke();
 </html>
 ```
 
+</details>
+
 <h4>Source code extract from this example:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  context.font = "60pt Calibri";
@@ -8711,11 +8838,16 @@ context.stroke();
 19. context.stroke();
 ```
 
+</details>
+
 <h4>Changing the way the text is horizontally drawn: the ctx.textbaseline property</h4>
 
 The textBaseline property of the context is used to specify the different ways one can position the baseline of a given text:
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8755,6 +8887,8 @@ context.fillText("bottom-glyph", 400, 75);
 </html>
 ```
 
+</details>
+
 The example above shows the different possible values for this property and the corresponding results. The default value is "alphabetic" and corresponds to what has been used in the previous "Hello World" example.
 
 <h3>Possible values:</h3>
@@ -8793,6 +8927,9 @@ The textAlign property of the context tells how the x parameter will be used
 
 <h4>HTML</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -8829,7 +8966,12 @@ context.fillText("right", 250, 100);
 </html>
 ```
 
+</details>
+
 <h4>Typical use (source code taken from the above example):</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  context.textAlign = "center";
@@ -8844,6 +8986,8 @@ context.fillText("right", 250, 100);
 10. context.fillText("right", 250, 100);
 ```
 
+</details>
+
 <h3 id="ch3-3-3">3.3.3 Drawing Images</h3>
 
 Working with images is rather simple, except that we need the images to be fully loaded into memory before drawing them. Loading images is an *asynchronous* process we need to take care of. Working with multiple images might also be difficult for beginners. We present a multiple image loader later on in this course.
@@ -8857,6 +9001,9 @@ But let's start with a basic example!
 <h4>Example #1: drawing an image in a canvas</h4>
 
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <!DOCTYPE HTML>
@@ -8889,6 +9036,8 @@ But let's start with a basic example!
 28.    </body>
 29. </html>
 ```
+
+</details>
 
 <h4>Explanations:</h4>
 
@@ -8924,6 +9073,9 @@ But let's start with a basic example!
 This example illustrates the use of the different variants of the drawImage method:
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE HTML>
@@ -8961,6 +9113,8 @@ imageObj.src = "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png";
 </html>
 ```
 
+</details>
+
 <h4>CSS</h4>
 
 ```
@@ -8970,6 +9124,9 @@ border:1px solid black;
 ```
 
 <h4>Source code extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var imageObj = new Image();
@@ -8995,6 +9152,8 @@ border:1px solid black;
 21. imageObj.src = "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png";
 22. };
 ```
+
+</details>
 
 <h4>Example #3: draw an image defined in the page by an &lt;img src="..."&gt; element</h4>
 
@@ -9035,6 +9194,9 @@ border:1px solid black;
 
 <h4>HTML</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE HTML>
 <html lang="en">
@@ -9073,9 +9235,12 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 </html>
 ```
 
+</details>
+
 With large image files, this will not break nor produce unexpected results:
 
 <h4>CSS</h4>
+
 ```
 #myCanvas {
 border:1px solid black;
@@ -9083,6 +9248,9 @@ border:1px solid black;
 ```
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE HTML>
@@ -9122,6 +9290,8 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 </html>
 ```
 
+</details>
+
 The **[DOM Level 2 Events specification](https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents) **says: "*The load event occurs when the DOM implementation finishes loading all content within a document, all frames within a FRAMESET, or an OBJECT element.*"
 
 <h3 id="ch3-3-4">3.3.4 Drawing Images from a Video Stream</h3>
@@ -9129,6 +9299,9 @@ The **[DOM Level 2 Events specification](https://www.w3.org/TR/DOM-Level-2-Even
 The drawImage(...) function can take a video element as its first parameter. The image that will be drawn is the one currently played by the video stream. This can be done at video frequency on most modern computers or mobile devices.
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE HTML>
@@ -9192,6 +9365,8 @@ ctx.restore();
 </html>
 ```
 
+</details>
+
 This example shows:
 <ul>
 <li>a &lt;video&gt; element on top, and four images drawn in a canvas below.</li>
@@ -9199,6 +9374,9 @@ This example shows:
 </ul>
 
 <h4>Source code extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <script>
@@ -9254,6 +9432,8 @@ This example shows:
 51. </body>
 ```
 
+</details>
+
 <h4>Explanations:</h4>
 
 -   *Line 11*: the call to setInterval will make the browser execute the processFrame function each 25ms.
@@ -9282,6 +9462,9 @@ Here is an example that draws 1000 random rectangles in a canvas, using immedia
 
 <h4>JS</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 var canvas, ctx, w, h;
 function init() {
@@ -9301,7 +9484,12 @@ console.timeEnd("time to draw");
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -9316,6 +9504,9 @@ Your browser does not support the canvas tag.</canvas>
 </body>
 </html>
 ```
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var canvas, ctx, w, h;
@@ -9341,6 +9532,8 @@ Your browser does not support the canvas tag.</canvas>
 21. }
 ```
 
+</details>
+
 *Lines 12-18* draw 1000 rectangles of random sizes in immediate mode. We also measure the time using the usual console.time(name_of_timer) and console.timeEnd(name_of_timer) that will write in the browser console the time elapsed. Note that console.time(...) and console.timeEnd(...) display results only in the browser's console, not in the JSBin console.
 
 On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawing all these rectangles:
@@ -9365,6 +9558,9 @@ Same example as before, this time using the buffered mode for drawing rectangles
 
 <h4>JS</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 var canvas, ctx, w, h;
 function init() {
@@ -9384,6 +9580,8 @@ ctx.stroke();
 console.timeEnd("time to draw");
 }
 ```
+
+</details>
 
 <h4>HTML</h4>
 
@@ -9509,6 +9707,9 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 
 <h4>HTML</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -9540,7 +9741,12 @@ ctx.stroke();
 </html>
 ```
 
+</details>
+
 <h4>Code source extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var canvas=document.getElementById('myCanvas');
@@ -9565,6 +9771,8 @@ ctx.stroke();
 20. ctx.stroke();
 ```
 
+</details>
+
 In this example, the entire grid is drawn during the execution of the last line of code, with the single call to ctx.stroke().
 
 <h4>Mixing filled and wireframe shapes (and immediate and path modes)</h4>
@@ -9582,6 +9790,9 @@ In this example, the entire grid is drawn during the execution of the last line 
 <br/>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -9606,7 +9817,12 @@ ctx.stroke();
 </html>
 ```
 
+</details>
+
 <h4>Code source:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var canvas=document.getElementById('myCanvas');
@@ -9626,6 +9842,8 @@ ctx.stroke();
 15. ctx.stroke();
 ```
 
+</details>
+
 This example shows that filled and wireframe shapes should be drawn differently (here a filled rectangle is drawn using a call to the fillRect(...) method while a wireframe set of connected lines is drawn using the stroke() method of the context).
 
 <h4>Drawing a single path made with disconnected lines / parts</h4>
@@ -9642,6 +9860,9 @@ Try this:
 <br/>
 
 <h4>Code source:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var canvas=document.getElementById('myCanvas');
@@ -9662,6 +9883,8 @@ Try this:
 16. ctx.stroke();
 ```
 
+</details>
+
 In this last example, we simply called the moveTo() method between each part of the path (*lines 5 and 10*). And we called stroke() (*line 16*) only once to draw the whole path.
 
 <h3 id="ch3-4-4">3.4.4 Drawing Lines with Different Styles</h3>
@@ -9680,6 +9903,9 @@ Let's look at the drawing from the last example of the previous section:
 <br/>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -9708,6 +9934,8 @@ ctx.stroke();
 </html>
 ```
 
+</details>
+
 Imagine that we would like to draw them with different styles and colors: the shape on the left will stay as it is now (blue, wireframe), while the shape on the right will be filled, colored in pink. Let's look at how we can do this...
 
 <h4>Drawing two paths with different styles: the WRONG and the right way!</h4>
@@ -9729,6 +9957,9 @@ What we will try first is to call stroke() after the first half of the path, t
 <br/>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -9761,7 +9992,12 @@ ctx.fill();
 </html>
 ```
 
+</details>
+
 <h4>Here is the code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var canvas=document.getElementById('myCanvas');
@@ -9785,6 +10021,8 @@ ctx.fill();
 19. ctx.fillStyle = "pink";
 20. ctx.fill();
 ```
+
+</details>
 
 Hey - it does not work! Weirdly, the two parts of the path are filled in pink! But we called stroke() after the first half of the path was drawn (lines 5-8). Then we called fill() only after the second part of the path was specified (lines 14-19)... so, what happened?
 
@@ -9813,6 +10051,9 @@ using the ctx.beginPath() method, as shown in the next example.
 <br/>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -9847,7 +10088,12 @@ ctx.fill();
 </html>
 ```
 
+</details>
+
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var canvas=document.getElementById('myCanvas');
@@ -9875,6 +10121,8 @@ ctx.fill();
 23. ctx.fill();
 ```
 
+</details>
+
 This time, in order to draw the two shapes differently, we defined two separate paths. The way to do this is just to call ctx.beginPath() to start a new path. In this example, the first path has been drawn in wireframe mode, then a new path has been started that is drawn in filled mode.
 
 <h3 id="ch3-4-5">3.4.5 Drawing Lines in Immediate Mode</h3>
@@ -9884,6 +10132,9 @@ Sometimes, it might be useful to draw just one line.
 It's interesting to see how we can write a single "draw line" function that takes the start and end coordinates, the color, the line width, etc., and give the impression of being done in "immediate" mode.
 
 <h4>Here is the code for this "utility" function that you may find useful:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  function drawLine(x1, y1, x2, y2, color, width) {
@@ -9908,6 +10159,8 @@ It's interesting to see how we can write a single "draw line" function that take
 20. }
 ```
 
+</details>
+
 Notice the save/restore of the context at the beginning/end of the function. This is REALLY a best practice to avoid affecting other functions' context.
 <ul>
 <li><i>Line 13</i> starts a new path so that the function will only draw what it is meant to draw: a single line.</li>
@@ -9927,6 +10180,9 @@ Notice the save/restore of the context at the beginning/end of the function. Thi
 <br/>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -9963,6 +10219,8 @@ ctx.restore();
 </html>
 ```
 
+</details>
+
 <h4>Source code extract:</h4>
 
 ```
@@ -9980,6 +10238,9 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 <h4>Examples</h4>
 
 <h4>Example #1:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  // Adapted from : https://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -10023,6 +10284,8 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 39. }
 ```
 
+</details>
+
 <h4>Explanations:</h4>
 
 -   An arrow is made of one line (the arrow body) and three connected lines (the arrow head). 
@@ -10044,6 +10307,9 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 <br/>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10096,6 +10362,8 @@ drawArrow(ctx, 100, 10, 140, 140, 3, 'black');
 </html>
 ```
 
+</details>
+
 <h4>Source code extract:</h4>
 
 ```
@@ -10141,6 +10409,9 @@ The ctx.closePath() method indicates that we would like a closed path: draw fr
 
 <h4>HTML</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -10167,7 +10438,12 @@ ctx.stroke();
 </html>
 ```
 
+</details>
+
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var canvas=document.getElementById('myCanvas');
@@ -10185,6 +10461,8 @@ ctx.stroke();
 13. ctx.strokeStyle = "blue";
 14. ctx.stroke();
 ```
+
+</details>
 
 <h4>Explanations:</h4>
 
@@ -10239,6 +10517,9 @@ The last parameter is optional and has a value of false by default. If true, 
 &nbsp;
 <br/>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 
@@ -10261,6 +10542,8 @@ ctx.stroke();
 </body>
 </html>
 ```
+
+</details>
 
 <h4>Code source extract:</h4>
 
@@ -10308,6 +10591,8 @@ Then, the result is the "complementary" of the previous arc:
 <br/>
 
 <h4>Source code:</h4>
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var canvas = document.getElementById("myCanvas");
@@ -10338,6 +10623,8 @@ Then, the result is the "complementary" of the previous arc:
 26. **// Notice we called ctx.arc() only once ! And drew it twice
 27. **// with different styles**
 ```
+
+</details>
 
 Notice that we called ctx.arc() only once! And drew it twice, with different styles, with calls to ctx.stroke() and ctx.fill(). Each call drew the defined path in wireframe and in filled mode!
 
@@ -10417,6 +10704,9 @@ This method can be confusing. It was defined mainly for drawing rounded shapes l
 
 <h4>HTML</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -10439,6 +10729,8 @@ context.stroke();
 </body>
 </html>
 ```
+
+</details>
 
 <h4>Source code extract:</h4>
 
@@ -10466,6 +10758,9 @@ context.stroke();
 <br/>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10506,7 +10801,12 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 </body>
 ```
 
+</details>
+
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke) {
@@ -10541,6 +10841,8 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 30. roundedRect(ctx, 15, 15, 160, 120, 20, true, true);
 ```
 
+</details>
+
 In this example, each call to ctx.arcTo(...) draws a side plus a corner. This makes us suspect that the arcTo() method has been designed primarily for drawing rounded rectangles...
 
 <h4>Example #3: comparison between lineTo and arcTo</h4>
@@ -10557,6 +10859,9 @@ This example at JS Bin is the same as the previous one, except that we added at 
 <br/>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10611,11 +10916,14 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 </html>
 ```
 
+</details>
+
 Red = arcTo and Pink = lineTo
 
 <h4> Example #4: use the unrounded vertices in arcTo</h4>
 
 For drawing a rounded square, this code also works:
+
 ```
 1.  ctx.moveTo(x+radius, y);
 2.  ctx.arcTo(x+width, y,x+width, y+height, radius);
@@ -10625,6 +10933,7 @@ For drawing a rounded square, this code also works:
 ```
 
 which might be easier than trying to figure out where the arc will end like this:
+
 ```
 1.  ctx.moveTo(x+radius, y);
 2.  ctx.arcTo(x+width, y, x+width, y+radius, radius);
@@ -10646,6 +10955,10 @@ This could be particularly helpful if you are dealing with something other than 
 <br/>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -10687,6 +11000,8 @@ roundedTriangle(ctx,200,15,300,150,15,100,20,true,true);
 </html>
 ```
 
+</details>
+
 <h3 id="ch3-4-10">3.4.10 Quadratic Curves</h3>
 
 <h4>Introduction</h4>
@@ -10710,6 +11025,7 @@ The context point may be defined by a call to the moveTo(x, y) method of the c
 The control point controls the curvature - if we move the control point farther we get a sharper curve.
 
 <h4>Typical use</h4>
+
 ```
 1.  context.moveTo(contextX, contextY);
 2.  context.quadraticCurveTo(controlX, controlY, endX, endY);
@@ -10735,6 +11051,10 @@ The control point controls the curvature - if we move the control point farther 
 <br/>
 
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  var canvas=document.querySelector('#myCanvas1');
 2.  var context=canvas.getContext('2d');
@@ -10748,6 +11068,8 @@ The control point controls the curvature - if we move the control point farther 
 10. context.strokeStyle = "#0000ff";
 11. context.stroke();
 ```
+
+</details>
 
 We set a starting point in *line 6*: moveTo(...), then set the control and ending points with a call to quadraticCurve(...), at *line 7*, then set some properties for color, thickness, and finally we call the stroke() method for drawing the curve.
 
@@ -10766,6 +11088,9 @@ Try this:
 <br/>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10792,7 +11117,12 @@ context.stroke();
 </html>
 ```
 
+</details>
+
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  context.beginPath();
@@ -10806,6 +11136,8 @@ context.stroke();
 9.  context.strokeStyle = "#0000ff";
 10. context.stroke();
 ```
+
+</details>
 
 <h3 id="ch3-4-11">3.4.11 Curved Arrows</h3>
 
@@ -10822,6 +11154,9 @@ We propose a useful function for drawing curved arrows. See this example:
 <br/>
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 var canvas = document.querySelector('#myCanvas');
@@ -10867,6 +11202,8 @@ ctx.restore();
 }
 ```
 
+</details>
+
 <h4>CSS</h4>
 
 ```
@@ -10876,6 +11213,9 @@ border: 1px solid black;
 ```
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10890,7 +11230,12 @@ border: 1px solid black;
 </html>
 ```
 
+</details>
+
 <h4>Source code of the function that draws a curved arrow:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  function drawCurvedArrow(startPointX, startPointY,
@@ -10932,6 +11277,9 @@ border: 1px solid black;
 37.     ctx.restore();
 38. }
 ```
+
+</details>
+
 <p>
 This function takes as parameters the start and end points, the control point of the curve, the arrow width, the width of the arrow head.
 
@@ -11013,6 +11361,9 @@ Try this:
 
 <h4>HTML</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11041,6 +11392,8 @@ context.stroke();
 </body>
 </html>
 ```
+
+</details>
 
 <h4>Code source:</h4>
 
@@ -11071,6 +11424,9 @@ context.stroke();
 
 <h4>HTML</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11098,7 +11454,12 @@ context.stroke();
 </body>
 ```
 
+</details>
+
 <h4>Extract from source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  context.beginPath();
@@ -11116,6 +11477,8 @@ context.stroke();
 13. context.strokeStyle = "#0000ff";
 14. context.stroke();
 ```
+
+</details>
 
 In this example we use the closePath() method to draw a line between the last path point and the first path point (*line 11*), so that the drawing looks like a pair of goggles.
 
@@ -11169,6 +11532,9 @@ Here is an example that shows how to draw different filled rectangles in blue, w
 
 <h4>HTML</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11210,6 +11576,8 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
+</details>
+
 <h3 id="ch3-5-2">3.5.2 Canvas Context: Linear Gradients</h3>
 
 It is possible to define the stroke or the fill style as a "gradient", a set of interpolated colors, like in this example below:
@@ -11224,6 +11592,9 @@ It is possible to define the stroke or the fill style as a "gradient", a set of 
 </p>
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 var canvas, ctx, grdFrenchFlag;
@@ -11249,6 +11620,9 @@ ctx.fillRect(0, 0, 300, 200);
 
 <h4>HTML</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11267,6 +11641,8 @@ border: 1px solid black;
 </html>
 ```
 
+</details>
+
 <h4>A linear gradient is seen as an "invisible" rectangle in which a set of colors are interpolated along a line.</h4>
 
 The gradient becomes visible when we draw shapes on top of the invisible gradient, and when the fillStyle or strokeStyle property has for value this gradient.
@@ -11277,13 +11653,16 @@ There are 3 steps:
 
 <h4>Step #1: define a linear gradient</h4>
 
-Syntax: 
+<h4>Syntax:</h4>
+
 ```
 1.  ctx.createLinearGradient(x0,y0,x1,y1);
 ```
+
 ... where the (x0, y0) and (x1, y1) parameters define "the direction of the gradient" (as a vector with a starting and an ending point). This direction is an invisible line along which the colors that compose the gradient will be interpolated.
 
-<h4>Let's see an example:</h4
+<h4>Let's see an example:</h4>
+
 ```
 1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 0);
 ```
@@ -11297,30 +11676,36 @@ If this gradient is going to be reused by different functions, it is good practi
 We will add a set of "colors" and "stops" to this gradient. The stops go from 0 (beginning of the virtual line defined just above), to 1 (end of the virtual line). A color associated with a value of 0.5 will be right in the middle of the virtual line.
 
 Here is an example that corresponds to an interpolated version of the French flag, going from blue to white, then to red, with proportional intervals. We define three colors, blue at position 0, white at position 0.5 and red at position 1:
+
 ```
 1.  grdFrenchFlag.addColorStop(0, "blue");
 2.  grdFrenchFlag.addColorStop(0.5, "white");
 3.  grdFrenchFlag.addColorStop(1, "red");
 ```
+
 <h4>Step 3: draw some shapes</h4>
 
 First, let's set the fillStyle or strokeStyle of the context with this gradient, then let's draw some shapes "on top of the gradient".
 
 In our example, the gradient corresponds to an invisible rectangle that fills the canvas. If we draw a rectangle of the canvas size, it should be filled with the entire gradient:
+
 ```
 1.  ctx.fillStyle = grdFrenchFlag;
 2.  ctx.fillRect(0, 0, 300, 200);
 ```
-The result is shown in the [above pen](https://codepen.io/w3devcampus/pen/WNpPZVO): a big rectangle that fills the whole canvas, with colors going from blue (left) to white (middle) to red (right).
+
+The result is shown in the <a href="https://codepen.io/w3devcampus/pen/WNpPZVO">above pen</a>: a big rectangle that fills the whole canvas, with colors going from blue (left) to white (middle) to red (right).
 
 <h4>Examples</h4>
 
 <h4>Example #1: changing the direction of the gradient</h4>
 
 If you modify the source code that defines the direction of the gradient as follows...
+
 ```
 1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
 ```
+
 ... then you will define a gradient that goes from the top left corner of the canvas to the bottom right of the canvas. Let's see what it does:
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 168. (xxx) -------------------------------->
@@ -11349,6 +11734,9 @@ Instead of drawing a filled rectangle that covers the whole surface of the canva
 
 <h4>Here is the code that draws the checkboard:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  ctx.fillStyle = grdFrenchFlag;
 2.  ctx.fillRect(0, 0, 50, 50);
@@ -11364,9 +11752,14 @@ Instead of drawing a filled rectangle that covers the whole surface of the canva
 12. ctx.fillRect(150, 150, 50, 50);
 13. ctx.fillRect(250, 150, 50, 50);
 ```
+
 This code is rather ugly isn't it? It would have been better  to use a loop...
 
 <h4>Here is function that draws a chessboard:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  // n = number of cells per row/column
 2.  function drawCheckboard(n) {
@@ -11386,6 +11779,8 @@ This code is rather ugly isn't it? It would have been better  to use a loop...
 16. }
 ```
 
+</details>
+
 The two loops (*lines 11-15*) draw only one cell out of two (see the j = i % 2 at *line 12*). i is the column number and if the column is odd or even, either we draw or we do not draw a rectangle.
 
 This code is much more complex than the previous one, taking 16 lines instead of 13, but is much more powerful. Try to call the function with a value of 10, 20, or 2... 
@@ -11401,6 +11796,10 @@ This code is much more complex than the previous one, taking 16 lines instead of
 <br/>
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 var canvas, ctx, grdFrenchFlag;
 function init() {
@@ -11433,7 +11832,13 @@ ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11452,6 +11857,8 @@ border: 1px solid black;
 </html>
 ```
 
+</details>
+
 <h4>Example #3: drawing outlined shapes with gradients</h4>
 
 Just as we used fillStyle and fillRect for drawing rectangles filled with a gradient, we can also use strokeStyle and strokeRect in order to draw wireframed rectangles. In the next example, which is just a variation of the previous one, we have used the lineWidth property to set the outline of the rectangles at 5 pixels:
@@ -11467,6 +11874,10 @@ Just as we used fillStyle and fillRect for drawing rectangles filled with a 
 <br/>
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 var canvas, ctx, grdFrenchFlag;
 function init() {
@@ -11498,7 +11909,13 @@ ctx.strokeRect(cellWidth*(i), cellHeight*j, cellWidth, cellHeight);
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11517,7 +11934,13 @@ border: 1px solid black;
 </html>
 ```
 
+</details>
+
 <h4>Extract from source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  function drawCheckboard(n) {
 2.      **ctx.strokeStyle = grdFrenchFlag;**
@@ -11531,9 +11954,12 @@ border: 1px solid black;
 10. }
 ```
 
+</details>
+
 <h4>Example #4: what happens if we define a gradient smaller than the canvas?</h4>
 
 Let's go back to the very first example on this page - the one with the blue-white-red interpolated French flag. This time we will define a smaller gradient. Instead of going from (0, 0) to (300, 0), it will go from (100, 0) to (200, 0), while the canvas remains the same (width=300, height=200).
+
 ```
 1.  grdFrenchFlag = ctx.createLinearGradient(**100, 0, 200, 0**);
 ```
@@ -11551,6 +11977,10 @@ Like in the first example we will draw a filled rectangle that is the same size�
 <br/>
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 var canvas, ctx, grdFrenchFlag;
 function init() {
@@ -11573,7 +12003,13 @@ ctx.fillRect(0, 0, 300, 200);
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11592,14 +12028,18 @@ border: 1px solid black;
 </html>
 ```
 
+</details>
+
 We notice that "before" the gradient starts, the first color of the gradient is repeated without any interpolation (columns 0-100 are all blue), then we "see through" and the gradient is drawn (columns 100-200), then the last color of the gradient is repeated without any interpolation (columns 200-300 are red).
 
 <h4>Example #5: what happens if we define a gradient bigger than the canvas?</h4>
 
 Nothing special; we will "see through the drawn shapes", and the parts of the gradient that are located in the canvas area will be shown. You can try this example that defines a gradient twice the size of the canvas: 
+
 ```
 1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, **600, 400**);
 ```
+
 And if we draw the same rectangle with the canvas size, here is the result:
 
 <!------------------------------------------------------------------------------------------------>
@@ -11613,6 +12053,10 @@ And if we draw the same rectangle with the canvas size, here is the result:
 <br/>
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 var canvas, ctx, grdFrenchFlag;
 function init() {
@@ -11635,7 +12079,13 @@ ctx.fillRect(0, 0, 300, 200);
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11653,6 +12103,8 @@ border: 1px solid black;
 </body>
 </html>
 ```
+
+</details>
 
 The red color is beyond the bottom right corner.... we see only the top left quarter of the gradient.
 
@@ -11675,6 +12127,10 @@ It suffices to create a new gradient before drawing each filled rectangle, and s
 <br/>
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 var canvas, ctx, grdFrenchFlag;
 function init() {
@@ -11704,7 +12160,13 @@ setGradient(x, y, x+cellWidth, y+cellHeight);
 ctx.fillRect(x, y, cellWidth, cellHeight);
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -11723,7 +12185,13 @@ border: 1px solid black;
 </html>
 ```
 
+</details>
+
 <h4>Extract from source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 function setGradient(x, y, width, height) {
     grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
@@ -11751,6 +12219,8 @@ function drawCheckboard(n) {
 }
 ```
 
+</details>
+
 We wrote a function setGradient(startX, startY, endX, endY) that creates a gradient and set the fillStyle context property so that any filled shape drawn will have this gradient.
 
 In the drawCheckBoard(...) function we call it just before drawing rectangles. In this way, each rectangle is drawn using its own gradient.
@@ -11771,6 +12241,10 @@ Here is an example of a radial gradient that interpolates the color of the rainb
 <br/>
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 > var canvas, ctx, grd;
 > function init() {
@@ -11792,7 +12266,13 @@ Here is an example of a radial gradient that interpolates the color of the rainb
 > }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 > <!DOCTYPE html>
 > <html lang="en">
@@ -11810,6 +12290,8 @@ Here is an example of a radial gradient that interpolates the color of the rainb
 > </body>
 > </html>
 ```
+
+</details>
 
 <h4>The gradient is defined as follows:</h4>
 
@@ -11859,6 +12341,9 @@ You get some nice effects; here we set the second circle's center 60 pixels t
 
 <h4>JS</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 var canvas, ctx, grd;
 function init() {
@@ -11880,7 +12365,12 @@ ctx.fillRect(0, 0, 300, 200);
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -11899,6 +12389,8 @@ border: 1px solid black;
 </body>
 </html>
 ```
+
+</details>
 
 <h4>What happens if the gradient is smaller or larger than the shapes we draw?</h4>
 
@@ -11925,46 +12417,47 @@ There are a few steps we have to take before doing this:
 1.  <b>Create a JavaScript image object</b>
 
 ```
-    1.  var imageObj = new Image();
+1.  var imageObj = new Image();
 ```
 
 1.  <b>Define a callback function that will be called once the image has been fully loaded</b> in memory; we cannot draw before the image has been loaded.
 
 ```
-    1.  imageObj.onload = function(){
-    2.  ...
-    3.  }
+1.  imageObj.onload = function(){
+2.  ...
+3.  }
 ```
 
 1.  <b>Set the source of this image to the URL of the pattern</b>:
 
 ```
-    1.  imageObj.src = "https://www.myserver.com/myRepeatablePattern.png";
+1.  imageObj.src = "https://www.myserver.com/myRepeatablePattern.png";
 ```
 
 1.  <b>Create a pattern object from the loaded image:</b>
 
+As soon as step 3 is executed, an HTTP request is sent in background by the browser, and when the image is loaded in memory, the callback defined at step 2 is called. We create a pattern object inside, from the loaded image:
+
 ```
-    As soon as step 3 is executed, an HTTP request is sent in background by the browser, and when the image is loaded in memory, the callback defined at step 2 is called. We create a pattern object inside, from the loaded image:
-    1.  // callback called asynchronously, after the src attribute of imageObj is set
-    2.  imageObj.onload = function(){ 
-    3.      // We enter here when the image is loaded, we create a pattern object.
-    4.      // It is good practice to set this as a global variable, easier to share
-    5.      pattern1 = ctx.createPattern(imageObj, "repeat");
-    6.  };
+1.  // callback called asynchronously, after the src attribute of imageObj is set
+2.  imageObj.onload = function(){ 
+3.      // We enter here when the image is loaded, we create a pattern object.
+4.      // It is good practice to set this as a global variable, easier to share
+5.      pattern1 = ctx.createPattern(imageObj, "repeat");
+6.  };
 ```
 
 1.  <b>Inside the callback function (or inside a function called from inside the callback) ,we can finally draw</b>:
 
 ```
-    1.  // callback called asynchronously, after the src attribute of imageObj is set
-    2.  imageObj.onload = function(){
-    3.      pattern1 = ctx.createPattern(imageObj, "repeat");
-    4.  
-    5.      // Draw a textured rectangle
-    6.      ctx.fillStyle = pattern1;
-    7.      ctx.fillRect(10, 10, 500, 800);
-    8.  };
+1.  // callback called asynchronously, after the src attribute of imageObj is set
+2.  imageObj.onload = function(){
+3.      pattern1 = ctx.createPattern(imageObj, "repeat");
+4.  
+5.      // Draw a textured rectangle
+6.      ctx.fillStyle = pattern1;
+7.      ctx.fillRect(10, 10, 500, 800);
+8.  };
 ```
 
 <h4>Examples</h4>
@@ -11984,6 +12477,9 @@ There are a few steps we have to take before doing this:
 <br/>
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 var canvas, ctx, pattern1;
@@ -12022,6 +12518,8 @@ imageObj.src = "https://mainline.i3s.unice.fr/mooc/pattern1.jpg";
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
 
 ```
@@ -12039,6 +12537,9 @@ Your browser does not support the canvas tag. </canvas>
 ```
 
 <h4>JavaScript source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var canvas, ctx, pattern1;
@@ -12089,6 +12590,8 @@ Your browser does not support the canvas tag. </canvas>
 46. }
 ```
 
+</details>
+
 <h4>Example 2: the repeatability of a pattern</h4>
 
 <p>To "better" see the repeatability of the pattern, here is the same example with a 1000x1000 pixel wide canvas:</p>
@@ -12104,6 +12607,9 @@ Your browser does not support the canvas tag. </canvas>
 <br/>
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 var canvas, ctx, pattern1;
@@ -12141,6 +12647,8 @@ ctx.strokeRect(650, 20, 300, 800);
 imageObj.src = "https://mainline.i3s.unice.fr/mooc/pattern1.jpg";
 }
 ```
+
+</details>
 
 <h4>HTML</h4>
 
@@ -12205,6 +12713,9 @@ The complete example code that produces the result shown at the beginning of thi
 <br/>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -12280,6 +12791,8 @@ Your browser does not support the canvas tag.
 </body>
 ```
 
+</details>
+
 <h4>Define the list of images to be loaded:</h4>
 
 ```
@@ -12298,6 +12811,9 @@ Your browser does not support the canvas tag.
 <p>Notice that instead of using a traditional array, we defined this list as a JavaScript object, with properties whose names will be easier to manipulate (flowers, lion, tiledFloor, etc.).</p>
 
 <h4>The image loader function</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  function loadImages(imagesToBeLoaded, drawCallback) {
@@ -12322,6 +12838,8 @@ Your browser does not support the canvas tag.
 20.       } // for
 21. } // function
 ```
+
+</details>
 
 <b>Explanations:</b>
 <ul>
@@ -12353,6 +12871,9 @@ Your browser does not support the canvas tag.
 
 <h4>Here is the function:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  function drawRectanglesWithPatterns() {
 2.      ctx.fillStyle=patternFloor;
@@ -12368,6 +12889,8 @@ Your browser does not support the canvas tag.
 12.     ctx.fillRect(200,200,200,200);
 13. }
 ```
+
+</details>
 
 <h3 id="ch3-5-6">3.5.6 Drawing Shadows</h3>
 
@@ -12405,6 +12928,9 @@ Your browser does not support the canvas tag.
 
 <h4>JS</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 var canvas, ctx;
 function init() {
@@ -12427,6 +12953,8 @@ ctx.shadowOffsetY = 15; // vertical offset
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
 
 ```
@@ -12444,6 +12972,9 @@ Your browser does not support the canvas tag.</canvas>
 ```
 
 <h4>JavaScript source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var canvas, ctx;
@@ -12475,7 +13006,9 @@ Your browser does not support the canvas tag.</canvas>
 27. }
 ```
 
-<b>Explanations:</b>
+</details>
+
+<h4>Explanations:</h4>
 <ul>
 <li><i>Lines 21-27</i>: we set the 4 properties that define shadows in a dedicated function, for better clarity.</li>
 <li><i>Line 8</i>: we called this function once before drawing the rectangles.</li>
@@ -12485,6 +13018,9 @@ Your browser does not support the canvas tag.</canvas>
 <h4>Example #2: unwanted shadows!</h4>
 
 <p>Let's take a <a href="https://codepen.io/w3devcampus/pen/YzZBxmO">previous example</a>, the one that draws a filled circle with an outline. And, let's add a shadow to it using the following code:</p>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  ...
@@ -12523,6 +13059,8 @@ Your browser does not support the canvas tag.</canvas>
 34. }
 ```
 
+</details>
+
 <h4>And here is the result:</h4>
 
 <!------------------------------------------------------------------------------------------------>
@@ -12535,6 +13073,9 @@ Your browser does not support the canvas tag.</canvas>
 </p>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -12593,11 +13134,16 @@ ctx.shadowOffsetY = 15; // vertical offset
 </html>
 ```
 
+</details>
+
 Ah, indeed, the call to ctx.fill() casts a shadow, but the call to ctx.stroke(), that paints the whole path again, casts a shadow too, and this time the outline produces an unwanted shadow... How can we avoid this effect, while using the same technique for drawing the path?
 
 The trick is to save the context before setting the shadow properties, then draw the filled circle, then restore the context (to its previous state: without shadows), then draw the outlined circle by calling ctx.stroke().
 
 <h4>Correct version of the code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  ...
@@ -12619,6 +13165,8 @@ The trick is to save the context before setting the shadow properties, then dr
 17. ...
 ```
 
+</details>
+
 <h4>And here is the final result:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 185.  (xxx) -------------------------------->
@@ -12630,6 +13178,9 @@ The trick is to save the context before setting the shadow properties, then dr
 </p>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -12692,6 +13243,8 @@ ctx.shadowOffsetY = 15; // vertical offset
 </html>
 ```
 
+</details>
+
 <h3 id="ch3-5-7">3.5.7 Styling Lines</h3>
 
 Several context properties can be used to set the thickness of the shape outlines, the way line end caps are drawn, etc.
@@ -12720,6 +13273,9 @@ We have seen this before. This is done by changing the value (in pixels) of the�
 </p>
 
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -12760,6 +13316,8 @@ We have seen this before. This is done by changing the value (in pixels) of the�
 36. </html>
 ```
 
+</details>
+
 <h4>Example #2: changing the end caps of a line</h4>
 
 The lineCap property of the context indicates the way line end caps are rendered. Possible values are butt (default), round, square (from top to bottom in the next illustration). Note that a value of "round" or "square" makes the lines slightly longer than the default value "butt".
@@ -12785,6 +13343,9 @@ The lineCap property of the context indicates the way line end caps are render
 <br/>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -12820,6 +13381,8 @@ ctx.strokeRect(230, 10, 100, 100);
 </html>
 ```
 
+</details>
+
 Note that in this example, the rectangle is not affected. It has no line ends visible - all its sides meet. However, the next property we're going to look at will have an effect on rectangles!
 
 <h4>Example #3: setting the type of corner when two lines meet</h4>
@@ -12836,6 +13399,9 @@ Note that in this example, the rectangle is not affected. It has no line ends vi
    width="65%"
    alt="image189.png" />
 </p>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -12870,6 +13436,8 @@ ctx.strokeRect(230, 10, 100, 100);
 </body>
 </html>
 ```
+
+</details>
 
 <h4>Example #4: specific case of lineJoin="miter", the miterLimit property, a way to avoid looooooong corners!</h4>
 
@@ -12921,7 +13489,7 @@ Step 1 could be avoided if you redraw the whole canvas content during step 2.
 
 <h4>Before HTML5</h4>
 
-Even before HTML5 and the introduction of the canvas element, people created HTML games. They used CSS backgrounds inside <div> elements, and used to change the CSS top, left, width and height properties of the divs to animate graphic images on the screen.
+Even before HTML5 and the introduction of the canvas element, people created HTML games. They used CSS backgrounds inside &lt;div&gt; elements, and used to change the CSS top, left, width and height properties of the divs to animate graphic images on the screen.
 
 During the late 1990s and early 2000s, JavaScript became increasingly popular. The community created a first 'umbrella term' describing a collection of technologies used together to create interactive and animated Web sites - [DHTML (Dynamic HTML)](https://en.wikipedia.org/wiki/Dynamic_HTML). For example, check the [games developed at this time by Brent Silby](https://def-logic.com/) (they all use DHTML).
 
@@ -12949,6 +13517,9 @@ We will compare the old methods with the new one, and implement the same  exam
 Below is the example shown in the video, with source code:
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -13011,6 +13582,8 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
+</details>
+
 <b>Errata</b>: in the video, we use speed +=1; in order to increment the speed of the rectangle each time it bounces (in the changeColor() function). This is not correct as speed can be negative. The online example fixes this by using speed += Math.sign(speed) * 1; instead this will add +1 or -1 depending on the sign of speed.
 
 <h3 id="ch4-2-3">4.2.3 Animating Using setInterval()</h3>
@@ -13028,6 +13601,9 @@ This is how pre-HTML5 games were written. Before the introduction of the canvas 
 Please try this example that moves/animates a div using setInterval:
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -13070,7 +13646,12 @@ clearInterval(requestId);
 </html>
 ```
 
+</details>
+
 <h4>Extract from the source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <body>
@@ -13101,7 +13682,9 @@ clearInterval(requestId);
 26. </body>
 ```
 
-Here, we define a <div> element, (see the online source code for the CSS properties involved), and we use the setInterval method (*line 17*) to call every 10ms the render() method that will just increment the position of this element. Notice that since we're using the DOM, the horizontal position of the div is modified by changing its left CSS property.
+</details>
+
+Here, we define a &lt;div&gt; element, (see the online source code for the CSS properties involved), and we use the setInterval method (*line 17*) to call every 10ms the render() method that will just increment the position of this element. Notice that since we're using the DOM, the horizontal position of the div is modified by changing its left CSS property.
 
 The call to setInterval returns an id we can use to stop the animation, by calling clearInterval (*line 22*).
 
@@ -13110,6 +13693,9 @@ The call to setInterval returns an id we can use to stop the animation, by cal
 We use the drawMonster() function:
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -13192,7 +13778,12 @@ clearInterval(requestId);
 </html>
 ```
 
+</details>
+
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <body onload="init();">
@@ -13260,13 +13851,14 @@ clearInterval(requestId);
 63. </body>
 ```
 
-<b>Explanations:</b>
+</details>
 
--   *Lines 52-61*: The code for launching and stopping the animation is similar to that from the previous example.
-
--   *Lines 34-50*: The code that draws the monster is that which we saw earlier when we presented the 2D transformations. Best practice is to save and restore the context at the beginning and end of each function that changes the context.
-
--   *Lines 21-32*: **The most interesting part is the animation loop** that implements the basic animation steps: *clear-draw-move*. In order to make a shape "movable", we use some "state variables" for its position and angle, and we modify them at each iteration (*lines 29-32*). We will see later on how to modify the value of these variables on user interactions (keyboard, mouse, etc.).
+<h4>Explanations:</h4>
+<ul>
+<li><i>Lines 52-61</i>: The code for launching and stopping the animation is similar to that from the previous example.</li>
+<li><i>Lines 34-50</i>: The code that draws the monster is that which we saw earlier when we presented the 2D transformations. Best practice is to save and restore the context at the beginning and end of each function that changes the context.</li>
+<li><i>Lines 21-32</i>: <b>The most interesting part is the animation loop</b> that implements the basic animation steps: *clear-draw-move*. In order to make a shape "movable", we use some "state variables" for its position and angle, and we modify them at each iteration (<i>lines 29-32</i>). We will see later on how to modify the value of these variables on user interactions (keyboard, mouse, etc.).</li>
+</ul>
 
 <h4>Problems with setInterval</h4>
 
@@ -13298,6 +13890,9 @@ This function works like setInterval(...) with one difference: it calls your f
 Check the example below (click on start animation):
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -13382,9 +13977,14 @@ clearTimeout(requestId);
 </html>
 ```
 
+</details>
+
 This is similar to the previous example except that we called setTimeout(function, delay) instead of setInterval(function, period). **As setTimeout runs the function passed as the first parameter only once, we also have to call it at the end of the loop**.
 
 <h4>Extract from source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  function animationLoop() {
@@ -13415,6 +14015,8 @@ This is similar to the previous example except that we called setTimeout(functi
 26.    }
 27. }
 ```
+
+</details>
 
 This function is certainly more suitable for doing graphic animation, such as for writing an HTML5 game. It will never interrupt an ongoing animation, even if the instructions inside the animation loop take too long.
 
@@ -13456,6 +14058,9 @@ You will note that  requestAnimationFrame(function) is used like setTimeout(
 
 <h4>Source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <body onload="init();">
 2.  <script>
@@ -13496,11 +14101,16 @@ You will note that  requestAnimationFrame(function) is used like setTimeout(
 37. </body>
 ```
 
+</details>
+
 <h4>Example: animate the monster with requestAnimationFrame</h4>
 
 <h4>Check the example below:</h4>
 
 <h4>Source code extract - please compare with the previous example that used setInterval():</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  function animationLoop(timeStamp) {
@@ -13531,6 +14141,8 @@ You will note that  requestAnimationFrame(function) is used like setTimeout(
 26.     }
 27. }
 ```
+
+</details>
 
 Notice that calling requestAnimationFrame(animationLoop) at* line 19*, and after that from within the loop at line 14, asks the browser to call the animationLoop function so that the delta between calls will be **as close as possible to 16.6ms  (this corresponds to 1/60th of a second)**.
 
@@ -13616,6 +14228,9 @@ Let's see next how to deal with the keyboard and the mouse. In the <a href="htt
 
 <a href="http://jsbin.com/korele/edit" target="_blank">Online example on JS Bin</a>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -13640,6 +14255,8 @@ Let's see next how to deal with the keyboard and the mouse. In the <a href="htt
 21. </body>
 22. </html>
 ```
+
+</details>
 
 <h3 id="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
 
@@ -13690,6 +14307,9 @@ border: 1px solid black;
 
 This example shows how to handle key events in a canvas by adding a key listener to the window object. Like that, all key press in the document will trigger the event listener function.</p>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <canvas id="myCanvas" width="350" height="200">
 </canvas>
@@ -13708,7 +14328,12 @@ return false;
 </html>
 ```
 
+</details>
+
 <h4>Code source extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <canvas id="myCanvas" width="350" height="200">
@@ -13729,6 +14354,8 @@ return false;
 16. </script>
 ```
 
+</details>
+
 Indeed this solution works well if you write a game, and want to detect events wherever the mouse cursor is, and without worrying about what HTML element has the focus, etc...
 
 <h4>Example #2: moving the monster with the keyboard</h4>
@@ -13742,6 +14369,9 @@ Indeed this solution works well if you write a game, and want to detect events w
 </p>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -13839,7 +14469,12 @@ cancelAnimationFrame(requestId);
 </html>
 ```
 
+</details>
+
 <h4>Code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <script>
@@ -13893,6 +14528,8 @@ cancelAnimationFrame(requestId);
 49. </script>
 ```
 
+</details>
+
 <h4>Example #3: what if I want to listen to key events only in my canvas?</h4>
 
 If you add a key listener to a canvas element, the problem is that it will get events only when it has the focus. And by default, it will never have the focus!
@@ -13926,6 +14563,9 @@ Now, if we try an example with the above canvas declaration, we show when an HT
 </p>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -13967,6 +14607,8 @@ return false;
 </html>
 ```
 
+</details>
+
 Note that the line that forces the focus to the canvas is commented by default. Try to click on the canvas, then press a key, then click out of the canvas, then press a key: this time nothing happens!
 
 <!------------------------------------------------------------------------------------------------>
@@ -13979,6 +14621,9 @@ Note that the line that forces the focus to the canvas is commented by default. 
 </p>
 
 <h4>Extract from the code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var canvas;
@@ -14003,6 +14648,8 @@ Note that the line that forces the focus to the canvas is commented by default. 
 20. };
 ```
 
+</details>
+
 *Line 10* is useful to initially set the focus on the canvas, but this trick will not work if we click somewhere else in the HTML page.
 
 <h4>Example #4: a better way: set the focus when the mouse cursor enters the canvas</h4>
@@ -14024,6 +14671,9 @@ When the mouse enters the canvas we call canvas.focus() to set the focus to th
 <br/>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -14130,7 +14780,12 @@ cancelAnimationFrame(requestId);
 </html>
 ```
 
+</details>
+
 <h4>Code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  function init() {
@@ -14161,6 +14816,8 @@ cancelAnimationFrame(requestId);
 26.    incrementX = 0; // stop the monster if the mouse exists the canvas
 27. };
 ```
+
+</details>
 
 The third parameter (false) of *lines 12* and *13* means "we do not want to propagate the event to the ancestors of the canvas in the DOM." 
 
@@ -14230,6 +14887,9 @@ Play with the example below that show the problem:
 
 <h4>JS</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 var canvas, ctx, mousePos, mouseButton;
 window.onload = function init() {
@@ -14268,6 +14928,8 @@ y: evt.clientY - rect.top
 }
 ```
 
+</details>
+
 <h4>CSS</h4>
 
 ```css
@@ -14277,6 +14939,9 @@ border:1px solid black
 ```
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -14296,6 +14961,9 @@ This is a canvas:<p></p>
 <canvas id="myCanvas" width="578" height="200"></canvas>
 </body>
 </html>
+```
+
+</details>
 
 <h4>JS</h4>
 
@@ -14311,6 +14979,9 @@ function getMousePos(canvas, evt) {
 ```
 
 <h4>WRONG code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  ...
@@ -14329,6 +15000,8 @@ function getMousePos(canvas, evt) {
 14.    };
 15. }
 ```
+
+</details>
 
 <h4>Here is the result, when the mouse is approximately at the top left corner of the canvas:</h4>
 
@@ -14403,6 +15076,9 @@ function getMousePos(canvas, evt) {
 
 <h4>Extract from source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  var canvas, ctx, mousePos, mouseButton;
 2.   
@@ -14447,6 +15123,8 @@ function getMousePos(canvas, evt) {
 41. }
 ```
 
+</details>
+
 <h4>More examples</h4>
 
 <h4>Example #1: move the monster with the mouse, rotate it when a mouse button is pressed</h4>
@@ -14456,6 +15134,9 @@ This example shows an animation at 60 frames/s using requestAnimationFrame, wer
 ![](./images/image205.png){width="4.0in" height="2.56540135608049in"}
 
 <h4>Code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 var canvas, ctx;
@@ -14506,6 +15187,8 @@ function animationLoop() {
 }
 ```
 
+</details>
+
 <p>This example shows one very important good practice when doing animation and interaction: if you want to achieve a smooth animation, set the state variables 60 times/s inside the animation loop (lines 45-49), depending on increments you set in event listeners (lines 23-31).</p>
 
 <h4>Example #2: draw in a canvas as if you were using a pencil</h4>
@@ -14513,6 +15196,9 @@ function animationLoop() {
 ![](./images/image206.png){width="4.0in" height="2.56540135608049in"}
 
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 ...
@@ -14552,6 +15238,8 @@ function handleMouseMove(evt) {
 </script>
 ```
 
+</details>
+
 <p>We had to define a variable started=false; as we cannot draw any line before the mouse moved (we need at least two consecutive positions). This is done in the test at <i>line 21</i>.</p>
 
 <h4>Example #3: same as example #2 but we draw only when a mouse button is pressed</h4>
@@ -14567,6 +15255,9 @@ function handleMouseMove(evt) {
 <br/>
 
 We just added mouseup and  mousedown listeners, extract from the source code:
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  function handleMouseMove(evt) {
@@ -14600,7 +15291,9 @@ We just added mouseup and  mousedown listeners, extract from the source code
 29. };
 ```
 
-<h3>4.3.4 Responsive Canvas</h3>
+</details>
+
+<h3 id="ch4-3-4">4.3.4 Responsive Canvas</h3>
 
 Resizing a canvas can be tricky if we don't know a few rules that might not be easily guessed:
 
@@ -14625,6 +15318,9 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 <br/>
 
 <h4>Code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <script>
@@ -14685,7 +15381,7 @@ And the result shows clearly that the resolution is still the same, only the pix
 
 This is the trick to create a really responsive canvas:
 
-1.  Embed it in a <div> or in any parent container,
+1.  Embed it in a &lt;div&gt; or in any parent container,
 
 2.  Use CSS with percentages on the width and the height CSS properties <b>of the parent,</b>
 
@@ -14717,6 +15413,9 @@ Yep, this is not a straightforward process...
 
 <h4>CSS code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <style>
 2.      #parentDiv {
@@ -14732,7 +15431,12 @@ Yep, this is not a straightforward process...
 12. </style>
 ```
 
+</details>
+
 <h4>JavaScript code for the resize event listener:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  function init() {
@@ -14752,6 +15456,8 @@ Yep, this is not a straightforward process...
 15.      // draw something, taking into account the new canvas size
 16. }
 ```
+
+</details>
 
 <h4>See the complete example that corresponds to the above code:</h4>
 
@@ -14781,6 +15487,9 @@ When the canvas is resized, its width became smaller than the monster's size. W
 
 The code is very similar to the previous example, we just replaced drawDiagonals() by drawMonster(...), and we added a test in the drawMonster(...) function for scaling the monster if it's bigger than the canvas width (look at *lines 10-16*), this is a common trick:
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  function drawMonster(x, y, angle, headColor, eyeColor) {
 2.       // GOOD PRACTICE: SAVE CONTEXT AND RESTORE IT AT THE END
@@ -14805,6 +15514,8 @@ The code is very similar to the previous example, we just replaced drawDiagonal
 21.      ...
 22. }
 ```
+
+</details>
 
 <h3 id="ch4-3-5">4.3.5 Advanced Canvas</h3>
 
@@ -15106,6 +15817,9 @@ Bottom of Form
 
 <h4>Source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <fieldset>
 2.  <legend>Output format</legend>
@@ -15120,6 +15834,8 @@ Bottom of Form
 11. [...]
 12. </fieldset>
 ```
+
+</details>
 
 <h4>Example #2: checkboxes</h4>
 
@@ -15139,6 +15855,9 @@ Bottom of Form
 
 <h4>Source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <fieldset>
 2.  <legend>I want to receive</legend>
@@ -15149,6 +15868,8 @@ Bottom of Form
 7.  [...]
 8.  </fieldset>
 ```
+
+</details>
 
 <h4>Associating related controls with WAI-ARIA</h4>
 
@@ -15208,6 +15929,9 @@ The <input type="color"> can fire change or input events. Here is an examp
 
 Source code:
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en"><head></head>
@@ -15223,6 +15947,8 @@ Source code:
 12. </body>
 13. </html>
 ```
+
+</details>
 
 <h4>Offer a limited choice of colors</h4>
 
@@ -15417,6 +16143,9 @@ Here is [an interactive example at JSBin](https://jsbin.com/ganipuv/edit?html,o
 
 <h4>Source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en"><head>...</head>
@@ -15446,6 +16175,8 @@ Here is [an interactive example at JSBin](https://jsbin.com/ganipuv/edit?html,o
 26. </body>
 27. </html>
 ```
+
+</details>
 
 *Lines 20-26* show how we can detect a date change using JavaScript.
 
@@ -15477,6 +16208,9 @@ While if we enter a date in the future:
 
 <h4>Extract from source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <body>
 2.  <label for="birthDate">Enter your birth date: </label><p>
@@ -15503,6 +16237,8 @@ While if we enter a date in the future:
 23. </script>
 24. </body>
 ```
+
+</details>
 
 <i>Lines 17-23</i> show how we can compare the date picked in the calendar widget with the current date. Note that we can compare any given dates using JavaScript. To check that the chosen date is before 2000 we would do this:
 
@@ -15635,6 +16371,9 @@ Typical use:
 
 Try it on your browser:                         Enter your email: 
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15653,6 +16392,8 @@ Try it on your browser:                         Enter your email: 
 15. </body>
 16. </html>
 ```
+
+</details>
 
 Note the CSS rule that turns the background color of the email input field to pink if a user enters an invalid address (*lines 7-8*). Also note that the validation is based only on matching a regular expression (the address should contain a "@",  a ".", etc.). It does not check if the address is an existing one.
 
@@ -15696,6 +16437,9 @@ Enter a telephone number: 
 
 <h4>Source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15716,6 +16460,8 @@ Enter a telephone number: 
 17. </body>
 18. </html>
 ```
+
+</details>
 
 <input type="URL"> 
 
@@ -15742,6 +16488,9 @@ Enter a URL (custom validation, must start with http, https or ftp): 
 
 <h4>Source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -15764,6 +16513,8 @@ Enter a URL (custom validation, must start with http, https or ftp): 
 19. </body>
 20. </html>
 ```
+
+</details>
 
 *Lines 16-17* show the use of a pattern attribute with a JavaScript regexp that accepts only URLs starting with http, https or ftp. More details on the pattern attribute are given in the section that presents the new HTML5 form attributes.
 
@@ -15826,6 +16577,9 @@ Example that shows a drop down list of recent searches (Safari screenshot borro
 
 <h4>Source code for the knowledge check below</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html>
@@ -15847,6 +16601,8 @@ Example that shows a drop down list of recent searches (Safari screenshot borro
 18. </body>
 19. </html>
 ```
+
+</details>
 
 <h3 id="ch5-4-5">5.4.5 "number"</h3>
 
@@ -15915,6 +16671,9 @@ Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid):�
 
 <h4>Source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  ....
@@ -15936,6 +16695,8 @@ Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid):�
 18. </body>
 19. </html>
 ```
+
+</details>
 
 <h3 id="ch5-4-6">5.4.6 "range"</h3>
 
@@ -16003,6 +16764,9 @@ This input type renders as a slider. It accepts the same attributes as the <inp
 
 <h4>Source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -16040,6 +16804,8 @@ This input type renders as a slider. It accepts the same attributes as the <inp
 34. </body>
 35. </html>
 ```
+
+</details>
 
 <h4>Snapping behavior and the step attribute</h4>
 
@@ -16089,6 +16855,9 @@ Adding "ticks" to the range slider using a &lt;datalist&gt; element
 
 <h4>Using the &lt;datalist&gt; element, it's possible to display "ticks" above the range slider, at given positions.</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <label for="slider2">value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:</label>
 2.  <input id="slider2" type="range"
@@ -16103,6 +16872,8 @@ Adding "ticks" to the range slider using a &lt;datalist&gt; element
 11. <option>10</option>
 12. </datalist>
 ```
+
+</details>
 
 <h4>Try the sliders below:</h4>
 
@@ -16204,6 +16975,9 @@ Bottom of Form
 
 <h4>Source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -16230,6 +17004,8 @@ Bottom of Form
 23.   </body>
 24. </html>
 ```
+
+</details>
 
 *Lines 12* and *22* shows the form attribute. Make sure that its value matches the id of the form!
 
@@ -16283,6 +17059,9 @@ To see auto-completion in action: enter something in both fields and submit the 
 
 <h4>Source code extract:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <form submit="test.php" method="post" **autocomplete="on"**>
 2.      ...
@@ -16298,6 +17077,8 @@ To see auto-completion in action: enter something in both fields and submit the 
 12.     ...
 13. </form>
 ```
+
+</details>
 
 <h3 id="ch5-5-4">5.5.4 autofocus</h3>
 
@@ -16323,6 +17104,9 @@ Bottom of Form
 
 <h4>Extract from source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <form>
 2.      ...
@@ -16338,6 +17122,8 @@ Bottom of Form
 12. </form>
 ```
 
+</details>
+
 <h4>Note about Boolean attributes syntax</h4>
 
 **Important: **: For "Boolean" attributes, such as autofocus, required, optional, etc., you are able to either write autofocus="autofocus", or just use the attribute name "autofocus" without setting a value.
@@ -16345,6 +17131,9 @@ Bottom of Form
 Read [these explanations](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes) for a complete description of the syntax of Boolean attributes.
 
 <h4>Source code for the knowledge check 5.5.4</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -16373,6 +17162,8 @@ Read [these explanations](https://html.spec.whatwg.org/multipage/common-microsy
 24. </html>
 ```
 
+</details>
+
 <h3 id=ch5-5-5">5.5.5 list</h3>
 
 This attribute works together with the new <datalist> element we already studied when we saw the color and date input fields.
@@ -16391,6 +17182,9 @@ Bottom of Form
 
 Source code extract:
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <form>
 2.      ...
@@ -16406,6 +17200,8 @@ Source code extract:
 12. ...
 13. </form>
 ```
+
+</details>
 
 At *lines 3* and *5*, the value of the list attribute of the input field must match the one of the id of the <datalist> element.
 
@@ -16455,6 +17251,9 @@ As seen in the previous examples, we used some CSS pseudo classes for automatica
 
 <h4>Complete source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -16480,6 +17279,8 @@ As seen in the previous examples, we used some CSS pseudo classes for automatica
 22. </html>
 ```
 
+</details>
+
 <h4>Example #2: mixing several other attributes with the pattern attribute</h4>
 
 Try this <a href="https://jsbin.com/bozudeg/1/edit?html,output">example online</a> or in your browser below:
@@ -16489,6 +17290,9 @@ Attributes used: placeholder (for displaying a ghost example value), pattern,
 Enter a pseudo (6-12 characters): ![](./images/image218.wmf)
 
 Complete source code:
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -16515,6 +17319,8 @@ Complete source code:
 22. </body>
 23. </html>
 ```
+
+</details>
 
 <h4>Example #3: an <input type="url"> element with a pattern attribute allowing only certain protocols</h4>
 
@@ -16545,6 +17351,9 @@ The min and max attributes are used to set ranges to input fields that accep
 
 <h4>Typical use</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <input id="mydate" name="mydate"
 2.         type="date"
@@ -16561,6 +17370,8 @@ The min and max attributes are used to set ranges to input fields that accep
 13.  
 14. <input id="range" name="range" type="range" **min="0" max="100" step="5"**/>
 ```
+
+</details>
 
 <h3 id="ch5-5-8">5.5.8 multiple</h3>
 
@@ -16597,6 +17408,9 @@ Without the multiple attributeEnter several email addresses: Submit
 Bottom of Form
 
 <h4>Complete source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -16646,6 +17460,8 @@ Bottom of Form
 45. </html>
 46.  
 ```
+
+</details>
 
 <b>Best practice:  add a title attribute indicating what you expect as a valid entry</b> (<i>lines 25</i> and <i>38</i>). If you enter bad values and submit, you will see in the error message the string value of the title attribute.
 
@@ -16748,6 +17564,9 @@ In general, such forms have two submit buttons, one with the formnovalidate at
 
 Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,output)):
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <form action="form.php">
 2.     <fieldset>
@@ -16761,6 +17580,8 @@ Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,outp
 10. </fieldset>
 11. </form>
 ```
+
+</details>
 
 <h3 id="ch5-5-12">5.5.12 formtarget</h3>
 
@@ -16907,6 +17728,9 @@ The possible values for this field are:
 
 Source code:
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -16930,6 +17754,8 @@ Source code:
 20.   </body>
 21. </html>
 ```
+
+</details>
 
 <h4>Explanations and how to see the difference between the two kinds of formenctype values</h4>
 
@@ -16994,7 +17820,7 @@ Let's look at the HTML5 elements related to forms (specifically: <datalist>, <o
 
 <h3 id="ch5-6-2">5.6.2 <output></h3>
 
-The output element represents the result of a computation or user action. You can see it as a "specialized <div> or <span>" for displaying interactive results.
+The output element represents the result of a computation or user action. You can see it as a "specialized &lt;div&gt; or <span>" for displaying interactive results.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 00.  (xx) ------------------------------->
@@ -17287,6 +18113,9 @@ Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,outp
 
 <h4>Source code of this example:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <form action="demo_form.asp" method="get">
 2.       <input **list="browsers"** name="browser" />
@@ -17301,6 +18130,8 @@ Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,outp
 11.      <input type="submit" />
 12. </form>
 ```
+
+</details>
 
 As you can see at l*ines 2* and *4*, the id and list attributes match. The <datalist> element is wrapped around a set of  <option> that are available for selection by another form control (in this example the input field from *line 2*).
 
@@ -17352,6 +18183,9 @@ Submit form
 
 <h4>Source code extract:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -17389,6 +18223,8 @@ Submit form
 34.  
 ```
 
+</details>
+
 Try the online example with different Web browsers, both with and without the CSS rules. See the differences between FireFox/Chrome/Opera in the default visual feedback behavior. Don't worry: all default behavior can be overridden if you provide your own CSS rules.
 
 **Best practice:  We recommend that you ALWAYS provide default CSS rules that give visual feedback to the user's input.**
@@ -17408,6 +18244,9 @@ Submit form
 
 <h4>Source code extract:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  .myForm input:focus {
 2.    ** padding-right:70px;**
@@ -17423,6 +18262,8 @@ Submit form
 12.    background:url('https://i.imgur.com/7pIN7wz.png') no-repeat right top;
 13. }
 ```
+
+</details>
 
 This time, we just added an attribute class="myForm" to our form, in order to avoid interfering with the other examples on this page, and we tweaked the CSS rules a little.
 
@@ -17447,6 +18288,9 @@ Submit form
 
 <h4>Extract from source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <form class="myForm">
 2.    <fieldset>
@@ -17460,6 +18304,8 @@ Submit form
 10.   </fieldset>
 11. </form>
 ```
+
+</details>
 
 *Beware* that browser implementations may differ. Chrome, Opera will display the title attribute value in error message bubbles when the form is submitted, while Safari and FireFox (desktop and mobile) will simply ignore it.
 
@@ -17524,6 +18370,9 @@ Bottom of Form
 
 <h4>Extract from source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -17564,6 +18413,8 @@ Bottom of Form
 37.   </body>
 38. </html>
 ```
+
+</details>
 
 <h4>Explanations:</h4>
 
@@ -17611,6 +18462,10 @@ Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JS
 <br/>
 
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -17652,6 +18507,8 @@ Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JS
 38. </body>
 39. </html>
 ```
+
+</details>
 
 <h4>The validationMessage property</h4>
 
@@ -18009,6 +18866,9 @@ localStorage is a simple key-value store, in which the keys and values are stri
 
 <h4>Example:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  // Using localStorage
 2.  
@@ -18022,6 +18882,8 @@ localStorage is a simple key-value store, in which the keys and values are stri
 10. var firstName = localStorage.firstName;
 11. var location = localStorage.location;
 ```
+
+</details>
 
 <p>This data is located in a store attached to the origin of the page. We created <a href="https://jsbin.com/povuqa/1/edit">a JSBin example in which we included the above code</a>.
 
@@ -18094,6 +18956,9 @@ This time, we want the form content to be restored on page load/reload. We will 
 
 <h4>Source code extract (only addition to the previous example):</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  // Called when the page is loaded
 2.  window.onload = restoreFormContent;
@@ -18117,6 +18982,8 @@ This time, we want the form content to be restored on page load/reload. We will 
 20.      document.getElementById("date").value = localStorage.date;
 21. }
 ```
+
+</details>
 
 The tests at *lines 7, 10, 13*, etc., verify that data has been saved, before trying to restore it. Without these tests, it would put the "undefined" string as the value of input fields with no corresponding data to restore.
 
@@ -18168,6 +19035,7 @@ One way of handling this is to add a user interface button that calls clear() 
 <h4>Iterating local stores</h4>
 
 Local stores (localStorage or sessionStorage) can also be iterated through in order to list all the content that they contain. The order is not guaranteed, but this may be useful at times (if only for debugging purposes!). The following code lists everything in the current store:
+
 ```
 1.  for (var i = 0, n = localStorage.length; i < n; i++) {
 2.      var k = localStorage.**key(i)**;
@@ -18192,6 +19060,9 @@ Students may note that something seems a bit off in the example above: instead o
 [Online example at JSBin](https://jsbin.com/nedigi/edit?html,css,output), run it, then click on the first button to show all key/values in the localStorage. Open the URL in another tab, and see that the data is shared between tabs, as local stores are attached to an origin.
 
 Then click on the second button to add data to the store, click on the third to remove data. Finally, the last one clears the whole data store.
+
+<details>
+ <summary>Click to expand!</summary>
 
 <h4>Source code:</h4>
 ```
@@ -18263,7 +19134,9 @@ Then click on the second button to add data to the store, click on the third to
 66. </html>
 ```
 
- You can check in the Chrome dev. tools user interface that the content of the localStorage changes as you click on the buttons.
+</details>
+
+You can check in the Chrome dev. tools user interface that the content of the localStorage changes as you click on the buttons.
 
 <h3 id="ch6-2-4">6.2.4 Example 2</h3>
 
@@ -18318,6 +19191,10 @@ We used the same generic code for saving/restoring input fields' values we saw 
 The function initPreferences is executed when the page is loaded.
 
 <h4>Source code extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 function initPreferences() {
    console.log("Adding input listener to all input fields");
@@ -18331,14 +19208,12 @@ function initPreferences() {
    applyGUIvalues(); // Use the input fields' values we just restored to set internal 
                      // size, incX, color, lineWidth variables
 }
- 
 function addInputListener(inputField) {
 // same as before
 }
 function restorePreferences() {
 // same as old restoreFormContent
 }
- 
 function applyGUIvalues() {
    // Check restored input field content to set the size of the rectangle
    var sizeWidget = document.getElementById("size");
@@ -18359,7 +19234,9 @@ function applyGUIvalues() {
 }
 ```
 
-<h3 is="6-2-5">6.2.5 Example 3</h3>
+</details>
+
+<h3 id="6-2-5">6.2.5 Example 3</h3>
 
 [Online example at JSBin](https://jsbin.com/zowise/edit?html,js,output)
 
@@ -18376,6 +19253,7 @@ We start writing an init() function that is called when the page is loaded. Th
 2.  Restore the last saved value for each input field, if present.
 
 <h4>Source code:</h4>
+
 ```
 // Called when the page is loaded
 window.onload = init;
@@ -18393,6 +19271,7 @@ function init() {
 ```
 
 And here is the addInputListener(inputField) function. It takes an input field as parameter and attaches an oninput listener to it, that will save the field's content each time a value is entered. The key will be the id of the input field (*line 3*):
+
 ```
 function addInputListener(inputField) {
     inputField.addEventListener('input', function(event) {
@@ -18406,6 +19285,9 @@ Note that at *line 2*, we use addEventListener (that is not using the oninpu
 <h4>Restore all input fields' content using a generic function</h4>
 
 We have seen how to save all input fields' content on the fly. Now, let's see how we can restore saved values and update the form. This is done using the function restoreFormContent():
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 function restoreFormContent() {
@@ -18429,6 +19311,8 @@ function restoreFormContent() {
    }
 }
 ```
+
+</details>
 
 In this function, we first get the list of input fields (*line 5*), then iterate on it (*line 14*). For each input field, we get its id, which value is the key in localStorage for the previous data saved for this field (*lines 15-16*). Then if the value is not undefined, we restore it by setting the value of the input field (*lines 19-20*).
 
@@ -18475,6 +19359,7 @@ There are some simple approaches, such as creating your own minimal record forma
 <a href="https://www.json.org/">JSON</a> provides a great way of encoding and decoding data that is a really good match for JavaScript. You have to be careful not to use circular data structures or non-serializable objects, but in the vast majority of cases, plugging JSON support into your local store is straightforward.
 
 <h4>Typical usage</h4>
+
 ```
 1.  locaStorage.key = JSON.stringify(object); // or...
 2.  localStorage.setItem(key, JSON.stringify(object));
@@ -18493,6 +19378,10 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 <br/>
 
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 > <!DOCTYPE html>
 > <html lang="en">
@@ -18513,6 +19402,8 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 > </body>
 > </html>
 ```
+
+</details>
 
 <h4>Explanations:</h4>
 
@@ -18720,6 +19611,9 @@ All this here is HTML5, this is canvas, these are form elements we saw the last 
 
 <h4>Source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 > <!DOCTYPE html>
 > <html lang="en">
@@ -18750,6 +19644,8 @@ All this here is HTML5, this is canvas, these are form elements we saw the last 
 > </body>
 > </html>
 ```
+
+</details>
 
 <h3 id="ch6-3-3">6.3.3 Reading File Metadata</h3>
 
@@ -18789,6 +19685,9 @@ In the example below, we get in the selectedFile variable, the metadata relate
 
 <h4>Complete source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 > <!DOCTYPE html>
 > <html lang="en">
@@ -18819,6 +19718,8 @@ In the example below, we get in the selectedFile variable, the metadata relate
 > </html>
 ```
 
+</details>
+
 <h4>Example #2: display metadata of multiple files, use a filter on the file type</h4>
 
 This example is a bit more complicated, as it will display details about all files selected (not only the first) and allows only images to be selected, using the accept attribute of the input field: <input type="file" accept="image/*".../>.
@@ -18832,6 +19733,9 @@ This example is a bit more complicated, as it will display details about all fil
 <h4>Source code extract:</h4>
 
 Select several images: <input type="file" accept="image/*" multiple onchange="filesProcess(this.files)" name="selection"/>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <p>
@@ -18851,6 +19755,8 @@ Select several images: <input type="file" accept="image/*" multiple onchang
   }
 </script>
 ```
+
+</details>
 
 <h4>Explanations:</h4>
 
@@ -19770,7 +20676,7 @@ display: inline-block;
 
 <ul>
 <li><i>Lines 5 and 6</i> are the required files to use the Leaflet API (this is the official name of the OpenStreetMaps API),</li>
-<li><i>Line 10</i> is the <div> container that will be used to display the interactive map.</li>
+<li><i>Line 10</i> is the &lt;div&gt; container that will be used to display the interactive map.</li>
 </ul>
 
 <h4>JavaScript part:</h4>
@@ -19816,7 +20722,7 @@ function error() {
 <ul>
 <li><i>Line 6</i> uses the [Geolocation API](https://www.w3.org/TR/geolocation-API/) to get the current position, in case of success it calls the success function, passing the location as parameter,
 <li><i>Lines 13 and 14></i> show how to get the longitude and latitude properties from the location,</li>
-<li>The rest is a basic use of the Leaflet API. Notice at <i>line 17</i> that 'map' is the id of the <div> from the HTML part of the code.</li>
+<li>The rest is a basic use of the Leaflet API. Notice at <i>line 17</i> that 'map' is the id of the &lt;div&gt; from the HTML part of the code.</li>
 </ul>
 
 <h3 id="ch6-4-6">6.4.6 Reverse geocoding</h3>
