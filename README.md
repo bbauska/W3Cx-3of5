@@ -92,7 +92,35 @@
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h2 id-"cha">About W3C and the Web</h2>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+
+<h2 id-"cha-1">About W3C and the Web</h2>
 
 <h2 id="chb">Course Information</h2>
 
@@ -8166,7 +8194,7 @@ While drawing rectangles with strokeRect or fillRect, drawing text or drawing
 
 Another mode called "path mode" or "buffered mode" will be seen later in this course, which will be useful for drawing lines, curves, arcs, and also rectangles. Rectangles are the only shapes that have methods for drawing them <i>immediately</i> and also other methods for drawing them in "<i>path/buffered mode</i>".
 </p>
-<h4>Example: drawing rectangles in immediate mode using bests practices</h4>
+<h4>Example: drawing rectangles in immediate mode using best practices</h4>
 
 <p>Let's give an example that draws several rectangles, filled or wireframe, with different colors and line widths:</p>
 
@@ -8232,12 +8260,12 @@ ctx.restore();
 
 <h3 id="ch3-3-2">3.3.2 Drawing Text</h3>
 
-The canvas API provides two main methods for drawing text: ctx.strokeText(message, x, y) and ctx.fillText(message, x, y).
-It also provides a set of context properties for setting the character font and style, for laying out the text, etc.
+<p>The canvas API provides two main methods for drawing text: ctx.strokeText(message, x, y) and ctx.fillText(message, x, y).
+It also provides a set of context properties for setting the character font and style, for laying out the text, etc.</p>
 
 <h4>Typical use</h4>
 
-Look at the example below, and change the position where the text is drawn, change font attributes, etc.:
+<p>Look at the example below, and change the position where the text is drawn, change font attributes, etc.:</p>
 
 <h4>HTML</h4>
 
@@ -8264,7 +8292,7 @@ context.strokeText("Hello World!", 10, 100);
 </html>
 ```
 
-<h4>source code extract:</h4>
+<h4>Source code extract:</h4>
 
 ```
 1.  context.font = "60pt Calibri";
@@ -8281,15 +8309,15 @@ context.strokeText("Hello World!", 10, 100);
 
 <h4>Choosing the font: the context.font property</h4>
 
-It is possible to draw text in a canvas using the font property of the context to specify the font style (plain, bold, italic), the size, and the font name. Other properties such as strokeStyle or fillStyle, as well as other properties that are detailed in the next pages, are also going to be taken into account.
+<p>It is possible to draw text in a canvas using the font property of the context to specify the font style (plain, bold, italic), the size, and the font name. Other properties such as strokeStyle or fillStyle, as well as other properties that are detailed in the next pages, are also going to be taken into account.
 
-The font property accepts values like: font-style,  font-weight, font-size, font-face.
+The font property accepts values like: font-style,  font-weight, font-size, font-face.</p>
 
-Accepted values are:
+<h4>Accepted values are:</h4>
 <ul>
-<li>font-style: normal, italic, oblique</li>
-<li>font-weight: normal, bold, bolder, lighter</li>
-<li>font-size: a size in pixels or in points, such as 60pt, 20px, 36px, etc.</li>
+<li>font-style: normal, italic, oblique,</li>
+<li>font-weight: normal, bold, bolder, lighter,</li>
+<li>font-size: a size in pixels or in points, such as 60pt, 20px, 36px, etc.,</li>
 <li>font-face:  Arial, Calibri, Times, Courier, etc. Some font faces may not work in all browsers.</li>
 </ul>
 
@@ -19386,6 +19414,9 @@ display: inline-block;
 
 <h4>HTML part:>/h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <html>
 <head>
@@ -19401,12 +19432,17 @@ display: inline-block;
 </html>
 ```
 
+</details>
+
 <ul>
 <li><i>Lines 5 and 6</i> are the required files to use the Leaflet API (this is the official name of the OpenStreetMaps API),</li>
 <li><i>Line 10</i> is the <div> container that will be used to display the interactive map.</li>
 </ul>
 
 <h4>JavaScript part:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```css
 function getLocation(e) {
@@ -19441,6 +19477,8 @@ function error() {
 }
 ```
 
+</details>
+
 <ul>
 <li><i>Line 6</i> uses the [Geolocation API](https://www.w3.org/TR/geolocation-API/) to get the current position, in case of success it calls the success function, passing the location as parameter,
 <li><i>Lines 13 and 14></i> show how to get the longitude and latitude properties from the location,</li>
@@ -19469,6 +19507,8 @@ Google reverse geocoding example (screenshot only):</p>
 
 <p>Source code of this example (in order to run it, you need a Google API key, used at <i>line 6</i>).</p>
 
+<details>
+ <summary>Click to expand!</summary>
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -19553,6 +19593,7 @@ function showPosition(position) {
 </body>
 </html>
 ```
+</details>
 
 Gisgraphy (free service) reverse geocoding example (screenshot only, click on it to see [the demo on the Gisgraphy website](https://services.gisgraphy.com/static/leaflet/index.html)):
 
@@ -19580,6 +19621,9 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 </p>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
     <!DOCTYPE html>
@@ -19658,17 +19702,22 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
  </html>
 ```
 
+</details>
+
 <h4>Example #3: shows the address on the map, from your current longitude and latitude</h4>
 
 <h4>HTML</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
-   <!DOCTYPE html>
-    <html>
-    <head>
-    <title>Leaflet Control Geocoder</title>
-    <meta charset="utf-8" />
-    <meta
+<!DOCTYPE html>
+<html>
+<head>
+<title>Leaflet Control Geocoder</title>
+<meta charset="utf-8" />
+<meta
     name="viewport"
     content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
     />
@@ -19676,83 +19725,88 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
- <style type="text/css">
- body {
- margin: 0;
- }
- #map {
- position: absolute;
- width: 100%;
- height: 100%;
- }
- </style>
- </head>
- <body>
- <div id="map"></div>
- <script type="text/javascript">
- var geocoder = L.Control.Geocoder.nominatim();
- var map, marker, latitude, longitude;
- function getLocation() {
- if (!navigator.geolocation) {
- alert("Browser doesn't support geolocation");
- } else {
- navigator.geolocation.getCurrentPosition(success, error);
- }
- }
- // Get current position successfully
- function success(position) {
- latitude = position.coords.latitude;
- longitude = position.coords.longitude;
- // Instance map using leaflet
- map = L.map('map').setView([latitude, longitude], 13);
- // Tile layer using key api at cloudmade.com
- L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
- key: '760506895e284217a7442ce2efe97797',
- styleId: 103288,
- maxZoom: 16
- }).addTo(map);
- // Marker using leaflet
- marker = L.marker([latitude, longitude]).addTo(map);
- // Popup in leaflet
- marker.bindPopup('<p></p>').openPopup();
- getPhysicalAddress({lat:latitude, lng:longitude});
- }
- // Get current position fail
- function error() {
- alert('Get current position fail. Please access codepen to get geolocation.');
- }
- var marker;
- function getPhysicalAddress(latlong) {
- geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
- var r = results[0];
- if (r) {
- if (marker) {
- marker
- .setLatLng(r.center)
- .setPopupContent(r.html || r.name)
- .openPopup();
- } else {
- marker = L.marker(r.center)
- .bindPopup(r.name)
- .addTo(map)
- .openPopup();
- }
- }
- });
- }
- getLocation();
- </script>
- </body>
- </html>
+<style type="text/css">
+body {
+margin: 0;
+}
+#map {
+position: absolute;
+width: 100%;
+height: 100%;
+}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script type="text/javascript">
+var geocoder = L.Control.Geocoder.nominatim();
+var map, marker, latitude, longitude;
+function getLocation() {
+	if (!navigator.geolocation) {
+	alert("Browser doesn't support geolocation");
+	} else {
+	navigator.geolocation.getCurrentPosition(success, error);
+	}
+	}
+// Get current position successfully
+function success(position) {
+latitude = position.coords.latitude;
+longitude = position.coords.longitude;
+// Instance map using leaflet
+map = L.map('map').setView([latitude, longitude], 13);
+// Tile layer using key api at cloudmade.com
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+key: '760506895e284217a7442ce2efe97797',
+styleId: 103288,
+maxZoom: 16
+}).addTo(map);
+// Marker using leaflet
+marker = L.marker([latitude, longitude]).addTo(map);
+// Popup in leaflet
+marker.bindPopup('<p></p>').openPopup();
+getPhysicalAddress({lat:latitude, lng:longitude});
+}
+// Get current position fail
+function error() {
+	alert('Get current position fail. Please access codepen to get geolocation.');
+	}
+var marker;
+function getPhysicalAddress(latlong) {
+	geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
+var r = results[0];
+	if (r) {
+	if (marker) {
+	marker
+	  .setLatLng(r.center)
+	  .setPopupContent(r.html || r.name)
+	  .openPopup();
+	  } else {
+	marker = L.marker(r.center)
+	  .bindPopup(r.name)
+	  .addTo(map)
+	  .openPopup();
+	  }
+	}
+	});
+	}
+getLocation();
+</script>
+</body>
+</html>
 ```
+
+</details>
 
 <h4>Example #4: use of geolocation, map and reverse geocoder in a HTML form</h4>
 
-This is just a variation of the previous examples. We embedded the interactive map in a form, and we display the results of the reverse geocoder in a form field. This example might be useful if you want to pre-fill the address of a registration form, depending on the current location of the person who is registering.
+<p>This is just a variation of the previous examples. We embedded the interactive map in a form, and we display the results of the reverse geocoder in a form field. This example might be useful if you want to pre-fill the address of a registration form, depending on the current location of the person who is registering.
 
-Click on the Codepen logo (on the top right) so to run the <a href="https://codepen.io/w3devcampus/pen/MWKEJqM">online example</a> (for security reasons the embedded version cannot run in this page):
+Click on the Codepen logo (on the top right) so to run the <a href="https://codepen.io/w3devcampus/pen/MWKEJqM">online example</a> (for security reasons the embedded version cannot run in this page):</p>
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
  <!DOCTYPE html>
@@ -19839,6 +19893,9 @@ Click on the Codepen logo (on the top right) so to run the <a href="https://cod
  </body>
  </html>
 ```
+
+</details>
+
 
 . . .The end.
 
