@@ -92,9 +92,37 @@
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+
 <h2 id-"cha-1">About W3C and the Web</h2>
 
-<h2 id="chb">Course information</h2>
+<h2 id="chb">Course Information</h2>
 
 <h3>Welcome to "HTML5 Coding Essentials and Best Practices"</h3>
 <ul>
@@ -3665,7 +3693,7 @@ If you are a developer and if you are familiar with object oriented programming,
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image063.jpeg?raw=true"
-   alt="Picture wish words 'time to share'"
+   alt="Picture with words 'time to share'."
    width="25%">
 &nbsp;
 <br/>
@@ -3796,9 +3824,7 @@ Now, let's see what elements are compatible with the itemprop attribute and wh
 
 | HTML5 elements | microdata value associated |
 | ---------------| ---------------------------|
-| &lt;a&gt;; &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, | The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person's photo and downloaded accordingly.
-  &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt;  
-  element |
+| &lt;a&gt;; &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt; element | The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person's photo and downloaded accordingly. |
 | &lt;time&gt; element | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
 | &lt;meta&gt; element | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
 | anything else | The data is whatever is in the text of the element. |
@@ -3837,7 +3863,7 @@ To automatically generate microdata for describing persons, restaurants, movie
 <h4>Example:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 64.  (xx) ------------------------------->
+<!---------------------------- 64. microdata person generator (80) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image064.jpeg?raw=true"
@@ -3861,11 +3887,11 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 <h4>Structure:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 65.  (xx) ------------------------------->
+<!-------------------------------- 65. microdata example #1 (80) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image065.jpeg?raw=true"
-   alt="Picture of the first about me page example. Shows the table of contents."
+   alt="Picture of the first 'about me' page example. Shows the table of contents."
    width="40%">
 &nbsp;
 <br/>
@@ -3873,7 +3899,7 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 <h4>Microdata:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 66.  (xx) ------------------------------->
+<!----------------------- 66. schema type/properties from microdata  (81) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image066.jpeg?raw=true"
@@ -3887,7 +3913,7 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 online</a>.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 67. example page - shows microdata (81) ----------------------------->
+<!------------------------- 67. example #2 page - shows microdata (81) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image067.jpeg?raw=true"
@@ -3906,11 +3932,11 @@ View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 onlin
 <h4>Check the HTML code of the following CodePen:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 68. simple html5 video player (82) ------------------------------->
+<!-------------------- 68. codepen snapshot: simple html5 video player (82) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image068.png?raw=true"
-   alt="Simple HTML5 video player."
+   alt="Codepen snapshot: simple HTML5 video player."
    width="65%">
 &nbsp;
 <br/>
@@ -3920,9 +3946,11 @@ View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 onlin
 <li>The controls attribute indicates that a control panel with play/stop/volume/progress widgets should be displayed;</li>
 <li>Usually the browser  will use the first format it recognizes  (in this case, the browser checks whether mp4 is supported, and if not, it will check for the ogg format, and so on). Some browsers may use a different heuristic and choose a "preferred" format;</li>
 <li>The &lt;video&gt; element is a DOM member, so  CSS styling can be applied, as well as manipulation using the DOM API.</li>
-</ul;>
+</ul>
+
 <p>
 You will learn more about the different attributes of the &lt;video&gt; element later on in the course.
+</p>
 
 <h4>Current browser support for the &lt;video&gt; element</h4>
 <p>
@@ -3990,7 +4018,7 @@ The attributes, event set and JavaScript API  of the &lt;audio&gt; element ar
 <p>
 Here is a simple example (also available <a href="https://jsbin.com/yogojis/edit?html,output">online example from JSBin</a>):
 
-Press play to stream the neigh of a horse:</p>
+Press play to stream the neigh of a horse: (does not work in git)</p>
 
 <h5>As you can see, the code is very similar to the basic &lt;video&gt; element usage.</h5>
 
@@ -4030,7 +4058,7 @@ Notice the other similarities: between the &lt;audio&gt;...&lt;audio&gt; tags,
 
 <h3 id="ch2-2-3">2.2.3 Attributes of &lt;video&gt; and &lt;audio&gt;</h3>
 
-<h4>Most useful attributes of the <video> element</h4>
+<h4>Most useful attributes of the &lt;video&gt; element</h4>
 <p>
 Here are the most common attributes you can use with the &lt;video&gt; element. They are self explanatory...</p>
 <ul>
@@ -4089,9 +4117,62 @@ You can try this example <a href="https://jsbin.com/zoquru/2/edit?html,css,out
 
 To add some styling to the basic example we saw when we introduced the &lt;audio&gt; element, we just add a &lt;figure&gt; with two children: an &lt;img&gt; and a &lt;figcaption&gt;. Inside the &lt;figcaption&gt; we add the &lt;audio&gt; element from the previous example.
 
-Please move the mouse pointer over this player's elements:</p>
+Please move the mouse pointer over this player's elements: (does not work in git)</p>
 
 <!------------------------------------------------------------------------------------------------>
+
+<button class="accordion">HTML</button>
+<div class="panel">
+  <p>```
+1.  <figure id="figaudio1">
+2.    <img id="imghorse" width="200"
+3.       src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg"
+4.       alt = "a horse"/>
+5.    <figcaption id="figcptionaudio1"> Press Play to hear the horse!
+6.      <audio controls="controls">
+7.         <source src="https://mainline.i3s.unice.fr/mooc/horse.ogg"
+8.                 type="audio/ogg" />
+9.         <source src="https://mainline.i3s.unice.fr/mooc/horse.mp3"
+10.                type="audio/mp3" />
+11.        Your browser does not support the audio element.
+12.        Download the audio/video in
+13.        <a href="https://mainline.i3s.unice.fr/mooc/horse.ogg">OGG</a>
+14.      or <a href="https://mainline.i3s.unice.fr/mooc/horse.mp3">MP3</a>
+15.         format.
+16.    </audio>
+17. </figcaption>
+18. </figure>
+```
+</p>
+</div>
+
+<button class="accordion">CSS</button>
+<div class="panel">
+  <p></p>
+</div>
+
+<button class="accordion">JS</button>
+<div class="panel">
+  <p></p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
 <!-------------------------- 70. two gery-black horses in a field (87) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
@@ -4101,7 +4182,7 @@ Please move the mouse pointer over this player's elements:</p>
 &nbsp;
 <br/>
 <p>
-Press Play to hear the horse !
+Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
 </p>
 <h4>HTML source code:</h4>
 
@@ -19704,45 +19785,45 @@ Click on the Codepen logo (on the top right) so to run the <a href="https://cod
 ```
  <!DOCTYPE html>
  <html>
- <head>
- <title>Gimmee My Location</title>
- <meta charset="utf-8" />
- <meta
- name="viewport"
- content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
- />
- <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
- <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
- <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
- <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
- </head>
+   <head>
+   <title>Gimmee My Location</title>
+   <meta charset="utf-8" />
+   <meta
+   name="viewport"
+   content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
+   />
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
+   <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+   <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
+   <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+   </head>
  <body onload="getLocation();">
  <h1>Example of the use of reverse geocoder in a form</h1>
- <form>
- <fieldset>
- <legend>Form example with map and address...</legend>
- <div id="map" style="width: 500px; height: 300px"></div>
- </fieldset>
- <fieldset>
- <legend>Surface address</legend>
- <input id="surfaceAddress" size=110 type="text">
- <fieldset>
- <form>
- <div id="map"></div>
- <script type="text/javascript">
+   <form>
+   <fieldset>
+     <legend>Form example with map and address...</legend>
+     <div id="map" style="width: 500px; height: 300px"></div>
+   </fieldset>
+   <fieldset>
+     <legend>Surface address</legend>
+     <input id="surfaceAddress" size=110 type="text">
+   <fieldset>
+   <form>
+   <div id="map"></div>
+   <script type="text/javascript">
  var geocoder = L.Control.Geocoder.nominatim();
  var map, marker, latitude, longitude;
- function getLocation() {
- if (!navigator.geolocation) {
- alert("Browser doesn't support geolocation");
- } else {
-navigator.geolocation.getCurrentPosition(success, error);
- }
- }
+   function getLocation() {
+     if (!navigator.geolocation) {
+     alert("Browser doesn't support geolocation");
+     } else {
+     navigator.geolocation.getCurrentPosition(success, error);
+     }
+   }
  // Get current position successfully
- function success(position) {
- latitude = position.coords.latitude;
- longitude = position.coords.longitude;
+   function success(position) {
+   latitude = position.coords.latitude;
+   longitude = position.coords.longitude;
  // Instance map using leaflet
  map = L.map('map').setView([latitude, longitude], 13);
  // Tile layer using key api at cloudmade.com
@@ -19795,4 +19876,4 @@ navigator.geolocation.getCurrentPosition(success, error);
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h3><b><i>08-14-2022 10:04pm</i></b></h3>
+<h3><b><i>08-17-2022 11:09am</i></b></h3>
