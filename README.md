@@ -762,6 +762,9 @@ The navigation menu just below the header is a &lt;nav&gt; element. For the pu
 </p>
 <h4>HTML code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```html5
 <!DOCTYPE html>
 <html lang="en">
@@ -782,7 +785,12 @@ The navigation menu just below the header is a &lt;nav&gt; element. For the pu
 </nav>
 ```
 
+</details>
+
 <h4>And here is the CSS we used in this example for the &lt;nav&gt; element:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```css
 nav {
@@ -808,6 +816,8 @@ nav span {
     color: #fff
 }
 ```
+
+</details>
 
 <h4>A &lt;section&gt; for each month and an &lt;article&gt; for each post in the blog</h4>
 
@@ -837,6 +847,7 @@ nav span {
    </article>
 </section>
 ```
+
 <h4>And here is the CSS:</h4>
 
 ```
@@ -878,6 +889,9 @@ Next, in each article in the section we have a header (to display the article ti
 
 <h4>Example for the first blog article:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <section>
    <article>
@@ -908,6 +922,8 @@ Next, in each article in the section we have a header (to display the article ti
    ...
 </section>
 ```
+
+</details>
 
 <h4>Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside</h4>
 <p>
@@ -1541,6 +1557,7 @@ Old HTML1 Web pages will not be rendered the same way as new HTML5 pages, since,
 ```
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">, 
 ```
+
 <p>which was even more complicated as one had to choose between three different possibilities (doctypes could be transitional, strict, or frameset). Most of the time, the doctype definition was copied and pasted from one document 
 to another and was nearly impossible to memorize.</p>
 
@@ -1722,6 +1739,9 @@ header span {
 
 <h4>HTML code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -1742,7 +1762,12 @@ header span {
 </nav>
 ```
 
+</details>
+
 <h4>And here is the CSS we used in this example for the &lt;nav&gt; element:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 nav {
@@ -1768,6 +1793,8 @@ nav span {
     color: #fff
 }
 ```
+
+</details>
 
 <h4>A &lt;section&gt; for each month and an &lt;article&gt; for each post in the blog</h4>
 <p>
@@ -1801,6 +1828,9 @@ Now, we have one big &lt;section&gt; element that contains a set of &lt;artic
 
 <h4>And here is the CSS:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 section {
    float: left;
@@ -1822,6 +1852,8 @@ section h2 {
 }
 ```
 
+</details>
+
 <p>Note that the H2, article, article header, etc. will be styled using these rules.</p>
 
 <h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
@@ -1840,6 +1872,9 @@ Next, in each article in the section we have a header (to display the article ti
 
 Example for the first blog article:
 </p>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <section>
@@ -1871,6 +1906,8 @@ Example for the first blog article:
    ...
 </section>
 ```
+
+</details>
 
 <h4>Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside</h4>
 <p>
@@ -1961,8 +1998,8 @@ aside .tag-cloud {
 }
 ...
 ```
-<p>
-We used a float:right CSS rule to put the tag cloud on the right... In a following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
+
+<p>We used a float:right CSS rule to put the tag cloud on the right... In a following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
 </p>
 <h4>Here is the result:</h4>
 <!------------------------------------------------------------------------------------------------>
@@ -1988,6 +2025,9 @@ We used a float:right CSS rule to put the tag cloud on the right... In a follo
 
 <h4>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below) after the tag cloud definition, to display a page footer:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <html>
 ...
@@ -2005,6 +2045,8 @@ We used a float:right CSS rule to put the tag cloud on the right... In a follo
 </body>
 </html>
 ```
+
+</details>
 
 <h4>With this CSS rule:</h4>
 
@@ -2066,6 +2108,7 @@ It may not be clear whether a &lt;section&gt; may contain one or several &lt;a
    </section>
 </article>
 ```
+
 <p>
 The blog example from the previous part of the course, on the other hand, uses a single &lt;section&gt; that contains several &lt;article&gt; elements.
 
@@ -2076,6 +2119,9 @@ Indeed, we can also have a &lt;section&gt; that regroups all blog posts per 
 <h4>Can you put a &lt;nav&gt; in an &lt;article&gt;?</h4>
 
 <p>Yes, you can, in case you would like to propose some navigation links with each blog post, for example:</p>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <article>
@@ -2097,6 +2143,8 @@ Indeed, we can also have a &lt;section&gt; that regroups all blog posts per 
    </footer>
 </article>
 ```
+
+</details>
 
 <p>In that case, the &lt;nav&gt; element proposes navigation links to the next or previous blog post, as well as a link to contact the author of the blog post.
 
@@ -2421,6 +2469,9 @@ This example is a simple document, with a hyperlink that, once clicked, displays
 
 <h4>Extract of source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <body>
 2.  <h1>This is an example of embedded table of content</h1>
@@ -2445,6 +2496,8 @@ This example is a simple document, with a hyperlink that, once clicked, displays
 21. </aside>
 22. </body>
 ```
+
+</details>
 
 <p><b>Best practice</b>: visualizing the table of contents is useful for debugging the structure of your page, and checking the presence of headings after sectioning content.
 
@@ -2477,6 +2530,9 @@ This element is subject to some constraints:</p>
 </ul>
 <p>And finally, here are some examples (from <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank">the HTML5 specification</a>) that mix the &lt;main&gt; element with the other sectioning elements already seen in the course:</p>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!-- other content -->
 2.  
@@ -2505,7 +2561,12 @@ This element is subject to some constraints:</p>
 25. <!-- other content -->
 ```
 
+</details>
+
 <p>Here is another example (also from the specification). Here the &lt;main&gt; element contains a &lt;nav&gt; element consisting of links to subsections of the main content:</p>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -2561,6 +2622,8 @@ This element is subject to some constraints:</p>
 51.    </body>
 52. </html>
 ```
+
+</details>
 
 <h4>Best practice</h4>
 <p>For accessibility matters, a best practice is to split your page content into "regions" defined by the five 5 elements (aside, footer, header, main and nav) learned this week. 
@@ -2726,6 +2789,9 @@ The 4 examples below are given "as is" to give you some hints. There are lots of
 
 <p>This example uses the following HTML structure (notice that we use the "HTML entity syntax" for displaying "<" or ">". For example, displays a "<" character).</p>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <header>
 2.  <code><header></code>
@@ -2743,6 +2809,8 @@ The 4 examples below are given "as is" to give you some hints. There are lots of
 14. <code><footer></code>
 15. </footer>
 ```
+
+</details>
 
 <p>Here we use the CSS rule float:left for the &lt;section&gt; and the CSS rule float:right for the &lt;aside&gt;. When an element floats, it goes out of the normal flow of the HTML element. Then by default it floats to the edge of its parent; and its size depends on the elements it contains. So, in order to fill the whole horizontal space, we prefer here to "force the width" by setting the CSS width property with a percentage.  So we took width: 63% for the &lt;section&gt; on the left and width:30% for the &lt;aside&gt; on the right.
 
@@ -2776,6 +2844,9 @@ You can look at the complete CSS code in the interactive example below (click on
 
 <h4>HTML code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <header>
 2.  <code><header></code>
@@ -2797,6 +2868,8 @@ You can look at the complete CSS code in the interactive example below (click on
 18. <code><footer></code>
 19. </footer>
 ```
+
+</details>
 
 <p>Instead of having one element with a float:left and one element with a float:right property, we instead use float:left for all three of them, and we give a  width:30% CSS property value to each &lt;section&gt;. We also set a small margin so that the colums have a gap between them.</p>
 
@@ -3298,6 +3371,7 @@ Everyone knows the classic way to make hyperlinks, using <a href="...">some tex
 However, if the link points to some PHP code,  Java servlet code, or any kind of script/application on the server side, this remote server code can send in its HTTP response a Content-type that may force the browser to download the image instead of rendering it.
 
 It may also propose a name for the file to be downloaded that may be different from the one that appears in the URL of the href attribute. This can be done by generating, in addition to the Content-type line in the response HTTP header, a Content-Disposition line that looks like this:
+
 ```
 1.  Content-Disposition: attachment; filename="MyImage.png";
 ```
@@ -3474,6 +3548,9 @@ This information is not visible to humans: it is pure *semantic information*. 
 
 <h4>Quick example of microdata that describes a person</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <section [itemscope itemtype="https://schema.org/Person"]>
 2.      <h1>Contact Information</h1>
@@ -3499,7 +3576,12 @@ This information is not visible to humans: it is pure *semantic information*. 
 22. </section>
 ```
 
+</details>
+
 <p>We can also add another embedded data item in the middle, such as the person's address:</p>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  ...
@@ -3524,7 +3606,9 @@ This information is not visible to humans: it is pure *semantic information*. 
 20. ...
 ```
 
-In the following sections, we look more closely at the itemprop, itemscope and itemtype attributes.
+</details>
+
+<p>In the following sections, we look more closely at the itemprop, itemscope and itemtype attributes.</p>
 
 <h4>Data that can be processed, organized, structured, or presented in a given context</h4>
 
@@ -3553,7 +3637,7 @@ In the following sections, we look more closely at the itemprop, itemscope a
 
 <h4>Introduction</h4>
 
-After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.
+<p>After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 58. picture of diverse tools used by workers (73) ----------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -3573,6 +3657,9 @@ Let's have a look now at a (small) example of an about page. It renders as a ver
 <a href="https://jsbin.com/gunuzus/1/edit?html,output">Online example at JsBin</a>
 
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -3599,6 +3686,8 @@ Let's have a look now at a (small) example of an about page. It renders as a ver
 22. </body>
 23. </html>
 ```
+
+</details>
 
 <h4>Rendering of the page in a browser:</h4>
 <!------------------------------------------------------------------------------------------------>
@@ -3668,6 +3757,7 @@ The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> i
 2.  ...
 3.  </section>
 ```
+
 <p>
 We will look at the itemtype attribute later. Now that we have defined a global wrapper object/element (a Person in this case), we can  add properties inside this element to define the first name, last name, etc.
 </p>
@@ -3707,6 +3797,9 @@ However, if you do not find a vocabulary corresponding to your needs, keep in mi
 <h4>Basics:</h4>
 
 <p>Now that you have defined a container element, you may add properties to the HTML inside:</p>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <section itemscope itemtype="https://schema.org/Person">
@@ -3754,6 +3847,9 @@ Give an element inside a microdata container its own itemscope attribute wit
 </p>
 <h4>Again, look at the Person/Address example:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  ...
 2.  </dl>
@@ -3776,6 +3872,8 @@ Give an element inside a microdata container its own itemscope attribute wit
 19. 
 20. ...
 ```
+
+</details>
 
 <p>
 The properties at <i>lines 8-12</i> refer to the address nested microdata (they are defined in the Address vocabulary, not the Person vocabulary), and "France" (<i>line 14</i>) is a property that refers to the Country vocabulary.
@@ -4020,7 +4118,10 @@ Here is a simple example (also available <a href="https://jsbin.com/yogojis/edi
 
 Press play to stream the neigh of a horse: (does not work in git)</p>
 
-<h5>As you can see, the code is very similar to the basic &lt;video&gt; element usage.</h5>
+<h4>As you can see, the code is very similar to the basic &lt;video&gt; element usage.</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -4044,6 +4145,8 @@ Press play to stream the neigh of a horse: (does not work in git)</p>
 19.    </body>
 20. </html>
 ```
+
+</details>
 
 <p>
 In this example, just as for the &lt;video&gt; element, we used the controls attribute in order to render the play/stop, time, volume and progress widgets.
@@ -4119,11 +4222,12 @@ To add some styling to the basic example we saw when we introduced the &lt;audi
 
 Please move the mouse pointer over this player's elements: (does not work in git)</p>
 
-<!------------------------------------------------------------------------------------------------>
+<h4>HTML</h4>
 
-<button class="accordion">HTML</button>
-<div class="panel">
-  <p>```
+<details>
+ <summary>Click to expand!</summary>
+
+```
 1.  <figure id="figaudio1">
 2.    <img id="imghorse" width="200"
 3.       src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg"
@@ -4143,35 +4247,9 @@ Please move the mouse pointer over this player's elements: (does not work in git
 17. </figcaption>
 18. </figure>
 ```
+
+</details>
 </p>
-</div>
-
-<button class="accordion">CSS</button>
-<div class="panel">
-  <p></p>
-</div>
-
-<button class="accordion">JS</button>
-<div class="panel">
-  <p></p>
-</div>
-
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
 
 <!-------------------------- 70. two gery-black horses in a field (87) --------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4186,6 +4264,9 @@ Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
 </p>
 <h4>HTML source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <figure id="figaudio1">
 2.    <img id="imghorse" width="200"
@@ -4207,7 +4288,12 @@ Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
 18. </figure>
 ```
 
+</details>
+
 <h4>CSS source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  #figaudio1 {
@@ -4252,6 +4338,8 @@ Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
 40.     transform: scale(1.05);
 41. }
 ```
+
+</details>
 
 <h4>Changing the size of a video on the fly using CSS transforms</h4>
 
@@ -4323,6 +4411,9 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 
 <p>Here is the HTML code. It's really simple, just notice the &lt;body onload="init();"&gt; which calls the JavaScript init() function right after the page is loaded.</p>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -4344,6 +4435,8 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 18.     </video>
 19. </body>
 ```
+
+</details>
 
 <p>
 Here is the CSS (remove margins, remove padding, hide parts that could overflow from the &lt;body&gt;):</p>
@@ -4429,6 +4522,9 @@ This time the video is zoomed in so that it's much bigger than the browser's win
 </p>
 <h4>HTML code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -4454,7 +4550,12 @@ This time the video is zoomed in so that it's much bigger than the browser's win
 </html>
 ```
 
+</details>
+
 <h4>CSS code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 html, body{
@@ -4482,6 +4583,8 @@ header video {
     transform:translateX(-50%) translateY(-50%);
 }
 ```
+
+</details>
 
 <h4>The trick here is that:</h4>
 <p>
@@ -4608,6 +4711,7 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link
 <h4> Here is a table that shows the most interesting methods, properties, and events provided by the &lt;video&gt; element API</h4>
 
 We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer! 
+
 | ------------------------------------------------------------------------|
 | <b>Methods</b> | <b>Properties</b> | <b>Events</b>|
 | -------------- | ----------------- | -------------|
@@ -4680,6 +4784,9 @@ This example gives the first steps towards writing a custom video player. It sho
 
 <h4>Source code extract:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <video id="vid" controls>
 <source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
@@ -4704,6 +4811,8 @@ This example gives the first steps towards writing a custom video player. It sho
     }
 </script>
 ```
+
+</details>
 
 <h4>Explanations:</h4>
 <ul>
@@ -4757,6 +4866,9 @@ Check the online example below: use the progress cursor to go near the end of th
 
 <h4>Source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -4801,6 +4913,8 @@ Check the online example below: use the progress cursor to go near the end of th
 </body>
 </html>
 ```
+
+</details>
 
 <h4>Explanations:</h4>
 <ul>
@@ -4857,6 +4971,9 @@ This example also shows how to handle failures. See the code and play with this
 Below is a piece of code for handling errors during video playback:
 </p>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 ...
 vid.addEventListener('error', function(evt) {
@@ -4892,6 +5009,8 @@ function logEvent(evt, color) {
 }
 ```
 
+</details>
+
 <h4>Example #3: how to display a percentage of buffering when using a slow connection</h4>
 <p>
 See the <a href="https://jsbin.com/xororol/3/edit?html,output">example online</a> here too.
@@ -4911,6 +5030,9 @@ As explained by the <a href="https://developer.apple.com/">Apple Developer Web 
 </p>
 
 <h4>Source code extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -4957,6 +5079,8 @@ As explained by the <a href="https://developer.apple.com/">Apple Developer Web 
 </html>
 ```
 
+</details>
+
 <h4>Example #4: how to use SVG elements as external controllers</h4>
 <p>
 This is the ultimate way of doing a real custom player: redesign your own controls using SVG shapes! This example (try it <a href="https://www.w3.org/2010/Talks/0430-www2010-plh/video-player.xhtml">online</a>) is given "as is" for those of you who may be curious.
@@ -4984,12 +5108,12 @@ The WebVTT format used for describing a track file is also presented in this c
 </p>
 <h4>Most of the major desktop browsers support HTML5 captioning</h4>
 <p>
-Please check the <a href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the <track> element support by browsers.
+Please check the <a href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the &lt;track&gt; element support by browsers.
 </p>
 <h4>Some definitions</h4>
 <ul>
-<li><b>closed captions </b>describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).</li>
-<li><b>subtitles </b>are only for spoken words.</li>
+<li><b>closed captions</b> describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).</li>
+<li><b>subtitles</b> are only for spoken words.</li>
 </ul>
 
 <br/>
@@ -5010,6 +5134,7 @@ The &lt;track&gt; element cannot be used with a file:// URL. Please use htt
 2.  ForceType text/vtt;charset=utf-8
 3.  </Files>
 ```
+
 <p>
 It is worth mentioning that most browsers work well with WebVTT, even if the MIME type is not defined.
 
@@ -5053,8 +5178,11 @@ The example uses a &lt;track&gt; element to insert basic captions to the vid
 <p>
 Multiple tracks are needed to support different langages, video captions for the hearing-impaired, subtitles, etc.
 
-Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element">from the specification</a>) that includes multiple <track> elements (subtitles for three languages and captions only for English):
+Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element">from the specification</a>) that includes multiple &lt;track&gt; elements (subtitles for three languages and captions only for English):
 </p>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <video src="brave.webm">
@@ -5075,7 +5203,9 @@ Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#
 </video>
 ```
 
-Note the use of some new attributes in the <track> element:
+</details>
+
+<p>Note the use of some new attributes in the &lt;track&gt; element:</p>
 <ul>
 <li>label: the label value will be displayed in the GUI control that is included in the default HTML5 video player,</li>
 <li>srclang:  gives the language for the text track data. The value must be a valid <a href="https://tools.ietf.org/html/bcp47">BCP 47 language tag</a>. This attribute must be present if <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind">the element's kind attribute</a> is in the <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles">subtitles state</a>.</li>
@@ -5095,6 +5225,7 @@ The "<a href="http://dev.w3.org/html5/webvtt/">WebVTT: The Web Video Text Tracks
 
 In the interactive example presented before, we used a file called sintel-captions.vtt:
 </p>
+
 ```
 <video height="272" width="640"
        poster="https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg"
@@ -5107,6 +5238,9 @@ In the interactive example presented before, we used a file called sintel-capti
 ```
 
 And here is an extract of the corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt">sintel-captions.vtt</a> file:
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  WEBVTT
@@ -5179,11 +5313,13 @@ And here is an extract of the corresponding <a href="https://mainline.i3s.unice
 68. Thank you.
 ```
 
-This format is rather simple, but we still recommend reading <a href="https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API">this excellent article from Mozilla Developer Network</a> that explains in detail all the different options.
+</details>
+
+<p>This format is rather simple, but we still recommend reading <a href="https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API">this excellent article from Mozilla Developer Network</a> that explains in detail all the different options.
 
 Each "element" in this file has a starting and ending time, plus a value (the text that will be displayed), followed by a blank line (blank lines are separators between elements).
 
-<b>Each element is called "a cue"</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, in particular the getCueById() method of TextTrack objects.
+<b>Each element is called "a cue"</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, in particular the getCueById() method of TextTrack objects.</p>
 
 <h4>Example of a .vtt file with numeric IDs:</h4>
 
@@ -5219,11 +5355,11 @@ The displayed text can span multiple lines, but blank lines are not allowed, as 
 
 <h3 id="ch2-3-3">2.3.3 Adding Subtitles to a Video</h3>
 
-Let's look at a simple example. First, you need a video on one of the formats/codecs supported by the browsers you target. A recommended codec is mp4/H264, but other formats, such as webm, may have some advantages if the browser supports them. For example, webm allows the video to start playing after a much shorter buffering time. In other words, try if possible to provide the video encoded with more than one codec.
+<p>Let's look at a simple example. First, you need a video on one of the formats/codecs supported by the browsers you target. A recommended codec is mp4/H264, but other formats, such as webm, may have some advantages if the browser supports them. For example, webm allows the video to start playing after a much shorter buffering time. In other words, try if possible to provide the video encoded with more than one codec.
 
 For this, use any sort of open source, free or commercial video encoding software, such as [Handbrake](https://handbrake.fr/) (free, open source) or [Super](https://www.erightsoft.com/SUPER.html) (free). There are also online video encoding services, and you can even upload your video to YouTube, let it encode your video in several resolutions and codecs, and use a browser extension such as [Video DownloadHelper ](https://addons.mozilla.org/fr/firefox/addon/video-downloadhelper/)(for Firefox) or [JDownloader](https://jdownloader.org/), to download the video in your chosen formats.
 
-So, let's suppose you have a video like the one below (we included it on YouTube for practical reasons). This video has subtitles (you can activate them in the YouTube player), but the goal of this lesson is to explain how we made them without using the YouTube embedded tools, which do not allow export the subtitle file to be exported in the webVTT format.
+So, let's suppose you have a video like the one below (we included it on YouTube for practical reasons). This video has subtitles (you can activate them in the YouTube player), but the goal of this lesson is to explain how we made them without using the YouTube embedded tools, which do not allow export the subtitle file to be exported in the webVTT format.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 87. picture guitar picking (108) -------------------------------->
@@ -5250,7 +5386,7 @@ And if you've also got it in mp4/H264 and in webm formats, here is how you
 </video>
 ```
 
-At <i>line 9</i>, we added a <track> element to add English subtitles, as the guitar teacher there is speaking in French. We will now explain how we created this subtitle track.
+At <i>line 9</i>, we added a &lt;track&gt; element to add English subtitles, as the guitar teacher there is speaking in French. We will now explain how we created this subtitle track.
 
 <h4>Adding subtitles to the video</h4>
 <p>
@@ -5281,7 +5417,7 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 &nbsp;
 <br/>
 
-Note that YouTube can also help you "make subtitles" with its speech recognition tool, but you will only be able to export in .srt format afterwards. You will have to convert this format afterwards to .vtt.
+<p>Note that YouTube can also help you "make subtitles" with its speech recognition tool, but you will only be able to export in .srt format afterwards. You will have to convert this format afterwards to .vtt.</p>
 
 <h4>Try your subtitled/captioned video</h4>
 <!------------------------------------------------------------------------------------------------>
@@ -5310,6 +5446,9 @@ The example below shows how we can do that (play the video for 40s, look at the 
 <br/>
 
 The WebVTT file is shown below. Notice the new attributes that have been added on the right end of the duration values:
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  WEBVTT
@@ -5366,6 +5505,8 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 52. That's it! For now...
 ```
 
+</details>
+
 <h4>How to position the subtitles</h4>
 
 <!------------------------------------------------------------------------------------------------>
@@ -5387,7 +5528,7 @@ It is possible to locate the cues in the video viewport using absolute or relati
 10. This cue is positioned at the left side of the video.
 ```
 
-There are several possible values:
+<h4>There are several possible values:</h4>
 <ul>
 <li><b>line:5%</b> means "vertical position at a line 5% of the height of the video viewport (it will be located at the top of the video", proportional to its vertical size).</li>
 <li><b>position:5% align:start</b> means "regular location at the bottom of the video, the start of the sentence will be located at 5% of the width of the video", i.e., near the left side.</li>
@@ -5457,9 +5598,9 @@ Here is an example that shows the voices of the different characters displayed w
 &nbsp;
 <br/>
 
-Using the <v> tag, you will distinguish different voices that should be displayed in different colors (depending on the HTML5 video player implementation). See the CSS presented in the previous section to see how to specify the colors for the different voices.
+Using the &lt;v&gt; tag, you will distinguish different voices that should be displayed in different colors (depending on the HTML5 video player implementation). See the CSS presented in the previous section to see how to specify the colors for the different voices.
 
-Example source code:
+<h4>Example source code:</h4>
 
 ```
 1.  00:00:56.000 --> 00:01:04.000
@@ -5469,9 +5610,9 @@ Example source code:
 
 <h3 id="ch2-3-5">2.3.5 Chapter</h3>
 
-When you play a movie in DVD or Blu-Ray format, a menu appears on the screen: play a movie, choose subtitles, etc. Usually there is also a "chapters" menu that allows you to quickly access a part of the movie. With videos on the Web, one can also indicate the chapter breakdown, using WebVTT files and a <track> element/tag.
+<p>When you play a movie in DVD or Blu-Ray format, a menu appears on the screen: play a movie, choose subtitles, etc. Usually there is also a "chapters" menu that allows you to quickly access a part of the movie. With videos on the Web, one can also indicate the chapter breakdown, using WebVTT files and a &lt;track&gt; element/tag.
 
-Adding chapters is very similar to adding subtitles/captions. Look at *line 5* in the code below, where we use an extra <track> element with a kind="chapters" attribute.
+Adding chapters is very similar to adding subtitles/captions. Look at <i>line 5</i> in the code below, where we use an extra &lt;track&gt; element with a kind="chapters" attribute.</p>
 
 ```
 1.  <video poster="webvtt_talk.png" style="width:100%" preload="metadata">
@@ -5484,13 +5625,16 @@ Adding chapters is very similar to adding subtitles/captions. Look at *line 5*�
 8.  </video>
 ```
 
-Here is an example of WebVTT files with defined chapters. Each "CUE" at *lines 3, 7, 11*, ... can bear any name. We use "Chapter 1, Chapter 2, Ending, etc." but you are free to name them as you wish.
+<p>Here is an example of WebVTT files with defined chapters. Each "CUE" at <i>lines 3, 7, 11</i>, ... can bear any name. We use "Chapter 1, Chapter 2, Ending, etc." but you are free to name them as you wish.
 
 What makes them special is that the track has an attribute kind="chapters". 
 
-Often, the <video> elements rendered in standard browsers ignore chapters, but enhanced HTML5 players take them into account, and it's not much of a stretch to make your own enhanced player with a nice chapter presentation, as we'll see in a more advanced chapter of this course.  For example, we'll generate a custom navigation menu, using the <track> JavaScript API (explained later in this section).
+Often, the &lt;video&gt; elements rendered in standard browsers ignore chapters, but enhanced HTML5 players take them into account, and it's not much of a stretch to make your own enhanced player with a nice chapter presentation, as we'll see in a more advanced chapter of this course.  For example, we'll generate a custom navigation menu, using the &lt;track&gt; JavaScript API (explained later in this section).</p>
 
 <h4>Example of a WebVTT file that defines chapters:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  WEBVTT FILE
@@ -5520,6 +5664,8 @@ Often, the <video> elements rendered in standard browsers ignore chapters, but e
 25. Styled WebVTT file
 ```
 
+</details>
+
 An example of what you can achieve using chapters, using the <a href="https://www.jwplayer.com/">JW Player</a>:
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 96. using the jw player (115) ------------------------------->
@@ -5542,27 +5688,24 @@ Many tools are available to make and edit HTML5 video and caption/subtitles:
 
 We do not claim that these are the best tools, so feel free to share your discoveries in the discussion forum!
 
-<h3 id="ch2-3-7">2.3.7 The <track> JavaScript API</h3>
+<h3 id="ch2-3-7">2.3.7 The &lt;track&gt; JavaScript API</h3>
 
 Most "complex" HTML elements like forms, audio or video players, come with a JavaScript API that allows you to control them programmatically, customize them, etc.
 
-The &lt;track&gt; element comes with a powerful API that is used to develop many interesting features such as:
+<h4>The &lt;track&gt; element comes with a powerful API that is used to develop many interesting features such as:</h4>
+<ul>
+<li>Dynamically building a navigation menu that shows the different chapters of the video,</li>
+<li>Synchronizing page content with timestamps in the WebVTT file (for example: show a map next to the video, that shows the location corresponding to the video content),</li>
+<li>Displaying all the subtitles/captions at once as HTML in the page,</li>
+<li>Making an app for creating on the fly subtitles/captions,</li>
+<li>Etc.</li>
+</ul>
 
--   Dynamically building a navigation menu that shows the different chapters of the video,
-
--   Synchronizing page content with timestamps in the WebVTT file (for example: show a map next to the video, that shows the location corresponding to the video content),
-
--   Displaying all the subtitles/captions at once as HTML in the page,
-
--   Making an app for creating on the fly subtitles/captions,
-
--   Etc.
-
-<h4>Examples of use</h4>
+<h3>Examples of use</h3>
 
 <h4> Example #1: add a navigation menu to start playing the video at given chapters</h4>
 
-This example shows a video with an enhanced progress bar that displays the different chapters as small "clickable" squares. Furthermore, using the JavaScript API of the <track> element, this Web site builds a navigation menu (on the right of the video):
+<p>This example shows a video with an enhanced progress bar that displays the different chapters as small "clickable" squares. Furthermore, using the JavaScript API of the &lt;track&gt; element, this Web site builds a navigation menu (on the right of the video):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 97. navigation menu using the track javascript api (117) -------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5755,6 +5898,9 @@ The main idea is to set the srcObject attribute of a <video> element to th
 
 The stream is passed as a parameter to the then() method returned by the promise, as in this typical example (you can run it and see the result by clicking on the "CodePen" logo at the top right):
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <video id="myVideo" autoplay>Fallback msg here.</video>
 <script>
@@ -5789,6 +5935,8 @@ startWebCam();
 </script>
 ```
 
+</details>
+
 <b>HTTPS is mandatory:<b> for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.
 
 Support of getUserMedia/stream is [very good in all modern browsers](https://caniuse.com/stream), including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.
@@ -5808,6 +5956,9 @@ Let's see some more examples of what we can do with the getUserMedia API: start/
    width="35%">
 &nbsp;
 <br/>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -5847,9 +5998,14 @@ webcamStream.getTracks()[1].stop(); // video
 </html>
 ```
 
+</details>
+
 In order to stop the Webcam and make the hardware "unlock it", you need to call the stop() method of the video stream.
 
 <h4>Code source:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -5892,17 +6048,16 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 38. </html>
 ```
 
+</details>
+
 <h4>Explanations:</h4>
-
--   *Lines 11-13*: we call navigator.getUserMedia. The parameters indicate that we want to capture the video and the audio from the current device (default Webcam). The call to getUserMedia returns an ES6 promise: the then(stream) method that follows.
-
--   *Line 14:* the then(stream) method is called in case of success and gets the current audio/video stream as parameter. This is passed by the browser to your JavaScript code. 
-
--   *Lines 15-19*: The *line 16 *sets the audio/video stream of the default Webcam to the srcObject attribute of the video element, while *line 18* starts displaying it in the video player (there can be more than one Webcam, we'll see how to select one in particular next). *Line 19* stores the stream in a global variable so that we can use it from another function (for stopping/starting the Webcam...)
-
--   *Lines 19-23* define the catch method called in case of error (it could be that the Webcam cannot be accessed, or authorizations have not been granted).
-
--   *Lines 25-27*: a function for stopping the Webcam. We use the global variable webcamStream here, that has been initialized when we started using the Webcam in *line 19*. We have to stop separately the audio and the video streams.
+<ul>
+<li><i>Lines 11-13</i>: we call navigator.getUserMedia. The parameters indicate that we want to capture the video and the audio from the current device (default Webcam). The call to getUserMedia returns an ES6 promise: the then(stream) method that follows.</li>
+<li><i>Line 14</i>: the then(stream) method is called in case of success and gets the current audio/video stream as parameter. This is passed by the browser to your JavaScript code.</li>
+<li><i>Lines 15-19</i>: The *line 16 *sets the audio/video stream of the default Webcam to the srcObject attribute of the video element, while *line 18* starts displaying it in the video player (there can be more than one Webcam, we'll see how to select one in particular next). *Line 19* stores the stream in a global variable so that we can use it from another function (for stopping/starting the Webcam...)</li>
+<li><i>Lines 19-23</i> define the catch method called in case of error (it could be that the Webcam cannot be accessed, or authorizations have not been granted).</li>
+<li><i>Lines 25-27</i>: a function for stopping the Webcam. We use the global variable webcamStream here, that has been initialized when we started using the Webcam in *line 19*. We have to stop separately the audio and the video streams.</li>
+</ul>
 
 <h4>Other examples that mix what we've seen in previous chapters, but this time with a live video stream</h4>
 
@@ -5919,6 +6074,9 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 <br/>
 
 Try this example that shows how to use the getUserMedia API. Note the CSS effects (click on the video to cycle from one effect to another):
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 //--------------------
@@ -5968,7 +6126,13 @@ el.classList.add(effect);
 }
 ```
 
+</details>
+
 <h4>CSS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 
 ```
 #output {
@@ -6016,7 +6180,12 @@ filter: invert(1)
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -6039,6 +6208,8 @@ Click the button "start webcam at the end of this page, then click on the video 
 </html>
 ```
 
+</details>
+
 <h4>Taking a snapshot from the live Webcam stream</h4>
 
 The trick is to copy and paste the current image from the video stream into a <canvas> element.
@@ -6048,6 +6219,10 @@ The trick is to copy and paste the current image from the video stream into a 
 
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 
 ```
 //--------------------
@@ -6090,6 +6265,8 @@ ctx.drawImage(video, 0,0, canvas.width, canvas.height);
 }
 ```
 
+</details>
+
 <h4>CSS</h4>
 
 ```
@@ -6097,6 +6274,10 @@ canvas {
 border:1px solid black;
 }
 ```
+
+<details>
+ <summary>Click to expand!</summary>
+
 
 <h4>HTML</h4>
 ```
@@ -6121,6 +6302,8 @@ Screenshots : <p>
 </body>
 </html>
 ```
+
+</details>
 
 We will look at this example in greater detail in the next course section (related to the <canvas> element).
 
@@ -6167,6 +6350,9 @@ For more information, this [article on MDN about the getUserMedia API](https:/
 </p>
 
 <b>JS</b>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 var vgaButton, qvgaButton, hdButton, dimensions, video, stream;
@@ -6239,6 +6425,8 @@ console.log('navigator.getUserMedia error: ', error);^
 ^}^
 ```
 
+</details>
+
 <h4>CSS</h4>
 
 ```
@@ -6248,6 +6436,9 @@ border:1px solid;
 ```
 
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -6275,6 +6466,8 @@ https://www.simpl.info/getusermedia/constraints/
 </html>
 ```
 
+</details>
+
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 112.  (xxx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -6285,6 +6478,9 @@ https://www.simpl.info/getusermedia/constraints/
 </p>
 
 <h4>Code source extract related to the "constraint" object which specifies the desired resolutions:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  var vgaConstraints = {
@@ -6305,6 +6501,8 @@ https://www.simpl.info/getusermedia/constraints/
 16. .then((stream) => {...}
 ```
 
+</details>
+
 <h4>How to check which resolutions are supported by a browser?</h4>
 
 Use this [Web app that ](https://webrtchacks.github.io/WebRTC-Camera-Resolution/)systematically tests a set of "preferred resolutions" and compared them to the actual resolutions returned by the browser. Remember that the requested resolution is a hint, and there is no real guarantee that your configuration will allow it.
@@ -6312,6 +6510,9 @@ Use this [Web app that ](https://webrtchacks.github.io/WebRTC-Camera-Resolutio
 <h4>Selecting the front or rear camera on smartphones</h4>
 
 Here are some other constraints you can set. In particular, look at the ones for selecting the front or rear camera (smartphones):
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  **// more on video resolution**
@@ -6340,6 +6541,8 @@ Here are some other constraints you can set. In particular, look at the ones for
 22. constraints = { audio: true,** video: { facingMode: { exact: "environment" } }** }
 ```
 
+</details>
+
 <h4>Select input/output for audio and video streams</h4>
 
 -   Resource: [WebRTC samples: Select sources & outputs](https://webrtc.github.io/samples/src/content/devices/input-output/)
@@ -6354,6 +6557,9 @@ Here are some other constraints you can set. In particular, look at the ones for
 </p>
 
 <h4>Source code extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  function gotDevices(deviceInfos) {
@@ -6378,6 +6584,8 @@ Here are some other constraints you can set. In particular, look at the ones for
 20. then(gotStream).then(gotDevices).catch(handleError)
 ```
 
+</details>
+
 <h3 id="ch2-4-5">2.4.5 The MediaRecorder API</h3>
 
 This MediaRecoredr API allows to record / capture the audio or video stream. There are many sources for audio or video streams, but we will only consider here the streams coming from a WebCam or a sound input (i.e. microphone).
@@ -6395,7 +6603,10 @@ For example, the MediaRecorder API is used to record the video stream from a Web
 
 Let's record, replay and download the video stream captured using a Webcam. You can test it below by clicking on "CodePen" at the top right:
 
-<b>JS</b>
+<h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 var mediaRecorder;
@@ -6480,7 +6691,12 @@ console.log('MediaRecorder started', mediaRecorder);
 > }
 ```
 
-<b>CSS</b>
+</details>
+
+<h4>CSS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 /*
@@ -6533,7 +6749,12 @@ margin: 0 10px 10px 0;
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -6559,6 +6780,8 @@ margin: 0 10px 10px 0;
 </body>
 </html>
 ```
+
+</details>
 
 Click "start recording", then press the play button on the video element on the right of the app. You can also click the "download" button to download a .webm file, playable offline with a media player such as [VLC](https://www.videolan.org/) or online in a Web page with the <video> element.
 
@@ -6626,6 +6849,9 @@ Like that, the recorded stream can be played using a standard HTML5 &lt;video&g
 
 <p>A trick consists in creating, on the fly, an invisible link with a download attribute (see Module 1) and a href attribute  that points to the blob object containing the recorded stream encoded using a given codec, then generate programmatically a click event on the link. This will force the browser to download a file of type video/webm to the hard disk.</p>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  function download() {
 2.  var blob = new Blob(recordedChunks, {
@@ -6641,6 +6867,8 @@ Like that, the recorded stream can be played using a standard HTML5 &lt;video&g
 12. window.URL.revokeObjectURL(url);
 13. }
 ```
+
+</details>
 
 <h3 id="ch3-1-1">3.1.1 HTML5 Graphics</h3>
 
@@ -7000,6 +7228,9 @@ Once we have a pointer to the &lt;canvas&gt;, we can get a "context". This par
 
 <h4>HTML</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -7037,7 +7268,12 @@ Your browser does not support the canvas tag.
 </html>
 ```
 
+</details>
+
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -7076,76 +7312,99 @@ Your browser does not support the canvas tag.
 34. </html>
 ```
 
-<h4> **Explanations**
+</details>
 
-**Only access elements when the DOM is ready:**
+<h4>Explanations</h4>
 
-Notice that we wrote an "init" function (*line 13*) that is called only when the page has been entirely loaded (we say "when the DOM is ready"). There are several ways to do this. In this example we used the <body onload="init();"> method, at *line 29*.
+<b>Only access elements when the DOM is ready:</b>
+
+Notice that we wrote an "init" function (<i>line 13</i>) that is called only when the page has been entirely loaded (we say "when the DOM is ready"). There are several ways to do this. In this example we used the <body onload="init();"> method, at <i>line 29</i>.
 
 It's good practice to have such a function, as we cannot access the elements of the page before the page has been loaded entirely and before the DOM is ready.
 
-Another way is to put the JavaScript code at the end of the document (between <script>...</script>), right before the </body>. In this case when the JavaScript code is executed, the DOM has already been constructed.
+Another way is to put the JavaScript code at the end of the document (between &lt;script&gt;...&lt;/script&gt;), right before the &lt;/body&gt;. In this case when the JavaScript code is executed, the DOM has already been constructed.
 
-**Start by getting the canvas and the context:**
+<b>Start by getting the canvas and the context:</b>
 
 Before drawing or doing anything interesting with the canvas, we must first get its drawing "context". The drawing context defines the drawing methods and properties we can use.
 
 Good practice is to get the canvas, the context, the width and height of the canvas and other global objects in this "init" function.
 
-**After the context is set, we can draw, but first let's set the current color for filled shapes:**
+<b>After the context is set, we can draw, but first let's set the current color for filled shapes:</b>
 
-The example shows the use of the fillStyle property at *line 24* - useful for specifying the way shapes will be filled. In our case this line indicates the color of all the filled shapes we are going to draw:
+The example shows the use of the fillStyle property at <i>line 24</i> - useful for specifying the way shapes will be filled. In our case this line indicates the color of all the filled shapes we are going to draw:
 
+```
 1.  ctx.fillStyle='#FF0000';
+```
 
 The context property named fillStyle is used here. This property can be set with a color, a gradient, or a pattern. We will see examples of these later on in the course.
 
 The example says that all filled shapes will use the color "#FF0000", which corresponds to a pure red color using the CSS RGB hexadecimal encoding (we could also have used ctx.fillStyle='red');
 
-**Then we can draw:**
+<b>Then we can draw:</b>
 
+```
 1.  ctx.fillRect(0,0,80,100);
+```
 
 This line is a call to the method fillRect(top left X coordinate, top left Y coordinate, width, height), which draws a filled rectangle.
 
 The way the rectangle will be filled depends on the current value of several properties of the context, in particular the value of the fillStyle property. So, in our case, the rectangle will be red.
 
-<h4>Summary of the different steps
+<h4>Summary of the different steps:</h4>
 
-1.  **Declare the canvas,** remembering to add an id attribute, and fallback content:  
+1.  <b>Declare the canvas,</b> remembering to add an id attribute, and fallback content:  
+
+```
     <canvas id="myCanvas" width="200" height="200">
     ...fallback content...
     </canvas>
+```
 
-2.  **Get a reference to the canvas in a JavaScript variable** using the DOM API:
+2.  <b>Get a reference to the canvas in a JavaScript variable</b> using the DOM API:
+
+```
     var canvas=document.getElementById('myCanvas');
+```
 
-3.  **Get the context for drawing in that canvas**:  
+3.  <b>Get the context for drawing in that canvas</b>:
+
+```
     var ctx=canvas.getContext('2d');
+```
 
-4.  **Specify some drawing properties** (optional):  
+4.  <b>Specify some drawing properties</b> (optional):  
+
+```
     ctx.fillStyle='#FF0000';
+```
 
-5.  **Draw some shapes**:
+5.  <b>Draw some shapes</b>:
+
+```
     ctx.fillRect(0,0,80,100)
+```
 
 <h3 id="ch3-2-7">3.2.7 Drawing Principles</h3>
 
-<h4>More about the "context" object
+<h4>More about the "context" object</h4>
 
 Before we go on, we should take some time to clarify the way we draw on HTML5 canvases. We already mentioned that we use a graphic context for all the main operations. Whenever a shape, a text, or an image is drawn, the current values of the different properties of the graphic context are taken into account. Some are relevant only for certain kinds of shapes or drawing modes, but you must be aware that it is always the current values of these drawing properties that are used.
 
 Later on we'll see that there are ways to save and restore this whole set of values, but for now, let's examine in greater detail some of the properties and methods we've already encountered, and introduce new ones.
 
-<h4>More about properties and methods of the context object
+<h4>More about properties and methods of the context object</h4>
+<ul>
+<li><h4><b>fillStyle</b> is a property of the context, similar in a way to a CSS property</li>
+</ul>
 
--   <h4> **fillStyle** is a property of the context, similar in a way to a CSS property
-
-Its value can be one of the following:
-
--   a color,
--   a pattern (texture), or
--   a gradient.
+<h4>Its value can be one of the following:</h4>
+<ul>
+<li>a color,</li>
+<li>a pattern (texture), or</li>
+<li>a gradient.</li>
+</ul>
 
 The default value is the color black. Any kind of drawing in "fill mode" will use the value of this property to determine how to render the "filled part" of the drawing: any filled rectangle will be filled black by default, any filled circle will be filled in black, and so on.
 
@@ -18658,6 +18917,9 @@ There are three different methods available for reading a file's content: readA
 
 All these methods take as a unique parameter a File object (for example, a file chosen by a user after clicking on a <input type=file> input field). Below, we use, as an example, the readAsText method:
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 > function readFileContent(f) {
 >    // Executed last: called only when the file content is loaded, e.target.result is
@@ -18673,7 +18935,9 @@ All these methods take as a unique parameter a File object (for example, a fil
 > }
 ```
 
-The above code shows how a file can be read as text. The function is called, for example by clicking on the button corresponding to a <input type="file" id="file"  onchange="readFileContent(this.files)"/>, and by choosing a file.
+</details>
+
+<p>The above code shows how a file can be read as text. The function is called, for example by clicking on the button corresponding to a <input type="file" id="file"  onchange="readFileContent(this.files)"/>, and by choosing a file.</p>
 <ul>
 <li><i>Line 12</i> is executed first, and asks the Reader object to read the file f as text. As this takes some time, it's an asynchronous operation that will be executed by the browser in the background. When the file is read, the reader.onload callback function is called.</li>
 <li><i>Line 4</i> is executed after *line 12*, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
@@ -18715,6 +18979,9 @@ Let's start by reading a pure text file
 
 <h4>Complete source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -18751,6 +19018,8 @@ Let's start by reading a pure text file
 33. </html>
 ```
 
+</details>
+
 This example is the one at the end of the previous page. This time, we show the complete source code above. Remember that the instruction at *line 29* is executed first, then when the file is read, the browser will call asynchronously the onload callback at *line 20*.
 
 <h4>Example #2: a variation of the previous one, using multiple files</h4>
@@ -18769,6 +19038,9 @@ This time, please select multiple text files (using shift for multiple selection
 <br/>
 
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -18815,6 +19087,8 @@ This time, please select multiple text files (using shift for multiple selection
 42. </html>
 ```
 
+</details>
+
 <h4>Explanations</h4>
 
 This example is similar to the previous one, except that this time we read multiple files.
@@ -18826,6 +19100,7 @@ This example is similar to the previous one, except that this time we read multi
 <h4>About charter encoding</h4>
 
 Note that you can optionally indicate the encoding of the file you are going to read (default is UTF-8):
+
 ```
 1.  reader.readAsText(file, 'UTF-8');
 2.  reader.readAsText(file, 'ISO-8859-1');
@@ -18834,27 +19109,31 @@ Note that you can optionally indicate the encoding of the file you are going to 
 
 <h3 id="ch6-3-7">6.3.7 Read file content as binary</h3>
 
-This method is rarely used, except for loading "raw" binary data. For images you would like to see in your HTML page using the <img src= tag> or for drawing in a canvas, or for audio and video files that you would like to play using the <audio> or <video> elements, it would be preferable to use the readAsDataURL method presented on the next page of the course.
+<p>This method is rarely used, except for loading "raw" binary data. For images you would like to see in your HTML page using the <img src= tag> or for drawing in a canvas, or for audio and video files that you would like to play using the <audio> or <video> elements, it would be preferable to use the readAsDataURL method presented on the next page of the course.
 
-readAsArrayBuffer is often used for purposes such as reading audio samples that should be loaded in memory and played using the WebAudio API, or for loading textures that you will use with WebGL for 3D animations.
+readAsArrayBuffer is often used for purposes such as reading audio samples that should be loaded in memory and played using the WebAudio API, or for loading textures that you will use with WebGL for 3D animations.</p>
 
 <h4>Example: read a local audio file and play it with the WebAudio API</h4>
 
-The WebAudio API is useful for reading audio sound samples from memory (no streaming), and has been designed for music application and games. This example shows how a local audio file can be read and played directly in the browser, without the need for a server!
+<p>The WebAudio API is useful for reading audio sound samples from memory (no streaming), and has been designed for music application and games. This example shows how a local audio file can be read and played directly in the browser, without the need for a server!
 
-<a href="https://jsbin.com/xepexuy/1/edit?html,output">Example on JSBin</a> (does not work on IE, as it does not support the WebAudio API). We could not embed it here on the edX platform as it prevents code that uses Ajax to run in its pages.
+<a href="https://jsbin.com/xepexuy/1/edit?html,output">Example on JSBin</a> (does not work on IE, as it does not support the WebAudio API). We could not embed it here on the edX platform as it prevents code that uses Ajax to run in its pages.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 316.  (xxx) ----------------------------->
+<!---------------- 316. webaudio api - does not work with microsoft shit (382) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image316.png?raw=true"
-   alt="Local audio player"
+   alt="Local audio player."
    width="55%">
 &nbsp;
 <br/>
 
 <h4>Source code extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 > // User selects file. Read it as an ArrayBuffer and pass to the API.
 > var fileInput = document.querySelector('input[type="file"]');
@@ -18868,7 +19147,9 @@ The WebAudio API is useful for reading audio sound samples from memory (no strea
 > }, false);
 ```
 
-<b>Explanations:</b>
+</details>
+
+<h4>Explanations:</h4>
 <ul>
 <li><i>Line 2:</i>we get a pointer to the file selector, the variable fileInput.</li>
 <li><i>Line 4:</i>we define a change listener. In this example, we use an anonymous function directly included in the listener definition (the listener is the function(e) {...}).</li>
@@ -18880,16 +19161,16 @@ The WebAudio API is useful for reading audio sound samples from memory (no strea
 
 <h4>What is a data URL?</h4>
 
-A data URL is a URL that includes type and content at the same time. It is useful, for example,  for in-lining images or videos in the HTML of a Web page (on mobile devices, this may speed up the loading of the page by reducing the number of HTTP requests).
+<p>A data URL is a URL that includes type and content at the same time. It is useful, for example,  for in-lining images or videos in the HTML of a Web page (on mobile devices, this may speed up the loading of the page by reducing the number of HTTP requests).
 
 Here is an example of a red square, as a data URL. Copy and paste it in the address bar of your browser, and you should see the red square:
 
 data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==
-
-This data URL in a browser address bar should look like this:
+</p>
+<h4>This data URL in a browser address bar should look like this:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------- 317. data url in address bar shows a red cirle (xxx) ---------------------->
+<!-------------------- 317. data url in address bar shows a red cirle (383) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image317.jpeg?raw=true"
@@ -18898,9 +19179,12 @@ This data URL in a browser address bar should look like this:
 &nbsp;
 <br/>
 
-If we set the src attribute of an image element <img src="data:image/png...."> with the data URL of the above screenshot, it will work exactly as if you used a URL that started with https://
+<p>If we set the src attribute of an image element <img src="data:image/png...."> with the data URL of the above screenshot, it will work exactly as if you used a URL that started with https://
 
-In your browser, you will see a small red circle rendered by this source code:
+In your browser, you will see a small red circle rendered by this source code:</p>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 > <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
@@ -18910,13 +19194,15 @@ In your browser, you will see a small red circle rendered by this source code:
 > 9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red square" width=50 height=50/>
 ```
 
-And here is the result:
+</details>
+
+<h4>And here is the result:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------- 318.  (xxx) ---------------------->
+<!----------------------------------- 318. red splotch (383) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image318.png?raw=true"
-   alt="image 318"
+   alt="Red splotch."
    width="15%" />
 &nbsp;
 <br/>
@@ -18927,7 +19213,7 @@ You will find lots of Web sites and tools for generating dataURL from files, suc
 
 <!------------------------------------------------------------------------------------------------>
 <!------------ 319. Online service that converts uploaded images to data uris... ----------------->
-<!-------------- we see an image and its ascii encoded data uri version (xxx) -------------------->
+<!-------------- we see an image and its ascii encoded data uri version (384) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image319.jpeg?raw=true"
@@ -18973,6 +19259,9 @@ This first example is useful for forms that allow the user to select one or more
 
 <h4>Source code extract:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 > <label for="files">Choose multiple files:</label>
 > <input type="file" id="files" multiple
@@ -19008,6 +19297,8 @@ This first example is useful for forms that allow the user to select one or more
 > }
 ```
 
+</details>
+
 <h4>Explanations:</h4>
 <ul>
 <li><i>Line 35:</i> starts the reading of the file f. When f is read, the onload callback will be called.</li>
@@ -19027,9 +19318,12 @@ This first example is useful for forms that allow the user to select one or more
 &nbsp;
 <br/>
 
-*Errata*: the above screenshot says "choose multiple files", but the example only works with a single file.
+<p><i>Errata</i>: the above screenshot says "choose multiple files", but the example only works with a single file.</p>
 
 <h4>Source code extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 function drawImage(imageFile) {
@@ -19062,6 +19356,8 @@ function readFileAndDraw(files) {
 }
 ```
 
+</details>
+
 <h4>Explanations:</h4>
 
 Remember how we worked with images on a canvas. We had to create an empty image object (*line 8*), set the src attribute of the image object (*line 23*), then use an image.onload callback (*line 15*), and we could only draw from inside the callback (*line 17*). This time, it's exactly the same, except that the URL comes from e.target.result in the reader.onload callback (*line 23*).
@@ -19086,13 +19382,16 @@ This chapter presents the new Geolocation API and illustrates its use with sever
 &nbsp;
 <br/>
 
-The Geolocation HTML5 JavaScript API is implemented by most modern Web browsers, and uses different means to get the current location: GPS, GSM/3G triangulation, Wifi, IP address, etc.
+<p>The Geolocation HTML5 JavaScript API is implemented by most modern Web browsers, and uses different means to get the current location: GPS, GSM/3G triangulation, Wifi, IP address, etc.
 
 It is possible to prompt the user to activate the GPS (this is what most GPS navigation software does on mobile phones), or ask for a particular mean among those available. It is also possible to track the current position when it changes. This is useful for writing a navigation application or for tracking in real time the position of different participants in the case of an application that involves several persons at the same time (using WebSockets, for example).
 
-[Browser support for the Geolocation API](https://caniuse.com/#feat=geolocation) is excellent, both on mobile and on desktop devices.
+<a href="https://caniuse.com/#feat=geolocation">Browser support for the Geolocation API</a> is excellent, both on mobile and on desktop devices.</p>
 
 <h4>Typical use</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 navigator.geolocation.getCurrentPosition(showPosition, onError);
@@ -19106,6 +19405,9 @@ function onError(err) {
     console.log("Could not get the position");
 }
 ```
+
+</details>
+
 <p>
 <a href="https://jsbin.com/toyeley/1/edit?html,output">This online example at JSBin</a> shows how to get the current longitude and latitude and display them in an HTML page. Try it below in your browser:
 
@@ -19116,6 +19418,9 @@ Where am I ?
 Note that the first time you execute this example, for privacy reasons, the browser will ask if you agree to share your position with the application.
 </p>
 <h4>Source code of this typical example:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -19144,6 +19449,9 @@ displayCoords.innerHTML="Latitude: " + position.coords.latitude +
 </body>
 </html>
 ```
+
+</details>
+
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 324. geolocation callback illustration (xxx) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19204,6 +19512,9 @@ A slightly different version of the previous example <a href="https://jsbin.com
 
 <h4>Source code of the example:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -19250,6 +19561,8 @@ A slightly different version of the previous example <a href="https://jsbin.com
 </html>
 ```
 
+</details>
+
 <h3 id="ch6-4-4">6.4.4 Tracking a position</h3>
 
 In order to track the current position, the geolocation API provides a method similar to the getCurrentPosition(onSuccess, onError) named watchPosition(onSuccess, onError). 
@@ -19269,6 +19582,7 @@ var watchPosId = navigator.geolocation.watchPosition(showPosition);
 // stop the tracking
 navigator.geolocation.clearWatch(watchPosId);
 ```
+
 <p>
 As a test, you may just try to change getCurrentPosition to watchPosition in the previous examples, and try this code using a mobile phone or tablet, walk for 20 meters and see the position changing.
 
@@ -19288,6 +19602,9 @@ Several options are available when using HTML5 geolocation. We can pass a third 
 <h4>Example of use</h4>
 
 <h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 // Just ask to turn GPS on, if available
@@ -19309,7 +19626,9 @@ watchId=navigator.geolocation.watchPosition(onSuccess, onError,
     {enableHighAccuracy:true, maximumAge:30000, timeout:27000});
 ```
 
-Look for the explanations in the lines of comment.
+</details>
+
+<p>Look for the explanations in the lines of comment.</p>
 
 <h3 id="ch6-4-5">6.4.5 Geolocation and maps</h3>
 <p>
@@ -19338,6 +19657,9 @@ How to get a map centered on your longitude and latitude.
 </p>
 
 <h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 function getLocation(e) {
@@ -19372,7 +19694,12 @@ alert('Get current position fail. Please access codepen to get geolocation.');
 }
 ```
 
+</details>
+
 <h4>CSS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 html, body {
@@ -19393,7 +19720,12 @@ display: inline-block;
 }
 ```
 
+</details>
+
 <h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <html>
@@ -19409,6 +19741,8 @@ display: inline-block;
 </body>
 </html>
 ```
+
+</details>
 
 <h4>Source code extract:</h4>
 
@@ -19509,6 +19843,7 @@ Google reverse geocoding example (screenshot only):</p>
 
 <details>
  <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -19593,6 +19928,7 @@ function showPosition(position) {
 </body>
 </html>
 ```
+
 </details>
 
 Gisgraphy (free service) reverse geocoding example (screenshot only, click on it to see [the demo on the Gisgraphy website](https://services.gisgraphy.com/static/leaflet/index.html)):
@@ -19606,11 +19942,11 @@ Gisgraphy (free service) reverse geocoding example (screenshot only, click on it
    width="65%" />
 </p>
 
-<h4>Example #2: reverse geocoding + OpenStreetMap</h4>
+<h4><b>Example #2:</b> reverse geocoding + OpenStreetMap</h4>
 
-Important note: these examples below rely on an external [GitHub resource](https://github.com/perliedman/leaflet-control-geocoder). No related questions are asked in this module's exerises or final exam.
+<p><b>Important note:</b> these examples below rely on an external <a href="https://github.com/perliedman/leaflet-control-geocoder">GitHub resource</a>. No related questions are asked in this module's exerises or final exam.
 
-Please, pan and zoom on the map and click. The longitude and latitude are computed from your click and a free reverse geocoding service is used to convert to a physical address.
+Please, pan and zoom on the map and click. The longitude and latitude are computed from your click and a free reverse geocoding service is used to convert to a physical address.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 332. reverse geocoding - openstreetmap (449) -------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19899,10 +20235,5 @@ Click on the Codepen logo (on the top right) so to run the <a href="https://cod
 
 . . .The end.
 
-**[`^        back to top        ^`](#table-of-contents)**
 
-<div align="right">
-  <b><a href="#table-of-contents">↥ Back To Top</a></b>
-</div>
-
-<h3><b><i>08-17-2022 11:09am</i></b></h3>
+<h2><b><i>08-17-2022 11:09am</i></b></h2>
