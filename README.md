@@ -92,35 +92,7 @@
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc; 
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
-</style>
-
-<h2 id-"cha-1">About W3C and the Web</h2>
+<h2 id-"cha">About W3C and the Web</h2>
 
 <h2 id="chb">Course Information</h2>
 
