@@ -27,8 +27,6 @@
 <!---- &#955;   &#9658;  &#767;  &#2400;  --->
 
 
-<h2>Table of Contents</h2>
-
 <a href="#Put H2 Heading Here">1. Put H2 Heading Here</a>
 <a href="#Put H2 Heading Here">2. Put H2 Heading Here</a> 
 <a href="#Put H2 Heading Here">3. Put H2 Heading Here</a> 
@@ -45,9 +43,9 @@
 
 <ol type="1">
 <li><a href="#chb">Course Introduction and Practical Information</a></li>
-<li><a href="#chb-1">Course syllabus</a></li>
-<li><a href="#chb-2">Getting around the course</a></li>
-<li><a href="#chb-3">Course tools</a></li>
+<li><a style="margin-left: 2rem;" href="#chb-1" Sub-Heading">b.1 Course syllabus</a></li>
+<li><a style="margin-left: 2rem;" href="#chb-2" Sub-Heading">b.2 Getting around the course</a></li>
+<li><a style="margin-left: 2rem;" href="#chb-3" Sub-Heading">b.3 Course tools</a></li>
 </ol>
 
 ## [**Module 1: HTML5 Basics**](#ch1)
