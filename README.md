@@ -26,13 +26,22 @@
 <!---- right arrow , left arrow , oriental , tilde ---->
 <!---- &#955;   &#9658;  &#767;  &#2400;  --->
 
-## [Table of Contents](#table-of-contents)
 
-## [**About W3C and the Web**](#cha)
->### - [**About W3C**](#cha-1)
->### - [**Why accessibility is important**](#cha-2)
->### - [**Why internationalization is important**](#cha-3)
->### - [**W3C tools**](#cha-4)
+<h2>Table of Contents</h2>
+
+<a href="#Put H2 Heading Here">1. Put H2 Heading Here</a>
+<a href="#Put H2 Heading Here">2. Put H2 Heading Here</a> 
+<a href="#Put H2 Heading Here">3. Put H2 Heading Here</a> 
+<a style="margin-left: 2rem;" href="#H3 Sub-Heading">3.1. H3 Sub-Heading</a> 
+<a style="margin-left: 2rem;" href="#H3 Sub-Heading">3.2. H3 Sub-Heading</a>
+
+<h2><a href="#table-of-contents">Table of Contents</a></h2>
+<ol type="a">
+<li><a href="#cha-1">About W3C and the Web</a></li>
+<li><a href="#cha-2">Why accessibility is important</a></li>
+<li><a href="#cha-3">Why internationalization is important</a></li>
+<li><a href="#cha-4">W3C tools</a></li>
+</ol>
 
 ## [**Course Introduction and Practical Information**](#chb)
 >### * [**Course syllabus**](#chb-1)
@@ -40,13 +49,6 @@
 >### * [**Course tools**](#chb-3)
 
 ## [**Module 1: HTML5 Basics**](#ch1)
->### 1.1 [**Introduction - Module 1**](#ch1-1-1)
->### 1.2 [**From HTML1.0 to HTML5**](#ch1-2-1)
->### 1.3 [**New structural elements**](#ch1-3)
->### 1.4 [**Other elements and attributes**](#ch1-4-1)
->### 1.5 [**Microdata**](#ch1-5-1)
->### 1.6 [**Exercises**](#ch1-6-1)
-
 ## [**Module 2: HTML5 Multimedia**](#ch2)
 >### 2.1 [**Introduction - Module 2**](#ch2-1-1)
 >### 2.2 [**Streaming multimedia content: the video and audio elements**](#ch2-2-1)
@@ -21142,4 +21144,4 @@ Click on the Codepen logo (on the top right) so to run the <a href="https://cod
 . . .The end.
 
 
-<h2><b><i>08-17-2022 11:09am</i></b></h2>
+<h2><b><i>08-28-2022 6:26pm</i></b></h2>
