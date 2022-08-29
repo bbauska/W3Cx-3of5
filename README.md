@@ -43,10 +43,12 @@
 <li><a href="#cha-4">W3C tools</a></li>
 </ol>
 
-## [**Course Introduction and Practical Information**](#chb)
->### * [**Course syllabus**](#chb-1)
->### * [**Getting around the course**](#chb-2)
->### * [**Course tools**](#chb-3)
+<ol type="1">
+<li><a href="#chb">Course Introduction and Practical Information</a></li>
+<li><a href="#chb-1">Course syllabus</a></li>
+<li><a href="#chb-2">Getting around the course</a></li>
+<li><a href="#chb-3">Course tools</a></li>
+</ol>
 
 ## [**Module 1: HTML5 Basics**](#ch1)
 ## [**Module 2: HTML5 Multimedia**](#ch2)
