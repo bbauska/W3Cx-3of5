@@ -49,6 +49,8 @@
 </ol>
 
 ## [**Module 1: HTML5 Basics**](#ch1)
+
+
 ## [**Module 2: HTML5 Multimedia**](#ch2)
 >### 2.1 [**Introduction - Module 2**](#ch2-1-1)
 >### 2.2 [**Streaming multimedia content: the video and audio elements**](#ch2-2-1)
@@ -9852,7 +9854,7 @@ This example shows that filled and wireframe shapes should be drawn differently 
 
 Try this:
 <!------------------------------------------------------------------------------------------------>
-<!--- 138.  (xxx) -->
+<!--- 138.number 138  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image138.png?raw=true"
