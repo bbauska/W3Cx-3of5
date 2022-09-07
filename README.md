@@ -3830,6 +3830,8 @@ However, if you do not find a vocabulary corresponding to your needs, keep in mi
 22. </section>
 ```
 
+</details>
+
 <p>
 In this example, the container is a &lt;section&gt; that corresponds to a Person (we have one clue here: the name of the vocabulary given by the itemtype attribute), and each property defined inside this section is identified by the value of the itemprop attribute of sub-elements.
 </p>
@@ -3931,19 +3933,19 @@ Now, let's see what elements are compatible with the itemprop attribute and wh
 | &lt;meta&gt; element | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
 | anything else | The data is whatever is in the text of the element. |
 <p>
-For example, the value of a property defined in an <img> element will be the value of the src attribute:</p>
+For example, the value of a property defined in an &lt;img&gt; element will be the value of the src attribute:</p>
 
 ```
 1.  <img itemprop="image" src="MichelBuffa.png" alt="A great professor">
 ```
 
-<p>Or for a <time>, it will be the value of the datetime attribute:</p>
+<p>Or, for a &lt;time&gt;, it will be the value of the datetime attribute:</p>
 
 ```
 1.  <time itemprop="birthday" datetime="1965-04-16">April 16, 1965</time>
 ```
 
-<p>Or for an <a> element, the value will be the value of the href attribute:</p>
+<p>Or, for an &lt;a&gt; element, the value will be the value of the href attribute:</p>
 
 ```
 1.  <a href="https://www.twitter.com/micbuffa" itemprop="url">profile</a>
@@ -4064,7 +4066,7 @@ Help! &lt;video src="my youtube video URL"&gt;&lt;/video&gt; does not work! 
 
 <b>BEWARE</b>: you cannot directly embed videos from most of the popular Web sites such as YouTube, Dailymotion, Vimeo, etc. For commercial reasons, and because advertising is automatically added to the videos, these Web sites do not allow "regular" embedding of their videos.
 
-While they use HTML5 to render their videos, these hosting sites (YouTube, etc.) use rather complex techniques in order to prevent you from using them with the &lt;video&gt;element. Instead, you often need to embed an <iframe> that will render the HTML5 videos in your Web site, and of course, the advertising that comes along with them.
+While they use HTML5 to render their videos, these hosting sites (YouTube, etc.) use rather complex techniques in order to prevent you from using them with the &lt;video&gt;element. Instead, you often need to embed an &lt;iframe&gt; that will render the HTML5 videos in your Web site, and of course, the advertising that comes along with them.
 
 Usually you have an "embed" button close to the videos that prompts you with some HTML code that you can copy and paste for embedding.</p>
 
@@ -4159,8 +4161,8 @@ Notice the other similarities: between the &lt;audio&gt;...&lt;audio&gt; tags,
 </p>
 <h4>External resources</h4>
 <ul>
-<li>From W3C's specification: [The audio element](https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element)</li>
-<li>From MDN's Web Docs: [&lt;audio&gt;: The Embed Audio element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)</li>
+<li>From W3C's specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element">The audio element</a></li>
+<li>From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">&lt;audio&gt;: The Embed Audio element</a></li>
 </ul>
 
 <h3 id="ch2-2-3">2.2.3 Attributes of &lt;video&gt; and &lt;audio&gt;</h3>
@@ -4255,6 +4257,7 @@ Please move the mouse pointer over this player's elements: (does not work in git
 </details>
 </p>
 
+<!------------------------------------------------------------------------------------------------>
 <!-------------------------- 70. two gery-black horses in a field (87) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
@@ -4352,7 +4355,7 @@ Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
 See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example online</a> (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it's playing.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 71.  (xx) ------------------------------->
+<!------------------------------ 71. pseudo css class: hover (88) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image071.png?raw=true"
@@ -4404,7 +4407,7 @@ Example #1: with a regular video
 Full width, resizable, borderless video, just using plain CSS and JS DOM events.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 72.  (xx) ------------------------------->
+<!------------------------- 72. full width video like paypal site (97) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image072.png?raw=true"
@@ -4413,7 +4416,7 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 &nbsp;
 <br/>
 
-<p>Here is the HTML code. It's really simple, just notice the &lt;body onload="init();"&gt; which calls the JavaScript init() function right after the page is loaded.</p>
+<h4>Here is the HTML code. It's really simple, just notice the &lt;body onload="init();"&gt; which calls the JavaScript init() function right after the page is loaded.</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -4442,8 +4445,8 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 
 </details>
 
-<p>
-Here is the CSS (remove margins, remove padding, hide parts that could overflow from the &lt;body&gt;):</p>
+<h4>
+Here is the CSS (remove margins, remove padding, hide parts that could overflow from the &lt;body&gt;):</h4>
 
 ```
 body {
@@ -4453,7 +4456,7 @@ body {
 }
 ```
 
-<p>And now the JavaScript code:</p>
+<h4>And now the JavaScript code:</h4>
 
 ```
 var video;
@@ -4649,7 +4652,7 @@ Setting the video to 100% width and height results in different behavior:
 
 <h3 id="ch2-2-5">2.2.5 Control Players From JavaScript</h3>
 <p>
-The <video> and <audio> elements have methods, properties/attributes and events that can be manipulated with JavaScript. Using the DOM API, it's possible to manipulate an audio or video element as a JavaScript object that has:
+The &lt;video&gt; and &lt;audio&gt; elements have methods, properties/attributes and events that can be manipulated with JavaScript. Using the DOM API, it's possible to manipulate an audio or video element as a JavaScript object that has:
 </p>
 <ul>
 <li><b>Methods</b> for controlling the behavior, such as play(), pause(), etc.</li>
@@ -4657,9 +4660,9 @@ The <video> and <audio> elements have methods, properties/attributes and eve
 <li><b>Events</b> generated during the life cycle of the element that can be processed using JavaScript callbacks. It is also possible to send events to control the video player.</li>
 </ul>
 <p>
-The set of properties/attributes/methods of the <audio> and <video> elements is called an "API" (Application Programming Interface). For example, we will speak here of the "media API" to talk about the associated API.
+The set of properties/attributes/methods of the &lt;audio&gt; and &lt;video&gt; elements is called an "API" (Application Programming Interface). For example, we will speak here of the "media API" to talk about the associated API.
 
-Like any HTML element, the <video> element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a <video> element:
+Like any HTML element, the &lt;video&gt; element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a &lt;video&gt; element:
 </p>
 
 ```
@@ -4686,7 +4689,7 @@ Please look at this interesting example:
 &nbsp;
 <br/>
 <p>
-Note that in order to play the video, you must click on the "vid.play()" text. To pause it, you click on the "vid.pause()" text, and so on. *Notice the text at the top of the video, as well as the transparency.* The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
+Note that in order to play the video, you must click on the "vid.play()" text. To pause it, you click on the "vid.pause()" text, and so on. <i>Notice the text at the top of the video, as well as the transparency.</i> The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
 </p>
 <b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let's see a little more of what we can do using the JavaScript API of the <video> element (it will be an identical approach for the <audio> element, since it shares the same API by a very small margin).
 
@@ -4956,7 +4959,7 @@ Don't forget to click the JavaScript and CSS tabs of the CodePen in order to di
 <ul>
 <li>It uses the HTML5 elements &lt;nav&gt;, &lt;footer&gt;, &lt;header&gt;.</li>
 <li>It shows the use of CSS3 2D transformations (scale, translate, and rotate).</li>
-<li>It shows how to handle DOM events using JavaScript and how to modify CSS properties of the <video> element from JavaScript.</li>
+<li>It shows how to handle DOM events using JavaScript and how to modify CSS properties of the &lt;video&gt; element from JavaScript.</li>
 </ul>
 
 <h4>Example #2: how to track all possible events and manipulate many properties</h4>
@@ -5160,14 +5163,14 @@ The example uses a &lt;track&gt; element to insert basic captions to the vid
 ```
 <video height="272" width="640"
        poster="https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg"
-       <b>crossorigin="anonymous"</b>
+       crossorigin="anonymous"
        controls>
    <source src="https://mainline.i3s.unice.fr/mooc/sintel.mp4"
            type="video/mp4">
    <source src="https://mainline.i3s.unice.fr/mooc/sintel.webm"
            type="video/webm">
-   <b><track src="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt"</b>
-<b>          kind="captions" label="Closed Captions" default></b>
+   <track src="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt"
+          kind="captions" label="Closed Captions" default>
 </video>
 ```
 
@@ -5361,7 +5364,7 @@ The displayed text can span multiple lines, but blank lines are not allowed, as 
 
 <p>Let's look at a simple example. First, you need a video on one of the formats/codecs supported by the browsers you target. A recommended codec is mp4/H264, but other formats, such as webm, may have some advantages if the browser supports them. For example, webm allows the video to start playing after a much shorter buffering time. In other words, try if possible to provide the video encoded with more than one codec.
 
-For this, use any sort of open source, free or commercial video encoding software, such as [Handbrake](https://handbrake.fr/) (free, open source) or [Super](https://www.erightsoft.com/SUPER.html) (free). There are also online video encoding services, and you can even upload your video to YouTube, let it encode your video in several resolutions and codecs, and use a browser extension such as [Video DownloadHelper ](https://addons.mozilla.org/fr/firefox/addon/video-downloadhelper/)(for Firefox) or [JDownloader](https://jdownloader.org/), to download the video in your chosen formats.
+For this, use any sort of open source, free or commercial video encoding software, such as <a href="https://handbrake.fr/">Handbrake</a> (free, open source) or <a href="https://www.erightsoft.com/SUPER.html">Super</a> (free). There are also online video encoding services, and you can even upload your video to YouTube, let it encode your video in several resolutions and codecs, and use a browser extension such as <a href="https://addons.mozilla.org/fr/firefox/addon/video-downloadhelper/">Video DownloadHelper</a> (for Firefox) or <a href="https://jdownloader.org/">JDownloader</a>, to download the video in your chosen formats.
 
 So, let's suppose you have a video like the one below (we included it on YouTube for practical reasons). This video has subtitles (you can activate them in the YouTube player), but the goal of this lesson is to explain how we made them without using the YouTube embedded tools, which do not allow export the subtitle file to be exported in the webVTT format.</p>
 
@@ -5587,7 +5590,7 @@ It is possible to style using CSS classes as part of a cue value, using the <c
 
 The ::cue pseudo element selector is used to match "cues" in the webVTT file. You add parenthesis and a secondary CSS selector to match cues that have a particular id, or a particular CSS class, etc. Look at the CSS above and at the extract from the webVTT file, play the video, you will understand how the above CSS classes affect the rendering of the subtitles for Jane and Tarzan's voices.
 
-Support differs from one browser to another, see [this compatibility table](https://caniuse.com/#feat=webvtt) (from CanIuse). Note however that most of the enhanced players presented further on in the course provide full support.
+Support differs from one browser to another, see <a href="https://caniuse.com/#feat=webvtt">this compatibility table</a> (from CanIuse). Note however that most of the enhanced players presented further on in the course provide full support.
 
 <h4>Using voicing for styling: the &lt;v&gt; element</h4>
 
@@ -5756,7 +5759,7 @@ We call them "HTML5 enhanced video players" because on top of being based on the
 
 <h4>Accessible players</h4>
 
-For those of you interested in this particular topic, here is a very good resource that compares most of the players presented in this section, in terms of accessibility. This resource has links to players designed especially for people with disabilities: [accessible media players and resources](https://www.digitala11y.com/accessible-jquery-html5-media-players/).
+For those of you interested in this particular topic, here is a very good resource that compares most of the players presented in this section, in terms of accessibility. This resource has links to players designed especially for people with disabilities: <a href="https://www.digitala11y.com/accessible-jquery-html5-media-players/">accessible media players and resources</a>.
 
 <h4>Advantages and disadvantages of using a custom player</h4>
 
@@ -5800,13 +5803,13 @@ Open source, and made for developers, <a href="https://videojs.com/">video.js</
 
 Either solution (basic player or enhanced player) is good and HTML5 compliant.
 
-Popular players such as  [JWPlayer](https://www.jwplayer.com/) have many explanations and examples on their Web sites, and are either free of charge or come with free versions.
+Popular players such as <a href="https://www.jwplayer.com/">JWPlayer</a> have many explanations and examples on their Web sites, and are either free of charge or come with free versions.
 
 <h4>Interesting comparisons and reviews are available on the following Web sites:</h4>
 
--   Comparison matrix of most of [existing HTML5 video players](https://videosws.praegnanz.de/)
+-   Comparison matrix of most of <a href="https://videosws.praegnanz.de/">existing HTML5 video players</a>
 
--   [10 HTML5 video players compared](https://toppersworld.com/10-html5-video-players-as-alternatives-to-flash-player/)
+-   <a href="https://toppersworld.com/10-html5-video-players-as-alternatives-to-flash-player/">10 HTML5 video players compared</a>
 
 <h4>Example screenshots</h4>
 
@@ -5882,9 +5885,9 @@ We will therefore study together how to access the audio and video streams of th
 
 The <a href="https://www.w3.org/TR/mediacapture-streams/">getUserMedia API</a> is useful for controlling a Webcam video stream.
 
-This API is one component of the [WebRTC specification](https://www.w3.org/TR/webrtc/). When using getUserMedia, to manage a webcam with its video stream, we will always use it in conjunction with the <video> element. We could also use it with the <audio> element if we are only interested in using a microphone (i.e. from a computer), or any sound input .
+This API is one component of the <a href="https://www.w3.org/TR/webrtc/">WebRTC specification</a>. When using getUserMedia, to manage a webcam with its video stream, we will always use it in conjunction with the &lt;video&gt; element. We could also use it with the &lt;audio&gt; element if we are only interested in using a microphone (i.e. from a computer), or any sound input .
 
-The getUserMedia API, when dealing with video streams, is always used in conjunction with the <video> element.
+The getUserMedia API, when dealing with video streams, is always used in conjunction with the &lt;video&gt; element.
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 106. simple web camera display (122) ------------------------------>
@@ -6068,7 +6071,7 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 <h4> Applying CSS effects on a video element with a live webcam</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 108. example: css filter effects (xx) ------------------------------->
+<!--------------------------- 108. example: css filter effects (xx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image108.jpeg?raw=true"
@@ -6216,10 +6219,18 @@ Click the button "start webcam at the end of this page, then click on the video 
 
 <h4>Taking a snapshot from the live Webcam stream</h4>
 
-The trick is to copy and paste the current image from the video stream into a <canvas> element.
+The trick is to copy and paste the current image from the video stream into a &lt;canvas&gt; element.
 
 
-![](media/image109.png){width="6.5in" height="2.0909722222222222in"}
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 109.  (xx) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image109.png?raw=true"
+   alt=""
+   width="65%">
+&nbsp;
+<br/>
 
 
 <h4>JS</h4>
@@ -6284,6 +6295,7 @@ border:1px solid black;
 
 
 <h4>HTML</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -6309,23 +6321,23 @@ Screenshots : <p>
 
 </details>
 
-We will look at this example in greater detail in the next course section (related to the <canvas> element).
+We will look at this example in greater detail in the next course section (related to the &lt;canvas&gt; element).
 
 <h4>Impressive demonstrations available on the Web</h4>
 
--   [WebCam pixelization! Fun!](https://codepen.io/dlueth/pen/zBhwv)
+-   <a href="https://codepen.io/dlueth/pen/zBhwv">WebCam pixelization! Fun!</a>
 
--   [Webcam Toy](https://webcamtoy.com/): video effects on Paul Neave's webcam (using WebGL)
+-   <a href="https://webcamtoy.com/">Webcam Toy</a>: video effects on Paul Neave's webcam (using WebGL)
 
 <h3>2.4.3 Using the Microphone</h3>
 
 Instead of using the getUserMedia API with: navigator.getUserMedia({video:true}, onSuccess, onError), it is also possible to use {audio:true} for the first parameter. In this case, only the microphone input will be captured. Notice that {video:true, audio:true} is also accepted, if you write a video conferencing system and need to capture both the audio and the video (this is often the case when writing WebRTC applications).
 
-Apart from videoconferencing, microphone input will be used for music Web apps, from the [WebAudio API](https://www.w3.org/TR/webaudio/). This API focuses on real time sound processing and music synthesis. This API is covered in the advanced W3Cx HTML5 course ([HTML5 Apps and Games](https://www.edx.org/course/html5-apps-and-games)).
+Apart from videoconferencing, microphone input will be used for music Web apps, from the <a href="https://www.w3.org/TR/webaudio/">WebAudio API</a>. This API focuses on real time sound processing and music synthesis. This API is covered in the advanced W3Cx HTML5 course (<a href="https://www.edx.org/course/html5-apps-and-games">HTML5 Apps and Games</a>).
 
-Check out the [WebAudio demonstrations](https://webaudiodemos.appspot.com/) written by Chris Wilson, esp. the one called "Input effects".
+Check out the <a href="https://webaudiodemos.appspot.com/">WebAudio demonstrations</a> written by Chris Wilson, esp. the one called "Input effects".
 
-The image below is taken from [one of the demonstrations](https://webaudiodemos.appspot.com/input/index.html), where the sound captured by the microphone is processed in real time. We get visualizations of the signal in real time as an animated waveform, animated frequencies or animated audiogram. If we connect an electric guitar to the sound card input, then this demonstration shows that we can recreate with WebAudio most of the classic effects used by guitarists (delay, reverb, distortion, chorus, etc.).
+The image below is taken from <a href="https://webaudiodemos.appspot.com/input/index.html">one of the demonstrations</a>, where the sound captured by the microphone is processed in real time. We get visualizations of the signal in real time as an animated waveform, animated frequencies or animated audiogram. If we connect an electric guitar to the sound card input, then this demonstration shows that we can recreate with WebAudio most of the classic effects used by guitarists (delay, reverb, distortion, chorus, etc.).
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 110. webaudio live processing (xxx) ------------------------------>
@@ -6337,10 +6349,10 @@ The image below is taken from [one of the demonstrations](https://webaudiodemos
 </p>
 
 <h3>2.4.4 Webcam Resolution</h3>
+<p>
+It is possible to set "hints" for the preferred cam/resolution during video capture. This is done by using a ["constraint" object ](https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4)that is passed as a parameter to the getUserMedia(...) method. It's just the same object we passed in the basic example: navigator.getUserMedia({video:true}, success, error) except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.
 
-It is possible to set "hints" for the preferred cam/resolution during video capture. This is done by using a ["constraint" object ](https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4)that is passed as a parameter to the getUserMedia(...) method. It's just the same object we passed in the basic example: navigator.getUserMedia(**{video:true}**, success, error) except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.
-
-For more information, this [article on MDN about the getUserMedia API](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) gives great examples on how to set the camera resolution and/or to choose the front or back camera when using a mobile phone.  
+For more information, this <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia">article on MDN about the getUserMedia API</a> gives great examples on how to set the camera resolution and/or to choose the front or back camera when using a mobile phone.</p>
 
 <b>Typical use:</b>
 
@@ -6509,7 +6521,7 @@ https://www.simpl.info/getusermedia/constraints/
 
 <h4>How to check which resolutions are supported by a browser?</h4>
 
-Use this [Web app that ](https://webrtchacks.github.io/WebRTC-Camera-Resolution/)systematically tests a set of "preferred resolutions" and compared them to the actual resolutions returned by the browser. Remember that the requested resolution is a hint, and there is no real guarantee that your configuration will allow it.
+Use this <a href="https://webrtchacks.github.io/WebRTC-Camera-Resolution/">Web app that</a> systematically tests a set of "preferred resolutions" and compared them to the actual resolutions returned by the browser. Remember that the requested resolution is a hint, and there is no real guarantee that your configuration will allow it.
 
 <h4>Selecting the front or rear camera on smartphones</h4>
 
@@ -6519,37 +6531,37 @@ Here are some other constraints you can set. In particular, look at the ones for
  <summary>Click to expand!</summary>
 
 ```
-1.  **// more on video resolution**
-2.  **constraints = {**
+1.  // more on video resolution
+2.  constraints = {
 3.      video: {
-4.          width: { min: 1024,** ideal: 1280**, max: 1920 },
-5.         height: { min: 776,** ideal: 720**, max: 1080 }
+4.          width: { min: 1024, ideal: 1280, max: 1920 },
+5.         height: { min: 776, ideal: 720, max: 1080 }
 6.      }
 7.  }
-8.  **// Framerate**
-9.  **constraints = { video: { frameRate: { ideal: 10, max: 15 } } };**
+8.  // Framerate
+9.  constraints = { video: { frameRate: { ideal: 10, max: 15 } } };
 10.  
-11. **// front and back camera (mobile), some examples**
-12. **var front = false;**
+11. // front and back camera (mobile), some examples
+12. var front = false;
 13. 
 14. document.getElementById('flip-button').onclick = function() {
         front = !front;
     };
-15. **// toggle front and back camera (mobile) by clicking a button**
-16. **constraints = { video: { facingMode: (front? "user" : "environment") } };**
+15. // toggle front and back camera (mobile) by clicking a button
+16. constraints = { video: { facingMode: (front? "user" : "environment") } };
 17.  
-18. **// prefer front camera**
-19. constraints = { audio: true,** video: { facingMode: "user" }** }
+18. // prefer front camera
+19. constraints = { audio: true, video: { facingMode: "user" } }
 20.  
-21. **// require rear camera**
-22. constraints = { audio: true,** video: { facingMode: { exact: "environment" } }** }
+21. // require rear camera
+22. constraints = { audio: true, video: { facingMode: { exact: "environment" } } }
 ```
 
 </details>
 
 <h4>Select input/output for audio and video streams</h4>
 
--   Resource: [WebRTC samples: Select sources & outputs](https://webrtc.github.io/samples/src/content/devices/input-output/)
+-   Resource: <a href="https://webrtc.github.io/samples/src/content/devices/input-output/">WebRTC samples: Select sources & outputs</a>
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 113. webapp for selecting audio and video input/output (xxx) ------------------->
@@ -6557,7 +6569,7 @@ Here are some other constraints you can set. In particular, look at the ones for
 <p align="center" width="100%">
 <img src="./images/image113.jpeg?raw=true"
    width="45%"
-   alt="webapp for selecting audio and video input/output" />
+   alt="webapp for selecting audio and video input/output." />
 </p>
 
 <h4>Source code extract:</h4>
@@ -6787,7 +6799,7 @@ margin: 0 10px 10px 0;
 
 </details>
 
-Click "start recording", then press the play button on the video element on the right of the app. You can also click the "download" button to download a .webm file, playable offline with a media player such as [VLC](https://www.videolan.org/) or online in a Web page with the <video> element.
+Click "start recording", then press the play button on the video element on the right of the app. You can also click the "download" button to download a .webm file, playable offline with a media player such as <a href="https://www.videolan.org/">VLC</a> or online in a Web page with the <video> element.
 
 <h4>Five steps are needed to use the mediaRecorder object</h4>
 
@@ -6888,7 +6900,7 @@ Like that, the recorded stream can be played using a standard HTML5 &lt;video&g
 
 HTML5 is composed of new elements, but it also comes with many JavaScript APIs for controlling video and sound, drawing and animating things in the new <canvas> element, for offline applications, persistence, geolocation, orientation, etc.
 
-So yes, during this course, in particular in Modules 3 and 4, you will have to do a bit of JavaScript. **But, DON'T PANIC!**
+So yes, during this course, in particular in Modules 3 and 4, you will have to do a bit of JavaScript. <b>But, DON'T PANIC!</b>
 
 Here we provide a basic introduction to JavaScript. If you want to learn more, many resources are available on the Web; this document is simply here to give you a head start. Remember that one great thing about these MOOCs courses is that everybody can help each other. Some students are very good in JavaScript and are usually very happy to help others when they encounter difficulties.
 
@@ -6896,9 +6908,9 @@ Here we provide a basic introduction to JavaScript. If you want to learn more, m
 
 <h4>External resources</h4>
 
--   The[ JavaScript Introduction](https://www.edx.org/course/javascript-introduction) course on W3Cx!
+-   The <a href="https://www.edx.org/course/javascript-introduction">JavaScript Introduction</a> course on W3Cx!
 
--   Mozilla Developper Network [has a JS guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+-   Mozilla Developper Network <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">has a JS guide</a>
 
 <h4>What do you need? How to debug? How to catch errors?</h4>
 
@@ -6906,9 +6918,9 @@ We will not look at the JavaScript syntax here, but more at "JavaScript in the b
 
 First of all, you need to find a way to debug your code and see errors. If your work does not produce any results, you must know why!
 
-For that you will use **the dev. tools of your browser**. Press *F12* in Windows or *cmd-alt-i* in Mac to open the dev. tools, then go to the console tab: **this is where errors will be displayed**, or messages of your own (use the console.log(string) JavaScript function in the JavaScript code embedded in your html page). In the console, you will be able to type any JavaScript command.
+For that you will use <b>the dev. tools of your browser</b>. Press <i>F12</i> in Windows or <i>cmd-alt-i</i> in Mac to open the dev. tools, then go to the console tab: **this is where errors will be displayed**, or messages of your own (use the console.log(string) JavaScript function in the JavaScript code embedded in your html page). In the console, you will be able to type any JavaScript command.
 
-Let's look at [ this example on JS Bin](https://jsbin.com/visariz/1/edit?html,output):
+Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this example on JS Bin</a>:
 
 +----+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 1  | <!DOCTYPE html>                                                                                                                                                      |
@@ -7912,7 +7924,7 @@ Let's take a piece of code that draws something corresponding to the original co
 
 </details>
 
-This code is the just the same as in the previous example except that we removed all Xs and Yx in the code. We also added at the end *(lines 25-26*) two lines of code that draw the coordinate system. The drawArrow(startX, startY, endX, endY, width, color) function is a utility function that we will present later. You can see it in the JS source code of the pen below:
+This code is the just the same as in the previous example except that we removed all Xs and Yx in the code. We also added at the end (<i>lines 25-26</i>) two lines of code that draw the coordinate system. The drawArrow(startX, startY, endX, endY, width, color) function is a utility function that we will present later. You can see it in the JS source code of the pen below:
 
 <h4>JS</h4>
 
@@ -8372,7 +8384,7 @@ Aha, this is a very interesting question... the answer is in the next page!
 
 There are two methods for saving and restoring the context properties: ctx.save()and ctx.restore().
 
-What will be saved: fillStyle and strokeStyle, lineWidth, the previous coordinate system, etc. **Meaning that ALL properties that affect drawing!**
+What will be saved: fillStyle and strokeStyle, lineWidth, the previous coordinate system, etc. <b>Meaning that ALL properties that affect drawing!</b>
 
 A call to ctx.save() will probably save the context property values in a hardware register on your graphics card. Multiple contexts can be saved consecutively and restored.
 
@@ -8509,7 +8521,7 @@ We slightly modified the function that draws the monster:
    width="40%" />
 </p>
 
-<p>Source code extract of this function: notice at *lines 3 *and* 26* how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines 7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
+<p>Source code extract of this function: notice at <i>lines 3</i> and <i>26</i> how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines 7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
 
 <details>
  <summary>Click to expand!</summary>
@@ -8913,17 +8925,14 @@ The example above shows the different possible values for this property and the 
 
 Typical use (taken from the example above):
 
+```
 1.  **context.textBaseline = "top";**
-
 2.  context.fillText("top", 0, 75);
-
 3.  **context.textBaseline = "hanging";**
-
 4.  context.fillText("hanging", 40, 75);
-
 5.  **context.textBaseline = "middle";**
-
 6.  context.fillText("middle", 120, 75);
+```
 
 <h4> Setting the horizontal justification of a text with the textAlign property</h4>
 
@@ -8994,7 +9003,7 @@ context.fillText("right", 250, 100);
 
 <h3 id="ch3-3-3">3.3.3 Drawing Images</h3>
 
-Working with images is rather simple, except that we need the images to be fully loaded into memory before drawing them. Loading images is an *asynchronous* process we need to take care of. Working with multiple images might also be difficult for beginners. We present a multiple image loader later on in this course.
+Working with images is rather simple, except that we need the images to be fully loaded into memory before drawing them. Loading images is an <i>asynchronous</i> process we need to take care of. Working with multiple images might also be difficult for beginners. We present a multiple image loader later on in this course.
 
 <b>Let's say it once again</b>: To use an image in a canvas, make sure that the image has been loaded by the Web browser before drawing it!
 
@@ -9051,7 +9060,7 @@ But let's start with a basic example!
 
 3.  When the image file has been loaded, the browser calls the onload callback associated with the image (<i>line 14</i>).
 
-4.  We draw the image only from inside this callback, otherwise we have no guarantee that the image has been loaded and can be usable. The actual drawing here is done *line 17*.
+4.  We draw the image only from inside this callback, otherwise we have no guarantee that the image has been loaded and can be usable. The actual drawing here is done <i>line 17</i>.
 
 5.  There are numerous variants of the drawImage(...) context method at <i>line 17</i>
 
@@ -9296,7 +9305,7 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 
 </details>
 
-The **[DOM Level 2 Events specification](https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents) **says: "*The load event occurs when the DOM implementation finishes loading all content within a document, all frames within a FRAMESET, or an OBJECT element.*"
+The <b><a href="https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents">DOM Level 2 Events specification</a></b> says: "<i>The load event occurs when the DOM implementation finishes loading all content within a document, all frames within a FRAMESET, or an OBJECT element.</i>"
 
 <h3 id="ch3-3-4">3.3.4 Drawing Images from a Video Stream</h3>
 
@@ -9440,19 +9449,19 @@ This example shows:
 
 <h4>Explanations:</h4>
 
--   *Line 11*: the call to setInterval will make the browser execute the processFrame function each 25ms.
+-   <i>Line 11</i>: the call to setInterval will make the browser execute the processFrame function each 25ms.
 
--   *Lines 15, 17 and 18*: in processFrame, drawImage(...) is called 3 times with the video element passed as first parameter.
+-   <i>Lines 15, 17 and 18</i>: in processFrame, drawImage(...) is called 3 times with the video element passed as first parameter.
 
--   *Line 43*: the video element declared at *line 43* has autoplay=true and loop=true, it starts playing the video as soon as possible and will loop it.
+-   <i>Line 43</i>: the video element declared at <i>line 43</i> has autoplay=true and loop=true, it starts playing the video as soon as possible and will loop it.
 
--   *Line 21*: We implemented a rotating video effect in the drawRotatingVideo. The use of context save/restore is primordial as this function changes the coordinate system at each call, translating and rotating it. Notice the extra translation at *line 31* that translates the coordinate system backwards with half of the size of the image that is drawn. We did this in order to make the image rotate around the center of the rectangle, instead of around the top left corner at (0, 0) by default. Try commenting out this line in the running example and you will see what we mean.
+-   <i>Line 21</i>: We implemented a rotating video effect in the drawRotatingVideo. The use of context save/restore is primordial as this function changes the coordinate system at each call, translating and rotating it. Notice the extra translation at <i>line 31</i> that translates the coordinate system backwards with half of the size of the image that is drawn. We did this in order to make the image rotate around the center of the rectangle, instead of around the top left corner at (0, 0) by default. Try commenting out this line in the running example and you will see what we mean.
 
 <h3 id="ch3-4-1">3.4.1 Immediate Mode vs. Path Mode</h3>
 
 <h4>Immediate mode</h4>
 
-As a reminder: an immediate mode means "executing a call to a drawing method means *immediately* drawing in the canvas". The drawing appears as soon as the design instruction is executed.
+As a reminder: an immediate mode means "executing a call to a drawing method means <i>immediately</i> drawing in the canvas". The drawing appears as soon as the design instruction is executed.
 
 -   In the previous examples, we saw how to draw rectangles using the fillRect(x, y, width, height) and strokeRect(x, y, width, height) methods of the context.
 
@@ -9538,7 +9547,7 @@ Your browser does not support the canvas tag.</canvas>
 
 </details>
 
-*Lines 12-18* draw 1000 rectangles of random sizes in immediate mode. We also measure the time using the usual console.time(name_of_timer) and console.timeEnd(name_of_timer) that will write in the browser console the time elapsed. Note that console.time(...) and console.timeEnd(...) display results only in the browser's console, not in the JSBin console.
+<i>Lines 12-18</i> draw 1000 rectangles of random sizes in immediate mode. We also measure the time using the usual console.time(name_of_timer) and console.timeEnd(name_of_timer) that will write in the browser console the time elapsed. Note that console.time(...) and console.timeEnd(...) display results only in the browser's console, not in the JSBin console.
 
 On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawing all these rectangles:
 
@@ -9616,9 +9625,9 @@ Extract from source code (the part that draws the rectangles):
 8.  ctx.stroke(); // draws the whole buffer (the 1000 rectangles) at once
 ```
 
-Instead of calling strokeRect(...) or fillRect(...), we just call the rect(...) method of the context (*line 7*). This is how we can delay the drawing of the rectangles. The 1000 rectangles are stored in a buffer in the hardware.
+Instead of calling strokeRect(...) or fillRect(...), we just call the rect(...) method of the context (<i>line 7</i>). This is how we can delay the drawing of the rectangles. The 1000 rectangles are stored in a buffer in the hardware.
 
-The call to ctx.stroke() (*line 9*) or to its sister method ctx.fill() will draw the entire buffer contents in fill or stroke mode.
+The call to ctx.stroke() (<i>line 9</i>) or to its sister method ctx.fill() will draw the entire buffer contents in fill or stroke mode.
 
 And here is what the timer gives: a slightly faster execution time. Changing 1000 to 100,000 will give even larger differences.
 
@@ -9889,7 +9898,7 @@ Try this:
 
 </details>
 
-In this last example, we simply called the moveTo() method between each part of the path (*lines 5 and 10*). And we called stroke() (*line 16*) only once to draw the whole path.
+In this last example, we simply called the moveTo() method between each part of the path (<i>lines 5 and 10</i>). And we called stroke() (<i>line 16</i>) only once to draw the whole path.
 
 <h3 id="ch3-4-4">3.4.4 Drawing Lines with Different Styles</h3>
 
@@ -16135,15 +16144,15 @@ Example: we want to celebrate birthday parties only on Saturdays, [check this 
 </datalist>
 ```
 
-**The list attribute of the input element must match the id attribute of the datalist element.**
+<b>The list attribute of the input element must match the id attribute of the datalist element.</b>
 
-**If you use the min, max, or step attributes with a list attribute, it may filter the restricted list even more.** Check [this example on JSBin](https://jsbin.com/gucuxon/1/edit?html,output) (tested with Google Chrome), that has a restricted list of three elements, one of which is filtered because it is not in in the min/max range.
+<b>If you use the min, max, or step attributes with a list attribute, it may filter the restricted list even more.</b> Check <a href="https://jsbin.com/gucuxon/1/edit?html,output">this example on JSBin</a> (tested with Google Chrome), that has a restricted list of three elements, one of which is filtered because it is not in in the min/max range.
 
 <h4>Responding to date changes, trying date/time and other variants</h4>
 
 <h4>Listening to the input event</h4>
 
-Here is [an interactive example at JSBin](https://jsbin.com/ganipuv/edit?html,output) where you can change the type of date/time chooser. It also shows how to listen to the input event when a date/time is chosen.
+Here is <a href="https://jsbin.com/ganipuv/edit?html,output">an interactive example at JSBin</a> where you can change the type of date/time chooser. It also shows how to listen to the input event when a date/time is chosen.
 
 <h4>Source code:</h4>
 
@@ -16182,13 +16191,13 @@ Here is [an interactive example at JSBin](https://jsbin.com/ganipuv/edit?html,o
 
 </details>
 
-*Lines 20-26* show how we can detect a date change using JavaScript.
+<i>Lines 20-26</i> show how we can detect a date change using JavaScript.
 
 <h4>Checking if the chosen date is in the past or in the future using the valueAsDate property</h4>
 
 The object returned to the input event handler has a useful property named valueAsDate. This is a JavaScript date object that can be compared to other JavaScript date objects, in particular to the date of the day we can get with var date = new Date();
 
-[The following example at JSBin](https://jsbin.com/renevaf/edit?html,output) shows how to ascertain whether a date is in the past or in the future: 
+<a href="https://jsbin.com/renevaf/edit?html,output">The following example at JSBin</a> shows how to ascertain whether a date is in the past or in the future: 
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 235.  (xxx) ------------------->
@@ -21146,4 +21155,4 @@ Click on the Codepen logo (on the top right) so to run the <a href="https://cod
 . . .The end.
 
 
-<h2><b><i>08-28-2022 6:26pm</i></b></h2>
+<h2><b><i>09-06-2022 9:46pm</i></b></h2>
