@@ -49,7 +49,11 @@
 </ol>
 
 ## [**Module 1: HTML5 Basics**](#ch1)
-
+>### 1.1 [**Introduction - Module 1: HTML Basics**](#ch1-1-1)
+>### 1.2 [**From HTML1.0 to HTML5**](#ch1-2-1)
+>### 1.3 [**Structural element**](#ch1-3-1)
+>### 1.4 [**Other elements and attributes**](#ch1-4-1)
+>### 1.5 [**Microdata**](#ch1-5-1)
 
 ## [**Module 2: HTML5 Multimedia**](#ch2)
 >### 2.1 [**Introduction - Module 2**](#ch2-1-1)
@@ -12341,7 +12345,9 @@ We added color stops using a method similar to that used for linear gradients
 
 You get some nice effects; here we set the second circle's center 60 pixels to the right of the first circle's center (cx = 210 instead of 150):
 
+```
 1.  grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
+```
 
 <h4>Here is the result:</h4>
 <!------------------------------------------------------------------------------------------------>
@@ -17957,7 +17963,7 @@ Grades:  
 
 The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)") at li*ne 4*.
 
-The effect JavaScript function will change the current value of the <meter> element (*line 9*) and update the displayed html content of the <output> element (*line 10*).
+The effect JavaScript function will change the current value of the <meter> element (<i>line 9</i>) and update the displayed html content of the <output> element (<i>line 10</i>).
 
 The color of the gauge changes depending on the attribute's values
 
@@ -18135,7 +18141,7 @@ Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,outp
 
 </details>
 
-As you can see at l*ines 2* and *4*, the id and list attributes match. The <datalist> element is wrapped around a set of  <option> that are available for selection by another form control (in this example the input field from *line 2*).
+As you can see at l*ines 2* and *4*, the id and list attributes match. The <datalist> element is wrapped around a set of  <option> that are available for selection by another form control (in this example the input field from <i>line 2</i>).
 
 <h3 id="ch5-7-1">5.7.1 Introduction</h3>
 
@@ -18713,7 +18719,7 @@ We have already studied some of the HTML5 JavaScript APIs, including:
 
 However, HTML5 also comes with several APIs that are not directly related to HTML elements, namely: the Orientation API; the Geolocation API; most APIs related to client-side persistence; the Web Storage API; the Web Workers API; and some other APIs that are not in the HTML5 specification, but are related to it, such as the GamePad API, the Web Audio API, etc.
 
-This week, we will look at some of the most useful APIs. Others will be covered in the [W3C HTML5 Apps and Games course](https://www.edx.org/course/html5-apps-and-games):
+This week, we will look at some of the most useful APIs. Others will be covered in the <a href="https://www.edx.org/course/html5-apps-and-games">W3C HTML5 Apps and Games course</a>:
 <ul>
 <li><b>The "Web Storage" API, sort of "super cookies", for storing pairs of key/values client side.</b> This API is useful for enabling Web sites to save/restore their state, or for writing *serverless* applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.</li>
 <li><b>The File API, that enables Web applications to work with local files</b>. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.</li>
@@ -21035,4 +21041,4 @@ Click on the Codepen logo (on the top right) so to run the <a href="https://cod
 . . .The end.
 
 
-<h2><b><i>09-09-2022 7:05pm</i></b></h2>
+<h2><b><i>09-10-2022 7:48am</i></b></h2>
