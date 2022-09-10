@@ -17097,7 +17097,7 @@ To see auto-completion in action: enter something in both fields and submit the 
 
 This attribute is useful for transferring the focus to a field other than the first field in a page/form (by default the first input field has the focus).
 
-*Attention*: there must not be more than one element in the document with the autofocus attribute specified!
+<i>Attention</i>: there must not be more than one element in the document with the autofocus attribute specified!
 
 This example below illustrates the use of the autofocus attribute: the focus is put on the second input field of the page. It also shows the use of  required, placeholder and pattern attributes.
 
@@ -17113,7 +17113,7 @@ Enter at least 6 chars, max 9 chars (this field has the autofocus attribute):!
 
 Bottom of Form
 
-**Notice that the focus in on the second input field, thanks to the autofocus attribute.**
+Notice that the focus in on the second input field, thanks to the autofocus attribute.
 
 <h4>Extract from source code:</h4>
 
@@ -17129,7 +17129,7 @@ Bottom of Form
 6.             placeholder="6 to 9 chars please..."
 7.             pattern="w{6,9}"
 8.             required
-9.             **autofocus**
+9.             autofocus
 10.            type="text"/>
 11.     ...
 12. </form>
@@ -17139,7 +17139,7 @@ Bottom of Form
 
 <h4>Note about Boolean attributes syntax</h4>
 
-**Important: **: For "Boolean" attributes, such as autofocus, required, optional, etc., you are able to either write autofocus="autofocus", or just use the attribute name "autofocus" without setting a value.
+Important: : For "Boolean" attributes, such as autofocus, required, optional, etc., you are able to either write autofocus="autofocus", or just use the attribute name "autofocus" without setting a value.
 
 Read [these explanations](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes) for a complete description of the syntax of Boolean attributes.
 
@@ -17360,7 +17360,7 @@ These attributes are useful for several input types such as number, range, da
 
 The min and max attributes are used to set ranges to input fields that accept numerical values or a date/time.
 
-**Their detailed use with these input fields have already been explained in section 5.4 of this course dedicated to these particular input field types.**
+Their detailed use with these input fields have already been explained in section 5.4 of this course dedicated to these particular input field types.
 
 <h4>Typical use</h4>
 
@@ -17404,7 +17404,7 @@ With the <input type="email">, this attribute enables the user to enter *a s
 
 Or try it below in your browser: type in a list of email addresses separated by a comma, then look at the input field background color (pink = invalid, green = valid), and then submit:
 
-This form uses: <input type="email" name="myemail" **multiple**>
+This form uses: <input type="email" name="myemail" multiple>
 
 Top of Form
 
@@ -17526,7 +17526,7 @@ The formmethod attribute does the same with the POST/GET method attribute of
 6.  </form>
 ```
 
-*Line 3* overrides the values set in *line 1*. 
+<i>Line 3</i> overrides the values set in <i>line 1</i>.
 
 <h4>Examples</h4>
 
@@ -17567,11 +17567,11 @@ The second example shows a form with two submit buttons:
 &nbsp;
 <br/>
 
-### 5.5.11 formnovalidate
+<h3 id="ch5-5-11">5.5.11 formnovalidate</h3>
 
 The formnovalidate attribute is targeted to the <input type="submit"> input fields. This attribute is rarely used, so there will be no questions about it in the end of the week's exercises.
 
-This atrribute allows the submission of a form even if it contains  *invalid* fields. For example:  a form that has an <input type="email"> field or a field required and which are not filled. 
+This atrribute allows the submission of a form even if it contains  <i>invalid</i> fields. For example:  a form that has an <input type="email"> field or a field required and which are not filled. 
 
 In general, such forms have two submit buttons, one with the formnovalidate attribute set to a non null value and one without.
 
@@ -17587,9 +17587,9 @@ Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,outp
 4.       <label for="email">E-mail:</label>
 5.       <input type="email" name="email" id="email"/><br>
 6.       <input type="submit" value="Submit" /><br>
-7.       **<input type="submit"**
-8.              **formnovalidate** 
-9.              **value="Submit without validation" />**
+7.       <input type="submit"
+8.              formnovalidate
+9.              value="Submit without validation" />
 10. </fieldset>
 11. </form>
 ```
@@ -17606,7 +17606,7 @@ This attribute's value indicates where the response from the form submission sho
 
 ```
 1.  <input type="submit"
-2.         **formtarget="_blank"**
+2.         formtarget="_blank"
 3.         value="Submit but show results in a new window/tab">
 ```
 
@@ -17638,29 +17638,22 @@ Family name: ![](./images/image269.wmf)
 <br/>
 ![](./images/image274.wmf) ![](./images/image275.wmf)
 
-Source code:
+<h4>Source code:</h4>
 
+```
 1.  <form action="defaultAction.php">
-
 2.       <label for="givenName">Given name:</label>
-
 3.       <input type="text" name="givenName" id="givenName"><br>
-
 4.       <label for="familyName">Family name:</label>
-
 5.       <input type="text" name="familyName" id="familyName"><br>
-
 6.       <input type="submit" value="Submit as usual">
-
 7.       <input type="submit"
-
 8.             **formtarget="_blank"**
-
 9.             value="Submit but show results in a new window/tab">
-
 10. </form>
+```
 
-### 5.5.13 formenctype
+<h3 id="ch5-5-13">5.5.13 formenctype</h3>
 
 A word about the enctype attribute of the <form> element
 
@@ -17668,53 +17661,40 @@ The enctype attribute existed before HTML5. It is often used together with for
 
 [Online example at JSBin](https://jsbin.com/magexat/3/edit?html,output):
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.    <head>
-
 4.      <meta charset="utf-8">
-
 5.      <title>Jsbin</title>
-
 6.    </head>
-
 7.    <body>
-
 8.      <form action="default.php" method="post" enctype="multipart/form-data">
-
 9.        Given name: <input type="text" name="gname"><br>
-
 10.       Family name: <input type="text" name="fname"><br>
-
 11.       <input type="submit" value="Submit">
-
 12.     </form>
-
 13.   </body>
-
 14. </html>
+```
 
 Note that when you send form content using Ajax, this attribute is not needed, as you will specify the type of data sent to the remote server in JavaScript, using the [FormData object](https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects).
 
-### As an attribute of the <input type="submit" enctype=...> element
+<h4>As an attribute of the <input type="submit" enctype=...> element</h4>
 
 Since HTML5, this attribute can also be used in <input type="submit"> input fields.
 
 If an <input type="submit"> field has this attribute, then, **when submitted using method=POST**, the browser will send the form content encoded with the method specified by the formenctype attribute. And this overrides the value of the enctype attribute specified in the <form enctype=...> element (or its default value, if not present).
 
-### Typical use
+<h4>Typical use</h4>
 
+```
 1.  <form action="defaultAction.php">
-
 2.     ...
-
 3.     **<input type="submit" formenctype="multipart/form-data"**
-
 4.            **value="Submit as Multipart/form-data">**
-
 5.  </form>
+```
 
 The possible values for this field are:
 
@@ -17724,20 +17704,19 @@ The possible values for this field are:
 
 -   text/plain: some encoding is done on standard characters like space (that becomes a "+"), nothing is done for special characters.
 
-### Example
+<h4>Example</h4>
 
-[Try this online example at JSBin](https://jsbin.com/lokukam/4/edit?html,output)
+<a href="https://jsbin.com/lokukam/4/edit?html,output">Try this online example at JSBin</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 276.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image276.png?raw=true"
+   alt="Example of use of the formenctype attribute."
+   width="40%">
 &nbsp;
 <br/>
-![example of use of the formenctype attribute](./images/image276.png){width="4.0in" height="1.2413790463692038in"}
 
 Source code:
 
@@ -17775,29 +17754,27 @@ Source code:
 If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,output) standalone mode (click the black arrow on the top right of the output tab, in JSBin), you should see this:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 277.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
+<img src="/images/image277.png?raw=true"
+   alt="JS Bin example of the above example."
+   width="50%">
 &nbsp;
 <br/>
-![js bin screenshot of the above example](./images/image277.png){width="5.0in" height="2.931089238845144in"}
 
 Then, open the devtools and go to the "Network" tab, click on the POST request. Once done, click on the right on the "Header" tab to see the HTTP headers, and scroll down, you should see the form-data entries in the header, like in this screenshot:
 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 278.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
+<img src="/images/image278.png?raw=true"
    alt=""
-   width="35%">
+   width="50%">
 &nbsp;
 <br/>
-![](./images/image278.png){width="5.0in" height="3.4780982064741908in"}
 
 And if you start again and click on the left submit button, the one without the formenctype attribute, you should see that the form content has been submitted "normally" (default value is "urlencoded", spaces are replaced by "+", etc.). Here is a screenshot of what you should see:
 
@@ -17836,15 +17813,14 @@ Let's look at the HTML5 elements related to forms (specifically: <datalist>, <o
 The output element represents the result of a computation or user action. You can see it as a "specialized &lt;div&gt; or <span>" for displaying interactive results.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 279.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
+<img src="/images/image279.jpeg?raw=true"
+   alt="Example of output element use."
    width="35%">
 &nbsp;
 <br/>
-![example of output element use](./images/image279.jpeg){width="3.0in" height="0.7894739720034996in"}
 
 Typical use / interactive examples
 
@@ -17868,13 +17844,13 @@ Top of Form
 
  x  = 6
 
-**Explanations about the attributes specific to the <output> element:**
+Explanations about the attributes specific to the &lt;output&gt; element:
 
--   for: a space-separated list containing the elements' ids whose values went into the calculation.
+-   for: a space-separated list containing the elements ids whose values went into the calculation.
 
 -   name: the name of the element.
 
--   form:  associates the <output> element with its form owner. The value must be the id of a form in the same document. This allows you to place an <output> element outside of the <form> with which it is associated.
+-   form:  associates the &lt;output&gt; element with its form owner. The value must be the id of a form in the same document. This allows you to place an &lt;output&gt; element outside of the &lt;form&gt; with which it is associated.
 
 <h4>Example #2</h4>
 
@@ -17884,7 +17860,7 @@ Top of Form
 
 Bottom of Form
 
-Source code:
+<h4>Source code:</h4>
 
 ```
 1.  <form >
@@ -17903,7 +17879,7 @@ As input field values are considered as strings by JavaScript, using x.value = 
 
 This is why we used the valueAsNumber property also introduced by HTML5 for some input fields such as <input type="range"> and <input type="number">, we also encountered the valueAsDate properties when we studied <input type="date">.
 
-<h3 id="ch5-6-3">5.6.3 <meter></h3>
+<h3 id="ch5-6-3">5.6.3 &lt;meter&gt;</h3>
 
 The <meter> element displays colored bars to represent numeric values.
 
@@ -17918,53 +17894,47 @@ It can be useful to display a colored gauge to show disk usage, to highlight t
    width="50%">
 &nbsp;
 <br/>
-![picture of a meter example](./images/image280.jpeg){width="5.0in" height="0.8374792213473315in"}
 
-The <meter> element should not be used to indicate progress. You should instead use a <progress> element.
+The &lt;meter&gt; element should not be used to indicate progress. You should instead use a &lt;progress&gt; element.
 
-### Typical use
+<h4>Typical use</h4>
 
-1.  Storage space used: **<meter value=75 min=0 low=20 high=80 max=100 optimum=50></meter>**
+```
+1.  Storage space used: <meter value=75 min=0 low=20 high=80 max=100 optimum=50></meter>
+```
 
-The <meter> element uses the easy-to-understand value, min, max, low, high and optimum attributes. The optimum attribute, along with min, low, high and max attributes will affect the color of the bar, and of course the constraint min < low < high < max should be respected.
+The &lt;meter&gt; element uses the easy-to-understand value, min, max, low, high and optimum attributes. The optimum attribute, along with min, low, high and max attributes will affect the color of the bar, and of course the constraint min < low < high < max should be respected.
 
 More explanations about the colors and the meaning of the optimum attribute will come further in this lesson.
 
-### Interactive example
+<h4>Interactive example</h4>
 
 [Try the next example online at JSBin](https://jsbin.com/jumahox/1/edit?html,output) or just play with it in your browser by dragging the slider below:
 
+```
 <meter value=75 min=0 low=20 high=80 max=100 optimum=19></meter>
+```
 
 Grades:  
 
-Source code of the example:
+<h4>Source code of the example:</h4>
 
+```
 1.  <p>Grades: **<meter id="meter2" value="75" min="0" low="20" high="80" max="100"></meter>**
-
 2.  
-
 3.  <input min="0" max="100" value="75" id="meter2range"
-
 4.         oninput="effect('meter2', 'meter2range')" type="range">
-
 5.  <output id="meter2val" for="meter2range"></output></p>
-
 6.  <script>
-
 7.  function effect(meter, meterrange) {
-
 8.       var currVal = document.getElementById(meterrange).value;
-
 9.       document.getElementById(meter).value = currVal;
-
 10.      document.getElementById(meter+ "val").innerHTML = currVal;
-
 11. }
-
 12. </script>
+```
 
-**Explanations:**
+<h4>Explanations:</h4>
 
 ![The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the <meter> element (line 9) and update the displayed html content of the <output> element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
 
@@ -17998,14 +17968,16 @@ So, a <meter> element used for displaying blood pressure might be a good candi
 
 The <progress> element is similar to <meter> but it is used for progress bars (i.e., the percentage of a file being uploaded, etc.):
 
+```
 1.  <progress id=pr value=50 min=0 max=100>
+```
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!----------------------------- 282.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image282.jpeg?raw=true"
-   alt="Picture of a funny progress meme saying 'Every mistake you make is progress."
+   alt="Picture of a funny progress meme saying Every mistake you make is progress."
    width="10%">
 &nbsp;
 <br/>
@@ -18041,17 +18013,17 @@ Download progress: 
 <h4>Source code:</h4>
 
 ```
-1.  Download progress: **<progress id=pr value=100 min=0 max=1000></progress>**
+1.  Download progress: <progress id=pr value=100 min=0 max=1000></progress>
 2.  <script>
 3.     var i=0;
 4.     setInterval(function () {
 5.         i = (i+1) %1000;
-6.         document.getElementById('pr').value = i;
+6.         document.getElementById(pr).value = i;
 7.     },1);
 8.  </script>
 ```
 
-<h3 id="ch5-6-5">5.6.5 <datalist></h3>
+<h3 id="ch5-6-5">5.6.5 &lt;datalist&gt;</h3>
 
 The <datalist> form element is useful for linking a list of choices to an input element.
 
@@ -18104,13 +18076,13 @@ We have already seen this element in action with different <input> elements, s
 &nbsp;
 <br/>
 
-It is often "linked" to input fields either for restricting the value set that can be proposed  (i.e., restricted set of colors or possible dates, or for displaying slider ticks, as shown above), **but it may also be used in a more general way, for providing client-side auto-completion without the need to use JavaScript.**
+It is often "linked" to input fields either for restricting the value set that can be proposed  (i.e., restricted set of colors or possible dates, or for displaying slider ticks, as shown above), but it may also be used in a more general way, for providing client-side auto-completion without the need to use JavaScript.
 
-It works with the new list attribute of input fields introduced by HTML5. **The id of the <datalist> must match the value of the list attribute in the input field. A datalist can be shared by several input fields. **It suffices that their list attribute matches the id of the datalist element.
+It works with the new list attribute of input fields introduced by HTML5. The id of the &lt;datalist&gt; must match the value of the list attribute in the input field. A datalist can be shared by several input fields. It suffices that their list attribute matches the id of the datalist element.
 
-The input field is related to the datalist that will propose auto-completion based on <datalist> values.
+The input field is related to the datalist that will propose auto-completion based on &lt;datalist&gt; values.
 
-### Typical use for auto-completion
+<h4>Typical use for auto-completion</h4>
 
 Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,output), or try it here in your browser (type the name of your favorite browser):
 
@@ -18131,9 +18103,9 @@ Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,outp
 
 ```
 1.  <form action="demo_form.asp" method="get">
-2.       <input **list="browsers"** name="browser" />
+2.       <input list="browsers" name="browser" />
 3.  
-4.       <datalist **id="browsers"**>
+4.       <datalist id="browsers">
 5.           <option value="Internet Explorer">
 6.           <option value="Firefox">
 7.           <option value="Chrome">
@@ -18177,13 +18149,13 @@ Also, at the time of submitting the form, some extra messages may be displayed 
 <br/>
 The default bubble message and visual feedback differ from one implementation to another, but they may be customized, with some limitations that will be explained later.
 
-For example, browsers may provides default feedback on the input field's border (red = invalid, green = ok). This default behavior can be overridden by CSS rules as illustrated in the section about new input type attributes. 
+For example, browsers may provides default feedback on the input field's border (red = invalid, green = ok). This default behavior can be overridden by CSS rules as illustrated in the section about new input type attributes.
 
 <h4>Examples</h4>
 
 <h4>Example #1: styling "required", "valid" and" invalid" fields using CSS3 pseudo-classes</h4>
 
-Here is an [online example at JSBin](https://jsbin.com/palifuy/edit?html,output), or try it below in your browser:
+Here is an <a href="https://jsbin.com/palifuy/edit?html,output">online example at JSBin</a>, or try it below in your browser:
 
 Top of Form
 
@@ -18240,7 +18212,7 @@ Submit form
 
 Try the online example with different Web browsers, both with and without the CSS rules. See the differences between FireFox/Chrome/Opera in the default visual feedback behavior. Don't worry: all default behavior can be overridden if you provide your own CSS rules.
 
-**Best practice:  We recommend that you ALWAYS provide default CSS rules that give visual feedback to the user's input.**
+Best practice:  We recommend that you ALWAYS provide default CSS rules that give visual feedback to the user's input.
 
 Example #2: add CSS transitions + an icon/marker to the right of the input fields
 
@@ -18253,7 +18225,7 @@ Homepage (URL): 
 Phone number: 
 Submit form
 
-**Bottom of Form**
+Bottom of Form
 
 <h4>Source code extract:</h4>
 
@@ -18262,17 +18234,17 @@ Submit form
 
 ```
 1.  .myForm input:focus {
-2.    ** padding-right:70px;**
+2.     padding-right:70px;
 3.  }
 4.  .myForm input {
-5.    ** transition: padding .25s;**
+5.     transition: padding .25s;
 6.  }
 7.  
-8.  .myForm **input:required:valid **{
-9.     background:url('https://i.imgur.com/BJolppS.png') no-repeat right top;
+8.  .myForm input:required:valid {
+9.     background:url(https://i.imgur.com/BJolppS.png) no-repeat right top;
 10. }
-11. .myForm **input:required **{
-12.    background:url('https://i.imgur.com/7pIN7wz.png') no-repeat right top;
+11. .myForm input:required {
+12.    background:url(https://i.imgur.com/7pIN7wz.png) no-repeat right top;
 13. }
 ```
 
@@ -18280,9 +18252,9 @@ Submit form
 
 This time, we just added an attribute class="myForm" to our form, in order to avoid interfering with the other examples on this page, and we tweaked the CSS rules a little.
 
-The rule at *line 1* says that any time we click on an input field, it will enlarge itself to the right, while the rule at *line 4* will make it animated.
+The rule at <i>line 1</i> says that any time we click on an input field, it will enlarge itself to the right, while the rule at <i>line 4</i> will make it animated.
 
-The rules at *lines 8* and 1*1* target the input fields with a required attribute. They will change the background by displaying a small green or red icon, corresponding to the valid/invalid status of the input field.
+The rules at <i>lines 8</i> and <i>11</i> target the input fields with a required attribute. They will change the background by displaying a small green or red icon, corresponding to the valid/invalid status of the input field.
 
 <h4>Use the title attribute for specifying a custom message</h4>
 
@@ -18320,7 +18292,7 @@ Submit form
 
 </details>
 
-*Beware* that browser implementations may differ. Chrome, Opera will display the title attribute value in error message bubbles when the form is submitted, while Safari and FireFox (desktop and mobile) will simply ignore it.
+<i>Beware</i> that browser implementations may differ. Chrome, Opera will display the title attribute value in error message bubbles when the form is submitted, while Safari and FireFox (desktop and mobile) will simply ignore it.
 
 You must also take care of the different languages, otherwise you will get error message bubbles that show some parts in the local language, and the message from the title attribute "as is".
 
@@ -18431,7 +18403,7 @@ Bottom of Form
 
 <h4>Explanations:</h4>
 
-The validity API proposes a setCustomValidity() method available on input DOM objects. This method allows you to customize error messages. It takes a string parameter. When this string is empty, the element is considered *valid*, when the string is not empty, the field is *invalid* and the validation error message displayed in the bubble will be equal to that string.
+The validity API proposes a setCustomValidity() method available on input DOM objects. This method allows you to customize error messages. It takes a string parameter. When this string is empty, the element is considered <i>valid</i>, when the string is not empty, the field is <i>invalid</i> and the validation error message displayed in the bubble will be equal to that string.
 
 At <i>lines 18</i> and <i>20</i> we added an input event listener: each time a key is typed, the checkPasswords() function is called.
 
@@ -18439,7 +18411,7 @@ At <i>lines 18</i> and <i>20</i> we added an input event listener: each ti
 
 <h3 id="ch5-7-4">5.7.4 The validity property of input fields</h3>
 
-The validity property of input fields helps to get error details when the field is *invalid*. This property tests the different types of validation error.
+The validity property of input fields helps to get error details when the field is <i>invalid</i>. This property tests the different types of validation error.
 
 Here is how to get the validity property of an input field:
 
@@ -18528,9 +18500,9 @@ Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JS
 It is also possible to get the validation error message, using the validationMessage property of input fields.
 
 ```
-1.  var input = document.getElementById('b');
+1.  var input = document.getElementById(b);
 2.   
-3.  console.log("Validation message = " +** input.validationMessage**);
+3.  console.log("Validation message = " + input.validationMessage);
 ```
 
 This is useful for making custom error messages. More about this topic in the next section of the course.
@@ -18555,11 +18527,11 @@ The techniques we have seen so far for enhancing HTML forms are powerful and pr
 
 -   Browser support is still not 100% complete (Safari and Internet Explorer still lack several important features),
 
--   It is not possible to aggregate error messages.  On submission, browsers show an error bubble next to the first invalid field, and there is no built-in way to *display all error messages for all invalid fields at the same time*,
+-   It is not possible to aggregate error messages.  On submission, browsers show an error bubble next to the first invalid field, and there is no built-in way to <i>display all error messages for all invalid fields at the same time</i>,
 
 -   You cannot style the bubbles.
 
-**However, the validation API gives enough power to make your own validation behavior, overriding the default when necessary.**
+However, the validation API gives enough power to make your own validation behavior, overriding the default when necessary.
 
 Here is [an adaptation of work presented at the developer.telerik.com Web site](https://www.telerik.com/blogs/building-html5-form-validation-bubble-replacements).  This link is really worth reading, as it presents different approaches and gives external references for those who would like to go further.
 
@@ -18577,235 +18549,126 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 &nbsp;
 <br/>
 
-**Complete source code:**
+<h4>Complete source code:</h4>
 
+```
 1.  <!DOCTYPE html>
-
 2.  <html lang="en">
-
 3.  <head>
-
 4.     <meta charset="utf-8">
-
 5.     <title>Aggregating error messages</title>
-
 6.     <style>
-
 7.         input:invalid { background-color: lightPink;}
-
 8.         input:valid { background-color:lightGreen; }
-
 9.         input:required {border: 2px solid red;}
-
 10.        input:optional {border: 2px solid green;}
-
 11.  
-
 12.        .error-messages {
-
 13.            display: none;
-
 14.            margin: 0 10px 15px 10px;
-
 15.            padding: 8px 35px 8px 30px;
-
 16.            color: #B94A48;
-
 17.            background-color: #F2DEDE;
-
 18.            border: 2px solid #EED3D7;
-
 19.            border-radius: 4px;
-
 20.        }
-
 21.        fieldset {
-
 22.           border:1px solid;
-
 23.           padding:20px;
-
 24.        }
-
 25.     </style>
-
 26. </head>
-
 27. <body>
-
 28. <form>
-
 29.      <fieldset>
-
 30.          <legend>Submit with one or two invalid fields</legend>
-
 31. 
-
 32.          <ul class="error-messages"></ul>
-
 33. 
-
 34.          <label for="name">Name:</label>
-
 35.          <input id="name" name="name" required>
-
 36.          <p>
-
 37.          <label for="email">Email:</label>
-
 38.          <input id="email" name="email" type="email" required>
-
 39.          <p>
-
 40.          <button>Submit</button>
-
 41.      </fieldset>
-
 42. </form>
-
 43.  
-
 44. <script>
-
 45.     function replaceValidationUI(form) {
-
 46.        // Suppress the default bubbles
-
 47.           form.addEventListener("invalid", function (event) {
-
 48.           event.preventDefault();
-
 49.        }, true);
-
 50.  
-
 51.        // Support Safari, iOS Safari, and the Android browser --- each of which
-
 52.        // do not prevent form submissions by default
-
 53.        form.addEventListener("submit", function (event) {
-
 54.           if (!this.checkValidity()) {
-
 55.              event.preventDefault();
-
 56.           }
-
 57.        });
-
 58.  
-
 59.        // Container that holds error messages. By default it has a CSS
-
 60.        // display:none property
-
 61.        var errorMessages = form.querySelector(".error-messages");
-
 62.  
-
 63.        var submitButton = form.querySelector("button:not([type=button]),
-
 64.                                               input[type=submit]");
-
 65.  
-
 66.        submitButton.addEventListener("click", function (event) {
-
 67.            var invalidFields = form.querySelectorAll("input:invalid");
-
 68.            var listHtml = "";
-
 69.            var errorMessagesContainer = form.querySelector(".error-messages");
-
 70.            var label;
-
 71.  
-
 72.            // Get the labels' values of their name attributes + the validation error
-
 73.            // message of the corresponding input field using the validationMessage
-
 74.            // property of input fields
-
 75.            // We build a list of <li>...</li> that we add to the error message container
-
 76.            for (var i = 0; i < invalidFields.length; i++) {
-
 77.                label = form.querySelector("label[for=" + invalidFields[ i ].id + "]");
-
 78.                listHtml += "<li>" +
-
 79.                            label.innerHTML +
-
 80.                            " " +
-
 81.                            invalidFields[ i ].validationMessage +
-
 82.                            "</li>";
-
 83.            }
-
 84.  
-
 85.            // Update the list with the new error messages
-
 86.            errorMessagesContainer.innerHTML = listHtml;
-
 87.  
-
 88.            // If there are errors, give focus to the first invalid field and show
-
 89.            // the error messages container by setting its CSS property display=block
-
 90.            if (invalidFields.length > 0) {
-
 91.               invalidFields[ 0 ].focus();
-
 92.               errorMessagesContainer.style.display = "block";
-
 93.            }
-
 94.        });
-
 95.    }
-
 96.  
-
 97.    // Replace the validation UI for all forms
-
 98.    var forms = document.querySelectorAll("form");
-
 99. 
-
 100.    for (var i = 0; i < forms.length; i++) {
-
 101.        replaceValidationUI(forms[ i ]);
-
 102.    }
-
 103. </script>
-
 104. </body>
-
 105. </html>
+```
 
 Explanations:
 
--   *Line 32*: we added an empty unnumbered list (<ul>..</ul>) to the form, with the CSS class="error-messages". We will use this class attribute for styling, and hiding by default, the error messages using CSS (see lines *12-20*, *line 13* hides the messages by default).
-
--   *Lines 97-102* look at all forms in the document and call a function that will replace the default validation behavior for all of them: the replaceValidationUI(form) function.
-
--   This function first disables all default behavior (no more display of bubbles during form submission), this is done at *lines 45-57*.
-
--   *Line 66*: we add a click listener to the submit button of the current form.
-
--   *Line 67* gets all invalid input fields for that form,
-
--   *Lines 76-83*: For each invalid field, we get the value of the name attribute of the corresponding label, we also get the validation error message, and we build a list item(<li>...</li>).
-
--   *Line 86*: Then we add this list element (a formatted error message corresponding to an invalid input field) to the error message container.
-
--   *Lines 90-93*: The focus is given to the first invalid field that shows an error message.
+-   <i>Line 32</i>: we added an empty unnumbered list (<ul>..</ul>) to the form, with the CSS class="error-messages". We will use this class attribute for styling, and hiding by default, the error messages using CSS (see lines <i>12-20</i>, <i>line 13</i> hides the messages by default).
+-   <i>Lines 97-102</i> look at all forms in the document and call a function that will replace the default validation behavior for all of them: the replaceValidationUI(form) function.
+-   This function first disables all default behavior (no more display of bubbles during form submission), this is done at <i>lines 45-57</i>.
+-   <i>Line 66</i>: we add a click listener to the submit button of the current form.
+-   <i>Line 67</i> gets all invalid input fields for that form,
+-   <i>Lines 76-83</i>: For each invalid field, we get the value of the name attribute of the corresponding label, we also get the validation error message, and we build a list item(<li>...</li>).
+-   <i>Line 86</i>: Then we add this list element (a formatted error message corresponding to an invalid input field) to the error message container.
+-   <i>Lines 90-93</i>: The focus is given to the first invalid field that shows an error message.
 
 <h3 id="ch6-1-1">6.1.1 Video Intro -- Module 6</h3>
 
@@ -21155,4 +21018,5536 @@ Click on the Codepen logo (on the top right) so to run the <a href="https://cod
 . . .The end.
 
 
-<h2><b><i>09-06-2022 9:46pm</i></b></h2>
+<h2><b><i>09-09-2022 7:05pm</i></b></h2>
+myCanvas');
+// 2 - Get the context
+ctx=canvas.getContext('2d');
+// 3 - we can draw
+drawSomething();
+}
+function drawSomething() {
+// set the global context values
+ctx.fillStyle='rgba(0, 0, 255, 0.2)';
+// Draw the two filled red rectangles
+ctx.fillRect(150, 20, 200, 100);
+ctx.fillRect(100, 50, 200, 100);
+ctx.fillStyle = "blue";
+ctx.fillRect(50, 100, 200, 100);
+}
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="220">
+Your browser does not support the canvas tag.
+</canvas>
+</body>
+</html>
+```
+
+</details>
+
+<h3 id="ch3-5-2">3.5.2 Canvas Context: Linear Gradients</h3>
+
+It is possible to define the stroke or the fill style as a "gradient", a set of interpolated colors, like in this example below:
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 167. example (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image167.png?raw=true"
+   width="85%"
+   alt="Example" />
+</p>
+
+<h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+var canvas, ctx, grdFrenchFlag;
+function init() {
+// Good practice 1: set global vars canvas, ctx, gradients, etc here
+canvas = document.querySelector('#myCanvas1');
+ctx = canvas.getContext('2d');
+// The gradient we create is also a global variable, we
+// will be able to reuse it for drawing different shapes
+// in different functions
+grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 0);
+// Try adding colors with first parameter between 0 and 1
+grdFrenchFlag.addColorStop(0, "blue");
+grdFrenchFlag.addColorStop(0.5, "white");
+grdFrenchFlag.addColorStop(1, "red");
+draw();
+}
+function draw() {
+ctx.fillStyle = grdFrenchFlag;
+ctx.fillRect(0, 0, 300, 200);
+}
+```
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Linear gradients</title>
+<style>
+#myCanvas1 {
+border: 1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
+</body>
+</html>
+```
+
+</details>
+
+<h4>A linear gradient is seen as an "invisible" rectangle in which a set of colors are interpolated along a line.</h4>
+
+The gradient becomes visible when we draw shapes on top of the invisible gradient, and when the fillStyle or strokeStyle property has for value this gradient.
+
+<h4>How to create gradients</h4>
+
+There are 3 steps:
+
+<h4>Step #1: define a linear gradient</h4>
+
+<h4>Syntax:</h4>
+
+```
+1.  ctx.createLinearGradient(x0,y0,x1,y1);
+```
+
+... where the (x0, y0) and (x1, y1) parameters define "the direction of the gradient" (as a vector with a starting and an ending point). This direction is an invisible line along which the colors that compose the gradient will be interpolated.
+
+<h4>Let's see an example:</h4>
+
+```
+1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 0);
+```
+
+This line defines the direction of the gradient: a virtual, invisible line that goes from the top left corner of the canvas (0, 0) to the top right corner of the canvas (300, 0). The interpolated colors will propagate along this line. 
+
+If this gradient is going to be reused by different functions, it is good practice to create/initialize it in a function called when the page is loaded and to store it in a global variable.
+
+<h4>Step #2: add a number of "color stops" to this gradient</h4>
+
+We will add a set of "colors" and "stops" to this gradient. The stops go from 0 (beginning of the virtual line defined just above), to 1 (end of the virtual line). A color associated with a value of 0.5 will be right in the middle of the virtual line.
+
+Here is an example that corresponds to an interpolated version of the French flag, going from blue to white, then to red, with proportional intervals. We define three colors, blue at position 0, white at position 0.5 and red at position 1:
+
+```
+1.  grdFrenchFlag.addColorStop(0, "blue");
+2.  grdFrenchFlag.addColorStop(0.5, "white");
+3.  grdFrenchFlag.addColorStop(1, "red");
+```
+
+<h4>Step 3: draw some shapes</h4>
+
+First, let's set the fillStyle or strokeStyle of the context with this gradient, then let's draw some shapes "on top of the gradient".
+
+In our example, the gradient corresponds to an invisible rectangle that fills the canvas. If we draw a rectangle of the canvas size, it should be filled with the entire gradient:
+
+```
+1.  ctx.fillStyle = grdFrenchFlag;
+2.  ctx.fillRect(0, 0, 300, 200);
+```
+
+The result is shown in the <a href="https://codepen.io/w3devcampus/pen/WNpPZVO">above pen</a>: a big rectangle that fills the whole canvas, with colors going from blue (left) to white (middle) to red (right).
+
+<h4>Examples</h4>
+
+<h4>Example #1: changing the direction of the gradient</h4>
+
+If you modify the source code that defines the direction of the gradient as follows...
+
+```
+1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
+```
+
+... then you will define a gradient that goes from the top left corner of the canvas to the bottom right of the canvas. Let's see what it does:
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 168. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image168.png?raw=true"
+   alt="Path composition explained"
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>Example #2: drawing shapes that do not cover the whole gradient</h4>
+
+Instead of drawing a filled rectangle that covers the whole surface of the canvas, let's draw several smaller rectangles:
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 169. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image169.png?raw=true"
+   alt="Path composition explained"
+   width="65%">
+&nbsp;
+<br/>
+
+<p>Note that the canvas has its default background color where we did not draw anything. And where we have drawn rectangles, we can see "through" and the colors from the gradient are visible.</p>
+
+<h4>Here is the code that draws the checkboard:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  ctx.fillStyle = grdFrenchFlag;
+2.  ctx.fillRect(0, 0, 50, 50);
+3.  ctx.fillRect(100, 0, 50, 50);
+4.  ctx.fillRect(200, 0, 50, 50);
+5.  ctx.fillRect(50, 50, 50, 50);
+6.  ctx.fillRect(150, 50, 50, 50);
+7.  ctx.fillRect(250, 50, 50, 50);
+8.  ctx.fillRect(0, 100, 50, 50);
+9.  ctx.fillRect(100, 100, 50, 50);
+10. ctx.fillRect(200, 100, 50, 50);
+11. ctx.fillRect(50, 150, 50, 50);
+12. ctx.fillRect(150, 150, 50, 50);
+13. ctx.fillRect(250, 150, 50, 50);
+```
+
+This code is rather ugly isn't it? It would have been better  to use a loop...
+
+<h4>Here is function that draws a chessboard:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  // n = number of cells per row/column
+2.  function drawCheckboard(n) {
+3.      ctx.fillStyle = grdFrenchFlag;
+4.  
+5.      var l = canvas.width;
+6.      var h = canvas.height;
+7.   
+8.      var cellWidth = l / n;
+9.      var cellHeight = h / n;
+10. 
+11.     for(i = 0; i < n; i++) {
+12.        for(j = i % 2; j < n; j++) {
+13.           ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
+14.        }
+15.     }
+16. }
+```
+
+</details>
+
+The two loops (*lines 11-15*) draw only one cell out of two (see the j = i % 2 at *line 12*). i is the column number and if the column is odd or even, either we draw or we do not draw a rectangle.
+
+This code is much more complex than the previous one, taking 16 lines instead of 13, but is much more powerful. Try to call the function with a value of 10, 20, or 2... 
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 170. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image170.png?raw=true"
+   alt="Path composition explained"
+   width="85%">
+&nbsp;
+<br/>
+
+<h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+var canvas, ctx, grdFrenchFlag;
+function init() {
+// Good practice 1: set global vars canvas, ctx, gradients, etc here
+canvas = document.querySelector('#myCanvas1');
+ctx = canvas.getContext('2d');
+// The gradient we create is also a global variable, we
+// will be able to reuse it for drawing different shapes
+// in different functions
+grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
+// Try adding colors with first parameter between 0 and 1
+grdFrenchFlag.addColorStop(0, "blue");
+grdFrenchFlag.addColorStop(0.5, "white");
+grdFrenchFlag.addColorStop(1, "red");
+drawCheckboard(10);
+}
+// n = number of cells per row/column
+function drawCheckboard(n) {
+ctx.fillStyle = grdFrenchFlag;
+ctx.lineWidth=10;
+var l = canvas.width;
+var h = canvas.height;
+var cellWidth = l / n;
+var cellHeight = h / n;
+for(i = 0; i < n; i++) {
+for(j = i % 2; j < n; j+=2) {
+ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
+}
+}
+}
+```
+
+</details>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Drawing shapes that do not cover the whole gradient - Example #2 bis</title>
+<style>
+#myCanvas1 {
+border: 1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
+</body>
+</html>
+```
+
+</details>
+
+<h4>Example #3: drawing outlined shapes with gradients</h4>
+
+Just as we used fillStyle and fillRect for drawing rectangles filled with a gradient, we can also use strokeStyle and strokeRect in order to draw wireframed rectangles. In the next example, which is just a variation of the previous one, we have used the lineWidth property to set the outline of the rectangles at 5 pixels:
+
+<!------------------------------------------------------------------------------------------------>
+<!--- 171.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image171.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+var canvas, ctx, grdFrenchFlag;
+function init() {
+// Good practice 1: set global vars canvas, ctx, gradients, etc here
+canvas = document.querySelector('#myCanvas1');
+ctx = canvas.getContext('2d');
+// The gradient we create is also a global variable, we
+// will be able to reuse it for drawing different shapes
+// in different functions
+grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
+// Try adding colors with first parameter between 0 and 1
+grdFrenchFlag.addColorStop(0, "blue");
+grdFrenchFlag.addColorStop(0.5, "white");
+grdFrenchFlag.addColorStop(1, "red");
+drawCheckboard(5);
+}
+// n = number of cells per row/column
+function drawCheckboard(n) {
+ctx.strokeStyle = grdFrenchFlag;
+ctx.lineWidth=10;
+var l = canvas.width;
+var h = canvas.height;
+var cellWidth = l / n;
+var cellHeight = h / n;
+for(i = 0; i < n; i++) {
+for(j = i % 2; j < n; j+=2) {
+ctx.strokeRect(cellWidth*(i), cellHeight*j, cellWidth, cellHeight);
+}
+}
+```
+
+</details>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Drawing outlined shapes with gradients - Example #3</title>
+<style>
+#myCanvas1 {
+border: 1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
+</body>
+</html>
+```
+
+</details>
+
+<h4>Extract from source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  function drawCheckboard(n) {
+2.      **ctx.strokeStyle = grdFrenchFlag;**
+3.  **    ctx.lineWidth=10;**
+4.      ...
+5.      for(i = 0; i < n; i++) {
+6.          for(j = i % 2; j < n; j++) {
+7.              ctx.**stroke**Rect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
+8.          }
+9.      }
+10. }
+```
+
+</details>
+
+<h4>Example #4: what happens if we define a gradient smaller than the canvas?</h4>
+
+Let's go back to the very first example on this page - the one with the blue-white-red interpolated French flag. This time we will define a smaller gradient. Instead of going from (0, 0) to (300, 0), it will go from (100, 0) to (200, 0), while the canvas remains the same (width=300, height=200).
+
+```
+1.  grdFrenchFlag = ctx.createLinearGradient(**100, 0, 200, 0**);
+```
+
+Like in the first example we will draw a filled rectangle that is the same size as the canvas:
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 172. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image172.png?raw=true"
+   alt="image172.png"
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+var canvas, ctx, grdFrenchFlag;
+function init() {
+// Good practice 1: set global vars canvas, ctx, gradients, etc here
+canvas = document.querySelector('#myCanvas1');
+ctx = canvas.getContext('2d');
+// The gradient we create is also a global variable, we
+// will be able to reuse it for drawing different shapes
+// in different functions
+grdFrenchFlag = ctx.createLinearGradient(100, 0, 200, 0);
+// Try adding colors with first parameter between 0 and 1
+grdFrenchFlag.addColorStop(0, "blue");
+grdFrenchFlag.addColorStop(0.5, "white");
+grdFrenchFlag.addColorStop(1, "red");
+draw();
+}
+function draw() {
+ctx.fillStyle = grdFrenchFlag;
+ctx.fillRect(0, 0, 300, 200);
+}
+```
+
+</details>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Defining a gradient smaller than the canvas - Example #4</title>
+<style>
+#myCanvas1 {
+border: 1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
+</body>
+</html>
+```
+
+</details>
+
+We notice that "before" the gradient starts, the first color of the gradient is repeated without any interpolation (columns 0-100 are all blue), then we "see through" and the gradient is drawn (columns 100-200), then the last color of the gradient is repeated without any interpolation (columns 200-300 are red).
+
+<h4>Example #5: what happens if we define a gradient bigger than the canvas?</h4>
+
+Nothing special; we will "see through the drawn shapes", and the parts of the gradient that are located in the canvas area will be shown. You can try this example that defines a gradient twice the size of the canvas: 
+
+```
+1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, **600, 400**);
+```
+
+And if we draw the same rectangle with the canvas size, here is the result:
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 173. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image173.png?raw=true"
+   alt="Path composition explained"
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+var canvas, ctx, grdFrenchFlag;
+function init() {
+// Good practice 1: set global vars canvas, ctx, gradients, etc here
+canvas = document.querySelector('#myCanvas1');
+ctx = canvas.getContext('2d');
+// The gradient we create is also a global variable, we
+// will be able to reuse it for drawing different shapes
+// in different functions
+grdFrenchFlag = ctx.createLinearGradient(0, 0, 600, 400);
+// Try adding colors with first parameter between 0 and 1
+grdFrenchFlag.addColorStop(0, "blue");
+grdFrenchFlag.addColorStop(0.5, "white");
+grdFrenchFlag.addColorStop(1, "red");
+draw();
+}
+function draw() {
+ctx.fillStyle = grdFrenchFlag;
+ctx.fillRect(0, 0, 300, 200);
+}
+```
+
+</details>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Defining a gradient bigger than the canvas - Example #5</title>
+<style>
+#myCanvas1 {
+border: 1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
+</body>
+</html>
+```
+
+</details>
+
+The red color is beyond the bottom right corner.... we see only the top left quarter of the gradient.
+
+<h4>Example #6: drawing shapes that share the same gradient as a whole</h4>
+
+This time, we would like to draw the chessboard with the gradient in each cell. How can we do this with one single gradient?
+
+We can't! At least we can't without recreating it for each cell!
+
+It suffices to create a new gradient before drawing each filled rectangle, and set it with the starting and ending point of its direction/virtual line accordingly to the rectangle coordinates. Try this:
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 174. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image174.png?raw=true"
+   alt="image174.png"
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+var canvas, ctx, grdFrenchFlag;
+function init() {
+// Good practice 1: set global vars canvas, ctx, gradients, etc here
+canvas = document.querySelector('#myCanvas1');
+ctx = canvas.getContext('2d');
+drawCheckboard(5);
+}
+function setGradient(x, y, width, height) {
+grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
+grdFrenchFlag.addColorStop(0, "blue");
+grdFrenchFlag.addColorStop(0.5, "white");
+grdFrenchFlag.addColorStop(1, "red");
+ctx.fillStyle = grdFrenchFlag;
+}
+// n = number of cells per row/column
+function drawCheckboard(n) {
+var l = canvas.width;
+var h = canvas.height;
+var cellWidth = l / n;
+var cellHeight = h / n;
+for(i = 0; i < n; i+=2) {
+for(j = 0; j < n; j++) {
+var x = cellWidth*(i+j%2);
+var y = cellHeight*j;
+setGradient(x, y, x+cellWidth, y+cellHeight);
+ctx.fillRect(x, y, cellWidth, cellHeight);
+```
+
+</details>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Drawing shapes that share the same gradient as a whole - Example #6</title>
+<style>
+#myCanvas1 {
+border: 1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
+</body>
+</html>
+```
+
+</details>
+
+<h4>Extract from source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+function setGradient(x, y, width, height) {
+    grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
+    grdFrenchFlag.addColorStop(0, "blue");
+    grdFrenchFlag.addColorStop(0.5, "white");
+    grdFrenchFlag.addColorStop(1, "red");
+    // set the new gradient to the current fillStyle
+    ctx.fillStyle = grdFrenchFlag;
+}
+ 
+// n = number of cells per row/column
+function drawCheckboard(n) {
+   var l = canvas.width;
+   var h = canvas.height;
+   var cellWidth = l / n;
+   var cellHeight = h / n;
+   for(i = 0; i < n; i+=2) {
+     for(j = 0; j < n; j++) {
+        var x = cellWidth*(i+j%2);
+        var y = cellHeight*j;
+        setGradient(x, y, x+cellWidth, y+cellHeight);
+        ctx.fillRect(x, y, cellWidth, cellHeight);
+     }
+   }
+}
+```
+
+</details>
+
+We wrote a function setGradient(startX, startY, endX, endY) that creates a gradient and set the fillStyle context property so that any filled shape drawn will have this gradient.
+
+In the drawCheckBoard(...) function we call it just before drawing rectangles. In this way, each rectangle is drawn using its own gradient.
+
+<h3 id="ch3-5-3">3.5.3 Canvas Context: Radial Gradients</h3>
+
+Radial gradients are for creating gradients that propagate/interpolate colors along circles instead of propagating/interpolating along a virtual line, like linear gradients.
+
+Here is an example of a radial gradient that interpolates the color of the rainbow:
+<!------------------------------------------------------------------------------------------------>
+<!--- 175.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image175.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+> var canvas, ctx, grd;
+> function init() {
+> // Good practice 1: set global vars canvas, ctx, gradients, etc here
+> canvas = document.querySelector('#myCanvas1');
+> ctx = canvas.getContext('2d');
+> grd = ctx.createRadialGradient(150, 100, 30, 150, 100, 100);
+> grd.addColorStop(0, "red");
+> grd.addColorStop(0.17, "orange");
+> grd.addColorStop(0.33, "yellow");
+> grd.addColorStop(0.5, "green");
+> grd.addColorStop(0.666, "blue");
+> grd.addColorStop(1, "violet");
+> draw();
+> }
+> function draw() {
+> ctx.fillStyle = grd;
+> ctx.fillRect(0, 0, 300, 200);
+> }
+```
+
+</details>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+> <!DOCTYPE html>
+> <html lang="en">
+> <head>
+> <meta charset="utf-8">
+> <title>Radial gradients</title>
+> <style>
+> #myCanvas1 {
+> border: 1px solid black;
+> }
+> </style>
+> </head>
+> <body onload="init();">
+> <canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
+> </body>
+> </html>
+```
+
+</details>
+
+<h4>The gradient is defined as follows:</h4>
+
+```
+1.  var grd = context.**createRadialGradient(150, 100, 30, 150, 100, 100);**
+2.  grd.addColorStop(0, "red");
+3.  grd.addColorStop(0.17, "orange");
+4.  grd.addColorStop(0.33, "yellow");
+5.  grd.addColorStop(0.5, "green");
+6.  grd.addColorStop(0.666, "blue");
+7.  grd.addColorStop(1, "violet");
+8.  
+9.  context.fillStyle = grd;
+```
+
+The method from the context object createRadialGradient(cx1, cy1, radius1, cx2, cy2, radius2) takes as the first three parameters the "starting" circle of the gradient, and as the three last parameters, the "ending circle".
+
+In the above example, the gradients starts at a circle located at (150, 100), with a radius of 30, and propagates to a circle with the same center as the first (150, 100), but with a bigger radius of 100, as shown below:
+<!------------------------------------------------------------------------------------------------>
+<!--- 176.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image176.jpeg?raw=true"
+   alt="Radial gradient."
+   width="40%">
+&nbsp;
+<br/>
+
+We added color stops using a method similar to that used for linear gradients.
+
+<h4>What happens if the circles are not located at the same place?</h4>
+
+You get some nice effects; here we set the second circle's center 60 pixels to the right of the first circle's center (cx = 210 instead of 150):
+
+1.  grd = ctx.createRadialGradient(150, 100, 30, **210**, 100, 100);
+
+<h4>Here is the result:</h4>
+<!------------------------------------------------------------------------------------------------>
+<!--- 177.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image177.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+var canvas, ctx, grd;
+function init() {
+// Good practice 1: set global vars canvas, ctx, gradients, etc here
+canvas = document.querySelector('#myCanvas1');
+ctx = canvas.getContext('2d');
+grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
+grd.addColorStop(0, "red");
+grd.addColorStop(0.17, "orange");
+grd.addColorStop(0.33, "yellow");
+grd.addColorStop(0.5, "green");
+grd.addColorStop(0.666, "blue");
+grd.addColorStop(1, "violet");
+draw();
+}
+function draw() {
+ctx.fillStyle = grd;
+ctx.fillRect(0, 0, 300, 200);
+}
+```
+
+</details>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Radial gradients with offset circles</title>
+<style>
+#myCanvas1 {
+border: 1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
+</body>
+</html>
+```
+
+</details>
+
+<h4>What happens if the gradient is smaller or larger than the shapes we draw?</h4>
+
+A gradient is an invisible shape on the screen: the radial gradient is made of two circles: an inner and an outer circle. Between these two circles, colors are interpolated.
+
+We call the "first color" the color defined for the inner circle, the "last color" the last color of the gradient, that corresponds to the outer circle:
+
+-   The color inside the first circle will be the first color. In our example above, the first color is red: and the small circle of the gradient in our example is filled in red!
+
+-   The color outside the outer circle will be the last color of the gradient - which is not interpolated. The last color in our example is purple, and it fills the rest of the filled rectangle area "after" the external circle of the gradient.
+
+-   The colors between the two circles will be interpolated.
+
+<h3 id="ch3-5-4">3.5.4 Canvas Context: Patterns/Textures</h3>
+
+<h4>Principle</h4>
+
+The principle of "pattern" drawing is based on repeating an image (if the image is smaller than the surface of the shape you are going to draw) for filling the surface of objects to be drawn (either filled or stroked).
+
+To illustrate this principle, in the next examples, we are going to draw rectangles using a pattern.
+
+There are a few steps we have to take before doing this:
+
+1.  <b>Create a JavaScript image object</b>
+
+```
+1.  var imageObj = new Image();
+```
+
+1.  <b>Define a callback function that will be called once the image has been fully loaded</b> in memory; we cannot draw before the image has been loaded.
+
+```
+1.  imageObj.onload = function(){
+2.  ...
+3.  }
+```
+
+1.  <b>Set the source of this image to the URL of the pattern</b>:
+
+```
+1.  imageObj.src = "https://www.myserver.com/myRepeatablePattern.png";
+```
+
+1.  <b>Create a pattern object from the loaded image:</b>
+
+As soon as step 3 is executed, an HTTP request is sent in background by the browser, and when the image is loaded in memory, the callback defined at step 2 is called. We create a pattern object inside, from the loaded image:
+
+```
+1.  // callback called asynchronously, after the src attribute of imageObj is set
+2.  imageObj.onload = function(){ 
+3.      // We enter here when the image is loaded, we create a pattern object.
+4.      // It is good practice to set this as a global variable, easier to share
+5.      pattern1 = ctx.createPattern(imageObj, "repeat");
+6.  };
+```
+
+1.  <b>Inside the callback function (or inside a function called from inside the callback) ,we can finally draw</b>:
+
+```
+1.  // callback called asynchronously, after the src attribute of imageObj is set
+2.  imageObj.onload = function(){
+3.      pattern1 = ctx.createPattern(imageObj, "repeat");
+4.  
+5.      // Draw a textured rectangle
+6.      ctx.fillStyle = pattern1;
+7.      ctx.fillRect(10, 10, 500, 800);
+8.  };
+```
+
+<h4>Examples</h4>
+
+<h4>Example #1: draw two rectangles with a pattern (one filled, one stroked)</h4>
+
+<p>Here we have two rectangles drawn using a pattern (an image that can be repeated along the X and Y axis). The first is a filled rectangle while the second is "stroked" with a lineWidth of 20 pixels:</p>
+
+<!------------------------------------------------------------------------------------------------>
+<!--- 178.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image178.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+var canvas, ctx, pattern1;
+function init() {
+canvas = document.querySelector('#myCanvas');
+ctx = canvas.getContext('2d');
+// We need 1) to create an empty image object, 2) to set a callback function
+// that will be called when the image is fully loaded, 3) to create a
+// pattern object, 4) to set the fillStyle or the strokeStyle property of
+// the context with this pattern, 5) to draw something
+// WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -> draw from inside the
+// onload callback only !
+// Allocate an image
+var imageObj = new Image();
+// callback called asynchronously, after the src attribute of imageObj is set
+imageObj.onload = function(){
+// We enter here only when the image has been loaded by the browser
+// Pattern creation using the image object
+// Instead of "repeat", try different values : repeat-x, repeat-y,
+// or no-repeat, You may draw larger shapes in order to see
+// different results
+// It is a good practice to leave this as a global variable if it
+// will be reused by other functions
+pattern1 = ctx.createPattern(imageObj, "repeat");
+// Draw a textured rectangle
+ctx.fillStyle = pattern1;
+ctx.fillRect(10, 10, 200, 200);
+// And a wireframe one
+ctx.lineWidth=20;
+ctx.strokeStyle=pattern1;
+ctx.strokeRect(230, 20, 150, 100);
+};
+// This will tell the browser to send an asynchronous request.
+// When the browser will get an answer, the callback above will be called
+imageObj.src = "https://mainline.i3s.unice.fr/mooc/pattern1.jpg";
+}
+```
+
+</details>
+
+<h4>HTML</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Drawing two rectangles with a pattern - Example #1</title>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="500" height="400">
+Your browser does not support the canvas tag. </canvas>
+</body>
+</html>
+```
+
+<h4>JavaScript source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  var canvas, ctx, pattern1;
+2.   
+3.  function init() {
+4.     canvas = document.querySelector('#myCanvas');
+5.     ctx = canvas.getContext('2d');
+6.  
+7.     // We need 1) to create an empty image object, 2) to set a callback function
+8.     // that will be called when the image is fully loaded, 3) to create a
+9.     // pattern object, 4) to set the fillStyle or the strokeStyle property of
+10.    // the context with this pattern, 5) to draw something
+11.    **// WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -> draw from inside the**
+12. **   // onload callback only !**
+13. 
+14. 
+15.    // 1 - Allocate an image
+16.    var imageObj = new Image();
+17.  
+18.    // 2 - callback called asynchronously, after the src attribute of imageObj
+19.    // is set
+20.    imageObj.onload = function(){
+21.       // We enter here only when the image has been loaded by the browser
+22.       // 4 - Pattern creation using the image object
+23.       // Instead of "repeat", try different values : repeat-x, repeat-y,
+24.       // or no-repeat, You may draw larger shapes in order to see
+25.       // different results
+26.       // It is good practice to leave this as a global variable if it
+27.       // will be reused by other functions
+28. 
+29.       pattern1 = ctx.createPattern(imageObj, "repeat");
+30. 
+31.       // 5 - Draw things. Here a textured rectangle
+32.       ctx.fillStyle = pattern1;
+33.       ctx.fillRect(10, 10, 200, 200);
+34. 
+35.       // ... And a wireframe one
+36.       ctx.lineWidth=20;
+37.       ctx.strokeStyle=pattern1;
+38.       ctx.strokeRect(230, 20, 150, 100);
+39.   };
+40. 
+41.   // 3 - Send the request to load the image
+42.   // Setting the src attribute will tell the browser to send an asynchronous
+43.   // request.
+44.   // When the browser gets an answer, the callback above will be called
+45.   imageObj.src = "https://mainline.i3s.unice.fr/mooc/pattern1.jpg";
+46. }
+```
+
+</details>
+
+<h4>Example 2: the repeatability of a pattern</h4>
+
+<p>To "better" see the repeatability of the pattern, here is the same example with a 1000x1000 pixel wide canvas:</p>
+
+<!------------------------------------------------------------------------------------------------>
+<!--- 179.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image179.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+var canvas, ctx, pattern1;
+function init() {
+canvas = document.querySelector('#myCanvas');
+ctx = canvas.getContext('2d');
+// We need 1) to create an empty image object, 2) to set a callback function
+// that will be called when the image is fully loaded, 3) to create a
+// pattern object, 4) to set the fillStyle or the strokeStyle property of
+// the context with this pattern, 5) to draw something
+// WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -> draw from inside the
+// onload callback only !
+// Allocate an image
+var imageObj = new Image();
+// callback called asynchronously, after the src attribute of imageObj is set
+imageObj.onload = function(){
+// We enter here only when the image has been loaded by the browser
+// Pattern creation using the image object
+// Instead of "repeat", try different values : repeat-x, repeat-y,
+// or no-repeat, You may draw larger shapes in order to see
+// different results
+// It is a good practice to leave this as a global variable if it
+// will be reused by other functions
+pattern1 = ctx.createPattern(imageObj, "repeat");
+// Draw a textured rectangle
+ctx.fillStyle = pattern1;
+ctx.fillRect(10, 10, 500, 800);
+// And a wireframe one
+ctx.lineWidth=50;
+ctx.strokeStyle=pattern1;
+ctx.strokeRect(650, 20, 300, 800);
+};
+// This will tell the browser to send an asynchronous request.
+// When the browser will get an answer, the callback above will be called
+imageObj.src = "https://mainline.i3s.unice.fr/mooc/pattern1.jpg";
+}
+```
+
+</details>
+
+<h4>HTML</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Repeatability of a pattern - Example #2</title>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="1000" height="1000">
+Your browser does not support the canvas tag. </canvas>
+</body>
+</html>
+```
+
+<h4>You can change the way the pattern is repeated by modifying the second parameter of this method:</h4>
+
+```
+1.  pattern1 = ctx.createPattern(imageObj, "repeat");
+```
+
+<p>Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just change this line in the online example and you will see live results.</p>
+
+<h3 id="ch3-5-5">3.5.5 A Multiple Image Loader</h3>
+
+<h4>Draw with multiple patterns? We need to load all of them before drawing!</h4>
+
+Below are 4 rectangles drawn with 4 different patterns.
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------ 180. four rectangles drawn with different patterns (xxx) -------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image180.jpeg?raw=true"
+   alt="Four rectangles drawn with different patterns."
+   width="35%">
+&nbsp;
+<br/>
+
+We said earlier that we cannot draw before the image used by a pattern is loaded. This can become rapidly complicated if we need to draw using multiple patterns. We need a way to load all images and then, *only when all images have been loaded, start drawing*.
+
+JavaScript is an asynchronous language. When you set the src attribute of an image, then an asynchronous request is sent by the browser, and then after a while, the onload callback is called... The difficult part to understand for those who are not familiar with JavaScript is that these requests are done in parallel and we do not know when, and in what order, the images will be loaded.
+
+**The solution is to use a multiple image loader that counts the loaded images and calls a function you pass when done!**
+
+The trick is to have an array of URLs that will be used by our multiple image loader, and have the onload callback called once per image loaded, so we can count the number of images effectively loaded.
+
+When all images have been loaded, we call a callback function that has been passed to our loader.
+
+The complete example code that produces the result shown at the beginning of this page is the following:
+
+<!------------------------------------------------------------------------------------------------>
+<!--- 181.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image181.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>A multiple image loader</title>
+<style>
+#myCanvas {
+border: 1px solid black;
+}
+</style>
+<script>
+var canvas, ctx;
+// List of images to load, we used a JavaScript object instead of
+// an array, so that named indexes (aka properties)
+// can be used -> easier to manipulate
+var imagesToLoad = {
+flowers: 'https://i.ibb.co/4NN9Sgn/flowers.jpg',
+lion: 'https://i.ibb.co/3NyqKnY/lion.jpg',
+blackAndWhiteLys: 'https://i.ibb.co/VNLVpcL/final.jpg',
+tiledFloor:
+'https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg{
+};
+function loadImages(imagesToBeLoaded, drawCallback) {
+var imagesLoaded = {};
+var loadedImages = 0;
+var numberOfImagesToLoad = 0;
+// get num of sources
+for(var name in imagesToBeLoaded) {
+numberOfImagesToLoad++;
+}
+for(var name in imagesToBeLoaded) {
+imagesLoaded[name] = new Image();
+imagesLoaded[name].onload = function() {
+if(++loadedImages >= numberOfImagesToLoad) {
+drawCallback(imagesLoaded);
+} // if
+}; // function
+imagesLoaded[name].src = imagesToBeLoaded[name];
+} // for
+} // function
+function init() {
+// This function is called after the page is loaded
+// 1 - Get the canvas
+canvas = document.getElementById('myCanvas');
+// 2 - Get the context
+ctx=canvas.getContext('2d');
+loadImages(imagesToLoad, function(imagesLoaded) {
+patternFlowers = ctx.createPattern(imagesLoaded.flowers, 'repeat');
+patternLion = ctx.createPattern(imagesLoaded.lion, 'repeat');
+patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, 'repeat');
+patternFloor = ctx.createPattern(imagesLoaded.tiledFloor, 'repeat');
+drawRectanglesWithPatterns();
+});
+}
+function drawRectanglesWithPatterns() {
+ctx.fillStyle=patternFloor;
+ctx.fillRect(0,0,200,200);
+ctx.fillStyle=patternLion;
+ctx.fillRect(200,0,200,200);
+ctx.fillStyle=patternFlowers;
+ctx.fillRect(0,200,200,200);
+ctx.fillStyle=patternBW;
+ctx.fillRect(200,200,200,200);
+}
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
+Your browser does not support the canvas tag.
+</canvas>
+</body>
+```
+
+</details>
+
+<h4>Define the list of images to be loaded:</h4>
+
+```
+1.  // List of images to load, we used a JavaScript object instead of
+2.  // an array, so that named indexes (aka properties)
+3.  // can be used -> easier to read
+4.  var imagesToLoad = {
+5.       flowers: 'https://i.ibb.co/4NN9Sgn/flowers.jpg',
+6.       lion: 'https://i.ibb.co/3NyqKnY/lion.jpg',
+7.       blackAndWhiteLys: 'https://i.ibb.co/VNLVpcL/final.jpg',
+8.       tiledFloor:
+9.        'https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg'
+10. };
+```
+
+<p>Notice that instead of using a traditional array, we defined this list as a JavaScript object, with properties whose names will be easier to manipulate (flowers, lion, tiledFloor, etc.).</p>
+
+<h4>The image loader function</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  function loadImages(imagesToBeLoaded, drawCallback) {
+2.       var imagesLoaded = {};
+3.       var loadedImages = 0;
+4.       var numberOfImagesToLoad = 0;
+5.  
+6.       // get num of images to load
+7.       for(var name in imagesToBeLoaded) {
+8.           numberOfImagesToLoad++;
+9.       }
+10. 
+11.      for(var name in imagesToBeLoaded) {
+12.          imagesLoaded[name] = new Image();
+13. 
+14.          imagesLoaded[name].onload = function() {
+15.              if(++loadedImages >= numberOfImagesToLoad) {
+16.                  drawCallback(imagesLoaded);
+17.              } // if
+18.          }; // function
+19.          imagesLoaded[name].src = imagesToBeLoaded[name];
+20.       } // for
+21. } // function
+```
+
+</details>
+
+<b>Explanations:</b>
+<ul>
+<li>This function takes as a parameter the list of images to be loaded, and a drawCallback function that will be called only once all images have been loaded. This callback takes as a parameter a new object that is the list of images that have been loaded (see *line 16*).</li>
+<li>We first count the number of images to load (*lines 7-9*), then for each image to be loaded we create a new JavaScript image object (*line 12*) and set its src attribute (*line 19*) - this will start to load the image.</li>
+<li>When an image comes in, the onload callback is called (*line 14*) and inside, we increment the number of images loaded (*line 15*) and test if this number is >=  the total number of images that should be loaded. If this is the case, the callback function is called (*line 16*).</li>
+</ul>
+
+<h4>Example of use of this loader</h4>
+
+```
+1.  loadImages(imagesToLoad, function(imagesLoaded) {
+2.      patternFlowers = ctx.createPattern(imagesLoaded.flowers, 'repeat');
+3.      patternLion    = ctx.createPattern(imagesLoaded.lion, 'repeat');
+4.      patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, 'repeat');
+5.      patternFloor   = ctx.createPattern(imagesLoaded.tiledFloor, 'repeat');
+6.  
+7.      drawRectanglesWithPatterns();
+8.  });
+```
+
+<b>Explanations:</b>
+
+-   *Line 1* is the call to the image loader, the first parameter is the list of images to be loaded, while the second parameter is the callback function that will be called once all images have been loaded.
+
+-   *Lines 2-5*: in this callback we create patterns from the loaded images (note the use of the property names imagesLoaded.flowers, etc. that makes the code easier to read).
+
+-   *Line 7*: then we call a function that will draw the rectangles. 
+
+<h4>Here is the function:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  function drawRectanglesWithPatterns() {
+2.      ctx.fillStyle=patternFloor;
+3.      ctx.fillRect(0,0,200,200);
+4.  
+5.      ctx.fillStyle=patternLion;
+6.      ctx.fillRect(200,0,200,200);
+7.  
+8.      ctx.fillStyle=patternFlowers;
+9.      ctx.fillRect(0,200,200,200);
+10.  
+11.     ctx.fillStyle=patternBW;
+12.     ctx.fillRect(200,200,200,200);
+13. }
+```
+
+</details>
+
+<h3 id="ch3-5-6">3.5.6 Drawing Shadows</h3>
+
+<h4>Context properties to draw with shadows</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 182. a green shadow rectangle (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image182.jpeg?raw=true"
+   width="25%"
+   alt="A green shadowed rectangle." />
+</p>
+
+<p>There are 4 properties of the canvas context that are useful for indicating that we want to draw shapes with shadows:</p>
+<ul type="1">
+<li>shadowColor: color to use for shadows,</li>
+<li>shadowBlur: blur level for shadows,</li>
+<li>shadowOffsetX: horizontal distance of the shadow from the shape,</li>
+<li>shadowOffsetY: vertical distance of the shadow from the shape.</li>
+</ul>
+
+<h4>Examples</h4>
+
+<h4>Example #1: simple shadows</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 183.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image183.png?raw=true"
+   width="65%"
+   alt="image183.png" />
+</p>
+
+<h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+var canvas, ctx;
+function init() {
+canvas = document.getElementById('myCanvas');
+ctx = canvas.getContext('2d');
+setShadow();
+// first green filled rectangle
+ctx.fillStyle = "#22FFDD"; // rectangle color
+ctx.fillRect(20, 20, 200, 100);
+// second stroked rectangle
+ctx.strokeStyle = "purple"; // rectangle color
+ctx.lineWidth=10;
+ctx.strokeRect(20, 150, 200, 100);
+}
+function setShadow() {
+ctx.shadowColor = "Grey"; // color
+ctx.shadowBlur = 20; // blur level
+ctx.shadowOffsetX = 15; // horizontal offset
+ctx.shadowOffsetY = 15; // vertical offset
+}
+```
+
+</details>
+
+<h4>HTML</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Simple shadows - Example #1</title>
+</head>
+<body onload = init();>
+<canvas id="myCanvas" width="400" height =800>
+Your browser does not support the canvas tag.</canvas>
+</body>
+</html>
+```
+
+<h4>JavaScript source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  var canvas, ctx;
+2.  
+3.  function init() {
+4.      canvas = document.getElementById('myCanvas');
+5.      ctx = canvas.getContext('2d');
+6.  
+7.      // call to a function that will set the 4 context properties for shadows
+8.      setShadow();
+9.      // all drawings that will occur will cast shadows
+10. 
+11.     // first green filled rectangle
+12.     ctx.fillStyle = "#22FFDD"; 
+13.     ctx.fillRect(20, 20, 200, 100);
+14. 
+15.     // second stroked rectangle
+16.     ctx.strokeStyle = "purple"; 
+17.     ctx.lineWidth=10;
+18.     ctx.strokeRect(20, 150, 200, 100);
+19. }
+20.  
+21. // We define the 4 properties in a dedicated function, for clarity
+22. function setShadow() {
+23.     ctx.shadowColor = "Grey";    // color
+24.     ctx.shadowBlur = 20;         // blur level
+25.     ctx.shadowOffsetX = 15;      // horizontal offset
+26.     ctx.shadowOffsetY = 15;      // vertical offset
+27. }
+```
+
+</details>
+
+<h4>Explanations:</h4>
+<ul>
+<li><i>Lines 21-27</i>: we set the 4 properties that define shadows in a dedicated function, for better clarity.</li>
+<li><i>Line 8</i>: we called this function once before drawing the rectangles.</li>
+<li><i>Lines 11-18</i>: we draw a filled and a stroked rectangle. Both rectangles cast shadows.</li>
+</ul>
+
+<h4>Example #2: unwanted shadows!</h4>
+
+<p>Let's take a <a href="https://codepen.io/w3devcampus/pen/YzZBxmO">previous example</a>, the one that draws a filled circle with an outline. And, let's add a shadow to it using the following code:</p>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  ...
+2.  ctx.beginPath();
+3.  
+4.  // Add to the path a full circle (from 0 to 2PI)
+5.  ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
+6.  
+7.  // With path drawing you can change the context
+8.  // properties until a call to stroke() or fill() is performed
+9.  ctx.fillStyle = "lightBlue";
+10. 
+11. **// add shadows before drawing the filled circle**
+12. **addShadows();**
+13. 
+14. // Draws the filled circle in light blue
+15. ctx.fill();
+16. 
+17. // Prepare for the outline
+18. ctx.lineWidth = 5;
+19. ctx.strokeStyle = "black";
+20. 
+21. // draws the path AGAIN (the circle), this
+22. // time in wireframe
+23. ctx.stroke();
+24. 
+25. // Notice we only once called context.arc()! And drew it twice
+26. // with different styles
+27. ...
+28.  
+29. function** addShadows()** {
+30.     ctx.shadowColor = "Grey"; // color
+31.     ctx.shadowBlur = 20;      // blur level
+32.     ctx.shadowOffsetX = 15;   // horizontal offset
+33.     ctx.shadowOffsetY = 15;   // vertical offset
+34. }
+```
+
+</details>
+
+<h4>And here is the result:</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 184.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image184.png?raw=true"
+   width="65%"
+   alt="image185.png" />
+</p>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Unwanted shadows - Example #2</title>
+<style>
+body {
+margin: 0px;
+padding: 0px;
+}
+#myCanvas {
+border: 1px solid #9C9898;
+}
+</style>
+<script>
+var canvas, ctx;
+window.onload = function(){
+canvas = document.getElementById("myCanvas");
+ctx = canvas.getContext("2d");
+var centerX = canvas.width / 2;
+var centerY = canvas.height / 2;
+var radius = 70;
+ctx.beginPath();
+// Add to the path a full circle (from 0 to 2PI)
+ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
+// With path drawing you can change the context
+// properties until a call to stroke() or fill() is performed
+ctx.fillStyle = "lightBlue";
+// add shadows before drawing the filled circle
+addShadows();
+// Draws the filled circle in light blue
+ctx.fill();
+// Prepare for the outline
+ctx.lineWidth = 5;
+ctx.strokeStyle = "black";
+// draws AGAIN the path (the circle), this
+// time in wireframe
+ctx.stroke();
+// Notice we called context.arc() only once ! And drew it twice
+// with different styles
+};
+function addShadows() {
+ctx.shadowColor = "Grey"; // color
+ctx.shadowBlur = 20; // blur level
+ctx.shadowOffsetX = 15; // horizontal offset
+ctx.shadowOffsetY = 15; // vertical offset
+}
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="578" height="200">
+</canvas>
+</body>
+</html>
+```
+
+</details>
+
+Ah, indeed, the call to ctx.fill() casts a shadow, but the call to ctx.stroke(), that paints the whole path again, casts a shadow too, and this time the outline produces an unwanted shadow... How can we avoid this effect, while using the same technique for drawing the path?
+
+The trick is to save the context before setting the shadow properties, then draw the filled circle, then restore the context (to its previous state: without shadows), then draw the outlined circle by calling ctx.stroke().
+
+<h4>Correct version of the code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  ...
+2.  // save the context before setting shadows and drawing the filled circle
+3.   ctx.save();
+4.  
+5.  // With path drawing you can change the context
+6.  // properties until a call to stroke() or fill() is performed
+7.   ctx.fillStyle = "lightBlue";
+8.  
+9.  // add shadows before drawing the filled circle
+10.  addShadows();
+11. 
+12. // Draws the filled circle in light blue
+13.  ctx.fill();
+14. 
+15. // restore the context to its previous saved state
+16.  ctx.restore();
+17. ...
+```
+
+</details>
+
+<h4>And here is the final result:</h4>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 185.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image185.png?raw=true"
+   width="65%"
+   alt="image185.png" />
+</p>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Unwanted shadows disappear- Example #2 bis</title>
+<style>
+body {
+margin: 0px;
+padding: 0px;
+}
+#myCanvas {
+border: 1px solid #9C9898;
+}
+</style>
+<script>
+var canvas, ctx;
+window.onload = function(){
+canvas = document.getElementById("myCanvas");
+ctx = canvas.getContext("2d");
+var centerX = canvas.width / 2;
+var centerY = canvas.height / 2;
+var radius = 70;
+ctx.beginPath();
+// Add to the path a full circle (from 0 to 2PI)
+ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
+// save the context before setting shadows and drawing the filled circle
+ctx.save();
+// With path drawing you can change the context
+// properties until a call to stroke() or fill() is performed
+ctx.fillStyle = "lightBlue";
+// add shadows before drawing the filled circle
+addShadows();
+// Draws the filled circle in light blue
+ctx.fill();
+// restore the context to its previous saved state
+ctx.restore();
+// Prepare for the outline
+ctx.lineWidth = 5;
+ctx.strokeStyle = "black";
+// draws AGAIN the path (the circle), this
+// time in wireframe
+ctx.stroke();
+// Notice we called context.arc() only once ! And drew it twice
+// with different styles
+};
+function addShadows() {
+ctx.shadowColor = "Grey"; // color
+ctx.shadowBlur = 20; // blur level
+ctx.shadowOffsetX = 15; // horizontal offset
+ctx.shadowOffsetY = 15; // vertical offset
+}
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="578" height="200">
+</canvas>
+</body>
+</html>
+```
+
+</details>
+
+<h3 id="ch3-5-7">3.5.7 Styling Lines</h3>
+
+Several context properties can be used to set the thickness of the shape outlines, the way line end caps are drawn, etc.
+
+They apply to all shapes that are drawn in path mode (lines, curves, arcs) and some also apply to rectangles.
+
+<h4>Examples of line styles</h4>
+
+<h4>Example #1: changing the line thickness</h4>
+
+We have seen this before. This is done by changing the value (in pixels) of the lineWidth property of the context:
+
+```
+1.  <b>ctx.lineWidth = 10;</b> // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels
+```
+
+<p>Here is a complete example where we draw with a lineWidth of 20 pixels:</p>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 186. image186.png (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image186.png?raw=true"
+   width="65%"
+   alt="image186.png" />
+</p>
+
+<h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.    <head>
+4.      <meta charset="utf-8">
+5.      <title>A simple example of lineWidth property use</title>
+6.  
+7.    </head>
+8.    <body>
+9.      <canvas id="myCanvas" width="500">Your browser does not support the canvas tag.</canvas>
+10.     <script>
+11.       var canvas = document.getElementById('myCanvas');
+12.       var ctx = canvas.getContext('2d');
+13.  
+14. // first path
+15.       ctx.moveTo(20, 20);
+16.       ctx.lineTo(100, 100);
+17.       ctx.lineTo(100, 0);
+18.  
+19.  
+20. // second part of the path
+21.       ctx.moveTo(120, 20);
+22.       ctx.lineTo(200, 100);
+23.       ctx.lineTo(200, 0);
+24.  
+25. // indicate stroke color + draw first part of the path
+26.       ctx.strokeStyle = "#0000FF";
+27. // Current line thickness is 20 pixels
+28.       ctx.lineWidth = 20;
+29.       ctx.stroke();
+30.  
+31. // Draws a rectangle
+32.       ctx.strokeRect(230, 10, 100, 100);
+33.       </script>
+34.  
+35.     </body>
+36. </html>
+```
+
+</details>
+
+<h4>Example #2: changing the end caps of a line</h4>
+
+The lineCap property of the context indicates the way line end caps are rendered. Possible values are butt (default), round, square (from top to bottom in the next illustration). Note that a value of "round" or "square" makes the lines slightly longer than the default value "butt".
+<!------------------------------------------------------------------------------------------------>
+<!--- 187.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image187.png?raw=true"
+   alt="Line cap values."
+   width="20%">
+&nbsp;
+<br/>
+
+<h4>Try this:</h4>
+<!------------------------------------------------------------------------------------------------>
+<!--- 188.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image188.png?raw=true"
+   alt="."
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Changing the end caps of a line - Example #2</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500">Your browser does not support the canvas tag.</canvas>
+<script>
+var canvas = document.getElementById('myCanvas');
+var ctx = canvas.getContext('2d');
+// first path
+ctx.moveTo(20, 20);
+ctx.lineTo(100, 100);
+ctx.lineTo(100, 30);
+// second part of the path
+ctx.moveTo(120, 20);
+ctx.lineTo(200, 100);
+ctx.lineTo(200, 30);
+// indicate stroke color + draw first part of the path
+ctx.strokeStyle = "#0000FF";
+// Current line thickness is 20 pixels
+ctx.lineWidth = 20;
+// Try different values : butt, square, round
+ctx.lineCap = "round";
+ctx.stroke();
+// Draws a rectangle
+ctx.strokeRect(230, 10, 100, 100);
+</script>
+</body>
+</html>
+```
+
+</details>
+
+Note that in this example, the rectangle is not affected. It has no line ends visible - all its sides meet. However, the next property we're going to look at will have an effect on rectangles!
+
+<h4>Example #3: setting the type of corner when two lines meet</h4>
+
+<p>The lineJoin property of the context indicates the way corners are rendered, when two lines meet. Possible values are miter (the default) for creating sharp corners, round, or bevel for "cut corners".</p>
+
+<h4>Try this:</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 189.  (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image189.png?raw=true"
+   width="65%"
+   alt="image189.png" />
+</p>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Setting the type of corner when two lines meet - Example #3</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500">Your browser does not support the canvas tag.</canvas>
+<script>
+var canvas = document.getElementById('myCanvas');
+var ctx = canvas.getContext('2d');
+// first path
+ctx.moveTo(20,20);
+ctx.lineTo(100, 100);
+ctx.lineTo(100,30);
+// second part of the path
+ctx.moveTo(120,20);
+ctx.lineTo(200, 100);
+ctx.lineTo(200,30);
+// indicate stroke color + draw first part of the path
+ctx.strokeStyle = "#0000FF";
+// Current line thickness is 20 pixels
+ctx.lineWidth = 20;
+// Try different values : miter(default), bevel, round
+ctx.lineJoin="round";
+ctx.stroke();
+// Draws a rectangle
+ctx.strokeRect(230, 10, 100, 100);
+</script>
+</body>
+</html>
+```
+
+</details>
+
+<h4>Example #4: specific case of lineJoin="miter", the miterLimit property, a way to avoid looooooong corners!</h4>
+
+The miterLimit property value corresponds to the maximum miter length: the distance between the inner corner and the outer corner where two lines meet. When the angle of a corner between two lines gets smaller, the miter length grows and can become too long.
+
+In order to avoid this situation, we can set the miterLimit property of the context to a threshold value. If the miter length exceeds the miterLimit value, then the corner will be rendered as if the lineJoin property had been set to "bevel" and the corner will be "cut".
+<!------------------------------------------------------------------------------------------------>
+<!--- 190.  (xxx) -->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image190.gif?raw=true"
+   alt="miterLimit property shown with 3 different angles, we see that the part that goes out of the angle becomes very long."
+   width="20%">
+&nbsp;
+<br/>
+
+<h4>You can try an interactive example here:</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 191. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image191.png?raw=true"
+   width="65%"
+   alt="image191.png" />
+</p>
+
+In the example, try different values for the miterLimit property. You'll see that the way the corners are rendered changes at values around 2 and 3.
+
+<h3 id="ch4-1-1">4.1.1 Video Intro -- Module 4</h3>
+
+1:17 video explaining animation.
+
+<h3 id="ch4-2-1">4.2.1 Animation Techniques<h3>
+
+In order to perform an animation, we need to:
+
+1.  Clear the content of the canvas: this can be done using the ctx.clearRect(0, 0, canvasWidth, canvasHeight) method;
+
+2.  Draw some shapes: use any of the drawing methods we have seen so far;
+
+3.  Move the shapes: modify the position and/or orientation, size and color of the shapes;
+
+4.  Repeat (go to step 1).
+
+These are the basic steps for animating objects in a canvas. The order of the steps can be changed (i.e. you can move the shapes before drawing them), but, the principle is the same: **clear-draw-move-repeat**.
+
+Step 1 could be avoided if you redraw the whole canvas content during step 2.
+
+<h4>Before HTML5</h4>
+
+Even before HTML5 and the introduction of the canvas element, people created HTML games. They used CSS backgrounds inside &lt;div&gt; elements, and used to change the CSS top, left, width and height properties of the divs to animate graphic images on the screen.
+
+During the late 1990s and early 2000s, JavaScript became increasingly popular. The community created a first 'umbrella term' describing a collection of technologies used together to create interactive and animated Web sites - [DHTML (Dynamic HTML)](https://en.wikipedia.org/wiki/Dynamic_HTML). For example, check the [games developed at this time by Brent Silby](https://def-logic.com/) (they all use DHTML).
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 192. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image192.png?raw=true"
+   width="25%"
+   alt="A mario like DHTML game." />
+</p>
+
+For animation, the setInterval(function, ms) and setTimeout(function, ms) methods were the only solutions. Both methods take a function as the first parameter, and a number of milliseconds as the second parameter.
+
+The only difference is that the code provided to setInterval will run every n milliseconds whereas the code in setTimeout will run only once after n milliseconds (meaning that we will have to repeat a call to setTimeout at step 4 above).
+
+<h4>After HTML5</h4>
+
+The methods described above are now completed by a new method that comes with multiple advantages: the requestAnimationFrame API.
+
+We will compare the old methods with the new one, and implement the same  example with each of them to highlight the differences.
+
+<h3 id="ch4-2-2">4.2.2 Basic Animation Techniques</h3>
+
+Below is the example shown in the video, with source code:
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Animation</title>
+<style>
+#myCanvas {
+border: 1px solid black;
+}
+</style>
+<script>
+var canvas, ctx;
+var rectangleX = 0;
+var colors = ['red', 'blue', 'green'];
+var currentColor = 0;
+var speed = 3;
+function init() {
+// This function is called after the page is loaded
+// 1 - Get the canvas
+canvas = document.getElementById('myCanvas');
+// 2 - Get the context
+ctx=canvas.getContext('2d');
+// 3 - we can draw
+//setInterval(animate, 100);
+//setTimeout(animate, 100);
+requestAnimationFrame(animate);
+setInterval(changeColor, 1000);
+}
+function animate() {
+// - 1 clear canvas
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+// 2 - draw a red rectangle
+ctx.fillRect(rectangleX,0,80,100);
+// 3 - move the shapes
+rectangleX = rectangleX +speed;
+if((rectangleX+80 > 200) || (rectangleX <= 0)){
+speed = -speed;
+}
+// Call again the anilate function after 100ms
+//setTimeout(animate, 100);
+requestAnimationFrame(animate);
+}
+function changeColor() {
+ctx.fillStyle= colors[currentColor%3];
+currentColor += 1;
+// Comment next line if you do not want to change the speed at
+// each bounce
+speed += Math.sign(speed)*1;
+console.log("speed = " + speed)
+}
+</script>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="200" height="200">
+Your browser does not support the canvas tag.
+</canvas>
+</body>
+</html>
+```
+
+</details>
+
+<b>Errata</b>: in the video, we use speed +=1; in order to increment the speed of the rectangle each time it bounces (in the changeColor() function). This is not correct as speed can be negative. The online example fixes this by using speed += Math.sign(speed) * 1; instead this will add +1 or -1 depending on the sign of speed.
+
+<h3 id="ch4-2-3">4.2.3 Animating Using setInterval()</h3>
+
+The setInterval(...) function is still popular on the Web, and even though this is not the recommended way to do 60 frames/second canvas animation, it is worth understanding how it works.
+
+Syntax: setInterval(function, ms);
+
+The setInterval(...) function calls another function or evaluates an expression at specified intervals of time (in milliseconds), and returns the unique id of the action. You can always stop it by calling the clearInterval(id) function with the interval identifier as an argument.
+
+<h4>Basic example that shows how to animate a DIV using the DOM API</h4>
+
+This is how pre-HTML5 games were written. Before the introduction of the canvas element, developers made games using div elements. By changing their background color, top and left CSS positions, it was possible to animate characters in games. The animation was created by calling repeatedly a function that did the drawing, using the JavaScript setInterval or setTimeout functions.
+
+Please try this example that moves/animates a div using setInterval:
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>setInterval for animation</title>
+<style>
+#animatedDIV {
+position:absolute;
+background-color:red;
+color:white;
+height:100px;
+}
+</style>
+</head>
+<body>
+<button onclick="start()">Start animation</button>
+<button onclick="stop()">Stop animation</button>
+<div>
+<div id="animatedDIV">Animated DIV :-)</div>
+</div>
+<script>
+var elm = document.getElementById("animatedDIV");
+var requestId;
+var x = 0;
+function render(time) {
+elm.style.left = x++ + "px";
+}
+function start() {
+requestId = setInterval(render, 10);
+}
+function stop() {
+if (requestId) {
+clearInterval(requestId);
+}
+}
+</script>
+</body>
+</html>
+```
+
+</details>
+
+<h4>Extract from the source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <body>
+2.     <div id="animatedDIV">Animated DIV :-)</div>
+3.  
+4.     <button onclick="start()">Start animation</button>
+5.     <button onclick="stop()">Stop animation</button>
+6.  
+7.     <script>
+8.         var elm = document.getElementById("animatedDIV");
+9.         var requestId;
+10.        var x = 0;
+11. 
+12.        function render(time) {
+13.            elm.style.left = x++ + "px";
+14.        }
+15. 
+16.        function start() {
+17.            **requestId = setInterval(render, 10);**
+18.        }
+19. 
+20.        function stop() {
+21.            if (requestId) {
+22.                **clearInterval(requestId);**
+23.            }
+24.        }
+25.     </script>
+26. </body>
+```
+
+</details>
+
+Here, we define a &lt;div&gt; element, (see the online source code for the CSS properties involved), and we use the setInterval method (*line 17*) to call every 10ms the render() method that will just increment the position of this element. Notice that since we're using the DOM, the horizontal position of the div is modified by changing its left CSS property.
+
+The call to setInterval returns an id we can use to stop the animation, by calling clearInterval (*line 22*).
+
+<h4>Animate a monster in a canvas, using setInterval</h4>
+
+We use the drawMonster() function:
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>setInterval and monster animation</title>
+<style>
+<style>
+#myCanvas {
+border: 1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
+Your browser does not support the canvas tag.
+</canvas>
+<p>
+<button onclick="start()">Start animation</button>
+<button onclick="stop()">Stop animation</button>
+<script>
+var canvas, ctx;
+var monsterX=100, monsterY=100, monsterAngle=0;
+function init() {
+// This function is called after the page is loaded
+// 1 - Get the canvas
+canvas = document.getElementById('myCanvas');
+// 2 - Get the context
+ctx=canvas.getContext('2d');
+}
+function animationLoop() {
+// 1 - Clear the canvas
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+// 2 Draw the monster using variables for pos, angle, etc.
+drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
+// 3 Move the monster (change pos, angle, size, etc.)
+monsterX += 10;
+monsterX %= canvas.width
+monsterAngle+= 0.01;
+}
+function drawMonster(x, y, angle, headColor, eyeColor) {
+// GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
+ctx.save();
+// Moves the coordinate system so that the monster is drawn
+// at position (x, y)
+ctx.translate(x, y);
+ctx.rotate(angle)
+// head
+ctx.fillStyle=headColor;
+ctx.fillRect(0,0,200,200);
+// eyes
+ctx.fillStyle='red';
+ctx.fillRect(35,30,20,20);
+ctx.fillRect(140,30,20,20);
+// interior of eye
+ctx.fillStyle=eyeColor;
+ctx.fillRect(43,37,10,10);
+ctx.fillRect(143,37,10,10);
+// Nose
+ctx.fillStyle='black';
+ctx.fillRect(90,70,20,80);
+// Mouth
+ctx.fillStyle='purple';
+ctx.fillRect(60,165,80,20);
+// GOOD PRACTICE !
+ctx.restore();
+}
+function start() {
+// Start the animation loop, change 20 for bigger values
+requestId = setInterval(animationLoop, 20);
+}
+function stop() {
+if (requestId) {
+clearInterval(requestId);
+}
+}
+</script>
+</body>
+</html>
+```
+
+</details>
+
+<h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <body onload="init();">
+2.      <canvas id="myCanvas" width="400" height="400">
+3.          Your browser does not support the canvas tag.
+4.      </canvas>
+5.      <p>
+6.      <button onclick="start()">Start animation</button>
+7.      <button onclick="stop()">Stop animation</button>
+8.  
+9.      <script>
+10.         var canvas, ctx;
+11.         var monsterX=100, monsterY=100, monsterAngle=0;
+12. 
+13.         function init() {
+14.             // This function is called after the page is loaded
+15.             // 1 - Get the canvas
+16.             canvas = document.getElementById('myCanvas');
+17.             // 2 - Get the context
+18.             ctx=canvas.getContext('2d');
+19.         }
+20. 
+21.         function animationLoop() {
+22.             // 1 - Clear the canvas
+23.             ctx.clearRect(0, 0, canvas.width, canvas.height);
+24. 
+25.             // 2 Draw the monster using variables for pos, angle, etc.
+26.            drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
+27. 
+28.            // 3 Move the monster (change pos, angle, size, etc.)
+29.            monsterX += 10;
+30.            monsterX %= canvas.width
+31.            monsterAngle+= 0.01;
+32.         }
+33. 
+34.         function drawMonster(x, y, angle, headColor, eyeColor) {
+35.         // BEST PRACTICE: SAVE CONTEXT AND RESTORE IT AT THE END
+36.         ctx.save();
+37. 
+38.         // Moves the coordinate system so that the monster is drawn
+39.         // at position (x, y)
+40.         ctx.translate(x, y);
+41.         ctx.rotate(angle)
+42. 
+43.         // head
+44.         ctx.fillStyle=headColor;
+45.         ctx.fillRect(0,0,200,200);
+46.         ...
+47. 
+48.         // BEST PRACTICE!
+49.         ctx.restore();
+50.      }
+51. 
+52.      function start() {
+53.          // Start the animation loop, change 20 for bigger values
+54.          **requestId = setInterval(animationLoop, 20);**
+55.      }
+56. 
+57.      function stop() {
+58.          if (requestId) {
+59.              **clearInterval(requestId);**
+60.          }
+61.      }
+62. </script>
+63. </body>
+```
+
+</details>
+
+<h4>Explanations:</h4>
+<ul>
+<li><i>Lines 52-61</i>: The code for launching and stopping the animation is similar to that from the previous example.</li>
+<li><i>Lines 34-50</i>: The code that draws the monster is that which we saw earlier when we presented the 2D transformations. Best practice is to save and restore the context at the beginning and end of each function that changes the context.</li>
+<li><i>Lines 21-32</i>: <b>The most interesting part is the animation loop</b> that implements the basic animation steps: *clear-draw-move*. In order to make a shape "movable", we use some "state variables" for its position and angle, and we modify them at each iteration (<i>lines 29-32</i>). We will see later on how to modify the value of these variables on user interactions (keyboard, mouse, etc.).</li>
+</ul>
+
+<h4>Problems with setInterval</h4>
+
+While the above example works, there are several reasons not to use setInterval for doing smooth animations.
+
+<h4>Running several animations simultaneously</h4>
+
+The setInterval function may become hard to debug, particularly if you run several animations simultaneously. For example, if you have two intervals, one running every 100 milliseconds, the other every second, and if you want to debug the second one, the first one will constantly be run at regular intervals, making step by step debugging really difficult.
+
+<h4>A single animation may be interrupted by itself to become two simultaneous animations</h4>
+
+setInterval will execute the function passed as first parameter every n milliseconds regardless of when the function was last called or how long the function takes to execute. If the function takes longer than the interval, then setInterval might queue too many function executions back to back when the interval is too short, leading to unpredictable results. 
+
+<b>BEST PRACTICE<b>: AVOID using setInterval for animating in a canvas,
+except for trivial cases (change a color every second).
+
+<h3 id="ch4-2-4">4.2.4 Animating Using setTimeout()</h3>
+
+One thing you should always remember about using setInterval: if we set number of milliseconds at - let's say 20ms - it will call our game loop function EACH 20ms, *even if the previous one is not yet finished*. This may lead to many problems (incomplete rendering, etc.).
+
+That's where we can use another function: 
+
+-   setTimeout(function, ms);
+
+This function works like setInterval(...) with one difference: it calls your function ONCE and *AFTER a given amount of time*.
+
+<h4>Example of the monster animated in a canvas with setTimeout</h4>
+
+Check the example below (click on start animation):
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Monster animated in a canvas with setTimeout</title>
+<style type="text/css">
+canvas {
+border:1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
+Your browser does not support the canvas tag.
+</canvas>
+<p>
+<button onclick="start()">Start animation</button>
+<button onclick="stop()">Stop animation</button>
+<script>
+var canvas, ctx;
+var monsterX=100, monsterY=100, monsterAngle=0;
+function init() {
+// This function is called after the page is loaded
+// 1 - Get the canvas
+canvas = document.getElementById('myCanvas');
+// 2 - Get the context
+ctx=canvas.getContext('2d');
+}
+function animationLoop() {
+// 1 - Clear
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+// 2 Draw
+drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
+// 3 Move
+monsterX += 10;
+monsterX %= canvas.width
+monsterAngle+= 0.01;
+// call again mainloop after 20ms
+requestId = setTimeout(animationLoop, 20);
+}
+function drawMonster(x, y, angle, headColor, eyeColor) {
+// GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
+ctx.save();
+// Moves the coordinate system so that the monster is drawn
+// at position (x, y)
+ctx.translate(x, y);
+ctx.rotate(angle)
+// head
+ctx.fillStyle=headColor;
+ctx.fillRect(0,0,200,200);
+// eyes
+ctx.fillStyle='red';
+ctx.fillRect(35,30,20,20);
+ctx.fillRect(140,30,20,20);
+// interior of eye
+ctx.fillStyle=eyeColor;
+ctx.fillRect(43,37,10,10);
+ctx.fillRect(143,37,10,10);
+// Nose
+ctx.fillStyle='black';
+ctx.fillRect(90,70,20,80);
+// Mouth
+ctx.fillStyle='purple';
+ctx.fillRect(60,165,80,20);
+// GOOD PRACTICE !
+ctx.restore();
+}
+function start() {
+// Start the animation loop, change 20 for bigger
+// values
+requestId = setTimeout(animationLoop, 20);
+}
+function stop() {
+if (requestId) {
+clearTimeout(requestId);
+}
+}
+</script>
+</body>
+</html>
+```
+
+</details>
+
+This is similar to the previous example except that we called setTimeout(function, delay) instead of setInterval(function, period). **As setTimeout runs the function passed as the first parameter only once, we also have to call it at the end of the loop**.
+
+<h4>Extract from source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  function animationLoop() {
+2.     // 1 - Clear
+3.     ctx.clearRect(0, 0, canvas.width, canvas.height);
+4.  
+5.     // 2 Draw
+6.     drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
+7.  
+8.     // 3 Move
+9.     monsterX += 10;
+10.    monsterX %= canvas.width
+11.    monsterAngle+= 0.01;
+12. 
+13.    **// call mainloop again after 20ms**
+14.    **requestId = setTimeout(animationLoop, 20);**
+15. }
+16.  
+17. function start() {
+18.    // Start the animation loop, change 20 for bigger
+19.    // values
+20.    **requestId = setTimeout(animationLoop, 20);**
+21. }
+22. 
+23. function stop() {
+24.    if (requestId) {
+25.       **clearTimeout(requestId);**
+26.    }
+27. }
+```
+
+</details>
+
+This function is certainly more suitable for doing graphic animation, such as for writing an HTML5 game. It will never interrupt an ongoing animation, even if the instructions inside the animation loop take too long.
+
+<h4>Problems with setInterval() and setTimeout()</h4>
+
+setTimeout does not "wait"  during the timeout period. It lets the rest of the JavaScript code run. It schedules a new call to the function passed as first parameter with a timer running in the background. This might cause it to take slightly longer than the expected timeout period to start executing. 
+
+This problem also occurs with setInterval, the timing is not "very" reliable. If you plan to run a function every 20ms, and if you measure precisely the real timing, sometimes you will discover big differences between what is scheduled and what is performed. This is because these methods were designed a long time ago, when high precision timers and 60 frames per second animation were not an option.
+
+Here comes the [requestAnimationFrame API,](https://www.w3.org/TR/html51/webappapis.html#animation-frames) a very good companion to the canvas API!
+
+<b>BEST PRACTICE</b>: AVOID using setTimeout for animating in a canvas, except for trivial cases.
+
+For 60 frames/second animation, use requestAnimationFrame!
+
+<h3 id="ch4-2-5">4.2.5 The requestAnimationFrame API</h3>
+
+The best way to make animation at 60 frames per second: requestAnimationFrame!
+
+The requestAnimationFrame(animationLoop) is very similar to setTimeout:
+
+-   **It targets 60 frames/s**: requestAnimationFrame asks the browser to schedule a call to the animationLoop function passed as parameter in 1/60th of a second (equivalent to 16.6ms). Keep in mind that most monitors cannot display more than 60 frames per second (FPS). Note that whether humans can tell the difference among high frame rates depends on the application, most games are acceptable above 30 FPS, and virtual reality might require 75 FPS to achieve a natural feel. Some gaming monitors go up to 144 FPS (pro players in e-sport train themselves at Counter Strike with a 150 frames/s rate).
+
+-   **It calls the function only ONCE**, so if you want a continuous animation, like with setTimeout, you need to call again requestAnimationFrame at the end of the animationLoop function.
+
+It has, however, several advantages over setInterval and setTimeout:
+
+-   **The scheduling is much more accurate:** if the code inside the function can be executed in less than 16.6ms, then the average error between the scheduled time and the real time will be much smaller than with the old functions.
+
+-   **High resolution timer**: even if this difference is small, the function that is called after 16.6ms has an extra parameter that is a high resolution time, very useful for writing games that do[ time-based animation](https://blog.sklambert.com/using-time-based-animation-implement/). Time-based animation will be studied in detail in the HTML5 Part 2 course at W3Cx. It is a technique that comprises measuring the amount of time elapsed between two frames, then computing the distance in pixels to move objects on screen so that the visible speed for a human eye remains constant, even if the frame rate is not.
+
+-   **Multiple animations are merged**: browsers can bundle animations happening at the same time into a single paint redraw (thus happening faster/with less CPU cycles), solving the problems that can occur with simultaneous setInterval calls.
+
+-   **CPU/GPU optimization, battery saved on mobiles**:  if the JavaScript execution is occurring in a tab/window which is not visible, it doesn't have to be drawn. However the animation loop is still executed (objects will be moved, not drawn). This is the same when a mobile phone or tablet screen is black or if the application is put in background.
+
+<h4>Typical use</h4>
+
+You will note that  requestAnimationFrame(function) is used like setTimeout(function, delay). A call to requestAnimationFrame just asks the browser to call the function passed as a parameter ONCE, **and the target delay is fixed**, and corresponds to a 60 frames/s frame rate (16.6ms). Notice that an id is used for stopping an animation with cancelAnimationFrame(id). 
+
+<h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <body onload="init();">
+2.  <script>
+3.  var canvas, ctx;
+4.  
+5.  function init() {
+6.     // This function is called after the page is loaded
+7.     // 1 - Get the canvas
+8.     canvas = document.getElementById('myCanvas');
+9.     // 2 - Get the context
+10.    ctx=canvas.getContext('2d');
+11. 
+12.    // 3 - start the animation
+13.    startAnimation();
+14. }
+15.  
+16.  **var id;**
+17.  function animationLoop(timeStamp) {
+18.    // 1 - Clear
+19.    ctx.clearRect(0, 0, canvas.width, canvas.height);
+20.    // 2 Draw
+21.    drawShapes(...);
+22.    // 3 Move
+23.    moveShapes(...);
+24.    // call mainloop  again after 16.6ms (corresponds to 60 frames/second)
+25.    **id = requestAnimationFrame(animationLoop);**
+26. }
+27.  
+28.  function startAnimation() {
+29.    **id = requestAnimationFrame(animationLoop);**
+30. }
+31.  function stopAnimation() {
+32.    if (id) {
+33.       **cancelAnimationFrame(id);**
+34.    }
+35. }
+36. </script>
+37. </body>
+```
+
+</details>
+
+<h4>Example: animate the monster with requestAnimationFrame</h4>
+
+<h4>Check the example below:</h4>
+
+<h4>Source code extract - please compare with the previous example that used setInterval():</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  function animationLoop(timeStamp) {
+2.      // 1 - Clear
+3.      ctx.clearRect(0, 0, canvas.width, canvas.height);
+4.   
+5.      // 2 - Draw
+6.      drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
+7.   
+8.      // 3 - Move
+9.      monsterX += 10;
+10.     monsterX %= canvas.width
+11.     monsterAngle+= 0.01;
+12.  
+13.     **// call mainloop again after 16.6 ms (60 frames/s)**
+14.     **requestId = requestAnimationFrame(animationLoop);**
+15. }
+16. 
+17. function start() {
+18.     **// Start the animation loop, targets 60 frames/s, this**
+19. **    // calls animationLoop only ONCE!**
+20.     **requestId = requestAnimationFrame(animationLoop);**
+21. }
+22. 
+23. function stop() {
+24.     if (requestId) {
+25.         **cancelAnimationFrame(requestId);**
+26.     }
+27. }
+```
+
+</details>
+
+Notice that calling requestAnimationFrame(animationLoop) at* line 19*, and after that from within the loop at line 14, asks the browser to call the animationLoop function so that the delta between calls will be **as close as possible to 16.6ms  (this corresponds to 1/60th of a second)**.
+
+<h4>Is the 16.6ms delay really accurate? Can we trust it?</h4>
+
+This target may be hard to reach if:
+
+-   The animation loop content is too complex,
+
+-   The target device that runs the animation is a low end phone or an old computer,
+
+-   The scheduler may be a bit late or a bit in advance (even if this kind of error is much smaller with requestAnimationFrame than with setInterval or setTimeout).
+
+Many HTML5 games perform what we call a "time-based animation". For this, we need an accurate timer that will tell us the elapsed time between each animation frame.
+
+Depending on this time, we can compute the distances that must be achieved by each object on the screen in order to move at a constant speed (for a human eye), independently of the CPU or GPU of the computer or mobile device that is running the game.
+
+The timeStamp parameter of the animationLoop function (*line 1* in the above code) is useful for exactly that: it gives a high resolution time. By measuring deltas between two consecutive calls of the animationLoop, we will know exactly, with a sub-millisecond accuracy, the elapsed time between two frames.
+
+Using time-based animation, and more generally, using the canvas element for writing HTML5 games, is part of the W3Cx HTML5 Apps and Games course.
+
+Current <a href="https://caniuse.com/requestanimationframe">support</a> is really good and all modern browsers support this API.
+
+<h3 is="ch4-3-1">4.3.1 Events: Input and Output</h3>
+
+In JavaScript, we treat events made by users as an input, and we manipulate the DOM structure as an output. Most of the time in games/animations, we will change state variables of moving objects, such as position or speed of an alien ship, and the animation loop will take care of these variables to move the objects.
+
+The events are called *DOM events*, and we use the *DOM JavaScript API* to create *event handlers*.
+
+<h4>There are three ways to manage events in the DOM structure</h4>
+
+<h4>First method: declare event handlers in the HTML code</h4>
+
+You will often find this in examples on the Web:
+
+```
+1.  <div id="someDiv" **onclick="alert('clicked!');"**>
+2.      content of the div
+3.  </div>
+```
+
+Note: this is not the recommended way to handle events, even if it's very easy to use. Mixing the 'visual layer' (HTML) and the 'logic layer' (JavaScript) in one place is ok for small examples (we have used this in some examples in this course) but is not the recommended way for full scale applications where a clean separation is best.
+
+<h4>Second method: add an event handler to an HTML element in JavaScript</h4>
+
+<h4>Here is an example:</h4>
+
+```
+1.  document.getElementById('someDiv').onclick = function(evt) {
+2.    alert('clicked!');
+3.  }
+```
+
+This method is fine, but  you will not be able to attach several listener functions. If you need to do this, the preferred version is the next one.
+
+<h4>Third method: register a callback to the event listener with the addEventListener method</h4>
+
+<h4>This is how we do it:</h4>
+
+```
+1.  document.getElementById('someDiv').addEventListener('click', function(evt) {
+2.      alert('clicked!');
+3.  }, false);
+```
+
+The third parameter is not important for now, just set it to false, or simply do not add a third parameter.
+
+<h4>The DOM event that is passed to the event listener function</h4>
+
+When you create an EventListener and attach it to an element,  an event object will be passed as a parameter to your callback, just like this:
+
+```
+1.  element.addEventListener('click', function(<b>event</b>) {
+2.     <b>// now you can use the event object inside the callback</b>
+3.  }, false);
+```
+
+Depending on the type of event you are listening to, we will use different properties from the event object in order to get useful information like: "what keys have been pressed down?", "what is the position of the mouse cursor?", "which mouse button is down?", etc.
+
+Let's see next how to deal with the keyboard and the mouse. In the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games</a>, we look at additional APIs such as <a href="https://www.w3.org/TR/gamepad/">the gamePad API</a> for using USB or wireless gamepads/joysticks/game controllers.
+
+<h4>Source code for the knowledge check 4.3.1</h4>
+
+<a href="http://jsbin.com/korele/edit" target="_blank">Online example on JS Bin</a>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset="utf-8">
+5.  <title>Click on button</title>
+6.  </head>
+7.  <body>
+8.     <button id="myButton">Click me!</button>
+9.  <script>
+10.    var button = document.getElementById('myButton');
+11.    // Define a click listener on the button
+12.    button.addEventListener('click', processClick;**
+13. 
+14.    // callback
+15.    function processClick(event) {
+16.       console.log("Button clicked");
+17. 
+18.       // What is the event parameter?
+19.    }
+20. </script>
+21. </body>
+22. </html>
+```
+
+</details>
+
+<h3 id="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
+
+When you listen to keyboard related events (keydown, keyup or keypressed), the event parameter passed to the listener function will contain the code of the key that fired the event. Then it is possible to test what key has been pressed or released, like this:
+
+```
+1.  window.addEventListener('keydown', function(event) {
+2.     if (**event.keyCode === 37**) {
+3.       //left arrow was pressed
+4.     }
+5.  }, false);
+```
+
+At *line 2*, the value "37" is the key code that corresponds to the left arrow. It might be difficult to know the correspondences between real keyboard keys and codes, so here are handy pointers:
+
+-   Try key codes with this [interactive test page](http://www.asquare.net/javascript/tests/KeyCode.html)
+
+-   And find a list of keyCodes in this [CSS Tricks article](https://css-tricks.com/snippets/javascript/javascript-keycodes/#keycode-values))
+
+<h4>Examples</h4>
+
+<h4>Example #1: adding a key listener to the window object</h4>
+
+A lot of people think that the canvas element is not able to get key events. Many examples on the Web handle key events on canvas by adding a listener to the window object directly, like this:
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 193. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image193.png?raw=true"
+   width="25%"
+   alt="image193.png." />
+</p>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Adding a key listener to the window object - Example #1</title>
+<style>
+#myCanvas {
+border: 1px solid black;
+}
+</style>
+<body onload="init();">
+<p>
+```
+
+This example shows how to handle key events in a canvas by adding a key listener to the window object. Like that, all key press in the document will trigger the event listener function.</p>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<canvas id="myCanvas" width="350" height="200">
+</canvas>
+<script>
+var canvas;
+function init() {
+// This will work when you press a key, anywhere on the document
+window.addEventListener('keydown', handleKeydown, false);
+}
+function handleKeydown(e){
+alert('keycode: '+e.keyCode);
+return false;
+};
+</script>
+</body>
+</html>
+```
+
+</details>
+
+<h4>Code source extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <canvas id="myCanvas" width="350" height="200">
+2.  </canvas>
+3.   
+4.  <script>
+5.  
+6.  function init() {
+7.      // This will work when you press a key, anywhere on the document
+8.      window.addEventListener('keydown', handleKeydown, false);
+9.  }
+10.  
+11.  
+12. function handleKeydown(e){
+13.     alert('keycode: '+e.keyCode);
+14.     return false;
+15. };
+16. </script>
+```
+
+</details>
+
+Indeed this solution works well if you write a game, and want to detect events wherever the mouse cursor is, and without worrying about what HTML element has the focus, etc...
+
+<h4>Example #2: moving the monster with the keyboard</h4>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 194. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image194.png?raw=true"
+   width="65%"
+   alt="." />
+</p>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moving the monster with the keyboard - Example #2</title>
+<style type="text/css">
+canvas {
+border:1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" width="400" height="400">
+Your browser does not support the canvas tag.
+</canvas>
+<p>
+<script>
+var canvas, ctx;
+var monsterX=100, monsterY=100, monsterAngle=0;
+var incrementX = 0;
+function init() {
+// This function is called after the page is loaded
+// 1 - Get the canvas
+canvas = document.getElementById('myCanvas');
+// 2 - Get the context
+ctx=canvas.getContext('2d');
+// 3 add key listeners to the window element
+window.addEventListener('keydown', handleKeydown, false);
+window.addEventListener('keyup', handleKeyup, false);
+// 4 - start the animation
+requestId = requestAnimationFrame(animationLoop);
+}
+function handleKeydown(evt) {
+if (evt.keyCode === 37) {
+//left key
+incrementX = -1;
+} else if (evt.keyCode === 39) {
+// right key
+incrementX = 1;
+}
+}
+function handleKeyup(evt) {
+incrementX = 0;
+}
+function animationLoop() {
+// 1 - Clear
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+// 2 Draw
+drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
+// 3 Move
+monsterX += incrementX;
+// call again mainloop after 16.6 ms (60 frames/s)
+requestId = requestAnimationFrame(animationLoop);
+}
+function drawMonster(x, y, angle, headColor, eyeColor) {
+// GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
+ctx.save();
+// Moves the coordinate system so that the monster is drawn
+// at position (x, y)
+ctx.translate(x, y);
+ctx.rotate(angle)
+// head
+ctx.fillStyle=headColor;
+ctx.fillRect(0,0,200,200);
+// eyes
+ctx.fillStyle='red';
+ctx.fillRect(35,30,20,20);
+ctx.fillRect(140,30,20,20);
+// interior of eye
+ctx.fillStyle=eyeColor;
+ctx.fillRect(43,37,10,10);
+ctx.fillRect(143,37,10,10);
+// Nose
+ctx.fillStyle='black';
+ctx.fillRect(90,70,20,80);
+// Mouth
+ctx.fillStyle='purple';
+ctx.fillRect(60,165,80,20);
+// GOOD PRACTICE !
+ctx.restore();
+}
+function start() {
+// Start the animation loop, targets 60 frames/s
+requestId = requestAnimationFrame(animationLoop);
+}
+function stop() {
+if (requestId) {
+cancelAnimationFrame(requestId);
+}
+}
+</script>
+</body>
+</html>
+```
+
+</details>
+
+<h4>Code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <script>
+2.  var canvas, ctx;
+3.  var** monsterX=100**, monsterY=100, monsterAngle=0;
+4.  var** incrementX = 0**;
+5.  
+6.  function init() {
+7.      // This function is called after the page is loaded
+8.   
+9.      // 1 - Get the canvas
+10.     canvas = document.getElementById('myCanvas');
+11.  
+12.     // 2 - Get the context
+13.     ctx=canvas.getContext('2d');
+14.  
+15.     **// 3 add key listeners to the window element**
+16.     **window.addEventListener('keydown', handleKeydown, false);**
+17.     **window.addEventListener('keyup', handleKeyup, false);**
+18. 
+19.     // 4 - start the animation
+20.     requestId = requestAnimationFrame(animationLoop);
+21. }
+22. 
+23. function** handleKeydown(evt)** {
+24.     if (**evt.keyCode === 37**) {
+25.        **//left key**
+26.        **incrementX = -1;**
+27.     } else if (**evt.keyCode === 39**) {
+28.        **// right key**
+29.        **incrementX = 1;**
+30.     }
+31. }
+32. function** handleKeyup(evt)** {
+33.     **incrementX = 0;**
+34. }
+35. 
+36. function animationLoop() {
+37.     // 1 - Clear
+38.     ctx.clearRect(0, 0, canvas.width, canvas.height);
+39.  
+40.     // 2 Draw
+41.     drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
+42.  
+43.     **// 3 Move**
+44.     **monsterX += incrementX;**
+45.  
+46.     // call again mainloop after 16.6 ms (60 frames/s)
+47.     requestId = requestAnimationFrame(animationLoop);
+48. }
+49. </script>
+```
+
+</details>
+
+<h4>Example #3: what if I want to listen to key events only in my canvas?</h4>
+
+If you add a key listener to a canvas element, the problem is that it will get events only when it has the focus. And by default, it will never have the focus!
+
+The tabindex attribute of the canvas element makes it focusable. Without it, it will never get the focus!
+
+The trick is to declare the canvas like this:
+
+```
+1.  <canvas id="myCanvas" width="350" **tabindex="1"** height="200">
+2.  </canvas>
+```
+
+And we force the canvas to get the focus with:
+
+```
+1.  canvas=document.getElementById('myCanvas');
+2.  ...
+3.  **canvas.focus();**
+```
+
+Now, if we try an example with the above canvas declaration, we show when an HTML element has the focus: a border is added to it.
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 195. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image195.png?raw=true"
+   width="25%"
+   alt="." />
+</p>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Listening to key events only in the canvas - Example #3</title>
+<style type="text/css">
+canvas {
+border:1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+This example shows how to handle key events in a canvas by adding a key listener to the canvas object (see the blue border around the canvas... it shows that the canvas has the focus. Try to click outside of the canvas: it will lose the focus).
+<p>
+If you don't want a border to appear when you click on the canvas, set its style to outline: none
+</p>
+<p>Press a key when the canvas has the focus: an alert will display the keycode of the key you pressed. Problem: if the canvas looses the focus, key press are no more detected...</p>
+<canvas id="myCanvas" width="350" tabindex="1" height="200">
+</canvas>
+<script>
+var canvas;
+function init() {
+canvas=document.getElementById('myCanvas');
+// This will work only if the canvas has the focus
+canvas.addEventListener('keydown', handleKeydown, false);
+// We can set the focus on the canvas like that:
+//canvas.focus();
+// ... but it will stop working if we click somewhere else
+// in the document
+}
+function handleKeydown(e){
+alert('keycode: '+e.keyCode);
+return false;
+};
+</script>
+</body>
+</html>
+```
+
+</details>
+
+Note that the line that forces the focus to the canvas is commented by default. Try to click on the canvas, then press a key, then click out of the canvas, then press a key: this time nothing happens!
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 196. (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image196.jpeg?raw=true"
+   width="50%"
+   alt="image196.jpeg a border appears when the canvas has the focus." />
+</p>
+
+<h4>Extract from the code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  var canvas;
+2.  
+3.  function init() {
+4.       canvas=document.getElementById('myCanvas');
+5.   
+6.       // This will work only if the canvas has the focus
+7.       **canvas.addEventListener('keydown', handleKeydown, false);**
+8.  
+9.       **// We can set the focus on the canvas like this:**
+10.      **//canvas.focus();**
+11. 
+12.      // ... but it will stop working if we click somewhere else
+13.      // in the document
+14. }
+15.  
+16.  
+17. function handleKeydown(e){
+18.      alert('keycode: '+e.keyCode);
+19.      return false;
+20. };
+```
+
+</details>
+
+*Line 10* is useful to initially set the focus on the canvas, but this trick will not work if we click somewhere else in the HTML page.
+
+<h4>Example #4: a better way: set the focus when the mouse cursor enters the canvas</h4>
+
+A better way to manage key events on a canvas is to set the focus when the mouse is over the canvas, and to un-focus it otherwise.
+
+Here is a modified version of the "move monster example" seen earlier. This time, you move the monster with the left and right arrow only when the mouse cursor is over the canvas. We added two mouse event listeners on the canvas: one for the mouseenter event and the other for the mouseout event.
+
+When the mouse enters the canvas we call canvas.focus() to set the focus to the canvas, and when the mouse cursor goes out of the canvas, we call canvas.blur() to unset the focus.
+
+<!------------------------------------------------------------------------------------------------>
+<!----------- 197.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image197.png?raw=true"
+   alt="image197.png"
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Setting the focus when the mouse cursor enters the canvas - Example #4</title>
+<style type="text/css">
+canvas {
+border:1px solid black;
+}
+</style>
+</head>
+<body onload="init();">
+<canvas id="myCanvas" tabindex="1" width="400" height="400">
+Your browser does not support the canvas tag.
+</canvas>
+<p>
+<script>
+var canvas, ctx;
+var monsterX=100, monsterY=100, monsterAngle=0;
+var incrementX = 0;
+function init() {
+// This function is called after the page is loaded
+// 1 - Get the canvas
+canvas = document.getElementById('myCanvas');
+// 2 - Get the context
+ctx=canvas.getContext('2d');
+// 3 add key listeners to the window element
+canvas.addEventListener('keydown', handleKeydown, false);
+canvas.addEventListener('keyup', handleKeyup, false);
+canvas.addEventListener('mouseenter', setFocus, false);
+canvas.addEventListener('mouseout', unsetFocus, false);
+// 4 - start the animation
+requestId = requestAnimationFrame(animationLoop);
+}
+function setFocus(evt) {
+canvas.focus();
+};
+function unsetFocus(evt) {
+canvas.blur();
+incrementX = 0; // I added this line
+};
+function handleKeydown(evt) {
+if (evt.keyCode === 37) {
+//left key
+incrementX = -1;
+} else if (evt.keyCode === 39) {
+// right key
+incrementX = 1;
+}
+}
+function handleKeyup(evt) {
+incrementX = 0;
+}
+function animationLoop() {
+// 1 - Clear
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+// 2 Draw
+drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
+// 3 Move
+monsterX += incrementX;
+// call again mainloop after 16.6 ms (60 frames/s)
+requestId = requestAnimationFrame(animationLoop);
+}
+function drawMonster(x, y, angle, headColor, eyeColor) {
+// GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
+ctx.save();
+// Moves the coordinate system so that the monster is drawn
+// at position (x, y)
+ctx.translate(x, y);
+ctx.rotate(angle)
+// head
+ctx.fillStyle=headColor;
+ctx.fillRect(0,0,200,200);
+// eyes
+ctx.fillStyle='red';
+ctx.fillRect(35,30,20,20);
+ctx.fillRect(140,30,20,20);
+// interior of eye
+ctx.fillStyle=eyeColor;
+ctx.fillRect(43,37,10,10);
+ctx.fillRect(143,37,10,10);
+// Nose
+ctx.fillStyle='black';
+ctx.fillRect(90,70,20,80);
+// Mouth
+ctx.fillStyle='purple';
+ctx.fillRect(60,165,80,20);
+// GOOD PRACTICE !
+ctx.restore();
+}
+function start() {
+// Start the animation loop, targets 60 frames/s
+requestId = requestAnimationFrame(animationLoop);
+}
+function stop() {
+if (requestId) {
+cancelAnimationFrame(requestId);
+}
+}
+</script>
+</body>
+</html>
+```
+
+</details>
+
+<h4>Code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  function init() {
+2.     // This function is called after the page is loaded
+3.     // 1 - Get the canvas
+4.     canvas = document.getElementById('myCanvas');
+5.     // 2 - Get the context
+6.     ctx=canvas.getContext('2d');
+7.  
+8.     // 3 - Add key listeners to the window element
+9.     canvas.addEventListener('keydown', handleKeydown, false);
+10.    canvas.addEventListener('keyup', handleKeyup, false);
+11. 
+12.    canvas.addEventListener('mouseenter', setFocus, false);
+13.    canvas.addEventListener('mouseout', unsetFocus, false);
+14. 
+15.    // 4 - Start the animation
+16.    requestId = requestAnimationFrame(animationLoop);
+17. }
+18. 
+19. function setFocus(evt) {
+20.     canvas.focus();
+21. };
+22. 
+23. 
+24. function unsetFocus(evt) {
+25.    canvas.blur();
+26.    incrementX = 0; // stop the monster if the mouse exists the canvas
+27. };
+```
+
+</details>
+
+The third parameter (false) of *lines 12* and *13* means "we do not want to propagate the event to the ancestors of the canvas in the DOM." 
+
+<h3 id="ch4-3-3">4.3.3 Mouse Interaction, Mouse Events</h3>
+
+Detecting mouse events in a canvas is quite straightforward: you add an event listener to the canvas, and the browser invokes that listener when the event occurs.
+
+The example below is about listening to mouseup and mousedown events (when a user presses or releases any mouse button):
+
+```
+1.  canvas.addEventListener('mousedown', function (evt) {
+2.  // do something with to the mousedown event
+3.  });
+```
+
+The event received by the listener function will be used for getting the button number or the coordinates of the mouse cursor. Before looking at different examples, let's look at the different event types we can listen to.
+
+<h4>The different mouse events</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!----------- 198. mouse events illustrated (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image198.png?raw=true"
+   alt="Mouse events illustrated."
+   width="35%">
+&nbsp;
+<br/>
+
+We saw in the last example how to detect the mouseenter and mouseout events.
+
+There are other events related to the mouse:
+
+-   mouseleave: similar to mouseout, fired when the mouse leaves the surface of the element. The difference between mouseleave and mouseout is that mouseleave does not fire when the cursor moves over descendant elements, and mouseout is fired when the element moved is outside of the bounds of the original element or is a child of the original element.
+
+-   mouseover: the mouse cursor is moving over the element that listens to that event. A mouseover event occurs on an element when you are over it - *coming from either its child OR parent element*, but a mouseenter event only occurs when the mouse *moves from the parent element to the child element*.
+
+-   mousedown: fired when a mouse button is pressed.
+
+-   mouseup: fired when a mouse button is released.
+
+-   mouseclick: fired after a mousedown and a mouseup have occured.
+
+-   mousemove: fired while the mouse moves over the element. Each time the mouse moves, a new event is fired, unlike with mouseover or mouseenter, where only one event is fired.
+
+<h4>The tricky part: accurately getting the mouse position relative to the canvas</h4>
+
+When you listen to any of the above events, the event object (we call it a "DOM event"), passed to the listener function, has properties that correspond to the mouse coordinates: clientX and clientY.
+
+However, these are what we call "window coordinates". Instead of being relative to the canvas itself, they are relative to the window (the page).
+
+Most of the time you need to work with the mouse position relative to the canvas, not to the window, so you must convert the coordinates between the window and the canvas. This will take into account the position of the canvas, and the CSS properties that may affect the canvas position (margin, etc.).
+
+Fortunately, there exists a method for getting the position and size of any element in the page: getBoundingClientRect().
+
+Play with the example below that show the problem:
+
+<!------------------------------------------------------------------------------------------------>
+<!----------- 199.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image199.png?raw=true"
+   alt=""
+   width="25%">
+&nbsp;
+<br/>
+
+<h4>JS</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+var canvas, ctx, mousePos, mouseButton;
+window.onload = function init() {
+canvas = document.getElementById('myCanvas');
+ctx = canvas.getContext('2d');
+canvas.addEventListener('mousemove', function (evt) {
+mousePos = getMousePos(canvas, evt);
+var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+writeMessage(canvas, message);
+}, false);
+canvas.addEventListener('mousedown', function (evt) {
+mouseButton = evt.button;
+var message = "Mouse button " + evt.button + " down at position: " + mousePos.x + ',' + mousePos.y;
+writeMessage(canvas, message);
+}, false);
+canvas.addEventListener('mouseup', function (evt) {
+var message = "Mouse up at position: " + mousePos.x + ',' + mousePos.y;
+writeMessage(canvas, message);
+}, false);
+};
+function writeMessage(canvas, message) {
+ctx.save();
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+ctx.font = '18pt Calibri';
+ctx.fillStyle = 'black';
+ctx.fillText(message, 10, 25);
+ctx.restore();
+}
+function getMousePos(canvas, evt) {
+// necessary to take into account CSS boudaries
+var rect = canvas.getBoundingClientRect();
+return {
+x: evt.clientX - rect.left,
+y: evt.clientY - rect.top
+};
+}
+```
+
+</details>
+
+<h4>CSS</h4>
+
+```css
+canvas {
+border:1px solid black
+}
+```
+
+<h4>HTML</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mouse event - Good code</title>
+<style>
+body {
+margin: 20px;
+padding: 0px;
+}
+</style>
+</head>
+<body>
+This is a canvas:<p></p>
+<canvas id="myCanvas" width="578" height="200"></canvas>
+</body>
+</html>
+```
+
+</details>
+
+<h4>JS</h4>
+
+```
+function getMousePos(canvas, evt) {
+   **// necessary to take into account CSS boundaries**
+   **var rect = canvas.getBoundingClientRect();**
+   return {
+      x: evt.clientX **- rect.left,**
+      y: evt.clientY **- rect.top**
+   };
+}
+```
+
+<h4>WRONG code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  ...
+2.  canvas.addEventListener('mousemove', function (evt) {
+3.      mousePos = getMousePos(canvas, evt);
+4.      var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+5.      writeMessage(canvas, message);
+6.  }, false);
+7.   
+8.  ...
+9.  function getMousePos(canvas, evt) {
+10.    // WRONG!!!
+11.    return {
+12.       x: evt.clientX,
+13.       y: evt.clientY
+14.    };
+15. }
+```
+
+</details>
+
+<h4>Here is the result, when the mouse is approximately at the top left corner of the canvas:</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!----------- 200.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image200.jpeg?raw=true"
+   alt="Bad mouse coordinates"
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>GOOD version of the code:</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!----------- 201.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image201.png?raw=true"
+   alt=""
+   width="40%">
+&nbsp;
+<br/>
+
+```
+function getMousePos(canvas, evt) {
+   **// necessary to take into account CSS boundaries**
+   **var rect = canvas.getBoundingClientRect();**
+   return {
+      x: evt.clientX **- rect.left,**
+      y: evt.clientY **- rect.top**
+   };
+}
+```
+
+<h4>Result (the cursor is approximately at the top left corner):</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!----------- 202.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image202.jpeg?raw=true"
+   alt="Mouse at zero zero"
+   width="30%">
+&nbsp;
+<br/>
+
+<h4>How to display the mouse position, and the mouse button that has been pressed or released</h4>
+
+<p>This example uses the previous function for computing the mouse position correctly. It listens to mousemove, mousedown and mouseup events, and shows how to get the mouse button number using the evt.button property.</p>
+
+<!------------------------------------------------------------------------------------------------>
+<!----------- 203.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image203.png?raw=true"
+   alt=""
+   width="40%">
+&nbsp;
+<br/>
+
+<!------------------------------------------------------------------------------------------------>
+<!----------- 204.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image204.jpeg?raw=true"
+   alt="Mouse event example"
+   width="50%">
+&nbsp;
+<br/>
+
+<h4>Extract from source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  var canvas, ctx, mousePos, mouseButton;
+2.   
+3.  window.onload = function init() {
+4.      canvas = document.getElementById('myCanvas');
+5.      ctx = canvas.getContext('2d');
+6.   
+7.      **canvas.addEventListener('mousemove', function (evt) {**
+8.          **mousePos = getMousePos(canvas, evt);**
+9.          var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+10.         writeMessage(canvas, message);
+11.     }, false);
+12.  
+13.     **canvas.addEventListener('mousedown', function (evt) {**
+14.         **mouseButton = evt.button;**
+15.         var message = "Mouse button " + evt.button + " down at position: " + mousePos.x + ',' + mousePos.y;
+16.         writeMessage(canvas, message);
+17.     }, false);
+18.  
+19.     **canvas.addEventListener('mouseup', function (evt) {**
+20.         var message = "Mouse up at position: " + mousePos.x + ',' + mousePos.y;
+21.         writeMessage(canvas, message);
+22.     }, false);
+23. };
+24.   
+25. function writeMessage(canvas, message) {
+26.    ctx.save();
+27.    ctx.clearRect(0, 0, canvas.width, canvas.height);
+28.    ctx.font = '18pt Calibri';
+29.    ctx.fillStyle = 'black';
+30.    ctx.fillText(message, 10, 25);
+31.    ctx.restore();
+32. }
+33.  
+34. function getMousePos(canvas, evt) {
+35.    // necessary to take into account CSS boudaries
+36.    var rect = canvas.getBoundingClientRect();
+37.    return {
+38.       x: evt.clientX - rect.left,
+39.       y: evt.clientY - rect.top
+40.    };
+41. }
+```
+
+</details>
+
+<h4>More examples</h4>
+
+<h4>Example #1: move the monster with the mouse, rotate it when a mouse button is pressed</h4>
+
+This example shows an animation at 60 frames/s using requestAnimationFrame, were the monster is drawn at the mouse position, and if a mouse button is pressed, the monster starts rotating around its center. If we release the mouse button, the rotation stops:
+
+![](./images/image205.png){width="4.0in" height="2.56540135608049in"}
+
+<h4>Code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+var canvas, ctx;
+var monsterX=100, monsterY=100, monsterAngle=0;
+var incrementX = 0;
+var incrementAngle =0;
+var mousePos;
+
+function init() {
+    ...
+    // 3bis - Add mouse listeners
+    **canvas.addEventListener('mousemove', handleMousemove, false);**
+    **canvas.addEventListener('mousedown', handleMousedown, false);**
+    **canvas.addEventListener('mouseup', handleMouseup, false);**
+    // 4 - Start the animation
+    requestId = requestAnimationFrame(animationLoop);
+}
+function** handleMousemove**(evt) {
+    **// The mousePos will be taken into account in the animationLoop**
+    **mousePos = getMousePos(canvas, evt);**
+}
+function handleMousedown(evt) {
+   **// the increment on the angle will be**
+   **// taken into account in the animationLoop**
+   **incrementAngle = 0.1;**
+}
+function** handleMouseup(evt)** {
+    **incrementAngle = 0;  // stops the rotation**
+}
+function getMousePos(canvas, evt) {
+ ... // same as before
+}
+...
+function animationLoop() {
+   // 1 - Clear
+   ctx.clearRect(0, 0, canvas.width, canvas.height);
+   // 2 - Draw
+   drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
+   // 3 - Move
+   if(mousePos !== undefined) { // test necessary, maybe the mouse is not yet on canvas
+      **monsterX = mousePos.x;**
+      **monsterY = mousePos.y;**
+      **monsterAngle += incrementAngle;**
+   }
+   ...
+   // call again mainloop after 16.6 ms (60 frames/s)
+   requestId = requestAnimationFrame(animationLoop);
+}
+```
+
+</details>
+
+<p>This example shows one very important good practice when doing animation and interaction: if you want to achieve a smooth animation, set the state variables 60 times/s inside the animation loop (lines 45-49), depending on increments you set in event listeners (lines 23-31).</p>
+
+<h4>Example #2: draw in a canvas as if you were using a pencil</h4>
+
+![](./images/image206.png){width="4.0in" height="2.56540135608049in"}
+
+<h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+...
+<script>
+var canvas, ctx, previousMousePos;
+...
+
+function drawLineImmediate(x1, y1, x2, y2) {
+    // a line is a path with a single draw order
+    // we need to do this in this example otherwise
+    // at each mouse event we would draw the whole path
+    // from the beginning. Remember that lines
+    // normally are only usable in path mode
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.stroke();
+}
+function handleMouseMove(evt) {
+     var mousePos = getMousePos(canvas, evt);
+     // Let's draw some lines that follow the mouse pos
+     if (!started) {
+         previousMousePos = mousePos; // get the current mouse position
+         started = true;
+     } else {
+         // We need to have two consecutive mouse positions before drawing a line
+         drawLineImmediate(previousMousePos.x, previousMousePos.y,
+                           mousePos.x,         mousePos.y);
+         previousMousePos = mousePos;
+     }
+}
+ window.onload = function () {
+   ...
+   started = false;
+   canvas.addEventListener('mousemove', handleMouseMove, false);
+};
+</script>
+```
+
+</details>
+
+<p>We had to define a variable started=false; as we cannot draw any line before the mouse moved (we need at least two consecutive positions). This is done in the test at <i>line 21</i>.</p>
+
+<h4>Example #3: same as example #2 but we draw only when a mouse button is pressed</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!----------- 207.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image207.png?raw=true"
+   alt=""
+   width="45%">
+&nbsp;
+<br/>
+
+We just added mouseup and  mousedown listeners, extract from the source code:
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  function handleMouseMove(evt) {
+2.       var mousePos = getMousePos(canvas, evt);
+3.   
+4.       // Let's draw some lines that follow the mouse pos
+5.       if (painting) {
+6.           drawLineImmediate(previousMousePos.x, previousMousePos.y,
+7.                             mousePos.x,         mousePos.y);
+8.           previousMousePos = mousePos;
+9.       }
+10. }
+11. 
+12. function clicked(evt) {
+13.     previousMousePos = getMousePos(canvas, evt);
+14.     painting = true;
+15. }
+16.  
+17. function released(evt) {
+18.     painting = false;
+19. }
+20.  
+21.  window.onload = function () {
+22.     canvas = document.getElementById('myCanvas');
+23.     ctx = canvas.getContext('2d');
+24.     painting = false;
+25.  
+26.     canvas.addEventListener('mousemove', handleMouseMove, false);
+27.     canvas.addEventListener('mousedown', clicked);
+28.     canvas.addEventListener('mouseup', released);
+29. };
+```
+
+</details>
+
+<h3 id="ch4-3-4">4.3.4 Responsive Canvas</h3>
+
+Resizing a canvas can be tricky if we don't know a few rules that might not be easily guessed:
+
+-   Changing the width or height property of a canvas in JavaScript erases its content and resets its context,
+
+-   Using percentages (%) in the CSS width and height properties of a canvas *does not change its number of pixels/resolution*[.] Instead, it scales the existing pixels without erasing the content, giving a blurry effect when a canvas becomes larger, for example.
+
+Before looking at how best to handle canvas resizing, let's see some examples below:
+
+<h4>Examples</h4>
+
+<h4>Example #1: changing the size of a canvas on the fly erases its content!</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!----------- 208.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image208.png?raw=true"
+   alt=" "
+   width="45%">
+&nbsp;
+<br/>
+
+<h4>Code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <script>
+2.  ...
+3.  function resizeCanvas() {
+4.       **canvas.width = 300;**
+5.  }
+6.   
+7.  </script>
+8.  ...
+9.  <button **onclick="resizeCanvas();**">
+10.     Click this button to resize the canvas and erase it!
+11. </button>
+```
+
+<h4>Example #2 : resize a canvas using CSS width and height properties with percentages</h4>
+
+This time we are using a similar example as above, but we removed the button for resizing it, and we set the size of the canvas to 100x100 pixels. Instead of drawing inside, we draw two lines that join the diagonals.
+
+<!------------------------------------------------------------------------------------------------>
+<!----------- 209.  (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image209.png?raw=true"
+   alt=""
+   width="65%">
+&nbsp;
+<br/>
+
+Then, we added this CSS rule:
+
+<!------------------------------------------------------------------------------------------------>
+<!----------- 210. (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image210.png?raw=true"
+   alt=" "
+   width="45%">
+&nbsp;
+<br/>
+
+<p>It's the same example as before, just adding this CSS code:</p>
+
+```
+1.  <style>
+2.      #myCanvas {
+3.         border: 1px solid black;
+4.         width:100%
+5.      }
+6.  </style>
+```
+
+And the result shows clearly that the resolution is still the same, only the pixels are bigger!
+
+<b><i>BEST PRACTICE: never use CSS percentages on a canvas width or height!</i></b>
+
+<h4>Example #3: a responsive canvas using a resize listener +  a parent element</h4>
+
+This is the trick to create a really responsive canvas:
+
+1.  Embed it in a &lt;div&gt; or in any parent container,
+
+2.  Use CSS with percentages on the width and the height CSS properties <b>of the parent,</b>
+
+3.  Use a resize listener on the  parent of the canvas,
+
+4.  Change the width and height properties of the canvas [from the JavaScript resize listener function] (content will be erased),
+
+5.  Redraw the content, scaled accordingly to the size of the parent.
+
+Yep, this is not a straightforward process...
+
+<!------------------------------------------------------------------------------------------------>
+<!----------- 211. div and canvas inside; div has css width=100% and height=50% (xxx) ------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image211.jpeg?raw=true"
+   alt="DIV and canvas inside: div has css width=100% and height=50%"
+   width="65%">
+&nbsp;
+<br/>
+
+<h4>HTML code:</h4>
+
+```
+1.  <div id="parentDiv">
+2.      <canvas id="myCanvas" width="100" height="100" ></canvas>
+3.  </div>
+```
+
+<h4>CSS code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <style>
+2.      #parentDiv {
+3.          width:100%;
+4.          height:50%;
+5.          margin-right: 10px;
+6.          border: 1px solid red;
+7.      }
+8.   
+9.      canvas {
+10.        border: 2px solid black;
+11.     }
+12. </style>
+```
+
+</details>
+
+<h4>JavaScript code for the resize event listener:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  function init() {
+2.     ...
+3.     // IMPORTANT: there is NO WAY to listen to a DIV's resize
+4.     // listen to the window instead.
+5.     window.addEventListener('resize',     
+6.                              resizeCanvasAccordingToParentSize, false);
+7.     ...
+8.  }
+9.   
+10. function resizeCanvasAccordingToParentSize() {
+11.      // adjust canvas size, take parent's size, this erases content
+12.      canvas.width = divcanvas.clientWidth;
+13.      canvas.height = divcanvas.clientHeight;
+14.      ...
+15.      // draw something, taking into account the new canvas size
+16. }
+```
+
+</details>
+
+<h4>See the complete example that corresponds to the above code:</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------- 212.  (xxx) -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image212.png?raw=true"
+   alt=" "
+   width="55%" />
+&nbsp;
+<br/>
+
+<h4>Example #4: the same example with the monster</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------- 213. (xxx) -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image213.png?raw=true"
+   alt=" "
+   width="55%" />
+&nbsp;
+<br/>
+
+When the canvas is resized, its width became smaller than the monster's size. We **scale** down the monster (using ctx.scale!)
+
+The code is very similar to the previous example, we just replaced drawDiagonals() by drawMonster(...), and we added a test in the drawMonster(...) function for scaling the monster if it's bigger than the canvas width (look at *lines 10-16*), this is a common trick:
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  function drawMonster(x, y, angle, headColor, eyeColor) {
+2.       // GOOD PRACTICE: SAVE CONTEXT AND RESTORE IT AT THE END
+3.       ctx.save();
+4.  
+5.       // Moves the coordinate system so that the monster is drawn
+6.       // at position (x, y)
+7.       ctx.translate(x, y);
+8.       ctx.rotate(angle);
+9.  
+10.      // Adjust the scale of the monster (200x200) if the canvas
+11.      // is too small
+12.      if(canvas.width < 200) {
+13.          var scaleX = canvas.width/200;
+14.          var scaleY = scaleX;
+15.      }
+16.      ctx.scale(scaleX, scaleY);
+17. 
+18.      // head
+19.      ctx.fillStyle=headColor;
+20.      ctx.fillRect(0,0,200,200);
+21.      ...
+22. }
+```
+
+</details>
+
+<h3 id="ch4-3-5">4.3.5 Advanced Canvas</h3>
+
+The canvas API is a "big beast", and we have presented all the essential techniques for drawing and animating. However, we could not fit everything in this course. Exotic features that are rarely used by developers, or advanced techniques that require more than 20 lines of JavaScript, have been put aside for [the W3Cx HTML5 Apps and Games course](https://www.edx.org/course/html5-apps-and-games).
+
+In that course, you will learn:
+
+<ul>
+<li>Techniques useful for writing HTML5 games: time-based animation, advanced user interactions (detecting multiple keys plus mouse plus gamepad plus touch events all at the same time in a single version of the code), sprite based animation, collision detection, particle animation;</li><br/>
+<li>Pixel-level operations: special FX like blue-screen videos and augmented reality;</li><br/>
+<li>And many other things, such as: masking/clipping, stacking canvases in layers, composition modes, saving and restoring canvas contents, saving canvas content to disk client-side, drawing a canvas into a canvas, etc.</li><br/>
+</ul>
+
+<h4>Examples studied in the HTML5 Apps and Games course</h4>
+
+<ul>
+<li>Small game framework / object oriented JavaScript / advanced event handling / collision detection / time based animation** - see [example online](https://jsbin.com/jifutoj/1/edit?html,js,console,output).</li>
+<li>Sprite based animation**: like this [one](https://jsbin.com/libakum/1/edit?html,js,console,output) (this is ugly code to demonstrate the principle - in the course we develop a clean, sprite animation framework). Use the arrow keys after clicking in the canvas. It's better to try in standalone mode (click on the small black arrow in the top right of the JSBin window).</li><br/>
+</ul>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------- 214. sprite sheet (xxx) -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image214.png?raw=true"
+   alt="Sprite sheet"
+   width="35%" />
+&nbsp;
+<br/>
+
+<h3 id="ch5-1-1">5.1.1 Video Intro - Module 5</h3>
+
+Congratulations! You made it to module 5.
+
+Welcome this time to the wonderful world of HTML5 forms.
+
+There have been no improvements since 1997 to HTML forms.
+
+HTML5 this time comes with a set of new input fields for entering dates, colors, entering phone numbers, URLs, and so on.
+
+New attributes related to form validation have also been introduced, and they are related to a new build-in validation system that make things easier than before without the need to use JavaScript.
+
+However, JavaScript validation API is also available for people who would like to write their own customized validation system.
+
+These additions are very handy when used on mobile devices but raised many critics from Web designers, mainly related to their desktop implementations.
+
+The course discusses all the cases and recommend solutions and good practices. Of course, like usual, many examples will be provided that you can run directly this time in the course pages, but also as standalone examples hosted on the JS Bin Web site. If you try to modify them or creates your own examples, please share in the discussion forums as usual. Have fun!
+
+<h3>5.2.1 Introduction</h3>
+
+With HTML5, forms, which had shown little improvement since 1997, evolved considerably.  To achieve this, Web developers relied on many popular JavaScript frameworks for validating input formats, providing various input GUIs, such as calendars for dates, sliders, etc. Frameworks such as jQueryUI, Dojo, and Sencha, all provide a widget set for improving forms. Furthermore, it was time to take into account the specifics of mobile web applications, where the GUI of a date chooser cannot be the same as a 400x400 pixel wide calendar on a desktop. Contextual virtual keyboards provided the way forward on smartphones and tablets thanks to Apple, Google and others.
+
+HTML5 took all this into account and thus provides:
+<ul>
+<li>A set of input fields that include a validation API and visual feedback, contextualized keyboards, etc. Of course the look and feel depends on the web browser's implementations, but the HTML5 forms specification introduced 13 new <input type=.../> fields:  email, tel, color, url, date, datetime, datetime-local, month, week, time, range, number and search.</li><br/>
+<li>Built-in validation system: JavaScript API for custom validation, CSS pseudo classes that are useful for changing an input field style depending on the validity of the input.</li><br/>
+<li>Other goodies, such as the option to set an input field out of a <form>, new elements such as <datalist> for autocompletion, <output> for feedback, etc.</li><br/>
+</ul>
+
+Examples of contextual keyboards are shown above; they differ depending on the type of  <input> fields in the <form>. 
+In the examples, we can see: email, URL, and phone number. Look at the different keyboard layouts. The last picture is a date picker from an IOS phone.
+
+<h4>External resources:</h4>
+
+-   From the specification: [Forms](https://html.spec.whatwg.org/multipage/forms.html)
+
+-   From MDN's Web Docs: [<form>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
+
+<h3>5.2.2 Example</h3>
+
+There is a lot of course content covered this week, and before we get into all the details of the elements and attributes introduced by HTML5, we suggest playing with running examples of full featured forms.
+
+This example was created by a learner (by Mels Le N.) from a previous version of this course.
+It uses the geolocation API presented in Module 6 for auto-filling the address input fields.
+
+Feel free to look at the source code in the <a href="https://jsbin.com/sivula/edit"?online example</a>:
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------- 215.  (xxx) -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image215.png?raw=true"
+   alt=" "
+   width="45%" />
+&nbsp;
+<br/>
+
+<h3 id="ch5-2-3">5.2.3 Input Elements and Attributes</h3>
+
+<h4>Live coding video 1: using input elements as widgets to control a Web application</h4>
+
+<here>
+
+<h4>Live coding video 2: creating GUI elements dynamically</h4>
+
+<and here>
+
+Input elements, in particular the elements introduced by HTML5, can be used as widgets to control the behavior of a Web application. In this situation, they do not need to be inside a <form> element. We just bind event listeners to them and we use them as client-side widgets.
+
+<h4>Examples</h4>
+
+GUI: Graphical User Interface
+
+<h4>Example #1: choose the color, line width and speed of an animation</h4>
+
+-   [Bouncing rectangle without GUI](https://jsbin.com/ciwefo/1/edit?html,css,output)
+
+-   [Bouncing rectangle with GUI](https://jsbin.com/newojij/1/edit?html,css,output) (see screenshot at the top right of this page)
+
+<h4>Example #2: data visualization control</h4>
+
+-   [Simple chart without a GUI](https://jsbin.com/UxuCOPa/3/edit?html,js,output)
+
+-   [Simple chart with a GUI](https://jsbin.com/gesive/edit?html,js,console,output) (see screenshot on the right)
+
+-   [Final version with different types of charts and a GUI](https://jsbin.com/ralonem/1/edit?html,js,output)  (see screenshot below)
+
+<h3>5.2.4 Best Practices</h3>
+
+<h4>Live coding video 3: HTML5 forms - best practices</h4>
+
+<here>
+
+The example used in the video is available [online at JSBin](https://jsbin.com/jagodi/edit?html,css,output). A screenshot of the resulted form is shown on the right.
+
+Forms are a way to get user input which is sent to a remote server. This section of the course focuses on the HTML5 additions to forms, and as such will only cover the client-side part.
+
+On the server side, you may have PHP, Java, C#, Ruby, Python, etc. components. There are several ways to collect server-side data from a form in a Web page: REST Web services, servlets, Microsoft ASP pages, etc.
+
+On the client side, the forms indicate to which server and how the data should be sent,  using the action and method attributes respectively. A <button type="submit"> or an <input type=submit> field is used to submit the form content.
+
+For example: <form action="myServerCode.php" method="POST">...</form>. Here, we set the URL of the server side code (myServerCode.php), and the HTTP method that will be used by the browser for sending the form content (POST).
+
+Another approach is to use JavaScript for sending the form content with [Ajax](https://en.wikipedia.org/wiki/Ajax_(programming)). This is covered in W3Cx HTML5 Apps and Games course.
+
+This week, let's study the elements and attributes offered by HTML5, as well the HTML5 form validation API. 
+
+The example shown in the video shows some best practices for writing accessible forms and does some basic layout using CSS.
+
+The following additional example shows the same best practices but presents a more complete form with CSS rules to make a nice layout. See it [online](https://jsbin.com/zubitex/1/edit?html,output), and illustrated with the screenshot below. It is adapted from [this very good MDN's article "How to structure a web form"](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form).
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------- 212. form layout example -------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image212.jpeg?raw=true"
+   alt="Form layout example"
+   width="35%" />
+&nbsp;
+<br/>
+
+<h3 id="ch5-3-1">5.3.1 Accessible Forms</h3>
+
+Forms are commonly used to enable user interaction in Web sites and Web applications. For example, they are used for login, registering, commenting, and purchasing.
+
+Since HTML5 provides functionalities to assist with accessibility, developers should make a concerted effort to mark up Web based forms. The following two guidelines are to give you a good start to make your forms accessible:
+
+1.  For every form field, ensure that a descriptive **label** is provided and use the <label> element to identify each form control.
+
+2.  For larger or complex forms, use the <fieldset> and <legend> elements to respectively **group and associate** related form controls.
+
+Examples for each of these two basic guidelines are given in the following pages.
+
+<h4>Further reading</h4>
+
+The WAI Web site hosts a [Forms tutorial](https://www.w3.org/WAI/tutorials/forms/) where to find all guidelines to follow in order to make your forms truly accessible: labeling controls, grouping controls, form instructions, validating input, user notifications, multi-page forms, and custom controls.
+
+<h3 id="ch5-3-2">5.3.2 Why is this Important?</h3>
+
+Forms can be visually and cognitively complex and difficult to use. Accessible forms are easier to use for everyone, including people with disabilities.
+
+-   **People with cognitive disabilities** can better understand the form and how to complete it, as making forms accessible improves the layout structure, instructions, and feedback.
+
+-   **People using speech input** can use the labels via voice commands to activate controls and move the focus to the fields that they need to complete.
+
+-   **People with limited dexterity** benefit from large clickable areas that include the labels, especially for smaller controls, such as radio buttons and checkboxes.
+
+-   **People using screen readers** can identify and understand form controls more easily because they are associated with labels, field sets, and other structural elements.
+
+<h3 id="ch5-3-3">5.3.3 Labeling Controls</h3>
+
+<h4>Labels need to describe the purpose of the form control</h4>
+
+Form fields and other form controls usually have visible labels, such as "E-mail Address:" as the label for a text field (see figure below).
+
+![form label text](./images/image217.png){width="2.5208333333333335in" height="0.3020833333333333in"}
+
+When these labels are marked up correctly, people can interact with them using only the keyboard, using voice input, and using screen readers. Also, the label itself becomes clickable, which enables a person who has difficulty clicking on small radio buttons or checkboxes to click anywhere on the label text.
+
+<h4>Associating labels explicitly</h4>
+
+Whenever possible, use the label element to explicitly associate text with form elements. The for attribute of the label must exactly match the id of the form control. 
+
+<h4>Example #1</h4>
+
+Click on the label, not on the input field to see the effect.
+
+Top of Form
+
+First name:![](./images/image218.wmf)
+
+<h4>Source code:</h4>
+
+<p>Bottom of Form</p>
+
+```
+1.  <label for="first_name">Your First Name</label>
+2.  <input id="first_name" type="text" name="fname"/>
+```
+
+<h4>Example #2</h4>
+<p>
+Note that you can also include the &lt;input&gt; element inside the &lt;label&gt;...&lt;label&gt; element, and also add a &lt;span lang="en"&gt; for example, to indicate the language used in the label. Sometimes, <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#The_%3Clabel%3E_element">[nesting labels and inputs can also make CSS styling easier and produce better results with screen readers</a>.
+</p>
+<h4>Source code (with &lt;input&gt; inside the &lt;label&gt;):</h4>
+
+```
+1.  <label for=first_name"><span lang=en">Your First Name</span>
+2.  <input id="first_name" type="text" name="fname"/>
+3.  </label>
+```
+
+<h4>Example #3</h4>
+<p>
+Click on the label "Subscribe to newsletter" to see what this does.
+</p>
+
+First name:![](./images/image218.wmf)
+Subscribe to newsletter![](./images/image219.wmf)
+
+<h4>Source code:</h4>
+
+Bottom of Form
+
+```
+1.  <label for="firstname">First name:</label>
+2.  <input type="text" name="firstname" id="firstname"><br>
+3.  
+4.  <label for="subscribe">Subscribe to newsletter</label>
+5.  <input type="checkbox" name="subscribe" id="subscribe">
+```
+
+<h4>Labeling buttons</h4>
+
+The label of a <button> element is set inside the element and can include markup. This allows advanced accessibility hints to be included, such as marking up language change. Example: <button>Mon <span lang="fr">bouton</span></button>,for a button with a label in French.
+
+When using the <input> element to create buttons, the label is set in the value attribute of the element. Example: <input type="submit" value="Please submit">, renders a button.
+
+<h4>Source code for the "Submit" and "Cancel" buttons example:</h4>
+
+```
+1.  <button type="submit">Submit</button>
+2.  <button type="button">Cancel</button>
+3.   
+4.  <input type="submit" value="Submit">
+5.  <input type="button" value="Cancel">
+```
+
+These give the same results:
+
+*Lines 1 and 2* render as:
+Submit Cancel
+
+... while li*nes 3 and 4* render as:
+![](./images/image220.wmf) 
+
+<h4>Labeling text areas</h4>
+
+Enter your address:
+![](./images/image221.wmf)
+
+<h4>Source code:</h4>
+
+```
+1.  <label for="address">Enter your address:</label><br> <textarea id="address" name="addresstext"></textarea>
+```
+
+<h3 id="ch5-3-4">5.3.4 Grouping Controls</h3>
+
+Groupings of form controls, typically groups of related checkboxes and radio buttons, sometimes require a higher level description. Grouping related form controls makes forms more understandable for all users, as related controls are easier to identify.
+
+<h4>Associating related controls with fieldset</h4>
+
+Grouping needs to be carried out visually and in the code, for example, by using the <fieldset> and <legend> elements to associate related form controls. The <fieldset> identifies the entire grouping and <legend> identifies the grouping's descriptive text.
+
+<h4>Example #1: radio buttons</h4>
+
+In the example below, there are three radio buttons that allow the user to choose an output format. Radio button groups should always be grouped using <fieldset>.
+
+Output format:
+
+![](./images/image222.wmf)Text file
+
+![](./images/image222.wmf)CSV file
+
+![](./images/image222.wmf)HTML file
+
+Bottom of Form
+
+<h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <fieldset>
+2.  <legend>Output format</legend>
+3.  <div>
+4.  <input type="radio" name="format" id="txt" value="txt" checked>
+5.  <label for="txt">Text file</label>
+6.  </div>
+7.  <div>
+8.  <input type="radio" name="format" id="csv" value="csv">
+9.  <label for="csv">CSV file</label>
+10. </div>
+11. [...]
+12. </fieldset>
+```
+
+</details>
+
+<h4>Example #2: checkboxes</h4>
+
+In the example below, there are three checkboxes that are all part of an opt-in function for receiving different types of information.
+
+Top of Form
+
+I want to receive
+
+![](./images/image219.wmf)The weekly newsletter
+
+![](./images/image219.wmf)Offers from the company
+
+![](./images/image219.wmf)Offers from associated companies
+
+Bottom of Form
+
+<h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <fieldset>
+2.  <legend>I want to receive</legend>
+3.  <div>
+4.  <input type="checkbox" name="newsletter" id="check_1">
+5.  <label for="check_1">The weekly newsletter</label>
+6.  </div>
+7.  [...]
+8.  </fieldset>
+```
+
+</details>
+
+<h4>Associating related controls with WAI-ARIA</h4>
+
+WAI-ARIA provides a grouping role that functions similarly to fieldset and legend. For example, a div element can have role=group to indicate that the contained elements are members of a group.
+
+WAI-ARIA roles are very important in the accessibility world, and we invite you to see an example provided in the [associated WAI tutorial](https://www.w3.org/WAI/tutorials/forms/grouping/#associating-related-controls-with-wai-aria). See also this MDN's article about about [WAI-ARIA roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
+
+<h3 id="ch5-4-1">5.4.1 Input Types</h3>
+
+In this section, we briefly present the input types, attributes, and elements related to the forms that came with HTML5. Details are given later, illustrated by multiple interactive examples.
+
+Compared to HTML4, HTML5 introduced 13 new input types, covering most of the needs of  Web developers. HTML5 packages some of the "form best practices" in its specification. Web browsers providing native implementation give a boost in performance, and reduce the size of JavaScript embedded in complex Web pages.
+
+MDN's Web docs [article on <input> types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#%3Cinput%3E_types) lists all input types and highlights those that came with HTML5.
+
+Now, let's play with some of these input types and attributes.
+
+<!---- ************************************************* image 223 ****************************** ----->
+![HTML4 old HTML5 new](./images/image223.jpeg){width="2.0in" height="1.5972222222222223in"}
+
+<h3 id="ch5-4-2">5.4.2 "color"</h3>
+
+For years, we used hundreds of lines of JavaScript for selecting colors. Now, it's bundled in the browser!
+
+Here is how it looks on some mobile devices:
+
+<!---- ************************************************* image 224 ****************************** ----->
+![HTML5 input type=color on an android phone](./images/image224.jpeg){width="4.0in" height="3.0in"}
+
+<h4>Typical use</h4>
+
+<h4>Inserting a color chooser is as simple as:</h4>
+
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en"><head>...</head>
+3.  <body>
+4.      Choose a color : <b><input type="color" value="#FF00F"/></b>
+5.  </body>
+6.  </html>
+```
+
+*Note*: In this chapter we are simplifying the examples, as we usually embed input elements in a <form>...</form>.
+
+Try <input type="color"> online with this[ JSBin example](https://jsbin.com/cajuzob/1/edit?html,output). Or do it here in your browser: just click on the purple square below : 
+
+Here is the result on Google Chrome (works with other browsers too, though the *look and feel* may differ):
+<!---- ************************************************* image 225 ****************************** ----->
+![input type=color in google chrome](./images/image225.jpeg){width="4.0in" height="3.2051695100612423in"}
+
+<h4>Example: changing the background color of the page</h4>
+
+The <input type="color"> can fire change or input events. Here is an example that changes the background color of the page when a color is chosen. [Try it online at JSBin](https://jsbin.com/jozuter/1/edit?html,css,js,console,output).
+
+<!---- ************************************************* image 226 ****************************** ----->
+![change background color of the body](./images/image226.jpeg){width="4.0in" height="3.6217300962379704in"}
+
+Source code:
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en"><head></head>
+3.  <body>
+4.    Select a color : <input type="color" id="colorChooser"/>
+5.    <script>
+6.       var colorInputField = document.querySelector("#colorChooser");
+7.  
+8.       **colorInputField.addEventListener('input', function(evt) {**
+9.  **          document.body.style.backgroundColor = this.value;**
+10. **      }, false);**
+11. **</script>**
+12. </body>
+13. </html>
+```
+
+</details>
+
+<h4>Offer a limited choice of colors</h4>
+
+By default, the color selector offers many options that may either frighten some users or just not be appropriate for the purpose of the application. 
+
+*Good news*: it is possible to restrict the choices, and also simplify the user interface, by using a <datalist> with some <option> elements inside. 
+
+Example: click the black rectangle on the right:  . The following should be displayed:
+
+<!---- ************************************************* image 227 ****************************** ----->
+![restricted choice of color](./images/image227.jpeg){width="3.0in" height="1.872483595800525in"}
+
+<a href="https://jsbin.com/lahapu/edit?html,output">Online example at JSBin</a>
+
+<h4>Source code extract:</h4>
+
+```
+1.  <input type="color" value="#333333" **list="colors"**>
+2.  
+3.  <datalist **id="colors"**>
+4.       <option>#0000FF</option>
+5.       <option>#00FF00</option>
+6.       <option>#FF0000</option>
+7.  </datalist>
+```
+
+Note that the id of the <datalist> element should be the same as the value of the list attribute of the input field.
+
+<h4>What are the main problems with this element?</h4>
+
+The main criticism that Web designers make about this element is related to its default appearance being strongly dependent on the browser and its underlying operating system. Changing the *look and feel* is not possible, except with the use of the options we saw in the previous sections of this page. This problem is also true for other input elements that renders as complex widgets, like <input type="date"> and its variants.
+
+Another problem is that there is no way to control where the dialog that contains the color chooser will appear - no positioning via CSS or JavaScript is possible. The specification does not say anything about how to position it over the page, thus the result is vendor specific.
+
+The solution proposed by the W3C and its contributors is called *Web Components*, a new approach for designing HTML5 widgets, that is covered in the W3Cx HTML5 Apps and Games course.
+
+<h3 id="ch5-4-3">5.4.3 "date"</h3>
+
+For years, date and time pickers in HTML forms made Web developers rely heavily on JavaScript based widgets. The process is simpler in HTML5, which provides a special control to handle this specific kind of data natively.
+
+Below are a few screenshots of the HTML5 date picker on several mobile devices. Note that the native date pickers of the operating systems are used:
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 228.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image228.png?raw=true"
+   width="20%"
+   alt="Date picker 1." />
+</p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 229.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image229.jpeg?raw=true"
+   width="10%"
+   alt="Date picker 2 on mobile." />
+</p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 230.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image230.png?raw=true"
+   width="30%"
+   alt="Date picker 3 on mobile." />
+</p>
+
+The problem is different on a desktop. While it's great to have native support for a date picker, Web developers would sometimes prefer 100% control over the *look and feel* of the date picker widget. For this purpose, the solution undoubtedly lies with the new [Web Components](https://webcomponents.org/) (a way to make custom reusable widgets in HTML/CSS/JS), to be detailed in the W3Cx HTML5 Apps and Games course
+
+Why don't you try it yourself? Just click on this input field:    
+
+With Firefox, it shows this date picker widget:
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 231.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image231.png?raw=true"
+   width="20%"
+   alt="Firefox desktop date picker." />
+</p>
+
+On non-supported browsers, it defaults to an <input type="text"> input field.
+
+<h4>Typical use of &lt;input type="date"&gt;</h4>
+
+<h4>Default use</h4>
+
+The default usage is something like:
+
+```
+1.  <label for="birthday">Choose birthday party date: </label>
+2.  <input type="date" id="birthday">
+```
+
+Result:             Choose birthday party date:      
+
+Most of the time you will add other attributes to give some restrictions (choose a date in the past, in the future, only on a Saturday, etc.).
+
+<h4>Restrict choice to an interval of dates: attributes min, max and value</h4>
+
+The <input type="date"> comes with several useful attributes. In particular the value, min and max attributes are used to propose a default date, a min and a max date, or for defining an interval of acceptable values.
+
+Try this example: just click the next input field: , or <a href="https://jsbin.com/faluta/1/edit?html,output">try it online on JSBin</a> if you want to tweak the source code: 
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 232. only dates between min and max are selectable (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image232.jpeg?raw=true"
+   width="40%"
+   alt="Only dates between min and max are selectable." />
+</p>
+<!-----
+![input type = date with min and max attributes. This will render two non selectable areas (dates before min and dates after max). Only the dates between min and max are selectable in the displayed calendar.](./images/image232.jpeg){width="4.0in" height="2.2641021434820647in"}
+----->
+
+<h4>Source code:</h4>
+
+```
+1.  ...
+2.  <input type="date"
+3.       id="birthdayParty"
+4.       **value="2015-06-20"**
+5.       **min="2015-06-20"**
+6.       **max="2015-06-30"**>
+7.  ...
+```
+
+<h4>Choosing one day in a given week, etc. with the step: attribute</h4>
+
+Using the value attribute for setting a date, and using step=7 for example, will make acceptable only the day of the week that corresponds to the value's day (e.g.: only Mondays). Using step=2 will make acceptable only every other day, etc.
+
+Example: we want to celebrate birthday parties only on Saturdays, [check this on JSBin](https://jsbin.com/hudafo/1/edit?html,output)! (screenshot from Chrome).
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 233.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image233.png?raw=true"
+   width="40%"
+   alt="Use of the step attribute, select only saturdays." />
+</p>
+
+<h4>Extract from source code:</h4>
+
+```
+1.  <input type="date"
+2.      id="birthdayParty"
+3.      value="2015-06-20"
+4.      min="2015-06-20"
+5.      max="2015-06-30"
+6.      **step="7"**>
+```
+
+<h4>Combining with the <datalist> element to restrict the choice of possible values</h4>
+
+<a href="https://jsbin.com/gezawe/1/edit?html,output">Online example at JSBin</a> (screenshot from Chrome).
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 234.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image234.jpeg?raw=true"
+   width="40%"
+   alt="Restrict choices using a datalist element." />
+</p>
+
+<h4>Extract from source code:</h4>
+
+```
+<input type="date"
+    id="birthdayParty"
+    list="birthdayPartyPossibleDates"
+    value="2015-06-20">
+<datalist id="birthdayPartyPossibleDates">
+     <option label="Best for me">2015-06-20</option>
+     <option label="Ok for me too ">2015-06-27</option>
+     <option label="This one is a sunday, hmmm">2015-06-28</option>
+</datalist>
+```
+
+<b>The list attribute of the input element must match the id attribute of the datalist element.</b>
+
+<b>If you use the min, max, or step attributes with a list attribute, it may filter the restricted list even more.</b> Check <a href="https://jsbin.com/gucuxon/1/edit?html,output">this example on JSBin</a> (tested with Google Chrome), that has a restricted list of three elements, one of which is filtered because it is not in in the min/max range.
+
+<h4>Responding to date changes, trying date/time and other variants</h4>
+
+<h4>Listening to the input event</h4>
+
+Here is <a href="https://jsbin.com/ganipuv/edit?html,output">an interactive example at JSBin</a> where you can change the type of date/time chooser. It also shows how to listen to the input event when a date/time is chosen.
+
+<h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en"><head>...</head>
+3.  <body>
+4.  Testing the new date input field.<p>
+5.  Choose a date/time : <input type="date" id="date" /></p>
+6.  <p>
+7.  You picked: <span id="pickedDate"></span>
+8.  </p>
+9.  After you have tried the first example, change the value of the "type" attribute to:
+10. <ul>
+11. <li>datetime</li>
+12. <li>datetime-local</li>
+13. <li>time</li>
+14. <li>week</li>
+15. <li>month</li>
+16. </ul>
+17. And see the result.
+18. <script>
+19. var field = document.querySelector("#date");
+20. var result = document.querySelector("#pickedDate");
+21. field.oninput = function(evt) {
+22. var date = this.value;
+23. pickedDate.innerHTML = "<b>"+date+"</b>";
+24. }
+25. </script>
+26. </body>
+27. </html>
+```
+
+</details>
+
+<i>Lines 20-26</i> show how we can detect a date change using JavaScript.
+
+<h4>Checking if the chosen date is in the past or in the future using the valueAsDate property</h4>
+
+The object returned to the input event handler has a useful property named valueAsDate. This is a JavaScript date object that can be compared to other JavaScript date objects, in particular to the date of the day we can get with var date = new Date();
+
+<a href="https://jsbin.com/renevaf/edit?html,output">The following example at JSBin</a> shows how to ascertain whether a date is in the past or in the future: 
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 235.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image235.jpeg?raw=true"
+   width="40%"
+   alt="Date in the past: it is ok" />
+</p>
+
+While if we enter a date in the future:
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 236.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image236.jpeg?raw=true"
+   width="30%"
+   alt="Date in the future: bad" />
+</p>
+
+<h4>Extract from source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <body>
+2.  <label for="birthDate">Enter your birth date: </label><p>
+3.  **<input type="date" id="birthDate" >**
+4.  <p>
+5.  You picked: <span id="pickedDate"></span><p>
+6.  <span id="pastFuture"></span>
+7.  </p>
+8.  <script>
+9.  var field = document.querySelector("#birthDate");
+10. var result = document.querySelector("#pickedDate");
+11. var pastFuture = document.querySelector("#pastFuture");
+12. **field.oninput **= function(evt) {
+13. **var date = this.value;**
+14. pickedDate.innerHTML = "<b>"+date+"</b>";
+15. **if(date.valueAsDate <= new Date())** {
+16. pastFuture.style.color = 'green';
+17. pastFuture.innerHTML = "<b>Date in the past, ok!</b>"
+18. } else {
+19. pastFuture.style.color = 'red';
+20. pastFuture.innerHTML = "<b>Date in the future, you're not even born!</b>"
+21. }
+22. }
+23. </script>
+24. </body>
+```
+
+</details>
+
+<i>Lines 17-23</i> show how we can compare the date picked in the calendar widget with the current date. Note that we can compare any given dates using JavaScript. To check that the chosen date is before 2000 we would do this:
+
+```
+if(this.valueAsDate <= new Date(2000,1,1)) {
+...
+}
+<input type="datetime">, "week", "month", "datetime-local", etc.
+```
+
+The HTML5 specification indicates that we can use <input type="date"> and <input type="time"> while for some years (before the specification became a frozen standard in October 2014), other variants were also present, such as type=datetime, datetime-local, month and week.
+
+[Here is an interactive example at JSBin](https://jsbin.com/supope/1/edit) where you can change the type of date chooser and try all the different possible values for the type attribute of date pickers.
+
+<h4>Some screenshots from Opera desktops and Safari IOS:</h4>
+
+```
+<input type="time">:
+```
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 237.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image237.png?raw=true"
+   width="30%"
+   alt="Time" />
+</p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 238.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image238.png?raw=true"
+   width="20%"
+   alt="Input type=time safari IOS" />
+</p>
+
+<input type="datetime">
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 239.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image239.png?raw=true"
+   width="20%"
+   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element." />
+</p>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 240.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image240.png?raw=true"
+   width="20%"
+   alt="Input type=datetime on Safari IOS" />
+</p>
+
+<input type="datetime-local">
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 241.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image241.png?raw=true"
+   width="20%"
+   alt="datetime-local example" />
+</p>
+
+<input type="week">:
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 240.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image242.jpeg?raw=true"
+   width="40%"
+   alt="Week" />
+</p>
+<input type="month">:
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 243.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image243.jpeg?raw=true"
+   width="40%"
+   alt="Month" />
+</p>
+![month](./images/image243.jpeg){width="4.0in" height="1.4222222222222223in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 244.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image244.jpeg?raw=true"
+   width="20%"
+   alt="input type=month safari" />
+</p>
+
+<h3 id="ch5-4-4">5.4.4 "e-mail", "tel", "URL", and "search"</h3>
+
+Let's study 4 input types: email", "tel", "URL" and "search".
+
+<input type="email">
+
+This input type is relatively straightforward to use. In mobile applications, this new input type pops up a keyboard layout adapted to email input. Note the "@" key, the "." key, etc.
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 245.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image245.jpeg?raw=true"
+   width="20%"
+   alt="Contextual mobile keyboard for entering an email address." />
+</p>
+
+This input type is very interesting as it provides default validation behaviors:
+
+If the value entered looks like an email address (contains a "@"...), the field is *valid*, and gets the pseudo CSS class  :valid
+
+If the value entered does not contain an "@", and does not look like an email address, the field is *invalid* and gets the pseudo CSS class :invalid
+
+See the next example to see this in action. More details will be presented in a later section dedicated to form validation.
+
+Typical use:
+<a href="https://codepen.io/w3devcampus/pen/aWXKWR">Online example at CodePen</a>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 246.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image246.png?raw=true"
+   width="30%"
+   alt="" />
+</p>
+
+Try it on your browser:                         Enter your email: 
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset="utf-8">
+5.  <title>Example of input type=email</title>
+6.  <style>
+7.  input:invalid {
+8.  background-color:pink;
+9.  }
+10. </style>
+11. </head>
+12. <body>
+13. <label for="email">Enter your email </label>
+14. <input type="email" id="email">
+15. </body>
+16. </html>
+```
+
+</details>
+
+Note the CSS rule that turns the background color of the email input field to pink if a user enters an invalid address (*lines 7-8*). Also note that the validation is based only on matching a regular expression (the address should contain a "@",  a ".", etc.). It does not check if the address is an existing one.
+
+<input type="tel">
+
+This input field is really useful on smartphones and tablets, as it makes the browser pop up a keyboard layout suitable for entering phone numbers:
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 247.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image247.png?raw=true"
+   width="20%"
+   alt="Mobile keyboard 1 for input type=tel" />
+</p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 248.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image248.png?raw=true"
+   width="20%"
+   alt="Other mobile keyboard 1 for input type=tel" />
+</p>
+
+This input type is often used with the new placeholder and pattern attributes that are detailed in another section of this course. It is supported by all recent major Web browsers, on mobile devices and desktops.
+
+<a href="https://codepen.io/w3devcampus/pen/Njozvd">Online example on CodePen</a>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 249.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image249.png?raw=true"
+   width="30%"
+   alt="" />
+</p>
+
+Try it in your browser (we used the same CSS for changing the background-color when the input value is invalid):
+
+Enter a telephone number: 
+
+<h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset="utf-8">
+5.  <title>Example of input type=tel</title>
+6.  <style>
+7.  input:invalid {
+8.  background-color:pink;
+9.  }
+10. </style>
+11. </head>
+12. <body>
+13. <label for="tel">Enter a telephone number:</label>
+14. <input type="tel" id="tel"
+15. placeholder="(555) 555-5555"
+16. pattern="^(?d{3})?[-s]d{3}[-s]d{4}.*?)"/>
+17. </body>
+18. </html>
+```
+
+</details>
+
+<input type="URL"> 
+
+This input field is really useful on smartphones and tablets, as it makes the browser pop up a keyboard layout suitable for entering URLs:
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 250.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image250.png?raw=true"
+   width="20%"
+   alt="Mobile keyboard for entering URLs" />
+</p>
+
+This field is also compatible with *the validation API* (more on this in another section).
+
+Here is an online example that shows the use of the placeholder and pattern attributes for entering only URLs that start with ftp:// or https://
+
+Or try it here in your browser:
+
+Enter a URL (default validation): 
+
+Enter a URL (custom validation, must start with http, https or ftp): 
+
+<h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head >
+4.  <meta charset="utf-8">
+5.  <title>Example of input type=url</title>
+6.  <style>
+7.  input:invalid {
+8.  background-color: lightPink;
+9.  }
+10. </style>
+11. </head>
+12. <body>
+13. <label for="url1">Enter a URL (default validation):</label>
+14. <input type="url" id="url1"/>
+15. <p>
+16. <label for="url2">Enter a URL (custom validation, must start with http, https or ftp):</label>
+17. <input id="url2" type="url" placeholder="https://www.domain.com"
+18. pattern="(http|https|ftp)://[a-zA-Z0-9-./]*"/><p>
+19. </body>
+20. </html>
+```
+
+</details>
+
+*Lines 16-17* show the use of a pattern attribute with a JavaScript regexp that accepts only URLs starting with http, https or ftp. More details on the pattern attribute are given in the section that presents the new HTML5 form attributes.
+
+<input type="search">
+
+The search type is used for search fields (i.e., for a search engine). A search field behaves like a regular text field, except that it may provide some feedback GUI for stopping the current request and emptying the search field, or it may provide a drop-down list of recent search results.
+
+The specification does not state what the GUI should look like, so current implementations show variations in the look and feel.
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 251.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image251.jpeg?raw=true"
+   width="40%"
+   alt="input type=search rendered on a smartphone" />
+</p>
+
+<h4>Typical use:</h4>
+
+```
+<label for="search1">Simple search: </label>
+   <input type=search id="search1">
+   <p>
+   <label for="search2">Search with attribute <code>results=5</code> (try with Safari): </label>
+   <input type=search id="search2" results=5>
+```
+
+Results on Chrome and Opera desktop - notice the small cross on the right when one enters a value:
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 252.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image252.jpeg?raw=true"
+   width="40%"
+   alt="input type=search in google chrome and opera" />
+</p>
+
+Same example with Safari desktop, this time the second line with an attribute results=5 shows a small icon on the left:
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 253.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image253.jpeg?raw=true"
+   width="40%"
+   alt="input type=search on safari" />
+</p>
+
+Example that shows a drop down list of recent searches (Safari screenshot borrowed from [this excellent site about HTML5 forms that is worth reading](https://www.wufoo.com/html5/types/5-search.html)):
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 254.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image254.png?raw=true"
+   width="20%"
+   alt="Example 2 of input type=search on safari, shows recent results" />
+</p>
+
+<h4>Source code for the knowledge check below</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <!DOCTYPE html>
+2.  <html>
+3.  <head>
+4.  <meta charset="utf-8">
+5.  <title>Example of input type=email</title>
+6.  <style>
+7.  input:? {
+8.  background-color:pink;
+9.  }
+10. input:?? {
+11. background-color:lightGreen;
+12. }
+13. </style>
+14. </head>
+15. <body>
+16. <label for="email">Enter your email:</label>
+17. <input type="email" id="email">
+18. </body>
+19. </html>
+```
+
+</details>
+
+<h3 id="ch5-4-5">5.4.5 "number"</h3>
+
+This input field is useful for entering numerical values (integer or float), but not for entering zip codes. On desktop implementations and on some mobile implementations, it provides a user interface with small vertical arrows for incrementing/decrementing the current value, while on mobiles it will display a numeric keyboard.
+
+For zip codes, a <input type="text" pattern="......"> is preferable. See examples given in the pattern attribute section of this course.
+
+Example: **<input type="number" value="25" min="0" step="5" max="500"/>**
+
+<h4>Screenshot example taken with a mobile device:</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 255.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image255.png?raw=true"
+   width="20%"
+   alt="Numeric keyboard on Safari IOS" />
+</p>
+
+Examples on desktop (the width will be adjusted depending on the min and max attributes):
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 256.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image256.jpeg?raw=true"
+   width="35%"
+   alt="input type=number example" />
+</p>
+
+<h4>Typical usage</h4>
+
+```
+<input type="number" value="25" min="0" step="5" max="500"/>
+```
+
+This field accepts specific attributes max, min, step, value (default displayed value). 
+
+This input type is very interesting as it provides default validation behaviors:
+
+If the value entered using a keyboard is not a valid number, or is not in the range defined by the min and max attributes, the field is *invalid* and gets the pseudo CSS class :invalid.
+
+If the difference between the value you enter and min is a multiple of step, then it gets the CSS pseudo class :valid , otherwise it will be *invalid*. Example: if min=1 and step=5, the field will be valid with value=1, 6, 11, 16 etc. if min=0, with value=0, 5, 10, 15 etc.
+
+**WARNING 1**: **Using a step attribute with an integer value will make the arrows increment/decrement the current value with the step value, and [make the input field valid only when ]the difference between the value you enter and min is a multiple of step. **
+
+**WARNING 2: by default, omitting the step attribute is equivalent to step="1", [so for entering float values, it is necessary to use step="any" or step equal to a floating point value such as step="0.1"].**
+
+**With step="any", floating point values are valid, but vertical arrows will increment/decrement the value by one. If step="0.1", arrows will increment/decrement by 0.1, etc.**
+
+<a href="https://codepen.io/w3devcampus/pen/GJrQzP):">Online example in CodePen</a> try changing the attribute values, use step="any" and try float values, etc).
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 257.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image257.png?raw=true"
+   width="40%"
+   alt="" />
+</p>
+
+Or, do it here in your browser (Manually enter a value that is not in the range, or not a multiple of 5, try the up and down arrows, etc.):
+
+Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid): 
+
+<h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <!DOCTYPE html>
+2.  ....
+3.  <style>
+4.  #number:invalid {
+5.  background-color:pink;
+6.  }
+7.  #number:valid {
+8.  background-color:lightGreen;
+9.  }
+10. </style>
+11. </head>
+12. <body>
+13. Example of <code><input type=number></code>:<p>
+14. <label for="number">Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid): </label>
+15. <input type="number" id="number" value="25" min="0" step="5" max="500"/>
+16. <p>
+17. Change the different values for attributes step, max, min, value. Don't forget to try step="any" for float values...
+18. </body>
+19. </html>
+```
+
+</details>
+
+<h3 id="ch5-4-6">5.4.6 "range"</h3>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 258.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image258.jpeg?raw=true"
+   width="50%"
+   alt="zipper with funny label input type=range" />
+</p>
+
+This input type renders as a slider. It accepts the same attributes as the <input type="number"> : min, max, step and value.
+
+<h4>Example of rendering on a desktop:</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 259.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image259.jpeg?raw=true"
+   width="30%"
+   alt="input type=range" />
+</p>
+
+<h4>And on mobile devices:</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 260.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image260.png?raw=true"
+   width="20%"
+   alt="ios range input" />
+</p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 261.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image261.jpeg?raw=true"
+   width="20%"
+   alt="input type=range android" />
+</p>
+
+<h4>Typical use</h4>
+
+<p>The basic use is to specify at least the value, min and max attributes, and eventually the step attribute, too:</p>
+
+```
+<input id="slider6" type="range" min="0" max="10" step="2" value="5">
+```
+
+<p>But most of the time, you will need a visual feedback that shows the current value selected by the slider.</p>
+
+<h4><a href="https://codepen.io/w3devcampus/pen/BRMVGW">This online example on CodePen</a> shows how to add a visual feedback using a very short JavaScript function and an &lt;output&gt; element. Just click and drag the small cursor of the slider (or use up and down arrow keys when the field has the focus):</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 262.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image262.png?raw=true"
+   width="50%"
+   alt="" />
+</p>
+
+<h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset="utf-8">
+5.  <title>Example of input type=tel</title>
+6.  <style>
+7.  #rangeValue1 {
+8.  border:1px solid black;
+9.  padding:2px;
+10. }
+11. </style>
+12. <script>
+13. window.onload = function() {
+14. // Called when the page is loaded, for displaying initial value in the output
+15. printValue('slider1','rangeValue1');
+16. }
+17. function printValue(sliderId, outputId) {
+18. var x = document.getElementById(outputId);
+19. var y = document.getElementById(sliderId);
+20. x.value = y.value;
+21. }
+22. </script>
+23. </head>
+24. <body>
+25. <form >
+26. <label for="slider1">Select a value:</label>
+27. <input id="slider1" type="range"
+28. min="100" max="500" step="10" value="150"
+29. oninput="printValue('slider1','rangeValue1')"/>
+30. <output id="rangeValue1"></output>
+31. </form>
+32. <br/>
+33. Play with attributes: value, min, max, step...
+34. </body>
+35. </html>
+```
+
+</details>
+
+<h4>Snapping behavior and the step attribute</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 263.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image263.jpeg?raw=true"
+   width="30%"
+   alt="jumps + steps" />
+</p>
+
+When you click and drag the slider, it "jumps" to some snap points corresponding to the integer values of the range defined by the min and max attributes. The "size of the jumps" depends on the value of the step attribute.
+
+Try these examples in your browser and look at their behavior:
+
+```
+value=5 min=0, max=10 step=1:  
+value=12 min=10, max=50 step=4:  
+```
+
+Note that in the previous example, the default value displayed is 14, not 12 (the value just above min plus an integer step value). 12 is not possible so it's been "snapped" to 14.
+
+```
+value=5 min=0, max=10 step="0.5":  
+```
+
+In the previous example, it's necessary to add quotes for setting step="0.5" (while HTML5 authorizes not using quotes for setting integer values to attributes).
+
+```
+value=5 min=0, max=10 step="any":  
+```
+
+**WARNING**: Using a step attribute with an integer value will make the slider jump corresponding to the step value. By default, omitting the step attribute is equivalent to step="1".
+So, for accepting float values, it is necessary to use step="any", or step equal to a floating point value, such as step="0.5".
+
+Adding "ticks" to the range slider using a &lt;datalist&gt; element
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 264.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image264.jpeg?raw=true"
+   width="45%"
+   alt="complicated ticks on a rule" />
+</p>
+
+<h4>Using the &lt;datalist&gt; element, it's possible to display "ticks" above the range slider, at given positions.</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <label for="slider2">value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:</label>
+2.  <input id="slider2" type="range"
+3.  list="ticks2"
+4.  min="0" max="10" step="1" value="5"/>
+5.  <datalist id=ticks2>
+6.  <option>0</option>
+7.  <option>2</option>
+8.  <option>4</option>
+9.  <option>6</option>
+10. <option>8</option>
+11. <option>10</option>
+12. </datalist>
+```
+
+</details>
+
+<h4>Try the sliders below:</h4>
+
+```
+value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:  
+value=20 min=10, max=50 step=5, ticks at 0, 10, 20, 30, 40 and 50:  
+value=5 min=0, max=10 step="0.5", ticks at 0, 0.5, 1, 2, 4, 8:  
+value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
+```
+
+<h4>External resources</h4>
+<ul>
+<li>You can use CSS for "standard" styling (size, color, background color, etc.) . However, some custom attributes are available. Check <a href="https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/">this article from CSS tricks</a>.</li>
+<li>A script that automatically generates ticks, depending on the min, max and step attributes (Codepen from Dudley Storey): <a href="https://codepen.io/dudleystorey/pen/Klnzy">Auto-Generated HTML5 range input Ticks</a></li>
+<li>From CSS{Portal}, a CSS generator help you style the html input range tag, very easy to use: <a href="https://www.cssportal.com/style-input-range/">Style Input Range</a></li>
+</ul>
+
++----------------------------------------------------------------------------------+---------------------------------------+
+| ### **HTML4**                                                                    | ### **HTML5**                         |
++==================================================================================+=======================================+
+| -   **name**                                                                     | -   **form**                          |
+|                                                                                  |                                       |
+| -   **disabled***                                                               | -   **readonly**                      |
+|                                                                                  |                                       |
+| -   **type**                                                                     | -   **autocomplete**                  |
+|                                                                                  |                                       |
+| -   **maxlength**                                                                | -   **autofocus**                     |
+|                                                                                  |                                       |
+| -   **readonly**                                                                 | -   **list**                          |
+|                                                                                  |                                       |
+| -   **size**                                                                     | -   **pattern**                       |
+|                                                                                  |                                       |
+| -   **value**                                                                    | -   **required***                    |
+|                                                                                  |                                       |
+| -   **alt**                                                                      | -   **placeholder**                   |
+|                                                                                  |                                       |
+| -   **src**                                                                      | -   **multiple**                      |
+|                                                                                  |                                       |
+| -   **height**                                                                   | -   **list**                          |
+|                                                                                  |                                       |
+| -   **width**                                                                    | -   **min**                           |
+|                                                                                  |                                       |
+| -   **checked***                                                                | -   **max**                           |
+|                                                                                  |                                       |
+| -   **align ****                                                               | -   **step**                          |
+|                                                                                  |                                       |
+|                                                                                  | -   **formaction**                    |
+|                                                                                  |                                       |
+|                                                                                  | -   **formenctype**                   |
+|                                                                                  |                                       |
+|                                                                                  | -   **formmethod**                    |
+|                                                                                  |                                       |
+|                                                                                  | -   **formtarget**                    |
+|                                                                                  |                                       |
+|                                                                                  | -   **formnovalidate**                |
++----------------------------------------------------------------------------------+---------------------------------------+
+| *   pseudoclasses CSS target with :disabled and :checked or :required selectors |                                       |
+|                                                                                  |                                       |
+| ** align is deprecated, CSS rules should be used instead                       |                                       |
++----------------------------------------------------------------------------------+---------------------------------------+
+<ul>
+<li>MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">&lt;input type=range&gt;</a></li>
+</ul>
+
+<h3 id="ch5-5-1">5.5.1 Form Attributes</h3>
+
+<p>In this chapter, we go over the form attributes that have been introduced by HTML5.</p>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 265.  (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image265.jpeg?raw=true"
+   width="25%"
+   alt="html5 form attributes" />
+</p>
+
+We have already seen the use of pseudo CSS classes used together with the input field and form validation (pattern attribute, input:invalid CSS rule). We also briefly looked at the use of the placeholder attributes for displaying a helper message in the input field.
+
+In this section, we cover the rest of the form attributes and provide further examples of using the previously discussed attributes. 
+
+In another part of the course, about form validation and visual feedback using CSS, we examine some of the most useful attributes in even greater detail.
+
+<h3 id="ch5-5-2">>5.5.2 form</h3>
+
+This attribute is useful for putting input fields outside the form itself. The form attribute of an external input field must share the same value as the id of the form the field belongs to. This is useful when using <fieldset> elements for making the page/form layout easier.
+
+<h4>Typical use</h4>
+<p>
+<a href="http://codepen.io/w3devcampus/pen/jmdpyv)">Try this interactive example in CodePen</a>, or try it directly in your browser:
+
+Enter your name (field outside the form): ![](./images/image266.wmf)</p>
+
+<h4>Top of Form</h4>
+
+Choose optionFree registering![](./images/image219.wmf)Premium![](./images/image219.wmf) Send form
+
+Bottom of Form
+
+<h4>Source code:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.    <head>
+4.      <meta charset="utf-8">
+5.      <title>Example of input type=tel</title>
+6.   
+7.    </head>
+8.    <body>
+9.      <label for="yourName">Enter your name:</label>
+10.     <input type="text" id="yourName" name="yourName" form="form1"/>
+11.     <p>
+12.     <form id="form1" action="sumit.php" method="post">
+13.       <fieldset>
+14.         <legend>Choose option</legend>
+15.         <label for="free">Free registering</label>
+16.         <input type="checkbox" id="free"/>
+17.         <label for="premium">Premium</label>
+18.         <input type="checkbox" id="premium"/>
+19. 
+20.         <button type="submit">Send form</button>
+21.       </fieldset>
+22.     </form>
+23.   </body>
+24. </html>
+```
+
+</details>
+
+*Lines 12* and *22* shows the form attribute. Make sure that its value matches the id of the form!
+
+<h3 id="5-5-3">5.5.3 autocomplete</h3>
+
+This attribute applies either to the &lt;form&gt; element or on individual &lt;input&gt; elements. It specifies when input fields must autocomplete the user's input based on the user's typing history. 
+
+Possible values of this attribute: on/off.
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 267. on off funny picture (xxx) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image267.jpeg?raw=true"
+   width="16%"
+   alt="On/off funny picture." />
+</p>
+
+If applied to the <form> element, all input fields attached to the form (inside or linked to it using the form attribute), will have auto-completion set by default to the value of the autocomplete attribute of the form.
+
+This default behavior can be overridden by setting it individually to any input field inside. In other words: it is possible to have autocomplete "on" for the form, and "off" for specific input fields, or vice-versa.
+
+Sometimes this autocomplete behavior is disabled by default in some Web browsers, and will need to be adjusted in the preferences/settings. 
+
+This attribute targets most input types (those that allow typing in them).
+
+<h4>Typical use</h4>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------- 268. example of use of autocomplete attribute (xxx) ------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image268.jpeg?raw=true"
+   width="40%"
+   alt="Example of use of autocomplete attribute." />
+</p>
+
+Try it in your browser here:
+
+Top of Form
+
+Examples of use of the autocomplete attributeEnter your email (autocomplete=off, this overrides the form's autocomplete=on attribute):
+
+Enter your address (autocomplete=on by inheritance of the form's autocomplete=on attribute):
+
+Submit
+
+Bottom of Form
+
+To see auto-completion in action: enter something in both fields and submit the form. Then enter the same thing: you will see that only the second input field offers auto-completion.
+
+<h4>Source code extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
+
+```
+1.  <form submit="test.php" method="post" **autocomplete="on"**>
+2.      ...
+3.      <label for="address">Enter your address (autocomplete off, **overrides the**
+4.             **form's autocomplete=on attribute**):</label>
+5.      <input type="text" id="address" **autocomplete="off"**>
+6.      <p>
+7.      <label for="address1">Enter your address (**autocomplete on by inheritance** of
+8.             the form's autocomplete=on attribute):</label>
+9.      <input type="text" id="address1">
+10.     <p>
+11.     <button type="submit">Submit</button>
+12.     ...
+13. </form>
+```
+
+</details>
+
+<h3 id="ch5-5-4">5.5.4 autofocus</h3>
+
+This attribute is useful for transferring the focus to a field
