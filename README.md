@@ -6594,8 +6594,8 @@ Here are some other constraints you can set. In particular, look at the ones for
 12. }
 13. // ...
 14. var constraints = {
-15.     audio: {**deviceId: audioSource **? {exact: audioSource} : undefined},
-16.     video: {**deviceId: videoSource **? {exact: videoSource} : undefined}
+15.     audio: {deviceId: audioSource ? {exact: audioSource} : undefined},
+16.     video: {deviceId: videoSource ? {exact: videoSource} : undefined}
 17. };
 18. 
 19. navigator.mediaDevices.getUserMedia(constraints).
@@ -6920,7 +6920,7 @@ We will not look at the JavaScript syntax here, but more at "JavaScript in the b
 
 First of all, you need to find a way to debug your code and see errors. If your work does not produce any results, you must know why!
 
-For that you will use <b>the dev. tools of your browser</b>. Press <i>F12</i> in Windows or <i>cmd-alt-i</i> in Mac to open the dev. tools, then go to the console tab: **this is where errors will be displayed**, or messages of your own (use the console.log(string) JavaScript function in the JavaScript code embedded in your html page). In the console, you will be able to type any JavaScript command.
+For that you will use <b>the dev. tools of your browser</b>. Press <i>F12</i> in Windows or <i>cmd-alt-i</i> in Mac to open the dev. tools, then go to the console tab: this is where errors will be displayed, or messages of your own (use the console.log(string) JavaScript function in the JavaScript code embedded in your html page). In the console, you will be able to type any JavaScript command.
 
 Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this example on JS Bin</a>:
 
@@ -7163,15 +7163,15 @@ The coordinate system used for drawing in canvases is similar to the one used by
    alt="Coordinate system" />
 </p>
 
--   <b>X<b> axis is horizontal, directed to the right 
+-   <b>X</b> axis is horizontal, directed to the right 
 
--   <b>Y<b> axis is vertical, directed downwards
+-   <b>Y</b> axis is vertical, directed downwards
 
 <h3 id="ch3-2-6">3.2.6 Drawing Rectangles in a Canvas</h3>
 
-Small errata about what I said in the above video: "*So let's get the canvas using the DOM API method document.getElementById() or better, use document.querySelector() that is a more recent method <b>from the DOM API**"*..
+Small errata about what I said in the above video: "So let's get the canvas using the DOM API method document.getElementById() or better, use document.querySelector() that is a more recent method from the DOM API"..
 
-The part is bold is not correct: querySelector, technically, comes from [Selectors API](https://www.w3.org/TR/selectors-api/). Just in case some people would like to check the specification.
+The part is bold is not correct: querySelector, technically, comes from <a href="https://www.w3.org/TR/selectors-api/">Selectors API</a>. Just in case some people would like to check the specification.
 
 <h4>Detailed explanation of the example shown in the above video</h4>
 
@@ -7756,15 +7756,15 @@ Your browser does not support the canvas tag.
 7.      // 2 - Get the context
 8.      ctx=canvas.getContext('2d');
 9.      // 3 - we can draw
-10.     drawSomething(**0, 100**);
+10.     drawSomething(0, 100);
 11. }
 12. 
-13. function drawSomething(**x, y**) {
+13. function drawSomething(x, y) {
 14.     // draw 3 rectangles
 15.     ctx.fillStyle='lightgreen';
-16.     ctx.fillRect(**x,y**,100,200);
-17.     ctx.fillRect(**x+150**,y,100,200);
-18.     ctx.fillRect(**x+300**,y,100,200);
+16.     ctx.fillRect(x,y,100,200);
+17.     ctx.fillRect(x+150,y,100,200);
+18.     ctx.fillRect(x+300,y,100,200);
 19. }
 ```
 
@@ -8777,12 +8777,12 @@ context.strokeText("Hello World!", 10, 220, 150);
 8.  context.strokeText("Hello World!", 10, 100);
 9.  
 10. // Draw text with constrained width of 250 pixels
-11. context.fillText("Hello World!", 10, 160, **250**);
-12. context.strokeText("Hello World!", 10, 160, **250**);
+11. context.fillText("Hello World!", 10, 160, 250);
+12. context.strokeText("Hello World!", 10, 160, 250);
 13. 
 14. // Constrain width to 150 pixels
-15. context.fillText("Hello World!", 10, 220, **150**);
-16. context.strokeText("Hello World!", 10, 220, **150**);
+15. context.fillText("Hello World!", 10, 220, 150);
+16. context.strokeText("Hello World!", 10, 220, 150);
 ```
 
 </details>
@@ -8843,8 +8843,8 @@ context.stroke();
 6.  context.fillText("Hello World!", 10, 100);
 7.  context.strokeText("Hello World!", 10, 100);
 8.  
-9.  **var textMetrics = context.measureText("Hello World!");**
-10. **var width = textMetrics.width;**
+9.  var textMetrics = context.measureText("Hello World!");
+10. var width = textMetrics.width;
 11. 
 12. // Draw a text that displays the width of the previous drawn text
 13. context.font = "20pt Arial";
@@ -8928,11 +8928,11 @@ The example above shows the different possible values for this property and the 
 Typical use (taken from the example above):
 
 ```
-1.  **context.textBaseline = "top";**
+1.  context.textBaseline = "top";
 2.  context.fillText("top", 0, 75);
-3.  **context.textBaseline = "hanging";**
+3.  context.textBaseline = "hanging";
 4.  context.fillText("hanging", 40, 75);
-5.  **context.textBaseline = "middle";**
+5.  context.textBaseline = "middle";
 6.  context.fillText("middle", 120, 75);
 ```
 
@@ -9034,7 +9034,7 @@ But let's start with a basic example!
 11.          var imageObj = new Image();
 12. // Callback function called by the imageObj.src = .... line
 13. //located after this function
-14. **         **imageObj.onload = function () {
+14.          imageObj.onload = function () {
 15. // Draw the image only when we have the guarantee
 16. // that it has been loaded
 17.          context.drawImage(imageObj, 0, 0);
@@ -10510,7 +10510,7 @@ The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is usefu
 ```
 1.  ctx.arc(centerX, centerY, radius, startAngle, endAngle); // clockwise drawing
 2.  
-3.  ctx.arc(centerX, centerY, radius, startAngle, endAngle, false**);
+3.  ctx.arc(centerX, centerY, radius, startAngle, endAngle, false);
 ```
 
 The angles are in radians (between 0 and 2*Math.PI). The arc is drawn clockwise. Beware that this may not seem natural if you're used to the trigonometric order.
@@ -10576,7 +10576,7 @@ And if we change the last parameter of the arc function call (*line 3*) to tr
 ```
 1.  ctx.beginPath();
 2.  // we omitted the last parameter
-3.  ctx.arc(100, 75, 50, 0, Math.PI/2, true**);
+3.  ctx.arc(100, 75, 50, 0, Math.PI/2, true);
 4.   
 5.  ctx.lineWidth = 10;
 6.  ctx.stroke();
@@ -10616,16 +10616,16 @@ Then, the result is the "complementary" of the previous arc:
 4.  var centerY = canvas.height / 2;
 5.  var radius = 70;
 6.  
-7.  ctx.beginPath();**
+7.  ctx.beginPath();
 8.  
 9.  // Add to the path a full circle (from 0 to 2PI)
-10. ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);**
+10. ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
 11. 
 12. // With path drawing you can change the context
 13. // properties until a call to stroke() or fill() is performed
 14. ctx.fillStyle = "lightBlue";
 15. // Draws the filled circle in light blue
-16. ctx.fill();**
+16. ctx.fill();
 17. 
 18. // Prepare for the outline
 19. ctx.lineWidth = 5;
@@ -10633,10 +10633,10 @@ Then, the result is the "complementary" of the previous arc:
 21. 
 22. // draws the path (the circle) AGAIN, this
 23. // time in wireframe
-24. ctx.stroke();**
+24. ctx.stroke();
 25. 
-26. **// Notice we called ctx.arc() only once ! And drew it twice
-27. **// with different styles**
+26. // Notice we called ctx.arc() only once ! And drew it twice
+27. // with different styles
 ```
 
 </details>
@@ -12311,7 +12311,7 @@ Here is an example of a radial gradient that interpolates the color of the rainb
 <h4>The gradient is defined as follows:</h4>
 
 ```
-1.  var grd = context.**createRadialGradient(150, 100, 30, 150, 100, 100);**
+1.  var grd = context.createRadialGradient(150, 100, 30, 150, 100, 100);
 2.  grd.addColorStop(0, "red");
 3.  grd.addColorStop(0.17, "orange");
 4.  grd.addColorStop(0.33, "yellow");
@@ -13066,7 +13066,7 @@ Your browser does not support the canvas tag.</canvas>
 26. // with different styles
 27. ...
 28.  
-29. function** addShadows()** {
+29. function addShadows() {
 30.     ctx.shadowColor = "Grey"; // color
 31.     ctx.shadowBlur = 20;      // blur level
 32.     ctx.shadowOffsetX = 15;   // horizontal offset
@@ -13498,7 +13498,7 @@ In order to perform an animation, we need to:
 
 4.  Repeat (go to step 1).
 
-These are the basic steps for animating objects in a canvas. The order of the steps can be changed (i.e. you can move the shapes before drawing them), but, the principle is the same: **clear-draw-move-repeat**.
+These are the basic steps for animating objects in a canvas. The order of the steps can be changed (i.e. you can move the shapes before drawing them), but, the principle is the same: clear-draw-move-repeat.
 
 Step 1 could be avoided if you redraw the whole canvas content during step 2.
 
@@ -15927,20 +15927,35 @@ Here is how it looks on some mobile devices:
 6.  </html>
 ```
 
-*Note*: In this chapter we are simplifying the examples, as we usually embed input elements in a <form>...</form>.
+<i>Note</i>: In this chapter we are simplifying the examples, as we usually embed input elements in a &lt;form&gt;...</form>.
 
-Try <input type="color"> online with this[ JSBin example](https://jsbin.com/cajuzob/1/edit?html,output). Or do it here in your browser: just click on the purple square below : 
+Try <input type="color"> online with this <a href="https://jsbin.com/cajuzob/1/edit?html,output">JSBin example</a>. Or do it here in your browser: just click on the purple square below : 
 
-Here is the result on Google Chrome (works with other browsers too, though the *look and feel* may differ):
-<!---- ************************************************* image 225 ****************************** ----->
-![input type=color in google chrome](./images/image225.jpeg){width="4.0in" height="3.2051695100612423in"}
+Here is the result on Google Chrome (works with other browsers too, though the <i>look and feel</i> may differ):
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------- 225. input type color ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image225.jpeg?raw=true"
+   alt="."
+   width="40%" />
+&nbsp;
+<br/>
 
 <h4>Example: changing the background color of the page</h4>
 
 The <input type="color"> can fire change or input events. Here is an example that changes the background color of the page when a color is chosen. [Try it online at JSBin](https://jsbin.com/jozuter/1/edit?html,css,js,console,output).
 
-<!---- ************************************************* image 226 ****************************** ----->
-![change background color of the body](./images/image226.jpeg){width="4.0in" height="3.6217300962379704in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------- 226. change backgound color of the body ---------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image226.jpeg?raw=true"
+   alt="Change background color of the body."
+   width="40%" />
+&nbsp;
+<br/>
 
 Source code:
 
@@ -15955,10 +15970,10 @@ Source code:
 5.    <script>
 6.       var colorInputField = document.querySelector("#colorChooser");
 7.  
-8.       **colorInputField.addEventListener('input', function(evt) {**
-9.  **          document.body.style.backgroundColor = this.value;**
-10. **      }, false);**
-11. **</script>**
+8.       colorInputField.addEventListener('input', function(evt) {
+9.            document.body.style.backgroundColor = this.value;
+10.       }, false);
+11. </script>
 12. </body>
 13. </html>
 ```
@@ -15969,7 +15984,7 @@ Source code:
 
 By default, the color selector offers many options that may either frighten some users or just not be appropriate for the purpose of the application. 
 
-*Good news*: it is possible to restrict the choices, and also simplify the user interface, by using a <datalist> with some <option> elements inside. 
+<i>Good news</i>: it is possible to restrict the choices, and also simplify the user interface, by using a &lt;datalist&gt; with some &lt;option&gt; elements inside.
 
 Example: click the black rectangle on the right:  . The following should be displayed:
 
@@ -20425,7 +20440,7 @@ How to get a map centered on your longitude and latitude.
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image328.png?raw=true"
-   alt="Example/Test OpenStreetMap"
+   alt="Example/Test OpenStreetMap."
    width="85%" />
 </p>
 
@@ -20436,7 +20451,7 @@ How to get a map centered on your longitude and latitude.
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image329.png?raw=true"
-   alt="Example/Test OpenStreetMap"
+   alt="Example/Test OpenStreetMap."
    width="50%" />
 </p>
 
