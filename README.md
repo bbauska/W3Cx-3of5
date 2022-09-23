@@ -4722,43 +4722,42 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link
 
 <h4> Here is a table that shows the most interesting methods, properties, and events provided by the &lt;video&gt; element API</h4>
 
-We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer! 
+We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer!
 
-| ------------------------------------------------------------------------|
-| <b>Methods</b> | <b>Properties</b> | <b>Events</b>|
-| -------------- | ----------------- | -------------|
-| <b>play()</b>  | <b>currentSrc</b> | <b>play</b> |
-|----------------|-------------------|----------------|
-| <b>pause()</b> | <b>currentTime</b> | <b>pause</b> |
-|----------------| -------------------| ------------ |
-|  load()    |   | startTime (readonly) |            progress |
-|----------------| -------------------| ------------ |
-|  canPlayType() | videoWidth |                     error |
-|----------------| -------------------| ------------ |
- |               | videoHeight |                     timeupdate |
-|----------------| -------------------| ------------ |
-                 | duration (readonly) |               ended |
-|----------------| -------------------| ------------ |
-                 | ended (readonly)                 abort |
-|----------------| -------------------| ------------ |
-                 | error     |                       empty |
-|----------------| -------------------| ------------ |
-                 | paused (readonly) |               emptied |
-|----------------| ------------------| ------------ |
-                 | muted              |              waiting |
-|----------------| ------------------| ------------ |
-                 | seeking             |             loadedmetadata |
-|----------------| -------------------| ------------ |
-                 | volume           |                
-|----------------| -----------------| ------------ |
-                 | <b>height</b> | 
-|----------------| -------------------| ------------ |
-                 | <b>width</b> |
-|----------------| -------------------| ------------ |
-                 | <b>seekable (readonly)</b> |
-|----------------| -------------------| ------------ |
-                 | <b>played (readonly)</b> |
-|----------------| -------------------| ------------ |
+| <b>Methods</b> | <b>Properties</b>    | <b>Events</b>   |
+| -------------- | -------------------- | --------------- |
+| <b>play()</b>  | <b>currentSrc</b>    | <b>play</b>     |
+|----------------|--------------------- | --------------- |
+| <b>pause()</b> | <b>currentTime</b>   | <b>pause</b>    |
+|----------------| -------------------- | --------------- |
+|  load()    |   | startTime (readonly) | progress        |
+|----------------| -------------------- | --------------- |
+|  canPlayType() | videoWidth           | error        |
+|----------------| -------------------- | ------------ |
+|                | videoHeight          | timeupdate   |
+|----------------| -------------------- | ------------ |
+|                | duration (readonly)  | ended        |
+|----------------| -------------------- | ------------ |
+|                | ended (readonly)     | abort        |
+|----------------| -------------------- | ------------ |
+|                | error                | empty        |
+|----------------| -------------------- | ------------ |
+|                | paused (readonly)    | emptied      |
+|----------------| -------------------- | ------------ |
+|                | muted                | waiting      |
+|----------------| -------------------- | ------------ |
+|                | seeking              | loadedmetadata |
+|----------------| -------------------- | ------------ |
+|                | volume               |              |
+|----------------| -------------------- | ------------ |
+|                | <b>height</b>        |              |
+|----------------| -------------------- | ------------ |
+|                | <b>width</b>         |              |
+|----------------| -------------------- | ------------ |
+|                | <b>seekable (readonly)</b> |        |
+|----------------| -------------------- | ------------ |
+|                | <b>played (readonly)</b> |          |
+|----------------| -------------------- | ------------ |
 
 <p>
 In the next pages, let's see, through a set of examples, how to use these most important properties, methods, and events...
@@ -4782,7 +4781,7 @@ This example gives the first steps towards writing a custom video player. It sho
 <p align="center">
 <img src="/images/image078.png?raw=true"
    alt="This example gives the first steps towards writing a custom video player."
-   width="65%" />
+   width="85%" />
 &nbsp;
 
 <!------------------------------------------------------------------------------------------------>
@@ -4844,8 +4843,13 @@ This example listens to the ended event, and calls a callback function when th
 <p align="center">
 <img src="/images/image080.png?raw=true"
    alt="This example listens to the ended event, and calls a callback function when the video is ended."
-   width="65%" />
+   width="85%" />
 &nbsp;
+
+<h4>Source code extract:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <video src="video.ogv" id="myVideo">
@@ -4861,6 +4865,8 @@ This example listens to the ended event, and calls a callback function when th
 </script>
 ```
 
+</details>
+
 <h4>Example #3: how to manage playlists - sequential movies</h4>
 <p>
 This example detects the end of a video, then loads the next video, changes the src attribute of the video element and plays the video.
@@ -4869,12 +4875,12 @@ Check the online example below: use the progress cursor to go near the end of th
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 81.  ---------------------------------------->
+<!---------------------------------- 81. manage playlists (99) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image081.png?raw=true"
    alt=""
-   width="65%" />
+   width="85%" />
 &nbsp;
 
 <h4>Source code:</h4>
@@ -4950,12 +4956,12 @@ Please see this example online, originally written by <a href="https://christia
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 82. (xx) ---------------------------------------->
+<!------------------- 82. 2d transformations: scale, translate  rotate (100) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image082.png?raw=true"
    alt=""
-   width="65%" />
+   width="85%" />
 &nbsp;
 <p>
 Don't forget to click the JavaScript and CSS tabs of the CodePen in order to display the JavaScript code that creates the buttons on the right of the video, and the CSS that processes the different clicks and applies CSS3 transforms.
