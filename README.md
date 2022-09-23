@@ -647,7 +647,7 @@ So various studies have been conducted in order to identify the most popular ids
 
 Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">article: </a>"During the creation of HTML5, Ian Hickson used Google's tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA ("Metadata Analysis and Mining Application"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics".</p>
 
-<h3 id="ch3-1-1">3.1.1 New elements added to the HTML5 set</h3>
+<h3>New elements added to the HTML5 set</h3>
 <p>
 The results of these surveys led to the addition of new structural elements in HTML5. For example, the very popular &lt;div class="header"&gt; led to the creation of a &lt;header&gt; element, &lt;div class="aside"&gt; to a &lt;aside&gt; element, etc.
 
@@ -698,9 +698,9 @@ the W3C specification about this element):</p>
   </tr>
 </table>
 <p>
-And there is no <content> element even though the &lt;div class="content"&gt; was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is "default content". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between &lt;article&gt; and &lt;article&gt;.
+And there is no &lt;content&gt; element even though the &lt;div class="content"&gt; was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is "default content". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between &lt;article&gt; and &lt;/article&gt;.
 
-Read also at the end of this section about the new &lt;main> element. This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">part of the HTML5 recommendation&lt;/a> and  an integral part of the HTML document structure.
+Read also at the end of this section about the new &lt;main&gt; element. This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">part of the HTML5 recommendation</a> and an integral part of the HTML document structure.
 </p>
 <h4>External resources:</h4>
 <ul>
@@ -1284,11 +1284,11 @@ Let's clarify this by looking at some example code:</p>
 <h4>The corresponding outline is:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 26. outline of previous example (26) ------------------------------>
+<!---------------------------------- 26. Heading example (26) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image026.jpeg?raw=true"
-   alt="Outline of previous example."
+   alt="Heading content example."
    width="55%">
 &nbsp;
 <br/>
@@ -1296,7 +1296,7 @@ Let's clarify this by looking at some example code:</p>
 In the above example, please note two things:
 <ol type ="1">
 <li>The outline shows an "Untitled body" at the root of the hierarchy,</li>
-<li>The default size for the H1 and H2 is the same (!). Indeed, when we start a <h1> inside a &lt;section&gt; the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
+<li>The default size for the H1 and H2 is the same (!). Indeed, when we start a &lt;h1&gt. inside a &lt;section&gt; the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
 </ol>
 
 <h4>Best Practices when using Sectioning Elements</h4>
@@ -1316,7 +1316,7 @@ In the above example, please note two things:
 </section>
 ```
 
-<h4>Good (heading in a <header> does not change anything)</h4>
+<h4>Good (heading in a &lt;header&gt; does not change anything)</h4>
 
 ```html5
 <section>
@@ -4727,37 +4727,21 @@ We provide this as a quick reminder - keep in mind that the <a href="https://ht
 | <b>Methods</b> | <b>Properties</b>    | <b>Events</b>   |
 | -------------- | -------------------- | --------------- |
 | <b>play()</b>  | <b>currentSrc</b>    | <b>play</b>     |
-|----------------|--------------------- | --------------- |
 | <b>pause()</b> | <b>currentTime</b>   | <b>pause</b>    |
-|----------------| -------------------- | --------------- |
 |  load()    |   | startTime (readonly) | progress        |
-|----------------| -------------------- | --------------- |
 |  canPlayType() | videoWidth           | error        |
-|----------------| -------------------- | ------------ |
 |                | videoHeight          | timeupdate   |
-|----------------| -------------------- | ------------ |
 |                | duration (readonly)  | ended        |
-|----------------| -------------------- | ------------ |
 |                | ended (readonly)     | abort        |
-|----------------| -------------------- | ------------ |
 |                | error                | empty        |
-|----------------| -------------------- | ------------ |
 |                | paused (readonly)    | emptied      |
-|----------------| -------------------- | ------------ |
 |                | muted                | waiting      |
-|----------------| -------------------- | ------------ |
 |                | seeking              | loadedmetadata |
-|----------------| -------------------- | ------------ |
 |                | volume               |              |
-|----------------| -------------------- | ------------ |
 |                | <b>height</b>        |              |
-|----------------| -------------------- | ------------ |
 |                | <b>width</b>         |              |
-|----------------| -------------------- | ------------ |
 |                | <b>seekable (readonly)</b> |        |
-|----------------| -------------------- | ------------ |
 |                | <b>played (readonly)</b> |          |
-|----------------| -------------------- | ------------ |
 
 <p>
 In the next pages, let's see, through a set of examples, how to use these most important properties, methods, and events...
