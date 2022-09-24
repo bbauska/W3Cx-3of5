@@ -2837,11 +2837,11 @@ You can look at the complete CSS code in the interactive example below (click on
 <a href="https://jsbin.com/dufapo/edit?html,css,output" target="_blank">Also available online at JSBin</a>.
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 36. michel buffa home page - 3 sections centered (xx) ------------------->
+<!------------------- 36. michel buffa home page - 3 sections centered (56) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image036.png?raw=true"
-   alt="Michel Buffa home page: "
+   alt="Michel Buffa home page: 3 sections centered."
    width="65%" />
 &nbsp;
 <br/>
@@ -2899,11 +2899,11 @@ You can look at the complete CSS code in the interactive example below (click on
 There are many articles on Flexbox and we recommend those from Rachel Andrew on Smashing Magazine: "<a href="https://www.smashingmagazine.com/2018/10/flexbox-use-cases/">Use cases for Flexbox</a>", "<a href="https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/">Flexbox: how big is that flexible box</a>", etc.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 38.  (xx) ------------------->
+<!--------------------- 38. same example using the css flex property (57) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image038.png?raw=true"
-   alt=""
+   alt="Same example using the CSS Flex property."
    width="65%" />
 &nbsp;
 <br/>
@@ -2913,7 +2913,7 @@ There are many articles on Flexbox and we recommend those from Rachel Andrew on 
 <p>This example also uses all the structuring elements we saw: main, article, section, etc. It uses only the simplest parts of the FlexBox CSS module, so it should be easy to understand, even for CSS beginners:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------- 39.  (xx) ------------------->
+<!--------------------- 39. another example using the flex property (58) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image039.png?raw=true"
@@ -2963,11 +2963,11 @@ Here is an example of what can be done using these elements: see the <a href="h
 <p>And here is what is displayed after clicking on the small arrow-shaped icon to the left of the summary:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 42. Example of summary details unfolded (xx) ------------------------------->
+<!------------------------ 42. Example of summary details unfolded (60) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image042.jpeg?raw=true"
-   alt="Example of summary details unfolded"
+   alt="Example of summary details unfolded."
    width="35%">
 &nbsp;
 <br/>
@@ -2979,11 +2979,11 @@ Here is an example of what can be done using these elements: see the <a href="h
 <html lang="en"> ...
    <body>
       <details>
-      <summary>
-         How to beat the boss...spoiler alert !
-      </summary>
-      <p> Just aim to the red spots near his eyes</p>
-      <p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
+         <summary>
+            How to beat the boss...spoiler alert !
+         </summary>
+         <p> Just aim to the red spots near his eyes</p>
+         <p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
       </details>
    </body>
 </html>
@@ -3056,7 +3056,7 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 <h5>Example1 (see <a href="https://jsbin.com/tomehim/1/edit?html,css,output" target="_blank">online example</a>):</h5>
 
 <!------------------------------------------------------------------------------------------------>
-<!-=-------------------- 46. pseudo classes for styling summary icons (61) ----------------------->
+<!---------------------- 46. pseudo classes for styling summary icons (61) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image046.jpeg?raw=true"
@@ -3173,15 +3173,14 @@ It provides both a human readable part (the part between &lt;time&gt; and &lt
 
 The machine readable part adds semantics that can be used by search engines for indexing, by browsers or by browser extensions, or by JavaScript code. Useful scenarios include generating alerts for birthdays, automatically adding dates or events that contain &lt;time&gt; elements in a calendar, etc.</p>
 
-<h4>Example:</h4>
+<h4>Examples:</h4>
 
 ```
-We open at <time>10:00</time> every morning.
-  
-1.  I have a meeting the <time datetime="2020-02-14">Monday 14/02/2020.</time>.
-2.  Blog posts from the year <time datetime="2020">2020</time>.
-5.  Archives, blog posts for <time datetime="2020-04">April 2020</time>
-6.  This recipe was published by Michel the <time datetime="2020-04-16">April 16, 2020</time>.
+1.  We open at <time>10:00</time> every morning.
+2.  I have a meeting the <time datetime="2020-02-14">Monday 14/02/2020.</time>.
+3.  Blog posts from the year <time datetime="2020">2020</time>.
+4.  Archives, blog posts for <time datetime="2020-04">April 2020</time>
+5.  This recipe was published by Michel the <time datetime="2020-04-16">April 16, 2020</time>.
 ```
 
 <h4>The datetime attribute</h4>
@@ -3213,7 +3212,7 @@ We open at <time>10:00</time> every morning.
 <p>Duration values use the prefix "P" for "period" as in &lt;time datetime="P4D"&gt; (period = four days)...</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 50. duration values (64) ------------------------------->
+<!---------------------------------- 50. duration values (64) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image050.jpeg?raw=true"
