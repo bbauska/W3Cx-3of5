@@ -2577,58 +2577,58 @@ This element is subject to some constraints:</p>
  <summary>Click to expand!</summary>
 
 ```
-1.  <!DOCTYPE html>
-2.     <html lang="en">
-3.        <head>
-4.           <meta charset="utf-8"/>
-5.           <title>Graduation Ceremony Summer 2022</title>
-6.        </head>
-7.        <body>
-8.         <header>The Lawson Academy:
-9.           <nav>
-10.             <h2>Click these links to navigate...</h2>
-11.             <ul>
-12.                <li><a href="courses.html">Courses</a></li>
-13.                <li><a href="fees.html">Fees</a></li>
-14.                <li><a>Graduation</a></li>
-15.             </ul>
-16.          </nav>
-17.       </header>
-18.       <main>
-19.          <h1>Graduation</h1>
-20.          <nav>
-21.             <h2>Please choose:</h2>
-22.             <ul>
-23.                <li><a href="#ceremony">Ceremony</a></li>
-24.                <li><a href="#graduates">Graduates</a></li>
-25.                <li><a href="#awards">Awards</a></li>
-26.             </ul>
-27.          </nav>
-28.          <h2 id="ceremony">Ceremony</h2>
-29.          <p>Opening Procession</p>
-30.          <p>Speech by Valedictorian</p>
-31.          <p>Speech by Class President</p>
-32.          <p>Presentation of Diplomas</p>
-33.          <p>Closing Speech by Headmaster</p>
-34.          <h2 id="graduates">Graduates</h2>
-35.          <ul>
-36.             <li>Eileen Williams</li>
-37.             <li>Andy Maseyk</li>
-38.             <li>Blanca Sainz Garcia</li>
-39.             <li>Clara Faulkner</li>
-40.             <li>Gez Lemon</li>
-41.             <li>Eloisa Faulkner</li>
-42.          </ul>
-43.          <h2 id="awards">Awards</h2>
-44.             <ul>
-45.                <li>Clara Faulkner</li>
-46.                <li>Eloisa Faulkner</li>
-47.                <li>Blanca Sainz Garcia</li>
-48.             </ul>
-49.          </main>
-50.       <footer>Copyright 2012 B.lawson</footer>
-51.    </body>
-52. </html>
+<!DOCTYPE html>
+   <html lang="en">
+      <head>
+         <meta charset="utf-8"/>
+         <title>Graduation Ceremony Summer 2022</title>
+      </head>
+      <body>
+       <header>The Lawson Academy:
+         <nav>
+            <h2>Click these links to navigate...</h2>
+            <ul>
+               <li><a href="courses.html">Courses</a></li>
+               <li><a href="fees.html">Fees</a></li>
+               <li><a>Graduation</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <h1>Graduation</h1>
+         <nav>
+            <h2>Please choose:</h2>
+            <ul>
+               <li><a href="#ceremony">Ceremony</a></li>
+               <li><a href="#graduates">Graduates</a></li>
+               <li><a href="#awards">Awards</a></li>
+            </ul>
+         </nav>
+         <h2 id="ceremony">Ceremony</h2>
+         <p>Opening Procession</p>
+         <p>Speech by Valedictorian</p>
+         <p>Speech by Class President</p>
+         <p>Presentation of Diplomas</p>
+         <p>Closing Speech by Headmaster</p>
+         <h2 id="graduates">Graduates</h2>
+         <ul>
+            <li>Eileen Williams</li>
+            <li>Andy Maseyk</li>
+            <li>Blanca Sainz Garcia</li>
+            <li>Clara Faulkner</li>
+            <li>Gez Lemon</li>
+            <li>Eloisa Faulkner</li>
+         </ul>
+         <h2 id="awards">Awards</h2>
+            <ul>
+               <li>Clara Faulkner</li>
+               <li>Eloisa Faulkner</li>
+               <li>Blanca Sainz Garcia</li>
+            </ul>
+         </main>
+      <footer>Copyright 2012 B.lawson</footer>
+   </body>
+</html>
 ```
 
 </details>
@@ -2669,18 +2669,18 @@ Let's go back to our blog example and see what can be improved:</p>
 <p>Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an &lt;article&gt; that is in a &lt;section&gt; (this corresponds to the third example given in the "heading and sectioning elements" part of the course):</p>
 
 ```
-1.  <section>
-2.     <header>
-3.       <b><h1>Blog posts for April 2012</h1></b>
-4.     </header>
-5.     <article>
-6.       <header>
-7.         <b><h1><a href="">Information about this example</a></h1></b>
-8.         This example is a modified version of <a href="https://example.com/blog/index.html">https://example.com/blog/index.html</a>
-9.       </header>
-10.      ...
-11.    </article>
-12. </section>
+<section>
+   <header>
+     <b><h1>Blog posts for April 2012</h1></b>
+   </header>
+   <article>
+     <header>
+       <b><h1><a href="">Information about this example</a></h1></b>
+       This example is a modified version of <a href="https://example.com/blog/index.html">https://example.com/blog/index.html</a>
+     </header>
+     ...
+   </article>
+</section>
 ```
 
 <p>With this technique, parts of the document can be moved more easily, or integrated inside an RSS stream, without the need to renumber the headings.
@@ -2692,16 +2692,16 @@ Beware that this technique will require you to use some CSS styling, and may con
 <p>We need to add a heading in the &lt;nav&gt; element. This will both fix the outline of the document by removing the untitled entry, and will also make screen readers happy as they will better vocalize the structure of the page (it will say "entering nav" followed by the vocalization of the heading content).</p>
 
 ```
-1.  <nav>
-2.     <header>
-3.        <h1>Navigation menu</h1>
-4.     <b></header></b>
-5.     <ul>
-6.        <li><span>Blog</span></li>
-7.        <li><a href="">About</a></li>
-8.        <li><a href="">Contact</a></li>
-9.     </ul>
-10. </nav>
+<nav>
+   <header>
+      <h1>Navigation menu</h1>
+   <b></header></b>
+   <ul>
+      <li><span>Blog</span></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+   </ul>
+</nav>
 ```
 
 <h4>Here is the fixed result:</h4>
@@ -2731,26 +2731,26 @@ In the previous section, we saw how to embed a table of contents using some Jav
 Let's add this piece of code (we removed the JS details from this extract):</p>
 
 ```
-1.  <aside>
-2.     <h1>
-3.       <a href="javascript:(function(){...});"
-4.          title="TableOfContents">
-5.          Click here to display the table of contents!
-6.       </a>
-7.     </h1>
-8.  </aside>
+<aside>
+   <h1>
+     <a href="javascript:(function(){...});"
+        title="TableOfContents">
+        Click here to display the table of contents!
+     </a>
+   </h1>
+</aside>
 ```
 
 <h4>We also added a &lt;main&gt; element to identify the main content of the page composed of the big section with all blog posts:</h4>
 
 ```
-1.  <main>
-2.    <section>
-3.       <header>
-4.           <h2>Blog posts for April 2012</h2>
-5.       </header>
-6.       ...
-7.  </main>
+<main>
+  <section>
+     <header>
+         <h2>Blog posts for April 2012</h2>
+     </header>
+     ...
+</main>
 ```
 
 <h4>Use H1 as top level headings only, use H2...H6 in sectioning content</h4>
@@ -2763,12 +2763,12 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 <h4>Extract from source code:</h4>
 
 ```
-1.  <nav>
-2.     <header>
-3.       <h2>Navigation menu</h2>
-4.     </header>
-5.     ...
-6.  </nav>
+<nav>
+   <header>
+     <h2>Navigation menu</h2>
+   </header>
+   ...
+</nav>
 ```
 
 <h4>Finally, the fixed example</h4>
@@ -2801,21 +2801,21 @@ The 4 examples below are given "as is" to give you some hints. There are lots of
  <summary>Click to expand!</summary>
 
 ```
-1.  <header>
-2.  <code><header></code>
-3.  </header>
-4.   
-5.  <section>
-6.  <code><section> <br> float: left;</code>
-7.  </section>
-8.   
-9.  <aside>
-10. <code> right;</code>
-11. </aside>
-12.  
-13. <footer>
-14. <code><footer></code>
-15. </footer>
+<header>
+   <code><header></code>
+</header>
+  
+<section>
+   <code><section> <br> float: left;</code>
+</section>
+  
+<aside>
+   <code> right;</code>
+</aside>
+  
+<footer>
+   <code><footer></code>
+</footer>
 ```
 
 </details>
@@ -2856,25 +2856,25 @@ You can look at the complete CSS code in the interactive example below (click on
  <summary>Click to expand!</summary>
 
 ```
-1.  <header>
-2.  <code><header></code>
-3.  </header>
-4.   
-5.  <section>
-6.  <code><section> <br> float: left;</code>
-7.  </section>
-8.   
-9.  <section>
-10. <code><section> <br> float: left;</code>
-11. </section>
-12.  
-13. <section>
-14. <code><section> <br> float: left;</code>
-15. </section>
-16.  
-17. <footer>
-18. <code><footer></code>
-19. </footer>
+<header>
+   <code><header></code>
+</header>
+   
+<section>
+   <code><section> <br> float: left;</code>
+</section>
+   
+<section>
+   <code><section> <br> float: left;</code>
+</section>
+  
+<section>
+   <code><section> <br> float: left;</code>
+</section>
+  
+<footer>
+   <code><footer></code>
+</footer>
 ```
 
 </details>
@@ -2977,15 +2977,15 @@ Here is an example of what can be done using these elements: see the <a href="h
 ```
 <!DOCTYPE html>
 <html lang="en"> ...
-<body>
-<details>
-<summary>
-How to beat the boss...spoiler alert !
-</summary>
-<p> Just aim to the red spots near his eyes</p>
-<p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
-</details>
-</body>
+   <body>
+      <details>
+      <summary>
+         How to beat the boss...spoiler alert !
+      </summary>
+      <p> Just aim to the red spots near his eyes</p>
+      <p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
+      </details>
+   </body>
 </html>
 ```
 
@@ -3033,18 +3033,19 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 
 ```
 <details>
-<summary>
-How to beat the boss...spoiler alert !
-</summary>
-<p> Just aim to the red spots near his eyes</p>
-<p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
-<details>
-<summary>
-Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
-</summary>
-<p>Before finishing him, try to cut his trail, you will get a new weapon</p>
-<p>Just try to stay behind him as long as you can, hitting his tail with your melee weapon, after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.</p>
-</details>
+   <summary>
+      How to beat the boss...spoiler alert !
+   </summary>
+   <p> Just aim to the red spots near his eyes</p>
+   <p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
+   <details>
+      <summary>
+         Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
+      </summary>
+      <p>Before finishing him, try to cut his trail, you will get a new weapon</p>
+      <p>Just try to stay behind him as long as you can, hitting his tail with your melee weapon, 
+         after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.</p>
+   </details>
 </details>
 ```
 
@@ -3069,10 +3070,10 @@ Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
 In this example: red arrow, white background.</p>
 
 ```
-1.  summary::-webkit-details-marker {
-2.  color:#FF0000;
-3.  background:#FFFFFF;
-4.  }
+summary::-webkit-details-marker {
+   color:#FF0000;
+   background:#FFFFFF;
+}
 ```
 
 <!------------------------------------------------------------------------------------------------>
@@ -3090,10 +3091,10 @@ In this example: red arrow, white background.</p>
 <h4>Here is the corresponding CSS rule:</h4>
 
 ```
-1.  details[open] summary::-webkit-details-marker {
-2.  color:#0000FF;
-3.  background:#00FFFF;
-4.  }
+details[open] summary::-webkit-details-marker {
+   color:#0000FF;
+   background:#00FFFF;
+}
 ```
 
 <p>It is also possible to change the icon itself using the CSS pseudo class :after</p>
@@ -3125,26 +3126,26 @@ In this example: red arrow, white background.</p>
 <p>Use a "+" shaped icon, pink, bold, etc... :</p>
 
 ```
-1.  summary:after {
-2.  content: "+";
-3.  color: #FF00FF;
-4.  float: left;
-5.  font-size: 1.5em;
-6.  font-weight: bold;
-7.  margin: -5px 5px 0 0;
-8.  padding: 0;
-9.  text-align: center;
-10. width: 20px;
-11. }
+summary:after {
+   content: "+";
+   color: #FF00FF;
+   float: left;
+   font-size: 1.5em;
+   font-weight: bold;
+   margin: -5px 5px 0 0;
+   padding: 0;
+   text-align: center;
+   width: 20px;
+}
 ```
 
 <p>Use a "-" shaped icon, white, when details are displayed:</p>
 
 ```
-1.  details[open] summary:after {
-2.  content: "-";
-3.  color: #FFFFFF
-4.  }
+details[open] summary:after {
+content: "-";
+color: #FFFFFF
+}
 ```
 
 <h4>Current browser support</h4>
@@ -3175,10 +3176,10 @@ The machine readable part adds semantics that can be used by search engines for 
 <h4>Example:</h4>
 
 ```
-1.  We open at <time>10:00</time> every morning.
-2.  
-3.  I have a meeting the <time datetime="2020-02-14">Monday 14/02/2020.</time>.
-4.  Blog posts from the year <time datetime="2020">2020</time>.
+We open at <time>10:00</time> every morning.
+  
+1.  I have a meeting the <time datetime="2020-02-14">Monday 14/02/2020.</time>.
+2.  Blog posts from the year <time datetime="2020">2020</time>.
 5.  Archives, blog posts for <time datetime="2020-04">April 2020</time>
 6.  This recipe was published by Michel the <time datetime="2020-04-16">April 16, 2020</time>.
 ```
@@ -3238,8 +3239,8 @@ From Bruce Lawson's article : <i>"Whichever you choose, it's represented intern
 ```html5
 <h2>Recipe:</h2>
 <ul>
-  <li> Preparation time: <time datetime="PT30M">30 minutes</time> </li>
-  <li> Cooking time:     <time datetime="PT10M">10 minutes</time> </li>
+   <li> Preparation time: <time datetime="PT30M">30 minutes</time> </li>
+   <li> Cooking time:     <time datetime="PT10M">10 minutes</time> </li>
 </ul>
 ```
 
@@ -3284,13 +3285,13 @@ The HTML <mark> tag is used for indicating text as marked or highlighted for r
 ```html5
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset=utf-8 />
-<title>JS Bin</title>
-</head>
-<body>
-<p>Project is due in <b><mark>.zip format</mark></b> next monday.</p>
-</body>
+   <head>
+      <meta charset=utf-8 />
+      <title>JS Bin</title>
+   </head>
+   <body>
+      <p>Project is due in <b><mark>.zip format</mark></b> next monday.</p>
+   </body>
 </html>
 ```
 
@@ -3310,10 +3311,10 @@ The HTML <mark> tag is used for indicating text as marked or highlighted for r
 
 ```html5
 <body>
-<pre>
-<code><mark>var</mark> i = 3;</code>
-</pre>
-<p>The var keyword is used to declare a variable in JavaScript.</p>
+   <pre>
+      <code><mark>var</mark> i = 3;</code>
+   </pre>
+   <p>The var keyword is used to declare a variable in JavaScript.</p>
 </body>
 ```
 
@@ -3336,10 +3337,10 @@ If you don't like the default yellow background, you may use CSS to change the s
 <h4>... comes with this CSS rule:</h4>
 
 ```
-1.  mark {
-2.      background-color: green;
-3.      color: yellow;
-4.  }
+mark {
+   background-color: green;
+   color: yellow;
+}
 ```
 
 <h4>External resources:</h4>
@@ -3357,15 +3358,15 @@ If you don't like the default yellow background, you may use CSS to change the s
 Everyone knows the classic way to make hyperlinks, using <a href="...">some text</a>. What happens when you click on the hyperlink depends on the MIME type received by the browser. If you link to a file the browser knows how to render (an html page, a gif, jpg, or png image, etc.) there is a good chance that the MIME type received by the browser will be something like this:
 
 ```
-1.  Content-type: text/html, text/plain, image/gif, image/jpg, etc.
+Content-type: text/html, text/plain, image/gif, image/jpg, etc.
 ```
 
 <h4>For example, HTML code such as this:</h4>
 
 ```
-1.  <a href="toto.jpg">
-2.      please right click this link to download
-3.      the toto.jpg picture</a>
+<a href="toto.jpg">
+   please right click this link to download
+   the toto.jpg picture</a>
 ```
 
 ...will ask the remote HTTP server to send back the toto.jpg file. The browser will receive in the response HTTP header from the server (and by default the browser will display the image in a new tab):
@@ -3387,27 +3388,27 @@ It may also propose a name for the file to be downloaded that may be different f
 Here are some extracts from a Java Servlet that generate a zip file and forces the browser to propose downloading it using a specified name:
 
 ```
-1.  protected void doGet(HttpServletRequest request, HttpServletResponse response)
-2.  throws ServletException, IOException {
-3.     try {
-4.       // Build the zip file
-5.         String path = getServletContext().getRealPath("data");
-6.         File directory = new File(path);
-7.         String[] files = directory.list();
-8.         if (files != null && files.length > 0) {
-9.           byte[] zip = zipFiles(directory, files);
-10.          ServletOutputStream sos = response.getOutputStream();
-11. 
-12.          // generate a HTTP response that forces the download
-13.          [response.setContentType("application/zip");]
-14.          [response.setHeader("Content-Disposition",]
-15.                             ["attachment; filename="DATA.ZIP"");]
-16.          sos.write(zip); sos.flush();
-17.        }
-18.     } catch (Exception e) {
-19.        e.printStackTrace();
-20.     }
-21. }
+protected void doGet(HttpServletRequest request, HttpServletResponse response)
+throws ServletException, IOException {
+   try {
+     // Build the zip file
+       String path = getServletContext().getRealPath("data");
+       File directory = new File(path);
+       String[] files = directory.list();
+       if (files != null && files.length > 0) {
+         byte[] zip = zipFiles(directory, files);
+         ServletOutputStream sos = response.getOutputStream();
+
+         // generate a HTTP response that forces the download
+         [response.setContentType("application/zip");]
+         [response.setHeader("Content-Disposition",]
+                            ["attachment; filename="DATA.ZIP"");]
+         sos.write(zip); sos.flush();
+       }
+    } catch (Exception e) {
+       e.printStackTrace();
+    }
+}
 ```
 
 The above example will cause the browser that invoked this server-side code to start the download of a file named "DATA.ZIP".
@@ -3427,9 +3428,9 @@ The above example will cause the browser that invoked this server-side code to
 HTML5 proposes the use of a new attribute named download to download resources rather than navigating to them. The example below shows how to trigger the download of an image by the browser (instead of rendering it, which is the default behavior) with a name different from the name of the resource.
 
 ```
-1.  <a href="normal.gif" [download]=["MichelBuffa.gif"]>
-2.      download a picture of Michel Buffa
-3.  </a>
+<a href="normal.gif" [download]=["MichelBuffa.gif"]>
+   download a picture of Michel Buffa
+</a>
 ```
 
 This will indeed force the download of an image with a filename different from its original filename on the server side. Here is a screen capture of the Web browser while downloading the picture. We can see in the status bar the name of the link (the image is "normal.gif") and the downloaded file is "MichelBuffa.gif":
@@ -3513,14 +3514,14 @@ In the above example, a <span> element defines an author (of a blog, for examp
 Using the translate="no" attribute should prevent this behavior...
 
 ```
-1.  <span <b>[translate="no"]</b> class="author">[Michel Ham]</span> is a professor
-2.  from the University of Nice,France.
+<span <b>[translate="no"]</b> class="author">[Michel Ham]</span> is a professor
+   from the University of Nice,France.
 ```
 
 <p>Will be correctly translated into French by:</p>
 
 ```
-1.  "[Michel Ham] est un professeur de l'Université de Nice, France."
+"[Michel Ham] est un professeur de l'Université de Nice, France."
 ```
 
 <p>...where all of the end of the sentence has been translated except the author's name.</p>
@@ -3530,7 +3531,7 @@ Using the translate="no" attribute should prevent this behavior...
 <p>When you define an element as not being translatable, its children inherit this behavior and are themselves not translatable. The reverse is also true.</p>
 
 ```
-1.  <p translate="no">This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>. This is the end of the paragraph...</p>
+<p translate="no">This is a text in a paragraph element, that should not be translated: the p element has a translate="no" attribute.<span> This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too</span>. This is the end of the paragraph...</p>
 ```
 
 <h4>External resources:</h4>
@@ -12255,24 +12256,24 @@ Here is an example of a radial gradient that interpolates the color of the rainb
  <summary>Click to expand!</summary>
 
 ```
-> var canvas, ctx, grd;
-> function init() {
-> // Good practice 1: set global vars canvas, ctx, gradients, etc here
-> canvas = document.querySelector('#myCanvas1');
-> ctx = canvas.getContext('2d');
-> grd = ctx.createRadialGradient(150, 100, 30, 150, 100, 100);
-> grd.addColorStop(0, "red");
-> grd.addColorStop(0.17, "orange");
-> grd.addColorStop(0.33, "yellow");
-> grd.addColorStop(0.5, "green");
-> grd.addColorStop(0.666, "blue");
-> grd.addColorStop(1, "violet");
-> draw();
-> }
-> function draw() {
-> ctx.fillStyle = grd;
-> ctx.fillRect(0, 0, 300, 200);
-> }
+var canvas, ctx, grd;
+function init() {
+// Good practice 1: set global vars canvas, ctx, gradients, etc here
+   canvas = document.querySelector('#myCanvas1');
+   ctx = canvas.getContext('2d');
+   grd = ctx.createRadialGradient(150, 100, 30, 150, 100, 100);
+   grd.addColorStop(0, "red");
+   grd.addColorStop(0.17, "orange");
+   grd.addColorStop(0.33, "yellow");
+   grd.addColorStop(0.5, "green");
+   grd.addColorStop(0.666, "blue");
+   grd.addColorStop(1, "violet");
+   draw();
+}
+function draw() {
+   ctx.fillStyle = grd;
+   ctx.fillRect(0, 0, 300, 200);
+}
 ```
 
 </details>
@@ -12283,21 +12284,21 @@ Here is an example of a radial gradient that interpolates the color of the rainb
  <summary>Click to expand!</summary>
 
 ```
-> <!DOCTYPE html>
-> <html lang="en">
-> <head>
-> <meta charset="utf-8">
-> <title>Radial gradients</title>
-> <style>
-> #myCanvas1 {
-> border: 1px solid black;
-> }
-> </style>
-> </head>
-> <body onload="init();">
-> <canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
-> </body>
-> </html>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Radial gradients</title>
+      <style>
+         #myCanvas1 {
+         border: 1px solid black;
+      }
+      </style>
+   </head>
+   <body onload="init();">
+      <canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
+   </body>
+</html>
 ```
 
 </details>
@@ -27968,7 +27969,7 @@ Like that, the recorded stream can be played using a standard HTML5 &lt;video&g
 
 <h3 id="ch3-2-1">3.2.1 About JavaScript and HTML5</h3>
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 115. javascript logo (xxx) ------------------->
+<!--------------------------------- 115. javascript logo (140) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image115.png?raw=true"
@@ -42060,88 +42061,86 @@ Click on the Codepen logo (on the top right) so to run the <a href="https://cod
  <summary>Click to expand!</summary>
 
 ```
- <!DOCTYPE html>
- <html>
+<!DOCTYPE html>
+<html>
    <head>
-   <title>Gimmee My Location</title>
-   <meta charset="utf-8" />
-   <meta
-   name="viewport"
-   content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
-   />
-   <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
-   <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-   <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
-   <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+      <title>Gimmee My Location</title>
+      <meta charset="utf-8" />
+      <meta name="viewport"
+         content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
+      />
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
+      <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+      <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
+      <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
    </head>
- <body onload="getLocation();">
- <h1>Example of the use of reverse geocoder in a form</h1>
-   <form>
-   <fieldset>
-     <legend>Form example with map and address...</legend>
-     <div id="map" style="width: 500px; height: 300px"></div>
-   </fieldset>
-   <fieldset>
-     <legend>Surface address</legend>
-     <input id="surfaceAddress" size=110 type="text">
-   <fieldset>
-   <form>
-   <div id="map"></div>
-   <script type="text/javascript">
- var geocoder = L.Control.Geocoder.nominatim();
- var map, marker, latitude, longitude;
-   function getLocation() {
-     if (!navigator.geolocation) {
-     alert("Browser doesn't support geolocation");
-     } else {
-     navigator.geolocation.getCurrentPosition(success, error);
-     }
-   }
+   <body onload="getLocation();">
+      <h1>Example of the use of reverse geocoder in a form</h1>
+      <form>
+      <fieldset>
+         <legend>Form example with map and address...</legend>
+         <div id="map" style="width: 500px; height: 300px"></div>
+      </fieldset>
+      <fieldset>
+         <legend>Surface address</legend>
+         <input id="surfaceAddress" size=110 type="text">
+      <fieldset>
+      <form>
+      <div id="map"></div>
+      <script type="text/javascript">
+         var geocoder = L.Control.Geocoder.nominatim();
+         var map, marker, latitude, longitude;
+         function getLocation() {
+            if (!navigator.geolocation) {
+               alert("Browser doesn't support geolocation");
+            } else {
+            navigator.geolocation.getCurrentPosition(success, error);
+            }
+         }
  // Get current position successfully
-   function success(position) {
-   latitude = position.coords.latitude;
-   longitude = position.coords.longitude;
+         function success(position) {
+            latitude = position.coords.latitude;
+            longitude = position.coords.longitude;
  // Instance map using leaflet
- map = L.map('map').setView([latitude, longitude], 13);
+            map = L.map('map').setView([latitude, longitude], 13);
  // Tile layer using key api at cloudmade.com
- L.tileLayer('https://{s}.tile.openstreetmap.org/{z}{x}{y}.png', {
- key: '760506895e284217a7442ce2efe97797',
- styleId: 103288,
- maxZoom: 16
- }).addTo(map);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}{x}{y}.png', {
+               key: '760506895e284217a7442ce2efe97797',
+               styleId: 103288, maxZoom: 16
+            }).addTo(map);
  // Marker using leaflet
- marker = L.marker([latitude, longitude]).addTo(map);
+               marker = L.marker([latitude, longitude]).addTo(map);
  // Popup in leaflet
- marker.bindPopup('<p></p>').openPopup();
- getPhysicalAddress({lat:latitude, lng:longitude});
- }
+               marker.bindPopup('<p></p>').openPopup();
+                  getPhysicalAddress({lat:latitude, lng:longitude});
+               }
  // Get current position fail
- function error() {
- alert('Get current position fail. Please access codepen to get geolocation.');
- }
- var marker;
- function getPhysicalAddress(latlong) {
- geocoder.reverse(latlong, 500000, function(results) {
- var r = results[0];
- console.log(r.name);
- document.querySelector("#surfaceAddress").value = r.name;
- if (r) {
- if (marker) {
- marker
- .setLatLng(r.center)
- .setPopupContent(r.html || r.name)
- .openPopup();
- } else {
- marker = L.marker(r.center)
- .bindPopup(r.name)
- .addTo(map)
- .openPopup();
- }
- }
- });
- }
- <script>
- </body>
+               function error() {
+                  alert('Get current position fail. Please access codepen to get geolocation.');
+               }
+                  var marker;
+              function getPhysicalAddress(latlong) {
+                 geocoder.reverse(latlong, 500000, function(results) {
+                 var r = results[0];
+              console.log(r.name);
+                 document.querySelector("#surfaceAddress").value = r.name;
+              if (r) {
+              if (marker) {
+              marker
+                 .setLatLng(r.center)
+                 .setPopupContent(r.html || r.name)
+                 .openPopup();
+                 } else {
+              marker = L.marker(r.center)
+                .bindPopup(r.name)
+                .addTo(map)
+                .openPopup();
+              }
+           }
+        });
+   }
+   <script>
+   </body>
  </html>
 ```
 
@@ -42151,4 +42150,4 @@ Click on the Codepen logo (on the top right) so to run the <a href="https://cod
 . . .The end.
 
 
-<h2><b><i>09-17-2022 10:25pm</i></b></h2>
+<h2><b><i>09-23-2022 5:39pm</i></b></h2>
