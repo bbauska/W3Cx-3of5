@@ -6965,7 +6965,6 @@ For that you will use <b>the dev. tools of your browser</b>. Press <i>F12</
 
 Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this example on JS Bin</a>:
 
-+----+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 1  | <!DOCTYPE html>                                                                                                                                                      |
 |    |                                                                                                                                                                        |
 | 2  | <[**html lang="en"**](https://december.com/html/4/element/html.html)>                                                                                              |
@@ -8301,11 +8300,11 @@ Your browser does not support the canvas tag.
 <h4>And here is the code of the transformations we used, followed by the call to the function that draws the monster:</h4>
 
 ```
-1.  ctx.translate(100, 100);
-2.  ctx.rotate(Math.PI/4);
-3.  ctx.scale(0.5, 0.5);
-4.   
-5.  drawMonster(0, 0);
+ctx.translate(100, 100);
+ctx.rotate(Math.PI/4);
+ctx.scale(0.5, 0.5);
+ 
+drawMonster(0, 0);
 ```
 
 <ul>
@@ -8325,26 +8324,26 @@ function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
 //variables to be used when creating the arrow
 var headlen = 10;
 var angle = Math.atan2(toy-fromy,tox-fromx);
-ctx.save();
-ctx.strokeStyle = color;
-//starting path of the arrow from the start square to the end square and drawing the stroke
-ctx.beginPath();
-ctx.moveTo(fromx, fromy);
-ctx.lineTo(tox, toy);
-ctx.lineWidth = arrowWidth;
-ctx.stroke();
-//starting a new path from the head of the arrow to one of the sides of the point
-ctx.beginPath();
-ctx.moveTo(tox, toy);
-ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
-//path from the side point of the arrow, to the other side point
-ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
-//path from the side point back to the tip of the arrow, and then again to the opposite side point
-ctx.lineTo(tox, toy);
-ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
-//draws the paths created above
-ctx.stroke();
-ctx.restore();
+  ctx.save();
+  ctx.strokeStyle = color;
+  //starting path of the arrow from the start square to the end square and drawing the stroke
+  ctx.beginPath();
+  ctx.moveTo(fromx, fromy);
+  ctx.lineTo(tox, toy);
+  ctx.lineWidth = arrowWidth;
+  ctx.stroke();
+  //starting a new path from the head of the arrow to one of the sides of the point
+  ctx.beginPath();
+  ctx.moveTo(tox, toy);
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
+  //path from the side point of the arrow, to the other side point
+  ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
+  //path from the side point back to the tip of the arrow, and then again to the opposite side point
+  ctx.lineTo(tox, toy);
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
+  //draws the paths created above
+  ctx.stroke();
+  ctx.restore();
 }
 ```
 
@@ -8358,77 +8357,77 @@ ctx.restore();
 ```
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>2D transformation</title>
-<meta charset="utf-8"/>
-<style>
-#myCanvas {
-border: 1px solid black;
-}
-</style>
-<script>
-var canvas, ctx;
-function init() {
-// This function is called after the page is loaded
-// 1 - Get the canvas
-canvas = document.getElementById('myCanvas');
-// 2 - Get the context
-ctx=canvas.getContext('2d');
-// 3 - we can draw, try to change these values
-ctx.translate(100, 100);
-ctx.rotate(Math.PI/4);
-ctx.scale(0.5, 0.5);
-// Draw the monster at (0, 0)
-drawMonster(0, 0);
-// draw a filled rectagle at (250, 0)
-ctx.fillRect(250, 0, 100, 100);
-drawCoordinateSystem('red', 10);
-}
-function drawMonster(x, y) {
-// head
-ctx.fillStyle='lightgreen';
-ctx.fillRect(0,0,200,200);
-// eyes
-ctx.fillStyle='red';
-ctx.fillRect(35,30,20,20);
-ctx.fillRect(140,30,20,20);
-// interior of eye
-ctx.fillStyle='yellow';
-ctx.fillRect(43,37,10,10);
-ctx.fillRect(143,37,10,10);
-// Nose
-ctx.fillStyle='black';
-ctx.fillRect(90,70,20,80);
-// Mouth
-ctx.fillStyle='purple';
-ctx.fillRect(60,165,80,20);
-}
-function drawCoordinateSystem(color, width) {
-// coordinate system at (0, 0)
-drawArrow(ctx, 0, 0, 100, 0, width, color);
-drawArrow(ctx, 0, 0, 0, 100, width, color);
-}
-</script>
-</head>
-<body onload="init();">
-<canvas id="myCanvas" width="400" height="400">
-Your browser does not support the canvas tag.
-</canvas>
-</body>
+  <head>
+    <title>2D transformation</title>
+    <meta charset="utf-8"/>
+    <style>
+      #myCanvas {
+        border: 1px solid black;
+        }
+    </style>
+    <script>
+      var canvas, ctx;
+        function init() {
+        // This function is called after the page is loaded
+        // 1 - Get the canvas
+        canvas = document.getElementById('myCanvas');
+        // 2 - Get the context
+        ctx=canvas.getContext('2d');
+        // 3 - we can draw, try to change these values
+        ctx.translate(100, 100);
+        ctx.rotate(Math.PI/4);
+        ctx.scale(0.5, 0.5);
+        // Draw the monster at (0, 0)
+        drawMonster(0, 0);
+         // draw a filled rectagle at (250, 0)
+        ctx.fillRect(250, 0, 100, 100);
+        drawCoordinateSystem('red', 10);
+        }
+        function drawMonster(x, y) {
+        // head
+        ctx.fillStyle='lightgreen';
+        ctx.fillRect(0,0,200,200);
+        // eyes
+        ctx.fillStyle='red';
+        ctx.fillRect(35,30,20,20);
+        ctx.fillRect(140,30,20,20);
+        // interior of eye
+        ctx.fillStyle='yellow';
+        ctx.fillRect(43,37,10,10);
+        ctx.fillRect(143,37,10,10);
+        // Nose
+        ctx.fillStyle='black';
+        ctx.fillRect(90,70,20,80);
+        // Mouth
+        ctx.fillStyle='purple';
+        ctx.fillRect(60,165,80,20);
+        }
+      function drawCoordinateSystem(color, width) {
+      // coordinate system at (0, 0)
+      drawArrow(ctx, 0, 0, 100, 0, width, color);
+      drawArrow(ctx, 0, 0, 0, 100, width, color);
+      }
+    </script>
+  </head>
+  <body onload="init();">
+    <canvas id="myCanvas" width="400" height="400">
+      Your browser does not support the canvas tag.
+    </canvas>
+  </body>
 </html>
 ```
 
 </details>
 
 ```
-1.  ctx.translate(100, 100);
-2.  ctx.rotate(Math.PI/4);
-3.  ctx.scale(0.5, 0.5);
-4.  
-5.  // Draw the monster at (0, 0)
-6.  drawMonster(0, 0);
-7.  // Draw a filled rectagle at (250, 0)
-8.  ctx.fillRect(250, 0, 100, 100);
+ctx.translate(100, 100);
+ctx.rotate(Math.PI/4);
+ctx.scale(0.5, 0.5);
+
+// Draw the monster at (0, 0)
+drawMonster(0, 0);
+// Draw a filled rectagle at (250, 0)
+ctx.fillRect(250, 0, 100, 100);
 ```
 
 <h4>How can we reset the coordinate system, how can we go back to the previous one?</h4>
@@ -9568,9 +9567,6 @@ console.timeEnd("time to draw");
 
 <h4>HTML</h4>
 
-<details>
- <summary>Click to expand!</summary>
-
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -10312,9 +10308,9 @@ ctx.restore();
 <h4>Source code extract:</h4>
 
 ```
-1.  drawLine(0, 0, 100, 100);
-2.  drawLine(0, 50, 150, 200, 'red');
-3.  drawLine(10, 100, 100, 10, 'green', 10);
+drawLine(0, 0, 100, 100);
+drawLine(0, 50, 150, 200, 'red');
+drawLine(10, 100, 100, 10, 'green', 10);
 ```
 
 <!------------------------------------------------------------------------------------------------>
@@ -10457,9 +10453,9 @@ drawArrow(ctx, 100, 10, 140, 140, 3, 'black');
 <h4>Source code extract:</h4>
 
 ```
-1.  drawArrow(ctx, 10, 10, 100, 100, 10, 'red');
-2.  
-3.  drawArrow(ctx, 100, 10, 140, 140, 3, 'black');
+drawArrow(ctx, 10, 10, 100, 100, 10, 'red');
+
+drawArrow(ctx, 100, 10, 140, 140, 3, 'black');
 ```
 
 <h4>How to draw nicer arrows?</h4>
@@ -11699,9 +11695,6 @@ It is possible to define the stroke or the fill style as a "gradient", a set of 
 
 <h4>JS</h4>
 
-<details>
- <summary>Click to expand!</summary>
-
 ```
 var canvas, ctx, grdFrenchFlag;
 function init() {
@@ -11840,23 +11833,20 @@ Instead of drawing a filled rectangle that covers the whole surface of the canva
 
 <h4>Here is the code that draws the checkboard:</h4>
 
-<details>
- <summary>Click to expand!</summary>
-
 ```
-1.  ctx.fillStyle = grdFrenchFlag;
-2.  ctx.fillRect(0, 0, 50, 50);
-3.  ctx.fillRect(100, 0, 50, 50);
-4.  ctx.fillRect(200, 0, 50, 50);
-5.  ctx.fillRect(50, 50, 50, 50);
-6.  ctx.fillRect(150, 50, 50, 50);
-7.  ctx.fillRect(250, 50, 50, 50);
-8.  ctx.fillRect(0, 100, 50, 50);
-9.  ctx.fillRect(100, 100, 50, 50);
-10. ctx.fillRect(200, 100, 50, 50);
-11. ctx.fillRect(50, 150, 50, 50);
-12. ctx.fillRect(150, 150, 50, 50);
-13. ctx.fillRect(250, 150, 50, 50);
+ctx.fillStyle = grdFrenchFlag;
+ctx.fillRect(0, 0, 50, 50);
+ctx.fillRect(100, 0, 50, 50);
+ctx.fillRect(200, 0, 50, 50);
+ctx.fillRect(50, 50, 50, 50);
+ctx.fillRect(150, 50, 50, 50);
+ctx.fillRect(250, 50, 50, 50);
+ctx.fillRect(0, 100, 50, 50);
+ctx.fillRect(100, 100, 50, 50);
+ctx.fillRect(200, 100, 50, 50);
+ctx.fillRect(50, 150, 50, 50);
+ctx.fillRect(150, 150, 50, 50);
+ctx.fillRect(250, 150, 50, 50);
 ```
 
 This code is rather ugly isn't it? It would have been better  to use a loop...
@@ -11867,22 +11857,22 @@ This code is rather ugly isn't it? It would have been better  to use a loop...
  <summary>Click to expand!</summary>
 
 ```
-1.  // n = number of cells per row/column
-2.  function drawCheckboard(n) {
-3.      ctx.fillStyle = grdFrenchFlag;
-4.  
-5.      var l = canvas.width;
-6.      var h = canvas.height;
-7.   
-8.      var cellWidth = l / n;
-9.      var cellHeight = h / n;
-10. 
-11.     for(i = 0; i < n; i++) {
-12.        for(j = i % 2; j < n; j++) {
-13.           ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
-14.        }
-15.     }
-16. }
+// n = number of cells per row/column
+function drawCheckboard(n) {
+    ctx.fillStyle = grdFrenchFlag;
+
+    var l = canvas.width;
+    var h = canvas.height;
+ 
+    var cellWidth = l / n;
+    var cellHeight = h / n;
+
+    for(i = 0; i < n; i++) {
+       for(j = i % 2; j < n; j++) {
+          ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
+       }
+    }
+}
 ```
 
 </details>
@@ -12048,16 +12038,16 @@ border: 1px solid black;
  <summary>Click to expand!</summary>
 
 ```
-1.  function drawCheckboard(n) {
-2.      ctx.strokeStyle = grdFrenchFlag;
-3.      ctx.lineWidth=10;
-4.      ...
-5.      for(i = 0; i < n; i++) {
-6.          for(j = i % 2; j < n; j++) {
-7.              ctx.strokeRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
-8.          }
-9.      }
-10. }
+function drawCheckboard(n) {
+    ctx.strokeStyle = grdFrenchFlag;
+    ctx.lineWidth=10;
+    ...
+    for(i = 0; i < n; i++) {
+        for(j = i % 2; j < n; j++) {
+            ctx.strokeRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
+        }
+    }
+}
 ```
 
 </details>
@@ -12067,7 +12057,7 @@ border: 1px solid black;
 Let's go back to the very first example on this page - the one with the blue-white-red interpolated French flag. This time we will define a smaller gradient. Instead of going from (0, 0) to (300, 0), it will go from (100, 0) to (200, 0), while the canvas remains the same (width=300, height=200).
 
 ```
-1.  grdFrenchFlag = ctx.createLinearGradient(100, 0, 200, 0);
+grdFrenchFlag = ctx.createLinearGradient(100, 0, 200, 0);
 ```
 
 Like in the first example we will draw a filled rectangle that is the same size as the canvas:
@@ -12404,15 +12394,15 @@ function draw() {
 <h4>The gradient is defined as follows:</h4>
 
 ```
-1.  var grd = context.createRadialGradient(150, 100, 30, 150, 100, 100);
-2.  grd.addColorStop(0, "red");
-3.  grd.addColorStop(0.17, "orange");
-4.  grd.addColorStop(0.33, "yellow");
-5.  grd.addColorStop(0.5, "green");
-6.  grd.addColorStop(0.666, "blue");
-7.  grd.addColorStop(1, "violet");
-8.  
-9.  context.fillStyle = grd;
+var grd = context.createRadialGradient(150, 100, 30, 150, 100, 100);
+grd.addColorStop(0, "red");
+grd.addColorStop(0.17, "orange");
+grd.addColorStop(0.33, "yellow");
+grd.addColorStop(0.5, "green");
+grd.addColorStop(0.666, "blue");
+grd.addColorStop(1, "violet");
+
+context.fillStyle = grd;
 ```
 
 The method from the context object createRadialGradient(cx1, cy1, radius1, cx2, cy2, radius2) takes as the first three parameters the "starting" circle of the gradient, and as the three last parameters, the "ending circle".
@@ -15773,7 +15763,7 @@ Feel free to look at the source code in the <a href="https://jsbin.com/sivula/e
 
 <h4>Live coding video 2: creating GUI elements dynamically</h4>
 
-<and here>
+&lt;and here&gt;
 
 Input elements, in particular the elements introduced by HTML5, can be used as widgets to control the behavior of a Web application. In this situation, they do not need to be inside a <form> element. We just bind event listeners to them and we use them as client-side widgets.
 
@@ -19531,24 +19521,24 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
  <summary>Click to expand!</summary>
 
 ```
-> <!DOCTYPE html>
-> <html lang="en">
-> <head>
-> <meta charset=utf-8 />
-> <title>Storing JSON Objects with Local Storage</title>
-> <script>
->     var personObject= {'givenName': 'Michel', 'familyName': 'Buffa'};
->     // Store the object as a JSON String
->     localStorage.setItem('testObject', JSON.stringify(personObject));
->     // Retrieve the object from storage
->     var retrievedObject = JSON.parse(localStorage.getItem('testObject'));
->     console.log(retrievedObject.firstName + " " + retrievedObject.lastName);
->    // then you can use retrievedObject.givenName, retrievedObject.familyName...
-> </script>
-> </head>
-> <body>
-> </body>
-> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8 />
+<title>Storing JSON Objects with Local Storage</title>
+<script>
+    var personObject= {'givenName': 'Michel', 'familyName': 'Buffa'};
+    // Store the object as a JSON String
+    localStorage.setItem('testObject', JSON.stringify(personObject));
+    // Retrieve the object from storage
+    var retrievedObject = JSON.parse(localStorage.getItem('testObject'));
+    console.log(retrievedObject.firstName + " " + retrievedObject.lastName);
+   // then you can use retrievedObject.givenName, retrievedObject.familyName...
+</script>
+</head>
+<body>
+</body>
+</html>
 ```
 
 </details>
@@ -19767,34 +19757,34 @@ All this here is HTML5, this is canvas, these are form elements we saw the last 
  <summary>Click to expand!</summary>
 
 ```
-> <!DOCTYPE html>
-> <html lang="en">
-> <head>
-> <meta charset="utf-8">
-> <title>Example of using readAsDataURL</title>
-> </head>
-> <body>
-> <input type="file" multiple onchange="readImagesAndPreview(this.files);">
-> <p>
-> <div id="thumbnails"></div>
-> <script>
->    var container = document.getElementById("thumbnails");
->    function readImagesAndPreview(files) {
->       for(var i=0; i < files.length; i++) {
->          var f = files[i];
->          var reader = new FileReader();
->          reader.onload = function(e) {
->             var img = document.createElement("img");
->             img.src = e.target.result;
->             img.width = 100;
->             container.appendChild(img);
->          }
->          reader.readAsDataURL(f);
->      }
-> }
->  </script>
-> </body>
-> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of using readAsDataURL</title>
+</head>
+<body>
+<input type="file" multiple onchange="readImagesAndPreview(this.files);">
+<p>
+<div id="thumbnails"></div>
+<script>
+   var container = document.getElementById("thumbnails");
+   function readImagesAndPreview(files) {
+      for(var i=0; i < files.length; i++) {
+         var f = files[i];
+         var reader = new FileReader();
+         reader.onload = function(e) {
+            var img = document.createElement("img");
+            img.src = e.target.result;
+            img.width = 100;
+            container.appendChild(img);
+         }
+         reader.readAsDataURL(f);
+     }
+}
+ </script>
+</body>
+</html>
 ```
 
 </details>
@@ -19814,11 +19804,10 @@ Look at the code below: the file API defines a files property on the DOM node
 In the example below, we get in the selectedFile variable, the metadata related to the first selected file:
 
 ```
-> var selectedFile = document.getElementById('input').files[0];
-> // do something with selectedFile.name, selectedFile.size, selectedFile.type
-> // selectedFile.lastModifiedDate
->
-> ...
+var selectedFile = document.getElementById('input').files[0];
+// do something with selectedFile.name, selectedFile.size, selectedFile.type
+// selectedFile.lastModifiedDate
+...
 ```
 
 <h4>Examples</h4>
@@ -19982,18 +19971,18 @@ All these methods take as a unique parameter a File object (for example, a fil
  <summary>Click to expand!</summary>
 
 ```
-> function readFileContent(f) {
->    // Executed last: called only when the file content is loaded, e.target.result is
->    // The content
->    reader.onload = function(e) {
->        var content = e.target.result;
->        // do something with the file content
->        console.log("File " + f.name + " content is: " + content);
->    };
->    // Executed first: start reading the file asynchronously, will call the
->    // reader.onload callback only when the file is read entirely
->    reader.readAsText(f);
-> }
+function readFileContent(f) {
+   // Executed last: called only when the file content is loaded, e.target.result is
+   // The content
+   reader.onload = function(e) {
+       var content = e.target.result;
+       // do something with the file content
+       console.log("File " + f.name + " content is: " + content);
+   };
+   // Executed first: start reading the file asynchronously, will call the
+   // reader.onload callback only when the file is read entirely
+   reader.readAsText(f);
+}
 ```
 
 </details>
@@ -20165,9 +20154,9 @@ This example is similar to the previous one, except that this time we read multi
 Note that you can optionally indicate the encoding of the file you are going to read (default is UTF-8):
 
 ```
-1.  reader.readAsText(file, 'UTF-8');
-2.  reader.readAsText(file, 'ISO-8859-1');
-3.  ...
+reader.readAsText(file, 'UTF-8');
+reader.readAsText(file, 'ISO-8859-1');
+...
 ```
 
 <!------------------------------------------------------------------------------------------------>
