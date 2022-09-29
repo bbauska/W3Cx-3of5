@@ -100,7 +100,7 @@
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
-
+<!--
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -116,11 +116,9 @@
   font-size: 15px;
   transition: 0.4s;
 }
-
 .active, .accordion:hover {
   background-color: #ccc; 
 }
-
 .panel {
   padding: 0 18px;
   display: none;
@@ -128,6 +126,7 @@
   overflow: hidden;
 }
 </style>
+--->
 
 <h2 id-"cha-1">About W3C and the Web</h2>
 
