@@ -5981,7 +5981,7 @@ startWebCam();
 
 </details>
 
-<b>HTTPS is mandatory:<b> for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.
+<b>HTTPS is mandatory:</b> for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.
 
 Support of getUserMedia/stream is [very good in all modern browsers](https://caniuse.com/stream), including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.
 
@@ -6947,7 +6947,7 @@ So yes, during this course, in particular in Modules 3 and 4, you will have to d
 
 Here we provide a basic introduction to JavaScript. If you want to learn more, many resources are available on the Web; this document is simply here to give you a head start. Remember that one great thing about these MOOCs courses is that everybody can help each other. Some students are very good in JavaScript and are usually very happy to help others when they encounter difficulties.
 
-<b>You will learn a lot by looking at examples, tweaking them, cloning and modifying them, etc.</b> Many previous students who were real JavaScript beginners managed to do [all] the assignments (drawing and animating a monster with keyboard/mouse interaction)! And they did this by just studying the provided examples.
+You will learn a lot by looking at examples, tweaking them, cloning and modifying them, etc.</b> Many previous students who were real JavaScript beginners managed to do [all] the assignments (drawing and animating a monster with keyboard/mouse interaction)! And they did this by just studying the provided examples.
 
 <h4>External resources</h4>
 
@@ -6967,33 +6967,33 @@ Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this examp
 
 | 1  | <!DOCTYPE html>                                                                                                                                                      |
 |    |                                                                                                                                                                        |
-| 2  | <[**html lang="en"**](https://december.com/html/4/element/html.html)>                                                                                              |
+| 2  | <[<b>html lang="en"</b>](https://december.com/html/4/element/html.html)>                                                                                              |
 |    |                                                                                                                                                                        |
-| 3  |   <[**head**](https://december.com/html/4/element/head.html)>                                                                                                        |
+| 3  |   <[<b>head</b>](https://december.com/html/4/element/head.html)>                                                                                                        |
 |    |                                                                                                                                                                        |
-| 4  |   <[<b>meta<b>](https://december.com/html/4/element/meta.html) charset=utf-8 />                                                                                        |
+| 4  |   <[<b>meta</b>](https://december.com/html/4/element/meta.html) charset=utf-8 />                                                                                        |
 |    |                                                                                                                                                                        |
-| 5  |   <[<b>title<b>](https://december.com/html/4/element/title.html)>Web Audio API</[<b>title<b>](https://december.com/html/4/element/title.html)>                         |
+| 5  |   <[<b>title</b>](https://december.com/html/4/element/title.html)>Web Audio API</[<b>title<b>](https://december.com/html/4/element/title.html)>                         |
 |    |                                                                                                                                                                        |
-| 6  |   <[<b>script<b>](https://december.com/html/4/element/script.html)>                                                                                                    |
+| 6  |   <[<b>script</b>](https://december.com/html/4/element/script.html)>                                                                                                    |
 |    |                                                                                                                                                                        |
 | 7  |    console.log("Some JavaScript code has been executed");                                                                                                            |
 |    |                                                                                                                                                                        |
-| 8  |   </[<b>script<b>](https://december.com/html/4/element/script.html)>                                                                                                   |
+| 8  |   </[<b>script</b>](https://december.com/html/4/element/script.html)>                                                                                                   |
 |    |                                                                                                                                                                        |
-| 9  |   </[<b>head<b>](https://december.com/html/4/element/head.html)>                                                                                                       |
+| 9  |   </[<b>head</b>](https://december.com/html/4/element/head.html)>                                                                                                       |
 |    |                                                                                                                                                                        |
-| 10 |   <[<b>body<b>](https://december.com/html/4/element/body.html)>                                                                                                        |
+| 10 |   <[<b>body</b>](https://december.com/html/4/element/body.html)>                                                                                                        |
 |    |                                                                                                                                                                        |
-| 11 |     <[<b>h1<b>](https://december.com/html/4/element/h1.html)>JavaScript debugging using the dev tool console</[<b>h1<b>](https://december.com/html/4/element/h1.html)> |
+| 11 |     <[<b>h1</b>](https://december.com/html/4/element/h1.html)>JavaScript debugging using the dev tool console</[<b>h1<b>](https://december.com/html/4/element/h1.html)> |
 |    |                                                                                                                                                                        |
-| 12 |   </[<b>body<b>](https://december.com/html/4/element/body.html)>                                                                                                       |
+| 12 |   </[<b>body</b>](https://december.com/html/4/element/body.html)>                                                                                                       |
 |    |                                                                                                                                                                        |
-| 13 | </[<b>html<b>](https://december.com/html/4/element/html.html)>                                                                                                         |
+| 13 | </[<b>html</b>](https://december.com/html/4/element/html.html)>                                                                                                         |
 
 The simplest way to add JavaScript code in an HTML page, is by using the <script>...</script> element.
 
-<b>The code in this example is executed sequentially when the page is loaded<b>: the JavaScript code is executed before the browser could see the rest of the page (as the <script></script> is located before the &lt;body&gt;).
+<b>The code in this example is executed sequentially when the page is loaded</b>: the JavaScript code is executed before the browser could see the rest of the page (as the &lt;script&gt;&lt;/script&gt; is located before the &lt;body&gt;).
 
 The H1 element, for example, does not exist in the Document Object Model, and has not yet been displayed when the JavaScript code is executed. If we move the <script></script> at the end of the document, then the H1 would have been built before the JavaScript code is executed.
 
@@ -7020,7 +7020,7 @@ It is also possible to use the "real dev. tool console", and for this I recommen
    alt="View of the JavaScript console" />
 </p>
 
-Ok, now, let's make an error: change console.log() into conso<b>lll<b>e.log(). Let's see what happens:
+Ok, now, let's make an error: change console.log() into conso<b>lll</b>e.log(). Let's see what happens:
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 118. view of the javascript console (xxx) ------------------->
@@ -7134,7 +7134,7 @@ A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), th
 
 Performance is  good and animation is generally very smooth, since most Web browsers (mobile and desktop) support hardware acceleration.
 
-<b>Note<b>: 3D drawing using the WebGL API is also possible in a <canvas>, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a <canvas>: [BabylonJS](https://www.babylonjs.com/) and [ThreeJS](https://threejs.org/).
+<b>Note</b>: 3D drawing using the WebGL API is also possible in a <canvas>, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a <canvas>: [BabylonJS](https://www.babylonjs.com/) and [ThreeJS](https://threejs.org/).
 
 <h4>External resources</h4>
 
@@ -9367,7 +9367,7 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 
 </details>
 
-The <b><a href="https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents">DOM Level 2 Events specification</a></b> says: "<i>The load event occurs when the DOM implementation finishes loading all content within a document, all frames within a FRAMESET, or an OBJECT element.</i>"
+The <a href="https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents">DOM Level 2 Events specification</a></b> says: "<i>The load event occurs when the DOM implementation finishes loading all content within a document, all frames within a FRAMESET, or an OBJECT element.</i>"
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-3-4">3.3.4 Drawing Images from a Video Stream</h3>
@@ -12517,21 +12517,21 @@ There are a few steps we have to take before doing this:
 1.  <b>Create a JavaScript image object</b>
 
 ```
-1.  var imageObj = new Image();
+var imageObj = new Image();
 ```
 
 2.  <b>Define a callback function that will be called once the image has been fully loaded</b> in memory; we cannot draw before the image has been loaded.
 
 ```
-1.  imageObj.onload = function(){
-2.  ...
-3.  }
+imageObj.onload = function(){
+...
+}
 ```
 
 3.  <b>Set the source of this image to the URL of the pattern</b>:
 
 ```
-1.  imageObj.src = "https://www.myserver.com/myRepeatablePattern.png";
+imageObj.src = "https://www.myserver.com/myRepeatablePattern.png";
 ```
 
 4.  <b>Create a pattern object from the loaded image:</b>
@@ -12539,25 +12539,25 @@ There are a few steps we have to take before doing this:
 As soon as step 3 is executed, an HTTP request is sent in background by the browser, and when the image is loaded in memory, the callback defined at step 2 is called. We create a pattern object inside, from the loaded image:
 
 ```
-1.  // callback called asynchronously, after the src attribute of imageObj is set
-2.  imageObj.onload = function(){ 
-3.      // We enter here when the image is loaded, we create a pattern object.
-4.      // It is good practice to set this as a global variable, easier to share
-5.      pattern1 = ctx.createPattern(imageObj, "repeat");
-6.  };
+// callback called asynchronously, after the src attribute of imageObj is set
+imageObj.onload = function(){ 
+    // We enter here when the image is loaded, we create a pattern object.
+    // It is good practice to set this as a global variable, easier to share
+    pattern1 = ctx.createPattern(imageObj, "repeat");
+};
 ```
 
-1.  <b>Inside the callback function (or inside a function called from inside the callback), we can finally draw</b>:
+5.  <b>Inside the callback function (or inside a function called from inside the callback), we can finally draw</b>:
 
 ```
-1.  // callback called asynchronously, after the src attribute of imageObj is set
-2.  imageObj.onload = function(){
-3.      pattern1 = ctx.createPattern(imageObj, "repeat");
-4.  
-5.      // Draw a textured rectangle
-6.      ctx.fillStyle = pattern1;
-7.      ctx.fillRect(10, 10, 500, 800);
-8.  };
+// callback called asynchronously, after the src attribute of imageObj is set
+imageObj.onload = function(){
+    pattern1 = ctx.createPattern(imageObj, "repeat");
+
+    // Draw a textured rectangle
+    ctx.fillStyle = pattern1;
+    ctx.fillRect(10, 10, 500, 800);
+};
 ```
 
 <h4>Examples</h4>
