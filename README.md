@@ -7134,7 +7134,7 @@ A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), th
 
 Performance is  good and animation is generally very smooth, since most Web browsers (mobile and desktop) support hardware acceleration.
 
-<b>Note</b>: 3D drawing using the WebGL API is also possible in a <canvas>, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a <canvas>: [BabylonJS](https://www.babylonjs.com/) and [ThreeJS](https://threejs.org/).
+<b>Note</b>: 3D drawing using the WebGL API is also possible in a &lt;canvas&gt;, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a &lt;canvas&gt;: [BabylonJS](https://www.babylonjs.com/) and [ThreeJS](https://threejs.org/).
 
 <h4>External resources</h4>
 
@@ -7142,23 +7142,23 @@ Performance is  good and animation is generally very smooth, since most Web bro
 
 -   An [HTML Canvas Deep Dive](https://joshondesign.com/p/books/canvasdeepdive/title.html)
 
--   MDN's Web docs: [<canvas>: The Graphics Canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas)
+-   MDN's Web docs: [&lt;canvas&gt;: The Graphics Canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas)
 
--   The <canvas> element is well supported by browsers:
+-   The &lt;canvas&gt; element is well supported by browsers:
 
     -   CanIUse: [browser support table](https://caniuse.com/canvas)
 
-    -   MDN's [compatibility table of <canvas>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#Browser_compatibility)
+    -   MDN's [compatibility table of &lt;canvas&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#Browser_compatibility)
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-2-3">3.2.3 Canvas and Accessibility</h3>
 <!------------------------------------------------------------------------------------------------>
 
-The dynamic nature of the <canvas> element has made it difficult to use in applications that need to be accessible to people with disabilities. To be accessible, it must meet the following principles:
+The dynamic nature of the &lt;canvas&gt; element has made it difficult to use in applications that need to be accessible to people with disabilities. To be accessible, it must meet the following principles:
 
--   Providing alternative content for what is drawn on the <canvas>,
+-   Providing alternative content for what is drawn on the &lt;canvas&gt;,
 
--   Exposing the location of shapes, paths, images drawn on the <canvas> to assistive technologies,
+-   Exposing the location of shapes, paths, images drawn on the &lt;canvas&gt; to assistive technologies,
 
 -   Visually indicating whether or not a shape in the canvas had keyboard focus.
 
@@ -7245,11 +7245,11 @@ For example, you can add a border to the canvas (or change the background color,
 <h4>The three lines of CSS will create a border around the canvas with id="myCanvas", of 1 pixel width, in black:</h4>
 
 ```
-1.  <style>
-2.      #myCanvas {
-3.          border:1px solid black;
-4.      }
-5.  </style>
+<style>
+    #myCanvas {
+        border:1px solid black;
+    }
+</style>
 ```
 
 <h4>2 - Select the <canvas> element for use from JavaScript</h4>
@@ -7259,13 +7259,13 @@ We can have more than one <canvas> in a single page, and canvases will be mani
 <h4>For example with:</h4>
 
 ```
-1.  var canvas = document.getElementById("myCanvas");
+var canvas = document.getElementById("myCanvas");
 ```
 
 <h4>... or with the querySelector() method introduced by HTML5, that use the CSS selector syntax for selecting elements:</h4>
 
 ```
-1.  var canvas = document.querySelector("#myCanvas");
+var canvas = document.querySelector("#myCanvas");
 ```
 
 <h4>3 - Get a "2D context" associated with the canvas</h4>
@@ -7277,19 +7277,19 @@ Once we have a pointer to the &lt;canvas&gt;, we can get a "context". This par
 <h4>So, let's first get the context (do this only once):</h4>
 
 ```
-1.  var ctx=canvas.getContext('2d');
+var ctx=canvas.getContext('2d');
 ```
 
 <h4>... then, set the color for drawing filled shapes:</h4>
 
 ```
-1.  ctx.fillStyle='red';
+ctx.fillStyle='red';
 ```
 
 <h4>... and draw a filled rectangle:</h4>
 
 ```
-1.  ctx.fillRect(0,0,80,100);
+ctx.fillRect(0,0,80,100);
 ```
 
 <h4>Complete example that draws a filled rectangle in red</h4>
@@ -7386,7 +7386,7 @@ Your browser does not support the canvas tag.
 
 <b>Only access elements when the DOM is ready:</b>
 
-Notice that we wrote an "init" function (<i>line 13</i>) that is called only when the page has been entirely loaded (we say "when the DOM is ready"). There are several ways to do this. In this example we used the <body onload="init();"> method, at <i>line 29</i>.
+Notice that we wrote an "init" function (<i>line 13</i>) that is called only when the page has been entirely loaded (we say "when the DOM is ready"). There are several ways to do this. In this example we used the &lt;body onload="init();"&gt; method, at <i>line 29</i>.
 
 It's good practice to have such a function, as we cannot access the elements of the page before the page has been loaded entirely and before the DOM is ready.
 
@@ -7495,13 +7495,21 @@ The two first parameters are the coordinates of the top left corner of the recta
 
 Produces this result:
 
-![filled rectangle with pink color](./images/image128.jpeg){width="2.59375in" height="2.5833333333333335in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 128. filled rectangle with pink color (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image128.jpeg?raw=true"
+   width="25%"
+   alt="Filled rectangle with pink color." />
+</p>
+<!-- ./images/image128.jpeg){width="2.59375in" height="2.5833333333333335in"} -->
 
--   <h4> strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape's outline should be rendered
+-   <h4> strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape's outline should be rendered</h4>
 
 The possible values are the same as those for the fillStyle property: a color, a pattern, or a gradient. This property will be taken into account when wireframe shapes are drawn.
 
--   <h4> strokeRect(x, y, width, height): like fillRect(...), but instead of drawing a filled rectangle the rectangle is drawn in wireframe mode
+-   <h4> strokeRect(x, y, width, height): like fillRect(...), but instead of drawing a filled rectangle the rectangle is drawn in wireframe mode</h4>
 
 ```
 1.  ctx.strokeStyle='blue';
@@ -7509,8 +7517,15 @@ The possible values are the same as those for the fillStyle property: a color,
 ```
 
 ... gives this result:
-
-![stroked rectangle - border is in blue](./images/image129.jpeg){width="2.5833333333333335in" height="2.6041666666666665in"}
+<!------------------------------------------------------------------------------------------------>
+<!--------------- 129. stroked rectangle - border is in blue (xxx) ------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image129.png?raw=true"
+   width="25%"
+   alt="Stroked rectangle - border is in blue." />
+</p>
+<!-- ./images/image129.jpeg){width="2.5833333333333335in" height="2.6041666666666665in"}  ->
 
 Only the outline of the rectangle will be drawn, and it will be drawn using the value of the strokeStyle property.
 
@@ -21297,3 +21312,4 @@ function getPhysicalAddress(latlong) {
 
 
 . . .The end.
+<!--- last updated 9-28-22 9:10pm --->
