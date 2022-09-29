@@ -1584,13 +1584,13 @@ specification</a>: "the default type for resources given by the <a href="https:
 The "type" attribute is not needed in HTML5, and even old browsers will use text/css as the default type for stylesheets today. So, either way, you can omit the "type" attribute altogether and use:</p>
 
 ```
-1.  <link href="file.css" rel="stylesheet"/>
+<link href="file.css" rel="stylesheet"/>
 ```
 
 <h4>instead of:</h4>
 
 ```
-1.  <link href="file.css" rel="stylesheet" type="text/css"/>
+<link href="file.css" rel="stylesheet" type="text/css"/>
 ```
 
 <p>We will not go into detail about the &lt;link&gt; element, but the fact that the type attribute is becoming optional shows the current direction taken by HTML5: towards greater simplicity.</p>
@@ -1598,13 +1598,13 @@ The "type" attribute is not needed in HTML5, and even old browsers will use text
 <h4>Please see how to include a JavaScript file in our page:</h4>
 
 ```
-1.  <script src="script.js"></script>
+<script src="script.js"></script>
 ```
 
 <p>Here again, the type attribute has been omitted. Just as a reminder, the old way to do the same thing is: </p>
 
 ```
-1.  <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="script.js"></script>
 ```
 
 <h4>More flexible syntax constraints</h4>
@@ -3382,7 +3382,7 @@ However, if the link points to some PHP code,  Java servlet code, or any kind o
 It may also propose a name for the file to be downloaded that may be different from the one that appears in the URL of the href attribute. This can be done by generating, in addition to the Content-type line in the response HTTP header, a Content-Disposition line that looks like this:
 
 ```
-1.  Content-Disposition: attachment; filename="MyImage.png";
+Content-Disposition: attachment; filename="MyImage.png";
 ```
 
 Here are some extracts from a Java Servlet that generate a zip file and forces the browser to propose downloading it using a specified name:
@@ -3506,7 +3506,7 @@ Both <a href="https://translate.google.com/">Google translate</a> and <a href
 <h4> Example illustrating how to specify parts of an HTML element that should not be translated:</h4>
 
 ```
-1.  <span <b>[translate="no"]</b> class="author">[Michel Ham]</span>
+<span <b>[translate="no"]</b> class="author">[Michel Ham]</span>
 ```
 
 In the above example, a <span> element defines an author (of a blog, for example) who is named Michel Ham. However, his family name is the same as pork and would be translated to "Michel Jambon" in French, or Michel Jamón in Spanish...
@@ -3762,9 +3762,9 @@ The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> i
 <p>First, you need to add an itemscope attribute to an HTML element. This will define the "global object" for which we will define properties. This element can be of different types that we will describe later, but for now let us keep looking at the same example we used in previous sections:</p>
 
 ```
-1.  <section itemscope itemtype="https://schema.org/Person">
-2.  ...
-3.  </section>
+<section itemscope itemtype="https://schema.org/Person">
+   ...
+</section>
 ```
 
 <p>
@@ -3843,7 +3843,7 @@ In this example, the container is a &lt;section&gt; that corresponds to a Pers
 <h4>The line:</h4>
 
 ```
-1.  <dd itemprop="name"Michel Buffa</dd>
+<dd itemprop="name"Michel Buffa</dd>
 ```
 
 <p>
@@ -4088,7 +4088,7 @@ Usually you have an "embed" button close to the videos that prompts you with s
 <h4>Here is the HTML code you need to copy and paste in order to embed a video:</h4>
 
 ```
-1.  <iframe width="560" height="315" src="https://www.youtube.com/embed/WMFXg-kni0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WMFXg-kni0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
 <p>The YouTube video embedded in this page by the above code: it's HTML5 but it's not a &lt;video&gt; element directly inserted in the HTML of this page, it's an &lt;iframe&gt;.</p>
@@ -4614,7 +4614,7 @@ header video {
 
 <h4>The trick here is that:</h4>
 <p>
-1.  the video is in the header, and the header has a plotted transparent background image ("dots.png") that is repeated in X and Y (see <i>lines 8</i> and <i>9</i>).
+the video is in the header, and the header has a plotted transparent background image ("dots.png") that is repeated in X and Y (see <i>lines 8</i> and <i>9</i>).
 
 2.  The video is positioned so that it's origin (top left corner) is away from the visible surface (<i>line 25</i>), while it is set to take 100% of the surface (<i>lines 20</i> and <i>21</i>).
 
@@ -4743,24 +4743,24 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link
 
 We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer!
 
-| <b>Methods</b> | <b>Properties</b>    | <b>Events</b>   |
-| -------------- | -------------------- | --------------- |
-| <b>play()</b>  | <b>currentSrc</b>    | <b>play</b>     |
-| <b>pause()</b> | <b>currentTime</b>   | <b>pause</b>    |
-|  load()    |   | startTime (readonly) | progress        |
-|  canPlayType() | videoWidth           | error           |
-|                | videoHeight          | timeupdate      |
-|                | duration (readonly)  | ended           |
-|                | ended (readonly)     | abort           |
-|                | error                | empty           |
-|                | paused (readonly)    | emptied         |
-|                | muted                | waiting         |
-|                | seeking              | loadedmetadata  |
-|                | volume               |                 |
-|                | <b>height</b>        |                 |
-|                | <b>width</b>         |                 |
-|                | <b>seekable (readonly)</b> |           |
-|                | <b>played (readonly)</b> |             |
+| <b>Methods</b> | <b>Properties</b>          | <b>Events</b>   |
+| -------------- | -------------------------- | --------------- |
+| <b>play()</b>  | <b>currentSrc</b>          | <b>play</b>     |
+| <b>pause()</b> | <b>currentTime</b>         | <b>pause</b>    |
+|  load()    |   | startTime (readonly)       | progress        |
+|  canPlayType() | videoWidth                 | error           |
+|                | videoHeight                | timeupdate      |
+|                | duration (readonly)        | ended           |
+|                | ended (readonly)           | abort           |
+|                | error                      | empty           |
+|                | paused (readonly)          | emptied         |
+|                | muted                      | waiting         |
+|                | seeking                    | loadedmetadata  |
+|                | volume                     |                 |
+|                | <b>height</b>              |                 |
+|                | <b>width</b>               |                 |
+|                | <b>seekable (readonly)</b> |                 |
+|                | <b>played (readonly)</b>   |                 |
 
 <p>
 In the next pages, let's see, through a set of examples, how to use these most important properties, methods, and events...
@@ -5158,7 +5158,7 @@ The &lt;track&gt; element cannot be used with a file:// URL. Please use htt
 <h4>Examples of the lines to add to an Apache Web server:</h4>
 
 ```
-1.  <Files mysubtitle.vtt>
+<Files mysubtitle.vtt>
 2.  ForceType text/vtt;charset=utf-8
 3.  </Files>
 ```
@@ -5354,28 +5354,28 @@ Each "element" in this file has a starting and ending time, plus a value (the te
 <h4>Example of a .vtt file with numeric IDs:</h4>
 
 ```
-1.  9
-2.  00:00:21.000 --> 00:00:22.000
-3.  to hear from you
-4.  
-5.  10
-6.  00:00:22.500 --> 00:00:25.000
-7.  We want to hear what inspires you as a developer
+9
+00:00:21.000 --> 00:00:22.000
+to hear from you
+
+10
+00:00:22.500 --> 00:00:25.000
+We want to hear what inspires you as a developer
 ```
 
 <h4>IDs may also be defined as strings, and values can use HTML as well:</h4>
 
 ```
-1.  Opening
-2.  00:00:00.000 --> 00:00:30.000
-3.  Welcome to our <i>nice film</i>
+Opening
+00:00:00.000 --> 00:00:30.000
+Welcome to our <i>nice film</i>
 ```
 
 The displayed text can span multiple lines, but blank lines are not allowed, as they would be interpreted as a separator:
 ```
-1.  00:01:57.083 --> 00:02:00.000
-2.  <p>You're a fool for traveling alone</p>
-3.  <p>so completely unprepared.</p>
+00:01:57.083 --> 00:02:00.000
+<p>You're a fool for traveling alone</p>
+<p>so completely unprepared.</p>
 ```
 
 <h4>External resource:</h4>
@@ -5590,7 +5590,7 @@ It is possible to locate the cues in the video viewport using absolute or relati
 It is possible to style using CSS classes as part of a cue value, using the <c> element. You can specify the CSS class that should be applied by adding "." followed by the name of your CSS class. Here is an example:
 
 ```
-1.  <c.myclass>This cue contains the class "myclass".
+<c.myclass>This cue contains the class "myclass".
 2.  Browsers that support ::cue CSS should make it red.</c>
 ```
 
@@ -5637,7 +5637,7 @@ Using the &lt;v&gt; tag, you will distinguish different voices that should be 
 <h4>Example source code:</h4>
 
 ```
-1.  00:00:56.000 --> 00:01:04.000
+00:00:56.000 --> 00:01:04.000
 2.  <v Tarzan>Me Tarzan...
 3.  <v Jane>That would make me Jane!
 ```
@@ -6965,37 +6965,26 @@ For that you will use <b>the dev. tools of your browser</b>. Press <i>F12</
 
 Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this example on JS Bin</a>:
 
-| 1  | <!DOCTYPE html>                                                                                                                                                      |
-|    |                                                                                                                                                                        |
-| 2  | <[<b>html lang="en"</b>](https://december.com/html/4/element/html.html)>                                                                                              |
-|    |                                                                                                                                                                        |
-| 3  |   <[<b>head</b>](https://december.com/html/4/element/head.html)>                                                                                                        |
-|    |                                                                                                                                                                        |
-| 4  |   <[<b>meta</b>](https://december.com/html/4/element/meta.html) charset=utf-8 />                                                                                        |
-|    |                                                                                                                                                                        |
-| 5  |   <[<b>title</b>](https://december.com/html/4/element/title.html)>Web Audio API</[<b>title<b>](https://december.com/html/4/element/title.html)>                         |
-|    |                                                                                                                                                                        |
-| 6  |   <[<b>script</b>](https://december.com/html/4/element/script.html)>                                                                                                    |
-|    |                                                                                                                                                                        |
-| 7  |    console.log("Some JavaScript code has been executed");                                                                                                            |
-|    |                                                                                                                                                                        |
-| 8  |   </[<b>script</b>](https://december.com/html/4/element/script.html)>                                                                                                   |
-|    |                                                                                                                                                                        |
-| 9  |   </[<b>head</b>](https://december.com/html/4/element/head.html)>                                                                                                       |
-|    |                                                                                                                                                                        |
-| 10 |   <[<b>body</b>](https://december.com/html/4/element/body.html)>                                                                                                        |
-|    |                                                                                                                                                                        |
-| 11 |     <[<b>h1</b>](https://december.com/html/4/element/h1.html)>JavaScript debugging using the dev tool console</[<b>h1<b>](https://december.com/html/4/element/h1.html)> |
-|    |                                                                                                                                                                        |
-| 12 |   </[<b>body</b>](https://december.com/html/4/element/body.html)>                                                                                                       |
-|    |                                                                                                                                                                        |
+| -- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1  | <!DOCTYPE html>                                                                                                                                                         |
+| 2  | <[<b>html lang="en"</b>](https://december.com/html/4/element/html.html)>                                                                                                |
+| 3  | <[<b>head</b>](https://december.com/html/4/element/head.html)>                                                                                                        |
+| 4  | <[<b>meta</b>](https://december.com/html/4/element/meta.html) charset=utf-8 />                                                                                        |
+| 5  | <[<b>title</b>](https://december.com/html/4/element/title.html)>Web Audio API</[<b>title<b>](https://december.com/html/4/element/title.html)>                         |
+| 6  | <[<b>script</b>](https://december.com/html/4/element/script.html)>                                                                                                    |
+| 7  |    console.log("Some JavaScript code has been executed");                                                                                                               |
+| 8  | </[<b>script</b>](https://december.com/html/4/element/script.html)>                                                                                                   |
+| 9  | </[<b>head</b>](https://december.com/html/4/element/head.html)>                                                                                                       |
+| 10 | <[<b>body</b>](https://december.com/html/4/element/body.html)>                                                                                                        |
+| 11 | <[<b>h1</b>](https://december.com/html/4/element/h1.html)>JavaScript debugging using the dev tool console</[<b>h1<b>](https://december.com/html/4/element/h1.html)> |
+| 12 | </[<b>body</b>](https://december.com/html/4/element/body.html)>                                                                                                       |
 | 13 | </[<b>html</b>](https://december.com/html/4/element/html.html)>                                                                                                         |
 
-The simplest way to add JavaScript code in an HTML page, is by using the <script>...</script> element.
+The simplest way to add JavaScript code in an HTML page, is by using the &lt;script&gt;...&lt;/script&gt; element.
 
 <b>The code in this example is executed sequentially when the page is loaded</b>: the JavaScript code is executed before the browser could see the rest of the page (as the &lt;script&gt;&lt;/script&gt; is located before the &lt;body&gt;).
 
-The H1 element, for example, does not exist in the Document Object Model, and has not yet been displayed when the JavaScript code is executed. If we move the <script></script> at the end of the document, then the H1 would have been built before the JavaScript code is executed.
+The H1 element, for example, does not exist in the Document Object Model, and has not yet been displayed when the JavaScript code is executed. If we move the &lt;script&gt;&lt;/script&gt; at the end of the document, then the H1 would have been built before the JavaScript code is executed.
 
 The only line of code we have is console.log("Some JavaScript code has been executed");
 
@@ -15735,10 +15724,10 @@ HTML5 took all this into account and thus provides:
 <ul>
   <li>A set of input fields that include a validation API and visual feedback, contextualized keyboards, etc. Of course the look and feel depends on the web browser's implementations, but the HTML5 forms specification introduced 13 new <input type=.../> fields:  email, tel, color, url, date, datetime, datetime-local, month, week, time, range, number and search.</li><br/>
   <li>Built-in validation system: JavaScript API for custom validation, CSS pseudo classes that are useful for changing an input field style depending on the validity of the input.</li><br/>
-  <li>Other goodies, such as the option to set an input field out of a <form>, new elements such as <datalist> for autocompletion, <output> for feedback, etc.</li><br/>
+  <li>Other goodies, such as the option to set an input field out of a &lt;form&gt;, new elements such as <datalist> for autocompletion, <output> for feedback, etc.</li><br/>
 </ul>
 
-Examples of contextual keyboards are shown above; they differ depending on the type of  <input> fields in the <form>. 
+Examples of contextual keyboards are shown above; they differ depending on the type of  <input> fields in the &lt;form&gt;. 
 In the examples, we can see: email, URL, and phone number. Look at the different keyboard layouts. The last picture is a date picker from an IOS phone.
 
 <h4>External resources:</h4>
@@ -15780,7 +15769,7 @@ Feel free to look at the source code in the <a href="https://jsbin.com/sivula/e
 
 &lt;and here&gt;
 
-Input elements, in particular the elements introduced by HTML5, can be used as widgets to control the behavior of a Web application. In this situation, they do not need to be inside a <form> element. We just bind event listeners to them and we use them as client-side widgets.
+Input elements, in particular the elements introduced by HTML5, can be used as widgets to control the behavior of a Web application. In this situation, they do not need to be inside a &lt;form&gt; element. We just bind event listeners to them and we use them as client-side widgets.
 
 <h4>Examples</h4>
 
@@ -17256,7 +17245,7 @@ Possible values of this attribute: on/off.
    alt="On/off funny picture." />
 </p>
 
-If applied to the <form> element, all input fields attached to the form (inside or linked to it using the form attribute), will have auto-completion set by default to the value of the autocomplete attribute of the form.
+If applied to the &lt;form&gt; element, all input fields attached to the form (inside or linked to it using the form attribute), will have auto-completion set by default to the value of the autocomplete attribute of the form.
 
 This default behavior can be overridden by setting it individually to any input field inside. In other words: it is possible to have autocomplete "on" for the form, and "off" for specific input fields, or vice-versa.
 
@@ -17894,7 +17883,7 @@ Family name: ![](./images/image269.wmf)
 <h3 id="ch5-5-13">5.5.13 formenctype</h3>
 <!------------------------------------------------------------------------------------------------>
 
-A word about the enctype attribute of the <form> element
+A word about the enctype attribute of the &lt;form&gt; element
 
 The enctype attribute existed before HTML5. It is often used together with forms that contain file input fields. For sending files to a remote server, we use **"*multipart*" forms**. This special encoding of forms needs to be specified using the enctype attribute, as shown in the example below:
 
@@ -18021,16 +18010,16 @@ And if you start again and click on the left submit button, the one without the 
 <h3 id="ch5-6-1">5.6.1 HTML5 Forms Elements</h3>
 <!------------------------------------------------------------------------------------------------>
 
-Let's look at the HTML5 elements related to forms (specifically: <datalist>, <output>, <meter>  and <progress> elements).
+Let's look at the HTML5 elements related to forms (specifically: <datalist>, <output>, &lt;meter&gt;  and <progress> elements).
 
 +-------------------------------------------+-----------------------------------+
 | HTML4                                     | HTML5                             |
 +===========================================+===================================+
-| -   <form>                              | -   <datalist>                  |
+| -   &lt;form&gt;                              | -   <datalist>                  |
 |                                           |                                   |
 | -   <fieldset>                          | -   <output>                    |
 |                                           |                                   |
-| -   <legend>                            | -   <meter>                     |
+| -   <legend>                            | -   &lt;meter&gt;                     |
 |                                           |                                   |
 | -   <textarea>                          | -   <progress>                  |
 |                                           |                                   |
@@ -18126,7 +18115,7 @@ This is why we used the valueAsNumber property also introduced by HTML5 for so
 <h3 id="ch5-6-3">5.6.3 &lt;meter&gt;</h3>
 <!------------------------------------------------------------------------------------------------>
 
-The <meter> element displays colored bars to represent numeric values.
+The &lt;meter&gt; element displays colored bars to represent numeric values.
 
 It can be useful to display a colored gauge to show disk usage, to highlight the relevance of a query result, or the fraction of a voting population that favours a particular candidate, etc. This element is often used with the <input type="range"> field as an instant feedback indicator.
 
@@ -18145,7 +18134,7 @@ The &lt;meter&gt; element should not be used to indicate progress. You should 
 <h4>Typical use</h4>
 
 ```
-1.  Storage space used: <meter value=75 min=0 low=20 high=80 max=100 optimum=50></meter>
+Storage space used: <meter value=75 min=0 low=20 high=80 max=100 optimum=50></meter>
 ```
 
 The &lt;meter&gt; element uses the easy-to-understand value, min, max, low, high and optimum attributes. The optimum attribute, along with min, low, high and max attributes will affect the color of the bar, and of course the constraint min < low < high < max should be respected.
@@ -18181,15 +18170,15 @@ Grades:  
 
 <h4>Explanations:</h4>
 
-![The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the <meter> element (line 9) and update the displayed html content of the <output> element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
+![The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the &lt;meter&gt; element (line 9) and update the displayed html content of the <output> element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
 
 The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)") at li*ne 4*.
 
-The effect JavaScript function will change the current value of the <meter> element (<i>line 9</i>) and update the displayed html content of the <output> element (<i>line 10</i>).
+The effect JavaScript function will change the current value of the &lt;meter&gt; element (<i>line 9</i>) and update the displayed html content of the <output> element (<i>line 10</i>).
 
 The color of the gauge changes depending on the attribute's values
 
-The optimum attribute indicates the optimal numeric value and gives an indication where along the range is considered preferable. Just think of the <meter> ranges as follows:
+The optimum attribute indicates the optimal numeric value and gives an indication where along the range is considered preferable. Just think of the &lt;meter&gt; ranges as follows:
 
 -   Range 1: between min and low
 
@@ -18201,7 +18190,7 @@ The optimum attribute indicates the optimal numeric value and gives an indicat
 
 So in the previous example, with the value of the optimum attribute set to 19, a number between min and low (not inclusive), the Range 1 (between min=0 and low=20) becomes the "good (optimum)" range (displayed in green), the Range 3 (between high=80 and max=100) becomes the "bad" (displayed in red color) range, and the Range 2, in the middle, will be displayed in yellow (not optimum, not bad).
 
-So, a <meter> element used for displaying blood pressure might be a good candidate for setting the optimum value to "Range 2", and a <meter> element used for displaying memory usage might be a good candidate for setting the optimum value to "Range 1", meaning that a low memory usage is "good".
+So, a &lt;meter&gt; element used for displaying blood pressure might be a good candidate for setting the optimum value to "Range 2", and a &lt;meter&gt; element used for displaying memory usage might be a good candidate for setting the optimum value to "Range 1", meaning that a low memory usage is "good".
 
 <h4>External resources</h4>
 
@@ -18213,10 +18202,10 @@ So, a <meter> element used for displaying blood pressure might be a good candi
 <h3 id="ch5-6-4">5.6.4 <progress></h3>
 <!------------------------------------------------------------------------------------------------>
 
-The <progress> element is similar to <meter> but it is used for progress bars (i.e., the percentage of a file being uploaded, etc.):
+The <progress> element is similar to &lt;meter&gt; but it is used for progress bars (i.e., the percentage of a file being uploaded, etc.):
 
 ```
-1.  <progress id=pr value=50 min=0 max=100>
+<progress id=pr value=50 min=0 max=100>
 ```
 
 <!------------------------------------------------------------------------------------------------>
@@ -18253,7 +18242,9 @@ This example uses some JavaScript to simulate a download progress by changing in
 
 The progress below is defined like this:
 
+```
 <progress id=pr value=100 max=1000>
+```
 
 Download progress: 
 
@@ -19514,8 +19505,8 @@ There are some simple approaches, such as creating your own minimal record forma
 <h4>Typical usage</h4>
 
 ```
-1.  locaStorage.key = JSON.stringify(object); // or...
-2.  localStorage.setItem(key, JSON.stringify(object));
+locaStorage.key = JSON.stringify(object); // or...
+localStorage.setItem(key, JSON.stringify(object));
 ```
 
 Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,console,output">online at JSBin</a>).  The example below saves a JavaScript object in JSON, then restores it and checks that the object properties are still there!
