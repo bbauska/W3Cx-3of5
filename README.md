@@ -1139,23 +1139,23 @@ Yes you can, in case you would like to propose some navigation links with each b
 
 ```
 <article>
-   <header>
-     <h1>Blog post title</h1>
-       <p>Author: Michel</p>
-   </header>
-   <nav>
-       <ul>
-           <li><a href="...">Next post</a></li>
-           <li><a href="...">Previous post</a></li>
-           <li><a href="...">Contact author</a></li>
-       </ul>
-   </nav>
-   <p>Content...</p>
-   <footer>
-     <p>Posted by Michel, the <time datetime="2012-02-02">February 2,
-     2012</time> </p>
-   </footer>
-<article>
+  <header>
+    <h1>Blog post title</h1>
+    <p>Author: Michel</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="...">Next post</a></li>
+      <li><a href="...">Previous post</a></li>
+      <li><a href="...">Contact author</a></li>
+    </ul>
+  </nav>
+  <p>Content...</p>
+  <footer>
+    <p>Posted by Michel, the <time datetime="2012-02-02">February 2,
+      2012</time> </p>
+  </footer>
+</article>
 ```
 
 <p>
@@ -1236,8 +1236,8 @@ The HTML5 specification says that "each sectioning element potentially has a hea
 
 ```
 <body>
-    <h1>Title of my document</h1>
-    ...
+  <h1>Title of my document</h1>
+  ...
 </body>
 ```
 
@@ -1245,11 +1245,11 @@ The HTML5 specification says that "each sectioning element potentially has a hea
 
 ```
 <body>
-   ...
-   <section>
-      <h1>Title of my section</h1>
-      ...
-   </section>
+  ...
+  <section>
+    <h1>Title of my section</h1>
+    ...
+  </section>
 </body>
 ```
 
@@ -1265,19 +1265,19 @@ Let's clarify this by looking at some example code:</p>
 
 ```
 <body>
-<section>
-     <h1>This H1 is the heading of an explicit section</h1>
-     ...
-        <h2>This H2 is a subheading, part of the same section
-            (lower rank)</h2>
-             ....
-     <h1>This H1 starts an implicit new section in the explicit
-         section (equal or higher rank)</h1>
-         ...
-        <h2>This is a H2 heading in the new section that has
-            just started</h2>
-            ...
-</section>
+  <section>
+    <h1>This H1 is the heading of an explicit section</h1>
+      ...
+    <h2>This H2 is a subheading, part of the same section
+      (lower rank)</h2>
+      ....
+    <h1>This H1 starts an implicit new section in the explicit
+      section (equal or higher rank)</h1>
+      ...
+    <h2>This is a H2 heading in the new section that has
+      just started</h2>
+      ...
+  </section>
 </body>
 ```
 
@@ -1311,8 +1311,8 @@ In the above example, please note two things:
 
 ```html5
 <section>
-    <h1>Blog post of April 2020</h1>
-    ...
+  <h1>Blog post of April 2020</h1>
+    ...
 </section>
 ```
 
@@ -1320,9 +1320,9 @@ In the above example, please note two things:
 
 ```html5
 <section>
-    <header>
-       <h1>Blog post of April 2020</h1>
-       <p>Posted by Michel Buffa...</p>
+  <header>
+    <h1>Blog post of April 2020</h1>
+    <p>Posted by Michel Buffa...</p>
   </header>
 ...
 </section>
@@ -1332,11 +1332,11 @@ In the above example, please note two things:
 
 ```
 <section>
-    <header>
-       <p class="article title">Blog post of April 2020</p>
-       <p>Posted by Michel Buffa...</p>
+  <header>
+    <p class="article title">Blog post of April 2020</p>
+    <p>Posted by Michel Buffa...</p>
 
-    </header>
+  </header>
    ...
 </section>
 ```
@@ -1364,14 +1364,14 @@ Notice that &lt;body&gt; is also a sectioning element. It's called a "sectioni
 
 ```
 <body>
-    <h1>Example Blog</h1>
-    <section>
-       <header>
-          <h2>Blog post of April 2020</h2>
-          <p>Posted by Michel Buffa...</p>
-       </header>
-      <p>Content of the blog post...</p>
-   </section>
+  <h1>Example Blog</h1>
+  <section>
+    <header>
+      <h2>Blog post of April 2020</h2>
+      <p>Posted by Michel Buffa...</p>
+    </header>
+    <p>Content of the blog post...</p>
+  </section>
 </body>
 ```
 
@@ -1394,10 +1394,10 @@ You can use heading elements &lt;h1&gt;...&lt;h6&gt; in a &lt;header&gt; but
 
 ```
 <section>
-   <header>
-     <h1>Some text in a h1 in a header of a section</h1>
-     <h2>This a h2 in the header...</h2>
-   </header>
+  <header>
+    <h1>Some text in a h1 in a header of a section</h1>
+    <h2>This a h2 in the header...</h2>
+  </header>
 </section>
 ```
 
@@ -1419,9 +1419,9 @@ If you do not want the subtitles to be included in the table of contents, just�
 
 ```
 <header>
-    <h1>HTML 5.1 Nightly</h1>
-    <p>A vocabulary and associated APIs for HTML and XHTML</p>
-    <p>Editor's Draft 9 May 2013</p>
+  <h1>HTML 5.1 Nightly</h1>
+  <p>A vocabulary and associated APIs for HTML and XHTML</p>
+  <p>Editor's Draft 9 May 2013</p>
 </header>
 ```
 
@@ -1435,16 +1435,16 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 
 ```
 <body>
-<h4>Apples</h4>
-<p>Apples are fruit.</p>
-<section>
-     <h2>Taste</h2>
-     <p>They taste lovely.</p>
-     <h6>Sweet</h6>
-     <p>Red apples are sweeter than green ones.</p>
-     <h1>Color</h1>
-     <p>Apples come in various colors.</p>
-</section>
+  <h4>Apples</h4>
+  <p>Apples are fruit.</p>
+  <section>
+    <h2>Taste</h2>
+    <p>They taste lovely.</p>
+    <h6>Sweet</h6>
+    <p>Red apples are sweeter than green ones.</p>
+    <h1>Color</h1>
+    <p>Apples come in various colors.</p>
+  </section>
 </body>
 ```
 
@@ -1452,22 +1452,22 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 
 ```
 <body>
-<h1>Apples</h1>
-<p>Apples are fruit.</p>
+  <h1>Apples</h1>
+  <p>Apples are fruit.</p>
 
-<section>
-      <h2>Taste</h2>
-      <p>They taste lovely.</p>
-      <section>
-          <h3>Sweet</h3>
-          <p>Red apples are sweeter than green ones.</p>
-      </section>
- </section>
- <section>
-      <h2>Color</h2>
-      <p>Apples come in various colors.</p>
- </section>
- </body>
+  <section>
+      <h2>Taste</h2>
+      <p>They taste lovely.</p>
+    <section>
+      <h3>Sweet</h3>
+      <p>Red apples are sweeter than green ones.</p>
+    </section>
+  </section>
+  <section>
+    <h2>Color</h2>
+    <p>Apples come in various colors.</p>
+  </section>
+</body>
 ```
 
 <p>Both of the examples above are semantically identical and produce the same outline:</p>
@@ -1512,13 +1512,13 @@ Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="utf-8">
-    <title>Page Title</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <meta charset="utf-8">
+  <title>Page Title</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
-... <!-- The rest is content -->
+  ... <!-- The rest is content -->
 </body>
 </html>
 ```
@@ -1533,13 +1533,13 @@ Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
-     <meta http-equiv[="content-type" ]content[="text/html"]charset="utf-8">
-     <title>title</title>
-     <link rel="stylesheet" type[="text/css"] href="style.css">
-     <script type[="text/javascript"] src="script.js"></script>
- </head>
- <body>
-...
+  <meta http-equiv[="content-type" ]content[="text/html"]charset="utf-8">
+  <title>title</title>
+  <link rel="stylesheet" type[="text/css"] href="style.css">
+  <script type[="text/javascript"] src="script.js"></script>
+</head>
+<body>
+  ...
 </body>
 </html>
 ```
@@ -1572,7 +1572,7 @@ to another and was nearly impossible to memorize.</p>
 <h4>With HTML5, there is only one way to indicate the doctype, and it's so simple there is no reason to forget it:</h4>
 
 ```
-1.  <!doctype html>
+<!doctype html>
 ```
 
 <h4>The "TYPE" attribute is optional</h4>
@@ -1706,15 +1706,15 @@ This is an example of one way to organize a blog. Here, we have designed the HTM
 
 ```
 <!DOCTYPE html>
-   <html lang="en">
-      <head>
-         <meta charset="utf-8"/>
-         <title>Simple HTML5 blog</title>
-      </head>
-      <body>
-         <header>
-            <h1>Simple <span>HTML5</span> blog</h1>
-         </header>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Simple HTML5 blog</title>
+</head>
+<body>
+  <header>
+    <h1>Simple <span>HTML5</span> blog</h1>
+  </header>
 ...
 ```
 
@@ -1722,12 +1722,12 @@ This is an example of one way to organize a blog. Here, we have designed the HTM
 
 ```
 header {
-    color: #007e99;
-    font-size: 2.5em;
-    padding: 20px 50px
+  color: #007e99;
+  font-size: 2.5em;
+  padding: 20px 50px
 }
 header span {
-    color: #722
+  color: #722
 }
 ```
 
@@ -1754,19 +1754,19 @@ header span {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="utf-8"/>
-   <title>Simple HTML5 blog</title>
+  <meta charset="utf-8"/>
+  <title>Simple HTML5 blog</title>
 </head>
 <body>
 <header>
-   <h1>Simple <span>HTML5</span> blog</h1>
+  <h1>Simple <span>HTML5</span> blog</h1>
 </header>
 <nav>
-    <ul>
-       <li><span>Blog</span></li>
-       <li><a href="">About</a></li>
-       <li><a href="">Contact</a></li>
-    </ul>
+  <ul>
+    <li><span>Blog</span></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+  </ul>
 </nav>
 ```
 
@@ -1775,30 +1775,30 @@ header span {
 <h4>And here is the CSS we used in this example for the &lt;nav&gt; element:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 nav {
-    font-size: 1.5em;
-    margin: 5px 0;
-    padding: 20px 50px
+  font-size: 1.5em;
+  margin: 5px 0;
+  padding: 20px 50px
 }
 nav li {
-    display: inline;
-    margin: 0 15px
+  display: inline;
+  margin: 0 15px
 }
 nav li:first-child {
-    margin-left: 0
+  margin-left: 0
 }
 * html nav ul {
-    margin-left: -15px
+  margin-left: -15px
 }
 nav span, nav a {
-    padding: 3px 15px 4px
+  padding: 3px 15px 4px
 }
 nav span {
-    background: #722;
-    color: #fff
+  background: #722;
+  color: #fff
 }
 ```
 
@@ -1822,41 +1822,41 @@ Now, we have one big &lt;section&gt; element that contains a set of &lt;artic
 
 ```
 <section>
-   <article>
+  <article>
+    ...
+  </article>
+  <article>
     ...
-   </article>
-   <article>
+  </article>
+  <article>
     ...
-   </article>
-   <article>
-    ...
-   </article>
+  </article>
 </section>
 ```
 
 <h4>And here is the CSS:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 section {
-   float: left;
-   padding: 35px 0;
-   position: relative;
-   width: 70%
+  float: left;
+  padding: 35px 0;
+  position: relative;
+  width: 70%
 }
 section article {
-   margin: 0 50px 40px;
-   padding: 25px 0 0;
-   position: relative
+  margin: 0 50px 40px;
+  padding: 25px 0 0;
+  position: relative
 }
 section header {
-   font-size: 1em;
-   padding: 0;
+  font-size: 1em;
+  padding: 0;
 }
 section h2 {
-   font-size: 2.3em;
+  font-size: 2.3em;
 }
 ```
 
@@ -21302,4 +21302,4 @@ function getPhysicalAddress(latlong) {
 
 
 . . .The end.
-<!--- last updated 9-28-22 9:10pm --->
+<!--- last updated 9-29-22 9:21am --->
