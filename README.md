@@ -15776,7 +15776,7 @@ GUI: Graphical User Interface
 
 <h4>Example #1: choose the color, line width and speed of an animation</h4>
 
--   <s href="https://jsbin.com/ciwefo/1/edit?html,css,output">Bouncing rectangle without GUI</a>
+-   <a href="https://jsbin.com/ciwefo/1/edit?html,css,output">Bouncing rectangle without GUI</a>
 
 -   <a href="https://jsbin.com/newojij/1/edit?html,css,output">Bouncing rectangle with GUI</a> (see screenshot at the top right of this page)
 
@@ -15794,7 +15794,7 @@ GUI: Graphical User Interface
 
 <h4>Live coding video 3: HTML5 forms - best practices</h4>
 
-<here>
+&lt;here&gt;
 
 The example used in the video is available <a href="https://jsbin.com/jagodi/edit?html,css,output">online at JSBin</a>. A screenshot of the resulted form is shown on the right.
 
