@@ -11805,7 +11805,7 @@ The result is shown in the <a href="https://codepen.io/w3devcampus/pen/WNpPZVO"
 If you modify the source code that defines the direction of the gradient as follows...
 
 ```
-1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
+grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
 ```
 
 ... then you will define a gradient that goes from the top left corner of the canvas to the bottom right of the canvas. Let's see what it does:
@@ -12136,7 +12136,7 @@ We notice that "before" the gradient starts, the first color of the gradient is 
 Nothing special; we will "see through the drawn shapes", and the parts of the gradient that are located in the canvas area will be shown. You can try this example that defines a gradient twice the size of the canvas: 
 
 ```
-1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, 600, 400);
+grdFrenchFlag = ctx.createLinearGradient(0, 0, 600, 400);
 ```
 
 And if we draw the same rectangle with the canvas size, here is the result:
@@ -20318,46 +20318,48 @@ This first example is useful for forms that allow the user to select one or more
  <summary>Click to expand!</summary>
 
 ```
-<label for="files">Choose multiple files:</label>
-<input type="file" id="files" multiple
-        onchange="readFilesAndDisplayPreview(this.files);"/><br/>
-<p>Preview of selected images:</p>
-<output id="list"></output>
-<script>
-  function readFilesAndDisplayPreview(files) {
-    // Loop through the FileList and render image files as thumbnails.
-    for (var i = 0, f; f = files[i]; i++) {
-    // Only process image files.
-    if (!f.type.match('image.*')) {
-         continue;
-    }
-    var reader = new FileReader();
- 
-    //capture the file information.
-    reader.onload = function(e) {
-        // Render thumbnail. e.target.result = the image content
-        // as a data URL
-       // create a span with CSS class="thumb", for nicer layout
-       var span = document.createElement('span');
-       // Add an img src=... in the span, with src= the dataURL of
-       // the image
-       span.innerHTML = "<img class='thumb' src='" +
-                         e.target.result + "' alt='a picture'/>";
-       // Insert the span in the output id=list
-       document.getElementById('list').insertBefore(span, null);
-   };
-  // Read in the image file as a data URL.
-  reader.readAsDataURL(f);
- }
-}
+1. <label for="files">Choose multiple files:</label>
+2. <input type="file" id="files" multiple
+3.         onchange="readFilesAndDisplayPreview(this.files);"/><br/>
+4. <p>Preview of selected images:</p>
+5. <output id="list"></output>
+6. <script>
+7.   function readFilesAndDisplayPreview(files) {
+8.     // Loop through the FileList and render image files as thumbnails.
+9.     for (var i = 0, f; f = files[i]; i++) {
+10.    // Only process image files.
+11.      if (!f.type.match('image.*')) {
+12.           continue;
+13.      }
+14.      var reader = new FileReader();
+15.   
+16.      //capture the file information.
+17.      reader.onload = function(e) {
+18.          // Render thumbnail. e.target.result = the image content
+19.          // as a data URL
+20.         // create a span with CSS class="thumb", for nicer layout
+21.         var span = document.createElement('span');
+22.         // Add an img src=... in the span, with src= the dataURL of
+23.         // the image
+24.         span.innerHTML = "<img class='thumb' src='" +
+25.                           e.target.result + "' alt='a picture'/>";
+26.         // Insert the span in the output id=list
+27.         document.getElementById('list').insertBefore(span, null);
+28.     };
+29.    // Read in the image file as a data URL.
+30.    reader.readAsDataURL(f);
+31.   }
+32.  }
 ```
 
 </details>
 
 <h4>Explanations:</h4>
 <ul>
-  <li><i>Line 35:</i> starts the reading of the file f. When f is read, the onload callback will be called.</li>
-  <li><i>Lines 25-31:</i> we build, using the DOM API, a <span class="thumb">...</span> and inside we add an <img src=the data url> element with its src attribute equal to the url of the image that has been read (the image content as dataURL is in e.target.result). Finally, at <i>line 31</i>, we insert the span in the document before the current children of the <output id="list"> element (declared at <i>line 5</i>).</li>
+  <li><i>Line 30:</i> starts the reading of the file f. When f is read, the onload callback will be called.</li>
+  <li><i>Lines 24-30:</i> we build, using the DOM API, a <span class="thumb">...</span> and inside we add an <img src=the data url> element with its src attribute equal to 
+  the url of the image that has been read (the image content as dataURL is in e.target.result). Finally, at <i>line 27</i>, we insert the span in the document before the 
+  current children of the <output id="list"> element (declared at <i>line 5</i>).</li>
 </ul>
 <h4>Example #2: read a single local image file and use it with drawImage in a canvas</h4>
 
@@ -20815,18 +20817,18 @@ display: inline-block;
  <summary>Click to expand!</summary>
 
 ```
-<html>
-<head>
-  <meta charset="utf-8">
-   <title>OpenStreetMap Example</title>
-   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
-   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-</head>
-<body>
-  <button class="btn" onclick="getLocation(event)">Click to show your location with OpenStreetMap</button>
-  <div id="map" class="map"></div>
-</body>
-</html>
+1. <html>
+2. <head>
+3.   <meta charset="utf-8">
+4.   <title>OpenStreetMap Example</title>
+5.   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+6.   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+7. </head>
+8. <body>
+9.    <button class="btn" onclick="getLocation(event)">Click to show your location with OpenStreetMap</button>
+10.   <div id="map" class="map"></div>
+11. </body>
+12. </html>
 ```
 
 </details>
@@ -20842,44 +20844,44 @@ display: inline-block;
  <summary>Click to expand!</summary>
 
 ```css
-function getLocation(e) {
-  e.preventDefault();
-  if (!navigator.geolocation) {
-    alert("Browser doesn't support geolocation");
-  } else {
-    navigator.geolocation.getCurrentPosition(success, error);
-  }
-}
-// Get current position successfully
-function success(position) {
-  var map, marker,
-  latitude = position.coords.latitude,
-  longitude = position.coords.longitude;
-  // Instance map using leaflet
-  map = L.map('map').setView([latitude, longitude], 13);
-  // Tile layer using key api at cloudmade.com
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    key: '760506895e284217a7442ce2efe97797',
-    styleId: 103288,
-    maxZoom: 16
-  }).addTo(map);
-  // Marker using leaflet
-  marker = L.marker([latitude, longitude]).addTo(map);
-  // Popup in leaflet
-  marker.bindPopup('<p>Your location</p>').openPopup();
-}
-// Get current position fail
-function error() {
-  alert('Get current position fail. Please access codepen to get geolocation.');
-}
+1.  function getLocation(e) {
+2.    e.preventDefault();
+3.    if (!navigator.geolocation) {
+4.      alert("Browser doesn't support geolocation");
+5.    } else {
+6.      navigator.geolocation.getCurrentPosition(success, error);
+7.    }
+8.  }
+9.  // Get current position successfully
+10.  function success(position) {
+11.    var map, marker,
+12.   latitude = position.coords.latitude,
+13.   longitude = position.coords.longitude;
+14.   // Instance map using leaflet
+15.   map = L.map('map').setView([latitude, longitude], 13);
+16.   // Tile layer using key api at cloudmade.com
+17.   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+18.     key: '760506895e284217a7442ce2efe97797',
+19.     styleId: 103288,
+20.     maxZoom: 16
+21.   }).addTo(map);
+22.   // Marker using leaflet
+23.   marker = L.marker([latitude, longitude]).addTo(map);
+24.   // Popup in leaflet
+25.   marker.bindPopup('<p>Your location</p>').openPopup();
+26. }
+27. // Get current position fail
+28. function error() {
+29.   alert('Get current position fail. Please access codepen to get geolocation.');
+30. }
 ```
 
 </details>
 
 <ul>
   <li><i>Line 6</i> uses the [Geolocation API](https://www.w3.org/TR/geolocation-API/) to get the current position, in case of success it calls the success function, passing the location as parameter,
-  <li><i>Lines 13 and 14></i> show how to get the longitude and latitude properties from the location,</li>
-  <li>The rest is a basic use of the Leaflet API. Notice at <i>line 17</i> that 'map' is the id of the &lt;div&gt; from the HTML part of the code.</li>
+  <li><i>Lines 12 and 13></i> show how to get the longitude and latitude properties from the location,</li>
+  <li>The rest is a basic use of the Leaflet API. Notice at <i>line 15</i> that 'map' is the id of the &lt;div&gt; from the HTML part of the code.</li>
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
