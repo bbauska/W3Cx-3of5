@@ -6964,7 +6964,6 @@ For that you will use <b>the dev. tools of your browser</b>. Press <i>F12</
 
 Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this example on JS Bin</a>:
 
-| -- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1  | <!DOCTYPE html>                                                                                                                                                         |
 | 2  | <[<b>html lang="en"</b>](https://december.com/html/4/element/html.html)>                                                                                                |
 | 3  | <[<b>head</b>](https://december.com/html/4/element/head.html)>                                                                                                        |
