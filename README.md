@@ -6848,8 +6848,8 @@ Click "start recording", then press the play button on the video element on the 
 <h4>Source code extract:</h4>
 
 ```
-1.  var options = {mimeType: 'video/webm; codecs=vp9'};
-2.  mediaRecorder = new MediaRecorder(stream, options);
+var options = {mimeType: 'video/webm; codecs=vp9'};
+mediaRecorder = new MediaRecorder(stream, options);
 ```
 
 <p>
@@ -6860,16 +6860,16 @@ Click "start recording", then press the play button on the video element on the 
 <h4>Source code extract:</h4>
 
 ```
-1.  var recordedChunks = []; // will hold the recorded stream
-2.  mediaRecorder.ondataavailable = handleDataAvailable;
-3.  mediaRecorder.start();
-4.   
-5.  function handleDataAvailable(event) {
-6.     if (event.data.size > 0) {
-7.        recordedChunks.push(event.data);
-8.     } else {
-9.     // ...
-10. }
+var recordedChunks = []; // will hold the recorded stream
+mediaRecorder.ondataavailable = handleDataAvailable;
+mediaRecorder.start();
+ 
+function handleDataAvailable(event) {
+  if (event.data.size > 0) {
+    recordedChunks.push(event.data);
+    } else {
+  // ...
+}
 ```
    
 <h4>Explanations:</h4>
@@ -6884,7 +6884,7 @@ Click "start recording", then press the play button on the video element on the 
 <p>When you're done, you need to call the stop() method of the mediaRecorder object. This will end the periodic execution of the handleDataAvailable method, and stop the data capture.</p>
 
 ```
-1.  mediaRecorder.stop();
+mediaRecorder.stop();
 ```
 
 <h4>4 - Create a BLOB (Binary Large Object) with the collected data, and use it to set the src attribute of an HTML5 video player</h4>
@@ -6894,11 +6894,11 @@ Click "start recording", then press the play button on the video element on the 
 Like that, the recorded stream can be played using a standard HTML5 &lt;video&gt; element.</p>
 
 ```
-1.  function play() {
-2.     var superBuffer = new Blob(recordedChunks);
-3.     videoElement.src =
-4.           window.URL.createObjectURL(superBuffer);
-5.  }
+function play() {
+  var superBuffer = new Blob(recordedChunks);
+  videoElement.src =
+  window.URL.createObjectURL(superBuffer);
+}
 ```
 
 <h4>5 - Download the captured stream</h4>
@@ -6994,7 +6994,7 @@ This means "display in the JavaScript console the message...". If we open the co
 <p align="center" width="100%">
 <img src="./images/image116.jpeg?raw=true"
    width="50%"
-   alt="JavaScript console view" />
+   alt="JavaScript console view." />
 </p>
 
 It is also possible to use the "real dev. tool console", and for this I recommend running the application in a single window, not in the JS Bin editor. Press the black arrow on the top right of the output window - this will render the page as a standalone Web page, then press *F12*. You should see:
@@ -7165,7 +7165,7 @@ We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.or
 1.  As a [PDF file](https://courses.edx.org/assets/courseware/v1/4b7360cab7f3bf439c26782ec47cf7a8/asset-v1:W3Cx+HTML5.1x+2T2020+type@asset+block/Infopgraphic-CanvasCheatSheet-Final2.pdf), this canvas cheatsheet:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 125. snapshot of an HTML Canvas cheatsheet from skilled.com (xxx) ------------------->
+<!-------------- 125. snapshot of an html canvas cheatsheet from skilled.com (147) --------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image125.png?raw=true"
@@ -7176,7 +7176,7 @@ We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.or
 2.  Another resource, as an [HTML file](https://simon.html5.org/dump/html5-canvas-cheat-sheet.html):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 126. snapshot of a Canvas cheatsheet API (xxx) ------------------->
+<!---------------------- 126. snapshot of a canvas cheatsheet api (148) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image126.png?raw=true"
@@ -7191,7 +7191,7 @@ We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.or
 The coordinate system used for drawing in canvases is similar to the one used by many drawing APIs like Java2D: the (0 , 0) is in the top left corner while the X axis is going to the right and the Y axis to the bottom, as  shown in the following picture:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 127. coordinate system (xxx) ------------------->
+<!-------------------------------- 127. coordinate system (148) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image127.png?raw=true"
@@ -7218,11 +7218,11 @@ Here are the different steps, in a little more detail, of the example demonstrat
 <h4>1 - Add the &lt;canvas&gt; element into an HTML page</h4>
 
 ```
-1.  <canvas id="myCanvas" width="300" height="225">
-2.  Fallback content that will be displayed in case the web browser
-3.  does not support the canvas tag or in case scripting
-4.  is disabled.
-5.  </canvas>
+<canvas id="myCanvas" width="300" height="225">
+  Fallback content that will be displayed in case the web browser
+  does not support the canvas tag or in case scripting
+  is disabled.
+</canvas>
 ```
 
 <p>Place code similar to the above somewhere in an HTML page. This example defines an area of 300 by 225 pixels on which content can be rendered with JavaScript.
@@ -7234,9 +7234,9 @@ For example, you can add a border to the canvas (or change the background color,
 
 ```
 <style>
-    #myCanvas {
-        border:1px solid black;
-    }
+  #myCanvas {
+    border:1px solid black;
+  }
 </style>
 ```
 
@@ -7291,35 +7291,35 @@ ctx.fillRect(0,0,80,100);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-#myCanvas {
-border: 1px solid black;
-}
-</style>
+  <style>
+    #myCanvas {
+    border: 1px solid black;
+    }
+  </style>
 <title>Canvas</title>
 <meta charset="utf-8"/>
-<script>
-var canvas, ctx;
-function init() {
-// This function is called after the page is loaded
-// 1 - Get the canvas
-canvas = document.getElementById('myCanvas');
-// 2 - Get the context
-ctx=canvas.getContext('2d');
-// 3 - we can draw
-drawSomething();
-}
-function drawSomething() {
-// draw a red rectangle
-ctx.fillStyle='#FF0000';
-ctx.fillRect(0,0,80,100);
-}
-</script>
+  <script>
+    var canvas, ctx;
+    function init() {
+    // This function is called after the page is loaded
+    // 1 - Get the canvas
+    canvas = document.getElementById('myCanvas');
+    // 2 - Get the context
+    ctx=canvas.getContext('2d');
+    // 3 - we can draw
+    drawSomething();
+    }
+    function drawSomething() {
+    // draw a red rectangle
+    ctx.fillStyle='#FF0000';
+    ctx.fillRect(0,0,80,100);
+    }
+  </script>
 </head>
 <body onload="init();">
-<canvas id="myCanvas" width="200" height="200">
-Your browser does not support the canvas tag.
-</canvas>
+  <canvas id="myCanvas" width="200" height="200">
+    Your browser does not support the canvas tag.
+  </canvas>
 </body>
 </html>
 ```
@@ -7391,7 +7391,7 @@ Good practice is to get the canvas, the context, the width and height of the can
 The example shows the use of the fillStyle property at <i>line 24</i> - useful for specifying the way shapes will be filled. In our case this line indicates the color of all the filled shapes we are going to draw:
 
 ```
-1.  ctx.fillStyle='#FF0000';
+ctx.fillStyle='#FF0000';
 ```
 
 The context property named fillStyle is used here. This property can be set with a color, a gradient, or a pattern. We will see examples of these later on in the course.
@@ -7401,7 +7401,7 @@ The example says that all filled shapes will use the color "#FF0000", which cor
 <b>Then we can draw:</b>
 
 ```
-1.  ctx.fillRect(0,0,80,100);
+ctx.fillRect(0,0,80,100);
 ```
 
 This line is a call to the method fillRect(top left X coordinate, top left Y coordinate, width, height), which draws a filled rectangle.
@@ -7477,8 +7477,8 @@ fillStyle and the other context properties can be considered to be "global vari
 The two first parameters are the coordinates of the top left corner of the rectangle. This method uses the current value of the fillStyle property to determine how to fill the rectangle.
 
 ```
-1.  ctx.fillStyle='pink';
-2.  ctx.fillRect(10,10,200,200);
+ctx.fillStyle='pink';
+ctx.fillRect(10,10,200,200);
 ```
 
 Produces this result:
@@ -7500,8 +7500,8 @@ The possible values are the same as those for the fillStyle property: a color,
 -   <h4> strokeRect(x, y, width, height): like fillRect(...), but instead of drawing a filled rectangle the rectangle is drawn in wireframe mode</h4>
 
 ```
-1.  ctx.strokeStyle='blue';
-2.  ctx.strokeRect(10,10,200,200);
+ctx.strokeStyle='blue';
+ctx.strokeRect(10,10,200,200);
 ```
 
 ... gives this result:
@@ -7522,9 +7522,9 @@ Only the outline of the rectangle will be drawn, and it will be drawn using the 
 Actually it draws it in a color called "transparent black" (!) that corresponds to the initial state of the rectangle as if no drawing had occurred.
 
 ```
-1.  ctx.fillStyle='pink';
-2.  ctx.fillRect(10,10,200,200);
-3.  ctx.clearRect(50, 50, 20, 20);
+ctx.fillStyle='pink';
+ctx.fillRect(10,10,200,200);
+ctx.clearRect(50, 50, 20, 20);
 ```
 
 <h4>The result is:</h4>
@@ -8182,8 +8182,8 @@ Your browser does not support the canvas tag.
 <h4>JavaScript code extract:</h4>
 
 ```
-1.  ctx.translate(100, 100);
-2.  drawMonster(0, 0);
+ctx.translate(100, 100);
+drawMonster(0, 0);
 ```
 
 <i>Line 1</i> changes the position of the coordinate system, <i>line 2</i> draws a monster in the new translated coordinate system. All subsequent calls to drawing methods will be affected and will work in this new system too.
@@ -8783,8 +8783,8 @@ The fillText(message, x, y) or strokeText(message, x, y) methods from the co
 There is a fourth optional parameter maxWidth that forces the text to fit into a given width, distorting it if necessary:
 
 ```
-1.  context.strokeText("Hello World!", x, y [, maxWidth]);
-2.  context.fillText("Hello World!", x, y [, maxWidth]);
+context.strokeText("Hello World!", x, y [, maxWidth]);
+context.fillText("Hello World!", x, y [, maxWidth]);
 ```
 
 <h4> Forcing a text not to exceed a certain width: the maxWidth property</h4>
@@ -11758,7 +11758,7 @@ There are 3 steps:
 <h4>Syntax:</h4>
 
 ```
-1.  ctx.createLinearGradient(x0,y0,x1,y1);
+ctx.createLinearGradient(x0,y0,x1,y1);
 ```
 
 ... where the (x0, y0) and (x1, y1) parameters define "the direction of the gradient" (as a vector with a starting and an ending point). This direction is an invisible line along which the colors that compose the gradient will be interpolated.
@@ -11766,7 +11766,7 @@ There are 3 steps:
 <h4>Let's see an example:</h4>
 
 ```
-1.  grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 0);
+grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 0);
 ```
 
 This line defines the direction of the gradient: a virtual, invisible line that goes from the top left corner of the canvas (0, 0) to the top right corner of the canvas (300, 0). The interpolated colors will propagate along this line. 
@@ -11780,9 +11780,9 @@ We will add a set of "colors" and "stops" to this gradient. The stops go from 0 
 Here is an example that corresponds to an interpolated version of the French flag, going from blue to white, then to red, with proportional intervals. We define three colors, blue at position 0, white at position 0.5 and red at position 1:
 
 ```
-1.  grdFrenchFlag.addColorStop(0, "blue");
-2.  grdFrenchFlag.addColorStop(0.5, "white");
-3.  grdFrenchFlag.addColorStop(1, "red");
+grdFrenchFlag.addColorStop(0, "blue");
+grdFrenchFlag.addColorStop(0.5, "white");
+grdFrenchFlag.addColorStop(1, "red");
 ```
 
 <h4>Step 3: draw some shapes</h4>
@@ -11792,8 +11792,8 @@ First, let's set the fillStyle or strokeStyle of the context with this gradi
 In our example, the gradient corresponds to an invisible rectangle that fills the canvas. If we draw a rectangle of the canvas size, it should be filled with the entire gradient:
 
 ```
-1.  ctx.fillStyle = grdFrenchFlag;
-2.  ctx.fillRect(0, 0, 300, 200);
+ctx.fillStyle = grdFrenchFlag;
+ctx.fillRect(0, 0, 300, 200);
 ```
 
 The result is shown in the <a href="https://codepen.io/w3devcampus/pen/WNpPZVO">above pen</a>: a big rectangle that fills the whole canvas, with colors going from blue (left) to white (middle) to red (right).
@@ -15776,7 +15776,7 @@ GUI: Graphical User Interface
 
 <h4>Example #1: choose the color, line width and speed of an animation</h4>
 
--   <s href="https://jsbin.com/ciwefo/1/edit?html,css,output">Bouncing rectangle without GUI</a>
+-   <a href="https://jsbin.com/ciwefo/1/edit?html,css,output">Bouncing rectangle without GUI</a>
 
 -   <a href="https://jsbin.com/newojij/1/edit?html,css,output">Bouncing rectangle with GUI</a> (see screenshot at the top right of this page)
 
@@ -15794,7 +15794,7 @@ GUI: Graphical User Interface
 
 <h4>Live coding video 3: HTML5 forms - best practices</h4>
 
-<here>
+&lt;here&gt;
 
 The example used in the video is available <a href="https://jsbin.com/jagodi/edit?html,css,output">online at JSBin</a>. A screenshot of the resulted form is shown on the right.
 
@@ -17174,7 +17174,7 @@ In this section, we cover the rest of the form attributes and provide further ex
 In another part of the course, about form validation and visual feedback using CSS, we examine some of the most useful attributes in even greater detail.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-2">>5.5.2 form</h3>
+<h3 id="ch5-5-2">5.5.2 form</h3>
 <!------------------------------------------------------------------------------------------------>
 
 This attribute is useful for putting input fields outside the form itself. The form attribute of an external input field must share the same value as the id of the form the field belongs to. This is useful when using <fieldset> elements for making the page/form layout easier.
@@ -20244,17 +20244,12 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12
 
 In your browser, you will see a small red circle rendered by this source code:</p>
 
-<details>
- <summary>Click to expand!</summary>
-
 ```
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
 AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 
 9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red square" width=50 height=50/>
 ```
-
-</details>
 
 <h4>And here is the result:</h4>
 <!------------------------------------------------------------------------------------------------>
