@@ -842,6 +842,9 @@ nav span {
 
 <h4>HTML code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <section>
    <article>
@@ -856,7 +859,12 @@ nav span {
 </section>
 ```
 
+</details>
+
 <h4>And here is the CSS:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 section {
@@ -878,6 +886,8 @@ section h2 {
    font-size: 2.3em;
 }
 ```
+
+</details>
 
 <p>Note that the H2, article, article header, etc. will be styled using these rules.</p>
 
@@ -985,6 +995,9 @@ Here is the CSS for the &lt;figcaption&gt; element we have used in the example
 &nbsp;
 <br/>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <section>
 .... all <article>... </article> here....
@@ -1001,9 +1014,14 @@ Here is the CSS for the &lt;figcaption&gt; element we have used in the example
 ...
 ```
 
+</details>
+
 <p>We are not going to show the complete CSS here as it uses some tricks to display the list as a "real tag cloud" that uses JavaScript for handling events, etc. Those who are curious can look at <a href="https://jsbin.com/bucokav/edit?html,output" target="_blank">the code of the online example</a>.</p>
 
 <h4>Here is the CSS for the &lt;aside&gt; element:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 aside {
@@ -1022,6 +1040,8 @@ aside .tag-cloud {
 }
 ...
 ```
+
+</details>
 
 <p>
 We used a float:right CSS rule to put the tag cloud on the right... In the following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
@@ -1051,6 +1071,9 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 
 <p>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below) after the tag cloud definition, to display a page footer:</p>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <html>
 ...
@@ -1068,6 +1091,8 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 </body>
 </html>
 ```
+
+</details>
 
 <h4>With this CSS rule:</h4>
 
@@ -1112,6 +1137,9 @@ footer {
 <p>
 Example of a blog post defined as a long &lt;article&gt;, that is in turn cut into smaller &lt;section&gt; elements:</p>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <article id="id1">
    <section id="id1part1">
@@ -1126,6 +1154,8 @@ Example of a blog post defined as a long &lt;article&gt;, that is in turn cut i
 </article>
 ```
 
+</details>
+
 <p>
 The blog example from the previous part of the course, on the other hand, uses a single &lt;section&gt; that contains several &lt;article&gt; elements.
 
@@ -1136,6 +1166,9 @@ A &lt;section&gt; may be cut into different &lt;article&gt; elements, too!
 Can you put a &lt;nav&gt; in an &lt;article&gt;?
 
 Yes you can, in case you would like to propose some navigation links with each blog post, for example:</p>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <article>
@@ -1157,6 +1190,8 @@ Yes you can, in case you would like to propose some navigation links with each b
   </footer>
 </article>
 ```
+
+</details>
 
 <p>
 In that case, the &lt;nav&gt; element proposes navigation links to the next or previous blog post, as well as a link to contact the author of the blog post.
@@ -1263,6 +1298,9 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 
 Let's clarify this by looking at some example code:</p>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <body>
   <section>
@@ -1280,6 +1318,8 @@ Let's clarify this by looking at some example code:</p>
   </section>
 </body>
 ```
+
+</details>
 
 <h4>The corresponding outline is:</h4>
 
@@ -1362,6 +1402,9 @@ Notice that &lt;body&gt; is also a sectioning element. It's called a "sectioni
 
 <h4>Final good version:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <body>
   <h1>Example Blog</h1>
@@ -1374,6 +1417,8 @@ Notice that &lt;body&gt; is also a sectioning element. It's called a "sectioni
   </section>
 </body>
 ```
+
+</details>
 
 <p>
 The sectioning root (&lt;body&gt;) and the sectioning elements (&lt;section&gt; here...), each have a heading.</p>
@@ -1433,6 +1478,9 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 
 <h4>Ok version (no explicit sections everywhere):</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <body>
   <h4>Apples</h4>
@@ -1448,7 +1496,12 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 </body>
 ```
 
+</details>
+
 <h4>Better version (best practice):</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 <body>
@@ -1469,6 +1522,8 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
   </section>
 </body>
 ```
+
+</details>
 
 <p>Both of the examples above are semantically identical and produce the same outline:</p>
 
@@ -1508,6 +1563,9 @@ Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-
 
 <h4>A minimal HTML5 document</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -1523,11 +1581,16 @@ Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-
 </html>
 ```
 
+</details>
+
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
 <h4>Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/" >this source</a>).</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```html5
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
@@ -1543,6 +1606,8 @@ Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-
 </body>
 </html>
 ```
+
+</details>
 
 <h4>Simpler character set definition</h4>
 <p>
@@ -1969,6 +2034,9 @@ After the long &lt;section&gt; element that contains all the blog articles dis
 &nbsp;
 <br/>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <section>
 .... all <article>... </article> here....
@@ -1985,9 +2053,14 @@ After the long &lt;section&gt; element that contains all the blog articles dis
 ...
 ```
 
+</details>
+
 <p>We are not going to show the complete CSS here as it uses some tricks to display the list as a "real tag cloud" that uses JavaScript for handling events, etc. Those who are curious can look at <a href="https://jsbin.com/bucokav/edit?html,output" target="_blank">the code of the online example</a>.</p>
 
 <h4>Here is the CSS for the &lt;aside&gt; element:</h4>
+
+<details>
+ <summary>Click to expand!</summary>
 
 ```
 aside {
@@ -2006,6 +2079,8 @@ aside .tag-cloud {
 }
 ...
 ```
+
+</details>
 
 <p>We used a float:right CSS rule to put the tag cloud on the right... In a following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
 </p>
@@ -2103,6 +2178,9 @@ It may not be clear whether a &lt;section&gt; may contain one or several &lt;a
 
 <h4>Example of a blog post defined as a long &lt;article&gt;, that is in turn cut into smaller &lt;section&gt; elements:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <article id="id1">
    <section id="id1part1">
@@ -2116,6 +2194,8 @@ It may not be clear whether a &lt;section&gt; may contain one or several &lt;a
    </section>
 </article>
 ```
+
+</details>
 
 <p>
 The blog example from the previous part of the course, on the other hand, uses a single &lt;section&gt; that contains several &lt;article&gt; elements.
@@ -2255,6 +2335,9 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 
 <h4>Let's clarify this by looking at some example code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```html5
 <body>
 <section>
@@ -2272,6 +2355,8 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 </section>
 </body>
 ```
+
+</details>
 
 <h4>The corresponding outline is:</h4>
 
@@ -2419,6 +2504,9 @@ If you do not want the subtitles to be included in the table of contents, just�
 
 <h4>Ok version (no explicit sections everywhere):</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```html5
 1.  <body>
 2.  <h4>Apples</h4>
@@ -2434,8 +2522,13 @@ If you do not want the subtitles to be included in the table of contents, just�
 12. </body>
 ```
 
+</details>
+
 <h4>Better version (best practice):</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+ 
 ```
 1.  <body>
 2.  <h1>Apples</h1>
@@ -2454,6 +2547,8 @@ If you do not want the subtitles to be included in the table of contents, just�
 15. </section>
 16. </body>
 ```
+
+</details>
 
 <h5>Both of the examples above are semantically identical and produce the same outline:</h5>
 
@@ -2668,6 +2763,9 @@ Let's go back to our blog example and see what can be improved:</p>
 
 <p>Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an &lt;article&gt; that is in a &lt;section&gt; (this corresponds to the third example given in the "heading and sectioning elements" part of the course):</p>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <section>
    <header>
@@ -2682,6 +2780,8 @@ Let's go back to our blog example and see what can be improved:</p>
    </article>
 </section>
 ```
+
+</details>
 
 <p>With this technique, parts of the document can be moved more easily, or integrated inside an RSS stream, without the need to renumber the headings.
 
@@ -2974,6 +3074,9 @@ Here is an example of what can be done using these elements: see the <a href="h
 
 <h4>Here is the code of this example:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+ 
 ```
 <!DOCTYPE html>
 <html lang="en"> ...
@@ -2988,6 +3091,8 @@ Here is an example of what can be done using these elements: see the <a href="h
    </body>
 </html>
 ```
+
+</details>
 
 The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/details&gt; element. By clicking on the icon at the left of the summary, the content of the &lt;details&gt; value is displayed/hidden.
 
@@ -3031,6 +3136,9 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 
 <h5>Source code of this example, see the summary/details inside another one:</h5>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 <details>
    <summary>
@@ -3048,6 +3156,8 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
    </details>
 </details>
 ```
+
+</details>
 
 <h4>CSS pseudo classes for styling summary icons</h4>
 
@@ -3386,6 +3496,9 @@ Content-Disposition: attachment; filename="MyImage.png";
 
 Here are some extracts from a Java Servlet that generate a zip file and forces the browser to propose downloading it using a specified name:
 
+<details>
+  <summary>Click to expand!</summary>
+
 ```
 protected void doGet(HttpServletRequest request, HttpServletResponse response)
 throws ServletException, IOException {
@@ -3409,6 +3522,8 @@ throws ServletException, IOException {
     }
 }
 ```
+
+</details>
 
 The above example will cause the browser that invoked this server-side code to start the download of a file named "DATA.ZIP".
 
@@ -3589,7 +3704,7 @@ This information is not visible to humans: it is pure *semantic information*. 
 <p>We can also add another embedded data item in the middle, such as the person's address:</p>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 1.  ...
@@ -3807,7 +3922,7 @@ However, if you do not find a vocabulary corresponding to your needs, keep in mi
 <p>Now that you have defined a container element, you may add properties to the HTML inside:</p>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 1.  <section itemscope itemtype="https://schema.org/Person">
@@ -4141,7 +4256,7 @@ Press play to stream the neigh of a horse: (does not work in git)</p>
 <h4>As you can see, the code is very similar to the basic &lt;video&gt; element usage.</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -4249,7 +4364,7 @@ Please move the mouse pointer over this player's elements: (does not work in git
 <h4>HTML</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 1.  <figure id="figaudio1">
@@ -4290,7 +4405,7 @@ Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
 <h4>HTML source code:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 1.  <figure id="figaudio1">
@@ -4318,7 +4433,7 @@ Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
 <h4>CSS source code:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 1.  #figaudio1 {
@@ -4548,7 +4663,7 @@ This time the video is zoomed in so that it's much bigger than the browser's win
 <h4>HTML code:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -4580,7 +4695,7 @@ This time the video is zoomed in so that it's much bigger than the browser's win
 <h4>CSS code:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 html, body{
@@ -4800,7 +4915,7 @@ This example gives the first steps towards writing a custom video player. It sho
 <h4>Source code extract:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 <video id="vid" controls>
@@ -4853,7 +4968,7 @@ This example listens to the ended event, and calls a callback function when th
 <h4>Source code extract:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 <video src="video.ogv" id="myVideo">
@@ -4890,7 +5005,7 @@ Check the online example below: use the progress cursor to go near the end of th
 <h4>Source code:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -4997,7 +5112,7 @@ Below is a piece of code for handling errors during video playback:
 </p>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 ...
@@ -5057,7 +5172,7 @@ As explained by the <a href="https://developer.apple.com/">Apple Developer Web 
 <h4>Source code extract:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -5209,7 +5324,7 @@ Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#
 </p>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 <video src="brave.webm">
@@ -5371,6 +5486,7 @@ Welcome to our <i>nice film</i>
 ```
 
 The displayed text can span multiple lines, but blank lines are not allowed, as they would be interpreted as a separator:
+
 ```
 00:01:57.083 --> 00:02:00.000
 <p>You're a fool for traveling alone</p>
@@ -5669,7 +5785,7 @@ Often, the &lt;video&gt; elements rendered in standard browsers ignore chapters,
 <h4>Example of a WebVTT file that defines chapters:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 1.  WEBVTT FILE
@@ -5942,7 +6058,7 @@ The main idea is to set the srcObject attribute of a <video> element to th
 The stream is passed as a parameter to the then() method returned by the promise, as in this typical example (you can run it and see the result by clicking on the "CodePen" logo at the top right):
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 <video id="myVideo" autoplay>Fallback msg here.</video>
@@ -6003,7 +6119,7 @@ Let's see some more examples of what we can do with the getUserMedia API: start/
 <br/>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -6050,7 +6166,7 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 <h4>Code source:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -6121,7 +6237,7 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 Try this example that shows how to use the getUserMedia API. Note the CSS effects (click on the video to cycle from one effect to another):
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 //--------------------
@@ -6176,7 +6292,7 @@ el.classList.add(effect);
 <h4>CSS</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 
 ```
@@ -6230,7 +6346,7 @@ filter: invert(1)
 <h4>HTML</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -6274,7 +6390,7 @@ The trick is to copy and paste the current image from the video stream into a 
 <h4>JS</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 
 ```
@@ -6329,7 +6445,7 @@ border:1px solid black;
 ```
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 
 <h4>HTML</h4>
@@ -6406,7 +6522,7 @@ For more information, this <a href="https://developer.mozilla.org/en-US/docs/We
 <b>JS</b>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 var vgaButton, qvgaButton, hdButton, dimensions, video, stream;
@@ -6492,7 +6608,7 @@ border:1px solid;
 <h4>HTML</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -6534,7 +6650,7 @@ https://www.simpl.info/getusermedia/constraints/
 <h4>Code source extract related to the "constraint" object which specifies the desired resolutions:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 1.  var vgaConstraints = {
@@ -6566,7 +6682,7 @@ Use this <a href="https://webrtchacks.github.io/WebRTC-Camera-Resolution/">Web 
 Here are some other constraints you can set. In particular, look at the ones for selecting the front or rear camera (smartphones):
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 1.  // more on video resolution
@@ -6613,7 +6729,7 @@ Here are some other constraints you can set. In particular, look at the ones for
 <h4>Source code extract:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 1.  function gotDevices(deviceInfos) {
@@ -6662,7 +6778,7 @@ Let's record, replay and download the video stream captured using a Webcam. You 
 <h4>JS</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 var mediaRecorder;
@@ -6752,7 +6868,7 @@ console.log('MediaRecorder started', mediaRecorder);
 <h4>CSS</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 /*
@@ -6810,7 +6926,7 @@ margin: 0 10px 10px 0;
 <h4>HTML</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -6932,12 +7048,12 @@ function play() {
 
 <h3 id="ch3-2-1">3.2.1 About JavaScript and HTML5</h3>
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 115. javascript logo (xxx) ------------------->
+<!--------------------------------- 115. javascript logo (140) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image115.png?raw=true"
    width="10%"
-   alt="JavaScript logo" />
+   alt="JavaScript logo." />
 </p>
 
 HTML5 is composed of new elements, but it also comes with many JavaScript APIs for controlling video and sound, drawing and animating things in the new <canvas> element, for offline applications, persistence, geolocation, orientation, etc.
@@ -6964,19 +7080,19 @@ For that you will use <b>the dev. tools of your browser</b>. Press <i>F12</
 
 Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this example on JS Bin</a>:
 
-| 1  | <!DOCTYPE html>                                                                                                                                                         |
-| 2  | <[<b>html lang="en"</b>](https://december.com/html/4/element/html.html)>                                                                                                |
+| 1  | <!DOCTYPE html>                                                                                                                                                       |
+| 2  | <[<b>html lang="en"</b>](https://december.com/html/4/element/html.html)>                                                                                              |
 | 3  | <[<b>head</b>](https://december.com/html/4/element/head.html)>                                                                                                        |
 | 4  | <[<b>meta</b>](https://december.com/html/4/element/meta.html) charset=utf-8 />                                                                                        |
 | 5  | <[<b>title</b>](https://december.com/html/4/element/title.html)>Web Audio API</[<b>title<b>](https://december.com/html/4/element/title.html)>                         |
 | 6  | <[<b>script</b>](https://december.com/html/4/element/script.html)>                                                                                                    |
-| 7  |    console.log("Some JavaScript code has been executed");                                                                                                               |
+| 7  |    console.log("Some JavaScript code has been executed");                                                                                                             |
 | 8  | </[<b>script</b>](https://december.com/html/4/element/script.html)>                                                                                                   |
 | 9  | </[<b>head</b>](https://december.com/html/4/element/head.html)>                                                                                                       |
 | 10 | <[<b>body</b>](https://december.com/html/4/element/body.html)>                                                                                                        |
-| 11 | <[<b>h1</b>](https://december.com/html/4/element/h1.html)>JavaScript debugging using the dev tool console</[<b>h1<b>](https://december.com/html/4/element/h1.html)> |
+| 11 | <[<b>h1</b>](https://december.com/html/4/element/h1.html)>JavaScript debugging using the dev tool console</[<b>h1<b>](https://december.com/html/4/element/h1.html)>   |
 | 12 | </[<b>body</b>](https://december.com/html/4/element/body.html)>                                                                                                       |
-| 13 | </[<b>html</b>](https://december.com/html/4/element/html.html)>                                                                                                         |
+| 13 | </[<b>html</b>](https://december.com/html/4/element/html.html)>                                                                                                       |
 
 The simplest way to add JavaScript code in an HTML page, is by using the &lt;script&gt;...&lt;/script&gt; element.
 
@@ -6988,29 +7104,29 @@ The only line of code we have is console.log("Some JavaScript code has been exe
 
 This means "display in the JavaScript console the message...". If we open the console tab provided by jsbin.com in a dedicated tab (that redirects all console.log() messages), and re-execute the page (just type a space at the end of a line, this will re-render the page and display the message in the console), we see the message in the console tab, as well as in the dev. tools console. This is illustrated by the image below:
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 116. javascript console view (xxx) ------------------->
+<!----------------------- 116. javascript debugging console view (142) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image116.jpeg?raw=true"
    width="50%"
-   alt="JavaScript console view." />
+   alt="JavaScript debugging console view." />
 </p>
 
 It is also possible to use the "real dev. tool console", and for this I recommend running the application in a single window, not in the JS Bin editor. Press the black arrow on the top right of the output window - this will render the page as a standalone Web page, then press *F12*. You should see:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 117. view of the javascript console (xxx) ------------------->
+<!------------------ 117. view of the javascript debug devtool console (143) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image117.jpeg?raw=true"
    width="40%"
-   alt="View of the JavaScript console" />
+   alt="View of the JavaScript Debug Devtool console" />
 </p>
 
 Ok, now, let's make an error: change console.log() into conso<b>lll</b>e.log(). Let's see what happens:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 118. view of the javascript console (xxx) ------------------->
+<!------------------------- 118. view of the javascript console (143) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image118.jpeg?raw=true"
@@ -7021,7 +7137,7 @@ Ok, now, let's make an error: change console.log() into conso<b>lll</b>e.log(
 And if we run it standalone and use the dev. tool console:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 119. view of the javascript console (xxx) ------------------->
+<!------------------------- 119. view of the javascript console (143) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image119.jpeg?raw=true"
@@ -7032,7 +7148,7 @@ And if we run it standalone and use the dev. tool console:
 And if we click on the line number in the right, the dev. tool shows the source code centered on the line that caused the error:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 120. view of the javascript console (xxx) ------------------->
+<!-------------------------- 120. view of the javascript console (144) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image120.jpeg?raw=true"
@@ -7051,11 +7167,11 @@ Some of you may not be used to "asynchronous programming", "callbacks" etc. We r
 <!------------------------------------------------------------------------------------------------>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 120. view of the javascript console (xxx) ------------------->
+<!------------------------------ 121. canvas element logo (144) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image120.jpeg?raw=true"
-   width="50%"
+<img src="./images/image121.jpeg?raw=true"
+   width="25%"
    alt="View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc." />
 </p>
 
@@ -20562,7 +20678,7 @@ In the last example, we used the navigator.geolocation. getCurrentPosition(show
 A slightly different version of the previous example <a href="https://jsbin.com/bafusik/edit?html,output">shows how to properly check against the different possible errors</a>. Try it, then turn your WiFi off or unplug your Ethernet cable (or turn off GPS and 3G/4G on a mobile phone). You should see an error message Error during geolocation: Location could not be obtained though the available means":
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 326. geolocation error (xxx) ---------------------------------->
+<!-------------------------------- 326. geolocation error (xxx) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image326.jpeg?raw=true"
@@ -20653,7 +20769,7 @@ As a test, you may just try to change getCurrentPosition to watchPosition in
 Several options are available when using HTML5 geolocation. We can pass a third parameter to the getCurrentPosition and watchPosition methods, that will hold one or several of the following options:
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 327.  (4xx) ---------------------------------->
+<!--------------------------- 327. example/test openstreetmap (4xx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image327.png?raw=true"
@@ -21298,4 +21414,4 @@ function getPhysicalAddress(latlong) {
 
 
 . . .The end.
-<!--- last updated 9-29-22 9:21am --->
+<!--- last updated 10-03-22 11:19pm --->
