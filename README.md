@@ -13700,7 +13700,7 @@ In the example, try different values for the miterLimit property. You'll see t
 1:17 video explaining animation.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-2-1">4.2.1 Animation Techniques<h3>
+<h3 id="ch4-2-1">4.2.1 Animation Techniques</h3>
 <!------------------------------------------------------------------------------------------------>
 
 In order to perform an animation, we need to:
@@ -14106,7 +14106,7 @@ The setInterval function may become hard to debug, particularly if you run se
 
 setInterval will execute the function passed as first parameter every n milliseconds regardless of when the function was last called or how long the function takes to execute. If the function takes longer than the interval, then setInterval might queue too many function executions back to back when the interval is too short, leading to unpredictable results. 
 
-<b>BEST PRACTICE<b>: AVOID using setInterval for animating in a canvas,
+<b>BEST PRACTICE</b>: AVOID using setInterval for animating in a canvas,
 except for trivial cases (change a color every second).
 
 <!------------------------------------------------------------------------------------------------>
