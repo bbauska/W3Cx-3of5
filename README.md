@@ -6387,7 +6387,7 @@ The trick is to copy and paste the current image from the video stream into a 
 <br/>
 
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -6519,7 +6519,7 @@ For more information, this <a href="https://developer.mozilla.org/en-US/docs/We
    alt="" />
 </p>
 
-<b>JS</b>
+<b>JavaScript</b>
 
 <details>
   <summary>Click to expand!</summary>
@@ -6614,24 +6614,24 @@ border:1px solid;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>getUserMedia constraints for Webcam resolutions</title>
+  <meta charset="utf-8"/>
+  <title>getUserMedia constraints for Webcam resolutions</title>
 </head>
 <body onload="init();">
-<h1>Set the camera resolution</h1>
-Example adapted from:
-<a href="https://www.simpl.info/getusermedia/constraints/">
-https://www.simpl.info/getusermedia/constraints/
-</a>
-<br>
-<p>Click a button to call <code>getUserMedia()</code> with appropriate resolution. </p>
-<div id="buttons">
-<button id="qvga">QVGA</button>
-<button id="vga">VGA</button>
-<button id="hd">HD</button>
-</div>
-<p id="dimensions"></p>
-<video autoplay></video>
+  <h1>Set the camera resolution</h1>
+    Example adapted from:
+    <a href="https://www.simpl.info/getusermedia/constraints/">
+      https://www.simpl.info/getusermedia/constraints/
+    </a>
+    <br>
+    <p>Click a button to call <code>getUserMedia()</code> with appropriate resolution. </p>
+    <div id="buttons">
+      <button id="qvga">QVGA</button>
+      <button id="vga">VGA</button>
+      <button id="hd">HD</button>
+      </div>
+    <p id="dimensions"></p>
+    <video autoplay></video>
 </body>
 </html>
 ```
@@ -6644,7 +6644,7 @@ https://www.simpl.info/getusermedia/constraints/
 <p align="center" width="100%">
 <img src="./images/image112.png?raw=true"
    width="45%"
-   alt="" />
+   alt="." />
 </p>
 
 <h4>Code source extract related to the "constraint" object which specifies the desired resolutions:</h4>
@@ -6775,7 +6775,7 @@ For example, the MediaRecorder API is used to record the video stream from a Web
 
 Let's record, replay and download the video stream captured using a Webcam. You can test it below by clicking on "CodePen" at the top right:
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -7068,7 +7068,7 @@ You will learn a lot by looking at examples, tweaking them, cloning and modifyin
 
 -   The <a href="https://www.edx.org/course/javascript-introduction">JavaScript Introduction</a> course on W3Cx!
 
--   Mozilla Developper Network <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">has a JS guide</a>
+-   Mozilla Developper Network <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">has a JavaScript guide</a>
 
 <h4>What do you need? How to debug? How to catch errors?</h4>
 
@@ -7122,7 +7122,7 @@ It is also possible to use the "real dev. tool console", and for this I recommen
 <p align="center" width="100%">
 <img src="./images/image117.jpeg?raw=true"
    width="40%"
-   alt="View of the JavaScript Debug Devtool console" />
+   alt="View of the JavaScript Debug Devtool console." />
 </p>
 
 Ok, now, let's make an error: change console.log() into conso<b>lll</b>e.log(). Let's see what happens:
@@ -7133,7 +7133,7 @@ Ok, now, let's make an error: change console.log() into conso<b>lll</b>e.log(
 <p align="center" width="100%">
 <img src="./images/image118.jpeg?raw=true"
    width="50%"
-   alt="View of the JavaScript console" />
+   alt="View of the JavaScript console." />
 </p>
 
 And if we run it standalone and use the dev. tool console:
@@ -7144,7 +7144,7 @@ And if we run it standalone and use the dev. tool console:
 <p align="center" width="100%">
 <img src="./images/image119.jpeg?raw=true"
    width="50%"
-   alt="View of the JavaScript console" />
+   alt="View of the JavaScript console." />
 </p>
 
 And if we click on the line number in the right, the dev. tool shows the source code centered on the line that caused the error:
@@ -7208,7 +7208,7 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 <p align="center" width="100%">
 <img src="./images/image122.jpeg?raw=true"
    width="40%"
-   alt="Foot chinko one of the best html5 2D game of 2015" />
+   alt="Foot chinko one of the best html5 2D game of 2015." />
 </p>
 
 <h4>Example #2</h4>
@@ -7951,8 +7951,8 @@ If you look at the code of the modified function, you will see that each call t
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image131.jpeg?raw=true"
-   alt="Rectangles are drawn 100 pixels towards the bottom."
-   width="30%" >
+   width="30%"
+   alt="Rectangles are drawn 100 pixels towards the bottom." />
 &nbsp;
 <br/>
 <ul>
@@ -8098,9 +8098,9 @@ Let's take a piece of code that draws something corresponding to the original co
 
 </details>
 
-This code is the just the same as in the previous example except that we removed all Xs and Yx in the code. We also added at the end (<i>lines 25-26</i>) two lines of code that draw the coordinate system. The drawArrow(startX, startY, endX, endY, width, color) function is a utility function that we will present later. You can see it in the JS source code of the pen below:
+This code is the just the same as in the previous example except that we removed all Xs and Yx in the code. We also added at the end (<i>lines 25-26</i>) two lines of code that draw the coordinate system. The drawArrow(startX, startY, endX, endY, width, color) function is a utility function that we will present later. You can see it in the JavaScript source code of the pen below:
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -8198,7 +8198,7 @@ Note that the X and Y parameters are useless for now...
 
 Now, instead of simply calling drawMonster(0, 0), we will call first ctx.translate(100, 100), and look at the result below:
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -8317,7 +8317,7 @@ drawMonster(0, 0);
 <p>
 Here is the previous example, but this time we translated the coordinate system, then rotated it with an angle equal to PI/4 , then we scaled it so that units are half as big:
 </p>
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -8433,7 +8433,7 @@ drawMonster(0, 0);
 
 <p>If we draw two shapes at two different positions, they will be relative to this new coordinate system.</p>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -8571,7 +8571,7 @@ Multiple contexts can be backed up consecutively and restored. Contexts saved w
 
 <h4>Example of a function that changes the context and restores it after execution</h4>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -8689,12 +8689,12 @@ We slightly modified the function that draws the monster:
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 132. laptop showing unicorn validator (06) --------------------------->
+<!------------------------- 132. laptop showing unicorn validator (xx) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image132.jpeg?raw=true"
-   alt="Example of context save-restore: a monster drawn by a function that saves and restored the context, then a rectangle is drawn, with context as it was previously"
-   width="40%" />
+   width="40%"
+   alt="Example of context save-restore: a monster drawn by a function that saves and restored the context, then a rectangle is drawn, with context as it was previously." />
 </p>
 
 <p>Source code extract of this function: notice at <i>lines 3</i> and <i>26</i> how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines 7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
@@ -9258,8 +9258,8 @@ But let's start with a basic example!
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image133.png?raw=true"
-   alt="Drawing Images with Subimages"
-   width="55%">
+   width="55%"
+   alt="Drawing Images with Subimages" />
 &nbsp;
 <br/>
 
@@ -9659,7 +9659,7 @@ As a reminder: an immediate mode means "executing a call to a drawing method mea
 
 Here is an example that draws 1000 random rectangles in a canvas, using immediate mode rectangle drawing calls:
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -9739,8 +9739,8 @@ On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawin
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image134.jpeg?raw=true"
-   alt="Image of the devtool console that shows random time values.  Avg time is 4s."
-   width="65%">
+   width="65%"
+   alt="Image of the devtool console that shows random time values.  Avg time is 4s." />
 &nbsp;
 <br/>
 
@@ -9752,7 +9752,7 @@ Path drawing mode allows parallelism: if you need to draw 10,000 rectangles, it'
 
 Same example as before, this time using the buffered mode for drawing rectangles:
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -9821,8 +9821,8 @@ And here is what the timer gives: a slightly faster execution time. Changing 100
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image135.jpeg?raw=true"
-   alt="Image of the devtool console that shows random time values.  Avg time is 3.1ms."
-   width="65%">
+   width="65%"
+   alt="Image of the devtool console that shows random time values.  Avg time is 3.1ms." />
 &nbsp;
 <br/>
 
@@ -9900,8 +9900,8 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image136.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -9984,8 +9984,8 @@ In this example, the entire grid is drawn during the execution of the last line 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image137.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -10054,8 +10054,8 @@ Try this:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image138.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -10099,8 +10099,8 @@ Let's look at the drawing from the last example of the previous section:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image139.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -10153,8 +10153,8 @@ What we will try first is to call stroke() after the first half of the path, t
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image140.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -10240,15 +10240,15 @@ What happened is:
 <b>Important</b>: If you do not want to draw parts of the same path several times, you need to draw two different paths,
 using the ctx.beginPath() method, as shown in the next example.
 
-<h4> Now, the right way!</h4>
+<h4>Now, the right way!</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!--- 141.  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image141.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -10378,8 +10378,8 @@ Notice the save/restore of the context at the beginning/end of the function. Thi
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image142.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -10507,8 +10507,8 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image143.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -10766,7 +10766,7 @@ ctx.stroke();
 6.  ctx.stroke();
 ```
 
-And if we change the last parameter of the arc function call (*line 3*) to true (we omitted it, so it took a value of false by default) :
+And if we change the last parameter of the arc function call (<i>line 3</i>) to true (we omitted it, so it took a value of false by default) :
 
 ```
 1.  ctx.beginPath();
@@ -10783,8 +10783,8 @@ Then, the result is the "complementary" of the previous arc:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image148.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -10795,8 +10795,8 @@ Then, the result is the "complementary" of the previous arc:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image149.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -10846,8 +10846,8 @@ Notice that we called ctx.arc() only once! And drew it twice, with different s
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image150.jpeg?raw=true"
-   alt="image150.jpeg - half circle."
-   width="25%">
+   width="25%"
+   alt="image150.jpeg - half circle." />
 &nbsp;
 <br/>
 
@@ -10858,8 +10858,8 @@ Notice that we called ctx.arc() only once! And drew it twice, with different s
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image151.jpeg?raw=true"
-   alt="image151.png - smiling head"
-   width="30%">
+   width="30%"
+   alt="image151.png - smiling head." />
 &nbsp;
 <br/>
 
@@ -10876,8 +10876,8 @@ In fact, the arcTo(...) method draws an arc of a circle depending on some tan
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image152.jpeg?raw=true"
-   alt="There are three (3) diagrams, all drawn on canvas dynamically. The arcTo really uses carTo() with reduced alpha, and the rest of the diagram is calculated in JavaScript and drawn with lineTo and arc."
-   width="65%">
+   width="65%"
+   alt="There are three (3) diagrams, all drawn on canvas dynamically. The arcTo really uses carTo() with reduced alpha, and the rest of the diagram is calculated in JavaScript and drawn with lineTo and arc." />
 &nbsp;
 <br/>
 
@@ -10909,8 +10909,8 @@ This method can be confusing. It was defined mainly for drawing rounded shapes l
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image153.png?raw=true"
-   alt="image153.png"
-   width="65%">
+   width="65%"
+   alt="image153.png." />
 &nbsp;
 <br/>
 
@@ -10964,8 +10964,8 @@ context.stroke();
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image154.png?raw=true"
-   alt="image154.png"
-   width="65%">
+   width="65%"
+   alt="image154.png" />
 &nbsp;
 <br/>
 
@@ -11157,12 +11157,12 @@ which might be easier than trying to figure out where the arc will end like this
 This could be particularly helpful if you are dealing with something other than a rectangle, like this rounded triangle:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 156. (xxx) -------------------------------->
+<!---------------------------- 156. rounded triangle example (213) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image156.png?raw=true"
-   alt="image156.png"
-   width="65%">
+   width="65%"
+   alt="Example: rounded triangle." />
 &nbsp;
 <br/>
 
@@ -11221,12 +11221,12 @@ roundedTriangle(ctx,200,15,300,150,15,100,20,true,true);
 <h4>Introduction</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 157. html5 canvas quadratic curve diagram (xxx) -------------------------------->
+<!---------------------- 157. html5 canvas quadratic curve diagram (214) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image157.png?raw=true"
-   alt="image157.png - HTML5 Canvas Quadratic Curve Diagram"
-   width="55%">
+   width="55%"
+   alt="HTML5 Canvas Quadratic Curve Diagram. Control, context & ending points." />
 &nbsp;
 <br/>
 
@@ -11255,12 +11255,12 @@ The control point controls the curvature - if we move the control point farther 
 <h4>Example #1: quadratic curve</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 158. quadratic curve (xxx) -------------------------------->
+<!--------------------------------- 158. quadratic curve (215) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image158.png?raw=true"
-   alt="image158.png - example: quadratic curve."
-   width="65%">
+   width="65%"
+   alt="Quadratic curve example." />
 &nbsp;
 <br/>
 
@@ -11296,8 +11296,8 @@ Try this:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image159.png?raw=true"
-   alt="image159.png - Example: Lines connected with a quadratic curve."
-   width="65%">
+   width="65%"
+   alt="image159.png - Example: Lines connected with a quadratic curve." />
 &nbsp;
 <br/>
 
@@ -11360,16 +11360,16 @@ context.stroke();
 We propose a useful function for drawing curved arrows. See this example:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------- 160. example: useful function for drawing curved arrows (xxx) ------------>
+<!---------------- 160. example: useful function for drawing curved arrows (217) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image160.png?raw=true"
-   alt="Example: useful function for drawing curved arrows."
-   width="65%">
+   width="65%"
+   alt="Example: useful function for drawing curved arrows." />
 &nbsp;
 <br/>
 
-<h4>JS</h4>
+<h4>JavaSscript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -11512,12 +11512,12 @@ Notice that once again, as we modify the context properties (color, lineWidth) i
 Bézier curves are interesting. They are mostly used for drawing "S" shapes or asymmetric curves.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------- 161.  (xxx) ------------>
+<!------------------------------- 161. bezier curve in 's' (219) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image161.jpeg?raw=true"
-   alt="Bezier curve in S"
-   width="35%">
+   width="35%"
+   alt="Bezier curve in S." />
 &nbsp;
 <br/>
 
@@ -11528,12 +11528,12 @@ Bézier curves are defined by a context point, like quadratic curves, two contr
 The first part of the curve is tangential to the imaginary line defined by the context point and the first control point. The second part of the curve is tangential to the imaginary line defined by the second control point and the ending point.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 162. bezier curve control points (xxx) ----------------------------->
+<!--------------------------- 162. bezier curve control points (219) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image162.png?raw=true"
-   alt="Bezier curve control points"
-   width="65%" />
+   width="65%"
+   alt="Bezier curve control points." />
 &nbsp;
 <br/>
 
@@ -11568,12 +11568,12 @@ The best way to understand how they work is to check out one of these interactiv
 Try this:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 163. bezier curve: example 1 (xxx) ------------------------------>
+<!------------------------------ 163. bezier curve: example 1 (220) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image163.png?raw=true"
-   alt="Bezier curve: Example 1."
-   width="65%">
+   width="65%"
+   alt="Bezier curve: Example 1." />
 &nbsp;
 <br/>
 
@@ -11586,27 +11586,27 @@ Try this:
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Bézier curve - Example #1</title>
+  <meta charset="utf-8">
+  <title>Bézier curve - Example #1</title>
 </head>
 <body>
-<canvas id="myCanvas1" height = 400 width="800">Your browser does not support the canvas tag.</canvas>
-<script type="text/javascript">
-var canvas=document.querySelector('#myCanvas1');
-var context=canvas.getContext('2d');
-context.beginPath();
-context.moveTo(100, 20);
-// TRY uncommenting these lines !
-//context.lineTo(200, 80);
-//context.quadraticCurveTo(230, 200, 250, 20);
-context.bezierCurveTo(290, -40, 200, 200, 400, 100);
-//context.lineTo(500, 90);
-// TRY TO UNCOMMENT THIS LINE
-//context.closePath();
-context.lineWidth = 5;
-context.strokeStyle = "#0000ff";
-context.stroke();
-</script>
+  <canvas id="myCanvas1" height = 400 width="800">Your browser does not support the canvas tag.</canvas>
+  <script type="text/javascript">
+    var canvas=document.querySelector('#myCanvas1');
+    var context=canvas.getContext('2d');
+    context.beginPath();
+    context.moveTo(100, 20);
+    // TRY uncommenting these lines !
+    //context.lineTo(200, 80);
+    //context.quadraticCurveTo(230, 200, 250, 20);
+    context.bezierCurveTo(290, -40, 200, 200, 400, 100);
+    //context.lineTo(500, 90);
+    // TRY TO UNCOMMENT THIS LINE
+    //context.closePath();
+    context.lineWidth = 5;
+    context.strokeStyle = "#0000ff";
+    context.stroke();
+  </script>
 </body>
 </html>
 ```
@@ -11631,12 +11631,12 @@ context.stroke();
 <h4>Try this:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------- 164. path with bezier curve, quadratic curve & line in same, closed path  (xxx) ------->
+<!-------- 164. path with bezier curve, quadratic curve & line in same, closed path  (221) ------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image164.png?raw=true"
-   alt="Path with Bezier and Quadratic curve and line in same, closed path."
-   width="85%">
+   width="85%"
+   alt="Path with Bezier and Quadratic curve and line in same, closed path." />
 &nbsp;
 <br/>
 
@@ -11649,26 +11649,26 @@ context.stroke();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Path with Bézier curve, quadratic curve and line in the same, closed path - Example #2</title>
+  <meta charset="utf-8">
+  <title>Path with Bézier curve, quadratic curve and line in the same, closed path - Example #2</title>
 </head>
 <body>
-<canvas id="myCanvas1 height = 400 width="800">Your browser does not support the canvas tag.</canvas>
-<script type="text/javascript">
-var canvas=document.querySelector('#myCanvas1');
-var context=canvas.getContext('2d');
-context.beginPath();
-context.moveTo(100, 20);
-context.lineTo(200, 160);
-context.quadraticCurveTo(230, 200, 250, 120);
-context.bezierCurveTo(290, -40, 300, 200, 400, 150);
-context.lineTo(500, 90);
-// TRY TO COMMENT THIS LINE
-context.closePath();
-context.lineWidth = 5;
-context.strokeStyle = "#0000ff";
-context.stroke();
-</script>
+  <canvas id="myCanvas1 height = 400 width="800">Your browser does not support the canvas tag.</canvas>
+  <script type="text/javascript">
+    var canvas=document.querySelector('#myCanvas1');
+    var context=canvas.getContext('2d');
+    context.beginPath();
+    context.moveTo(100, 20);
+    context.lineTo(200, 160);
+    context.quadraticCurveTo(230, 200, 250, 120);
+    context.bezierCurveTo(290, -40, 300, 200, 400, 150);
+    context.lineTo(500, 90);
+    // TRY TO COMMENT THIS LINE
+    context.closePath();
+    context.lineWidth = 5;
+    context.strokeStyle = "#0000ff";
+    context.stroke();
+  </script>
 </body>
 ```
 
@@ -11698,15 +11698,15 @@ context.stroke();
 
 </details>
 
-In this example we use the closePath() method to draw a line between the last path point and the first path point (*line 11*), so that the drawing looks like a pair of goggles.
+In this example we use the closePath() method to draw a line between the last path point and the first path point (<i>line 11</i>), so that the drawing looks like a pair of goggles.
 
 Note how the different parts are linked together and make a "path":
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 165. path composition explained (xxx) ------------------------------>
+<!---------------------------- 165. bezier curve maker tool (222) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image165.png?raw=true"
-   alt="Path composition explained."
+   alt="Interactive code that draws Bezier curves."
    width="85%">
 &nbsp;
 <br/>
@@ -11728,10 +11728,10 @@ Let's look at color in a little more detail, and see how we can use gradients o
 You can use <a href="https://www.w3.org/TR/css3-color/">the same syntax for colors that is supported by CSS3</a>. The next lines show possible values/syntaxes.
 
 ```
-1.  ctx.strokeStyle = 'red';
-2.  ctx.fillStyle = "#00ff00";
-3.  ctx.strokeStyle = "rgb(0, 0, 255)";
-4.  ctx.fillStyle = "rgba(0, 0, 255, 0.5)";
+ctx.strokeStyle = 'red';
+ctx.fillStyle = "#00ff00";
+ctx.strokeStyle = "rgb(0, 0, 255)";
+ctx.fillStyle = "rgba(0, 0, 255, 0.5)";
 ```
 
 Note that:
@@ -11742,12 +11742,12 @@ Note that:
 
 Here is an example that shows how to draw different filled rectangles in blue, with different levels of transparency:
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 166. colors and transparency example (xxx) --------------------------->
+<!------------------------- 166. colors and transparency example (223) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image166.png?raw=true"
    width="85%"
-   alt="Colors and transparenc example." />
+   alt="Colors and transparency example." />
 </p>
 
 <h4>HTML</h4>
@@ -11759,39 +11759,39 @@ Here is an example that shows how to draw different filled rectangles in blue, w
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Colors and transparency</title>
-<style>
-#myCanvas {
-border: 1px solid black;
-}
-</style>
+  <meta charset="utf-8">
+  <title>Colors and transparency</title>
+  <style>
+    #myCanvas {
+      border: 1px solid black;
+    }
+  </style>
 <script>
-var canvas, ctx;
-function init() {
-// This function is called after the page is loaded
-// 1 - Get the canvas
-canvas = document.getElementById('myCanvas');
-// 2 - Get the context
-ctx=canvas.getContext('2d');
-// 3 - we can draw
-drawSomething();
-}
-function drawSomething() {
-// set the global context values
-ctx.fillStyle='rgba(0, 0, 255, 0.2)';
-// Draw the two filled red rectangles
-ctx.fillRect(150, 20, 200, 100);
-ctx.fillRect(100, 50, 200, 100);
-ctx.fillStyle = "blue";
-ctx.fillRect(50, 100, 200, 100);
-}
+  var canvas, ctx;
+  function init() {
+    // This function is called after the page is loaded
+    // 1 - Get the canvas
+    canvas = document.getElementById('myCanvas');
+    // 2 - Get the context
+    ctx=canvas.getContext('2d');
+    // 3 - we can draw
+    drawSomething();
+  }
+  function drawSomething() {
+    // set the global context values
+    ctx.fillStyle='rgba(0, 0, 255, 0.2)';
+    // Draw the two filled red rectangles
+    ctx.fillRect(150, 20, 200, 100);
+    ctx.fillRect(100, 50, 200, 100);
+    ctx.fillStyle = "blue";
+    ctx.fillRect(50, 100, 200, 100);
+    }
 </script>
 </head>
 <body onload="init();">
-<canvas id="myCanvas" width="400" height="220">
-Your browser does not support the canvas tag.
-</canvas>
+  <canvas id="myCanvas" width="400" height="220">
+    Your browser does not support the canvas tag.
+  </canvas>
 </body>
 </html>
 ```
@@ -11805,37 +11805,42 @@ Your browser does not support the canvas tag.
 It is possible to define the stroke or the fill style as a "gradient", a set of interpolated colors, like in this example below:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 167. example (xxx) -------------------------------->
+<!--------------------- 167. define stroke fill style as 'gradient' (224) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image167.png?raw=true"
    width="85%"
-   alt="Example" />
+   alt="Define stroke fill style as 'gradient'." />
 </p>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
+
+<details>
+  <summary>JavaScript code extract!</summary>
 
 ```
 var canvas, ctx, grdFrenchFlag;
 function init() {
-// Good practice 1: set global vars canvas, ctx, gradients, etc here
-canvas = document.querySelector('#myCanvas1');
-ctx = canvas.getContext('2d');
-// The gradient we create is also a global variable, we
-// will be able to reuse it for drawing different shapes
-// in different functions
-grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 0);
-// Try adding colors with first parameter between 0 and 1
-grdFrenchFlag.addColorStop(0, "blue");
-grdFrenchFlag.addColorStop(0.5, "white");
-grdFrenchFlag.addColorStop(1, "red");
-draw();
-}
+  // Good practice 1: set global vars canvas, ctx, gradients, etc here
+  canvas = document.querySelector('#myCanvas1');
+  ctx = canvas.getContext('2d');
+  // The gradient we create is also a global variable, we
+  // will be able to reuse it for drawing different shapes
+  // in different functions
+  grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 0);
+  // Try adding colors with first parameter between 0 and 1
+  grdFrenchFlag.addColorStop(0, "blue");
+  grdFrenchFlag.addColorStop(0.5, "white");
+  grdFrenchFlag.addColorStop(1, "red");
+  draw();
+  }
 function draw() {
-ctx.fillStyle = grdFrenchFlag;
-ctx.fillRect(0, 0, 300, 200);
-}
+  ctx.fillStyle = grdFrenchFlag;
+  ctx.fillRect(0, 0, 300, 200);
+  }
 ```
+
+</details>
 
 <h4>HTML</h4>
 
@@ -11846,16 +11851,16 @@ ctx.fillRect(0, 0, 300, 200);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Linear gradients</title>
-<style>
-#myCanvas1 {
-border: 1px solid black;
-}
-</style>
+  <meta charset="utf-8">
+  <title>Linear gradients</title>
+  <style>
+    #myCanvas1 {
+      border: 1px solid black;
+    }
+  </style>
 </head>
 <body onload="init();">
-<canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
+  <canvas id="myCanvas1" width="300" height=200>Your browser does not support the canvas tag.</canvas>
 </body>
 </html>
 ```
@@ -12011,7 +12016,7 @@ This code is much more complex than the previous one, taking 16 lines instead of
 &nbsp;
 <br/>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -12089,7 +12094,7 @@ Just as we used fillStyle and fillRect for drawing rectangles filled with a 
 &nbsp;
 <br/>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -12192,7 +12197,7 @@ Like in the first example we will draw a filled rectangle that is the same size�
 &nbsp;
 <br/>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -12268,7 +12273,7 @@ And if we draw the same rectangle with the canvas size, here is the result:
 &nbsp;
 <br/>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -12342,7 +12347,7 @@ It suffices to create a new gradient before drawing each filled rectangle, and s
 &nbsp;
 <br/>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -12458,7 +12463,7 @@ Here is an example of a radial gradient that interpolates the color of the rainb
 &nbsp;
 <br/>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -12559,7 +12564,7 @@ You get some nice effects; here we set the second circle's center 60 pixels t
 &nbsp;
 <br/>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -12696,7 +12701,7 @@ imageObj.onload = function(){
 &nbsp;
 <br/>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -12826,7 +12831,7 @@ Your browser does not support the canvas tag. </canvas>
 &nbsp;
 <br/>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -13150,7 +13155,7 @@ Your browser does not support the canvas tag.
    alt="image183.png" />
 </p>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -15129,7 +15134,7 @@ Play with the example below that show the problem:
 &nbsp;
 <br/>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -15209,7 +15214,7 @@ This is a canvas:<p></p>
 
 </details>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 ```
 function getMousePos(canvas, evt) {
@@ -18409,8 +18414,8 @@ We have already seen this element in action with different <input> elements, s
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image227.jpeg?raw=true"
-   alt="estricted choice of color."
-   width="15%">
+   width="15%"
+   alt="Restricted choice of color." />
 &nbsp;
 <br/>
 <!------------------------------------------------------------------------------------------------>
@@ -18418,8 +18423,8 @@ We have already seen this element in action with different <input> elements, s
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image286.jpeg?raw=true"
-   alt="Restrict choices using a datalist element."
-   width="60%">
+   width="60%"
+   alt="Restrict choices using a datalist element." />
 &nbsp;
 <br/>
 <!------------------------------------------------------------------------------------------------>
@@ -18427,8 +18432,8 @@ We have already seen this element in action with different <input> elements, s
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image287.jpeg?raw=true"
-   alt="Example of datalist for sliders ticks."
-   width="65%">
+   width="65%"
+   alt="Example of datalist for sliders ticks." />
 &nbsp;
 <br/>
 
@@ -18447,8 +18452,8 @@ Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,outp
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image288.png?raw=true"
-   alt=""
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -18503,8 +18508,8 @@ Also, at the time of submitting the form, some extra messages may be displayed 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image289.png?raw=true"
-   alt="Bubble message example."
-   width="35%">
+   width="35%"
+   alt="Bubble message example." />
 &nbsp;
 <br/>
 The default bubble message and visual feedback differ from one implementation to another, but they may be customized, with some limitations that will be explained later.
@@ -18663,8 +18668,8 @@ Google Chrome on a French desktop computer:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image290.jpeg?raw=true"
-   alt="Chrome shows native error message localized and the title attribute content as is."
-   width="65%">
+   width="65%"
+   alt="Chrome shows native error message localized and the title attribute content as is." />
 &nbsp;
 <br/>
 
@@ -18675,8 +18680,8 @@ Same example on FireFox, the title attribute is ignored:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image291.jpeg?raw=true"
-   alt="Same example on firefox, the title attribute is ignored."
-   width="65%">
+   width="65%"
+   alt="Same example on firefox, the title attribute is ignored." />
 &nbsp;
 <br/>
 
@@ -18697,8 +18702,8 @@ There is a JavaScript API for form validation. This API will let you use your ow
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="https://jsbin.com/hovato/1/edit?html,output"
-   alt="Example of password checking at JSBin."
-   width="35%">
+   width="35%"
+   alt="Example of password checking at JSBin." />
 &nbsp;
 <br/>
 be careful to try this example in JS Bin standalone mode (click the small black arrow on the top right of the output tab).
@@ -18805,8 +18810,8 @@ Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JS
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image292.png?raw=true"
-   alt=""
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -18882,8 +18887,8 @@ Custom validation: changing the default behavior, aggregating error messages, re
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image293.png?raw=true"
-   alt=""
-   width="35%">
+   width="35%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -18910,8 +18915,8 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image294.png?raw=true"
-   alt=""
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -19077,8 +19082,8 @@ This week, we will look at some of the most useful APIs. Others will be covered 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image295.jpeg?raw=true"
-   alt="'You are here' sign."
-   width="35%">
+   width="35%"
+   alt="'You are here' sign." />
 &nbsp;
 <br/>
 
@@ -19103,8 +19108,8 @@ For convenience, we will mainly illustrate the localStorage object. Just chang
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image296.png?raw=true"
-   alt="Key value pairs."
-   width="17%">
+   width="17%"
+   alt="Key value pairs." />
 &nbsp;
 <br/>
 
@@ -19142,8 +19147,8 @@ Once opened in your browser, the JavaScript code is executed. With the browser d
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image297.jpeg?raw=true"
-   alt="Examples of read and write localStorage."
-   width="65%">
+   width="65%"
+   alt="Examples of read and write localStorage." />
 &nbsp;
 <br/>
 
@@ -19154,8 +19159,8 @@ Once opened in your browser, the JavaScript code is executed. With the browser d
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image298.jpeg?raw=true"
-   alt="View of the devtools. Used to show what is in localStorage."
-   width="65%">
+   width="65%"
+   alt="View of the devtools. Used to show what is in localStorage." />
 &nbsp;
 <br/>
 
@@ -19190,7 +19195,9 @@ Open this [online example at JSBin](https://jsbin.com/pulurir/edit?html,js,outp
 
 We just added input event listeners to each input field. For example, in order to save the first name input field's content, we just added:
 
-1.  oninput="localStorage.firstName=this.value;"
+```
+oninput="localStorage.firstName=this.value;"
+```
 
 Where firstName in red is the key and this.value the current value of the input field.
 
@@ -19302,8 +19309,8 @@ Students may note that something seems a bit off in the example above: instead o
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image300.jpeg?raw=true"
-   alt="example with buttons that shown how to iterate on localStorage, clear it etc."
-   width="40%">
+   width="40%"
+   alt="example with buttons that shown how to iterate on localStorage, clear it etc." />
 &nbsp;
 <br/>
 
@@ -19401,8 +19408,8 @@ Local stores are also useful for** saving/restoring user preferences** of Web 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image301.jpeg?raw=true"
-   alt="Example of preferences"
-   width="65%">
+   width="65%"
+   alt="Example of preferences." />
 &nbsp;
 <br/>
 
@@ -19415,8 +19422,8 @@ Another example is a guitar FX processor / amp simulator your instructor is writ
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image302.jpeg?raw=true"
-   alt="Guitar fx processor uses localStorage"
-   width="65%">
+   width="65%"
+   alt="Guitar fx processor uses localStorage." />
 &nbsp;
 <br/>
 
@@ -19427,8 +19434,8 @@ Another example is a guitar FX processor / amp simulator your instructor is writ
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image303.jpeg?raw=true"
-   alt="Animated Rectangle with GUI"
-   width="35%">
+   width="35%"
+   alt="Animated Rectangle with GUI." />
 &nbsp;
 <br/>
 
@@ -19667,13 +19674,13 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 
 <h4>Explanations:</h4>
 
--   Line 7: we built a JavaScript object that contains a person.
+-   <i>Line 7</i>: we built a JavaScript object that contains a person.
 
--   Line 10: we store it in localStorage as a JSON string object, with a key equal to testObject.
+-   <i>Line 10</i>: we store it in localStorage as a JSON string object, with a key equal to testObject.
 
--   Line 13: we restore it from localStorage as a string, and the JSON.parse methods turns it back into a JavaScript object.
+-   <i>Line 13</i>: we restore it from localStorage as a string, and the JSON.parse methods turns it back into a JavaScript object.
 
--   Line 15: we print the values of the object properties.
+-   <i>Line 15</i>: we print the values of the object properties.
 
 <h4>Examples</h4>
 
@@ -19686,8 +19693,8 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image305.png?raw=true"
-   alt="localStorage JSON"
-   width="65%">
+   width="65%"
+   alt="localStorage JSON." />
 &nbsp;
 <br/>
 
@@ -19702,20 +19709,20 @@ Add contacts using the form, see how the HTML table is updated. Try to reload th
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image306.jpeg?raw=true"
-   alt="Serverless Contact Manager"
-   width="65%">
+   width="65%"
+   alt="Serverless Contact Manager." />
 &nbsp;
 <br/>
 
 Examine the localStorage:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 307. localStorage view in devtools shows the data (xx) ------------------------------->
+<!------------------- 307. localStorage view in devtools shows the data (xxx) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image307.png?raw=true"
-   alt="localStorage view in devtools shows the data"
-   width="65%">
+   width="65%"
+   alt="localStorage view in devtools shows the data." />
 &nbsp;
 <br/>
 
@@ -19738,8 +19745,8 @@ The objective of this chapter is to provide an overview of the File API.
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image308.jpeg?raw=true"
-   alt="sound sample editor serverless"
-   width="45%">
+   width="45%"
+   alt="Sound sample editor serverless." />
 &nbsp;
 
 Before HTML5, file management was limited to multipart forms and to Ajax for sending/requesting files to/from a remote Web server.
@@ -19753,8 +19760,8 @@ Imagine a multimedia player that accesses (in read-only) your file system, reads
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image309.jpeg?raw=true"
-   alt="audio player that plays local files"
-   width="45%">
+   width="45%"
+   alt="Audio player that plays local files." />
 &nbsp;
 
 <!------------------------------------------------------------------------------------------------>
@@ -19762,8 +19769,8 @@ Imagine a multimedia player that accesses (in read-only) your file system, reads
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image310.jpeg?raw=true"
-   alt="polarr photo editor uses the File API"
-   width="45%">
+   width="45%"
+   alt="polarr photo editor uses the File API." />
 &nbsp;
 
 <h4>External resources</h4>
@@ -19869,8 +19876,8 @@ All this here is HTML5, this is canvas, these are form elements we saw the last 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image311.png?raw=true"
-   alt=""
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 
 <h4>Source code:</h4>
@@ -20051,8 +20058,8 @@ We will not use all of these interfaces, but let's explain the difference betwee
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image312.jpeg?raw=true"
-   alt="The Blob Movie Poster"
-   width="25%">
+   width="25%"
+   alt="The Blob Movie Poster." />
 &nbsp;
 
 <h4>The Blob object</h4>
@@ -20123,8 +20130,8 @@ Choose a text file:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image313.png?raw=true"
-   alt=""
-   width="45%">
+   width="45%"
+   alt="." />
 &nbsp;
 
 In the following pages, we look at different examples that read file contents as text, dataURL and binary.
@@ -20146,8 +20153,8 @@ Let's start by reading a pure text file
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image314.png?raw=true"
-   alt=""
-   width="45%">
+   width="45%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -20206,8 +20213,8 @@ This time, please select multiple text files (using shift for multiple selection
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image315.png?raw=true"
-   alt=""
-   width="40%">
+   width="40%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -20300,8 +20307,8 @@ readAsArrayBuffer is often used for purposes such as reading audio samples that
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image316.png?raw=true"
-   alt="Local audio player."
-   width="55%">
+   width="55%"
+   alt="Local audio player." />
 &nbsp;
 <br/>
 
@@ -20352,8 +20359,8 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image317.jpeg?raw=true"
-   alt="Data url in address bar shows a red circle."
-   width="85%" />
+   width="85%"
+   alt="Data url in address bar shows a red circle." />
 &nbsp;
 <br/>
 
@@ -20374,8 +20381,8 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image318.png?raw=true"
-   alt="Red splotch."
-   width="15%" />
+   width="15%"
+   alt="Red splotch." />
 &nbsp;
 <br/>
 
@@ -20389,8 +20396,8 @@ You will find lots of Web sites and tools for generating dataURL from files, suc
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image319.jpeg?raw=true"
-   alt="Online service that converts uploaded images to data uris...we see an image and its ascii encoded data uri version"
-   width="55%" />
+   width="55%"
+   alt="Online service that converts uploaded images to data uris...we see an image and its ascii encoded data uri version." />
 </p>
 
 With the above example, you can copy and paste the characters on the left and use them with an <img src="...">. Just set the src attribute with it!
@@ -20404,8 +20411,8 @@ Example of HTML5 logo embedded in a document without any real image, just a data
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image317.jpeg?raw=true"
-   alt="Data url in address bar shows a red circle"
-   width="65%" />
+   width="65%"
+   alt="Data url in address bar shows a red circle." />
 &nbsp;
 <br/>
 
@@ -20422,8 +20429,8 @@ This first example is useful for forms that allow the user to select one or more
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image332.png?raw=true"
-   alt="Preview of selected images"
-   width="45%">
+   width="45%"
+   alt="Preview of selected images." />
 &nbsp;
 <br/>
 
@@ -20487,8 +20494,8 @@ This first example is useful for forms that allow the user to select one or more
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image322.jpeg?raw=true"
-   alt="read image as dataURL and draw inside a canvas"
-   width="55%">
+   width="55%"
+   alt="read image as dataURL and draw inside a canvas." />
 &nbsp;
 <br/>
 
@@ -20551,8 +20558,8 @@ This chapter presents the new Geolocation API and illustrates its use with sever
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image323.png?raw=true"
-   alt="W3C Geolocation icon"
-   width="25%">
+   width="25%"
+   alt="W3C Geolocation icon." />
 &nbsp;
 <br/>
 
@@ -20627,12 +20634,12 @@ displayCoords.innerHTML="Latitude: " + position.coords.latitude +
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 324. geolocation callback illustration (xxx) ---------------------------------->
+<!----------------------- 324. geolocation callback illustration (xxx) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image324.jpeg?raw=true"
-   alt="Geolocation Callback Illustration"
-   width="55%" />
+   width="55%"
+   alt="Geolocation Callback Illustration." />
 </p>
 
 <h4>Explanations:</h4>
@@ -20665,8 +20672,8 @@ In the previous example, we used the coords property of the position passed as
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image325.png?raw=true"
-   alt=" "
-   width="85%" />
+   width="85%"
+   alt="." />
 </p>
 <p>
 Not all these values may be available in all Web browsers. When one of these properties is null, it means that it is not available (often the case of the altitudeAccuracy)
@@ -20684,8 +20691,8 @@ A slightly different version of the previous example <a href="https://jsbin.com
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image326.jpeg?raw=true"
-   alt="Geolocation error"
-   width="85%" />
+   width="85%"
+   alt="Geolocation error." />
 </p>
 
 <h4>Source code of the example:</h4>
@@ -20775,8 +20782,8 @@ Several options are available when using HTML5 geolocation. We can pass a third 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image327.png?raw=true"
-   alt="Example/Test OpenStreetMap"
-   width="85%" />
+   width="85%"
+   alt="Example/Test OpenStreetMap." />
 </p>
 
 <h4>Example of use</h4>
@@ -20834,8 +20841,8 @@ How to get a map centered on your longitude and latitude.
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image329.png?raw=true"
-   alt="Example/Test OpenStreetMap."
-   width="50%" />
+   width="50%"
+   alt="Example/Test OpenStreetMap." />
 </p>
 
 <h4>JS</h4>
@@ -21019,8 +21026,8 @@ Google reverse geocoding example (screenshot only):</p>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image330.png?raw=true"
-   alt="Gisgraphy"
-   width="45%" />
+   width="45%"
+   alt="Gisgraphy" />
 </p>
 
 <p>Source code of this example (in order to run it, you need a Google API key, used at <i>line 6</i>).</p>
@@ -21122,8 +21129,8 @@ Gisgraphy (free service) reverse geocoding example (screenshot only, click on it
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image331.png?raw=true"
-   alt="Gisgraphy"
-   width="65%" />
+   width="65%"
+   alt="Gisgraphy" />
 </p>
 
 <h4><b>Example #2:</b> reverse geocoding + OpenStreetMap</h4>
@@ -21136,8 +21143,8 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image332.png?raw=true"
-   alt="Reverse Geocoding - OpenStreetMap"
-   width="65%" />
+   width="65%"
+   alt="Reverse Geocoding - OpenStreetMap." />
 </p>
 
 <h4>HTML</h4>
@@ -21146,24 +21153,24 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
  <summary>Click to expand!</summary>
 
 ```
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <title>Leaflet Control Geocoder</title>
-    <meta charset="utf-8" />
-    <meta
-    name="viewport"
-    content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-    <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-    <style type="text/css">
-    body {
-    margin: 0;
-    }
-    #map {
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaflet Control Geocoder</title>
+  <meta charset="utf-8" />
+  <meta
+  name="viewport"
+  content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <style type="text/css">
+  body {
+  margin: 0;
+  }
+  #map {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -21218,7 +21225,7 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
     });
     });
     </script>
-    </body>
+</body>
  </html>
 ```
 
@@ -21235,32 +21242,32 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Leaflet Control Geocoder</title>
-    <meta charset="utf-8" />
-    <meta
-    name="viewport"
-    content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-    <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-    <style type="text/css">
-      body {
-      margin: 0;
-      }
-      #map {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      }
-    </style>
+<title>Leaflet Control Geocoder</title>
+<meta charset="utf-8" />
+<meta
+name="viewport"
+content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
+/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+<script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+<style type="text/css">
+  body {
+  margin: 0;
+  }
+  #map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  }
+</style>
   </head>
   <body>
-    <div id="map"></div>
-    <script type="text/javascript">
-    var geocoder = L.Control.Geocoder.nominatim();
-    var map, marker, latitude, longitude;
+<div id="map"></div>
+<script type="text/javascript">
+var geocoder = L.Control.Geocoder.nominatim();
+var map, marker, latitude, longitude;
 function getLocation() {
 	if (!navigator.geolocation) {
 	alert("Browser doesn't support geolocation");
@@ -21269,48 +21276,48 @@ function getLocation() {
 	}
 	}
 // Get current position successfully
-    function success(position) {
-      latitude = position.coords.latitude;
-      longitude = position.coords.longitude;
-      // Instance map using leaflet
-      map = L.map('map').setView([latitude, longitude], 13);
-      // Tile layer using key api at cloudmade.com
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        key: '760506895e284217a7442ce2efe97797',
-        styleId: 103288,
-        maxZoom: 16
-        }).addTo(map);
-        // Marker using leaflet
-        marker = L.marker([latitude, longitude]).addTo(map);
-        // Popup in leaflet
-        marker.bindPopup('<p></p>').openPopup();
-        getPhysicalAddress({lat:latitude, lng:longitude});
-      }
-      // Get current position fail
-    function error() {
+function success(position) {
+  latitude = position.coords.latitude;
+  longitude = position.coords.longitude;
+  // Instance map using leaflet
+  map = L.map('map').setView([latitude, longitude], 13);
+  // Tile layer using key api at cloudmade.com
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+key: '760506895e284217a7442ce2efe97797',
+styleId: 103288,
+maxZoom: 16
+}).addTo(map);
+// Marker using leaflet
+marker = L.marker([latitude, longitude]).addTo(map);
+// Popup in leaflet
+marker.bindPopup('<p></p>').openPopup();
+getPhysicalAddress({lat:latitude, lng:longitude});
+  }
+  // Get current position fail
+function error() {
 	alert('Get current position fail. Please access codepen to get geolocation.');
 	}
 var marker;
-    function getPhysicalAddress(latlong) {
+function getPhysicalAddress(latlong) {
 	geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
-    var r = results[0];
+var r = results[0];
 	if (r) {
 	if (marker) {
-      marker
-	    .setLatLng(r.center)
-	    .setPopupContent(r.html || r.name)
-	    .openPopup();
+  marker
+	.setLatLng(r.center)
+	.setPopupContent(r.html || r.name)
+	.openPopup();
 	  } else {
-      marker = L.marker(r.center)
-	    .bindPopup(r.name)
-	    .addTo(map)
-	    .openPopup();
-	    }
+  marker = L.marker(r.center)
+	.bindPopup(r.name)
+	.addTo(map)
+	.openPopup();
+	}
 	  }
    });
-      }
-      getLocation();
-    </script>
+  }
+  getLocation();
+</script>
   </body>
 </html>
 ```
