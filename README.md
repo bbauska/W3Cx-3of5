@@ -10101,7 +10101,7 @@ Let's look at the drawing from the last example of the previous section:
 <p align="center">
 <img src="/images/image139.png?raw=true"
    width="65%"
-   alt="." />
+   alt="Same drawing as in previous section. Example using moveto() and stroke() command functions." />
 &nbsp;
 <br/>
 
@@ -10143,7 +10143,7 @@ Imagine that we would like to draw them with different styles and colors: the sh
 
 <h4>Drawing two paths with different styles: the WRONG and the right way!</h4>
 
-<h4>First, the wrong way!</h4>
+<h4>First, the <em>wrong</em> way!</h4>
 
 In this example, we will draw the two parts of the path with different styles: the first part in wireframe mode, and the second part in filled mode.
 
@@ -10233,15 +10233,15 @@ Remember that fill() or stroke() *draws the whole path*, even if it is disco
 
 What happened is:
 
-1.  The call to stroke() has drawn the path corresponding to the lines 5-7. Indeed, the first part of the path (on the left) has actually been drawn once in wireframe mode, and in blue.
+1.  The call to stroke() has drawn the path corresponding to the <i>lines 5-7</i>. Indeed, the first part of the path (on the left) has actually been drawn once in wireframe mode, and in blue.
 
-2.  Then, the call to fill() at line 20 has drawn the whole path again, but in pink and in filled mode. But this time the path corresponds to <i>lines 5-7</i> plus <i>lines 14-16</i> that make up the second shape on the right.
-    *So the path that has been drawn this time is made of both of the triangles.*
+2.  Then, the call to fill() at <i>line 20</i> has drawn the whole path again, but in pink and in filled mode. But this time the path corresponds to <i>lines 5-7</i> plus <i>lines 14-16</i> that make up the second shape on the right.
+    <i>So the path that has been drawn this time is made of both of the triangles.</i>
 
 <b>Important</b>: If you do not want to draw parts of the same path several times, you need to draw two different paths,
 using the ctx.beginPath() method, as shown in the next example.
 
-<h4>Now, the right way!</h4>
+<h4>Now, the <em>right</em> way!</h4>
 
 <!------------------------------------------------------------------------------------------------>
 <!-------------- 141. the right way to draw two paths with different styles (198) ---------------->
@@ -10249,7 +10249,7 @@ using the ctx.beginPath() method, as shown in the next example.
 <p align="center">
 <img src="/images/image141.png?raw=true"
    width="65%"
-   alt="Draw two paths with different styles the RIGTH way." />
+   alt="Draw two paths with different styles the RIGHT way." />
 &nbsp;
 <br/>
 
@@ -10375,12 +10375,12 @@ Notice the save/restore of the context at the beginning/end of the function. Thi
 <h4>Here is an example:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 142.  (200) -->
+<!------------------------- 142. drawing lines in immediate mode (200) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image142.png?raw=true"
    width="65%"
-   alt="." />
+   alt="Drawing lines in immediate mode to avoid affecting other functions' context." />
 &nbsp;
 <br/>
 
@@ -10442,7 +10442,7 @@ In this section, we present a function that draws arrows in a canvas.
 
 You may find multiple implementations on the Web for drawing arrows in a canvas, but the one we are presenting has the advantage of being rather simple and enables you to set the color and line width of the arrows.
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <h4>Example #1:</h4>
 
@@ -10504,12 +10504,12 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 <h4>Example #2</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 143.  (xxx) -->
+<!----------------------------------- 143. draw arrows (202) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image143.png?raw=true"
    width="65%"
-   alt="." />
+   alt="Function to draw arrows." />
 &nbsp;
 <br/>
 
@@ -10588,12 +10588,12 @@ This <a href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArrow.html">
 Screenshot from a demo available on the above Web site:
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 144.  (xxx) -->
+<!----------------------------- 144. clock with nicer arrows (204) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image144.png?raw=true"
-   alt="."
-   width="20%">
+   width="20%"
+   alt="Round clock with nice arrows." />
 &nbsp;
 <br/>
 
@@ -10607,12 +10607,12 @@ The ctx.closePath() method indicates that we would like a closed path: draw fr
 
 <h4>Try this:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!--- 145.  (xxx) -->
+<!------------------------------ 145. example closing a path (204) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image145.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="Example on closing a path in a drawing." />
 &nbsp;
 <br/>
 
@@ -10677,9 +10677,9 @@ ctx.stroke();
 
 -   <i>Lines 5-7</i> corresponds to a path made of two consecutive lines. If we just call stroke() after that, two lines will be drawn on the canvas.
 
--   *Line 10* indicates that we would like *a closed path*. In this case, the call to stroke() at *line 14* will draw the two lines plus an extra line that connects the last point of the path to the first one. It will draw a closed triangle!
+-   <i>Line 10</i> indicates that we would like <i>a closed path</i>. In this case, the call to stroke() at <i>line 14</i> will draw the two lines plus an extra line that connects the last point of the path to the first one. It will draw a closed triangle!
 
-Try commenting the *line 10* in the online example and see the results!
+Try commenting the <i>line 10</i> in the online example and see the results!
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-4-8">3.4.8 Drawing Circles and Arcs</h3>
@@ -10690,12 +10690,12 @@ The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is usefu
 <i>Note</i>: the figures in this page have been borrowed from the <a href="https://www.html5canvastutorials.com/tutorials/html5-canvas-arcs/">HTML5 Canvas Tutorials</a> Web site.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------- 146. html5 canvas arc diagram: drawing circle coordinate system (xxx) ------------>
+<!------------- 146. html5 canvas arc diagram: drawing circle coordinate system (205) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image146.jpeg?raw=true"
-   alt="HTML5 canvas arc diagram: drawing circle, coordinate system."
-   width="50%">
+   width="50%"
+   alt="HTML5 canvas arc diagram: drawing circle, coordinate system." />
 &nbsp;
 <br/>
 
@@ -10711,20 +10711,20 @@ The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is usefu
 
 The angles are in radians (between 0 and 2*Math.PI). The arc is drawn clockwise. Beware that this may not seem natural if you're used to the trigonometric order.
 
-The last parameter is optional and has a value of false by default. If true, instead of drawing an arc of circle that corresponds to the parameters, *it will draw its complementary*. See the examples below to see the difference.
+The last parameter is optional and has a value of false by default. If true, instead of drawing an arc of circle that corresponds to the parameters, <i>it will draw its complementary</i>. See the examples below to see the difference.
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
-<h4> Example #1: drawing an arc with radius = 50, starting angle = 0, end angle = PI/2
+<h4> Example #1: drawing an arc with radius = 50, starting angle = 0, end angle = PI/2</h4>
 
 <h4>Try this example:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!--- 147.  (xxx) -->
+<!--------------------- 147. example drawing an arc with radius = 50 (206) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image147.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="Example on drawing an arc with radius = 50, start angle = 0, end angle = pi/2." />
 &nbsp;
 <br/>
 
@@ -10780,24 +10780,24 @@ And if we change the last parameter of the arc function call (<i>line 3</i>) t
 
 Then, the result is the "complementary" of the previous arc:
 <!------------------------------------------------------------------------------------------------>
-<!--- 148.  (xxx) -->
+<!------------------ 148. example arc complementary of the previous arc (207) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image148.png?raw=true"
    width="65%"
-   alt="." />
+   alt="Example complementary of the previous arc." />
 &nbsp;
 <br/>
 
 <h4>Example #2: drawing a Full circle (filled + outlined)</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 149.  (xxx) -->
+<!---------------------------- 149. example draw a full circle (207) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image149.png?raw=true"
    width="65%"
-   alt="." />
+   alt="Example draw a full circle." />
 &nbsp;
 <br/>
 
@@ -10843,24 +10843,24 @@ Notice that we called ctx.arc() only once! And drew it twice, with different s
 
 <h4>Project #1: modify the [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO) in order to get:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 150. half circle (xxx) -------------------------------->
+<!------------------------------ 150. half circle (208) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image150.jpeg?raw=true"
    width="25%"
-   alt="image150.jpeg - half circle." />
+   alt="Example of half circle." />
 &nbsp;
 <br/>
 
 <h4> Project #2: make a small program that draws a smiling head like this (or make something better!)</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 151. (xxx) -------------------------------->
+<!------------------------------ 151. smiley face (208) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image151.jpeg?raw=true"
    width="30%"
-   alt="image151.png - smiling head." />
+   alt="Example of smiling head." />
 &nbsp;
 <br/>
 
@@ -10873,7 +10873,7 @@ There is another method called ctx.arcTo(x1, y1, x2, y2, radius), which is a b
 In fact, the arcTo(...) method draws an arc of a circle depending on some tangents. Let's look at these pictures for a better understanding:
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 152.  (xxx) -->
+<!---------------------- 152. three diagrams to explain arcto method (209) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image152.jpeg?raw=true"
