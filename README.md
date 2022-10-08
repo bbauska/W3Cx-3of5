@@ -7798,7 +7798,7 @@ Let's start with some simple examples before looking at how we use 2D transforms
 </p>
 <h4>Examples</h4>
 <ul>
-  <li><h4> Let's draw three rectangles!</li>
+  <li>Let's draw three rectangles!</li>
 </ul>
 <p>
 If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) and another at (150, 0), and a third at (300, 0), here is the result and the corresponding code:</p>
@@ -8057,7 +8057,7 @@ As you can see, the code uses the same technique, becomes less and less readabl
 
 However, there is a way to simplify this => 2D geometric transformations! 
 
-<h4>Geometric transformations: changing the coordinate system
+<h4>Geometric transformations: changing the coordinate system</h4>
 
 The idea behind 2D transformations is that instead of modifying all the coordinates passed as parameters to each call to drawing methods like fillRect(...), we will keep all the drawing code "as is". For example, if the monster of our previous example was drawn at (0, 0), we could just translate (or rotate, or scale) the original coordinate system.
 
@@ -8193,7 +8193,7 @@ drawArrow(ctx, 0, 0, 0, 100, 10, 'red');
 Note that the X and Y parameters are useless for now...
 
 ```
--   <h4> Translation using ctx.translate(offsetX, offsetY)
+-   Translation using ctx.translate(offsetX, offsetY)
 ```
 
 Now, instead of simply calling drawMonster(0, 0), we will call first ctx.translate(100, 100), and look at the result below:
@@ -8693,8 +8693,8 @@ We slightly modified the function that draws the monster:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image132.jpeg?raw=true"
-   width="40%"
-   alt="Example of context save-restore: a monster drawn by a function that saves and restored the context, then a rectangle is drawn, with context as it was previously." />
+  width="40%"
+  alt="Example of context save-restore: a monster drawn by a function that saves and restored the context, then a rectangle is drawn, with context as it was previously." />
 </p>
 
 <p>Source code extract of this function: notice at <i>lines 3</i> and <i>26</i> how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines 7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
@@ -8904,7 +8904,7 @@ context.strokeText("Hello World!", x, y [, maxWidth]);
 context.fillText("Hello World!", x, y [, maxWidth]);
 ```
 
-<h4> Forcing a text not to exceed a certain width: the maxWidth property</h4>
+<h4>Forcing a text not to exceed a certain width: the maxWidth property</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -9258,8 +9258,8 @@ But let's start with a basic example!
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image133.png?raw=true"
-   width="55%"
-   alt="Drawing Images with Subimages" />
+  width="55%"
+  alt="Drawing Images with Subimages" />
 &nbsp;
 <br/>
 
