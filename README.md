@@ -2895,7 +2895,7 @@ The 4 examples below are given "as is" to give you some hints. There are lots of
 
 <h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, using the float and width CSS properties</h4>
 
-<p>This example uses the following HTML structure (notice that we use the "HTML entity syntax" for displaying "<" or ">". For example, displays a "<" character).</p>
+<p>This example uses the following HTML structure (notice that we use the "HTML entity syntax" for displaying "<" or ">". For example, "&lt;" displays a "<" character).</p>
 
 <details>
  <summary>Click to expand!</summary>
@@ -2920,7 +2920,8 @@ The 4 examples below are given "as is" to give you some hints. There are lots of
 
 </details>
 
-<p>Here we use the CSS rule float:left for the &lt;section&gt; and the CSS rule float:right for the &lt;aside&gt;. When an element floats, it goes out of the normal flow of the HTML element. Then by default it floats to the edge of its parent; and its size depends on the elements it contains. So, in order to fill the whole horizontal space, we prefer here to "force the width" by setting the CSS width property with a percentage.  So we took width: 63% for the &lt;section&gt; on the left and width:30% for the &lt;aside&gt; on the right.
+<p>Here we use the CSS rule float:left for the &lt;section&gt; and the CSS rule float:right for the &lt;aside&gt;. When an element floats, it goes out of the normal flow of the HTML element. Then by default it floats to the edge of its parent; and its size depends on the elements it contains. 
+In order to fill the whole horizontal space, we prefer here to "force the width" by setting the CSS width property with a percentage.  We took width: 63% for the &lt;section&gt; on the left and width:30% for the &lt;aside&gt; on the right.
 
 You can look at the complete CSS code in the interactive example below (click on the CSS or HTML text in the menu bar below, or click "edit on codepen" to change the code and see the results):</p>
 
@@ -2930,7 +2931,7 @@ You can look at the complete CSS code in the interactive example below (click on
 <p align="center">
 <img src="/images/image035.png?raw=true"
    alt="Header with section float left and aside float right."
-   width="65%" />
+   width="85%" />
 &nbsp;
 <br/>
 
@@ -2941,8 +2942,8 @@ You can look at the complete CSS code in the interactive example below (click on
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image036.png?raw=true"
-   alt="Michel Buffa home page: 3 sections centered."
-   width="65%" />
+   width="85%"
+   alt="Michel Buffa home page: 3 sections centered." />
 &nbsp;
 <br/>
 
@@ -4092,8 +4093,8 @@ To automatically generate microdata for describing persons, restaurants, movie
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image064.jpeg?raw=true"
-   alt="Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata."
-   width="65%">
+   width="65%"
+   alt="Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata." />
 &nbsp;
 <br/>
 
@@ -4118,8 +4119,8 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image065.jpeg?raw=true"
-   alt="Picture of the first 'about me' page example. Shows the table of contents."
-   width="40%">
+   width="40%"
+   alt="Picture of the first 'about me' page example. Shows the table of contents." />
 &nbsp;
 <br/>
 
@@ -4244,7 +4245,7 @@ Usually you have an "embed" button close to the videos that prompts you with s
 <p>
 This course will focus on the &lt;audio&gt; element. We present the <a href="https://www.w3.org/TR/webaudio/">Web Audio API</a> and other advanced HTML5 features in the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games course</a>.
 
-The attributes, event set and JavaScript API  of the &lt;audio&gt; element are just a "reduced" version of the ones from the <video> element, and here we will only address the differences and peculiarities.
+The attributes, event set and JavaScript API  of the &lt;audio&gt; element are just a "reduced" version of the ones from the &lt;video&gt; element, and here we will only address the differences and peculiarities.
 </p>
 
 <h4>The &lt;audio&gt; element, basic usage</h4>
@@ -4334,7 +4335,7 @@ Do not abuse of the autoplay attribute. We talked earlier about mobile applica
 
 <h4>Attributes of the &lt;audio&gt; element</h4>
 <p>
-The attributes you can use with the &lt;audio&gt; element are a subset of those available for the <video> element. Except for the poster attribute, they are all recognized and have the expected meanings: </p>
+The attributes you can use with the &lt;audio&gt; element are a subset of those available for the &lt;video&gt; element. Except for the poster attribute, they are all recognized and have the expected meanings: </p>
 <ul>
   <li>src: source of an audio stream.</li>
   <li>controls: if this attribute is present, the browser displays its own controls for audio playback and volume.</li>
@@ -4827,7 +4828,7 @@ Please look at this interesting example:
 Note that in order to play the video, you must click on the "vid.play()" text. To pause it, you click on the "vid.pause()" text, and so on. <i>Notice the text at the top of the video, as well as the transparency.</i> The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
 </p>
 
-<b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let's see a little more of what we can do using the JavaScript API of the <video> element (it will be an identical approach for the <audio> element, since it shares the same API by a very small margin).
+<b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let's see a little more of what we can do using the JavaScript API of the &lt;video&gt; element (it will be an identical approach for the &lt;audio&gt; element, since it shares the same API by a very small margin).
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-2-6">2.2.6 The JavaScript API</h3>
@@ -5903,9 +5904,9 @@ Some JavaScript code listens to the ontimeupdate event while the video is play
 <h3 id="ch2-3-8">2.3.8 Enhanced HTML5 Video Players</h3>
 <!------------------------------------------------------------------------------------------------>
 
-There are numerous "enhanced" video players; most are free and open source, some are commercial. They offer lots of features, which are listed below. Not all of these features are available in every player, this list just illustrates what can be added to the standard <video> element. 
+There are numerous "enhanced" video players; most are free and open source, some are commercial. They offer lots of features, which are listed below. Not all of these features are available in every player, this list just illustrates what can be added to the standard &lt;video&gt; element. 
 
-We call them "HTML5 enhanced video players" because on top of being based on the <video> element, they come with custom features, custom look'n'feel, chapters, etc., based on a JavaScript API that makes such customization possible.
+We call them "HTML5 enhanced video players" because on top of being based on the &lt;video&gt; element, they come with custom features, custom look'n'feel, chapters, etc., based on a JavaScript API that makes such customization possible.
 
 <h4>Accessible players</h4>
 
@@ -6053,7 +6054,7 @@ The getUserMedia API, when dealing with video streams, is always used in conju
 
 <h4>Typical use of the getUserMedia API with a Webcam</h4>
 
-The main idea is to set the srcObject attribute of a <video> element to the live video stream object coming out of the Webcam. To get this stream, you'll have to call the navigator.getUserMedia(params) method from the getUserMedia API, that returns an ES6 promise (ES stands for "ECMAScript" and is the scripting language that forms the basis of JavaScript). Do not panic if you do not know ES6's promises! The syntax is very simple, and you'll learn what you need from the provided examples.
+The main idea is to set the srcObject attribute of a &lt;video&gt; element to the live video stream object coming out of the Webcam. To get this stream, you'll have to call the navigator.getUserMedia(params) method from the getUserMedia API, that returns an ES6 promise (ES stands for "ECMAScript" and is the scripting language that forms the basis of JavaScript). Do not panic if you do not know ES6's promises! The syntax is very simple, and you'll learn what you need from the provided examples.
 
 The stream is passed as a parameter to the then() method returned by the promise, as in this typical example (you can run it and see the result by clicking on the "CodePen" logo at the top right):
 
@@ -6955,7 +6956,7 @@ margin: 0 10px 10px 0;
 
 </details>
 
-Click "start recording", then press the play button on the video element on the right of the app. You can also click the "download" button to download a .webm file, playable offline with a media player such as <a href="https://www.videolan.org/">VLC</a> or online in a Web page with the <video> element.
+Click "start recording", then press the play button on the video element on the right of the app. You can also click the "download" button to download a .webm file, playable offline with a media player such as <a href="https://www.videolan.org/">VLC</a> or online in a Web page with the &lt;video&gt; element.
 
 <h4>Five steps are needed to use the mediaRecorder object</h4>
 
@@ -9617,7 +9618,7 @@ This example shows:
 39. </head>
 40.  
 41. <body onload="init()" >
-42. <p>This is a <video> element: </p>
+42. <p>This is a <video><video> element: </p>
 43. <video id="sourcevid" autoplay="true" loop="true">
 44. <source src="https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.mp4"
 45.          type="video/mp4" />
@@ -9691,12 +9692,12 @@ console.timeEnd("time to draw");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>Canvas</title>
+  <meta charset="utf-8"/>
+  <title>Canvas</title>
 </head>
 <body onload = init();>
-<canvas id="myCanvas" width="400" height =400>
-Your browser does not support the canvas tag.</canvas>
+  <canvas id="myCanvas" width="400" height =400>
+    Your browser does not support the canvas tag.</canvas>
 </body>
 </html>
 ```
@@ -9735,12 +9736,12 @@ Your browser does not support the canvas tag.</canvas>
 On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawing all these rectangles:
 
 <!------------------------------------------------------------------------------------------------>
-<!----- 134. mage of the devtool console that shows random time values.  Avg time is 4s. (xxx) --->
+<!------------ 134. image of the devtool console clocking time to draw rectangles (189) ---------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image134.jpeg?raw=true"
    width="65%"
-   alt="Image of the devtool console that shows random time values.  Avg time is 4s." />
+   alt="Image of the devtool console measuring time to draw rectangles." />
 &nbsp;
 <br/>
 
@@ -9817,12 +9818,12 @@ And here is what the timer gives: a slightly faster execution time. Changing 100
 <b>Path mode is faster than immediate mode! We have now an average time of 3.1ms</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 135. mage of the devtool console that shows random time values.  Avg time is 3.1ms. (xxx) -->
+<!--------- 135. image of the devtool console which shows time path vs immediate (191) ----------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image135.jpeg?raw=true"
    width="65%"
-   alt="Image of the devtool console that shows random time values.  Avg time is 3.1ms." />
+   alt="Image of the devtool console which shows time values, path vs immediate mode." />
 &nbsp;
 <br/>
 
@@ -9843,21 +9844,21 @@ A call to ctx.beginPath() will reset the buffer (empty its contents). We will 
 
 Summary of path mode principles
 
-1.  Call drawing methods that work in path mode, for example call ctx.rect(...) instead of ctx.strokeRect(...) or ctx.fillRect(...)
+1.  Call drawing methods that work in path mode, for example call ctx.rect(...) instead of ctx.strokeRect(...) or ctx.fillRect(...),
 
-2.  Call ctx.stroke() or ctx.fill() to draw the buffer's contents
+2.  Call ctx.stroke() or ctx.fill() to draw the buffer's contents,
 
-3.  Beware that the buffer is never emptied, two consecutive calls to ctx.stroke() will draw the buffer contents twice! Instead, use ctx.beginPath() to empty it if needed
+3.  Beware that the buffer is never emptied, two consecutive calls to ctx.stroke() will draw the buffer contents twice! Instead, use ctx.beginPath() to empty it if needed,
 
-4.  It is possible to empty the buffer by calling ctx.beginPath()
+4.  It is possible to empty the buffer by calling ctx.beginPath(),
 
-5.  Path drawing is faster than immediate drawing (parallelization is possible)
+5.  Path drawing is faster than immediate drawing (parallelization is possible).
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-4-2">3.4.2 A Warning</h3>
 <!------------------------------------------------------------------------------------------------>
 
-<b>Warning</b>: you do not need to spend too much time on each part of this sub-section
+<b>Warning</b>: you do not need to spend too much time on each part of this sub-section.
 
 You do not need to memorize or learn by heart all the examples in the following pages. They are given as references. There will be no quizzes about curves as they are not often done "by hand", but are generated by tools such as Adobe Illustrator or online generators.
 
@@ -9896,12 +9897,12 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 <h4>See the example below:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 136.  (xxx) -->
+<!---------------------------- 136. draw grid using ctx.stroke (193) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image136.png?raw=true"
    width="65%"
-   alt="." />
+   alt="Draw blue grid using ctx.stroke command." />
 &nbsp;
 <br/>
 
@@ -9980,19 +9981,19 @@ In this example, the entire grid is drawn during the execution of the last line 
 <h4>Try this:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 137.  (xxx) -->
+<!-------------- 137. mix filled & wireframe shapes using different methods (194) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image137.png?raw=true"
    width="65%"
-   alt="." />
+   alt="Mix filled and wireframe shapes using different methods." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10050,12 +10051,12 @@ This example shows that filled and wireframe shapes should be drawn differently 
 
 Try this:
 <!------------------------------------------------------------------------------------------------>
-<!--- 138. number 138  (xxx) -->
+<!----------------- 138. drawing single path made with disconnected lines (195) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image138.png?raw=true"
    width="65%"
-   alt="." />
+   alt="Drawing single path made with disconnected lines." />
 &nbsp;
 <br/>
 
@@ -10095,7 +10096,7 @@ In this last example, we simply called the moveTo() method between each part o
 
 Let's look at the drawing from the last example of the previous section:
 <!------------------------------------------------------------------------------------------------>
-<!--- 139.  (xxx) -->
+<!-------------- 139. example using moveto() and stroke() command functions (196) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image139.png?raw=true"
@@ -10149,12 +10150,12 @@ In this example, we will draw the two parts of the path with different styles: t
 What we will try first is to call stroke() after the first half of the path, then call fill() after the second half of the path:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------- 140.  (xxx) --------------->
+<!-------------- 140. the wrong way to draw two paths with different styles (197) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image140.png?raw=true"
    width="65%"
-   alt="." />
+   alt="THE WRONG WAY! Drawing two paths with different styles." />
 &nbsp;
 <br/>
 
@@ -10243,12 +10244,12 @@ using the ctx.beginPath() method, as shown in the next example.
 <h4>Now, the right way!</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 141.  (xxx) -->
+<!-------------- 141. the right way to draw two paths with different styles (198) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image141.png?raw=true"
    width="65%"
-   alt="." />
+   alt="Draw two paths with different styles the RIGTH way." />
 &nbsp;
 <br/>
 
@@ -10374,7 +10375,7 @@ Notice the save/restore of the context at the beginning/end of the function. Thi
 <h4>Here is an example:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 142.  (xxx) -->
+<!--- 142.  (200) -->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image142.png?raw=true"
@@ -20092,7 +20093,7 @@ The file API proposes several methods for reading file content, each taken from 
 
 <h4>Steps #2 and #3: first call a method of the FileReader object for reading the file content, then get the file content in an onload callback</h4>
 
-There are three different methods available for reading a file's content: readAsText, readAsArrayBuffer for binary data and also as readAsDataURL (the content will be a URL you will use to set the src field of an <img src=...>, <audio>, <video>, and also with all existing methods/properties that accept a URL).
+There are three different methods available for reading a file's content: readAsText, readAsArrayBuffer for binary data and also as readAsDataURL (the content will be a URL you will use to set the src field of an <img src=...>, &lt;audio&gt;, &lt;video&gt;, and also with all existing methods/properties that accept a URL).
 
 All these methods take as a unique parameter a File object (for example, a file chosen by a user after clicking on a <input type=file> input field). Below, we use, as an example, the readAsText method:
 
@@ -20274,7 +20275,7 @@ This time, please select multiple text files (using shift for multiple selection
 
 This example is similar to the previous one, except that this time we read multiple files.
 
-<i>Line 20:</i> this is the for loop that will iterate on the files object passed as parameter by the onchange listener declaration at *line 10.*
+<i>Line 20:</i> this is the for loop that will iterate on the files object passed as parameter by the onchange listener declaration at <i>line 10.</i>
 
 <i>Line 25:</i> instead of declaring the onload listener with a reader.onload =... directly in the loop, this time we preferred to write a separate function that will do this. This technique is useful when you want the listener to work with extra variables computed in the loop (in our case, the name of the file).
 
@@ -20292,7 +20293,7 @@ reader.readAsText(file, 'ISO-8859-1');
 <h3 id="ch6-3-7">6.3.7 Read file content as binary</h3>
 <!------------------------------------------------------------------------------------------------>
 
-<p>This method is rarely used, except for loading "raw" binary data. For images you would like to see in your HTML page using the <img src= tag> or for drawing in a canvas, or for audio and video files that you would like to play using the <audio> or <video> elements, it would be preferable to use the readAsDataURL method presented on the next page of the course.
+<p>This method is rarely used, except for loading "raw" binary data. For images you would like to see in your HTML page using the &lt;img src= tag&gt; or for drawing in a canvas, or for audio and video files that you would like to play using the &lt;audio&gt; or &lt;video&gt; elements, it would be preferable to use the readAsDataURL method presented on the next page of the course.
 
 readAsArrayBuffer is often used for purposes such as reading audio samples that should be loaded in memory and played using the WebAudio API, or for loading textures that you will use with WebGL for 3D animations.</p>
 
@@ -20830,8 +20831,8 @@ How to get a map centered on your longitude and latitude.
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image328.png?raw=true"
-   alt="Example/Test OpenStreetMap."
-   width="85%" />
+   width="85%"
+   alt="Example/Test OpenStreetMap." />
 </p>
 
 <p>This example is just given "as is", as there are so many possibilities for rendering a map with <a href="/leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a basic example might be useful.</p>
@@ -21431,4 +21432,5 @@ Here are a few project ideas. Your classmates and the team who prepared the cour
 -  Project 2 (a bit harder): The examples provided in the course used OpenStreetMap, but why don't you try to do the same with GoogleMaps? Some services are free of charge, but will ask you to get an API key (see this YouTube tutorial about how to get such a key).
 
 . . .The end.
-<!--- last updated 10-07-22 9:03pm --->
+
+<!--- last updated 10-08-22 1:08pm --->
