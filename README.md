@@ -21241,74 +21241,74 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 ```
 <!DOCTYPE html>
 <html>
-  <head>
-<title>Leaflet Control Geocoder</title>
-<meta charset="utf-8" />
-<meta
-name="viewport"
-content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
-/>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-<script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
-<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-<style type="text/css">
-  body {
-  margin: 0;
-  }
-  #map {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  }
-</style>
-  </head>
-  <body>
-<div id="map"></div>
-<script type="text/javascript">
-var geocoder = L.Control.Geocoder.nominatim();
-var map, marker, latitude, longitude;
-function getLocation() {
-	if (!navigator.geolocation) {
-	alert("Browser doesn't support geolocation");
-	} else {
-	navigator.geolocation.getCurrentPosition(success, error);
+<head>
+  <title>Leaflet Control Geocoder</title>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no initial-scale=1, maximum-scale=1"
+    />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <style type="text/css">
+    body {
+    margin: 0;
+    }
+    #map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script type="text/javascript">
+    var geocoder = L.Control.Geocoder.nominatim();
+    var map, marker, latitude, longitude;
+    function getLocation() {
+	  if (!navigator.geolocation) {
+	    alert("Browser doesn't support geolocation");
+	  } else {
+	    navigator.geolocation.getCurrentPosition(success, error);
+	  }
 	}
-	}
-// Get current position successfully
-function success(position) {
-  latitude = position.coords.latitude;
-  longitude = position.coords.longitude;
-  // Instance map using leaflet
-  map = L.map('map').setView([latitude, longitude], 13);
-  // Tile layer using key api at cloudmade.com
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-key: '760506895e284217a7442ce2efe97797',
-styleId: 103288,
-maxZoom: 16
-}).addTo(map);
-// Marker using leaflet
-marker = L.marker([latitude, longitude]).addTo(map);
-// Popup in leaflet
-marker.bindPopup('<p></p>').openPopup();
-getPhysicalAddress({lat:latitude, lng:longitude});
-  }
-  // Get current position fail
-function error() {
+    // Get current position successfully
+    function success(position) {
+      latitude = position.coords.latitude;
+      longitude = position.coords.longitude;
+      // Instance map using leaflet
+      map = L.map('map').setView([latitude, longitude], 13);
+      // Tile layer using key api at cloudmade.com
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      key: '760506895e284217a7442ce2efe97797',
+      styleId: 103288,
+      maxZoom: 16
+      }).addTo(map);
+      // Marker using leaflet
+      marker = L.marker([latitude, longitude]).addTo(map);
+      // Popup in leaflet
+      marker.bindPopup('<p></p>').openPopup();
+      getPhysicalAddress({lat:latitude, lng:longitude});
+      }
+    // Get current position fail
+  function error() {
 	alert('Get current position fail. Please access codepen to get geolocation.');
 	}
-var marker;
-function getPhysicalAddress(latlong) {
+    var marker;
+  function getPhysicalAddress(latlong) {
 	geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
-var r = results[0];
+    var r = results[0];
 	if (r) {
 	if (marker) {
-  marker
+    marker
 	.setLatLng(r.center)
 	.setPopupContent(r.html || r.name)
 	.openPopup();
 	  } else {
-  marker = L.marker(r.center)
+    marker = L.marker(r.center)
 	.bindPopup(r.name)
 	.addTo(map)
 	.openPopup();
@@ -21361,6 +21361,7 @@ Click on the Codepen logo (on the top right) so to run the <a href="https://cod
     <fieldset>
     <form>
       <div id="map"></div>
+
       <script type="text/javascript">
       var geocoder = L.Control.Geocoder.nominatim();
       var map, marker, latitude, longitude;
@@ -21395,16 +21396,16 @@ function error() {
 }
 var marker;
 function getPhysicalAddress(latlong) {
-    geocoder.reverse(latlong, 500000, function(results) {
-    var r = results[0];
-    console.log(r.name);
-    document.querySelector("#surfaceAddress").value = r.name;
-    if (r) {
+  geocoder.reverse(latlong, 500000, function(results) {
+  var r = results[0];
+  console.log(r.name);
+  document.querySelector("#surfaceAddress").value = r.name;
+  if (r) {
     if (marker) {
     marker
-    .setLatLng(r.center)
-    .setPopupContent(r.html || r.name)
-    .openPopup();
+      .setLatLng(r.center)
+      .setPopupContent(r.html || r.name)
+      .openPopup();
     } else {
       marker = L.marker(r.center)
       .bindPopup(r.name)
@@ -21414,13 +21415,20 @@ function getPhysicalAddress(latlong) {
       }
       });
     }
-    <script>
+    </script>
   </body>
 </html>
 ```
 
 </details>
 
+<h3 id="ch6-4-7">6.4.7 Discussion and projects</h3>
+
+<h4>Optional projects</h4>
+
+Here are a few project ideas. Your classmates and the team who prepared the course will be glad to try them and offer feedback. Please post URLs in this discussion forum. These projects are optional, meaning that they won't be graded. However, it is important to complete them to ensure good understanding of the material.
+-  Project 1 (easy): Add a map showing your location to one of your Web pages. Start with a simple, static map, then try with an interactive map. Reuse the examples from the course.
+-  Project 2 (a bit harder): The examples provided in the course used OpenStreetMap, but why don't you try to do the same with GoogleMaps? Some services are free of charge, but will ask you to get an API key (see this YouTube tutorial about how to get such a key).
 
 . . .The end.
 <!--- last updated 10-07-22 9:03pm --->
