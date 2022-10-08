@@ -20845,7 +20845,7 @@ How to get a map centered on your longitude and latitude.
    alt="Example/Test OpenStreetMap." />
 </p>
 
-<h4>JS</h4>
+<h4>JavaScript</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -20935,7 +20935,7 @@ display: inline-block;
 
 <h4>Source code extract:</h4>
 
-<h4>HTML part:>/h4>
+<h4>HTML part:</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -21423,4 +21423,4 @@ function getPhysicalAddress(latlong) {
 
 
 . . .The end.
-<!--- last updated 10-03-22 11:19pm --->
+<!--- last updated 10-07-22 9:03pm --->
