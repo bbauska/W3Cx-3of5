@@ -12550,7 +12550,7 @@ We added color stops using a method similar to that used for linear gradients
 You get some nice effects; here we set the second circle's center 60 pixels to the right of the first circle's center (cx = 210 instead of 150):
 
 ```
-1.  grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
+grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
 ```
 
 <h4>Here is the result:</h4>
@@ -12559,8 +12559,8 @@ You get some nice effects; here we set the second circle's center 60 pixels t
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image177.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -12696,8 +12696,8 @@ imageObj.onload = function(){
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image178.png?raw=true"
-   alt="."
-   width="65%">
+  width="65%"
+  alt="." />
 &nbsp;
 <br/>
 
@@ -12764,7 +12764,7 @@ Your browser does not support the canvas tag. </canvas>
 <h4>JavaScript source code:</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 1.  var canvas, ctx, pattern1;
@@ -12826,8 +12826,8 @@ Your browser does not support the canvas tag. </canvas>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image179.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -12912,8 +12912,8 @@ Below are 4 rectangles drawn with 4 different patterns.
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image180.jpeg?raw=true"
-   alt="Four rectangles drawn with different patterns."
-   width="35%">
+  width="35%"
+  alt="Four rectangles drawn with different patterns." />
 &nbsp;
 <br/>
 
@@ -12934,8 +12934,8 @@ The complete example code that produces the result shown at the beginning of thi
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image181.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -13557,8 +13557,8 @@ The lineCap property of the context indicates the way line end caps are render
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image187.png?raw=true"
-   alt="Line cap values."
    width="20%">
+   alt="Line cap values." />
 &nbsp;
 <br/>
 
@@ -13568,8 +13568,8 @@ The lineCap property of the context indicates the way line end caps are render
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image188.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -13680,8 +13680,8 @@ In order to avoid this situation, we can set the miterLimit property of the co
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image190.gif?raw=true"
-   alt="miterLimit property shown with 3 different angles, we see that the part that goes out of the angle becomes very long."
-   width="20%">
+   width="20%"
+   alt="miterLimit property shown with 3 different angles, we see that the part that goes out of the angle becomes very long." />
 &nbsp;
 <br/>
 
@@ -14533,8 +14533,8 @@ A lot of people think that the canvas element is not able to get key events. Ma
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image193.png?raw=true"
-   width="25%"
-   alt="image193.png." />
+  width="25%"
+  alt="image193.png." />
 </p>
 
 ```
@@ -14912,8 +14912,8 @@ When the mouse enters the canvas we call canvas.focus() to set the focus to th
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image197.png?raw=true"
-   alt="image197.png"
-   width="65%">
+  width="65%"
+  alt="image197.png" />
 &nbsp;
 <br/>
 
@@ -15091,8 +15091,8 @@ The event received by the listener function will be used for getting the button 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image198.png?raw=true"
-   alt="Mouse events illustrated."
-   width="35%">
+  width="35%"
+  alt="Mouse events illustrated." />
 &nbsp;
 <br/>
 
@@ -15129,8 +15129,8 @@ Play with the example below that show the problem:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image199.png?raw=true"
-   alt=""
-   width="25%">
+  width="25%"
+  alt="." />
 &nbsp;
 <br/>
 
@@ -15259,8 +15259,8 @@ function getMousePos(canvas, evt) {
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image200.jpeg?raw=true"
-   alt="Bad mouse coordinates"
-   width="65%">
+  width="65%"
+  alt="Bad mouse coordinates." />
 &nbsp;
 <br/>
 
@@ -15271,8 +15271,8 @@ function getMousePos(canvas, evt) {
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image201.png?raw=true"
-   alt=""
-   width="40%">
+   width="40%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -15294,8 +15294,8 @@ function getMousePos(canvas, evt) {
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image202.jpeg?raw=true"
-   alt="Mouse at zero zero"
-   width="30%">
+  width="30%"
+  alt="Mouse at zero zero." />
 &nbsp;
 <br/>
 
@@ -15308,8 +15308,8 @@ function getMousePos(canvas, evt) {
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image203.png?raw=true"
-   alt=""
-   width="40%">
+  width="40%"
+  alt="." />
 &nbsp;
 <br/>
 
@@ -15318,8 +15318,8 @@ function getMousePos(canvas, evt) {
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image204.jpeg?raw=true"
-   alt="Mouse event example"
-   width="50%">
+   width="50%"
+   alt="Mouse event example." />
 &nbsp;
 <br/>
 
@@ -15385,8 +15385,8 @@ This example shows an animation at 60 frames/s using requestAnimationFrame, wer
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image205.png?raw=true"
-   alt="Image205."
-   width="40%">
+  width="40%"
+  alt="Image205." />
 &nbsp;
 <br/>
 
@@ -15455,8 +15455,8 @@ function animationLoop() {
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image206.png?raw=true"
-   alt="."
-   width="40%">
+  width="40%"
+  alt="." />
 &nbsp;
 <br/>
 
@@ -15514,8 +15514,8 @@ function handleMouseMove(evt) {
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image207.png?raw=true"
-   alt=""
-   width="45%">
+   width="45%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -15579,8 +15579,8 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image208.png?raw=true"
-   alt=" "
-   width="45%">
+  width="45%"
+  alt=". " />
 &nbsp;
 <br/>
 
@@ -15612,8 +15612,8 @@ This time we are using a similar example as above, but we removed the button fo
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image209.png?raw=true"
-   alt=""
-   width="65%">
+  width="65%"
+  alt="." />
 &nbsp;
 <br/>
 
@@ -15624,8 +15624,8 @@ Then, we added this CSS rule:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image210.png?raw=true"
-   alt=" "
-   width="45%">
+   width="45%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -15665,8 +15665,8 @@ Yep, this is not a straightforward process...
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image211.jpeg?raw=true"
-   alt="DIV and canvas inside: div has css width=100% and height=50%"
-   width="65%">
+  width="65%"
+  alt="DIV and canvas inside: div has css width=100% and height=50%" />
 &nbsp;
 <br/>
 
@@ -15733,8 +15733,8 @@ function resizeCanvasAccordingToParentSize() {
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image212.png?raw=true"
-   alt=" "
-   width="55%" />
+  width="55%"
+  alt="."
 &nbsp;
 <br/>
 
@@ -15745,8 +15745,8 @@ function resizeCanvasAccordingToParentSize() {
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image213.png?raw=true"
-   alt=" "
-   width="55%" />
+  width="55%"
+  alt="." />
 &nbsp;
 <br/>
 
@@ -15806,12 +15806,12 @@ In that course, you will learn:
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 214. sprite sheet (xxx) -------------------------------------->
+<!---------------------------------- 214. sprite sheet (xxx) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image214.png?raw=true"
-   alt="Sprite sheet"
-   width="35%" />
+  width="35%"
+  alt="Sprite sheet." />
 &nbsp;
 <br/>
 
@@ -15873,8 +15873,8 @@ Feel free to look at the source code in the <a href="https://jsbin.com/sivula/e
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image215.png?raw=true"
-   alt=" "
-   width="45%" />
+   width="45%"
+   alt=" " />
 &nbsp;
 <br/>
 
@@ -20848,7 +20848,7 @@ How to get a map centered on your longitude and latitude.
 <h4>JavaScript</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 function getLocation(e) {
@@ -20888,7 +20888,7 @@ alert('Get current position fail. Please access codepen to get geolocation.');
 <h4>CSS</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 html, body {
@@ -20919,14 +20919,14 @@ display: inline-block;
 ```
 <html>
 <head>
-<meta charset="utf-8">
-<title>OpenStreetMap Example</title>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <meta charset="utf-8">
+  <title>OpenStreetMap Example</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 </head>
 <body>
-<button class="btn" onclick="getLocation(event)">Click to show your location with OpenStreetMap</button>
-<div id="map" class="map"></div>
+  <button class="btn" onclick="getLocation(event)">Click to show your location with OpenStreetMap</button>
+  <div id="map" class="map"></div>
 </body>
 </html>
 ```
@@ -20941,15 +20941,15 @@ display: inline-block;
  <summary>Click to expand!</summary>
 
 ```
-1. <html>
-2. <head>
-3.   <meta charset="utf-8">
-4.   <title>OpenStreetMap Example</title>
-5.   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
-6.   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-7. </head>
-8. <body>
-9.    <button class="btn" onclick="getLocation(event)">Click to show your location with OpenStreetMap</button>
+1.  <html>
+2.  <head>
+3.    <meta charset="utf-8">
+4.    <title>OpenStreetMap Example</title>
+5.    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+6.    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+7.  </head>
+8.  <body>
+9.    <button class="btn" onclick="getLocation(event)">Click to show your location with OpenStreetMap</button>
 10.   <div id="map" class="map"></div>
 11. </body>
 12. </html>
@@ -20967,7 +20967,7 @@ display: inline-block;
 <details>
  <summary>Click to expand!</summary>
 
-```css
+```
 1.  function getLocation(e) {
 2.    e.preventDefault();
 3.    if (!navigator.geolocation) {
@@ -21003,7 +21003,7 @@ display: inline-block;
 </details>
 
 <ul>
-  <li><i>Line 6</i> uses the [Geolocation API](https://www.w3.org/TR/geolocation-API/) to get the current position, in case of success it calls the success function, passing the location as parameter,
+  <li><i>Line 6</i> uses the <a href="https://www.w3.org/TR/geolocation-API/">Geolocation API</a> to get the current position, in case of success it calls the success function, passing the location as parameter,</li>
   <li><i>Lines 12 and 13></i> show how to get the longitude and latitude properties from the location,</li>
   <li>The rest is a basic use of the Leaflet API. Notice at <i>line 15</i> that 'map' is the id of the &lt;div&gt; from the HTML part of the code.</li>
 </ul>
@@ -21012,7 +21012,7 @@ display: inline-block;
 <h3 id="ch6-4-6">6.4.6 Reverse geocoding</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>
-Different Web services can be used to get an address from longitude and latitude. Most are free of charge, but they will ask you to register an API key and enter your credit card number. If you send too many requests, you will be charged.Such a service is the [Google Reverse Geocoding JavaScript API](https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse). For those of you who are really interested to know how this API works, please read the Google documentation and tutorials.
+Different Web services can be used to get an address from longitude and latitude. Most are free of charge, but they will ask you to register an API key and enter your credit card number. If you send too many requests, you will be charged.  Such a service is the <a href="https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse">Google Reverse Geocoding JavaScript API</a>. For those of you who are really interested to know how this API works, please read the Google documentation and tutorials.
 
 There is also an interesting Leaflet plugin (an extension to Leaflet) based on the <a href="https://www.gisgraphy.com/">Gisgraphy</a> (free open source framework) service, that comes with a <a href="https://services.gisgraphy.com/static/leaflet/index.html">nice demo of reverse geocoding</a>.
 
