@@ -15575,12 +15575,12 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 <h4>Example #1: changing the size of a canvas on the fly erases its content!</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------- 208.  (xxx) ------------>
+<!---------------------------- 208. example 1 resize and erase (285) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image208.png?raw=true"
   width="45%"
-  alt=". " />
+  alt="Example #1 Changing the size of a canvas on the fly will erase its content. " />
 &nbsp;
 <br/>
 
@@ -15603,12 +15603,14 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 11. </button>
 ```
 
+</details>
+
 <h4>Example #2 : resize a canvas using CSS width and height properties with percentages</h4>
 
 This time we are using a similar example as above, but we removed the button for resizing it, and we set the size of the canvas to 100x100 pixels. Instead of drawing inside, we draw two lines that join the diagonals.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------- 209.  (xxx) ------------>
+<!----------- 209.  (286) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image209.png?raw=true"
@@ -15620,7 +15622,7 @@ This time we are using a similar example as above, but we removed the button fo
 Then, we added this CSS rule:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------- 210. (xxx) ------------>
+<!----------- 210. (286) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image210.png?raw=true"
@@ -15661,7 +15663,7 @@ This is the trick to create a really responsive canvas:
 Yep, this is not a straightforward process...
 
 <!------------------------------------------------------------------------------------------------>
-<!----------- 211. div and canvas inside; div has css width=100% and height=50% (xxx) ------------>
+<!----------- 211. div and canvas inside; div has css width=100% and height=50% (287) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image211.jpeg?raw=true"
@@ -15729,7 +15731,7 @@ function resizeCanvasAccordingToParentSize() {
 <h4>See the complete example that corresponds to the above code:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 212.  (xxx) -------------------------------------->
+<!------------------------------------- 212.  (288) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image212.png?raw=true"
@@ -15741,7 +15743,7 @@ function resizeCanvasAccordingToParentSize() {
 <h4>Example #4: the same example with the monster</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 213. (xxx) -------------------------------------->
+<!------------------------------------- 213. (288) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image213.png?raw=true"
@@ -15806,7 +15808,7 @@ In that course, you will learn:
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 214. sprite sheet (xxx) ------------------------------------->
+<!---------------------------------- 214. sprite sheet (289) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image214.png?raw=true"
@@ -15869,12 +15871,12 @@ It uses the geolocation API presented in Module 6 for auto-filling the address i
 Feel free to look at the source code in the <a href="https://jsbin.com/sivula/edit"?online example</a>:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 215.  (xxx) -------------------------------------->
+<!----------------------------- 215. auto-fill address input (291) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image215.png?raw=true"
+<img src="/images/image215.jpeg?raw=true"
    width="45%"
-   alt=" " />
+   alt="Geo-location API is used to auto-fill address input." />
 &nbsp;
 <br/>
 
@@ -15937,12 +15939,12 @@ The example shown in the video shows some best practices for writing accessible 
 The following additional example shows the same best practices but presents a more complete form with CSS rules to make a nice layout. See it [online](https://jsbin.com/zubitex/1/edit?html,output), and illustrated with the screenshot below. It is adapted from <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form">this very good MDN's article "How to structure a web form"</a>.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 212. form layout example -------------------------------------->
+<!------------------------------- 216. form layout example (294) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image212.jpeg?raw=true"
-   alt="Form layout example"
-   width="35%" />
+<img src="/images/image216.jpeg?raw=true"
+   width="35%"
+   alt="Payment form layout example." />
 &nbsp;
 <br/>
 
@@ -15987,12 +15989,12 @@ Forms can be visually and cognitively complex and difficult to use. Accessible f
 Form fields and other form controls usually have visible labels, such as "E-mail Address:" as the label for a text field (see figure below).
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 217. form label text (xxx) ---------------------------------->
+<!---------------------------------- 217. e-mail form label text (xxx) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image217.png?raw=true"
-   alt="Form labal text."
-   width="25%" />
+   width="25%"
+   alt="E-mail form label text." />
 &nbsp;
 <br/>
 
@@ -16185,12 +16187,12 @@ MDN's Web docs [article on <input> types](https://developer.mozilla.org/en-US
 Now, let's play with some of these input types and attributes.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 223. form layout example -------------------------------------->
+<!-------------------------- 223. html4 to html5 time to update (299) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image223.jpeg?raw=true"
-   alt="HTML4 old HTML5."
-   width="20%" />
+   width="20%"
+   alt="HTML4 old HTML5." />
 &nbsp;
 <br/>
 
@@ -16203,7 +16205,7 @@ For years, we used hundreds of lines of JavaScript for selecting colors. Now, it
 Here is how it looks on some mobile devices:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 224. html input type color - android (xxx) --------------------------->
+<!------------------------- 224. html input type color - android (299) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image224.jpeg?raw=true"
@@ -16232,7 +16234,7 @@ Try <input type="color"> online with this <a href="https://jsbin.com/cajuzob/1
 Here is the result on Google Chrome (works with other browsers too, though the <i>look and feel</i> may differ):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 225. input type color ---------------------------->
+<!--------------------------- 225. input type color (300) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image225.jpeg?raw=true"
@@ -16246,7 +16248,7 @@ Here is the result on Google Chrome (works with other browsers too, though the 
 The <input type="color"> can fire change or input events. Here is an example that changes the background color of the page when a color is chosen. [Try it online at JSBin](https://jsbin.com/jozuter/1/edit?html,css,js,console,output).
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 226. change backgound color of the body (xxx) ------------------------->
+<!------------------------ 226. change backgound color of the body (300) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image226.jpeg?raw=true"
@@ -16287,7 +16289,7 @@ By default, the color selector offers many options that may either frighten some
 Example: click the black rectangle on the right:  . The following should be displayed:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 227. restricted choice of color (xxx) ----------------------------->
+<!---------------------------- 227. restricted choice of color (301) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image227.jpeg?raw=true"
@@ -16330,7 +16332,7 @@ For years, date and time pickers in HTML forms made Web developers rely heavily 
 Below are a few screenshots of the HTML5 date picker on several mobile devices. Note that the native date pickers of the operating systems are used:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 228.  (xxx) ------------------->
+<!--------------- 228.  (302) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image228.png?raw=true"
@@ -16338,7 +16340,7 @@ Below are a few screenshots of the HTML5 date picker on several mobile devices.�
    alt="Date picker 1." />
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 229.  (xxx) ------------------->
+<!--------------- 229.  (302) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image229.jpeg?raw=true"
@@ -16346,7 +16348,7 @@ Below are a few screenshots of the HTML5 date picker on several mobile devices.�
    alt="Date picker 2 on mobile." />
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 230.  (xxx) ------------------->
+<!--------------- 230.  (302) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image230.png?raw=true"
@@ -16361,7 +16363,7 @@ Why don't you try it yourself? Just click on this input field:    
 With Firefox, it shows this date picker widget:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 231.  (xxx) ------------------->
+<!--------------- 231.  (302) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image231.png?raw=true"
@@ -16393,7 +16395,7 @@ The <input type="date"> comes with several useful attributes. In particular th
 Try this example: just click the next input field: , or <a href="https://jsbin.com/faluta/1/edit?html,output">try it online on JSBin</a> if you want to tweak the source code: 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------- 232. only dates between min and max are selectable (xxx) --------------------->
+<!----------------- 232. only dates between min and max are selectable (303) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image232.jpeg?raw=true"
@@ -16423,7 +16425,7 @@ Using the value attribute for setting a date, and using step=7 for example, 
 Example: we want to celebrate birthday parties only on Saturdays, [check this on JSBin](https://jsbin.com/hudafo/1/edit?html,output)! (screenshot from Chrome).
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 233.  (xxx) ------------------->
+<!--------------- 233.  (304) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image233.png?raw=true"
@@ -16447,7 +16449,7 @@ Example: we want to celebrate birthday parties only on Saturdays, [check this 
 <a href="https://jsbin.com/gezawe/1/edit?html,output">Online example at JSBin</a> (screenshot from Chrome).
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 234.  (xxx) ------------------->
+<!--------------- 234.  (304) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image234.jpeg?raw=true"
@@ -16525,7 +16527,7 @@ The object returned to the input event handler has a useful property named valu
 <a href="https://jsbin.com/renevaf/edit?html,output">The following example at JSBin</a> shows how to ascertain whether a date is in the past or in the future: 
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 235.  (xxx) ------------------->
+<!--------------- 235.  (306) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image235.jpeg?raw=true"
