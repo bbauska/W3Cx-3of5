@@ -16341,15 +16341,12 @@ Below are a few screenshots of the HTML5 date picker on several mobile devices.�
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 229. 03 oct 2013 sample custom reusable widget (302) ---------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
 <img src="./images/image229.jpeg?raw=true"
    width="10%"
    alt="Date picker 2 on mobile." />
-</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 230. 2012-09-11 sample custom reusable widget (302) ---------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
 <img src="./images/image230.png?raw=true"
    width="30%"
    alt="Date picker 3 on mobile." />
@@ -16357,7 +16354,7 @@ Below are a few screenshots of the HTML5 date picker on several mobile devices.�
 
 The problem is different on a desktop. While it's great to have native support for a date picker, Web developers would sometimes prefer 100% control over the <i>look and feel</i> of the date picker widget. For this purpose, the solution undoubtedly lies with the new [Web Components](https://webcomponents.org/) (a way to make custom reusable widgets in HTML/CSS/JS), to be detailed in the W3Cx HTML5 Apps and Games course
 
-Why don't you try it yourself? Just click on this input field:    
+Why don't you try it yourself? Just click on this input field: (not in github)
 
 With Firefox, it shows this date picker widget:
 
@@ -16370,7 +16367,7 @@ With Firefox, it shows this date picker widget:
    alt="Firefox desktop date picker widget." />
 </p>
 
-On non-supported browsers, it defaults to an <input type="text"> input field.
+On non-supported browsers, it defaults to an &lt;input type="text"&gt; input field.
 
 <h4>Typical use of &lt;input type="date"&gt;</h4>
 
@@ -16389,9 +16386,9 @@ Most of the time you will add other attributes to give some restrictions (choose
 
 <h4>Restrict choice to an interval of dates: attributes min, max and value</h4>
 
-The <input type="date"> comes with several useful attributes. In particular the value, min and max attributes are used to propose a default date, a min and a max date, or for defining an interval of acceptable values.
+The &lt;input type="date"&gt; comes with several useful attributes. In particular the value, min and max attributes are used to propose a default date, a min and a max date, or for defining an interval of acceptable values.
 
-Try this example: just click the next input field: , or <a href="https://jsbin.com/faluta/1/edit?html,output">try it online on JSBin</a> if you want to tweak the source code: 
+Try this example: just click the next input field or <a href="https://jsbin.com/faluta/1/edit?html,output">try it online on JSBin</a> if you want to tweak the source code:
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------- 232. only dates between min and max are selectable (303) --------------------->
@@ -16594,20 +16591,18 @@ The HTML5 specification indicates that we can use <input type="date"> and <in
 
 <h4>Some screenshots from Opera desktops and Safari IOS:</h4>
 
-```
-<input type="time">:
-```
+&lt;input type="time"&gt;
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 237.  (xxx) ------------------->
+<!---------------------------------- 237. select a time (307) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image237.png?raw=true"
    width="30%"
-   alt="Time" />
+   alt="Input type=time, select a time." />
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 238.  (xxx) ------------------->
+<!------------------------------ 238. select a date and time (307) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image238.png?raw=true"
@@ -16615,9 +16610,10 @@ The HTML5 specification indicates that we can use <input type="date"> and <in
    alt="Input type=time safari IOS." />
 </p>
 
-<input type="datetime">
+&lt;input type="datetime"&gt;
+
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 239.  (xxx) ------------------->
+<!----------------------------------- 239. select a time (307) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image239.png?raw=true"
@@ -16626,51 +16622,55 @@ The HTML5 specification indicates that we can use <input type="date"> and <in
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 240.  (xxx) ------------------->
+<!-------------------------- 240. jun 7, 2011 select date/time (308) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image240.png?raw=true"
    width="20%"
-   alt="Input type=datetime on Safari IOS." />
+   alt="Select date/time. Wed 7:29pm, June 7, 2011. Input type=datetime on Safari IOS." />
 </p>
 
-<input type="datetime-local">
+&lt;input type="datetime-local"&gt;
+
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 241.  (xxx) ------------------->
+<!----------------------- 241. 2012-02-18 00:08 select date/time (308) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image241.png?raw=true"
    width="20%"
-   alt="datetime-local example." />
+   alt="Select date and time using datetime-local." />
 </p>
 
-<input type="week">:
+&lt;input type="week"&gt;:
+
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 242.  (xxx) ------------------->
+<!------------------------------ 242. 2012w07 select a week (308) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image242.jpeg?raw=true"
    width="40%"
-   alt="Week" />
+   alt="Select a Week." />
 </p>
-<input type="month">:
+
+&lt;input type="month"&gt;:
+
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 243.  (xxx) ------------------->
+<!--------------- 243. 2012-02 select birthdate month & year (308) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image243.jpeg?raw=true"
    width="40%"
-   alt="Month" />
+   alt="2012-02 Select month and year of birthdate." />
 </p>
 <!-- width="4.0in" height="1.4222222222222223in"} -->
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 244.  (xxx) ------------------->
+<!-------------------------- 244. june 2011 select month & year (309) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image244.jpeg?raw=true"
+<img src="./images/image244.png?raw=true"
    width="20%"
-   alt="input type=month safari." />
+   alt="June, 2011 select input type=month safari." />
 </p>
 
 <!------------------------------------------------------------------------------------------------>
@@ -16683,7 +16683,7 @@ Let's study 4 input types: email", "tel", "URL" and "search".
 
 This input type is relatively straightforward to use. In mobile applications, this new input type pops up a keyboard layout adapted to email input. Note the "@" key, the "." key, etc.
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 245.  (xxx) ------------------->
+<!------------------------------- 245. mobile email address (309) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image245.jpeg?raw=true"
@@ -16703,12 +16703,12 @@ Typical use:
 <a href="https://codepen.io/w3devcampus/pen/aWXKWR">Online example at CodePen</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 246.  (xxx) ------------------->
+<!-------------------------------- 246. enter your email (310) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image246.png?raw=true"
    width="30%"
-   alt="." />
+   alt="Enter your email." />
 </p>
 
 Try it on your browser:                         Enter your email: 
@@ -16744,20 +16744,20 @@ Note the CSS rule that turns the background color of the email input field to p
 This input field is really useful on smartphones and tablets, as it makes the browser pop up a keyboard layout suitable for entering phone numbers:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 247.  (xxx) ------------------->
+<!--------------- 247. enter your telephone number (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image247.png?raw=true"
-   width="20%"
-   alt="Mobile keyboard 1 for input type=tel." />
+  width="20%"
+  alt="Mobile keyboard 1 for input type=tel." />
 </p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 248.  (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image248.png?raw=true"
-   width="20%"
-   alt="Other mobile keyboard 1 for input type=tel." />
+  width="20%"
+  alt="Other mobile keyboard 1 for input type=tel." />
 </p>
 
 This input type is often used with the new placeholder and pattern attributes that are detailed in another section of this course. It is supported by all recent major Web browsers, on mobile devices and desktops.
