@@ -1241,7 +1241,7 @@ Since the very beginning, HTML has had heading elements: &lt;h1&gt;...&lt;h6&gt
 
 <h6>This is a H6 heading</h6>
 <p>
-These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define *an outline of the document*. To illustrate this, we have used a browser extension. 
+These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define <i>an outline of the document</i>. To illustrate this, we have used a browser extension. 
 
 Here is the result for the previous example:</p>
 
@@ -3668,7 +3668,7 @@ There are several ways to provide machine-readable content embedded in a classic
 
 Adding microdata to Web pages helps search engines to better understand the pages' content, their topics, etc. The main purpose of microdata is <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">Search Engine Optimization</a>(SEO).
 
-This information is not visible to humans: it is pure *semantic information*. Popular kinds of microdata are events, a person's profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. 
+This information is not visible to humans: it is pure <i>semantic information</i>. Popular kinds of microdata are events, a person's profile, the description of an organization, the details of a recipe, a product description, a geographical location, etc. 
 
 <h4>Quick example of microdata that describes a person</h4>
 
@@ -5672,7 +5672,7 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 
 <p>The video example tests nearly all the possibilities for positioning subtitles/captions, styling (using HTML element wrapping with &lt;b&gt;, &lt;i&gt;,  etc.), voicing (subtitles corresponding to different characters will be displayed in different colors) and CSS styling.
 
-It is possible to locate the cues in the video viewport using absolute or relative values. The attributes that position the text are located on the same line as the cue definition, like at *line 9* of the previous WebVTT example file:</p>
+It is possible to locate the cues in the video viewport using absolute or relative values. The attributes that position the text are located on the same line as the cue definition, like at <i>line 9</i> of the previous WebVTT example file:</p>
 
 ```
 9.  00:00:11.000 --> 00:00:15.000<b> position:5% align:start</b>
@@ -6217,9 +6217,9 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 <ul>
   <li><i>Lines 11-13</i>: we call navigator.getUserMedia. The parameters indicate that we want to capture the video and the audio from the current device (default Webcam). The call to getUserMedia returns an ES6 promise: the then(stream) method that follows.</li>
   <li><i>Line 14</i>: the then(stream) method is called in case of success and gets the current audio/video stream as parameter. This is passed by the browser to your JavaScript code.</li>
-  <li><i>Lines 15-19</i>: The *line 16 *sets the audio/video stream of the default Webcam to the srcObject attribute of the video element, while *line 18* starts displaying it in the video player (there can be more than one Webcam, we'll see how to select one in particular next). *Line 19* stores the stream in a global variable so that we can use it from another function (for stopping/starting the Webcam...)</li>
+  <li><i>Lines 15-19</i>: The <i>line 16 </i>sets the audio/video stream of the default Webcam to the srcObject attribute of the video element, while <i>line 18</i> starts displaying it in the video player (there can be more than one Webcam, we'll see how to select one in particular next). <i>Line 19</i> stores the stream in a global variable so that we can use it from another function (for stopping/starting the Webcam...)</li>
   <li><i>Lines 19-23</i> define the catch method called in case of error (it could be that the Webcam cannot be accessed, or authorizations have not been granted).</li>
-  <li><i>Lines 25-27</i>: a function for stopping the Webcam. We use the global variable webcamStream here, that has been initialized when we started using the Webcam in *line 19*. We have to stop separately the audio and the video streams.</li>
+  <li><i>Lines 25-27</i>: a function for stopping the Webcam. We use the global variable webcamStream here, that has been initialized when we started using the Webcam in <i>line 19</i>. We have to stop separately the audio and the video streams.</li>
 </ul>
 
 <h4>Other examples that mix what we've seen in previous chapters, but this time with a live video stream</h4>
@@ -7116,7 +7116,7 @@ This means "display in the JavaScript console the message...". If we open the co
   alt="JavaScript debugging using the dev tool console." />
 </p>
 
-It is also possible to use the "real dev. tool console", and for this I recommend running the application in a single window, not in the JS Bin editor. Press the black arrow on the top right of the output window - this will render the page as a standalone Web page, then press *F12*. You should see:
+It is also possible to use the "real dev. tool console", and for this I recommend running the application in a single window, not in the JS Bin editor. Press the black arrow on the top right of the output window - this will render the page as a standalone Web page, then press <i>F12</i>. You should see:
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 117. view of the javascript debug devtool console (143) --------------------->
@@ -10228,7 +10228,7 @@ ctx.fill();
 
 Hey - it does not work! Weirdly, the two parts of the path are filled in pink! But we called stroke() after the first half of the path was drawn (<i>lines 5-8</i>). Then we called fill() only after the second part of the path was specified (<i>lines 14-19</i>)... so, what happened?
 
-Remember that fill() or stroke() *draws the whole path*, even if it is disconnected, and even if it has already been drawn!
+Remember that fill() or stroke() <i>draws the whole path</i>, even if it is disconnected, and even if it has already been drawn!
 
 What happened is:
 
@@ -11285,7 +11285,7 @@ The control point controls the curvature - if we move the control point farther 
 
 </details>
 
-We set a starting point in *line 6*: moveTo(...), then set the control and ending points with a call to quadraticCurve(...), at *line 7*, then set some properties for color, thickness, and finally we call the stroke() method for drawing the curve.
+We set a starting point in <i>line 6</i>: moveTo(...), then set the control and ending points with a call to quadraticCurve(...), at <i>line 7</i>, then set some properties for color, thickness, and finally we call the stroke() method for drawing the curve.
 
 <h4>Example #2: lines connected with a quadratic curve</h4>
 
@@ -12917,7 +12917,7 @@ Below are 4 rectangles drawn with 4 different patterns.
 &nbsp;
 <br/>
 
-We said earlier that we cannot draw before the image used by a pattern is loaded. This can become rapidly complicated if we need to draw using multiple patterns. We need a way to load all images and then, *only when all images have been loaded, start drawing*.
+We said earlier that we cannot draw before the image used by a pattern is loaded. This can become rapidly complicated if we need to draw using multiple patterns. We need a way to load all images and then, <i>only when all images have been loaded, start drawing</i>.
 
 JavaScript is an asynchronous language. When you set the src attribute of an image, then an asynchronous request is sent by the browser, and then after a while, the onload callback is called... The difficult part to understand for those who are not familiar with JavaScript is that these requests are done in parallel and we do not know when, and in what order, the images will be loaded.
 
@@ -14403,7 +14403,7 @@ Many HTML5 games perform what we call a "time-based animation". For this, we n
 
 Depending on this time, we can compute the distances that must be achieved by each object on the screen in order to move at a constant speed (for a human eye), independently of the CPU or GPU of the computer or mobile device that is running the game.
 
-The timeStamp parameter of the animationLoop function (*line 1* in the above code) is useful for exactly that: it gives a high resolution time. By measuring deltas between two consecutive calls of the animationLoop, we will know exactly, with a sub-millisecond accuracy, the elapsed time between two frames.
+The timeStamp parameter of the animationLoop function (<i>line 1</i> in the above code) is useful for exactly that: it gives a high resolution time. By measuring deltas between two consecutive calls of the animationLoop, we will know exactly, with a sub-millisecond accuracy, the elapsed time between two frames.
 
 Using time-based animation, and more generally, using the canvas element for writing HTML5 games, is part of the W3Cx HTML5 Apps and Games course.
 
@@ -15102,7 +15102,7 @@ There are other events related to the mouse:
 
 -   mouseleave: similar to mouseout, fired when the mouse leaves the surface of the element. The difference between mouseleave and mouseout is that mouseleave does not fire when the cursor moves over descendant elements, and mouseout is fired when the element moved is outside of the bounds of the original element or is a child of the original element.
 
--   mouseover: the mouse cursor is moving over the element that listens to that event. A mouseover event occurs on an element when you are over it - coming from either its child OR parent element*, but a mouseenter event only occurs when the mouse *moves from the parent element to the child element.
+-   mouseover: the mouse cursor is moving over the element that listens to that event. A mouseover event occurs on an element when you are over it - coming from either its child OR parent element, but a mouseenter event only occurs when the mouse moves from the parent element to the child element.
 
 -   mousedown: fired when a mouse button is pressed.
 
@@ -15566,7 +15566,7 @@ Resizing a canvas can be tricky if we don't know a few rules that might not be 
 
 -   Changing the width or height property of a canvas in JavaScript erases its content and resets its context,
 
--   Using percentages (%) in the CSS width and height properties of a canvas does not change its number of pixels/resolution*[.] Instead, it scales the existing pixels without erasing the content, giving a blurry effect when a canvas becomes larger, for example.
+-   Using percentages (%) in the CSS width and height properties of a canvas does not change its number of pixels/resolution[.] Instead, it scales the existing pixels without erasing the content, giving a blurry effect when a canvas becomes larger, for example.
 
 Before looking at how best to handle canvas resizing, let's see some examples below:
 
@@ -15845,9 +15845,9 @@ With HTML5, forms, which had shown little improvement since 1997, evolved consid
 
 HTML5 took all this into account and thus provides:
 <ul>
-  <li>A set of input fields that include a validation API and visual feedback, contextualized keyboards, etc. Of course the look and feel depends on the web browser's implementations, but the HTML5 forms specification introduced 13 new <input type=.../> fields:  email, tel, color, url, date, datetime, datetime-local, month, week, time, range, number and search.</li><br/>
+  <li>A set of input fields that include a validation API and visual feedback, contextualized keyboards, etc. Of course the look and feel depends on the web browser's implementations, but the HTML5 forms specification introduced 13 new &lt;input type=.../&gt; fields:  email, tel, color, url, date, datetime, datetime-local, month, week, time, range, number and search.</li><br/>
   <li>Built-in validation system: JavaScript API for custom validation, CSS pseudo classes that are useful for changing an input field style depending on the validity of the input.</li><br/>
-  <li>Other goodies, such as the option to set an input field out of a &lt;form&gt;, new elements such as <datalist> for autocompletion, <output> for feedback, etc.</li><br/>
+  <li>Other goodies, such as the option to set an input field out of a &lt;form&gt;, new elements such as &lt;datalist&gt; for autocompletion, &lt;output&gt; for feedback, etc.</li><br/>
 </ul>
 
 Examples of contextual keyboards are shown above; they differ depending on the type of  <input> fields in the &lt;form&gt;. 
@@ -16074,7 +16074,7 @@ These give the same results:
 <i>Lines 1 and 2</i> render as:
 Submit Cancel
 
-... while li*nes 3 and 4* render as:
+... while <i>lines 3 and 4</i> render as:
 ![](./images/image220.wmf) 
 
 <h4>Labeling text areas</h4>
@@ -16234,12 +16234,12 @@ Try <input type="color"> online with this <a href="https://jsbin.com/cajuzob/1
 Here is the result on Google Chrome (works with other browsers too, though the <i>look and feel</i> may differ):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 225. input type color (300) ------------------------->
+<!----------------------------- 225. select input type=color (300) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image225.jpeg?raw=true"
    width="40%"
-   alt="." />
+   alt="Select a color, input type=color." />
 &nbsp;
 <br/>
 
@@ -16253,7 +16253,7 @@ The <input type="color"> can fire change or input events. Here is an examp
 <p align="center">
 <img src="./images/image226.jpeg?raw=true"
    width="40%"
-   alt="Change background color of the body." />
+   alt="Change background color of the page body." />
 &nbsp;
 <br/>
 
@@ -16289,7 +16289,7 @@ By default, the color selector offers many options that may either frighten some
 Example: click the black rectangle on the right:  . The following should be displayed:
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 227. restricted choice of color (301) ----------------------------->
+<!--------------------------- 227. restricted choice of colors (301) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image227.jpeg?raw=true"
@@ -16313,15 +16313,15 @@ Example: click the black rectangle on the right:  . The following should be di
 </datalist>
 ```
 
-Note that the id of the <datalist> element should be the same as the value of the list attribute of the input field.
+Note that the id of the &lt;datalist&gt; element should be the same as the value of the list attribute of the input field.
 
 <h4>What are the main problems with this element?</h4>
 
-The main criticism that Web designers make about this element is related to its default appearance being strongly dependent on the browser and its underlying operating system. Changing the *look and feel* is not possible, except with the use of the options we saw in the previous sections of this page. This problem is also true for other input elements that renders as complex widgets, like <input type="date"> and its variants.
+The main criticism that Web designers make about this element is related to its default appearance being strongly dependent on the browser and its underlying operating system. Changing the <i>look and feel</i> is not possible, except with the use of the options we saw in the previous sections of this page. This problem is also true for other input elements that renders as complex widgets, like &lt;input type="date"&gt; and its variants.
 
 Another problem is that there is no way to control where the dialog that contains the color chooser will appear - no positioning via CSS or JavaScript is possible. The specification does not say anything about how to position it over the page, thus the result is vendor specific.
 
-The solution proposed by the W3C and its contributors is called *Web Components*, a new approach for designing HTML5 widgets, that is covered in the W3Cx HTML5 Apps and Games course.
+The solution proposed by the W3C and its contributors is called <i>Web Components</i>, a new approach for designing HTML5 widgets, that is covered in the W3Cx HTML5 Apps and Games course.
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-4-3">5.4.3 "date"</h3>
@@ -16332,15 +16332,14 @@ For years, date and time pickers in HTML forms made Web developers rely heavily 
 Below are a few screenshots of the HTML5 date picker on several mobile devices. Note that the native date pickers of the operating systems are used:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 228.  (302) ------------------->
+<!----------------- 228. december 22, 2011 sample custom reusable widget (302) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image228.png?raw=true"
    width="20%"
    alt="Date picker 1." />
-</p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 229.  (302) ------------------->
+<!-------------------- 229. 03 oct 2013 sample custom reusable widget (302) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image229.jpeg?raw=true"
@@ -16348,7 +16347,7 @@ Below are a few screenshots of the HTML5 date picker on several mobile devices.�
    alt="Date picker 2 on mobile." />
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 230.  (302) ------------------->
+<!--------------------- 230. 2012-09-11 sample custom reusable widget (302) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image230.png?raw=true"
@@ -16356,19 +16355,19 @@ Below are a few screenshots of the HTML5 date picker on several mobile devices.�
    alt="Date picker 3 on mobile." />
 </p>
 
-The problem is different on a desktop. While it's great to have native support for a date picker, Web developers would sometimes prefer 100% control over the *look and feel* of the date picker widget. For this purpose, the solution undoubtedly lies with the new [Web Components](https://webcomponents.org/) (a way to make custom reusable widgets in HTML/CSS/JS), to be detailed in the W3Cx HTML5 Apps and Games course
+The problem is different on a desktop. While it's great to have native support for a date picker, Web developers would sometimes prefer 100% control over the <i>look and feel</i> of the date picker widget. For this purpose, the solution undoubtedly lies with the new [Web Components](https://webcomponents.org/) (a way to make custom reusable widgets in HTML/CSS/JS), to be detailed in the W3Cx HTML5 Apps and Games course
 
 Why don't you try it yourself? Just click on this input field:    
 
 With Firefox, it shows this date picker widget:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 231.  (302) ------------------->
+<!--------------------------- 231. firefox date picker widget (302) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image231.png?raw=true"
    width="20%"
-   alt="Firefox desktop date picker." />
+   alt="Firefox desktop date picker widget." />
 </p>
 
 On non-supported browsers, it defaults to an <input type="text"> input field.
@@ -16425,12 +16424,12 @@ Using the value attribute for setting a date, and using step=7 for example, 
 Example: we want to celebrate birthday parties only on Saturdays, [check this on JSBin](https://jsbin.com/hudafo/1/edit?html,output)! (screenshot from Chrome).
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 233.  (304) ------------------->
+<!------------------------ 233. using step to allow only saturdays (304) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image233.png?raw=true"
    width="40%"
-   alt="Use of the step attribute, select only Saturdays." />
+   alt="Use of the step attribute, allow only Saturdays." />
 </p>
 
 <h4>Extract from source code:</h4>
@@ -16444,12 +16443,12 @@ Example: we want to celebrate birthday parties only on Saturdays, [check this 
   step="7">
 ```
 
-<h4>Combining with the <datalist> element to restrict the choice of possible values</h4>
+<h4>Combining with the &lt;datalist&gt; element to restrict the choice of possible values</h4>
 
 <a href="https://jsbin.com/gezawe/1/edit?html,output">Online example at JSBin</a> (screenshot from Chrome).
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 234.  (304) ------------------->
+<!--------------------- 234. only values from datalist are proposed (304) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image234.jpeg?raw=true"
@@ -16527,23 +16526,23 @@ The object returned to the input event handler has a useful property named valu
 <a href="https://jsbin.com/renevaf/edit?html,output">The following example at JSBin</a> shows how to ascertain whether a date is in the past or in the future: 
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 235.  (306) ------------------->
+<!---------------------------- 235. is date in past or future? (306) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image235.jpeg?raw=true"
    width="40%"
-   alt="Date in the past: it is ok." />
+   alt="Check if date is in the past or future." />
 </p>
 
 While if we enter a date in the future:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 236.  (xxx) ------------------->
+<!------------------------------ 236. enter your birth date (306) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image236.jpeg?raw=true"
    width="30%"
-   alt="Date in the future: bad." />
+   alt="Enter your Birthdate in the future: bad." />
 </p>
 
 <h4>Extract from source code:</h4>
@@ -16694,9 +16693,9 @@ This input type is relatively straightforward to use. In mobile applications, th
 
 This input type is very interesting as it provides default validation behaviors:
 
-If the value entered looks like an email address (contains a "@"...), the field is *valid*, and gets the pseudo CSS class  :valid
+If the value entered looks like an email address (contains a "@"...), the field is <i>valid</i>, and gets the pseudo CSS class  :valid
 
-If the value entered does not contain an "@", and does not look like an email address, the field is *invalid* and gets the pseudo CSS class :invalid
+If the value entered does not contain an "@", and does not look like an email address, the field is <i>invalid</i> and gets the pseudo CSS class :invalid
 
 See the next example to see this in action. More details will be presented in a later section dedicated to form validation.
 
@@ -16738,7 +16737,7 @@ Try it on your browser:                         Enter your email: 
 
 </details>
 
-Note the CSS rule that turns the background color of the email input field to pink if a user enters an invalid address (*lines 7-8*). Also note that the validation is based only on matching a regular expression (the address should contain a "@",  a ".", etc.). It does not check if the address is an existing one.
+Note the CSS rule that turns the background color of the email input field to pink if a user enters an invalid address (<i>lines 7-8</i>). Also note that the validation is based only on matching a regular expression (the address should contain a "@",  a ".", etc.). It does not check if the address is an existing one.
 
 &lt;input type="tel"&gt;
 
@@ -16989,15 +16988,15 @@ This field accepts specific attributes max, min, step, value (default disp
 
 This input type is very interesting as it provides default validation behaviors:
 
-If the value entered using a keyboard is not a valid number, or is not in the range defined by the min and max attributes, the field is *invalid* and gets the pseudo CSS class :invalid.
+If the value entered using a keyboard is not a valid number, or is not in the range defined by the min and max attributes, the field is <i>invalid</i> and gets the pseudo CSS class :invalid.
 
-If the difference between the value you enter and min is a multiple of step, then it gets the CSS pseudo class :valid , otherwise it will be *invalid*. Example: if min=1 and step=5, the field will be valid with value=1, 6, 11, 16 etc. if min=0, with value=0, 5, 10, 15 etc.
+If the difference between the value you enter and min is a multiple of step, then it gets the CSS pseudo class :valid , otherwise it will be <i>invalid</i>. Example: if min=1 and step=5, the field will be valid with value=1, 6, 11, 16 etc. if min=0, with value=0, 5, 10, 15 etc.
 
-**WARNING 1**: **Using a step attribute with an integer value will make the arrows increment/decrement the current value with the step value, and [make the input field valid only when ]the difference between the value you enter and min is a multiple of step. **
+<b>WARNING 1</b>: <b>Using a step attribute with an integer value will make the arrows increment/decrement the current value with the step value, and [make the input field valid only when ]the difference between the value you enter and min is a multiple of step. </b>
 
-**WARNING 2: by default, omitting the step attribute is equivalent to step="1", [so for entering float values, it is necessary to use step="any" or step equal to a floating point value such as step="0.1"].**
+<b>WARNING 2: by default, omitting the step attribute is equivalent to step="1", [so for entering float values, it is necessary to use step="any" or step equal to a floating point value such as step="0.1"].</b>
 
-**With step="any", floating point values are valid, but vertical arrows will increment/decrement the value by one. If step="0.1", arrows will increment/decrement by 0.1, etc.**
+<b>With step="any", floating point values are valid, but vertical arrows will increment/decrement the value by one. If step="0.1", arrows will increment/decrement by 0.1, etc.</b>
 
 <a href="https://codepen.io/w3devcampus/pen/GJrQzP):">Online example in CodePen</a> try changing the attribute values, use step="any" and try float values, etc).
 
@@ -17186,7 +17185,7 @@ In the previous example, it's necessary to add quotes for setting step="0.5" (
 value=5 min=0, max=10 step="any":  
 ```
 
-**WARNING**: Using a step attribute with an integer value will make the slider jump corresponding to the step value. By default, omitting the step attribute is equivalent to step="1".
+<b>WARNING</b>: Using a step attribute with an integer value will make the slider jump corresponding to the step value. By default, omitting the step attribute is equivalent to step="1".
 So, for accepting float values, it is necessary to use step="any", or step equal to a floating point value, such as step="0.5".
 
 Adding "ticks" to the range slider using a &lt;datalist&gt; element
@@ -17239,43 +17238,43 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 </ul>
 
 +----------------------------------------------------------------------------------+---------------------------------------+
-| ### **HTML4**                                                                    | ### **HTML5**                         |
+| ### <b>HTML4</b>                                                                    | ### <b>HTML5</b>                         |
 +==================================================================================+=======================================+
-| -   **name**                                                                     | -   **form**                          |
+| -   <b>name</b>                                                                     | -   <b>form</b>                          |
 |                                                                                  |                                       |
-| -   **disabled***                                                               | -   **readonly**                      |
+| -   <b><i>disabled</i></b>                                                               | -   <b>readonly</b>                      |
 |                                                                                  |                                       |
-| -   **type**                                                                     | -   **autocomplete**                  |
+| -   <b>type</b>                                                                     | -   <b>autocomplete</b>                  |
 |                                                                                  |                                       |
-| -   **maxlength**                                                                | -   **autofocus**                     |
+| -   <b>maxlength</b>                                                                | -   <b>autofocus</b>                     |
 |                                                                                  |                                       |
-| -   **readonly**                                                                 | -   **list**                          |
+| -   <b>readonly</b>                                                                 | -   <b>list</b>                          |
 |                                                                                  |                                       |
-| -   **size**                                                                     | -   **pattern**                       |
+| -   <b>size</b>                                                                     | -   <b>pattern</b>                       |
 |                                                                                  |                                       |
-| -   **value**                                                                    | -   **required***                    |
+| -   <b>value</b>                                                                    | -   <b><i>required</i></b>                    |
 |                                                                                  |                                       |
-| -   **alt**                                                                      | -   **placeholder**                   |
+| -   <b>alt</b>                                                                      | -   <b>placeholder</b>                   |
 |                                                                                  |                                       |
-| -   **src**                                                                      | -   **multiple**                      |
+| -   <b>src</b>                                                                      | -   <b>multiple</b>                      |
 |                                                                                  |                                       |
-| -   **height**                                                                   | -   **list**                          |
+| -   <b>height</b>                                                                   | -   <b>list</b>                          |
 |                                                                                  |                                       |
-| -   **width**                                                                    | -   **min**                           |
+| -   <b>width</b>                                                                    | -   <b>min</b>                           |
 |                                                                                  |                                       |
-| -   **checked***                                                                | -   **max**                           |
+| -   <b><i>checked</i></b>                                                                | -   <b>max</b>                           |
 |                                                                                  |                                       |
-| -   **align ****                                                               | -   **step**                          |
+| -   <b><i>align</i></b>                                                          | -   <b>step</b>                          |
 |                                                                                  |                                       |
-|                                                                                  | -   **formaction**                    |
+|                                                                                  | -   <b>formaction</b>                    |
 |                                                                                  |                                       |
-|                                                                                  | -   **formenctype**                   |
+|                                                                                  | -   <b>formenctype</b>                   |
 |                                                                                  |                                       |
-|                                                                                  | -   **formmethod**                    |
+|                                                                                  | -   <b>formmethod</b>                    |
 |                                                                                  |                                       |
-|                                                                                  | -   **formtarget**                    |
+|                                                                                  | -   <b>formtarget</b>                    |
 |                                                                                  |                                       |
-|                                                                                  | -   **formnovalidate**                |
+|                                                                                  | -   <b>formnovalidate</b>                |
 +----------------------------------------------------------------------------------+---------------------------------------+
 | *   pseudoclasses CSS target with :disabled and :checked or :required selectors |                                       |
 |                                                                                  |                                       |
@@ -17358,7 +17357,7 @@ Bottom of Form
 
 </details>
 
-*Lines 12* and *22* shows the form attribute. Make sure that its value matches the id of the form!
+<i>Lines 12</i> and <i>22</i> shows the form attribute. Make sure that its value matches the id of the form!
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="5-5-3">5.5.3 autocomplete</h3>
@@ -17523,11 +17522,11 @@ Read [these explanations](https://html.spec.whatwg.org/multipage/common-microsy
 <h3 id=ch5-5-5">5.5.5 list</h3>
 <!------------------------------------------------------------------------------------------------>
 
-This attribute works together with the new <datalist> element we already studied when we saw the color and date input fields.
+This attribute works together with the new &lt;datalist&gt; element we already studied when we saw the color and date input fields.
 
-This attribute's value must match the id of a <datalist> element. It is useful for providing local auto-completion to some input fields, or for restricting the possible values on some others like <input type=date> or <input type=color>.
+This attribute's value must match the id of a &lt;datalist&gt; element. It is useful for providing local auto-completion to some input fields, or for restricting the possible values on some others like <input type=date> or <input type=color>.
 
-Here is a small code extract from a more complete example shown in the section about the new <datalist> element (see next unit).
+Here is a small code extract from a more complete example shown in the section about the new &lt;datalist&gt; element (see next unit).
 
 Please try it in your  browser (Type "F", "E", "O", C" etc., or just click inside the field and use the drop down menu). Note that you can also enter any value; if it does not start with one of these letters it will be accepted but will not trigger auto-completion.
 
@@ -17560,17 +17559,17 @@ Source code extract:
 
 </details>
 
-At *lines 3* and *5*, the value of the list attribute of the input field must match the one of the id of the <datalist> element.
+At <i>lines 3</i> and <i>5</i>, the value of the list attribute of the input field must match the one of the id of the &lt;datalist&gt; element.
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-5-6">5.5.6 pattern</h3>
 <!------------------------------------------------------------------------------------------------>
 
-The pattern attribute enables the validation of the user's input on the fly (also at submission time), based on **regular expressions**. It applies to the text, search, url, tel, email, and password input types. 
+The pattern attribute enables the validation of the user's input on the fly (also at submission time), based on <b>regular expressions</b>. It applies to the text, search, url, tel, email, and password input types. 
 
 The pattern attribute follows the syntax of [JavaScript regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). 
 
-A **must read**: a good catalog of ready-to-go patterns is available at html5pattern.com, an excellent Web site that proposes plenty of JavaScript patterns for the pattern attribute of HTML5 forms. The left hand menu proposes categorized patterns for [postal codes](http://html5pattern.com/Postal_Codes), [dates](http://html5pattern.com/Dates), [phones](http://html5pattern.com/Phones), etc. 
+A <b>must read</b>: a good catalog of ready-to-go patterns is available at html5pattern.com, an excellent Web site that proposes plenty of JavaScript patterns for the pattern attribute of HTML5 forms. The left hand menu proposes categorized patterns for [postal codes](http://html5pattern.com/Postal_Codes), [dates](http://html5pattern.com/Dates), [phones](http://html5pattern.com/Phones), etc. 
 
 You can also try [this online JavaScript RegExps tester](https://regex101.com/#javascript), and follow [this tutorial about "using JavaScript RegExps"](https://regexone.com/) that has step by step exercises and explanations.
 
@@ -17718,7 +17717,7 @@ Their detailed use with these input fields have already been explained in sectio
 ```
 1.  <input id="mydate" name="mydate"
 2.         type="date"
-3.        ** min="2012-01-01"**
+3.         **min="2012-01-01"**
 4.         **max="2013-01-01"**
 5.         value="2012-01-01"
 6.  />
@@ -17748,7 +17747,7 @@ The multiple attribute is used with email and file input types. It's a Boo
 
 With <input type="email">
 
-With the <input type="email">, this attribute enables the user to enter *a set of addresses, separated by a comma* instead of a single address. Entering several addresses will keep the input field *valid*.
+With the <input type="email">, this attribute enables the user to enter <i>a set of addresses, separated by a comma</i> instead of a single address. Entering several addresses will keep the input field <i>valid</i>.
 
 <a href="https://jsbin.com/mexirif/1/edit?html,output">Online example at JSBin</a>
 
@@ -18009,7 +18008,7 @@ Family name: ![](./images/image269.wmf)
 
 A word about the enctype attribute of the &lt;form&gt; element
 
-The enctype attribute existed before HTML5. It is often used together with forms that contain file input fields. For sending files to a remote server, we use **"*multipart*" forms**. This special encoding of forms needs to be specified using the enctype attribute, as shown in the example below:
+The enctype attribute existed before HTML5. It is often used together with forms that contain file input fields. For sending files to a remote server, we use <b>"<i>multipart</i>" forms</b>. This special encoding of forms needs to be specified using the enctype attribute, as shown in the example below:
 
 [Online example at JSBin](https://jsbin.com/magexat/3/edit?html,output):
 
@@ -18034,9 +18033,9 @@ Note that when you send form content using Ajax, this attribute is not needed, a
 
 <h4>As an attribute of the <input type="submit" enctype=...> element</h4>
 
-Since HTML5, this attribute can also be used in <input type="submit"> input fields.
+Since HTML5, this attribute can also be used in &lt;input type="submit"&gt; input fields.
 
-If an <input type="submit"> field has this attribute, then, **when submitted using method=POST**, the browser will send the form content encoded with the method specified by the formenctype attribute. And this overrides the value of the enctype attribute specified in the <form enctype=...> element (or its default value, if not present).
+If an &lt;input type="submit"&gt; field has this attribute, then, <b>when submitted using method=POST</b>, the browser will send the form content encoded with the method specified by the formenctype attribute. And this overrides the value of the enctype attribute specified in the &lt;form enctype=...&gt; element (or its default value, if not present).
 
 <h4>Typical use</h4>
 
@@ -18183,7 +18182,7 @@ Typical use / interactive examples
 5.  </form>
 ```
 
-The oninput event handler directly uses the <output> element using the value of its name attribute.
+The oninput event handler directly uses the &lt;output&gt; element using the value of its name attribute.
 
 Result (do change the input field values):
 
@@ -18285,11 +18284,11 @@ Grades:  
 
 <h4>Explanations:</h4>
 
-![The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the &lt;meter&gt; element (line 9) and update the displayed html content of the <output> element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
+![The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the &lt;meter&gt; element (line 9) and update the displayed html content of the &lt;output&gt; element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
 
-The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)") at li*ne 4*.
+The link between the slider (an &lt;input type=range&gt;) and the meter element is done using an input event handler (oninput="effect(...)") at <i>line 4</i>.
 
-The effect JavaScript function will change the current value of the &lt;meter&gt; element (<i>line 9</i>) and update the displayed html content of the <output> element (<i>line 10</i>).
+The effect JavaScript function will change the current value of the &lt;meter&gt; element (<i>line 9</i>) and update the displayed html content of the &lt;output&gt; element (<i>line 10</i>).
 
 The color of the gauge changes depending on the attribute's values
 
@@ -18380,7 +18379,7 @@ Download progress: 
 <h3 id="ch5-6-5">5.6.5 &lt;datalist&gt;</h3>
 <!------------------------------------------------------------------------------------------------>
 
-The <datalist> form element is useful for linking a list of choices to an input element.
+The &lt;datalist&gt; form element is useful for linking a list of choices to an input element.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 284.  (xx) ------------------------------->
@@ -18401,7 +18400,7 @@ The <datalist> form element is useful for linking a list of choices to an inpu
 &nbsp;
 <br/>
 
-We have already seen this element in action with different <input> elements, such as <input type="color">, <input type="date">, or <input type="range">.
+We have already seen this element in action with different &lt;input> elements, such as &lt;input type="color">, &lt;input type="date">, or &lt;input type="range">.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 227.  (xx) ------------------------------->
@@ -18473,7 +18472,7 @@ Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,outp
 
 </details>
 
-As you can see at l*ines 2* and *4*, the id and list attributes match. The <datalist> element is wrapped around a set of  <option> that are available for selection by another form control (in this example the input field from <i>line 2</i>).
+As you can see at <i>lines 2 and 4</i>, the id and list attributes match. The &lt;datalist&gt; element is wrapped around a set of &lt;option&gt; that are available for selection by another form control (in this example the input field from <i>line 2</i>).
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-7-1">5.7.1 Introduction</h3>
@@ -18481,7 +18480,7 @@ As you can see at l*ines 2* and *4*, the id and list attributes match. Th
 
 In this section of the course, we will look at CSS pseudo classes that are useful for giving instant feedback when the user's input is not valid. We will also look at the new JavaScript API introduced by HTML5 for validating forms and form elements.
 
-In the following pages, we will first illustrate the concept of form validation with the <input type="email"/> field. It can be generalized to all kind of input types, such as url, number, etc. Some form attributes, such as pattern,  will also affect input field validity!
+In the following pages, we will first illustrate the concept of form validation with the &lt;input type="email"/> field. It can be generalized to all kind of input types, such as url, number, etc. Some form attributes, such as pattern,  will also affect input field validity!
 
 Form validation is [supported](https://caniuse.com/#feat=form-validation) by all modern browsers.
 
@@ -18491,7 +18490,7 @@ Form validation is [supported](https://caniuse.com/#feat=form-validation) by a
 
 Most modern browsers propose default behavior for validating input fields and forms.
 
-The built-in validation system that comes with HTML5 automatically adds a CSS pseudo class to all input fields. Invalid fields (i.e. a badly worded email address in an <input type="email"> input field), will inherit the :invalid pseudo class, valid fields will inherit the :valid pseudo class.
+The built-in validation system that comes with HTML5 automatically adds a CSS pseudo class to all input fields. Invalid fields (i.e. a badly worded email address in an &lt;input type="email"> input field), will inherit the :invalid pseudo class, valid fields will inherit the :valid pseudo class.
 
 A first step to improve your HTML form is to add some CSS rules to your input fields. This adds visual feedback to the validity of input fields values - while the user is typing - such as changing the color of the border of input fields, or green/red icons on the right of the field, as shown in the small picture at the top right of this page.
 
@@ -19067,7 +19066,7 @@ However, HTML5 also comes with several APIs that are not directly related to HTM
 
 This week, we will look at some of the most useful APIs. Others will be covered in the <a href="https://www.edx.org/course/html5-apps-and-games">W3C HTML5 Apps and Games course</a>:
 <ul>
-  <li><b>The "Web Storage" API, sort of "super cookies", for storing pairs of key/values client side.</b> This API is useful for enabling Web sites to save/restore their state, or for writing *serverless* applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.</li>
+  <li><b>The "Web Storage" API, sort of "super cookies", for storing pairs of key/values client side.</b> This API is useful for enabling Web sites to save/restore their state, or for writing <i>serverless</i> applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.</li>
   <li><b>The File API, that enables Web applications to work with local files</b>. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.</li>
 </ul>
 
@@ -19175,13 +19174,13 @@ Objects managed by Web Storage are no longer carried on the network and HTTP, an
 <h3 id="ch6-2-2">6.2.2 Example 1</h3>
 <!------------------------------------------------------------------------------------------------>
 
-You can start filling this form and come back another day and complete it. It doesn't matter if you closed your browser before coming back. The form never loses what you entered, even if you reload the page, or press "backspace" by mistake. **This form auto saves/restores its content**.
+You can start filling this form and come back another day and complete it. It doesn't matter if you closed your browser before coming back. The form never loses what you entered, even if you reload the page, or press "backspace" by mistake. <b>This form auto saves/restores its content</b>.
 
 In this example, we use the most simple way to use localStorage:
 
--   **Save with the localStorage.key = value syntax. **For example, localStorage.firstName = 'Michel' will save the value "Michel" with the access key being 'firstName'
+-   <b>Save with the localStorage.key = value syntax. </b>For example, localStorage.firstName = 'Michel' will save the value "Michel" with the access key being 'firstName'
 
--   **Restore with the var value = localStorage.key syntax**. For example, var fn = localStorage.firstName; will set fn with the value 'Michel' if this value has been previously saved as in the example from the line above.
+-   <b>Restore with the var value = localStorage.key syntax</b>. For example, var fn = localStorage.firstName; will set fn with the value 'Michel' if this value has been previously saved as in the example from the line above.
 
 <h4>Saving the form content on the fly</h4>
 
@@ -19236,7 +19235,7 @@ This time, we want the form content to be restored on page load/reload. We will 
 
 </details>
 
-The tests at *lines 7, 10, 13*, etc., verify that data has been saved, before trying to restore it. Without these tests, it would put the "undefined" string as the value of input fields with no corresponding data to restore.
+The tests at <i>lines 7, 10, 13</i>, etc., verify that data has been saved, before trying to restore it. Without these tests, it would put the "undefined" string as the value of input fields with no corresponding data to restore.
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-2-3">6.2.3 localStorage and sessionStorage</h3>
@@ -19395,7 +19394,7 @@ You can check in the Chrome dev. tools user interface that the content of the l
 <h3 id="ch6-2-4">6.2.4 Example 2</h3>
 <!------------------------------------------------------------------------------------------------>
 
-Local stores are also useful for** saving/restoring user preferences** of Web Applications. For example, the JS Bin tool you have been using since the beginning of this course uses localStorage to store the list of tabs you open, and their width:
+Local stores are also useful for<b> saving/restoring user preferences</b> of Web Applications. For example, the JS Bin tool you have been using since the beginning of this course uses localStorage to store the list of tabs you open, and their width:
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 00.  (xx) ------------------------------->
@@ -19527,7 +19526,7 @@ function init() {
 }
 ```
 
-And here is the addInputListener(inputField) function. It takes an input field as parameter and attaches an oninput listener to it, that will save the field's content each time a value is entered. The key will be the id of the input field (*line 3*):
+And here is the addInputListener(inputField) function. It takes an input field as parameter and attaches an oninput listener to it, that will save the field's content each time a value is entered. The key will be the id of the input field (<i>line 3</i>):
 
 ```
 function addInputListener(inputField) {
@@ -19537,7 +19536,7 @@ function addInputListener(inputField) {
 }
 ```
 
-Note that at *line 2*, we use addEventListener (that is not using the oninput property here). adddEventListener doesnot replace existing oninput definitions and keep all existing listeners unchanged.
+Note that at <i>line 2</i>, we use addEventListener (that is not using the oninput property here). adddEventListener doesnot replace existing oninput definitions and keep all existing listeners unchanged.
 
 <h4>Restore all input fields' content using a generic function</h4>
 
@@ -19571,7 +19570,7 @@ function restoreFormContent() {
 
 </details>
 
-In this function, we first get the list of input fields (*line 5*), then iterate on it (*line 14*). For each input field, we get its id, which value is the key in localStorage for the previous data saved for this field (*lines 15-16*). Then if the value is not undefined, we restore it by setting the value of the input field (*lines 19-20*).
+In this function, we first get the list of input fields (<i>line 5</i>), then iterate on it (<i>line 14</i>). For each input field, we get its id, which value is the key in localStorage for the previous data saved for this field (<i>lines 15-16</i>). Then if the value is not undefined, we restore it by setting the value of the input field (<i>lines 19-20</i>).
 
 These generic functions can be used in many different projects
 
@@ -19591,11 +19590,11 @@ Few things to remember, from the Web storage specification:
 
 -   A mostly arbitrary limit of five megabytes per origin is recommended (translation: give at least 5Mb per origin).
 
-**In many cases, local storage is all that your application will need for saving/loading data on demand**. More complex ways to do it exist, such as IndexedDB, a No SQL database, that proposes transactions and usually comes with far more available space than local storage. IndexedDB usage is for advanced users and will be covered in the W3Cx HTML5 Apps and Games.
+<b>In many cases, local storage is all that your application will need for saving/loading data on demand</b>. More complex ways to do it exist, such as IndexedDB, a No SQL database, that proposes transactions and usually comes with far more available space than local storage. IndexedDB usage is for advanced users and will be covered in the W3Cx HTML5 Apps and Games.
 
-Additionally, there will be a limit on the amount of data that you can store there. Browsers enforce quotas that will prevent you from cluttering your users' drives excessively. These quotas can vary from platform to platform, but are usually reasonably generous for simple cases (around 5MB), so **if you are careful not to store anything huge there, you should be fine.**
+Additionally, there will be a limit on the amount of data that you can store there. Browsers enforce quotas that will prevent you from cluttering your users' drives excessively. These quotas can vary from platform to platform, but are usually reasonably generous for simple cases (around 5MB), so <b>if you are careful not to store anything huge there, you should be fine.</b>
 
-**Finally, keep in mind that this storage is not necessarily permanent.** Browsers are inconsistent in how they allow for it to be wiped, but in several cases it gets deleted with cookies --- which is logical when you think of how it can be used for tracking in a similar fashion.
+<b>Finally, keep in mind that this storage is not necessarily permanent.</b> Browsers are inconsistent in how they allow for it to be wiped, but in several cases it gets deleted with cookies --- which is logical when you think of how it can be used for tracking in a similar fashion.
 
 For serious applications, you might want to synchronize existing data with the server on a regular basis, in order to avoid data loss (and in general, because users enjoy using the same service from multiple devices at once). This is a rather complex feat, and frameworks such as Firebase can help. Such techniques are beyond the scope of this course and will not be covered.
 
@@ -19603,9 +19602,9 @@ sessionStorage key/values instead of cookies?
 
 Note that if all you need is to store session-based data in a manner that is more powerful than cookies, you can use the sessionStorage object which works in exactly the same way as localStorage, but the lifetime is limited to a single browser session (lifetime of your tab/window).
 
-**Also note that in addition to being more convenient and capable of storing more data than cookies, it has the advantage of being scoped to a given browser tab (or similar execution context).**
+<b>Also note that in addition to being more convenient and capable of storing more data than cookies, it has the advantage of being scoped to a given browser tab (or similar execution context).</b>
 
-**Cookies' security drawback: **if a user has two tabs open to the same site, they will share the same cookies. Which is to say that if you are storing information about a given operation using cookies in one tab, that information will leak to the other side --- this can be confusing if the user is performing different tasks in each.
+<b>Cookies' security drawback: </b>if a user has two tabs open to the same site, they will share the same cookies. Which is to say that if you are storing information about a given operation using cookies in one tab, that information will leak to the other side --- this can be confusing if the user is performing different tasks in each.
 
 <b>By using sessionStorage, the data you store will be scoped and therefore not leak across tabs!</b>
 
@@ -19629,7 +19628,7 @@ localStorage.setItem(key, JSON.stringify(object));
 Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,console,output">online at JSBin</a>).  The example below saves a JavaScript object in JSON, then restores it and checks that the object properties are still there!
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 304. json save/load in local storage (xx) ------------------------------->
+<!------------------------- 304. json save/load in local storage (366) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image304.png?raw=true"
@@ -19644,24 +19643,24 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
  <summary>Click to expand!</summary>
 
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset=utf-8 />
-<title>Storing JSON Objects with Local Storage</title>
-<script>
-    var personObject= {'givenName': 'Michel', 'familyName': 'Buffa'};
-    // Store the object as a JSON String
-    localStorage.setItem('testObject', JSON.stringify(personObject));
-    // Retrieve the object from storage
-    var retrievedObject = JSON.parse(localStorage.getItem('testObject'));
-    console.log(retrievedObject.firstName + " " + retrievedObject.lastName);
-   // then you can use retrievedObject.givenName, retrievedObject.familyName...
-</script>
-</head>
-<body>
-</body>
-</html>
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset=utf-8 />
+5.  <title>Storing JSON Objects with Local Storage</title>
+6.  <script>
+7.      var personObject= {'givenName': 'Michel', 'familyName': 'Buffa'};
+8.      // Store the object as a JSON String
+9.      localStorage.setItem('testObject', JSON.stringify(personObject));
+10.     // Retrieve the object from storage
+11.     var retrievedObject = JSON.parse(localStorage.getItem('testObject'));
+12.     console.log(retrievedObject.firstName + " " + retrievedObject.lastName);
+13.    // then you can use retrievedObject.givenName, retrievedObject.familyName...
+14. </script>
+15. </head>
+16. <body>
+17. </body>
+18. </html>
 ```
 
 </details>
@@ -19670,11 +19669,11 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 
 -   <i>Line 7</i>: we built a JavaScript object that contains a person.
 
--   <i>Line 10</i>: we store it in localStorage as a JSON string object, with a key equal to testObject.
+-   <i>Line 9</i>: we store it in localStorage as a JSON string object, with a key equal to testObject.
 
--   <i>Line 13</i>: we restore it from localStorage as a string, and the JSON.parse methods turns it back into a JavaScript object.
+-   <i>Line 11</i>: we restore it from localStorage as a string, and the JSON.parse methods turns it back into a JavaScript object.
 
--   <i>Line 15</i>: we print the values of the object properties.
+-   <i>Line 12</i>: we print the values of the object properties.
 
 <h4>Examples</h4>
 
@@ -19918,11 +19917,11 @@ All this here is HTML5, this is canvas, these are form elements we saw the last 
 
 Imagine you have an input field like this:
 
-1.  Select one or more files: <input type="file" id="input"/>
+1.  Select one or more files: &lt;input type="file" id="input"/>
 
 This renders as a "select files" or "browse files" button. If you select one file in the file chooser dialog that has popped up, before HTML5 you couldn't do anything with it in the client-side: no access from JavaScript. With the File API, you can read what we call "file metadata": name, size, type and last modification date.
 
-Look at the code below: the file API defines a files property on the DOM node corresponding to the <input type="file".../> input field. This property is an array.
+Look at the code below: the file API defines a files property on the DOM node corresponding to the &lt;input type="file".../> input field. This property is an array.
 
 In the example below, we get in the selectedFile variable, the metadata related to the first selected file:
 
@@ -19988,7 +19987,7 @@ var selectedFile = document.getElementById('input').files[0];
 
 <h4>Example #2: display metadata of multiple files, use a filter on the file type</h4>
 
-This example is a bit more complicated, as it will display details about all files selected (not only the first) and allows only images to be selected, using the accept attribute of the input field: <input type="file" accept="image/*".../>.
+This example is a bit more complicated, as it will display details about all files selected (not only the first) and allows only images to be selected, using the accept attribute of the input field: &lt;input type="file" accept="image/*".../>.
 
 <a href="https://jsbin.com/deboja/edit?html,output">Example on JSBin</a>, or try it in your browser: click on the button, and select multiple image files. Notice that in the file selector, files that are not images will be greyed and non selectable.
 
@@ -19998,7 +19997,7 @@ This example is a bit more complicated, as it will display details about all fil
 
 <h4>Source code extract:</h4>
 
-Select several images: <input type="file" accept="image/*" multiple onchange="filesProcess(this.files)" name="selection"/>
+Select several images: &lt;input type="file" accept="image/*" multiple onchange="filesProcess(this.files)" name="selection"/>
 
 <details>
  <summary>Click to expand!</summary>
@@ -20064,7 +20063,7 @@ Blob objects have two properties, namely:size and type, which respectively re
 
 <h4>The File object</h4>
 
-**File objects are useful for manipulating... files!** They inherit the properties and methods of Blob objects, and have two additional properties that are name, for the file name, and lastModifiedDate to get the date of the last modification of the file (in the form of a JavaScript Date object, obviously) .
+<b>File objects are useful for manipulating... files!</b> They inherit the properties and methods of Blob objects, and have two additional properties that are name, for the file name, and lastModifiedDate to get the date of the last modification of the file (in the form of a JavaScript Date object, obviously) .
 
 Most of the time, we will work with File objects. Blob objects will have real interest when you download binary files using Ajax (see example below).
 
@@ -20088,7 +20087,7 @@ The file API proposes several methods for reading file content, each taken from 
 
 There are three different methods available for reading a file's content: readAsText, readAsArrayBuffer for binary data and also as readAsDataURL (the content will be a URL you will use to set the src field of an <img src=...>, &lt;audio&gt;, &lt;video&gt;, and also with all existing methods/properties that accept a URL).
 
-All these methods take as a unique parameter a File object (for example, a file chosen by a user after clicking on a <input type=file> input field). Below, we use, as an example, the readAsText method:
+All these methods take as a unique parameter a File object (for example, a file chosen by a user after clicking on a &lt;input type=file> input field). Below, we use, as an example, the readAsText method:
 
 <details>
  <summary>Click to expand!</summary>
@@ -20110,10 +20109,10 @@ function readFileContent(f) {
 
 </details>
 
-<p>The above code shows how a file can be read as text. The function is called, for example by clicking on the button corresponding to a <input type="file" id="file"  onchange="readFileContent(this.files)"/>, and by choosing a file.</p>
+<p>The above code shows how a file can be read as text. The function is called, for example by clicking on the button corresponding to a &lt;input type="file" id="file"  onchange="readFileContent(this.files)"/>, and by choosing a file.</p>
 <ul>
   <li><i>Line 12</i> is executed first, and asks the Reader object to read the file f as text. As this takes some time, it's an asynchronous operation that will be executed by the browser in the background. When the file is read, the reader.onload callback function is called.</li>
-  <li><i>Line 4</i> is executed after *line 12*, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
+  <li><i>Line 4</i> is executed after <i>line 12</i>, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
 </ul>
 Try a variation of the above code in your browser, that displays the file content in a text area. This example is detailed further in the course. Click and select a text file below:
 
@@ -20195,7 +20194,7 @@ Let's start by reading a pure text file
 
 </details>
 
-This example is the one at the end of the previous page. This time, we show the complete source code above. Remember that the instruction at *line 29* is executed first, then when the file is read, the browser will call asynchronously the onload callback at *line 20*.
+This example is the one at the end of the previous page. This time, we show the complete source code above. Remember that the instruction at <i>line 29</i> is executed first, then when the file is read, the browser will call asynchronously the onload callback at <i>line 20</i>.
 
 <h4>Example #2: a variation of the previous one, using multiple files</h4>
 
@@ -20535,7 +20534,7 @@ function readFileAndDraw(files) {
 
 <h4>Explanations:</h4>
 
-Remember how we worked with images on a canvas. We had to create an empty image object (<i>line 8</i>), set the src attribute of the image object (<i>line 23</i>), then use an image.onload callback (<i>line 15</i>), and we could only draw from inside the callback (*line 17*). This time, it's exactly the same, except that the URL comes from e.target.result in the reader.onload callback (*line 23*).
+Remember how we worked with images on a canvas. We had to create an empty image object (<i>line 8</i>), set the src attribute of the image object (<i>line 23</i>), then use an image.onload callback (<i>line 15</i>), and we could only draw from inside the callback (<i>line 17</i>). This time, it's exactly the same, except that the URL comes from e.target.result in the reader.onload callback (<i>line 23</i>).
 
 <h4>Example #3 (advanced): an instagram-like photo filter application</h4>
 
