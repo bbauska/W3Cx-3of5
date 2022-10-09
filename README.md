@@ -1216,8 +1216,8 @@ This chart from the <a href="https://html5doctor.com/">HTML5 Doctor Web site&l
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image024.png?raw=true"
-   alt="HTML5 Doctor Web site.  Whether or not to use a 'dev'."
-   width="85%" />
+  width="100%"
+  alt="HTML5 Doctor Web site.  Whether or not to use a 'dev'." />
 </p>
 
 <h3 id="ch1-3-5">1.3.5 Headings and Structural Elements</h3>
@@ -1250,8 +1250,8 @@ Here is the result for the previous example:</p>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image025.png?raw=true"
-   alt="Outliner in action from the previous example."
-   width="65%" />
+   width="65%"
+   alt="Outliner in action from the previous example." />
 </p>
 
 <p>In the above outline, note that we have only used H1... H6 elements, without any new HTML5 structural elements such as &lt;section&gt; or &lt;article&gt;.
@@ -6781,7 +6781,7 @@ Let's record, replay and download the video stream captured using a Webcam. You 
 <details>
   <summary>Click to expand!</summary>
 
-```
+```js
 var mediaRecorder;
 var recordedBlobs;
 var gumVideo = document.querySelector('video#gum');
@@ -6977,16 +6977,16 @@ mediaRecorder = new MediaRecorder(stream, options);
 <h4>Source code extract:</h4>
 
 ```
-var recordedChunks = []; // will hold the recorded stream
-mediaRecorder.ondataavailable = handleDataAvailable;
-mediaRecorder.start();
- 
-function handleDataAvailable(event) {
-  if (event.data.size > 0) {
-    recordedChunks.push(event.data);
-    } else {
-  // ...
-}
+1. var recordedChunks = []; // will hold the recorded stream
+2. mediaRecorder.ondataavailable = handleDataAvailable;
+3. mediaRecorder.start();
+4 
+5. function handleDataAvailable(event) {
+6.   if (event.data.size > 0) {
+7.     recordedChunks.push(event.data);
+8.     } else {
+9.   // ...
+10. }
 ```
    
 <h4>Explanations:</h4>
@@ -11933,12 +11933,12 @@ grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
 
 ... then you will define a gradient that goes from the top left corner of the canvas to the bottom right of the canvas. Let's see what it does:
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 168. (xxx) -------------------------------->
+<!---------------- 168. example 1 draw gradient top left to bottom right (226) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image168.png?raw=true"
-   alt="Path composition explained"
-   width="65%">
+  width="65%"
+  alt="Example 1 draw gradient from top left to bottom right." />
 &nbsp;
 <br/>
 
@@ -11946,12 +11946,12 @@ grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
 
 Instead of drawing a filled rectangle that covers the whole surface of the canvas, let's draw several smaller rectangles:
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 169. (xxx) -------------------------------->
+<!------------------------ 169. example 2 draw smaller rectangles (226) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image169.png?raw=true"
-   alt="Path composition explained"
-   width="65%">
+   width="65%"
+   alt="Example 2 draw smaller rectangels - red & blue." />
 &nbsp;
 <br/>
 
@@ -12008,12 +12008,12 @@ The two loops (<i>lines 11-15</i>) draw only one cell out of two (see the j = i
 This code is much more complex than the previous one, taking 16 lines instead of 13, but is much more powerful. Try to call the function with a value of 10, 20, or 2...
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 170. (xxx) -------------------------------->
+<!--------------------------------- 170. draw checkboard (227) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image170.png?raw=true"
-   alt="Path composition explained"
-   width="85%">
+   width="85%"
+   alt="Draw red and blue checkboard." />
 &nbsp;
 <br/>
 
@@ -12086,12 +12086,12 @@ border: 1px solid black;
 Just as we used fillStyle and fillRect for drawing rectangles filled with a gradient, we can also use strokeStyle and strokeRect in order to draw wireframed rectangles. In the next example, which is just a variation of the previous one, we have used the lineWidth property to set the outline of the rectangles at 5 pixels:
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 171.  (xxx) -->
+<!---------- 171. example 3 using strokestyle and strokerect to draw rectangles (228) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image171.png?raw=true"
-   alt="."
-   width="65%">
+  width="65%"
+  alt="Example 3 draw rectangles using strokeStyle and strokeRect." />
 &nbsp;
 <br/>
 
@@ -12189,12 +12189,12 @@ grdFrenchFlag = ctx.createLinearGradient(100, 0, 200, 0);
 Like in the first example we will draw a filled rectangle that is the same size as the canvas:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 172. (xxx) -------------------------------->
+<!------------------------- 172. example 4 draw filled rectangle (230) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image172.png?raw=true"
-   alt="image172.png"
-   width="65%">
+   width="65%"
+   alt="Example 4 draw filled rectangles." />
 &nbsp;
 <br/>
 
@@ -12265,12 +12265,12 @@ grdFrenchFlag = ctx.createLinearGradient(0, 0, 600, 400);
 And if we draw the same rectangle with the canvas size, here is the result:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 173. (xxx) -------------------------------->
+<!------------------------------ 173. example 5 canvas size (231) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image173.png?raw=true"
-   alt="Path composition explained"
-   width="65%">
+   width="65%"
+   alt="Example 5 draw same rectangle with the canvas size." />
 &nbsp;
 <br/>
 
@@ -12339,12 +12339,12 @@ We can't! At least we can't without recreating it for each cell!
 It suffices to create a new gradient before drawing each filled rectangle, and set it with the starting and ending point of its direction/virtual line accordingly to the rectangle coordinates. Try this:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 174. (xxx) -------------------------------->
+<!-------------------- 174. example 6 draw shapes that share gradient (232) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image174.png?raw=true"
-   alt="image174.png"
-   width="65%">
+   width="65%"
+   alt="Example 6 draw shapes that share gradient." />
 &nbsp;
 <br/>
 
@@ -12455,12 +12455,12 @@ Radial gradients are for creating gradients that propagate/interpolate colors al
 
 Here is an example of a radial gradient that interpolates the color of the rainbow:
 <!------------------------------------------------------------------------------------------------>
-<!--- 175.  (xxx) -->
+<!-------------- 175. example radial gradient interpolates color of rainbow (234) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image175.png?raw=true"
-   alt="."
-   width="65%">
+   width="65%"
+   alt="Example radial gradient which interpolates the color of the rainbow."
 &nbsp;
 <br/>
 
@@ -12535,12 +12535,12 @@ The method from the context object createRadialGradient(cx1, cy1, radius1, cx2,
 
 In the above example, the gradients starts at a circle located at (150, 100), with a radius of 30, and propagates to a circle with the same center as the first (150, 100), but with a bigger radius of 100, as shown below:
 <!------------------------------------------------------------------------------------------------>
-<!--- 176.  (xxx) -->
+<!------------------------- 176. above example with color stops (235) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image176.jpeg?raw=true"
-   alt="Radial gradient."
-   width="40%">
+   width="40%"
+   alt="Radial gradient." />
 &nbsp;
 <br/>
 
@@ -21433,4 +21433,4 @@ Here are a few project ideas. Your classmates and the team who prepared the cour
 
 . . .The end.
 
-<!--- last updated 10-08-22 1:08pm --->
+<!--- last updated 10-08-22 7:28pm --->
