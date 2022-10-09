@@ -9253,12 +9253,12 @@ But let's start with a basic example!
 
 <h4>See picture below:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 133. (xxx) -------------------------------->
+<!------------------------- 133. simple image drawing in a canvas (182) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image133.png?raw=true"
-  width="55%"
-  alt="Drawing Images with Subimages" />
+  width="45%"
+  alt="Drawing Images with Subimages. Source image within a Destination Canvas." />
 &nbsp;
 <br/>
 
@@ -9739,7 +9739,7 @@ On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawin
 <p align="center">
 <img src="/images/image134.jpeg?raw=true"
    width="65%"
-   alt="Image of the devtool console measuring time to draw rectangles." />
+   alt="Image of the devtool console measuring average time to draw rectangles." />
 &nbsp;
 <br/>
 
@@ -9820,8 +9820,8 @@ And here is what the timer gives: a slightly faster execution time. Changing 100
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image135.jpeg?raw=true"
-   width="65%"
-   alt="Image of the devtool console which shows time values, path vs immediate mode." />
+  width="65%"
+  alt="Image of the devtool console which shows time values, path vs immediate mode." />
 &nbsp;
 <br/>
 
@@ -10841,7 +10841,7 @@ Notice that we called ctx.arc() only once! And drew it twice, with different s
 
 <h4>Project #1: modify the [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO) in order to get:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 150. half circle (208) -------------------------------->
+<!----------------------------------- 150. half circle (208) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image150.jpeg?raw=true"
@@ -10853,7 +10853,7 @@ Notice that we called ctx.arc() only once! And drew it twice, with different s
 <h4> Project #2: make a small program that draws a smiling head like this (or make something better!)</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 151. smiley face (208) -------------------------------->
+<!----------------------------------- 151. smiley face (208) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image151.jpeg?raw=true"
@@ -10904,12 +10904,12 @@ This method can be confusing. It was defined mainly for drawing rounded shapes l
 
 <h4>Example #1: simple use</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 153. (xxx) -------------------------------->
+<!--------------------------- 153. simple use arcto example 1 (209) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image153.png?raw=true"
    width="65%"
-   alt="image153.png." />
+   alt="Simple use arcTo example #1." />
 &nbsp;
 <br/>
 
@@ -10959,12 +10959,12 @@ context.stroke();
 
 <h4>Try this:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 154. (xxx) -------------------------------->
+<!---------------------------- 154. rounded rectange example 2 (210) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image154.png?raw=true"
    width="65%"
-   alt="image154.png" />
+   alt="Draw a rounded rectange, example #2." />
 &nbsp;
 <br/>
 
