@@ -11060,7 +11060,7 @@ In this example, each call to ctx.arcTo(...) draws a side plus a corner. This 
 
 This example at JS Bin is the same as the previous one, except that we added at the end of the roundedRect function the same lines of code that draw the rounded rectangle, but using lineTo instead of arcTo. Just take a look!
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 155. (xxx) -------------------------------->
+<!----------------------- 155. comparison between arcto and lineto (xxx) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image155.png?raw=true"
@@ -16235,8 +16235,8 @@ Here is the result on Google Chrome (works with other browsers too, though the 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image225.jpeg?raw=true"
-   alt="."
-   width="40%" />
+   width="40%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -16245,12 +16245,12 @@ Here is the result on Google Chrome (works with other browsers too, though the 
 The <input type="color"> can fire change or input events. Here is an example that changes the background color of the page when a color is chosen. [Try it online at JSBin](https://jsbin.com/jozuter/1/edit?html,css,js,console,output).
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 226. change backgound color of the body ---------------------------->
+<!------------------------ 226. change backgound color of the body (xxx) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image226.jpeg?raw=true"
-   alt="Change background color of the body."
-   width="40%" />
+   width="40%"
+   alt="Change background color of the body." />
 &nbsp;
 <br/>
 
@@ -16285,8 +16285,16 @@ By default, the color selector offers many options that may either frighten some
 
 Example: click the black rectangle on the right:  . The following should be displayed:
 
-<!---- ************************************************* image 227 ****************************** ----->
-![restricted choice of color](./images/image227.jpeg){width="3.0in" height="1.872483595800525in"}
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 227. restricted choice of color (xxx) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="/images/image227.jpeg?raw=true"
+   width="40%"
+   alt="Restricted choice of colors." />
+&nbsp;
+
+<!-- {width="3.0in" height="1.872483595800525in"} -->
 
 <a href="https://jsbin.com/lahapu/edit?html,output">Online example at JSBin</a>
 
@@ -16384,7 +16392,7 @@ The <input type="date"> comes with several useful attributes. In particular th
 Try this example: just click the next input field: , or <a href="https://jsbin.com/faluta/1/edit?html,output">try it online on JSBin</a> if you want to tweak the source code: 
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 232. only dates between min and max are selectable (xxx) ------------------->
+<!----------------- 232. only dates between min and max are selectable (xxx) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image232.jpeg?raw=true"
@@ -16419,7 +16427,7 @@ Example: we want to celebrate birthday parties only on Saturdays, [check this 
 <p align="center" width="100%">
 <img src="./images/image233.png?raw=true"
    width="40%"
-   alt="Use of the step attribute, select only saturdays." />
+   alt="Use of the step attribute, select only Saturdays." />
 </p>
 
 <h4>Extract from source code:</h4>
@@ -16521,7 +16529,7 @@ The object returned to the input event handler has a useful property named valu
 <p align="center" width="100%">
 <img src="./images/image235.jpeg?raw=true"
    width="40%"
-   alt="Date in the past: it is ok" />
+   alt="Date in the past: it is ok." />
 </p>
 
 While if we enter a date in the future:
@@ -16532,7 +16540,7 @@ While if we enter a date in the future:
 <p align="center" width="100%">
 <img src="./images/image236.jpeg?raw=true"
    width="30%"
-   alt="Date in the future: bad" />
+   alt="Date in the future: bad." />
 </p>
 
 <h4>Extract from source code:</h4>
@@ -16602,7 +16610,7 @@ The HTML5 specification indicates that we can use <input type="date"> and <in
 <p align="center" width="100%">
 <img src="./images/image238.png?raw=true"
    width="20%"
-   alt="Input type=time safari IOS" />
+   alt="Input type=time safari IOS." />
 </p>
 
 <input type="datetime">
@@ -16621,7 +16629,7 @@ The HTML5 specification indicates that we can use <input type="date"> and <in
 <p align="center" width="100%">
 <img src="./images/image240.png?raw=true"
    width="20%"
-   alt="Input type=datetime on Safari IOS" />
+   alt="Input type=datetime on Safari IOS." />
 </p>
 
 <input type="datetime-local">
@@ -16631,12 +16639,12 @@ The HTML5 specification indicates that we can use <input type="date"> and <in
 <p align="center" width="100%">
 <img src="./images/image241.png?raw=true"
    width="20%"
-   alt="datetime-local example" />
+   alt="datetime-local example." />
 </p>
 
 <input type="week">:
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 240.  (xxx) ------------------->
+<!--------------- 242.  (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image242.jpeg?raw=true"
@@ -16652,14 +16660,15 @@ The HTML5 specification indicates that we can use <input type="date"> and <in
    width="40%"
    alt="Month" />
 </p>
-![month](./images/image243.jpeg){width="4.0in" height="1.4222222222222223in"}
+<!-- width="4.0in" height="1.4222222222222223in"} -->
+
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 244.  (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image244.jpeg?raw=true"
    width="20%"
-   alt="input type=month safari" />
+   alt="input type=month safari." />
 </p>
 
 <!------------------------------------------------------------------------------------------------>
@@ -16668,7 +16677,7 @@ The HTML5 specification indicates that we can use <input type="date"> and <in
 
 Let's study 4 input types: email", "tel", "URL" and "search".
 
-<input type="email">
+&lt;input type="email"&gt;
 
 This input type is relatively straightforward to use. In mobile applications, this new input type pops up a keyboard layout adapted to email input. Note the "@" key, the "." key, etc.
 <!------------------------------------------------------------------------------------------------>
@@ -16697,7 +16706,7 @@ Typical use:
 <p align="center" width="100%">
 <img src="./images/image246.png?raw=true"
    width="30%"
-   alt="" />
+   alt="." />
 </p>
 
 Try it on your browser:                         Enter your email: 
@@ -16728,7 +16737,7 @@ Try it on your browser:                         Enter your email: 
 
 Note the CSS rule that turns the background color of the email input field to pink if a user enters an invalid address (*lines 7-8*). Also note that the validation is based only on matching a regular expression (the address should contain a "@",  a ".", etc.). It does not check if the address is an existing one.
 
-<input type="tel">
+&lt;input type="tel"&gt;
 
 This input field is really useful on smartphones and tablets, as it makes the browser pop up a keyboard layout suitable for entering phone numbers:
 
@@ -16738,7 +16747,7 @@ This input field is really useful on smartphones and tablets, as it makes the br
 <p align="center" width="100%">
 <img src="./images/image247.png?raw=true"
    width="20%"
-   alt="Mobile keyboard 1 for input type=tel" />
+   alt="Mobile keyboard 1 for input type=tel." />
 </p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 248.  (xxx) ------------------->
@@ -16746,7 +16755,7 @@ This input field is really useful on smartphones and tablets, as it makes the br
 <p align="center" width="100%">
 <img src="./images/image248.png?raw=true"
    width="20%"
-   alt="Other mobile keyboard 1 for input type=tel" />
+   alt="Other mobile keyboard 1 for input type=tel." />
 </p>
 
 This input type is often used with the new placeholder and pattern attributes that are detailed in another section of this course. It is supported by all recent major Web browsers, on mobile devices and desktops.
@@ -16759,7 +16768,7 @@ This input type is often used with the new placeholder and pattern attribute
 <p align="center" width="100%">
 <img src="./images/image249.png?raw=true"
    width="30%"
-   alt="" />
+   alt="." />
 </p>
 
 Try it in your browser (we used the same CSS for changing the background-color when the input value is invalid):
@@ -16794,7 +16803,7 @@ Enter a telephone number: 
 
 </details>
 
-<input type="URL"> 
+&lt;input type="URL"&gt;
 
 This input field is really useful on smartphones and tablets, as it makes the browser pop up a keyboard layout suitable for entering URLs:
 
@@ -16804,10 +16813,10 @@ This input field is really useful on smartphones and tablets, as it makes the br
 <p align="center" width="100%">
 <img src="./images/image250.png?raw=true"
    width="20%"
-   alt="Mobile keyboard for entering URLs" />
+   alt="Mobile keyboard for entering URLs." />
 </p>
 
-This field is also compatible with *the validation API* (more on this in another section).
+This field is also compatible with <i>the validation API</i> (more on this in another section).
 
 Here is an online example that shows the use of the placeholder and pattern attributes for entering only URLs that start with ftp:// or https://
 
@@ -16847,9 +16856,9 @@ Enter a URL (custom validation, must start with http, https or ftp): 
 
 </details>
 
-*Lines 16-17* show the use of a pattern attribute with a JavaScript regexp that accepts only URLs starting with http, https or ftp. More details on the pattern attribute are given in the section that presents the new HTML5 form attributes.
+<i>Lines 16-17</i> show the use of a pattern attribute with a JavaScript regexp that accepts only URLs starting with http, https or ftp. More details on the pattern attribute are given in the section that presents the new HTML5 form attributes.
 
-<input type="search">
+&lt;input type="search"&gt;
 
 The search type is used for search fields (i.e., for a search engine). A search field behaves like a regular text field, except that it may provide some feedback GUI for stopping the current request and emptying the search field, or it may provide a drop-down list of recent search results.
 
@@ -16859,18 +16868,18 @@ The specification does not state what the GUI should look like, so current impl
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image251.jpeg?raw=true"
-   width="40%"
-   alt="input type=search rendered on a smartphone" />
+  width="40%"
+  alt="input type=search rendered on a smartphone." />
 </p>
 
 <h4>Typical use:</h4>
 
 ```
 <label for="search1">Simple search: </label>
-   <input type=search id="search1">
-   <p>
-   <label for="search2">Search with attribute <code>results=5</code> (try with Safari): </label>
-   <input type=search id="search2" results=5>
+  <input type=search id="search1">
+  <p>
+    <label for="search2">Search with attribute <code>results=5</code> (try with Safari): </label>
+    <input type=search id="search2" results=5>
 ```
 
 Results on Chrome and Opera desktop - notice the small cross on the right when one enters a value:
@@ -16880,8 +16889,8 @@ Results on Chrome and Opera desktop - notice the small cross on the right when o
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image252.jpeg?raw=true"
-   width="40%"
-   alt="input type=search in google chrome and opera" />
+  width="40%"
+  alt="Input type=search in google chrome and opera." />
 </p>
 
 Same example with Safari desktop, this time the second line with an attribute results=5 shows a small icon on the left:
@@ -16891,8 +16900,8 @@ Same example with Safari desktop, this time the second line with an attribute r
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image253.jpeg?raw=true"
-   width="40%"
-   alt="input type=search on safari" />
+  width="40%"
+  alt="Input type=search on Safari." />
 </p>
 
 Example that shows a drop down list of recent searches (Safari screenshot borrowed from [this excellent site about HTML5 forms that is worth reading](https://www.wufoo.com/html5/types/5-search.html)):
@@ -16902,8 +16911,8 @@ Example that shows a drop down list of recent searches (Safari screenshot borro
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image254.png?raw=true"
-   width="20%"
-   alt="Example 2 of input type=search on safari, shows recent results" />
+  width="20%"
+  alt="Example 2 of input type=search on safari, shows recent results." />
 </p>
 
 <h4>Source code for the knowledge check below</h4>
@@ -16943,7 +16952,7 @@ This input field is useful for entering numerical values (integer or float), but
 
 For zip codes, a &lt;input type="text" pattern="......"&gt; is preferable. See examples given in the pattern attribute section of this course.
 
-Example: **<input type="number" value="25" min="0" step="5" max="500"/>**
+Example: <b>&lt;input type="number" value="25" min="0" step="5" max="500"/&gt;</b>
 
 <h4>Screenshot example taken with a mobile device:</h4>
 
@@ -16952,8 +16961,8 @@ Example: **<input type="number" value="25" min="0" step="5" max="500"/>**
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image255.png?raw=true"
-   width="20%"
-   alt="Numeric keyboard on Safari IOS" />
+  width="20%"
+  alt="Numeric keyboard on Safari IOS." />
 </p>
 
 Examples on desktop (the width will be adjusted depending on the min and max attributes):
@@ -16964,7 +16973,7 @@ Examples on desktop (the width will be adjusted depending on the min and max�
 <p align="center" width="100%">
 <img src="./images/image256.jpeg?raw=true"
    width="35%"
-   alt="input type=number example" />
+   alt="Input type=number example." />
 </p>
 
 <h4>Typical usage</h4>
@@ -16995,7 +17004,7 @@ If the difference between the value you enter and min is a multiple of step
 <p align="center" width="100%">
 <img src="./images/image257.png?raw=true"
    width="40%"
-   alt="" />
+   alt="." />
 </p>
 
 Or, do it here in your browser (Manually enter a value that is not in the range, or not a multiple of 5, try the up and down arrows, etc.):
@@ -17568,7 +17577,7 @@ You can also try [this online JavaScript RegExps tester](https://regex101.com/#
 <p align="center" width="100%">
 <img src="./images/image271.jpeg?raw=true"
    width="40%"
-   alt="Menu on the left, categories and patterns on the right. html5patterns.com" />
+   alt="Menu on the left, categories and patterns on the right. html5patterns.com." />
 </p>
 
 <h4>Typical use</h4>
@@ -17884,12 +17893,12 @@ The first shows a form with two submit buttons: 
   <li>the second button submits to another action specified by its formaction attribute.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 272.  (xx) ------------------------------->
+<!----------------------------- 272.  (xxx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image272.png?raw=true"
-   alt=""
-   width="40%">
+  width="40%"
+  alt="." />
 &nbsp;
 <br/>
 
@@ -17900,12 +17909,12 @@ The second example shows a form with two submit buttons:
 -   the second button using a POST:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 273.  (xx) ------------------------------->
+<!----------------------------- 273.  (xxx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image273.png?raw=true"
-   alt=""
-   width="40%">
+  width="40%"
+  alt="." />
 &nbsp;
 <br/>
 
@@ -17973,15 +17982,7 @@ Top of Form
 
 Given name: ![](./images/image269.wmf)
 Family name: ![](./images/image269.wmf)
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center">
-<img src="/images/image000.jpeg?raw=true"
-   alt=""
-   width="35%">
-&nbsp;
-<br/>
+
 ![](./images/image274.wmf) ![](./images/image275.wmf)
 
 <h4>Source code:</h4>
@@ -18061,8 +18062,8 @@ The possible values for this field are:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image276.png?raw=true"
-   alt="Example of use of the formenctype attribute."
-   width="40%">
+   width="40%"
+   alt="Example of use of the formenctype attribute." />
 &nbsp;
 <br/>
 
@@ -18106,8 +18107,8 @@ If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,ou
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image277.png?raw=true"
-   alt="JS Bin example of the above example."
-   width="50%">
+   width="50%"
+   alt="JS Bin example of the above example." />
 &nbsp;
 <br/>
 
@@ -18115,12 +18116,12 @@ Then, open the devtools and go to the "Network" tab, click on the POST request. 
 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 278.  (xx) ------------------------------->
+<!----------------------------- 278.   (xxx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image278.png?raw=true"
-   alt=""
-   width="50%">
+   width="50%"
+   alt="." />
 &nbsp;
 <br/>
 
@@ -18130,36 +18131,27 @@ And if you start again and click on the left submit button, the one without the 
 <h3 id="ch5-6-1">5.6.1 HTML5 Forms Elements</h3>
 <!------------------------------------------------------------------------------------------------>
 
-Let's look at the HTML5 elements related to forms (specifically: <datalist>, <output>, &lt;meter&gt;  and <progress> elements).
+Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&gt;, &lt;output&gt;, &lt;meter&gt;  and &lt;progress&gt; elements).
 
-+-------------------------------------------+-----------------------------------+
-| HTML4                                     | HTML5                             |
-+===========================================+===================================+
-| -   &lt;form&gt;                              | -   <datalist>                  |
-|                                           |                                   |
-| -   <fieldset>                          | -   <output>                    |
-|                                           |                                   |
-| -   <legend>                            | -   &lt;meter&gt;                     |
-|                                           |                                   |
-| -   <textarea>                          | -   <progress>                  |
-|                                           |                                   |
-| -   <label>                             | -   <keygen> *                 |
-|                                           |                                   |
-| -   <select>                            |                                   |
-|                                           |                                   |
-| -   <option>                            |                                   |
-|                                           |                                   |
-| -   <optgroup>                          |                                   |
-|                                           |                                   |
-| -   <input>                             |                                   |
-|                                           |                                   |
-| -   <button>                            |                                   |
-+-------------------------------------------+-----------------------------------+
-| * Not really useful for most developers. |                                   |
-+-------------------------------------------+-----------------------------------+
++-------------------------------------------+------------------------------ +
+| HTML4                                     | HTML5                         |
++-------------------------------------------+-------------------------------+
+| -   &lt;form&gt;                          | -   &lt;datalist&gt;          |
+| -   &lt;fieldset&gt;                      | -   &lt;output&gt;            |
+| -   &lt;legend&gt;                        | -   &lt;meter&gt;             |
+| -   &lt;textarea&gt;                      | -   &lt;progress&gt;          |
+| -   &lt;label&gt;                         | -   &lt;keygen&gt; *          |
+| -   &lt;select&gt;                        |                               |
+| -   &lt;option&gt;                        |                               |
+| -   &lt;optgroup&gt;                      |                               |
+| -   &lt;input&gt;                         |                               |
+| -   &lt;button&gt;                        |                               |
++-------------------------------------------+------------------------------ +
+| * Not really useful for most developers.  |                               |
++-------------------------------------------+------------------------------ +
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-6-2">5.6.2 <output></h3>
+<h3 id="ch5-6-2">5.6.2 &lt;output&gt;</h3>
 <!------------------------------------------------------------------------------------------------>
 
 The output element represents the result of a computation or user action. You can see it as a "specialized &lt;div&gt; or <span>" for displaying interactive results.
