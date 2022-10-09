@@ -7084,7 +7084,7 @@ Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this examp
 
 | #  | html code                                                                                                                                                             |
 | -- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1  | <!DOCTYPE html>                                                                                                                                                       |
+| 1  | &lt;!DOCTYPE html&gt;                                                                                                                                                 |
 | 2  | <[<b>html lang="en"</b>](https://december.com/html/4/element/html.html)>                                                                                              |
 | 3  | <[<b>head</b>](https://december.com/html/4/element/head.html)>                                                                                                        |
 | 4  | <[<b>meta</b>](https://december.com/html/4/element/meta.html) charset=utf-8 />                                                                                        |
@@ -12692,12 +12692,12 @@ imageObj.onload = function(){
 <p>Here we have two rectangles drawn using a pattern (an image that can be repeated along the X and Y axis). The first is a filled rectangle while the second is "stroked" with a lineWidth of 20 pixels:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 178.  (xxx) -->
+<!------------- 178. filled rectange and stroked rectangle with linewidth 20 (238) --------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image178.png?raw=true"
   width="65%"
-  alt="." />
+  alt="Filled rectange and a stroked rectangle with lineWidth=20." />
 &nbsp;
 <br/>
 
@@ -12822,12 +12822,12 @@ Your browser does not support the canvas tag. </canvas>
 <p>To "better" see the repeatability of the pattern, here is the same example with a 1000x1000 pixel wide canvas:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 179.  (xxx) -->
+<!-------------------------- 179. 1000 by 1000 pixel wide canvas (239) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image179.png?raw=true"
    width="65%"
-   alt="." />
+   alt="1000 by 1000 pixel wide canvas." />
 &nbsp;
 <br/>
 
@@ -12908,7 +12908,7 @@ Your browser does not support the canvas tag. </canvas>
 Below are 4 rectangles drawn with 4 different patterns.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------ 180. four rectangles drawn with different patterns (xxx) -------------------->
+<!------------------ 180. four rectangles drawn with different patterns (241) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image180.jpeg?raw=true"
@@ -12930,12 +12930,12 @@ When all images have been loaded, we call a callback function that has been pass
 The complete example code that produces the result shown at the beginning of this page is the following:
 
 <!------------------------------------------------------------------------------------------------>
-<!--- 181.  (xxx) -->
+<!------------------------------- 181. multiple image loader (241) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image181.png?raw=true"
    width="65%"
-   alt="." />
+   alt="A multiple image loader." />
 &nbsp;
 <br/>
 
@@ -13126,7 +13126,7 @@ Your browser does not support the canvas tag.
 <h4>Context properties to draw with shadows</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 182. a green shadow rectangle (xxx) ------------------------------->
+<!---------------------------- 182. a green shadow rectangle (244) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image182.jpeg?raw=true"
@@ -13147,12 +13147,12 @@ Your browser does not support the canvas tag.
 <h4>Example #1: simple shadows</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 183.  (xxx) -------------------------------->
+<!---------------------------- 183. example #1, simple shadows (245) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image183.png?raw=true"
    width="65%"
-   alt="image183.png" />
+   alt="Simple shadows, example #1." />
 </p>
 
 <h4>JavaScript</h4>
@@ -13293,12 +13293,12 @@ Your browser does not support the canvas tag.</canvas>
 <h4>And here is the result:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 184.  (xxx) -------------------------------->
+<!------------------------ 184. setting shadow - not quite correct (247) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image184.png?raw=true"
    width="65%"
-   alt="image185.png" />
+   alt="Not quite correct, unwanted shadow." />
 </p>
 
 <h4>HTML</h4>
@@ -13396,14 +13396,14 @@ The trick is to save the context before setting the shadow properties, then dr
 
 </details>
 
-<h4>And here is the final result:</h4>
+<h4>And here is the <em>FINAL</em> result:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 185.  (xxx) -------------------------------->
+<!------------------------- 185. final result of setting shadow (248) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image185.png?raw=true"
    width="65%"
-   alt="image185.png" />
+   alt="Final result of setting shadow." />
 </p>
 
 <h4>HTML</h4>
@@ -13495,12 +13495,12 @@ We have seen this before. This is done by changing the value (in pixels) of the�
 <p>Here is a complete example where we draw with a lineWidth of 20 pixels:</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 186. image186.png (xxx) -------------------------------->
+<!--------------------------- 186. changing the line thickness (250) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image186.png?raw=true"
    width="65%"
-   alt="image186.png" />
+   alt="Changing the line thickness." />
 </p>
 
 <h4>Source code:</h4>
@@ -13553,23 +13553,23 @@ We have seen this before. This is done by changing the value (in pixels) of the�
 
 The lineCap property of the context indicates the way line end caps are rendered. Possible values are butt (default), round, square (from top to bottom in the next illustration). Note that a value of "round" or "square" makes the lines slightly longer than the default value "butt".
 <!------------------------------------------------------------------------------------------------>
-<!--- 187.  (xxx) -->
+<!--------------------------------- 187. line cap values (251) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image187.png?raw=true"
-   width="20%">
+   width="20%"
    alt="Line cap values." />
 &nbsp;
 <br/>
 
 <h4>Try this:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!--- 188.  (xxx) -->
+<!------------------------- 188. changing the end caps of a lines (251) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image188.png?raw=true"
    width="65%"
-   alt="." />
+   alt="Changing the end caps of a line.  Example #2." />
 &nbsp;
 <br/>
 
@@ -13623,12 +13623,12 @@ Note that in this example, the rectangle is not affected. It has no line ends vi
 <h4>Try this:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 189.  (xxx) -------------------------------->
+<!-------------------- 189. setting type of corner when two lines meet (252) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image189.png?raw=true"
    width="65%"
-   alt="image189.png" />
+   alt="Setting type of corner when two lines meet." />
 </p>
 
 <details>
@@ -13676,24 +13676,24 @@ The miterLimit property value corresponds to the maximum miter length: the dis
 
 In order to avoid this situation, we can set the miterLimit property of the context to a threshold value. If the miter length exceeds the miterLimit value, then the corner will be rendered as if the lineJoin property had been set to "bevel" and the corner will be "cut".
 <!------------------------------------------------------------------------------------------------>
-<!--- 190.  (xxx) -->
+<!--------------------- 190. linejoin property - arrows fig 1, 2 and 3 (253) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image190.gif?raw=true"
    width="20%"
-   alt="miterLimit property shown with 3 different angles, we see that the part that goes out of the angle becomes very long." />
+   alt="lineJoin property, figure 1, 2 and 3 showing arrows." />
 &nbsp;
 <br/>
 
 <h4>You can try an interactive example here:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 191. (xxx) -------------------------------->
+<!-------------------------- 191. miterlimit property explained (253) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image191.png?raw=true"
    width="65%"
-   alt="image191.png" />
+   alt="Example #4: miterLimit property shown with 3 different angles, we see that the part that goes out of the angle becomes very long." />
 </p>
 
 In the example, try different values for the miterLimit property. You'll see that the way the corners are rendered changes at values around 2 and 3.
@@ -13729,7 +13729,7 @@ Even before HTML5 and the introduction of the canvas element, people created HT
 During the late 1990s and early 2000s, JavaScript became increasingly popular. The community created a first 'umbrella term' describing a collection of technologies used together to create interactive and animated Web sites - [DHTML (Dynamic HTML)](https://en.wikipedia.org/wiki/Dynamic_HTML). For example, check the [games developed at this time by Brent Silby](https://def-logic.com/) (they all use DHTML).
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 192. (xxx) -------------------------------->
+<!------------------------------ 192. mario-like dhtml game (254) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image192.png?raw=true"
@@ -14529,7 +14529,7 @@ At <i>line 2</i>, the value "37" is the key code that corresponds to the left a
 
 A lot of people think that the canvas element is not able to get key events. Many examples on the Web handle key events on canvas by adding a listener to the window object directly, like this:
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 193. (xxx) -------------------------------->
+<!------------------------ 193. add key listener to window object (268) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image193.png?raw=true"
@@ -17248,49 +17248,31 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
   <li>From CSS{Portal}, a CSS generator help you style the html input range tag, very easy to use: <a href="https://www.cssportal.com/style-input-range/">Style Input Range</a></li>
 </ul>
 
-+----------------------------------------------------------------------------------+---------------------------------------+
-| ### <b>HTML4</b>                                                                    | ### <b>HTML5</b>                         |
-+==================================================================================+=======================================+
+| <h3>HTML4</h3>                                                                      | <h3>HTML5</h3>                           |
++=====================================================================================+==========================================+
 | -   <b>name</b>                                                                     | -   <b>form</b>                          |
-|                                                                                  |                                       |
-| -   <b><i>disabled</i></b>                                                               | -   <b>readonly</b>                      |
-|                                                                                  |                                       |
+| -   <b><i>disabled</i></b>                                                          | -   <b>readonly</b>                      |
 | -   <b>type</b>                                                                     | -   <b>autocomplete</b>                  |
-|                                                                                  |                                       |
 | -   <b>maxlength</b>                                                                | -   <b>autofocus</b>                     |
-|                                                                                  |                                       |
 | -   <b>readonly</b>                                                                 | -   <b>list</b>                          |
-|                                                                                  |                                       |
 | -   <b>size</b>                                                                     | -   <b>pattern</b>                       |
-|                                                                                  |                                       |
-| -   <b>value</b>                                                                    | -   <b><i>required</i></b>                    |
-|                                                                                  |                                       |
+| -   <b>value</b>                                                                    | -   <b><i>required</i></b>               |
 | -   <b>alt</b>                                                                      | -   <b>placeholder</b>                   |
-|                                                                                  |                                       |
 | -   <b>src</b>                                                                      | -   <b>multiple</b>                      |
-|                                                                                  |                                       |
 | -   <b>height</b>                                                                   | -   <b>list</b>                          |
-|                                                                                  |                                       |
 | -   <b>width</b>                                                                    | -   <b>min</b>                           |
-|                                                                                  |                                       |
-| -   <b><i>checked</i></b>                                                                | -   <b>max</b>                           |
-|                                                                                  |                                       |
-| -   <b><i>align</i></b>                                                          | -   <b>step</b>                          |
-|                                                                                  |                                       |
-|                                                                                  | -   <b>formaction</b>                    |
-|                                                                                  |                                       |
-|                                                                                  | -   <b>formenctype</b>                   |
-|                                                                                  |                                       |
-|                                                                                  | -   <b>formmethod</b>                    |
-|                                                                                  |                                       |
-|                                                                                  | -   <b>formtarget</b>                    |
-|                                                                                  |                                       |
-|                                                                                  | -   <b>formnovalidate</b>                |
-+----------------------------------------------------------------------------------+---------------------------------------+
-| *   pseudoclasses CSS target with :disabled and :checked or :required selectors |                                       |
-|                                                                                  |                                       |
-| ** align is deprecated, CSS rules should be used instead                       |                                       |
-+----------------------------------------------------------------------------------+---------------------------------------+
+| -   <b><i>checked</i></b>                                                           | -   <b>max</b>                           |
+| -   <b><i>align</i></b>                                                             | -   <b>step</b>                          |
+|                                                                                     | -   <b>formaction</b>                    |
+|                                                                                     | -   <b>formenctype</b>                   |
+|                                                                                     | -   <b>formmethod</b>                    |
+|                                                                                     | -   <b>formtarget</b>                    |
+|                                                                                     | -   <b>formnovalidate</b>                |
++-------------------------------------------------------------------------------------+------------------------------------------+
+| *   pseudoclasses CSS target with :disabled and :checked or :required selectors     |                                          |
+| **  align is deprecated, CSS rules should be used instead                           |                                          |
++-------------------------------------------------------------------------------------+------------------------------------------+
+
 <ul>
   <li>MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">&lt;input type=range&gt;</a></li>
 </ul>
@@ -17541,7 +17523,7 @@ Read [these explanations](https://html.spec.whatwg.org/multipage/common-microsy
 
 This attribute works together with the new &lt;datalist&gt; element we already studied when we saw the color and date input fields.
 
-This attribute's value must match the id of a &lt;datalist&gt; element. It is useful for providing local auto-completion to some input fields, or for restricting the possible values on some others like <input type=date> or <input type=color>.
+This attribute's value must match the id of a &lt;datalist&gt; element. It is useful for providing local auto-completion to some input fields, or for restricting the possible values on some others like &lt;input type=date&gt; or &lt;input type=color&gt;.
 
 Here is a small code extract from a more complete example shown in the section about the new &lt;datalist&gt; element (see next unit).
 
@@ -17614,7 +17596,7 @@ It's best practice to systematically add a title attribute with a value that 
 4.  />
 ```
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <h4>Example #1</h4>
 
@@ -17703,7 +17685,7 @@ Complete source code:
 
 </details>
 
-<h4>Example #3: an <input type="url"> element with a pattern attribute allowing only certain protocols</h4>
+<h4>Example #3: an &lt;input type="url"&gt; element with a pattern attribute allowing only certain protocols</h4>
 
 <a href="https://jsbin.com/nulahey/1/edit?html,output)or">Online example at JSBin</a> try it in your browser:
 
@@ -17762,21 +17744,21 @@ Their detailed use with these input fields have already been explained in sectio
 
 The multiple attribute is used with email and file input types. It's a Boolean attribute, so here are the different syntax possibilities:
 
--   <input type="email|file" multiple>
+-   &lt;input type="email|file" multiple&gt;
 
--   <input type="email|file" multiple="multiple">
+-   &lt;input type="email|file" multiple="multiple"&gt;
 
--   <input type="email|file" multiple="">
+-   &lt;input type="email|file" multiple=""&gt;
 
-With <input type="email">
+With &lt;input type="email"&gt;
 
-With the <input type="email">, this attribute enables the user to enter <i>a set of addresses, separated by a comma</i> instead of a single address. Entering several addresses will keep the input field <i>valid</i>.
+With the &lt;input type="email"&gt;, this attribute enables the user to enter <i>a set of addresses, separated by a comma</i> instead of a single address. Entering several addresses will keep the input field <i>valid</i>.
 
 <a href="https://jsbin.com/mexirif/1/edit?html,output">Online example at JSBin</a>
 
 Or try it below in your browser: type in a list of email addresses separated by a comma, then look at the input field background color (pink = invalid, green = valid), and then submit:
 
-This form uses: <input type="email" name="myemail" multiple>
+This form uses: &lt;input type="email" name="myemail" multiple&gt;
 
 Top of Form
 
@@ -21452,4 +21434,4 @@ Here are a few project ideas. Your classmates and the team who prepared the cour
 
 . . .The end.
 
-<!--- last updated 10-08-22 7:28pm --->
+<!--- last updated 10-09-22 3:30pm --->
