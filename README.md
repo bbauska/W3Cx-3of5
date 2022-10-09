@@ -9091,15 +9091,12 @@ context.fillText("bottom-glyph", 400, 75);
 
 The example above shows the different possible values for this property and the corresponding results. The default value is "alphabetic" and corresponds to what has been used in the previous "Hello World" example.
 
-<h3>Possible values:</h3>
+<h3>Possible values for the textbaseline property:</h3>
 
-|  Possible values for the textBaseline property  |
-| ----------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | textBaseline property                           | Description                                                                                               |
 | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | top                                             | The text is aligned based on the top of the tallest glyph in the text.                                    |
-| hanging                                         | The text is aligned based on the line the text seems to hang from. This is almost identical to top, 
-and in many cases, you cannot see the difference.                                                                                                             |
+| hanging                                         | The text is aligned based on the line the text seems to hang from. This is almost identical to top, and in many cases, you cannot see the difference.                                                                                                                                    |
 | middle                                          | The text is aligned according to the middle of the text.                                                  |
 | alphabetic                                      | The bottom of vertically oriented glyphs, e.g. western alphabet like the Latin.                           |
 | ideographic                                     | The bottom of horizontally oriented glyphs.                                                               |
