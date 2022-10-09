@@ -8559,7 +8559,7 @@ Aha, this is a very interesting question... the answer is in the next page!
 <h3 id="ch3-2-9">3.2.9 Saving and Restoring the Context</h3>
 <!------------------------------------------------------------------------------------------------>
 
-There are two methods for saving and restoring the context properties: ctx.save()and ctx.restore().
+There are two methods for saving and restoring the context properties: ctx.save() and ctx.restore().
 
 What will be saved: fillStyle and strokeStyle, lineWidth, the previous coordinate system, etc. <b>Meaning that ALL properties that affect drawing!</b>
 
@@ -8700,6 +8700,8 @@ We slightly modified the function that draws the monster:
 
 <p>Source code extract of this function: notice at <i>lines 3</i> and <i>26</i> how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines 7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
 
+<h4>function drawMonster</h4>
+
 <details>
  <summary>Click to expand!</summary>
 
@@ -8757,6 +8759,7 @@ Another mode called "path mode" or "buffered mode" will be seen later in this co
  <summary>Click to expand!</summary>
 
 ```
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8940,7 +8943,7 @@ context.strokeText("Hello World!", 10, 220, 150);
 
 </details>
 
-<h4>source code extract:</h4>
+<h4>Source code extract:</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -9090,19 +9093,17 @@ The example above shows the different possible values for this property and the 
 
 <h3>Possible values:</h3>
 
-|  Possible values for the textBaseline property   |
-  ----------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------|
-  top |                                            The text is aligned based on the top of the tallest glyph in the text. |
-
-  hanging |                                        The text is aligned based on the line the text seems to hang from. This is almost identical to top, and in many cases, you cannot see the difference. |
-
-  middle |                                         The text is aligned according to the middle of the text. |
-
-  alphabetic  |                                    The bottom of vertically oriented glyphs, e.g. western alphabet like the Latin. |
-
-  ideographic  |                                   The bottom of horizontally oriented glyphs. |
-
-  bottom  |                                        The text is aligned based on the bottom of the glyph in the text, that extends furthest down in the text. |
+|  Possible values for the textBaseline property  |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| textBaseline property                           | Description                                                                                               |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| top                                             | The text is aligned based on the top of the tallest glyph in the text.                                    |
+| hanging                                         | The text is aligned based on the line the text seems to hang from. This is almost identical to top, 
+and in many cases, you cannot see the difference.                                                                                                             |
+| middle                                          | The text is aligned according to the middle of the text.                                                  |
+| alphabetic                                      | The bottom of vertically oriented glyphs, e.g. western alphabet like the Latin.                           |
+| ideographic                                     | The bottom of horizontally oriented glyphs.                                                               |
+| bottom                                          | The text is aligned based on the bottom of the glyph in the text, that extends furthest down in the text. |
 
 Typical use (taken from the example above):
 
