@@ -7058,7 +7058,7 @@ function play() {
    alt="JavaScript logo." />
 </p>
 
-HTML5 is composed of new elements, but it also comes with many JavaScript APIs for controlling video and sound, drawing and animating things in the new <canvas> element, for offline applications, persistence, geolocation, orientation, etc.
+HTML5 is composed of new elements, but it also comes with many JavaScript APIs for controlling video and sound, drawing and animating things in the new &lt;canvas&gt; element, for offline applications, persistence, geolocation, orientation, etc.
 
 So yes, during this course, in particular in Modules 3 and 4, you will have to do a bit of JavaScript. <b>But, DON'T PANIC!</b>
 
@@ -7359,9 +7359,9 @@ For example, you can add a border to the canvas (or change the background color,
 </style>
 ```
 
-<h4>2 - Select the <canvas> element for use from JavaScript</h4>
+<h4>2 - Select the &lt;canvas&gt; element for use from JavaScript</h4>
 
-We can have more than one <canvas> in a single page, and canvases will be manipulated with JavaScript like other elements in the DOM.
+We can have more than one &lt;canvas&gt; in a single page, and canvases will be manipulated with JavaScript like other elements in the DOM.
 
 <h4>For example with:</h4>
 
@@ -11713,7 +11713,7 @@ Note how the different parts are linked together and make a "path":
 
 <h4>Interesting, interactive tool for generating code that draws Bézier curves</h4>
 
-This Bézier tool ("HTML5 <canvas> bezierCurveTo command generator") is available <a href="https://www.victoriakirst.com/beziertool/">online</a>: try it!
+This Bézier tool ("HTML5 &lt;canvas&gt; bezierCurveTo command generator") is available <a href="https://www.victoriakirst.com/beziertool/">online</a>: try it!
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-5-1">3.5.1 Canvas Context: Colors</h3>
