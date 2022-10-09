@@ -5983,8 +5983,8 @@ Custom look'n'feel and logo (Sublime video player):
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image002.jpeg?raw=true"
-   alt="Custom look and feel and logo."
-   width="55%">
+  width="55%"
+  alt="Custom look and feel and logo." />
 &nbsp;
 <br/>
 
@@ -5995,8 +5995,8 @@ Chapters and chapter thumbnails (JWPlayer):
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image103.png?raw=true"
-   alt="Chapter and Chapter Thumbnails"
-   width="55%">
+  width="55%"
+  alt="Chapter and Chapter Thumbnails." />
 &nbsp;
 <br/>
 
@@ -6007,8 +6007,8 @@ PayPal accessible player:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image104.png?raw=true"
-   alt="Paypal accessible player"
-   width="55%">
+  width="55%"
+  alt="Paypal accessible player." />
 &nbsp;
 <br/>
 
@@ -6019,8 +6019,8 @@ LeanBack (says "free for non-commercial use", licensing is not very clear...):
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image105.png?raw=true"
-   alt="Leanback player."
-   width="60%">
+  width="60%"
+  alt="Leanback player." />
 &nbsp;
 <br/>
 
@@ -6047,8 +6047,8 @@ The getUserMedia API, when dealing with video streams, is always used in conju
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image106.jpeg?raw=true"
-   alt="Screenshot of a simple Web camera webcam display in a Web page."
-   width="30%">
+  width="30%"
+  alt="Screenshot of a simple Web camera webcam display in a Web page." />
 &nbsp;
 <br/>
 
@@ -6114,8 +6114,8 @@ Let's see some more examples of what we can do with the getUserMedia API: start/
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image107.jpeg?raw=true"
-   alt="Resulting image of Michel Buffa using his WebCam, with two custom controls below"
-   width="35%">
+  width="35%"
+  alt="Resulting image of Michel Buffa using his WebCam, with two custom controls below." />
 &nbsp;
 <br/>
 
@@ -6230,8 +6230,8 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image108.jpeg?raw=true"
-   alt="Resulting image of Michel Buffa using his WebCam with css filter effects on live stream."
-   width="30%">
+   width="30%"
+   alt="Resulting image of Michel Buffa using his WebCam with css filter effects on live stream." />
 &nbsp;
 <br/>
 
@@ -6378,12 +6378,12 @@ The trick is to copy and paste the current image from the video stream into a 
 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 109.  (xx) ------------------------------->
+<!--------------------- 109. take a snapshot from live webcam stream (129) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image109.png?raw=true"
-   alt=""
-   width="65%">
+  width="65%"
+  alt="Take a snapshot from the live Webcam stream." />
 &nbsp;
 <br/>
 
@@ -6495,12 +6495,12 @@ Check out the <a href="https://webaudiodemos.appspot.com/">WebAudio demonstrat
 The image below is taken from <a href="https://webaudiodemos.appspot.com/input/index.html">one of the demonstrations</a>, where the sound captured by the microphone is processed in real time. We get visualizations of the signal in real time as an animated waveform, animated frequencies or animated audiogram. If we connect an electric guitar to the sound card input, then this demonstration shows that we can recreate with WebAudio most of the classic effects used by guitarists (delay, reverb, distortion, chorus, etc.).
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 110. webaudio live processing (xxx) ------------------------------>
+<!----------------------------- 110. webaudio live processing (131) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image110.jpeg?raw=true"
-   width="55%"
-   alt="WebAudio Live Processing" />
+  width="55%"
+  alt="WebAudio Live Processing." />
 </p>
 
 <h3>2.4.4 Webcam Resolution</h3>
@@ -6512,12 +6512,12 @@ For more information, this <a href="https://developer.mozilla.org/en-US/docs/We
 <b>Typical use:</b>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 111.  (xxx) ------------------------------>
+<!------------------------------ 111. set camera resolution (132) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image111.png?raw=true"
    width="65%"
-   alt="" />
+   alt="How to set camera resolution on mobile phone." />
 </p>
 
 <b>JavaScript</b>
@@ -6640,12 +6640,12 @@ border:1px solid;
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 112.  (xxx) ------------------------------>
+<!------------------------------ 112. function getusermedia (134) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image112.png?raw=true"
-   width="45%"
-   alt="." />
+  width="45%"
+  alt="Call getUserMedia() function for appropriate resolution." />
 </p>
 
 <h4>Code source extract related to the "constraint" object which specifies the desired resolutions:</h4>
@@ -6719,12 +6719,12 @@ Here are some other constraints you can set. In particular, look at the ones for
 -   Resource: <a href="https://webrtc.github.io/samples/src/content/devices/input-output/">WebRTC samples: Select sources & outputs</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 113. webapp for selecting audio and video input/output (xxx) ------------------->
+<!---------------- 113. webapp for selecting audio and video input/output (135) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image113.jpeg?raw=true"
    width="45%"
-   alt="webapp for selecting audio and video input/output." />
+   alt="Webapp for selecting audio and video input/output." />
 </p>
 
 <h4>Source code extract:</h4>
@@ -6766,12 +6766,12 @@ This MediaRecoredr API allows to record / capture the audio or video stream. The
 For example, the MediaRecorder API is used to record the video stream from a WebCam as a file saved on the hard disk. Below is a screenshot of an application allowing to record the WebCam. You will be able to run this example a little further, but for security reasons, it cannot run directly in this Web page.
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 114. Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element (xxx) ------------------->
+<!--------------------------- 114. webrtc samples mediarecorder (136) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image114.jpeg?raw=true"
    width="40%"
-   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element" />
+   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element" />	
 </p>
 
 Let's record, replay and download the video stream captured using a Webcam. You can test it below by clicking on "CodePen" at the top right:
@@ -7111,8 +7111,8 @@ This means "display in the JavaScript console the message...". If we open the co
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image116.jpeg?raw=true"
-   width="50%"
-   alt="JavaScript debugging console view." />
+  width="50%"
+  alt="JavaScript debugging using the dev tool console." />
 </p>
 
 It is also possible to use the "real dev. tool console", and for this I recommend running the application in a single window, not in the JS Bin editor. Press the black arrow on the top right of the output window - this will render the page as a standalone Web page, then press *F12*. You should see:
@@ -7170,7 +7170,7 @@ Some of you may not be used to "asynchronous programming", "callbacks" etc. We r
 <!------------------------------------------------------------------------------------------------>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 121. canvas element logo (144) ---------------------------------->
+<!------------------------------- 121. canvas element logo (144) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image121.jpeg?raw=true"
@@ -7179,7 +7179,7 @@ Some of you may not be used to "asynchronous programming", "callbacks" etc. We r
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 121. canvas element logo (xxx) ------------------->
+<!------------------------------- 121. canvas element logo (144) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image121.jpeg?raw=true"
@@ -7204,7 +7204,7 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 [Foot Chinko](https://www.ravalmatic.com/portfolio/footchinko/) is one popular free HTML5 games:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 122. foot chinko one of the best html5 2D game of 2015 (xxx) ------------------->
+<!---------------- 122. foot chinko one of the best html5 2D game of 2015 (145) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image122.jpeg?raw=true"
@@ -7217,12 +7217,12 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 Lots of data visualization tools and JavaScript libraries use the HTML5 canvas element for [Data visualization](http://www.creativebloq.com/design-tools/data-visualization-712402):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 123. html5 data visualization (xxx) ------------------->
+<!--------------- 123. html5 data visualization (146) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image123.jpeg?raw=true"
    width="50%"
-   alt="html5 data visualization" />
+   alt="html5 data visualization, bar graphs." />
 </p>
 
 <h4>Example #3</h4>
@@ -7230,7 +7230,7 @@ Lots of data visualization tools and JavaScript libraries use the HTML5 canvas e
 A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), that runs at 60 frames per second in an HTML5 canvas element:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (xxx) ------------------->
+<!------- 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (146) -------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image124.jpeg?raw=true"
@@ -7288,7 +7288,7 @@ We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.or
 <p align="center" width="100%">
 <img src="./images/image125.png?raw=true"
    width="65%"
-   alt="snapshot of an HTML Canvas cheatsheet from skilled.com." />
+   alt="Snapshot of an HTML Canvas cheatsheet from skilled.com." />
 </p>
 
 2.  Another resource, as an [HTML file](https://simon.html5.org/dump/html5-canvas-cheat-sheet.html):
@@ -7314,7 +7314,7 @@ The coordinate system used for drawing in canvases is similar to the one used by
 <p align="center" width="100%">
 <img src="./images/image127.png?raw=true"
    width="55%"
-   alt="Coordinate system" />
+   alt="Coordinate system." />
 </p>
 
 -   <b>X</b> axis is horizontal, directed to the right 
@@ -7602,7 +7602,7 @@ ctx.fillRect(10,10,200,200);
 Produces this result:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 128. filled rectangle with pink color (xxx) ------------------->
+<!------------------------ 128. filled rectangle with pink color (153) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image128.jpeg?raw=true"
@@ -7624,7 +7624,7 @@ ctx.strokeRect(10,10,200,200);
 
 ... gives this result:
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 129. stroked rectangle - border is in blue (xxx) ------------------->
+<!---------------------- 129. stroked rectangle - border is in blue (154) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image129.png?raw=true"
