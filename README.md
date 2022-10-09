@@ -4862,7 +4862,7 @@ We provide this as a quick reminder - keep in mind that the <a href="https://ht
 | -------------- | -------------------------- | --------------- |
 | <b>play()</b>  | <b>currentSrc</b>          | <b>play</b>     |
 | <b>pause()</b> | <b>currentTime</b>         | <b>pause</b>    |
-|  load()    |   | startTime (readonly)       | progress        |
+|  load()        | startTime (readonly)       | progress        |
 |  canPlayType() | videoWidth                 | error           |
 |                | videoHeight                | timeupdate      |
 |                | duration (readonly)        | ended           |
@@ -5009,48 +5009,49 @@ Check the online example below: use the progress cursor to go near the end of th
   <summary>Click to expand!</summary>
 
 ```
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Sequential Movies</title>    <script>
-      var myVideo;
-      var currentVideo = 0;
-      var sources = [
-        "https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4",
-        "https://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4"
-        ];
-// Set the src of the video to the next URL in the playlist
-// If at the end we start again from beginning (the modulo
-// source.length does that)
-      function loadNextVideo() {
-        myVideo.src = sources[currentVideo % sources.length]
-        myVideo.load();
-        currentVideo++;
-      }
-// listener plays the video
-    function loadAndplayNextVideo() {
-      console.log("playing " + sources[currentVideo % sources.length])
-      loadNextVideo();
-      myVideo.play();
-    }
-// Called when the page is loaded
-    function init(){
-// get the video element using the DOM api
-    myVideo = document.querySelector("#myVideo");
-// Defines a callback function called each time a video ended
-    myVideo.addEventListener('ended', loadAndplayNextVideo, false);
-// Loads the first video when the page is loaded
-    loadNextVideo();
-    }
-  </script>
-</head>
-<body onload="init()">
-    <video id="myVideo"
-      controls>
-    </video>
-</body>
-</html>
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.    <head>
+4.      <meta charset="utf-8"/>
+5.      <title>Sequential Movies</title>
+6.      <script>
+7.        var myVideo;
+8.        var currentVideo = 0;
+9.        var sources = [
+10.          "https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4",
+12.          "https://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4"
+12.          ];
+13.  // Set the src of the video to the next URL in the playlist
+14.  // If at the end we start again from beginning (the modulo
+15.  // source.length does that)
+16.        function loadNextVideo() {
+17.          myVideo.src = sources[currentVideo % sources.length]
+18.          myVideo.load();
+19.          currentVideo++;
+20.        }
+21.  // listener plays the video
+22.      function loadAndplayNextVideo() {
+23.        console.log("playing " + sources[currentVideo % sources.length])
+24.        loadNextVideo();
+25.        myVideo.play();
+26.      }
+27.  // Called when the page is loaded
+28.      function init(){
+29.  // get the video element using the DOM api
+30.      myVideo = document.querySelector("#myVideo");
+31.  // Defines a callback function called each time a video ended
+32.        myVideo.addEventListener('ended', loadAndplayNextVideo, false);
+33.  // Loads the first video when the page is loaded
+34.      loadNextVideo();
+35.      }
+36.    </script>
+37.  </head>
+38.  <body onload="init()">
+39.      <video id="myVideo"
+40.        controls>
+41.      </video>
+42.  </body>
+43.  </html>
 ```
 
 </details>
@@ -5101,12 +5102,12 @@ Don't forget to click the JavaScript and CSS tabs of the CodePen in order to di
 This example also shows how to handle failures. See the code and play with this example below:
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 83.  ---------------------------------------->
+<!------------------------- 83. how to track all possible events (101) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image083.png?raw=true"
-   alt=""
-   width="65%" />
+   width="65%"
+   alt="Example #2. How to track all possible events.." />
 &nbsp;
 <p>
 Below is a piece of code for handling errors during video playback:
@@ -5157,12 +5158,12 @@ function logEvent(evt, color) {
 See the <a href="https://jsbin.com/xororol/3/edit?html,output">example online</a> here too.
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 84.  (xx) ---------------------------------------->
+<!-------------------------- 84. display percentage of buffering (102) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image084.png?raw=true"
-   alt=""
-   width="65%" />
+   width="65%"
+   alt="Example #3. How to display a percentage of buffering." />
 &nbsp;
 <p>
 Note that on mobile phones, the video does not start until the user presses the play control or clicks on the video picture. Using the "canplaythrough" event is a trick to call a function that starts the video player as soon as the page is loaded on desktop. This event is not supported by mobile devices, so if you try this example on a mobile, the video will not start automatically.
@@ -5227,12 +5228,12 @@ As explained by the <a href="https://developer.apple.com/">Apple Developer Web 
 This is the ultimate way of doing a real custom player: redesign your own controls using SVG shapes! This example (try it <a href="https://www.w3.org/2010/Talks/0430-www2010-plh/video-player.xhtml">online</a>) is given "as is" for those of you who may be curious.
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------------- 85. cup on table ---------------------------------------->
+<!------------------------ 85. cup on table xhtml5 and svg player (103) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image085.png?raw=true"
-   alt="Snapshot of the Online Example of a Custom XHTML5/SVG Video Player.  Image Shows a Cup of Coffee on a Table."
-   width="25%" />
+   width="25%"
+   alt="Example #4. Snapshot of the Online Example of a Custom XHTML5/SVG Video Player.  Image Shows a Cup of Coffee on a Table." />
 &nbsp;
 
 <h4>Example #5: a custom video player written by a previous student</h4>
@@ -5288,8 +5289,8 @@ Here is an example of a video element that includes a &lt;track&gt; element in
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image086.png?raw=true"
-   alt=""Example using a track element."
-   width="65%">
+   width="65%"
+   alt=""Example using a track element in the .vtt format." />
 &nbsp;
 <br/>
 <p>
@@ -5514,8 +5515,8 @@ So, let's suppose you have a video like the one below (we included it on YouTube
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image087.png?raw=true"
-   alt="Picture guitar picking."
-   width="45%" />
+   width="45%"
+   alt="Picture guitar picking." />
 &nbsp;
 
 And if you've also got it in mp4/H264 and in webm formats, here is how you can embed it in your page using the video element:
@@ -5549,17 +5550,17 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image088.png?raw=true"
-   alt="Example subtitles and captions."
-   width="40%">
+   width="40%"
+   alt="Example subtitles and captions." />
 &nbsp;
 <br/>
 
 <p>Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 99. youtube make subtitles (110) -------------------------------->
+<!------------------------------ 89. youtube make subtitles (110) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image099.png?raw=true"
+<img src="/images/image089.png?raw=true"
    alt="Youtube make subtitles."
    width="60%">
 &nbsp;
