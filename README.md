@@ -16008,9 +16008,11 @@ Whenever possible, use the label element to explicitly associate text with for
 
 Click on the label, not on the input field to see the effect.
 
+<!---
 Top of Form
 
 First name:![](./images/image218.wmf)
+--->
 
 <h4>Source code:</h4>
 
@@ -16023,11 +16025,11 @@ First name:![](./images/image218.wmf)
 
 <h4>Example #2</h4>
 <p>
-Note that you can also include the &lt;input&gt; element inside the &lt;label&gt;...&lt;label&gt; element, and also add a &lt;span lang="en"&gt; for example, to indicate the language used in the label. Sometimes, <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#The_%3Clabel%3E_element">[nesting labels and inputs can also make CSS styling easier and produce better results with screen readers</a>.
+Note that you can also include the &lt;input&gt; element inside the &lt;label&gt;...&lt;label&gt; element, and also add a &lt;span lang="en"&gt; for example, to indicate the language used in the label. Sometimes, <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#The_%3Clabel%3E_element">nesting labels and inputs can also make CSS styling easier and produce better results with screen readers</a>.
 </p>
 <h4>Source code (with &lt;input&gt; inside the &lt;label&gt;):</h4>
 
-```
+```	
 <label for=first_name"><span lang=en">Your First Name</span>
   <input id="first_name" type="text" name="fname"/>
 </label>
@@ -16037,50 +16039,56 @@ Note that you can also include the &lt;input&gt; element inside the &lt;label
 <p>
 Click on the label "Subscribe to newsletter" to see what this does.
 </p>
-
+<!--
 First name:![](./images/image218.wmf)
 Subscribe to newsletter![](./images/image219.wmf)
+-->
 
 <h4>Source code:</h4>
-
+<!--
 Bottom of Form
+-->
 
 ```
-<label for="firstname">First name:</label>
-<input type="text" name="firstname" id="firstname"><br>
-
-<label for="subscribe">Subscribe to newsletter</label>
-<input type="checkbox" name="subscribe" id="subscribe">
+1. <label for="firstname">First name:</label>
+2. <input type="text" name="firstname" id="firstname"><br>
+3. 
+4. <label for="subscribe">Subscribe to newsletter</label>
+5. <input type="checkbox" name="subscribe" id="subscribe">
 ```
 
 <h4>Labeling buttons</h4>
 
-The label of a <button> element is set inside the element and can include markup. This allows advanced accessibility hints to be included, such as marking up language change. Example: <button>Mon <span lang="fr">bouton</span></button>,for a button with a label in French.
+The label of a &lt;button&gt; element is set inside the element and can include markup. This allows advanced accessibility hints to be included, such as marking up language change. Example: &lt;button&gt;Mon &lt;span lang="fr"&gt;bouton&lt;/span&gt;&lt;/button&gt;,for a button with a label in French.
 
-When using the <input> element to create buttons, the label is set in the value attribute of the element. Example: <input type="submit" value="Please submit">, renders a button.
+When using the &lt;input&gt; element to create buttons, the label is set in the value attribute of the element. Example: &lt;input type="submit" 
+value="Please submit"&gt;, renders a text button.
 
 <h4>Source code for the "Submit" and "Cancel" buttons example:</h4>
 
 ```
-<button type="submit">Submit</button>
-<button type="button">Cancel</button>
+1. <button type="submit">Submit</button>
+2. <button type="button">Cancel</button>
  
-<input type="submit" value="Submit">
-<input type="button" value="Cancel">
+3. <input type="submit" value="Submit">
+4. <input type="button" value="Cancel">
 ```
 
 These give the same results:
 
 <i>Lines 1 and 2</i> render as:
-Submit Cancel
+<b>Submit Cancel</b>
 
 ... while <i>lines 3 and 4</i> render as:
-![](./images/image220.wmf) 
+<!-- submit
+![](./images/image220.wmf)
+-->
 
 <h4>Labeling text areas</h4>
-
+<!-- rectangle box
 Enter your address:
 ![](./images/image221.wmf)
+-->
 
 <h4>Source code:</h4>
 
@@ -16104,11 +16112,13 @@ In the example below, there are three radio buttons that allow the user to choos
 
 Output format:
 
+<!---
 ![](./images/image222.wmf)Text file
 
 ![](./images/image222.wmf)CSV file
 
 ![](./images/image222.wmf)HTML file
+--->
 
 Bottom of Form
 
@@ -16141,12 +16151,13 @@ In the example below, there are three checkboxes that are all part of an opt-in 
 Top of Form
 
 I want to receive
-
+<!---
 ![](./images/image219.wmf)The weekly newsletter
 
 ![](./images/image219.wmf)Offers from the company
 
 ![](./images/image219.wmf)Offers from associated companies
+--->
 
 Bottom of Form
 
@@ -17315,13 +17326,16 @@ This attribute is useful for putting input fields outside the form itself. The 
 <p>
 <a href="http://codepen.io/w3devcampus/pen/jmdpyv)">Try this interactive example in CodePen</a>, or try it directly in your browser:
 
+<!---
 Enter your name (field outside the form): ![](./images/image266.wmf)</p>
+--->
 
 <h4>Top of Form</h4>
-
+<!---
 Choose optionFree registering![](./images/image219.wmf)Premium![](./images/image219.wmf) Send form
 
 Bottom of Form
+--->
 
 <h4>Source code:</h4>
 
@@ -17444,15 +17458,18 @@ This example below illustrates the use of the autofocus attribute: the focus i
 
 The required attribute makes the input field invalid if kept empty. 
 
+<!---
 Here is the result in your browser:
 
 Top of Form
 
 Example of use of the autofocus attributeThis is an input field:![](./images/image266.wmf)
-
+--->
+<!---
 Enter at least 6 chars, max 9 chars (this field has the autofocus attribute):![](./images/image218.wmf)
 
 Bottom of Form
+--->
 
 Notice that the focus in on the second input field, thanks to the autofocus attribute.
 
@@ -17530,11 +17547,13 @@ Here is a small code extract from a more complete example shown in the section a
 
 Please try it in your  browser (Type "F", "E", "O", C" etc., or just click inside the field and use the drop down menu). Note that you can also enter any value; if it does not start with one of these letters it will be accepted but will not trigger auto-completion.
 
+<!---
 Top of Form
 
 List attributePreferred browser![](./images/image269.wmf) ![](./images/image270.wmf)
 
 Bottom of Form
+--->
 
 Source code extract:
 
@@ -17601,7 +17620,9 @@ It's best practice to systematically add a title attribute with a value that 
 
 Try this <a href="https://jsbin.com/xeyuqux/1/edit?html,output">online example at JSBin</a> or directly in your browser below:
 
+<!----
 Please enter a 3 letter country code (green = valid, pink = invalid): ![](./images/image266.wmf)
+--->
 
 With the previous example, until the value of the input field is equal to 3 alphabetic characters, the field is invalid.
 
@@ -17645,7 +17666,9 @@ Try this <a href="https://jsbin.com/bozudeg/1/edit?html,output">example online<
 
 Attributes used: placeholder (for displaying a ghost example value), pattern, required (empty field = invalid)...
 
+<!---
 Enter a pseudo (6-12 characters): ![](./images/image218.wmf)
+--->
 
 Complete source code:
 
@@ -17980,12 +18003,14 @@ This attribute's value indicates where the response from the form submission sho
 
 [Online example at JSBin ](https://jsbin.com/godice/2/edit?html,output)or try it in your browser below:
 
+<!---
 Top of Form
 
 Given name: ![](./images/image269.wmf)
 Family name: ![](./images/image269.wmf)
 
 ![](./images/image274.wmf) ![](./images/image275.wmf)
+--->
 
 <h4>Source code:</h4>
 
@@ -18703,6 +18728,7 @@ be careful to try this example in JS Bin standalone mode (click the small black 
 
 Or you may try it here in your browser:
 
+<!---
 Top of Form
 
 Example use of the validation API, enter different passwords and submit Password: ![](./images/image266.wmf)
@@ -18712,6 +18738,7 @@ Repeat password: ![](./images/image218.wmf)
 Submit
 
 Bottom of Form
+--->
 
 <h4>Extract from source code:</h4>
 
