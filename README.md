@@ -20401,7 +20401,7 @@ Notice that you can encode any type of file as dataURL, but this format is most
 Example of HTML5 logo embedded in a document without any real image, just a dataURL and CSS:
 
 <!------------------------------------------------------------------------------------------------>
-<!- 320. screenshot of jsbin examle shows the html5 logo insterted before a div using css (xxx) -->
+<!-- 320. screenshot of jsbin examle shows the html5 logo insterted before a div using css (385) ->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image317.jpeg?raw=true"
@@ -20419,7 +20419,7 @@ This first example is useful for forms that allow the user to select one or more
 <a href="https://jsbin.com/laseye/edit?html,output">Example on JSBin</a> or try it below in your browser:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 332. preview of selected images --------------------------------->
+<!--------------------------- 332. preview of selected images (385) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image332.png?raw=true"
@@ -20484,12 +20484,12 @@ This first example is useful for forms that allow the user to select one or more
 <a href="https://jsbin.com/miciqu/edit?html,output">Try it on JSBin</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 322.  (xxx) ----------------------------->
+<!------------------------------- 322. example 2 kitty cat (386) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image322.jpeg?raw=true"
    width="55%"
-   alt="read image as dataURL and draw inside a canvas." />
+   alt="Example #2 read image as dataURL and draw inside a canvas." />
 &nbsp;
 <br/>
 
@@ -20548,12 +20548,12 @@ Another very impressive example, has been developed by @GeorgianaB, a student of
 This chapter presents the new Geolocation API and illustrates its use with several examples.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 323.  (xxx) ----------------------------->
+<!------------------------------ 323. w3c geolocation logo (388) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image323.png?raw=true"
    width="25%"
-   alt="W3C Geolocation icon." />
+   alt="W3C Geolocation logo/icon." />
 &nbsp;
 <br/>
 
@@ -20598,37 +20598,37 @@ Note that the first time you execute this example, for privacy reasons, the brow
  <summary>Click to expand!</summary>
 
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Basic example of use of the geolocation API</title>
-</head>
-<body>
-<p id="msg">Click the button to get your coordinates:</p>
-<button onclick="getLocation()">Where am I ?</button>
-<script>
-var displayCoords=document.getElementById("msg");
-function getLocation() {
-if (navigator.geolocation) {
-navigator.geolocation.getCurrentPosition(showPosition);
-} else {
-displayCoords.innerHTML="Geolocation API not supported by your browser.";
-}
-}
-function showPosition(position) {
-displayCoords.innerHTML="Latitude: " + position.coords.latitude +
-"<br />Longitude: " + position.coords.longitude;
-}
-</script>
-</body>
-</html>
+1.  <!DOCTYPE html>
+2.  <html lang="en">
+3.  <head>
+4.  <meta charset="utf-8">
+5.  <title>Basic example of use of the geolocation API</title>
+6.  </head>
+7.  <body>
+8.  <p id="msg">Click the button to get your coordinates:</p>
+9.  <button onclick="getLocation()">Where am I ?</button>
+10.  <script>
+11.  var displayCoords=document.getElementById("msg");
+12.  function getLocation() {
+13.  if (navigator.geolocation) {
+14.  navigator.geolocation.getCurrentPosition(showPosition);
+15.  } else {
+16.  displayCoords.innerHTML="Geolocation API not supported by your browser.";
+17.  }
+18.  }
+19.  function showPosition(position) {
+20.  displayCoords.innerHTML="Latitude: " + position.coords.latitude +
+21. "<br />Longitude: " + position.coords.longitude;
+22. }
+23. </script>
+24. </body>
+25. </html>
 ```
 
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 324. geolocation callback illustration (xxx) --------------------------->
+<!---------------------- 324. function getLocation in geolocation (389) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image324.jpeg?raw=true"
@@ -20638,9 +20638,9 @@ displayCoords.innerHTML="Latitude: " + position.coords.latitude +
 
 <h4>Explanations:</h4>
 <ul>
-  <li><i>Line 14</i> checks if the Web browser supports the geolocation API by testing the variable navigator.geolocation. If not null, then the geolocation API is supported.</li>
-  <li><i>Line 15</i> calls navigator.geolocation.getCurrentPosition(showPosition) passing a callback function as a parameter (in this example we did not specify a callback in case of error). When a current position is available, the callback function will be called asynchronously, and the input parameter of this callback function will be the current position, like in the function showPosition(position) of the example.</li>
-  <li><i>Line 22</i> the position objects has a coords property that is the object that holds the longitude and the latitude.</li>
+  <li><i>Line 13</i> checks if the Web browser supports the geolocation API by testing the variable navigator.geolocation. If not null, then the geolocation API is supported.</li>
+  <li><i>Line 14</i> calls navigator.geolocation.getCurrentPosition(showPosition) passing a callback function as a parameter (in this example we did not specify a callback in case of error). When a current position is available, the callback function will be called asynchronously, and the input parameter of this callback function will be the current position, like in the function showPosition(position) of the example.</li>
+  <li><i>Line 20</i> the position objects has a coords property that is the object that holds the longitude and the latitude.</li>
 </ul>
 
 <h4>External resources:</h4>
@@ -20662,12 +20662,12 @@ displayCoords.innerHTML="Latitude: " + position.coords.latitude +
 In the previous example, we used the coords property of the position passed as an input parameter to the callback function. This coords object has many properties:
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 325.  (xxx) ---------------------------------->
+<!------------------------- 325. properties of the coords object (390) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image325.png?raw=true"
    width="85%"
-   alt="." />
+   alt="Properties of the coords object." />
 </p>
 <p>
 Not all these values may be available in all Web browsers. When one of these properties is null, it means that it is not available (often the case of the altitudeAccuracy)
@@ -20681,7 +20681,7 @@ In the last example, we used the navigator.geolocation. getCurrentPosition(show
 A slightly different version of the previous example <a href="https://jsbin.com/bafusik/edit?html,output">shows how to properly check against the different possible errors</a>. Try it, then turn your WiFi off or unplug your Ethernet cable (or turn off GPS and 3G/4G on a mobile phone). You should see an error message Error during geolocation: Location could not be obtained though the available means":
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 326. geolocation error (xxx) ---------------------------------->
+<!-------------------------------- 326. geolocation error (390) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image326.jpeg?raw=true"
@@ -20772,12 +20772,12 @@ As a test, you may just try to change getCurrentPosition to watchPosition in
 Several options are available when using HTML5 geolocation. We can pass a third parameter to the getCurrentPosition and watchPosition methods, that will hold one or several of the following options:
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------------------- 327. example/test openstreetmap (4xx) ------------------------------>
+<!---------------------- 327. more properties of the coords object (392) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image327.png?raw=true"
    width="85%"
-   alt="Example/Test OpenStreetMap." />
+   alt="More properties of the coords object." />
 </p>
 
 <h4>Example of use</h4>
@@ -20820,7 +20820,7 @@ This section presents an example of how to get an interactive map, using <a hr
 How to get a map centered on your longitude and latitude.
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 328. openstreetmap test (444) ---------------------------------->
+<!------------------------------- 328. openstreetmap test (393) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image328.png?raw=true"
@@ -20831,7 +20831,7 @@ How to get a map centered on your longitude and latitude.
 <p>This example is just given "as is", as there are so many possibilities for rendering a map with <a href="/leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a basic example might be useful.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 329. openstreetmap test (444) ---------------------------------->
+<!------------------------------- 329. openstreetmap test (393) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image329.png?raw=true"
@@ -21016,12 +21016,12 @@ Example #1: how to get a physical address from the longitude and latitude
 
 Google reverse geocoding example (screenshot only):</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 330. google reverse geocoding example (447) --------------------------->
+<!------------------------ 330. google reverse geocoding example (396) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image330.png?raw=true"
    width="45%"
-   alt="Gisgraphy" />
+   alt="Example #1 How to get a physical address from the longitude and latitude." />
 </p>
 
 <p>Source code of this example (in order to run it, you need a Google API key, used at <i>line 6</i>).</p>
@@ -21119,12 +21119,12 @@ function showPosition(position) {
 Gisgraphy (free service) reverse geocoding example (screenshot only, click on it to see [the demo on the Gisgraphy website](https://services.gisgraphy.com/static/leaflet/index.html)):
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------ 331. gisgraphy (449) -------------------------------------->
+<!------------------------------ 331. gisgraphy screenshot (398) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image331.png?raw=true"
    width="65%"
-   alt="Gisgraphy" />
+   alt="Gisgraphy screenshot." />
 </p>
 
 <h4><b>Example #2:</b> reverse geocoding + OpenStreetMap</h4>
@@ -21133,7 +21133,7 @@ Gisgraphy (free service) reverse geocoding example (screenshot only, click on it
 
 Please, pan and zoom on the map and click. The longitude and latitude are computed from your click and a free reverse geocoding service is used to convert to a physical address.</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------ 332. reverse geocoding - openstreetmap (449) -------------------------->
+<!------------------------ 332. reverse geocoding - openstreetmap (398) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="/images/image332.png?raw=true"
