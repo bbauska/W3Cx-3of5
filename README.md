@@ -215,7 +215,7 @@ Here are a few possibilities for Web editors:
 <!------------------------------------- 02. jsbin logo (04) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image002.png?raw=true"
+<img src="./images/image002.png?raw=true"
    alt="JSBin logo."
    width="15%">
 &nbsp;
@@ -233,7 +233,7 @@ Tutorials can be found on the Web such as <a href="https://code.tutsplus.com/tut
 <!------------------------------------ 03. codepen logo (04) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image003.png?raw=true"
+<img src="./images/image003.png?raw=true"
    alt="CodePen logo."
    width="15%">
 &nbsp;
@@ -273,7 +273,7 @@ Example of a <a href="./images/image004.png">CanIUse browser</a> support table (
 <!---------------------------------- 04. caniuse example (05) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image004.png?raw=true"
+<img src="./images/image004.png?raw=true"
    alt="Example CSS in CanIUse."
    width="65%">
 &nbsp;
@@ -284,7 +284,7 @@ Example of a <a href="./images/image004.png">CanIUse browser</a> support table (
 <!---------------------------------- 05. mdn web docs logo (05) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image005.png?raw=true"
+<img src="./images/image005.png?raw=true"
    alt="Logo of MDN Web Docs."
    width="35%">
 &nbsp;
@@ -321,7 +321,7 @@ The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validato
 <!-------------------------- 06. laptop showing unicorn validator (06) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image006.png?raw=true"
+<img src="./images/image006.png?raw=true"
    alt="Laptop Showing Unicorn Validator."
    width="25%" />
 </p>
@@ -346,7 +346,7 @@ The <a href="https://www.w3.org/2009/cheatsheet/" target="_blank">W3C cheatshee
 <!--------------------------- 07. w3c cheat sheet snapshot image (07) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image007.png?raw=true"
+<img src="./images/image007.png?raw=true"
    alt="W3C Cheat Sheet snapshot image."
    width="65%" />
 </p>
@@ -372,7 +372,7 @@ Contributing to this standardization process might be a bit scary or hard to app
 <!----------------------------- 08. github (the octocat) logo (07) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image008.png?raw=true"
+<img src="./images/image008.png?raw=true"
    alt="Github (the octocat) logo."
    width="15%" />
 </p>
@@ -385,7 +385,7 @@ If you're looking to an easy way to dive into this standardization processes, ch
 <!----------------------- 09. w3c web incubator community group logo (08) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image009.png?raw=true"
+<img src="./images/image009.png?raw=true"
    alt="W3C Web Incubator Community Group logo."
    width="25%" />
 </p>
@@ -406,7 +406,7 @@ W3C's primary activity is to develop protocols and guidelines that ensure long-t
 <!-------------------------- 10. Tim Berners-Lee, WWW developer (08) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image010.jpeg?raw=true"
+<img src="./images/image010.jpeg?raw=true"
    alt="Tim Berners-Lee at his desk in CERN, Switzerland, 1994"
    width="65%">
 &nbsp;
@@ -580,7 +580,7 @@ Text alternatives ("alt text") are a primary way of making visual information ac
 <!-------------------------------------- 11. W3C logo (13) --------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image011.png?raw=true"
+<img src="./images/image011.png?raw=true"
    alt="W3C logo."
    width="15%" />
 &nbsp;
@@ -598,7 +598,7 @@ Text alternatives ("alt text") are a primary way of making visual information ac
 <!------------------------------------- 12. html5 logo (13) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image012.png?raw=true"
+<img src="./images/image012.png?raw=true"
    alt="HTML5 logo"
    width="15%">
 &nbsp;
@@ -621,7 +621,7 @@ Text alternatives ("alt text") are a primary way of making visual information ac
 <!-------------------------- 13. new structural elements in html5 (13) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image013.jpeg?raw=true"
+<img src="./images/image013.jpeg?raw=true"
    alt="Some of the new structural elements introduced by HTML5: section, article, etc."
    width="55%" />
 &nbsp;
@@ -718,7 +718,7 @@ Let's study <a href="https://jsbin.com/bucokav/edit?html,output">an example we 
 <!----------------------------- 14. image 'Simple HTML5 Blog' (16) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image014.jpeg?raw=true"
+<img src="./images/image014.jpeg?raw=true"
    alt="Simple HTML5 Blog"
    width="25%">
 &nbsp;
@@ -761,7 +761,7 @@ header span {
 <!----------------------------- 15. image of the navigaton menu (16) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image015.jpeg?raw=true"
+<img src="./images/image015.jpeg?raw=true"
    alt="Navigation Menu"
    width="35%" />
 </p>
@@ -835,7 +835,7 @@ nav span {
 <!---------------------- 16. image of sections that contain articles (17) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image016.jpeg?raw=true"
+<img src="./images/image016.jpeg?raw=true"
    alt="Image of sections that contain articles."
    width="65%" />
 </p>
@@ -897,7 +897,7 @@ section h2 {
 <!---------------------- 17. image of header at top of each article (18) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image017.jpeg?raw=true"
+<img src="./images/image017.jpeg?raw=true"
    alt="Image of the header at the top of each article."
    width="55%">
 &nbsp;
@@ -951,7 +951,7 @@ Also note the way we included a figure using the new "HTML5" method, using a &l
 <!---------------------------------- 18. figure and figcaption (19) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image018.jpeg?raw=true"
+<img src="./images/image018.jpeg?raw=true"
    alt="Image of figure and figure caption that embed an image."
    width="55%">
 &nbsp;
@@ -989,7 +989,7 @@ Here is the CSS for the &lt;figcaption&gt; element we have used in the example
 <!--------------------- 19. image of tag cloud defined as aside element (20) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image019.jpeg?raw=true"
+<img src="./images/image019.jpeg?raw=true"
    alt="Image of tag cloud defined as aside element."
    width="35%">
 &nbsp;
@@ -1053,7 +1053,7 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 <!----------------------------- 20. the aside tag on the right (21) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image020.jpeg?raw=true"
+<img src="./images/image020.jpeg?raw=true"
    alt="The aside tag cloud on the right."
    width="65%">
 &nbsp;
@@ -1064,7 +1064,7 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 <!------------------------------ 21. image of the blog footer (21) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image021.jpeg?raw=true"
+<img src="./images/image021.jpeg?raw=true"
    alt="Image of the blog footer."
    width="25%" />
 </p>
@@ -1110,7 +1110,7 @@ footer {
 <!------------------- 22. the resulting footer at the bottom of the page (21) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image022.jpeg?raw=true"
+<img src="./images/image022.jpeg?raw=true"
    alt="Image of the blog footer."
    width="65%" />
 </p>
@@ -1123,7 +1123,7 @@ footer {
 <!---------------------------------- 23. picture of eisher (22) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image023.jpeg?raw=true"
+<img src="./images/image023.jpeg?raw=true"
    alt="Picture of eisher."
    width="25%" />
 </p>
@@ -1215,7 +1215,7 @@ This chart from the <a href="https://html5doctor.com/">HTML5 Doctor Web site&l
 <!--------------- 24. html5 doctor web site. whether or not to use a <dev> (24) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image024.png?raw=true"
+<img src="./images/image024.png?raw=true"
   width="100%"
   alt="HTML5 Doctor Web site.  Whether or not to use a 'dev'." />
 </p>
@@ -1249,7 +1249,7 @@ Here is the result for the previous example:</p>
 <!------------------ 25. outliner in action from the previous example (25) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image025.png?raw=true"
+<img src="./images/image025.png?raw=true"
    width="65%"
    alt="Outliner in action from the previous example." />
 </p>
@@ -1327,7 +1327,7 @@ Let's clarify this by looking at some example code:</p>
 <!---------------------------------- 26. Heading example (26) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image026.jpeg?raw=true"
+<img src="./images/image026.jpeg?raw=true"
    alt="Heading content example."
    width="55%">
 &nbsp;
@@ -1392,7 +1392,7 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 <!---------------------------- 27. outline of previous example (27) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image027.jpeg?raw=true"
+<img src="./images/image027.jpeg?raw=true"
    alt="Outline of last example."
    width="55%">
 &nbsp;
@@ -1451,7 +1451,7 @@ You can use heading elements &lt;h1&gt;...&lt;h6&gt; in a &lt;header&gt; but
 <!---------------------------- 28. outline of previous example (28) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image028.jpeg?raw=true"
+<img src="./images/image028.jpeg?raw=true"
    alt="Outline of previous example."
    width="55%">
 &nbsp;
@@ -1531,7 +1531,7 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 <!---------------------------- 29. outline of previous example (29) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image029.jpeg?raw=true"
+<img src="./images/image029.jpeg?raw=true"
    alt="Outline of previous example."
    width="55%">
 &nbsp;
@@ -1545,7 +1545,7 @@ Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-
 <!------------------------------------ 30. html5 logo (30) --------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image030.png?raw=true"
+<img src="./images/image030.png?raw=true"
    alt="HTML5 logo"
    width="35%">
 &nbsp;
@@ -1688,7 +1688,7 @@ If you look at the "minimal document" example, or at other examples in this cour
 <!------------- 13. some of the new structural elements introducted by html5 (33) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image013.jpeg?raw=true"
+<img src="./images/image013.jpeg?raw=true"
    alt="Some of the new structural elements introduced by HTML5: section, article, etc."
    width="65%" />
 &nbsp;
@@ -1759,7 +1759,7 @@ Read also at the end of this section about the new &lt;main&gt; element .  Th
 <!---------------- 14. image of the header element at the top of the blog (35) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image014.jpeg?raw=true"
+<img src="./images/image014.jpeg?raw=true"
    alt="image of the header element at the top of the blog"
    width="35%" />
 &nbsp;
@@ -1802,7 +1802,7 @@ header span {
 <!--------------------------- 15. image of the navigation menu (36) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image015.jpeg?raw=true"
+<img src="./images/image015.jpeg?raw=true"
    alt="Image of the navigation menu."
    width="35%" />
 &nbsp;
@@ -1877,7 +1877,7 @@ Now, we have one big &lt;section&gt; element that contains a set of &lt;artic
 <!---------------------- 16. image of sections that contain articles (37) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image016.jpeg?raw=true"
+<img src="./images/image016.jpeg?raw=true"
    alt="Image of sections that contain articles."
    width="65%" />
 &nbsp;
@@ -1935,7 +1935,7 @@ section h2 {
 <!------------------ 17. image of the header at the top of each article (37) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image017.jpeg?raw=true"
+<img src="./images/image017.jpeg?raw=true"
    alt="Image of the header at the top of each article."
    width="65%" />
 &nbsp;
@@ -1990,7 +1990,7 @@ Also note the way we included a figure using the new "HTML5" method, using a &l
 <!----------------- 18. image of figure and figcaption that embed an img (38) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image018.jpeg?raw=true"
+<img src="./images/image018.jpeg?raw=true"
    alt="image of figure and figcaption that embed an img."
    width="65%" />
 &nbsp;
@@ -2028,7 +2028,7 @@ After the long &lt;section&gt; element that contains all the blog articles dis
 <!---------------- 19. image of the tag cloud defined as an aside element (39) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image019.jpeg?raw=true"
+<img src="./images/image019.jpeg?raw=true"
    alt="image of the tag cloud defined as an aside element."
    width="25%" />
 &nbsp;
@@ -2089,7 +2089,7 @@ aside .tag-cloud {
 <!---------------- 19. image of the tag cloud defined as an aside element (40) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image019.jpeg?raw=true"
+<img src="./images/image019.jpeg?raw=true"
    alt="The aside tag cloud on the right."
    width="50%" />
 &nbsp;
@@ -2100,7 +2100,7 @@ aside .tag-cloud {
 <!---------------- 20. image of the tag cloud defined as an aside element (40) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image020.jpeg?raw=true"
+<img src="./images/image020.jpeg?raw=true"
    alt="Image of the blog footer."
    width="25%" />
 &nbsp;
@@ -2147,7 +2147,7 @@ footer {
 <!------------------- 22. the resulting footer at the bottom of the page (41) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image022.jpeg?raw=true"
+<img src="./images/image022.jpeg?raw=true"
    alt="Image of the tag cloud defined as an aside element."
    width="55%" />
 &nbsp;
@@ -2161,7 +2161,7 @@ footer {
 <!----------------------------- 23. pictures of eisher hands (41) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image023.jpeg?raw=true"
+<img src="./images/image023.jpeg?raw=true"
    alt="Picture of 'eisher' hands."
    width="25%" />
 &nbsp;
@@ -2255,7 +2255,7 @@ This chart from the <a href="https://html5doctor.com/" target="_blank">HTML5 D
 <!------------------------- 24. chart from html5 doctor web site (43) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image024.png?raw=true"
+<img src="./images/image024.png?raw=true"
    alt="Flow chart about using header, H1, etc."
    width="65%" />
 &nbsp;
@@ -2287,7 +2287,7 @@ These headings define a hierarchy, as shown by the default sizes given by the br
 <!--------------------------------- 25. headings 1 thru 6 (44) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image025.png?raw=true"
+<img src="./images/image025.png?raw=true"
    alt="Outliner in action from the previous example."
    width="65%" />
 &nbsp;
@@ -2364,7 +2364,7 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 <!--------------------------- 26. outline of previous example (45) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image026.jpeg?raw=true"
+<img src="./images/image026.jpeg?raw=true"
    alt="Outline of previous example."
    width="60%" />
 &nbsp;
@@ -2426,7 +2426,7 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 <!---------------------------- 27. outline of the last example (46) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image027.jpeg?raw=true"
+<img src="./images/image027.jpeg?raw=true"
    alt="Outline of last example."
    width="65%" />
 &nbsp;
@@ -2480,7 +2480,7 @@ You can use heading elements &lt;h1&gt;...&lt;h6&gt; in a &lt;header&gt; but
 <!---------------------------- 28. example structural elements (47) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image028.jpeg?raw=true"
+<img src="./images/image028.jpeg?raw=true"
    alt="Example structural elements."
    width="55%">
 &nbsp;
@@ -2556,7 +2556,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 <!---------------------------- 29. outline of previous example (48) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image029.jpeg?raw=true"
+<img src="./images/image029.jpeg?raw=true"
    alt="Outline of the previous example."
    width="45%">
 &nbsp;
@@ -2614,7 +2614,7 @@ They are also useful for checking the presence of headings in each sectioning c
 <!---------------------------------- 31. the main element (49) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image031.jpeg?raw=true"
+<img src="./images/image031.jpeg?raw=true"
    alt="Main element funny."
    width="25%" />
 </p>
@@ -2756,7 +2756,7 @@ Let's go back to our blog example and see what can be improved:</p>
 <!----------------- 32. image of the blog toc, show an untitled nav entry (52) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image032.jpeg?raw=true"
+<img src="./images/image032.jpeg?raw=true"
    alt="Image of the Blog Table of Contents, that show an untitled nav entry"
    width="65%" />
 </p>
@@ -2810,7 +2810,7 @@ Beware that this technique will require you to use some CSS styling, and may con
 <!---------------------- 33. good outline without the untitled nav (53) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image033.jpeg?raw=true"
+<img src="./images/image033.jpeg?raw=true"
    alt="Good outline without the untitled nav."
    width="55%" />
 &nbsp;
@@ -2880,7 +2880,7 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 <!----------------------- 34. blog with embedded table of contents (55) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image034.jpeg?raw=true"
+<img src="./images/image034.jpeg?raw=true"
    alt="Blog with embedded table of contents."
    width="50%" />
 &nbsp;
@@ -2929,7 +2929,7 @@ You can look at the complete CSS code in the interactive example below (click on
 <!--------------- 35. header with section float left and aside float right (56) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image035.png?raw=true"
+<img src="./images/image035.png?raw=true"
    alt="Header with section float left and aside float right."
    width="85%" />
 &nbsp;
@@ -2941,7 +2941,7 @@ You can look at the complete CSS code in the interactive example below (click on
 <!------------------- 36. michel buffa home page - 3 sections centered (56) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image036.png?raw=true"
+<img src="./images/image036.png?raw=true"
    width="85%"
    alt="Michel Buffa home page: 3 sections centered." />
 &nbsp;
@@ -2988,7 +2988,7 @@ You can look at the complete CSS code in the interactive example below (click on
 <!-------------------------- 37. header and three float sections (57) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image037.png?raw=true"
+<img src="./images/image037.png?raw=true"
    alt=""
    width="65%" />
 &nbsp;
@@ -3003,7 +3003,7 @@ There are many articles on Flexbox and we recommend those from Rachel Andrew on 
 <!--------------------- 38. same example using the css flex property (57) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image038.png?raw=true"
+<img src="./images/image038.png?raw=true"
    alt="Same example using the CSS Flex property."
    width="65%" />
 &nbsp;
@@ -3017,7 +3017,7 @@ There are many articles on Flexbox and we recommend those from Rachel Andrew on 
 <!--------------------- 39. another example using the flex property (58) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image039.png?raw=true"
+<img src="./images/image039.png?raw=true"
    alt=""
    width="65%" />
 &nbsp;
@@ -3041,7 +3041,7 @@ In the screenshot below, taken from the W3C specification page, the text next 
 <!-------------- 40. example of summary details elements from the w3c specs (59) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image040.png?raw=true"
+<img src="./images/image040.png?raw=true"
    alt="Example of summary details elements from the W3C specification."
    width="35%">
 &nbsp;
@@ -3055,7 +3055,7 @@ Here is an example of what can be done using these elements: see the <a href="h
 <!------------------------- 41. example of folded summary details (59) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image040.png?raw=true"
+<img src="./images/image040.png?raw=true"
    alt="Example of folded summary details."
    width="35%">
 &nbsp;
@@ -3067,7 +3067,7 @@ Here is an example of what can be done using these elements: see the <a href="h
 <!------------------------ 42. Example of summary details unfolded (60) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image042.jpeg?raw=true"
+<img src="./images/image042.jpeg?raw=true"
    alt="Example of summary details unfolded."
    width="35%">
 &nbsp;
@@ -3105,7 +3105,7 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 <!------------------------------------- 43. all folded (60) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image043.jpeg?raw=true"
+<img src="./images/image043.jpeg?raw=true"
    alt="Other example, unfolded."
    width="35%">
 &nbsp;
@@ -3117,7 +3117,7 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 <!---------------------------- 44. click top level summary icon (60) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image044.jpeg?raw=true"
+<img src="./images/image044.jpeg?raw=true"
    alt="The unfolded content contains in turn a summary details folded."
    width="35%">
 &nbsp;
@@ -3129,7 +3129,7 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 <!--------------------------- 45. click on embedded summary icon (61) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image045.jpeg?raw=true"
+<img src="./images/image045.jpeg?raw=true"
    alt="We unfolded the summary details inside the previous summary details. Recursive accordeons!"
    width="35%">
 &nbsp;
@@ -3170,7 +3170,7 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 <!---------------------- 46. pseudo classes for styling summary icons (61) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image046.jpeg?raw=true"
+<img src="./images/image046.jpeg?raw=true"
    alt="Styling the open/close icon."
    width="35%">
 &nbsp;
@@ -3191,7 +3191,7 @@ summary::-webkit-details-marker {
 <!---------------------------------- 47. unfold and style (62) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image047.jpeg?raw=true"
+<img src="./images/image047.jpeg?raw=true"
    alt="Styled summary details icon, unfolded state."
    width="35%">
 &nbsp;
@@ -3216,7 +3216,7 @@ details[open] summary::-webkit-details-marker {
 <!---------------------- 43. a '+' as a custom open icon for summary (62) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image043.jpeg?raw=true"
+<img src="./images/image043.jpeg?raw=true"
    alt="A "+" as a custom open icon for summary."
    width="35%">
 &nbsp;
@@ -3226,7 +3226,7 @@ details[open] summary::-webkit-details-marker {
 <!--------------------------- 48. a '-' as a custom close icon (62) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image048.jpeg?raw=true"
+<img src="./images/image048.jpeg?raw=true"
    alt="A "-" as a custom close icon."
    width="35%">
 &nbsp;
@@ -3270,7 +3270,7 @@ color: #FFFFFF
 <!------------------------------- 49. it's about time clock (63) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image049.jpeg?raw=true"
+<img src="./images/image049.jpeg?raw=true"
    alt="Picture of a clock with the words 'it's about time'"
    width="20%">
 &nbsp;
@@ -3326,7 +3326,7 @@ The machine readable part adds semantics that can be used by search engines for 
 <!---------------------------------- 50. duration values (64) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image050.jpeg?raw=true"
+<img src="./images/image050.jpeg?raw=true"
    alt="Funny picture duration values"
    width="20%">
 &nbsp;
@@ -3373,7 +3373,7 @@ From Bruce Lawson's article : <i>"Whichever you choose, it's represented intern
 <!------------------------------- 51. yellow highlighter pen (65) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image051.jpeg?raw=true"
+<img src="./images/image051.jpeg?raw=true"
    alt="Picture of a yellow hightlighter pen."
    width="45%">
 &nbsp;
@@ -3411,7 +3411,7 @@ The HTML <mark> tag is used for indicating text as marked or highlighted for r
 <!-------------------------- 52. another example for marking code (66) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image052.jpeg?raw=true"
+<img src="./images/image052.jpeg?raw=true"
    alt="Another example for marking code."
    width="45%">
 &nbsp;
@@ -3438,7 +3438,7 @@ If you don't like the default yellow background, you may use CSS to change the s
 <!-------------------------- 53. style the mark element with CSS (66) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image053.jpeg?raw=true"
+<img src="./images/image053.jpeg?raw=true"
    alt="Style the mark element with CSS."
    width="45%">
 &nbsp;
@@ -3534,7 +3534,7 @@ The above example will cause the browser that invoked this server-side code to
 <!------------------ 54. picture of a road sign with the words 'new way' (68) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image054.jpeg?raw=true"
+<img src="./images/image054.jpeg?raw=true"
    alt="Picture of a road sign with the words 'New Way'."
    width="15%">
 &nbsp;
@@ -3554,7 +3554,7 @@ This will indeed force the download of an image with a filename different from i
 <!------------ 55. image saved with another names thanks to the download attribute (68) ---------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image055.png?raw=true"
+<img src="./images/image055.png?raw=true"
    alt=""
    width="25%">
 &nbsp;
@@ -3568,7 +3568,7 @@ This will indeed force the download of an image with a filename different from i
 <!--------------------------------- 56. no servers picture (68) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image056.jpeg?raw=true"
+<img src="./images/image056.jpeg?raw=true"
    alt="No server picture."
    width="35%">
 &nbsp;
@@ -3586,7 +3586,7 @@ We have also put the simplified <a href="https://jsbin.com/muluwey/1/edit?html,
 <!------------------------------ 57. serverless download demo (69) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image057.png?raw=true"
+<img src="./images/image057.png?raw=true"
    alt="Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server."
    width="50%">
 &nbsp;
@@ -3765,7 +3765,7 @@ This information is not visible to humans: it is pure *semantic information*. 
 <!---------------------- 58. picture of diverse tools used by workers (72) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image058.jpeg?raw=true"
+<img src="./images/image058.jpeg?raw=true"
    alt="Picture of diverse tools used by workers."
    width="20%">
 &nbsp;
@@ -3817,7 +3817,7 @@ Let's have a look now at a (small) example of an about page. It renders as a ver
 <!------------------------ 59. rendering of michel buffa home page (73) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image059.jpeg?raw=true"
+<img src="./images/image059.jpeg?raw=true"
    alt="Rendering of Michel Buffa home page."
    width="65%">
 &nbsp;
@@ -3829,7 +3829,7 @@ Here is what Google sees of the page. We just entered its <a href="https://out
 <!-------------------- 60. microdata of the example, as seen by google (74) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image060.png?raw=true"
+<img src="./images/image060.png?raw=true"
    alt="Microdata of the example, as seen by Google."
    width="50%">
 &nbsp;
@@ -3845,7 +3845,7 @@ The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> i
 <!------------------------------- 61. example live microdata (74) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image061.jpeg?raw=true"
+<img src="./images/image061.jpeg?raw=true"
    alt="Example of live microdata from the previous example. Microdata are displayed as json objects."
    width="60%">
 &nbsp;
@@ -3856,7 +3856,7 @@ The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> i
 <!---------------------------- 62. json view of the microdata (74) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image062.jpeg?raw=true"
+<img src="./images/image062.jpeg?raw=true"
    alt="JSON view of the microdata."
    width="40%">
 &nbsp;
@@ -3906,7 +3906,7 @@ If you are a developer and if you are familiar with object oriented programming,
 <!---------------------------- 63. picture of 'time to share' (76) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image063.jpeg?raw=true"
+<img src="./images/image063.jpeg?raw=true"
    alt="Picture with words 'time to share'."
    width="25%">
 &nbsp;
@@ -4092,7 +4092,7 @@ To automatically generate microdata for describing persons, restaurants, movie
 <!---------------------------- 64. microdata person generator (80) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image064.jpeg?raw=true"
+<img src="./images/image064.jpeg?raw=true"
    width="65%"
    alt="Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata." />
 &nbsp;
@@ -4118,7 +4118,7 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 <!-------------------------------- 65. microdata example #1 (80) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image065.jpeg?raw=true"
+<img src="./images/image065.jpeg?raw=true"
    width="40%"
    alt="Picture of the first 'about me' page example. Shows the table of contents." />
 &nbsp;
@@ -4130,7 +4130,7 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 <!----------------------- 66. schema type/properties from microdata  (81) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image066.jpeg?raw=true"
+<img src="./images/image066.jpeg?raw=true"
    alt="Microdata from the example page."
    width="50%">
 &nbsp;
@@ -4144,7 +4144,7 @@ View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 onlin
 <!------------------------- 67. example #2 page - shows microdata (81) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image067.jpeg?raw=true"
+<img src="./images/image067.jpeg?raw=true"
    alt="Example page, shows table of contents."
    width="50%">
 &nbsp;
@@ -4167,7 +4167,7 @@ View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 onlin
 <!-------------------- 68. codepen snapshot: simple html5 video player (82) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image068.png?raw=true"
+<img src="./images/image068.png?raw=true"
    alt="Codepen snapshot: simple HTML5 video player."
    width="65%">
 &nbsp;
@@ -4212,7 +4212,7 @@ Usually you have an "embed" button close to the videos that prompts you with s
 <!-------------------- 69. web of things (wot) explainer video snapshot (83) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image069.png?raw=true"
+<img src="./images/image069.png?raw=true"
    alt="Web of things (WoT) explainer video snapshot."
    width="60%">
 &nbsp;
@@ -4395,7 +4395,7 @@ Please move the mouse pointer over this player's elements: (does not work in git
 <!-------------------------- 70. two gery-black horses in a field (87) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image070.jpeg?raw=true"
+<img src="./images/image070.jpeg?raw=true"
    alt="Two gery-black horses in a field."
    width="20%">
 &nbsp;
@@ -4492,7 +4492,7 @@ See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example onlin
 <!------------------------------ 71. pseudo css class: hover (88) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image071.png?raw=true"
+<img src="./images/image071.png?raw=true"
    alt="Example using pseudo css class: hover"
    width="60%">
 &nbsp;
@@ -4544,7 +4544,7 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 <!------------------------- 72. full width video like paypal site (97) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image072.png?raw=true"
+<img src="./images/image072.png?raw=true"
    alt=""
    width="65%">
 &nbsp;
@@ -4616,7 +4616,7 @@ Full width, resizable, borderless YouTube video. To do this: just 100% standard 
 <!----------------------------- 73. example video cropping (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image073.png?raw=true"
+<img src="./images/image073.png?raw=true"
    alt="Example video cropping."
    width="50%">
 &nbsp;
@@ -4635,7 +4635,7 @@ In this example, the video does not rescale; it's just cropped if the browser wi
 <!----------------------------- 74.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image074.png?raw=true"
+<img src="./images/image074.png?raw=true"
    alt=""
    width="50%">
 &nbsp;
@@ -4739,7 +4739,7 @@ Full screen video that resizes and keeps its ratio, using the viewport units.
 <!----------------------------- 75.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image075.png?raw=true"
+<img src="./images/image075.png?raw=true"
    alt=""
    width="65%">
 &nbsp;
@@ -4819,7 +4819,7 @@ Please look at this interesting example:
 <!----------------------------- 76.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image076.png?raw=true"
+<img src="./images/image076.png?raw=true"
    alt=""
    width="65%">
 &nbsp;
@@ -4848,7 +4848,7 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link
 <!----------------------------- 77. html5 video events and api (95) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image077.png?raw=true"
+<img src="./images/image077.png?raw=true"
    alt="HTML5 video events and API."
    width="65%">
 &nbsp;
@@ -4899,7 +4899,7 @@ This example gives the first steps towards writing a custom video player. It sho
 <!-------------------------------- 78. example video player (97) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image078.png?raw=true"
+<img src="./images/image078.png?raw=true"
    alt="This example gives the first steps towards writing a custom video player."
    width="85%" />
 &nbsp;
@@ -4908,7 +4908,7 @@ This example gives the first steps towards writing a custom video player. It sho
 <!----------------------------- 79. example of custom controls (97) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image079.png?raw=true"
+<img src="./images/image079.png?raw=true"
    alt="Example of custom controls."
    width="45%" />
 &nbsp;
@@ -4961,7 +4961,7 @@ This example listens to the ended event, and calls a callback function when th
 <!------------------ 80. example calls a callback function when video ends (98) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image080.png?raw=true"
+<img src="./images/image080.png?raw=true"
    alt="This example listens to the ended event, and calls a callback function when the video is ended."
    width="85%" />
 &nbsp;
@@ -4998,7 +4998,7 @@ Check the online example below: use the progress cursor to go near the end of th
 <!---------------------------------- 81. manage playlists (99) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image081.png?raw=true"
+<img src="./images/image081.png?raw=true"
    alt=""
    width="85%" />
 &nbsp;
@@ -5082,7 +5082,7 @@ Please see this example online, originally written by <a href="https://christia
 <!------------------- 82. 2d transformations: scale, translate  rotate (100) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image082.png?raw=true"
+<img src="./images/image082.png?raw=true"
    alt=""
    width="85%" />
 &nbsp;
@@ -5105,7 +5105,7 @@ This example also shows how to handle failures. See the code and play with this
 <!------------------------- 83. how to track all possible events (101) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image083.png?raw=true"
+<img src="./images/image083.png?raw=true"
    width="65%"
    alt="Example #2. How to track all possible events.." />
 &nbsp;
@@ -5161,7 +5161,7 @@ See the <a href="https://jsbin.com/xororol/3/edit?html,output">example online</
 <!-------------------------- 84. display percentage of buffering (102) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image084.png?raw=true"
+<img src="./images/image084.png?raw=true"
    width="65%"
    alt="Example #3. How to display a percentage of buffering." />
 &nbsp;
@@ -5231,7 +5231,7 @@ This is the ultimate way of doing a real custom player: redesign your own contro
 <!------------------------ 85. cup on table xhtml5 and svg player (103) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image085.png?raw=true"
+<img src="./images/image085.png?raw=true"
    width="25%"
    alt="Example #4. Snapshot of the Online Example of a Custom XHTML5/SVG Video Player.  Image Shows a Cup of Coffee on a Table." />
 &nbsp;
@@ -5288,7 +5288,7 @@ Here is an example of a video element that includes a &lt;track&gt; element in
 <!--------------------------------- 86. example snapshot (104) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image086.png?raw=true"
+<img src="./images/image086.png?raw=true"
    width="65%"
    alt=""Example using a track element in the .vtt format." />
 &nbsp;
@@ -5514,7 +5514,7 @@ So, let's suppose you have a video like the one below (we included it on YouTube
 <!------------------------------ 87. picture guitar picking (108) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image087.png?raw=true"
+<img src="./images/image087.png?raw=true"
    width="45%"
    alt="Picture guitar picking." />
 &nbsp;
@@ -5549,7 +5549,7 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 <!-------------------------- 88. example subtitles and captions (109) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image088.png?raw=true"
+<img src="./images/image088.png?raw=true"
    width="40%"
    alt="Example subtitles and captions." />
 &nbsp;
@@ -5560,7 +5560,7 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 <!------------------------------ 89. youtube make subtitles (110) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image089.png?raw=true"
+<img src="./images/image089.png?raw=true"
    alt="Youtube make subtitles."
    width="60%">
 &nbsp;
@@ -5573,7 +5573,7 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 <!--------------------- 90. example guitar picking subtitle captions (110) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image090.png?raw=true"
+<img src="./images/image090.png?raw=true"
    alt="Example guitar picking subtitle captions."
    width="40%">
 &nbsp;
@@ -5590,7 +5590,7 @@ The example below shows how we can do that (play the video for 40s, look at the 
 <!----------------------------------- 91. blank codepen (111) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image091.png?raw=true"
+<img src="./images/image091.png?raw=true"
    alt="Blank codepen."
    width="60%">
 &nbsp;
@@ -5664,7 +5664,7 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 <!----------------------- 92. example video: positioning subtitles (112) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image092.png?raw=true"
+<img src="./images/image092.png?raw=true"
    alt="Example video: positioning subtitles."
    width="65%">
 &nbsp;
@@ -5696,7 +5696,7 @@ It is possible to locate the cues in the video viewport using absolute or relati
 <!----------------------------- 93.  (113) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image093.png?raw=true"
+<img src="./images/image093.png?raw=true"
    alt=""
    width="65%">
 &nbsp;
@@ -5715,7 +5715,7 @@ It is possible to style using CSS classes as part of a cue value, using the <c
 <!----------------------------- 94.  (113) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image094.jpeg?raw=true"
+<img src="./images/image094.jpeg?raw=true"
    alt="Snaphot of a video frame showing a cue containing the class 'myclass'. Browsers that support ::cue CSS should make it red"
    width="65%">
 &nbsp;
@@ -5743,7 +5743,7 @@ Here is an example that shows the voices of the different characters displayed w
 <!----------------------------- 95. v tag example (114) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image095.png?raw=true"
+<img src="./images/image095.png?raw=true"
    alt=""
    width="65%">
 &nbsp;
@@ -5824,7 +5824,7 @@ An example of what you can achieve using chapters, using the <a href="https://w
 <!----------------------------- 96. using the jw player (115) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image096.png?raw=true"
+<img src="./images/image096.png?raw=true"
    alt="Using the JW player."
    width="65%">
 &nbsp;
@@ -5867,7 +5867,7 @@ Most "complex" HTML elements like forms, audio or video players, come with a Jav
 <!------------------ 97. navigation menu using the track javascript api (117) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image097.jpeg?raw=true"
+<img src="./images/image097.jpeg?raw=true"
    alt="navigation menu using the track javascript api"
    width="65%">
 &nbsp;
@@ -5880,7 +5880,7 @@ Check <a href="https://simpl.info/track/map/index.html">this demo</a> (only on
 <!----------------------------- 98. video sync with map and street views (117) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image098.jpeg?raw=true"
+<img src="./images/image098.jpeg?raw=true"
    alt="Video sync with map and street views."
    width="65%">
 &nbsp;
@@ -5895,7 +5895,7 @@ Some JavaScript code listens to the ontimeupdate event while the video is play
 <!---- 99. We render in real time guitar pro tablatures using the alphatab.net library (118) ----->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image099.png?raw=true"
+<img src="./images/image099.png?raw=true"
    alt="We render in real time guitar pro tablatures using the alphatab.net library."
    width="55%">
 &nbsp;
@@ -5945,7 +5945,7 @@ Open source, and made for developers, <a href="https://videojs.com/">video.js</
 <!------------------------------ 100. make your player yours (119) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image100.png?raw=true"
+<img src="./images/image100.png?raw=true"
    alt="Video JS Examples: Make your player yours."
    width="65%">
 &nbsp;
@@ -5971,7 +5971,7 @@ Scrub Bar thumbnails (JWPlayer)
 <!------------------------------ 101. scrub bar thumbnailes (120) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image101.jpeg?raw=true"
+<img src="./images/image101.jpeg?raw=true"
    alt="Scrub bar thumbnails."
    width="45%">
 &nbsp;
@@ -5983,7 +5983,7 @@ Custom look'n'feel and logo (Sublime video player):
 <!-------------------------- 102. custom look and feel and logo (120) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image002.jpeg?raw=true"
+<img src="./images/image102.jpeg?raw=true"
   width="55%"
   alt="Custom look and feel and logo." />
 &nbsp;
@@ -5995,7 +5995,7 @@ Chapters and chapter thumbnails (JWPlayer):
 <!------------------------- 103. chapters and chapter thumbnails (120) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image103.png?raw=true"
+<img src="./images/image103.png?raw=true"
   width="55%"
   alt="Chapter and Chapter Thumbnails." />
 &nbsp;
@@ -6007,7 +6007,7 @@ PayPal accessible player:
 <!----------------------------- 104. paypal accessible player (121) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image104.png?raw=true"
+<img src="./images/image104.png?raw=true"
   width="55%"
   alt="Paypal accessible player." />
 &nbsp;
@@ -6019,7 +6019,7 @@ LeanBack (says "free for non-commercial use", licensing is not very clear...):
 <!--------------------------------- 105. leanback player (121) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image105.png?raw=true"
+<img src="./images/image105.png?raw=true"
   width="60%"
   alt="Leanback player." />
 &nbsp;
@@ -6047,7 +6047,7 @@ The getUserMedia API, when dealing with video streams, is always used in conju
 <!---------------------------- 106. simple web camera display (122) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image106.jpeg?raw=true"
+<img src="./images/image106.jpeg?raw=true"
   width="30%"
   alt="Screenshot of a simple Web camera webcam display in a Web page." />
 &nbsp;
@@ -6114,7 +6114,7 @@ Let's see some more examples of what we can do with the getUserMedia API: start/
 <!----------------------------- 107.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image107.jpeg?raw=true"
+<img src="./images/image107.jpeg?raw=true"
   width="35%"
   alt="Resulting image of Michel Buffa using his WebCam, with two custom controls below." />
 &nbsp;
@@ -6230,7 +6230,7 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 <!--------------------------- 108. example: css filter effects (xx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image108.jpeg?raw=true"
+<img src="./images/image108.jpeg?raw=true"
    width="30%"
    alt="Resulting image of Michel Buffa using his WebCam with css filter effects on live stream." />
 &nbsp;
@@ -6382,7 +6382,7 @@ The trick is to copy and paste the current image from the video stream into a 
 <!--------------------- 109. take a snapshot from live webcam stream (129) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image109.png?raw=true"
+<img src="./images/image109.png?raw=true"
   width="65%"
   alt="Take a snapshot from the live Webcam stream." />
 &nbsp;
@@ -7612,7 +7612,7 @@ Produces this result:
 </p>
 <!-- ./images/image128.jpeg){width="2.59375in" height="2.5833333333333335in"} -->
 
--   <h4> strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape's outline should be rendered</h4>
+-   <h4>strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape's outline should be rendered</h4>
 
 The possible values are the same as those for the fillStyle property: a color, a pattern, or a gradient. This property will be taken into account when wireframe shapes are drawn.
 
@@ -7628,15 +7628,15 @@ ctx.strokeRect(10,10,200,200);
 <!---------------------- 129. stroked rectangle - border is in blue (154) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
-<img src="./images/image129.png?raw=true"
+<img src="./images/image129.jpeg?raw=true"
    width="25%"
    alt="Stroked rectangle - border is in blue." />
 </p>
-<!-- ./images/image129.jpeg){width="2.5833333333333335in" height="2.6041666666666665in"}  ->
+<!-- ./images/image129.jpeg){width="2.5833333333333335in" height="2.6041666666666665in"}  -->
 
 Only the outline of the rectangle will be drawn, and it will be drawn using the value of the strokeStyle property.
 
--   <h4> clearRect(x, y, width, height): a call to this method erases the specified rectangle
+-   <h4>clearRect(x, y, width, height): a call to this method erases the specified rectangle</h4>
 
 Actually it draws it in a color called "transparent black" (!) that corresponds to the initial state of the rectangle as if no drawing had occurred.
 
@@ -7659,7 +7659,7 @@ ctx.clearRect(50, 50, 20, 20);
 
 <h4>Let's see some simple examples</h4>
 
-<h4> Example #1: draw a wireframe red rectangle, width lineWidth = 3 pixels</h4>
+<h4>Example #1: draw a wireframe red rectangle, width lineWidth = 3 pixels</h4>
 
 <h4>Extract from the source code (the part that draws the rectangle):</h4>
 
@@ -7677,7 +7677,7 @@ Here, we used "stroke" instead of "fill" in the property and method names (<i>li
 
 We also introduced a new property of the context, that applies only when drawing in "stroke" mode, the lineWidth property (<i>line 3</i>), that is used for setting the width of the shape outline. The value is in pixels.
 </p>
-<h4> Example #2: draw two filled red rectangles with a blue outline of 5 pixels and some text</h4>
+<h4>Example #2: draw two filled red rectangles with a blue outline of 5 pixels and some text</h4>
 <p>
 Let's continue with another example. This time we will draw several shapes that share the same colors - they will be filled in red, with a blue outline. We also show how to draw a text message with a given font.
 </p>
@@ -7952,7 +7952,7 @@ If you look at the code of the modified function, you will see that each call t
 <!-------------- 131. Rectangles are drawn 100 pixels towards the bottom (xx) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image131.jpeg?raw=true"
+<img src="./images/image131.jpeg?raw=true"
    width="30%"
    alt="Rectangles are drawn 100 pixels towards the bottom." />
 &nbsp;
@@ -8694,7 +8694,7 @@ We slightly modified the function that draws the monster:
 <!------------------------- 132. laptop showing unicorn validator (xx) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image132.jpeg?raw=true"
+<img src="./images/image132.jpeg?raw=true"
   width="40%"
   alt="Example of context save-restore: a monster drawn by a function that saves and restored the context, then a rectangle is drawn, with context as it was previously." />
 </p>
@@ -9257,7 +9257,7 @@ But let's start with a basic example!
 <!------------------------- 133. simple image drawing in a canvas (182) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image133.png?raw=true"
+<img src="./images/image133.png?raw=true"
   width="45%"
   alt="Drawing Images with Subimages. Source image within a Destination Canvas." />
 &nbsp;
@@ -9738,7 +9738,7 @@ On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawin
 <!------------ 134. image of the devtool console clocking time to draw rectangles (189) ---------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image134.jpeg?raw=true"
+<img src="./images/image134.jpeg?raw=true"
    width="65%"
    alt="Image of the devtool console measuring average time to draw rectangles." />
 &nbsp;
@@ -9820,7 +9820,7 @@ And here is what the timer gives: a slightly faster execution time. Changing 100
 <!--------- 135. image of the devtool console which shows time path vs immediate (191) ----------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image135.jpeg?raw=true"
+<img src="./images/image135.jpeg?raw=true"
   width="65%"
   alt="Image of the devtool console which shows time values, path vs immediate mode." />
 &nbsp;
@@ -9899,7 +9899,7 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 <!---------------------------- 136. draw grid using ctx.stroke (193) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image136.png?raw=true"
+<img src="./images/image136.png?raw=true"
    width="65%"
    alt="Draw blue grid using ctx.stroke command." />
 &nbsp;
@@ -9983,7 +9983,7 @@ In this example, the entire grid is drawn during the execution of the last line 
 <!-------------- 137. mix filled & wireframe shapes using different methods (194) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image137.png?raw=true"
+<img src="./images/image137.png?raw=true"
    width="65%"
    alt="Mix filled and wireframe shapes using different methods." />
 &nbsp;
@@ -10053,7 +10053,7 @@ Try this:
 <!----------------- 138. drawing single path made with disconnected lines (195) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image138.png?raw=true"
+<img src="./images/image138.png?raw=true"
    width="65%"
    alt="Drawing single path made with disconnected lines." />
 &nbsp;
@@ -10098,7 +10098,7 @@ Let's look at the drawing from the last example of the previous section:
 <!-------------- 139. example using moveto() and stroke() command functions (196) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image139.png?raw=true"
+<img src="./images/image139.png?raw=true"
    width="65%"
    alt="Same drawing as in previous section. Example using moveto() and stroke() command functions." />
 &nbsp;
@@ -10152,7 +10152,7 @@ What we will try first is to call stroke() after the first half of the path, t
 <!-------------- 140. the wrong way to draw two paths with different styles (197) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image140.png?raw=true"
+<img src="./images/image140.png?raw=true"
    width="65%"
    alt="THE WRONG WAY! Drawing two paths with different styles." />
 &nbsp;
@@ -10246,7 +10246,7 @@ using the ctx.beginPath() method, as shown in the next example.
 <!-------------- 141. the right way to draw two paths with different styles (198) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image141.png?raw=true"
+<img src="./images/image141.png?raw=true"
    width="65%"
    alt="Draw two paths with different styles the RIGHT way." />
 &nbsp;
@@ -10377,7 +10377,7 @@ Notice the save/restore of the context at the beginning/end of the function. Thi
 <!------------------------- 142. drawing lines in immediate mode (200) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image142.png?raw=true"
+<img src="./images/image142.png?raw=true"
    width="65%"
    alt="Drawing lines in immediate mode to avoid affecting other functions' context." />
 &nbsp;
@@ -10506,7 +10506,7 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 <!----------------------------------- 143. draw arrows (202) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image143.png?raw=true"
+<img src="./images/image143.png?raw=true"
    width="65%"
    alt="Function to draw arrows." />
 &nbsp;
@@ -10590,7 +10590,7 @@ Screenshot from a demo available on the above Web site:
 <!----------------------------- 144. clock with nicer arrows (204) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image144.png?raw=true"
+<img src="./images/image144.png?raw=true"
    width="20%"
    alt="Round clock with nice arrows." />
 &nbsp;
@@ -10609,7 +10609,7 @@ The ctx.closePath() method indicates that we would like a closed path: draw fr
 <!------------------------------ 145. example closing a path (204) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image145.png?raw=true"
+<img src="./images/image145.png?raw=true"
    width="65%"
    alt="Example on closing a path in a drawing." />
 &nbsp;
@@ -10692,7 +10692,7 @@ The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is usefu
 <!------------- 146. html5 canvas arc diagram: drawing circle coordinate system (205) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image146.jpeg?raw=true"
+<img src="./images/image146.jpeg?raw=true"
    width="50%"
    alt="HTML5 canvas arc diagram: drawing circle, coordinate system." />
 &nbsp;
@@ -10721,7 +10721,7 @@ The last parameter is optional and has a value of false by default. If true, 
 <!--------------------- 147. example drawing an arc with radius = 50 (206) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image147.png?raw=true"
+<img src="./images/image147.png?raw=true"
    width="65%"
    alt="Example on drawing an arc with radius = 50, start angle = 0, end angle = pi/2." />
 &nbsp;
@@ -10782,7 +10782,7 @@ Then, the result is the "complementary" of the previous arc:
 <!------------------ 148. example arc complementary of the previous arc (207) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image148.png?raw=true"
+<img src="./images/image148.png?raw=true"
    width="65%"
    alt="Example complementary of the previous arc." />
 &nbsp;
@@ -10794,7 +10794,7 @@ Then, the result is the "complementary" of the previous arc:
 <!---------------------------- 149. example draw a full circle (207) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image149.png?raw=true"
+<img src="./images/image149.png?raw=true"
    width="65%"
    alt="Example draw a full circle." />
 &nbsp;
@@ -10845,7 +10845,7 @@ Notice that we called ctx.arc() only once! And drew it twice, with different s
 <!----------------------------------- 150. half circle (208) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image150.jpeg?raw=true"
+<img src="./images/image150.jpeg?raw=true"
    width="25%"
    alt="Example of half circle." />
 &nbsp;
@@ -10857,7 +10857,7 @@ Notice that we called ctx.arc() only once! And drew it twice, with different s
 <!----------------------------------- 151. smiley face (208) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image151.jpeg?raw=true"
+<img src="./images/image151.jpeg?raw=true"
    width="30%"
    alt="Example of smiling head." />
 &nbsp;
@@ -10875,7 +10875,7 @@ In fact, the arcTo(...) method draws an arc of a circle depending on some tan
 <!---------------------- 152. three diagrams to explain arcto method (209) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image152.jpeg?raw=true"
+<img src="./images/image152.jpeg?raw=true"
    width="65%"
    alt="There are three (3) diagrams, all drawn on canvas dynamically. The arcTo really uses carTo() with reduced alpha, and the rest of the diagram is calculated in JavaScript and drawn with lineTo and arc." />
 &nbsp;
@@ -10908,7 +10908,7 @@ This method can be confusing. It was defined mainly for drawing rounded shapes l
 <!--------------------------- 153. simple use arcto example 1 (209) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image153.png?raw=true"
+<img src="./images/image153.png?raw=true"
    width="65%"
    alt="Simple use arcTo example #1." />
 &nbsp;
@@ -10963,7 +10963,7 @@ context.stroke();
 <!---------------------------- 154. rounded rectange example 2 (210) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image154.png?raw=true"
+<img src="./images/image154.png?raw=true"
    width="65%"
    alt="Draw a rounded rectange, example #2." />
 &nbsp;
@@ -11064,7 +11064,7 @@ This example at JS Bin is the same as the previous one, except that we added at 
 <!----------------------- 155. comparison between arcto and lineto (xxx) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image155.png?raw=true"
+<img src="./images/image155.png?raw=true"
    alt="image155.png"
    width="65%">
 &nbsp;
@@ -11160,7 +11160,7 @@ This could be particularly helpful if you are dealing with something other than 
 <!---------------------------- 156. rounded triangle example (213) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image156.png?raw=true"
+<img src="./images/image156.png?raw=true"
    width="65%"
    alt="Example: rounded triangle." />
 &nbsp;
@@ -11224,7 +11224,7 @@ roundedTriangle(ctx,200,15,300,150,15,100,20,true,true);
 <!---------------------- 157. html5 canvas quadratic curve diagram (214) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image157.png?raw=true"
+<img src="./images/image157.png?raw=true"
    width="55%"
    alt="HTML5 Canvas Quadratic Curve Diagram. Control, context & ending points." />
 &nbsp;
@@ -11258,7 +11258,7 @@ The control point controls the curvature - if we move the control point farther 
 <!--------------------------------- 158. quadratic curve (215) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image158.png?raw=true"
+<img src="./images/image158.png?raw=true"
    width="65%"
    alt="Quadratic curve example." />
 &nbsp;
@@ -11295,7 +11295,7 @@ Try this:
 <!------------------ 159. example: lines connected with quadratic curve (216) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image159.png?raw=true"
+<img src="./images/image159.png?raw=true"
    width="65%"
    alt="image159.png - Example: Lines connected with a quadratic curve." />
 &nbsp;
@@ -11363,7 +11363,7 @@ We propose a useful function for drawing curved arrows. See this example:
 <!---------------- 160. example: useful function for drawing curved arrows (217) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image160.png?raw=true"
+<img src="./images/image160.png?raw=true"
    width="65%"
    alt="Example: useful function for drawing curved arrows." />
 &nbsp;
@@ -11515,7 +11515,7 @@ Bézier curves are interesting. They are mostly used for drawing "S" shapes or a
 <!------------------------------- 161. bezier curve in 's' (219) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image161.jpeg?raw=true"
+<img src="./images/image161.jpeg?raw=true"
    width="35%"
    alt="Bezier curve in S." />
 &nbsp;
@@ -11531,7 +11531,7 @@ The first part of the curve is tangential to the imaginary line defined by the c
 <!--------------------------- 162. bezier curve control points (219) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image162.png?raw=true"
+<img src="./images/image162.png?raw=true"
    width="65%"
    alt="Bezier curve control points." />
 &nbsp;
@@ -11571,7 +11571,7 @@ Try this:
 <!------------------------------ 163. bezier curve: example 1 (220) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image163.png?raw=true"
+<img src="./images/image163.png?raw=true"
    width="65%"
    alt="Bezier curve: Example 1." />
 &nbsp;
@@ -11634,7 +11634,7 @@ Try this:
 <!-------- 164. path with bezier curve, quadratic curve & line in same, closed path  (221) ------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image164.png?raw=true"
+<img src="./images/image164.png?raw=true"
    width="85%"
    alt="Path with Bezier and Quadratic curve and line in same, closed path." />
 &nbsp;
@@ -11705,7 +11705,7 @@ Note how the different parts are linked together and make a "path":
 <!---------------------------- 165. bezier curve maker tool (222) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image165.png?raw=true"
+<img src="./images/image165.png?raw=true"
    alt="Interactive code that draws Bezier curves."
    width="85%">
 &nbsp;
@@ -11935,7 +11935,7 @@ grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
 <!---------------- 168. example 1 draw gradient top left to bottom right (226) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image168.png?raw=true"
+<img src="./images/image168.png?raw=true"
   width="65%"
   alt="Example 1 draw gradient from top left to bottom right." />
 &nbsp;
@@ -11948,7 +11948,7 @@ Instead of drawing a filled rectangle that covers the whole surface of the canva
 <!------------------------ 169. example 2 draw smaller rectangles (226) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image169.png?raw=true"
+<img src="./images/image169.png?raw=true"
    width="65%"
    alt="Example 2 draw smaller rectangels - red & blue." />
 &nbsp;
@@ -12010,7 +12010,7 @@ This code is much more complex than the previous one, taking 16 lines instead of
 <!--------------------------------- 170. draw checkboard (227) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image170.png?raw=true"
+<img src="./images/image170.png?raw=true"
    width="85%"
    alt="Draw red and blue checkboard." />
 &nbsp;
@@ -12088,7 +12088,7 @@ Just as we used fillStyle and fillRect for drawing rectangles filled with a 
 <!---------- 171. example 3 using strokestyle and strokerect to draw rectangles (228) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image171.png?raw=true"
+<img src="./images/image171.png?raw=true"
   width="65%"
   alt="Example 3 draw rectangles using strokeStyle and strokeRect." />
 &nbsp;
@@ -12191,7 +12191,7 @@ Like in the first example we will draw a filled rectangle that is the same size�
 <!------------------------- 172. example 4 draw filled rectangle (230) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image172.png?raw=true"
+<img src="./images/image172.png?raw=true"
    width="65%"
    alt="Example 4 draw filled rectangles." />
 &nbsp;
@@ -12267,7 +12267,7 @@ And if we draw the same rectangle with the canvas size, here is the result:
 <!------------------------------ 173. example 5 canvas size (231) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image173.png?raw=true"
+<img src="./images/image173.png?raw=true"
    width="65%"
    alt="Example 5 draw same rectangle with the canvas size." />
 &nbsp;
@@ -12341,7 +12341,7 @@ It suffices to create a new gradient before drawing each filled rectangle, and s
 <!-------------------- 174. example 6 draw shapes that share gradient (232) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image174.png?raw=true"
+<img src="./images/image174.png?raw=true"
    width="65%"
    alt="Example 6 draw shapes that share gradient." />
 &nbsp;
@@ -12457,7 +12457,7 @@ Here is an example of a radial gradient that interpolates the color of the rainb
 <!-------------- 175. example radial gradient interpolates color of rainbow (234) ---------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image175.png?raw=true"
+<img src="./images/image175.png?raw=true"
    width="65%"
    alt="Example radial gradient which interpolates the color of the rainbow."
 &nbsp;
@@ -12537,7 +12537,7 @@ In the above example, the gradients starts at a circle located at (150, 100), wi
 <!------------------------- 176. above example with color stops (235) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image176.jpeg?raw=true"
+<img src="./images/image176.jpeg?raw=true"
    width="40%"
    alt="Radial gradient." />
 &nbsp;
@@ -12558,7 +12558,7 @@ grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
 <!--- 177.  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image177.png?raw=true"
+<img src="./images/image177.png?raw=true"
    width="65%"
    alt="." />
 &nbsp;
@@ -12695,7 +12695,7 @@ imageObj.onload = function(){
 <!--- 178.  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image178.png?raw=true"
+<img src="./images/image178.png?raw=true"
   width="65%"
   alt="." />
 &nbsp;
@@ -12825,7 +12825,7 @@ Your browser does not support the canvas tag. </canvas>
 <!--- 179.  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image179.png?raw=true"
+<img src="./images/image179.png?raw=true"
    width="65%"
    alt="." />
 &nbsp;
@@ -12911,7 +12911,7 @@ Below are 4 rectangles drawn with 4 different patterns.
 <!------------------ 180. four rectangles drawn with different patterns (xxx) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image180.jpeg?raw=true"
+<img src="./images/image180.jpeg?raw=true"
   width="35%"
   alt="Four rectangles drawn with different patterns." />
 &nbsp;
@@ -12933,7 +12933,7 @@ The complete example code that produces the result shown at the beginning of thi
 <!--- 181.  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image181.png?raw=true"
+<img src="./images/image181.png?raw=true"
    width="65%"
    alt="." />
 &nbsp;
@@ -13556,7 +13556,7 @@ The lineCap property of the context indicates the way line end caps are render
 <!--- 187.  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image187.png?raw=true"
+<img src="./images/image187.png?raw=true"
    width="20%">
    alt="Line cap values." />
 &nbsp;
@@ -13567,7 +13567,7 @@ The lineCap property of the context indicates the way line end caps are render
 <!--- 188.  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image188.png?raw=true"
+<img src="./images/image188.png?raw=true"
    width="65%"
    alt="." />
 &nbsp;
@@ -13679,7 +13679,7 @@ In order to avoid this situation, we can set the miterLimit property of the co
 <!--- 190.  (xxx) -->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image190.gif?raw=true"
+<img src="./images/image190.gif?raw=true"
    width="20%"
    alt="miterLimit property shown with 3 different angles, we see that the part that goes out of the angle becomes very long." />
 &nbsp;
@@ -14911,7 +14911,7 @@ When the mouse enters the canvas we call canvas.focus() to set the focus to th
 <!----------- 197.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image197.png?raw=true"
+<img src="./images/image197.png?raw=true"
   width="65%"
   alt="image197.png" />
 &nbsp;
@@ -15090,7 +15090,7 @@ The event received by the listener function will be used for getting the button 
 <!----------- 198. mouse events illustrated (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image198.png?raw=true"
+<img src="./images/image198.png?raw=true"
   width="35%"
   alt="Mouse events illustrated." />
 &nbsp;
@@ -15128,7 +15128,7 @@ Play with the example below that show the problem:
 <!----------- 199.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image199.png?raw=true"
+<img src="./images/image199.png?raw=true"
   width="25%"
   alt="." />
 &nbsp;
@@ -15258,7 +15258,7 @@ function getMousePos(canvas, evt) {
 <!----------- 200.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image200.jpeg?raw=true"
+<img src="./images/image200.jpeg?raw=true"
   width="65%"
   alt="Bad mouse coordinates." />
 &nbsp;
@@ -15270,7 +15270,7 @@ function getMousePos(canvas, evt) {
 <!----------- 201.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image201.png?raw=true"
+<img src="./images/image201.png?raw=true"
    width="40%"
    alt="." />
 &nbsp;
@@ -15293,7 +15293,7 @@ function getMousePos(canvas, evt) {
 <!----------- 202.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image202.jpeg?raw=true"
+<img src="./images/image202.jpeg?raw=true"
   width="30%"
   alt="Mouse at zero zero." />
 &nbsp;
@@ -15307,7 +15307,7 @@ function getMousePos(canvas, evt) {
 <!----------- 203.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image203.png?raw=true"
+<img src="./images/image203.png?raw=true"
   width="40%"
   alt="." />
 &nbsp;
@@ -15317,7 +15317,7 @@ function getMousePos(canvas, evt) {
 <!----------- 204.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image204.jpeg?raw=true"
+<img src="./images/image204.jpeg?raw=true"
    width="50%"
    alt="Mouse event example." />
 &nbsp;
@@ -15384,7 +15384,7 @@ This example shows an animation at 60 frames/s using requestAnimationFrame, wer
 <!----------- 205.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image205.png?raw=true"
+<img src="./images/image205.png?raw=true"
   width="40%"
   alt="Image205." />
 &nbsp;
@@ -15454,7 +15454,7 @@ function animationLoop() {
 <!----------- 206.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image206.png?raw=true"
+<img src="./images/image206.png?raw=true"
   width="40%"
   alt="." />
 &nbsp;
@@ -15513,7 +15513,7 @@ function handleMouseMove(evt) {
 <!----------- 207.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image207.png?raw=true"
+<img src="./images/image207.png?raw=true"
    width="45%"
    alt="." />
 &nbsp;
@@ -15578,7 +15578,7 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 <!---------------------------- 208. example 1 resize and erase (285) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image208.png?raw=true"
+<img src="./images/image208.png?raw=true"
   width="45%"
   alt="Example #1 Changing the size of a canvas on the fly will erase its content. " />
 &nbsp;
@@ -15613,7 +15613,7 @@ This time we are using a similar example as above, but we removed the button fo
 <!----------- 209.  (286) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image209.png?raw=true"
+<img src="./images/image209.png?raw=true"
   width="65%"
   alt="." />
 &nbsp;
@@ -15625,7 +15625,7 @@ Then, we added this CSS rule:
 <!----------- 210. (286) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image210.png?raw=true"
+<img src="./images/image210.png?raw=true"
    width="45%"
    alt="." />
 &nbsp;
@@ -15666,7 +15666,7 @@ Yep, this is not a straightforward process...
 <!----------- 211. div and canvas inside; div has css width=100% and height=50% (287) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image211.jpeg?raw=true"
+<img src="./images/image211.jpeg?raw=true"
   width="65%"
   alt="DIV and canvas inside: div has css width=100% and height=50%" />
 &nbsp;
@@ -15734,7 +15734,7 @@ function resizeCanvasAccordingToParentSize() {
 <!------------------------------------- 212.  (288) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image212.png?raw=true"
+<img src="./images/image212.png?raw=true"
   width="55%"
   alt="."
 &nbsp;
@@ -15746,7 +15746,7 @@ function resizeCanvasAccordingToParentSize() {
 <!------------------------------------- 213. (288) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image213.png?raw=true"
+<img src="./images/image213.png?raw=true"
   width="55%"
   alt="." />
 &nbsp;
@@ -15811,7 +15811,7 @@ In that course, you will learn:
 <!---------------------------------- 214. sprite sheet (289) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image214.png?raw=true"
+<img src="./images/image214.png?raw=true"
   width="35%"
   alt="Sprite sheet." />
 &nbsp;
@@ -15874,7 +15874,7 @@ Feel free to look at the source code in the <a href="https://jsbin.com/sivula/e
 <!----------------------------- 215. auto-fill address input (291) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image215.jpeg?raw=true"
+<img src="./images/image215.jpeg?raw=true"
    width="45%"
    alt="Geo-location API is used to auto-fill address input." />
 &nbsp;
@@ -15942,7 +15942,7 @@ The following additional example shows the same best practices but presents a mo
 <!------------------------------- 216. form layout example (294) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image216.jpeg?raw=true"
+<img src="./images/image216.jpeg?raw=true"
    width="35%"
    alt="Payment form layout example." />
 &nbsp;
@@ -15992,7 +15992,7 @@ Form fields and other form controls usually have visible labels, such as "E-mail
 <!---------------------------------- 217. e-mail form label text (xxx) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image217.png?raw=true"
+<img src="./images/image217.png?raw=true"
    width="25%"
    alt="E-mail form label text." />
 &nbsp;
@@ -16190,7 +16190,7 @@ Now, let's play with some of these input types and attributes.
 <!-------------------------- 223. html4 to html5 time to update (299) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image223.jpeg?raw=true"
+<img src="./images/image223.jpeg?raw=true"
    width="20%"
    alt="HTML4 old HTML5." />
 &nbsp;
@@ -16208,7 +16208,7 @@ Here is how it looks on some mobile devices:
 <!------------------------- 224. html input type color - android (299) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image224.jpeg?raw=true"
+<img src="./images/image224.jpeg?raw=true"
    alt="HTML5 input type=color on an android phone."
    width="40%" />
 &nbsp;
@@ -16237,7 +16237,7 @@ Here is the result on Google Chrome (works with other browsers too, though the 
 <!--------------------------- 225. input type color (300) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image225.jpeg?raw=true"
+<img src="./images/image225.jpeg?raw=true"
    width="40%"
    alt="." />
 &nbsp;
@@ -16251,7 +16251,7 @@ The <input type="color"> can fire change or input events. Here is an examp
 <!------------------------ 226. change backgound color of the body (300) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image226.jpeg?raw=true"
+<img src="./images/image226.jpeg?raw=true"
    width="40%"
    alt="Change background color of the body." />
 &nbsp;
@@ -16292,7 +16292,7 @@ Example: click the black rectangle on the right:  . The following should be di
 <!---------------------------- 227. restricted choice of color (301) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image227.jpeg?raw=true"
+<img src="./images/image227.jpeg?raw=true"
    width="40%"
    alt="Restricted choice of colors." />
 &nbsp;
@@ -17899,7 +17899,7 @@ The first shows a form with two submit buttons: 
 <!----------------------------- 272.  (xxx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image272.png?raw=true"
+<img src="./images/image272.png?raw=true"
   width="40%"
   alt="." />
 &nbsp;
@@ -17915,7 +17915,7 @@ The second example shows a form with two submit buttons:
 <!----------------------------- 273.  (xxx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image273.png?raw=true"
+<img src="./images/image273.png?raw=true"
   width="40%"
   alt="." />
 &nbsp;
@@ -18064,7 +18064,7 @@ The possible values for this field are:
 <!----------------------------- 276.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image276.png?raw=true"
+<img src="./images/image276.png?raw=true"
    width="40%"
    alt="Example of use of the formenctype attribute." />
 &nbsp;
@@ -18109,7 +18109,7 @@ If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,ou
 <!----------------------------- 277.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image277.png?raw=true"
+<img src="./images/image277.png?raw=true"
    width="50%"
    alt="JS Bin example of the above example." />
 &nbsp;
@@ -18122,7 +18122,7 @@ Then, open the devtools and go to the "Network" tab, click on the POST request. 
 <!----------------------------- 278.   (xxx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image278.png?raw=true"
+<img src="./images/image278.png?raw=true"
    width="50%"
    alt="." />
 &nbsp;
@@ -18163,7 +18163,7 @@ The output element represents the result of a computation or user action. You ca
 <!----------------------------- 279.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image279.jpeg?raw=true"
+<img src="./images/image279.jpeg?raw=true"
    alt="Example of output element use."
    width="35%">
 &nbsp;
@@ -18238,7 +18238,7 @@ It can be useful to display a colored gauge to show disk usage, to highlight t
 <!----------------------------- 280.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image280.jpeg?raw=true"
+<img src="./images/image280.jpeg?raw=true"
    alt=""
    width="50%">
 &nbsp;
@@ -18327,7 +18327,7 @@ The <progress> element is similar to &lt;meter&gt; but it is used for progre
 <!----------------------------- 282.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image282.jpeg?raw=true"
+<img src="./images/image282.jpeg?raw=true"
    alt="Picture of a funny progress meme saying Every mistake you make is progress."
    width="10%">
 &nbsp;
@@ -18343,7 +18343,7 @@ If no value attribute is set, the progress bar will display an "indeterminate 
 <!----------------------------- 283.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image283.jpeg?raw=true"
+<img src="./images/image283.jpeg?raw=true"
    alt="Indetermined progress bar screenshot."
    width="50%">
 &nbsp;
@@ -18386,7 +18386,7 @@ The <datalist> form element is useful for linking a list of choices to an inpu
 <!----------------------------- 284.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image284.png?raw=true"
+<img src="./images/image284.png?raw=true"
    alt="Example of datalist for autocompletion."
    width="30%">
 &nbsp;
@@ -18395,7 +18395,7 @@ The <datalist> form element is useful for linking a list of choices to an inpu
 <!----------------------------- 285.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image285.png?raw=true"
+<img src="./images/image285.png?raw=true"
    alt="Another example of use of datalist."
    width="30%">
 &nbsp;
@@ -18407,7 +18407,7 @@ We have already seen this element in action with different <input> elements, s
 <!----------------------------- 227.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image227.jpeg?raw=true"
+<img src="./images/image227.jpeg?raw=true"
    width="15%"
    alt="Restricted choice of color." />
 &nbsp;
@@ -18416,7 +18416,7 @@ We have already seen this element in action with different <input> elements, s
 <!----------------------------- 286.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image286.jpeg?raw=true"
+<img src="./images/image286.jpeg?raw=true"
    width="60%"
    alt="Restrict choices using a datalist element." />
 &nbsp;
@@ -18425,7 +18425,7 @@ We have already seen this element in action with different <input> elements, s
 <!----------------------------- 287.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image287.jpeg?raw=true"
+<img src="./images/image287.jpeg?raw=true"
    width="65%"
    alt="Example of datalist for sliders ticks." />
 &nbsp;
@@ -18445,7 +18445,7 @@ Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,outp
 <!----------------------------- 288.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image288.png?raw=true"
+<img src="./images/image288.png?raw=true"
    width="65%"
    alt="." />
 &nbsp;
@@ -18501,7 +18501,7 @@ Also, at the time of submitting the form, some extra messages may be displayed 
 <!----------------------------- 289.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image289.png?raw=true"
+<img src="./images/image289.png?raw=true"
    width="35%"
    alt="Bubble message example." />
 &nbsp;
@@ -18661,7 +18661,7 @@ Google Chrome on a French desktop computer:
 <!----------------------------- 290.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image290.jpeg?raw=true"
+<img src="./images/image290.jpeg?raw=true"
    width="65%"
    alt="Chrome shows native error message localized and the title attribute content as is." />
 &nbsp;
@@ -18673,7 +18673,7 @@ Same example on FireFox, the title attribute is ignored:
 <!----------------------------- 291.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image291.jpeg?raw=true"
+<img src="./images/image291.jpeg?raw=true"
    width="65%"
    alt="Same example on firefox, the title attribute is ignored." />
 &nbsp;
@@ -18803,7 +18803,7 @@ Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JS
 <!----------------------------- 292.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image292.png?raw=true"
+<img src="./images/image292.png?raw=true"
    width="65%"
    alt="." />
 &nbsp;
@@ -18880,7 +18880,7 @@ Custom validation: changing the default behavior, aggregating error messages, re
 <!----------------------------- 293.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image293.png?raw=true"
+<img src="./images/image293.png?raw=true"
    width="35%"
    alt="." />
 &nbsp;
@@ -18908,7 +18908,7 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 <!----------------------------- 294.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image294.png?raw=true"
+<img src="./images/image294.png?raw=true"
    width="65%"
    alt="." />
 &nbsp;
@@ -19075,7 +19075,7 @@ This week, we will look at some of the most useful APIs. Others will be covered 
 <!------------------------------- 295. 'you are here' sign (353) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image295.jpeg?raw=true"
+<img src="./images/image295.jpeg?raw=true"
    width="35%"
    alt="'You are here' sign." />
 &nbsp;
@@ -19101,7 +19101,7 @@ For convenience, we will mainly illustrate the localStorage object. Just chang
 <!--------------------------------- 296. key value pairs (354) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image296.png?raw=true"
+<img src="./images/image296.png?raw=true"
    width="17%"
    alt="Key value pairs." />
 &nbsp;
@@ -19140,7 +19140,7 @@ Once opened in your browser, the JavaScript code is executed. With the browser d
 <!----------------------------- 297. example of localStorage (355) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image297.jpeg?raw=true"
+<img src="./images/image297.jpeg?raw=true"
    width="65%"
    alt="Examples of read and write localStorage." />
 &nbsp;
@@ -19152,7 +19152,7 @@ Once opened in your browser, the JavaScript code is executed. With the browser d
 <!----------------------------- 298. view of the devtools (355) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image298.jpeg?raw=true"
+<img src="./images/image298.jpeg?raw=true"
    width="65%"
    alt="View of the devtools. Used to show what is in localStorage." />
 &nbsp;
@@ -19302,7 +19302,7 @@ Students may note that something seems a bit off in the example above: instead o
 <!----------------------------- 300.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image300.jpeg?raw=true"
+<img src="./images/image300.jpeg?raw=true"
    width="40%"
    alt="example with buttons that shown how to iterate on localStorage, clear it etc." />
 &nbsp;
@@ -19401,7 +19401,7 @@ Local stores are also useful for** saving/restoring user preferences** of Web 
 <!----------------------------- 00.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image301.jpeg?raw=true"
+<img src="./images/image301.jpeg?raw=true"
    width="65%"
    alt="Example of preferences." />
 &nbsp;
@@ -19415,7 +19415,7 @@ Another example is a guitar FX processor / amp simulator your instructor is writ
 <!----------------------------- 302.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image302.jpeg?raw=true"
+<img src="./images/image302.jpeg?raw=true"
    width="65%"
    alt="Guitar fx processor uses localStorage." />
 &nbsp;
@@ -19427,7 +19427,7 @@ Another example is a guitar FX processor / amp simulator your instructor is writ
 <!----------------------------- 303. animate rectangle with gui (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image303.jpeg?raw=true"
+<img src="./images/image303.jpeg?raw=true"
    width="35%"
    alt="Animated Rectangle with GUI." />
 &nbsp;
@@ -19632,7 +19632,7 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 <!----------------------------- 304. json save/load in local storage (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image304.png?raw=true"
+<img src="./images/image304.png?raw=true"
    alt="JSON Save/Load in local storage"
    width="65%">
 &nbsp;
@@ -19686,7 +19686,7 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 <!----------------------------- 305. local storage json (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image305.png?raw=true"
+<img src="./images/image305.png?raw=true"
    width="65%"
    alt="localStorage JSON." />
 &nbsp;
@@ -19702,7 +19702,7 @@ Add contacts using the form, see how the HTML table is updated. Try to reload th
 <!----------------------------- 306. serverless contact manager (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image306.jpeg?raw=true"
+<img src="./images/image306.jpeg?raw=true"
    width="65%"
    alt="Serverless Contact Manager." />
 &nbsp;
@@ -19714,7 +19714,7 @@ Examine the localStorage:
 <!------------------- 307. localStorage view in devtools shows the data (xxx) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image307.png?raw=true"
+<img src="./images/image307.png?raw=true"
    width="65%"
    alt="localStorage view in devtools shows the data." />
 &nbsp;
@@ -19738,7 +19738,7 @@ The objective of this chapter is to provide an overview of the File API.
 <!-------------------------- 308. sound sample editor serverless (xxx) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image308.jpeg?raw=true"
+<img src="./images/image308.jpeg?raw=true"
    width="45%"
    alt="Sound sample editor serverless." />
 &nbsp;
@@ -19753,7 +19753,7 @@ Imagine a multimedia player that accesses (in read-only) your file system, reads
 <!-------------------------- 309. audio player that plays local files (xxx) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image309.jpeg?raw=true"
+<img src="./images/image309.jpeg?raw=true"
    width="45%"
    alt="Audio player that plays local files." />
 &nbsp;
@@ -19762,7 +19762,7 @@ Imagine a multimedia player that accesses (in read-only) your file system, reads
 <!-------------------------- 310. polarr photo editor uses the File API (xxx) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image310.jpeg?raw=true"
+<img src="./images/image310.jpeg?raw=true"
    width="45%"
    alt="polarr photo editor uses the File API." />
 &nbsp;
@@ -19869,7 +19869,7 @@ All this here is HTML5, this is canvas, these are form elements we saw the last 
 <!-------------------------- 311.  (xxx) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image311.png?raw=true"
+<img src="./images/image311.png?raw=true"
    width="65%"
    alt="." />
 &nbsp;
@@ -20051,7 +20051,7 @@ We will not use all of these interfaces, but let's explain the difference betwee
 <!-------------------------- 312. the blob movie poster (xxx) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image312.jpeg?raw=true"
+<img src="./images/image312.jpeg?raw=true"
    width="25%"
    alt="The Blob Movie Poster." />
 &nbsp;
@@ -20123,7 +20123,7 @@ Choose a text file:
 <!-------------------------- 313.  (xxx) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image313.png?raw=true"
+<img src="./images/image313.png?raw=true"
    width="45%"
    alt="." />
 &nbsp;
@@ -20146,7 +20146,7 @@ Let's start by reading a pure text file
 <!-------------------------- 314.  (xxx) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image314.png?raw=true"
+<img src="./images/image314.png?raw=true"
    width="45%"
    alt="." />
 &nbsp;
@@ -20206,7 +20206,7 @@ This time, please select multiple text files (using shift for multiple selection
 <!-------------------------- 315.  (xxx) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image315.png?raw=true"
+<img src="./images/image315.png?raw=true"
    width="40%"
    alt="." />
 &nbsp;
@@ -20300,7 +20300,7 @@ readAsArrayBuffer is often used for purposes such as reading audio samples that
 <!---------------- 316. webaudio api - does not work with microsoft shit (382) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image316.png?raw=true"
+<img src="./images/image316.png?raw=true"
    width="55%"
    alt="Local audio player." />
 &nbsp;
@@ -20352,7 +20352,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12
 <!-------------------- 317. data url in address bar shows a red cirle (383) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image317.jpeg?raw=true"
+<img src="./images/image317.jpeg?raw=true"
    width="85%"
    alt="Data url in address bar shows a red circle." />
 &nbsp;
@@ -20374,7 +20374,7 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 <!----------------------------------- 318. red splotch (383) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image318.png?raw=true"
+<img src="./images/image318.png?raw=true"
    width="15%"
    alt="Red splotch." />
 &nbsp;
@@ -20389,7 +20389,7 @@ You will find lots of Web sites and tools for generating dataURL from files, suc
 <!-------------- we see an image and its ascii encoded data uri version (384) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image319.jpeg?raw=true"
+<img src="./images/image319.jpeg?raw=true"
    width="55%"
    alt="Online service that converts uploaded images to data uris...we see an image and its ascii encoded data uri version." />
 </p>
@@ -20404,7 +20404,7 @@ Example of HTML5 logo embedded in a document without any real image, just a data
 <!-- 320. screenshot of jsbin examle shows the html5 logo insterted before a div using css (385) ->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image317.jpeg?raw=true"
+<img src="./images/image317.jpeg?raw=true"
    width="65%"
    alt="Data url in address bar shows a red circle." />
 &nbsp;
@@ -20422,7 +20422,7 @@ This first example is useful for forms that allow the user to select one or more
 <!--------------------------- 332. preview of selected images (385) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image332.png?raw=true"
+<img src="./images/image332.png?raw=true"
    width="45%"
    alt="Preview of selected images." />
 &nbsp;
@@ -20487,7 +20487,7 @@ This first example is useful for forms that allow the user to select one or more
 <!------------------------------- 322. example 2 kitty cat (386) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image322.jpeg?raw=true"
+<img src="./images/image322.jpeg?raw=true"
    width="55%"
    alt="Example #2 read image as dataURL and draw inside a canvas." />
 &nbsp;
@@ -20551,7 +20551,7 @@ This chapter presents the new Geolocation API and illustrates its use with sever
 <!------------------------------ 323. w3c geolocation logo (388) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image323.png?raw=true"
+<img src="./images/image323.png?raw=true"
    width="25%"
    alt="W3C Geolocation logo/icon." />
 &nbsp;
@@ -20631,7 +20631,7 @@ Note that the first time you execute this example, for privacy reasons, the brow
 <!---------------------- 324. function getLocation in geolocation (389) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image324.jpeg?raw=true"
+<img src="./images/image324.jpeg?raw=true"
    width="55%"
    alt="Geolocation Callback Illustration." />
 </p>
@@ -20665,7 +20665,7 @@ In the previous example, we used the coords property of the position passed as
 <!------------------------- 325. properties of the coords object (390) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image325.png?raw=true"
+<img src="./images/image325.png?raw=true"
    width="85%"
    alt="Properties of the coords object." />
 </p>
@@ -20684,7 +20684,7 @@ A slightly different version of the previous example <a href="https://jsbin.com
 <!-------------------------------- 326. geolocation error (390) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image326.jpeg?raw=true"
+<img src="./images/image326.jpeg?raw=true"
    width="85%"
    alt="Geolocation error." />
 </p>
@@ -20775,7 +20775,7 @@ Several options are available when using HTML5 geolocation. We can pass a third 
 <!---------------------- 327. more properties of the coords object (392) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image327.png?raw=true"
+<img src="./images/image327.png?raw=true"
    width="85%"
    alt="More properties of the coords object." />
 </p>
@@ -20823,7 +20823,7 @@ How to get a map centered on your longitude and latitude.
 <!------------------------------- 328. openstreetmap test (393) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image328.png?raw=true"
+<img src="./images/image328.png?raw=true"
    width="85%"
    alt="Example/Test OpenStreetMap." />
 </p>
@@ -20834,7 +20834,7 @@ How to get a map centered on your longitude and latitude.
 <!------------------------------- 329. openstreetmap test (393) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image329.png?raw=true"
+<img src="./images/image329.png?raw=true"
    width="50%"
    alt="Example/Test OpenStreetMap." />
 </p>
@@ -21019,7 +21019,7 @@ Google reverse geocoding example (screenshot only):</p>
 <!------------------------ 330. google reverse geocoding example (396) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image330.png?raw=true"
+<img src="./images/image330.png?raw=true"
    width="45%"
    alt="Example #1 How to get a physical address from the longitude and latitude." />
 </p>
@@ -21122,7 +21122,7 @@ Gisgraphy (free service) reverse geocoding example (screenshot only, click on it
 <!------------------------------ 331. gisgraphy screenshot (398) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image331.png?raw=true"
+<img src="./images/image331.png?raw=true"
    width="65%"
    alt="Gisgraphy screenshot." />
 </p>
@@ -21136,7 +21136,7 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 <!------------------------ 332. reverse geocoding - openstreetmap (398) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="/images/image332.png?raw=true"
+<img src="./images/image332.png?raw=true"
    width="65%"
    alt="Reverse Geocoding - OpenStreetMap." />
 </p>
