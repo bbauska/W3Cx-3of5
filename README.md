@@ -18709,7 +18709,7 @@ Google Chrome on a French desktop computer:
 Same example on FireFox, the title attribute is ignored:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 291.  (xx) ------------------------------->
+<!----------------------------- 291. firefox title attribute (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image291.jpeg?raw=true"
@@ -18841,12 +18841,12 @@ The possible values for the validity property are: 
 Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JSBin that shows how to test the different types of validation errors</a>, or you may try it here in your browser (enter bad values, too big, too small, enter invalid characters, etc.):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 292.  (xx) ------------------------------->
+<!-------------------------- 292. enter value between 10 and 20 (348) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image292.png?raw=true"
    width="65%"
-   alt="." />
+   alt="JSBin example which shows how to test the different types of validation errors." />
 &nbsp;
 <br/>
 
@@ -18918,12 +18918,12 @@ This is useful for making custom error messages. More about this topic in the ne
 Custom validation: changing the default behavior, aggregating error messages, removing bubbles, etc.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 293.  (xx) ------------------------------->
+<!---------------- 293. in french, submit with one or two invalid fields (349) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image293.png?raw=true"
    width="35%"
-   alt="." />
+   alt="Custom validation." />
 &nbsp;
 <br/>
 
@@ -18946,12 +18946,12 @@ Here is [an adaptation of work presented at the developer.telerik.com Web site]
 Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output) or try it here in your browser: enter invalid values and submit with one or two invalid fields.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 294.  (xx) ------------------------------->
+<!---------------------------- 294. name and e-mail fields (350) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image294.png?raw=true"
    width="65%"
-   alt="." />
+   alt="Prompt for name and e-mail address fields." />
 &nbsp;
 <br/>
 
