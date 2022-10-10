@@ -3305,7 +3305,7 @@ The machine readable part adds semantics that can be used by search engines for 
 <h4>Here are some examples:</h4>
 
 <h4>Different syntaxes of the datetime attribute</h4>
-<p align="center" width="100%">
+<div align="center" width="100%">
 
 | datetime attribute values | Interpretation |
 | ------------------------- | -------------- |
@@ -3319,7 +3319,7 @@ The machine readable part adds semantics that can be used by search engines for 
 | &lt;time datetime="09:00-05"&gt; | 9:00 in the morning, GMT minus 5 hours |
 | &lt;time datetime="09:00+05:45"&gt; | 9:00 in the morning, GMT plus 5 hours 45 mins, (for example, Nepal is 5:45 ahead of GMT |
 
-</p>
+</div>
 
 <h4>Duration values</h4>
 
@@ -4049,7 +4049,7 @@ Now, let's see what elements are compatible with the itemprop attribute and wh
 
 <h4>Elements that can be associated with microdata</h4>
 
-<p align="center" width="100%">
+<div align="center" width="100%">
 
 | HTML5 elements | microdata value associated |
 | ---------------| ---------------------------|
@@ -4057,7 +4057,7 @@ Now, let's see what elements are compatible with the itemprop attribute and wh
 | &lt;time&gt; element | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
 | &lt;meta&gt; element | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
 | anything else | The data is whatever is in the text of the element. |
-</p>
+</div>
 <p>
 For example, the value of a property defined in an &lt;img&gt; element will be the value of the src attribute:</p>
 
@@ -4864,7 +4864,7 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link
 
 We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer!
 
-<p align="center" width="100%">
+<div align="center" width="100%">
 
 | <b>Methods</b> | <b>Properties</b>          | <b>Events</b>   |
 | -------------- | -------------------------- | --------------- |
@@ -4885,7 +4885,7 @@ We provide this as a quick reminder - keep in mind that the <a href="https://ht
 |                | <b>seekable (readonly)</b> |                 |
 |                | <b>played (readonly)</b>   |                 |
 
-</p>
+</div>
 <p>
 In the next pages, let's see, through a set of examples, how to use these most important properties, methods, and events...
 </p>
@@ -7091,7 +7091,7 @@ For that you will use <b>the dev. tools of your browser</b>. Press <i>F12</
 
 Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this example on JS Bin</a>:
 
-<p align="center" width="100%">
+<div align="center" width="100%">
 
 | #  | html code                                                                                                                                                             |
 | -- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -7109,7 +7109,7 @@ Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this examp
 | 12 | </[<b>body</b>](https://december.com/html/4/element/body.html)>                                                                                                       |
 | 13 | </[<b>html</b>](https://december.com/html/4/element/html.html)>                                                                                                       |
 
-</p>
+</div>
 
 The simplest way to add JavaScript code in an HTML page, is by using the &lt;script&gt;...&lt;/script&gt; element.
 
@@ -9106,7 +9106,7 @@ context.fillText("bottom-glyph", 400, 75);
 The example above shows the different possible values for this property and the corresponding results. The default value is "alphabetic" and corresponds to what has been used in the previous "Hello World" example.
 
 <h3>Possible values for the textbaseline property:</h3>
-<p align="center" width="100%">
+<div align="center" width="100%">
 
 | textBaseline property                           | Description                                                                                               |
 | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -9117,7 +9117,7 @@ The example above shows the different possible values for this property and the 
 | ideographic                                     | The bottom of horizontally oriented glyphs.                                                               |
 | bottom                                          | The text is aligned based on the bottom of the glyph in the text, that extends furthest down in the text. |
 
-</p>
+</div>
 
 Typical use (taken from the example above):
 
@@ -17264,7 +17264,7 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
   <li>From CSS{Portal}, a CSS generator help you style the html input range tag, very easy to use: <a href="https://www.cssportal.com/style-input-range/">Style Input Range</a></li>
 </ul>
 
-<p align="center" width="100%">
+<div align="center" width="100%">
 
 | <h3>HTML4</h3>                                                                      | <h3>HTML5</h3>                           |
 | ----------------------------------------------------------------------------------- | ---------------------------------------- |
@@ -17291,7 +17291,7 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 | \*   pseudoclasses CSS target with :disabled and :checked or :required selectors                                              |
 | \**  align is deprecated, CSS rules should be used instead                                                                    |
 
-</p>
+</div>
 
 <ul>
   <li>MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">&lt;input type=range&gt;</a></li>
@@ -18162,7 +18162,7 @@ And if you start again and click on the left submit button, the one without the 
 
 Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&gt;, &lt;output&gt;, &lt;meter&gt;  and &lt;progress&gt; elements).
 
-<p align="center" width="100%">
+<div align="center" width="100%">
 
 | :HTML4             | :HTML5               |
 | ------------------ | -------------------- |
@@ -18179,7 +18179,7 @@ Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&g
 |                                           |
 | * Not really useful for most developers.  |
 
-</p>
+</div>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-6-2">5.6.2 &lt;output&gt;</h3>
