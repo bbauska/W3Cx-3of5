@@ -18143,16 +18143,16 @@ Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&g
 
 | HTML4        | HTML5        |
 |--------------|--------------|
-| - <form>     | - <datalist> |
-| - <fieldset> | - <output>   |
-| - <legend>   | - <meter>    |
-| - <textarea> | - <progress> |
-| - <label>    | - <keygen>   |
-| - <select>   |              |
-| - <option>   |              |
-| - <optgroup> |              |
-| - <input>    |              |
-| - <button>   |              |
+| - &lt;form&gt;     | - &lt;datalist&gt; |
+| - &lt;fieldset&gt; | - &lt;output&gt;   |
+| - &lt;legend&gt;   | - &lt;meter&gt;    |
+| - &lt;textarea&gt; | - &lt;progress&gt; |
+| - &lt;label&gt;    | - &lt;keygen&gt;   |
+| - &lt;select&gt;   |              |
+| - &lt;option&gt;   |              |
+| - &lt;optgroup&gt; |              |
+| - &lt;input&gt;    |              |
+| - &lt;button&gt;   |              |
 | * Not really useful for most developers.  |
 
 <!------------------------------------------------------------------------------------------------>
