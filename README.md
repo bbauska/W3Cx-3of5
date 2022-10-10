@@ -17274,7 +17274,7 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 | - <b>maxlength</b>                                                                  | - <b>autofocus</b>                     |
 | - <b>readonly</b>                                                                   | - <b>list</b>                          |
 | - <b>size</b>                                                                       | - <b>pattern</b>                       |
-| - <b>value</b>                                                                      | - <b><i>required</i></b>\*               |
+| - <b>value</b>                                                                      | - <b><i>required</i></b>\*             |
 | - <b>alt</b>                                                                        | - <b>placeholder</b>                   |
 | - <b>src</b>                                                                        | - <b>multiple</b>                      |
 | - <b>height</b>                                                                     | - <b>list</b>                          |
@@ -17286,9 +17286,8 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 |                                                                                     | - <b>formmethod</b>                    |
 |                                                                                     | - <b>formtarget</b>                    |
 |                                                                                     | - <b>formnovalidate</b>                |
-
-| \*   pseudoclasses CSS target with :disabled and :checked or :required selectors                                              |
-| \**  align is deprecated, CSS rules should be used instead                                                                    |
+| \*  pseudoclasses CSS target with :disabled and :checked or :required selectors    |                                        |
+| \** <i>align</i> is deprecated, CSS rules should be used instead                          |                                        |
 
 </div>
 
@@ -18163,20 +18162,20 @@ Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&g
 
 <div align="center" width="100%">
 
-| :HTML4             | :HTML5               |
+| HTML4              | HTML5               |
 | ------------------ | -------------------- |
 | - &lt;form&gt;     | - &lt;datalist&gt;   |
 | - &lt;fieldset&gt; | - &lt;output&gt;     |
 | - &lt;legend&gt;   | - &lt;meter&gt;      |
 | - &lt;textarea&gt; | - &lt;progress&gt;   |
-| - &lt;label&gt;    | - &lt;keygen&gt; *   |
+| - &lt;label&gt;    | - &lt;keygen&gt; \*  |
 | - &lt;select&gt;   |                      |
 | - &lt;option&gt;   |                      |
 | - &lt;optgroup&gt; |                      |
 | - &lt;input&gt;    |                      |
 | - &lt;button&gt;   |                      |
 |                                           |
-| * Not really useful for most developers.  |
+| \* Not really useful for most developers.  |
 
 </div>
 
