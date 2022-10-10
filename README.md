@@ -16898,7 +16898,7 @@ The specification does not state what the GUI should look like, so current impl
 Results on Chrome and Opera desktop - notice the small cross on the right when one enters a value:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 252.  (xxx) ------------------->
+<!--------------------------- 252. simple search chrome & opera (313) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image252.jpeg?raw=true"
@@ -16909,7 +16909,7 @@ Results on Chrome and Opera desktop - notice the small cross on the right when o
 Same example with Safari desktop, this time the second line with an attribute results=5 shows a small icon on the left:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 253.  (xxx) ------------------->
+<!--------------------------- 253. simple search safari desktop (313) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image253.jpeg?raw=true"
@@ -16920,7 +16920,7 @@ Same example with Safari desktop, this time the second line with an attribute r
 Example that shows a drop down list of recent searches (Safari screenshot borrowed from [this excellent site about HTML5 forms that is worth reading](https://www.wufoo.com/html5/types/5-search.html)):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 254.  (xxx) ------------------->
+<!------------------------ 254. drop down list of recent searches (313) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image254.png?raw=true"
@@ -16970,7 +16970,7 @@ Example: <b>&lt;input type="number" value="25" min="0" step="5" max="500"/
 <h4>Screenshot example taken with a mobile device:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 255.  (xxx) ------------------->
+<!--------------------- 255. input type number display mobile device (314) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image255.png?raw=true"
@@ -16981,12 +16981,12 @@ Example: <b>&lt;input type="number" value="25" min="0" step="5" max="500"/
 Examples on desktop (the width will be adjusted depending on the min and max attributes):
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 256.  (xxx) ------------------->
+<!----------------------------- 256. quantity between 1 and 5 (314) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image256.jpeg?raw=true"
    width="35%"
-   alt="Input type=number example." />
+   alt="Input type=number example. Quantity between 1 and 5." />
 </p>
 
 <h4>Typical usage</h4>
@@ -17012,12 +17012,12 @@ If the difference between the value you enter and min is a multiple of step
 <a href="https://codepen.io/w3devcampus/pen/GJrQzP):">Online example in CodePen</a> try changing the attribute values, use step="any" and try float values, etc).
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 257.  (xxx) ------------------->
+<!----------------------------- 257. change attribute values (315) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image257.png?raw=true"
    width="40%"
-   alt="." />
+   alt="Change attribute values.  Use step=any and try float values." />
 </p>
 
 Or, do it here in your browser (Manually enter a value that is not in the range, or not a multiple of 5, try the up and down arrows, etc.):
@@ -17058,7 +17058,7 @@ Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid):�
 <!------------------------------------------------------------------------------------------------>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 258.  (xxx) ------------------->
+<!-------------------------- 258. using zipper as range setting (316) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image258.jpeg?raw=true"
@@ -17071,31 +17071,31 @@ This input type renders as a slider. It accepts the same attributes as the <inp
 <h4>Example of rendering on a desktop:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 259.  (xxx) ------------------->
+<!------------------------- 259. play with attributes on desktop (316) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image259.jpeg?raw=true"
    width="30%"
-   alt="input type=range" />
+   alt="Example rendering on desktop." />
 </p>
 
 <h4>And on mobile devices:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 260.  (xxx) ------------------->
+<!------------------------- 260. on left range, default, vertical (316) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image260.png?raw=true"
    width="20%"
-   alt="ios range input" />
+   alt="Left image, ios range input." />
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 261.  (xxx) ------------------->
+<!------------------------------ 261. on right range android (316) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image261.jpeg?raw=true"
    width="20%"
-   alt="input type=range android" />
+   alt="Right image, android range input." />
 </p>
 
 <h4>Typical use</h4>
@@ -17111,7 +17111,7 @@ This input type renders as a slider. It accepts the same attributes as the <inp
 <h4><a href="https://codepen.io/w3devcampus/pen/BRMVGW">This online example on CodePen</a> shows how to add a visual feedback using a very short JavaScript function and an &lt;output&gt; element. Just click and drag the small cursor of the slider (or use up and down arrow keys when the field has the focus):</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 262.  (xxx) ------------------->
+<!--------------------- 262. add visual feedback with short function (317) ----------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image262.png?raw=true"
@@ -17167,12 +17167,12 @@ This input type renders as a slider. It accepts the same attributes as the <inp
 <h4>Snapping behavior and the step attribute</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 263.  (xxx) ------------------->
+<!-------------------------- 263. example six steps in process (317) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image263.jpeg?raw=true"
    width="30%"
-   alt="jumps + steps" />
+   alt="Jumps + steps." />
 </p>
 
 When you click and drag the slider, it "jumps" to some snap points corresponding to the integer values of the range defined by the min and max attributes. The "size of the jumps" depends on the value of the step attribute.
@@ -17202,12 +17202,12 @@ So, for accepting float values, it is necessary to use step="any", or step equa
 Adding "ticks" to the range slider using a &lt;datalist&gt; element
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 264.  (xxx) ------------------->
+<!------------------- 264. display ticks on a rule at given positions (318) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image264.jpeg?raw=true"
    width="45%"
-   alt="complicated ticks on a rule" />
+   alt="Display ticks on a rule at given positions." />
 </p>
 
 <h4>Using the &lt;datalist&gt; element, it's possible to display "ticks" above the range slider, at given positions.</h4>
@@ -17249,7 +17249,7 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 </ul>
 
 | <h3>HTML4</h3>                                                                      | <h3>HTML5</h3>                           |
-+=====================================================================================+==========================================+
+| ----------------------------------------------------------------------------------- | ---------------------------------------- |
 | -   <b>name</b>                                                                     | -   <b>form</b>                          |
 | -   <b><i>disabled</i></b>                                                          | -   <b>readonly</b>                      |
 | -   <b>type</b>                                                                     | -   <b>autocomplete</b>                  |
@@ -17268,10 +17268,9 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 |                                                                                     | -   <b>formmethod</b>                    |
 |                                                                                     | -   <b>formtarget</b>                    |
 |                                                                                     | -   <b>formnovalidate</b>                |
-+-------------------------------------------------------------------------------------+------------------------------------------+
+
 | *   pseudoclasses CSS target with :disabled and :checked or :required selectors     |                                          |
 | **  align is deprecated, CSS rules should be used instead                           |                                          |
-+-------------------------------------------------------------------------------------+------------------------------------------+
 
 <ul>
   <li>MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">&lt;input type=range&gt;</a></li>
@@ -17284,12 +17283,12 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 <p>In this chapter, we go over the form attributes that have been introduced by HTML5.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 265.  (xxx) ------------------->
+<!------------------------------ 265. html5 form attributes (320) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image265.jpeg?raw=true"
    width="25%"
-   alt="html5 form attributes" />
+   alt="HTML5 form attributes." />
 </p>
 
 We have already seen the use of pseudo CSS classes used together with the input field and form validation (pattern attribute, input:invalid CSS rule). We also briefly looked at the use of the placeholder attributes for displaying a helper message in the input field.
@@ -18142,9 +18141,8 @@ And if you start again and click on the left submit button, the one without the 
 
 Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&gt;, &lt;output&gt;, &lt;meter&gt;  and &lt;progress&gt; elements).
 
-+-------------------------------------------+------------------------------ +
 | HTML4                                     | HTML5                         |
-+-------------------------------------------+-------------------------------+
+| ----------------------------------------- | ----------------------------- |
 | -   &lt;form&gt;                          | -   &lt;datalist&gt;          |
 | -   &lt;fieldset&gt;                      | -   &lt;output&gt;            |
 | -   &lt;legend&gt;                        | -   &lt;meter&gt;             |
@@ -18155,9 +18153,9 @@ Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&g
 | -   &lt;optgroup&gt;                      |                               |
 | -   &lt;input&gt;                         |                               |
 | -   &lt;button&gt;                        |                               |
-+-------------------------------------------+------------------------------ +
+| ----------------------------------------- | ----------------------------- |
 | * Not really useful for most developers.  |                               |
-+-------------------------------------------+------------------------------ +
+| ------------------------------------------------------------------------- |
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-6-2">5.6.2 &lt;output&gt;</h3>
