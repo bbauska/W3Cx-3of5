@@ -19065,9 +19065,9 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 105. </html>
 ```
 
-Explanations:
+<h4>Explanations:</h4>
 
--   <i>Line 32</i>: we added an empty unnumbered list (<ul>..</ul>) to the form, with the CSS class="error-messages". We will use this class attribute for styling, and hiding by default, the error messages using CSS (see lines <i>12-20</i>, <i>line 13</i> hides the messages by default).
+-   <i>Line 32</i>: we added an empty unnumbered list (&lt;ul&gt;...&lt;/ul&gt;) to the form, with the CSS class="error-messages". We will use this class attribute for styling, and hiding by default, the error messages using CSS (see lines <i>12-20</i>, <i>line 13</i> hides the messages by default).
 -   <i>Lines 97-102</i> look at all forms in the document and call a function that will replace the default validation behavior for all of them: the replaceValidationUI(form) function.
 -   This function first disables all default behavior (no more display of bubbles during form submission), this is done at <i>lines 45-57</i>.
 -   <i>Line 66</i>: we add a click listener to the submit button of the current form.
