@@ -15866,7 +15866,7 @@ HTML5 took all this into account and thus provides:
   <li>Other goodies, such as the option to set an input field out of a &lt;form&gt;, new elements such as &lt;datalist&gt; for autocompletion, &lt;output&gt; for feedback, etc.</li><br/>
 </ul>
 
-Examples of contextual keyboards are shown above; they differ depending on the type of  <input> fields in the &lt;form&gt;. 
+Examples of contextual keyboards are shown above; they differ depending on the type of  &lt;input> fields in the &lt;form&gt;. 
 In the examples, we can see: email, URL, and phone number. Look at the different keyboard layouts. The last picture is a date picker from an IOS phone.
 
 <h4>External resources:</h4>
@@ -15942,7 +15942,7 @@ Forms are a way to get user input which is sent to a remote server. This secti
 
 On the server side, you may have PHP, Java, C#, Ruby, Python, etc. components. There are several ways to collect server-side data from a form in a Web page: REST Web services, servlets, Microsoft ASP pages, etc.
 
-On the client side, the forms indicate to which server and how the data should be sent,  using the action and method attributes respectively. A <button type="submit"> or an <input type=submit> field is used to submit the form content.
+On the client side, the forms indicate to which server and how the data should be sent,  using the action and method attributes respectively. A &lt;button type="submit"> or an &lt;input type=submit> field is used to submit the form content.
 
 For example: <form action="myServerCode.php" method="POST">...</form>. Here, we set the URL of the server side code (myServerCode.php), and the HTTP method that will be used by the browser for sending the form content (POST).
 
@@ -15972,9 +15972,9 @@ Forms are commonly used to enable user interaction in Web sites and Web applicat
 
 Since HTML5 provides functionalities to assist with accessibility, developers should make a concerted effort to mark up Web based forms. The following two guidelines are to give you a good start to make your forms accessible:
 
-1.  For every form field, ensure that a descriptive label is provided and use the <label> element to identify each form control.
+1.  For every form field, ensure that a descriptive label is provided and use the &lt;label&gt; element to identify each form control.
 
-2.  For larger or complex forms, use the <fieldset> and <legend> elements to respectively group and associate related form controls.
+2.  For larger or complex forms, use the &lt;fieldset&gt; and &lt;legend&gt; elements to respectively group and associate related form controls.
 
 Examples for each of these two basic guidelines are given in the following pages.
 
@@ -16209,7 +16209,7 @@ In this section, we briefly present the input types, attributes, and elements re
 
 Compared to HTML4, HTML5 introduced 13 new input types, covering most of the needs of  Web developers. HTML5 packages some of the "form best practices" in its specification. Web browsers providing native implementation give a boost in performance, and reduce the size of JavaScript embedded in complex Web pages.
 
-MDN's Web docs [article on <input> types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#%3Cinput%3E_types) lists all input types and highlights those that came with HTML5.
+MDN's Web docs [article on &lt;input&gt; types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#%3Cinput%3E_types) lists all input types and highlights those that came with HTML5.
 
 Now, let's play with some of these input types and attributes.
 
@@ -16256,7 +16256,7 @@ Here is how it looks on some mobile devices:
 
 <i>Note</i>: In this chapter we are simplifying the examples, as we usually embed input elements in a &lt;form&gt;...</form>.
 
-Try <input type="color"> online with this <a href="https://jsbin.com/cajuzob/1/edit?html,output">JSBin example</a>. Or do it here in your browser: just click on the purple square below : 
+Try &lt;input type="color"> online with this <a href="https://jsbin.com/cajuzob/1/edit?html,output">JSBin example</a>. Or do it here in your browser: just click on the purple square below : 
 
 Here is the result on Google Chrome (works with other browsers too, though the <i>look and feel</i> may differ):
 
@@ -16272,7 +16272,7 @@ Here is the result on Google Chrome (works with other browsers too, though the 
 
 <h4>Example: changing the background color of the page</h4>
 
-The <input type="color"> can fire change or input events. Here is an example that changes the background color of the page when a color is chosen. [Try it online at JSBin](https://jsbin.com/jozuter/1/edit?html,css,js,console,output).
+The &lt;input type="color"> can fire change or input events. Here is an example that changes the background color of the page when a color is chosen. [Try it online at JSBin](https://jsbin.com/jozuter/1/edit?html,css,js,console,output).
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 226. change backgound color of the body (300) ------------------------->
@@ -16612,7 +16612,7 @@ if(this.valueAsDate <= new Date(2000,1,1)) {
 <input type="datetime">, "week", "month", "datetime-local", etc.
 ```
 
-The HTML5 specification indicates that we can use <input type="date"> and <input type="time"> while for some years (before the specification became a frozen standard in October 2014), other variants were also present, such as type=datetime, datetime-local, month and week.
+The HTML5 specification indicates that we can use &lt;input type="date"&gt; and &lt;input type="time"&gt; while for some years (before the specification became a frozen standard in October 2014), other variants were also present, such as type=datetime, datetime-local, month and week.
 
 [Here is an interactive example at JSBin](https://jsbin.com/supope/1/edit) where you can change the type of date chooser and try all the different possible values for the type attribute of date pickers.
 
@@ -17082,7 +17082,7 @@ Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid):�
    alt="zipper with funny label input type=range" />
 </p>
 
-This input type renders as a slider. It accepts the same attributes as the <input type="number"> : min, max, step and value.
+This input type renders as a slider. It accepts the same attributes as the &lt;input type="number"&gt; : min, max, step and value.
 
 <h4>Example of rendering on a desktop:</h4>
 
@@ -17850,15 +17850,15 @@ Bottom of Form
 
 <b>Best practice:  add a title attribute indicating what you expect as a valid entry</b> (<i>lines 25</i> and <i>38</i>). If you enter bad values and submit, you will see in the error message the string value of the title attribute.
 
-With <input type="file">
+With &lt;input type="file"&gt;
 
 With this type of input field, multiple files can be chosen (whereas before HTML5, only a single file could be chosen).
 
-Typical use: <input type=file multiple>
+Typical use: &lt;input type=file multiple&gt;
 
 Try these in your browser, look at the small variations (text in the buttons, messages):
 
-Example with <input type=file multiple>
+Example with &lt;input type=file multiple&gt;
 
                     Select one or more files: 
 
@@ -17880,16 +17880,16 @@ You might just glance at them and/or try the examples. The next pages cover thei
 <h3 id="ch5-5-10">5.5.10 formaction and formmethod</h3>
 <!------------------------------------------------------------------------------------------------>
 
-These attributes are targeted to the <input type="submit"> input fields. They are rarely used.
+These attributes are targeted to the &lt;input type="submit"&gt; input fields. They are rarely used.
 
 ```
 1.  <input type="submit"
 2.  formaction="preview.php" formmethod="get" value="Preview">
 ```
 
-When you use an <input type="submit"> field with the formaction attribute, the action attribute value of the form is overridden. The form will be submitted to the URL / value of the formaction attribute of the  <input type="submit"> field.
+When you use an &lt;input type="submit"&gt; field with the formaction attribute, the action attribute value of the form is overridden. The form will be submitted to the URL / value of the formaction attribute of the  &lt;input type="submit"&gt; field.
 
-The formmethod attribute does the same with the POST/GET method attribute of the form. If an <input type="submit"> has a formmethod attribute, it overrides the value of the method attribute of the form.
+The formmethod attribute does the same with the POST/GET method attribute of the form. If an &lt;input type="submit"&gt; has a formmethod attribute, it overrides the value of the method attribute of the form.
 
 <h4>Typical use</h4>
 
@@ -17947,9 +17947,9 @@ The second example shows a form with two submit buttons:
 <h3 id="ch5-5-11">5.5.11 formnovalidate</h3>
 <!------------------------------------------------------------------------------------------------>
 
-The formnovalidate attribute is targeted to the <input type="submit"> input fields. This attribute is rarely used, so there will be no questions about it in the end of the week's exercises.
+The formnovalidate attribute is targeted to the &lt;input type="submit"&gt; input fields. This attribute is rarely used, so there will be no questions about it in the end of the week's exercises.
 
-This atrribute allows the submission of a form even if it contains  <i>invalid</i> fields. For example:  a form that has an <input type="email"> field or a field required and which are not filled. 
+This atrribute allows the submission of a form even if it contains  <i>invalid</i> fields. For example:  a form that has an &lt;input type="email"&gt; field or a field required and which are not filled. 
 
 In general, such forms have two submit buttons, one with the formnovalidate attribute set to a non null value and one without.
 
@@ -18056,7 +18056,7 @@ The enctype attribute existed before HTML5. It is often used together with for
 
 Note that when you send form content using Ajax, this attribute is not needed, as you will specify the type of data sent to the remote server in JavaScript, using the [FormData object](https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects).
 
-<h4>As an attribute of the <input type="submit" enctype=...> element</h4>
+<h4>As an attribute of the &lt;input type="submit" enctype=...&gt; element</h4>
 
 Since HTML5, this attribute can also be used in &lt;input type="submit"&gt; input fields.
 
@@ -18252,7 +18252,7 @@ HTML5 has introduced new input field properties: valueAsNumber and valueAsDa
 
 As input field values are considered as strings by JavaScript, using x.value = a.value + b.value would result in a string concatenation instead of an addition. That's why we use the valueAsNumber property.
 
-This is why we used the valueAsNumber property also introduced by HTML5 for some input fields such as <input type="range"> and <input type="number">, we also encountered the valueAsDate properties when we studied <input type="date">.
+This is why we used the valueAsNumber property also introduced by HTML5 for some input fields such as &lt;input type="range"&gt; and &lt;input type="number"&gt;, we also encountered the valueAsDate properties when we studied &lt;input type="date"&gt;.
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-6-3">5.6.3 &lt;meter&gt;</h3>
@@ -18323,7 +18323,7 @@ Grades:  
 &nbsp;
 <br/>
 <!--
-![The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the &lt;meter&gt; element (line 9) and update the displayed html content of the &lt;output&gt; element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
+![The link between the slider (an &lt;input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the &lt;meter&gt; element (line 9) and update the displayed html content of the &lt;output&gt; element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
 --->
 
 The link between the slider (an &lt;input type=range&gt;) and the meter element is done using an input event handler (oninput="effect(...)") at <i>line 4</i>.
@@ -18440,7 +18440,7 @@ The &lt;datalist&gt; form element is useful for linking a list of choices to a
 &nbsp;
 <br/>
 
-We have already seen this element in action with different &lt;input> elements, such as &lt;input type="color">, &lt;input type="date">, or &lt;input type="range">.
+We have already seen this element in action with different &lt;input&gt; elements, such as &lt;input type="color"&gt;, &lt;input type="date"&gt;, or &lt;input type="range"&gt;.
 
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 227.  (xx) ------------------------------->
@@ -18520,7 +18520,7 @@ As you can see at <i>lines 2 and 4</i>, the id and list attributes match.�
 
 In this section of the course, we will look at CSS pseudo classes that are useful for giving instant feedback when the user's input is not valid. We will also look at the new JavaScript API introduced by HTML5 for validating forms and form elements.
 
-In the following pages, we will first illustrate the concept of form validation with the &lt;input type="email"/> field. It can be generalized to all kind of input types, such as url, number, etc. Some form attributes, such as pattern,  will also affect input field validity!
+In the following pages, we will first illustrate the concept of form validation with the &lt;input type="email"/&gt; field. It can be generalized to all kind of input types, such as url, number, etc. Some form attributes, such as pattern,  will also affect input field validity!
 
 Form validation is [supported](https://caniuse.com/#feat=form-validation) by all modern browsers.
 
@@ -18530,7 +18530,7 @@ Form validation is [supported](https://caniuse.com/#feat=form-validation) by a
 
 Most modern browsers propose default behavior for validating input fields and forms.
 
-The built-in validation system that comes with HTML5 automatically adds a CSS pseudo class to all input fields. Invalid fields (i.e. a badly worded email address in an &lt;input type="email"> input field), will inherit the :invalid pseudo class, valid fields will inherit the :valid pseudo class.
+The built-in validation system that comes with HTML5 automatically adds a CSS pseudo class to all input fields. Invalid fields (i.e. a badly worded email address in an &lt;input type="email"&gt; input field), will inherit the :invalid pseudo class, valid fields will inherit the :valid pseudo class.
 
 A first step to improve your HTML form is to add some CSS rules to your input fields. This adds visual feedback to the validity of input fields values - while the user is typing - such as changing the color of the border of input fields, or green/red icons on the right of the field, as shown in the small picture at the top right of this page.
 
@@ -19990,11 +19990,11 @@ All this here is HTML5, this is canvas, these are form elements we saw the last 
 
 Imagine you have an input field like this:
 
-1.  Select one or more files: &lt;input type="file" id="input"/>
+1.  Select one or more files: &lt;input type="file" id="input"/&gt;
 
 This renders as a "select files" or "browse files" button. If you select one file in the file chooser dialog that has popped up, before HTML5 you couldn't do anything with it in the client-side: no access from JavaScript. With the File API, you can read what we call "file metadata": name, size, type and last modification date.
 
-Look at the code below: the file API defines a files property on the DOM node corresponding to the &lt;input type="file".../> input field. This property is an array.
+Look at the code below: the file API defines a files property on the DOM node corresponding to the &lt;input type="file".../&gt; input field. This property is an array.
 
 In the example below, we get in the selectedFile variable, the metadata related to the first selected file:
 
@@ -20060,7 +20060,7 @@ var selectedFile = document.getElementById('input').files[0];
 
 <h4>Example #2: display metadata of multiple files, use a filter on the file type</h4>
 
-This example is a bit more complicated, as it will display details about all files selected (not only the first) and allows only images to be selected, using the accept attribute of the input field: &lt;input type="file" accept="image/*".../>.
+This example is a bit more complicated, as it will display details about all files selected (not only the first) and allows only images to be selected, using the accept attribute of the input field: &lt;input type="file" accept="image/*".../&gt;.
 
 <a href="https://jsbin.com/deboja/edit?html,output">Example on JSBin</a>, or try it in your browser: click on the button, and select multiple image files. Notice that in the file selector, files that are not images will be greyed and non selectable.
 
@@ -20070,7 +20070,7 @@ This example is a bit more complicated, as it will display details about all fil
 
 <h4>Source code extract:</h4>
 
-Select several images: &lt;input type="file" accept="image/*" multiple onchange="filesProcess(this.files)" name="selection"/>
+Select several images: &lt;input type="file" accept="image/*" multiple onchange="filesProcess(this.files)" name="selection"/&gt;
 
 <details>
  <summary>Click to expand!</summary>
@@ -20160,7 +20160,7 @@ The file API proposes several methods for reading file content, each taken from 
 
 There are three different methods available for reading a file's content: readAsText, readAsArrayBuffer for binary data and also as readAsDataURL (the content will be a URL you will use to set the src field of an <img src=...>, &lt;audio&gt;, &lt;video&gt;, and also with all existing methods/properties that accept a URL).
 
-All these methods take as a unique parameter a File object (for example, a file chosen by a user after clicking on a &lt;input type=file> input field). Below, we use, as an example, the readAsText method:
+All these methods take as a unique parameter a File object (for example, a file chosen by a user after clicking on a &lt;input type=file&gt; input field). Below, we use, as an example, the readAsText method:
 
 <details>
  <summary>Click to expand!</summary>
@@ -20182,7 +20182,7 @@ function readFileContent(f) {
 
 </details>
 
-<p>The above code shows how a file can be read as text. The function is called, for example by clicking on the button corresponding to a &lt;input type="file" id="file"  onchange="readFileContent(this.files)"/>, and by choosing a file.</p>
+<p>The above code shows how a file can be read as text. The function is called, for example by clicking on the button corresponding to a &lt;input type="file" id="file"  onchange="readFileContent(this.files)"/&gt;, and by choosing a file.</p>
 <ul>
   <li><i>Line 12</i> is executed first, and asks the Reader object to read the file f as text. As this takes some time, it's an asynchronous operation that will be executed by the browser in the background. When the file is read, the reader.onload callback function is called.</li>
   <li><i>Line 4</i> is executed after <i>line 12</i>, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
