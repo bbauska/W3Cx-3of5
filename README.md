@@ -17287,7 +17287,6 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 |                                                                                     | - <b>formtarget</b>                    |
 |                                                                                     | - <b>formnovalidate</b>                |
 
-| ----------------------------------------------------------------------------------------------------------------------------- |
 | \*   pseudoclasses CSS target with :disabled and :checked or :required selectors                                              |
 | \**  align is deprecated, CSS rules should be used instead                                                                    |
 
