@@ -3305,6 +3305,7 @@ The machine readable part adds semantics that can be used by search engines for 
 <h4>Here are some examples:</h4>
 
 <h4>Different syntaxes of the datetime attribute</h4>
+<p align="center" width="100%">
 
 | datetime attribute values | Interpretation |
 | ------------------------- | -------------- |
@@ -3317,6 +3318,8 @@ The machine readable part adds semantics that can be used by search engines for 
 | &lt;time datetime="09:00%"&gt; | 9:00 in the morning, GMT |
 | &lt;time datetime="09:00-05"&gt; | 9:00 in the morning, GMT minus 5 hours |
 | &lt;time datetime="09:00+05:45"&gt; | 9:00 in the morning, GMT plus 5 hours 45 mins, (for example, Nepal is 5:45 ahead of GMT |
+
+</p>
 
 <h4>Duration values</h4>
 
@@ -4046,12 +4049,15 @@ Now, let's see what elements are compatible with the itemprop attribute and wh
 
 <h4>Elements that can be associated with microdata</h4>
 
+<p align="center" width="100%">
+
 | HTML5 elements | microdata value associated |
 | ---------------| ---------------------------|
 | &lt;a&gt;, &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt; element | The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person's photo and downloaded accordingly. |
 | &lt;time&gt; element | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
 | &lt;meta&gt; element | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
 | anything else | The data is whatever is in the text of the element. |
+</p>
 <p>
 For example, the value of a property defined in an &lt;img&gt; element will be the value of the src attribute:</p>
 
@@ -4858,6 +4864,8 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link
 
 We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete list</a> is much longer!
 
+<p align="center" width="100%">
+
 | <b>Methods</b> | <b>Properties</b>          | <b>Events</b>   |
 | -------------- | -------------------------- | --------------- |
 | <b>play()</b>  | <b>currentSrc</b>          | <b>play</b>     |
@@ -4877,6 +4885,7 @@ We provide this as a quick reminder - keep in mind that the <a href="https://ht
 |                | <b>seekable (readonly)</b> |                 |
 |                | <b>played (readonly)</b>   |                 |
 
+</p>
 <p>
 In the next pages, let's see, through a set of examples, how to use these most important properties, methods, and events...
 </p>
@@ -7082,6 +7091,8 @@ For that you will use <b>the dev. tools of your browser</b>. Press <i>F12</
 
 Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this example on JS Bin</a>:
 
+<p align="center" width="100%">
+
 | #  | html code                                                                                                                                                             |
 | -- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1  | &lt;!DOCTYPE html&gt;                                                                                                                                                 |
@@ -7097,6 +7108,8 @@ Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this examp
 | 11 | <[<b>h1</b>](https://december.com/html/4/element/h1.html)>JavaScript debugging using the dev tool console</[<b>h1<b>](https://december.com/html/4/element/h1.html)>   |
 | 12 | </[<b>body</b>](https://december.com/html/4/element/body.html)>                                                                                                       |
 | 13 | </[<b>html</b>](https://december.com/html/4/element/html.html)>                                                                                                       |
+
+</p>
 
 The simplest way to add JavaScript code in an HTML page, is by using the &lt;script&gt;...&lt;/script&gt; element.
 
@@ -9093,6 +9106,7 @@ context.fillText("bottom-glyph", 400, 75);
 The example above shows the different possible values for this property and the corresponding results. The default value is "alphabetic" and corresponds to what has been used in the previous "Hello World" example.
 
 <h3>Possible values for the textbaseline property:</h3>
+<p align="center" width="100%">
 
 | textBaseline property                           | Description                                                                                               |
 | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -9102,6 +9116,8 @@ The example above shows the different possible values for this property and the 
 | alphabetic                                      | The bottom of vertically oriented glyphs, e.g. western alphabet like the Latin.                           |
 | ideographic                                     | The bottom of horizontally oriented glyphs.                                                               |
 | bottom                                          | The text is aligned based on the bottom of the glyph in the text, that extends furthest down in the text. |
+
+</p>
 
 Typical use (taken from the example above):
 
@@ -17248,29 +17264,34 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
   <li>From CSS{Portal}, a CSS generator help you style the html input range tag, very easy to use: <a href="https://www.cssportal.com/style-input-range/">Style Input Range</a></li>
 </ul>
 
+<p align="center" width="100%">
+
 | <h3>HTML4</h3>                                                                      | <h3>HTML5</h3>                           |
 | ----------------------------------------------------------------------------------- | ---------------------------------------- |
-| -   <b>name</b>                                                                     | -   <b>form</b>                          |
-| -   <b><i>disabled ^ </i></b>                                                          | -   <b>readonly</b>                      |
-| -   <b>type</b>                                                                     | -   <b>autocomplete</b>                  |
-| -   <b>maxlength</b>                                                                | -   <b>autofocus</b>                     |
-| -   <b>readonly</b>                                                                 | -   <b>list</b>                          |
-| -   <b>size</b>                                                                     | -   <b>pattern</b>                       |
-| -   <b>value</b>                                                                    | -   <b><i>required ^</i></b>               |
-| -   <b>alt</b>                                                                      | -   <b>placeholder</b>                   |
-| -   <b>src</b>                                                                      | -   <b>multiple</b>                      |
-| -   <b>height</b>                                                                   | -   <b>list</b>                          |
-| -   <b>width</b>                                                                    | -   <b>min</b>                           |
-| -   <b><i>checked ^</i></b>                                                           | -   <b>max</b>                           |
-| -   <b><i>align ^^</i></b>                                                             | -   <b>step</b>                          |
-|                                                                                     | -   <b>formaction</b>                    |
-|                                                                                     | -   <b>formenctype</b>                   |
-|                                                                                     | -   <b>formmethod</b>                    |
-|                                                                                     | -   <b>formtarget</b>                    |
-|                                                                                     | -   <b>formnovalidate</b>                |
+| - <b>name</b>                                                                       | - <b>form</b>                          |
+| - <b><i>disabled</i></b>\*                                                          | - <b>readonly</b>                      |
+| - <b>type</b>                                                                       | - <b>autocomplete</b>                  |
+| - <b>maxlength</b>                                                                  | - <b>autofocus</b>                     |
+| - <b>readonly</b>                                                                   | - <b>list</b>                          |
+| - <b>size</b>                                                                       | - <b>pattern</b>                       |
+| - <b>value</b>                                                                      | - <b><i>required</i></b>\*               |
+| - <b>alt</b>                                                                        | - <b>placeholder</b>                   |
+| - <b>src</b>                                                                        | - <b>multiple</b>                      |
+| - <b>height</b>                                                                     | - <b>list</b>                          |
+| - <b>width</b>                                                                      | - <b>min</b>                           |
+| - <b><i>checked</i></b>\*                                                           | - <b>max</b>                           |
+| - <b><i>align</i></b>\**                                                            | - <b>step</b>                          |
+|                                                                                     | - <b>formaction</b>                    |
+|                                                                                     | - <b>formenctype</b>                   |
+|                                                                                     | - <b>formmethod</b>                    |
+|                                                                                     | - <b>formtarget</b>                    |
+|                                                                                     | - <b>formnovalidate</b>                |
 
-| ^   pseudoclasses CSS target with :disabled and :checked or :required selectors     |                                          |
-| ^^  align is deprecated, CSS rules should be used instead                           |                                          |
+| ----------------------------------------------------------------------------------------------------------------------------- |
+| \*   pseudoclasses CSS target with :disabled and :checked or :required selectors                                              |
+| \**  align is deprecated, CSS rules should be used instead                                                                    |
+
+</p>
 
 <ul>
   <li>MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">&lt;input type=range&gt;</a></li>
@@ -18141,19 +18162,24 @@ And if you start again and click on the left submit button, the one without the 
 
 Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&gt;, &lt;output&gt;, &lt;meter&gt;  and &lt;progress&gt; elements).
 
-| HTML4        | HTML5        |
-|--------------|--------------|
-| - &lt;form&gt;     | - &lt;datalist&gt; |
-| - &lt;fieldset&gt; | - &lt;output&gt;   |
-| - &lt;legend&gt;   | - &lt;meter&gt;    |
-| - &lt;textarea&gt; | - &lt;progress&gt; |
-| - &lt;label&gt;    | - &lt;keygen&gt;   |
-| - &lt;select&gt;   |              |
-| - &lt;option&gt;   |              |
-| - &lt;optgroup&gt; |              |
-| - &lt;input&gt;    |              |
-| - &lt;button&gt;   |              |
+<p align="center" width="100%">
+
+| :HTML4             | :HTML5               |
+| ------------------ | -------------------- |
+| - &lt;form&gt;     | - &lt;datalist&gt;   |
+| - &lt;fieldset&gt; | - &lt;output&gt;     |
+| - &lt;legend&gt;   | - &lt;meter&gt;      |
+| - &lt;textarea&gt; | - &lt;progress&gt;   |
+| - &lt;label&gt;    | - &lt;keygen&gt; *   |
+| - &lt;select&gt;   |                      |
+| - &lt;option&gt;   |                      |
+| - &lt;optgroup&gt; |                      |
+| - &lt;input&gt;    |                      |
+| - &lt;button&gt;   |                      |
+|                                           |
 | * Not really useful for most developers.  |
+
+</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-6-2">5.6.2 &lt;output&gt;</h3>
@@ -20076,9 +20102,9 @@ Select several images: &lt;input type="file" accept="image/*" multiple onch
 
 <ul>
   <li><i>Line1:</i> we used the multiple attribute to allow the selection of multiple files in the file chooser (using shift or control keys). The accept="image/"  attribute is a filter that restricts selection to images only. Finally, the onchange listener will call the filesProcess(...) function, passing as parameter the list of selected files for the current element (this.files).</li><br/>
-  <li><i>Lines 7 and 12:</i> we prepare the HTML code for building a <table> with the results.</li><br/>
+  <li><i>Lines 7 and 12:</i> we prepare the HTML code for building a &lt;table&gt; with the results.</li><br/>
   <li><i>Line 10:</i> this for loop builds all the rows that compose the table, adding HTML code to the selection string variable. At the end of the loop, this variable contains all the HTML code that corresponds to the table of results.</li><br/>
-  <li><i>Line 18:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the <div id="result"> in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically.</li><br/>
+  <li><i>Line 18:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the &lt;div id="result"&gt; in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically.</li><br/>
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
