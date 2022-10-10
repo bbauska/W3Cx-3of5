@@ -17079,7 +17079,7 @@ Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid):�
 <p align="center" width="100%">
 <img src="./images/image258.jpeg?raw=true"
    width="50%"
-   alt="zipper with funny label input type=range" />
+   alt="zipper with funny label input type=range." />
 </p>
 
 This input type renders as a slider. It accepts the same attributes as the &lt;input type="number"&gt; : min, max, step and value.
@@ -18730,18 +18730,9 @@ There is a JavaScript API for form validation. This API will let you use your ow
 
 <h4>Typical use</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center">
-<img src="https://jsbin.com/hovato/1/edit?html,output"
-   width="35%"
-   alt="Example of password checking at JSBin." />
-&nbsp;
-<br/>
-be careful to try this example in JS Bin standalone mode (click the small black arrow on the top right of the output tab).
+Be careful when you try this example in JS Bin standalone mode (click the small black arrow on the top right of the output tab).
 
-Or you may try it here in your browser:
+Or, you may try it <a href="https://jsbin.com/nalaxeg/1/edit?html,output">here</a> in your browser.
 
 <!---
 Top of Form
