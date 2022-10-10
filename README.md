@@ -17251,26 +17251,26 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 | <h3>HTML4</h3>                                                                      | <h3>HTML5</h3>                           |
 | ----------------------------------------------------------------------------------- | ---------------------------------------- |
 | -   <b>name</b>                                                                     | -   <b>form</b>                          |
-| -   <b><i>disabled</i></b>                                                          | -   <b>readonly</b>                      |
+| -   <b><i>disabled ^ </i></b>                                                          | -   <b>readonly</b>                      |
 | -   <b>type</b>                                                                     | -   <b>autocomplete</b>                  |
 | -   <b>maxlength</b>                                                                | -   <b>autofocus</b>                     |
 | -   <b>readonly</b>                                                                 | -   <b>list</b>                          |
 | -   <b>size</b>                                                                     | -   <b>pattern</b>                       |
-| -   <b>value</b>                                                                    | -   <b><i>required</i></b>               |
+| -   <b>value</b>                                                                    | -   <b><i>required ^</i></b>               |
 | -   <b>alt</b>                                                                      | -   <b>placeholder</b>                   |
 | -   <b>src</b>                                                                      | -   <b>multiple</b>                      |
 | -   <b>height</b>                                                                   | -   <b>list</b>                          |
 | -   <b>width</b>                                                                    | -   <b>min</b>                           |
-| -   <b><i>checked</i></b>                                                           | -   <b>max</b>                           |
-| -   <b><i>align</i></b>                                                             | -   <b>step</b>                          |
+| -   <b><i>checked ^</i></b>                                                           | -   <b>max</b>                           |
+| -   <b><i>align ^^</i></b>                                                             | -   <b>step</b>                          |
 |                                                                                     | -   <b>formaction</b>                    |
 |                                                                                     | -   <b>formenctype</b>                   |
 |                                                                                     | -   <b>formmethod</b>                    |
 |                                                                                     | -   <b>formtarget</b>                    |
 |                                                                                     | -   <b>formnovalidate</b>                |
 
-| *   pseudoclasses CSS target with :disabled and :checked or :required selectors     |                                          |
-| **  align is deprecated, CSS rules should be used instead                           |                                          |
+| ^   pseudoclasses CSS target with :disabled and :checked or :required selectors     |                                          |
+| ^^  align is deprecated, CSS rules should be used instead                           |                                          |
 
 <ul>
   <li>MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">&lt;input type=range&gt;</a></li>
@@ -18141,41 +18141,39 @@ And if you start again and click on the left submit button, the one without the 
 
 Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&gt;, &lt;output&gt;, &lt;meter&gt;  and &lt;progress&gt; elements).
 
-| HTML4                                     | HTML5                         |
-| ----------------------------------------- | ----------------------------- |
-| -   &lt;form&gt;                          | -   &lt;datalist&gt;          |
-| -   &lt;fieldset&gt;                      | -   &lt;output&gt;            |
-| -   &lt;legend&gt;                        | -   &lt;meter&gt;             |
-| -   &lt;textarea&gt;                      | -   &lt;progress&gt;          |
-| -   &lt;label&gt;                         | -   &lt;keygen&gt; *          |
-| -   &lt;select&gt;                        |                               |
-| -   &lt;option&gt;                        |                               |
-| -   &lt;optgroup&gt;                      |                               |
-| -   &lt;input&gt;                         |                               |
-| -   &lt;button&gt;                        |                               |
-| ----------------------------------------- | ----------------------------- |
-| * Not really useful for most developers.  |                               |
-| ------------------------------------------------------------------------- |
+| HTML4        | HTML5        |
+|--------------|--------------|
+| - <form>     | - <datalist> |
+| - <fieldset> | - <output>   |
+| - <legend>   | - <meter>    |
+| - <textarea> | - <progress> |
+| - <label>    | - <keygen>   |
+| - <select>   |              |
+| - <option>   |              |
+| - <optgroup> |              |
+| - <input>    |              |
+| - <button>   |              |
+| * Not really useful for most developers.  |
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-6-2">5.6.2 &lt;output&gt;</h3>
 <!------------------------------------------------------------------------------------------------>
 
-The output element represents the result of a computation or user action. You can see it as a "specialized &lt;div&gt; or <span>" for displaying interactive results.
+The output element represents the result of a computation or user action. You can see it as a "specialized &lt;div&gt; or &lt;span&gt;" for displaying interactive results.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 279.  (xx) ------------------------------->
+<!----------------------------------- 279. output field (337) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image279.jpeg?raw=true"
-   alt="Example of output element use."
-   width="35%">
+   width="35%"
+   alt="Example of output element use." />
 &nbsp;
 <br/>
 
 Typical use / interactive examples
 
-[Do not hesitate to play with the source code of these examples online at JSBin](https://jsbin.com/yuvani/1/edit?html,output).
+<a href="https://jsbin.com/yuvani/1/edit?html,output">Do not hesitate to play with the source code of these examples online at JSBin</a>.
 
 <h4>Example #1</h4>
 
@@ -18191,9 +18189,11 @@ The oninput event handler directly uses the &lt;output&gt; element using the
 
 Result (do change the input field values):
 
+<!--
 Top of Form
 
  x  = 6
+--->
 
 Explanations about the attributes specific to the &lt;output&gt; element:
 
@@ -18236,15 +18236,15 @@ This is why we used the valueAsNumber property also introduced by HTML5 for so
 
 The &lt;meter&gt; element displays colored bars to represent numeric values.
 
-It can be useful to display a colored gauge to show disk usage, to highlight the relevance of a query result, or the fraction of a voting population that favours a particular candidate, etc. This element is often used with the <input type="range"> field as an instant feedback indicator.
+It can be useful to display a colored gauge to show disk usage, to highlight the relevance of a query result, or the fraction of a voting population that favours a particular candidate, etc. This element is often used with the &lt;input type="range"&gt; field as an instant feedback indicator.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 280.  (xx) ------------------------------->
+<!---------------------------------- 280. blood pressure (338) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image280.jpeg?raw=true"
-   alt=""
-   width="50%">
+   width="50%"
+   alt="Blood pressure meter gauge." />
 &nbsp;
 <br/>
 
@@ -18289,7 +18289,18 @@ Grades:  
 
 <h4>Explanations:</h4>
 
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 281. slider example javascript code (339) --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image281.jpeg?raw=true"
+   width="65%"
+   alt="The link between the slider (an &lt;input type=range&gt;) and the meter element is done using an input event handler." />
+&nbsp;
+<br/>
+<!--
 ![The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the &lt;meter&gt; element (line 9) and update the displayed html content of the &lt;output&gt; element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
+--->
 
 The link between the slider (an &lt;input type=range&gt;) and the meter element is done using an input event handler (oninput="effect(...)") at <i>line 4</i>.
 
