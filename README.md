@@ -4048,7 +4048,7 @@ Now, let's see what elements are compatible with the itemprop attribute and wh
 
 | HTML5 elements | microdata value associated |
 | ---------------| ---------------------------|
-| &lt;a&gt;; &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt; element | The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person's photo and downloaded accordingly. |
+| &lt;a&gt;, &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt; element | The data is the url in the element's href, src, or data attribute, as appropriate. For example, an image element inside a container of personal contact information can be recognized as that person's photo and downloaded accordingly. |
 | &lt;time&gt; element | The data is the time in the element's datetime attribute. This lets you, for example, just say "last week" in your text content but still indicate exact date and time. |
 | &lt;meta&gt; element | The data is whatever appears in the content attribute of the &lt;meta&gt; element. This is used when you need to include some data that isn't actually in the text of your page. |
 | anything else | The data is whatever is in the text of the element. |
@@ -4493,8 +4493,8 @@ See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example onlin
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image071.png?raw=true"
-   alt="Example using pseudo css class: hover"
-   width="60%">
+   width="60%"
+   alt="Tilted screen example using pseudo css class: hover." />
 &nbsp;
 <br/>
 <p>
@@ -4541,12 +4541,12 @@ Example #1: with a regular video
 Full width, resizable, borderless video, just using plain CSS and JS DOM events.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 72. full width video like paypal site (97) --------------------------->
+<!------------------------- 72. full width video like paypal site (89) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image072.png?raw=true"
-   alt=""
-   width="65%">
+   width="65%"
+   alt="Full width video like paypal site." />
 &nbsp;
 <br/>
 
@@ -4613,12 +4613,12 @@ function init() {
 Full width, resizable, borderless YouTube video. To do this: just 100% standard CSS + DOM manipulation using JavaScript.
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 73. example video cropping (xx) ------------------------------->
+<!------------------------------ 73. example video cropping (90) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image073.png?raw=true"
-   alt="Example video cropping."
-   width="50%">
+   width="50%"
+   alt="Example video cropping." />
 &nbsp;
 <br/>
 <p>
@@ -4632,12 +4632,12 @@ In this example, the video does not rescale; it's just cropped if the browser wi
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 74.  (xx) ------------------------------->
+<!--------------------------------- 74. full screen video (90) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image074.png?raw=true"
-   alt=""
-   width="50%">
+   width="50%"
+   alt="Full screen video." />
 &nbsp;
 <br/>
 
@@ -4736,12 +4736,12 @@ the video is in the header, and the header has a plotted transparent background 
 Full screen video that resizes and keeps its ratio, using the viewport units.
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 75.  (xx) ------------------------------->
+<!------------------------- 75. full screen using viweport units (92) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image075.png?raw=true"
-   alt=""
-   width="65%">
+   width="65%"
+   alt="Full screen video that resized and keeps its ratio using viewport units." />
 &nbsp;
 <br/>
 <p>
@@ -4816,12 +4816,12 @@ This will create a complete video player for the file "video.mp4", with control 
 Please look at this interesting example:
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 76.  (xx) ------------------------------->
+<!---------------------- 76. how to call play/pause/rewind functions (94) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image076.png?raw=true"
-   alt=""
-   width="65%">
+   width="65%"
+   alt="How to call the play/pause/rewind functions." />
 &nbsp;
 <br/>
 <p>
@@ -4849,8 +4849,8 @@ Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image077.png?raw=true"
-   alt="HTML5 video events and API."
-   width="65%">
+   width="65%"
+   alt="HTML5 video events and API." />
 &nbsp;
 <br/>
 
@@ -4900,17 +4900,17 @@ This example gives the first steps towards writing a custom video player. It sho
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image078.png?raw=true"
-   alt="This example gives the first steps towards writing a custom video player."
-   width="85%" />
+  width="85%"
+  alt="This example gives the first steps towards writing a custom video player." />
 &nbsp;
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 79. example of custom controls (97) ------------------------------>
+<!--------------------------- 79. cartoon image, custom controls (97) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image079.png?raw=true"
-   alt="Example of custom controls."
-   width="45%" />
+  width="45%"
+  alt="Example of custom controls." />
 &nbsp;
 
 <h4>Source code extract:</h4>
@@ -5561,8 +5561,8 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image089.png?raw=true"
-   alt="Youtube make subtitles."
-   width="60%">
+   width="60%"
+   alt="Youtube make subtitles." />
 &nbsp;
 <br/>
 
@@ -5574,8 +5574,8 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image090.png?raw=true"
-   alt="Example guitar picking subtitle captions."
-   width="40%">
+   width="40%"
+   alt="Example guitar picking subtitle captions." />
 &nbsp;
 <br/>
 
@@ -5591,8 +5591,8 @@ The example below shows how we can do that (play the video for 40s, look at the 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image091.png?raw=true"
-   alt="Blank codepen."
-   width="60%">
+   width="60%"
+   alt="Blank codepen." />
 &nbsp;
 <br/>
 
@@ -5665,8 +5665,8 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image092.png?raw=true"
-   alt="Example video: positioning subtitles."
-   width="65%">
+   width="65%"
+   alt="Example video: positioning subtitles." />
 &nbsp;
 <br/>
 
@@ -5697,8 +5697,8 @@ It is possible to locate the cues in the video viewport using absolute or relati
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image093.png?raw=true"
-   alt=""
-   width="65%">
+   width="65%"
+   alt="" />
 &nbsp;
 <br/>
 
@@ -5716,8 +5716,8 @@ It is possible to style using CSS classes as part of a cue value, using the <c
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image094.jpeg?raw=true"
-   alt="Snaphot of a video frame showing a cue containing the class 'myclass'. Browsers that support ::cue CSS should make it red"
-   width="65%">
+   width="65%"
+   alt="Snaphot of a video frame showing a cue containing the class 'myclass'. Browsers that support ::cue CSS should make it red." />
 &nbsp;
 <br/>
 
@@ -5744,8 +5744,8 @@ Here is an example that shows the voices of the different characters displayed w
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image095.png?raw=true"
-   alt=""
-   width="65%">
+   width="65%"
+   alt="" />
 &nbsp;
 <br/>
 
@@ -5825,8 +5825,8 @@ An example of what you can achieve using chapters, using the <a href="https://w
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image096.png?raw=true"
-   alt="Using the JW player."
-   width="65%">
+   width="65%"
+   alt="Using the JW player." />
 &nbsp;
 <br/>
 
@@ -5868,8 +5868,8 @@ Most "complex" HTML elements like forms, audio or video players, come with a Jav
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image097.jpeg?raw=true"
-   alt="navigation menu using the track javascript api"
-   width="65%">
+   width="65%"
+   alt="Navigation menu using the track JavaScript API." />
 &nbsp;
 <br/>
 
@@ -5877,12 +5877,12 @@ Most "complex" HTML elements like forms, audio or video players, come with a Jav
 
 Check <a href="https://simpl.info/track/map/index.html">this demo</a> (only on Chrome) by <a href="https://samdutton.com/">Sam Dutton</a>: it shows a video that comes with a WebVTT file that contains longitudes and latitudes. When the video plays, JavaScript functions are called at given times and get the longitude and latitude. A Google Map and a Google Street views are updated in real time.
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 98. video sync with map and street views (117) ------------------------------->
+<!----------------------- 98. video sync with map and street views (117) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image098.jpeg?raw=true"
-   alt="Video sync with map and street views."
-   width="65%">
+   width="65%"
+   alt="Video sync with map and street views." />
 &nbsp;
 <br/>
 
@@ -5896,8 +5896,8 @@ Some JavaScript code listens to the ontimeupdate event while the video is play
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image099.png?raw=true"
-   alt="We render in real time guitar pro tablatures using the alphatab.net library."
-   width="55%">
+   width="55%"
+   alt="We render in real time guitar pro tablatures using the alphatab.net library." />
 &nbsp;
 <br/>
 
@@ -5972,8 +5972,8 @@ Scrub Bar thumbnails (JWPlayer)
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image101.jpeg?raw=true"
-   alt="Scrub bar thumbnails."
-   width="45%">
+   width="45%"
+   alt="Scrub bar thumbnails." />
 &nbsp;
 <br/>
 
@@ -11061,12 +11061,12 @@ In this example, each call to ctx.arcTo(...) draws a side plus a corner. This 
 
 This example at JS Bin is the same as the previous one, except that we added at the end of the roundedRect function the same lines of code that draw the rounded rectangle, but using lineTo instead of arcTo. Just take a look!
 <!------------------------------------------------------------------------------------------------>
-<!----------------------- 155. comparison between arcto and lineto (xxx) ------------------------->
+<!----------------------- 155. comparison between arcto and lineto (212) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image155.png?raw=true"
-   alt="image155.png"
-   width="65%">
+   width="65%"
+   alt="Comparison between lineTo and arcTo." />
 &nbsp;
 <br/>
 
@@ -11706,8 +11706,8 @@ Note how the different parts are linked together and make a "path":
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image165.png?raw=true"
-   alt="Interactive code that draws Bezier curves."
-   width="85%">
+   width="85%"
+   alt="Interactive code that draws Bezier curves." />
 &nbsp;
 <br/>
 
@@ -19157,7 +19157,7 @@ Once opened in your browser, the JavaScript code is executed. With the browser d
 <p>Here is a view of the devtools. In more recent versions of Google Chrome, the "Resources" tab is named "Applications":</p>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 298. view of the devtools (355) ------------------------------->
+<!------------------------------- 298. view of the devtools (355) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image298.jpeg?raw=true"
@@ -19203,7 +19203,17 @@ oninput="localStorage.firstName=this.value;"
 
 Where firstName in red is the key and this.value the current value of the input field.
 
-![As we are filing a form text input type, its content is saved in local storage. The image shows the httml coe of the input type, that as a oninput='localStorage.firstName = this.value". Devtools are open on the "Applications" tab and show the LocalStorage content. It has the same value as what has been typed in the form firstName field.](./images/image299.jpeg){width="6.5in" height="3.7506944444444446in"}
+<!------------------------------------------------------------------------------------------------>
+<!------------------------ 299. example localstorage and html code (355) ------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image299.jpeg?raw=true"
+   width="65%"
+   alt="Example of localStorage and its html code." />
+&nbsp;
+<!--
+![As we are filing a form text input type, its content is saved in local storage. The image shows the httml code of the input type, that as a oninput='localStorage.firstName = this.value". Devtools are open on the "Applications" tab and show the LocalStorage content. It has the same value as what has been typed in the form firstName field.](./images/image299.jpeg){width="6.5in" height="3.7506944444444446in"}
+-->
 
 In the same way, we added an input listener to all the input fields in this example's form.
 
@@ -19307,12 +19317,12 @@ Local stores (localStorage or sessionStorage) can also be iterated through in 
 Students may note that something seems a bit off in the example above: instead of calling localStorage.getItem(k), we simply access localStorage[k]. Why? Because keys in the local store can also be accessed as if the store were a simple JavaScript object. So instead of localStorage.getItem("foo") and localStorage.setItem("foo", "bar"), one can write localStorage.foo and localStorage.foo = "bar". Of course there are limitations to this mapping: any string can serve as a key, so that localStorage.getItem("one two three") works, whereas that string would not be a valid identifier after the dot (but it could still work as localStorage["one two three"]).
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 300.  (xx) ------------------------------->
+<!------------------ 300. number of times this page has shown on browser (359) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image300.jpeg?raw=true"
    width="40%"
-   alt="example with buttons that shown how to iterate on localStorage, clear it etc." />
+   alt="Example with buttons that show how to iterate on localStorage, clear it etc." />
 &nbsp;
 <br/>
 
@@ -19406,7 +19416,7 @@ You can check in the Chrome dev. tools user interface that the content of the l
 Local stores are also useful for<b> saving/restoring user preferences</b> of Web Applications. For example, the JS Bin tool you have been using since the beginning of this course uses localStorage to store the list of tabs you open, and their width:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
+<!------------------ 301. example user preferences of web applications (361) --------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image301.jpeg?raw=true"
@@ -19420,7 +19430,7 @@ This way, the next time you come back to JSBin, "it will remember your last sett
 Another example is a guitar FX processor / amp simulator your instructor is writing with some of his students. It uses localStorage to save/restore presets values:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 302.  (xx) ------------------------------->
+<!----------------- 302. another example of localstorage of preset values (362) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image302.jpeg?raw=true"
@@ -19432,18 +19442,18 @@ Another example is a guitar FX processor / amp simulator your instructor is writ
 <h4>Save/restore preferences</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 303. animate rectangle with gui (xx) ------------------------------->
+<!------------- 303. change color, size, speed of animate rectangle with gui (362) --------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image303.jpeg?raw=true"
    width="35%"
-   alt="Animated Rectangle with GUI." />
+   alt="Change color, size and speed of animated rectangle with GUI." />
 &nbsp;
 <br/>
 
 Original example on JSBin:
 
-we can change the color, size and speed of the animated rectangle. However, each time we come back to the page, default values are restored.
+We can change the color, size and speed of the animated rectangle. However, each time we come back to the page, default values are restored.
 
 We would like to save the current values and find them back as they were when we come back to the page.
 
@@ -19637,12 +19647,12 @@ localStorage.setItem(key, JSON.stringify(object));
 Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,console,output">online at JSBin</a>).  The example below saves a JavaScript object in JSON, then restores it and checks that the object properties are still there!
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------- 304. json save/load in local storage (366) --------------------------->
+<!------------------------- 304. json save/load in local storage (367) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image304.png?raw=true"
-   alt="JSON Save/Load in local storage"
-   width="65%">
+   width="65%"
+   alt="JSON Save/Load in local storage." />
 &nbsp;
 <br/>
 
@@ -19691,12 +19701,12 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 <a href="https://jsbin.com/nejewiw/2/edit?html,js,console,output">Online example on JSBin that saves in localStorage an array of contacts in JSON</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 305. local storage json (xx) ------------------------------->
+<!--------------------------- 305. save local storage in json (368) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image305.png?raw=true"
    width="65%"
-   alt="localStorage JSON." />
+   alt="How to save a form's content in localStorage using JSON." />
 &nbsp;
 <br/>
 
@@ -19707,7 +19717,7 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 Add contacts using the form, see how the HTML table is updated. Try to reload the page: data are persisted in localStorage. 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 306. serverless contact manager (xx) ------------------------------->
+<!---------------------------- 306. serverless contact manager (369) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image306.jpeg?raw=true"
@@ -19719,7 +19729,7 @@ Add contacts using the form, see how the HTML table is updated. Try to reload th
 Examine the localStorage:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------- 307. localStorage view in devtools shows the data (xxx) -------------------->
+<!------------------- 307. localStorage view in devtools shows the data (369) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image307.png?raw=true"
@@ -19743,7 +19753,7 @@ It shows how to use the DOM API for dynamically updating the page content (build
 The objective of this chapter is to provide an overview of the File API.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 308. sound sample editor serverless (xxx) ----------------------------->
+<!-------------------------- 308. sound sample editor serverless (370) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image308.jpeg?raw=true"
@@ -19758,7 +19768,7 @@ Possible actions were limited, both for the developer and the user. However, HT
 Imagine a multimedia player that accesses (in read-only) your file system, reads your audio and video files, etc., such as the [Remo Music player](https://chrome.google.com/webstore/detail/remo-music-player/ajilpdcmebalpffmjjopcingplogifhb) below, or an application that edits the audio content of local mp3 files, for example, the [HYA-WAVE sound editor](https://wav.hya.io/#/fx) (screenshot above).
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 309. audio player that plays local files (xxx) ----------------------------->
+<!----------------------- 309. audio player that plays local files (370) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image309.jpeg?raw=true"
@@ -19767,7 +19777,7 @@ Imagine a multimedia player that accesses (in read-only) your file system, reads
 &nbsp;
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 310. polarr photo editor uses the File API (xxx) ----------------------------->
+<!---------------------- 310. polarr photo editor uses the File API (371) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image310.jpeg?raw=true"
@@ -19791,11 +19801,12 @@ Hi! Welcome for this second video of module 6, in which we will talk about the f
 
 This is an API that has been designed for working with files on the client side in Javascript.
 
-Before HTML5, there was no mean to know the the size, the name, the modification date of a file without sending it to a remote server. It was not possible also to read the content of a file, for example for previewing an image before uploading it into a remote server, or if you wanted to play a local audio file, or a video file without streaming and downloading it from a remote server. It was not possible.
+Before HTML5, there was no mean to know the the size, the name, the modification date of a file without sending it to a remote server. 
+It was not possible also to read the content of a file, for example for previewing an image before uploading it into a remote server, or if you wanted to play a local audio file, or a video file without streaming and downloading it from a remote server. It was not possible.
 
-I'm going first to show you some example of server less applications. I mean applications
+I'm going first to show you some example of server less applications. 
 
-written using HTML, CSS and Javascript that do not rely on data located on a remote server.
+I mean applications written using HTML, CSS and Javascript that do not rely on data located on a remote server.
 
 For example, I can show you this. This is a wave. This is an audio file editor that works with local files. I open the page, and from here I can drop a music file directly. Let's go to get some music somewhere. Some AC/DC song! I can just drop the song and I can edit the song. I can play the song. I can cut, I can save locally, etc.
 
@@ -19813,13 +19824,19 @@ All these examples work with local files. Let's go back to the course and now I'
 
 Select several files, open, and look at the preview directly in the page.
 
-So, here, I just read the files using the File API, I read them as what we call data URL and I created some img elements we added in the page.
+Here, I just read the files using the File API, I read them as what we call data URL and I created some img elements we added in the page.
 
 First, before writing the application, I want to talk a little bit about data URLs.
 
-So data URLs are strange set of characters like that ,and if you select them and paste them in the address bar you can see a small red icon. And you can use this everywhere where you would have use an http://URL. So if I use this image here, I can using it in JSBin for example, and if I add the image here I can see that the content of the image, the pixels, are encoded in the URL itself. How can you make such URLs? You've got plenty of Web sites, look for data URL with a search engine and you've got plenty of them.
+So data URLs are strange set of characters like that ,and if you select them and paste them in the address bar you can see a small red icon. 
+And you can use this everywhere where you would have use an http://URL. 
 
-The first one here is called DATAURL.net and it included 'Data URL Maker' so you can just open a file, any sort of file, here I take a JPG file and it will produce the data URL that corresponds. But you can also use with mp3 file, or mp4 file video or any sort of file encoding. This was to introduce this new sort of URL that maybe you've never heard about before. Now, how can we write this?
+If I use this image here, I can using it in JSBin for example, and if I add the image here I can see that the content of the image, the pixels, are encoded in the URL itself.
+How can you make such URLs? You've got plenty of Web sites, look for data URL with a search engine and you've got plenty of them.
+
+The first one here is called DATAURL.net and it included 'Data URL Maker' so you can just open a file, any sort of file, here I take a JPG file and it will produce the data URL that corresponds. But you can also use with mp3 file, or mp4 file video or any sort of file encoding. 
+
+This was to introduce this new sort of URL that maybe you've never heard about before. Now, how can we write this?
 
 I'm going to explain with the source code here because it's simpler.
 
@@ -19839,11 +19856,15 @@ I'm going to live code this one, maybe a simpler version so that you can see the
 
 And I'm going to pass the set of file descriptors that have been selected: 'this.files' is the correct way to send the selected files to a Javascript function.
 
-Now, I'm going to start writing some script. But before, I will add a space, let's say
+Now, I'm going to start writing some script. But before, I will add a space, let's say 'div id=thumbnails'. 
 
-'div id=thumbnails'. This is an empty container that will be used for inserting the preview of the images. Now I'm going in the script part. In the script part, we're going to write this function 'readImagesAndPreview()' and it takes as parameter the files that will be sent. And here if I want just to read the first file I will just show you how it works. I create a reader object, like that, and I ask
+This is an empty container that will be used for inserting the preview of the images. 
 
-the reader to 'readAsDataURL' the first file. What is happening is that this may take some time and I need to declare, before reading the files, a callback that will be code only once the file would have been read - 'reader.onload'
+Now I'm going in the script part. In the script part, we're going to write this function 'readImagesAndPreview()' and it takes as parameter the files that will be sent. 
+
+And here if I want just to read the first file I will just show you how it works. I create a reader object, like that, and I ask the reader to 'readAsDataURL' the first file. 
+
+What is happening is that this may take some time and I need to declare, before reading the files, a callback that will be code only once the file would have been read - 'reader.onload'
 
 And here, what can I do with the file that has been read, I will create an image element.
 
@@ -19857,29 +19878,39 @@ If you look carefully, it's just a few lines of code.
 
 So now I'm going to show you how we could work with not only one single image, but several images. The trick consists in adding a 'for' loop.
 
-We will iterate on the length of the file's variable here. If we got 3 files, we do 3
+We will iterate on the length of the file's variable here. If we got 3 files, we do 3 loops. 
+I'm going to define a variable called 'f' that will correspond to the current file. 
 
-loops. I'm going to define a variable called 'f' that will correspond to the current file. What we are going to read this time is the current file 'f'. So this loop here, will first read files, for each one we do read as data URL, when the file is read we enter the onload callback, we create an image with the result. I'm going just to add some constraints on the size, because when I tried earlier I had big images that could not fit on the screen.
+What we are going to read this time is the current file 'f'. 
+
+So this loop here, will first read files, for each one we do read as data URL, when the file is read we enter the onload callback, we create an image with the result. 
+
+I'm going just to add some constraints on the size, because when I tried earlier I had big images that could not fit on the screen.
 
 I constraint the width to 100px and the height will just follow.
 
 Like this, let's try. If I select several pictures, two of them,
 
-I can see the two pictures. If I select more, then I can see the whole set of pictures that are coming as previews. You can see that the number of lines of code is really small and this is quiet powerful. So if you want to write for example a Web site that will upload pictures, you can preview them, select them and then upload them.
+I can see the two pictures. If I select more, then I can see the whole set of pictures that are coming as previews. 
 
-I show you earlier the application by one of the students that can do Instagram like
+You can see that the number of lines of code is really small and this is quiet powerful. 
 
-filters, but you can also find some new on the Chrome store. I installed one that is called Polarr that is using HTML for all the functionalities. So you can just import a picture, let's say this one. Then you can select filters, you can do some corrections on it and so on, and finally you can export it and that's all.
+If you want to write, for example, a Web site that will upload pictures, you can preview them, select them and then upload them.
+
+I show you earlier the application by one of the students that can do Instagram like filters, but you can also find some new on the Chrome store. 
+
+I installed one that is called Polarr that is using HTML for all the functionalities. So you can just import a picture, let's say this one. 
+Then you can select filters, you can do some corrections on it and so on, and finally you can export it and that's all.
 
 All this here is HTML5, this is canvas, these are form elements we saw the last week, some canvas here, or image elements and so on.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 311.  (xxx) ----------------------------->
+<!--------------------------------- 311. image previews (374) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image311.png?raw=true"
    width="65%"
-   alt="." />
+   alt="Image previews." />
 &nbsp;
 
 <h4>Source code:</h4>
@@ -20056,7 +20087,7 @@ The <a href="https://www.w3.org/TR/FileAPI/">HTML5 File API specification</a> 
 We will not use all of these interfaces, but let's explain the difference between Blob and File, as most of the methods exposed by the FileReader interface take indiscriminately a Blob or a File as parameter.
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 312. the blob movie poster (xxx) ----------------------------->
+<!------------------------------ 312. the blob movie poster (377) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image312.jpeg?raw=true"
@@ -20128,12 +20159,12 @@ Try a variation of the above code in your browser, that displays the file conten
 Choose a text file:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 313.  (xxx) ----------------------------->
+<!------------------------------- 313. select a text file (379) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image313.png?raw=true"
    width="45%"
-   alt="." />
+   alt="Select a text file." />
 &nbsp;
 
 In the following pages, we look at different examples that read file contents as text, dataURL and binary.
@@ -20151,12 +20182,12 @@ Let's start by reading a pure text file
 <a href="https://jsbin.com/xewemi/edit?html,output">Example at JSBin</a>, or try it below in your browser:
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 314.  (xxx) ----------------------------->
+<!---------------------------- 314. read single files content (379) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image314.png?raw=true"
    width="45%"
-   alt="." />
+   alt="Read a single file's content." />
 &nbsp;
 <br/>
 
@@ -20211,12 +20242,12 @@ This example is the one at the end of the previous page. This time, we show the 
 This time, please select multiple text files (using shift for multiple selection):
 
 <!------------------------------------------------------------------------------------------------>
-<!-------------------------- 315.  (xxx) ----------------------------->
+<!--------------------------- 315. choose multiple text files (380) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image315.png?raw=true"
    width="40%"
-   alt="." />
+   alt="Choose multiple text files." />
 &nbsp;
 <br/>
 
