@@ -13084,7 +13084,7 @@ Your browser does not support the canvas tag.
 
 </details>
 
-<b>Explanations:</b>
+<h4>Explanations:</h4>
 <ul>
   <li>This function takes as a parameter the list of images to be loaded, and a drawCallback function that will be called only once all images have been loaded. This callback takes as a parameter a new object that is the list of images that have been loaded (see <i>line 16</i>).</li>
   <li>We first count the number of images to load (<i>lines 7-9</i>), then for each image to be loaded we create a new JavaScript image object (<i>line 12</i>) and set its src attribute (<i>line 19</i>) - this will start to load the image.</li>
@@ -13104,7 +13104,7 @@ Your browser does not support the canvas tag.
 8.  });
 ```
 
-<b>Explanations:</b>
+<h4>Explanations:</h4>
 
 -   <i>Line 1</i> is the call to the image loader, the first parameter is the list of images to be loaded, while the second parameter is the callback function that will be called once all images have been loaded.
 
@@ -15944,7 +15944,7 @@ On the server side, you may have PHP, Java, C#, Ruby, Python, etc. components. T
 
 On the client side, the forms indicate to which server and how the data should be sent,  using the action and method attributes respectively. A &lt;button type="submit"> or an &lt;input type=submit> field is used to submit the form content.
 
-For example: <form action="myServerCode.php" method="POST">...</form>. Here, we set the URL of the server side code (myServerCode.php), and the HTTP method that will be used by the browser for sending the form content (POST).
+For example: &lt;form action="myServerCode.php" method="POST"&gt;...&lt;/form&gt;. Here, we set the URL of the server side code (myServerCode.php), and the HTTP method that will be used by the browser for sending the form content (POST).
 
 Another approach is to use JavaScript for sending the form content with <a href="https://en.wikipedia.org/wiki/Ajax_(programming)">Ajax</a>. This is covered in W3Cx HTML5 Apps and Games course.
 
@@ -18219,7 +18219,7 @@ Top of Form
  x  = 6
 --->
 
-Explanations about the attributes specific to the &lt;output&gt; element:
+<h4>Explanations about the attributes specific to the &lt;output&gt; element:</h4>
 
 -   for: a space-separated list containing the elements ids whose values went into the calculation.
 
@@ -19554,29 +19554,29 @@ We start writing an init() function that is called when the page is loaded. Th
 <h4>Source code:</h4>
 
 ```
-// Called when the page is loaded
-window.onload = init;
- 
-function init() {
-   console.log("Adding input listener to all input fields");
-   // add an input listener to all input fields
-   var listOfInputsInForm = document.querySelectorAll("input");
-   for(var i= 0; i < listOfInputsInForm.length; i++) {
-      addInputListener(listOfInputsInForm[i]);
-   }
-   // restore form content with previously saved values
-   restoreFormContent();
-}
+1. // Called when the page is loaded
+2. window.onload = init;
+3.
+4. function init() {
+5.    console.log("Adding input listener to all input fields");
+6.    // add an input listener to all input fields
+7.    var listOfInputsInForm = document.querySelectorAll("input");
+8.    for(var i= 0; i < listOfInputsInForm.length; i++) {
+9.       addInputListener(listOfInputsInForm[i]);
+10.    }
+11.    // restore form content with previously saved values
+12.    restoreFormContent();
+13. }
 ```
 
 And here is the addInputListener(inputField) function. It takes an input field as parameter and attaches an oninput listener to it, that will save the field's content each time a value is entered. The key will be the id of the input field (<i>line 3</i>):
 
 ```
-function addInputListener(inputField) {
-    inputField.addEventListener('input', function(event) {
-        localStorage.setItem(inputField.id, inputField.value);
-     }, false);
-}
+1. function addInputListener(inputField) {
+2.   inputField.addEventListener('input', function(event) {
+3.     localStorage.setItem(inputField.id, inputField.value);
+4.     }, false);
+5. }
 ```
 
 Note that at <i>line 2</i>, we use addEventListener (that is not using the oninput property here). adddEventListener doesnot replace existing oninput definitions and keep all existing listeners unchanged.
@@ -19589,26 +19589,26 @@ We have seen how to save all input fields' content on the fly. Now, let's see h
  <summary>Click to expand!</summary>
 
 ```
-function restoreFormContent() {
-   console.log("restoring form content from localStorage");
-   // get the list of all input elements in the form
-   var listOfInputsInForm = document.querySelectorAll("input");
-   // For each input element,
-   // - get its id (that is also the key for it's saved content
-   // in the localStorage)
-   // - get the value associated with the id/key in the local
-   // storage
-   // - If the value is not undefined, restore the value
-   // of the input field
-   for(var i= 0; i < listOfInputsInForm.length; i++) {
-     var fieldToRestore = listOfInputsInForm[i];
-     var id = fieldToRestore.id;
-     var savedValue = localStorage.getItem(id);
-     if(savedValue !== undefined) {
-        fieldToRestore.value = savedValue;
-     }
-   }
-}
+1. function restoreFormContent() {
+2.    console.log("restoring form content from localStorage");
+3.    // get the list of all input elements in the form
+4.    var listOfInputsInForm = document.querySelectorAll("input");
+5.    // For each input element,
+6.    // - get its id (that is also the key for it's saved content
+7.    // in the localStorage)
+8.    // - get the value associated with the id/key in the local
+3.    // storage
+10.    // - If the value is not undefined, restore the value
+11.    // of the input field
+12.    for(var i= 0; i < listOfInputsInForm.length; i++) {
+13.      var fieldToRestore = listOfInputsInForm[i];
+14.      var id = fieldToRestore.id;
+15.      var savedValue = localStorage.getItem(id);
+16.      if(savedValue !== undefined) {
+17.         fieldToRestore.value = savedValue;
+18.      }
+19.    }
+20. }
 ```
 
 </details>
@@ -20067,22 +20067,22 @@ Select several images: &lt;input type="file" accept="image/*" multiple onch
  <summary>Click to expand!</summary>
 
 ```
-<p>
-<div id="result">...</div>
-<script>
-  function filesProcess(files) {
-      var selection = "<table><tr><th>Name</th><th>Bytes</th><th>MIME Type</th>
-                       <th>Last modified date</th></tr>";
-      for(i=0; i<files.length ;i++){
-          file = files[i];
-          selection += "<tr><td>"+file.name+"</td><td style="text-align:right">"
-                    +file.size+"</td><td>"
-                    +file.type+"</td><td> "+file.lastModifiedDate+"</td></tr>";
-      }
-      selection += "</table>";
-      document.getElementById("result").innerHTML = selection;
-  }
-</script>
+1. <p>
+2. <div id="result">...</div>
+3. <script>
+4.   function filesProcess(files) {
+5.       var selection = "<table><tr><th>Name</th><th>Bytes</th><th>MIME Type</th>
+6.                        <th>Last modified date</th></tr>";
+7.       for(i=0; i<files.length ;i++){
+8.           file = files[i];
+9.           selection += "<tr><td>"+file.name+"</td><td style="text-align:right">"
+10.                     +file.size+"</td><td>"
+11.                     +file.type+"</td><td> "+file.lastModifiedDate+"</td></tr>";
+12.       }
+13.       selection += "</table>";
+14.       document.getElementById("result").innerHTML = selection;
+15.   }
+16. </script>
 ```
 
 </details>
@@ -20090,10 +20090,10 @@ Select several images: &lt;input type="file" accept="image/*" multiple onch
 <h4>Explanations:</h4>
 
 <ul>
-  <li><i>Line1:</i> we used the multiple attribute to allow the selection of multiple files in the file chooser (using shift or control keys). The accept="image/"  attribute is a filter that restricts selection to images only. Finally, the onchange listener will call the filesProcess(...) function, passing as parameter the list of selected files for the current element (this.files).</li><br/>
+  <li><i>Line 1:</i> we used the multiple attribute to allow the selection of multiple files in the file chooser (using shift or control keys). The accept="image/"  attribute is a filter that restricts selection to images only. Finally, the onchange listener will call the filesProcess(...) function, passing as parameter the list of selected files for the current element (this.files).</li><br/>
   <li><i>Lines 7 and 12:</i> we prepare the HTML code for building a &lt;table&gt; with the results.</li><br/>
   <li><i>Line 10:</i> this for loop builds all the rows that compose the table, adding HTML code to the selection string variable. At the end of the loop, this variable contains all the HTML code that corresponds to the table of results.</li><br/>
-  <li><i>Line 18:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the &lt;div id="result"&gt; in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically.</li><br/>
+  <li><i>Line 14:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the &lt;div id="result"&gt; in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically.</li><br/>
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
@@ -20375,26 +20375,26 @@ readAsArrayBuffer is often used for purposes such as reading audio samples that
  <summary>Click to expand!</summary>
 
 ```
-// User selects file. Read it as an ArrayBuffer and pass to the API.
-var fileInput = document.querySelector('input[type="file"]');
-fileInput.addEventListener('change', function(e) {
-   var reader = new FileReader();
-   reader.onload = function(e) {
-      initSound(e.target.result);
-   };
-   // THIS IS THE INTERESTING PART!
-   reader.readAsArrayBuffer(this.files[0]);
-}, false);
+1. // User selects file. Read it as an ArrayBuffer and pass to the API.
+2. var fileInput = document.querySelector('input[type="file"]');
+3. fileInput.addEventListener('change', function(e) {
+4.    var reader = new FileReader();
+5.    reader.onload = function(e) {
+6.       initSound(e.target.result);
+7.    };
+8.    // THIS IS THE INTERESTING PART!
+9.    reader.readAsArrayBuffer(this.files[0]);
+10. }, false);
 ```
 
 </details>
 
 <h4>Explanations:</h4>
 <ul>
-  <li><i>Line 2:</i>we get a pointer to the file selector, the variable fileInput.</li>
-  <li><i>Line 4:</i>we define a change listener. In this example, we use an anonymous function directly included in the listener definition (the listener is the function(e) {...}).</li>
-  <li><i>Line 11:</i>when a user chooses a file, the listener will be executed. Line 11 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.</li>
-  <li><i>Line 7:</i>is the onload callback, executed when the file content is loaded in memory. We pass the file content to the initSound function (see JSBin example for complete source code) that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio works only with uncompressed audio formats in memory), and to play it.</li>
+  <li><i>Line 2:</i> we get a pointer to the file selector, the variable fileInput.</li>
+  <li><i>Line 4:</i> we define a change listener. In this example, we use an anonymous function directly included in the listener definition (the listener is the function(e) {...}).</li>
+  <li><i>Line 11:</i> when a user chooses a file, the listener will be executed. Line 11 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.</li>
+  <li><i>Line 7:</i> is the onload callback, executed when the file content is loaded in memory. We pass the file content to the initSound function (see JSBin example for complete source code) that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio works only with uncompressed audio formats in memory), and to play it.</li>
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
