@@ -16005,7 +16005,7 @@ Forms can be visually and cognitively complex and difficult to use. Accessible f
 Form fields and other form controls usually have visible labels, such as "E-mail Address:" as the label for a text field (see figure below).
 
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 217. e-mail form label text (xxx) ---------------------------------->
+<!------------------------------ 217. e-mail form label text (xxx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image217.png?raw=true"
@@ -16120,11 +16120,11 @@ Groupings of form controls, typically groups of related checkboxes and radio but
 
 <h4>Associating related controls with fieldset</h4>
 
-Grouping needs to be carried out visually and in the code, for example, by using the <fieldset> and <legend> elements to associate related form controls. The <fieldset> identifies the entire grouping and <legend> identifies the grouping's descriptive text.
+Grouping needs to be carried out visually and in the code, for example, by using the &lt;fieldset&gt; and &lt;legend&gt; elements to associate related form controls. The &lt;fieldset&gt; identifies the entire grouping and &lt;legend&gt; identifies the grouping's descriptive text.
 
 <h4>Example #1: radio buttons</h4>
 
-In the example below, there are three radio buttons that allow the user to choose an output format. Radio button groups should always be grouped using <fieldset>.
+In the example below, there are three radio buttons that allow the user to choose an output format. Radio button groups should always be grouped using &lt;fieldset&gt;.
 
 Output format:
 
@@ -17320,7 +17320,7 @@ In another part of the course, about form validation and visual feedback using 
 <h3 id="ch5-5-2">5.5.2 form</h3>
 <!------------------------------------------------------------------------------------------------>
 
-This attribute is useful for putting input fields outside the form itself. The form attribute of an external input field must share the same value as the id of the form the field belongs to. This is useful when using <fieldset> elements for making the page/form layout easier.
+This attribute is useful for putting input fields outside the form itself. The form attribute of an external input field must share the same value as the id of the form the field belongs to. This is useful when using &lt;fieldset&gt; elements for making the page/form layout easier.
 
 <h4>Typical use</h4>
 <p>
@@ -21489,4 +21489,4 @@ Here are a few project ideas. Your classmates and the team who prepared the cour
 
 . . .The end.
 
-<!--- last updated 10-10-22 10:14pm --->
+<!--- last updated 10-09-22 3:30pm --->
