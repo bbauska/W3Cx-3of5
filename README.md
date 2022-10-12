@@ -11744,10 +11744,10 @@ Let's look at color in a little more detail, and see how we can use gradients o
 You can use <a href="https://www.w3.org/TR/css3-color/">the same syntax for colors that is supported by CSS3</a>. The next lines show possible values/syntaxes.
 
 ```
-ctx.strokeStyle = 'red';
-ctx.fillStyle = "#00ff00";
-ctx.strokeStyle = "rgb(0, 0, 255)";
-ctx.fillStyle = "rgba(0, 0, 255, 0.5)";
+1. ctx.strokeStyle = 'red';
+2. ctx.fillStyle = "#00ff00";
+3. ctx.strokeStyle = "rgb(0, 0, 255)";
+4. ctx.fillStyle = "rgba(0, 0, 255, 0.5)";
 ```
 
 Note that:
@@ -12027,7 +12027,7 @@ This code is much more complex than the previous one, taking 16 lines instead of
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image170.png?raw=true"
-   width="85%"
+   width="65%"
    alt="Draw red and blue checkboard." />
 &nbsp;
 <br/>
@@ -21489,4 +21489,4 @@ Here are a few project ideas. Your classmates and the team who prepared the cour
 
 . . .The end.
 
-<!--- last updated 10-09-22 3:30pm --->
+<!--- last updated 10-11-22 11:22pm --->
