@@ -19078,13 +19078,13 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 
 <h4>Explanations:</h4>
 
--   <i>Line 32</i>: we added an empty unnumbered list (&lt;ul&gt;...&lt;/ul&gt;) to the form, with the CSS class="error-messages". We will use this class attribute for styling, and hiding by default, the error messages using CSS (see lines <i>12-20</i>, <i>line 13</i> hides the messages by default).
--   <i>Lines 97-102</i> look at all forms in the document and call a function that will replace the default validation behavior for all of them: the replaceValidationUI(form) function.
--   This function first disables all default behavior (no more display of bubbles during form submission), this is done at <i>lines 45-57</i>.
--   <i>Line 66</i>: we add a click listener to the submit button of the current form.
+-   <i>Line 32</i>: we added an empty unnumbered list (&lt;ul&gt;...&lt;/ul&gt;) to the form, with the CSS class="error-messages". We will use this class attribute for styling, and hiding by default, the error messages using CSS (see lines <i>12-20</i>, <i>line 13</i> hides the messages by default),
+-   <i>Lines 97-102</i> look at all forms in the document and call a function that will replace the default validation behavior for all of them: the replaceValidationUI(form) function,
+-   This function first disables all default behavior (no more display of bubbles during form submission), this is done at <i>lines 45-57</i>,
+-   <i>Line 66</i>: we add a click listener to the submit button of the current form,
 -   <i>Line 67</i> gets all invalid input fields for that form,
--   <i>Lines 76-83</i>: For each invalid field, we get the value of the name attribute of the corresponding label, we also get the validation error message, and we build a list item(<li>...</li>).
--   <i>Line 86</i>: Then we add this list element (a formatted error message corresponding to an invalid input field) to the error message container.
+-   <i>Lines 76-83</i>: For each invalid field, we get the value of the name attribute of the corresponding label, we also get the validation error message, and we build a list item(&lt;li&gt;...&lt;/li&gt;),
+-   <i>Line 86</i>: Then we add this list element (a formatted error message corresponding to an invalid input field) to the error message container,
 -   <i>Lines 90-93</i>: The focus is given to the first invalid field that shows an error message.
 
 <!------------------------------------------------------------------------------------------------>
