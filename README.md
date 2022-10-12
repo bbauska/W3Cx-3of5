@@ -1479,21 +1479,21 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 <h4>Ok version (no explicit sections everywhere):</h4>
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
-<body>
-  <h4>Apples</h4>
-  <p>Apples are fruit.</p>
-  <section>
-    <h2>Taste</h2>
-    <p>They taste lovely.</p>
-    <h6>Sweet</h6>
-    <p>Red apples are sweeter than green ones.</p>
-    <h1>Color</h1>
-    <p>Apples come in various colors.</p>
-  </section>
-</body>
+1.  <body>
+2.    <h4>Apples</h4>
+3.    <p>Apples are fruit.</p>
+4.    <section>
+5.      <h2>Taste</h2>
+6.      <p>They taste lovely.</p>
+7.      <h6>Sweet</h6>
+8.      <p>Red apples are sweeter than green ones.</p>
+9.      <h1>Color</h1>
+10.     <p>Apples come in various colors.</p>
+11.   </section>
+12. </body>
 ```
 
 </details>
@@ -1593,25 +1593,25 @@ Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-
  <summary>Click to expand!</summary>
 
 ```html5
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
-<head>
-  <meta http-equiv[="content-type" ]content[="text/html"]charset="utf-8">
-  <title>title</title>
-  <link rel="stylesheet" type[="text/css"] href="style.css">
-  <script type[="text/javascript"] src="script.js"></script>
-</head>
-<body>
-  ...
-</body>
-</html>
+1.  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+2.  <html lang="en">
+3.  <head>
+4.    <meta http-equiv[="content-type" ]content[="text/html"]charset="utf-8">
+5.    <title>title</title>
+6.    <link rel="stylesheet" type[="text/css"] href="style.css">
+7.    <script type[="text/javascript"] src="script.js"></script>
+8.  </head>
+9.  <body>
+10.    ...
+11. </body>
+12. </html>
 ```
 
 </details>
 
 <h4>Simpler character set definition</h4>
 <p>
-One word about the <meta charset="utf-8"> at line 4 in the HTML5 version: it is a <b>best practice</b> to declare the character set of your document to protect against 
+One word about the &lt;meta charset="utf-8"&gt; at line 4 in the HTML5 version: it is a <b>best practice</b> to declare the character set of your document to protect against 
 <a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7"> a serious security risk</a>. For more details, please refer to the "Why Internationalization is 
 important" section in the Course intro chapter.
 </p>
@@ -21504,9 +21504,11 @@ function getPhysicalAddress(latlong) {
 <h4>Optional projects</h4>
 
 Here are a few project ideas. Your classmates and the team who prepared the course will be glad to try them and offer feedback. Please post URLs in this discussion forum. These projects are optional, meaning that they won't be graded. However, it is important to complete them to ensure good understanding of the material.
--  Project 1 (easy): Add a map showing your location to one of your Web pages. Start with a simple, static map, then try with an interactive map. Reuse the examples from the course.
--  Project 2 (a bit harder): The examples provided in the course used OpenStreetMap, but why don't you try to do the same with GoogleMaps? Some services are free of charge, but will ask you to get an API key (see this YouTube tutorial about how to get such a key).
+<ul>
+<li>Project 1 (easy): Add a map showing your location to one of your Web pages. Start with a simple, static map, then try with an interactive map. Reuse the examples from the course.</li>
+<li>Project 2 (a bit harder): The examples provided in the course used OpenStreetMap, but why don't you try to do the same with GoogleMaps? Some services are free of charge, but will ask you to get an API key (see this YouTube tutorial about how to get such a key).</li>
+</ul>
 
 . . .The end.
 
-<!--- last updated 10-11-22 11:22pm --->
+<!--- last updated 10-12-22 3:18pm --->
