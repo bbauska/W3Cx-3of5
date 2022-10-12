@@ -17628,6 +17628,17 @@ With the previous example, until the value of the input field is equal to 3 alph
 
 As seen in the previous examples, we used some CSS pseudo classes for automatically setting the background-color of the input field as we type.
 
+
+<!-- image here --->
+<!------------------------------------------------------------------------------------------------>
+<!------------- 271b. type email name myemail (329) ------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image271b.png?raw=true"
+   width="65%"
+   alt="Green valid, pink invalid.  Type email, name myemail." />
+</p>
+
 <h4>Complete source code:</h4>
 
 <details>
