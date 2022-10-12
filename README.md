@@ -17458,20 +17458,18 @@ This example below illustrates the use of the autofocus attribute: the focus i
 
 The required attribute makes the input field invalid if kept empty. 
 
-<!---
-Here is the result in your browser:
+<h4>Here is the result in your browser:</h4>
 
-Top of Form
+<!------------------------------------------------------------------------------------------------>
+<!------------- 269.  (323) ------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image269.png?raw=true"
+   width="65%"
+   alt="." />
+</p>
+<!--- image269.png goes here page 323 --->
 
-Example of use of the autofocus attributeThis is an input field:![](./images/image266.wmf)
---->
-<!---
-Enter at least 6 chars, max 9 chars (this field has the autofocus attribute):![](./images/image218.wmf)
-
-Bottom of Form
---->
-
-Notice that the focus in on the second input field, thanks to the autofocus attribute.
 
 <h4>Extract from source code:</h4>
 
@@ -17547,13 +17545,16 @@ Here is a small code extract from a more complete example shown in the section a
 
 Please try it in your  browser (Type "F", "E", "O", C" etc., or just click inside the field and use the drop down menu). Note that you can also enter any value; if it does not start with one of these letters it will be accepted but will not trigger auto-completion.
 
-<!---
-Top of Form
 
-List attributePreferred browser![](./images/image269.wmf) ![](./images/image270.wmf)
-
-Bottom of Form
---->
+<!------------------------------------------------------------------------------------------------>
+<!------------- 270.  (325) ------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image270.png?raw=true"
+   width="65%"
+   alt="." />
+</p>
+<!-- image image270.png goes here --->
 
 Source code extract:
 
@@ -17604,6 +17605,14 @@ You can also try [this online JavaScript RegExps tester](https://regex101.com/#
 <h4>Typical use</h4>
 
 Just add a pattern attribute with a value that is the JavaScript regular expression that must match the entire string entered in the field. Note that the empty string is valid by default (except if the required attribute is used - this makes empty fields invalid).
+<!------------------------------------------------------------------------------------------------>
+<!------------- 271c.  (326) ------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image271c.png?raw=true"
+   width="65%"
+   alt="." />
+</p>
 
 It's best practice to systematically add a title attribute with a value that indicates what constitutes a valid entry. More on this in the section of this course dedicated to form validation.
 
