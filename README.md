@@ -4928,38 +4928,37 @@ This example gives the first steps towards writing a custom video player. It sho
   <summary>Click to expand!</summary>
 
 ```
-<video id="vid" controls>
-<source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
-         type=video/webm>
-...
-</video>
-<p>Example of custom controls:</p>
-<button onclick="playVideo();" style="cursor: pointer;">Play</button>
-<button onclick="pauseVideo();" style="cursor: pointer;">Pause</button>
-<button onclick="rewindVideo();" style="cursor: pointer;">
-       Back to beginning</button>
-<script>
-    vid = document.querySelector("#vid");
-    function playVideo() {
-       vid.play();
-    }
-    function pauseVideo() {
-       vid.pause();
-    }
-    function rewindVideo() {
-       vid.currentTime = 0;
-    }
-</script>
+1.  <video id="vid" controls>
+2.    <source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
+3.            type=video/webm>
+4.  </video>
+5.  <p>Example of custom controls:</p>
+6.  <button onclick="playVideo();" style="cursor: pointer;">Play</button>
+7.  <button onclick="pauseVideo();" style="cursor: pointer;">Pause</button>
+8.  <button onclick="rewindVideo();" style="cursor: pointer;">
+9.         Back to beginning</button>
+10.  <script>
+11.    vid = document.querySelector("#vid");
+12.    function playVideo() {
+13.        vid.play();
+14.   }
+15.   function pauseVideo() {
+16.        vid.pause();
+17.   }
+18.   function rewindVideo() {
+19.        vid.currentTime = 0;
+20.   }
+21. </script>
 ```
 
 </details>
 
 <h4>Explanations:</h4>
 <ul>
-  <li><i>Lines 7, 9 and 11</i>: we add a click listener to each button, in order to call a JavaScript function when each button is clicked.</li>
-  <li><i>Line 14</i>: using the DOM API, we get the JavaScript object that corresponds to the video element we inserted in the HTML document. This line is outside a function, it will be executed when the page loads.</li>
-  <li><i>Lines 17 and 20</i>: we call methods from the API for playing/pausing the video.</li>
-  <li><i>Line 24</i>: we modify the currentTime property in order to rewind the video. Note that vid.load() also rewinds the video, shows the poster image again, but also pauses the video. By using currentTime=0, the playback does not stop.</li>
+  <li><i>Lines 6, 7 and 8</i>: we add a click listener to each button, in order to call a JavaScript function when each button is clicked.</li>
+  <li><i>Line 11</i>: using the DOM API, we get the JavaScript object that corresponds to the video element we inserted in the HTML document. This line is outside a function, it will be executed when the page loads.</li>
+  <li><i>Lines 12 and 15</i>: we call methods from the API for playing/pausing the video.</li>
+  <li><i>Line 19</i>: we modify the currentTime property in order to rewind the video. Note that vid.load() also rewinds the video, shows the poster image again, but also pauses the video. By using currentTime=0, the playback does not stop.</li>
 </ul>
 
 <h4>Example #2: how to detect the end of a video and start another one</h4>
@@ -11990,7 +11989,7 @@ ctx.fillRect(150, 150, 50, 50);
 ctx.fillRect(250, 150, 50, 50);
 ```
 
-This code is rather ugly isn't it? It would have been better  to use a loop...
+This code is rather ugly isn't it? It would have been better to use a loop...
 
 <h4>Here is function that draws a chessboard:</h4>
 
@@ -13431,59 +13430,59 @@ The trick is to save the context before setting the shadow properties, then dr
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Unwanted shadows disappear- Example #2 bis</title>
-<style>
-body {
-margin: 0px;
-padding: 0px;
-}
-#myCanvas {
-border: 1px solid #9C9898;
-}
-</style>
-<script>
-var canvas, ctx;
-window.onload = function(){
-canvas = document.getElementById("myCanvas");
-ctx = canvas.getContext("2d");
-var centerX = canvas.width / 2;
-var centerY = canvas.height / 2;
-var radius = 70;
-ctx.beginPath();
-// Add to the path a full circle (from 0 to 2PI)
-ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
-// save the context before setting shadows and drawing the filled circle
-ctx.save();
-// With path drawing you can change the context
-// properties until a call to stroke() or fill() is performed
-ctx.fillStyle = "lightBlue";
-// add shadows before drawing the filled circle
-addShadows();
-// Draws the filled circle in light blue
-ctx.fill();
-// restore the context to its previous saved state
-ctx.restore();
-// Prepare for the outline
-ctx.lineWidth = 5;
-ctx.strokeStyle = "black";
-// draws AGAIN the path (the circle), this
-// time in wireframe
-ctx.stroke();
-// Notice we called context.arc() only once ! And drew it twice
-// with different styles
-};
-function addShadows() {
-ctx.shadowColor = "Grey"; // color
-ctx.shadowBlur = 20; // blur level
-ctx.shadowOffsetX = 15; // horizontal offset
-ctx.shadowOffsetY = 15; // vertical offset
-}
-</script>
+  <meta charset="utf-8">
+  <title>Unwanted shadows disappear- Example #2 bis</title>
+  <style>
+    body {
+    margin: 0px;
+    padding: 0px;
+    }
+    #myCanvas {
+    border: 1px solid #9C9898;
+    }
+  </style>
+  <script>
+    var canvas, ctx;
+    window.onload = function(){
+    canvas = document.getElementById("myCanvas");
+    ctx = canvas.getContext("2d");
+    var centerX = canvas.width / 2;
+    var centerY = canvas.height / 2;
+    var radius = 70;
+    ctx.beginPath();
+    // Add to the path a full circle (from 0 to 2PI)
+    ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
+    // save the context before setting shadows and drawing the filled circle
+    ctx.save();
+    // With path drawing you can change the context
+    // properties until a call to stroke() or fill() is performed
+    ctx.fillStyle = "lightBlue";
+    // add shadows before drawing the filled circle
+    addShadows();
+    // Draws the filled circle in light blue
+    ctx.fill();
+    // restore the context to its previous saved state
+    ctx.restore();
+    // Prepare for the outline
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = "black";
+    // draws AGAIN the path (the circle), this
+    // time in wireframe
+    ctx.stroke();
+    // Notice we called context.arc() only once ! And drew it twice
+    // with different styles
+    };
+    function addShadows() {
+    ctx.shadowColor = "Grey"; // color
+    ctx.shadowBlur = 20; // blur level
+    ctx.shadowOffsetX = 15; // horizontal offset
+    ctx.shadowOffsetY = 15; // vertical offset
+  }
+  </script>
 </head>
 <body>
-<canvas id="myCanvas" width="578" height="200">
-</canvas>
+  <canvas id="myCanvas" width="578" height="200">
+  </canvas>
 </body>
 </html>
 ```
@@ -13505,7 +13504,7 @@ They apply to all shapes that are drawn in path mode (lines, curves, arcs) and s
 We have seen this before. This is done by changing the value (in pixels) of the lineWidth property of the context:
 
 ```
-1.  <b>ctx.lineWidth = 10;</b> // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels
+ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels
 ```
 
 <p>Here is a complete example where we draw with a lineWidth of 20 pixels:</p>
@@ -21511,4 +21510,4 @@ Here are a few project ideas. Your classmates and the team who prepared the cour
 
 . . .The end.
 
-<!--- last updated 10-12-22 3:18pm --->
+<!--- last updated 10-14-22 8:54pm --->
