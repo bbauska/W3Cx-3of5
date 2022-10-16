@@ -7393,7 +7393,7 @@ This step is useful for drawing and setting drawing properties (color, etc.)
 
 Once we have a pointer to the &lt;canvas&gt;, we can get a "context". This particular object is the core of the canvas JavaScript API. It provides methods for drawing, like fillRect(x, y, width, height) for example, that draws a filled rectangle, and properties for setting the color, shadows, gradients, etc.
 </p>
-<h4>So, let's first get the context (do this only once):</h4>
+<h4>Let's first get the context (do this only once):</h4>
 
 ```
 var ctx=canvas.getContext('2d');
@@ -7537,7 +7537,7 @@ ctx.fillRect(0,0,80,100);
 
 This line is a call to the method fillRect(top left X coordinate, top left Y coordinate, width, height), which draws a filled rectangle.
 
-The way the rectangle will be filled depends on the current value of several properties of the context, in particular the value of the fillStyle property. So, in our case, the rectangle will be red.
+The way the rectangle will be filled depends on the current value of several properties of the context, in particular the value of the fillStyle property. In our case, the rectangle will be red.
 
 <h4>Summary of the different steps:</h4>
 
@@ -17212,7 +17212,8 @@ value=5 min=0, max=10 step="any":  
 ```
 
 <b>WARNING</b>: Using a step attribute with an integer value will make the slider jump corresponding to the step value. By default, omitting the step attribute is equivalent to step="1".
-So, for accepting float values, it is necessary to use step="any", or step equal to a floating point value, such as step="0.5".
+
+For accepting float values, it is necessary to use step="any", or step equal to a floating point value, such as step="0.5".
 
 Adding "ticks" to the range slider using a &lt;datalist&gt; element
 
@@ -17400,12 +17401,12 @@ This attribute targets most input types (those that allow typing in them).
 <h4>Typical use</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------- 268. example of use of autocomplete attribute (xxx) ------------->
+<!--------------------- 268. example of use of autocomplete attribute (323) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image268.jpeg?raw=true"
-   width="40%"
-   alt="Example of use of autocomplete attribute." />
+  width="40%"
+  alt="Example of use of autocomplete attribute." />
 </p>
 
 Try it in your browser here:
@@ -17460,15 +17461,13 @@ The required attribute makes the input field invalid if kept empty. 
 <h4>Here is the result in your browser:</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<!------------- 269.  (323) ------------->
+<!------------------------ 269. example use of autofocus attribute (323) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image269.png?raw=true"
-   width="65%"
-   alt="." />
+  width="65%"
+  alt="Example use of autofocust attribute." />
 </p>
-<!--- image269.png goes here page 323 --->
-
 
 <h4>Extract from source code:</h4>
 
@@ -17544,18 +17543,16 @@ Here is a small code extract from a more complete example shown in the section a
 
 Please try it in your  browser (Type "F", "E", "O", C" etc., or just click inside the field and use the drop down menu). Note that you can also enter any value; if it does not start with one of these letters it will be accepted but will not trigger auto-completion.
 
-
 <!------------------------------------------------------------------------------------------------>
-<!------------- 270.  (325) ------------->
+<!------------------------ 270. preferred browser and submit query (325) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image270.png?raw=true"
-   width="65%"
-   alt="." />
+  width="65%"
+  alt="Preferred browser prompt and submit query." />
 </p>
-<!-- image image270.png goes here --->
 
-Source code extract:
+<h4>Source code extract:</h4>
 
 <details>
  <summary>Click to expand!</summary>
@@ -17605,12 +17602,12 @@ You can also try [this online JavaScript RegExps tester](https://regex101.com/#
 
 Just add a pattern attribute with a value that is the JavaScript regular expression that must match the entire string entered in the field. Note that the empty string is valid by default (except if the required attribute is used - this makes empty fields invalid).
 <!------------------------------------------------------------------------------------------------>
-<!------------- 271c.  (326) ------------->
+<!----------------------------------- 271c. typical use (326) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image271c.png?raw=true"
-   width="65%"
-   alt="." />
+  width="65%"
+  alt="Typical use." />
 </p>
 
 It's best practice to systematically add a title attribute with a value that indicates what constitutes a valid entry. More on this in the section of this course dedicated to form validation.
@@ -18361,9 +18358,9 @@ The optimum attribute indicates the optimal numeric value and gives an indicat
 
 ... and depending on the value you set to optimum attribute, one of the ranges above becomes the "good (optimum)" range.
 
-So in the previous example, with the value of the optimum attribute set to 19, a number between min and low (not inclusive), the Range 1 (between min=0 and low=20) becomes the "good (optimum)" range (displayed in green), the Range 3 (between high=80 and max=100) becomes the "bad" (displayed in red color) range, and the Range 2, in the middle, will be displayed in yellow (not optimum, not bad).
+In the previous example, with the value of the optimum attribute set to 19, a number between min and low (not inclusive), the Range 1 (between min=0 and low=20) becomes the "good (optimum)" range (displayed in green), the Range 3 (between high=80 and max=100) becomes the "bad" (displayed in red color) range, and the Range 2, in the middle, will be displayed in yellow (not optimum, not bad).
 
-So, a &lt;meter&gt; element used for displaying blood pressure might be a good candidate for setting the optimum value to "Range 2", and a &lt;meter&gt; element used for displaying memory usage might be a good candidate for setting the optimum value to "Range 1", meaning that a low memory usage is "good".
+A &lt;meter&gt; element used for displaying blood pressure might be a good candidate for setting the optimum value to "Range 2", and a &lt;meter&gt; element used for displaying memory usage might be a good candidate for setting the optimum value to "Range 1", meaning that a low memory usage is "good".
 
 <h4>External resources</h4>
 
@@ -19098,7 +19095,9 @@ It can be useful for setting some preferences for Web application, or for rememb
 
 For example, you choose some pictures, some images you want to send to a server and using this API you can visualize them directly in the page before sending them to the server.
 
-Finally, we will look at the geolocation API that is useful for locating the person that is using the browser. So you can provide a customized service that take into account the geolocation, or you can also display the position of the person in a map, we will see example that work with Google Map and with OpenStreetMap. Another classic use is automatic filling of the address input fields in a form.
+Finally, we will look at the geolocation API that is useful for locating the person that is using the browser. 
+
+You can provide a customized service that take into account the geolocation, or you can also display the position of the person in a map, we will see example that work with Google Map and with OpenStreetMap. Another classic use is automatic filling of the address input fields in a form.
 
 Instead of typing the zip code, entering the city, entering the country, you can guess that automatically and propose the form that is already filled with the address. I really enjoyed teaching you this HTML5 basic course and I'm looking forward to meeting you the next HTML5 part-2 course that would address more advanced topics
 
@@ -19357,7 +19356,9 @@ Local stores (localStorage or sessionStorage) can also be iterated through in 
 4.  }
 ```
 
-Students may note that something seems a bit off in the example above: instead of calling localStorage.getItem(k), we simply access localStorage[k]. Why? Because keys in the local store can also be accessed as if the store were a simple JavaScript object. So instead of localStorage.getItem("foo") and localStorage.setItem("foo", "bar"), one can write localStorage.foo and localStorage.foo = "bar". Of course there are limitations to this mapping: any string can serve as a key, so that localStorage.getItem("one two three") works, whereas that string would not be a valid identifier after the dot (but it could still work as localStorage["one two three"]).
+Students may note that something seems a bit off in the example above: instead of calling localStorage.getItem(k), we simply access localStorage[k]. Why? Because keys in the local store can also be accessed as if the store were a simple JavaScript object. 
+
+Instead of localStorage.getItem("foo") and localStorage.setItem("foo", "bar"), one can write localStorage.foo and localStorage.foo = "bar". Of course there are limitations to this mapping: any string can serve as a key, so that localStorage.getItem("one two three") works, whereas that string would not be a valid identifier after the dot (but it could still work as localStorage["one two three"]).
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 300. number of times this page has shown on browser (359) ------------------->
@@ -19853,7 +19854,9 @@ I mean applications written using HTML, CSS and Javascript that do not rely on d
 
 For example, I can show you this. This is a wave. This is an audio file editor that works with local files. I open the page, and from here I can drop a music file directly. Let's go to get some music somewhere. Some AC/DC song! I can just drop the song and I can edit the song. I can play the song. I can cut, I can save locally, etc.
 
-Another example is an application, a Chrome application that is also written using Web technologies but doesn't run using HTTP. So it's quite easy to write such applications, because there are regular Web applications using HTML, CSS and Javascript except that you've got to package them for putting them on the Chrome store.
+Another example is an application, a Chrome application that is also written using Web technologies but doesn't run using HTTP. 
+
+It's quite easy to write such applications, because there are regular Web applications using HTML, CSS and Javascript except that you've got to package them for putting them on the Chrome store.
 
 I'm going first to show you a local audio file player that is called Remo.
 
@@ -19871,7 +19874,7 @@ Here, I just read the files using the File API, I read them as what we call data
 
 First, before writing the application, I want to talk a little bit about data URLs.
 
-So data URLs are strange set of characters like that ,and if you select them and paste them in the address bar you can see a small red icon. 
+Data URLs are strange set of characters like that ,and if you select them and paste them in the address bar you can see a small red icon. 
 And you can use this everywhere where you would have use an http://URL. 
 
 If I use this image here, I can using it in JSBin for example, and if I add the image here I can see that the content of the image, the pixels, are encoded in the URL itself.
@@ -19895,7 +19898,9 @@ And finally, we just insert this image in the document and this is when we see i
 
 I'm going to live code this one, maybe a simpler version so that you can see the different steps in real time. First, I add an 'input type=file multiple' for selecting multiple files. This is what's happening and here I can select several images. I'm going to add an 'onchange' listener:
 
+```
 'onchange=readImagesAndPreview()'.
+```
 
 And I'm going to pass the set of file descriptors that have been selected: 'this.files' is the correct way to send the selected files to a Javascript function.
 
