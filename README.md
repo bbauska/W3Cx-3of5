@@ -17326,16 +17326,14 @@ This attribute is useful for putting input fields outside the form itself. The 
 <p>
 <a href="http://codepen.io/w3devcampus/pen/jmdpyv)">Try this interactive example in CodePen</a>, or try it directly in your browser:
 
-<!---
-Enter your name (field outside the form): ![](./images/image266.wmf)</p>
---->
-
-<h4>Top of Form</h4>
-<!---
-Choose optionFree registering![](./images/image219.wmf)Premium![](./images/image219.wmf) Send form
-
-Bottom of Form
---->
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 266. html5 form attributes (321) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image266.png?raw=true"
+   width="65%"
+   alt="HTML5 form attributes." />
+</p>
 
 <h4>Source code:</h4>
 
@@ -17382,7 +17380,7 @@ This attribute applies either to the &lt;form&gt; element or on individual &l
 Possible values of this attribute: on/off.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 267. on off funny picture (xxx) -------------------------------->
+<!---------------------------- 267. bright red on off picture (322) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image267.jpeg?raw=true"
@@ -17411,17 +17409,14 @@ This attribute targets most input types (those that allow typing in them).
 
 Try it in your browser here:
 
-Top of Form
-
-Examples of use of the autocomplete attributeEnter your email (autocomplete=off, this overrides the form's autocomplete=on attribute):
-
-Enter your address (autocomplete=on by inheritance of the form's autocomplete=on attribute):
-
-Submit
-
-Bottom of Form
-
-To see auto-completion in action: enter something in both fields and submit the form. Then enter the same thing: you will see that only the second input field offers auto-completion.
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 268b. example of use of autocomplete attribute (323) --------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image268b.png?raw=true"
+  width="40%"
+  alt="Example of use of autocomplete attribute, #2." />
+</p>
 
 <h4>Source code extract:</h4>
 
@@ -17466,7 +17461,7 @@ The required attribute makes the input field invalid if kept empty. 
 <p align="center" width="100%">
 <img src="./images/image269.png?raw=true"
   width="65%"
-  alt="Example use of autofocust attribute." />
+  alt="Example use of autofocus attribute." />
 </p>
 
 <h4>Extract from source code:</h4>
@@ -17594,7 +17589,7 @@ You can also try [this online JavaScript RegExps tester](https://regex101.com/#
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image271.jpeg?raw=true"
-   width="40%"
+   width="65%"
    alt="Menu on the left, categories and patterns on the right. html5patterns.com." />
 </p>
 
@@ -17633,10 +17628,9 @@ With the previous example, until the value of the input field is equal to 3 alph
 
 As seen in the previous examples, we used some CSS pseudo classes for automatically setting the background-color of the input field as we type.
 
-
 <!-- image here --->
 <!------------------------------------------------------------------------------------------------>
-<!------------- 271b. type email name myemail (329) ------------->
+<!-------------------------- 271b. type multiple email addresses (329) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image271b.png?raw=true"
@@ -17722,8 +17716,18 @@ Complete source code:
 <h4>Example #3: an &lt;input type="url"&gt; element with a pattern attribute allowing only certain protocols</h4>
 
 <a href="https://jsbin.com/nulahey/1/edit?html,output)or">Online example at JSBin</a> try it in your browser:
-
+<!---
 Enter the URL of your repository (http, https or ftp): 
+--->
+<!------------------------------------------------------------------------------------------------>
+<!------------- 27x. input type enter url of your repository  () ------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image271b.png?raw=true"
+   width="65%"
+   alt="Green valid, pink invalid.  Type email, name myemail." />
+</p>
+
 
 <h4>Source code extract:</h4>
 
@@ -17792,21 +17796,14 @@ With the &lt;input type="email"&gt;, this attribute enables the user to enter
 
 Or try it below in your browser: type in a list of email addresses separated by a comma, then look at the input field background color (pink = invalid, green = valid), and then submit:
 
-This form uses: &lt;input type="email" name="myemail" multiple&gt;
-
-Top of Form
-
-With the multiple attributeEnter several email addresses: Submit
-
-Bottom of Form
-
-This form does not use the multiple attribute:
-
-Top of Form
-
-Without the multiple attributeEnter several email addresses: Submit
-
-Bottom of Form
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 271b. input type email - single or multiple (329) ------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image271b.png?raw=true"
+  width="65%"
+  alt="Enter one or more email addresses." />
+</p>
 
 <h4>Complete source code:</h4>
 
@@ -17934,12 +17931,12 @@ The first shows a form with two submit buttons: 
   <li>the second button submits to another action specified by its formaction attribute.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 272.  (xxx) ------------------------------->
+<!------------------------------ 272. formaction attribute (332) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image272.png?raw=true"
   width="40%"
-  alt="." />
+  alt="Example of formaction attribute." />
 &nbsp;
 <br/>
 
@@ -17950,12 +17947,12 @@ The second example shows a form with two submit buttons:
 -   the second button using a POST:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 273.  (xxx) ------------------------------->
+<!------------------------------- 273. formmethod attribute (332) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image273.png?raw=true"
   width="40%"
-  alt="." />
+  alt="Example of formmethod attribute." />
 &nbsp;
 <br/>
 
@@ -17991,6 +17988,16 @@ Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,outp
 </details>
 
 <!------------------------------------------------------------------------------------------------>
+<!---------------------------- 275a. formnovalidate attribute (333) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image275a.png?raw=true"
+  width="40%"
+  alt="Example of formnovalidate attribute." />
+&nbsp;
+<br/>
+
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-5-12">5.5.12 formtarget</h3>
 <!------------------------------------------------------------------------------------------------>
 
@@ -18019,14 +18026,16 @@ This attribute's value indicates where the response from the form submission sho
 
 [Online example at JSBin ](https://jsbin.com/godice/2/edit?html,output)or try it in your browser below:
 
-<!---
-Top of Form
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 276a. formtarget attribute (333) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image276a.png?raw=true"
+  width="40%"
+  alt="Example of formtarget attribute." />
+&nbsp;
+<br/>
 
-Given name: ![](./images/image269.wmf)
-Family name: ![](./images/image269.wmf)
-
-![](./images/image274.wmf) ![](./images/image275.wmf)
---->
 
 <h4>Source code:</h4>
 
@@ -18101,7 +18110,7 @@ The possible values for this field are:
 <a href="https://jsbin.com/lokukam/4/edit?html,output">Try this online example at JSBin</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 276.  (xx) ------------------------------->
+<!------------------------------ 276. formenctype attribute (335) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image276.png?raw=true"
@@ -18146,12 +18155,12 @@ Source code:
 If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,output) standalone mode (click the black arrow on the top right of the output tab, in JSBin), you should see this:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 277.  (xx) ------------------------------->
+<!-------------------------- 277. formenctype example in jsbin (335) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image277.png?raw=true"
    width="50%"
-   alt="JS Bin example of the above example." />
+   alt="JS Bin in standalone mode." />
 &nbsp;
 <br/>
 
@@ -18159,7 +18168,7 @@ Then, open the devtools and go to the "Network" tab, click on the POST request. 
 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 278.   (xxx) ------------------------------->
+<!----------------------------- 278. something went wrong (336) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image278.png?raw=true"
@@ -21515,4 +21524,4 @@ Here are a few project ideas. Your classmates and the team who prepared the cour
 
 . . .The end.
 
-<!--- last updated 10-14-22 8:54pm --->
+<!--- last updated 10-16-22 4:17pm --->
