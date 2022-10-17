@@ -6073,34 +6073,34 @@ The stream is passed as a parameter to the then() method returned by the promi
 ```
 <video id="myVideo" autoplay>Fallback msg here.</video>
 <script>
-if (navigator.mediaDevices.getUserMedia) {
-// request video and audio stream from the user's webcam
-navigator.mediaDevices.getUserMedia({
-audio: true,
-video: true
-}).then((stream) => {
-let video = document.querySelector('#myVideo');
-video.srcObject = stream;
-video.play();
-}).catch((error) => {
-console.log('navigator.getUserMedia error: ', error);
-});
-}
+  if (navigator.mediaDevices.getUserMedia) {
+  // request video and audio stream from the user's webcam
+  navigator.mediaDevices.getUserMedia({
+  audio: true,
+  video: true
+  }).then((stream) => {
+  let video = document.querySelector('#myVideo');
+  video.srcObject = stream;
+  video.play();
+  }).catch((error) => {
+  console.log('navigator.getUserMedia error: ', error);
+  });
+  }
 </script>
 We can also simplify the code by using a writing with async/await of JavaScript:
 <video id="myVideo" autoplay>Fallback msg here.</video>
 <script>
-async function startWebCam() {
-// request video and audio stream from the user's webcam
-let stream = await navigator.mediaDevices.getUserMedia({
-audio: true,
-video: true
-});
-let video = document.querySelector('#myVideo');
-video.srcObject = stream;
-video.play();
-}
-startWebCam();
+  async function startWebCam() {
+  // request video and audio stream from the user's webcam
+  let stream = await navigator.mediaDevices.getUserMedia({
+  audio: true,
+  video: true
+  });
+  let video = document.querySelector('#myVideo');
+  video.srcObject = stream;
+  video.play();
+  }
+  startWebCam();
 </script>
 ```
 
@@ -6135,36 +6135,36 @@ Let's see some more examples of what we can do with the getUserMedia API: start/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Webcam start/stop</title>
-<script>
-let webcamStream;
-function startWebcam() {
-// request video and audio stream from the user's webcam
-navigator.mediaDevices.getUserMedia({
-audio: true,
-video: true
-}).then((stream) => {
-let video = document.querySelector('#video');
-video.srcObject = stream;
-video.play();
-webcamStream = stream;
-}).catch((error) => {
-console.log('navigator.getUserMedia error: ', error);
-});
-}
-function stopWebcam() {
-webcamStream.getTracks()[0].stop(); // audio
-webcamStream.getTracks()[1].stop(); // video
-}
-</script>
+  <meta charset="utf-8">
+  <title>Webcam start/stop</title>
+  <script>
+    let webcamStream;
+    function startWebcam() {
+      // request video and audio stream from the user's webcam
+      navigator.mediaDevices.getUserMedia({
+      audio: true,
+      video: true
+      }).then((stream) => {
+      let video = document.querySelector('#video');
+      video.srcObject = stream;
+      video.play();
+      webcamStream = stream;
+      }).catch((error) => {
+      console.log('navigator.getUserMedia error: ', error);
+      });
+      }
+    function stopWebcam() {
+      webcamStream.getTracks()[0].stop(); // audio
+      webcamStream.getTracks()[1].stop(); // video
+      }
+  </script>
 </head>
 <body >
-<video width=400 height=400 id="video" controls></video>
-<p>
-<button onclick="startWebcam();">Start WebCam</button>
-<button onclick="stopWebcam();">Stop WebCam</button>
-</p>
+  <video width=400 height=400 id="video" controls></video>
+  <p>
+    <button onclick="startWebcam();">Start WebCam</button>
+    <button onclick="stopWebcam();">Stop WebCam</button>
+  </p>
 </body>
 </html>
 ```
@@ -6212,8 +6212,8 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 31. <body>
 32.   <video width=400 height=400 id="video" controls></video>
 33.   <p>
-34.   <button onclick="startWebcam();">Start WebCam</button>
-35.   <button onclick="stopWebcam();">Stop WebCam</button>
+34.     <button onclick="startWebcam();">Start WebCam</button>
+35.     <button onclick="stopWebcam();">Stop WebCam</button>
 36.   </p>
 37. </body>
 38. </html>
@@ -6256,44 +6256,44 @@ Try this example that shows how to use the getUserMedia API. Note the CSS effect
 let video;
 let webcamStream;
 function startWebcam() {
-// request video and audio stream from the user's webcam
-navigator.mediaDevices.getUserMedia({
-audio: true,
-video: true
-}).then((stream) => {
-let video = document.querySelector('#video');
-video.srcObject = stream;
-video.play();
-webcamStream = stream;
-}).catch((error) => {
-console.log('navigator.getUserMedia error: ', error);
-});
-}
+  // request video and audio stream from the user's webcam
+  navigator.mediaDevices.getUserMedia({
+  audio: true,
+  video: true
+  }).then((stream) => {
+  let video = document.querySelector('#video');
+  video.srcObject = stream;
+  video.play();
+  webcamStream = stream;
+  }).catch((error) => {
+  console.log('navigator.getUserMedia error: ', error);
+  });
+  }
 function stopWebcam() {
-webcamStream.getTracks()[0].stop(); // audio
-webcamStream.getTracks()[1].stop(); // video
-}
-//------------------------------
-// CODE FOR CHANGING CSS FILTERS
-//------------------------------
-let idx = 0;
-let filters = [
-'grayscale',
-'sepia',
-'blur',
-'brightness',
-'contrast',
-'hue-rotate', 'hue-rotate2', 'hue-rotate3',
-'saturate',
-'invert'
-];
+  webcamStream.getTracks()[0].stop(); // audio
+  webcamStream.getTracks()[1].stop(); // video
+  }
+  //------------------------------
+  // CODE FOR CHANGING CSS FILTERS
+  //------------------------------
+  let idx = 0;
+  let filters = [
+  'grayscale',
+  'sepia',
+  'blur',
+  'brightness',
+  'contrast',
+  'hue-rotate', 'hue-rotate2', 'hue-rotate3',
+  'saturate',
+  'invert'
+  ];
 function changeFilter(el) {
-// Remove all CSS classes for element el
-el.className = '';
-// Choose a CSS class name
-console.log("toggling effect: " + filters[idx  filters.length]);
-let effect = filters[idx++ % filters.length];
-el.classList.add(effect);
+  // Remove all CSS classes for element el
+  el.className = '';
+  // Choose a CSS class name
+  console.log("toggling effect: " + filters[idx  filters.length]);
+  let effect = filters[idx++ % filters.length];
+  el.classList.add(effect);
 }
 ```
 
@@ -6385,7 +6385,6 @@ Click the button "start webcam at the end of this page, then click on the video 
 
 The trick is to copy and paste the current image from the video stream into a &lt;canvas&gt; element.
 
-
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 109. take a snapshot from live webcam stream (129) ----------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -6410,38 +6409,38 @@ The trick is to copy and paste the current image from the video stream into a 
 let video;
 let webcamStream;
 function startWebcam() {
-// request video and audio stream from the user's webcam
-navigator.mediaDevices.getUserMedia({
-audio: true,
-video: true
->
-}).then((stream) => {
-video = document.querySelector('#video');
-video.srcObject = stream;
-video.play();
-webcamStream = stream;
-}).catch((error) => {
-console.log('navigator.getUserMedia error: ', error);
-});
-}
+  // request video and audio stream from the user's webcam
+  navigator.mediaDevices.getUserMedia({
+  audio: true,
+  video: true
+  >
+  }).then((stream) => {
+  video = document.querySelector('#video');
+  video.srcObject = stream;
+  video.play();
+  webcamStream = stream;
+  }).catch((error) => {
+  console.log('navigator.getUserMedia error: ', error);
+  });
+  }
 function stopWebcam() {
-webcamStream.getTracks()[0].stop(); // audio
-webcamStream.getTracks()[1].stop(); // video
-}
-//---------------------
-// TAKE A SNAPSHOT CODE
-//---------------------
-var canvas, ctx;
+  webcamStream.getTracks()[0].stop(); // audio
+  webcamStream.getTracks()[1].stop(); // video
+  }
+  //---------------------
+  // TAKE A SNAPSHOT CODE
+  //---------------------
+  var canvas, ctx;
 function init() {
-// Get the canvas and obtain a context for
-// drawing in it
-canvas = document.getElementById("myCanvas");
-ctx = canvas.getContext('2d');
-}
+  // Get the canvas and obtain a context for
+  // drawing in it
+  canvas = document.getElementById("myCanvas");
+  ctx = canvas.getContext('2d');
+  }
 function snapshot() {
-// Draws current image from the video element into the canvas
-ctx.drawImage(video, 0,0, canvas.width, canvas.height);
-}
+  // Draws current image from the video element into the canvas
+  ctx.drawImage(video, 0,0, canvas.width, canvas.height);
+  }
 ```
 
 </details>
@@ -6464,21 +6463,21 @@ border:1px solid black;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>WebCam screenshot</title>
-<meta charset="utf-8"/>
+  <title>WebCam screenshot</title>
+  <meta charset="utf-8"/>
 </head>
 <body onload="init();">
-<h1>Take a snapshot of the current video stream</h1>
-Check the CSS and JavaScript tabs. Click on the Start WebCam button.
-<p>
-<button onclick="startWebcam();">Start WebCam</button>
-<button onclick="stopWebcam();">Stop WebCam</button>
-<button onclick="snapshot();">Prendre un screenshot</button>
-</p>
-<video onclick="snapshot(this);" width=200 height=200 id="video" controls autoplay></video>
-<p>
-Screenshots : <p>
-<canvas id="myCanvas" width="200" height="150"></canvas>
+  <h1>Take a snapshot of the current video stream</h1>
+    Check the CSS and JavaScript tabs. Click on the Start WebCam button.
+  <p>
+    <button onclick="startWebcam();">Start WebCam</button>
+    <button onclick="stopWebcam();">Stop WebCam</button>
+    <button onclick="snapshot();">Prendre un screenshot</button>
+  </p>
+  <video onclick="snapshot(this);" width=200 height=200 id="video" controls autoplay></video>
+  <p>
+    Screenshots : </p>
+  <canvas id="myCanvas" width="200" height="150"></canvas>
 </body>
 </html>
 ```
@@ -6493,7 +6492,9 @@ We will look at this example in greater detail in the next course section (relat
 
 -   <a href="https://webcamtoy.com/">Webcam Toy</a>: video effects on Paul Neave's webcam (using WebGL)
 
-<h3>2.4.3 Using the Microphone</h3>
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch2-4-3">2.4.3 Using the Microphone</h3>
+<!------------------------------------------------------------------------------------------------>
 
 Instead of using the getUserMedia API with: navigator.getUserMedia({video:true}, onSuccess, onError), it is also possible to use {audio:true} for the first parameter. In this case, only the microphone input will be captured. Notice that {video:true, audio:true} is also accepted, if you write a video conferencing system and need to capture both the audio and the video (this is often the case when writing WebRTC applications).
 
@@ -6512,7 +6513,9 @@ The image below is taken from <a href="https://webaudiodemos.appspot.com/input/
   alt="WebAudio Live Processing." />
 </p>
 
-<h3>2.4.4 Webcam Resolution</h3>
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch2-4-4">2.4.4 Webcam Resolution</h3>
+<!------------------------------------------------------------------------------------------------>
 <p>
 It is possible to set "hints" for the preferred cam/resolution during video capture. This is done by using a ["constraint" object ](https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4)that is passed as a parameter to the getUserMedia(...) method. It's just the same object we passed in the basic example: navigator.getUserMedia({video:true}, success, error) except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.
 
@@ -6537,72 +6540,72 @@ For more information, this <a href="https://developer.mozilla.org/en-US/docs/We
 ```
 var vgaButton, qvgaButton, hdButton, dimensions, video, stream;
 function init() {
-vgaButton = document.querySelector('button#vga');
-qvgaButton = document.querySelector('button#qvga');
-hdButton = document.querySelector('button#hd');
-dimensions = document.querySelector('p#dimensions');
-video = document.querySelector('video');
-// Defines event listeners for the buttons that set the resolution
-qvgaButton.onclick = function() {
-getMedia(qvgaConstraints);
-};
-vgaButton.onclick = function() {
-getMedia(vgaConstraints);
-};
-hdButton.onclick = function() {
-getMedia(hdConstraints);
-};
-// Trick: check regularly the size of the video element and display it
-// When getUserMedia is called the video element changes it sizes but for
-// a while its size is zero pixels... o we check every half a second
-video.addEventListener('play', function() {
-setTimeout(function() {
-displayVideoDimensions();
-}, 500);
-});
-}
-// The different values for the constraints on resolution
-var qvgaConstraints = {
-video: {
-width: { max: 320 },
-height: { max: 180 }
-}
-};
-var vgaConstraints = {
-video: {
-width: { max: 640 },
-height: { max: 360 }
-}
-};
-var hdConstraints = {
-video: {
-width: { min: 1280 },
-height: { min: 720 }
-}
-};
-// The function that is called when a button has been clicked: starts the video^
-// with the preferred resolution^
+  vgaButton = document.querySelector('button#vga');
+  qvgaButton = document.querySelector('button#qvga');
+  hdButton = document.querySelector('button#hd');
+  dimensions = document.querySelector('p#dimensions');
+  video = document.querySelector('video');
+  // Defines event listeners for the buttons that set the resolution
+  qvgaButton.onclick = function() {
+  getMedia(qvgaConstraints);
+  };
+  vgaButton.onclick = function() {
+  getMedia(vgaConstraints);
+  };
+  hdButton.onclick = function() {
+  getMedia(hdConstraints);
+  };
+  // Trick: check regularly the size of the video element and display it
+  // When getUserMedia is called the video element changes it sizes but for
+  // a while its size is zero pixels... o we check every half a second
+  video.addEventListener('play', function() {
+  setTimeout(function() {
+  displayVideoDimensions();
+  }, 500);
+  });
+  }
+  // The different values for the constraints on resolution
+  var qvgaConstraints = {
+  video: {
+  width: { max: 320 },
+  height: { max: 180 }
+  }
+  };
+  var vgaConstraints = {
+  video: {
+  width: { max: 640 },
+  height: { max: 360 }
+  }
+  };
+  var hdConstraints = {
+  video: {
+  width: { min: 1280 },
+  height: { min: 720 }
+  }
+  };
+  // The function that is called when a button has been clicked: starts the video^
+  // with the preferred resolution^
 function getMedia(constraints) {^
-if (!!stream) {^
-video.srcObject = null;^
-stream.getTracks()[0].stop();^
-}^
-navigator.mediaDevices.getUserMedia(constraints)^
-.then((stream) => {^
-video.srcObject = stream;^
-video.play();^
-window.stream = stream;^
-})
-.catch((error) =>{^
-console.log('navigator.getUserMedia error: ', error);^
-});^
-}^
-^// util function that is called by the setInterval(...) every 0.5s, for^
-^// displaying the video dimensions^
-^function displayVideoDimensions() {^
-^dimensions.innerHTML = 'Actual video dimensions: ' + video.videoWidth +^
-^'x' + video.videoHeight + 'px.';^
-^}^
+  if (!!stream) {^
+  video.srcObject = null;^
+  stream.getTracks()[0].stop();^
+  }^
+  navigator.mediaDevices.getUserMedia(constraints)^
+  .then((stream) => {^
+  video.srcObject = stream;^
+  video.play();^
+  window.stream = stream;^
+  })
+  .catch((error) =>{^
+  console.log('navigator.getUserMedia error: ', error);^
+  });^
+  }^
+  ^// util function that is called by the setInterval(...) every 0.5s, for^
+  ^// displaying the video dimensions^
+  ^function displayVideoDimensions() {^
+  ^dimensions.innerHTML = 'Actual video dimensions: ' + video.videoWidth +^
+  ^'x' + video.videoHeight + 'px.';^
+  ^}^
 ```
 
 </details>
@@ -6780,7 +6783,7 @@ For example, the MediaRecorder API is used to record the video stream from a Web
 <p align="center" width="100%">
 <img src="./images/image114.jpeg?raw=true"
    width="40%"
-   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element" />	
+   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element." />	
 </p>
 
 Let's record, replay and download the video stream captured using a Webcam. You can test it below by clicking on "CodePen" at the top right:
@@ -6813,64 +6816,64 @@ gumVideo.srcObject = stream;
 console.log('navigator.getUserMedia error: ', error);
 });
 function handleDataAvailable(event) {
-if (event.data && event.data.size > 0) {
-recordedBlobs.push(event.data);
-}
-}
+  if (event.data && event.data.size > 0) {
+  recordedBlobs.push(event.data);
+  }
+  }
 function handleStop(event) {
-console.log('Recorder stopped: ', event);
-}
+  console.log('Recorder stopped: ', event);
+  }
 function toggleRecording() {
-if (recordButton.textContent === 'Start Recording') {
-startRecording();
-} else {
-stopRecording();
-recordButton.textContent = 'Start Recording';
-playButton.disabled = false;
-downloadButton.disabled = false;
-}
-}
-// create the media recorder
+  if (recordButton.textContent === 'Start Recording') {
+    startRecording();
+  } else {
+    stopRecording();
+    recordButton.textContent = 'Start Recording';
+    playButton.disabled = false;
+    downloadButton.disabled = false;
+    }
+  }
+  // create the media recorder
 function startRecording() {
-recordedBlobs = [];
-try {
-mediaRecorder = new MediaRecorder(window.stream);
-} catch (e) {
-console.error('Exception while creating MediaRecorder: ' + e);
-return;
+  recordedBlobs = [];
+  try {
+    mediaRecorder = new MediaRecorder(window.stream);
+  } catch (e) {
+  console.error('Exception while creating MediaRecorder: ' + e);
+  return;
+  }
+  console.log('Created MediaRecorder', mediaRecorder);
+  recordButton.textContent = 'Stop Recording';
+  playButton.disabled = true;
+  downloadButton.disabled = true;
+  mediaRecorder.onstop = handleStop;
+  mediaRecorder.ondataavailable = handleDataAvailable;
+  mediaRecorder.start(10); // collect 10ms of data
+  console.log('MediaRecorder started', mediaRecorder);
+  }
+function stopRecording() {
+  mediaRecorder.stop();
+  console.log('Recorded Blobs: ', recordedBlobs);
+  recordedVideo.controls = true;
+  }
+function play() {
+  var superBuffer = new Blob(recordedBlobs, {type: 'video/webm'});
+  recordedVideo.src = window.URL.createObjectURL(superBuffer);
+  }
+function download() {
+  var blob = new Blob(recordedBlobs, {type: 'video/webm'});
+  var url = window.URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.style.display = 'none';
+  a.href = url;
+  a.download = 'test.webm';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(function() {
+  document.body.removeChild(a);
+  window.URL.revokeObjectURL(url);
+  }, 100);
 }
-console.log('Created MediaRecorder', mediaRecorder);
-recordButton.textContent = 'Stop Recording';
-playButton.disabled = true;
-downloadButton.disabled = true;
-mediaRecorder.onstop = handleStop;
-mediaRecorder.ondataavailable = handleDataAvailable;
-mediaRecorder.start(10); // collect 10ms of data
-console.log('MediaRecorder started', mediaRecorder);
-}
-> function stopRecording() {
-> mediaRecorder.stop();
-> console.log('Recorded Blobs: ', recordedBlobs);
-> recordedVideo.controls = true;
-> }
-> function play() {
-> var superBuffer = new Blob(recordedBlobs, {type: 'video/webm'});
-> recordedVideo.src = window.URL.createObjectURL(superBuffer);
-> }
-> function download() {
-> var blob = new Blob(recordedBlobs, {type: 'video/webm'});
-> var url = window.URL.createObjectURL(blob);
-> var a = document.createElement('a');
-> a.style.display = 'none';
-> a.href = url;
-> a.download = 'test.webm';
-> document.body.appendChild(a);
-> a.click();
-> setTimeout(function() {
-> document.body.removeChild(a);
-> window.URL.revokeObjectURL(url);
-> }, 100);
-> }
 ```
 
 </details>
@@ -6942,23 +6945,24 @@ margin: 0 10px 10px 0;
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>MediaRecorder API usage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MediaRecorder API usage</title>
 </head>
 <body>
-<div id="container">
-<h1><a href="//webrtc.github.io/samples/" title="WebRTC samples homepage">WebRTC example:</a> <span>MediaRecorder</span></h1>
-<p>For more info, see the <a href="https://w3c.github.io/mediacapture-record/MediaRecorder.html" title="W3C MediaStream Recording API - Editor's Draft">MediaStream Recording API Editor's Draft</a>.</p>
-<video id="gum" autoplay muted></video>
-<video id="recorded" loop controls></video>
-<div>
-<button id="record" disabled>Start Recording</button>
-<button id="play" disabled>Play</button>
-<button id="download" disabled>Download</button>
-</div>
-<a href="https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
-</div>
+  <div id="container">
+    <h1><a href="//webrtc.github.io/samples/" title="WebRTC samples homepage">WebRTC example:</a> <span>MediaRecorder</span></h1>
+    <p>For more info, see the <a href="https://w3c.github.io/mediacapture-record/MediaRecorder.html" 
+      title="W3C MediaStream Recording API - Editor's Draft">MediaStream Recording API Editor's Draft</a>.</p>
+      <video id="gum" autoplay muted></video>
+      <video id="recorded" loop controls></video>
+    <div>
+      <button id="record" disabled>Start Recording</button>
+      <button id="play" disabled>Play</button>
+      <button id="download" disabled>Download</button>
+    </div>
+    <a href="https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+  </div>
 </body>
 </html>
 ```
