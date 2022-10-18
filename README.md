@@ -15958,12 +15958,12 @@ The example shown in the video shows some best practices for writing accessible 
 The following additional example shows the same best practices but presents a more complete form with CSS rules to make a nice layout. See it [online](https://jsbin.com/zubitex/1/edit?html,output), and illustrated with the screenshot below. It is adapted from <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form">this very good MDN's article "How to structure a web form"</a>.
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 216. form layout example (294) --------------------------------->
+<!--------------------------- 216. payment form layout example (294) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image216.jpeg?raw=true"
-   width="35%"
-   alt="Payment form layout example." />
+  width="35%"
+  alt="Payment form layout example." />
 &nbsp;
 <br/>
 
@@ -16008,12 +16008,12 @@ Forms can be visually and cognitively complex and difficult to use. Accessible f
 Form fields and other form controls usually have visible labels, such as "E-mail Address:" as the label for a text field (see figure below).
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 217. e-mail form label text (xxx) ------------------------------->
+<!------------------------------ 217. e-mail form label text (295) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image217.png?raw=true"
-   width="25%"
-   alt="E-mail form label text." />
+  width="25%"
+  alt="E-mail form label text." />
 &nbsp;
 <br/>
 
@@ -16027,15 +16027,15 @@ Whenever possible, use the label element to explicitly associate text with for
 
 Click on the label, not on the input field to see the effect.
 
-<!---
-Top of Form
-
-First name:![](./images/image218.wmf)
---->
-
-<h4>Source code:</h4>
-
-<p>Bottom of Form</p>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 218. example 1 first name (296) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image218.png?raw=true"
+  width="25%"
+  alt="Example #1: First name:" />
+&nbsp;
+<br/>
 
 ```
 1.  <label for="first_name">Your First Name</label>
@@ -16058,15 +16058,18 @@ Note that you can also include the &lt;input&gt; element inside the &lt;label
 <p>
 Click on the label "Subscribe to newsletter" to see what this does.
 </p>
-<!--
-First name:![](./images/image218.wmf)
-Subscribe to newsletter![](./images/image219.wmf)
--->
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 219. example 3 first name / subscribe checkbox (296) --------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image219.png?raw=true"
+  width="25%"
+  alt="Example #3: First name:" />
+&nbsp;
+<br/>
 
 <h4>Source code:</h4>
-<!--
-Bottom of Form
--->
 
 ```
 1. <label for="firstname">First name:</label>
@@ -16095,19 +16098,23 @@ value="Please submit"&gt;, renders a text button.
 
 These give the same results:
 
-<i>Lines 1 and 2</i> render as:
-<b>Submit Cancel</b>
-
-... while <i>lines 3 and 4</i> render as:
-<!-- submit
-![](./images/image220.wmf)
--->
-
-<h4>Labeling text areas</h4>
-<!-- rectangle box
-Enter your address:
-![](./images/image221.wmf)
--->
+<!------------------------------------------------------------------------------------------------>
+<!------------------------- 220. lines 1 and 2 with lines 3 and 4 (297) -------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image220.png?raw=true"
+  width="65%"
+  alt="Lines 1 and 2 render as...While 3 and 4 render as..." />
+&nbsp;
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 221. labeling text areas (297) --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image221.png?raw=true"
+  width="55%"
+  alt="Labeling text areas. Enter your address." />
+&nbsp;
+<br/>
 
 <h4>Source code:</h4>
 
@@ -16129,17 +16136,17 @@ Grouping needs to be carried out visually and in the code, for example, by using
 
 In the example below, there are three radio buttons that allow the user to choose an output format. Radio button groups should always be grouped using &lt;fieldset&gt;.
 
-Output format:
+<h4>Output format:</h4>
 
-<!---
-![](./images/image222.wmf)Text file
-
-![](./images/image222.wmf)CSV file
-
-![](./images/image222.wmf)HTML file
---->
-
-Bottom of Form
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------------- 222. radio buttons 3 (298) ----------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image222.png?raw=true"
+  width="25%"
+  alt="Three radio buttons; Text, CSV or HTML." />
+&nbsp;
+<br/>
 
 <h4>Source code:</h4>
 
@@ -16167,18 +16174,15 @@ Bottom of Form
 
 In the example below, there are three checkboxes that are all part of an opt-in function for receiving different types of information.
 
-Top of Form
-
-I want to receive
-<!---
-![](./images/image219.wmf)The weekly newsletter
-
-![](./images/image219.wmf)Offers from the company
-
-![](./images/image219.wmf)Offers from associated companies
---->
-
-Bottom of Form
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------------- 223. check boxes 3 (298) ------------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image223.png?raw=true"
+  width="55%"
+  alt="Three Check boxes." />
+&nbsp;
+<br/>
 
 <h4>Source code:</h4>
 
@@ -16221,8 +16225,8 @@ Now, let's play with some of these input types and attributes.
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image223.jpeg?raw=true"
-   width="20%"
-   alt="HTML4 old HTML5." />
+  width="20%"
+  alt="HTML4 old HTML5." />
 &nbsp;
 <br/>
 
@@ -16239,8 +16243,8 @@ Here is how it looks on some mobile devices:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image224.jpeg?raw=true"
-   alt="HTML5 input type=color on an android phone."
-   width="40%" />
+  width="40%"
+  alt="HTML5 input type=color on an android phone." />
 &nbsp;
 <br/>
 
@@ -16290,7 +16294,7 @@ The &lt;input type="color"> can fire change or input events. Here is an ex
 Source code:
 
 <details>
- <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 ```
 <!DOCTYPE html>
@@ -16323,10 +16327,9 @@ Example: click the black rectangle on the right:  . The following should be di
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image227.jpeg?raw=true"
-   width="40%"
-   alt="Restricted choice of colors." />
+  width="40%"
+  alt="Restricted choice of colors." />
 &nbsp;
-
 <!-- {width="3.0in" height="1.872483595800525in"} -->
 
 <a href="https://jsbin.com/lahapu/edit?html,output">Online example at JSBin</a>
@@ -21120,8 +21123,8 @@ Google reverse geocoding example (screenshot only):</p>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image330.png?raw=true"
-   width="45%"
-   alt="Example #1 How to get a physical address from the longitude and latitude." />
+  width="45%"
+  alt="Example #1 How to get a physical address from the longitude and latitude." />
 </p>
 
 <p>Source code of this example (in order to run it, you need a Google API key, used at <i>line 6</i>).</p>
@@ -21223,8 +21226,8 @@ Gisgraphy (free service) reverse geocoding example (screenshot only, click on it
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image331.png?raw=true"
-   width="65%"
-   alt="Gisgraphy screenshot." />
+  width="65%"
+  alt="Gisgraphy screenshot." />
 </p>
 
 <h4><b>Example #2:</b> reverse geocoding + OpenStreetMap</h4>
@@ -21237,8 +21240,8 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image332.png?raw=true"
-   width="65%"
-   alt="Reverse Geocoding - OpenStreetMap." />
+  width="65%"
+  alt="Reverse Geocoding - OpenStreetMap." />
 </p>
 
 <h4>HTML</h4>
@@ -21528,4 +21531,4 @@ Here are a few project ideas. Your classmates and the team who prepared the cour
 
 . . .The end.
 
-<!--- last updated 10-16-22 4:17pm --->
+<!--- last updated 10-18-22 12:02pm --->
