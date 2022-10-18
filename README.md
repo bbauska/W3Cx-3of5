@@ -18980,6 +18980,9 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 
 <h4>Complete source code:</h4>
 
+<details>
+ <summary>Click to expand!</summary>
+
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
@@ -19087,6 +19090,8 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 104. </body>
 105. </html>
 ```
+
+</details>
 
 <h4>Explanations:</h4>
 
