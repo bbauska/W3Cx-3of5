@@ -88,33 +88,6 @@
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
-<!--
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-.active, .accordion:hover {
-  background-color: #ccc; 
-}
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: red;
-  overflow: hidden;
-}
-</style>
---->
 
 <h2 id-"cha-1">About W3C and the Web</h2>
 
@@ -395,9 +368,9 @@ W3C's primary activity is to develop protocols and guidelines that ensure long-t
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image010.jpeg?raw=true"
-   alt="Tim Berners-Lee at his desk in CERN, Switzerland, 1994"
-   width="65%">
-&nbsp;
+  alt="Tim Berners-Lee at his desk in CERN, Switzerland, 1994"
+  width="65%" />
+</p>
 <br/>
 
 <h6 align="center">Tim Berners-Lee at his desk in CERN, 1994</h6>
@@ -571,7 +544,7 @@ Text alternatives ("alt text") are a primary way of making visual information ac
 <img src="./images/image011.png?raw=true"
    alt="W3C logo."
    width="15%" />
-&nbsp;
+</p>
 <br/>
 
 <p align="center"><a href="https://www.w3.org/Icons/w3c_home" target="_blank" rel="noopener noreferrer">W3C Home</a></p>
@@ -588,8 +561,8 @@ Text alternatives ("alt text") are a primary way of making visual information ac
 <p align="center">
 <img src="./images/image012.png?raw=true"
    alt="HTML5 logo"
-   width="15%">
-&nbsp;
+   width="15%" />
+</p>
 <br/>
 
 ```
@@ -612,7 +585,7 @@ Text alternatives ("alt text") are a primary way of making visual information ac
 <img src="./images/image013.jpeg?raw=true"
    alt="Some of the new structural elements introduced by HTML5: section, article, etc."
    width="55%" />
-&nbsp;
+</p>
 <br/>
 
 <h4>History</h4>
@@ -708,8 +681,8 @@ Let's study <a href="https://jsbin.com/bucokav/edit?html,output">an example we 
 <p align="center">
 <img src="./images/image014.jpeg?raw=true"
    alt="Simple HTML5 Blog"
-   width="25%">
-&nbsp;
+   width="25%" />
+</p>
 <br/>
 <p>
 This is an example of one way to organize a blog. Here, we have designed the HTML page using a &lt;header&gt; element that contains the "Simple HTML5 blog" text that appears on top of the page.</p>
@@ -887,7 +860,7 @@ section h2 {
 <p align="center">
 <img src="./images/image017.jpeg?raw=true"
    alt="Image of the header at the top of each article."
-   width="55%">
+   width="55%" />
 &nbsp;
 <br/>
 <p>
@@ -979,8 +952,9 @@ Here is the CSS for the &lt;figcaption&gt; element we have used in the example
 <p align="center">
 <img src="./images/image019.jpeg?raw=true"
    alt="Image of tag cloud defined as aside element."
-   width="35%">
-&nbsp;
+   width="35%" />
+</p>
+
 <br/>
 
 <details>
@@ -1043,7 +1017,7 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 <p align="center">
 <img src="./images/image020.jpeg?raw=true"
    alt="The aside tag cloud on the right."
-   width="65%">
+   width="65%" />
 &nbsp;
 <br/>
 
@@ -19704,8 +19678,8 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image304.png?raw=true"
-   width="65%"
-   alt="JSON Save/Load in local storage." />
+  width="65%"
+  alt="JSON Save/Load in local storage." />
 &nbsp;
 <br/>
 
@@ -19758,8 +19732,8 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image305.png?raw=true"
-   width="65%"
-   alt="How to save a form's content in localStorage using JSON." />
+  width="65%"
+  alt="How to save a form's content in localStorage using JSON." />
 &nbsp;
 <br/>
 
@@ -19774,8 +19748,8 @@ Add contacts using the form, see how the HTML table is updated. Try to reload th
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image306.jpeg?raw=true"
-   width="65%"
-   alt="Serverless Contact Manager." />
+  width="65%"
+  alt="Serverless Contact Manager." />
 &nbsp;
 <br/>
 
@@ -19786,8 +19760,8 @@ Examine the localStorage:
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image307.png?raw=true"
-   width="65%"
-   alt="localStorage view in devtools shows the data." />
+  width="65%"
+  alt="localStorage view in devtools shows the data." />
 &nbsp;
 <br/>
 
@@ -19810,8 +19784,8 @@ The objective of this chapter is to provide an overview of the File API.
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image308.jpeg?raw=true"
-   width="45%"
-   alt="Sound sample editor serverless." />
+  width="45%"
+  alt="Sound sample editor serverless." />
 &nbsp;
 
 Before HTML5, file management was limited to multipart forms and to Ajax for sending/requesting files to/from a remote Web server.
@@ -19825,8 +19799,8 @@ Imagine a multimedia player that accesses (in read-only) your file system, reads
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image309.jpeg?raw=true"
-   width="45%"
-   alt="Audio player that plays local files." />
+  width="45%"
+  alt="Audio player that plays local files." />
 &nbsp;
 
 <!------------------------------------------------------------------------------------------------>
@@ -19834,8 +19808,8 @@ Imagine a multimedia player that accesses (in read-only) your file system, reads
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image310.jpeg?raw=true"
-   width="45%"
-   alt="polarr photo editor uses the File API." />
+  width="45%"
+  alt="polarr photo editor uses the File API." />
 &nbsp;
 
 <h4>External resources</h4>
