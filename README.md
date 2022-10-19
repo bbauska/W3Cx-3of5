@@ -30,7 +30,7 @@
   <li><a href="#cha-4">W3C tools</a></li>
 </ol>
 
-<ol list-style-type:lower-roman>
+<ol type="i">
   <li><a href="#chb">Course Introduction and Practical Information</a></li>
   <li><a style="margin-left: 2rem;" href="#chb-1" Sub-Heading">Course syllabus</a></li>
   <li><a style="margin-left: 2rem;" href="#chb-2" Sub-Heading">Getting around the course</a></li>
@@ -110,7 +110,7 @@
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: white;
+  background-color: red;
   overflow: hidden;
 }
 </style>
