@@ -5245,8 +5245,8 @@ The &lt;track&gt; element cannot be used with a file:// URL. Please use htt
 
 ```
 <Files mysubtitle.vtt>
-2.  ForceType text/vtt;charset=utf-8
-3.  </Files>
+  ForceType text/vtt;charset=utf-8
+</Files>
 ```
 
 <p>
@@ -5268,17 +5268,17 @@ The example uses a &lt;track&gt; element to insert basic captions to the vid
 </p>
 
 ```
-<video height="272" width="640"
-       poster="https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg"
-       crossorigin="anonymous"
-       controls>
-   <source src="https://mainline.i3s.unice.fr/mooc/sintel.mp4"
-           type="video/mp4">
-   <source src="https://mainline.i3s.unice.fr/mooc/sintel.webm"
-           type="video/webm">
-   <track src="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt"
-          kind="captions" label="Closed Captions" default>
-</video>
+1. <video height="272" width="640"
+2.        poster="https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg"
+3.        crossorigin="anonymous"
+4.        controls>
+5.    <source src="https://mainline.i3s.unice.fr/mooc/sintel.mp4"
+6.            type="video/mp4">
+7.    <source src="https://mainline.i3s.unice.fr/mooc/sintel.webm"
+8.            type="video/webm">
+9.    <track src="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt"
+10.           kind="captions" label="Closed Captions" default>
+11. </video>
 ```
 
 <h4>Notes:</h4>
@@ -21498,4 +21498,4 @@ Here are a few project ideas. Your classmates and the team who prepared the cour
 
 . . .The end.
 
-<!--- last updated 10-18-22 12:02pm --->
+<!--- last updated 10-18-22 6:56pm --->
