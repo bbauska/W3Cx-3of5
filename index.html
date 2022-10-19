@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>index.html</title>
+  <title>readme</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -88,7 +88,7 @@ W3Cx Front-End Web Developer
 </h2>
 <p><br/></p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- index.htlm of W3Cx-3of5-HTML5.1x ------------------------------->
+<!------------------------------- readme.md of W3Cx-3of5-HTML5.1x -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------------- w3cx logo (01) ----------------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -2259,18 +2259,18 @@ Ok version (no explicit sections everywhere):
 <summary>
 Click to expand!
 </summary>
-<pre><code>&lt;body&gt;
-  &lt;h4&gt;Apples&lt;/h4&gt;
-  &lt;p&gt;Apples are fruit.&lt;/p&gt;
-  &lt;section&gt;
-    &lt;h2&gt;Taste&lt;/h2&gt;
-    &lt;p&gt;They taste lovely.&lt;/p&gt;
-    &lt;h6&gt;Sweet&lt;/h6&gt;
-    &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
-    &lt;h1&gt;Color&lt;/h1&gt;
-    &lt;p&gt;Apples come in various colors.&lt;/p&gt;
-  &lt;/section&gt;
-&lt;/body&gt;</code></pre>
+<pre><code>1.  &lt;body&gt;
+2.    &lt;h4&gt;Apples&lt;/h4&gt;
+3.    &lt;p&gt;Apples are fruit.&lt;/p&gt;
+4.    &lt;section&gt;
+5.      &lt;h2&gt;Taste&lt;/h2&gt;
+6.      &lt;p&gt;They taste lovely.&lt;/p&gt;
+7.      &lt;h6&gt;Sweet&lt;/h6&gt;
+8.      &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
+9.      &lt;h1&gt;Color&lt;/h1&gt;
+10.     &lt;p&gt;Apples come in various colors.&lt;/p&gt;
+11.   &lt;/section&gt;
+12. &lt;/body&gt;</code></pre>
 </details>
 <h4>
 Better version (best practice):
@@ -2374,27 +2374,26 @@ the fact that the “type” attribute of elements such as <link> or 
  &lt;summary&gt;Click to expand!&lt;/summary&gt;
 
 ```html5
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;https://www.w3.org/TR/html4/strict.dtd&quot;&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta http-equiv[=&quot;content-type&quot; ]content[=&quot;text/html&quot;]charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;title&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; type[=&quot;text/css&quot;] href=&quot;style.css&quot;&gt;
-  &lt;script type[=&quot;text/javascript&quot;] src=&quot;script.js&quot;&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  ...
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+1.  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;https://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+2.  &lt;html lang=&quot;en&quot;&gt;
+3.  &lt;head&gt;
+4.    &lt;meta http-equiv[=&quot;content-type&quot; ]content[=&quot;text/html&quot;]charset=&quot;utf-8&quot;&gt;
+5.    &lt;title&gt;title&lt;/title&gt;
+6.    &lt;link rel=&quot;stylesheet&quot; type[=&quot;text/css&quot;] href=&quot;style.css&quot;&gt;
+7.    &lt;script type[=&quot;text/javascript&quot;] src=&quot;script.js&quot;&gt;&lt;/script&gt;
+8.  &lt;/head&gt;
+9.  &lt;body&gt;
+10.    ...
+11. &lt;/body&gt;
+12. &lt;/html&gt;</code></pre>
 </details>
 <h4>
 Simpler character set definition
 </h4>
 <p>
-One word about the 
-<meta charset="utf-8">
- at line 4 in the HTML5 version: it is a <b>best practice</b> to declare
-the character set of your document to protect against
+One word about the &lt;meta charset=“utf-8”&gt; at line 4 in the HTML5
+version: it is a <b>best practice</b> to declare the character set of
+your document to protect against
 <a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7"> a
 serious security risk</a>. For more details, please refer to the “Why
 Internationalization is important” section in the Course intro chapter.
@@ -4449,7 +4448,7 @@ Here are some examples:
 <h4>
 Different syntaxes of the datetime attribute
 </h4>
-<p align="center" width="100%">
+<div data-align="center" width="100%">
 <table>
 <colgroup>
 <col style="width: 64%" />
@@ -4502,7 +4501,7 @@ is 5:45 ahead of GMT</td>
 </tr>
 </tbody>
 </table>
-</p>
+</div>
 <h4>
 Duration values
 </h4>
@@ -5423,7 +5422,7 @@ If the itemprop attribute appears on a:
 <h4>
 Elements that can be associated with microdata
 </h4>
-<p align="center" width="100%">
+<div data-align="center" width="100%">
 <table>
 <colgroup>
 <col style="width: 35%" />
@@ -5462,7 +5461,7 @@ data that isn’t actually in the text of your page.</td>
 </tr>
 </tbody>
 </table>
-</p>
+</div>
 <p>
 For example, the value of a property defined in an &lt;img&gt; element
 will be the value of the src attribute:
@@ -6546,7 +6545,7 @@ events provided by the &lt;video&gt; element API
 <p>We provide this as a quick reminder - keep in mind that
 the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents">complete
 list</a> is much longer!</p>
-<p align="center" width="100%">
+<div data-align="center" width="100%">
 <table>
 <thead>
 <tr class="header">
@@ -6638,7 +6637,7 @@ list</a> is much longer!</p>
 </tr>
 </tbody>
 </table>
-</p>
+</div>
 <p>
 In the next pages, let’s see, through a set of examples, how to use
 these most important properties, methods, and events…
@@ -6688,48 +6687,47 @@ Source code extract:
 <summary>
 Click to expand!
 </summary>
-<pre><code>&lt;video id=&quot;vid&quot; controls&gt;
-&lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
-         type=video/webm&gt;
-...
-&lt;/video&gt;
-&lt;p&gt;Example of custom controls:&lt;/p&gt;
-&lt;button onclick=&quot;playVideo();&quot; style=&quot;cursor: pointer;&quot;&gt;Play&lt;/button&gt;
-&lt;button onclick=&quot;pauseVideo();&quot; style=&quot;cursor: pointer;&quot;&gt;Pause&lt;/button&gt;
-&lt;button onclick=&quot;rewindVideo();&quot; style=&quot;cursor: pointer;&quot;&gt;
-       Back to beginning&lt;/button&gt;
-&lt;script&gt;
-    vid = document.querySelector(&quot;#vid&quot;);
-    function playVideo() {
-       vid.play();
-    }
-    function pauseVideo() {
-       vid.pause();
-    }
-    function rewindVideo() {
-       vid.currentTime = 0;
-    }
-&lt;/script&gt;</code></pre>
+<pre><code>1.  &lt;video id=&quot;vid&quot; controls&gt;
+2.    &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
+3.            type=video/webm&gt;
+4.  &lt;/video&gt;
+5.  &lt;p&gt;Example of custom controls:&lt;/p&gt;
+6.  &lt;button onclick=&quot;playVideo();&quot; style=&quot;cursor: pointer;&quot;&gt;Play&lt;/button&gt;
+7.  &lt;button onclick=&quot;pauseVideo();&quot; style=&quot;cursor: pointer;&quot;&gt;Pause&lt;/button&gt;
+8.  &lt;button onclick=&quot;rewindVideo();&quot; style=&quot;cursor: pointer;&quot;&gt;
+9.         Back to beginning&lt;/button&gt;
+10.  &lt;script&gt;
+11.    vid = document.querySelector(&quot;#vid&quot;);
+12.    function playVideo() {
+13.        vid.play();
+14.   }
+15.   function pauseVideo() {
+16.        vid.pause();
+17.   }
+18.   function rewindVideo() {
+19.        vid.currentTime = 0;
+20.   }
+21. &lt;/script&gt;</code></pre>
 </details>
 <h4>
 Explanations:
 </h4>
 <ul>
 <li>
-<i>Lines 7, 9 and 11</i>: we add a click listener to each button, in
+<i>Lines 6, 7 and 8</i>: we add a click listener to each button, in
 order to call a JavaScript function when each button is clicked.
 </li>
 <li>
-<i>Line 14</i>: using the DOM API, we get the JavaScript object that
+<i>Line 11</i>: using the DOM API, we get the JavaScript object that
 corresponds to the video element we inserted in the HTML document. This
 line is outside a function, it will be executed when the page loads.
 </li>
 <li>
-<i>Lines 17 and 20</i>: we call methods from the API for playing/pausing
+<i>Lines 12 and 15</i>: we call methods from the API for playing/pausing
 the video.
 </li>
 <li>
-<i>Line 24</i>: we modify the currentTime property in order to rewind
+<i>Line 19</i>: we modify the currentTime property in order to rewind
 the video. Note that vid.load() also rewinds the video, shows the poster
 image again, but also pauses the video. By using currentTime=0, the
 playback does not stop.
@@ -8132,34 +8130,34 @@ Click to expand!
 </summary>
 <pre><code>&lt;video id=&quot;myVideo&quot; autoplay&gt;Fallback msg here.&lt;/video&gt;
 &lt;script&gt;
-if (navigator.mediaDevices.getUserMedia) {
-// request video and audio stream from the user&#39;s webcam
-navigator.mediaDevices.getUserMedia({
-audio: true,
-video: true
-}).then((stream) =&gt; {
-let video = document.querySelector(&#39;#myVideo&#39;);
-video.srcObject = stream;
-video.play();
-}).catch((error) =&gt; {
-console.log(&#39;navigator.getUserMedia error: &#39;, error);
-});
-}
+  if (navigator.mediaDevices.getUserMedia) {
+  // request video and audio stream from the user&#39;s webcam
+  navigator.mediaDevices.getUserMedia({
+  audio: true,
+  video: true
+  }).then((stream) =&gt; {
+  let video = document.querySelector(&#39;#myVideo&#39;);
+  video.srcObject = stream;
+  video.play();
+  }).catch((error) =&gt; {
+  console.log(&#39;navigator.getUserMedia error: &#39;, error);
+  });
+  }
 &lt;/script&gt;
 We can also simplify the code by using a writing with async/await of JavaScript:
 &lt;video id=&quot;myVideo&quot; autoplay&gt;Fallback msg here.&lt;/video&gt;
 &lt;script&gt;
-async function startWebCam() {
-// request video and audio stream from the user&#39;s webcam
-let stream = await navigator.mediaDevices.getUserMedia({
-audio: true,
-video: true
-});
-let video = document.querySelector(&#39;#myVideo&#39;);
-video.srcObject = stream;
-video.play();
-}
-startWebCam();
+  async function startWebCam() {
+  // request video and audio stream from the user&#39;s webcam
+  let stream = await navigator.mediaDevices.getUserMedia({
+  audio: true,
+  video: true
+  });
+  let video = document.querySelector(&#39;#myVideo&#39;);
+  video.srcObject = stream;
+  video.play();
+  }
+  startWebCam();
 &lt;/script&gt;</code></pre>
 </details>
 <p><b>HTTPS is mandatory:</b> for getUserMedia to work, it is mandatory
@@ -8198,36 +8196,36 @@ Click to expand!
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Webcam start/stop&lt;/title&gt;
-&lt;script&gt;
-let webcamStream;
-function startWebcam() {
-// request video and audio stream from the user&#39;s webcam
-navigator.mediaDevices.getUserMedia({
-audio: true,
-video: true
-}).then((stream) =&gt; {
-let video = document.querySelector(&#39;#video&#39;);
-video.srcObject = stream;
-video.play();
-webcamStream = stream;
-}).catch((error) =&gt; {
-console.log(&#39;navigator.getUserMedia error: &#39;, error);
-});
-}
-function stopWebcam() {
-webcamStream.getTracks()[0].stop(); // audio
-webcamStream.getTracks()[1].stop(); // video
-}
-&lt;/script&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Webcam start/stop&lt;/title&gt;
+  &lt;script&gt;
+    let webcamStream;
+    function startWebcam() {
+      // request video and audio stream from the user&#39;s webcam
+      navigator.mediaDevices.getUserMedia({
+      audio: true,
+      video: true
+      }).then((stream) =&gt; {
+      let video = document.querySelector(&#39;#video&#39;);
+      video.srcObject = stream;
+      video.play();
+      webcamStream = stream;
+      }).catch((error) =&gt; {
+      console.log(&#39;navigator.getUserMedia error: &#39;, error);
+      });
+      }
+    function stopWebcam() {
+      webcamStream.getTracks()[0].stop(); // audio
+      webcamStream.getTracks()[1].stop(); // video
+      }
+  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body &gt;
-&lt;video width=400 height=400 id=&quot;video&quot; controls&gt;&lt;/video&gt;
-&lt;p&gt;
-&lt;button onclick=&quot;startWebcam();&quot;&gt;Start WebCam&lt;/button&gt;
-&lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
-&lt;/p&gt;
+  &lt;video width=400 height=400 id=&quot;video&quot; controls&gt;&lt;/video&gt;
+  &lt;p&gt;
+    &lt;button onclick=&quot;startWebcam();&quot;&gt;Start WebCam&lt;/button&gt;
+    &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
+  &lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 </details>
@@ -8273,8 +8271,8 @@ Click to expand!
 31. &lt;body&gt;
 32.   &lt;video width=400 height=400 id=&quot;video&quot; controls&gt;&lt;/video&gt;
 33.   &lt;p&gt;
-34.   &lt;button onclick=&quot;startWebcam();&quot;&gt;Start WebCam&lt;/button&gt;
-35.   &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
+34.     &lt;button onclick=&quot;startWebcam();&quot;&gt;Start WebCam&lt;/button&gt;
+35.     &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
 36.   &lt;/p&gt;
 37. &lt;/body&gt;
 38. &lt;/html&gt;</code></pre>
@@ -8342,44 +8340,44 @@ Click to expand!
 let video;
 let webcamStream;
 function startWebcam() {
-// request video and audio stream from the user&#39;s webcam
-navigator.mediaDevices.getUserMedia({
-audio: true,
-video: true
-}).then((stream) =&gt; {
-let video = document.querySelector(&#39;#video&#39;);
-video.srcObject = stream;
-video.play();
-webcamStream = stream;
-}).catch((error) =&gt; {
-console.log(&#39;navigator.getUserMedia error: &#39;, error);
-});
-}
+  // request video and audio stream from the user&#39;s webcam
+  navigator.mediaDevices.getUserMedia({
+  audio: true,
+  video: true
+  }).then((stream) =&gt; {
+  let video = document.querySelector(&#39;#video&#39;);
+  video.srcObject = stream;
+  video.play();
+  webcamStream = stream;
+  }).catch((error) =&gt; {
+  console.log(&#39;navigator.getUserMedia error: &#39;, error);
+  });
+  }
 function stopWebcam() {
-webcamStream.getTracks()[0].stop(); // audio
-webcamStream.getTracks()[1].stop(); // video
-}
-//------------------------------
-// CODE FOR CHANGING CSS FILTERS
-//------------------------------
-let idx = 0;
-let filters = [
-&#39;grayscale&#39;,
-&#39;sepia&#39;,
-&#39;blur&#39;,
-&#39;brightness&#39;,
-&#39;contrast&#39;,
-&#39;hue-rotate&#39;, &#39;hue-rotate2&#39;, &#39;hue-rotate3&#39;,
-&#39;saturate&#39;,
-&#39;invert&#39;
-];
+  webcamStream.getTracks()[0].stop(); // audio
+  webcamStream.getTracks()[1].stop(); // video
+  }
+  //------------------------------
+  // CODE FOR CHANGING CSS FILTERS
+  //------------------------------
+  let idx = 0;
+  let filters = [
+  &#39;grayscale&#39;,
+  &#39;sepia&#39;,
+  &#39;blur&#39;,
+  &#39;brightness&#39;,
+  &#39;contrast&#39;,
+  &#39;hue-rotate&#39;, &#39;hue-rotate2&#39;, &#39;hue-rotate3&#39;,
+  &#39;saturate&#39;,
+  &#39;invert&#39;
+  ];
 function changeFilter(el) {
-// Remove all CSS classes for element el
-el.className = &#39;&#39;;
-// Choose a CSS class name
-console.log(&quot;toggling effect: &quot; + filters[idx  filters.length]);
-let effect = filters[idx++ % filters.length];
-el.classList.add(effect);
+  // Remove all CSS classes for element el
+  el.className = &#39;&#39;;
+  // Choose a CSS class name
+  console.log(&quot;toggling effect: &quot; + filters[idx  filters.length]);
+  let effect = filters[idx++ % filters.length];
+  el.classList.add(effect);
 }</code></pre>
 </details>
 <h4>
@@ -8484,38 +8482,38 @@ Click to expand!
 let video;
 let webcamStream;
 function startWebcam() {
-// request video and audio stream from the user&#39;s webcam
-navigator.mediaDevices.getUserMedia({
-audio: true,
-video: true
-&gt;
-}).then((stream) =&gt; {
-video = document.querySelector(&#39;#video&#39;);
-video.srcObject = stream;
-video.play();
-webcamStream = stream;
-}).catch((error) =&gt; {
-console.log(&#39;navigator.getUserMedia error: &#39;, error);
-});
-}
+  // request video and audio stream from the user&#39;s webcam
+  navigator.mediaDevices.getUserMedia({
+  audio: true,
+  video: true
+  &gt;
+  }).then((stream) =&gt; {
+  video = document.querySelector(&#39;#video&#39;);
+  video.srcObject = stream;
+  video.play();
+  webcamStream = stream;
+  }).catch((error) =&gt; {
+  console.log(&#39;navigator.getUserMedia error: &#39;, error);
+  });
+  }
 function stopWebcam() {
-webcamStream.getTracks()[0].stop(); // audio
-webcamStream.getTracks()[1].stop(); // video
-}
-//---------------------
-// TAKE A SNAPSHOT CODE
-//---------------------
-var canvas, ctx;
+  webcamStream.getTracks()[0].stop(); // audio
+  webcamStream.getTracks()[1].stop(); // video
+  }
+  //---------------------
+  // TAKE A SNAPSHOT CODE
+  //---------------------
+  var canvas, ctx;
 function init() {
-// Get the canvas and obtain a context for
-// drawing in it
-canvas = document.getElementById(&quot;myCanvas&quot;);
-ctx = canvas.getContext(&#39;2d&#39;);
-}
+  // Get the canvas and obtain a context for
+  // drawing in it
+  canvas = document.getElementById(&quot;myCanvas&quot;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  }
 function snapshot() {
-// Draws current image from the video element into the canvas
-ctx.drawImage(video, 0,0, canvas.width, canvas.height);
-}</code></pre>
+  // Draws current image from the video element into the canvas
+  ctx.drawImage(video, 0,0, canvas.width, canvas.height);
+  }</code></pre>
 </details>
 <h4>
 CSS
@@ -8533,21 +8531,21 @@ HTML
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;title&gt;WebCam screenshot&lt;/title&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;WebCam screenshot&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;h1&gt;Take a snapshot of the current video stream&lt;/h1&gt;
-Check the CSS and JavaScript tabs. Click on the Start WebCam button.
-&lt;p&gt;
-&lt;button onclick=&quot;startWebcam();&quot;&gt;Start WebCam&lt;/button&gt;
-&lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
-&lt;button onclick=&quot;snapshot();&quot;&gt;Prendre un screenshot&lt;/button&gt;
-&lt;/p&gt;
-&lt;video onclick=&quot;snapshot(this);&quot; width=200 height=200 id=&quot;video&quot; controls autoplay&gt;&lt;/video&gt;
-&lt;p&gt;
-Screenshots : &lt;p&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;150&quot;&gt;&lt;/canvas&gt;
+  &lt;h1&gt;Take a snapshot of the current video stream&lt;/h1&gt;
+    Check the CSS and JavaScript tabs. Click on the Start WebCam button.
+  &lt;p&gt;
+    &lt;button onclick=&quot;startWebcam();&quot;&gt;Start WebCam&lt;/button&gt;
+    &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
+    &lt;button onclick=&quot;snapshot();&quot;&gt;Prendre un screenshot&lt;/button&gt;
+  &lt;/p&gt;
+  &lt;video onclick=&quot;snapshot(this);&quot; width=200 height=200 id=&quot;video&quot; controls autoplay&gt;&lt;/video&gt;
+  &lt;p&gt;
+    Screenshots : &lt;/p&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;150&quot;&gt;&lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 </details>
@@ -8562,9 +8560,11 @@ pixelization! Fun!</a></p></li>
 <li><p><a href="https://webcamtoy.com/">Webcam Toy</a>: video effects on
 Paul Neave’s webcam (using WebGL)</p></li>
 </ul>
-<h3>
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch2-4-3">
 2.4.3 Using the Microphone
 </h3>
+<!------------------------------------------------------------------------------------------------>
 <p>Instead of using the getUserMedia API
 with: navigator.getUserMedia({video:true}, onSuccess, onError), it is
 also possible to use {audio:true} for the first parameter. In this case,
@@ -8598,9 +8598,11 @@ etc.).</p>
   width="55%"
   alt="WebAudio Live Processing." />
 </p>
-<h3>
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch2-4-4">
 2.4.4 Webcam Resolution
 </h3>
+<!------------------------------------------------------------------------------------------------>
 <p>
 <p>It is possible to set “hints” for the preferred cam/resolution during
 video capture. This is done by using a <a
@@ -8632,72 +8634,72 @@ Click to expand!
 </summary>
 <pre><code>var vgaButton, qvgaButton, hdButton, dimensions, video, stream;
 function init() {
-vgaButton = document.querySelector(&#39;button#vga&#39;);
-qvgaButton = document.querySelector(&#39;button#qvga&#39;);
-hdButton = document.querySelector(&#39;button#hd&#39;);
-dimensions = document.querySelector(&#39;p#dimensions&#39;);
-video = document.querySelector(&#39;video&#39;);
-// Defines event listeners for the buttons that set the resolution
-qvgaButton.onclick = function() {
-getMedia(qvgaConstraints);
-};
-vgaButton.onclick = function() {
-getMedia(vgaConstraints);
-};
-hdButton.onclick = function() {
-getMedia(hdConstraints);
-};
-// Trick: check regularly the size of the video element and display it
-// When getUserMedia is called the video element changes it sizes but for
-// a while its size is zero pixels... o we check every half a second
-video.addEventListener(&#39;play&#39;, function() {
-setTimeout(function() {
-displayVideoDimensions();
-}, 500);
-});
-}
-// The different values for the constraints on resolution
-var qvgaConstraints = {
-video: {
-width: { max: 320 },
-height: { max: 180 }
-}
-};
-var vgaConstraints = {
-video: {
-width: { max: 640 },
-height: { max: 360 }
-}
-};
-var hdConstraints = {
-video: {
-width: { min: 1280 },
-height: { min: 720 }
-}
-};
-// The function that is called when a button has been clicked: starts the video^
-// with the preferred resolution^
+  vgaButton = document.querySelector(&#39;button#vga&#39;);
+  qvgaButton = document.querySelector(&#39;button#qvga&#39;);
+  hdButton = document.querySelector(&#39;button#hd&#39;);
+  dimensions = document.querySelector(&#39;p#dimensions&#39;);
+  video = document.querySelector(&#39;video&#39;);
+  // Defines event listeners for the buttons that set the resolution
+  qvgaButton.onclick = function() {
+  getMedia(qvgaConstraints);
+  };
+  vgaButton.onclick = function() {
+  getMedia(vgaConstraints);
+  };
+  hdButton.onclick = function() {
+  getMedia(hdConstraints);
+  };
+  // Trick: check regularly the size of the video element and display it
+  // When getUserMedia is called the video element changes it sizes but for
+  // a while its size is zero pixels... o we check every half a second
+  video.addEventListener(&#39;play&#39;, function() {
+  setTimeout(function() {
+  displayVideoDimensions();
+  }, 500);
+  });
+  }
+  // The different values for the constraints on resolution
+  var qvgaConstraints = {
+  video: {
+  width: { max: 320 },
+  height: { max: 180 }
+  }
+  };
+  var vgaConstraints = {
+  video: {
+  width: { max: 640 },
+  height: { max: 360 }
+  }
+  };
+  var hdConstraints = {
+  video: {
+  width: { min: 1280 },
+  height: { min: 720 }
+  }
+  };
+  // The function that is called when a button has been clicked: starts the video^
+  // with the preferred resolution^
 function getMedia(constraints) {^
-if (!!stream) {^
-video.srcObject = null;^
-stream.getTracks()[0].stop();^
-}^
-navigator.mediaDevices.getUserMedia(constraints)^
-.then((stream) =&gt; {^
-video.srcObject = stream;^
-video.play();^
-window.stream = stream;^
-})
-.catch((error) =&gt;{^
-console.log(&#39;navigator.getUserMedia error: &#39;, error);^
-});^
-}^
-^// util function that is called by the setInterval(...) every 0.5s, for^
-^// displaying the video dimensions^
-^function displayVideoDimensions() {^
-^dimensions.innerHTML = &#39;Actual video dimensions: &#39; + video.videoWidth +^
-^&#39;x&#39; + video.videoHeight + &#39;px.&#39;;^
-^}^</code></pre>
+  if (!!stream) {^
+  video.srcObject = null;^
+  stream.getTracks()[0].stop();^
+  }^
+  navigator.mediaDevices.getUserMedia(constraints)^
+  .then((stream) =&gt; {^
+  video.srcObject = stream;^
+  video.play();^
+  window.stream = stream;^
+  })
+  .catch((error) =&gt;{^
+  console.log(&#39;navigator.getUserMedia error: &#39;, error);^
+  });^
+  }^
+  ^// util function that is called by the setInterval(...) every 0.5s, for^
+  ^// displaying the video dimensions^
+  ^function displayVideoDimensions() {^
+  ^dimensions.innerHTML = &#39;Actual video dimensions: &#39; + video.videoWidth +^
+  ^&#39;x&#39; + video.videoHeight + &#39;px.&#39;;^
+  ^}^</code></pre>
 </details>
 <h4>
 CSS
@@ -8875,7 +8877,7 @@ directly in this Web page.</p>
 <p align="center" width="100%">
 <img src="./images/image114.jpeg?raw=true"
    width="40%"
-   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element" />
+   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element." />
 </p>
 <p>Let’s record, replay and download the video stream captured using a
 Webcam. You can test it below by clicking on “CodePen” at the top
@@ -8910,64 +8912,64 @@ class="sourceCode js"><code class="sourceCode javascript"><span id="cb157-1"><a 
 <span id="cb157-20"><a href="#cb157-20" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&#39;navigator.getUserMedia error: &#39;</span><span class="op">,</span> error)<span class="op">;</span></span>
 <span id="cb157-21"><a href="#cb157-21" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
 <span id="cb157-22"><a href="#cb157-22" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">handleDataAvailable</span>(<span class="bu">event</span>) {</span>
-<span id="cb157-23"><a href="#cb157-23" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="bu">event</span><span class="op">.</span><span class="at">data</span> <span class="op">&amp;&amp;</span> <span class="bu">event</span><span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">size</span> <span class="op">&gt;</span> <span class="dv">0</span>) {</span>
-<span id="cb157-24"><a href="#cb157-24" aria-hidden="true" tabindex="-1"></a>recordedBlobs<span class="op">.</span><span class="fu">push</span>(<span class="bu">event</span><span class="op">.</span><span class="at">data</span>)<span class="op">;</span></span>
-<span id="cb157-25"><a href="#cb157-25" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb157-26"><a href="#cb157-26" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb157-23"><a href="#cb157-23" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="bu">event</span><span class="op">.</span><span class="at">data</span> <span class="op">&amp;&amp;</span> <span class="bu">event</span><span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">size</span> <span class="op">&gt;</span> <span class="dv">0</span>) {</span>
+<span id="cb157-24"><a href="#cb157-24" aria-hidden="true" tabindex="-1"></a>  recordedBlobs<span class="op">.</span><span class="fu">push</span>(<span class="bu">event</span><span class="op">.</span><span class="at">data</span>)<span class="op">;</span></span>
+<span id="cb157-25"><a href="#cb157-25" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb157-26"><a href="#cb157-26" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb157-27"><a href="#cb157-27" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">handleStop</span>(<span class="bu">event</span>) {</span>
-<span id="cb157-28"><a href="#cb157-28" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&#39;Recorder stopped: &#39;</span><span class="op">,</span> <span class="bu">event</span>)<span class="op">;</span></span>
-<span id="cb157-29"><a href="#cb157-29" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb157-28"><a href="#cb157-28" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&#39;Recorder stopped: &#39;</span><span class="op">,</span> <span class="bu">event</span>)<span class="op">;</span></span>
+<span id="cb157-29"><a href="#cb157-29" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb157-30"><a href="#cb157-30" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">toggleRecording</span>() {</span>
-<span id="cb157-31"><a href="#cb157-31" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (recordButton<span class="op">.</span><span class="at">textContent</span> <span class="op">===</span> <span class="st">&#39;Start Recording&#39;</span>) {</span>
-<span id="cb157-32"><a href="#cb157-32" aria-hidden="true" tabindex="-1"></a><span class="fu">startRecording</span>()<span class="op">;</span></span>
-<span id="cb157-33"><a href="#cb157-33" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
-<span id="cb157-34"><a href="#cb157-34" aria-hidden="true" tabindex="-1"></a><span class="fu">stopRecording</span>()<span class="op">;</span></span>
-<span id="cb157-35"><a href="#cb157-35" aria-hidden="true" tabindex="-1"></a>recordButton<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">&#39;Start Recording&#39;</span><span class="op">;</span></span>
-<span id="cb157-36"><a href="#cb157-36" aria-hidden="true" tabindex="-1"></a>playButton<span class="op">.</span><span class="at">disabled</span> <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
-<span id="cb157-37"><a href="#cb157-37" aria-hidden="true" tabindex="-1"></a>downloadButton<span class="op">.</span><span class="at">disabled</span> <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
-<span id="cb157-38"><a href="#cb157-38" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb157-39"><a href="#cb157-39" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb157-40"><a href="#cb157-40" aria-hidden="true" tabindex="-1"></a><span class="co">// create the media recorder</span></span>
+<span id="cb157-31"><a href="#cb157-31" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (recordButton<span class="op">.</span><span class="at">textContent</span> <span class="op">===</span> <span class="st">&#39;Start Recording&#39;</span>) {</span>
+<span id="cb157-32"><a href="#cb157-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">startRecording</span>()<span class="op">;</span></span>
+<span id="cb157-33"><a href="#cb157-33" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb157-34"><a href="#cb157-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stopRecording</span>()<span class="op">;</span></span>
+<span id="cb157-35"><a href="#cb157-35" aria-hidden="true" tabindex="-1"></a>    recordButton<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">&#39;Start Recording&#39;</span><span class="op">;</span></span>
+<span id="cb157-36"><a href="#cb157-36" aria-hidden="true" tabindex="-1"></a>    playButton<span class="op">.</span><span class="at">disabled</span> <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb157-37"><a href="#cb157-37" aria-hidden="true" tabindex="-1"></a>    downloadButton<span class="op">.</span><span class="at">disabled</span> <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb157-38"><a href="#cb157-38" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb157-39"><a href="#cb157-39" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb157-40"><a href="#cb157-40" aria-hidden="true" tabindex="-1"></a>  <span class="co">// create the media recorder</span></span>
 <span id="cb157-41"><a href="#cb157-41" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">startRecording</span>() {</span>
-<span id="cb157-42"><a href="#cb157-42" aria-hidden="true" tabindex="-1"></a>recordedBlobs <span class="op">=</span> []<span class="op">;</span></span>
-<span id="cb157-43"><a href="#cb157-43" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span> {</span>
-<span id="cb157-44"><a href="#cb157-44" aria-hidden="true" tabindex="-1"></a>mediaRecorder <span class="op">=</span> <span class="kw">new</span> <span class="bu">MediaRecorder</span>(<span class="bu">window</span><span class="op">.</span><span class="at">stream</span>)<span class="op">;</span></span>
-<span id="cb157-45"><a href="#cb157-45" aria-hidden="true" tabindex="-1"></a>} <span class="cf">catch</span> (e) {</span>
-<span id="cb157-46"><a href="#cb157-46" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">error</span>(<span class="st">&#39;Exception while creating MediaRecorder: &#39;</span> <span class="op">+</span> e)<span class="op">;</span></span>
-<span id="cb157-47"><a href="#cb157-47" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span><span class="op">;</span></span>
-<span id="cb157-48"><a href="#cb157-48" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb157-49"><a href="#cb157-49" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&#39;Created MediaRecorder&#39;</span><span class="op">,</span> mediaRecorder)<span class="op">;</span></span>
-<span id="cb157-50"><a href="#cb157-50" aria-hidden="true" tabindex="-1"></a>recordButton<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">&#39;Stop Recording&#39;</span><span class="op">;</span></span>
-<span id="cb157-51"><a href="#cb157-51" aria-hidden="true" tabindex="-1"></a>playButton<span class="op">.</span><span class="at">disabled</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
-<span id="cb157-52"><a href="#cb157-52" aria-hidden="true" tabindex="-1"></a>downloadButton<span class="op">.</span><span class="at">disabled</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
-<span id="cb157-53"><a href="#cb157-53" aria-hidden="true" tabindex="-1"></a>mediaRecorder<span class="op">.</span><span class="at">onstop</span> <span class="op">=</span> handleStop<span class="op">;</span></span>
-<span id="cb157-54"><a href="#cb157-54" aria-hidden="true" tabindex="-1"></a>mediaRecorder<span class="op">.</span><span class="at">ondataavailable</span> <span class="op">=</span> handleDataAvailable<span class="op">;</span></span>
-<span id="cb157-55"><a href="#cb157-55" aria-hidden="true" tabindex="-1"></a>mediaRecorder<span class="op">.</span><span class="fu">start</span>(<span class="dv">10</span>)<span class="op">;</span> <span class="co">// collect 10ms of data</span></span>
-<span id="cb157-56"><a href="#cb157-56" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&#39;MediaRecorder started&#39;</span><span class="op">,</span> mediaRecorder)<span class="op">;</span></span>
-<span id="cb157-57"><a href="#cb157-57" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb157-58"><a href="#cb157-58" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="kw">function</span> <span class="fu">stopRecording</span>() {</span>
-<span id="cb157-59"><a href="#cb157-59" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> mediaRecorder<span class="op">.</span><span class="fu">stop</span>()<span class="op">;</span></span>
-<span id="cb157-60"><a href="#cb157-60" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&#39;Recorded Blobs: &#39;</span><span class="op">,</span> recordedBlobs)<span class="op">;</span></span>
-<span id="cb157-61"><a href="#cb157-61" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> recordedVideo<span class="op">.</span><span class="at">controls</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
-<span id="cb157-62"><a href="#cb157-62" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> }</span>
-<span id="cb157-63"><a href="#cb157-63" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="kw">function</span> <span class="fu">play</span>() {</span>
-<span id="cb157-64"><a href="#cb157-64" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="kw">var</span> superBuffer <span class="op">=</span> <span class="kw">new</span> <span class="bu">Blob</span>(recordedBlobs<span class="op">,</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">&#39;video/webm&#39;</span>})<span class="op">;</span></span>
-<span id="cb157-65"><a href="#cb157-65" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> recordedVideo<span class="op">.</span><span class="at">src</span> <span class="op">=</span> <span class="bu">window</span><span class="op">.</span><span class="at">URL</span><span class="op">.</span><span class="fu">createObjectURL</span>(superBuffer)<span class="op">;</span></span>
-<span id="cb157-66"><a href="#cb157-66" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> }</span>
-<span id="cb157-67"><a href="#cb157-67" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="kw">function</span> <span class="fu">download</span>() {</span>
-<span id="cb157-68"><a href="#cb157-68" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="kw">var</span> blob <span class="op">=</span> <span class="kw">new</span> <span class="bu">Blob</span>(recordedBlobs<span class="op">,</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">&#39;video/webm&#39;</span>})<span class="op">;</span></span>
-<span id="cb157-69"><a href="#cb157-69" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="kw">var</span> url <span class="op">=</span> <span class="bu">window</span><span class="op">.</span><span class="at">URL</span><span class="op">.</span><span class="fu">createObjectURL</span>(blob)<span class="op">;</span></span>
-<span id="cb157-70"><a href="#cb157-70" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="kw">var</span> a <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">createElement</span>(<span class="st">&#39;a&#39;</span>)<span class="op">;</span></span>
-<span id="cb157-71"><a href="#cb157-71" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> a<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">display</span> <span class="op">=</span> <span class="st">&#39;none&#39;</span><span class="op">;</span></span>
-<span id="cb157-72"><a href="#cb157-72" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> a<span class="op">.</span><span class="at">href</span> <span class="op">=</span> url<span class="op">;</span></span>
-<span id="cb157-73"><a href="#cb157-73" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> a<span class="op">.</span><span class="at">download</span> <span class="op">=</span> <span class="st">&#39;test.webm&#39;</span><span class="op">;</span></span>
-<span id="cb157-74"><a href="#cb157-74" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="bu">document</span><span class="op">.</span><span class="at">body</span><span class="op">.</span><span class="fu">appendChild</span>(a)<span class="op">;</span></span>
-<span id="cb157-75"><a href="#cb157-75" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> a<span class="op">.</span><span class="fu">click</span>()<span class="op">;</span></span>
-<span id="cb157-76"><a href="#cb157-76" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="pp">setTimeout</span>(<span class="kw">function</span>() {</span>
-<span id="cb157-77"><a href="#cb157-77" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="bu">document</span><span class="op">.</span><span class="at">body</span><span class="op">.</span><span class="fu">removeChild</span>(a)<span class="op">;</span></span>
-<span id="cb157-78"><a href="#cb157-78" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="bu">window</span><span class="op">.</span><span class="at">URL</span><span class="op">.</span><span class="fu">revokeObjectURL</span>(url)<span class="op">;</span></span>
-<span id="cb157-79"><a href="#cb157-79" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> }<span class="op">,</span> <span class="dv">100</span>)<span class="op">;</span></span>
-<span id="cb157-80"><a href="#cb157-80" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> }</span></code></pre></div>
+<span id="cb157-42"><a href="#cb157-42" aria-hidden="true" tabindex="-1"></a>  recordedBlobs <span class="op">=</span> []<span class="op">;</span></span>
+<span id="cb157-43"><a href="#cb157-43" aria-hidden="true" tabindex="-1"></a>  <span class="cf">try</span> {</span>
+<span id="cb157-44"><a href="#cb157-44" aria-hidden="true" tabindex="-1"></a>    mediaRecorder <span class="op">=</span> <span class="kw">new</span> <span class="bu">MediaRecorder</span>(<span class="bu">window</span><span class="op">.</span><span class="at">stream</span>)<span class="op">;</span></span>
+<span id="cb157-45"><a href="#cb157-45" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">catch</span> (e) {</span>
+<span id="cb157-46"><a href="#cb157-46" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">error</span>(<span class="st">&#39;Exception while creating MediaRecorder: &#39;</span> <span class="op">+</span> e)<span class="op">;</span></span>
+<span id="cb157-47"><a href="#cb157-47" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span><span class="op">;</span></span>
+<span id="cb157-48"><a href="#cb157-48" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb157-49"><a href="#cb157-49" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&#39;Created MediaRecorder&#39;</span><span class="op">,</span> mediaRecorder)<span class="op">;</span></span>
+<span id="cb157-50"><a href="#cb157-50" aria-hidden="true" tabindex="-1"></a>  recordButton<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">&#39;Stop Recording&#39;</span><span class="op">;</span></span>
+<span id="cb157-51"><a href="#cb157-51" aria-hidden="true" tabindex="-1"></a>  playButton<span class="op">.</span><span class="at">disabled</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb157-52"><a href="#cb157-52" aria-hidden="true" tabindex="-1"></a>  downloadButton<span class="op">.</span><span class="at">disabled</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb157-53"><a href="#cb157-53" aria-hidden="true" tabindex="-1"></a>  mediaRecorder<span class="op">.</span><span class="at">onstop</span> <span class="op">=</span> handleStop<span class="op">;</span></span>
+<span id="cb157-54"><a href="#cb157-54" aria-hidden="true" tabindex="-1"></a>  mediaRecorder<span class="op">.</span><span class="at">ondataavailable</span> <span class="op">=</span> handleDataAvailable<span class="op">;</span></span>
+<span id="cb157-55"><a href="#cb157-55" aria-hidden="true" tabindex="-1"></a>  mediaRecorder<span class="op">.</span><span class="fu">start</span>(<span class="dv">10</span>)<span class="op">;</span> <span class="co">// collect 10ms of data</span></span>
+<span id="cb157-56"><a href="#cb157-56" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&#39;MediaRecorder started&#39;</span><span class="op">,</span> mediaRecorder)<span class="op">;</span></span>
+<span id="cb157-57"><a href="#cb157-57" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb157-58"><a href="#cb157-58" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">stopRecording</span>() {</span>
+<span id="cb157-59"><a href="#cb157-59" aria-hidden="true" tabindex="-1"></a>  mediaRecorder<span class="op">.</span><span class="fu">stop</span>()<span class="op">;</span></span>
+<span id="cb157-60"><a href="#cb157-60" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&#39;Recorded Blobs: &#39;</span><span class="op">,</span> recordedBlobs)<span class="op">;</span></span>
+<span id="cb157-61"><a href="#cb157-61" aria-hidden="true" tabindex="-1"></a>  recordedVideo<span class="op">.</span><span class="at">controls</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb157-62"><a href="#cb157-62" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb157-63"><a href="#cb157-63" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">play</span>() {</span>
+<span id="cb157-64"><a href="#cb157-64" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> superBuffer <span class="op">=</span> <span class="kw">new</span> <span class="bu">Blob</span>(recordedBlobs<span class="op">,</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">&#39;video/webm&#39;</span>})<span class="op">;</span></span>
+<span id="cb157-65"><a href="#cb157-65" aria-hidden="true" tabindex="-1"></a>  recordedVideo<span class="op">.</span><span class="at">src</span> <span class="op">=</span> <span class="bu">window</span><span class="op">.</span><span class="at">URL</span><span class="op">.</span><span class="fu">createObjectURL</span>(superBuffer)<span class="op">;</span></span>
+<span id="cb157-66"><a href="#cb157-66" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb157-67"><a href="#cb157-67" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">download</span>() {</span>
+<span id="cb157-68"><a href="#cb157-68" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> blob <span class="op">=</span> <span class="kw">new</span> <span class="bu">Blob</span>(recordedBlobs<span class="op">,</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">&#39;video/webm&#39;</span>})<span class="op">;</span></span>
+<span id="cb157-69"><a href="#cb157-69" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> url <span class="op">=</span> <span class="bu">window</span><span class="op">.</span><span class="at">URL</span><span class="op">.</span><span class="fu">createObjectURL</span>(blob)<span class="op">;</span></span>
+<span id="cb157-70"><a href="#cb157-70" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> a <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">createElement</span>(<span class="st">&#39;a&#39;</span>)<span class="op">;</span></span>
+<span id="cb157-71"><a href="#cb157-71" aria-hidden="true" tabindex="-1"></a>  a<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">display</span> <span class="op">=</span> <span class="st">&#39;none&#39;</span><span class="op">;</span></span>
+<span id="cb157-72"><a href="#cb157-72" aria-hidden="true" tabindex="-1"></a>  a<span class="op">.</span><span class="at">href</span> <span class="op">=</span> url<span class="op">;</span></span>
+<span id="cb157-73"><a href="#cb157-73" aria-hidden="true" tabindex="-1"></a>  a<span class="op">.</span><span class="at">download</span> <span class="op">=</span> <span class="st">&#39;test.webm&#39;</span><span class="op">;</span></span>
+<span id="cb157-74"><a href="#cb157-74" aria-hidden="true" tabindex="-1"></a>  <span class="bu">document</span><span class="op">.</span><span class="at">body</span><span class="op">.</span><span class="fu">appendChild</span>(a)<span class="op">;</span></span>
+<span id="cb157-75"><a href="#cb157-75" aria-hidden="true" tabindex="-1"></a>  a<span class="op">.</span><span class="fu">click</span>()<span class="op">;</span></span>
+<span id="cb157-76"><a href="#cb157-76" aria-hidden="true" tabindex="-1"></a>  <span class="pp">setTimeout</span>(<span class="kw">function</span>() {</span>
+<span id="cb157-77"><a href="#cb157-77" aria-hidden="true" tabindex="-1"></a>  <span class="bu">document</span><span class="op">.</span><span class="at">body</span><span class="op">.</span><span class="fu">removeChild</span>(a)<span class="op">;</span></span>
+<span id="cb157-78"><a href="#cb157-78" aria-hidden="true" tabindex="-1"></a>  <span class="bu">window</span><span class="op">.</span><span class="at">URL</span><span class="op">.</span><span class="fu">revokeObjectURL</span>(url)<span class="op">;</span></span>
+<span id="cb157-79"><a href="#cb157-79" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span> <span class="dv">100</span>)<span class="op">;</span></span>
+<span id="cb157-80"><a href="#cb157-80" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <h4>
 CSS
@@ -9035,23 +9037,24 @@ Click to expand!
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
-&lt;title&gt;MediaRecorder API usage&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
+  &lt;title&gt;MediaRecorder API usage&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;div id=&quot;container&quot;&gt;
-&lt;h1&gt;&lt;a href=&quot;//webrtc.github.io/samples/&quot; title=&quot;WebRTC samples homepage&quot;&gt;WebRTC example:&lt;/a&gt; &lt;span&gt;MediaRecorder&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;For more info, see the &lt;a href=&quot;https://w3c.github.io/mediacapture-record/MediaRecorder.html&quot; title=&quot;W3C MediaStream Recording API - Editor&#39;s Draft&quot;&gt;MediaStream Recording API Editor&#39;s Draft&lt;/a&gt;.&lt;/p&gt;
-&lt;video id=&quot;gum&quot; autoplay muted&gt;&lt;/video&gt;
-&lt;video id=&quot;recorded&quot; loop controls&gt;&lt;/video&gt;
-&lt;div&gt;
-&lt;button id=&quot;record&quot; disabled&gt;Start Recording&lt;/button&gt;
-&lt;button id=&quot;play&quot; disabled&gt;Play&lt;/button&gt;
-&lt;button id=&quot;download&quot; disabled&gt;Download&lt;/button&gt;
-&lt;/div&gt;
-&lt;a href=&quot;https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record&quot; title=&quot;View source for this page on GitHub&quot; id=&quot;viewSource&quot;&gt;View source on GitHub&lt;/a&gt;
-&lt;/div&gt;
+  &lt;div id=&quot;container&quot;&gt;
+    &lt;h1&gt;&lt;a href=&quot;//webrtc.github.io/samples/&quot; title=&quot;WebRTC samples homepage&quot;&gt;WebRTC example:&lt;/a&gt; &lt;span&gt;MediaRecorder&lt;/span&gt;&lt;/h1&gt;
+    &lt;p&gt;For more info, see the &lt;a href=&quot;https://w3c.github.io/mediacapture-record/MediaRecorder.html&quot; 
+      title=&quot;W3C MediaStream Recording API - Editor&#39;s Draft&quot;&gt;MediaStream Recording API Editor&#39;s Draft&lt;/a&gt;.&lt;/p&gt;
+      &lt;video id=&quot;gum&quot; autoplay muted&gt;&lt;/video&gt;
+      &lt;video id=&quot;recorded&quot; loop controls&gt;&lt;/video&gt;
+    &lt;div&gt;
+      &lt;button id=&quot;record&quot; disabled&gt;Start Recording&lt;/button&gt;
+      &lt;button id=&quot;play&quot; disabled&gt;Play&lt;/button&gt;
+      &lt;button id=&quot;download&quot; disabled&gt;Download&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record&quot; title=&quot;View source for this page on GitHub&quot; id=&quot;viewSource&quot;&gt;View source on GitHub&lt;/a&gt;
+  &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 </details>
@@ -9230,7 +9233,7 @@ any JavaScript command.</p>
 <p>Let’s look
 at <a href="https://jsbin.com/visariz/1/edit?html,output">this example
 on JS Bin</a>:</p>
-<p align="center" width="100%">
+<div data-align="center" width="100%">
 <table>
 <colgroup>
 <col style="width: 1%" />
@@ -9313,7 +9316,7 @@ href="https://december.com/html/4/element/html.html"><b>html</b></a>&gt;</td>
 </tr>
 </tbody>
 </table>
-</p>
+</div>
 <p>The simplest way to add JavaScript code in an HTML page, is by using
 the &lt;script&gt;…&lt;/script&gt; element.</p>
 <p><b>The code in this example is executed sequentially when the page is
@@ -9670,7 +9673,7 @@ height) for example, that draws a filled rectangle, and properties for
 setting the color, shadows, gradients, etc.
 </p>
 <h4>
-So, let’s first get the context (do this only once):
+Let’s first get the context (do this only once):
 </h4>
 <pre><code>var ctx=canvas.getContext(&#39;2d&#39;);</code></pre>
 <h4>
@@ -9808,7 +9811,7 @@ encoding (we could also have used ctx.fillStyle=‘red’);</p>
 left Y coordinate, width, height), which draws a filled rectangle.</p>
 <p>The way the rectangle will be filled depends on the current value of
 several properties of the context, in particular the value of
-the fillStyle property. So, in our case, the rectangle will be red.</p>
+the fillStyle property. In our case, the rectangle will be red.</p>
 <h4>
 Summary of the different steps:
 </h4>
@@ -11509,7 +11512,7 @@ property and the corresponding results. The default value is
 <h3>
 Possible values for the textbaseline property:
 </h3>
-<p align="center" width="100%">
+<div data-align="center" width="100%">
 <table>
 <colgroup>
 <col style="width: 30%" />
@@ -11553,7 +11556,7 @@ that extends furthest down in the text.</td>
 </tr>
 </tbody>
 </table>
-</p>
+</div>
 <p>Typical use (taken from the example above):</p>
 <pre><code>1.  context.textBaseline = &quot;top&quot;;
 2.  context.fillText(&quot;top&quot;, 0, 75);
@@ -14195,10 +14198,10 @@ Colors and transparency
 <p>You can use <a href="https://www.w3.org/TR/css3-color/">the same
 syntax for colors that is supported by CSS3</a>. The next lines show
 possible values/syntaxes.</p>
-<pre><code>ctx.strokeStyle = &#39;red&#39;;
-ctx.fillStyle = &quot;#00ff00&quot;;
-ctx.strokeStyle = &quot;rgb(0, 0, 255)&quot;;
-ctx.fillStyle = &quot;rgba(0, 0, 255, 0.5)&quot;;</code></pre>
+<pre><code>1. ctx.strokeStyle = &#39;red&#39;;
+2. ctx.fillStyle = &quot;#00ff00&quot;;
+3. ctx.strokeStyle = &quot;rgb(0, 0, 255)&quot;;
+4. ctx.fillStyle = &quot;rgba(0, 0, 255, 0.5)&quot;;</code></pre>
 <p>Note that:</p>
 <ul>
 <li><p>All values are strings;</p></li>
@@ -14441,8 +14444,8 @@ ctx.fillRect(200, 100, 50, 50);
 ctx.fillRect(50, 150, 50, 50);
 ctx.fillRect(150, 150, 50, 50);
 ctx.fillRect(250, 150, 50, 50);</code></pre>
-<p>This code is rather ugly isn’t it? It would have been better  to use
-a loop…</p>
+<p>This code is rather ugly isn’t it? It would have been better to use a
+loop…</p>
 <h4>
 Here is function that draws a chessboard:
 </h4>
@@ -14478,7 +14481,7 @@ a value of 10, 20, or 2…</p>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <p><img src="./images/image170.png?raw=true"
-   width="85%"
+   width="65%"
    alt="Draw red and blue checkboard." />   <br/></p>
 <h4>
 JavaScript
@@ -15502,7 +15505,9 @@ Click to expand!
 20.       } // for
 21. } // function</code></pre>
 </details>
-<b>Explanations:</b>
+<h4>
+Explanations:
+</h4>
 <ul>
 <li>
 This function takes as a parameter the list of images to be loaded, and
@@ -15535,7 +15540,9 @@ Example of use of this loader
 6.  
 7.      drawRectanglesWithPatterns();
 8.  });</code></pre>
-<p><b>Explanations:</b></p>
+<h4>
+Explanations:
+</h4>
 <ul>
 <li><p><i>Line 1</i> is the call to the image loader, the first
 parameter is the list of images to be loaded, while the second parameter
@@ -15884,59 +15891,59 @@ Click to expand!
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Unwanted shadows disappear- Example #2 bis&lt;/title&gt;
-&lt;style&gt;
-body {
-margin: 0px;
-padding: 0px;
-}
-#myCanvas {
-border: 1px solid #9C9898;
-}
-&lt;/style&gt;
-&lt;script&gt;
-var canvas, ctx;
-window.onload = function(){
-canvas = document.getElementById(&quot;myCanvas&quot;);
-ctx = canvas.getContext(&quot;2d&quot;);
-var centerX = canvas.width / 2;
-var centerY = canvas.height / 2;
-var radius = 70;
-ctx.beginPath();
-// Add to the path a full circle (from 0 to 2PI)
-ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
-// save the context before setting shadows and drawing the filled circle
-ctx.save();
-// With path drawing you can change the context
-// properties until a call to stroke() or fill() is performed
-ctx.fillStyle = &quot;lightBlue&quot;;
-// add shadows before drawing the filled circle
-addShadows();
-// Draws the filled circle in light blue
-ctx.fill();
-// restore the context to its previous saved state
-ctx.restore();
-// Prepare for the outline
-ctx.lineWidth = 5;
-ctx.strokeStyle = &quot;black&quot;;
-// draws AGAIN the path (the circle), this
-// time in wireframe
-ctx.stroke();
-// Notice we called context.arc() only once ! And drew it twice
-// with different styles
-};
-function addShadows() {
-ctx.shadowColor = &quot;Grey&quot;; // color
-ctx.shadowBlur = 20; // blur level
-ctx.shadowOffsetX = 15; // horizontal offset
-ctx.shadowOffsetY = 15; // vertical offset
-}
-&lt;/script&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Unwanted shadows disappear- Example #2 bis&lt;/title&gt;
+  &lt;style&gt;
+    body {
+    margin: 0px;
+    padding: 0px;
+    }
+    #myCanvas {
+    border: 1px solid #9C9898;
+    }
+  &lt;/style&gt;
+  &lt;script&gt;
+    var canvas, ctx;
+    window.onload = function(){
+    canvas = document.getElementById(&quot;myCanvas&quot;);
+    ctx = canvas.getContext(&quot;2d&quot;);
+    var centerX = canvas.width / 2;
+    var centerY = canvas.height / 2;
+    var radius = 70;
+    ctx.beginPath();
+    // Add to the path a full circle (from 0 to 2PI)
+    ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
+    // save the context before setting shadows and drawing the filled circle
+    ctx.save();
+    // With path drawing you can change the context
+    // properties until a call to stroke() or fill() is performed
+    ctx.fillStyle = &quot;lightBlue&quot;;
+    // add shadows before drawing the filled circle
+    addShadows();
+    // Draws the filled circle in light blue
+    ctx.fill();
+    // restore the context to its previous saved state
+    ctx.restore();
+    // Prepare for the outline
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = &quot;black&quot;;
+    // draws AGAIN the path (the circle), this
+    // time in wireframe
+    ctx.stroke();
+    // Notice we called context.arc() only once ! And drew it twice
+    // with different styles
+    };
+    function addShadows() {
+    ctx.shadowColor = &quot;Grey&quot;; // color
+    ctx.shadowBlur = 20; // blur level
+    ctx.shadowOffsetX = 15; // horizontal offset
+    ctx.shadowOffsetY = 15; // vertical offset
+  }
+  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;
-&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;
+  &lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 </details>
@@ -15957,7 +15964,7 @@ Example #1: changing the line thickness
 </h4>
 <p>We have seen this before. This is done by changing the value (in
 pixels) of the lineWidth property of the context:</p>
-<pre><code>1.  &lt;b&gt;ctx.lineWidth = 10;&lt;/b&gt; // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels</code></pre>
+<pre><code>ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels</code></pre>
 <p>
 Here is a complete example where we draw with a lineWidth of 20 pixels:
 </p>
@@ -18462,7 +18469,7 @@ autocompletion, &lt;output&gt; for feedback, etc.
 <br/>
 </ul>
 <p>Examples of contextual keyboards are shown above; they differ
-depending on the type of  <input> fields in the &lt;form&gt;.  In
+depending on the type of  &lt;input&gt; fields in the &lt;form&gt;.  In
 the examples, we can see: email, URL, and phone number. Look at the
 different keyboard layouts. The last picture is a date picker from an
 IOS phone.</p>
@@ -18563,15 +18570,12 @@ form in a Web page: REST Web services, servlets, Microsoft ASP pages,
 etc.</p>
 <p>On the client side, the forms indicate to which server and how the
 data should be sent,  using the action and method attributes
-respectively. A <button type="submit"> or an <input type=submit> field
-is used to submit the form content.</p>
-For example: 
-<form action="myServerCode.php" method="POST">
-…
-</form>
-<p>. Here, we set the URL of the server side code (myServerCode.php),
-and the HTTP method that will be used by the browser for sending the
-form content (POST).</p>
+respectively. A &lt;button type=“submit”&gt; or an &lt;input
+type=submit&gt; field is used to submit the form content.</p>
+<p>For example: &lt;form action=“myServerCode.php”
+method=“POST”&gt;…&lt;/form&gt;. Here, we set the URL of the server side
+code (myServerCode.php), and the HTTP method that will be used by the
+browser for sending the form content (POST).</p>
 <p>Another approach is to use JavaScript for sending the form content
 with <a href="https://en.wikipedia.org/wiki/Ajax_(programming)">Ajax</a>. This
 is covered in W3Cx HTML5 Apps and Games course.</p>
@@ -18606,11 +18610,11 @@ The following two guidelines are to give you a good start to make your
 forms accessible:</p>
 <ol type="1">
 <li><p>For every form field, ensure that a descriptive label is provided
-and use the <label> element to identify each form control.</p></li>
-<li><p>For larger or complex forms, use the </p>
-<fieldset>
-<p> and <legend> elements to respectively group and associate related
-form controls.</p></li>
+and use the &lt;label&gt; element to identify each form
+control.</p></li>
+<li><p>For larger or complex forms, use
+the &lt;fieldset&gt; and &lt;legend&gt; elements to respectively group
+and associate related form controls.</p></li>
 </ol>
 <p>Examples for each of these two basic guidelines are given in the
 following pages.</p>
@@ -18657,7 +18661,7 @@ Labels need to describe the purpose of the form control
 as “E-mail Address:” as the label for a text field (see figure
 below).</p>
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 217. e-mail form label text (xxx) ---------------------------------->
+<!------------------------------ 217. e-mail form label text (xxx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <p><img src="./images/image217.png?raw=true"
@@ -18776,21 +18780,17 @@ users, as related controls are easier to identify.</p>
 <h4>
 Associating related controls with fieldset
 </h4>
-Grouping needs to be carried out visually and in the code, for example,
-by using the 
-<fieldset>
- and <legend> elements to associate related form controls. The 
-<fieldset>
-<p> identifies the entire grouping and <legend> identifies the
-grouping’s descriptive text.</p>
+<p>Grouping needs to be carried out visually and in the code, for
+example, by using the &lt;fieldset&gt; and &lt;legend&gt; elements to
+associate related form controls. The &lt;fieldset&gt; identifies the
+entire grouping and &lt;legend&gt; identifies the grouping’s descriptive
+text.</p>
 <h4>
 Example #1: radio buttons
 </h4>
-In the example below, there are three radio buttons that allow the user
-to choose an output format. Radio button groups should always be grouped
-using 
-<fieldset>
-<p>.</p>
+<p>In the example below, there are three radio buttons that allow the
+user to choose an output format. Radio button groups should always be
+grouped using &lt;fieldset&gt;.</p>
 <p>Output format:</p>
 <!---
 ![](./images/image222.wmf)Text file
@@ -18878,8 +18878,8 @@ implementation give a boost in performance, and reduce the size of
 JavaScript embedded in complex Web pages.</p>
 <p>MDN’s Web docs <a
 href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#%3Cinput%3E_types">article
-on <input> types</a> lists all input types and highlights those that
-came with HTML5.</p>
+on &lt;input&gt; types</a> lists all input types and highlights those
+that came with HTML5.</p>
 <p>Now, let’s play with some of these input types and attributes.</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 223. html4 to html5 time to update (299) ---------------------------->
@@ -18919,7 +18919,7 @@ Inserting a color chooser is as simple as:
 usually embed input elements in a &lt;form&gt;…
 </form>
 <p>.</p>
-<p>Try <input type="color"> online with this
+<p>Try &lt;input type=“color”&gt; online with this
 <a href="https://jsbin.com/cajuzob/1/edit?html,output">JSBin
 example</a>. Or do it here in your browser: just click on the purple
 square below : </p>
@@ -18935,9 +18935,9 @@ though the <i>look and feel</i> may differ):</p>
 <h4>
 Example: changing the background color of the page
 </h4>
-<p>The <input type="color"> can fire change or input events. Here is an
-example that changes the background color of the page when a color is
-chosen. <a
+<p>The &lt;input type=“color”&gt; can fire change or input events. Here
+is an example that changes the background color of the page when a color
+is chosen. <a
 href="https://jsbin.com/jozuter/1/edit?html,css,js,console,output">Try
 it online at JSBin</a>.</p>
 <!------------------------------------------------------------------------------------------------>
@@ -19289,8 +19289,8 @@ given dates using JavaScript. To check that the chosen date is before
 ...
 }
 &lt;input type=&quot;datetime&quot;&gt;, &quot;week&quot;, &quot;month&quot;, &quot;datetime-local&quot;, etc.</code></pre>
-<p>The HTML5 specification indicates that we can
-use <input type="date"> and <input type="time"> while for some years
+<p>The HTML5 specification indicates that we can use &lt;input
+type=“date”&gt; and &lt;input type=“time”&gt; while for some years
 (before the specification became a frozen standard in October 2014),
 other variants were also present, such
 as type=datetime, datetime-local, month and week.</p>
@@ -19752,10 +19752,10 @@ Click to expand!
 <p align="center" width="100%">
 <img src="./images/image258.jpeg?raw=true"
    width="50%"
-   alt="zipper with funny label input type=range" />
+   alt="zipper with funny label input type=range." />
 </p>
 <p>This input type renders as a slider. It accepts the same attributes
-as the <input type="number"> : min, max, step and value.</p>
+as the &lt;input type=“number”&gt; : min, max, step and value.</p>
 <h4>
 Example of rendering on a desktop:
 </h4>
@@ -19884,9 +19884,9 @@ integer values to attributes).</p>
 <pre><code>value=5 min=0, max=10 step=&quot;any&quot;:  </code></pre>
 <p><b>WARNING</b>: Using a step attribute with an integer value will
 make the slider jump corresponding to the step value. By default,
-omitting the step attribute is equivalent to step=“1”. So, for accepting
-float values, it is necessary to use step=“any”, or step equal to a
-floating point value, such as step=“0.5”.</p>
+omitting the step attribute is equivalent to step=“1”.</p>
+<p>For accepting float values, it is necessary to use step=“any”, or
+step equal to a floating point value, such as step=“0.5”.</p>
 <p>Adding “ticks” to the range slider using
 a &lt;datalist&gt; element</p>
 <!------------------------------------------------------------------------------------------------>
@@ -19948,7 +19948,7 @@ use: <a href="https://www.cssportal.com/style-input-range/">Style Input
 Range</a>
 </li>
 </ul>
-<p align="center" width="100%">
+<div data-align="center" width="100%">
 <table>
 <colgroup>
 <col style="width: 67%" />
@@ -20027,14 +20027,18 @@ Range</a>
 <td></td>
 <td>- <b>formnovalidate</b></td>
 </tr>
+<tr class="odd">
+<td>*  pseudoclasses CSS target with :disabled and :checked
+or :required selectors</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>** <i>align</i> is deprecated, CSS rules should be used instead</td>
+<td></td>
+</tr>
 </tbody>
 </table>
-<div class="line-block">—————————————————————————————————————————–
-|<br />
-*   pseudoclasses CSS target with :disabled and :checked
-or :required selectors |<br />
-** align is deprecated, CSS rules should be used instead |</div>
-</p>
+</div>
 <ul>
 <li>
 MDN’s Web
@@ -20074,12 +20078,11 @@ even greater detail.</p>
 5.5.2 form
 </h3>
 <!------------------------------------------------------------------------------------------------>
-This attribute is useful for putting input fields outside the form
+<p>This attribute is useful for putting input fields outside the form
 itself. The form attribute of an external input field must share the
 same value as the id of the form the field belongs to. This is useful
-when using 
-<fieldset>
-<p> elements for making the page/form layout easier.</p>
+when using &lt;fieldset&gt; elements for making the page/form layout
+easier.</p>
 <h4>
 Typical use
 </h4>
@@ -20087,17 +20090,14 @@ Typical use
 <p><a href="http://codepen.io/w3devcampus/pen/jmdpyv)">Try this
 interactive example in CodePen</a>, or try it directly in your
 browser:</p>
-<!---
-Enter your name (field outside the form): ![](./images/image266.wmf)</p>
---->
-<h4>
-Top of Form
-</h4>
-<!---
-Choose optionFree registering![](./images/image219.wmf)Premium![](./images/image219.wmf) Send form
-
-Bottom of Form
---->
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 266. html5 form attributes (321) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image266.png?raw=true"
+   width="65%"
+   alt="HTML5 form attributes." />
+</p>
 <h4>
 Source code:
 </h4>
@@ -20142,7 +20142,7 @@ individual &lt;input&gt; elements. It specifies when input fields must
 autocomplete the user’s input based on the user’s typing history. </p>
 <p>Possible values of this attribute: on/off.</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 267. on off funny picture (xxx) -------------------------------->
+<!---------------------------- 267. bright red on off picture (322) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image267.jpeg?raw=true"
@@ -20166,25 +20166,22 @@ them).</p>
 Typical use
 </h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------- 268. example of use of autocomplete attribute (xxx) ------------->
+<!--------------------- 268. example of use of autocomplete attribute (323) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image268.jpeg?raw=true"
-   width="40%"
-   alt="Example of use of autocomplete attribute." />
+  width="40%"
+  alt="Example of use of autocomplete attribute." />
 </p>
 <p>Try it in your browser here:</p>
-<p>Top of Form</p>
-<p>Examples of use of the autocomplete attributeEnter your email
-(autocomplete=off, this overrides the
-form’s autocomplete=on attribute):</p>
-<p>Enter your address (autocomplete=on by inheritance of the
-form’s autocomplete=on attribute):</p>
-<p>Submit</p>
-<p>Bottom of Form</p>
-<p>To see auto-completion in action: enter something in both fields and
-submit the form. Then enter the same thing: you will see that only the
-second input field offers auto-completion.</p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 268b. example of use of autocomplete attribute (323) --------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image268b.png?raw=true"
+  width="40%"
+  alt="Example of use of autocomplete attribute, #2." />
+</p>
 <h4>
 Source code extract:
 </h4>
@@ -20221,20 +20218,17 @@ the focus is put on the second input field of the page. It also shows
 the use of  required, placeholder and pattern attributes.</p>
 <p>The required attribute makes the input field invalid if kept
 empty. </p>
-<!---
+<h4>
 Here is the result in your browser:
-
-Top of Form
-
-Example of use of the autofocus attributeThis is an input field:![](./images/image266.wmf)
---->
-<!---
-Enter at least 6 chars, max 9 chars (this field has the autofocus attribute):![](./images/image218.wmf)
-
-Bottom of Form
---->
-<p>Notice that the focus in on the second input field, thanks to
-the autofocus attribute.</p>
+</h4>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------ 269. example use of autofocus attribute (323) ------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image269.png?raw=true"
+  width="65%"
+  alt="Example use of autofocus attribute." />
+</p>
 <h4>
 Extract from source code:
 </h4>
@@ -20317,14 +20311,17 @@ the section about the new &lt;datalist&gt; element (see next unit).</p>
 click inside the field and use the drop down menu). Note that you can
 also enter any value; if it does not start with one of these letters it
 will be accepted but will not trigger auto-completion.</p>
-<!---
-Top of Form
-
-List attributePreferred browser![](./images/image269.wmf) ![](./images/image270.wmf)
-
-Bottom of Form
---->
-<p>Source code extract:</p>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------ 270. preferred browser and submit query (325) ------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image270.png?raw=true"
+  width="65%"
+  alt="Preferred browser prompt and submit query." />
+</p>
+<h4>
+Source code extract:
+</h4>
 <details>
 <summary>
 Click to expand!
@@ -20374,16 +20371,24 @@ RegExps”</a> that has step by step exercises and explanations.</p>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image271.jpeg?raw=true"
-   width="40%"
+   width="65%"
    alt="Menu on the left, categories and patterns on the right. html5patterns.com." />
 </p>
 <h4>
 Typical use
 </h4>
-<p>Just add a pattern attribute with a value that is the JavaScript
-regular expression that must match the entire string entered in the
-field. Note that the empty string is valid by default (except if
-the required attribute is used - this makes empty fields invalid).</p>
+Just add a pattern attribute with a value that is the JavaScript regular
+expression that must match the entire string entered in the field. Note
+that the empty string is valid by default (except if
+the required attribute is used - this makes empty fields invalid).
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------------- 271c. typical use (326) ------------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image271c.png?raw=true"
+  width="65%"
+  alt="Typical use." />
+</p>
 <p>It’s best practice to systematically add a title attribute with a
 value that indicates what constitutes a valid entry. More on this in the
 section of this course dedicated to form validation.</p>
@@ -20408,6 +20413,15 @@ equal to 3 alphabetic characters, the field is invalid.</p>
 <p>As seen in the previous examples, we used some CSS pseudo classes for
 automatically setting the background-color of the input field as we
 type.</p>
+<!-- image here --->
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 271b. type multiple email addresses (329) --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image271b.png?raw=true"
+   width="65%"
+   alt="Green valid, pink invalid.  Type email, name myemail." />
+</p>
 <h4>
 Complete source code:
 </h4>
@@ -20482,9 +20496,18 @@ Click to expand!
 Example #3: an &lt;input type=“url”&gt; element with a pattern attribute
 allowing only certain protocols
 </h4>
-<p><a href="https://jsbin.com/nulahey/1/edit?html,output)or">Online
-example at JSBin</a> try it in your browser:</p>
-<p>Enter the URL of your repository (http, https or ftp): </p>
+<a href="https://jsbin.com/nulahey/1/edit?html,output)or">Online example
+at JSBin</a> try it in your browser: <!---
+Enter the URL of your repository (http, https or ftp): 
+--->
+<!------------------------------------------------------------------------------------------------>
+<!------------- 27x. input type enter url of your repository  () ------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image271b.png?raw=true"
+   width="65%"
+   alt="Green valid, pink invalid.  Type email, name myemail." />
+</p>
 <h4>
 Source code extract:
 </h4>
@@ -20552,16 +20575,14 @@ at JSBin</a></p>
 <p>Or try it below in your browser: type in a list of email addresses
 separated by a comma, then look at the input field background color
 (pink = invalid, green = valid), and then submit:</p>
-<p>This form uses: &lt;input type=“email”
-name=“myemail” multiple&gt;</p>
-<p>Top of Form</p>
-<p>With the multiple attributeEnter several email addresses: Submit</p>
-<p>Bottom of Form</p>
-<p>This form does not use the multiple attribute:</p>
-<p>Top of Form</p>
-<p>Without the multiple attributeEnter several email
-addresses: Submit</p>
-<p>Bottom of Form</p>
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- 271b. input type email - single or multiple (329) ------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center" width="100%">
+<img src="./images/image271b.png?raw=true"
+  width="65%"
+  alt="Enter one or more email addresses." />
+</p>
 <h4>
 Complete source code:
 </h4>
@@ -20620,13 +20641,13 @@ Click to expand!
 as a valid entry</b> (<i>lines 25</i> and <i>38</i>). If you enter bad
 values and submit, you will see in the error message the string value of
 the title attribute.</p>
-<p>With <input type="file"></p>
+<p>With &lt;input type=“file”&gt;</p>
 <p>With this type of input field, multiple files can be chosen (whereas
 before HTML5, only a single file could be chosen).</p>
-<p>Typical use: <input type=file multiple></p>
+<p>Typical use: &lt;input type=file multiple&gt;</p>
 <p>Try these in your browser, look at the small variations (text in the
 buttons, messages):</p>
-<p>Example with <input type=file multiple></p>
+<p>Example with &lt;input type=file multiple&gt;</p>
 <p>                    Select one or more files: </p>
 <p>Example without the multiple attribute:</p>
 <p>                    Select only one file: </p>
@@ -20647,18 +20668,18 @@ cover their usage and you are welcome to use them for future reference
 5.5.10 formaction and formmethod
 </h3>
 <!------------------------------------------------------------------------------------------------>
-<p>These attributes are targeted to the <input type="submit"> input
-fields. They are rarely used.</p>
+<p>These attributes are targeted to the &lt;input
+type=“submit”&gt; input fields. They are rarely used.</p>
 <pre><code>1.  &lt;input type=&quot;submit&quot;
 2.  formaction=&quot;preview.php&quot; formmethod=&quot;get&quot; value=&quot;Preview&quot;&gt;</code></pre>
-<p>When you use an <input type="submit"> field with
+<p>When you use an &lt;input type=“submit”&gt; field with
 the formaction attribute, the action attribute value of the form is
 overridden. The form will be submitted to the URL / value of
-the formaction attribute of the  <input type="submit"> field.</p>
+the formaction attribute of the  &lt;input type=“submit”&gt; field.</p>
 <p>The formmethod attribute does the same with the
-POST/GET method attribute of the form. If an <input type="submit"> has
-a formmethod attribute, it overrides the value of the method attribute
-of the form.</p>
+POST/GET method attribute of the form. If an &lt;input
+type=“submit”&gt; has a formmethod attribute, it overrides the value of
+the method attribute of the form.</p>
 <h4>
 Typical use
 </h4>
@@ -20693,37 +20714,36 @@ its formaction attribute.
 </li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 272.  (xxx) ------------------------------->
+<!------------------------------ 272. formaction attribute (332) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <p><img src="./images/image272.png?raw=true"
   width="40%"
-  alt="." />   <br/></p>
+  alt="Example of formaction attribute." />   <br/></p>
 <p>The second example shows a form with two submit buttons:</p>
 <ul>
 <li><p>the first button submits using a GET,</p></li>
 <li><p>the second button using a POST:</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 273.  (xxx) ------------------------------->
+<!------------------------------- 273. formmethod attribute (332) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <p><img src="./images/image273.png?raw=true"
   width="40%"
-  alt="." />   <br/></p>
+  alt="Example of formmethod attribute." />   <br/></p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-5-11">
 5.5.11 formnovalidate
 </h3>
 <!------------------------------------------------------------------------------------------------>
-<p>The formnovalidate attribute is targeted to
-the <input type="submit"> input fields. This attribute is rarely used,
-so there will be no questions about it in the end of the week’s
-exercises.</p>
+<p>The formnovalidate attribute is targeted to the &lt;input
+type=“submit”&gt; input fields. This attribute is rarely used, so there
+will be no questions about it in the end of the week’s exercises.</p>
 <p>This atrribute allows the submission of a form even if it
 contains  <i>invalid</i> fields. For example:  a form that has
-an <input type="email"> field or a field required and which are not
-filled. </p>
+an &lt;input type=“email”&gt; field or a field required and which are
+not filled. </p>
 <p>In general, such forms have two submit buttons, one with
 the formnovalidate attribute set to a non null value and one
 without.</p>
@@ -20746,6 +20766,13 @@ Click to expand!
 10. &lt;/fieldset&gt;
 11. &lt;/form&gt;</code></pre>
 </details>
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 275a. formnovalidate attribute (333) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<p><img src="./images/image275a.png?raw=true"
+  width="40%"
+  alt="Example of formnovalidate attribute." />   <br/></p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-5-12">
 5.5.12 formtarget
@@ -20786,14 +20813,13 @@ Complete example
 </h4>
 <p><a href="https://jsbin.com/godice/2/edit?html,output">Online example
 at JSBin </a>or try it in your browser below:</p>
-<!---
-Top of Form
-
-Given name: ![](./images/image269.wmf)
-Family name: ![](./images/image269.wmf)
-
-![](./images/image274.wmf) ![](./images/image275.wmf)
---->
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 276a. formtarget attribute (333) -------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<p><img src="./images/image276a.png?raw=true"
+  width="40%"
+  alt="Example of formtarget attribute." />   <br/></p>
 <h4>
 Source code:
 </h4>
@@ -20840,7 +20866,7 @@ server in JavaScript, using the <a
 href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects">FormData
 object</a>.</p>
 <h4>
-As an attribute of the <input type="submit" enctype=...> element
+As an attribute of the &lt;input type=“submit” enctype=…&gt; element
 </h4>
 <p>Since HTML5, this attribute can also be used in &lt;input
 type=“submit”&gt; input fields.</p>
@@ -20875,7 +20901,7 @@ Example
 <p><a href="https://jsbin.com/lokukam/4/edit?html,output">Try this
 online example at JSBin</a></p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 276.  (xx) ------------------------------->
+<!------------------------------ 276. formenctype attribute (335) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <p><img src="./images/image276.png?raw=true"
@@ -20917,18 +20943,18 @@ href="https://jsbin.com/lokukam/4/edit?html,output">this example in the
 JSBin</a> standalone mode (click the black arrow on the top right of the
 output tab, in JSBin), you should see this:</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 277.  (xx) ------------------------------->
+<!-------------------------- 277. formenctype example in jsbin (335) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <p><img src="./images/image277.png?raw=true"
    width="50%"
-   alt="JS Bin example of the above example." />   <br/></p>
+   alt="JS Bin in standalone mode." />   <br/></p>
 <p>Then, open the devtools and go to the “Network” tab, click on the
 POST request. Once done, click on the right on the “Header” tab to see
 the HTTP headers, and scroll down, you should see the form-data entries
 in the header, like in this screenshot:</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 278.   (xxx) ------------------------------->
+<!----------------------------- 278. something went wrong (336) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <p><img src="./images/image278.png?raw=true"
@@ -20946,12 +20972,12 @@ replaced by “+”, etc.). Here is a screenshot of what you should see:</p>
 <p>Let’s look at the HTML5 elements related to forms
 (specifically: &lt;datalist&gt;, &lt;output&gt;, &lt;meter&gt; 
 and &lt;progress&gt; elements).</p>
-<p align="center" width="100%">
+<div data-align="center" width="100%">
 <table>
 <thead>
 <tr class="header">
-<th>:HTML4</th>
-<th>:HTML5</th>
+<th>HTML4</th>
+<th>HTML5</th>
 </tr>
 </thead>
 <tbody>
@@ -21005,7 +21031,7 @@ and &lt;progress&gt; elements).</p>
 </tr>
 </tbody>
 </table>
-</p>
+</div>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-6-2">
 5.6.2 &lt;output&gt;
@@ -21040,8 +21066,10 @@ Top of Form
 
  x  = 6
 --->
-<p>Explanations about the attributes specific to
-the &lt;output&gt; element:</p>
+<h4>
+Explanations about the attributes specific to
+the &lt;output&gt; element:
+</h4>
 <ul>
 <li><p>for: a space-separated list containing the elements ids whose
 values went into the calculation.</p></li>
@@ -21077,9 +21105,10 @@ using x.value = a.value + b.value would result in a string concatenation
 instead of an addition. That’s why we use
 the valueAsNumber property.</p>
 <p>This is why we used the valueAsNumber property also introduced by
-HTML5 for some input fields such
-as <input type="range"> and <input type="number">, we also encountered
-the valueAsDate properties when we studied <input type="date">.</p>
+HTML5 for some input fields such as &lt;input
+type=“range”&gt; and &lt;input type=“number”&gt;, we also encountered
+the valueAsDate properties when we studied &lt;input
+type=“date”&gt;.</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-6-3">
 5.6.3 &lt;meter&gt;
@@ -21146,7 +21175,7 @@ Explanations:
    width="65%"
    alt="The link between the slider (an &lt;input type=range&gt;) and the meter element is done using an input event handler." />
   <br/> <!--
-![The link between the slider (an <input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the &lt;meter&gt; element (line 9) and update the displayed html content of the &lt;output&gt; element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
+![The link between the slider (an &lt;input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the &lt;meter&gt; element (line 9) and update the displayed html content of the &lt;output&gt; element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
 ---></p>
 <p>The link between the slider (an &lt;input type=range&gt;) and the
 meter element is done using an input event handler (oninput=“effect(…)”)
@@ -21166,14 +21195,14 @@ of the &lt;meter&gt; ranges as follows:</p>
 </ul>
 <p>… and depending on the value you set to optimum attribute, one of the
 ranges above becomes the “good (optimum)” range.</p>
-<p>So in the previous example, with the value of the optimum attribute
-set to 19, a number between min and low (not inclusive), the Range 1
+<p>In the previous example, with the value of the optimum attribute set
+to 19, a number between min and low (not inclusive), the Range 1
 (between min=0 and low=20) becomes the “good (optimum)” range (displayed
 in green), the Range 3 (between high=80 and max=100) becomes the “bad”
 (displayed in red color) range, and the Range 2, in the middle, will be
 displayed in yellow (not optimum, not bad).</p>
-<p>So, a &lt;meter&gt; element used for displaying blood pressure might
-be a good candidate for setting the optimum value to “Range 2”, and
+<p>A &lt;meter&gt; element used for displaying blood pressure might be a
+good candidate for setting the optimum value to “Range 2”, and
 a &lt;meter&gt; element used for displaying memory usage might be a good
 candidate for setting the optimum value to “Range 1”, meaning that a low
 memory usage is “good”.</p>
@@ -21538,7 +21567,7 @@ language, and the message from the title attribute “as is”.</p>
   <br/></p>
 <p>Same example on FireFox, the title attribute is ignored:</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 291.  (xx) ------------------------------->
+<!----------------------------- 291. firefox title attribute (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <p><img src="./images/image291.jpeg?raw=true"
@@ -21566,16 +21595,11 @@ to make your own message bubbles.</p>
 <h4>
 Typical use
 </h4>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 00.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="https://jsbin.com/hovato/1/edit?html,output"
-   width="35%"
-   alt="Example of password checking at JSBin." />   <br/> be careful to
-try this example in JS Bin standalone mode (click the small black arrow
-on the top right of the output tab).</p>
-<p>Or you may try it here in your browser:</p>
+<p>Be careful when you try this example in JS Bin standalone mode (click
+the small black arrow on the top right of the output tab).</p>
+<p>Or, you may try it
+<a href="https://jsbin.com/nalaxeg/1/edit?html,output">here</a> in your
+browser.</p>
 <!---
 Top of Form
 
@@ -21704,12 +21728,13 @@ example at JSBin that shows how to test the different types of
 validation errors</a>, or you may try it here in your browser (enter bad
 values, too big, too small, enter invalid characters, etc.):</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 292.  (xx) ------------------------------->
+<!-------------------------- 292. enter value between 10 and 20 (348) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <p><img src="./images/image292.png?raw=true"
    width="65%"
-   alt="." />   <br/></p>
+   alt="JSBin example which shows how to test the different types of validation errors." />
+  <br/></p>
 <h4>
 Source code:
 </h4>
@@ -21775,12 +21800,12 @@ topic in the next section of the course.</p>
 <p>Custom validation: changing the default behavior, aggregating error
 messages, removing bubbles, etc.</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 293.  (xx) ------------------------------->
+<!---------------- 293. in french, submit with one or two invalid fields (349) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <p><img src="./images/image293.png?raw=true"
    width="35%"
-   alt="." />   <br/></p>
+   alt="Custom validation." />   <br/></p>
 <h4>
 Criticism of the default behavior of HTML5 built-in validation
 </h4>
@@ -21812,12 +21837,12 @@ behavior
 example at JSBin,</a> or try it here in your browser: enter invalid
 values and submit with one or two invalid fields.</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 294.  (xx) ------------------------------->
+<!---------------------------- 294. name and e-mail fields (350) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <p><img src="./images/image294.png?raw=true"
    width="65%"
-   alt="." />   <br/></p>
+   alt="Prompt for name and e-mail address fields." />   <br/></p>
 <h4>
 Complete source code:
 </h4>
@@ -21926,35 +21951,31 @@ Complete source code:
 103. &lt;/script&gt;
 104. &lt;/body&gt;
 105. &lt;/html&gt;</code></pre>
-<p>Explanations:</p>
+<h4>
+Explanations:
+</h4>
 <ul>
-<li><i>Line 32</i>: we added an empty unnumbered list (
-<ul>
-..
-</ul>
-) to the form, with the CSS class=“error-messages”. We will use this
-class attribute for styling, and hiding by default, the error messages
-using CSS (see lines <i>12-20</i>, <i>line 13</i> hides the messages by
-default).</li>
+<li><i>Line 32</i>: we added an empty unnumbered list
+(&lt;ul&gt;…&lt;/ul&gt;) to the form, with the
+CSS class=“error-messages”. We will use this class attribute for
+styling, and hiding by default, the error messages using CSS (see
+lines <i>12-20</i>, <i>line 13</i> hides the messages by default),</li>
 <li><i>Lines 97-102</i> look at all forms in the document and call a
 function that will replace the default validation behavior for all of
-them: the replaceValidationUI(form) function.</li>
+them: the replaceValidationUI(form) function,</li>
 <li>This function first disables all default behavior (no more display
 of bubbles during form submission), this is done at <i>lines
-45-57</i>.</li>
+45-57</i>,</li>
 <li><i>Line 66</i>: we add a click listener to the submit button of the
-current form.</li>
+current form,</li>
 <li><i>Line 67</i> gets all invalid input fields for that form,</li>
 <li><i>Lines 76-83</i>: For each invalid field, we get the value of
 the name attribute of the corresponding label, we also get the
-validation error message, and we build a list item(
-<li>
-…
-</li>
-).</li>
+validation error message, and we build a list
+item(&lt;li&gt;…&lt;/li&gt;),</li>
 <li><i>Line 86</i>: Then we add this list element (a formatted error
 message corresponding to an invalid input field) to the error message
-container.</li>
+container,</li>
 <li><i>Lines 90-93</i>: The focus is given to the first invalid field
 that shows an error message.</li>
 </ul>
@@ -21981,11 +22002,12 @@ is quite simple and can be used together with file choosers.</p>
 to a server and using this API you can visualize them directly in the
 page before sending them to the server.</p>
 <p>Finally, we will look at the geolocation API that is useful for
-locating the person that is using the browser. So you can provide a
-customized service that take into account the geolocation, or you can
-also display the position of the person in a map, we will see example
-that work with Google Map and with OpenStreetMap. Another classic use is
-automatic filling of the address input fields in a form.</p>
+locating the person that is using the browser.</p>
+<p>You can provide a customized service that take into account the
+geolocation, or you can also display the position of the person in a
+map, we will see example that work with Google Map and with
+OpenStreetMap. Another classic use is automatic filling of the address
+input fields in a form.</p>
 <p>Instead of typing the zip code, entering the city, entering the
 country, you can guess that automatically and propose the form that is
 already filled with the address. I really enjoyed teaching you this
@@ -22326,7 +22348,8 @@ store:</p>
 <p>Students may note that something seems a bit off in the example
 above: instead of calling localStorage.getItem(k), we simply
 access localStorage[k]. Why? Because keys in the local store can also be
-accessed as if the store were a simple JavaScript object. So instead
+accessed as if the store were a simple JavaScript object.</p>
+<p>Instead
 of localStorage.getItem(“foo”) and localStorage.setItem(“foo”,
 “bar”), one can write localStorage.foo and localStorage.foo = “bar”. Of
 course there are limitations to this mapping: any string can serve as a
@@ -22555,28 +22578,28 @@ present.</p></li>
 <h4>
 Source code:
 </h4>
-<pre><code>// Called when the page is loaded
-window.onload = init;
- 
-function init() {
-   console.log(&quot;Adding input listener to all input fields&quot;);
-   // add an input listener to all input fields
-   var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
-   for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
-      addInputListener(listOfInputsInForm[i]);
-   }
-   // restore form content with previously saved values
-   restoreFormContent();
-}</code></pre>
+<pre><code>1. // Called when the page is loaded
+2. window.onload = init;
+3.
+4. function init() {
+5.    console.log(&quot;Adding input listener to all input fields&quot;);
+6.    // add an input listener to all input fields
+7.    var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
+8.    for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
+9.       addInputListener(listOfInputsInForm[i]);
+10.    }
+11.    // restore form content with previously saved values
+12.    restoreFormContent();
+13. }</code></pre>
 <p>And here is the addInputListener(inputField) function. It takes an
 input field as parameter and attaches an oninput listener to it, that
 will save the field’s content each time a value is entered. The key will
 be the id of the input field (<i>line 3</i>):</p>
-<pre><code>function addInputListener(inputField) {
-    inputField.addEventListener(&#39;input&#39;, function(event) {
-        localStorage.setItem(inputField.id, inputField.value);
-     }, false);
-}</code></pre>
+<pre><code>1. function addInputListener(inputField) {
+2.   inputField.addEventListener(&#39;input&#39;, function(event) {
+3.     localStorage.setItem(inputField.id, inputField.value);
+4.     }, false);
+5. }</code></pre>
 <p>Note that at <i>line 2</i>, we use addEventListener (that is not
 using the oninput property here). adddEventListener doesnot replace
 existing oninput definitions and keep all existing listeners
@@ -22591,26 +22614,26 @@ is done using the function restoreFormContent():</p>
 <summary>
 Click to expand!
 </summary>
-<pre><code>function restoreFormContent() {
-   console.log(&quot;restoring form content from localStorage&quot;);
-   // get the list of all input elements in the form
-   var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
-   // For each input element,
-   // - get its id (that is also the key for it&#39;s saved content
-   // in the localStorage)
-   // - get the value associated with the id/key in the local
-   // storage
-   // - If the value is not undefined, restore the value
-   // of the input field
-   for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
-     var fieldToRestore = listOfInputsInForm[i];
-     var id = fieldToRestore.id;
-     var savedValue = localStorage.getItem(id);
-     if(savedValue !== undefined) {
-        fieldToRestore.value = savedValue;
-     }
-   }
-}</code></pre>
+<pre><code>1. function restoreFormContent() {
+2.    console.log(&quot;restoring form content from localStorage&quot;);
+3.    // get the list of all input elements in the form
+4.    var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
+5.    // For each input element,
+6.    // - get its id (that is also the key for it&#39;s saved content
+7.    // in the localStorage)
+8.    // - get the value associated with the id/key in the local
+3.    // storage
+10.    // - If the value is not undefined, restore the value
+11.    // of the input field
+12.    for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
+13.      var fieldToRestore = listOfInputsInForm[i];
+14.      var id = fieldToRestore.id;
+15.      var savedValue = localStorage.getItem(id);
+16.      if(savedValue !== undefined) {
+17.         fieldToRestore.value = savedValue;
+18.      }
+19.    }
+20. }</code></pre>
 </details>
 <p>In this function, we first get the list of input fields (<i>line
 5</i>), then iterate on it (<i>line 14</i>). For each input field, we
@@ -22888,10 +22911,10 @@ I can drop a music file directly. Let’s go to get some music somewhere.
 Some AC/DC song! I can just drop the song and I can edit the song. I can
 play the song. I can cut, I can save locally, etc.</p>
 <p>Another example is an application, a Chrome application that is also
-written using Web technologies but doesn’t run using HTTP. So it’s quite
-easy to write such applications, because there are regular Web
-applications using HTML, CSS and Javascript except that you’ve got to
-package them for putting them on the Chrome store.</p>
+written using Web technologies but doesn’t run using HTTP.</p>
+<p>It’s quite easy to write such applications, because there are regular
+Web applications using HTML, CSS and Javascript except that you’ve got
+to package them for putting them on the Chrome store.</p>
 <p>I’m going first to show you a local audio file player that is called
 Remo.</p>
 <p>I can just open files, choose one or several, open the files, I’ve
@@ -22917,10 +22940,9 @@ we call data URL and I created some img elements we added in the
 page.</p>
 <p>First, before writing the application, I want to talk a little bit
 about data URLs.</p>
-<p>So data URLs are strange set of characters like that ,and if you
-select them and paste them in the address bar you can see a small red
-icon. And you can use this everywhere where you would have use an
-http://URL.</p>
+<p>Data URLs are strange set of characters like that ,and if you select
+them and paste them in the address bar you can see a small red icon. And
+you can use this everywhere where you would have use an http://URL.</p>
 <p>If I use this image here, I can using it in JSBin for example, and if
 I add the image here I can see that the content of the image, the
 pixels, are encoded in the URL itself. How can you make such URLs?
@@ -22960,7 +22982,7 @@ can see the different steps in real time. First, I add an ‘input
 type=file multiple’ for selecting multiple files. This is what’s
 happening and here I can select several images. I’m going to add an
 ‘onchange’ listener:</p>
-<p>‘onchange=readImagesAndPreview()’.</p>
+<pre><code>&#39;onchange=readImagesAndPreview()&#39;.</code></pre>
 <p>And I’m going to pass the set of file descriptors that have been
 selected: ‘this.files’ is the correct way to send the selected files to
 a Javascript function.</p>
@@ -23163,29 +23185,29 @@ type=“file” accept=“image/*“ multiple onchange=”filesProcess(this.f
 <summary>
 Click to expand!
 </summary>
-<pre><code>&lt;p&gt;
-&lt;div id=&quot;result&quot;&gt;...&lt;/div&gt;
-&lt;script&gt;
-  function filesProcess(files) {
-      var selection = &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Bytes&lt;/th&gt;&lt;th&gt;MIME Type&lt;/th&gt;
-                       &lt;th&gt;Last modified date&lt;/th&gt;&lt;/tr&gt;&quot;;
-      for(i=0; i&lt;files.length ;i++){
-          file = files[i];
-          selection += &quot;&lt;tr&gt;&lt;td&gt;&quot;+file.name+&quot;&lt;/td&gt;&lt;td style=&quot;text-align:right&quot;&gt;&quot;
-                    +file.size+&quot;&lt;/td&gt;&lt;td&gt;&quot;
-                    +file.type+&quot;&lt;/td&gt;&lt;td&gt; &quot;+file.lastModifiedDate+&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
-      }
-      selection += &quot;&lt;/table&gt;&quot;;
-      document.getElementById(&quot;result&quot;).innerHTML = selection;
-  }
-&lt;/script&gt;</code></pre>
+<pre><code>1. &lt;p&gt;
+2. &lt;div id=&quot;result&quot;&gt;...&lt;/div&gt;
+3. &lt;script&gt;
+4.   function filesProcess(files) {
+5.       var selection = &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Bytes&lt;/th&gt;&lt;th&gt;MIME Type&lt;/th&gt;
+6.                        &lt;th&gt;Last modified date&lt;/th&gt;&lt;/tr&gt;&quot;;
+7.       for(i=0; i&lt;files.length ;i++){
+8.           file = files[i];
+9.           selection += &quot;&lt;tr&gt;&lt;td&gt;&quot;+file.name+&quot;&lt;/td&gt;&lt;td style=&quot;text-align:right&quot;&gt;&quot;
+10.                     +file.size+&quot;&lt;/td&gt;&lt;td&gt;&quot;
+11.                     +file.type+&quot;&lt;/td&gt;&lt;td&gt; &quot;+file.lastModifiedDate+&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+12.       }
+13.       selection += &quot;&lt;/table&gt;&quot;;
+14.       document.getElementById(&quot;result&quot;).innerHTML = selection;
+15.   }
+16. &lt;/script&gt;</code></pre>
 </details>
 <h4>
 Explanations:
 </h4>
 <ul>
 <li>
-<i>Line1:</i> we used the multiple attribute to allow the selection of
+<i>Line 1:</i> we used the multiple attribute to allow the selection of
 multiple files in the file chooser (using shift or control
 keys). The accept=“image/”  attribute is a filter that restricts
 selection to images only. Finally, the onchange listener will call
@@ -23206,7 +23228,7 @@ the table of results.
 </li>
 <br/>
 <li>
-<i>Line 18:</i> the table is added to the page. We use
+<i>Line 14:</i> the table is added to the page. We use
 the innerHTML attribute of the DOM element corresponding to the &lt;div
 id=“result”&gt; in order to insert the table as its child in the DOM
 tree. As such, the table appears on the page dynamically.
@@ -23566,39 +23588,39 @@ Source code extract:
 <summary>
 Click to expand!
 </summary>
-<pre><code>// User selects file. Read it as an ArrayBuffer and pass to the API.
-var fileInput = document.querySelector(&#39;input[type=&quot;file&quot;]&#39;);
-fileInput.addEventListener(&#39;change&#39;, function(e) {
-   var reader = new FileReader();
-   reader.onload = function(e) {
-      initSound(e.target.result);
-   };
-   // THIS IS THE INTERESTING PART!
-   reader.readAsArrayBuffer(this.files[0]);
-}, false);</code></pre>
+<pre><code>1. // User selects file. Read it as an ArrayBuffer and pass to the API.
+2. var fileInput = document.querySelector(&#39;input[type=&quot;file&quot;]&#39;);
+3. fileInput.addEventListener(&#39;change&#39;, function(e) {
+4.    var reader = new FileReader();
+5.    reader.onload = function(e) {
+6.       initSound(e.target.result);
+7.    };
+8.    // THIS IS THE INTERESTING PART!
+9.    reader.readAsArrayBuffer(this.files[0]);
+10. }, false);</code></pre>
 </details>
 <h4>
 Explanations:
 </h4>
 <ul>
 <li>
-<i>Line 2:</i>we get a pointer to the file selector, the
+<i>Line 2:</i> we get a pointer to the file selector, the
 variable fileInput.
 </li>
 <li>
-<i>Line 4:</i>we define a change listener. In this example, we use an
+<i>Line 4:</i> we define a change listener. In this example, we use an
 anonymous function directly included in the listener definition (the
 listener is the function(e) {…}).
 </li>
 <li>
-<i>Line 11:</i>when a user chooses a file, the listener will be
+<i>Line 11:</i> when a user chooses a file, the listener will be
 executed. Line 11 will start the reading of the file content, as a
 binary file (this is what readAsArrayBuffer means: read as binary!).
 Once the file will be entirely read, the onload callback will be
 asynchronously called by the browser.
 </li>
 <li>
-<i>Line 7:</i>is the onload callback, executed when the file content is
+<i>Line 7:</i> is the onload callback, executed when the file content is
 loaded in memory. We pass the file content to the initSound function
 (see JSBin example for complete source code) that uses WebAudio to
 decode it (it may be a compressed file - an mp3 for example - and
@@ -24806,18 +24828,25 @@ function getPhysicalAddress(latlong) {
 <h4>
 Optional projects
 </h4>
-<p>Here are a few project ideas. Your classmates and the team who
-prepared the course will be glad to try them and offer feedback. Please
-post URLs in this discussion forum. These projects are optional, meaning
-that they won’t be graded. However, it is important to complete them to
-ensure good understanding of the material. - Project 1 (easy): Add a map
-showing your location to one of your Web pages. Start with a simple,
-static map, then try with an interactive map. Reuse the examples from
-the course. - Project 2 (a bit harder): The examples provided in the
-course used OpenStreetMap, but why don’t you try to do the same with
-GoogleMaps? Some services are free of charge, but will ask you to get an
-API key (see this YouTube tutorial about how to get such a key).</p>
+Here are a few project ideas. Your classmates and the team who prepared
+the course will be glad to try them and offer feedback. Please post URLs
+in this discussion forum. These projects are optional, meaning that they
+won’t be graded. However, it is important to complete them to ensure
+good understanding of the material.
+<ul>
+<li>
+Project 1 (easy): Add a map showing your location to one of your Web
+pages. Start with a simple, static map, then try with an interactive
+map. Reuse the examples from the course.
+</li>
+<li>
+Project 2 (a bit harder): The examples provided in the course used
+OpenStreetMap, but why don’t you try to do the same with GoogleMaps?
+Some services are free of charge, but will ask you to get an API key
+(see this YouTube tutorial about how to get such a key).
+</li>
+</ul>
 <p>. . .The end.</p>
-<!--- last updated 10-15-22 12:44am --->
+<!--- last updated 10-16-22 4:17pm --->
 </body>
 </html>
