@@ -22,18 +22,6 @@
    alt="W3Cx HTML 5.1x logo" />
 </p>
 
-<!---- :alien:  :sob:  :cold_sweat: :point_up:  :cancer:  :smile:   --->
-<!---- right arrow , left arrow , oriental , tilde ---->
-<!---- &#955;   &#9658;  &#767;  &#2400;  --->
-
-<!--
-<a href="#Put H2 Heading Here">1. Put H2 Heading Here</a>
-<a href="#Put H2 Heading Here">2. Put H2 Heading Here</a> 
-<a href="#Put H2 Heading Here">3. Put H2 Heading Here</a> 
-<a style="margin-left: 2rem;" href="#H3 Sub-Heading">3.1. H3 Sub-Heading</a> 
-<a style="margin-left: 2rem;" href="#H3 Sub-Heading">3.2. H3 Sub-Heading</a>
---->
-
 <h2><a href="#table-of-contents">Table of Contents</a></h2>
 <ol type="a">
   <li><a href="#cha-1">About W3C and the Web</a></li>
@@ -42,11 +30,11 @@
   <li><a href="#cha-4">W3C tools</a></li>
 </ol>
 
-<ol type="1">
+<ol list-style-type:lower-roman>
   <li><a href="#chb">Course Introduction and Practical Information</a></li>
-  <li><a style="margin-left: 2rem;" href="#chb-1" Sub-Heading">b.1 Course syllabus</a></li>
-  <li><a style="margin-left: 2rem;" href="#chb-2" Sub-Heading">b.2 Getting around the course</a></li>
-  <li><a style="margin-left: 2rem;" href="#chb-3" Sub-Heading">b.3 Course tools</a></li>
+  <li><a style="margin-left: 2rem;" href="#chb-1" Sub-Heading">Course syllabus</a></li>
+  <li><a style="margin-left: 2rem;" href="#chb-2" Sub-Heading">Getting around the course</a></li>
+  <li><a style="margin-left: 2rem;" href="#chb-3" Sub-Heading">Course tools</a></li>
 </ol>
 
 ## [**Module 1: HTML5 Basics**](#ch1)
