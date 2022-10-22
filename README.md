@@ -18418,7 +18418,7 @@ The &lt;datalist&gt; form element is useful for linking a list of choices to a
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 284. choice of browsers (341) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="float: left; font-size: 9pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="./images/image284.png?raw=true" style="width: 100%">Caption</p>
+<p style="float: left; font-size: 9pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="./images/image284.png?raw=true"></p>
 <!---
 <p align="center" width="40%">
 <img src="./images/image284.png?raw=true"
@@ -18429,7 +18429,7 @@ The &lt;datalist&gt; form element is useful for linking a list of choices to a
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 285. datalist browser (341) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="float: left; font-size: 9pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="./images/image285.png?raw=true" style="width: 100%"></p>
+<p style="float: left; font-size: 9pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="./images/image285.png?raw=true"></p>
 <!---
 <p align="center">
 <img src="./images/image285.png?raw=true"
