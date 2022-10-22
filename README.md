@@ -18418,26 +18418,22 @@ The &lt;datalist&gt; form element is useful for linking a list of choices to a
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 284. choice of browsers (341) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<!--
 <p style="float: left; font-size: 9pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="./images/image284.png?raw=true"></p>
-<!---
-<p align="center" width="40%">
-<img src="./images/image284.png?raw=true"
-  width="30%"
-  alt="Example of datalist for autocompletion."
-&nbsp;
 --->
+<p align="center" width="90%">
+<img src="./images/image284.png?raw=true"
+  width="40%"
+  alt="Example of datalist for autocompletion." />
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 285. datalist browser (341) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="float: left; font-size: 9pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="./images/image285.png?raw=true"></p>
-<!---
 <p align="center">
 <img src="./images/image285.png?raw=true"
-   alt="Another example of use of datalist."
-   width="30%">
+  width="40%"
+  alt="Another example of use of datalist." />
+</p>
 &nbsp;
---->
-<p style="clear: both;">
 
 We have already seen this element in action with different &lt;input&gt; elements, such as &lt;input type="color"&gt;, &lt;input type="date"&gt;, or &lt;input type="range"&gt;.
 
