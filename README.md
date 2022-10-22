@@ -16650,7 +16650,7 @@ The HTML5 specification indicates that we can use &lt;input type="date"&gt; an
 &lt;input type="month"&gt;:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 243. 2012-02 select birthdate month & year (308) ------------------->
+<!---------------------- 243. 2012-02 select birthdate month & year (308) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image243.jpeg?raw=true"
@@ -16739,7 +16739,7 @@ Note the CSS rule that turns the background color of the email input field to p
 This input field is really useful on smartphones and tablets, as it makes the browser pop up a keyboard layout suitable for entering phone numbers:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 247. enter your telephone number (xxx) ------------------->
+<!----------------------- 247. keypad and tablet keyboard layout #1 (310) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image247.png?raw=true"
@@ -16747,7 +16747,7 @@ This input field is really useful on smartphones and tablets, as it makes the br
   alt="Mobile keyboard 1 for input type=tel." />
 </p>
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 248.  (xxx) ------------------->
+<!----------------------- 248. keypad and tablet keyboard layout #2 (310) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image248.png?raw=true"
@@ -16760,12 +16760,12 @@ This input type is often used with the new placeholder and pattern attribute
 <a href="https://codepen.io/w3devcampus/pen/Njozvd">Online example on CodePen</a>
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 249.  (xxx) ------------------->
+<!----------------------------- 249. enter a telephone number (311) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image249.png?raw=true"
    width="30%"
-   alt="." />
+   alt="Enter telephone number." />
 </p>
 
 Try it in your browser (we used the same CSS for changing the background-color when the input value is invalid):
@@ -16805,7 +16805,7 @@ Enter a telephone number: 
 This input field is really useful on smartphones and tablets, as it makes the browser pop up a keyboard layout suitable for entering URLs:
 
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 250.  (xxx) ------------------->
+<!----------------------- 250. mobile keyboard for entering urls (311) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image250.png?raw=true"
@@ -16861,7 +16861,7 @@ The search type is used for search fields (i.e., for a search engine). A search 
 
 The specification does not state what the GUI should look like, so current implementations show variations in the look and feel.
 <!------------------------------------------------------------------------------------------------>
-<!--------------- 251.  (xxx) ------------------->
+<!------------------ 251. two search options rendered on smart phones (312) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image251.jpeg?raw=true"
@@ -18137,7 +18137,7 @@ Then, open the devtools and go to the "Network" tab, click on the POST request. 
 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 278. something went wrong (336) ------------------------------->
+<!------------------------------- 278. something went wrong (336) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image278.png?raw=true"
@@ -18207,11 +18207,15 @@ The oninput event handler directly uses the &lt;output&gt; element using the
 
 Result (do change the input field values):
 
-<!--
-Top of Form
-
- x  = 6
---->
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------ 278a. oninput event handler (337) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image278a.png?raw=true"
+  width="50%"
+  alt="Event handler oninput." />
+&nbsp;
+</p>
 
 <h4>Explanations about the attributes specific to the &lt;output&gt; element:</h4>
 
@@ -18223,11 +18227,15 @@ Top of Form
 
 <h4>Example #2</h4>
 
-Top of Form
-
-50 + =
-
-Bottom of Form
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------- 278b. output element and attributes (337) --------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image278b.png?raw=true"
+  width="50%"
+  alt="Attributes and output elements." />
+&nbsp;
+</p>
 
 <h4>Source code:</h4>
 
@@ -18361,8 +18369,8 @@ The <progress> element is similar to &lt;meter&gt; but it is used for progre
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image282.jpeg?raw=true"
-   alt="Picture of a funny progress meme saying Every mistake you make is progress."
-   width="10%">
+   width="10%"
+   alt="Picture of a funny progress meme saying Every mistake you make is progress." />
 &nbsp;
 <br/>
 
@@ -18373,12 +18381,12 @@ The browser calculates the percentage corresponding to the value, min and m
 If no value attribute is set, the progress bar will display an "indeterminate look", that may slightly vary among different browser implementations. 
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 283.  (xx) ------------------------------->
+<!------------------------ 283. progress bar w/indeterminate look (340) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image283.jpeg?raw=true"
-   alt="Indetermined progress bar screenshot."
-   width="50%">
+  width="50%"
+  alt="Indetermined progress bar screenshot." />
 &nbsp;
 <br/>
 
@@ -18418,9 +18426,6 @@ The &lt;datalist&gt; form element is useful for linking a list of choices to a
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 284. choice of browsers (341) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<!--
-<p style="float: left; font-size: 9pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="./images/image284.png?raw=true"></p>
---->
 <p align="center" width="90%">
 <img src="./images/image284.png?raw=true"
   width="40%"
@@ -18428,7 +18433,6 @@ The &lt;datalist&gt; form element is useful for linking a list of choices to a
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 285. datalist browser (341) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
 <img src="./images/image285.png?raw=true"
   width="40%"
   alt="Another example of use of datalist." />
