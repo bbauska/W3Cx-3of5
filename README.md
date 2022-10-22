@@ -1,4 +1,4 @@
-<h2 align="center">W3Cx Front-End Web Developer</h2>
+ <h2 align="center">W3Cx Front-End Web Developer</h2>
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
@@ -30,7 +30,7 @@
   <li><a href="#cha-4">W3C tools</a></li>
 </ol>
 
-<ol type="i">
+<ol type="I">
   <li><a href="#chb">Course Introduction and Practical Information</a></li>
   <li><a style="margin-left: 2rem;" href="#chb-1" Sub-Heading">Course syllabus</a></li>
   <li><a style="margin-left: 2rem;" href="#chb-2" Sub-Heading">Getting around the course</a></li>
@@ -334,8 +334,8 @@ Contributing to this standardization process might be a bit scary or hard to app
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image008.png?raw=true"
-   alt="Github (the octocat) logo."
-   width="15%" />
+  width="15%"
+  alt="Github (the octocat) logo." />
 </p>
 <p>
 If you're looking to an easy way to dive into this standardization processes, check out which <a href="https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues">issues in the W3C GitHub repositories have been marked as "good first issue"</a> and see if you find anything where you think you would be ready to help.
@@ -347,8 +347,8 @@ If you're looking to an easy way to dive into this standardization processes, ch
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image009.png?raw=true"
-   alt="W3C Web Incubator Community Group logo."
-   width="25%" />
+  width="25%"
+  alt="W3C Web Incubator Community Group logo." />
 </p>
 <p>
 Another approach is to go and bring feedback on ideas for future technologies: the <a href="https://wicg.io/" target="_blank">W3C Web Platform Community Incubator Group</a> was built as an easy place to get started to provide feedback on new proposals or bring brand-new proposals for consideration.
@@ -368,7 +368,7 @@ W3C's primary activity is to develop protocols and guidelines that ensure long-t
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image010.jpeg?raw=true"
-  alt="Tim Berners-Lee at his desk in CERN, Switzerland, 1994"
+  alt="Tim Berners-Lee at his desk in CERN, Switzerland, 1994."
   width="65%" />
 </p>
 <br/>
@@ -542,8 +542,8 @@ Text alternatives ("alt text") are a primary way of making visual information ac
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image011.png?raw=true"
-   alt="W3C logo."
-   width="15%" />
+  width="15%"
+  alt="W3C logo." />
 </p>
 <br/>
 
@@ -21498,4 +21498,4 @@ Here are a few project ideas. Your classmates and the team who prepared the cour
 
 . . .The end.
 
-<!--- last updated 10-18-22 6:56pm --->
+<!--- last updated 10-21-22 2:37pm --->
