@@ -18416,28 +18416,27 @@ Download progress: 
 The &lt;datalist&gt; form element is useful for linking a list of choices to an input element.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 284.  (xx) ------------------------------->
+<!-------------------------------- 284. choice of browsers (341) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
+<p align="center" width="80%">
 <img src="./images/image284.png?raw=true"
-   alt="Example of datalist for autocompletion."
-   width="30%">
+  width="30%"
+  alt="Example of datalist for autocompletion."
 &nbsp;
-<br/>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 285.  (xx) ------------------------------->
+<!--------------------------------- 285. datalist browser (341) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image285.png?raw=true"
    alt="Another example of use of datalist."
    width="30%">
 &nbsp;
-<br/>
+</p>
 
 We have already seen this element in action with different &lt;input&gt; elements, such as &lt;input type="color"&gt;, &lt;input type="date"&gt;, or &lt;input type="range"&gt;.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 227.  (xx) ------------------------------->
+<!-------------------------------------- 227. autre (341) ---------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image227.jpeg?raw=true"
@@ -18446,16 +18445,14 @@ We have already seen this element in action with different &lt;input&gt; eleme
 &nbsp;
 <br/>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 286.  (xx) ------------------------------->
+<!------------------------- 286. restrict choices using datalist (341) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image286.jpeg?raw=true"
    width="60%"
    alt="Restrict choices using a datalist element." />
-&nbsp;
-<br/>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 287.  (xx) ------------------------------->
+<!---------------------------- 287. data list for sliders tick (341) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image287.jpeg?raw=true"
@@ -18475,7 +18472,7 @@ The input field is related to the datalist that will propose auto-completion bas
 Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,output), or try it here in your browser (type the name of your favorite browser):
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 288.  (xx) ------------------------------->
+<!-------------------------- 288. what is your favorite browser? (342) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image288.png?raw=true"
@@ -18531,7 +18528,7 @@ A first step to improve your HTML form is to add some CSS rules to your input fi
 Also, at the time of submitting the form, some extra messages may be displayed as pop up text bubbles.
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 289.  (xx) ------------------------------->
+<!--------------------------- 289. popup text bubble examples (343) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image289.png?raw=true"
@@ -18549,6 +18546,7 @@ For example, browsers may provides default feedback on the input field's borde
 
 Here is an <a href="https://jsbin.com/palifuy/edit?html,output">online example at JSBin</a>, or try it below in your browser:
 
+<!---
 Top of Form
 
 Type invalid values and submit form to see the resultE-mail: 
@@ -18557,6 +18555,15 @@ Phone number: 
 Submit form
 
 <b>Bottom of Form</b>
+--->
+<!------------------------------------------------------------------------------------------------>
+<!---------------------- 288b. css required, valid and invalid rules (343) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image288b.png?raw=true"
+   width="65%"
+   alt="CSS rules and validation error messages." />
+</p>
 
 <h4>Source code extract:</h4>
 
@@ -18610,6 +18617,7 @@ Example #2: add CSS transitions + an icon/marker to the right of the input fiel
 
 Try this [online example at JSBin](https://jsbin.com/zaxije/2/edit) or try it here in your browser. This example adds a small icon that changes depending on the validity of the input field:
 
+<!---
 Top of Form
 
 Type invalid values and see the resultE-mail: 
@@ -18618,6 +18626,16 @@ Phone number: 
 Submit form
 
 Bottom of Form
+--->
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------ 288b. again, validation with css rules (344) -------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image288b.png?raw=true"
+   width="65%"
+   alt="CSS rules and validation error messages." />
+</p>
 
 <h4>Source code extract:</h4>
 
@@ -18654,14 +18672,21 @@ You can simply use the input's title attribute to provide a message for patter
 
 Try the <a href="https://jsbin.com/locedoy/1/edit?html,output">online example at JSBin</a>, or try it here in your browser (type invalid values and look at the custom messages):
 
-Top of Form
-
+<!---
 Type invalid values and see the result, this time with custom messages! E-mail: 
 Homepage (URL): 
 Phone number: 
 Submit form
+--->
 
-<h4>Bottom of Form</h4>
+<!------------------------------------------------------------------------------------------------>
+<!------------------------ 289b. validation with pattern matching (345) -------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image289b.png?raw=true"
+   width="65%"
+   alt="Pattern matching and validation error messages." />
+</p>
 
 <h4>Extract from source code:</h4>
 
@@ -18691,7 +18716,7 @@ You must also take care of the different languages, otherwise you will get error
 Google Chrome on a French desktop computer:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 290.  (xx) ------------------------------->
+<!---------------------------- 290. chrome on french computer (346) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image290.jpeg?raw=true"
@@ -18703,7 +18728,7 @@ Google Chrome on a French desktop computer:
 Same example on FireFox, the title attribute is ignored:
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 291. firefox title attribute (xx) ------------------------------->
+<!----------------------------- 291. firefox title attribute (346) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image291.jpeg?raw=true"
@@ -18721,6 +18746,16 @@ Same example on FireFox, the title attribute is ignored:
 <!------------------------------------------------------------------------------------------------>
 
 There is a JavaScript API for form validation. This API will let you use your own validation algorithm (i.e. check that you have entered the same password in two different input fields), and customize error messages. Also, together with some HTML/CSS/JavaScript you will be able to make your own message bubbles.
+
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 290b. js form validation api (346) ------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<p align="center">
+<img src="./images/image290b.png?raw=true"
+   width="65%"
+   alt="JavaScript Form Validation API, with message bubbles." />
+&nbsp;
+<br/>
 
 <h4>Typical use</h4>
 
@@ -18830,8 +18865,8 @@ Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JS
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image292.png?raw=true"
-   width="65%"
-   alt="JSBin example which shows how to test the different types of validation errors." />
+  width="65%"
+  alt="JSBin example which shows how to test the different types of validation errors." />
 &nbsp;
 <br/>
 
@@ -18907,8 +18942,8 @@ Custom validation: changing the default behavior, aggregating error messages, re
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image293.png?raw=true"
-   width="35%"
-   alt="Custom validation." />
+  width="35%"
+  alt="Custom validation." />
 &nbsp;
 <br/>
 
@@ -19747,7 +19782,7 @@ Add contacts using the form, see how the HTML table is updated. Try to reload th
 <!---------------------------- 306. serverless contact manager (369) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="./images/image306.jpeg?raw=true"
+<img src="./images/image306.png?raw=true"
   width="65%"
   alt="Serverless Contact Manager." />
 &nbsp;
@@ -19756,7 +19791,7 @@ Add contacts using the form, see how the HTML table is updated. Try to reload th
 Examine the localStorage:
 
 <!------------------------------------------------------------------------------------------------>
-<!------------------- 307. localStorage view in devtools shows the data (369) -------------------->
+<!------------------- 307. localstorage view in devtools shows the data (369) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image307.png?raw=true"
@@ -20370,9 +20405,9 @@ readAsArrayBuffer is often used for purposes such as reading audio samples that
 <!---------------- 316. webaudio api - does not work with microsoft shit (382) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="./images/image316.png?raw=true"
+<img src="./images/image316.jpeg?raw=true"
    width="55%"
-   alt="Local audio player." />
+   alt="Choose binary audio, pass it to initSound, decode and play in memory on WebAudio." />
 &nbsp;
 <br/>
 
