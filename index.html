@@ -1196,10 +1196,10 @@ version with others in the forums, etc.<br>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 14. image 'Simple HTML5 Blog' (16) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align: center;">
-<img src="./images/image014.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image014.jpeg?raw=true"
   alt="Simple HTML5 Blog"
-  style="width:35%;">
+  style="width:35%;" />
 <br>
 <p>This is an example of one way to organize a blog. Here, we have designed
 the HTML page using a &lt;header&gt; element that contains the “Simple
@@ -1504,31 +1504,26 @@ Here is the result:
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 20. the aside tag on the right (21) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image020.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image020.jpeg?raw=true"
   alt="The aside tag cloud on the right."
   style="width:65%;" />
-<br/></p>
-<h4>
-Add a &lt;footer&gt; at the end of the blog
-</h4>
+<h4>Add a &lt;footer&gt; at the end of the blog</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 21. image of the blog footer (21) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image021.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image021.jpeg?raw=true"
   alt="Image of the blog footer."
-  width="15%" /> 
-</p>
-<p>
-Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below)
-after the tag cloud definition, to display a page footer:
-</p>
+  style="width:15%;" />
+<p>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below)
+after the tag cloud definition, to display a page footer:</p>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;html&gt;
 ...
 &lt;body&gt;
 ...
@@ -1542,31 +1537,29 @@ Click to expand!
    &lt;p&gt;&amp;copy; 2009 Some blog&lt;/p&gt;
 &lt;/footer&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-With this CSS rule:
-</h4>
-<pre><code>footer {
-    clear: both;
-    color: #777;
-    padding: 10px 50px
-}</code></pre>
-<h4>
-And here is the result at the bottom of the page:
-</h4>
+
+<h4>With this CSS rule:</h4>
+<pre><code>
+footer {
+  clear: both;
+  color: #777;
+  padding: 10px 50px
+}
+</code></pre>
+
+<h4>And here is the result at the bottom of the page:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------- 22. the resulting footer at the bottom of the page (21) -------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image022.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image022.jpeg?raw=true"
   alt="Image of the blog footer."
-  width="65%" />
-</p>
-<h4>
-More on &lt;article&gt; and &lt;section&gt;
-</h4>
-<p>
+  style="width:65%;" />
+<h4>More on &lt;article&gt; and &lt;section&gt;</h4>
 <p>Can an &lt;article&gt; contain a &lt;section&gt;?</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 23. picture of eisher (22) ---------------------------------->
@@ -4461,15 +4454,23 @@ the browser will be something like this:</p>
 <h4>
 For example, HTML code such as this:
 </h4>
-<pre><code>&lt;a href=&quot;toto.jpg&quot;&gt;
+
+<pre><code>
+&lt;a href=&quot;toto.jpg&quot;&gt;
    please right click this link to download
-   the toto.jpg picture&lt;/a&gt;</code></pre>
+   the toto.jpg picture&lt;/a&gt;
+</code></pre>
+
 <p>…will ask the remote HTTP server to send back the toto.jpg file. The
 browser will receive in the response HTTP header from the server (and by
 default the browser will display the image in a new tab):</p>
-<pre><code>1.  ...
+
+<pre><code>
+1.  ...
 2.  Content-type: image/jpg
-3.  ...</code></pre>
+3.  ...
+</code></pre>
+
 <p>However, if the link points to some PHP code,  Java servlet code, or
 any kind of script/application on the server side, this remote server
 code can send in its HTTP response a Content-type that may force the
@@ -4603,31 +4604,22 @@ of a document should not be translated.</p>
 Use cases include:
 </h4>
 <ul>
-<li>
-HTML pages that contain source code: you would certainly not like to see
+<li>HTML pages that contain source code: you would certainly not like to see
 the Java or PHP or whatever programming language parts of your page
-translated into another spoken language!
-</li>
-<li>
-Video game Web sites that propose cheat codes; the codes do not have to
-be translated,
-</li>
-<li>
-Street names, author names in an “about” page must not be translated,
-</li>
-<li>
-etc.
-</li>
+translated into another spoken language!</li>
+<li>Video game Web sites that propose cheat codes; the codes do not have to
+be translated,</li>
+<li>Street names, author names in an “about” page must not be translated,</li>
+<li>etc.</li>
 </ul>
+
 <p>Both <a href="https://translate.google.com/" target="_blank" rel="noopener noreferrer">Google
 translate</a> and <a href="https://www.microsofttranslator.com/" target="_blank" rel="noopener noreferrer">Microsoft
 online translation services</a> already offer the ability to prevent
 translation of content by adding markup to your content, although they
 do it in (multiple) different ways. Hopefully, the new attribute will
 help significantly by providing a standard approach.</p>
-<h4>
-Principle: give hints to translating tools
-</h4>
+<h4>Principle: give hints to translating tools</h4>
 <p><a href="https://www.w3.org/TR/html5/dom.html#the-translate-attribute" target="_blank" rel="noopener noreferrer">The
 specification about the translate attribute</a> tells us
 that <i>“The translate attribute is an enumerated attribute that is used
@@ -4639,88 +4631,68 @@ empty string and the yes keyword map to the yes state. The no keyword
 maps to the no state. In addition, there is a third state, the inherit
 state, which is the missing value default (and the invalid value
 default).”</i></p>
-<h4>
-Example illustrating how to specify parts of an HTML element that should
-not be translated:
-</h4>
-<pre><code>&lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt;</code></pre>
+<h4>Example illustrating how to specify parts of an HTML element that should
+not be translated:</h4>
+
+<pre><code>
+&lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt;</code></pre>
+
 <p>In the above example, a <span> element defines an author (of a blog,
 for example) who is named Michel Ham. However, his family name is the
 same as pork and would be translated to “Michel Jambon” in French, or
 Michel Jamón in Spanish…</p>
 <p>Using the translate=“no” attribute should prevent this behavior…</p>
-<pre><code>&lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt; is a professor
-   from the University of Nice,France.</code></pre>
-<p>
-Will be correctly translated into French by:
-</p>
-<pre><code>&quot;[Michel Ham] est un professeur de l&#39;Université de Nice, France.&quot;</code></pre>
-<p>
-…where all of the end of the sentence has been translated except the
-author’s name.
-</p>
-<h4>
-Inheritance between elements
-</h4>
-<p>
-When you define an element as not being translatable, its children
+
+<pre><code>
+&lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt; is a professor from the University of Nice, France.
+</code></pre>
+
+<p>Will be correctly translated into French by:</p>
+
+<pre><code>
+&quot;[Michel Ham] est un professeur de l&#39;Université de Nice, France.&quot;
+</code></pre>
+
+<p>…where all of the end of the sentence has been translated except the
+author’s name.</p>
+<h4>Inheritance between elements</h4>
+<p>When you define an element as not being translatable, its children
 inherit this behavior and are themselves not translatable. The reverse
-is also true.
-</p>
-<pre><code>&lt;p translate=&quot;no&quot;&gt;This is a text in a paragraph element, that should not be translated: the p element has a translate=&quot;no&quot; attribute.&lt;span&gt; This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too&lt;/span&gt;. This is the end of the paragraph...&lt;/p&gt;</code></pre>
-<h4>
-External resources:
-</h4>
+is also true.</p>
+
+<pre><code>
+&lt;p translate=&quot;no&quot;&gt;This is a text in a paragraph element, that should not be translated: the p element has a translate=&quot;no&quot; attribute.&lt;span&gt; This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too&lt;/span&gt;. This is the end of the paragraph...&lt;/p&gt;
+</code></pre>
+
+<h4>External resources:</h4>
 <ul>
-<li>
-From the
-specification: <a href="https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute" target="_blank" rel="noopener noreferrer">the
-translate attribute</a>
-</li>
-<li>
-From MDN’s Web
-Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate" target="_blank" rel="noopener noreferrer">
-</li>
-<ul>
-<li>
-Its
-corresponding <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate#Browser_compatibility" target="_blank" rel="noopener noreferrer">browser
-compatibility table</a>
-</li>
+<li>From the specification: <a href="https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute" target="_blank" rel="noopener noreferrer">the translate attribute</a></li>
+<li>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate" target="_blank" rel="noopener noreferrer"></li>
+<ul><li>Its corresponding <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate#Browser_compatibility" target="_blank" rel="noopener noreferrer">browser compatibility table</a></li>
 </ul>
-<li>
-An article from W3C’s Internationalization
-Activity: <a href="https://www.w3.org/International/questions/qa-translate-flag" target="_blank" rel="noopener noreferrer">“Using
-HTML’s translate attribute”</a>
-</li>
+<li>An article from W3C’s Internationalization Activity: <a href="https://www.w3.org/International/questions/qa-translate-flag" target="_blank" rel="noopener noreferrer">“Using HTML’s translate attribute”</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- chapter 1-5-1. microdata (71) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-1">
-1.5.1 Microdata
-</h3>
-<p>There are several ways to provide machine-readable content embedded
-in a classical Web
+<h3 id="ch1-5-1">1.5.1 Microdata</h3>
+<p>There are several ways to provide machine-readable content embedded in a classical Web
 document: <a href="https://www.w3.org/TR/html-rdfa/" target="_blank" rel="noopener noreferrer">HTML+RDFa</a>, <a href="http://microformats.org/" target="_blank" rel="noopener noreferrer">microformats</a>, <a href="https://json-ld.org/" target="_blank" rel="noopener noreferrer">JSON-LD</a>,
 HTML5 microdata. In this section, we focus on microdata.</p>
 <p>Adding microdata to Web pages helps search engines to better
 understand the pages’ content, their topics, etc. The main purpose of
-microdata
-is <a href="https://en.wikipedia.org/wiki/Search_engine_optimization" target="_blank" rel="noopener noreferrer">Search
-Engine Optimization</a>(SEO).</p>
+microdata is <a href="https://en.wikipedia.org/wiki/Search_engine_optimization" target="_blank" rel="noopener noreferrer">Search Engine Optimization</a>(SEO).</p>
 <p>This information is not visible to humans: it is pure <i>semantic
 information</i>. Popular kinds of microdata are events, a person’s
 profile, the description of an organization, the details of a recipe, a
 product description, a geographical location, etc. </p>
-<h4>
-Quick example of microdata that describes a person
-</h4>
+<h4>Quick example of microdata that describes a person</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;section [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;section [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
 2.      &lt;h1&gt;Contact Information&lt;/h1&gt;
 3.      &lt;dl&gt;
 4.        &lt;dt&gt;Name&lt;/dt&gt;
@@ -4741,17 +4713,18 @@ Click to expand!
 19.        &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
 20.               [itemprop=&quot;url&quot;]&gt;Michel Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
 21.     &lt;/ul&gt;
-22. &lt;/section&gt;</code></pre>
+22. &lt;/section&gt;
+</code></pre>
+
 </details>
-<p>
-We can also add another embedded data item in the middle, such as the
-person’s address:
-</p>
+
+<p>We can also add another embedded data item in the middle, such as the
+person’s address:</p>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  ...
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  ...
 2.  &lt;/dl&gt;
 3.  
 4.  &lt;!-- SURFACE ADDRESS GOES HERE --&gt;
@@ -4770,75 +4743,39 @@ Click to expand!
 17. 
 18. &lt;h1&gt;My different online public accounts&lt;/h1&gt;
 19. 
-20. ...</code></pre>
+20. ...
+</code></pre>
+
 </details>
-<p>
-In the following sections, we look more closely
-at the itemprop, itemscope and itemtype attributes.
-</p>
-<h4>
-Data that can be processed, organized, structured, or presented in a
-given context
-</h4>
-<h4>
-Different use cases:
-</h4>
+
+<p>In the following sections, we look more closely
+at the itemprop, itemscope and itemtype attributes.</p>
+<h4>Data that can be processed, organized, structured, or presented in a given context</h4>
+<h4>Different use cases:</h4>
 <ul>
-<li>
-The browser, or a browser extension, may interpret the last example as
-an address and may propose to send it to a map application,
-</li>
-<li>
-A Web crawler may interpret this as an address and display it in its
-responses using a dedicated presentation layout,
-</li>
-<li>
-Some JavaScript code in the page can access this data,
-</li>
-<li>
-With other types of microdata, for events, for example, the browser may
-pop up a calendar application, etc.
-</li>
+<li>The browser, or a browser extension, may interpret the last example as
+an address and may propose to send it to a map application,</li>
+<li>A Web crawler may interpret this as an address and display it in its
+responses using a dedicated presentation layout,</li>
+<li>Some JavaScript code in the page can access this data,</li>
+<li>With other types of microdata, for events, for example, the browser may
+pop up a calendar application, etc.</li>
 </ul>
+
 <p><b>Note</b>: For advanced users, Microdata is very similar
-to <a href="http://microformats.org/" target="_blank" rel="noopener noreferrer">microformats</a>, which use HTML
-classes, or
-to <a href="https://www.w3.org/TR/xhtml-rdfa-primer/" target="_blank" rel="noopener noreferrer">RDFa</a>, which
-doesn’t validate in HTML4 or HTML5. Because RDFa was considered to be
-too hard for authors to write, microdata is HTML5’s answer to help embed
-semantics into html documents.</p>
-<h4>
-External resources
-</h4>
+to <a href="http://microformats.org/" target="_blank" rel="noopener noreferrer">microformats</a>, which use HTML classes, or to <a href="https://www.w3.org/TR/xhtml-rdfa-primer/" target="_blank" rel="noopener noreferrer">RDFa</a>, which doesn’t validate in HTML4 or HTML5. Because RDFa was considered to be
+too hard for authors to write, microdata is HTML5’s answer to help embed semantics into html documents.</p>
+<h4>External resources</h4>
 <ul>
-<li>
-<a href="https://www.w3.org/TR/microdata/" target="_blank" rel="noopener noreferrer">W3C’s HTML Microdata Working
-Draft</a>,
-</li>
-<li>
-MDN’s Web
-Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata" target="_blank" rel="noopener noreferrer">Microdata</a>,
-</li>
-<li>
-Very
-good <a href="https://journal.code4lib.org/articles/6400" target="_blank" rel="noopener noreferrer">Microdata</a> paper
-from code{4}lib journal,
-</li>
-<li>
-<a href="https://dev.opera.com/articles/microdata-and-the-microdata-dom-api/" target="_blank" rel="noopener noreferrer">Microdata
-and the microdata DOM API</a>, old article from dev.opera.com,
-</li>
-<li>
-<a href="https://diveinto.html5doctor.com/extensibility.html" target="_blank" rel="noopener noreferrer">Chapter
-from Mark Pilgrim’s book about microdata</a>, very detailed introduction
-about semantic metadata in general, contains full examples with
-explanations about how to describe a Person, etc.
-</li>
+<li><a href="https://www.w3.org/TR/microdata/" target="_blank" rel="noopener noreferrer">W3C’s HTML Microdata Working Draft</a>,</li>
+<li>MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata" target="_blank" rel="noopener noreferrer">Microdata</a>,</li>
+<li>Very good <a href="https://journal.code4lib.org/articles/6400" target="_blank" rel="noopener noreferrer">Microdata</a> paper from code{4}lib journal,</li>
+<li><a href="https://dev.opera.com/articles/microdata-and-the-microdata-dom-api/" target="_blank" rel="noopener noreferrer">Microdata and the microdata DOM API</a>, old article from dev.opera.com,</li>
+<li><a href="https://diveinto.html5doctor.com/extensibility.html" target="_blank" rel="noopener noreferrer">Chapter from Mark Pilgrim’s book about microdata</a>, very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.</li>
 </ul>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-2">
-1.5.2 Testing Tools
-</h3>
+<h3 id="ch1-5-2">1.5.2 Testing Tools</h3>
 <!------------------------------------------------------------------------------------------------>
 <h4>
 Introduction
@@ -24230,23 +24167,15 @@ on the Gisgraphy website</a>):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 331. gisgraphy screenshot (398) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<img src="./images/image331.png?raw=true"
-   width="65%"
-   alt="Gisgraphy screenshot." />
-</p>
-<h4>
-<b>Example #2:</b> reverse geocoding + OpenStreetMap
-</h4>
-<p>
+<img class="displayed"
+  src="./images/image331.png?raw=true"
+  alt="Gisgraphy screenshot."
+  style="width:65%;" />
+<h4><b>Example #2:</b> reverse geocoding + OpenStreetMap</h4>
 <p><b>Important note:</b> these examples below rely on an
-external <a href="https://github.com/perliedman/leaflet-control-geocoder" target="_blank" rel="noopener noreferrer">GitHub
-resource</a>. No related questions are asked in this module’s exercises
-or final exam.</p>
-Please, pan and zoom on the map and click. The longitude and latitude
-are computed from your click and a free reverse geocoding service is
-used to convert to a physical address.
-</p>
+external <a href="https://github.com/perliedman/leaflet-control-geocoder" target="_blank" rel="noopener noreferrer">GitHub resource</a>. No related questions are asked in this module’s exercises or final exam.</p>
+<p>Please, pan and zoom on the map and click.<br>
+<br>The longitude and latitude are computed from your click and a free reverse geocoding service is used to convert to a physical address.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 332. reverse geocoding - openstreetmap (398) -------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -24255,14 +24184,12 @@ used to convert to a physical address.
    width="65%"
    alt="Reverse Geocoding - OpenStreetMap." />
 </p>
-<h4>
-HTML
-</h4>
+<h4>HTML</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
   &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
@@ -24335,20 +24262,19 @@ Click to expand!
     });
     &lt;/script&gt;
 &lt;/body&gt;
- &lt;/html&gt;</code></pre>
+ &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Example #3: shows the address on the map, from your current longitude
-and latitude
-</h4>
-<h4>
-HTML
-</h4>
+
+<h4>Example #3: shows the address on the map, from your current longitude and latitude</h4>
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
   &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
@@ -24428,30 +24354,28 @@ Click to expand!
   getLocation();
 &lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Example #4: use of geolocation, map and reverse geocoder in a HTML form
-</h4>
-<p>
+
+<h4>Example #4: use of geolocation, map and reverse geocoder in a HTML form</h4>
 <p>This is just a variation of the previous examples. We embedded the
 interactive map in a form, and we display the results of the reverse
 geocoder in a form field. This example might be useful if you want to
 pre-fill the address of a registration form, depending on the current
 location of the person who is registering.</p>
-Click on the Codepen logo (on the top right) so to run
+<p>Click on the Codepen logo (on the top right) so to run
 the <a href="https://codepen.io/w3devcampus/pen/MWKEJqM" target="_blank" rel="noopener noreferrer">online
 example</a> (for security reasons the embedded version cannot run in
 this page):
 </p>
-<h4>
-HTML
-</h4>
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Gimmee My Location&lt;/title&gt;
@@ -24532,11 +24456,12 @@ function getPhysicalAddress(latlong) {
     }
     &lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h3 id="ch6-4-7">
-6.4.7 Discussion and projects
-</h3>
+
+<h3 id="ch6-4-7">6.4.7 Discussion and projects</h3>
 <h4>
 Optional projects
 </h4>
@@ -24561,6 +24486,13 @@ good understanding of the material.</p>
   </li>
 </ul>
 <p>. . .The end.<br>
-<br>last updated 12-26-22 9:14pm </p>
+<br>last updated 12-27-22 8:12pm </p>
 </body>
 </html>
+<!--
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
+--->
+
