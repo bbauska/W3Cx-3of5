@@ -126,36 +126,19 @@ W3Cx-3of5-HTML5.1x - Coding Essentials and Best Practices
 <a href="#table-of-contents">Table of Contents</a>
 </h2>
 <ol type="a">
-<li>
-<a href="#cha-1">About W3C and the Web</a>
-</li>
-<li>
-<a href="#cha-2">Why accessibility is important</a>
-</li>
-<li>
-<a href="#cha-3">Why internationalization is important</a>
-</li>
-<li>
-<a href="#cha-4">W3C tools</a>
-</li>
+<li><a href="#cha-1">About W3C and the Web</a></li>
+<li><a href="#cha-2">Why accessibility is important</a></li>
+<li><a href="#cha-3">Why internationalization is important</a></li>
+<li><a href="#cha-4">W3C tools</a></li>
 </ol>
+
 <ol type="1">
-<li>
-<a href="#chb">Course Introduction and Practical Information</a>
-</li>
-<li>
-<a style=“margin-left: 2em;” href=“#chb-1” Sub-Heading”>b.1
-Course syllabus</a>
-</li>
-<li>
-<a style=“margin-left: 2em;” href=“#chb-2” Sub-Heading”>b.2
-Getting around the course</a>
-</li>
-<li>
-<a style=“margin-left: 2em;” href=“#chb-3” Sub-Heading”>b.3
-Course tools</a>
-</li>
+<li><a href="#chb">Course Introduction and Practical Information</a></li>
+<li><a style=“margin-left: 2em;” href=“#chb-1” Sub-Heading”>b.1 Course syllabus</a></li>
+<li><a style=“margin-left: 2em;” href=“#chb-2” Sub-Heading”>b.2 Getting around the course</a></li>
+<li><a style=“margin-left: 2em;” href=“#chb-3” Sub-Heading”>b.3 Course tools</a></li>
 </ol>
+
 <h2 id="module-1-html5-basics"><a href="#ch1"><strong>Module 1: HTML5
 Basics</strong></a></h2>
 <blockquote>
@@ -381,7 +364,7 @@ Tutorials can be found on the Web such as
 the provided examples, look at the code, look at the result, etc.<br>
 <br>And you can modify the examples as you like, you can also modify / clone /
 save / share them.<br>
-<blr>Keep in mind that it's always better to be logged in (it's free) if you do not want to lose your contributions/personal work.</p>
+<br>Keep in mind that it's always better to be logged in (it's free) if you do not want to lose your contributions/personal work.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------ 03. codepen logo (04) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -436,17 +419,11 @@ resources: <a href="https://caniuse.com/" target="_blank" rel="noopener norefer
 Use</a> and <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer">Mozilla
 Developer Network (MDN) Web Docs</a>.
 </p>
-<h4>
-Can I use
-</h4>
-<a href="https://caniuse.com/" target="_blank" rel="noopener noreferrer">Can I Use</a> provides up-to-date tables
-for support of front-end Web technologies on desktop and mobile Web
+<h4>Can I use</h4>
+<p><a href="https://caniuse.com/" target="_blank" rel="noopener noreferrer">Can I Use</a> provides up-to-date tables for support of front-end Web technologies on desktop and mobile Web
 browsers. Below is a snapshot of what information is given by CanIUse
-when searching for “CSS3 colors”.</a>
-<p>
-Example of a <a href="./images/image004.png" target="_blank" rel="noopener noreferrer">CanIUse browser</a> support
-table (using CSS3 colors).
-</p>
+when searching for “CSS3 colors”.</p>
+<p>Example of a <a href="./images/image004.png" target="_blank" rel="noopener noreferrer">CanIUse browser</a> support table (using CSS3 colors).</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 04. caniuse example (05) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -1564,11 +1541,10 @@ footer {
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 23. picture of eisher (22) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image023.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image023.jpeg?raw=true"
   alt="Picture of eisher."
-  width="25%" />
-</p>
+  style="width:25%;" />
 <p>
 It may not be clear whether a &lt;section&gt; may contain one or
 several &lt;article&gt; elements or if an &lt;article&gt; may contain
@@ -1686,6 +1662,10 @@ site</a> may help you decide whether or not to use a &lt;div&gt;:
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 24. html5 doctor web site. whether or not to use a <dev> (24) ------------------>
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image025.png?raw=true"
+  alt="Outliner in action from the previous example."
+  style="width:65%;" />
 <p style="text-align:center" width="100%">
 <img src="./images/image024.png?raw=true"
   width="100%"
@@ -1733,12 +1713,10 @@ Here is the result for the previous example:
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 25. outliner in action from the previous example (25) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image025.png?raw=true"
-  width="65%"
-  alt="Outliner in action from the previous example." />
-</p>
-<p>
+<img class="displayed"
+  src="./images/image025.png?raw=true"
+  alt="Outliner in action from the previous example."
+  style="width:65%;" />
 <p>In the above outline, note that we have only used H1… H6 elements,
 without any new HTML5 structural elements such
 as &lt;section&gt; or &lt;article&gt;.</p>
@@ -1766,20 +1744,26 @@ potentially has a heading and has also an outline associated”.</p>
 of a section (whether explicitly marked up using sectioning content
 elements, or implied by the heading content itself). This means that:
 </p>
-<pre><code>&lt;body&gt;
+
+<pre><code>
+&lt;body&gt;
   &lt;h1&gt;Title of my document&lt;/h1&gt;
   ...
-&lt;/body&gt;</code></pre>
-<p>
-… defines the header of a section <i>implicitly</i>, while:
-</p>
-<pre><code>&lt;body&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>… defines the header of a section <i>implicitly</i>, while:</p>
+
+<pre><code>
+&lt;body&gt;
   ...
   &lt;section&gt;
     &lt;h1&gt;Title of my section&lt;/h1&gt;
     ...
   &lt;/section&gt;
-&lt;/body&gt;</code></pre>
+&lt;/body&gt;
+</code></pre>
+
 <p>
 … defines the heading of <i>the explicit section</i> (its parent
 element &lt;section&amp;gt ;).
@@ -1824,10 +1808,10 @@ The corresponding outline is:
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 26. Heading example (26) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image026.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image026.jpeg?raw=true"
   alt="Heading content example."
-  width="55%">   <br/></p>
+  style="width:55%;" />
 In the above example, please note two things:
 <ol type="1">
 <li>
@@ -1873,17 +1857,19 @@ Good (heading in a &lt;header&gt; does not change anything)
   &lt;/header&gt;
 ...
 &lt;/section&gt;</code></pre>
-<h4>
-Bad (there is no Hx after the &lt;section&gt; - no heading):
-</h4>
-<pre><code>&lt;section&gt;
+<h4>Bad (there is no Hx after the &lt;section&gt; - no heading):</h4>
+
+<pre><code>
+&lt;section&gt;
   &lt;header&gt;
     &lt;p class=&quot;article title&quot;&gt;Blog post of April 2020&lt;/p&gt;
     &lt;p&gt;Posted by Michel Buffa...&lt;/p&gt;
 
   &lt;/header&gt;
    ...
-&lt;/section&gt;</code></pre>
+&lt;/section&gt;
+</code></pre>
+
 <p>
 <p>The last example is bad for accessibility reasons. A screen reader
 that vocalizes the page will just say “Entering section”, while in the
@@ -1906,10 +1892,10 @@ The outline of the last example looks like this:
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 27. outline of previous example (27) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image027.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image027.jpeg?raw=true"
   alt="Outline of last example."
-  width="55%">   <br/></p>
+  style="width:55%;" />
 <p>Notice that &lt;body&gt; is also a sectioning element. It’s called a
 “sectioning root”, and would also need a heading.</p>
 <h4>
@@ -1978,11 +1964,10 @@ appear, one for the H1, one for the H2:
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 28. outline of previous example (28) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image028.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image028.jpeg?raw=true"
   alt="Outline of previous example."
-  width="55%">   <br/></p>
-<p>
+  style="width:55%;" />
 <p>Indeed, HTML does not have a dedicated mechanism for marking up
 subheadings, alternative titles or taglines. </p>
 If you do not want the subtitles to be included in the table of
@@ -2002,14 +1987,12 @@ just &lt;h1&gt;…&amp;lr;h6&gt;.</p>
 The example below defines several implicit “sections” by
 using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):
 </p>
-<h4>
-Ok version (no explicit sections everywhere):
-</h4>
+<h4>Ok version (no explicit sections everywhere):</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;body&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;body&gt;
 2.    &lt;h4&gt;Apples&lt;/h4&gt;
 3.    &lt;p&gt;Apples are fruit.&lt;/p&gt;
 4.    &lt;section&gt;
@@ -2020,16 +2003,15 @@ Click to expand!
 9.      &lt;h1&gt;Color&lt;/h1&gt;
 10.     &lt;p&gt;Apples come in various colors.&lt;/p&gt;
 11.   &lt;/section&gt;
-12. &lt;/body&gt;</code></pre>
+12. &lt;/body&gt;
+</code></pre>
+
 </details>
-<h4>
-Better version (best practice):
-</h4>
+<h4>Better version (best practice):</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;body&gt;
+<summary>Click to expand!</summary>
+<pre><code>
+&lt;body&gt;
   &lt;h1&gt;Apples&lt;/h1&gt;
   &lt;p&gt;Apples are fruit.&lt;/p&gt;
 
@@ -2045,8 +2027,11 @@ Click to expand!
     &lt;h2&gt;Color&lt;/h2&gt;
     &lt;p&gt;Apples come in various colors.&lt;/p&gt;
   &lt;/section&gt;
-&lt;/body&gt;</code></pre>
+&lt;/body&gt;
+</code></pre>
+
 </details>
+
 <p>
 Both of the examples above are semantically identical and produce the
 same outline:
@@ -2054,10 +2039,10 @@ same outline:
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 29. outline of previous example (29) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image029.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image029.jpeg?raw=true"
   alt="Outline of previous example."
-  width="55%">   <br/></p>
+  style="width:55%;" />
 <h3>
 1.2.4 The HTML5 Logo
 </h3>
@@ -2074,9 +2059,7 @@ represents HTML5, the cornerstone for modern Web applications.
 <p><img src="./images/image030.png?raw=true"
   alt="HTML5 logo."
   width="35%">   <br/></p>
-<h3 id="ch1-3">
-1.3 New Structural Elements
-</h3>
+<h3 id="ch1-3">1.3 New Structural Elements</h3>
 <p>
 Changes have been made to particular elements in HTML5 making it simpler
 to use. In this section, we will look at some examples highlighting
@@ -2135,11 +2118,12 @@ the fact that the “type” attribute of elements such as <link> or 
 9.  &lt;body&gt;
 10.    ...
 11. &lt;/body&gt;
-12. &lt;/html&gt;</code></pre>
+12. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Simpler character set definition
-</h4>
+
+<h4>Simpler character set definition</h4>
 <p>
 One word about the &lt;meta charset=“utf-8”&gt; at line 4 in the HTML5
 version: it is a <b>best practice</b> to declare the character set of
@@ -2258,10 +2242,10 @@ New structural elements
 <!------------------------------------------------------------------------------------------------>
 <!------------- 13. some of the new structural elements introducted by html5 (33) ---------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image013.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image013.jpeg?raw=true"
   alt="Some of the new structural elements introduced by HTML5: section, article, etc."
-  width="65%" />   <br/></p>
+  style="width:65%;" />
 <h4>
 History
 </h4>
@@ -2422,25 +2406,21 @@ save your own version using the “Bins/create milestone” menu, share your
 version with others in the forums, etc. Don’t  hesitate to play with the
 source code, you will never break anything).
 </p>
-<h4>
-Use a &lt;header&gt; at the top of the blog
-</h4>
+<h4>Use a &lt;header&gt; at the top of the blog</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 14. image of the header element at the top of the blog (35) ------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image014.jpeg?raw=true"
-  alt="image of the header element at the top of the blog."
-  width="35%" />   <br>
-<p>
-This is an example of one way to organize a blog. Here, we have designed
+<img class="displayed"
+  src="./images/image014.jpeg?raw=true"
+  alt="Image of the header element at the top of the blog."
+  style="width:35%;" />
+<p>This is an example of one way to organize a blog. Here, we have designed
 the HTML page using a &lt;header&gt; element that contains the “Simple
-HTML5 blog” text that appears on top of the page.
-</p>
-<h4>
-HTML code:
-</h4>
-<pre><code>&lt;!DOCTYPE html&gt;
+HTML5 blog” text that appears on top of the page.</p>
+<h4>HTML code:</h4>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -2450,41 +2430,38 @@ HTML code:
   &lt;header&gt;
     &lt;h1&gt;Simple &lt;span&gt;HTML5&lt;/span&gt; blog&lt;/h1&gt;
   &lt;/header&gt;
-...</code></pre>
-<h4>
-The CSS rules we used:
-</h4>
-<pre><code>header {
+...
+</code></pre>
+
+<h4>The CSS rules we used:</h4>
+
+<pre><code>
+header {
   color: #007e99;
   font-size: 2.5em;
   padding: 20px 50px
 }
 header span {
   color: #722
-}</code></pre>
-<h4>
-Use a &lt;nav&gt; for the navigation menu just below the header
-</h4>
+}
+</code></pre>
+
+<h4>Use a &lt;nav&gt; for the navigation menu just below the header</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 15. image of the navigation menu (36) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image015.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image015.jpeg?raw=true"
   alt="Image of the navigation menu."
-  width="35%" />   <br/></p>
-<p>
-The navigation menu just below the header is a &lt;nav&gt; element. For
-the purpose of this example we haven’t provided any value for the
-hyperlinks…
-</p>
-<h4>
-HTML code:
-</h4>
+  style="width:35%;" />
+<p>The navigation menu just below the header is a &lt;nav&gt; element. For
+the purpose of this example we haven’t provided any value for the hyperlinks…</p>
+<h4>HTML code:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -2500,16 +2477,18 @@ Click to expand!
     &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
+&lt;/nav&gt;
+</code></pre>
+
 </details>
-<h4>
-And here is the CSS we used in this example for the &lt;nav&gt; element:
-</h4>
+
+<h4>And here is the CSS we used in this example for the &lt;nav&gt; element:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>nav {
+<summary>Click to expand!</summary>
+
+<pre><code>
+nav {
   font-size: 1.5em;
   margin: 5px 0;
   padding: 20px 50px
@@ -2530,19 +2509,25 @@ nav span, nav a {
 nav span {
   background: #722;
   color: #fff
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-A &lt;section&gt; for each month and an &lt;article&gt; for each post in
-the blog
-</h4>
-<p>
-Now, we have one big &lt;section&gt; element that contains a set
-of &lt;article&gt; elements…
-</p>
+
+<h4>A &lt;section&gt; for each month and an &lt;article&gt; for each post in the blog</h4>
+<p>Now, we have one big &lt;section&gt; element that contains a set of &lt;article&gt; elements…</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 16. image of sections that contain articles (37) ------------------------>
 <!------------------------------------------------------------------------------------------------>
+img class="displayed"
+  src="./images/image018.jpeg?raw=true"
+  alt="Image of figure and figcaption that embed an img."
+  style="width:65%;" />
+<img class="displayed"
+  src="./images/image015.jpeg?raw=true"
+  alt="Image of the navigation menu."
+  style="width:35%;" />
+
 <p style="text-align:center" width="100%">
 <p><img src="./images/image016.jpeg?raw=true"
   alt="Image of sections that contain articles."
@@ -2568,7 +2553,9 @@ And here is the CSS:
 <summary>
 Click to expand!
 </summary>
-<pre><code>section {
+
+<pre><code>
+section {
   float: left;
   padding: 35px 0;
   position: relative;
@@ -2585,7 +2572,9 @@ section header {
 }
 section h2 {
   font-size: 2.3em;
-}</code></pre>
+}
+</code></pre>
+
 </details>
 <p>
 Note that the H2, article, article header, etc. will be styled using
@@ -2597,11 +2586,10 @@ Add a &lt;header&gt; at the beginning of each &lt;article&gt;
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 17. image of the header at the top of each article (37) --------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image017.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image017.jpeg?raw=true"
   alt="Image of the header at the top of each article."
-  width="65%" />   <br/></p>
-<p>
+  style="width:65%;" />
 <p>Next, in each article in the section we have a header (to display the
 article title), paragraphs (article content), and so on.</p>
 Example for the first blog article:
@@ -2610,7 +2598,8 @@ Example for the first blog article:
 <summary>
 Click to expand!
 </summary>
-<pre><code>&lt;section&gt;
+<pre><code>
+&lt;section&gt;
    &lt;article&gt;
      &lt;header&gt;
          &lt;h2&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h2&gt;
@@ -2637,8 +2626,11 @@ Click to expand!
     &lt;/figure&gt;
    &lt;/article&gt;
    ...
-&lt;/section&gt;</code></pre>
+&lt;/section&gt;
+</code></pre>
+
 </details>
+
 <h4>
 Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside
 </h4>
@@ -2650,36 +2642,37 @@ src=…&gt; element together with a &lt;figcaption&gt; element.
 <!------------------------------------------------------------------------------------------------>
 <!----------------- 18. image of figure and figcaption that embed an img (38) -------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image018.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image018.jpeg?raw=true"
   alt="Image of figure and figcaption that embed an img."
-  width="65%" />   <br/></p>
+  style="width:65%;" />
 <p>
 Here is the CSS for the &lt;figcaption&gt; element we have used in the
 example (we did not apply any style to the &lt;figure&gt; element):
 </p>
-<h4>
-HTML code:
-</h4>
-<pre><code>&lt;figure&gt;
+<h4>HTML code:</h4>
+
+<pre><code>
+&lt;figure&gt;
     &lt;img src=&quot;HTML5-tags.png&quot;
          alt=&quot;Example of HTML5 structural tags&quot; /&gt;
     &lt;figcaption&gt;
         Fig. 1 : an example of how .....
     &lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
-<h4>
-CSS code:
-</h4>
-<pre><code>figcaption {
+&lt;/figure&gt;
+</code></pre>
+
+<h4>CSS code:</h4>
+
+<pre><code>
+figcaption {
     font-style:italic;
     font-size: 0.8em;
     width: 100%
-}</code></pre>
-<h4>
-Use an &lt;aside&gt; element to display a tag cloud on the… side of the
-main content
-</h4>
+}
+</code></pre>
+
+<h4>Use an &lt;aside&gt; element to display a tag cloud on the… side of the main content</h4>
 <p>After the long &lt;section&gt; element that contains all the blog
 articles displayed in the page, we added the HTML code for the tag cloud
 that is displayed on the right of the page, “aside”! This is done using
@@ -2687,16 +2680,16 @@ that is displayed on the right of the page, “aside”! This is done using
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 19. image of the tag cloud defined as an aside element (39) ------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image019.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image019.jpeg?raw=true"
   alt="image of the tag cloud defined as an aside element."
-  width="25%" /><br>
-</p>
+  style="width:25%;" />
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;section&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;section&gt;
 .... all &lt;article&gt;... &lt;/article&gt; here....
 &lt;/section&gt;
 &lt;aside&gt;
@@ -2708,8 +2701,11 @@ Click to expand!
        ...
    &lt;/ul&gt;
 &lt;/aside&gt;
-...</code></pre>
+...
+</code></pre>
+
 </details>
+
 <p>
 We are not going to show the complete CSS here as it uses some tricks to
 display the list as a “real tag cloud” that uses JavaScript for handling
@@ -2721,60 +2717,58 @@ code of the online example</a>.
 Here is the CSS for the &lt;aside&gt; element:
 </h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>aside {
-    float: right;
-    padding: 70px 0 30px;
-    position: relative;
-    width: 25%
+<summary>Click to expand!</summary>
+
+<pre><code>
+aside {
+  float: right;
+  padding: 70px 0 30px;
+  position: relative;
+  width: 25%
 }
 aside h2 {
-    color: #888;
-    font-size: 1.8em
+  color: #888;
+  font-size: 1.8em
 }
 aside .tag-cloud {
-    padding: 15px 35px 10px 0;
-    text-align: center
+  padding: 15px 35px 10px 0;
+  text-align: center
 }
-...</code></pre>
+...
+</code></pre>
+
 </details>
+
 <p>
 We used a float:right CSS rule to put the tag cloud on the right… In a
 following section we will provide several examples that explain how to
 make a nice layout with the new structural elements, using simple CSS
 rules.
 </p>
-<h4>
-Here is the result:
-</h4>
+<h4>Here is the result:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 19. image of the tag cloud defined as an aside element (40) ------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image019.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image019.jpeg?raw=true"
   alt="The aside tag cloud on the right."
-  width="50%" />   <br/></p>
-<h4>
-Add a &lt;footer&gt; at the end of the blog
-</h4>
+  style="width:50%;" />
+<h4>Add a &lt;footer&gt; at the end of the blog</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 20. image of the tag cloud defined as an aside element (40) ------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image020.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image020.jpeg?raw=true"
   alt="Image of the blog footer."
-  width="25%" />   <br/></p>
-<h4>
-Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below)
-after the tag cloud definition, to display a page footer:
-</h4>
+  style="width:25%;" />
+<h4>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below)
+after the tag cloud definition, to display a page footer:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;html&gt;
 ...
 &lt;body&gt;
 ...
@@ -2788,44 +2782,41 @@ Click to expand!
    &lt;p&gt;&amp;copy; 2009 Some blog&lt;/p&gt;
 &lt;/footer&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-With this CSS rule:
-</h4>
-<pre><code>footer {
-    clear: both;
-    color: #777;
-    padding: 10px 50px
-}</code></pre>
-<h4>
-<b>And here is the result at the bottom of the page:</b>
-</h4>
+
+<h4>With this CSS rule:</h4>
+<pre><code>
+footer {
+  clear: both;
+  color: #777;
+  padding: 10px 50px
+}
+</code></pre>
+
+<h4><b>And here is the result at the bottom of the page:</b></h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------- 22. the resulting footer at the bottom of the page (41) -------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image022.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image022.jpeg?raw=true"
   alt="The resulting footer at the bottom of the page."
-  width="55%" />   <br/></p>
-<h3 id="ch1-3-4">
-1.3.4 More on &lt;article&gt; and &lt;section&gt;
-</h3>
-<h4>
-Can an &lt;article&gt; contain a &lt;section&gt;?
-</h4>
+  style="width:55%;" />
+
+<h3 id="ch1-3-4">1.3.4 More on &lt;article&gt; and &lt;section&gt;</h3>
+<h4>Can an &lt;article&gt; contain a &lt;section&gt;?</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 23. pictures of eisher hands (41) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image023.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image023.jpeg?raw=true"
   alt="Picture of 'eisher' hands."
-  width="25%" />   <br>
-<p>
-It may not be clear whether a &lt;section&gt; may contain one or several
+  style="width:25%;" />
+<p>It may not be clear whether a &lt;section&gt; may contain one or several
 &lt;article&gt; elements or if an &lt;article&gt; may contain one or
-several &lt;section&gt; elements.
-</p>
+several &lt;section&gt; elements.</p>
 <ul>
 <li>
 The &lt;article&gt; element was designed for stand-alone parts of a
