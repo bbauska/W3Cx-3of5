@@ -1640,40 +1640,28 @@ account by:
   the <a   href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" target="_blank" rel="noopener noreferrer">table-of-con  tents-crx
   extension</a> (Chrome extension). More on that in the next section of
   the course.
-  </li>
-  <br>
+  <br></li>
   <li>
   <a href="https://www.w3.org/WAI/perspective-videos/speech/" target="_blank" rel="noopener noreferrer">Text to
   speech:</a>
-  </li>
-  <br>
+  <br></li>
   <li>
   Web crawlers, etc.
-  </li>
-  <br>
+  <br></li>
 </ul>
-<p>
 <p>You can use &lt;div&gt; elements in all cases where the proposed
 structural elements do not fit your needs: for defining some content
 that should be styled, for example.</p>
-This chart from the <a href="https://html5doctor.com/" target="_blank" rel="noopener noreferrer">HTML5 Doctor Web
-site</a> may help you decide whether or not to use a &lt;div&gt;:
+<p>This chart from the <a href="https://html5doctor.com/" target="_blank" rel="noopener noreferrer">HTML5 Doctor Web site</a> may help you decide whether or not to use a &lt;div&gt;:
 </p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 24. html5 doctor web site. whether or not to use a <dev> (24) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image025.png?raw=true"
-  alt="Outliner in action from the previous example."
+  src="./images/image024.png?raw=true"
+  alt="HTML5 Doctor Web site.  Whether or not to use a 'dev'."
   style="width:65%;" />
-<p style="text-align:center" width="100%">
-<img src="./images/image024.png?raw=true"
-  width="100%"
-  alt="HTML5 Doctor Web site.  Whether or not to use a 'dev'." />
-</p>
-<h3 id="ch1-3-5">
-1.3.5 Headings and Structural Elements
-</h3>
+<h3 id="ch1-3-5">1.3.5 Headings and Structural Elements</h3>
 <p>We will now present some best practices for starting to
 use &lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;, in
 particular concerning the use of headings (h1, h2, h3, h4, h5 and
@@ -14574,9 +14562,7 @@ filled shape drawn will have this gradient.</p>
 rectangles. In this way, each rectangle is drawn using its own
 gradient.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-5-3">
-3.5.3 Canvas Context: Radial Gradients
-</h3>
+<h3 id="ch3-5-3">3.5.3 Canvas Context: Radial Gradients</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Radial gradients are for creating gradients that
 propagate/interpolate colors along circles instead of
@@ -14755,9 +14741,7 @@ is purple, and it fills the rest of the filled rectangle area “after”
 the external circle of the gradient.</p></li>
 <li><p>The colors between the two circles will be interpolated.</p></li>
 </ul>
-<h3 id="ch3-5-4">
-3.5.4 Canvas Context: Patterns/Textures
-</h3>
+<h3 id="ch3-5-4">3.5.4 Canvas Context: Patterns/Textures</h3>
 <h4>
 Principle
 </h4>
@@ -16032,7 +16016,9 @@ HTML
 <summary>
 Click to expand!
 </summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -16069,16 +16055,17 @@ clearInterval(requestId);
 }
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Extract from the source code:
-</h4>
+
+<h4>Extract from the source code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;body&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;body&gt;
 2.     &lt;div id=&quot;animatedDIV&quot;&gt;Animated DIV :-)&lt;/div&gt;
 3.  
 4.     &lt;button onclick=&quot;start()&quot;&gt;Start animation&lt;/button&gt;
@@ -16103,8 +16090,11 @@ Click to expand!
 23.            }
 24.        }
 25.     &lt;/script&gt;
-26. &lt;/body&gt;</code></pre>
+26. &lt;/body&gt;
+</code></pre>
+
 </details>
+
 <p>Here, we define a &lt;div&gt; element, (see the online source code
 for the CSS properties involved), and we use the setInterval method
 (<i>line 17</i>) to call every 10ms the render() method that will just
@@ -16676,9 +16666,7 @@ Games course.</p>
 <p>Current <a href="https://caniuse.com/requestanimationframe" target="_blank" rel="noopener noreferrer">support</a> is
 really good and all modern browsers support this API.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-3-1">
-4.3.1 Events: Input and Output
-</h3>
+<h3 id="ch4-3-1">4.3.1 Events: Input and Output</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>In JavaScript, we treat events made by users as an input, and we
 manipulate the DOM structure as an output. Most of the time in
@@ -16687,16 +16675,16 @@ as position or speed of an alien ship, and the animation loop will take
 care of these variables to move the objects.</p>
 <p>The events are called <i>DOM events</i>, and we use the <i>DOM
 JavaScript API</i> to create <i>event handlers</i>.</p>
-<h4>
-There are three ways to manage events in the DOM structure
-</h4>
-<h4>
-First method: declare event handlers in the HTML code
-</h4>
+<h4>There are three ways to manage events in the DOM structure</h4>
+<h4>First method: declare event handlers in the HTML code</h4>
 <p>You will often find this in examples on the Web:</p>
-<pre><code>1.  &lt;div id=&quot;someDiv&quot; onclick=&quot;alert(&#39;clicked!&#39;);&quot;&gt;
+
+<pre><code>
+1.  &lt;div id=&quot;someDiv&quot; onclick=&quot;alert(&#39;clicked!&#39;);&quot;&gt;
 2.      content of the div
-3.  &lt;/div&gt;</code></pre>
+3.  &lt;/div&gt;
+</code></pre>
+
 <p>Note: this is not the recommended way to handle events, even if it’s
 very easy to use. Mixing the ‘visual layer’ (HTML) and the ‘logic layer’
 (JavaScript) in one place is ok for small examples (we have used this in
@@ -16708,33 +16696,39 @@ Second method: add an event handler to an HTML element in JavaScript
 <h4>
 Here is an example:
 </h4>
-<pre><code>1.  document.getElementById(&#39;someDiv&#39;).onclick = function(evt) {
+
+<pre><code>
+1.  document.getElementById(&#39;someDiv&#39;).onclick = function(evt) {
 2.    alert(&#39;clicked!&#39;);
-3.  }</code></pre>
+3.  }
+</code></pre>
+
 <p>This method is fine, but  you will not be able to attach several
 listener functions. If you need to do this, the preferred version is the
 next one.</p>
-<h4>
-Third method: register a callback to the event listener with
-the addEventListener method
-</h4>
-<h4>
-This is how we do it:
-</h4>
-<pre><code>1.  document.getElementById(&#39;someDiv&#39;).addEventListener(&#39;click&#39;, function(evt) {
+<h4>Third method: register a callback to the event listener with
+the addEventListener method</h4>
+<h4>This is how we do it:</h4>
+
+<pre><code>
+1.  document.getElementById(&#39;someDiv&#39;).addEventListener(&#39;click&#39;, function(evt) {
 2.      alert(&#39;clicked!&#39;);
-3.  }, false);</code></pre>
+3.  }, false);
+</code></pre>
+
 <p>The third parameter is not important for now, just set it to false,
 or simply do not add a third parameter.</p>
-<h4>
-The DOM event that is passed to the event listener function
-</h4>
+<h4>The DOM event that is passed to the event listener function</h4>
 <p>When you create an EventListener and attach it to an element,  an
 event object will be passed as a parameter to your callback, just like
 this:</p>
-<pre><code>1.  element.addEventListener(&#39;click&#39;, function(&lt;b&gt;event&lt;/b&gt;) {
+
+<pre><code>
+1.  element.addEventListener(&#39;click&#39;, function(&lt;b&gt;event&lt;/b&gt;) {
 2.     &lt;b&gt;// now you can use the event object inside the callback&lt;/b&gt;
-3.  }, false);</code></pre>
+3.  }, false);
+</code></pre>
+
 <p>Depending on the type of event you are listening to, we will use
 different properties from the event object in order to get useful
 information like: “what keys have been pressed down?”, “what is the
@@ -16750,10 +16744,10 @@ Source code for the knowledge check 4.3.1
 <p><a href="http://jsbin.com/korele/edit" target="_blank">Online example
 on JS Bin</a></p>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -16774,23 +16768,28 @@ Click to expand!
 19.    }
 20. &lt;/script&gt;
 21. &lt;/body&gt;
-22. &lt;/html&gt;</code></pre>
+22. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="4-3-2">
-4.3.2 Keyboard Interaction, Key Events
-</h3>
+<h3 id="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>When you listen to keyboard related events
 (keydown, keyup or keypressed), the event parameter passed to the
 listener function will contain the code of the key that fired the event.
 Then it is possible to test what key has been pressed or released, like
 this:</p>
-<pre><code>1.  window.addEventListener(&#39;keydown&#39;, function(event) {
+
+<pre><code>
+1.  window.addEventListener(&#39;keydown&#39;, function(event) {
 2.     if (event.keyCode === 37) {
 3.       //left arrow was pressed
 4.     }
-5.  }, false);</code></pre>
+5.  }, false);
+</code></pre>
+
 <p>At <i>line 2</i>, the value “37” is the key code that corresponds to
 the left arrow. It might be difficult to know the correspondences
 between real keyboard keys and codes, so here are handy pointers:</p>
@@ -16814,12 +16813,13 @@ listener to the window object directly, like this:
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 193. add key listener to window object (268) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image193.png?raw=true"
-  width="25%"
-  alt="image193.png." />
-</p>
-<pre><code>&lt;!DOCTYPE html&gt;
+<img class="displayed"
+  src="./images/image193.png?raw=true"
+  alt="Add key listener to window object."
+  style="width:25%;" />
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -16830,16 +16830,19 @@ border: 1px solid black;
 }
 &lt;/style&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;p&gt;</code></pre>
+&lt;p&gt;
+</code></pre>
+
 This example shows how to handle key events in a canvas by adding a key
 listener to the window object. Like that, all key press in the document
 will trigger the event listener function.
 </p>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; height=&quot;200&quot;&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; height=&quot;200&quot;&gt;
 &lt;/canvas&gt;
 &lt;script&gt;
 var canvas;
@@ -16886,16 +16889,14 @@ what HTML element has the focus, etc…</p>
 Example #2: moving the monster with the keyboard
 </h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 194. (xxx) -------------------------------->
+<!------------------------- 194. moving the monster with keyboard (xxx) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image194.png?raw=true"
-   width="65%"
-   alt="." />
-</p>
-<h4>
-HTML
-</h4>
+<img class="displayed"
+  src="./images/image194.png?raw=true"
+  alt="Moving the monster with the keyboard."
+  style="width:65%;" />
+
+<h4>HTML</h4>
 <details>
 <summary>
 Click to expand!
@@ -16992,16 +16993,17 @@ cancelAnimationFrame(requestId);
 }
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Code:
-</h4>
+
+<h4>Code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;script&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;script&gt;
 2.  var canvas, ctx;
 3.  var monsterX=100, monsterY=100, monsterAngle=0;
 4.  var incrementX = 0;
@@ -17049,19 +17051,24 @@ Click to expand!
 46.     // call again mainloop after 16.6 ms (60 frames/s)
 47.     requestId = requestAnimationFrame(animationLoop);
 48. }
-49. &lt;/script&gt;</code></pre>
+49. &lt;/script&gt;
+</code></pre>
+
 </details>
-<h4>
-Example #3: what if I want to listen to key events only in my canvas?
-</h4>
+
+<h4>Example #3: what if I want to listen to key events only in my canvas?</h4>
 <p>If you add a key listener to a canvas element, the problem is that it
 will get events only when it has the focus. And by default, it will
 never have the focus!</p>
 <p>The tabindex attribute of the canvas element makes it focusable.
 Without it, it will never get the focus!</p>
 <p>The trick is to declare the canvas like this:</p>
-<pre><code>1.  &lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; tabindex=&quot;1&quot; height=&quot;200&quot;&gt;
-2.  &lt;/canvas&gt;</code></pre>
+
+<pre><code>
+1.  &lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; tabindex=&quot;1&quot; height=&quot;200&quot;&gt;
+2.  &lt;/canvas&gt;
+</code></pre>
+
 <p>And we force the canvas to get the focus with:</p>
 <pre><code>1.  canvas=document.getElementById(&#39;myCanvas&#39;);
 2.  ...
@@ -17083,7 +17090,9 @@ HTML
 <summary>
 Click to expand!
 </summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -17119,8 +17128,11 @@ return false;
 };
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>Note that the line that forces the focus to the canvas is commented
 by default. Try to click on the canvas, then press a key, then click out
 of the canvas, then press a key: this time nothing happens!</p>
@@ -17139,7 +17151,8 @@ Extract from the code:
 <summary>
 Click to expand!
 </summary>
-<pre><code>1.  var canvas;
+<pre><code>
+1.  var canvas;
 2.  
 3.  function init() {
 4.       canvas=document.getElementById(&#39;myCanvas&#39;);
@@ -17158,15 +17171,15 @@ Click to expand!
 17. function handleKeydown(e){
 18.      alert(&#39;keycode: &#39;+e.keyCode);
 19.      return false;
-20. };</code></pre>
+20. };
+</code></pre>
+
 </details>
+
 <p><i>Line 10</i> is useful to initially set the focus on the canvas,
 but this trick will not work if we click somewhere else in the HTML
 page.</p>
-<h4>
-Example #4: a better way: set the focus when the mouse cursor enters the
-canvas
-</h4>
+<h4>Example #4: a better way: set the focus when the mouse cursor enters the canvas</h4>
 <p>A better way to manage key events on a canvas is to set the focus
 when the mouse is over the canvas, and to un-focus it otherwise.</p>
 <p>Here is a modified version of the “move monster example” seen
@@ -17178,20 +17191,17 @@ the mouseout event.</p>
 focus to the canvas, and when the mouse cursor goes out of the canvas,
 we call canvas.blur() to unset the focus.</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------- 197.  (xxx) ------------>
+<!----------- 197. setting the focus when the mouse cursor enters the canvas (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <p><img src="./images/image197.png?raw=true"
   width="65%"
   alt="image197.png" />   <br/></p>
-<h4>
-HTML
-</h4>
+<h4>HTML</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -17292,16 +17302,17 @@ cancelAnimationFrame(requestId);
 }
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Code:
-</h4>
+
+<h4>Code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  function init() {
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  function init() {
 2.     // This function is called after the page is loaded
 3.     // 1 - Get the canvas
 4.     canvas = document.getElementById(&#39;myCanvas&#39;);
@@ -17327,38 +17338,41 @@ Click to expand!
 24. function unsetFocus(evt) {
 25.    canvas.blur();
 26.    incrementX = 0; // stop the monster if the mouse exists the canvas
-27. };</code></pre>
+27. };
+</code></pre>
+
 </details>
+
 <p>The third parameter (false) of <i>lines 12</i> and <i>13</i> means
 “we do not want to propagate the event to the ancestors of the canvas in
 the DOM.” </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-3-3">
-4.3.3 Mouse Interaction, Mouse Events
-</h3>
+<h3 id="ch4-3-3">4.3.3 Mouse Interaction, Mouse Events</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Detecting mouse events in a canvas is quite straightforward: you add
 an event listener to the canvas, and the browser invokes that listener
 when the event occurs.</p>
 <p>The example below is about listening to mouseup and mousedown events
 (when a user presses or releases any mouse button):</p>
-<pre><code>1.  canvas.addEventListener(&#39;mousedown&#39;, function (evt) {
+
+<pre><code>
+1.  canvas.addEventListener(&#39;mousedown&#39;, function (evt) {
 2.  // do something with to the mousedown event
-3.  });</code></pre>
+3.  });
+</code></pre>
+
 <p>The event received by the listener function will be used for getting
 the button number or the coordinates of the mouse cursor. Before looking
 at different examples, let’s look at the different event types we can
 listen to.</p>
-<h4>
-The different mouse events
-</h4>
+<h4>The different mouse events</h4>
 <!------------------------------------------------------------------------------------------------>
-<!----------- 198. mouse events illustrated (xxx) ------------>
+<!------------------------------ 198. mouse events illustrated (xxx) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image198.png?raw=true"
-  width="35%"
-  alt="Mouse events illustrated." />   <br/></p>
+<img class="displayed"
+  src="./images/image198.png?raw=true"
+  alt="Mouse events illustrated."
+  style="width:35%;" />
 <p>We saw in the last example how to detect
 the mouseenter and mouseout events.</p>
 <p>There are other events related to the mouse:</p>
@@ -17412,10 +17426,10 @@ of any element in the page: getBoundingClientRect().</p>
 JavaScript
 </h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>var canvas, ctx, mousePos, mouseButton;
+<summary>Click to expand!</summary>
+
+<pre><code>
+var canvas, ctx, mousePos, mouseButton;
 window.onload = function init() {
 canvas = document.getElementById(&#39;myCanvas&#39;);
 ctx = canvas.getContext(&#39;2d&#39;);
@@ -17449,23 +17463,22 @@ return {
 x: evt.clientX - rect.left,
 y: evt.clientY - rect.top
 };
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-CSS
-</h4>
+
+<h4>CSS</h4>
 <div class="sourceCode" id="cb371"><pre
 class="sourceCode css"><code class="sourceCode css"><span id="cb371-1"><a href="#cb371-1" aria-hidden="true" tabindex="-1"></a>canvas {</span>
 <span id="cb371-2"><a href="#cb371-2" aria-hidden="true" tabindex="-1"></a><span class="kw">border</span>:<span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">black</span></span>
 <span id="cb371-3"><a href="#cb371-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h4>
-HTML
-</h4>
+<h4>HTML</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -17481,27 +17494,30 @@ padding: 0px;
 This is a canvas:&lt;p&gt;&lt;/p&gt;
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt
+</code></pre>
+
 </details>
-<h4>
-JavaScript
-</h4>
-<pre><code>function getMousePos(canvas, evt) {
+
+<h4>JavaScript</h4>
+
+<pre><code>
+function getMousePos(canvas, evt) {
    // necessary to take into account CSS boundaries
    var rect = canvas.getBoundingClientRect();
    return {
       x: evt.clientX - rect.left,
       y: evt.clientY - rect.top
    };
-}</code></pre>
-<h4>
-WRONG code:
-</h4>
+}
+</code></pre>
+
+<h4>WRONG code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  ...
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  ...
 2.  canvas.addEventListener(&#39;mousemove&#39;, function (evt) {
 3.      mousePos = getMousePos(canvas, evt);
 4.      var message = &#39;Mouse position: &#39; + mousePos.x + &#39;,&#39; + mousePos.y;
@@ -17515,12 +17531,13 @@ Click to expand!
 12.       x: evt.clientX,
 13.       y: evt.clientY
 14.    };
-15. }</code></pre>
+15. }
+</code></pre>
+
 </details>
-<h4>
-Here is the result, when the mouse is approximately at the top left
-corner of the canvas:
-</h4>
+
+<h4>Here is the result, when the mouse is approximately at the top left
+corner of the canvas:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------- 200.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
@@ -17528,9 +17545,7 @@ corner of the canvas:
 <p><img src="./images/image200.jpeg?raw=true"
   width="65%"
   alt="Bad mouse coordinates." />   <br/></p>
-<h4>
-GOOD version of the code:
-</h4>
+<h4>GOOD version of the code:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------- 201.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
@@ -17538,17 +17553,19 @@ GOOD version of the code:
 <p><img src="./images/image201.png?raw=true"
    width="40%"
    alt="." />   <br/></p>
-<pre><code>function getMousePos(canvas, evt) {
+
+<pre><code>
+function getMousePos(canvas, evt) {
    // necessary to take into account CSS boundaries
    var rect = canvas.getBoundingClientRect();
    return {
       x: evt.clientX - rect.left,
       y: evt.clientY - rect.top
    };
-}</code></pre>
-<h4>
-Result (the cursor is approximately at the top left corner):
-</h4>
+}
+</code></pre>
+
+<h4>Result (the cursor is approximately at the top left corner):</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------- 202.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
@@ -17556,15 +17573,11 @@ Result (the cursor is approximately at the top left corner):
 <p><img src="./images/image202.jpeg?raw=true"
   width="30%"
   alt="Mouse at zero zero." />   <br/></p>
-<h4>
-How to display the mouse position, and the mouse button that has been
-pressed or released
-</h4>
-<p>
-This example uses the previous function for computing the mouse position
+<h4>How to display the mouse position, and the mouse button that has been
+pressed or released</h4>
+<p>This example uses the previous function for computing the mouse position
 correctly. It listens to mousemove, mousedown and mouseup events, and
-shows how to get the mouse button number using the evt.button property.
-</p>
+shows how to get the mouse button number using the evt.button property.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------- 203.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
@@ -17579,14 +17592,12 @@ shows how to get the mouse button number using the evt.button property.
 <p><img src="./images/image204.jpeg?raw=true"
    width="50%"
    alt="Mouse event example." />   <br/></p>
-<h4>
-Extract from source code:
-</h4>
+<h4>Extract from source code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  var canvas, ctx, mousePos, mouseButton;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  var canvas, ctx, mousePos, mouseButton;
 2.   
 3.  window.onload = function init() {
 4.      canvas = document.getElementById(&#39;myCanvas&#39;);
@@ -17626,15 +17637,13 @@ Click to expand!
 38.       x: evt.clientX - rect.left,
 39.       y: evt.clientY - rect.top
 40.    };
-41. }</code></pre>
+41. }
+</code></pre>
+
 </details>
-<h4>
-More examples
-</h4>
-<h4>
-Example #1: move the monster with the mouse, rotate it when a mouse
-button is pressed
-</h4>
+<h4>More examples</h4>
+<h4>Example #1: move the monster with the mouse, rotate it when a mouse
+button is pressed</h4>
 <p>This example shows an animation at 60 frames/s
 using requestAnimationFrame, were the monster is drawn at the mouse
 position, and if a mouse button is pressed, the monster starts rotating
@@ -17647,14 +17656,12 @@ stops:</p>
 <p><img src="./images/image205.png?raw=true"
   width="40%"
   alt="Image205." />   <br/></p>
-<h4>
-Code:
-</h4>
+<h4>Code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>var canvas, ctx;
+<summary>Click to expand!</summary>
+
+<pre><code>
+var canvas, ctx;
 var monsterX=100, monsterY=100, monsterAngle=0;
 var incrementX = 0;
 var incrementAngle =0;
@@ -17699,17 +17706,16 @@ function animationLoop() {
    ...
    // call again mainloop after 16.6 ms (60 frames/s)
    requestId = requestAnimationFrame(animationLoop);
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<p>
-This example shows one very important good practice when doing animation
+
+<p>This example shows one very important good practice when doing animation
 and interaction: if you want to achieve a smooth animation, set the
 state variables 60 times/s inside the animation loop (lines 45-49),
-depending on increments you set in event listeners (lines 23-31).
-</p>
-<h4>
-Example #2: draw in a canvas as if you were using a pencil
-</h4>
+depending on increments you set in event listeners (lines 23-31).</p>
+<h4>Example #2: draw in a canvas as if you were using a pencil</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------- 206.  (xxx) ------------>
 <!------------------------------------------------------------------------------------------------>
@@ -17717,13 +17723,10 @@ Example #2: draw in a canvas as if you were using a pencil
 <p><img src="./images/image206.png?raw=true"
   width="40%"
   alt="." />   <br/></p>
-<h4>
-Source code:
-</h4>
+<h4>Source code:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
+<summary>Click to expand!</summary>
 <pre><code>...
 &lt;script&gt;
 var canvas, ctx, previousMousePos;
@@ -17758,7 +17761,9 @@ function handleMouseMove(evt) {
    started = false;
    canvas.addEventListener(&#39;mousemove&#39;, handleMouseMove, false);
 };
-&lt;/script&gt;</code></pre>
+&lt;/script&gt;
+</code></pre>
+
 </details>
 <p>
 We had to define a variable started=false; as we cannot draw any line
@@ -17779,10 +17784,10 @@ pressed
 <p>We just added mouseup and  mousedown listeners, extract from the
 source code:</p>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  function handleMouseMove(evt) {
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  function handleMouseMove(evt) {
 2.       var mousePos = getMousePos(canvas, evt);
 3.   
 4.       // Let&#39;s draw some lines that follow the mouse pos
@@ -17810,15 +17815,16 @@ Click to expand!
 26.     canvas.addEventListener(&#39;mousemove&#39;, handleMouseMove, false);
 27.     canvas.addEventListener(&#39;mousedown&#39;, clicked);
 28.     canvas.addEventListener(&#39;mouseup&#39;, released);
-29. };</code></pre>
+29. };
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-3-4">
-4.3.4 Responsive Canvas
-</h3>
+<h3 id="ch4-3-4">4.3.4 Responsive Canvas</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Resizing a canvas can be tricky if we don’t know a few rules that
 might not be easily guessed:</p>
+
 <ul>
 <li><p>Changing the width or height property of a canvas in JavaScript
 erases its content and resets its context,</p></li>
@@ -17829,12 +17835,8 @@ effect when a canvas becomes larger, for example.</p></li>
 </ul>
 <p>Before looking at how best to handle canvas resizing, let’s see some
 examples below:</p>
-<h4>
-Examples
-</h4>
-<h4>
-Example #1: changing the size of a canvas on the fly erases its content!
-</h4>
+<h4>Examples</h4>
+<h4>Example #1: changing the size of a canvas on the fly erases its content!</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 208. example 1 resize and erase (285) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -17843,14 +17845,12 @@ Example #1: changing the size of a canvas on the fly erases its content!
   width="45%"
   alt="Example #1 Changing the size of a canvas on the fly will erase its content. " />
   <br/></p>
-<h4>
-Code:
-</h4>
+<h4>Code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;script&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;script&gt;
 2.  ...
 3.  function resizeCanvas() {
 4.       canvas.width = 300;
@@ -17860,8 +17860,11 @@ Click to expand!
 8.  ...
 9.  &lt;button onclick=&quot;resizeCanvas();&quot;&gt;
 10.     Click this button to resize the canvas and erase it!
-11. &lt;/button&gt;</code></pre>
+11. &lt;/button&gt;
+</code></pre>
+
 </details>
+
 <h4>
 Example #2 : resize a canvas using CSS width and height properties with
 percentages
@@ -17922,20 +17925,20 @@ parent.</p></li>
   width="65%"
   alt="DIV and canvas inside: div has css width=100% and height=50%" />
   <br/></p>
-<h4>
-HTML code:
-</h4>
-<pre><code>1.  &lt;div id=&quot;parentDiv&quot;&gt;
+<h4>HTML code:</h4>
+
+<pre><code>
+1.  &lt;div id=&quot;parentDiv&quot;&gt;
 2.      &lt;canvas id=&quot;myCanvas&quot; width=&quot;100&quot; height=&quot;100&quot; &gt;&lt;/canvas&gt;
-3.  &lt;/div&gt;</code></pre>
-<h4>
-CSS code:
-</h4>
+3.  &lt;/div&gt;
+</code></pre>
+
+<h4>CSS code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;style&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;style&gt;
     #parentDiv {
         width:100%;
         height:50%;
@@ -17946,16 +17949,17 @@ Click to expand!
     canvas {
        border: 2px solid black;
     }
-&lt;/style&gt;</code></pre>
+&lt;/style&gt;
+</code></pre>
+
 </details>
-<h4>
-JavaScript code for the resize event listener:
-</h4>
+
+<h4>JavaScript code for the resize event listener:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>function init() {
+<summary>Click to expand!</summary>
+
+<pre><code>
+function init() {
    ...
    // IMPORTANT: there is NO WAY to listen to a DIV&#39;s resize
    // listen to the window instead.
@@ -17970,20 +17974,19 @@ function resizeCanvasAccordingToParentSize() {
      canvas.height = divcanvas.clientHeight;
      ...
      // draw something, taking into account the new canvas size
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-See the complete example that corresponds to the above code:
-</h4>
+
+<h4>See the complete example that corresponds to the above code:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------- 212.  (288) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <p>&lt;img src=“./images/image212.png?raw=true” width=“55%” alt=“.”  
 <br/></p>
-<h4>
-Example #4: the same example with the monster
-</h4>
+<h4>Example #4: the same example with the monster</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------- 213. (288) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -17999,10 +18002,10 @@ the drawMonster(…) function for scaling the monster if it’s bigger than
 the canvas width (look at <i>lines 10-16</i>), this is a common
 trick:</p>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  function drawMonster(x, y, angle, headColor, eyeColor) {
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  function drawMonster(x, y, angle, headColor, eyeColor) {
 2.       // GOOD PRACTICE: SAVE CONTEXT AND RESTORE IT AT THE END
 3.       ctx.save();
 4.  
@@ -18023,12 +18026,13 @@ Click to expand!
 19.      ctx.fillStyle=headColor;
 20.      ctx.fillRect(0,0,200,200);
 21.      ...
-22. }</code></pre>
+22. }
+</code></pre>
+
 </details>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-3-5">
-4.3.5 Advanced Canvas
-</h3>
+<h3 id="ch4-3-5">4.3.5 Advanced Canvas</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>The canvas API is a “big beast”, and we have presented all the
 essential techniques for drawing and animating. However, we could not
@@ -18059,9 +18063,7 @@ canvas content to disk client-side, drawing a canvas into a canvas, etc.
 </li>
 <br>
 </ul>
-<h4>
-Examples studied in the HTML5 Apps and Games course
-</h4>
+<h4>Examples studied in the HTML5 Apps and Games course</h4>
 <ul>
 <li>
 Small game framework / object oriented JavaScript / advanced event
@@ -18087,9 +18089,7 @@ black arrow in the top right of the JSBin window).
   width="35%"
   alt="Sprite sheet." />   <br/></p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-1-1">
-5.1.1 Video Intro - Module 5
-</h3>
+<h3 id="ch5-1-1">5.1.1 Video Intro - Module 5</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Congratulations! You made it to module 5.</p>
 <p>Welcome this time to the wonderful world of HTML5 forms.</p>
@@ -18111,9 +18111,7 @@ standalone examples hosted on the JS Bin Web site. If you try to modify
 them or creates your own examples, please share in the discussion forums
 as usual. Have fun!</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-2-1">
-5.2.1 Introduction
-</h3>
+<h3 id="ch5-2-1">5.2.1 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>With HTML5, forms, which had shown little improvement since 1997,
 evolved considerably.  To achieve this, Web developers relied on many
@@ -18154,9 +18152,7 @@ depending on the type of  &lt;input&gt; fields in the &lt;form&gt;.  In
 the examples, we can see: email, URL, and phone number. Look at the
 different keyboard layouts. The last picture is a date picker from an
 IOS phone.</p>
-<h4>
-External resources:
-</h4>
+<h4>External resources:</h4>
 <ul>
 <li><p>From the
 specification: <a href="https://html.spec.whatwg.org/multipage/forms.html" target="_blank" rel="noopener noreferrer">Forms</a></p></li>
@@ -18164,9 +18160,7 @@ specification: <a href="https://html.spec.whatwg.org/multipage/forms.html" targ
 Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank" rel="noopener noreferrer">&lt;form&gt;</a></p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-2-2">
-5.2.2 Example
-</h3>
+<h3 id="ch5-2-2">5.2.2 Example</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>There is a lot of course content covered this week, and before we get
 into all the details of the elements and attributes introduced by
@@ -18186,26 +18180,20 @@ href=“https://jsbin.com/sivula/edit”?online example</a>:</p>
    alt="Geo-location API is used to auto-fill address input." />  
 <br/></p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-2-3">
-5.2.3 Input Elements and Attributes
-</h3>
+<h3 id="ch5-2-3">5.2.3 Input Elements and Attributes</h3>
 <!------------------------------------------------------------------------------------------------>
 <h4>
 Live coding video 1: using input elements as widgets to control a Web
 application
 </h4>
-<p><here></p>
-<h4>
-Live coding video 2: creating GUI elements dynamically
-</h4>
+<p>&lt;here&gt;</p>
+<h4>Live coding video 2: creating GUI elements dynamically</h4>
 <p>&lt;and here&gt;</p>
 <p>Input elements, in particular the elements introduced by HTML5, can
 be used as widgets to control the behavior of a Web application. In this
 situation, they do not need to be inside a &lt;form&gt; element. We just
 bind event listeners to them and we use them as client-side widgets.</p>
-<h4>
-Examples
-</h4>
+<h4>Examples</h4>
 <p>GUI: Graphical User Interface</p>
 <h4>
 Example #1: choose the color, line width and speed of an animation
@@ -18230,9 +18218,7 @@ version with different types of charts and a GUI</a> (see screenshot
 below)</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-2-4">
-5.2.4 Best Practices
-</h3>
+<h3 id="ch5-2-4">5.2.4 Best Practices</h3>
 <!------------------------------------------------------------------------------------------------>
 <h4>
 Live coding video 3: HTML5 forms - best practices
@@ -18278,9 +18264,7 @@ very good MDN’s article “How to structure a web form”</a>.</p>
    width="35%"
    alt="Payment form layout example." />   <br/></p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-3-1">
-5.3.1 Accessible Forms
-</h3>
+<h3 id="ch5-3-1">5.3.1 Accessible Forms</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Forms are commonly used to enable user interaction in Web sites and
 Web applications. For example, they are used for login, registering,
@@ -18309,9 +18293,7 @@ your forms truly accessible: labeling controls, grouping controls, form
 instructions, validating input, user notifications, multi-page forms,
 and custom controls.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-3-2">
-5.3.2 Why is this Important?
-</h3>
+<h3 id="ch5-3-2">5.3.2 Why is this Important?</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Forms can be visually and cognitively complex and difficult to use.
 Accessible forms are easier to use for everyone, including people with
@@ -18331,9 +18313,7 @@ controls more easily because they are associated with labels, field
 sets, and other structural elements.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-3-3">
-5.3.3 Labeling Controls
-</h3>
+<h3 id="ch5-3-3">5.3.3 Labeling Controls</h3>
 <!------------------------------------------------------------------------------------------------>
 <h4>
 Labels need to describe the purpose of the form control
@@ -18387,36 +18367,34 @@ Sometimes, <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to
 labels and inputs can also make CSS styling easier and produce better
 results with screen readers</a>.
 </p>
-<h4>
-Source code (with &lt;input&gt; inside the &lt;label&gt;):
-</h4>
-<pre><code>&lt;label for=first_name&quot;&gt;&lt;span lang=en&quot;&gt;Your First Name&lt;/span&gt;
+<h4>Source code (with &lt;input&gt; inside the &lt;label&gt;):</h4>
+
+<pre><code>
+&lt;label for=first_name&quot;&gt;&lt;span lang=en&quot;&gt;Your First Name&lt;/span&gt;
   &lt;input id=&quot;first_name&quot; type=&quot;text&quot; name=&quot;fname&quot;/&gt;
-&lt;/label&gt;</code></pre>
-<h4>
-Example #3
-</h4>
-<p>
-Click on the label “Subscribe to newsletter” to see what this does.
-</p>
+&lt;/label&gt;
+</code></pre>
+
+<h4>Example #3</h4>
+<p>Click on the label “Subscribe to newsletter” to see what this does.</p>
 <!--
 First name:![](./images/image218.wmf)
 Subscribe to newsletter![](./images/image219.wmf)
 -->
-<h4>
-Source code:
-</h4>
+<h4>Source code:</h4>
 <!--
 Bottom of Form
 -->
-<pre><code>1. &lt;label for=&quot;firstname&quot;&gt;First name:&lt;/label&gt;
+
+<pre><code>
+1. &lt;label for=&quot;firstname&quot;&gt;First name:&lt;/label&gt;
 2. &lt;input type=&quot;text&quot; name=&quot;firstname&quot; id=&quot;firstname&quot;&gt;&lt;br&gt;
 3. 
 4. &lt;label for=&quot;subscribe&quot;&gt;Subscribe to newsletter&lt;/label&gt;
-5. &lt;input type=&quot;checkbox&quot; name=&quot;subscribe&quot; id=&quot;subscribe&quot;&gt;</code></pre>
-<h4>
-Labeling buttons
-</h4>
+5. &lt;input type=&quot;checkbox&quot; name=&quot;subscribe&quot; id=&quot;subscribe&quot;&gt;
+</code></pre>
+
+<h4>Labeling buttons</h4>
 <p>The label of a &lt;button&gt; element is set inside the element and
 can include markup. This allows advanced accessibility hints to be
 included, such as marking up language change. Example: &lt;button&gt;Mon
@@ -18425,50 +18403,45 @@ with a label in French.</p>
 <p>When using the &lt;input&gt; element to create buttons, the label is
 set in the value attribute of the element. Example: &lt;input
 type=“submit” value=“Please submit”&gt;, renders a text button.</p>
-<h4>
-Source code for the “Submit” and “Cancel” buttons example:
-</h4>
-<pre><code>1. &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+<h4>Source code for the “Submit” and “Cancel” buttons example:</h4>
+
+<pre><code>
+1. &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
 2. &lt;button type=&quot;button&quot;&gt;Cancel&lt;/button&gt;
- 
 3. &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-4. &lt;input type=&quot;button&quot; value=&quot;Cancel&quot;&gt;</code></pre>
+4. &lt;input type=&quot;button&quot; value=&quot;Cancel&quot;&gt;
+</code></pre>
+
 <p>These give the same results:</p>
 <p><i>Lines 1 and 2</i> render as: <b>Submit Cancel</b></p>
 <p>… while <i>lines 3 and 4</i> render as: <!-- submit
 ![](./images/image220.wmf)
 --></p>
-<h4>
-Labeling text areas
-</h4>
+<h4>Labeling text areas</h4>
 <!-- rectangle box
 Enter your address:
 ![](./images/image221.wmf)
 -->
-<h4>
-Source code:
-</h4>
-<pre><code>&lt;label for=&quot;address&quot;&gt;Enter your address:&lt;/label&gt;&lt;br&gt; &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;</code></pre>
+<h4>Source code:</h4>
+
+<pre><code>
+&lt;label for=&quot;address&quot;&gt;Enter your address:&lt;/label&gt;&lt;br&gt; &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
+</code></pre>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-3-4">
-5.3.4 Grouping Controls
-</h3>
+<h3 id="ch5-3-4">5.3.4 Grouping Controls</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Groupings of form controls, typically groups of related checkboxes
 and radio buttons, sometimes require a higher level description.
 Grouping related form controls makes forms more understandable for all
 users, as related controls are easier to identify.</p>
-<h4>
-Associating related controls with fieldset
-</h4>
+<h4>Associating related controls with fieldset</h4>
 <p>Grouping needs to be carried out visually and in the code, for
 example, by using the &lt;fieldset&gt; and &lt;legend&gt; elements to
 associate related form controls. The &lt;fieldset&gt; identifies the
 entire grouping and &lt;legend&gt; identifies the grouping’s descriptive
 text.</p>
-<h4>
-Example #1: radio buttons
-</h4>
+<h4>Example #1: radio buttons</h4>
 <p>In the example below, there are three radio buttons that allow the
 user to choose an output format. Radio button groups should always be
 grouped using &lt;fieldset&gt;.</p>
@@ -18481,14 +18454,12 @@ grouped using &lt;fieldset&gt;.</p>
 ![](./images/image222.wmf)HTML file
 --->
 <p>Bottom of Form</p>
-<h4>
-Source code:
-</h4>
+<h4>Source code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;fieldset&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;fieldset&gt;
   &lt;legend&gt;Output format&lt;/legend&gt;
   &lt;div&gt;
     &lt;input type=&quot;radio&quot; name=&quot;format&quot; id=&quot;txt&quot; value=&quot;txt&quot; checked&gt;
@@ -18499,41 +18470,41 @@ Click to expand!
     &lt;label for=&quot;csv&quot;&gt;CSV file&lt;/label&gt;
   &lt;/div&gt;
   [...]
-&lt;/fieldset&gt;</code></pre>
+&lt;/fieldset&gt;
+</code></pre>
+
 </details>
-<h4>
-Example #2: checkboxes
-</h4>
+
+<h4>Example #2: checkboxes</h4>
 <p>In the example below, there are three checkboxes that are all part of
 an opt-in function for receiving different types of information.</p>
 <p>Top of Form</p>
-<p>I want to receive <!---
+<p>I want to receive 
+<!---
 ![](./images/image219.wmf)The weekly newsletter
-
 ![](./images/image219.wmf)Offers from the company
-
 ![](./images/image219.wmf)Offers from associated companies
----></p>
+--->
+</p>
 <p>Bottom of Form</p>
-<h4>
-Source code:
-</h4>
+<h4>Source code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;fieldset&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;fieldset&gt;
   &lt;legend&gt;I want to receive&lt;/legend&gt;
     &lt;div&gt;
       &lt;input type=&quot;checkbox&quot; name=&quot;newsletter&quot; id=&quot;check_1&quot;&gt;
       &lt;label for=&quot;check_1&quot;&gt;The weekly newsletter&lt;/label&gt;
     &lt;/div&gt;
  [...]
-&lt;/fieldset&gt;</code></pre>
+&lt;/fieldset&gt;
+</code></pre>
+
 </details>
-<h4>
-Associating related controls with WAI-ARIA
-</h4>
+
+<h4>Associating related controls with WAI-ARIA</h4>
 <p>WAI-ARIA provides a grouping role that functions similarly
 to fieldset and legend. For example, a div element can
 have role=group to indicate that the contained elements are members of a
@@ -18545,9 +18516,7 @@ WAI tutorial</a>. See also this MDN’s article about about <a
 href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles" target="_blank" rel="noopener noreferrer">WAI-ARIA
 roles</a>.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-4-1">
-5.4.1 Input Types
-</h3>
+<h3 id="ch5-4-1">5.4.1 Input Types</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>In this section, we briefly present the input types, attributes, and
 elements related to the forms that came with HTML5. Details are given
@@ -18570,9 +18539,7 @@ that came with HTML5.</p>
    width="20%"
    alt="HTML4 old HTML5." />   <br/></p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-4-2">
-5.4.2 “color”
-</h3>
+<h3 id="ch5-4-2">5.4.2 "color"</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>For years, we used hundreds of lines of JavaScript for selecting
 colors. Now, it’s bundled in the browser!</p>
@@ -18584,18 +18551,18 @@ colors. Now, it’s bundled in the browser!</p>
 <p><img src="./images/image224.jpeg?raw=true"
    alt="HTML5 input type=color on an android phone."
    width="40%" />   <br/></p>
-<h4>
-Typical use
-</h4>
-<h4>
-Inserting a color chooser is as simple as:
-</h4>
-<pre><code>&lt;!DOCTYPE html&gt;
+<h4>Typical use</h4>
+<h4>Inserting a color chooser is as simple as:</h4>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;&lt;head&gt;...&lt;/head&gt;
   &lt;body&gt;
     Choose a color : &lt;b&gt;&lt;input type=&quot;color&quot; value=&quot;#FF00F&quot;/&gt;&lt;/b&gt;
   &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 <i>Note</i>: In this chapter we are simplifying the examples, as we
 usually embed input elements in a &lt;form&gt;…
 </form>
@@ -18613,9 +18580,7 @@ though the <i>look and feel</i> may differ):</p>
 <p><img src="./images/image225.jpeg?raw=true"
    width="40%"
    alt="Select a color, input type=color." />   <br/></p>
-<h4>
-Example: changing the background color of the page
-</h4>
+<h4>Example: changing the background color of the page</h4>
 <p>The &lt;input type=“color”&gt; can fire change or input events. Here
 is an example that changes the background color of the page when a color
 is chosen. <a
@@ -18630,10 +18595,10 @@ it online at JSBin</a>.</p>
    alt="Change background color of the page body." />   <br/></p>
 <p>Source code:</p>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;/head&gt;
   &lt;body&gt;
     Select a color : &lt;input type=&quot;color&quot; id=&quot;colorChooser&quot;/&gt;
@@ -18645,11 +18610,12 @@ Click to expand!
       }, false);
     &lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Offer a limited choice of colors
-</h4>
+
+<h4>Offer a limited choice of colors</h4>
 <p>By default, the color selector offers many options that may either
 frighten some users or just not be appropriate for the purpose of the
 application. </p>
@@ -18668,21 +18634,21 @@ should be displayed:</p>
 <!-- {width="3.0in" height="1.872483595800525in"} -->
 <p><a href="https://jsbin.com/lahapu/edit?html,output" target="_blank" rel="noopener noreferrer">Online example at
 JSBin</a></p>
-<h4>
-Source code extract:
-</h4>
-<pre><code>&lt;input type=&quot;color&quot; value=&quot;#333333&quot; **list=&quot;colors&quot;**&gt;
+<h4>Source code extract:</h4>
+
+<pre><code>
+&lt;input type=&quot;color&quot; value=&quot;#333333&quot; **list=&quot;colors&quot;**&gt;
   
 &lt;datalist **id=&quot;colors&quot;**&gt;
    &lt;option&gt;#0000FF&lt;/option&gt;
    &lt;option&gt;#00FF00&lt;/option&gt;
    &lt;option&gt;#FF0000&lt;/option&gt;
-&lt;/datalist&gt;</code></pre>
+&lt;/datalist&gt;
+</code></pre>
+
 <p>Note that the id of the &lt;datalist&gt; element should be the same
 as the value of the list attribute of the input field.</p>
-<h4>
-What are the main problems with this element?
-</h4>
+<h4>What are the main problems with this element?</h4>
 <p>The main criticism that Web designers make about this element is
 related to its default appearance being strongly dependent on the
 browser and its underlying operating system. Changing the <i>look and
@@ -18699,9 +18665,7 @@ specific.</p>
 called <i>Web Components</i>, a new approach for designing HTML5
 widgets, that is covered in the W3Cx HTML5 Apps and Games course.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-4-3">
-5.4.3 “date”
-</h3>
+<h3 id="ch5-4-3">5.4.3 “date”</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>For years, date and time pickers in HTML forms made Web developers
 rely heavily on JavaScript based widgets. The process is simpler in
@@ -18750,12 +18714,8 @@ in github)</p>
 </p>
 <p>On non-supported browsers, it defaults to an &lt;input
 type=“text”&gt; input field.</p>
-<h4>
-Typical use of &lt;input type=“date”&gt;
-</h4>
-<h4>
-Default use
-</h4>
+<h4>Typical use of &lt;input type=“date”&gt;</h4>
+<h4>Default use</h4>
 <p>The default usage is something like:</p>
 <pre><code>&lt;label for=&quot;birthday&quot;&gt;Choose birthday party date: &lt;/label&gt;
 &lt;input type=&quot;date&quot; id=&quot;birthday&quot;&gt;</code></pre>
@@ -18784,19 +18744,19 @@ online on JSBin</a> if you want to tweak the source code:</p>
 <!-----
 ![input type = date with min and max attributes. This will render two non selectable areas (dates before min and dates after max). Only the dates between min and max are selectable in the displayed calendar.](./images/image232.jpeg){width="4.0in" height="2.2641021434820647in"}
 ----->
-<h4>
-Source code:
-</h4>
-<pre><code>...
+<h4>Source code:</h4>
+
+<pre><code>
+...
 &lt;input type=&quot;date&quot;
    id=&quot;birthdayParty&quot;
    value=&quot;2015-06-20&quot;
    min=&quot;2015-06-20&quot;
    max=&quot;2015-06-30&quot;&gt;
-...</code></pre>
-<h4>
-Choosing one day in a given week, etc. with the step: attribute
-</h4>
+...
+</code></pre>
+
+<h4>Choosing one day in a given week, etc. with the step: attribute</h4>
 <p>Using the value attribute for setting a date, and using step=7 for
 example, will make acceptable only the day of the week that corresponds
 to the value’s day (e.g.: only Mondays). Using step=2 will make
@@ -18812,15 +18772,17 @@ JSBin</a>! (screenshot from Chrome).</p>
    width="40%"
    alt="Use of the step attribute, allow only Saturdays." />
 </p>
-<h4>
-Extract from source code:
-</h4>
-<pre><code>&lt;input type=&quot;date&quot;
+<h4>Extract from source code:</h4>
+
+<pre><code>
+&lt;input type=&quot;date&quot;
   id=&quot;birthdayParty&quot;
   value=&quot;2015-06-20&quot;
   min=&quot;2015-06-20&quot;
   max=&quot;2015-06-30&quot;
-  step=&quot;7&quot;&gt;</code></pre>
+  step=&quot;7&quot;&gt;
+</code></pre>
+
 <h4>
 Combining with the &lt;datalist&gt; element to restrict the choice of
 possible values
@@ -18835,10 +18797,10 @@ at JSBin</a> (screenshot from Chrome).</p>
    width="40%"
    alt="Restrict choices using a datalist element." />
 </p>
-<h4>
-Extract from source code:
-</h4>
-<pre><code>&lt;input type=&quot;date&quot;
+<h4>Extract from source code:</h4>
+
+<pre><code>
+&lt;input type=&quot;date&quot;
   id=&quot;birthdayParty&quot;
   list=&quot;birthdayPartyPossibleDates&quot;
   value=&quot;2015-06-20&quot;&gt;
@@ -18846,7 +18808,9 @@ Extract from source code:
   &lt;option label=&quot;Best for me&quot;&gt;2015-06-20&lt;/option&gt;
   &lt;option label=&quot;Ok for me too &quot;&gt;2015-06-27&lt;/option&gt;
   &lt;option label=&quot;This one is a sunday, hmmm&quot;&gt;2015-06-28&lt;/option&gt;
-&lt;/datalist&gt;</code></pre>
+&lt;/datalist&gt;
+</code></pre>
+
 <p><b>The list attribute of the input element must match
 the id attribute of the datalist element.</b></p>
 <p><b>If you use the min, max, or step attributes with a list attribute,
@@ -18858,21 +18822,17 @@ the min/max range.</p>
 <h4>
 Responding to date changes, trying date/time and other variants
 </h4>
-<h4>
-Listening to the input event
-</h4>
+<h4>Listening to the input event</h4>
 <p>Here is <a href="https://jsbin.com/ganipuv/edit?html,output" target="_blank" rel="noopener noreferrer">an
 interactive example at JSBin</a> where you can change the type of
 date/time chooser. It also shows how to listen to the input event when a
 date/time is chosen.</p>
-<h4>
-Source code:
-</h4>
+<h4>Source code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;&lt;head&gt;...&lt;/head&gt;
 3.  &lt;body&gt;
 4.  Testing the new date input field.&lt;p&gt;
@@ -18900,6 +18860,7 @@ Click to expand!
 26. &lt;/body&gt;
 27. &lt;/html&gt;</code></pre>
 </details>
+
 <p><i>Lines 20-26</i> show how we can detect a date change using
 JavaScript.</p>
 <h4>
@@ -18934,10 +18895,10 @@ past or in the future: </p>
 Extract from source code:
 </h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;body&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;body&gt;
 2.  &lt;label for=&quot;birthDate&quot;&gt;Enter your birth date: &lt;/label&gt;&lt;p&gt;
 3.  **&lt;input type=&quot;date&quot; id=&quot;birthDate&quot; &gt;**
 4.  &lt;p&gt;
@@ -18960,13 +18921,18 @@ Click to expand!
 21. }
 22. }
 23. &lt;/script&gt;
-24. &lt;/body&gt;</code></pre>
+24. &lt;/body&gt;
+</code></pre>
+
 </details>
+
 <p><i>Lines 17-23</i> show how we can compare the date picked in the
 calendar widget with the current date. Note that we can compare any
 given dates using JavaScript. To check that the chosen date is before
 2000 we would do this:</p>
-<pre><code>if(this.valueAsDate &lt;= new Date(2000,1,1)) {
+
+<pre><code>
+if(this.valueAsDate &lt;= new Date(2000,1,1)) {
 ...
 }
 &lt;input type=&quot;datetime&quot;&gt;, &quot;week&quot;, &quot;month&quot;, &quot;datetime-local&quot;, etc.</code></pre>
@@ -19053,9 +19019,7 @@ Some screenshots from Opera desktops and Safari IOS:
    alt="June, 2011 select input type=month safari." />
 </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-4-4">
-5.4.4 “e-mail”, “tel”, “URL”, and “search”
-</h3>
+<h3 id="ch5-4-4">5.4.4 “e-mail”, “tel”, “URL”, and “search”</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Let’s study 4 input types: email”, “tel”, “URL” and “search”.</p>
 <p>&lt;input type=“email”&gt;</p>
@@ -19080,8 +19044,7 @@ class :invalid</p>
 <p>See the next example to see this in action. More details will be
 presented in a later section dedicated to form validation.</p>
 <p>Typical use:
-<a href="https://codepen.io/w3devcampus/pen/aWXKWR" target="_blank" rel="noopener noreferrer">Online example at
-CodePen</a></p>
+<a href="https://codepen.io/w3devcampus/pen/aWXKWR" target="_blank" rel="noopener noreferrer">Online example at CodePen</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 246. enter your email (310) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19093,10 +19056,10 @@ CodePen</a></p>
 <p>Try it on your browser:                         Enter your
 email: </p>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -19111,8 +19074,11 @@ Click to expand!
 13. &lt;label for=&quot;email&quot;&gt;Enter your email &lt;/label&gt;
 14. &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
 15. &lt;/body&gt;
-16. &lt;/html&gt;</code></pre>
+16. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>Note the CSS rule that turns the background color of the email input
 field to pink if a user enters an invalid address (<i>lines 7-8</i>).
 Also note that the validation is based only on matching a regular
@@ -19149,20 +19115,18 @@ CodePen</a></p>
 <!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="./images/image249.png?raw=true"
-   width="30%"
-   alt="." />
+  width="30%"
+  alt="." />
 </p>
 <p>Try it in your browser (we used the same CSS for changing the
 background-color when the input value is invalid):</p>
 <p>Enter a telephone number: </p>
-<h4>
-Source code:
-</h4>
+<h4>Source code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -19179,8 +19143,11 @@ Click to expand!
 15. placeholder=&quot;(555) 555-5555&quot;
 16. pattern=&quot;^(?d{3})?[-s]d{3}[-s]d{4}.*?)&quot;/&gt;
 17. &lt;/body&gt;
-18. &lt;/html&gt;</code></pre>
+18. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>&lt;input type=“URL”&gt;</p>
 <p>This input field is really useful on smartphones and tablets, as it
 makes the browser pop up a keyboard layout suitable for entering
@@ -19202,14 +19169,12 @@ with ftp:// or https://</p>
 <p>Enter a URL (default validation): </p>
 <p>Enter a URL (custom validation, must start with http, https or
 ftp): </p>
-<h4>
-Source code:
-</h4>
+<h4>Source code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head &gt;
 4.  &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -19228,8 +19193,11 @@ Click to expand!
 17. &lt;input id=&quot;url2&quot; type=&quot;url&quot; placeholder=&quot;https://www.domain.com&quot;
 18. pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]*&quot;/&gt;&lt;p&gt;
 19. &lt;/body&gt;
-20. &lt;/html&gt;</code></pre>
+20. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p><i>Lines 16-17</i> show the use of a pattern attribute with a
 JavaScript regexp that accepts only URLs starting with http, https or
 ftp. More details on the pattern attribute are given in the section that
@@ -19239,9 +19207,9 @@ presents the new HTML5 form attributes.</p>
 engine). A search field behaves like a regular text field, except that
 it may provide some feedback GUI for stopping the current request and
 emptying the search field, or it may provide a drop-down list of recent
-search results.</p>
-The specification does not state what the GUI should look like, so
-current implementations show variations in the look and feel.
+search results.<br>
+<br>The specification does not state what the GUI should look like, so
+current implementations show variations in the look and feel.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 251.  (xxx) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19253,11 +19221,15 @@ current implementations show variations in the look and feel.
 <h4>
 Typical use:
 </h4>
-<pre><code>&lt;label for=&quot;search1&quot;&gt;Simple search: &lt;/label&gt;
+
+<pre><code>
+&lt;label for=&quot;search1&quot;&gt;Simple search: &lt;/label&gt;
   &lt;input type=search id=&quot;search1&quot;&gt;
   &lt;p&gt;
     &lt;label for=&quot;search2&quot;&gt;Search with attribute &lt;code&gt;results=5&lt;/code&gt; (try with Safari): &lt;/label&gt;
-    &lt;input type=search id=&quot;search2&quot; results=5&gt;</code></pre>
+    &lt;input type=search id=&quot;search2&quot; results=5&gt;
+</code></pre>
+
 <p>Results on Chrome and Opera desktop - notice the small cross on the
 right when one enters a value:</p>
 <!------------------------------------------------------------------------------------------------>
@@ -19290,14 +19262,12 @@ site about HTML5 forms that is worth reading</a>):</p>
   width="20%"
   alt="Example 2 of input type=search on safari, shows recent results." />
 </p>
-<h4>
-Source code for the knowledge check below
-</h4>
+<h4>Source code for the knowledge check below</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -19315,12 +19285,13 @@ Click to expand!
     &lt;label for=&quot;email&quot;&gt;Enter your email:&lt;/label&gt;
     &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
   &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-4-5">
-5.4.5 “number”
-</h3>
+<h3 id="ch5-4-5">5.4.5 “number”</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>This input field is useful for entering numerical values (integer or
 float), but not for entering zip codes. On desktop implementations and
@@ -19352,10 +19323,12 @@ the min and max attributes):</p>
    width="35%"
    alt="Input type=number example. Quantity between 1 and 5." />
 </p>
-<h4>
-Typical usage
-</h4>
-<pre><code>&lt;input type=&quot;number&quot; value=&quot;25&quot; min=&quot;0&quot; step=&quot;5&quot; max=&quot;500&quot;/&gt;</code></pre>
+<h4>Typical usage</h4>
+
+<pre><code>
+&lt;input type=&quot;number&quot; value=&quot;25&quot; min=&quot;0&quot; step=&quot;5&quot; max=&quot;500&quot;/&gt;
+</code></pre>
+
 <p>This field accepts specific attributes max, min, step, value (default
 displayed value). </p>
 <p>This input type is very interesting as it provides default validation
@@ -19395,14 +19368,12 @@ the range, or not a multiple of 5, try the up and down arrows,
 etc.):</p>
 <p>Quantity (between 0 and 500, should be a multiple of 5 otherwise it’s
 invalid): </p>
-<h4>
-Source code:
-</h4>
+<h4>Source code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  ....
 3.  &lt;style&gt;
 4.  #number:invalid {
@@ -19420,12 +19391,13 @@ Click to expand!
 16. &lt;p&gt;
 17. Change the different values for attributes step, max, min, value. Don&#39;t forget to try step=&quot;any&quot; for float values...
 18. &lt;/body&gt;
-19. &lt;/html&gt;</code></pre>
+19. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-4-6">
-5.4.6 “range”
-</h3>
+<h3 id="ch5-4-6">5.4.6 “range”</h3>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 258. using zipper as range setting (316) ---------------------------->
@@ -19437,9 +19409,7 @@ Click to expand!
 </p>
 <p>This input type renders as a slider. It accepts the same attributes
 as the &lt;input type=“number”&gt; : min, max, step and value.</p>
-<h4>
-Example of rendering on a desktop:
-</h4>
+<h4>Example of rendering on a desktop:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 259. play with attributes on desktop (316) --------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19467,9 +19437,7 @@ And on mobile devices:
    width="20%"
    alt="Right image, android range input." />
 </p>
-<h4>
-Typical use
-</h4>
+<h4>Typical use</h4>
 <p>
 The basic use is to specify at least the value, min and max attributes,
 and eventually the step attribute, too:
@@ -19494,14 +19462,13 @@ field has the focus):
    width="50%"
    alt="" />
 </p>
-<h4>
-Source code:
-</h4>
+<h4>Source code:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -19535,11 +19502,12 @@ Click to expand!
 32. &lt;br/&gt;
 33. Play with attributes: value, min, max, step...
 34. &lt;/body&gt;
-35. &lt;/html&gt;</code></pre>
+35. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Snapping behavior and the step attribute
-</h4>
+
+<h4>Snapping behavior and the step attribute</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 263. example six steps in process (317) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19583,10 +19551,10 @@ Using the &lt;datalist&gt; element, it’s possible to display “ticks”
 above the range slider, at given positions.
 </h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;label for=&quot;slider2&quot;&gt;value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:&lt;/label&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;label for=&quot;slider2&quot;&gt;value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:&lt;/label&gt;
 2.  &lt;input id=&quot;slider2&quot; type=&quot;range&quot;
 3.  list=&quot;ticks2&quot;
 4.  min=&quot;0&quot; max=&quot;10&quot; step=&quot;1&quot; value=&quot;5&quot;/&gt;
@@ -19597,18 +19565,21 @@ Click to expand!
 9.  &lt;option&gt;6&lt;/option&gt;
 10. &lt;option&gt;8&lt;/option&gt;
 11. &lt;option&gt;10&lt;/option&gt;
-12. &lt;/datalist&gt;</code></pre>
+12. &lt;/datalist&gt;
+</code></pre>
+
 </details>
-<h4>
-Try the sliders below:
-</h4>
-<pre><code>value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:  
+
+<h4>Try the sliders below:</h4>
+
+<pre><code>
+value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:  
 value=20 min=10, max=50 step=5, ticks at 0, 10, 20, 30, 40 and 50:  
 value=5 min=0, max=10 step=&quot;0.5&quot;, ticks at 0, 0.5, 1, 2, 4, 8:  
-value=5 min=0, max=10 step=&quot;any&quot;, ticks at 0, 5 and 10:  </code></pre>
-<h4>
-External resources
-</h4>
+value=5 min=0, max=10 step=&quot;any&quot;, ticks at 0, 5 and 10:  
+</code></pre>
+
+<h4>External resources</h4>
 <ul>
 <li>
 You can use CSS for “standard” styling (size, color, background color,
@@ -19728,9 +19699,7 @@ type=range&gt;</a>
 </li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-1">
-5.5.1 Form Attributes
-</h3>
+<h3 id="ch5-5-1">5.5.1 Form Attributes</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>
 In this chapter, we go over the form attributes that have been
@@ -19755,9 +19724,7 @@ further examples of using the previously discussed attributes. </p>
 feedback using CSS, we examine some of the most useful attributes in
 even greater detail.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-2">
-5.5.2 form
-</h3>
+<h3 id="ch5-5-2">5.5.2 form</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>This attribute is useful for putting input fields outside the form
 itself. The form attribute of an external input field must share the
@@ -19786,7 +19753,9 @@ Source code:
 <summary>
 Click to expand!
 </summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.    &lt;head&gt;
 4.      &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -19809,8 +19778,11 @@ Click to expand!
 21.       &lt;/fieldset&gt;
 22.     &lt;/form&gt;
 23.   &lt;/body&gt;
-24. &lt;/html&gt;</code></pre>
+24. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p><i>Lines 12</i> and <i>22</i> shows the form attribute. Make sure
 that its value matches the id of the form!</p>
 <!------------------------------------------------------------------------------------------------>
@@ -19843,9 +19815,7 @@ Web browsers, and will need to be adjusted in the
 preferences/settings. </p>
 <p>This attribute targets most input types (those that allow typing in
 them).</p>
-<h4>
-Typical use
-</h4>
+<h4>Typical use</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 268. example of use of autocomplete attribute (323) ---------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19863,14 +19833,12 @@ Typical use
   width="40%"
   alt="Example of use of autocomplete attribute, #2." />
 </p>
-<h4>
-Source code extract:
-</h4>
+<h4>Source code extract:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;form submit=&quot;test.php&quot; method=&quot;post&quot; **autocomplete=&quot;on&quot;**&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;form submit=&quot;test.php&quot; method=&quot;post&quot; **autocomplete=&quot;on&quot;**&gt;
 2.      ...
 3.      &lt;label for=&quot;address&quot;&gt;Enter your address (autocomplete off, **overrides the**
 4.             **form&#39;s autocomplete=on attribute**):&lt;/label&gt;
@@ -19882,12 +19850,13 @@ Click to expand!
 10.     &lt;p&gt;
 11.     &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
 12.     ...
-13. &lt;/form&gt;</code></pre>
+13. &lt;/form&gt;
+</code></pre>
+
 </details>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-4">
-5.5.4 autofocus
-</h3>
+<h3 id="ch5-5-4">5.5.4 autofocus</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>This attribute is useful for transferring the focus to a field other
 than the first field in a page/form (by default the first input field
@@ -19899,9 +19868,7 @@ the focus is put on the second input field of the page. It also shows
 the use of  required, placeholder and pattern attributes.</p>
 <p>The required attribute makes the input field invalid if kept
 empty. </p>
-<h4>
-Here is the result in your browser:
-</h4>
+<h4>Here is the result in your browser:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 269. example use of autofocus attribute (323) ------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19910,14 +19877,12 @@ Here is the result in your browser:
   width="65%"
   alt="Example use of autofocus attribute." />
 </p>
-<h4>
-Extract from source code:
-</h4>
+<h4>Extract from source code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;form&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;form&gt;
 2.      ...
 3.      &lt;input type=&quot;text&quot; id=&quot;test&quot;/&gt;&lt;p&gt;
 4.      ...
@@ -19928,11 +19893,12 @@ Click to expand!
 9.             autofocus
 10.            type=&quot;text&quot;/&gt;
 11.     ...
-12. &lt;/form&gt;</code></pre>
+12. &lt;/form&gt;
+</code></pre>
+
 </details>
-<h4>
-Note about Boolean attributes syntax
-</h4>
+
+<h4>Note about Boolean attributes syntax</h4>
 <p>Important: : For “Boolean” attributes, such
 as autofocus, required, optional, etc., you are able to either
 write autofocus=“autofocus”, or just use the attribute name “autofocus”
@@ -19948,7 +19914,9 @@ Source code for the knowledge check 5.5.4
 <summary>
 Click to expand!
 </summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
 4.  &lt;title&gt;Example for a knowledge check&lt;/title&gt;
@@ -19971,12 +19939,13 @@ Click to expand!
 21.    /&gt;
 22. &lt;/form&gt;
 23. &lt;/body&gt;
-24. &lt;/html&gt;</code></pre>
+24. &lt;/html&gt;
+</code></pre>
+
 </details>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-5&quot;">
-5.5.5 list
-</h3>
+<h3 id="ch5-5-5&quot;">5.5.5 list</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>This attribute works together with the
 new &lt;datalist&gt; element we already studied when we saw the color
@@ -20000,14 +19969,12 @@ will be accepted but will not trigger auto-completion.</p>
   width="65%"
   alt="Preferred browser prompt and submit query." />
 </p>
-<h4>
-Source code extract:
-</h4>
+<h4>Source code extract:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;form&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;form&gt;
 2.      ...
 3.      &lt;input **list=&quot;browsers&quot;** id=&quot;mybrowser&quot; /&gt;
 4.  
@@ -20019,15 +19986,16 @@ Click to expand!
 10.        &lt;option value=&quot;Safari&quot;&gt;
 11.     &lt;/datalist&gt;
 12. ...
-13. &lt;/form&gt;</code></pre>
+13. &lt;/form&gt;
+</code></pre>
+
 </details>
+
 <p>At <i>lines 3</i> and <i>5</i>, the value of the list attribute of
 the input field must match the one of the id of
 the &lt;datalist&gt; element.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-6">
-5.5.6 pattern
-</h3>
+<h3 id="ch5-5-6">5.5.6 pattern</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>The pattern attribute enables the validation of the user’s input on
 the fly (also at submission time), based on <b>regular expressions</b>.
@@ -22332,9 +22300,7 @@ really useful. You may easily embed them in your own projects, or
 perhaps adapt them for a particular need (i.e. for saving input
 type=“checkboxes” that work a bit differently), etc.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-2-6">
-6.2.6 Size limitations, etc.
-</h3>
+<h3 id="ch6-2-6">6.2.6 Size limitations, etc.</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Few things to remember, from the Web storage specification:</p>
 <ul>
@@ -22423,9 +22389,7 @@ there!</p>
 <p><img src="./images/image304.png?raw=true"
    width="65%"
    alt="JSON Save/Load in local storage." />   <br/></p>
-<h4>
-Source code:
-</h4>
+<h4>Source code:</h4>
 <details>
 <summary>Click to expand!</summary>
 
@@ -22561,9 +22525,7 @@ href="https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web
 files from web applications</a></p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-3-2">
-6.3.2 Working with local files
-</h3>
+<h3 id="ch6-3-2">6.3.2 Working with local files</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Hi! Welcome for this second video of module 6, in which we will talk
 about the file Javascript API.</p>
@@ -22721,14 +22683,12 @@ saw the last week, some canvas here, or image elements and so on.</p>
 <p><img src="./images/image311.png?raw=true"
    width="65%"
    alt="Image previews." />  </p>
-<h4>
-Source code:
-</h4>
+<h4>Source code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -22755,8 +22715,11 @@ Click to expand!
 }
  &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
+
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-3-3">6.3.3 Reading File Metadata</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -22833,6 +22796,7 @@ Select one or more files:
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+
 </details>
 
 <h4>Example #2: display metadata of multiple files, use a filter on the file type</h4>
@@ -22904,9 +22868,7 @@ tree. As such, the table appears on the page dynamically.
 <br>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-3-4">
-6.3.4 Blob and File
-</h3>
+<h3 id="ch6-3-4">6.3.4 Blob and File</h3>
 <!------------------------------------------------------------------------------------------------>
 The <a href="https://www.w3.org/TR/FileAPI/" target="_blank" rel="noopener noreferrer">HTML5 File API
 specification</a> introduces several interfaces:
@@ -24170,11 +24132,11 @@ external <a href="https://github.com/perliedman/leaflet-control-geocoder" targe
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 332. reverse geocoding - openstreetmap (398) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<img src="./images/image332.png?raw=true"
-   width="65%"
-   alt="Reverse Geocoding - OpenStreetMap." />
-</p>
+<img class="displayed"
+  src="./images/image332.png?raw=true"
+  alt="Reverse Geocoding - OpenStreetMap."
+  style="width:65%;" />
+
 <h4>HTML</h4>
 <details>
 <summary>Click to expand!</summary>
@@ -24477,7 +24439,7 @@ good understanding of the material.</p>
   </li>
 </ul>
 <p>. . .The end.<br>
-<br>last updated 12-27-22 8:12pm </p>
+<br>last updated 12-28-22 10:27pm </p>
 </body>
 </html>
 <!--
