@@ -20756,9 +20756,7 @@ type=“range”&gt; and &lt;input type=“number”&gt;, we also encountered
 the valueAsDate properties when we studied &lt;input
 type=“date”&gt;.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-6-3">
-5.6.3 &lt;meter&gt;
-</h3>
+<h3 id="ch5-6-3">5.6.3 &lt;meter&gt;</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>The &lt;meter&gt; element displays colored bars to represent numeric
 values.</p>
@@ -20776,10 +20774,13 @@ feedback indicator.</p>
    alt="Blood pressure meter gauge." />   <br/></p>
 <p>The &lt;meter&gt; element should not be used to indicate progress.
 You should instead use a &lt;progress&gt; element.</p>
-<h4>
-Typical use
-</h4>
-<pre><code>Storage space used: &lt;meter value=75 min=0 low=20 high=80 max=100 optimum=50&gt;&lt;/meter&gt;</code></pre>
+
+<h4>Typical use</h4>
+
+<pre><code>
+Storage space used: &lt;meter value=75 min=0 low=20 high=80 max=100 optimum=50&gt;&lt;/meter&gt;
+</code></pre>
+
 <p>The &lt;meter&gt; element uses the
 easy-to-understand value, min, max, low, high and optimum attributes.
 The optimum attribute, along with min, low, high and max attributes will
@@ -20787,18 +20788,22 @@ affect the color of the bar, and of course the
 constraint min &lt; low &lt; high &lt; max should be respected.</p>
 <p>More explanations about the colors and the meaning of
 the optimum attribute will come further in this lesson.</p>
-<h4>
-Interactive example
-</h4>
+
+<h4>Interactive example</h4>
+
 <p><a href="https://jsbin.com/jumahox/1/edit?html,output" target="_blank" rel="noopener noreferrer">Try the next
 example online at JSBin</a> or just play with it in your browser by
 dragging the slider below:</p>
-<pre><code>&lt;meter value=75 min=0 low=20 high=80 max=100 optimum=19&gt;&lt;/meter&gt;</code></pre>
-<p>Grades:  </p>
-<h4>
-Source code of the example:
-</h4>
-<pre><code>1.  &lt;p&gt;Grades: **&lt;meter id=&quot;meter2&quot; value=&quot;75&quot; min=&quot;0&quot; low=&quot;20&quot; high=&quot;80&quot; max=&quot;100&quot;&gt;&lt;/meter&gt;**
+
+<pre><code>
+&lt;meter value=75 min=0 low=20 high=80 max=100 optimum=19&gt;&lt;/meter&gt;
+</code></pre>
+
+<p>Grades:</p>
+<h4>Source code of the example:</h4>
+
+<pre><code>
+1.  &lt;p&gt;Grades: **&lt;meter id=&quot;meter2&quot; value=&quot;75&quot; min=&quot;0&quot; low=&quot;20&quot; high=&quot;80&quot; max=&quot;100&quot;&gt;&lt;/meter&gt;**
 2.  
 3.  &lt;input min=&quot;0&quot; max=&quot;100&quot; value=&quot;75&quot; id=&quot;meter2range&quot;
 4.         oninput=&quot;effect(&#39;meter2&#39;, &#39;meter2range&#39;)&quot; type=&quot;range&quot;&gt;
@@ -20809,20 +20814,23 @@ Source code of the example:
 9.       document.getElementById(meter).value = currVal;
 10.      document.getElementById(meter+ &quot;val&quot;).innerHTML = currVal;
 11. }
-12. &lt;/script&gt;</code></pre>
-<h4>
-Explanations:
-</h4>
+12. &lt;/script&gt;
+</code></pre>
+
+<h4>Explanations:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 281. slider example javascript code (339) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image281.jpeg?raw=true"
-   width="65%"
-   alt="The link between the slider (an &lt;input type=range&gt;) and the meter element is done using an input event handler." />
-  <br> <!--
+<img class="displayed"
+  src="./images/image281.jpeg?raw=true"
+  alt="The link between the slider (an &lt;input type=range&gt;) and the meter element is done using an input event handler."
+  style="width:65%;" />
+
+<!--
 ![The link between the slider (an &lt;input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the &lt;meter&gt; element (line 9) and update the displayed html content of the &lt;output&gt; element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
----></p>
+--->
+
+</p>
 <p>The link between the slider (an &lt;input type=range&gt;) and the
 meter element is done using an input event handler (oninput=“effect(…)”)
 at <i>line 4</i>.</p>
@@ -20852,9 +20860,8 @@ good candidate for setting the optimum value to “Range 2”, and
 a &lt;meter&gt; element used for displaying memory usage might be a good
 candidate for setting the optimum value to “Range 1”, meaning that a low
 memory usage is “good”.</p>
-<h4>
-External resources
-</h4>
+
+<h4>External resources</h4>
 <ul>
 <li><p>From MDN’s Web  Docs: <a
 href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter" target="_blank" rel="noopener noreferrer">The
@@ -20864,21 +20871,24 @@ href="https://www.hongkiat.com/blog/style-html5-meter/" target="_blank" rel="noo
 style the meter element</a></p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-6-4">
-5.6.4 <progress>
-</h3>
+<h3 id="ch5-6-4">5.6.4 &lt;progress&gt;</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>The <progress> element is similar to &lt;meter&gt; but it is used for
+<p>The &lt;progress&gt; element is similar to &lt;meter&gt; but it is used for
 progress bars (i.e., the percentage of a file being uploaded, etc.):</p>
-<pre><code>&lt;progress id=pr value=50 min=0 max=100&gt;</code></pre>
+
+<pre><code>
+&lt;progress id=pr value=50 min=0 max=100&gt;
+</code></pre>
+
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 282.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image282.jpeg?raw=true"
-   alt="Picture of a funny progress meme saying Every mistake you make is progress."
-   width="10%">   <br/></p>
-<p>Gives:  </p>
+<img class="displayed"
+  src="./images/image282.jpeg?raw=true"
+  alt="Picture of the funny progress meme saying Every mistake you make is progress."
+  style="width:10%;" />
+
+<p>Gives:</p>
 <p>The browser calculates the percentage corresponding to
 the value, min and max attributes and adjusts the length of the progress
 bar accordingly.</p>
@@ -20892,27 +20902,32 @@ implementations. </p>
 <p><img src="./images/image283.jpeg?raw=true"
    alt="Indetermined progress bar screenshot."
    width="50%">   <br/></p>
-<h4>
-Typical use
-</h4>
+<h4>Typical use</h4>
+
 <p><a href="https://jsbin.com/hebiju/edit?html,output" target="_blank" rel="noopener noreferrer">Here is an online
 example at JSBin</a>, or try it below in your browser:  </p>
 <p>This example uses some JavaScript to simulate a download progress by
 changing in real time the value attribute.</p>
 <p>The progress below is defined like this:</p>
-<pre><code>&lt;progress id=pr value=100 max=1000&gt;</code></pre>
+
+<pre><code>
+&lt;progress id=pr value=100 max=1000&gt;
+</code></pre>
+
 <p>Download progress: </p>
-<h4>
-Source code:
-</h4>
-<pre><code>1.  Download progress: &lt;progress id=pr value=100 min=0 max=1000&gt;&lt;/progress&gt;
+<h4>Source code:</h4>
+
+<pre><code>
+1.  Download progress: &lt;progress id=pr value=100 min=0 max=1000&gt;&lt;/progress&gt;
 2.  &lt;script&gt;
 3.     var i=0;
 4.     setInterval(function () {
 5.         i = (i+1) %1000;
 6.         document.getElementById(pr).value = i;
 7.     },1);
-8.  &lt;/script&gt;</code></pre>
+8.  &lt;/script&gt;
+</code></pre>
+
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-6-5">
 5.6.5 &lt;datalist&gt;
@@ -20981,18 +20996,17 @@ favorite browser):</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 288.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image288.png?raw=true"
-   width="65%"
-   alt="." />   <br/></p>
-<h4>
-Source code of this example:
-</h4>
+<img class="displayed"
+  src="./images/image288.png?raw=true"
+  alt="."
+  style="width:55%;" />
+  
+<h4>Source code of this example:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;form action=&quot;demo_form.asp&quot; method=&quot;get&quot;&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;form action=&quot;demo_form.asp&quot; method=&quot;get&quot;&gt;
 2.       &lt;input list=&quot;browsers&quot; name=&quot;browser&quot; /&gt;
 3.  
 4.       &lt;datalist id=&quot;browsers&quot;&gt;
@@ -21005,6 +21019,7 @@ Click to expand!
 11.      &lt;input type=&quot;submit&quot; /&gt;
 12. &lt;/form&gt;</code></pre>
 </details>
+
 <p>As you can see at <i>lines 2 and 4</i>, the id and list attributes
 match. The &lt;datalist&gt; element is wrapped around a
 set of &lt;option&gt; that are available for selection by another form
@@ -21080,7 +21095,9 @@ Source code extract:
 <summary>
 Click to expand!
 </summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.    &lt;head&gt;
 4.      &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -21113,7 +21130,9 @@ Click to expand!
 31.  
 32.   &lt;/body&gt;
 33. &lt;/html&gt;
-34.  </code></pre>
+34.  
+</code></pre>
+
 </details>
 <p>Try the online example with different Web browsers, both with and
 without the CSS rules. See the differences between FireFox/Chrome/Opera
@@ -21130,14 +21149,13 @@ that changes depending on the validity of the input field:</p>
 <p>Type invalid values and see the resultE-mail:  Homepage (URL):  Phone
 number:  Submit form</p>
 <p>Bottom of Form</p>
-<h4>
-Source code extract:
-</h4>
+<h4>Source code extract:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  .myForm input:focus {
+
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  .myForm input:focus {
 2.     padding-right:70px;
 3.  }
 4.  .myForm input {
@@ -21149,7 +21167,9 @@ Click to expand!
 10. }
 11. .myForm input:required {
 12.    background:url(https://i.imgur.com/7pIN7wz.png) no-repeat right top;
-13. }</code></pre>
+13. }
+</code></pre>
+
 </details>
 <p>This time, we just added an attribute class=“myForm” to our form, in
 order to avoid interfering with the other examples on this page, and we
@@ -21173,17 +21193,15 @@ values and look at the custom messages):</p>
 <p>Top of Form</p>
 <p>Type invalid values and see the result, this time with custom
 messages! E-mail:  Homepage (URL):  Phone number:  Submit form</p>
-<h4>
-Bottom of Form
-</h4>
-<h4>
-Extract from source code:
-</h4>
+<h4>Bottom of Form</h4>
+
+<h4>Extract from source code:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;form class=&quot;myForm&quot;&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;form class=&quot;myForm&quot;&gt;
 2.    &lt;fieldset&gt;
 3.      &lt;legend&gt;Type invalid values and see the result&lt;/legend&gt;
 4.      &lt;label for=&quot;myEmail&quot; class=&quot;formLabel&quot;&gt;E-mail:&lt;/label&gt;
@@ -21193,8 +21211,11 @@ Click to expand!
 8.  ...
 9.      &lt;button&gt;Submit form&lt;/button&gt;&lt;br /&gt;
 10.   &lt;/fieldset&gt;
-11. &lt;/form&gt;</code></pre>
+11. &lt;/form&gt;
+</code></pre>
+
 </details>
+
 <p><i>Beware</i> that browser implementations may differ. Chrome, Opera
 will display the title attribute value in error message bubbles when the
 form is submitted, while Safari and FireFox (desktop and mobile) will
@@ -21215,37 +21236,31 @@ language, and the message from the title attribute “as is”.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 291. firefox title attribute (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image291.jpeg?raw=true"
-   width="65%"
-   alt="Same example on firefox, the title attribute is ignored." />  
-<br/></p>
-<h4>
-The built-in validation system is an improvement on what existed before
+<img class="displayed"
+  src="./images/image291.jpeg?raw=true"
+  alt="Sample example on Firefox, the title attribute is ignored."
+  style="width:65%;" />
+  
+<h4>The built-in validation system is an improvement on what existed before
 HTML5 (i.e., nothing), but additional work is required if you want fully
-localized, hand-made validation feedback.
-</h4>
-<h4>
-We will show solutions in the last section of this week’s course.
-</h4>
+localized, hand-made validation feedback.</h4>
+<h4>We will show solutions in the last section of this week’s course.</h4>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-7-3&quot;">
-5.7.3 JavaScript Form Validation API
-</h3>
+<h3 id="ch5-7-3&quot;">5.7.3 JavaScript Form Validation API</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>There is a JavaScript API for form validation. This API will let you
 use your own validation algorithm (i.e. check that you have entered the
 same password in two different input fields), and customize error
 messages. Also, together with some HTML/CSS/JavaScript you will be able
 to make your own message bubbles.</p>
-<h4>
-Typical use
-</h4>
+
+<h4>Typical use</h4>
 <p>Be careful when you try this example in JS Bin standalone mode (click
 the small black arrow on the top right of the output tab).</p>
 <p>Or, you may try it
 <a href="https://jsbin.com/nalaxeg/1/edit?html,output" target="_blank" rel="noopener noreferrer">here</a> in your
 browser.</p>
+
 <!---
 Top of Form
 
@@ -21257,14 +21272,13 @@ Submit
 
 Bottom of Form
 --->
-<h4>
-Extract from source code:
-</h4>
+<h4>Extract from source code:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.    &lt;head&gt;
 4.      &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -21301,11 +21315,11 @@ Click to expand!
 35.     }
 36.   &lt;/script&gt;
 37.   &lt;/body&gt;
-38. &lt;/html&gt;</code></pre>
+38. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+<h4>Explanations:</h4>
 <p>The validity API proposes a setCustomValidity() method available on
 input DOM objects. This method allows you to customize error messages.
 It takes a string parameter. When this string is empty, the element is
@@ -21319,17 +21333,19 @@ each time a key is typed, the checkPasswords() function is called.</p>
 validity of the field using the validation API’s
 method setCustomValidity(error_message).</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-7-4">
-5.7.4 The validity property of input fields
-</h3>
+<h3 id="ch5-7-4">5.7.4 The validity property of input fields</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>The validity property of input fields helps to get error details when
 the field is <i>invalid</i>. This property tests the different types of
 validation error.</p>
 <p>Here is how to get the validity property of an input field:</p>
-<pre><code>1.  var input = document.getElementById(&#39;IdOfField&#39;);
+
+<pre><code>
+1.  var input = document.getElementById(&#39;IdOfField&#39;);
 2.  
-3.  var validityState_object = &lt;b&gt;input.validity;&lt;/b&gt;</code></pre>
+3.  var validityState_object = &lt;b&gt;input.validity;&lt;/b&gt;
+</code></pre>
+
 The possible values for the validity property are: 
 <ul>
 <li>
@@ -21376,19 +21392,23 @@ values, too big, too small, enter invalid characters, etc.):</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 292. enter value between 10 and 20 (348) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image292.png?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:65%;" />
 <p align="center">
 <p><img src="./images/image292.png?raw=true"
    width="65%"
    alt="JSBin example which shows how to test the different types of validation errors." />
   <br/></p>
-<h4>
-Source code:
-</h4>
+<h4>Source code:</h4>
 <details>
 <summary>
 Click to expand!
 </summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  ...
 4.  &lt;body&gt;
@@ -21426,16 +21446,20 @@ Click to expand!
 36. &lt;/form&gt;
 37. 
 38. &lt;/body&gt;
-39. &lt;/html&gt;</code></pre>
+39. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-The validationMessage property
-</h4>
+<h4>The validationMessage property</h4>
 <p>It is also possible to get the validation error message, using
 the validationMessage property of input fields.</p>
-<pre><code>1.  var input = document.getElementById(b);
+
+<pre><code>
+1.  var input = document.getElementById(b);
 2.   
-3.  console.log(&quot;Validation message = &quot; + input.validationMessage);</code></pre>
+3.  console.log(&quot;Validation message = &quot; + input.validationMessage);
+</code></pre>
+
 <p>This is useful for making custom error messages. More about this
 topic in the next section of the course.</p>
 <!------------------------------------------------------------------------------------------------>
@@ -21489,9 +21513,8 @@ values and submit with one or two invalid fields.</p>
 <p><img src="./images/image294.png?raw=true"
    width="65%"
    alt="Prompt for name and e-mail address fields." />   <br/></p>
-<h4>
-Complete source code:
-</h4>
+<h4>Complete source code:</h4>
+
 <pre><code>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
@@ -21596,10 +21619,10 @@ Complete source code:
 102.    }
 103. &lt;/script&gt;
 104. &lt;/body&gt;
-105. &lt;/html&gt;</code></pre>
-<h4>
-Explanations:
-</h4>
+105. &lt;/html&gt;
+</code></pre>
+
+<h4>Explanations:</h4>
 <ul>
 <li><i>Line 32</i>: we added an empty unnumbered list
 (&lt;ul&gt;…&lt;/ul&gt;) to the form, with the
@@ -21702,10 +21725,10 @@ server.
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 295. 'you are here' sign (353) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image295.jpeg?raw=true"
-   width="35%"
-   alt="'You are here' sign." />   <br/></p>
+<img class="displayed"
+  src="./images/image295.jpeg?raw=true"
+  alt="You are here sign."
+  style="width:35%;" />
 <ul>
 <li>
 <b>The Geolocation API for obtaining data such as longitude, latitude,
@@ -21717,11 +21740,8 @@ corresponds with the current location.
 </li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-2-1">
-6.2.1 The Web storage API
-</h3>
+<h3 id="ch6-2-1">6.2.1 The Web storage API</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>
 <p>The Web storage API introduces “two related mechanisms, similar to
 HTTP session cookies, for storing structured data on the client
 side”.</p>
@@ -21732,33 +21752,28 @@ storage of key-value pair data in Web clients.</p>
 <p><b>With localStorage the data will remain until it is deleted,
 whereas with sessionStorage the data is erased when the tab/browser is
 closed.</b></p>
-For convenience, we will mainly illustrate the localStorage object. Just
+<p>For convenience, we will mainly illustrate the localStorage object. Just
 change “local” to “session” and it should work (this time with a session
-lifetime).
-</p>
+lifetime).</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 296. key value pairs (354) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image296.png?raw=true"
-   width="17%"
-   alt="Key value pairs." />   <br/></p>
-<h4>
-Simple key-value stores, one per domain (following the same origin
-policy)!
-</h4>
+<img class="displayed"
+  src="./images/image296.png?raw=true"
+  alt="Key value pairs."
+  style="width:17%;" />
+<h4>Simple key-value stores, one per domain (following the same origin
+policy)!</h4>
 <p>localStorage is a simple key-value store, in which the keys and
 values are strings. There is only one store per domain. This
 functionality is exposed through the globally
 available localStorage object. The same applies to sessionStorage.</p>
-<h4>
-Example:
-</h4>
+<h4>Example:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  // Using localStorage
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  // Using localStorage
 2.  
 3.  // store data
 4.  localStorage.lastName = &quot;Bunny&quot;;
@@ -21768,52 +21783,48 @@ Click to expand!
 8.  // retrieve data
 9.  var lastName = localStorage.lastName;
 10. var firstName = localStorage.firstName;
-11. var location = localStorage.location;</code></pre>
+11. var location = localStorage.location;
+</code></pre>
+
 </details>
-<p>
+
 <p>This data is located in a store attached to the origin of the page.
 We created <a href="https://jsbin.com/povuqa/1/edit" target="_blank" rel="noopener noreferrer">a JSBin example in
 which we included the above code</a>.</p>
-Once opened in your browser, the JavaScript code is executed. With the
+<p>Once opened in your browser, the JavaScript code is executed. With the
 browser dev. tools, we can check what has been stored in
-the localStorage for this domain:
-</p>
+the localStorage for this domain:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 297. example of localStorage (355) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image297.jpeg?raw=true"
-   width="65%"
-   alt="Examples of read and write localStorage." />   <br/></p>
-<p>
-Here is a view of the devtools. In more recent versions of Google
-Chrome, the “Resources” tab is named “Applications”:
-</p>
+<img class="displayed"
+  src="./images/image297.jpeg?raw=true"
+  alt="Example of read/write localStorage."
+  style="width:65%;" />
+
+<p>Here is a view of the devtools. In more recent versions of Google
+Chrome, the “Resources” tab is named “Applications”:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 298. view of the devtools (355) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image298.jpeg?raw=true"
-   width="65%"
-   alt="View of the devtools. Used to show what is in localStorage." />
-  <br/></p>
-<h4>
-Differences with cookies?
-</h4>
-<p>
+<img class="displayed"
+  src="./images/image298.jpeg?raw=true"
+  alt="View of the devtools. Used to show what is in local Storage."
+  style="width:65%;" />
+
+<h4>Differences with cookies?</h4>
+
 <p>Cookies are also a popular way to store key-value pairs. Web Storage,
 however, is a more powerful technique than cookies. The main difference
 is in size limits: cookies are limited to a few KBytes whereas Web
 Storage may extend to several MBytes. Also cookies generate additional
 HTTP request traffic (whether to request a Web page, an image, a
 stylesheet, a JavaScript file, etc.).</p>
-Objects managed by Web Storage are no longer carried on the network and
+<p>Objects managed by Web Storage are no longer carried on the network and
 HTTP, and are easily accessible (read, change and delete) from
-JavaScript, using the Web Storage API.
-</p>
-<h4>
-External resources
-</h4>
+JavaScript, using the Web Storage API.</p>
+
+<h4>External resources</h4>
 <ul>
 <li>
 From W3C’s
@@ -21832,9 +21843,7 @@ Storage API</a>
 </li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-2-2">
-6.2.2 Example 1
-</h3>
+<h3 id="ch6-2-2">6.2.2 Example 1</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>You can start filling this form and come back another day and
 complete it. It doesn’t matter if you closed your browser before coming
@@ -21851,9 +21860,7 @@ example, var fn = localStorage.firstName; will set fn with the value
 ‘Michel’ if this value has been previously saved as in the example from
 the line above.</p></li>
 </ul>
-<h4>
-Saving the form content on the fly
-</h4>
+<h4>Saving the form content on the fly</h4>
 <p>Open this <a
 href="https://jsbin.com/pulurir/edit?html,js,output" target="_blank" rel="noopener noreferrer">online example at
 JSBin</a>, and use F12 or cmd-alt-i (Mac OS) to look at the dev. tools.
@@ -21862,16 +21869,22 @@ the localStorage.</p>
 <p>We just added input event listeners to each input field. For example,
 in order to save the first name input field’s content, we just
 added:</p>
-<pre><code>oninput=&quot;localStorage.firstName=this.value;&quot;</code></pre>
+
+<pre><code>
+oninput=&quot;localStorage.firstName=this.value;&quot;
+</code></pre>
+
 <p>Where firstName in red is the key and this.value the current value of
 the input field.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 299. example localstorage and html code (355) ------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image299.jpeg?raw=true"
-   width="65%"
-   alt="Example of localStorage and its html code." />   <!--
+<img class="displayed"
+  src="./images/image229.jpeg?raw=true"
+  alt="Example of Localstorage and its HTML code."
+  style="width:65%;" />
+
+<!--
 ![As we are filing a form text input type, its content is saved in local storage. The image shows the httml code of the input type, that as a oninput='localStorage.firstName = this.value". Devtools are open on the "Applications" tab and show the LocalStorage content. It has the same value as what has been typed in the form firstName field.](./images/image299.jpeg){width="6.5in" height="3.7506944444444446in"}
 --></p>
 <p>In the same way, we added an input listener to all the input fields
@@ -21887,14 +21900,12 @@ values.</p>
 <p><a href="https://jsbin.com/yivocuz/edit?html,js,output" target="_blank" rel="noopener noreferrer">Complete
 example on JSBin</a>: enter data and press reload at any time. The form
 content is restored!</p>
-<h4>
-Source code extract (only addition to the previous example):
-</h4>
+<h4>Source code extract (only addition to the previous example):</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  // Called when the page is loaded
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  // Called when the page is loaded
 2.  window.onload = restoreFormContent;
 3.   
 4.  function restoreFormContent() {
@@ -21914,7 +21925,9 @@ Click to expand!
 18. 
 19.    if(localStorage.date !== undefined)
 20.      document.getElementById(&quot;date&quot;).value = localStorage.date;
-21. }</code></pre>
+21. }
+</code></pre>
+
 </details>
 <p>The tests at <i>lines 7, 10, 13</i>, etc., verify that data has been
 saved, before trying to restore it. Without these tests, it would put
@@ -21940,9 +21953,13 @@ value) methods
 <p>If you want to keep a simple counter of the number of times a given
 user has loaded your application, you can use the following code (just
 to show how to use setItem/removeItem methods):</p>
-<pre><code>1.  var counter = localStorage.getItem(&quot;count&quot;) || 0;
+
+<pre><code>
+1.  var counter = localStorage.getItem(&quot;count&quot;) || 0;
 2.  counter++;
-3.  localStorage.setItem(&quot;count&quot;, counter);</code></pre>
+3.  localStorage.setItem(&quot;count&quot;, counter);
+</code></pre>
+
 <p>As you can easily guess from the above, we use var value =
 getItem(key) to retrieve a key’s value and setItem(key, value) to set
 it. This is similar to what we saw in the examples of the page above,
@@ -21955,15 +21972,17 @@ localStorage.Instructor’s name; will not work!</p></li>
 <li><p>In a loop or in an iterator, sometimes we need to
 set/get localStorage values using this syntax, for example: </p></li>
 </ul>
-<pre><code>1.  var inputField = document.getElementById(&quot;firstName&quot;);
+
+<pre><code>
+1.  var inputField = document.getElementById(&quot;firstName&quot;);
 2.  saveInputFieldValue(inputField);
 3.  ... 
 4.  function saveInputFieldValue(field) {
 5.      localStorage.setItem(field.id, field.value);
-6.  }</code></pre>
-<h4>
-Deleting a key with removeItem(key), or all keys with clear()
-</h4>
+6.  }
+</code></pre>
+
+<h4>Deleting a key with removeItem(key), or all keys with clear()</h4>
 <p>Deleting a key can be performed through removeItem(). And if you wish
 to reset the entire store, simply call localStorage.clear().</p>
 <p>Note that it will probably only be the rare occasion that you will
@@ -21987,10 +22006,14 @@ through in order to list all the content that they contain. The order is
 not guaranteed, but this may be useful at times (if only for debugging
 purposes!). The following code lists everything in the current
 store:</p>
-<pre><code>1.  for (var i = 0, n = localStorage.length; i &lt; n; i++) {
+
+<pre><code>
+1.  for (var i = 0, n = localStorage.length; i &lt; n; i++) {
 2.      var k = localStorage.**key(i)**;
 3.      console.log(k + &quot;: &quot; +** localStorage[k]**); // get the ith value, the one with a key that is in the variable k.
-4.  }</code></pre>
+4.  }
+</code></pre>
+
 <p>Students may note that something seems a bit off in the example
 above: instead of calling localStorage.getItem(k), we simply
 access localStorage[k]. Why? Because keys in the local store can also be
@@ -22022,13 +22045,11 @@ origin.</p>
 the third to remove data. Finally, the last one clears the whole data
 store.</p>
 <details>
-<summary>
-Click to expand!
-</summary>
-<h4>
-Source code:
-</h4>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+<h4>Source code:</h4>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=utf-8 /&gt;
@@ -22093,7 +22114,9 @@ Source code:
 63.    &lt;button onclick=&quot;removeSomeData()&quot;&gt;Remove some data&lt;/button&gt;&lt;br/&gt;
 64.    &lt;button onclick=&quot;resetStore()&quot;&gt;reset store (erase all key/value pairs)&lt;/button&gt;
 65. &lt;/body&gt;
-66. &lt;/html&gt;</code></pre>
+66. &lt;/html&gt;
+</code></pre>
+
 </details>
 <p>You can check in the Chrome dev. tools user interface that the
 content of the localStorage changes as you click on the buttons.</p>
@@ -22372,11 +22395,13 @@ encoding and decoding data that is a really good match for JavaScript.
 You have to be careful not to use circular data structures or
 non-serializable objects, but in the vast majority of cases, plugging
 JSON support into your local store is straightforward.</p>
-<h4>
-Typical usage
-</h4>
-<pre><code>locaStorage.key = JSON.stringify(object); // or...
-localStorage.setItem(key, JSON.stringify(object));</code></pre>
+<h4>Typical usage</h4>
+
+<pre><code>
+locaStorage.key = JSON.stringify(object); // or...
+localStorage.setItem(key, JSON.stringify(object));
+</code></pre>
+
 <p>Let’s try a simple toy example
 (<a href="https://jsbin.com/ciricis/2/edit?html,console,output" target="_blank" rel="noopener noreferrer">online
 at JSBin</a>).  The example below saves a JavaScript object in JSON,
@@ -22385,10 +22410,11 @@ there!</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 304. json save/load in local storage (367) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image304.png?raw=true"
-   width="65%"
-   alt="JSON Save/Load in local storage." />   <br/></p>
+<img class="displayed"
+  src="./images/image304.png?raw=true"
+  alt="JSON save/load in local storage."
+  style="width:65%;" />
+
 <h4>Source code:</h4>
 <details>
 <summary>Click to expand!</summary>
@@ -22413,6 +22439,7 @@ there!</p>
 17. &lt;/body&gt;
 18. &lt;/html&gt;
 </code></pre>
+
 </details>
 
 <h4>Explanations:</h4>
@@ -22679,10 +22706,11 @@ saw the last week, some canvas here, or image elements and so on.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 311. image previews (374) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image311.png?raw=true"
-   width="65%"
-   alt="Image previews." />  </p>
+<img class="displayed"
+  src="./images/image311.png?raw=true"
+  alt="Image preview."
+  style="width:65%;" />
+
 <h4>Source code:</h4>
 <details>
 <summary>Click to expand!</summary>
@@ -22834,6 +22862,7 @@ type=“file” accept=“image/*“ multiple onchange=”filesProcess(this.f
 15.   }
 16. &lt;/script&gt;
 </code></pre>
+
 </details>
 
 <h4>Explanations:</h4>
@@ -22969,6 +22998,7 @@ the readAsText method:</p>
 
 <details>
 <summary>Click to expand!</summary>
+
 <pre><code>
 function readFileContent(f) {
    // Executed last: called only when the file content is loaded, e.target.result is
@@ -23025,10 +23055,10 @@ JSBin</a>, or try it below in your browser:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 314. read single files content (379) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image314.png?raw=true"
-   width="45%"
-   alt="Read a single file's content." />   <br/></p>
+<img class="displayed"
+  src="./images/image314.png?raw=true"
+  alt="Read a single file's content."
+  style="width:45%;" />
 
 <h4>Complete source code:</h4>
 
@@ -23085,18 +23115,17 @@ multiple text files (using shift for multiple selection):</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 315. choose multiple text files (380) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image315.png?raw=true"
-   width="40%"
-   alt="Choose multiple text files." />   <br/></p>
-<h4>
-Source code:
-</h4>
+<img class="displayed"
+  src="./images/image315.png?raw=true"
+  alt="Choose multiple text files."
+  style="width:40%;" />
+
+<h4>Source code:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -23137,11 +23166,12 @@ Click to expand!
 39. }
 40. &lt;/script&gt;
 41. &lt;/body&gt;
-42. &lt;/html&gt;</code></pre>
+42. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Explanations
-</h4>
+
+<h4>Explanations</h4>
 <p>This example is similar to the previous one, except that this time we
 read multiple files.</p>
 <p><i>Line 20:</i> this is the for loop that will iterate on
@@ -23152,20 +23182,20 @@ a reader.onload =… directly in the loop, this time we preferred to write
 a separate function that will do this. This technique is useful when you
 want the listener to work with extra variables computed in the loop (in
 our case, the name of the file).</p>
-<h4>
-About charter encoding
-</h4>
+
+<h4>About charter encoding</h4>
 <p>Note that you can optionally indicate the encoding of the file you
 are going to read (default is UTF-8):</p>
-<pre><code>reader.readAsText(file, &#39;UTF-8&#39;);
+
+<pre><code>
+reader.readAsText(file, &#39;UTF-8&#39;);
 reader.readAsText(file, &#39;ISO-8859-1&#39;);
-...</code></pre>
+...
+</code></pre>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-3-7">
-6.3.7 Read file content as binary
-</h3>
+<h3 id="ch6-3-7">6.3.7 Read file content as binary</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>
 <p>This method is rarely used, except for loading “raw” binary data. For
 images you would like to see in your HTML page using the &lt;img src=
 tag&gt; or for drawing in a canvas, or for audio and video files that
@@ -23173,20 +23203,17 @@ you would like to play using
 the &lt;audio&gt; or &lt;video&gt; elements, it would be preferable
 to use the readAsDataURL method presented on the next page of the
 course.</p>
-readAsArrayBuffer is often used for purposes such as reading audio
+<p>readAsArrayBuffer is often used for purposes such as reading audio
 samples that should be loaded in memory and played using the WebAudio
 API, or for loading textures that you will use with WebGL for 3D
 animations.
 </p>
-<h4>
-Example: read a local audio file and play it with the WebAudio API
-</h4>
-<p>
+<h4>Example: read a local audio file and play it with the WebAudio API</h4>
 <p>The WebAudio API is useful for reading audio sound samples from
 memory (no streaming), and has been designed for music application and
 games. This example shows how a local audio file can be read and played
 directly in the browser, without the need for a server!</p>
-<a href="https://jsbin.com/xepexuy/1/edit?html,output" target="_blank" rel="noopener noreferrer">Example on
+<p><a href="https://jsbin.com/xepexuy/1/edit?html,output" target="_blank" rel="noopener noreferrer">Example on
 JSBin</a> (does not work on IE, as it does not support the WebAudio
 API). We could not embed it here on the edX platform as it prevents code
 that uses Ajax to run in its pages.
@@ -23194,18 +23221,18 @@ that uses Ajax to run in its pages.
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 316. webaudio api - does not work with microsoft shit (382) ------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image316.png?raw=true"
-   width="55%"
-   alt="Local audio player." />   <br/></p>
-<h4>
-Source code extract:
-</h4>
+<img class="displayed"
+  src="./images/image316.png?raw=true"
+  alt="Local audio player."
+  style="width:55%;" />
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1. // User selects file. Read it as an ArrayBuffer and pass to the API.
+<summary>Click to expand!</summary>
+
+<pre><code>
+1. // User selects file. Read it as an ArrayBuffer and pass to the API.
 2. var fileInput = document.querySelector(&#39;input[type=&quot;file&quot;]&#39;);
 3. fileInput.addEventListener(&#39;change&#39;, function(e) {
 4.    var reader = new FileReader();
@@ -23214,11 +23241,12 @@ Click to expand!
 7.    };
 8.    // THIS IS THE INTERESTING PART!
 9.    reader.readAsArrayBuffer(this.files[0]);
-10. }, false);</code></pre>
+10. }, false);
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
 <ul>
 <li>
 <i>Line 2:</i> we get a pointer to the file selector, the
@@ -23246,13 +23274,9 @@ play it.
 </li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-3-8">
-6.3.8 Read file content as dataURL
-</h3>
+<h3 id="ch6-3-8">6.3.8 Read file content as dataURL</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-What is a data URL?
-</h4>
+<h4>What is a data URL?</h4>
 <p>
 <p>A data URL is a URL that includes type and content at the same time.
 It is useful, for example,  for in-lining images or videos in the HTML
@@ -23281,20 +23305,24 @@ with https://</p>
 In your browser, you will see a small red circle rendered by this source
 code:
 </p>
-<pre><code>&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
+
+<pre><code>
+&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
 AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 
-9TXL0Y4OHwAAAABJRU5ErkJggg==&quot; alt=&quot;Red square&quot; width=50 height=50/&gt;</code></pre>
-<h4>
-And here is the result:
-</h4>
+9TXL0Y4OHwAAAABJRU5ErkJggg==&quot; alt=&quot;Red square&quot; width=50 height=50/&gt;
+</code></pre>
+
+<h4>And here is the result:</h4>
+
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------------- 318. red splotch (383) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image318.png?raw=true"
-   width="15%"
-   alt="Red splotch." />   <br/></p>
+<img class="displayed"
+  src="./images/image318.png?raw=true"
+  alt="Red splotch."
+  style="width:15%;" />
+
 <p>This dataURL format enables file content to be stored in a base64
 format (as a string), and adds the MIME type specification of the
 content. The dataURL can therefore store a file as a URL readable with
@@ -23324,16 +23352,13 @@ just a dataURL and CSS:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-- 320. screenshot of jsbin examle shows the html5 logo insterted before a div using css (385) ->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image317.jpeg?raw=true"
-   width="65%"
-   alt="Data url in address bar shows a red circle." />   <br/></p>
-<h4>
-Examples
-</h4>
-<h4>
-Example #1: read images as data URL and display previews in the page
-</h4>
+<img class="displayed"
+  src="./images/image317.jpeg?raw=true"
+  alt="Data URL in address bar shows a red circle."
+  style="width:65%;" />
+
+<h4>Examples</h4>
+<h4>Example #1: read images as data URL and display previews in the page</h4>
 <p>This first example is useful for forms that allow the user to select
 one or more pictures. Before sending the form, you might want to get a
 preview of the pictures in the HTML page.
@@ -23343,21 +23368,18 @@ JSBin</a> or try it below in your browser:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 332. preview of selected images (385) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image332.png?raw=true"
-   width="45%"
-   alt="Preview of selected images." />   <br/></p>
-<h4>
-Preview of selected images:
-</h4>
-<h4>
-Source code extract:
-</h4>
+<img class="displayed"
+  src="./images/image332.png?raw=true"
+  alt="Preview of selected images."
+  style="width:45%;" />
+
+<h4>Preview of selected images:</h4>
+<h4>Source code extract:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1. &lt;label for=&quot;files&quot;&gt;Choose multiple files:&lt;/label&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1. &lt;label for=&quot;files&quot;&gt;Choose multiple files:&lt;/label&gt;
 2. &lt;input type=&quot;file&quot; id=&quot;files&quot; multiple
 3.         onchange=&quot;readFilesAndDisplayPreview(this.files);&quot;/&gt;&lt;br/&gt;
 4. &lt;p&gt;Preview of selected images:&lt;/p&gt;
@@ -23388,11 +23410,11 @@ Click to expand!
 29.    // Read in the image file as a data URL.
 30.    reader.readAsDataURL(f);
 31.   }
-32.  }</code></pre>
+32.  }
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+<h4>Explanations:</h4>
 <ul>
 <li>
 <i>Line 30:</i> starts the reading of the file f. When f is read,
@@ -23427,14 +23449,13 @@ JSBin</a></p>
 <i>Errata</i>: the above screenshot says “choose multiple files”, but
 the example only works with a single file.
 </p>
-<h4>
-Source code extract:
-</h4>
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>function drawImage(imageFile) {
+<summary>Click to expand!</summary>
+
+<pre><code>
+function drawImage(imageFile) {
    var reader = new FileReader();
  
    //capture the file information.
@@ -23461,20 +23482,18 @@ Click to expand!
 }
 function readFileAndDraw(files) {
     drawImage(files[0]);
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+<h4>Explanations:</h4>
 <p>Remember how we worked with images on a canvas. We had to create an
 empty image object (<i>line 8</i>), set the src attribute of the image
 object (<i>line 23</i>), then use an image.onload callback (<i>line
 15</i>), and we could only draw from inside the callback (<i>line
 17</i>). This time, it’s exactly the same, except that the URL comes
 from e.target.result in the reader.onload callback (<i>line 23</i>).</p>
-<h4>
-Example #3 (advanced): an instagram-like photo filter application
-</h4>
+<h4>Example #3 (advanced): an instagram-like photo filter application</h4>
 <p>Another very impressive example, has been developed by <span
 class="citation" data-cites="GeorgianaB">@GeorgianaB</span>, a student
 of the first iteration of this course (see her <a
@@ -23485,19 +23504,18 @@ of you who would like to go further. Just click on the link (or on the
 image below) and look at the source code.</p>
 <p><a href="https://gianablantin.github.io/CanvasFilters/" target="_blank" rel="noopener noreferrer">Try this
 example online on gitHub</a>.</p>
-<h4>
-Introduction
-</h4>
+<h4>Introduction</h4>
+
 <p>This chapter presents the new Geolocation API and illustrates its use
 with several examples.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 323. w3c geolocation logo (388) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image323.png?raw=true"
-   width="25%"
-   alt="W3C Geolocation logo/icon." />   <br/></p>
-<p>
+<img class="displayed"
+  src="./images/image323.png?raw=true"
+  alt="W3C Geolocation logo/icon."
+  style="width:25%;" />
+
 <p>The Geolocation HTML5 JavaScript API is implemented by most modern
 Web browsers, and uses different means to get the current location: GPS,
 GSM/3G triangulation, Wifi, IP address, etc.</p>
@@ -23518,7 +23536,9 @@ Typical use
 <summary>
 Click to expand!
 </summary>
-<pre><code>navigator.geolocation.getCurrentPosition(showPosition, onError);
+
+<pre><code>
+navigator.geolocation.getCurrentPosition(showPosition, onError);
  
 function showPosition(position) {
     console.log(&quot;latitude is: &quot; + position.coords.latitude);
@@ -23527,26 +23547,26 @@ function showPosition(position) {
  
 function onError(err) {
     console.log(&quot;Could not get the position&quot;);
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<p>
 <p><a href="https://jsbin.com/toyeley/1/edit?html,output" target="_blank" rel="noopener noreferrer">This online
 example at JSBin</a> shows how to get the current longitude and latitude
 and display them in an HTML page. Try it below in your browser:</p>
 <p>Click the button to get your coordinates:</p>
 <p>Where am I ?</p>
-Note that the first time you execute this example, for privacy reasons,
+<p>Note that the first time you execute this example, for privacy reasons,
 the browser will ask if you agree to share your position with the
-application.
-</p>
-<h4>
-Source code of this typical example:
-</h4>
+application.</p>
+
+<h4>Source code of this typical example:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -23570,19 +23590,19 @@ Click to expand!
 22. }
 23. &lt;/script&gt;
 24. &lt;/body&gt;
-25. &lt;/html&gt;</code></pre>
+25. &lt;/html&gt;
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 324. function getLocation in geolocation (389) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<img src="./images/image324.jpeg?raw=true"
-   width="55%"
-   alt="Geolocation Callback Illustration." />
-</p>
-<h4>
-Explanations:
-</h4>
+<img class="displayed"
+  src="./images/image324.jpeg?raw=true"
+  alt="Geolocation callback illustration."
+  style="width:55%;" />
+
+<h4>Explanations:</h4>
 <ul>
 <li>
 <i>Line 13</i> checks if the Web browser supports the geolocation API by
@@ -23666,19 +23686,17 @@ means”:
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 326. geolocation error (390) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<img src="./images/image326.jpeg?raw=true"
-   width="85%"
-   alt="Geolocation error." />
-</p>
-<h4>
-Source code of the example:
-</h4>
+<img class="displayed"
+  src="./images/image326.jpeg?raw=true"
+  alt="Geolocation error."
+  style="width:85%;" />
+
+<h4>Source code of the example:</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -23720,7 +23738,9 @@ Click to expand!
     }
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-4-4">
@@ -23739,27 +23759,28 @@ be called regularly.</p></li>
 <li><p>It returns an id so that you can use the clearWatch(id) method to
 stop the current tracking.</p></li>
 </ul>
-<h3>
-Typical use
-</h3>
-<pre><code>// get an id of the current tracking, the showPosition callback is like the one we saw in earlier examples.
+
+<h3>Typical use</h3>
+
+<pre><code>
+// get an id of the current tracking, the showPosition callback is like the one we saw in earlier examples.
 var watchPosId = navigator.geolocation.watchPosition(showPosition);
 ...
 // stop the tracking
-navigator.geolocation.clearWatch(watchPosId);</code></pre>
-<p>
+navigator.geolocation.clearWatch(watchPosId);
+</code></pre>
+
 <p>As a test, you may just try to
 change getCurrentPosition to watchPosition in the previous examples, and
 try this code using a mobile phone or tablet, walk for 20 meters and see
 the position changing.</p>
-<h4>
-Options available when using the geolocation API, in particular real
-time tracking
-</h4>
+<h4>Options available when using the geolocation API, in particular real
+time tracking</h4>
+<p>
 Several options are available when using HTML5 geolocation. We can pass
 a third parameter to the getCurrentPosition and watchPosition methods,
-that will hold one or several of the following options:
-</p>
+that will hold one or several of the following options:</p>
+
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 327. more properties of the coords object (392) ------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -23778,7 +23799,9 @@ Source code:
 <summary>
 Click to expand!
 </summary>
-<pre><code>// Just ask to turn GPS on, if available
+
+<pre><code>
+// Just ask to turn GPS on, if available
 navigator.geolocation.getCurrentPosition(onSuccess, onError,
                                      {enableHighAccuracy:true});
 // maximumAge = 10 mins, the position can be cached for 10 mins,
@@ -23794,11 +23817,12 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError,
                                    {maximumAge:0, timeout:100});
 // Ask for GPS, cache for 30s, 27s before going on error...
 watchId=navigator.geolocation.watchPosition(onSuccess, onError,
-    {enableHighAccuracy:true, maximumAge:30000, timeout:27000});</code></pre>
+    {enableHighAccuracy:true, maximumAge:30000, timeout:27000});
+</code></pre>
+
 </details>
-<p>
-Look for the explanations in the lines of comment.
-</p>
+
+<p>Look for the explanations in the lines of comment.</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-4-5">
 6.4.5 Geolocation and maps
@@ -23868,6 +23892,7 @@ function error() {
 alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
 }
 </code></pre>
+
 </details>
 
 <h4>CSS</h4>
@@ -23926,6 +23951,7 @@ display: inline-block;
 <summary>
 Click to expand!
 </summary>
+
 <pre><code>
 1.  &lt;html&gt;
 2.  &lt;head&gt;
@@ -24030,7 +24056,9 @@ key, used at <i>line 6</i>.
 <summary>
 Click to expand!
 </summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -24111,8 +24139,11 @@ function showPosition(position) {
 &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
 &lt;div id=&quot;map_canvas&quot; style=&quot;width: 500px; height: 300px&quot;&gt;&lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>Gisgraphy (free service) reverse geocoding example (screenshot only,
 click on it to see <a
 href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" rel="noopener noreferrer">the demo
@@ -24327,6 +24358,7 @@ this page):
 
 <details>
 <summary>Click to expand!</summary>
+
 <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
