@@ -1,4 +1,4 @@
- <h2 align="center">W3Cx Front-End Web Developer</h2>
+<h2 align="center">W3Cx Front-End Web Developer</h2>
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
@@ -136,7 +136,7 @@ The <b>W3C FEWD</b> program is composed of 5 courses:
 
 <p>The HTML5 course team is thrilled to guide you in your learning experience. We are committed to teach you how to code Web pages, and how to do it the correct way. We encourage you to create Web pages and apps and share them in the discussion forums. Have fun!</p>
 
-<h4 id="cha-4">Online Code Editors:</h4>
+<h3 id="cha-4">Online Code Editors:</h3>
 
 <a href="https://jsbin.com" target="_blank">JS Bin</a>
 
@@ -156,7 +156,7 @@ Here are a few possibilities for Web editors:
   <li><a href="https://notepad-plus-plus.org/" target="_blank">Notepad</a> - on Windows PC&apos;s.</li>
   <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> - a free open source editor that can run on any operating system. Many developers are already familiar with Visual Studio Code. Many coding videos in this course are demonstrated using Visual Studio Code.</li>
   <li><a href="https://developer.apple.com/xcode/" target="_blank">XCode</a> - Mac developers may be familiar with XCode.</li>
-  <li><a href="https://discussions.apple.com/message/5014514#5014514" target="_blank">TextEdit - this is available on Macs</a>, but be sure you&apos;re [saving as plain text, not as a ".rtf" or ".doc" file.</li>
+  <li><a href="https://discussions.apple.com/message/5014514#5014514" target="_blank">TextEdit - this is available on Macs</a>, but be sure you&apos;re <a href="">saving as plain text, not as a ".rtf" or ".doc" file.</a></li>
   <li><a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a> - it is quite popular with developers, though there can be a bit of a learning curve to use its many features.</li>
   <li><a href="http://bluegriffon.org/" target="_blank">BlueGriffon</a> - a WYSIWYG ("What You See Is What You Get") content editor for the World Wide Web. Powered by Gecko, the rendering engine of Firefox, it's a modern and robust solution to edit Web pages in conformance to the latest Web Standards.</li>
   <li><a href="https://atom.io/" target="_blank">Atom</a> - another cross platform editor, created by <a href="https://github.com/">GitHub</a>.</li>
@@ -466,19 +466,16 @@ Web pages are connected using <a href="https://www.lifewire.com/hypertext-trans
 <p>
 Plain and simple, the internet allows access to the World Wide Web. Without it, we have no way of accessing the thousands of websites out there. For most online needs, however, the web is the easiest to use. Each serves an important purpose.</p>
 
-<h4 id="cha-2">a-2 Why Accessibility is Important</h4>
+<h3 id="cha-2">Why Accessibility is Important</h3>
 
 <i>The power of the Web is in its universality.</i>
 <i>Access by everyone regardless of disability is an essential aspect.</i>
 
 <h4>Tim Berners-Lee, W3C Director and inventor of the World Wide Web</h4>
-<p>
-The Web has become an essential aspect of our daily lives, and everyone should have access to this technology. Web accessibility focuses on ensuring equivalent access for people with disabilities. It is increasingly important to many organizations and governments from around the world, and has many business benefits. Access to information, including on the Web, is also recognized by the UN Convention on the Rights of Persons with Disabilities (CRPD).
-</p>
+<p>The Web has become an essential aspect of our daily lives, and everyone should have access to this technology. Web accessibility focuses on ensuring equivalent access for people with disabilities. It is increasingly important to many organizations and governments from around the world, and has many business benefits. Access to information, including on the Web, is also recognized by the UN Convention on the Rights of Persons with Disabilities (CRPD).</p>
+
 <h4>Who is impacted?</h4>
-<p>
-Web accessibility addresses all disabilities, including hearing, learning and cognitive, neurological, physical, speech, and visual disabilities. Some examples of Web accessibility features include:
-</p>
+<p>Web accessibility addresses all disabilities, including hearing, learning and cognitive, neurological, physical, speech, and visual disabilities. Some examples of Web accessibility features include:</p>
 <ul>
   <li><i>Captions</i> on audio and multimedia content for people who are hard of hearing;</li>
   <li><i>Clear and consistent layout</i> for people with learning and cognitive disabilities;</li>
@@ -497,15 +494,13 @@ Web accessibility addresses all disabilities, including hearing, learning and co
   <li>People who are new to computers, to the Web, or to your own Web site;</li>
   <li>People who are not fluent in the language of your particular Web site;</li>
 </ul>
-<p>
-The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. When Web pages, Web technologies, Web tools, or Web applications are badly designed, they can create barriers that exclude people from using the Web. More information is available in the <a href="https://www.w3.org/standards/webdesign/accessibility" target="_blank" rel="noopener noreferrer">W3C Accessibility</a> overview.</p>
+<p>The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. When Web pages, Web technologies, Web tools, or Web applications are badly designed, they can create barriers that exclude people from using the Web. More information is available in the <a href="https://www.w3.org/standards/webdesign/accessibility" target="_blank" rel="noopener noreferrer">W3C Accessibility</a> overview.</p>
 
 <h4>First Steps in Web Accessibility</h4>
-<p>
-There are many simple Web accessibility improvements that you can implement and check right away, even when you are new to this topic.
-
-Remember that when developing or redesigning a website or Web application, it is best to evaluate accessibility early and throughout the development process to identify accessibility problems early, when it is easier to address them.
-
+<p>There are many simple Web accessibility improvements that you can implement and check right away, even when you are new to this topic.<br>
+<br>
+Remember that when developing or redesigning a website or Web application, it is best to evaluate accessibility early and throughout the development process to identify accessibility problems early, when it is easier to address them.<br>
+<br>
 Two examples are provided below but you can find more tips and information in these 2 resources:</p>
 
 <ul>
@@ -514,8 +509,7 @@ Two examples are provided below but you can find more tips and information in t
 </ul>
 
 <h4>Example #1: page title</h4>
-<p>
-Good page titles are particularly important for orientation --- to help people know where they are and move between pages open in their browser. The first thing screen readers say when the user goes to a different Web page is the page title. In the Web page markup, they are the words &lt;title&gt; within the &lt;head&gt;.</p>
+<p>Good page titles are particularly important for orientation --- to help people know where they are and move between pages open in their browser. The first thing screen readers say when the user goes to a different Web page is the page title. In the Web page markup, they are the words &lt;title&gt; within the &lt;head&gt;.</p>
 
 <h5><i>Check #1</i>: There is a title that adequately and briefly describes the content of a page, and it distinguishes the page from other Web pages.</h5>
 
@@ -4627,8 +4621,8 @@ video {
 <p>
 2.  Full screen video with CSS effects
 
-This time the video is zoomed in so that it's much bigger than the browser's window. When we resize the browser, the part of the video that is visible adapts itself. It's not "real resize" of the video. Try this [example and read the explanation in this article by Dudley Storey](https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video).
-</p>
+This time the video is zoomed in so that it's much bigger than the browser's window. When we resize the browser, the part of the video that is visible adapts itself. It's not "real resize" of the video. Try this <a href="https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">example and read the explanation in this article by Dudley Storey</a>.</p>
+
 <h4>HTML code:</h4>
 
 <details>
@@ -6070,7 +6064,7 @@ We can also simplify the code by using a writing with async/await of JavaScript:
 
 <b>HTTPS is mandatory:</b> for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.
 
-Support of getUserMedia/stream is [very good in all modern browsers](https://caniuse.com/stream), including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.
+Support of getUserMedia/stream is <a href="https://caniuse.com/stream">very good in all modern browsers</a>, including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-4-1">2.4.1 More On getUserMedia</h3>
@@ -7142,7 +7136,7 @@ Without such tools, debugging JavaScript code is impossible. So you need to look
 
 <h4>About the asynchronous nature of JavaScript</h4>
 
-Some of you may not be used to "asynchronous programming", "callbacks" etc. We recommend to read [this article on WikiPedia](https://en.wikipedia.org/wiki/Callback_%28computer_programming%29) and [this thread on StackOverflow](https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java).
+Some of you may not be used to "asynchronous programming", "callbacks" etc. We recommend to read <a href="https://en.wikipedia.org/wiki/Callback_%28computer_programming%29">this article on WikiPedia</a> and <a href="https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java">this thread on StackOverflow</a>.
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-2-2">3.2.2 The &lt;canvas&gt; Element</h3>
@@ -7180,7 +7174,7 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 
 <h4>Example #1</h4>
 
-[Foot Chinko](https://www.ravalmatic.com/portfolio/footchinko/) is one popular free HTML5 games:
+<a href="https://www.ravalmatic.com/portfolio/footchinko/">Foot Chinko</a> is one popular free HTML5 games:
 
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 122. foot chinko one of the best html5 2D game of 2015 (145) ------------------>
@@ -7193,7 +7187,7 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 
 <h4>Example #2</h4>
 
-Lots of data visualization tools and JavaScript libraries use the HTML5 canvas element for [Data visualization](http://www.creativebloq.com/design-tools/data-visualization-712402):
+Lots of data visualization tools and JavaScript libraries use the HTML5 canvas element for <a href="http://www.creativebloq.com/design-tools/data-visualization-712402">Data visualization</a>:
 
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 123. html5 data visualization (146) ------------------->
@@ -7206,7 +7200,7 @@ Lots of data visualization tools and JavaScript libraries use the HTML5 canvas e
 
 <h4>Example #3</h4>
 
-A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), that runs at 60 frames per second in an HTML5 canvas element:
+A version of the <a href="https://intersoft.itch.io/galaxian">arcade game Galaxian</a>, that runs at 60 frames per second in an HTML5 canvas element:
 
 <!------------------------------------------------------------------------------------------------>
 <!------- 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (146) -------->
@@ -7219,7 +7213,7 @@ A version of the [arcade game Galaxian](https://intersoft.itch.io/galaxian), th
 
 Performance is  good and animation is generally very smooth, since most Web browsers (mobile and desktop) support hardware acceleration.
 
-<b>Note</b>: 3D drawing using the WebGL API is also possible in a &lt;canvas&gt;, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a &lt;canvas&gt;: [BabylonJS](https://www.babylonjs.com/) and [ThreeJS](https://threejs.org/).
+<b>Note</b>: 3D drawing using the WebGL API is also possible in a &lt;canvas&gt;, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a &lt;canvas&gt;: <a href="https://www.babylonjs.com/">BabylonJS</a> and <a href="https://threejs.org/">ThreeJS</a>.
 
 <h4>External resources</h4>
 
@@ -11679,9 +11673,9 @@ Try this:
 
 </details>
 
-In this example we use the closePath() method to draw a line between the last path point and the first path point (<i>line 11</i>), so that the drawing looks like a pair of goggles.
+<p>In this example we use the closePath() method to draw a line between the last path point and the first path point (<i>line 11</i>), so that the drawing looks like a pair of goggles.<br>
 
-Note how the different parts are linked together and make a "path":
+Note how the different parts are linked together and make a "path":</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 165. bezier curve maker tool (222) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -11693,8 +11687,8 @@ Note how the different parts are linked together and make a "path":
 <br/>
 
 <h4>Interesting, interactive tool for generating code that draws Bézier curves</h4>
-
-This Bézier tool ("HTML5 &lt;canvas&gt; bezierCurveTo command generator") is available <a href="https://www.victoriakirst.com/beziertool/">online</a>: try it!
+<p>
+This Bézier tool ("HTML5 &lt;canvas&gt; bezierCurveTo command generator") is available <a href="https://www.victoriakirst.com/beziertool/">online</a>: try it!</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-5-1">3.5.1 Canvas Context: Colors</h3>
@@ -16672,7 +16666,7 @@ The HTML5 specification indicates that we can use &lt;input type="date"&gt; an
 <h3 id="ch5-4-4">5.4.4 "e-mail", "tel", "URL", and "search"</h3>
 <!------------------------------------------------------------------------------------------------>
 
-Let's study 4 input types: email", "tel", "URL" and "search".
+Let's study 4 input types: "email", "tel", "URL" and "search".
 
 &lt;input type="email"&gt;
 
