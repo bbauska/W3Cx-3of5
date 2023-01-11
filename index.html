@@ -976,6 +976,7 @@ class="sourceCode css"><code class="sourceCode css"><span id="cb7-1"><a href="#c
 </details>
 
 <h4>And here is the CSS:</h4>
+
 <details>
 <summary>Click to expand!</summary>
 
@@ -997,7 +998,8 @@ section header {
 }
 section h2 {
    font-size: 2.3em;
-}</code></pre>
+}
+</code></pre>
 
 </details>
 
@@ -6305,15 +6307,12 @@ the source code shown below):
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 86. example snapshot (104) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-&lt;img src=“./images/image086.png?raw=true” width=“65%” alt=““Example
-using a track element in the .vtt format.” /&gt;   <br>
-<p>
-The example uses a &lt;track&gt; element to insert basic captions to the
-video: sounds and music are described, in addition to
-standard subtitles that correspond to what the different movie
-characters say.
-</p>
+<img class="displayed"
+  src="./images/image086.png?raw=true"
+  alt="Example using a track element in the .vtt format."
+  style="width:65%;" />
+  
+<p>The example uses a &lt;track&gt; element to insert basic captions to the video: sounds and music are described, in addition to standard subtitles that correspond to what the different movie characters say.</p>
 
 <pre><code>
 &lt;video height=&quot;272&quot; width=&quot;640&quot;
@@ -6386,44 +6385,16 @@ the specification</a>) that includes multiple &lt;track&gt; elements
 
 <p>Note the use of some new attributes in the &lt;track&gt; element:</p>
 <ul>
-<li>
-label: the label value will be displayed in the GUI control that is
-included in the default HTML5 video player,
-</li>
-<li>
-srclang:  gives the language for the text track data. The value must be
-a valid <a href="https://tools.ietf.org/html/bcp47" target="_blank" rel="noopener noreferrer">BCP 47 language
-tag</a>. This attribute must be present
-if <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind" target="_blank" rel="noopener noreferrer">the
-element’s kind attribute</a> is in
-the <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles" target="_blank" rel="noopener noreferrer">subtitles state</a>.
-</li>
+  <li>label: the label value will be displayed in the GUI control that is included in the default HTML5 video player.</li>
+  <li>srclang:  gives the language for the text track data. The value must be a valid <a href="https://tools.ietf.org/html/bcp47" target="_blank" rel="noopener noreferrer">BCP 47 language tag</a>. This attribute must be present if <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind" target="_blank" rel="noopener noreferrer">the element’s kind attribute</a> is in the <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles" target="_blank" rel="noopener noreferrer" subtitles state</a>.</li>
 </ul>
-<h4>
-External resources
-</h4>
+
+<h4>External resources</h4>
 <ul>
-<li>
-From the HTML
-specification: <a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element" target="_blank" rel="noopener noreferrer">The
-track element</a>
-</li>
-<li>
-From the W3C
-specification: <a href="https://www.w3.org/TR/webvtt1/" target="_blank" rel="noopener noreferrer">WebVTT: The Web
-Video Text Tracks Format</a>
-</li>
-<li>
-From MDN’s Web
-Docs: <a href="https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/" target="_blank" rel="noopener noreferrer">WebVTT</a>
-and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video" target="_blank" rel="noopener noreferrer">Adding
-captions and subtitles to HTML5 video</a>
-</li>
-<li>
-An article from
-3playmedia: <a href="https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/" target="_blank" rel="noopener noreferrer">How
-to create a WebVTT file</a>
-</li>
+  <li>From the HTML specification: <a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element" target="_blank" rel="noopener noreferrer">The track element</a></li>
+  <li>From the W3C specification: <a href="https://www.w3.org/TR/webvtt1/" target="_blank" rel="noopener noreferrer">WebVTT: The Web Video Text Tracks Format</a></li>
+  <li>From MDN’s Web Docs: <a href="https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/" target="_blank" rel="noopener noreferrer">WebVTT</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video" target="_blank" rel="noopener noreferrer">Adding captions and subtitles to HTML5 video</a></li>
+  <li>An article from 3playmedia: <a href="https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/" target="_blank" rel="noopener noreferrer">How to create a WebVTT file</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-3-2">2.3.2 The WebVTT Format</h3>
@@ -6600,12 +6571,12 @@ format.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 87. picture guitar picking (108) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image087.png?raw=true"
-   width="45%"
-   alt="Picture guitar picking." />  </p>
-<p>And if you’ve also got it in mp4/H264 and in webm formats, here is
-how you can embed it in your page using the video element:</p>
+<img class="displayed"
+  src="./images/image087.png?raw=true"
+  alt="Picture guitar picking."
+  style="width:45%;" />
+
+<p>And if you’ve also got it in mp4/H264 and in webm formats, here is how you can embed it in your page using the video element:</p>
 
 <pre><code>
 &lt;video id=&quot;myVideo&quot; width=500 controls&gt;
@@ -6621,54 +6592,42 @@ how you can embed it in your page using the video element:</p>
 &lt;/video&gt;
 </code></pre>
 
-<p>At <i>line 9</i>, we added a &lt;track&gt; element to add English
-subtitles, as the guitar teacher there is speaking in French. We will
-now explain how we created this subtitle track.</p>
+<p>At <i>line 9</i>, we added a &lt;track&gt; element to add English subtitles, as the guitar teacher there is speaking in French. We will now explain how we created this subtitle track.</p>
+
 <h4>Adding subtitles to the video</h4>
 
-<p>Now, we need to create a WebVTT file for this video. How can we
-synchronize an English translation of what the guitar teacher says in
-French?</p>
-<p>Many tools - both free and commercial - are available to add
-subtitles to a video. Most are native applications you need to install
-on your computer. However, a free and very practical tool is available
-for doing this 100% in a Web
-browser: <a href="https://amara.org/en/" target="_blank" rel="noopener noreferrer">amara</a>.</p>
-Go to the above Web site, click on the “subtitle a video” link, then
-follow the different tutorials/instructions. It will ask for a YouTube
-URL, so it’s better to first upload your video to YouTube (even in
-private mode). Once you have entered the URL of your video, you will
-have an online subtitles/caption editor. Enter your subtitles and sync
-them until you are happy with the results.
-</p>
+<p>Now, we need to create a WebVTT file for this video. How can we synchronize an English translation of what the guitar teacher says in French?</p>
+<p>Many tools - both free and commercial - are available to add subtitles to a video. Most are native applications you need to install on your computer. However, a free and very practical tool is available for doing this 100% in a Web browser: <a href="https://amara.org/en/" target="_blank" rel="noopener noreferrer">amara</a>.</p>
+<p>Go to the above Web site, click on the “subtitle a video” link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it’s better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync
+them until you are happy with the results.</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 88. example subtitles and captions (109) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image088.png?raw=true"
-   width="40%"
-   alt="Example subtitles and captions." />   <br/></p>
-<p>Once your subtitles/captions are ok, you will be able to upload them to
-YouTube, or -this is what we wanted first- download them as WebVTT
-format:</p>
+<img class="displayed"
+  src="./images/image088.png?raw=true"
+  alt="Example subtitles and captions."
+  style="width:40%;" />
+
+<p>Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 89. youtube make subtitles (110) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image089.png?raw=true"
-   width="60%"
-   alt="Youtube make subtitles." />   <br/></p>
-<p>Note that YouTube can also help you “make subtitles” with its speech
-recognition tool, but you will only be able to export in .srt format
-afterwards. You will have to convert this format afterwards to .vtt.</p>
+<img class="displayed"
+  src="./images/image089.png?raw=true"
+  alt="Youtube make subtitles."
+  style="width:60%;" />
+
+<p>Note that YouTube can also help you “make subtitles” with its speech recognition tool, but you will only be able to export in .srt format afterwards. You will have to convert this format afterwards to .vtt.</p>
+
 <h4>Try your subtitled/captioned video</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 90. example guitar picking subtitle captions (110) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image090.png?raw=true"
-   width="40%"
-   alt="Example guitar picking subtitle captions." />   <br/></p>
+<img class="displayed"
+  src="./images/image090.png?raw=true"
+  alt="Example guitar picking subtitle captions."
+  style="width:40%;" />
+  
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-3-4">2.3.4 Styling Captions</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -6681,16 +6640,14 @@ HTML):</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------------- 91. blank codepen (111) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image091.png?raw=true"
-   width="60%"
-   alt="Blank codepen." />   <br/></p>
+<img class="displayed"
+  src="./images/image091.png?raw=true"
+  alt="Blank codepen."
+  style="width:60%;" />
    
-<p>The WebVTT file is shown below. Notice the new attributes that have
-been added on the right end of the duration values:</p>
+<p>The WebVTT file is shown below. Notice the new attributes that have been added on the right end of the duration values:</p>
 
 <details>
-
 <summary>Click to expand!</summary>
 
 <pre><code>
@@ -6754,19 +6711,13 @@ been added on the right end of the duration values:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 92. example video: positioning subtitles (112) ------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image092.png?raw=true"
-   width="65%"
-   alt="Example video: positioning subtitles." />   <br/></p>
+<img class="displayed"
+  src="./images/image092.png?raw=true"
+  alt="Example video: positioning subtitles."
+  style="width:65%;" />
 
-<p>The video example tests nearly all the possibilities for positioning
-subtitles/captions, styling (using HTML element wrapping with &lt;b&gt;,
-&lt;i&gt;,  etc.), voicing (subtitles corresponding to different
-characters will be displayed in different colors) and CSS styling.</p>
-<p>It is possible to locate the cues in the video viewport using absolute
-or relative values. The attributes that position the text are located on
-the same line as the cue definition, like at <i>line 9</i> of the
-previous WebVTT example file:</p>
+<p>The video example tests nearly all the possibilities for positioning subtitles/captions, styling (using HTML element wrapping with &lt;b&gt;, &lt;i&gt;,  etc.), voicing (subtitles corresponding to different characters will be displayed in different colors) and CSS styling.</p>
+<p>It is possible to locate the cues in the video viewport using absolute or relative values. The attributes that position the text are located on the same line as the cue definition, like at <i>line 9</i> of the previous WebVTT example file:</p>
 
 <pre><code>
 9.  00:00:11.000 --&gt; 00:00:15.000&lt;b&gt; position:5% align:start&lt;/b&gt;
@@ -6775,45 +6726,23 @@ previous WebVTT example file:</p>
 
 <h4>There are several possible values:</h4>
 <ul>
-<li>
-<b>line:5%</b> means “vertical position at a line 5% of the height of
-the video viewport (it will be located at the top of the video”,
-proportional to its vertical size).
-</li>
-<li>
-<b>position:5% align:start</b> means “regular location at the bottom of
-the video, the start of the sentence will be located at 5% of the width
-of the video”, i.e., near the left side.
-</li>
-<li>
-<b>position:95% align:end</b> means “regular location at the bottom of
-the video, the end of the sentence will be at 95% of the horizontal
-width of the video”.
-</li>
-<li>
-<b>size:33%</b> The size of each line will be one third of the size of
-the video. Since the sentence won’t fit, it will be displayed in
-multiple lines.
-</li>
+  <li><b>line:5%</b> means “vertical position at a line 5% of the height of the video viewport (it will be located at the top of the video”, proportional to its vertical size). </li>
+  <li><b>position:5% align:start</b> means “regular location at the bottom of the video, the start of the sentence will be located at 5% of the width of the video”, i.e., near the left side.</li>
+  <li><b>position:95% align:end</b> means “regular location at the bottom of the video, the end of the sentence will be at 95% of the horizontal width of the video”.</li>
+  <li><b>size:33%</b> The size of each line will be one third of the size of the video. Since the sentence won’t fit, it will be displayed in multiple lines.</li>
 </ul>
-<p>
-And so on. Please look at the video as it is self-explanatory.
-</p>
-<h4>
-Use of &lt;b&gt;, &lt;i&gt;, &lt;u&gt; for styling subtitles / captions
-</h4>
-<p>
-One can use the HTML elements  &lt;b&gt;, &lt;i&gt;, &lt;u&gt; to modify
-the rendering of subtitles and captions, as illustrated in the example
-below:
-</p>
+
+<p>And so on. Please look at the video as it is self-explanatory.</p>
+
+<h4>Use of &lt;b&gt;, &lt;i&gt;, &lt;u&gt; for styling subtitles / captions</h4>
+<p>One can use the HTML elements  &lt;b&gt;, &lt;i&gt;, &lt;u&gt; to modify the rendering of subtitles and captions, as illustrated in the example below:</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 93.  (113) ------------------------------->
+<!---------------- 93. This cue contains bold, italic and underline text (113) ------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image093.png?raw=true"
-   width="65%"
-   alt="" />   <br/></p>
+<img class="displayed"
+  src="./images/image093.png?raw=true"
+  alt="This cue contains bold, italic and underline text."
+  style="width:65%;" />
    
 <h4>Using CSS classes for styling</h4>
 <p>It is possible to style using CSS classes as part of a cue value,
@@ -6827,16 +6756,14 @@ example:</p>
 </code></pre>
 
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 94.  (113) ------------------------------->
+<!------------------ 94. video frame showing ::cue containing 'myclass' (113) -------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image094.jpeg?raw=true"
-   width="65%"
-   alt="Snaphot of a video frame showing a cue containing the class 'myclass'. Browsers that support ::cue CSS should make it red." />
-  <br/></p>
-<h4>
-CSS rules used in this example:
-</h4>
+<img class="displayed"
+  src="./images/image094.jpeg?raw=true"
+  alt="Image of a video frame showing cue containing the class 'myclass'."
+  style="width:65%;" />
+
+<h4>CSS rules used in this example:</h4>
 
 <pre><code>
 1.  &lt;style type=&quot;text/css&quot;&gt;
@@ -6847,32 +6774,21 @@ CSS rules used in this example:
 6.  &lt;/style&gt;
 </code></pre>
 
-<p>The ::cue pseudo element selector is used to match “cues” in the
-webVTT file. You add parenthesis and a secondary CSS selector to match
-cues that have a particular id, or a particular CSS class, etc. Look at
-the CSS above and at the extract from the webVTT file, play the video,
-you will understand how the above CSS classes affect the rendering of
-the subtitles for Jane and Tarzan’s voices.</p>
-<p>Support differs from one browser to another,
-see <a href="https://caniuse.com/#feat=webvtt" target="_blank" rel="noopener noreferrer">this compatibility
-table</a> (from CanIuse). Note however that most of the enhanced players
-presented further on in the course provide full support.</p>
-<h4>
-Using voicing for styling: the &lt;v&gt; element
-</h4>
-Here is an example that shows the voices of the different characters
-displayed with different colors:
+<p>The ::cue pseudo element selector is used to match “cues” in the webVTT file. You add parenthesis and a secondary CSS selector to match cues that have a particular id, or a particular CSS class, etc. Look at the CSS above and at the extract from the webVTT file, play the video, you will understand how the above CSS classes affect the rendering of the subtitles for Jane and Tarzan’s voices.</p>
+<p>Support differs from one browser to another, see <a href="https://caniuse.com/#feat=webvtt" target="_blank" rel="noopener noreferrer">this compatibility table</a> (from CanIuse). Note however that most of the enhanced players presented further on in the course provide full support.</p>
+
+<h4>Using voicing for styling: the &lt;v&gt; element</h4>
+<p>Here is an example that shows the voices of the different characters displayed with different colors:</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 95. v tag example (114) ------------------------------->
+<!---------------------------------- 95. v tag example (114) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image095.png?raw=true"
-   width="65%"
-   alt="" />   <br/></p>
-<p>Using the &lt;v&gt; tag, you will distinguish different voices that
-should be displayed in different colors (depending on the HTML5 video
-player implementation). See the CSS presented in the previous section to
-see how to specify the colors for the different voices.</p>
+<img class="displayed"
+  src="./images/image095.png?raw=true"
+  alt="v tag example.  Tarzan and Jane."
+  style="width:65%;" />
+
+<p>Using the &lt;v&gt; tag, you will distinguish different voices that should be displayed in different colors (depending on the HTML5 video player implementation). See the CSS presented in the previous section to see how to specify the colors for the different voices.</p>
+
 <h4>Example source code:</h4>
 
 <pre><code>
@@ -6904,25 +6820,14 @@ extra &lt;track&gt; element with a kind=“chapters” attribute.
 8.  &lt;/video&gt;
 </code></pre>
 
-<p>Here is an example of WebVTT files with defined chapters. Each “CUE”
-at <i>lines 3, 7, 11</i>, … can bear any name. We use “Chapter 1,
-Chapter 2, Ending, etc.” but you are free to name them as you wish.</p>
-<p>What makes them special is that the track has an
-attribute kind=“chapters”. </p>
-Often, the &lt;video&gt; elements rendered in standard browsers ignore
-chapters, but enhanced HTML5 players take them into account, and it’s
-not much of a stretch to make your own enhanced player with a nice
-chapter presentation, as we’ll see in a more advanced chapter of this
-course.  For example, we’ll generate a custom navigation menu, using
-the &lt;track&gt; JavaScript API (explained later in this section).
-</p>
-<h4>
-Example of a WebVTT file that defines chapters:
-</h4>
+<p>Here is an example of WebVTT files with defined chapters. Each “CUE” at <i>lines 3, 7, 11</i>, … can bear any name. We use “Chapter 1, Chapter 2, Ending, etc.” but you are free to name them as you wish.</p>
+<p>What makes them special is that the track has an attribute kind=“chapters”.</p>
+<p>Often, the &lt;video&gt; elements rendered in standard browsers ignore chapters, but enhanced HTML5 players take them into account, and it’s not much of a stretch to make your own enhanced player with a nice chapter presentation, as we’ll see in a more advanced chapter of this course.  For example, we’ll generate a custom navigation menu, using the &lt;track&gt; JavaScript API (explained later in this section).</p>
+
+<h4>Example of a WebVTT file that defines chapters:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
+<summary>Click to expand!</summary>
 
 <pre><code>
 1.  WEBVTT FILE
@@ -6949,291 +6854,181 @@ Click to expand!
 22.  
 23. Greetings 6
 24. 00:04:57.766 --&gt; 00:06:16.666
-25. Styled WebVTT file</code></pre>
+25. Styled WebVTT file
+</code></pre>
+
 </details>
 
-<p>An example of what you can achieve using chapters, using
-the <a href="https://www.jwplayer.com/" target="_blank" rel="noopener noreferrer">JW Player</a>:</p>
+<p>An example of what you can achieve using chapters, using the <a href="https://www.jwplayer.com/" target="_blank" rel="noopener noreferrer">JW Player</a></p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 96. using the jw player (115) ------------------------------->
+<!------------------------------- 96. using the jw player (115) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image096.png?raw=true"
-   width="65%"
-   alt="Using the JW player." />   <br/></p>
+<img class="displayed"
+  src="./images/image096.png?raw=true"
+  alt="Using the JW player."
+  style="width:65%;" />
+
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-3-6">2.3.6 Tools for Creating WebVTT Files</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>Many tools are available to make and edit HTML5 video and
-caption/subtitles:</p>
+<p>Many tools are available to make and edit HTML5 video and caption/subtitles:</p>
+
 <ul>
-<li>
-Tools for converting existing file formats to WebVTT files, such
-as <a href="https://atelier.u-sub.net/srt2vtt/" target="_blank" rel="noopener noreferrer">Simple SubRip to
-WebVTT</a> converter, which is popular in the DivX/AVI/Mkv/mp4 scene. Do
-a quick Web search and you will get plenty of other results.
-</li>
-<li>
-Tools for creating subtitles/captions from scratch. Use these to
-generate a WebVTT file. You can embed the &lt;track&gt; element in your
-own videos, on your own Web pages, or upload the WebVTT
-file to YouTube.  We
-recommend <a href="https://amara.org/en/ target="_blank" rel="noopener noreferrer">amara</a>. It’s a free online
-tool that is very easy to use. There are also apps such as
-<a href="https://www.macupdate.com/app/mac/25826/subs-factory" target="_blank" rel="noopener noreferrer">Subs
-Factory</a> (Mac
-OS), <a href="https://jubler.org/" target="_blank" rel="noopener noreferrer">Jubler</a> or <a href="https://nikse.dk/SubtitleEdit" target="_blank" rel="noopener noreferrer">Subtitle
-Edit</a>) (Windows).
-</li>
-<li>
-Enhanced HTML5 video players that use the &lt;video&gt;,
-&lt;source&gt; and &lt;track&gt; elements under the hood. They also
-provide many extra features, including support for subtitle/caption
-formats other than WebVTT (by converting on the fly).
-</li>
+  <li>Tools for converting existing file formats to WebVTT files, such as <a href="https://atelier.u-sub.net/srt2vtt/" target="_blank" rel="noopener noreferrer">Simple SubRip to WebVTT</a> converter, which is popular in the DivX/AVI/Mkv/mp4 scene. Do a quick Web search and you will get plenty of other results.</li>
+  <li>Tools for creating subtitles/captions from scratch. Use these to generate a WebVTT file. You can embed the &lt;track&gt; element in your own videos, on your own Web pages, or upload the WebVTT file to YouTube.  We recommend <a href="https://amara.org/en/ target="_blank" rel="noopener noreferrer">amara</a>. It’s a free online tool that is very easy to use. There are also apps such as <a href="https://www.macupdate.com/app/mac/25826/subs-factory" target="_blank" rel="noopener noreferrer">Subs Factory</a> (Mac OS), <a href="https://jubler.org/" target="_blank" rel="noopener noreferrer">Jubler</a> or <a href="https://nikse.dk/SubtitleEdit" target="_blank" rel="noopener noreferrer">Subtitle Edit</a>) (Windows).</li>
+  <li>Enhanced HTML5 video players that use the &lt;video&gt;, &lt;source&gt; and &lt;track&gt; elements under the hood. They also provide many extra features, including support for subtitle/caption formats other than WebVTT (by converting on the fly).</li>
 </ul>
-<p>We do not claim that these are the best tools, so feel free to share
-your discoveries in the discussion forum!</p>
+<p>We do not claim that these are the best tools, so feel free to share your discoveries in the discussion forum!</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-3-7">
-2.3.7 The &lt;track&gt; JavaScript API
-</h3>
+<h3 id="ch2-3-7">2.3.7 The &lt;track&gt; JavaScript API</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>Most “complex” HTML elements like forms, audio or video players, come
-with a JavaScript API that allows you to control them programmatically,
-customize them, etc.</p>
-<h4>
-The &lt;track&gt; element comes with a powerful API that is used to
-develop many interesting features such as:
-</h4>
+<p>Most “complex” HTML elements like forms, audio or video players, come with a JavaScript API that allows you to control them programmatically, customize them, etc.</p>
+
+<h4>The &lt;track&gt; element comes with a powerful API that is used to develop many interesting features such as:</h4>
 <ul>
-<li>
-Dynamically building a navigation menu that shows the different chapters
-of the video,
-</li>
-<li>
-Synchronizing page content with timestamps in the WebVTT file (for
-example: show a map next to the video, that shows the location
-corresponding to the video content),
-</li>
-<li>
-Displaying all the subtitles/captions at once as HTML in the page,
-</li>
-<li>
-Making an app for creating on the fly subtitles/captions,
-</li>
-<li>
-Etc.
-</li>
+  <li>Dynamically building a navigation menu that shows the different chapters of the video.</li>
+  <li>Synchronizing page content with timestamps in the WebVTT file (for example: show a map next to the video, that shows the location corresponding to the video content).</li>
+  <li>Displaying all the subtitles/captions at once as HTML in the page.</li>
+  <li>Making an app for creating on the fly subtitles/captions.</li>
+  <li>Etc.</li>
 </ul>
+
 <h3>Examples of use</h3>
-<h4>Example #1: add a navigation menu to start playing the video at given
-chapters</h4>
-<p>This example shows a video with an enhanced progress bar that displays
-the different chapters as small “clickable” squares. Furthermore, using
-the JavaScript API of the &lt;track&gt; element, this Web site builds a
-navigation menu (on the right of the video):</p>
+
+<h4>Example #1: add a navigation menu to start playing the video at given chapters</h4>
+<p>This example shows a video with an enhanced progress bar that displays the different chapters as small “clickable” squares. Furthermore, using the JavaScript API of the &lt;track&gt; element, this Web site builds a navigation menu (on the right of the video):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 97. navigation menu using the track javascript api (117) -------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image097.jpeg?raw=true"
-   width="65%"
-   alt="Navigation menu using the track JavaScript API." />   <br/></p>
+<img class="displayed"
+  src="./images/image097.jpeg?raw=true"
+  alt="Navigation menu using the track JavaScript API."
+  style="width:65%;" />
+
 <h4>Example #2: sync video with Google Map and Google Street View</h4>
-Check <a href="https://simpl.info/track/map/index.html" target="_blank" rel="noopener noreferrer">this
-demo</a> (only on Chrome) by <a href="https://samdutton.com/" target="_blank" rel="noopener noreferrer">Sam
-Dutton</a>: it shows a video that comes with a WebVTT file that contains
-longitudes and latitudes. When the video plays, JavaScript functions are
-called at given times and get the longitude and latitude. A Google Map
-and a Google Street views are updated in real time.
+<p>Check <a href="https://simpl.info/track/map/index.html" target="_blank" rel="noopener noreferrer">this demo</a> (only on Chrome) by <a href="https://samdutton.com/" target="_blank" rel="noopener noreferrer">Sam Dutton</a>: it shows a video that comes with a WebVTT file that contains longitudes and latitudes. When the video plays, JavaScript functions are called at given times and get the longitude and latitude. A Google Map and a Google Street views are updated in real time.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 98. video sync with map and street views (117) ------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image098.jpeg?raw=true"
-   width="65%"
-   alt="Video sync with map and street views." />   <br/></p>
-<h4>
-Example #3: sync guitar tablatures and music score with a video
-</h4>
-<p>This example shows how we manage to render music scores in real time
-as the video plays. </p>
-Some JavaScript code listens to the ontimeupdate event while the video
-is playing. We use the currentTime property of the video to know exactly
-where we are in the video. Finally, we also rely on an external library
-to render in an HTML5 canvas the bars corresponding to the current video
-explanations. We render in real time guitar pro tablatures using the
-alphatab.net library.
+<img class="displayed"
+  src="./images/image098.jpeg?raw=true"
+  alt="Video sync with map and street views."
+  style="width:65%;" />
+
+<h4>Example #3: sync guitar tablatures and music score with a video</h4>
+<p>This example shows how we manage to render music scores in real time as the video plays.</p>
+<p>Some JavaScript code listens to the ontimeupdate event while the video is playing. We use the currentTime property of the video to know exactly where we are in the video. Finally, we also rely on an external library to render in an HTML5 canvas the bars corresponding to the current video explanations. We render in real time guitar pro tablatures using the alphatab.net library.</p>
 <!------------------------------------------------------------------------------------------------>
 <!---- 99. We render in real time guitar pro tablatures using the alphatab.net library (118) ----->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image099.png?raw=true"
-   width="55%"
-   alt="We render in real time guitar pro tablatures using the alphatab.net library." />
-  <br/></p>
+<img class="displayed"
+  src="./images/image099.png?raw=true"
+  alt="We render in real time guitar pro tablatures using the alphatab.net library."
+  style="width:55%;" />
+
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-3-8">2.3.8 Enhanced HTML5 Video Players</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>There are numerous “enhanced” video players; most are free and open
-source, some are commercial. They offer lots of features, which
-are listed below. Not all of these features are available in
-every player, this list just illustrates what can be added to the
-standard &lt;video&gt; element. </p>
-<p>We call them “HTML5 enhanced video players” because on top of being
-based on the &lt;video&gt; element, they come with custom features,
-custom look’n’feel, chapters, etc., based on a JavaScript API that makes
-such customization possible.</p>
-<h4>
-Accessible players
-</h4>
-<p>For those of you interested in this particular topic, here is a very
-good resource that compares most of the players presented in this
-section, in terms of accessibility. This resource has links to players
-designed especially for people with
-disabilities: <a href="https://www.digitala11y.com/accessible-jquery-html5-media-players/" target="_blank" rel="noopener noreferrer">accessible
-media players and resources</a>.</p>
-<h4>
-Advantages and disadvantages of using a custom player
-</h4>
-<h4>
-Advantages of enhanced video players:
-</h4>
+<p>There are numerous “enhanced” video players; most are free and open source, some are commercial. They offer lots of features, which are listed below. Not all of these features are available in every player, this list just illustrates what can be added to the standard &lt;video&gt; element.</p>
+<p>We call them “HTML5 enhanced video players” because on top of being based on the &lt;video&gt; element, they come with custom features, custom look’n’feel, chapters, etc., based on a JavaScript API that makes such customization possible.</p>
+
+<h4>Accessible players</h4>
+<p>For those of you interested in this particular topic, here is a very good resource that compares most of the players presented in this section, in terms of accessibility. This resource has links to players designed especially for people with disabilities: <a href="https://www.digitala11y.com/accessible-jquery-html5-media-players/" target="_blank" rel="noopener noreferrer">accessible media players and resources</a>.</p>
+
+<h4>Advantages and disadvantages of using a custom player</h4>
+
+<h4>Advantages of enhanced video players:</h4>
 <ul>
-<li>
-Support for all kinds of subtitle formats
-</li>
-<li>
-Customizable look’n’feel (add your logo, custom themes, etc.)
-</li>
-<li>
-Full screen mode without borders on old browsers (today’s
-implementations of the &lt;video&gt; element support full screen mode)
-</li>
-<li>
-Consistent look’n’feel across browsers (menus for subtitles, etc.)
-</li>
-<li>
-1.5x, 2x, 3x speeds for fast playback
-</li>
-<li>
-Social buttons for sharing on Facebook, Twitter, etc.
-</li>
-<li>
-Support for chapters
-</li>
-<li>
-Support for scrub bar thumbnails
-</li>
-<li>
-Extra features for better accessibility
-</li>
-<li>
-And so on…
-</li>
+  <li>Support for all kinds of subtitle formats.</li>
+  <li>Customizable look’n’feel (add your logo, custom themes, etc.)</li>
+  <li>Full screen mode without borders on old browsers (today’s implementations of the &lt;video&gt; element support full screen mode)</li>
+  <li>Consistent look’n’feel across browsers (menus for subtitles, etc.)</li>
+  <li>1.5x, 2x, 3x speeds for fast playback.</li>
+  <li>Social buttons for sharing on Facebook, Twitter, etc.</li>
+  <li>Support for chapters.</li>
+  <li>Support for scrub bar thumbnails.</li>
+  <li>Extra features for better accessibility.</li>
+  <li>And so on…</li>
 </ul>
-<h4>
-Advantages of relying only on the &lt;video&gt; element rather than on
-an enhanced player:
-</h4>
+
+<h4>Advantages of relying only on the &lt;video&gt; element rather than onan enhanced player:</h4>
 <ul>
-<li>
-Total control!
-</li>
-<li>
-No need for external dependencies
-</li>
-<li>
-Lightweight: no need to download lots of JavaScript and CSS code
-</li>
+  <li>Total control!</li>
+  <li>No need for external dependencies.</li>
+  <li>Lightweight: no need to download lots of JavaScript and CSS code.</li>
 </ul>
-<h4>
-Video.js: a framework for building your own custom video player
-</h4>
-<p>Open source, and made for
-developers, <a href="https://videojs.com/" target="_blank" rel="noopener noreferrer">video.js</a> comes with many
-plugins (chapters, thumbnails etc.).</p>
+
+<h4>Video.js: a framework for building your own custom video player</h4>
+<p>Open source, and made for developers, <a href="https://videojs.com/" target="_blank" rel="noopener noreferrer">video.js</a> comes with many plugins (chapters, thumbnails etc.).</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 100. make your player yours (119) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image100.png?raw=true"
-   alt="Video JS Examples: Make your player yours."
-   width="65%">   <br/></p>
-<h4>
-Which should I use? the &lt;video&gt; element and my own customization
-or an out of the box enhanced player?
-</h4>
-<p>Either solution (basic player or enhanced player) is good and HTML5
-compliant.</p>
-<p>Popular players such as
-<a href="https://www.jwplayer.com/" target="_blank" rel="noopener noreferrer">JWPlayer</a> have many explanations
-and examples on their Web sites, and are either free of charge or come
-with free versions.</p>
-<h4>
-Interesting comparisons and reviews are available on the following Web
-sites:
-</h4>
+<img class="displayed"
+  src="./images/image100.png?raw=true"
+  alt="Video JS Examples: Make your player yours."
+  style="width:65%;" />
+
+<h4>Which should I use? the &lt;video&gt; element and my own customization or an out of the box enhanced player?</h4>
+<p>Either solution (basic player or enhanced player) is good and HTML5 compliant.</p>
+<p>Popular players such as <a href="https://www.jwplayer.com/" target="_blank" rel="noopener noreferrer">JWPlayer</a> have many explanations and examples on their Web sites, and are either free of charge or come with free versions.</p>
+
+<h4>Interesting comparisons and reviews are available on the following Web sites:</h4>
 <ul>
-<li><p>Comparison matrix of most
-of <a href="https://videosws.praegnanz.de/" target="_blank" rel="noopener noreferrer">existing HTML5 video
-players</a></p></li>
-<li><p><a href="https://toppersworld.com/10-html5-video-players-as-alternatives-to-flash-player/" target="_blank" rel="noopener noreferrer">10
-HTML5 video players compared</a></p></li>
+  <li>Comparison matrix of most of <a href="https://videosws.praegnanz.de/" target="_blank" rel="noopener noreferrer">existing HTML5 video players.</a></li>
+  <li><a href="https://toppersworld.com/10-html5-video-players-as-alternatives-to-flash-player/" target="_blank" rel="noopener noreferrer">10 HTML5 video players compared.</a></li>
 </ul>
-<h4>
-Example screenshots
-</h4>
+
+<h4>Example screenshots</h4>
 <p>Scrub Bar thumbnails (JWPlayer)</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 101. scrub bar thumbnailes (120) -------------------------------->
+<!------------------------------- 101. scrub bar thumbnails (120) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image101.jpeg?raw=true"
-   width="45%"
-   alt="Scrub bar thumbnails." />   <br/></p>
+<img class="displayed"
+  src="./images/image101.jpeg?raw=true"
+  alt="Scrub bar thumbnails."
+  style="width:45%;" />
+
 <p>Custom look’n’feel and logo (Sublime video player):</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 102. custom look and feel and logo (120) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image102.jpeg?raw=true"
-  width="55%"
-  alt="Custom look and feel and logo." />   <br/></p>
+<img class="displayed"
+  src="./images/image102.jpeg?raw=true"
+  alt="Custom look and feel with logo."
+  style="width:55%;" />
+
 <p>Chapters and chapter thumbnails (JWPlayer):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 103. chapters and chapter thumbnails (120) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image103.png?raw=true"
-  width="55%"
-  alt="Chapter and Chapter Thumbnails." />   <br/></p>
+<img class="displayed"
+  src="./images/image103.png?raw=true"
+  alt="Chapters and chapter thumbnails."
+  style="width:55%;" />
+
 <p>PayPal accessible player:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 104. paypal accessible player (121) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image104.png?raw=true"
-  width="55%"
-  alt="Paypal accessible player." />   <br/></p>
-<p>LeanBack (says “free for non-commercial use”, licensing is not very
-clear…):</p>
+<img class="displayed"
+  src="./images/image104.png?raw=true"
+  alt="Paypal accessible player."
+  style="width:55%;" />
+
+<p>LeanBack (says “free for non-commercial use”, licensing is not very clear…):</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 105. leanback player (121) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image105.png?raw=true"
-  width="60%"
-  alt="Leanback player." />   <br/></p>
+<img class="displayed"
+  src="./images/image105.png?raw=true"
+  alt="Leanback player."
+  style="width:60%;" />
+  
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-4-1">
-2.4.1 Webcam
-</h3>
+<h3 id="ch2-4-1">2.4.1 Webcam</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Introduction
-</h4>
+<h4>Introduction</h4>
+
 <p>HTML5 has introduced, with the getUserMedia and MediaDevices APIs, a
 way to control webcams and microphones programmatically. This allows,
 for example, to create an identification form where one can simply click
@@ -7283,10 +7078,10 @@ learn what you need from the provided examples.</p>
 the promise, as in this typical example (you can run it and see the
 result by clicking on the “CodePen” logo at the top right):</p>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;video id=&quot;myVideo&quot; autoplay&gt;Fallback msg here.&lt;/video&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;video id=&quot;myVideo&quot; autoplay&gt;Fallback msg here.&lt;/video&gt;
 &lt;script&gt;
   if (navigator.mediaDevices.getUserMedia) {
   // request video and audio stream from the user&#39;s webcam
@@ -7316,29 +7111,18 @@ We can also simplify the code by using a writing with async/await of JavaScript:
   video.play();
   }
   startWebCam();
-&lt;/script&gt;</code></pre>
+&lt;/script&gt;
+</code></pre>
+
 </details>
-<p><b>HTTPS is mandatory:</b> for getUserMedia to work, it is mandatory
-to access the page that contains the JavaScript code through https://,
-for security reasons.</p>
-<p>Support of getUserMedia/stream is <a
-href="https://caniuse.com/stream" target="_blank" rel="noopener noreferrer">very good in all modern browsers</a>,
-including mobile ones. All the video conferencing applications you use
-that run in a Web browser are based on this API (Google Meet, Jitsi,
-Bigblue Button), and even Microsoft Teams is a web application in
-disguise.</p>
+
+<p><b>HTTPS is mandatory:</b> for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.</p>
+<p>Support of getUserMedia/stream is <a href="https://caniuse.com/stream" target="_blank" rel="noopener noreferrer">very good in all modern browsers</a>, including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-4-1">
-2.4.1 More On getUserMedia
-</h3>
+<h3 id="ch2-4-1">2.4.1 More On getUserMedia</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>Let’s see some more examples of what we can do with the getUserMedia
-API: start/stop the Webcam, take a screenshot from the current video
-stream from the Webcam, and apply CSS effects in real time. Below, we
-give links to some cool examples available on the Web.</p>
-<h4>
-How to stop/release the Webcam
-</h4>
+<p>Let’s see some more examples of what we can do with the getUserMedia API: start/stop the Webcam, take a screenshot from the current video stream from the Webcam, and apply CSS effects in real time. Below, we give links to some cool examples available on the Web.</p>
+<h4>How to stop/release the Webcam</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 107.  (xx) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -12598,6 +12382,7 @@ context.stroke();
   src="./images/image154.jpeg?raw=true"
   alt="Draw a rounded rectange, example #2."
   style="width:65%;" />
+
 <h4>HTML</h4>
 
 <details>
@@ -12695,18 +12480,18 @@ a look!
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 155. comparison between arcto and lineto (212) ------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image155.png?raw=true"
-   width="65%"
-   alt="Comparison between lineTo and arcTo." />   <br/></p>
-<h4>
-HTML
-</h4>
+<img class="displayed"
+  src="./images/image155.png?raw=true"
+   alt="Comparison between lineTo and arcTo."
+  style="width:65%;" />
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -12755,27 +12540,34 @@ ctx.lineWidth=7;
 roundedRect(ctx,15,15,160,120,20,true,true);
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
 <p>Red = arcTo and Pink = lineTo</p>
-<h4>
-Example #4: use the unrounded vertices in arcTo
-</h4>
+
+<h4>Example #4: use the unrounded vertices in arcTo</h4>
 <p>For drawing a rounded square, this code also works:</p>
-<pre><code>1.  ctx.moveTo(x+radius, y);
+
+<pre><code>
+1.  ctx.moveTo(x+radius, y);
 2.  ctx.arcTo(x+width, y,x+width, y+height, radius);
 3.  ctx.arcTo(x+width, y+height, x, y+height, radius); 
 4.  ctx.arcTo(x, y+height, x, y,radius);
-5.  ctx.arcTo(x, y, x+width, y,radius);</code></pre>
-<p>which might be easier than trying to figure out where the arc will
-end like this:</p>
-<pre><code>1.  ctx.moveTo(x+radius, y);
+5.  ctx.arcTo(x, y, x+width, y,radius);
+</code></pre>
+
+<p>which might be easier than trying to figure out where the arc will end like this:</p>
+
+<pre><code>
+1.  ctx.moveTo(x+radius, y);
 2.  ctx.arcTo(x+width, y, x+width, y+radius, radius);
 3.  ctx.arcTo(x+width, y+height, x+width-radius, y+height,radius); 
 4.  ctx.arcTo(x, y+height, x, y+height-radius, radius);
-5.  ctx.arcTo(x, y, x+radius, y,radius);</code></pre>
-<p>This could be particularly helpful if you are dealing with something
-other than a rectangle, like this rounded triangle:</p>
+5.  ctx.arcTo(x, y, x+radius, y,radius);
+</code></pre>
+
+<p>This could be particularly helpful if you are dealing with something other than a rectangle, like this rounded triangle:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 156. rounded triangle example (213) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -12783,14 +12575,13 @@ other than a rectangle, like this rounded triangle:</p>
 <p><img src="./images/image156.png?raw=true"
    width="65%"
    alt="Example: rounded triangle." />   <br/></p>
-<h4>
-HTML
-</h4>
+
+<h4>HTML</h4>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -12827,16 +12618,14 @@ ctx.lineWidth=7;
 roundedTriangle(ctx,200,15,300,150,15,100,20,true,true);
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-10">
-3.4.10 Quadratic Curves
-</h3>
+<h3 id="ch3-4-10">3.4.10 Quadratic Curves</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Introduction
-</h4>
+<h4>Introduction</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 157. html5 canvas quadratic curve diagram (214) ------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -12845,6 +12634,7 @@ Introduction
    width="55%"
    alt="HTML5 Canvas Quadratic Curve Diagram. Control, context & ending points." />
   <br/></p>
+
 <p>(Picture taken from the <a
 href="https://www.html5canvastutorials.com/tutorials/html5-canvas-quadratic-curves/" target="_blank" rel="noopener noreferrer">HTML5
 Canvas Tutorials</a> Web site)</p>
@@ -19437,25 +19227,25 @@ Click to expand!
 19.          title=&quot;3 letter country code&quot;
 20.          id=&quot;code&quot;/&gt;
 21. &lt;/body&gt;
-22. &lt;/html&gt;</code></pre>
+22. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Example #2: mixing several other attributes with the pattern attribute
-</h4>
-<p>Try
-this <a href="https://jsbin.com/bozudeg/1/edit?html,output" target="_blank" rel="noopener noreferrer">example
-online</a> or in your browser below:</p>
-<p>Attributes used: placeholder (for displaying a ghost example
-value), pattern, required (empty field = invalid)…</p>
+
+<h4>Example #2: mixing several other attributes with the pattern attribute</h4>
+<p>Try this <a href="https://jsbin.com/bozudeg/1/edit?html,output" target="_blank" rel="noopener noreferrer">example online</a> or in your browser below:</p>
+<p>Attributes used: placeholder (for displaying a ghost example value), pattern, required (empty field = invalid)…</p>
+
 <!---
 Enter a pseudo (6-12 characters): ![](./images/image218.wmf)
 --->
+
 <p>Complete source code:</p>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt;
 4.    &lt;title&gt;Example of use of new HTML5 input field attributes&lt;/title&gt;
@@ -19477,15 +19267,13 @@ Click to expand!
 20.        title=&quot;6-12 characters allowed please&quot;
 21.        type=&quot;text&quot; /&gt;
 22. &lt;/body&gt;
-23. &lt;/html&gt;</code></pre>
+23. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Example #3: an &lt;input type=“url”&gt; element with a pattern attribute
-allowing only certain protocols
-</h4>
-<a href="https://jsbin.com/nulahey/1/edit?html,output)or" target="_blank" rel="noopener noreferrer">Online example
-at JSBin</a> try it in your browser: <!---
-Enter the URL of your repository (http, https or ftp): 
+<h4>Example #3: an &lt;input type=“url”&gt; element with a pattern attribute allowing only certain protocols</h4>
+
+<a href="https://jsbin.com/nulahey/1/edit?html,output)or" target="_blank" rel="noopener noreferrer">Online example at JSBin</a> try it in your browser: <!--- Enter the URL of your repository (http, https or ftp): 
 --->
 <!------------------------------------------------------------------------------------------------>
 <!------------- 27x. input type enter url of your repository  () ------------->
@@ -19495,17 +19283,20 @@ Enter the URL of your repository (http, https or ftp): 
    width="65%"
    alt="Green valid, pink invalid.  Type email, name myemail." />
 </p>
-<h4>
-Source code extract:
-</h4>
-<pre><code>1.  &lt;input
+
+<h4>Source code extract:</h4>
+
+<pre><code>
+1.  &lt;input
 2.      id=&quot;website&quot;
 3.      name=&quot;url&quot;
 4.      type=&quot;url&quot;
 5.      placeholder=&quot;http://www.domain.com&quot;
 6.      title=&quot;http, https or ftp allowed&quot;
 7.      pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]&quot;
-8.  /&gt;</code></pre>
+8.  /&gt;
+</code></pre>
+
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-5-7">
 5.5.7 min, max and step
@@ -23765,7 +23556,7 @@ good understanding of the material.</p>
 </ul>
 
 <p>. . .The end.<br>
-<br>last updated 1-9-23 9:44pm </p>
+<br>last updated 1-10-23 6:29pm </p>
 </body>
 </html>
 <!--
