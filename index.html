@@ -10061,9 +10061,7 @@ Click to expand!
 27. }</code></pre>
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-1">
-3.3.1 Immediate Mode
-</h3>
+<h3 id="ch3-3-1">3.3.1 Immediate Mode</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>
 <p>In the previous sections, we learned how to draw filled or
@@ -10500,30 +10498,25 @@ that extends furthest down in the text.</td>
 </table>
 </div>
 <p>Typical use (taken from the example above):</p>
-<pre><code>1.  context.textBaseline = &quot;top&quot;;
+
+<pre><code>
+1.  context.textBaseline = &quot;top&quot;;
 2.  context.fillText(&quot;top&quot;, 0, 75);
 3.  context.textBaseline = &quot;hanging&quot;;
 4.  context.fillText(&quot;hanging&quot;, 40, 75);
 5.  context.textBaseline = &quot;middle&quot;;
-6.  context.fillText(&quot;middle&quot;, 120, 75);</code></pre>
-<h4>
-Setting the horizontal justification of a text with
-the textAlign property
-</h4>
-<p>The textAlign property of the context tells how the x parameter will
-be used when calling strokeText(“some text”, x, y) and fillText(“some
-text”, x, y). For example, with textAlign=“center”, the x parameter
-gives the position of the vertical center of the text, while
-in textAlign=“right”, x corresponds to the rightmost position of the
-text.</p>
-<h4>
-HTML
-</h4>
+6.  context.fillText(&quot;middle&quot;, 120, 75);
+</code></pre>
+
+<h4>Setting the horizontal justification of a text with the textAlign property</h4>
+<p>The textAlign property of the context tells how the x parameter will be used when calling strokeText(“some text”, x, y) and fillText(“some text”, x, y). For example, with textAlign=“center”, the x parameter gives the position of the vertical center of the text, while in textAlign=“right”, x corresponds to the rightmost position of the text.</p>
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;Drawing text: the textAlign property&lt;/title&gt;
@@ -10555,16 +10548,18 @@ context.textAlign = &quot;right&quot;;
 context.fillText(&quot;right&quot;, 250, 100);
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Typical use (source code taken from the above example):
-</h4>
+
+<h4>Typical use (source code taken from the above example):</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  context.textAlign = &quot;center&quot;;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  context.textAlign = &quot;center&quot;;
 2.  context.fillText(&quot;center&quot;, 250, 20);
 3.  context.textAlign = &quot;start&quot;;
 4.  context.fillText(&quot;start&quot;, 250, 40);
@@ -10573,12 +10568,12 @@ Click to expand!
 7.  context.textAlign = &quot;left&quot;;
 8.  context.fillText(&quot;left&quot;, 250, 80);
 9.  context.textAlign = &quot;right&quot;;
-10. context.fillText(&quot;right&quot;, 250, 100);</code></pre>
+10. context.fillText(&quot;right&quot;, 250, 100);
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-3">
-3.3.3 Drawing Images
-</h3>
+<h3 id="ch3-3-3">3.3.3 Drawing Images</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Working with images is rather simple, except that we need the images
 to be fully loaded into memory before drawing them. Loading images is
@@ -10593,17 +10588,15 @@ corresponding to another canvas content, or images that are defined
 by <img> HTML elements in the page. We will see that as well in the
 following parts of this chapter.</p>
 <p>But let’s start with a basic example!</p>
-<h4>
-Example #1: drawing an image in a canvas
-</h4>
-<h4>
-Source code:
-</h4>
+
+<h4>Example #1: drawing an image in a canvas</h4>
+<h4>Source code:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE HTML&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE HTML&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.     &lt;head&gt;
 4.        &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -10631,61 +10624,46 @@ Click to expand!
 26.    &lt;body&gt;
 27.       &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
 28.    &lt;/body&gt;
-29. &lt;/html&gt;</code></pre>
+29. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
+
 <ol type="1">
-<li><p>We have to create a JavaScript Image object (<i>line
-10</i>),</p></li>
-<li><p>When we set the src attribute of this object with the URL of the
-image file, then an asynchronous request is sent in the background by
-the browser. Loading a big image may take some time, so the rest of the
-JavaScript code continues running. This is why we call it
-“asynchronous”.</p></li>
-<li><p>When the image file has been loaded, the browser calls
-the onload callback associated with the image (<i>line 14</i>).</p></li>
-<li><p>We draw the image only from inside this callback, otherwise we
-have no guarantee that the image has been loaded and can be usable. The
-actual drawing here is done <i>line 17</i>.</p></li>
-<li><p>There are numerous variants of the drawImage(…) context
-method at <i>line 17</i></p></li>
+<li>We have to create a JavaScript Image object (<i>line 10</i>),</li>
+  <li>When we set the src attribute of this object with the URL of the image file, then an asynchronous request is sent in the background by the browser. Loading a big image may take some time, so the rest of the Ja vaScript code continues running. This is why we call it “asynchronous”.</li>
+  <li>When the image file has been loaded, the browser calls the onload callback associated with the image (<i>line 14</i>).</li>
+  <li>We draw the image only from inside this callback, otherwise we have no guarantee that the image has been loaded and can be usable. The actual drawing here is done <i>line 1</i>.</li>
+  <li>There are numerous variants of the drawImage(…) context method at <i>line 17</i></li>
 </ol>
 <ul>
-<li><p>drawImage(img, x, y): draws the image at position x, y, keeping
-the original image size.</p></li>
-<li><p>drawImage(img, x, y, sizeX, sizeY): same as before except that
-the image drawn is resized.</p></li>
-<li><p>drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh): for drawing
-sub-images, (sx, sy, sw, sh) define the source rectangle, while dx, dy,
-dw, sh define the target rectangle. If these rectangles don’t have the
-same size, the source sub-image is resized.</p></li>
+  <li>drawImage(img, x, y): draws the image at position x, y, keeping the original image size.</li>
+  <li>drawImage(img, x, y, sizeX, sizeY): same as before except that the image drawn is resized.</li>
+  <li>drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh): for drawing sub-images, (sx, sy, sw, sh) define the source rectangle, while dx, dy, dw, sh define the target rectangle. If these rectangles don’t have the same size, the source sub-image is resized.</p></li>
 </ul>
-<h4>
-See picture below:
-</h4>
+
+<h4>See picture below:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 133. simple image drawing in a canvas (182) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image133.png?raw=true"
-  width="45%"
-  alt="Drawing Images with Subimages. Source image within a Destination Canvas." />
-  <br/></p>
-<h4>
-Example #2: different variants of drawImage(…)
-</h4>
-<p>This example illustrates the use of the different variants of
-the drawImage method:</p>
-<h4>
-HTML
-</h4>
+<img class="displayed"
+  src="./images/image133.png?raw=true"
+  alt="Drawing Images with Subimages. Source image within a Destination Canvas."
+  style="width:45%;" />
+
+<h4>Example #2: different variants of drawImage(…)</h4>
+
+<p>This example illustrates the use of the different variants of the drawImage method:</p>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE HTML&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE HTML&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -10717,22 +10695,26 @@ imageObj.src = &quot;https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png&q
 &lt;body&gt;
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-CSS
-</h4>
-<pre><code>#myCanvas {
+
+<h4>CSS</h4>
+
+<pre><code>
+#myCanvas {
 border:1px solid black;
-}</code></pre>
-<h4>
-Source code extract:
-</h4>
+}
+</code></pre>
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  var imageObj = new Image();
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  var imageObj = new Image();
 2.   
 3.  imageObj.onload = function() {
 4.     // Try commenting/uncommenting the following lines to see the
@@ -10753,20 +10735,19 @@ Click to expand!
 19.   context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 20. };
 21. imageObj.src = &quot;https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png&quot;;
-22. };</code></pre>
+22. };
+</code></pre>
+
 </details>
-<h4>
-Example #3: draw an image defined in the page by an &lt;img
-src=“…”&gt; element
-</h4>
-<p>Sometimes, you may want to draw an image that is already declared in
-the HTML document as an <img src="..."> element. Remember that when you
-add an <img> in the document, the browser starts downloading it in
-background. </p>
-<h4>
-You could try drawing it using some code like this:
-</h4>
-<pre><code>1.  &lt;body&gt;
+
+<h4>Example #3: draw an image defined in the page by an &lt;img src=“…”&gt; element</h4>
+
+<p>Sometimes, you may want to draw an image that is already declared in the HTML document as an &lt;img src="..."&gt; element. Remember that when you add an &lt;img&gt; in the document, the browser starts downloading it in background.</p>
+
+<h4>You could try drawing it using some code like this:</h4>
+
+<pre><code>
+1.  &lt;body&gt;
 2.  &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
 3.  &lt;p&gt;Original image as an &lt;img&gt; element:&lt;/p&gt;
 4.  &lt;b&gt;&lt;img id=&quot;logo&quot;&lt;/b&gt;
@@ -10777,33 +10758,29 @@ You could try drawing it using some code like this:
 9.       var logo = document.querySelector(&quot;#logo&quot;);
 10.      &lt;b&gt;ctx.drawImage(logo, 0, 0, 100, 100);&lt;/b&gt;
 11. &lt;/script&gt;
-12. &lt;/body&gt;</code></pre>
-<p>Although you will find many examples on the Web that do it this way,
-they will only work most of the time with small images, or with images
-that are in the browser’s cache. Remember that you cannot draw an image
-that has not been fully loaded!</p>
-<p>If you try to draw an image that is not loaded or partially loaded,
-you will have unexpected results!</p>
-<p>
-<b>Best practice:</b> only draw an image that is fully loaded, use
-the onload callback!
-</p>
-<p>The right way to do this is shown in this online example, that starts
-drawing only from the onload callback function:</p>
-<h4>
-CSS
-</h4>
-<pre><code>#myCanvas {
+12. &lt;/body&gt;
+</code></pre>
+
+<p>Although you will find many examples on the Web that do it this way, they will only work most of the time with small images, or with images that are in the browser’s cache. Remember that you cannot draw an image that has not been fully loaded!</p>
+<p>If you try to draw an image that is not loaded or partially loaded, you will have unexpected results!</p>
+<p><b>Best practice:</b> only draw an image that is fully loaded, use the onload callback!</p>
+<p>The right way to do this is shown in this online example, that starts drawing only from the onload callback function:</p>
+
+<h4>CSS</h4>
+
+<pre><code>
+#myCanvas {
 border:1px solid black;
-}</code></pre>
-<h4>
-HTML
-</h4>
+}
+</code></pre>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE HTML&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE HTML&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -10837,24 +10814,28 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 &lt;/p&gt;
 &lt;img id=&quot;logo&quot; src=&quot;https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png&quot; alt=&quot;html5 logo&quot;&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<p>With large image files, this will not break nor produce unexpected
-results:</p>
-<h4>
-CSS
-</h4>
-<pre><code>#myCanvas {
+
+<p>With large image files, this will not break nor produce unexpected results:</p>
+
+<h4>CSS</h4>
+
+<pre><code>
+#myCanvas {
 border:1px solid black;
-}</code></pre>
-<h4>
-HTML
-</h4>
+}
+</code></pre>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE HTML&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE HTML&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -10888,29 +10869,25 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 &lt;/p&gt;
 &lt;img id=&quot;logo&quot; alt=&quot;logo&quot; src=&quot;https://mainline.i3s.unice.fr/mooc/texture_85_by_voyager168-d670m68.jpg&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>The <a href="https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents" target="_blank" rel="noopener noreferrer">DOM
-Level 2 Events specification</a></b> says: “<i>The load event occurs
-when the DOM implementation finishes loading all content within a
-document, all frames within a FRAMESET, or an OBJECT element.</i>”</p>
+Level 2 Events specification</a></b> says: “<i>The load event occurs when the DOM implementation finishes loading all content within a document, all frames within a FRAMESET, or an OBJECT element.</i>”</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-4">
-3.3.4 Drawing Images from a Video Stream
-</h3>
+<h3 id="ch3-3-4">3.3.4 Drawing Images from a Video Stream</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>The drawImage(…) function can take a video element as its first
-parameter. The image that will be drawn is the one currently played by
-the video stream. This can be done at video frequency on most modern
-computers or mobile devices.</p>
-<h4>
-HTML
-</h4>
+<p>The drawImage(…) function can take a video element as its first parameter. The image that will be drawn is the one currently played by the video stream. This can be done at video frequency on most modern computers or mobile devices.</p>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE HTML&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE HTML&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -10968,26 +10945,25 @@ ctx.restore();
 &lt;p&gt;This is a &lt;code&gt;&amp;lt;canvas&gt;&lt;/code&gt; element: &lt;/p&gt;
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;620&quot; height=&quot;360&quot;&gt;&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-This example shows:
+
+<p>This example shows:</p>
+
 <ul>
-<li>
-a &lt;video&gt; element on top, and four images drawn in a canvas below.
-</li>
-<li>
-The images are drawn every XXX milliseconds using
-the setInterval(function, delay) method.
-</li>
+  <li>a &lt;video&gt; element on top, and four images drawn in a canvas below.</li>
+  <li>The images are drawn every XXX milliseconds using the setInterval(function, delay) method.</li>
 </ul>
-<h4>
-Source code extract:
-</h4>
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;script&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;script&gt;
 2.     var video;
 3.     var canvas, ctx;
 4.     var angle = 0;
@@ -11037,67 +11013,45 @@ Click to expand!
 48. &lt;/video&gt;
 49. &lt;p&gt;This is a &lt;canvas&gt; element: &lt;/p&gt;
 50. &lt;canvas id=&quot;myCanvas&quot; width=&quot;620&quot; height=&quot;360&quot;&gt;&lt;/canvas&gt;
-51. &lt;/body&gt;</code></pre>
+51. &lt;/body&gt;
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
 <ul>
-<li><p><i>Line 11</i>: the call to setInterval will make the browser
-execute the processFrame function each 25ms.</p></li>
-<li><p><i>Lines 15, 17 and 18</i>: in processFrame, drawImage(…) is
-called 3 times with the video element passed as first
-parameter.</p></li>
-<li><p><i>Line 43</i>: the video element declared at <i>line
-43</i> has autoplay=true and loop=true, it starts playing the video as
-soon as possible and will loop it.</p></li>
-<li><p><i>Line 21</i>: We implemented a rotating video effect in
-the drawRotatingVideo. The use of context save/restore is primordial as
-this function changes the coordinate system at each call, translating
-and rotating it. Notice the extra translation at <i>line 31</i> that
-translates the coordinate system backwards with half of the size of the
-image that is drawn. We did this in order to make the image rotate
-around the center of the rectangle, instead of around the top left
-corner at (0, 0) by default. Try commenting out this line in the running
-example and you will see what we mean.</p></li>
+  <li><i>Line 11</i>: the call to setInterval will make the browser execute the processFrame function each 25ms.</li>
+  <li><i>Lines 15, 17 and 18</i>: in processFrame, drawImage(…) is called 3 times with the video element passed as first parameter.</li>
+  <li><i>Line 43</i>: the video element declared at <i>line 43</i> has autoplay=true and loop=true, it starts playing the video as soon as possible and will loop it.</li>
+  <li><i>Line 21</i>: We implemented a rotating video effect in the drawRotatingVideo. The use of context save/restore is primordial as this function changes the coordinate system at each call, translating and rotating it. Notice the extra translation at <i>line 31</i> that translates the coordinate system backwards with half of the size of the image that is drawn. We did this in order to make the image rotate around the center of the rectangle, instead of around the top left corner at (0, 0) by default. Try commenting out this line in the running example and you will see what we mean.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-1">
-3.4.1 Immediate Mode vs. Path Mode
-</h3>
+<h3 id="ch3-4-1">3.4.1 Immediate Mode vs. Path Mode</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Immediate mode
-</h4>
+<h4>Immediate mode</h4>
+
 <p>As a reminder: an immediate mode means “executing a call to a drawing
 method means <i>immediately</i> drawing in the canvas”. The drawing
 appears as soon as the design instruction is executed.</p>
+
 <ul>
-<li><p>In the previous examples, we saw how to draw rectangles using
-the fillRect(x, y, width, height) and strokeRect(x, y, width,
-height) methods of the context.</p></li>
-<li><p>We also learned how to draw a text message using
-the fillText(message, x, y) and strokeText(message, x, y) methods that
-draws a text in filled and wireframe mode, respectively.</p></li>
+  <li>In the previous examples, we saw how to draw rectangles using the fillRect(x, y, width, height) and strokeRect(x, y, width, height) methods of the context.</li>
+  <li>We also learned how to draw a text message using the fillText(message, x, y) and strokeText(message, x, y) methods that draws a text in filled and wireframe mode, respectively.</li>
 </ul>
+
 <ul>
-<li>
-These methods, along with the drawImage(…) method already seen in
-section 3.3.3, are <i>“immediate methods”</i>: as soon as they are
-executed, the results are displayed on screen, the drawings are
-performed, pixels on the canvas area change their colors, etc.
-</li>
+  <li>These methods, along with the drawImage(…) method already seen in section 3.3.3, are <i>“immediate methods”</i>: as soon as they are executed, the results are displayed on screen, the drawings are performed, pixels on the canvas area change their colors, etc.</li>
 </ul>
-<p>Here is an example that draws 1000 random rectangles in a canvas,
-using immediate mode rectangle drawing calls:</p>
-<h4>
-JavaScript
-</h4>
+
+<p>Here is an example that draws 1000 random rectangles in a canvas, using immediate mode rectangle drawing calls:</p>
+
+<h4>JavaScript</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>var canvas, ctx, w, h;
+<summary>Click to expand!</summary>
+
+<pre><code>
+var canvas, ctx, w, h;
 function init() {
 canvas = document.getElementById(&#39;myCanvas&#39;);
 ctx = canvas.getContext(&#39;2d&#39;);
@@ -11112,12 +11066,15 @@ var height = Math.random() * h;
 ctx.strokeRect(x, y, width, height);
 }
 console.timeEnd(&quot;time to draw&quot;);
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-HTML
-</h4>
-<pre><code>&lt;!DOCTYPE html&gt;
+
+<h4>HTML</h4>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -11127,12 +11084,15 @@ HTML
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height =400&gt;
     Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  var canvas, ctx, w, h;
+
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  var canvas, ctx, w, h;
 2.  
 3.  function init() {
 4.      canvas = document.getElementById(&#39;myCanvas&#39;);
@@ -11152,27 +11112,24 @@ Click to expand!
 18.        ctx.strokeRect(x, y, width, height);
 19.     }
 20.     console.timeEnd(&quot;time to draw&quot;);
-21. }</code></pre>
+21. }
+</code></pre>
+
 </details>
-<p><i>Lines 12-18</i> draw 1000 rectangles of random sizes in immediate
-mode. We also measure the time using the
-usual console.time(name_of_timer) and console.timeEnd(name_of_timer) that
-will write in the browser console the time elapsed. Note
-that console.time(…) and console.timeEnd(…) display results only in the
+
+<p><i>Lines 12-18</i> draw 1000 rectangles of random sizes in immediate mode. We also measure the time using the usual console.time(name_of_timer) and console.timeEnd(name_of_timer) that will write in the browser console the time elapsed. Note that console.time(…) and console.timeEnd(…) display results only in the
 browser’s console, not in the JSBin console.</p>
-<p>On a Mac Book Pro from 2015, the result is an average time of 4.034ms
-for drawing all these rectangles:</p>
+<p>On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawing all these rectangles:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------ 134. image of the devtool console clocking time to draw rectangles (189) ---------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image134.jpeg?raw=true"
-   width="65%"
-   alt="Image of the devtool console measuring average time to draw rectangles." />
-  <br/></p>
-<h4>
-Path mode
-</h4>
+<img class="displayed"
+  src="./images/image134.jpeg?raw=true"
+  alt="Image of the devtool console measuring average time to draw rectangles."
+  style="width:65%;" />
+
+<h4>Path mode</h4>
+
 <p>There is another drawing mode called “path drawing mode” where you
 first send drawing orders to the graphics processor, and these orders
 are stored in a buffer. Then you call methods to draw the whole buffer
@@ -11186,13 +11143,12 @@ parallelize the computations (modern graphics cards can execute
 hundreds/thousands of things in parallel).</p>
 <p>Same example as before, this time using the buffered mode for drawing
 rectangles:</p>
-<h4>
-JavaScript
-</h4>
+
+<h4>JavaScript</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
+<summary>Click to expand!</summary>
+
 <pre><code>var canvas, ctx, w, h;
 function init() {
 canvas = document.getElementById(&#39;myCanvas&#39;);
@@ -11209,12 +11165,15 @@ ctx.rect(x, y, width, height);
 }
 ctx.stroke();
 console.timeEnd(&quot;time to draw&quot;);
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-HTML
-</h4>
-<pre><code>&lt;!DOCTYPE html&gt;
+
+<h4>HTML</h4>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -11224,16 +11183,22 @@ HTML
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height =400&gt;
 Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 <p>Extract from source code (the part that draws the rectangles):</p>
-<pre><code>1.  for(var i=0; i &lt; 1000; i++) {
+
+<pre><code>
+1.  for(var i=0; i &lt; 1000; i++) {
 2.  var x = Math.random() * w;
 3.  var y = Math.random() * h;
 4.  var width = Math.random() * w;
 5.  var height = Math.random() * h;
 6.  ctx.rect(x, y, width, height); // store a rectangle in path/buffer
 7.  }
-8.  ctx.stroke(); // draws the whole buffer (the 1000 rectangles) at once</code></pre>
+8.  ctx.stroke(); // draws the whole buffer (the 1000 rectangles) at once
+</code></pre>
+
 <p>Instead of calling strokeRect(…) or fillRect(…), we just call
 the rect(…) method of the context (<i>line 7</i>). This is how we can
 delay the drawing of the rectangles. The 1000 rectangles are stored in a
@@ -11248,44 +11213,39 @@ time of 3.1ms</b></p>
 <!------------------------------------------------------------------------------------------------>
 <!--------- 135. image of the devtool console which shows time path vs immediate (191) ----------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image135.jpeg?raw=true"
-  width="65%"
-  alt="Image of the devtool console which shows time values, path vs immediate mode." />
-  <br/></p>
-<h4>
-Reset the path mode buffer
-</h4>
+<img class="displayed"
+  src="./images/image135.jpeg?raw=true"
+  alt="Image of the devtool console which shows time values, path vs immediate mode."
+  style="width:65%;" />
+
+<h4>Reset the path mode buffer</h4>
+
 <p>A call to ctx.beginPath() will reset the buffer (empty its contents).
 We will see many more examples of using the path drawing mode in another
 further section.</p>
-<pre><code>1.  // start a new buffer / path
+
+<pre><code>
+1.  // start a new buffer / path
 2.  ctx.beginPath();
 3.  // all these orders are in a buffer/path
 4.  ctx.moveTo(10, 10);
 5.  ctx.lineTo(100, 100);
 6.  ctx.lineTo(150, 70);
 7.  // Draw the buffer
-8.  ctx.stroke();</code></pre>
+8.  ctx.stroke();
+</code></pre>
+
 <p>Summary of path mode principles</p>
+
 <ol type="1">
-<li><p>Call drawing methods that work in path mode, for example
-call ctx.rect(…) instead
-of ctx.strokeRect(…) or ctx.fillRect(…),</p></li>
-<li><p>Call ctx.stroke() or ctx.fill() to draw the buffer’s
-contents,</p></li>
-<li><p>Beware that the buffer is never emptied, two consecutive calls
-to ctx.stroke() will draw the buffer contents twice! Instead,
-use ctx.beginPath() to empty it if needed,</p></li>
-<li><p>It is possible to empty the buffer by
-calling ctx.beginPath(),</p></li>
-<li><p>Path drawing is faster than immediate drawing (parallelization is
-possible).</p></li>
+  <li>Call drawing methods that work in path mode, for example call ctx.rect(…) instead of ctx.strokeRect(…) or ctx.fillRect(…),</li>
+  <li>Call ctx.stroke() or ctx.fill() to draw the buffer’s contents,</li>
+  <li>Beware that the buffer is never emptied, two consecutive calls to ctx.stroke() will draw the buffer contents twice! Instead, use ctx.beginPath() to empty it if needed,</li>
+  <li>It is possible to empty the buffer by calling ctx.beginPath(),</li>
+  <li>Path drawing is faster than immediate drawing (parallelization is possible).</li>
 </ol>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-2">
-3.4.2 A Warning
-</h3>
+<h3 id="ch3-4-2">3.4.2 A Warning</h3>
 <!------------------------------------------------------------------------------------------------>
 <p><b>Warning</b>: you do not need to spend too much time on each part
 of this sub-section.</p>
@@ -11304,9 +11264,7 @@ corresponding pages and look at the examples!</p></li>
 (provided before in the last section). You will find it very
 helpful when you start playing with the canvas.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-3">
-3.4.3 Drawing Lines
-</h3>
+<h3 id="ch3-4-3">3.4.3 Drawing Lines</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>We have been drawing rectangles so far.</p>
 <p>Now let’s go a bit further by introducing the notion of “path
@@ -11337,27 +11295,25 @@ values of the strokeStyle or fillStyle properties. It is possible to
 call ctx.moveTo(x, y) in the middle of steps 1 through 5 in order to
 move the pen somewhere else without connecting to the last drawn
 line.</p>
-<h4>
-Drawing a grid
-</h4>
-<h4>
-See the example below:
-</h4>
+
+<h4>Drawing a grid</h4>
+
+<h4>See the example below:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 136. draw grid using ctx.stroke (193) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image136.png?raw=true"
-   width="65%"
-   alt="Draw blue grid using ctx.stroke command." />   <br/></p>
-<h4>
-HTML
-</h4>
+<img class="displayed"
+  src="./images/image136.png?raw=true"
+  alt="Draw blue grid using ctx.stroke command."
+  style="width:65%;" />
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -11384,16 +11340,18 @@ ctx.strokeStyle = &quot;#0000FF&quot;;
 ctx.stroke();
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Code source extract:
-</h4>
+
+<h4>Code source extract:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
 2.  var ctx=canvas.getContext(&#39;2d&#39;);
 3.  
 4.  // Vertical lines
@@ -11412,32 +11370,31 @@ Click to expand!
 17. ctx.strokeStyle = &quot;#0000FF&quot;;
 18.  
 19. // Until the execution of the next line, nothing has been drawn!
-20. ctx.stroke();</code></pre>
+20. ctx.stroke();
+</code></pre>
+
 </details>
-<p>In this example, the entire grid is drawn during the execution of the
-last line of code, with the single call to ctx.stroke().</p>
-<h4>
-Mixing filled and wireframe shapes (and immediate and path modes)
-</h4>
-<h4>
-Try this:
-</h4>
+
+<p>In this example, the entire grid is drawn during the execution of the last line of code, with the single call to ctx.stroke().</p>
+
+<h4>Mixing filled and wireframe shapes (and immediate and path modes)</h4>
+
+<h4>Try this:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------- 137. mix filled & wireframe shapes using different methods (194) ---------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image137.png?raw=true"
-   width="65%"
-   alt="Mix filled and wireframe shapes using different methods." />  
-<br/></p>
-<h4>
-HTML
-</h4>
+<img class="displayed"
+  src="./images/image137.png?raw=true"
+  alt="Mix filled and wireframe shapes using different methods."
+  style="width:65%;" />
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+<summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -11456,16 +11413,18 @@ ctx.strokeStyle = &quot;#0000FF&quot;;
 ctx.stroke();
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Code source:
-</h4>
+
+<h4>Code source:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
+<summary>Click to expand!</summary>
+
+<pre><code>
+1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
 2.  var ctx=canvas.getContext(&#39;2d&#39;);
 3.  
 4.  // a filled rectangle in immediate mode
@@ -11479,24 +11438,23 @@ Click to expand!
 12. 
 13. // draws only the two lines in wireframe mode
 14. ctx.strokeStyle = &quot;#0000FF&quot;;
-15. ctx.stroke();</code></pre>
+15. ctx.stroke();
+</code></pre>
+
 </details>
 
-<p>This example shows that filled and wireframe shapes should be drawn
-differently (here a filled rectangle is drawn using a call to
-the fillRect(…) method while a wireframe set of connected lines is drawn
-using the stroke() method of the context).</p>
+<p>This example shows that filled and wireframe shapes should be drawn differently (here a filled rectangle is drawn using a call to the fillRect(…) method while a wireframe set of connected lines is drawn using the stroke() method of the context).</p>
 
 <h4>Drawing a single path made with disconnected lines / parts</h4>
+
 <p>Try this:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------- 138. drawing single path made with disconnected lines (195) ------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image138.png?raw=true"
-   width="65%"
-   alt="Drawing single path made with disconnected lines." />  
-<br/></p>
+<img class="displayed"
+  src="./images/image138.png?raw=true"
+  alt="Drawing single path made with disconnected lines."
+  style="width:65%;" />
 
 <h4>Code source:</h4>
 <details>
@@ -11534,11 +11492,10 @@ called stroke() (<i>line 16</i>) only once to draw the whole path.</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------- 139. example using moveto() and stroke() command functions (196) ---------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image139.png?raw=true"
-   width="65%"
-   alt="Same drawing as in previous section. Example using moveto() and stroke() command functions." />
-  <br/></p>
+<img class="displayed"
+  src="./images/image139.png?raw=true"
+  alt="Same drawing as in previous section. Example using moveto() and stroke() command functions."
+  style="width:65%;" />
 
 <h4>HTML</h4>
 
@@ -11588,11 +11545,11 @@ the path, then call fill() after the second half of the path:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------- 140. the wrong way to draw two paths with different styles (197) ---------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image140.png?raw=true"
-   width="65%"
-   alt="THE WRONG WAY! Drawing two paths with different styles." />  
-<br/></p>
+<img class="displayed"
+  src="./images/image140.png?raw=true"
+  alt="THE WRONG WAY! Drawing two paths with different styles."
+  style="width:65%;" />
+
 <h4>HTML</h4>
 
 <details>
@@ -11688,11 +11645,11 @@ the ctx.beginPath() method, as shown in the next example.</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------- 141. the right way to draw two paths with different styles (198) ---------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image141.png?raw=true"
-   width="65%"
-   alt="Draw two paths with different styles the RIGHT way." />  
-<br/></p>
+<img class="displayed"
+  src="./images/image141.png?raw=true"
+  alt="Draw two paths with different styles the RIGHT way."
+  style="width:65%;" />
+
 <h4>HTML</h4>
 
 <details>
@@ -11823,11 +11780,10 @@ y2), and the stroke at <i>line 17</i> makes it appear on the screen.
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 142. drawing lines in immediate mode (200) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image142.png?raw=true"
-   width="65%"
-   alt="Drawing lines in immediate mode to avoid affecting other functions' context." />
-  <br/></p>
+<img class="displayed"
+  src="./images/image142.png?raw=true"
+  alt="Drawing lines in immediate mode to avoid affecting other functions' context."
+  style="width:65%;" />
 
 <h4>HTML</h4>
 <details>
@@ -11939,24 +11895,22 @@ arrows.</p>
 <h4>Explanations:</h4>
 
 <ul>
-<li><p>An arrow is made of one line (the arrow body) and three connected
-lines (the arrow head). </p></li>
-<li><p>As we modify some context properties in this function, we
-call save() and restore() at the beginning and at the end of the
-function.</p></li>
-<li><p>This function can be improved in many ways: adding shadows,
-using fill() instead of stroke(), which gives strange results when the
-width is too big, etc.</p></li>
+  <li>An arrow is made of one line (the arrow body) and three connected lines (the arrow head).</li>
+  <li>As we modify some context properties in this function, we call save() and restore() at the beginning and at the end of the function.</li>
+  <li>This function can be improved in many ways: adding shadows, using fill() instead of stroke(), which gives strange results when the width is too big, etc.</li>
 </ul>
+
 <h4>Example #2</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------------- 143. draw arrows (202) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image143.png?raw=true"
-   width="65%"
-   alt="Function to draw arrows." />   <br/></p>
+<img class="displayed"
+  src="./images/image143.png?raw=true"
+   alt="Function to draw arrows."
+  style="width:65%;" />
+
 <h4>HTML</h4>
+
 <details>
 <summary>Click to expand!</summary>
 
@@ -12016,9 +11970,11 @@ drawArrow(ctx, 100, 10, 140, 140, 3, &#39;black&#39;);
 
 <pre><code>
 drawArrow(ctx, 10, 10, 100, 100, 10, &#39;red&#39;);
+drawArrow(ctx, 100, 10, 140, 140, 3, &#39;black&#39;);
+</code></pre>
 
-drawArrow(ctx, 100, 10, 140, 140, 3, &#39;black&#39;);</code></pre>
 <h4>How to draw nicer arrows?</h4>
+
 <p>On the Web, you will find many different ways to draw arrows.</p>
 <p>This <a href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArrow.html" target="_blank" rel="noopener noreferrer">article
 on drawing lines and arcs with arrow heads</a> is worth reading. It
@@ -12029,10 +11985,11 @@ want it to support different line widths, etc.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 144. clock with nicer arrows (204) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image144.png?raw=true"
-   width="20%"
-   alt="Round clock with nice arrows." />   <br/></p>
+<img class="displayed"
+  src="./images/image144.png?raw=true"
+  alt="Round clock with nice arrows."
+  style="width:20%;" />
+
 <p>In a later part of the course dedicated to curve drawing in a canvas,
 we will also show how to draw curved arrows, with very simple code (much
 simpler than the one used for drawing the clock’s hands above).</p>
@@ -12041,15 +11998,18 @@ simpler than the one used for drawing the clock’s hands above).</p>
 <!------------------------------------------------------------------------------------------------>
 <p>The ctx.closePath() method indicates that we would like a closed
 path: draw from the last point to the first.</p>
+
 <h4>Try this:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 145. example closing a path (204) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image145.png?raw=true"
-   width="65%"
-   alt="Example on closing a path in a drawing." />   <br/></p>
+<img class="displayed"
+  src="./images/image145.png?raw=true"
+  alt="Example on closing a path in a drawing."
+  style="width:65%;" />
+
 <h4>HTML</h4>
+
 <details>
 <summary>Click to expand!</summary>
 
@@ -12107,16 +12067,11 @@ ctx.stroke();
 <h4>Explanations:</h4>
 
 <ul>
-<li><p><i>Lines 5-7</i> corresponds to a path made of two consecutive
-lines. If we just call stroke() after that, two lines will be drawn on
-the canvas.</p></li>
-<li><p><i>Line 10</i> indicates that we would like <i>a closed path</i>.
-In this case, the call to stroke() at <i>line 14</i> will draw the two
-lines plus an extra line that connects the last point of the path to the
-first one. It will draw a closed triangle!</p></li>
+  <li><i>Lines 5-7</i> corresponds to a path made of two consecutive lines. If we just call stroke() after that, two lines will be drawn on the canvas.</li>
+  <li><i>Line 10</i> indicates that we would like <i>a closed path</i>.  In this case, the call to stroke() at <i>line 14</i> will draw the two lines plus an extra line that connects the last point of the path to the first one. It will draw a closed triangle!</li>
 </ul>
-<p>Try commenting the <i>line 10</i> in the online example and see the
-results!</p>
+
+<p>Try commenting the <i>line 10</i> in the online example and see the results!</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-4-8">3.4.8 Drawing Circles and Arcs</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -12131,18 +12086,20 @@ Canvas Tutorials</a> Web site.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------- 146. html5 canvas arc diagram: drawing circle coordinate system (205) ------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image146.jpeg?raw=true"
-   width="50%"
-   alt="HTML5 canvas arc diagram: drawing circle, coordinate system." />
-  <br/></p>
+<img class="displayed"
+  src="./images/image146.jpeg?raw=true"
+  alt="HTML5 canvas arc diagram: drawing circle, coordinate system."
+  style="width:50%;" />
+
 <h4>Typical usage</h4>
+
 <h4>Typical usage for drawing an arc/circle/ellipse is:</h4>
 
 <pre><code>
 1.  ctx.arc(centerX, centerY, radius, startAngle, endAngle); // clockwise drawing
 2.  
-3.  ctx.arc(centerX, centerY, radius, startAngle, endAngle, false);</code></pre>
+3.  ctx.arc(centerX, centerY, radius, startAngle, endAngle, false);
+</code></pre>
 
 <p>The angles are in radians (between 0 and 2*Math.PI). The arc is drawn
 clockwise. Beware that this may not seem natural if you’re used to the
@@ -12151,17 +12108,20 @@ trigonometric order.</p>
 If true, instead of drawing an arc of circle that corresponds to the
 parameters, <i>it will draw its complementary</i>. See the examples
 below to see the difference.</p>
+
 <h3>Examples</h3>
+
 <h4>Example #1: drawing an arc with radius = 50, starting angle = 0, end angle = PI/2</h4>
+
 <h4>Try this example:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 147. example drawing an arc with radius = 50 (206) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image147.png?raw=true"
-   width="65%"
-   alt="Example on drawing an arc with radius = 50, start angle = 0, end angle = pi/2." />
-  <br/></p>
+<img class="displayed"
+  src="./images/image147.png?raw=true"
+  alt="Example on drawing an arc with radius = 50, start angle = 0, end angle = pi/2."
+  style="width:65%;" />
+
 <details>
 <summary>Click to expand!</summary>
 
@@ -12210,25 +12170,30 @@ ctx.stroke();
 3.  ctx.arc(100, 75, 50, 0, Math.PI/2, true);
 4.   
 5.  ctx.lineWidth = 10;
-6.  ctx.stroke();</code></pre>
-Then, the result is the “complementary” of the previous arc:
+6.  ctx.stroke();
+</code></pre>
+
+<p>Then, the result is the “complementary” of the previous arc:</p>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 148. example arc complementary of the previous arc (207) -------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image148.png?raw=true"
-   width="65%"
-   alt="Example complementary of the previous arc." />   <br/></p>
+<img class="displayed"
+  src="./images/image148.png?raw=true"
+  alt="Example complementary of the previous arc."
+  style="width:65%;" />
+   
 <h4>Example #2: drawing a Full circle (filled + outlined)</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 149. example draw a full circle (207) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image149.png?raw=true"
-   width="65%"
-   alt="Example draw a full circle." />   <br/></p>
+<img class="displayed"
+  src="./images/image149.png?raw=true"
+  alt="Example draw a full circle."
+  style="width:65%;" />
+
 <h4>Source code:</h4>
+
 <details>
 <summary>Click to expand!</summary>
 
@@ -12482,7 +12447,7 @@ a look!
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image155.png?raw=true"
-   alt="Comparison between lineTo and arcTo."
+  alt="Comparison between lineTo and arcTo."
   style="width:65%;" />
 
 <h4>HTML</h4>
@@ -12571,6 +12536,10 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 156. rounded triangle example (213) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center">
 <p><img src="./images/image156.png?raw=true"
    width="65%"
@@ -12629,6 +12598,10 @@ roundedTriangle(ctx,200,15,300,150,15,100,20,true,true);
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 157. html5 canvas quadratic curve diagram (214) ------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center">
 <p><img src="./images/image157.png?raw=true"
    width="55%"
@@ -12666,6 +12639,10 @@ point farther we get a sharper curve.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 158. quadratic curve (215) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center">
 <p><img src="./images/image158.png?raw=true"
    width="65%"
@@ -12699,6 +12676,10 @@ call the stroke() method for drawing the curve.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 159. example: lines connected with quadratic curve (216) -------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center">
 <p><img src="./images/image159.png?raw=true"
    width="65%"
@@ -12762,6 +12743,11 @@ context.stroke();
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 160. example: useful function for drawing curved arrows (217) ----------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
+
 <p align="center">
 <p><img src="./images/image160.png?raw=true"
    width="65%"
@@ -12912,6 +12898,10 @@ shapes or asymmetric curves.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 161. bezier curve in 's' (219) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center">
 <p><img src="./images/image161.jpeg?raw=true"
    width="35%"
@@ -12927,6 +12917,10 @@ second control point and the ending point.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 162. bezier curve control points (219) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center">
 <p><img src="./images/image162.png?raw=true"
    width="65%"
@@ -12964,6 +12958,10 @@ curves under the hood</a></p></li>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 163. bezier curve: example 1 (220) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center">
 <p><img src="./images/image163.png?raw=true"
    width="65%"
@@ -13022,6 +13020,11 @@ same, closed path</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------- 164. path with bezier curve, quadratic curve & line in same, closed path  (221) ------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
+
 <p align="center">
 <p><img src="./images/image164.png?raw=true"
    width="85%"
@@ -13091,6 +13094,11 @@ the drawing looks like a pair of goggles.</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 165. bezier curve maker tool (222) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image165.png?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:85%;" />
+
 <p align="center">
 <p><img src="./images/image165.png?raw=true"
    width="85%"
@@ -23539,6 +23547,7 @@ function getPhysicalAddress(latlong) {
 <h3 id="ch6-4-7">6.4.7 Discussion and projects</h3>
 <!------------------------------------------------------------------------------------------------>
 <h4>Optional projects</h4>
+
 <p>Here are a few project ideas. Your classmates and the team who prepared
 the course will be glad to try them and offer feedback. Please post URLs
 in this discussion forum. These projects are optional, meaning that they
@@ -23556,7 +23565,7 @@ good understanding of the material.</p>
 </ul>
 
 <p>. . .The end.<br>
-<br>last updated 1-10-23 6:29pm </p>
+<br>last updated 1-11-23 7:40pm </p>
 </body>
 </html>
 <!--
