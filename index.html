@@ -1679,19 +1679,20 @@ same outline:</p>
   alt="Outline of previous example."
   style="width:55%;" />
 
+<!------------------------------------------------------------------------------------------------>
 <h3>1.2.4 The HTML5 Logo</h3>
-<p>Here is the HTML5 logo! It has been
-<a href="https://www.w3.org/blog/2011/01/an-html5-logo/" target="_blank" rel="noopener noreferrer">unveiled on 18
-January 2011</a>, so way before HTML5 became a Web standard. This logo
-represents HTML5, the cornerstone for modern Web applications.</p>
+<!------------------------------------------------------------------------------------------------>
+<p>Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-html5-logo/" target="_blank" rel="noopener noreferrer">unveiled on 18 January 2011</a>, so way before HTML5 became a Web standard. This logo represents HTML5, the cornerstone for modern Web applications.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------ 30. html5 logo (30) --------------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image030.png?raw=true"
+<img class="displayed"
+  src="./images/image030.png?raw=true"
   alt="HTML5 logo."
-  width="35%">   <br/></p>
+  style="width:35%;" />
+
 <h3 id="ch1-3">1.3 New Structural Elements</h3>
+
 <p>Changes have been made to particular elements in HTML5 making it simpler
 to use. In this section, we will look at some examples highlighting
 these improvements, including:</p>
@@ -1709,28 +1710,28 @@ these improvements, including:</p>
 <details>
  <summary>Click to expand!</summary>
 
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Page Title</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-</head>
-<body>
-… <!-- The rest is content -->
-</body>
-</html>
-
 <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+… <!-- The rest is content -->
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
 </details>
 
 <h4>Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/" >this source</a>).</h4>
 <details>
   <summary>Click to expand!</summary>
 
-```html5
+<pre><code>
 1.  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;https://www.w3.org/TR/html4/strict.dtd&quot;&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
@@ -1743,8 +1744,6 @@ these improvements, including:</p>
 10.    ...
 11. &lt;/body&gt;
 12. &lt;/html&gt;
-```
-
 </code></pre>
 
 </details>
@@ -1756,6 +1755,7 @@ your document to protect against
 <a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7" target="_blank" rel="noopener noreferrer"> a
 serious security risk</a>. For more details, please refer to the “Why
 Internationalization is important” section in the Course intro chapter.</p>
+
 <h4>No more complicated DOCTYPE definitions</h4>
 
 <p>The “DOCTYPE” (Document Type Declaration) is used by tools such as
@@ -1765,6 +1765,7 @@ page. These rules are contained in special documents called “Document
 Type Definitions” (also abbreviated as DTDs), written in a language that
 may seem a bit barbaric to humans (they are intended to be read by
 software), and hosted by W3C.</p>
+
 <p>DTDs are not used by current Web browsers to  validate the structure
 of an HTML page, as  they “read” the code without using the DTD to
 decipher it, using only “rules” contained in their own “HTML engine”,
@@ -1786,8 +1787,8 @@ different possibilities (doctypes could be transitional, strict, or
 frameset). Most of the time, the doctype definition was copied and
 pasted from one document to another and was nearly impossible to
 memorize.</p>
-<h4>With HTML5, there is only one way to indicate the doctype, and it’s so
-simple there is no reason to forget it:</h4>
+
+<h4>With HTML5, there is only one way to indicate the doctype, and it’s so simple there is no reason to forget it:</h4>
 
 <pre><code>
 &lt;!doctype html&gt;
@@ -1797,13 +1798,8 @@ simple there is no reason to forget it:</h4>
 
 <p>With a rel=“stylesheet” attribute, it is no longer necessary to
 indicate type=“text/css” (from <a href="https://www.w3.org/TR/html5/links.html#link-type-stylesheet" target="_blank" rel="noopener noreferrer">
-the specification</a>: “the default type for resources given by
-the <a href="https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet" target="_blank" rel="noopener noreferrer">stylesheet</a> keyword
-is text/css.”)</p>
-The “type” attribute is not needed in HTML5, and even old browsers will
-use text/css as the default type for stylesheets today. So, either way,
-you can omit the “type” attribute altogether and use:
-</p>
+the specification</a>: “the default type for resources given by the <a href="https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet" target="_blank" rel="noopener noreferrer">stylesheet</a> keyword is text/css.”)</p>
+<p>The “type” attribute is not needed in HTML5, and even old browsers will use text/css as the default type for stylesheets today. So, either way, you can omit the “type” attribute altogether and use:</p>
 
 <pre><code>
 &lt;link href=&quot;file.css&quot; rel=&quot;stylesheet&quot;/&gt;
@@ -1888,8 +1884,8 @@ implementations, they also share common behaviors, layouts, and “ways of
 doing things” that could be guessed at first glance by a human.</p>
 <p>So various studies have been conducted in order to identify the most
 popular ids, class names, widgets, etc. used on the Web:</p>
-<p>Quoting from this
-<a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">article:</a>
+
+<p>Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">article:</a>
 <blockquote>
 “During the creation of HTML5, Ian Hickson used Google’s tools to mine
 data from over a billion Web pages, surveying what ids and class names
@@ -1900,107 +1896,51 @@ smaller URL set, but looked at a larger and wider variety of Web page
 statistics”.
 </blockquote>
 </p>
+
 <h4>New elements added to the HTML5 set</h4>
 
-<p>The results of these surveys led to the addition of new structural
-elements in HTML5. For example, the very popular &lt;div
-class=“header”&gt; led to the creation of
-a &lt;header&gt; element, &lt;div class=“aside”&gt; to
-a &lt;aside&gt; element, etc.</p>
-Finally, the 20 most popular ids and class names found in Hickson’s and
-Opera’s surveys gave birth to these new elements (click on the element’s
-name to go to the W3C specification about this element):
-</p>
+<p>The results of these surveys led to the addition of new structural elements in HTML5. For example, the very popular &lt;div class=“header”&gt; led to the creation of a &lt;header&gt; element, &lt;div class=“aside”&gt; to a &lt;aside&gt; element, etc.</p>
+<p>Finally, the 20 most popular ids and class names found in Hickson’s and
+Opera’s surveys gave birth to these new elements (click on the element’s name to go to the W3C specification about this element):</p>
+
 <h4>HTML5 structural elements with descriptions</h4>
 <ul>
-<li>
-<b><a href="https://www.w3.org/TR/html5/sections.html#the-header-element" target="_blank" rel="noopener noreferrer">&lt;header&gt;</b></a>Introduction
-of “sectioning elements”: an article, a section, the entire document
-(header page). Typically the header of a Web site that appears on top of
-each page, or a header of a long &lt;article&gt; or of a
-long &lt;section&gt;.
-</li>
-<li>
-<b><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element" target="_blank" rel="noopener noreferrer">&lt;footer&gt;</b></a>Contains
-the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.
-</li>
-<li>
-<b><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element" target="_blank" rel="noopener noreferrer">&lt;nav&gt;</b></a>Section
-that contains the main navigation links (within the document or to other
-pages).
-</li>
-<li>
-<b><a href="https://www.w3.org/TR/html5/sections.html#the-article-element" target="_blank" rel="noopener noreferrer">&lt;article&gt;</b></a>Independent
-content, which can be individually extracted from the document and
-syndicated (RSS or equivalent) without penalizing its understanding.
-Typically a blog post.
-</li>
-<li>
-<b><a href="https://www.w3.org/TR/html5/sections.html#the-section-element" target="_blank" rel="noopener noreferrer">&lt;section&gt;</b></a>Generic
-section used to group different articles for different purposes or
-subjects, or to define the different sections of a single article.
-Generally used with a header.
-</li>
-<li>
-<b><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element" target="_blank" rel="noopener noreferrer">&lt;time&gt;</b></a>Used
-for marking up times and dates.
-</li>
-<li>
-<b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank" rel="noopener noreferrer">&lt;aside&gt;</b></a>Section
-whose content is not necessarily directly related to the main content
-that surrounds it, but can provide additional information.
-</li>
-<li>
-<b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element" target="_blank" rel="noopener noreferrer">&lt;figure&gt;</b></a> and <b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element" target="_blank" rel="noopener noreferrer">&lt;figcaption&gt;</b></a>Used
-to encapsulate a figure as a single item, and contains a caption for the
-figure, respectively.
-</li>
-<li>
-<b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank" rel="noopener noreferrer">&lt;main&gt;</b></a>The
-main element represents the main content of the body of a document or
-application. The main content area consists of content that is directly
-related to or expands upon the central topic of a document or central
-functionality of an application. <b>There can be only
-one &lt;main&gt; element in a document.</b>
-</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-header-element" target="_blank" rel="noopener noreferrer">&lt;header&gt;</b></a>Introduction of “sectioning elements”: an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt;or of a long &lt;section&gt;.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element" target="_blank" rel="noopener noreferrer">&lt;footer&gt;</b></a>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element" target="_blank" rel="noopener noreferrer">&lt;nav&gt;</b></a>Section that contains the main navigation links (within the document or to other pages).</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-article-element" target="_blank" rel="noopener noreferrer">&lt;article&gt;</b></a>Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-section-element" target="_blank" rel="noopener noreferrer">&lt;section&gt;</b></a>Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element" target="_blank" rel="noopener noreferrer">&lt;time&gt;</b></a>Used for marking up times and dates.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank" rel="noopener noreferrer">&lt;aside&gt;</b></a>Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element" target="_blank" rel="noopener noreferrer">&lt;figure&gt;</b></a> and <b><a href "https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element" target="_blank" rel="noopener noreferrer">&lt;figcaption&gt;</b></a>Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank" rel="noopener noreferrer">&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b></li>
 </ul>
-<p>
+
 <p>And there is no &lt;content&gt; element even though the &lt;div
 class=“content”&gt; was very popular. Instead, the HTML5 group decided
 that anything not embedded in one of the elements from the above table
 is “default content”. If the content is of a type that corresponds to
 one of the elements from the table, i.e. if the content is an article,
 it should be embedded between &lt;article&gt; and &lt;article&gt;.</p>
-Read also at the end of this section about the new &lt;main&gt; element
-.  This element
-is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank" rel="noopener noreferrer">part
-of the HTML5 recommendation</a> and  an integral part of the HTML
-document structure.
-</p>
-<h4>
-External resources:
-</h4>
+<p>Read also at the end of this section about the new &lt;main&gt; element.</p>
+<p>This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank" rel="noopener noreferrer">part of the HTML5 recommendation</a> and  an integral part of the HTML document structure.</p>
+
+<h4>External resources:</h4>
+
 <ul>
-<li>
-A Smashing Magazine
-article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/" target="_blank" rel="noopener noreferrer">Structural
-Semantics: The Importance Of HTML5 Sectioning Elements</a>
-</li>
-<li>
-A Dev. Opera
-article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">New
-Structural Elements in HTML5</a>
-</li>
+  <li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/" target="_blank" rel="noopener noreferrer">Structural Semantics: The Importance Of HTML5 Sectioning Elements</a></li>
+  <li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">New Structural Elements in HTML5</a></li>
 </ul>
+
 <h3 id="ch1-3-3">1.3.3 Mixing All Elements Together: A Blog Example</h3>
+
 <h4>A blog example that uses the structural elements</h4>
-<p>Let’s study <a href="https://jsbin.com/bucokav/edit?html,output" target="_blank" rel="noopener noreferrer">an
-example we put on JsBin</a> (all examples we have cooked up are
-available on the jsbin.com Web site and can be modified freely: you can
-save your own version using the “Bins/create milestone” menu, share your
-version with others in the forums, etc. Don’t  hesitate to play with the
-source code, you will never break anything).</p>
+
+<p>Let’s study <a href="https://jsbin.com/bucokav/edit?html,output" target="_blank" rel="noopener noreferrer">an example we put on JsBin</a> (all examples we have cooked up are
+available on the jsbin.com Web site and can be modified freely: you can save your own version using the “Bins/create milestone” menu, share your version with others in the forums, etc. Don’t  hesitate to play with the source code, you will never break anything).</p>
+
 <h4>Use a &lt;header&gt; at the top of the blog</h4>
+
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 14. image of the header element at the top of the blog (35) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -2009,9 +1949,8 @@ source code, you will never break anything).</p>
   alt="Image of the header element at the top of the blog."
   style="width:35%;" />
 
-<p>This is an example of one way to organize a blog. Here, we have designed
-the HTML page using a &lt;header&gt; element that contains the “Simple
-HTML5 blog” text that appears on top of the page.</p>
+<p>This is an example of one way to organize a blog. Here, we have designed the HTML page using a &lt;header&gt; element that contains the “Simple HTML5 blog” text that appears on top of the page.</p>
+
 <h4>HTML code:</h4>
 
 <pre><code>
@@ -2050,8 +1989,8 @@ header span {
   alt="Image of the navigation menu."
   style="width:35%;" />
   
-<p>The navigation menu just below the header is a &lt;nav&gt; element. For
-the purpose of this example we haven’t provided any value for the hyperlinks…</p>
+<p>The navigation menu just below the header is a &lt;nav&gt; element. For the purpose of this example we haven’t provided any value for the hyperlinks…</p>
+
 <h4>HTML code:</h4>
 
 <details>
@@ -2241,6 +2180,7 @@ src=…&gt; element together with a &lt;figcaption&gt; element.
   src="./images/image018.jpeg?raw=true"
   alt="Image of figure and figcaption that embed an img."
   style="width:65%;" />
+  
 <p>Here is the CSS for the &lt;figcaption&gt; element we have used in the
 example (we did not apply any style to the &lt;figure&gt; element):</p>
 
@@ -3062,26 +3002,17 @@ Chrome HTML5 Outliner extension showed.</p>
 <!----------------- 32. image of the blog toc, show an untitled nav entry (52) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image031.jpeg?raw=true"
-  alt="Main element funny."
-  style="width:25%;" />
-<p style="text-align:center" width="100%">
-<img src="./images/image032.jpeg?raw=true"
+  src="./images/image032.jpeg?raw=true"
   alt="Image of the Blog Table of Contents, that show an untitled nav entry."
-  width="65%" />
-</p>
-<p>
-Also note that in this example, we used H1s after each sectioning
-element, and we still get a hierarchy, some H1s are inside
-an &lt;article&gt; that is in a &lt;section&gt; (this corresponds to the
-third example given in the “heading and sectioning elements” part of the
-course):
-</p>
+  style="width:65%;" />
+  
+<p>Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an &lt;article&gt; that is in a &lt;section&gt; (this corresponds to the third example given in the “heading and sectioning elements” part of the course):</p>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;section&gt;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+&lt;section&gt;
    &lt;header&gt;
      &lt;b&gt;&lt;h1&gt;Blog posts for April 2012&lt;/h1&gt;&lt;/b&gt;
    &lt;/header&gt;
@@ -3092,9 +3023,11 @@ Click to expand!
      &lt;/header&gt;
      ...
    &lt;/article&gt;
-&lt;/section&gt;</code></pre>
+&lt;/section&gt;
+</code></pre>
+
 </details>
-<p>
+
 <p>With this technique, parts of the document can be moved more easily,
 or integrated inside an RSS stream, without the need to renumber the
 headings.</p>
@@ -3104,17 +3037,11 @@ way of computing the heading hierarchy. A simple fix is to use an H1
 right after the &lt;body&gt; and use only H2…H6 inside &lt;section&gt;,
 &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt;.
 </p>
-<h4>
-Let’s fix the missing heading
-</h4>
-<p>
-We need to add a heading in the &lt;nav&gt; element. This will both fix
-the outline of the document by removing the untitled entry, and will
-also make screen readers happy as they will better vocalize the
-structure of the page (it will say “entering nav” followed by the
-vocalization of the heading content).
-</p>
-<pre><code>&lt;nav&gt;
+<h4>Let’s fix the missing heading</h4>
+<p>We need to add a heading in the &lt;nav&gt; element. This will both fix the outline of the document by removing the untitled entry, and will also make screen readers happy as they will better vocalize the structure of the page (it will say “entering nav” followed by the vocalization of the heading content).</p>
+
+<pre><code>
+&lt;nav&gt;
    &lt;header&gt;
       &lt;h1&gt;Navigation menu&lt;/h1&gt;
    &lt;b&gt;&lt;/header&gt;&lt;/b&gt;
@@ -3123,127 +3050,88 @@ vocalization of the heading content).
       &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
    &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
-<h4>
-Here is the fixed result:
-</h4>
+&lt;/nav&gt;
+</code></pre>
+
+<h4>Here is the fixed result:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 33. good outline without the untitled nav (53) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image031.jpeg?raw=true"
-  alt="Main element funny."
-  style="width:25%;" />
-<p style="text-align:center" width="100%">
-<img src="./images/image033.jpeg?raw=true"
+  src="./images/image033.jpeg?raw=true"
   alt="Good outline without the untitled nav."
-  width="55%" />   <br>
-<p>
-<p>A common remark from Web designers is: “we do not want a heading
-content displayed systematically after a &lt;nav&gt;, or
-an &lt;aside&gt; element…”</p>
-<p><b>BEST PRACTICE #1:</b> In order to NOT display the heading content
-on screen the recommended technique is described
-in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/" target="_blank" rel="noopener noreferrer">this
-article by Steve Faulkner</a>. Do not
-use display:none or visibility:hidden in your CSS stylesheet, as in that
-case the heading content will never be vocalized by screen readers, and
-more generally by assistive technologies.</p>
-<p>As an illustration of the recommended technique,
-see <a href="https://jsbin.com/savabo/edit?html,output" target="_blank" rel="noopener noreferrer">this
-JSBin version of the blog example</a> that hides
-the &lt;h2&gt;Navigation menu&lt;/h2&gt; from
-the &lt;nav&gt;…&lt;/nav&gt; element, using the CSS technique explained
-in the above link.</p>
-<b>BEST PRACTICE #2:</b> It is not advised to include interactive
-content (links, controls etc) that is hidden offscreen it is in fact a
-violation of
-the <a href="https://www.w3.org/TR/WCAG20/)" target="_blank" rel="noopener noreferrer">W3C WCAG
-2.0 Guidelines</a>. All interactive content must have a visible focus
-indicator (and be on screen when focused).
-</p>
-<h4>
-Embedding a table of contents and adding a &lt;main&gt; element
-</h4>
-<p>
-<p>In the previous section, we saw how to embed a table of contents
-using some JavaScript code borrowed from the Google Chrome HTML5
-outliner extension.</p>
-Let’s add this piece of code (we removed the JS details from this
-extract):
-</p>
-<pre><code>&lt;aside&gt;
+  style="width:55%;" />
+
+<p>A common remark from Web designers is: “we do not want a heading content displayed systematically after a &lt;nav&gt;, or an &lt;aside&gt; element…”</p>
+<p><b>BEST PRACTICE #1:</b> In order to NOT display the heading content on screen the recommended technique is described in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/" target="_blank" rel="noopener noreferrer">this article by Steve Faulkner</a>. Do not
+use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies.</p>
+<p>As an illustration of the recommended technique, see <a href="https://jsbin.com/savabo/edit?html,output" target="_blank" rel="noopener noreferrer">this JSBin version of the blog example</a> that hides the &lt;h2&gt;Navigation menu&lt;/h2&gt; from the &lt;nav&gt;…&lt;/nav&gt; element, using the CSS technique explained in the above link.</p>
+<b>BEST PRACTICE #2:</b> It is not advised to include interactive content (links, controls etc) that is hidden offscreen it is in fact a violation of
+the <a href="https://www.w3.org/TR/WCAG20/)" target="_blank" rel="noopener noreferrer">W3C WCAG 2.0 Guidelines</a>. All interactive content must have a visible focus indicator (and be on screen when focused).</p>
+
+<h4>Embedding a table of contents and adding a &lt;main&gt; element</h4>
+
+<p>In the previous section, we saw how to embed a table of contents using some JavaScript code borrowed from the Google Chrome HTML5 outliner extension.</p>
+<p>Let’s add this piece of code (we removed the JS details from this extract):</p>
+
+<pre><code>
+&lt;aside&gt;
    &lt;h1&gt;
      &lt;a href=&quot;javascript:(function(){...});&quot;
         title=&quot;TableOfContents&quot;&gt;
         Click here to display the table of contents!
      &lt;/a&gt;
    &lt;/h1&gt;
-&lt;/aside&gt;</code></pre>
-<h4>
-We also added a &lt;main&gt; element to identify the main content of the
-page composed of the big section with all blog posts:
-</h4>
-<pre><code>&lt;main&gt;
+&lt;/aside&gt;
+</code></pre>
+
+<h4>We also added a &lt;main&gt; element to identify the main content of the page composed of the big section with all blog posts: </h4>
+
+<pre><code>
+&lt;main&gt;
   &lt;section&gt;
      &lt;header&gt;
          &lt;h2&gt;Blog posts for April 2012&lt;/h2&gt;
      &lt;/header&gt;
      ...
-&lt;/main&gt;</code></pre>
-<h4>
-Use H1 as top level headings only, use H2…H6 in sectioning content
-</h4>
-<p>
-<p>As explained in the
-article <a href="https://www.paciellogroup.com/blog/2013/10/html5-document-outline/" target="_blank" rel="noopener noreferrer">HTML5
-Document Outline</a> and
-in <a href="https://www.w3.org/wiki/HTML/Usage/Headings" target="_blank" rel="noopener noreferrer">the W3C HTML
-Wiki</a>, it is risky to use nested H1s, as browsers do not correctly
-implement the “outline algorithm”.</p>
-<p>The blog example uses nested H1’s. If you check it
-with <a href="https://validator.w3.org/nu" target="_blank" rel="noopener noreferrer">the W3C
-conformance checker</a>, it issues a warning: “<i>Consider using the h1
-element as a top-level heading only (all h1 elements are treated as
-top-level headings by many screen readers and other tools).</i>”</p>
-While this is just a warning, we do prefer to use H1s only as top level
-elements, and replace the H1s we had after &lt;section&gt;,
-&lt;article&gt;, &lt;nav&gt; and &lt;aside&gt; elements respectively by
-a H2s and H3s.
-</p>
-<h4>
-Extract from source code:
-</h4>
-<pre><code>&lt;nav&gt;
+&lt;/main&gt;
+</code></pre>
+
+<h4>Use H1 as top level headings only, use H2…H6 in sectioning content</h4>
+
+<p>As explained in the article <a href="https://www.paciellogroup.com/blog/2013/10/html5-document-outline/" target="_blank" rel="noopener noreferrer">HTML5 Document Outline</a> and
+in <a href="https://www.w3.org/wiki/HTML/Usage/Headings" target="_blank" rel="noopener noreferrer">the W3C HTML Wiki</a>, it is risky to use nested H1s, as browsers do not correctly implement the “outline algorithm”.</p>
+<p>The blog example uses nested H1’s. If you check it with <a href="https://validator.w3.org/nu" target="_blank" rel="noopener noreferrer">the W3C conformance checker</a>, it issues a warning: “<i>Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).</i>”</p>
+<p>While this is just a warning, we do prefer to use H1s only as top level elements, and replace the H1s we had after &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt; elements respectively by a H2s and H3s.</p>
+
+<h4>Extract from source code:</h4>
+
+<pre><code>
+&lt;nav&gt;
    &lt;header&gt;
      &lt;h2&gt;Navigation menu&lt;/h2&gt;
    &lt;/header&gt;
    ...
-&lt;/nav&gt;</code></pre>
-<h4>
-Finally, the fixed example
-</h4>
+&lt;/nav&gt;
+</code></pre>
+
+<h4>Finally, the fixed example</h4>
+
 <ul>
-<li>
-<a href="https://jsbin.com/heboke/edit?html,output" target="_blank" rel="noopener noreferrer">Check
-it online with this JsBin</a>.
-</li>
+  <li><a href="https://jsbin.com/heboke/edit?html,output" target="_blank" rel="noopener noreferrer">Check it online with this JsBin</a>.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 34. blog with embedded table of contents (55) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image031.jpeg?raw=true"
-  alt="Main element funny."
-  style="width:25%;" />
-<p style="text-align:center" width="100%">
-<p><img src="./images/image034.jpeg?raw=true"
+  src="./images/image034.jpeg?raw=true"
   alt="Blog with embedded table of contents."
-  width="50%" />   <br/></p>
-<h3 id="ch1-3-10">
-1.3.10 Examples of Page Layouts
-</h3>
-<p>
+  style="width:50%;" />
+
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch1-3-10">1.3.10 Examples of Page Layouts</h3>
+<!------------------------------------------------------------------------------------------------>
+
 <p>In this section, we show some “classic” CSS layout techniques for
 designing an HTML page that uses the new sectioning elements. </p>
 <p>We embed examples from
@@ -3254,20 +3142,16 @@ page.</p>
 The 4 examples below are given “as is” to give you some hints. There are
 lots of other possibilities on using CSS to position element.
 </p>
-<h4>
-Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the
-right, using the float and width CSS properties
-</h4>
-<p>
-This example uses the following HTML structure (notice that we use the
-“HTML entity syntax” for displaying “&lt;” or “&gt;”. For
-example, “&lt;” displays a “&lt;” character).
-</p>
+
+<h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, using the float and width CSS properties</h4>
+
+<p>This example uses the following HTML structure (notice that we use the “HTML entity syntax” for displaying “&lt;” or “&gt;”. For example, “&lt;” displays a “&lt;” character).</p>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;header&gt;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+&lt;header&gt;
    &lt;code&gt;&lt;header&gt;&lt;/code&gt;
 &lt;/header&gt;
   
@@ -3281,9 +3165,11 @@ Click to expand!
   
 &lt;footer&gt;
    &lt;code&gt;&lt;footer&gt;&lt;/code&gt;
-&lt;/footer&gt;</code></pre>
+&lt;/footer&gt;
+</code></pre>
+
 </details>
-<p>
+
 <p>Here we use the CSS rule float:left for the &lt;section&gt; and the
 CSS rule float:right for the &lt;aside&gt;. When an element floats, it
 goes out of the normal flow of the HTML element. Then by default it
@@ -3292,49 +3178,37 @@ it contains. In order to fill the whole horizontal space, we prefer
 here to “force the width” by setting the CSS width property with a
 percentage.  We took width: 63% for the &lt;section&gt; on the left
 and width:30% for the &lt;aside&gt; on the right.</p>
-You can look at the complete CSS code in the interactive example below
+<p>You can look at the complete CSS code in the interactive example below
 (click on the CSS or HTML text in the menu bar below, or click “edit on
-codepen” to change the code and see the results):
-</p>
+codepen” to change the code and see the results):</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 35. header with section float left and aside float right (56) ------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image031.jpeg?raw=true"
-  alt="Main element funny."
-  style="width:25%;" />
-<p style="text-align:center" width="100%">
-<p><img src="./images/image035.png?raw=true"
+  src="./images/image035.png?raw=true"
   alt="Header with section float left and aside float right."
-  width="85%" />   <br/></p>
-<p><a href="https://jsbin.com/dufapo/edit?html,css,output" target="_blank" rel="noopener noreferrer">Also
-available online at JSBin</a>.</p>
+  style="width:85%;" />
+
+<p><a href="https://jsbin.com/dufapo/edit?html,css,output" target="_blank" rel="noopener noreferrer">Also available online at JSBin</a>.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------- 36. michel buffa home page - 3 sections centered (56) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image031.jpeg?raw=true"
-  alt="Main element funny."
-  style="width:25%;" />
-<p style="text-align:center" width="100%">
-<p><img src="./images/image036.png?raw=true"
-   width="85%"
-   alt="Michel Buffa home page: 3 sections centered." />   <br/></p>
-<h4>
-Example #2: three sections centered, of equal size, also using
-the float and width CSS properties
-</h4>
-<p>
-Here we show how to make a 3 column layout using the CSS float property.
-</p>
-<h4>
-HTML code:
-</h4>
+  src="./images/image036.png?raw=true"
+  alt="Michel Buffa home page: 3 sections centered."
+  style="width:85%;" />
+
+<h4>Example #2: three sections centered, of equal size, also using the float and width CSS properties</h4>
+
+<p>Here we show how to make a 3 column layout using the CSS float property.</p>
+
+<h4>HTML code:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;header&gt;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+&lt;header&gt;
    &lt;code&gt;&lt;header&gt;&lt;/code&gt;
 &lt;/header&gt;
    
@@ -3352,61 +3226,36 @@ Click to expand!
   
 &lt;footer&gt;
    &lt;code&gt;&lt;footer&gt;&lt;/code&gt;
-&lt;/footer&gt;</code></pre>
+&lt;/footer&gt;
+</code></pre>
+
 </details>
-<p>
-Instead of having one element with a float:left and one element with
-a float:right property, we instead use float:left for all three of them,
-and we give a width:30% CSS property value to
-each &lt;section&gt;. We also set a small margin so that the colums have
-a gap between them.
-</p>
-<h4>
-Look at the CSS code in the example below:
-</h4>
+
+<p>Instead of having one element with a float:left and one element with a float:right property, we instead use float:left for all three of them, and we give a width:30% CSS property value to each &lt;section&gt;. We also set a small margin so that the colums have a gap between them.</p>
+
+<h4>Look at the CSS code in the example below:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 37. header and three float sections (57) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image031.jpeg?raw=true"
-  alt="Main element funny."
-  style="width:25%;" />
-<p style="text-align:center" width="100%">
-<p><img src="./images/image037.png?raw=true"
+  src="./images/image037.png?raw=true"
   alt="Header with three float sections."
-  width="65%" />   <br/></p>
-<h4>
-Example #3: same result using the CSS flex property
-</h4>
-<p>
-This example uses the CSS flex property to achieve a result similar to
-the one shown in Example 2. There are many articles on Flexbox and we
-recommend those from Rachel Andrew on Smashing Magazine:
-“<a href="https://www.smashingmagazine.com/2018/10/flexbox-use-cases/" target="_blank" rel="noopener noreferrer">Use
-cases for Flexbox</a>”,
-“<a href="https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/" target="_blank" rel="noopener noreferrer">Flexbox:
-how big is that flexible box</a>”, etc.
-</p>
+  style="width:65%;" />
+
+<h4>Example #3: same result using the CSS flex property</h4>
+
+<p>This example uses the CSS flex property to achieve a result similar to the one shown in Example 2. There are many articles on Flexbox and we recommend those from Rachel Andrew on Smashing Magazine: “<a href="https://www.smashingmagazine.com/2018/10/flexbox-use-cases/" target="_blank" rel="noopener noreferrer">Use cases for Flexbox</a>”, “<a href="https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/" target="_blank" rel="noopener noreferrer">Flexbox: how big is that flexible box</a>”, etc.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 38. same example using the css flex property (57) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image031.jpeg?raw=true"
-  alt="Main element funny."
-  style="width:25%;" />
-<p align="center">
-<p><img src="./images/image038.png?raw=true"
+  src="./images/image038.png?raw=true"
   alt="Same example using the CSS Flex property."
-  width="65%" />   <br/></p>
-<h4>
-Example #4: another example written by a student, that uses the flex
-property
-</h4>
-<p>
-This example also uses all the structuring elements we saw: main,
-article, section, etc. It uses only the simplest parts of the FlexBox
-CSS module, so it should be easy to understand, even for CSS beginners:
-</p>
+  style="width:65%;" />
+
+<h4>Example #4: another example written by a student, that uses the flex property</h4>
+
+<p>This example also uses all the structuring elements we saw: main, article, section, etc. It uses only the simplest parts of the FlexBox CSS module, so it should be easy to understand, even for CSS beginners:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 39. another example using the flex property (58) ------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -3440,6 +3289,10 @@ content.</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------- 40. example of summary details elements from the w3c specs (59) ----------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image040.png?raw=true"
   alt="Example of summary details elements from the W3C specification."
@@ -3453,6 +3306,10 @@ version on JSBin</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 41. example of folded summary details (59) --------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center">
 <p><img src="./images/image040.png?raw=true"
    alt="Example of folded summary details."
@@ -3463,6 +3320,10 @@ icon to the left of the summary:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 42. Example of summary details unfolded (60) -------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image042.jpeg?raw=true"
   alt="Example of summary details unfolded."
@@ -3500,6 +3361,10 @@ this <a href="https://jsbin.com/dejagi/edit?html,css,output" target="_blank" re
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------------- 43. all folded (60) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image043.jpeg?raw=true"
   alt="Other example, unfolded."
@@ -3508,6 +3373,10 @@ this <a href="https://jsbin.com/dejagi/edit?html,css,output" target="_blank" re
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 44. click top level summary icon (60) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image044.jpeg?raw=true"
   alt="The unfolded content contains in turn a summary details folded."
@@ -3519,6 +3388,10 @@ previously unfolded</h5>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 45. click on embedded summary icon (61) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image045.jpeg?raw=true"
   alt="We unfolded the summary details inside the previous summary details. Recursive accordeons!"
@@ -3561,6 +3434,10 @@ example</a>):
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 46. pseudo classes for styling summary icons (61) ----------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image046.jpeg?raw=true"
   alt="Styling the open/close icon."
@@ -3581,6 +3458,10 @@ summary::-webkit-details-marker {
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 47. unfold and style (62) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image047.jpeg?raw=true"
   alt="Styled summary details icon, unfolded state."
@@ -3607,12 +3488,20 @@ it <a href="https://jsbin.com/sajusop/edit?html,css,output" target="_blank" rel
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 43. a '+' as a custom open icon for summary (62) ------------------------>
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p>&lt;img src=“./images/image043.jpeg?raw=true” alt=“A”+” as a custom
 open icon for summary.” width=“35%”&gt;   <br/></p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 48. a '-' as a custom close icon (62) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p align="center">
 <p>&lt;img src=“./images/image048.jpeg?raw=true” alt=“A”-” as a custom
 closed icon.” width=“35%”&gt;   <br/></p>
@@ -3657,6 +3546,10 @@ table for details and summary elements</a></li>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 49. it's about time clock (63) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image049.jpeg?raw=true"
   alt="Picture of a clock with the words 'it's about time'."
@@ -3757,6 +3650,10 @@ datetime=“P4D”&gt; (period = four days)…
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 50. duration values (64) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image050.jpeg?raw=true"
   alt="Funny picture duration values."
@@ -3830,6 +3727,10 @@ The &lt;mark&gt; element
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 51. yellow highlighter pen (65) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image051.jpeg?raw=true"
   alt="Picture of a yellow hightlighter pen."
@@ -3866,6 +3767,10 @@ context.</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 52. another example for marking code (66) --------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image052.jpeg?raw=true"
   alt="Another example for marking code."
@@ -3890,6 +3795,10 @@ change the style of the <mark> element:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 53. style the mark element with CSS (66) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image053.jpeg?raw=true"
   alt="Style the mark element with CSS."
@@ -4002,6 +3911,10 @@ To download a file using an arbitrary name: the download attribute
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 54. picture of a road sign with the words 'new way' (68) -------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image054.jpeg?raw=true"
   alt="Picture of a road sign with the words 'New Way'."
@@ -4022,6 +3935,10 @@ and the downloaded file is “MichelBuffa.gif”:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------ 55. image saved with another names thanks to the download attribute (68) ---------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image055.png?raw=true"
   alt="Image saved with another 'new' name, thanks to the download attribute."
@@ -4037,6 +3954,10 @@ Interesting applications: serverless download
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 56. no servers picture (68) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image056.jpeg?raw=true"
   alt="No server picture."
@@ -4058,6 +3979,10 @@ code of this demo on JSBin.com</a> for you to play with.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 57. serverless download demo (69) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image0.jpeg?raw=true"
+  alt="Image of the bla bla goes here."
+  style="width:xx%;" />
 <p style="text-align:center" width="100%">
 <p><img src="./images/image057.png?raw=true"
   alt="Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server."
@@ -4160,6 +4085,7 @@ is also true.</p>
 <!------------------------------- chapter 1-5-1. microdata (71) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-1">1.5.1 Microdata</h3>
+<!------------------------------------------------------------------------------------------------>
 <p>There are several ways to provide machine-readable content embedded in a classical Web
 document: <a href="https://www.w3.org/TR/html-rdfa/" target="_blank" rel="noopener noreferrer">HTML+RDFa</a>, <a href="http://microformats.org/" target="_blank" rel="noopener noreferrer">microformats</a>, <a href="https://json-ld.org/" target="_blank" rel="noopener noreferrer">JSON-LD</a>,
 HTML5 microdata. In this section, we focus on microdata.</p>
@@ -23565,7 +23491,7 @@ good understanding of the material.</p>
 </ul>
 
 <p>. . .The end.<br>
-<br>last updated 1-11-23 7:40pm </p>
+<br>last updated 1-12-23 9:33pm </p>
 </body>
 </html>
 <!--
