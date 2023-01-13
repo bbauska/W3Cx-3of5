@@ -795,11 +795,11 @@ name to go to the W3C specification about this element):</p>
     <td>Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</td>
   </tr>
   <tr>
-    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-section-element" target="_blank" rel="noopener noreferrer">&lt;section&gt;</td>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-section-element" target="_blank" rel="noopener noreferrer">&lt;section&gt;</a></td>
     <td>Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article.  Generally used with a header.</td>
   </tr>
   <tr>
-    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-time-element" target="_blank" rel="noopener noreferrer">&lt;time&gt;</td>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-time-element" target="_blank" rel="noopener noreferrer">&lt;time&gt;</a></td>
     <td>Used for marking up times and dates.</td>
   </tr>
   <tr>
@@ -1572,14 +1572,16 @@ Or, use a &lt;header&gt; element, like
 in &lt;section&gt;&lt;header&gt;&lt;Hx&gt;…&lt;Hx&gt;…..&lt;header&gt;…&lt;section&gt;
 </li>
 </ul>
+
 <h4>More about the &lt;header&gt; element</h4>
-<h4>The &lt;header&gt; element is just a container. It is not taken into
-account for defining new sections of a document nor does it affect the
-hierarchy levels.</h4>
+
+<h4>The &lt;header&gt; element is just a container. It is not taken into account for defining new sections of a document nor does it affect the hierarchy levels.</h4>
+
 <p>You can use heading elements &lt;h1&gt;…&lt;h6&gt; in
 a &lt;header&gt; but be careful if you use more than one, as the rules
 explained in the previous part of the course will apply and may generate
 implicit “sections” in the header.</p>
+
 <h4>This example has two headings in the &lt;header&gt;:</h4>
 
 <pre><code>
@@ -1602,12 +1604,11 @@ appear, one for the H1, one for the H2:</p>
   style="width:55%;" />
 
 <p>Indeed, HTML does not have a dedicated mechanism for marking up
-subheadings, alternative titles or taglines. </p>
-If you do not want the subtitles to be included in the table of
+subheadings, alternative titles or taglines.</p>
+<p>If you do not want the subtitles to be included in the table of
 contents, just use standard markup, for example &lt;p&gt; elements, as
 shown in the next example. Of course, CSS rules can be applied to change
-colors, sizes, etc.
-</p>
+colors, sizes, etc.</p>
 
 <pre><code>
 &lt;header&gt;
@@ -1620,12 +1621,12 @@ colors, sizes, etc.
 <p><b>Best practice #2</b>: try not to rely on implicit sectioning,
 use &lt;section&gt;, &lt;article&gt;, etc. instead of
 just &lt;h1&gt;…&amp;lr;h6&gt;.</p>
-The example below defines several implicit “sections” by
-using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):
-</p>
+<p>The example below defines several implicit “sections” by using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):</p>
+
 <h4>Ok version (no explicit sections everywhere):</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  &lt;body&gt;
@@ -1894,8 +1895,7 @@ of 3.5 million URLs, calling it MAMA (”Metadata Analysis and Mining
 Application”). MAMA, as structural Web-paged search engine, had a
 smaller URL set, but looked at a larger and wider variety of Web page
 statistics”.
-</blockquote>
-</p>
+</blockquote></p>
 
 <h4>New elements added to the HTML5 set</h4>
 
@@ -1908,12 +1908,12 @@ Opera’s surveys gave birth to these new elements (click on the element’s nam
   <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-header-element" target="_blank" rel="noopener noreferrer">&lt;header&gt;</b></a>Introduction of “sectioning elements”: an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt;or of a long &lt;section&gt;.</li>
   <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element" target="_blank" rel="noopener noreferrer">&lt;footer&gt;</b></a>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
   <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element" target="_blank" rel="noopener noreferrer">&lt;nav&gt;</b></a>Section that contains the main navigation links (within the document or to other pages).</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-article-element" target="_blank" rel="noopener noreferrer">&lt;article&gt;</b></a>Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-section-element" target="_blank" rel="noopener noreferrer">&lt;section&gt;</b></a>Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element" target="_blank" rel="noopener noreferrer">&lt;time&gt;</b></a>Used for marking up times and dates.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank" rel="noopener noreferrer">&lt;aside&gt;</b></a>Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element" target="_blank" rel="noopener noreferrer">&lt;figure&gt;</b></a> and <b><a href "https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element" target="_blank" rel="noopener noreferrer">&lt;figcaption&gt;</b></a>Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank" rel="noopener noreferrer">&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b></li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-article-element" target="_blank" rel="noopener noreferrer">&lt;article&gt;</a></b>Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-section-element" target="_blank" rel="noopener noreferrer">&lt;section&gt;</a></b>Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element" target="_blank" rel="noopener noreferrer">&lt;time&gt;</a></b>Used for marking up times and dates.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank" rel="noopener noreferrer">&lt;aside&gt;</a></b>Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element" target="_blank" rel="noopener noreferrer">&lt;figure&gt;</b></a> and <b><a href "https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element" target="_blank" rel="noopener noreferrer">&lt;figcaption&gt;</a></b>Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank" rel="noopener noreferrer">&lt;main&gt;</a></b>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b></li>
 </ul>
 
 <p>And there is no &lt;content&gt; element even though the &lt;div
