@@ -2508,46 +2508,50 @@ They cut a document into slices we call “sections”.</p>
 
 <p>The HTML5 specification says that “each sectioning element potentially
 has a heading and has also an outline associated”.</p>
-<h1>
+
+&lt;h1&gt;
 …
-<h6>
+&lt;h6&gt;
+
 <p> are called <b>headings</b>, and define the header of a section
 (whether explicitly marked up using sectioning content elements, or
 implied by the heading content itself). This means that:</p>
-<pre class="html5"><code>&lt;body&gt;
+
+<pre class="html5"><code>
+&lt;body&gt;
     &lt;h1&gt;Title of my document&lt;/h1&gt;
     ...
-&lt;/body&gt;</code></pre>
-<h4>
-… defines the header of a section <i>implicitly</i>, while:
-</h4>
-<pre class="html5"><code>&lt;body&gt;
+&lt;/body&gt;
+</code></pre>
+
+<h4>… defines the header of a section <i>implicitly</i>, while:</h4>
+
+<pre class="html5"><code>
+&lt;body&gt;
    ...
    &lt;section&gt;
       &lt;h1&gt;Title of my section&lt;/h1&gt;
       ...
    &lt;/section&gt;
 &lt;/body&gt;</code></pre>
-<h4>
-… defines the heading of <i>the explicit section</i> (its parent
-element &lt;section&gt;)
-</h4>
-<h4>
-Use multiple headings of different rank with sectioning content
-</h4>
-<p>
+<h4>… defines the heading of <i>the explicit section</i> (its parent element &lt;section&gt;)</h4>
+
+<h4>Use multiple headings of different rank with sectioning content</h4>
+
 <p>The first element of a heading content in an element of sectioning
 content represents the heading for that section
 (the &lt;section&gt;&lt;h1&gt;…&lt;/h1&gt;&lt;/section&gt; in the above
 example).</p>
-Subsequent headings of equal or higher rank start new (implied)
+
+<p>Subsequent headings of equal or higher rank start new (implied)
 sections, headings of lower rank start implied subsections that are part
 of the previous one. In both cases, the element represents the heading
-of the implied section.
-</p>
+of the implied section.</p>
+
 <h4>Let’s clarify this by looking at some example code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre class="html5"><code>
 &lt;body&gt;
@@ -3133,15 +3137,9 @@ in <a href="https://www.w3.org/wiki/HTML/Usage/Headings" target="_blank" rel="n
 <!------------------------------------------------------------------------------------------------>
 
 <p>In this section, we show some “classic” CSS layout techniques for
-designing an HTML page that uses the new sectioning elements. </p>
-<p>We embed examples from
-this <a href="https://learn.shayhowe.com/html-css/positioning-content/" target="_blank" rel="noopener noreferrer">very
-good post about “Positioning content”</a>. This is a recommended reading
-as it details how to use the CSS float property to layout a Web
-page.</p>
-The 4 examples below are given “as is” to give you some hints. There are
-lots of other possibilities on using CSS to position element.
-</p>
+designing an HTML page that uses the new sectioning elements.</p>
+<p>We embed examples from this <a href="https://learn.shayhowe.com/html-css/positioning-content/" target="_blank" rel="noopener noreferrer">very good post about “Positioning content”</a>. This is a recommended reading as it details how to use the CSS float property to layout a Web page.</p>
+<p>The 4 examples below are given “as is” to give you some hints. There are lots of other possibilities on using CSS to position element.</p>
 
 <h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, using the float and width CSS properties</h4>
 
@@ -3321,17 +3319,14 @@ icon to the left of the summary:</p>
 <!------------------------ 42. Example of summary details unfolded (60) -------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p style="text-align:center" width="100%">
-<p><img src="./images/image042.jpeg?raw=true"
+  src="./images/image042.jpeg?raw=true"
   alt="Example of summary details unfolded."
-  width="35%">   <br/></p>
+  style="width:35%;" />
   
 <h4>Here is the code of this example:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -23495,7 +23490,7 @@ good understanding of the material.</p>
 </ul>
 
 <p>. . .The end.<br>
-<br>last updated 1-12-23 9:33pm </p>
+<br>last updated 1-14-23 10:06pm </p>
 </body>
 </html>
 <!--
