@@ -3267,13 +3267,9 @@ content.</p>
 <!-------------- 40. example of summary details elements from the w3c specs (59) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p style="text-align:center" width="100%">
-<p><img src="./images/image040.png?raw=true"
+  src="./images/image040.png?raw=true"
   alt="Example of summary details elements from the W3C specification."
-  width="35%">   <br/></p>
+  style="width:35%;" />
 
 <p>The &lt;details&gt; element generates a simple widget to show/hide
 element contents, optionally by clicking on its child &lt;summary&gt; element.</p>
@@ -3284,13 +3280,9 @@ version on JSBin</a>:</p>
 <!------------------------- 41. example of folded summary details (59) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center">
-<p><img src="./images/image040.png?raw=true"
-   alt="Example of folded summary details."
-   width="35%">   <br/></p>
+  src="./images/image040.png?raw=true"
+  alt="Example of folded summary details."
+  style="width:35%;" />
 
 <p>And here is what is displayed after clicking on the small arrow-shaped
 icon to the left of the summary:</p>
@@ -3663,24 +3655,17 @@ A CSS Tricks’ article:
 “<a href="https://css-tricks.com/time-element/" target="_blank" rel="noopener noreferrer">The ‘time’ element</a>”
 </li>
 </ul>
-<h4>
-The &lt;mark&gt; element
-</h4>
+<h4>The &lt;mark&gt; element</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 51. yellow highlighter pen (65) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p style="text-align:center" width="100%">
-<p><img src="./images/image051.jpeg?raw=true"
+  src="./images/image051.jpeg?raw=true"
   alt="Picture of a yellow hightlighter pen."
-  width="45%">   <br/></p>
-  
-<p>The HTML <mark> tag is used for indicating text as marked or
-highlighted for reference purposes, due to its relevance in another
-context.</p>
+  style="width:45%;" />
+
+<p>The HTML <mark> tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.</p>
+
 <h4>Some use cases:</h4>
 
 <ul>
@@ -3710,13 +3695,9 @@ context.</p>
 <!-------------------------- 52. another example for marking code (66) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p style="text-align:center" width="100%">
-<p><img src="./images/image052.jpeg?raw=true"
+  src="./images/image052.jpeg?raw=true"
   alt="Another example for marking code."
-  width="45%">   <br/></p>
+  style="width:45%;" />
 
 <h4>Source code:</h4>
 
@@ -3738,23 +3719,20 @@ change the style of the <mark> element:</p>
 <!-------------------------- 53. style the mark element with CSS (66) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p style="text-align:center" width="100%">
-<p><img src="./images/image053.jpeg?raw=true"
+  src="./images/image053.jpeg?raw=true"
   alt="Style the mark element with CSS."
-  width="45%">   <br/></p>
-<h4>
-… comes with this CSS rule:
-</h4>
-<pre><code>mark {
+  style="width:45%;" />
+
+<h4>… comes with this CSS rule:</h4>
+
+<pre><code>
+mark {
    background-color: green;
    color: yellow;
-}</code></pre>
-<h4>
-External resources:
-</h4>
+}
+</code></pre>
+
+<h4>External resources:</h4>
 <ul>
 <li>
 From the
@@ -3773,22 +3751,23 @@ An article on Web Platform News:
 could help make your text more scannable</a>
 </li>
 </ul>
-<h3 id="ch1-4-3">
-1.4.3 The Download and Translate Attributes
-</h3>
-<h4>
-The old way to download files using HTML and HTTP
-</h4>
+<!------------------------------------------------------------------------------------------------>
+<h3 id="ch1-4-3">1.4.3 The Download and Translate Attributes</h3>
+<!------------------------------------------------------------------------------------------------>
+<h4>The old way to download files using HTML and HTTP</h4>
+
 <p>Everyone knows the classic way to make hyperlinks,
 using <a href="...">some text</a>. What happens when you click on the
 hyperlink depends on the MIME type received by the browser. If you link
 to a file the browser knows how to render (an html page, a gif, jpg, or
 png image, etc.) there is a good chance that the MIME type received by
 the browser will be something like this:</p>
-<pre><code>Content-type: text/html, text/plain, image/gif, image/jpg, etc.</code></pre>
-<h4>
-For example, HTML code such as this:
-</h4>
+
+<pre><code>
+Content-type: text/html, text/plain, image/gif, image/jpg, etc.
+</code></pre>
+
+<h4>For example, HTML code such as this:</h4>
 
 <pre><code>
 &lt;a href=&quot;toto.jpg&quot;&gt;
@@ -3815,15 +3794,20 @@ different from the one that appears in the URL of the href attribute.
 This can be done by generating, in addition to the Content-type line in
 the response HTTP header, a Content-Disposition line that looks like
 this:</p>
-<pre><code>Content-Disposition: attachment; filename=&quot;MyImage.png&quot;;</code></pre>
+
+<pre><code>
+Content-Disposition: attachment; filename=&quot;MyImage.png&quot;;
+</code></pre>
+
 <p>Here are some extracts from a Java Servlet that generate a zip file
 and forces the browser to propose downloading it using a specified
 name:</p>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>protected void doGet(HttpServletRequest request, HttpServletResponse response)
+  <summary>Click to expand!</summary>
+
+<pre><code>
+protected void doGet(HttpServletRequest request, HttpServletResponse response)
 throws ServletException, IOException {
    try {
      // Build the zip file
@@ -3843,32 +3827,35 @@ throws ServletException, IOException {
     } catch (Exception e) {
        e.printStackTrace();
     }
-}</code></pre>
+}
+</code></pre>
+
 </details>
+
 <p>The above example will cause the browser that invoked this
 server-side code to start the download of a file named “DATA.ZIP”.</p>
-<h4>
-To download a file using an arbitrary name: the download attribute
-</h4>
+
+<h4>To download a file using an arbitrary name: the download attribute</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 54. picture of a road sign with the words 'new way' (68) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p style="text-align:center" width="100%">
-<p><img src="./images/image054.jpeg?raw=true"
+  src="./images/image054.jpeg?raw=true"
   alt="Picture of a road sign with the words 'New Way'."
-  width="15%">   <br/></p>
+  style="width:15%;" />
+
 <p>HTML5 proposes the use of a new attribute named download to download
 resources rather than navigating to them. The example below shows how to
 trigger the download of an image by the browser (instead of rendering
 it, which is the default behavior) with a name different from the name
 of the resource.</p>
-<pre><code>&lt;a href=&quot;normal.gif&quot; [download]=[&quot;MichelBuffa.gif&quot;]&gt;
+
+<pre><code>
+&lt;a href=&quot;normal.gif&quot; [download]=[&quot;MichelBuffa.gif&quot;]&gt;
    download a picture of Michel Buffa
-&lt;/a&gt;</code></pre>
+&lt;/a&gt;
+</code></pre>
+
 <p>This will indeed force the download of an image with a filename
 different from its original filename on the server side. Here is a
 screen capture of the Web browser while downloading the picture. We can
@@ -3878,13 +3865,10 @@ and the downloaded file is “MichelBuffa.gif”:</p>
 <!------------ 55. image saved with another names thanks to the download attribute (68) ---------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p style="text-align:center" width="100%">
-<p><img src="./images/image055.png?raw=true"
+  src="./images/image055.png?raw=true"
   alt="Image saved with another 'new' name, thanks to the download attribute."
-  width="25%">   <br/></p>
+  style="width:25%;" />
+  
 <p><b>WARNING</b>: since 2015, and for security reasons, <b>the image
 should be located on the same domain as the HTML page that contains the
 link</b> (using a relative URL works well, for example, but linking a
@@ -3897,41 +3881,24 @@ Interesting applications: serverless download
 <!--------------------------------- 56. no servers picture (68) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p style="text-align:center" width="100%">
-<p><img src="./images/image056.jpeg?raw=true"
+  src="./images/image056.jpeg?raw=true"
   alt="No server picture."
-  width="35%">   <br/></p>
-<h4>
-Serverless download demo (by E.Bilderman)
-</h4>
-<p>This demo shows the use of the download attribute together with the
-HTML5 File, FileSystem and FileWriter APIs (to be studied later in
-this course) for generating on-the-fly content from JavaScript code, and
-proposing downloading it to a file.  </p>
-<p>We won’t detail this demo here, but take a look if you are curious to
-see what can be done with this new download attribute. As the FileWriter
-and FileSystem APIs are still supported only by Google Chrome (other
-browsers need polyfills), you will need Google Chrome to try it.</p>
-<p>We have also put the
-simplified <a href="https://jsbin.com/muluwey/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">source
-code of this demo on JSBin.com</a> for you to play with.</p>
+  style="width:35%;" />
+
+<h4>Serverless download demo (by E.Bilderman)</h4>
+
+<p>This demo shows the use of the download attribute together with the HTML5 File, FileSystem and FileWriter APIs (to be studied later in this course) for generating on-the-fly content from JavaScript code, and proposing downloading it to a file.</p>
+<p>We won’t detail this demo here, but take a look if you are curious to see what can be done with this new download attribute. As the FileWriter and FileSystem APIs are still supported only by Google Chrome (other browsers need polyfills), you will need Google Chrome to try it.</p>
+<p>We have also put the simplified <a href="https://jsbin.com/muluwey/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">source code of this demo on JSBin.com</a> for you to play with.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 57. serverless download demo (69) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p style="text-align:center" width="100%">
-<p><img src="./images/image057.png?raw=true"
+  src="./images/image057.png?raw=true"
   alt="Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server."
-  width="50%">   <br/></p>
-<h4>
-External resources:
-</h4>
+  style="width:50%;" />
+
+<h4>External resources:</h4>
 <ul>
 <li>
 From the
@@ -4144,6 +4111,7 @@ data are correct.
 <p><img src="./images/image058.jpeg?raw=true"
   alt="Picture of diverse tools used by workers."
   width="20%">   <br/></p>
+  
 <p>One of the most popular resources for testing microdata (as well as
 microformats and RDFa) is
 this <a href="https://developers.google.com/search/docs/guides/intro-structured-data" target="_blank" rel="noopener noreferrer">Google
@@ -4151,23 +4119,23 @@ page about understanding how structured data works</a>. This page
 contains a link to a structured data testing tool that you can use to
 see how Google recognizes the semantic data you embed in your HTML
 code.</p>
-<h4>
-Testing a real interactive example with an “about page” for Michel Buffa
-</h4>
+
+<h4>Testing a real interactive example with an “about page” for Michel Buffa</h4>
+
 <p>Let’s have a look now at a (small) example of an about page. It
 renders as a very simple paragraph that explains who Michel Buffa is…
 But we embedded Microdata, so it’s interesting to see how a search
 engine sees it, and how it may produce “augmented search results”.</p>
 <p><a href="https://jsbin.com/gunuzus/1/edit?html,output" target="_blank" rel="noopener noreferrer">Online example
 at JsBin</a></p>
-<h4>
-Source code:
-</h4>
+
+<h4>Source code:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.  &lt;meta charset=utf-8 /&gt;
@@ -4189,11 +4157,12 @@ Click to expand!
 20.     &lt;/span&gt;
 21. &lt;/div&gt;
 22. &lt;/body&gt;
-23. &lt;/html&gt;</code></pre>
+23. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Rendering of the page in a browser:
-</h4>
+
+<h4>Rendering of the page in a browser:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 59. rendering of michel buffa home page (73) -------------------------->
 <!------------------------------------------------------------------------------------------------>
