@@ -4096,21 +4096,17 @@ too hard for authors to write, microdata is HTML5’s answer to help embed seman
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-2">1.5.2 Testing Tools</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Introduction
-</h4>
-<p>
-After seeing the principle of embedding microdata in an HTML page, we
+<h4>Introduction</h4>
+<p>After seeing the principle of embedding microdata in an HTML page, we
 now present some structured data test tools you can use to check if your
-data are correct.
-</p>
+data are correct.</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 58. picture of diverse tools used by workers (72) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image058.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image058.jpeg?raw=true"
   alt="Picture of diverse tools used by workers."
-  width="20%">   <br/></p>
+  style="width:20%;" />
   
 <p>One of the most popular resources for testing microdata (as well as
 microformats and RDFa) is
@@ -4166,95 +4162,76 @@ at JsBin</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 59. rendering of michel buffa home page (73) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image059.jpeg?raw=true"
-  alt="Rendering of Michel Buffa home page."
-  width="65%">   <br/></p>
-<p>Here is what Google sees of the page. We just
-entered its <a href="https://output.jsbin.com/gunuzus/1" target="_blank" rel="noopener noreferrer">URL</a> in
-the <a href="https://developers.google.com/search/docs/guides/intro-structured-data" target="_blank" rel="noopener noreferrer">Google
-page about rich snippets and structured data</a>:</p>
+<img class="displayed"
+  src="./images/image059.jpeg?raw=true"
+  alt="Rendering of Michael Buffa's home page."
+  style="width:65%;" />
+
+<p>Here is what Google sees of the page. We just entered its <a href="https://output.jsbin.com/gunuzus/1" target="_blank" rel="noopener noreferrer">URL</a> in the <a href="https://developers.google.com/search/docs/guides/intro-structured-data" target="_blank" rel="noopener noreferrer">Google page about rich snippets and structured data</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 60. microdata of the example, as seen by google (74) ---------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image060.png?raw=true"
-  alt="Microdata of the example, as seen by Google."
-  width="50%">   <br/></p>
-<p>Note that the address is a fully featured embedded object in the
-Person’s description.</p>
-<h4>
-Live Microdata
-</h4>
+<img class="displayed"
+  src="./images/image060.png?raw=true"
+  alt="Microdata of the example, as see by Google."
+  style="width:50%;" />
+
+<p>Note that the address is a fully featured embedded object in the Person’s description.</p>
+
+<h4>Live Microdata</h4>
+
 <p>The <a href="https://foolip.org/microdatajs/live/" target="_blank" rel="noopener noreferrer">Live Microdata Web
-site</a> is a bit similar to the previous one except that it shows the
-extracted metadata as JSON objects: </p>
+site</a> is a bit similar to the previous one except that it shows the extracted metadata as JSON objects:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 61. example live microdata (74) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image061.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image061.jpeg?raw=true"
   alt="Example of live microdata from the previous example. Microdata are displayed as json objects."
-  width="60%">   <br/></p>
-<h4>
-And the JSON view of the microdata:
-</h4>
+  style="width:60%;" />
+  
+<h4>And the JSON view of the microdata:</h4>
+
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 62. json view of the microdata (74) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image062.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image062.jpeg?raw=true"
   alt="JSON view of the microdata."
-  width="40%">   <br/></p>
+  style="width:40%;" />
+
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- Chapter 1-5-3. adding microdata to an html page (75) ---------------------->
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-3">
-1.5.3 Adding Microdata to an HTML Page
-</h3>
+<h3 id="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Basic steps
-</h4>
-<p>
-Adding microdata to an HTML page is a really simple task and requires
-only three attributes: <b>itemscope, itemtype</b>  and <b>itemprop</b>.
-</p>
-<h4>
-1 - Define a container element by adding an itemscope attribute
-</h4>
-<p>
-First, you need to add an itemscope attribute to an HTML element. This
+<h4>Basic steps</h4>
+
+<p>Adding microdata to an HTML page is a really simple task and requires only three attributes: <b>itemscope, itemtype</b>  and <b>itemprop</b>.</p>
+
+<h4>1 - Define a container element by adding an itemscope attribute</h4>
+
+<p>First, you need to add an itemscope attribute to an HTML element. This
 will define the “global object” for which we will define properties.
 This element can be of different types that we will describe later, but
 for now let us keep looking at the same example we used in previous
-sections:
-</p>
-<pre><code>&lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
+sections:</p>
+
+<pre><code>
+&lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
    ...
-&lt;/section&gt;</code></pre>
-<p>
-We will look at the itemtype attribute later. Now that we have defined a
+&lt;/section&gt;
+</code></pre>
+
+<p>We will look at the itemtype attribute later. Now that we have defined a
 global wrapper object/element (a Person in this case), we can  add
-properties inside this element to define the first name, last name, etc.
-</p>
-<h4>
-2 - Specify the vocabulary used for your microdata with
-the itemtype attribute of the container element
-</h4>
-<p>
-<p>HTML5 proposes semantic elements for representing sections, articles,
-headers, etc, but it does not propose any specific elements or
-attributes to describe an address, a product, a person, etc.</p>
-<p>We need a special vocabulary to represent a person or a physical
-address. With microdata you can define your own vocabulary or better,
-reuse one of the existing popular vocabularies, such
-as <a href="https://schema.org/" target="_blank" rel="noopener noreferrer">schema.org</a>. </p>
-<p>Microdata works with properties defined as name/value pairs. The
-names are defined in the corresponding vocabulary. For example, the
-vocabulary for representing
-a <a href="https://schema.org/Person" target="_blank" rel="noopener noreferrer">Person</a> defines a set of
-property names.</p>
+properties inside this element to define the first name, last name, etc.</p>
+
+<h4>2 - Specify the vocabulary used for your microdata with the itemtype attribute of the container element</h4>
+
+<p>HTML5 proposes semantic elements for representing sections, articles, headers, etc, but it does not propose any specific elements or attributes to describe an address, a product, a person, etc.</p>
+<p>We need a special vocabulary to represent a person or a physical address. With microdata you can define your own vocabulary or better, reuse one of the existing popular vocabularies, such as <a href="https://schema.org/" target="_blank" rel="noopener noreferrer">schema.org</a>.</p>
+<p>Microdata works with properties defined as name/value pairs. The names are defined in the corresponding vocabulary. For example, the vocabulary for representing a <a href="https://schema.org/Person" target="_blank" rel="noopener noreferrer">Person</a> defines a set of property names.</p>
 <p>As you can see in this small extract from the vocabulary (also called
 a “schema”), a Person can have a name (some text), an Address (the type
 is defined by another vocabulary named PostalAddress), an affiliation
@@ -4269,17 +4246,15 @@ If you are a developer and if you are familiar with object oriented
 programming, think of properties as class attributes and think of
 vocabularies as classes.
 </p>
-<h4>
-Vocabularies are meant to be shared
-</h4>
+<h4>Vocabularies are meant to be shared</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 63. picture of 'time to share' (76) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image063.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image063.jpeg?raw=true"
   alt="Picture with words 'time to share'."
-  width="25%">   <br/></p>
-<p>
+  style="width:25%;" />
+  
 <p>If one of the existing vocabularies available at the schema.org Web
 site fits your needs, you should reuse it, as the most popular
 vocabularies are becoming de facto standards and will be taken into
@@ -4288,24 +4263,19 @@ However, if you do not find a vocabulary corresponding to your needs,
 keep in mind that anyone can define a microdata vocabulary and start
 embedding custom properties in their own Web pages. You need to define a
 namespace and put a description of your vocabulary in a Web page that
-has the name of your vocabulary.
-</p>
-<h4>
-3 - Add properties using the itemprop attribute in HTML elements inside
-the container
-</h4>
-<h4>
-Basics:
-</h4>
+has the name of your vocabulary.</p>
+<h4>3 - Add properties using the itemprop attribute in HTML elements inside the container</h4>
+
+<h4>Basics:</h4>
 <p>
 Now that you have defined a container element, you may add properties to
 the HTML inside:
 </p>
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+1.  &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
 2.       &lt;h1&gt;Contact Information&lt;/h1&gt;
 3.       &lt;dl&gt;
 4.           &lt;dt&gt;Name&lt;/dt&gt;
@@ -4326,41 +4296,39 @@ Click to expand!
 19.          &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
 20.              [itemprop=&quot;url&quot;]&gt;Michel Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
 21.      &lt;/ul&gt;
-22. &lt;/section&gt;</code></pre>
+22. &lt;/section&gt;
+</code></pre>
+
 </details>
-<p>
-In this example, the container is a &lt;section&gt; that corresponds to
+
+<p>In this example, the container is a &lt;section&gt; that corresponds to
 a Person (we have one clue here: the name of the vocabulary given by
 the itemtype attribute), and each property defined inside this section
-is identified by the value of the itemprop attribute of sub-elements.
-</p>
-<h4>
-The line:
-</h4>
-<pre><code>&lt;dd itemprop=&quot;name&quot;Michel Buffa&lt;/dd&gt;</code></pre>
-<p>
-…defines a property called “name” that has a value of “Michel Buffa”
-(the text value between the opening and closing tags of
-the &lt;dd&gt; element).
-</p>
-<h4>
-Nesting microdata items
-</h4>
-<p>
+is identified by the value of the itemprop attribute of sub-elements.</p>
+
+<h4>The line:</h4>
+
+<pre><code>
+&lt;dd itemprop=&quot;name&quot;Michel Buffa&lt;/dd&gt;
+</code></pre>
+
+<p>…defines a property called “name” that has a value of “Michel Buffa” (the text value between the opening and closing tags of the &lt;dd&gt; element).</p>
+
+<h4>Nesting microdata items</h4>
+
 <p>As we saw with the Person/Address example at the beginning of this
-chapter, it is possible to nest microdata items inside one another.</p>
+chapter, it is possible to nest microdata items inside one another.<br>
 Give an element inside a microdata container its own itemscope attribute
 with the recommended itemtype attribute for indicating the name of the
-vocabulary used by the nested microdata.
-</p>
-<h4>
-Again, look at the Person/Address example:
-</h4>
+vocabulary used by the nested microdata.</p>
+
+<h4>Again, look at the Person/Address example:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  ...
+  <summary>Click to expand!</summary>
+
+<pre><code>
+1.  ...
 2.  &lt;/dl&gt;
 3.  
 4.  &lt;!-- SURFACE ADDRESS GOES HERE --&gt;
@@ -4379,65 +4347,57 @@ Click to expand!
 17. 
 18. &lt;h1&gt;My different online public accounts&lt;/h1&gt;
 19. 
-20. ...</code></pre>
+20. ...
+</code></pre>
+
 </details>
-<p>
-The properties at <i>lines 8-12</i> refer to the address nested
-microdata (they are defined in the Address vocabulary, not the Person
-vocabulary), and “France” (<i>line 14</i>) is a property that refers to
-the Country vocabulary.
-</p>
-<h4>
-Several properties with the same name but different values
-</h4>
-<p>
-It is possible to use the same property name several times in
-one microdata object, but with different values:
-</p>
-<pre><code>1.  ...
+
+<p>The properties at <i>lines 8-12</i> refer to the address nested microdata (they are defined in the Address vocabulary, not the Person vocabulary), and “France” (<i>line 14</i>) is a property that refers to the Country vocabulary.</p>
+
+<h4>Several properties with the same name but different values</h4>
+
+<p>It is possible to use the same property name several times in one microdata object, but with different values: </p>
+
+<pre><code>
+1.  ...
 2.  &lt;h1&gt;My different online public accounts&lt;/h1&gt;
 3.  &lt;ul&gt;
 4.  &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;[ itemprop=&quot;url&quot;]&gt;Twitter
 5.        profile&lt;/a&gt;&lt;/li&gt;
 6.  &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;[ itemprop=&quot;url&quot;]&gt;Michel
 7.        Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
-8.  &lt;/ul&gt;</code></pre>
-<p>
+8.  &lt;/ul&gt;
+</code></pre>
+
 <p>This defines the fact that Michel Buffa has two online accounts, and
 the two properties have the name url, each with its own value.</p>
-<h4>
-It is possible to set more than one property at once, with the same
-value
-</h4>
-<p>
-Here are some microdata that represent a song. In this example, at line
-5 we set  two different properties: genre and keywords with the same
-value (see
-the <a href="https://schema.org/MusicRecording" target="_blank" rel="noopener noreferrer">MusicRecording schema
-definition</a>):
-</p>
-<pre><code>1.  &lt;div itemscope itemtype=&quot;https://schema.org/MusicRecording&quot;&gt;
+
+<h4>It is possible to set more than one property at once, with the same value</h4>
+
+<p>Here are some microdata that represent a song. In this example, at line 5 we set two different properties: genre and keywords with the same value (see the <a href="https://schema.org/MusicRecording" target="_blank" rel="noopener noreferrer">MusicRecording schema definition</a>):</p>
+
+<pre><code>
+1.  &lt;div itemscope itemtype=&quot;https://schema.org/MusicRecording&quot;&gt;
 2.  &lt;h2&gt;The song I just published&lt;/h2&gt;
 3.  &lt;ul&gt;
 4.  &lt;li&gt;Name: &lt;span itemprop=&quot;name&quot;&gt;Please buy me on itunes, I need money!&lt;/span&gt;&lt;/li&gt;
 5.  &lt;li&gt;Band: &lt;span [itemprop=&quot;genre keywords&quot;]&gt;[Punk, Ska]&lt;/span&gt;&lt;/li&gt;
 6.  &lt;/ul&gt;
-7.  &lt;/div&gt;</code></pre>
-<p>
-<p>And so on…</p>
+7.  &lt;/div&gt;
+</code></pre>
+
+<p>And so on…<br>
 Now, let’s see what elements are compatible with the itemprop attribute
 and where the values of the properties are located, depending on each
-element type.
+element type.<br>
 </p>
-<h4>
-The HTML elements compatible with the itemprop attribute
-</h4>
-<p>
-If the itemprop attribute appears on a:
-</p>
-<h4>
-Elements that can be associated with microdata
-</h4>
+
+<h4>The HTML elements compatible with the itemprop attribute</h4>
+
+<p>If the itemprop attribute appears on a:</p>
+
+<h4>Elements that can be associated with microdata</h4>
+
 <div data-align="center" width="100%">
 <table>
 <colgroup>
@@ -4493,52 +4453,31 @@ the href attribute:
 </p>
 <pre><code>&lt;a href=&quot;https://www.twitter.com/micbuffa&quot; itemprop=&quot;url&quot;&gt;profile&lt;/a&gt;</code></pre>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-4">
-1.5.4 Microdata Tools
-</h3>
+<h3 id="ch1-5-4">1.5.4 Microdata Tools</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>
-There are many tools available (most are free) that you can use for
-generating, visualizing and debugging microdata. We list some of them in
-this page, but feel free to share the tools you find / like in the
-forums.
-</p>
-<h4>
-Microdata generators
-</h4>
-To automatically generate microdata for describing persons, restaurants,
-movies, products, organizations, etc., there is a wide variety of
-microdata generators such as these listed below (but do not hesitate to
-search for “microdata generators” using your favorite search engine, and
-you will find lots!):
+<p>There are many tools available (most are free) that you can use for generating, visualizing and debugging microdata. We list some of them in this page, but feel free to share the tools you find / like in the forums.</p>
+
+<h4>Microdata generators</h4>
+
+<p>To automatically generate microdata for describing persons, restaurants, movies, products, organizations, etc., there is a wide variety of microdata generators such as these listed below (but do not hesitate to search for “microdata generators” using your favorite search engine, and you will find lots!):</p>
+
 <ul>
-<li>
-The <a href="https://webcode.tools/microdata-generator" target="_blank" rel="noopener noreferrer">Ultimate
-Microdata Generator</a>
-</li>
-<li>
-The <a href="https://microdatagenerator.org/" target="_blank" rel="noopener noreferrer">MicroData Generator</a>
-</li>
-<li>
-The <a href="https://technicalseo.com/tools/schema-markup-generator/" target="_blank" rel="noopener noreferrer">Schema
-Markup Generator (JSON-LD)</a>
-</li>
+  <li>The <a href="https://webcode.tools/microdata-generator" target="_blank" rel="noopener noreferrer">Ultimate Microdata Generator</a></li>
+  <li>The <a href="https://microdatagenerator.org/" target="_blank" rel="noopener noreferrer">MicroData Generator</a></li>
+  <li>The <a href="https://technicalseo.com/tools/schema-markup-generator/" target="_blank" rel="noopener noreferrer">Schema Markup Generator (JSON-LD)</a></li>
 </ul>
-<h4>
-Example:
-</h4>
+
+<h4>Example:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 64. microdata person generator (80) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image064.jpeg?raw=true"
-  width="65%"
-  alt="Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata." />
-  <br/></p>
+<img class="displayed"
+  src="./images/image064.jpeg?raw=true"
+  alt="Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata."
+  style="width:65%;" />
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-5">
-1.5.5 Examples of Well Structured Documents with Microdata
-</h3>
+<h3 id="ch1-5-5">1.5.5 Examples of Well Structured Documents with Microdata</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Here, we propose a few links to Web pages that were created by
 students of previous editions of this course).</p>
@@ -4560,43 +4499,36 @@ Structure:
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 65. microdata example #1 (80) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image065.jpeg?raw=true"
-  width="40%"
-  alt="Picture of the first 'about me' page example. Shows the table of contents." />
-  <br/></p>
-<h4>
-Microdata:
-</h4>
+<img class="displayed"
+  src="./images/image065.jpeg?raw=true"
+  alt="Picture of the first 'about me' page example. Shows the table of contents."
+  style="width:50%;" />
+
+<h4>Microdata:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 66. schema type/properties from microdata  (81) ------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image066.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image066.jpeg?raw=true"
   alt="Microdata from the example page."
-  width="50%">   <br/></p>
-<h4>
-Example #2:
-</h4>
+  style="width:50%;" />
+
+<h4>Example #2:</h4>
 <p>View
 the <a href="https://jsbin.com/karemi/1/edit?html,output" target="_blank" rel="noopener noreferrer">example #2
 online</a>.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 67. example #2 page - shows microdata (81) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image067.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image067.jpeg?raw=true"
   alt="Example page, shows table of contents."
-  width="50%">   <br/></p>
+  style="width:50%;" />
+  
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-1">
-Module 2: HTML5 Multimedia
-</h3>
+<h3 id="ch2-1">Module 2: HTML5 Multimedia</h3>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-2-1">
-2.2.1 The &lt;video&gt; Element
-</h3>
+<h3 id="ch2-2-1">2.2.1 The &lt;video&gt; Element</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>
 Until 2012, it was only possible to integrate an audio or video player
@@ -4607,19 +4539,16 @@ the sound and &lt;canvas&gt; for drawing and animation). <i>(Note that
 Adobe <a href="https://www.adobe.com/products/flashplayer/end-of-life.html" target="_blank" rel="noopener noreferrer">no
 longer supports Flash Player</a> since December 31, 2020)</i>
 </p>
-<h4>
-Check the HTML code of the following CodePen:
-</h4>
+<h4>Check the HTML code of the following CodePen:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 68. codepen snapshot: simple html5 video player (82) ---------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image068.png?raw=true"
+<img class="displayed"
+  src="./images/image068.png?raw=true"
   alt="Codepen snapshot: simple HTML5 video player."
-  width="65%">   <br/></p>
-<h4>
-Please note that:
-</h4>
+  style="width:65%;" />
+
+<h4>Please note that:</h4>
 <ul>
 <li>
 The controls attribute indicates that a control panel with
@@ -4684,14 +4613,13 @@ this page, it’s an &lt;iframe&gt;.
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 69. web of things (wot) explainer video snapshot (83) --------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image069.png?raw=true"
+<img class="displayed"
+  src="./images/image069.png?raw=true"
   alt="Web of things (WoT) explainer video snapshot."
-  width="60%">   <br/></p>
-<h4>
-Support for different video CODECS (mp4, ogG, avi, etc.)
-</h4>
-<p>
+  style="width:60%;" />
+
+<h4>Support for different video CODECS (mp4, ogG, avi, etc.)</h4>
+
 <p>This is one of the main problems encountered in recent years: codec
 support was not the same from one browser to another, for
 commercial/economic reasons. For example, between 2010 and 2013, Firefox
@@ -4702,9 +4630,7 @@ popular formats are supported.</p>
 <i>The recommended CODEC, which works in all popular browsers:
 H264/mp4.</i>
 </p>
-<h4>
-External resources
-</h4>
+<h4>External resources</h4>
 <ul>
 <li>
 From W3C’s specification:
@@ -4727,9 +4653,7 @@ Article from HTML5 Rocks:
 </li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-2-2">
-2.2.2 The &lt;audio&gt; Element
-</h3>
+<h3 id="ch2-2-2">2.2.2 The &lt;audio&gt; Element</h3>
 <!------------------------------------------------------------------------------------------------>
 <h4>
 HTML5 audio is composed of several layers:
@@ -4749,35 +4673,29 @@ processing modules (reverb, delay, etc.)
 </li>
 </ul>
 <!----- https://github.com/bbauska/W3Cx-4of5-HTML5.2x --------->
-<p>
+
 <p>This course will focus on the &lt;audio&gt; element. We present
 the <a href="https://www.w3.org/TR/webaudio/" target="_blank" rel="noopener noreferrer">Web Audio
 API</a> and other advanced HTML5 features in
 the <a href="https://www.edx.org/course/html5-apps-and-games" target="_blank" rel="noopener noreferrer">W3Cx HTML5
 Apps and Games course</a>.</p>
-The attributes, event set and JavaScript API  of
-the &lt;audio&gt; element are just a “reduced” version of the ones from
-the &lt;video&gt; element, and here we will only address the differences
-and peculiarities.
-</p>
-<h4>
-The &lt;audio&gt; element, basic usage
-</h4>
-<p>
+<p>The attributes, event set and JavaScript API of the &lt;audio&gt; element are just a “reduced” version of the ones from the &lt;video&gt; element, and here we will only address the differences and peculiarities.</p>
+
+<h4>The &lt;audio&gt; element, basic usage</h4>
+
 <p>Here is a simple example (also
 available <a href="https://jsbin.com/yogojis/edit?html,output" target="_blank" rel="noopener noreferrer">online
 example from JSBin</a>):</p>
-Press play to stream the neigh of a horse: (does not work in git)
+<p>Press play to stream the neigh of a horse: (does not work in git)
 </p>
-<h4>
-As you can see, the code is very similar to the
-basic &lt;video&gt; element usage.
-</h4>
+
+<h4>As you can see, the code is very similar to the basic &lt;video&gt; element usage.</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.     &lt;head&gt;
 4.        &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -4796,9 +4714,11 @@ Click to expand!
 17.       &lt;/audio&gt;
 18. 
 19.    &lt;/body&gt;
-20. &lt;/html&gt;</code></pre>
+20. &lt;/html&gt;
+</code></pre>
+
 </details>
-<p>
+
 <p>In this example, just as for the &lt;video&gt; element, we used
 the controls attribute in order to render the play/stop, time, volume
 and progress widgets.</p>
@@ -4825,37 +4745,17 @@ The Embed Audio element</a>
 </li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-2-3">
-2.2.3 Attributes of &lt;video&gt; and &lt;audio&gt;
-</h3>
+<h3 id="ch2-2-3">2.2.3 Attributes of &lt;video&gt; and &lt;audio&gt;</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Most useful attributes of the &lt;video&gt; element
-</h4>
-<p>
-Here are the most common attributes you can use with
-the &lt;video&gt; element. They are self explanatory…
-</p>
+<h4>Most useful attributes of the &lt;video&gt; element</h4>
+
+<p>Here are the most common attributes you can use with the &lt;video&gt; element. They are self explanatory… </p>
+
 <ul>
-<li>
-src: source of the video.
-</li>
-<li>
-width and height: size of the video. If unspecified, the default width
-and height of the video will be used. If you specify one dimension but
-not the other, the browser will adjust the size of the unspecified
-dimension to preserve the aspect ratio of the video.
-</li>
-<li>
-controls: If this boolean attribute is present, the browser displays its
-own controls for video playback and volume.
-</li>
-<li>
-poster: This attribute allows you to specify an image that the browser
-will use while video is being downloaded, or until the user starts
-playing the video. If this attribute is not specified, the first frame
-of the video will be used instead.
-</li>
+  <li>src: source of the video.</li>
+  <li>width and height: size of the video. If unspecified, the default width and height of the video will be used. If you specify one dimension but not the other, the browser will adjust the size of the unspecified dimension to preserve the aspect ratio of the video.</li>
+  <li>controls: If this boolean attribute is present, the browser displays its own controls for video playback and volume</li>
+  <li>poster: This attribute allows you to specify an image that the browser will use while video is being downloaded, or until the user starts playing the video. If this attribute is not specified, the first frame of the video will be used instead.</li>
 <li>
 autoplay: This attribute asks the browser to start playing the video
 automatically as soon as the page is ready.
@@ -4961,19 +4861,12 @@ As with the &lt;video&gt; element, the same best practice in regard
 to preload and autoplay attributes should be followed.
 </p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-2-4">
-2.2.4 Styling Media Players with CSS
-</h3>
+<h3 id="ch2-2-4">2.2.4 Styling Media Players with CSS</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>
-The &lt;video&gt; and &lt;audio&gt; elements are just like other HTML
-elements, so CSS can be used for styling, including CSS transitions,
-animations, etc.
-</p>
-<h4>
-An example of an audio player with some style
-</h4>
-<p>
+<p>The &lt;video&gt; and &lt;audio&gt; elements are just like other HTML elements, so CSS can be used for styling, including CSS transitions, animations, etc.</p>
+
+<h4>An example of an audio player with some style</h4>
+
 <p>You can try
 this example <a href="https://jsbin.com/zoquru/2/edit?html,css,output" target="_blank" rel="noopener noreferrer">online
 at JSBin</a>.</p>
@@ -4982,17 +4875,15 @@ the &lt;audio&gt; element, we just add a &lt;figure&gt; with two
 children: an &lt;img&gt; and a &lt;figcaption&gt;. Inside
 the &lt;figcaption&gt; we add the &lt;audio&gt; element from the
 previous example.</p>
-Please move the mouse pointer over this player’s elements: (does not
-work in git)
-</p>
-<h4>
-HTML
-</h4>
+<p>Please move the mouse pointer over this player’s elements: (does not work in git)</p>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;figure id=&quot;figaudio1&quot;&gt;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;figure id=&quot;figaudio1&quot;&gt;
 2.    &lt;img id=&quot;imghorse&quot; width=&quot;200&quot;
 3.       src=&quot;https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg&quot;
 4.       alt = &quot;a horse&quot;/&gt;
@@ -5009,27 +4900,28 @@ Click to expand!
 15.         format.
 16.    &lt;/audio&gt;
 17. &lt;/figcaption&gt;
-18. &lt;/figure&gt;</code></pre>
+18. &lt;/figure&gt;
+</code></pre>
+
 </details>
-</p>
+
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 70. two gery-black horses in a field (87) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image070.jpeg?raw=true"
+<img class="displayed"
+  src="./images/image070.jpeg?raw=true"
   alt="Two gery-black horses in a field."
-  width="20%">   <br/></p>
-<p>
-Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
-</p>
-<h4>
-HTML source code:
-</h4>
+  style="width:20%;" />
+
+<p>Press Play to hear the horse ! (<i><b>does not work</b></i> in git)</p>
+
+<h4>HTML source code:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;figure id=&quot;figaudio1&quot;&gt;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+1.  &lt;figure id=&quot;figaudio1&quot;&gt;
 2.    &lt;img id=&quot;imghorse&quot; width=&quot;200&quot;
 3.       src=&quot;https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg&quot;
 4.       alt = &quot;a horse&quot;/&gt;
@@ -5046,16 +4938,18 @@ Click to expand!
 15.         format.
 16.    &lt;/audio&gt;
 17. &lt;/figcaption&gt;
-18. &lt;/figure&gt;</code></pre>
+18. &lt;/figure&gt;
+</code></pre>
+
 </details>
-<h4>
-CSS source code:
-</h4>
+
+<h4>CSS source code:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  #figaudio1 {
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+1.  #figaudio1 {
 2.      width : 420px;;
 3.      text-align:center;
 4.      padding : 6px;
@@ -5095,21 +4989,17 @@ Click to expand!
 38. audio:hover, audio:focus, audio:active {
 39.     box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
 40.     transform: scale(1.05);
-41. }</code></pre>
+41. }
+</code></pre>
+
 </details>
-<h4>
-Changing the size of a video on the fly using CSS transforms
-</h4>
-<h4>
-Resizing and rotating a video as the mouse pointer comes over it
-</h4>
-<p>
-See this
-<a href="https://jsbin.com/zoquru/4/edit?html,css,output" target="_blank" rel="noopener noreferrer">example
-online</a> (where you can modify the code on the fly) or just play the
-following video, and move the mouse pointer in and out of the video
-while it’s playing.
-</p>
+
+<h4>Changing the size of a video on the fly using CSS transforms</h4>
+
+<h4>Resizing and rotating a video as the mouse pointer comes over it</h4>
+
+<p>See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output" target="_blank" rel="noopener noreferrer">example
+online</a> (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it’s playing.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 71. pseudo css class: hover (88) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
