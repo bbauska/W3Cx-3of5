@@ -130,9 +130,9 @@
 
 <ol type="1">
   <li><a href="#chb">Course Introduction and Practical Information</a></li>
-  <li><a style=“margin-left: 3em;” href=“#chb-1” Sub-Heading”>b.1 Course syllabus</a></li>
-  <li><a style=“margin-left: 3em;” href=“#chb-2” Sub-Heading”>b.2 Getting around the course</a></li>
-  <li><a style=“margin-left: 3em;” href=“#chb-3” Sub-Heading”>b.3 Course tools</a></li>
+  <li><a style=“margin-left: 3px;” href=“#chb-1”>b.1 Course syllabus</a></li>
+  <li><a style=“margin-left: 3px;” href=“#chb-2”>b.2 Getting around the course</a></li>
+  <li><a style=“margin-left: 3px;” href=“#chb-3”>b.3 Course tools</a></li>
 </ol>
 
 <h2 id="module-1-html5-basics"><a href="#ch1"><strong>Module 1: HTML5 Basics</strong></a></h2>
@@ -1352,11 +1352,10 @@ extension.</p>
 without any new HTML5 structural elements such
 as &lt;section&gt; or &lt;article&gt;.</p>
 <p>Here is a list of browser extensions you can try, for visualizing the
-outline of a
-document: <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" target="_blank" rel="noopener noreferrer">table-of-contents-crx</a> (Chrome
-extension)
-or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" target="_blank" rel="noopener noreferrer">this Firefox extension</a>.</p>
+outline of a document: <a href ="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" target="_blank" rel="noopener noreferrer">table-of-contents-crx</a> (Chrome extension) or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" target="_blank" rel="noopener noreferrer">this Firefox extension</a>.</p>
+
 <h4>Using headings and new sectioning elements (section, article, aside, nav)</h4>
+
 <h4>Definition of heading content and sectioning content</h4>
 
 <p>The &lt;section&gt;, &lt;article&gt;,
@@ -1389,8 +1388,8 @@ elements, or implied by the heading content itself). This means that:
 &lt;/body&gt;
 </code></pre>
 
-<p>… defines the heading of <i>the explicit section</i> (its parent
-element &lt;section&amp;gt ;).</p>
+<p>… defines the heading of <i>the explicit section</i> (its parent element &lt;section&amp;gt ;).</p>
+
 <h4>Use multiple headings of different rank with sectioning content</h4>
 
 <p>The first element of a heading content in an element of sectioning
@@ -1436,25 +1435,22 @@ of the implied section.</p>
   style="width:55%;" />
   
 <p>In the above example, please note two things:</p>
+
 <ol type="1">
-<li>
-The outline shows an “Untitled body” at the root of the hierarchy,
-</li>
-<li>
-The default size for the H1 and H2 is the same (!). Indeed, when we
-start a &lt;h1&amp;gt. inside a &lt;section&gt; the browser lowers
-its default size automatically, as if a new hierarchy level has been
-added artificially. We will discuss this further in the following
-sections, as we introduce some best practices.
-</li>
+  <li>The outline shows an “Untitled body” at the root of the hierarchy,</li>
+  <li>The default size for the H1 and H2 is the same (!). Indeed, when we start a &lt;h1&amp;gt. inside a &lt;section&gt; the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
 </ol>
+
 <h4>Best Practices when using Sectioning Elements</h4>
+
 <h4>Best practice #1: always add a heading to explicit sectioning content</h4>
+
 <p>It’s always better - mainly for accessibility reasons - to include a
 heading (a &lt;h1&gt;, &lt;h2&gt;…&lt;h6&gt;) in each sectioning element
 (&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also
 after the &lt;body&gt; element (called a “sectioning root”).</p>
 <h4>Here are some examples:</h4>
+
 <h4>Good (heading in each explicit section):</h4>
 
 <pre class="html5"><code>
@@ -1503,6 +1499,7 @@ as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eek
 for Chrome
 or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" target="_blank" rel="noopener noreferrer">Outline
 sidebar for Firefox</a>.</p>
+
 <h4>The outline of the last example looks like this:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 27. outline of previous example (27) ------------------------------>
@@ -1514,6 +1511,7 @@ sidebar for Firefox</a>.</p>
 
 <p>Notice that &lt;body&gt; is also a sectioning element. It’s called a
 “sectioning root”, and would also need a heading.</p>
+
 <h4>Final good version:</h4>
 
 <details>
@@ -1537,17 +1535,12 @@ sidebar for Firefox</a>.</p>
 <p>The sectioning root (&lt;body&gt;) and the sectioning elements
 (&lt;section&gt; here…), each have a heading.
 </p>
+
 <h4>To sum up:</h4>
+
 <ul>
-<li>
-Always use a heading element after a sectioning element, for
-example &lt;section&gt;&lt;Hx&gt;…&lt;/Hx&gt;…&lt;section&gt;, and
-after &lt;body&gt;, where <b>x</b> can be 1..6,
-</li>
-<li>
-Or, use a &lt;header&gt; element, like
-in &lt;section&gt;&lt;header&gt;&lt;Hx&gt;…&lt;Hx&gt;…..&lt;header&gt;…&lt;section&gt;
-</li>
+  <li>Always use a heading element after a sectioning element, for example &lt;section&gt;&lt;Hx&gt;…&lt;/Hx&gt;…&lt;section&gt;, and after &lt;body&gt;, where <b>x</b> can be 1..6, </li>
+  <li>Or, use a &lt;header&gt; element, like in &lt;section&gt;&lt;header&gt;&lt;Hx&gt;…&lt;Hx&gt;…..&lt ;header&gt;…&lt;section&gt;</li>
 </ul>
 
 <h4>More about the &lt;header&gt; element</h4>
@@ -1707,6 +1700,7 @@ these improvements, including:</p>
 </details>
 
 <h4>Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/" >this source</a>).</h4>
+
 <details>
   <summary>Click to expand!</summary>
 
@@ -1728,6 +1722,7 @@ these improvements, including:</p>
 </details>
 
 <h4>Simpler character set definition</h4>
+
 <p>One word about the &lt;meta charset=“utf-8”&gt; at line 4 in the HTML5
 version: it is a <b>best practice</b> to declare the character set of
 your document to protect against
@@ -1793,6 +1788,7 @@ the specification</a>: “the default type for resources given by the <a href="
 <p>We will not go into detail about the &lt;link&gt; element, but the fact
 that the type attribute is becoming optional shows the current direction
 taken by HTML5: towards greater simplicity.</p>
+
 <h4>Please see how to include a JavaScript file in our page:</h4>
 
 <pre><code>
@@ -1807,6 +1803,7 @@ old way to do the same thing is:</p>
 </code></pre>
 
 <h4>More flexible syntax constraints</h4>
+
 <p>If you look at the “minimal document” example, or at other examples in
 this course, you won’t find a lot of differences compared to the same
 code in XHTML: attribute values are surrounded by quotes, all elements
@@ -1839,6 +1836,7 @@ compatibility with older browsers, it is wiser to still use quotes…</li>
   src="./images/image013.jpeg?raw=true"
   alt="Some of the new structural elements introduced by HTML5: section, article, etc."
   style="width:65%;" />
+
 <h4>History</h4>
 
 <p>As Web site layouts evolve, HTML5 structural elements such as lists,
@@ -1883,6 +1881,7 @@ statistics”.
 Opera’s surveys gave birth to these new elements (click on the element’s name to go to the W3C specification about this element):</p>
 
 <h4>HTML5 structural elements with descriptions</h4>
+
 <ul>
   <li><a href="https://www.w3.org/TR/html5/sections.html#the-header-element" target="_blank" rel="noopener noreferrer">&lt;header&gt;</a>Introduction of “sectioning elements”: an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt;or of a long &lt;section&gt;.</li>
   <li><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element" target="_blank" rel="noopener noreferrer">&lt;footer&gt;</a>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
@@ -1892,7 +1891,7 @@ Opera’s surveys gave birth to these new elements (click on the element’s nam
   <li><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element" target="_blank" rel="noopener noreferrer">&lt;time&gt;</a>Used for marking up times and dates.</li>
   <li><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank" rel="noopener noreferrer">&lt;aside&gt;</a>Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</li>
   <li><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element" target="_blank" rel="noopener noreferrer">&lt;figure&gt;</a> and <a href "https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element" target="_blank" rel="noopener noreferrer">&lt;figcaption&gt;</a>Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</li>
-  <li><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank" rel="noopener noreferrer">&lt;main&gt;</a></b>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</li>
+  <li><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank" rel="noopener noreferrer">&lt;main&gt;</a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. There can be only one &lt;main&gt;element in a document.</li>
 </ul>
 
 <p>And there is no &lt;content&gt; element even though the &lt;div
@@ -2030,6 +2029,7 @@ nav span {
 </details>
 
 <h4>A &lt;section&gt; for each month and an &lt;article&gt; for each post in the blog</h4>
+
 <p>Now, we have one big &lt;section&gt; element that contains a set of &lt;article&gt; elements…</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 16. image of sections that contain articles (37) ------------------------>
@@ -2066,10 +2066,9 @@ img class="displayed"
 </code></pre>
 
 <h4>And here is the CSS:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 section {
@@ -2093,8 +2092,10 @@ section h2 {
 </code></pre>
 
 </details>
+
 <p>Note that the H2, article, article header, etc. will be styled using
 these rules.</p>
+
 <h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 17. image of the header at the top of each article (37) --------------------->
@@ -2106,10 +2107,10 @@ these rules.</p>
   
 <p>Next, in each article in the section we have a header (to display the
 article title), paragraphs (article content), and so on.</p>
-Example for the first blog article:
-</p>
+Example for the first blog article:</p>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;section&gt;
@@ -2144,14 +2145,9 @@ Example for the first blog article:
 
 </details>
 
-<h4>
-Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside
-</h4>
-<p>
-Also note the way we included a figure using the new “HTML5” method,
-using a &lt;figure&gt;..&lt;figure&gt; element that embedded a &lt;img
-src=…&gt; element together with a &lt;figcaption&gt; element.
-</p>
+<h4>Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside</h4>
+
+<p>Also note the way we included a figure using the new “HTML5” method, using a &lt;figure&gt;..&lt;figure&gt; element that embedded a &lt;img src=…&gt; element together with a &lt;figcaption&gt; element.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------- 18. image of figure and figcaption that embed an img (38) -------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -2186,6 +2182,7 @@ figcaption {
 </code></pre>
 
 <h4>Use an &lt;aside&gt; element to display a tag cloud on the… side of the main content</h4>
+
 <p>After the long &lt;section&gt; element that contains all the blog
 articles displayed in the page, we added the HTML code for the tag cloud
 that is displayed on the right of the page, “aside”! This is done using
@@ -5003,10 +5000,10 @@ online</a> (where you can modify the code on the fly) or just play the followin
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 71. pseudo css class: hover (88) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image071.png?raw=true"
-   width="60%"
-   alt="Tilted screen example using pseudo css class: hover." />   <br>
+<img class="displayed"
+  src="./images/image071.png?raw=true"
+  style="width:60%"
+  alt="Tilted screen example using pseudo css class: hover." />
 
 <p>This example uses the pseudo CSS class :hover in order to track
 the mouseover event. On mouseover, it uses a CSS transition property
@@ -5059,10 +5056,11 @@ events.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 72. full width video like paypal site (89) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image072.png?raw=true"
-   width="65%"
-   alt="Full width video like paypal site." />   <br/></p>
+<img class="displayed"
+  src="./images/image072.png?raw=true"
+  width="65%"
+  alt="Full width video like paypal site." />
+
 <h4>Here is the HTML code. It’s really simple, just notice the &lt;body
 onload=“init();”&gt; which calls the JavaScript init() function right
 after the page is loaded.</h4>
@@ -5130,32 +5128,31 @@ standard CSS + DOM manipulation using JavaScript.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 73. example video cropping (90) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image073.png?raw=true"
-   width="50%"
-   alt="Example video cropping." />   <br>
+<img class="displayed"
+  src="./images/image073.png?raw=true"
+  style="width:50%"
+  alt="Example video cropping." />
 
 <p>The CSS and JavaScript codes for this example are exactly the same as in
 Example #1.</p>
 
 <h4>Full screen video, pure CSS approaches</h4>
 
-<p>
 <ol type="1">
-<li>Let’s use the video from the PayPal Web site, played full screen
-using only very simple CSS.</li>
+  <li>Let’s use the video from the PayPal Web site, played full screen using only very simple CSS.</li>
 </ol>
-In this example, the video does not rescale; it’s just cropped if the
+
+<p>In this example, the video does not rescale; it’s just cropped if the
 browser window is resized. Enlarge your browser and you’ll see a man
 with a phone on the right. Resize your browser and you’ll see only part
 of the video.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 74. full screen video (90) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image074.png?raw=true"
-   width="50%"
-   alt="Full screen video." />   <br/></p>
+<img class="displayed"
+  src="./images/image074.png?raw=true"
+  style="width:50%"
+  alt="Full screen video." />
 
 <h4>CSS code:</h4>
 
@@ -5172,11 +5169,11 @@ video {
 }
 </code></pre>
 
-<p>
 <ol start="2" type="1">
-<li>Full screen video with CSS effects</li>
+  <li>Full screen video with CSS effects</li>
 </ol>
-This time the video is zoomed in so that it’s much bigger than the
+
+<p>This time the video is zoomed in so that it’s much bigger than the
 browser’s window. When we resize the browser, the part of the video that
 is visible adapts itself. It’s not “real resize” of the video. Try
 this <a
@@ -5255,21 +5252,20 @@ header video {
 <p>the video is in the header, and the header has a plotted transparent
 background image (“dots.png”) that is repeated in X and Y (see <i>lines
 8</i> and <i>9</i>).</p>
+
 <ol start="2" type="1">
-<li>The video is positioned so that it’s origin (top left corner) is
-away from the visible surface (<i>line 25</i>), while it is set to take
-100% of the surface (<i>lines 20</i> and <i>21</i>).</li>
+  <li>The video is positioned so that it’s origin (top left corner) is away from the visible surface (<i>line 25</i>), while it is set to take 100% of the surface (<i>lines 20</i> and <i>21</i>).</li>
 </ol>
-<p>Full screen video that resizes and keeps its ratio, using the viewport
-units.</p>
+
+<p>Full screen video that resizes and keeps its ratio, using the viewport units.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 75. full screen using viweport units (92) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image075.png?raw=true"
-   width="65%"
-   alt="Full screen video that resized and keeps its ratio using viewport units." />
-  <br>
+<img class="displayed"
+  src="./images/image075.png?raw=true"
+  style="width:65%"
+  alt="Full screen video that resized and keeps its ratio using viewport units." />
+
 <p>This time we obtain the same result as with the first example that used
 JavaScript and a resize event. The video resizes correctly and keeps its
 ratio.</p>
@@ -5318,24 +5314,12 @@ their <a href="https://caniuse.com/#feat=viewport-units" target="_blank" rel="n
 on CanIUse</a>).</p>
 <p>Setting the video to 100% width and height results in different
 behavior:</p>
+
 <ul>
-<li>
-100% means 100% of the size of the &lt;body&gt; tag.
-</li>
-<li>
-The body tag’s width is 100% of the browser window width, so the video
-is always full width.
-</li>
-<li>
-The body tag’s height, however, is determined by the size of its
-children: the body tag’s height grows and shrinks to accommodate the
-size of the children.
-</li>
-<li>
-If the browser window is made wide and short, the video is full width,
-the height is taller than the window, and part of the video is not
-visible. It seems that just using % does not get us the same effect.
-</li>
+  <li>100% means 100% of the size of the &lt;body&gt; tag.</li>
+  <li>The body tag’s width is 100% of the browser window width, so the video is always full width.</li>
+  <li>The body tag’s height, however, is determined by the size of its children: the body tag’s height grows and shrinks to accommodate the size of the children.</li>
+  <li>If the browser window is made wide and short, the video is full width, the height is taller than the window, and part of the video is not visible. It seems that just using % does not get us the same effect.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-2-5">2.2.5 Control Players From JavaScript</h3>
@@ -5345,22 +5329,11 @@ properties/attributes and events that can be manipulated with
 JavaScript. Using the DOM API, it’s possible to manipulate an audio or
 video element as a JavaScript object that has:</p>
 <ul>
-<li>
-<b>Methods</b> for controlling the behavior, such as play(), pause(),
-etc.
-</li>
-<li>
-<b>Properties</b> (duration, current position, etc.), either in
-read/write mode (such as volume), or in read-only mode (such as
-encoding, duration, etc.)
-</li>
-<li>
-<b>Events</b> generated during the life cycle of the element that can be
-processed using JavaScript callbacks. It is also possible to send events
-to control the video player.
-</li>
+  <li><b>Methods</b> for controlling the behavior, such as play(), pause(), etc.</li>
+  <li><b>Properties</b> (duration, current position, etc.), either in read/write mode (such as volume), or in read-only mode (such as encoding, duration, etc.)</li>
+  <li><b>Events</b> generated during the life cycle of the element that can be processed using JavaScript callbacks. It is also possible to send events to control the video player.</li>
 </ul>
-<p>
+
 <p>The set of properties/attributes/methods of the &lt;audio&gt; and
 &lt;video&gt; elements is called an “API” (Application Programming
 Interface). For example, we will speak here of the “media API” to talk
@@ -5379,19 +5352,19 @@ programmatically creating a &lt;video&gt; element:
 
 <p>This will create a complete video player for the file “video.mp4”, with
 control buttons, and will add it to the &lt;body&gt; element of the page.</p>
+
 <h4>Example that shows how to call play/pause or rewind a video</h4>
-<p>
-Please look at this interesting example:
-</p>
+
+<p>Please look at this interesting example:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 76. how to call play/pause/rewind functions (94) ------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<img src="./images/image076.png?raw=true"
-   width="65%"
-   alt="How to call the play/pause/rewind functions." />   <br>
-<p>
-Note that in order to play the video, you must click on the “vid.play()”
+<img class="displayed"
+  src="./images/image076.png?raw=true"
+  style="width:65%"
+  alt="How to call the play/pause/rewind functions." />
+
+<p>Note that in order to play the video, you must click on the “vid.play()”
 text. To pause it, you click on the “vid.pause()” text, and so
 on. <i>Notice the text at the top of the video, as well as the
 transparency.</i> The text can be selected, since all the elements
@@ -5430,10 +5403,10 @@ show the properties, events, and methods from the API.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 77. html5 video events and api (95) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p style="text-align:center" width="100%">
-<p><img src="./images/image077.png?raw=true"
-   width="65%"
-   alt="HTML5 video events and API." />   <br/></p>
+<img class="displayed"
+  src="./images/image077.png?raw=true"
+  style="width:65%"
+  alt="HTML5 video events and API." />
 
 <h4>Here is a table that shows the most interesting methods, properties, and
 events provided by the &lt;video&gt; element API</h4>
