@@ -3896,36 +3896,27 @@ Interesting applications: serverless download
   style="width:50%;" />
 
 <h4>External resources:</h4>
+
 <ul>
-<li>
-From the
-specification: <a href="https://www.w3.org/TR/2014/REC-html5-20141028/links.html#downloading-resources" target="_blank" rel="noopener noreferrer">downloading
-resources</a>.
-</li>
-<li>
-From CanIUse: the <a href="https://caniuse.com/#feat=download" target="_blank" rel="noopener noreferrer">browser
-support of the download attribute</a>.
-</li>
+  <li>From the specification: <a href="https://www.w3.org/TR/2014/REC-html5-20141028/links.html#downloading-resources" target="_blank" rel="noopener noreferrer">downloading resources</a>.</li>
+  <li>From CanIUse: the <a href="https://caniuse.com/#feat=download" target="_blank" rel="noopener noreferrer">browser support of the download attribute</a>.</li>
 </ul>
-<h4>
-The HTML5 translate attribute
-</h4>
+
+<h4>The HTML5 translate attribute</h4>
+
 <p>HTML5 gives us a new translate attribute. This attribute is used to
 limit the impact of  translation tools such
 as <a href="https://translate.google.com/" target="_blank" rel="noopener noreferrer">Google Translate</a> by
 prohibiting the translation of certain content. In many cases some parts
 of a document should not be translated.</p>
-<h4>
-Use cases include:
-</h4>
+
+<h4>Use cases include:</h4>
+
 <ul>
-<li>HTML pages that contain source code: you would certainly not like to see
-the Java or PHP or whatever programming language parts of your page
-translated into another spoken language!</li>
-<li>Video game Web sites that propose cheat codes; the codes do not have to
-be translated,</li>
-<li>Street names, author names in an “about” page must not be translated,</li>
-<li>etc.</li>
+  <li>HTML pages that contain source code: you would certainly not like to see the Java or PHP or whatever programming language parts of your page translated into another spoken language!</li>
+  <li>Video game Web sites that propose cheat codes; the codes do not have to be translated,</li>
+  <li>Street names, author names in an “about” page must not be translated,</li>
+  <li>etc.</li>
 </ul>
 
 <p>Both <a href="https://translate.google.com/" target="_blank" rel="noopener noreferrer">Google
@@ -4722,13 +4713,12 @@ and progress widgets.</p>
 Notice the other similarities: between
 the &lt;audio&gt;…&lt;audio&gt; tags, we added a text message that is
 displayed if the Web browser doesn’t support the &lt;audio&gt; element,
-and we used several <source>…</source> elements that link to different
+and we used several &lt;source&gt;…&lt;/source&gt; elements that link to different
 audio formats for the same file. The browser will use the first format
-it recognizes.
-</p>
-<h4>
-External resources
-</h4>
+it recognizes.</p>
+
+<h4>External resources</h4>
+
 <ul>
 <li>
 From W3C’s
@@ -6917,66 +6907,41 @@ Click to expand!
 35.     &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
 36.   &lt;/p&gt;
 37. &lt;/body&gt;
-38. &lt;/html&gt;</code></pre>
+38. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
+
 <ul>
-<li>
-<i>Lines 11-13</i>: we call navigator.getUserMedia. The parameters
-indicate that we want to capture the video and the audio from the
-current device (default Webcam). The call to getUserMedia returns an ES6
-promise: the then(stream) method that follows.
-</li>
-<li>
-<i>Line 14</i>: the then(stream) method is called in case of success and
-gets the current audio/video stream as parameter. This is passed by the
-browser to your JavaScript code.
-</li>
-<li>
-<i>Lines 15-19</i>: The <i>line 16 </i>sets the audio/video stream of
-the default Webcam to the srcObject attribute of the video element,
-while <i>line 18</i> starts displaying it in the video player (there can
-be more than one Webcam, we’ll see how to select one in particular
-next). <i>Line 19</i> stores the stream in a global variable so that we
-can use it from another function (for stopping/starting the Webcam…)
-</li>
-<li>
-<i>Lines 19-23</i> define the catch method called in case of error (it
-could be that the Webcam cannot be accessed, or authorizations have not
-been granted).
-</li>
-<li>
-<i>Lines 25-27</i>: a function for stopping the Webcam. We use the
-global variable webcamStream here, that has been initialized when we
-started using the Webcam in <i>line 19</i>. We have to stop separately
-the audio and the video streams.
-</li>
+  <li><i>Lines 11-13</i>: we call navigator.getUserMedia. The parameters indicate that we want to capture the video and the audio from the current device (default Webcam). The call to getUserMedia returns an ES6 promise: the then(stream) method that follows.</li>
+  <li><i>Line 14</i>: the then(stream) method is called in case of success and gets the current audio/video stream as parameter. This is passed by the browser to your JavaScript code.</li>
+  <li><i>Lines 15-19</i>: The <i>line 16 </i>sets the audio/video stream of the default Webcam to the srcObject attribute of the video element, while <i>line 18</i> starts displaying it in the video player (there can be more than one Webcam, we’ll see how to select one in particular next). <i>Line 19</i> stores the stream in a global variable so that we can use it from another function (for stopping/starting the Webcam…)</li>
+  <li><i>Lines 19-23</i> define the catch method called in case of error (it could be that the Webcam cannot be accessed, or authorizations have not been granted).</li>
+  <li><i>Lines 25-27</i>: a function for stopping the Webcam. We use the global variable webcamStream here, that has been initialized when we started using the Webcam in <i>line 19</i>. We have to stop separately the audio and the video streams.</li>
 </ul>
-<h4>
-Other examples that mix what we’ve seen in previous chapters, but this
-time with a live video stream
-</h4>
-<h4>
-Applying CSS effects on a video element with a live webcam
-</h4>
+
+<h4>Other examples that mix what we’ve seen in previous chapters, but this time with a live video stream</h4>
+
+<h4>Applying CSS effects on a video element with a live webcam</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 108. example: css filter effects (xx) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image108.jpeg?raw=true"
-   width="30%"
-   alt="Resulting image of Michel Buffa using his WebCam with css filter effects on live stream." />
-  <br/></p>
+<img class="displayed"
+  src="./images/image108.jpeg?raw=true"
+  style="width:30%"
+  alt="Resulting image of Michel Buffa using his WebCam with css filter effects on live stream." />
+
 <p>Try this example that shows how to use the getUserMedia API. Note the
 CSS effects (click on the video to cycle from one effect to
 another):</p>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>//--------------------
+  <summary>Click to expand!</summary>
+
+<pre><code>
+//--------------------
 // GET USER MEDIA CODE
 //--------------------
 let video;
@@ -7020,16 +6985,18 @@ function changeFilter(el) {
   console.log(&quot;toggling effect: &quot; + filters[idx  filters.length]);
   let effect = filters[idx++ % filters.length];
   el.classList.add(effect);
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-CSS
-</h4>
+
+<h4>CSS</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>#output {
+  <summary>Click to expand!</summary>
+
+<pre><code>
+#output {
 width: 307px;
 height: 250px;
 background: rgba(255,255,255,0.5);
@@ -7071,16 +7038,18 @@ filter: sepia(1);
 }
 .invert {
 filter: invert(1)
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-HTML
-</h4>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -7097,28 +7066,30 @@ Click the button &quot;start webcam at the end of this page, then click on the v
 &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
 &lt;/p&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Taking a snapshot from the live Webcam stream
-</h4>
+
+<h4>Taking a snapshot from the live Webcam stream</h4>
+
 <p>The trick is to copy and paste the current image from the video
 stream into a &lt;canvas&gt; element.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 109. take a snapshot from live webcam stream (129) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image109.png?raw=true"
-  width="65%"
-  alt="Take a snapshot from the live Webcam stream." />   <br/></p>
-<h4>
-JavaScript
-</h4>
+<img class="displayed"
+  src="./images/image109.png?raw=true"
+  style="width:65%"
+  alt="Take a snapshot from the live Webcam stream." />
+
+<h4>JavaScript</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>//--------------------
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+//--------------------
 // GET USER MEDIA CODE
 //--------------------
 let video;
@@ -7155,22 +7126,26 @@ function init() {
 function snapshot() {
   // Draws current image from the video element into the canvas
   ctx.drawImage(video, 0,0, canvas.width, canvas.height);
-  }</code></pre>
+  }
+</code></pre>
+
 </details>
-<h4>
-CSS
-</h4>
-<pre><code>canvas {
+
+<h4>CSS</h4>
+
+<pre><code>
+canvas {
 border:1px solid black;
-}</code></pre>
+}
+</code></pre>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<h4>
-HTML
-</h4>
-<pre><code>&lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+
+<h4>HTML</h4>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;title&gt;WebCam screenshot&lt;/title&gt;
@@ -7189,23 +7164,22 @@ HTML
     Screenshots : &lt;/p&gt;
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;150&quot;&gt;&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>We will look at this example in greater detail in the next course
 section (related to the &lt;canvas&gt; element).</p>
-<h4>
-Impressive demonstrations available on the Web
-</h4>
+
+<h4>Impressive demonstrations available on the Web</h4>
+
 <ul>
-<li><p><a href="https://codepen.io/dlueth/pen/zBhwv" target="_blank" rel="noopener noreferrer">WebCam
-pixelization! Fun!</a></p></li>
-<li><p><a href="https://webcamtoy.com/" target="_blank" rel="noopener noreferrer">Webcam Toy</a>: video effects on
-Paul Neave’s webcam (using WebGL)</p></li>
+  <li><p><a href="https://codepen.io/dlueth/pen/zBhwv" target="_blank" rel="noopener noreferrer">WebCam pixelization! Fun!</a></p></li>
+  <li><p><a href="https://webcamtoy.com/" target="_blank" rel="noopener noreferrer">Webcam Toy</a>: video effects on Paul Neave’s webcam (using WebGL)</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-4-3">
-2.4.3 Using the Microphone
-</h3>
+<h3 id="ch2-4-3">2.4.3 Using the Microphone</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Instead of using the getUserMedia API
 with: navigator.getUserMedia({video:true}, onSuccess, onError), it is
@@ -7224,28 +7198,19 @@ and Games</a>).</p>
 demonstrations</a> written by Chris Wilson, esp. the one called “Input
 effects”.</p>
 <p>The image below is taken
-from <a href="https://webaudiodemos.appspot.com/input/index.html" target="_blank" rel="noopener noreferrer">one of
-the demonstrations</a>, where the sound captured by the microphone is
-processed in real time. We get visualizations of the signal in real time
-as an animated waveform, animated frequencies or animated audiogram. If
-we connect an electric guitar to the sound card input, then this
-demonstration shows that we can recreate with WebAudio most of the
-classic effects used by guitarists (delay, reverb, distortion, chorus,
+from <a href="https://webaudiodemos.appspot.com/input/index.html" target="_blank" rel="noopener noreferrer">one of the demonstrations</a>, where the sound captured by the microphone is processed in real time. We get visualizations of the signal in real time as an animated waveform, animated frequencies or animated audiogram. If we connect an electric guitar to the sound card input, then this demonstration shows that we can recreate with WebAudio most of the classic effects used by guitarists (delay, reverb, distortion, chorus,
 etc.).</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 110. webaudio live processing (131) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image110.jpeg?raw=true"
-  width="55%"
+<img class="displayed"
+  src="./images/image110.jpeg?raw=true"
+  source="width:55%"
   alt="WebAudio Live Processing." />
-</p>
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-4-4">
-2.4.4 Webcam Resolution
-</h3>
+<h3 id="ch2-4-4">2.4.4 Webcam Resolution</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>
 <p>It is possible to set “hints” for the preferred cam/resolution during
 video capture. This is done by using a <a
 href="https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4" target="_blank" rel="noopener noreferrer">“constraint”
@@ -7254,27 +7219,28 @@ It’s just the same object we passed in the basic
 example: navigator.getUserMedia({video:true}, success, error) except
 that this time this object is a little more complex by including new
 properties in addition to video:true or audio:true.</p>
-For more information,
+<p>For more information,
 this <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia" target="_blank" rel="noopener noreferrer">article
 on MDN about the getUserMedia API</a> gives great examples on how to set
 the camera resolution and/or to choose the front or back camera when
-using a mobile phone.
-</p>
-<p><b>Typical use:</b></p>
+using a mobile phone.</p>
+
+<h4>Typical use:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 111. set camera resolution (132) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image111.png?raw=true"
-   width="65%"
-   alt="How to set camera resolution on mobile phone." />
-</p>
-<p><b>JavaScript</b></p>
+<img class="displayed"
+  src="./images/image111.png?raw=true"
+  source="width:65%"
+  alt="How to set camera resolution on mobile phone." />
+
+<h4>JavaScript</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>var vgaButton, qvgaButton, hdButton, dimensions, video, stream;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+var vgaButton, qvgaButton, hdButton, dimensions, video, stream;
 function init() {
   vgaButton = document.querySelector(&#39;button#vga&#39;);
   qvgaButton = document.querySelector(&#39;button#qvga&#39;);
@@ -7341,22 +7307,26 @@ function getMedia(constraints) {^
   ^function displayVideoDimensions() {^
   ^dimensions.innerHTML = &#39;Actual video dimensions: &#39; + video.videoWidth +^
   ^&#39;x&#39; + video.videoHeight + &#39;px.&#39;;^
-  ^}^</code></pre>
+  ^}^
+</code></pre>
+
 </details>
-<h4>
-CSS
-</h4>
-<pre><code>video {
+
+<h4>CSS</h4>
+
+<pre><code>
+video {
 border:1px solid;
-}</code></pre>
-<h4>
-HTML
-</h4>
+}
+</code></pre>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -7378,25 +7348,25 @@ Click to expand!
     &lt;p id=&quot;dimensions&quot;&gt;&lt;/p&gt;
     &lt;video autoplay&gt;&lt;/video&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 112. function getusermedia (134) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image112.png?raw=true"
-  width="45%"
+<img class="displayed"
+  src="./images/image112.png?raw=true"
+  source="width:45%"
   alt="Call getUserMedia() function for appropriate resolution." />
-</p>
-<h4>
-Code source extract related to the “constraint” object which specifies
-the desired resolutions:
-</h4>
+
+<h4>Code source extract related to the “constraint” object which specifies the desired resolutions:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  var vgaConstraints = {
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+1.  var vgaConstraints = {
 2.     video: {
 3.        width: { max: 640 },
 4.        height: { max: 360 }
@@ -7411,27 +7381,30 @@ Click to expand!
 13.  
 14. let constraints = hdConstraints;
 15. navigator.mediaDevices.getUserMedia(constraints)
-16. .then((stream) =&gt; {...}</code></pre>
+16. .then((stream) =&gt; {...}
+</code></pre>
+
 </details>
-<h4>
-How to check which resolutions are supported by a browser?
-</h4>
+
+<h4>How to check which resolutions are supported by a browser?</h4>
+
 <p>Use
 this <a href="https://webrtchacks.github.io/WebRTC-Camera-Resolution/" target="_blank" rel="noopener noreferrer">Web
 app that</a> systematically tests a set of “preferred resolutions” and
 compared them to the actual resolutions returned by the browser.
 Remember that the requested resolution is a hint, and there is no real
 guarantee that your configuration will allow it.</p>
-<h4>
-Selecting the front or rear camera on smartphones
-</h4>
+
+<h4>Selecting the front or rear camera on smartphones</h4>
+
 <p>Here are some other constraints you can set. In particular, look at
 the ones for selecting the front or rear camera (smartphones):</p>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  // more on video resolution
+  <summary>Click to expand!</summary>
+
+<pre><code>
+1.  // more on video resolution
 2.  constraints = {
 3.      video: {
 4.          width: { min: 1024, ideal: 1280, max: 1920 },
@@ -7454,31 +7427,31 @@ Click to expand!
 19. constraints = { audio: true, video: { facingMode: &quot;user&quot; } }
 20.  
 21. // require rear camera
-22. constraints = { audio: true, video: { facingMode: { exact: &quot;environment&quot; } } }</code></pre>
+22. constraints = { audio: true, video: { facingMode: { exact: &quot;environment&quot; } } }
+</code></pre>
+
 </details>
-<h4>
-Select input/output for audio and video streams
-</h4>
+
+<h4>Select input/output for audio and video streams</h4>
+
 <ul>
-<li>Resource: <a href="https://webrtc.github.io/samples/src/content/devices/input-output/" target="_blank" rel="noopener noreferrer">WebRTC
-samples: Select sources &amp; outputs</a></li>
+  <li>Resource: <a href="https://webrtc.github.io/samples/src/content/devices/input-output/" target="_blank" rel="noopener noreferrer">WebRTC samples: Select sources &amp; outputs</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 113. webapp for selecting audio and video input/output (135) ------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image113.jpeg?raw=true"
-   width="45%"
-   alt="Webapp for selecting audio and video input/output." />
-</p>
-<h4>
-Source code extract:
-</h4>
+<img class="displayed"
+  src="./images/image113.jpeg?raw=true"
+  style="width:45%"
+  alt="Webapp for selecting audio and video input/output." />
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  function gotDevices(deviceInfos) {
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+1.  function gotDevices(deviceInfos) {
 2.      for (var i = 0; i !== deviceInfos.length; ++i) {
 3.          var deviceInfo = deviceInfos[i];
 4.          console.log(&quot;device with id: &quot; + deviceInfo.deviceId);
@@ -7497,12 +7470,12 @@ Click to expand!
 17. };
 18. 
 19. navigator.mediaDevices.getUserMedia(constraints).
-20. then(gotStream).then(gotDevices).catch(handleError)</code></pre>
+20. then(gotStream).then(gotDevices).catch(handleError)
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-4-5">
-2.4.5 The MediaRecorder API
-</h3>
+<h3 id="ch2-4-5">2.4.5 The MediaRecorder API</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>This MediaRecoredr API allows to record / capture the audio or video
 stream. There are many sources for audio or video streams, but we will
@@ -7516,21 +7489,20 @@ directly in this Web page.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 114. webrtc samples mediarecorder (136) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image114.jpeg?raw=true"
-   width="40%"
-   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element." />
-</p>
+<img class="displayed"
+  src="./images/image114.jpeg?raw=true"
+  style="width:40%"
+  alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element." />
+
 <p>Let’s record, replay and download the video stream captured using a
 Webcam. You can test it below by clicking on “CodePen” at the top
 right:</p>
-<h4>
-JavaScript
-</h4>
+
+<h4>JavaScript</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
+  <summary>Click to expand!</summary>
+  
 <div class="sourceCode" id="cb157"><pre
 class="sourceCode js"><code class="sourceCode javascript"><span id="cb157-1"><a href="#cb157-1" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> mediaRecorder<span class="op">;</span></span>
 <span id="cb157-2"><a href="#cb157-2" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> recordedBlobs<span class="op">;</span></span>
@@ -7613,14 +7585,14 @@ class="sourceCode js"><code class="sourceCode javascript"><span id="cb157-1"><a 
 <span id="cb157-79"><a href="#cb157-79" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span> <span class="dv">100</span>)<span class="op">;</span></span>
 <span id="cb157-80"><a href="#cb157-80" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 </details>
-<h4>
-CSS
-</h4>
+
+<h4>CSS</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>/*
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+/*
 * Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
 *
 * Use of this source code is governed by a BSD-style license
@@ -7667,16 +7639,18 @@ width: calc(50vw - 48px);
 video#gumVideo {
 margin: 0 10px 10px 0;
 }
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-HTML
-</h4>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -7698,36 +7672,35 @@ Click to expand!
     &lt;a href=&quot;https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record&quot; title=&quot;View source for this page on GitHub&quot; id=&quot;viewSource&quot;&gt;View source on GitHub&lt;/a&gt;
   &lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>Click “start recording”, then press the play button on the video
 element on the right of the app. You can also click the “download”
 button to download a .webm file, playable offline with a media player
-such as <a href="https://www.videolan.org/" target="_blank" rel="noopener noreferrer">VLC</a> or online in a Web
-page with the &lt;video&gt; element.</p>
-<h4>
-Five steps are needed to use the mediaRecorder object
-</h4>
-<h4>
-1 - Create a mediaRecorder from a stream
-</h4>
-<h4>
-Source code extract:
-</h4>
-<pre><code>var options = {mimeType: &#39;video/webm; codecs=vp9&#39;};
-mediaRecorder = new MediaRecorder(stream, options);</code></pre>
-<p>
-… where stream is typically the object returned by the call
-to getUserMedia (see previous examples).
-</p>
-<h4>
-2 - Add a “data handler” and call the start() method of the
-mediaRecorder object
-</h4>
-<h4>
-Source code extract:
-</h4>
-<pre><code>1. var recordedChunks = []; // will hold the recorded stream
+such as <a href="https://www.videolan.org/" target="_blank" rel="noopener noreferrer">VLC</a> or online in a Web page with the &lt;video&gt; element.</p>
+
+<h4>Five steps are needed to use the mediaRecorder object</h4>
+
+<h4>1 - Create a mediaRecorder from a stream</h4>
+
+<h4>Source code extract:</h4>
+
+<pre><code>
+var options = {mimeType: &#39;video/webm; codecs=vp9&#39;};
+mediaRecorder = new MediaRecorder(stream, options);
+</code></pre>
+
+<p>… where stream is typically the object returned by the call to getUserMedia (see previous examples).</p>
+
+<h4>2 - Add a “data handler” and call the start() method of the mediaRecorder object</h4>
+
+<h4>Source code extract:</h4>
+
+<pre><code>
+1. var recordedChunks = []; // will hold the recorded stream
 2. mediaRecorder.ondataavailable = handleDataAvailable;
 3. mediaRecorder.start();
 4 
@@ -7736,69 +7709,49 @@ Source code extract:
 7.     recordedChunks.push(event.data);
 8.     } else {
 9.   // ...
-10. }</code></pre>
-<h4>
-Explanations:
-</h4>
+10. }
+</code></pre>
+
+<h4>Explanations:</h4>
+
 <ul>
-<li>
-<i>Line 1</i>: we declare an array of bytes that will hold the recorded
-stream.
-</li>
-<li>
-<i>Line 2</i>: we declare the callback function that will be called
-while the stream is being captured. While the Webcam will be used, every
-xxx seconds, chunks of data will be passed to
-the handleDataAvailable function.
-</li>
-<li>
-<i>Lines 5-10</i>: this function collects the chunk of data that
-corresponds to a few seconds of video, and stores it in
-the recordedChunks byte array.
-</li>
+  <li><i>Line 1</i>: we declare an array of bytes that will hold the recorded stream.</li>
+  <li><i>Line 2</i>: we declare the callback function that will be called while the stream is being captured. While the Webcam will be used, every xxx seconds, chunks of data will be passed to the handleDataAvailable function.</li>
+  <li><i>Lines 5-10</i>: this function collects the chunk of data that corresponds to a few seconds of video, and stores it in the recordedChunks byte array.</li>
 </ul>
-<h4>
-3 - When you’ve finished recording, tell the mediaRecorder to stop
-</h4>
-<p>
-When you’re done, you need to call the stop() method of the
-mediaRecorder object. This will end the periodic execution of
-the handleDataAvailable method, and stop the data capture.
-</p>
-<pre><code>mediaRecorder.stop();</code></pre>
-<h4>
-4 - Create a BLOB (Binary Large Object) with the collected data, and use
-it to set the src attribute of an HTML5 video player
-</h4>
-<p>
-<p>This piece of code creates a blob with the recordedChunks array. Use
-the URL.createObjectURL(recordedChunks) standard method to create
-another object that can be used as a value to set the src attribute of
-an HTML5 video element.</p>
-Like that, the recorded stream can be played using a standard
-HTML5 &lt;video&gt; element.
-</p>
-<pre><code>function play() {
+
+<h4>3 - When you’ve finished recording, tell the mediaRecorder to stop</h4>
+
+<p>When you’re done, you need to call the stop() method of the mediaRecorder object. This will end the periodic execution of the handleDataAvailable method, and stop the data capture.</p>
+
+<pre><code>
+mediaRecorder.stop();
+</code></pre>
+
+<h4>4 - Create a BLOB (Binary Large Object) with the collected data, and use it to set the src attribute of an HTML5 video player</h4>
+
+<p>This piece of code creates a blob with the recordedChunks array. Use the URL.createObjectURL(recordedChunks) standard method to create another object that can be used as a value to set the src attribute of an HTML5 video element.</p>
+
+<p>Like that, the recorded stream can be played using a standard HTML5 &lt;video&gt; element.</p>
+
+<pre><code>
+function play() {
   var superBuffer = new Blob(recordedChunks);
   videoElement.src =
   window.URL.createObjectURL(superBuffer);
-}</code></pre>
-<h4>
-5 - Download the captured stream
-</h4>
-<p>
-A trick consists in creating, on the fly, an invisible link with
-a download attribute (see Module 1) and a href attribute  that points to
-the blob object containing the recorded stream encoded using a given
-codec, then generate programmatically a click event on the link. This
-will force the browser to download a file of type video/webm to the hard
-disk.
-</p>
+}
+</code></pre>
+
+<h4>5 - Download the captured stream</h4>
+
+<p>A trick consists in creating, on the fly, an invisible link with a download attribute (see Module 1) and a href attribute  that points to the blob object containing the recorded stream encoded using a given
+codec, then generate programmatically a click event on the link. This will force the browser to download a file of type video/webm to the hard disk.</p>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  function download() {
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+1.  function download() {
 2.  var blob = new Blob(recordedChunks, {
 3.  type: &#39;video/webm&#39;
 4.  });
@@ -7810,24 +7763,22 @@ Click to expand!
 10. a.download = &#39;test.webm&#39;;
 11. a.click();
 12. window.URL.revokeObjectURL(url);
-13. }</code></pre>
+13. }
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-1-1">
-3.1.1 HTML5 Graphics
-</h3>
+<h3 id="ch3-1-1">3.1.1 HTML5 Graphics</h3>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-1">
-3.2.1 About JavaScript and HTML5
-</h3>
+<h3 id="ch3-2-1">3.2.1 About JavaScript and HTML5</h3>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 115. javascript logo (140) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image115.png?raw=true"
-   width="10%"
-   alt="JavaScript logo." />
-</p>
+<img class="displayed"
+  src="./images/image115.png?raw=true"
+  style="width:10%"
+  alt="JavaScript logo." />
+
 <p>HTML5 is composed of new elements, but it also comes with many
 JavaScript APIs for controlling video and sound, drawing and animating
 things in the new &lt;canvas&gt; element, for offline applications,
@@ -7845,9 +7796,9 @@ and modifying them, etc.</b> Many previous students who were real
 JavaScript beginners managed to do [all] the assignments (drawing and
 animating a monster with keyboard/mouse interaction)! And they did
 this by just studying the provided examples.</p>
-<h4>
-External resources
-</h4>
+
+<h4>External resources</h4>
+
 <ul>
 <li><p>The
 <a href="https://www.edx.org/course/javascript-introduction" target="_blank" rel="noopener noreferrer">JavaScript
@@ -7856,9 +7807,9 @@ Introduction</a> course on W3Cx!</p></li>
 Network <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" rel="noopener noreferrer">has
 a JavaScript guide</a></p></li>
 </ul>
-<h4>
-What do you need? How to debug? How to catch errors?
-</h4>
+
+<h4>What do you need? How to debug? How to catch errors?</h4>
+
 <p>We will not look at the JavaScript syntax here, but more at
 “JavaScript in the browser”, how it works, how to start writing code,
 etc.</p>
@@ -7875,6 +7826,7 @@ any JavaScript command.</p>
 <p>Let’s look
 at <a href="https://jsbin.com/visariz/1/edit?html,output" target="_blank" rel="noopener noreferrer">this example
 on JS Bin</a>:</p>
+
 <div data-align="center" width="100%">
 <table>
 <colgroup>
@@ -7981,11 +7933,11 @@ as in the dev. tools console. This is illustrated by the image below:
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 116. javascript debugging console view (142) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image116.jpeg?raw=true"
-  width="50%"
+<img class="displayed"
+  src="./images/image116.jpeg?raw=true"
+  style="width:50%"
   alt="JavaScript debugging using the dev tool console." />
-</p>
+
 <p>It is also possible to use the “real dev. tool console”, and for this
 I recommend running the application in a single window, not in the JS
 Bin editor. Press the black arrow on the top right of the output window
@@ -7994,48 +7946,48 @@ press <i>F12</i>. You should see:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 117. view of the javascript debug devtool console (143) --------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image117.jpeg?raw=true"
-   width="40%"
-   alt="View of the JavaScript Debug Devtool console." />
-</p>
+<img class="displayed"
+  src="./images/image117.jpeg?raw=true"
+  style="width:40%"
+  alt="View of the JavaScript Debug Devtool console." />
+
 <p>Ok, now, let’s make an error:
 change console.log() into conso<b>lll</b>e.log(). Let’s see what
 happens:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 118. view of the javascript console (143) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image118.jpeg?raw=true"
-   width="50%"
-   alt="View of the JavaScript console." />
-</p>
+<img class="displayed"
+  src="./images/image118.jpeg?raw=true"
+  style="width:50%"
+  alt="View of the JavaScript console." />
+
 <p>And if we run it standalone and use the dev. tool console:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 119. view of the javascript console (143) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image119.jpeg?raw=true"
-   width="50%"
-   alt="View of the JavaScript console." />
-</p>
+<img class="displayed"
+  src="./images/image119.jpeg?raw=true"
+  style="width:50%"
+  alt="View of the JavaScript console." />
+
 <p>And if we click on the line number in the right, the dev. tool shows
 the source code centered on the line that caused the error:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 120. view of the javascript console (144) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image120.jpeg?raw=true"
-   width="50%"
+<img class="displayed"
+  src="./images/image120.jpeg?raw=true"
+  style"width:50%"
    alt="View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc." />
-</p>
+
 <p>Without such tools, debugging JavaScript code is impossible. So you
 need to look at some basic tutorials on how to use the dev. tools of
 your browsers, since they differ from one another in the way they work
 - although the principles remain the same.</p>
-<h4>
-About the asynchronous nature of JavaScript
-</h4>
+
+<h4>About the asynchronous nature of JavaScript</h4>
+
 <p>Some of you may not be used to “asynchronous programming”,
 “callbacks” etc. We recommend to read <a
 href="https://en.wikipedia.org/wiki/Callback_%28computer_programming%29" target="_blank" rel="noopener noreferrer">this
@@ -8043,27 +7995,23 @@ article on WikiPedia</a> and <a
 href="https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java" target="_blank" rel="noopener noreferrer">this
 thread on StackOverflow</a>.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-2">
-3.2.2 The &lt;canvas&gt; Element
-</h3>
-<!------------------------------------------------------------------------------------------------>
+<h3 id="ch3-2-2">3.2.2 The &lt;canvas&gt; Element</h3>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 121. canvas element logo (144) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image121.jpeg?raw=true"
-   width="25%"
-   alt="View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc." />
-</p>
+<img class="displayed"
+  src="./images/image121.jpeg?raw=true"
+  style="width:25%"
+  alt="View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc." />
+
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 121. canvas element logo (144) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image121.jpeg?raw=true"
-   width="10%"
-   alt="Canvas element logo." />
-</p>
-<p>
+<img class="displayed"
+  src="./images/image121.jpeg?raw=true"
+  style="width:10%"
+  alt="Canvas element logo." />
+
 <p>The &lt;canvas&gt; tag was introduced into the HTML specification
 around 2010 as a “Flash killer.” At the time, popular video games used
 this proprietary technology and only a few browsers supported it. The
@@ -8082,27 +8030,26 @@ The canvas is also used to do animations at 60 frames per second (useful
 for games), to display videos with special effects, to display a webcam
 stream, and so on.
 </p>
-<h4>
-Examples
-</h4>
+
+<h4>Examples</h4>
+
 <p>Here are some fun examples that show the interest of the HTML5
 canvas.</p>
-<h4>
-Example #1
-</h4>
+
+<h4>Example #1</h4>
+
 <p><a href="https://www.ravalmatic.com/portfolio/footchinko/" target="_blank" rel="noopener noreferrer">Foot
 Chinko</a> is one popular free HTML5 games:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 122. foot chinko one of the best html5 2D game of 2015 (145) ------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image122.jpeg?raw=true"
-   width="40%"
-   alt="Foot chinko one of the best html5 2D game of 2015." />
-</p>
-<h4>
-Example #2
-</h4>
+<img class="displayed"
+  src="./images/image122.jpeg?raw=true"
+  style="width:40%"
+  alt="Foot chinko one of the best html5 2D game of 2015." />
+
+<h4>Example #2</h4>
+
 <p>Lots of data visualization tools and JavaScript libraries use the
 HTML5 canvas element for <a
 href="http://www.creativebloq.com/design-tools/data-visualization-712402" target="_blank" rel="noopener noreferrer">Data
@@ -8110,25 +8057,24 @@ visualization</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 123. html5 data visualization (146) ------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image123.jpeg?raw=true"
-   width="50%"
-   alt="html5 data visualization, bar graphs." />
-</p>
-<h4>
-Example #3
-</h4>
+<img class="displayed"
+  src="./images/image123.jpeg?raw=true"
+  style="width:50%"
+  alt="html5 data visualization, bar graphs." />
+
+<h4>Example #3</h4>
+
 <p>A version of the <a href="https://intersoft.itch.io/galaxian" target="_blank" rel="noopener noreferrer">arcade
 game Galaxian</a>, that runs at 60 frames per second in an HTML5 canvas
 element:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------- 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (146) -------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image124.jpeg?raw=true"
-   width="50%"
-   alt="A version of the game Galaxian that runs at 60 frames/s in a canvas." />
-</p>
+<img class="displayed"
+  src="./images/image124.jpeg?raw=true"
+  style="width:50%"
+  alt="A version of the game Galaxian that runs at 60 frames/s in a canvas." />
+
 <p>Performance is  good and animation is generally very smooth, since
 most Web browsers (mobile and desktop) support hardware
 acceleration.</p>
@@ -8138,9 +8084,9 @@ curious among you, please have a look at the two popular libraries for
 doing 3D drawing/animation in a &lt;canvas&gt;: <a
 href="https://www.babylonjs.com/" target="_blank" rel="noopener noreferrer">BabylonJS</a> and <a
 href="https://threejs.org/" target="_blank" rel="noopener noreferrer">ThreeJS</a>.</p>
-<h4>
-External resources
-</h4>
+
+<h4>External resources</h4>
+
 <ul>
 <li><p>Comprehensive <a
 href="https://www.html5canvastutorials.com/" target="_blank" rel="noopener noreferrer">HTML5 canvas
@@ -8161,14 +8107,13 @@ table of &lt;canvas&gt;</a></p></li>
 </ul></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-3">
-3.2.3 Canvas and Accessibility
-</h3>
+<h3 id="ch3-2-3">3.2.3 Canvas and Accessibility</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>The dynamic nature of the &lt;canvas&gt; element has made it
 difficult to use in applications that need to be accessible to people
 with disabilities. To be accessible, it must meet the following
 principles:</p>
+
 <ul>
 <li><p>Providing alternative content for what is drawn on
 the &lt;canvas&gt;,</p></li>
@@ -8177,9 +8122,9 @@ the &lt;canvas&gt; to assistive technologies,</p></li>
 <li><p>Visually indicating whether or not a shape in the canvas had
 keyboard focus.</p></li>
 </ul>
-<h4>
-Read more on this topic:
-</h4>
+
+<h4>Read more on this topic:</h4>
+
 <ul>
 <li><p>An article on <a
 href="https://www.creativebloq.com/web-design/canvas-element-accessibility-41514740" target="_blank" rel="noopener noreferrer">What
@@ -8189,14 +8134,13 @@ href="https://www.w3.org/html/wg/wiki/AddedElementCanvas" target="_blank" rel="n
 Accessibility Issues</a></p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-4">
-3.2.4 HTML Canvas Cheatsheet
-</h3>
+<h3 id="ch3-2-4">3.2.4 HTML Canvas Cheatsheet</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>We recommend these 2 quick references (or <a
 href="https://en.wikipedia.org/wiki/Cheat_sheet" target="_blank" rel="noopener noreferrer">cheatsheets</a>) below.
 Do not hesitate to keep your favorite one open in a separate browser
 ta</p>
+
 <ol type="1">
 <li>As a <a
 href="https://courses.edx.org/assets/courseware/v1/4b7360cab7f3bf439c26782ec47cf7a8/asset-v1:W3Cx+HTML5.1x+2T2020+type@asset+block/Infopgraphic-CanvasCheatSheet-Final2.pdf" target="_blank" rel="noopener noreferrer">PDF
@@ -8205,28 +8149,24 @@ file</a>, this canvas cheatsheet:</li>
 <!------------------------------------------------------------------------------------------------>
 <!-------------- 125. snapshot of an html canvas cheatsheet from skilled.com (147) --------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image125.png?raw=true"
-   width="65%"
-   alt="Snapshot of an HTML Canvas cheatsheet from skilled.com." />
-</p>
+<img class="displayed"
+  src="./images/image125.png?raw=true"
+  style="width:65%"
+  alt="Snapshot of an HTML Canvas cheatsheet from skilled.com." />
+
 <ol start="2" type="1">
-<li>Another resource, as an <a
-href="https://simon.html5.org/dump/html5-canvas-cheat-sheet.html" target="_blank" rel="noopener noreferrer">HTML
-file</a>:</li>
+  <li>Another resource, as an <a href="https://simon.html5.org/dump/html5-canvas-cheat-sheet.html" target="_blank" rel="noopener noreferrer">HTML file</a>:</li>
 </ol>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 126. snapshot of a canvas cheatsheet api (148) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image126.png?raw=true"
-   width="65%"
-   alt="Snapshot of a Canvas cheatsheet API." />
-</p>
+<img class="displayed"
+  src="./images/image126.png?raw=true"
+  style="width:65%"
+  alt="Snapshot of a Canvas cheatsheet API." />
+
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-5">
-3.2.5 Coordinate System
-</h3>
+<h3 id="ch3-2-5">3.2.5 Coordinate System</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>The coordinate system used for drawing in canvases is similar to the
 one used by many drawing APIs like Java2D: the (0 , 0) is in the top
@@ -8235,19 +8175,17 @@ bottom, as  shown in the following picture:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 127. coordinate system (148) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image127.png?raw=true"
-   width="55%"
-   alt="Coordinate system." />
-</p>
+<img class="displayed"
+  src="./images/image127.png?raw=true"
+  style="width:55%"
+  alt="Coordinate system." />
+
 <ul>
 <li><p><b>X</b> axis is horizontal, directed to the right </p></li>
 <li><p><b>Y</b> axis is vertical, directed downwards</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-6">
-3.2.6 Drawing Rectangles in a Canvas
-</h3>
+<h3 id="ch3-2-6">3.2.6 Drawing Rectangles in a Canvas</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Small errata about what I said in the above video: “So let’s get the
 canvas using the DOM API method document.getElementById() or better,
@@ -8256,87 +8194,95 @@ API”..</p>
 <p>The part is bold is not correct: querySelector, technically, comes
 from <a href="https://www.w3.org/TR/selectors-api/" target="_blank" rel="noopener noreferrer">Selectors API</a>.
 Just in case some people would like to check the specification.</p>
-<h4>
-Detailed explanation of the example shown in the above video
-</h4>
+
+<h4>Detailed explanation of the example shown in the above video</h4>
+
 <p>Here are the different steps, in a little more detail, of the example
 demonstrated in the above video:</p>
-<h4>
-1 - Add the &lt;canvas&gt; element into an HTML page
-</h4>
-<pre><code>&lt;canvas id=&quot;myCanvas&quot; width=&quot;300&quot; height=&quot;225&quot;&gt;
+
+<h4>1 - Add the &lt;canvas&gt; element into an HTML page</h4>
+
+<pre><code>
+&lt;canvas id=&quot;myCanvas&quot; width=&quot;300&quot; height=&quot;225&quot;&gt;
   Fallback content that will be displayed in case the web browser
   does not support the canvas tag or in case scripting
   is disabled.
-&lt;/canvas&gt;</code></pre>
-<p>
+&lt;/canvas&gt;
+</code></pre>
+
 <p>Place code similar to the above somewhere in an HTML page. This
 example defines an area of 300 by 225 pixels on which content can be
 rendered with JavaScript.</p>
 Normally you should see nothing as a result; by default canvases are
 “transparent”. <b>Make it visible using CSS!</b> For example, you can
 add a border to the canvas (or change the background color, or put an
-image in the background).
-</p>
-<h4>
-The three lines of CSS will create a border around the canvas
-with id=“myCanvas”, of 1 pixel width, in black:
-</h4>
-<pre><code>&lt;style&gt;
+image in the background).</p>
+
+<h4>The three lines of CSS will create a border around the canvas with id=“myCanvas”, of 1 pixel width, in black:</h4>
+
+<pre><code>
+&lt;style&gt;
   #myCanvas {
     border:1px solid black;
   }
-&lt;/style&gt;</code></pre>
-<h4>
-2 - Select the &lt;canvas&gt; element for use from JavaScript
-</h4>
+&lt;/style&gt;
+</code></pre>
+
+<h4>2 - Select the &lt;canvas&gt; element for use from JavaScript</h4>
+
 <p>We can have more than one &lt;canvas&gt; in a single page, and
 canvases will be manipulated with JavaScript like other elements in the
 DOM.</p>
-<h4>
-For example with:
-</h4>
-<pre><code>var canvas = document.getElementById(&quot;myCanvas&quot;);</code></pre>
-<h4>
-… or with the querySelector() method introduced by HTML5, that use the
-CSS selector syntax for selecting elements:
-</h4>
-<pre><code>var canvas = document.querySelector(&quot;#myCanvas&quot;);</code></pre>
-<h4>
-3 - Get a “2D context” associated with the canvas
-</h4>
-<p>
+
+<h4>For example with:</h4>
+
+<pre><code>
+var canvas = document.getElementById(&quot;myCanvas&quot;);
+</code></pre>
+
+<h4>… or with the querySelector() method introduced by HTML5, that use the CSS selector syntax for selecting elements:</h4>
+
+<pre><code>
+var canvas = document.querySelector(&quot;#myCanvas&quot;);
+</code></pre>
+
+<h4>3 - Get a “2D context” associated with the canvas</h4>
+
 <p>This step is useful for drawing and setting drawing properties
 (color, etc.)</p>
 Once we have a pointer to the &lt;canvas&gt;, we can get a
 “context”. This particular object is the core of the canvas JavaScript
 API. It provides methods for drawing, like fillRect(x, y, width,
 height) for example, that draws a filled rectangle, and properties for
-setting the color, shadows, gradients, etc.
-</p>
-<h4>
-Let’s first get the context (do this only once):
-</h4>
-<pre><code>var ctx=canvas.getContext(&#39;2d&#39;);</code></pre>
-<h4>
-… then, set the color for drawing filled shapes:
-</h4>
-<pre><code>ctx.fillStyle=&#39;red&#39;;</code></pre>
-<h4>
-… and draw a filled rectangle:
-</h4>
-<pre><code>ctx.fillRect(0,0,80,100);</code></pre>
-<h4>
-Complete example that draws a filled rectangle in red
-</h4>
-<h4>
-HTML
-</h4>
+setting the color, shadows, gradients, etc.</p>
+
+<h4>Let’s first get the context (do this only once):</h4>
+
+<pre><code>
+var ctx=canvas.getContext(&#39;2d&#39;);
+</code></pre>
+
+<h4>… then, set the color for drawing filled shapes:</h4>
+
+<pre><code>
+ctx.fillStyle=&#39;red&#39;;
+</code></pre>
+
+<h4>… and draw a filled rectangle:</h4>
+
+<pre><code>
+ctx.fillRect(0,0,80,100);
+</code></pre>
+
+<h4>Complete example that draws a filled rectangle in red</h4>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;style&gt;
@@ -8369,16 +8315,18 @@ Click to expand!
     Your browser does not support the canvas tag.
   &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Source code:
-</h4>
+
+<h4>Source code:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.     &lt;head&gt;
 4.        &lt;style&gt;
@@ -8411,11 +8359,13 @@ Click to expand!
 31.       Your browser does not support the canvas tag.
 32.      &lt;/canvas&gt;
 33.    &lt;/body&gt;
-34. &lt;/html&gt;</code></pre>
+34. &lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Explanations
-</h4>
+
+<h4>Explanations</h4>
+
 <p><b>Only access elements when the DOM is ready:</b></p>
 <p>Notice that we wrote an “init” function (<i>line 13</i>) that is
 called only when the page has been entirely loaded (we say “when the DOM
@@ -8440,7 +8390,11 @@ current color for filled shapes:</b></p>
 24</i> - useful for specifying the way shapes will be filled. In our
 case this line indicates the color of all the filled shapes we are going
 to draw:</p>
-<pre><code>ctx.fillStyle=&#39;#FF0000&#39;;</code></pre>
+
+<pre><code>
+ctx.fillStyle=&#39;#FF0000&#39;;
+</code></pre>
+
 <p>The context property named fillStyle is used here. This property can
 be set with a color, a gradient, or a pattern. We will see examples of
 these later on in the course.</p>
@@ -8448,47 +8402,65 @@ these later on in the course.</p>
 which corresponds to a pure red color using the CSS RGB hexadecimal
 encoding (we could also have used ctx.fillStyle=‘red’);</p>
 <p><b>Then we can draw:</b></p>
-<pre><code>ctx.fillRect(0,0,80,100);</code></pre>
+
+<pre><code>
+ctx.fillRect(0,0,80,100);
+</code></pre>
+
 <p>This line is a call to the method fillRect(top left X coordinate, top
 left Y coordinate, width, height), which draws a filled rectangle.</p>
 <p>The way the rectangle will be filled depends on the current value of
 several properties of the context, in particular the value of
 the fillStyle property. In our case, the rectangle will be red.</p>
-<h4>
-Summary of the different steps:
-</h4>
+
+<h4>Summary of the different steps:</h4>
+
 <ol type="1">
-<li><b>Declare the canvas,</b> remembering to add an id attribute, and
-fallback content:  </li>
+  <li><b>Declare the canvas,</b> remembering to add an id attribute, and fallback content:</li>
 </ol>
-<pre><code>    &lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
+
+<pre><code>
+    &lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
     ...fallback content...
-    &lt;/canvas&gt;</code></pre>
+    &lt;/canvas&gt;
+</code></pre>
+
 <ol start="2" type="1">
-<li><b>Get a reference to the canvas in a JavaScript variable</b> using
-the DOM API:</li>
+  <li><b>Get a reference to the canvas in a JavaScript variable</b> using the DOM API:</li>
 </ol>
-<pre><code>    var canvas=document.getElementById(&#39;myCanvas&#39;);</code></pre>
+
+<pre><code>
+    var canvas=document.getElementById(&#39;myCanvas&#39;);
+</code></pre>
+
 <ol start="3" type="1">
-<li><b>Get the context for drawing in that canvas</b>:</li>
+  <li><b>Get the context for drawing in that canvas</b>:</li>
 </ol>
-<pre><code>    var ctx=canvas.getContext(&#39;2d&#39;);</code></pre>
+
+<pre><code>
+    var ctx=canvas.getContext(&#39;2d&#39;);
+</code></pre>
+
 <ol start="4" type="1">
-<li><b>Specify some drawing properties</b> (optional):  </li>
+  <li><b>Specify some drawing properties</b> (optional):  </li>
 </ol>
-<pre><code>    ctx.fillStyle=&#39;#FF0000&#39;;</code></pre>
+
+<pre><code>
+    ctx.fillStyle=&#39;#FF0000&#39;;
+</code></pre>
+
 <ol start="5" type="1">
-<li><b>Draw some shapes</b>:</li>
+  <li><b>Draw some shapes</b>:</li>
 </ol>
-<pre><code>    ctx.fillRect(0,0,80,100)</code></pre>
+
+<pre><code>
+    ctx.fillRect(0,0,80,100)
+</code></pre>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-2-7">
-3.2.7 Drawing Principles
-</h3>
+<h3 id="ch3-2-7">3.2.7 Drawing Principles</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-More about the “context” object
-</h4>
+<h4>More about the “context” object</h4>
+
 <p>Before we go on, we should take some time to clarify the way we draw
 on HTML5 canvases. We already mentioned that we use a graphic context
 for all the main operations. Whenever a shape, a text, or an image is
@@ -8500,30 +8472,21 @@ current values of these drawing properties that are used.</p>
 set of values, but for now, let’s examine in greater detail some of the
 properties and methods we’ve already encountered, and introduce new
 ones.</p>
-<h4>
-More about properties and methods of the context object
-</h4>
+
+<h4>More about properties and methods of the context object</h4>
+
 <ul>
-<li>
-<h4>
-<b>fillStyle</b> is a property of the context, similar in a way to a CSS
-property
-</li>
+  <li><b>fillStyle</b> is a property of the context, similar in a way to a CSS property</li>
 </ul>
-<h4>
-Its value can be one of the following:
-</h4>
+
+<h4>Its value can be one of the following:</h4>
+
 <ul>
-<li>
-a color,
-</li>
-<li>
-a pattern (texture), or
-</li>
-<li>
-a gradient.
-</li>
+  <li>a color,</li>
+  <li>a pattern (texture), or</li>
+  <li>a gradient.</li>
 </ul>
+
 <p>The default value is the color black. Any kind of drawing in “fill
 mode” will use the value of this property to determine how to render the
 “filled part” of the drawing: any filled rectangle will be filled black
@@ -8535,52 +8498,57 @@ patterns later, but for now we introduce some properties and values so
 that you can understand the principles of canvas drawing.</p>
 <p>fillStyle and the other context properties can be considered to be
 “global variables” of the context.</p>
+
 <ul>
-<li><h4>
-fillRect(x, y, width, height):  a call to this method draws a filled
-rectangle</li>
+<li>fillRect(x, y, width, height):  a call to this method draws a filled rectangle</li>
 </ul>
+
 <p>The two first parameters are the coordinates of the top left corner
 of the rectangle. This method uses the current value of
 the fillStyle property to determine how to fill the rectangle.</p>
-<pre><code>ctx.fillStyle=&#39;pink&#39;;
-ctx.fillRect(10,10,200,200);</code></pre>
+
+<pre><code>
+ctx.fillStyle=&#39;pink&#39;;
+ctx.fillRect(10,10,200,200);
+</code></pre>
+
 <p>Produces this result:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 128. filled rectangle with pink color (153) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image128.jpeg?raw=true"
-   width="25%"
-   alt="Filled rectangle with pink color." />
-</p>
+<img class="displayed"
+  src="./images/image128.jpeg?raw=true"
+  style="width:25%"
+  alt="Filled rectangle with pink color." />
+
 <!-- ./images/image128.jpeg){width="2.59375in" height="2.5833333333333335in"} -->
+
 <ul>
-<li><h4>
-strokeStyle is a property of the context similar to fillStyle, but this
-time for indicating how the shape’s outline should be rendered
-</h4></li>
+  <li>strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape’s outline should be rendered</li>
 </ul>
+
 <p>The possible values are the same as those for the fillStyle property:
 a color, a pattern, or a gradient. This property will be taken into
 account when wireframe shapes are drawn.</p>
+
 <ul>
-<li><h4>
-strokeRect(x, y, width, height): like fillRect(…), but instead of
-drawing a filled rectangle the rectangle is drawn in wireframe mode
-</h4></li>
+  <li>strokeRect(x, y, width, height): like fillRect(…), but instead of drawing a filled rectangle the rectangle is drawn in wireframe mode </li>
 </ul>
-<pre><code>ctx.strokeStyle=&#39;blue&#39;;
-ctx.strokeRect(10,10,200,200);</code></pre>
-… gives this result:
+
+<pre><code>
+ctx.strokeStyle=&#39;blue&#39;;
+ctx.strokeRect(10,10,200,200);
+</code></pre>
+
+<p>… gives this result:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 129. stroked rectangle - border is in blue (154) ------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image129.jpeg?raw=true"
-   width="25%"
-   alt="Stroked rectangle - border is in blue." />
-</p>
+<img class="displayed"
+  src="./images/image129.jpeg?raw=true"
+  style="width:25%"
+  alt="Stroked rectangle - border is in blue." />
+
 <!-- ./images/image129.jpeg){width="2.5833333333333335in" height="2.6041666666666665in"}  -->
 <p>Only the outline of the rectangle will be drawn, and it will be drawn
 using the value of the strokeStyle property.</p>
@@ -23297,7 +23265,7 @@ good understanding of the material.</p>
 </ul>
 
 <p>. . .The end.<br>
-<br>last updated 1-14-23 10:06pm </p>
+<br>last updated 1-31-23 10:06pm </p>
 </body>
 </html>
 <!--
