@@ -9685,21 +9685,17 @@ We restored it at the end (BEST PRACTICE).
   width="40%"
   alt="Example of context save-restore: a monster drawn by a function that saves and restored the context, then a rectangle is drawn, with context as it was previously." />
 </p>
-<p>
-Source code extract of this function: notice at <i>lines 3</i> and
-<i>26</i> how we save/restore the context at the beginning/end. Right
-after saving the context, we modify the coordinate system (<i>lines
-7-8</i>). The rest of the code is nearly the same as in the last version
-of the monster example.
-</p>
-<h4>
-function drawMonster
-</h4>
+
+<p>Source code extract of this function: notice at <i>lines 3</i> and <i>26</i> how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines
+7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
+
+<h4>function drawMonster</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  function drawMonster(x, y, angle, headColor, eyeColor) {
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+1.  function drawMonster(x, y, angle, headColor, eyeColor) {
 2.      // BEST PRACTICE: SAVE CONTEXT AND RESTORE IT AT THE END
 3.      ctx.save();
 4.  
@@ -9725,12 +9721,13 @@ Click to expand!
 24.     ...
 25.     // BEST PRACTICE!
 26.     ctx.restore();
-27. }</code></pre>
+27. }
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-3-1">3.3.1 Immediate Mode</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>
 <p>In the previous sections, we learned how to draw filled or
 wireframe rectangles.</p>
 <p>As soon as the ctx.strokeRect(x, y, width, height) or
@@ -9743,22 +9740,17 @@ Another mode called “path mode” or “buffered mode” will be seen later in
 this course, which will be useful for drawing lines, curves, arcs, and
 also rectangles. Rectangles are the only shapes that have methods for
 drawing them <i>immediately</i> and also other methods for drawing them
-in “<i>path/buffered mode</i>”.
-</p>
-<h4>
-Example: drawing rectangles in immediate mode using best practices
-</h4>
-<p>
-Let’s give an example that draws several rectangles, filled or
-wireframe, with different colors and line widths:
-</p>
-<h4>
-HTML
-</h4>
+in “<i>path/buffered mode</i>”.</p>
+
+<h4>Example: drawing rectangles in immediate mode using best practices</h4>
+
+<p>Let’s give an example that draws several rectangles, filled or wireframe, with different colors and line widths:</p>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
+  <summary>Click to expand!</summary>
+  
 <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -9814,34 +9806,27 @@ ctx.restore();
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;400&quot;&gt;
 &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-2">
-3.3.2 Drawing Text
-</h3>
+<h3 id="ch3-3-2">3.3.2 Drawing Text</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>
-The canvas API provides two main methods for drawing
-text: ctx.strokeText(message, x, y) and ctx.fillText(message, x, y). It
-also provides a set of context properties for setting the character font
-and style, for laying out the text, etc.
+<p>The canvas API provides two main methods for drawing text: ctx.strokeText(message, x, y) and ctx.fillText(message, x, y). It also provides a set of context properties for setting the character font and style, for laying out the text, etc.</p>
+
+<h4>Typical use</h4>
+
+<p>Look at the example below, and change the position where the text is drawn, change font attributes, etc.:
 </p>
-<h4>
-Typical use
-</h4>
-<p>
-Look at the example below, and change the position where the text is
-drawn, change font attributes, etc.:
-</p>
-<h4>
-HTML
-</h4>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;Drawing text&lt;/title&gt;
@@ -9860,90 +9845,75 @@ context.fillText(&quot;Hello World!&quot;, 10, 100);
 context.strokeText(&quot;Hello World!&quot;, 10, 100);
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Source code extract:
-</h4>
-<pre><code>1.  context.font = &quot;60pt Calibri&quot;;
+
+<h4>Source code extract:</h4>
+
+<pre><code>
+1.  context.font = &quot;60pt Calibri&quot;;
 2.  // .. set color, lineWidth, shadow etc.
 3.  
 4.  // 10, 10 is the start of the baseline, bottom of left leg of the &quot;H&quot; in the
 5.  // &quot;Hello World&quot; example.
 6.  context.fillText(&quot;Hello World!&quot;, 10, 10);
 7.  // Or
-8.  context.strokeText(&quot;Hello World!&quot;, 10, 10);</code></pre>
-<h4>
-Properties and methods useful for drawing text
-</h4>
-<h4>
-Choosing the font: the context.font property
-</h4>
-<p>
+8.  context.strokeText(&quot;Hello World!&quot;, 10, 10);
+</code></pre>
+
+<h4>Properties and methods useful for drawing text</h4>
+
+<h4>Choosing the font: the context.font property</h4>
+
 <p>It is possible to draw text in a canvas using the font property of
 the context to specify the font style (plain, bold, italic), the size,
 and the font name. Other properties such as strokeStyle or fillStyle, as
 well as other properties that are detailed in the next pages, are also
 going to be taken into account.</p>
-The font property accepts values
-like: font-style,  font-weight, font-size, font-face.
-</p>
-<h4>
-Accepted values are:
-</h4>
+
+<p>The font property accepts values like: font-style,  font-weight, font-size, font-face.</p>
+
+<h4>Accepted values are:</h4>
+
 <ul>
-<li>
-font-style: normal, italic, oblique,
-</li>
-<li>
-font-weight: normal, bold, bolder, lighter,
-</li>
-<li>
-font-size: a size in pixels or in points, such as 60pt, 20px, 36px,
-etc.,
-</li>
-<li>
-font-face:  Arial, Calibri, Times, Courier, etc. Some font faces may not
-work in all browsers.
-</li>
+  <li>font-style: normal, italic, oblique, </li>
+  <li>font-weight: normal, bold, bolder, lighter,</li>
+  <li>font-size: a size in pixels or in points, such as 60pt, 20px, 36px, etc.,</li>
+  <li>font-face:  Arial, Calibri, Times, Courier, etc. Some font faces may not work in all browsers.</li>
 </ul>
-<h4>
-Examples:
-</h4>
+
+<h4>Examples:</h4>
+
 <ul>
-<li>
-context.font = “60pt Calibri”;
-</li>
-<li>
-context.font = “normal normal 20px Verdana”;
-</li>
-<li>
-context.font = “normal 36px Arial”;
-</li>
-<li>
-context.font = “italic bold 36px Arial”;
-</li>
+  <li>context.font = “60pt Calibri”;</li>
+  <li>context.font = “normal normal 20px Verdana”;</li>
+  <li>context.font = “normal 36px Arial”;</li>
+  <li>context.font = “italic bold 36px Arial”;</li>
 </ul>
-<h4>
-Drawing text in solid or wireframe:
-the fillText() or strokeText() methods
-</h4>
+
+<h4>Drawing text in solid or wireframe: the fillText() or strokeText() methods</h4>
+
 <p>The fillText(message, x, y) or strokeText(message, x, y) methods from
 the context will actually draw a text message at the origin of the
 baseline position. In the “Hello World” example, this is located at the
 bottom of the left leg of the “H”.</p>
 <p>There is a fourth optional parameter maxWidth that forces the text to
 fit into a given width, distorting it if necessary:</p>
-<pre><code>context.strokeText(&quot;Hello World!&quot;, x, y [, maxWidth]);
-context.fillText(&quot;Hello World!&quot;, x, y [, maxWidth]);</code></pre>
-<h4>
-Forcing a text not to exceed a certain width: the maxWidth property
-</h4>
+
+<pre><code>
+context.strokeText(&quot;Hello World!&quot;, x, y [, maxWidth]);
+context.fillText(&quot;Hello World!&quot;, x, y [, maxWidth]);
+</code></pre>
+
+<h4>Forcing a text not to exceed a certain width: the maxWidth property</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;Drawing text: the maxWidth property&lt;/title&gt;
@@ -9967,16 +9937,18 @@ context.fillText(&quot;Hello World!&quot;, 10, 220, 150);
 context.strokeText(&quot;Hello World!&quot;, 10, 220, 150);
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Source code extract:
-</h4>
+
+<h4>Source code extract:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  ...
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+1.  ...
 2.  context.font = &quot;60pt Calibri&quot;;
 3.  context.lineWidth = 3;
 4.  context.strokeStyle = &quot;blue&quot;;
@@ -9993,21 +9965,20 @@ Click to expand!
 15. context.fillText(&quot;Hello World!&quot;, 10, 220, 150);
 16. context.strokeText(&quot;Hello World!&quot;, 10, 220, 150);</code></pre>
 </details>
-<h4>
-Measuring the width of a given text (bounding box) with
-the ctx.measureText()method
-</h4>
+
+<h4>Measuring the width of a given text (bounding box) with the ctx.measureText()method</h4>
+
 <p>The ctx.measureText() method can be used to get the current width in
 pixels of a given text, taking into account the diverse properties
 involved such as font, size, shadow, lineWidth, etc.</p>
-<h4>
-HTML
-</h4>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;Drawing text: the ctx.measureText() method&lt;/title&gt;
@@ -10034,16 +10005,18 @@ context.lineTo(width+10, 100);
 context.stroke();
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Source code extract from this example:
-</h4>
+
+<h4>Source code extract from this example:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  context.font = &quot;60pt Calibri&quot;;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+1.  context.font = &quot;60pt Calibri&quot;;
 2.  context.lineWidth = 3;
 3.  context.strokeStyle = &quot;blue&quot;;
 4.  context.fillStyle = &quot;red&quot;;
@@ -10061,22 +10034,23 @@ Click to expand!
 16. // Draw the baseline of the given width
 17. context.moveTo(10, 100);
 18. context.lineTo(width+10, 100);
-19. context.stroke();</code></pre>
+19. context.stroke();
+</code></pre>
+
 </details>
-<h4>
-Changing the way the text is horizontally drawn:
-the ctx.textbaseline property
-</h4>
+
+<h4>Changing the way the text is horizontally drawn: the ctx.textbaseline property</h4>
+
 <p>The textBaseline property of the context is used to specify the
 different ways one can position the baseline of a given text:</p>
-<h4>
-HTML
-</h4>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;Drawing text: the ctx.textbaseline property&lt;/title&gt;
@@ -10110,15 +10084,18 @@ context.textBaseline = &quot;bottom&quot;;
 context.fillText(&quot;bottom-glyph&quot;, 400, 75);
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>The example above shows the different possible values for this
 property and the corresponding results. The default value is
 “alphabetic” and corresponds to what has been used in the previous
 “Hello World” example.</p>
-<h3>
-Possible values for the textbaseline property:
-</h3>
+
+<h3>Possible values for the textbaseline property:</h3>
+
 <div data-align="center" width="100%">
 <table>
 <colgroup>
@@ -10164,6 +10141,7 @@ that extends furthest down in the text.</td>
 </tbody>
 </table>
 </div>
+
 <p>Typical use (taken from the example above):</p>
 
 <pre><code>
@@ -10176,11 +10154,13 @@ that extends furthest down in the text.</td>
 </code></pre>
 
 <h4>Setting the horizontal justification of a text with the textAlign property</h4>
+
 <p>The textAlign property of the context tells how the x parameter will be used when calling strokeText(“some text”, x, y) and fillText(“some text”, x, y). For example, with textAlign=“center”, the x parameter gives the position of the vertical center of the text, while in textAlign=“right”, x corresponds to the rightmost position of the text.</p>
+
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -10223,7 +10203,7 @@ context.fillText(&quot;right&quot;, 250, 100);
 <h4>Typical use (source code taken from the above example):</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  context.textAlign = &quot;center&quot;;
@@ -10257,10 +10237,11 @@ following parts of this chapter.</p>
 <p>But let’s start with a basic example!</p>
 
 <h4>Example #1: drawing an image in a canvas</h4>
+
 <h4>Source code:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  &lt;!DOCTYPE HTML&gt;
@@ -10327,7 +10308,7 @@ following parts of this chapter.</p>
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE HTML&gt;
@@ -10378,7 +10359,7 @@ border:1px solid black;
 <h4>Source code extract:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  var imageObj = new Image();
@@ -10444,7 +10425,7 @@ border:1px solid black;
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE HTML&gt;
@@ -10499,7 +10480,7 @@ border:1px solid black;
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE HTML&gt;
@@ -10551,7 +10532,7 @@ Level 2 Events specification</a></b> says: “<i>The load event occurs when the
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE HTML&gt;
@@ -10627,7 +10608,7 @@ ctx.restore();
 <h4>Source code extract:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  &lt;script&gt;
@@ -10715,7 +10696,7 @@ appears as soon as the design instruction is executed.</p>
 <h4>JavaScript</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 var canvas, ctx, w, h;
@@ -10755,8 +10736,7 @@ console.timeEnd(&quot;time to draw&quot;);
 </code></pre>
 
 <details>
-
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  var canvas, ctx, w, h;
@@ -10814,7 +10794,7 @@ rectangles:</p>
 <h4>JavaScript</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>var canvas, ctx, w, h;
 function init() {
@@ -10920,13 +10900,12 @@ of this sub-section.</p>
 following pages. They are given as references. There will be no quizzes
 about curves as they are not often done “by hand”, but are generated by
 tools such as Adobe Illustrator or online generators.</p>
+
 <ul>
-<li><p>You need to draw arcs? Then, please use the corresponding section
-as a reference: you know you will find one or more examples and a
-detailed explanation.</p></li>
-<li><p>You need to draw lines? Arrows? Curves? Same thing: go to the
-corresponding pages and look at the examples!</p></li>
+  <li><p>You need to draw arcs? Then, please use the corresponding section as a reference: you know you will find one or more examples and a detailed explanation.</p></li>
+  <li><p>You need to draw lines? Arrows? Curves? Same thing: go to the corresponding pages and look at the examples!</p></li>
 </ul>
+
 <p>Also, do not forget to use your favorite HTML5 canvas cheatsheet
 (provided before in the last section). You will find it very
 helpful when you start playing with the canvas.</p>
@@ -10942,7 +10921,9 @@ as ctx.lineTo(x, y).</p>
 calls to ctx.lineTo(x, y) will store in the path/buffer a set of
 connected lines that we will draw altogether by a single call
 to ctx.stroke() or ctx.fill().</p>
-<p>Here are the 5 different steps:</p>
+
+<h4>Here are the 5 different steps:</h4>
+
 <ol type="1">
 <li><p>Put the “pencil” somewhere with a call to ctx.moveTo(x1, y1).
 This will be the origin of the first line.</p></li>
@@ -10957,6 +10938,7 @@ one.</p></li>
 <li><p>Call the ctx.stroke() or the ctx.fill() methods to draw the
 path defined by the different lines.</p></li>
 </ol>
+
 <p>Note the call to ctx.stroke() or ctx.fill() will use the current
 values of the strokeStyle or fillStyle properties. It is possible to
 call ctx.moveTo(x, y) in the middle of steps 1 through 5 in order to
@@ -10977,7 +10959,7 @@ line.</p>
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -11015,7 +10997,7 @@ ctx.stroke();
 <h4>Code source extract:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
@@ -11058,7 +11040,7 @@ ctx.stroke();
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -11088,7 +11070,7 @@ ctx.stroke();
 <h4>Code source:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
@@ -11124,8 +11106,9 @@ ctx.stroke();
   style="width:65%;" />
 
 <h4>Code source:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
@@ -11167,7 +11150,7 @@ called stroke() (<i>line 16</i>) only once to draw the whole path.</p>
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -11220,7 +11203,7 @@ the path, then call fill() after the second half of the path:</p>
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -11258,7 +11241,7 @@ ctx.fill();
 <h4>Here is the code:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
@@ -11320,7 +11303,7 @@ the ctx.beginPath() method, as shown in the next example.</p>
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -11357,8 +11340,9 @@ ctx.fill();
 
 </details>
 <h4>Source code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
@@ -11401,9 +11385,11 @@ that is drawn in filled mode.</p>
 function that takes the start and end coordinates, the color, the line
 width, etc., and give the impression of being done in “immediate”
 mode.</p>
+
 <h4>Here is the code for this “utility” function that you may find useful:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  function drawLine(x1, y1, x2, y2, color, width) {
@@ -11433,16 +11419,12 @@ mode.</p>
 <p>Notice the save/restore of the context at the beginning/end of the
 function. This is REALLY a best practice to avoid affecting other
 functions’ context.</p>
+
 <ul>
-<li>
-<i>Line 13</i> starts a new path so that the function will only draw
-what it is meant to draw: a single line.
-</li>
-<li>
-<i>Lines 15-17</i> move the “pen” at (x1, y1) then draw a line to (x2,
-y2), and the stroke at <i>line 17</i> makes it appear on the screen.
-</li>
+  <li><i>Line 13</i> starts a new path so that the function will only draw what it is meant to draw: a single line.</li>
+  <li><i>Lines 15-17</i> move the “pen” at (x1, y1) then draw a line to (x2, y2), and the stroke at <i>line 17</i> makes it appear on the screen.</li>
 </ul>
+
 <h4>Here is an example:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 142. drawing lines in immediate mode (200) --------------------------->
@@ -11453,8 +11435,9 @@ y2), and the stroke at <i>line 17</i> makes it appear on the screen.
   style="width:65%;" />
 
 <h4>HTML</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -11509,11 +11492,13 @@ canvas.</p>
 in a canvas, but the one we are presenting has the advantage of being
 rather simple and enables you to set the color and line width of the
 arrows.</p>
+
 <h3>Examples</h3>
+
 <h4>Example #1:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  // Adapted from : https://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -11573,13 +11558,13 @@ arrows.</p>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image143.png?raw=true"
-   alt="Function to draw arrows."
+  alt="Function to draw arrows."
   style="width:65%;" />
 
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -11633,6 +11618,7 @@ drawArrow(ctx, 100, 10, 140, 140, 3, &#39;black&#39;);
 </code></pre>
 
 </details>
+
 <h4>Source code extract:</h4>
 
 <pre><code>
@@ -11678,7 +11664,7 @@ path: draw from the last point to the first.</p>
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -11709,8 +11695,9 @@ ctx.stroke();
 </details>
 
 <h4>Source code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
@@ -11790,7 +11777,7 @@ below to see the difference.</p>
   style="width:65%;" />
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -11816,6 +11803,7 @@ ctx.stroke();
 </code></pre>
 
 </details>
+
 <h4>Code source extract:</h4>
 
 <pre><code>
@@ -11862,7 +11850,7 @@ ctx.stroke();
 <h4>Source code:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  var canvas = document.getElementById(&quot;myCanvas&quot;);
@@ -11899,7 +11887,9 @@ ctx.stroke();
 <p>Notice that we called ctx.arc() only once! And drew it twice, with
 different styles, with calls to ctx.stroke() and ctx.fill(). Each call
 drew the defined path in wireframe and in filled mode!</p>
+
 <h4>Proposed projects</h4>
+
 <h4>Project #1: modify the <a href="https://codepen.io/w3devcampus/pen/YzZBxmO" target="_blank" rel="noopener noreferrer">previous example</a> in order to get:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------------- 150. half circle (208) ------------------------------------->
@@ -11908,6 +11898,7 @@ drew the defined path in wireframe and in filled mode!</p>
   src="./images/image150.jpeg?raw=true"
   alt="Example of half circle."
   style="width:25%;" />
+
 <h4>Project #2: make a small program that draws a smiling head like this (or make something better!)</h4>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------------- 151. smiley face (208) ------------------------------------->
@@ -11955,6 +11946,7 @@ href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html" target="_
 </code></pre>
 
 <h4>Examples</h4>
+
 <h4>Example #1: simple use</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 153. simple use arcto example 1 (209) ------------------------------>
@@ -11963,10 +11955,11 @@ href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html" target="_
   src="./images/image153.jpeg?raw=true"
   alt="Simple use arcTo example #1."
   style="width:65%;" />
+
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -12006,6 +11999,7 @@ context.stroke();
 </code></pre>
 
 <h4>Example #2: draw A rounded rectangle</h4>
+
 <h4>Try this:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 154. rounded rectange example 2 (210) ----------------------------->
@@ -12018,7 +12012,8 @@ context.stroke();
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
+  
 <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -12061,8 +12056,9 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 </details>
 
 <h4>Source code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke) {
@@ -12209,6 +12205,7 @@ roundedRect(ctx,15,15,160,120,20,true,true);
   style="width:65%;" />
 
 <h4>HTML</h4>
+
 <details>
   <summary>Click to expand!</summary>
 
@@ -12262,14 +12259,9 @@ roundedTriangle(ctx,200,15,300,150,15,100,20,true,true);
 <!---------------------- 157. html5 canvas quadratic curve diagram (214) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center">
-<p><img src="./images/image157.png?raw=true"
-   width="55%"
-   alt="HTML5 Canvas Quadratic Curve Diagram. Control, context & ending points." />
-  <br/></p>
+  src="./images/image157.png?raw=true"
+  style="width:55%;"
+  alt="HTML5 Canvas Quadratic Curve Diagram. Control, context & ending points." />
 
 <p>(Picture taken from the <a
 href="https://www.html5canvastutorials.com/tutorials/html5-canvas-quadratic-curves/" target="_blank" rel="noopener noreferrer">HTML5
@@ -12285,6 +12277,7 @@ and a quadratic curve will make the endpoint of the line the context
 point for the quadratic curve.</p>
 <p>The control point controls the curvature - if we move the control
 point farther we get a sharper curve.</p>
+
 <h4>Typical use</h4>
 
 <pre><code>
@@ -12298,21 +12291,20 @@ point farther we get a sharper curve.</p>
 </code></pre>
 
 <h4>Examples</h4>
+
 <h4>Example #1: quadratic curve</h4>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 158. quadratic curve (215) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center">
-<p><img src="./images/image158.png?raw=true"
-   width="65%"
-   alt="Quadratic curve example." />   <br/></p>
+  src="./images/image158.png?raw=true"
+  style="width:65%;"
+  alt="Quadratic curve example." />
+
 <h4>Source code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  var canvas=document.querySelector(&#39;#myCanvas1&#39;);
@@ -12334,25 +12326,22 @@ point farther we get a sharper curve.</p>
 control and ending points with a call to quadraticCurve(…), at <i>line
 7</i>, then set some properties for color, thickness, and finally we
 call the stroke() method for drawing the curve.</p>
+
 <h4>Example #2: lines connected with a quadratic curve</h4>
+
 <p>Try this:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 159. example: lines connected with quadratic curve (216) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center">
-<p><img src="./images/image159.png?raw=true"
-   width="65%"
-   alt="image159.png - Example: Lines connected with a quadratic curve." />
-  <br/></p>
+  src="./images/image159.png?raw=true"
+  style="width:65%;"
+  alt="Example: Lines connected with a quadratic curve." />
 
 <h4>HTML</h4>
-<details>
 
-<summary>Click to expand!</summary>
+<details>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -12382,8 +12371,9 @@ context.stroke();
 </details>
 
 <h4>Source code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  context.beginPath();
@@ -12407,20 +12397,14 @@ context.stroke();
 <!---------------- 160. example: useful function for drawing curved arrows (217) ----------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-
-<p align="center">
-<p><img src="./images/image160.png?raw=true"
-   width="65%"
-   alt="Example: useful function for drawing curved arrows." />  
-<br/></p>
+  src="./images/image160.png?raw=true"
+  style="width:65%;"
+  alt="Example: useful function for drawing curved arrows." />
 
 <h4>JavaSscript</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 var canvas = document.querySelector(&#39;#myCanvas&#39;);
@@ -12479,7 +12463,7 @@ border: 1px solid black;
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -12497,8 +12481,9 @@ border: 1px solid black;
 </details>
 
 <h4>Source code of the function that draws a curved arrow:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  function drawCurvedArrow(startPointX, startPointY,
@@ -12556,19 +12541,17 @@ at the beginning / end of the function.</p>
 <h3 id="ch3-4-12">3.4.12 Bézier curves</h3>
 <!------------------------------------------------------------------------------------------------>
 <h4>Introduction</h4>
-<p>Bézier curves are interesting. They are mostly used for drawing “S”
-shapes or asymmetric curves.</p>
+
+<p>Bézier curves are interesting. They are mostly used for drawing “S” shapes or asymmetric curves.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 161. bezier curve in 's' (219) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
+  src="./images/image161.jpeg?raw=true"
   alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center">
-<p><img src="./images/image161.jpeg?raw=true"
-   width="35%"
-   alt="Bezier curve in S." />   <br/></p>
+  style="width:35%;"
+  alt="Bezier curve in S." />
+
 <p>(image taken from <a
 href="https://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html" target="_blank" rel="noopener noreferrer">SitePoint</a>)</p>
 <p>Bézier curves are defined by a context point, like quadratic curves,
@@ -12581,28 +12564,23 @@ second control point and the ending point.</p>
 <!--------------------------- 162. bezier curve control points (219) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center">
-<p><img src="./images/image162.png?raw=true"
-   width="65%"
-   alt="Bezier curve control points." />   <br/></p>
+  src="./images/image162.png?raw=true"
+  style="width:65%;"
+  alt="Bezier curve control points." />
+
 <p>(Picture taken from the <a
-href="https://www.html5canvastutorials.com/tutorials/html5-canvas-bezier-curves/" target="_blank" rel="noopener noreferrer">HTML5
-Canvas Tutorials</a> Web site)</p>
+href="https://www.html5canvastutorials.com/tutorials/html5-canvas-bezier-curves/" target="_blank" rel="noopener noreferrer">HTML5 Canvas Tutorials</a> Web site)</p>
 <p>The best way to understand how they work is to check out one of these
 interactive applications:</p>
+
 <ul>
-<li><p><a
-href="https://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html" target="_blank" rel="noopener noreferrer">Canvas
-Bézier Curve Example</a></p></li>
-<li><p><a href="http://lib.ivank.net/?p=demos&amp;d=bezier" target="_blank" rel="noopener noreferrer">IvanK Lib
-graphics demos</a></p></li>
-<li><p>Nice video tutorial: <a href="https://vimeo.com/106757336" target="_blank" rel="noopener noreferrer">Bézier
-curves under the hood</a></p></li>
+  <li><p><a href="https://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html" target="_blank" rel="noopener noreferrer">Canvas Bézier Curve Example</a></p></li>
+  <li><p><a href="http://lib.ivank.net/?p=demos&amp;d=bezier" target="_blank" rel="noopener noreferrer">IvanK Lib graphics demos</a></p></li>
+  <li><p>Nice video tutorial: <a href="https://vimeo.com/106757336" target="_blank" rel="noopener noreferrer">Bézier curves under the hood</a></p></li>
 </ul>
+
 <h4>Typical usage of Bézier curves</h4>
+
 <h4>Source code:</h4>
 
 <pre><code>
@@ -12616,22 +12594,22 @@ curves under the hood</a></p></li>
 </code></pre>
 
 <h4>Examples</h4>
+
 <h4>Example #1</h4>
+
 <p>Try this:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 163. bezier curve: example 1 (220) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-<p align="center">
-<p><img src="./images/image163.png?raw=true"
-   width="65%"
-   alt="Bezier curve: Example 1." />   <br/></p>
+  src="./images/image163.png?raw=true"
+  style="width:65%;"
+  alt="Bezier curve: Example 1." />
+
 <h4>HTML</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -12677,26 +12655,22 @@ curves under the hood</a></p></li>
 8.  context.stroke();
 </code></pre>
 
-<h4>Example #2: path with bezier curve, quadratic curve and line in the
-same, closed path</h4>
+
+<h4>Example #2: path with bezier curve, quadratic curve and line in the same, closed path</h4>
+
 <h4>Try this:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------- 164. path with bezier curve, quadratic curve & line in same, closed path  (221) ------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
-
-<p align="center">
-<p><img src="./images/image164.png?raw=true"
-   width="85%"
-   alt="Path with Bezier and Quadratic curve and line in same, closed path." />
-  <br/></p>
+  src="./images/image164.png?raw=true"
+  style="width:85%;"
+  alt="Path with Bezier and Quadratic curve and line in same, closed path." />
 
 <h4>HTML</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -12728,8 +12702,9 @@ same, closed path</h4>
 </details>
 
 <h4>Extract from source code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  context.beginPath();
@@ -12766,10 +12741,9 @@ the drawing looks like a pair of goggles.</p>
 <p><img src="./images/image165.png?raw=true"
    width="85%"
    alt="Interactive code that draws Bezier curves." />   <br/></p>
-<h4>
-Interesting, interactive tool for generating code that draws Bézier
-curves
-</h4>
+
+<h4>Interesting, interactive tool for generating code that draws Bézier curves</h4>
+
 <p>This Bézier tool (“HTML5 &lt;canvas&gt; bezierCurveTo command
 generator”) is
 available <a href="https://www.victoriakirst.com/beziertool/" target="_blank" rel="noopener noreferrer">online</a>:
@@ -12784,38 +12758,40 @@ object.</p>
 gradients or patterns/textures/images (in other words: fill shapes or
 fill the outline of the shapes with some images that repeat
 themselves).</p>
-<h4>
-Colors and transparency
-</h4>
+
+<h4>Colors and transparency</h4>
+
 <p>You can use <a href="https://www.w3.org/TR/css3-color/" target="_blank" rel="noopener noreferrer">the same
 syntax for colors that is supported by CSS3</a>. The next lines show
 possible values/syntaxes.</p>
-<pre><code>1. ctx.strokeStyle = &#39;red&#39;;
+
+<pre><code>
+1. ctx.strokeStyle = &#39;red&#39;;
 2. ctx.fillStyle = &quot;#00ff00&quot;;
 3. ctx.strokeStyle = &quot;rgb(0, 0, 255)&quot;;
-4. ctx.fillStyle = &quot;rgba(0, 0, 255, 0.5)&quot;;</code></pre>
+4. ctx.fillStyle = &quot;rgba(0, 0, 255, 0.5)&quot;;
+</code></pre>
+
 <p>Note that:</p>
+
 <ul>
-<li><p>All values are strings;</p></li>
-<li><p><i>Line 4</i> defines a “transparent color”, the “a” of “rgba”
-means “alpha channel”. Its value is between 0 and 1, where 0 means
-“completely transparent” and 1 means “opaque”.</p></li>
+  <li><p>All values are strings;</p></li>
+  <li><p><i>Line 4</i> defines a “transparent color”, the “a” of “rgba” means “alpha channel”. Its value is between 0 and 1, where 0 means “completely transparent” and 1 means “opaque”.</p></li>
 </ul>
-Here is an example that shows how to draw different filled rectangles in
-blue, with different levels of transparency:
+
+<h4>Here is an example that shows how to draw different filled rectangles in blue, with different levels of transparency:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 166. colors and transparency example (223) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image166.png?raw=true"
-   width="85%"
-   alt="Colors and transparency example." />
-</p>
+<img class="displayed"
+  src="./images/image166.png?raw=true"
+  style="width:85%;"
+  alt="Colors and transparency example." />
+
 <h4>HTML</h4>
 
 <details>
-
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -12868,14 +12844,15 @@ below:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 167. define stroke fill style as 'gradient' (224) ------------------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image167.png?raw=true"
-   width="85%"
-   alt="Define stroke fill style as 'gradient'." />
-</p>
+<img class="displayed"
+  src="./images/image167.png?raw=true"
+  style="width:85%;"
+  alt="Define stroke fill style as 'gradient'." />
+
 <h4>JavaScript</h4>
+
 <details>
-<summary>JavaScript code extract!</summary>
+  <summary>JavaScript code extract!</summary>
 
 <pre><code>
 var canvas, ctx, grdFrenchFlag;
@@ -12904,7 +12881,7 @@ function draw() {
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -12932,9 +12909,13 @@ colors are interpolated along a line.</h4>
 <p>The gradient becomes visible when we draw shapes on top of the
 invisible gradient, and when the fillStyle or strokeStyle property has
 for value this gradient.</p>
+
 <h4>How to create gradients</h4>
+
 <p>There are 3 steps:</p>
+
 <h4>Step #1: define a linear gradient</h4>
+
 <h4>Syntax:</h4>
 
 <pre><code>
@@ -12959,9 +12940,9 @@ propagate along this line. </p>
 <p>If this gradient is going to be reused by different functions, it is
 good practice to create/initialize it in a function called when the page
 is loaded and to store it in a global variable.</p>
-<h4>
-Step #2: add a number of “color stops” to this gradient
-</h4>
+
+<h4>Step #2: add a number of “color stops” to this gradient</h4>
+
 <p>We will add a set of “colors” and “stops” to this gradient. The stops
 go from 0 (beginning of the virtual line defined just above), to 1 (end
 of the virtual line). A color associated with a value of 0.5 will be
@@ -12990,12 +12971,10 @@ ctx.fillStyle = grdFrenchFlag;
 ctx.fillRect(0, 0, 300, 200);
 </code></pre>
 
-<p>The result is shown in
-the <a href="https://codepen.io/w3devcampus/pen/WNpPZVO" target="_blank" rel="noopener noreferrer">above pen</a>:
-a big rectangle that fills the whole canvas, with colors going from blue
-(left) to white (middle) to red (right).</p>
+<p>The result is shown in the <a href="https://codepen.io/w3devcampus/pen/WNpPZVO" target="_blank" rel="noopener noreferrer">above pen</a>: a big rectangle that fills the whole canvas, with colors going from blue (left) to white (middle) to red (right).</p>
 
 <h4>Examples</h4>
+
 <h4>Example #1: changing the direction of the gradient</h4>
 
 <p>If you modify the source code that defines the direction of the
@@ -13010,11 +12989,10 @@ the canvas to the bottom right of the canvas. Let’s see what it does:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 168. example 1 draw gradient top left to bottom right (226) ------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image168.png?raw=true"
-  width="65%"
-  alt="Example 1 draw gradient from top left to bottom right." />  
-<br/></p>
+<img class="displayed"
+  src="./images/image168.png?raw=true"
+  style="width:65%;"
+  alt="Example 1 draw gradient from top left to bottom right." />
 
 <h4>Example #2: drawing shapes that do not cover the whole gradient</h4>
 
@@ -13023,14 +13001,15 @@ the canvas, let’s draw several smaller rectangles:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 169. example 2 draw smaller rectangles (226) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image169.png?raw=true"
-   width="65%"
-   alt="Example 2 draw smaller rectangels - red & blue." />   <br/></p>
+<img class="displayed"
+  src="./images/image169.png?raw=true"
+  style="width:65%;"
+  alt="Example 2 draw smaller rectangles - red & blue." />
 
 <p>Note that the canvas has its default background color where we did not
 draw anything. And where we have drawn rectangles, we can see “through”
 and the colors from the gradient are visible.</p>
+
 <h4>Here is the code that draws the checkboard:</h4>
 
 <pre><code>
@@ -13050,9 +13029,11 @@ ctx.fillRect(250, 150, 50, 50);
 </code></pre>
 
 <p>This code is rather ugly isn’t it? It would have been better to use a loop…</p>
+
 <h4>Here is function that draws a chessboard:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 // n = number of cells per row/column
@@ -13084,13 +13065,15 @@ a value of 10, 20, or 2…</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 170. draw checkboard (227) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image170.png?raw=true"
-   width="65%"
-   alt="Draw red and blue checkboard." />   <br/></p>
+<img class="displayed"
+  src="./images/image170.png?raw=true"
+  style="width:65%;"
+  alt="Draw red and blue checkerboard." />
+
 <h4>JavaScript</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 var canvas, ctx, grdFrenchFlag;
@@ -13127,8 +13110,9 @@ ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
 </details>
 
 <h4>HTML</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -13149,6 +13133,7 @@ border: 1px solid black;
 </code></pre>
 
 </details>
+
 <h4>Example #3: drawing outlined shapes with gradients</h4>
 
 <p>Just as we used fillStyle and fillRect for drawing rectangles filled
@@ -13159,15 +13144,15 @@ set the outline of the rectangles at 5 pixels:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------- 171. example 3 using strokestyle and strokerect to draw rectangles (228) ------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image171.png?raw=true"
-  width="65%"
-  alt="Example 3 draw rectangles using strokeStyle and strokeRect." />  
-<br/></p>
+<img class="displayed"
+  src="./images/image171.png?raw=true"
+  style="width:65%;"
+  alt="Example 3 draw rectangles using strokeStyle and strokeRect." />
 
 <h4>JavaScript</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 var canvas, ctx, grdFrenchFlag;
@@ -13205,7 +13190,7 @@ ctx.strokeRect(cellWidth*(i), cellHeight*j, cellWidth, cellHeight);
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -13230,7 +13215,7 @@ border: 1px solid black;
 <h4>Extract from source code:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 function drawCheckboard(n) {
@@ -13255,20 +13240,25 @@ the blue-white-red interpolated French flag. This time we will define a
 smaller gradient. Instead of going from (0, 0) to (300, 0), it will go
 from (100, 0) to (200, 0), while the canvas remains the same
 (width=300, height=200).</p>
-<pre><code>grdFrenchFlag = ctx.createLinearGradient(100, 0, 200, 0);</code></pre>
+
+<pre><code>
+grdFrenchFlag = ctx.createLinearGradient(100, 0, 200, 0);
+</code></pre>
+
 <p>Like in the first example we will draw a filled rectangle that is the
 same size as the canvas:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 172. example 4 draw filled rectangle (230) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image172.png?raw=true"
-   width="65%"
-   alt="Example 4 draw filled rectangles." />   <br/></p>
-<h4>JavaScript</h4>
-<details>
+<img class="displayed"
+  src="./images/image172.png?raw=true"
+  style="width:65%;"
+  alt="Example 4 draw filled rectangles." />
 
-<summary>Click to expand!</summary>
+<h4>JavaScript</h4>
+
+<details>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 var canvas, ctx, grdFrenchFlag;
@@ -13297,7 +13287,7 @@ ctx.fillRect(0, 0, 300, 200);
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -13324,12 +13314,13 @@ gradient is repeated without any interpolation (columns 0-100 are all
 blue), then we “see through” and the gradient is drawn (columns
 100-200), then the last color of the gradient is repeated without any
 interpolation (columns 200-300 are red).</p>
+
 <h4>Example #5: what happens if we define a gradient bigger than the canvas?</h4>
 
 <p>Nothing special; we will “see through the drawn shapes”, and
 the parts of the gradient that are located in the canvas area will be
 shown. You can try this example that defines a gradient twice the size
-of the canvas: </p>
+of the canvas:</p>
 
 <pre><code>
 grdFrenchFlag = ctx.createLinearGradient(0, 0, 600, 400);
@@ -13340,15 +13331,15 @@ result:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 173. example 5 canvas size (231) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image173.png?raw=true"
-   width="65%"
-   alt="Example 5 draw same rectangle with the canvas size." />  
-<br/></p>
+<img class="displayed"
+  src="./images/image173.png?raw=true"
+  style="width:65%;"
+  alt="Example 5 draw same rectangle with the canvas size." />
 
 <h4>JavaScript</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 var canvas, ctx, grdFrenchFlag;
@@ -13375,8 +13366,9 @@ ctx.fillRect(0, 0, 300, 200);
 </details>
 
 <h4>HTML</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -13400,9 +13392,9 @@ border: 1px solid black;
 
 <p>The red color is beyond the bottom right corner…. we see only the top
 left quarter of the gradient.</p>
-<h4>
-Example #6: drawing shapes that share the same gradient as a whole
-</h4>
+
+<h4>Example #6: drawing shapes that share the same gradient as a whole</h4>
+
 <p>This time, we would like to draw the chessboard with the gradient in
 each cell. How can we do this with one single gradient?</p>
 <p>We can’t! At least we can’t without recreating it for each cell!</p>
@@ -13413,14 +13405,15 @@ this:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 174. example 6 draw shapes that share gradient (232) ---------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image174.png?raw=true"
-   width="65%"
-   alt="Example 6 draw shapes that share gradient." />   <br/></p>
+<img class="displayed"
+  src="./images/image174.png?raw=true"
+  style="width:65%;"
+  alt="Example 6 draw shapes that share gradient." />
+
 <h4>JavaScript</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 var canvas, ctx, grdFrenchFlag;
@@ -13452,8 +13445,9 @@ ctx.fillRect(x, y, cellWidth, cellHeight);</code></pre>
 </details>
 
 <h4>HTML</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -13476,9 +13470,9 @@ border: 1px solid black;
 </details>
 
 <h4>Extract from source code:</h4>
-<details>
 
-<summary>Click to expand!</summary>
+<details>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 function setGradient(x, y, width, height) {
@@ -13518,27 +13512,25 @@ gradient.</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-5-3">3.5.3 Canvas Context: Radial Gradients</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>Radial gradients are for creating gradients that
-propagate/interpolate colors along circles instead of
-propagating/interpolating along a virtual line, like linear
-gradients.</p>
-Here is an example of a radial gradient that interpolates the color of
-the rainbow:
+<p>Radial gradients are for creating gradients that propagate/interpolate colors along circles instead of
+propagating/interpolating along a virtual line, like linear gradients.</p>
+
+<h4>Here is an example of a radial gradient that interpolates the color of the rainbow:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------- 175. example radial gradient interpolates color of rainbow (234) ---------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p>&lt;img src=“./images/image175.png?raw=true” width=“65%” alt=“Example
-radial gradient which interpolates the color of the rainbow.”  
-<br/></p>
-<h4>
-JavaScript
-</h4>
+<img class="displayed"
+  src="./images/image175.png?raw=true"
+  style="width:65%;"
+  alt="Example radial gradient which interpolates the color of the rainbow." />
+
+<h4>JavaScript</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>var canvas, ctx, grd;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+var canvas, ctx, grd;
 function init() {
 // Good practice 1: set global vars canvas, ctx, gradients, etc here
    canvas = document.querySelector(&#39;#myCanvas1&#39;);
@@ -13555,16 +13547,18 @@ function init() {
 function draw() {
    ctx.fillStyle = grd;
    ctx.fillRect(0, 0, 300, 200);
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-HTML
-</h4>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
    &lt;head&gt;
       &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -13578,12 +13572,15 @@ Click to expand!
    &lt;body onload=&quot;init();&quot;&gt;
       &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-The gradient is defined as follows:
-</h4>
-<pre><code>var grd = context.createRadialGradient(150, 100, 30, 150, 100, 100);
+
+<h4>The gradient is defined as follows:</h4>
+
+<pre><code>
+var grd = context.createRadialGradient(150, 100, 30, 150, 100, 100);
 grd.addColorStop(0, &quot;red&quot;);
 grd.addColorStop(0.17, &quot;orange&quot;);
 grd.addColorStop(0.33, &quot;yellow&quot;);
@@ -13591,7 +13588,9 @@ grd.addColorStop(0.5, &quot;green&quot;);
 grd.addColorStop(0.666, &quot;blue&quot;);
 grd.addColorStop(1, &quot;violet&quot;);
 
-context.fillStyle = grd;</code></pre>
+context.fillStyle = grd;
+</code></pre>
+
 <p>The method from the context object createRadialGradient(cx1, cy1,
 radius1, cx2, cy2, radius2) takes as the first three parameters the
 “starting” circle of the gradient, and as the three last parameters, the
@@ -13603,37 +13602,40 @@ shown below:
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 176. above example with color stops (235) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image176.jpeg?raw=true"
-   width="40%"
-   alt="Radial gradient." />   <br/></p>
+<img class="displayed"
+  src="./images/image176.jpeg?raw=true"
+  style="width:40%;"
+  alt="Radial gradient." />
+
 <p>We added color stops using a method similar to that used for linear
 gradients.</p>
-<h4>
-What happens if the circles are not located at the same place?
-</h4>
+
+<h4>What happens if the circles are not located at the same place?</h4>
+
 <p>You get some nice effects; here we set the second
 circle’s center 60 pixels to the right of the first circle’s center (cx
 = 210 instead of 150):</p>
-<pre><code>grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);</code></pre>
-<h4>
-Here is the result:
-</h4>
+
+<pre><code>
+grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
+</code></pre>
+
+<h4>Here is the result:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!--- 177.  (xxx) -->
+<!-------------------- 177. 2nd circle center to the right of 1st circle (235) ------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image177.png?raw=true"
-   width="65%"
-   alt="." />   <br/></p>
-<h4>
-JavaScript
-</h4>
+<img class="displayed"
+  src="./images/image177.png?raw=true"
+  style="width:65%;"
+  alt="Effects from 2nd circle center to the right of the 1st circle center." />
+
+<h4>JavaScript</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>var canvas, ctx, grd;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+var canvas, ctx, grd;
 function init() {
 // Good practice 1: set global vars canvas, ctx, gradients, etc here
 canvas = document.querySelector(&#39;#myCanvas1&#39;);
@@ -13650,16 +13652,18 @@ draw();
 function draw() {
 ctx.fillStyle = grd;
 ctx.fillRect(0, 0, 300, 200);
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-HTML
-</h4>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -13673,32 +13677,31 @@ border: 1px solid black;
 &lt;body onload=&quot;init();&quot;&gt;
 &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-What happens if the gradient is smaller or larger than the shapes we
-draw?
-</h4>
+
+<h4>What happens if the gradient is smaller or larger than the shapes we draw?</h4>
+
 <p>A gradient is an invisible shape on the screen: the radial gradient
 is made of two circles: an inner and an outer circle. Between these two
 circles, colors are interpolated.</p>
 <p>We call the “first color” the color defined for the inner circle, the
 “last color” the last color of the gradient, that corresponds to the
 outer circle:</p>
+
 <ul>
-<li><p>The color inside the first circle will be the first color. In our
-example above, the first color is red: and the small circle of the
-gradient in our example is filled in red!</p></li>
-<li><p>The color outside the outer circle will be the last color of the
-gradient - which is not interpolated. The last color in our example
-is purple, and it fills the rest of the filled rectangle area “after”
-the external circle of the gradient.</p></li>
-<li><p>The colors between the two circles will be interpolated.</p></li>
+  <li><p>The color inside the first circle will be the first color. In our example above, the first color is red: and the small circle of the gradient in our example is filled in red!</p></li>
+  <li><p>The color outside the outer circle will be the last color of the gradient - which is not interpolated. The last color in our example is purple, and it fills the rest of the filled rectangle area “after” the external circle of the gradient.</p></li>
+  <li><p>The colors between the two circles will be interpolated.</p></li>
 </ul>
+
+<!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-5-4">3.5.4 Canvas Context: Patterns/Textures</h3>
-<h4>
-Principle
-</h4>
+<!------------------------------------------------------------------------------------------------>
+<h4>Principle</h4>
+
 <p>The principle of “pattern” drawing is based on repeating an image (if
 the image is smaller than the surface of the shape you are going to
 draw) for filling the surface of objects to be drawn (either filled or
@@ -13706,74 +13709,86 @@ stroked).</p>
 <p>To illustrate this principle, in the next examples, we are going to
 draw rectangles using a pattern.</p>
 <p>There are a few steps we have to take before doing this:</p>
+
 <ol type="1">
-<li><b>Create a JavaScript image object</b></li>
+  <li><b>Create a JavaScript image object</b></li>
 </ol>
-<pre><code>var imageObj = new Image();</code></pre>
+
+<pre><code>
+var imageObj = new Image();
+</code></pre>
+
 <ol start="2" type="1">
-<li><b>Define a callback function that will be called once the image has
-been fully loaded</b> in memory; we cannot draw before the image has
-been loaded.</li>
+  <li><b>Define a callback function that will be called once the image has been fully loaded</b> in memory; we cannot draw before the image has been loaded.</li>
 </ol>
-<pre><code>imageObj.onload = function(){
+
+<pre><code>
+imageObj.onload = function(){
 ...
-}</code></pre>
+}
+</code></pre>
+
 <ol start="3" type="1">
-<li><b>Set the source of this image to the URL of the pattern</b>:</li>
+  <li><b>Set the source of this image to the URL of the pattern</b>:</li>
 </ol>
-<pre><code>imageObj.src = &quot;https://www.myserver.com/myRepeatablePattern.png&quot;;</code></pre>
+
+<pre><code>
+imageObj.src = &quot;https://www.myserver.com/myRepeatablePattern.png&quot;;
+</code></pre>
+
 <ol start="4" type="1">
-<li><b>Create a pattern object from the loaded image:</b></li>
+  <li><b>Create a pattern object from the loaded image:</b></li>
 </ol>
+
 <p>As soon as step 3 is executed, an HTTP request is sent in background
 by the browser, and when the image is loaded in memory, the callback
 defined at step 2 is called. We create a pattern object inside, from the
 loaded image:</p>
-<pre><code>// callback called asynchronously, after the src attribute of imageObj is set
+
+<pre><code>
+// callback called asynchronously, after the src attribute of imageObj is set
 imageObj.onload = function(){ 
     // We enter here when the image is loaded, we create a pattern object.
     // It is good practice to set this as a global variable, easier to share
     pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
-};</code></pre>
+};
+</code></pre>
+
 <ol start="5" type="1">
-<li><b>Inside the callback function (or inside a function called from
-inside the callback), we can finally draw</b>:</li>
+  <li><b>Inside the callback function (or inside a function called from inside the callback), we can finally draw</b>:</li>
 </ol>
-<pre><code>// callback called asynchronously, after the src attribute of imageObj is set
+
+<pre><code>
+// callback called asynchronously, after the src attribute of imageObj is set
 imageObj.onload = function(){
     pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
 
     // Draw a textured rectangle
     ctx.fillStyle = pattern1;
     ctx.fillRect(10, 10, 500, 800);
-};</code></pre>
-<h4>
-Examples
-</h4>
-<h4>
-Example #1: draw two rectangles with a pattern (one filled, one stroked)
-</h4>
-<p>
-Here we have two rectangles drawn using a pattern (an image that can be
-repeated along the X and Y axis). The first is a filled rectangle while
-the second is “stroked” with a lineWidth of 20 pixels:
-</p>
+};
+</code></pre>
+
+<h4>Examples</h4>
+
+<h4>Example #1: draw two rectangles with a pattern (one filled, one stroked)</h4>
+
+<p>Here we have two rectangles drawn using a pattern (an image that can be repeated along the X and Y axis). The first is a filled rectangle while the second is “stroked” with a lineWidth of 20 pixels:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------- 178. filled rectange and stroked rectangle with linewidth 20 (238) --------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image178.png?raw=true"
-  width="65%"
-  alt="Filled rectange and a stroked rectangle with lineWidth=20." />  
-<br/></p>
-<h4>
-JavaScript
-</h4>
+<img class="displayed"
+  src="./images/image178.png?raw=true"
+  style="width:65%;"
+  alt="Filled rectange and a stroked rectangle with lineWidth=20." />
+
+<h4>JavaScript</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>var canvas, ctx, pattern1;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+var canvas, ctx, pattern1;
 function init() {
 canvas = document.querySelector(&#39;#myCanvas&#39;);
 ctx = canvas.getContext(&#39;2d&#39;);
@@ -13806,12 +13821,15 @@ ctx.strokeRect(230, 20, 150, 100);
 // This will tell the browser to send an asynchronous request.
 // When the browser will get an answer, the callback above will be called
 imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-HTML
-</h4>
-<pre><code>&lt;!DOCTYPE html&gt;
+
+<h4>HTML</h4>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -13821,15 +13839,16 @@ HTML
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot; height=&quot;400&quot;&gt;
 Your browser does not support the canvas tag. &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-<h4>
-JavaScript source code:
-</h4>
+&lt;/html&gt;
+</code></pre>
+
+<h4>JavaScript source code:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  var canvas, ctx, pattern1;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+1.  var canvas, ctx, pattern1;
 2.   
 3.  function init() {
 4.     canvas = document.querySelector(&#39;#myCanvas&#39;);
@@ -13874,30 +13893,29 @@ Click to expand!
 43.   // request.
 44.   // When the browser gets an answer, the callback above will be called
 45.   imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
-46. }</code></pre>
+46. }
+</code></pre>
+
 </details>
-<h4>
-Example 2: the repeatability of a pattern
-</h4>
-<p>
-To “better” see the repeatability of the pattern, here is the same
-example with a 1000x1000 pixel wide canvas:
-</p>
+
+<h4>Example 2: the repeatability of a pattern</h4>
+
+<p>To “better” see the repeatability of the pattern, here is the same example with a 1000x1000 pixel wide canvas:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 179. 1000 by 1000 pixel wide canvas (239) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image179.png?raw=true"
-   width="65%"
-   alt="1000 by 1000 pixel wide canvas." />   <br/></p>
-<h4>
-JavaScript
-</h4>
+<img class="displayed"
+  src="./images/image179.png?raw=true"
+  style="width:65%;"
+  alt="1000 by 1000 pixel wide canvas." />
+
+<h4>JavaScript</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>var canvas, ctx, pattern1;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+var canvas, ctx, pattern1;
 function init() {
 canvas = document.querySelector(&#39;#myCanvas&#39;);
 ctx = canvas.getContext(&#39;2d&#39;);
@@ -13930,12 +13948,15 @@ ctx.strokeRect(650, 20, 300, 800);
 // This will tell the browser to send an asynchronous request.
 // When the browser will get an answer, the callback above will be called
 imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-HTML
-</h4>
-<pre><code>&lt;!DOCTYPE html&gt;
+
+<h4>HTML</h4>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -13945,32 +13966,30 @@ HTML
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;1000&quot; height=&quot;1000&quot;&gt;
 Your browser does not support the canvas tag. &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-<h4>
-You can change the way the pattern is repeated by modifying the second
-parameter of this method:
-</h4>
-<pre><code>1.  pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);</code></pre>
-<p>
-Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just
-change this line in the online example and you will see live results.
-</p>
+&lt;/html&gt;
+</code></pre>
+
+<h4>You can change the way the pattern is repeated by modifying the second parameter of this method:</h4>
+
+<pre><code>
+1.  pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
+</code></pre>
+
+<p>Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just change this line in the online example and you will see live results.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-5-5">
-3.5.5 A Multiple Image Loader
-</h3>
+<h3 id="ch3-5-5">3.5.5 A Multiple Image Loader</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Draw with multiple patterns? We need to load all of them before drawing!
-</h4>
+<h4>Draw with multiple patterns? We need to load all of them before drawing!</h4>
+
 <p>Below are 4 rectangles drawn with 4 different patterns.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------ 180. four rectangles drawn with different patterns (241) -------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image180.jpeg?raw=true"
-  width="35%"
-  alt="Four rectangles drawn with different patterns." />   <br/></p>
+<img class="displayed"
+  src="./images/image180.jpeg?raw=true"
+  style="width:35%;"
+  alt="Four rectangles drawn with different patterns." />
+
 <p>We said earlier that we cannot draw before the image used by
 a pattern is loaded. This can become rapidly complicated if we need to
 draw using multiple patterns. We need a way to load all images and
@@ -13994,18 +14013,18 @@ beginning of this page is the following:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 181. multiple image loader (241) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image181.png?raw=true"
-   width="65%"
-   alt="A multiple image loader." />   <br/></p>
-<h4>
-HTML
-</h4>
+<img class="displayed"
+  src="./images/image181.png?raw=true"
+  style="width:65%;"
+  alt="A multiple image loader." />
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -14075,12 +14094,15 @@ ctx.fillRect(200,200,200,200);
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
 Your browser does not support the canvas tag.
 &lt;/canvas&gt;
-&lt;/body&gt;</code></pre>
+&lt;/body&gt;
+</code></pre>
+
 </details>
-<h4>
-Define the list of images to be loaded:
-</h4>
-<pre><code>1.  // List of images to load, we used a JavaScript object instead of
+
+<h4>Define the list of images to be loaded:</h4>
+
+<pre><code>
+1.  // List of images to load, we used a JavaScript object instead of
 2.  // an array, so that named indexes (aka properties)
 3.  // can be used -&gt; easier to read
 4.  var imagesToLoad = {
@@ -14089,20 +14111,20 @@ Define the list of images to be loaded:
 7.       blackAndWhiteLys: https://i.ibb.co/VNLVpcL/final.jpg,
 8.       tiledFloor:
 9.        https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg
-10. };</code></pre>
-<p>
-Notice that instead of using a traditional array, we defined this list
+10. };
+</code></pre>
+
+<p>Notice that instead of using a traditional array, we defined this list
 as a JavaScript object, with properties whose names will be easier to
-manipulate (flowers, lion, tiledFloor, etc.).
-</p>
-<h4>
-The image loader function
-</h4>
+manipulate (flowers, lion, tiledFloor, etc.).</p>
+
+<h4>The image loader function</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  function loadImages(imagesToBeLoaded, drawCallback) {
+  <summary>Click to expand!</summary>
+
+<pre><code>
+1.  function loadImages(imagesToBeLoaded, drawCallback) {
 2.       var imagesLoaded = {};
 3.       var loadedImages = 0;
 4.       var numberOfImagesToLoad = 0;
@@ -14122,65 +14144,47 @@ Click to expand!
 18.          }; // function
 19.          imagesLoaded[name].src = imagesToBeLoaded[name];
 20.       } // for
-21. } // function</code></pre>
+21. } // function
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
+
 <ul>
-<li>
-This function takes as a parameter the list of images to be loaded, and
-a drawCallback function that will be called only once all images have
-been loaded. This callback takes as a parameter a new object that is the
-list of images that have been loaded (see <i>line 16</i>).
-</li>
-<li>
-We first count the number of images to load (<i>lines 7-9</i>), then for
-each image to be loaded we create a new JavaScript image object (<i>line
-12</i>) and set its src attribute (<i>line 19</i>) - this will start to
-load the image.
-</li>
-<li>
-When an image comes in, the onload callback is called (<i>line 14</i>)
-and inside, we increment the number of images loaded (<i>line 15</i>)
-and test if this number is &gt;=  the total number of images that should
-be loaded. If this is the case, the callback function is called (<i>line
-16</i>).
-</li>
+  <li>This function takes as a parameter the list of images to be loaded, and a drawCallback function that will be called only once all images have been loaded. This callback takes as a parameter a new object that is the list of images that have been loaded (see <i>line 16</i>).</li>
+  <li>We first count the number of images to load (<i>lines 7-9</i>), then for each image to be loaded we create a new JavaScript image object (<i>line 12</i>) and set its src attribute (<i>line 19</i>) - this will start to load the image.</li>
+  <li>When an image comes in, the onload callback is called (<i>line 14</i>) and inside, we increment the number of images loaded (<i>line 15</i>) and test if this number is &gt;=  the total number of images that should be loaded. If this is the case, the callback function is called (<i>line 16</i>).</li>
 </ul>
-<h4>
-Example of use of this loader
-</h4>
-<pre><code>1.  loadImages(imagesToLoad, function(imagesLoaded) {
+
+<h4>Example of use of this loader</h4>
+
+<pre><code>
+1.  loadImages(imagesToLoad, function(imagesLoaded) {
 2.      patternFlowers = ctx.createPattern(imagesLoaded.flowers, &#39;repeat&#39;);
 3.      patternLion    = ctx.createPattern(imagesLoaded.lion, &#39;repeat&#39;);
 4.      patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, &#39;repeat&#39;);
 5.      patternFloor   = ctx.createPattern(imagesLoaded.tiledFloor, &#39;repeat&#39;);
 6.  
 7.      drawRectanglesWithPatterns();
-8.  });</code></pre>
-<h4>
-Explanations:
-</h4>
+8.  });
+</code></pre>
+
+<h4>Explanations:</h4>
+
 <ul>
-<li><p><i>Line 1</i> is the call to the image loader, the first
-parameter is the list of images to be loaded, while the second parameter
-is the callback function that will be called once all images have been
-loaded.</p></li>
-<li><p><i>Lines 2-5</i>: in this callback we create patterns from the
-loaded images (note the use of the property names imagesLoaded.flowers,
-etc. that makes the code easier to read).</p></li>
-<li><p><i>Line 7</i>: then we call a function that will draw the
-rectangles. </p></li>
+  <li><p><i>Line 1</i> is the call to the image loader, the first parameter is the list of images to be loaded, while the second parameter is the callback function that will be called once all images have been loaded.</p></li>
+  <li><p><i>Lines 2-5</i>: in this callback we create patterns from the loaded images (note the use of the property names imagesLoaded.flowers, etc. that makes the code easier to read).</p></li>
+  <li><p><i>Line 7</i>: then we call a function that will draw the rectangles. </p></li>
 </ul>
-<h4>
-Here is the function:
-</h4>
+
+<h4>Here is the function:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  function drawRectanglesWithPatterns() {
+  <summary>Click to expand!</summary>
+
+<pre><code>
+1.  function drawRectanglesWithPatterns() {
 2.      ctx.fillStyle=patternFloor;
 3.      ctx.fillRect(0,0,200,200);
 4.  
@@ -14192,64 +14196,49 @@ Click to expand!
 10.  
 11.     ctx.fillStyle=patternBW;
 12.     ctx.fillRect(200,200,200,200);
-13. }</code></pre>
+13. }
+</code></pre>
+
 </details>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-5-6">
-3.5.6 Drawing Shadows
-</h3>
+<h3 id="ch3-5-6">3.5.6 Drawing Shadows</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Context properties to draw with shadows
-</h4>
+<h4>Context properties to draw with shadows</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 182. a green shadow rectangle (244) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image182.jpeg?raw=true"
-   width="25%"
-   alt="A green shadowed rectangle." />
-</p>
-<p>
-There are 4 properties of the canvas context that are useful for
-indicating that we want to draw shapes with shadows:
-</p>
+<img class="displayed"
+  src="./images/image182.jpeg?raw=true"
+  style="width:25%;"
+  alt="A green shadowed rectangle." />
+
+<p>There are 4 properties of the canvas context that are useful for indicating that we want to draw shapes with shadows:</p>
+
 <ul type="1">
-<li>
-shadowColor: color to use for shadows,
-</li>
-<li>
-shadowBlur: blur level for shadows,
-</li>
-<li>
-shadowOffsetX: horizontal distance of the shadow from the shape,
-</li>
-<li>
-shadowOffsetY: vertical distance of the shadow from the shape.
-</li>
+  <li>shadowColor: color to use for shadows,</li>
+  <li>shadowBlur: blur level for shadows,</li>
+  <li>shadowOffsetX: horizontal distance of the shadow from the shape,</li>
+  <li>shadowOffsetY: vertical distance of the shadow from the shape.</li>
 </ul>
-<h4>
-Examples
-</h4>
-<h4>
-Example #1: simple shadows
-</h4>
+
+<h4>Examples</h4>
+
+<h4>Example #1: simple shadows</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 183. example #1, simple shadows (245) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image183.png?raw=true"
-   width="65%"
-   alt="Simple shadows, example #1." />
-</p>
-<h4>
-JavaScript
-</h4>
+<img class="displayed"
+  src="./images/image183.png?raw=true"
+  style="width:65%;"
+  alt="Simple shadows, example #1." />
+
+<h4>JavaScript</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>var canvas, ctx;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+var canvas, ctx;
 function init() {
 canvas = document.getElementById(&#39;myCanvas&#39;);
 ctx = canvas.getContext(&#39;2d&#39;);
@@ -14267,12 +14256,15 @@ ctx.shadowColor = &quot;Grey&quot;; // color
 ctx.shadowBlur = 20; // blur level
 ctx.shadowOffsetX = 15; // horizontal offset
 ctx.shadowOffsetY = 15; // vertical offset
-}</code></pre>
+}
+</code></pre>
+
 </details>
-<h4>
-HTML
-</h4>
-<pre><code>&lt;!DOCTYPE html&gt;
+
+<h4>HTML</h4>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -14282,15 +14274,16 @@ HTML
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height =800&gt;
 Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-<h4>
-JavaScript source code:
-</h4>
+&lt;/html&gt;
+</code></pre>
+
+<h4>JavaScript source code:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  var canvas, ctx;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+1.  var canvas, ctx;
 2.  
 3.  function init() {
 4.      canvas = document.getElementById(&#39;myCanvas&#39;);
@@ -14316,39 +14309,28 @@ Click to expand!
 24.     ctx.shadowBlur = 20;         // blur level
 25.     ctx.shadowOffsetX = 15;      // horizontal offset
 26.     ctx.shadowOffsetY = 15;      // vertical offset
-27. }</code></pre>
+27. }
+</code></pre>
+
 </details>
-<h4>
-Explanations:
-</h4>
+
+<h4>Explanations:</h4>
+
 <ul>
-<li>
-<i>Lines 21-27</i>: we set the 4 properties that define shadows in a
-dedicated function, for better clarity.
-</li>
-<li>
-<i>Line 8</i>: we called this function once before drawing the
-rectangles.
-</li>
-<li>
-<i>Lines 11-18</i>: we draw a filled and a stroked rectangle. Both
-rectangles cast shadows.
-</li>
+  <li><i>Lines 21-27</i>: we set the 4 properties that define shadows in a dedicated function, for better clarity.</li>
+  <li><i>Line 8</i>: we called this function once before drawing the rectangles.</li>
+  <li><i>Lines 11-18</i>: we draw a filled and a stroked rectangle. Both rectangles cast shadows.</li>
 </ul>
-<h4>
-Example #2: unwanted shadows!
-</h4>
-<p>
-Let’s take
-a <a href="https://codepen.io/w3devcampus/pen/YzZBxmO" target="_blank" rel="noopener noreferrer">previous
-example</a>, the one that draws a filled circle with an outline. And,
-let’s add a shadow to it using the following code:
-</p>
+
+<h4>Example #2: unwanted shadows!</h4>
+
+<p>Let’s take a <a href="https://codepen.io/w3devcampus/pen/YzZBxmO" target="_blank" rel="noopener noreferrer">previous example</a>, the one that draws a filled circle with an outline. And, let’s add a shadow to it using the following code:</p>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  ...
+  <summary>Click to expand!</summary>
+
+<pre><code>
+1.  ...
 2.  ctx.beginPath();
 3.  
 4.  // Add to the path a full circle (from 0 to 2PI)
@@ -14381,27 +14363,27 @@ Click to expand!
 31.     ctx.shadowBlur = 20;      // blur level
 32.     ctx.shadowOffsetX = 15;   // horizontal offset
 33.     ctx.shadowOffsetY = 15;   // vertical offset
-34. }</code></pre>
+34. }
+</code></pre>
+
 </details>
-<h4>
-And here is the result:
-</h4>
+
+<h4>And here is the result:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 184. setting shadow - not quite correct (247) ------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image184.png?raw=true"
-   width="65%"
+<img class="displayed"
+  src="./images/image184.png?raw=true"
+  style="width:65%;"
    alt="Not quite correct, unwanted shadow." />
-</p>
-<h4>
-HTML
-</h4>
+
+<h4>HTML</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>&lt;!DOCTYPE html&gt;
+  <summary>Click to expand!</summary>
+  
+<pre><code>
+&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -14454,8 +14436,11 @@ ctx.shadowOffsetY = 15; // vertical offset
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;
 &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
+
 <p>Ah, indeed, the call to ctx.fill() casts a shadow, but the call
 to ctx.stroke(), that paints the whole path again, casts a shadow too,
 and this time the outline produces an unwanted shadow… How can we avoid
@@ -14464,11 +14449,11 @@ this effect, while using the same technique for drawing the path?</p>
 properties, then draw the filled circle, then restore the context (to
 its previous state: without shadows), then draw the outlined circle by
 calling ctx.stroke().</p>
-<h4>
-Correct version of the code:
-</h4>
+
+<h4>Correct version of the code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  ...
@@ -14496,15 +14481,15 @@ Correct version of the code:
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 185. final result of setting shadow (248) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image185.png?raw=true"
-   width="65%"
-   alt="Final result of setting shadow." />
-</p>
+<img class="displayed"
+  src="./images/image185.png?raw=true"
+  style="width:65%;"
+  alt="Final result of setting shadow." />
 
 <h4>HTML</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -14579,24 +14564,26 @@ arcs) and some also apply to rectangles.</p>
 <h4>Examples of line styles</h4>
 
 <h4>Example #1: changing the line thickness</h4>
+
 <p>We have seen this before. This is done by changing the value (in
 pixels) of the lineWidth property of the context:</p>
-<pre><code>ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels</code></pre>
-<p>
-Here is a complete example where we draw with a lineWidth of 20 pixels:
-</p>
+
+<pre><code>
+ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels</code></pre>
+
+<p>Here is a complete example where we draw with a lineWidth of 20 pixels:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 186. changing the line thickness (250) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image186.png?raw=true"
-   width="65%"
-   alt="Changing the line thickness." />
-</p>
+<img class="displayed"
+  src="./images/image186.png?raw=true"
+  style="width:65%;"
+  alt="Changing the line thickness." />
 
 <h4>Source code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  &lt;!DOCTYPE html&gt;
@@ -14640,10 +14627,11 @@ Here is a complete example where we draw with a lineWidth of 20 pixels:
 </details>
 
 <h4>Example #2: changing the end caps of a line</h4>
-The lineCap property of the context indicates the way line end caps are
+
+<p>The lineCap property of the context indicates the way line end caps are
 rendered. Possible values are butt (default), round, square (from top to
 bottom in the next illustration). Note that a value of “round” or
-“square” makes the lines slightly longer than the default value “butt”.
+“square” makes the lines slightly longer than the default value “butt”.</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 187. line cap values (251) ----------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -14662,8 +14650,9 @@ bottom in the next illustration). Note that a value of “round” or
   style="width:65%;" />
 
 <h4>HTML</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -14704,6 +14693,7 @@ ctx.strokeRect(230, 10, 100, 100);
 <p>Note that in this example, the rectangle is not affected. It has no line ends visible - all its sides meet. However, the next property we’re going to look at will have an effect on rectangles!</p>
 
 <h4>Example #3: setting the type of corner when two lines meet</h4>
+
 <p>The lineJoin property of the context indicates the way corners are rendered, when two lines meet. Possible values are miter (the default) for creating sharp corners, round, or bevel for “cut corners”.</p>
 
 <h4>Try this:</h4>
@@ -14811,6 +14801,7 @@ ctx.strokeRect(230, 10, 100, 100);
 <p>The only difference is that the code provided to setInterval will run every n milliseconds whereas the code in setTimeout will run only once after n milliseconds (meaning that we will have to repeat a call to setTimeout at step 4 above).</p>
 
 <h4>After HTML5</h4>
+
 <p>The methods described above are now completed by a new method that comes with multiple advantages: the requestAnimationFrame API.</p>
 <p>We will compare the old methods with the new one, and implement the same  example with each of them to highlight the differences.</p>
 <!------------------------------------------------------------------------------------------------>
@@ -19186,10 +19177,11 @@ Here are two online examples at JSBin:
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 272. formaction attribute (332) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image272.png?raw=true"
-  width="40%"
-  alt="Example of formaction attribute." />   <br/></p>
+<img class="displayed"
+  src="./images/image072.png?raw=true"
+  style="width:40%;"
+  alt="Example of formaction attribute." />
+
 <p>The second example shows a form with two submit buttons:</p>
 <ul>
 <li><p>the first button submits using a GET,</p></li>
@@ -19198,10 +19190,10 @@ Here are two online examples at JSBin:
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 273. formmethod attribute (332) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image273.png?raw=true"
-  width="40%"
-  alt="Example of formmethod attribute." />   <br></p>
+<img class="displayed"
+  src="./images/image273.png?raw=true"
+  style="width:40%;"
+  alt="Example of formmethod attribute." />
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-5-11">5.5.11 formnovalidate</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -23281,7 +23273,7 @@ good understanding of the material.</p>
 </ul>
 
 <p>. . .The end.<br>
-<br>last updated 1-31-23 10:06pm </p>
+<br>last updated 02-02-23 7:02pm </p>
 </body>
 </html>
 <!--
