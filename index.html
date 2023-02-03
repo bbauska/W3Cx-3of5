@@ -1581,7 +1581,7 @@ as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eek
 
 <ul>
   <li>Always use a heading element after a sectioning element, for example &lt;section&gt;&lt;Hx&gt;…&lt;/Hx&gt;…&lt;section&gt;, and after &lt;body&gt;, where <b>x</b> can be 1..6, </li>
-  <li>Or, use a &lt;header&gt; element, like in &lt;section&gt;&lt;header&gt;&lt;Hx&gt;…&lt;Hx&gt;…..&lt ;header&gt;…&lt;section&gt;</li>
+  <li>Or, use a &lt;header&gt; element, like in &lt;section&gt;&lt;header&gt;&lt;Hx&gt;…&lt;Hx&gt;…..&lt;header&gt;…&lt;section&gt;</li>
 </ul>
 
 <h4>More about the &lt;header&gt; element</h4>
@@ -2732,7 +2732,7 @@ appear, one for the H1, one for the H2:</p>
 
 <p>Indeed, HTML does not have a dedicated mechanism for marking up
 subheadings, alternative titles or taglines. </p>
-If you do not want the subtitles to be included in the table of
+<p>If you do not want the subtitles to be included in the table of
 contents, just use standard markup, for example &lt;p&gt; elements, as
 shown in the next example. Of course, CSS rules can be applied to change
 colors, sizes, etc.</p>
@@ -2821,7 +2821,7 @@ displays the table of contents in an &lt;aside&gt; element in the
 main &lt;section&gt;. Just look at the source code and copy/paste the
 link into your own HTML documents.</p>
 
-<p><a href="https://jsbin.com/tolagec/1/edit?html,css,js,output" target="_blank" target="_blank" rel="noopener noreferrer">Online example at JsBin</a>.</p>
+<p><a href="https://jsbin.com/tolagec/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Online example at JsBin</a>.</p>
 
 <h4>Extract of source code:</h4>
 
@@ -3000,7 +3000,7 @@ links to subsections of the main content:</p>
 <p>For accessibility matters, a best practice is to split your page
 content into “regions” defined by the five 5 elements
 (aside, footer, header, main and nav) learned this week. </p>
-We recommend this article written by Steve Faulkner:
+<p>We recommend this article written by Steve Faulkner:
 “<a href="https://www.paciellogroup.com/blog/2015/09/easy-content-organisation-with-html5/" target="_blank" rel="noopener noreferrer">Easy content organisation with HTML5</a>” (24 September 2015). Steve explains
 in details how to organize an HTML document into “regions” based on the
 semantic markup elements we have seen so far during Module 1 of this course.</p>
@@ -3572,7 +3572,7 @@ a year”, “a week in a year”, “a time”, etc… </p>
 
 <h4>Different syntaxes of the datetime attribute</h4>
 
-<div data-align="center" width="100%">
+<div style="text-align:center">
 <table>
 <colgroup>
 <col style="width: 64%" />
@@ -3626,13 +3626,9 @@ is 5:45 ahead of GMT</td>
 </tbody>
 </table>
 </div>
-<h4>
-Duration values
-</h4>
-<p>
-Duration values use the prefix “P” for “period” as in &lt;time
-datetime=“P4D”&gt; (period = four days)…
-</p>
+<h4>Duration values</h4>
+<p>Duration values use the prefix “P” for “period” as in &lt;time
+datetime=“P4D”&gt; (period = four days)…</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------------- 50. duration values (64) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -3646,8 +3642,8 @@ duration value that ends with another letter indicating the unit
 used: “D” for “days”,  “H” for hours, “M” for minutes and “S” for
 seconds. </p>
 <p>You can separate the different elements “P”, value and unit with
-spaces, but this is optional. So <time datetime="P4D"> is a duration of
-4 days, as is <time datetime="P 4 D">.</p>
+spaces, but this is optional. So &lt;time datetime="P4D"&gt; is a duration of
+4 days, as is &lt;time datetime="P 4 D"&gt;.</p>
 <p>Using a “T” after the “P” marker allows you to indicate a more
 accurate duration time: &lt;time datetime=“PT4H 6M 12.55S”&gt; is a
 duration of 4 hours, 6 minutes and 12.55 seconds.</p>
@@ -3660,7 +3656,7 @@ Similarly, a year isn’t a precise number of seconds; it’s 12 months and
 February sometimes has an extra day.</i></p>
 <p><i>You still can’t represent dates before the Christian era, as years
 can’t be negative. Neither can you indicate date ranges. To mark up From
-“21/02/2012 to 25/02/2012″, use two separate <time> elements.”</i></p>
+“21/02/2012 to 25/02/2012″, use two separate &lt;time&gt; elements.”</i></p>
 
 <h4>Examples:</h4>
 
@@ -3684,26 +3680,11 @@ way you can display the date/time/duration in a human-readable form.</p>
 <h4>External resources:</h4>
 
 <ul>
-<li>
-<a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element" target="_blank" rel="noopener noreferrer">From
-the specification:</a>
-</li>
-<li>
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" target="_blank" rel="noopener noreferrer">On
-MDN’s Web Docs:&gt;</a>
-</li>
-<li>
-MDN’s browser
-compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility" target="_blank" rel="noopener noreferrer">table</a> for &lt;time&gt;
-</li>
-<li>
-<a href="https://www.brucelawson.co.uk/2012/best-of-time" target="_blank" rel="noopener noreferrer">Old but
-interesting article by Bruce Lawson:</a>
-</li>
-<li>
-A CSS Tricks’ article:
-“<a href="https://css-tricks.com/time-element/" target="_blank" rel="noopener noreferrer">The ‘time’ element</a>”
-</li>
+  <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element" target="_blank" rel="noopener noreferrer">From the specification:</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" target="_blank" rel="noopener noreferrer">On MDN’s Web Docs:&gt;</a></li>
+  <li>MDN’s browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility" target="_blank" rel="noopener noreferrer">table</a> for &lt;time&gt;</li>
+  <li><a href="https://www.brucelawson.co.uk/2012/best-of-time" target="_blank" rel="noopener noreferrer">Old but interesting article by Bruce Lawson:</a></li>
+  <li>A CSS Tricks’ article: “<a href="https://css-tricks.com/time-element/" target="_blank" rel="noopener noreferrer">The ‘time’ element</a>”</li>
 </ul>
 
 <h4>The &lt;mark&gt; element</h4>
