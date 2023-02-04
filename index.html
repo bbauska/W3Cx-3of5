@@ -21,6 +21,9 @@
 	  margin-left: 3em; }
 	p.em4 {
 	  margin-left: 4em; }
+
+	div {
+	float: left; }
 	  
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -3059,13 +3062,14 @@ Chrome HTML5 Outliner extension showed.</p>
 <p>With this technique, parts of the document can be moved more easily,
 or integrated inside an RSS stream, without the need to renumber the
 headings.</p>
-Beware that this technique will require you to use some CSS styling, and
+<p>Beware that this technique will require you to use some CSS styling, and
 may confuse some screen readers that do not yet take into account this
 way of computing the heading hierarchy. A simple fix is to use an H1
 right after the &lt;body&gt; and use only H2…H6 inside &lt;section&gt;,
-&lt;article&gt;, &lt;nav&gt; and &lt;aside&gt;.
-</p>
+&lt;article&gt;, &lt;nav&gt; and &lt;aside&gt;.</p>
+
 <h4>Let’s fix the missing heading</h4>
+
 <p>We need to add a heading in the &lt;nav&gt; element. This will both fix the outline of the document by removing the untitled entry, and will also make screen readers happy as they will better vocalize the structure of the page (it will say “entering nav” followed by the vocalization of the heading content).</p>
 
 <pre><code>
@@ -3094,7 +3098,7 @@ right after the &lt;body&gt; and use only H2…H6 inside &lt;section&gt;,
 <p><b>BEST PRACTICE #1:</b> In order to NOT display the heading content on screen the recommended technique is described in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/" target="_blank" rel="noopener noreferrer">this article by Steve Faulkner</a>. Do not
 use display:none or visibility:hidden in your CSS stylesheet, as in that case the heading content will never be vocalized by screen readers, and more generally by assistive technologies.</p>
 <p>As an illustration of the recommended technique, see <a href="https://jsbin.com/savabo/edit?html,output" target="_blank" rel="noopener noreferrer">this JSBin version of the blog example</a> that hides the &lt;h2&gt;Navigation menu&lt;/h2&gt; from the &lt;nav&gt;…&lt;/nav&gt; element, using the CSS technique explained in the above link.</p>
-<b>BEST PRACTICE #2:</b> It is not advised to include interactive content (links, controls etc) that is hidden offscreen it is in fact a violation of
+<p><b>BEST PRACTICE #2:</b> It is not advised to include interactive content (links, controls etc) that is hidden offscreen it is in fact a violation of
 the <a href="https://www.w3.org/TR/WCAG20/)" target="_blank" rel="noopener noreferrer">W3C WCAG 2.0 Guidelines</a>. All interactive content must have a visible focus indicator (and be on screen when focused).</p>
 
 <h4>Embedding a table of contents and adding a &lt;main&gt; element</h4>
@@ -3703,11 +3707,12 @@ way you can display the date/time/duration in a human-readable form.</p>
 
 <ul>
   <li>Display search results with search strings highlighted in the results.</li>.
-  <li>Highlight important parts of a text, such as “quoting parts”, etc.</li>
+  <li>Highlight important parts of a text, such as "quoting parts", etc.</li>
   <li>Replace &lt;strong&gt; and &lt;em&gt; with &lt;mark&gt; when suitable.</li>
 </ul>
 
-<h4>Example 1: &lt;https://jsbin.com/tafelic/edit?html,output&gt;</h4>
+<h4>Example 1:</h4>
+<!-- &lt;https://jsbin.com/tafelic/edit?html,output&gt;</h4> -->
 
 <h4>Source code:</h4>
 
@@ -3725,9 +3730,9 @@ way you can display the date/time/duration in a human-readable form.</p>
 </code></pre>
 
 <h4>Example 2:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 52. another example for marking code (66) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!-- -->
+<!-- 52. another example for marking code (66) -->
+<!-- -->
 <img class="displayed"
   src="./images/image052.jpeg?raw=true"
   alt="Another example for marking code."
@@ -3779,7 +3784,7 @@ mark {
 <h4>The old way to download files using HTML and HTTP</h4>
 
 <p>Everyone knows the classic way to make hyperlinks,
-using &lt;a href="..."&gt;some text</a>. What happens when you click on the
+using &lt;a href="..."&gt;some text. What happens when you click on the
 hyperlink depends on the MIME type received by the browser. If you link
 to a file the browser knows how to render (an html page, a gif, jpg, or
 png image, etc.) there is a good chance that the MIME type received by
@@ -3967,7 +3972,7 @@ not be translated:</h4>
 <pre><code>
 &lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt;</code></pre>
 
-<p>In the above example, a <span> element defines an author (of a blog,
+<p>In the above example, a &lt;span&gt; element defines an author (of a blog,
 for example) who is named Michel Ham. However, his family name is the
 same as pork and would be translated to “Michel Jambon” in French, or
 Michel Jamón in Spanish…</p>
@@ -4000,10 +4005,10 @@ is also true.</p>
 
 <ul>
   <li>From the specification: <a href="https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute" target="_blank" rel="noopener noreferrer">the translate attribute</a></li>
-  <li>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate" target="_blank" rel="noopener noreferrer"></a></li>
-  <ul>
-    <li>Its corresponding <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate#Browser_compatibility" target="_blank" rel="noopener noreferrer">browser compatibility table</a></li>
-  </ul>
+  <li>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate" target="_blank" rel="noopener noreferrer"></a>
+    <ul>
+      <li>Its corresponding <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate#Browser_compatibility" target="_blank" rel="noopener noreferrer">browser compatibility table</a></li>
+    </ul></li>
   <li>An article from W3C’s Internationalization Activity: <a href="https://www.w3.org/International/questions/qa-translate-flag" target="_blank" rel="noopener noreferrer">“Using HTML’s translate attribute”</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
@@ -4265,10 +4270,10 @@ There is also inheritance between vocabularies! The above screenshot
 shows that the Person vocabulary inherits from a Thing vocabulary, and
 the five first properties of the table come from this vocabulary that
 describes things.</p>
-If you are a developer and if you are familiar with object oriented
+<p>If you are a developer and if you are familiar with object oriented
 programming, think of properties as class attributes and think of
-vocabularies as classes.
-</p>
+vocabularies as classes.</p>
+
 <h4>Vocabularies are meant to be shared</h4>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 63. picture of 'time to share' (76) ------------------------------->
@@ -4282,11 +4287,12 @@ vocabularies as classes.
 site fits your needs, you should reuse it, as the most popular
 vocabularies are becoming de facto standards and will be taken into
 account by Web crawlers, browsers, and browser extensions.</p>
-However, if you do not find a vocabulary corresponding to your needs,
+<p>However, if you do not find a vocabulary corresponding to your needs,
 keep in mind that anyone can define a microdata vocabulary and start
 embedding custom properties in their own Web pages. You need to define a
 namespace and put a description of your vocabulary in a Web page that
 has the name of your vocabulary.</p>
+
 <h4>3 - Add properties using the itemprop attribute in HTML elements inside the container</h4>
 
 <h4>Basics:</h4>
@@ -4420,7 +4426,7 @@ element type.<br>
 
 <h4>Elements that can be associated with microdata</h4>
 
-<div data-align="center" width="100%">
+<div>
 <table>
 <colgroup>
 <col style="width: 35%" />
@@ -4460,20 +4466,24 @@ data that isn’t actually in the text of your page.</td>
 </tbody>
 </table>
 </div>
-<p>
-For example, the value of a property defined in an &lt;img&gt; element
-will be the value of the src attribute:
-</p>
-<pre><code>&lt;img itemprop=&quot;image&quot; src=&quot;MichelBuffa.png&quot; alt=&quot;A great professor&quot;&gt;</code></pre>
-<p>
-Or, for a &lt;time&gt;, it will be the value of the datetime attribute:
-</p>
-<pre><code>&lt;time itemprop=&quot;birthday&quot; datetime=&quot;1965-04-16&quot;&gt;April 16, 1965&lt;/time&gt;</code></pre>
-<p>
-Or, for an &lt;a&gt; element, the value will be the value of
-the href attribute:
-</p>
-<pre><code>&lt;a href=&quot;https://www.twitter.com/micbuffa&quot; itemprop=&quot;url&quot;&gt;profile&lt;/a&gt;</code></pre>
+
+<p>For example, the value of a property defined in an &lt;img&gt; element will be the value of the src attribute:</p>
+
+<pre><code>
+&lt;img itemprop=&quot;image&quot; src=&quot;MichelBuffa.png&quot; alt=&quot;A great professor&quot;&gt;
+</code></pre>
+
+<p>Or, for a &lt;time&gt;, it will be the value of the datetime attribute:</p>
+
+<pre><code>
+&lt;time itemprop=&quot;birthday&quot; datetime=&quot;1965-04-16&quot;&gt;April 16, 1965&lt;/time&gt;
+</code></pre>
+
+<p>Or, for an &lt;a&gt; element, the value will be the value of the href attribute:</p>
+
+<pre><code>
+&lt;a href=&quot;https://www.twitter.com/micbuffa&quot; itemprop=&quot;url&quot;&gt;profile&lt;/a&gt;
+</code></pre>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-5-4">1.5.4 Microdata Tools</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -4808,79 +4818,48 @@ loop: Another boolean attribute that indicates to play the video in loop
 mode (and it starts again when finished).
 </li>
 </ul>
-<h4>
-Be careful if you target mobile applications or if you have multiple
-videos on the same page
-</h4>
-<p>
+<h4>Be careful if you target mobile applications or if you have multiple videos on the same page</h4>
+
 <p>The autoplay attribute is not recommended if your Web site targets
 mobile applications (actually, it is often ignored by mobile browsers),
 as it may consume bandwidth even if the user is not interested in
 watching the proposed video. If you target mobile devices, we recommend
 using preload=none as well, as the default value for this attribute
 is auto.</p>
-<b>Best practice</b>: do not use autoplay and add preload=“none” if you
+<p><b>Best practice</b>: do not use autoplay and add preload=“none” if you
 target mobile devices or if you have multiple audio/video files on the
-same page.  For
-example, <a href="https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html" target="_blank" rel="noopener noreferrer">this
-page</a> contains many audio elements and it does not make sense to have
-them preload or autoplay.
-</p>
-<h4>
-About the poster attribute
-</h4>
-<p>
-If the poster attribute is missing, usually the first non-blank frame of
-the video will be used as the image that is shown when the video is not
-playing.
-</p>
-<h4>
-About the autoplay attribute for general use
-</h4>
-<p>
+same page.  For example, <a href="https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html" target="_blank" rel="noopener noreferrer">this page</a> contains many audio elements and it does not make sense to have
+them preload or autoplay.</p>
+
+<h4>About the poster attribute</h4>
+
+<p>If the poster attribute is missing, usually the first non-blank frame of the video will be used as the image that is shown when the video is not playing.</p>
+
+<h4>About the autoplay attribute for general use</h4>
+
 <p>Do not abuse of the autoplay attribute. We talked earlier about
 mobile applications, but even on desktop applications it’s usually a bad
 idea to use it (except for WebCams and for some animations with small
 video loops, without sound, or for sites like YouTube, with just
 videos).</p>
-<b>Best practice</b>: think twice before using the autoplay attribute,
-even for desktop applications.
-</p>
-<h4>
-Attributes of the &lt;audio&gt; element
-</h4>
-<p>
-The attributes you can use with the &lt;audio&gt; element are a subset
-of those available for the &lt;video&gt; element. Except for
-the poster attribute, they are all recognized and have the
-expected meanings: 
-</p>
+<p><b>Best practice</b>: think twice before using the autoplay attribute,
+even for desktop applications.</p>
+
+<h4>Attributes of the &lt;audio&gt; element</h4>
+
+<p>The attributes you can use with the &lt;audio&gt; element are a subset of those available for the &lt;video&gt; element. Except for the poster attribute, they are all recognized and have the
+expected meanings:</p>
+
 <ul>
-<li>
-src: source of an audio stream.
-</li>
-<li>
-controls: if this attribute is present, the browser displays its own
-controls for audio playback and volume.
-</li>
-<li>
-autoplay: tells the browser to start playing the audio stream
-automatically as soon as the page is ready - please read details in the
-above table.
-</li>
-<li>
-preload: tells the browser what to do before a user plays a sound
-- please read details in the above table.
-</li>
-<li>
-loop:  indicates to play the audio stream in loop mode (start again when
-finished).
-</li>
+  <li>src: source of an audio stream.</li>
+  <li>controls: if this attribute is present, the browser displays its own controls for audio playback and volume.</li>
+  <li>autoplay: tells the browser to start playing the audio stream automatically as soon as the page is ready - please read details in the above table.</li>
+  <li>preload: tells the browser what to do before a user plays a sound - please read details in the above table.</li>
+  <li>loop:  indicates to play the audio stream in loop mode (start again when finished).</li>
 </ul>
-<p>
-As with the &lt;video&gt; element, the same best practice in regard
-to preload and autoplay attributes should be followed.
-</p>
+
+<p>As with the &lt;video&gt; element, the same best practice in regard to preload and autoplay 
+attributes should be followed.</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-2-4">2.2.4 Styling Media Players with CSS</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -5074,9 +5053,9 @@ and simple) JavaScript code here to handle the window resize events and
 we just set regular CSS properties width and height of the video
 element, to resize the video.</p>
 
-<p>Example #1: with a regular video</p>
-Full width, resizable, borderless video, just using plain CSS and JS DOM
-events.</p>
+<h4>Example #1: with a regular video</h4>
+
+<p>Full width, resizable, borderless video, just using plain CSS and JS DOM events.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 72. full width video like paypal site (89) --------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5390,8 +5369,7 @@ text. To pause it, you click on the “vid.pause()” text, and so
 on. <i>Notice the text at the top of the video, as well as the
 transparency.</i> The text can be selected, since all the elements
 displayed are pure DOM objects. You can zoom the page in and out, etc.
-This was not possible with the Flash technology.
-</p>
+This was not possible with the Flash technology.</p>
 <p><b>Conclusion</b>:  you can very easily change the look and feel of
 the standard video player by using custom CSS and designing your own
 control widgets. We can find many examples of such video players that
@@ -5434,7 +5412,8 @@ events provided by the &lt;video&gt; element API</h4>
 <p>We provide this as a quick reminder - keep in mind that
 the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents" target="_blank" rel="noopener noreferrer">complete
 list</a> is much longer!</p>
-<div data-align="center" width="100%">
+
+<div>
 <table>
 <thead>
 <tr class="header">
@@ -5527,6 +5506,7 @@ list</a> is much longer!</p>
 </tbody>
 </table>
 </div>
+
 <p>In the next pages, let’s see, through a set of examples, how to use
 these most important properties, methods, and events…</p>
 <!------------------------------------------------------------------------------------------------>
@@ -5982,16 +5962,11 @@ this example (server = codepen.io, but as the video and .vtt files come
 from another origin -another server-, this attribute is necessary).
 </li>
 </ul>
-<h4>
-Multiple tracks may be included in a video element
-</h4>
-<p>
-<p>Multiple tracks are needed to support different langages, video
-captions for the hearing-impaired, subtitles, etc.</p>
-Below is an example
-(<a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element" target="_blank" rel="noopener noreferrer">from
-the specification</a>) that includes multiple &lt;track&gt; elements
-(subtitles for three languages and captions only for English):</p>
+
+<h4>Multiple tracks may be included in a video element</h4>
+
+<p>Multiple tracks are needed to support different langages, video captions for the hearing-impaired, subtitles, etc.</p>
+<p>Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element" target="_blank" rel="noopener noreferrer">from the specification</a>) that includes multiple &lt;track&gt; elements (subtitles for three languages and captions only for English):</p>
 
 <details>
   <summary>Click to expand!</summary>
@@ -6024,6 +5999,7 @@ the specification</a>) that includes multiple &lt;track&gt; elements
 </ul>
 
 <h4>External resources</h4>
+
 <ul>
   <li>From the HTML specification: <a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element" target="_blank" rel="noopener noreferrer">The track element</a></li>
   <li>From the W3C specification: <a href="https://www.w3.org/TR/webvtt1/" target="_blank" rel="noopener noreferrer">WebVTT: The Web Video Text Tracks Format</a></li>
@@ -6033,13 +6009,8 @@ the specification</a>) that includes multiple &lt;track&gt; elements
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-3-2">2.3.2 The WebVTT Format</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>The “<a href="http://dev.w3.org/html5/webvtt/" target="_blank" rel="noopener noreferrer">WebVTT: The Web Video
-Text Tracks Format</a>” defines files that contain text for captions and
-subtitles, and much more… The WebVTT files are used with
-the src attribute of the &lt;track&gt; element, that can be used inside
-a &lt;video&gt;…&lt;/video&gt;.</p>
-<p>In the interactive example presented before, we used a file
-called sintel-captions.vtt:</p>
+<p>The "<a href="http://dev.w3.org/html5/webvtt/" target="_blank" rel="noopener noreferrer">;WebVTT: The Web Video Text Tracks Format </a>" defines files that contain text for captions and subtitles, and much more… The WebVTT files are used with the src attribute of the &lt;track&gt; element, that can be used inside a &lt;video&gt;…&lt;/video&gt;.</p>
+<p>In the interactive example presented before, we used a file called sintel-captions.vtt:</p>
 
 <pre><code>
 &lt;video height=&quot;272&quot; width=&quot;640&quot;
@@ -6052,10 +6023,10 @@ called sintel-captions.vtt:</p>
 &lt;/video&gt;
 </code></pre>
 
-<p>And here is an extract of the
-corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt" target="_blank" rel="noopener noreferrer">sintel-captions.vtt</a> file:</p>
+<p>And here is an extract of the corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt" target="_blank" rel="noopener noreferrer">sintel-captions.vtt</a> file:</p>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  WEBVTT
@@ -6130,17 +6101,9 @@ corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt" 
 
 </details>
 
-<p>This format is rather simple, but we still recommend
-reading <a href="https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API" target="_blank" rel="noopener noreferrer">this
-excellent article from Mozilla Developer Network</a> that explains in
-detail all the different options.</p>
-<p>Each “element” in this file has a starting and ending time, plus a
-value (the text that will be displayed), followed by a blank line (blank
-lines are separators between elements).</p>
-<b>Each element is called “a cue”</b>, and may optionally have an ID
-that will be useful when using the track element JavaScript API, in
-particular the getCueById() method of TextTrack objects.
-</p>
+<p>This format is rather simple, but we still recommend reading <a href="https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API" target="_blank" rel="noopener noreferrer">this excellent article from Mozilla Developer Network</a> that explains in detail all the different options.</p>
+<p>Each “element” in this file has a starting and ending time, plus a value (the text that will be displayed), followed by a blank line (blanklines are separators between elements).</p>
+<b>Each element is called “a cue”</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, inparticular the getCueById() method of TextTrack objects.</p>
 
 <h4>Example of a .vtt file with numeric IDs:</h4>
 
@@ -6186,18 +6149,11 @@ advantages if the browser supports them. For example, webm allows the
 video to start playing after a much shorter buffering time. In other
 words, try if possible to provide the video encoded with more than one
 codec.</p>
-<p>For this, use any sort of open source, free or commercial video
-encoding software, such
-as <a href="https://handbrake.fr/" target="_blank" rel="noopener noreferrer">Handbrake</a> (free, open
-source) or <a href="https://www.erightsoft.com/SUPER.html" target="_blank" rel="noopener noreferrer">Super</a> (free).
-There are also online video encoding services, and you can even upload
-your video to YouTube, let it encode your video in several resolutions
-and codecs, and use a browser extension such
-as <a href="https://addons.mozilla.org/fr/firefox/addon/video-downloadhelper/" target="_blank" rel="noopener noreferrer">Video
-DownloadHelper</a> (for Firefox)
-or <a href="https://jdownloader.org/" target="_blank" rel="noopener noreferrer">JDownloader</a>, to download the
-video in your chosen formats.</p>
-So, let’s suppose you have a video like the one below (we included it on
+<p>For this, use any sort of open source, free or commercial video encoding software, such
+as <a href="https://handbrake.fr/" target="_blank" rel="noopener noreferrer">Handbrake</a> (free, open source) or <a href="https://www.erightsoft.com/SUPER.html" target="_blank" rel="noopener noreferrer">Super</a> (free). There are also online video encoding services, and you can even upload
+your video to YouTube, let it encode your video in several resolutions and codecs, and use a browser extension such as <a href="https://addons.mozilla.org/fr/firefox/addon/video-downloadhelper/" target="_blank" rel="noopener noreferrer">Video DownloadHelper</a> (for Firefox)
+or <a href="https://jdownloader.org/" target="_blank" rel="noopener noreferrer">JDownloader</a>, to download the video in your chosen formats.</p>
+<p>So, let’s suppose you have a video like the one below (we included it on
 YouTube for practical reasons). This video has subtitles (you can
 activate them in the YouTube player), but the goal of this lesson is to
 explain how we made them without using the YouTube embedded tools, which
@@ -6233,8 +6189,7 @@ format.</p>
 
 <p>Now, we need to create a WebVTT file for this video. How can we synchronize an English translation of what the guitar teacher says in French?</p>
 <p>Many tools - both free and commercial - are available to add subtitles to a video. Most are native applications you need to install on your computer. However, a free and very practical tool is available for doing this 100% in a Web browser: <a href="https://amara.org/en/" target="_blank" rel="noopener noreferrer">amara</a>.</p>
-<p>Go to the above Web site, click on the “subtitle a video” link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it’s better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync
-them until you are happy with the results.</p>
+<p>Go to the above Web site, click on the “subtitle a video” link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it’s better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 88. example subtitles and captions (109) ---------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -6283,7 +6238,7 @@ HTML):</p>
 <p>The WebVTT file is shown below. Notice the new attributes that have been added on the right end of the duration values:</p>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  WEBVTT
@@ -6462,7 +6417,7 @@ extra &lt;track&gt; element with a kind=“chapters” attribute.
 <h4>Example of a WebVTT file that defines chapters:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  WEBVTT FILE
@@ -6711,8 +6666,9 @@ learn what you need from the provided examples.</p>
 <p>The stream is passed as a parameter to the then() method returned by
 the promise, as in this typical example (you can run it and see the
 result by clicking on the “CodePen” logo at the top right):</p>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;video id=&quot;myVideo&quot; autoplay&gt;Fallback msg here.&lt;/video&gt;
@@ -7335,12 +7291,8 @@ border:1px solid;
 
 <h4>How to check which resolutions are supported by a browser?</h4>
 
-<p>Use
-this <a href="https://webrtchacks.github.io/WebRTC-Camera-Resolution/" target="_blank" rel="noopener noreferrer">Web
-app that</a> systematically tests a set of “preferred resolutions” and
-compared them to the actual resolutions returned by the browser.
-Remember that the requested resolution is a hint, and there is no real
-guarantee that your configuration will allow it.</p>
+<p>Use this <a href="https://webrtchacks.github.io/WebRTC-Camera-Resolution/" target="_blank" rel="noopener noreferrer">Web app that</a> systematically tests a set of “preferred resolutions” and
+compared them to the actual resolutions returned by the browser. Remember that the requested resolution is a hint, and there is no real guarantee that your configuration will allow it.</p>
 
 <h4>Selecting the front or rear camera on smartphones</h4>
 
@@ -14849,8 +14801,9 @@ argument.</p>
 <p>Please try this example that moves/animates a div using setInterval:</p>
 
 <h4>HTML</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -15151,6 +15104,7 @@ your function ONCE and <i>AFTER a given amount of time</i>.</p>
 <p>Check the example below (click on start animation):</p>
 
 <h4>HTML</h4>
+
 <details>
   <summary>Click to expand!</summary>
 
@@ -15244,7 +15198,7 @@ clearTimeout(requestId);
 <h4>Extract from source code:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  function animationLoop() {
@@ -15307,6 +15261,7 @@ animation, even if the instructions inside the animation loop take too long.</p
 </ul>
 
 <h4>Typical use</h4>
+
 <p>You will note that  requestAnimationFrame(function) is used
 like setTimeout(function, delay). A call to requestAnimationFrame just
 asks the browser to call the function passed as a parameter ONCE, and
@@ -15317,7 +15272,7 @@ with cancelAnimationFrame(id).</p>
 <h4>Source code:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  &lt;body onload=&quot;init();&quot;&gt;
@@ -15362,11 +15317,13 @@ with cancelAnimationFrame(id).</p>
 </details>
 
 <h4>Example: animate the monster with requestAnimationFrame</h4>
+
 <h4>Check the example below:</h4>
+
 <h4>Source code extract - please compare with the previous example that used setInterval():</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  function animationLoop(timeStamp) {
@@ -15452,12 +15409,10 @@ very easy to use. Mixing the ‘visual layer’ (HTML) and the ‘logic layer’
 (JavaScript) in one place is ok for small examples (we have used this in
 some examples in this course) but is not the recommended way for full
 scale applications where a clean separation is best.</p>
-<h4>
-Second method: add an event handler to an HTML element in JavaScript
-</h4>
-<h4>
-Here is an example:
-</h4>
+
+<h4>Second method: add an event handler to an HTML element in JavaScript</h4>
+
+<h4>Here is an example:</h4>
 
 <pre><code>
 1.  document.getElementById(&#39;someDiv&#39;).onclick = function(evt) {
@@ -15468,8 +15423,10 @@ Here is an example:
 <p>This method is fine, but  you will not be able to attach several
 listener functions. If you need to do this, the preferred version is the
 next one.</p>
+
 <h4>Third method: register a callback to the event listener with
 the addEventListener method</h4>
+
 <h4>This is how we do it:</h4>
 
 <pre><code>
@@ -15480,7 +15437,9 @@ the addEventListener method</h4>
 
 <p>The third parameter is not important for now, just set it to false,
 or simply do not add a third parameter.</p>
+
 <h4>The DOM event that is passed to the event listener function</h4>
+
 <p>When you create an EventListener and attach it to an element,  an
 event object will be passed as a parameter to your callback, just like
 this:</p>
@@ -15500,13 +15459,14 @@ the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5
 Apps and Games</a>, we look at additional APIs such
 as <a href="https://www.w3.org/TR/gamepad/">the gamePad API</a> for
 using USB or wireless gamepads/joysticks/game controllers.</p>
-<h4>
-Source code for the knowledge check 4.3.1
-</h4>
+
+<h4>Source code for the knowledge check 4.3.1</h4>
+
 <p><a href="http://jsbin.com/korele/edit" target="_blank">Online example
 on JS Bin</a></p>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  &lt;!DOCTYPE html&gt;
@@ -15538,11 +15498,7 @@ on JS Bin</a></p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>When you listen to keyboard related events
-(keydown, keyup or keypressed), the event parameter passed to the
-listener function will contain the code of the key that fired the event.
-Then it is possible to test what key has been pressed or released, like
-this:</p>
+<p>When you listen to keyboard related events (keydown, keyup or keypressed), the event parameter passed to the listener function will contain the code of the key that fired the event.  Then it is possible to test what key has been pressed or released, like this:</p>
 
 <pre><code>
 1.  window.addEventListener(&#39;keydown&#39;, function(event) {
@@ -15555,23 +15511,19 @@ this:</p>
 <p>At <i>line 2</i>, the value “37” is the key code that corresponds to
 the left arrow. It might be difficult to know the correspondences
 between real keyboard keys and codes, so here are handy pointers:</p>
+
 <ul>
-<li><p>Try key codes with this <a
-href="http://www.asquare.net/javascript/tests/KeyCode.html">interactive
-test page</a></p></li>
-<li><p>And find a list of keyCodes in this <a
-href="https://css-tricks.com/snippets/javascript/javascript-keycodes/#keycode-values">CSS
-Tricks article</a>)</p></li>
+  <li><p>Try key codes with this <a href="http://www.asquare.net/javascript/tests/KeyCode.html">interactive test page</a></p></li>
+  <li><p>And find a list of keyCodes in this <a href="https://css-tricks.com/snippets/javascript/javascript-keycodes/#keycode-values">CSS Tricks article</a>)</p></li>
 </ul>
-<h4>
-Examples
-</h4>
-<h4>
-Example #1: adding a key listener to the window object
-</h4>
-A lot of people think that the canvas element is not able to get key
+
+<h4>Examples</h4>
+
+<h4>Example #1: adding a key listener to the window object</h4>
+
+<p>A lot of people think that the canvas element is not able to get key
 events. Many examples on the Web handle key events on canvas by adding a
-listener to the window object directly, like this:
+listener to the window object directly, like this:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 193. add key listener to window object (268) -------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -15595,13 +15547,12 @@ border: 1px solid black;
 &lt;p&gt;
 </code></pre>
 
-This example shows how to handle key events in a canvas by adding a key
+<p>This example shows how to handle key events in a canvas by adding a key
 listener to the window object. Like that, all key press in the document
-will trigger the event listener function.
-</p>
+will trigger the event listener function.</p>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; height=&quot;200&quot;&gt;
@@ -15618,16 +15569,18 @@ return false;
 };
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;
+</code></pre>
+
 </details>
-<h4>
-Code source extract:
-</h4>
+
+<h4>Code source extract:</h4>
+
 <details>
-<summary>
-Click to expand!
-</summary>
-<pre><code>1.  &lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; height=&quot;200&quot;&gt;
+  <summary>Click to expand!</summary>
+
+<pre><code>
+1.  &lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; height=&quot;200&quot;&gt;
 2.  &lt;/canvas&gt;
 3.   
 4.  &lt;script&gt;
@@ -15642,14 +15595,16 @@ Click to expand!
 13.     alert(&#39;keycode: &#39;+e.keyCode);
 14.     return false;
 15. };
-16. &lt;/script&gt;</code></pre>
+16. &lt;/script&gt;
+</code></pre>
+
 </details>
+
 <p>Indeed this solution works well if you write a game, and want to
 detect events wherever the mouse cursor is, and without worrying about
 what HTML element has the focus, etc…</p>
-<h4>
-Example #2: moving the monster with the keyboard
-</h4>
+
+<h4>Example #2: moving the monster with the keyboard</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 194. moving the monster with keyboard (xxx) -------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -15659,8 +15614,9 @@ Example #2: moving the monster with the keyboard
   style="width:65%;" />
 
 <h4>HTML</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -15761,6 +15717,7 @@ cancelAnimationFrame(requestId);
 </details>
 
 <h4>Code:</h4>
+
 <details>
   <summary>Click to expand!</summary>
 
@@ -15832,7 +15789,7 @@ Without it, it will never get the focus!</p>
 2.  &lt;/canvas&gt;
 </code></pre>
 
-<p>And we force the canvas to get the focus with:</p>
+<h4>And we force the canvas to get the focus with:</h4>
 
 <pre><code>
 1.  canvas=document.getElementById(&#39;myCanvas&#39;);
@@ -15901,12 +15858,12 @@ return false;
 by default. Try to click on the canvas, then press a key, then click out
 of the canvas, then press a key: this time nothing happens!</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 196. (xxx) -------------------------------->
+<!----------------------- 196. border appears when canvas has focus (xxx) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image196.jpeg?raw=true"
   style="width:50%"
-  alt="image196.jpeg a border appears when the canvas has the focus." />
+  alt="A border appears when the canvas has the focus." />
 
 <h4>Extract from the code:</h4>
 
@@ -15941,7 +15898,9 @@ of the canvas, then press a key: this time nothing happens!</p>
 <p><i>Line 10</i> is useful to initially set the focus on the canvas,
 but this trick will not work if we click somewhere else in the HTML
 page.</p>
+
 <h4>Example #4: a better way: set the focus when the mouse cursor enters the canvas</h4>
+
 <p>A better way to manage key events on a canvas is to set the focus
 when the mouse is over the canvas, and to un-focus it otherwise.</p>
 <p>Here is a modified version of the “move monster example” seen
@@ -16134,7 +16093,7 @@ listen to.</p>
 
 <h4>The different mouse events</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 198. mouse events illustrated (xxx) ----------------------------->
+<!------------------------------ 198. mouse events illustrated (278) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image198.png?raw=true"
@@ -16166,10 +16125,9 @@ time the mouse moves, a new event is fired,
 unlike with mouseover or mouseenter, where only one event is
 fired.</p></li>
 </ul>
-<h4>
-The tricky part: accurately getting the mouse position relative to the
-canvas
-</h4>
+
+<h4>The tricky part: accurately getting the mouse position relative to the canvas</h4>
+
 <p>When you listen to any of the above events, the event object (we call
 it a “DOM event”), passed to the listener function, has properties that
 correspond to the mouse coordinates: clientX and clientY.</p>
@@ -16185,17 +16143,17 @@ canvas position (margin, etc.).</p>
 of any element in the page: getBoundingClientRect().</p>
 <p>Play with the example below that show the problem:</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------- 199.  (xxx) ------------>
+<!--------------------- 199. display mouse cursors position on canvas (279) ---------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image199.png?raw=true"
-  width="25%"
-  alt="." />   <br/></p>
-<h4>
-JavaScript
-</h4>
+<img class="displayed"
+  src="./images/image199.png?raw=true"
+  alt="Display mouse cursors position on canvas."
+  style="width:25%;" />
+
+<h4>JavaScript</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 var canvas, ctx, mousePos, mouseButton;
@@ -16238,13 +16196,16 @@ y: evt.clientY - rect.top
 </details>
 
 <h4>CSS</h4>
+
 <div class="sourceCode" id="cb371"><pre
 class="sourceCode css"><code class="sourceCode css"><span id="cb371-1"><a href="#cb371-1" aria-hidden="true" tabindex="-1"></a>canvas {</span>
 <span id="cb371-2"><a href="#cb371-2" aria-hidden="true" tabindex="-1"></a><span class="kw">border</span>:<span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">black</span></span>
 <span id="cb371-3"><a href="#cb371-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+
 <h4>HTML</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -16282,8 +16243,9 @@ function getMousePos(canvas, evt) {
 </code></pre>
 
 <h4>WRONG code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  ...
@@ -16305,23 +16267,23 @@ function getMousePos(canvas, evt) {
 
 </details>
 
-<h4>Here is the result, when the mouse is approximately at the top left
-corner of the canvas:</h4>
+<h4>Here is the result, when the mouse is approximately at the top left corner of the canvas:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!----------- 200.  (xxx) ------------>
+<!-------------- 200. incorrect mouse position at top left corner of canvas (281) ---------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image200.jpeg?raw=true"
-  width="65%"
-  alt="Bad mouse coordinates." />   <br/></p>
+<img class="displayed"
+  src="./images/image200.jpeg?raw=true"
+  alt="Bad mouse coordinates."
+  style="width:65%;" />
+
 <h4>GOOD version of the code:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!----------- 201.  (xxx) ------------>
+<!------------------ 201. corrected code for top left canvas positioning (281) ------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image201.png?raw=true"
-   width="40%"
-   alt="." />   <br/></p>
+<img class="displayed"
+  src="./images/image201.png?raw=true"
+  alt="Corrected code for top left canvas mouse positioning."
+  style="width:40%;" />
 
 <pre><code>
 function getMousePos(canvas, evt) {
@@ -16336,34 +16298,38 @@ function getMousePos(canvas, evt) {
 
 <h4>Result (the cursor is approximately at the top left corner):</h4>
 <!------------------------------------------------------------------------------------------------>
-<!----------- 202.  (xxx) ------------>
+<!------------------------- 202. now at 0,0 - top left of canvas (281) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image202.jpeg?raw=true"
-  width="30%"
-  alt="Mouse at zero zero." />   <br/></p>
-<h4>How to display the mouse position, and the mouse button that has been
-pressed or released</h4>
+<img class="displayed"
+  src="./images/image202.jpeg?raw=true"
+  alt="Mouse now at 0,0 - top left of canvas."
+  style="width:30%;" />
+
+<h4>How to display the mouse position, and the mouse button that has been pressed or released</h4>
+
 <p>This example uses the previous function for computing the mouse position
 correctly. It listens to mousemove, mousedown and mouseup events, and
 shows how to get the mouse button number using the evt.button property.</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------- 203.  (xxx) ------------>
+<!---------------------- 203. mouse position and pressed or released (282) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image203.png?raw=true"
-  width="40%"
-  alt="." />   <br/></p>
+<img class="displayed"
+  src="./images/image203.png?raw=true"
+  alt="Mouse position along with whether its pressed or released."
+  style="width:40%;" />
+
 <!------------------------------------------------------------------------------------------------>
-<!----------- 204.  (xxx) ------------>
+<!-------------- 204. move mouse cursor, click and release, see what happens (282) --------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image204.jpeg?raw=true"
-   width="50%"
-   alt="Mouse event example." />   <br/></p>
+<img class="displayed"
+  src="./images/image204.jpeg?raw=true"
+  alt="Mouse event example.  Move, click, release.."
+  style="width:50%;" />
+
 <h4>Extract from source code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  var canvas, ctx, mousePos, mouseButton;
@@ -16410,24 +16376,28 @@ shows how to get the mouse button number using the evt.button property.</p>
 </code></pre>
 
 </details>
+
 <h4>More examples</h4>
-<h4>Example #1: move the monster with the mouse, rotate it when a mouse
-button is pressed</h4>
+
+<h4>Example #1: move the monster with the mouse, rotate it when a mouse button is pressed</h4>
+
 <p>This example shows an animation at 60 frames/s
 using requestAnimationFrame, were the monster is drawn at the mouse
 position, and if a mouse button is pressed, the monster starts rotating
 around its center. If we release the mouse button, the rotation
 stops:</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------- 205.  (xxx) ------------>
+<!---------------------- 205. move and rotate the monster with mouse (283) ----------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image205.png?raw=true"
-  width="40%"
-  alt="Image205." />   <br/></p>
-<h4>Code:</h4>
+<img class="displayed"
+  src="./images/image205.png?raw=true"
+  alt="Move and rotate monster with mouse."
+  style="width:40%;" />
+
+<h4>JavaScript code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 var canvas, ctx;
@@ -16482,20 +16452,23 @@ function animationLoop() {
 
 <p>This example shows one very important good practice when doing animation
 and interaction: if you want to achieve a smooth animation, set the
-state variables 60 times/s inside the animation loop (lines 45-49),
-depending on increments you set in event listeners (lines 23-31).</p>
+state variables 60 times/s inside the animation loop <i>(lines 45-49)</i>,
+depending on increments you set in event listeners <li>(lines 23-31)</i>.</p>
+
 <h4>Example #2: draw in a canvas as if you were using a pencil</h4>
 <!------------------------------------------------------------------------------------------------>
-<!----------- 206.  (xxx) ------------>
+<!-------------------------- 206. draw in a canvas like a pencil (284) --------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image206.png?raw=true"
-  width="40%"
-  alt="." />   <br/></p>
+<img class="displayed"
+  src="./images/image206.png?raw=true"
+  alt="Draw in canvas like a pencil."
+  style="width:40%;" />
+
 <h4>Source code:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
+
 <pre><code>...
 &lt;script&gt;
 var canvas, ctx, previousMousePos;
@@ -16534,26 +16507,22 @@ function handleMouseMove(evt) {
 </code></pre>
 
 </details>
-<p>
-We had to define a variable started=false; as we cannot draw any line
-before the mouse moved (we need at least two consecutive positions).
-This is done in the test at <i>line 21</i>.
-</p>
-<h4>
-Example #3: same as example #2 but we draw only when a mouse button is
-pressed
-</h4>
+
+<p>We had to define a variable started=false; as we cannot draw any line before the mouse moved (we need at least two consecutive positions).This is done in the test at <i>line 21</i>.</p>
+
+<h4>Example #3: same as example #2 but we draw only when a mouse button is pressed</h4>
 <!------------------------------------------------------------------------------------------------>
-<!----------- 207.  (xxx) ------------>
+<!--------- 207. same as example #1 but draw only when mouse button is depressed (285) ----------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image207.png?raw=true"
-   width="45%"
-   alt="." />   <br/></p>
-<p>We just added mouseup and  mousedown listeners, extract from the
-source code:</p>
+<img class="displayed"
+  src="./images/image207.png?raw=true"
+  alt="Same as example #1 but draw only when a mouse button is depressed."
+  style="width:45%;" />
+
+<p>We just added mouseup and mousedown listeners, extract from the source code:</p>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  function handleMouseMove(evt) {
@@ -16595,28 +16564,27 @@ source code:</p>
 might not be easily guessed:</p>
 
 <ul>
-<li><p>Changing the width or height property of a canvas in JavaScript
-erases its content and resets its context,</p></li>
-<li><p>Using percentages (%) in the CSS width and height properties of a
-canvas does not change its number of pixels/resolution[.] Instead, it
-scales the existing pixels without erasing the content, giving a blurry
-effect when a canvas becomes larger, for example.</p></li>
+  <li><p>Changing the width or height property of a canvas in JavaScript erases its content and resets its context,</p></li>
+  <li><p>Using percentages (%) in the CSS width and height properties of a canvas does not change its number of pixels/resolution[.] Instead, it scales the existing pixels without erasing the content, giving a blurry effect when a canvas becomes larger, for example.</p></li>
 </ul>
-<p>Before looking at how best to handle canvas resizing, let’s see some
-examples below:</p>
+
+<p>Before looking at how best to handle canvas resizing, let’s see some examples below:</p>
+
 <h4>Examples</h4>
+
 <h4>Example #1: changing the size of a canvas on the fly erases its content!</h4>
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------- 208. example 1 resize and erase (285) ----------------------------->
+<!---------------------------- 208. example 1 resize and erase (286) ----------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image208.png?raw=true"
-  width="45%"
+<img class="displayed"
+  src="./images/image208.png?raw=true"
+  style="width:45%;"
   alt="Example #1 Changing the size of a canvas on the fly will erase its content. " />
-  <br/></p>
-<h4>Code:</h4>
+
+<h4>JavaScript code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  &lt;script&gt;
@@ -16634,66 +16602,66 @@ examples below:</p>
 
 </details>
 
-<h4>
-Example #2 : resize a canvas using CSS width and height properties with
-percentages
-</h4>
+<h4>Example #2 : resize a canvas using CSS width and height properties with percentages</h4>
+
 <p>This time we are using a similar example as above, but we removed the
 button for resizing it, and we set the size of the canvas to 100x100
 pixels. Instead of drawing inside, we draw two lines that join the
 diagonals.</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------- 209.  (286) ------------>
+<!------------- 209. draw two lines that join diagonals on 100 x 100 px canvas (287) ------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image209.png?raw=true"
-  width="65%"
-  alt="." />   <br/></p>
+<img class="displayed"
+  src="./images/image209.png?raw=true"
+  alt="Draw two diagonal lines on 100 x 100 pixel canvas."
+  style="width:65%;" />
+
 <p>Then, we added this CSS rule:</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------- 210. (286) ------------>
+<!-------------------- 210. resize canvas with pixels, not percentages (287) --------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image210.png?raw=true"
-   width="45%"
-   alt="." />   <br/></p>
-<p>
-It’s the same example as before, just adding this CSS code:
-</p>
-<pre><code>1.  &lt;style&gt;
+<img class="displayed"
+  src="./images/image210.png?raw=true"
+  alt="Resize canvas using pixels, 100 by 100."
+  style="width:45%;" />
+
+<h4>It’s the same example as before, just adding this CSS code:</h4>
+
+<pre><code>
+1.  &lt;style&gt;
 2.      #myCanvas {
 3.         border: 1px solid black;
 4.         width:100%
 5.      }
-6.  &lt;/style&gt;</code></pre>
+6.  &lt;/style&gt;
+</code></pre>
+
 <p>And the result shows clearly that the resolution is still the same,
 only the pixels are bigger!</p>
 <p><b><i>BEST PRACTICE: never use CSS percentages on a canvas width or
 height!</i></b></p>
-<h4>
-Example #3: a responsive canvas using a resize listener +  a parent
-element
-</h4>
+
+<h4>Example #3: a responsive canvas using a resize listener +  a parent element</h4>
+
 <p>This is the trick to create a really responsive canvas:</p>
+
 <ol type="1">
-<li><p>Embed it in a &lt;div&gt; or in any parent container,</p></li>
-<li><p>Use CSS with percentages on the width and the height CSS
-properties <b>of the parent,</b></p></li>
-<li><p>Use a resize listener on the  parent of the canvas,</p></li>
-<li><p>Change the width and height properties of the canvas [from the
-JavaScript resize listener function] (content will be erased),</p></li>
-<li><p>Redraw the content, scaled accordingly to the size of the
-parent.</p></li>
+  <li><p>Embed it in a &lt;div&gt; or in any parent container,</p></li>
+  <li><p>Use CSS with percentages on the width and the height CSS properties <b>of the parent,</b></p></li>
+  <li><p>Use a resize listener on the  parent of the canvas,</p></li>
+  <li><p>Change the width and height properties of the canvas [from the JavaScript resize listener function] (content will be erased),</p></li>
+  <li><p>Redraw the content, scaled accordingly to the size of the parent.</p></li>
 </ol>
+
 <p>Yep, this is not a straightforward process…</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------- 211. div and canvas inside; div has css width=100% and height=50% (287) ------------>
+<!---------- 211. div with canvas inside; div has css width=100% and height=50% (288) ------------>
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image211.jpeg?raw=true"
-  width="65%"
-  alt="DIV and canvas inside: div has css width=100% and height=50%" />
-  <br/></p>
+<img class="displayed"
+  src="./images/image211.jpeg?raw=true"
+  alt="DIV and canvas inside: div has css width=100% and height=50%."
+  style="width:65%;" />
+
 <h4>HTML code:</h4>
 
 <pre><code>
@@ -16703,8 +16671,9 @@ parent.</p></li>
 </code></pre>
 
 <h4>CSS code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;style&gt;
@@ -16724,8 +16693,9 @@ parent.</p></li>
 </details>
 
 <h4>JavaScript code for the resize event listener:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 function init() {
@@ -16750,19 +16720,22 @@ function resizeCanvasAccordingToParentSize() {
 
 <h4>See the complete example that corresponds to the above code:</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 212.  (288) -------------------------------------->
+<!-------------- 212. try resizing the window, or change percentages in css (289) ---------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p>&lt;img src=“./images/image212.png?raw=true” width=“55%” alt=“.”  
-<br/></p>
+<img class="displayed"
+  src="./images/image212.png?raw=true"
+  alt="Example #4: the same example with the monster."
+  style="width:55%;" />
+
 <h4>Example #4: the same example with the monster</h4>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 213. (288) -------------------------------------->
+<!------------------------ 213. same example but with the monster (289) -------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image213.png?raw=true"
-  width="55%"
-  alt="." />   <br/></p>
+<img class="displayed"
+  src="./images/image213.png?raw=true"
+  alt="Same as last example with monster."
+  style="width:55%;" />
+
 <p>When the canvas is resized, its width became smaller than the
 monster’s size. We scale down the monster (using ctx.scale!)</p>
 <p>The code is very similar to the previous example, we just
@@ -16770,8 +16743,9 @@ replaced drawDiagonals() by drawMonster(…), and we added a test in
 the drawMonster(…) function for scaling the monster if it’s bigger than
 the canvas width (look at <i>lines 10-16</i>), this is a common
 trick:</p>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 1.  function drawMonster(x, y, angle, headColor, eyeColor) {
@@ -16803,60 +16777,33 @@ trick:</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch4-3-5">4.3.5 Advanced Canvas</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>The canvas API is a “big beast”, and we have presented all the
-essential techniques for drawing and animating. However, we could not
-fit everything in this course. Exotic features that are rarely used by
-developers, or advanced techniques that require more than 20 lines of
-JavaScript, have been put aside for <a
-href="https://www.edx.org/course/html5-apps-and-games" target="_blank" rel="noopener noreferrer">the W3Cx HTML5
-Apps and Games course</a>.</p>
+<p>The canvas API is a “big beast”, and we have presented all the essential techniques for drawing and animating. However, we could not fit everything in this course. Exotic features that are rarely used by developers, or advanced techniques that require more than 20 lines of
+JavaScript, have been put aside for <a href="https://www.edx.org/course/html5-apps-and-games" target="_blank" rel="noopener noreferrer">the W3Cx HTML5 Apps and Games course</a>.</p>
 <p>In that course, you will learn:</p>
+
 <ul>
-<li>
-Techniques useful for writing HTML5 games: time-based animation,
-advanced user interactions (detecting multiple keys plus mouse plus
-gamepad plus touch events all at the same time in a single version of
-the code), sprite based animation, collision detection, particle
-animation;
-</li>
-<br>
-<li>
-Pixel-level operations: special FX like blue-screen videos and augmented
-reality;
-</li>
-<br>
-<li>
-And many other things, such as: masking/clipping, stacking canvases in
-layers, composition modes, saving and restoring canvas contents, saving
-canvas content to disk client-side, drawing a canvas into a canvas, etc.
-</li>
-<br>
+  <li>Techniques useful for writing HTML5 games: time-based animation, advanced user interactions (detecting multiple keys plus mouse plus gamepad plus touch events all at the same time in a  single version of the code), sprite based animation, collision detection, particle animation;</li>
+  <br>
+  <li>Pixel-level operations: special FX like blue-screen videos and augmented reality;</li>
+  <br>
+  <li>And many other things, such as: masking/clipping, stacking canvases in layers, composition modes, saving and restoring canvas contents, saving canvas content to disk client-side, drawing a canvas into a canvas, etc.</li>
+  <br>
 </ul>
+
 <h4>Examples studied in the HTML5 Apps and Games course</h4>
+
 <ul>
-<li>
-Small game framework / object oriented JavaScript / advanced event
-handling / collision detection / time based animation -
-see <a href="https://jsbin.com/jifutoj/1/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">example
-online</a>.
-</li>
-<li>
-Sprite based animation: like
-this <a href="https://jsbin.com/libakum/1/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">one</a> (this
-is ugly code to demonstrate the principle - in the course we develop a
-clean, sprite animation framework). Use the arrow keys after clicking in
-the canvas. It’s better to try in standalone mode (click on the small
-black arrow in the top right of the JSBin window).
-</li>
-<br>
+  <li>Small game framework / object oriented JavaScript / advanced event handling / collision detection / time based animation - see <a href="https://jsbin.com/jifutoj/1/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">example online</a>.</li>
+  <li>Sprite based animation: like this <a href="https://jsbin.com/libakum/1/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">one</a> (this is ugly code to demonstrate the principle - in the course we develop a clean, sprite animation framework). Use the arrow keys after clicking in the canvas. It’s better to try in standalone mode (click on the small black arrow in the top right of the JSBin window).</li>
+  <br>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 214. sprite sheet (289) ------------------------------------->
+<!---------------------------------- 214. sprite sheet (290) ------------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image214.png?raw=true"
-  width="35%"
-  alt="Sprite sheet." />   <br/></p>
+<img class="displayed"
+  src="./images/image214.png?raw=true"
+  alt="Sprite sheet."
+  style="width:35%;" />
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-1-1">5.1.1 Video Intro - Module 5</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -16892,41 +16839,29 @@ specifics of mobile web applications, where the GUI of a date chooser
 cannot be the same as a 400x400 pixel wide calendar on a desktop.
 Contextual virtual keyboards provided the way forward on smartphones and
 tablets thanks to Apple, Google and others.</p>
-HTML5 took all this into account and thus provides:
+
+<h4>HTML5 took all this into account and thus provides:</h4>
+
 <ul>
-<li>
-A set of input fields that include a validation API and visual feedback,
-contextualized keyboards, etc. Of course the look and feel depends on
-the web browser’s implementations, but the HTML5 forms specification
-introduced 13 new &lt;input type=…/&gt; fields:  email, tel, color, url,
-date, datetime, datetime-local, month, week, time, range,
-number and search.
-</li>
-<br>
-<li>
-Built-in validation system: JavaScript API for custom validation, CSS
-pseudo classes that are useful for changing an input field style
-depending on the validity of the input.
-</li>
-<br>
-<li>
-Other goodies, such as the option to set an input field out of
-a &lt;form&gt;, new elements such as &lt;datalist&gt; for
-autocompletion, &lt;output&gt; for feedback, etc.
-</li>
-<br>
+  <li>A set of input fields that include a validation API and visual feedback, contextualized keyboards, etc. Of course the look and feel depends on the web browser’s implementations, but  the HTML5 forms specification introduced 13 new &lt;input type=…/&gt; fields:  email, tel, color, url, date, datetime, datetime-local, month, week, time, range, number and search.</li>
+  <br>
+  <li>Built-in validation system: JavaScript API for custom validation, CSS pseudo classes that are useful for changing an input field style depending on the validity of the input.</li>
+  <br>
+  <li>Other goodies, such as the option to set an input field out of a &lt;form&gt;, new elements such as &lt;datalist&gt; for autocompletion, &lt;output&gt; for feedback, etc.</li>
+  <br>
 </ul>
+
 <p>Examples of contextual keyboards are shown above; they differ
 depending on the type of  &lt;input&gt; fields in the &lt;form&gt;.  In
 the examples, we can see: email, URL, and phone number. Look at the
 different keyboard layouts. The last picture is a date picker from an
 IOS phone.</p>
+
 <h4>External resources:</h4>
+
 <ul>
-<li><p>From the
-specification: <a href="https://html.spec.whatwg.org/multipage/forms.html" target="_blank" rel="noopener noreferrer">Forms</a></p></li>
-<li><p>From MDN’s Web
-Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank" rel="noopener noreferrer">&lt;form&gt;</a></p></li>
+  <li><p>From the specification: <a href="https://html.spec.whatwg.org/multipage/forms.html" target="_blank" rel="noopener noreferrer">Forms</a></p></li>
+  <li><p>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank" rel="noopener noreferrer">&lt;form&gt;</a></p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-2-2">5.2.2 Example</h3>
@@ -16938,65 +16873,86 @@ forms.</p>
 <p>This example was created by a learner (by Mels Le N.) from a previous
 version of this course. It uses the geolocation API presented in Module
 6 for auto-filling the address input fields.</p>
-<p>Feel free to look at the source code in the &lt;a
-href=“https://jsbin.com/sivula/edit”?online example</a>:</p>
+<p>Feel free to look at the source code in the &lt;a href=“https://jsbin.com/sivula/edit”?online example</a>:</p>
 <!------------------------------------------------------------------------------------------------>
-<!----------------------------- 215. auto-fill address input (291) ------------------------------->
+<!----------------------------- 215. auto-fill address input (292) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image215.jpeg?raw=true"
-   width="45%"
-   alt="Geo-location API is used to auto-fill address input." />  
-<br/></p>
+<img class="displayed"
+  src="./images/image215.jpeg?raw=true"
+  alt="Geo-location API is used to auto-fill address input."
+  style="width:45%;" />
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-2-3">5.2.3 Input Elements and Attributes</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Live coding video 1: using input elements as widgets to control a Web
-application
-</h4>
+<h4>Live coding video 1: using input elements as widgets to control a Web application</h4>
+
 <p>&lt;here&gt;</p>
+
 <h4>Live coding video 2: creating GUI elements dynamically</h4>
+
 <p>&lt;and here&gt;</p>
 <p>Input elements, in particular the elements introduced by HTML5, can
 be used as widgets to control the behavior of a Web application. In this
 situation, they do not need to be inside a &lt;form&gt; element. We just
 bind event listeners to them and we use them as client-side widgets.</p>
+
+<!------------------------------------------------------------------------------------------------>
+<!---------------------- 215b. gui: speed, color and size of rectangle (293) --------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image215b.png?raw=true"
+  alt="GUI: to resize, change color and speed."
+  style="width:45%;" />
+
 <h4>Examples</h4>
+
 <p>GUI: Graphical User Interface</p>
-<h4>
-Example #1: choose the color, line width and speed of an animation
-</h4>
+
+<h4>Example #1: choose the color, line width and speed of an animation</h4>
+
 <ul>
-<li><p><a href="https://jsbin.com/ciwefo/1/edit?html,css,output" target="_blank" rel="noopener noreferrer">Bouncing
-rectangle without GUI</a></p></li>
-<li><p><a href="https://jsbin.com/newojij/1/edit?html,css,output" target="_blank" rel="noopener noreferrer">Bouncing
-rectangle with GUI</a> (see screenshot at the top right of this
-page)</p></li>
+  <li><p><a href="https://jsbin.com/ciwefo/1/edit?html,css,output" target="_blank" rel="noopener noreferrer">Bouncing rectangle without GUI</a></p></li>
+  <li><p><a href="https://jsbin.com/newojij/1/edit?html,css,output" target="_blank" rel="noopener noreferrer">Bouncing rectangle with GUI</a> (see screenshot at the top right of this page)</p></li>
 </ul>
-<h4>
-Example #2: data visualization control
-</h4>
+
+<h4>Example #2: data visualization control</h4>
+
 <ul>
-<li><p><a href="https://jsbin.com/UxuCOPa/3/edit?html,js,output" target="_blank" rel="noopener noreferrer">Simple
-chart without a GUI</a></p></li>
-<li><p><a href="https://jsbin.com/gesive/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">Simple
-chart with a GUI</a> (see screenshot on the right)</p></li>
-<li><p><a href="https://jsbin.com/ralonem/1/edit?html,js,output" target="_blank" rel="noopener noreferrer">Final
-version with different types of charts and a GUI</a> (see screenshot
-below)</p></li>
+  <li><p><a href="https://jsbin.com/UxuCOPa/3/edit?html,js,output" target="_blank" rel="noopener noreferrer">Simple chart without a GUI</a></p></li>
+  <li><p><a href="https://jsbin.com/gesive/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">Simple chart with a GUI</a> (see screenshot on the right)</p></li>
+  <li><p><a href="https://jsbin.com/ralonem/1/edit?html,js,output" target="_blank" rel="noopener noreferrer">Final version with different types of charts and a GUI</a> (see screenshot below)</p></li>
 </ul>
+
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 215c. simple chart without gui (293) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image215c.png?raw=true"
+  alt="Simple chart without GUI."
+  style="width:45%;" />
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------- 215d. simple chart with gui (294) ------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image215d.png?raw=true"
+  alt="Simple chart with GUI."
+  style="width:45%;" />
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-2-4">5.2.4 Best Practices</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Live coding video 3: HTML5 forms - best practices
-</h4>
+<h4>Live coding video 3: HTML5 forms - best practices</h4>
+
 <p>&lt;here&gt;</p>
+<!------------------------------------------------------------------------------------------------>
+<!------------------ 216a. example #1 html5 forms: personal information (294) -------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image216a.png?raw=true"
+  alt="HTML5 forms and best practices."
+  style="width:45%;" />
+
 <p>The example used in the video is
-available <a href="https://jsbin.com/jagodi/edit?html,css,output" target="_blank" rel="noopener noreferrer">online
-at JSBin</a>. A screenshot of the resulted form is shown on the
-right.</p>
+available <a href="https://jsbin.com/jagodi/edit?html,css,output" target="_blank" rel="noopener noreferrer">online at JSBin</a>. A screenshot of the resulted form is shown on the right.</p>
 <p>Forms are a way to get user input which is sent to a remote server.
 This section of the course focuses on the HTML5 additions to forms, and
 as such will only cover the client-side part.</p>
@@ -17026,12 +16982,12 @@ and illustrated with the screenshot below. It is adapted
 from <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form" target="_blank" rel="noopener noreferrer">this
 very good MDN’s article “How to structure a web form”</a>.</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------- 216. form layout example (294) --------------------------------->
+<!------------------------------- 216. form layout example (295) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image216.jpeg?raw=true"
-   width="35%"
-   alt="Payment form layout example." />   <br/></p>
+<img class="displayed"
+  src="./images/image216.jpeg?raw=true"
+  alt="Payment form layout example."
+  style="width:35%;" />
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-3-1">5.3.1 Accessible Forms</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -17042,19 +16998,17 @@ commenting, and purchasing.</p>
 developers should make a concerted effort to mark up Web based forms.
 The following two guidelines are to give you a good start to make your
 forms accessible:</p>
+
 <ol type="1">
-<li><p>For every form field, ensure that a descriptive label is provided
-and use the &lt;label&gt; element to identify each form
-control.</p></li>
-<li><p>For larger or complex forms, use
-the &lt;fieldset&gt; and &lt;legend&gt; elements to respectively group
-and associate related form controls.</p></li>
+  <li><p>For every form field, ensure that a descriptive label is provided and use the &lt;label&gt; element to identify each form control.</p></li>
+  <li><p>For larger or complex forms, use the &lt;fieldset&gt; and &lt;legend&gt; elements to respectively group and associate related form controls.</p></li>
 </ol>
+
 <p>Examples for each of these two basic guidelines are given in the
 following pages.</p>
-<h4>
-Further reading
-</h4>
+
+<h4>Further reading</h4>
+
 <p>The WAI Web site hosts
 a <a href="https://www.w3.org/WAI/tutorials/forms/" target="_blank" rel="noopener noreferrer">Forms
 tutorial</a> where to find all guidelines to follow in order to make
@@ -17067,75 +17021,61 @@ and custom controls.</p>
 <p>Forms can be visually and cognitively complex and difficult to use.
 Accessible forms are easier to use for everyone, including people with
 disabilities.</p>
+
 <ul>
-<li><p>People with cognitive disabilities can better understand the form
-and how to complete it, as making forms accessible improves the layout
-structure, instructions, and feedback.</p></li>
-<li><p>People using speech input can use the labels via voice commands
-to activate controls and move the focus to the fields that they need to
-complete.</p></li>
-<li><p>People with limited dexterity benefit from large clickable areas
-that include the labels, especially for smaller controls, such as radio
-buttons and checkboxes.</p></li>
-<li><p>People using screen readers can identify and understand form
-controls more easily because they are associated with labels, field
-sets, and other structural elements.</p></li>
+  <li><p>People with cognitive disabilities can better understand the form and how to complete it, as making forms accessible improves the layout structure, instructions, and feedback.</p></li>
+  <li><p>People using speech input can use the labels via voice commands to activate controls and move the focus to the fields that they need to complete.</p></li>
+  <li><p>People with limited dexterity benefit from large clickable areas that include the labels, especially for smaller controls, such as radio buttons and checkboxes.</p></li>
+  <li><p>People using screen readers can identify and understand form controls more easily because they are associated with labels, field sets, and other structural elements.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-3-3">5.3.3 Labeling Controls</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-Labels need to describe the purpose of the form control
-</h4>
-<p>Form fields and other form controls usually have visible labels, such
-as “E-mail Address:” as the label for a text field (see figure
-below).</p>
+<h4>Labels need to describe the purpose of the form control</h4>
+
+<p>Form fields and other form controls usually have visible labels, such as “E-mail Address:” as the label for a text field (see figure below).</p>
 <!------------------------------------------------------------------------------------------------>
-<!------------------------------ 217. e-mail form label text (xxx) ------------------------------->
+<!------------------------------ 217. e-mail form label text (296) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center">
-<p><img src="./images/image217.png?raw=true"
-   width="25%"
-   alt="E-mail form label text." />   <br/></p>
+<img class="displayed"
+  src="./images/image217.png?raw=true"
+  alt="Email form label text."
+  style="width:25%;" />
+
 <p>When these labels are marked up correctly, people can interact with
 them using only the keyboard, using voice input, and using screen
 readers. Also, the label itself becomes clickable, which enables a
 person who has difficulty clicking on small radio buttons or checkboxes
 to click anywhere on the label text.</p>
-<h4>
-Associating labels explicitly
-</h4>
+
+<h4>Associating labels explicitly</h4>
+
 <p>Whenever possible, use the label element to explicitly associate text
 with form elements. The for attribute of the label must exactly match
 the id of the form control. </p>
-<h4>
-Example #1
-</h4>
-<p>Click on the label, not on the input field to see the effect.</p>
-<!---
-Top of Form
 
-First name:![](./images/image218.wmf)
---->
-<h4>
-Source code:
-</h4>
-<p>
-Bottom of Form
-</p>
-<pre><code>1.  &lt;label for=&quot;first_name&quot;&gt;Your First Name&lt;/label&gt;
+<h4>Example #1</h4>
+
+<p>Click on the label, not on the input field to see the effect.</p>
+
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------- 218. first name on form (297) --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image218.png?raw=true"
+  alt="First name label text."
+  style="width:25%;" />
+
+<h4>Source code:</h4>
+
+<pre><code>
+1.  &lt;label for=&quot;first_name&quot;&gt;Your First Name&lt;/label&gt;
 2.  &lt;input id=&quot;first_name&quot; type=&quot;text&quot; name=&quot;fname&quot;/&gt;</code></pre>
-<h4>
-Example #2
-</h4>
-<p>
-Note that you can also include the &lt;input&gt; element inside
-the &lt;label&gt;…&lt;label&gt; element, and also add a &lt;span
-lang=“en”&gt; for example, to indicate the language used in the label.
-Sometimes, <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#The_%3Clabel%3E_element" target="_blank" rel="noopener noreferrer">nesting
-labels and inputs can also make CSS styling easier and produce better
-results with screen readers</a>.
-</p>
+
+<h4>Example #2</h4>
+
+<p>Note that you can also include the &lt;input&gt; element inside the &lt;label&gt;…&lt;label&gt; element, and also add a &lt;span lang=“en”&gt; for example, to indicate the language used in the label. Sometimes, <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#The_%3Clabel%3E_element" target="_blank" rel="noopener noreferrer">nesting labels and inputs can also make CSS styling easier and produce better results with screen readers</a>.</p>
+
 <h4>Source code (with &lt;input&gt; inside the &lt;label&gt;):</h4>
 
 <pre><code>
@@ -17145,15 +17085,18 @@ results with screen readers</a>.
 </code></pre>
 
 <h4>Example #3</h4>
+
 <p>Click on the label “Subscribe to newsletter” to see what this does.</p>
-<!--
-First name:![](./images/image218.wmf)
-Subscribe to newsletter![](./images/image219.wmf)
--->
+
+<!------------------------------------------------------------------------------------------------>
+<!---------------------- 219. first name with subscription check box (297) ----------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image219.png?raw=true"
+  alt="First name with subscription check box."
+  style="width:25%;" />
+
 <h4>Source code:</h4>
-<!--
-Bottom of Form
--->
 
 <pre><code>
 1. &lt;label for=&quot;firstname&quot;&gt;First name:&lt;/label&gt;
@@ -17164,6 +17107,7 @@ Bottom of Form
 </code></pre>
 
 <h4>Labeling buttons</h4>
+
 <p>The label of a &lt;button&gt; element is set inside the element and
 can include markup. This allows advanced accessibility hints to be
 included, such as marking up language change. Example: &lt;button&gt;Mon
@@ -17172,6 +17116,7 @@ with a label in French.</p>
 <p>When using the &lt;input&gt; element to create buttons, the label is
 set in the value attribute of the element. Example: &lt;input
 type=“submit” value=“Please submit”&gt;, renders a text button.</p>
+
 <h4>Source code for the “Submit” and “Cancel” buttons example:</h4>
 
 <pre><code>
@@ -17182,15 +17127,26 @@ type=“submit” value=“Please submit”&gt;, renders a text button.</p>
 </code></pre>
 
 <p>These give the same results:</p>
+
+<!------------------------------------------------------------------------------------------------>
+<!----------------------------- 220. submit and cancel buttons (298) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image220.png?raw=true"
+  alt="Example submit and cancel buttons."
+  style="width:25%;" />
+
 <p><i>Lines 1 and 2</i> render as: <b>Submit Cancel</b></p>
-<p>… while <i>lines 3 and 4</i> render as: <!-- submit
-![](./images/image220.wmf)
---></p>
-<h4>Labeling text areas</h4>
-<!-- rectangle box
-Enter your address:
-![](./images/image221.wmf)
--->
+<p>… while <i>lines 3 and 4</i> render as:</p>
+
+<!------------------------------------------------------------------------------------------------>
+<!--------------------------------- 221. label for address (298) --------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image220.png?raw=true"
+  alt="Example submit and cancel buttons."
+  style="width:25%;" />
+
 <h4>Source code:</h4>
 
 <pre><code>
@@ -17214,18 +17170,21 @@ text.</p>
 <p>In the example below, there are three radio buttons that allow the
 user to choose an output format. Radio button groups should always be
 grouped using &lt;fieldset&gt;.</p>
+
 <p>Output format:</p>
-<!---
-![](./images/image222.wmf)Text file
 
-![](./images/image222.wmf)CSV file
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 222. label for radio button sample (299) -------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image222.png?raw=true"
+  alt="Example label for button select."
+  style="width:25%;" />
 
-![](./images/image222.wmf)HTML file
---->
-<p>Bottom of Form</p>
 <h4>Source code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;fieldset&gt;
@@ -17245,20 +17204,22 @@ grouped using &lt;fieldset&gt;.</p>
 </details>
 
 <h4>Example #2: checkboxes</h4>
+
 <p>In the example below, there are three checkboxes that are all part of
 an opt-in function for receiving different types of information.</p>
-<p>Top of Form</p>
-<p>I want to receive 
-<!---
-![](./images/image219.wmf)The weekly newsletter
-![](./images/image219.wmf)Offers from the company
-![](./images/image219.wmf)Offers from associated companies
---->
-</p>
-<p>Bottom of Form</p>
+<p>I want to receive</p>
+<!------------------------------------------------------------------------------------------------>
+<!---------------------------- 223. label for check box sample (299) ----------------------------->
+<!------------------------------------------------------------------------------------------------>
+<img class="displayed"
+  src="./images/image223.png?raw=true"
+  alt="Example label for check box select."
+  style="width:25%;" />
+
 <h4>Source code:</h4>
+
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;fieldset&gt;
