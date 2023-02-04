@@ -3706,7 +3706,7 @@ way you can display the date/time/duration in a human-readable form.</p>
 <h4>Some use cases:</h4>
 
 <ul>
-  <li>Display search results with search strings highlighted in the results.</li>.
+  <li>Display search results with search strings highlighted in the results.</li>
   <li>Highlight important parts of a text, such as "quoting parts", etc.</li>
   <li>Replace &lt;strong&gt; and &lt;em&gt; with &lt;mark&gt; when suitable.</li>
 </ul>
@@ -4519,15 +4519,12 @@ course enrich the page with microdata. They also had to follow the
 best practices concerning the new structural elements, headings,
 etc.</p>
 <p>Click on these pages and look at the source code…</p>
-<h4>
-Example #1
-</h4>
-<p>Visit
-the <a href="https://jsbin.com/cuzipa/edit?html,css,output" target="_blank" rel="noopener noreferrer">example #1
-online</a>.</p>
-<h4>
-Structure:
-</h4>
+
+<h4>Example #1</h4>
+
+<p>Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output" target="_blank" rel="noopener noreferrer">example #1 online</a>.</p>
+
+<h4>Structure:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 65. microdata example #1 (80) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4546,9 +4543,8 @@ Structure:
   style="width:50%;" />
 
 <h4>Example #2:</h4>
-<p>View
-the <a href="https://jsbin.com/karemi/1/edit?html,output" target="_blank" rel="noopener noreferrer">example #2
-online</a>.</p>
+
+<p>View the <a href="https://jsbin.com/karemi/1/edit?html,output" target="_blank" rel="noopener noreferrer">example #2 online</a>.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 67. example #2 page - shows microdata (81) --------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4562,15 +4558,13 @@ online</a>.</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-2-1">2.2.1 The &lt;video&gt; Element</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>
-Until 2012, it was only possible to integrate an audio or video player
+<p>Until 2012, it was only possible to integrate an audio or video player
 using the proprietary Flash technology, marketed by the company
 Macromedia (later acquired by Adobe). The &lt;video&gt; element of HTML5
 is one of the three “Flash killers” (the others being &lt;audio&gt; for
 the sound and &lt;canvas&gt; for drawing and animation). <i>(Note that
-Adobe <a href="https://www.adobe.com/products/flashplayer/end-of-life.html" target="_blank" rel="noopener noreferrer">no
-longer supports Flash Player</a> since December 31, 2020)</i>
-</p>
+Adobe <a href="https://www.adobe.com/products/flashplayer/end-of-life.html" target="_blank" rel="noopener noreferrer">no longer supports Flash Player</a> since December 31, 2020)</i></p>
+
 <h4>Check the HTML code of the following CodePen:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 68. codepen snapshot: simple html5 video player (82) ---------------------->
@@ -4581,38 +4575,22 @@ longer supports Flash Player</a> since December 31, 2020)</i>
   style="width:65%;" />
 
 <h4>Please note that:</h4>
+
 <ul>
-<li>
-The controls attribute indicates that a control panel with
-play/stop/volume/progress widgets should be displayed;
-</li>
-<li>
-Usually the browser  will use the first format it recognizes  (in this
-case, the browser checks whether mp4 is supported, and if not, it will
-check for the ogg format, and so on). Some browsers may use a different
-heuristic and choose a “preferred” format;
-</li>
-<li>
-The &lt;video&gt; element is a DOM member, so  CSS styling can be
-applied, as well as manipulation using the DOM API.
-</li>
+  <li>The controls attribute indicates that a control panel with play/stop/volume/progress widgets should be displayed;</li>
+  <li>Usually the browser  will use the first format it recognizes  (in this case, the browser checks whether mp4 is supported, and if not, it will check for the ogg format, and so on). Some browsers may use a different heuristic and choose a “preferred” format;</li>
+  <li>The &lt;video&gt; element is a DOM member, so  CSS styling can be applied, as well as manipulation using the DOM API.</li>
 </ul>
-<p>
-You will learn more about the different attributes of
-the &lt;video&gt; element later on in the course.
-</p>
-<h4>
-Current browser support for the &lt;video&gt; element
-</h4>
-<p>
-The &lt;video&gt; element is supported by all major browsers. See
-the <a href="https://caniuse.com/video" target="_blank" rel="noopener noreferrer">support table from CanIUse.</a>
-</p>
-<h4>
-Restriction: you cannot embed a YouTube or DailyMotion video using
-the &lt;video&gt; element
-</h4>
-<p>
+
+<p>You will learn more about the different attributes of the &lt;video&gt; element later on in the course.</p>
+
+<h4>Current browser support for the &lt;video&gt; element</h4>
+
+<p>The &lt;video&gt; element is supported by all major browsers. See
+the <a href="https://caniuse.com/video" target="_blank" rel="noopener noreferrer">support table from CanIUse.</a></p>
+
+<h4>Restriction: you cannot embed a YouTube or DailyMotion video using the &lt;video&gt; element</h4>
+
 <p>Help! &lt;video src=“my youtube video URL”&gt;&lt;/video&gt; does not
 work! </p>
 <p><b>BEWARE</b>: you cannot directly embed videos from most of the
@@ -4626,22 +4604,18 @@ prevent you from using them with the &lt;video&gt;element. Instead, you
 often need to embed an &lt;iframe&gt; that will render the HTML5 videos
 in your Web site, and of course, the advertising that comes along with
 them.</p>
-Usually you have an “embed” button close to the videos that prompts you
-with some HTML code that you can copy and paste for embedding.
-</p>
-<h4>
-An example using YouTube:
-</h4>
-<h4>
-Here is the HTML code you need to copy and paste in order to embed a
-video:
-</h4>
-<pre><code>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/WMFXg-kni0U&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
-<p>
-The YouTube video embedded in this page by the above code: it’s HTML5
-but it’s not a &lt;video&gt; element directly inserted in the HTML of
-this page, it’s an &lt;iframe&gt;.
-</p>
+<p>Usually you have an “embed” button close to the videos that prompts you
+with some HTML code that you can copy and paste for embedding.</p>
+
+<h4>An example using YouTube:</h4>
+
+<h4>Here is the HTML code you need to copy and paste in order to embed avideo:</h4>
+
+<pre><code>
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/WMFXg-kni0U&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</code></pre>
+
+<p>The YouTube video embedded in this page by the above code: it’s HTML5 but it’s not a &lt;video&gt; element directly inserted in the HTML of this page, it’s an &lt;iframe&gt;.</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 69. web of things (wot) explainer video snapshot (83) --------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4659,67 +4633,35 @@ only supported the ogg/oggm format. It did not support mp3/mp4 encoding
 for audio/video, while Internet Explorer only supported H.264 encoding.
 Since 2012, things have changed with browser updates and today most
 popular formats are supported.</p>
-<i>The recommended CODEC, which works in all popular browsers:
-H264/mp4.</i>
-</p>
+<p><i>The recommended CODEC, which works in all popular browsers:
+H264/mp4.</i></p>
+
 <h4>External resources</h4>
+
 <ul>
-<li>
-From W3C’s specification:
-<a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element" target="_blank" rel="noopener noreferrer">The
-video element</a>
-</li>
-<li>
-MDN’s Web
-Docs: <a href="(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank" rel="noopener noreferrer">&lt;video&amp;g;:
-The Video Embed element</a>)
-</li>
-<li>
-From Apple’s developer
-site: <a href="https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/ControllingMediaWithJavaScript/ControllingMediaWithJavaScript.html" target="_blank" rel="noopener noreferrer">Safari
-HTML5 audio and video guide</a>.
-</li>
-<li>
-Article from HTML5 Rocks:
-<a href="https://www.html5rocks.com/en/tutorials/video/basics/" target="_blank" rel="noopener noreferrer">Media</a>
-</li>
+  <li>From W3C’s specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element" target="_blank" rel="noopener noreferrer">The video element</a></li>
+  <li>MDN’s Web Docs: <a href="(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank" rel="noopener noreferrer">&lt;video&amp;g;: The Video Embed element</a>)</li>
+  <li>From Apple’s developer site: <a href="https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/ControllingMediaWithJavaScript/ControllingMediaWithJavaScript.html" target="_blank" rel="noopener noreferrer">Safari HTML5 audio and video guide</a>.</li>
+  <li>Article from HTML5 Rocks: <a href="https://www.html5rocks.com/en/tutorials/video/basics/" target="_blank" rel="noopener noreferrer">Media</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-2-2">2.2.2 The &lt;audio&gt; Element</h3>
 <!------------------------------------------------------------------------------------------------>
-<h4>
-HTML5 audio is composed of several layers:
-</h4>
-<ul>
-<li>
-The &lt;audio&gt; element is useful for embedding an audio player into a
-Web page. It is dedicated for <b>streamed audio</b>. It is very similar
-to the &lt;video&gt; element, both in its use and in its API.
-</li>
-<li>
-The Web Audio API is designed for musical applications and for adding
-sound effects to games. This pure JavaScript API supports manipulation
-of sound samples (loops, etc.), music synthesis and sound generation
-(oscillators, etc.). It also comes with a set of predefined sound
-processing modules (reverb, delay, etc.)
-</li>
-</ul>
-<!----- https://github.com/bbauska/W3Cx-4of5-HTML5.2x --------->
+<h4>HTML5 audio is composed of several layers:</h4>
 
-<p>This course will focus on the &lt;audio&gt; element. We present
-the <a href="https://www.w3.org/TR/webaudio/" target="_blank" rel="noopener noreferrer">Web Audio
-API</a> and other advanced HTML5 features in
-the <a href="https://www.edx.org/course/html5-apps-and-games" target="_blank" rel="noopener noreferrer">W3Cx HTML5
-Apps and Games course</a>.</p>
+<ul>
+  <li>The &lt;audio&gt; element is useful for embedding an audio player into a Web page. It is dedicated for <b>streamed audio</b>. It is very similar to the &lt;video&gt; element, both in its use and in its API.</li>
+  <li>The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.)</li>
+</ul>
+
+<p>This course will focus on the &lt;audio&gt; element. We present the <a href="https://www.w3.org/TR/webaudio/" target="_blank" rel="noopener noreferrer">Web Audio
+API</a> and other advanced HTML5 features in the <a href="https://www.edx.org/course/html5-apps-and-games" target="_blank" rel="noopener noreferrer">W3Cx HTML5 Apps and Games course</a>.</p>
 <p>The attributes, event set and JavaScript API of the &lt;audio&gt; element are just a “reduced” version of the ones from the &lt;video&gt; element, and here we will only address the differences and peculiarities.</p>
 
 <h4>The &lt;audio&gt; element, basic usage</h4>
 
-<p>Here is a simple example (also
-available <a href="https://jsbin.com/yogojis/edit?html,output" target="_blank" rel="noopener noreferrer">online
-example from JSBin</a>):</p>
-<p>Press play to stream the neigh of a horse: (does not work in git)
-</p>
+<p>Here is a simple example (also available <a href="https://jsbin.com/yogojis/edit?html,output" target="_blank" rel="noopener noreferrer">online example from JSBin</a>):</p>
+<p>Press play to stream the neigh of a horse: (does not work in git)</p>
 
 <h4>As you can see, the code is very similar to the basic &lt;video&gt; element usage.</h4>
 
@@ -4764,16 +4706,8 @@ it recognizes.</p>
 <h4>External resources</h4>
 
 <ul>
-<li>
-From W3C’s
-specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element" target="_blank" rel="noopener noreferrer">The
-audio element</a>
-</li>
-<li>
-From MDN’s Web
-Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank" rel="noopener noreferrer">&lt;audio&gt;:
-The Embed Audio element</a>
-</li>
+  <li>From W3C’s specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element" target="_blank" rel="noopener noreferrer">The audio element</a></li>
+  <li>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank" rel="noopener noreferrer">&lt;audio&gt;: The Embed Audio element</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-2-3">2.2.3 Attributes of &lt;video&gt; and &lt;audio&gt;</h3>
@@ -4787,37 +4721,16 @@ The Embed Audio element</a>
   <li>width and height: size of the video. If unspecified, the default width and height of the video will be used. If you specify one dimension but not the other, the browser will adjust the size of the unspecified dimension to preserve the aspect ratio of the video.</li>
   <li>controls: If this boolean attribute is present, the browser displays its own controls for video playback and volume</li>
   <li>poster: This attribute allows you to specify an image that the browser will use while video is being downloaded, or until the user starts playing the video. If this attribute is not specified, the first frame of the video will be used instead.</li>
-<li>
-autoplay: This attribute asks the browser to start playing the video
-automatically as soon as the page is ready.
-</li>
-<li>
-preload:  The preload attribute is used when autoplay is not used. It
-tells the browser what to do before a user plays a video. This attribute
-is a hint - the browser may ignore it. While autoplay and preload are
-mutually exclusive, if both are present, then preload is
-ignored. Possible values:
-</li>
-<ul>
-<li>
-none: do nothing. This saves bandwidth, no video will be downloaded in
-background before a user or a call to the play() method starts playing
-the video.
-</li>
-<li>
-metadata: download metadata, such as length of the video or its format.
-</li>
-<li>
-auto (default value): the browser will decide. This will depend on the
-implementation, and on the kind of connection: wifi, 3G, data roaming
-etc.
-</li>
+  <li>autoplay: This attribute asks the browser to start playing the video automatically as soon as the page is ready.</li>
+  <li>preload:  The preload attribute is used when autoplay is not used. It tells the browser what to do before a user plays a video. This attribute is a hint - the browser may ignore it. While autoplay and preload are mutually exclusive, if both are present, then preload is ignored. Possible values:</li>
+    <ul>
+      <li>none: do nothing. This saves bandwidth, no video will be downloaded in background before a user or a call to the play() method starts playing the video.</li>
+      <li>metadata: download metadata, such as length of the video or its format.</li>
+      <li>auto (default value): the browser will decide. This will depend on the implementation, and on the kind of connection: wifi, 3G, data roaming etc.</li>
+    </ul>
+  <li>loop: Another boolean attribute that indicates to play the video in loop mode (and it starts again when finished).</li>
 </ul>
-<li>
-loop: Another boolean attribute that indicates to play the video in loop
-mode (and it starts again when finished).
-</li>
-</ul>
+
 <h4>Be careful if you target mobile applications or if you have multiple videos on the same page</h4>
 
 <p>The autoplay attribute is not recommended if your Web site targets
@@ -6103,7 +6016,7 @@ from another origin -another server-, this attribute is necessary).
 
 <p>This format is rather simple, but we still recommend reading <a href="https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API" target="_blank" rel="noopener noreferrer">this excellent article from Mozilla Developer Network</a> that explains in detail all the different options.</p>
 <p>Each “element” in this file has a starting and ending time, plus a value (the text that will be displayed), followed by a blank line (blanklines are separators between elements).</p>
-<b>Each element is called “a cue”</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, inparticular the getCueById() method of TextTrack objects.</p>
+<p><b>Each element is called “a cue”</b>, and may optionally have an ID that will be useful when using the track element JavaScript API, inparticular the getCueById() method of TextTrack objects.</p>
 
 <h4>Example of a .vtt file with numeric IDs:</h4>
 
@@ -23187,7 +23100,7 @@ good understanding of the material.</p>
 </ul>
 
 <p>. . .The end.<br>
-<br>last updated 02-02-23 7:02pm </p>
+<br>last updated 02-03-23 7:02pm </p>
 </body>
 </html>
 <!--
