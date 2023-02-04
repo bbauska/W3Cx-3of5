@@ -132,10 +132,10 @@
 </ol>
 
 <ol type="1">
-  <li><a href="#chb">Course Introduction and Practical Information</a></li>
-  <li><a class="em3" href=“#chb-1”>b.1 Course syllabus</a></li>
-  <li><a class="em3" href=“#chb-2”>b.2 Getting around the course</a></li>
-  <li><a class="em3" href=“#chb-3”>b.3 Course tools</a></li>
+  <li><a href="#chb-1">b.1 Course Introduction and Practical Information</a></li>
+  <li><a class="em3" href=“#chb-2”>b.2 Course syllabus</a></li>
+  <li><a class="em3" href=“#chb-3”>b.3 Getting around the course</a></li>
+  <li><a class="em3" href=“#chb-4”>b.4 Course tools</a></li>
 </ol>
 
 <h2 id="module-1-html5-basics"><a href="#ch1"><strong>Module 1: HTML5 Basics</strong></a></h2>
@@ -551,7 +551,7 @@ started to provide feedback on new proposals or bring brand-new
 proposals for consideration.</p>
 <p>Happy Web building!</p>
 
-<h3 id="cha-1">What is W3C?</h3>
+<h3>What is W3C?</h3>
 
 <p>As steward of global Web standards, W3C’s mission is to safeguard the
 openness, accessibility, and freedom of the World Wide Web from a
@@ -4696,12 +4696,8 @@ API</a> and other advanced HTML5 features in the <a href="https://www.edx.org
 <p>In this example, just as for the &lt;video&gt; element, we used
 the controls attribute in order to render the play/stop, time, volume
 and progress widgets.</p>
-Notice the other similarities: between
-the &lt;audio&gt;…&lt;audio&gt; tags, we added a text message that is
-displayed if the Web browser doesn’t support the &lt;audio&gt; element,
-and we used several &lt;source&gt;…&lt;/source&gt; elements that link to different
-audio formats for the same file. The browser will use the first format
-it recognizes.</p>
+<p>Notice the other similarities: between the &lt;audio&gt;…&lt;audio&gt; tags, we added a text message that is displayed if the Web browser doesn’t support the &lt;audio&gt; element,
+and we used several &lt;source&gt;…&lt;/source&gt; elements that link to different audio formats for the same file. The browser will use the first format it recognizes.</p>
 
 <h4>External resources</h4>
 
@@ -4722,12 +4718,13 @@ it recognizes.</p>
   <li>controls: If this boolean attribute is present, the browser displays its own controls for video playback and volume</li>
   <li>poster: This attribute allows you to specify an image that the browser will use while video is being downloaded, or until the user starts playing the video. If this attribute is not specified, the first frame of the video will be used instead.</li>
   <li>autoplay: This attribute asks the browser to start playing the video automatically as soon as the page is ready.</li>
-  <li>preload:  The preload attribute is used when autoplay is not used. It tells the browser what to do before a user plays a video. This attribute is a hint - the browser may ignore it. While autoplay and preload are mutually exclusive, if both are present, then preload is ignored. Possible values:</li>
+  <li>preload:  The preload attribute is used when autoplay is not used. It tells the browser what to do before a user plays a video. This attribute is a hint - the browser may ignore it. While autoplay and preload are mutually exclusive, if both are present, then preload is ignored. Possible values:
     <ul>
       <li>none: do nothing. This saves bandwidth, no video will be downloaded in background before a user or a call to the play() method starts playing the video.</li>
       <li>metadata: download metadata, such as length of the video or its format.</li>
       <li>auto (default value): the browser will decide. This will depend on the implementation, and on the kind of connection: wifi, 3G, data roaming etc.</li>
     </ul>
+	</li>
   <li>loop: Another boolean attribute that indicates to play the video in loop mode (and it starts again when finished).</li>
 </ul>
 
@@ -5251,10 +5248,7 @@ video element as a JavaScript object that has:</p>
 &lt;video&gt; elements is called an “API” (Application Programming
 Interface). For example, we will speak here of the “media API” to talk
 about the associated API.</p>
-Like any HTML element, the &lt;video&gt; element can be
-manipulated/created using the DOM JavaScript API. Here is an example of
-programmatically creating a &lt;video&gt; element:
-</p>
+<p>Like any HTML element, the &lt;video&gt; element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a &lt;video&gt; element:</p>
 
 <pre><code>
 1.  var video = document.createElement(&#39;video&#39;);
@@ -5608,7 +5602,7 @@ continues with the next video.</p>
 JavaScript and more complex CSS manipulation. They might be a little
 hard to understand if you are a JavaScript beginner, but don’t be afraid
 to try and test them, look at the code, etc.</p>
-Some examples are given “as is”, such as the custom video player that
+<p>Some examples are given “as is”, such as the custom video player that
 uses SVG (at the end of the page); if you are interested, you may view
 the code.</p>
 
@@ -5623,8 +5617,7 @@ the code.</p>
   style="width:85%"
   alt="2d transformations: scale, translate & rotate." />
 
-<p>Don’t forget to click the JavaScript and CSS tabs of the CodePen in order to display the JavaScript code that creates the buttons on the right of the video, and the CSS that processes the different clicks
-and applies CSS3 transforms.</p>
+<p>Don’t forget to click the JavaScript and CSS tabs of the CodePen in order to display the JavaScript code that creates the buttons on the right of the video, and the CSS that processes the different clicks and applies CSS3 transforms.</p>
 
 <h4>This example shows a lot:</h4>
 
@@ -5906,9 +5899,10 @@ from another origin -another server-, this attribute is necessary).
 </details>
 
 <p>Note the use of some new attributes in the &lt;track&gt; element:</p>
+
 <ul>
   <li>label: the label value will be displayed in the GUI control that is included in the default HTML5 video player.</li>
-  <li>srclang:  gives the language for the text track data. The value must be a valid <a href="https://tools.ietf.org/html/bcp47" target="_blank" rel="noopener noreferrer">BCP 47 language tag</a>. This attribute must be present if <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind" target="_blank" rel="noopener noreferrer">the element’s kind attribute</a> is in the <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles" target="_blank" rel="noopener noreferrer" subtitles state</a>.</li>
+  <li>srclang:  gives the language for the text track data. The value must be a valid <a href="https://tools.ietf.org/html/bcp47" target="_blank" rel="noopener noreferrer">BCP 47 language tag</a>. This attribute must be present if <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind" target="_blank" rel="noopener noreferrer">the element’s kind attribute</a> is in the <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles" target="_blank" rel="noopener noreferrer"> subtitles state</a>.</li>
 </ul>
 
 <h4>External resources</h4>
@@ -21855,11 +21849,7 @@ animations.</p>
 memory (no streaming), and has been designed for music application and
 games. This example shows how a local audio file can be read and played
 directly in the browser, without the need for a server!</p>
-<p><a href="https://jsbin.com/xepexuy/1/edit?html,output" target="_blank" rel="noopener noreferrer">Example on
-JSBin</a> (does not work on IE, as it does not support the WebAudio
-API). We could not embed it here on the edX platform as it prevents code
-that uses Ajax to run in its pages.
-</p>
+<p><a href="https://jsbin.com/xepexuy/1/edit?html,output" target="_blank" rel="noopener noreferrer">Example on JSBin</a> (does not work on IE, as it does not support the WebAudio API). We could not embed it here on the edX platform as it prevents code that uses Ajax to run in its pages.</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 316. webaudio api - does not work with microsoft shit (382) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -21889,31 +21879,12 @@ that uses Ajax to run in its pages.
 </details>
 
 <h4>Explanations:</h4>
+
 <ul>
-<li>
-<i>Line 2:</i> we get a pointer to the file selector, the
-variable fileInput.
-</li>
-<li>
-<i>Line 4:</i> we define a change listener. In this example, we use an
-anonymous function directly included in the listener definition (the
-listener is the function(e) {…}).
-</li>
-<li>
-<i>Line 11:</i> when a user chooses a file, the listener will be
-executed. Line 11 will start the reading of the file content, as a
-binary file (this is what readAsArrayBuffer means: read as binary!).
-Once the file will be entirely read, the onload callback will be
-asynchronously called by the browser.
-</li>
-<li>
-<i>Line 7:</i> is the onload callback, executed when the file content is
-loaded in memory. We pass the file content to the initSound function
-(see JSBin example for complete source code) that uses WebAudio to
-decode it (it may be a compressed file - an mp3 for example - and
-WebAudio works only with uncompressed audio formats in memory), and to
-play it.
-</li>
+  <li><i>Line 2:</i> we get a pointer to the file selector, the variable fileInput.</li>
+  <li><i>Line 4:</i> we define a change listener. In this example, we use an anonymous function directly included in the listener definition (the listener is the function(e) {…}).</li>
+  <li><i>Line 11:</i> when a user chooses a file, the listener will be executed. Line 11 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.</li>
+  <li><i>Line 7:</i> is the onload callback, executed when the file content is loaded in memory. We pass the file content to the initSound function (see JSBin example for complete source code) that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio works only with uncompressed audio formats in memory), and to play it.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-3-8">6.3.8 Read file content as dataURL</h3>
@@ -21970,8 +21941,7 @@ modern browsers. It is becoming more commonly used on the Web,
 especially for mobile applications, as inlining images reduces the
 number of HTTP requests and makes the Web page load faster.</p>
 <p>You will find lots of Web sites and tools for generating dataURL from
-files, such as <a href="https://ezgif.com/image-to-datauri" target="_blank" rel="noopener noreferrer">Image to
-Data URI converter</a> (screenshot below):</p>
+files, such as <a href="https://ezgif.com/image-to-datauri" target="_blank" rel="noopener noreferrer">Image to Data URI converter</a> (screenshot below):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------ 319. Online service that converts uploaded images to data uris... ----------------->
 <!-------------- we see an image and its ascii encoded data uri version (384) -------------------->
@@ -22001,12 +21971,9 @@ just a dataURL and CSS:</p>
 
 <h4>Example #1: read images as data URL and display previews in the page</h4>
 
-<p>This first example is useful for forms that allow the user to select
-one or more pictures. Before sending the form, you might want to get a
-preview of the pictures in the HTML page.
+<p>This first example is useful for forms that allow the user to select one or more pictures. Before sending the form, you might want to get a preview of the pictures in the HTML page.
 The reader.readAsDataUrl method is used for that.</p>
-<p><a href="https://jsbin.com/laseye/edit?html,output" target="_blank" rel="noopener noreferrer">Example on
-JSBin</a> or try it below in your browser:</p>
+<p><a href="https://jsbin.com/laseye/edit?html,output" target="_blank" rel="noopener noreferrer">Example on JSBin</a> or try it below in your browser:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 332. preview of selected images (385) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
@@ -22062,26 +22029,13 @@ JSBin</a> or try it below in your browser:</p>
 <h4>Explanations:</h4>
 
 <ul>
-<li>
-<i>Line 30:</i> starts the reading of the file f. When f is read,
-the onload callback will be called.
-</li>
-<li>
-<i>Lines 24-30:</i> we build, using the DOM API, a <span
-class="thumb">…</span> and inside we add
-an <img src=the data url> element with its src attribute equal to the
-url of the image that has been read (the image content as dataURL is
-in e.target.result). Finally, at <i>line 27</i>, we insert the span in
-the document before the current children of the 
-<output id="list">
- element (declared at <i>line 5</i>).
-</li>
+  <li><i>Line 30:</i> starts the reading of the file f. When f is read, the onload callback will be called.</li>
+  <li><i>Lines 24-30:</i> we build, using the DOM API, a &lt;span class="thumb"&gt;…&lt;/span&gt; and inside we add an &lt;img src=the data url&gt; element with its src attribute equal to the url of the image that has been read (the image content as dataURL is in e.target.result). Finally, at <i>line 27</i>, we insert the span in the document before the current children of the &lt;output id="list"&gt;  element (declared at <i>line 5</i>).</li>
 </ul>
 
 <h4>Example #2: read a single local image file and use it with drawImage ina canvas</h4>
 
-<p><a href="https://jsbin.com/miciqu/edit?html,output" target="_blank" rel="noopener noreferrer">Try it on
-JSBin</a></p>
+<p><a href="https://jsbin.com/miciqu/edit?html,output" target="_blank" rel="noopener noreferrer">Try it on JSBin</a></p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 322. example 2 kitty cat (386) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -22150,8 +22104,7 @@ application reads local image files, draws them into a canvas element
 and proposes different filters. This example is given “as is” for those
 of you who would like to go further. Just click on the link (or on the
 image below) and look at the source code.</p>
-<p><a href="https://gianablantin.github.io/CanvasFilters/" target="_blank" rel="noopener noreferrer">Try this
-example online on gitHub</a>.</p>
+<p><a href="https://gianablantin.github.io/CanvasFilters/" target="_blank" rel="noopener noreferrer">Try this example online on gitHub</a>.</p>
 
 <h4>Introduction</h4>
 
@@ -22308,23 +22261,19 @@ object has many properties:</p>
 these properties is null, it means that it is not available (often the
 case of the altitudeAccuracy)</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-4-3">
-6.4.3 Geolocation error codes
-</h3>
+<h3 id="ch6-4-3">6.4.3 Geolocation error codes</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>
 <p>In the last example, we used the navigator.geolocation.
 getCurrentPosition(showPosition) with only one callback function (in the
 case of success), but it is also possible to pass a second parameter
 that is another callback function called in the case of error.</p>
-A slightly different version of the previous
+<p>A slightly different version of the previous
 example <a href="https://jsbin.com/bafusik/edit?html,output" target="_blank" rel="noopener noreferrer">shows how
 to properly check against the different possible errors</a>. Try it,
 then turn your WiFi off or unplug your Ethernet cable (or turn off
 GPS and 3G/4G on a mobile phone). You should see an error message Error
 during geolocation: Location could not be obtained though the available
-means”:
-</p>
+means”:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 326. geolocation error (390) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -23100,7 +23049,7 @@ good understanding of the material.</p>
 </ul>
 
 <p>. . .The end.<br>
-<br>last updated 02-03-23 7:02pm </p>
+<br>last updated 02-03-23 4:23pm </p>
 </body>
 </html>
 <!--
