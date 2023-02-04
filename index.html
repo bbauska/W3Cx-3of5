@@ -6243,13 +6243,13 @@ HTML):</p>
    
 <h4>Using CSS classes for styling</h4>
 <p>It is possible to style using CSS classes as part of a cue value,
-using the <c> element. You can specify the CSS class that should be
+using the &lt;c&gt; element. You can specify the CSS class that should be
 applied by adding “.” followed by the name of your CSS class. Here is an
 example:</p>
 
 <pre><code>
-&lt;c.myclass&gt;This cue contains the class &quot;myclass&quot;.
-2.  Browsers that support ::cue CSS should make it red.&lt;/c&gt;
+1. &lt;c.myclass&gt;This cue contains the class &quot;myclass&quot;.
+2. Browsers that support ::cue CSS should make it red.&lt;/c&gt;
 </code></pre>
 
 <!------------------------------------------------------------------------------------------------>
@@ -6301,7 +6301,7 @@ screen: play a movie, choose subtitles, etc. Usually there is also a
 “chapters” menu that allows you to quickly access a part of the movie.
 With videos on the Web, one can also indicate the chapter breakdown,
 using WebVTT files and a &lt;track&gt; element/tag.</p>
-Adding chapters is very similar to adding subtitles/captions. Look
+<p>Adding chapters is very similar to adding subtitles/captions. Look
 at <i>line 5</i> in the code below, where we use an
 extra &lt;track&gt; element with a kind=“chapters” attribute.
 </p>
@@ -6375,6 +6375,7 @@ extra &lt;track&gt; element with a kind=“chapters” attribute.
   <li>Tools for creating subtitles/captions from scratch. Use these to generate a WebVTT file. You can embed the &lt;track&gt; element in your own videos, on your own Web pages, or upload the WebVTT file to YouTube.  We recommend <a href="https://amara.org/en/ target="_blank" rel="noopener noreferrer">amara</a>. It’s a free online tool that is very easy to use. There are also apps such as <a href="https://www.macupdate.com/app/mac/25826/subs-factory" target="_blank" rel="noopener noreferrer">Subs Factory</a> (Mac OS), <a href="https://jubler.org/" target="_blank" rel="noopener noreferrer">Jubler</a> or <a href="https://nikse.dk/SubtitleEdit" target="_blank" rel="noopener noreferrer">Subtitle Edit</a>) (Windows).</li>
   <li>Enhanced HTML5 video players that use the &lt;video&gt;, &lt;source&gt; and &lt;track&gt; elements under the hood. They also provide many extra features, including support for subtitle/caption formats other than WebVTT (by converting on the fly).</li>
 </ul>
+
 <p>We do not claim that these are the best tools, so feel free to share your discoveries in the discussion forum!</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-3-7">2.3.7 The &lt;track&gt; JavaScript API</h3>
@@ -6616,7 +6617,7 @@ We can also simplify the code by using a writing with async/await of JavaScript:
 <p><b>HTTPS is mandatory:</b> for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.</p>
 <p>Support of getUserMedia/stream is <a href="https://caniuse.com/stream" target="_blank" rel="noopener noreferrer">very good in all modern browsers</a>, including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-4-1">2.4.1 More On getUserMedia</h3>
+<h3 id="ch2-4-2">2.4.2 More On getUserMedia</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Let’s see some more examples of what we can do with the getUserMedia API: start/stop the Webcam, take a screenshot from the current video stream from the Webcam, and apply CSS effects in real time. Below, we give links to some cool examples available on the Web.</p>
 <h4>How to stop/release the Webcam</h4>
@@ -7015,25 +7016,15 @@ etc.).</p>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image110.jpeg?raw=true"
-  source="width:55%"
+  style="width:55%"
   alt="WebAudio Live Processing." />
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch2-4-4">2.4.4 Webcam Resolution</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>It is possible to set “hints” for the preferred cam/resolution during
-video capture. This is done by using a <a
-href="https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4" target="_blank" rel="noopener noreferrer">“constraint”
-object </a>that is passed as a parameter to the getUserMedia(…) method.
-It’s just the same object we passed in the basic
-example: navigator.getUserMedia({video:true}, success, error) except
-that this time this object is a little more complex by including new
-properties in addition to video:true or audio:true.</p>
-<p>For more information,
-this <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia" target="_blank" rel="noopener noreferrer">article
-on MDN about the getUserMedia API</a> gives great examples on how to set
-the camera resolution and/or to choose the front or back camera when
-using a mobile phone.</p>
+video capture. This is done by using a <a href="https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4" target="_blank" rel="noopener noreferrer">"constraint" object </a>that is passed as a parameter to the getUserMedia(…) method. It’s just the same object we passed in the basic example: navigator.getUserMedia({video:true}, success, error) except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.</p>
+<p>For more information, this <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia" target="_blank" rel="noopener noreferrer">article on MDN about the getUserMedia API</a> gives great examples on how to set the camera resolution and/or to choose the front or back camera when using a mobile phone.</p>
 
 <h4>Typical use:</h4>
 <!------------------------------------------------------------------------------------------------>
@@ -7597,7 +7588,7 @@ simply here to give you a head start. Remember that one great thing
 about these MOOCs courses is that everybody can help each other.
 Some students are very good in JavaScript and are usually very happy to
 help others when they encounter difficulties.</p>
-<p>You will learn a lot by looking at examples, tweaking them, cloning
+<p><b>You will learn a lot by looking at examples, tweaking them, cloning
 and modifying them, etc.</b> Many previous students who were real
 JavaScript beginners managed to do [all] the assignments (drawing and
 animating a monster with keyboard/mouse interaction)! And they did
@@ -7606,12 +7597,8 @@ this by just studying the provided examples.</p>
 <h4>External resources</h4>
 
 <ul>
-<li><p>The
-<a href="https://www.edx.org/course/javascript-introduction" target="_blank" rel="noopener noreferrer">JavaScript
-Introduction</a> course on W3Cx!</p></li>
-<li><p>Mozilla Developper
-Network <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" rel="noopener noreferrer">has
-a JavaScript guide</a></p></li>
+  <li><p>The <a href="https://www.edx.org/course/javascript-introduction" target="_blank" rel="noopener noreferrer">JavaScript Introduction</a> course on W3Cx!</p></li>
+  <li><p>Mozilla Developer Network <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" rel="noopener noreferrer">has a JavaScript guide</a></p></li>
 </ul>
 
 <h4>What do you need? How to debug? How to catch errors?</h4>
@@ -7633,90 +7620,75 @@ any JavaScript command.</p>
 at <a href="https://jsbin.com/visariz/1/edit?html,output" target="_blank" rel="noopener noreferrer">this example
 on JS Bin</a>:</p>
 
-<div data-align="center" width="100%">
+<div>
 <table>
 <colgroup>
-<col style="width: 1%" />
-<col style="width: 98%" />
+  <col style="width: 1%" />
+  <col style="width: 98%" />
 </colgroup>
 <thead>
-<tr class="header">
-<th>#</th>
-<th>html code</th>
-</tr>
+  <tr class="header">
+    <th>#</th>
+    <th>html code</th>
+  </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>1</td>
-<td>&lt;!DOCTYPE html&gt;</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>&lt;<a href="https://december.com/html/4/element/html.html" target="_blank" rel="noopener noreferrer"><b>html
-lang=“en”</b></a>&gt;</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>&lt;<a
-href="https://december.com/html/4/element/head.html" target="_blank" rel="noopener noreferrer"><b>head</b></a>&gt;</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>&lt;<a
-href="https://december.com/html/4/element/meta.html" target="_blank" rel="noopener noreferrer"><b>meta</b></a>
-charset=utf-8 /&gt;</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>&lt;<a
-href="https://december.com/html/4/element/title.html" target="_blank" rel="noopener noreferrer"><b>title</b></a>&gt;Web
-Audio API&lt;/<a
-href="https://december.com/html/4/element/title.html" target="_blank" rel="noopener noreferrer"><b>title<b></a>&gt;</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>&lt;<a
-href="https://december.com/html/4/element/script.html" target="_blank" rel="noopener noreferrer"><b>script</b></a>&gt;</td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td>   console.log(“Some JavaScript code has been executed”);</td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td>&lt;/<a
-href="https://december.com/html/4/element/script.html" target="_blank" rel="noopener noreferrer"><b>script</b></a>&gt;</td>
-</tr>
-<tr class="odd">
-<td>9</td>
-<td>&lt;/<a
-href="https://december.com/html/4/element/head.html" target="_blank" rel="noopener noreferrer"><b>head</b></a>&gt;</td>
-</tr>
-<tr class="even">
-<td>10</td>
-<td>&lt;<a
-href="https://december.com/html/4/element/body.html" target="_blank" rel="noopener noreferrer"><b>body</b></a>&gt;</td>
-</tr>
-<tr class="odd">
-<td>11</td>
-<td>&lt;<a
-href="https://december.com/html/4/element/h1.html" target="_blank" rel="noopener noreferrer"><b>h1</b></a>&gt;JavaScript
-debugging using the dev tool console&lt;/<a
-href="https://december.com/html/4/element/h1.html" target="_blank" rel="noopener noreferrer"><b>h1<b></a>&gt;</td>
-</tr>
-<tr class="even">
-<td>12</td>
-<td>&lt;/<a
-href="https://december.com/html/4/element/body.html" target="_blank" rel="noopener noreferrer"><b>body</b></a>&gt;</td>
-</tr>
-<tr class="odd">
-<td>13</td>
-<td>&lt;/<a
-href="https://december.com/html/4/element/html.html" target="_blank" rel="noopener noreferrer"><b>html</b></a>&gt;</td>
-</tr>
+  <tr class="odd">
+    <td>1</td>
+    <td>&lt;!DOCTYPE html&gt;</td>
+  </tr>
+  <tr class="even">
+    <td>2</td>
+    <td>&lt;<a href="https://december.com/html/4/element/html.html" target="_blank" rel="noopener noreferrer"><b>html lang=“en”</b></a>&gt;</td>
+  </tr>
+  <tr class="odd">
+    <td>3</td>
+    <td>&lt;<a href="https://december.com/html/4/element/head.html" target="_blank" rel="noopener noreferrer"><b>head</b></a>&gt;</td>
+  </tr>
+  <tr class="even">
+    <td>4</td>
+    <td>&lt;<a href="https://december.com/html/4/element/meta.html" target="_blank" rel="noopener noreferrer"><b>meta</b></a> charset=utf-8 /&gt;</td>
+  </tr>
+  <tr class="odd">
+    <td>5</td>
+    <td>&lt;<a href="https://december.com/html/4/element/title.html" target="_blank" rel="noopener noreferrer"><b>title</b></a>&gt;Web Audio API&lt;/<a href="https://december.com/html/4/element/title.html" target="_blank" rel="noopener noreferrer"><b>title<b></a>&gt;</td>
+  </tr>
+  <tr class="even">
+    <td>6</td>
+    <td>&lt;<a href="https://december.com/html/4/element/script.html" target="_blank" rel="noopener noreferrer"><b>script</b></a>&gt;</td>
+  </tr>
+  <tr class="odd">
+    <td>7</td>
+    <td>   console.log(“Some JavaScript code has been executed”);</td>
+  </tr>
+  <tr class="even">
+    <td>8</td>
+    <td>&lt;/<a href="https://december.com/html/4/element/script.html" target="_blank" rel="noopener noreferrer"><b>script</b></a>&gt;</td>
+  </tr>
+  <tr class="odd">
+    <td>9</td>
+    <td>&lt;/<a href="https://december.com/html/4/element/head.html" target="_blank" rel="noopener noreferrer"><b>head</b></a>&gt;</td>
+  </tr>
+  <tr class="even">
+    <td>10</td>
+    <td>&lt;<a href="https://december.com/html/4/element/body.html" target="_blank" rel="noopener noreferrer"><b>body</b></a>&gt;</td>
+  </tr>
+  <tr class="odd">
+    <td>11</td>
+    <td>&lt;<a href="https://december.com/html/4/element/h1.html" target="_blank" rel="noopener noreferrer"><b>h1</b></a>&gt;JavaScript debugging using the dev tool console&lt;/<a href="https://december.com/html/4/element/h1.html" target="_blank" rel="noopener noreferrer"><b>h1<b></a>&gt;</td>
+  </tr>
+  <tr class="even">
+    <td>12</td>
+    <td>&lt;/<a href="https://december.com/html/4/element/body.html" target="_blank" rel="noopener noreferrer"><b>body</b></a>&gt;</td>
+  </tr>
+  <tr class="odd">
+    <td>13</td>
+    <td>&lt;/<a href="https://december.com/html/4/element/html.html" target="_blank" rel="noopener noreferrer"><b>html</b></a>&gt;</td>
+  </tr>
 </tbody>
 </table>
 </div>
+
 <p>The simplest way to add JavaScript code in an HTML page, is by using
 the &lt;script&gt;…&lt;/script&gt; element.</p>
 <p><b>The code in this example is executed sequentially when the page is
@@ -7730,12 +7702,12 @@ document, then the H1 would have been built before the JavaScript code
 is executed.</p>
 <p>The only line of code we have is console.log(“Some JavaScript code
 has been executed”);</p>
-This means “display in the JavaScript console the message…”. If we open
+<p>This means “display in the JavaScript console the message…”. If we open
 the console tab provided by jsbin.com in a dedicated tab (that redirects
 all console.log() messages), and re-execute the page (just type a space
 at the end of a line, this will re-render the page and display the
 message in the console), we see the message in the console tab, as well
-as in the dev. tools console. This is illustrated by the image below:
+as in the dev. tools console. This is illustrated by the image below:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 116. javascript debugging console view (142) --------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -7794,13 +7766,7 @@ your browsers, since they differ from one another in the way they work
 
 <h4>About the asynchronous nature of JavaScript</h4>
 
-<p>Some of you may not be used to “asynchronous programming”,
-“callbacks” etc. We recommend to read <a
-href="https://en.wikipedia.org/wiki/Callback_%28computer_programming%29" target="_blank" rel="noopener noreferrer">this
-article on WikiPedia</a> and <a
-href="https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java" target="_blank" rel="noopener noreferrer">this
-thread on StackOverflow</a>.</p>
-<!------------------------------------------------------------------------------------------------>
+<p>Some of you may not be used to “asynchronous programming”, “callbacks” etc. We recommend to read <a href="https://en.wikipedia.org/wiki/Callback_%28computer_programming%29" target="_blank" rel="noopener noreferrer">this article on WikiPedia</a> and <a href="https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java" target="_blank" rel="noopener noreferrer">this thread on StackOverflow</a>.</p><!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-2-2">3.2.2 The &lt;canvas&gt; Element</h3>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 121. canvas element logo (144) --------------------------------->
@@ -7834,8 +7800,7 @@ drawing in transparent mode is also supported, as well as many advanced
 drawing modes and global filters (blur, etc.).</p>
 The canvas is also used to do animations at 60 frames per second (useful
 for games), to display videos with special effects, to display a webcam
-stream, and so on.
-</p>
+stream, and so on.</p>
 
 <h4>Examples</h4>
 
@@ -7856,10 +7821,8 @@ Chinko</a> is one popular free HTML5 games:</p>
 
 <h4>Example #2</h4>
 
-<p>Lots of data visualization tools and JavaScript libraries use the
-HTML5 canvas element for <a
-href="http://www.creativebloq.com/design-tools/data-visualization-712402" target="_blank" rel="noopener noreferrer">Data
-visualization</a>:</p>
+<p>Lots of data visualization tools and JavaScript libraries use the HTML5 canvas element for <a
+href="http://www.creativebloq.com/design-tools/data-visualization-712402" target="_blank" rel="noopener noreferrer">Data visualization</a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------- 123. html5 data visualization (146) ------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -7870,9 +7833,7 @@ visualization</a>:</p>
 
 <h4>Example #3</h4>
 
-<p>A version of the <a href="https://intersoft.itch.io/galaxian" target="_blank" rel="noopener noreferrer">arcade
-game Galaxian</a>, that runs at 60 frames per second in an HTML5 canvas
-element:</p>
+<p>A version of the <a href="https://intersoft.itch.io/galaxian" target="_blank" rel="noopener noreferrer">arcade game Galaxian</a>, that runs at 60 frames per second in an HTML5 canvas element:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------- 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (146) -------->
 <!------------------------------------------------------------------------------------------------>
@@ -7881,63 +7842,39 @@ element:</p>
   style="width:50%"
   alt="A version of the game Galaxian that runs at 60 frames/s in a canvas." />
 
-<p>Performance is  good and animation is generally very smooth, since
-most Web browsers (mobile and desktop) support hardware
-acceleration.</p>
-<p><b>Note</b>: 3D drawing using the WebGL API is also possible in
-a &lt;canvas&gt;, but will not be covered in this course. For the most
-curious among you, please have a look at the two popular libraries for
-doing 3D drawing/animation in a &lt;canvas&gt;: <a
-href="https://www.babylonjs.com/" target="_blank" rel="noopener noreferrer">BabylonJS</a> and <a
-href="https://threejs.org/" target="_blank" rel="noopener noreferrer">ThreeJS</a>.</p>
+<p>Performance is  good and animation is generally very smooth, since most Web browsers (mobile and desktop) support hardware acceleration.</p>
+<p><b>Note</b>: 3D drawing using the WebGL API is also possible in a &lt;canvas&gt;, but will not be covered in this course. For the most curious among you, please have a look at the two popular libraries for doing 3D drawing/animation in a &lt;canvas&gt;: <a href="https://www.babylonjs.com/" target="_blank" rel="noopener noreferrer">BabylonJS</a> and <a href="https://threejs.org/" target="_blank" rel="noopener noreferrer">ThreeJS</a>.</p>
 
 <h4>External resources</h4>
 
 <ul>
-<li><p>Comprehensive <a
-href="https://www.html5canvastutorials.com/" target="_blank" rel="noopener noreferrer">HTML5 canvas
-tutorials</a></p></li>
-<li><p>An <a
-href="https://joshondesign.com/p/books/canvasdeepdive/title.html" target="_blank" rel="noopener noreferrer">HTML
-Canvas Deep Dive</a></p></li>
-<li><p>MDN’s Web docs: <a
-href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas" target="_blank" rel="noopener noreferrer">&lt;canvas&gt;:
-The Graphics Canvas element</a></p></li>
-<li><p>The &lt;canvas&gt; element is well supported by browsers:</p>
-<ul>
-<li><p>CanIUse: <a href="https://caniuse.com/canvas" target="_blank" rel="noopener noreferrer">browser support
-table</a></p></li>
-<li><p>MDN’s <a
-href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#Browser_compatibility" target="_blank" rel="noopener noreferrer">compatibility
-table of &lt;canvas&gt;</a></p></li>
-</ul></li>
+  <li><p>Comprehensive <a href="https://www.html5canvastutorials.com/" target="_blank" rel="noopener noreferrer">HTML5 canvas tutorials</a></p></li>
+  <li><p>An <a href="https://joshondesign.com/p/books/canvasdeepdive/title.html" target="_blank" rel="noopener noreferrer">HTML Canvas Deep Dive</a></p></li>
+  <li><p>MDN’s Web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas" target="_blank" rel="noopener noreferrer">&lt;canvas&gt;: The Graphics Canvas element</a></p></li>
+  <li><p>The &lt;canvas&gt; element is well supported by browsers:</p>
+  <ul>
+  <li><p>CanIUse: <a href="https://caniuse.com/canvas" target="_blank" rel="noopener noreferrer">browser support table</a></p></li>
+  <li><p>MDN’s <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#Browser_compatibility" target="_blank" rel="noopener noreferrer">compatibility table of &lt;canvas&gt;</a></p></li>
+  </ul>
+  </li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-2-3">3.2.3 Canvas and Accessibility</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>The dynamic nature of the &lt;canvas&gt; element has made it
-difficult to use in applications that need to be accessible to people
-with disabilities. To be accessible, it must meet the following
+<p>The dynamic nature of the &lt;canvas&gt; element has made it difficult to use in applications that need to be accessible to people with disabilities. To be accessible, it must meet the following
 principles:</p>
 
 <ul>
-<li><p>Providing alternative content for what is drawn on
-the &lt;canvas&gt;,</p></li>
-<li><p>Exposing the location of shapes, paths, images drawn on
-the &lt;canvas&gt; to assistive technologies,</p></li>
-<li><p>Visually indicating whether or not a shape in the canvas had
-keyboard focus.</p></li>
+  <li><p>Providing alternative content for what is drawn on the &lt;canvas&gt;,</p></li>
+  <li><p>Exposing the location of shapes, paths, images drawn on the &lt;canvas&gt; to assistive technologies,</p></li>
+  <li><p>Visually indicating whether or not a shape in the canvas had keyboard focus.</p></li>
 </ul>
 
 <h4>Read more on this topic:</h4>
 
 <ul>
-<li><p>An article on <a
-href="https://www.creativebloq.com/web-design/canvas-element-accessibility-41514740" target="_blank" rel="noopener noreferrer">What
-the canvas element means for accessibility</a></p></li>
-<li><p>From the W3C wiki: <a
-href="https://www.w3.org/html/wg/wiki/AddedElementCanvas" target="_blank" rel="noopener noreferrer">Canvas Element
-Accessibility Issues</a></p></li>
+  <li><p>An article on <a href="https://www.creativebloq.com/web-design/canvas-element-accessibility-41514740" target="_blank" rel="noopener noreferrer">What the canvas element means for accessibility</a></p></li>
+  <li><p>From the W3C wiki: <a href="https://www.w3.org/html/wg/wiki/AddedElementCanvas" target="_blank" rel="noopener noreferrer">Canvas Element Accessibility Issues</a></p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-2-4">3.2.4 HTML Canvas Cheatsheet</h3>
@@ -7948,9 +7885,7 @@ Do not hesitate to keep your favorite one open in a separate browser
 ta</p>
 
 <ol type="1">
-<li>As a <a
-href="https://courses.edx.org/assets/courseware/v1/4b7360cab7f3bf439c26782ec47cf7a8/asset-v1:W3Cx+HTML5.1x+2T2020+type@asset+block/Infopgraphic-CanvasCheatSheet-Final2.pdf" target="_blank" rel="noopener noreferrer">PDF
-file</a>, this canvas cheatsheet:</li>
+  <li>As a <a href="https://courses.edx.org/assets/courseware/v1/4b7360cab7f3bf439c26782ec47cf7a8/asset-v1:W3Cx+HTML5.1x+2T2020+type@asset+block/Infopgraphic-CanvasCheatSheet-Final2.pdf" target="_blank" rel="noopener noreferrer">PDF file</a>, this canvas cheatsheet:</li>
 </ol>
 <!------------------------------------------------------------------------------------------------>
 <!-------------- 125. snapshot of an html canvas cheatsheet from skilled.com (147) --------------->
@@ -7974,10 +7909,7 @@ file</a>, this canvas cheatsheet:</li>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-2-5">3.2.5 Coordinate System</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>The coordinate system used for drawing in canvases is similar to the
-one used by many drawing APIs like Java2D: the (0 , 0) is in the top
-left corner while the X axis is going to the right and the Y axis to the
-bottom, as  shown in the following picture:</p>
+<p>The coordinate system used for drawing in canvases is similar to the one used by many drawing APIs like Java2D: the (0 , 0) is in the top left corner while the X axis is going to the right and the Y axis to the bottom, as  shown in the following picture:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 127. coordinate system (148) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -7987,8 +7919,8 @@ bottom, as  shown in the following picture:</p>
   alt="Coordinate system." />
 
 <ul>
-<li><p><b>X</b> axis is horizontal, directed to the right </p></li>
-<li><p><b>Y</b> axis is vertical, directed downwards</p></li>
+  <li><p><b>X</b> axis is horizontal, directed to the right </p></li>
+  <li><p><b>Y</b> axis is vertical, directed downwards</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-2-6">3.2.6 Drawing Rectangles in a Canvas</h3>
@@ -8016,13 +7948,8 @@ demonstrated in the above video:</p>
 &lt;/canvas&gt;
 </code></pre>
 
-<p>Place code similar to the above somewhere in an HTML page. This
-example defines an area of 300 by 225 pixels on which content can be
-rendered with JavaScript.</p>
-Normally you should see nothing as a result; by default canvases are
-“transparent”. <b>Make it visible using CSS!</b> For example, you can
-add a border to the canvas (or change the background color, or put an
-image in the background).</p>
+<p>Place code similar to the above somewhere in an HTML page. This example defines an area of 300 by 225 pixels on which content can be rendered with JavaScript.</p>
+<p>Normally you should see nothing as a result; by default canvases are “transparent”. <b>Make it visible using CSS!</b> For example, you can add a border to the canvas (or change the background color, or put an image in the background).</p>
 
 <h4>The three lines of CSS will create a border around the canvas with id=“myCanvas”, of 1 pixel width, in black:</h4>
 
@@ -8036,9 +7963,7 @@ image in the background).</p>
 
 <h4>2 - Select the &lt;canvas&gt; element for use from JavaScript</h4>
 
-<p>We can have more than one &lt;canvas&gt; in a single page, and
-canvases will be manipulated with JavaScript like other elements in the
-DOM.</p>
+<p>We can have more than one &lt;canvas&gt; in a single page, and canvases will be manipulated with JavaScript like other elements in the DOM.</p>
 
 <h4>For example with:</h4>
 
@@ -8054,13 +7979,9 @@ var canvas = document.querySelector(&quot;#myCanvas&quot;);
 
 <h4>3 - Get a “2D context” associated with the canvas</h4>
 
-<p>This step is useful for drawing and setting drawing properties
-(color, etc.)</p>
-Once we have a pointer to the &lt;canvas&gt;, we can get a
-“context”. This particular object is the core of the canvas JavaScript
-API. It provides methods for drawing, like fillRect(x, y, width,
-height) for example, that draws a filled rectangle, and properties for
-setting the color, shadows, gradients, etc.</p>
+<p>This step is useful for drawing and setting drawing properties (color, etc.)</p>
+<p>Once we have a pointer to the &lt;canvas&gt;, we can get a “context”. This particular object is the core of the canvas JavaScript API. It provides methods for drawing, like fillRect(x, y, width,
+height) for example, that draws a filled rectangle, and properties for setting the color, shadows, gradients, etc.</p>
 
 <h4>Let’s first get the context (do this only once):</h4>
 
@@ -8173,51 +8094,30 @@ ctx.fillRect(0,0,80,100);
 <h4>Explanations</h4>
 
 <p><b>Only access elements when the DOM is ready:</b></p>
-<p>Notice that we wrote an “init” function (<i>line 13</i>) that is
-called only when the page has been entirely loaded (we say “when the DOM
-is ready”). There are several ways to do this. In this example we used
-the &lt;body onload=“init();”&gt; method, at <i>line 29</i>.</p>
-<p>It’s good practice to have such a function, as we cannot access the
-elements of the page before the page has been loaded entirely and before
-the DOM is ready.</p>
-<p>Another way is to put the JavaScript code at the end of the document
-(between &lt;script&gt;…&lt;/script&gt;), right before
-the &lt;/body&gt;. In this case when the JavaScript code is executed,
+<p>Notice that we wrote an “init” function (<i>line 13</i>) that is called only when the page has been entirely loaded (we say “when the DOM is ready”). There are several ways to do this. In this example we used the &lt;body onload=“init();”&gt; method, at <i>line 29</i>.</p>
+<p>It’s good practice to have such a function, as we cannot access the elements of the page before the page has been loaded entirely and before the DOM is ready.</p>
+<p>Another way is to put the JavaScript code at the end of the document (between &lt;script&gt;…&lt;/script&gt;), right before the &lt;/body&gt;. In this case when the JavaScript code is executed,
 the DOM has already been constructed.</p>
 <p><b>Start by getting the canvas and the context:</b></p>
-<p>Before drawing or doing anything interesting with the canvas, we must
-first get its drawing “context”. The drawing context defines the drawing
-methods and properties we can use.</p>
-<p>Good practice is to get the canvas, the context, the width and height
-of the canvas and other global objects in this “init” function.</p>
-<p><b>After the context is set, we can draw, but first let’s set the
-current color for filled shapes:</b></p>
-<p>The example shows the use of the fillStyle property at <i>line
-24</i> - useful for specifying the way shapes will be filled. In our
-case this line indicates the color of all the filled shapes we are going
-to draw:</p>
+<p>Before drawing or doing anything interesting with the canvas, we must first get its drawing “context”. The drawing context defines the drawing methods and properties we can use.</p>
+<p>Good practice is to get the canvas, the context, the width and height of the canvas and other global objects in this “init” function.</p>
+<p><b>After the context is set, we can draw, but first let’s set the current color for filled shapes:</b></p>
+<p>The example shows the use of the fillStyle property at <i>line 24</i> - useful for specifying the way shapes will be filled. In our case this line indicates the color of all the filled shapes we are going to draw:</p>
 
 <pre><code>
 ctx.fillStyle=&#39;#FF0000&#39;;
 </code></pre>
 
-<p>The context property named fillStyle is used here. This property can
-be set with a color, a gradient, or a pattern. We will see examples of
-these later on in the course.</p>
-<p>The example says that all filled shapes will use the color “#FF0000”,
-which corresponds to a pure red color using the CSS RGB hexadecimal
-encoding (we could also have used ctx.fillStyle=‘red’);</p>
+<p>The context property named fillStyle is used here. This property can be set with a color, a gradient, or a pattern. We will see examples of these later on in the course.</p>
+<p>The example says that all filled shapes will use the color “#FF0000”, which corresponds to a pure red color using the CSS RGB hexadecimal encoding (we could also have used ctx.fillStyle=‘red’);</p>
 <p><b>Then we can draw:</b></p>
 
 <pre><code>
 ctx.fillRect(0,0,80,100);
 </code></pre>
 
-<p>This line is a call to the method fillRect(top left X coordinate, top
-left Y coordinate, width, height), which draws a filled rectangle.</p>
-<p>The way the rectangle will be filled depends on the current value of
-several properties of the context, in particular the value of
-the fillStyle property. In our case, the rectangle will be red.</p>
+<p>This line is a call to the method fillRect(top left X coordinate, top left Y coordinate, width, height), which draws a filled rectangle.</p>
+<p>The way the rectangle will be filled depends on the current value of several properties of the context, in particular the value of the fillStyle property. In our case, the rectangle will be red.</p>
 
 <h4>Summary of the different steps:</h4>
 
@@ -8306,7 +8206,7 @@ that you can understand the principles of canvas drawing.</p>
 “global variables” of the context.</p>
 
 <ul>
-<li>fillRect(x, y, width, height):  a call to this method draws a filled rectangle</li>
+  <li>fillRect(x, y, width, height):  a call to this method draws a filled rectangle</li>
 </ul>
 
 <p>The two first parameters are the coordinates of the top left corner
@@ -8358,21 +8258,21 @@ ctx.strokeRect(10,10,200,200);
 <!-- ./images/image129.jpeg){width="2.5833333333333335in" height="2.6041666666666665in"}  -->
 <p>Only the outline of the rectangle will be drawn, and it will be drawn
 using the value of the strokeStyle property.</p>
+
 <ul>
-<li><h4>
-clearRect(x, y, width, height): a call to this method erases the
-specified rectangle
-</h4></li>
+  <li><h4>clearRect(x, y, width, height): a call to this method erases the specified rectangle</h4></li>
 </ul>
+
 <p>Actually it draws it in a color called “transparent black” (!) that
 corresponds to the initial state of the rectangle as if no drawing had
 occurred.</p>
+
 <pre><code>ctx.fillStyle=&#39;pink&#39;;
 ctx.fillRect(10,10,200,200);
-ctx.clearRect(50, 50, 20, 20);</code></pre>
-<h4>
-The result is:
-</h4>
+ctx.clearRect(50, 50, 20, 20);
+</code></pre>
+
+<h4>The result is:</h4>
 <!------------------------------------------------------------------------------------------------>
 <!------ 130. the use of clearrrect draws a white rectangle against the pink background (xxx) ---->
 <!------------------------------------------------------------------------------------------------>
@@ -8511,38 +8411,13 @@ rectangles and before you draw the text (i.e just before <i>line 18</i>).</p>
 <h4>Summary of what we’ve learned</h4>
 
 <ul>
-<li>
-“stroke” means “wireframe” or “outlined”. It is a prefix for setting
-properties or calling methods that will affect wireframe shapes.
-</li>
-<li>
-“fill” is a prefix for filled shapes.
-</li>
-<li>
-To set the properties of wireframe shapes use ctx.<b>stroke</b>Style=
-…, for filled shapes use ctx.<b>fill</b>Style=… So far the values we
-have used are colors, expressed as strings. Example: ctx.strokeStyle  =
-‘blue’;
-</li>
-<li>
-To draw a wireframe rectangle use ctx.strokeRect(x, y, width, height),
-to draw a filled rectangle use ctx.fillRect(x, y, width, height);
-</li>
-<li>
-To set the line width of wireframe shapes, use
-the ctx.lineWidth property. Example ctx.lineWidth =
-10; ctx.strokeRect(0, 0, 100, 100);  will draw a 100x100 rectangle in
-wireframe mode, with an outline width of 10 pixels.
-</li>
-<li>
-To draw a text message use ctx.strokeText(message, x,
-y) or ctx.fillText(message, x, y), for wireframe text or filled text
-respectively.
-</li>
-<li>
-To set the character font use the ctx.font property; the value is a font
-in CSS syntax, for example:  ctx.font = ‘italic 20pt Calibri’;
-</li>
+  <li>“stroke” means “wireframe” or “outlined”. It is a prefix for setting properties or calling methods that will affect wireframe shapes.</li>
+  <li>“fill” is a prefix for filled shapes.</li>
+  <li>To set the properties of wireframe shapes use ctx.<b>stroke</b>Style= …, for filled shapes use ctx.<b>fill</b>Style=… So far the values we have used are colors, expressed as strings. Example: ctx.strokeStyle  = ‘blue’;</li>
+  <li>To draw a wireframe rectangle use ctx.strokeRect(x, y, width, height), to draw a filled rectangle use ctx.fillRect(x, y, width, height);</li>
+  <li>To set the line width of wireframe shapes, use the ctx.lineWidth property. Example ctx.lineWidth = 10; ctx.strokeRect(0, 0, 100, 100);  will draw a 100x100 rectangle in wireframe mode, with an outline width of 10 pixels.</li>
+  <li>To draw a text message use ctx.strokeText(message, x, y) or ctx.fillText(message, x, y), for wireframe text or filled text respectively.</li>
+  <li>To set the character font use the ctx.font property; the value is a font in CSS syntax, for example:  ctx.font = ‘italic 20pt Calibri’; </li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-2-8">3.2.8 Transformations</h3>
@@ -8551,31 +8426,19 @@ in CSS syntax, for example:  ctx.font = ‘italic 20pt Calibri’;
 will make things easier as soon as you have to:</p>
 
 <ul>
-<li>
-Draw complex shapes at given positions, with given orientations and
-sizes,
-</li>
-<li>
-Draw shapes relative to one another.
-</li>
+  <li>Draw complex shapes at given positions, with given orientations and sizes,</li>
+  <li>Draw shapes relative to one another.</li>
 </ul>
-<p>
-Let’s start with some simple examples before looking at how we use 2D
-transforms.
-</p>
+
+<p>Let’s start with some simple examples before looking at how we use 2D transforms.</p>
 
 <h4>Examples</h4>
 
 <ul>
-<li>
-Let’s draw three rectangles!
-</li>
+  <li>Let’s draw three rectangles!</li>
 </ul>
-<p>
-If we draw three rectangles of size 100x200 in a 400x400 canvas, one at
-(0, 0) and another at (150, 0), and a third at (300, 0), here is the
-result and the corresponding code:
-</p>
+
+<p>If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) and another at (150, 0), and a third at (300, 0), here is the result and the corresponding code:</p>
 
 <h4>HTML</h4>
 
@@ -9498,8 +9361,7 @@ Your browser does not support the canvas tag.
   style="width:40%"
   alt="Example of context save-restore: a monster drawn by a function that saves and restored the context, then a rectangle is drawn, with context as it was previously." />
 
-<p>Source code extract of this function: notice at <i>lines 3</i> and <i>26</i> how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines
-7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
+<p>Source code extract of this function: notice at <i>lines 3</i> and <i>26</i> how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines 7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
 
 <h4>function drawMonster</h4>
 
@@ -9540,19 +9402,10 @@ Your browser does not support the canvas tag.
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-3-1">3.3.1 Immediate Mode</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>In the previous sections, we learned how to draw filled or
-wireframe rectangles.</p>
-<p>As soon as the ctx.strokeRect(x, y, width, height) or
-the ctx.fillRect(x, y, width, height) method is called, a rectangle is
-indeed drawn <i>immediately</i> in the canvas. </p>
-<p>While drawing rectangles with strokeRect or fillRect, drawing text or
-drawing images, all these shapes will be drawn in <i>immediate
-mode</i>.</p>
-Another mode called “path mode” or “buffered mode” will be seen later in
-this course, which will be useful for drawing lines, curves, arcs, and
-also rectangles. Rectangles are the only shapes that have methods for
-drawing them <i>immediately</i> and also other methods for drawing them
-in “<i>path/buffered mode</i>”.</p>
+<p>In the previous sections, we learned how to draw filled or wireframe rectangles.</p>
+<p>As soon as the ctx.strokeRect(x, y, width, height) or the ctx.fillRect(x, y, width, height) method is called, a rectangle is indeed drawn <i>immediately</i> in the canvas.</p>
+<p>While drawing rectangles with strokeRect or fillRect, drawing text or drawing images, all these shapes will be drawn in <i>immediate mode</i>.</p>
+<p>Another mode called “path mode” or “buffered mode” will be seen later in this course, which will be useful for drawing lines, curves, arcs, and also rectangles. Rectangles are the only shapes that have methods for drawing them <i>immediately</i> and also other methods for drawing them in “<i>path/buffered mode</i>”.</p>
 
 <h4>Example: drawing rectangles in immediate mode using best practices</h4>
 
@@ -9629,8 +9482,7 @@ ctx.restore();
 
 <h4>Typical use</h4>
 
-<p>Look at the example below, and change the position where the text is drawn, change font attributes, etc.:
-</p>
+<p>Look at the example below, and change the position where the text is drawn, change font attributes, etc.:</p>
 
 <h4>HTML</h4>
 
@@ -10480,7 +10332,7 @@ ctx.restore();
 
 <h4>Explanations:</h4>
 <ul>
-  <li><i>Line 11</i>: the call to setInterval will make the browser execute the processFrame function each 25ms.</li>
+  <li><i>Line 11</i>: the call to setInterval will make the browser execute  the processFrame function each 25ms.</li>
   <li><i>Lines 15, 17 and 18</i>: in processFrame, drawImage(…) is called 3 times with the video element passed as first parameter.</li>
   <li><i>Line 43</i>: the video element declared at <i>line 43</i> has autoplay=true and loop=true, it starts playing the video as soon as possible and will loop it.</li>
   <li><i>Line 21</i>: We implemented a rotating video effect in the drawRotatingVideo. The use of context save/restore is primordial as this function changes the coordinate system at each call, translating and rotating it. Notice the extra translation at <i>line 31</i> that translates the coordinate system backwards with half of the size of the image that is drawn. We did this in order to make the image rotate around the center of the rectangle, instead of around the top left corner at (0, 0) by default. Try commenting out this line in the running example and you will see what we mean.</li>
@@ -12650,9 +12502,7 @@ possible values/syntaxes.</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch3-5-2">3.5.2 Canvas Context: Linear Gradients</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>It is possible to define the stroke or the fill style as a
-“gradient”, a set of interpolated colors, like in this example
-below:</p>
+<p>It is possible to define the stroke or the fill style as a “gradient”, a set of interpolated colors, like in this example below:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------- 167. define stroke fill style as 'gradient' (224) ------------------------>
 <!------------------------------------------------------------------------------------------------>
