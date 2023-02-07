@@ -24,7 +24,7 @@
 
 	div {
 	float: left; }
-	  
+  
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     span.underline{text-decoration: underline;}
@@ -95,6 +95,12 @@
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    h1 { font-size: 24px;}
+    h2 { font-size: 22px;}
+    h3 { font-size: 18px;}
+    h4 { font-size: 16px;} 
+    h5 { font-size: 12px;} 
+    h6 { font-size: 10px;}
   </style>
   <link rel="stylesheet" href="/css/style.css" />
   <!--[if lt IE 9]>
@@ -672,7 +678,6 @@ the world, and has many business benefits. Access to information, including on t
   style="width:25%;" />
 <br>
 
-<!-- <p align="center" width="100%"> -->
 <p style="text-align: center;"><a href="https://www.w3.org/Icons/w3c_home" target="_blank" rel="noopener noreferrer">W3C Home</a></p>
 
 <pre><code>
@@ -686,8 +691,8 @@ the world, and has many business benefits. Access to information, including on t
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image012.png?raw=true"
-  alt="HTML5 logo"
-  style="width:25%;" />
+  alt="HTML5 logo."
+  style="width:75px;" />
 <br>
 
 <pre><code>
@@ -709,7 +714,7 @@ the world, and has many business benefits. Access to information, including on t
 <img class="displayed"
   src="./images/image013.jpeg?raw=true"
   alt="Some of the new structural elements introduced by HTML5: section, article, etc."
-  style="width:65%;" />
+  style="width:45%;" />
 <br/>
 
 <h4>History</h4>
@@ -1465,17 +1470,8 @@ after the &lt;body&gt; element (called a “sectioning root”).</p>
 &lt;/section&gt;
 </code></pre>
 
-<p>The last example is bad for accessibility reasons. A screen reader
-that vocalizes the page will just say “Entering section”, while in the
-previous two good examples it would say “entering section with heading
-Blog Posts of April 2020”. You can also check if your headings and
-sectioning elements are ok by using a browser extension that displays
-the outline of the document (just search for “html5 outliner” in your
-browser’s extension search engine).</p>
-<p><b>UPDATE :</b> For the course screenshots, we used the Google Chrome
-HTML5 outliner extension that is no more available (it has been removed
-by its developer), but you can use any other equivalent extension such
-as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" target="_blank" rel="noopener noreferrer">table-of-contents-crx</a>for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" target="_blank" rel="noopener noreferrer">Outline sidebar for Firefox</a>.</p>
+<p>The last example is bad for accessibility reasons. A screen reader that vocalizes the page will just say “Entering section”, while in the previous two good examples it would say “entering section with heading Blog Posts of April 2020”. You can also check if your headings and sectioning elements are ok by using a browser extension that displays the outline of the document (just search for “html5 outliner” in your browser’s extension search engine).</p>
+<p><b>UPDATE :</b> For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" target="_blank" rel="noopener noreferrer">table-of-contents-crx</a>for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" target="_blank" rel="noopener noreferrer">Outline sidebar for Firefox</a>.</p>
 
 <h4>The outline of the last example looks like this:</h4>
 <!------------------------------------------------------------------------------------------------>
@@ -1486,8 +1482,7 @@ as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eek
   alt="Outline of last example."
   style="width:55%;" />
 
-<p>Notice that &lt;body&gt; is also a sectioning element. It’s called a
-“sectioning root”, and would also need a heading.</p>
+<p>Notice that &lt;body&gt; is also a sectioning element. It’s called a “sectioning root”, and would also need a heading.</p>
 
 <h4>Final good version:</h4>
 
@@ -1509,9 +1504,7 @@ as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eek
 
 </details>
 
-<p>The sectioning root (&lt;body&gt;) and the sectioning elements
-(&lt;section&gt; here…), each have a heading.
-</p>
+<p>The sectioning root (&lt;body&gt;) and the sectioning elements (&lt;section&gt; here…), each have a heading.</p>
 
 <h4>To sum up:</h4>
 
@@ -1524,9 +1517,7 @@ as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eek
 
 <h4>The &lt;header&gt; element is just a container. It is not taken into account for defining new sections of a document nor does it affect the hierarchy levels.</h4>
 
-<p>You can use heading elements &lt;h1&gt;…&lt;h6&gt; in
-a &lt;header&gt; but be careful if you use more than one, as the rules
-explained in the previous part of the course will apply and may generate
+<p>You can use heading elements &lt;h1&gt;…&lt;h6&gt; in a &lt;header&gt; but be careful if you use more than one, as the rules explained in the previous part of the course will apply and may generate
 implicit “sections” in the header.</p>
 
 <h4>This example has two headings in the &lt;header&gt;:</h4>
@@ -1550,12 +1541,8 @@ appear, one for the H1, one for the H2:</p>
   alt="Outline of previous example."
   style="width:55%;" />
 
-<p>Indeed, HTML does not have a dedicated mechanism for marking up
-subheadings, alternative titles or taglines.</p>
-<p>If you do not want the subtitles to be included in the table of
-contents, just use standard markup, for example &lt;p&gt; elements, as
-shown in the next example. Of course, CSS rules can be applied to change
-colors, sizes, etc.</p>
+<p>Indeed, HTML does not have a dedicated mechanism for marking up subheadings, alternative titles or taglines.</p>
+<p>If you do not want the subtitles to be included in the table of contents, just use standard markup, for example &lt;p&gt; elements, as shown in the next example. Of course, CSS rules can be applied to change colors, sizes, etc.</p>
 
 <pre><code>
 &lt;header&gt;
@@ -1565,9 +1552,7 @@ colors, sizes, etc.</p>
 &lt;/header&gt;
 </code></pre>
 
-<p><b>Best practice #2</b>: try not to rely on implicit sectioning,
-use &lt;section&gt;, &lt;article&gt;, etc. instead of
-just &lt;h1&gt;…&amp;lr;h6&gt;.</p>
+<p><b>Best practice #2</b>: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;…&amp;lr;h6&gt;.</p>
 <p>The example below defines several implicit “sections” by using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):</p>
 
 <h4>Ok version (no explicit sections everywhere):</h4>
@@ -1642,9 +1627,7 @@ just &lt;h1&gt;…&amp;lr;h6&gt;.</p>
 
 <h3 id="ch1-3">1.3 New Structural Elements</h3>
 
-<p>Changes have been made to particular elements in HTML5 making it simpler
-to use. In this section, we will look at some examples highlighting
-these improvements, including:</p>
+<p>Changes have been made to particular elements in HTML5 making it simpler to use. In this section, we will look at some examples highlighting these improvements, including:</p>
 
 <ul>
   <li>the new doctype definition;</li>
@@ -1700,32 +1683,14 @@ these improvements, including:</p>
 
 <h4>Simpler character set definition</h4>
 
-<p>One word about the &lt;meta charset=“utf-8”&gt; at line 4 in the HTML5
-version: it is a <b>best practice</b> to declare the character set of
-your document to protect against
-<a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7" target="_blank" rel="noopener noreferrer"> a
-serious security risk</a>. For more details, please refer to the “Why
-Internationalization is important” section in the Course intro chapter.</p>
+<p>One word about the &lt;meta charset=“utf-8”&gt; at line 4 in the HTML5 version: it is a <b>best practice</b> to declare the character set of your document to protect against <a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7" target="_blank" rel="noopener noreferrer"> a serious security risk</a>. For more details, please refer to the “Why Internationalization is important” section in the Course intro chapter.</p>
 
 <h4>No more complicated DOCTYPE definitions</h4>
 
-<p>The “DOCTYPE” (Document Type Declaration) is used by tools such as
-HTML validators (i.e. <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">the W3C
-validator</a>), and specifies the rules used by  an HTML or an XHTML
-page. These rules are contained in special documents called “Document
-Type Definitions” (also abbreviated as DTDs), written in a language that
-may seem a bit barbaric to humans (they are intended to be read by
-software), and hosted by W3C.</p>
+<p>The “DOCTYPE” (Document Type Declaration) is used by tools such as HTML validators (i.e. <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">the W3C validator</a>), and specifies the rules used by  an HTML or an XHTML page. These rules are contained in special documents called “Document Type Definitions” (also abbreviated as DTDs), written in a language that may seem a bit barbaric to humans (they are intended to be read by software), and hosted by W3C.</p>
 
-<p>DTDs are not used by current Web browsers to  validate the structure
-of an HTML page, as  they “read” the code without using the DTD to
-decipher it, using only “rules” contained in their own “HTML engine”,
-but it is still preferable to indicate the doctype as modern browsers
-have several rendering engines that are chosen depending on the
-doctype.</p>
-<p>Old HTML1 Web pages will not be rendered the same way as new HTML5
-pages, since, in the 90’s, some of them were written by hand and may
-contain errors, embedded HTML elements, etc.</p>
+<p>DTDs are not used by current Web browsers to  validate the structure of an HTML page, as  they “read” the code without using the DTD to decipher it, using only “rules” contained in their own “HTML engine”, but it is still preferable to indicate the doctype as modern browsers have several rendering engines that are chosen depending on the doctype.</p>
+<p>Old HTML1 Web pages will not be rendered the same way as new HTML5 pages, since, in the 90’s, some of them were written by hand and may contain errors, embedded HTML elements, etc.</p>
 
 <h4>With HTML4, doctype definitions looked like this:</h4>
 
@@ -1733,11 +1698,7 @@ contain errors, embedded HTML elements, etc.</p>
 &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;https://www.w3.org/TR/html4/loose.dtd&quot;&gt;, 
 </code></pre>
 
-<p>which was even more complicated as one had to choose between three
-different possibilities (doctypes could be transitional, strict, or
-frameset). Most of the time, the doctype definition was copied and
-pasted from one document to another and was nearly impossible to
-memorize.</p>
+<p>which was even more complicated as one had to choose between three different possibilities (doctypes could be transitional, strict, or frameset). Most of the time, the doctype definition was copied and pasted from one document to another and was nearly impossible to memorize.</p>
 
 <h4>With HTML5, there is only one way to indicate the doctype, and it’s so simple there is no reason to forget it:</h4>
 
@@ -1747,9 +1708,7 @@ memorize.</p>
 
 <h4>The “TYPE” attribute is optional</h4>
 
-<p>With a rel=“stylesheet” attribute, it is no longer necessary to
-indicate type=“text/css” (from <a href="https://www.w3.org/TR/html5/links.html#link-type-stylesheet" target="_blank" rel="noopener noreferrer">
-the specification</a>: “the default type for resources given by the <a href="https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet" target="_blank" rel="noopener noreferrer">stylesheet</a> keyword is text/css.”)</p>
+<p>With a rel=“stylesheet” attribute, it is no longer necessary to indicate type=“text/css” (from <a href="https://www.w3.org/TR/html5/links.html#link-type-stylesheet" target="_blank" rel="noopener noreferrer">the specification</a>: “the default type for resources given by the <a href="https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet" target="_blank" rel="noopener noreferrer">stylesheet</a> keyword is text/css.”)</p>
 <p>The “type” attribute is not needed in HTML5, and even old browsers will use text/css as the default type for stylesheets today. So, either way, you can omit the “type” attribute altogether and use:</p>
 
 <pre><code>
@@ -1762,9 +1721,7 @@ the specification</a>: “the default type for resources given by the <a href="
 &lt;link href=&quot;file.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
 </code></pre>
 
-<p>We will not go into detail about the &lt;link&gt; element, but the fact
-that the type attribute is becoming optional shows the current direction
-taken by HTML5: towards greater simplicity.</p>
+<p>We will not go into detail about the &lt;link&gt; element, but the fact that the type attribute is becoming optional shows the current direction taken by HTML5: towards greater simplicity.</p>
 
 <h4>Please see how to include a JavaScript file in our page:</h4>
 
@@ -4559,15 +4516,9 @@ with some HTML code that you can copy and paste for embedding.</p>
 
 <h4>Support for different video CODECS (mp4, ogG, avi, etc.)</h4>
 
-<p>This is one of the main problems encountered in recent years: codec
-support was not the same from one browser to another, for
-commercial/economic reasons. For example, between 2010 and 2013, Firefox
-only supported the ogg/oggm format. It did not support mp3/mp4 encoding
-for audio/video, while Internet Explorer only supported H.264 encoding.
-Since 2012, things have changed with browser updates and today most
-popular formats are supported.</p>
-<p><i>The recommended CODEC, which works in all popular browsers:
-H264/mp4.</i></p>
+<p>This is one of the main problems encountered in recent years: codec support was not the same from one browser to another, for commercial/economic reasons. For example, between 2010 and 2013, Firefox
+only supported the ogg/oggm format. It did not support mp3/mp4 encoding for audio/video, while Internet Explorer only supported H.264 encoding. Since 2012, things have changed with browser updates and today most popular formats are supported.</p>
+<p><i>The recommended CODEC, which works in all popular browsers: H264/mp4.</i></p>
 
 <h4>External resources</h4>
 
@@ -4663,15 +4614,8 @@ and we used several &lt;source&gt;…&lt;/source&gt; elements that link to dif
 
 <h4>Be careful if you target mobile applications or if you have multiple videos on the same page</h4>
 
-<p>The autoplay attribute is not recommended if your Web site targets
-mobile applications (actually, it is often ignored by mobile browsers),
-as it may consume bandwidth even if the user is not interested in
-watching the proposed video. If you target mobile devices, we recommend
-using preload=none as well, as the default value for this attribute
-is auto.</p>
-<p><b>Best practice</b>: do not use autoplay and add preload=“none” if you
-target mobile devices or if you have multiple audio/video files on the
-same page.  For example, <a href="https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html" target="_blank" rel="noopener noreferrer">this page</a> contains many audio elements and it does not make sense to have
+<p>The autoplay attribute is not recommended if your Web site targets mobile applications (actually, it is often ignored by mobile browsers), as it may consume bandwidth even if the user is not interested in watching the proposed video. If you target mobile devices, we recommend using preload=none as well, as the default value for this attribute is auto.</p>
+<p><b>Best practice</b>: do not use autoplay and add preload=“none” if you target mobile devices or if you have multiple audio/video files on the same page.  For example, <a href="https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html" target="_blank" rel="noopener noreferrer">this page</a> contains many audio elements and it does not make sense to have
 them preload or autoplay.</p>
 
 <h4>About the poster attribute</h4>
@@ -4680,13 +4624,8 @@ them preload or autoplay.</p>
 
 <h4>About the autoplay attribute for general use</h4>
 
-<p>Do not abuse of the autoplay attribute. We talked earlier about
-mobile applications, but even on desktop applications it’s usually a bad
-idea to use it (except for WebCams and for some animations with small
-video loops, without sound, or for sites like YouTube, with just
-videos).</p>
-<p><b>Best practice</b>: think twice before using the autoplay attribute,
-even for desktop applications.</p>
+<p>Do not abuse of the autoplay attribute. We talked earlier about mobile applications, but even on desktop applications it’s usually a bad idea to use it (except for WebCams and for some animations with small video loops, without sound, or for sites like YouTube, with just videos).</p>
+<p><b>Best practice</b>: think twice before using the autoplay attribute, even for desktop applications.</p>
 
 <h4>Attributes of the &lt;audio&gt; element</h4>
 
@@ -4710,14 +4649,8 @@ attributes should be followed.</p>
 
 <h4>An example of an audio player with some style</h4>
 
-<p>You can try
-this example <a href="https://jsbin.com/zoquru/2/edit?html,css,output" target="_blank" rel="noopener noreferrer">online
-at JSBin</a>.</p>
-<p>To add some styling to the basic example we saw when we introduced
-the &lt;audio&gt; element, we just add a &lt;figure&gt; with two
-children: an &lt;img&gt; and a &lt;figcaption&gt;. Inside
-the &lt;figcaption&gt; we add the &lt;audio&gt; element from the
-previous example.</p>
+<p>You can try this example <a href="https://jsbin.com/zoquru/2/edit?html,css,output" target="_blank" rel="noopener noreferrer">online at JSBin</a>.</p>
+<p>To add some styling to the basic example we saw when we introduced the &lt;audio&gt; element, we just add a &lt;figure&gt; with two children: an &lt;img&gt; and a &lt;figcaption&gt;. Inside the &lt;figcaption&gt; we add the &lt;audio&gt; element from the previous example.</p>
 <p>Please move the mouse pointer over this player’s elements: (does not work in git)</p>
 
 <h4>HTML</h4>
@@ -4841,8 +4774,7 @@ previous example.</p>
 
 <h4>Resizing and rotating a video as the mouse pointer comes over it</h4>
 
-<p>See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output" target="_blank" rel="noopener noreferrer">example
-online</a> (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it’s playing.</p>
+<p>See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output" target="_blank" rel="noopener noreferrer">example online</a> (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it’s playing.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 71. pseudo css class: hover (88) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -4851,10 +4783,7 @@ online</a> (where you can modify the code on the fly) or just play the followin
   style="width:60%"
   alt="Tilted screen example using pseudo css class: hover." />
 
-<p>This example uses the pseudo CSS class :hover in order to track
-the mouseover event. On mouseover, it uses a CSS transition property
-that interpolates the changes in the scale and orientation of the video
-element (done using a transform CSS property).</p>
+<p>This example uses the pseudo CSS class :hover in order to track the mouseover event. On mouseover, it uses a CSS transition property that interpolates the changes in the scale and orientation of the video element (done using a transform CSS property).</p>
 
 <h4>The corresponding HTML source code is:</h4>
 
@@ -4885,16 +4814,10 @@ element (done using a transform CSS property).</p>
 </code></pre>
 
 <h4>Fullscreen video that resizes and maintains ratios</h4>
+
 <p>This is a trendy way of displaying videos.</p>
-<p>Below you will find two examples that show how to do this trick. The
-first is for a “regular” video, using
-the &lt;video&gt; and &lt;source&gt; elements. This technique
-can also be used on any YouTube embedded videos (see Example #2
-below).</p>
-<p>The interesting part is that we use a 100% standard (and really small
-and simple) JavaScript code here to handle the window resize events and
-we just set regular CSS properties width and height of the video
-element, to resize the video.</p>
+<p>Below you will find two examples that show how to do this trick. The first is for a “regular” video, using the &lt;video&gt; and &lt;source&gt; elements. This technique can also be used on any YouTube embedded videos (see Example #2 below).</p>
+<p>The interesting part is that we use a 100% standard (and really small and simple) JavaScript code here to handle the window resize events and we just set regular CSS properties width and height of the video element, to resize the video.</p>
 
 <h4>Example #1: with a regular video</h4>
 
@@ -4907,9 +4830,7 @@ element, to resize the video.</p>
   style="width:65%"
   alt="Full width video like paypal site." />
 
-<h4>Here is the HTML code. It’s really simple, just notice the &lt;body
-onload=“init();”&gt; which calls the JavaScript init() function right
-after the page is loaded.</h4>
+<h4>Here is the HTML code. It’s really simple, just notice the &lt;body onload=“init();”&gt; which calls the JavaScript init() function right after the page is loaded.</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -4938,8 +4859,7 @@ after the page is loaded.</h4>
 
 </details>
 
-<h4>Here is the CSS (remove margins, remove padding, hide parts that could
-overflow from the &lt;body&gt;):</h4>
+<h4>Here is the CSS (remove margins, remove padding, hide parts that could overflow from the &lt;body&gt;):</h4>
 
 <pre><code>
 body {
@@ -5070,7 +4990,7 @@ header{
     height: 100%;
     background-image: url(&#39;https://mainline.i3s.unice.fr/mooc/dots.png&#39;),                             url(&#39;#&#39;);
     background-repeat: repeat, no-repeat;
-     background-size: auto, cover;
+    background-size: auto, cover;
     background-position: center center, top left;
     font-family: sans-serif;
     color: #051a00;
@@ -5247,11 +5167,9 @@ show the properties, events, and methods from the API.</p>
   style="width:65%"
   alt="HTML5 video events and API." />
 
-<h4>Here is a table that shows the most interesting methods, properties, and
-events provided by the &lt;video&gt; element API</h4>
-<p>We provide this as a quick reminder - keep in mind that
-the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents" target="_blank" rel="noopener noreferrer">complete
-list</a> is much longer!</p>
+<h4>Here is a table that shows the most interesting methods, properties, and events provided by the &lt;video&gt; element API</h4>
+
+<p>We provide this as a quick reminder - keep in mind that the <a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents" target="_blank" rel="noopener noreferrer">complete list</a> is much longer!</p>
 
 <div>
 <table>
@@ -22773,7 +22691,7 @@ good understanding of the material.</p>
 </ul>
 
 <p>. . .The end.<br>
-<br>last updated 02-03-23 4:23pm </p>
+<br>last updated 02-06-23 6:14pm </p>
 </body>
 </html>
 <!--
