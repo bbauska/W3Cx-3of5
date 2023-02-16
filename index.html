@@ -257,7 +257,7 @@ Module 4</strong></a></h3>
 
 <p>The HTML5 course team is thrilled to guide you in your learning experience. We are committed to teach you how to code Web pages, and how to do it the correct way. We encourage you to create Web pages and apps and share them in the discussion forums. Have fun!</p>
 
-<h4 id="cha-3">W3C tools - Online Code Editors:</h4>
+<h3 id="cha-3">W3C tools - Online Code Editors:</h3>
 
 <p><a href="https://jsbin.com" target="_blank" rel="noopener noreferrer">JS Bin</a></p>
 <p><a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843" target="_blank" rel="noopener noreferrer">CodePen Tutorial</a></p>
@@ -558,7 +558,7 @@ are viewable through <a href="https://www.lifewire.com/what-is-a-browser-446234"
 
 <p>Plain and simple, the internet allows access to the World Wide Web.  Without it, we have no way of accessing the thousands of websites out there. For most online needs, however, the web is the easiest to use.  Each serves an important purpose.</p>
 
-<h4 id="cha-2">Why Accessibility is Important</h4>
+<h3 id="cha-2">Why Accessibility is Important</h3>
 
 <p><i>The power of the Web is in its universality.</i> <i>Access by everyone regardless of disability is an essential aspect.</i></p>
 
@@ -6388,18 +6388,18 @@ We can also simplify the code by using a writing with async/await of JavaScript:
 
 <p><b>HTTPS is mandatory:</b> for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.</p>
 <p>Support of getUserMedia/stream is <a href="https://caniuse.com/stream" target="_blank" rel="noopener noreferrer">very good in all modern browsers</a>, including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4-2">2.4.2 More On getUserMedia</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let’s see some more examples of what we can do with the getUserMedia API: start/stop the Webcam, take a screenshot from the current video stream from the Webcam, and apply CSS effects in real time. Below, we give links to some cool examples available on the Web.</p>
 <h4>How to stop/release the Webcam</h4>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 107. resulting image of michel buffa using webcam (xxx) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 107. resulting image of michel buffa using webcam (125) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image107.jpeg?raw=true"
   style="width:35%"
-  alt="Resulting image of Michel Buffa using his WebCam, with two custom controls below." />
+  alt="Resulting image of Michel Buffa using his WebCam, drinking from a ladle with two custom controls below." />
 
 <details>
   <summary>Click to expand!</summary>
@@ -6508,9 +6508,9 @@ need to call the stop() method of the video stream.</p>
 <h4>Other examples that mix what we’ve seen in previous chapters, but this time with a live video stream</h4>
 
 <h4>Applying CSS effects on a video element with a live webcam</h4>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 108. example: css filter effects (xx) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 108. example: css filter effects (128) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image108.jpeg?raw=true"
   style="width:30%"
@@ -6658,9 +6658,9 @@ Click the button &quot;start webcam at the end of this page, then click on the v
 
 <p>The trick is to copy and paste the current image from the video
 stream into a &lt;canvas&gt; element.</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 109. take a snapshot from live webcam stream (129) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 109. take a snapshot from live webcam stream (130) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image109.png?raw=true"
   style="width:65%"
@@ -6761,9 +6761,9 @@ section (related to the &lt;canvas&gt; element).</p>
   <li><p><a href="https://codepen.io/dlueth/pen/zBhwv" target="_blank" rel="noopener noreferrer">WebCam pixelization! Fun!</a></p></li>
   <li><p><a href="https://webcamtoy.com/" target="_blank" rel="noopener noreferrer">Webcam Toy</a>: video effects on Paul Neave’s webcam (using WebGL)</p></li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4-3">2.4.3 Using the Microphone</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Instead of using the getUserMedia API
 with: navigator.getUserMedia({video:true}, onSuccess, onError), it is
 also possible to use {audio:true} for the first parameter. In this case,
@@ -6783,25 +6783,25 @@ effects”.</p>
 <p>The image below is taken
 from <a href="https://webaudiodemos.appspot.com/input/index.html" target="_blank" rel="noopener noreferrer">one of the demonstrations</a>, where the sound captured by the microphone is processed in real time. We get visualizations of the signal in real time as an animated waveform, animated frequencies or animated audiogram. If we connect an electric guitar to the sound card input, then this demonstration shows that we can recreate with WebAudio most of the classic effects used by guitarists (delay, reverb, distortion, chorus,
 etc.).</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 110. webaudio live processing (131) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 110. webaudio live processing (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image110.jpeg?raw=true"
   style="width:55%"
   alt="WebAudio Live Processing." />
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4-4">2.4.4 Webcam Resolution</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It is possible to set “hints” for the preferred cam/resolution during
 video capture. This is done by using a <a href="https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4" target="_blank" rel="noopener noreferrer">"constraint" object </a>that is passed as a parameter to the getUserMedia(…) method. It’s just the same object we passed in the basic example: navigator.getUserMedia({video:true}, success, error) except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.</p>
 <p>For more information, this <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia" target="_blank" rel="noopener noreferrer">article on MDN about the getUserMedia API</a> gives great examples on how to set the camera resolution and/or to choose the front or back camera when using a mobile phone.</p>
 
 <h4>Typical use:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 111. set camera resolution (132) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 111. set camera resolution (133) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image111.png?raw=true"
   style="width:65%"
@@ -6925,9 +6925,9 @@ border:1px solid;
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 112. function getusermedia (134) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 112. function getusermedia (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image112.png?raw=true"
   style="width:45%"
@@ -7006,9 +7006,9 @@ the ones for selecting the front or rear camera (smartphones):</p>
 <ul>
   <li>Resource: <a href="https://webrtc.github.io/samples/src/content/devices/input-output/" target="_blank" rel="noopener noreferrer">WebRTC samples: Select sources &amp; outputs</a></li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 113. webapp for selecting audio and video input/output (135) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 113. webapp for selecting audio and video input/output (136) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image113.jpeg?raw=true"
   style="width:45%"
@@ -7043,9 +7043,9 @@ the ones for selecting the front or rear camera (smartphones):</p>
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4-5">2.4.5 The MediaRecorder API</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This MediaRecoredr API allows to record / capture the audio or video
 stream. There are many sources for audio or video streams, but we will
 only consider here the streams coming from a WebCam or a sound input
@@ -7055,9 +7055,9 @@ from a WebCam as a file saved on the hard disk. Below is a screenshot of
 an application allowing to record the WebCam. You will be able to run
 this example a little further, but for security reasons, it cannot run
 directly in this Web page.</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 114. webrtc samples mediarecorder (136) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--------------------------- 114. webrtc samples mediarecorder (137) ---------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image114.jpeg?raw=true"
   style="width:40%"
@@ -7336,13 +7336,13 @@ codec, then generate programmatically a click event on the link. This will for
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-1-1">3.1.1 HTML5 Graphics</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-1">3.2.1 About JavaScript and HTML5</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------------- 115. javascript logo (140) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image115.png?raw=true"
   style="width:10%"
@@ -7480,9 +7480,9 @@ all console.log() messages), and re-execute the page (just type a space
 at the end of a line, this will re-render the page and display the
 message in the console), we see the message in the console tab, as well
 as in the dev. tools console. This is illustrated by the image below:</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 116. javascript debugging console view (142) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!----------------------- 116. javascript debugging console view (143) --------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image116.jpeg?raw=true"
   style="width:50%"
@@ -7504,18 +7504,18 @@ press <i>F12</i>. You should see:</p>
 <p>Ok, now, let’s make an error:
 change console.log() into conso<b>lll</b>e.log(). Let’s see what
 happens:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 118. view of the javascript console (143) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image118.jpeg?raw=true"
   style="width:50%"
   alt="View of the JavaScript console." />
 
 <p>And if we run it standalone and use the dev. tool console:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 119. view of the javascript console (143) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!------------------------- 119. view of the javascript console (145) ---------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image119.jpeg?raw=true"
   style="width:50%"
@@ -7523,9 +7523,9 @@ happens:</p>
 
 <p>And if we click on the line number in the right, the dev. tool shows
 the source code centered on the line that caused the error:</p>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 120. view of the javascript console (144) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-------------------------- 120. view of the javascript console (145) --------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image120.jpeg?raw=true"
   style="width:50%"
@@ -7538,19 +7538,19 @@ your browsers, since they differ from one another in the way they work
 
 <h4>About the asynchronous nature of JavaScript</h4>
 
-<p>Some of you may not be used to “asynchronous programming”, “callbacks” etc. We recommend to read <a href="https://en.wikipedia.org/wiki/Callback_%28computer_programming%29" target="_blank" rel="noopener noreferrer">this article on WikiPedia</a> and <a href="https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java" target="_blank" rel="noopener noreferrer">this thread on StackOverflow</a>.</p><!------------------------------------------------------------------------------------------------>
+<p>Some of you may not be used to “asynchronous programming”, “callbacks” etc. We recommend to read <a href="https://en.wikipedia.org/wiki/Callback_%28computer_programming%29" target="_blank" rel="noopener noreferrer">this article on WikiPedia</a> and <a href="https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java" target="_blank" rel="noopener noreferrer">this thread on StackOverflow</a>.</p><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-2">3.2.2 The &lt;canvas&gt; Element</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 121. canvas element logo (144) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image121.jpeg?raw=true"
   style="width:25%"
   alt="View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc." />
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 121. canvas element logo (144) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image121.jpeg?raw=true"
   style="width:10%"
@@ -7583,9 +7583,9 @@ canvas.</p>
 
 <p><a href="https://www.ravalmatic.com/portfolio/footchinko/" target="_blank" rel="noopener noreferrer">Foot
 Chinko</a> is one popular free HTML5 games:</p>
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 122. foot chinko one of the best html5 2D game of 2015 (145) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 122. foot chinko one of the best html5 2D game of 2015 (146) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image122.jpeg?raw=true"
   style="width:40%"
@@ -7595,9 +7595,9 @@ Chinko</a> is one popular free HTML5 games:</p>
 
 <p>Lots of data visualization tools and JavaScript libraries use the HTML5 canvas element for <a
 href="http://www.creativebloq.com/design-tools/data-visualization-712402" target="_blank" rel="noopener noreferrer">Data visualization</a>:</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------- 123. html5 data visualization (146) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 123. html5 data visualization (147) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image123.jpeg?raw=true"
   style="width:50%"
@@ -7606,9 +7606,9 @@ href="http://www.creativebloq.com/design-tools/data-visualization-712402" target
 <h4>Example #3</h4>
 
 <p>A version of the <a href="https://intersoft.itch.io/galaxian" target="_blank" rel="noopener noreferrer">arcade game Galaxian</a>, that runs at 60 frames per second in an HTML5 canvas element:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------- 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (146) -------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!------- 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (147) -------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image124.jpeg?raw=true"
   style="width:50%"
@@ -7630,9 +7630,9 @@ href="http://www.creativebloq.com/design-tools/data-visualization-712402" target
   </ul>
   </li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-3">3.2.3 Canvas and Accessibility</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The dynamic nature of the &lt;canvas&gt; element has made it difficult to use in applications that need to be accessible to people with disabilities. To be accessible, it must meet the following
 principles:</p>
 
@@ -7648,9 +7648,9 @@ principles:</p>
   <li><p>An article on <a href="https://www.creativebloq.com/web-design/canvas-element-accessibility-41514740" target="_blank" rel="noopener noreferrer">What the canvas element means for accessibility</a></p></li>
   <li><p>From the W3C wiki: <a href="https://www.w3.org/html/wg/wiki/AddedElementCanvas" target="_blank" rel="noopener noreferrer">Canvas Element Accessibility Issues</a></p></li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-4">3.2.4 HTML Canvas Cheatsheet</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>We recommend these 2 quick references (or <a
 href="https://en.wikipedia.org/wiki/Cheat_sheet" target="_blank" rel="noopener noreferrer">cheatsheets</a>) below.
 Do not hesitate to keep your favorite one open in a separate browser
@@ -7659,9 +7659,9 @@ ta</p>
 <ol type="1">
   <li>As a <a href="https://courses.edx.org/assets/courseware/v1/4b7360cab7f3bf439c26782ec47cf7a8/asset-v1:W3Cx+HTML5.1x+2T2020+type@asset+block/Infopgraphic-CanvasCheatSheet-Final2.pdf" target="_blank" rel="noopener noreferrer">PDF file</a>, this canvas cheatsheet:</li>
 </ol>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------- 125. snapshot of an html canvas cheatsheet from skilled.com (147) --------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image125.png?raw=true"
   style="width:65%"
@@ -7670,21 +7670,21 @@ ta</p>
 <ol start="2" type="1">
   <li>Another resource, as an <a href="https://simon.html5.org/dump/html5-canvas-cheat-sheet.html" target="_blank" rel="noopener noreferrer">HTML file</a>:</li>
 </ol>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 126. snapshot of a canvas cheatsheet api (148) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!---------------------- 126. snapshot of a canvas cheatsheet api (149) -------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image126.png?raw=true"
   style="width:65%"
   alt="Snapshot of a Canvas cheatsheet API." />
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-5">3.2.5 Coordinate System</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The coordinate system used for drawing in canvases is similar to the one used by many drawing APIs like Java2D: the (0 , 0) is in the top left corner while the X axis is going to the right and the Y axis to the bottom, as  shown in the following picture:</p>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 127. coordinate system (148) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-------------------------------- 127. coordinate system (149) ---------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image127.png?raw=true"
   style="width:55%"
@@ -7694,9 +7694,9 @@ ta</p>
   <li><p><b>X</b> axis is horizontal, directed to the right </p></li>
   <li><p><b>Y</b> axis is vertical, directed downwards</p></li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-6">3.2.6 Drawing Rectangles in a Canvas</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Small errata about what I said in the above video: “So let’s get the
 canvas using the DOM API method document.getElementById() or better,
 use document.querySelector() that is a more recent method from the DOM
@@ -7934,9 +7934,9 @@ ctx.fillRect(0,0,80,100);
 <pre><code>
     ctx.fillRect(0,0,80,100)
 </code></pre>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-7">3.2.7 Drawing Principles</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>More about the “context” object</h4>
 
 <p>Before we go on, we should take some time to clarify the way we draw
@@ -7991,9 +7991,9 @@ ctx.fillRect(10,10,200,200);
 </code></pre>
 
 <p>Produces this result:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 128. filled rectangle with pink color (153) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!------------------------ 128. filled rectangle with pink color (154) --------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image128.jpeg?raw=true"
   style="width:25%"
@@ -8019,9 +8019,9 @@ ctx.strokeRect(10,10,200,200);
 </code></pre>
 
 <p>… gives this result:</p>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 129. stroked rectangle - border is in blue (154) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!---------------------- 129. stroked rectangle - border is in blue (155) ------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image129.jpeg?raw=true"
   style="width:25%"
@@ -8045,9 +8045,9 @@ ctx.clearRect(50, 50, 20, 20);
 </code></pre>
 
 <h4>The result is:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------ 130. the use of clearrrect draws a white rectangle against the pink background (xxx) ---->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!------ 130. the use of clearrrect draws a white rectangle against the pink background (156) ---->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image130.jpeg?raw=true"
   style="width:25%"
@@ -8191,9 +8191,9 @@ rectangles and before you draw the text (i.e just before <i>line 18</i>).</p>
   <li>To draw a text message use ctx.strokeText(message, x, y) or ctx.fillText(message, x, y), for wireframe text or filled text respectively.</li>
   <li>To set the character font use the ctx.font property; the value is a font in CSS syntax, for example:  ctx.font = ‘italic 20pt Calibri’; </li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-8">3.2.8 Transformations</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>We now introduce the basics of 2D transformations, a powerful tool that
 will make things easier as soon as you have to:</p>
 
@@ -8362,9 +8362,9 @@ that each call to fillRect(…) uses the x and y parameters instead of
 hard coded values. In this way, if we call it with parameters (0, 100),
 then all rectangles will be drawn 100 pixels to the bottom (offset in
 y). Here is the result:</p>
-<!------------------------------------------------------------------------------------------------>
-<!-------------- 131. Rectangles are drawn 100 pixels towards the bottom (xx) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 131. Rectangles are drawn 100 pixels towards the bottom (161) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image131.jpeg?raw=true"
   style="width:30%"
@@ -8987,9 +8987,9 @@ ctx.fillRect(250, 0, 100, 100);
 
 <p>Aha, this is a very interesting question… the answer is in the next
 page!</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-9">3.2.9 Saving and Restoring the Context</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There are two methods for saving and restoring the context
 properties: ctx.save() and ctx.restore().</p>
 <p>What will be saved: fillStyle and strokeStyle, lineWidth, the
@@ -9741,7 +9741,7 @@ it!</p>
 <h4>HTML</h4>
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Click to toggle!</summary>
 
 <pre><code>
 &lt;!DOCTYPE HTML&gt;
@@ -19092,47 +19092,48 @@ changing in real time the value attribute.</p>
 8.  &lt;/script&gt;
 </code></pre>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-6-5">5.6.5 &lt;datalist&gt;</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The &lt;datalist&gt; form element is useful for linking a list of
 choices to an input element.</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 284.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 284. input options; web browsers (342) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image284.png?raw=true"
-  alt="Example of datalist for autocompletion."
+  alt="Input field choices; web browsers."
   style="width:30%;" />
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 285.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!----------------------------- 285. input options; lookahead (342) ------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image285.png?raw=true"
-  alt="Another example of use of datalist."
+  alt="Another example input field choices with lookahead."
   style="width:30%;" />
 
 <p>We have already seen this element in action with
 different &lt;input&gt; elements, such as &lt;input
 type=“color”&gt;, &lt;input type=“date”&gt;, or &lt;input
 type=“range”&gt;.</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 227.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!----------------------- 227. color pallette with blue, green, red (342) ------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image227.jpeg?raw=true"
   alt="Restricted choice of color."
   style="width:15%;" />
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 286.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--------------------------- 286. restricted data list choices (342) ---------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image286.jpeg?raw=true"
   alt="Restrict choices using a datalist element."
   style="width:60%;" />
-<!----------------------------- 287.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!------------------------ 287. slider with min, max, step & ticks (342) ------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image287.jpeg?raw=true"
   alt="Example of datalist for sliders ticks."
@@ -19157,9 +19158,9 @@ auto-completion based on &lt;datalist&gt; values.</p>
 href="https://jsbin.com/tiqexel/1/edit?html,output" target="_blank" rel="noopener noreferrer">online example at
 JSBin</a>, or try it here in your browser (type the name of your
 favorite browser):</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------- 288. what is your favorite browser submit query (343) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image288.png?raw=true"
   alt="What is your favorite browser submit query."
@@ -19191,9 +19192,9 @@ favorite browser):</p>
 match. The &lt;datalist&gt; element is wrapped around a
 set of &lt;option&gt; that are available for selection by another form
 control (in this example the input field from <i>line 2</i>).</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-7-1">5.7.1 Introduction</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this section of the course, we will look at CSS pseudo classes
 that are useful for giving instant feedback when the user’s input is not
 valid. We will also look at the new JavaScript API introduced by HTML5
@@ -19206,9 +19207,9 @@ validity!</p>
 <p>Form validation is <a
 href="https://caniuse.com/#feat=form-validation" target="_blank" rel="noopener noreferrer">supported</a> by
 all modern browsers.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-7-2">5.7.2 Automate Visual Feedback While Typing</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Most modern browsers propose default behavior for validating input
 fields and forms.</p>
 <p>The built-in validation system that comes with HTML5 automatically
@@ -19223,9 +19224,9 @@ the border of input fields, or green/red icons on the right of the
 field, as shown in the small picture at the top right of this page.</p>
 <p>Also, at the time of submitting the form, some extra messages may be
 displayed as pop up text bubbles.</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 289. bubble message example (344) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 289. bubble message example (344) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image289.png?raw=true"
   alt="Bubble message example."
@@ -19242,9 +19243,9 @@ displayed as pop up text bubbles.</p>
 an <a href="https://jsbin.com/palifuy/edit?html,output" target="_blank" rel="noopener noreferrer">online example
 at JSBin</a>, or try it below in your browser:</p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 288b. form with custom error messages (344) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image288b.png?raw=true"
   alt="Custom error messages on form."
@@ -22459,7 +22460,7 @@ good understanding of the material.</p>
 </ul>
 
 <p>. . .The end.<br>
-<br>last updated 02-15-23 7:18pm </p>
+<br>last updated 02-16-23 12:51pm </p>
 </body>
 </html>
 <!--
