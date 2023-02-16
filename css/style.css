@@ -98,4 +98,28 @@
 	p {
 		font-family: "Bahnschrift", Didot, Lucida Bright, Comic Sans;
 	}
+details {
+  font: 15px "Bahnschrift", Calibri, sans-serif;
+  width: 620px;
+}
 
+details > summary {
+  padding: 2px 6px;
+  width: 15em;
+  background-color: #eee;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+}
+
+details > p {
+  border-radius: 0 0 10px 10px;
+  background-color: #fff;
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px darkgreen;
+}
+
+details[open] > summary {
+  background-color: yellow;
+}
