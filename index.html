@@ -112,7 +112,7 @@
 	}
 	
   </style>
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -152,8 +152,7 @@
 <h3 id="introduction---module-1-html-basics">1.1 <a href="#ch1-1-1"><strong>Introduction - Module 1: HTML Basics</strong></a></h3>
 <h3 id="from-html1.0-to-html5">1.2 <a href="#ch1-2-1"><strong>From HTML1.0 to HTML5</strong></a></h3>
 <h3 id="structural-element">1.3 <a href="#ch1-3-1"><strong>Structural element</strong></a></h3>
-<h3 id="other-elements-and-attributes">1.4 <a
-href="#ch1-4-1"><strong>Details and Summary elements</strong></a></h3>
+<h3 id="other-elements-and-attributes">1.4 <a href="#ch1-4-1"><strong>Details and Summary elements</strong></a></h3>
 <h3 id="microdata">1.5 <a href="#ch1-5-1"><strong>Microdata</strong></a></h3>
 </blockquote>
 
@@ -168,8 +167,7 @@ href="#ch1-4-1"><strong>Details and Summary elements</strong></a></h3>
 <h3 id="exercises---module-2">2.6 <a href="#ch2-6-1"><strong>Exercises - Module 2</strong></a></h3>
 </blockquote>
 
-<h2 id="module-3-html5-graphics"><a href="#ch3"><strong>Module 3: HTML5
-Graphics</strong></a></h2>
+<h2 id="module-3-html5-graphics"><a href="#ch3"><strong>Module 3: HTML5 Graphics</strong></a></h2>
 
 <blockquote>
 <h3 id="introduction---module-3">3.1 <a href="#ch3-1-1"><strong>Introduction - Module 3: HTML5 Graphics</strong></a></h3>
@@ -393,7 +391,7 @@ validator</a> checks Cascading Style Sheets (CSS) and (X)HTML documents that us
 <p><a href="https://validator.w3.org/unicorn/" target="_blank" rel="noopener noreferrer">Unicorn</a>is W3C’s unified validator, which helps people improve the quality of their Web pages by performing a variety of checks. Unicorn gathers the
 results of the popular HTML and CSS validators, as well as other useful services, such as Internationalization, RSS/Atom feeds and http headers.</p>
 
-<h3>Internationalization Checker</h3>
+<h4>Internationalization Checker</h4>
 
 <p>The <a href="https://validator.w3.org/i18n-checker/" target="_blank" rel="noopener noreferrer">W3C Internationalization Checker</a> provides information about various internationalization-related aspects of your page, including the HTTP headers that affect it. It will also report a number of issues and offer advice about how to resolve them.</p>
 
@@ -825,7 +823,7 @@ hyperlinks…</p>
 <h4>HTML code:</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre class="html5"><code>
 &lt;!DOCTYPE html&gt;
@@ -1181,7 +1179,8 @@ turn cut into smaller &lt;section&gt; elements:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre><code>&lt;article id=&quot;id1&quot;&gt;
+<pre><code>
+&lt;article id=&quot;id1&quot;&gt;
    &lt;section id=&quot;id1part1&quot;&gt;
       &lt;h2&gt;Introduction&lt;/h2&gt;
     &lt;/section&gt;
@@ -1706,20 +1705,11 @@ this course, you won’t find a lot of differences compared to the same
 code in XHTML: attribute values are surrounded by quotes, all elements
 are written in lower case, etc. This is because we are used to writing
 this way, but HTML5 also supports a simplified syntax:</p>
+
 <ul>
-  <li>Thanks to HTML5, you can omit quotes (not always, but most of the time)
-or use uppercase, lowercase or a combination of the two.</li>
-  <li>Many elements no longer need a closing tag: &lt;/li&gt;, &lt;/dt&gt;,
-&lt;/dd&gt;, &lt;/tr&gt;, &lt;/th&gt;, &lt;/td&gt;, &lt;/thead&gt;,
-&lt;/tfoot&gt;, &lt;/tbody&gt;, &lt;/option&gt;, &lt;/optgroup&gt;,
-&lt;/p&gt;, (in most cases), &lt;/head&gt;, &lt;/body&gt;,
-and &lt;/html&gt;. Older browsers often add closing tags automatically
-at render time. We recommend, however, closing tags that would naturally
-be closed: the ones that delimit a particular zone in the document.</li>
-<li>Attribute values only need to be quoted if they contain spaces or some
-non-alphanumeric characters, instead of writing &lt;link rel=“stylesheet” href=“style.css”&gt;, we could have
-used &lt;link rel=stylesheet href=style.css&gt;. However, for
-compatibility with older browsers, it is wiser to still use quotes…</li>
+  <li>Thanks to HTML5, you can omit quotes (not always, but most of the time) or use uppercase, lowercase or a combination of the two.</li>
+  <li>Many elements no longer need a closing tag: &lt;/li&gt;, &lt;/dt&gt;, &lt;/dd&gt;, &lt;/tr&gt;, &lt;/th&gt;, &lt;/td&gt;, &lt;/thead&gt;, &lt;/tfoot&gt;, &lt;/tbody&gt;, &lt;/option&gt;, &lt;/optgroup&gt;, &lt;/p&gt;, (in most cases), &lt;/head&gt;, &lt;/body&gt;, and &lt;/html&gt;. Older browsers often add closing tags automatically at render time. We recommend, however, closing tags that would naturally be closed: the ones that delimit a particular zone in the document.</li>
+  <li>Attribute values only need to be quoted if they contain spaces or some non-alphanumeric characters, instead of writing &lt;link rel=“stylesheet” href=“style.css”&gt;, we could have used &lt;link rel=stylesheet href=style.css&gt;. However, for compatibility with older browsers, it is wiser to still use quotes…</li>
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
@@ -3945,13 +3935,10 @@ at the itemprop, itemscope and itemtype attributes.</p>
 <h4>Different use cases:</h4>
 
 <ul>
-<li>The browser, or a browser extension, may interpret the last example as
-an address and may propose to send it to a map application,</li>
-<li>A Web crawler may interpret this as an address and display it in its
-responses using a dedicated presentation layout,</li>
-<li>Some JavaScript code in the page can access this data,</li>
-<li>With other types of microdata, for events, for example, the browser may
-pop up a calendar application, etc.</li>
+  <li>The browser, or a browser extension, may interpret the last example as an address and may propose to send it to a map application,</li>
+  <li>A Web crawler may interpret this as an address and display it in its responses using a dedicated presentation layout,</li>
+  <li>Some JavaScript code in the page can access this data,</li>
+  <li>With other types of microdata, for events, for example, the browser may pop up a calendar application, etc.</li>
 </ul>
 
 <p><b>Note</b>: For advanced users, Microdata is very similar
@@ -3961,11 +3948,11 @@ too hard for authors to write, microdata is HTML5’s answer to help embed seman
 <h4>External resources</h4>
 
 <ul>
-<li><a href="https://www.w3.org/TR/microdata/" target="_blank" rel="noopener noreferrer">W3C’s HTML Microdata Working Draft</a>,</li>
-<li>MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata" target="_blank" rel="noopener noreferrer">Microdata</a>,</li>
-<li>Very good <a href="https://journal.code4lib.org/articles/6400" target="_blank" rel="noopener noreferrer">Microdata</a> paper from code{4}lib journal,</li>
-<li><a href="https://dev.opera.com/articles/microdata-and-the-microdata-dom-api/" target="_blank" rel="noopener noreferrer">Microdata and the microdata DOM API</a>, old article from dev.opera.com,</li>
-<li><a href="https://diveinto.html5doctor.com/extensibility.html" target="_blank" rel="noopener noreferrer">Chapter from Mark Pilgrim’s book about microdata</a>, very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.</li>
+  <li><a href="https://www.w3.org/TR/microdata/" target="_blank" rel="noopener noreferrer">W3C’s HTML Microdata Working Draft</a>,</li>
+  <li>MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata" target="_blank" rel="noopener noreferrer">Microdata</a>,</li>
+  <li>Very good <a href="https://journal.code4lib.org/articles/6400" target="_blank" rel="noopener noreferrer">Microdata</a> paper from code{4}lib journal,</li>
+  <li><a href="https://dev.opera.com/articles/microdata-and-the-microdata-dom-api/" target="_blank" rel="noopener noreferrer">Microdata and the microdata DOM API</a>, old article from dev.opera.com,</li>
+  <li><a href="https://diveinto.html5doctor.com/extensibility.html" target="_blank" rel="noopener noreferrer">Chapter from Mark Pilgrim’s book about microdata</a>, very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.</li>
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
@@ -5009,20 +4996,11 @@ use of properties width=100% and height=100%?</h4>
 <p>Let’s use the same video to compare the different approaches again:</p>
 
 <ol>
-<li>
-<a href="https://jsbin.com/zowuqey/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Original
-approach</a>, using JavaScript. This solution works on any browser, so
-we will focus on the two following methods, based on pure CSS.
-</li>
-<li>
-<a href="https://jsbin.com/sakujuv/1/edit?html,css,output" target="_blank" rel="noopener noreferrer">Using CSS
-100%</a> width and height properties (no JavaScript).
-</li>
-<li>
-<a href="https://jsbin.com/xureyu/3/edit?html,css,output" target="_blank" rel="noopener noreferrer">Using CSS
-viewport</a> units for width and height (no JavaScript).
-</li>
+  <li><a href="https://jsbin.com/zowuqey/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">Original approach</a>, using JavaScript. This solution works on any browser, so we will focus on the two following methods, based on pure CSS.</li>
+  <li><a href="https://jsbin.com/sakujuv/1/edit?html,css,output" target="_blank" rel="noopener noreferrer">Using CSS 100%</a> width and height properties (no JavaScript).</li>
+  <li><a href="https://jsbin.com/xureyu/3/edit?html,css,output" target="_blank" rel="noopener noreferrer">Using CSS viewport</a> units for width and height (no JavaScript).</li>
 </ol>
+
 <p>Resizing the browser window shows that #1 (JavaScript) and #3
 (viewport units) behave in the same way: the width or height of the
 video always fills the window (whichever is smaller), and we always see
@@ -5658,23 +5636,9 @@ the source code shown below):</p>
 <h4>Notes:</h4>
 
 <ul>
-<li>
-The &lt;track&gt; element at <i>line 9</i> has an attribute
-named kind that indicates the type of the track that is included.
-Possible values
-are: subtitles, captions, descriptions, chapters or metadata.
-</li>
-<li>
-The &lt;track&gt; element also has an attribute default that indicates
-that we want this track to be displayed by default when reading the
-video.
-</li>
-<li>
-We also used an attribute named crossorigin that is necessary just to
-run this demo, as it is required by the server that hosts the video from
-this example (server = codepen.io, but as the video and .vtt files come
-from another origin -another server-, this attribute is necessary).
-</li>
+  <li>The &lt;track&gt; element at <i>line 9</i> has an attribute named kind that indicates the type of the track that is included. Possible values are: subtitles, captions, descriptions, chapters or metadata.</li>
+  <li>The &lt;track&gt; element also has an attribute default that indicates that we want this track to be displayed by default when reading the video.</li>
+  <li>We also used an attribute named crossorigin that is necessary just to run this demo, as it is required by the server that hosts the video from this example (server = codepen.io, but as the video and .vtt files come from another origin -another server-, this attribute is necessary).</li>
 </ul>
 
 <h4>Multiple tracks may be included in a video element</h4>
@@ -7661,8 +7625,8 @@ href="http://www.creativebloq.com/design-tools/data-visualization-712402" target
   <li><p>MDN’s Web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas" target="_blank" rel="noopener noreferrer">&lt;canvas&gt;: The Graphics Canvas element</a></p></li>
   <li><p>The &lt;canvas&gt; element is well supported by browsers:</p>
   <ul>
-  <li><p>CanIUse: <a href="https://caniuse.com/canvas" target="_blank" rel="noopener noreferrer">browser support table</a></p></li>
-  <li><p>MDN’s <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#Browser_compatibility" target="_blank" rel="noopener noreferrer">compatibility table of &lt;canvas&gt;</a></p></li>
+    <li><p>CanIUse: <a href="https://caniuse.com/canvas" target="_blank" rel="noopener noreferrer">browser support table</a></p></li>
+    <li><p>MDN’s <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#Browser_compatibility" target="_blank" rel="noopener noreferrer">compatibility table of &lt;canvas&gt;</a></p></li>
   </ul>
   </li>
 </ul>
@@ -10265,7 +10229,8 @@ rectangles:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre><code>var canvas, ctx, w, h;
+<pre><code>
+var canvas, ctx, w, h;
 function init() {
 canvas = document.getElementById(&#39;myCanvas&#39;);
 ctx = canvas.getContext(&#39;2d&#39;);
@@ -10394,18 +10359,11 @@ to ctx.stroke() or ctx.fill().</p>
 <h4>Here are the 5 different steps:</h4>
 
 <ol type="1">
-<li><p>Put the “pencil” somewhere with a call to ctx.moveTo(x1, y1).
-This will be the origin of the first line.</p></li>
-<li><p>Call the ctx.lineTo(x2, y2) method to draw a line from the
-previous position (previous step) to the position passed as parameters
-to the lineTo(…) method. This position will serve as the origin for the
-next line to be drawn.</p></li>
-<li><p>Call lineTo(x3, y3) again to draw a line that goes from (x2, y2)
-to (x3, y3). This line will start at the end of the previous
-one.</p></li>
-<li><p>Repeat step 3 to draw more connected lines.</p></li>
-<li><p>Call the ctx.stroke() or the ctx.fill() methods to draw the
-path defined by the different lines.</p></li>
+  <li><p>Put the “pencil” somewhere with a call to ctx.moveTo(x1, y1). This will be the origin of the first line.</p></li>
+  <li><p>Call the ctx.lineTo(x2, y2) method to draw a line from the previous position (previous step) to the position passed as parameters to the lineTo(…) method. This position will serve as the origin for the next line to be drawn.</p></li>
+  <li><p>Call lineTo(x3, y3) again to draw a line that goes from (x2, y2) to (x3, y3). This line will start at the end of the previous one.</p></li>
+  <li><p>Repeat step 3 to draw more connected lines.</p></li>
+  <li><p>Call the ctx.stroke() or the ctx.fill() methods to draw the path defined by the different lines.</p></li>
 </ol>
 
 <p>Note the call to ctx.stroke() or ctx.fill() will use the current
@@ -10747,15 +10705,10 @@ it is disconnected, and even if it has already been drawn!</p>
 <p>What happened is:</p>
 
 <ol type="1">
-<li><p>The call to stroke() has drawn the path corresponding to the
-<i>lines 5-7</i>. Indeed, the first part of the path (on the left) has
-actually been drawn once in wireframe mode, and in blue.</p></li>
-<li><p>Then, the call to fill() at <i>line 20</i> has drawn the whole
-path again, but in pink and in filled mode. But this time the path
-corresponds to <i>lines 5-7</i> plus <i>lines 14-16</i> that make up the
-second shape on the right. <i>So the path that has been drawn this time
-is made of both of the triangles.</i></p></li>
+  <li><p>The call to stroke() has drawn the path corresponding to the <i>lines 5-7</i>. Indeed, the first part of the path (on the left) has actually been drawn once in wireframe mode, and in blue.</p></li>
+  <li><p>Then, the call to fill() at <i>line 20</i> has drawn the whole path again, but in pink and in filled mode. But this time the path corresponds to <i>lines 5-7</i> plus <i>lines 14-16</i> that make up the second shape on the right. <i>So the path that has been drawn this time is made of both of the triangles.</i></p></li>
 </ol>
+
 <p><b>Important</b>: If you do not want to draw parts of the same path
 several times, you need to draw two different paths, using
 the ctx.beginPath() method, as shown in the next example.</p>
@@ -15652,30 +15605,16 @@ listen to.</p>
   alt="Mouse events illustrated."
   style="width:35%;" />
 
-<p>We saw in the last example how to detect
-the mouseenter and mouseout events.</p>
+<p>We saw in the last example how to detect the mouseenter and mouseout events.</p>
 <p>There are other events related to the mouse:</p>
 
 <ul>
-<li><p>mouseleave: similar to mouseout, fired when the mouse leaves the
-surface of the element. The difference
-between mouseleave and mouseout is that mouseleave does not fire when
-the cursor moves over descendant elements, and mouseout is fired when
-the element moved is outside of the bounds of the original element or is
-a child of the original element.</p></li>
-<li><p>mouseover: the mouse cursor is moving over the element that
-listens to that event. A mouseover event occurs on an element when you
-are over it - coming from either its child OR parent element, but
-a mouseenter event only occurs when the mouse moves from the parent
-element to the child element.</p></li>
-<li><p>mousedown: fired when a mouse button is pressed.</p></li>
-<li><p>mouseup: fired when a mouse button is released.</p></li>
-<li><p>mouseclick: fired after a mousedown and a mouseup have
-occured.</p></li>
-<li><p>mousemove: fired while the mouse moves over the element. Each
-time the mouse moves, a new event is fired,
-unlike with mouseover or mouseenter, where only one event is
-fired.</p></li>
+  <li><p>mouseleave: similar to mouseout, fired when the mouse leaves the surface of the element. The difference between mouseleave and mouseout is that mouseleave does not fire when the cursor moves over descendant elements, and mouseout is fired when the element moved is outside of the bounds of the original element or is a child of the original element.</p></li>
+  <li><p>mouseover: the mouse cursor is moving over the element that listens to that event. A mouseover event occurs on an element when you are over it - coming from either its child OR parent element, but a mouseenter event only occurs when the mouse moves from the parent element to the child element.</p></li>
+  <li><p>mousedown: fired when a mouse button is pressed.</p></li>
+  <li><p>mouseup: fired when a mouse button is released.</p></li>
+  <li><p>mouseclick: fired after a mousedown and a mouseup have occured.</p></li>
+  <li><p>mousemove: fired while the mouse moves over the element. Each time the mouse moves, a new event is fired, unlike with mouseover or mouseenter, where only one event is fired.</p></li>
 </ul>
 
 <h4>The tricky part: accurately getting the mouse position relative to the canvas</h4>
@@ -16005,7 +15944,7 @@ function animationLoop() {
 <p>This example shows one very important good practice when doing animation
 and interaction: if you want to achieve a smooth animation, set the
 state variables 60 times/s inside the animation loop <i>(lines 45-49)</i>,
-depending on increments you set in event listeners <li>(lines 23-31)</i>.</p>
+depending on increments you set in event listeners <i>(lines 23-31)</i>.</p>
 
 <h4>Example #2: draw in a canvas as if you were using a pencil</h4>
 <!------------------------------------------------------------------------------------------------>
@@ -17343,7 +17282,7 @@ presented in a later section dedicated to form validation.</p>
   style="width:30%;"
    alt="Enter your email." />
 
-<p>Try it on your browser:                         Enter your email: </p>
+<p>Try it on your browser:</p>
 
 <details>
   <summary>Click to expand!</summary>
@@ -17865,25 +17804,11 @@ value=5 min=0, max=10 step=&quot;any&quot;, ticks at 0, 5 and 10:  
 <h4>External resources</h4>
 
 <ul>
-<li>
-You can use CSS for “standard” styling (size, color, background color,
-etc.) . However, some custom attributes are available.
-Check <a href="https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/" target="_blank" rel="noopener noreferrer">this
-article from CSS tricks</a>.
-</li>
-<li>
-A script that automatically generates ticks, depending on the min, max
-and step attributes (Codepen from Dudley
-Storey): <a href="https://codepen.io/dudleystorey/pen/Klnzy" target="_blank" rel="noopener noreferrer">Auto-Generated
-HTML5 range input Ticks</a>
-</li>
-<li>
-From CSS{Portal}, a CSS generator help you style the html input range
-tag, very easy to
-use: <a href="https://www.cssportal.com/style-input-range/" target="_blank" rel="noopener noreferrer">Style Input
-Range</a>
-</li>
+  <li>You can use CSS for “standard” styling (size, color, background color, etc.) . However, some custom attributes are available. Check <a href="https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/" target="_blank" rel="noopener noreferrer">this article from CSS tricks</a>.</li>
+  <li>A script that automatically generates ticks, depending on the min, max and step attributes (Codepen from Dudley Storey): <a href="https://codepen.io/dudleystorey/pen/Klnzy" target="_blank" rel="noopener noreferrer">Auto-Generated HTML5 range input Ticks</a></li>
+  <li>From CSS{Portal}, a CSS generator help you style the html input range tag, very easy to use: <a href="https://www.cssportal.com/style-input-range/" target="_blank" rel="noopener noreferrer">Style Input Range</a></li>
 </ul>
+
 <div data-align="center" width="100%">
 <table>
 <colgroup>
@@ -17975,12 +17900,9 @@ or :required selectors</td>
 </tbody>
 </table>
 </div>
+
 <ul>
-<li>
-MDN’s Web
-Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range" target="_blank" rel="noopener noreferrer">&lt;input
-type=range&gt;</a>
-</li>
+  <li>MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range" target="_blank" rel="noopener noreferrer">&lt;input type=range&gt;</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-5-1">5.5.1 Form Attributes</h3>
@@ -18616,9 +18538,10 @@ the method attribute of the form.</p>
   alt="Example of formaction attribute." />
 
 <p>The second example shows a form with two submit buttons:</p>
+
 <ul>
-<li><p>the first button submits using a GET,</p></li>
-<li><p>the second button using a POST:</p></li>
+  <li><p>the first button submits using a GET,</p></li>
+  <li><p>the second button using a POST:</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 273. formmethod attribute (332) -------------------------------->
@@ -18776,18 +18699,13 @@ the enctype attribute specified in the &lt;form enctype=…&gt; element
 
 <p>The possible values for this field are:</p>
 <ul>
-<li><p>application/x-www-form-urlencoded: all characters are
-escaped/encoded before submission, for example, spaces become “+”,
-accentuated characters are transformed into hexadecimal, etc.</p></li>
-<li><p>multipart/form-data: encoding is not done. Usually we use this
-value for submitting binary data such as images, files, etc.</p></li>
-<li><p>text/plain: some encoding is done on standard characters like
-space (that becomes a “+”), nothing is done for special
-characters.</p></li>
+  <li><p>application/x-www-form-urlencoded: all characters are escaped/encoded before submission, for example, spaces become “+”, accentuated characters are transformed into hexadecimal, etc.</p></li>
+  <li><p>multipart/form-data: encoding is not done. Usually we use this value for submitting binary data such as images, files, etc.</p></li>
+  <li><p>text/plain: some encoding is done on standard characters like space (that becomes a “+”), nothing is done for special characters.</p></li>
 </ul>
-<h4>
-Example
-</h4>
+
+<h4>Example</h4>
+
 <p><a href="https://jsbin.com/lokukam/4/edit?html,output" target="_blank" rel="noopener noreferrer">Try this
 online example at JSBin</a></p>
 <!------------------------------------------------------------------------------------------------>
@@ -18960,17 +18878,15 @@ Top of Form
 
  x  = 6
 --->
-<h4>Explanations about the attributes specific to
-the &lt;output&gt; element:</h4>
+
+<h4>Explanations about the attributes specific to the &lt;output&gt; element:</h4>
+
 <ul>
-<li><p>for: a space-separated list containing the elements ids whose
-values went into the calculation.</p></li>
-<li><p>name: the name of the element.</p></li>
-<li><p>form:  associates the &lt;output&gt; element with its form owner.
-The value must be the id of a form in the same document. This allows you
-to place an &lt;output&gt; element outside of the &lt;form&gt; with
-which it is associated.</p></li>
+  <li><p>for: a space-separated list containing the elements ids whose values went into the calculation.</p></li>
+  <li><p>name: the name of the element.</p></li>
+  <li><p>form:  associates the &lt;output&gt; element with its form owner. The value must be the id of a form in the same document. This allows you to place an &lt;output&gt; element outside of the &lt;form&gt; with which it is associated.</p></li>
 </ul>
+
 <h4>Example #2</h4>
 
 <p>Top of Form</p>
@@ -19090,11 +19006,13 @@ values</p>
 <p>The optimum attribute indicates the optimal numeric value and gives
 an indication where along the range is considered preferable. Just think
 of the &lt;meter&gt; ranges as follows:</p>
+
 <ul>
-<li><p>Range 1: between min and low</p></li>
-<li><p>Range 2: between low and high</p></li>
-<li><p>Range 3: between high and max</p></li>
+  <li><p>Range 1: between min and low</p></li>
+  <li><p>Range 2: between low and high</p></li>
+  <li><p>Range 3: between high and max</p></li>
 </ul>
+
 <p>… and depending on the value you set to optimum attribute, one of the
 ranges above becomes the “good (optimum)” range.</p>
 <p>In the previous example, with the value of the optimum attribute set
@@ -19110,13 +19028,10 @@ candidate for setting the optimum value to “Range 1”, meaning that a low
 memory usage is “good”.</p>
 
 <h4>External resources</h4>
+
 <ul>
-<li><p>From MDN’s Web  Docs: <a
-href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter" target="_blank" rel="noopener noreferrer">The
-HTML Meter element</a></p></li>
-<li><p>Good blog post: <a
-href="https://www.hongkiat.com/blog/style-html5-meter/" target="_blank" rel="noopener noreferrer">How to use and
-style the meter element</a></p></li>
+  <li><p>From MDN’s Web  Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter" target="_blank" rel="noopener noreferrer">The HTML Meter element</a></p></li>
+  <li><p>Good blog post: <a href="https://www.hongkiat.com/blog/style-html5-meter/" target="_blank" rel="noopener noreferrer">How to use and style the meter element</a></p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-6-4">5.6.4 &lt;progress&gt;</h3>
@@ -20032,21 +19947,9 @@ JavaScript, using the Web Storage API.</p>
 <h4>External resources</h4>
 
 <ul>
-<li>
-From W3C’s
-specification: <a href="https://www.w3.org/TR/webstorage/" target="_blank" rel="noopener noreferrer">The W3C Web
-Storage API recommendation</a>
-</li>
-<li>
-An Interesting article on
-Web.dev: <a href="https://web.dev/storage-for-the-web/" target="_blank" rel="noopener noreferrer">Storage for the
-Web</a>
-</li>
-<li>
-From MDN’s Web
-Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" target="_blank" rel="noopener noreferrer">Web
-Storage API</a>
-</li>
+  <li>From W3C’s specification: <a href="https://www.w3.org/TR/webstorage/" target="_blank" rel="noopener noreferrer">The W3C Web Storage API recommendation</a></li>
+  <li>An Interesting article on Web.dev: <a href="https://web.dev/storage-for-the-web/" target="_blank" rel="noopener noreferrer">Storage for the Web</a></li>
+  <li>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" target="_blank" rel="noopener noreferrer">Web Storage API</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-2-2">6.2.2 Example 1</h3>
@@ -20057,14 +19960,10 @@ back. The form never loses what you entered, even if you reload the
 page, or press “backspace” by mistake. <b>This form auto saves/restores
 its content</b>.</p>
 <p>In this example, we use the most simple way to use localStorage:</p>
+
 <ul>
-<li><p><b>Save with the localStorage.key = value syntax. </b>For
-example, localStorage.firstName = ‘Michel’ will save the value “Michel”
-with the access key being ‘firstName’</p></li>
-<li><p><b>Restore with the var value = localStorage.key syntax</b>. For
-example, var fn = localStorage.firstName; will set fn with the value
-‘Michel’ if this value has been previously saved as in the example from
-the line above.</p></li>
+  <li><p><b>Save with the localStorage.key = value syntax. </b>For example, localStorage.firstName = ‘Michel’ will save the value “Michel” with the access key being ‘firstName’</p></li>
+  <li><p><b>Restore with the var value = localStorage.key syntax</b>. For example, var fn = localStorage.firstName; will set fn with the value ‘Michel’ if this value has been previously saved as in the example from the line above.</p></li>
 </ul>
 
 <h4>Saving the form content on the fly</h4>
@@ -20171,13 +20070,10 @@ to show how to use setItem/removeItem methods):</p>
 getItem(key) to retrieve a key’s value and setItem(key, value) to set
 it. This is similar to what we saw in the examples of the page above,
 except that this time:</p>
+
 <ul>
-<li><p>The key can contain spaces, for example we can
-write: localStorage.setItem(“Instructor’s name”, “Michel”); and var name
-=  localStorage.getItem(“Instructor’s name”);, while var name =
-localStorage.Instructor’s name; will not work!</p></li>
-<li><p>In a loop or in an iterator, sometimes we need to
-set/get localStorage values using this syntax, for example: </p></li>
+  <li><p>The key can contain spaces, for example we can write: localStorage.setItem(“Instructor’s name”, “Michel”); and var name =  localStorage.getItem(“Instructor’s name”);, while var name = localStorage.Instructor’s name; will not work!</p></li>
+  <li><p>In a loop or in an iterator, sometimes we need to set/get localStorage values using this syntax, for example: </p></li>
 </ul>
 
 <pre><code>
@@ -20445,10 +20341,10 @@ cleaner (no more oninput=“localStorage.firstName = this.value;’…)</p>
 generic functions</p>
 <p>We start writing an init() function that is called when the page is
 loaded. This function will:</p>
+
 <ol type="1">
-<li><p>Define input listeners for all input fields</p></li>
-<li><p>Restore the last saved value for each input field, if
-present.</p></li>
+  <li><p>Define input listeners for all input fields</p></li>
+  <li><p>Restore the last saved value for each input field, if present.</p></li>
 </ol>
 
 <h4>Source code:</h4>
@@ -20536,17 +20432,14 @@ type=“checkboxes” that work a bit differently), etc.</p>
 <h3 id="ch6-2-6">6.2.6 Size limitations, etc.</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Few things to remember, from the Web storage specification:</p>
+
 <ul>
-<li><p>User agents (browsers) should limit the total amount of space
-allowed for storage areas.</p></li>
-<li><p>User agents may prompt the user when quotas are reached, allowing
-the user to grant more space to a site. This enables sites to store many
-user-created documents on the user’s computer, for instance.</p></li>
-<li><p>User agents should allow users to see how much space each domain
-is using.</p></li>
-<li><p>A mostly arbitrary limit of five megabytes per origin is
-recommended (translation: give at least 5Mb per origin).</p></li>
+  <li><p>User agents (browsers) should limit the total amount of space allowed for storage areas.</p></li>
+  <li><p>User agents may prompt the user when quotas are reached, allowing the user to grant more space to a site. This enables sites to store many user-created documents on the user’s computer, for instance.</p></li>
+  <li><p>User agents should allow users to see how much space each domain is using.</p></li>
+  <li><p>A mostly arbitrary limit of five megabytes per origin is recommended (translation: give at least 5Mb per origin).</p></li>
 </ul>
+
 <p><b>In many cases, local storage is all that your application will
 need for saving/loading data on demand</b>. More complex ways to do it
 exist, such as IndexedDB, a No SQL database, that proposes transactions
@@ -20657,14 +20550,10 @@ there!</p>
 <h4>Explanations:</h4>
 
 <ul>
-<li><p><i>Line 7</i>: we built a JavaScript object that contains a
-person.</p></li>
-<li><p><i>Line 9</i>: we store it in localStorage as a JSON string
-object, with a key equal to testObject.</p></li>
-<li><p><i>Line 11</i>: we restore it from localStorage as a string, and
-the JSON.parse methods turns it back into a JavaScript object.</p></li>
-<li><p><i>Line 12</i>: we print the values of the object
-properties.</p></li>
+  <li><p><i>Line 7</i>: we built a JavaScript object that contains a person.</p></li>
+  <li><p><i>Line 9</i>: we store it in localStorage as a JSON string object, with a key equal to testObject.</p></li>
+  <li><p><i>Line 11</i>: we restore it from localStorage as a string, and the JSON.parse methods turns it back into a JavaScript object.</p></li>
+  <li><p><i>Line 12</i>: we print the values of the object properties.</p></li>
 </ul>
 
 <h4>Examples</h4>
@@ -20972,8 +20861,9 @@ saw the last week, some canvas here, or image elements and so on.</p>
 <p>Imagine you have an input field like this:</p>
 
 <ol type="1">
-<li>Select one or more files: &lt;input type=“file” id=“input”/&gt;</li>
+  <li>Select one or more files: &lt;input type=“file” id=“input”/&gt;</li>
 </ol>
+
 <p>This renders as a “select files” or “browse files” button. If you
 select one file in the file chooser dialog that has popped up, before
 HTML5 you couldn’t do anything with it in the client-side: no access
@@ -21092,65 +20982,24 @@ type=“file” accept=“image/*“ multiple onchange=”filesProcess(this.f
 <h4>Explanations:</h4>
 
 <ul>
-<li>
-<i>Line 1:</i> we used the multiple attribute to allow the selection of
-multiple files in the file chooser (using shift or control
-keys). The accept=“image/”  attribute is a filter that restricts
-selection to images only. Finally, the onchange listener will call
-the filesProcess(…) function, passing as parameter the list of selected
-files for the current element (this.files).
-</li>
-<br>
-<li>
-<i>Lines 7 and 12:</i> we prepare the HTML code for building
-a &lt;table&gt; with the results.
-</li>
-<br>
-<li>
-<i>Line 10:</i> this for loop builds all the rows that compose the
-table, adding HTML code to the selection string variable. At the end of
-the loop, this variable contains all the HTML code that corresponds to
-the table of results.
-</li>
-<br>
-<li>
-<i>Line 14:</i> the table is added to the page. We use
-the innerHTML attribute of the DOM element corresponding to the &lt;div
-id=“result”&gt; in order to insert the table as its child in the DOM
-tree. As such, the table appears on the page dynamically.
-</li>
-<br>
+  <li><i>Line 1:</i> we used the multiple attribute to allow the selection of multiple files in the file chooser (using shift or control keys). The accept=“image/”  attribute is a filter that restricts selection to images only. Finally, the onchange listener will call the filesProcess(…) function, passing as parameter the list of selected files for the current element (this.files).</li><br>
+  <li><i>Lines 7 and 12:</i> we prepare the HTML code for building a &lt;table&gt; with the results.</li><br>
+  <li><i>Line 10:</i> this for loop builds all the rows that compose the table, adding HTML code to  the selection string variable. At the end of the loop, this variable contains all the HTML code that corresponds to the table of results.</li><br>
+  <li><i>Line 14:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the &lt;div id=“result”&gt; in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically. </li><br>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-3-4">6.3.4 Blob and File</h3>
 <!------------------------------------------------------------------------------------------------>
-The <a href="https://www.w3.org/TR/FileAPI/" target="_blank" rel="noopener noreferrer">HTML5 File API
-specification</a> introduces several interfaces:
+<p>The <a href="https://www.w3.org/TR/FileAPI/" target="_blank" rel="noopener noreferrer">HTML5 File API
+specification</a> introduces several interfaces:</p>
+
 <ul>
-<li>
-the
-<a href="https://www.w3.org/TR/FileAPI/#filelist-section" target="_blank" rel="noopener noreferrer">FileList</a>
-interface (we already met it) the files property is a FileList,
-</li>
-<li>
-the
-<a href="https://www.w3.org/TR/FileAPI/#file-section" target="_blank" rel="noopener noreferrer">File</a> interface
-that is useful for getting details about a file (the file variable in
-the for loop of the last example illustrates this),
-</li>
-<li>
-the
-<a href="https://www.w3.org/TR/FileAPI/#blob-section" target="_blank" rel="noopener noreferrer">Blob</a> interface
-helps read binary data (only) that is accessed slice by slice (as chunks
-of data, each one being a “Blob”),
-</li>
-<li>
-and the
-<a href="https://www.w3.org/TR/FileAPI/#APIASynch" target="_blank" rel="noopener noreferrer">FileReader</a> interface
-for reading file content (we will see how to use it in the next section
-of the course).
-</li>
+  <li>the <a href="https://www.w3.org/TR/FileAPI/#filelist-section" target="_blank" rel="noopener noreferrer">FileList</a>interface (we already met it) the files property is a FileList,</li>
+  <li>the <a href="https://www.w3.org/TR/FileAPI/#file-section" target="_blank" rel="noopener noreferrer">File</a> interface that is useful for getting details about a file (the file variable in the for loop of the last example illustrates this),</li>
+  <li>the <a href="https://www.w3.org/TR/FileAPI/#blob-section" target="_blank" rel="noopener noreferrer">Blob</a> interface helps read binary data (only) that is accessed slice by slice (as chunks of data, each one being a “Blob”), </li>
+  <li>and the <a href="https://www.w3.org/TR/FileAPI/#APIASynch" target="_blank" rel="noopener noreferrer">FileReader</a> interface for reading file content (we will see how to use it in the next section of the course).</li>
 </ul>
+
 <p>We will not use all of these interfaces, but let’s explain the
 difference between Blob and File, as most of the methods exposed by
 the FileReader interface take indiscriminately a Blob or a File as
@@ -21209,7 +21058,7 @@ Let’s see how to do it.</p>
 taken from the FileReader interface. Here is how you create a FileReader object:</p>
 
 <ol type="1">
-<li>var reader = new FileReader();</li>
+  <li>var reader = new FileReader();</li>
 </ol>
 
 <h4>Steps #2 and #3: first call a method of the FileReader object for reading the file content, then get the file content in an onload callback</h4>
@@ -21250,13 +21099,8 @@ a &lt;input type=“file” id=“file” onchange=“readFileContent(this.file
 </p>
 
 <ul>
-<li><i>Line 12</i> is executed first, and asks the Reader object to read the
-file f as text. As this takes some time, it’s an asynchronous operation
-that will be executed by the browser in the background. When the file is
-read, the reader.onload callback function is called.</li>
-<li><i>Line 4</i> is executed after <i>line 12</i>, and is called only when
-the file content is available. This callback takes an event e as a
-unique parameter, and e.target.result is the file content.</li>
+  <li><i>Line 12</i> is executed first, and asks the Reader object to read the file f as text. As this takes some time, it’s an asynchronous operation that will be executed by the browser in the background. When the file is read, the reader.onload callback function is called.</li>
+  <li><i>Line 4</i> is executed after <i>line 12</i>, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
 </ul>
 
 <p>Try a variation of the above code in your browser, that displays the
@@ -22504,7 +22348,7 @@ this page):</p>
 <h4>HTML</h4>
 
 <details>
-<summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -22615,7 +22459,7 @@ good understanding of the material.</p>
 </ul>
 
 <p>. . .The end.<br>
-<br>last updated 02-08-23 10:18pm </p>
+<br>last updated 02-15-23 7:18pm </p>
 </body>
 </html>
 <!--
