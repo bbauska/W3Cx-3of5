@@ -164,7 +164,6 @@
 <h3 id="subtitles-and-closed-captions">2.3 <a href="#ch2-3-1"><strong>Subtitles and closed captions</strong></a></h3>
 <h3 id="enhanced-html5-media-players-and-frameworks">2.4 <a href="#ch2-4-1"><strong>Enhanced HTML5 media players and frameworks</strong></a></h3>
 <h3 id="webcam-microphone-the-getusermedia-api">2.5 <a href="#ch2-5-1"><strong>Webcam, microphone: the getUserMedia API</strong></a></h3>
-<h3 id="exercises---module-2">2.6 <a href="#ch2-6-1"><strong>Exercises - Module 2</strong></a></h3>
 </blockquote>
 
 <h2 id="module-3-html5-graphics"><a href="#ch3"><strong>Module 3: HTML5 Graphics</strong></a></h2>
@@ -175,7 +174,6 @@
 <h3 id="immediate-drawing-mode-rectangles-text-images">3.3 <a href="#ch3-3-1"><strong>Immediate drawing mode: rectangles, text, images</strong></a></h3>
 <h3 id="path-drawing-mode-lines-circles-arcs-curves-and-other-path-drawing-methods">3.4 <a href="#ch3-4-1"><strong>Path drawing mode: lines, circles, arcs, curves and other path drawing methods</strong></a></h3>
 <h3 id="colors-gradients-patterns-shadows-etc.">3.5 <a href="#ch3-5-1"><strong>Colors, gradients, patterns, shadows, etc.</strong></a></h3>
-<h3 id="exercises---module-3">3.6 <a href="#ch3-6-1"><strong>Exercises - Module 3</strong></a></h3>
 </blockquote>
 
 <h2 id="module-4-html5-animation"><a href="#ch4"><strong>Module 4: HTML5 Animation</strong></a></h2>
@@ -185,8 +183,6 @@
 <h3 id="basic-animation-techniques">4.2 <a href="#ch4-2-1"><strong>Basic animation techniques</strong></a></h3>
 <h3 id="canvas-and-user-interaction-keyboard-mouse">4.3 <a href="#ch4-3-1"><strong>Canvas and user interaction (keyboard, mouse)</strong></a></h3>
 <h3 id="a-glimpse-of-advanced-canvas-functionalities">4.4 <a href="#ch4-4-1"><strong>A glimpse of advanced canvas functionalities</strong></a></h3>
-<h3 id="exercises---module-4">4.5 <a href="#ch4-5-1"><strong>Exercises -
-Module 4</strong></a></h3>
 </blockquote>
 
 <h2 id="module-5-html5-forms"><a href="#ch5"><strong>Module 5: HTML5 Forms</strong></a></h2>
@@ -5569,7 +5565,7 @@ previously.</p>
 <p>Here is the online example. We recommend that you look at the source
 code:</p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-3-1">2.3.1 HTML5 Captioning</h3>
+<h3 id="ch2-3-1">2.3.1 HTML5 Subtitles and closed captioning</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>This section introduces the HTML5 &lt;track&gt; element, useful for
 adding closed captions, subtitles, descriptions, and metadata to your
@@ -6084,7 +6080,7 @@ extra &lt;track&gt; element with a kind=“chapters” attribute.
 2.      &lt;source src=&quot;webvtt_talk.webm&quot;&gt;
 3.      &lt;source src=&quot;webvtt_talk.mp4&quot;&gt;
 4.      &lt;source src=&quot;webvtt_talk.ogv&quot;&gt;
-5.      &lt;track id=&quot;nav&quot; src=&quot;webvtt_talk_navigation.vtt&quot; &lt;b&gt;kind=&quot;chapters&quot;&lt;b&gt; srclang=&quot;en&quot;&gt;
+5.  &lt;track id=&quot;nav&quot; src=&quot;webvtt_talk_navigation.vtt&quot; &lt;b&gt;kind=&quot;chapters&quot;&lt;b&gt; srclang=&quot;en&quot;&gt;
 6.      &lt;track id=&quot;cc&quot; src=&quot;webvtt_talk_captions.vtt&quot; kind=&quot;captions&quot;
 7.            label=&quot;captions&quot; srclang=&quot;en&quot; default&gt;
 8.  &lt;/video&gt;
@@ -6190,7 +6186,7 @@ extra &lt;track&gt; element with a kind=“chapters” attribute.
 <p>This example shows how we manage to render music scores in real time as the video plays.</p>
 <p>Some JavaScript code listens to the ontimeupdate event while the video is playing. We use the currentTime property of the video to know exactly where we are in the video. Finally, we also rely on an external library to render in an HTML5 canvas the bars corresponding to the current video explanations. We render in real time guitar pro tablatures using the alphatab.net library.</p>
 <!------------------------------------------------------------------------------------------------>
-<!---- 99. We render in real time guitar pro tablatures using the alphatab.net library (118) ----->
+<!---- 99. we render in real time guitar pro tablatures using the alphatab.net library (118) ----->
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image099.png?raw=true"
@@ -6198,7 +6194,7 @@ extra &lt;track&gt; element with a kind=“chapters” attribute.
   style="width:55%;" />
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-3-8">2.3.8 Enhanced HTML5 Video Players</h3>
+<h3 id="ch2-4-1">2.4.1 Enhanced HTML5 Video Players</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>There are numerous “enhanced” video players; most are free and open source, some are commercial. They offer lots of features, which are listed below. Not all of these features are available in every player, this list just illustrates what can be added to the standard &lt;video&gt; element.</p>
 <p>We call them “HTML5 enhanced video players” because on top of being based on the &lt;video&gt; element, they come with custom features, custom look’n’feel, chapters, etc., based on a JavaScript API that makes such customization possible.</p>
@@ -6296,7 +6292,7 @@ extra &lt;track&gt; element with a kind=“chapters” attribute.
   style="width:60%;" />
   
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-4-1">2.4.1 Webcam</h3>
+<h3 id="ch2-5-1">2.5.1 Webcam, microphone: the getUserMediaAPI</h3>
 <!------------------------------------------------------------------------------------------------>
 <h4>Introduction</h4>
 
@@ -6312,9 +6308,9 @@ possibilities are numerous.</p>
 <p>We will therefore study together how to access the audio and video
 streams of the hardware on which a Web application is going to run, and
 how to parameterize them (choice of camera, resolution, etc.).</p>
-<h4>
-The getUserMedia API
-</h4>
+
+<h4>The getUserMedia API</h4>
+
 <p>The <a href="https://www.w3.org/TR/mediacapture-streams/" target="_blank" rel="noopener noreferrer">getUserMedia
 API</a> is useful for controlling a Webcam video stream.</p>
 <p>This API is one component of
@@ -6390,7 +6386,7 @@ We can also simplify the code by using a writing with async/await of JavaScript:
 <p><b>HTTPS is mandatory:</b> for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.</p>
 <p>Support of getUserMedia/stream is <a href="https://caniuse.com/stream" target="_blank" rel="noopener noreferrer">very good in all modern browsers</a>, including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4-2">2.4.2 More On getUserMedia</h3>
+<h3 id="ch2-5-2">2.5.2 More On getUserMedia</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let’s see some more examples of what we can do with the getUserMedia API: start/stop the Webcam, take a screenshot from the current video stream from the Webcam, and apply CSS effects in real time. Below, we give links to some cool examples available on the Web.</p>
 <h4>How to stop/release the Webcam</h4>
@@ -6763,7 +6759,7 @@ section (related to the &lt;canvas&gt; element).</p>
   <li><p><a href="https://webcamtoy.com/" target="_blank" rel="noopener noreferrer">Webcam Toy</a>: video effects on Paul Neave’s webcam (using WebGL)</p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4-3">2.4.3 Using the Microphone</h3>
+<h3 id="ch2-5-3">2.5.3 Using the Microphone</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Instead of using the getUserMedia API
 with: navigator.getUserMedia({video:true}, onSuccess, onError), it is
@@ -6793,7 +6789,7 @@ etc.).</p>
   alt="WebAudio Live Processing." />
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4-4">2.4.4 Webcam Resolution</h3>
+<h3 id="ch2-5-4">2.5.4 Webcam Resolution</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It is possible to set “hints” for the preferred cam/resolution during
 video capture. This is done by using a <a href="https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4" target="_blank" rel="noopener noreferrer">"constraint" object </a>that is passed as a parameter to the getUserMedia(…) method. It’s just the same object we passed in the basic example: navigator.getUserMedia({video:true}, success, error) except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.</p>
@@ -7045,7 +7041,7 @@ the ones for selecting the front or rear camera (smartphones):</p>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4-5">2.4.5 The MediaRecorder API</h3>
+<h3 id="ch2-5-5">2.5.5 The MediaRecorder API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This MediaRecoredr API allows to record / capture the audio or video
 stream. There are many sources for audio or video streams, but we will
@@ -18555,8 +18551,7 @@ the method attribute of the form.</p>
 <h3 id="ch5-5-11">5.5.11 formnovalidate</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>The formnovalidate attribute is targeted to the &lt;input
-type=“submit”&gt; input fields. This attribute is rarely used, so there
-will be no questions about it in the end of the week’s exercises.</p>
+type=“submit”&gt; input fields. This attribute is rarely used.</p>
 <p>This atrribute allows the submission of a form even if it
 contains  <i>invalid</i> fields. For example:  a form that has
 an &lt;input type=“email”&gt; field or a field required and which are
@@ -22147,7 +22142,7 @@ href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" 
   
 <h4><b>Example #2:</b> reverse geocoding + OpenStreetMap</h4>
 
-<p><b>Important note:</b> these examples below rely on an external <a href="https://github.com/perliedman/leaflet-control-geocoder" target="_blank" rel="noopener noreferrer">GitHub resource</a>. No related questions are asked in this module’s exercises or final exam.</p>
+<p><b>Important note:</b> these examples below rely on an external <a href="https://github.com/perliedman/leaflet-control-geocoder" target="_blank" rel="noopener noreferrer">GitHub resource</a>.</p>
 <p>Please, pan and zoom on the map and click.<br>
 <br>The longitude and latitude are computed from your click and a free reverse geocoding service is used to convert to a physical address.</p>
 <!------------------------------------------------------------------------------------------------>
@@ -22461,7 +22456,7 @@ good understanding of the material.</p>
 </ul>
 
 <p>. . .The end.<br>
-<br>last updated 02-16-23 12:51pm </p>
+<br>last updated 02-17-23 9:22am </p>
 </body>
 </html>
 <!--
