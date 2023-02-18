@@ -6,8 +6,8 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w3cx logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center"
-  src="./images/w3cx-logo.jpg?raw=true"
+<p align="center">
+<img  src="./images/w3cx-logo.jpg?raw=true"
   alt="W3C logo"
   style="width:35%;" />
 </p>
@@ -176,9 +176,9 @@ Here are a few possibilities for Web editors:
 <!------------------------------------- 02. jsbin logo (04) -------------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
-<img src="./images/image002.png?raw=true"
-   alt="JSBin logo."
-   width="15%">
+<img src="./images/image004.png?raw=true"
+  alt="JSBin logo."
+  width="15%" />
 &nbsp;
 <br/>
 
@@ -236,7 +236,7 @@ Example of a <a href="./images/image004.png">CanIUse browser</a> support table (
 <p align="center">
 <img src="./images/image004.png?raw=true"
    alt="Example CSS in CanIUse."
-   width="65%">
+   width="65%" />
 &nbsp;
 <br/>
 
