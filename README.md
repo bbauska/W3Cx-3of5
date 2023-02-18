@@ -1,28 +1,28 @@
 <h2 align="center">W3Cx Front-End Web Developer</h2>
 <br/>
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- readme.md of W3Cx-3of5-HTML5.1x -------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------------- w3cx logo (01) ----------------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/w3cx-logo.jpg?raw=true"
-   width="35%"
-   alt="W3C logo" />
-</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of W3Cx-3of5-HTML5.1x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w3cx logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/w3cx-logo.jpg?raw=true"
+  alt="W3C logo"
+  style="width:35%;" />
 
 <h3 align="center">W3Cx-3of5-HTML5.1x - Coding Essentials and Best Practices</h3>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 01. W3Cx-3of5-HTML5.1x logo (01) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<p align="center" width="100%">
-<img src="./images/image001.png?raw=true"
-   width="65%"
-   alt="W3Cx HTML 5.1x logo" />
-</p>
+<img class="displayed"
+  src="./images/image001.png?raw=true"
+  alt="W3Cx HTML 5.0x logo."
+  style="width:65%;"
+  alt="W3Cx HTML 5.1x logo" />
 
 <h2><a href="#table-of-contents">Table of Contents</a></h2>
+
 <ol type="a">
   <li><a href="#cha-1">About W3C and the Web</a></li>
   <li><a href="#cha-2">Why accessibility is important</a></li>
@@ -17538,7 +17538,6 @@ At <i>lines 3</i> and <i>5</i>, the value of the list attribute of the inpu
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch5-5-6">5.5.6 pattern</h3>
 <!------------------------------------------------------------------------------------------------>
-
 The pattern attribute enables the validation of the user's input on the fly (also at submission time), based on <b>regular expressions</b>. It applies to the text, search, url, tel, email, and password input types. 
 
 The pattern attribute follows the syntax of [JavaScript regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). 
@@ -17591,7 +17590,6 @@ With the previous example, until the value of the input field is equal to 3 alph
 
 As seen in the previous examples, we used some CSS pseudo classes for automatically setting the background-color of the input field as we type.
 
-<!-- image here --->
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 271b. type multiple email addresses (329) --------------------------->
 <!------------------------------------------------------------------------------------------------>
