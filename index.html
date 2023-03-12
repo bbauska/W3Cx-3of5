@@ -35,7 +35,7 @@
     pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    code.sourceCode > span { color: red; text-decoration: inherit; }
     div.sourceCode { margin: 1em 0; }
     pre.sourceCode { margin: 0; }
     @media screen {
@@ -104,15 +104,15 @@
     h4 { font-size: 16px;
 		font-family: Didot; } 
     h5 { font-size: 12px;
-		font-family: Serif; } 
+		font-family: Bahnschrift; } 
     h6 { font-size: 10px;
-		font-family: Serif; }
+		font-family: Bahnschrift; }
 	p {
 		font-family: "Bahnschrift", Didot, Lucida Bright, Comic Sans;
 	}
 	
   </style>
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -773,6 +773,7 @@ save your own version using the “Bins/create milestone” menu, share your ver
 <p>This is an example of one way to organize a blog. Here, we have designed
 the HTML page using a &lt;header&gt; element that contains the “Simple
 HTML5 blog” text that appears on top of the page.</p>
+
 <h4>HTML code:</h4>
 
 <pre class="html5"><code>
@@ -844,7 +845,7 @@ hyperlinks…</p>
 <h4>And here is the CSS we used in this example for the &lt;nav&gt; element:</h4>
 
 <details>
-  <summary>CSS example &lt;nav&gt; </summary>
+  <summary>CSS example &lt;nav&gt;</summary>
   
 <div class="sourceCode" id="cb7"><pre
 class="sourceCode css"><code class="sourceCode css"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>nav {</span>
@@ -7066,8 +7067,9 @@ right:</p>
 <details>
   <summary>Click to expand!</summary>
   
-<div class="sourceCode" id="cb157"><pre
-class="sourceCode js"><code class="sourceCode javascript"><span id="cb157-1"><a href="#cb157-1" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> mediaRecorder<span class="op">;</span></span>
+<div class="sourceCode" id="cb157">
+<pre class="sourceCode js"><code class="sourceCode javascript">
+<span id="cb157-1"><a href="#cb157-1" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> mediaRecorder<span class="op">;</span></span>
 <span id="cb157-2"><a href="#cb157-2" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> recordedBlobs<span class="op">;</span></span>
 <span id="cb157-3"><a href="#cb157-3" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> gumVideo <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">querySelector</span>(<span class="st">&#39;video#gum&#39;</span>)<span class="op">;</span></span>
 <span id="cb157-4"><a href="#cb157-4" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> recordedVideo <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">querySelector</span>(<span class="st">&#39;video#recorded&#39;</span>)<span class="op">;</span></span>
@@ -7146,7 +7148,10 @@ class="sourceCode js"><code class="sourceCode javascript"><span id="cb157-1"><a 
 <span id="cb157-77"><a href="#cb157-77" aria-hidden="true" tabindex="-1"></a>  <span class="bu">document</span><span class="op">.</span><span class="at">body</span><span class="op">.</span><span class="fu">removeChild</span>(a)<span class="op">;</span></span>
 <span id="cb157-78"><a href="#cb157-78" aria-hidden="true" tabindex="-1"></a>  <span class="bu">window</span><span class="op">.</span><span class="at">URL</span><span class="op">.</span><span class="fu">revokeObjectURL</span>(url)<span class="op">;</span></span>
 <span id="cb157-79"><a href="#cb157-79" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span> <span class="dv">100</span>)<span class="op">;</span></span>
-<span id="cb157-80"><a href="#cb157-80" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<span id="cb157-80"><a href="#cb157-80" aria-hidden="true" tabindex="-1"></a>}</span>
+</code></pre>
+</div>
+
 </details>
 
 <h4>CSS</h4>
@@ -7163,44 +7168,44 @@ class="sourceCode js"><code class="sourceCode javascript"><span id="cb157-1"><a 
 * tree.
 */
 button {
-margin: 0 3px 10px 0;
-padding-left: 2px;
-padding-right: 2px;
-width: 99px;
-}
+  margin: 0 3px 10px 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 99px;
+  }
 button:last-of-type {
-margin: 0;
-}
+  margin: 0;
+  }
 p.borderBelow {
-margin: 0 0 20px 0;
-padding: 0 0 20px 0;
-}
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+  }
 video {
-height: 232px;
-margin: 0 12px 20px 0;
-vertical-align: top;
-width: calc(20em - 10px);
+  height: 232px;
+  margin: 0 12px 20px 0;
+  vertical-align: top;
+  width: calc(20em - 10px);
 }
 video:last-of-type {
-margin: 0 0 20px 0;
-}
+  margin: 0 0 20px 0;
+  }
 video#gumVideo {
-&gt; margin: 0 20px 20px 0;
+  &gt; margin: 0 20px 20px 0;
 }
 @media screen and (max-width: 500px) {
-button {
-font-size: 0.8em;
-width: calc(33% - 5px);
-}
+  button {
+  font-size: 0.8em;
+  width: calc(33% - 5px);
+  }
 }
 @media screen and (max-width: 720px) {
 video {
-height: calc((50vw - 48px) * 3 / 4);
-margin: 0 10px 10px 0;
-width: calc(50vw - 48px);
-}
+  height: calc((50vw - 48px) * 3 / 4);
+  margin: 0 10px 10px 0;
+  width: calc(50vw - 48px);
+  }
 video#gumVideo {
-margin: 0 10px 10px 0;
+  margin: 0 10px 10px 0;
 }
 }
 </code></pre>
@@ -7315,17 +7320,17 @@ codec, then generate programmatically a click event on the link. This will for
   
 <pre><code>
 1.  function download() {
-2.  var blob = new Blob(recordedChunks, {
-3.  type: &#39;video/webm&#39;
-4.  });
-5.  var url = URL.createObjectURL(blob);
-6.  var a = document.createElement(&#39;a&#39;);
-7.  document.body.appendChild(a);
-8.  a.style = &#39;display: none&#39;;
-9.  a.href = url;
-10. a.download = &#39;test.webm&#39;;
-11. a.click();
-12. window.URL.revokeObjectURL(url);
+2.    var blob = new Blob(recordedChunks, {
+3.      type: &#39;video/webm&#39;
+4.      });
+5.    var url = URL.createObjectURL(blob);
+6.    var a = document.createElement(&#39;a&#39;);
+7.    document.body.appendChild(a);
+8.      a.style = &#39;display: none&#39;;
+9.      a.href = url;
+10.     a.download = &#39;test.webm&#39;;
+11.     a.click();
+12.   window.URL.revokeObjectURL(url);
 13. }
 </code></pre>
 
@@ -7382,9 +7387,7 @@ will be displayed, or messages of your own (use
 the console.log(string) JavaScript function in the JavaScript code
 embedded in your html page). In the console, you will be able to type
 any JavaScript command.</p>
-<p>Let’s look
-at <a href="https://jsbin.com/visariz/1/edit?html,output" target="_blank" rel="noopener noreferrer">this example
-on JS Bin</a>:</p>
+<p>Let’s look at <a href="https://jsbin.com/visariz/1/edit?html,output" target="_blank" rel="noopener noreferrer">this example on JS Bin</a>:</p>
 
 <div>
 <table>
@@ -7395,7 +7398,7 @@ on JS Bin</a>:</p>
 <thead>
   <tr class="header">
     <th>#</th>
-    <th>html code</th>
+    <th>HTML code</th>
   </tr>
 </thead>
 <tbody>
@@ -7425,7 +7428,7 @@ on JS Bin</a>:</p>
   </tr>
   <tr class="odd">
     <td>7</td>
-    <td>   console.log(“Some JavaScript code has been executed”);</td>
+    <td>console.log(“Some JavaScript code has been executed”);</td>
   </tr>
   <tr class="even">
     <td>8</td>
@@ -7454,7 +7457,7 @@ on JS Bin</a>:</p>
 </tbody>
 </table>
 </div>
-
+<br>
 <p>The simplest way to add JavaScript code in an HTML page, is by using
 the &lt;script&gt;…&lt;/script&gt; element.</p>
 <p><b>The code in this example is executed sequentially when the page is
@@ -14891,8 +14894,11 @@ as position or speed of an alien ship, and the animation loop will take
 care of these variables to move the objects.</p>
 <p>The events are called <i>DOM events</i>, and we use the <i>DOM
 JavaScript API</i> to create <i>event handlers</i>.</p>
+
 <h4>There are three ways to manage events in the DOM structure</h4>
+
 <h4>First method: declare event handlers in the HTML code</h4>
+
 <p>You will often find this in examples on the Web:</p>
 
 <pre><code>
@@ -22437,9 +22443,9 @@ good understanding of the material.</p>
   (see this YouTube tutorial about how to get such a key).</li>
 </ul>
 
-<p>. . .The end.<br>
-<br>last updated 03-10-23 10022pm </p>
-</body>
+<h5>. . .The end.<br>
+<br>last updated 03-12-23 2:24pm</h5>
+  </body>
 </html>
 <!--
 <img class="displayed"
