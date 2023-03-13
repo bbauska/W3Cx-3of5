@@ -177,7 +177,7 @@
 <h2><strong>Module 4: HTML5 Animation</strong></h2>
 
 <blockquote>
-<h3>4.1 <a href="#ch4-1-1"><strong>Introduction - Module 4 Animations</strong></a></h3>
+<h3>4.1 <a href="#ch4-1-1"><strong>Introduction - Module 4: Animations</strong></a></h3>
 <h3>4.2 <a href="#ch4-2-1"><strong>Basic animation techniques</strong></a></h3>
 <h3>4.3 <a href="#ch4-3-1"><strong>Canvas and user interaction (keyboard, mouse)</strong></a></h3>
 <h3>4.4 <a href="#ch4-4-1"><strong>A glimpse of advanced canvas functionalities</strong></a></h3>
@@ -186,7 +186,7 @@
 <h2><strong>Module 5: HTML5 Forms</strong></h2>
 
 <blockquote>
-<h3>5.1 <a href="#ch5-1-1"><strong>Introduction - Module 5 Forms</strong></a></h3>
+<h3>5.1 <a href="#ch5-1-1"><strong>Introduction - Module 5: Forms</strong></a></h3>
 <h3>5.2 <a href="#ch5-2-1"><strong>Elements and Attributes</strong></a></h3>
 <h3>5.3 <a href="#ch5-3-1"><strong>Accessible Forms</strong></a></h3>
 <h3>5.4 <a href="#ch5-4-1"><strong>&lt;input&gt; Types</strong></a></h3>
@@ -15686,10 +15686,12 @@ y: evt.clientY - rect.top
 
 <h4>CSS</h4>
 
-<div class="sourceCode" id="cb371"><pre
-class="sourceCode css"><code class="sourceCode css"><span id="cb371-1"><a href="#cb371-1" aria-hidden="true" tabindex="-1"></a>canvas {</span>
+<div class="sourceCode" id="cb371">
+<pre class="sourceCode css"><code class="sourceCode css"><span id="cb371-1"><a href="#cb371-1" aria-hidden="true" tabindex="-1"></a>canvas {</span>
 <span id="cb371-2"><a href="#cb371-2" aria-hidden="true" tabindex="-1"></a><span class="kw">border</span>:<span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">black</span></span>
-<span id="cb371-3"><a href="#cb371-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<span id="cb371-3"><a href="#cb371-3" aria-hidden="true" tabindex="-1"></a>}</span>
+</code></pre>
+</div>
 
 <h4>HTML</h4>
 
@@ -15697,23 +15699,23 @@ class="sourceCode css"><code class="sourceCode css"><span id="cb371-1"><a href="
   <summary>Click to expand!</summary>
 
 <pre><code>
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Mouse event - Good code&lt;/title&gt;
-&lt;style&gt;
-body {
-margin: 20px;
-padding: 0px;
-}
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-This is a canvas:&lt;p&gt;&lt;/p&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;&lt;/canvas&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+1.  &lt;!DOCTYPE html&gt;
+2.  &lt;html lang=&quot;en&quot;&gt;
+3.    &lt;head&gt;
+4.    &lt;meta charset=&quot;utf-8&quot;&gt;
+5.    &lt;title&gt;Mouse event - Good code&lt;/title&gt;
+6.    &lt;style&gt;
+7.      body {
+8.      margin: 20px;
+9.      padding: 0px;
+10.     }
+11.   &lt;/style&gt;
+12.   &lt;/head&gt;
+13.   &lt;body&gt;
+14.     This is a canvas:&lt;p&gt;&lt;/p&gt;
+15.     &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;&lt;/canvas&gt;
+16.   &lt;/body&gt;
+17. &lt;/html&gt;
 </code></pre>
 
 </details>
@@ -15721,14 +15723,14 @@ This is a canvas:&lt;p&gt;&lt;/p&gt;
 <h4>JavaScript</h4>
 
 <pre><code>
-function getMousePos(canvas, evt) {
-   // necessary to take into account CSS boundaries
-   var rect = canvas.getBoundingClientRect();
-   return {
-      x: evt.clientX - rect.left,
-      y: evt.clientY - rect.top
-   };
-}
+1. function getMousePos(canvas, evt) {
+2.    // necessary to take into account CSS boundaries
+3.    var rect = canvas.getBoundingClientRect();
+4.    return {
+5.       x: evt.clientX - rect.left,
+6.       y: evt.clientY - rect.top
+7.    };
+8. }
 </code></pre>
 
 <h4>WRONG code:</h4>
@@ -20466,9 +20468,7 @@ confusing if the user is performing different tasks in each.</p>
 <p><b>By using sessionStorage, the data you store will be scoped and
 therefore not leak across tabs!</b></p>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-2-7">
-6.2.7 Storing more than strings? Use JSON!
-</h3>
+<h3 id="ch6-2-7">6.2.7 Storing more than strings? Use JSON!</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>Storing strings is all well and good, but it quickly
 becomes limiting: you may want to store more complex data with at least
@@ -20810,32 +20810,32 @@ saw the last week, some canvas here, or image elements and so on.</p>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Example of using readAsDataURL&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;input type=&quot;file&quot; multiple onchange=&quot;readImagesAndPreview(this.files);&quot;&gt;
-&lt;p&gt;
-&lt;div id=&quot;thumbnails&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
-   var container = document.getElementById(&quot;thumbnails&quot;);
-   function readImagesAndPreview(files) {
-      for(var i=0; i &lt; files.length; i++) {
-         var f = files[i];
-         var reader = new FileReader();
-         reader.onload = function(e) {
-            var img = document.createElement(&quot;img&quot;);
-            img.src = e.target.result;
-            img.width = 100;
-            container.appendChild(img);
-         }
-         reader.readAsDataURL(f);
-     }
-}
- &lt;/script&gt;
-&lt;/body&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Example of using readAsDataURL&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;input type=&quot;file&quot; multiple onchange=&quot;readImagesAndPreview(this.files);&quot;&gt;
+      &lt;p&gt;
+    &lt;div id=&quot;thumbnails&quot;&gt;&lt;/div&gt;
+    &lt;script&gt;
+      var container = document.getElementById(&quot;thumbnails&quot;);
+      function readImagesAndPreview(files) {
+        for(var i=0; i &lt; files.length; i++) {
+           var f = files[i];
+           var reader = new FileReader();
+           reader.onload = function(e) {
+              var img = document.createElement(&quot;img&quot;);
+              img.src = e.target.result;
+              img.width = 100;
+              container.appendChild(img);
+           }
+           reader.readAsDataURL(f);
+        }
+      }
+    &lt;/script&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
@@ -20936,16 +20936,11 @@ not images will be greyed and non selectable.</p>
 
 <h4>Select several images:</h4>
 
-<h4>Source code extract:</h4>
-
-<p>Select several images: &lt;input
-type=“file” accept=“image/*“ multiple onchange=”filesProcess(this.files)“ name=”selection”/&gt;</p>
-
 <details>
   <summary>Click to expand!</summary>
 
 <pre><code>
-1. &lt;p&gt;
+1.  &lt;p&gt;Select several images: &lt;input type=“file” accept=“image/*“ multiple onchange=”filesProcess(this.files)“ name=”selection”/&gt;&lt;/p&gt;
 2. &lt;div id=&quot;result&quot;&gt;...&lt;/div&gt;
 3. &lt;script&gt;
 4.   function filesProcess(files) {
@@ -20968,9 +20963,9 @@ type=“file” accept=“image/*“ multiple onchange=”filesProcess(this.f
 <h4>Explanations:</h4>
 
 <ul>
-  <li><i>Line 1:</i> we used the multiple attribute to allow the selection of multiple files in the file chooser (using shift or control keys). The accept=“image/”  attribute is a filter that restricts selection to images only. Finally, the onchange listener will call the filesProcess(…) function, passing as parameter the list of selected files for the current element (this.files).</li><br>
-  <li><i>Lines 7 and 12:</i> we prepare the HTML code for building a &lt;table&gt; with the results.</li><br>
-  <li><i>Line 10:</i> this for loop builds all the rows that compose the table, adding HTML code to  the selection string variable. At the end of the loop, this variable contains all the HTML code that corresponds to the table of results.</li><br>
+  <li><i>Line 1:</i> we used the multiple attribute to allow the selection of multiple files in the file chooser (using shift or control keys). The accept=“image/” attribute is a filter that restricts selection to images only. Finally, the onchange listener will call the filesProcess(…) function, passing as parameter the list of selected files for the current element (this.files).</li><br>
+  <li><i>Lines 9 and 13:</i> we prepare the HTML code for building a &lt;table&gt; with the results.</li><br>
+  <li><i>Line 7:</i> this for loop builds all the rows that compose the table, adding HTML code to  the selection string variable. At the end of the loop, this variable contains all the HTML code that corresponds to the table of results.</li><br>
   <li><i>Line 14:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the &lt;div id=“result”&gt; in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically. </li><br>
 </ul>
 <!------------------------------------------------------------------------------------------------>
@@ -21063,18 +21058,18 @@ the readAsText method:</p>
   <summary>Click to expand!</summary>
 
 <pre><code>
-function readFileContent(f) {
-   // Executed last: called only when the file content is loaded, e.target.result is
-   // The content
-   reader.onload = function(e) {
-       var content = e.target.result;
-       // do something with the file content
-       console.log(&quot;File &quot; + f.name + &quot; content is: &quot; + content);
-   };
-   // Executed first: start reading the file asynchronously, will call the
-   // reader.onload callback only when the file is read entirely
-   reader.readAsText(f);
-}
+1.  function readFileContent(f) {
+2.    // Executed last: called only when the file content is loaded, e.target.result is
+3.    // The content
+4.    reader.onload = function(e) {
+5.      var content = e.target.result;
+6.      // do something with the file content
+7.      console.log(&quot;File &quot; + f.name + &quot; content is: &quot; + content);
+8.    };
+9.    // Executed first: start reading the file asynchronously, will call the
+10.   // reader.onload callback only when the file is read entirely
+11.   reader.readAsText(f);
+12. }
 </code></pre>
 
 </details>
@@ -21085,8 +21080,8 @@ a &lt;input type=“file” id=“file” onchange=“readFileContent(this.file
 </p>
 
 <ul>
-  <li><i>Line 12</i> is executed first, and asks the Reader object to read the file f as text. As this takes some time, it’s an asynchronous operation that will be executed by the browser in the background. When the file is read, the reader.onload callback function is called.</li>
-  <li><i>Line 4</i> is executed after <i>line 12</i>, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
+  <li><i>Line 11</i> is executed first, and asks the Reader object to read the file f as text. As this takes some time, it’s an asynchronous operation that will be executed by the browser in the background. When the file is read, the reader.onload callback function is called.</li>
+  <li><i>Line 4</i> is executed after <i>line 11</i>, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
 </ul>
 
 <p>Try a variation of the above code in your browser, that displays the
@@ -21108,7 +21103,7 @@ contents as text, dataURL and binary.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let’s start by reading a pure text file</p>
 
-<h4>Examples</h4>
+<h3>Examples</h3>
 
 <h4>Example #1: read a single file’s content</h4>
 
@@ -21313,8 +21308,8 @@ directly in the browser, without the need for a server!</p>
 
 <ul>
   <li><i>Line 2:</i> we get a pointer to the file selector, the variable fileInput.</li>
-  <li><i>Line 4:</i> we define a change listener. In this example, we use an anonymous function directly included in the listener definition (the listener is the function(e) {…}).</li>
-  <li><i>Line 9:</i> when a user chooses a file, the listener will be executed. Line 11 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.</li>
+  <li><i>Line 5:</i> we define a change listener. In this example, we use an anonymous function directly included in the listener definition (the listener is the function(e) {…}).</li>
+  <li><i>Line 9:</i> when a user chooses a file, the listener will be executed. Line 9 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.</li>
   <li><i>Line 5:</i> is the onload callback, executed when the file content is loaded in memory. We pass the file content to the initSound function (see JSBin example for complete source code) that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio works only with uncompressed audio formats in memory), and to play it.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
@@ -21448,10 +21443,10 @@ The reader.readAsDataUrl method is used for that.</p>
 25.                           e.target.result + &quot;&#39; alt=&#39;a picture&#39;/&gt;&quot;;
 26.         // Insert the span in the output id=list
 27.         document.getElementById(&#39;list&#39;).insertBefore(span, null);
-28.     };
+28.      };
 29.    // Read in the image file as a data URL.
 30.    reader.readAsDataURL(f);
-31.   }
+31.    }
 32.  }
 </code></pre>
 
@@ -21488,29 +21483,29 @@ function drawImage(imageFile) {
  
    //capture the file information.
    reader.onload = function(e) {
-      // For drawing an image on a canvas we
-      // need an image object
-      var img = new Image();
-      // Even if the file has been read, decoding
-      // the dataURL format may take some time
-      // so we need to use the regular way of
-      // working with images: onload callback    
-      // that will be called after setting the src attribute
-      img.onload = function(e) {
-         // draw the image!
-         ctx.drawImage(img, 0, 0, 400, 400);
-      }
-      // e.target.result is the dataURL, so we set the
-      // src if the image with it. This will call
-      // asynchonously the onload callback
-      img.src= e.target.result;
-  };
+     // For drawing an image on a canvas we
+     // need an image object
+     var img = new Image();
+     // Even if the file has been read, decoding
+     // the dataURL format may take some time
+     // so we need to use the regular way of
+     // working with images: onload callback    
+     // that will be called after setting the src attribute
+     img.onload = function(e) {
+       // draw the image!
+       ctx.drawImage(img, 0, 0, 400, 400);
+     }
+     // e.target.result is the dataURL, so we set the
+     // src if the image with it. This will call
+     // asynchonously the onload callback
+     img.src= e.target.result;
+   };
   // Read in the image file as a data URL.
   reader.readAsDataURL(imageFile);
-}
+  }
 function readFileAndDraw(files) {
-    drawImage(files[0]);
-}
+  drawImage(files[0]);
+  }
 </code></pre>
 
 </details>
@@ -21536,7 +21531,7 @@ of you who would like to go further. Just click on the link (or on the
 image below) and look at the source code.</p>
 <p><a href="https://gianablantin.github.io/CanvasFilters/" target="_blank" rel="noopener noreferrer">Try this example online on gitHub</a>.</p>
 
-<h4>Introduction</h4>
+<h3 id="ch6-4-1">6.4.1 Geolocation API Introduction</h3>
 
 <p>This chapter presents the new Geolocation API and illustrates its use with several examples.</p>
 <!------------------------------------------------------------------------------------------------>
@@ -21557,9 +21552,7 @@ current position when it changes. This is useful for writing a
 navigation application or for tracking in real time the position of
 different participants in the case of an application that involves
 several persons at the same time (using WebSockets, for example).</p>
-<a href="https://caniuse.com/#feat=geolocation" target="_blank" rel="noopener noreferrer">Browser support for the
-Geolocation API</a> is excellent, both on mobile and on desktop devices.
-</p>
+<a href="https://caniuse.com/#feat=geolocation" target="_blank" rel="noopener noreferrer">Browser support for the Geolocation API</a> is excellent, both on mobile and on desktop devices.</p>
 
 <h4>Typical use</h4>
 
@@ -21581,14 +21574,11 @@ function onError(err) {
 
 </details>
 
-<p><a href="https://jsbin.com/toyeley/1/edit?html,output" target="_blank" rel="noopener noreferrer">This online
-example at JSBin</a> shows how to get the current longitude and latitude
-and display them in an HTML page. Try it below in your browser:</p>
+<p><a href="https://jsbin.com/toyeley/1/edit?html,output" target="_blank" rel="noopener noreferrer">This online example at JSBin</a> shows how to get the current longitude and latitude and display them in an HTML page. Try it below in your browser:</p>
 <p>Click the button to get your coordinates:</p>
 <p>Where am I ?</p>
 <p>Note that the first time you execute this example, for privacy reasons,
-the browser will ask if you agree to share your position with the
-application.</p>
+the browser will ask if you agree to share your position with the application.</p>
 
 <h4>Source code of this typical example:</h4>
 
@@ -21598,28 +21588,28 @@ application.</p>
 <pre><code>
 1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.  &lt;meta charset=&quot;utf-8&quot;&gt;
-5.  &lt;title&gt;Basic example of use of the geolocation API&lt;/title&gt;
-6.  &lt;/head&gt;
-7.  &lt;body&gt;
-8.  &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
-9.  &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
-10.  &lt;script&gt;
-11.  var displayCoords=document.getElementById(&quot;msg&quot;);
-12.  function getLocation() {
-13.  if (navigator.geolocation) {
-14.  navigator.geolocation.getCurrentPosition(showPosition);
-15.  } else {
-16.  displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
-17.  }
-18.  }
-19.  function showPosition(position) {
-20.  displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
-21. &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
-22. }
-23. &lt;/script&gt;
-24. &lt;/body&gt;
+3.    &lt;head&gt;
+4.      &lt;meta charset=&quot;utf-8&quot;&gt;
+5.      &lt;title&gt;Basic example of use of the geolocation API&lt;/title&gt;
+6.    &lt;/head&gt;
+7.    &lt;body&gt;
+8.      &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
+9.      &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
+10.     &lt;script&gt;
+11.       var displayCoords=document.getElementById(&quot;msg&quot;);
+12.       function getLocation() {
+13.       if (navigator.geolocation) {
+14.         navigator.geolocation.getCurrentPosition(showPosition);
+15.       } else {
+16.         displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
+17.       }
+18.       }
+19.       function showPosition(position) {
+20.         displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
+21.           &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
+22.       }
+23.     &lt;/script&gt;
+24.   &lt;/body&gt;
 25. &lt;/html&gt;
 </code></pre>
 
@@ -21677,8 +21667,7 @@ getCurrentPosition(showPosition) with only one callback function (in the
 case of success), but it is also possible to pass a second parameter
 that is another callback function called in the case of error.</p>
 <p>A slightly different version of the previous
-example <a href="https://jsbin.com/bafusik/edit?html,output" target="_blank" rel="noopener noreferrer">shows how
-to properly check against the different possible errors</a>. Try it,
+example <a href="https://jsbin.com/bafusik/edit?html,output" target="_blank" rel="noopener noreferrer">shows how to properly check against the different possible errors</a>. Try it,
 then turn your WiFi off or unplug your Ethernet cable (or turn off
 GPS and 3G/4G on a mobile phone). You should see an error message Error
 during geolocation: Location could not be obtained though the available
@@ -21698,47 +21687,47 @@ means”:</p>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Basic example of use of the geolocation API&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
-&lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
-&lt;script&gt;
-   var displayCoords=document.getElementById(&quot;msg&quot;);
-   function getLocation() {
-      if (navigator.geolocation) {
-         navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
-      } else {
-        displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
-      }
-   }
-   function showPosition(position) {
-      displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
-                               &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
-   }
-   function errorPosition(error) {
-      var info = &quot;Error during geolocation: &quot;;
-      switch(error.code) {
-         case error.TIMEOUT:
-            info += &quot;Timeout !&quot;;
-            break;
-         case error.PERMISSION_DENIED:
-            info += &quot;Permission denied, geolocation could not be obtained...&quot;;
-            break;
-         case error.POSITION_UNAVAILABLE:
-            info += &quot;Location could not be obtained though the available means...&quot;;
-            break;
-         case error.UNKNOWN_ERROR:
-            info += &quot;Unknown error&quot;;
-            break;
-      }
-      displayCoords.innerHTML = info;
-    }
-&lt;/script&gt;
-&lt;/body&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Basic example of use of the geolocation API&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
+    &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
+    &lt;script&gt;
+      var displayCoords=document.getElementById(&quot;msg&quot;);
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
+        } else {
+          displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
+        }
+      }
+      function showPosition(position) {
+        displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
+                                &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
+      }
+      function errorPosition(error) {
+        var info = &quot;Error during geolocation: &quot;;
+        switch(error.code) {
+          case error.TIMEOUT:
+            info += &quot;Timeout !&quot;;
+            break;
+          case error.PERMISSION_DENIED:
+            info += &quot;Permission denied, geolocation could not be obtained...&quot;;
+            break;
+          case error.POSITION_UNAVAILABLE:
+            info += &quot;Location could not be obtained though the available means...&quot;;
+            break;
+          case error.UNKNOWN_ERROR:
+            info += &quot;Unknown error&quot;;
+            break;
+          }
+        displayCoords.innerHTML = info;
+      }
+    &lt;/script&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
@@ -21806,7 +21795,7 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError,
                                    {maximumAge:0, timeout:100});
 // Ask for GPS, cache for 30s, 27s before going on error...
 watchId=navigator.geolocation.watchPosition(onSuccess, onError,
-    {enableHighAccuracy:true, maximumAge:30000, timeout:27000});
+  {enableHighAccuracy:true, maximumAge:30000, timeout:27000});
 </code></pre>
 
 </details>
@@ -21842,34 +21831,34 @@ longitude and latitude, using online Web services?</p>
 
 <pre><code>
 function getLocation(e) {
-e.preventDefault();
-if (!navigator.geolocation) {
-alert(&quot;Browser doesn&#39;t support geolocation&quot;);
-} else {
-navigator.geolocation.getCurrentPosition(success, error);
-}
-}
+  e.preventDefault();
+  if (!navigator.geolocation) {
+    alert(&quot;Browser doesn&#39;t support geolocation&quot;);
+    } else {
+    navigator.geolocation.getCurrentPosition(success, error);
+    }
+  }
 // Get current position successfully
 function success(position) {
-var map, marker,
-latitude = position.coords.latitude,
-longitude = position.coords.longitude;
+  var map, marker,
+  latitude = position.coords.latitude,
+  longitude = position.coords.longitude;
 // Instance map using leaflet
-map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
+  map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
 // Tile layer using key api at cloudmade.com
-L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
-key: &#39;760506895e284217a7442ce2efe97797&#39;,
-styleId: 103288,
-maxZoom: 16
-}).addTo(map);
+    L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
+      key: &#39;760506895e284217a7442ce2efe97797&#39;,
+      styleId: 103288,
+      maxZoom: 16
+    }).addTo(map);
 // Marker using leaflet
-marker = L.marker([latitude, longitude]).addTo(map);
+    marker = L.marker([latitude, longitude]).addTo(map);
 // Popup in leaflet
-marker.bindPopup(&#39;&lt;p&gt;Your location&lt;/p&gt;&#39;).openPopup();
-}
+    marker.bindPopup(&#39;&lt;p&gt;Your location&lt;/p&gt;&#39;).openPopup();
+  }
 // Get current position fail
 function error() {
-alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+  alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
 }
 </code></pre>
 
@@ -21882,21 +21871,21 @@ alert(&#39;Get current position fail. Please access codepen to get geolocation.&
 
 <pre><code>
 html, body {
-height: 100%
-}
-.map {
-height: 300px;
-}
-.btn {
-background-color: rgba(10, 10, 230, .5);
-border: 0;
-color: #fff;
-padding: 10px;
-text-shadow: 0 0 1px rgba(0, 0, 0, .3);
-text-decoration: none;
-margin: 0.5rem 0 1rem;
-display: inline-block;
-}
+    height: 100%
+  }
+  .map {
+    height: 300px;
+  }
+  .btn {
+    background-color: rgba(10, 10, 230, .5);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+    text-decoration: none;
+    margin: 0.5rem 0 1rem;
+    display: inline-block;
+  }
 </code></pre>
 
 </details>
@@ -21969,7 +21958,7 @@ display: inline-block;
 7.    }
 8.  }
 9.  // Get current position successfully
-10.  function success(position) {
+10. function success(position) {
 11.    var map, marker,
 12.   latitude = position.coords.latitude,
 13.   longitude = position.coords.longitude;
@@ -22011,11 +22000,9 @@ Reverse Geocoding JavaScript API</a>. For those of you who are really
 interested to know how this API works, please read the Google
 documentation and tutorials.</p>
 <p>There is also an interesting Leaflet plugin (an extension to Leaflet)
-based on the <a href="https://www.gisgraphy.com/" target="_blank" rel="noopener noreferrer">Gisgraphy</a> (free
-open source framework) service, that comes with
-a <a href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" rel="noopener noreferrer">nice demo of reverse geocoding</a>.</p>
+based on the <a href="https://www.gisgraphy.com/" target="_blank" rel="noopener noreferrer">Gisgraphy</a> (free open source framework) service, that comes with a <a href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" rel="noopener noreferrer">nice demo of reverse geocoding</a>.</p>
 <p>Let’s see some examples of use.</p>
-<p>Example #1: how to get a physical address from the longitude and atitude<br>
+<p>Example #1: how to get a physical address from the longitude and latitude.<br>
 <br>Google reverse geocoding example (screenshot only):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 330. google reverse geocoding example (396) --------------------------->
@@ -22220,7 +22207,7 @@ href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" 
     });
     &lt;/script&gt;
 &lt;/body&gt;
- &lt;/html&gt;
+&lt;/html&gt;
 </code></pre>
 
 </details>
@@ -22444,7 +22431,7 @@ good understanding of the material.</p>
 </ul>
 
 <h5>. . .The end.<br>
-<br>last updated 03-12-23 2:24pm</h5>
+<br>last updated 03-13-23 2:44pm</h5>
   </body>
 </html>
 <!--
