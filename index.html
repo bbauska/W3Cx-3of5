@@ -19654,6 +19654,9 @@ values and submit with one or two invalid fields.</p>
  
 <h4>Complete source code:</h4>
 
+<details>
+  <summary>Click to expand!</summary>
+
 <pre><code>
 1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
@@ -19830,8 +19833,8 @@ the <a href="https://www.edx.org/course/html5-apps-and-games" target="_blank" r
 Apps and Games course</a>:
 
 <ul>
-  <li><b>The “Web Storage” API, sort of “super cookies”, for storing pairs of key/values client side.</b> This API is useful for enabling Web sites to save/restore their state, or for writing <i>serverless</i> applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.</li>
-  <li><b>The File API, that enables Web applications to work with local files</b>. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.</li>
+  <li><b><p>The “Web Storage” API, sort of “super cookies”, for storing pairs of key/values client side.</b> This API is useful for enabling Web sites to save/restore their state, or for writing <i>serverless</i> applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.</p></li>
+  <li><p><b>The File API, that enables Web applications to work with local files</b>. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.</p></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 295. 'you are here' sign (354) --------------------------------->
@@ -19935,8 +19938,8 @@ JavaScript, using the Web Storage API.</p>
 <h4>External resources</h4>
 
 <ul>
-  <li>From W3C’s specification: <a href="https://www.w3.org/TR/webstorage/" target="_blank" rel="noopener noreferrer">The W3C Web Storage API recommendation</a></li>
-  <li>An Interesting article on Web.dev: <a href="https://web.dev/storage-for-the-web/" target="_blank" rel="noopener noreferrer">Storage for the Web</a></li>
+  <li>From W3C’s specification: <a href="https://www.w3.org/TR/webstorage/" target="_blank" rel="noopener noreferrer">The W3C Web Storage API recommendation</a><br></li>
+  <li>An Interesting article on Web.dev: <a href="https://web.dev/storage-for-the-web/" target="_blank" rel="noopener noreferrer">Storage for the Web</a><br></li>
   <li>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" target="_blank" rel="noopener noreferrer">Web Storage API</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
@@ -19950,27 +19953,20 @@ its content</b>.</p>
 <p>In this example, we use the most simple way to use localStorage:</p>
 
 <ul>
-  <li><p><b>Save with the localStorage.key = value syntax. </b>For example, localStorage.firstName = ‘Michel’ will save the value “Michel” with the access key being ‘firstName’</p></li>
-  <li><p><b>Restore with the var value = localStorage.key syntax</b>. For example, var fn = localStorage.firstName; will set fn with the value ‘Michel’ if this value has been previously saved as in the example from the line above.</p></li>
+  <li><b>Save with the localStorage.key = value syntax. </b>For example, localStorage.firstName = ‘Michel’ will save the value “Michel” with the access key being ‘firstName’<br></li>
+  <li><b>Restore with the var value = localStorage.key syntax</b>. For example, var fn = localStorage.firstName; will set fn with the value ‘Michel’ if this value has been previously saved as in the example from the line above.</li>
 </ul>
 
 <h4>Saving the form content on the fly</h4>
 
-<p>Open this <a
-href="https://jsbin.com/pulurir/edit?html,js,output" target="_blank" rel="noopener noreferrer">online example at
-JSBin</a>, and use F12 or cmd-alt-i (Mac OS) to look at the dev. tools.
-As you type in the different input fields, their content is updated in
-the localStorage.</p>
-<p>We just added input event listeners to each input field. For example,
-in order to save the first name input field’s content, we just
-added:</p>
+<p>Open this <a href="https://jsbin.com/pulurir/edit?html,js,output" target="_blank" rel="noopener noreferrer">online example at JSBin</a>, and use F12 or cmd-alt-i (Mac OS) to look at the dev. tools. As you type in the different input fields, their content is updated in the localStorage.<br>
+We just added input event listeners to each input field. For example, in order to save the first name input field’s content, we just added:</p>
 
 <pre><code>
-oninput=&quot;localStorage.firstName=this.value;&quot;
+  oninput=&quot;localStorage.<font color="red">firstName</font>=this.value;&quot;
 </code></pre>
 
-<p>Where firstName in red is the key and this.value the current value of
-the input field.</p>
+<p>Where firstName in red is the key and this.value the current value of the input field.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------ 299. example localstorage and html code (355) ------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -21162,8 +21158,7 @@ JSBin</a>, or try it below in your browser:</p>
 <p>This example is the one at the end of the previous page. This time,
 we show the complete source code above. Remember that the instruction
 at <i>line 29</i> is executed first, then when the file is read, the
-browser will call asynchronously the onload callback at <i>line
-20</i>.</p>
+browser will call asynchronously the onload callback at <i>line 20</i>.</p>
 
 <h4>Example #2: a variation of the previous one, using multiple files</h4>
 
