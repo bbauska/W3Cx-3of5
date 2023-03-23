@@ -7774,7 +7774,7 @@ ctx.fillRect(0,0,80,100);
 
 <h4>Complete example that draws a filled rectangle in red</h4>
 
-<h4>HTML</h4>
+<h4>HTML Source Code</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -7818,7 +7818,7 @@ ctx.fillRect(0,0,80,100);
 
 </details>
 
-<h4>Source code:</h4>
+<h4>HTML Source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -7876,7 +7876,7 @@ the DOM has already been constructed.</p>
 <p>The example shows the use of the fillStyle property at <i>line 24</i> - useful for specifying the way shapes will be filled. In our case this line indicates the color of all the filled shapes we are going to draw:</p>
 
 <pre><code>
-ctx.fillStyle=&#39;#FF0000&#39;;
+  ctx.fillStyle=&#39;#FF0000&#39;;
 </code></pre>
 
 <p>The context property named fillStyle is used here. This property can be set with a color, a gradient, or a pattern. We will see examples of these later on in the course.</p>
@@ -7884,7 +7884,7 @@ ctx.fillStyle=&#39;#FF0000&#39;;
 <p><b>Then we can draw:</b></p>
 
 <pre><code>
-ctx.fillRect(0,0,80,100);
+  ctx.fillRect(0,0,80,100);
 </code></pre>
 
 <p>This line is a call to the method fillRect(top left X coordinate, top left Y coordinate, width, height), which draws a filled rectangle.</p>
@@ -7897,9 +7897,9 @@ ctx.fillRect(0,0,80,100);
 </ol>
 
 <pre><code>
-    &lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
-    ...fallback content...
-    &lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;
+  ...fallback content...
+  &lt;/canvas&gt;
 </code></pre>
 
 <ol start="2" type="1">
@@ -7907,7 +7907,7 @@ ctx.fillRect(0,0,80,100);
 </ol>
 
 <pre><code>
-    var canvas=document.getElementById(&#39;myCanvas&#39;);
+  var canvas=document.getElementById(&#39;myCanvas&#39;);
 </code></pre>
 
 <ol start="3" type="1">
@@ -7915,7 +7915,7 @@ ctx.fillRect(0,0,80,100);
 </ol>
 
 <pre><code>
-    var ctx=canvas.getContext(&#39;2d&#39;);
+  var ctx=canvas.getContext(&#39;2d&#39;);
 </code></pre>
 
 <ol start="4" type="1">
@@ -7923,7 +7923,7 @@ ctx.fillRect(0,0,80,100);
 </ol>
 
 <pre><code>
-    ctx.fillStyle=&#39;#FF0000&#39;;
+  ctx.fillStyle=&#39;#FF0000&#39;;
 </code></pre>
 
 <ol start="5" type="1">
@@ -7931,7 +7931,7 @@ ctx.fillRect(0,0,80,100);
 </ol>
 
 <pre><code>
-    ctx.fillRect(0,0,80,100)
+  ctx.fillRect(0,0,80,100)
 </code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-7">3.2.7 Drawing Principles</h3>
@@ -7985,8 +7985,8 @@ of the rectangle. This method uses the current value of
 the fillStyle property to determine how to fill the rectangle.</p>
 
 <pre><code>
-ctx.fillStyle=&#39;pink&#39;;
-ctx.fillRect(10,10,200,200);
+  ctx.fillStyle=&#39;pink&#39;;
+  ctx.fillRect(10,10,200,200);
 </code></pre>
 
 <p>Produces this result:</p>
@@ -8013,8 +8013,8 @@ account when wireframe shapes are drawn.</p>
 </ul>
 
 <pre><code>
-ctx.strokeStyle=&#39;blue&#39;;
-ctx.strokeRect(10,10,200,200);
+  ctx.strokeStyle=&#39;blue&#39;;
+  ctx.strokeRect(10,10,200,200);
 </code></pre>
 
 <p>… gives this result:</p>
@@ -8038,9 +8038,10 @@ using the value of the strokeStyle property.</p>
 corresponds to the initial state of the rectangle as if no drawing had
 occurred.</p>
 
-<pre><code>ctx.fillStyle=&#39;pink&#39;;
-ctx.fillRect(10,10,200,200);
-ctx.clearRect(50, 50, 20, 20);
+<pre><code>
+  ctx.fillStyle=&#39;pink&#39;;
+  ctx.fillRect(10,10,200,200);
+  ctx.clearRect(50, 50, 20, 20);
 </code></pre>
 
 <h4>The result is:</h4>
@@ -8080,7 +8081,7 @@ pixels.</p>
 <p>Let’s continue with another example. This time we will draw several shapes that share the same colors - they will be filled in red, with a blue outline. We also show how to draw a text message with a given font.
 </p>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8135,7 +8136,7 @@ Your browser does not support the canvas tag.
 
 </details>
 
-<h4>Source code extract:</h4>
+<h4>JavaScript code extract:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8211,7 +8212,7 @@ will make things easier as soon as you have to:</p>
 
 <p>If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) and another at (150, 0), and a third at (300, 0), here is the result and the corresponding code:</p>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8278,7 +8279,7 @@ a group? We would like to draw all of them a little closer to the
 bottom, for example… Let’s add some parameters to the function:  the X
 and Y position of the rectangles.</p>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8324,7 +8325,7 @@ Your browser does not support the canvas tag.
 
 </details>
 
-<h4>Code extract:</h4>
+<h4>JavaScript code extract:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8375,7 +8376,7 @@ y). Here is the result:</p>
 
 <p>Now we can start having some fun… let’s draw a monster’s head using only rectangles:</p>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8434,7 +8435,7 @@ Your browser does not support the canvas tag.
 
 </details>
 
-<h4>An extract of the JavaScript source code is:</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8527,7 +8528,7 @@ The drawArrow(startX, startY, endX, endY, width, color) function is a
 utility function that we will present later. You can see it in the
 JavaScript source code of the pen below:</p>
 
-<h4>JavaScript</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8563,7 +8564,7 @@ ctx.restore();
 
 </details>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8620,13 +8621,13 @@ drawArrow(ctx, 0, 0, 0, 100, 10, &#39;red&#39;);
 <p>Note that the X and Y parameters are useless for now…</p>
 
 <pre><code>
--   Translation using ctx.translate(offsetX, offsetY)
+  Translation using ctx.translate(offsetX, offsetY)
 </code></pre>
 
 <p>Now, instead of simply calling drawMonster(0, 0), we will call
 first ctx.translate(100, 100), and look at the result below:</p>
 
-<h4>JavaScript</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8662,7 +8663,7 @@ ctx.restore();
 
 </details>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8727,8 +8728,8 @@ Your browser does not support the canvas tag.
 <h4>JavaScript code extract:</h4>
 
 <pre><code>
-ctx.translate(100, 100);
-drawMonster(0, 0);
+  ctx.translate(100, 100);
+  drawMonster(0, 0);
 </code></pre>
 
 <p><i>Line 1</i> changes the position of the coordinate system, <i>line
@@ -8749,7 +8750,7 @@ this new system too.</p>
 
 <p>Here is the previous example, but this time we translated the coordinate system, then rotated it with an angle equal to PI/4 , then we scaled it so that units are half as big:</p>
 
-<h4>JavaScript</h4>
+<h4>JavaScript code extract:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8785,7 +8786,7 @@ ctx.restore();
 
 </details>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8852,11 +8853,11 @@ Your browser does not support the canvas tag.
 <h4>And here is the code of the transformations we used, followed by the call to the function that draws the monster:</h4>
 
 <pre><code>
-ctx.translate(100, 100);
-ctx.rotate(Math.PI/4);
-ctx.scale(0.5, 0.5);
+  ctx.translate(100, 100);
+  ctx.rotate(Math.PI/4);
+  ctx.scale(0.5, 0.5);
  
-drawMonster(0, 0);
+  drawMonster(0, 0);
 </code></pre>
 
 <ul>
@@ -8865,7 +8866,7 @@ drawMonster(0, 0);
 
 <p>If we draw two shapes at two different positions, they will be relative to this new coordinate system.</p>
 
-<h4>JavaScript</h4>
+<h4>JavaScript code extract:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8901,7 +8902,7 @@ var angle = Math.atan2(toy-fromy,tox-fromx);
 
 </details>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -8972,14 +8973,14 @@ var angle = Math.atan2(toy-fromy,tox-fromx);
 </details>
 
 <pre><code>
-ctx.translate(100, 100);
-ctx.rotate(Math.PI/4);
-ctx.scale(0.5, 0.5);
+  ctx.translate(100, 100);
+  ctx.rotate(Math.PI/4);
+  ctx.scale(0.5, 0.5);
 
 // Draw the monster at (0, 0)
-drawMonster(0, 0);
+  drawMonster(0, 0);
 // Draw a filled rectagle at (250, 0)
-ctx.fillRect(250, 0, 100, 100);
+  ctx.fillRect(250, 0, 100, 100);
 </code></pre>
 
 <h4>How can we reset the coordinate system, how can we go back to the previous one?</h4>
@@ -9007,7 +9008,7 @@ function!</i></p>
 
 <h4>Example of a function that changes the context and restores it after execution</h4>
 
-<h4>JavaScript</h4>
+<h4>JavaScript code extract:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -9043,7 +9044,7 @@ ctx.restore();
 
 </details>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -9182,7 +9183,7 @@ Your browser does not support the canvas tag.
 
 <p>Let’s give an example that draws several rectangles, filled or wireframe, with different colors and line widths:</p>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -9255,7 +9256,7 @@ ctx.restore();
 
 <p>Look at the example below, and change the position where the text is drawn, change font attributes, etc.:</p>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -9338,8 +9339,8 @@ bottom of the left leg of the “H”.</p>
 fit into a given width, distorting it if necessary:</p>
 
 <pre><code>
-context.strokeText(&quot;Hello World!&quot;, x, y [, maxWidth]);
-context.fillText(&quot;Hello World!&quot;, x, y [, maxWidth]);
+  context.strokeText(&quot;Hello World!&quot;, x, y [, maxWidth]);
+  context.fillText(&quot;Hello World!&quot;, x, y [, maxWidth]);
 </code></pre>
 
 <h4>Forcing a text not to exceed a certain width: the maxWidth property</h4>
@@ -9351,33 +9352,33 @@ context.fillText(&quot;Hello World!&quot;, x, y [, maxWidth]);
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;Drawing text: the maxWidth property&lt;/title&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Drawing text: the maxWidth property&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-var canvas=document.getElementById(&#39;myCanvas&#39;);
-var context=canvas.getContext(&#39;2d&#39;);
-context.font = &quot;60pt Calibri&quot;;
-context.lineWidth = 3;
-context.strokeStyle = &quot;blue&quot;;
-context.fillStyle = &quot;red&quot;;
-context.fillText(&quot;Hello World!&quot;, 10, 100);
-context.strokeText(&quot;Hello World!&quot;, 10, 100);
-// Draw text with constrained width
-context.fillText(&quot;Hello World!&quot;, 10, 160, 250);
-context.strokeText(&quot;Hello World!&quot;, 10, 160, 250);
-context.fillText(&quot;Hello World!&quot;, 10, 220, 150);
-context.strokeText(&quot;Hello World!&quot;, 10, 220, 150);
-&lt;/script&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var canvas=document.getElementById(&#39;myCanvas&#39;);
+    var context=canvas.getContext(&#39;2d&#39;);
+    context.font = &quot;60pt Calibri&quot;;
+    context.lineWidth = 3;
+    context.strokeStyle = &quot;blue&quot;;
+    context.fillStyle = &quot;red&quot;;
+    context.fillText(&quot;Hello World!&quot;, 10, 100);
+    context.strokeText(&quot;Hello World!&quot;, 10, 100);
+    // Draw text with constrained width
+    context.fillText(&quot;Hello World!&quot;, 10, 160, 250);
+    context.strokeText(&quot;Hello World!&quot;, 10, 160, 250);
+    context.fillText(&quot;Hello World!&quot;, 10, 220, 150);
+    context.strokeText(&quot;Hello World!&quot;, 10, 220, 150);
+  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
 </details>
 
-<h4>Source code extract:</h4>
+<h4>JavaScript code extract:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -9407,7 +9408,7 @@ context.strokeText(&quot;Hello World!&quot;, 10, 220, 150);
 pixels of a given text, taking into account the diverse properties
 involved such as font, size, shadow, lineWidth, etc.</p>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -9416,36 +9417,36 @@ involved such as font, size, shadow, lineWidth, etc.</p>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;Drawing text: the ctx.measureText() method&lt;/title&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Drawing text: the ctx.measureText() method&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-var canvas=document.getElementById(&#39;myCanvas&#39;);
-var context=canvas.getContext(&#39;2d&#39;);
-context.font = &quot;60pt Calibri&quot;;
-context.lineWidth = 3;
-context.strokeStyle = &quot;blue&quot;;
-context.fillStyle = &quot;red&quot;;
-context.fillText(&quot;Hello World!&quot;, 10, 100);
-context.strokeText(&quot;Hello World!&quot;, 10, 100);
-var textMetrics = context.measureText(&quot;Hello World!&quot;);
-var width = textMetrics.width;
-context.font = &quot;20pt Arial&quot;;
-context.fillText(&quot;Width of previous text: &quot; + width + &quot;pixels&quot;, 10, 150);
-// Draw the baseline of the given width
-context.moveTo(10, 100);
-context.lineTo(width+10, 100);
-context.stroke();
-&lt;/script&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var canvas=document.getElementById(&#39;myCanvas&#39;);
+    var context=canvas.getContext(&#39;2d&#39;);
+    context.font = &quot;60pt Calibri&quot;;
+    context.lineWidth = 3;
+    context.strokeStyle = &quot;blue&quot;;
+    context.fillStyle = &quot;red&quot;;
+    context.fillText(&quot;Hello World!&quot;, 10, 100);
+    context.strokeText(&quot;Hello World!&quot;, 10, 100);
+    var textMetrics = context.measureText(&quot;Hello World!&quot;);
+    var width = textMetrics.width;
+    context.font = &quot;20pt Arial&quot;;
+    context.fillText(&quot;Width of previous text: &quot; + width + &quot;pixels&quot;, 10, 150);
+    // Draw the baseline of the given width
+    context.moveTo(10, 100);
+    context.lineTo(width+10, 100);
+    context.stroke();
+  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
 </details>
 
-<h4>Source code extract from this example:</h4>
+<h4>JavaScript code extract from this example:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -9479,7 +9480,7 @@ context.stroke();
 <p>The textBaseline property of the context is used to specify the
 different ways one can position the baseline of a given text:</p>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -9488,36 +9489,36 @@ different ways one can position the baseline of a given text:</p>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;Drawing text: the ctx.textbaseline property&lt;/title&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Drawing text: the ctx.textbaseline property&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-var canvas=document.getElementById(&#39;myCanvas&#39;);
-var context=canvas.getContext(&#39;2d&#39;);
-context.strokeStyle = &quot;#000000&quot;;
-context.lineWidth = 1;
-context.beginPath();
-context.moveTo( 0, 75);
-context.lineTo(500, 75);
-context.stroke();
-context.closePath();
-context.font = &quot;16px Verdana&quot;;
-context.fillStyle = &quot;#000000&quot;;
-context.textBaseline = &quot;top&quot;;
-context.fillText(&quot;top&quot;, 0, 75);
-context.textBaseline = &quot;hanging&quot;;
-context.fillText(&quot;hanging&quot;, 40, 75);
-context.textBaseline = &quot;middle&quot;;
-context.fillText(&quot;middle&quot;, 120, 75);
-context.textBaseline = &quot;alphabetic&quot;;
-context.fillText(&quot;alphabetic&quot;, 200, 75);
-context.textBaseline = &quot;ideographic&quot;;
-context.fillText(&quot;ideographic&quot;, 300, 75);
-context.textBaseline = &quot;bottom&quot;;
-context.fillText(&quot;bottom-glyph&quot;, 400, 75);
-&lt;/script&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var canvas=document.getElementById(&#39;myCanvas&#39;);
+    var context=canvas.getContext(&#39;2d&#39;);
+    context.strokeStyle = &quot;#000000&quot;;
+    context.lineWidth = 1;
+    context.beginPath();
+    context.moveTo( 0, 75);
+    context.lineTo(500, 75);
+    context.stroke();
+    context.closePath();
+    context.font = &quot;16px Verdana&quot;;
+    context.fillStyle = &quot;#000000&quot;;
+    context.textBaseline = &quot;top&quot;;
+    context.fillText(&quot;top&quot;, 0, 75);
+    context.textBaseline = &quot;hanging&quot;;
+    context.fillText(&quot;hanging&quot;, 40, 75);
+    context.textBaseline = &quot;middle&quot;;
+    context.fillText(&quot;middle&quot;, 120, 75);
+    context.textBaseline = &quot;alphabetic&quot;;
+    context.fillText(&quot;alphabetic&quot;, 200, 75);
+    context.textBaseline = &quot;ideographic&quot;;
+    context.fillText(&quot;ideographic&quot;, 300, 75);
+    context.textBaseline = &quot;bottom&quot;;
+    context.fillText(&quot;bottom-glyph&quot;, 400, 75);
+  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -9533,45 +9534,40 @@ property and the corresponding results. The default value is
 
 <div data-align="center">
 <table>
-<colgroup>
-<col style="width: 30%" />
-<col style="width: 69%" />
-</colgroup>
+  <colgroup>
+    <col style="width: 30%" />
+    <col style="width: 69%" />
+  </colgroup>
 <thead>
-<tr class="header">
-<th>textBaseline property</th>
-<th>Description</th>
-</tr>
+  <tr class="header">
+    <th>textBaseline property</th>
+    <th>Description</th>
+  </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>top</td>
-<td>The text is aligned based on the top of the tallest glyph in the
-text.</td>
-</tr>
+  <tr class="odd">
+    <td>top</td>
+    <td>The text is aligned based on the top of the tallest glyph in the text.</td>
+  </tr>
 <tr class="even">
-<td>hanging</td>
-<td>The text is aligned based on the line the text seems to hang from.
-This is almost identical to top, and in many cases, you cannot see the
-difference.</td>
+  <td>hanging</td>
+  <td>The text is aligned based on the line the text seems to hang from.  This is almost identical to top, and in many cases, you cannot see the difference.</td>
 </tr>
 <tr class="odd">
-<td>middle</td>
-<td>The text is aligned according to the middle of the text.</td>
+  <td>middle</td>
+  <td>The text is aligned according to the middle of the text.</td>
 </tr>
 <tr class="even">
-<td>alphabetic</td>
-<td>The bottom of vertically oriented glyphs, e.g. western alphabet like
-the Latin.</td>
+  <td>alphabetic</td>
+  <td>The bottom of vertically oriented glyphs, e.g. western alphabet like the Latin.</td>
 </tr>
 <tr class="odd">
-<td>ideographic</td>
-<td>The bottom of horizontally oriented glyphs.</td>
+  <td>ideographic</td>
+  <td>The bottom of horizontally oriented glyphs.</td>
 </tr>
 <tr class="even">
-<td>bottom</td>
-<td>The text is aligned based on the bottom of the glyph in the text,
-that extends furthest down in the text.</td>
+  <td>bottom</td>
+  <td>The text is aligned based on the bottom of the glyph in the text, that extends furthest down in the text.</td>
 </tr>
 </tbody>
 </table>
@@ -9592,7 +9588,7 @@ that extends furthest down in the text.</td>
 
 <p>The textAlign property of the context tells how the x parameter will be used when calling strokeText(“some text”, x, y) and fillText(“some text”, x, y). For example, with textAlign=“center”, the x parameter gives the position of the vertical center of the text, while in textAlign=“right”, x corresponds to the rightmost position of the text.</p>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -9601,34 +9597,34 @@ that extends furthest down in the text.</td>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;Drawing text: the textAlign property&lt;/title&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Drawing text: the textAlign property&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=500 height=120&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-var canvas=document.getElementById(&#39;myCanvas&#39;);
-var context=canvas.getContext(&#39;2d&#39;);
-context.stokeStyle = &quot;#000000&quot;;
-context.lineWidth = 1;
-context.beginPath();
-context.moveTo( 250, 0);
-context.lineTo( 250, 130);
-context.stroke();
-context.closePath();
-context.font = &quot;16px Verdana&quot;;
-context.fillStyle = &quot;#000000&quot;;
-context.textAlign = &quot;center&quot;;
-context.fillText(&quot;center&quot;, 250, 20);
-context.textAlign = &quot;start&quot;;
-context.fillText(&quot;start&quot;, 250, 40);
-context.textAlign = &quot;end&quot;;
-context.fillText(&quot;end&quot;, 250, 60);
-context.textAlign = &quot;left&quot;;
-context.fillText(&quot;left&quot;, 250, 80);
-context.textAlign = &quot;right&quot;;
-context.fillText(&quot;right&quot;, 250, 100);
-&lt;/script&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=500 height=120&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var canvas=document.getElementById(&#39;myCanvas&#39;);
+    var context=canvas.getContext(&#39;2d&#39;);
+    context.stokeStyle = &quot;#000000&quot;;
+    context.lineWidth = 1;
+    context.beginPath();
+    context.moveTo( 250, 0);
+    context.lineTo( 250, 130);
+    context.stroke();
+    context.closePath();
+    context.font = &quot;16px Verdana&quot;;
+    context.fillStyle = &quot;#000000&quot;;
+    context.textAlign = &quot;center&quot;;
+    context.fillText(&quot;center&quot;, 250, 20);
+    context.textAlign = &quot;start&quot;;
+    context.fillText(&quot;start&quot;, 250, 40);
+    context.textAlign = &quot;end&quot;;
+    context.fillText(&quot;end&quot;, 250, 60);
+    context.textAlign = &quot;left&quot;;
+    context.fillText(&quot;left&quot;, 250, 80);
+    context.textAlign = &quot;right&quot;;
+    context.fillText(&quot;right&quot;, 250, 100);
+  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -9670,7 +9666,7 @@ it!</p>
 
 <h4>Example #1: drawing an image in a canvas</h4>
 
-<h4>Source code:</h4>
+<h4>HTML Source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -9678,32 +9674,32 @@ it!</p>
 <pre><code>
 1.  &lt;!DOCTYPE HTML&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
-3.     &lt;head&gt;
-4.        &lt;meta charset=&quot;utf-8&quot;/&gt;
-5.        &lt;title&gt;Simple image drawing in a canvas&lt;/title&gt;
-6.        &lt;script&gt;
-7.           window.onload = function () {
-8.  // Necessity to run this code only after the web page has been loaded.
-9.           var canvas = document.getElementById(&quot;myCanvas&quot;);
-10.          var context = canvas.getContext(&quot;2d&quot;);
-11.          var imageObj = new Image();
-12. // Callback function called by the imageObj.src = .... line
-13. //located after this function
-14.          imageObj.onload = function () {
-15. // Draw the image only when we have the guarantee
-16. // that it has been loaded
-17.          context.drawImage(imageObj, 0, 0);
-18.       };
+3.    &lt;head&gt;
+4.      &lt;meta charset=&quot;utf-8&quot;/&gt;
+5.      &lt;title&gt;Simple image drawing in a canvas&lt;/title&gt;
+6.      &lt;script&gt;
+7.        window.onload = function () {
+8.        // Necessity to run this code only after the web page has been loaded.
+9.        var canvas = document.getElementById(&quot;myCanvas&quot;);
+10.       var context = canvas.getContext(&quot;2d&quot;);
+11.       var imageObj = new Image();
+12.       // Callback function called by the imageObj.src = .... line
+13.       //located after this function
+14.       imageObj.onload = function () {
+15.       // Draw the image only when we have the guarantee
+16.       // that it has been loaded
+17.       context.drawImage(imageObj, 0, 0);
+18.     };
 19.  
-20. // Calls the imageObj.onload function asynchronously
-21.       imageObj.src =
-22.          &quot;https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png&quot;;
-23.       };
-24.       &lt;/script&gt;
-25.    &lt;/head&gt;
-26.    &lt;body&gt;
-27.       &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
-28.    &lt;/body&gt;
+20.     // Calls the imageObj.onload function asynchronously
+21.     imageObj.src =
+22.       &quot;https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png&quot;;
+23.     };
+24.     &lt;/script&gt;
+25.   &lt;/head&gt;
+26.   &lt;body&gt;
+27.     &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
+28.   &lt;/body&gt;
 29. &lt;/html&gt;
 </code></pre>
 
@@ -9737,7 +9733,7 @@ it!</p>
 
 <p>This example illustrates the use of the different variants of the drawImage method:</p>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to toggle!</summary>
@@ -9746,49 +9742,49 @@ it!</p>
 &lt;!DOCTYPE HTML&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;Drawing images: drawImage variants&lt;/title&gt;
-&lt;script&gt;
-window.onload = function() {
-var canvas = document.getElementById(&quot;myCanvas&quot;);
-var context = canvas.getContext(&quot;2d&quot;);
-var imageObj = new Image();
-imageObj.onload = function() {
-// Try commenting/uncommenting the following lines to see the
-// effect of the different drawImage variants
-// Original, big image
-// context.drawImage(imageObj, 0, 10);
-// Original image drawn with size = 100x100 pixels
-context.drawImage(imageObj, 0, 10, 100, 100);
-// with size = 150x150
-context.drawImage(imageObj, 80, 10, 150, 150);
-// with size = 200x200
-context.drawImage(imageObj, 210, 10, 200, 200);
-// draw the sub image at 0, 0, width = 512, height = 100
-// at position 100, 250, with a width of 256 and a height of 50
-context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
-};
-imageObj.src = &quot;https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png&quot;;
-};
-&lt;/script&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Drawing images: drawImage variants&lt;/title&gt;
+  &lt;script&gt;
+    window.onload = function() {
+    var canvas = document.getElementById(&quot;myCanvas&quot;);
+    var context = canvas.getContext(&quot;2d&quot;);
+    var imageObj = new Image();
+    imageObj.onload = function() {
+    // Try commenting/uncommenting the following lines to see the
+    // effect of the different drawImage variants
+    // Original, big image
+    // context.drawImage(imageObj, 0, 10);
+    // Original image drawn with size = 100x100 pixels
+    context.drawImage(imageObj, 0, 10, 100, 100);
+    // with size = 150x150
+    context.drawImage(imageObj, 80, 10, 150, 150);
+    // with size = 200x200
+    context.drawImage(imageObj, 210, 10, 200, 200);
+    // draw the sub image at 0, 0, width = 512, height = 100
+    // at position 100, 250, with a width of 256 and a height of 50 
+    context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
+    };
+    imageObj.src = &quot;https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png&quot;;
+    };
+  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
 </details>
 
-<h4>CSS</h4>
+<h4>CSS source code:</h4>
 
 <pre><code>
-#myCanvas {
-border:1px solid black;
-}
+  #myCanvas {
+  border:1px solid black;
+  }
 </code></pre>
 
-<h4>Source code extract:</h4>
+<h4>JavaScript source code extract:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -9828,16 +9824,16 @@ border:1px solid black;
 
 <pre><code>
 1.  &lt;body&gt;
-2.  &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
-3.  &lt;p&gt;Original image as an &lt;img&gt; element:&lt;/p&gt;
-4.  &lt;b&gt;&lt;img id=&quot;logo&quot;&lt;/b&gt;
-5.  &lt;b&gt;src=&quot;https://fc07.deviantart.net/fs70/f/2013/149/b/8/texture_85_by_voyager168-d670m68.jpg&quot;&gt;&lt;/b&gt;
-6.  &lt;script&gt;
-7.       canvas = document.getElementById(&quot;myCanvas&quot;);
-8.       var ctx = canvas.getContext(&quot;2d&quot;);
-9.       var logo = document.querySelector(&quot;#logo&quot;);
-10.      &lt;b&gt;ctx.drawImage(logo, 0, 0, 100, 100);&lt;/b&gt;
-11. &lt;/script&gt;
+2.    &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
+3.    &lt;p&gt;Original image as an &lt;img&gt; element:&lt;/p&gt;
+4.    &lt;b&gt;&lt;img id=&quot;logo&quot;&lt;/b&gt;
+5.    &lt;b&gt;src=&quot;https://fc07.deviantart.net/fs70/f/2013/149/b/8/texture_85_by_voyager168-d670m68.jpg&quot;&gt;&lt;/b&gt;
+6.    &lt;script&gt;
+7.      canvas = document.getElementById(&quot;myCanvas&quot;);
+8.      var ctx = canvas.getContext(&quot;2d&quot;);
+9.      var logo = document.querySelector(&quot;#logo&quot;);
+10.     &lt;b&gt;ctx.drawImage(logo, 0, 0, 100, 100);&lt;/b&gt;
+11.   &lt;/script&gt;
 12. &lt;/body&gt;
 </code></pre>
 
@@ -9846,15 +9842,15 @@ border:1px solid black;
 <p><b>Best practice:</b> only draw an image that is fully loaded, use the onload callback!</p>
 <p>The right way to do this is shown in this online example, that starts drawing only from the onload callback function:</p>
 
-<h4>CSS</h4>
+<h4>CSS source code:</h4>
 
 <pre><code>
-#myCanvas {
-border:1px solid black;
-}
+  #myCanvas {
+  border:1px solid black;
+  }
 </code></pre>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -9863,36 +9859,36 @@ border:1px solid black;
 &lt;!DOCTYPE HTML&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;Drawing an image with &lt;img&gt;&lt;/title&gt;
-&lt;script&gt;
-var canvas, context, imageObj;
-window.onload = function() {
-canvas = document.getElementById(&quot;myCanvas&quot;);
-context = canvas.getContext(&quot;2d&quot;);
-imageObj = document.querySelector(&quot;#logo&quot;);
-drawAllImages();
-};
-function drawAllImages() {
-console.log(&quot;image is already loaded, we draw it!&quot;);
-// Original image drawn with size = 100x100 pixels
-context.drawImage(imageObj, 0, 10, 100, 100);
-// with size = 150x150
-context.drawImage(imageObj, 80, 10, 150, 150);
-// with size = 200x200
-context.drawImage(imageObj, 210, 10, 200, 200);
-// draw the sub image at 0, 0, width = 512, height = 100
-// at position 100, 250, with a width of 256 and a height of 50
-context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
-}
-&lt;/script&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Drawing an image with &lt;img&gt;&lt;/title&gt;
+  &lt;script&gt;
+    var canvas, context, imageObj;
+    window.onload = function() {
+    canvas = document.getElementById(&quot;myCanvas&quot;);
+    context = canvas.getContext(&quot;2d&quot;);
+    imageObj = document.querySelector(&quot;#logo&quot;);
+    drawAllImages();
+    };
+    function drawAllImages() {
+    console.log(&quot;image is already loaded, we draw it!&quot;);
+    // Original image drawn with size = 100x100 pixels
+    context.drawImage(imageObj, 0, 10, 100, 100);
+    // with size = 150x150
+    context.drawImage(imageObj, 80, 10, 150, 150);
+    // with size = 200x200
+    context.drawImage(imageObj, 210, 10, 200, 200);
+    // draw the sub image at 0, 0, width = 512, height = 100
+    // at position 100, 250, with a width of 256 and a height of 50
+    context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
+    }
+  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;p&gt;A canvas with an image that is further in the page, loaded by the &lt;img src=...&gt; tag. This is not the recommended way to load images, except if the image is already in your page. Use the onload callback to be sure that the image is in the page. &lt;/p&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
-&lt;p&gt;Original image is an &amp;lt;img&gt; element:
-&lt;/p&gt;
-&lt;img id=&quot;logo&quot; src=&quot;https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png&quot; alt=&quot;html5 logo&quot;&gt;
+  &lt;p&gt;A canvas with an image that is further in the page, loaded by the &lt;img src=...&gt; tag. This is not the recommended way to load images, except if the image is already in your page. Use the onload callback to be sure that the image is in the page. &lt;/p&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
+  &lt;p&gt;Original image is an &amp;lt;img&gt; element:
+  &lt;/p&gt;
+  &lt;img id=&quot;logo&quot; src=&quot;https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png&quot; alt=&quot;html5 logo&quot;&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -9901,12 +9897,12 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 
 <p>With large image files, this will not break nor produce unexpected results:</p>
 
-<h4>CSS</h4>
+<h4>CSS source code:</h4>
 
 <pre><code>
-#myCanvas {
-border:1px solid black;
-}
+  #myCanvas {
+  border:1px solid black;
+  }
 </code></pre>
 
 <h4>HTML</h4>
@@ -9918,36 +9914,36 @@ border:1px solid black;
 &lt;!DOCTYPE HTML&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;Using a large image&lt;/title&gt;
-&lt;script&gt;
-let canvas, context;
-window.onload = () =&gt; {
-canvas = document.getElementById(&quot;myCanvas&quot;);
-context = canvas.getContext(&quot;2d&quot;);
-draw();
-};
-function draw() {
-var imageObj = document.querySelector(&quot;#logo&quot;);
-console.log(&quot;Image has been loaded, let&#39;s draw it!&quot;);
-// Original image drawn with size = 100x100 pixels
-context.drawImage(imageObj, 0, 10, 100, 100);
-// with size = 150x150
-context.drawImage(imageObj, 80, 10, 150, 150);
-// with size = 200x200
-context.drawImage(imageObj, 210, 10, 200, 200);
-// draw the sub image at 0, 0, width = 512, height = 100
-// at position 100, 250, with a width of 256 and a height of 50
-context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
-}
-&lt;/script&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Using a large image&lt;/title&gt;
+  &lt;script&gt;
+    let canvas, context;
+    window.onload = () =&gt; {
+    canvas = document.getElementById(&quot;myCanvas&quot;);
+    context = canvas.getContext(&quot;2d&quot;);
+    draw();
+    };
+    function draw() {
+    var imageObj = document.querySelector(&quot;#logo&quot;);
+    console.log(&quot;Image has been loaded, let&#39;s draw it!&quot;);
+    // Original image drawn with size = 100x100 pixels
+    context.drawImage(imageObj, 0, 10, 100, 100);
+    // with size = 150x150
+    context.drawImage(imageObj, 80, 10, 150, 150);
+    // with size = 200x200
+    context.drawImage(imageObj, 210, 10, 200, 200);
+    // draw the sub image at 0, 0, width = 512, height = 100
+    // at position 100, 250, with a width of 256 and a height of 50
+    context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
+    }
+  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;p&gt;It is possible that the drawing in the canvas below appears only after a few seconds, because the image is very large!&lt;/p&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
-&lt;p&gt;Very large original image, declared as an &amp;lt;img&gt; element:
-&lt;/p&gt;
-&lt;img id=&quot;logo&quot; alt=&quot;logo&quot; src=&quot;https://mainline.i3s.unice.fr/mooc/texture_85_by_voyager168-d670m68.jpg&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;
+  &lt;p&gt;It is possible that the drawing in the canvas below appears only after a few seconds, because the image is very large!&lt;/p&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
+  &lt;p&gt;Very large original image, declared as an &amp;lt;img&gt; element:
+  &lt;/p&gt;
+  &lt;img id=&quot;logo&quot; alt=&quot;logo&quot; src=&quot;https://mainline.i3s.unice.fr/mooc/texture_85_by_voyager168-d670m68.jpg&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -9961,7 +9957,7 @@ Level 2 Events specification</a> says: “<i>The load event occurs when the DOM
 <!------------------------------------------------------------------------------------------------>
 <p>The drawImage(…) function can take a video element as its first parameter. The image that will be drawn is the one currently played by the video stream. This can be done at video frequency on most modern computers or mobile devices.</p>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -9970,60 +9966,60 @@ Level 2 Events specification</a> says: “<i>The load event occurs when the DOM
 &lt;!DOCTYPE HTML&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;Drawing images from a video stream&lt;/title&gt;
-&lt;style&gt;
-body {
-margin: 10px;
-padding: 0px;
-}
-#myCanvas {
-border: 10px solid red;
-}
-&lt;/style&gt;
-&lt;script&gt;
-var video;
-var canvas, ctx;
-var angle = 0;
-function init() {
-video = document.getElementById(&#39;sourcevid&#39;);
-canvas = document.getElementById(&#39;myCanvas&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-setInterval(&quot;processFrame()&quot;, 25);
-}
-function processFrame() {
-// Uncomment next line for drawing 100% copy of the video content
-//ctx.drawImage(video, 0, 0);
-// Comment these 4 lines if you uncommented the previous one
-ctx.drawImage(video, 0, 0, 320, 180);
-drawRotatingVideo(480, 90);
-ctx.drawImage(video, 0, 180, 320, 180);
-ctx.drawImage(video, 320, 180, 320, 180);
-}
-function drawRotatingVideo(x, y) {
-// Clear thze zone at the top right quarter of the canvas
-ctx.clearRect(320, 0, 320, 180);
-// We are going to change the coordinate system, save the context !
-ctx.save();
-// translate, rotate and recenter the image at its &quot;real&quot; center,
-//not the top left corner
-ctx.translate(x, y);
-ctx.rotate(angle += 0.01);
-ctx.translate(-80, -45);
-ctx.drawImage(video, 0, 0, 160, 90);
-// restore the context
-ctx.restore();
-}
-&lt;/script&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Drawing images from a video stream&lt;/title&gt;
+  &lt;style&gt;
+    body {
+    margin: 10px;
+    padding: 0px;
+    }
+    #myCanvas {
+    border: 10px solid red;
+    }
+  &lt;/style&gt;
+  &lt;script&gt;
+    var video;
+    var canvas, ctx;
+    var angle = 0;
+    function init() {
+    video = document.getElementById(&#39;sourcevid&#39;);
+    canvas = document.getElementById(&#39;myCanvas&#39;);
+    ctx = canvas.getContext(&#39;2d&#39;);
+    setInterval(&quot;processFrame()&quot;, 25);
+    }
+    function processFrame() {
+    // Uncomment next line for drawing 100% copy of the video content
+    //ctx.drawImage(video, 0, 0);
+    // Comment these 4 lines if you uncommented the previous one
+    ctx.drawImage(video, 0, 0, 320, 180);
+    drawRotatingVideo(480, 90);
+    ctx.drawImage(video, 0, 180, 320, 180);
+    ctx.drawImage(video, 320, 180, 320, 180);
+    }
+    function drawRotatingVideo(x, y) {
+    // Clear thze zone at the top right quarter of the canvas
+    ctx.clearRect(320, 0, 320, 180);
+    // We are going to change the coordinate system, save the context !
+    ctx.save();
+    // translate, rotate and recenter the image at its &quot;real&quot; center,
+    //not the top left corner
+    ctx.translate(x, y);
+    ctx.rotate(angle += 0.01);
+    ctx.translate(-80, -45);
+    ctx.drawImage(video, 0, 0, 160, 90);
+    // restore the context
+    ctx.restore();
+    }
+  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init()&quot; &gt;
-&lt;p&gt;This is a &lt;code&gt;&amp;lt;video&gt;&lt;/code&gt; element: &lt;/p&gt;
-&lt;video id=&quot;sourcevid&quot; autoplay loop&gt;
-&lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.ogv&quot; type=&quot;video/ogg&quot;/&gt;
-&lt;/video&gt;
-&lt;p&gt;This is a &lt;code&gt;&amp;lt;canvas&gt;&lt;/code&gt; element: &lt;/p&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;620&quot; height=&quot;360&quot;&gt;&lt;/canvas&gt;
+  &lt;p&gt;This is a &lt;code&gt;&amp;lt;video&gt;&lt;/code&gt; element: &lt;/p&gt;
+  &lt;video id=&quot;sourcevid&quot; autoplay loop&gt;
+  &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.ogv&quot; type=&quot;video/ogg&quot;/&gt;
+  &lt;/video&gt;
+  &lt;p&gt;This is a &lt;code&gt;&amp;lt;canvas&gt;&lt;/code&gt; element: &lt;/p&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;620&quot; height=&quot;360&quot;&gt;&lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -10037,7 +10033,7 @@ ctx.restore();
   <li>The images are drawn every XXX milliseconds using the setInterval(function, delay) method.</li>
 </ul>
 
-<h4>Source code extract:</h4>
+<h4>JavaScript source code extract:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10084,15 +10080,15 @@ ctx.restore();
 39. &lt;/head&gt;
 40.  
 41. &lt;body onload=&quot;init()&quot; &gt;
-42. &lt;p&gt;This is a &lt;video&gt;&lt;video&gt; element: &lt;/p&gt;
-43. &lt;video id=&quot;sourcevid&quot; autoplay=&quot;true&quot; loop=&quot;true&quot;&gt;
-44. &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.mp4&quot;
+42.   &lt;p&gt;This is a &lt;video&gt;&lt;video&gt; element: &lt;/p&gt;
+43.   &lt;video id=&quot;sourcevid&quot; autoplay=&quot;true&quot; loop=&quot;true&quot;&gt;
+44.   &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.mp4&quot;
 45.          type=&quot;video/mp4&quot; /&gt;
-46. &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.ogv&quot;
+46.   &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.ogv&quot;
 47.          type=&quot;video/ogg&quot;/&gt;
-48. &lt;/video&gt;
-49. &lt;p&gt;This is a &lt;canvas&gt; element: &lt;/p&gt;
-50. &lt;canvas id=&quot;myCanvas&quot; width=&quot;620&quot; height=&quot;360&quot;&gt;&lt;/canvas&gt;
+48.   &lt;/video&gt;
+49.   &lt;p&gt;This is a &lt;canvas&gt; element: &lt;/p&gt;
+50.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;620&quot; height=&quot;360&quot;&gt;&lt;/canvas&gt;
 51. &lt;/body&gt;
 </code></pre>
 
@@ -10125,7 +10121,7 @@ appears as soon as the design instruction is executed.</p>
 
 <p>Here is an example that draws 1000 random rectangles in a canvas, using immediate mode rectangle drawing calls:</p>
 
-<h4>JavaScript</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10133,25 +10129,25 @@ appears as soon as the design instruction is executed.</p>
 <pre><code>
 var canvas, ctx, w, h;
 function init() {
-canvas = document.getElementById(&#39;myCanvas&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-w = canvas.width;
-h = canvas.height;
-console.time(&quot;time to draw&quot;);
-for(var i=0; i &lt; 1000; i++) {
-var x = Math.random() * w;
-var y = Math.random() * h;
-var width = Math.random() * w;
-var height = Math.random() * h;
-ctx.strokeRect(x, y, width, height);
-}
-console.timeEnd(&quot;time to draw&quot;);
-}
+  canvas = document.getElementById(&#39;myCanvas&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  w = canvas.width;
+  h = canvas.height;
+  console.time(&quot;time to draw&quot;);
+  for(var i=0; i &lt; 1000; i++) {
+  var x = Math.random() * w;
+  var y = Math.random() * h;
+  var width = Math.random() * w;
+  var height = Math.random() * h;
+  ctx.strokeRect(x, y, width, height);
+  }
+  console.timeEnd(&quot;time to draw&quot;);
+  }
 </code></pre>
 
 </details>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -10223,7 +10219,7 @@ hundreds/thousands of things in parallel).</p>
 <p>Same example as before, this time using the buffered mode for drawing
 rectangles:</p>
 
-<h4>JavaScript</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10231,26 +10227,26 @@ rectangles:</p>
 <pre><code>
 var canvas, ctx, w, h;
 function init() {
-canvas = document.getElementById(&#39;myCanvas&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-w = canvas.width;
-h = canvas.height;
-console.time(&quot;time to draw&quot;);
-for(var i=0; i &lt; 1000; i++) {
-var x = Math.random() * w;
-var y = Math.random() * h;
-var width = Math.random() * w;
-var height = Math.random() * h;
-ctx.rect(x, y, width, height);
-}
-ctx.stroke();
-console.timeEnd(&quot;time to draw&quot;);
-}
+  canvas = document.getElementById(&#39;myCanvas&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  w = canvas.width;
+  h = canvas.height;
+  console.time(&quot;time to draw&quot;);
+  for(var i=0; i &lt; 1000; i++) {
+  var x = Math.random() * w;
+  var y = Math.random() * h;
+  var width = Math.random() * w;
+  var height = Math.random() * h;
+  ctx.rect(x, y, width, height);
+  }
+  ctx.stroke();
+  console.timeEnd(&quot;time to draw&quot;);
+  }
 </code></pre>
 
 </details>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -10382,7 +10378,7 @@ line.</p>
   alt="Draw blue grid using ctx.stroke command."
   style="width:65%;" />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10420,7 +10416,7 @@ ctx.stroke();
 
 </details>
 
-<h4>Code source extract:</h4>
+<h4>JavaScript source code extract:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10463,7 +10459,7 @@ ctx.stroke();
   alt="Mix filled and wireframe shapes using different methods."
   style="width:65%;" />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10493,7 +10489,7 @@ ctx.stroke();
 
 </details>
 
-<h4>Code source:</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10531,7 +10527,7 @@ ctx.stroke();
   alt="Drawing single path made with disconnected lines."
   style="width:65%;" />
 
-<h4>Code source:</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10573,7 +10569,7 @@ called stroke() (<i>line 16</i>) only once to draw the whole path.</p>
   alt="Same drawing as in previous section. Example using moveto() and stroke() command functions."
   style="width:65%;" />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10626,7 +10622,7 @@ the path, then call fill() after the second half of the path:</p>
   alt="THE WRONG WAY! Drawing two paths with different styles."
   style="width:65%;" />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10664,7 +10660,7 @@ ctx.fill();
 
 </details>
 
-<h4>Here is the code:</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10721,7 +10717,7 @@ the ctx.beginPath() method, as shown in the next example.</p>
   alt="Draw two paths with different styles the RIGHT way."
   style="width:65%;" />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10760,7 +10756,8 @@ ctx.fill();
 </code></pre>
 
 </details>
-<h4>Source code:</h4>
+
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10855,7 +10852,7 @@ functions’ context.</p>
   alt="Drawing lines in immediate mode to avoid affecting other functions' context."
   style="width:65%;" />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -10982,7 +10979,7 @@ arrows.</p>
   alt="Function to draw arrows."
   style="width:65%;" />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -11082,7 +11079,7 @@ path: draw from the last point to the first.</p>
   alt="Example on closing a path in a drawing."
   style="width:65%;" />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -11115,7 +11112,7 @@ ctx.stroke();
 
 </details>
 
-<h4>Source code:</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -11202,30 +11199,29 @@ below to see the difference.</p>
 
 <pre><code>
 &lt;!DOCTYPE html&gt;
-
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;Drawing an arc&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Drawing an arc&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-var canvas=document.getElementById(&#39;myCanvas&#39;);
-var ctx=canvas.getContext(&#39;2d&#39;);
-ctx.beginPath();
-// try to set the last parameter to true or remove it
-ctx.arc(100,75,50,0,Math.PI/2);
-ctx.lineWidth=10;
-ctx.stroke();
-&lt;/script&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var canvas=document.getElementById(&#39;myCanvas&#39;);
+    var ctx=canvas.getContext(&#39;2d&#39;);
+    ctx.beginPath();
+    // try to set the last parameter to true or remove it
+    ctx.arc(100,75,50,0,Math.PI/2);
+    ctx.lineWidth=10;
+    ctx.stroke();
+  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
 </details>
 
-<h4>Code source extract:</h4>
+<h4>JavaScript source code extract:</h4>
 
 <pre><code>
 1.  ctx.beginPath();
@@ -11268,7 +11264,7 @@ ctx.stroke();
   alt="Example draw a full circle."
   style="width:65%;" />
 
-<h4>Source code:</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -11342,9 +11338,10 @@ understanding:</p>
 <!------------------------------------------------------------------------------------------------>
 <img class="displayed"
   src="./images/image152.jpeg?raw=true"
-   alt="There are three (3) diagrams, all drawn on canvas dynamically. The arcTo really uses carTo() with reduced alpha, and the rest of the diagram is calculated in JavaScript and drawn with lineTo and arc." />
+   alt="There are three (3) diagrams, all drawn on canvas dynamically. The arcTo really uses carTo() with reduced alpha, and the rest of the diagram is calculated in JavaScript and drawn with lineTo and arc."
   style="width:65%;" />
-<h4>Typical use</h4>
+  
+<h4>Typical use:</h4>
 
 <pre><code>
 1.  ctx.moveTo(x0, y0);
@@ -11356,6 +11353,7 @@ understanding:</p>
 rounded shapes like rounded rectangles. We used an excerpt here from the
 excellent <a
 href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html" target="_blank" rel="noopener noreferrer">tutorial on the arcTo(…) method</a>.</p>
+
 <h4>It works like this:</h4>
 
 <pre><code>
@@ -11377,7 +11375,7 @@ href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html" target="_
   alt="Simple use arcTo example #1."
   style="width:65%;" />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -11407,7 +11405,7 @@ context.stroke();
 
 </details>
 
-<h4>Source code extract:</h4>
+<h4>JavaScript source code extract:</h4>
 
 <pre><code>
 1.  context.beginPath();
@@ -11430,11 +11428,11 @@ context.stroke();
   alt="Draw a rounded rectange, example #2."
   style="width:65%;" />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
-  
+
 <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -11476,7 +11474,7 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 
 </details>
 
-<h4>Source code:</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -11521,11 +11519,10 @@ corner. This makes us suspect that the arcTo() method has been designed
 primarily for drawing rounded rectangles…</p>
 
 <h4>Example #3: comparison between lineTo and arcTo</h4>
-
-This example at JS Bin is the same as the previous one, except that we
+<p>This example at JS Bin is the same as the previous one, except that we
 added at the end of the roundedRect function the same lines of code that
 draw the rounded rectangle, but using lineTo instead of arcTo. Just take
-a look!
+a look!</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 155. comparison between arcto and lineto (212) ------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -11534,7 +11531,7 @@ a look!
   alt="Comparison between lineTo and arcTo."
   style="width:65%;" />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -11606,7 +11603,7 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 5.  ctx.arcTo(x, y, x+width, y,radius);
 </code></pre>
 
-<p>which might be easier than trying to figure out where the arc will end like this:</p>
+<p>Which might be easier than trying to figure out where the arc will end like this:</p>
 
 <pre><code>
 1.  ctx.moveTo(x+radius, y);
@@ -11625,7 +11622,7 @@ roundedRect(ctx,15,15,160,120,20,true,true);
   alt="Example: rounded triangle."
   style="width:65%;" />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -11699,7 +11696,7 @@ point for the quadratic curve.</p>
 <p>The control point controls the curvature - if we move the control
 point farther we get a sharper curve.</p>
 
-<h4>Typical use</h4>
+<h4>Typical use:</h4>
 
 <pre><code>
 1.  context.moveTo(contextX, contextY);
@@ -11722,7 +11719,7 @@ point farther we get a sharper curve.</p>
   style="width:65%;"
   alt="Quadratic curve example." />
 
-<h4>Source code:</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -11759,7 +11756,7 @@ call the stroke() method for drawing the curve.</p>
   style="width:65%;"
   alt="Example: Lines connected with a quadratic curve." />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -11791,7 +11788,7 @@ context.stroke();
 
 </details>
 
-<h4>Source code:</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -11822,7 +11819,7 @@ context.stroke();
   style="width:65%;"
   alt="Example: useful function for drawing curved arrows." />
 
-<h4>JavaSscript</h4>
+<h4>JavaSscript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -11873,15 +11870,15 @@ ctx.restore();
 
 </details>
 
-<h4>CSS</h4>
+<h4>CSS source code:</h4>
 
 <pre><code>
-#myCanvas {
-border: 1px solid black;
-}
+  #myCanvas {
+  border: 1px solid black;
+  }
 </code></pre>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -11890,11 +11887,11 @@ border: 1px solid black;
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Curved arrows&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Curved arrows&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;250&quot; height=&quot;150&quot;&gt;&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;250&quot; height=&quot;150&quot;&gt;&lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -12001,7 +11998,7 @@ interactive applications:</p>
 
 <h4>Typical usage of Bézier curves</h4>
 
-<h4>Source code:</h4>
+<h4>JavaScript source code:</h4>
 
 <pre><code>
 1.  ctx.moveTo(contextX, contextY);
@@ -12026,7 +12023,7 @@ interactive applications:</p>
   style="width:65%;"
   alt="Bezier curve: Example 1." />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -12087,7 +12084,7 @@ interactive applications:</p>
   style="width:85%;"
   alt="Path with Bezier and Quadratic curve and line in same, closed path." />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -12121,7 +12118,7 @@ interactive applications:</p>
 
 </details>
 
-<h4>Extract from source code:</h4>
+<h4>Extract from JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -12199,7 +12196,7 @@ themselves).</p>
   style="width:85%;"
   alt="Colors and transparency example." />
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
@@ -12258,7 +12255,7 @@ themselves).</p>
   style="width:85%;"
   alt="Define stroke fill style as 'gradient'." />
 
-<h4>JavaScript</h4>
+<h4>JavaScript source code:</h4>
 
 <details>
   <summary>JavaScript code extract!</summary>
@@ -12287,7 +12284,7 @@ function draw() {
 
 </details>
 
-<h4>HTML</h4>
+<h4>HTML source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
