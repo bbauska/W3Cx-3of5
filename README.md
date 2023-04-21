@@ -13,9 +13,9 @@
 </p>
 
 <h3 align="center">W3Cx-3of5-HTML5.1x - Coding Essentials and Best Practices</h3>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 01. W3Cx-3of5-HTML5.1x logo (01) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. W3Cx-3of5-HTML5.1x logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image001.png?raw=true"
   style="width:65%;"
@@ -172,9 +172,9 @@ Here are a few possibilities for Web editors:
 
 <p>To help you practice during the whole duration of the course, we use the following interactive online editors. Pretty much all the course's examples actually use these tools.</p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------------- 02. jsbin logo (04) -------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image004.png?raw=true"
   alt="JSBin logo."
@@ -190,9 +190,9 @@ Here are a few possibilities for Web editors:
 
 Tutorials can be found on the Web such as <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843" target="_blank">this one</a> or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it&apos;s always better to be logged in (it&apos;s free) if you do not want to lose your contributions/personal work.</p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------------ 03. codepen logo (04) ------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image003.png?raw=true"
    alt="CodePen logo."
@@ -230,9 +230,9 @@ We are then providing references to the browser support of HTML5 features presen
 <p>
 Example of a <a href="./images/image004.png">CanIUse browser</a> support table (using CSS3 colors).
 </p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------------- 04. caniuse example (05) ------------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image004.png?raw=true"
    alt="Example CSS in CanIUse."
@@ -241,9 +241,9 @@ Example of a <a href="./images/image004.png">CanIUse browser</a> support table (
 <br/>
 
 <h4>MDN Web Docs</h4>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------------- 05. mdn web docs logo (05) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image005.png?raw=true"
    alt="Logo of MDN Web Docs."
@@ -278,9 +278,9 @@ The <a href="https://validator.w3.org/" target="__blank">W3C validator</a> che
 <p>
 The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a> checks Cascading Style Sheets (CSS) and (X)HTML documents that use CSS stylesheets.
 </p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 06. laptop showing unicorn validator (06) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image006.png?raw=true"
    alt="Laptop Showing Unicorn Validator."
@@ -303,9 +303,9 @@ The <a href="https://validator.w3.org/checklink" target="_blank">W3C Link Check
 <p>
 The <a href="https://www.w3.org/2009/cheatsheet/" target="_blank">W3C cheatsheet</a> provides quick access to useful information from a variety of specifications published by W3C. It aims at giving in a very compact and mobile-friendly format a compilation of useful knowledge extracted from W3C specifications, completed by summaries of guidelines developed at W3C, in particular Web accessibility guidelines, the Mobile Web Best Practices, and a number of internationalization tips.
 </p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------- 07. w3c cheat sheet snapshot image (07) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image007.png?raw=true"
    alt="W3C Cheat Sheet snapshot image."
@@ -329,9 +329,9 @@ In fact, all W3C specifications are developed in public <a href="https://github.
 <p>
 Contributing to this standardization process might be a bit scary or hard to approach at first, but understanding at a deeper level how these technologies are built is a great way to build your expertise.
 </p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------- 08. github (the octocat) logo (07) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image008.png?raw=true"
   width="15%"
@@ -342,9 +342,9 @@ If you're looking to an easy way to dive into this standardization processes, ch
 </p>
 <h4>Shape the future</h4>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------- 09. w3c web incubator community group logo (08) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image009.png?raw=true"
   width="25%"
@@ -363,9 +363,9 @@ W3C's primary activity is to develop protocols and guidelines that ensure long-t
 </p>
 <h4>A few history bits</h4>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 10. Tim Berners-Lee, WWW developer (08) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image010.jpeg?raw=true"
   alt="Tim Berners-Lee at his desk in CERN, Switzerland, 1994."
@@ -530,10 +530,9 @@ Text alternatives ("alt text") are a primary way of making visual information ac
 <h5><i>Check #2</i>: Every image has alt with appropriate alternative text.</h5>
 <p>
 <i>Example</i>: See the W3C logo below. It contains a link that points to the W3C Web site. The text alternative is going to be a brief description of the link target.</p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------------------- 11. W3C logo (13) --------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image011.png?raw=true"
   width="15%"
@@ -668,10 +667,9 @@ Read also at the end of this section about the new &lt;main&gt; element. This el
 Let's study <a href="https://jsbin.com/bucokav/edit?html,output">an example we put on JsBin</a> (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the "Bins/create milestone" menu, share your version with others in the forums, etc. Don't  hesitate to play with the source code, you will never break anything).</p>
 
 <h4>Use a &lt;header&gt; at the top of the blog</h4>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------- 14. image 'Simple HTML5 Blog' (16) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image014.jpeg?raw=true"
    alt="Simple HTML5 Blog"
