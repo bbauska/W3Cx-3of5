@@ -113,13 +113,13 @@ The <b>W3C FEWD</b> program is composed of 5 courses:
   <li>JavaScript Introduction</li>
 </ol>
 
-<p>This course is a natural follow up to the <a href="https://www.edx.org/course/css-basics" target="_blank">CSS Basics</a> and <a href="https://www.edx.org/course/html5-and-css-fundamentals" target="_blank">HTML5 & CSS Fundamentals</a> courses.</p>
+<p>This course is a natural follow up to the <a href="https://www.edx.org/course/css-basics" target="_blank" rel="noopener noreferrer">CSS Basics</a> and <a href="https://www.edx.org/course/html5-and-css-fundamentals" target="_blank" rel="noopener noreferrer">HTML5 & CSS Fundamentals</a> courses.</p>
 
 <p>As such, required prerequisites are:</p>
 <ul>
   <li>Be comfortable putting together an HTML document,</li>
   <li>Have minimal familiarity with CSS,</li>
-  <li>Basic knowledge of JavaScript and DOM APis is sufficient, and this course will include a recap of basics. You are also more than welcome to follow the <a href="https://www.edx.org/course/javascript-introduction" target="_blank">JavaScript Introduction</a> course (introductory level).</li>
+  <li>Basic knowledge of JavaScript and DOM APis is sufficient, and this course will include a recap of basics. You are also more than welcome to follow the <a href="https://www.edx.org/course/javascript-introduction" target="_blank" rel="noopener noreferrer">JavaScript Introduction</a> course (introductory level).</li>
 </ul>
 
 <h4>During this course, you will learn:</h4>
@@ -137,13 +137,13 @@ The <b>W3C FEWD</b> program is composed of 5 courses:
 
 <h3 id="cha-4">Online Code Editors:</h3>
 
-<a href="https://jsbin.com" target="_blank">JS Bin</a>
+<a href="https://jsbin.com" target="_blank" rel="noopener noreferrer">JS Bin</a>
 
-<a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843" target="_blank">CodePen Tutorial</a>
+<a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843" target="_blank" rel="noopener noreferrer">CodePen Tutorial</a>
 
-<a href="https://codepen.io" target="_blank">CodePen</a>
+<a href="https://codepen.io" target="_blank" rel="noopener noreferrer">CodePen</a>
 
-<a href="https://css-tricks.com/video-screencasts/112-using-codepen/" target="_blank">CodePen CSS Tutorial</a>
+<a href="https://css-tricks.com/video-screencasts/112-using-codepen/" target="_blank" rel="noopener noreferrer">CodePen CSS Tutorial</a>
 
 <h4>Web Editors:</h4>
 <p>
@@ -152,15 +152,15 @@ While any text editor, like NotePad or TextEdit, can be used to create Web pages
 Here are a few possibilities for Web editors:
 </p>
 <ul>
-  <li><a href="https://notepad-plus-plus.org/" target="_blank">Notepad</a> - on Windows PC&apos;s.</li>
-  <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> - a free open source editor that can run on any operating system. Many developers are already familiar with Visual Studio Code. Many coding videos in this course are demonstrated using Visual Studio Code.</li>
-  <li><a href="https://developer.apple.com/xcode/" target="_blank">XCode</a> - Mac developers may be familiar with XCode.</li>
-  <li><a href="https://discussions.apple.com/message/5014514#5014514" target="_blank">TextEdit - this is available on Macs</a>, but be sure you&apos;re <a href="">saving as plain text, not as a ".rtf" or ".doc" file.</a></li>
-  <li><a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a> - it is quite popular with developers, though there can be a bit of a learning curve to use its many features.</li>
-  <li><a href="http://bluegriffon.org/" target="_blank">BlueGriffon</a> - a WYSIWYG ("What You See Is What You Get") content editor for the World Wide Web. Powered by Gecko, the rendering engine of Firefox, it's a modern and robust solution to edit Web pages in conformance to the latest Web Standards.</li>
-  <li><a href="https://atom.io/" target="_blank">Atom</a> - another cross platform editor, created by <a href="https://github.com/">GitHub</a>.</li>
-  <li><a href="https://github.com/" target="_blank">GitHub</a> itself - check <a href="https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1">this resource that explains how to create a Web site using GitHub</a>.</li>
-  <li><a href="https://www.vim.org/" target="_blank">Vim</a> or <a href="https://www.gnu.org/software/emacs/" target="_blank">Emacs</a> - great editors, but if you&apos;re not already familiar with these, this isn&apos;t the time to try.</li>
+  <li><a href="https://notepad-plus-plus.org/" target="_blank" rel="noopener noreferrer">Notepad</a> - on Windows PC&apos;s.</li>
+  <li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> - a free open source editor that can run on any operating system. Many developers are already familiar with Visual Studio Code. Many coding videos in this course are demonstrated using Visual Studio Code.</li>
+  <li><a href="https://developer.apple.com/xcode/" target="_blank" rel="noopener noreferrer">XCode</a> - Mac developers may be familiar with XCode.</li>
+  <li><a href="https://discussions.apple.com/message/5014514#5014514" target="_blank" rel="noopener noreferrer">TextEdit - this is available on Macs</a>, but be sure you&apos;re <a href="">saving as plain text, not as a ".rtf" or ".doc" file.</a></li>
+  <li><a href="https://www.sublimetext.com/" target="_blank" rel="noopener noreferrer">Sublime Text</a> - it is quite popular with developers, though there can be a bit of a learning curve to use its many features.</li>
+  <li><a href="http://bluegriffon.org/" target="_blank" rel="noopener noreferrer">BlueGriffon</a> - a WYSIWYG ("What You See Is What You Get") content editor for the World Wide Web. Powered by Gecko, the rendering engine of Firefox, it's a modern and robust solution to edit Web pages in conformance to the latest Web Standards.</li>
+  <li><a href="https://atom.io/" target="_blank" rel="noopener noreferrer">Atom</a> - another cross platform editor, created by <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>.</li>
+  <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a> itself - check <a href="https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1">this resource that explains how to create a Web site using GitHub</a>.</li>
+  <li><a href="https://www.vim.org/" target="_blank" rel="noopener noreferrer">Vim</a> or <a href="https://www.gnu.org/software/emacs/" target="_blank" rel="noopener noreferrer">Emacs</a> - great editors, but if you&apos;re not already familiar with these, this isn&apos;t the time to try.</li>
 </ul>
 
 <div align="right">
@@ -170,7 +170,6 @@ Here are a few possibilities for Web editors:
 <h4>Online Editors:</h4>
 
 <p>To help you practice during the whole duration of the course, we use the following interactive online editors. Pretty much all the course's examples actually use these tools.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. jsbin logo (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -188,7 +187,6 @@ Here are a few possibilities for Web editors:
 <p>JS Bin is an open source collaborative Web development debugging tool. Most of the examples that are in this course are on JSBin.
 
 Tutorials can be found on the Web such as <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843" target="_blank">this one</a> or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it&apos;s always better to be logged in (it&apos;s free) if you do not want to lose your contributions/personal work.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. codepen logo (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -296,11 +294,11 @@ The <a href="https://validator.w3.org/i18n-checker/" target="_blank">W3C Intern
 </p>
 <h4>Link Checker</h4>
 <p>
-The <a href="https://validator.w3.org/checklink" target="_blank">W3C Link Checker</a> looks for issues in links, anchors and referenced objects in a Web page, CSS style sheet, or recursively on a whole Web site. For best results, it is recommended to first ensure that the documents checked use valid <a href="https://validator.w3.org/" target="_blank">(X)HTML Markup</a> and <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS</a>.
+The <a href="https://validator.w3.org/checklink" target="_blank" rel="noopener noreferrer">W3C Link Checker</a> looks for issues in links, anchors and referenced objects in a Web page, CSS style sheet, or recursively on a whole Web site. For best results, it is recommended to first ensure that the documents checked use valid <a href="https://validator.w3.org/" target="_blank">(X)HTML Markup</a> and <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS</a>.
 </p>
 <h4>W3C Cheatsheet</h4>
 <p>
-The <a href="https://www.w3.org/2009/cheatsheet/" target="_blank">W3C cheatsheet</a> provides quick access to useful information from a variety of specifications published by W3C. It aims at giving in a very compact and mobile-friendly format a compilation of useful knowledge extracted from W3C specifications, completed by summaries of guidelines developed at W3C, in particular Web accessibility guidelines, the Mobile Web Best Practices, and a number of internationalization tips.
+The <a href="https://www.w3.org/2009/cheatsheet/" target="_blank" rel="noopener noreferrer">W3C cheatsheet</a> provides quick access to useful information from a variety of specifications published by W3C. It aims at giving in a very compact and mobile-friendly format a compilation of useful knowledge extracted from W3C specifications, completed by summaries of guidelines developed at W3C, in particular Web accessibility guidelines, the Mobile Web Best Practices, and a number of internationalization tips.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 07. w3c cheat sheet snapshot image (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
