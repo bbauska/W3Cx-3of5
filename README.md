@@ -1,6 +1,5 @@
 <h2 align="center">W3Cx Front-End Web Developer</h2>
 <br/>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of W3Cx-3of5-HTML5.1x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -173,7 +172,7 @@ Here are a few possibilities for Web editors:
 <p>To help you practice during the whole duration of the course, we use the following interactive online editors. Pretty much all the course's examples actually use these tools.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------------- 02. jsbin logo (04) -------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. jsbin logo (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image004.png?raw=true"
@@ -191,7 +190,7 @@ Here are a few possibilities for Web editors:
 Tutorials can be found on the Web such as <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843" target="_blank">this one</a> or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it&apos;s always better to be logged in (it&apos;s free) if you do not want to lose your contributions/personal work.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------------ 03. codepen logo (04) ------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. codepen logo (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image003.png?raw=true"
@@ -231,7 +230,7 @@ We are then providing references to the browser support of HTML5 features presen
 Example of a <a href="./images/image004.png">CanIUse browser</a> support table (using CSS3 colors).
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------------- 04. caniuse example (05) ------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. caniuse example (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image004.png?raw=true"
@@ -242,7 +241,7 @@ Example of a <a href="./images/image004.png">CanIUse browser</a> support table (
 
 <h4>MDN Web Docs</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------------- 05. mdn web docs logo (05) ---------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05. mdn web docs logo (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image005.png?raw=true"
@@ -279,7 +278,7 @@ The <a href="https://validator.w3.org/" target="__blank">W3C validator</a> che
 The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a> checks Cascading Style Sheets (CSS) and (X)HTML documents that use CSS stylesheets.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 06. laptop showing unicorn validator (06) --------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 06. laptop showing unicorn validator (06) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image006.png?raw=true"
@@ -304,7 +303,7 @@ The <a href="https://validator.w3.org/checklink" target="_blank">W3C Link Check
 The <a href="https://www.w3.org/2009/cheatsheet/" target="_blank">W3C cheatsheet</a> provides quick access to useful information from a variety of specifications published by W3C. It aims at giving in a very compact and mobile-friendly format a compilation of useful knowledge extracted from W3C specifications, completed by summaries of guidelines developed at W3C, in particular Web accessibility guidelines, the Mobile Web Best Practices, and a number of internationalization tips.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 07. w3c cheat sheet snapshot image (07) ---------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 07. w3c cheat sheet snapshot image (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image007.png?raw=true"
@@ -330,7 +329,7 @@ In fact, all W3C specifications are developed in public <a href="https://github.
 Contributing to this standardization process might be a bit scary or hard to approach at first, but understanding at a deeper level how these technologies are built is a great way to build your expertise.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 08. github (the octocat) logo (07) ------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08. github (the octocat) logo (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image008.png?raw=true"
@@ -343,7 +342,7 @@ If you're looking to an easy way to dive into this standardization processes, ch
 <h4>Shape the future</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------- 09. w3c web incubator community group logo (08) ------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~ 09. w3c web incubator community group logo (08) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image009.png?raw=true"
@@ -362,9 +361,8 @@ As steward of global Web standards, W3C's mission is to safeguard the openness, 
 W3C's primary activity is to develop protocols and guidelines that ensure long-term growth for the Web. The widely adopted Web standards define key parts of what actually makes the World Wide Web work.
 </p>
 <h4>A few history bits</h4>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 10. Tim Berners-Lee, WWW developer (08) ----------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 10. Tim Berners-Lee, WWW developer (08) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image010.jpeg?raw=true"
@@ -531,7 +529,7 @@ Text alternatives ("alt text") are a primary way of making visual information ac
 <p>
 <i>Example</i>: See the W3C logo below. It contains a link that points to the W3C Web site. The text alternative is going to be a brief description of the link target.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------------------- 11. W3C logo (13) --------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 11. W3C logo (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image011.png?raw=true"
@@ -547,10 +545,9 @@ Text alternatives ("alt text") are a primary way of making visual information ac
 <img src="https://w3.org/Icons/w3c_home.png" width="72" height="48" alt="World Wide Web Consortium">
 </a>
 ```
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 12. html5 logo (13) -------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 12. html5 logo (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image012.png?raw=true"
    alt="HTML5 logo"
@@ -570,10 +567,9 @@ Text alternatives ("alt text") are a primary way of making visual information ac
   <body>
  ... <!-- The rest is content -->
 ```
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 13. new structural elements in html5 (13) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 13. new structural elements in html5 (13) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image013.jpeg?raw=true"
    alt="Some of the new structural elements introduced by HTML5: section, article, etc."
@@ -668,7 +664,7 @@ Let's study <a href="https://jsbin.com/bucokav/edit?html,output">an example we 
 
 <h4>Use a &lt;header&gt; at the top of the blog</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 14. image 'Simple HTML5 Blog' (16) ------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 14. image 'Simple HTML5 Blog' (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image014.jpeg?raw=true"
@@ -709,10 +705,9 @@ header span {
 ```
 
 <h4>Use a &lt;nav&gt; for the navigation menu just below the header</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 15. image of the navigaton menu (16) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 15. image of the navigaton menu (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image015.jpeg?raw=true"
    alt="Navigation Menu"
@@ -21430,7 +21425,7 @@ Click on the Codepen logo (on the top right) so to run the <a href="https://cod
 <details>
  <summary>Click to expand!</summary>
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -21528,5 +21523,5 @@ Here are a few project ideas. Your classmates and the team who prepared the cour
 </ul>
 
 . . .The end.
-
-<!--- last updated 10-29-2022-04:26pm --->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ end readme.md of W3Cx-3of5-HTML5.1x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--- last updated 4-23-2023-01:36pm --->
