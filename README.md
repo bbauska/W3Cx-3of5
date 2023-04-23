@@ -793,7 +793,7 @@ nav span {
 <details>
  <summary>Click to expand!</summary>
 
-```
+```html
 <section>
    <article>
     ...
@@ -814,7 +814,7 @@ nav span {
 <details>
  <summary>Click to expand!</summary>
 
-```
+```css
 section {
    float: left;
    padding: 35px 0;
@@ -858,7 +858,7 @@ Next, in each article in the section we have a header (to display the article ti
 <details>
  <summary>Click to expand!</summary>
 
-```
+```html
 <section>
    <article>
      <header>
@@ -910,24 +910,23 @@ Here is the CSS for the &lt;figcaption&gt; element we have used in the example
 
 <h4>HTML code:</h4>
 
-```
-1.  <figure>
-2.  <img src="HTML5-tags.png"
-    a.  alt="Example of HTML5 structural tags" />
-3.  <figcaption>
-    a.  Fig. 1 : an example of how .....
-4.  </figcaption>
-5.  </figure>
+```html
+<figure>
+  <img src="HTML5-tags.png" alt="Example of HTML5 structural tags" />
+  <figcaption>
+    Fig. 1 : an example of how .....
+  </figcaption>
+</figure>
 ```
 
 <h4>CSS code:</h4>
 
-```
-1.  figcaption {
-2.  font-style:italic;
-3.  font-size: 0.8em;
-4.  width: 100%
-5.  }
+```css
+figcaption {
+font-style:italic;
+font-size: 0.8em;
+width: 100%
+}
 ```
 
 <h4>Use an &lt;aside&gt; element to display a tag cloud on the ... side of the main content</h4>
@@ -947,18 +946,18 @@ Here is the CSS for the &lt;figcaption&gt; element we have used in the example
 <details>
  <summary>Click to expand!</summary>
 
-```
+```html
 <section>
 .... all <article>... </article> here....
 </section>
 <aside>
-   <h2>Tag cloud</h2>
-   <ul class="tag-cloud">
-       <li><a href="" rel="tag" class="w2">ajax</a></li>
-       <li><a href="" rel="tag" class="w8">apple</a></li>
-       <li><a href="" rel="tag" class="w3">css</a></li>
-       ...
-   </ul>
+  <h2>Tag cloud</h2>
+  <ul class="tag-cloud">
+    <li><a href="" rel="tag" class="w2">ajax</a></li>
+    <li><a href="" rel="tag" class="w8">apple</a></li>
+    <li><a href="" rel="tag" class="w3">css</a></li>
+    ...
+  </ul>
 </aside>
 ...
 ```
@@ -1023,7 +1022,7 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 <details>
  <summary>Click to expand!</summary>
 
-```
+```html
 <html>
 ...
 <body>
@@ -1045,12 +1044,12 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 
 <h4>With this CSS rule:</h4>
 
-```
-footer {
+```css
+  footer {
     clear: both;
     color: #777;
     padding: 10px 50px
-}
+  }
 ```
 
 <h4>And here is the result at the bottom of the page:</h4>
@@ -1089,7 +1088,7 @@ Example of a blog post defined as a long &lt;article&gt;, that is in turn cut i
 <details>
  <summary>Click to expand!</summary>
 
-```
+```html
 <article id="id1">
    <section id="id1part1">
       <h2>Introduction</h2>
