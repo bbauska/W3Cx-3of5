@@ -1,17 +1,27 @@
   img.displayed {
     display: block;
-	margin: 0 auto;	}
-	p.em1 {
-	  margin-left: 1em; }
-	p.em2 {
-	  margin-left: 2em; }
-	p.em3 {
-	  margin-left: 3em; }
-	p.em4 {
-	  margin-left: 4em; }
+    margin: 0 auto; }
 
-	div {
-	float: left; }
+  .border {
+    border-width: 1px;
+    border-color: #778899;  /* dark grayish blue */
+    border-style: solid; }
+
+font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", 
+  "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+
+  margin: 0 auto;	}
+    p.em1 {
+  margin-left: 1em; }
+    p.em2 {
+  margin-left: 2em; }
+    p.em3 {
+  margin-left: 3em; }
+    p.em4 {
+  margin-left: 4em; }
+
+  div {
+    float: left; }
   
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -83,21 +93,25 @@
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-    h1 { font-size: 24px;
-		font-family: Bahnschrift; }
-    h2 { font-size: 22px;
-		font-family: Bahnschrift; }
-    h3 { font-size: 18px;
-		font-family: Comic Sans; }
-    h4 { font-size: 16px;
-		font-family: Bahnschrift; } 
-    h5 { font-size: 12px;
-		font-family: Bahnschrift; } 
-    h6 { font-size: 10px;
-		font-family: Bahnschrift; }
-	p {
-		font-family: "Bahnschrift", Didot, Lucida Bright, Comic Sans;
-	}
+
+  h1 { font-size: 21px;
+       font-family: Inter, Georgia, BahnSchrift, sans-serif, Consolas; }
+  h2 { font-size: 18px;
+       font-family: Inter, Georgia, BahnSchrift, sans-serif, Consolas; }
+  h3 { font-size: 17px;
+       font-family: Inter, Georgia, BahnSchrift, sans-serif, Consolas; }
+  h4 { font-size: 16px;
+       font-family: Inter, Georgia, BahnSchrift, sans-serif, Consolas; }
+  h5 { font-size: 15px;
+       font-family: Bahnschrift, Inter, Helvetic, sans-serif; }
+  h6 { font-size: 10px;
+	  font-family: Bahnschrift, Inter, Helvetic, sans-serif; }
+  p { font-size: 15px;
+      font-family: Bahnschrift, Inter, Helvetic, sans-serif;
+      text-align: left; 
+	  margin-left: 5px; }
+
+/* font-family: "Bahnschrift", Didot, Lucida Bright, Comic Sans; */
 details {
   font: 15px "Bahnschrift", Calibri, sans-serif;
   width: 1620px;
