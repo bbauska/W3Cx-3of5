@@ -32,10 +32,10 @@ function scrollFunction() {
   }
 }
 
-<!-- when the user clicks on the button, scroll to the top of the document. 0,0 or to top of menu button (approx 2120 each), if applicable -->
+<!-- when the user clicks on the button, scroll to the top of the document. 0,0 or to top of menu button (2120 on other example) -->
 function topFunction() {
-  document.body.scrollTop = 120;
-  document.documentElement.scrollTop = 120;
+  document.body.scrollTop = 600;
+  document.documentElement.scrollTop = 600;
 }
 </script>
 
@@ -19179,19 +19179,23 @@ at JSBin</a>, or try it below in your browser:</p>
 19.   &lt;body&gt;
 20.  
 21.     &lt;form&gt;
-22.         &lt;fieldset&gt;
-23.           &lt;legend&gt;Type invalid values and see the result&lt;/legend&gt;
-24.           &lt;label for=&quot;myEmail&quot; class=&quot;formLabel&quot;&gt;E-mail:&lt;/label&gt; &lt;input type=&quot;email&quot; id=&quot;myEmail&quot; required/&gt;&lt;br&gt;
-25.           &lt;label for=&quot;myURL&quot; class=&quot;formLabel&quot;&gt;Homepage (URL):&lt;/label&gt; &lt;input type=&quot;url&quot; id=&quot;myURL&quot; required/&gt;&lt;br&gt;
-26.           &lt;label for=&quot;myPhone&quot; class=&quot;formLabel&quot;&gt;Phone number:&lt;/label&gt; &lt;input type=&quot;tel&quot; id=&quot;myPhone&quot; pattern=&quot;[0-9]{3}-?[0-9]{3}-?[0-9]{4}&quot;        placeholder=&quot;e.g. 416-555-1234&quot; required/&gt;&lt;br&gt;
-27.           &lt;button&gt;Submit form&lt;/button&gt;&lt;br /&gt;
-28.         &lt;/fieldset&gt;
-29.     &lt;/form&gt;
-30.   &lt;p&gt;
-31.  
-32.   &lt;/body&gt;
-33. &lt;/html&gt;
-34.  
+22.       &lt;fieldset&gt;
+23.         &lt;legend&gt;Type invalid values and see the result&lt;/legend&gt;
+            &lt;label for=&quot;myEmail&quot; class=&quot;formLabel&quot;&gt;E-mail:&lt;/label&gt; 
+			&lt;input type=&quot;email&quot; id=&quot;myEmail&quot; required/&gt;&lt;br&gt;
+            &lt;label for=&quot;myURL&quot; class=&quot;formLabel&quot;&gt;
+	        Homepage (URL):&lt;/label&gt; &lt;input type=&quot;url&quot; id=&quot;myURL&quot; 
+			required/&gt;&lt;br&gt; &lt;label for=&quot;myPhone&quot; class=&quot;formLabel&quot;&gt; Phone 
+			number:&lt;/label&gt; &lt;input type=&quot;tel&quot; id=&quot;myPhone&quot; 
+			pattern=&quot;[0-9]{3}-?[0-9]{3}-?[0-9]{4}&quot; placeholder=&quot;e.g.
+			416-555-1234&quot; required/&gt;&lt;br&gt;
+24.         &lt;button&gt;Submit form&lt;/button&gt;&lt;br /&gt;
+25.       &lt;/fieldset&gt;
+26.     &lt;/form&gt;
+27.     &lt;p&gt;
+28.  
+29.   &lt;/body&gt;
+30. &lt;/html&gt;
 </code></pre>
 
 </details>
@@ -19205,9 +19209,7 @@ rules that give visual feedback to the user’s input.</p>
 <p>Example #2: add CSS transitions + an icon/marker to the right of the
 input fields</p>
 <p>Try this <a href="https://jsbin.com/zaxije/2/edit" target="_blank" rel="noopener noreferrer">online example at
-JSBin</a> or try it here in your browser. This example adds a small icon
-that changes depending on the validity of the input field:</p>
-
+JSBin</a> or try it here in your browser. This example adds a small icon that changes depending on the validity of the input field:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------- 289b. last example + css transitions  + icon/marker (345) -------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19216,26 +19218,25 @@ that changes depending on the validity of the input field:</p>
   alt="Custom error messages on form + css ."
   style="width:35%;" />
 
-
 <h4>Source code extract:</h4>
 
 <details>
   <summary>Click to expand!</summary>
 
 <pre><code>
-1.  .myForm input:focus {
-2.     padding-right:70px;
-3.  }
-4.  .myForm input {
-5.     transition: padding .25s;
-6.  }
+1.   .myForm input:focus {
+2.      padding-right:70px;
+3.   }
+4.   .myForm input {
+5.      transition: padding .25s;
+6.   }
 7.  
-8.  .myForm input:required:valid {
-9.     background:url(https://i.imgur.com/BJolppS.png) no-repeat right top;
-10. }
-11. .myForm input:required {
-12.    background:url(https://i.imgur.com/7pIN7wz.png) no-repeat right top;
-13. }
+8.   .myForm input:required:valid {
+9.      background:url(https://i.imgur.com/BJolppS.png) no-repeat right top;
+10.  }
+11.   .myForm input:required {
+12.     background:url(https://i.imgur.com/7pIN7wz.png) no-repeat right top;
+13.  }
 </code></pre>
 
 </details>
@@ -19276,9 +19277,9 @@ messages! E-mail:  Homepage (URL):  Phone number:  Submit form</p>
 3.      &lt;legend&gt;Type invalid values and see the result&lt;/legend&gt;
 4.      &lt;label for=&quot;myEmail&quot; class=&quot;formLabel&quot;&gt;E-mail:&lt;/label&gt;
 5.      &lt;input type=&quot;email&quot; id=&quot;myEmail&quot;
-6.             **title=&quot;You don&#39;t know what an email address looks like, do you?&quot;**
-7.             required/&gt;&lt;br&gt;
-8.  ...
+6.        **title=&quot;You don&#39;t know what an email address looks like, do you?&quot;**
+7.        required/&gt;&lt;br&gt;
+8.      ...
 9.      &lt;button&gt;Submit form&lt;/button&gt;&lt;br /&gt;
 10.   &lt;/fieldset&gt;
 11. &lt;/form&gt;
@@ -19369,24 +19370,27 @@ to make your own message bubbles.</p>
 15.     &lt;form class=&quot;myForm&quot;&gt;
 16.       &lt;fieldset&gt;
 17.         &lt;legend&gt;Example use of the validation API&lt;/legend&gt;
-18.         &lt;label for=&quot;password1&quot; &gt;Password:&lt;/label&gt; &lt;input type=&quot;password&quot; id=&quot;password1&quot; oninput=&quot;checkPasswords()&quot; required&gt;
+18.         &lt;label for=&quot;password1&quot; &gt;Password:&lt;/label&gt; &lt;input type=&quot;password&quot; 
+              id=&quot;password1&quot; oninput=&quot;checkPasswords()&quot; required&gt;
 19.         &lt;p&gt;
-20.         &lt;label for=&quot;password2&quot;&gt;Repeat password:&lt;/label&gt; &lt;input type=&quot;password&quot; id=&quot;password2&quot; oninput=&quot;checkPasswords()&quot; required&gt;
+20.         &lt;label for=&quot;password2&quot;&gt;
+              Repeat password:&lt;/label&gt; &lt;input type=&quot;password&quot; id=&quot;password2&quot; 
+			  oninput=&quot;checkPasswords()&quot; required&gt;
 21.         &lt;p&gt;
 22.         &lt;button&gt;Submit&lt;/button&gt;
 23.       &lt;/fieldset&gt;
 24.     &lt;/form&gt;
 25.  
 26.   &lt;script&gt;
-27.   function checkPasswords() {
-28.     var password1 = document.getElementById(&#39;password1&#39;);
-29.     var password2 = document.getElementById(&#39;password2&#39;);
-30.     if (password1.value != password2.value) {
-31.       password2.setCustomValidity(&#39;Passwords non identiques&#39;);
-32.      } else {
-33.         password2.setCustomValidity(&#39;&#39;);
+27.     function checkPasswords() {
+28.       var password1 = document.getElementById(&#39;password1&#39;);
+29.       var password2 = document.getElementById(&#39;password2&#39;);
+30.       if (password1.value != password2.value) {
+31.         password2.setCustomValidity(&#39;Passwords non identiques&#39;);
+32.       } else {
+33.         password2.setCustomValidity(&#39;&#39;);
 34.       }
-35.     }
+35.     }  <!-- function checkpasswords -->
 36.   &lt;/script&gt;
 37.   &lt;/body&gt;
 38. &lt;/html&gt;
@@ -19425,24 +19429,15 @@ validation error.</p>
 <h4>The possible values for the validity property are:</h4>
 
 <ul>
-  <li>valueMissing</li>
-<br>
-  <li>typeMismatch</li>
-<br>
-  <li>patternMismatch</li>
-<br>
-  <li>tooLong</li>
-<br>
-  <li>rangeUnderflow</li>
-<br>
-  <li>rangeOverflow</li>
-<br>
-  <li>stepMismatch</li>
-<br>
-  <li>valid</li>
-<br>
+  <li>valueMissing<br></li>
+  <li>typeMismatch<br></li>
+  <li>patternMismatch<br></li>
+  <li>tooLong<br></li>
+  <li>rangeUnderflow<br></li>
+  <li>rangeOverflow<br></li>
+  <li>stepMismatch<br></li>
+  <li>valid<br></li>
   <li>customError</li>
-<br>
 </ul>
 
 <p>Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output" target="_blank" rel="noopener noreferrer">an
@@ -19468,40 +19463,40 @@ values, too big, too small, enter invalid characters, etc.):</p>
 3.  ...
 4.  &lt;body&gt;
 5.  
-6.  &lt;script&gt;
-7.  function validate() {
-8.       var input = document.getElementById(&#39;b&#39;);
-9.      ** var validityState_object = input.validity;**
+6.    &lt;script&gt;
+7.      function validate() {
+8.        var input = document.getElementById(&#39;b&#39;);
+9.        ** var validityState_object = input.validity;**
 10.  
-11.      if(validityState_object.valueMissing) {
-12.          input.setCustomValidity(&#39;Please set an age (required)&#39;);
-13.      } else if (validityState_object.rangeUnderflow) {
-14.          input.setCustomValidity(&#39;Your value is too low&#39;);
-15.      } else if (validityState_object.rangeOverflow) {
-16.          input.setCustomValidity(&#39;Your value is too high&#39;);
-17.      } else if (validityState_object.typeMismatch) {
-18.          input.setCustomValidity(&#39;Type mismatch&#39;);
-19.      } else if (validityState_object.tooLong) {
-20.          input.setCustomValidity(&#39;Too long&#39;);
-21.      } else if (validityState_object.stepMismatch) {
-22.          input.setCustomValidity(&#39;stepMismatch&#39;);
-23.      } else if (validityState_object.patternMismatch) {
-24.          input.setCustomValidity(&#39;patternMismatch&#39;);
-25.      } else {
-26.          input.setCustomValidity(&#39;&#39;);
-27.      }
-28. }
-29. &lt;/script&gt;
-30. &lt;form class=&quot;myForm&quot;&gt;
-31. &lt;label for=&quot;b&quot;&gt;Enter a value between 10 and 20: &lt;/label&gt;
-32.  
-33. &lt;input type=&quot;number&quot; name=&quot;text&quot; id=&quot;b&quot; min=&quot;10&quot; max=&quot;20&quot;
-34.         required **oninput=&#39;validate();&#39;**/&gt;
-35. &lt;button&gt;Submit&lt;/button&gt;
-36. &lt;/form&gt;
-37. 
-38. &lt;/body&gt;
-39. &lt;/html&gt;
+11.       if(validityState_object.valueMissing) {
+12.         input.setCustomValidity(&#39;Please set an age (required)&#39;);
+13.       } else if (validityState_object.rangeUnderflow) {
+14.         input.setCustomValidity(&#39;Your value is too low&#39;);
+15.       } else if (validityState_object.rangeOverflow) {
+16.         input.setCustomValidity(&#39;Your value is too high&#39;);
+17.       } else if (validityState_object.typeMismatch) {
+18.         input.setCustomValidity(&#39;Type mismatch&#39;);
+19.       } else if (validityState_object.tooLong) {
+20.         input.setCustomValidity(&#39;Too long&#39;);
+21.       } else if (validityState_object.stepMismatch) {
+22.         input.setCustomValidity(&#39;stepMismatch&#39;);
+23.       } else if (validityState_object.patternMismatch) {
+24.         input.setCustomValidity(&#39;patternMismatch&#39;);
+25.       } else {
+26.         input.setCustomValidity(&#39;&#39;);
+27.       }
+28.     }  <!-- function validate -->
+29.   &lt;/script&gt;
+30.   &lt;form class=&quot;myForm&quot;&gt;
+31.     &lt;label for=&quot;b&quot;&gt;Enter a value between 10 and 20: &lt;/label&gt;
+32.     &lt;input type=&quot;number&quot; name=&quot;text&quot; id=&quot;b&quot; min=&quot;10&quot; 
+          max=&quot;20&quot;
+          required **oninput=&#39;validate();&#39;**/&gt;
+33.     &lt;button&gt;Submit&lt;/button&gt;
+34.   &lt;/form&gt;
+35. 
+36. &lt;/body&gt;
+37. &lt;/html&gt;
 </code></pre>
 
 </details>
@@ -19575,13 +19570,13 @@ values and submit with one or two invalid fields.</p>
 1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
-4.     &lt;meta charset=&quot;utf-8&quot;&gt;
-5.     &lt;title&gt;Aggregating error messages&lt;/title&gt;
-6.     &lt;style&gt;
-7.         input:invalid { background-color: lightPink;}
-8.         input:valid { background-color:lightGreen; }
-9.         input:required {border: 2px solid red;}
-10.        input:optional {border: 2px solid green;}
+4.    &lt;meta charset=&quot;utf-8&quot;&gt;
+5.    &lt;title&gt;Aggregating error messages&lt;/title&gt;
+6.    &lt;style&gt;
+7.      input:invalid { background-color: lightPink;}
+8.      input:valid { background-color:lightGreen; }
+9.      input:required {border: 2px solid red;}
+10.     input:optional {border: 2px solid green;}
 11.  
 12.        .error-messages {
 13.            display: none;
@@ -19595,8 +19590,8 @@ values and submit with one or two invalid fields.</p>
 21.        fieldset {
 22.           border:1px solid;
 23.           padding:20px;
-24.        }
-25.     &lt;/style&gt;
+24.     }
+25.   &lt;/style&gt;
 26. &lt;/head&gt;
 27. &lt;body&gt;
 28. &lt;form&gt;
@@ -20398,8 +20393,8 @@ JSON support into your local store is straightforward.</p>
 <h4>Typical usage</h4>
 
 <pre><code>
-locaStorage.key = JSON.stringify(object); // or...
-localStorage.setItem(key, JSON.stringify(object));
+  locaStorage.key = JSON.stringify(object); // or...
+  localStorage.setItem(key, JSON.stringify(object));
 </code></pre>
 
 <p>Let’s try a simple toy example
@@ -20424,9 +20419,9 @@ there!</p>
 1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
-4.  &lt;meta charset=utf-8 /&gt;
-5.  &lt;title&gt;Storing JSON Objects with Local Storage&lt;/title&gt;
-6.  &lt;script&gt;
+4.    &lt;meta charset=utf-8 /&gt;
+5.    &lt;title&gt;Storing JSON Objects with Local Storage&lt;/title&gt;
+6.    &lt;script&gt;
 7.      var personObject= {&#39;givenName&#39;: &#39;Michel&#39;, &#39;familyName&#39;: &#39;Buffa&#39;};
 8.      // Store the object as a JSON String
 9.      localStorage.setItem(&#39;testObject&#39;, JSON.stringify(personObject));
@@ -20434,7 +20429,7 @@ there!</p>
 11.     var retrievedObject = JSON.parse(localStorage.getItem(&#39;testObject&#39;));
 12.     console.log(retrievedObject.firstName + &quot; &quot; + retrievedObject.lastName);
 13.    // then you can use retrievedObject.givenName, retrievedObject.familyName...
-14. &lt;/script&gt;
+14.   &lt;/script&gt;
 15. &lt;/head&gt;
 16. &lt;body&gt;
 17. &lt;/body&gt;
