@@ -15,6 +15,31 @@ font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucid
       text-align: left; 
       margin-left: 5px; }
 
+  pre, code {
+    font-family: monospace, monospace;
+    font-size: 10px;
+  }
+
+  pre {
+    overflow: auto;
+  }
+
+  pre > code {
+    display: block;
+    padding: 1rem;
+    word-wrap: normal;
+  }
+
+  a {
+    text-decoration: none; 
+  }
+
+  a[href]:hover {
+    text-decoration: underline; 
+  }
+
+  pre:hover, pre:focus { width: min-content; }
+
   p.em1 {
     margin-left: 1em; }
   p.em2 {
