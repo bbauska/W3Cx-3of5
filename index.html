@@ -3752,7 +3752,10 @@ inherit this behavior and are themselves not translatable. The reverse
 is also true.</p>
 
 <pre><code>
-&lt;p translate=&quot;no&quot;&gt;This is a text in a paragraph element, that should not be translated: the p element has a translate=&quot;no&quot; attribute.&lt;span&gt; This part that is in a span element embedded within the paragraph. It does not have a translate attribute but inherits the translation-mode of the p and will not be translated too&lt;/span&gt;. This is the end of the paragraph...&lt;/p&gt;
+&lt;p translate=&quot;no&quot;&gt;This is a text in a paragraph element, that should not be translated: the p element has a translate=&quot;no&quot; attribute.&lt;span&gt; 
+This part that is in a span element embedded within the paragraph. 
+It does not have a translate attribute but inherits the translation-mode of the p and will not be translated
+too&lt;/span&gt;. This is the end of the paragraph...&lt;/p&gt;
 </code></pre>
 
 <h4>External resources:</h4>
@@ -3997,9 +4000,9 @@ for now let us keep looking at the same example we used in previous
 sections:</p>
 
 <pre><code>
-&lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
-   ...
-&lt;/section&gt;
+  &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
+  ...
+  &lt;/section&gt;
 </code></pre>
 
 <p>We will look at the itemtype attribute later. Now that we have defined a
@@ -4054,28 +4057,28 @@ has the name of your vocabulary.</p>
   <summary>Click to expand!</summary>
   
 <pre><code>
-1.  &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
-2.       &lt;h1&gt;Contact Information&lt;/h1&gt;
-3.       &lt;dl&gt;
-4.           &lt;dt&gt;Name&lt;/dt&gt;
-5.           &lt;dd [itemprop=&quot;name&quot;]&gt;Michel Buffa&lt;/dd&gt;
-6.           &lt;dt&gt;Position&lt;/dt&gt;
-7.           &lt;dd&gt;&lt;span [itemprop=&quot;jobTitle&quot;]&gt;
-8.                 Professor/Researcher/Scientist
-9.               &lt;/span&gt; for
-10.              &lt;span [itemprop=&quot;affiliation&quot;]&gt;University of Nice,
-11.                     France
-12.              &lt;/span&gt;
-13.           &lt;/dd&gt;
-14.      &lt;/dl&gt;
-15.      &lt;h1&gt;My different online public accounts&lt;/h1&gt;
-16.      &lt;ul&gt;
-17.          &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;
-18.              [itemprop=&quot;url&quot;]&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
-19.          &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
-20.              [itemprop=&quot;url&quot;]&gt;Michel Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
-21.      &lt;/ul&gt;
-22. &lt;/section&gt;
+1.   &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
+2.     &lt;h1&gt;Contact Information&lt;/h1&gt;
+3.     &lt;dl&gt;
+4.       &lt;dt&gt;Name&lt;/dt&gt;
+5.       &lt;dd [itemprop=&quot;name&quot;]&gt;Michel Buffa&lt;/dd&gt;
+6.         &lt;dt&gt;Position&lt;/dt&gt;
+7.         &lt;dd&gt;&lt;span [itemprop=&quot;jobTitle&quot;]&gt;
+8.           Professor/Researcher/Scientist
+9.         &lt;/span&gt; for
+10.          &lt;span [itemprop=&quot;affiliation&quot;]&gt;University of Nice,
+11.            France
+12.        &lt;/span&gt;
+13.      &lt;/dd&gt;
+14.    &lt;/dl&gt;
+15.    &lt;h1&gt;My different online public accounts&lt;/h1&gt;
+16.    &lt;ul&gt;
+17.      &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;
+18.        [itemprop=&quot;url&quot;]&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
+19.      &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
+20.        [itemprop=&quot;url&quot;]&gt;Michel Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
+21.    &lt;/ul&gt;
+22.  &lt;/section&gt;
 </code></pre>
 
 </details>
@@ -4088,7 +4091,7 @@ is identified by the value of the itemprop attribute of sub-elements.</p>
 <h4>The line:</h4>
 
 <pre><code>
-&lt;dd itemprop=&quot;name&quot;Michel Buffa&lt;/dd&gt;
+  &lt;dd itemprop=&quot;name&quot;Michel Buffa&lt;/dd&gt;
 </code></pre>
 
 <p>…defines a property called “name” that has a value of “Michel Buffa” (the text value between the opening and closing tags of the &lt;dd&gt; element).</p>
@@ -4107,26 +4110,26 @@ vocabulary used by the nested microdata.</p>
   <summary>Click to expand!</summary>
 
 <pre><code>
-1.  ...
-2.  &lt;/dl&gt;
+1.   ...
+2.   &lt;/dl&gt;
 3.  
-4.  &lt;!-- SURFACE ADDRESS GOES HERE --&gt;
+4.   &lt;!-- SURFACE ADDRESS GOES HERE --&gt;
 5.  
-6.  &lt;dd itemprop=&quot;address&quot;[ itemscope]
-7.      [itemtype=&quot;https://schema.org/PostalAddress&quot;]&gt;
-8.       &lt;span itemprop=&quot;streetAddress&quot;&gt;10 promenade des anglais&lt;/span&gt;&lt;br&gt;
-9.       &lt;span itemprop=&quot;addressLocality&quot;&gt;Nice&lt;/span&gt;,
-10.      &lt;span itemprop=&quot;addressRegion&quot;&gt;Alpes maritimes, France&lt;/span&gt;
-11.      &lt;span itemprop=&quot;postalCode&quot;&gt;06410&lt;/span&gt;&lt;br&gt;
-12.      &lt;span itemprop=&quot;addressCountry&quot; itemscope
-13.            [itemtype=&quot;https://schema.org/Country&quot;]&gt;
-14.           &lt;span itemprop=&quot;name&quot;&gt;France&lt;/span&gt;
-15.      &lt;/span&gt;
-16. &lt;/dd&gt;
+6.   &lt;dd itemprop=&quot;address&quot;[ itemscope]
+7.     [itemtype=&quot;https://schema.org/PostalAddress&quot;]&gt;
+8.     &lt;span itemprop=&quot;streetAddress&quot;&gt;10 promenade des anglais&lt;/span&gt;&lt;br&gt;
+9.     &lt;span itemprop=&quot;addressLocality&quot;&gt;Nice&lt;/span&gt;,
+10.    &lt;span itemprop=&quot;addressRegion&quot;&gt;Alpes maritimes, France&lt;/span&gt;
+11.    &lt;span itemprop=&quot;postalCode&quot;&gt;06410&lt;/span&gt;&lt;br&gt;
+12.    &lt;span itemprop=&quot;addressCountry&quot; itemscope
+13.      [itemtype=&quot;https://schema.org/Country&quot;]&gt;
+14.      &lt;span itemprop=&quot;name&quot;&gt;France&lt;/span&gt;
+15.    &lt;/span&gt;
+16.  &lt;/dd&gt;
 17. 
-18. &lt;h1&gt;My different online public accounts&lt;/h1&gt;
+18.  &lt;h1&gt;My different online public accounts&lt;/h1&gt;
 19. 
-20. ...
+20.  ...
 </code></pre>
 
 </details>
@@ -4138,14 +4141,14 @@ vocabulary used by the nested microdata.</p>
 <p>It is possible to use the same property name several times in one microdata object, but with different values: </p>
 
 <pre><code>
-1.  ...
-2.  &lt;h1&gt;My different online public accounts&lt;/h1&gt;
-3.  &lt;ul&gt;
-4.  &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;[ itemprop=&quot;url&quot;]&gt;Twitter
-5.        profile&lt;/a&gt;&lt;/li&gt;
-6.  &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;[ itemprop=&quot;url&quot;]&gt;Michel
-7.        Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
-8.  &lt;/ul&gt;
+1.   ...
+2.   &lt;h1&gt;My different online public accounts&lt;/h1&gt;
+3.   &lt;ul&gt;
+4.   &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;[ itemprop=&quot;url&quot;]&gt;Twitter
+5.     profile&lt;/a&gt;&lt;/li&gt;
+6.   &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;[ itemprop=&quot;url&quot;]&gt;Michel
+7.     Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
+8.   &lt;/ul&gt;
 </code></pre>
 
 <p>This defines the fact that Michel Buffa has two online accounts, and
@@ -4156,13 +4159,14 @@ the two properties have the name url, each with its own value.</p>
 <p>Here are some microdata that represent a song. In this example, at line 5 we set two different properties: genre and keywords with the same value (see the <a href="https://schema.org/MusicRecording" target="_blank" rel="noopener noreferrer">MusicRecording schema definition</a>):</p>
 
 <pre><code>
-1.  &lt;div itemscope itemtype=&quot;https://schema.org/MusicRecording&quot;&gt;
-2.  &lt;h2&gt;The song I just published&lt;/h2&gt;
-3.  &lt;ul&gt;
-4.  &lt;li&gt;Name: &lt;span itemprop=&quot;name&quot;&gt;Please buy me on itunes, I need money!&lt;/span&gt;&lt;/li&gt;
-5.  &lt;li&gt;Band: &lt;span [itemprop=&quot;genre keywords&quot;]&gt;[Punk, Ska]&lt;/span&gt;&lt;/li&gt;
-6.  &lt;/ul&gt;
-7.  &lt;/div&gt;
+1.   &lt;div itemscope itemtype=&quot;https://schema.org/MusicRecording&quot;&gt;
+2.     &lt;h2&gt;The song I just published&lt;/h2&gt;
+3.     &lt;ul&gt;
+4.       &lt;li&gt;Name: &lt;span itemprop=&quot;name&quot;&gt;Please buy me on itunes, 
+           I need money!&lt;/span&gt;&lt;/li&gt;
+5.       &lt;li&gt;Band: &lt;span [itemprop=&quot;genre keywords&quot;]&gt;[Punk, Ska]&lt;/span&gt;&lt;/li&gt;
+6.     &lt;/ul&gt;
+7.   &lt;/div&gt;
 </code></pre>
 
 <p>And so on…<br>
@@ -4221,7 +4225,7 @@ data that isn’t actually in the text of your page.</td>
 <p>For example, the value of a property defined in an &lt;img&gt; element will be the value of the src attribute:</p>
 
 <pre><code>
-&lt;img itemprop=&quot;image&quot; src=&quot;MichelBuffa.png&quot; alt=&quot;A great professor&quot;&gt;
+  &lt;img itemprop=&quot;image&quot; src=&quot;MichelBuffa.png&quot; alt=&quot;A great professor&quot;&gt;
 </code></pre>
 
 <p>Or, for a &lt;time&gt;, it will be the value of the datetime attribute:</p>
@@ -4233,7 +4237,7 @@ data that isn’t actually in the text of your page.</td>
 <p>Or, for an &lt;a&gt; element, the value will be the value of the href attribute:</p>
 
 <pre><code>
-&lt;a href=&quot;https://www.twitter.com/micbuffa&quot; itemprop=&quot;url&quot;&gt;profile&lt;/a&gt;
+  &lt;a href=&quot;https://www.twitter.com/micbuffa&quot; itemprop=&quot;url&quot;&gt;profile&lt;/a&gt;
 </code></pre>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch1-4-4">1.4.4 Microdata Tools</h3>
@@ -4363,7 +4367,9 @@ with some HTML code that you can copy and paste for embedding.</p>
 <h4>Here is the HTML code you need to copy and paste in order to embed avideo:</h4>
 
 <pre><code>
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/WMFXg-kni0U&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/WMFXg-kni0U&quot; title=&quot;YouTube video player&quot;
+  frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+  picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
 </code></pre>
 
 <p>The YouTube video embedded in this page by the above code: it’s HTML5 but it’s not a &lt;video&gt; element directly inserted in the HTML of this page, it’s an &lt;iframe&gt;.</p>
@@ -4414,26 +4420,28 @@ API</a> and other advanced HTML5 features in the <a href="https://www.edx.org
   <summary>Click to expand!</summary>
 
 <pre><code>
-1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.     &lt;head&gt;
-4.        &lt;meta charset=&quot;utf-8&quot;/&gt;
-5.        &lt;title&gt;horse song&lt;/title&gt;
+1.   &lt;!DOCTYPE html&gt;
+2.   &lt;html lang=&quot;en&quot;&gt;
+3.       &lt;head&gt;
+4.       &lt;meta charset=&quot;utf-8&quot;/&gt;
+5.       &lt;title&gt;horse song&lt;/title&gt;
 6.  
 7.     &lt;/head&gt;
 8.     &lt;body&gt;
-9.        &lt;audio controls=&quot;controls&quot;&gt;
-10.          &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot; type=&quot;audio/ogg&quot; /&gt;
-11.          &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot; type=&quot;audio/mp3&quot; /&gt;
-12.             Your browser does not support the audio element.
-13.             Download the audio/video in
-14.          &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;&gt;OGG&lt;/a&gt;
-15.          or &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;&gt;MP3&lt;/a&gt;
-16.          format.
-17.       &lt;/audio&gt;
+9.       &lt;audio controls=&quot;controls&quot;&gt;
+10.        &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot; 
+             type=&quot;audio/ogg&quot; /&gt;
+11.        &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot; 
+             type=&quot;audio/mp3&quot; /&gt;
+12.        Your browser does not support the audio element.
+13.        Download the audio/video in
+14.        &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;&gt;OGG&lt;/a&gt;
+15.        or &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;&gt;MP3&lt;/a&gt;
+16.        format.
+17.      &lt;/audio&gt;
 18. 
 19.    &lt;/body&gt;
-20. &lt;/html&gt;
+20.  &lt;/html&gt;
 </code></pre>
 
 </details>
@@ -4514,18 +4522,16 @@ attributes should be followed.</p>
 <p>To add some styling to the basic example we saw when we introduced the &lt;audio&gt; element, we just add a &lt;figure&gt; with two children: an &lt;img&gt; and a &lt;figcaption&gt;. Inside the &lt;figcaption&gt; we add the &lt;audio&gt; element from the previous example.</p>
 <p>Please move the mouse pointer over this player’s elements: (does not work in git)</p>
 
-<h4>HTML</h4>
-
 <details>
-  <summary>Click to expand!</summary>
+  <summary>HTML Click to expand!</summary>
 
 <pre><code>
-1.  &lt;figure id=&quot;figaudio1&quot;&gt;
-2.    &lt;img id=&quot;imghorse&quot; width=&quot;200&quot;
+1.   &lt;figure id=&quot;figaudio1&quot;&gt;
+2.     &lt;img id=&quot;imghorse&quot; width=&quot;200&quot;
 3.       src=&quot;https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg&quot;
 4.       alt = &quot;a horse&quot;/&gt;
-5.    &lt;figcaption id=&quot;figcptionaudio1&quot;&gt; Press Play to hear the horse!
-6.      &lt;audio controls=&quot;controls&quot;&gt;
+5.     &lt;figcaption id=&quot;figcptionaudio1&quot;&gt; Press Play to hear the horse!
+6.       &lt;audio controls=&quot;controls&quot;&gt;
 7.         &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;
 8.                 type=&quot;audio/ogg&quot; /&gt;
 9.         &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;
@@ -4533,11 +4539,11 @@ attributes should be followed.</p>
 11.        Your browser does not support the audio element.
 12.        Download the audio/video in
 13.        &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;&gt;OGG&lt;/a&gt;
-14.      or &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;&gt;MP3&lt;/a&gt;
-15.         format.
-16.    &lt;/audio&gt;
-17. &lt;/figcaption&gt;
-18. &lt;/figure&gt;
+14.        or &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;&gt;MP3&lt;/a&gt;
+15.          format.
+16.      &lt;/audio&gt;
+17.    &lt;/figcaption&gt;
+18.  &lt;/figure&gt;
 </code></pre>
 
 </details>
@@ -4552,51 +4558,49 @@ attributes should be followed.</p>
 
 <p>Press Play to hear the horse ! (<i><b>does not work</b></i> in git)</p>
 
-<h4>HTML source code:</h4>
-
 <details>
-  <summary>Click to expand!</summary>
+  <summary>HTML click to expand!</summary>
   
 <pre><code>
-1.  &lt;figure id=&quot;figaudio1&quot;&gt;
-2.    &lt;img id=&quot;imghorse&quot; width=&quot;200&quot;
+1.   &lt;figure id=&quot;figaudio1&quot;&gt;
+2.     &lt;img id=&quot;imghorse&quot; width=&quot;200&quot;
 3.       src=&quot;https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg&quot;
 4.       alt = &quot;a horse&quot;/&gt;
-5.    &lt;figcaption id=&quot;figcptionaudio1&quot;&gt; Press Play to hear the horse!
-6.      &lt;audio controls=&quot;controls&quot;&gt;
+5.     &lt;figcaption id=&quot;figcptionaudio1&quot;&gt; Press Play to hear the horse!
+6.       &lt;audio controls=&quot;controls&quot;&gt;
 7.         &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;
-8.                 type=&quot;audio/ogg&quot; /&gt;
+8.           type=&quot;audio/ogg&quot; /&gt;
 9.         &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;
-10.                type=&quot;audio/mp3&quot; /&gt;
+10.          type=&quot;audio/mp3&quot; /&gt;
 11.        Your browser does not support the audio element.
 12.        Download the audio/video in
 13.        &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;&gt;OGG&lt;/a&gt;
-14.      or &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;&gt;MP3&lt;/a&gt;
-15.         format.
-16.    &lt;/audio&gt;
-17. &lt;/figcaption&gt;
-18. &lt;/figure&gt;
+14.          or &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;&gt;MP3&lt;/a&gt;
+15.          format.
+16.      &lt;/audio&gt;
+17.    &lt;/figcaption&gt;
+18.  &lt;/figure&gt;
 </code></pre>
 
 </details>
 
-<h4>CSS source code:</h4>
+<br>
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>CSS click to expand!</summary>
   
 <pre><code>
-1.  #figaudio1 {
-2.      width : 420px;;
-3.      text-align:center;
-4.      padding : 6px;
-5.      background : white;
-6.      margin : 0 11px 0px 0;
-7.      border :solid 1px #888888;
-8.      border-radius : 8px ;
-9.  }
+1.    #figaudio1 {
+2.      width : 420px;;
+3.      text-align:center;
+4.      padding : 6px;
+5.      background : white;
+6.      margin : 0 11px 0px 0;
+7.      border :solid 1px #888888;
+8.      border-radius : 8px ;
+9.    }
 10.  
-11. #figcptionaudio1 {
+11.   #figcptionaudio1 {
 12.     font-size : .8em;
 13.     padding : 6px 8px;
 14.     background : #dddddd;
@@ -4604,29 +4608,29 @@ attributes should be followed.</p>
 16.     text-align :center;
 17.     font-family : georgia, serif;
 18.     font-style : italic;
-19.     border-radius : 7px ;
-20. }
+19.     border-radius : 7px ;
+20.   }
 21.  
-22. #figaudio1 &gt; img {
+22.   #figaudio1 &gt; img {
 23.     background : #eeeeee;
 24.     padding : 5px;
 25.     border : solid 1px #444444;
-26. }
+26.   }
 27.  
-28. /* For audio and img transitions/animation */
-29. audio, #figaudio1 &gt; img {
+28.   /* For audio and img transitions/animation */
+29.     audio, #figaudio1 &gt; img {
 30.     transition:all 0.5s;
-31. }
+31.   }
 32.  
-33. #figaudio1 &gt; img:hover {
+33.   #figaudio1 &gt; img:hover {
 34.     box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-35.     transform: scale(1.05);
-36. }
+35.     transform: scale(1.05);
+36.   }
 37.  
-38. audio:hover, audio:focus, audio:active {
+38.   audio:hover, audio:focus, audio:active {
 39.     box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
 40.     transform: scale(1.05);
-41. }
+41.   }
 </code></pre>
 
 </details>
@@ -4649,29 +4653,29 @@ attributes should be followed.</p>
 <h4>The corresponding HTML source code is:</h4>
 
 <pre><code>
-1.  &lt;video &lt;b&gt;id=&quot;w3devCampusVideo&quot;&lt;/b&gt; autoplay controls&gt;
+1.   &lt;video &lt;b&gt;id=&quot;w3devCampusVideo&quot;&lt;/b&gt; autoplay controls&gt;
 2.  
-3.       &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
-4.               type=video/webm&gt;
-5.       &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
-6.               type=video/ogg&gt;
-7.       &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
-8.               type=video/mp4&gt;
-9.  &lt;/video&gt;
+3.     &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
+4.       type=video/webm&gt;
+5.     &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
+6.       type=video/ogg&gt;
+7.     &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
+8.       type=video/mp4&gt;
+9.   &lt;/video&gt;
 </code></pre>
 
 <h4>… and the CSS source code is as follows:</h4>
 
 <pre><code>
-1.  #w3devCampusVideo {
-2.      width: 300px;
-3.      &lt;b&gt;transition: all 0.5s ease-in-out;&lt;/b&gt;
-4.  }
+1.   #w3devCampusVideo {
+2.    width: 300px;
+3.    &lt;b&gt;transition: all 0.5s ease-in-out;&lt;/b&gt;
+4.   }
 5.   
-6.  #w3devCampusVideo&lt;/b&gt;:hover&lt;/b&gt; {
-7.      width:400px;
-8.      transform:rotate(-5deg);
-9.  }
+6.   #w3devCampusVideo&lt;/b&gt;:hover&lt;/b&gt; {
+7.     width:400px;
+8.     transform:rotate(-5deg);
+9.   }
 </code></pre>
 
 <h4>Fullscreen video that resizes and maintains ratios</h4>
@@ -4694,28 +4698,28 @@ attributes should be followed.</p>
 <h4>Here is the HTML code. It’s really simple, just notice the &lt;body onload=“init();”&gt; which calls the JavaScript init() function right after the page is loaded.</h4>
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>HTML click to expand!</summary>
 
 <pre><code>
-1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
+1.    &lt;!DOCTYPE html&gt;
+2.    &lt;html lang=&quot;en&quot;&gt;
+3.    &lt;head&gt;
 4.      &lt;meta charset=&quot;utf-8&quot;&gt;
 5.      &lt;title&gt;Full width video like PayPal site&lt;/title&gt;
-6.  &lt;/head&gt;
-7.  &lt;body onload=&quot;init();&quot;&gt;
+6.    &lt;/head&gt;
+7.    &lt;body onload=&quot;init();&quot;&gt;
 8.      &lt;video id=&quot;myVideo&quot; autoplay&gt;
 9.        &lt;source
-10.           src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
-11.           type=video/webm&gt;
+10.         src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
+11.         type=video/webm&gt;
 12.       &lt;source
-13.           src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
-14.           type=video/ogg&gt;
+13.         src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
+14.         type=video/ogg&gt;
 15.       &lt;source
-16.           src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
-17.           type=video/mp4&gt;
+16.         src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
+17.         type=video/mp4&gt;
 18.     &lt;/video&gt;
-19. &lt;/body&gt;
+19.   &lt;/body&gt;
 </code></pre>
 
 </details>
@@ -4723,29 +4727,29 @@ attributes should be followed.</p>
 <h4>Here is the CSS (remove margins, remove padding, hide parts that could overflow from the &lt;body&gt;):</h4>
 
 <pre><code>
-body {
+  body {
     margin:0;
     padding:0;
     overflow:hidden;
-}
+  }
 </code></pre>
 
 <h4>And now the JavaScript code:</h4>
 
 <pre><code>
-var video;
-function init() {
-   // function called when the page is loaded
-   video = document.querySelector(&quot;#myVideo&quot;);
-   // For initial value
-   video.width = window.innerWidth;
-   video.height = window.innerHeight;
-   // For dealing with window resize
-   window.onresize = function() {
-       video.width = window.innerWidth;
-       video.height = window.innerHeight;
-   };
-}
+  var video;
+  function init() {
+    // function called when the page is loaded
+    video = document.querySelector(&quot;#myVideo&quot;);
+    // For initial value
+    video.width = window.innerWidth;
+    video.height = window.innerHeight;
+    // For dealing with window resize
+    window.onresize = function() {
+      video.width = window.innerWidth;
+      video.height = window.innerHeight;
+    };
+  }
 </code></pre>
 
 <h4>Example #2: with a YouTube video</h4>
@@ -4784,16 +4788,16 @@ of the video.</p>
 <h4>CSS code:</h4>
 
 <pre><code>
-body {
-  margin:0;
-  padding:0;
-  overflow:hidden;
-}
+  body {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+  }
  
-video {
-  width:100%;
-  height:auto;
-}
+  video {
+    width:100%;
+    height:auto;
+  }
 </code></pre>
 
 <ol start="2" type="1">
@@ -4811,28 +4815,28 @@ this <a href="https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Backgroun
   <summary>Click to expand!</summary>
 
 <pre><code>
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-   &lt;meta charset=&quot;utf-8&quot;&gt;
-   &lt;title&gt;Full screen video with CSS effects &lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;header&gt;
- &lt;video autoplay loop=&quot;&quot;
-  poster=&quot;https://mainline.i3s.unice.fr/mooc/polina.jpg&quot;
-  id=&quot;bgvid&quot;&gt;
-    &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.webm&quot;
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Full screen video with CSS effects &lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;header&gt;
+        &lt;video autoplay loop=&quot;&quot;
+          poster=&quot;https://mainline.i3s.unice.fr/mooc/polina.jpg&quot;
+          id=&quot;bgvid&quot;&gt;
+          &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.webm&quot;
             type=&quot;video/webm&quot;&gt;
-    &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.mp4&quot;
+          &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.mp4&quot;
             type=&quot;video/mp4&quot;&gt;
-&lt;/video&gt;
-&lt;/header&gt;
-&lt;section&gt;
-&lt;h1&gt;Full screen video with CSS effects&lt;/h1&gt;
-&lt;/section&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+        &lt;/video&gt;
+      &lt;/header&gt;
+      &lt;section&gt;
+        &lt;h1&gt;Full screen video with CSS effects&lt;/h1&gt;
+      &lt;/section&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
 </code></pre>
 
 </details>
@@ -4840,23 +4844,23 @@ this <a href="https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Backgroun
 <h4>CSS code:</h4>
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>CSS click to expand!</summary>
 
 <pre><code>
-html, body{
+  html, body{
     color:white;
     height: 100%;
-}
-header{
+  }
+  header{
     height: 100%;
-    background-image: url(&#39;https://mainline.i3s.unice.fr/mooc/dots.png&#39;),                             url(&#39;#&#39;);
+    background-image: url(&#39;https://mainline.i3s.unice.fr/mooc/dots.png&#39;), url(&#39;#&#39;);
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
     background-position: center center, top left;
     font-family: sans-serif;
     color: #051a00;
-}
-header video {
+  }
+  header video {
     position:fixed;
     top:50%;
     left:50%;
@@ -4866,7 +4870,7 @@ header video {
     height:auto;
     z-index:-100;
     transform:translateX(-50%) translateY(-50%);
-}
+  }
 </code></pre>
 
 </details>
@@ -4956,10 +4960,10 @@ about the associated API.</p>
 <p>Like any HTML element, the &lt;video&gt; element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a &lt;video&gt; element:</p>
 
 <pre><code>
-1.  var video = document.createElement(&#39;video&#39;);
-2.  video.src = &#39;video.mp4&#39;;
-3.  video.controls = true;
-4.  document.body.appendChild(video);
+1.   var video = document.createElement(&#39;video&#39;);
+2.   video.src = &#39;video.mp4&#39;;
+3.   video.controls = true;
+4.   document.body.appendChild(video);
 </code></pre>
 
 <p>This will create a complete video player for the file “video.mp4”, with
@@ -22337,7 +22341,7 @@ good understanding of the material.</p>
 </ul>
 
 <h5>. . .The end.<br>
-<br>last updated 03-13-23 2:44pm</h5>
+<br>last updated 05-02-23 11:25pm</h5>
   </body>
 </html>
 <!--
