@@ -4898,19 +4898,33 @@ background image (“dots.png”) that is repeated in X and Y (see <i>lines
 JavaScript and a resize event. The video resizes correctly and keeps its
 ratio.</p>
 
-<h4>CSS code:</h4>
+<details>
+  <summary>CSS click to expand!</summary>
 
-<div class="sourceCode" id="cb119"><pre
-class="sourceCode css"><code class="sourceCode css"><span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a>body {</span>
-<span id="cb119-2"><a href="#cb119-2" aria-hidden="true" tabindex="-1"></a>   margin: <span class="dv">0</span><span class="op">;</span></span>
+<div class="sourceCode" id="cb119">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a>body {</span>
+<span id="cb119-2"><a href="#cb119-2" aria-hidden="true" tabindex="-1"></a>   margin: 
+  <span class="dv">0</span><span class="op">;</span></span>
 <span id="cb119-3"><a href="#cb119-3" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb119-4"><a href="#cb119-4" aria-hidden="true" tabindex="-1"></a>video {</span>
-<span id="cb119-5"><a href="#cb119-5" aria-hidden="true" tabindex="-1"></a>   position: absolute<span class="op">;</span></span>
-<span id="cb119-6"><a href="#cb119-6" aria-hidden="true" tabindex="-1"></a>   width: <span class="dv">100</span><span class="dt">vw</span><span class="op">;</span></span>
-<span id="cb119-7"><a href="#cb119-7" aria-hidden="true" tabindex="-1"></a>   height: <span class="dv">100</span><span class="dt">vh</span><span class="op">;</span></span>
-<span id="cb119-8"><a href="#cb119-8" aria-hidden="true" tabindex="-1"></a>   object-fit: cover<span class="op">;</span></span>
-<span id="cb119-9"><a href="#cb119-9" aria-hidden="true" tabindex="-1"></a>   object-position: center <span class="dv">center</span><span class="op">;</span></span>
-<span id="cb119-10"><a href="#cb119-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<span id="cb119-5"><a href="#cb119-5" aria-hidden="true" tabindex="-1"></a>   
+  position: absolute<span class="op">;</span></span>
+<span id="cb119-6"><a href="#cb119-6" aria-hidden="true" tabindex="-1"></a>
+  width: <span class="dv">100</span><span class="dt">vw</span><span class="op">;</span></span>
+<span id="cb119-7"><a href="#cb119-7" aria-hidden="true" tabindex="-1"></a>   height: 
+<span class="dv">100</span><span class="dt">vh</span><span class="op">;</span></span>
+<span id="cb119-8"><a href="#cb119-8" aria-hidden="true" tabindex="-1"></a>   
+  object-fit: cover<span class="op">;</span></span>
+<span id="cb119-9"><a href="#cb119-9" aria-hidden="true" tabindex="-1"></a>   
+  object-position: center <span class="dv">center</span><span class="op">;</span></span>
+<span id="cb119-10"><a href="#cb119-10" aria-hidden="true" tabindex="-1"></a>}</span>
+</code>
+</pre>
+</div>
+
+</details>
 
 <h4>Discussion: why can’t we achieve perfect resizing with only CSS and the
 use of properties width=100% and height=100%?</h4>
@@ -4929,10 +4943,8 @@ the whole video.</p>
 <p><b>Conclusion</b>: we can get full size video without JavaScript by
 using viewport units (vw and vh), unless we need to support some old
 browsers (see
-their <a href="https://caniuse.com/#feat=viewport-units" target="_blank" rel="noopener noreferrer">current support
-on CanIUse</a>).</p>
-<p>Setting the video to 100% width and height results in different
-behavior:</p>
+their <a href="https://caniuse.com/#feat=viewport-units" target="_blank" rel="noopener noreferrer">current support on CanIUse</a>).</p>
+<p>Setting the video to 100% width and height results in different behavior:</p>
 
 <ul>
   <li>100% means 100% of the size of the &lt;body&gt; tag.</li>
@@ -5002,18 +5014,14 @@ same API by a very small margin).</p>
 <p>The JavaScript API gives you powerful tools to manipulate
 the &lt;video&gt; element, as the video object provides many properties,
 methods and events.</p>
-<p>The complete list of events can be found in
-the <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#event-definitions" target="_blank" rel="noopener noreferrer">HTML5
-living standard specification</a>.</p>
-<p>The list of properties can be found at
-the <a href="https://www.w3.org/2010/05/video/mediaevents.html" target="_blank" rel="noopener noreferrer">W3C
-HTML5 Video Events and API</a> page. This page is interesting for Web
-developers because it shows an interactive view of the different values
-and events changing over time while the video is playing within the
-page.</p>
-<p>Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html" target="_blank" rel="noopener noreferrer">direct
-link</a>, and play with the different buttons and look at the table of
-events and properties that will change in real time. The displayed names
+<p>The complete list of events can be found in the <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#event-definitions" 
+target="_blank" rel="noopener noreferrer">HTML5 living standard specification</a>.</p>
+<p>The list of properties can be found at the <a href="https://www.w3.org/2010/05/video/mediaevents.html" target="_blank" rel="noopener noreferrer">W3C HTML5 Video Events and API</a> page. 
+This page is interesting for Web developers because it shows an interactive view of the 
+different values and events changing over time while the video is playing within the page.</p>
+<p>Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html" target="_blank" 
+rel="noopener noreferrer">direct link</a>, and play with the different buttons and look 
+at the table of events and properties that will change in real time. The displayed names
 show the properties, events, and methods from the API.</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 77. html5 video events and api (95) ------------------------------>
@@ -5121,6 +5129,8 @@ show the properties, events, and methods from the API.</p>
 </table>
 </div>
 
+<br>
+
 <p>In the next pages, let’s see, through a set of examples, how to use
 these most important properties, methods, and events…</p>
 <!------------------------------------------------------------------------------------------------>
@@ -5211,17 +5221,17 @@ when the video is ended.</p>
   <summary>Click to expand!</summary>
 
 <pre><code>
-&lt;video src=&quot;video.ogv&quot; id=&quot;myVideo&quot;&gt;
+  &lt;video src=&quot;video.ogv&quot; id=&quot;myVideo&quot;&gt;
     video not supported
-&lt;/video&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-  var vid = document.querySelector(&#39;#myVideo&#39;);
-  vid.addEventListener(&#39;ended&#39;, playNextVideo, false);
-  function playNextVideo(e) {
-     // Whatever you want to do after the event, change the src attribute
-     // of the video element, for example, in order to play another video
-  }
-&lt;/script&gt;
+  &lt;/video&gt;
+  &lt;script type=&#39;text/javascript&#39;&gt;
+    var vid = document.querySelector(&#39;#myVideo&#39;);
+    vid.addEventListener(&#39;ended&#39;, playNextVideo, false);
+    function playNextVideo(e) {
+      // Whatever you want to do after the event, change the src attribute
+      // of the video element, for example, in order to play another video
+    }
+  &lt;/script&gt;
 </code></pre>
 
 </details>
@@ -5351,12 +5361,12 @@ the code.</p>
   <summary>Click to expand!</summary>
 
 <pre><code>
-...
-vid.addEventListener(&#39;error&#39;, function(evt) {
+  ...
+  vid.addEventListener(&#39;error&#39;, function(evt) {
     logEvent(evt,&#39;red&#39;);
-}, false);
-...
-function logEvent(evt, color) {
+  }, false);
+  ...
+  function logEvent(evt, color) {
     switch (evt.type) {
        ...
        case &#39;error&#39;:
@@ -5381,8 +5391,8 @@ function logEvent(evt, color) {
            }
            break;
        }
-...
-}
+  ...
+  }
 </code></pre>
 
 </details>
@@ -5421,36 +5431,36 @@ the movie duration for which there is data.”</p>
   <summary>Click to expand!</summary>
 
 <pre><code>
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;title&gt;JavaScript Progress Monitor&lt;/title&gt;
     &lt;meta charset=&quot;utf-8&quot;/&gt;
     &lt;script&gt;
       function getPercentProg() {
-          var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
-          var endBuf = myVideo.buffered.end(0);
-          var soFar = parseInt(((endBuf / myVideo.duration) * 100));
-          document.getElementById(&quot;loadStatus&quot;).innerHTML = soFar + &#39;%&#39;;
+        var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
+        var endBuf = myVideo.buffered.end(0);
+        var soFar = parseInt(((endBuf / myVideo.duration) * 100));
+        document.getElementById(&quot;loadStatus&quot;).innerHTML = soFar + &#39;%&#39;;
       }
       // Will be called as soon as the page is ready on desktop computer,
       // Only when a user clicks on play control or image on mobile
       function myAutoPlay() {
-          var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
-          myVideo.play();
+        var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
+        myVideo.play();
       }
       function addMyListeners(){
-          var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
-          myVideo.addEventListener(&#39;progress&#39;, getPercentProg, false);
-          // Calls autoplay only if the device is adapted
-          myVideo.addEventListener(&#39;canplaythrough&#39;, myAutoPlay, false);
-     }
-  &lt;/script&gt;
-&lt;/head&gt;
-&lt;body onload=&quot;addMyListeners()&quot;&gt;
+        var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
+        myVideo.addEventListener(&#39;progress&#39;, getPercentProg, false);
+        // Calls autoplay only if the device is adapted
+        myVideo.addEventListener(&#39;canplaythrough&#39;, myAutoPlay, false);
+      }
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload=&quot;addMyListeners()&quot;&gt;
     &lt;h1&gt;Check progression of buffering before playing a movie. Useful withy
-        slow connexion (3G, etc.)&lt;/h1&gt;
-    &lt;div&gt;
+      slow connexion (3G, etc.)&lt;/h1&gt;
+    &lt;div&gt;
       &lt;video controls&gt;
           &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.webm
                   type=video/webm&gt;
@@ -5461,7 +5471,7 @@ the movie duration for which there is data.”</p>
       &lt;/video&gt;
       &lt;p id=&quot;loadStatus&quot;&gt;Buffering...&lt;/p&gt;
     &lt;/div&gt;
-&lt;/body&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
@@ -5520,8 +5530,8 @@ this chapter.</p>
 <h4>Examples of the lines to add to an Apache Web server:</h4>
 
 <pre><code>
-&lt;Files mysubtitle.vtt&gt;
-2.  ForceType text/vtt;charset=utf-8
+1.  &lt;Files mysubtitle.vtt&gt;
+2.    ForceType text/vtt;charset=utf-8
 3.  &lt;/Files&gt;
 </code></pre>
 
@@ -5541,17 +5551,17 @@ the source code shown below):</p>
 <p>The example uses a &lt;track&gt; element to insert basic captions to the video: sounds and music are described, in addition to standard subtitles that correspond to what the different movie characters say.</p>
 
 <pre><code>
-&lt;video height=&quot;272&quot; width=&quot;640&quot;
-       poster=&quot;https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg&quot;
-       crossorigin=&quot;anonymous&quot;
-       controls&gt;
-   &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/sintel.mp4&quot;
-           type=&quot;video/mp4&quot;&gt;
-   &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/sintel.webm&quot;
-           type=&quot;video/webm&quot;&gt;
-   &lt;track src=&quot;https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt&quot;
-          kind=&quot;captions&quot; label=&quot;Closed Captions&quot; default&gt;
-&lt;/video&gt;
+  &lt;video height=&quot;272&quot; width=&quot;640&quot;
+    poster=&quot;https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg&quot;
+    crossorigin=&quot;anonymous&quot;
+    controls&gt;
+  &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/sintel.mp4&quot;
+    type=&quot;video/mp4&quot;&gt;
+  &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/sintel.webm&quot;
+    type=&quot;video/webm&quot;&gt;
+  &lt;track src=&quot;https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt&quot;
+    kind=&quot;captions&quot; label=&quot;Closed Captions&quot; default&gt;
+  &lt;/video&gt;
 </code></pre>
 
 <h4>Notes:</h4>
@@ -5571,22 +5581,22 @@ the source code shown below):</p>
   <summary>Click to expand!</summary>
 
 <pre><code>
-&lt;video src=&quot;brave.webm&quot;&gt;
-   &lt;track kind=subtitles src=brave.en.vtt
+  &lt;video src=&quot;brave.webm&quot;&gt;
+    &lt;track kind=subtitles src=brave.en.vtt
           srclang=en
           label=&quot;English&quot;&gt;
-   &lt;track kind=captions src=brave.en.hoh.vtt
+    &lt;track kind=captions src=brave.en.hoh.vtt
           srclang=en
           label=&quot;English for the Hard of Hearing&quot;&gt;
-   &lt;track kind=subtitles src=brave.fr.vtt
+    &lt;track kind=subtitles src=brave.fr.vtt
           srclang=fr
           lang=fr 
           label=&quot;Français&quot;&gt;
-   &lt;track kind=subtitles src=brave.de.vtt
+    &lt;track kind=subtitles src=brave.de.vtt
           srclang=de
           lang=de
           label=&quot;Deutsch&quot;&gt;
-&lt;/video&gt;
+  &lt;/video&gt;
 </code></pre>
 
 </details>
@@ -5613,14 +5623,14 @@ the source code shown below):</p>
 <p>In the interactive example presented before, we used a file called sintel-captions.vtt:</p>
 
 <pre><code>
-&lt;video height=&quot;272&quot; width=&quot;640&quot;
-       poster=&quot;https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg&quot;
-       crossorigin=&quot;anonymous&quot;
-       controls&gt;
-   ...
-   &lt;track src=&quot;https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt&quot;
-          kind=&quot;captions&quot; label=&quot;Closed Captions&quot; default&gt;
-&lt;/video&gt;
+  &lt;video height=&quot;272&quot; width=&quot;640&quot;
+    poster=&quot;https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg&quot;
+    crossorigin=&quot;anonymous&quot;
+    controls&gt;
+    ...
+  &lt;track src=&quot;https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt&quot;
+    kind=&quot;captions&quot; label=&quot;Closed Captions&quot; default&gt;
+  &lt;/video&gt;
 </code></pre>
 
 <p>And here is an extract of the corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt" target="_blank" rel="noopener noreferrer">sintel-captions.vtt</a> file:</p>
@@ -5868,7 +5878,8 @@ HTML):</p>
 25. This cue contains &lt;u&gt; &lt;/u&gt; text.
 26. 
 27. 00:00:41.000 --&gt; 00:00:45.000
-28. This cue contains &lt;b&gt;&lt;i&gt;&lt;u&gt;bold, italic, underlined&lt;/u&gt;&lt;/i&gt;&lt;/b&gt; text.
+28. This cue contains &lt;b&gt;&lt;i&gt;&lt;u&gt;bold, italic, 
+  underlined&lt;/u&gt;&lt;/i&gt;&lt;/b&gt; text.
 29. 
 30. 00:00:46.000 --&gt; 00:00:50.000
 31. &lt;c.myclass&gt;This cue contains the class &quot;myclass&quot;.
@@ -5888,8 +5899,10 @@ HTML):</p>
 45. Using CSS, its font size should be 150%.
 46. 
 47. 00:01:06.000 --&gt; 00:01:10.000
-48. The &lt;00:01:06.333&gt;text &lt;00:01:06.666&gt;in &lt;00:01:07.000&gt;this &lt;00:01:07.333&gt;cue &lt;00:01:07.666&gt;should &lt;00:01:08.000&gt;grow
-49. &lt;00:01:08.333&gt;one &lt;00:01:08.666&gt;word &lt;00:01:09.000&gt;at &lt;00:01:09.333&gt;a &lt;00:01:09.666&gt;time
+48. The &lt;00:01:06.333&gt;text &lt;00:01:06.666&gt;in &lt;00:01:07.000&gt;this 
+  &lt;00:01:07.333&gt;cue &lt;00:01:07.666&gt;should &lt;00:01:08.000&gt;grow
+49. &lt;00:01:08.333&gt;one &lt;00:01:08.666&gt;word &lt;00:01:09.000&gt;at 
+  &lt;00:01:09.333&gt;a &lt;00:01:09.666&gt;time
 50. 
 51. 00:01:11.000 --&gt; 00:01:15.000
 52. That&#39;s it! For now...
