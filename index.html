@@ -7957,7 +7957,7 @@ account when wireframe shapes are drawn.</p>
 
 <p>… gives this result:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------- 129. stroked rectangle - border is in blue (155) ------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~ 129. stroked rectangle - border is in blue (155) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image129.jpeg?raw=true"
@@ -7984,7 +7984,7 @@ occurred.</p>
 
 <h4>The result is:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------ 130. the use of clearrrect draws a white rectangle against the pink background (156) ---->
+<!--~~~ 130. the use of clearrrect draws a white rectangle against the pink background (156) ~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image130.jpeg?raw=true"
@@ -9063,9 +9063,9 @@ Your browser does not support the canvas tag.
   <li>We saved the context at the beginning of the function (BEST PRACTICE),</li>
   <li>We restored it at the end (BEST PRACTICE).</li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 132. laptop showing unicorn validator (xx) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image132.jpeg?raw=true"
   style="width:40%"
@@ -9109,9 +9109,9 @@ Your browser does not support the canvas tag.
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-1">3.3.1 Immediate Mode</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In the previous sections, we learned how to draw filled or wireframe rectangles.</p>
 <p>As soon as the ctx.strokeRect(x, y, width, height) or the ctx.fillRect(x, y, width, height) method is called, a rectangle is indeed drawn <i>immediately</i> in the canvas.</p>
 <p>While drawing rectangles with strokeRect or fillRect, drawing text or drawing images, all these shapes will be drawn in <i>immediate mode</i>.</p>
@@ -15568,9 +15568,9 @@ canvas position (margin, etc.).</p>
 <p>Fortunately, there exists a method for getting the position and size
 of any element in the page: getBoundingClientRect().</p>
 <p>Play with the example below that show the problem:</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 199. display mouse cursors position on canvas (279) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 199. display mouse cursors position on canvas (279) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image199.png?raw=true"
   alt="Display mouse cursors position on canvas."
@@ -15696,18 +15696,18 @@ y: evt.clientY - rect.top
 </details>
 
 <h4>Here is the result, when the mouse is approximately at the top left corner of the canvas:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!-------------- 200. incorrect mouse position at top left corner of canvas (281) ---------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 200. incorrect mouse position at top left corner of canvas (281) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image200.jpeg?raw=true"
   alt="Bad mouse coordinates."
   style="width:65%;" />
 
 <h4>GOOD version of the code:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------ 201. corrected code for top left canvas positioning (281) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 201. corrected code for top left canvas positioning (281) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image201.png?raw=true"
   alt="Corrected code for top left canvas mouse positioning."
@@ -15725,9 +15725,9 @@ function getMousePos(canvas, evt) {
 </code></pre>
 
 <h4>Result (the cursor is approximately at the top left corner):</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 202. now at 0,0 - top left of canvas (281) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 202. now at 0,0 - top left of canvas (281) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image202.jpeg?raw=true"
   alt="Mouse now at 0,0 - top left of canvas."
@@ -15738,17 +15738,16 @@ function getMousePos(canvas, evt) {
 <p>This example uses the previous function for computing the mouse position
 correctly. It listens to mousemove, mousedown and mouseup events, and
 shows how to get the mouse button number using the evt.button property.</p>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 203. mouse position and pressed or released (282) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 203. mouse position and pressed or released (282) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image203.png?raw=true"
   alt="Mouse position along with whether its pressed or released."
   style="width:40%;" />
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------- 204. move mouse cursor, click and release, see what happens (282) --------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 204. move mouse cursor, click and release, see what happens (282) ~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image204.jpeg?raw=true"
   alt="Mouse event example.  Move, click, release.."
@@ -15814,9 +15813,9 @@ using requestAnimationFrame, were the monster is drawn at the mouse
 position, and if a mouse button is pressed, the monster starts rotating
 around its center. If we release the mouse button, the rotation
 stops:</p>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 205. move and rotate the monster with mouse (283) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 205. move and rotate the monster with mouse (283) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image205.png?raw=true"
   alt="Move and rotate monster with mouse."
@@ -15884,9 +15883,9 @@ state variables 60 times/s inside the animation loop <i>(lines 45-49)</i>,
 depending on increments you set in event listeners <i>(lines 23-31)</i>.</p>
 
 <h4>Example #2: draw in a canvas as if you were using a pencil</h4>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 206. draw in a canvas like a pencil (284) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image206.png?raw=true"
   alt="Draw in canvas like a pencil."
@@ -15939,9 +15938,9 @@ function handleMouseMove(evt) {
 <p>We had to define a variable started=false; as we cannot draw any line before the mouse moved (we need at least two consecutive positions).This is done in the test at <i>line 21</i>.</p>
 
 <h4>Example #3: same as example #2 but we draw only when a mouse button is pressed</h4>
-<!------------------------------------------------------------------------------------------------>
-<!--------- 207. same as example #1 but draw only when mouse button is depressed (285) ----------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~ 207. same as example #1 but draw only when mouse button is depressed (285) ~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image207.png?raw=true"
   alt="Same as example #1 but draw only when a mouse button is depressed."
@@ -15985,9 +15984,9 @@ function handleMouseMove(evt) {
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3-4">4.3.4 Responsive Canvas</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Resizing a canvas can be tricky if we don’t know a few rules that
 might not be easily guessed:</p>
 
@@ -16001,9 +16000,9 @@ might not be easily guessed:</p>
 <h4>Examples</h4>
 
 <h4>Example #1: changing the size of a canvas on the fly erases its content!</h4>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 208. example 1 resize and erase (286) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 208. example 1 resize and erase (286) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image208.png?raw=true"
   style="width:45%;"
@@ -16036,18 +16035,18 @@ might not be easily guessed:</p>
 button for resizing it, and we set the size of the canvas to 100x100
 pixels. Instead of drawing inside, we draw two lines that join the
 diagonals.</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------- 209. draw two lines that join diagonals on 100 x 100 px canvas (287) ------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 209. draw two lines that join diagonals on 100 x 100 px canvas (287) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image209.png?raw=true"
   alt="Draw two diagonal lines on 100 x 100 pixel canvas."
   style="width:65%;" />
 
 <p>Then, we added this CSS rule:</p>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 210. resize canvas with pixels, not percentages (287) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 210. resize canvas with pixels, not percentages (287) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image210.png?raw=true"
   alt="Resize canvas using pixels, 100 by 100."
@@ -19896,7 +19895,7 @@ We just added input event listeners to each input field. For example, in order t
 
 <p>Where firstName in red is the key and this.value the current value of the input field.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 299. example localstorage and html code (355) ------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 299. example localstorage and html code (355) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image229.jpeg?raw=true"
@@ -20566,9 +20565,9 @@ above).</p>
   <li><p>MDN’s Web Docs: <a
     href="https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications" target="_blank" rel="noopener noreferrer">Using files from web applications</a></p></li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-2">6.3.2 Working with local files</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Hi! Welcome for this second video of module 6, in which we will talk
 about the file Javascript API.</p>
 <p>This is an API that has been designed for working with files on the
@@ -22354,12 +22353,6 @@ good understanding of the material.</p>
 </ul>
 
 <h5>. . .The end.<br>
-<br>last updated 05-03-23 8:13pm</h5>
+<br>last updated 05-05-23 10:00pm</h5>
   </body>
 </html>
-<!--
-<img class="displayed"
-  src="./images/image0.jpeg?raw=true"
-  alt="Image of the bla bla goes here."
-  style="width:xx%;" />
---->
