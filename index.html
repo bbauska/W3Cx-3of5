@@ -16294,7 +16294,7 @@ forms.</p>
 <p>This example was created by a learner (by Mels Le N.) from a previous
 version of this course. It uses the geolocation API presented in Module
 6 for auto-filling the address input fields.</p>
-<p>Feel free to look at the source code in the <a href=“https://jsbin.com/sivula/edit”?online example" target="_blank" rel="noopener noreferrer"></a>:</p>
+<p>Feel free to look at the source code in the <a href=“https://jsbin.com/sivula/edit?online example" target="_blank" rel="noopener noreferrer"></a>:</p>
 <!------------------------------------------------------------------------------------------------>
 <!----------------------------- 215. auto-fill address input (292) ------------------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -19833,9 +19833,9 @@ which we included the above code</a>.</p>
 <p>Once opened in your browser, the JavaScript code is executed. With the
 browser dev. tools, we can check what has been stored in
 the localStorage for this domain:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------- 297. example of localStorage (355) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image297.jpeg?raw=true"
   alt="Example of read/write localStorage."
@@ -19843,9 +19843,9 @@ the localStorage for this domain:</p>
 
 <p>Here is a view of the devtools. In more recent versions of Google
 Chrome, the “Resources” tab is named “Applications”:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 298. view of the devtools (355) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image298.jpeg?raw=true"
   alt="View of the devtools. Used to show what is in local Storage."
@@ -19870,9 +19870,9 @@ JavaScript, using the Web Storage API.</p>
   <li>An Interesting article on Web.dev: <a href="https://web.dev/storage-for-the-web/" target="_blank" rel="noopener noreferrer">Storage for the Web</a><br></li>
   <li>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" target="_blank" rel="noopener noreferrer">Web Storage API</a></li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2-2">6.2.2 Example 1</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>You can start filling this form and come back another day and
 complete it. It doesn’t matter if you closed your browser before coming
 back. The form never loses what you entered, even if you reload the
@@ -19895,9 +19895,9 @@ We just added input event listeners to each input field. For example, in order t
 </code></pre>
 
 <p>Where firstName in red is the key and this.value the current value of the input field.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 299. example localstorage and html code (355) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image229.jpeg?raw=true"
   alt="Example of Localstorage and its HTML code."
@@ -19954,9 +19954,9 @@ content is restored!</p>
 saved, before trying to restore it. Without these tests, it would put
 the “undefined” string as the value of input fields with no
 corresponding data to restore.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2-3">6.2.3 localStorage and sessionStorage</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This time we will look at another example that uses new methods from the API:</p>
 
 <ul>
@@ -19985,7 +19985,7 @@ except that this time:</p>
 
 <ul>
   <li><p>The key can contain spaces, for example we can write: localStorage.setItem(“Instructor’s name”, “Michel”); and var name =  localStorage.getItem(“Instructor’s name”);, while var name = localStorage.Instructor’s name; will not work!</p></li>
-  <li><p>In a loop or in an iterator, sometimes we need to set/get localStorage values using this syntax, for example: </p></li>
+  <li><p>In a loop or in an iterator, sometimes we need to set/get localStorage values using this syntax, for example:</p></li>
 </ul>
 
 <pre><code>
@@ -20041,9 +20041,9 @@ course there are limitations to this mapping: any string can serve as a
 key, so that localStorage.getItem(“one two three”) works, whereas that
 string would not be a valid identifier after the dot (but it could still
 work as localStorage[“one two three”]).</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------ 300. number of times this page has shown on browser (359) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 300. number of times this page has shown on browser (359) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image300.jpeg?raw=true"
   alt="Example with buttons that show how to iterate on localStorage, clear it etc."
@@ -20137,16 +20137,16 @@ store.</p>
 </details>
 <p>You can check in the Chrome dev. tools user interface that the
 content of the localStorage changes as you click on the buttons.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2-4">6.2.4 Example 2</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Local stores are also useful for<b> saving/restoring user
 preferences</b> of Web Applications. For example, the JS Bin tool you
 have been using since the beginning of this course uses localStorage to
 store the list of tabs you open, and their width:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------ 301. example user preferences of web applications (361) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 301. example user preferences of web applications (361) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image301.jpeg?raw=true"
    alt="Example of preferences."
@@ -20157,18 +20157,18 @@ your last settings”.</p>
 <p>Another example is a guitar FX processor / amp simulator your
 instructor is writing with some of his students. It uses localStorage to
 save/restore presets values:</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------- 302. another example of localstorage of preset values (362) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 302. another example of localstorage of preset values (362) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image302.jpeg?raw=true"
   alt="Guitar fx processor uses localStorage."
   style="width:65%;" />
   
 <h4>Save/restore preferences</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------- 303. change color, size, speed of animate rectangle with gui (362) --------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 303. change color, size, speed of animate rectangle with gui (362) ~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image303.jpeg?raw=true"
   alt="Change color, size and speed of animated rectangle with GUI."
@@ -20238,10 +20238,9 @@ function applyGUIvalues() {
 }
 </code></pre>
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="6-2-5">6.2.5 Example 3</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><a href="https://jsbin.com/zowise/edit?html,js,output" target="_blank" rel="noopener noreferrer">Online example at JSBin</a></p>
 <p>This time, using the setItem and getItem method we saw earlier in the
 course, we could write some generic functions for saving/restoring input
@@ -20340,9 +20339,9 @@ undefined, we restore it by setting the value of the input field
 really useful. You may easily embed them in your own projects, or
 perhaps adapt them for a particular need (i.e. for saving input
 type=“checkboxes” that work a bit differently), etc.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2-6">6.2.6 Size limitations, etc.</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Few things to remember, from the Web storage specification:</p>
 
 <ul>
@@ -20391,9 +20390,9 @@ tab, that information will leak to the other side — this can be
 confusing if the user is performing different tasks in each.</p>
 <p><b>By using sessionStorage, the data you store will be scoped and
 therefore not leak across tabs!</b></p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2-7">6.2.7 Storing more than strings? Use JSON!</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Storing strings is all well and good, but it quickly
 becomes limiting: you may want to store more complex data with at least
 a modicum of structure.</p>
@@ -20421,9 +20420,9 @@ JSON support into your local store is straightforward.</p>
 at JSBin</a>).  The example below saves a JavaScript object in JSON,
 then restores it and checks that the object properties are still
 there!</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 304. json save/load in local storage (367) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 304. json save/load in local storage (367) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image304.png?raw=true"
   alt="JSON save/load in local storage."
@@ -20473,9 +20472,9 @@ there!</p>
 <p><a href="https://jsbin.com/nejewiw/2/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">Online
 example on JSBin that saves in localStorage an array of contacts in
 JSON</a></p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 305. save local storage in json (368) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 305. save local storage in json (368) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image305.png?raw=true"
   alt="How to save a form's content in localStorage using JSON."
@@ -20486,18 +20485,18 @@ JSON</a></p>
 <p><a href="https://jsbin.com/karoboj/3/edit?html,css,console,output" target="_blank" rel="noopener noreferrer">Example on JSBin</a></p>
 <p>Add contacts using the form, see how the HTML table is updated. Try
 to reload the page: data are persisted in localStorage. </p>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 306. serverless contact manager (369) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 306. serverless contact manager (369) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image306.jpeg?raw=true"
   alt="Serverless contact manager."
   style="width:65%;" />
 
 <p>Examine the localStorage:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------- 307. localStorage view in devtools shows the data (369) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 307. localStorage view in devtools shows the data (369) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image307.png?raw=true"
   alt="localStorage view in devtools shows the data."
@@ -20513,13 +20512,13 @@ array of contacts in JSON.</p>
 <p>It shows how to use the DOM API for dynamically updating the page
 content (build the HTML table from the array of contacts, add a new line
 when a new contact is submitted, etc.)</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-1">6.3.1 File API Introduction</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The objective of this chapter is to provide an overview of the File API.</p>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 308. sound sample editor serverless (370) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 308. sound sample editor serverless (370) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image308.jpeg?raw=true"
    alt="Sound sample editor serverless."
@@ -20542,16 +20541,16 @@ player</a> below, or an application that edits the audio content of
 local mp3 files, for example, the <a
 href="https://wav.hya.io/#/fx" target="_blank" rel="noopener noreferrer">HYA-WAVE sound editor</a> (screenshot
 above).</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 309. audio player that plays local files (370) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 309. audio player that plays local files (370) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image309.jpeg?raw=true"
   alt="Audio player that plays local files."
   style="width:45%;" />
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 310. polarr photo editor uses the File API (371) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 310. polarr photo editor uses the File API (371) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image310.jpeg?raw=true"
   alt="polarr photo editor uses the File API."
@@ -20719,9 +20718,9 @@ Then you can select filters, you can do some corrections on it and so
 on, and finally you can export it and that’s all.</p>
 <p>All this here is HTML5, this is canvas, these are form elements we
 saw the last week, some canvas here, or image elements and so on.</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 311. image previews (374) ------------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 311. image previews (374) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image311.png?raw=true"
   alt="Image preview."
@@ -20765,9 +20764,9 @@ saw the last week, some canvas here, or image elements and so on.</p>
 
 </details>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-3">6.3.3 Reading File Metadata</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Imagine you have an input field like this:</p>
 
 <ol type="1">
@@ -20892,9 +20891,9 @@ not images will be greyed and non selectable.</p>
   <li><i>Line 7:</i> this for loop builds all the rows that compose the table, adding HTML code to  the selection string variable. At the end of the loop, this variable contains all the HTML code that corresponds to the table of results.</li><br>
   <li><i>Line 14:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the &lt;div id=“result”&gt; in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically. </li><br>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-4">6.3.4 Blob and File</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The <a href="https://www.w3.org/TR/FileAPI/" target="_blank" rel="noopener noreferrer">HTML5 File API
 specification</a> introduces several interfaces:</p>
 
@@ -20909,9 +20908,9 @@ specification</a> introduces several interfaces:</p>
 difference between Blob and File, as most of the methods exposed by
 the FileReader interface take indiscriminately a Blob or a File as
 parameter.</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 312. the blob movie poster (377) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 312. the blob movie poster (377) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image312.jpeg?raw=true"
   alt="The Blob movie poster."
@@ -20949,9 +20948,9 @@ example, then comment the line with responseType=‘blob’. In this case,
 you will notice that the image file is not properly decoded by the
 browser and is not displayed in the page. We explain Xhr2 in the <a
 href="https://www.edx.org/course/html5-apps-and-games" target="_blank" rel="noopener noreferrer">W3C HTML5 Apps and Games</a> course.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>6.3.5 Reading file content</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In order to read the content of a file, different steps required.
 Let’s see how to do it.</p>
 
@@ -21013,7 +21012,7 @@ file content in a text area. This example is detailed further in the
 course. Click and select a text file below:</p>
 <p>Choose a text file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 313. select a text file (379) ---------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 313. select a text file (379) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image313.png?raw=true"
@@ -21235,9 +21234,9 @@ directly in the browser, without the need for a server!</p>
   <li><i>Line 9:</i> when a user chooses a file, the listener will be executed. Line 9 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.</li>
   <li><i>Line 5:</i> is the onload callback, executed when the file content is loaded in memory. We pass the file content to the initSound function (see JSBin example for complete source code) that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio works only with uncompressed audio formats in memory), and to play it.</li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-8">6.3.8 Read file content as dataURL</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>What is a data URL?</h4>
 
 <p>A data URL is a URL that includes type and content at the same time.
@@ -21251,9 +21250,9 @@ square:</p>
 <p>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==</p>
 
 <h4>This data URL in a browser address bar should look like this:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 317. data url in address bar shows a red cirle (383) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 317. data url in address bar shows a red cirle (383) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image317.jpeg?raw=true"
   alt="Data url in address bar shows a red circle."
@@ -21274,10 +21273,9 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 </code></pre>
 
 <h4>And here is the result:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------------- 318. red splotch (383) ------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 318. red splotch (383) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image318.png?raw=true"
   alt="Red splotch."
@@ -21291,10 +21289,10 @@ especially for mobile applications, as inlining images reduces the
 number of HTTP requests and makes the Web page load faster.</p>
 <p>You will find lots of Web sites and tools for generating dataURL from
 files, such as <a href="https://ezgif.com/image-to-datauri" target="_blank" rel="noopener noreferrer">Image to Data URI converter</a> (screenshot below):</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------ 319. Online service that converts uploaded images to data uris... ----------------->
-<!-------------- we see an image and its ascii encoded data uri version (384) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~ 319. Online service that converts uploaded images to data uris... ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ we see an image and its ascii encoded data uri version (384) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image319.jpeg?raw=true"
   alt="Online service that converts uploaded images to data uris...we see an image and its ascii encoded data uri version."
@@ -21308,9 +21306,9 @@ format is most frequently used with ./images files (images, audio,
 video).</p>
 <p>Example of HTML5 logo embedded in a document without any real image,
 just a dataURL and CSS:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- 320. screenshot of jsbin examle shows the html5 logo insterted before a div using css (385) ->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image317.jpeg?raw=true"
   alt="Data URL in address bar shows a red circle."
@@ -21323,9 +21321,9 @@ just a dataURL and CSS:</p>
 <p>This first example is useful for forms that allow the user to select one or more pictures. Before sending the form, you might want to get a preview of the pictures in the HTML page.
 The reader.readAsDataUrl method is used for that.</p>
 <p><a href="https://jsbin.com/laseye/edit?html,output" target="_blank" rel="noopener noreferrer">Example on JSBin</a> or try it below in your browser:</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 332. preview of selected images (385) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 332. preview of selected images (385) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image332.png?raw=true"
   alt="Preview of selected images."
@@ -21385,9 +21383,9 @@ The reader.readAsDataUrl method is used for that.</p>
 <h4>Example #2: read a single local image file and use it with drawImage ina canvas</h4>
 
 <p><a href="https://jsbin.com/miciqu/edit?html,output" target="_blank" rel="noopener noreferrer">Try it on JSBin</a></p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 322. example 2 kitty cat (386) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 322. example 2 kitty cat (386) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image322.jpeg?raw=true"
   alt="Example #2 read image as dataURL and draw inside a canvas."
@@ -21457,9 +21455,9 @@ image below) and look at the source code.</p>
 <h3 id="ch6-4-1">6.4.1 Geolocation API Introduction</h3>
 
 <p>This chapter presents the new Geolocation API and illustrates its use with several examples.</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 323. w3c geolocation logo (388) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 323. w3c geolocation logo (388) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image323.png?raw=true"
   alt="W3C Geolocation logo/icon."
@@ -21537,9 +21535,9 @@ the browser will ask if you agree to share your position with the application.</
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 324. function getLocation in geolocation (389) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 324. function getLocation in geolocation (389) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image324.jpeg?raw=true"
   alt="Geolocation callback illustration."
@@ -21565,15 +21563,15 @@ the browser will ask if you agree to share your position with the application.</
   </ul>
   </li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-2">6.4.2 The coords object properties</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In the previous example, we used the coords property of the position
 passed as an input parameter to the callback function. This coords
 object has many properties:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 325. properties of the coords object (390) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 325. properties of the coords object (390) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image325.png?raw=true"
   alt="Properties of the coords object."
@@ -21582,22 +21580,23 @@ object has many properties:</p>
 <p>Not all these values may be available in all Web browsers. When one of
 these properties is null, it means that it is not available (often the
 case of the altitudeAccuracy)</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-3">6.4.3 Geolocation error codes</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In the last example, we used the navigator.geolocation.
 getCurrentPosition(showPosition) with only one callback function (in the
 case of success), but it is also possible to pass a second parameter
 that is another callback function called in the case of error.</p>
 <p>A slightly different version of the previous
-example <a href="https://jsbin.com/bafusik/edit?html,output" target="_blank" rel="noopener noreferrer">shows how to properly check against the different possible errors</a>. Try it,
+example <a href="https://jsbin.com/bafusik/edit?html,output" target="_blank" rel="noopener noreferrer">
+  shows how to properly check against the different possible errors</a>. Try it,
 then turn your WiFi off or unplug your Ethernet cable (or turn off
 GPS and 3G/4G on a mobile phone). You should see an error message Error
 during geolocation: Location could not be obtained though the available
 means”:</p>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 326. geolocation error (390) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 326. geolocation error (390) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image326.jpeg?raw=true"
   alt="Geolocation error."
@@ -21687,7 +21686,7 @@ the position changing.</p>
 a third parameter to the getCurrentPosition and watchPosition methods,
 that will hold one or several of the following options:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------- 327. more properties of the coords object (392) ------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~ 327. more properties of the coords object (392) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image327.png?raw=true"
@@ -21727,20 +21726,22 @@ watchId=navigator.geolocation.watchPosition(onSuccess, onError,
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-5">6.4.5 Geolocation and maps</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This section presents an example of how to get an interactive map, using <a href="https://leafletjs.com/reference-1.6.0.html" target="_blank" rel="noopener noreferrer">the Leaflet API for OpenStreetMap</a>, and gives links to more resources. Did you know that you can even get an estimation of a physical address from the
-longitude and latitude, using online Web services?</p>
+<p>This section presents an example of how to get an interactive map, using <a href="https://leafletjs.com/reference-1.6.0.html" target="_blank" rel="noopener noreferrer">
+  the Leaflet API for OpenStreetMap</a>, and gives links to more resources. 
+  Did you know that you can even get an estimation of a physical address from the longitude and latitude, using online Web services?</p>
 <p>How to get a map centered on your longitude and latitude.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 328. openstreetmap test (393) ---------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 328. openstreetmap test (393) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image328.png?raw=true"
   alt="Example/Test OpenStreetMap."
   style="width:85%;" />
 
-<p>This example is just given "as is", as there are so many possibilities for rendering a map with <a href="/leafletjs.com/reference-1.6.0.html" target="_blank" rel="noopener noreferrer">the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a basic example might be useful.</p>
+<p>This example is just given "as is", as there are so many possibilities for rendering a map with <a href="/leafletjs.com/reference-1.6.0.html" 
+  target="_blank" rel="noopener noreferrer">the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a basic example might be useful.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 329. openstreetmap test (393) ---------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 329. openstreetmap test (393) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image329.png?raw=true"
@@ -21928,7 +21929,7 @@ based on the <a href="https://www.gisgraphy.com/" target="_blank" rel="noopener
 <p>Example #1: how to get a physical address from the longitude and latitude.<br>
 <br>Google reverse geocoding example (screenshot only):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 330. google reverse geocoding example (396) --------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 330. google reverse geocoding example (396) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image330.png?raw=true"
@@ -22031,7 +22032,7 @@ function showPosition(position) {
 <p>Gisgraphy (free service) reverse geocoding example (screenshot only, click on it to see <a
 href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" rel="noopener noreferrer">the demo on the Gisgraphy website</a>):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 331. gisgraphy screenshot (398) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 331. gisgraphy screenshot (398) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image331.png?raw=true"
@@ -22044,7 +22045,7 @@ href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" 
 <p>Please, pan and zoom on the map and click.<br>
 <br>The longitude and latitude are computed from your click and a free reverse geocoding service is used to convert to a physical address.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 332. reverse geocoding - openstreetmap (398) -------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 332. reverse geocoding - openstreetmap (398) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image332.png?raw=true"
@@ -22331,7 +22332,6 @@ function getPhysicalAddress(latlong) {
 </code></pre>
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-7">6.4.7 Discussion and projects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
