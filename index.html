@@ -1627,7 +1627,6 @@ this way, but HTML5 also supports a simplified syntax:</p>
   <li>Many elements no longer need a closing tag: &lt;/li&gt;, &lt;/dt&gt;, &lt;/dd&gt;, &lt;/tr&gt;, &lt;/th&gt;, &lt;/td&gt;, &lt;/thead&gt;, &lt;/tfoot&gt;, &lt;/tbody&gt;, &lt;/option&gt;, &lt;/optgroup&gt;, &lt;/p&gt;, (in most cases), &lt;/head&gt;, &lt;/body&gt;, and &lt;/html&gt;. Older browsers often add closing tags automatically at render time. We recommend, however, closing tags that would naturally be closed: the ones that delimit a particular zone in the document.</li>
   <li>Attribute values only need to be quoted if they contain spaces or some non-alphanumeric characters, instead of writing &lt;link rel=“stylesheet” href=“style.css”&gt;, we could have used &lt;link rel=stylesheet href=style.css&gt;. However, for compatibility with older browsers, it is wiser to still use quotes…</li>
 </ul>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>1.3.2 Structural Elements</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11461,9 +11460,9 @@ primarily for drawing rounded rectangles…</p>
 added at the end of the roundedRect function the same lines of code that
 draw the rounded rectangle, but using lineTo instead of arcTo. Just take
 a look!</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------- 155. comparison between arcto and lineto (212) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image155.png?raw=true"
   alt="Comparison between lineTo and arcTo."
@@ -11552,9 +11551,9 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 </code></pre>
 
 <p>This could be particularly helpful if you are dealing with something other than a rectangle, like this rounded triangle:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 156. rounded triangle example (213) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image156.png?raw=true"
   alt="Example: rounded triangle."
@@ -11607,13 +11606,13 @@ roundedTriangle(ctx,200,15,300,150,15,100,20,true,true);
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-10">3.4.10 Quadratic Curves</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Introduction</h4>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------- 157. html5 canvas quadratic curve diagram (214) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image157.png?raw=true"
   style="width:55%;"
@@ -11649,9 +11648,9 @@ point farther we get a sharper curve.</p>
 <h4>Examples</h4>
 
 <h4>Example #1: quadratic curve</h4>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 158. quadratic curve (215) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 158. quadratic curve (215) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image158.png?raw=true"
   style="width:65%;"
@@ -11686,9 +11685,9 @@ call the stroke() method for drawing the curve.</p>
 <h4>Example #2: lines connected with a quadratic curve</h4>
 
 <p>Try this:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------ 159. example: lines connected with quadratic curve (216) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image159.png?raw=true"
   style="width:65%;"
@@ -11745,13 +11744,13 @@ context.stroke();
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-11">3.4.11 Curved Arrows</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>We propose a useful function for drawing curved arrows. See this example:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------- 160. example: useful function for drawing curved arrows (217) ----------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image160.png?raw=true"
   style="width:65%;"
@@ -11893,15 +11892,15 @@ head (<i>lines 24</i> and <i>29</i>).</p>
 <p>Notice that once again, as we modify the context properties (color,
 lineWidth) in the body of the function, we save and restore the context
 at the beginning / end of the function.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-12">3.4.12 Bézier curves</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Introduction</h4>
 
 <p>Bézier curves are interesting. They are mostly used for drawing “S” shapes or asymmetric curves.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 161. bezier curve in 's' (219) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image161.jpeg?raw=true"
   style="width:35%;"
@@ -11915,9 +11914,9 @@ two control points that define two tangents, and an ending point.</p>
 defined by the context point and the first control point. The second
 part of the curve is tangential to the imaginary line defined by the
 second control point and the ending point.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------- 162. bezier curve control points (219) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image162.png?raw=true"
   style="width:65%;"
@@ -11953,9 +11952,9 @@ interactive applications:</p>
 <h4>Example #1</h4>
 
 <p>Try this:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 163. bezier curve: example 1 (220) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image163.png?raw=true"
   style="width:65%;"
@@ -12010,13 +12009,12 @@ interactive applications:</p>
 8.  context.stroke();
 </code></pre>
 
-
 <h4>Example #2: path with bezier curve, quadratic curve and line in the same, closed path</h4>
 
 <h4>Try this:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!-------- 164. path with bezier curve, quadratic curve & line in same, closed path  (221) ------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~ 164. path with bezier curve, quadratic curve & line in same, closed path  (221) ~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image164.png?raw=true"
   style="width:85%;"
@@ -12084,9 +12082,9 @@ interactive applications:</p>
 the last path point and the first path point (<i>line 11</i>), so that
 the drawing looks like a pair of goggles.</p>
 <p>Note how the different parts are linked together and make a “path”:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 165. bezier curve maker tool (222) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image165.png?raw=true"
   alt="Interactive code that draws Bezier curves."
@@ -12096,9 +12094,9 @@ the drawing looks like a pair of goggles.</p>
 
 <p>This Bézier tool (“HTML5 &lt;canvas&gt; bezierCurveTo command generator”) is
 available <a href="https://www.victoriakirst.com/beziertool/" target="_blank" rel="noopener noreferrer">online</a>: try it!</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-1">3.5.1 Canvas Context: Colors</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In previous examples, we saw how to set the current color using
 the strokeStyle and fillStyle properties of the canvas context
 object.</p>
@@ -12109,7 +12107,8 @@ themselves).</p>
 
 <h4>Colors and transparency</h4>
 
-<p>You can use <a href="https://www.w3.org/TR/css3-color/" target="_blank" rel="noopener noreferrer">the same syntax for colors that is supported by CSS3</a>. The next lines show possible values/syntaxes.</p>
+<p>You can use <a href="https://www.w3.org/TR/css3-color/" target="_blank" rel="noopener noreferrer">the same syntax 
+  for colors that is supported by CSS3</a>. The next lines show possible values/syntaxes.</p>
 
 <pre><code>
 1. ctx.strokeStyle = &#39;red&#39;;
@@ -12126,9 +12125,9 @@ themselves).</p>
 </ul>
 
 <h4>Here is an example that shows how to draw different filled rectangles in blue, with different levels of transparency:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 166. colors and transparency example (223) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 166. colors and transparency example (223) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image166.png?raw=true"
   style="width:85%;"
@@ -12181,13 +12180,13 @@ themselves).</p>
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-2">3.5.2 Canvas Context: Linear Gradients</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It is possible to define the stroke or the fill style as a “gradient”, a set of interpolated colors, like in this example below:</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 167. define stroke fill style as 'gradient' (224) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 167. define stroke fill style as 'gradient' (224) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image167.png?raw=true"
   style="width:85%;"
@@ -12315,7 +12314,8 @@ ctx.fillStyle = grdFrenchFlag;
 ctx.fillRect(0, 0, 300, 200);
 </code></pre>
 
-<p>The result is shown in the <a href="https://codepen.io/w3devcampus/pen/WNpPZVO" target="_blank" rel="noopener noreferrer">above pen</a>: a big rectangle that fills the whole canvas, with colors going from blue (left) to white (middle) to red (right).</p>
+<p>The result is shown in the <a href="https://codepen.io/w3devcampus/pen/WNpPZVO" target="_blank" rel="noopener noreferrer">
+  above pen</a>: a big rectangle that fills the whole canvas, with colors going from blue (left) to white (middle) to red (right).</p>
 
 <h4>Examples</h4>
 
@@ -12330,9 +12330,9 @@ grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
 
 <p>… then you will define a gradient that goes from the top left corner of
 the canvas to the bottom right of the canvas. Let’s see what it does:</p>
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 168. example 1 draw gradient top left to bottom right (226) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 168. example 1 draw gradient top left to bottom right (226) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image168.png?raw=true"
   style="width:65%;"
@@ -12342,9 +12342,9 @@ the canvas to the bottom right of the canvas. Let’s see what it does:</p>
 
 <p>Instead of drawing a filled rectangle that covers the whole surface of
 the canvas, let’s draw several smaller rectangles:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 169. example 2 draw smaller rectangles (226) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 169. example 2 draw smaller rectangles (226) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image169.png?raw=true"
   style="width:65%;"
@@ -12406,9 +12406,9 @@ column is odd or even, either we draw or we do not draw a rectangle.</p>
 <p>This code is much more complex than the previous one, taking 16 lines
 instead of 13, but is much more powerful. Try to call the function with
 a value of 10, 20, or 2…</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 170. draw checkboard (227) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 170. draw checkboard (227) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image170.png?raw=true"
   style="width:65%;"
@@ -12485,9 +12485,9 @@ with a gradient, we can also use strokeStyle and strokeRect in order to
 draw wireframed rectangles. In the next example, which is just a
 variation of the previous one, we have used the lineWidth property to
 set the outline of the rectangles at 5 pixels:</p>
-<!------------------------------------------------------------------------------------------------>
-<!---------- 171. example 3 using strokestyle and strokerect to draw rectangles (228) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~ 171. example 3 using strokestyle and strokerect to draw rectangles (228) ~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image171.png?raw=true"
   style="width:65%;"
@@ -12591,9 +12591,9 @@ grdFrenchFlag = ctx.createLinearGradient(100, 0, 200, 0);
 
 <p>Like in the first example we will draw a filled rectangle that is the
 same size as the canvas:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 172. example 4 draw filled rectangle (230) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 172. example 4 draw filled rectangle (230) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image172.png?raw=true"
   style="width:65%;"
@@ -12672,9 +12672,9 @@ grdFrenchFlag = ctx.createLinearGradient(0, 0, 600, 400);
 
 <p>And if we draw the same rectangle with the canvas size, here is the
 result:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 173. example 5 canvas size (231) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image173.png?raw=true"
   style="width:65%;"
@@ -12746,9 +12746,9 @@ each cell. How can we do this with one single gradient?</p>
 rectangle, and set it with the starting and ending point of its
 direction/virtual line accordingly to the rectangle coordinates. Try
 this:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------- 174. example 6 draw shapes that share gradient (232) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image174.png?raw=true"
   style="width:65%;"
@@ -12853,16 +12853,16 @@ filled shape drawn will have this gradient.</p>
 <p>In the drawCheckBoard(…) function we call it just before drawing
 rectangles. In this way, each rectangle is drawn using its own
 gradient.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-3">3.5.3 Canvas Context: Radial Gradients</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Radial gradients are for creating gradients that propagate/interpolate colors along circles instead of
 propagating/interpolating along a virtual line, like linear gradients.</p>
 
 <h4>Here is an example of a radial gradient that interpolates the color of the rainbow:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!-------------- 175. example radial gradient interpolates color of rainbow (234) ---------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 175. example radial gradient interpolates color of rainbow (234) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image175.png?raw=true"
   style="width:65%;"
@@ -12943,9 +12943,9 @@ In the above example, the gradients starts at a circle located at (150,
 100), with a radius of 30, and propagates to a circle with the same
 center as the first (150, 100), but with a bigger radius of 100, as
 shown below:
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 176. above example with color stops (235) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 176. above example with color stops (235) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image176.jpeg?raw=true"
   style="width:40%;"
@@ -12965,9 +12965,9 @@ grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
 </code></pre>
 
 <h4>Here is the result:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 177. 2nd circle center to the right of 1st circle (235) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 177. 2nd circle center to the right of 1st circle (235) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image177.png?raw=true"
   style="width:65%;"
@@ -13040,10 +13040,9 @@ outer circle:</p>
   <li><p>The color outside the outer circle will be the last color of the gradient - which is not interpolated. The last color in our example is purple, and it fills the rest of the filled rectangle area “after” the external circle of the gradient.</p></li>
   <li><p>The colors between the two circles will be interpolated.</p></li>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-4">3.5.4 Canvas Context: Patterns/Textures</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Principle</h4>
 
 <p>The principle of “pattern” drawing is based on repeating an image (if
@@ -13118,9 +13117,9 @@ imageObj.onload = function(){
 <h4>Example #1: draw two rectangles with a pattern (one filled, one stroked)</h4>
 
 <p>Here we have two rectangles drawn using a pattern (an image that can be repeated along the X and Y axis). The first is a filled rectangle while the second is “stroked” with a lineWidth of 20 pixels:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------- 178. filled rectange and stroked rectangle with linewidth 20 (238) --------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 178. filled rectange and stroked rectangle with linewidth 20 (238) ~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image178.png?raw=true"
   style="width:65%;"
@@ -13245,9 +13244,9 @@ Your browser does not support the canvas tag. &lt;/canvas&gt;
 <h4>Example 2: the repeatability of a pattern</h4>
 
 <p>To “better” see the repeatability of the pattern, here is the same example with a 1000x1000 pixel wide canvas:</p>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 179. 1000 by 1000 pixel wide canvas (239) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 179. 1000 by 1000 pixel wide canvas (239) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image179.png?raw=true"
   style="width:65%;"
@@ -13320,15 +13319,15 @@ Your browser does not support the canvas tag. &lt;/canvas&gt;
 </code></pre>
 
 <p>Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just change this line in the online example and you will see live results.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-5">3.5.5 A Multiple Image Loader</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Draw with multiple patterns? We need to load all of them before drawing!</h4>
 
 <p>Below are 4 rectangles drawn with 4 different patterns.</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------ 180. four rectangles drawn with different patterns (241) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 180. four rectangles drawn with different patterns (241) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image180.jpeg?raw=true"
   style="width:35%;"
@@ -13354,9 +13353,9 @@ loaded.</p>
 has been passed to our loader.</p>
 <p>The complete example code that produces the result shown at the
 beginning of this page is the following:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 181. multiple image loader (241) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 181. multiple image loader (241) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image181.png?raw=true"
   style="width:65%;"
@@ -13544,13 +13543,13 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-6">3.5.6 Drawing Shadows</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Context properties to draw with shadows</h4>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 182. a green shadow rectangle (244) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 182. a green shadow rectangle (244) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image182.jpeg?raw=true"
   style="width:25%;"
@@ -13568,9 +13567,9 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 <h4>Examples</h4>
 
 <h4>Example #1: simple shadows</h4>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 183. example #1, simple shadows (245) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 183. example #1, simple shadows (245) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image183.png?raw=true"
   style="width:65%;"
@@ -13713,9 +13712,9 @@ Your browser does not support the canvas tag.&lt;/canvas&gt;
 </details>
 
 <h4>And here is the result:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 184. setting shadow - not quite correct (247) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 184. setting shadow - not quite correct (247) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image184.png?raw=true"
   style="width:65%;"
@@ -13822,9 +13821,9 @@ calling ctx.stroke().</p>
 </details>
 
 <h4>And here is the <em>FINAL</em> result:</h4>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 185. final result of setting shadow (248) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image185.png?raw=true"
   style="width:65%;"
@@ -13897,9 +13896,9 @@ calling ctx.stroke().</p>
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-7">3.5.7 Styling Lines</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Several context properties can be used to set the thickness of the
 shape outlines, the way line end caps are drawn, etc.</p>
 <p>They apply to all shapes that are drawn in path mode (lines, curves,
@@ -13916,9 +13915,9 @@ pixels) of the lineWidth property of the context:</p>
 ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels</code></pre>
 
 <p>Here is a complete example where we draw with a lineWidth of 20 pixels:</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 186. changing the line thickness (250) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 186. changing the line thickness (250) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image186.png?raw=true"
   style="width:65%;"
@@ -13976,18 +13975,18 @@ ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wiref
 rendered. Possible values are butt (default), round, square (from top to
 bottom in the next illustration). Note that a value of “round” or
 “square” makes the lines slightly longer than the default value “butt”.</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 187. line cap values (251) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 187. line cap values (251) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image187.png?raw=true"
   alt="Line cap values."
   style="width:20%;" />
 
 <h4>Try this:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 188. changing the end caps of a lines (251) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 188. changing the end caps of a lines (251) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image188.png?raw=true"
   alt="Changing the end caps of a line.  Example #2."
@@ -14041,9 +14040,9 @@ ctx.strokeRect(230, 10, 100, 100);
 <p>The lineJoin property of the context indicates the way corners are rendered, when two lines meet. Possible values are miter (the default) for creating sharp corners, round, or bevel for “cut corners”.</p>
 
 <h4>Try this:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 189. setting type of corner when two lines meet (252) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 189. setting type of corner when two lines meet (252) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image189.png?raw=true"
   alt="Setting type of corner when two lines meet."
@@ -14092,29 +14091,29 @@ ctx.strokeRect(230, 10, 100, 100);
 
 <p>The miterLimit property value corresponds to the maximum miter length: the distance between the inner corner and the outer corner where two lines meet. When the angle of a corner between two lines gets smaller, the miter length grows and can become too long.</p>
 <p>In order to avoid this situation, we can set the miterLimit property of the context to a threshold value. If the miter length exceeds the miterLimit value, then the corner will be rendered as if the lineJoin property had been set to “bevel” and the corner will be “cut”.</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 190. linejoin property - arrows fig 1, 2 and 3 (253) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 190. linejoin property - arrows fig 1, 2 and 3 (253) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image190.gif?raw=true"
   alt="lineJoin property, figure 1, 2 and 3 showing arrows."
   style="width:20%;" />
 
 <h4>You can try an interactive example here:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 191. miterlimit property explained (253) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 191. miterlimit property explained (253) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image191.png?raw=true"
   alt="Example #4: miterLimit property shown with 3 different angles, we see that the part that goes out of the angle becomes very long."
   style="width:65%;" />
 
 <p>In the example, try different values for the miterLimit property.  You’ll see that the way the corners are rendered changes at values around 2 and 3.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-1-1">4.1.1 Animations - An Introduction – Module 4</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-1">4.2.1 Basic Animation Techniques</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In order to perform an animation, we need to:</p>
 
 <ol type="1">
@@ -14131,9 +14130,9 @@ ctx.strokeRect(230, 10, 100, 100);
 
 <p>Even before HTML5 and the introduction of the canvas element, people created HTML games. They used CSS backgrounds inside &lt;div&gt; elements, and used to change the CSS top, left, width and height properties of the divs to animate graphic images on the screen.</p>
 <p>During the late 1990s and early 2000s, JavaScript became increasingly popular. The community created a first ‘umbrella term’ describing a collection of technologies used together to create interactive and animated Web sites - <a href="https://en.wikipedia.org/wiki/Dynamic_HTML" target="_blank" rel="noopener noreferrer">DHTML (Dynamic HTML)</a>. For example, check the <a href="https://def-logic.com/" target="_blank" rel="noopener noreferrer">games developed at this time by Brent Silby</a> (they all use DHTML).</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 192. mario-like dhtml game (254) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 192. mario-like dhtml game (254) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image192.png?raw=true"
   alt="A mario-like DHTML game."
@@ -14146,9 +14145,9 @@ ctx.strokeRect(230, 10, 100, 100);
 
 <p>The methods described above are now completed by a new method that comes with multiple advantages: the requestAnimationFrame API.</p>
 <p>We will compare the old methods with the new one, and implement the same  example with each of them to highlight the differences.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-2">4.2.2 Basic Animation Techniques</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Below is the example shown in the video, with source code:</p>
 
 <h4>HTML</h4>
@@ -14220,9 +14219,9 @@ Your browser does not support the canvas tag.
 </details>
 
 <p><b>Errata</b>: in the video, we use speed +=1; in order to increment the speed of the rectangle each time it bounces (in the changeColor() function). This is not correct as speed can be negative. The online example fixes this by using speed += Math.sign(speed) * 1; instead this will add +1 or -1 depending on the sign of speed.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-3">4.2.3 Animating Using setInterval()</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The setInterval(…) function is still popular on the Web, and
 even though this is not the recommended way to do 60 frames/second
 canvas animation, it is worth understanding how it works.</p>
@@ -14521,9 +14520,9 @@ executions back to back when the interval is too short, leading to
 unpredictable results. </p>
 <p><b>BEST PRACTICE</b>: AVOID using setInterval for animating in a
 canvas, except for trivial cases (change a color every second).</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-4">4.2.4 Animating Using setTimeout()</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>One thing you should always remember about using setInterval: if we
 set number of milliseconds at - let’s say 20ms - it will call our game
 loop function EACH 20ms, even if the previous one is not yet finished.
@@ -14678,9 +14677,9 @@ animation, even if the instructions inside the animation loop take too long.</p
 <p>Here comes the <a href="https://www.w3.org/TR/html51/webappapis.html#animation-frames" target="_blank" rel="noopener noreferrer">requestAnimationFrame API,</a> a very good companion to the canvas API!</p>
 <p><b>BEST PRACTICE</b>: AVOID using setTimeout for animating in a canvas, except for trivial cases.</p>
 <p>For 60 frames/second animation, use requestAnimationFrame!</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-5">4.2.5 The requestAnimationFrame API</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The best way to make animation at 60 frames per second: requestAnimationFrame!</p>
 <p>The requestAnimationFrame(animationLoop) is very similar to setTimeout:</p>
 
@@ -14821,9 +14820,9 @@ element for writing HTML5 games, is part of the W3Cx HTML5 Apps and
 Games course.</p>
 <p>Current <a href="https://caniuse.com/requestanimationframe" target="_blank" rel="noopener noreferrer">support</a> is
 really good and all modern browsers support this API.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3-1">4.3.1 Canvas and User Interaction</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In JavaScript, we treat events made by users as an input, and we
 manipulate the DOM structure as an output. Most of the time in
 games/animations, we will change state variables of moving objects, such
@@ -14934,11 +14933,12 @@ on JS Bin</a></p>
 </code></pre>
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
-<!------------------------------------------------------------------------------------------------>
-<p>When you listen to keyboard related events (keydown, keyup or keypressed), the event parameter passed to the listener function will contain the code of the key that fired the event.  Then it is possible to test what key has been pressed or released, like this:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>When you listen to keyboard related events (keydown, keyup or keypressed), the event parameter 
+  passed to the listener function will contain the code of the key that fired the event.  Then it 
+  is possible to test what key has been pressed or released, like this:</p>
 
 <pre><code>
 1.  window.addEventListener(&#39;keydown&#39;, function(event) {
@@ -14964,9 +14964,9 @@ between real keyboard keys and codes, so here are handy pointers:</p>
 <p>A lot of people think that the canvas element is not able to get key
 events. Many examples on the Web handle key events on canvas by adding a
 listener to the window object directly, like this:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 193. add key listener to window object (269) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~- 193. add key listener to window object (269) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image193.png?raw=true"
   alt="Add key listener to window object."
@@ -15045,9 +15045,9 @@ detect events wherever the mouse cursor is, and without worrying about
 what HTML element has the focus, etc…</p>
 
 <h4>Example #2: moving the monster with the keyboard</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 194. moving the monster with keyboard (270) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 194. moving the monster with keyboard (270) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image194.png?raw=true"
   alt="Moving the monster with the keyboard."
@@ -15239,9 +15239,9 @@ Without it, it will never get the focus!</p>
 
 <p>Now, if we try an example with the above canvas declaration, we
 show when an HTML element has the focus: a border is added to it.</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 195. example with focus and added border (273) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 195. example with focus and added border (273) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image195.png?raw=true"
   style="width:25%"
@@ -15297,9 +15297,9 @@ return false;
 <p>Note that the line that forces the focus to the canvas is commented
 by default. Try to click on the canvas, then press a key, then click out
 of the canvas, then press a key: this time nothing happens!</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 196. border appears when canvas has focus (274) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 196. border appears when canvas has focus (274) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image196.jpeg?raw=true"
   style="width:50%"
@@ -15351,9 +15351,9 @@ the mouseout event.</p>
 <p>When the mouse enters the canvas we call canvas.focus() to set the
 focus to the canvas, and when the mouse cursor goes out of the canvas,
 we call canvas.blur() to unset the focus.</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------- 197. setting the focus when the mouse cursor enters the canvas (275) ------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 197. setting the focus when the mouse cursor enters the canvas (275) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image197.png?raw=true"
   style="width:65%"
@@ -15511,9 +15511,9 @@ cancelAnimationFrame(requestId);
 <p>The third parameter (false) of <i>lines 12</i> and <i>13</i> means
 “we do not want to propagate the event to the ancestors of the canvas in
 the DOM.” </p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3-3">4.3.3 Mouse Interaction, Mouse Events</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Detecting mouse events in a canvas is quite straightforward: you add
 an event listener to the canvas, and the browser invokes that listener
 when the event occurs.</p>
@@ -15532,9 +15532,9 @@ at different examples, let’s look at the different event types we can
 listen to.</p>
 
 <h4>The different mouse events</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 198. mouse events illustrated (278) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 198. mouse events illustrated (278) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image198.png?raw=true"
   alt="Mouse events illustrated."
@@ -16081,9 +16081,9 @@ height!</i></b></p>
 </ol>
 
 <p>Yep, this is not a straightforward process…</p>
-<!------------------------------------------------------------------------------------------------>
-<!---------- 211. div with canvas inside; div has css width=100% and height=50% (288) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~ 211. div with canvas inside; div has css width=100% and height=50% (288) ~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image211.jpeg?raw=true"
   alt="DIV and canvas inside: div has css width=100% and height=50%."
@@ -16146,18 +16146,18 @@ function resizeCanvasAccordingToParentSize() {
 </details>
 
 <h4>See the complete example that corresponds to the above code:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!-------------- 212. try resizing the window, or change percentages in css (289) ---------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 212. try resizing the window, or change percentages in css (289) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image212.png?raw=true"
   alt="Example #4: the same example with the monster."
   style="width:55%;" />
 
 <h4>Example #4: the same example with the monster</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 213. same example but with the monster (289) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 213. same example but with the monster (289) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image213.png?raw=true"
   alt="Same as last example with monster."
@@ -16200,10 +16200,9 @@ trick:</p>
 </code></pre>
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4-1">4.4.1 A Glimpse of Advanced Canvas Functionalities</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The canvas API is a “big beast”, and we have presented all the essential techniques for drawing and animating. However, we could not fit everything in this course. Exotic features that are rarely used by developers, or advanced techniques that require more than 20 lines of
 JavaScript, have been put aside for <a href="https://www.edx.org/course/html5-apps-and-games" target="_blank" rel="noopener noreferrer">the W3Cx HTML5 Apps and Games course</a>.</p>
 <p>In that course, you will learn:</p>
@@ -16220,16 +16219,16 @@ JavaScript, have been put aside for <a href="https://www.edx.org/course/html5-a
   <li>Small game framework / object oriented JavaScript / advanced event handling / collision detection / time based animation - see <a href="https://jsbin.com/jifutoj/1/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">example online</a>.<br></li>
   <li>Sprite based animation: like this <a href="https://jsbin.com/libakum/1/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">one</a> (this is ugly code to demonstrate the principle - in the course we develop a clean, sprite animation framework). Use the arrow keys after clicking in the canvas. It’s better to try in standalone mode (click on the small black arrow in the top right of the JSBin window).</li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 214. sprite sheet (290) ------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 214. sprite sheet (290) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image214.png?raw=true"
   alt="Sprite sheet."
   style="width:35%;" />
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-1-1">5.1.1 HTM5 Forms Introduction - Module 5</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Congratulations! You made it to module 5.</p>
 <p>Welcome this time to the wonderful world of HTML5 forms.</p>
 <p>There have been no improvements since 1997 to HTML forms.</p>
@@ -16249,9 +16248,9 @@ you can run directly this time in the course pages, but also as
 standalone examples hosted on the JS Bin Web site. If you try to modify
 them or creates your own examples, please share in the discussion forums
 as usual. Have fun!</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2-1">5.2.1 Elements and Attributes</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>With HTML5, forms, which had shown little improvement since 1997,
 evolved considerably.  To achieve this, Web developers relied on many
 popular JavaScript frameworks for validating input formats, providing
@@ -16283,9 +16282,9 @@ IOS phone.</p>
   <li><p>From the specification: <a href="https://html.spec.whatwg.org/multipage/forms.html" target="_blank" rel="noopener noreferrer">Forms</a></p></li>
   <li><p>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank" rel="noopener noreferrer">&lt;form&gt;</a></p></li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2-2">5.2.2 Example</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There is a lot of course content covered this week, and before we get
 into all the details of the elements and attributes introduced by
 HTML5, we suggest playing with running examples of full featured
@@ -16293,17 +16292,17 @@ forms.</p>
 <p>This example was created by a learner (by Mels Le N.) from a previous
 version of this course. It uses the geolocation API presented in Module
 6 for auto-filling the address input fields.</p>
-<p>Feel free to look at the source code in the <a href=“https://jsbin.com/sivula/edit?online example" target="_blank" rel="noopener noreferrer"></a>:</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 215. auto-fill address input (292) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<p>Feel free to look at the source code in the <a href=“https://jsbin.com/sivula/edit?online%20example/" target="_blank" rel="noopener noreferrer"></a>:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 215. auto-fill address input (292) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image215.jpeg?raw=true"
   alt="Geo-location API is used to auto-fill address input."
   style="width:45%;" />
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2-3">5.2.3 Input Elements and Attributes</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Live coding video 1: using input elements as widgets to control a Web application</h4>
 
 <h4>Live coding video 2: creating GUI elements dynamically</h4>
@@ -16312,10 +16311,9 @@ version of this course. It uses the geolocation API presented in Module
 be used as widgets to control the behavior of a Web application. In this
 situation, they do not need to be inside a &lt;form&gt; element. We just
 bind event listeners to them and we use them as client-side widgets.</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 215b. gui: speed, color and size of rectangle (293) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 215b. gui: speed, color and size of rectangle (293) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image215b.png?raw=true"
   alt="GUI: to resize, change color and speed."
@@ -16339,29 +16337,28 @@ bind event listeners to them and we use them as client-side widgets.</p>
   <li><p><a href="https://jsbin.com/gesive/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">Simple chart with a GUI</a> (see screenshot on the right)</p></li>
   <li><p><a href="https://jsbin.com/ralonem/1/edit?html,js,output" target="_blank" rel="noopener noreferrer">Final version with different types of charts and a GUI</a> (see screenshot below)</p></li>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 215c. simple chart without gui (293) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 215c. simple chart without gui (293) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image215c.png?raw=true"
   alt="Simple chart without GUI."
   style="width:45%;" />
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 215d. simple chart with gui (294) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 215d. simple chart with gui (294) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image215d.png?raw=true"
   alt="Simple chart with GUI."
   style="width:45%;" />
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2-4">5.2.4 Best Practices</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Live coding video 3: HTML5 forms - best practices</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------ 216a. example #1 html5 forms: personal information (294) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!------------------ 216a. example #1 html5 forms: personal information (294) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image216a.png?raw=true"
   alt="HTML5 forms and best practices."
@@ -16396,16 +16393,16 @@ it <a href="https://jsbin.com/zubitex/1/edit?html,output" target="_blank" rel="
 and illustrated with the screenshot below. It is adapted
 from <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form" target="_blank" rel="noopener noreferrer">this
 very good MDN’s article “How to structure a web form”</a>.</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 216. form layout example (295) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 216. form layout example (295) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image216.jpeg?raw=true"
   alt="Payment form layout example."
   style="width:35%;" />
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-3-1">5.3.1 Accessible Forms</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Forms are commonly used to enable user interaction in Web sites and
 Web applications. For example, they are used for login, registering,
 commenting, and purchasing.</p>
@@ -16443,15 +16440,15 @@ disabilities.</p>
   <li><p>People with limited dexterity benefit from large clickable areas that include the labels, especially for smaller controls, such as radio buttons and checkboxes.</p></li>
   <li><p>People using screen readers can identify and understand form controls more easily because they are associated with labels, field sets, and other structural elements.</p></li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-3-3">5.3.3 Labeling Controls</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Labels need to describe the purpose of the form control</h4>
 
 <p>Form fields and other form controls usually have visible labels, such as “E-mail Address:” as the label for a text field (see figure below).</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 217. e-mail form label text (296) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 217. e-mail form label text (296) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image217.png?raw=true"
   alt="Email form label text."
@@ -16472,10 +16469,9 @@ the id of the form control. </p>
 <h4>Example #1</h4>
 
 <p>Click on the label, not on the input field to see the effect.</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 218. first name on form (297) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 218. first name on form (297) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image218.png?raw=true"
   alt="First name label text."
@@ -16502,10 +16498,9 @@ the id of the form control. </p>
 <h4>Example #3</h4>
 
 <p>Click on the label “Subscribe to newsletter” to see what this does.</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 219. first name with subscription check box (297) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 219. first name with subscription check box (297) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image219.png?raw=true"
   alt="First name with subscription check box."
@@ -16542,10 +16537,9 @@ type=“submit” value=“Please submit”&gt;, renders a text button.</p>
 </code></pre>
 
 <p>These give the same results:</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 220. submit and cancel buttons (298) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 220. submit and cancel buttons (298) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image220.png?raw=true"
   alt="Example submit and cancel buttons."
@@ -16553,10 +16547,9 @@ type=“submit” value=“Please submit”&gt;, renders a text button.</p>
 
 <p><i>Lines 1 and 2</i> render as: <b>Submit Cancel</b></p>
 <p>… while <i>lines 3 and 4</i> render as:</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 221. label for address (298) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 221. label for address (298) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image220.png?raw=true"
   alt="Example submit and cancel buttons."
@@ -16567,10 +16560,9 @@ type=“submit” value=“Please submit”&gt;, renders a text button.</p>
 <pre><code>
 &lt;label for=&quot;address&quot;&gt;Enter your address:&lt;/label&gt;&lt;br&gt; &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
 </code></pre>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-3-4">5.3.4 Grouping Controls</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Groupings of form controls, typically groups of related checkboxes
 and radio buttons, sometimes require a higher level description.
 Grouping related form controls makes forms more understandable for all
@@ -16587,10 +16579,9 @@ user to choose an output format. Radio button groups should always be
 grouped using &lt;fieldset&gt;.</p>
 
 <p>Output format:</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 222. label for radio button sample (299) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 222. label for radio button sample (299) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image222.png?raw=true"
   alt="Example label for button select."
@@ -16623,9 +16614,9 @@ grouped using &lt;fieldset&gt;.</p>
 <p>In the example below, there are three checkboxes that are all part of
 an opt-in function for receiving different types of information.</p>
 <p>I want to receive</p>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 223. label for check box sample (299) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 223. label for check box sample (299) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image223.png?raw=true"
   alt="Example label for check box select."
@@ -16660,9 +16651,9 @@ href="https://www.w3.org/WAI/tutorials/forms/grouping/#associating-related-contr
 WAI tutorial</a>. See also this MDN’s article about about <a
 href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles" target="_blank" rel="noopener noreferrer">WAI-ARIA
 roles</a>.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-4-1">5.4.1 Input Types</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this section, we briefly present the input types, attributes, and
 elements related to the forms that came with HTML5. Details are given
 later, illustrated by multiple interactive examples.</p>
@@ -16676,22 +16667,22 @@ href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#%3Cinput%3
 on &lt;input&gt; types</a> lists all input types and highlights those
 that came with HTML5.</p>
 <p>Now, let’s play with some of these input types and attributes.</p>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 223. html4 to html5 time to update (299) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 223. html4 to html5 time to update (299) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image223.jpeg?raw=true"
   style="width:20%;"
   alt="HTML4 to HTML5." />
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-4-2">5.4.2 "color"</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>For years, we used hundreds of lines of JavaScript for selecting
 colors. Now, it’s bundled in the browser!</p>
 <p>Here is how it looks on some mobile devices:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 224. html input type color - android (299) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 224. html input type color - android (299) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image224.jpeg?raw=true"
   style="width:40%;"
@@ -16716,9 +16707,9 @@ usually embed input elements in a &lt;form&gt;…&lt;/form&gt;.
 example</a>. Or do it here in your browser: just click on the purple square below:</p>
 <p>Here is the result on Google Chrome (works with other browsers too,
 though the <i>look and feel</i> may differ):</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 225. select input type=color (300) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 225. select input type=color (300) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image225.jpeg?raw=true"
   style="width:40%;"
@@ -16730,9 +16721,9 @@ though the <i>look and feel</i> may differ):</p>
 is an example that changes the background color of the page when a color
 is chosen. <a
 href="https://jsbin.com/jozuter/1/edit?html,css,js,console,output" target="_blank" rel="noopener noreferrer">Try it online at JSBin</a>.</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 226. change backgound color of the body (300) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 226. change backgound color of the body (300) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image226.jpeg?raw=true"
   style="width:40%;"
@@ -16771,9 +16762,9 @@ simplify the user interface, by using a &lt;datalist&gt; with
 some &lt;option&gt; elements inside.</p>
 <p>Example: click the black rectangle on the right:  . The following
 should be displayed:</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 227. restricted choice of colors (301) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 227. restricted choice of colors (301) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image227.jpeg?raw=true"
   style="width:40%;"
@@ -16813,9 +16804,9 @@ specific.</p>
 <p>The solution proposed by the W3C and its contributors is
 called <i>Web Components</i>, a new approach for designing HTML5
 widgets, that is covered in the W3Cx HTML5 Apps and Games course.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-4-3">5.4.3 “date”</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>For years, date and time pickers in HTML forms made Web developers
 rely heavily on JavaScript based widgets. The process is simpler in
 HTML5, which provides a special control to handle this specific kind of
@@ -16823,23 +16814,23 @@ data natively.</p>
 <p>Below are a few screenshots of the HTML5 date picker on several
 mobile devices. Note that the native date pickers of the operating
 systems are used:</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------- 228. december 22, 2011 sample custom reusable widget (302) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 228. december 22, 2011 sample custom reusable widget (302) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image228.png?raw=true"
   style="width:20%;"
   alt="Date picker 1." />
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 229. 03 oct 2013 sample custom reusable widget (302) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 229. 03 oct 2013 sample custom reusable widget (302) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image229.jpeg?raw=true"
   style="width:10%;"
   alt="Date picker 2 on mobile." />
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 230. 2012-09-11 sample custom reusable widget (302) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 230. 2012-09-11 sample custom reusable widget (302) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image230.jpeg?raw=true"
   style="width:30%;"
@@ -16852,9 +16843,9 @@ widget. For this purpose, the solution undoubtedly lies with the new <a
 href="https://webcomponents.org/" target="_blank" rel="noopener noreferrer">Web Components</a> (a way to make custom reusable widgets in HTML/CSS/JS), to be detailed in the W3Cx HTML5 Apps and Games course</p>
 <p>Why don’t you try it yourself? Just click on this input field: (not in github)</p>
 <p>With Firefox, it shows this date picker widget:</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 231. firefox date picker widget (302) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 231. firefox date picker widget (302) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image231.png?raw=true"
   style="width:20%;"
@@ -16886,9 +16877,9 @@ default date, a min and a max date, or for defining an interval of
 acceptable values.</p>
 <p>Try this example: just click the next input
 field or <a href="https://jsbin.com/faluta/1/edit?html,output" target="_blank" rel="noopener noreferrer">try it online on JSBin</a> if you want to tweak the source code:</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------- 232. only dates between min and max are selectable (303) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 232. only dates between min and max are selectable (303) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image232.jpeg?raw=true"
   style="width:40%;"
@@ -16918,9 +16909,9 @@ acceptable only every other day, etc.</p>
 <p>Example: we want to celebrate birthday parties only on Saturdays, <a
 href="https://jsbin.com/hudafo/1/edit?html,output" target="_blank" rel="noopener noreferrer">check this on
 JSBin</a>! (screenshot from Chrome).</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 233. using step to allow only saturdays (304) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 233. using step to allow only saturdays (304) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image233.png?raw=true"
   style="width:40%;"
@@ -16940,9 +16931,9 @@ JSBin</a>! (screenshot from Chrome).</p>
 <h4>Combining with the &lt;datalist&gt; element to restrict the choice of possible values</h4>
 
 <p><a href="https://jsbin.com/gezawe/1/edit?html,output" target="_blank" rel="noopener noreferrer">Online example at JSBin</a> (screenshot from Chrome).</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 234. only values from datalist are proposed (304) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 234. only values from datalist are proposed (304) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image234.jpeg?raw=true"
   style="width:40%;"
@@ -17027,18 +17018,18 @@ named valueAsDate. This is a JavaScript date object that can be compared
 to other JavaScript date objects, in particular to the date of the day
 we can get with var date = new Date();</p>
 <p><a href="https://jsbin.com/renevaf/edit?html,output" target="_blank" rel="noopener noreferrer">The following example at JSBin</a> shows how to ascertain whether a date is in the past or in the future: </p>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 235. is date in past or future? (306) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 235. is date in past or future? (306) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image235.jpeg?raw=true"
   style="width:40%;"
   alt="Check if date is in the past or future." />
 
 <p>While if we enter a date in the future:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 236. enter your birth date (306) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 236. enter your birth date (306) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image236.jpeg?raw=true"
   style="width:30%;"
@@ -17101,82 +17092,82 @@ try all the different possible values for the type attribute of date pickers.</p
 <h4>Some screenshots from Opera desktops and Safari IOS:</h4>
 
 <p>&lt;input type=“time”&gt;</p>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 237. select a time (307) ------------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 237. select a time (307) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image237.png?raw=true"
   style="width:30%;"
   alt="Input type=time, select a time." />
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 238. select a date and time (307) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 238. select a date and time (307) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image238.png?raw=true"
   style="width:20%;"
   alt="Input type=time safari IOS." />
 
 <p>&lt;input type=“datetime”&gt;</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------------- 239. select a time (307) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 239. select a time (307) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image239.png?raw=true"
   style="width:20%;"
   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element." />
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 240. jun 7, 2011 select date/time (308) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 240. jun 7, 2011 select date/time (308) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image240.png?raw=true"
   style="width:20%;"
   alt="Select date/time. Wed 7:29pm, June 7, 2011. Input type=datetime on Safari IOS." />
 
 <p>&lt;input type=“datetime-local”&gt;</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 241. 2012-02-18 00:08 select date/time (308) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 241. 2012-02-18 00:08 select date/time (308) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image241.png?raw=true"
   style="width:20%;"
   alt="Select date and time using datetime-local." />
 
 <p>&lt;input type=“week”&gt;:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 242. 2012w07 select a week (308) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 242. 2012w07 select a week (308) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image242.jpeg?raw=true"
   style="width:40%;"
   alt="Select a Week." />
 
 <p>&lt;input type=“month”&gt;:</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------- 243. 2012-02 select birthdate month & year (308) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 243. 2012-02 select birthdate month & year (308) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image243.jpeg?raw=true"
   style="width:40%;"
   alt="2012-02 Select month and year of birthdate." />
 <!-- width="4.0in" height="1.4222222222222223in"} -->
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 244. june 2011 select month & year (309) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 244. june 2011 select month & year (309) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image244.png?raw=true"
   style="width:20%;"
   alt="June, 2011 select input type=month safari." />
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-4-4">5.4.4 “e-mail”, “tel”, “URL”, and “search”</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let’s study 4 input types: email”, “tel”, “URL” and “search”.</p>
 <p>&lt;input type=“email”&gt;</p>
 <p>This input type is relatively straightforward to use. In mobile
 applications, this new input type pops up a keyboard layout adapted to
 email input. Note the “@” key, the “.” key, etc.</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 245. mobile email address (309) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 245. mobile email address (309) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img class="displayed"
   src="./images/image245.jpeg?raw=true"
@@ -17194,9 +17185,9 @@ class :invalid</p>
 presented in a later section dedicated to form validation.</p>
 <p>Typical use:
 <a href="https://codepen.io/w3devcampus/pen/aWXKWR" target="_blank" rel="noopener noreferrer">Online example at CodePen</a></p>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 246. enter your email (310) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 246. enter your email (310) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image246.png?raw=true"
   style="width:30%;"
@@ -17237,16 +17228,16 @@ check if the address is an existing one.</p>
 <p>This input field is really useful on smartphones and tablets, as it
 makes the browser pop up a keyboard layout suitable for entering phone
 numbers:</p>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 247. enter your telephone number (xxx) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 247. enter your telephone number (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image247.png?raw=true"
   style="width:20%;"
   alt="Mobile keyboard 1 for input type=tel." />
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 248. other mobile keyboard for input type=tel (xxx) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 248. other mobile keyboard for input type=tel (xxx) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image248.png?raw=true"
   style="width:20%;"
@@ -17255,9 +17246,9 @@ numbers:</p>
 <p>This input type is often used with the new placeholder and pattern attributes that are detailed in
 another section of this course. It is supported by all recent major Web browsers, on mobile devices and desktops.</p>
 <p><a href="https://codepen.io/w3devcampus/pen/Njozvd" target="_blank" rel="noopener noreferrer">Online example on CodePen</a></p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 249. enter a telephone number prompt (xxx) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 249. enter a telephone number prompt (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image249.png?raw=true"
   style="width:30%;"
@@ -17298,9 +17289,9 @@ another section of this course. It is supported by all recent major Web browse
 <p>This input field is really useful on smartphones and tablets, as it
 makes the browser pop up a keyboard layout suitable for entering
 URLs:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 250. mobile keyboard for entering urls (xxx) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 250. mobile keyboard for entering urls (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image250.png?raw=true"
   style="width:20%;"
@@ -17354,9 +17345,9 @@ emptying the search field, or it may provide a drop-down list of recent
 search results.<br>
 <br>The specification does not state what the GUI should look like, so
 current implementations show variations in the look and feel.</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------- 251. input type=search rendered on a smartphone (xxx) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 251. input type=search rendered on a smartphone (xxx) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image251.jpeg?raw=true"
   style="width:40%;"
@@ -17374,9 +17365,9 @@ current implementations show variations in the look and feel.</p>
 
 <p>Results on Chrome and Opera desktop - notice the small cross on the
 right when one enters a value:</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 252. simple search chrome & opera (313) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 252. simple search chrome & opera (313) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image252.jpeg?raw=true"
   style="width:40%;"
@@ -17384,18 +17375,18 @@ right when one enters a value:</p>
 
 <p>Same example with Safari desktop, this time the second line with an
 attribute results=5 shows a small icon on the left:</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 253. simple search safari desktop (313) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 253. simple search safari desktop (313) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image253.jpeg?raw=true"
   style="width:40%;"
   alt="Input type=search on Safari." />
 
 <p>Example that shows a drop down list of recent searches (Safari screenshot borrowed from <a href="https://www.wufoo.com/html5/types/5-search.html" target="_blank" rel="noopener noreferrer">this excellent site about HTML5 forms that is worth reading</a>):</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 254. drop down list of recent searches (313) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 254. drop down list of recent searches (313) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image254.png?raw=true"
   style="width:20%;"
@@ -17429,10 +17420,9 @@ attribute results=5 shows a small icon on the left:</p>
 </code></pre>
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-4-5">5.4.5 “number”</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This input field is useful for entering numerical values (integer or
 float), but not for entering zip codes. On desktop implementations and
 on some mobile implementations, it provides a user interface with small
@@ -17444,9 +17434,9 @@ course.</p>
 <p>Example: <b>&lt;input type=“number” value=“25” min=“0” step=“5” max=“500”/&gt;</b></p>
 
 <h4>Screenshot example taken with a mobile device:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 255. input type number display mobile device (314) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 255. input type number display mobile device (314) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image255.png?raw=true"
   style="width:20%;"
@@ -17454,9 +17444,9 @@ course.</p>
 
 <p>Examples on desktop (the width will be adjusted depending on
 the min and max attributes):</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 256. quantity between 1 and 5 (314) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 256. quantity between 1 and 5 (314) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image256.jpeg?raw=true"
   style="width:35%;"
@@ -17494,9 +17484,9 @@ will increment/decrement by 0.1, etc.</b></p>
 <p><a href="https://codepen.io/w3devcampus/pen/GJrQzP):" target="_blank" rel="noopener noreferrer">Online example
 in CodePen</a> try changing the attribute values, use step=“any” and try
 float values, etc).</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 257. change attribute values (315) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 257. change attribute values (317) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image257.png?raw=true"
   style="width:40%;"
@@ -17536,13 +17526,11 @@ invalid): </p>
 </code></pre>
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-4-6">5.4.6 “range”</h3>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 258. using zipper as range setting (316) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 258. using zipper as range setting (318) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image258.jpeg?raw=true"
   style="width:50%;"
@@ -17552,25 +17540,25 @@ invalid): </p>
 as the &lt;input type=“number”&gt; : min, max, step and value.</p>
 
 <h4>Example of rendering on a desktop:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 259. play with attributes on desktop (316) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 259. play with attributes on desktop (318) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image259.jpeg?raw=true"
   style="width:30%;"
   alt="Example rendering on desktop." />
 
 <h4>And on mobile devices:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 260. on left range, default, vertical (316) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 260. on left range, default, vertical (318) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image260.png?raw=true"
   style="width:20%;"
   alt="Left image, ios range input." />
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 261. on right range android (316) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 261. on right range android (318) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image261.jpeg?raw=true"
   style="width:20%;"
@@ -17587,9 +17575,9 @@ as the &lt;input type=“number”&gt; : min, max, step and value.</p>
 <p>But most of the time, you will need a visual feedback that shows the current value selected by the slider.</p>
 
 <h4><a href="https://codepen.io/w3devcampus/pen/BRMVGW" target="_blank" rel="noopener noreferrer">This online example on CodePen</a> shows how to add a visual feedback using a very short JavaScript function and an &lt;output&gt; element. Just click and drag the small cursor of the slider (or use up and down arrow keys when the field has the focus):</h4>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 262. add visual feedback with short function (317) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 262. add visual feedback with short function (319) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image262.png?raw=true"
   style="width:50%;"
@@ -17641,9 +17629,9 @@ as the &lt;input type=“number”&gt; : min, max, step and value.</p>
 </details>
 
 <h4>Snapping behavior and the step attribute</h4>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 263. example six steps in process (317) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 263. example six steps in process (317) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image263.jpeg?raw=true"
   style="width:30%;"
@@ -17682,9 +17670,9 @@ omitting the step attribute is equivalent to step=“1”.</p>
 step equal to a floating point value, such as step=“0.5”.</p>
 <p>Adding “ticks” to the range slider using
 a &lt;datalist&gt; element</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------- 264. display ticks on a rule at given positions (318) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 264. display ticks on a rule at given positions (318) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image264.jpeg?raw=true"
   style="width:45%;"
@@ -17828,9 +17816,9 @@ or :required selectors</td>
 <h3 id="ch5-5-1">5.5.1 Form Attributes</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>In this chapter, we go over the form attributes that have been introduced by HTML5.</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 265. html5 form attributes (320) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 265. html5 form attributes (320) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image265.jpeg?raw=true"
   style="width:25%;"
@@ -17846,9 +17834,9 @@ further examples of using the previously discussed attributes.</p>
 <p>In another part of the course, about form validation and visual
 feedback using CSS, we examine some of the most useful attributes in
 even greater detail.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-2">5.5.2 form</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This attribute is useful for putting input fields outside the form
 itself. The form attribute of an external input field must share the
 same value as the id of the form the field belongs to. This is useful
@@ -17858,9 +17846,9 @@ easier.</p>
 <h4>Typical use</h4>
 
 <p><a href="http://codepen.io/w3devcampus/pen/jmdpyv)" target="_blank" rel="noopener noreferrer">Try this interactive example in CodePen</a>, or try it directly in your browser:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 266. html5 form attributes (321) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 266. html5 form attributes (321) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image266.png?raw=true"
   style="width:65%;"
@@ -20535,7 +20523,8 @@ of images before uploading them, or - and this is much more interesting
 need for a server.</p>
 <p>Imagine a multimedia player that accesses (in read-only) your file
 system, reads your audio and video files, etc., such as the <a
-href="https://chrome.google.com/webstore/detail/remo-music-player/ajilpdcmebalpffmjjopcingplogifhb" target="_blank" rel="noopener noreferrer">Remo Music
+href="https://chrome.google.com/webstore/detail/remo-music-player/ajilpdcmebalpffmjjopcingplogifhb" 
+  target="_blank" rel="noopener noreferrer">Remo Music
 player</a> below, or an application that edits the audio content of
 local mp3 files, for example, the <a
 href="https://wav.hya.io/#/fx" target="_blank" rel="noopener noreferrer">HYA-WAVE sound editor</a> (screenshot
@@ -20563,7 +20552,8 @@ above).</p>
   <li><p>An article from Web.dev: <a
     href="https://web.dev/read-files/" target="_blank" rel="noopener noreferrer">Read files in JavaScript</a></p></li>
   <li><p>MDN’s Web Docs: <a
-    href="https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications" target="_blank" rel="noopener noreferrer">Using files from web applications</a></p></li>
+    href="https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications" target="_blank" 
+      rel="noopener noreferrer">Using files from web applications</a></p></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-2">6.3.2 Working with local files</h3>
@@ -21002,8 +20992,11 @@ a &lt;input type=“file” id=“file” onchange=“readFileContent(this.file
 </p>
 
 <ul>
-  <li><i>Line 11</i> is executed first, and asks the Reader object to read the file f as text. As this takes some time, it’s an asynchronous operation that will be executed by the browser in the background. When the file is read, the reader.onload callback function is called.</li>
-  <li><i>Line 4</i> is executed after <i>line 11</i>, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
+  <li><i>Line 11</i> is executed first, and asks the Reader object to read the file f as text. 
+    As this takes some time, it’s an asynchronous operation that will be executed by the browser in the background. 
+    When the file is read, the reader.onload callback function is called.</li>
+  <li><i>Line 4</i> is executed after <i>line 11</i>, and is called only when the file content is available. 
+    This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
 </ul>
 
 <p>Try a variation of the above code in your browser, that displays the
@@ -21229,9 +21222,15 @@ directly in the browser, without the need for a server!</p>
 
 <ul>
   <li><i>Line 2:</i> we get a pointer to the file selector, the variable fileInput.</li>
-  <li><i>Line 5:</i> we define a change listener. In this example, we use an anonymous function directly included in the listener definition (the listener is the function(e) {…}).</li>
-  <li><i>Line 9:</i> when a user chooses a file, the listener will be executed. Line 9 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.</li>
-  <li><i>Line 5:</i> is the onload callback, executed when the file content is loaded in memory. We pass the file content to the initSound function (see JSBin example for complete source code) that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio works only with uncompressed audio formats in memory), and to play it.</li>
+  <li><i>Line 5:</i> we define a change listener. In this example, we use an anonymous function directly 
+    included in the listener definition (the listener is the function(e) {…}).</li>
+  <li><i>Line 9:</i> when a user chooses a file, the listener will be executed. 
+    Line 9 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: 
+    read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.</li>
+  <li><i>Line 5:</i> is the onload callback, executed when the file content is loaded in memory. 
+    We pass the file content to the initSound function (see JSBin example for complete source code) 
+    that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio 
+    works only with uncompressed audio formats in memory), and to play it.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-8">6.3.8 Read file content as dataURL</h3>
@@ -21246,9 +21245,11 @@ page by reducing the number of HTTP requests).</p>
 in the address bar of your browser, and you should see the red
 square:</p>
 
-<p>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==</p>
+<var>
+  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==
+</var>
 
-<h4>This data URL in a browser address bar should look like this:</h4>
+	<h4>This data URL in a browser address bar should look like this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 317. data url in address bar shows a red cirle (383) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21558,7 +21559,8 @@ the browser will ask if you agree to share your position with the application.</
   <li><p>Browser support tables:</p>
   <ul>
     <li><p>on CanIuse: <a href="https://caniuse.com/#feat=geolocation" target="_blank" rel="noopener noreferrer">Geolocation</a></p></li>
-    <li><p>on MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API#Browser_compatibility" target="_blank" rel="noopener noreferrer">Geolocation API</a></p></li>
+    <li><p>on MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API#Browser_compatibility" target="_blank" 
+      rel="noopener noreferrer">Geolocation API</a></p></li>
   </ul>
   </li>
 </ul>
@@ -21656,11 +21658,13 @@ means”:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-4">6.4.4 Tracking a position</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In order to track the current position, the geolocation API provides a method similar to the getCurrentPosition(onSuccess, onError) named watchPosition(onSuccess, onError).</p>
+<p>In order to track the current position, the geolocation API provides a method similar to the getCurrentPosition(onSuccess, onError) 
+named watchPosition(onSuccess, onError).</p>
 <p>When getCurrentPosition gives a position when called, watchPosition does the following:</p>
 
 <ul>
-  <li><p>It gets the callback function only when the current position changes. If you stay in the same location, the callback function won’t be called regularly.</p></li>
+  <li><p>It gets the callback function only when the current position changes. If you stay in the same location, 
+    the callback function won’t be called regularly.</p></li>
   <li><p>It returns an id so that you can use the clearWatch(id) method to stop the current tracking.</p></li>
 </ul>
 
@@ -21917,13 +21921,16 @@ html, body {
 <p>Different Web services can be used to get an address from longitude
 and latitude. Most are free of charge, but they will ask you to register
 an API key and enter your credit card number. If you send too many
-requests, you will be charged. Such a service is
-the <a href="https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse" target="_blank" rel="noopener noreferrer">Google
+requests, you will be charged. Such a service is the 
+<a href="https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse" 
+target="_blank" rel="noopener noreferrer">Google 
 Reverse Geocoding JavaScript API</a>. For those of you who are really
 interested to know how this API works, please read the Google
 documentation and tutorials.</p>
 <p>There is also an interesting Leaflet plugin (an extension to Leaflet)
-based on the <a href="https://www.gisgraphy.com/" target="_blank" rel="noopener noreferrer">Gisgraphy</a> (free open source framework) service, that comes with a <a href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" rel="noopener noreferrer">nice demo of reverse geocoding</a>.</p>
+based on the <a href="https://www.gisgraphy.com/" target="_blank" rel="noopener noreferrer">Gisgraphy</a> 
+  (free open source framework) service, that comes with a <a href="https://services.gisgraphy.com/static/leaflet/index.html" 
+  target="_blank" rel="noopener noreferrer">nice demo of reverse geocoding</a>.</p>
 <p>Let’s see some examples of use.</p>
 <p>Example #1: how to get a physical address from the longitude and latitude.<br>
 <br>Google reverse geocoding example (screenshot only):</p>
@@ -22029,7 +22036,8 @@ function showPosition(position) {
 </details>
 
 <p>Gisgraphy (free service) reverse geocoding example (screenshot only, click on it to see <a
-href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" rel="noopener noreferrer">the demo on the Gisgraphy website</a>):</p>
+href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" rel="noopener noreferrer">
+  the demo on the Gisgraphy website</a>):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 331. gisgraphy screenshot (398) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -22040,9 +22048,12 @@ href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" 
   
 <h4><b>Example #2:</b> reverse geocoding + OpenStreetMap</h4>
 
-<p><b>Important note:</b> these examples below rely on an external <a href="https://github.com/perliedman/leaflet-control-geocoder" target="_blank" rel="noopener noreferrer">GitHub resource</a>.</p>
+<p><b>Important note:</b> these examples below rely on an external 
+  <a href="https://github.com/perliedman/leaflet-control-geocoder" 
+  target="_blank" rel="noopener noreferrer">GitHub resource</a>.</p>
 <p>Please, pan and zoom on the map and click.<br>
-<br>The longitude and latitude are computed from your click and a free reverse geocoding service is used to convert to a physical address.</p>
+<br>The longitude and latitude are computed from your click and a free reverse geocoding service is 
+  used to convert to a physical address.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 332. reverse geocoding - openstreetmap (398) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
