@@ -69,9 +69,10 @@ function topFunction() {
 
 <blockquote>
 <h3>1.1 <a href="#ch1-1-1"><strong>From HTML1.0 to HTML5</strong></a></h3>
-<h3>1.2 <a href="#ch1-2-1"><strong>Structural elements</strong></a></h3>
-<h3>1.3 <a href="#ch1-3-1"><strong>Details and Summary elements</strong></a></h3>
-<h3>1.4 <a href="#ch1-4-1"><strong>Microdata</strong></a></h3>
+<h3>1.2 <a href="#ch1-2-1"><strong>From HTML1.0 to HTML5</strong></a></h3>
+<h3>1.3 <a href="#ch1-3-1"><strong>Structural elements</strong></a></h3>
+<h3>1.4 <a href="#ch1-4-1"><strong>Details and Summary elements</strong></a></h3>
+<h3>1.5 <a href="#ch1-5-1"><strong>Microdata</strong></a></h3>
 </blockquote>
 
 <h2><strong>Module 2: HTML5 Multimedia</strong></h2>
@@ -590,7 +591,7 @@ the world, and has many business benefits. Access to information, including on t
   style="width:45%;" />
 <br/>
 
-<h3 id="ch1-1-1">1.1 History of HTML</h3>
+<h3 id="ch1-1-1">1.1.1 History of HTML</h3>
 
 <p>As Web site layouts evolve, HTML5 structural elements such as lists, paragraphs, tables, etc. show their limits.<br>
 <br>Today, many Web sites offer navigation menus, tabbed panels, headers, footers, and so on.<br>
@@ -676,7 +677,7 @@ document structure.</p>
   <li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">New Structural Elements in HTML5.</a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>1.3.3 Mixing All Elements Together: A Blog Example</h3>
+<h3>1.3.1 Mixing All Elements Together: A Blog Example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>A blog example that uses the structural elements</h4>
 
@@ -1931,7 +1932,7 @@ and width:30% for the &lt;aside&gt; on the right.</p>
 (click on the CSS or HTML text in the menu bar below, or click “edit on
 codepen” to change the code and see the results):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------- 35. header with section float left and aside float right (56) ------------------>
+<!--~~~~~~~~~~~~~ 35. header with section float left and aside float right (56) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image035.png?raw=true"
@@ -1940,7 +1941,7 @@ codepen” to change the code and see the results):</p>
 
 <p><a href="https://jsbin.com/dufapo/edit?html,css,output" target="_blank" rel="noopener noreferrer">Also available online at JSBin</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------- 36. michel buffa home page - 3 sections centered (56) ---------------------->
+<!--~~~~~~~~~~~~~~~~~ 36. michel buffa home page - 3 sections centered (56) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image036.png?raw=true"
@@ -1984,7 +1985,7 @@ codepen” to change the code and see the results):</p>
 
 <h4>Look at the CSS code in the example below:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 37. header and three float sections (57) ---------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 37. header and three float sections (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image037.png?raw=true"
@@ -2025,7 +2026,7 @@ codepen” to change the code and see the results):</p>
     property</a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-3-1">1.3.1 The &lt;details&gt; and &lt;summary&gt; Elements</h3>
+<h3 id="ch1-4-1">1.4.1 The &lt;details&gt; and &lt;summary&gt; Elements</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>These elements have been introduced for displaying a foldable zone in an HTML document.</p>
 <p>In the screenshot below, taken from the W3C specification page, the text next to the horizontal arrow is a &lt;summary&gt; element, and the text displayed when we click on the summary part, is
@@ -2201,9 +2202,8 @@ it <a href="https://jsbin.com/sajusop/edit?html,css,output" target="_blank" rel
   src="./images/image043.jpeg?raw=true"
   alt="'A+' as a custom open icon for summary."
   style="width:35%;" />
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 48. a '-' as a custom close icon (62) ------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 48. a '-' as a custom close icon (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image048.jpeg?raw=true"
@@ -2289,7 +2289,9 @@ a year”, “a week in a year”, “a time”, etc… </p>
 
 <h4>Different syntaxes of the datetime attribute</h4>
 
-<div style="text-align:left">
+<!-- <div style="text-align:left"> -->
+
+<div style="width: 100%; text-align: left;">
 <table>
 <colgroup>
 <col style="width: 64%" />
@@ -2494,7 +2496,7 @@ mark {
   <li>An article on Web Platform News: <a href="https://webplatform.news/issues/2019-02-28">The &lt;mark&gt; element could help make your text more scannable</a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-3-3">1.3.3 The Download and Translate Attributes</h3>
+<h3 id="ch1-4-3">1.4.3 The Download and Translate Attributes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The old way to download files using HTML and HTTP</h4>
 
@@ -2835,7 +2837,7 @@ too hard for authors to write, microdata is HTML5’s answer to help embed seman
   <li><a href="https://diveinto.html5doctor.com/extensibility.html" target="_blank" rel="noopener noreferrer">Chapter from Mark Pilgrim’s book about microdata</a>, very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-4-2">1.4.2 Testing Tools</h3>
+<h3 id="ch1-5-2">1.5.2 Testing Tools</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Introduction</h4>
 <p>After seeing the principle of embedding microdata in an HTML page, we
@@ -2943,7 +2945,7 @@ site</a> is a bit similar to the previous one except that it shows the extracted
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ Chapter 1-5-3. adding microdata to an html page (75) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-4-3">1.4.3 Adding Microdata to an HTML Page</h3>
+<h3 id="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Basic steps</h4>
 
@@ -3198,7 +3200,7 @@ data that isn’t actually in the text of your page.</td>
   &lt;a href=&quot;https://www.twitter.com/micbuffa&quot; itemprop=&quot;url&quot;&gt;profile&lt;/a&gt;
 </code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-4-4">1.4.4 Microdata Tools</h3>
+<h3 id="ch1-5-4">1.5.4 Microdata Tools</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There are many tools available (most are free) that you can use for generating, visualizing and debugging microdata. We list some of them in this page, but feel free to share the tools you find / like in the forums.</p>
 
@@ -3222,7 +3224,7 @@ data that isn’t actually in the text of your page.</td>
   style="width:65%;" />
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-4-5">1.4.5 Examples of Well Structured Documents with Microdata</h3>
+<h3 id="ch1-5-5">1.5.5 Examples of Well Structured Documents with Microdata</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here, we propose a few links to Web pages that were created by
 students of previous editions of this course).</p>
@@ -15251,7 +15253,7 @@ forms.</p>
 <p>This example was created by a learner (by Mels Le N.) from a previous
 version of this course. It uses the geolocation API presented in Module
 6 for auto-filling the address input fields.</p>
-<p>Feel free to look at the source code in the <a href=“https://jsbin.com/sivula/edit?online%20example/" target="_blank" rel="noopener noreferrer"></a>:</p>
+<p>Feel free to look at the source code in the <a href="https://jsbin.com/sivula/edit?online%20example/" target="_blank" rel="noopener noreferrer"></a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 215. auto-fill address input (292) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16127,7 +16129,6 @@ email input. Note the “@” key, the “.” key, etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 245. mobile email address (309) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
 <img class="displayed"
   src="./images/image245.jpeg?raw=true"
   style="width:20%;"
@@ -16676,7 +16677,7 @@ value=5 min=0, max=10 step=&quot;any&quot;, ticks at 0, 5 and 10:  
   <li>From CSS{Portal}, a CSS generator help you style the html input range tag, very easy to use: <a href="https://www.cssportal.com/style-input-range/" target="_blank" rel="noopener noreferrer">Style Input Range</a></li>
 </ul>
 
-<div data-align="center" width="100%">
+<div style="width: 100%; text-align: center;">
 <table>
 <colgroup>
 <col style="width: 67%" />
@@ -16868,22 +16869,21 @@ easier.</p>
 
 <h4>Typical use</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------- 268. example of use of autocomplete attribute (323) ---------------------->
+<!--~~~~~~~~~~~~~~~~~~~ 268. example of use of autocomplete attribute (323) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image268.png?raw=true"
   style="width:40%;"
-  alt="Example of use of autocomplete attribute." />
+  alt="Example of use of autocomplete attribute, #1 of 2." />
 
 <p>Try it in your browser here:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------- 268b. example of use of autocomplete attribute (323) --------------------->
+<!--~~~~~~~~~~~~~~~~~~~ 268b. example of use of autocomplete attribute (323) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="./images/image268b.png?raw=true"
-  width="40%"
+<img class="displayed"
+  src="./images/image268b.png?raw=true"
+  style="width:40%;"
   alt="Example of use of autocomplete attribute, #2." />
-</p>
 
 <h4>Source code extract:</h4>
 
@@ -17619,7 +17619,7 @@ output tab, in JSBin), you should see this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image277.png?raw=true"
-   alt="JS Bin in standalone mode." />
+  alt="JS Bin in standalone mode."
   style="width:50%;" />
 
 <p>Then, open the devtools and go to the “Network” tab, click on the
@@ -17644,7 +17644,8 @@ replaced by “+”, etc.). Here is a screenshot of what you should see:</p>
 <p>Let’s look at the HTML5 elements related to forms
 (specifically: &lt;datalist&gt;, &lt;output&gt;, &lt;meter&gt; 
 and &lt;progress&gt; elements).</p>
-<div data-align="center" width="100%">
+
+<div style="width: 100%; text-align: center;">
 <table>
 <thead>
 <tr class="header">
@@ -17855,7 +17856,6 @@ dragging the slider below:</p>
 ![The link between the slider (an &lt;input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the &lt;meter&gt; element (line 9) and update the displayed html content of the &lt;output&gt; element (line 10)](./images/image281.jpeg){width="6.5in" height="2.1131944444444444in"}
 --->
 
-</p>
 <p>The link between the slider (an &lt;input type=range&gt;) and the
 meter element is done using an input event handler (oninput=“effect(…)”)
 at <i>line 4</i>.</p>
@@ -18843,7 +18843,8 @@ We just added input event listeners to each input field. For example, in order t
 
 <!--
 ![As we are filing a form text input type, its content is saved in local storage. The image shows the httml code of the input type, that as a oninput='localStorage.firstName = this.value". Devtools are open on the "Applications" tab and show the LocalStorage content. It has the same value as what has been typed in the form firstName field.](./images/image299.jpeg){width="6.5in" height="3.7506944444444446in"}
---></p>
+-->
+
 <p>In the same way, we added an input listener to all the input fields
 in this example’s form.</p>
 
@@ -19591,7 +19592,7 @@ So, when we enter this function that means that one file has been read
 and we can get the content of the file through the event using the
 ‘e.target.result’ property. Each time I read a file I can get its
 content here and it’s a data URL that contains all the pixels.</p>
-<p>What we do in that example, is that we create a <span>. In the span
+<p>What we do in that example, is that we create a &lt;span&gt;. In the span
 with the innerHTML, we add an image that has for src attribute the
 content of the image we read as a data URL.</p>
 <p>And finally, we just insert this image in the document and this is
@@ -19829,10 +19830,10 @@ not images will be greyed and non selectable.</p>
 <h4>Explanations:</h4>
 
 <ul>
-  <li><i>Line 1:</i> we used the multiple attribute to allow the selection of multiple files in the file chooser (using shift or control keys). The accept=“image/” attribute is a filter that restricts selection to images only. Finally, the onchange listener will call the filesProcess(…) function, passing as parameter the list of selected files for the current element (this.files).</li><br>
-  <li><i>Lines 9 and 13:</i> we prepare the HTML code for building a &lt;table&gt; with the results.</li><br>
-  <li><i>Line 7:</i> this for loop builds all the rows that compose the table, adding HTML code to  the selection string variable. At the end of the loop, this variable contains all the HTML code that corresponds to the table of results.</li><br>
-  <li><i>Line 14:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the &lt;div id=“result”&gt; in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically. </li><br>
+  <li><i>Line 1:</i> we used the multiple attribute to allow the selection of multiple files in the file chooser (using shift or control keys). The accept=“image/” attribute is a filter that restricts selection to images only. Finally, the onchange listener will call the filesProcess(…) function, passing as parameter the list of selected files for the current element (this.files).<br></li>
+  <li><i>Lines 9 and 13:</i> we prepare the HTML code for building a &lt;table&gt; with the results.<br></li>
+  <li><i>Line 7:</i> this for loop builds all the rows that compose the table, adding HTML code to  the selection string variable. At the end of the loop, this variable contains all the HTML code that corresponds to the table of results.<br></li>
+  <li><i>Line 14:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the &lt;div id=“result”&gt; in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-4">6.3.4 Blob and File</h3>
@@ -19884,7 +19885,7 @@ example below).</p>
 <p>If you are interested in seeing how Blob objects can be used, <a
 href="https://jsbin.com/jefitop/1/edit?html,output" target="_blank" rel="noopener noreferrer">here is an example
 “as is” that shows how to download an image using Xhr2</a> (Xml Http
-Request version 2). The examples uses a <progress> element to show the
+Request version 2). The examples uses a &lt;progress&gt; element to show the
 download progress, and uses xhr.responseType = ‘blob’; to indicate that
 the file we are going to download is a binary file (a blob). Try the
 example, then comment the line with responseType=‘blob’. In this case,
@@ -20199,11 +20200,11 @@ page by reducing the number of HTTP requests).</p>
 in the address bar of your browser, and you should see the red
 square:</p>
 
-<var>
-  data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==
-</var>
+<pre><code>
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==
+</code></pre>
 
-	<h4>This data URL in a browser address bar should look like this:</h4>
+<h4>This data URL in a browser address bar should look like this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 317. data url in address bar shows a red cirle (383) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20213,7 +20214,7 @@ square:</p>
   style="width:85%;" />
 
 <p>If we set the src attribute of an image element
-<img src="data:image/png...."> with the data URL of the above
+&lt;img src=&quot;data:image/png....&quot;&gt; with the data URL of the above
 screenshot, it will work exactly as if you used a URL that started
 with https://</p>
 <p>In your browser, you will see a small red circle rendered by this source
@@ -20261,7 +20262,7 @@ video).</p>
 <p>Example of HTML5 logo embedded in a document without any real image,
 just a dataURL and CSS:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- 320. screenshot of jsbin examle shows the html5 logo insterted before a div using css (385) ->
+<!--~ 320. screenshot jsbin example shows the html5 logo inserted before a div using css (385) ~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image317.jpeg?raw=true"
