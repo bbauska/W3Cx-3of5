@@ -7934,64 +7934,64 @@ ctx.restore();
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;title&gt;Saving and restoring the context&lt;/title&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;style&gt;
-#myCanvas {
-border: 1px solid black;
-}
-&lt;/style&gt;
-&lt;script&gt;
-var canvas, ctx;
-function init() {
-// This function is called after the page is loaded
-// 1 - Get the canvas
-canvas = document.getElementById(&#39;myCanvas&#39;);
-// 2 - Get the context
-ctx=canvas.getContext(&#39;2d&#39;);
-// 3 - we can draw, try to change these values
-drawMonster(200, 100, Math.PI/4, &#39;lightGreen&#39;, &#39;yellow&#39;);
-// draw another rectangle at (0, 0), you will see it&#39;s black
-// (default color), and at the top left corner of the canvas
-// (original position of the coordinate system)
-ctx.fillRect(0, 0, 80, 80);
-}
-function drawMonster(x, y, angle, headColor, eyeColor) {
-// GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
-ctx.save();
-// Moves the coordinate system so that the monster is drawn
-// at position (x, y)
-ctx.translate(x, y);
-ctx.rotate(angle)
-// head
-ctx.fillStyle=headColor;
-ctx.fillRect(0,0,200,200);
-// eyes
-ctx.fillStyle=&#39;red&#39;;
-ctx.fillRect(35,30,20,20);
-ctx.fillRect(140,30,20,20);
-// interior of eye
-ctx.fillStyle=eyeColor;
-ctx.fillRect(43,37,10,10);
-ctx.fillRect(143,37,10,10);
-// Nose
-ctx.fillStyle=&#39;black&#39;;
-ctx.fillRect(90,70,20,80);
-// Mouth
-ctx.fillStyle=&#39;purple&#39;;
-ctx.fillRect(60,165,80,20);
-// coordinate system at (0, 0)
-drawArrow(ctx, 0, 0, 100, 0, 10, &#39;red&#39;);
-drawArrow(ctx, 0, 0, 0, 100, 10, &#39;red&#39;);
-// GOOD PRACTICE !
-ctx.restore();
-}
-&lt;/script&gt;
+  &lt;title&gt;Saving and restoring the context&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;style&gt;
+    #myCanvas {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
+  &lt;script&gt;
+    var canvas, ctx;
+    function init() {
+    // This function is called after the page is loaded
+    // 1 - Get the canvas
+    canvas = document.getElementById(&#39;myCanvas&#39;);
+    // 2 - Get the context
+    ctx=canvas.getContext(&#39;2d&#39;);
+    // 3 - we can draw, try to change these values
+    drawMonster(200, 100, Math.PI/4, &#39;lightGreen&#39;, &#39;yellow&#39;);
+    // draw another rectangle at (0, 0), you will see it&#39;s black
+    // (default color), and at the top left corner of the canvas
+    // (original position of the coordinate system)
+    ctx.fillRect(0, 0, 80, 80);
+    }  /* function init() */
+  function drawMonster(x, y, angle, headColor, eyeColor) {
+    // GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
+    ctx.save();
+    // Moves the coordinate system so that the monster is drawn
+    // at position (x, y)
+    ctx.translate(x, y);
+    ctx.rotate(angle)
+    // head
+    ctx.fillStyle=headColor;
+    ctx.fillRect(0,0,200,200);
+    // eyes
+    ctx.fillStyle=&#39;red&#39;;
+    ctx.fillRect(35,30,20,20);
+    ctx.fillRect(140,30,20,20);
+    // interior of eye
+    ctx.fillStyle=eyeColor;
+    ctx.fillRect(43,37,10,10);
+    ctx.fillRect(143,37,10,10);
+    // Nose
+    ctx.fillStyle=&#39;black&#39;;
+    ctx.fillRect(90,70,20,80);
+    // Mouth
+    ctx.fillStyle=&#39;purple&#39;;
+    ctx.fillRect(60,165,80,20);
+    // coordinate system at (0, 0)
+    drawArrow(ctx, 0, 0, 100, 0, 10, &#39;red&#39;);
+    drawArrow(ctx, 0, 0, 0, 100, 10, &#39;red&#39;);
+    // GOOD PRACTICE !
+    ctx.restore();
+    }  /* function drawMonster () */
+  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
-Your browser does not support the canvas tag.
-&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
+    Your browser does not support the canvas tag.
+  &lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -8073,56 +8073,56 @@ Your browser does not support the canvas tag.
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;title&gt;Immediate mode&lt;/title&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;style&gt;
-#myCanvas {
-border: 1px solid black;
-}
-&lt;/style&gt;
-&lt;script&gt;
-var canvas, ctx;
-window.onload = function () {
-canvas = document.getElementById(&#39;myCanvas&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-// black rectangle, default color (black)
-ctx.fillRect(10, 10, 100, 100);
-// outlined rectangle, default color
-ctx.strokeRect(150, 10, 100, 100);
-// outlined rectangle filled in red, outline blue
-ctx.fillStyle = &#39;red&#39;;
-ctx.strokeStyle = &#39;lightBlue&#39;;
-ctx.lineWidth = 10;
-ctx.fillRect(100, 150, 150, 150);
-ctx.strokeRect(100, 150, 150, 150);
-// A function to automatize previous drawing
-var angle = Math.PI / 10;
-drawFilledRectangle(300, 150, 150, 150, &#39;pink&#39;, &#39;green&#39;, 10, angle);
-drawFilledRectangle(300, 150, 150, 150, &#39;yellow&#39;, &#39;purple&#39;, 10, angle + 0.5);
-};
-function drawFilledRectangle(x, y, w, h, fillColor, strokeColor, lw, angle) {
-// GOOD PRACTICE : save if the function change the context or coordinate
-// system
-ctx.save();
-// position coordinate system
-ctx.translate(x, y);
-ctx.rotate(angle);
-// set colors, line width...
-ctx.lineWidth = lw;
-ctx.fillStyle = fillColor;
-ctx.strokeStyle = strokeColor;
-// draw at 0, 0 as we translated the coordinate
-// system already
-ctx.fillRect(0, 0, w, h);
-ctx.strokeRect(0, 0, w, h);
-// GOOD PRACTICE : a restore for a save!
-ctx.restore();
-}
-&lt;/script&gt;
+  &lt;title&gt;Immediate mode&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;style&gt;
+    #myCanvas {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
+  &lt;script&gt;
+    var canvas, ctx;
+    window.onload = function () {
+      canvas = document.getElementById(&#39;myCanvas&#39;);
+      ctx = canvas.getContext(&#39;2d&#39;);
+      // black rectangle, default color (black)
+      ctx.fillRect(10, 10, 100, 100);
+      // outlined rectangle, default color
+      ctx.strokeRect(150, 10, 100, 100);
+      // outlined rectangle filled in red, outline blue
+      ctx.fillStyle = &#39;red&#39;;
+      ctx.strokeStyle = &#39;lightBlue&#39;;
+      ctx.lineWidth = 10;
+      ctx.fillRect(100, 150, 150, 150);
+      ctx.strokeRect(100, 150, 150, 150);
+      // A function to automatize previous drawing
+      var angle = Math.PI / 10;
+      drawFilledRectangle(300, 150, 150, 150, &#39;pink&#39;, &#39;green&#39;, 10, angle);
+      drawFilledRectangle(300, 150, 150, 150, &#39;yellow&#39;, &#39;purple&#39;, 10, angle + 0.5);
+    };
+    function drawFilledRectangle(x, y, w, h, fillColor, strokeColor, lw, angle) {
+      // GOOD PRACTICE : save if the function change the context or coordinate
+      // system
+      ctx.save();
+      // position coordinate system
+      ctx.translate(x, y);
+      ctx.rotate(angle);
+      // set colors, line width...
+      ctx.lineWidth = lw;
+      ctx.fillStyle = fillColor;
+      ctx.strokeStyle = strokeColor;
+      // draw at 0, 0 as we translated the coordinate
+      // system already
+      ctx.fillRect(0, 0, w, h);
+      ctx.strokeRect(0, 0, w, h);
+      // GOOD PRACTICE : a restore for a save!
+      ctx.restore();
+      }
+  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;400&quot;&gt;
-&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;400&quot;&gt;
+  &lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -8145,23 +8145,24 @@ ctx.restore();
 <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;Drawing text&lt;/title&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-var canvas=document.getElementById(&#39;myCanvas&#39;);
-var context=canvas.getContext(&#39;2d&#39;);
-context.font = &quot;60pt Calibri&quot;;
-context.lineWidth = 3;
-context.strokeStyle = &quot;blue&quot;;
-context.fillStyle = &quot;red&quot;;
-context.fillText(&quot;Hello World!&quot;, 10, 100);
-context.strokeText(&quot;Hello World!&quot;, 10, 100);
-&lt;/script&gt;
-&lt;/body&gt;
+  &lt;head&gt;
+    &lt;title&gt;Drawing text&lt;/title&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser 
+      does not support the canvas tag.&lt;/canvas&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+      var canvas=document.getElementById(&#39;myCanvas&#39;);
+      var context=canvas.getContext(&#39;2d&#39;);
+      context.font = &quot;60pt Calibri&quot;;
+      context.lineWidth = 3;
+      context.strokeStyle = &quot;blue&quot;;
+      context.fillStyle = &quot;red&quot;;
+      context.fillText(&quot;Hello World!&quot;, 10, 100);
+      context.strokeText(&quot;Hello World!&quot;, 10, 100);
+    &lt;/script&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
@@ -8237,7 +8238,8 @@ fit into a given width, distorting it if necessary:</p>
   &lt;meta charset=&quot;utf-8&quot;/&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser 
+    does not support the canvas tag.&lt;/canvas&gt;
   &lt;script type=&quot;text/javascript&quot;&gt;
     var canvas=document.getElementById(&#39;myCanvas&#39;);
     var context=canvas.getContext(&#39;2d&#39;);
@@ -8302,7 +8304,8 @@ involved such as font, size, shadow, lineWidth, etc.</p>
   &lt;meta charset=&quot;utf-8&quot;/&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser 
+    does not support the canvas tag.&lt;/canvas&gt;
   &lt;script type=&quot;text/javascript&quot;&gt;
     var canvas=document.getElementById(&#39;myCanvas&#39;);
     var context=canvas.getContext(&#39;2d&#39;);
@@ -8315,7 +8318,8 @@ involved such as font, size, shadow, lineWidth, etc.</p>
     var textMetrics = context.measureText(&quot;Hello World!&quot;);
     var width = textMetrics.width;
     context.font = &quot;20pt Arial&quot;;
-    context.fillText(&quot;Width of previous text: &quot; + width + &quot;pixels&quot;, 10, 150);
+    context.fillText(&quot;Width of previous text: &quot; + width 
+	+ &quot;pixels&quot;, 10, 150);
     // Draw the baseline of the given width
     context.moveTo(10, 100);
     context.lineTo(width+10, 100);
@@ -8346,7 +8350,8 @@ involved such as font, size, shadow, lineWidth, etc.</p>
 11. 
 12. // Draw a text that displays the width of the previous drawn text
 13. context.font = &quot;20pt Arial&quot;;
-14. context.fillText(&quot;Width of previous text: &quot; + width + &quot;pixels&quot;, 10, 150);
+14. context.fillText(&quot;Width of previous text: &quot; 
+      + width + &quot;pixels&quot;, 10, 150);
 15. 
 16. // Draw the baseline of the given width
 17. context.moveTo(10, 100);
@@ -8482,7 +8487,8 @@ property and the corresponding results. The default value is
   &lt;meta charset=&quot;utf-8&quot;/&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;canvas id=&quot;myCanvas&quot; width=500 height=120&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=500 height=120&gt;Your browser 
+    does not support the canvas tag.&lt;/canvas&gt;
   &lt;script type=&quot;text/javascript&quot;&gt;
     var canvas=document.getElementById(&#39;myCanvas&#39;);
     var context=canvas.getContext(&#39;2d&#39;);
@@ -8660,9 +8666,9 @@ it!</p>
 <h4>CSS source code:</h4>
 
 <pre><code>
-  #myCanvas {
+#myCanvas {
   border:1px solid black;
-  }
+}
 </code></pre>
 
 <h4>JavaScript source code extract:</h4>
@@ -8674,13 +8680,13 @@ it!</p>
 1.  var imageObj = new Image();
 2.   
 3.  imageObj.onload = function() {
-4.     // Try commenting/uncommenting the following lines to see the
+4.     // try commenting/uncommenting the following lines to see the
 5.     // effect of the different drawImage variants
 6.  
-7.     // Original, big image
+7.     // original, big image
 8.     // context.drawImage(imageObj, 0, 10);
 9.  
-10.    // Original image drawn with size = 100x100 pixels
+10.    // original image drawn with size = 100x100 pixels
 11.    context.drawImage(imageObj, 0, 10, 100, 100);
 12.    // with size = 150x150
 13.    context.drawImage(imageObj, 80, 10, 150, 150);
@@ -8765,11 +8771,15 @@ it!</p>
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;p&gt;A canvas with an image that is further in the page, loaded by the &lt;img src=...&gt; tag. This is not the recommended way to load images, except if the image is already in your page. Use the onload callback to be sure that the image is in the page. &lt;/p&gt;
+  &lt;p&gt;A canvas with an image that is further in the page, loaded by the 
+  &lt;img src=...&gt; tag. This is not the recommended way to load images, 
+  except if the image is already in your page. Use the onload callback to be sure that the 
+  image is in the page. &lt;/p&gt;
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
   &lt;p&gt;Original image is an &amp;lt;img&gt; element:
   &lt;/p&gt;
-  &lt;img id=&quot;logo&quot; src=&quot;https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png&quot; alt=&quot;html5 logo&quot;&gt;
+  &lt;img id=&quot;logo&quot; src=&quot;https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png&quot; 
+  alt=&quot;html5 logo&quot;&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -8820,11 +8830,14 @@ it!</p>
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;p&gt;It is possible that the drawing in the canvas below appears only after a few seconds, because the image is very large!&lt;/p&gt;
-  &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
+  &lt;p&gt;It is possible that the drawing in the canvas below appears only after a few seconds, 
+    because the image is very large!&lt;/p&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; 
+    height=&quot;512&quot;&gt;&lt;/canvas&gt;
   &lt;p&gt;Very large original image, declared as an &amp;lt;img&gt; element:
   &lt;/p&gt;
-  &lt;img id=&quot;logo&quot; alt=&quot;logo&quot; src=&quot;https://mainline.i3s.unice.fr/mooc/texture_85_by_voyager168-d670m68.jpg&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;
+  &lt;img id=&quot;logo&quot; alt=&quot;logo&quot; src=&quot;https://mainline.i3s.unice.fr/mooc/texture_85_by_voyager168-d670m68.jpg&quot; 
+    width=&quot;512&quot; height=&quot;512&quot;&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -8851,11 +8864,11 @@ Level 2 Events specification</a> says: “<i>The load event occurs when the DOM
   &lt;title&gt;Drawing images from a video stream&lt;/title&gt;
   &lt;style&gt;
     body {
-    margin: 10px;
-    padding: 0px;
+      margin: 10px;
+      padding: 0px;
     }
     #myCanvas {
-    border: 10px solid red;
+      border: 10px solid red;
     }
   &lt;/style&gt;
   &lt;script&gt;
@@ -8896,8 +8909,10 @@ Level 2 Events specification</a> says: “<i>The load event occurs when the DOM
 &lt;body onload=&quot;init()&quot; &gt;
   &lt;p&gt;This is a &lt;code&gt;&amp;lt;video&gt;&lt;/code&gt; element: &lt;/p&gt;
   &lt;video id=&quot;sourcevid&quot; autoplay loop&gt;
-  &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-  &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.ogv&quot; type=&quot;video/ogg&quot;/&gt;
+  &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.mp4&quot; 
+    type=&quot;video/mp4&quot; /&gt;
+  &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/BigBuckBunny_640x360.ogv&quot; 
+    type=&quot;video/ogg&quot;/&gt;
   &lt;/video&gt;
   &lt;p&gt;This is a &lt;code&gt;&amp;lt;canvas&gt;&lt;/code&gt; element: &lt;/p&gt;
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;620&quot; height=&quot;360&quot;&gt;&lt;/canvas&gt;
