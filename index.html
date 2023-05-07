@@ -864,7 +864,7 @@ these rules.</p>
 
 <h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------ 17. image of the header at the top of each article (37) --------------------->
+<!--~~~~~~~~~~~~~~~~ 17. image of the header at the top of each article (37) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image017.jpeg?raw=true"
@@ -916,7 +916,7 @@ article title), paragraphs (article content), and so on.</p>
 
 <p>Also note the way we included a figure using the new “HTML5” method, using a &lt;figure&gt;..&lt;figure&gt; element that embedded a &lt;img src=…&gt; element together with a &lt;figcaption&gt; element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------- 18. image of figure and figcaption that embed an img (38) -------------------->
+<!--~~~~~~~~~~~~~~~ 18. image of figure and figcaption that embed an img (38) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image018.jpeg?raw=true"
@@ -955,7 +955,7 @@ articles displayed in the page, we added the HTML code for the tag cloud
 that is displayed on the right of the page, “aside”! This is done using
 - you already guessed it - an &lt;aside&gt; element:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------- 19. image of the tag cloud defined as an aside element (39) ------------------->
+<!--~~~~~~~~~~~~~~ 19. image of the tag cloud defined as an aside element (39) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image019.jpeg?raw=true"
@@ -1021,7 +1021,7 @@ rules.</p>
 
 <h4>Here is the result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------- 19. image of the tag cloud defined as an aside element (40) ------------------->
+<!--~~~~~~~~~~~~~~ 19. image of the tag cloud defined as an aside element (40) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image019.jpeg?raw=true"
@@ -1030,7 +1030,7 @@ rules.</p>
 
 <h4>Add a &lt;footer&gt; at the end of the blog</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------- 20. image of the tag cloud defined as an aside element (40) ------------------->
+<!--~~~~~~~~~~~~~~ 20. image of the tag cloud defined as an aside element (40) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image020.jpeg?raw=true"
@@ -1074,7 +1074,7 @@ footer {
 
 <h4><b>And here is the result at the bottom of the page:</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------- 22. the resulting footer at the bottom of the page (41) -------------------->
+<!--~~~~~~~~~~~~~~~~~ 22. the resulting footer at the bottom of the page (41) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image022.jpeg?raw=true"
@@ -1086,7 +1086,7 @@ footer {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Can an &lt;article&gt; contain a &lt;section&gt;?</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 23. pictures of eisher hands (41) -------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23. pictures of eisher hands (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image023.jpeg?raw=true"
@@ -3854,31 +3854,24 @@ background image (“dots.png”) that is repeated in X and Y (see <i>lines
 JavaScript and a resize event. The video resizes correctly and keeps its
 ratio.</p>
 
+<h4>CSS Code</h4>
+
 <details>
   <summary>CSS click to expand!</summary>
 
-<div class="sourceCode" id="cb119">
-<pre class="sourceCode css">
-<code class="sourceCode css">
-<span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a>body {</span>
-<span id="cb119-2"><a href="#cb119-2" aria-hidden="true" tabindex="-1"></a>   margin: 
-  <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb119-3"><a href="#cb119-3" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb119-4"><a href="#cb119-4" aria-hidden="true" tabindex="-1"></a>video {</span>
-<span id="cb119-5"><a href="#cb119-5" aria-hidden="true" tabindex="-1"></a>   
-  position: absolute<span class="op">;</span></span>
-<span id="cb119-6"><a href="#cb119-6" aria-hidden="true" tabindex="-1"></a>
-  width: <span class="dv">100</span><span class="dt">vw</span><span class="op">;</span></span>
-<span id="cb119-7"><a href="#cb119-7" aria-hidden="true" tabindex="-1"></a>   height: 
-<span class="dv">100</span><span class="dt">vh</span><span class="op">;</span></span>
-<span id="cb119-8"><a href="#cb119-8" aria-hidden="true" tabindex="-1"></a>   
-  object-fit: cover<span class="op">;</span></span>
-<span id="cb119-9"><a href="#cb119-9" aria-hidden="true" tabindex="-1"></a>   
-  object-position: center <span class="dv">center</span><span class="op">;</span></span>
-<span id="cb119-10"><a href="#cb119-10" aria-hidden="true" tabindex="-1"></a>}</span>
-</code>
-</pre>
-</div>
+<pre><code>
+body {
+   margin: 0;
+}
+ 
+video {
+   position: absolute;
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   object-position: center center;
+}
+</code></pre>
 
 </details>
 
@@ -3909,7 +3902,7 @@ their <a href="https://caniuse.com/#feat=viewport-units" target="_blank" rel="n
   <li>If the browser window is made wide and short, the video is full width, the height is taller than the window, and part of the video is not visible. It seems that just using % does not get us the same effect.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-1-5">2.1.5 Control Players From JavaScript</h3>
+<h3 id="ch2-2-5">2.2.5 Control Players From JavaScript</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The &lt;video&gt; and &lt;audio&gt; elements have methods,
 properties/attributes and events that can be manipulated with
@@ -4268,7 +4261,7 @@ continues with the next video.</p>
   <li><i>Lines 17-21</i>: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources [currentVideo % sources.length], we set the src of the video element to sources[0], then to sources[1], and, as we increment the currentVideo index each time (line 19), if it becomes greater than 1, the modulo (the “%” symbol is the modulo in JavaScript) will make it “loop” between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-1-8">2.1.8 [Advanced] Extended Examples</h3>
+<h3 id="ch2-2-8">2.2.8 [Advanced] Extended Examples</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this section, we propose five extended examples that use more
 JavaScript and more complex CSS manipulation. They might be a little
@@ -4454,7 +4447,7 @@ previously.</p>
 <p>Here is the online example. We recommend that you look at the source
 code:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-2-1">2.2.1 HTML5 Subtitles and closed captioning</h3>
+<h3 id="ch2-3-1">2.3.1 HTML5 Subtitles and closed captioning</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This section introduces the HTML5 &lt;track&gt; element, useful for
 adding closed captions, subtitles, descriptions, and metadata to your
@@ -4572,7 +4565,7 @@ the source code shown below):</p>
   <li>An article from 3playmedia: <a href="https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/" target="_blank" rel="noopener noreferrer">How to create a WebVTT file</a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-2-2">2.2.2 The WebVTT Format</h3>
+<h3 id="ch2-3-2">2.3.2 The WebVTT Format</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The "<a href="http://dev.w3.org/html5/webvtt/" target="_blank" rel="noopener noreferrer">;WebVTT: The Web Video Text Tracks Format </a>" defines files that contain text for captions and subtitles, and much more… The WebVTT files are used with the src attribute of the &lt;track&gt; element, that can be used inside a &lt;video&gt;…&lt;/video&gt;.</p>
 <p>In the interactive example presented before, we used a file called sintel-captions.vtt:</p>
@@ -4705,7 +4698,7 @@ allowed, as they would be interpreted as a separator:</p>
   <li>An unofficial <a href="https://quuz.org/webvtt/" target="_blank" rel="noopener noreferrer">Live WebbVTT format</a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-2-3">2.2.3 Adding Subtitles to a Video</h3>
+<h3 id="ch2-3-3">2.3.3 Adding Subtitles to a Video</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let’s look at a simple example. First, you need a video on one of the
 formats/codecs supported by the browsers you target. A recommended
@@ -4783,7 +4776,7 @@ format.</p>
   alt="Example guitar picking subtitle captions."
   style="width:40%;" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-2-4">2.2.4 Styling Captions</h3>
+<h3 id="ch2-3-4">2.3.4 Styling Captions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this section, we will look at different possibilities for styling
 and positioning  the text displayed as captions/subtitles while playing
@@ -4953,7 +4946,7 @@ example:</p>
 3.  &lt;v Jane&gt;That would make me Jane!
 </code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-2-5">2.2.5 Chapter</h3>
+<h3 id="ch2-3-5">2.3.5 Chapter</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When you play a movie in DVD or Blu-Ray format, a menu appears on the
 screen: play a movie, choose subtitles, etc. Usually there is also a
@@ -5024,7 +5017,7 @@ extra &lt;track&gt; element with a kind=“chapters” attribute.
   alt="Using the JW player."
   style="width:65%;" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-2-6">2.2.6 Tools for Creating WebVTT Files</h3>
+<h3 id="ch2-3-6">2.3.6 Tools for Creating WebVTT Files</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Many tools are available to make and edit HTML5 video and caption/subtitles:</p>
 
@@ -5036,7 +5029,7 @@ extra &lt;track&gt; element with a kind=“chapters” attribute.
 
 <p>We do not claim that these are the best tools, so feel free to share your discoveries in the discussion forum!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-2-7">2.2.7 The &lt;track&gt; JavaScript API</h3>
+<h3 id="ch2-3-7">2.3.7 The &lt;track&gt; JavaScript API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Most “complex” HTML elements like forms, audio or video players, come with a JavaScript API that allows you to control them programmatically, customize them, etc.</p>
 
@@ -5083,12 +5076,13 @@ extra &lt;track&gt; element with a kind=“chapters” attribute.
   style="width:55%;" />
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-1">2.3.1 Enhanced HTML5 Video Players</h3>
+<h3 id="ch2-3-8">2.3.8 Enhanced HTML5 Video Players</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There are numerous “enhanced” video players; most are free and open source, some are commercial. They offer lots of features, which are listed below. Not all of these features are available in every player, this list just illustrates what can be added to the standard &lt;video&gt; element.</p>
 <p>We call them “HTML5 enhanced video players” because on top of being based on the &lt;video&gt; element, they come with custom features, custom look’n’feel, chapters, etc., based on a JavaScript API that makes such customization possible.</p>
 
 <h4>Accessible players</h4>
+
 <p>For those of you interested in this particular topic, here is a very good resource that compares most of the players presented in this section, in terms of accessibility. This resource has links to players designed especially for people with disabilities: <a href="https://www.digitala11y.com/accessible-jquery-html5-media-players/" target="_blank" rel="noopener noreferrer">accessible media players and resources</a>.</p>
 
 <h4>Advantages and disadvantages of using a custom player</h4>
@@ -5125,10 +5119,12 @@ extra &lt;track&gt; element with a kind=“chapters” attribute.
   style="width:65%;" />
 
 <h4>Which should I use? the &lt;video&gt; element and my own customization or an out of the box enhanced player?</h4>
+
 <p>Either solution (basic player or enhanced player) is good and HTML5 compliant.</p>
 <p>Popular players such as <a href="https://www.jwplayer.com/" target="_blank" rel="noopener noreferrer">JWPlayer</a> have many explanations and examples on their Web sites, and are either free of charge or come with free versions.</p>
 
 <h4>Interesting comparisons and reviews are available on the following Web sites:</h4>
+
 <ul>
   <li>Comparison matrix of most of <a href="https://videosws.praegnanz.de/" target="_blank" rel="noopener noreferrer">existing HTML5 video players.</a></li>
   <li><a href="https://toppersworld.com/10-html5-video-players-as-alternatives-to-flash-player/" target="_blank" rel="noopener noreferrer">10 HTML5 video players compared.</a></li>
@@ -10072,7 +10068,7 @@ below to see the difference.</p>
 
 <h4>Try this example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------- 147. example drawing an arc with radius = 50 (206) ----------------------->
+<!--~~~~~~~~~~~~~~~~~~~ 147. example drawing an arc with radius = 50 (206) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image147.png?raw=true"
@@ -10132,7 +10128,7 @@ below to see the difference.</p>
 
 <p>Then, the result is the “complementary” of the previous arc:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------ 148. example arc complementary of the previous arc (207) -------------------->
+<!--~~~~~~~~~~~~~~~~ 148. example arc complementary of the previous arc (207) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image148.png?raw=true"
@@ -10141,7 +10137,7 @@ below to see the difference.</p>
    
 <h4>Example #2: drawing a Full circle (filled + outlined)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 149. example draw a full circle (207) ----------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 149. example draw a full circle (207) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image149.png?raw=true"
@@ -10193,7 +10189,7 @@ drew the defined path in wireframe and in filled mode!</p>
 
 <h4>Project #1: modify the <a href="https://codepen.io/w3devcampus/pen/YzZBxmO" target="_blank" rel="noopener noreferrer">previous example</a> in order to get:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------------- 150. half circle (208) ------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 150. half circle (208) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image150.jpeg?raw=true"
@@ -10202,7 +10198,7 @@ drew the defined path in wireframe and in filled mode!</p>
 
 <h4>Project #2: make a small program that draws a smiling head like this (or make something better!)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------------- 151. smiley face (208) ------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 151. smiley face (208) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image151.jpeg?raw=true"
@@ -10218,11 +10214,11 @@ rounded rectangles.</p>
 some tangents. Let’s look at these pictures for a better
 understanding:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------- 152. three diagrams to explain arcto method (209) ----------------------->
+<!--~~~~~~~~~~~~~~~~~~~~ 152. three diagrams to explain arcto method (209) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image152.jpeg?raw=true"
-   alt="There are three (3) diagrams, all drawn on canvas dynamically. The arcTo really uses carTo() with reduced alpha, and the rest of the diagram is calculated in JavaScript and drawn with lineTo and arc."
+  alt="There are three (3) diagrams, all drawn on canvas dynamically. The arcTo really uses carTo() with reduced alpha, and the rest of the diagram is calculated in JavaScript and drawn with lineTo and arc."
   style="width:65%;" />
   
 <h4>Typical use:</h4>
@@ -10267,23 +10263,24 @@ href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html" target="_
 <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;Simple use - arcTo - Example #1&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; height = 400 width=&quot;800&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-var canvas=document.getElementById(&#39;myCanvas&#39;);
-var context=canvas.getContext(&#39;2d&#39;);
-context.beginPath();
-context.moveTo(0, 20);
-context.arcTo(100, 100, 200, 20, 50);
-context.lineWidth = 5;
-context.strokeStyle = &quot;#0000ff&quot;;
-context.stroke();
-&lt;/script&gt;
-&lt;/body&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;
+    &lt;title&gt;Simple use - arcTo - Example #1&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id=&quot;myCanvas&quot; height = 400 width=&quot;800&quot;&gt;Your browser does not 
+	support the canvas tag.&lt;/canvas&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+      var canvas=document.getElementById(&#39;myCanvas&#39;);
+      var context=canvas.getContext(&#39;2d&#39;);
+      context.beginPath();
+      context.moveTo(0, 20);
+      context.arcTo(100, 100, 200, 20, 50);
+      context.lineWidth = 5;
+      context.strokeStyle = &quot;#0000ff&quot;;
+      context.stroke();
+    &lt;/script&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
@@ -10320,39 +10317,39 @@ context.stroke();
 <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;Canvas&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke)
-{
-ctx.beginPath();
-// draw top and top right corner
-ctx.moveTo(x+radius,y);
-ctx.arcTo(x+width,y,x+width,y+radius,radius);
-// draw right side and bottom right corner
-ctx.arcTo(x+width,y+height,x+width-radius,y+height,radius);
-// draw bottom and bottom left corner
-ctx.arcTo(x,y+height,x,y+height-radius,radius);
-// draw left and top left corner
-ctx.arcTo(x,y,x+radius,y,radius);
-if(fill){
-ctx.fill();
-}
-if(stroke){
-ctx.stroke();
-}
-}
-var canvas=document.getElementById(&#39;myCanvas&#39;);
-var ctx=canvas.getContext(&#39;2d&#39;);
-ctx.strokeStyle=&#39;rgb(150,0,0)&#39;;
-ctx.fillStyle=&#39;rgb(0,150,0)&#39;;
-ctx.lineWidth=7;
-roundedRect(ctx,15,15,160,120,20,true,true);
-&lt;/script&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;
+    &lt;title&gt;Canvas&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id=&quot;myCanvas&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+      var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke)
+      {
+      ctx.beginPath();
+      // draw top and top right corner
+      ctx.moveTo(x+radius,y);
+      ctx.arcTo(x+width,y,x+width,y+radius,radius);
+      // draw right side and bottom right corner
+      ctx.arcTo(x+width,y+height,x+width-radius,y+height,radius);
+      // draw bottom and bottom left corner
+      ctx.arcTo(x,y+height,x,y+height-radius,radius);
+      // draw left and top left corner
+      ctx.arcTo(x,y,x+radius,y,radius);
+      if(fill){
+        ctx.fill();
+      }
+      if(stroke){
+        ctx.stroke();
+        }
+      }
+      var canvas=document.getElementById(&#39;myCanvas&#39;);
+      var ctx=canvas.getContext(&#39;2d&#39;);
+      ctx.strokeStyle=&#39;rgb(150,0,0)&#39;;
+      ctx.fillStyle=&#39;rgb(0,150,0)&#39;;
+      ctx.lineWidth=7;
+      roundedRect(ctx,15,15,160,120,20,true,true);
+    &lt;/script&gt;
 &lt;/body&gt;
 </code></pre>
 
@@ -10364,7 +10361,7 @@ roundedRect(ctx,15,15,160,120,20,true,true);
   <summary>Click to expand!</summary>
 
 <pre><code>
-1.  var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke) {
+1.   var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke) {
 2.      ctx.beginPath();
 3.  
 4.     // draw top and top right corner
@@ -10384,16 +10381,16 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 18.    if(stroke){
 19.       ctx.stroke();
 20.    }
-21. }
+21.  }
 22. 
-23. var canvas = document.getElementById(&#39;myCanvas&#39;);
-24. var ctx    = canvas.getContext(&#39;2d&#39;);
+23.  var canvas = document.getElementById(&#39;myCanvas&#39;);
+24.  var ctx    = canvas.getContext(&#39;2d&#39;);
 25. 
-26. ctx.strokeStyle = &#39;rgb(150,0,0)&#39;;
-27. ctx.fillStyle   = &#39;rgb(0,150,0)&#39;;
-28. ctx.lineWidth   = 7;
+26.  ctx.strokeStyle = &#39;rgb(150,0,0)&#39;;
+27.  ctx.fillStyle   = &#39;rgb(0,150,0)&#39;;
+28.  ctx.lineWidth   = 7;
 29. 
-30. roundedRect(ctx, 15, 15, 160, 120, 20, true, true);
+30.  roundedRect(ctx, 15, 15, 160, 120, 20, true, true);
 </code></pre>
 
 </details>
@@ -10423,53 +10420,53 @@ a look!</p>
 <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;Comparison between lineTo and arcTo - Example #3&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke)
-{
-ctx.beginPath();
-// draw top and top right corner
-ctx.moveTo(x+radius,y);
-ctx.arcTo(x+width,y,x+width,y+radius,radius);
-// draw right side and bottom right corner
-ctx.arcTo(x+width,y+height,x+width-radius,y+height,radius);
-// draw bottom and bottom left corner
-ctx.arcTo(x,y+height,x,y+height-radius,radius);
-// draw left and top left corner
-ctx.arcTo(x,y,x+radius,y,radius);
-if(fill){
-ctx.fill();
-}
-if(stroke){
-ctx.stroke();
-}
-// Draws the square using lineTo instead of arcTo,
-// just to compare both methods
-ctx.save();
-ctx.strokeStyle=&quot;pink&quot;;
-ctx.lineWidth=3; // ou ce que tu veux
-ctx.beginPath();
-ctx.moveTo(x,y);
-ctx.lineTo(x+width, y);
-ctx.lineTo(x+width, y+height);
-ctx.lineTo(x, y+height);
-ctx.closePath();
-ctx.stroke();
-ctx.restore();
-}
-var canvas=document.getElementById(&#39;myCanvas&#39;);
-var ctx=canvas.getContext(&#39;2d&#39;);
-ctx.strokeStyle=&#39;rgb(150,0,0)&#39;;
-ctx.fillStyle=&#39;rgb(0,150,0)&#39;;
-ctx.lineWidth=7;
-roundedRect(ctx,15,15,160,120,20,true,true);
-&lt;/script&gt;
-&lt;/body&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;
+    &lt;title&gt;Comparison between lineTo and arcTo - Example #3&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id=&quot;myCanvas&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+      var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke)
+      {
+      ctx.beginPath();
+      // draw top and top right corner
+      ctx.moveTo(x+radius,y);
+      ctx.arcTo(x+width,y,x+width,y+radius,radius);
+      // draw right side and bottom right corner
+      ctx.arcTo(x+width,y+height,x+width-radius,y+height,radius);
+      // draw bottom and bottom left corner
+      ctx.arcTo(x,y+height,x,y+height-radius,radius);
+      // draw left and top left corner
+      ctx.arcTo(x,y,x+radius,y,radius);
+      if(fill){
+        ctx.fill();
+      }
+      if(stroke){
+        ctx.stroke();
+      }
+      // Draws the square using lineTo instead of arcTo,
+      // just to compare both methods
+      ctx.save();
+      ctx.strokeStyle=&quot;pink&quot;;
+      ctx.lineWidth=3; // ou ce que tu veux
+      ctx.beginPath();
+      ctx.moveTo(x,y);
+      ctx.lineTo(x+width, y);
+      ctx.lineTo(x+width, y+height);
+      ctx.lineTo(x, y+height);
+      ctx.closePath();
+      ctx.stroke();
+      ctx.restore();
+      }
+      var canvas=document.getElementById(&#39;myCanvas&#39;);
+      var ctx=canvas.getContext(&#39;2d&#39;);
+      ctx.strokeStyle=&#39;rgb(150,0,0)&#39;;
+      ctx.fillStyle=&#39;rgb(0,150,0)&#39;;
+      ctx.lineWidth=7;
+      roundedRect(ctx,15,15,160,120,20,true,true);
+    &lt;/script&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
@@ -10514,41 +10511,41 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;Use the unrounded vertices in arcTo - Example #4&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-var roundedTriangle=function(ctx,x1,y1,x2,y2,x3,y3,radius,fill,stroke)
-{
-ctx.beginPath();
-// start at the middle of the side between x1,y1 and x2,y2
-ctx.moveTo((x1+x2)/2,(y1+y2)/2);
-// go around the x2,y2 vertex
-ctx.arcTo(x2,y2,x3,y3,radius);
-// go around the x3,y3 vertex
-ctx.arcTo(x3,y3,x1,y1,radius);
-// go around the x1,y1 vertex
-ctx.arcTo(x1,y1,x2,y2,radius);
-// and close the triangle with a line to the starting point
-ctx.lineTo((x1+x2)/2,(y1+y2)/2);
-if(fill){
-ctx.fill();
-}
-if(stroke){
-ctx.stroke();
-}
-}
-var canvas=document.getElementById(&#39;myCanvas&#39;);
-var ctx=canvas.getContext(&#39;2d&#39;);
-ctx.strokeStyle=&#39;rgb(150,0,0)&#39;;
-ctx.fillStyle=&#39;rgb(0,150,0)&#39;;
-ctx.lineWidth=7;
-roundedTriangle(ctx,200,15,300,150,15,100,20,true,true);
-&lt;/script&gt;
-&lt;/body&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;
+    &lt;title&gt;Use the unrounded vertices in arcTo - Example #4&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id=&quot;myCanvas&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+      var roundedTriangle=function(ctx,x1,y1,x2,y2,x3,y3,radius,fill,stroke)
+      {
+      ctx.beginPath();
+      // start at the middle of the side between x1,y1 and x2,y2
+      ctx.moveTo((x1+x2)/2,(y1+y2)/2);
+      // go around the x2,y2 vertex
+      ctx.arcTo(x2,y2,x3,y3,radius);
+      // go around the x3,y3 vertex
+      ctx.arcTo(x3,y3,x1,y1,radius);
+      // go around the x1,y1 vertex
+      ctx.arcTo(x1,y1,x2,y2,radius);
+      // and close the triangle with a line to the starting point
+      ctx.lineTo((x1+x2)/2,(y1+y2)/2);
+      if(fill){
+        ctx.fill();
+      }
+      if(stroke){
+        ctx.stroke();
+      }
+      }
+      var canvas=document.getElementById(&#39;myCanvas&#39;);
+      var ctx=canvas.getContext(&#39;2d&#39;);
+      ctx.strokeStyle=&#39;rgb(150,0,0)&#39;;
+      ctx.fillStyle=&#39;rgb(0,150,0)&#39;;
+      ctx.lineWidth=7;
+      roundedTriangle(ctx,200,15,300,150,15,100,20,true,true);
+    &lt;/script&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
@@ -10648,25 +10645,26 @@ call the stroke() method for drawing the curve.</p>
 <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;Lines connected with a quadratic curve - Example #2&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;canvas id=&quot;myCanvas1&quot; height = 400 width=&quot;800&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-var canvas=document.querySelector(&#39;#myCanvas1&#39;);
-var context=canvas.getContext(&#39;2d&#39;);
-context.beginPath();
-context.moveTo(100, 20);
-context.lineTo(200, 80);
-context.quadraticCurveTo(230, 200, 250, 20);
-context.lineTo(500, 90);
-context.lineWidth = 5;
-context.strokeStyle = &quot;#0000ff&quot;;
-context.stroke();
-&lt;/script&gt;
-&lt;/body&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;
+    &lt;title&gt;Lines connected with a quadratic curve - Example #2&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id=&quot;myCanvas1&quot; height = 400 width=&quot;800&quot;&gt;Your browser does not support the 
+	  canvas tag.&lt;/canvas&gt;
+	&lt;script type=&quot;text/javascript&quot;&gt;
+      var canvas=document.querySelector(&#39;#myCanvas1&#39;);
+      var context=canvas.getContext(&#39;2d&#39;);
+      context.beginPath();
+      context.moveTo(100, 20);
+      context.lineTo(200, 80);
+      context.quadraticCurveTo(230, 200, 250, 20);
+      context.lineTo(500, 90);
+      context.lineWidth = 5;
+      context.strokeStyle = &quot;#0000ff&quot;;
+      context.stroke();
+    &lt;/script&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
@@ -10757,9 +10755,9 @@ ctx.restore();
 <h4>CSS source code:</h4>
 
 <pre><code>
-  #myCanvas {
+#myCanvas {
   border: 1px solid black;
-  }
+}
 </code></pre>
 
 <h4>HTML source code:</h4>
@@ -10915,13 +10913,13 @@ interactive applications:</p>
 <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Bézier curve - Example #1&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;canvas id=&quot;myCanvas1&quot; height = 400 width=&quot;800&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-  &lt;script type=&quot;text/javascript&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Bézier curve - Example #1&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id=&quot;myCanvas1&quot; height = 400 width=&quot;800&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
     var canvas=document.querySelector(&#39;#myCanvas1&#39;);
     var context=canvas.getContext(&#39;2d&#39;);
     context.beginPath();
@@ -11408,18 +11406,19 @@ ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
 <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Drawing shapes that do not cover the whole gradient - Example #2 bis&lt;/title&gt;
-&lt;style&gt;
-#myCanvas1 {
-border: 1px solid black;
-}
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;/body&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Drawing shapes that do not cover the whole gradient - Example #2 bis&lt;/title&gt;
+    &lt;style&gt;
+      #myCanvas1 {
+        border: 1px solid black;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body onload=&quot;init();&quot;&gt;
+    &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.
+    &lt;/canvas&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
@@ -14829,7 +14828,7 @@ depending on increments you set in event listeners <i>(lines 23-31)</i>.</p>
 
 <h4>Example #2: draw in a canvas as if you were using a pencil</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 206. draw in a canvas like a pencil (284) --------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 206. draw in a canvas like a pencil (284) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image206.png?raw=true"
@@ -16834,14 +16833,14 @@ easier.</p>
 </details>
 
 <p><i>Lines 12</i> and <i>22</i> shows the form attribute. Make sure that its value matches the id of the form!</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="5-5-3">5.5.3 autocomplete</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This attribute applies either to the &lt;form&gt; element or on individual &lt;input&gt; elements. It specifies when input fields must autocomplete the user’s input based on the user’s typing history. </p>
 <p>Possible values of this attribute: on/off.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 267. bright red on off picture (322) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image267.png?raw=true"
   style="width:16%;"
@@ -16853,18 +16852,18 @@ easier.</p>
 <p>This attribute targets most input types (those that allow typing in them).</p>
 
 <h4>Typical use</h4>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------- 268. example of use of autocomplete attribute (323) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image268.png?raw=true"
   style="width:40%;"
   alt="Example of use of autocomplete attribute." />
 
 <p>Try it in your browser here:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------- 268b. example of use of autocomplete attribute (323) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image268b.png?raw=true"
   width="40%"
@@ -16893,10 +16892,9 @@ easier.</p>
 </code></pre>
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-4">5.5.4 autofocus</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This attribute is useful for transferring the focus to a field other
 than the first field in a page/form (by default the first input field
 has the focus).</p>
@@ -16908,9 +16906,9 @@ the use of  required, placeholder and pattern attributes.</p>
 <p>The required attribute makes the input field invalid if kept empty. </p>
 
 <h4>Here is the result in your browser:</h4>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 269. example use of autofocus attribute (323) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image269.png?raw=true"
   style="width:65%;"
@@ -16976,17 +16974,16 @@ the use of  required, placeholder and pattern attributes.</p>
 </code></pre>
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-5&quot;">5.5.5 list</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This attribute works together with the new &lt;datalist&gt; element we already studied when we saw the color and date input fields.</p>
 <p>This attribute’s value must match the id of a &lt;datalist&gt; element. It is useful for providing local auto-completion to some input fields, or for restricting the possible values on some others like &lt;input type=date&gt; or &lt;input type=color&gt;.</p>
 <p>Here is a small code extract from a more complete example shown in the section about the new &lt;datalist&gt; element (see next unit).</p>
 <p>Please try it in your  browser (Type “F”, “E”, “O”, C” etc., or just click inside the field and use the drop down menu). Note that you can also enter any value; if it does not start with one of these letters it will be accepted but will not trigger auto-completion.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 270. preferred browser and submit query (325) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image270.png?raw=true"
   style="width:65%;"
@@ -17018,9 +17015,9 @@ the use of  required, placeholder and pattern attributes.</p>
 <p>At <i>lines 3</i> and <i>5</i>, the value of the list attribute of
 the input field must match the one of the id of
 the &lt;datalist&gt; element.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-6">5.5.6 pattern</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The pattern attribute enables the validation of the user’s input on
 the fly (also at submission time), based on <b>regular expressions</b>.
 It applies to the text, search, url, tel, email, and password input
@@ -17038,9 +17035,9 @@ href="http://html5pattern.com/Phones" target="_blank" rel="noopener noreferrer">
 <p>You can also try <a href="https://regex101.com/#javascript" target="_blank" rel="noopener noreferrer">this
 online JavaScript RegExps tester</a>, and follow <a
 href="https://regexone.com/" target="_blank" rel="noopener noreferrer">this tutorial about “using JavaScript RegExps”</a> that has step by step exercises and explanations.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------- 271. html5patterns.com: menu left, categories & patterns right (xxx) ------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image271.jpeg?raw=true"
   style="width:65%;"
@@ -17052,9 +17049,9 @@ href="https://regexone.com/" target="_blank" rel="noopener noreferrer">this tuto
 expression that must match the entire string entered in the field. Note
 that the empty string is valid by default (except if
 the required attribute is used - this makes empty fields invalid).</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------------- 271c. typical use (326) ------------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image271c.png?raw=true"
   style="width:65%;"
@@ -17078,18 +17075,18 @@ section of this course dedicated to form validation.</p>
 <p>Try
 this <a href="https://jsbin.com/xeyuqux/1/edit?html,output" target="_blank" rel="noopener noreferrer">online
 example at JSBin</a> or directly in your browser below:</p>
-<!----
+<!--
 Please enter a 3 letter country code (green = valid, pink = invalid): ![](./images/image266.wmf)
---->
+-->
 
 <p>With the previous example, until the value of the input field is
 equal to 3 alphabetic characters, the field is invalid.</p>
 <p>As seen in the previous examples, we used some CSS pseudo classes for
 automatically setting the background-color of the input field as we
 type.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 271b. type multiple email addresses (329) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image271b.png?raw=true"
   style="width:65%;"
@@ -17169,9 +17166,9 @@ type.</p>
 protocols</h4>
 
 <p><a href="https://jsbin.com/nulahey/1/edit?html,output)or" target="_blank" rel="noopener noreferrer">Online example at JSBin</a> try it in your browser:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------- 27x. input type enter url of your repository  () ------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 271b. input type enter url of your repository (###) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image271b.png?raw=true"
   style="width:65%;"
@@ -17189,10 +17186,9 @@ protocols</h4>
 7.      pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]&quot;
 8.  /&gt;
 </code></pre>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-7">5.5.7 min, max and step</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>These attributes are useful for several input types such
 as number, range, date and  time (and other variants).</p>
 <p>The min and max attributes are used to set ranges to input fields
@@ -17224,9 +17220,9 @@ input field types.</p>
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-8">5.5.8 multiple</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The multiple attribute is used with email and file input types. It’s
 a Boolean attribute, so here are the different syntax possibilities:</p>
 
@@ -17246,9 +17242,9 @@ at JSBin</a></p>
 <p>Or try it below in your browser: type in a list of email addresses
 separated by a comma, then look at the input field background color
 (pink = invalid, green = valid), and then submit:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------- 271b. input type email - single or multiple (329) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image271b.png?raw=true"
   style="width:65%;"
@@ -17326,17 +17322,17 @@ buttons, messages):</p>
 <p>                    Select only one file: </p>
 <p>Use the standard key modifiers (shift, control, command) for
 selecting multiple files when the file chooser dialog popup.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-9">5.5.9 a warning</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In the following pages, we present a set of rarely used attributes
 introduced by HTML5. </p>
 <p>You might just glance at them and/or try the examples. The next pages
 cover their usage and you are welcome to use them for future reference
 (for those of you who like to cover the topics completely).</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-10">5.5.10 formaction and formmethod</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>These attributes are targeted to the &lt;input type=“submit”&gt; input fields. They are rarely used.</p>
 
 <pre><code>
@@ -17381,10 +17377,9 @@ the method attribute of the form.</p>
   <li>the first button submits to the default URL specified by the action attribute of the form,</li>
   <li>the second button submits to another action specified by its formaction attribute.</li>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 272. formaction attribute (332) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image072.png?raw=true"
   style="width:40%;"
@@ -17396,16 +17391,16 @@ the method attribute of the form.</p>
   <li><p>the first button submits using a GET,</p></li>
   <li><p>the second button using a POST:</p></li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 273. formmethod attribute (332) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image273.png?raw=true"
   style="width:40%;"
   alt="Example of formmethod attribute." />
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-11">5.5.11 formnovalidate</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The formnovalidate attribute is targeted to the &lt;input
 type=“submit”&gt; input fields. This attribute is rarely used.</p>
 <p>This atrribute allows the submission of a form even if it
@@ -17437,16 +17432,16 @@ JSBin</a>):</p>
 </code></pre>
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 275a. formnovalidate attribute (333) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image275a.png?raw=true"
   alt="Example of formnovalidate attribute."
   style="width:40%;" />
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-12">5.5.12 formtarget</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The formtarget attribute is targeted to the &lt;input
 type=“submit”&gt; input fields. This attribute is rarely used.</p>
 <p>This attribute’s value indicates where the response from the form
@@ -17472,9 +17467,9 @@ submission should be displayed. </p>
 
 <p><a href="https://jsbin.com/godice/2/edit?html,output" target="_blank" rel="noopener noreferrer">Online example
 at JSBin </a>or try it in your browser below:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 276a. formtarget attribute (333) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image276a.png?raw=true"
   alt="Example of formtarget attribute."
@@ -17494,10 +17489,9 @@ at JSBin </a>or try it in your browser below:</p>
 9.             value=&quot;Submit but show results in a new window/tab&quot;&gt;
 10. &lt;/form&gt;
 </code></pre>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-13">5.5.13 formenctype</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A word about the enctype attribute of the &lt;form&gt; element</p>
 <p>The enctype attribute existed before HTML5. It is often used together
 with forms that contain file input fields. For sending files to a remote
@@ -17560,9 +17554,9 @@ the enctype attribute specified in the &lt;form enctype=…&gt; element
 
 <p><a href="https://jsbin.com/lokukam/4/edit?html,output" target="_blank" rel="noopener noreferrer">Try this
 online example at JSBin</a></p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 276. formenctype attribute (335) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image276.png?raw=true"
    alt="Example of use of the formenctype attribute."
@@ -17605,9 +17599,9 @@ online example at JSBin</a></p>
 href="https://jsbin.com/lokukam/4/edit?html,output" target="_blank" rel="noopener noreferrer">this example in the
 JSBin</a> standalone mode (click the black arrow on the top right of the
 output tab, in JSBin), you should see this:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 277. formenctype example in jsbin (335) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image277.png?raw=true"
    alt="JS Bin in standalone mode." />
@@ -17617,9 +17611,9 @@ output tab, in JSBin), you should see this:</p>
 POST request. Once done, click on the right on the “Header” tab to see
 the HTTP headers, and scroll down, you should see the form-data entries
 in the header, like in this screenshot:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------- 278. something went wrong (336) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image278.png?raw=true"
   alt="blank blank."
@@ -17629,9 +17623,9 @@ in the header, like in this screenshot:</p>
 without the formenctype attribute, you should see that the form content
 has been submitted “normally” (default value is “urlencoded”, spaces are
 replaced by “+”, etc.). Here is a screenshot of what you should see:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-6-1">5.6.1 HTML5 Forms Elements</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let’s look at the HTML5 elements related to forms
 (specifically: &lt;datalist&gt;, &lt;output&gt;, &lt;meter&gt; 
 and &lt;progress&gt; elements).</p>
@@ -17695,15 +17689,15 @@ and &lt;progress&gt; elements).</p>
 </tbody>
 </table>
 </div>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-6-2">5.6.2 &lt;output&gt;</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The output element represents the result of a computation or user
 action. You can see it as a “specialized &lt;div&gt; or &lt;span&gt;”
 for displaying interactive results.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------------- 279. output field (337) ------------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image279.jpeg?raw=true"
   alt="Example of output element use."
@@ -17770,9 +17764,9 @@ HTML5 for some input fields such as &lt;input
 type=“range”&gt; and &lt;input type=“number”&gt;, we also encountered
 the valueAsDate properties when we studied &lt;input
 type=“date”&gt;.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-6-3">5.6.3 &lt;meter&gt;</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The &lt;meter&gt; element displays colored bars to represent numeric
 values.</p>
 <p>It can be useful to display a colored gauge to show disk usage, to
@@ -17780,9 +17774,9 @@ highlight the relevance of a query result, or the fraction of a voting
 population that favours a particular candidate, etc. This element is
 often used with the &lt;input type=“range”&gt; field as an instant
 feedback indicator.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------------- 280. blood pressure (338) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image280.jpeg?raw=true"
   alt="Blood pressure meter gauge."
@@ -17834,9 +17828,9 @@ dragging the slider below:</p>
 </code></pre>
 
 <h4>Explanations:</h4>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 281. slider example javascript code (339) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image281.jpeg?raw=true"
   alt="The link between the slider (an &lt;input type=range&gt;) and the meter element is done using an input event handler."
@@ -17894,10 +17888,9 @@ progress bars (i.e., the percentage of a file being uploaded, etc.):</p>
 <pre><code>
 &lt;progress id=pr value=50 min=0 max=100&gt;
 </code></pre>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------- 282.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image282.jpeg?raw=true"
   alt="Picture of the funny progress meme saying Every mistake you make is progress."
@@ -17910,9 +17903,9 @@ bar accordingly.</p>
 <p>If no value attribute is set, the progress bar will display an
 “indeterminate look”, that may slightly vary among different browser
 implementations. </p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------- 283.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image283.jpeg?raw=true"
   alt="Indetermined progress bar screenshot."
@@ -17975,7 +17968,6 @@ type=“range”&gt;.</p>
   src="./images/image227.jpeg?raw=true"
   alt="Restricted choice of color."
   style="width:15%;" />
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------- 286. restricted data list choices (342) ---------------------------->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18011,7 +18003,7 @@ href="https://jsbin.com/tiqexel/1/edit?html,output" target="_blank" rel="noopene
 JSBin</a>, or try it here in your browser (type the name of your
 favorite browser):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------- 288. what is your favorite browser submit query (343) --------------------->
+<!--~~~~~~~~~~~~~~~~~~ 288. what is your favorite browser submit query (343) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image288.png?raw=true"
@@ -18096,7 +18088,7 @@ an <a href="https://jsbin.com/palifuy/edit?html,output" target="_blank" rel="no
 at JSBin</a>, or try it below in your browser:</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 288b. form with custom error messages (344) --------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 288b. form with custom error messages (344) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image288b.png?raw=true"
@@ -18161,9 +18153,9 @@ rules that give visual feedback to the user’s input.</p>
 input fields</p>
 <p>Try this <a href="https://jsbin.com/zaxije/2/edit" target="_blank" rel="noopener noreferrer">online example at
 JSBin</a> or try it here in your browser. This example adds a small icon that changes depending on the validity of the input field:</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------- 289b. last example + css transitions  + icon/marker (345) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 289b. last example + css transitions  + icon/marker (345) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image289b.png?raw=true"
   alt="Custom error messages on form + css ."
@@ -18246,18 +18238,18 @@ simply ignore it.</p>
 will get error message bubbles that show some parts in the local
 language, and the message from the title attribute “as is”.</p>
 <p>Google Chrome on a French desktop computer:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------- 290. chrome shows native error msg and localized (347) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image290.jpeg?raw=true"
   alt="Chrome shows native error message localized and the title attribute content as is."
   style="width:65%;" />
 
 <p>Same example on FireFox, the title attribute is ignored:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------- 291. firefox title attribute (347) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image291.jpeg?raw=true"
   alt="Same example on Firefox, the title attribute is ignored."
@@ -18268,18 +18260,18 @@ HTML5 (i.e., nothing), but additional work is required if you want fully
 localized, hand-made validation feedback.</h4>
 
 <h4>We will show solutions in the last section of this week’s course.</h4>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-7-3&quot;">5.7.3 JavaScript Form Validation API</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There is a JavaScript API for form validation. This API will let you
 use your own validation algorithm (i.e. check that you have entered the
 same password in two different input fields), and customize error
 messages. Also, together with some HTML/CSS/JavaScript you will be able
 to make your own message bubbles.</p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 292b. javascript form validation api (347) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image292b.png?raw=true"
   alt="JavaScript form validation API."
@@ -18289,10 +18281,9 @@ to make your own message bubbles.</p>
 
 <p>Be careful when you try this example in JS Bin standalone mode (click the small black arrow on the top right of the output tab).</p>
 <p>Or, you may try it <a href="https://jsbin.com/nalaxeg/1/edit?html,output" target="_blank" rel="noopener noreferrer">here</a> in your browser.</p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 292c. example use of validation api (347) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image292c.png?raw=true"
   alt="Example use of validation API."
@@ -18363,9 +18354,9 @@ each time a key is typed, the checkPasswords() function is called.</p>
 <i>lines 30-35</i> check if the passwords are the same and set the
 validity of the field using the validation API’s
 method setCustomValidity(error_message).</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-7-4">5.7.4 The validity property of input fields</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The validity property of input fields helps to get error details when
 the field is <i>invalid</i>. This property tests the different types of
 validation error.</p>
@@ -18395,9 +18386,9 @@ validation error.</p>
 example at JSBin that shows how to test the different types of
 validation errors</a>, or you may try it here in your browser (enter bad
 values, too big, too small, enter invalid characters, etc.):</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 292. enter value between 10 and 20 (349) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image292.png?raw=true"
   alt="JSBin example which shows how to test the different types of validation errors."
@@ -18465,14 +18456,14 @@ the validationMessage property of input fields.</p>
 
 <p>This is useful for making custom error messages. More about this
 topic in the next section of the course.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-7-5">5.7.5 Changing the default behavior</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Custom validation: changing the default behavior, aggregating error
 messages, removing bubbles, etc.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------- 293. in french, submit with one or two invalid fields (350) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image293.png?raw=true"
   alt="Custom validation."
@@ -18504,9 +18495,9 @@ further.</p>
 <p>Try the <a href="https://jsbin.com/povekur/1/edit?html,output" target="_blank" rel="noopener noreferrer">online
 example at JSBin,</a> or try it here in your browser: enter invalid
 values and submit with one or two invalid fields.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 294. name and e-mail fields (351) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image294.png?raw=true"
   alt="Prompt for name and e-mail address fields."
@@ -18639,9 +18630,9 @@ values and submit with one or two invalid fields.</p>
   <li><i>Line 86</i>: Then we add this list element (a formatted error message corresponding to an invalid input field) to the error message container,</li>
   <li><i>Lines 90-93</i>: The focus is given to the first invalid field that shows an error message.</li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-1-1">6.1.1 Introduction Basic APIs – Module 6</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Final week!</p>
 <p>Congratulations to all of you. Here, it’s summer and it’s hot, it’s
 time to get holidays, but before that we need to finish the course. I’m
@@ -18671,9 +18662,9 @@ country, you can guess that automatically and propose the form that is
 already filled with the address. I really enjoyed teaching you this
 HTML5 basic course and I’m looking forward to meeting you the next HTML5
 part-2 course that would address more advanced topics</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="6-1-2">6.1.2 HTML5 JavaScript APIs</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>We have already studied some of the HTML5 JavaScript APIs,
 including:</p>
 
@@ -18696,9 +18687,9 @@ covered in the <a href="https://www.edx.org/course/html5-apps-and-games" target
   <li><b>The “Web Storage” API, sort of “super cookies”, for storing pairs of key/values client side.</b> This API is useful for enabling Web sites to save/restore their state, or for writing <i>serverless</i> applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.<br></li>
   <li><b>The File API, that enables Web applications to work with local files</b>. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.</li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 295. 'you are here' sign (354) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 295. 'you are here' sign (354) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image295.jpeg?raw=true"
   alt="You are here sign."
@@ -18707,9 +18698,9 @@ covered in the <a href="https://www.edx.org/course/html5-apps-and-games" target
 <ul>
   <li><b>The Geolocation API for obtaining data such as longitude, latitude, altitude (when available), and speed</b>. You will learn how to write applications in combination with interactive maps. You will also learn how to guess the address of a user, for example for pre-filling a registration form with the city, country, and zip code that corresponds with the current location.</li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2-1">6.2.1 The Web storage API</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Web storage API introduces “two related mechanisms, similar to
 HTTP session cookies, for storing structured data on the client
 side”.</p>
@@ -18723,9 +18714,9 @@ closed.</b></p>
 <p>For convenience, we will mainly illustrate the localStorage object. Just
 change “local” to “session” and it should work (this time with a session
 lifetime).</p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 296. key value pairs (354) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 296. key value pairs (354) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image296.png?raw=true"
   alt="Key value pairs."
