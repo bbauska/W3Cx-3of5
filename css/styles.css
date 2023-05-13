@@ -7,7 +7,7 @@
     border-color: #778899;  /* dark grayish blue */
     border-style: solid; }
 
-font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", 
+font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", 
   "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 
   p { font-size: 15px;
@@ -53,15 +53,15 @@ font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucid
     float: left; }
 
   h1 { font-size: 21px;
-       font-family: Inter, Georgia, BahnSchrift, sans-serif, Consolas; }
+       font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; }
   h2 { font-size: 18px;
-       font-family: Inter, Georgia, BahnSchrift, sans-serif, Consolas; }
+       font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; }
   h3 { font-size: 17px;
-       font-family: Inter, Georgia, BahnSchrift, sans-serif, Consolas; }
+       font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; }
   h4 { font-size: 16px;
-       font-family: Inter, Georgia, BahnSchrift, sans-serif, Consolas; }
+       font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; }
   h5 { font-size: 15px;
-       font-family: Bahnschrift, Inter, Helvetic, sans-serif; }
+       font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; }
   h6 { font-size: 10px;
 	  font-family: Bahnschrift, Inter, Helvetic, sans-serif; }
 
@@ -158,4 +158,3 @@ body {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #398e41;} /* dark moderate lime green */
-
