@@ -13909,79 +13909,78 @@ We use the drawMonster() function:
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>setInterval and monster animation</title>
-<style>
-<style>
-#myCanvas {
-border: 1px solid black;
-}
-</style>
+  <meta charset="utf-8">
+  <title>setInterval and monster animation</title>
+  <style>
+    #myCanvas {
+    border: 1px solid black;
+    }
+  </style>
 </head>
 <body onload="init();">
-<canvas id="myCanvas" width="400" height="400">
-Your browser does not support the canvas tag.
-</canvas>
+  <canvas id="myCanvas" width="400" height="400">
+    Your browser does not support the canvas tag.
+  </canvas>
 <p>
-<button onclick="start()">Start animation</button>
-<button onclick="stop()">Stop animation</button>
-<script>
-var canvas, ctx;
-var monsterX=100, monsterY=100, monsterAngle=0;
-function init() {
-// This function is called after the page is loaded
-// 1 - Get the canvas
-canvas = document.getElementById('myCanvas');
-// 2 - Get the context
-ctx=canvas.getContext('2d');
-}
-function animationLoop() {
-// 1 - Clear the canvas
-ctx.clearRect(0, 0, canvas.width, canvas.height);
-// 2 Draw the monster using variables for pos, angle, etc.
-drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
-// 3 Move the monster (change pos, angle, size, etc.)
-monsterX += 10;
-monsterX %= canvas.width
-monsterAngle+= 0.01;
-}
-function drawMonster(x, y, angle, headColor, eyeColor) {
-// GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
-ctx.save();
-// Moves the coordinate system so that the monster is drawn
-// at position (x, y)
-ctx.translate(x, y);
-ctx.rotate(angle)
-// head
-ctx.fillStyle=headColor;
-ctx.fillRect(0,0,200,200);
-// eyes
-ctx.fillStyle='red';
-ctx.fillRect(35,30,20,20);
-ctx.fillRect(140,30,20,20);
-// interior of eye
-ctx.fillStyle=eyeColor;
-ctx.fillRect(43,37,10,10);
-ctx.fillRect(143,37,10,10);
-// Nose
-ctx.fillStyle='black';
-ctx.fillRect(90,70,20,80);
-// Mouth
-ctx.fillStyle='purple';
-ctx.fillRect(60,165,80,20);
-// GOOD PRACTICE !
-ctx.restore();
-}
-function start() {
-// Start the animation loop, change 20 for bigger values
-requestId = setInterval(animationLoop, 20);
-}
-function stop() {
-if (requestId) {
-clearInterval(requestId);
-}
-}
-</script>
+  <button onclick="start()">Start animation</button>
+  <button onclick="stop()">Stop animation</button>
+  <script>
+    var canvas, ctx;
+    var monsterX=100, monsterY=100, monsterAngle=0;
+    function init() {
+      // This function is called after the page is loaded
+      // 1 - Get the canvas
+      canvas = document.getElementById('myCanvas');
+      // 2 - Get the context
+      ctx=canvas.getContext('2d');
+      }
+    function animationLoop() {
+      // 1 - Clear the canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      // 2 Draw the monster using variables for pos, angle, etc.  
+      drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
+      // 3 Move the monster (change pos, angle, size, etc.)
+      monsterX += 10;
+      monsterX %= canvas.width
+      monsterAngle+= 0.01;
+    }
+    function drawMonster(x, y, angle, headColor, eyeColor) {
+      // GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
+      ctx.save();
+      // Moves the coordinate system so that the monster is drawn
+      // at position (x, y)
+      ctx.translate(x, y);
+      ctx.rotate(angle)
+      // head
+      ctx.fillStyle=headColor;
+      ctx.fillRect(0,0,200,200);
+      // eyes
+      ctx.fillStyle='red';
+      ctx.fillRect(35,30,20,20);
+      ctx.fillRect(140,30,20,20);
+      // interior of eye
+      ctx.fillStyle=eyeColor;
+      ctx.fillRect(43,37,10,10);
+      ctx.fillRect(143,37,10,10);
+      // Nose
+      ctx.fillStyle='black';
+      ctx.fillRect(90,70,20,80);
+      // Mouth
+      ctx.fillStyle='purple';
+      ctx.fillRect(60,165,80,20);
+      // GOOD PRACTICE !
+      ctx.restore();
+    }
+    function start() {
+      // Start the animation loop, change 20 for bigger values
+      requestId = setInterval(animationLoop, 20);
+    }
+    function stop() {
+      if (requestId) {
+        clearInterval(requestId);
+      }
+    }
+  </script>
 </body>
 </html>
 ```
@@ -13995,31 +13994,31 @@ clearInterval(requestId);
 
 ```
 1.  <body onload="init();">
-2.      <canvas id="myCanvas" width="400" height="400">
-3.          Your browser does not support the canvas tag.
-4.      </canvas>
-5.      <p>
+2.    <canvas id="myCanvas" width="400" height="400">
+3.      Your browser does not support the canvas tag.
+4.    </canvas>
+5.    <p>
 6.      <button onclick="start()">Start animation</button>
 7.      <button onclick="stop()">Stop animation</button>
 8.  
 9.      <script>
-10.         var canvas, ctx;
-11.         var monsterX=100, monsterY=100, monsterAngle=0;
+10.       var canvas, ctx;
+11.       var monsterX=100, monsterY=100, monsterAngle=0;
 12. 
-13.         function init() {
-14.             // This function is called after the page is loaded
-15.             // 1 - Get the canvas
-16.             canvas = document.getElementById('myCanvas');
-17.             // 2 - Get the context
-18.             ctx=canvas.getContext('2d');
-19.         }
+13.       function init() {
+14.         // This function is called after the page is loaded
+15.         // 1 - Get the canvas
+16.         canvas = document.getElementById('myCanvas');
+17.         // 2 - Get the context
+18.         ctx=canvas.getContext('2d');
+19.       }
 20. 
-21.         function animationLoop() {
-22.             // 1 - Clear the canvas
-23.             ctx.clearRect(0, 0, canvas.width, canvas.height);
+21.       function animationLoop() {
+22.         // 1 - Clear the canvas
+23.         ctx.clearRect(0, 0, canvas.width, canvas.height);
 24. 
-25.             // 2 Draw the monster using variables for pos, angle, etc.
-26.            drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
+25.         // 2 Draw the monster using variables for pos, angle, etc.
+26.         drawMonster(monsterX, monsterY, monsterAngle, 'green', 'yellow');
 27. 
 28.            // 3 Move the monster (change pos, angle, size, etc.)
 29.            monsterX += 10;
@@ -14043,19 +14042,19 @@ clearInterval(requestId);
 47. 
 48.         // BEST PRACTICE!
 49.         ctx.restore();
-50.      }
+50.       }
 51. 
-52.      function start() {
-53.          // Start the animation loop, change 20 for bigger values
-54.          requestId = setInterval(animationLoop, 20);
-55.      }
+52.       function start() {
+53.         // Start the animation loop, change 20 for bigger values
+54.         requestId = setInterval(animationLoop, 20);
+55.       }
 56. 
-57.      function stop() {
-58.          if (requestId) {
-59.              clearInterval(requestId);
-60.          }
-61.      }
-62. </script>
+57.       function stop() {
+58.         if (requestId) {
+59.           clearInterval(requestId);
+60.         }
+61.       }
+62.     </script>
 63. </body>
 ```
 
@@ -15560,15 +15559,15 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 
 ```
 1.  <script>
-2.  ...
-3.  function resizeCanvas() {
-4.       canvas.width = 300;
-5.  }
+2.    ...
+3.    function resizeCanvas() {
+4.      canvas.width = 300;
+5.    }
 6.   
 7.  </script>
 8.  ...
 9.  <button onclick="resizeCanvas();">
-10.     Click this button to resize the canvas and erase it!
+10.   Click this button to resize the canvas and erase it!
 11. </button>
 ```
 
@@ -15589,14 +15588,13 @@ This time we are using a similar example as above, but we removed the button fo
 <br/>
 
 Then, we added this CSS rule:
-
-<!------------------------------------------------------------------------------------------------>
-<!----------- 210. (286) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 210.  (286) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image210.png?raw=true"
    width="45%"
-   alt="." />
+   alt="image210.png." />
 &nbsp;
 <br/>
 
@@ -15630,10 +15628,9 @@ This is the trick to create a really responsive canvas:
 5.  Redraw the content, scaled accordingly to the size of the parent.
 
 Yep, this is not a straightforward process...
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------- 211. div and canvas inside; div has css width=100% and height=50% (287) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image211.jpeg?raw=true"
   width="65%"
@@ -15645,7 +15642,7 @@ Yep, this is not a straightforward process...
 
 ```
 1.  <div id="parentDiv">
-2.      <canvas id="myCanvas" width="100" height="100" ></canvas>
+2.    <canvas id="myCanvas" width="100" height="100" ></canvas>
 3.  </div>
 ```
 
@@ -15698,10 +15695,9 @@ function resizeCanvasAccordingToParentSize() {
 </details>
 
 <h4>See the complete example that corresponds to the above code:</h4>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------------- 212.  (288) -------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image212.png?raw=true"
   width="55%"
@@ -15710,10 +15706,9 @@ function resizeCanvasAccordingToParentSize() {
 <br/>
 
 <h4>Example #4: the same example with the monster</h4>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------------- 213. (288) -------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image213.png?raw=true"
   width="55%"
@@ -15754,11 +15749,9 @@ The code is very similar to the previous example, we just replaced drawDiagonal
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3-5">4.3.5 Advanced Canvas</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The canvas API is a "big beast", and we have presented all the essential techniques for drawing and animating. However, we could not fit everything in this course. Exotic features that are rarely used by developers, or advanced techniques that require more than 20 lines of JavaScript, have been put aside for [the W3Cx HTML5 Apps and Games course](https://www.edx.org/course/html5-apps-and-games).
 
 In that course, you will learn:
@@ -15775,20 +15768,18 @@ In that course, you will learn:
   <li>Small game framework / object oriented JavaScript / advanced event handling / collision detection / time based animation - see <a href="https://jsbin.com/jifutoj/1/edit?html,js,console,output">example online</a>.</li>
   <li>Sprite based animation: like this <a href="https://jsbin.com/libakum/1/edit?html,js,console,output">one</a> (this is ugly code to demonstrate the principle - in the course we develop a clean, sprite animation framework). Use the arrow keys after clicking in the canvas. It's better to try in standalone mode (click on the small black arrow in the top right of the JSBin window).</li><br/>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------------- 214. sprite sheet (289) ------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image214.png?raw=true"
   width="35%"
   alt="Sprite sheet." />
 &nbsp;
 <br/>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-1-1">5.1.1 Video Intro - Module 5</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Congratulations! You made it to module 5.
 
@@ -15805,11 +15796,9 @@ However, JavaScript validation API is also available for people who would like t
 These additions are very handy when used on mobile devices but raised many critics from Web designers, mainly related to their desktop implementations.
 
 The course discusses all the cases and recommend solutions and good practices. Of course, like usual, many examples will be provided that you can run directly this time in the course pages, but also as standalone examples hosted on the JS Bin Web site. If you try to modify them or creates your own examples, please share in the discussion forums as usual. Have fun!
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2-1">5.2.1 Introduction</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 With HTML5, forms, which had shown little improvement since 1997, evolved considerably.  To achieve this, Web developers relied on many popular JavaScript frameworks for validating input formats, providing various input GUIs, such as calendars for dates, sliders, etc. Frameworks such as jQueryUI, Dojo, and Sencha, all provide a widget set for improving forms. Furthermore, it was time to take into account the specifics of mobile web applications, where the GUI of a date chooser cannot be the same as a 400x400 pixel wide calendar on a desktop. Contextual virtual keyboards provided the way forward on smartphones and tablets thanks to Apple, Google and others.
 
 HTML5 took all this into account and thus provides:
@@ -15827,32 +15816,27 @@ In the examples, we can see: email, URL, and phone number. Look at the differen
 -   From the specification: <a href="https://html.spec.whatwg.org/multipage/forms.html">Forms</a>
 
 -   From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">&lt;form&gt;</a>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2-2">5.2.2 Example</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There is a lot of course content covered this week, and before we get into all the details of the elements and attributes introduced by HTML5, we suggest playing with running examples of full featured forms.
 
 This example was created by a learner (by Mels Le N.) from a previous version of this course.
 It uses the geolocation API presented in Module 6 for auto-filling the address input fields.
 
 Feel free to look at the source code in the <a href="https://jsbin.com/sivula/edit"?online example</a>:
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------- 215. auto-fill address input (291) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image215.jpeg?raw=true"
    width="45%"
    alt="Geo-location API is used to auto-fill address input." />
 &nbsp;
 <br/>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2-3">5.2.3 Input Elements and Attributes</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Live coding video 1: using input elements as widgets to control a Web application</h4>
 
 <here>
@@ -15881,10 +15865,9 @@ GUI: Graphical User Interface
 
 -   <a href="https://jsbin.com/ralonem/1/edit?html,js,output">Final version with different types of charts and a GUI</a> (see screenshot below)
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2-4">5.2.4 Best Practices</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Live coding video 3: HTML5 forms - best practices</h4>
 
 &lt;here&gt;
@@ -15907,20 +15890,18 @@ The example shown in the video shows some best practices for writing accessible 
 
 The following additional example shows the same best practices but presents a more complete form with CSS rules to make a nice layout. See it [online](https://jsbin.com/zubitex/1/edit?html,output), and illustrated with the screenshot below. It is adapted from <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form">this very good MDN's article "How to structure a web form"</a>.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------- 216. payment form layout example (294) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image216.jpeg?raw=true"
   width="35%"
   alt="Payment form layout example." />
 &nbsp;
 <br/>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-3-1">5.3.1 Accessible Forms</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Forms are commonly used to enable user interaction in Web sites and Web applications. For example, they are used for login, registering, commenting, and purchasing.
 
 Since HTML5 provides functionalities to assist with accessibility, developers should make a concerted effort to mark up Web based forms. The following two guidelines are to give you a good start to make your forms accessible:
@@ -15934,11 +15915,9 @@ Examples for each of these two basic guidelines are given in the following pages
 <h4>Further reading</h4>
 
 The WAI Web site hosts a <a href="https://www.w3.org/WAI/tutorials/forms/">Forms tutorial</a> where to find all guidelines to follow in order to make your forms truly accessible: labeling controls, grouping controls, form instructions, validating input, user notifications, multi-page forms, and custom controls.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-3-2">5.3.2 Why is this Important?</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Forms can be visually and cognitively complex and difficult to use. Accessible forms are easier to use for everyone, including people with disabilities.
 
 -   People with cognitive disabilities can better understand the form and how to complete it, as making forms accessible improves the layout structure, instructions, and feedback.
@@ -15949,17 +15928,16 @@ Forms can be visually and cognitively complex and difficult to use. Accessible f
 
 -   People using screen readers can identify and understand form controls more easily because they are associated with labels, field sets, and other structural elements.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-3-3">5.3.3 Labeling Controls</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Labels need to describe the purpose of the form control</h4>
 
 Form fields and other form controls usually have visible labels, such as "E-mail Address:" as the label for a text field (see figure below).
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 217. e-mail form label text (295) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image217.png?raw=true"
   width="25%"
@@ -15976,10 +15954,9 @@ Whenever possible, use the label element to explicitly associate text with for
 <h4>Example #1</h4>
 
 Click on the label, not on the input field to see the effect.
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 218. example 1 first name (296) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 218. example 1 first name (296) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image218.png?raw=true"
   width="25%"
@@ -16009,9 +15986,9 @@ Note that you can also include the &lt;input&gt; element inside the &lt;label
 Click on the label "Subscribe to newsletter" to see what this does.
 </p>
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 219. example 3 first name / subscribe checkbox (296) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 219. example 3 first name / subscribe checkbox (296) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image219.png?raw=true"
   width="25%"
@@ -21099,9 +21076,9 @@ display: inline-block;
   <li>The rest is a basic use of the Leaflet API. Notice at <i>line 15</i> that 'map' is the id of the &lt;div&gt; from the HTML part of the code.</li>
 </ul>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-6">6.4.6 Reverse geocoding</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 Different Web services can be used to get an address from longitude and latitude. Most are free of charge, but they will ask you to register an API key and enter your credit card number. If you send too many requests, you will be charged.  Such a service is the <a href="https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse">Google Reverse Geocoding JavaScript API</a>. For those of you who are really interested to know how this API works, please read the Google documentation and tutorials.
 
@@ -21112,9 +21089,9 @@ Let's see some examples of use.
 Example #1: how to get a physical address from the longitude and latitude
 
 Google reverse geocoding example (screenshot only):</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 330. google reverse geocoding example (396) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image330.png?raw=true"
   width="45%"
@@ -21215,9 +21192,9 @@ function showPosition(position) {
 
 Gisgraphy (free service) reverse geocoding example (screenshot only, click on it to see [the demo on the Gisgraphy website](https://services.gisgraphy.com/static/leaflet/index.html)):
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 331. gisgraphy screenshot (398) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 331. gisgraphy screenshot (398) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image331.png?raw=true"
   width="65%"
@@ -21229,9 +21206,9 @@ Gisgraphy (free service) reverse geocoding example (screenshot only, click on it
 <p><b>Important note:</b> these examples below rely on an external <a href="https://github.com/perliedman/leaflet-control-geocoder">GitHub resource</a>. No related questions are asked in this module's exercises or final exam.
 
 Please, pan and zoom on the map and click. The longitude and latitude are computed from your click and a free reverse geocoding service is used to convert to a physical address.</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 332. reverse geocoding - openstreetmap (398) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 332. reverse geocoding - openstreetmap (398) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image332.png?raw=true"
   width="65%"
