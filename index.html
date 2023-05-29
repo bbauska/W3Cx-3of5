@@ -20931,72 +20931,73 @@ href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" 
   &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta
-  name=&quot;viewport&quot;
-  content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot;
-  /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; /&gt;
+    name=&quot;viewport&quot;
+    content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot;
+    /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css
+    &quot; /&gt;
   &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
   &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
   &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
   &lt;style type=&quot;text/css&quot;&gt;
-  body {
-  margin: 0;
-  }
-  #map {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    body {
+      margin: 0;
     }
-    &lt;/style&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
-    &lt;script type=&quot;text/javascript&quot;&gt;
-    var map = L.map(&#39;map&#39;).setView([0, 0], 2);
-    var geocoder = L.Control.Geocoder.nominatim();
-    if (URLSearchParams &amp;&amp; location.search) {
+    #map {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+  var map = L.map(&#39;map&#39;).setView([0, 0], 2);
+  var geocoder = L.Control.Geocoder.nominatim();
+  if (URLSearchParams &amp;&amp; location.search) {
     // parse /?geocoder=nominatim from URL
     var params = new URLSearchParams(location.search);
     var geocoderString = params.get(&#39;geocoder&#39;);
     if (geocoderString &amp;&amp; L.Control.Geocoder[geocoderString]) {
-    console.log(&#39;Using geocoder&#39;, geocoderString);
-    geocoder = L.Control.Geocoder[geocoderString]();
+      console.log(&#39;Using geocoder&#39;, geocoderString);
+      geocoder = L.Control.Geocoder[geocoderString]();
     } else if (geocoderString) {
-    console.warn(&#39;Unsupported geocoder&#39;, geocoderString);
+      console.warn(&#39;Unsupported geocoder&#39;, geocoderString);
     }
-    }
-    var control = L.Control.geocoder({
+  }
+  var control = L.Control.geocoder({
     query: &#39;Moon&#39;,
     placeholder: &#39;Search here...&#39;,
     geocoder: geocoder
-    }).addTo(map);
-    var marker;
-    setTimeout(function() {
+  }).addTo(map);
+  var marker;
+  setTimeout(function() {
     control.setQuery(&#39;Earth&#39;);
-    }, 12000);
-    L.tileLayer(&#39;https://{s}.tile.osm.org/{z}/{x}/{y}.png&#39;, {
+  }, 12000);
+  L.tileLayer(&#39;https://{s}.tile.osm.org/{z}/{x}/{y}.png&#39;, {
     attribution: &#39;&amp;copy; &lt;a href=&quot;https://osm.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;
-    }).addTo(map);
-    map.on(&#39;click&#39;, function(e) {
+  }).addTo(map);
+  map.on(&#39;click&#39;, function(e) {
     console.log(e.latlng)
     geocoder.reverse(e.latlng, map.options.crs.scale(map.getZoom()), function(results) {
-    var r = results[0];
-    if (r) {
-    if (marker) {
-    marker
-    .setLatLng(r.center)
-    .setPopupContent(r.html || r.name)
-    .openPopup();
-    } else {
-    marker = L.marker(r.center)
-    .bindPopup(r.name)
-    .addTo(map)
-    .openPopup();
-    }
-    }
+      var r = results[0];
+      if (r) {
+        if (marker) {
+          marker
+          .setLatLng(r.center)
+          .setPopupContent(r.html || r.name)
+          .openPopup();
+        } else {
+          marker = L.marker(r.center)
+          .bindPopup(r.name)
+          .addTo(map)
+          .openPopup();
+        }
+      }
     });
-    });
-    &lt;/script&gt;
+  });
+  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
@@ -21088,8 +21089,8 @@ href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" 
    });
   }
   getLocation();
-&lt;/script&gt;
-  &lt;/body&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 </pre>
 
@@ -21219,6 +21220,6 @@ good understanding of the material.</p>
 </ul>
 
 <h5>. . .The end.<br>
-<br>last updated 05-10-23 12:43pm</h5>
+<br>last updated 05-29-23 12:54am</h5>
   </body>
 </html>
