@@ -1623,23 +1623,23 @@ table</a> on CanIUse and <a href="https://developer.mozilla.org/en-US/docs/Web
 2.  
 3.  &lt;main&gt;
 4.  
-5.     &lt;h1&gt;Skateboards&lt;/h1&gt;
-6.     &lt;p&gt;The skateboard helps kids to get around.&lt;/p&gt;
+5.    &lt;h1&gt;Skateboards&lt;/h1&gt;
+6.    &lt;p&gt;The skateboard helps kids to get around.&lt;/p&gt;
 7.  
-8.     &lt;article&gt;
-9.        &lt;h2&gt;Longboards&lt;/h2&gt;
-10.       &lt;p&gt;Longboards are a type of skateboard with a longer
-11. wheelbase and larger, softer wheels.&lt;/p&gt;
-12.       &lt;p&gt;... &lt;/p&gt;
-13.       &lt;p&gt;... &lt;/p&gt;
-14.    &lt;/article&gt;
+8.    &lt;article&gt;
+9.      &lt;h2&gt;Longboards&lt;/h2&gt;
+10.     &lt;p&gt;Longboards are a type of skateboard with a longer
+11.       wheelbase and larger, softer wheels.&lt;/p&gt;
+12.     &lt;p&gt;... &lt;/p&gt;
+13.     &lt;p&gt;... &lt;/p&gt;
+14.   &lt;/article&gt;
 15. 
-16.    &lt;article&gt;
-17.       &lt;h2&gt;Electric Skateboards&lt;/h2&gt;
-18.       &lt;p&gt;These no longer require the propelling of the skateboard by means of the feet; rather an electric motor propels the board, fed by an electric battery.&lt;/p&gt;
-19.       &lt;p&gt;... &lt;/p&gt;
-20.       &lt;p&gt;... &lt;/p&gt;
-21.    &lt;/article&gt;
+16.   &lt;article&gt;
+17.     &lt;h2&gt;Electric Skateboards&lt;/h2&gt;
+18.     &lt;p&gt;These no longer require the propelling of the skateboard by means of the feet; rather an electric motor propels the board, fed by an electric battery.&lt;/p&gt;
+19.     &lt;p&gt;... &lt;/p&gt;
+20.     &lt;p&gt;... &lt;/p&gt;
+21.   &lt;/article&gt;
 22. 
 23. &lt;/main&gt;
 24.  
@@ -12234,12 +12234,12 @@ imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Repeatability of a pattern - Example #2&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Repeatability of a pattern - Example #2&lt;/title&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;1000&quot; height=&quot;1000&quot;&gt;
-Your browser does not support the canvas tag. &lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;1000&quot; height=&quot;1000&quot;&gt;
+    Your browser does not support the canvas tag. &lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
@@ -12302,42 +12302,42 @@ beginning of this page is the following:</p>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;A multiple image loader&lt;/title&gt;
-&lt;style&gt;
-#myCanvas {
-border: 1px solid black;
-}
-&lt;/style&gt;
-&lt;script&gt;
-var canvas, ctx;
-// List of images to load, we used a JavaScript object instead of
-// an array, so that named indexes (aka properties)
-// can be used -&gt; easier to manipulate
-var imagesToLoad = {
-flowers: https://i.ibb.co/4NN9Sgn/flowers.jpg,
-lion: https://i.ibb.co/3NyqKnY/lion.jpg,
-blackAndWhiteLys: https://i.ibb.co/VNLVpcL/final.jpg,
-tiledFloor:
-https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg{
-};
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;A multiple image loader&lt;/title&gt;
+  &lt;style&gt;
+    #myCanvas {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
+  &lt;script&gt;
+  var canvas, ctx;
+  // List of images to load, we used a JavaScript object instead of
+  // an array, so that named indexes (aka properties)
+  // can be used -&gt; easier to manipulate
+  var imagesToLoad = {
+    flowers: https://i.ibb.co/4NN9Sgn/flowers.jpg,
+    lion: https://i.ibb.co/3NyqKnY/lion.jpg,
+    blackAndWhiteLys: https://i.ibb.co/VNLVpcL/final.jpg,
+    tiledFloor:
+    https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg{
+  };
 function loadImages(imagesToBeLoaded, drawCallback) {
 var imagesLoaded = {};
 var loadedImages = 0;
 var numberOfImagesToLoad = 0;
-// get num of sources
-for(var name in imagesToBeLoaded) {
-numberOfImagesToLoad++;
-}
-for(var name in imagesToBeLoaded) {
-imagesLoaded[name] = new Image();
-imagesLoaded[name].onload = function() {
-if(++loadedImages &gt;= numberOfImagesToLoad) {
-drawCallback(imagesLoaded);
-} // if
-}; // function
-imagesLoaded[name].src = imagesToBeLoaded[name];
-} // for
+  // get num of sources
+  for(var name in imagesToBeLoaded) {
+    numberOfImagesToLoad++;
+  }
+  for(var name in imagesToBeLoaded) {
+    imagesLoaded[name] = new Image();
+    imagesLoaded[name].onload = function() {
+      if(++loadedImages &gt;= numberOfImagesToLoad) {
+        drawCallback(imagesLoaded);
+      } // if
+    }; // function
+    imagesLoaded[name].src = imagesToBeLoaded[name];
+  } // for
 } // function
 function init() {
 // This function is called after the page is loaded
@@ -12361,13 +12361,13 @@ ctx.fillRect(200,0,200,200);
 ctx.fillStyle=patternFlowers;
 ctx.fillRect(0,200,200,200);
 ctx.fillStyle=patternBW;
-ctx.fillRect(200,200,200,200);
-}
-&lt;/script&gt;
+  ctx.fillRect(200,200,200,200);
+  }
+  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
-Your browser does not support the canvas tag.
+  Your browser does not support the canvas tag.
 &lt;/canvas&gt;
 &lt;/body&gt;
 </pre>
@@ -12460,17 +12460,17 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 
 <pre>
 1.  function drawRectanglesWithPatterns() {
-2.      ctx.fillStyle=patternFloor;
-3.      ctx.fillRect(0,0,200,200);
+2.    ctx.fillStyle=patternFloor;
+3.    ctx.fillRect(0,0,200,200);
 4.  
-5.      ctx.fillStyle=patternLion;
-6.      ctx.fillRect(200,0,200,200);
+5.    ctx.fillStyle=patternLion;
+6.    ctx.fillRect(200,0,200,200);
 7.  
-8.      ctx.fillStyle=patternFlowers;
-9.      ctx.fillRect(0,200,200,200);
+8.    ctx.fillStyle=patternFlowers;
+9.    ctx.fillRect(0,200,200,200);
 10.  
-11.     ctx.fillStyle=patternBW;
-12.     ctx.fillRect(200,200,200,200);
+11.   ctx.fillStyle=patternBW;
+12.   ctx.fillRect(200,200,200,200);
 13. }
 </pre>
 
