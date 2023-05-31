@@ -21064,31 +21064,31 @@ href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" 
       // Popup in leaflet
       marker.bindPopup(&#39;&lt;p&gt;&lt;/p&gt;&#39;).openPopup();
       getPhysicalAddress({lat:latitude, lng:longitude});
-      }
+    }
     // Get current position fail
-  function error() {
-    alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+    function error() {
+      alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
     }
     var marker;
-  function getPhysicalAddress(latlong) {
-    geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
-    var r = results[0];
-    if (r) {
-    if (marker) {
-    marker
-    .setLatLng(r.center)
-    .setPopupContent(r.html || r.name)
-    .openPopup();
-      } else {
-    marker = L.marker(r.center)
-    .bindPopup(r.name)
-    .addTo(map)
-    .openPopup();
+    function getPhysicalAddress(latlong) {
+      geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
+      var r = results[0];
+        if (r) {
+          if (marker) {
+            marker
+             .setLatLng(r.center)
+             .setPopupContent(r.html || r.name)
+             .openPopup();
+          } else {
+              marker = L.marker(r.center)
+             .bindPopup(r.name)
+             .addTo(map)
+             .openPopup();
+          }
+        }
+      });
     }
-      }
-   });
-  }
-  getLocation();
+    getLocation();
   &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
@@ -21151,48 +21151,48 @@ this page):</p>
       }
     // Get current position successfully
     function success(position) {
-    latitude = position.coords.latitude;
-    longitude = position.coords.longitude;
-    // Instance map using leaflet
-    map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
-    // Tile layer using key api at cloudmade.com
-  L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}{x}{y}.png&#39;, {
-  key: &#39;760506895e284217a7442ce2efe97797&#39;,
-  styleId: 103288,
-  maxZoom: 16
-  }).addTo(map);
-  // Marker using leaflet
-  marker = L.marker([latitude, longitude]).addTo(map);
-  // Popup in leaflet
-  marker.bindPopup(&#39;&lt;p&gt;&lt;/p&gt;&#39;).openPopup();
-  getPhysicalAddress({lat:latitude, lng:longitude});
-}
-// Get current position fail
-function error() {
-  alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
-}
-var marker;
-function getPhysicalAddress(latlong) {
-  geocoder.reverse(latlong, 500000, function(results) {
-  var r = results[0];
-  console.log(r.name);
-  document.querySelector(&quot;#surfaceAddress&quot;).value = r.name;
-  if (r) {
-    if (marker) {
-    marker
-      .setLatLng(r.center)
-      .setPopupContent(r.html || r.name)
-      .openPopup();
-    } else {
-      marker = L.marker(r.center)
-      .bindPopup(r.name)
-      .addTo(map)
-      .openPopup();
-      }
-      }
-      });
+      latitude = position.coords.latitude;
+      longitude = position.coords.longitude;
+      // Instance map using leaflet
+      map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
+      // Tile layer using key api at cloudmade.com
+      L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}{x}{y}.png&#39;, {
+        key: &#39;760506895e284217a7442ce2efe97797&#39;,
+        styleId: 103288,
+        maxZoom: 16
+      }).addTo(map);
+      // Marker using leaflet
+      marker = L.marker([latitude, longitude]).addTo(map);
+      // Popup in leaflet
+      marker.bindPopup(&#39;&lt;p&gt;&lt;/p&gt;&#39;).openPopup();
+      getPhysicalAddress({lat:latitude, lng:longitude});
     }
-    &lt;/script&gt;
+    // Get current position fail
+    function error() {
+      alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+    }
+  var marker;
+  function getPhysicalAddress(latlong) {
+    geocoder.reverse(latlong, 500000, function(results) {
+      var r = results[0];
+      console.log(r.name);
+      document.querySelector(&quot;#surfaceAddress&quot;).value = r.name;
+      if (r) {
+        if (marker) {
+          marker
+            .setLatLng(r.center)
+            .setPopupContent(r.html || r.name)
+            .openPopup();
+        } else {
+          marker = L.marker(r.center)
+            .bindPopup(r.name)
+            .addTo(map)
+            .openPopup();
+        }
+      }
+    });
+  }
+  &lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 </pre>
@@ -21220,6 +21220,6 @@ good understanding of the material.</p>
 </ul>
 
 <h5>. . .The end.<br>
-<br>last updated 05-29-23 12:54am</h5>
+<br>last updated 05-31-23 11:42am</h5>
   </body>
 </html>
