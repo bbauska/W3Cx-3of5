@@ -2003,7 +2003,7 @@ version on JSBin</a>:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 41. example of folded summary details (59) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
-  src="./images/image041.png?raw=true"
+  src="./images/image041.jpeg?raw=true"
   alt="Example of folded summary details."
   style="width:35%;" />
 
@@ -6926,58 +6926,54 @@ will make things easier as soon as you have to:</p>
 <details>
   <summary>Click to expand!</summary>
   
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;title&gt;Let&#39;s draw three rectangles!&lt;/title&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;style&gt;
-#myCanvas {
-border: 1px solid black;
-}
-&lt;/style&gt;
-&lt;script&gt;
-var canvas, ctx;
-function init() {
-// This function is called after the page is loaded
-// 1 - Get the canvas
-canvas = document.getElementById(&#39;myCanvas&#39;);
-// 2 - Get the context
-ctx=canvas.getContext(&#39;2d&#39;);
-// 3 - we can draw
-drawSomething();
-}
-function drawSomething() {
-// draw a red rectangle
-ctx.fillStyle=&#39;lightgreen&#39;;
-ctx.fillRect(0,0,100,200);
-ctx.fillRect(150,0,100,200);
-ctx.fillRect(300,0,100,200);
-}
-&lt;/script&gt;
+  &lt;title&gt;Let&#39;s draw three rectangles!&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;style&gt;
+    #myCanvas {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
+  &lt;script&gt;
+    var canvas, ctx;
+    function init() {
+      // This function is called after the page is loaded
+      // 1 - Get the canvas
+      canvas = document.getElementById(&#39;myCanvas&#39;);
+      // 2 - Get the context
+      ctx=canvas.getContext(&#39;2d&#39;);
+      // 3 - we can draw
+      drawSomething();
+    }
+    function drawSomething() {
+      // draw a red rectangle
+      ctx.fillStyle=&#39;lightgreen&#39;;
+      ctx.fillRect(0,0,100,200);
+      ctx.fillRect(150,0,100,200);
+      ctx.fillRect(300,0,100,200);
+    }
+  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
-Your browser does not support the canvas tag.
-&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
+    Your browser does not support the canvas tag.
+  &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
 <p>JavaScript code extract:</p>
 
-<pre>
-1.  function drawSomething() {
+<pre>1.  function drawSomething() {
 2.       ctx.fillStyle=&#39;lightgreen&#39;;
 3.   
 4.       ctx.fillRect(0,0,100,200);
 5.       ctx.fillRect(150,0,100,200);
 6.       ctx.fillRect(300,0,100,200);
-7.  }
-</pre>
+7.  }</pre>
 
 <ul>
   <li>Let’s modify the code so that we can draw these rectangles at any X and Y position</li>
@@ -6993,44 +6989,42 @@ and Y position of the rectangles.</p>
 <details>
   <summary>Click to expand!</summary>
   
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head lang=&quot;en&quot;&gt;
-&lt;title&gt;Draw 3 rectangles at any X and Y position&lt;/title&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;style&gt;
-#myCanvas {
-border: 1px solid black;
-}
-&lt;/style&gt;
-&lt;script&gt;
-var canvas, ctx;
-function init() {
-// This function is called after the page is loaded
-// 1 - Get the canvas
-canvas = document.getElementById(&#39;myCanvas&#39;);
-// 2 - Get the context
-ctx=canvas.getContext(&#39;2d&#39;);
-// 3 - we can draw
-drawSomething(0, 100);
-}
-function drawSomething(x, y) {
-// draw a red rectangle
-ctx.fillStyle=&#39;lightgreen&#39;;
-ctx.fillRect(x,y,100,200);
-ctx.fillRect(x+150,y,100,200);
-ctx.fillRect(x+300,y,100,200);
-}
-&lt;/script&gt;
+  &lt;title&gt;Draw 3 rectangles at any X and Y position&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;style&gt;
+    #myCanvas {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
+  &lt;script&gt;
+    var canvas, ctx;
+    function init() {
+      // This function is called after the page is loaded
+      // 1 - Get the canvas
+      canvas = document.getElementById(&#39;myCanvas&#39;);
+      // 2 - Get the context
+      ctx=canvas.getContext(&#39;2d&#39;);
+      // 3 - we can draw
+      drawSomething(0, 100);
+    }
+    function drawSomething(x, y) {
+       // draw a red rectangle
+       ctx.fillStyle=&#39;lightgreen&#39;;
+       ctx.fillRect(x,y,100,200);
+       ctx.fillRect(x+150,y,100,200);
+       ctx.fillRect(x+300,y,100,200);
+    }
+  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
-Your browser does not support the canvas tag.
-&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
+    Your browser does not support the canvas tag.
+  &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
