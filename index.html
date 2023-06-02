@@ -873,8 +873,7 @@ article title), paragraphs (article content), and so on.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;section&gt;
+<pre>&lt;section&gt;
    &lt;article&gt;
      &lt;header&gt;
          &lt;h2&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h2&gt;
@@ -901,8 +900,7 @@ article title), paragraphs (article content), and so on.</p>
     &lt;/figure&gt;
    &lt;/article&gt;
    ...
-&lt;/section&gt;
-</pre>
+&lt;/section&gt;</pre>
 
 </details>
 
@@ -922,25 +920,21 @@ example (we did not apply any style to the &lt;figure&gt; element):</p>
 
 <h4>HTML code:</h4>
 
-<pre>
-&lt;figure&gt;
-    &lt;img src=&quot;HTML5-tags.png&quot;
-         alt=&quot;Example of HTML5 structural tags&quot; /&gt;
-    &lt;figcaption&gt;
-        Fig. 1 : an example of how .....
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
-</pre>
+<pre>&lt;figure&gt;
+  &lt;img src=&quot;HTML5-tags.png&quot;
+  alt=&quot;Example of HTML5 structural tags&quot; /&gt;
+  &lt;figcaption&gt;
+    Fig. 1 : an example of how .....
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</pre>
 
 <h4>CSS code:</h4>
 
-<pre>
-figcaption {
-    font-style:italic;
-    font-size: 0.8em;
-    width: 100%
-}
-</pre>
+<pre>figcaption {
+  font-style:italic;
+  font-size: 0.8em;
+  width: 100%
+}</pre>
 
 <h4>Use an &lt;aside&gt; element to display a tag cloud on the… side of the main content</h4>
 
@@ -959,21 +953,19 @@ that is displayed on the right of the page, “aside”! This is done using
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;section&gt;
-.... all &lt;article&gt;... &lt;/article&gt; here....
+<pre>&lt;section&gt;
+  .... all &lt;article&gt;... &lt;/article&gt; here....
 &lt;/section&gt;
 &lt;aside&gt;
-   &lt;h2&gt;Tag cloud&lt;/h2&gt;
-   &lt;ul class=&quot;tag-cloud&quot;&gt;
-       &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w2&quot;&gt;ajax&lt;/a&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w8&quot;&gt;apple&lt;/a&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w3&quot;&gt;css&lt;/a&gt;&lt;/li&gt;
-       ...
-   &lt;/ul&gt;
+  &lt;h2&gt;Tag cloud&lt;/h2&gt;
+  &lt;ul class=&quot;tag-cloud&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w2&quot;&gt;ajax&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w8&quot;&gt;apple&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w3&quot;&gt;css&lt;/a&gt;&lt;/li&gt;
+    ...
+  &lt;/ul&gt;
 &lt;/aside&gt;
-...
-</pre>
+...</pre>
 
 </details>
 
@@ -988,8 +980,7 @@ code of the online example</a>.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-aside {
+<pre>aside {
   float: right;
   padding: 70px 0 30px;
   position: relative;
@@ -1003,8 +994,7 @@ aside .tag-cloud {
   padding: 15px 35px 10px 0;
   text-align: center
 }
-...
-</pre>
+...</pre>
 
 </details>
 
@@ -1037,8 +1027,7 @@ after the tag cloud definition, to display a page footer:</h4>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;html&gt;
+<pre>&lt;html&gt;
 ...
 &lt;body&gt;
 ...
@@ -1052,8 +1041,7 @@ after the tag cloud definition, to display a page footer:</h4>
    &lt;p&gt;&amp;copy; 2009 Some blog&lt;/p&gt;
 &lt;/footer&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -1106,17 +1094,16 @@ turn cut into smaller &lt;section&gt; elements:</h4>
 
 <pre>
 &lt;article id=&quot;id1&quot;&gt;
-   &lt;section id=&quot;id1part1&quot;&gt;
-     &lt;h2&gt;Introduction&lt;/h2&gt;
-   &lt;/section&gt;
-   &lt;section id=&quot;id1part2&quot;&gt;
-     &lt;h2&gt;My travel to India&lt;/h2&gt;
-   &lt;/section&gt;
-   &lt;section id=&quot;id1part3&quot;&gt;
-     &lt;h2&gt;Return to France&lt;/h2&gt;
-   &lt;/section&gt;
-&lt;/article&gt;
-</pre>
+  &lt;section id=&quot;id1part1&quot;&gt;
+    &lt;h2&gt;Introduction&lt;/h2&gt;
+  &lt;/section&gt;
+  &lt;section id=&quot;id1part2&quot;&gt;
+    &lt;h2&gt;My travel to India&lt;/h2&gt;
+  &lt;/section&gt;
+  &lt;section id=&quot;id1part3&quot;&gt;
+    &lt;h2&gt;Return to France&lt;/h2&gt;
+  &lt;/section&gt;
+&lt;/article&gt;</pre>
 
 </details>
 
@@ -1137,24 +1124,23 @@ with each blog post, for example:</p>
   <summary>Click to expand!</summary>
 
 <pre>&lt;article&gt;
-   &lt;header&gt;
-     &lt;h1&gt;Blog post title&lt;/h1&gt;
-       &lt;p&gt;Author: Michel&lt;/p&gt;
-   &lt;/header&gt;
-   &lt;nav&gt;
-       &lt;ul&gt;
-           &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Next post&lt;/a&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Previous post&lt;/a&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Contact author&lt;/a&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-   &lt;/nav&gt;
-   &lt;p&gt;Content...&lt;/p&gt;
-   &lt;footer&gt;
-     &lt;p&gt;Posted by Michel, the &lt;time datetime=&quot;2012-02-02&quot;&gt;February 2,
-     2012&lt;/time&gt; &lt;/p&gt;
-   &lt;/footer&gt;
-&lt;/article&gt;
-</pre>
+  &lt;header&gt;
+    &lt;h1&gt;Blog post title&lt;/h1&gt;
+    &lt;p&gt;Author: Michel&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Next post&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Previous post&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Contact author&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;p&gt;Content...&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;p&gt;Posted by Michel, the &lt;time datetime=&quot;2012-02-02&quot;&gt;February 2,
+    2012&lt;/time&gt; &lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/article&gt;</pre>
 
 </details>
 
@@ -1498,24 +1484,22 @@ using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;body&gt;
+<pre>1.  &lt;body&gt;
 2.  &lt;h1&gt;Apples&lt;/h1&gt;
 3.  &lt;p&gt;Apples are fruit.&lt;/p&gt;
 4.  &lt;section&gt;
-5.       &lt;h2&gt;Taste&lt;/h2&gt;
-6.       &lt;p&gt;They taste lovely.&lt;/p&gt;
-7.       &lt;section&gt;
-8.           &lt;h3&gt;Sweet&lt;/h3&gt;
-9.           &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
-10.      &lt;/section&gt;
+5.    &lt;h2&gt;Taste&lt;/h2&gt;
+6.    &lt;p&gt;They taste lovely.&lt;/p&gt;
+7.    &lt;section&gt;
+8.      &lt;h3&gt;Sweet&lt;/h3&gt;
+9.      &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
+10.   &lt;/section&gt;
 11. &lt;/section&gt;
 12. &lt;section&gt;
-13.      &lt;h2&gt;Color&lt;/h2&gt;
-14.      &lt;p&gt;Apples come in various colors.&lt;/p&gt;
+13.   &lt;h2&gt;Color&lt;/h2&gt;
+14.   &lt;p&gt;Apples come in various colors.&lt;/p&gt;
 15. &lt;/section&gt;
-16. &lt;/body&gt;
-</pre>
+16. &lt;/body&gt;</pre>
 
 </details>
 
@@ -1545,30 +1529,28 @@ link into your own HTML documents.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;body&gt;
+<pre>1.  &lt;body&gt;
 2.  &lt;h1&gt;This is an example of embedded table of content&lt;/h1&gt;
 3.  &lt;section&gt;
-4.       &lt;header&gt;
-5.           &lt;h1&gt;First section of the document (this is a h1)&lt;/h1&gt;
-6.           This is a subheading...
-7.       &lt;/header&gt;
-8.       &lt;h2&gt;First subsection of the first section (a h2)&lt;/h2&gt;
-9.       &lt;p&gt;Blah Blah...&lt;/p&gt;
+4.    &lt;header&gt;
+5.      &lt;h1&gt;First section of the document (this is a h1)&lt;/h1&gt;
+6.        This is a subheading...
+7.    &lt;/header&gt;
+8.    &lt;h2&gt;First subsection of the first section (a h2)&lt;/h2&gt;
+9.    &lt;p&gt;Blah Blah...&lt;/p&gt;
 10. &lt;/section&gt;
 11. &lt;section&gt;
-12.      &lt;h1&gt;Second section of the document (a h1)&lt;/h1&gt;
-13.      &lt;h2&gt;First subsection (a h2)&lt;/h2&gt;
+12.   &lt;h1&gt;Second section of the document (a h1)&lt;/h1&gt;
+13.   &lt;h2&gt;First subsection (a h2)&lt;/h2&gt;
 14. &lt;/section&gt;
 15. &lt;aside&gt;
-16.      &lt;h3&gt;Table of contents&lt;/h3&gt;
-17.      &lt;a href=&quot;javascript:(function(){...})();&quot;
-18.         title=&quot;TableDeMatiere&quot;&gt;
-19.         Click here to display the table of contents!
-20.      &lt;/a&gt;
+16.   &lt;h3&gt;Table of contents&lt;/h3&gt;
+17.   &lt;a href=&quot;javascript:(function(){...})();&quot;
+18.     title=&quot;TableDeMatiere&quot;&gt;
+19.       Click here to display the table of contents!
+20.   &lt;/a&gt;
 21. &lt;/aside&gt;
-22. &lt;/body&gt;
-</pre>
+22. &lt;/body&gt;</pre>
 
 </details>
 
@@ -1618,8 +1600,7 @@ table</a> on CanIUse and <a href="https://developer.mozilla.org/en-US/docs/Web
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!-- other content --&gt;
+<pre>1.  &lt;!-- other content --&gt;
 2.  
 3.  &lt;main&gt;
 4.  
@@ -1643,8 +1624,7 @@ table</a> on CanIUse and <a href="https://developer.mozilla.org/en-US/docs/Web
 22. 
 23. &lt;/main&gt;
 24.  
-25. &lt;!-- other content --&gt;
-</pre>
+25. &lt;!-- other content --&gt;</pre>
 
 </details>
 
@@ -1655,60 +1635,58 @@ links to subsections of the main content:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
-   &lt;html lang=&quot;en&quot;&gt;
-      &lt;head&gt;
-         &lt;meta charset=&quot;utf-8&quot;/&gt;
-         &lt;title&gt;Graduation Ceremony Summer 2022&lt;/title&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-       &lt;header&gt;The Lawson Academy:
-         &lt;nav&gt;
-            &lt;h2&gt;Click these links to navigate...&lt;/h2&gt;
-            &lt;ul&gt;
-               &lt;li&gt;&lt;a href=&quot;courses.html&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
-               &lt;li&gt;&lt;a href=&quot;fees.html&quot;&gt;Fees&lt;/a&gt;&lt;/li&gt;
-               &lt;li&gt;&lt;a&gt;Graduation&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-         &lt;/nav&gt;
-      &lt;/header&gt;
-      &lt;main&gt;
-         &lt;h1&gt;Graduation&lt;/h1&gt;
-         &lt;nav&gt;
-            &lt;h2&gt;Please choose:&lt;/h2&gt;
-            &lt;ul&gt;
-               &lt;li&gt;&lt;a href=&quot;#ceremony&quot;&gt;Ceremony&lt;/a&gt;&lt;/li&gt;
-               &lt;li&gt;&lt;a href=&quot;#graduates&quot;&gt;Graduates&lt;/a&gt;&lt;/li&gt;
-               &lt;li&gt;&lt;a href=&quot;#awards&quot;&gt;Awards&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-         &lt;/nav&gt;
-         &lt;h2 id=&quot;ceremony&quot;&gt;Ceremony&lt;/h2&gt;
-         &lt;p&gt;Opening Procession&lt;/p&gt;
-         &lt;p&gt;Speech by Valedictorian&lt;/p&gt;
-         &lt;p&gt;Speech by Class President&lt;/p&gt;
-         &lt;p&gt;Presentation of Diplomas&lt;/p&gt;
-         &lt;p&gt;Closing Speech by Headmaster&lt;/p&gt;
-         &lt;h2 id=&quot;graduates&quot;&gt;Graduates&lt;/h2&gt;
-         &lt;ul&gt;
-            &lt;li&gt;Eileen Williams&lt;/li&gt;
-            &lt;li&gt;Andy Maseyk&lt;/li&gt;
-            &lt;li&gt;Blanca Sainz Garcia&lt;/li&gt;
-            &lt;li&gt;Clara Faulkner&lt;/li&gt;
-            &lt;li&gt;Gez Lemon&lt;/li&gt;
-            &lt;li&gt;Eloisa Faulkner&lt;/li&gt;
-         &lt;/ul&gt;
-         &lt;h2 id=&quot;awards&quot;&gt;Awards&lt;/h2&gt;
-            &lt;ul&gt;
-               &lt;li&gt;Clara Faulkner&lt;/li&gt;
-               &lt;li&gt;Eloisa Faulkner&lt;/li&gt;
-               &lt;li&gt;Blanca Sainz Garcia&lt;/li&gt;
-            &lt;/ul&gt;
-         &lt;/main&gt;
-      &lt;footer&gt;Copyright 2012 B.lawson&lt;/footer&gt;
-   &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+<pre>&lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+      &lt;meta charset=&quot;utf-8&quot;/&gt;
+      &lt;title&gt;Graduation Ceremony Summer 2022&lt;/title&gt;
+    &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;The Lawson Academy:
+      &lt;nav&gt;
+        &lt;h2&gt;Click these links to navigate...&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;courses.html&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;fees.html&quot;&gt;Fees&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Graduation&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+      &lt;h1&gt;Graduation&lt;/h1&gt;
+      &lt;nav&gt;
+        &lt;h2&gt;Please choose:&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#ceremony&quot;&gt;Ceremony&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#graduates&quot;&gt;Graduates&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#awards&quot;&gt;Awards&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+      &lt;h2 id=&quot;ceremony&quot;&gt;Ceremony&lt;/h2&gt;
+        &lt;p&gt;Opening Procession&lt;/p&gt;
+        &lt;p&gt;Speech by Valedictorian&lt;/p&gt;
+        &lt;p&gt;Speech by Class President&lt;/p&gt;
+        &lt;p&gt;Presentation of Diplomas&lt;/p&gt;
+        &lt;p&gt;Closing Speech by Headmaster&lt;/p&gt;
+      &lt;h2 id=&quot;graduates&quot;&gt;Graduates&lt;/h2&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Eileen Williams&lt;/li&gt;
+        &lt;li&gt;Andy Maseyk&lt;/li&gt;
+        &lt;li&gt;Blanca Sainz Garcia&lt;/li&gt;
+        &lt;li&gt;Clara Faulkner&lt;/li&gt;
+        &lt;li&gt;Gez Lemon&lt;/li&gt;
+        &lt;li&gt;Eloisa Faulkner&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;h2 id=&quot;awards&quot;&gt;Awards&lt;/h2&gt;
+        &lt;ul&gt;
+        &lt;li&gt;Clara Faulkner&lt;/li&gt;
+        &lt;li&gt;Eloisa Faulkner&lt;/li&gt;
+        &lt;li&gt;Blanca Sainz Garcia&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;Copyright 2023 B.Bauska&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -1757,20 +1735,18 @@ Chrome HTML5 Outliner extension showed.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;section&gt;
-   &lt;header&gt;
-     &lt;b&gt;&lt;h1&gt;Blog posts for April 2012&lt;/h1&gt;&lt;/b&gt;
-   &lt;/header&gt;
-   &lt;article&gt;
-     &lt;header&gt;
-       &lt;b&gt;&lt;h1&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h1&gt;&lt;/b&gt;
-       This example is a modified version of &lt;a href=&quot;https://example.com/blog/index.html&quot;&gt;https://example.com/blog/index.html&lt;/a&gt;
-     &lt;/header&gt;
+<pre>&lt;section&gt;
+  &lt;header&gt;
+    &lt;b&gt;&lt;h1&gt;Blog posts for April 2012&lt;/h1&gt;&lt;/b&gt;
+  &lt;/header&gt;
+  &lt;article&gt;
+    &lt;header&gt;
+      &lt;b&gt;&lt;h1&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h1&gt;&lt;/b&gt;
+        This example is a modified version of &lt;a href=&quot;https://example.com/blog/index.html&quot;&gt;https://example.com/blog/index.html&lt;/a&gt;
+    &lt;/header&gt;
      ...
-   &lt;/article&gt;
-&lt;/section&gt;
-</pre>
+  &lt;/article&gt;
+&lt;/section&gt;</pre>
 
 </details>
 
@@ -1787,18 +1763,17 @@ right after the &lt;body&gt; and use only H2…H6 inside &lt;section&gt;,
 
 <p>We need to add a heading in the &lt;nav&gt; element. This will both fix the outline of the document by removing the untitled entry, and will also make screen readers happy as they will better vocalize the structure of the page (it will say “entering nav” followed by the vocalization of the heading content).</p>
 
-<pre>
-&lt;nav&gt;
-   &lt;header&gt;
-      &lt;h1&gt;Navigation menu&lt;/h1&gt;
-   &lt;b&gt;&lt;/header&gt;&lt;/b&gt;
-   &lt;ul&gt;
-      &lt;li&gt;&lt;span&gt;Blog&lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;/nav&gt;
-</pre>
+<pre>&lt;nav&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Navigation menu&lt;/h1&gt;
+    &lt;b&gt;
+  &lt;/header&gt;&lt;/b&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;span&gt;Blog&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
 
 <h4>Here is the fixed result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1821,28 +1796,24 @@ the <a href="https://www.w3.org/TR/WCAG20/)" target="_blank" rel="noopener nore
 <p>In the previous section, we saw how to embed a table of contents using some JavaScript code borrowed from the Google Chrome HTML5 outliner extension.</p>
 <p>Let’s add this piece of code (we removed the JS details from this extract):</p>
 
-<pre>
-&lt;aside&gt;
-   &lt;h1&gt;
-     &lt;a href=&quot;javascript:(function(){...});&quot;
-        title=&quot;TableOfContents&quot;&gt;
-        Click here to display the table of contents!
-     &lt;/a&gt;
-   &lt;/h1&gt;
-&lt;/aside&gt;
-</pre>
+<pre>&lt;aside&gt;
+  &lt;h1&gt;
+    &lt;a href=&quot;javascript:(function(){...});&quot;
+      title=&quot;TableOfContents&quot;&gt;
+      Click here to display the table of contents!
+    &lt;/a&gt;
+  &lt;/h1&gt;
+&lt;/aside&gt;</pre>
 
 <h4>We also added a &lt;main&gt; element to identify the main content of the page composed of the big section with all blog posts: </h4>
 
-<pre>
-&lt;main&gt;
+<pre>&lt;main&gt;
   &lt;section&gt;
-     &lt;header&gt;
-         &lt;h2&gt;Blog posts for April 2012&lt;/h2&gt;
-     &lt;/header&gt;
-     ...
-&lt;/main&gt;
-</pre>
+    &lt;header&gt;
+      &lt;h2&gt;Blog posts for April 2012&lt;/h2&gt;
+    &lt;/header&gt;
+    ...
+&lt;/main&gt;</pre>
 
 <h4>Use H1 as top level headings only, use H2…H6 in sectioning content</h4>
 
@@ -1853,14 +1824,12 @@ in <a href="https://www.w3.org/wiki/HTML/Usage/Headings" target="_blank" rel="n
 
 <h4>Extract from source code:</h4>
 
-<pre>
-&lt;nav&gt;
-   &lt;header&gt;
-     &lt;h2&gt;Navigation menu&lt;/h2&gt;
-   &lt;/header&gt;
-   ...
-&lt;/nav&gt;
-</pre>
+<pre>&lt;nav&gt;
+  &lt;header&gt;
+    &lt;h2&gt;Navigation menu&lt;/h2&gt;
+  &lt;/header&gt;
+  ...
+&lt;/nav&gt;</pre>
 
 <h4>Finally, the fixed example</h4>
 
@@ -1890,8 +1859,7 @@ designing an HTML page that uses the new sectioning elements.</p>
 <details>
   <summary>Click to expand!</summary>
   
-<pre>
-&lt;header&gt;
+<pre>&lt;header&gt;
    &lt;code&gt;&lt;header&gt;&lt;/code&gt;
 &lt;/header&gt;
   
@@ -1905,8 +1873,7 @@ designing an HTML page that uses the new sectioning elements.</p>
   
 &lt;footer&gt;
    &lt;code&gt;&lt;footer&gt;&lt;/code&gt;
-&lt;/footer&gt;
-</pre>
+&lt;/footer&gt;</pre>
 
 </details>
 
@@ -1947,27 +1914,25 @@ codepen” to change the code and see the results):</p>
 <details>
   <summary>Click to expand!</summary>
   
-<pre>
-&lt;header&gt;
-   &lt;code&gt;&lt;header&gt;&lt;/code&gt;
+<pre>&lt;header&gt;
+  &lt;code&gt;&lt;header&gt;&lt;/code&gt;
 &lt;/header&gt;
-   
+
 &lt;section&gt;
-   &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
+  &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
 &lt;/section&gt;
-   
+
 &lt;section&gt;
-   &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
+  &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
 &lt;/section&gt;
-  
+
 &lt;section&gt;
-   &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
+  &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
 &lt;/section&gt;
-  
+
 &lt;footer&gt;
-   &lt;code&gt;&lt;footer&gt;&lt;/code&gt;
-&lt;/footer&gt;
-</pre>
+  &lt;code&gt;&lt;footer&gt;&lt;/code&gt;
+&lt;/footer&gt;</pre>
 
 </details>
 
@@ -2057,20 +2022,18 @@ icon to the left of the summary:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt; ...
-   &lt;body&gt;
-      &lt;details&gt;
-         &lt;summary&gt;
-            How to beat the boss...spoiler alert !
-         &lt;/summary&gt;
-         &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
-         &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
-      &lt;/details&gt;
-   &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+  &lt;body&gt;
+    &lt;details&gt;
+      &lt;summary&gt;
+        How to beat the boss...spoiler alert !
+      &lt;/summary&gt;
+      &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
+      &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
+    &lt;/details&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -2113,23 +2076,21 @@ this <a href="https://jsbin.com/dejagi/edit?html,css,output" target="_blank" re
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;details&gt;
-   &lt;summary&gt;
-      How to beat the boss...spoiler alert !
-   &lt;/summary&gt;
-   &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
-   &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
-   &lt;details&gt;
-      &lt;summary&gt;
-         Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
-      &lt;/summary&gt;
-      &lt;p&gt;Before finishing him, try to cut his trail, you will get a new weapon&lt;/p&gt;
-      &lt;p&gt;Just try to stay behind him as long as you can, hitting his tail with your melee weapon, 
-         after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.&lt;/p&gt;
-   &lt;/details&gt;
-&lt;/details&gt;
-</pre>
+<pre>&lt;details&gt;
+  &lt;summary&gt;
+    How to beat the boss...spoiler alert !
+  &lt;/summary&gt;
+  &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
+  &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
+  &lt;details&gt;
+    &lt;summary&gt;
+      Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
+    &lt;/summary&gt;
+    &lt;p&gt;Before finishing him, try to cut his trail, you will get a new weapon&lt;/p&gt;
+    &lt;p&gt;Just try to stay behind him as long as you can, hitting his tail with your melee weapon, 
+      after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.&lt;/p&gt;
+  &lt;/details&gt;
+&lt;/details&gt;</pre>
 
 </details>
 
@@ -2153,12 +2114,10 @@ following CSS rule, which uses the pseudo
 class ::-webkit-details-marker</p>
 <p>In this example: red arrow, white background.</p>
 
-<pre>
-summary::-webkit-details-marker {
+<pre>summary::-webkit-details-marker {
    color:#FF0000;
    background:#FFFFFF;
-}
-</pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 47. unfold and style (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2173,12 +2132,10 @@ background.</p>
 
 <h4>Here is the corresponding CSS rule:</h4>
 
-<pre>
-details[open] summary::-webkit-details-marker {
+<pre>details[open] summary::-webkit-details-marker {
    color:#0000FF;
    background:#00FFFF;
-}
-</pre>
+}</pre>
 
 <p>It is also possible to change the icon itself using the CSS pseudo
 class :after </p>
@@ -2204,28 +2161,24 @@ it <a href="https://jsbin.com/sajusop/edit?html,css,output" target="_blank" rel
 
 <p>Use a “+” shaped icon, pink, bold, etc… :</p>
 
-<pre>
-summary:after {
-   content: &quot;+&quot;;
-   color: #FF00FF;
-   float: left;
-   font-size: 1.5em;
-   font-weight: bold;
-   margin: -5px 5px 0 0;
-   padding: 0;
-   text-align: center;
-   width: 20px;
-}
-</pre>
+<pre>summary:after {
+  content: &quot;+&quot;;
+  color: #FF00FF;
+  float: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: -5px 5px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 20px;
+}</pre>
 
 <p>Use a “-” shaped icon, white, when details are displayed:</p>
 
-<pre>
-details[open] summary:after {
-content: &quot;-&quot;;
-color: #FFFFFF
-}
-</pre>
+<pre>details[open] summary:after {
+  content: &quot;-&quot;;
+  color: #FFFFFF
+}</pre>
 
 <h4>Current browser support</h4>
 
@@ -2258,13 +2211,11 @@ contain &lt;time&gt; elements in a calendar, etc.</p>
 
 <h4>Examples:</h4>
 
-<pre>
-1.  We open at &lt;time&gt;10:00&lt;/time&gt; every morning.
+<pre>1.  We open at &lt;time&gt;10:00&lt;/time&gt; every morning.
 2.  I have a meeting the &lt;time datetime=&quot;2020-02-14&quot;&gt;Monday 14/02/2020.&lt;/time&gt;.
 3.  Blog posts from the year &lt;time datetime=&quot;2020&quot;&gt;2020&lt;/time&gt;.
 4.  Archives, blog posts for &lt;time datetime=&quot;2020-04&quot;&gt;April 2020&lt;/time&gt;
-5.  This recipe was published by Michel the &lt;time datetime=&quot;2020-04-16&quot;&gt;April 16, 2020&lt;/time&gt;.
-</pre>
+5.  This recipe was published by Michel the &lt;time datetime=&quot;2020-04-16&quot;&gt;April 16, 2020&lt;/time&gt;.</pre>
 
 <h4>The datetime attribute</h4>
 
@@ -2471,12 +2422,10 @@ way you can display the date/time/duration in a human-readable form.</p>
 
 <h4>… comes with this CSS rule:</h4>
 
-<pre>
-mark {
-   background-color: green;
-   color: yellow;
-}
-</pre>
+<pre>mark {
+  background-color: green;
+  color: yellow;
+}</pre>
 
 <h4>External resources:</h4>
 
@@ -2497,27 +2446,21 @@ to a file the browser knows how to render (an html page, a gif, jpg, or
 png image, etc.) there is a good chance that the MIME type received by
 the browser will be something like this:</p>
 
-<pre>
-Content-type: text/html, text/plain, image/gif, image/jpg, etc.
-</pre>
+<pre>Content-type: text/html, text/plain, image/gif, image/jpg, etc.</pre>
 
 <h4>For example, HTML code such as this:</h4>
 
-<pre>
-&lt;a href=&quot;toto.jpg&quot;&gt;
-   please right click this link to download
-   the toto.jpg picture&lt;/a&gt;
-</pre>
+<pre>&lt;a href=&quot;toto.jpg&quot;&gt;
+  please right click this link to download
+  the toto.jpg picture&lt;/a&gt;</pre>
 
 <p>…will ask the remote HTTP server to send back the toto.jpg file. The
 browser will receive in the response HTTP header from the server (and by
 default the browser will display the image in a new tab):</p>
 
-<pre>
-1.  ...
+<pre>1.  ...
 2.  Content-type: image/jpg
-3.  ...
-</pre>
+3.  ...</pre>
 
 <p>However, if the link points to some PHP code,  Java servlet code, or
 any kind of script/application on the server side, this remote server
@@ -2529,9 +2472,7 @@ This can be done by generating, in addition to the Content-type line in
 the response HTTP header, a Content-Disposition line that looks like
 this:</p>
 
-<pre>
-Content-Disposition: attachment; filename=&quot;MyImage.png&quot;;
-</pre>
+<pre>Content-Disposition: attachment; filename=&quot;MyImage.png&quot;;</pre>
 
 <p>Here are some extracts from a Java Servlet that generate a zip file
 and forces the browser to propose downloading it using a specified
@@ -2540,29 +2481,27 @@ name:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-protected void doGet(HttpServletRequest request, HttpServletResponse response)
+<pre>protected void doGet(HttpServletRequest request, HttpServletResponse response)
 throws ServletException, IOException {
-   try {
-     // Build the zip file
-       String path = getServletContext().getRealPath(&quot;data&quot;);
-       File directory = new File(path);
-       String[] files = directory.list();
-       if (files != null &amp;&amp; files.length &gt; 0) {
-         byte[] zip = zipFiles(directory, files);
-         ServletOutputStream sos = response.getOutputStream();
+  try {
+    // Build the zip file
+    String path = getServletContext().getRealPath(&quot;data&quot;);
+    File directory = new File(path);
+    String[] files = directory.list();
+    if (files != null &amp;&amp; files.length &gt; 0) {
+      byte[] zip = zipFiles(directory, files);
+      ServletOutputStream sos = response.getOutputStream();
 
-         // generate a HTTP response that forces the download
-         [response.setContentType(&quot;application/zip&quot;);]
-         [response.setHeader(&quot;Content-Disposition&quot;,]
-                            [&quot;attachment; filename=&quot;DATA.ZIP&quot;&quot;);]
-         sos.write(zip); sos.flush();
-       }
-    } catch (Exception e) {
-       e.printStackTrace();
-    }
-}
-</pre>
+      // generate a HTTP response that forces the download
+      [response.setContentType(&quot;application/zip&quot;);]
+      [response.setHeader(&quot;Content-Disposition&quot;,]
+      [&quot;attachment; filename=&quot;DATA.ZIP&quot;&quot;);]
+        sos.write(zip); sos.flush();
+    }
+  } catch (Exception e) {
+      e.printStackTrace();
+    }
+}</pre>
 
 </details>
 
@@ -2583,11 +2522,9 @@ trigger the download of an image by the browser (instead of rendering
 it, which is the default behavior) with a name different from the name
 of the resource.</p>
 
-<pre>
-&lt;a href=&quot;normal.gif&quot; [download]=[&quot;MichelBuffa.gif&quot;]&gt;
-   download a picture of Michel Buffa
-&lt;/a&gt;
-</pre>
+<pre>&lt;a href=&quot;normal.gif&quot; [download]=[&quot;MichelBuffa.gif&quot;]&gt;
+  download a picture of Michel Buffa
+&lt;/a&gt;</pre>
 
 <p>This will indeed force the download of an image with a filename
 different from its original filename on the server side. Here is a
@@ -2675,8 +2612,7 @@ default).”</i></p>
 <h4>Example illustrating how to specify parts of an HTML element that should
 not be translated:</h4>
 
-<pre>
-&lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt;</pre>
+<pre>&lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt;</pre>
 
 <p>In the above example, a &lt;span&gt; element defines an author (of a blog,
 for example) who is named Michel Ham. However, his family name is the
@@ -2684,15 +2620,11 @@ same as pork and would be translated to “Michel Jambon” in French, or
 Michel Jamón in Spanish…</p>
 <p>Using the translate=“no” attribute should prevent this behavior…</p>
 
-<pre>
-&lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt; is a professor from the University of Nice, France.
-</pre>
+<pre>&lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt; is a professor from the University of Nice, France.</pre>
 
 <p>Will be correctly translated into French by:</p>
 
-<pre>
-&quot;[Michel Ham] est un professeur de l&#39;Université de Nice, France.&quot;
-</pre>
+<pre>&quot;[Michel Ham] est un professeur de l&#39;Université de Nice, France.&quot;</pre>
 
 <p>…where all of the end of the sentence has been translated except the
 author’s name.</p>
@@ -2703,12 +2635,10 @@ author’s name.</p>
 inherit this behavior and are themselves not translatable. The reverse
 is also true.</p>
 
-<pre>
-&lt;p translate=&quot;no&quot;&gt;This is a text in a paragraph element, that should not be translated: the p element has a translate=&quot;no&quot; attribute.&lt;span&gt; 
-This part that is in a span element embedded within the paragraph. 
-It does not have a translate attribute but inherits the translation-mode of the p and will not be translated
-too&lt;/span&gt;. This is the end of the paragraph...&lt;/p&gt;
-</pre>
+<pre>&lt;p translate=&quot;no&quot;&gt;This is a text in a paragraph element, that should not be translated: the p element has a translate=&quot;no&quot; attribute.&lt;span&gt; 
+  This part that is in a span element embedded within the paragraph. 
+  It does not have a translate attribute but inherits the translation-mode of the p and will not be translated
+too&lt;/span&gt;. This is the end of the paragraph...&lt;/p&gt;</pre>
 
 <h4>External resources:</h4>
 
@@ -2741,30 +2671,28 @@ product description, a geographical location, etc.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;section [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
+<pre>1.  &lt;section [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
 2.      &lt;h1&gt;Contact Information&lt;/h1&gt;
 3.      &lt;dl&gt;
-4.        &lt;dt&gt;Name&lt;/dt&gt;
+4.          &lt;dt&gt;Name&lt;/dt&gt;
 5.        &lt;dd [itemprop=&quot;name&quot;]&gt;Michel Buffa&lt;/dd&gt;
-6.        &lt;dt&gt;Position&lt;/dt&gt;
+6.          &lt;dt&gt;Position&lt;/dt&gt;
 7.        &lt;dd&gt;&lt;span [itemprop=&quot;jobTitle&quot;]&gt;
-8.             Professor/Researcher/Scientist&lt;/span&gt; for
-9.            &lt;span [itemprop=&quot;affiliation&quot;]&gt;
-10.               University of Côte d&#39;Azur, France
-11.           &lt;/span&gt;
+8.            Professor/Researcher/Scientist&lt;/span&gt; for
+9.          &lt;span [itemprop=&quot;affiliation&quot;]&gt;
+10.           University of Côte d&#39;Azur, France
+11.         &lt;/span&gt;
 12.       &lt;/dd&gt;
 13.     &lt;/dl&gt;
 14.     &lt;!-- SURFACE ADDRESS GOES HERE --&gt;
 15.     &lt;h1&gt;My different online public accounts&lt;/h1&gt;
-16.     &lt;ul&gt;
-17.        &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;
-18.               [itemprop=&quot;url&quot;]&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
-19.        &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
-20.               [itemprop=&quot;url&quot;]&gt;Michel Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
-21.     &lt;/ul&gt;
-22. &lt;/section&gt;
-</pre>
+16.   &lt;ul&gt;
+17.     &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;
+18.       [itemprop=&quot;url&quot;]&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
+19.     &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
+20.       [itemprop=&quot;url&quot;]&gt;Michel Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
+21.   &lt;/ul&gt;
+22. &lt;/section&gt;</pre>
 
 </details>
 
@@ -2774,28 +2702,26 @@ person’s address:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  ...
+<pre>1.  ...
 2.  &lt;/dl&gt;
 3.  
 4.  &lt;!-- SURFACE ADDRESS GOES HERE --&gt;
 5.  
 6.  &lt;dd [itemprop=]&quot;address&quot;[ itemscope]
-7.      itemtype=&quot;https://schema.org/PostalAddress&quot;&gt;
+7.    itemtype=&quot;https://schema.org/PostalAddress&quot;&gt;
 8.      &lt;span [itemprop=]&quot;streetAddress&quot;&gt;10 promenade des anglais&lt;/span&gt;&lt;br&gt;
 9.      &lt;span [itemprop=]&quot;addressLocality&quot;&gt;Nice&lt;/span&gt;,
 10.     &lt;span [itemprop=]&quot;addressRegion&quot;&gt;Alpes maritimes, France&lt;/span&gt;
 11.     &lt;span [itemprop=]&quot;postalCode&quot;&gt;06410&lt;/span&gt;&lt;br&gt;
-12.     &lt;span [itemprop=]&quot;addressCountry&quot;[ itemscope]
-13.           [itemtype=]&quot;https://schema.org/Country&quot;&gt;
-14.          &lt;span [itemprop=]&quot;name&quot;&gt;France&lt;/span&gt;
-15.     &lt;/span&gt;
+12.     &lt;span [itemprop=]&quot;addressCountry&quot;[ itemscope]
+13.   [itemtype=]&quot;https://schema.org/Country&quot;&gt;
+14.     &lt;span [itemprop=]&quot;name&quot;&gt;France&lt;/span&gt;
+15.   &lt;/span&gt;
 16. &lt;/dd&gt;
 17. 
 18. &lt;h1&gt;My different online public accounts&lt;/h1&gt;
 19. 
-20. ...
-</pre>
+20. ...</pre>
 
 </details>
 
@@ -2863,15 +2789,14 @@ at JsBin</a></p>
 <details>
   <summary>Click to expand!</summary>
   
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
-4.  &lt;meta charset=utf-8 /&gt;
-5.  &lt;title&gt;Michel Buffa&lt;/title&gt;
+4.    &lt;meta charset=utf-8 /&gt;
+5.    &lt;title&gt;Michel Buffa&lt;/title&gt;
 6.  &lt;/head&gt;
 7.  &lt;body&gt;
-8.  &lt;div [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
+8.    &lt;div [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
 9.      My name is &lt;span itemprop=&quot;name&quot;&gt;Michel Buffa&lt;/span&gt;,
 10.     And I&#39;m a &lt;span itemprop=&quot;jobTitle&quot;&gt;professor/researcher&lt;/span&gt; at
 11.      &lt;a href=&quot;https://www.i3s.unice.fr/&quot; itemprop=&quot;affiliation&quot;&gt;I3S
@@ -2880,14 +2805,13 @@ at JsBin</a></p>
 14.     is : &lt;span itemprop=&quot;email&quot;&gt;micbuffa@gmail.com&lt;/span&gt;.
 15.     I live in the city of
 16.     &lt;span itemprop=&quot;address&quot; itemscope
-17.         [itemtype=&quot;https://schema.org/PostalAddress&quot;]&gt;
-18.          &lt;span itemprop=&quot;addressLocality&quot;&gt;Biot&lt;/span&gt;, in a region named
-19.          &lt;span itemprop=&quot;addressRegion&quot;&gt;Alpes Maritimes&lt;/span&gt;
+17.       [itemtype=&quot;https://schema.org/PostalAddress&quot;]&gt;
+18.       &lt;span itemprop=&quot;addressLocality&quot;&gt;Biot&lt;/span&gt;, in a region named
+19.       &lt;span itemprop=&quot;addressRegion&quot;&gt;Alpes Maritimes&lt;/span&gt;
 20.     &lt;/span&gt;
-21. &lt;/div&gt;
+21.   &lt;/div&gt;
 22. &lt;/body&gt;
-23. &lt;/html&gt;
-</pre>
+23. &lt;/html&gt;</pre>
 
 </details>
 
@@ -2949,11 +2873,9 @@ This element can be of different types that we will describe later, but
 for now let us keep looking at the same example we used in previous
 sections:</p>
 
-<pre>
-  &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
+<pre>  &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
   ...
-  &lt;/section&gt;
-</pre>
+  &lt;/section&gt;</pre>
 
 <p>We will look at the itemtype attribute later. Now that we have defined a
 global wrapper object/element (a Person in this case), we can  add
@@ -3006,30 +2928,28 @@ has the name of your vocabulary.</p>
 <details>
   <summary>Click to expand!</summary>
   
-<pre>
-1.   &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
-2.     &lt;h1&gt;Contact Information&lt;/h1&gt;
-3.     &lt;dl&gt;
-4.       &lt;dt&gt;Name&lt;/dt&gt;
-5.       &lt;dd [itemprop=&quot;name&quot;]&gt;Michel Buffa&lt;/dd&gt;
-6.         &lt;dt&gt;Position&lt;/dt&gt;
-7.         &lt;dd&gt;&lt;span [itemprop=&quot;jobTitle&quot;]&gt;
-8.           Professor/Researcher/Scientist
-9.         &lt;/span&gt; for
-10.          &lt;span [itemprop=&quot;affiliation&quot;]&gt;University of Nice,
-11.            France
-12.        &lt;/span&gt;
-13.      &lt;/dd&gt;
-14.    &lt;/dl&gt;
-15.    &lt;h1&gt;My different online public accounts&lt;/h1&gt;
-16.    &lt;ul&gt;
-17.      &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;
-18.        [itemprop=&quot;url&quot;]&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
-19.      &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
-20.        [itemprop=&quot;url&quot;]&gt;Michel Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
-21.    &lt;/ul&gt;
-22.  &lt;/section&gt;
-</pre>
+<pre>1.  &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
+2.    &lt;h1&gt;Contact Information&lt;/h1&gt;
+3.    &lt;dl&gt;
+4.      &lt;dt&gt;Name&lt;/dt&gt;
+5.      &lt;dd [itemprop=&quot;name&quot;]&gt;Michel Buffa&lt;/dd&gt;
+6.        &lt;dt&gt;Position&lt;/dt&gt;
+7.        &lt;dd&gt;&lt;span [itemprop=&quot;jobTitle&quot;]&gt;
+8.          Professor/Researcher/Scientist
+9.        &lt;/span&gt; for
+10.       &lt;span [itemprop=&quot;affiliation&quot;]&gt;University of Nice,
+11.          France
+12.       &lt;/span&gt;
+13.     &lt;/dd&gt;
+14.   &lt;/dl&gt;
+15.   &lt;h1&gt;My different online public accounts&lt;/h1&gt;
+16.   &lt;ul&gt;
+17.     &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;
+18.       [itemprop=&quot;url&quot;]&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
+19.     &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
+20.       [itemprop=&quot;url&quot;]&gt;Michel Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
+21.   &lt;/ul&gt;
+22. &lt;/section&gt;</pre>
 
 </details>
 
@@ -3040,9 +2960,7 @@ is identified by the value of the itemprop attribute of sub-elements.</p>
 
 <h4>The line:</h4>
 
-<pre>
-  &lt;dd itemprop=&quot;name&quot;Michel Buffa&lt;/dd&gt;
-</pre>
+<pre>&lt;dd itemprop=&quot;name&quot;Michel Buffa&lt;/dd&gt;</pre>
 
 <p>…defines a property called “name” that has a value of “Michel Buffa” (the text value between the opening and closing tags of the &lt;dd&gt; element).</p>
 
@@ -3059,8 +2977,7 @@ vocabulary used by the nested microdata.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.   ...
+<pre>1.   ...
 2.   &lt;/dl&gt;
 3.  
 4.   &lt;!-- SURFACE ADDRESS GOES HERE --&gt;
@@ -3079,8 +2996,7 @@ vocabulary used by the nested microdata.</p>
 17. 
 18.  &lt;h1&gt;My different online public accounts&lt;/h1&gt;
 19. 
-20.  ...
-</pre>
+20.  ...</pre>
 
 </details>
 
@@ -3090,16 +3006,14 @@ vocabulary used by the nested microdata.</p>
 
 <p>It is possible to use the same property name several times in one microdata object, but with different values: </p>
 
-<pre>
-1.   ...
+<pre>1.   ...
 2.   &lt;h1&gt;My different online public accounts&lt;/h1&gt;
 3.   &lt;ul&gt;
 4.   &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;[ itemprop=&quot;url&quot;]&gt;Twitter
 5.     profile&lt;/a&gt;&lt;/li&gt;
 6.   &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;[ itemprop=&quot;url&quot;]&gt;Michel
 7.     Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
-8.   &lt;/ul&gt;
-</pre>
+8.   &lt;/ul&gt;</pre>
 
 <p>This defines the fact that Michel Buffa has two online accounts, and
 the two properties have the name url, each with its own value.</p>
@@ -3108,16 +3022,14 @@ the two properties have the name url, each with its own value.</p>
 
 <p>Here are some microdata that represent a song. In this example, at line 5 we set two different properties: genre and keywords with the same value (see the <a href="https://schema.org/MusicRecording" target="_blank" rel="noopener noreferrer">MusicRecording schema definition</a>):</p>
 
-<pre>
-1.   &lt;div itemscope itemtype=&quot;https://schema.org/MusicRecording&quot;&gt;
-2.     &lt;h2&gt;The song I just published&lt;/h2&gt;
-3.     &lt;ul&gt;
-4.       &lt;li&gt;Name: &lt;span itemprop=&quot;name&quot;&gt;Please buy me on itunes, 
-           I need money!&lt;/span&gt;&lt;/li&gt;
-5.       &lt;li&gt;Band: &lt;span [itemprop=&quot;genre keywords&quot;]&gt;[Punk, Ska]&lt;/span&gt;&lt;/li&gt;
-6.     &lt;/ul&gt;
-7.   &lt;/div&gt;
-</pre>
+<pre>1.  &lt;div itemscope itemtype=&quot;https://schema.org/MusicRecording&quot;&gt;
+2.    &lt;h2&gt;The song I just published&lt;/h2&gt;
+3.    &lt;ul&gt;
+4.      &lt;li&gt;Name: &lt;span itemprop=&quot;name&quot;&gt;Please buy me on itunes, 
+          I need money!&lt;/span&gt;&lt;/li&gt;
+5.      &lt;li&gt;Band: &lt;span [itemprop=&quot;genre keywords&quot;]&gt;[Punk, Ska]&lt;/span&gt;&lt;/li&gt;
+6.    &lt;/ul&gt;
+7.  &lt;/div&gt;</pre>
 
 <p>And so on…<br>
 Now, let’s see what elements are compatible with the itemprop attribute
@@ -3174,21 +3086,15 @@ data that isn’t actually in the text of your page.</td>
 
 <p>For example, the value of a property defined in an &lt;img&gt; element will be the value of the src attribute:</p>
 
-<pre>
-  &lt;img itemprop=&quot;image&quot; src=&quot;MichelBuffa.png&quot; alt=&quot;A great professor&quot;&gt;
-</pre>
+<pre>&lt;img itemprop=&quot;image&quot; src=&quot;MichelBuffa.png&quot; alt=&quot;A great professor&quot;&gt;</pre>
 
 <p>Or, for a &lt;time&gt;, it will be the value of the datetime attribute:</p>
 
-<pre>
-&lt;time itemprop=&quot;birthday&quot; datetime=&quot;1965-04-16&quot;&gt;April 16, 1965&lt;/time&gt;
-</pre>
+<pre>&lt;time itemprop=&quot;birthday&quot; datetime=&quot;1965-04-16&quot;&gt;April 16, 1965&lt;/time&gt;</pre>
 
 <p>Or, for an &lt;a&gt; element, the value will be the value of the href attribute:</p>
 
-<pre>
-  &lt;a href=&quot;https://www.twitter.com/micbuffa&quot; itemprop=&quot;url&quot;&gt;profile&lt;/a&gt;
-</pre>
+<pre>&lt;a href=&quot;https://www.twitter.com/micbuffa&quot; itemprop=&quot;url&quot;&gt;profile&lt;/a&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-5-4">1.5.4 Microdata Tools</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3212,7 +3118,6 @@ data that isn’t actually in the text of your page.</td>
   src="./images/image064.jpeg?raw=true"
   alt="Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata."
   style="width:65%;" />
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-5-5">1.5.5 Examples of Well Structured Documents with Microdata</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3315,11 +3220,9 @@ with some HTML code that you can copy and paste for embedding.</p>
 
 <h4>Here is the HTML code you need to copy and paste in order to embed avideo:</h4>
 
-<pre>
-  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/WMFXg-kni0U&quot; title=&quot;YouTube video player&quot;
+<pre>  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/WMFXg-kni0U&quot; title=&quot;YouTube video player&quot;
   frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-  picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
-</pre>
+  picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
 
 <p>The YouTube video embedded in this page by the above code: it’s HTML5 but it’s not a &lt;video&gt; element directly inserted in the HTML of this page, it’s an &lt;iframe&gt;.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3368,8 +3271,7 @@ API</a> and other advanced HTML5 features in the <a href="https://www.edx.org
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.   &lt;!DOCTYPE html&gt;
+<pre>1.   &lt;!DOCTYPE html&gt;
 2.   &lt;html lang=&quot;en&quot;&gt;
 3.       &lt;head&gt;
 4.       &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -3390,8 +3292,7 @@ API</a> and other advanced HTML5 features in the <a href="https://www.edx.org
 17.      &lt;/audio&gt;
 18. 
 19.    &lt;/body&gt;
-20.  &lt;/html&gt;
-</pre>
+20.  &lt;/html&gt;</pre>
 
 </details>
 
@@ -3474,8 +3375,7 @@ attributes should be followed.</p>
 <details>
   <summary>HTML Click to expand!</summary>
 
-<pre>
-1.   &lt;figure id=&quot;figaudio1&quot;&gt;
+<pre>1.   &lt;figure id=&quot;figaudio1&quot;&gt;
 2.     &lt;img id=&quot;imghorse&quot; width=&quot;200&quot;
 3.       src=&quot;https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg&quot;
 4.       alt = &quot;a horse&quot;/&gt;
@@ -3492,8 +3392,7 @@ attributes should be followed.</p>
 15.          format.
 16.      &lt;/audio&gt;
 17.    &lt;/figcaption&gt;
-18.  &lt;/figure&gt;
-</pre>
+18.  &lt;/figure&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3509,8 +3408,7 @@ attributes should be followed.</p>
 <details>
   <summary>HTML click to expand!</summary>
   
-<pre>
-1.   &lt;figure id=&quot;figaudio1&quot;&gt;
+<pre>1.   &lt;figure id=&quot;figaudio1&quot;&gt;
 2.     &lt;img id=&quot;imghorse&quot; width=&quot;200&quot;
 3.       src=&quot;https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg&quot;
 4.       alt = &quot;a horse&quot;/&gt;
@@ -3527,8 +3425,7 @@ attributes should be followed.</p>
 15.          format.
 16.      &lt;/audio&gt;
 17.    &lt;/figcaption&gt;
-18.  &lt;/figure&gt;
-</pre>
+18.  &lt;/figure&gt;</pre>
 
 </details>
 
@@ -3537,8 +3434,7 @@ attributes should be followed.</p>
 <details>
   <summary>CSS click to expand!</summary>
   
-<pre>
-1.    #figaudio1 {
+<pre>1.    #figaudio1 {
 2.      width : 420px;;
 3.      text-align:center;
 4.      padding : 6px;
@@ -3578,8 +3474,7 @@ attributes should be followed.</p>
 38.   audio:hover, audio:focus, audio:active {
 39.     box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
 40.     transform: scale(1.05);
-41.   }
-</pre>
+41.   }</pre>
 
 </details>
 
@@ -3600,31 +3495,27 @@ attributes should be followed.</p>
 
 <h4>The corresponding HTML source code is:</h4>
 
-<pre>
-1.   &lt;video &lt;b&gt;id=&quot;w3devCampusVideo&quot;&lt;/b&gt; autoplay controls&gt;
+<pre>1.  &lt;video &lt;b&gt;id=&quot;w3devCampusVideo&quot;&lt;/b&gt; autoplay controls&gt;
 2.  
-3.     &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
-4.       type=video/webm&gt;
-5.     &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
-6.       type=video/ogg&gt;
-7.     &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
-8.       type=video/mp4&gt;
-9.   &lt;/video&gt;
-</pre>
+3.    &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
+4.      type=video/webm&gt;
+5.    &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
+6.      type=video/ogg&gt;
+7.    &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
+8.      type=video/mp4&gt;
+9.  &lt;/video&gt;</pre>
 
 <h4>… and the CSS source code is as follows:</h4>
 
-<pre>
-1.   #w3devCampusVideo {
-2.    width: 300px;
-3.    &lt;b&gt;transition: all 0.5s ease-in-out;&lt;/b&gt;
-4.   }
+<pre>1.  #w3devCampusVideo {
+2.    width: 300px;
+3.    &lt;b&gt;transition: all 0.5s ease-in-out;&lt;/b&gt;
+4.  }
 5.   
-6.   #w3devCampusVideo&lt;/b&gt;:hover&lt;/b&gt; {
-7.     width:400px;
-8.     transform:rotate(-5deg);
-9.   }
-</pre>
+6.  #w3devCampusVideo&lt;/b&gt;:hover&lt;/b&gt; {
+7.    width:400px;
+8.    transform:rotate(-5deg);
+9.  }</pre>
 
 <h4>Fullscreen video that resizes and maintains ratios</h4>
 
@@ -3648,57 +3539,51 @@ attributes should be followed.</p>
 <details>
   <summary>HTML click to expand!</summary>
 
-<pre>
-1.    &lt;!DOCTYPE html&gt;
-2.    &lt;html lang=&quot;en&quot;&gt;
-3.    &lt;head&gt;
-4.      &lt;meta charset=&quot;utf-8&quot;&gt;
-5.      &lt;title&gt;Full width video like PayPal site&lt;/title&gt;
-6.    &lt;/head&gt;
-7.    &lt;body onload=&quot;init();&quot;&gt;
-8.      &lt;video id=&quot;myVideo&quot; autoplay&gt;
-9.        &lt;source
-10.         src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
-11.         type=video/webm&gt;
-12.       &lt;source
-13.         src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
-14.         type=video/ogg&gt;
-15.       &lt;source
-16.         src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
-17.         type=video/mp4&gt;
-18.     &lt;/video&gt;
-19.   &lt;/body&gt;
-</pre>
+<pre>1.   &lt;!DOCTYPE html&gt;
+2.   &lt;html lang=&quot;en&quot;&gt;
+3.   &lt;head&gt;
+4.     &lt;meta charset=&quot;utf-8&quot;&gt;
+5.     &lt;title&gt;Full width video like PayPal site&lt;/title&gt;
+6.   &lt;/head&gt;
+7.   &lt;body onload=&quot;init();&quot;&gt;
+8.     &lt;video id=&quot;myVideo&quot; autoplay&gt;
+9.       &lt;source
+10.        src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
+11.        type=video/webm&gt;
+12.      &lt;source
+13.        src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
+14.        type=video/ogg&gt;
+15.      &lt;source
+16.        src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
+17.        type=video/mp4&gt;
+18.    &lt;/video&gt;
+19.  &lt;/body&gt;</pre>
 
 </details>
 
 <h4>Here is the CSS (remove margins, remove padding, hide parts that could overflow from the &lt;body&gt;):</h4>
 
-<pre>
-  body {
-    margin:0;
-    padding:0;
-    overflow:hidden;
-  }
-</pre>
+<pre>body {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}</pre>
 
 <h4>And now the JavaScript code:</h4>
 
-<pre>
-  var video;
-  function init() {
-    // function called when the page is loaded
-    video = document.querySelector(&quot;#myVideo&quot;);
-    // For initial value
+<pre>var video;
+function init() {
+  // function called when the page is loaded
+  video = document.querySelector(&quot;#myVideo&quot;);
+  // For initial value
+  video.width = window.innerWidth;
+  video.height = window.innerHeight;
+  // For dealing with window resize
+  window.onresize = function() {
     video.width = window.innerWidth;
     video.height = window.innerHeight;
-    // For dealing with window resize
-    window.onresize = function() {
-      video.width = window.innerWidth;
-      video.height = window.innerHeight;
-    };
-  }
-</pre>
+  };
+}</pre>
 
 <h4>Example #2: with a YouTube video</h4>
 
@@ -3735,18 +3620,16 @@ of the video.</p>
 
 <h4>CSS code:</h4>
 
-<pre>
-  body {
-    margin:0;
-    padding:0;
-    overflow:hidden;
-  }
+<pre>body {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
  
-  video {
-    width:100%;
-    height:auto;
-  }
-</pre>
+video {
+  width:100%;
+  height:auto;
+}</pre>
 
 <ol start="2" type="1">
   <li>Full screen video with CSS effects</li>
@@ -3762,30 +3645,28 @@ this <a href="https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Backgroun
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-  &lt;!DOCTYPE html&gt;
-  &lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Full screen video with CSS effects &lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-      &lt;header&gt;
-        &lt;video autoplay loop=&quot;&quot;
-          poster=&quot;https://mainline.i3s.unice.fr/mooc/polina.jpg&quot;
-          id=&quot;bgvid&quot;&gt;
-          &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.webm&quot;
-            type=&quot;video/webm&quot;&gt;
-          &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.mp4&quot;
-            type=&quot;video/mp4&quot;&gt;
-        &lt;/video&gt;
-      &lt;/header&gt;
-      &lt;section&gt;
-        &lt;h1&gt;Full screen video with CSS effects&lt;/h1&gt;
-      &lt;/section&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;
-</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Full screen video with CSS effects &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;video autoplay loop=&quot;&quot;
+      poster=&quot;https://mainline.i3s.unice.fr/mooc/polina.jpg&quot;
+      id=&quot;bgvid&quot;&gt;
+      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.webm&quot;
+        type=&quot;video/webm&quot;&gt;
+      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.mp4&quot;
+        type=&quot;video/mp4&quot;&gt;
+    &lt;/video&gt;
+  &lt;/header&gt;
+  &lt;section&gt;
+    &lt;h1&gt;Full screen video with CSS effects&lt;/h1&gt;
+  &lt;/section&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -3794,32 +3675,30 @@ this <a href="https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Backgroun
 <details>
   <summary>CSS click to expand!</summary>
 
-<pre>
-  html, body{
-    color:white;
-    height: 100%;
-  }
-  header{
-    height: 100%;
-    background-image: url(&#39;https://mainline.i3s.unice.fr/mooc/dots.png&#39;), url(&#39;#&#39;);
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-    background-position: center center, top left;
-    font-family: sans-serif;
-    color: #051a00;
-  }
-  header video {
-    position:fixed;
-    top:50%;
-    left:50%;
-    min-width:100%;
-    min-height:100%;
-    width:auto;
-    height:auto;
-    z-index:-100;
-    transform:translateX(-50%) translateY(-50%);
-  }
-</pre>
+<pre>html, body{
+  color:white;
+  height: 100%;
+}
+header{
+  height: 100%;
+  background-image: url(&#39;https://mainline.i3s.unice.fr/mooc/dots.png&#39;), url(&#39;#&#39;);
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: center center, top left;
+  font-family: sans-serif;
+  color: #051a00;
+}
+header video {
+  position:fixed;
+  top:50%;
+  left:50%;
+  min-width:100%;
+  min-height:100%;
+  width:auto;
+  height:auto;
+  z-index:-100;
+  transform:translateX(-50%) translateY(-50%);
+}</pre>
 
 </details>
 
@@ -3851,8 +3730,7 @@ ratio.</p>
 <details>
   <summary>CSS click to expand!</summary>
 
-<pre>
-body {
+<pre>body {
    margin: 0;
 }
  
@@ -3862,8 +3740,7 @@ video {
    height: 100vh;
    object-fit: cover;
    object-position: center center;
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -3912,12 +3789,10 @@ Interface). For example, we will speak here of the “media API” to talk
 about the associated API.</p>
 <p>Like any HTML element, the &lt;video&gt; element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a &lt;video&gt; element:</p>
 
-<pre>
-1.   var video = document.createElement(&#39;video&#39;);
-2.   video.src = &#39;video.mp4&#39;;
-3.   video.controls = true;
-4.   document.body.appendChild(video);
-</pre>
+<pre>1.  var video = document.createElement(&#39;video&#39;);
+2.  video.src = &#39;video.mp4&#39;;
+3.  video.controls = true;
+4.  document.body.appendChild(video);</pre>
 
 <p>This will create a complete video player for the file “video.mp4”, with
 control buttons, and will add it to the &lt;body&gt; element of the page.</p>
@@ -4108,29 +3983,27 @@ setting the currentTime property to zero.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;video id=&quot;vid&quot; controls&gt;
+<pre>1.  &lt;video id=&quot;vid&quot; controls&gt;
 2.    &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
-3.            type=video/webm&gt;
+3.      type=video/webm&gt;
 4.  &lt;/video&gt;
 5.  &lt;p&gt;Example of custom controls:&lt;/p&gt;
 6.  &lt;button onclick=&quot;playVideo();&quot; style=&quot;cursor: pointer;&quot;&gt;Play&lt;/button&gt;
 7.  &lt;button onclick=&quot;pauseVideo();&quot; style=&quot;cursor: pointer;&quot;&gt;Pause&lt;/button&gt;
 8.  &lt;button onclick=&quot;rewindVideo();&quot; style=&quot;cursor: pointer;&quot;&gt;
-9.         Back to beginning&lt;/button&gt;
-10.  &lt;script&gt;
-11.    vid = document.querySelector(&quot;#vid&quot;);
-12.    function playVideo() {
-13.        vid.play();
+9.    Back to beginning&lt;/button&gt;
+10. &lt;script&gt;
+11.   vid = document.querySelector(&quot;#vid&quot;);
+12.   function playVideo() {
+13.     vid.play();
 14.   }
 15.   function pauseVideo() {
-16.        vid.pause();
+16.     vid.pause();
 17.   }
 18.   function rewindVideo() {
-19.        vid.currentTime = 0;
+19.     vid.currentTime = 0;
 20.   }
-21. &lt;/script&gt;
-</pre>
+21. &lt;/script&gt;</pre>
 
 </details>
 
@@ -4160,19 +4033,17 @@ when the video is ended.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-  &lt;video src=&quot;video.ogv&quot; id=&quot;myVideo&quot;&gt;
-    video not supported
-  &lt;/video&gt;
-  &lt;script type=&#39;text/javascript&#39;&gt;
-    var vid = document.querySelector(&#39;#myVideo&#39;);
-    vid.addEventListener(&#39;ended&#39;, playNextVideo, false);
-    function playNextVideo(e) {
-      // Whatever you want to do after the event, change the src attribute
-      // of the video element, for example, in order to play another video
-    }
-  &lt;/script&gt;
-</pre>
+<pre>&lt;video src=&quot;video.ogv&quot; id=&quot;myVideo&quot;&gt;
+  video not supported
+&lt;/video&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+  var vid = document.querySelector(&#39;#myVideo&#39;);
+  vid.addEventListener(&#39;ended&#39;, playNextVideo, false);
+  function playNextVideo(e) {
+    // Whatever you want to do after the event, change the src attribute
+    // of the video element, for example, in order to play another video
+  }
+&lt;/script&gt;</pre>
 
 </details>
 
@@ -4196,8 +4067,7 @@ continues with the next video.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.    &lt;head&gt;
 4.      &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -4206,41 +4076,40 @@ continues with the next video.</p>
 7.        var myVideo;
 8.        var currentVideo = 0;
 9.        var sources = [
-10.          &quot;https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4&quot;,
-12.          &quot;https://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4&quot;
-12.          ];
-13.  // Set the src of the video to the next URL in the playlist
-14.  // If at the end we start again from beginning (the modulo
-15.  // source.length does that)
-16.        function loadNextVideo() {
-17.          myVideo.src = sources[currentVideo % sources.length]
-18.          myVideo.load();
-19.          currentVideo++;
-20.        }
-21.  // listener plays the video
-22.      function loadAndplayNextVideo() {
-23.        console.log(&quot;playing &quot; + sources[currentVideo % sources.length])
-24.        loadNextVideo();
-25.        myVideo.play();
-26.      }
-27.  // Called when the page is loaded
-28.      function init(){
-29.  // get the video element using the DOM api
-30.      myVideo = document.querySelector(&quot;#myVideo&quot;);
-31.  // Defines a callback function called each time a video ended
-32.        myVideo.addEventListener(&#39;ended&#39;, loadAndplayNextVideo, false);
-33.  // Loads the first video when the page is loaded
-34.      loadNextVideo();
-35.      }
-36.    &lt;/script&gt;
-37.  &lt;/head&gt;
-38.  &lt;body onload=&quot;init()&quot;&gt;
-39.      &lt;video id=&quot;myVideo&quot;
-40.        controls&gt;
-41.      &lt;/video&gt;
-42.  &lt;/body&gt;
-43.  &lt;/html&gt;
-</pre>
+10.         &quot;https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4&quot;,
+12.         &quot;https://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4&quot;
+12.       ];
+13.       // Set the src of the video to the next URL in the playlist
+14.       // If at the end we start again from beginning (the modulo
+15.       // source.length does that)
+16.       function loadNextVideo() {
+17.         myVideo.src = sources[currentVideo % sources.length]
+18.         myVideo.load();
+19.         currentVideo++;
+20.       }
+21.       // listener plays the video
+22.       function loadAndplayNextVideo() {
+23.         console.log(&quot;playing &quot; + sources[currentVideo % sources.length])
+24.         loadNextVideo();
+25.         myVideo.play();
+26.       }
+27.       // Called when the page is loaded
+28.       function init(){
+29.         // get the video element using the DOM api
+30.         myVideo = document.querySelector(&quot;#myVideo&quot;);
+31.         // Defines a callback function called each time a video ended
+32.         myVideo.addEventListener(&#39;ended&#39;, loadAndplayNextVideo, false);
+33.         // Loads the first video when the page is loaded
+34.         loadNextVideo();
+35.       }
+36.     &lt;/script&gt;
+37.   &lt;/head&gt;
+38. &lt;body onload=&quot;init()&quot;&gt;
+39.   &lt;video id=&quot;myVideo&quot;
+40.     controls&gt;
+41.   &lt;/video&gt;
+42. &lt;/body&gt;
+43. &lt;/html&gt;</pre>
 
 </details>
 
@@ -4300,40 +4169,38 @@ the code.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
+<pre>...
+vid.addEventListener(&#39;error&#39;, function(evt) {
+  logEvent(evt,&#39;red&#39;);
+}, false);
+...
+function logEvent(evt, color) {
+  switch (evt.type) {
+    ...
+        case &#39;error&#39;:
+        var error = document.querySelector(&#39;video&#39;).error;
+        switch (error.code) {
+        case error.MEDIA_ERR_ABORTED:
+          note.innerHTML = &quot;fetching aborted at the user&#39;s request&quot;;
+          break;
+        case error.MEDIA_ERR_NETWORK:
+          note.innerHTML = &quot;a network error caused the browser to stop fetching the media&quot;;
+          break;
+        case error.MEDIA_ERR_DECODE:
+          note.innerHTML = &quot;an error occurred while decoding the media&quot;;
+          break;
+        case error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+          note.innerHTML = &quot;the media indicated by the src
+            attribute was not suitable&quot;;
+          break;
+        default:
+          note.innerHTML = &quot;an error occurred&quot;;
+          break;
+      }
+    break;
+  }
   ...
-  vid.addEventListener(&#39;error&#39;, function(evt) {
-    logEvent(evt,&#39;red&#39;);
-  }, false);
-  ...
-  function logEvent(evt, color) {
-    switch (evt.type) {
-       ...
-       case &#39;error&#39;:
-           var error = document.querySelector(&#39;video&#39;).error;
-           switch (error.code) {
-             case error.MEDIA_ERR_ABORTED:
-                note.innerHTML = &quot;fetching aborted at the user&#39;s request&quot;;
-                break;
-             case error.MEDIA_ERR_NETWORK:
-                note.innerHTML = &quot;a network error caused the browser to stop fetching the media&quot;;
-                break;
-             case error.MEDIA_ERR_DECODE:
-                note.innerHTML = &quot;an error occurred while decoding the media&quot;;
-                break;
-             case error.MEDIA_ERR_SRC_NOT_SUPPORTED:
-                note.innerHTML = &quot;the media indicated by the src
-                                  attribute was not suitable&quot;;
-                break;
-             default:
-                note.innerHTML = &quot;an error occurred&quot;;
-                break;
-           }
-           break;
-       }
-  ...
-  }
-</pre>
+}</pre>
 
 </details>
 
@@ -4370,50 +4237,48 @@ the movie duration for which there is data.”</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-  &lt;!DOCTYPE html&gt;
-  &lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;title&gt;JavaScript Progress Monitor&lt;/title&gt;
-    &lt;meta charset=&quot;utf-8&quot;/&gt;
-    &lt;script&gt;
-      function getPercentProg() {
-        var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
-        var endBuf = myVideo.buffered.end(0);
-        var soFar = parseInt(((endBuf / myVideo.duration) * 100));
-        document.getElementById(&quot;loadStatus&quot;).innerHTML = soFar + &#39;%&#39;;
-      }
-      // Will be called as soon as the page is ready on desktop computer,
-      // Only when a user clicks on play control or image on mobile
-      function myAutoPlay() {
-        var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
-        myVideo.play();
-      }
-      function addMyListeners(){
-        var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
-        myVideo.addEventListener(&#39;progress&#39;, getPercentProg, false);
-        // Calls autoplay only if the device is adapted
-        myVideo.addEventListener(&#39;canplaythrough&#39;, myAutoPlay, false);
-      }
-    &lt;/script&gt;
-  &lt;/head&gt;
-  &lt;body onload=&quot;addMyListeners()&quot;&gt;
-    &lt;h1&gt;Check progression of buffering before playing a movie. Useful withy
-      slow connexion (3G, etc.)&lt;/h1&gt;
-    &lt;div&gt;
-      &lt;video controls&gt;
-          &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.webm
-                  type=video/webm&gt;
-          &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.ogg  
-                  type=video/ogg&gt;
-          &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.mp4
-                  type=video/mp4&gt;
-      &lt;/video&gt;
-      &lt;p id=&quot;loadStatus&quot;&gt;Buffering...&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;title&gt;JavaScript Progress Monitor&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;script&gt;
+    function getPercentProg() {
+      var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
+      var endBuf = myVideo.buffered.end(0);
+      var soFar = parseInt(((endBuf / myVideo.duration) * 100));
+      document.getElementById(&quot;loadStatus&quot;).innerHTML = soFar + &#39;%&#39;;
+    }
+    // Will be called as soon as the page is ready on desktop computer,
+    // Only when a user clicks on play control or image on mobile
+    function myAutoPlay() {
+      var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
+      myVideo.play();
+    }
+    function addMyListeners(){
+      var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
+      myVideo.addEventListener(&#39;progress&#39;, getPercentProg, false);
+      // Calls autoplay only if the device is adapted
+      myVideo.addEventListener(&#39;canplaythrough&#39;, myAutoPlay, false);
+    }
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;addMyListeners()&quot;&gt;
+  &lt;h1&gt;Check progression of buffering before playing a movie. Useful withy
+    slow connexion (3G, etc.)&lt;/h1&gt;
+  &lt;div&gt;
+    &lt;video controls&gt;
+        &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.webm
+                type=video/webm&gt;
+        &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.ogg  
+                type=video/ogg&gt;
+        &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.mp4
+                type=video/mp4&gt;
+    &lt;/video&gt;
+    &lt;p id=&quot;loadStatus&quot;&gt;Buffering...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -4469,11 +4334,9 @@ this chapter.</p>
 
 <h4>Examples of the lines to add to an Apache Web server:</h4>
 
-<pre>
-1.  &lt;Files mysubtitle.vtt&gt;
+<pre>1.  &lt;Files mysubtitle.vtt&gt;
 2.    ForceType text/vtt;charset=utf-8
-3.  &lt;/Files&gt;
-</pre>
+3.  &lt;/Files&gt;</pre>
 
 <p>It is worth mentioning that most browsers work well with WebVTT, even
 if the MIME type is not defined.</p>
@@ -4490,19 +4353,17 @@ the source code shown below):</p>
   
 <p>The example uses a &lt;track&gt; element to insert basic captions to the video: sounds and music are described, in addition to standard subtitles that correspond to what the different movie characters say.</p>
 
-<pre>
-  &lt;video height=&quot;272&quot; width=&quot;640&quot;
-    poster=&quot;https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg&quot;
-    crossorigin=&quot;anonymous&quot;
-    controls&gt;
-  &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/sintel.mp4&quot;
-    type=&quot;video/mp4&quot;&gt;
-  &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/sintel.webm&quot;
-    type=&quot;video/webm&quot;&gt;
-  &lt;track src=&quot;https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt&quot;
-    kind=&quot;captions&quot; label=&quot;Closed Captions&quot; default&gt;
-  &lt;/video&gt;
-</pre>
+<pre>&lt;video height=&quot;272&quot; width=&quot;640&quot;
+  poster=&quot;https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg&quot;
+  crossorigin=&quot;anonymous&quot;
+  controls&gt;
+&lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/sintel.mp4&quot;
+  type=&quot;video/mp4&quot;&gt;
+&lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/sintel.webm&quot;
+  type=&quot;video/webm&quot;&gt;
+&lt;track src=&quot;https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt&quot;
+  kind=&quot;captions&quot; label=&quot;Closed Captions&quot; default&gt;
+&lt;/video&gt;</pre>
 
 <h4>Notes:</h4>
 
@@ -4520,24 +4381,22 @@ the source code shown below):</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-  &lt;video src=&quot;brave.webm&quot;&gt;
-    &lt;track kind=subtitles src=brave.en.vtt
-          srclang=en
-          label=&quot;English&quot;&gt;
-    &lt;track kind=captions src=brave.en.hoh.vtt
-          srclang=en
-          label=&quot;English for the Hard of Hearing&quot;&gt;
-    &lt;track kind=subtitles src=brave.fr.vtt
-          srclang=fr
-          lang=fr 
-          label=&quot;Français&quot;&gt;
-    &lt;track kind=subtitles src=brave.de.vtt
-          srclang=de
-          lang=de
-          label=&quot;Deutsch&quot;&gt;
-  &lt;/video&gt;
-</pre>
+<pre>&lt;video src=&quot;brave.webm&quot;&gt;
+  &lt;track kind=subtitles src=brave.en.vtt
+    srclang=en
+    label=&quot;English&quot;&gt;
+  &lt;track kind=captions src=brave.en.hoh.vtt
+    srclang=en
+    label=&quot;English for the Hard of Hearing&quot;&gt;
+  &lt;track kind=subtitles src=brave.fr.vtt
+    srclang=fr
+    lang=fr 
+    label=&quot;Français&quot;&gt;
+  &lt;track kind=subtitles src=brave.de.vtt
+    srclang=de
+    lang=de
+    label=&quot;Deutsch&quot;&gt;
+&lt;/video&gt;</pre>
 
 </details>
 
@@ -4562,16 +4421,14 @@ the source code shown below):</p>
 <p>The "<a href="http://dev.w3.org/html5/webvtt/" target="_blank" rel="noopener noreferrer">;WebVTT: The Web Video Text Tracks Format </a>" defines files that contain text for captions and subtitles, and much more… The WebVTT files are used with the src attribute of the &lt;track&gt; element, that can be used inside a &lt;video&gt;…&lt;/video&gt;.</p>
 <p>In the interactive example presented before, we used a file called sintel-captions.vtt:</p>
 
-<pre>
-  &lt;video height=&quot;272&quot; width=&quot;640&quot;
-    poster=&quot;https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg&quot;
-    crossorigin=&quot;anonymous&quot;
-    controls&gt;
-    ...
-  &lt;track src=&quot;https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt&quot;
-    kind=&quot;captions&quot; label=&quot;Closed Captions&quot; default&gt;
-  &lt;/video&gt;
-</pre>
+<pre>&lt;video height=&quot;272&quot; width=&quot;640&quot;
+  poster=&quot;https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg&quot;
+  crossorigin=&quot;anonymous&quot;
+  controls&gt;
+  ...
+&lt;track src=&quot;https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt&quot;
+  kind=&quot;captions&quot; label=&quot;Closed Captions&quot; default&gt;
+&lt;/video&gt;</pre>
 
 <p>And here is an extract of the corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt" target="_blank" rel="noopener noreferrer">sintel-captions.vtt</a> file:</p>
 
@@ -21220,6 +21077,6 @@ good understanding of the material.</p>
 </ul>
 
 <h5>. . .The end.<br>
-<br>last updated 05-31-23 11:42am</h5>
+<br>last updated 06-02-23 8:55am</h5>
   </body>
 </html>
