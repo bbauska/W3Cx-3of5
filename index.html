@@ -14889,8 +14889,7 @@ height!</i></b></p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;style&gt;
+<pre>&lt;style&gt;
     #parentDiv {
         width:100%;
         height:50%;
@@ -14901,8 +14900,7 @@ height!</i></b></p>
     canvas {
        border: 2px solid black;
     }
-&lt;/style&gt;
-</pre>
+&lt;/style&gt;</pre>
 
 </details>
 
@@ -14911,8 +14909,7 @@ height!</i></b></p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-function init() {
+<pre>function init() {
    ...
    // IMPORTANT: there is NO WAY to listen to a DIV&#39;s resize
    // listen to the window instead.
@@ -14927,8 +14924,7 @@ function resizeCanvasAccordingToParentSize() {
      canvas.height = divcanvas.clientHeight;
      ...
      // draw something, taking into account the new canvas size
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -14961,8 +14957,7 @@ trick:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  function drawMonster(x, y, angle, headColor, eyeColor) {
+<pre>1.  function drawMonster(x, y, angle, headColor, eyeColor) {
 2.       // GOOD PRACTICE: SAVE CONTEXT AND RESTORE IT AT THE END
 3.       ctx.save();
 4.  
@@ -14983,8 +14978,7 @@ trick:</p>
 19.      ctx.fillStyle=headColor;
 20.      ctx.fillRect(0,0,200,200);
 21.      ...
-22. }
-</pre>
+22. }</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15266,8 +15260,7 @@ the id of the form control. </p>
 
 <h4>Source code:</h4>
 
-<pre>
-1.  &lt;label for=&quot;first_name&quot;&gt;Your First Name&lt;/label&gt;
+<pre>1.  &lt;label for=&quot;first_name&quot;&gt;Your First Name&lt;/label&gt;
 2.  &lt;input id=&quot;first_name&quot; type=&quot;text&quot; name=&quot;fname&quot;/&gt;</pre>
 
 <h4>Example #2</h4>
@@ -15276,11 +15269,9 @@ the id of the form control. </p>
 
 <h4>Source code (with &lt;input&gt; inside the &lt;label&gt;):</h4>
 
-<pre>
-&lt;label for=first_name&quot;&gt;&lt;span lang=en&quot;&gt;Your First Name&lt;/span&gt;
+<pre>&lt;label for=first_name&quot;&gt;&lt;span lang=en&quot;&gt;Your First Name&lt;/span&gt;
   &lt;input id=&quot;first_name&quot; type=&quot;text&quot; name=&quot;fname&quot;/&gt;
-&lt;/label&gt;
-</pre>
+&lt;/label&gt;</pre>
 
 <h4>Example #3</h4>
 
@@ -15295,13 +15286,11 @@ the id of the form control. </p>
 
 <h4>Source code:</h4>
 
-<pre>
-1. &lt;label for=&quot;firstname&quot;&gt;First name:&lt;/label&gt;
+<pre>1. &lt;label for=&quot;firstname&quot;&gt;First name:&lt;/label&gt;
 2. &lt;input type=&quot;text&quot; name=&quot;firstname&quot; id=&quot;firstname&quot;&gt;&lt;br&gt;
 3. 
 4. &lt;label for=&quot;subscribe&quot;&gt;Subscribe to newsletter&lt;/label&gt;
-5. &lt;input type=&quot;checkbox&quot; name=&quot;subscribe&quot; id=&quot;subscribe&quot;&gt;
-</pre>
+5. &lt;input type=&quot;checkbox&quot; name=&quot;subscribe&quot; id=&quot;subscribe&quot;&gt;</pre>
 
 <h4>Labeling buttons</h4>
 
@@ -15316,12 +15305,10 @@ type=“submit” value=“Please submit”&gt;, renders a text button.</p>
 
 <h4>Source code for the “Submit” and “Cancel” buttons example:</h4>
 
-<pre>
-1. &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+<pre>1. &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
 2. &lt;button type=&quot;button&quot;&gt;Cancel&lt;/button&gt;
 3. &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-4. &lt;input type=&quot;button&quot; value=&quot;Cancel&quot;&gt;
-</pre>
+4. &lt;input type=&quot;button&quot; value=&quot;Cancel&quot;&gt;</pre>
 
 <p>These give the same results:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15344,9 +15331,7 @@ type=“submit” value=“Please submit”&gt;, renders a text button.</p>
 
 <h4>Source code:</h4>
 
-<pre>
-&lt;label for=&quot;address&quot;&gt;Enter your address:&lt;/label&gt;&lt;br&gt; &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
-</pre>
+<pre>&lt;label for=&quot;address&quot;&gt;Enter your address:&lt;/label&gt;&lt;br&gt; &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-3-4">5.3.4 Grouping Controls</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15379,8 +15364,7 @@ grouped using &lt;fieldset&gt;.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;fieldset&gt;
+<pre>&lt;fieldset&gt;
   &lt;legend&gt;Output format&lt;/legend&gt;
   &lt;div&gt;
     &lt;input type=&quot;radio&quot; name=&quot;format&quot; id=&quot;txt&quot; value=&quot;txt&quot; checked&gt;
@@ -15391,8 +15375,7 @@ grouped using &lt;fieldset&gt;.</p>
     &lt;label for=&quot;csv&quot;&gt;CSV file&lt;/label&gt;
   &lt;/div&gt;
   [...]
-&lt;/fieldset&gt;
-</pre>
+&lt;/fieldset&gt;</pre>
 
 </details>
 
@@ -15414,16 +15397,14 @@ an opt-in function for receiving different types of information.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;fieldset&gt;
+<pre>&lt;fieldset&gt;
   &lt;legend&gt;I want to receive&lt;/legend&gt;
     &lt;div&gt;
       &lt;input type=&quot;checkbox&quot; name=&quot;newsletter&quot; id=&quot;check_1&quot;&gt;
       &lt;label for=&quot;check_1&quot;&gt;The weekly newsletter&lt;/label&gt;
     &lt;/div&gt;
  [...]
-&lt;/fieldset&gt;
-</pre>
+&lt;/fieldset&gt;</pre>
 
 </details>
 
@@ -15478,14 +15459,12 @@ colors. Now, it’s bundled in the browser!</p>
 <h4>Typical use</h4>
 <h4>Inserting a color chooser is as simple as:</h4>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;&lt;head&gt;...&lt;/head&gt;
   &lt;body&gt;
     Choose a color : &lt;b&gt;&lt;input type=&quot;color&quot; value=&quot;#FF00F&quot;/&gt;&lt;/b&gt;
   &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 <i>Note</i>: In this chapter we are simplifying the examples, as we
 usually embed input elements in a &lt;form&gt;…&lt;/form&gt;.
@@ -15521,8 +15500,7 @@ href="https://jsbin.com/jozuter/1/edit?html,css,js,console,output" target="_blan
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;/head&gt;
   &lt;body&gt;
     Select a color : &lt;input type=&quot;color&quot; id=&quot;colorChooser&quot;/&gt;
@@ -15534,8 +15512,7 @@ href="https://jsbin.com/jozuter/1/edit?html,css,js,console,output" target="_blan
       }, false);
     &lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -15563,15 +15540,13 @@ should be displayed:</p>
 
 <h4>Source code extract:</h4>
 
-<pre>
-&lt;input type=&quot;color&quot; value=&quot;#333333&quot; list=&quot;colors&quot;&gt;
+<pre>&lt;input type=&quot;color&quot; value=&quot;#333333&quot; list=&quot;colors&quot;&gt;
   
 &lt;datalist id=&quot;colors&quot;&gt;
    &lt;option&gt;#0000FF&lt;/option&gt;
    &lt;option&gt;#00FF00&lt;/option&gt;
    &lt;option&gt;#FF0000&lt;/option&gt;
-&lt;/datalist&gt;
-</pre>
+&lt;/datalist&gt;</pre>
 
 <p>Note that the id of the &lt;datalist&gt; element should be the same
 as the value of the list attribute of the input field.</p>
@@ -15646,10 +15621,8 @@ href="https://webcomponents.org/" target="_blank" rel="noopener noreferrer">Web 
 
 <p>The default usage is something like:</p>
 
-<pre>
-&lt;label for=&quot;birthday&quot;&gt;Choose birthday party date: &lt;/label&gt;
-&lt;input type=&quot;date&quot; id=&quot;birthday&quot;&gt;
-</pre>
+<pre>&lt;label for=&quot;birthday&quot;&gt;Choose birthday party date: &lt;/label&gt;
+&lt;input type=&quot;date&quot; id=&quot;birthday&quot;&gt;</pre>
 
 <p>Result:             Choose birthday party date:      </p>
 <p>Most of the time you will add other attributes to give some
@@ -15677,15 +15650,13 @@ field or <a href="https://jsbin.com/faluta/1/edit?html,output" target="_blank"
 -->
 <h4>Source code:</h4>
 
-<pre>
-...
+<pre>...
 &lt;input type=&quot;date&quot;
    id=&quot;birthdayParty&quot;
    value=&quot;2015-06-20&quot;
    min=&quot;2015-06-20&quot;
    max=&quot;2015-06-30&quot;&gt;
-...
-</pre>
+...</pre>
 
 <h4>Choosing one day in a given week, etc. with the step: attribute</h4>
 
@@ -15706,14 +15677,12 @@ JSBin</a>! (screenshot from Chrome).</p>
 
 <h4>Extract from source code:</h4>
 
-<pre>
-&lt;input type=&quot;date&quot;
+<pre>&lt;input type=&quot;date&quot;
   id=&quot;birthdayParty&quot;
   value=&quot;2015-06-20&quot;
   min=&quot;2015-06-20&quot;
   max=&quot;2015-06-30&quot;
-  step=&quot;7&quot;&gt;
-</pre>
+  step=&quot;7&quot;&gt;</pre>
 
 <h4>Combining with the &lt;datalist&gt; element to restrict the choice of possible values</h4>
 
@@ -15728,8 +15697,7 @@ JSBin</a>! (screenshot from Chrome).</p>
 
 <h4>Extract from source code:</h4>
 
-<pre>
-&lt;input type=&quot;date&quot;
+<pre>&lt;input type=&quot;date&quot;
   id=&quot;birthdayParty&quot;
   list=&quot;birthdayPartyPossibleDates&quot;
   value=&quot;2015-06-20&quot;&gt;
@@ -15737,8 +15705,7 @@ JSBin</a>! (screenshot from Chrome).</p>
   &lt;option label=&quot;Best for me&quot;&gt;2015-06-20&lt;/option&gt;
   &lt;option label=&quot;Ok for me too &quot;&gt;2015-06-27&lt;/option&gt;
   &lt;option label=&quot;This one is a sunday, hmmm&quot;&gt;2015-06-28&lt;/option&gt;
-&lt;/datalist&gt;
-</pre>
+&lt;/datalist&gt;</pre>
 
 <p><b>The list attribute of the input element must match
 the id attribute of the datalist element.</b></p>
@@ -15763,35 +15730,33 @@ date/time is chosen.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;&lt;head&gt;...&lt;/head&gt;
 3.  &lt;body&gt;
-4.  Testing the new date input field.&lt;p&gt;
-5.  Choose a date/time : &lt;input type=&quot;date&quot; id=&quot;date&quot; /&gt;&lt;/p&gt;
-6.  &lt;p&gt;
-7.  You picked: &lt;span id=&quot;pickedDate&quot;&gt;&lt;/span&gt;
-8.  &lt;/p&gt;
-9.  After you have tried the first example, change the value of the &quot;type&quot; attribute to:
-10. &lt;ul&gt;
-11.   &lt;li&gt;datetime&lt;/li&gt;
-12.   &lt;li&gt;datetime-local&lt;/li&gt;
-13.   &lt;li&gt;time&lt;/li&gt;
-14.   &lt;li&gt;week&lt;/li&gt;
-15.   &lt;li&gt;month&lt;/li&gt;
-16. &lt;/ul&gt;
-17. And see the result.
-18. &lt;script&gt;
-19. var field = document.querySelector(&quot;#date&quot;);
-20. var result = document.querySelector(&quot;#pickedDate&quot;);
-21. field.oninput = function(evt) {
-22. var date = this.value;
-23. pickedDate.innerHTML = &quot;&lt;b&gt;&quot;+date+&quot;&lt;/b&gt;&quot;;
-24. }
-25. &lt;/script&gt;
+4.    Testing the new date input field.&lt;p&gt;
+5.    Choose a date/time : &lt;input type=&quot;date&quot; id=&quot;date&quot; /&gt;&lt;/p&gt;
+6.    &lt;p&gt;
+7.      You picked: &lt;span id=&quot;pickedDate&quot;&gt;&lt;/span&gt;
+8.    &lt;/p&gt;
+9.    After you have tried the first example, change the value of the &quot;type&quot; attribute to:
+10.   &lt;ul&gt;
+11.     &lt;li&gt;datetime&lt;/li&gt;
+12.     &lt;li&gt;datetime-local&lt;/li&gt;
+13.     &lt;li&gt;time&lt;/li&gt;
+14.     &lt;li&gt;week&lt;/li&gt;
+15.     &lt;li&gt;month&lt;/li&gt;
+16.   &lt;/ul&gt;
+17.     And see the result.
+18.   &lt;script&gt;
+19.     var field = document.querySelector(&quot;#date&quot;);
+20.     var result = document.querySelector(&quot;#pickedDate&quot;);
+21.     field.oninput = function(evt) {
+22.       var date = this.value;
+23.       pickedDate.innerHTML = &quot;&lt;b&gt;&quot;+date+&quot;&lt;/b&gt;&quot;;
+24.     }
+25.   &lt;/script&gt;
 26. &lt;/body&gt;
-27. &lt;/html&gt;
-</pre>
+27. &lt;/html&gt;</pre>
 
 </details>
 
@@ -15827,32 +15792,30 @@ we can get with var date = new Date();</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;body&gt;
-2.  &lt;label for=&quot;birthDate&quot;&gt;Enter your birth date: &lt;/label&gt;&lt;p&gt;
-3.  &lt;input type=&quot;date&quot; id=&quot;birthDate&quot; &gt;
-4.  &lt;p&gt;
-5.  You picked: &lt;span id=&quot;pickedDate&quot;&gt;&lt;/span&gt;&lt;p&gt;
-6.  &lt;span id=&quot;pastFuture&quot;&gt;&lt;/span&gt;
-7.  &lt;/p&gt;
-8.  &lt;script&gt;
-9.  var field = document.querySelector(&quot;#birthDate&quot;);
-10. var result = document.querySelector(&quot;#pickedDate&quot;);
-11. var pastFuture = document.querySelector(&quot;#pastFuture&quot;);
-12. field.oninput = function(evt) {
-13. var date = this.value;
-14. pickedDate.innerHTML = &quot;&lt;b&gt;&quot;+date+&quot;&lt;/b&gt;&quot;;
-15. if(date.valueAsDate &lt;= new Date()) {
-16. pastFuture.style.color = &#39;green&#39;;
-17. pastFuture.innerHTML = &quot;&lt;b&gt;Date in the past, ok!&lt;/b&gt;&quot;
-18. } else {
-19. pastFuture.style.color = &#39;red&#39;;
-20. pastFuture.innerHTML = &quot;&lt;b&gt;Date in the future, you&#39;re not even born!&lt;/b&gt;&quot;
-21. }
-22. }
-23. &lt;/script&gt;
-24. &lt;/body&gt;
-</pre>
+<pre>1.  &lt;body&gt;
+2.    &lt;label for=&quot;birthDate&quot;&gt;Enter your birth date: &lt;/label&gt;&lt;p&gt;
+3.    &lt;input type=&quot;date&quot; id=&quot;birthDate&quot; &gt;
+4.    &lt;p&gt;
+5.      You picked: &lt;span id=&quot;pickedDate&quot;&gt;&lt;/span&gt;&lt;p&gt;
+6.      &lt;span id=&quot;pastFuture&quot;&gt;&lt;/span&gt;
+7.    &lt;/p&gt;
+8.    &lt;script&gt;
+9.      var field = document.querySelector(&quot;#birthDate&quot;);
+10.     var result = document.querySelector(&quot;#pickedDate&quot;);
+11.     var pastFuture = document.querySelector(&quot;#pastFuture&quot;);
+12.     field.oninput = function(evt) {
+13.       var date = this.value;
+14.       pickedDate.innerHTML = &quot;&lt;b&gt;&quot;+date+&quot;&lt;/b&gt;&quot;;
+15.       if(date.valueAsDate &lt;= new Date()) {
+16.         pastFuture.style.color = &#39;green&#39;;
+17.         pastFuture.innerHTML = &quot;&lt;b&gt;Date in the past, ok!&lt;/b&gt;&quot;
+18.       } else {
+19.         pastFuture.style.color = &#39;red&#39;;
+20.         pastFuture.innerHTML = &quot;&lt;b&gt;Date in the future, you&#39;re not even born!&lt;/b&gt;&quot;
+21.       }
+22.     }
+23.   &lt;/script&gt;
+24. &lt;/body&gt;</pre>
 
 </details>
 
@@ -15863,7 +15826,7 @@ given dates using JavaScript. To check that the chosen date is before
 
 <pre>
 if(this.valueAsDate &lt;= new Date(2000,1,1)) {
-...
+  ...
 }
 &lt;input type=&quot;datetime&quot;&gt;, &quot;week&quot;, &quot;month&quot;, &quot;datetime-local&quot;, etc.
 </pre>
@@ -15984,25 +15947,23 @@ presented in a later section dedicated to form validation.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
-4.  &lt;meta charset=&quot;utf-8&quot;&gt;
-5.  &lt;title&gt;Example of input type=email&lt;/title&gt;
-6.  &lt;style&gt;
-7.  input:invalid {
-8.  background-color:pink;
-9.  }
-10. &lt;/style&gt;
+4.    &lt;meta charset=&quot;utf-8&quot;&gt;
+5.    &lt;title&gt;Example of input type=email&lt;/title&gt;
+6.    &lt;style&gt;
+7.      input:invalid {
+8.        background-color:pink;
+9.      }
+10.   &lt;/style&gt;
 11. &lt;/head&gt;
 12. &lt;body&gt;
-13. &lt;label for=&quot;email&quot;&gt;Enter your email &lt;/label&gt;
-14. &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
+13.   &lt;label for=&quot;email&quot;&gt;Enter your email &lt;/label&gt;
+14.   &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
 15. &lt;/body&gt;
 16. &lt;/html&gt;
 </pre>
-
 </details>
 
 <p>Note the CSS rule that turns the background color of the email input
@@ -16048,26 +16009,24 @@ another section of this course. It is supported by all recent major Web browse
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
-4.  &lt;meta charset=&quot;utf-8&quot;&gt;
-5.  &lt;title&gt;Example of input type=tel&lt;/title&gt;
-6.  &lt;style&gt;
-7.  input:invalid {
-8.  background-color:pink;
-9.  }
-10. &lt;/style&gt;
+4.    &lt;meta charset=&quot;utf-8&quot;&gt;
+5.    &lt;title&gt;Example of input type=tel&lt;/title&gt;
+6.    &lt;style&gt;
+7.      input:invalid {
+8.        background-color:pink;
+9.      }
+10.   &lt;/style&gt;
 11. &lt;/head&gt;
 12. &lt;body&gt;
-13. &lt;label for=&quot;tel&quot;&gt;Enter a telephone number:&lt;/label&gt;
-14. &lt;input type=&quot;tel&quot; id=&quot;tel&quot;
-15. placeholder=&quot;(555) 555-5555&quot;
-16. pattern=&quot;(?d{3})?[-s]d{3}[-s]d{4}.*?)&quot;/&gt;
+13.   &lt;label for=&quot;tel&quot;&gt;Enter a telephone number:&lt;/label&gt;
+14.   &lt;input type=&quot;tel&quot; id=&quot;tel&quot;
+15.   placeholder=&quot;(555) 555-5555&quot;
+16.   pattern=&quot;(?d{3})?[-s]d{3}[-s]d{4}.*?)&quot;/&gt;
 17. &lt;/body&gt;
-18. &lt;/html&gt;
-</pre>
+18. &lt;/html&gt;</pre>
 
 </details>
 
@@ -16094,28 +16053,26 @@ URLs:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head &gt;
-4.  &lt;meta charset=&quot;utf-8&quot;&gt;
-5.  &lt;title&gt;Example of input type=url&lt;/title&gt;
-6.  &lt;style&gt;
-7.  input:invalid {
-8.  background-color: lightPink;
-9.  }
-10. &lt;/style&gt;
+4.    &lt;meta charset=&quot;utf-8&quot;&gt;
+5.    &lt;title&gt;Example of input type=url&lt;/title&gt;
+6.    &lt;style&gt;
+7.      input:invalid {
+8.        background-color: lightPink;
+9.      }
+10.   &lt;/style&gt;
 11. &lt;/head&gt;
 12. &lt;body&gt;
-13. &lt;label for=&quot;url1&quot;&gt;Enter a URL (default validation):&lt;/label&gt;
-14. &lt;input type=&quot;url&quot; id=&quot;url1&quot;/&gt;
-15. &lt;p&gt;
-16. &lt;label for=&quot;url2&quot;&gt;Enter a URL (custom validation, must start with http, https or ftp):&lt;/label&gt;
-17. &lt;input id=&quot;url2&quot; type=&quot;url&quot; placeholder=&quot;https://www.domain.com&quot;
-18. pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]*&quot;/&gt;&lt;p&gt;
+13.   &lt;label for=&quot;url1&quot;&gt;Enter a URL (default validation):&lt;/label&gt;
+14.   &lt;input type=&quot;url&quot; id=&quot;url1&quot;/&gt;
+15.   &lt;p&gt;
+16.   &lt;label for=&quot;url2&quot;&gt;Enter a URL (custom validation, must start with http, https or ftp):&lt;/label&gt;
+17.   &lt;input id=&quot;url2&quot; type=&quot;url&quot; placeholder=&quot;https://www.domain.com&quot;
+18.   pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]*&quot;/&gt;&lt;p&gt;
 19. &lt;/body&gt;
-20. &lt;/html&gt;
-</pre>
+20. &lt;/html&gt;</pre>
 
 </details>
 
@@ -16141,13 +16098,11 @@ current implementations show variations in the look and feel.</p>
 
 <h4>Typical use:</h4>
 
-<pre>
-&lt;label for=&quot;search1&quot;&gt;Simple search: &lt;/label&gt;
+<pre>&lt;label for=&quot;search1&quot;&gt;Simple search: &lt;/label&gt;
   &lt;input type=search id=&quot;search1&quot;&gt;
   &lt;p&gt;
     &lt;label for=&quot;search2&quot;&gt;Search with attribute &lt;code&gt;results=5&lt;/code&gt; (try with Safari): &lt;/label&gt;
-    &lt;input type=search id=&quot;search2&quot; results=5&gt;
-</pre>
+    &lt;input type=search id=&quot;search2&quot; results=5&gt;</pre>
 
 <p>Results on Chrome and Opera desktop - notice the small cross on the
 right when one enters a value:</p>
