@@ -13841,8 +13841,7 @@ what HTML element has the focus, etc…</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -13944,8 +13943,7 @@ cancelAnimationFrame(requestId);
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;script&gt;
+<pre>1.  &lt;script&gt;
 2.  var canvas, ctx;
 3.  var monsterX=100, monsterY=100, monsterAngle=0;
 4.  var incrementX = 0;
@@ -13993,8 +13991,7 @@ cancelAnimationFrame(requestId);
 46.     // call again mainloop after 16.6 ms (60 frames/s)
 47.     requestId = requestAnimationFrame(animationLoop);
 48. }
-49. &lt;/script&gt;
-</pre>
+49. &lt;/script&gt;</pre>
 
 </details>
 
@@ -14007,18 +14004,14 @@ never have the focus!</p>
 Without it, it will never get the focus!</p>
 <p>The trick is to declare the canvas like this:</p>
 
-<pre>
-1.  &lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; tabindex=&quot;1&quot; height=&quot;200&quot;&gt;
-2.  &lt;/canvas&gt;
-</pre>
+<pre>1.  &lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; tabindex=&quot;1&quot; height=&quot;200&quot;&gt;
+2.  &lt;/canvas&gt;</pre>
 
 <h4>And we force the canvas to get the focus with:</h4>
 
-<pre>
-1.  canvas=document.getElementById(&#39;myCanvas&#39;);
+<pre>1.  canvas=document.getElementById(&#39;myCanvas&#39;);
 2.  ...
-3.  canvas.focus();
-</pre>
+3.  canvas.focus();</pre>
 
 <p>Now, if we try an example with the above canvas declaration, we
 show when an HTML element has the focus: a border is added to it.</p>
@@ -14035,45 +14028,43 @@ show when an HTML element has the focus: a border is added to it.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Listening to key events only in the canvas - Example #3&lt;/title&gt;
-&lt;style type=&quot;text/css&quot;&gt;
-canvas {
-border:1px solid black;
-}
-&lt;/style&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Listening to key events only in the canvas - Example #3&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    canvas {
+      border:1px solid black;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-This example shows how to handle key events in a canvas by adding a key listener to the canvas object (see the blue border around the canvas... it shows that the canvas has the focus. Try to click outside of the canvas: it will lose the focus).
-&lt;p&gt;
-If you don&#39;t want a border to appear when you click on the canvas, set its style to outline: none
-&lt;/p&gt;
-&lt;p&gt;Press a key when the canvas has the focus: an alert will display the keycode of the key you pressed. Problem: if the canvas looses the focus, key press are no more detected...&lt;/p&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; tabindex=&quot;1&quot; height=&quot;200&quot;&gt;
-&lt;/canvas&gt;
-&lt;script&gt;
-var canvas;
-function init() {
-canvas=document.getElementById(&#39;myCanvas&#39;);
-// This will work only if the canvas has the focus
-canvas.addEventListener(&#39;keydown&#39;, handleKeydown, false);
-// We can set the focus on the canvas like that:
-//canvas.focus();
-// ... but it will stop working if we click somewhere else
-// in the document
-}
-function handleKeydown(e){
-alert(&#39;keycode: &#39;+e.keyCode);
-return false;
-};
-&lt;/script&gt;
+  This example shows how to handle key events in a canvas by adding a key listener to the canvas object (see the blue border around the canvas... it shows that the canvas has the focus. Try to click outside of the canvas: it will lose the focus).
+  &lt;p&gt;
+    If you don&#39;t want a border to appear when you click on the canvas, set its style to outline: none
+  &lt;/p&gt;
+  &lt;p&gt;Press a key when the canvas has the focus: an alert will display the keycode of the key you pressed. Problem: if the canvas looses the focus, key press are no more detected...&lt;/p&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; tabindex=&quot;1&quot; height=&quot;200&quot;&gt;
+  &lt;/canvas&gt;
+  &lt;script&gt;
+    var canvas;
+    function init() {
+      canvas=document.getElementById(&#39;myCanvas&#39;);
+      // This will work only if the canvas has the focus
+      canvas.addEventListener(&#39;keydown&#39;, handleKeydown, false);
+      // We can set the focus on the canvas like that:
+      //canvas.focus();
+      // ... but it will stop working if we click somewhere else
+      // in the document
+    }
+    function handleKeydown(e){
+      alert(&#39;keycode: &#39;+e.keyCode);
+      return false;
+    };
+  &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -14093,8 +14084,7 @@ of the canvas, then press a key: this time nothing happens!</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  var canvas;
+<pre>1.  var canvas;
 2.  
 3.  function init() {
 4.       canvas=document.getElementById(&#39;myCanvas&#39;);
@@ -14113,8 +14103,7 @@ of the canvas, then press a key: this time nothing happens!</p>
 17. function handleKeydown(e){
 18.      alert(&#39;keycode: &#39;+e.keyCode);
 19.      return false;
-20. };
-</pre>
+20. };</pre>
 
 </details>
 
@@ -14147,8 +14136,7 @@ we call canvas.blur() to unset the focus.</p>
 <details>
   <summary>Click to expand!</summary>
   
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -14249,8 +14237,7 @@ cancelAnimationFrame(requestId);
 }
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -14259,8 +14246,7 @@ cancelAnimationFrame(requestId);
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  function init() {
+<pre>1.  function init() {
 2.     // This function is called after the page is loaded
 3.     // 1 - Get the canvas
 4.     canvas = document.getElementById(&#39;myCanvas&#39;);
@@ -14286,8 +14272,7 @@ cancelAnimationFrame(requestId);
 24. function unsetFocus(evt) {
 25.    canvas.blur();
 26.    incrementX = 0; // stop the monster if the mouse exists the canvas
-27. };
-</pre>
+27. };</pre>
 
 </details>
 
@@ -14303,11 +14288,9 @@ when the event occurs.</p>
 <p>The example below is about listening to mouseup and mousedown events
 (when a user presses or releases any mouse button):</p>
 
-<pre>
-1.  canvas.addEventListener(&#39;mousedown&#39;, function (evt) {
+<pre>1.  canvas.addEventListener(&#39;mousedown&#39;, function (evt) {
 2.  // do something with to the mousedown event
-3.  });
-</pre>
+3.  });</pre>
 
 <p>The event received by the listener function will be used for getting
 the button number or the coordinates of the mouse cursor. Before looking
@@ -14364,43 +14347,41 @@ of any element in the page: getBoundingClientRect().</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-var canvas, ctx, mousePos, mouseButton;
+<pre>var canvas, ctx, mousePos, mouseButton;
 window.onload = function init() {
-canvas = document.getElementById(&#39;myCanvas&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-canvas.addEventListener(&#39;mousemove&#39;, function (evt) {
-mousePos = getMousePos(canvas, evt);
-var message = &#39;Mouse position: &#39; + mousePos.x + &#39;,&#39; + mousePos.y;
-writeMessage(canvas, message);
-}, false);
-canvas.addEventListener(&#39;mousedown&#39;, function (evt) {
-mouseButton = evt.button;
-var message = &quot;Mouse button &quot; + evt.button + &quot; down at position: &quot; + mousePos.x + &#39;,&#39; + mousePos.y;
-writeMessage(canvas, message);
-}, false);
-canvas.addEventListener(&#39;mouseup&#39;, function (evt) {
-var message = &quot;Mouse up at position: &quot; + mousePos.x + &#39;,&#39; + mousePos.y;
-writeMessage(canvas, message);
-}, false);
+  canvas = document.getElementById(&#39;myCanvas&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  canvas.addEventListener(&#39;mousemove&#39;, function (evt) {
+    mousePos = getMousePos(canvas, evt);
+    var message = &#39;Mouse position: &#39; + mousePos.x + &#39;,&#39; + mousePos.y;
+    writeMessage(canvas, message);
+  }, false);
+  canvas.addEventListener(&#39;mousedown&#39;, function (evt) {
+    mouseButton = evt.button;
+    var message = &quot;Mouse button &quot; + evt.button + &quot; down at position: &quot; + mousePos.x + &#39;,&#39; +   mousePos.y;
+    writeMessage(canvas, message);
+  }, false);
+  canvas.addEventListener(&#39;mouseup&#39;, function (evt) {
+    var message = &quot;Mouse up at position: &quot; + mousePos.x + &#39;,&#39; + mousePos.y;
+    writeMessage(canvas, message);
+  }, false);
 };
 function writeMessage(canvas, message) {
-ctx.save();
-ctx.clearRect(0, 0, canvas.width, canvas.height);
-ctx.font = &#39;18pt Calibri&#39;;
-ctx.fillStyle = &#39;black&#39;;
-ctx.fillText(message, 10, 25);
-ctx.restore();
+  ctx.save();
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.font = &#39;18pt Calibri&#39;;
+  ctx.fillStyle = &#39;black&#39;;
+  ctx.fillText(message, 10, 25);
+  ctx.restore();
 }
 function getMousePos(canvas, evt) {
-// necessary to take into account CSS boudaries
-var rect = canvas.getBoundingClientRect();
-return {
-x: evt.clientX - rect.left,
-y: evt.clientY - rect.top
-};
-}
-</pre>
+  // necessary to take into account CSS boudaries
+  var rect = canvas.getBoundingClientRect();
+  return {
+    x: evt.clientX - rect.left,
+    y: evt.clientY - rect.top
+  };
+}</pre>
 
 </details>
 
@@ -14408,16 +14389,14 @@ y: evt.clientY - rect.top
 
 <pre>canvas {
 border 1px solid black
-}
-</pre>
+}</pre>
 
 <h4>HTML</h4>
 
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.    &lt;head&gt;
 4.    &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -14433,31 +14412,27 @@ border 1px solid black
 14.     This is a canvas:&lt;p&gt;&lt;/p&gt;
 15.     &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;&lt;/canvas&gt;
 16.   &lt;/body&gt;
-17. &lt;/html&gt;
-</pre>
+17. &lt;/html&gt;</pre>
 
 </details>
 
 <h4>JavaScript</h4>
 
-<pre>
-1. function getMousePos(canvas, evt) {
+<pre>1. function getMousePos(canvas, evt) {
 2.    // necessary to take into account CSS boundaries
 3.    var rect = canvas.getBoundingClientRect();
 4.    return {
 5.       x: evt.clientX - rect.left,
 6.       y: evt.clientY - rect.top
 7.    };
-8. }
-</pre>
+8. }</pre>
 
 <h4>WRONG code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  ...
+<pre>1.  ...
 2.  canvas.addEventListener(&#39;mousemove&#39;, function (evt) {
 3.      mousePos = getMousePos(canvas, evt);
 4.      var message = &#39;Mouse position: &#39; + mousePos.x + &#39;,&#39; + mousePos.y;
@@ -14471,8 +14446,7 @@ border 1px solid black
 12.       x: evt.clientX,
 13.       y: evt.clientY
 14.    };
-15. }
-</pre>
+15. }</pre>
 
 </details>
 
@@ -14494,16 +14468,14 @@ border 1px solid black
   alt="Corrected code for top left canvas mouse positioning."
   style="width:40%;" />
 
-<pre>
-function getMousePos(canvas, evt) {
+<pre>function getMousePos(canvas, evt) {
    // necessary to take into account CSS boundaries
    var rect = canvas.getBoundingClientRect();
    return {
       x: evt.clientX - rect.left,
       y: evt.clientY - rect.top
    };
-}
-</pre>
+}</pre>
 
 <h4>Result (the cursor is approximately at the top left corner):</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -14653,8 +14625,7 @@ function animationLoop() {
    ...
    // call again mainloop after 16.6 ms (60 frames/s)
    requestId = requestAnimationFrame(animationLoop);
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -15818,12 +15789,10 @@ calendar widget with the current date. Note that we can compare any
 given dates using JavaScript. To check that the chosen date is before
 2000 we would do this:</p>
 
-<pre>
-if(this.valueAsDate &lt;= new Date(2000,1,1)) {
+<pre>if(this.valueAsDate &lt;= new Date(2000,1,1)) {
   ...
 }
-&lt;input type=&quot;datetime&quot;&gt;, &quot;week&quot;, &quot;month&quot;, &quot;datetime-local&quot;, etc.
-</pre>
+&lt;input type=&quot;datetime&quot;&gt;, &quot;week&quot;, &quot;month&quot;, &quot;datetime-local&quot;, etc.</pre>
 
 <p>The HTML5 specification indicates that we can use &lt;input
 type=“date”&gt; and &lt;input type=“time”&gt; while for some years
@@ -15956,8 +15925,8 @@ presented in a later section dedicated to form validation.</p>
 13.   &lt;label for=&quot;email&quot;&gt;Enter your email &lt;/label&gt;
 14.   &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
 15. &lt;/body&gt;
-16. &lt;/html&gt;
-</pre>
+16. &lt;/html&gt;</pre>
+
 </details>
 
 <p>Note the CSS rule that turns the background color of the email input
@@ -16132,8 +16101,7 @@ attribute results=5 shows a small icon on the left:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -16151,8 +16119,7 @@ attribute results=5 shows a small icon on the left:</p>
     &lt;label for=&quot;email&quot;&gt;Enter your email:&lt;/label&gt;
     &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
   &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16189,9 +16156,7 @@ the min and max attributes):</p>
 
 <h4>Typical usage</h4>
 
-<pre>
-&lt;input type=&quot;number&quot; value=&quot;25&quot; min=&quot;0&quot; step=&quot;5&quot; max=&quot;500&quot;/&gt;
-</pre>
+<pre>&lt;input type=&quot;number&quot; value=&quot;25&quot; min=&quot;0&quot; step=&quot;5&quot; max=&quot;500&quot;/&gt;</pre>
 
 <p>This field accepts specific attributes max, min, step, value (default
 displayed value). </p>
@@ -16238,27 +16203,29 @@ invalid): </p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
-2.  ....
-3.  &lt;style&gt;
-4.  #number:invalid {
-5.  background-color:pink;
-6.  }
-7.  #number:valid {
-8.  background-color:lightGreen;
-9.  }
-10. &lt;/style&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
+2.    ....
+3.    &lt;style&gt;
+4.      #number:invalid {
+5.        background-color:pink;
+6.      }
+7.      #number:valid {
+8.        background-color:lightGreen;
+9.      }
+10.   &lt;/style&gt;
 11. &lt;/head&gt;
 12. &lt;body&gt;
-13. Example of &lt;code&gt;&lt;input type=number&gt;&lt;/code&gt;:&lt;p&gt;
-14. &lt;label for=&quot;number&quot;&gt;Quantity (between 0 and 500, should be a multiple of 5 otherwise it&#39;s invalid): &lt;/label&gt;
-15. &lt;input type=&quot;number&quot; id=&quot;number&quot; value=&quot;25&quot; min=&quot;0&quot; step=&quot;5&quot; max=&quot;500&quot;/&gt;
-16. &lt;p&gt;
-17. Change the different values for attributes step, max, min, value. Don&#39;t forget to try step=&quot;any&quot; for float values...
+13.   Example of &lt;code&gt;&lt;input type=number&gt;&lt;/code&gt;:&lt;p&gt;
+14.   &lt;label for=&quot;number&quot;&gt;Quantity (between 0 and 500, should be a multiple of 5 
+      otherwise it&#39;s invalid): &lt;/label&gt;
+15.
+      &lt;input type=&quot;number&quot; id=&quot;number&quot; value=&quot;25&quot; 
+        min=&quot;0&quot; step=&quot;5&quot; max=&quot;500&quot;/&gt;
+16.   &lt;p&gt;
+17.     Change the different values for attributes step, max, min, value. Don&#39;t forget to try step=&quot;any&quot; 
+          for float values...
 18. &lt;/body&gt;
-19. &lt;/html&gt;
-</pre>
+19. &lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16303,9 +16270,7 @@ as the &lt;input type=“number”&gt; : min, max, step and value.</p>
 
 <p>The basic use is to specify at least the value, min and max attributes, and eventually the step attribute, too:</p>
 
-<pre>
-&lt;input id=&quot;slider6&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;10&quot; step=&quot;2&quot; value=&quot;5&quot;&gt;
-</pre>
+<pre>&lt;input id=&quot;slider6&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;10&quot; step=&quot;2&quot; value=&quot;5&quot;&gt;</pre>
 
 <p>But most of the time, you will need a visual feedback that shows the current value selected by the slider.</p>
 
@@ -16323,43 +16288,41 @@ as the &lt;input type=“number”&gt; : min, max, step and value.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
-4.  &lt;meta charset=&quot;utf-8&quot;&gt;
-5.  &lt;title&gt;Example of input type=tel&lt;/title&gt;
-6.  &lt;style&gt;
-7.  #rangeValue1 {
-8.  border:1px solid black;
-9.  padding:2px;
-10. }
-11. &lt;/style&gt;
-12. &lt;script&gt;
-13. window.onload = function() {
-14. // Called when the page is loaded, for displaying initial value in the output
-15. printValue(&#39;slider1&#39;,&#39;rangeValue1&#39;);
-16. }
-17. function printValue(sliderId, outputId) {
-18. var x = document.getElementById(outputId);
-19. var y = document.getElementById(sliderId);
-20. x.value = y.value;
-21. }
-22. &lt;/script&gt;
+4.    &lt;meta charset=&quot;utf-8&quot;&gt;
+5.    &lt;title&gt;Example of input type=tel&lt;/title&gt;
+6.    &lt;style&gt;
+7.      #rangeValue1 {
+8.        border:1px solid black;
+9.        padding:2px;
+10.     }
+11.   &lt;/style&gt;
+12.   &lt;script&gt;
+13.     window.onload = function() {
+14.       // Called when the page is loaded, for displaying initial value in the output
+15.       printValue(&#39;slider1&#39;,&#39;rangeValue1&#39;);
+16.     }
+17.     function printValue(sliderId, outputId) {
+18.       var x = document.getElementById(outputId);
+19.       var y = document.getElementById(sliderId);
+20.       x.value = y.value;
+21.     }
+22.   &lt;/script&gt;
 23. &lt;/head&gt;
 24. &lt;body&gt;
-25. &lt;form &gt;
-26. &lt;label for=&quot;slider1&quot;&gt;Select a value:&lt;/label&gt;
-27. &lt;input id=&quot;slider1&quot; type=&quot;range&quot;
-28. min=&quot;100&quot; max=&quot;500&quot; step=&quot;10&quot; value=&quot;150&quot;
-29. oninput=&quot;printValue(&#39;slider1&#39;,&#39;rangeValue1&#39;)&quot;/&gt;
-30. &lt;output id=&quot;rangeValue1&quot;&gt;&lt;/output&gt;
-31. &lt;/form&gt;
-32. &lt;br/&gt;
-33. Play with attributes: value, min, max, step...
+25.   &lt;form &gt;
+26.     &lt;label for=&quot;slider1&quot;&gt;Select a value:&lt;/label&gt;
+27.     &lt;input id=&quot;slider1&quot; type=&quot;range&quot;
+28.     min=&quot;100&quot; max=&quot;500&quot; step=&quot;10&quot; value=&quot;150&quot;
+29.     oninput=&quot;printValue(&#39;slider1&#39;,&#39;rangeValue1&#39;)&quot;/&gt;
+30.     &lt;output id=&quot;rangeValue1&quot;&gt;&lt;/output&gt;
+31.   &lt;/form&gt;
+32.   &lt;br/&gt;
+33.   Play with attributes: value, min, max, step...
 34. &lt;/body&gt;
-35. &lt;/html&gt;
-</pre>
+35. &lt;/html&gt;</pre>
 
 </details>
 
@@ -16378,25 +16341,20 @@ the min and max attributes. The “size of the jumps” depends on the value
 of the step attribute.</p>
 <p>Try these examples in your browser and look at their behavior:</p>
 
-<pre>
-value=5 min=0, max=10 step=1:  
-value=12 min=10, max=50 step=4:
-</pre>
+<pre>value=5 min=0, max=10 step=1:  
+value=12 min=10, max=50 step=4:</pre>
 
 <p>Note that in the previous example, the default value displayed is 14,
 not 12 (the value just above min plus an integer step value). 12 is not
 possible so it’s been “snapped” to 14.</p>
 
-<pre>
-value=5 min=0, max=10 step=&quot;0.5&quot;:  
-</pre>
+<pre>value=5 min=0, max=10 step=&quot;0.5&quot;:</pre>
 
 <p>In the previous example, it’s necessary to add quotes for
 setting step=“0.5” (while HTML5 authorizes not using quotes for setting
 integer values to attributes).</p>
 
-<pre>value=5 min=0, max=10 step=&quot;any&quot;:  
-</pre>
+<pre>value=5 min=0, max=10 step=&quot;any&quot;:</pre>
 
 <p><b>WARNING</b>: Using a step attribute with an integer value will
 make the slider jump corresponding to the step value. By default,
@@ -16418,31 +16376,27 @@ a &lt;datalist&gt; element</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;label for=&quot;slider2&quot;&gt;value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:&lt;/label&gt;
+<pre>1.  &lt;label for=&quot;slider2&quot;&gt;value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:&lt;/label&gt;
 2.  &lt;input id=&quot;slider2&quot; type=&quot;range&quot;
 3.  list=&quot;ticks2&quot;
 4.  min=&quot;0&quot; max=&quot;10&quot; step=&quot;1&quot; value=&quot;5&quot;/&gt;
 5.  &lt;datalist id=ticks2&gt;
-6.  &lt;option&gt;0&lt;/option&gt;
-7.  &lt;option&gt;2&lt;/option&gt;
-8.  &lt;option&gt;4&lt;/option&gt;
-9.  &lt;option&gt;6&lt;/option&gt;
-10. &lt;option&gt;8&lt;/option&gt;
-11. &lt;option&gt;10&lt;/option&gt;
-12. &lt;/datalist&gt;
-</pre>
+6.    &lt;option&gt;0&lt;/option&gt;
+7.    &lt;option&gt;2&lt;/option&gt;
+8.    &lt;option&gt;4&lt;/option&gt;
+9.    &lt;option&gt;6&lt;/option&gt;
+10.   &lt;option&gt;8&lt;/option&gt;
+11.   &lt;option&gt;10&lt;/option&gt;
+12. &lt;/datalist&gt;</pre>
 
 </details>
 
 <h4>Try the sliders below:</h4>
 
-<pre>
-value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:  
+<pre>value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:  
 value=20 min=10, max=50 step=5, ticks at 0, 10, 20, 30, 40 and 50:  
 value=5 min=0, max=10 step=&quot;0.5&quot;, ticks at 0, 0.5, 1, 2, 4, 8:  
-value=5 min=0, max=10 step=&quot;any&quot;, ticks at 0, 5 and 10:  
-</pre>
+value=5 min=0, max=10 step=&quot;any&quot;, ticks at 0, 5 and 10:</pre>
 
 <h4>External resources</h4>
 
@@ -16594,8 +16548,7 @@ easier.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.    &lt;head&gt;
 4.      &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -16618,8 +16571,7 @@ easier.</p>
 21.       &lt;/fieldset&gt;
 22.     &lt;/form&gt;
 23.   &lt;/body&gt;
-24. &lt;/html&gt;
-</pre>
+24. &lt;/html&gt;</pre>
 
 </details>
 
@@ -16665,8 +16617,7 @@ easier.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;form submit=&quot;test.php&quot; method=&quot;post&quot; autocomplete=&quot;on&quot;&gt;
+<pre>1.  &lt;form submit=&quot;test.php&quot; method=&quot;post&quot; autocomplete=&quot;on&quot;&gt;
 2.      ...
 3.      &lt;label for=&quot;address&quot;&gt;Enter your address (autocomplete off, overrides the
 4.             form&#39;s autocomplete=on attribute):&lt;/label&gt;
@@ -16678,8 +16629,7 @@ easier.</p>
 10.     &lt;p&gt;
 11.     &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
 12.     ...
-13. &lt;/form&gt;
-</pre>
+13. &lt;/form&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16709,8 +16659,7 @@ the use of  required, placeholder and pattern attributes.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;form&gt;
+<pre>1.  &lt;form&gt;
 2.      ...
 3.      &lt;input type=&quot;text&quot; id=&quot;test&quot;/&gt;&lt;p&gt;
 4.      ...
@@ -16721,8 +16670,7 @@ the use of  required, placeholder and pattern attributes.</p>
 9.             autofocus
 10.            type=&quot;text&quot;/&gt;
 11.     ...
-12. &lt;/form&gt;
-</pre>
+12. &lt;/form&gt;</pre>
 
 </details>
 
@@ -16736,8 +16684,7 @@ the use of  required, placeholder and pattern attributes.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
 4.  &lt;title&gt;Example for a knowledge check&lt;/title&gt;
@@ -16760,8 +16707,7 @@ the use of  required, placeholder and pattern attributes.</p>
 21.    /&gt;
 22. &lt;/form&gt;
 23. &lt;/body&gt;
-24. &lt;/html&gt;
-</pre>
+24. &lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16784,8 +16730,7 @@ the use of  required, placeholder and pattern attributes.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;form&gt;
+<pre>1.  &lt;form&gt;
 2.      ...
 3.      &lt;input list=&quot;browsers&quot; id=&quot;mybrowser&quot; /&gt;
 4.  
@@ -16797,8 +16742,7 @@ the use of  required, placeholder and pattern attributes.</p>
 10.        &lt;option value=&quot;Safari&quot;&gt;
 11.     &lt;/datalist&gt;
 12. ...
-13. &lt;/form&gt;
-</pre>
+13. &lt;/form&gt;</pre>
 
 </details>
 
@@ -16851,12 +16795,10 @@ the required attribute is used - this makes empty fields invalid).</p>
 value that indicates what constitutes a valid entry. More on this in the
 section of this course dedicated to form validation.</p>
 
-<pre>
-1.  &lt;input type=&quot;text&quot; name=&quot;country_code&quot;
+<pre>1.  &lt;input type=&quot;text&quot; name=&quot;country_code&quot;
 2.         pattern=&quot;[A-Za-z]{3}&quot;
 3.         title=&quot;3 letter country code&quot;
-4.  /&gt;
-</pre>
+4.  /&gt;</pre>
 
 <h3>Examples</h3>
 
@@ -16887,30 +16829,28 @@ type.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
-4.  &lt;meta charset=&quot;utf-8&quot;&gt;
-5.  &lt;title&gt;Example of the pattern attribute&lt;/title&gt;
-6.  &lt;style&gt;
+4.    &lt;meta charset=&quot;utf-8&quot;&gt;
+5.    &lt;title&gt;Example of the pattern attribute&lt;/title&gt;
+6.    &lt;style&gt;
 7.      input:invalid {
-8.          background-color: lightPink;
+8.        background-color: lightPink;
 9.      }
 10.     input:valid {
-11.         background-color: lightGreen;
+11.       background-color: lightGreen;
 12.     }
-13. &lt;/style&gt;
+13.   &lt;/style&gt;
 14. &lt;/head&gt;
 15. &lt;body&gt;
 16.   &lt;label for=&quot;code&quot;&gt;Please enter a 3 letter country code:&lt;/label&gt;
 17.   &lt;input type=&quot;text&quot; name=&quot;country_code&quot;
-18.          pattern=&quot;[A-Za-z]{3}&quot;
-19.          title=&quot;3 letter country code&quot;
-20.          id=&quot;code&quot;/&gt;
+18.     pattern=&quot;[A-Za-z]{3}&quot;
+19.     title=&quot;3 letter country code&quot;
+20.     id=&quot;code&quot;/&gt;
 21. &lt;/body&gt;
-22. &lt;/html&gt;
-</pre>
+22. &lt;/html&gt;</pre>
 
 </details>
 
@@ -16924,31 +16864,29 @@ type.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt;
 4.    &lt;title&gt;Example of use of new HTML5 input field attributes&lt;/title&gt;
 5.    &lt;style&gt;
-6.        input:focus:invalid { background-color: lightPink;}
-7.        input:valid { background-color:lightGreen; }
-8.        input:required {border: 2px solid red; }
-9.        input:optional {border: 2px solid green; }
+6.      input:focus:invalid { background-color: lightPink;}
+7.      input:valid { background-color:lightGreen; }
+8.      input:required {border: 2px solid red; }
+9.      input:optional {border: 2px solid green; }
 10.   &lt;/style&gt;
 11. &lt;/head&gt;
 12. &lt;body&gt;
-13. &lt;p&gt;Attributes used: placeholder (for displaying a ghost example value), pattern, required (empty = invalid)...
-14. &lt;p&gt;
-15. &lt;label for=&quot;inputID&quot;&gt;Enter a pseudo (6-12 characters): &lt;/label&gt;
-16. &lt;input id=&quot;inputID&quot; name=&quot;Name&quot;
-17.        placeholder=&quot;Name&quot;
-18.        pattern=&quot;w{6,12}&quot;
-19.        required
-20.        title=&quot;6-12 characters allowed please&quot;
-21.        type=&quot;text&quot; /&gt;
+13.   &lt;p&gt;Attributes used: placeholder (for displaying a ghost example value), pattern, required (empty = invalid)...
+14.   &lt;p&gt;
+15.   &lt;label for=&quot;inputID&quot;&gt;Enter a pseudo (6-12 characters): &lt;/label&gt;
+16.   &lt;input id=&quot;inputID&quot; name=&quot;Name&quot;
+17.     placeholder=&quot;Name&quot;
+18.     pattern=&quot;w{6,12}&quot;
+19.     required
+20.     title=&quot;6-12 characters allowed please&quot;
+21.     type=&quot;text&quot; /&gt;
 22. &lt;/body&gt;
-23. &lt;/html&gt;
-</pre>
+23. &lt;/html&gt;</pre>
 
 </details>
 
@@ -16966,16 +16904,14 @@ protocols</h4>
 
 <h4>Source code extract:</h4>
 
-<pre>
-1.  &lt;input
-2.      id=&quot;website&quot;
-3.      name=&quot;url&quot;
-4.      type=&quot;url&quot;
-5.      placeholder=&quot;http://www.domain.com&quot;
-6.      title=&quot;http, https or ftp allowed&quot;
-7.      pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]&quot;
-8.  /&gt;
-</pre>
+<pre>1.  &lt;input
+2.    id=&quot;website&quot;
+3.    name=&quot;url&quot;
+4.    type=&quot;url&quot;
+5.    placeholder=&quot;http://www.domain.com&quot;
+6.    title=&quot;http, https or ftp allowed&quot;
+7.    pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]&quot;
+8.  /&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-7">5.5.7 min, max and step</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17008,8 +16944,7 @@ input field types.</p>
 14. &lt;input id=&quot;range&quot; name=&quot;range&quot; type=&quot;range&quot; 
       min=&quot;0&quot; 
 	  max=&quot;100&quot; 
-	  step=&quot;5&quot;/&gt;
-</pre>
+	  step=&quot;5&quot;/&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17094,8 +17029,7 @@ separated by a comma, then look at the input field background color
 43.    Type in a list of email addresses separated by a comma. Look at the input field 
          background color (pink = invalid, green = valid), try to submit. &lt;/p&gt;
 44.  &lt;/body&gt;
-45.  &lt;/html&gt;
-</pre>
+45.  &lt;/html&gt;</pre>
 
 </details>
 
@@ -17129,8 +17063,7 @@ cover their usage and you are welcome to use them for future reference
 <p>These attributes are targeted to the &lt;input type=“submit”&gt; input fields. They are rarely used.</p>
 
 <pre>1. &lt;input type=&quot;submit&quot;
-2. formaction=&quot;preview.php&quot; formmethod=&quot;get&quot; value=&quot;Preview&quot;&gt;
-</pre>
+2. formaction=&quot;preview.php&quot; formmethod=&quot;get&quot; value=&quot;Preview&quot;&gt;</pre>
 
 <p>When you use an &lt;input type=“submit”&gt; field with
 the formaction attribute, the action attribute value of the form is
@@ -17148,8 +17081,7 @@ the method attribute of the form.</p>
 3.     formaction=&quot;preview.php&quot; formmethod=&quot;get&quot;
 4.     value=&quot;Preview&quot;&gt;
 5.   &lt;input type=&quot;submit&quot; value=&quot;Send&quot;&gt;
-6. &lt;/form&gt;
-</pre>
+6. &lt;/form&gt;</pre>
 
 <p><i>Line 3</i> overrides the values set in <i>line 1</i>.</p>
 
@@ -17218,8 +17150,7 @@ JSBin</a>):</p>
 8.        formnovalidate
 9.        value=&quot;Submit without validation&quot; /&gt;
 10.   &lt;/fieldset&gt;
-11. &lt;/form&gt;
-</pre>
+11. &lt;/form&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17235,13 +17166,13 @@ JSBin</a>):</p>
 <p>The formtarget attribute is targeted to the &lt;input
 type=“submit”&gt; input fields. This attribute is rarely used.</p>
 <p>This attribute’s value indicates where the response from the form
-submission should be displayed. </p>
+submission should be displayed.</p>
+
 <h4>Typical use</h4>
 
 <pre>1. &lt;input type=&quot;submit&quot;
 2.   formtarget=&quot;_blank&quot;
-3.   value=&quot;Submit but show results in a new window/tab&quot;&gt;
-</pre>
+3.   value=&quot;Submit but show results in a new window/tab&quot;&gt;</pre>
 
 <h4>Possible values for the formtarget attributes are:</h4>
 <ul>
@@ -17274,8 +17205,7 @@ submission should be displayed. </p>
 7.    &lt;input type=&quot;submit&quot;
 8.      formtarget=&quot;_blank&quot;
 9.      value=&quot;Submit but show results in a new window/tab&quot;&gt;
-10. &lt;/form&gt;
-</pre>
+10. &lt;/form&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-13">5.5.13 formenctype</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17300,8 +17230,7 @@ example below:</p>
 11.       &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
 12.     &lt;/form&gt;
 13.   &lt;/body&gt;
-14. &lt;/html&gt;
-</pre>
+14. &lt;/html&gt;</pre>
 
 <p>Note that when you send form content using Ajax, this attribute is
 not needed, as you will specify the type of data sent to the remote
@@ -17324,8 +17253,7 @@ the enctype attribute specified in the &lt;form enctype=…&gt; element
   ...
   &lt;input type=&quot;submit&quot; formenctype=&quot;multipart/form-data&quot;
            value=&quot;Submit as Multipart/form-data&quot;&gt;
-&lt;/form&gt;
-</pre>
+&lt;/form&gt;</pre>
 
 <p>The possible values for this field are:</p>
 <ul>
@@ -17371,8 +17299,7 @@ online example at JSBin</a></p>
 18.     &lt;/form&gt;
 19.     &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The formenctype attribute is not supported by all browsers.&lt;/p&gt;
 20.   &lt;/body&gt;
-21. &lt;/html&gt;
-</pre>
+21. &lt;/html&gt;</pre>
 
 </details>
 
@@ -17497,8 +17424,7 @@ to play with the source code of these examples online at JSBin</a>.</p>
 2.   &lt;input type=&quot;number&quot; name=&quot;a&quot; id=&quot;a&quot; value=&quot;2&quot;&gt; x
 3.   &lt;input type=&quot;number&quot; name=&quot;b&quot; id=&quot;b&quot; value=&quot;3&quot;&gt; =
 4.   &lt;output for=&quot;a b&quot; name=&quot;o&quot;&gt;6&lt;/output&gt;
-5. &lt;/form&gt;
-</pre>
+5. &lt;/form&gt;</pre>
 
 <p>The oninput event handler directly uses the &lt;output&gt; element
 using the value of its name attribute.</p>
@@ -17527,8 +17453,7 @@ using the value of its name attribute.</p>
 5.   &lt;output id=&quot;y&quot;&gt;50&lt;/output&gt; +
 6.   &lt;input name=&quot;b&quot; value=&quot;50&quot; type=&quot;number&quot; /&gt; =
 7.   &lt;output name=&quot;x&quot; id=&quot;x&quot; for=&quot;a b&quot;&gt;&lt;/output&gt;
-8. &lt;/form&gt;
-</pre>
+8. &lt;/form&gt;</pre>
 
 <p>HTML5 has introduced new input field
 properties: valueAsNumber and valueAsDate.The last example is similar to
@@ -17566,8 +17491,7 @@ You should instead use a &lt;progress&gt; element.</p>
 
 <h4>Typical use</h4>
 
-<pre>Storage space used: &lt;meter value=75 min=0 low=20 high=80 max=100 optimum=50&gt;&lt;/meter&gt;
-</pre>
+<pre>Storage space used: &lt;meter value=75 min=0 low=20 high=80 max=100 optimum=50&gt;&lt;/meter&gt;</pre>
 
 <p>The &lt;meter&gt; element uses the easy-to-understand value, min, max, 
 low, high and optimum attributes.<br>
@@ -17583,8 +17507,7 @@ the optimum attribute will come further in this lesson.</p>
 example online at JSBin</a> or just play with it in your browser by
 dragging the slider below:</p>
 
-<pre>&lt;meter value=75 min=0 low=20 high=80 max=100 optimum=19&gt;&lt;/meter&gt;
-</pre>
+<pre>&lt;meter value=75 min=0 low=20 high=80 max=100 optimum=19&gt;&lt;/meter&gt;</pre>
 
 <p>Grades:</p>
 <h4>Source code of the example:</h4>
@@ -17592,16 +17515,15 @@ dragging the slider below:</p>
 <pre>1.  &lt;p&gt;Grades: &lt;meter id=&quot;meter2&quot; value=&quot;75&quot; min=&quot;0&quot; low=&quot;20&quot; high=&quot;80&quot; max=&quot;100&quot;&gt;&lt;/meter&gt;
 2.  
 3.  &lt;input min=&quot;0&quot; max=&quot;100&quot; value=&quot;75&quot; id=&quot;meter2range&quot;
-4.         oninput=&quot;effect(&#39;meter2&#39;, &#39;meter2range&#39;)&quot; type=&quot;range&quot;&gt;
+4.    oninput=&quot;effect(&#39;meter2&#39;, &#39;meter2range&#39;)&quot; type=&quot;range&quot;&gt;
 5.  &lt;output id=&quot;meter2val&quot; for=&quot;meter2range&quot;&gt;&lt;/output&gt;&lt;/p&gt;
 6.  &lt;script&gt;
-7.  function effect(meter, meterrange) {
-8.       var currVal = document.getElementById(meterrange).value;
-9.       document.getElementById(meter).value = currVal;
-10.      document.getElementById(meter+ &quot;val&quot;).innerHTML = currVal;
-11. }
-12. &lt;/script&gt;
-</pre>
+7.    function effect(meter, meterrange) {
+8.      var currVal = document.getElementById(meterrange).value;
+9.      document.getElementById(meter).value = currVal;
+10.     document.getElementById(meter+ &quot;val&quot;).innerHTML = currVal;
+11.   }
+12. &lt;/script&gt;</pre>
 
 <h4>Explanations:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17660,8 +17582,7 @@ memory usage is “good”.</p>
 <p>The &lt;progress&gt; element is similar to &lt;meter&gt; but it is used for
 progress bars (i.e., the percentage of a file being uploaded, etc.):</p>
 
-<pre>&lt;progress id=pr value=50 min=0 max=100&gt;
-</pre>
+<pre>&lt;progress id=pr value=50 min=0 max=100&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 282. every mistake you make is progress (333) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17692,8 +17613,7 @@ implementations. </p>
 changing in real time the value attribute.</p>
 <p>The progress below is defined like this:</p>
 
-<pre>&lt;progress id=pr value=100 max=1000&gt;
-</pre>
+<pre>&lt;progress id=pr value=100 max=1000&gt;</pre>
 
 <p>Download progress: </p>
 <h4>Source code:</h4>
@@ -17705,8 +17625,7 @@ changing in real time the value attribute.</p>
 5.         i = (i+1) %1000;
 6.         document.getElementById(pr).value = i;
 7.     },1);
-8.  &lt;/script&gt;
-</pre>
+8.  &lt;/script&gt;</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-6-5">5.6.5 &lt;datalist&gt;</h3>
@@ -17907,8 +17826,7 @@ at JSBin</a>, or try it below in your browser:</p>
 27.     &lt;p&gt;
 28.  
 29.   &lt;/body&gt;
-30. &lt;/html&gt;
-</pre>
+30. &lt;/html&gt;</pre>
 
 </details>
 
@@ -17947,8 +17865,7 @@ JSBin</a> or try it here in your browser. This example adds a small icon that 
 10.  }
 11.   .myForm input:required {
 12.     background:url(https://i.imgur.com/7pIN7wz.png) no-repeat right top;
-13.  }
-</pre>
+13.  }</pre>
 
 </details>
 
@@ -17992,8 +17909,7 @@ messages! E-mail:  Homepage (URL):  Phone number:  Submit form</p>
 8.      ...
 9.      &lt;button&gt;Submit form&lt;/button&gt;&lt;br /&gt;
 10.   &lt;/fieldset&gt;
-11. &lt;/form&gt;
-</pre>
+11. &lt;/form&gt;</pre>
 
 </details>
 
@@ -18101,8 +18017,7 @@ to make your own message bubbles.</p>
 35.     }  <!-- function checkpasswords -->
 36.   &lt;/script&gt;
 37. &lt;/body&gt;
-38. &lt;/html&gt;
-</pre>
+38. &lt;/html&gt;</pre>
 
 </details>
 
@@ -18130,8 +18045,7 @@ validation error.</p>
 
 <pre>1. var input = document.getElementById(&#39;IdOfField&#39;);
 2.  
-3. var validityState_object = &lt;b&gt;input.validity;&lt;/b&gt;
-</pre>
+3. var validityState_object = &lt;b&gt;input.validity;&lt;/b&gt;</pre>
 
 <h4>The possible values for the validity property are:</h4>
 
@@ -18202,8 +18116,7 @@ values, too big, too small, enter invalid characters, etc.):</p>
 34.   &lt;/form&gt;
 35. 
 36. &lt;/body&gt;
-37. &lt;/html&gt;
-</pre>
+37. &lt;/html&gt;</pre>
 
 </details>
 
@@ -18271,112 +18184,111 @@ values and submit with one or two invalid fields.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.    &lt;meta charset=&quot;utf-8&quot;&gt;
-5.    &lt;title&gt;Aggregating error messages&lt;/title&gt;
-6.    &lt;style&gt;
-7.      input:invalid { background-color: lightPink;}
-8.      input:valid { background-color:lightGreen; }
-9.      input:required {border: 2px solid red;}
-10.     input:optional {border: 2px solid green;}
+<pre>1.   &lt;!DOCTYPE html&gt;
+2.   &lt;html lang=&quot;en&quot;&gt;
+3.   &lt;head&gt;
+4.     &lt;meta charset=&quot;utf-8&quot;&gt;
+5.     &lt;title&gt;Aggregating error messages&lt;/title&gt;
+6.     &lt;style&gt;
+7.       input:invalid { background-color: lightPink;}
+8.       input:valid { background-color:lightGreen; }
+9.       input:required {border: 2px solid red;}
+10.      input:optional {border: 2px solid green;}
 11.  
-12.        .error-messages {
-13.            display: none;
-14.            margin: 0 10px 15px 10px;
-15.            padding: 8px 35px 8px 30px;
-16.            color: #B94A48;
-17.            background-color: #F2DEDE;
-18.            border: 2px solid #EED3D7;
-19.            border-radius: 4px;
-20.        }
-21.        fieldset {
-22.           border:1px solid;
-23.           padding:20px;
-24.     }
-25.   &lt;/style&gt;
-26. &lt;/head&gt;
-27. &lt;body&gt;
-28. &lt;form&gt;
-29.      &lt;fieldset&gt;
-30.          &lt;legend&gt;Submit with one or two invalid fields&lt;/legend&gt;
+12.      .error-messages {
+13.        display: none;
+14.        margin: 0 10px 15px 10px;
+15.        padding: 8px 35px 8px 30px;
+16.        color: #B94A48;
+17.        background-color: #F2DEDE;
+18.        border: 2px solid #EED3D7;
+19.        border-radius: 4px;
+20.      }
+21.      fieldset {
+22.        border:1px solid;
+23.        padding:20px;
+24.      }
+25.    &lt;/style&gt;
+26.  &lt;/head&gt;
+27.  &lt;body&gt;
+28.  &lt;form&gt;
+29.    &lt;fieldset&gt;
+30.      &lt;legend&gt;Submit with one or two invalid fields&lt;/legend&gt;
 31. 
-32.          &lt;ul class=&quot;error-messages&quot;&gt;&lt;/ul&gt;
+32.      &lt;ul class=&quot;error-messages&quot;&gt;&lt;/ul&gt;
 33. 
-34.          &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
-35.          &lt;input id=&quot;name&quot; name=&quot;name&quot; required&gt;
-36.          &lt;p&gt;
-37.          &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
-38.          &lt;input id=&quot;email&quot; name=&quot;email&quot; type=&quot;email&quot; required&gt;
-39.          &lt;p&gt;
-40.          &lt;button&gt;Submit&lt;/button&gt;
-41.      &lt;/fieldset&gt;
-42. &lt;/form&gt;
+34.      &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+35.      &lt;input id=&quot;name&quot; name=&quot;name&quot; required&gt;
+36.      &lt;p&gt;
+37.      &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+38.      &lt;input id=&quot;email&quot; name=&quot;email&quot; type=&quot;email&quot; required&gt;
+39.      &lt;p&gt;
+40.      &lt;button&gt;Submit&lt;/button&gt;
+41.    &lt;/fieldset&gt;
+42.  &lt;/form&gt;
 43.  
-44. &lt;script&gt;
-45.     function replaceValidationUI(form) {
-46.        // Suppress the default bubbles
-47.           form.addEventListener(&quot;invalid&quot;, function (event) {
-48.           event.preventDefault();
-49.        }, true);
+44.  &lt;script&gt;
+45.    function replaceValidationUI(form) {
+46.      // Suppress the default bubbles
+47.      form.addEventListener(&quot;invalid&quot;, function (event) {
+48.        event.preventDefault();
+49.      }, true);
 50.  
-51.        // Support Safari, iOS Safari, and the Android browser -- each of which
-52.        // do not prevent form submissions by default
-53.        form.addEventListener(&quot;submit&quot;, function (event) {
-54.           if (!this.checkValidity()) {
-55.              event.preventDefault();
-56.           }
-57.        });
+51.      // Support Safari, iOS Safari, and the Android browser -- each of which
+52.      // do not prevent form submissions by default
+53.      form.addEventListener(&quot;submit&quot;, function (event) {
+54.        if (!this.checkValidity()) {
+55.          event.preventDefault();
+56.        }
+57.      });
 58.  
-59.        // Container that holds error messages. By default it has a CSS
-60.        // display:none property
-61.        var errorMessages = form.querySelector(&quot;.error-messages&quot;);
+59.      // Container that holds error messages. By default it has a CSS
+60.      // display:none property
+61.      var errorMessages = form.querySelector(&quot;.error-messages&quot;);
 62.  
-63.        var submitButton = form.querySelector(&quot;button:not([type=button]),
-64.                                               input[type=submit]&quot;);
+63.      var submitButton = form.querySelector(&quot;button:not([type=button]),
+64.        input[type=submit]&quot;);
 65.  
-66.        submitButton.addEventListener(&quot;click&quot;, function (event) {
-67.            var invalidFields = form.querySelectorAll(&quot;input:invalid&quot;);
-68.            var listHtml = &quot;&quot;;
-69.            var errorMessagesContainer = form.querySelector(&quot;.error-messages&quot;);
-70.            var label;
+66.      submitButton.addEventListener(&quot;click&quot;, function (event) {
+67.        var invalidFields = form.querySelectorAll(&quot;input:invalid&quot;);
+68.        var listHtml = &quot;&quot;;
+69.        var errorMessagesContainer = form.querySelector(&quot;.error-messages&quot;);
+70.        var label;
 71.  
-72.            // Get the labels&#39; values of their name attributes + the validation error
-73.            // message of the corresponding input field using the validationMessage
-74.            // property of input fields
-75.            // We build a list of &lt;li&gt;...&lt;/li&gt; that we add to the error message container
-76.            for (var i = 0; i &lt; invalidFields.length; i++) {
-77.                label = form.querySelector(&quot;label[for=&quot; + invalidFields[ i ].id + &quot;]&quot;);
-78.                listHtml += &quot;&lt;li&gt;&quot; +
-79.                            label.innerHTML +
-80.                            &quot; &quot; +
-81.                            invalidFields[ i ].validationMessage +
-82.                            &quot;&lt;/li&gt;&quot;;
-83.            }
+72.        // Get the labels&#39; values of their name attributes + the validation error
+73.        // message of the corresponding input field using the validationMessage
+74.        // property of input fields
+75.        // We build a list of &lt;li&gt;...&lt;/li&gt; that we add to the error message container
+76.        for (var i = 0; i &lt; invalidFields.length; i++) {
+77.          label = form.querySelector(&quot;label[for=&quot; + invalidFields[ i ].id + &quot;]&quot;);
+78.          listHtml += &quot;&lt;li&gt;&quot; +
+79.          label.innerHTML +
+80.          &quot; &quot; +
+81.          invalidFields[ i ].validationMessage +
+82.          &quot;&lt;/li&gt;&quot;;
+83.        }
 84.  
-85.            // Update the list with the new error messages
-86.            errorMessagesContainer.innerHTML = listHtml;
+85.        // Update the list with the new error messages
+86.        errorMessagesContainer.innerHTML = listHtml;
 87.  
-88.            // If there are errors, give focus to the first invalid field and show
-89.            // the error messages container by setting its CSS property display=block
-90.            if (invalidFields.length &gt; 0) {
-91.               invalidFields[ 0 ].focus();
-92.               errorMessagesContainer.style.display = &quot;block&quot;;
-93.            }
-94.        });
-95.    }
+88.        // If there are errors, give focus to the first invalid field and show
+89.        // the error messages container by setting its CSS property display=block
+90.        if (invalidFields.length &gt; 0) {
+91.          invalidFields[ 0 ].focus();
+92.          errorMessagesContainer.style.display = &quot;block&quot;;
+93.        }
+94.      });
+95.    }
 96.  
-97.    // Replace the validation UI for all forms
-98.    var forms = document.querySelectorAll(&quot;form&quot;);
+97.    // Replace the validation UI for all forms
+98.    var forms = document.querySelectorAll(&quot;form&quot;);
 99. 
-100.    for (var i = 0; i &lt; forms.length; i++) {
-101.        replaceValidationUI(forms[ i ]);
-102.    }
+100.   for (var i = 0; i &lt; forms.length; i++) {
+101.     replaceValidationUI(forms[ i ]);
+102.   }
 103. &lt;/script&gt;
 104. &lt;/body&gt;
-105. &lt;/html&gt;
-</pre>
+105. &lt;/html&gt;</pre>
 
 </details>
 
@@ -18506,8 +18418,7 @@ available localStorage object. The same applies to sessionStorage.</p>
 8.  // retrieve data
 9.  var lastName = localStorage.lastName;
 10. var firstName = localStorage.firstName;
-11. var location = localStorage.location;
-</pre>
+11. var location = localStorage.location;</pre>
 
 </details>
 
@@ -18574,8 +18485,7 @@ its content</b>.</p>
 <p>Open this <a href="https://jsbin.com/pulurir/edit?html,js,output" target="_blank" rel="noopener noreferrer">online example at JSBin</a>, and use F12 or cmd-alt-i (Mac OS) to look at the dev. tools. As you type in the different input fields, their content is updated in the localStorage.<br>
 We just added input event listeners to each input field. For example, in order to save the first name input field’s content, we just added:</p>
 
-<pre>oninput=&quot;localStorage.&lt;font color="red"&gt;firstName&lt;/font&gt;=this.value;&quot;
-</pre>
+<pre>oninput=&quot;localStorage.&lt;font color="red"&gt;firstName&lt;/font&gt;=this.value;&quot;</pre>
 
 <p>Where firstName in red is the key and this.value the current value of the input field.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18629,8 +18539,7 @@ content is restored!</p>
 18. 
 19.    if(localStorage.date !== undefined)
 20.      document.getElementById(&quot;date&quot;).value = localStorage.date;
-21. }
-</pre>
+21. }</pre>
 
 </details>
 <p>The tests at <i>lines 7, 10, 13</i>, etc., verify that data has been
@@ -18657,8 +18566,7 @@ to show how to use setItem/removeItem methods):</p>
 
 <pre>1.  var counter = localStorage.getItem(&quot;count&quot;) || 0;
 2.  counter++;
-3.  localStorage.setItem(&quot;count&quot;, counter);
-</pre>
+3.  localStorage.setItem(&quot;count&quot;, counter);</pre>
 
 <p>As you can easily guess from the above, we use var value =
 getItem(key) to retrieve a key’s value and setItem(key, value) to set
@@ -18674,9 +18582,8 @@ except that this time:</p>
 2.  saveInputFieldValue(inputField);
 3.  ... 
 4.  function saveInputFieldValue(field) {
-5.      localStorage.setItem(field.id, field.value);
-6.  }
-</pre>
+5.    localStorage.setItem(field.id, field.value);
+6.  }</pre>
 
 <h4>Deleting a key with removeItem(key), or all keys with clear()</h4>
 
@@ -18810,8 +18717,7 @@ store.</p>
 63.    &lt;button onclick=&quot;removeSomeData()&quot;&gt;Remove some data&lt;/button&gt;&lt;br/&gt;
 64.    &lt;button onclick=&quot;resetStore()&quot;&gt;reset store (erase all key/value pairs)&lt;/button&gt;
 65. &lt;/body&gt;
-66. &lt;/html&gt;
-</pre>
+66. &lt;/html&gt;</pre>
 
 </details>
 <p>You can check in the Chrome dev. tools user interface that the
@@ -18913,8 +18819,7 @@ called the function restorePreferences).</p>
     // Check restored input field content to set the lineWidth of the rectangle
     var lineWidthWidget = document.getElementById(&quot;lineWidth&quot;);
     ctx.lineWidth = parseInt(lineWidthWidget.value);
-  }
-</pre>
+  }</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18951,8 +18856,7 @@ loaded. This function will:</p>
 10.    }
 11.    // restore form content with previously saved values
 12.    restoreFormContent();
-13. }
-</pre>
+13. }</pre>
 
 <p>And here is the addInputListener(inputField) function. It takes an
 input field as parameter and attaches an oninput listener to it, that
@@ -18962,9 +18866,8 @@ be the id of the input field (<i>line 3</i>):</p>
 <pre>1. function addInputListener(inputField) {
 2.   inputField.addEventListener(&#39;input&#39;, function(event) {
 3.     localStorage.setItem(inputField.id, inputField.value);
-4.     }, false);
-5. }
-</pre>
+4.   }, false);
+5. }</pre>
 
 <p>Note that at <i>line 2</i>, we use addEventListener (that is not
 using the oninput property here). adddEventListener doesnot replace
@@ -18999,8 +18902,7 @@ is done using the function restoreFormContent():</p>
 17.        fieldToRestore.value = savedValue;
 18.     }
 19.   }
-20. }
-</pre>
+20. }</pre>
 
 </details>
 
@@ -19087,8 +18989,7 @@ JSON support into your local store is straightforward.</p>
 <h4>Typical usage</h4>
 
 <pre>locaStorage.key = JSON.stringify(object); // or...
-localStorage.setItem(key, JSON.stringify(object));
-</pre>
+localStorage.setItem(key, JSON.stringify(object));</pre>
 
 <p>Let’s try a simple toy example
 (<a href="https://jsbin.com/ciricis/2/edit?html,console,output" target="_blank" rel="noopener noreferrer">online
@@ -19125,8 +19026,7 @@ there!</p>
 15. &lt;/head&gt;
 16. &lt;body&gt;
 17. &lt;/body&gt;
-18. &lt;/html&gt;
-</pre>
+18. &lt;/html&gt;</pre>
 
 </details>
 
@@ -19436,8 +19336,7 @@ saw the last week, some canvas here, or image elements and so on.</p>
       }
     &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -19516,8 +19415,7 @@ about the first selected file. Please try it below on your browser
     &lt;li&gt;File last modification date: &lt;span id=&quot;singleDate&quot;&gt;&lt;/span&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -19537,23 +19435,26 @@ not images will be greyed and non selectable.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>1.  &lt;p&gt;Select several images: &lt;input type=“file” accept=“image/*“ multiple onchange=”filesProcess(this.files)“ name=”selection”/&gt;&lt;/p&gt;
-2. &lt;div id=&quot;result&quot;&gt;...&lt;/div&gt;
-3. &lt;script&gt;
-4.   function filesProcess(files) {
-5.       var selection = &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Bytes&lt;/th&gt;&lt;th&gt;MIME Type&lt;/th&gt;
-6.                        &lt;th&gt;Last modified date&lt;/th&gt;&lt;/tr&gt;&quot;;
-7.       for(i=0; i&lt;files.length ;i++){
-8.           file = files[i];
-9.           selection += &quot;&lt;tr&gt;&lt;td&gt;&quot;+file.name+&quot;&lt;/td&gt;&lt;td style=&quot;text-align:right&quot;&gt;&quot;
-10.                     +file.size+&quot;&lt;/td&gt;&lt;td&gt;&quot;
-11.                     +file.type+&quot;&lt;/td&gt;&lt;td&gt; &quot;+file.lastModifiedDate+&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
-12.       }
-13.       selection += &quot;&lt;/table&gt;&quot;;
-14.       document.getElementById(&quot;result&quot;).innerHTML = selection;
+<pre>1.  &lt;p&gt;Select several images: &lt;input
+      type=“file” accept=“image/*“ multiple onchange=”filesProcess(this.files)“ name=”selection”/&gt;&lt;/p&gt;
+2.  &lt;div id=&quot;result&quot;&gt;...&lt;/div&gt;
+3.  &lt;script&gt;
+4.    function filesProcess(files) {
+5.      var selection = &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Bytes&lt;/th&gt;&lt;th&gt;MIME
+          Type&lt;/th&gt;
+6.      &lt;th&gt;Last modified date&lt;/th&gt;&lt;/tr&gt;&quot;;
+7.      for(i=0; i&lt;files.length ;i++){
+8.          file = files[i];
+9.          selection += &quot;&lt;tr&gt;&lt;td&gt;&quot;+file.name+&quot;&lt;/td&gt;&lt;td
+            style=&quot;text-align:right&quot;&gt;&quot;
+10.           +file.size+&quot;&lt;/td&gt;&lt;td&gt;&quot;
+11.           +file.type+&quot;&lt;/td&gt;&lt;td&gt;
+            &quot;+file.lastModifiedDate+&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+12.     }
+13.     selection += &quot;&lt;/table&gt;&quot;;
+14.     document.getElementById(&quot;result&quot;).innerHTML = selection;
 15.   }
-16. &lt;/script&gt;
-</pre>
+16. &lt;/script&gt;</pre>
 
 </details>
 
@@ -19665,8 +19566,7 @@ the readAsText method:</p>
 9.    // Executed first: start reading the file asynchronously, will call the
 10.   // reader.onload callback only when the file is read entirely
 11.   reader.readAsText(f);
-12. }
-</pre>
+12. }</pre>
 
 </details>
 
@@ -19724,37 +19624,37 @@ JSBin</a>, or try it below in your browser:</p>
 <pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
-4.  &lt;meta charset=&quot;utf-8&quot;&gt;
-5.  &lt;title&gt;Example of use of FileReader with a text file&lt;/title&gt;
+4.    &lt;meta charset=&quot;utf-8&quot;&gt;
+5.    &lt;title&gt;Example of use of FileReader with a text file&lt;/title&gt;
 6.  &lt;/head&gt;
 7.  &lt;body&gt;
 8.  &lt;label for=&quot;files&quot;&gt;Choose a text file:&lt;/label&gt;&lt;input type=&quot;file&quot; id=&quot;file&quot;
-9.                             onchange=&quot;readFileContent(this.files)&quot;/&gt;&lt;br/&gt;
+9.    onchange=&quot;readFileContent(this.files)&quot;/&gt;&lt;br/&gt;
 10. &lt;p&gt;
 11. &lt;textarea rows=15 cols=50 id=&quot;fileContent&quot;&gt;&lt;/textarea&gt;
 12. 
 13. &lt;script&gt;
-14. function readFileContent(files) {
-15.      console.log(&quot;In readFileContent&quot;);
-16.      var reader = new FileReader();
+14.   function readFileContent(files) {
+15.     console.log(&quot;In readFileContent&quot;);
+16.     var reader = new FileReader();
 17. 
 18.     // Executed last: called when the file content is loaded, e.target.result is
 19.     // The content
-20.     reader.onload = function(e) {
-21.         // display content in the textarea with id=&quot;fileContent&quot;
-22.         document.getElementById(&quot;fileContent&quot;).value= e.target.result;
-23.     };
+20.     reader.onload = function(e) {
+21.       // display content in the textarea with id=&quot;fileContent&quot;
+22.       document.getElementById(&quot;fileContent&quot;).value= e.target.result;
+23.     };
 24. 
-25.     console.log(&quot;Reading file:&quot; + files[0].name);
+25.     console.log(&quot;Reading file:&quot; + files[0].name);
 26. 
-27.     // Executed first: start reading the file asynchronously , will call the onload
-28.     // callback when the file is read
-29.     reader.readAsText(files[0]);
-30. }
+27.     // Executed first: start reading the file asynchronously , will call the onload
+28.     // callback when the file is read
+29.     reader.readAsText(files[0]);
+30.   }
 31. &lt;/script&gt;
 32. &lt;/body&gt;
-33. &lt;/html&gt;
-</pre>
+33. &lt;/html&gt;</pre>
+
 </details>
 
 <p>This example is the one at the end of the previous page. This time,
@@ -19783,46 +19683,45 @@ multiple text files (using shift for multiple selection):</p>
 <pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
-4.  &lt;meta charset=&quot;utf-8&quot;&gt;
-5.  &lt;title&gt;Example of use of FileReader with a text file&lt;/title&gt;
+4.    &lt;meta charset=&quot;utf-8&quot;&gt;
+5.    &lt;title&gt;Example of use of FileReader with a text file&lt;/title&gt;
 6.  &lt;/head&gt;
 7.  &lt;body&gt;
 8.  &lt;label for=&quot;files&quot;&gt;Choose multiple text files:&lt;/label&gt;
 9.  &lt;input type=&quot;file&quot; id=&quot;files&quot;
-10.        multiple onchange=&quot;readFilesAndDisplayAsText(this.files);&quot;/&gt;&lt;br/&gt;
+10.   multiple onchange=&quot;readFilesAndDisplayAsText(this.files);&quot;/&gt;&lt;br/&gt;
 11. &lt;p&gt;
 12. &lt;textarea rows=30 cols=50 id=&quot;filesContent&quot;&gt;&lt;/textarea&gt;
 13. 
 14. &lt;script&gt;
-15. var filesContent = document.getElementById(&quot;filesContent&quot;);
+15.   var filesContent = document.getElementById(&quot;filesContent&quot;);
 16. 
-17. function readFilesAndDisplayAsText(files) {
-18.      console.log(&quot;dans read files&quot;);
-19.      // Loop through the FileList
-20.      for (var i = 0, f; f = files[i]; i++) {
+17.   function readFilesAndDisplayAsText(files) {
+18.     console.log(&quot;dans read files&quot;);
+19.     // Loop through the FileList
+20.     for (var i = 0, f; f = files[i]; i++) {
 21. 
-22.          var reader = new FileReader();
+22.       var reader = new FileReader();
 23. 
-24.          // Add an onload listener to the reader
-25.          addOnLoadListener(reader, f.name);
-26.          // start reading, will call the listener later, when the file f is read
-27.          reader.readAsText(f);
+24.       // Add an onload listener to the reader
+25.       addOnLoadListener(reader, f.name);
+26.       // start reading, will call the listener later, when the file f is read
+27.       reader.readAsText(f);
 28. 
-29.      }
-30. }
+29.     }
+30.   }
 31. 
-32. function addOnLoadListener(reader, name) {
-33.      // Add an onload listener that will be able to print the name of the
-34.      // file...
-35.      reader.onload = function(e) {
-36.          filesContent.value += &quot;###### READING FILE &quot; + name + &quot; ######&quot;;
-37.          filesContent.value += e.target.result;
-38.      };
-39. }
+32.   function addOnLoadListener(reader, name) {
+33.     // Add an onload listener that will be able to print the name of the
+34.     // file...
+35.     reader.onload = function(e) {
+36.       filesContent.value += &quot;###### READING FILE &quot; + name + &quot; ######&quot;;
+37.       filesContent.value += e.target.result;
+38.     };
+39.   }
 40. &lt;/script&gt;
 41. &lt;/body&gt;
-42. &lt;/html&gt;
-</pre>
+42. &lt;/html&gt;</pre>
 
 </details>
 
@@ -19846,8 +19745,7 @@ are going to read (default is UTF-8):</p>
 
 <pre>reader.readAsText(file, &#39;UTF-8&#39;);
 reader.readAsText(file, &#39;ISO-8859-1&#39;);
-...
-</pre>
+...</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-7">6.3.7 Read file content as binary</h3>
@@ -19884,17 +19782,16 @@ directly in the browser, without the need for a server!</p>
 <details>
   <summary>Webaudio API</summary>
 
-<pre>1. // User selects file. Read it as an ArrayBuffer and pass to the API.
-2. var fileInput = document.querySelector(&#39;input[type=&quot;file&quot;]&#39;);
-3. fileInput.addEventListener(&#39;change&#39;, function(e) {
-4.    var reader = new FileReader();
-5.    reader.onload = function(e) {
-6.       initSound(e.target.result);
-7.    };
-8.    // THIS IS THE INTERESTING PART!
-9.    reader.readAsArrayBuffer(this.files[0]);
-10. }, false);
-</pre>
+<pre>1.  // User selects file. Read it as an ArrayBuffer and pass to the API.
+2.  var fileInput = document.querySelector(&#39;input[type=&quot;file&quot;]&#39;);
+3.  fileInput.addEventListener(&#39;change&#39;, function(e) {
+4.    var reader = new FileReader();
+5.    reader.onload = function(e) {
+6.      initSound(e.target.result);
+7.    };
+8.    // THIS IS THE INTERESTING PART!
+9.    reader.readAsArrayBuffer(this.files[0]);
+10. }, false);</pre>
 
 </details>
 
@@ -19925,8 +19822,7 @@ page by reducing the number of HTTP requests).</p>
 in the address bar of your browser, and you should see the red
 square:</p>
 
-<pre>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==
-</pre>
+<pre>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==</pre>
 
 <h4>This data URL in a browser address bar should look like this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19947,8 +19843,7 @@ code:</p>
 <pre>&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
 AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 
-9TXL0Y4OHwAAAABJRU5ErkJggg==&quot; alt=&quot;Red square&quot; width=50 height=50/&gt;
-</pre>
+9TXL0Y4OHwAAAABJRU5ErkJggg==&quot; alt=&quot;Red square&quot; width=50 height=50/&gt;</pre>
 
 <h4>And here is the result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20014,39 +19909,38 @@ The reader.readAsDataUrl method is used for that.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>1. &lt;label for=&quot;files&quot;&gt;Choose multiple files:&lt;/label&gt;
-2. &lt;input type=&quot;file&quot; id=&quot;files&quot; multiple
-3.         onchange=&quot;readFilesAndDisplayPreview(this.files);&quot;/&gt;&lt;br/&gt;
-4. &lt;p&gt;Preview of selected images:&lt;/p&gt;
-5. &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
-6. &lt;script&gt;
-7.   function readFilesAndDisplayPreview(files) {
-8.     // Loop through the FileList and render image files as thumbnails.
-9.     for (var i = 0, f; f = files[i]; i++) {
-10.    // Only process image files.
-11.      if (!f.type.match(&#39;image.*&#39;)) {
-12.           continue;
-13.      }
-14.      var reader = new FileReader();
-15.   
-16.      //capture the file information.
-17.      reader.onload = function(e) {
-18.          // Render thumbnail. e.target.result = the image content
-19.          // as a data URL
-20.         // create a span with CSS class=&quot;thumb&quot;, for nicer layout
-21.         var span = document.createElement(&#39;span&#39;);
-22.         // Add an img src=... in the span, with src= the dataURL of
-23.         // the image
-24.         span.innerHTML = &quot;&lt;img class=&#39;thumb&#39; src=&#39;&quot; +
-25.                           e.target.result + &quot;&#39; alt=&#39;a picture&#39;/&gt;&quot;;
-26.         // Insert the span in the output id=list
-27.         document.getElementById(&#39;list&#39;).insertBefore(span, null);
-28.      };
-29.    // Read in the image file as a data URL.
-30.    reader.readAsDataURL(f);
-31.    }
-32.  }
-</pre>
+<pre>1.  &lt;label for=&quot;files&quot;&gt;Choose multiple files:&lt;/label&gt;
+2.  &lt;input type=&quot;file&quot; id=&quot;files&quot; multiple
+3.    onchange=&quot;readFilesAndDisplayPreview(this.files);&quot;/&gt;&lt;br/&gt;
+4.  &lt;p&gt;Preview of selected images:&lt;/p&gt;
+5.  &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
+6.  &lt;script&gt;
+7.  function readFilesAndDisplayPreview(files) {
+8.    // Loop through the FileList and render image files as thumbnails.
+9.    for (var i = 0, f; f = files[i]; i++) {
+10.     // Only process image files.
+11.     if (!f.type.match(&#39;image.*&#39;)) {
+12.       continue;
+13.     }
+14.       var reader = new FileReader();
+15.
+16.     //capture the file information.
+17.     reader.onload = function(e) {
+18.       // Render thumbnail. e.target.result = the image content
+19.       // as a data URL
+20.       // create a span with CSS class=&quot;thumb&quot;, for nicer layout
+21.       var span = document.createElement(&#39;span&#39;);
+22.       // Add an img src=... in the span, with src= the dataURL of
+23.       // the image
+24.       span.innerHTML = &quot;&lt;img class=&#39;thumb&#39; src=&#39;&quot; +
+25.         e.target.result + &quot;&#39; alt=&#39;a picture&#39;/&gt;&quot;;
+26.       // Insert the span in the output id=list
+27.       document.getElementById(&#39;list&#39;).insertBefore(span, null);
+28.     };
+29.     // Read in the image file as a data URL.
+30.     reader.readAsDataURL(f);
+31.   }
+32. }</pre>
 
 </details>
 
@@ -20076,34 +19970,33 @@ The reader.readAsDataUrl method is used for that.</p>
   <summary>Click to expand!</summary>
 
 <pre>function drawImage(imageFile) {
-   var reader = new FileReader();
+  var reader = new FileReader();
  
-   //capture the file information.
-   reader.onload = function(e) {
-     // For drawing an image on a canvas we
-     // need an image object
-     var img = new Image();
-     // Even if the file has been read, decoding
-     // the dataURL format may take some time
-     // so we need to use the regular way of
-     // working with images: onload callback    
-     // that will be called after setting the src attribute
-     img.onload = function(e) {
-       // draw the image!
-       ctx.drawImage(img, 0, 0, 400, 400);
-     }
-     // e.target.result is the dataURL, so we set the
-     // src if the image with it. This will call
-     // asynchonously the onload callback
-     img.src= e.target.result;
-   };
+  //capture the file information.
+  reader.onload = function(e) {
+    // For drawing an image on a canvas we
+    // need an image object
+    var img = new Image();
+    // Even if the file has been read, decoding
+    // the dataURL format may take some time
+    // so we need to use the regular way of
+    // working with images: onload callback    
+    // that will be called after setting the src attribute
+    img.onload = function(e) {
+      // draw the image!
+      ctx.drawImage(img, 0, 0, 400, 400);
+    }
+    // e.target.result is the dataURL, so we set the
+    // src if the image with it. This will call
+    // asynchonously the onload callback
+    img.src= e.target.result;
+  };
   // Read in the image file as a data URL.
   reader.readAsDataURL(imageFile);
-  }
+}
 function readFileAndDraw(files) {
   drawImage(files[0]);
-  }
-</pre>
+}</pre>
 
 </details>
 
@@ -20159,14 +20052,13 @@ several persons at the same time (using WebSockets, for example).<br>
 <pre>navigator.geolocation.getCurrentPosition(showPosition, onError);
  
 function showPosition(position) {
-    console.log(&quot;latitude is: &quot; + position.coords.latitude);
-    console.log(&quot;longitude is: &quot; + position.coords.longitude);
+  console.log(&quot;latitude is: &quot; + position.coords.latitude);
+  console.log(&quot;longitude is: &quot; + position.coords.longitude);
 }
  
 function onError(err) {
-    console.log(&quot;Could not get the position&quot;);
-}
-</pre>
+  console.log(&quot;Could not get the position&quot;);
+}</pre>
 
 </details>
 
@@ -20205,8 +20097,7 @@ the browser will ask if you agree to share your position with the application.</
 22.       }
 23.     &lt;/script&gt;
 24.   &lt;/body&gt;
-25. &lt;/html&gt;
-</pre>
+25. &lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20324,8 +20215,7 @@ means”:</p>
       }
     &lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20347,8 +20237,7 @@ named watchPosition(onSuccess, onError).</p>
 var watchPosId = navigator.geolocation.watchPosition(showPosition);
 ...
 // stop the tracking
-navigator.geolocation.clearWatch(watchPosId);
-</pre>
+navigator.geolocation.clearWatch(watchPosId);</pre>
 
 <p>As a test, you may just try to
 change getCurrentPosition to watchPosition in the previous examples, and
@@ -20391,8 +20280,7 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError,
                                    {maximumAge:0, timeout:100});
 // Ask for GPS, cache for 30s, 27s before going on error...
 watchId=navigator.geolocation.watchPosition(onSuccess, onError,
-  {enableHighAccuracy:true, maximumAge:30000, timeout:27000});
-</pre>
+  {enableHighAccuracy:true, maximumAge:30000, timeout:27000});</pre>
 
 </details>
 
@@ -20440,24 +20328,23 @@ function success(position) {
   var map, marker,
   latitude = position.coords.latitude,
   longitude = position.coords.longitude;
-// Instance map using leaflet
+  // Instance map using leaflet
   map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
-// Tile layer using key api at cloudmade.com
-    L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
-      key: &#39;760506895e284217a7442ce2efe97797&#39;,
-      styleId: 103288,
-      maxZoom: 16
-    }).addTo(map);
-// Marker using leaflet
-    marker = L.marker([latitude, longitude]).addTo(map);
-// Popup in leaflet
-    marker.bindPopup(&#39;&lt;p&gt;Your location&lt;/p&gt;&#39;).openPopup();
-  }
+  // Tile layer using key api at cloudmade.com
+  L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
+    key: &#39;760506895e284217a7442ce2efe97797&#39;,
+    styleId: 103288,
+    maxZoom: 16
+  }).addTo(map);
+  // Marker using leaflet
+  marker = L.marker([latitude, longitude]).addTo(map);
+  // Popup in leaflet
+  marker.bindPopup(&#39;&lt;p&gt;Your location&lt;/p&gt;&#39;).openPopup();
+}
 // Get current position fail
 function error() {
   alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -20481,8 +20368,7 @@ function error() {
     text-decoration: none;
     margin: 0.5rem 0 1rem;
     display: inline-block;
-  }
-</pre>
+  }</pre>
 
 </details>
 
@@ -20502,8 +20388,7 @@ function error() {
   &lt;button class=&quot;btn&quot; onclick=&quot;getLocation(event)&quot;&gt;Click to show your location with OpenStreetMap&lt;/button&gt;
   &lt;div id=&quot;map&quot; class=&quot;map&quot;&gt;&lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -20525,8 +20410,7 @@ function error() {
 9.    &lt;button class=&quot;btn&quot; onclick=&quot;getLocation(event)&quot;&gt;Click to show your location with OpenStreetMap&lt;/button&gt;
 10.   &lt;div id=&quot;map&quot; class=&quot;map&quot;&gt;&lt;/div&gt;
 11. &lt;/body&gt;
-12. &lt;/html&gt;
-</pre>
+12. &lt;/html&gt;</pre>
 
 </details>
 
@@ -20571,8 +20455,7 @@ function error() {
 27. // Get current position fail
 28. function error() {
 29.   alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
-30. }
-</pre>
+30. }</pre>
 
 </details>
 
@@ -20805,8 +20688,7 @@ href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" 
   });
   &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -20897,8 +20779,7 @@ href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" 
     getLocation();
   &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -21000,8 +20881,7 @@ this page):</p>
   }
   &lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21026,6 +20906,6 @@ good understanding of the material.</p>
 </ul>
 
 <h5>. . .The end.<br>
-<br>last updated 06-02-23 8:55am</h5>
+<br>last updated 06-03-23 Sat 1:49am</h5>
   </body>
 </html>
