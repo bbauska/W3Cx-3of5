@@ -1,6 +1,10 @@
-<!-- styles.css of w3cx-3of5 -->
-
-img.displayed {
+/* styles.css of w3cx-3of5 */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .displayed {
     display: block;
     margin: 0 auto; }
 
