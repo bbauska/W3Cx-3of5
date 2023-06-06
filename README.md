@@ -19736,10 +19736,10 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image305.png?raw=true"
-  width="65%"
+  style="width:65%"
   alt="How to save a form's content in localStorage using JSON." />
 &nbsp;
-<br/>
+</p>
 
 <h4>Example #2: a form and a table that displays the contacts stored in localStorage</h4>
 
@@ -19752,22 +19752,21 @@ Add contacts using the form, see how the HTML table is updated. Try to reload th
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image306.png?raw=true"
-  width="65%"
+  style="width:65%"
   alt="Serverless Contact Manager." />
 &nbsp;
-<br/>
+</p>
 
 Examine the localStorage:
-
 <!------------------------------------------------------------------------------------------------>
 <!------------------- 307. localstorage view in devtools shows the data (369) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image307.png?raw=true"
-  width="65%"
+  style="width:65%"
   alt="localStorage view in devtools shows the data." />
 &nbsp;
-<br/>
+</p>
 
 The source code for this example is a bit long, and we suggest that you examine it in the JS Bin tool. We extensively commented it. It uses:
 
@@ -19776,45 +19775,43 @@ Well structured pages with the new elements seen during Module 1 (section, artic
 HTML5 form elements with builtin and custom validation (the date cannot be in the past, the firstName and lastName fields do not accept &, #, ! or $ characters), localStorage for saving / restoring an array of contacts in JSON.
 
 It shows how to use the DOM API for dynamically updating the page content (build the HTML table from the array of contacts, add a new line when a new contact is submitted, etc.)
-
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-3-1">6.3.1 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
-
 The objective of this chapter is to provide an overview of the File API.
-
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------- 308. sound sample editor serverless (370) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image308.jpeg?raw=true"
-  width="45%"
+  style="width:45%"
   alt="Sound sample editor serverless." />
 &nbsp;
+</p>
 
 Before HTML5, file management was limited to multipart forms and to Ajax for sending/requesting files to/from a remote Web server.
 
 Possible actions were limited, both for the developer and the user. However, HTML5 now comes with an API called "File" that holds features for accessing file metadata (name, size, type) from client-side JavaScript. The API also has methods for reading file contents directly in the browser. This is particularly interesting for displaying preview of images before uploading them, or - and this is much more interesting - for developing Web applications that work with local files without the need for a server.
 
 Imagine a multimedia player that accesses (in read-only) your file system, reads your audio and video files, etc., such as the [Remo Music player](https://chrome.google.com/webstore/detail/remo-music-player/ajilpdcmebalpffmjjopcingplogifhb) below, or an application that edits the audio content of local mp3 files, for example, the [HYA-WAVE sound editor](https://wav.hya.io/#/fx) (screenshot above).
-
 <!------------------------------------------------------------------------------------------------>
 <!----------------------- 309. audio player that plays local files (370) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image309.jpeg?raw=true"
-  width="45%"
+  style="width:45%"
   alt="Audio player that plays local files." />
 &nbsp;
-
+</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 310. polarr photo editor uses the File API (371) ------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image310.jpeg?raw=true"
-  width="45%"
+  style="width:45%"
   alt="polarr photo editor uses the File API." />
 &nbsp;
+</p>
 
 <h4>External resources</h4>
 
@@ -19827,7 +19824,6 @@ Imagine a multimedia player that accesses (in read-only) your file system, reads
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-3-2">6.3.2 Working with local files</h3>
 <!------------------------------------------------------------------------------------------------>
-
 Hi! Welcome for this second video of module 6, in which we will talk about the file Javascript API.
 
 This is an API that has been designed for working with files on the client side in Javascript.
@@ -19938,15 +19934,15 @@ I installed one that is called Polarr that is using HTML for all the functionali
 Then you can select filters, you can do some corrections on it and so on, and finally you can export it and that's all.
 
 All this here is HTML5, this is canvas, these are form elements we saw the last week, some canvas here, or image elements and so on.
-
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------------- 311. image previews (374) ------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image311.png?raw=true"
-   width="65%"
-   alt="Image previews." />
+  style="width:65%"
+  alt="Image previews." />
 &nbsp;
+</p>
 
 <h4>Source code:</h4>
 
@@ -19989,7 +19985,6 @@ All this here is HTML5, this is canvas, these are form elements we saw the last 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-3-3">6.3.3 Reading File Metadata</h3>
 <!------------------------------------------------------------------------------------------------>
-
 Imagine you have an input field like this:
 
 1.  Select one or more files: &lt;input type="file" id="input"/&gt;
@@ -20062,9 +20057,9 @@ var selectedFile = document.getElementById('input').files[0];
 
 <h4>Example #2: display metadata of multiple files, use a filter on the file type</h4>
 
-This example is a bit more complicated, as it will display details about all files selected (not only the first) and allows only images to be selected, using the accept attribute of the input field: &lt;input type="file" accept="image/*".../&gt;.
+<p>This example is a bit more complicated, as it will display details about all files selected (not only the first) and allows only images to be selected, using the accept attribute of the input field: &lt;input type="file" accept="image/*".../&gt;.</p>
 
-<a href="https://jsbin.com/deboja/edit?html,output">Example on JSBin</a>, or try it in your browser: click on the button, and select multiple image files. Notice that in the file selector, files that are not images will be greyed and non selectable.
+<p><a href="https://jsbin.com/deboja/edit?html,output">Example on JSBin</a>, or try it in your browser: click on the button, and select multiple image files. Notice that in the file selector, files that are not images will be greyed and non selectable.</p>
 
 <h4>Select several images:</h4>
 
@@ -20072,7 +20067,7 @@ This example is a bit more complicated, as it will display details about all fil
 
 <h4>Source code extract:</h4>
 
-Select several images: &lt;input type="file" accept="image/*" multiple onchange="filesProcess(this.files)" name="selection"/&gt;
+<p>Select several images: &lt;input type="file" accept="image/*" multiple onchange="filesProcess(this.files)" name="selection"/&gt;</p>
 
 <details>
  <summary>Click to expand!</summary>
@@ -20106,11 +20101,9 @@ Select several images: &lt;input type="file" accept="image/*" multiple onch
   <li><i>Line 10:</i> this for loop builds all the rows that compose the table, adding HTML code to the selection string variable. At the end of the loop, this variable contains all the HTML code that corresponds to the table of results.</li><br/>
   <li><i>Line 14:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the &lt;div id="result"&gt; in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically.</li><br/>
 </ul>
-
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-3-4">6.3.4 Blob and File</h3>
 <!------------------------------------------------------------------------------------------------>
-
 The <a href="https://www.w3.org/TR/FileAPI/">HTML5 File API specification</a> introduces several interfaces:
 <ul>
   <li>the <a href="https://www.w3.org/TR/FileAPI/#filelist-section">FileList</a> interface (we already met it) the files property is a FileList,</li>
@@ -20119,50 +20112,52 @@ The <a href="https://www.w3.org/TR/FileAPI/">HTML5 File API specification</a> 
   <li>and the <a href="https://www.w3.org/TR/FileAPI/#APIASynch">FileReader</a> interface for reading file content (we will see how to use it in the next section of the course).</li>
 </ul>
 
-We will not use all of these interfaces, but let's explain the difference between Blob and File, as most of the methods exposed by the FileReader interface take indiscriminately a Blob or a File as parameter.
-
+<p>We will not use all of these interfaces, but let's explain the difference between Blob and File, as most of the methods exposed by the FileReader interface take indiscriminately a Blob or a File as parameter.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 312. the blob movie poster (377) -------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image312.jpeg?raw=true"
-   width="25%"
-   alt="The Blob Movie Poster." />
+  style="width:25%"
+  alt="The Blob Movie Poster." />
 &nbsp;
+</p>
 
 <h4>The Blob object</h4>
 
-<b>An object of type Blob is a structure that represents binary data available as read-only.</b> Most of the time, you will only encounter these objects when you handle files.
+<p><b>An object of type Blob is a structure that represents binary data available as read-only.</b> Most of the time, you will only encounter these objects when you handle files.</p>
 
-Blob objects have two properties, namely:size and type, which respectively retrieve the size in bytes of the data handled by the Blob and their MIME type.
+<p>Blob objects have two properties, namely:size and type, which respectively retrieve the size in bytes of the data handled by the Blob and their MIME type.</p>
 
 <h4>The File object</h4>
 
-<b>File objects are useful for manipulating... files!</b> They inherit the properties and methods of Blob objects, and have two additional properties that are name, for the file name, and lastModifiedDate to get the date of the last modification of the file (in the form of a JavaScript Date object, obviously) .
+<p><b>File objects are useful for manipulating... files!</b> They inherit the properties and methods of Blob objects, and have two additional properties that are name, for the file name, and lastModifiedDate to get the date of the last modification of the file (in the form of a JavaScript Date object, obviously).</p>
 
-Most of the time, we will work with File objects. Blob objects will have real interest when you download binary files using Ajax (see example below).
+<p>Most of the time, we will work with File objects. Blob objects will have real interest when you download binary files using Ajax (see example below).</p>
 
 <h4>[Advanced]</h4>
 
-If you are interested in seeing how Blob objects can be used, [here is an example "as is" that shows how to download an image using Xhr2](https://jsbin.com/jefitop/1/edit?html,output) (Xml Http Request version 2). The examples uses a <progress> element to show the download progress, and uses xhr.responseType = 'blob'; to indicate that the file we are going to download is a binary file (a blob). Try the example, then comment the line with responseType='blob'. In this case, you will notice that the image file is not properly decoded by the browser and is not displayed in the page. We explain Xhr2 in the [W3C HTML5 Apps and Games](https://www.edx.org/course/html5-apps-and-games) course.
+<p>If you are interested in seeing how Blob objects can be used, [here is an example "as is" that shows how to download an image using Xhr2](https://jsbin.com/jefitop/1/edit?html,output) (Xml Http Request version 2). The examples uses a <progress> element to show the download progress, and uses xhr.responseType = 'blob'; to indicate that the file we are going to download is a binary file (a blob). Try the example, then comment the line with responseType='blob'. In this case, you will notice that the image file is not properly decoded by the browser and is not displayed in the page. We explain Xhr2 in the [W3C HTML5 Apps and Games](https://www.edx.org/course/html5-apps-and-games) course.</p>
 
 <h3>6.3.5 Reading file content</h3>
 
-In order to read the content of a file, different steps required. Let's see how to do it.
+<p>In order to read the content of a file, different steps required. Let's see how to do it.</p>
 
 <h4>Typical use is made of three steps</h4>
 
 <h4>Step #1: create a FileReader object</h4>
 
-The file API proposes several methods for reading file content, each taken from the FileReader interface. Here is how you create a FileReader object:
+<p>The file API proposes several methods for reading file content, each taken from the FileReader interface. Here is how you create a FileReader object:</p>
 
+```
 1.  var reader = new FileReader();
+```
 
 <h4>Steps #2 and #3: first call a method of the FileReader object for reading the file content, then get the file content in an onload callback</h4>
 
-There are three different methods available for reading a file's content: readAsText, readAsArrayBuffer for binary data and also as readAsDataURL (the content will be a URL you will use to set the src field of an <img src=...>, &lt;audio&gt;, &lt;video&gt;, and also with all existing methods/properties that accept a URL).
+<p>There are three different methods available for reading a file's content: readAsText, readAsArrayBuffer for binary data and also as readAsDataURL (the content will be a URL you will use to set the src field of an <img src=...>, &lt;audio&gt;, &lt;video&gt;, and also with all existing methods/properties that accept a URL).</p>
 
-All these methods take as a unique parameter a File object (for example, a file chosen by a user after clicking on a &lt;input type=file&gt; input field). Below, we use, as an example, the readAsText method:
+<p>All these methods take as a unique parameter a File object (for example, a file chosen by a user after clicking on a &lt;input type=file&gt; input field). Below, we use, as an example, the readAsText method:</p>
 
 <details>
  <summary>Click to expand!</summary>
@@ -20185,46 +20180,46 @@ function readFileContent(f) {
 </details>
 
 <p>The above code shows how a file can be read as text. The function is called, for example by clicking on the button corresponding to a &lt;input type="file" id="file"  onchange="readFileContent(this.files)"/&gt;, and by choosing a file.</p>
+
 <ul>
   <li><i>Line 12</i> is executed first, and asks the Reader object to read the file f as text. As this takes some time, it's an asynchronous operation that will be executed by the browser in the background. When the file is read, the reader.onload callback function is called.</li>
   <li><i>Line 4</i> is executed after <i>line 12</i>, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
 </ul>
-Try a variation of the above code in your browser, that displays the file content in a text area. This example is detailed further in the course. Click and select a text file below:
 
-Choose a text file:
+<p>Try a variation of the above code in your browser, that displays the file content in a text area. This example is detailed further in the course. Click and select a text file below:</p>
 
+<p>Choose a text file:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 313. select a text file (379) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image313.png?raw=true"
-   width="45%"
-   alt="Select a text file." />
+  style="width:45%"
+  alt="Select a text file." />
 &nbsp;
+</p>
 
-In the following pages, we look at different examples that read file contents as text, dataURL and binary.
+<p>In the following pages, we look at different examples that read file contents as text, dataURL and binary.</p>
 
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-3-6">6.3.6 Read file content as text</h3>
 <!------------------------------------------------------------------------------------------------>
+<p>Let's start by reading a pure text file:</p>
 
-Let's start by reading a pure text file
-
-<h4>Examples</h4>
+<h4>Examples:</h4>
 
 <h4>Example #1: read a single file's content</h4>
 
-<a href="https://jsbin.com/xewemi/edit?html,output">Example at JSBin</a>, or try it below in your browser:
-
+<p><a href="https://jsbin.com/xewemi/edit?html,output">Example at JSBin</a>, or try it below in your browser:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------------- 314. read single files content (379) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image314.png?raw=true"
-   width="45%"
-   alt="Read a single file's content." />
+  style="width:45%"
+  alt="Read a single file's content." />
 &nbsp;
-<br/>
+</p>
 
 <h4>Complete source code:</h4>
 
@@ -20269,22 +20264,21 @@ Let's start by reading a pure text file
 
 </details>
 
-This example is the one at the end of the previous page. This time, we show the complete source code above. Remember that the instruction at <i>line 29</i> is executed first, then when the file is read, the browser will call asynchronously the onload callback at <i>line 20</i>.
+<p>This example is the one at the end of the previous page. This time, we show the complete source code above. Remember that the instruction at <i>line 29</i> is executed first, then when the file is read, the browser will call asynchronously the onload callback at <i>line 20</i>.</p>
 
 <h4>Example #2: a variation of the previous one, using multiple files</h4>
 
-<a href="https://jsbin.com/zaheyu/edit?html,output">Example on JSBin</a>, or try it below in your browser.
-This time, please select multiple text files (using shift for multiple selection):
-
+<p><a href="https://jsbin.com/zaheyu/edit?html,output">Example on JSBin</a>, or try it below in your browser.
+This time, please select multiple text files (using shift for multiple selection):</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 315. choose multiple text files (380) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image315.png?raw=true"
-   width="40%"
-   alt="Choose multiple text files." />
+  style="width:40%"
+  alt="Choose multiple text files." />
 &nbsp;
-<br/>
+</p>
 
 <h4>Source code:</h4>
 
@@ -20340,15 +20334,15 @@ This time, please select multiple text files (using shift for multiple selection
 
 <h4>Explanations</h4>
 
-This example is similar to the previous one, except that this time we read multiple files.
+<p>This example is similar to the previous one, except that this time we read multiple files.</p>
 
-<i>Line 20:</i> this is the for loop that will iterate on the files object passed as parameter by the onchange listener declaration at <i>line 10.</i>
+<p><i>Line 20:</i> this is the for loop that will iterate on the files object passed as parameter by the onchange listener declaration at <i>line 10.</i></p>
 
-<i>Line 25:</i> instead of declaring the onload listener with a reader.onload =... directly in the loop, this time we preferred to write a separate function that will do this. This technique is useful when you want the listener to work with extra variables computed in the loop (in our case, the name of the file).
+<p><i>Line 25:</i> instead of declaring the onload listener with a reader.onload =... directly in the loop, this time we preferred to write a separate function that will do this. This technique is useful when you want the listener to work with extra variables computed in the loop (in our case, the name of the file).</p>
 
 <h4>About charter encoding</h4>
 
-Note that you can optionally indicate the encoding of the file you are going to read (default is UTF-8):
+<p>Note that you can optionally indicate the encoding of the file you are going to read (default is UTF-8):</p>
 
 ```
 reader.readAsText(file, 'UTF-8');
@@ -20359,26 +20353,24 @@ reader.readAsText(file, 'ISO-8859-1');
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-3-7">6.3.7 Read file content as binary</h3>
 <!------------------------------------------------------------------------------------------------>
-
 <p>This method is rarely used, except for loading "raw" binary data. For images you would like to see in your HTML page using the &lt;img src= tag&gt; or for drawing in a canvas, or for audio and video files that you would like to play using the &lt;audio&gt; or &lt;video&gt; elements, it would be preferable to use the readAsDataURL method presented on the next page of the course.
 
-readAsArrayBuffer is often used for purposes such as reading audio samples that should be loaded in memory and played using the WebAudio API, or for loading textures that you will use with WebGL for 3D animations.</p>
+<p>readAsArrayBuffer is often used for purposes such as reading audio samples that should be loaded in memory and played using the WebAudio API, or for loading textures that you will use with WebGL for 3D animations.</p>
 
 <h4>Example: read a local audio file and play it with the WebAudio API</h4>
 
-<p>The WebAudio API is useful for reading audio sound samples from memory (no streaming), and has been designed for music application and games. This example shows how a local audio file can be read and played directly in the browser, without the need for a server!
+<p>The WebAudio API is useful for reading audio sound samples from memory (no streaming), and has been designed for music application and games. This example shows how a local audio file can be read and played directly in the browser, without the need for a server!</p>
 
-<a href="https://jsbin.com/xepexuy/1/edit?html,output">Example on JSBin</a> (does not work on IE, as it does not support the WebAudio API). We could not embed it here on the edX platform as it prevents code that uses Ajax to run in its pages.</p>
-
+<p><a href="https://jsbin.com/xepexuy/1/edit?html,output">Example on JSBin</a> (does not work on IE, as it does not support the WebAudio API). We could not embed it here on the edX platform as it prevents code that uses Ajax to run in its pages.</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------- 316. webaudio api - does not work with microsoft shit (382) ------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image316.jpeg?raw=true"
-   width="55%"
-   alt="Choose binary audio, pass it to initSound, decode and play in memory on WebAudio." />
+  style="width:55%"
+  alt="Choose binary audio, pass it to initSound, decode and play in memory on WebAudio." />
 &nbsp;
-<br/>
+</p>
 
 <h4>Source code extract:</h4>
 
@@ -20407,34 +20399,31 @@ readAsArrayBuffer is often used for purposes such as reading audio samples that
   <li><i>Line 11:</i> when a user chooses a file, the listener will be executed. Line 11 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.</li>
   <li><i>Line 7:</i> is the onload callback, executed when the file content is loaded in memory. We pass the file content to the initSound function (see JSBin example for complete source code) that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio works only with uncompressed audio formats in memory), and to play it.</li>
 </ul>
-
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-3-8">6.3.8 Read file content as dataURL</h3>
 <!------------------------------------------------------------------------------------------------>
-
 <h4>What is a data URL?</h4>
 
-<p>A data URL is a URL that includes type and content at the same time. It is useful, for example,  for in-lining images or videos in the HTML of a Web page (on mobile devices, this may speed up the loading of the page by reducing the number of HTTP requests).
+<p>A data URL is a URL that includes type and content at the same time. It is useful, for example,  for in-lining images or videos in the HTML of a Web page (on mobile devices, this may speed up the loading of the page by reducing the number of HTTP requests).</p>
 
-Here is an example of a red square, as a data URL. Copy and paste it in the address bar of your browser, and you should see the red square:
+<p>Here is an example of a red square, as a data URL. Copy and paste it in the address bar of your browser, and you should see the red square:</p>
 
-data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==
-</p>
+<p>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==</p>
+
 <h4>This data URL in a browser address bar should look like this:</h4>
-
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- 317. data url in address bar shows a red cirle (383) ---------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image317.jpeg?raw=true"
-   width="85%"
-   alt="Data url in address bar shows a red circle." />
+  style="width:85%"
+  alt="Data url in address bar shows a red circle." />
 &nbsp;
-<br/>
+</p>
 
-<p>If we set the src attribute of an image element <img src="data:image/png...."> with the data URL of the above screenshot, it will work exactly as if you used a URL that started with https://
+<p>If we set the src attribute of an image element <img src="data:image/png...."> with the data URL of the above screenshot, it will work exactly as if you used a URL that started with https://</p>
 
-In your browser, you will see a small red circle rendered by this source code:</p>
+<p>In your browser, you will see a small red circle rendered by this source code:</p>
 
 ```
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
@@ -20449,58 +20438,55 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image318.png?raw=true"
-   width="15%"
-   alt="Red splotch." />
+  style="width:15%"
+  alt="Red splotch." />
 &nbsp;
-<br/>
+</p>
 
-This dataURL format enables file content to be stored in a base64 format (as a string), and adds the MIME type specification of the content. The dataURL can therefore store a file as a URL readable with modern browsers. It is becoming more commonly used on the Web, especially for mobile applications, as inlining images reduces the number of HTTP requests and makes the Web page load faster.
+<p>This dataURL format enables file content to be stored in a base64 format (as a string), and adds the MIME type specification of the content. The dataURL can therefore store a file as a URL readable with modern browsers. It is becoming more commonly used on the Web, especially for mobile applications, as inlining images reduces the number of HTTP requests and makes the Web page load faster.</p>
 
-You will find lots of Web sites and tools for generating dataURL from files, such as <a href="https://ezgif.com/image-to-datauri">Image to Data URI converter</a> (screenshot below):
-
+<p>You will find lots of Web sites and tools for generating dataURL from files, such as <a href="https://ezgif.com/image-to-datauri">Image to Data URI converter</a> (screenshot below):</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------ 319. Online service that converts uploaded images to data uris... ----------------->
 <!-------------- we see an image and its ascii encoded data uri version (384) -------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image319.jpeg?raw=true"
-   width="55%"
-   alt="Online service that converts uploaded images to data uris...we see an image and its ascii encoded data uri version." />
+  style="width:55%"
+  alt="Online service that converts uploaded images to data uris...we see an image and its ascii encoded data uri version." />
 </p>
 
-With the above example, you can copy and paste the characters on the left and use them with an <img src="...">. Just set the src attribute with it!
+<p>With the above example, you can copy and paste the characters on the left and use them with an <img src="...">. Just set the src attribute with it!</p>
 
-Notice that you can encode any type of file as dataURL, but this format is most frequently used with ./images files (images, audio, video).
+<p>Notice that you can encode any type of file as dataURL, but this format is most frequently used with ./images files (images, audio, video).</p>
 
-Example of HTML5 logo embedded in a document without any real image, just a dataURL and CSS:
-
+<p>Example of HTML5 logo embedded in a document without any real image, just a dataURL and CSS:</p>
 <!------------------------------------------------------------------------------------------------>
 <!-- 320. screenshot of jsbin examle shows the html5 logo insterted before a div using css (385) ->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image317.jpeg?raw=true"
-   width="65%"
-   alt="Data url in address bar shows a red circle." />
+  style="width:65%"
+  alt="Data url in address bar shows a red circle." />
 &nbsp;
-<br/>
+</p>
 
 <h4>Examples</h4>
 
 <h4>Example #1: read images as data URL and display previews in the page</h4>
 
-This first example is useful for forms that allow the user to select one or more pictures. Before sending the form, you might want to get a preview of the pictures in the HTML page. The reader.readAsDataUrl method is used for that.
+<p>This first example is useful for forms that allow the user to select one or more pictures. Before sending the form, you might want to get a preview of the pictures in the HTML page. The reader.readAsDataUrl method is used for that.</p>
 
-<a href="https://jsbin.com/laseye/edit?html,output">Example on JSBin</a> or try it below in your browser:
-
+<p><a href="https://jsbin.com/laseye/edit?html,output">Example on JSBin</a> or try it below in your browser:</p>
 <!------------------------------------------------------------------------------------------------>
 <!--------------------------- 332. preview of selected images (385) ------------------------------>
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image332.png?raw=true"
-   width="45%"
-   alt="Preview of selected images." />
+  style="width:45%"
+  alt="Preview of selected images." />
 &nbsp;
-<br/>
+</p>
 
 <h4>Preview of selected images:</h4>
 
@@ -20547,23 +20533,24 @@ This first example is useful for forms that allow the user to select one or more
 </details>
 
 <h4>Explanations:</h4>
+
 <ul>
   <li><i>Line 30:</i> starts the reading of the file f. When f is read, the onload callback will be called.</li>
   <li><i>Lines 24-30:</i> we build, using the DOM API, a <span class="thumb">...</span> and inside we add an <img src=the data url> element with its src attribute equal to 
   the url of the image that has been read (the image content as dataURL is in e.target.result). Finally, at <i>line 27</i>, we insert the span in the document before the 
   current children of the <output id="list"> element (declared at <i>line 5</i>).</li>
 </ul>
+
 <h4>Example #2: read a single local image file and use it with drawImage in a canvas</h4>
 
 <a href="https://jsbin.com/miciqu/edit?html,output">Try it on JSBin</a>
-
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 322. example 2 kitty cat (386) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image322.jpeg?raw=true"
-   width="55%"
-   alt="Example #2 read image as dataURL and draw inside a canvas." />
+  style="width:55%"
+  alt="Example #2 read image as dataURL and draw inside a canvas." />
 &nbsp;
 <br/>
 
@@ -20609,33 +20596,32 @@ function readFileAndDraw(files) {
 
 <h4>Explanations:</h4>
 
-Remember how we worked with images on a canvas. We had to create an empty image object (<i>line 8</i>), set the src attribute of the image object (<i>line 23</i>), then use an image.onload callback (<i>line 15</i>), and we could only draw from inside the callback (<i>line 17</i>). This time, it's exactly the same, except that the URL comes from e.target.result in the reader.onload callback (<i>line 23</i>).
+<p>Remember how we worked with images on a canvas. We had to create an empty image object (<i>line 8</i>), set the src attribute of the image object (<i>line 23</i>), then use an image.onload callback (<i>line 15</i>), and we could only draw from inside the callback (<i>line 17</i>). This time, it's exactly the same, except that the URL comes from e.target.result in the reader.onload callback (<i>line 23</i>).</p>
 
 <h4>Example #3 (advanced): an instagram-like photo filter application</h4>
 
-Another very impressive example, has been developed by @GeorgianaB, a student of the first iteration of this course (see her [other creations/examples](https://codepen.io/giana/)). This Web application reads local image files, draws them into a canvas element and proposes different filters. This example is given "as is" for those of you who would like to go further. Just click on the link (or on the image below) and look at the source code.
+<p>Another very impressive example, has been developed by @GeorgianaB, a student of the first iteration of this course (see her [other creations/examples](https://codepen.io/giana/)). This Web application reads local image files, draws them into a canvas element and proposes different filters. This example is given "as is" for those of you who would like to go further. Just click on the link (or on the image below) and look at the source code.</p>
 
 <a href="https://gianablantin.github.io/CanvasFilters/">Try this example online on gitHub</a>.
 
 <h4>Introduction</h4>
 
-This chapter presents the new Geolocation API and illustrates its use with several examples.
-
+<p>This chapter presents the new Geolocation API and illustrates its use with several examples.</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------ 323. w3c geolocation logo (388) --------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image323.png?raw=true"
-   width="25%"
-   alt="W3C Geolocation logo/icon." />
+  style="width:25%"
+  alt="W3C Geolocation logo/icon." />
 &nbsp;
-<br/>
+</p>
 
-<p>The Geolocation HTML5 JavaScript API is implemented by most modern Web browsers, and uses different means to get the current location: GPS, GSM/3G triangulation, Wifi, IP address, etc.
+<p>The Geolocation HTML5 JavaScript API is implemented by most modern Web browsers, and uses different means to get the current location: GPS, GSM/3G triangulation, Wifi, IP address, etc.</p>
 
-It is possible to prompt the user to activate the GPS (this is what most GPS navigation software does on mobile phones), or ask for a particular mean among those available. It is also possible to track the current position when it changes. This is useful for writing a navigation application or for tracking in real time the position of different participants in the case of an application that involves several persons at the same time (using WebSockets, for example).
+<p>It is possible to prompt the user to activate the GPS (this is what most GPS navigation software does on mobile phones), or ask for a particular mean among those available. It is also possible to track the current position when it changes. This is useful for writing a navigation application or for tracking in real time the position of different participants in the case of an application that involves several persons at the same time (using WebSockets, for example).</p>
 
-<a href="https://caniuse.com/#feat=geolocation">Browser support for the Geolocation API</a> is excellent, both on mobile and on desktop devices.</p>
+<p><a href="https://caniuse.com/#feat=geolocation">Browser support for the Geolocation API</a> is excellent, both on mobile and on desktop devices.</p>
 
 <h4>Typical use</h4>
 
@@ -20657,15 +20643,14 @@ function onError(err) {
 
 </details>
 
-<p>
-<a href="https://jsbin.com/toyeley/1/edit?html,output">This online example at JSBin</a> shows how to get the current longitude and latitude and display them in an HTML page. Try it below in your browser:
+<p><a href="https://jsbin.com/toyeley/1/edit?html,output">This online example at JSBin</a> shows how to get the current longitude and latitude and display them in an HTML page. Try it below in your browser:</p>
 
-Click the button to get your coordinates:
+<h4>Click the button to get your coordinates:</h4>
 
-Where am I ?
+<h4>Where am I ?</h4>
 
-Note that the first time you execute this example, for privacy reasons, the browser will ask if you agree to share your position with the application.
-</p>
+<p>Note that the first time you execute this example, for privacy reasons, the browser will ask if you agree to share your position with the application.</p>
+
 <h4>Source code of this typical example:</h4>
 
 <details>
@@ -20675,26 +20660,26 @@ Note that the first time you execute this example, for privacy reasons, the brow
 1.  <!DOCTYPE html>
 2.  <html lang="en">
 3.  <head>
-4.  <meta charset="utf-8">
-5.  <title>Basic example of use of the geolocation API</title>
+4.    <meta charset="utf-8">
+5.    <title>Basic example of use of the geolocation API</title>
 6.  </head>
 7.  <body>
-8.  <p id="msg">Click the button to get your coordinates:</p>
-9.  <button onclick="getLocation()">Where am I ?</button>
-10.  <script>
-11.  var displayCoords=document.getElementById("msg");
-12.  function getLocation() {
-13.  if (navigator.geolocation) {
-14.  navigator.geolocation.getCurrentPosition(showPosition);
-15.  } else {
-16.  displayCoords.innerHTML="Geolocation API not supported by your browser.";
-17.  }
-18.  }
-19.  function showPosition(position) {
-20.  displayCoords.innerHTML="Latitude: " + position.coords.latitude +
-21. "<br />Longitude: " + position.coords.longitude;
-22. }
-23. </script>
+8.    <p id="msg">Click the button to get your coordinates:</p>
+9.    <button onclick="getLocation()">Where am I ?</button>
+10.   <script>
+11.     var displayCoords=document.getElementById("msg");
+12.     function getLocation() {
+13.       if (navigator.geolocation) {
+14.         navigator.geolocation.getCurrentPosition(showPosition);
+15.       } else {
+16.         displayCoords.innerHTML="Geolocation API not supported by your browser.";
+17.       }
+18.     }
+19.     function showPosition(position) {
+20.      displayCoords.innerHTML="Latitude: " + position.coords.latitude +
+21.        "<br />Longitude: " + position.coords.longitude;
+22.     }
+23.   </script>
 24. </body>
 25. </html>
 ```
@@ -20706,11 +20691,12 @@ Note that the first time you execute this example, for privacy reasons, the brow
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image324.jpeg?raw=true"
-   width="55%"
-   alt="Geolocation Callback Illustration." />
+  style="width:55%"
+  alt="Geolocation Callback Illustration." />
 </p>
 
 <h4>Explanations:</h4>
+
 <ul>
   <li><i>Line 13</i> checks if the Web browser supports the geolocation API by testing the variable navigator.geolocation. If not null, then the geolocation API is supported.</li>
   <li><i>Line 14</i> calls navigator.geolocation.getCurrentPosition(showPosition) passing a callback function as a parameter (in this example we did not specify a callback in case of error). When a current position is available, the callback function will be called asynchronously, and the input parameter of this callback function will be the current position, like in the function showPosition(position) of the example.</li>
@@ -20732,35 +20718,30 @@ Note that the first time you execute this example, for privacy reasons, the brow
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-4-2">6.4.2 The coords object properties</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>
-In the previous example, we used the coords property of the position passed as an input parameter to the callback function. This coords object has many properties:
-</p>
+<p>In the previous example, we used the coords property of the position passed as an input parameter to the callback function. This coords object has many properties:</p>
 <!------------------------------------------------------------------------------------------------>
 <!------------------------- 325. properties of the coords object (390) --------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image325.png?raw=true"
-   width="85%"
-   alt="Properties of the coords object." />
+  style="width:85%"
+  alt="Properties of the coords object." />
 </p>
-<p>
-Not all these values may be available in all Web browsers. When one of these properties is null, it means that it is not available (often the case of the altitudeAccuracy)
-</p>
+
+<p>Not all these values may be available in all Web browsers. When one of these properties is null, it means that it is not available (often the case of the altitudeAccuracy)</p>
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-4-3">6.4.3 Geolocation error codes</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>
-In the last example, we used the navigator.geolocation. getCurrentPosition(showPosition) with only one callback function (in the case of success), but it is also possible to pass a second parameter that is another callback function called in the case of error.
+<p>In the last example, we used the navigator.geolocation. getCurrentPosition(showPosition) with only one callback function (in the case of success), but it is also possible to pass a second parameter that is another callback function called in the case of error.</p>
 
-A slightly different version of the previous example <a href="https://jsbin.com/bafusik/edit?html,output">shows how to properly check against the different possible errors</a>. Try it, then turn your WiFi off or unplug your Ethernet cable (or turn off GPS and 3G/4G on a mobile phone). You should see an error message Error during geolocation: Location could not be obtained though the available means":
-</p>
+<p>A slightly different version of the previous example <a href="https://jsbin.com/bafusik/edit?html,output">shows how to properly check against the different possible errors</a>. Try it, then turn your WiFi off or unplug your Ethernet cable (or turn off GPS and 3G/4G on a mobile phone). You should see an error message Error during geolocation: Location could not be obtained though the available means":</p>
 <!------------------------------------------------------------------------------------------------>
 <!-------------------------------- 326. geolocation error (390) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image326.jpeg?raw=true"
-   width="85%"
-   alt="Geolocation error." />
+  style="width:85%"
+  alt="Geolocation error." />
 </p>
 
 <h4>Source code of the example:</h4>
@@ -20815,7 +20796,6 @@ A slightly different version of the previous example <a href="https://jsbin.com
 ```
 
 </details>
-
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-4-4">6.4.4 Tracking a position</h3>
 <!------------------------------------------------------------------------------------------------>
@@ -20838,20 +20818,18 @@ var watchPosId = navigator.geolocation.watchPosition(showPosition);
 navigator.geolocation.clearWatch(watchPosId);
 ```
 
-<p>
-As a test, you may just try to change getCurrentPosition to watchPosition in the previous examples, and try this code using a mobile phone or tablet, walk for 20 meters and see the position changing.
+<p>As a test, you may just try to change getCurrentPosition to watchPosition in the previous examples, and try this code using a mobile phone or tablet, walk for 20 meters and see the position changing.</p>
 
 <h4>Options available when using the geolocation API, in particular real time tracking</h4>
 
-Several options are available when using HTML5 geolocation. We can pass a third parameter to the getCurrentPosition and watchPosition methods, that will hold one or several of the following options:
-</p>
+<p>Several options are available when using HTML5 geolocation. We can pass a third parameter to the getCurrentPosition and watchPosition methods, that will hold one or several of the following options:</p>
 <!------------------------------------------------------------------------------------------------>
 <!---------------------- 327. more properties of the coords object (392) ------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image327.png?raw=true"
-   width="85%"
-   alt="More properties of the coords object." />
+  style="width:85%"
+  alt="More properties of the coords object." />
 </p>
 
 <h4>Example of use</h4>
@@ -20884,12 +20862,10 @@ watchId=navigator.geolocation.watchPosition(onSuccess, onError,
 </details>
 
 <p>Look for the explanations in the lines of comment.</p>
-
 <!------------------------------------------------------------------------------------------------>
 <h3 id="ch6-4-5">6.4.5 Geolocation and maps</h3>
 <!------------------------------------------------------------------------------------------------>
-<p>
-This section presents an example of how to get an interactive map, using <a href="https://leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMap</a>, and gives links to more resources. Did you know that you can even get an estimation of a physical address from the longitude and latitude, using online Web services?
+<p>This section presents an example of how to get an interactive map, using <a href="https://leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMap</a>, and gives links to more resources. Did you know that you can even get an estimation of a physical address from the longitude and latitude, using online Web services?
 
 How to get a map centered on your longitude and latitude.
 </p>
@@ -20898,19 +20874,18 @@ How to get a map centered on your longitude and latitude.
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image328.png?raw=true"
-   width="85%"
-   alt="Example/Test OpenStreetMap." />
+  style="width:85%"
+  alt="Example/Test OpenStreetMap." />
 </p>
 
 <p>This example is just given "as is", as there are so many possibilities for rendering a map with <a href="/leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a basic example might be useful.</p>
-
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 329. openstreetmap test (393) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image329.png?raw=true"
-   width="50%"
-   alt="Example/Test OpenStreetMap." />
+  style="width:50%"
+  alt="Example/Test OpenStreetMap." />
 </p>
 
 <h4>JavaScript</h4>
@@ -20920,34 +20895,36 @@ How to get a map centered on your longitude and latitude.
 
 ```
 function getLocation(e) {
-e.preventDefault();
-if (!navigator.geolocation) {
-alert("Browser doesn't support geolocation");
-} else {
-navigator.geolocation.getCurrentPosition(success, error);
+  e.preventDefault();
+  if (!navigator.geolocation) {
+    alert("Browser doesn't support geolocation");
+  } else {
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
 }
-}
+
 // Get current position successfully
 function success(position) {
-var map, marker,
-latitude = position.coords.latitude,
-longitude = position.coords.longitude;
-// Instance map using leaflet
-map = L.map('map').setView([latitude, longitude], 13);
-// Tile layer using key api at cloudmade.com
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-key: '760506895e284217a7442ce2efe97797',
-styleId: 103288,
-maxZoom: 16
-}).addTo(map);
-// Marker using leaflet
-marker = L.marker([latitude, longitude]).addTo(map);
-// Popup in leaflet
-marker.bindPopup('<p>Your location</p>').openPopup();
+  var map, marker,
+  latitude = position.coords.latitude,
+  longitude = position.coords.longitude;
+  // Instance map using leaflet
+  map = L.map('map').setView([latitude, longitude], 13);
+  // Tile layer using key api at cloudmade.com
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    key: '760506895e284217a7442ce2efe97797',
+    styleId: 103288,
+    maxZoom: 16
+  }).addTo(map);
+  // Marker using leaflet
+  marker = L.marker([latitude, longitude]).addTo(map);
+  // Popup in leaflet
+  marker.bindPopup('<p>Your location</p>').openPopup();
 }
+
 // Get current position fail
 function error() {
-alert('Get current position fail. Please access codepen to get geolocation.');
+  alert('Get current position fail. Please access codepen to get geolocation.');
 }
 ```
 
@@ -21075,7 +21052,6 @@ display: inline-block;
   <li><i>Lines 12 and 13></i> show how to get the longitude and latitude properties from the location,</li>
   <li>The rest is a basic use of the Leaflet API. Notice at <i>line 15</i> that 'map' is the id of the &lt;div&gt; from the HTML part of the code.</li>
 </ul>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-6">6.4.6 Reverse geocoding</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21094,7 +21070,7 @@ Google reverse geocoding example (screenshot only):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image330.png?raw=true"
-  width="45%"
+  style="width:45%"
   alt="Example #1 How to get a physical address from the longitude and latitude." />
 </p>
 
@@ -21197,7 +21173,7 @@ Gisgraphy (free service) reverse geocoding example (screenshot only, click on it
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image331.png?raw=true"
-  width="65%"
+  style="width:65%"
   alt="Gisgraphy screenshot." />
 </p>
 
@@ -21211,7 +21187,7 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image332.png?raw=true"
-  width="65%"
+  style="width:65%"
   alt="Reverse Geocoding - OpenStreetMap." />
 </p>
 
@@ -21502,4 +21478,4 @@ Here are a few project ideas. Your classmates and the team who prepared the cour
 
 . . .The end.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ end readme.md of W3Cx-3of5-HTML5.1x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--- last updated 4-23-2023-01:36pm --->
+<!--- last updated 6-7-2023-01:36pm --->
