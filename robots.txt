@@ -1,0 +1,3 @@
+Sitemap: http://W3Cx-3of5.bauska.org/sitemap.xml
+User-agent: *
+Disallow: /
