@@ -10969,9 +10969,7 @@ ctx.fillRect(0, 0, 300, 200);
 <p>If you modify the source code that defines the direction of the
 gradient as follows…</p>
 
-<pre>
-grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
-</pre>
+<pre>grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);</pre>
 
 <p>… then you will define a gradient that goes from the top left corner of
 the canvas to the bottom right of the canvas. Let’s see what it does:</p>
@@ -11024,24 +11022,22 @@ ctx.fillRect(250, 150, 50, 50);
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-// n = number of cells per row/column
+<pre>// n = number of cells per row/column
 function drawCheckboard(n) {
-    ctx.fillStyle = grdFrenchFlag;
+  ctx.fillStyle = grdFrenchFlag;
 
-    var l = canvas.width;
-    var h = canvas.height;
+  var l = canvas.width;
+  var h = canvas.height;
  
-    var cellWidth = l / n;
-    var cellHeight = h / n;
+  var cellWidth = l / n;
+  var cellHeight = h / n;
 
-    for(i = 0; i &lt; n; i++) {
-       for(j = i % 2; j &lt; n; j++) {
-          ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
-       }
-    }
-}
-</pre>
+  for(i = 0; i &lt; n; i++) {
+    for(j = i % 2; j &lt; n; j++) {
+      ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
+    }
+  }
+}</pre>
 
 </details>
 
@@ -11064,37 +11060,36 @@ a value of 10, 20, or 2…</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-var canvas, ctx, grdFrenchFlag;
+<pre>var canvas, ctx, grdFrenchFlag;
 function init() {
-// Good practice 1: set global vars canvas, ctx, gradients, etc here
-canvas = document.querySelector(&#39;#myCanvas1&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-// The gradient we create is also a global variable, we
-// will be able to reuse it for drawing different shapes
-// in different functions
-grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
-// Try adding colors with first parameter between 0 and 1
-grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
-grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
-grdFrenchFlag.addColorStop(1, &quot;red&quot;);
-drawCheckboard(10);
+  // Good practice 1: set global vars canvas, ctx, gradients, etc here
+  canvas = document.querySelector(&#39;#myCanvas1&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  // The gradient we create is also a global variable, we
+  // will be able to reuse it for drawing different shapes
+  // in different functions
+  grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
+  // Try adding colors with first parameter between 0 and 1
+  grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
+  grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
+  grdFrenchFlag.addColorStop(1, &quot;red&quot;);
+  drawCheckboard(10);
 }
+
 // n = number of cells per row/column
 function drawCheckboard(n) {
-ctx.fillStyle = grdFrenchFlag;
-ctx.lineWidth=10;
-var l = canvas.width;
-var h = canvas.height;
-var cellWidth = l / n;
-var cellHeight = h / n;
-for(i = 0; i &lt; n; i++) {
-for(j = i % 2; j &lt; n; j+=2) {
-ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
-}
-}
-}
-</pre>
+  ctx.fillStyle = grdFrenchFlag;
+  ctx.lineWidth=10;
+  var l = canvas.width;
+  var h = canvas.height;
+  var cellWidth = l / n;
+  var cellHeight = h / n;
+  for(i = 0; i &lt; n; i++) {
+    for(j = i % 2; j &lt; n; j+=2) {
+      ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
+    }
+  }
+}</pre>
 
 </details>
 
@@ -11103,8 +11098,7 @@ ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -11119,8 +11113,7 @@ ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
     &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.
     &lt;/canvas&gt;
   &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -11144,36 +11137,35 @@ set the outline of the rectangles at 5 pixels:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-var canvas, ctx, grdFrenchFlag;
+<pre>var canvas, ctx, grdFrenchFlag;
 function init() {
-// Good practice 1: set global vars canvas, ctx, gradients, etc here
-canvas = document.querySelector(&#39;#myCanvas1&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-// The gradient we create is also a global variable, we
-// will be able to reuse it for drawing different shapes
-// in different functions
-grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
-// Try adding colors with first parameter between 0 and 1
-grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
-grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
-grdFrenchFlag.addColorStop(1, &quot;red&quot;);
-drawCheckboard(5);
+  // Good practice 1: set global vars canvas, ctx, gradients, etc here
+  canvas = document.querySelector(&#39;#myCanvas1&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  // The gradient we create is also a global variable, we
+  // will be able to reuse it for drawing different shapes
+  // in different functions
+  grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
+  // Try adding colors with first parameter between 0 and 1
+  grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
+  grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
+  grdFrenchFlag.addColorStop(1, &quot;red&quot;);
+  drawCheckboard(5);
 }
+
 // n = number of cells per row/column
 function drawCheckboard(n) {
-ctx.strokeStyle = grdFrenchFlag;
-ctx.lineWidth=10;
-var l = canvas.width;
-var h = canvas.height;
-var cellWidth = l / n;
-var cellHeight = h / n;
-for(i = 0; i &lt; n; i++) {
-for(j = i % 2; j &lt; n; j+=2) {
-ctx.strokeRect(cellWidth*(i), cellHeight*j, cellWidth, cellHeight);
-}
-}
-</pre>
+  ctx.strokeStyle = grdFrenchFlag;
+  ctx.lineWidth=10;
+  var l = canvas.width;
+  var h = canvas.height;
+  var cellWidth = l / n;
+  var cellHeight = h / n;
+  for(i = 0; i &lt; n; i++) {
+    for(j = i % 2; j &lt; n; j+=2) {
+      ctx.strokeRect(cellWidth*(i), cellHeight*j, cellWidth, cellHeight);
+    }
+  }</pre>
 
 </details>
 
@@ -11207,18 +11199,16 @@ border: 1px solid black;
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-function drawCheckboard(n) {
-    ctx.strokeStyle = grdFrenchFlag;
-    ctx.lineWidth=10;
-    ...
-    for(i = 0; i &lt; n; i++) {
-        for(j = i % 2; j &lt; n; j++) {
-            ctx.strokeRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
-        }
-    }
-}
-</pre>
+<pre>function drawCheckboard(n) {
+  ctx.strokeStyle = grdFrenchFlag;
+  ctx.lineWidth=10;
+  ...
+  for(i = 0; i &lt; n; i++) {
+    for(j = i % 2; j &lt; n; j++) {
+      ctx.strokeRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
+    }
+  }
+}</pre>
 
 </details>
 
@@ -11231,9 +11221,7 @@ smaller gradient. Instead of going from (0, 0) to (300, 0), it will go
 from (100, 0) to (200, 0), while the canvas remains the same
 (width=300, height=200).</p>
 
-<pre>
-grdFrenchFlag = ctx.createLinearGradient(100, 0, 200, 0);
-</pre>
+<pre>grdFrenchFlag = ctx.createLinearGradient(100, 0, 200, 0);</pre>
 
 <p>Like in the first example we will draw a filled rectangle that is the
 same size as the canvas:</p>
@@ -11250,27 +11238,26 @@ same size as the canvas:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-var canvas, ctx, grdFrenchFlag;
+<pre>var canvas, ctx, grdFrenchFlag;
 function init() {
-// Good practice 1: set global vars canvas, ctx, gradients, etc here
-canvas = document.querySelector(&#39;#myCanvas1&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-// The gradient we create is also a global variable, we
-// will be able to reuse it for drawing different shapes
-// in different functions
-grdFrenchFlag = ctx.createLinearGradient(100, 0, 200, 0);
-// Try adding colors with first parameter between 0 and 1
-grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
-grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
-grdFrenchFlag.addColorStop(1, &quot;red&quot;);
-draw();
+  // Good practice 1: set global vars canvas, ctx, gradients, etc here
+  canvas = document.querySelector(&#39;#myCanvas1&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  // The gradient we create is also a global variable, we
+  // will be able to reuse it for drawing different shapes
+  // in different functions
+  grdFrenchFlag = ctx.createLinearGradient(100, 0, 200, 0);
+  // Try adding colors with first parameter between 0 and 1
+  grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
+  grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
+  grdFrenchFlag.addColorStop(1, &quot;red&quot;);
+  draw();
 }
+
 function draw() {
-ctx.fillStyle = grdFrenchFlag;
-ctx.fillRect(0, 0, 300, 200);
-}
-</pre>
+  ctx.fillStyle = grdFrenchFlag;
+  ctx.fillRect(0, 0, 300, 200);
+}</pre>
 
 </details>
 
@@ -11279,23 +11266,21 @@ ctx.fillRect(0, 0, 300, 200);
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Defining a gradient smaller than the canvas - Example #4&lt;/title&gt;
-&lt;style&gt;
-#myCanvas1 {
-border: 1px solid black;
-}
-&lt;/style&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Defining a gradient smaller than the canvas - Example #4&lt;/title&gt;
+  &lt;style&gt;
+    #myCanvas1 {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -11312,9 +11297,7 @@ the parts of the gradient that are located in the canvas area will be
 shown. You can try this example that defines a gradient twice the size
 of the canvas:</p>
 
-<pre>
-grdFrenchFlag = ctx.createLinearGradient(0, 0, 600, 400);
-</pre>
+<pre>grdFrenchFlag = ctx.createLinearGradient(0, 0, 600, 400);</pre>
 
 <p>And if we draw the same rectangle with the canvas size, here is the
 result:</p>
@@ -11331,27 +11314,25 @@ result:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-var canvas, ctx, grdFrenchFlag;
+<pre>var canvas, ctx, grdFrenchFlag;
 function init() {
-// Good practice 1: set global vars canvas, ctx, gradients, etc here
-canvas = document.querySelector(&#39;#myCanvas1&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-// The gradient we create is also a global variable, we
-// will be able to reuse it for drawing different shapes
-// in different functions
-grdFrenchFlag = ctx.createLinearGradient(0, 0, 600, 400);
-// Try adding colors with first parameter between 0 and 1
-grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
-grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
-grdFrenchFlag.addColorStop(1, &quot;red&quot;);
-draw();
+  // Good practice 1: set global vars canvas, ctx, gradients, etc here
+  canvas = document.querySelector(&#39;#myCanvas1&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  // The gradient we create is also a global variable, we
+  // will be able to reuse it for drawing different shapes
+  // in different functions
+  grdFrenchFlag = ctx.createLinearGradient(0, 0, 600, 400);
+  // Try adding colors with first parameter between 0 and 1
+  grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
+  grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
+  grdFrenchFlag.addColorStop(1, &quot;red&quot;);
+  draw();
 }
 function draw() {
-ctx.fillStyle = grdFrenchFlag;
-ctx.fillRect(0, 0, 300, 200);
-}
-</pre>
+  ctx.fillStyle = grdFrenchFlag;
+  ctx.fillRect(0, 0, 300, 200);
+}</pre>
 
 </details>
 
@@ -11360,23 +11341,21 @@ ctx.fillRect(0, 0, 300, 200);
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Defining a gradient bigger than the canvas - Example #5&lt;/title&gt;
-&lt;style&gt;
-#myCanvas1 {
-border: 1px solid black;
-}
-&lt;/style&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Defining a gradient bigger than the canvas - Example #5&lt;/title&gt;
+  &lt;style&gt;
+    #myCanvas1 {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -11405,33 +11384,33 @@ this:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-var canvas, ctx, grdFrenchFlag;
+<pre>var canvas, ctx, grdFrenchFlag;
 function init() {
-// Good practice 1: set global vars canvas, ctx, gradients, etc here
-canvas = document.querySelector(#myCanvas1);
-ctx = canvas.getContext(&#39;2d&#39;);
-drawCheckboard(5);
+  // Good practice 1: set global vars canvas, ctx, gradients, etc here
+  canvas = document.querySelector(#myCanvas1);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  drawCheckboard(5);
 }
 function setGradient(x, y, width, height) {
-grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
-grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
-grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
-grdFrenchFlag.addColorStop(1, &quot;red&quot;);
-ctx.fillStyle = grdFrenchFlag;
+  grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
+  grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
+  grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
+  grdFrenchFlag.addColorStop(1, &quot;red&quot;);
+  ctx.fillStyle = grdFrenchFlag;
 }
 // n = number of cells per row/column
 function drawCheckboard(n) {
-var l = canvas.width;
-var h = canvas.height;
-var cellWidth = l / n;
-var cellHeight = h / n;
-for(i = 0; i &lt; n; i+=2) {
-for(j = 0; j &lt; n; j++) {
-var x = cellWidth*(i+j%2);
-var y = cellHeight*j;
-setGradient(x, y, x+cellWidth, y+cellHeight);
-ctx.fillRect(x, y, cellWidth, cellHeight);</pre>
+  var l = canvas.width;
+  var h = canvas.height;
+  var cellWidth = l / n;
+  var cellHeight = h / n;
+  for(i = 0; i &lt; n; i+=2) {
+    for(j = 0; j &lt; n; j++) {
+      var x = cellWidth*(i+j%2);
+      var y = cellHeight*j;
+      setGradient(x, y, x+cellWidth, y+cellHeight);
+      ctx.fillRect(x, y, cellWidth, cellHeight);</pre>
+
 </details>
 
 <h4>HTML</h4>
@@ -11464,32 +11443,30 @@ border: 1px solid black;
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-function setGradient(x, y, width, height) {
-    grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
-    grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
-    grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
-    grdFrenchFlag.addColorStop(1, &quot;red&quot;);
-    // set the new gradient to the current fillStyle
-    ctx.fillStyle = grdFrenchFlag;
+<pre>function setGradient(x, y, width, height) {
+  grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
+  grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
+  grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
+  grdFrenchFlag.addColorStop(1, &quot;red&quot;);
+  // set the new gradient to the current fillStyle
+  ctx.fillStyle = grdFrenchFlag;
 }
  
 // n = number of cells per row/column
 function drawCheckboard(n) {
-   var l = canvas.width;
-   var h = canvas.height;
-   var cellWidth = l / n;
-   var cellHeight = h / n;
-   for(i = 0; i &lt; n; i+=2) {
-     for(j = 0; j &lt; n; j++) {
-        var x = cellWidth*(i+j%2);
-        var y = cellHeight*j;
-        setGradient(x, y, x+cellWidth, y+cellHeight);
-        ctx.fillRect(x, y, cellWidth, cellHeight);
-     }
-   }
-}
-</pre>
+  var l = canvas.width;
+  var h = canvas.height;
+  var cellWidth = l / n;
+  var cellHeight = h / n;
+  for(i = 0; i &lt; n; i+=2) {
+    for(j = 0; j &lt; n; j++) {
+      var x = cellWidth*(i+j%2);
+      var y = cellHeight*j;
+      setGradient(x, y, x+cellWidth, y+cellHeight);
+      ctx.fillRect(x, y, cellWidth, cellHeight);
+    }
+  }
+}</pre>
 
 </details>
 
@@ -11519,8 +11496,7 @@ propagating/interpolating along a virtual line, like linear gradients.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-var canvas, ctx, grd;
+<pre>var canvas, ctx, grd;
 function init() {
 // Good practice 1: set global vars canvas, ctx, gradients, etc here
    canvas = document.querySelector(&#39;#myCanvas1&#39;);
@@ -11537,8 +11513,7 @@ function init() {
 function draw() {
    ctx.fillStyle = grd;
    ctx.fillRect(0, 0, 300, 200);
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -11547,8 +11522,7 @@ function draw() {
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
    &lt;head&gt;
       &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -11562,15 +11536,13 @@ function draw() {
    &lt;body onload=&quot;init();&quot;&gt;
       &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
    &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
 <h4>The gradient is defined as follows:</h4>
 
-<pre>
-var grd = context.createRadialGradient(150, 100, 30, 150, 100, 100);
+<pre>var grd = context.createRadialGradient(150, 100, 30, 150, 100, 100);
 grd.addColorStop(0, &quot;red&quot;);
 grd.addColorStop(0.17, &quot;orange&quot;);
 grd.addColorStop(0.33, &quot;yellow&quot;);
@@ -11578,8 +11550,7 @@ grd.addColorStop(0.5, &quot;green&quot;);
 grd.addColorStop(0.666, &quot;blue&quot;);
 grd.addColorStop(1, &quot;violet&quot;);
 
-context.fillStyle = grd;
-</pre>
+context.fillStyle = grd;</pre>
 
 <p>The method from the context object createRadialGradient(cx1, cy1,
 radius1, cx2, cy2, radius2) takes as the first three parameters the
@@ -11606,9 +11577,7 @@ gradients.</p>
 circle’s center 60 pixels to the right of the first circle’s center (cx
 = 210 instead of 150):</p>
 
-<pre>
-grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
-</pre>
+<pre>grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);</pre>
 
 <h4>Here is the result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11624,26 +11593,24 @@ grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-var canvas, ctx, grd;
+<pre>var canvas, ctx, grd;
 function init() {
 // Good practice 1: set global vars canvas, ctx, gradients, etc here
-canvas = document.querySelector(&#39;#myCanvas1&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
-grd.addColorStop(0, &quot;red&quot;);
-grd.addColorStop(0.17, &quot;orange&quot;);
-grd.addColorStop(0.33, &quot;yellow&quot;);
-grd.addColorStop(0.5, &quot;green&quot;);
-grd.addColorStop(0.666, &quot;blue&quot;);
-grd.addColorStop(1, &quot;violet&quot;);
-draw();
+  canvas = document.querySelector(&#39;#myCanvas1&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
+  grd.addColorStop(0, &quot;red&quot;);
+  grd.addColorStop(0.17, &quot;orange&quot;);
+  grd.addColorStop(0.33, &quot;yellow&quot;);
+  grd.addColorStop(0.5, &quot;green&quot;);
+  grd.addColorStop(0.666, &quot;blue&quot;);
+  grd.addColorStop(1, &quot;violet&quot;);
+  draw();
 }
 function draw() {
-ctx.fillStyle = grd;
-ctx.fillRect(0, 0, 300, 200);
-}
-</pre>
+  ctx.fillStyle = grd;
+  ctx.fillRect(0, 0, 300, 200);
+}</pre>
 
 </details>
 
@@ -11652,23 +11619,21 @@ ctx.fillRect(0, 0, 300, 200);
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Radial gradients with offset circles&lt;/title&gt;
-&lt;style&gt;
-#myCanvas1 {
-border: 1px solid black;
-}
-&lt;/style&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Radial gradients with offset circles&lt;/title&gt;
+  &lt;style&gt;
+    #myCanvas1 {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -11703,27 +11668,21 @@ draw rectangles using a pattern.</p>
   <li><b>Create a JavaScript image object</b></li>
 </ol>
 
-<pre>
-var imageObj = new Image();
-</pre>
+<pre>var imageObj = new Image();</pre>
 
 <ol start="2" type="1">
   <li><b>Define a callback function that will be called once the image has been fully loaded</b> in memory; we cannot draw before the image has been loaded.</li>
 </ol>
 
-<pre>
-imageObj.onload = function(){
-...
-}
-</pre>
+<pre>imageObj.onload = function(){
+  ...
+}</pre>
 
 <ol start="3" type="1">
   <li><b>Set the source of this image to the URL of the pattern</b>:</li>
 </ol>
 
-<pre>
-imageObj.src = &quot;https://www.myserver.com/myRepeatablePattern.png&quot;;
-</pre>
+<pre>imageObj.src = &quot;https://www.myserver.com/myRepeatablePattern.png&quot;;</pre>
 
 <ol start="4" type="1">
   <li><b>Create a pattern object from the loaded image:</b></li>
@@ -11734,29 +11693,25 @@ by the browser, and when the image is loaded in memory, the callback
 defined at step 2 is called. We create a pattern object inside, from the
 loaded image:</p>
 
-<pre>
-// callback called asynchronously, after the src attribute of imageObj is set
+<pre>// callback called asynchronously, after the src attribute of imageObj is set
 imageObj.onload = function(){ 
     // We enter here when the image is loaded, we create a pattern object.
     // It is good practice to set this as a global variable, easier to share
     pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
-};
-</pre>
+};</pre>
 
 <ol start="5" type="1">
   <li><b>Inside the callback function (or inside a function called from inside the callback), we can finally draw</b>:</li>
 </ol>
 
-<pre>
-// callback called asynchronously, after the src attribute of imageObj is set
+<pre>// callback called asynchronously, after the src attribute of imageObj is set
 imageObj.onload = function(){
     pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
 
     // Draw a textured rectangle
     ctx.fillStyle = pattern1;
     ctx.fillRect(10, 10, 500, 800);
-};
-</pre>
+};</pre>
 
 <h4>Examples</h4>
 
@@ -11776,8 +11731,7 @@ imageObj.onload = function(){
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-var canvas, ctx, pattern1;
+<pre>var canvas, ctx, pattern1;
 function init() {
 canvas = document.querySelector(&#39;#myCanvas&#39;);
 ctx = canvas.getContext(&#39;2d&#39;);
@@ -11810,34 +11764,30 @@ ctx.strokeRect(230, 20, 150, 100);
 // This will tell the browser to send an asynchronous request.
 // When the browser will get an answer, the callback above will be called
 imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
-}
-</pre>
+}</pre>
 
 </details>
 
 <h4>HTML</h4>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Drawing two rectangles with a pattern - Example #1&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Drawing two rectangles with a pattern - Example #1&lt;/title&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot; height=&quot;400&quot;&gt;
-Your browser does not support the canvas tag. &lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot; height=&quot;400&quot;&gt;
+    Your browser does not support the canvas tag. &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 <h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  var canvas, ctx, pattern1;
+<pre>1.  var canvas, ctx, pattern1;
 2.   
 3.  function init() {
 4.     canvas = document.querySelector(&#39;#myCanvas&#39;);
@@ -11882,8 +11832,7 @@ Your browser does not support the canvas tag. &lt;/canvas&gt;
 43.   // request.
 44.   // When the browser gets an answer, the callback above will be called
 45.   imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
-46. }
-</pre>
+46. }</pre>
 
 </details>
 
@@ -11903,49 +11852,46 @@ Your browser does not support the canvas tag. &lt;/canvas&gt;
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-var canvas, ctx, pattern1;
+<pre>var canvas, ctx, pattern1;
 function init() {
-canvas = document.querySelector(&#39;#myCanvas&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-// We need 1) to create an empty image object, 2) to set a callback function
-// that will be called when the image is fully loaded, 3) to create a
-// pattern object, 4) to set the fillStyle or the strokeStyle property of
-// the context with this pattern, 5) to draw something
-// WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -&gt; draw from inside the
-// onload callback only !
-// Allocate an image
-var imageObj = new Image();
-// callback called asynchronously, after the src attribute of imageObj is set
-imageObj.onload = function(){
-// We enter here only when the image has been loaded by the browser
-// Pattern creation using the image object
-// Instead of &quot;repeat&quot;, try different values : repeat-x, repeat-y,
-// or no-repeat, You may draw larger shapes in order to see
-// different results
-// It is a good practice to leave this as a global variable if it
-// will be reused by other functions
-pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
-// Draw a textured rectangle
-ctx.fillStyle = pattern1;
-ctx.fillRect(10, 10, 500, 800);
-// And a wireframe one
-ctx.lineWidth=50;
-ctx.strokeStyle=pattern1;
-ctx.strokeRect(650, 20, 300, 800);
-};
-// This will tell the browser to send an asynchronous request.
-// When the browser will get an answer, the callback above will be called
-imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
-}
-</pre>
+  canvas = document.querySelector(&#39;#myCanvas&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  // We need 1) to create an empty image object, 2) to set a callback function
+  // that will be called when the image is fully loaded, 3) to create a
+  // pattern object, 4) to set the fillStyle or the strokeStyle property of
+  // the context with this pattern, 5) to draw something
+  // WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -&gt; draw from inside the
+  // onload callback only !
+  // Allocate an image
+  var imageObj = new Image();
+  // callback called asynchronously, after the src attribute of imageObj is set
+  imageObj.onload = function(){
+    // We enter here only when the image has been loaded by the browser
+    // Pattern creation using the image object
+    // Instead of &quot;repeat&quot;, try different values : repeat-x, repeat-y,
+    // or no-repeat, You may draw larger shapes in order to see
+    // different results
+    // It is a good practice to leave this as a global variable if it
+    // will be reused by other functions
+    pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
+    // Draw a textured rectangle
+    ctx.fillStyle = pattern1;
+    ctx.fillRect(10, 10, 500, 800);
+    // And a wireframe one
+    ctx.lineWidth=50;
+    ctx.strokeStyle=pattern1;
+    ctx.strokeRect(650, 20, 300, 800);
+  };
+  // This will tell the browser to send an asynchronous request.
+  // When the browser will get an answer, the callback above will be called
+  imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
+}</pre>
 
 </details>
 
 <h4>HTML</h4>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -11955,14 +11901,11 @@ imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;1000&quot; height=&quot;1000&quot;&gt;
     Your browser does not support the canvas tag. &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 <h4>You can change the way the pattern is repeated by modifying the second parameter of this method:</h4>
 
-<pre>
-1.  pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
-</pre>
+<pre>1.  pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);</pre>
 
 <p>Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just change this line in the online example and you will see live results.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12012,8 +11955,7 @@ beginning of this page is the following:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -12090,8 +12032,7 @@ ctx.fillStyle=patternBW;
 
 <h4>Define the list of images to be loaded:</h4>
 
-<pre>
-1.  // List of images to load, we used a JavaScript object instead of
+<pre>1.  // List of images to load, we used a JavaScript object instead of
 2.  // an array, so that named indexes (aka properties)
 3.  // can be used -&gt; easier to read
 4.  var imagesToLoad = {
@@ -12100,8 +12041,7 @@ ctx.fillStyle=patternBW;
 7.       blackAndWhiteLys: https://i.ibb.co/VNLVpcL/final.jpg,
 8.       tiledFloor:
 9.        https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg
-10. };
-</pre>
+10. };</pre>
 
 <p>Notice that instead of using a traditional array, we defined this list
 as a JavaScript object, with properties whose names will be easier to
@@ -12112,29 +12052,27 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  function loadImages(imagesToBeLoaded, drawCallback) {
-2.       var imagesLoaded = {};
-3.       var loadedImages = 0;
-4.       var numberOfImagesToLoad = 0;
+<pre>1.  function loadImages(imagesToBeLoaded, drawCallback) {
+2.    var imagesLoaded = {};
+3.    var loadedImages = 0;
+4.    var numberOfImagesToLoad = 0;
 5.  
-6.       // get num of images to load
-7.       for(var name in imagesToBeLoaded) {
-8.           numberOfImagesToLoad++;
-9.       }
+6.    // get num of images to load
+7.    for(var name in imagesToBeLoaded) {
+8.      numberOfImagesToLoad++;
+9.    }
 10. 
-11.      for(var name in imagesToBeLoaded) {
-12.          imagesLoaded[name] = new Image();
+11.   for(var name in imagesToBeLoaded) {
+12.     imagesLoaded[name] = new Image();
 13. 
-14.          imagesLoaded[name].onload = function() {
-15.              if(++loadedImages &gt;= numberOfImagesToLoad) {
-16.                  drawCallback(imagesLoaded);
-17.              } // if
-18.          }; // function
-19.          imagesLoaded[name].src = imagesToBeLoaded[name];
-20.       } // for
-21. } // function
-</pre>
+14.     imagesLoaded[name].onload = function() {
+15.       if(++loadedImages &gt;= numberOfImagesToLoad) {
+16.         drawCallback(imagesLoaded);
+17.       } // if
+18.     }; // function
+19.     imagesLoaded[name].src = imagesToBeLoaded[name];
+20.   } // for
+21. } // function</pre>
 
 </details>
 
@@ -12148,16 +12086,14 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 
 <h4>Example of use of this loader</h4>
 
-<pre>
-1.  loadImages(imagesToLoad, function(imagesLoaded) {
+<pre>1.  loadImages(imagesToLoad, function(imagesLoaded) {
 2.      patternFlowers = ctx.createPattern(imagesLoaded.flowers, &#39;repeat&#39;);
 3.      patternLion    = ctx.createPattern(imagesLoaded.lion, &#39;repeat&#39;);
 4.      patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, &#39;repeat&#39;);
 5.      patternFloor   = ctx.createPattern(imagesLoaded.tiledFloor, &#39;repeat&#39;);
 6.  
 7.      drawRectanglesWithPatterns();
-8.  });
-</pre>
+8.  });</pre>
 
 <h4>Explanations:</h4>
 
@@ -12172,8 +12108,7 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  function drawRectanglesWithPatterns() {
+<pre>1.  function drawRectanglesWithPatterns() {
 2.    ctx.fillStyle=patternFloor;
 3.    ctx.fillRect(0,0,200,200);
 4.  
@@ -12185,8 +12120,7 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 10.  
 11.   ctx.fillStyle=patternBW;
 12.   ctx.fillRect(200,200,200,200);
-13. }
-</pre>
+13. }</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12226,80 +12160,74 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 <details>
   <summary>Click to expand!</summary>
   
-<pre>
-var canvas, ctx;
+<pre>var canvas, ctx;
 function init() {
-canvas = document.getElementById(&#39;myCanvas&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-setShadow();
-// first green filled rectangle
-ctx.fillStyle = &quot;#22FFDD&quot;; // rectangle color
-ctx.fillRect(20, 20, 200, 100);
-// second stroked rectangle
-ctx.strokeStyle = &quot;purple&quot;; // rectangle color
-ctx.lineWidth=10;
-ctx.strokeRect(20, 150, 200, 100);
+  canvas = document.getElementById(&#39;myCanvas&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  setShadow();
+  // first green filled rectangle
+  ctx.fillStyle = &quot;#22FFDD&quot;; // rectangle color
+  ctx.fillRect(20, 20, 200, 100);
+  // second stroked rectangle
+  ctx.strokeStyle = &quot;purple&quot;; // rectangle color
+  ctx.lineWidth=10;
+  ctx.strokeRect(20, 150, 200, 100);
 }
 function setShadow() {
-ctx.shadowColor = &quot;Grey&quot;; // color
-ctx.shadowBlur = 20; // blur level
-ctx.shadowOffsetX = 15; // horizontal offset
-ctx.shadowOffsetY = 15; // vertical offset
-}
-</pre>
+  ctx.shadowColor = &quot;Grey&quot;; // color
+  ctx.shadowBlur = 20; // blur level
+  ctx.shadowOffsetX = 15; // horizontal offset
+  ctx.shadowOffsetY = 15; // vertical offset
+}</pre>
 
 </details>
 
 <h4>HTML</h4>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Simple shadows - Example #1&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Simple shadows - Example #1&lt;/title&gt;
 &lt;/head&gt;
 &lt;body onload = init();&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height =800&gt;
-Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height =800&gt;
+    Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 <h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  var canvas, ctx;
+<pre>1.  var canvas, ctx;
 2.  
 3.  function init() {
-4.      canvas = document.getElementById(&#39;myCanvas&#39;);
-5.      ctx = canvas.getContext(&#39;2d&#39;);
+4.    canvas = document.getElementById(&#39;myCanvas&#39;);
+5.    ctx = canvas.getContext(&#39;2d&#39;);
 6.  
-7.      // call to a function that will set the 4 context properties for shadows
-8.      setShadow();
-9.      // all drawings that will occur will cast shadows
+7.    // call to a function that will set the 4 context properties for shadows
+8.    setShadow();
+9.    // all drawings that will occur will cast shadows
 10. 
-11.     // first green filled rectangle
-12.     ctx.fillStyle = &quot;#22FFDD&quot;; 
-13.     ctx.fillRect(20, 20, 200, 100);
+11.   // first green filled rectangle
+12.   ctx.fillStyle = &quot;#22FFDD&quot;; 
+13.   ctx.fillRect(20, 20, 200, 100);
 14. 
-15.     // second stroked rectangle
-16.     ctx.strokeStyle = &quot;purple&quot;; 
-17.     ctx.lineWidth=10;
-18.     ctx.strokeRect(20, 150, 200, 100);
+15.   // second stroked rectangle
+16.   ctx.strokeStyle = &quot;purple&quot;; 
+17.   ctx.lineWidth=10;
+18.   ctx.strokeRect(20, 150, 200, 100);
 19. }
 20.  
 21. // We define the 4 properties in a dedicated function, for clarity
 22. function setShadow() {
-23.     ctx.shadowColor = &quot;Grey&quot;;    // color
-24.     ctx.shadowBlur = 20;         // blur level
-25.     ctx.shadowOffsetX = 15;      // horizontal offset
-26.     ctx.shadowOffsetY = 15;      // vertical offset
-27. }
-</pre>
+23.   ctx.shadowColor = &quot;Grey&quot;;    // color
+24.   ctx.shadowBlur = 20;         // blur level
+25.   ctx.shadowOffsetX = 15;      // horizontal offset
+26.   ctx.shadowOffsetY = 15;      // vertical offset
+27. }</pre>
 
 </details>
 
@@ -12318,8 +12246,7 @@ Your browser does not support the canvas tag.&lt;/canvas&gt;
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  ...
+<pre>1.  ...
 2.  ctx.beginPath();
 3.  
 4.  // Add to the path a full circle (from 0 to 2PI)
@@ -12352,8 +12279,7 @@ Your browser does not support the canvas tag.&lt;/canvas&gt;
 31.     ctx.shadowBlur = 20;      // blur level
 32.     ctx.shadowOffsetX = 15;   // horizontal offset
 33.     ctx.shadowOffsetY = 15;   // vertical offset
-34. }
-</pre>
+34. }</pre>
 
 </details>
 
@@ -12371,62 +12297,60 @@ Your browser does not support the canvas tag.&lt;/canvas&gt;
 <details>
   <summary>Click to expand!</summary>
   
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Unwanted shadows - Example #2&lt;/title&gt;
-&lt;style&gt;
-body {
-margin: 0px;
-padding: 0px;
-}
-#myCanvas {
-border: 1px solid #9C9898;
-}
-&lt;/style&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Unwanted shadows - Example #2&lt;/title&gt;
+  &lt;style&gt;
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  #myCanvas {
+    border: 1px solid #9C9898;
+  }
+  &lt;/style&gt;
 &lt;script&gt;
-var canvas, ctx;
-window.onload = function(){
-canvas = document.getElementById(&quot;myCanvas&quot;);
-ctx = canvas.getContext(&quot;2d&quot;);
-var centerX = canvas.width / 2;
-var centerY = canvas.height / 2;
-var radius = 70;
-ctx.beginPath();
-// Add to the path a full circle (from 0 to 2PI)
-ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
-// With path drawing you can change the context
-// properties until a call to stroke() or fill() is performed
-ctx.fillStyle = &quot;lightBlue&quot;;
-// add shadows before drawing the filled circle
-addShadows();
-// Draws the filled circle in light blue
-ctx.fill();
-// Prepare for the outline
-ctx.lineWidth = 5;
-ctx.strokeStyle = &quot;black&quot;;
-// draws AGAIN the path (the circle), this
-// time in wireframe
-ctx.stroke();
-// Notice we called context.arc() only once ! And drew it twice
-// with different styles
-};
-function addShadows() {
-ctx.shadowColor = &quot;Grey&quot;; // color
-ctx.shadowBlur = 20; // blur level
-ctx.shadowOffsetX = 15; // horizontal offset
-ctx.shadowOffsetY = 15; // vertical offset
-}
+  var canvas, ctx;
+  window.onload = function(){
+    canvas = document.getElementById(&quot;myCanvas&quot;);
+    ctx = canvas.getContext(&quot;2d&quot;);
+    var centerX = canvas.width / 2;
+    var centerY = canvas.height / 2;
+    var radius = 70;
+    ctx.beginPath();
+    // Add to the path a full circle (from 0 to 2PI)
+    ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
+    // With path drawing you can change the context
+    // properties until a call to stroke() or fill() is performed
+    ctx.fillStyle = &quot;lightBlue&quot;;
+    // add shadows before drawing the filled circle
+    addShadows();
+    // Draws the filled circle in light blue
+    ctx.fill();
+    // Prepare for the outline
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = &quot;black&quot;;
+    // draws AGAIN the path (the circle), this
+    // time in wireframe
+    ctx.stroke();
+    // Notice we called context.arc() only once ! And drew it twice
+    // with different styles
+  };
+  function addShadows() {
+    ctx.shadowColor = &quot;Grey&quot;; // color
+    ctx.shadowBlur = 20; // blur level
+    ctx.shadowOffsetX = 15; // horizontal offset
+    ctx.shadowOffsetY = 15; // vertical offset
+  }
 &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;
-&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;
+  &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -12444,8 +12368,7 @@ calling ctx.stroke().</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  ...
+<pre>1.  ...
 2.  // save the context before setting shadows and drawing the filled circle
 3.   ctx.save();
 4.  
@@ -12461,8 +12384,7 @@ calling ctx.stroke().</p>
 14. 
 15. // restore the context to its previous saved state
 16.  ctx.restore();
-17. ...
-</pre>
+17. ...</pre>
 
 </details>
 
@@ -12480,51 +12402,50 @@ calling ctx.stroke().</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
   &lt;title&gt;Unwanted shadows disappear- Example #2 bis&lt;/title&gt;
   &lt;style&gt;
     body {
-    margin: 0px;
-    padding: 0px;
+      margin: 0px;
+      padding: 0px;
     }
     #myCanvas {
-    border: 1px solid #9C9898;
+      border: 1px solid #9C9898;
     }
   &lt;/style&gt;
   &lt;script&gt;
     var canvas, ctx;
     window.onload = function(){
-    canvas = document.getElementById(&quot;myCanvas&quot;);
-    ctx = canvas.getContext(&quot;2d&quot;);
-    var centerX = canvas.width / 2;
-    var centerY = canvas.height / 2;
-    var radius = 70;
-    ctx.beginPath();
-    // Add to the path a full circle (from 0 to 2PI)
-    ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
-    // save the context before setting shadows and drawing the filled circle
-    ctx.save();
-    // With path drawing you can change the context
-    // properties until a call to stroke() or fill() is performed
-    ctx.fillStyle = &quot;lightBlue&quot;;
-    // add shadows before drawing the filled circle
-    addShadows();
-    // Draws the filled circle in light blue
-    ctx.fill();
-    // restore the context to its previous saved state
-    ctx.restore();
-    // Prepare for the outline
-    ctx.lineWidth = 5;
-    ctx.strokeStyle = &quot;black&quot;;
-    // draws AGAIN the path (the circle), this
-    // time in wireframe
-    ctx.stroke();
-    // Notice we called context.arc() only once ! And drew it twice
-    // with different styles
+      canvas = document.getElementById(&quot;myCanvas&quot;);
+      ctx = canvas.getContext(&quot;2d&quot;);
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 70;
+      ctx.beginPath();
+      // Add to the path a full circle (from 0 to 2PI)
+      ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
+      // save the context before setting shadows and drawing the filled circle
+      ctx.save();
+      // With path drawing you can change the context
+      // properties until a call to stroke() or fill() is performed
+      ctx.fillStyle = &quot;lightBlue&quot;;
+      // add shadows before drawing the filled circle
+      addShadows();
+      // Draws the filled circle in light blue
+      ctx.fill();
+      // restore the context to its previous saved state
+      ctx.restore();
+      // Prepare for the outline
+      ctx.lineWidth = 5;
+      ctx.strokeStyle = &quot;black&quot;;
+      // draws AGAIN the path (the circle), this
+      // time in wireframe
+      ctx.stroke();
+      // Notice we called context.arc() only once ! And drew it twice
+      // with different styles
     };
     function addShadows() {
     ctx.shadowColor = &quot;Grey&quot;; // color
@@ -12538,8 +12459,7 @@ calling ctx.stroke().</p>
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;
   &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12557,8 +12477,7 @@ arcs) and some also apply to rectangles.</p>
 <p>We have seen this before. This is done by changing the value (in
 pixels) of the lineWidth property of the context:</p>
 
-<pre>
-ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels</pre>
+<pre>ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels</pre>
 
 <p>Here is a complete example where we draw with a lineWidth of 20 pixels:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12574,8 +12493,7 @@ ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wiref
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.    &lt;head&gt;
 4.      &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -12610,8 +12528,7 @@ ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wiref
 33.       &lt;/script&gt;
 34.  
 35.     &lt;/body&gt;
-36. &lt;/html&gt;
-</pre>
+36. &lt;/html&gt;</pre>
 
 </details>
 
@@ -12646,32 +12563,32 @@ bottom in the next illustration). Note that a value of “round” or
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Changing the end caps of a line - Example #2&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Changing the end caps of a line - Example #2&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script&gt;
-var canvas = document.getElementById(&#39;myCanvas&#39;);
-var ctx = canvas.getContext(&#39;2d&#39;);
-// first path
-ctx.moveTo(20, 20);
-ctx.lineTo(100, 100);
-ctx.lineTo(100, 30);
-// second part of the path
-ctx.moveTo(120, 20);
-ctx.lineTo(200, 100);
-ctx.lineTo(200, 30);
-// indicate stroke color + draw first part of the path
-ctx.strokeStyle = &quot;#0000FF&quot;;
-// Current line thickness is 20 pixels
-ctx.lineWidth = 20;
-// Try different values : butt, square, round
-ctx.lineCap = &quot;round&quot;;
-ctx.stroke();
-// Draws a rectangle
-ctx.strokeRect(230, 10, 100, 100);
-&lt;/script&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;script&gt;
+    var canvas = document.getElementById(&#39;myCanvas&#39;);
+    var ctx = canvas.getContext(&#39;2d&#39;);
+    // first path
+    ctx.moveTo(20, 20);
+    ctx.lineTo(100, 100);
+    ctx.lineTo(100, 30);
+    // second part of the path
+    ctx.moveTo(120, 20);
+    ctx.lineTo(200, 100);
+    ctx.lineTo(200, 30);
+    // indicate stroke color + draw first part of the path
+    ctx.strokeStyle = &quot;#0000FF&quot;;
+    // Current line thickness is 20 pixels
+    ctx.lineWidth = 20;
+    // Try different values : butt, square, round
+    ctx.lineCap = &quot;round&quot;;
+    ctx.stroke();
+    // Draws a rectangle
+    ctx.strokeRect(230, 10, 100, 100);
+  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -12695,39 +12612,37 @@ ctx.strokeRect(230, 10, 100, 100);
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Setting the type of corner when two lines meet - Example #3&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Setting the type of corner when two lines meet - Example #3&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script&gt;
-var canvas = document.getElementById(&#39;myCanvas&#39;);
-var ctx = canvas.getContext(&#39;2d&#39;);
-// first path
-ctx.moveTo(20,20);
-ctx.lineTo(100, 100);
-ctx.lineTo(100,30);
-// second part of the path
-ctx.moveTo(120,20);
-ctx.lineTo(200, 100);
-ctx.lineTo(200,30);
-// indicate stroke color + draw first part of the path
-ctx.strokeStyle = &quot;#0000FF&quot;;
-// Current line thickness is 20 pixels
-ctx.lineWidth = 20;
-// Try different values : miter(default), bevel, round
-ctx.lineJoin=&quot;round&quot;;
-ctx.stroke();
-// Draws a rectangle
-ctx.strokeRect(230, 10, 100, 100);
-&lt;/script&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;script&gt;
+    var canvas = document.getElementById(&#39;myCanvas&#39;);
+    var ctx = canvas.getContext(&#39;2d&#39;);
+    // first path
+    ctx.moveTo(20,20);
+    ctx.lineTo(100, 100);
+    ctx.lineTo(100,30);
+    // second part of the path
+    ctx.moveTo(120,20);
+    ctx.lineTo(200, 100);
+    ctx.lineTo(200,30);
+    // indicate stroke color + draw first part of the path
+    ctx.strokeStyle = &quot;#0000FF&quot;;
+    // Current line thickness is 20 pixels
+    ctx.lineWidth = 20;
+    // Try different values : miter(default), bevel, round
+    ctx.lineJoin=&quot;round&quot;;
+    ctx.stroke();
+    // Draws a rectangle
+    ctx.strokeRect(230, 10, 100, 100);
+  &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -14364,43 +14279,43 @@ shows how to get the mouse button number using the evt.button property.</p>
 <pre>1.  var canvas, ctx, mousePos, mouseButton;
 2.   
 3.  window.onload = function init() {
-4.      canvas = document.getElementById(&#39;myCanvas&#39;);
-5.      ctx = canvas.getContext(&#39;2d&#39;);
+4.    canvas = document.getElementById(&#39;myCanvas&#39;);
+5.    ctx = canvas.getContext(&#39;2d&#39;);
 6.   
-7.      canvas.addEventListener(&#39;mousemove&#39;, function (evt) {
-8.          mousePos = getMousePos(canvas, evt);
-9.          var message = &#39;Mouse position: &#39; + mousePos.x + &#39;,&#39; + mousePos.y;
-10.         writeMessage(canvas, message);
-11.     }, false);
+7.    canvas.addEventListener(&#39;mousemove&#39;, function (evt) {
+8.      mousePos = getMousePos(canvas, evt);
+9.      var message = &#39;Mouse position: &#39; + mousePos.x + &#39;,&#39; + mousePos.y;
+10.     writeMessage(canvas, message);
+11.   }, false);
 12.  
-13.     canvas.addEventListener(&#39;mousedown&#39;, function (evt) {
-14.         mouseButton = evt.button;
-15.         var message = &quot;Mouse button &quot; + evt.button + &quot; down at position: &quot; + mousePos.x + &#39;,&#39; + mousePos.y;
-16.         writeMessage(canvas, message);
-17.     }, false);
+13.   canvas.addEventListener(&#39;mousedown&#39;, function (evt) {
+14.     mouseButton = evt.button;
+15.     var message = &quot;Mouse button &quot; + evt.button + &quot; down at position: &quot; + mousePos.x + &#39;,&#39; + mousePos.y;
+16.     writeMessage(canvas, message);
+17.   }, false);
 18.  
-19.     canvas.addEventListener(&#39;mouseup&#39;, function (evt) {
-20.         var message = &quot;Mouse up at position: &quot; + mousePos.x + &#39;,&#39; + mousePos.y;
-21.         writeMessage(canvas, message);
-22.     }, false);
+19.   canvas.addEventListener(&#39;mouseup&#39;, function (evt) {
+20.     var message = &quot;Mouse up at position: &quot; + mousePos.x + &#39;,&#39; + mousePos.y;
+21.     writeMessage(canvas, message);
+22.   }, false);
 23. };
 24.   
 25. function writeMessage(canvas, message) {
-26.    ctx.save();
-27.    ctx.clearRect(0, 0, canvas.width, canvas.height);
-28.    ctx.font = &#39;18pt Calibri&#39;;
-29.    ctx.fillStyle = &#39;black&#39;;
-30.    ctx.fillText(message, 10, 25);
-31.    ctx.restore();
+26.   ctx.save();
+27.   ctx.clearRect(0, 0, canvas.width, canvas.height);
+28.   ctx.font = &#39;18pt Calibri&#39;;
+29.   ctx.fillStyle = &#39;black&#39;;
+30.   ctx.fillText(message, 10, 25);
+31.   ctx.restore();
 32. }
 33.  
 34. function getMousePos(canvas, evt) {
-35.    // necessary to take into account CSS boudaries
-36.    var rect = canvas.getBoundingClientRect();
-37.    return {
-38.       x: evt.clientX - rect.left,
-39.       y: evt.clientY - rect.top
-40.    };
+35.   // necessary to take into account CSS boudaries
+36.   var rect = canvas.getBoundingClientRect();
+37.   return {
+38.     x: evt.clientX - rect.left,
+39.     y: evt.clientY - rect.top
+40.   };
 41. }</pre>
 
 </details>
