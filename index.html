@@ -11359,8 +11359,7 @@ function draw() {
 
 <h4>The gradient is defined as follows:</h4>
 
-<pre>
-var grd = context.createRadialGradient(150, 100, 30, 150, 100, 100);
+<pre>var grd = context.createRadialGradient(150, 100, 30, 150, 100, 100);
 grd.addColorStop(0, &quot;red&quot;);
 grd.addColorStop(0.17, &quot;orange&quot;);
 grd.addColorStop(0.33, &quot;yellow&quot;);
@@ -11368,8 +11367,7 @@ grd.addColorStop(0.5, &quot;green&quot;);
 grd.addColorStop(0.666, &quot;blue&quot;);
 grd.addColorStop(1, &quot;violet&quot;);
 
-context.fillStyle = grd;
-</pre>
+context.fillStyle = grd;</pre>
 
 <p>The method from the context object createRadialGradient(cx1, cy1,
 radius1, cx2, cy2, radius2) takes as the first three parameters the
@@ -11396,9 +11394,7 @@ gradients.</p>
 circle’s center 60 pixels to the right of the first circle’s center (cx
 = 210 instead of 150):</p>
 
-<pre>
-grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
-</pre>
+<pre>grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);</pre>
 
 <h4>Here is the result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11414,26 +11410,25 @@ grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-var canvas, ctx, grd;
+<pre>var canvas, ctx, grd;
 function init() {
-// Good practice 1: set global vars canvas, ctx, gradients, etc here
-canvas = document.querySelector(&#39;#myCanvas1&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
-grd.addColorStop(0, &quot;red&quot;);
-grd.addColorStop(0.17, &quot;orange&quot;);
-grd.addColorStop(0.33, &quot;yellow&quot;);
-grd.addColorStop(0.5, &quot;green&quot;);
-grd.addColorStop(0.666, &quot;blue&quot;);
-grd.addColorStop(1, &quot;violet&quot;);
-draw();
+  // Good practice 1: set global vars canvas, ctx, gradients, etc here
+  canvas = document.querySelector(&#39;#myCanvas1&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
+  grd.addColorStop(0, &quot;red&quot;);
+  grd.addColorStop(0.17, &quot;orange&quot;);
+  grd.addColorStop(0.33, &quot;yellow&quot;);
+  grd.addColorStop(0.5, &quot;green&quot;);
+  grd.addColorStop(0.666, &quot;blue&quot;);
+  grd.addColorStop(1, &quot;violet&quot;);
+  draw();
 }
+
 function draw() {
-ctx.fillStyle = grd;
-ctx.fillRect(0, 0, 300, 200);
-}
-</pre>
+  ctx.fillStyle = grd;
+  ctx.fillRect(0, 0, 300, 200);
+}</pre>
 
 </details>
 
@@ -11442,23 +11437,21 @@ ctx.fillRect(0, 0, 300, 200);
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Radial gradients with offset circles&lt;/title&gt;
-&lt;style&gt;
-#myCanvas1 {
-border: 1px solid black;
-}
-&lt;/style&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Radial gradients with offset circles&lt;/title&gt;
+  &lt;style&gt;
+    #myCanvas1 {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -11493,27 +11486,21 @@ draw rectangles using a pattern.</p>
   <li><b>Create a JavaScript image object</b></li>
 </ol>
 
-<pre>
-var imageObj = new Image();
-</pre>
+<pre>var imageObj = new Image();</pre>
 
 <ol start="2" type="1">
   <li><b>Define a callback function that will be called once the image has been fully loaded</b> in memory; we cannot draw before the image has been loaded.</li>
 </ol>
 
-<pre>
-imageObj.onload = function(){
-...
-}
-</pre>
+<pre>imageObj.onload = function(){
+  ...
+}</pre>
 
 <ol start="3" type="1">
   <li><b>Set the source of this image to the URL of the pattern</b>:</li>
 </ol>
 
-<pre>
-imageObj.src = &quot;https://www.myserver.com/myRepeatablePattern.png&quot;;
-</pre>
+<pre>imageObj.src = &quot;https://www.myserver.com/myRepeatablePattern.png&quot;;</pre>
 
 <ol start="4" type="1">
   <li><b>Create a pattern object from the loaded image:</b></li>
@@ -11524,29 +11511,25 @@ by the browser, and when the image is loaded in memory, the callback
 defined at step 2 is called. We create a pattern object inside, from the
 loaded image:</p>
 
-<pre>
-// callback called asynchronously, after the src attribute of imageObj is set
+<pre>// callback called asynchronously, after the src attribute of imageObj is set
 imageObj.onload = function(){ 
     // We enter here when the image is loaded, we create a pattern object.
     // It is good practice to set this as a global variable, easier to share
     pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
-};
-</pre>
+};</pre>
 
 <ol start="5" type="1">
   <li><b>Inside the callback function (or inside a function called from inside the callback), we can finally draw</b>:</li>
 </ol>
 
-<pre>
-// callback called asynchronously, after the src attribute of imageObj is set
+<pre>// callback called asynchronously, after the src attribute of imageObj is set
 imageObj.onload = function(){
     pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
 
     // Draw a textured rectangle
     ctx.fillStyle = pattern1;
     ctx.fillRect(10, 10, 500, 800);
-};
-</pre>
+};</pre>
 
 <h4>Examples</h4>
 
@@ -11566,68 +11549,63 @@ imageObj.onload = function(){
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-var canvas, ctx, pattern1;
+<pre>var canvas, ctx, pattern1;
 function init() {
-canvas = document.querySelector(&#39;#myCanvas&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-// We need 1) to create an empty image object, 2) to set a callback function
-// that will be called when the image is fully loaded, 3) to create a
-// pattern object, 4) to set the fillStyle or the strokeStyle property of
-// the context with this pattern, 5) to draw something
-// WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -&gt; draw from inside the
-// onload callback only !
-// Allocate an image
-var imageObj = new Image();
-// callback called asynchronously, after the src attribute of imageObj is set
-imageObj.onload = function(){
-// We enter here only when the image has been loaded by the browser
-// Pattern creation using the image object
-// Instead of &quot;repeat&quot;, try different values : repeat-x, repeat-y,
-// or no-repeat, You may draw larger shapes in order to see
-// different results
-// It is a good practice to leave this as a global variable if it
-// will be reused by other functions
-pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
-// Draw a textured rectangle
-ctx.fillStyle = pattern1;
-ctx.fillRect(10, 10, 200, 200);
-// And a wireframe one
-ctx.lineWidth=20;
-ctx.strokeStyle=pattern1;
-ctx.strokeRect(230, 20, 150, 100);
-};
-// This will tell the browser to send an asynchronous request.
-// When the browser will get an answer, the callback above will be called
-imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
-}
-</pre>
+  canvas = document.querySelector(&#39;#myCanvas&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  // We need 1) to create an empty image object, 2) to set a callback function
+  // that will be called when the image is fully loaded, 3) to create a
+  // pattern object, 4) to set the fillStyle or the strokeStyle property of
+  // the context with this pattern, 5) to draw something
+  // WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -&gt; draw from inside the
+  // onload callback only !
+  // Allocate an image
+  var imageObj = new Image();
+  // callback called asynchronously, after the src attribute of imageObj is set
+  imageObj.onload = function(){
+    // We enter here only when the image has been loaded by the browser
+    // Pattern creation using the image object
+    // Instead of &quot;repeat&quot;, try different values : repeat-x, repeat-y,
+    // or no-repeat, You may draw larger shapes in order to see
+    // different results
+    // It is a good practice to leave this as a global variable if it
+    // will be reused by other functions
+    pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
+    // Draw a textured rectangle
+    ctx.fillStyle = pattern1;
+    ctx.fillRect(10, 10, 200, 200);
+    // And a wireframe one
+    ctx.lineWidth=20;
+    ctx.strokeStyle=pattern1;
+    ctx.strokeRect(230, 20, 150, 100);
+  };
+  // This will tell the browser to send an asynchronous request.
+  // When the browser will get an answer, the callback above will be called
+  imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
+}</pre>
 
 </details>
 
 <h4>HTML</h4>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Drawing two rectangles with a pattern - Example #1&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Drawing two rectangles with a pattern - Example #1&lt;/title&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot; height=&quot;400&quot;&gt;
-Your browser does not support the canvas tag. &lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot; height=&quot;400&quot;&gt;
+    Your browser does not support the canvas tag. &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 <h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  var canvas, ctx, pattern1;
+<pre>1.  var canvas, ctx, pattern1;
 2.   
 3.  function init() {
 4.     canvas = document.querySelector(&#39;#myCanvas&#39;);
@@ -11672,8 +11650,7 @@ Your browser does not support the canvas tag. &lt;/canvas&gt;
 43.   // request.
 44.   // When the browser gets an answer, the callback above will be called
 45.   imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
-46. }
-</pre>
+46. }</pre>
 
 </details>
 
@@ -11693,49 +11670,46 @@ Your browser does not support the canvas tag. &lt;/canvas&gt;
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-var canvas, ctx, pattern1;
+<pre>var canvas, ctx, pattern1;
 function init() {
-canvas = document.querySelector(&#39;#myCanvas&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-// We need 1) to create an empty image object, 2) to set a callback function
-// that will be called when the image is fully loaded, 3) to create a
-// pattern object, 4) to set the fillStyle or the strokeStyle property of
-// the context with this pattern, 5) to draw something
-// WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -&gt; draw from inside the
-// onload callback only !
-// Allocate an image
-var imageObj = new Image();
-// callback called asynchronously, after the src attribute of imageObj is set
-imageObj.onload = function(){
-// We enter here only when the image has been loaded by the browser
-// Pattern creation using the image object
-// Instead of &quot;repeat&quot;, try different values : repeat-x, repeat-y,
-// or no-repeat, You may draw larger shapes in order to see
-// different results
-// It is a good practice to leave this as a global variable if it
-// will be reused by other functions
-pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
-// Draw a textured rectangle
-ctx.fillStyle = pattern1;
-ctx.fillRect(10, 10, 500, 800);
-// And a wireframe one
-ctx.lineWidth=50;
-ctx.strokeStyle=pattern1;
-ctx.strokeRect(650, 20, 300, 800);
-};
-// This will tell the browser to send an asynchronous request.
-// When the browser will get an answer, the callback above will be called
-imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
-}
-</pre>
+  canvas = document.querySelector(&#39;#myCanvas&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  // We need 1) to create an empty image object, 2) to set a callback function
+  // that will be called when the image is fully loaded, 3) to create a
+  // pattern object, 4) to set the fillStyle or the strokeStyle property of
+  // the context with this pattern, 5) to draw something
+  // WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -&gt; draw from inside the
+  // onload callback only !
+  // Allocate an image
+  var imageObj = new Image();
+  // callback called asynchronously, after the src attribute of imageObj is set
+  imageObj.onload = function(){
+    // We enter here only when the image has been loaded by the browser
+    // Pattern creation using the image object
+    // Instead of &quot;repeat&quot;, try different values : repeat-x, repeat-y,
+    // or no-repeat, You may draw larger shapes in order to see
+    // different results
+    // It is a good practice to leave this as a global variable if it
+    // will be reused by other functions
+    pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
+    // Draw a textured rectangle
+    ctx.fillStyle = pattern1;
+    ctx.fillRect(10, 10, 500, 800);
+    // And a wireframe one
+    ctx.lineWidth=50;
+    ctx.strokeStyle=pattern1;
+    ctx.strokeRect(650, 20, 300, 800);
+  };
+  // This will tell the browser to send an asynchronous request.
+  // When the browser will get an answer, the callback above will be called
+  imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
+}</pre>
 
 </details>
 
 <h4>HTML</h4>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -11745,14 +11719,11 @@ imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;1000&quot; height=&quot;1000&quot;&gt;
     Your browser does not support the canvas tag. &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 <h4>You can change the way the pattern is repeated by modifying the second parameter of this method:</h4>
 
-<pre>
-1.  pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
-</pre>
+<pre>1.  pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);</pre>
 
 <p>Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just change this line in the online example and you will see live results.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11802,8 +11773,7 @@ beginning of this page is the following:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -11825,10 +11795,11 @@ beginning of this page is the following:</p>
     tiledFloor:
     https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg{
   };
+
 function loadImages(imagesToBeLoaded, drawCallback) {
-var imagesLoaded = {};
-var loadedImages = 0;
-var numberOfImagesToLoad = 0;
+  var imagesLoaded = {};
+  var loadedImages = 0;
+  var numberOfImagesToLoad = 0;
   // get num of sources
   for(var name in imagesToBeLoaded) {
     numberOfImagesToLoad++;
@@ -11843,45 +11814,45 @@ var numberOfImagesToLoad = 0;
     imagesLoaded[name].src = imagesToBeLoaded[name];
   } // for
 } // function
+
 function init() {
-// This function is called after the page is loaded
-// 1 - Get the canvas
-canvas = document.getElementById(&#39;myCanvas&#39;);
-// 2 - Get the context
-ctx=canvas.getContext(&#39;2d&#39;);
-loadImages(imagesToLoad, function(imagesLoaded) {
-patternFlowers = ctx.createPattern(imagesLoaded.flowers, repeat);
-patternLion = ctx.createPattern(imagesLoaded.lion, repeat);
-patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, repeat);
-patternFloor = ctx.createPattern(imagesLoaded.tiledFloor, repeat);
-drawRectanglesWithPatterns();
-});
+  // This function is called after the page is loaded
+  // 1 - Get the canvas
+  canvas = document.getElementById(&#39;myCanvas&#39;);
+  // 2 - Get the context
+  ctx=canvas.getContext(&#39;2d&#39;);
+  loadImages(imagesToLoad, function(imagesLoaded) {
+    patternFlowers = ctx.createPattern(imagesLoaded.flowers, repeat);
+    patternLion = ctx.createPattern(imagesLoaded.lion, repeat);
+    patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, repeat);
+    patternFloor = ctx.createPattern(imagesLoaded.tiledFloor, repeat);
+    drawRectanglesWithPatterns();
+  });
 }
+
 function drawRectanglesWithPatterns() {
-ctx.fillStyle=patternFloor;
-ctx.fillRect(0,0,200,200);
-ctx.fillStyle=patternLion;
-ctx.fillRect(200,0,200,200);
-ctx.fillStyle=patternFlowers;
-ctx.fillRect(0,200,200,200);
-ctx.fillStyle=patternBW;
+  ctx.fillStyle=patternFloor;
+  ctx.fillRect(0,0,200,200);
+  ctx.fillStyle=patternLion;
+  ctx.fillRect(200,0,200,200);
+  ctx.fillStyle=patternFlowers;
+  ctx.fillRect(0,200,200,200);
+  ctx.fillStyle=patternBW;
   ctx.fillRect(200,200,200,200);
-  }
+}
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
 &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
   Your browser does not support the canvas tag.
 &lt;/canvas&gt;
-&lt;/body&gt;
-</pre>
+&lt;/body&gt;</pre>
 
 </details>
 
 <h4>Define the list of images to be loaded:</h4>
 
-<pre>
-1.  // List of images to load, we used a JavaScript object instead of
+<pre>1.  // List of images to load, we used a JavaScript object instead of
 2.  // an array, so that named indexes (aka properties)
 3.  // can be used -&gt; easier to read
 4.  var imagesToLoad = {
@@ -11890,8 +11861,7 @@ ctx.fillStyle=patternBW;
 7.       blackAndWhiteLys: https://i.ibb.co/VNLVpcL/final.jpg,
 8.       tiledFloor:
 9.        https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg
-10. };
-</pre>
+10. };</pre>
 
 <p>Notice that instead of using a traditional array, we defined this list
 as a JavaScript object, with properties whose names will be easier to
@@ -11902,8 +11872,7 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  function loadImages(imagesToBeLoaded, drawCallback) {
+<pre>1.  function loadImages(imagesToBeLoaded, drawCallback) {
 2.       var imagesLoaded = {};
 3.       var loadedImages = 0;
 4.       var numberOfImagesToLoad = 0;
@@ -11923,8 +11892,7 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 18.          }; // function
 19.          imagesLoaded[name].src = imagesToBeLoaded[name];
 20.       } // for
-21. } // function
-</pre>
+21. } // function</pre>
 
 </details>
 
@@ -11938,16 +11906,14 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 
 <h4>Example of use of this loader</h4>
 
-<pre>
-1.  loadImages(imagesToLoad, function(imagesLoaded) {
+<pre>1.  loadImages(imagesToLoad, function(imagesLoaded) {
 2.      patternFlowers = ctx.createPattern(imagesLoaded.flowers, &#39;repeat&#39;);
 3.      patternLion    = ctx.createPattern(imagesLoaded.lion, &#39;repeat&#39;);
 4.      patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, &#39;repeat&#39;);
 5.      patternFloor   = ctx.createPattern(imagesLoaded.tiledFloor, &#39;repeat&#39;);
 6.  
 7.      drawRectanglesWithPatterns();
-8.  });
-</pre>
+8.  });</pre>
 
 <h4>Explanations:</h4>
 
@@ -11962,8 +11928,7 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  function drawRectanglesWithPatterns() {
+<pre>1.  function drawRectanglesWithPatterns() {
 2.    ctx.fillStyle=patternFloor;
 3.    ctx.fillRect(0,0,200,200);
 4.  
@@ -11975,8 +11940,7 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 10.  
 11.   ctx.fillStyle=patternBW;
 12.   ctx.fillRect(200,200,200,200);
-13. }
-</pre>
+13. }</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12016,53 +11980,48 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 <details>
   <summary>Click to expand!</summary>
   
-<pre>
-var canvas, ctx;
+<pre>var canvas, ctx;
 function init() {
-canvas = document.getElementById(&#39;myCanvas&#39;);
-ctx = canvas.getContext(&#39;2d&#39;);
-setShadow();
-// first green filled rectangle
-ctx.fillStyle = &quot;#22FFDD&quot;; // rectangle color
-ctx.fillRect(20, 20, 200, 100);
-// second stroked rectangle
-ctx.strokeStyle = &quot;purple&quot;; // rectangle color
-ctx.lineWidth=10;
-ctx.strokeRect(20, 150, 200, 100);
+  canvas = document.getElementById(&#39;myCanvas&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  setShadow();
+  // first green filled rectangle
+  ctx.fillStyle = &quot;#22FFDD&quot;; // rectangle color
+  ctx.fillRect(20, 20, 200, 100);
+  // second stroked rectangle
+  ctx.strokeStyle = &quot;purple&quot;; // rectangle color
+  ctx.lineWidth=10;
+  ctx.strokeRect(20, 150, 200, 100);
 }
 function setShadow() {
-ctx.shadowColor = &quot;Grey&quot;; // color
-ctx.shadowBlur = 20; // blur level
-ctx.shadowOffsetX = 15; // horizontal offset
-ctx.shadowOffsetY = 15; // vertical offset
-}
-</pre>
+  ctx.shadowColor = &quot;Grey&quot;; // color
+  ctx.shadowBlur = 20; // blur level
+  ctx.shadowOffsetX = 15; // horizontal offset
+  ctx.shadowOffsetY = 15; // vertical offset
+}</pre>
 
 </details>
 
 <h4>HTML</h4>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Simple shadows - Example #1&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Simple shadows - Example #1&lt;/title&gt;
 &lt;/head&gt;
 &lt;body onload = init();&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height =800&gt;
-Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height =800&gt;
+    Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 <h4>JavaScript source code:</h4>
 
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  var canvas, ctx;
+<pre>1.  var canvas, ctx;
 2.  
 3.  function init() {
 4.      canvas = document.getElementById(&#39;myCanvas&#39;);
@@ -12088,8 +12047,7 @@ Your browser does not support the canvas tag.&lt;/canvas&gt;
 24.     ctx.shadowBlur = 20;         // blur level
 25.     ctx.shadowOffsetX = 15;      // horizontal offset
 26.     ctx.shadowOffsetY = 15;      // vertical offset
-27. }
-</pre>
+27. }</pre>
 
 </details>
 
@@ -12108,8 +12066,7 @@ Your browser does not support the canvas tag.&lt;/canvas&gt;
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  ...
+<pre>1.  ...
 2.  ctx.beginPath();
 3.  
 4.  // Add to the path a full circle (from 0 to 2PI)
@@ -12142,8 +12099,7 @@ Your browser does not support the canvas tag.&lt;/canvas&gt;
 31.     ctx.shadowBlur = 20;      // blur level
 32.     ctx.shadowOffsetX = 15;   // horizontal offset
 33.     ctx.shadowOffsetY = 15;   // vertical offset
-34. }
-</pre>
+34. }</pre>
 
 </details>
 
@@ -12161,62 +12117,60 @@ Your browser does not support the canvas tag.&lt;/canvas&gt;
 <details>
   <summary>Click to expand!</summary>
   
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Unwanted shadows - Example #2&lt;/title&gt;
-&lt;style&gt;
-body {
-margin: 0px;
-padding: 0px;
-}
-#myCanvas {
-border: 1px solid #9C9898;
-}
-&lt;/style&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Unwanted shadows - Example #2&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+    #myCanvas {
+      border: 1px solid #9C9898;
+    }
+  &lt;/style&gt;
 &lt;script&gt;
-var canvas, ctx;
-window.onload = function(){
-canvas = document.getElementById(&quot;myCanvas&quot;);
-ctx = canvas.getContext(&quot;2d&quot;);
-var centerX = canvas.width / 2;
-var centerY = canvas.height / 2;
-var radius = 70;
-ctx.beginPath();
-// Add to the path a full circle (from 0 to 2PI)
-ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
-// With path drawing you can change the context
-// properties until a call to stroke() or fill() is performed
-ctx.fillStyle = &quot;lightBlue&quot;;
-// add shadows before drawing the filled circle
-addShadows();
-// Draws the filled circle in light blue
-ctx.fill();
-// Prepare for the outline
-ctx.lineWidth = 5;
-ctx.strokeStyle = &quot;black&quot;;
-// draws AGAIN the path (the circle), this
-// time in wireframe
-ctx.stroke();
-// Notice we called context.arc() only once ! And drew it twice
-// with different styles
-};
-function addShadows() {
-ctx.shadowColor = &quot;Grey&quot;; // color
-ctx.shadowBlur = 20; // blur level
-ctx.shadowOffsetX = 15; // horizontal offset
-ctx.shadowOffsetY = 15; // vertical offset
-}
+  var canvas, ctx;
+  window.onload = function(){
+    canvas = document.getElementById(&quot;myCanvas&quot;);
+    ctx = canvas.getContext(&quot;2d&quot;);
+    var centerX = canvas.width / 2;
+    var centerY = canvas.height / 2;
+    var radius = 70;
+    ctx.beginPath();
+    // Add to the path a full circle (from 0 to 2PI)
+    ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
+    // With path drawing you can change the context
+    // properties until a call to stroke() or fill() is performed
+    ctx.fillStyle = &quot;lightBlue&quot;;
+    // add shadows before drawing the filled circle
+    addShadows();
+    // Draws the filled circle in light blue
+    ctx.fill();
+    // Prepare for the outline
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = &quot;black&quot;;
+    // draws AGAIN the path (the circle), this
+    // time in wireframe
+    ctx.stroke();
+    // Notice we called context.arc() only once ! And drew it twice
+    // with different styles
+  };
+  function addShadows() {
+    ctx.shadowColor = &quot;Grey&quot;; // color
+    ctx.shadowBlur = 20; // blur level
+    ctx.shadowOffsetX = 15; // horizontal offset
+    ctx.shadowOffsetY = 15; // vertical offset
+  }
 &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;
-&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;
+  &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -12234,8 +12188,7 @@ calling ctx.stroke().</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  ...
+<pre>1.  ...
 2.  // save the context before setting shadows and drawing the filled circle
 3.   ctx.save();
 4.  
@@ -12251,8 +12204,7 @@ calling ctx.stroke().</p>
 14. 
 15. // restore the context to its previous saved state
 16.  ctx.restore();
-17. ...
-</pre>
+17. ...</pre>
 
 </details>
 
@@ -12270,8 +12222,7 @@ calling ctx.stroke().</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -12328,8 +12279,7 @@ calling ctx.stroke().</p>
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;
   &lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12347,8 +12297,7 @@ arcs) and some also apply to rectangles.</p>
 <p>We have seen this before. This is done by changing the value (in
 pixels) of the lineWidth property of the context:</p>
 
-<pre>
-ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels</pre>
+<pre>ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels</pre>
 
 <p>Here is a complete example where we draw with a lineWidth of 20 pixels:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12364,8 +12313,7 @@ ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wiref
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.    &lt;head&gt;
 4.      &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -12400,8 +12348,7 @@ ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wiref
 33.       &lt;/script&gt;
 34.  
 35.     &lt;/body&gt;
-36. &lt;/html&gt;
-</pre>
+36. &lt;/html&gt;</pre>
 
 </details>
 
@@ -12436,32 +12383,32 @@ bottom in the next illustration). Note that a value of “round” or
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Changing the end caps of a line - Example #2&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Changing the end caps of a line - Example #2&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script&gt;
-var canvas = document.getElementById(&#39;myCanvas&#39;);
-var ctx = canvas.getContext(&#39;2d&#39;);
-// first path
-ctx.moveTo(20, 20);
-ctx.lineTo(100, 100);
-ctx.lineTo(100, 30);
-// second part of the path
-ctx.moveTo(120, 20);
-ctx.lineTo(200, 100);
-ctx.lineTo(200, 30);
-// indicate stroke color + draw first part of the path
-ctx.strokeStyle = &quot;#0000FF&quot;;
-// Current line thickness is 20 pixels
-ctx.lineWidth = 20;
-// Try different values : butt, square, round
-ctx.lineCap = &quot;round&quot;;
-ctx.stroke();
-// Draws a rectangle
-ctx.strokeRect(230, 10, 100, 100);
-&lt;/script&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;script&gt;
+    var canvas = document.getElementById(&#39;myCanvas&#39;);
+    var ctx = canvas.getContext(&#39;2d&#39;);
+    // first path
+    ctx.moveTo(20, 20);
+    ctx.lineTo(100, 100);
+    ctx.lineTo(100, 30);
+    // second part of the path
+    ctx.moveTo(120, 20);
+    ctx.lineTo(200, 100);
+    ctx.lineTo(200, 30);
+    // indicate stroke color + draw first part of the path
+    ctx.strokeStyle = &quot;#0000FF&quot;;
+    // Current line thickness is 20 pixels
+    ctx.lineWidth = 20;
+    // Try different values : butt, square, round
+    ctx.lineCap = &quot;round&quot;;
+    ctx.stroke();
+    // Draws a rectangle
+    ctx.strokeRect(230, 10, 100, 100);
+  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -12485,39 +12432,37 @@ ctx.strokeRect(230, 10, 100, 100);
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Setting the type of corner when two lines meet - Example #3&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Setting the type of corner when two lines meet - Example #3&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script&gt;
-var canvas = document.getElementById(&#39;myCanvas&#39;);
-var ctx = canvas.getContext(&#39;2d&#39;);
-// first path
-ctx.moveTo(20,20);
-ctx.lineTo(100, 100);
-ctx.lineTo(100,30);
-// second part of the path
-ctx.moveTo(120,20);
-ctx.lineTo(200, 100);
-ctx.lineTo(200,30);
-// indicate stroke color + draw first part of the path
-ctx.strokeStyle = &quot;#0000FF&quot;;
-// Current line thickness is 20 pixels
-ctx.lineWidth = 20;
-// Try different values : miter(default), bevel, round
-ctx.lineJoin=&quot;round&quot;;
-ctx.stroke();
-// Draws a rectangle
-ctx.strokeRect(230, 10, 100, 100);
-&lt;/script&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the   canvas tag.&lt;/canvas&gt;
+  &lt;script&gt;
+    var canvas = document.getElementById(&#39;myCanvas&#39;);
+    var ctx = canvas.getContext(&#39;2d&#39;);
+    // first path
+    ctx.moveTo(20,20);
+    ctx.lineTo(100, 100);
+    ctx.lineTo(100,30);
+    // second part of the path
+    ctx.moveTo(120,20);
+    ctx.lineTo(200, 100);
+    ctx.lineTo(200,30);
+    // indicate stroke color + draw first part of the path
+    ctx.strokeStyle = &quot;#0000FF&quot;;
+    // Current line thickness is 20 pixels
+    ctx.lineWidth = 20;
+    // Try different values : miter(default), bevel, round
+    ctx.lineJoin=&quot;round&quot;;
+    ctx.stroke();
+    // Draws a rectangle
+    ctx.strokeRect(230, 10, 100, 100);
+  &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -13305,11 +13250,9 @@ or simply do not add a third parameter.</p>
 event object will be passed as a parameter to your callback, just like
 this:</p>
 
-<pre>
-1.  element.addEventListener(&#39;click&#39;, function(&lt;b&gt;event&lt;/b&gt;) {
+<pre>1.  element.addEventListener(&#39;click&#39;, function(&lt;b&gt;event&lt;/b&gt;) {
 2.     &lt;b&gt;// now you can use the event object inside the callback&lt;/b&gt;
-3.  }, false);
-</pre>
+3.  }, false);</pre>
 
 <p>Depending on the type of event you are listening to, we will use
 different properties from the event object in order to get useful
@@ -13410,8 +13353,7 @@ will trigger the event listener function.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; height=&quot;200&quot;&gt;
+<pre>&lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; height=&quot;200&quot;&gt;
 &lt;/canvas&gt;
 &lt;script&gt;
 var canvas;
@@ -13425,8 +13367,7 @@ return false;
 };
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -17335,18 +17276,17 @@ favorite browser):</p>
   <summary>Click to expand!</summary>
 
 <pre>1.  &lt;form action=&quot;demo_form.asp&quot; method=&quot;get&quot;&gt;
-2.       &lt;input list=&quot;browsers&quot; name=&quot;browser&quot; /&gt;
+2.    &lt;input list=&quot;browsers&quot; name=&quot;browser&quot; /&gt;
 3.  
-4.       &lt;datalist id=&quot;browsers&quot;&gt;
-5.           &lt;option value=&quot;Internet Explorer&quot;&gt;
-6.           &lt;option value=&quot;Firefox&quot;&gt;
-7.           &lt;option value=&quot;Chrome&quot;&gt;
-8.           &lt;option value=&quot;Opera&quot;&gt;
-9.           &lt;option value=&quot;Safari&quot;&gt;
-10.      &lt;/datalist&gt;
-11.      &lt;input type=&quot;submit&quot; /&gt;
-12. &lt;/form&gt;
-</pre>
+4.      &lt;datalist id=&quot;browsers&quot;&gt;
+5.        &lt;option value=&quot;Internet Explorer&quot;&gt;
+6.        &lt;option value=&quot;Firefox&quot;&gt;
+7.        &lt;option value=&quot;Chrome&quot;&gt;
+8.        &lt;option value=&quot;Opera&quot;&gt;
+9.        &lt;option value=&quot;Safari&quot;&gt;
+10.     &lt;/datalist&gt;
+11.   &lt;input type=&quot;submit&quot; /&gt;
+12. &lt;/form&gt;</pre>
 
 </details>
 
@@ -17756,8 +17696,7 @@ the validationMessage property of input fields.</p>
 
 <pre>1. var input = document.getElementById(b);
 2.   
-3. console.log(&quot;Validation message = &quot; + input.validationMessage);
-</pre>
+3. console.log(&quot;Validation message = &quot; + input.validationMessage);</pre>
 
 <p>This is useful for making custom error messages. More about this
 topic in the next section of the course.</p>
@@ -18243,8 +18182,7 @@ store:</p>
 <pre>1. for (var i = 0, n = localStorage.length; i &lt; n; i++) {
 2.   var k = localStorage.key(i);
 3.   console.log(k + &quot;: &quot; + localStorage[k]); // get the ith value, the one with a key that is in the variable k.
-4. }
-</pre>
+4. }</pre>
 
 <p>Students may note that something seems a bit off in the example
 above: instead of calling localStorage.getItem(k), we simply
@@ -18420,35 +18358,38 @@ called the function restorePreferences).</p>
   for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
     addInputListener(listOfInputsInForm[i]);
   }
-  // restore preferences
-  restorePreferences();
-  applyGUIvalues(); // Use the input fields&#39; values we just restored to set internal 
-                    // size, incX, color, lineWidth variables
-  }
-  function addInputListener(inputField) {
+    // restore preferences
+    restorePreferences();
+    applyGUIvalues(); // Use the input fields&#39; values we just restored to set internal 
+                      // size, incX, color, lineWidth variables
+}
+
+function addInputListener(inputField) {
   // same as before
-  }
-  function restorePreferences() {
+}
+
+function restorePreferences() {
   // same as old restoreFormContent
-  }
-  function applyGUIvalues() {
+}
+
+function applyGUIvalues() {
   // Check restored input field content to set the size of the rectangle
-    var sizeWidget = document.getElementById(&quot;size&quot;);
-    size = Math.sign(incX)*parseInt(sizeWidget.value);
-    // also update the outline element&#39;s value
-    document.getElementById(&quot;sizeValue&quot;).innerHTML = size;
-    // Check restored input field content to set the color of the rectangle
-    var colorWidget = document.getElementById(&quot;color&quot;);
-    ctx.fillStyle = colorWidget.value;
-    // Check restored input field content to set the speed of the rectangle
-    var speedWidget = document.getElementById(&quot;speed&quot;);
-    incX = Math.sign(incX)*parseInt(speedWidget.value);
-    // also update the outline element&#39;s value
-    document.getElementById(&quot;speedValue&quot;).innerHTML = Math.abs(incX);
-    // Check restored input field content to set the lineWidth of the rectangle
-    var lineWidthWidget = document.getElementById(&quot;lineWidth&quot;);
-    ctx.lineWidth = parseInt(lineWidthWidget.value);
-  }</pre>
+  var sizeWidget = document.getElementById(&quot;size&quot;);
+  size = Math.sign(incX)*parseInt(sizeWidget.value);
+  // also update the outline element&#39;s value
+  document.getElementById(&quot;sizeValue&quot;).innerHTML = size;
+  // Check restored input field content to set the color of the rectangle
+  var colorWidget = document.getElementById(&quot;color&quot;);
+  ctx.fillStyle = colorWidget.value;
+  // Check restored input field content to set the speed of the rectangle
+  var speedWidget = document.getElementById(&quot;speed&quot;);
+  incX = Math.sign(incX)*parseInt(speedWidget.value);
+  // also update the outline element&#39;s value
+  document.getElementById(&quot;speedValue&quot;).innerHTML = Math.abs(incX);
+  // Check restored input field content to set the lineWidth of the rectangle
+  var lineWidthWidget = document.getElementById(&quot;lineWidth&quot;);
+  ctx.lineWidth = parseInt(lineWidthWidget.value);
+}</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19065,20 +19006,21 @@ not images will be greyed and non selectable.</p>
   <summary>Click to expand!</summary>
 
 <pre>1.  &lt;p&gt;Select several images: &lt;input
-      type=“file” accept=“image/*“ multiple onchange=”filesProcess(this.files)“ name=”selection”/&gt;&lt;/p&gt;
+      type=“file” accept=“image/*“ multiple onchange=”filesProcess(this.files)“ 
+      name=”selection”/&gt;&lt;/p&gt;
 2.  &lt;div id=&quot;result&quot;&gt;...&lt;/div&gt;
 3.  &lt;script&gt;
 4.    function filesProcess(files) {
-5.      var selection = &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Bytes&lt;/th&gt;&lt;th&gt;MIME
-          Type&lt;/th&gt;
-6.      &lt;th&gt;Last modified date&lt;/th&gt;&lt;/tr&gt;&quot;;
+5.      var selection = &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;
+          /th&gt;&lt;th&gt;Bytes&lt;/th&gt;&lt;th&gt;MIME Type&lt;/th&gt;
+6.      &lt;th&gt;Last modified date&lt;/th&gt;&lt;/tr&gt;&quot;;
 7.      for(i=0; i&lt;files.length ;i++){
-8.          file = files[i];
-9.          selection += &quot;&lt;tr&gt;&lt;td&gt;&quot;+file.name+&quot;&lt;/td&gt;&lt;td
+8.        file = files[i];
+9.        selection += &quot;&lt;tr&gt;&lt;td&gt;&quot;+file.name+&quot;&lt;/td&gt;&lt;td
             style=&quot;text-align:right&quot;&gt;&quot;
-10.           +file.size+&quot;&lt;/td&gt;&lt;td&gt;&quot;
-11.           +file.type+&quot;&lt;/td&gt;&lt;td&gt;
-            &quot;+file.lastModifiedDate+&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+10.         +file.size+&quot;&lt;/td&gt;&lt;td&gt;&quot;
+11.         +file.type+&quot;&lt;/td&gt;&lt;td&gt;
+          &quot;+file.lastModifiedDate+&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
 12.     }
 13.     selection += &quot;&lt;/table&gt;&quot;;
 14.     document.getElementById(&quot;result&quot;).innerHTML = selection;
@@ -19248,7 +19190,7 @@ JSBin</a>, or try it below in your browser:</p>
 <h4>Complete source code:</h4>
 
 <details>
-  <summary>Read a Single File's Content</summary>
+  <summary>Click to expand!</summary>
 
 <pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
@@ -19307,7 +19249,7 @@ multiple text files (using shift for multiple selection):</p>
 <h4>Source code:</h4>
 
 <details>
-  <summary>Read File Content as Text</summary>
+  <summary>Click to expand!</summary>
 
 <pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
@@ -20535,6 +20477,6 @@ good understanding of the material.</p>
 </ul>
 
 <h5>. . .The end.<br>
-<br>last updated 06-04-23 Sun 8:19pm</h5>
+<br>last updated 06-06-23 Tue late-late</h5>
   </body>
 </html>
