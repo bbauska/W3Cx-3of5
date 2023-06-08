@@ -9468,49 +9468,50 @@ arrows.</p>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;Drawing arrows&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Drawing arrows&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-var canvas=document.getElementById(&#39;myCanvas&#39;);
-var ctx=canvas.getContext(&#39;2d&#39;);
+  &lt;canvas id=&quot;myCanvas&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+  var canvas=document.getElementById(&#39;myCanvas&#39;);
+  var ctx=canvas.getContext(&#39;2d&#39;);
+
 // Adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
-//variables to be used when creating the arrow
-var headlen = 10;
-var angle = Math.atan2(toy-fromy,tox-fromx);
-ctx.save();
-ctx.strokeStyle = color;
-//starting path of the arrow from the start square to the end square
-//and drawing the stroke
-ctx.beginPath();
-ctx.moveTo(fromx, fromy);
-ctx.lineTo(tox, toy);
-ctx.lineWidth = arrowWidth;
-ctx.stroke();
-//starting a new path from the head of the arrow to one of the sides of
-//the point
-ctx.beginPath();
-ctx.moveTo(tox, toy);
-ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
-toy-headlen*Math.sin(angle-Math.PI/7));
-//path from the side point of the arrow, to the other side point
-ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),
-toy-headlen*Math.sin(angle+Math.PI/7));
-//path from the side point back to the tip of the arrow, and then
-//again to the opposite side point
-ctx.lineTo(tox, toy);
-ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
-toy-headlen*Math.sin(angle-Math.PI/7));
-//draws the paths created above
-ctx.stroke();
-ctx.restore();
+  //variables to be used when creating the arrow
+  var headlen = 10;
+  var angle = Math.atan2(toy-fromy,tox-fromx);
+  ctx.save();
+  ctx.strokeStyle = color;
+  //starting path of the arrow from the start square to the end square
+  //and drawing the stroke
+  ctx.beginPath();
+  ctx.moveTo(fromx, fromy);
+  ctx.lineTo(tox, toy);
+  ctx.lineWidth = arrowWidth;
+  ctx.stroke();
+  //starting a new path from the head of the arrow to one of the sides of
+  //the point
+  ctx.beginPath();
+  ctx.moveTo(tox, toy);
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+  toy-headlen*Math.sin(angle-Math.PI/7));
+  //path from the side point of the arrow, to the other side point
+  ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),
+  toy-headlen*Math.sin(angle+Math.PI/7));
+  //path from the side point back to the tip of the arrow, and then
+  //again to the opposite side point
+  ctx.lineTo(tox, toy);
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+  toy-headlen*Math.sin(angle-Math.PI/7));
+  //draws the paths created above
+  ctx.stroke();
+  ctx.restore();
 }
-drawArrow(ctx, 10, 10, 100, 100, 10, &#39;red&#39;);
-drawArrow(ctx, 100, 10, 140, 140, 3, &#39;black&#39;);
-&lt;/script&gt;
+    drawArrow(ctx, 10, 10, 100, 100, 10, &#39;red&#39;);
+    drawArrow(ctx, 100, 10, 140, 140, 3, &#39;black&#39;);
+  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -9564,24 +9565,24 @@ path: draw from the last point to the first.</p>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;Closing a path&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Closing a path&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;canvas id=&quot;myCanvas&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-var canvas=document.getElementById(&#39;myCanvas&#39;);
-var ctx=canvas.getContext(&#39;2d&#39;);
-// Path made of three points (defines two lines)
-ctx.moveTo(20,20);
-ctx.lineTo(100, 100);
-ctx.lineTo(100,0);
-// Close the path, try commenting this line
-ctx.closePath();
-// indicate stroke color + draw first part of the path
-ctx.strokeStyle = &quot;blue&quot;;
-ctx.stroke();
-&lt;/script&gt;
+  &lt;canvas id=&quot;myCanvas&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var canvas=document.getElementById(&#39;myCanvas&#39;);
+    var ctx=canvas.getContext(&#39;2d&#39;);
+    // Path made of three points (defines two lines)
+    ctx.moveTo(20,20);
+    ctx.lineTo(100, 100);
+    ctx.lineTo(100,0);
+    // Close the path, try commenting this line
+    ctx.closePath();
+    // indicate stroke color + draw first part of the path
+    ctx.strokeStyle = &quot;blue&quot;;
+    ctx.stroke();
+  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -11087,16 +11088,16 @@ function draw() {
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Defining a gradient smaller than the canvas - Example #4&lt;/title&gt;
-&lt;style&gt;
-#myCanvas1 {
-border: 1px solid black;
-}
-&lt;/style&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Defining a gradient smaller than the canvas - Example #4&lt;/title&gt;
+  &lt;style&gt;
+    #myCanvas1 {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -11163,16 +11164,16 @@ function draw() {
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Defining a gradient bigger than the canvas - Example #5&lt;/title&gt;
-&lt;style&gt;
-#myCanvas1 {
-border: 1px solid black;
-}
-&lt;/style&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Defining a gradient bigger than the canvas - Example #5&lt;/title&gt;
+  &lt;style&gt;
+    #myCanvas1 {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -11205,30 +11206,32 @@ this:</p>
 
 <pre>var canvas, ctx, grdFrenchFlag;
 function init() {
-// Good practice 1: set global vars canvas, ctx, gradients, etc here
-canvas = document.querySelector(#myCanvas1);
-ctx = canvas.getContext(&#39;2d&#39;);
-drawCheckboard(5);
+  // Good practice 1: set global vars canvas, ctx, gradients, etc here
+  canvas = document.querySelector(#myCanvas1);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  drawCheckboard(5);
 }
+
 function setGradient(x, y, width, height) {
-grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
-grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
-grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
-grdFrenchFlag.addColorStop(1, &quot;red&quot;);
-ctx.fillStyle = grdFrenchFlag;
+  grdFrenchFlag = ctx.createLinearGradient(x, y, width, height);
+  grdFrenchFlag.addColorStop(0, &quot;blue&quot;);
+  grdFrenchFlag.addColorStop(0.5, &quot;white&quot;);
+  grdFrenchFlag.addColorStop(1, &quot;red&quot;);
+  ctx.fillStyle = grdFrenchFlag;
 }
+
 // n = number of cells per row/column
 function drawCheckboard(n) {
-var l = canvas.width;
-var h = canvas.height;
-var cellWidth = l / n;
-var cellHeight = h / n;
-for(i = 0; i &lt; n; i+=2) {
-for(j = 0; j &lt; n; j++) {
-var x = cellWidth*(i+j%2);
-var y = cellHeight*j;
-setGradient(x, y, x+cellWidth, y+cellHeight);
-ctx.fillRect(x, y, cellWidth, cellHeight);</pre>
+  var l = canvas.width;
+  var h = canvas.height;
+  var cellWidth = l / n;
+  var cellHeight = h / n;
+  for(i = 0; i &lt; n; i+=2) {
+    for(j = 0; j &lt; n; j++) {
+      var x = cellWidth*(i+j%2);
+      var y = cellHeight*j;
+      setGradient(x, y, x+cellWidth, y+cellHeight);
+      ctx.fillRect(x, y, cellWidth, cellHeight);</pre>
 
 </details>
 
@@ -11240,16 +11243,16 @@ ctx.fillRect(x, y, cellWidth, cellHeight);</pre>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Drawing shapes that share the same gradient as a whole - Example #6&lt;/title&gt;
-&lt;style&gt;
-#myCanvas1 {
-border: 1px solid black;
-}
-&lt;/style&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Drawing shapes that share the same gradient as a whole - Example #6&lt;/title&gt;
+  &lt;style&gt;
+    #myCanvas1 {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-&lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -14414,11 +14417,9 @@ height!</i></b></p>
 
 <h4>HTML code:</h4>
 
-<pre>
-1.  &lt;div id=&quot;parentDiv&quot;&gt;
+<pre>1.  &lt;div id=&quot;parentDiv&quot;&gt;
 2.    &lt;canvas id=&quot;myCanvas&quot; width=&quot;100&quot; height=&quot;100&quot; &gt;&lt;/canvas&gt;
-3.  &lt;/div&gt;
-</pre>
+3.  &lt;/div&gt;</pre>
 
 <h4>CSS code:</h4>
 
@@ -20148,8 +20149,7 @@ function showPosition(position) {
   &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
   &lt;div id=&quot;map_canvas&quot; style=&quot;width: 500px; height: 300px&quot;&gt;&lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 </details>
 
