@@ -62,11 +62,13 @@ function topFunction() {
 <br/>
 <h2><strong>Course Information</strong></h2>
 
+<!--
 <ol type="a">
   <li><a href="#cha-1"><strong>About W3C and the Web</strong></a><br></li>
   <li><a href="#cha-2"><strong>Why accessibility is important</strong></a><br></li>
   <li><a href="#cha-3"><strong>W3C tools</strong></a><br></li>
 </ol>
+-->
 
 <h2><strong>Module 1: HTML5 Basics</strong></h2>
 
@@ -3292,7 +3294,7 @@ and we used several &lt;source&gt;…&lt;/source&gt; elements that link to dif
       <li>metadata: download metadata, such as length of the video or its format.</li>
       <li>auto (default value): the browser will decide. This will depend on the implementation, and on the kind of connection: wifi, 3G, data roaming etc.</li>
     </ul>
-	</li>
+  </li>
   <li>loop: Another boolean attribute that indicates to play the video in loop mode (and it starts again when finished).</li>
 </ul>
 
@@ -7975,7 +7977,7 @@ involved such as font, size, shadow, lineWidth, etc.</p>
     var width = textMetrics.width;
     context.font = &quot;20pt Arial&quot;;
     context.fillText(&quot;Width of previous text: &quot; + width 
-	+ &quot;pixels&quot;, 10, 150);
+  + &quot;pixels&quot;, 10, 150);
     // Draw the baseline of the given width
     context.moveTo(10, 100);
     context.lineTo(width+10, 100);
@@ -8502,13 +8504,13 @@ Level 2 Events specification</a> says: “<i>The load event occurs when the DOM
     var canvas, ctx;
     var angle = 0;
     
-	function init() {
+  function init() {
       video = document.getElementById(&#39;sourcevid&#39;);
       canvas = document.getElementById(&#39;myCanvas&#39;);
       ctx = canvas.getContext(&#39;2d&#39;);
       setInterval(&quot;processFrame()&quot;, 25);
     }
-	
+  
     function processFrame() {
       // Uncomment next line for drawing 100% copy of the video content
       //ctx.drawImage(video, 0, 0);
@@ -8519,7 +8521,7 @@ Level 2 Events specification</a> says: “<i>The load event occurs when the DOM
       ctx.drawImage(video, 320, 180, 320, 180);
     }
     
-	function drawRotatingVideo(x, y) {
+  function drawRotatingVideo(x, y) {
       // Clear thze zone at the top right quarter of the canvas
       ctx.clearRect(320, 0, 320, 180);
       // We are going to change the coordinate system, save the context !
@@ -9847,7 +9849,7 @@ href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html" target="_
   &lt;/head&gt;
   &lt;body&gt;
     &lt;canvas id=&quot;myCanvas&quot; height = 400 width=&quot;800&quot;&gt;Your browser does not 
-	support the canvas tag.&lt;/canvas&gt;
+  support the canvas tag.&lt;/canvas&gt;
     &lt;script type=&quot;text/javascript&quot;&gt;
       var canvas=document.getElementById(&#39;myCanvas&#39;);
       var context=canvas.getContext(&#39;2d&#39;);
@@ -10209,8 +10211,8 @@ call the stroke() method for drawing the curve.</p>
   &lt;/head&gt;
   &lt;body&gt;
     &lt;canvas id=&quot;myCanvas1&quot; height = 400 width=&quot;800&quot;&gt;Your browser does not support the 
-	  canvas tag.&lt;/canvas&gt;
-	&lt;script type=&quot;text/javascript&quot;&gt;
+    canvas tag.&lt;/canvas&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
       var canvas=document.querySelector(&#39;#myCanvas1&#39;);
       var context=canvas.getContext(&#39;2d&#39;);
       context.beginPath();
@@ -12779,12 +12781,12 @@ argument.</p>
       // GOOD PRACTICE !
       ctx.restore();
     }
-	
+  
     function start() {
       // Start the animation loop, change 20 for bigger values
       requestId = setInterval(animationLoop, 20);
     }
-	
+  
     function stop() {
       if (requestId) {
         clearInterval(requestId);
@@ -12994,12 +12996,12 @@ your function ONCE and <i>AFTER a given amount of time</i>.</p>
       ctx.restore();
     }
     
-	function start() {
+  function start() {
       // Start the animation loop, change 20 for bigger
       // values
       requestId = setTimeout(animationLoop, 20);
     }
-	
+  
     function stop() {
       if (requestId) {
         clearTimeout(requestId);
@@ -13623,7 +13625,7 @@ show when an HTML element has the focus: a border is added to it.</p>
   of the canvas: it will lose the focus).
   &lt;p&gt;
     If you don&#39;t want a border to appear when you click on the canvas, 
-	set its style to outline: none
+  set its style to outline: none
   &lt;/p&gt;
   &lt;p&gt;Press a key when the canvas has the focus: an alert will display the keycode of the key you pressed. 
     Problem: if the canvas looses the focus, key press are no more detected...&lt;/p&gt;
@@ -13942,7 +13944,7 @@ window.onload = function init() {
   canvas.addEventListener(&#39;mousedown&#39;, function (evt) {
     mouseButton = evt.button;
     var message = &quot;Mouse button &quot; + evt.button + &quot; down at position: &quot; 
-	  + mousePos.x + &#39;,&#39; + mousePos.y;
+    + mousePos.x + &#39;,&#39; + mousePos.y;
     writeMessage(canvas, message);
   }, false);
   canvas.addEventListener(&#39;mouseup&#39;, function (evt) {
@@ -16191,17 +16193,17 @@ easier.</p>
   <summary>Click to expand!</summary>
 
 <pre>1.  &lt;form submit=&quot;test.php&quot; method=&quot;post&quot; autocomplete=&quot;on&quot;&gt;
-2.      ...
-3.      &lt;label for=&quot;address&quot;&gt;Enter your address (autocomplete off, overrides the
-4.             form&#39;s autocomplete=on attribute):&lt;/label&gt;
-5.      &lt;input type=&quot;text&quot; id=&quot;address&quot; autocomplete=&quot;off&quot;&gt;
-6.      &lt;p&gt;
-7.      &lt;label for=&quot;address1&quot;&gt;Enter your address (autocomplete on by inheritance of
-8.             the form&#39;s autocomplete=on attribute):&lt;/label&gt;
-9.      &lt;input type=&quot;text&quot; id=&quot;address1&quot;&gt;
-10.     &lt;p&gt;
-11.     &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
-12.     ...
+2.    ...
+3.    &lt;label for=&quot;address&quot;&gt;Enter your address (autocomplete off, overrides the
+4.      form&#39;s autocomplete=on attribute):&lt;/label&gt;
+5.    &lt;input type=&quot;text&quot; id=&quot;address&quot; autocomplete=&quot;off&quot;&gt;
+6.    &lt;p&gt;
+7.    &lt;label for=&quot;address1&quot;&gt;Enter your address (autocomplete on by inheritance of
+8.      the form&#39;s autocomplete=on attribute):&lt;/label&gt;
+9.    &lt;input type=&quot;text&quot; id=&quot;address1&quot;&gt;
+10.   &lt;p&gt;
+11.   &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+12.   ...
 13. &lt;/form&gt;</pre>
 
 </details>
@@ -16233,16 +16235,16 @@ the use of  required, placeholder and pattern attributes.</p>
   <summary>Click to expand!</summary>
 
 <pre>1.  &lt;form&gt;
-2.      ...
-3.      &lt;input type=&quot;text&quot; id=&quot;test&quot;/&gt;&lt;p&gt;
-4.      ...
-5.      &lt;input id=&quot;name&quot; name=&quot;inputName&quot;
-6.             placeholder=&quot;6 to 9 chars please...&quot;
-7.             pattern=&quot;w{6,9}&quot;
-8.             required
-9.             autofocus
-10.            type=&quot;text&quot;/&gt;
-11.     ...
+2.    ...
+3.    &lt;input type=&quot;text&quot; id=&quot;test&quot;/&gt;&lt;p&gt;
+4.    ...
+5.    &lt;input id=&quot;name&quot; name=&quot;inputName&quot;
+6.      placeholder=&quot;6 to 9 chars please...&quot;
+7.      pattern=&quot;w{6,9}&quot;
+8.      required
+9.      autofocus
+10.     type=&quot;text&quot;/&gt;
+11.   ...
 12. &lt;/form&gt;</pre>
 
 </details>
@@ -16304,17 +16306,17 @@ the use of  required, placeholder and pattern attributes.</p>
   <summary>Click to expand!</summary>
 
 <pre>1.  &lt;form&gt;
-2.      ...
-3.      &lt;input list=&quot;browsers&quot; id=&quot;mybrowser&quot; /&gt;
+2.    ...
+3.    &lt;input list=&quot;browsers&quot; id=&quot;mybrowser&quot; /&gt;
 4.  
-5.      &lt;datalist id=&quot;browsers&quot;&gt;
-6.         &lt;option value=&quot;Internet Explorer&quot;&gt;
-7.         &lt;option value=&quot;Firefox&quot;&gt;
-8.         &lt;option value=&quot;Chrome&quot;&gt;
-9.         &lt;option value=&quot;Opera&quot;&gt;
-10.        &lt;option value=&quot;Safari&quot;&gt;
-11.     &lt;/datalist&gt;
-12. ...
+5.    &lt;datalist id=&quot;browsers&quot;&gt;
+6.      &lt;option value=&quot;Internet Explorer&quot;&gt;
+7.      &lt;option value=&quot;Firefox&quot;&gt;
+8.      &lt;option value=&quot;Chrome&quot;&gt;
+9.      &lt;option value=&quot;Opera&quot;&gt;
+10.     &lt;option value=&quot;Safari&quot;&gt;
+11.   &lt;/datalist&gt;
+12.   ...
 13. &lt;/form&gt;</pre>
 
 </details>
@@ -16516,8 +16518,8 @@ input field types.</p>
 13.  
 14. &lt;input id=&quot;range&quot; name=&quot;range&quot; type=&quot;range&quot; 
       min=&quot;0&quot; 
-	  max=&quot;100&quot; 
-	  step=&quot;5&quot;/&gt;</pre>
+    max=&quot;100&quot; 
+    step=&quot;5&quot;/&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17383,13 +17385,13 @@ at JSBin</a>, or try it below in your browser:</p>
 22.       &lt;fieldset&gt;
 23.         &lt;legend&gt;Type invalid values and see the result&lt;/legend&gt;
             &lt;label for=&quot;myEmail&quot; class=&quot;formLabel&quot;&gt;E-mail:&lt;/label&gt; 
-			&lt;input type=&quot;email&quot; id=&quot;myEmail&quot; required/&gt;&lt;br&gt;
+              &lt;input type=&quot;email&quot; id=&quot;myEmail&quot; required/&gt;&lt;br&gt;
             &lt;label for=&quot;myURL&quot; class=&quot;formLabel&quot;&gt;
-	        Homepage (URL):&lt;/label&gt; &lt;input type=&quot;url&quot; id=&quot;myURL&quot; 
-			required/&gt;&lt;br&gt; &lt;label for=&quot;myPhone&quot; class=&quot;formLabel&quot;&gt; Phone 
-			number:&lt;/label&gt; &lt;input type=&quot;tel&quot; id=&quot;myPhone&quot; 
-			pattern=&quot;[0-9]{3}-?[0-9]{3}-?[0-9]{4}&quot; placeholder=&quot;e.g.
-			416-555-1234&quot; required/&gt;&lt;br&gt;
+            Homepage (URL):&lt;/label&gt; &lt;input type=&quot;url&quot; id=&quot;myURL&quot; 
+            required/&gt;&lt;br&gt; &lt;label for=&quot;myPhone&quot; class=&quot;formLabel&quot;&gt; Phone 
+            number:&lt;/label&gt; &lt;input type=&quot;tel&quot; id=&quot;myPhone&quot; 
+            pattern=&quot;[0-9]{3}-?[0-9]{3}-?[0-9]{4}&quot; placeholder=&quot;e.g.
+            416-555-1234&quot; required/&gt;&lt;br&gt;
 24.         &lt;button&gt;Submit form&lt;/button&gt;&lt;br /&gt;
 25.       &lt;/fieldset&gt;
 26.     &lt;/form&gt;
@@ -17569,7 +17571,7 @@ to make your own message bubbles.</p>
 19.       &lt;p&gt;
 20.       &lt;label for=&quot;password2&quot;&gt;
             Repeat password:&lt;/label&gt; &lt;input type=&quot;password&quot; id=&quot;password2&quot; 
-	        oninput=&quot;checkPasswords()&quot; required&gt;
+            oninput=&quot;checkPasswords()&quot; required&gt;
 21.       &lt;p&gt;
 22.       &lt;button&gt;Submit&lt;/button&gt;
 23.     &lt;/fieldset&gt;
@@ -20477,6 +20479,6 @@ good understanding of the material.</p>
 </ul>
 
 <h5>. . .The end.<br>
-<br>last updated 06-06-23 Tue late-late</h5>
+<br>last updated 06-20-23 Tue 11:41am</h5>
   </body>
 </html>
