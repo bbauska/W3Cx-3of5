@@ -1,9 +1,9 @@
 /* styles.css of w3cx-3of5 */
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .displayed {
     display: block;
     margin: 0 auto; }
@@ -17,19 +17,21 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
   "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 */
 
-  p { font-size: 15px;
-      font-family: Bahnschrift, Inter, Helvetic, sans-serif;
-      text-align: left; 
-      margin-left: 5px; }
+  p { 
+    font-size: 15px;
+    font-family: Bahnschrift, Inter, Helvetic, sans-serif;
+    text-align: left; 
+    margin-left: 5px; 
+  }
+
+  ol li { padding: 10px; }
 
   pre, code {
     font-family: monospace, monospace;
     font-size: 10px;
   }
 
-  pre {
-    overflow: auto;
-  }
+  pre { overflow: auto; }
 
   pre > code {
     display: block;
