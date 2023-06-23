@@ -8399,30 +8399,31 @@ it!</p>
     imageObj = document.querySelector(&quot;#logo&quot;);
     drawAllImages();
     };
+	
     function drawAllImages() {
-    console.log(&quot;image is already loaded, we draw it!&quot;);
-    // Original image drawn with size = 100x100 pixels
-    context.drawImage(imageObj, 0, 10, 100, 100);
-    // with size = 150x150
-    context.drawImage(imageObj, 80, 10, 150, 150);
-    // with size = 200x200
-    context.drawImage(imageObj, 210, 10, 200, 200);
-    // draw the sub image at 0, 0, width = 512, height = 100
-    // at position 100, 250, with a width of 256 and a height of 50
-    context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
+      console.log(&quot;image is already loaded, we draw it!&quot;);
+      // Original image drawn with size = 100x100 pixels
+      context.drawImage(imageObj, 0, 10, 100, 100);
+      // with size = 150x150
+      context.drawImage(imageObj, 80, 10, 150, 150);
+      // with size = 200x200
+      context.drawImage(imageObj, 210, 10, 200, 200);
+      // draw the sub image at 0, 0, width = 512, height = 100
+      // at position 100, 250, with a width of 256 and a height of 50
+      context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
     }
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
   &lt;p&gt;A canvas with an image that is further in the page, loaded by the 
-  &lt;img src=...&gt; tag. This is not the recommended way to load images, 
-  except if the image is already in your page. Use the onload callback to be sure that the 
-  image is in the page. &lt;/p&gt;
-  &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
-  &lt;p&gt;Original image is an &amp;lt;img&gt; element:
+    &lt;img src=...&gt; tag. This is not the recommended way to load images, 
+      except if the image is already in your page. Use the onload callback to be sure that the 
+      image is in the page. &lt;/p&gt;
+    &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
+    &lt;p&gt;Original image is an &amp;lt;img&gt; element:
   &lt;/p&gt;
   &lt;img id=&quot;logo&quot; src=&quot;https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png&quot; 
-  alt=&quot;html5 logo&quot;&gt;
+    alt=&quot;html5 logo&quot;&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -8453,18 +8454,19 @@ it!</p>
     context = canvas.getContext(&quot;2d&quot;);
     draw();
     };
+
     function draw() {
-    var imageObj = document.querySelector(&quot;#logo&quot;);
-    console.log(&quot;Image has been loaded, let&#39;s draw it!&quot;);
-    // Original image drawn with size = 100x100 pixels
-    context.drawImage(imageObj, 0, 10, 100, 100);
-    // with size = 150x150
-    context.drawImage(imageObj, 80, 10, 150, 150);
-    // with size = 200x200
-    context.drawImage(imageObj, 210, 10, 200, 200);
-    // draw the sub image at 0, 0, width = 512, height = 100
-    // at position 100, 250, with a width of 256 and a height of 50
-    context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
+      var imageObj = document.querySelector(&quot;#logo&quot;);
+      console.log(&quot;Image has been loaded, let&#39;s draw it!&quot;);
+      // Original image drawn with size = 100x100 pixels
+      context.drawImage(imageObj, 0, 10, 100, 100);
+      // with size = 150x150
+      context.drawImage(imageObj, 80, 10, 150, 150);
+      // with size = 200x200
+      context.drawImage(imageObj, 210, 10, 200, 200);
+      // draw the sub image at 0, 0, width = 512, height = 100
+      // at position 100, 250, with a width of 256 and a height of 50
+      context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
     }
   &lt;/script&gt;
 &lt;/head&gt;
@@ -8513,7 +8515,7 @@ Level 2 Events specification</a> says: “<i>The load event occurs when the DOM
     var canvas, ctx;
     var angle = 0;
     
-  function init() {
+    function init() {
       video = document.getElementById(&#39;sourcevid&#39;);
       canvas = document.getElementById(&#39;myCanvas&#39;);
       ctx = canvas.getContext(&#39;2d&#39;);
@@ -8529,8 +8531,8 @@ Level 2 Events specification</a> says: “<i>The load event occurs when the DOM
       ctx.drawImage(video, 0, 180, 320, 180);
       ctx.drawImage(video, 320, 180, 320, 180);
     }
-    
-  function drawRotatingVideo(x, y) {
+
+    function drawRotatingVideo(x, y) {
       // Clear thze zone at the top right quarter of the canvas
       ctx.clearRect(320, 0, 320, 180);
       // We are going to change the coordinate system, save the context !
@@ -20050,22 +20052,15 @@ function error() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-6">6.4.6 Reverse geocoding</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Different Web services can be used to get an address from longitude
-and latitude. Most are free of charge, but they will ask you to register
-an API key and enter your credit card number. If you send too many
-requests, you will be charged. Such a service is the 
-<a href="https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse" 
-target="_blank" rel="noopener noreferrer">Google 
-Reverse Geocoding JavaScript API</a>. For those of you who are really
-interested to know how this API works, please read the Google
-documentation and tutorials.</p>
-<p>There is also an interesting Leaflet plugin (an extension to Leaflet)
-based on the <a href="https://www.gisgraphy.com/" target="_blank" rel="noopener noreferrer">Gisgraphy</a> 
-  (free open source framework) service, that comes with a <a href="https://services.gisgraphy.com/static/leaflet/index.html" 
-  target="_blank" rel="noopener noreferrer">nice demo of reverse geocoding</a>.</p>
+<p>Different Web services can be used to get an address from longitude and latitude. Most are free of charge, but they will ask you to register an API key and enter your credit card number. If you send too many requests, you will be charged. Such a service is the <a href="https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse" target="_blank" rel="noopener noreferrer">Google Reverse Geocoding JavaScript API</a>. For those of you who are really interested to know how this API works, please read the Google documentation and tutorials.</p>
+
+<p>There is also an interesting Leaflet plugin (an extension to Leaflet) based on the <a href="https://www.gisgraphy.com/" target="_blank" rel="noopener noreferrer">Gisgraphy</a> (free open source framework) service, that comes with a <a href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" rel="noopener noreferrer">nice demo of reverse geocoding</a>.</p>
+
 <p>Let’s see some examples of use.</p>
-<p>Example #1: how to get a physical address from the longitude and latitude.<br>
-<br>Google reverse geocoding example (screenshot only):</p>
+
+<p>Example #1: how to get a physical address from the longitude and latitude.</p>
+
+<p>Google reverse geocoding example (screenshot only):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 330. google reverse geocoding example (396) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20085,72 +20080,80 @@ key, used at <i>line 6</i>.</p>
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
   &lt;title&gt;Js bin &lt;/title&gt;
-    &lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=PUT_HERE_YOUR_API_KEY&amp;v=3.exp&amp;sensor=false&quot;&gt;&lt;/script&gt;&lt;script&gt;
-// p elements for displaying lat / long and address
-var displayCoords, myAddress;
-// used with the google apis
-var geocoder;
-var map;
-var infowindow = new google.maps.InfoWindow();
-var marker;
-// Called when the page is loaded
-function init() {
+  &lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=
+    PUT_HERE_YOUR_API_KEY&amp;v=3.exp&amp;sensor=false&quot;&gt;
+    &lt;/script&gt;&lt;script&gt;
+    // p elements for displaying lat / long and address
+    var displayCoords, myAddress;
+    // used with the google apis
+    var geocoder;
+    var map;
+    var infowindow = new google.maps.InfoWindow();
+    var marker;
+    // Called when the page is loaded
+
+  function init() {
     displayCoords=document.getElementById(&quot;msg&quot;);
     myAddress = document.getElementById(&quot;address&quot;);
     geocoder = new google.maps.Geocoder();
     // In order to show something even before a user clicks on the button
     var latlng = new google.maps.LatLng(34.0144, -6.83);
     var mapOptions = {
-       zoom: 8,
-       center: latlng,
-       mapTypeId: &#39;roadmap&#39;
+      zoom: 8,
+      center: latlng,
+      mapTypeId: &#39;roadmap&#39;
     }
     map = new google.maps.Map(document.getElementById(&#39;map_canvas&#39;), mapOptions);
-} // end of init()
-// Called when the button is clicked
-function getLocation() {
-    if (navigator.geolocation) {
-       navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-       displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
-    }
-}
-// Called when a position is available
-function showPosition(position) {
-    displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
+  } // end of init()
+  // Called when the button is clicked
+
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
+    }
+  }
+    // Called when a position is available
+  
+    function showPosition(position) {
+      displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
                             &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
-    // Display the map
-    showOnGoogleMap(new google.maps.LatLng(position.coords.latitude,       
+      // Display the map
+      showOnGoogleMap(new google.maps.LatLng(position.coords.latitude,       
                                            position.coords.longitude));
-  }
-  function showOnGoogleMap(latlng) {
-   // Ask google geocoder for an address once we get a longitude and
-   // a latitude. In fact, the reverse geocoder sends back an array of &quot;guesses&quot;
-   // i.e. not just one address object, but several. Each entry in this array
-   // has several properties such as street, city, etc. We use the &quot;formatted_address&quot;
-   // one here, but it might be interesting to get the detailed properties in other
-   // applications like a form with street, city, zip code etc.
-   geocoder.geocode({&#39;latLng&#39;: latlng},reverseGeocoderSuccess);
-   function reverseGeocoderSuccess(results, status) {
-     if (status == google.maps.GeocoderStatus.OK) {
-        if (results[1]) {
-           map.setZoom(11);
-           marker = new google.maps.Marker({
+    }
+
+      function showOnGoogleMap(latlng) {
+        // Ask google geocoder for an address once we get a longitude and
+        // a latitude. In fact, the reverse geocoder sends back an array of &quot;guesses&quot;
+        // i.e. not just one address object, but several. Each entry in this array
+        // has several properties such as street, city, etc. We use the
+          &quot;formatted_address&quot;
+        // one here, but it might be interesting to get the detailed properties in other
+        // applications like a form with street, city, zip code etc.
+        geocoder.geocode({&#39;latLng&#39;: latlng},reverseGeocoderSuccess);
+	
+        function reverseGeocoderSuccess(results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+            if (results[1]) {
+              map.setZoom(11);
+              marker = new google.maps.Marker({
                                 position: latlng,
                                 map: map
-                        });
-           infowindow.setContent(results[1].formatted_address);
-           infowindow.open(map, marker);
-           // Display address as text in the page
-           myAddress.innerHTML=&quot;Adress: &quot; + results[0].formatted_address; 
-        } else {
-           alert(&#39;No surface address found&#39;);
-        }
-      } else {
-         alert(&#39;Geocoder failed due to: &#39; + status);
-      }
-    } // end of reverseGeocoderSuccess
-  } // end of showOnGoogleMap
+              });
+              infowindow.setContent(results[1].formatted_address);
+              infowindow.open(map, marker);
+              // Display address as text in the page
+              myAddress.innerHTML=&quot;Adress: &quot; + results[0].formatted_address; 
+            } else {
+              alert(&#39;No surface address found&#39;);
+            }
+          } else {
+            alert(&#39;Geocoder failed due to: &#39; + status);
+          }
+        } // end of reverseGeocoderSuccess
+      } // end of showOnGoogleMap
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init()&quot;&gt;
@@ -20164,9 +20167,7 @@ function showPosition(position) {
 
 </details>
 
-<p>Gisgraphy (free service) reverse geocoding example (screenshot only, click on it to see <a
-href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" rel="noopener noreferrer">
-  the demo on the Gisgraphy website</a>):</p>
+<p>Gisgraphy (free service) reverse geocoding example (screenshot only, click on it to see <a href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" rel="noopener noreferrer"> the demo on the Gisgraphy website</a>):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 331. gisgraphy screenshot (398) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20177,11 +20178,9 @@ href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" 
   
 <h4><b>Example #2:</b> reverse geocoding + OpenStreetMap</h4>
 
-<p><b>Important note:</b> these examples below rely on an external 
-  <a href="https://github.com/perliedman/leaflet-control-geocoder" 
-  target="_blank" rel="noopener noreferrer">GitHub resource</a>.</p>
-<p>Please, pan and zoom on the map and click.<br>
-<br>The longitude and latitude are computed from your click and a free reverse geocoding service is 
+<p><b>Important note:</b> these examples below rely on an external <a href="https://github.com/perliedman/leaflet-control-geocoder" target="_blank" rel="noopener noreferrer">GitHub resource</a>.</p>
+<p>Please, pan and zoom on the map and click.</p>
+<p>The longitude and latitude are computed from your click and a free reverse geocoding service is 
   used to convert to a physical address.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 332. reverse geocoding - openstreetmap (398) ~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20367,15 +20366,9 @@ href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" 
 
 <h4>Example #4: use of geolocation, map and reverse geocoder in a HTML form</h4>
 
-<p>This is just a variation of the previous examples. We embedded the
-interactive map in a form, and we display the results of the reverse
-geocoder in a form field. This example might be useful if you want to
-pre-fill the address of a registration form, depending on the current
-location of the person who is registering.</p>
-<p>Click on the Codepen logo (on the top right) so to run
-the <a href="https://codepen.io/w3devcampus/pen/MWKEJqM" target="_blank" rel="noopener noreferrer">online
-example</a> (for security reasons the embedded version cannot run in
-this page):</p>
+<p>This is just a variation of the previous examples. We embedded the interactive map in a form, and we display the results of the reverse geocoder in a form field. This example might be useful if you want to pre-fill the address of a registration form, depending on the current location of the person who is registering.</p>
+
+<p>Click on the Codepen logo (on the top right) so to run the <a href="https://codepen.io/w3devcampus/pen/MWKEJqM" target="_blank" rel="noopener noreferrer">online example</a> (for security reasons the embedded version cannot run in this page):</p>
 
 <h4>HTML</h4>
 
