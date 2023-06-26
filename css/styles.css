@@ -31,7 +31,9 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
     font-size: 10px;
   }
 
-  pre { overflow: auto; }
+  pre { overflow: auto; 
+       margin-left: 10px;
+      }
 
   pre > code {
     display: block;
@@ -66,9 +68,11 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
   h2 { font-size: 18px;
        font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; }
   h3 { font-size: 17px;
-       font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; }
+       font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; 
+       margin-left: 10px; }
   h4 { font-size: 16px;
-       font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; }
+       font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; 
+       margin-left: 10px; }
   h5 { font-size: 15px;
        font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; }
   h6 { font-size: 10px;
