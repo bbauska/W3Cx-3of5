@@ -18,23 +18,33 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
 */
 
 *,  p { 
-    font-size: 13.5px;
-    font-family: Bahnschrift, Inter, Helvetic, sans-serif;
-    text-align: left; 
+  font-size: 13.5px;
+  font-family: Bahnschrift, Inter, Helvetic, sans-serif;
+  text-align: left; 
+  margin-left: 10px; 
+}
+
+  ol li { 
+    padding: 5px; 
     margin-left: 10px; 
+    line-height: 160%;
+  }
+  ul li { 
+    padding: 5px; 
+    margin-left: 10px; 
+    line-height: 160%;
   }
 
-  ol li { padding: 10px; }
-
-  pre, code {
-    font-family: monospace, monospace;
-    font-size: 10px;
+  pre {
+    font-family: monospace;
+    font-size: 11px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
   }
-
-  pre { overflow: auto; 
-       margin-left: 10px;
-      }
-
   pre > code {
     display: block;
     padding: 1rem;
@@ -76,42 +86,40 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
   h5 { font-size: 15px;
        font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; }
   h6 { font-size: 10px;
-	  font-family: Bahnschrift, Inter, Helvetic, sans-serif; }
+       font-family: Bahnschrift, Inter, Helvetic, sans-serif; }
 
-details {
-  font: 11px Inter, sans-serif, Bahnschrift, Calibri;
-  width: 45%;
-/*  margin-left: 10px;  */
-}
+  details {
+    font: 11px Inter, sans-serif, Bahnschrift, Calibri;
+    width: 45%;
+  }
 
-details > summary {
-  padding: 2px 6px;
-  width: 12em;
-  background-color: #eee;  /* very light gray */
-  border: none;
-  box-shadow: 3px 3px 4px #00008b;  /* dark blue */
-  cursor: pointer;
-}
+  details > summary {
+    padding: 2px 6px;
+    width: 12em;
+    background-color: #eee;  /* very light gray */
+    border: none;
+    box-shadow: 3px 3px 4px #00008b;  /* dark blue */
+    cursor: pointer;
+  }
 
-details > p {
-  border-radius: 0 0 10px 10px;
-  background-color: #fff;  /* white */
-  padding: 2px 6px;
-  margin: 0;
-  box-shadow: 3px 3px 4px #00008b;  /* dark blue*/
-}
+  details > p {
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;  /* white */
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px #00008b;  /* dark blue*/
+  }
 
-details[open] > summary {
-  background-color: yellow;
-/*  margin-left: 10px;   */
-}
+  details[open] > summary {
+    background-color: yellow;
+  }
 
 background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)
 
 body {
   font-family: Bahnschrift, Inter, Helvetic, sans-serif;
   font-size: 1.2rem;
-  background-color: #EEEEEE;  /* very light gray */
+  background-color: #eeeeee;  /* very light gray */
   color: #000000;  /* black */
   text-align: left;
   padding: 10px;
