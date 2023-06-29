@@ -17,8 +17,8 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
   "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 */
 
-  p { 
-    font-size: 15px;
+*,  p { 
+    font-size: 13.5px;
     font-family: Bahnschrift, Inter, Helvetic, sans-serif;
     text-align: left; 
     margin-left: 10px; 
@@ -81,7 +81,7 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
 details {
   font: 11px Inter, sans-serif, Bahnschrift, Calibri;
   width: 45%;
-  margin-left: 10px;  /* added 6.26.23 */
+/*  margin-left: 10px;  */
 }
 
 details > summary {
@@ -103,7 +103,7 @@ details > p {
 
 details[open] > summary {
   background-color: yellow;
-  margin-left: 10px;  /* added 6.26.23 */
+/*  margin-left: 10px;   */
 }
 
 background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)
