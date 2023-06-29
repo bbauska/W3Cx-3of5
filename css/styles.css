@@ -19,24 +19,24 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
 
 *,  p { 
   font-size: 13.5px;
-  font-family: Bahnschrift, Inter, Helvetic, sans-serif;
+  font-family: Inter, Bahnschrift, Helvetic, sans-serif;
   text-align: left; 
   margin-left: 10px; 
 }
 
   ol li { 
     padding: 5px; 
-    margin-left: 10px; 
-    line-height: 160%;
+/*    margin-left: 10px;  */
+    line-height: 130%;
   }
   ul li { 
     padding: 5px; 
-    margin-left: 10px; 
-    line-height: 160%;
+/*    margin-left: 10px;   */
+    line-height: 130%;
   }
 
   pre {
-    font-family: monospace;
+    font-family: inter;
     font-size: 11px;
     overflow-x: auto;
     white-space: pre-wrap;
@@ -90,12 +90,13 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
 
   details {
     font: 11px Inter, sans-serif, Bahnschrift, Calibri;
-    width: 45%;
+    width: 65%;
+	margin-left: 10px;
   }
 
   details > summary {
     padding: 2px 6px;
-    width: 12em;
+    width: 18em;  /* 12em */
     background-color: #eee;  /* very light gray */
     border: none;
     box-shadow: 3px 3px 4px #00008b;  /* dark blue */
@@ -117,12 +118,12 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
 background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)
 
 body {
-  font-family: Bahnschrift, Inter, Helvetic, sans-serif;
-  font-size: 1.2rem;
+  font-family: Inter, Bahnschrift, Inter, Helvetic, sans-serif;
+  font-size: 13.5px;  /* 1.2rem */
   background-color: #eeeeee;  /* very light gray */
   color: #000000;  /* black */
   text-align: left;
-  padding: 10px;
+  padding: 5px;  /* 10px */
   margin-left: 10px;  /* added 6.26.23 */
 }
 
