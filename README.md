@@ -463,21 +463,44 @@ The World Wide Web was born in 1989. Interestingly enough, the web was built by 
 
 The credited inventor of the World Wide Web is Tim Berners-Lee.
 
-You have to access the internet to view the World Wide Web and the web pages or other content it contains. The web is the collective name for all the pages, sites, documents, and other media that are served to visitors.
+<p>You have to access the internet to view the World Wide Web and the web pages 
+or other content it contains. The web is the collective name for all the 
+pages, sites, documents, and other media that are served to visitors.</p>
 
-The web consists of digital documents, referred to as web pages, that are viewable through <a href="https://www.lifewire.com/what-is-a-browser-446234" target="_blank">web browser</a> software on devices like smartphones, tablets, and computers. These pages contain many types of content, including static content like encyclopedia pages, but also dynamic content like <a href="https://www.lifewire.com/a-primer-to-ebay-basics-2483229" target="_blank" rel="noopener noreferrer">eBay</a> sales, stocks, weather, news, and traffic reports.
+<p>The web consists of digital documents, referred to as web pages, that are 
+viewable through <a href="https://www.lifewire.com/what-is-a-browser-446234" 
+target="_blank">web browser</a> software on devices like smartphones, tablets, 
+and computers. These pages contain many types of content, including static 
+content like encyclopedia pages, but also dynamic content like 
+<a href="https://www.lifewire.com/a-primer-to-ebay-basics-2483229" 
+target="_blank" rel="noopener noreferrer">eBay</a> sales, stocks, 
+weather, news, and traffic reports.</p>
 
-A collection of connected web pages that are publicly accessible and under a single domain name is referred to as a website.
+<p>A collection of connected web pages that are publicly accessible and under 
+a single domain name is referred to as a website.</p>
 
-Web pages are connected using <a href="https://www.lifewire.com/hypertext-transfer-protocol-817944" target="_blank">Hypertext Transfer Protocol</a> (HTTP), the coding language that allows you to visit any public web page. By clicking a <a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287">hyperlink</a> or entering a <a href="https://www.lifewire.com/what-is-a-url-2626035" target="_blank" rel="noopener noreferrer">Uniform Resource Locator</a> (URL), the browser uses this unique address to find and access a web page. <a href="https://www.lifewire.com/best-search-engines-2483352">Search engines</a> like Google make it easy to filter the billions of web pages now populating the web by locating the articles, videos, and other media you want to find based on your search criteria.</p>
-</p>
+<p>Web pages are connected using 
+<a href="https://www.lifewire.com/hypertext-transfer-protocol-817944" 
+target="_blank">Hypertext Transfer Protocol</a> (HTTP), the coding 
+language that allows you to visit any public web page. By clicking a 
+<a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287">
+hyperlink</a> or entering a <a href="https://www.lifewire.com/what-is-a-url-2626035" 
+target="_blank" rel="noopener noreferrer">Uniform Resource Locator</a> (URL), 
+the browser uses this unique address to find and access a web page. 
+<a href="https://www.lifewire.com/best-search-engines-2483352">
+Search engines</a> like Google make it easy to filter the billions 
+of web pages now populating the web by locating the articles, videos, 
+and other media you want to find based on your search criteria.</p>
+
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
 <h4>Final Verdict: You Can't Have the Web Without the Internet</h4>
-<p>
-Plain and simple, the internet allows access to the World Wide Web. Without it, we have no way of accessing the thousands of websites out there. For most online needs, however, the web is the easiest to use. Each serves an important purpose.</p>
+<p>Plain and simple, the internet allows access to the World Wide Web. 
+Without it, we have no way of accessing the thousands of websites out 
+there. For most online needs, however, the web is the easiest to use. 
+Each serves an important purpose.</p>
 
 <h3 id="cha-2">Why Accessibility is Important</h3>
 
@@ -485,10 +508,18 @@ Plain and simple, the internet allows access to the World Wide Web. Without it, 
 <i>Access by everyone regardless of disability is an essential aspect.</i>
 
 <h4>Tim Berners-Lee, W3C Director and inventor of the World Wide Web</h4>
-<p>The Web has become an essential aspect of our daily lives, and everyone should have access to this technology. Web accessibility focuses on ensuring equivalent access for people with disabilities. It is increasingly important to many organizations and governments from around the world, and has many business benefits. Access to information, including on the Web, is also recognized by the UN Convention on the Rights of Persons with Disabilities (CRPD).</p>
+
+<p>The Web has become an essential aspect of our daily lives, and everyone 
+should have access to this technology. Web accessibility focuses on ensuring 
+equivalent access for people with disabilities. It is increasingly important 
+to many organizations and governments from around the world, and has many 
+business benefits. Access to information, including on the Web, is also 
+recognized by the UN Convention on the Rights of Persons with Disabilities (CRPD).</p>
 
 <h4>Who is impacted?</h4>
-<p>Web accessibility addresses all disabilities, including hearing, learning and cognitive, neurological, physical, speech, and visual disabilities. Some examples of Web accessibility features include:</p>
+<p>Web accessibility addresses all disabilities, including hearing, learning and 
+cognitive, neurological, physical, speech, and visual disabilities. Some examples 
+of Web accessibility features include:</p>
 <ul>
   <li><i>Captions</i> on audio and multimedia content for people who are hard of hearing;</li>
   <li><i>Clear and consistent layout</i> for people with learning and cognitive disabilities;</li>
@@ -507,24 +538,41 @@ Plain and simple, the internet allows access to the World Wide Web. Without it, 
   <li>People who are new to computers, to the Web, or to your own Web site;</li>
   <li>People who are not fluent in the language of your particular Web site;</li>
 </ul>
-<p>The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. When Web pages, Web technologies, Web tools, or Web applications are badly designed, they can create barriers that exclude people from using the Web. More information is available in the <a href="https://www.w3.org/standards/webdesign/accessibility" target="_blank" rel="noopener noreferrer">W3C Accessibility</a> overview.</p>
+
+<p>The Web is an increasingly important resource in many aspects of life: education, 
+employment, government, commerce, health care, recreation, and more. When Web pages, 
+Web technologies, Web tools, or Web applications are badly designed, they can create 
+barriers that exclude people from using the Web. More information is available in the 
+<a href="https://www.w3.org/standards/webdesign/accessibility" target="_blank" 
+rel="noopener noreferrer">W3C Accessibility</a> overview.</p>
 
 <h4>First Steps in Web Accessibility</h4>
-<p>There are many simple Web accessibility improvements that you can implement and check right away, even when you are new to this topic.<br>
-<br>
-Remember that when developing or redesigning a website or Web application, it is best to evaluate accessibility early and throughout the development process to identify accessibility problems early, when it is easier to address them.<br>
-<br>
-Two examples are provided below but you can find more tips and information in these 2 resources:</p>
+
+<p>There are many simple Web accessibility improvements that you can implement and 
+check right away, even when you are new to this topic.</p>
+
+<p>Remember that when developing or redesigning a website or Web application, it is 
+best to evaluate accessibility early and throughout the development process to 
+identify accessibility problems early, when it is easier to address them.</p>
+<p>Two examples are provided below but you can find more tips and information in these 
+2 resources:</p>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/" target="_blank" rel="noopener noreferrer">Tips for Getting Started with Web Accessibility.</a></li>
-  <li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/" target="_blank" rel="noopener noreferrer">Easy Checks - A First Review of Web Accessibility.</a></li>
+  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/" target="_blank" 
+    rel="noopener noreferrer">Tips for Getting Started with Web Accessibility.</a></li>
+  <li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/" target="_blank" 
+    rel="noopener noreferrer">Easy Checks - A First Review of Web Accessibility.</a></li>
 </ul>
 
 <h4>Example #1: page title</h4>
-<p>Good page titles are particularly important for orientation --- to help people know where they are and move between pages open in their browser. The first thing screen readers say when the user goes to a different Web page is the page title. In the Web page markup, they are the words &lt;title&gt; within the &lt;head&gt;.</p>
 
-<h5><i>Check #1</i>: There is a title that adequately and briefly describes the content of a page, and it distinguishes the page from other Web pages.</h5>
+<p>Good page titles are particularly important for orientation --- to help people 
+  know where they are and move between pages open in their browser. The first thing 
+  screen readers say when the user goes to a different Web page is the page title. 
+  In the Web page markup, they are the words &lt;title&gt; within the &lt;head&gt;.</p>
+
+<h5><i>Check #1</i>: There is a title that adequately and briefly describes the 
+content of a page, and it distinguishes the page from other Web pages.</h5>
 
 <i>Example</i>:
 
@@ -537,12 +585,18 @@ Two examples are provided below but you can find more tips and information in t
 ```
 
 <h4>Example 2: image text alternatives ("alt text")</h4>
-<p>
-Text alternatives ("alt text") are a primary way of making visual information accessible, because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user. Providing text alternatives allows the information to be rendered in a variety of ways by a variety of user agents. For example, a person who cannot see a picture can have the text alternative read aloud using synthesized speech.</p>
+
+<p>Text alternatives ("alt text") are a primary way of making visual information accessible, 
+because they can be rendered through any sensory modality (for example, visual, auditory 
+or tactile) to match the needs of the user. Providing text alternatives allows the 
+information to be rendered in a variety of ways by a variety of user agents. For example, 
+a person who cannot see a picture can have the text alternative read aloud using 
+synthesized speech.</p>
 
 <h5><i>Check #2</i>: Every image has alt with appropriate alternative text.</h5>
 <p>
-<i>Example</i>: See the W3C logo below. It contains a link that points to the W3C Web site. The text alternative is going to be a brief description of the link target.</p>
+<i>Example</i>: See the W3C logo below. It contains a link that points to the W3C 
+Web site. The text alternative is going to be a brief description of the link target.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 11. W3C logo (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -553,7 +607,8 @@ Text alternatives ("alt text") are a primary way of making visual information ac
 </p>
 <br/>
 
-<p align="center"><a href="https://www.w3.org/Icons/w3c_home" target="_blank" rel="noopener noreferrer">W3C Home</a></p>
+<p align="center"><a href="https://www.w3.org/Icons/w3c_home" target="_blank" 
+rel="noopener noreferrer">W3C Home</a></p>
 
 ```
 <a href="https://w3.org">
