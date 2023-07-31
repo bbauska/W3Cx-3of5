@@ -103,11 +103,14 @@ w3cx-3of5-html5.1x: Coursera - Front-End Web Development - HTML5 Coding Essentia
   <li>Course tools</li>
   <li>About W3C and the Web</li>
 </ul>
-<p>
-W3C has designed a <a href="https://www.edx.org/professional-certificate/front-end-web-developer-9" target="_blank">"Front-End Web Developer" (FEWD) Professional Certificate</a> where you learn all of the necessary skills needed to build interactive and responsive user experiences on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript.
+<p>W3C has designed a 
+<a href="https://www.edx.org/professional-certificate/front-end-web-developer-9" 
+target="_blank">"Front-End Web Developer" (FEWD) Professional Certificate</a> 
+where you learn all of the necessary skills needed to build interactive and 
+responsive user experiences on the Web. This program deepens your knowledge 
+of the 3 foundational languages that power the Web: HTML5, CSS and JavaScript.</p>
 
-The <b>W3C FEWD</b> program is composed of 5 courses:
-</p>
+<p>The <b>W3C FEWD</b> program is composed of 5 courses:</p>
 
 <ol type="1">
   <li>CSS Basics</li>
@@ -117,27 +120,37 @@ The <b>W3C FEWD</b> program is composed of 5 courses:
   <li>JavaScript Introduction</li>
 </ol>
 
-<p>This course is a natural follow up to the <a href="https://www.edx.org/course/css-basics" target="_blank" rel="noopener noreferrer">CSS Basics</a> and <a href="https://www.edx.org/course/html5-and-css-fundamentals" target="_blank" rel="noopener noreferrer">HTML5 & CSS Fundamentals</a> courses.</p>
+<p>This course is a natural follow up to the 
+<a href="https://www.edx.org/course/css-basics" target="_blank" 
+rel="noopener noreferrer">CSS Basics</a> and 
+<a href="https://www.edx.org/course/html5-and-css-fundamentals" target="_blank" 
+rel="noopener noreferrer">HTML5 & CSS Fundamentals</a> courses.</p>
 
 <p>As such, required prerequisites are:</p>
 <ul>
   <li>Be comfortable putting together an HTML document,</li>
   <li>Have minimal familiarity with CSS,</li>
-  <li>Basic knowledge of JavaScript and DOM APis is sufficient, and this course will include a recap of basics. You are also more than welcome to follow the <a href="https://www.edx.org/course/javascript-introduction" target="_blank" rel="noopener noreferrer">JavaScript Introduction</a> course (introductory level).</li>
+  <li>Basic knowledge of JavaScript and DOM APis is sufficient, and this course 
+    will include a recap of basics. You are also more than welcome to follow the 
+    <a href="https://www.edx.org/course/javascript-introduction" target="_blank" 
+    rel="noopener noreferrer">JavaScript Introduction</a> course (introductory level).</li>
 </ul>
 
 <h4>During this course, you will learn:</h4>
 <ul>
-  <li>Learn the simplified HTML5 tags, and how to use microdata,</li>
+  <li>Simplified HTML5 tags, and how to use microdata,</li>
   <li>Play with the audio and video tags,</li>
   <li>Use the Webcam,</li>
   <li>Draw and animate fun Web graphics,</li>
   <li>Discover HTML5 form features,</li>
-  <li>Test the basic APIs, such as Web storage and geolocation,</li>
-  <li>And most of all, practice coding techniques thanks to multiple interactive examples.</li>
+  <li>Test the basic APIs, such as Web storage and geolocation, and</li>
+  <li>Practice coding techniques thanks to multiple interactive examples.</li>
 </ul>
 
-<p>The HTML5 course team is thrilled to guide you in your learning experience. We are committed to teach you how to code Web pages, and how to do it the correct way. We encourage you to create Web pages and apps and share them in the discussion forums. Have fun!</p>
+<p>The HTML5 course team is thrilled to guide you in your learning experience. 
+We are committed to teach you how to code Web pages, and how to do it the correct 
+way. We encourage you to create Web pages and apps and share them in the 
+discussion forums. Have fun!</p>
 
 <h3 id="cha-4">Online Code Editors:</h3>
 
@@ -780,10 +793,9 @@ nav span {
 <h4>A &lt;section&gt; for each month and an &lt;article&gt; for each post in the blog</h4>
 
 <p>Now, we have one big &lt;section&gt; element that contains a set of &lt;article&gt; elements...</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 16. image of sections that contain articles (17) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 16. image of sections that contain articles (17) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image016.webp?raw=true"
    alt="Image of sections that contain articles."
@@ -842,18 +854,17 @@ section h2 {
 <p>Note that the H2, article, article header, etc. will be styled using these rules.</p>
 
 <h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 17. image of header at top of each article (18) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 17. image of header at top of each article (18) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image017.webp?raw=true"
    alt="Image of the header at the top of each article."
    width="55%" />
 &nbsp;
 <br/>
-<p>
-Next, in each article in the section we have a header (to display the article title), paragraphs (article content), and so on.</p>
+<p>Next, in each article in the section we have a header (to display the article title), 
+paragraphs (article content), and so on.</p>
 
 <h4>Example for the first blog article:</h4>
 
@@ -894,21 +905,21 @@ Next, in each article in the section we have a header (to display the article ti
 </details>
 
 <h4>Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside</h4>
-<p>
-Also note the way we included a figure using the new "HTML5" method, using a &lt;figure&gt;..&lt;figure&gt; element that embedded a &lt;img src=...&gt; element together with a &lt;figcaption&gt; element.
-</p>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 18. figure and figcaption (19) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+
+<p>Also note the way we included a figure using the new "HTML5" method, 
+using a &lt;figure&gt;..&lt;figure&gt; element that embedded a &lt;img src=...&gt; 
+element together with a &lt;figcaption&gt; element.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18. figure and figcaption (19) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image018.webp?raw=true"
    alt="Image of figure and figure caption that embed an image."
    width="55%">
 &nbsp;
 <br/>
-<p>
-Here is the CSS for the &lt;figcaption&gt; element we have used in the example (we did not apply any style to the &lt;figure&gt; element):
-</p>
+<p>Here is the CSS for the &lt;figcaption&gt; element we have used in the example (we 
+did not apply any style to the &lt;figure&gt; element):</p>
 
 <h4>HTML code:</h4>
 
@@ -932,11 +943,13 @@ width: 100%
 ```
 
 <h4>Use an &lt;aside&gt; element to display a tag cloud on the ... side of the main content</h4>
-<p>After the long &lt;section&gt; element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, "aside"! This is done using - you already guessed it - an &lt;aside&gt; element:</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 19. image of tag cloud defined as aside element (20) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<p>After the long &lt;section&gt; element that contains all the blog articles 
+displayed in the page, we added the HTML code for the tag cloud that is displayed 
+on the right of the page, "aside"! This is done using - you already guessed it - 
+an &lt;aside&gt; element:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 19. image of tag cloud defined as aside element (20) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image019.webp?raw=true"
    alt="Image of tag cloud defined as aside element."
@@ -966,7 +979,11 @@ width: 100%
 
 </details>
 
-<p>We are not going to show the complete CSS here as it uses some tricks to display the list as a "real tag cloud" that uses JavaScript for handling events, etc. Those who are curious can look at <a href="https://jsbin.com/bucokav/edit?html,output" target="_blank">the code of the online example</a>.</p>
+<p>We are not going to show the complete CSS here as it uses some tricks to 
+display the list as a "real tag cloud" that uses JavaScript for handling events, 
+etc. Those who are curious can look at 
+<a href="https://jsbin.com/bucokav/edit?html,output" target="_blank">the code 
+of the online example</a>.</p>
 
 <h4>Here is the CSS for the &lt;aside&gt; element:</h4>
 
@@ -998,10 +1015,9 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 </p>
 
 <h4>Here is the result:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 20. the aside tag on the right (21) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!----------------------------- 20. the aside tag on the right (21) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image020.webp?raw=true"
    alt="The aside tag cloud on the right."
@@ -1010,16 +1026,17 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 <br/>
 
 <h4>Add a &lt;footer&gt; at the end of the blog</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 21. image of the blog footer (21) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!------------------------------ 21. image of the blog footer (21) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image021.webp?raw=true"
    alt="Image of the blog footer."
    width="25%" />
 </p>
 
-<p>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below) after the tag cloud definition, to display a page footer:</p>
+<p>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below) after the 
+tag cloud definition, to display a page footer:</p>
 
 <details open>
  <summary>Click to expand!</summary>
@@ -1055,10 +1072,9 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 ```
 
 <h4>And here is the result at the bottom of the page:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------- 22. the resulting footer at the bottom of the page (21) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!------------------- 22. the resulting footer at the bottom of the page (21) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image022.webp?raw=true"
    alt="Image of the blog footer."
@@ -1068,24 +1084,25 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 <h4>More on &lt;article&gt; and &lt;section&gt;</h4>
 
 <p>Can an &lt;article&gt; contain a &lt;section&gt;?
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 23. picture of eisher (22) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!---------------------------------- 23. picture of eisher (22) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image023.webp?raw=true"
    alt="Picture of eisher."
    width="25%" />
 </p>
-<p>It may not be clear whether a &lt;section&gt; may contain one or several &lt;article&gt; elements or if an &lt;article&gt; may contain one or several &lt;section&gt; elements.</p>
-
-<p>The &lt;article&gt; element was designed for stand-alone parts of a document that could eventually be syndicated in RSS streams.</p>
-
+<p>It may not be clear whether a &lt;section&gt; may contain one or several 
+&lt;article&gt; elements or if an &lt;article&gt; may contain one or several 
+&lt;section&gt; elements.</p>
+<p>The &lt;article&gt; element was designed for stand-alone parts of a document 
+that could eventually be syndicated in RSS streams.</p>
 <p>&lt;section&gt; elements are used to cut a logical part into subparts.</p>
 
 <h4>An &lt;article&gt; may be cut into different &lt;section&gt; elements!</h4>
-<p>
-Example of a blog post defined as a long &lt;article&gt;, that is in turn cut into smaller &lt;section&gt; elements:</p>
+
+<p>Example of a blog post defined as a long &lt;article&gt;, that is in turn 
+cut into smaller &lt;section&gt; elements:</p>
 
 <details open>
  <summary>Click to expand!</summary>
@@ -1106,16 +1123,18 @@ Example of a blog post defined as a long &lt;article&gt;, that is in turn cut i
 
 </details>
 
-<p>
-The blog example from the previous part of the course, on the other hand, uses a single &lt;section&gt; that contains several &lt;article&gt; elements.
+<p>The blog example from the previous part of the course, on the other hand, uses a 
+single &lt;section&gt; that contains several &lt;article&gt; elements.</p>
 
-Indeed, we can also have a &lt;section&gt; that regroups all blog posts per month, each one being an &lt;article&gt; element.
+<p>Indeed, we can also have a &lt;section&gt; that regroups all blog posts per month, 
+each one being an &lt;article&gt; element.</p>
 
-A &lt;section&gt; may be cut into different &lt;article&gt; elements, too!
+<p>A &lt;section&gt; may be cut into different &lt;article&gt; elements, too!</p>
 
-Can you put a &lt;nav&gt; in an &lt;article&gt;?
+<p>Can you put a &lt;nav&gt; in an &lt;article&gt;?</p>
 
-Yes you can, in case you would like to propose some navigation links with each blog post, for example:</p>
+<p>Yes you can, in case you would like to propose some navigation links with each 
+blog post, for example:</p>
 
 <details open>
  <summary>Click to expand!</summary>
@@ -1143,27 +1162,36 @@ Yes you can, in case you would like to propose some navigation links with each b
 
 </details>
 
-<p>
-In that case, the &lt;nav&gt; element proposes navigation links to the next or previous blog post, as well as a link to contact the author of the blog post.
+<p>In that case, the &lt;nav&gt; element proposes navigation links to the next or 
+previous blog post, as well as a link to contact the author of the blog post.</p>
 
-Also note that we used in that example a &lt;footer&gt; element in the blog post.</p>
+<p>Also note that we used in that example a &lt;footer&gt; element in the blog post.</p>
 
 <h4>What about the &lt;div&gt; element? Is it still useful?</h4>
-<p>
-The new elements have been primarily designed to better structure the code of HTML pages such as those generated by blog or CMS software, however do not forget that they add new semantics and will be taken into account by:</p>
+<p>The new elements have been primarily designed to better structure the code of HTML pages 
+such as those generated by blog or CMS software, however do not forget that they add new 
+semantics and will be taken into account by:</p>
+
 <ul>
-  <li>Browsers natively or browsers extensions, i.e. for automatically generating a table of contents, an outline view of the document, for applying default CSS rules to these elements, etc. See for example the <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx extension</a> (Chrome extension). More on that in the next section of the course.</li><br/>
+  <li>Browsers natively or browsers extensions, i.e. for automatically generating a 
+    table of contents, an outline view of the document, for applying default CSS rules 
+	to these elements, etc. See for example the 
+	<a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">
+	table-of-contents-crx extension</a> (Chrome extension). More on that in the next 
+	section of the course.</li><br/>
   <li><a href="https://www.w3.org/WAI/perspective-videos/speech/">Text to speech:</a></li><br/>
   <li>Web crawlers, etc.</li><br/>
 </ul>
 <p>
-You can use &lt;div&gt; elements in all cases where the proposed structural elements do not fit your needs: for defining some content that should be styled, for example.
+You can use &lt;div&gt; elements in all cases where the proposed structural 
+elements do not fit your needs: for defining some content that should be styled, for example.
 
-This chart from the <a href="https://html5doctor.com/">HTML5 Doctor Web site&lt;/a&gt; may help you decide whether or not to use a &lt;div&gt;:</p>
+This chart from the <a href="https://html5doctor.com/">HTML5 Doctor Web 
+site&lt;/a&gt; may help you decide whether or not to use a &lt;div&gt;:</p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------- 24. html5 doctor web site. whether or not to use a <dev> (24) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image024.webp?raw=true"
   width="100%"
@@ -1194,10 +1222,9 @@ Since the very beginning, HTML has had heading elements: &lt;h1&gt;...&lt;h6&gt
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define <i>an outline of the document</i>. To illustrate this, we have used a browser extension. 
 
 Here is the result for the previous example:</p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------ 25. outliner in action from the previous example (25) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image025.webp?raw=true"
    width="65%"
@@ -1272,10 +1299,9 @@ Let's clarify this by looking at some example code:</p>
 </details>
 
 <h4>The corresponding outline is:</h4>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------------- 26. Heading example (26) ------------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image026.webp?raw=true"
    alt="Heading content example."
@@ -1337,10 +1363,9 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 <b>UPDATE :</b> For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">Outline sidebar for Firefox</a>.</p>
 
 <h4>The outline of the last example looks like this:</h4>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 27. outline of previous example (27) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image027.webp?raw=true"
    alt="Outline of last example."
@@ -1397,9 +1422,9 @@ You can use heading elements &lt;h1&gt;...&lt;h6&gt; in a &lt;header&gt; but
 ```
 
 <p>Here is the resulting table of contents, notice the two subsections that appear, one for the H1, one for the H2:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 28. outline of previous example (28) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image028.webp?raw=true"
    alt="Outline of previous example."
@@ -1476,10 +1501,9 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 </details>
 
 <p>Both of the examples above are semantically identical and produce the same outline:</p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 29. outline of previous example (29) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image029.webp?raw=true"
    alt="Outline of previous example."
@@ -1488,12 +1512,13 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 <br/>
 
 <h3>1.2.4 The HTML5 Logo</h3>
-<p>
-Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-html5-logo/">unveiled on 18 January 2011</a>, so way before HTML5 became a Web standard. This logo represents HTML5, the cornerstone for modern Web applications.
-</p>
-<!------------------------------------------------------------------------------------------------>
+
+<p>Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-html5-logo/">
+unveiled on 18 January 2011</a>, so way before HTML5 became a Web standard. This logo represents 
+HTML5, the cornerstone for modern Web applications.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------------ 30. html5 logo (30) --------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image030.webp?raw=true"
    alt="HTML5 logo"
@@ -1634,9 +1659,9 @@ If you look at the "minimal document" example, or at other examples in this cour
 
 <h4>New structural elements</h4>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------- 13. some of the new structural elements introducted by html5 (33) ---------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image013.webp?raw=true"
    alt="Some of the new structural elements introduced by HTML5: section, article, etc."
@@ -1705,9 +1730,9 @@ Read also at the end of this section about the new &lt;main&gt; element .  Th
 </p>
 <h4>Use a &lt;header&gt; at the top of the blog</h4>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------- 14. image of the header element at the top of the blog (35) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image014.webp?raw=true"
    alt="image of the header element at the top of the blog"
@@ -1748,9 +1773,9 @@ header span {
 
 <h4>Use a &lt;nav&gt; for the navigation menu just below the header</h4>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------- 15. image of the navigation menu (36) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image015.webp?raw=true"
    alt="Image of the navigation menu."
@@ -1823,9 +1848,9 @@ nav span {
 <p>
 Now, we have one big &lt;section&gt; element that contains a set of &lt;article&gt; elements...</p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------- 16. image of sections that contain articles (37) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image016.webp?raw=true"
    alt="Image of sections that contain articles."
@@ -1936,9 +1961,9 @@ Example for the first blog article:
 <p>
 Also note the way we included a figure using the new "HTML5" method, using a &lt;figure&gt;..&lt;figure&gt; element that embedded a &lt;img src=...&gt; element together with a &lt;figcaption&gt; element.</p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------- 18. image of figure and figcaption that embed an img (38) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image018.webp?raw=true"
    alt="image of figure and figcaption that embed an img."
@@ -19626,9 +19651,9 @@ These generic functions can be used in many different projects
 
 Indeed, if you look carefully, you will see that these functions are really useful. You may easily embed them in your own projects, or perhaps adapt them for a particular need (i.e. for saving input type="checkboxes" that work a bit differently), etc.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2-6">6.2.6 Size limitations, etc.</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Few things to remember, from the Web storage specification:
 
@@ -19658,9 +19683,9 @@ Note that if all you need is to store session-based data in a manner that is mor
 
 <b>By using sessionStorage, the data you store will be scoped and therefore not leak across tabs!</b>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2-7">6.2.7 Storing more than strings? Use JSON!</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Storing strings is all well and good, but it quickly becomes limiting: you may want to store more complex data with at least a modicum of structure.
 
@@ -19677,9 +19702,9 @@ localStorage.setItem(key, JSON.stringify(object));
 
 Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,console,output">online at JSBin</a>).  The example below saves a JavaScript object in JSON, then restores it and checks that the object properties are still there!
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 304. json save/load in local storage (367) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image304.webp?raw=true"
   width="65%"
@@ -19731,9 +19756,9 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 
 <a href="https://jsbin.com/nejewiw/2/edit?html,js,console,output">Online example on JSBin that saves in localStorage an array of contacts in JSON</a>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------- 305. save local storage in json (368) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image305.webp?raw=true"
   style="width:65%"
@@ -19747,9 +19772,9 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 
 Add contacts using the form, see how the HTML table is updated. Try to reload the page: data are persisted in localStorage. 
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 306. serverless contact manager (369) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image306.webp?raw=true"
   style="width:65%"
@@ -19758,9 +19783,9 @@ Add contacts using the form, see how the HTML table is updated. Try to reload th
 </p>
 
 Examine the localStorage:
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------- 307. localstorage view in devtools shows the data (369) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image307.webp?raw=true"
   style="width:65%"
@@ -19775,13 +19800,13 @@ Well structured pages with the new elements seen during Module 1 (section, artic
 HTML5 form elements with builtin and custom validation (the date cannot be in the past, the firstName and lastName fields do not accept &, #, ! or $ characters), localStorage for saving / restoring an array of contacts in JSON.
 
 It shows how to use the DOM API for dynamically updating the page content (build the HTML table from the array of contacts, add a new line when a new contact is submitted, etc.)
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-1">6.3.1 Introduction</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The objective of this chapter is to provide an overview of the File API.
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 308. sound sample editor serverless (370) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image308.webp?raw=true"
   style="width:45%"
@@ -19794,18 +19819,18 @@ Before HTML5, file management was limited to multipart forms and to Ajax for sen
 Possible actions were limited, both for the developer and the user. However, HTML5 now comes with an API called "File" that holds features for accessing file metadata (name, size, type) from client-side JavaScript. The API also has methods for reading file contents directly in the browser. This is particularly interesting for displaying preview of images before uploading them, or - and this is much more interesting - for developing Web applications that work with local files without the need for a server.
 
 Imagine a multimedia player that accesses (in read-only) your file system, reads your audio and video files, etc., such as the [Remo Music player](https://chrome.google.com/webstore/detail/remo-music-player/ajilpdcmebalpffmjjopcingplogifhb) below, or an application that edits the audio content of local mp3 files, for example, the [HYA-WAVE sound editor](https://wav.hya.io/#/fx) (screenshot above).
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------- 309. audio player that plays local files (370) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image309.webp?raw=true"
   style="width:45%"
   alt="Audio player that plays local files." />
 &nbsp;
 </p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------- 310. polarr photo editor uses the File API (371) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image310.webp?raw=true"
   style="width:45%"
@@ -19821,9 +19846,9 @@ Imagine a multimedia player that accesses (in read-only) your file system, reads
 
 -   MDN's Web Docs: [Using files from web applications](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications)
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-2">6.3.2 Working with local files</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! Welcome for this second video of module 6, in which we will talk about the file Javascript API.
 
 This is an API that has been designed for working with files on the client side in Javascript.
@@ -19934,9 +19959,9 @@ I installed one that is called Polarr that is using HTML for all the functionali
 Then you can select filters, you can do some corrections on it and so on, and finally you can export it and that's all.
 
 All this here is HTML5, this is canvas, these are form elements we saw the last week, some canvas here, or image elements and so on.
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------------- 311. image previews (374) ------------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image311.webp?raw=true"
   style="width:65%"
@@ -19981,19 +20006,25 @@ All this here is HTML5, this is canvas, these are form elements we saw the last 
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-3">6.3.3 Reading File Metadata</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Imagine you have an input field like this:
 
 1.  Select one or more files: &lt;input type="file" id="input"/&gt;
 
-This renders as a "select files" or "browse files" button. If you select one file in the file chooser dialog that has popped up, before HTML5 you couldn't do anything with it in the client-side: no access from JavaScript. With the File API, you can read what we call "file metadata": name, size, type and last modification date.
+This renders as a "select files" or "browse files" button. If you select one 
+file in the file chooser dialog that has popped up, before HTML5 you couldn't 
+do anything with it in the client-side: no access from JavaScript. With the 
+File API, you can read what we call "file metadata": name, size, type and 
+last modification date.
 
-Look at the code below: the file API defines a files property on the DOM node corresponding to the &lt;input type="file".../&gt; input field. This property is an array.
+<p>Look at the code below: the file API defines a files property on the DOM 
+node corresponding to the &lt;input type="file".../&gt; input field. This 
+property is an array.</p>
 
-In the example below, we get in the selectedFile variable, the metadata related to the first selected file:
+<p>In the example below, we get in the selectedFile variable, the metadata 
+related to the first selected file:</p>
 
 ```
 var selectedFile = document.getElementById('input').files[0];
@@ -20006,7 +20037,10 @@ var selectedFile = document.getElementById('input').files[0];
 
 <h4>Example #1: read metadata of the first selected file</h4>
 
-[Here is a complete example on JSBin](https://jsbin.com/terocu/edit?html,output) that uses the code above to get details about the first selected file. Please try it below on your browser (click on the button and choose one file):
+<a href="https://jsbin.com/terocu/edit?html,output">Here is a complete 
+example on JSBin</a> that uses the code above to get details about the 
+first selected file.  Please try it below on your browser (click on the 
+button and choose one file):
 
 <h4>Select one or more files:</h4>
 
@@ -20077,17 +20111,17 @@ var selectedFile = document.getElementById('input').files[0];
 2. <div id="result">...</div>
 3. <script>
 4.   function filesProcess(files) {
-5.       var selection = "<table><tr><th>Name</th><th>Bytes</th><th>MIME Type</th>
-6.                        <th>Last modified date</th></tr>";
+5.     var selection = "<table><tr><th>Name</th><th>Bytes</th><th>MIME Type</th>
+6.                                 <th>Last modified date</th></tr>";
 7.       for(i=0; i<files.length ;i++){
-8.           file = files[i];
-9.           selection += "<tr><td>"+file.name+"</td><td style="text-align:right">"
-10.                     +file.size+"</td><td>"
-11.                     +file.type+"</td><td> "+file.lastModifiedDate+"</td></tr>";
+8.         file = files[i];
+9.         selection += "<tr><td>"+file.name+"</td><td style="text-align:right">"
+10.                  +file.size+"</td><td>"
+11.                  +file.type+"</td><td> "+file.lastModifiedDate+"</td></tr>";
 12.       }
 13.       selection += "</table>";
 14.       document.getElementById("result").innerHTML = selection;
-15.   }
+15.  }
 16. </script>
 ```
 
@@ -20101,21 +20135,27 @@ var selectedFile = document.getElementById('input').files[0];
   <li><i>Line 10:</i> this for loop builds all the rows that compose the table, adding HTML code to the selection string variable. At the end of the loop, this variable contains all the HTML code that corresponds to the table of results.</li><br/>
   <li><i>Line 14:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the &lt;div id="result"&gt; in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically.</li><br/>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-4">6.3.4 Blob and File</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The <a href="https://www.w3.org/TR/FileAPI/">HTML5 File API specification</a> introduces several interfaces:
 <ul>
-  <li>the <a href="https://www.w3.org/TR/FileAPI/#filelist-section">FileList</a> interface (we already met it) the files property is a FileList,</li>
-  <li>the <a href="https://www.w3.org/TR/FileAPI/#file-section">File</a> interface that is useful for getting details about a file (the file variable in the for loop of the last example illustrates this),</li>
-  <li>the <a href="https://www.w3.org/TR/FileAPI/#blob-section">Blob</a> interface helps read binary data (only) that is accessed slice by slice (as chunks of data, each one being a "Blob"),</li>
-  <li>and the <a href="https://www.w3.org/TR/FileAPI/#APIASynch">FileReader</a> interface for reading file content (we will see how to use it in the next section of the course).</li>
+  <li>the <a href="https://www.w3.org/TR/FileAPI/#filelist-section">FileList</a> interface 
+    (we already met it) the files property is a FileList,</li>
+  <li>the <a href="https://www.w3.org/TR/FileAPI/#file-section">File</a> interface that is 
+    useful for getting details about a file (the file variable in the for loop of the last 
+	example illustrates this),</li>
+  <li>the <a href="https://www.w3.org/TR/FileAPI/#blob-section">Blob</a> interface helps 
+    read binary data (only) that is accessed slice by slice (as chunks of data, each one 
+	being a "Blob"),</li>
+  <li>and the <a href="https://www.w3.org/TR/FileAPI/#APIASynch">FileReader</a> interface 
+  for reading file content (we will see how to use it in the next section of the course).</li>
 </ul>
 
 <p>We will not use all of these interfaces, but let's explain the difference between Blob and File, as most of the methods exposed by the FileReader interface take indiscriminately a Blob or a File as parameter.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 312. the blob movie poster (377) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image312.webp?raw=true"
   style="width:25%"
@@ -20189,9 +20229,9 @@ function readFileContent(f) {
 <p>Try a variation of the above code in your browser, that displays the file content in a text area. This example is detailed further in the course. Click and select a text file below:</p>
 
 <p>Choose a text file:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 313. select a text file (379) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image313.webp?raw=true"
   style="width:45%"
@@ -20200,10 +20240,9 @@ function readFileContent(f) {
 </p>
 
 <p>In the following pages, we look at different examples that read file contents as text, dataURL and binary.</p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-6">6.3.6 Read file content as text</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let's start by reading a pure text file:</p>
 
 <h4>Examples:</h4>
@@ -20211,9 +20250,9 @@ function readFileContent(f) {
 <h4>Example #1: read a single file's content</h4>
 
 <p><a href="https://jsbin.com/xewemi/edit?html,output">Example at JSBin</a>, or try it below in your browser:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 314. read single files content (379) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image314.webp?raw=true"
   style="width:45%"
@@ -20270,9 +20309,9 @@ function readFileContent(f) {
 
 <p><a href="https://jsbin.com/zaheyu/edit?html,output">Example on JSBin</a>, or try it below in your browser.
 This time, please select multiple text files (using shift for multiple selection):</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------- 315. choose multiple text files (380) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image315.webp?raw=true"
   style="width:40%"
@@ -20303,27 +20342,27 @@ This time, please select multiple text files (using shift for multiple selection
 15. var filesContent = document.getElementById("filesContent");
 16. 
 17. function readFilesAndDisplayAsText(files) {
-18.      console.log("dans read files");
-19.      // Loop through the FileList
-20.      for (var i = 0, f; f = files[i]; i++) {
+18.   console.log("dans read files");
+19.     // Loop through the FileList
+20.     for (var i = 0, f; f = files[i]; i++) {
 21. 
-22.          var reader = new FileReader();
+22.       var reader = new FileReader();
 23. 
-24.          // Add an onload listener to the reader
-25.          addOnLoadListener(reader, f.name);
-26.          // start reading, will call the listener later, when the file f is read
-27.          reader.readAsText(f);
+24.       // Add an onload listener to the reader
+25.       addOnLoadListener(reader, f.name);
+26.       // start reading, will call the listener later, when the file f is read
+27.       reader.readAsText(f);
 28. 
-29.      }
+29.     }
 30. }
 31. 
 32. function addOnLoadListener(reader, name) {
-33.      // Add an onload listener that will be able to print the name of the
-34.      // file...
-35.      reader.onload = function(e) {
-36.          filesContent.value += "###### READING FILE " + name + " ######";
-37.          filesContent.value += e.target.result;
-38.      };
+33.   // Add an onload listener that will be able to print the name of the
+34.   // file...
+35.   reader.onload = function(e) {
+36.     filesContent.value += "###### READING FILE " + name + " ######";
+37.     filesContent.value += e.target.result;
+38.   };
 39. }
 40. </script>
 41. </body>
@@ -20334,11 +20373,18 @@ This time, please select multiple text files (using shift for multiple selection
 
 <h4>Explanations</h4>
 
-<p>This example is similar to the previous one, except that this time we read multiple files.</p>
+<p>This example is similar to the previous one, except that this 
+time we read multiple files.</p>
 
-<p><i>Line 20:</i> this is the for loop that will iterate on the files object passed as parameter by the onchange listener declaration at <i>line 10.</i></p>
+<p><i>Line 20:</i> this is the for loop that will iterate on the files 
+object passed as parameter by the onchange listener declaration at 
+<i>line 10.</i></p>
 
-<p><i>Line 25:</i> instead of declaring the onload listener with a reader.onload =... directly in the loop, this time we preferred to write a separate function that will do this. This technique is useful when you want the listener to work with extra variables computed in the loop (in our case, the name of the file).</p>
+<p><i>Line 25:</i> instead of declaring the onload listener with a 
+reader.onload =... directly in the loop, this time we preferred to 
+write a separate function that will do this. This technique is useful 
+when you want the listener to work with extra variables computed in 
+the loop (in our case, the name of the file).</p>
 
 <h4>About charter encoding</h4>
 
@@ -20350,21 +20396,33 @@ reader.readAsText(file, 'ISO-8859-1');
 ...
 ```
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-7">6.3.7 Read file content as binary</h3>
-<!------------------------------------------------------------------------------------------------>
-<p>This method is rarely used, except for loading "raw" binary data. For images you would like to see in your HTML page using the &lt;img src= tag&gt; or for drawing in a canvas, or for audio and video files that you would like to play using the &lt;audio&gt; or &lt;video&gt; elements, it would be preferable to use the readAsDataURL method presented on the next page of the course.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This method is rarely used, except for loading "raw" binary data. For images 
+you would like to see in your HTML page using the &lt;img src= tag&gt; or for 
+drawing in a canvas, or for audio and video files that you would like to play 
+using the &lt;audio&gt; or &lt;video&gt; elements, it would be preferable to 
+use the readAsDataURL method presented on the next page of the course.</p>
 
-<p>readAsArrayBuffer is often used for purposes such as reading audio samples that should be loaded in memory and played using the WebAudio API, or for loading textures that you will use with WebGL for 3D animations.</p>
+<p>readAsArrayBuffer is often used for purposes such as reading audio samples that 
+should be loaded in memory and played using the WebAudio API, or for loading 
+textures that you will use with WebGL for 3D animations.</p>
 
 <h4>Example: read a local audio file and play it with the WebAudio API</h4>
 
-<p>The WebAudio API is useful for reading audio sound samples from memory (no streaming), and has been designed for music application and games. This example shows how a local audio file can be read and played directly in the browser, without the need for a server!</p>
+<p>The WebAudio API is useful for reading audio sound samples from memory 
+(no streaming), and has been designed for music application and games. 
+This example shows how a local audio file can be read and played directly 
+in the browser, without the need for a server!</p>
 
-<p><a href="https://jsbin.com/xepexuy/1/edit?html,output">Example on JSBin</a> (does not work on IE, as it does not support the WebAudio API). We could not embed it here on the edX platform as it prevents code that uses Ajax to run in its pages.</p>
-<!------------------------------------------------------------------------------------------------>
+<p><a href="https://jsbin.com/xepexuy/1/edit?html,output">Example on JSBin</a> 
+(does not work on IE, as it does not support the WebAudio API). We could not 
+embed it here on the edX platform as it prevents code that uses Ajax to run 
+in its pages.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------- 316. webaudio api - does not work with microsoft shit (382) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image316.webp?raw=true"
   style="width:55%"
@@ -20399,9 +20457,9 @@ reader.readAsText(file, 'ISO-8859-1');
   <li><i>Line 11:</i> when a user chooses a file, the listener will be executed. Line 11 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.</li>
   <li><i>Line 7:</i> is the onload callback, executed when the file content is loaded in memory. We pass the file content to the initSound function (see JSBin example for complete source code) that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio works only with uncompressed audio formats in memory), and to play it.</li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-8">6.3.8 Read file content as dataURL</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>What is a data URL?</h4>
 
 <p>A data URL is a URL that includes type and content at the same time. It is useful, for example,  for in-lining images or videos in the HTML of a Web page (on mobile devices, this may speed up the loading of the page by reducing the number of HTTP requests).</p>
@@ -20411,9 +20469,9 @@ reader.readAsText(file, 'ISO-8859-1');
 <p>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==</p>
 
 <h4>This data URL in a browser address bar should look like this:</h4>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------- 317. data url in address bar shows a red cirle (383) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image317.webp?raw=true"
   style="width:85%"
@@ -20433,9 +20491,9 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 ```
 
 <h4>And here is the result:</h4>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------------- 318. red splotch (383) ------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image318.webp?raw=true"
   style="width:15%"
@@ -20446,10 +20504,10 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 <p>This dataURL format enables file content to be stored in a base64 format (as a string), and adds the MIME type specification of the content. The dataURL can therefore store a file as a URL readable with modern browsers. It is becoming more commonly used on the Web, especially for mobile applications, as inlining images reduces the number of HTTP requests and makes the Web page load faster.</p>
 
 <p>You will find lots of Web sites and tools for generating dataURL from files, such as <a href="https://ezgif.com/image-to-datauri">Image to Data URI converter</a> (screenshot below):</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------ 319. Online service that converts uploaded images to data uris... ----------------->
 <!-------------- we see an image and its ascii encoded data uri version (384) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image319.webp?raw=true"
   style="width:55%"
@@ -20461,9 +20519,9 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 <p>Notice that you can encode any type of file as dataURL, but this format is most frequently used with ./images files (images, audio, video).</p>
 
 <p>Example of HTML5 logo embedded in a document without any real image, just a dataURL and CSS:</p>
-<!------------------------------------------------------------------------------------------------>
-<!-- 320. screenshot of jsbin examle shows the html5 logo insterted before a div using css (385) ->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~ 317. screenshot of jsbin ex. shows the html5 logo insterted before a div using css (385) ~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image317.webp?raw=true"
   style="width:65%"
@@ -20478,9 +20536,9 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 <p>This first example is useful for forms that allow the user to select one or more pictures. Before sending the form, you might want to get a preview of the pictures in the HTML page. The reader.readAsDataUrl method is used for that.</p>
 
 <p><a href="https://jsbin.com/laseye/edit?html,output">Example on JSBin</a> or try it below in your browser:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------- 332. preview of selected images (385) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image332.webp?raw=true"
   style="width:45%"
@@ -20544,9 +20602,9 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 <h4>Example #2: read a single local image file and use it with drawImage in a canvas</h4>
 
 <a href="https://jsbin.com/miciqu/edit?html,output">Try it on JSBin</a>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 322. example 2 kitty cat (386) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image322.webp?raw=true"
   style="width:55%"
@@ -20607,9 +20665,9 @@ function readFileAndDraw(files) {
 <h4>Introduction</h4>
 
 <p>This chapter presents the new Geolocation API and illustrates its use with several examples.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 323. w3c geolocation logo (388) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image323.webp?raw=true"
   style="width:25%"
@@ -20685,10 +20743,9 @@ function onError(err) {
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 324. function getLocation in geolocation (389) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 324. function getLocation in geolocation (389) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image324.webp?raw=true"
   style="width:55%"
@@ -20715,13 +20772,13 @@ function onError(err) {
 
     -   on MDN: [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API#Browser_compatibility)
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-2">6.4.2 The coords object properties</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In the previous example, we used the coords property of the position passed as an input parameter to the callback function. This coords object has many properties:</p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 325. properties of the coords object (390) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 325. properties of the coords object (390) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image325.webp?raw=true"
   style="width:85%"
@@ -20729,15 +20786,15 @@ function onError(err) {
 </p>
 
 <p>Not all these values may be available in all Web browsers. When one of these properties is null, it means that it is not available (often the case of the altitudeAccuracy)</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-3">6.4.3 Geolocation error codes</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In the last example, we used the navigator.geolocation. getCurrentPosition(showPosition) with only one callback function (in the case of success), but it is also possible to pass a second parameter that is another callback function called in the case of error.</p>
 
 <p>A slightly different version of the previous example <a href="https://jsbin.com/bafusik/edit?html,output">shows how to properly check against the different possible errors</a>. Try it, then turn your WiFi off or unplug your Ethernet cable (or turn off GPS and 3G/4G on a mobile phone). You should see an error message Error during geolocation: Location could not be obtained though the available means":</p>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 326. geolocation error (390) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 326. geolocation error (390) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image326.webp?raw=true"
   style="width:85%"
@@ -20796,17 +20853,19 @@ function onError(err) {
 ```
 
 </details>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-4">6.4.4 Tracking a position</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In order to track the current position, the geolocation API provides a method similar to the 
+getCurrentPosition(onSuccess, onError) named watchPosition(onSuccess, onError).</p>
 
-In order to track the current position, the geolocation API provides a method similar to the getCurrentPosition(onSuccess, onError) named watchPosition(onSuccess, onError). 
+<p>When getCurrentPosition gives a position when called, watchPosition does the following:</p>
 
-When getCurrentPosition gives a position when called, watchPosition does the following:
-
--   It gets the callback function only when the current position changes. If you stay in the same location, the callback function won't be called regularly.
-
--   It returns an id so that you can use the clearWatch(id) method to stop the current tracking.
+<ul>
+  <li><p>It gets the callback function only when the current position changes. If you stay in 
+    the same location, the callback function won't be called regularly.</p></li>
+  <li><p>It returns an id so that you can use the clearWatch(id) method to stop the current tracking.</p></li>
+</ul>
 
 <h3>Typical use</h3>
 
@@ -20818,14 +20877,18 @@ var watchPosId = navigator.geolocation.watchPosition(showPosition);
 navigator.geolocation.clearWatch(watchPosId);
 ```
 
-<p>As a test, you may just try to change getCurrentPosition to watchPosition in the previous examples, and try this code using a mobile phone or tablet, walk for 20 meters and see the position changing.</p>
+<p>As a test, you may just try to change getCurrentPosition to watchPosition 
+in the previous examples, and try this code using a mobile phone or tablet, 
+walk for 20 meters and see the position changing.</p>
 
 <h4>Options available when using the geolocation API, in particular real time tracking</h4>
 
-<p>Several options are available when using HTML5 geolocation. We can pass a third parameter to the getCurrentPosition and watchPosition methods, that will hold one or several of the following options:</p>
-<!------------------------------------------------------------------------------------------------>
+<p>Several options are available when using HTML5 geolocation. We can pass a third parameter 
+to the getCurrentPosition and watchPosition methods, that will hold one or several of the 
+following options:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------- 327. more properties of the coords object (392) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image327.webp?raw=true"
   style="width:85%"
@@ -20862,16 +20925,16 @@ watchId=navigator.geolocation.watchPosition(onSuccess, onError,
 </details>
 
 <p>Look for the explanations in the lines of comment.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-5">6.4.5 Geolocation and maps</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This section presents an example of how to get an interactive map, using <a href="https://leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMap</a>, and gives links to more resources. Did you know that you can even get an estimation of a physical address from the longitude and latitude, using online Web services?
 
 How to get a map centered on your longitude and latitude.
 </p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 328. openstreetmap test (393) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image328.webp?raw=true"
   style="width:85%"
@@ -20879,9 +20942,9 @@ How to get a map centered on your longitude and latitude.
 </p>
 
 <p>This example is just given "as is", as there are so many possibilities for rendering a map with <a href="/leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a basic example might be useful.</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 329. openstreetmap test (393) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image329.webp?raw=true"
   style="width:50%"
@@ -21370,9 +21433,15 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 
 <h4>Example #4: use of geolocation, map and reverse geocoder in a HTML form</h4>
 
-<p>This is just a variation of the previous examples. We embedded the interactive map in a form, and we display the results of the reverse geocoder in a form field. This example might be useful if you want to pre-fill the address of a registration form, depending on the current location of the person who is registering.
+<p>This is just a variation of the previous examples. We embedded the 
+interactive map in a form, and we display the results of the reverse 
+geocoder in a form field. This example might be useful if you want to 
+pre-fill the address of a registration form, depending on the current 
+location of the person who is registering.</p>
 
-Click on the Codepen logo (on the top right) so to run the <a href="https://codepen.io/w3devcampus/pen/MWKEJqM">online example</a> (for security reasons the embedded version cannot run in this page):</p>
+<p>Click on the Codepen logo (on the top right) so to run the 
+<a href="https://codepen.io/w3devcampus/pen/MWKEJqM">online example</a> 
+(for security reasons the embedded version cannot run in this page):</p>
 
 <h4>HTML</h4>
 
@@ -21470,12 +21539,21 @@ function getPhysicalAddress(latlong) {
 
 <h4>Optional projects</h4>
 
-Here are a few project ideas. Your classmates and the team who prepared the course will be glad to try them and offer feedback. Please post URLs in this discussion forum. These projects are optional, meaning that they won't be graded. However, it is important to complete them to ensure good understanding of the material.
+Here are a few project ideas. Your classmates and the team who prepared 
+the course will be glad to try them and offer feedback. Please post URLs 
+in this discussion forum. These projects are optional, meaning that they 
+won't be graded. However, it is important to complete them to ensure good 
+understanding of the material.
 <ul>
-<li>Project 1 (easy): Add a map showing your location to one of your Web pages. Start with a simple, static map, then try with an interactive map. Reuse the examples from the course.</li>
-<li>Project 2 (a bit harder): The examples provided in the course used OpenStreetMap, but why don't you try to do the same with GoogleMaps? Some services are free of charge, but will ask you to get an API key (see this YouTube tutorial about how to get such a key).</li>
+<li>Project 1 (easy): Add a map showing your location to one of your Web 
+pages. Start with a simple, static map, then try with an interactive map. 
+Reuse the examples from the course.</li>
+<li>Project 2 (a bit harder): The examples provided in the course used 
+OpenStreetMap, but why don't you try to do the same with GoogleMaps? 
+Some services are free of charge, but will ask you to get an API key (see 
+this YouTube tutorial about how to get such a key).</li>
 </ul>
 
 . . .The end.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ end readme.md of W3Cx-3of5-HTML5.1x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--- last updated 7-1-2023-11:35pm --->
+<!--- last updated 7-30-2023-4:15pm --->
