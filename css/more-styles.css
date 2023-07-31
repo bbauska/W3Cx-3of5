@@ -22,7 +22,7 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
   }
 
   pre, code {
-    font-family: monospace, monospace;
+    font-family: Consolas, monospace, monospace;
     font-size: 10px;
     margin-left: 10px;
   }
@@ -92,7 +92,7 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
   }
 
 details {
-  font: 11px Inter, sans-serif, Bahnschrift, Calibri;
+  font: 13px Inter, sans-serif, Bahnschrift, Calibri;
   width: 65%;
 }
 
