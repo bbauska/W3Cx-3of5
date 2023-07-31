@@ -8,9 +8,10 @@
   <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico"/>
 
   <!-- viewport and seo -->
+  <meta name="title" content="W3Cx-3of5-HTML5.1x"/>
   <meta name="description" content="HTML5.1x - Coding Essentials &amp; Best Practices - during this course, you will learn: Simplified HTML5 tags, and how to use microdata; Play with audio and video tags; Use the Webcam; Draw and animate Web graphics; Discover HTML5 form features; Test basic APIs; Practice codiing techniques.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name=”robots” content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  <meta name=”robots” content="index, follow"/>
 
   <title>W3Cx-3of5-HTML5.1x</title>
   <link rel="canonical" href="https://w3cx-3of5.bauska.org">
@@ -19733,9 +19734,9 @@ case of the altitudeAccuracy)</p>
 getCurrentPosition(showPosition) with only one callback function (in the
 case of success), but it is also possible to pass a second parameter
 that is another callback function called in the case of error.</p>
-<p>A slightly different version of the previous
-example <a href="https://jsbin.com/bafusik/edit?html,output" target="_blank" rel="noopener noreferrer">
-  shows how to properly check against the different possible errors</a>. Try it,
+<p>A slightly different version of the previous example 
+<a href="https://jsbin.com/bafusik/edit?html,output" target="_blank" rel="noopener noreferrer">
+shows how to properly check against the different possible errors</a>. Try it,
 then turn your WiFi off or unplug your Ethernet cable (or turn off
 GPS and 3G/4G on a mobile phone). You should see an error message Error
 during geolocation: Location could not be obtained though the available
@@ -19753,49 +19754,49 @@ means”:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-  &lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Basic example of use of the geolocation API&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
-    &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
-    &lt;script&gt;
-      var displayCoords=document.getElementById(&quot;msg&quot;);
-      function getLocation() {
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
-        } else {
-          displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
-        }
-      }
-      function showPosition(position) {
-        displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
-                                &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
-      }
-      function errorPosition(error) {
-        var info = &quot;Error during geolocation: &quot;;
-        switch(error.code) {
-          case error.TIMEOUT:
-            info += &quot;Timeout !&quot;;
-            break;
-          case error.PERMISSION_DENIED:
-            info += &quot;Permission denied, geolocation could not be obtained...&quot;;
-            break;
-          case error.POSITION_UNAVAILABLE:
-            info += &quot;Location could not be obtained though the available means...&quot;;
-            break;
-          case error.UNKNOWN_ERROR:
-            info += &quot;Unknown error&quot;;
-            break;
-          }
-        displayCoords.innerHTML = info;
-      }
-    &lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2.   &lt;html lang=&quot;en&quot;&gt;
+3.   &lt;head&gt;
+4.     &lt;meta charset=&quot;utf-8&quot;&gt;
+5.     &lt;title&gt;Basic example of use of the geolocation API&lt;/title&gt;
+6.   &lt;/head&gt;
+7.   &lt;body&gt;
+8.     &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
+9.     &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
+10.     &lt;script&gt;
+11.       var displayCoords=document.getElementById(&quot;msg&quot;);
+12.       function getLocation() {
+13.         if (navigator.geolocation) {
+14.           navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
+15.         } else {
+16.           displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
+17.         }
+18.       }
+19.       function showPosition(position) {
+20.         displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
+21.                                 &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
+22.       }
+23.       function errorPosition(error) {
+24.         var info = &quot;Error during geolocation: &quot;;
+25.         switch(error.code) {
+26.           case error.TIMEOUT:
+27.             info += &quot;Timeout !&quot;;
+28.             break;
+29.           case error.PERMISSION_DENIED:
+30.             info += &quot;Permission denied, geolocation could not be obtained...&quot;;
+31.             break;
+32.           case error.POSITION_UNAVAILABLE:
+33.             info += &quot;Location could not be obtained though the available means...&quot;;
+34.             break;
+35.           case error.UNKNOWN_ERROR:
+36.             info += &quot;Unknown error&quot;;
+37.             break;
+38.           }
+39.         displayCoords.innerHTML = info;
+40.       }
+41.     &lt;/script&gt;
+42.   &lt;/body&gt;
+43. &lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19895,36 +19896,37 @@ watchId=navigator.geolocation.watchPosition(onSuccess, onError,
 <details>
   <summary>Click to expand!</summary>
 
-<pre>function getLocation(e) {
-  e.preventDefault();
-  if (!navigator.geolocation) {
-    alert(&quot;Browser doesn&#39;t support geolocation&quot;);
-    } else {
-    navigator.geolocation.getCurrentPosition(success, error);
-    }
-  }
-// Get current position successfully
-function success(position) {
-  var map, marker,
-  latitude = position.coords.latitude,
-  longitude = position.coords.longitude;
-  // Instance map using leaflet
-  map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
-  // Tile layer using key api at cloudmade.com
-  L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
-    key: &#39;760506895e284217a7442ce2efe97797&#39;,
-    styleId: 103288,
-    maxZoom: 16
-  }).addTo(map);
-  // Marker using leaflet
-  marker = L.marker([latitude, longitude]).addTo(map);
-  // Popup in leaflet
-  marker.bindPopup(&#39;&lt;p&gt;Your location&lt;/p&gt;&#39;).openPopup();
-}
-// Get current position fail
-function error() {
-  alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
-}</pre>
+<pre>1.  function getLocation(e) {
+2.    e.preventDefault();
+3.    if (!navigator.geolocation) {
+4.      alert(&quot;Browser doesn&#39;t support geolocation&quot;);
+5.    } else {
+6.      navigator.geolocation.getCurrentPosition(success, error);
+7.    }
+8.  }
+9.  // Get current position successfully
+10. function success(position) {
+11.   var map, marker,
+12.     latitude = position.coords.latitude,
+13.     longitude = position.coords.longitude;
+14.   // Instance map using leaflet
+15.   map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
+16.   // Tile layer using key api at cloudmade.com
+17.   L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
+18.     key: &#39;760506895e284217a7442ce2efe97797&#39;,
+19.     styleId: 103288,
+20.     maxZoom: 16
+21.   }).addTo(map);
+22.   // Marker using leaflet
+23.   marker = L.marker([latitude, longitude]).addTo(map);
+24.   // Popup in leaflet
+25.   marker.bindPopup(&#39;&lt;p&gt;Your location&lt;/p&gt;&#39;).openPopup();
+26. }
+27. // Get current position fail
+28. function error() {
+29.   alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+30. }
+31.</pre>
 
 </details>
 
@@ -19957,18 +19959,18 @@ function error() {
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;OpenStreetMap Example&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.css&quot;&gt;
-  &lt;script src=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;button class=&quot;btn&quot; onclick=&quot;getLocation(event)&quot;&gt;Click to show your location with OpenStreetMap&lt;/button&gt;
-  &lt;div id=&quot;map&quot; class=&quot;map&quot;&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;html&gt;
+2. &lt;head&gt;
+3.   &lt;meta charset=&quot;utf-8&quot;&gt;
+4.   &lt;title&gt;OpenStreetMap Example&lt;/title&gt;
+5.   &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.css&quot;&gt;
+6.   &lt;script src=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+7. &lt;/head&gt;
+8. &lt;body&gt;
+9.   &lt;button class=&quot;btn&quot; onclick=&quot;getLocation(event)&quot;&gt;Click to show your location with OpenStreetMap&lt;/button&gt;
+10.   &lt;div id=&quot;map&quot; class=&quot;map&quot;&gt;&lt;/div&gt;
+11. &lt;/body&gt;
+12. &lt;/html&gt;</pre>
 
 </details>
 
@@ -20040,16 +20042,31 @@ function error() {
 </details>
 
 <ul>
-  <li><i>Line 6</i> uses the <a href="https://www.w3.org/TR/geolocation-API/" target="_blank" rel="noopener noreferrer">Geolocation API</a> to get the current position, in case of success it calls the success function, passing the location as parameter,</li>
-  <li><i>Lines 12 and 13&gt;</i> show how to get the longitude and latitude properties from the location,</li>
-  <li>The rest is a basic use of the Leaflet API. Notice at <i>line 15</i> that ‘map’ is the id of the &lt;div&gt; from the HTML part of the code.</li>
+  <li><i>Line 6</i> uses the <a href="https://www.w3.org/TR/geolocation-API/" 
+    target="_blank" rel="noopener noreferrer">Geolocation API</a> to get the 
+	current position, in case of success it calls the success function, passing 
+	the location as parameter,</li>
+  <li><i>Lines 12 and 13&gt;</i> show how to get the longitude and latitude properties 
+    from the location,</li>
+  <li>The rest is a basic use of the Leaflet API. Notice at <i>line 15</i> that ‘map’ 
+    is the id of the &lt;div&gt; from the HTML part of the code.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-6">6.4.6 Reverse geocoding</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Different Web services can be used to get an address from longitude and latitude. Most are free of charge, but they will ask you to register an API key and enter your credit card number. If you send too many requests, you will be charged. Such a service is the <a href="https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse" target="_blank" rel="noopener noreferrer">Google Reverse Geocoding JavaScript API</a>. For those of you who are really interested to know how this API works, please read the Google documentation and tutorials.</p>
+<p>Different Web services can be used to get an address from longitude and latitude. 
+Most are free of charge, but they will ask you to register an API key and enter your 
+credit card number. If you send too many requests, you will be charged. Such a service 
+is the <a href="https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse" 
+target="_blank" rel="noopener noreferrer">Google Reverse Geocoding JavaScript API</a>. For those 
+of you who are really interested to know how this API works, please read the Google documentation 
+and tutorials.</p>
 
-<p>There is also an interesting Leaflet plugin (an extension to Leaflet) based on the <a href="https://www.gisgraphy.com/" target="_blank" rel="noopener noreferrer">Gisgraphy</a> (free open source framework) service, that comes with a <a href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" rel="noopener noreferrer">nice demo of reverse geocoding</a>.</p>
+<p>There is also an interesting Leaflet plugin (an extension to Leaflet) based on the 
+<a href="https://www.gisgraphy.com/" target="_blank" rel="noopener noreferrer">
+Gisgraphy</a> (free open source framework) service, that comes with a 
+<a href="https://services.gisgraphy.com/static/leaflet/index.html" 
+target="_blank" rel="noopener noreferrer">nice demo of reverse geocoding</a>.</p>
 
 <p>Let’s see some examples of use.</p>
 
@@ -20070,95 +20087,96 @@ key, used at <i>line 6</i>.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Js bin &lt;/title&gt;
-  &lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=
-    PUT_HERE_YOUR_API_KEY&amp;v=3.exp&amp;sensor=false&quot;&gt;
-    &lt;/script&gt;&lt;script&gt;
-    // p elements for displaying lat / long and address
-    var displayCoords, myAddress;
-    // used with the google apis
-    var geocoder;
-    var map;
-    var infowindow = new google.maps.InfoWindow();
-    var marker;
-    // Called when the page is loaded
-
-  function init() {
-    displayCoords=document.getElementById(&quot;msg&quot;);
-    myAddress = document.getElementById(&quot;address&quot;);
-    geocoder = new google.maps.Geocoder();
-    // In order to show something even before a user clicks on the button
-    var latlng = new google.maps.LatLng(34.0144, -6.83);
-    var mapOptions = {
-      zoom: 8,
-      center: latlng,
-      mapTypeId: &#39;roadmap&#39;
-    }
-    map = new google.maps.Map(document.getElementById(&#39;map_canvas&#39;), mapOptions);
-  } // end of init()
-  // Called when the button is clicked
-
-  function getLocation() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-      displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
-    }
-  }
-    // Called when a position is available
-  
-    function showPosition(position) {
-      displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
-                            &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
-      // Display the map
-      showOnGoogleMap(new google.maps.LatLng(position.coords.latitude,       
-                                           position.coords.longitude));
-    }
-
-      function showOnGoogleMap(latlng) {
-        // Ask google geocoder for an address once we get a longitude and
-        // a latitude. In fact, the reverse geocoder sends back an array of &quot;guesses&quot;
-        // i.e. not just one address object, but several. Each entry in this array
-        // has several properties such as street, city, etc. We use the
-          &quot;formatted_address&quot;
-        // one here, but it might be interesting to get the detailed properties in other
-        // applications like a form with street, city, zip code etc.
-        geocoder.geocode({&#39;latLng&#39;: latlng},reverseGeocoderSuccess);
-	
-        function reverseGeocoderSuccess(results, status) {
-          if (status == google.maps.GeocoderStatus.OK) {
-            if (results[1]) {
-              map.setZoom(11);
-              marker = new google.maps.Marker({
-                                position: latlng,
-                                map: map
-              });
-              infowindow.setContent(results[1].formatted_address);
-              infowindow.open(map, marker);
-              // Display address as text in the page
-              myAddress.innerHTML=&quot;Adress: &quot; + results[0].formatted_address; 
-            } else {
-              alert(&#39;No surface address found&#39;);
-            }
-          } else {
-            alert(&#39;Geocoder failed due to: &#39; + status);
-          }
-        } // end of reverseGeocoderSuccess
-      } // end of showOnGoogleMap
-  &lt;/script&gt;
-&lt;/head&gt;
-&lt;body onload=&quot;init()&quot;&gt;
-  &lt;title&gt;HTML5 + Geolocalisation + Google Maps API Reverse Geocoding&lt;/title&gt;
-  &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
-  &lt;p id=&quot;address&quot;&gt;&lt;/p&gt;
-  &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
-  &lt;div id=&quot;map_canvas&quot; style=&quot;width: 500px; height: 300px&quot;&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>
+1.  &lt;!DOCTYPE html&gt;
+2.  &lt;html lang=&quot;en&quot;&gt;
+3.  &lt;head&gt;
+4.    &lt;meta charset=&quot;utf-8&quot;&gt;
+5.    &lt;title&gt;Js bin &lt;/title&gt;
+6.    &lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=
+7.      PUT_HERE_YOUR_API_KEY&amp;v=3.exp&amp;sensor=false&quot;&gt;
+8.      &lt;/script&gt;&lt;script&gt;
+9.      // p elements for displaying lat / long and address
+10.     var displayCoords, myAddress;
+11.     // used with the google apis
+12.     var geocoder;
+13.     var map;
+14.     var infowindow = new google.maps.InfoWindow();
+15.     var marker;
+16.     // Called when the page is loaded
+17.
+18.     function init() {
+19.       displayCoords=document.getElementById(&quot;msg&quot;);
+20.       myAddress = document.getElementById(&quot;address&quot;);
+21.       geocoder = new google.maps.Geocoder();
+22.       // In order to show something even before a user clicks on the button
+23.       var latlng = new google.maps.LatLng(34.0144, -6.83);
+24.       var mapOptions = {
+25.         zoom: 8,
+26.         center: latlng,
+27.         mapTypeId: &#39;roadmap&#39;
+28.       }
+29.       map = new google.maps.Map(document.getElementById(&#39;map_canvas&#39;), mapOptions);
+30.     } // end of init()
+31.     // Called when the button is clicked
+32.
+33.     function getLocation() {
+34.       if (navigator.geolocation) {
+35.         navigator.geolocation.getCurrentPosition(showPosition);
+36.       } else {
+37.         displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
+38.       }
+39.      }
+40.     // Called when a position is available
+41.  
+42.     function showPosition(position) {
+43.       displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
+44.         &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
+45.       // Display the map
+46.       showOnGoogleMap(new google.maps.LatLng(position.coords.latitude,       
+47.         position.coords.longitude));
+48.     }
+49.
+50.     function showOnGoogleMap(latlng) {
+51.       // Ask google geocoder for an address once we get a longitude and
+52.       // a latitude. In fact, the reverse geocoder sends back an array of &quot;guesses&quot;
+53.       // i.e. not just one address object, but several. Each entry in this array
+54.       // has several properties such as street, city, etc. We use the
+55.       &quot;formatted_address&quot;
+56.       // one here, but it might be interesting to get the detailed properties in other
+57.       // applications like a form with street, city, zip code etc.
+58.       geocoder.geocode({&#39;latLng&#39;: latlng},reverseGeocoderSuccess);
+59.	
+60.         function reverseGeocoderSuccess(results, status) {
+61.           if (status == google.maps.GeocoderStatus.OK) {
+62.             if (results[1]) {
+63.               map.setZoom(11);
+64.               marker = new google.maps.Marker({
+65.                 position: latlng,
+66.                 map: map
+67.               });
+68.               infowindow.setContent(results[1].formatted_address);
+69.               infowindow.open(map, marker);
+70.               // Display address as text in the page
+71.               myAddress.innerHTML=&quot;Adress: &quot; + results[0].formatted_address; 
+72.             } else {
+73.               alert(&#39;No surface address found&#39;);
+74.             }
+75.           } else {
+76.             alert(&#39;Geocoder failed due to: &#39; + status);
+77.           }
+78.         } // end of reverseGeocoderSuccess
+79.       } // end of showOnGoogleMap
+80.   &lt;/script&gt;
+81. &lt;/head&gt;
+82. &lt;body onload=&quot;init()&quot;&gt;
+83.   &lt;title&gt;HTML5 + Geolocalisation + Google Maps API Reverse Geocoding&lt;/title&gt;
+84.   &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
+85.   &lt;p id=&quot;address&quot;&gt;&lt;/p&gt;
+86.   &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
+87.   &lt;div id=&quot;map_canvas&quot; style=&quot;width: 500px; height: 300px&quot;&gt;&lt;/div&gt;
+88. &lt;/body&gt;
+89. &lt;/html&gt;</pre>
 
 </details>
 
@@ -20190,81 +20208,81 @@ key, used at <i>line 6</i>.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
-  &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;meta
-    name=&quot;viewport&quot;
-    content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot;
-    /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css
-    &quot; /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
-  &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    body {
-      margin: 0;
-    }
-    #map {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
-  &lt;script type=&quot;text/javascript&quot;&gt;
-  var map = L.map(&#39;map&#39;).setView([0, 0], 2);
-  var geocoder = L.Control.Geocoder.nominatim();
-  if (URLSearchParams &amp;&amp; location.search) {
-    // parse /?geocoder=nominatim from URL
-    var params = new URLSearchParams(location.search);
-    var geocoderString = params.get(&#39;geocoder&#39;);
-    if (geocoderString &amp;&amp; L.Control.Geocoder[geocoderString]) {
-      console.log(&#39;Using geocoder&#39;, geocoderString);
-      geocoder = L.Control.Geocoder[geocoderString]();
-    } else if (geocoderString) {
-      console.warn(&#39;Unsupported geocoder&#39;, geocoderString);
-    }
-  }
-  var control = L.Control.geocoder({
-    query: &#39;Moon&#39;,
-    placeholder: &#39;Search here...&#39;,
-    geocoder: geocoder
-  }).addTo(map);
-  var marker;
-  setTimeout(function() {
-    control.setQuery(&#39;Earth&#39;);
-  }, 12000);
-  L.tileLayer(&#39;https://{s}.tile.osm.org/{z}/{x}/{y}.png&#39;, {
-    attribution: &#39;&amp;copy; &lt;a href=&quot;https://osm.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;
-  }).addTo(map);
-  map.on(&#39;click&#39;, function(e) {
-    console.log(e.latlng)
-    geocoder.reverse(e.latlng, map.options.crs.scale(map.getZoom()), function(results) {
-      var r = results[0];
-      if (r) {
-        if (marker) {
-          marker
-          .setLatLng(r.center)
-          .setPopupContent(r.html || r.name)
-          .openPopup();
-        } else {
-          marker = L.marker(r.center)
-          .bindPopup(r.name)
-          .addTo(map)
-          .openPopup();
-        }
-      }
-    });
-  });
-  &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html&gt;
+3. &lt;head&gt;
+4.   &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
+5.   &lt;meta charset=&quot;utf-8&quot; /&gt;
+6.   &lt;meta
+7.     name=&quot;viewport&quot;
+8.     content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot;
+9.     /&gt;
+10.  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css
+11.    &quot; /&gt;
+12.  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
+13.  &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
+14.  &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
+15.  &lt;style type=&quot;text/css&quot;&gt;
+16.    body {
+17.      margin: 0;
+18.    }
+19.    #map {
+20.      position: absolute;
+21.      width: 100%;
+22.      height: 100%;
+23.    }
+24.  &lt;/style&gt;
+25.&lt;/head&gt;
+26.&lt;body&gt;
+27.  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+28.  &lt;script type=&quot;text/javascript&quot;&gt;
+29.  var map = L.map(&#39;map&#39;).setView([0, 0], 2);
+30.  var geocoder = L.Control.Geocoder.nominatim();
+31.  if (URLSearchParams &amp;&amp; location.search) {
+32.    // parse /?geocoder=nominatim from URL
+33.    var params = new URLSearchParams(location.search);
+34.    var geocoderString = params.get(&#39;geocoder&#39;);
+35.    if (geocoderString &amp;&amp; L.Control.Geocoder[geocoderString]) {
+36.      console.log(&#39;Using geocoder&#39;, geocoderString);
+37.      geocoder = L.Control.Geocoder[geocoderString]();
+38.    } else if (geocoderString) {
+39.      console.warn(&#39;Unsupported geocoder&#39;, geocoderString);
+40.    }
+41.  }
+42.  var control = L.Control.geocoder({
+43.    query: &#39;Moon&#39;,
+44.    placeholder: &#39;Search here...&#39;,
+45.    geocoder: geocoder
+46.  }).addTo(map);
+47.  var marker;
+48.  setTimeout(function() {
+49.    control.setQuery(&#39;Earth&#39;);
+50.  }, 12000);
+51.  L.tileLayer(&#39;https://{s}.tile.osm.org/{z}/{x}/{y}.png&#39;, {
+52.    attribution: &#39;&amp;copy; &lt;a href=&quot;https://osm.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;
+53.  }).addTo(map);
+54.  map.on(&#39;click&#39;, function(e) {
+55.    console.log(e.latlng)
+56.    geocoder.reverse(e.latlng, map.options.crs.scale(map.getZoom()), function(results) {
+57.      var r = results[0];
+58.      if (r) {
+59.        if (marker) {
+60.          marker
+61.          .setLatLng(r.center)
+62.          .setPopupContent(r.html || r.name)
+63.          .openPopup();
+64.        } else {
+65.          marker = L.marker(r.center)
+66.          .bindPopup(r.name)
+67.          .addTo(map)
+68.          .openPopup();
+69.        }
+70.      }
+71.    });
+72.  });
+73.  &lt;/script&gt;
+74.&lt;/body&gt;
+75.&lt;/html&gt;</pre>
 
 </details>
 
@@ -20275,87 +20293,87 @@ key, used at <i>line 6</i>.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
-  &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;meta
-    name=&quot;viewport&quot;
-    content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot;
-    /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
-  &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    body {
-    margin: 0;
-    }
-    #map {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
-  &lt;script type=&quot;text/javascript&quot;&gt;
-    var geocoder = L.Control.Geocoder.nominatim();
-    var map, marker, latitude, longitude;
-    function getLocation() {
-      if (!navigator.geolocation) {
-        alert(&quot;Browser doesn&#39;t support geolocation&quot;);
-      } else {
-        navigator.geolocation.getCurrentPosition(success, error);
-      }
-    }
-    // Get current position successfully
-    function success(position) {
-      latitude = position.coords.latitude;
-      longitude = position.coords.longitude;
-      // Instance map using leaflet
-      map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
-      // Tile layer using key api at cloudmade.com
-      L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
-      key: &#39;760506895e284217a7442ce2efe97797&#39;,
-      styleId: 103288,
-      maxZoom: 16
-      }).addTo(map);
-      // Marker using leaflet
-      marker = L.marker([latitude, longitude]).addTo(map);
-      // Popup in leaflet
-      marker.bindPopup(&#39;&lt;p&gt;&lt;/p&gt;&#39;).openPopup();
-      getPhysicalAddress({lat:latitude, lng:longitude});
-    }
-    // Get current position fail
-    function error() {
-      alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
-    }
-    var marker;
-    function getPhysicalAddress(latlong) {
-      geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
-      var r = results[0];
-        if (r) {
-          if (marker) {
-            marker
-             .setLatLng(r.center)
-             .setPopupContent(r.html || r.name)
-             .openPopup();
-          } else {
-              marker = L.marker(r.center)
-             .bindPopup(r.name)
-             .addTo(map)
-             .openPopup();
-          }
-        }
-      });
-    }
-    getLocation();
-  &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html&gt;
+3. &lt;head&gt;
+4.   &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
+5.   &lt;meta charset=&quot;utf-8&quot; /&gt;
+6.   &lt;meta
+7.     name=&quot;viewport&quot;
+8.     content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot;
+9.     /&gt;
+10.  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; /&gt;
+11.  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
+12.  &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
+13.  &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
+14.  &lt;style type=&quot;text/css&quot;&gt;
+15.    body {
+16.    margin: 0;
+17.    }
+18.    #map {
+19.    position: absolute;
+20.    width: 100%;
+21.    height: 100%;
+22.    }
+23.  &lt;/style&gt;
+24.&lt;/head&gt;
+25.&lt;body&gt;
+26.  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+27.  &lt;script type=&quot;text/javascript&quot;&gt;
+28.    var geocoder = L.Control.Geocoder.nominatim();
+29.    var map, marker, latitude, longitude;
+30.    function getLocation() {
+31.      if (!navigator.geolocation) {
+32.        alert(&quot;Browser doesn&#39;t support geolocation&quot;);
+33.      } else {
+34.        navigator.geolocation.getCurrentPosition(success, error);
+35.      }
+36.    }
+37.    // Get current position successfully
+38.    function success(position) {
+39.      latitude = position.coords.latitude;
+40.      longitude = position.coords.longitude;
+41.      // Instance map using leaflet
+42.      map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
+43.      // Tile layer using key api at cloudmade.com
+44.      L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
+45.      key: &#39;760506895e284217a7442ce2efe97797&#39;,
+46.      styleId: 103288,
+47.      maxZoom: 16
+48.      }).addTo(map);
+49.      // Marker using leaflet
+50.      marker = L.marker([latitude, longitude]).addTo(map);
+51.      // Popup in leaflet
+52.      marker.bindPopup(&#39;&lt;p&gt;&lt;/p&gt;&#39;).openPopup();
+53.      getPhysicalAddress({lat:latitude, lng:longitude});
+54.    }
+55.    // Get current position fail
+56.    function error() {
+57.      alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+58.    }
+59.    var marker;
+60.    function getPhysicalAddress(latlong) {
+61.      geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
+62.      var r = results[0];
+63.        if (r) {
+64.          if (marker) {
+65.            marker
+66.             .setLatLng(r.center)
+67.             .setPopupContent(r.html || r.name)
+68.             .openPopup();
+69.          } else {
+70.              marker = L.marker(r.center)
+71.             .bindPopup(r.name)
+72.             .addTo(map)
+73.             .openPopup();
+74.          }
+75.        }
+76.      });
+77.    }
+78.    getLocation();
+79.  &lt;/script&gt;
+80.&lt;/body&gt;
+81.&lt;/html&gt;</pre>
 
 </details>
 
@@ -20370,88 +20388,88 @@ key, used at <i>line 6</i>.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Gimmee My Location&lt;/title&gt;
-    &lt;meta charset=&quot;utf-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot;
-    content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot; /&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; /&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
-    &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
-  &lt;/head&gt;
-  &lt;body onload=&quot;getLocation();&quot;&gt;
-    &lt;h1&gt;Example of the use of reverse geocoder in a form&lt;/h1&gt;
-    &lt;form&gt;
-    &lt;fieldset&gt;
-      &lt;legend&gt;Form example with map and address...&lt;/legend&gt;
-      &lt;div id=&quot;map&quot; style=&quot;width: 500px; height: 300px&quot;&gt;&lt;/div&gt;
-    &lt;/fieldset&gt;
-    &lt;fieldset&gt;
-      &lt;legend&gt;Surface address&lt;/legend&gt;
-      &lt;input id=&quot;surfaceAddress&quot; size=110 type=&quot;text&quot;&gt;
-    &lt;fieldset&gt;
-    &lt;form&gt;
-      &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
-
-      &lt;script type=&quot;text/javascript&quot;&gt;
-      var geocoder = L.Control.Geocoder.nominatim();
-      var map, marker, latitude, longitude;
-      function getLocation() {
-      if (!navigator.geolocation) {
-        alert(&quot;Browser doesn&#39;t support geolocation&quot;);
-        } else {
-        navigator.geolocation.getCurrentPosition(success, error);
-        }
-      }
-    // Get current position successfully
-    function success(position) {
-      latitude = position.coords.latitude;
-      longitude = position.coords.longitude;
-      // Instance map using leaflet
-      map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
-      // Tile layer using key api at cloudmade.com
-      L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}{x}{y}.png&#39;, {
-        key: &#39;760506895e284217a7442ce2efe97797&#39;,
-        styleId: 103288,
-        maxZoom: 16
-      }).addTo(map);
-      // Marker using leaflet
-      marker = L.marker([latitude, longitude]).addTo(map);
-      // Popup in leaflet
-      marker.bindPopup(&#39;&lt;p&gt;&lt;/p&gt;&#39;).openPopup();
-      getPhysicalAddress({lat:latitude, lng:longitude});
-    }
-    // Get current position fail
-    function error() {
-      alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
-    }
-  var marker;
-  function getPhysicalAddress(latlong) {
-    geocoder.reverse(latlong, 500000, function(results) {
-      var r = results[0];
-      console.log(r.name);
-      document.querySelector(&quot;#surfaceAddress&quot;).value = r.name;
-      if (r) {
-        if (marker) {
-          marker
-            .setLatLng(r.center)
-            .setPopupContent(r.html || r.name)
-            .openPopup();
-        } else {
-          marker = L.marker(r.center)
-            .bindPopup(r.name)
-            .addTo(map)
-            .openPopup();
-        }
-      }
-    });
-  }
-  &lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1.  &lt;!DOCTYPE html&gt;
+2.  &lt;html&gt;
+3.  &lt;head&gt;
+4.    &lt;title&gt;Gimmee My Location&lt;/title&gt;
+5.    &lt;meta charset=&quot;utf-8&quot; /&gt;
+6.    &lt;meta name=&quot;viewport&quot;
+7.    content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot; /&gt;
+8.    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; /&gt;
+9.    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
+10.   &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
+11.   &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
+12. &lt;/head&gt;
+13. &lt;body onload=&quot;getLocation();&quot;&gt;
+14.   &lt;h1&gt;Example of the use of reverse geocoder in a form&lt;/h1&gt;
+15.   &lt;form&gt;
+16.   &lt;fieldset&gt;
+17.   &lt;legend&gt;Form example with map and address...&lt;/legend&gt;
+18.   &lt;div id=&quot;map&quot; style=&quot;width: 500px; height: 300px&quot;&gt;&lt;/div&gt;
+19.   &lt;/fieldset&gt;
+20.   &lt;fieldset&gt;
+21.   &lt;legend&gt;Surface address&lt;/legend&gt;
+22.   &lt;input id=&quot;surfaceAddress&quot; size=110 type=&quot;text&quot;&gt;
+23.   &lt;fieldset&gt;
+24.   &lt;form&gt;
+25.   &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+26.
+27.   &lt;script type=&quot;text/javascript&quot;&gt;
+28.     var geocoder = L.Control.Geocoder.nominatim();
+29.     var map, marker, latitude, longitude;
+30.     function getLocation() {
+31.       if (!navigator.geolocation) {
+32.         alert(&quot;Browser doesn&#39;t support geolocation&quot;);
+33.       } else {
+34.         navigator.geolocation.getCurrentPosition(success, error);
+35.       }
+36.     }
+37.     // Get current position successfully
+38.     function success(position) {
+39.       latitude = position.coords.latitude;
+40.       longitude = position.coords.longitude;
+41.       // Instance map using leaflet
+42.       map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
+43.       // Tile layer using key api at cloudmade.com
+44.       L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}{x}{y}.png&#39;, {
+45.         key: &#39;760506895e284217a7442ce2efe97797&#39;,
+46.           styleId: 103288,
+47.           maxZoom: 16
+48.       }).addTo(map);
+49.       // Marker using leaflet
+50.         marker = L.marker([latitude, longitude]).addTo(map);
+51.         // Popup in leaflet
+52.         marker.bindPopup(&#39;&lt;p&gt;&lt;/p&gt;&#39;).openPopup();
+53.         getPhysicalAddress({lat:latitude, lng:longitude});
+54.     }
+55.     // Get current position fail
+56.     function error() {
+57.       alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+58.     }
+59.       var marker;
+60.       function getPhysicalAddress(latlong) {
+61.         geocoder.reverse(latlong, 500000, function(results) {
+62.           var r = results[0];
+63.           console.log(r.name);
+64.           document.querySelector(&quot;#surfaceAddress&quot;).value = r.name;
+65.           if (r) {
+66.             if (marker) {
+67.               marker
+68.                 .setLatLng(r.center)
+69.                 .setPopupContent(r.html || r.name)
+70.                 .openPopup();
+71.             } else {
+72.               marker = L.marker(r.center)
+73.                 .bindPopup(r.name)
+74.                 .addTo(map)
+75.                 .openPopup();
+76.             }
+77.           }
+78.         });
+79.       }
+80.   &lt;/script&gt;
+81. &lt;/body&gt;
+82. &lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20476,7 +20494,7 @@ good understanding of the material.</p>
 </ul>
 
 <h5>. . .The end.<br>
-<br>last updated 06-29-23 Thu 4:34pm</h5>
+<br>last updated 07-31-23 Mon 8:46am</h5>
   </body>
 </html>
 
