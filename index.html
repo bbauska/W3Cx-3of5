@@ -737,23 +737,23 @@ header span {
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;/&gt;
-  &lt;title&gt;Simple HTML5 blog&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;header&gt;
-    &lt;h1&gt;Simple &lt;span&gt;HTML5&lt;/span&gt; blog&lt;/h1&gt;
-  &lt;/header&gt;
-  &lt;nav&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;span&gt;Blog&lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/nav&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html lang=&quot;en&quot;&gt;
+3. &lt;head&gt;
+4.   &lt;meta charset=&quot;utf-8&quot;/&gt;
+5.   &lt;title&gt;Simple HTML5 blog&lt;/title&gt;
+6. &lt;/head&gt;
+7. &lt;body&gt;
+8.   &lt;header&gt;
+9.     &lt;h1&gt;Simple &lt;span&gt;HTML5&lt;/span&gt; blog&lt;/h1&gt;
+10.   &lt;/header&gt;
+11.   &lt;nav&gt;
+12.     &lt;ul&gt;
+13.       &lt;li&gt;&lt;span&gt;Blog&lt;/span&gt;&lt;/li&gt;
+14.       &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+15.       &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+16.     &lt;/ul&gt;
+17.   &lt;/nav&gt;</pre>
 
 </details>
 
@@ -762,28 +762,28 @@ header span {
 <details>
   <summary>Click to expand!</summary>
 
-<pre>nav {
-  font-size: 1.5em;
-  margin: 5px 0;
-  padding: 20px 50px
-}
-nav li {
-  display: inline;
-  margin: 0 15px
-}
-nav li:first-child {
-  margin-left: 0
-}
-* html nav ul {
-  margin-left: -15px
-}
-nav span, nav a {
-  padding: 3px 15px 4px
-}
-nav span {
-  background: #722;
-  color: #fff
-}</pre>
+<pre>1. nav {
+2.   font-size: 1.5em;
+3.   margin: 5px 0;
+4.   padding: 20px 50px
+5. }
+6. nav li {
+7.   display: inline;
+8.   margin: 0 15px
+9. }
+10. nav li:first-child {
+11.   margin-left: 0
+12. }
+13. * html nav ul {
+14.   margin-left: -15px
+15. }
+16. nav span, nav a {
+17.   padding: 3px 15px 4px
+18. }
+19. nav span {
+20.   background: #722;
+21.   color: #fff
+22. }</pre>
 
 </details>
 
@@ -827,25 +827,24 @@ nav span {
 <details>
   <summary>Click to expand!</summary>
 
-<pre>section {
-  float: left;
-  padding: 35px 0;
-  position: relative;
-  width: 70%
-}
-section article {
-  margin: 0 50px 40px;
-  padding: 25px 0 0;
-  position: relative
-}
-section header {
-  font-size: 1em;
-  padding: 0;
-}
-section h2 {
-  font-size: 2.3em;
-}
-</pre>
+<pre>1. section {
+2.   float: left;
+3.   padding: 35px 0;
+4.   position: relative;
+5.   width: 70%
+6. }
+7. section article {
+8.   margin: 0 50px 40px;
+9.   padding: 25px 0 0;
+10.   position: relative
+11. }
+12. section header {
+13.   font-size: 1em;
+14.   padding: 0;
+15. }
+16. section h2 {
+17.   font-size: 2.3em;
+18. }</pre>
 
 </details>
 
@@ -869,34 +868,34 @@ article title), paragraphs (article content), and so on.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;section&gt;
-  &lt;article&gt;
-    &lt;header&gt;
-      &lt;h2&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h2&gt;
-    &lt;/header&gt;
-    &lt;p&gt;Try to move the mouse on different elements. The structure will be
-      highlighted and you will be able
-      to see the different inclusions of elements one in each other. If you
-      move the cursor to this sentence, it will be highlighted in dark grey,
-      showing the presence of an &lt;article&gt; element, surrounded by a
-      &lt;section&gt; element (light grey), etc. So we have some articles in
-      a single section element. The page title at the top is a &lt;header&gt;
-      element, while the tag cloud on the right is a &lt;aside&gt; element. The
-      main menu on top (with Blog, About, Contact) is a &lt;nav&gt; element.&lt;/p&gt;
-    &lt;figure&gt;
-      &lt;img src=&quot;HTML5-tags.png&quot;
-        alt=&quot;Example of HTML5 structural tags&quot; /&gt;
-        &lt;figcaption&gt;
-          Fig. 1 : an example of how new structural elements could
-          be used. This page put a &lt;nav&gt; on top, and does not have
-          headers and footer for each article, like in this figure,
-          but it could... By the way this is a
-        &lt;figcaption&gt; inside a &lt;figure&gt; element...
-        &lt;/figcaption&gt;
-    &lt;/figure&gt;
-  &lt;/article&gt;
-  ...
-&lt;/section&gt;</pre>
+<pre>1. &lt;section&gt;
+2.   &lt;article&gt;
+3.     &lt;header&gt;
+4.       &lt;h2&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h2&gt;
+5.     &lt;/header&gt;
+6.     &lt;p&gt;Try to move the mouse on different elements. The structure will be
+7.       highlighted and you will be able
+8.       to see the different inclusions of elements one in each other. If you
+9.       move the cursor to this sentence, it will be highlighted in dark grey,
+10.       showing the presence of an &lt;article&gt; element, surrounded by a
+11.       &lt;section&gt; element (light grey), etc. So we have some articles in
+12.       a single section element. The page title at the top is a &lt;header&gt;
+13.       element, while the tag cloud on the right is a &lt;aside&gt; element. The
+14.       main menu on top (with Blog, About, Contact) is a &lt;nav&gt; element.&lt;/p&gt;
+15.     &lt;figure&gt;
+16.       &lt;img src=&quot;HTML5-tags.png&quot;
+17.         alt=&quot;Example of HTML5 structural tags&quot; /&gt;
+18.         &lt;figcaption&gt;
+19.           Fig. 1 : an example of how new structural elements could
+20.           be used. This page put a &lt;nav&gt; on top, and does not have
+21.           headers and footer for each article, like in this figure,
+22.           but it could... By the way this is a
+23.         &lt;figcaption&gt; inside a &lt;figure&gt; element...
+24.         &lt;/figcaption&gt;
+25.     &lt;/figure&gt;
+26.   &lt;/article&gt;
+27.   ...
+28. &lt;/section&gt;</pre>
 
 </details>
 
@@ -949,19 +948,19 @@ that is displayed on the right of the page, “aside”! This is done using
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;section&gt;
-  .... all &lt;article&gt;... &lt;/article&gt; here....
-&lt;/section&gt;
-&lt;aside&gt;
-  &lt;h2&gt;Tag cloud&lt;/h2&gt;
-  &lt;ul class=&quot;tag-cloud&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w2&quot;&gt;ajax&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w8&quot;&gt;apple&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w3&quot;&gt;css&lt;/a&gt;&lt;/li&gt;
-    ...
-  &lt;/ul&gt;
-&lt;/aside&gt;
-...</pre>
+<pre>1. &lt;section&gt;
+2.   .... all &lt;article&gt;... &lt;/article&gt; here....
+3. &lt;/section&gt;
+4. &lt;aside&gt;
+5.   &lt;h2&gt;Tag cloud&lt;/h2&gt;
+6.   &lt;ul class=&quot;tag-cloud&quot;&gt;
+7.     &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w2&quot;&gt;ajax&lt;/a&gt;&lt;/li&gt;
+8.     &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w8&quot;&gt;apple&lt;/a&gt;&lt;/li&gt;
+9.     &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w3&quot;&gt;css&lt;/a&gt;&lt;/li&gt;
+10.     ...
+11.   &lt;/ul&gt;
+12. &lt;/aside&gt;
+13. ...</pre>
 
 </details>
 
@@ -976,21 +975,21 @@ code of the online example</a>.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>aside {
-  float: right;
-  padding: 70px 0 30px;
-  position: relative;
-  width: 25%
-}
-aside h2 {
-  color: #888;
-  font-size: 1.8em
-}
-aside .tag-cloud {
-  padding: 15px 35px 10px 0;
-  text-align: center
-}
-...</pre>
+<pre>1. aside {
+2.   float: right;
+3.   padding: 70px 0 30px;
+4.   position: relative;
+5.   width: 25%
+6. }
+7. aside h2 {
+8.   color: #888;
+9.   font-size: 1.8em
+10. }
+11. aside .tag-cloud {
+12.   padding: 15px 35px 10px 0;
+13.   text-align: center
+14. }
+15. ...</pre>
 
 </details>
 
@@ -1023,21 +1022,21 @@ after the tag cloud definition, to display a page footer:</h4>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;html&gt;
-...
-&lt;body&gt;
-  ...
-  &lt;section&gt;
-    ...
-  &lt;/section&gt;
-  &lt;aside&gt;
-    ...
-  &lt;/aside&gt;
-  &lt;footer&gt;
-    &lt;p&gt;&amp;copy; 2009 Some blog&lt;/p&gt;
-  &lt;/footer&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;html&gt;
+2. ...
+3. &lt;body&gt;
+4.   ...
+5.   &lt;section&gt;
+6.     ...
+7.   &lt;/section&gt;
+8.   &lt;aside&gt;
+9.     ...
+10.   &lt;/aside&gt;
+11.   &lt;footer&gt;
+12.     &lt;p&gt;&amp;copy; 2009 Some blog&lt;/p&gt;
+13.   &lt;/footer&gt;
+14. &lt;/body&gt;
+15. &lt;/html&gt;</pre>
 
 </details>
 
@@ -1087,17 +1086,17 @@ turn cut into smaller &lt;section&gt; elements:</h4>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;article id=&quot;id1&quot;&gt;
-  &lt;section id=&quot;id1part1&quot;&gt;
-    &lt;h2&gt;Introduction&lt;/h2&gt;
-  &lt;/section&gt;
-  &lt;section id=&quot;id1part2&quot;&gt;
-    &lt;h2&gt;My travel to India&lt;/h2&gt;
-  &lt;/section&gt;
-  &lt;section id=&quot;id1part3&quot;&gt;
-    &lt;h2&gt;Return to France&lt;/h2&gt;
-  &lt;/section&gt;
-&lt;/article&gt;</pre>
+<pre>1. &lt;article id=&quot;id1&quot;&gt;
+2.   &lt;section id=&quot;id1part1&quot;&gt;
+3.     &lt;h2&gt;Introduction&lt;/h2&gt;
+4.   &lt;/section&gt;
+5.   &lt;section id=&quot;id1part2&quot;&gt;
+6.     &lt;h2&gt;My travel to India&lt;/h2&gt;
+7.   &lt;/section&gt;
+8.   &lt;section id=&quot;id1part3&quot;&gt;
+9.     &lt;h2&gt;Return to France&lt;/h2&gt;
+10.   &lt;/section&gt;
+11. &lt;/article&gt;</pre>
 
 </details>
 
@@ -1117,24 +1116,24 @@ with each blog post, for example:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;article&gt;
-  &lt;header&gt;
-    &lt;h1&gt;Blog post title&lt;/h1&gt;
-    &lt;p&gt;Author: Michel&lt;/p&gt;
-  &lt;/header&gt;
-  &lt;nav&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Next post&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Previous post&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Contact author&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/nav&gt;
-  &lt;p&gt;Content...&lt;/p&gt;
-  &lt;footer&gt;
-    &lt;p&gt;Posted by Michel, the &lt;time datetime=&quot;2012-02-02&quot;&gt;February 2,
-    2012&lt;/time&gt; &lt;/p&gt;
-  &lt;/footer&gt;
-&lt;/article&gt;</pre>
+<pre>1. &lt;article&gt;
+2.   &lt;header&gt;
+3.     &lt;h1&gt;Blog post title&lt;/h1&gt;
+4.     &lt;p&gt;Author: Michel&lt;/p&gt;
+5.   &lt;/header&gt;
+6.   &lt;nav&gt;
+7.     &lt;ul&gt;
+8.       &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Next post&lt;/a&gt;&lt;/li&gt;
+9.       &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Previous post&lt;/a&gt;&lt;/li&gt;
+10.       &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Contact author&lt;/a&gt;&lt;/li&gt;
+11.     &lt;/ul&gt;
+12.   &lt;/nav&gt;
+13.   &lt;p&gt;Content...&lt;/p&gt;
+14.   &lt;footer&gt;
+15.     &lt;p&gt;Posted by Michel, the &lt;time datetime=&quot;2012-02-02&quot;&gt;February 2,
+16.     2012&lt;/time&gt; &lt;/p&gt;
+17.   &lt;/footer&gt;
+18. &lt;/article&gt;</pre>
 
 </details>
 
@@ -1248,6 +1247,7 @@ implied by the heading content itself). This means that:</p>
     ...
   &lt;/section&gt;
 &lt;/body&gt;</pre>
+
 <h4>… defines the heading of <i>the explicit section</i> (its parent element &lt;section&gt;)</h4>
 
 <h4>Use multiple headings of different rank with sectioning content</h4>
@@ -1267,21 +1267,21 @@ of the implied section.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre class="html5">&lt;body&gt;
-&lt;section&gt;
-  &lt;h1&gt;This H1 is the heading of an explicit section&lt;/h1&gt;
-  ...
-  &lt;h2&gt;This H2 is a subheading, part of the same section
-    (lower rank)&lt;/h2&gt;
-  ....
-  &lt;h1&gt;This H1 starts an implicit new section in the explicit
-    section (equal or higher rank)&lt;/h1&gt;
-  ...
-  &lt;h2&gt;This is a H2 heading in the new section that has
-    just started&lt;/h2&gt;
-  ...
-&lt;/section&gt;
-&lt;/body&gt;</pre>
+<pre1.  class="html5">&lt;body&gt;
+2. &lt;section&gt;
+3.   &lt;h1&gt;This H1 is the heading of an explicit section&lt;/h1&gt;
+4.   ...
+5.   &lt;h2&gt;This H2 is a subheading, part of the same section
+6.     (lower rank)&lt;/h2&gt;
+7.   ....
+8.   &lt;h1&gt;This H1 starts an implicit new section in the explicit
+9.     section (equal or higher rank)&lt;/h1&gt;
+10.   ...
+11.   &lt;h2&gt;This is a H2 heading in the new section that has
+12.     just started&lt;/h2&gt;
+13.   ...
+14. &lt;/section&gt;
+15. &lt;/body&gt;</pre>
 
 </details>
 <h4>The corresponding outline is:</h4>
@@ -1612,58 +1612,58 @@ links to subsections of the main content:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-  &lt;html lang=&quot;en&quot;&gt;
-    &lt;head&gt;
-      &lt;meta charset=&quot;utf-8&quot;/&gt;
-      &lt;title&gt;Graduation Ceremony Summer 2022&lt;/title&gt;
-    &lt;/head&gt;
-  &lt;body&gt;
-    &lt;header&gt;The Lawson Academy:
-      &lt;nav&gt;
-        &lt;h2&gt;Click these links to navigate...&lt;/h2&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;courses.html&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;fees.html&quot;&gt;Fees&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a&gt;Graduation&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/nav&gt;
-    &lt;/header&gt;
-    &lt;main&gt;
-      &lt;h1&gt;Graduation&lt;/h1&gt;
-      &lt;nav&gt;
-        &lt;h2&gt;Please choose:&lt;/h2&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#ceremony&quot;&gt;Ceremony&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#graduates&quot;&gt;Graduates&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#awards&quot;&gt;Awards&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/nav&gt;
-      &lt;h2 id=&quot;ceremony&quot;&gt;Ceremony&lt;/h2&gt;
-        &lt;p&gt;Opening Procession&lt;/p&gt;
-        &lt;p&gt;Speech by Valedictorian&lt;/p&gt;
-        &lt;p&gt;Speech by Class President&lt;/p&gt;
-        &lt;p&gt;Presentation of Diplomas&lt;/p&gt;
-        &lt;p&gt;Closing Speech by Headmaster&lt;/p&gt;
-      &lt;h2 id=&quot;graduates&quot;&gt;Graduates&lt;/h2&gt;
-      &lt;ul&gt;
-        &lt;li&gt;Eileen Williams&lt;/li&gt;
-        &lt;li&gt;Andy Maseyk&lt;/li&gt;
-        &lt;li&gt;Blanca Sainz Garcia&lt;/li&gt;
-        &lt;li&gt;Clara Faulkner&lt;/li&gt;
-        &lt;li&gt;Gez Lemon&lt;/li&gt;
-        &lt;li&gt;Eloisa Faulkner&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;h2 id=&quot;awards&quot;&gt;Awards&lt;/h2&gt;
-        &lt;ul&gt;
-        &lt;li&gt;Clara Faulkner&lt;/li&gt;
-        &lt;li&gt;Eloisa Faulkner&lt;/li&gt;
-        &lt;li&gt;Blanca Sainz Garcia&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/main&gt;
-    &lt;footer&gt;Copyright 2023 B.Bauska&lt;/footer&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2.   &lt;html lang=&quot;en&quot;&gt;
+3.     &lt;head&gt;
+4.       &lt;meta charset=&quot;utf-8&quot;/&gt;
+5.       &lt;title&gt;Graduation Ceremony Summer 2022&lt;/title&gt;
+6.     &lt;/head&gt;
+7.   &lt;body&gt;
+8.     &lt;header&gt;The Lawson Academy:
+9.       &lt;nav&gt;
+10.         &lt;h2&gt;Click these links to navigate...&lt;/h2&gt;
+11.         &lt;ul&gt;
+12.           &lt;li&gt;&lt;a href=&quot;courses.html&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+13.           &lt;li&gt;&lt;a href=&quot;fees.html&quot;&gt;Fees&lt;/a&gt;&lt;/li&gt;
+14.           &lt;li&gt;&lt;a&gt;Graduation&lt;/a&gt;&lt;/li&gt;
+15.         &lt;/ul&gt;
+16.       &lt;/nav&gt;
+17.     &lt;/header&gt;
+18.     &lt;main&gt;
+19.       &lt;h1&gt;Graduation&lt;/h1&gt;
+20.       &lt;nav&gt;
+21.         &lt;h2&gt;Please choose:&lt;/h2&gt;
+22.         &lt;ul&gt;
+23.           &lt;li&gt;&lt;a href=&quot;#ceremony&quot;&gt;Ceremony&lt;/a&gt;&lt;/li&gt;
+24.           &lt;li&gt;&lt;a href=&quot;#graduates&quot;&gt;Graduates&lt;/a&gt;&lt;/li&gt;
+25.           &lt;li&gt;&lt;a href=&quot;#awards&quot;&gt;Awards&lt;/a&gt;&lt;/li&gt;
+26.         &lt;/ul&gt;
+27.       &lt;/nav&gt;
+28.       &lt;h2 id=&quot;ceremony&quot;&gt;Ceremony&lt;/h2&gt;
+29.         &lt;p&gt;Opening Procession&lt;/p&gt;
+30.         &lt;p&gt;Speech by Valedictorian&lt;/p&gt;
+31.         &lt;p&gt;Speech by Class President&lt;/p&gt;
+32.         &lt;p&gt;Presentation of Diplomas&lt;/p&gt;
+33.         &lt;p&gt;Closing Speech by Headmaster&lt;/p&gt;
+34.       &lt;h2 id=&quot;graduates&quot;&gt;Graduates&lt;/h2&gt;
+35.       &lt;ul&gt;
+36.         &lt;li&gt;Eileen Williams&lt;/li&gt;
+37.         &lt;li&gt;Andy Maseyk&lt;/li&gt;
+38.         &lt;li&gt;Blanca Sainz Garcia&lt;/li&gt;
+39.         &lt;li&gt;Clara Faulkner&lt;/li&gt;
+40.         &lt;li&gt;Gez Lemon&lt;/li&gt;
+41.         &lt;li&gt;Eloisa Faulkner&lt;/li&gt;
+42.       &lt;/ul&gt;
+43.       &lt;h2 id=&quot;awards&quot;&gt;Awards&lt;/h2&gt;
+44.         &lt;ul&gt;
+45.         &lt;li&gt;Clara Faulkner&lt;/li&gt;
+46.         &lt;li&gt;Eloisa Faulkner&lt;/li&gt;
+47.         &lt;li&gt;Blanca Sainz Garcia&lt;/li&gt;
+48.       &lt;/ul&gt;
+49.     &lt;/main&gt;
+50.     &lt;footer&gt;Copyright 2023 B.Bauska&lt;/footer&gt;
+51.   &lt;/body&gt;
+52. &lt;/html&gt;</pre>
 
 </details>
 
@@ -1712,18 +1712,18 @@ Chrome HTML5 Outliner extension showed.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;section&gt;
-  &lt;header&gt;
-    &lt;b&gt;&lt;h1&gt;Blog posts for April 2012&lt;/h1&gt;&lt;/b&gt;
-  &lt;/header&gt;
-  &lt;article&gt;
-    &lt;header&gt;
-      &lt;b&gt;&lt;h1&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h1&gt;&lt;/b&gt;
-        This example is a modified version of &lt;a href=&quot;https://example.com/blog/index.html&quot;&gt;https://example.com/blog/index.html&lt;/a&gt;
-    &lt;/header&gt;
-     ...
-  &lt;/article&gt;
-&lt;/section&gt;</pre>
+<pre>1. &lt;section&gt;
+2.   &lt;header&gt;
+3.     &lt;b&gt;&lt;h1&gt;Blog posts for April 2012&lt;/h1&gt;&lt;/b&gt;
+4.   &lt;/header&gt;
+5.   &lt;article&gt;
+6.     &lt;header&gt;
+7.       &lt;b&gt;&lt;h1&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h1&gt;&lt;/b&gt;
+8.         This example is a modified version of &lt;a href=&quot;https://example.com/blog/index.html&quot;&gt;https://example.com/blog/index.html&lt;/a&gt;
+9.     &lt;/header&gt;
+10.      ...
+11.   &lt;/article&gt;
+12. &lt;/section&gt;</pre>
 
 </details>
 
@@ -1740,17 +1740,17 @@ right after the &lt;body&gt; and use only H2…H6 inside &lt;section&gt;,
 
 <p>We need to add a heading in the &lt;nav&gt; element. This will both fix the outline of the document by removing the untitled entry, and will also make screen readers happy as they will better vocalize the structure of the page (it will say “entering nav” followed by the vocalization of the heading content).</p>
 
-<pre>&lt;nav&gt;
-  &lt;header&gt;
-    &lt;h1&gt;Navigation menu&lt;/h1&gt;
-    &lt;b&gt;
-  &lt;/header&gt;&lt;/b&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;span&gt;Blog&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;</pre>
+<pre>1. &lt;nav&gt;
+2.   &lt;header&gt;
+3.     &lt;h1&gt;Navigation menu&lt;/h1&gt;
+4.     &lt;b&gt;
+5.   &lt;/header&gt;&lt;/b&gt;
+6.   &lt;ul&gt;
+7.     &lt;li&gt;&lt;span&gt;Blog&lt;/span&gt;&lt;/li&gt;
+8.     &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+9.     &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+10.   &lt;/ul&gt;
+11. &lt;/nav&gt;</pre>
 
 <h4>Here is the fixed result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1836,21 +1836,21 @@ designing an HTML page that uses the new sectioning elements.</p>
 <details>
   <summary>Click to expand!</summary>
   
-<pre>&lt;header&gt;
-  &lt;code&gt;&lt;header&gt;&lt;/code&gt;
-&lt;/header&gt;
-  
-&lt;section&gt;
-  &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
-&lt;/section&gt;
-  
-&lt;aside&gt;
-  &lt;code&gt; right;&lt;/code&gt;
-&lt;/aside&gt;
-  
-&lt;footer&gt;
-  &lt;code&gt;&lt;footer&gt;&lt;/code&gt;
-&lt;/footer&gt;</pre>
+<pre>1. &lt;header&gt;
+2.   &lt;code&gt;&lt;header&gt;&lt;/code&gt;
+3. &lt;/header&gt;
+4.   
+5. &lt;section&gt;
+6.   &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
+7. &lt;/section&gt;
+8.   
+9. &lt;aside&gt;
+10.   &lt;code&gt; right;&lt;/code&gt;
+11. &lt;/aside&gt;
+12.   
+13. &lt;footer&gt;
+14.   &lt;code&gt;&lt;footer&gt;&lt;/code&gt;
+15. &lt;/footer&gt;</pre>
 
 </details>
 
@@ -1891,25 +1891,25 @@ codepen” to change the code and see the results):</p>
 <details>
   <summary>Click to expand!</summary>
   
-<pre>&lt;header&gt;
-  &lt;code&gt;&lt;header&gt;&lt;/code&gt;
-&lt;/header&gt;
-
-&lt;section&gt;
-  &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-  &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-  &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
-&lt;/section&gt;
-
-&lt;footer&gt;
-  &lt;code&gt;&lt;footer&gt;&lt;/code&gt;
-&lt;/footer&gt;</pre>
+<pre>1. &lt;header&gt;
+2.   &lt;code&gt;&lt;header&gt;&lt;/code&gt;
+3. &lt;/header&gt;
+4. 
+5. &lt;section&gt;
+6.   &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
+7. &lt;/section&gt;
+8. 
+9. &lt;section&gt;
+10.   &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
+11. &lt;/section&gt;
+12. 
+13. &lt;section&gt;
+14.   &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
+15. &lt;/section&gt;
+16. 
+17. &lt;footer&gt;
+18.   &lt;code&gt;&lt;footer&gt;&lt;/code&gt;
+19. &lt;/footer&gt;</pre>
 
 </details>
 
@@ -1999,18 +1999,18 @@ icon to the left of the summary:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt; ...
-  &lt;body&gt;
-    &lt;details&gt;
-      &lt;summary&gt;
-        How to beat the boss...spoiler alert !
-      &lt;/summary&gt;
-      &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
-      &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
-    &lt;/details&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html lang=&quot;en&quot;&gt; ...
+3.   &lt;body&gt;
+4.     &lt;details&gt;
+5.       &lt;summary&gt;
+6.         How to beat the boss...spoiler alert !
+7.       &lt;/summary&gt;
+8.       &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
+9.       &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
+10.     &lt;/details&gt;
+11.   &lt;/body&gt;
+12. &lt;/html&gt;</pre>
 
 </details>
 
@@ -2053,21 +2053,21 @@ this <a href="https://jsbin.com/dejagi/edit?html,css,output" target="_blank" re
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;details&gt;
-  &lt;summary&gt;
-    How to beat the boss...spoiler alert !
-  &lt;/summary&gt;
-  &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
-  &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
-  &lt;details&gt;
-    &lt;summary&gt;
-      Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
-    &lt;/summary&gt;
-    &lt;p&gt;Before finishing him, try to cut his trail, you will get a new weapon&lt;/p&gt;
-    &lt;p&gt;Just try to stay behind him as long as you can, hitting his tail with your melee weapon, 
-      after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.&lt;/p&gt;
-  &lt;/details&gt;
-&lt;/details&gt;</pre>
+<pre>1. &lt;details&gt;
+2.   &lt;summary&gt;
+3.     How to beat the boss...spoiler alert !
+4.   &lt;/summary&gt;
+5.   &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
+6.   &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
+7.   &lt;details&gt;
+8.     &lt;summary&gt;
+9.       Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
+10.     &lt;/summary&gt;
+11.     &lt;p&gt;Before finishing him, try to cut his trail, you will get a new weapon&lt;/p&gt;
+12.     &lt;p&gt;Just try to stay behind him as long as you can, hitting his tail with your melee weapon, 
+13.       after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.&lt;/p&gt;
+14.   &lt;/details&gt;
+15. &lt;/details&gt;</pre>
 
 </details>
 
@@ -2452,27 +2452,27 @@ name:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>protected void doGet(HttpServletRequest request, HttpServletResponse response)
-throws ServletException, IOException {
-  try {
-    // Build the zip file
-    String path = getServletContext().getRealPath(&quot;data&quot;);
-    File directory = new File(path);
-    String[] files = directory.list();
-    if (files != null &amp;&amp; files.length &gt; 0) {
-      byte[] zip = zipFiles(directory, files);
-      ServletOutputStream sos = response.getOutputStream();
-
-      // generate a HTTP response that forces the download
-      [response.setContentType(&quot;application/zip&quot;);]
-      [response.setHeader(&quot;Content-Disposition&quot;,]
-      [&quot;attachment; filename=&quot;DATA.ZIP&quot;&quot;);]
-        sos.write(zip); sos.flush();
-    }
-  } catch (Exception e) {
-      e.printStackTrace();
-    }
-}</pre>
+<pre>1. protected void doGet(HttpServletRequest request, HttpServletResponse response)
+2. throws ServletException, IOException {
+3.   try {
+4.     // Build the zip file
+5.     String path = getServletContext().getRealPath(&quot;data&quot;);
+6.     File directory = new File(path);
+7.     String[] files = directory.list();
+8.     if (files != null &amp;&amp; files.length &gt; 0) {
+9.       byte[] zip = zipFiles(directory, files);
+10.       ServletOutputStream sos = response.getOutputStream();
+11. 
+12.       // generate a HTTP response that forces the download
+13.       [response.setContentType(&quot;application/zip&quot;);]
+14.       [response.setHeader(&quot;Content-Disposition&quot;,]
+15.       [&quot;attachment; filename=&quot;DATA.ZIP&quot;&quot;);]
+16.         sos.write(zip); sos.flush();
+17.     }
+18.   } catch (Exception e) {
+19.       e.printStackTrace();
+20.     }
+21. }</pre>
 
 </details>
 
@@ -3542,19 +3542,19 @@ attributes should be followed.</p>
 
 <h4>And now the JavaScript code:</h4>
 
-<pre>var video;
-function init() {
-  // function called when the page is loaded
-  video = document.querySelector(&quot;#myVideo&quot;);
-  // For initial value
-  video.width = window.innerWidth;
-  video.height = window.innerHeight;
-  // For dealing with window resize
-  window.onresize = function() {
-    video.width = window.innerWidth;
-    video.height = window.innerHeight;
-  };
-}</pre>
+<pre>1. var video;
+2. function init() {
+3.   // function called when the page is loaded
+4.   video = document.querySelector(&quot;#myVideo&quot;);
+5.   // For initial value
+6.   video.width = window.innerWidth;
+7.   video.height = window.innerHeight;
+8.   // For dealing with window resize
+9.   window.onresize = function() {
+10.     video.width = window.innerWidth;
+11.     video.height = window.innerHeight;
+12.   };
+13. }</pre>
 
 <h4>Example #2: with a YouTube video</h4>
 
@@ -3616,28 +3616,28 @@ this <a href="https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Backgroun
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Full screen video with CSS effects &lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;header&gt;
-    &lt;video autoplay loop=&quot;&quot;
-      poster=&quot;https://mainline.i3s.unice.fr/mooc/polina.jpg&quot;
-      id=&quot;bgvid&quot;&gt;
-      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.webm&quot;
-        type=&quot;video/webm&quot;&gt;
-      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.mp4&quot;
-        type=&quot;video/mp4&quot;&gt;
-    &lt;/video&gt;
-  &lt;/header&gt;
-  &lt;section&gt;
-    &lt;h1&gt;Full screen video with CSS effects&lt;/h1&gt;
-  &lt;/section&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html lang=&quot;en&quot;&gt;
+3. &lt;head&gt;
+4.   &lt;meta charset=&quot;utf-8&quot;&gt;
+5.   &lt;title&gt;Full screen video with CSS effects &lt;/title&gt;
+6. &lt;/head&gt;
+7. &lt;body&gt;
+8.   &lt;header&gt;
+9.     &lt;video autoplay loop=&quot;&quot;
+10.       poster=&quot;https://mainline.i3s.unice.fr/mooc/polina.jpg&quot;
+11.       id=&quot;bgvid&quot;&gt;
+12.       &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.webm&quot;
+13.         type=&quot;video/webm&quot;&gt;
+14.       &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.mp4&quot;
+15.         type=&quot;video/mp4&quot;&gt;
+16.     &lt;/video&gt;
+17.   &lt;/header&gt;
+18.   &lt;section&gt;
+19.     &lt;h1&gt;Full screen video with CSS effects&lt;/h1&gt;
+20.   &lt;/section&gt;
+21. &lt;/body&gt;
+22. &lt;/html&gt;</pre>
 
 </details>
 
@@ -3646,30 +3646,30 @@ this <a href="https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Backgroun
 <details>
   <summary>CSS click to expand!</summary>
 
-<pre>html, body{
-  color:white;
-  height: 100%;
-}
-header{
-  height: 100%;
-  background-image: url(&#39;https://mainline.i3s.unice.fr/mooc/dots.png&#39;), url(&#39;#&#39;);
-  background-repeat: repeat, no-repeat;
-  background-size: auto, cover;
-  background-position: center center, top left;
-  font-family: sans-serif;
-  color: #051a00;
-}
-header video {
-  position:fixed;
-  top:50%;
-  left:50%;
-  min-width:100%;
-  min-height:100%;
-  width:auto;
-  height:auto;
-  z-index:-100;
-  transform:translateX(-50%) translateY(-50%);
-}</pre>
+<pre>1. html, body{
+2.   color:white;
+3.   height: 100%;
+4. }
+5. header{
+6.   height: 100%;
+7.   background-image: url(&#39;https://mainline.i3s.unice.fr/mooc/dots.png&#39;), url(&#39;#&#39;);
+8.   background-repeat: repeat, no-repeat;
+9.   background-size: auto, cover;
+10.   background-position: center center, top left;
+11.   font-family: sans-serif;
+12.   color: #051a00;
+13. }
+14. header video {
+15.   position:fixed;
+16.   top:50%;
+17.   left:50%;
+18.   min-width:100%;
+19.   min-height:100%;
+20.   width:auto;
+21.   height:auto;
+22.   z-index:-100;
+23.   transform:translateX(-50%) translateY(-50%);
+24. }</pre>
 
 </details>
 
@@ -3701,17 +3701,17 @@ ratio.</p>
 <details>
   <summary>CSS click to expand!</summary>
 
-<pre>body {
-   margin: 0;
-}
- 
-video {
-   position: absolute;
-   width: 100vw;
-   height: 100vh;
-   object-fit: cover;
-   object-position: center center;
-}</pre>
+<pre>1. body {
+2.    margin: 0;
+3. }
+4.  
+5. video {
+6.    position: absolute;
+7.    width: 100vw;
+8.    height: 100vh;
+9.    object-fit: cover;
+10.    object-position: center center;
+11. }</pre>
 
 </details>
 
@@ -4004,17 +4004,17 @@ when the video is ended.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;video src=&quot;video.ogv&quot; id=&quot;myVideo&quot;&gt;
-  video not supported
-&lt;/video&gt;
-&lt;script type=&#39;text/javascript&#39;&gt;
-  var vid = document.querySelector(&#39;#myVideo&#39;);
-  vid.addEventListener(&#39;ended&#39;, playNextVideo, false);
-  function playNextVideo(e) {
-    // Whatever you want to do after the event, change the src attribute
-    // of the video element, for example, in order to play another video
-  }
-&lt;/script&gt;</pre>
+<pre>1. &lt;video src=&quot;video.ogv&quot; id=&quot;myVideo&quot;&gt;
+2.   video not supported
+3. &lt;/video&gt;
+4. &lt;script type=&#39;text/javascript&#39;&gt;
+5.   var vid = document.querySelector(&#39;#myVideo&#39;);
+6.   vid.addEventListener(&#39;ended&#39;, playNextVideo, false);
+7.   function playNextVideo(e) {
+8.     // Whatever you want to do after the event, change the src attribute
+9.     // of the video element, for example, in order to play another video
+10.   }
+11. &lt;/script&gt;</pre>
 
 </details>
 
@@ -4140,38 +4140,38 @@ the code.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>...
-vid.addEventListener(&#39;error&#39;, function(evt) {
-  logEvent(evt,&#39;red&#39;);
-}, false);
-...
-function logEvent(evt, color) {
-  switch (evt.type) {
-    ...
-        case &#39;error&#39;:
-        var error = document.querySelector(&#39;video&#39;).error;
-        switch (error.code) {
-        case error.MEDIA_ERR_ABORTED:
-          note.innerHTML = &quot;fetching aborted at the user&#39;s request&quot;;
-          break;
-        case error.MEDIA_ERR_NETWORK:
-          note.innerHTML = &quot;a network error caused the browser to stop fetching the media&quot;;
-          break;
-        case error.MEDIA_ERR_DECODE:
-          note.innerHTML = &quot;an error occurred while decoding the media&quot;;
-          break;
-        case error.MEDIA_ERR_SRC_NOT_SUPPORTED:
-          note.innerHTML = &quot;the media indicated by the src
-            attribute was not suitable&quot;;
-          break;
-        default:
-          note.innerHTML = &quot;an error occurred&quot;;
-          break;
-      }
-    break;
-  }
-  ...
-}</pre>
+<pre>1. ...
+2. vid.addEventListener(&#39;error&#39;, function(evt) {
+3.   logEvent(evt,&#39;red&#39;);
+4. }, false);
+5. ...
+6. function logEvent(evt, color) {
+7.   switch (evt.type) {
+8.     ...
+9.         case &#39;error&#39;:
+10.         var error = document.querySelector(&#39;video&#39;).error;
+11.         switch (error.code) {
+12.         case error.MEDIA_ERR_ABORTED:
+13.           note.innerHTML = &quot;fetching aborted at the user&#39;s request&quot;;
+14.           break;
+15.         case error.MEDIA_ERR_NETWORK:
+16.           note.innerHTML = &quot;a network error caused the browser to stop fetching the media&quot;;
+17.           break;
+18.         case error.MEDIA_ERR_DECODE:
+19.           note.innerHTML = &quot;an error occurred while decoding the media&quot;;
+20.           break;
+21.         case error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+22.           note.innerHTML = &quot;the media indicated by the src
+23.             attribute was not suitable&quot;;
+24.           break;
+25.         default:
+26.           note.innerHTML = &quot;an error occurred&quot;;
+27.           break;
+28.       }
+29.     break;
+30.   }
+31.   ...
+32. }</pre>
 
 </details>
 
@@ -4208,48 +4208,48 @@ the movie duration for which there is data.”</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;title&gt;JavaScript Progress Monitor&lt;/title&gt;
-  &lt;meta charset=&quot;utf-8&quot;/&gt;
-  &lt;script&gt;
-    function getPercentProg() {
-      var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
-      var endBuf = myVideo.buffered.end(0);
-      var soFar = parseInt(((endBuf / myVideo.duration) * 100));
-      document.getElementById(&quot;loadStatus&quot;).innerHTML = soFar + &#39;%&#39;;
-    }
-    // Will be called as soon as the page is ready on desktop computer,
-    // Only when a user clicks on play control or image on mobile
-    function myAutoPlay() {
-      var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
-      myVideo.play();
-    }
-    function addMyListeners(){
-      var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
-      myVideo.addEventListener(&#39;progress&#39;, getPercentProg, false);
-      // Calls autoplay only if the device is adapted
-      myVideo.addEventListener(&#39;canplaythrough&#39;, myAutoPlay, false);
-    }
-  &lt;/script&gt;
-&lt;/head&gt;
-&lt;body onload=&quot;addMyListeners()&quot;&gt;
-  &lt;h1&gt;Check progression of buffering before playing a movie. Useful withy
-    slow connexion (3G, etc.)&lt;/h1&gt;
-  &lt;div&gt;
-    &lt;video controls&gt;
-      &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.webm
-        type=video/webm&gt;
-      &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.ogg  
-        type=video/ogg&gt;
-      &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.mp4
-        type=video/mp4&gt;
-    &lt;/video&gt;
-    &lt;p id=&quot;loadStatus&quot;&gt;Buffering...&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html lang=&quot;en&quot;&gt;
+3. &lt;head&gt;
+4.   &lt;title&gt;JavaScript Progress Monitor&lt;/title&gt;
+5.   &lt;meta charset=&quot;utf-8&quot;/&gt;
+6.   &lt;script&gt;
+7.     function getPercentProg() {
+8.       var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
+9.       var endBuf = myVideo.buffered.end(0);
+10.       var soFar = parseInt(((endBuf / myVideo.duration) * 100));
+11.       document.getElementById(&quot;loadStatus&quot;).innerHTML = soFar + &#39;%&#39;;
+12.     }
+13.     // Will be called as soon as the page is ready on desktop computer,
+14.     // Only when a user clicks on play control or image on mobile
+15.     function myAutoPlay() {
+16.       var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
+17.       myVideo.play();
+18.     }
+19.     function addMyListeners(){
+20.       var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
+21.       myVideo.addEventListener(&#39;progress&#39;, getPercentProg, false);
+22.       // Calls autoplay only if the device is adapted
+23.       myVideo.addEventListener(&#39;canplaythrough&#39;, myAutoPlay, false);
+24.     }
+25.   &lt;/script&gt;
+26. &lt;/head&gt;
+27. &lt;body onload=&quot;addMyListeners()&quot;&gt;
+28.   &lt;h1&gt;Check progression of buffering before playing a movie. Useful withy
+29.     slow connexion (3G, etc.)&lt;/h1&gt;
+30.   &lt;div&gt;
+31.     &lt;video controls&gt;
+32.       &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.webm
+33.         type=video/webm&gt;
+34.       &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.ogg  
+35.         type=video/ogg&gt;
+36.       &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.mp4
+37.         type=video/mp4&gt;
+38.     &lt;/video&gt;
+39.     &lt;p id=&quot;loadStatus&quot;&gt;Buffering...&lt;/p&gt;
+40.   &lt;/div&gt;
+41. &lt;/body&gt;
+42. &lt;/html&gt;</pre>
 
 </details>
 
@@ -4352,22 +4352,22 @@ the source code shown below):</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;video src=&quot;brave.webm&quot;&gt;
-  &lt;track kind=subtitles src=brave.en.vtt
-    srclang=en
-    label=&quot;English&quot;&gt;
-  &lt;track kind=captions src=brave.en.hoh.vtt
-    srclang=en
-    label=&quot;English for the Hard of Hearing&quot;&gt;
-  &lt;track kind=subtitles src=brave.fr.vtt
-    srclang=fr
-    lang=fr 
-    label=&quot;Français&quot;&gt;
-  &lt;track kind=subtitles src=brave.de.vtt
-    srclang=de
-    lang=de
-    label=&quot;Deutsch&quot;&gt;
-&lt;/video&gt;</pre>
+<pre>1. &lt;video src=&quot;brave.webm&quot;&gt;
+2.   &lt;track kind=subtitles src=brave.en.vtt
+3.     srclang=en
+4.     label=&quot;English&quot;&gt;
+5.   &lt;track kind=captions src=brave.en.hoh.vtt
+6.     srclang=en
+7.     label=&quot;English for the Hard of Hearing&quot;&gt;
+8.   &lt;track kind=subtitles src=brave.fr.vtt
+9.     srclang=fr
+10.     lang=fr 
+11.     label=&quot;Français&quot;&gt;
+12.   &lt;track kind=subtitles src=brave.de.vtt
+13.     srclang=de
+14.     lang=de
+15.     label=&quot;Deutsch&quot;&gt;
+16. &lt;/video&gt;</pre>
 
 </details>
 
@@ -5027,37 +5027,37 @@ result by clicking on the “CodePen” logo at the top right):</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;video id=&quot;myVideo&quot; autoplay&gt;Fallback msg here.&lt;/video&gt;
-&lt;script&gt;
-  if (navigator.mediaDevices.getUserMedia) {
-    // request video and audio stream from the user&#39;s webcam
-    navigator.mediaDevices.getUserMedia({
-      audio: true,
-      video: true
-    }).then((stream) =&gt; {
-      let video = document.querySelector(&#39;#myVideo&#39;);
-      video.srcObject = stream;
-      video.play();
-    }).catch((error) =&gt; {
-      console.log(&#39;navigator.getUserMedia error: &#39;, error);
-    });
-  }
-&lt;/script&gt;
-We can also simplify the code by using a writing with async/await of JavaScript:
-&lt;video id=&quot;myVideo&quot; autoplay&gt;Fallback msg here.&lt;/video&gt;
-&lt;script&gt;
-  async function startWebCam() {
-    // request video and audio stream from the user&#39;s webcam
-    let stream = await navigator.mediaDevices.getUserMedia({
-      audio: true,
-      video: true
-    });
-    let video = document.querySelector(&#39;#myVideo&#39;);
-    video.srcObject = stream;
-    video.play();
-  }
-  startWebCam();
-&lt;/script&gt;</pre>
+<pre>1. &lt;video id=&quot;myVideo&quot; autoplay&gt;Fallback msg here.&lt;/video&gt;
+2. &lt;script&gt;
+3.   if (navigator.mediaDevices.getUserMedia) {
+4.     // request video and audio stream from the user&#39;s webcam
+5.     navigator.mediaDevices.getUserMedia({
+6.       audio: true,
+7.       video: true
+8.     }).then((stream) =&gt; {
+9.       let video = document.querySelector(&#39;#myVideo&#39;);
+10.       video.srcObject = stream;
+11.       video.play();
+12.     }).catch((error) =&gt; {
+13.       console.log(&#39;navigator.getUserMedia error: &#39;, error);
+14.     });
+15.   }
+16. &lt;/script&gt;
+17. We can also simplify the code by using a writing with async/await of JavaScript:
+18. &lt;video id=&quot;myVideo&quot; autoplay&gt;Fallback msg here.&lt;/video&gt;
+19. &lt;script&gt;
+20.   async function startWebCam() {
+21.     // request video and audio stream from the user&#39;s webcam
+22.     let stream = await navigator.mediaDevices.getUserMedia({
+23.       audio: true,
+24.       video: true
+25.     });
+26.     let video = document.querySelector(&#39;#myVideo&#39;);
+27.     video.srcObject = stream;
+28.     video.play();
+29.   }
+30.   startWebCam();
+31. &lt;/script&gt;</pre>
 
 </details>
 
@@ -5079,41 +5079,41 @@ We can also simplify the code by using a writing with async/await of JavaScript:
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Webcam start/stop&lt;/title&gt;
-  &lt;script&gt;
-    let webcamStream;
-    function startWebcam() {
-      // request video and audio stream from the user&#39;s webcam
-      navigator.mediaDevices.getUserMedia({
-      audio: true,
-      video: true
-      }).then((stream) =&gt; {
-      let video = document.querySelector(&#39;#video&#39;);
-      video.srcObject = stream;
-      video.play();
-      webcamStream = stream;
-      }).catch((error) =&gt; {
-      console.log(&#39;navigator.getUserMedia error: &#39;, error);
-      });
-      }
-    function stopWebcam() {
-      webcamStream.getTracks()[0].stop(); // audio
-      webcamStream.getTracks()[1].stop(); // video
-      }
-  &lt;/script&gt;
-&lt;/head&gt;
-&lt;body &gt;
-  &lt;video width=400 height=400 id=&quot;video&quot; controls&gt;&lt;/video&gt;
-  &lt;p&gt;
-    &lt;button onclick=&quot;startWebcam();&quot;&gt;Start WebCam&lt;/button&gt;
-    &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
-  &lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html lang=&quot;en&quot;&gt;
+3. &lt;head&gt;
+4.   &lt;meta charset=&quot;utf-8&quot;&gt;
+5.   &lt;title&gt;Webcam start/stop&lt;/title&gt;
+6.   &lt;script&gt;
+7.     let webcamStream;
+8.     function startWebcam() {
+9.       // request video and audio stream from the user&#39;s webcam
+10.       navigator.mediaDevices.getUserMedia({
+11.       audio: true,
+12.       video: true
+13.       }).then((stream) =&gt; {
+14.       let video = document.querySelector(&#39;#video&#39;);
+15.       video.srcObject = stream;
+16.       video.play();
+17.       webcamStream = stream;
+18.       }).catch((error) =&gt; {
+19.       console.log(&#39;navigator.getUserMedia error: &#39;, error);
+20.       });
+21.       }
+22.     function stopWebcam() {
+23.       webcamStream.getTracks()[0].stop(); // audio
+24.       webcamStream.getTracks()[1].stop(); // video
+25.       }
+26.   &lt;/script&gt;
+27. &lt;/head&gt;
+28. &lt;body &gt;
+29.   &lt;video width=400 height=400 id=&quot;video&quot; controls&gt;&lt;/video&gt;
+30.   &lt;p&gt;
+31.     &lt;button onclick=&quot;startWebcam();&quot;&gt;Start WebCam&lt;/button&gt;
+32.     &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
+33.   &lt;/p&gt;
+34. &lt;/body&gt;
+35. &lt;/html&gt;</pre>
 
 </details>
 
@@ -11991,25 +11991,25 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 <details>
   <summary>Click to expand!</summary>
   
-<pre>var canvas, ctx;
-function init() {
-  canvas = document.getElementById(&#39;myCanvas&#39;);
-  ctx = canvas.getContext(&#39;2d&#39;);
-  setShadow();
-  // first green filled rectangle
-  ctx.fillStyle = &quot;#22FFDD&quot;; // rectangle color
-  ctx.fillRect(20, 20, 200, 100);
-  // second stroked rectangle
-  ctx.strokeStyle = &quot;purple&quot;; // rectangle color
-  ctx.lineWidth=10;
-  ctx.strokeRect(20, 150, 200, 100);
-}
-function setShadow() {
-  ctx.shadowColor = &quot;Grey&quot;; // color
-  ctx.shadowBlur = 20; // blur level
-  ctx.shadowOffsetX = 15; // horizontal offset
-  ctx.shadowOffsetY = 15; // vertical offset
-}</pre>
+<pre>1. var canvas, ctx;
+2. function init() {
+3.   canvas = document.getElementById(&#39;myCanvas&#39;);
+4.   ctx = canvas.getContext(&#39;2d&#39;);
+5.   setShadow();
+6.   // first green filled rectangle
+7.   ctx.fillStyle = &quot;#22FFDD&quot;; // rectangle color
+8.   ctx.fillRect(20, 20, 200, 100);
+9.   // second stroked rectangle
+10.   ctx.strokeStyle = &quot;purple&quot;; // rectangle color
+11.   ctx.lineWidth=10;
+12.   ctx.strokeRect(20, 150, 200, 100);
+13. }
+14. function setShadow() {
+15.   ctx.shadowColor = &quot;Grey&quot;; // color
+16.   ctx.shadowBlur = 20; // blur level
+17.   ctx.shadowOffsetX = 15; // horizontal offset
+18.   ctx.shadowOffsetY = 15; // vertical offset
+19. }</pre>
 
 </details>
 
@@ -12932,91 +12932,91 @@ your function ONCE and <i>AFTER a given amount of time</i>.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;title&gt;Monster animated in a canvas with setTimeout&lt;/title&gt;
-&lt;style type=&quot;text/css&quot;&gt;
-  canvas {
-    border:1px solid black;
-  }
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body onload=&quot;init();&quot;&gt;
-  &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
-    Your browser does not support the canvas tag.
-  &lt;/canvas&gt;
-  &lt;p&gt;
-  &lt;button onclick=&quot;start()&quot;&gt;Start animation&lt;/button&gt;
-  &lt;button onclick=&quot;stop()&quot;&gt;Stop animation&lt;/button&gt;
-  &lt;script&gt;
-    var canvas, ctx;
-    var monsterX=100, monsterY=100, monsterAngle=0;
-
-    function init() {
-      // This function is called after the page is loaded
-      // 1 - Get the canvas
-      canvas = document.getElementById(&#39;myCanvas&#39;);
-      // 2 - Get the context
-      ctx=canvas.getContext(&#39;2d&#39;);
-    }
-
-    function animationLoop() {
-      // 1 - Clear
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      // 2 Draw
-      drawMonster(monsterX, monsterY, monsterAngle, &#39;green&#39;, &#39;yellow&#39;);
-      // 3 Move
-      monsterX += 10;
-      monsterX %= canvas.width
-      monsterAngle+= 0.01;
-      // call again mainloop after 20ms
-      requestId = setTimeout(animationLoop, 20);
-    }
-
-    function drawMonster(x, y, angle, headColor, eyeColor) {
-      // GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
-      ctx.save();
-      // Moves the coordinate system so that the monster is drawn
-      // at position (x, y)
-      ctx.translate(x, y);
-      ctx.rotate(angle)
-      // head
-      ctx.fillStyle=headColor;
-      ctx.fillRect(0,0,200,200);
-      // eyes
-      ctx.fillStyle=&#39;red&#39;;
-      ctx.fillRect(35,30,20,20);
-      ctx.fillRect(140,30,20,20);
-      // interior of eye
-      ctx.fillStyle=eyeColor;
-      ctx.fillRect(43,37,10,10);
-      ctx.fillRect(143,37,10,10);
-      // Nose
-      ctx.fillStyle=&#39;black&#39;;
-      ctx.fillRect(90,70,20,80);
-      // Mouth
-      ctx.fillStyle=&#39;purple&#39;;
-      ctx.fillRect(60,165,80,20);
-      // GOOD PRACTICE !
-      ctx.restore();
-    }
-    
-  function start() {
-      // Start the animation loop, change 20 for bigger
-      // values
-      requestId = setTimeout(animationLoop, 20);
-    }
-  
-    function stop() {
-      if (requestId) {
-        clearTimeout(requestId);
-      }
-    }
-  &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html lang=&quot;en&quot;&gt;
+3. &lt;head&gt;
+4. &lt;meta charset=&quot;utf-8&quot;&gt;
+5. &lt;title&gt;Monster animated in a canvas with setTimeout&lt;/title&gt;
+6. &lt;style type=&quot;text/css&quot;&gt;
+7.   canvas {
+8.     border:1px solid black;
+9.   }
+10. &lt;/style&gt;
+11. &lt;/head&gt;
+12. &lt;body onload=&quot;init();&quot;&gt;
+13.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
+14.     Your browser does not support the canvas tag.
+15.   &lt;/canvas&gt;
+16.   &lt;p&gt;
+17.   &lt;button onclick=&quot;start()&quot;&gt;Start animation&lt;/button&gt;
+18.   &lt;button onclick=&quot;stop()&quot;&gt;Stop animation&lt;/button&gt;
+19.   &lt;script&gt;
+20.     var canvas, ctx;
+21.     var monsterX=100, monsterY=100, monsterAngle=0;
+22. 
+23.     function init() {
+24.       // This function is called after the page is loaded
+25.       // 1 - Get the canvas
+26.       canvas = document.getElementById(&#39;myCanvas&#39;);
+27.       // 2 - Get the context
+28.       ctx=canvas.getContext(&#39;2d&#39;);
+29.     }
+30. 
+31.     function animationLoop() {
+32.       // 1 - Clear
+33.       ctx.clearRect(0, 0, canvas.width, canvas.height);
+34.       // 2 Draw
+35.       drawMonster(monsterX, monsterY, monsterAngle, &#39;green&#39;, &#39;yellow&#39;);
+36.       // 3 Move
+37.       monsterX += 10;
+38.       monsterX %= canvas.width
+39.       monsterAngle+= 0.01;
+40.       // call again mainloop after 20ms
+41.       requestId = setTimeout(animationLoop, 20);
+42.     }
+43. 
+44.     function drawMonster(x, y, angle, headColor, eyeColor) {
+45.       // GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
+46.       ctx.save();
+47.       // Moves the coordinate system so that the monster is drawn
+48.       // at position (x, y)
+49.       ctx.translate(x, y);
+50.       ctx.rotate(angle)
+51.       // head
+52.       ctx.fillStyle=headColor;
+53.       ctx.fillRect(0,0,200,200);
+54.       // eyes
+55.       ctx.fillStyle=&#39;red&#39;;
+56.       ctx.fillRect(35,30,20,20);
+57.       ctx.fillRect(140,30,20,20);
+58.       // interior of eye
+59.       ctx.fillStyle=eyeColor;
+60.       ctx.fillRect(43,37,10,10);
+61.       ctx.fillRect(143,37,10,10);
+62.       // Nose
+63.       ctx.fillStyle=&#39;black&#39;;
+64.       ctx.fillRect(90,70,20,80);
+65.       // Mouth
+66.       ctx.fillStyle=&#39;purple&#39;;
+67.       ctx.fillRect(60,165,80,20);
+68.       // GOOD PRACTICE !
+69.       ctx.restore();
+70.     }
+71.     
+72.   function start() {
+73.       // Start the animation loop, change 20 for bigger
+74.       // values
+75.       requestId = setTimeout(animationLoop, 20);
+76.     }
+77.   
+78.     function stop() {
+79.       if (requestId) {
+80.         clearTimeout(requestId);
+81.       }
+82.     }
+83.   &lt;/script&gt;
+84. &lt;/body&gt;
+85. &lt;/html&gt;</pre>
 
 </details>
 
@@ -13366,21 +13366,21 @@ will trigger the event listener function.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; height=&quot;200&quot;&gt;
-&lt;/canvas&gt;
-&lt;script&gt;
-var canvas;
-function init() {
-// This will work when you press a key, anywhere on the document
-window.addEventListener(&#39;keydown&#39;, handleKeydown, false);
-}
-function handleKeydown(e){
-alert(&#39;keycode: &#39;+e.keyCode);
-return false;
-};
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; height=&quot;200&quot;&gt;
+2. &lt;/canvas&gt;
+3. &lt;script&gt;
+4. var canvas;
+5. function init() {
+6. // This will work when you press a key, anywhere on the document
+7. window.addEventListener(&#39;keydown&#39;, handleKeydown, false);
+8. }
+9. function handleKeydown(e){
+10. alert(&#39;keycode: &#39;+e.keyCode);
+11. return false;
+12. };
+13. &lt;/script&gt;
+14. &lt;/body&gt;
+15. &lt;/html&gt;</pre>
 
 </details>
 
@@ -13426,102 +13426,102 @@ what HTML element has the focus, etc…</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Moving the monster with the keyboard - Example #2&lt;/title&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    canvas {
-      border:1px solid black;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body onload=&quot;init();&quot;&gt;
-  &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
-    Your browser does not support the canvas tag.
-  &lt;/canvas&gt;
-  &lt;p&gt;
-  &lt;script&gt;
-    var canvas, ctx;
-    var monsterX=100, monsterY=100, monsterAngle=0;
-    var incrementX = 0;
-    function init() {
-      // This function is called after the page is loaded
-      // 1 - Get the canvas
-      canvas = document.getElementById(&#39;myCanvas&#39;);
-      // 2 - Get the context
-      ctx=canvas.getContext(&#39;2d&#39;);
-      // 3 add key listeners to the window element
-      window.addEventListener(&#39;keydown&#39;, handleKeydown, false);
-      window.addEventListener(&#39;keyup&#39;, handleKeyup, false);
-      // 4 - start the animation
-      requestId = requestAnimationFrame(animationLoop);
-    }
-
-    function handleKeydown(evt) {
-      if (evt.keyCode === 37) {
-        //left key
-        incrementX = -1;
-      } else if (evt.keyCode === 39) {
-      // right key
-        incrementX = 1;
-      }
-    }
-
-    function handleKeyup(evt) {
-      incrementX = 0;
-    }
-
-    function animationLoop() {
-      // 1 - Clear
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      // 2 Draw
-      drawMonster(monsterX, monsterY, monsterAngle, &#39;green&#39;, &#39;yellow&#39;);
-      // 3 Move
-      monsterX += incrementX;
-      // call again mainloop after 16.6 ms (60 frames/s)
-      requestId = requestAnimationFrame(animationLoop);
-    }
-    function drawMonster(x, y, angle, headColor, eyeColor) {
-      // GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
-      ctx.save();
-      // Moves the coordinate system so that the monster is drawn
-      // at position (x, y)
-      ctx.translate(x, y);
-      ctx.rotate(angle)
-      // head
-      ctx.fillStyle=headColor;
-      ctx.fillRect(0,0,200,200);
-      // eyes
-      ctx.fillStyle=&#39;red&#39;;
-      ctx.fillRect(35,30,20,20);
-      ctx.fillRect(140,30,20,20);
-      // interior of eye
-      ctx.fillStyle=eyeColor;
-      ctx.fillRect(43,37,10,10);
-      ctx.fillRect(143,37,10,10);
-      // Nose
-      ctx.fillStyle=&#39;black&#39;;
-      ctx.fillRect(90,70,20,80);
-      // Mouth
-      ctx.fillStyle=&#39;purple&#39;;
-      ctx.fillRect(60,165,80,20);
-      // GOOD PRACTICE !
-      ctx.restore();
-    }
-    function start() {
-      // Start the animation loop, targets 60 frames/s
-      requestId = requestAnimationFrame(animationLoop);
-    }
-    function stop() {
-      if (requestId) {
-        cancelAnimationFrame(requestId);
-      }
-    }
-  &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html lang=&quot;en&quot;&gt;
+3. &lt;head&gt;
+4.   &lt;meta charset=&quot;utf-8&quot;&gt;
+5.   &lt;title&gt;Moving the monster with the keyboard - Example #2&lt;/title&gt;
+6.   &lt;style type=&quot;text/css&quot;&gt;
+7.     canvas {
+8.       border:1px solid black;
+9.     }
+10.   &lt;/style&gt;
+11. &lt;/head&gt;
+12. &lt;body onload=&quot;init();&quot;&gt;
+13.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
+14.     Your browser does not support the canvas tag.
+15.   &lt;/canvas&gt;
+16.   &lt;p&gt;
+17.   &lt;script&gt;
+18.     var canvas, ctx;
+19.     var monsterX=100, monsterY=100, monsterAngle=0;
+20.     var incrementX = 0;
+21.     function init() {
+22.       // This function is called after the page is loaded
+23.       // 1 - Get the canvas
+24.       canvas = document.getElementById(&#39;myCanvas&#39;);
+25.       // 2 - Get the context
+26.       ctx=canvas.getContext(&#39;2d&#39;);
+27.       // 3 add key listeners to the window element
+28.       window.addEventListener(&#39;keydown&#39;, handleKeydown, false);
+29.       window.addEventListener(&#39;keyup&#39;, handleKeyup, false);
+30.       // 4 - start the animation
+31.       requestId = requestAnimationFrame(animationLoop);
+32.     }
+33. 
+34.     function handleKeydown(evt) {
+35.       if (evt.keyCode === 37) {
+36.         //left key
+37.         incrementX = -1;
+38.       } else if (evt.keyCode === 39) {
+39.       // right key
+40.         incrementX = 1;
+41.       }
+42.     }
+43. 
+44.     function handleKeyup(evt) {
+45.       incrementX = 0;
+46.     }
+47. 
+48.     function animationLoop() {
+49.       // 1 - Clear
+50.       ctx.clearRect(0, 0, canvas.width, canvas.height);
+51.       // 2 Draw
+52.       drawMonster(monsterX, monsterY, monsterAngle, &#39;green&#39;, &#39;yellow&#39;);
+53.       // 3 Move
+54.       monsterX += incrementX;
+55.       // call again mainloop after 16.6 ms (60 frames/s)
+56.       requestId = requestAnimationFrame(animationLoop);
+57.     }
+58.     function drawMonster(x, y, angle, headColor, eyeColor) {
+59.       // GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
+60.       ctx.save();
+61.       // Moves the coordinate system so that the monster is drawn
+62.       // at position (x, y)
+63.       ctx.translate(x, y);
+64.       ctx.rotate(angle)
+65.       // head
+66.       ctx.fillStyle=headColor;
+67.       ctx.fillRect(0,0,200,200);
+68.       // eyes
+69.       ctx.fillStyle=&#39;red&#39;;
+70.       ctx.fillRect(35,30,20,20);
+71.       ctx.fillRect(140,30,20,20);
+72.       // interior of eye
+73.       ctx.fillStyle=eyeColor;
+74.       ctx.fillRect(43,37,10,10);
+75.       ctx.fillRect(143,37,10,10);
+76.       // Nose
+77.       ctx.fillStyle=&#39;black&#39;;
+78.       ctx.fillRect(90,70,20,80);
+79.       // Mouth
+80.       ctx.fillStyle=&#39;purple&#39;;
+81.       ctx.fillRect(60,165,80,20);
+82.       // GOOD PRACTICE !
+83.       ctx.restore();
+84.     }
+85.     function start() {
+86.       // Start the animation loop, targets 60 frames/s
+87.       requestId = requestAnimationFrame(animationLoop);
+88.     }
+89.     function stop() {
+90.       if (requestId) {
+91.         cancelAnimationFrame(requestId);
+92.       }
+93.     }
+94.   &lt;/script&gt;
+95. &lt;/body&gt;
+96. &lt;/html&gt;</pre>
 
 </details>
 
@@ -13616,48 +13616,48 @@ show when an HTML element has the focus: a border is added to it.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Listening to key events only in the canvas - Example #3&lt;/title&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    canvas {
-      border:1px solid black;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body onload=&quot;init();&quot;&gt;
-  This example shows how to handle key events in a canvas by adding a key listener to the canvas object 
-  (see the blue border around the canvas... it shows that the canvas has the focus. Try to click outside 
-  of the canvas: it will lose the focus).
-  &lt;p&gt;
-    If you don&#39;t want a border to appear when you click on the canvas, 
-  set its style to outline: none
-  &lt;/p&gt;
-  &lt;p&gt;Press a key when the canvas has the focus: an alert will display the keycode of the key you pressed. 
-    Problem: if the canvas looses the focus, key press are no more detected...&lt;/p&gt;
-  &lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; 
-    tabindex=&quot;1&quot; height=&quot;200&quot;&gt;
-  &lt;/canvas&gt;
-  &lt;script&gt;
-    var canvas;
-    function init() {
-      canvas=document.getElementById(&#39;myCanvas&#39;);
-      // This will work only if the canvas has the focus
-      canvas.addEventListener(&#39;keydown&#39;, handleKeydown, false);
-      // We can set the focus on the canvas like that:
-      //canvas.focus();
-      // ... but it will stop working if we click somewhere else
-      // in the document
-    }
-    function handleKeydown(e){
-      alert(&#39;keycode: &#39;+e.keyCode);
-      return false;
-    };
-  &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html lang=&quot;en&quot;&gt;
+3. &lt;head&gt;
+4.   &lt;meta charset=&quot;utf-8&quot;&gt;
+5.   &lt;title&gt;Listening to key events only in the canvas - Example #3&lt;/title&gt;
+6.   &lt;style type=&quot;text/css&quot;&gt;
+7.     canvas {
+8.       border:1px solid black;
+9.     }
+10.   &lt;/style&gt;
+11. &lt;/head&gt;
+12. &lt;body onload=&quot;init();&quot;&gt;
+13.   This example shows how to handle key events in a canvas by adding a key listener to the canvas object 
+14.   (see the blue border around the canvas... it shows that the canvas has the focus. Try to click outside 
+15.   of the canvas: it will lose the focus).
+16.   &lt;p&gt;
+17.     If you don&#39;t want a border to appear when you click on the canvas, 
+18.   set its style to outline: none
+19.   &lt;/p&gt;
+20.   &lt;p&gt;Press a key when the canvas has the focus: an alert will display the keycode of the key you pressed. 
+21.     Problem: if the canvas looses the focus, key press are no more detected...&lt;/p&gt;
+22.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; 
+23.     tabindex=&quot;1&quot; height=&quot;200&quot;&gt;
+24.   &lt;/canvas&gt;
+25.   &lt;script&gt;
+26.     var canvas;
+27.     function init() {
+28.       canvas=document.getElementById(&#39;myCanvas&#39;);
+29.       // This will work only if the canvas has the focus
+30.       canvas.addEventListener(&#39;keydown&#39;, handleKeydown, false);
+31.       // We can set the focus on the canvas like that:
+32.       //canvas.focus();
+33.       // ... but it will stop working if we click somewhere else
+34.       // in the document
+35.     }
+36.     function handleKeydown(e){
+37.       alert(&#39;keycode: &#39;+e.keyCode);
+38.       return false;
+39.     };
+40.   &lt;/script&gt;
+41. &lt;/body&gt;
+42. &lt;/html&gt;</pre>
 
 </details>
 
@@ -13729,108 +13729,108 @@ we call canvas.blur() to unset the focus.</p>
 <details>
   <summary>Click to expand!</summary>
   
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Setting the focus when the mouse cursor enters the canvas - Example #4&lt;/title&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    canvas {
-      border:1px solid black;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body onload=&quot;init();&quot;&gt;
-  &lt;canvas id=&quot;myCanvas&quot; tabindex=&quot;1&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
-    Your browser does not support the canvas tag.
-  &lt;/canvas&gt;
-  &lt;p&gt;
-  &lt;script&gt;
-    var canvas, ctx;
-    var monsterX=100, monsterY=100, monsterAngle=0;
-    var incrementX = 0;
-    function init() {
-      // This function is called after the page is loaded
-      // 1 - Get the canvas
-      canvas = document.getElementById(&#39;myCanvas&#39;);
-      // 2 - Get the context
-      ctx=canvas.getContext(&#39;2d&#39;);
-      // 3 add key listeners to the window element
-      canvas.addEventListener(&#39;keydown&#39;, handleKeydown, false);
-      canvas.addEventListener(&#39;keyup&#39;, handleKeyup, false);
-      canvas.addEventListener(&#39;mouseenter&#39;, setFocus, false);
-      canvas.addEventListener(&#39;mouseout&#39;, unsetFocus, false);
-      // 4 - start the animation
-      requestId = requestAnimationFrame(animationLoop);
-    }
-    function setFocus(evt) {
-      canvas.focus();
-    };
-    function unsetFocus(evt) {
-      canvas.blur();
-      incrementX = 0; // I added this line
-    };
-    function handleKeydown(evt) {
-      if (evt.keyCode === 37) {
-        //left key
-        incrementX = -1;
-      } else if (evt.keyCode === 39) {
-        // right key
-        incrementX = 1;
-      }
-    }
-    function handleKeyup(evt) {
-      incrementX = 0;
-    }
-    function animationLoop() {
-      // 1 - Clear
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      // 2 Draw
-      drawMonster(monsterX, monsterY, monsterAngle, &#39;green&#39;, &#39;yellow&#39;);
-      // 3 Move
-      monsterX += incrementX;
-      // call again mainloop after 16.6 ms (60 frames/s)
-      requestId = requestAnimationFrame(animationLoop);
-    }
-    function drawMonster(x, y, angle, headColor, eyeColor) {
-      // GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
-      ctx.save();
-      // Moves the coordinate system so that the monster is drawn
-      // at position (x, y)
-      ctx.translate(x, y);
-      ctx.rotate(angle)
-      // head
-      ctx.fillStyle=headColor;
-      ctx.fillRect(0,0,200,200);
-      // eyes
-      ctx.fillStyle=&#39;red&#39;;
-      ctx.fillRect(35,30,20,20);
-      ctx.fillRect(140,30,20,20);
-      // interior of eye
-      ctx.fillStyle=eyeColor;
-      ctx.fillRect(43,37,10,10);
-      ctx.fillRect(143,37,10,10);
-      // Nose
-      ctx.fillStyle=&#39;black&#39;;
-      ctx.fillRect(90,70,20,80);
-      // Mouth
-      ctx.fillStyle=&#39;purple&#39;;
-      ctx.fillRect(60,165,80,20);
-      // GOOD PRACTICE !
-      ctx.restore();
-    }
-    function start() {
-      // Start the animation loop, targets 60 frames/s
-      requestId = requestAnimationFrame(animationLoop);
-    }
-    function stop() {
-      if (requestId) {
-        cancelAnimationFrame(requestId);
-      }
-    }
-  &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html lang=&quot;en&quot;&gt;
+3. &lt;head&gt;
+4.   &lt;meta charset=&quot;utf-8&quot;&gt;
+5.   &lt;title&gt;Setting the focus when the mouse cursor enters the canvas - Example #4&lt;/title&gt;
+6.   &lt;style type=&quot;text/css&quot;&gt;
+7.     canvas {
+8.       border:1px solid black;
+9.     }
+10.   &lt;/style&gt;
+11. &lt;/head&gt;
+12. &lt;body onload=&quot;init();&quot;&gt;
+13.   &lt;canvas id=&quot;myCanvas&quot; tabindex=&quot;1&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;
+14.     Your browser does not support the canvas tag.
+15.   &lt;/canvas&gt;
+16.   &lt;p&gt;
+17.   &lt;script&gt;
+18.     var canvas, ctx;
+19.     var monsterX=100, monsterY=100, monsterAngle=0;
+20.     var incrementX = 0;
+21.     function init() {
+22.       // This function is called after the page is loaded
+23.       // 1 - Get the canvas
+24.       canvas = document.getElementById(&#39;myCanvas&#39;);
+25.       // 2 - Get the context
+26.       ctx=canvas.getContext(&#39;2d&#39;);
+27.       // 3 add key listeners to the window element
+28.       canvas.addEventListener(&#39;keydown&#39;, handleKeydown, false);
+29.       canvas.addEventListener(&#39;keyup&#39;, handleKeyup, false);
+30.       canvas.addEventListener(&#39;mouseenter&#39;, setFocus, false);
+31.       canvas.addEventListener(&#39;mouseout&#39;, unsetFocus, false);
+32.       // 4 - start the animation
+33.       requestId = requestAnimationFrame(animationLoop);
+34.     }
+35.     function setFocus(evt) {
+36.       canvas.focus();
+37.     };
+38.     function unsetFocus(evt) {
+39.       canvas.blur();
+40.       incrementX = 0; // I added this line
+41.     };
+42.     function handleKeydown(evt) {
+43.       if (evt.keyCode === 37) {
+44.         //left key
+45.         incrementX = -1;
+46.       } else if (evt.keyCode === 39) {
+47.         // right key
+48.         incrementX = 1;
+49.       }
+50.     }
+51.     function handleKeyup(evt) {
+52.       incrementX = 0;
+53.     }
+54.     function animationLoop() {
+55.       // 1 - Clear
+56.       ctx.clearRect(0, 0, canvas.width, canvas.height);
+57.       // 2 Draw
+58.       drawMonster(monsterX, monsterY, monsterAngle, &#39;green&#39;, &#39;yellow&#39;);
+59.       // 3 Move
+60.       monsterX += incrementX;
+61.       // call again mainloop after 16.6 ms (60 frames/s)
+62.       requestId = requestAnimationFrame(animationLoop);
+63.     }
+64.     function drawMonster(x, y, angle, headColor, eyeColor) {
+65.       // GOOD PRACTICE : SAVE CONTEXT AND RESTORE IT AT THE END
+66.       ctx.save();
+67.       // Moves the coordinate system so that the monster is drawn
+68.       // at position (x, y)
+69.       ctx.translate(x, y);
+70.       ctx.rotate(angle)
+71.       // head
+72.       ctx.fillStyle=headColor;
+73.       ctx.fillRect(0,0,200,200);
+74.       // eyes
+75.       ctx.fillStyle=&#39;red&#39;;
+76.       ctx.fillRect(35,30,20,20);
+77.       ctx.fillRect(140,30,20,20);
+78.       // interior of eye
+79.       ctx.fillStyle=eyeColor;
+80.       ctx.fillRect(43,37,10,10);
+81.       ctx.fillRect(143,37,10,10);
+82.       // Nose
+83.       ctx.fillStyle=&#39;black&#39;;
+84.       ctx.fillRect(90,70,20,80);
+85.       // Mouth
+86.       ctx.fillStyle=&#39;purple&#39;;
+87.       ctx.fillRect(60,165,80,20);
+88.       // GOOD PRACTICE !
+89.       ctx.restore();
+90.     }
+91.     function start() {
+92.       // Start the animation loop, targets 60 frames/s
+93.       requestId = requestAnimationFrame(animationLoop);
+94.     }
+95.     function stop() {
+96.       if (requestId) {
+97.         cancelAnimationFrame(requestId);
+98.       }
+99.     }
+100.   &lt;/script&gt;
+101. &lt;/body&gt;
+102. &lt;/html&gt;</pre>
 
 </details>
 
@@ -14171,52 +14171,52 @@ stops:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>var canvas, ctx;
-var monsterX=100, monsterY=100, monsterAngle=0;
-var incrementX = 0;
-var incrementAngle =0;
-var mousePos;
-
-function init() {
-  ...
-  // 3bis - Add mouse listeners
-  canvas.addEventListener(&#39;mousemove&#39;, handleMousemove, false);
-  canvas.addEventListener(&#39;mousedown&#39;, handleMousedown, false);
-  canvas.addEventListener(&#39;mouseup&#39;, handleMouseup, false);
-  // 4 - Start the animation
-  requestId = requestAnimationFrame(animationLoop);
-}
-function handleMousemove(evt) {
-  // The mousePos will be taken into account in the animationLoop
-  mousePos = getMousePos(canvas, evt);
-}
-function handleMousedown(evt) {
-  // the increment on the angle will be
-  // taken into account in the animationLoop
-  incrementAngle = 0.1;
-}
-function handleMouseup(evt) {
-  incrementAngle = 0;  // stops the rotation
-}
-function getMousePos(canvas, evt) {
-  ... // same as before
-}
-...
-function animationLoop() {
-  // 1 - Clear
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  // 2 - Draw
-  drawMonster(monsterX, monsterY, monsterAngle, &#39;green&#39;, &#39;yellow&#39;);
-  // 3 - Move
-  if(mousePos !== undefined) { // test necessary, maybe the mouse is not yet on canvas
-    monsterX = mousePos.x;
-    monsterY = mousePos.y;
-    monsterAngle += incrementAngle;
-  }
-  ...
-  // call again mainloop after 16.6 ms (60 frames/s)
-  requestId = requestAnimationFrame(animationLoop);
-}</pre>
+<pre>1. var canvas, ctx;
+2. var monsterX=100, monsterY=100, monsterAngle=0;
+3. var incrementX = 0;
+4. var incrementAngle =0;
+5. var mousePos;
+6. 
+7. function init() {
+8.   ...
+9.   // 3bis - Add mouse listeners
+10.   canvas.addEventListener(&#39;mousemove&#39;, handleMousemove, false);
+11.   canvas.addEventListener(&#39;mousedown&#39;, handleMousedown, false);
+12.   canvas.addEventListener(&#39;mouseup&#39;, handleMouseup, false);
+13.   // 4 - Start the animation
+14.   requestId = requestAnimationFrame(animationLoop);
+15. }
+16. function handleMousemove(evt) {
+17.   // The mousePos will be taken into account in the animationLoop
+18.   mousePos = getMousePos(canvas, evt);
+19. }
+20. function handleMousedown(evt) {
+21.   // the increment on the angle will be
+22.   // taken into account in the animationLoop
+23.   incrementAngle = 0.1;
+24. }
+25. function handleMouseup(evt) {
+26.   incrementAngle = 0;  // stops the rotation
+27. }
+28. function getMousePos(canvas, evt) {
+29.   ... // same as before
+30. }
+31. ...
+32. function animationLoop() {
+33.   // 1 - Clear
+34.   ctx.clearRect(0, 0, canvas.width, canvas.height);
+35.   // 2 - Draw
+36.   drawMonster(monsterX, monsterY, monsterAngle, &#39;green&#39;, &#39;yellow&#39;);
+37.   // 3 - Move
+38.   if(mousePos !== undefined) { // test necessary, maybe the mouse is not yet on canvas
+39.     monsterX = mousePos.x;
+40.     monsterY = mousePos.y;
+41.     monsterAngle += incrementAngle;
+42.   }
+43.   ...
+44.   // call again mainloop after 16.6 ms (60 frames/s)
+45.   requestId = requestAnimationFrame(animationLoop);
+46. }</pre>
 
 </details>
 
@@ -15684,25 +15684,25 @@ attribute results=5 shows a small icon on the left:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Example of input type=email&lt;/title&gt;
-    &lt;style&gt;
-       input:? {
-       background-color:pink;
-       }
-       input:?? {
-       background-color:lightGreen;
-       }
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;label for=&quot;email&quot;&gt;Enter your email:&lt;/label&gt;
-    &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html&gt;
+3.   &lt;head&gt;
+4.   &lt;meta charset=&quot;utf-8&quot;&gt;
+5.     &lt;title&gt;Example of input type=email&lt;/title&gt;
+6.     &lt;style&gt;
+7.        input:? {
+8.        background-color:pink;
+9.        }
+10.        input:?? {
+11.        background-color:lightGreen;
+12.        }
+13.     &lt;/style&gt;
+14.   &lt;/head&gt;
+15.   &lt;body&gt;
+16.     &lt;label for=&quot;email&quot;&gt;Enter your email:&lt;/label&gt;
+17.     &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
+18.   &lt;/body&gt;
+19. &lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18143,9 +18143,9 @@ corresponding data to restore.</p>
 user has loaded your application, you can use the following code (just
 to show how to use setItem/removeItem methods):</p>
 
-<pre>1.  var counter = localStorage.getItem(&quot;count&quot;) || 0;
-2.  counter++;
-3.  localStorage.setItem(&quot;count&quot;, counter);</pre>
+<pre>1. var counter = localStorage.getItem(&quot;count&quot;) || 0;
+2. counter++;
+3. localStorage.setItem(&quot;count&quot;, counter);</pre>
 
 <p>As you can easily guess from the above, we use var value =
 getItem(key) to retrieve a key’s value and setItem(key, value) to set
@@ -18362,45 +18362,45 @@ called the function restorePreferences).</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>function initPreferences() {
-  console.log(&quot;Adding input listener to all input fields&quot;);
-  // add an input listener to all input fields
-  var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
-  for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
-    addInputListener(listOfInputsInForm[i]);
-  }
-    // restore preferences
-    restorePreferences();
-    applyGUIvalues(); // Use the input fields&#39; values we just restored to set internal 
-                      // size, incX, color, lineWidth variables
-}
-
-function addInputListener(inputField) {
-  // same as before
-}
-
-function restorePreferences() {
-  // same as old restoreFormContent
-}
-
-function applyGUIvalues() {
-  // Check restored input field content to set the size of the rectangle
-  var sizeWidget = document.getElementById(&quot;size&quot;);
-  size = Math.sign(incX)*parseInt(sizeWidget.value);
-  // also update the outline element&#39;s value
-  document.getElementById(&quot;sizeValue&quot;).innerHTML = size;
-  // Check restored input field content to set the color of the rectangle
-  var colorWidget = document.getElementById(&quot;color&quot;);
-  ctx.fillStyle = colorWidget.value;
-  // Check restored input field content to set the speed of the rectangle
-  var speedWidget = document.getElementById(&quot;speed&quot;);
-  incX = Math.sign(incX)*parseInt(speedWidget.value);
-  // also update the outline element&#39;s value
-  document.getElementById(&quot;speedValue&quot;).innerHTML = Math.abs(incX);
-  // Check restored input field content to set the lineWidth of the rectangle
-  var lineWidthWidget = document.getElementById(&quot;lineWidth&quot;);
-  ctx.lineWidth = parseInt(lineWidthWidget.value);
-}</pre>
+<pre>1. function initPreferences() {
+2.   console.log(&quot;Adding input listener to all input fields&quot;);
+3.   // add an input listener to all input fields
+4.   var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
+5.   for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
+6.     addInputListener(listOfInputsInForm[i]);
+7.   }
+8.     // restore preferences
+9.     restorePreferences();
+10.     applyGUIvalues(); // Use the input fields&#39; values we just restored to set internal 
+11.                       // size, incX, color, lineWidth variables
+12. }
+13. 
+14. function addInputListener(inputField) {
+15.   // same as before
+16. }
+17. 
+18. function restorePreferences() {
+19.   // same as old restoreFormContent
+20. }
+21. 
+22. function applyGUIvalues() {
+23.   // Check restored input field content to set the size of the rectangle
+24.   var sizeWidget = document.getElementById(&quot;size&quot;);
+25.   size = Math.sign(incX)*parseInt(sizeWidget.value);
+26.   // also update the outline element&#39;s value
+27.   document.getElementById(&quot;sizeValue&quot;).innerHTML = size;
+28.   // Check restored input field content to set the color of the rectangle
+29.   var colorWidget = document.getElementById(&quot;color&quot;);
+30.   ctx.fillStyle = colorWidget.value;
+31.   // Check restored input field content to set the speed of the rectangle
+32.   var speedWidget = document.getElementById(&quot;speed&quot;);
+33.   incX = Math.sign(incX)*parseInt(speedWidget.value);
+34.   // also update the outline element&#39;s value
+35.   document.getElementById(&quot;speedValue&quot;).innerHTML = Math.abs(incX);
+36.   // Check restored input field content to set the lineWidth of the rectangle
+37.   var lineWidthWidget = document.getElementById(&quot;lineWidth&quot;);
+38.   ctx.lineWidth = parseInt(lineWidthWidget.value);
+39. }</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18890,34 +18890,34 @@ saw the last week, some canvas here, or image elements and so on.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Example of using readAsDataURL&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;input type=&quot;file&quot; multiple onchange=&quot;readImagesAndPreview(this.files);&quot;&gt;
-    &lt;p&gt;
-    &lt;div id=&quot;thumbnails&quot;&gt;&lt;/div&gt;
-    &lt;script&gt;
-      var container = document.getElementById(&quot;thumbnails&quot;);
-      function readImagesAndPreview(files) {
-        for(var i=0; i &lt; files.length; i++) {
-           var f = files[i];
-           var reader = new FileReader();
-           reader.onload = function(e) {
-              var img = document.createElement(&quot;img&quot;);
-              img.src = e.target.result;
-              img.width = 100;
-              container.appendChild(img);
-           }
-           reader.readAsDataURL(f);
-        }
-      }
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html lang=&quot;en&quot;&gt;
+3. &lt;head&gt;
+4.   &lt;meta charset=&quot;utf-8&quot;&gt;
+5.   &lt;title&gt;Example of using readAsDataURL&lt;/title&gt;
+6. &lt;/head&gt;
+7. &lt;body&gt;
+8.   &lt;input type=&quot;file&quot; multiple onchange=&quot;readImagesAndPreview(this.files);&quot;&gt;
+9.     &lt;p&gt;
+10.     &lt;div id=&quot;thumbnails&quot;&gt;&lt;/div&gt;
+11.     &lt;script&gt;
+12.       var container = document.getElementById(&quot;thumbnails&quot;);
+13.       function readImagesAndPreview(files) {
+14.         for(var i=0; i &lt; files.length; i++) {
+15.            var f = files[i];
+16.            var reader = new FileReader();
+17.            reader.onload = function(e) {
+18.               var img = document.createElement(&quot;img&quot;);
+19.               img.src = e.target.result;
+20.               img.width = 100;
+21.               container.appendChild(img);
+22.            }
+23.            reader.readAsDataURL(f);
+24.         }
+25.       }
+26.     &lt;/script&gt;
+27. &lt;/body&gt;
+28. &lt;/html&gt;</pre>
 
 </details>
 
@@ -18970,33 +18970,33 @@ about the first selected file. Please try it below on your browser
 <details>
   <summary>Click to expand!</summary>
 
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=utf-8 /&gt;
-  &lt;title&gt;Reading file metadata&lt;/title&gt;
-  &lt;script&gt;
-    function displayFirstSelectedFileMetadata() {
-      var selectedFile = document.getElementById(&#39;input&#39;).files[0];
-        document.querySelector(&quot;#singleName&quot;).innerHTML = selectedFile.name;
-        document.querySelector(&quot;#singleSize&quot;).innerHTML = selectedFile.size + &quot; bytes&quot;;
-        document.querySelector(&quot;#singleType&quot;).innerHTML = selectedFile.type;
-        document.querySelector(&quot;#singleDate&quot;).innerHTML = selectedFile.lastModifiedDate;
-    }
-  &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  Select one or more files: &lt;input type=&quot;file&quot; id=&quot;input&quot;
-    onchange=&quot;displayFirstSelectedFileMetadata();&quot;/&gt;
-  &lt;p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;File name: &lt;span id=&quot;singleName&quot;&gt;&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;File size: &lt;span id=&quot;singleSize&quot;&gt;&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;File type: &lt;span id=&quot;singleType&quot;&gt;&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;File last modification date: &lt;span id=&quot;singleDate&quot;&gt;&lt;/span&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+<pre>1. &lt;!DOCTYPE html&gt;
+2. &lt;html lang=&quot;en&quot;&gt;
+3. &lt;head&gt;
+4.   &lt;meta charset=utf-8 /&gt;
+5.   &lt;title&gt;Reading file metadata&lt;/title&gt;
+6.   &lt;script&gt;
+7.     function displayFirstSelectedFileMetadata() {
+8.       var selectedFile = document.getElementById(&#39;input&#39;).files[0];
+9.         document.querySelector(&quot;#singleName&quot;).innerHTML = selectedFile.name;
+10.         document.querySelector(&quot;#singleSize&quot;).innerHTML = selectedFile.size + &quot; bytes&quot;;
+11.         document.querySelector(&quot;#singleType&quot;).innerHTML = selectedFile.type;
+12.         document.querySelector(&quot;#singleDate&quot;).innerHTML = selectedFile.lastModifiedDate;
+13.     }
+14.   &lt;/script&gt;
+15. &lt;/head&gt;
+16. &lt;body&gt;
+17.   Select one or more files: &lt;input type=&quot;file&quot; id=&quot;input&quot;
+18.     onchange=&quot;displayFirstSelectedFileMetadata();&quot;/&gt;
+19.   &lt;p&gt;
+20.   &lt;ul&gt;
+21.     &lt;li&gt;File name: &lt;span id=&quot;singleName&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+22.     &lt;li&gt;File size: &lt;span id=&quot;singleSize&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+23.     &lt;li&gt;File type: &lt;span id=&quot;singleType&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+24.     &lt;li&gt;File last modification date: &lt;span id=&quot;singleDate&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+25.   &lt;/ul&gt;
+26. &lt;/body&gt;
+27. &lt;/html&gt;</pre>
 
 </details>
 
@@ -19551,34 +19551,34 @@ The reader.readAsDataUrl method is used for that.</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>function drawImage(imageFile) {
-  var reader = new FileReader();
- 
-  //capture the file information.
-  reader.onload = function(e) {
-    // For drawing an image on a canvas we
-    // need an image object
-    var img = new Image();
-    // Even if the file has been read, decoding
-    // the dataURL format may take some time
-    // so we need to use the regular way of
-    // working with images: onload callback    
-    // that will be called after setting the src attribute
-    img.onload = function(e) {
-      // draw the image!
-      ctx.drawImage(img, 0, 0, 400, 400);
-    }
-    // e.target.result is the dataURL, so we set the
-    // src if the image with it. This will call
-    // asynchonously the onload callback
-    img.src= e.target.result;
-  };
-  // Read in the image file as a data URL.
-  reader.readAsDataURL(imageFile);
-}
-function readFileAndDraw(files) {
-  drawImage(files[0]);
-}</pre>
+<pre>1. function drawImage(imageFile) {
+2.   var reader = new FileReader();
+3.  
+4.   //capture the file information.
+5.   reader.onload = function(e) {
+6.     // For drawing an image on a canvas we
+7.     // need an image object
+8.     var img = new Image();
+9.     // Even if the file has been read, decoding
+10.     // the dataURL format may take some time
+11.     // so we need to use the regular way of
+12.     // working with images: onload callback    
+13.     // that will be called after setting the src attribute
+14.     img.onload = function(e) {
+15.       // draw the image!
+16.       ctx.drawImage(img, 0, 0, 400, 400);
+17.     }
+18.     // e.target.result is the dataURL, so we set the
+19.     // src if the image with it. This will call
+20.     // asynchonously the onload callback
+21.     img.src= e.target.result;
+22.   };
+23.   // Read in the image file as a data URL.
+24.   reader.readAsDataURL(imageFile);
+25. }
+26. function readFileAndDraw(files) {
+27.   drawImage(files[0]);
+28. }</pre>
 
 </details>
 
@@ -19846,23 +19846,23 @@ that will hold one or several of the following options:</p>
 <details>
   <summary>Click to expand!</summary>
 
-<pre>// Just ask to turn GPS on, if available
-navigator.geolocation.getCurrentPosition(onSuccess, onError,
-                                     {enableHighAccuracy:true});
-// maximumAge = 10 mins, the position can be cached for 10 mins,
-// useful when in tunnels...When the device tries to get
-// a position, if it does not succeed, then go on error
-// immediately
-navigator.geolocation.getCurrentPosition(onSuccess, onError,
-                                {maximumAge:600000, timeout:0});
-// Position will never come from the cache (maximumAge: 0), and
-// if after 0.1s the position could not be computed, then go on
-// error
-navigator.geolocation.getCurrentPosition(onSuccess, onError,
-                                   {maximumAge:0, timeout:100});
-// Ask for GPS, cache for 30s, 27s before going on error...
-watchId=navigator.geolocation.watchPosition(onSuccess, onError,
-  {enableHighAccuracy:true, maximumAge:30000, timeout:27000});</pre>
+<pre>1. // Just ask to turn GPS on, if available
+2. navigator.geolocation.getCurrentPosition(onSuccess, onError,
+3.                                      {enableHighAccuracy:true});
+4. // maximumAge = 10 mins, the position can be cached for 10 mins,
+5. // useful when in tunnels...When the device tries to get
+6. // a position, if it does not succeed, then go on error
+7. // immediately
+8. navigator.geolocation.getCurrentPosition(onSuccess, onError,
+9.                                 {maximumAge:600000, timeout:0});
+10. // Position will never come from the cache (maximumAge: 0), and
+11. // if after 0.1s the position could not be computed, then go on
+12. // error
+13. navigator.geolocation.getCurrentPosition(onSuccess, onError,
+14.                                    {maximumAge:0, timeout:100});
+15. // Ask for GPS, cache for 30s, 27s before going on error...
+16. watchId=navigator.geolocation.watchPosition(onSuccess, onError,
+17.   {enableHighAccuracy:true, maximumAge:30000, timeout:27000});</pre>
 
 </details>
 
@@ -19936,22 +19936,22 @@ watchId=navigator.geolocation.watchPosition(onSuccess, onError,
 <details>
   <summary>Click to expand!</summary>
 
-<pre>html, body {
-    height: 100%
-  }
-  .map {
-    height: 300px;
-  }
-  .btn {
-    background-color: rgba(10, 10, 230, .5);
-    border: 0;
-    color: #fff;
-    padding: 10px;
-    text-shadow: 0 0 1px rgba(0, 0, 0, .3);
-    text-decoration: none;
-    margin: 0.5rem 0 1rem;
-    display: inline-block;
-  }</pre>
+<pre>1. html, body {
+2.     height: 100%
+3.   }
+4.   .map {
+5.     height: 300px;
+6.   }
+7.   .btn {
+8.     background-color: rgba(10, 10, 230, .5);
+9.     border: 0;
+10.     color: #fff;
+11.     padding: 10px;
+12.     text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+13.     text-decoration: none;
+14.     margin: 0.5rem 0 1rem;
+15.     display: inline-block;
+16.   }</pre>
 
 </details>
 
