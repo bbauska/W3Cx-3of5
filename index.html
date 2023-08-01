@@ -19,38 +19,39 @@
   <title>W3Cx-3of5-HTML5.1x</title>
   <link rel="canonical" href="https://w3cx-3of5.bauska.org">
   <link rel="stylesheet" href="./css/more-styles.css" />
-  <link rel="stylesheet" href="./css/default.min.css">
-  <script src="/js/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
 </head>
 
 <body>
 <!-- starts -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ script function: scrollFunction() ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<script>
-<!-- get the button -->
-var mybutton = document.getElementById("myBtn");
+  <script src="/js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>
+  <!-- get the button -->
+  var mybutton = document.getElementById("myBtn");
 
-<!-- when the user scrolls down 10px from the top of the document, show the "Top" button -->
-window.onscroll = function() {scrollFunction()};
+  <!-- when the user scrolls down 10px from the top of the document, show the "Top" button -->
+  window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+  function scrollFunction() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
   }
-}
 
-<!-- when the user clicks on the button, scroll to the top of the document. 0,0 or to top of -->
-<!-- menu button (2120 on other example) -->
-function topFunction() {
-  document.body.scrollTop = 400;
-  document.documentElement.scrollTop = 400;
-}
+  <!-- when the user clicks on the button, scroll to the top of the document. 0,0 or to top of -->
+  <!-- menu button (2120 on other example) -->
+  function topFunction() {
+    document.body.scrollTop = 400;
+    document.documentElement.scrollTop = 400;
+  }
 </script>
 
 <h1 style="text-align:center;">W3Cx Front-End Web Developer</h1>
