@@ -1,4 +1,4 @@
-/* styles.css of w3cx-1of5 */
+/* more-styles.css of w3cx-3of5 */
   img.displayed {
     display: block;
     margin: 0 auto; }
@@ -7,10 +7,7 @@
     border-width: 1px;
     border-color: #778899;  /* dark grayish blue */
     border-style: solid; }
-/*
-font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", 
-  "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-*/
+
   ol li { 
     padding: 10px; 
   }
@@ -92,6 +89,10 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
   }
 
 details {
+  font: 13px Inter, sans-serif, Bahnschrift, Calibri;
+  width: 65%;
+}
+summary {
   font: 13px Inter, sans-serif, Bahnschrift, Calibri;
   width: 65%;
 }
