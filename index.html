@@ -6574,7 +6574,7 @@ ta</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image125.webp?raw=true"
-  style="width:65%"
+  style="width:700px;height:589px;"
   alt="Snapshot of an Canvas cheatsheet from skilled.com." />
 
 <ol start="2" type="1">
@@ -6585,7 +6585,7 @@ ta</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image126.webp?raw=true"
-  style="width:65%"
+  style="width:1388px;height;1087px;"
   alt="Snapshot of HTML5 Canvas cheatsheet API." />
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19079,76 +19079,68 @@ So, when we enter this function that means that one file has been read
 and we can get the content of the file through the event using the
 ‘e.target.result’ property. Each time I read a file I can get its
 content here and it’s a data URL that contains all the pixels.</p>
-<p>What we do in that example, is that we create a &lt;span&gt;. In the span
-with the innerHTML, we add an image that has for src attribute the
-content of the image we read as a data URL.</p>
-<p>And finally, we just insert this image in the document and this is
-when we see it.</p>
-<p>I’m going to live code this one, maybe a simpler version so that you
-can see the different steps in real time. First, I add an ‘input
-type=file multiple’ for selecting multiple files. This is what’s
-happening and here I can select several images. I’m going to add an
-‘onchange’ listener:</p>
+<p>What we do in that example, is that we create a &lt;span&gt;. In the span with the 
+innerHTML, we add an image that has for src attribute the content of the image we read 
+as a data URL.</p>
+<p>And finally, we just insert this image in the document and this is when we see it.</p>
+<p>I’m going to live code this one, maybe a simpler version so that you can see the 
+different steps in real time. First, I add an ‘input type=file multiple’ for 
+selecting multiple files. This is what’s happening and here I can select several 
+images. I’m going to add an ‘onchange’ listener:</p>
 
 <pre>&#39;onchange=readImagesAndPreview()&#39;.</pre>
 
-<p>And I’m going to pass the set of file descriptors that have been
-selected: ‘this.files’ is the correct way to send the selected files to
-a Javascript function.</p>
-<p>Now, I’m going to start writing some script. But before, I will add a
-space, let’s say ‘div id=thumbnails’.</p>
-<p>This is an empty container that will be used for inserting the
-preview of the images.</p>
-<p>Now I’m going in the script part. In the script part, we’re going to
-write this function ‘readImagesAndPreview()’ and it takes as parameter
-the files that will be sent.</p>
-<p>And here if I want just to read the first file I will just show you
-how it works. I create a reader object, like that, and I ask the reader
-to ‘readAsDataURL’ the first file.</p>
-<p>What is happening is that this may take some time and I need to
-declare, before reading the files, a callback that will be code only
-once the file would have been read - ‘reader.onload’</p>
-<p>And here, what can I do with the file that has been read, I will
-create an image element.</p>
-<p>So i created an image element, I set the source of this element with
-the file content that is in the ‘e.target.value’. So I created an image.
-Then, I will add the image to the container here. I’m going to declare
-the container here. How can I add an element: ‘container.appendChild’
-and I add the image I created.</p>
-<p>Let’s try it, maybe I made some mistakes. I select several files, I
-open them and here, apparently, I make a small mistake.</p>
-<p>Let’s open an image and now read the image and I can see the
-preview.</p>
+<p>And I’m going to pass the set of file descriptors that have been selected; 
+‘this.files’ is the correct way to send the selected files to a Javascript function.</p>
+<p>Now, I’m going to start writing some script. But before, I will add a space, 
+let’s say ‘div id=thumbnails’.</p>
+<p>This is an empty container that will be used for inserting the preview of the images.</p>
+<p>Now I’m going in the script part. In the script part, we’re going to write this 
+function ‘readImagesAndPreview()’ and it takes as parameter the files that will be sent.</p>
+<p>And here if I want just to read the first file I will just show you how it works. 
+I create a reader object, like that, and I ask the reader to ‘readAsDataURL’ the first 
+file.</p>
+<p>What is happening is that this may take some time and I need to declare, before 
+reading the files, a callback that will be code only once the file would have been read 
+- ‘reader.onload’</p>
+<p>And here, what can I do with the file that has been read, I will create an image 
+element.</p>
+<p>So i created an image element, I set the source of this element with the file content 
+that is in the ‘e.target.value’. So I created an image.  Then, I will add the image to 
+the container here. I’m going to declare the container here. How can I add an element: 
+‘container.appendChild’ and I add the image I created.</p>
+<p>Let’s try it, maybe I made some mistakes. I select several files, I open them and 
+here, apparently, I make a small mistake.</p>
+<p>Let’s open an image and now read the image and I can see the preview.</p>
 <p>If you look carefully, it’s just a few lines of code.</p>
-<p>So now I’m going to show you how we could work with not only one
-single image, but several images. The trick consists in adding a ‘for’
-loop.</p>
-<p>We will iterate on the length of the file’s variable here. If we got
-3 files, we do 3 loops. I’m going to define a variable called ‘f’ that
-will correspond to the current file.</p>
+<p>So now I’m going to show you how we could work with not only one single image, 
+but several images. The trick consists in adding a ‘for’ loop.</p>
+<p>We will iterate on the length of the file’s variable here. If we got 3 files, 
+we do 3 loops. I’m going to define a variable called ‘f’ that will correspond 
+to the current file.</p>
 <p>What we are going to read this time is the current file ‘f’.</p>
-<p>So this loop here, will first read files, for each one we do read as
-data URL, when the file is read we enter the onload callback, we create
-an image with the result.</p>
-<p>I’m going just to add some constraints on the size, because when I
-tried earlier I had big images that could not fit on the screen.</p>
+<p>So this loop here, will first read files, for each one we do read as data URL, 
+when the file is read we enter the onload callback, we create an image with the 
+result.</p>
+<p>I’m going just to add some constraints on the size, because when I tried earlier 
+I had big images that could not fit on the screen.</p>
 <p>I constraint the width to 100px and the height will just follow.</p>
 <p>Like this, let’s try. If I select several pictures, two of them,</p>
-<p>I can see the two pictures. If I select more, then I can see the
-whole set of pictures that are coming as previews.</p>
-<p>You can see that the number of lines of code is really small and this
-is quiet powerful.</p>
+<p>I can see the two pictures. If I select more, then I can see the whole set of 
+pictures that are coming as previews.</p>
+<p>You can see that the number of lines of code is really small and this is quiet 
+powerful.</p>
 <p>If you want to write, for example, a Web site that will upload
 pictures, you can preview them, select them and then upload them.</p>
 <p>I show you earlier the application by one of the students that can do
 Instagram like filters, but you can also find some new on the Chrome
 store.</p>
-<p>I installed one that is called Polarr that is using HTML for all the
-functionalities. So you can just import a picture, let’s say this one.
-Then you can select filters, you can do some corrections on it and so
-on, and finally you can export it and that’s all.</p>
-<p>All this here is HTML5, this is canvas, these are form elements we
-saw the last week, some canvas here, or image elements and so on.</p>
+<p>I installed one that is called Polarr that is using HTML for all the functionalities. 
+So you can just import a picture, let’s say this one.  Then you can select filters, 
+you can do some corrections on it and so on, and finally you can export it and that’s 
+all.</p>
+<p>All this here is HTML5, this is canvas, these are form elements we saw the last 
+week, some canvas here, or image elements and so on.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 311. image previews (374) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19315,28 +19307,44 @@ not images will be greyed and non selectable.</p>
 <h4>Explanations:</h4>
 
 <ul>
-  <li><i>Line 1:</i> we used the multiple attribute to allow the selection of multiple files in the file chooser (using shift or control keys). The accept=“image/” attribute is a filter that restricts selection to images only. Finally, the onchange listener will call the filesProcess(…) function, passing as parameter the list of selected files for the current element (this.files).<br></li>
-  <li><i>Lines 9 and 13:</i> we prepare the HTML code for building a &lt;table&gt; with the results.<br></li>
-  <li><i>Line 7:</i> this for loop builds all the rows that compose the table, adding HTML code to  the selection string variable. At the end of the loop, this variable contains all the HTML code that corresponds to the table of results.<br></li>
-  <li><i>Line 14:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the &lt;div id=“result”&gt; in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically.</li>
+  <li><i>Line 1:</i> we used the multiple attribute to allow the selection of 
+    multiple files in the file chooser (using shift or control keys). 
+	The accept=“image/” attribute is a filter that restricts selection to images only. 
+	Finally, the onchange listener will call the filesProcess(…) function, passing as 
+	parameter the list of selected files for the current element (this.files).<br></li>
+  <li><i>Lines 9 and 13:</i> we prepare the HTML code for building a &lt;table&gt; 
+    with the results.<br></li>
+  <li><i>Line 7:</i> this for loop builds all the rows that compose the table, adding 
+    HTML code to  the selection string variable. At the end of the loop, this variable 
+    contains all the HTML code that corresponds to the table of results.<br></li>
+  <li><i>Line 14:</i> the table is added to the page. We use the innerHTML attribute of 
+    the DOM element corresponding to the &lt;div id=“result”&gt; in order to insert the 
+	table as its child in the DOM tree. As such, the table appears on the page dynamically.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-4">6.3.4 Blob and File</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <a href="https://www.w3.org/TR/FileAPI/" target="_blank" rel="noopener noreferrer">HTML5 File API
-specification</a> introduces several interfaces:</p>
+<p>The <a href="https://www.w3.org/TR/FileAPI/" target="_blank" 
+rel="noopener noreferrer">HTML5 File API specification</a> introduces several interfaces:</p>
 
 <ul>
-  <li>the <a href="https://www.w3.org/TR/FileAPI/#filelist-section" target="_blank" rel="noopener noreferrer">FileList</a>interface (we already met it) the files property is a FileList,</li>
-  <li>the <a href="https://www.w3.org/TR/FileAPI/#file-section" target="_blank" rel="noopener noreferrer">File</a> interface that is useful for getting details about a file (the file variable in the for loop of the last example illustrates this),</li>
-  <li>the <a href="https://www.w3.org/TR/FileAPI/#blob-section" target="_blank" rel="noopener noreferrer">Blob</a> interface helps read binary data (only) that is accessed slice by slice (as chunks of data, each one being a “Blob”), </li>
-  <li>and the <a href="https://www.w3.org/TR/FileAPI/#APIASynch" target="_blank" rel="noopener noreferrer">FileReader</a> interface for reading file content (we will see how to use it in the next section of the course).</li>
+  <li>the <a href="https://www.w3.org/TR/FileAPI/#filelist-section" target="_blank" 
+    rel="noopener noreferrer">FileList</a>interface (we already met it) the files 
+	property is a FileList,</li>
+  <li>the <a href="https://www.w3.org/TR/FileAPI/#file-section" target="_blank" 
+    rel="noopener noreferrer">File</a> interface that is useful for getting details 
+	about a file (the file variable in the for loop of the last example illustrates this),</li>
+  <li>the <a href="https://www.w3.org/TR/FileAPI/#blob-section" target="_blank" 
+    rel="noopener noreferrer">Blob</a> interface helps read binary data (only) 
+	that is accessed slice by slice (as chunks of data, each one being a “Blob”),</li>
+  <li>and the <a href="https://www.w3.org/TR/FileAPI/#APIASynch" target="_blank" 
+    rel="noopener noreferrer">FileReader</a> interface for reading file content 
+	(we will see how to use it in the next section of the course).</li>
 </ul>
 
-<p>We will not use all of these interfaces, but let’s explain the
-difference between Blob and File, as most of the methods exposed by
-the FileReader interface take indiscriminately a Blob or a File as
-parameter.</p>
+<p>We will not use all of these interfaces, but let’s explain the difference between 
+Blob and File, as most of the methods exposed by the FileReader interface take 
+indiscriminately a Blob or a File as parameter.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 312. the blob movie poster (377) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19368,7 +19376,8 @@ example below).</p>
 <h4>[Advanced]</h4>
 
 <p>If you are interested in seeing how Blob objects can be used, <a
-href="https://jsbin.com/jefitop/1/edit?html,output" target="_blank" rel="noopener noreferrer">here is an example
+href="https://jsbin.com/jefitop/1/edit?html,output" target="_blank" 
+rel="noopener noreferrer">here is an example
 “as is” that shows how to download an image using Xhr2</a> (Xml Http
 Request version 2). The examples uses a &lt;progress&gt; element to show the
 download progress, and uses xhr.responseType = ‘blob’; to indicate that
@@ -19376,7 +19385,8 @@ the file we are going to download is a binary file (a blob). Try the
 example, then comment the line with responseType=‘blob’. In this case,
 you will notice that the image file is not properly decoded by the
 browser and is not displayed in the page. We explain Xhr2 in the <a
-href="https://www.edx.org/course/html5-apps-and-games" target="_blank" rel="noopener noreferrer">W3C HTML5 Apps and Games</a> course.</p>
+href="https://www.edx.org/course/html5-apps-and-games" target="_blank" 
+rel="noopener noreferrer">W3C HTML5 Apps and Games</a> course.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>6.3.5 Reading file content</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19394,7 +19404,8 @@ taken from the FileReader interface. Here is how you create a FileReader obj
   <li>var reader = new FileReader();</li>
 </ol>
 
-<h4>Steps #2 and #3: first call a method of the FileReader object for reading the file content, then get the file content in an onload callback</h4>
+<h4>Steps #2 and #3: first call a method of the FileReader object for reading 
+the file content, then get the file content in an onload callback</h4>
 
 <p>There are three different methods available for reading a file’s
 content: readAsText, readAsArrayBuffer for binary data and also
@@ -19426,15 +19437,17 @@ the readAsText method:</p>
 
 <p>The above code shows how a file can be read as text. The function is
 called, for example by clicking on the button corresponding to
-a &lt;input type=“file” id=“file” onchange=“readFileContent(this.files)”/&gt;, and by choosing a file.
-</p>
+a &lt;input type=“file” id=“file” onchange=“readFileContent(this.files)”/&gt;, and 
+by choosing a file.</p>
 
 <ul>
   <li><i>Line 11</i> is executed first, and asks the Reader object to read the file f as text. 
-    As this takes some time, it’s an asynchronous operation that will be executed by the browser in the background. 
-    When the file is read, the reader.onload callback function is called.</li>
-  <li><i>Line 4</i> is executed after <i>line 11</i>, and is called only when the file content is available. 
-    This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
+    As this takes some time, it’s an asynchronous operation that will be executed by the 
+	browser in the background.  When the file is read, the reader.onload callback function 
+	is called.</li>
+  <li><i>Line 4</i> is executed after <i>line 11</i>, and is called only when the file 
+    content is available.  This callback takes an event e as a unique parameter, and 
+	e.target.result is the file content.</li>
 </ul>
 
 <p>Try a variation of the above code in your browser, that displays the
@@ -19460,8 +19473,8 @@ contents as text, dataURL and binary.</p>
 
 <h4>Example #1: read a single file’s content</h4>
 
-<p><a href="https://jsbin.com/xewemi/edit?html,output" target="_blank" rel="noopener noreferrer">Example at
-JSBin</a>, or try it below in your browser:</p>
+<p><a href="https://jsbin.com/xewemi/edit?html,output" target="_blank" rel="noopener noreferrer">
+Example at JSBin</a>, or try it below in your browser:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 314. read single files content (379) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19518,9 +19531,9 @@ browser will call asynchronously the onload callback at <i>line 20</i>.</p>
 
 <h4>Example #2: a variation of the previous one, using multiple files</h4>
 
-<p><a href="https://jsbin.com/zaheyu/edit?html,output" target="_blank" rel="noopener noreferrer">Example on
-JSBin</a>, or try it below in your browser. This time, please select
-multiple text files (using shift for multiple selection):</p>
+<p><a href="https://jsbin.com/zaheyu/edit?html,output" target="_blank" rel="noopener noreferrer">
+Example on JSBin</a>, or try it below in your browser. This time, please select multiple text 
+files (using shift for multiple selection):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 315. choose multiple text files (380) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19622,7 +19635,10 @@ animations.</p>
 memory (no streaming), and has been designed for music application and
 games. This example shows how a local audio file can be read and played
 directly in the browser, without the need for a server!</p>
-<p><a href="https://jsbin.com/xepexuy/1/edit?html,output" target="_blank" rel="noopener noreferrer">Example on JSBin</a> (does not work on IE, as it does not support the WebAudio API). We could not embed it here on the edX platform as it prevents code that uses Ajax to run in its pages.</p>
+<p><a href="https://jsbin.com/xepexuy/1/edit?html,output" target="_blank" 
+rel="noopener noreferrer">Example on JSBin</a> (does not work on IE, as it does 
+not support the WebAudio API). We could not embed it here on the edX platform as 
+it prevents code that uses Ajax to run in its pages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 316. webaudio api - does not work with microsoft shit (382) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19656,8 +19672,9 @@ directly in the browser, without the need for a server!</p>
   <li><i>Line 5:</i> we define a change listener. In this example, we use an anonymous function directly 
     included in the listener definition (the listener is the function(e) {…}).</li>
   <li><i>Line 9:</i> when a user chooses a file, the listener will be executed. 
-    Line 9 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: 
-    read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.</li>
+    Line 9 will start the reading of the file content, as a binary file (this is 
+	what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, 
+	the onload callback will be asynchronously called by the browser.</li>
   <li><i>Line 5:</i> is the onload callback, executed when the file content is loaded in memory. 
     We pass the file content to the initSound function (see JSBin example for complete source code) 
     that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio 
@@ -19715,15 +19732,17 @@ modern browsers. It is becoming more commonly used on the Web,
 especially for mobile applications, as inlining images reduces the
 number of HTTP requests and makes the Web page load faster.</p>
 <p>You will find lots of Web sites and tools for generating dataURL from
-files, such as <a href="https://ezgif.com/image-to-datauri" target="_blank" rel="noopener noreferrer">Image to Data URI converter</a> (screenshot below):</p>
+files, such as <a href="https://ezgif.com/image-to-datauri" target="_blank" 
+rel="noopener noreferrer">Image to Data URI converter</a> (screenshot below):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~ 319. Online service that converts uploaded images to data uris... ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~ we see an image and its ascii encoded data uri version (384) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="./images/image319.webp?raw=true"
-  alt="Online service that converts uploaded images to data uris...we see an image and its ascii encoded data uri version."
-  style="width:55%;" />
+  alt="Online service that converts uploaded images to data uris...we see an image and 
+    its ascii encoded data uri version."
+  style="width:1000px;height:1277px;" />
 
 <p>With the above example, you can copy and paste the characters on the
 left and use them with an &lt;img src="..."&gt;. Just set the src attribute
