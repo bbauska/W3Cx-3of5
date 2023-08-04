@@ -502,7 +502,7 @@ Without it, we have no way of accessing the thousands of websites out
 there. For most online needs, however, the web is the easiest to use. 
 Each serves an important purpose.</p>
 
-<h3 id="cha-2">Why Accessibility is Important</h3>
+<h3 id="=2">Why Accessibility is Important</h3>
 
 <i>The power of the Web is in its universality.</i>
 <i>Access by everyone regardless of disability is an essential aspect.</i>
@@ -5149,7 +5149,6 @@ Some examples are given "as is", such as the custom video player that uses SVG 
 <p>
 Please see this example online, originally written by <a href="https://christianheilmann.com/">Chris Heilmann</a>, and tuned by us ;).
 </p>
-
 <!------------------------------------------------------------------------------------------------>
 <!------------------- 82. 2d transformations: scale, translate  rotate (100) --------------------->
 <!------------------------------------------------------------------------------------------------>
@@ -5170,17 +5169,17 @@ Don't forget to click the JavaScript and CSS tabs of the CodePen in order to di
 </ul>
 
 <h4>Example #2: how to track all possible events and manipulate many properties</h4>
-<p>
-This example also shows how to handle failures. See the code and play with this example below:
-</p>
-<!------------------------------------------------------------------------------------------------>
+
+<p>This example also shows how to handle failures. See the code and play with this example below:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 83. how to track all possible events (101) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image083.webp?raw=true"
-   width="65%"
-   alt="Example #2. How to track all possible events.." />
+  width="65%"
+  alt="Example #2. How to track all possible events.." />
 &nbsp;
+
 <p>
 Below is a piece of code for handling errors during video playback:
 </p>
@@ -5229,19 +5228,29 @@ function logEvent(evt, color) {
 <p>
 See the <a href="https://jsbin.com/xororol/3/edit?html,output">example online</a> here too.
 </p>
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 84. display percentage of buffering (102) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 84. display percentage of buffering (102) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image084.webp?raw=true"
    width="65%"
    alt="Example #3. How to display a percentage of buffering." />
 &nbsp;
-<p>
-Note that on mobile phones, the video does not start until the user presses the play control or clicks on the video picture. Using the "canplaythrough" event is a trick to call a function that starts the video player as soon as the page is loaded on desktop. This event is not supported by mobile devices, so if you try this example on a mobile, the video will not start automatically.
 
-As explained by the <a href="https://developer.apple.com/">Apple Developer Web site</a>:  "The buffered property is a TimeRanges object: an array of start and stop times, not a single value. Consider what happens if the person watching the media uses the time scrubber to jump forward to a point in the movie that hasn't loaded yet---the movie stops loading and jumps forward to the new point in time, then starts buffering again from there. So the buffered property can contain an array of discontinuous ranges. The example simply seeks the end of the array and reads the last value, so it actually shows the percentage into the movie duration for which there is data. "
-</p>
+<p>Note that on mobile phones, the video does not start until the user presses the play 
+control or clicks on the video picture. Using the "canplaythrough" event is a trick 
+to call a function that starts the video player as soon as the page is loaded on desktop. 
+This event is not supported by mobile devices, so if you try this example on a mobile, 
+the video will not start automatically.</p>
+
+<p>As explained by the <a href="https://developer.apple.com/">Apple Developer Web site</a>:  
+"The buffered property is a TimeRanges object: an array of start and stop times, not a 
+single value. Consider what happens if the person watching the media uses the time scrubber 
+to jump forward to a point in the movie that hasn't loaded yet---the movie stops loading 
+and jumps forward to the new point in time, then starts buffering again from there. So the 
+buffered property can contain an array of discontinuous ranges. The example simply seeks 
+the end of the array and reads the last value, so it actually shows the percentage into 
+the movie duration for which there is data."</p>
 
 <h4>Source code extract:</h4>
 
@@ -5296,12 +5305,14 @@ As explained by the <a href="https://developer.apple.com/">Apple Developer Web 
 </details>
 
 <h4>Example #4: how to use SVG elements as external controllers</h4>
-<p>
-This is the ultimate way of doing a real custom player: redesign your own controls using SVG shapes! This example (try it <a href="https://www.w3.org/2010/Talks/0430-www2010-plh/video-player.xhtml">online</a>) is given "as is" for those of you who may be curious.
+
+<p>This is the ultimate way of doing a real custom player: redesign your own controls 
+using SVG shapes! This example (try it <a href="https://www.w3.org/2010/Talks/0430-www2010-plh/video-player.xhtml">
+online</a>) is given "as is" for those of you who may be curious.
 </p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 85. cup on table xhtml5 and svg player (103) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image085.webp?raw=true"
    width="25%"
@@ -5309,39 +5320,43 @@ This is the ultimate way of doing a real custom player: redesign your own contro
 &nbsp;
 
 <h4>Example #5: a custom video player written by a previous student</h4>
-<p>
-This is more an example than a tutorial. Maurice, a student who followed the precursor version of this MOOC, had the assignment to write a custom video player with playlist, video thumbnails, custom play/pause/next/previous/volume controls, and present it in a Web page that used a nice layout based on the HTML5 structuring elements studied previously.
 
-Here is the online example. We recommend that you look at the source code:
-</p>
-<!------------------------------------------------------------------------------------------------>
+<p>This is more an example than a tutorial. Maurice, a student who followed the precursor version 
+of this MOOC, had the assignment to write a custom video player with playlist, video thumbnails, 
+custom play/pause/next/previous/volume controls, and present it in a Web page that used a nice 
+layout based on the HTML5 structuring elements studied previously.</p>
+
+<p>Here is the online example. We recommend that you look at the source code:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3-1">2.3.1 HTML5 Captioning</h3>
-<!------------------------------------------------------------------------------------------------>
-<p>
-This section introduces the HTML5 &lt;track&gt; element, useful for adding closed captions, subtitles, descriptions, and metadata to your videos. It comes with a new JavaScript API.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This section introduces the HTML5 &lt;track&gt; element, useful for adding closed captions, 
+subtitles, descriptions, and metadata to your videos. It comes with a new JavaScript API.
+The WebVTT format used for describing a track file is also presented in this chapter.</p>
 
-The WebVTT format used for describing a track file is also presented in this chapter.
-</p>
 <h4>Most of the major desktop browsers support HTML5 captioning</h4>
-<p>
-Please check the <a href="https://caniuse.com/mdn-html_elements_track">browser support</a> related to the &lt;track&gt; element support by browsers.
-</p>
+
+<p>Please check the <a href="https://caniuse.com/mdn-html_elements_track">browser support</a> 
+related to the &lt;track&gt; element support by browsers.</p>
+
 <h4>Some definitions</h4>
+
 <ul>
   <li><b>closed captions</b> describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).</li>
   <li><b>subtitles</b> are only for spoken words.</li>
 </ul>
 
 <br/>
-<p>
-The accessibility features of TV programs often propose both options for people with hearing deficiencies. 
-</p>
+
+<p>The accessibility features of TV programs often propose both options for people with hearing deficiencies.</p>
 
 <h4>Typical use: add a subtitle/caption track to a &lt;video&gt; element</h4>
 
 <h4>Important warning!!</h4>
-<p>
-The &lt;track&gt; element cannot be used with a file:// URL. Please use https:// and a Web server. Your server must use a special MIME format for the .vtt files: text/vtt;charset=utf-8 (set by default on most servers now).
+
+<p>The &lt;track&gt; element cannot be used with a file:// URL. Please use https:// 
+and a Web server. Your server must use a special MIME format for the .vtt files: 
+text/vtt;charset=utf-8 (set by default on most servers now).
 </p>
 <h4>Examples of the lines to add to an Apache Web server:</h4>
 
@@ -5356,18 +5371,19 @@ It is worth mentioning that most browsers work well with WebVTT, even if the MIM
 
 Here is an example of a video element that includes a &lt;track&gt; element in the .vtt (WebVTT) format (<i>line 9</i> in the source code shown below):
 </p>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 86. example snapshot (104) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 86. example snapshot (104) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image086.webp?raw=true"
    width="65%"
    alt=""Example using a track element in the .vtt format." />
 &nbsp;
 <br/>
-<p>
-The example uses a &lt;track&gt; element to insert basic captions to the video: sounds and music are described, in addition to standard subtitles that correspond to what the different movie characters say.
-</p>
+
+<p>The example uses a &lt;track&gt; element to insert basic captions to the video: sounds 
+and music are described, in addition to standard subtitles that correspond to what the 
+different movie characters say.</p>
 
 ```
 1. <video height="272" width="640"
@@ -5394,7 +5410,9 @@ The example uses a &lt;track&gt; element to insert basic captions to the vid
 <p>
 Multiple tracks are needed to support different langages, video captions for the hearing-impaired, subtitles, etc.
 
-Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element">from the specification</a>) that includes multiple &lt;track&gt; elements (subtitles for three languages and captions only for English):
+Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element">
+from the specification</a>) that includes multiple &lt;track&gt; elements (subtitles for three 
+languages and captions only for English):
 </p>
 
 <details open>
@@ -5431,15 +5449,17 @@ Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#
 <ul>
   <li>From the HTML specification: <a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element">The track element</a></li>
   <li>From the W3C specification: <a href="https://www.w3.org/TR/webvtt1/">WebVTT: The Web Video Text Tracks Format</a></li>
-  <li>From MDN's Web Docs: <a href="https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/">WebVTT</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video">Adding captions and subtitles to HTML5 video</a></li>
+  <li>From MDN's Web Docs: <a href="https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/">
+    WebVTT</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video">
+	Adding captions and subtitles to HTML5 video</a></li>
   <li>An article from 3playmedia: <a href="https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/">How to create a WebVTT file</a></li>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3-2">2.3.2 The WebVTT Format</h3>
-<!------------------------------------------------------------------------------------------------>
-<p>
-The "<a href="http://dev.w3.org/html5/webvtt/">WebVTT: The Web Video Text Tracks Format</a>" defines files that contain text for captions and subtitles, and much more... The WebVTT files are used with the src attribute of the &lt;track&gt; element, that can be used inside a &lt;video&gt;...&lt;/video&gt;.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The "<a href="http://dev.w3.org/html5/webvtt/">WebVTT: The Web Video Text Tracks Format</a>" 
+defines files that contain text for captions and subtitles, and much more... The WebVTT files are 
+used with the src attribute of the &lt;track&gt; element, that can be used inside a &lt;video&gt;...&lt;/video&gt;.
 
 In the interactive example presented before, we used a file called sintel-captions.vtt:
 </p>
@@ -5571,20 +5591,18 @@ The displayed text can span multiple lines, but blank lines are not allowed, as 
 <ul>
   <li>An unofficial <a href="https://quuz.org/webvtt/">Live WebbVTT format</a></li>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3-3">2.3.3 Adding Subtitles to a Video</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let's look at a simple example. First, you need a video on one of the formats/codecs supported by the browsers you target. A recommended codec is mp4/H264, but other formats, such as webm, may have some advantages if the browser supports them. For example, webm allows the video to start playing after a much shorter buffering time. In other words, try if possible to provide the video encoded with more than one codec.
 
 For this, use any sort of open source, free or commercial video encoding software, such as <a href="https://handbrake.fr/">Handbrake</a> (free, open source) or <a href="https://www.erightsoft.com/SUPER.html">Super</a> (free). There are also online video encoding services, and you can even upload your video to YouTube, let it encode your video in several resolutions and codecs, and use a browser extension such as <a href="https://addons.mozilla.org/fr/firefox/addon/video-downloadhelper/">Video DownloadHelper</a> (for Firefox) or <a href="https://jdownloader.org/">JDownloader</a>, to download the video in your chosen formats.
 
 So, let's suppose you have a video like the one below (we included it on YouTube for practical reasons). This video has subtitles (you can activate them in the YouTube player), but the goal of this lesson is to explain how we made them without using the YouTube embedded tools, which do not allow export the subtitle file to be exported in the webVTT format.</p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 87. picture guitar picking (108) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image087.webp?raw=true"
    width="45%"
@@ -5617,9 +5635,9 @@ Many tools - both free and commercial - are available to add subtitles to a vid
 
 Go to the above Web site, click on the "subtitle a video" link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it's better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.
 </p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 88. example subtitles and captions (109) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image088.webp?raw=true"
    width="40%"
@@ -5628,9 +5646,9 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 <br/>
 
 <p>Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:</p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 89. youtube make subtitles (110) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image089.webp?raw=true"
    width="60%"
@@ -5641,26 +5659,24 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 <p>Note that YouTube can also help you "make subtitles" with its speech recognition tool, but you will only be able to export in .srt format afterwards. You will have to convert this format afterwards to .vtt.</p>
 
 <h4>Try your subtitled/captioned video</h4>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------- 90. example guitar picking subtitle captions (110) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image090.webp?raw=true"
    width="40%"
    alt="Example guitar picking subtitle captions." />
 &nbsp;
 <br/>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3-4">2.3.4 Styling Captions</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section, we will look at different possibilities for styling and positioning  the text displayed as captions/subtitles while playing a video.
 
 The example below shows how we can do that (play the video for 40s, look at the positions and styles of the subtitles and captions, look at the HTML):
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------------- 91. blank codepen (111) ------------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image091.webp?raw=true"
    width="60%"
@@ -5730,11 +5746,10 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 
 </details>
 
-<h4>How to position the subtitles</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 92. example video: positioning subtitles (112) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<h4>How to position the subtitles;</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 92. example video: positioning subtitles (112) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image092.webp?raw=true"
    width="65%"
@@ -5742,9 +5757,13 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 &nbsp;
 <br/>
 
-<p>The video example tests nearly all the possibilities for positioning subtitles/captions, styling (using HTML element wrapping with &lt;b&gt;, &lt;i&gt;,  etc.), voicing (subtitles corresponding to different characters will be displayed in different colors) and CSS styling.
+<p>The video example tests nearly all the possibilities for positioning subtitles/captions, 
+styling (using HTML element wrapping with &lt;b&gt;, &lt;i&gt;,  etc.), voicing (subtitles 
+corresponding to different characters will be displayed in different colors) and CSS styling.
 
-It is possible to locate the cues in the video viewport using absolute or relative values. The attributes that position the text are located on the same line as the cue definition, like at <i>line 9</i> of the previous WebVTT example file:</p>
+It is possible to locate the cues in the video viewport using absolute or relative values. 
+The attributes that position the text are located on the same line as the cue definition, 
+like at <i>line 9</i> of the previous WebVTT example file:</p>
 
 ```
 9.  00:00:11.000 --> 00:00:15.000<b> position:5% align:start</b>
@@ -5764,13 +5783,13 @@ It is possible to locate the cues in the video viewport using absolute or relati
 <h4>Use of &lt;b&gt;, &lt;i&gt;, &lt;u&gt; for styling subtitles / captions</h4>
 
 <p>One can use the HTML elements  &lt;b&gt;, &lt;i&gt;, &lt;u&gt; to modify the rendering of subtitles and captions, as illustrated in the example below:</p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 93.  (113) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 93. cue values; bold, italic, underline (113) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image093.webp?raw=true"
    width="65%"
-   alt="" />
+   alt="Cue values; bold, italic and underline." />
 &nbsp;
 <br/>
 
@@ -5783,9 +5802,9 @@ It is possible to style using CSS classes as part of a cue value, using the <c
 2.  Browsers that support ::cue CSS should make it red.</c>
 ```
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 94.  (113) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 94. cue example with class (113) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image094.webp?raw=true"
    width="65%"
@@ -5804,24 +5823,31 @@ It is possible to style using CSS classes as part of a cue value, using the <c
 6.  </style>
 ```
 
-The ::cue pseudo element selector is used to match "cues" in the webVTT file. You add parenthesis and a secondary CSS selector to match cues that have a particular id, or a particular CSS class, etc. Look at the CSS above and at the extract from the webVTT file, play the video, you will understand how the above CSS classes affect the rendering of the subtitles for Jane and Tarzan's voices.
+The ::cue pseudo element selector is used to match "cues" in the webVTT file. You add parenthesis 
+and a secondary CSS selector to match cues that have a particular id, or a particular CSS class, 
+etc. Look at the CSS above and at the extract from the webVTT file, play the video, you will 
+understand how the above CSS classes affect the rendering of the subtitles for Jane and Tarzan's voices.
 
-Support differs from one browser to another, see <a href="https://caniuse.com/#feat=webvtt">this compatibility table</a> (from CanIuse). Note however that most of the enhanced players presented further on in the course provide full support.
+Support differs from one browser to another, see <a href="https://caniuse.com/#feat=webvtt">
+this compatibility table</a> (from CanIuse). Note however that most of the enhanced players 
+presented further on in the course provide full support.
 
 <h4>Using voicing for styling: the &lt;v&gt; element</h4>
 
 Here is an example that shows the voices of the different characters displayed with different colors:
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 95. v tag example (114) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 95. v tag example - closed caption (114) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image095.webp?raw=true"
    width="65%"
-   alt="" />
+   alt="V tag example, closed caption." />
 &nbsp;
 <br/>
 
-Using the &lt;v&gt; tag, you will distinguish different voices that should be displayed in different colors (depending on the HTML5 video player implementation). See the CSS presented in the previous section to see how to specify the colors for the different voices.
+Using the &lt;v&gt; tag, you will distinguish different voices that should be displayed 
+in different colors (depending on the HTML5 video player implementation). See the CSS 
+presented in the previous section to see how to specify the colors for the different voices.
 
 <h4>Example source code:</h4>
 
@@ -5831,13 +5857,16 @@ Using the &lt;v&gt; tag, you will distinguish different voices that should be 
 3.  <v Jane>That would make me Jane!
 ```
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3-5">2.3.5 Chapter</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>When you play a movie in DVD or Blu-Ray format, a menu appears on the screen: play a movie, 
+choose subtitles, etc. Usually there is also a "chapters" menu that allows you to quickly access 
+a part of the movie. With videos on the Web, one can also indicate the chapter breakdown, using 
+WebVTT files and a &lt;track&gt; element/tag.
 
-<p>When you play a movie in DVD or Blu-Ray format, a menu appears on the screen: play a movie, choose subtitles, etc. Usually there is also a "chapters" menu that allows you to quickly access a part of the movie. With videos on the Web, one can also indicate the chapter breakdown, using WebVTT files and a &lt;track&gt; element/tag.
-
-Adding chapters is very similar to adding subtitles/captions. Look at <i>line 5</i> in the code below, where we use an extra &lt;track&gt; element with a kind="chapters" attribute.</p>
+Adding chapters is very similar to adding subtitles/captions. Look at <i>line 5</i> in the code 
+below, where we use an extra &lt;track&gt; element with a kind="chapters" attribute.</p>
 
 ```
 1.  <video poster="webvtt_talk.png" style="width:100%" preload="metadata">
@@ -5850,11 +5879,17 @@ Adding chapters is very similar to adding subtitles/captions. Look at <i>line 5
 8.  </video>
 ```
 
-<p>Here is an example of WebVTT files with defined chapters. Each "CUE" at <i>lines 3, 7, 11</i>, ... can bear any name. We use "Chapter 1, Chapter 2, Ending, etc." but you are free to name them as you wish.
+<p>Here is an example of WebVTT files with defined chapters. Each "CUE" at <i>lines 3, 7, 11</i>, 
+... can bear any name. We use "Chapter 1, Chapter 2, Ending, etc." but you are free to name them 
+as you wish.
 
 What makes them special is that the track has an attribute kind="chapters". 
 
-Often, the &lt;video&gt; elements rendered in standard browsers ignore chapters, but enhanced HTML5 players take them into account, and it's not much of a stretch to make your own enhanced player with a nice chapter presentation, as we'll see in a more advanced chapter of this course.  For example, we'll generate a custom navigation menu, using the &lt;track&gt; JavaScript API (explained later in this section).</p>
+Often, the &lt;video&gt; elements rendered in standard browsers ignore chapters, but enhanced 
+HTML5 players take them into account, and it's not much of a stretch to make your own enhanced 
+player with a nice chapter presentation, as we'll see in a more advanced chapter of this course.  
+For example, we'll generate a custom navigation menu, using the &lt;track&gt; JavaScript API 
+(explained later in this section).</p>
 
 <h4>Example of a WebVTT file that defines chapters:</h4>
 
@@ -5892,39 +5927,50 @@ Often, the &lt;video&gt; elements rendered in standard browsers ignore chapters,
 </details>
 
 An example of what you can achieve using chapters, using the <a href="https://www.jwplayer.com/">JW Player</a>:
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 96. using the jw player (115) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 96. using the jw player (115) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image096.webp?raw=true"
    width="65%"
    alt="Using the JW player." />
 &nbsp;
 <br/>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3-6">2.3.6 Tools for Creating WebVTT Files</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Many tools are available to make and edit HTML5 video and caption/subtitles:
 <ul>
-  <li>Tools for converting existing file formats to WebVTT files, such as <a href="https://atelier.u-sub.net/srt2vtt/">Simple SubRip to WebVTT</a> converter, which is popular in the DivX/AVI/Mkv/mp4 scene. Do a quick Web search and you will get plenty of other results.</li>
-  <li>Tools for creating subtitles/captions from scratch. Use these to generate a WebVTT file. You can embed the &lt;track&gt; element in your own videos, on your own Web pages, or upload the WebVTT file to YouTube.  We recommend <a href="https://amara.org/en/">amara</a>. It's a free online tool that is very easy to use. There are also apps such as <a href="https://www.macupdate.com/app/mac/25826/subs-factory">Subs Factory</a> (Mac OS), <a href="https://jubler.org/">Jubler</a> or <a href="https://nikse.dk/SubtitleEdit">Subtitle Edit</a>) (Windows).</li>
-  <li>Enhanced HTML5 video players that use the &lt;video&gt;, &lt;source&gt; and &lt;track&gt; elements under the hood. They also provide many extra features, including support for subtitle/caption formats other than WebVTT (by converting on the fly).</li>
+  <li>Tools for converting existing file formats to WebVTT files, such as 
+    <a href="https://atelier.u-sub.net/srt2vtt/">Simple SubRip to WebVTT</a> converter, 
+	which is popular in the DivX/AVI/Mkv/mp4 scene. Do a quick Web search and you will 
+	get plenty of other results.</li>
+  <li>Tools for creating subtitles/captions from scratch. Use these to generate a 
+    WebVTT file. You can embed the &lt;track&gt; element in your own videos, on your 
+	own Web pages, or upload the WebVTT file to YouTube.  We recommend 
+	<a href="https://amara.org/en/">amara</a>. It's a free online tool that is 
+	very easy to use. There are also apps such as 
+	<a href="https://www.macupdate.com/app/mac/25826/subs-factory">
+	Subs Factory</a> (Mac OS), <a href="https://jubler.org/">
+	Jubler</a> or <a href="https://nikse.dk/SubtitleEdit">Subtitle Edit</a>) (Windows).</li>
+  <li>Enhanced HTML5 video players that use the &lt;video&gt;, &lt;source&gt; 
+    and &lt;track&gt; elements under the hood. They also provide many extra 
+	features, including support for subtitle/caption formats other than WebVTT 
+	(by converting on the fly).</li>
 </ul>
 
 We do not claim that these are the best tools, so feel free to share your discoveries in the discussion forum!
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3-7">2.3.7 The &lt;track&gt; JavaScript API</h3>
-<!------------------------------------------------------------------------------------------------>
-
-Most "complex" HTML elements like forms, audio or video players, come with a JavaScript API that allows you to control them programmatically, customize them, etc.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Most "complex" HTML elements like forms, audio or video players, come with a JavaScript API that 
+allows you to control them programmatically, customize them, etc.
 
 <h4>The &lt;track&gt; element comes with a powerful API that is used to develop many interesting features such as:</h4>
 <ul>
   <li>Dynamically building a navigation menu that shows the different chapters of the video,</li>
-  <li>Synchronizing page content with timestamps in the WebVTT file (for example: show a map next to the video, that shows the location corresponding to the video content),</li>
+  <li>Synchronizing page content with timestamps in the WebVTT file (for example: show a map next 
+    to the video, that shows the location corresponding to the video content),</li>
   <li>Displaying all the subtitles/captions at once as HTML in the page,</li>
   <li>Making an app for creating on the fly subtitles/captions,</li>
   <li>Etc.</li>
@@ -5934,10 +5980,12 @@ Most "complex" HTML elements like forms, audio or video players, come with a Jav
 
 <h4> Example #1: add a navigation menu to start playing the video at given chapters</h4>
 
-<p>This example shows a video with an enhanced progress bar that displays the different chapters as small "clickable" squares. Furthermore, using the JavaScript API of the &lt;track&gt; element, this Web site builds a navigation menu (on the right of the video):</p>
-<!------------------------------------------------------------------------------------------------>
+<p>This example shows a video with an enhanced progress bar that displays the different 
+chapters as small "clickable" squares. Furthermore, using the JavaScript API of the 
+&lt;track&gt; element, this Web site builds a navigation menu (on the right of the video):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------ 97. navigation menu using the track javascript api (117) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image097.webp?raw=true"
    width="65%"
@@ -5947,10 +5995,14 @@ Most "complex" HTML elements like forms, audio or video players, come with a Jav
 
 <h4>Example #2: sync video with Google Map and Google Street View</h4>
 
-Check <a href="https://simpl.info/track/map/index.html">this demo</a> (only on Chrome) by <a href="https://samdutton.com/">Sam Dutton</a>: it shows a video that comes with a WebVTT file that contains longitudes and latitudes. When the video plays, JavaScript functions are called at given times and get the longitude and latitude. A Google Map and a Google Street views are updated in real time.
-<!------------------------------------------------------------------------------------------------>
+Check <a href="https://simpl.info/track/map/index.html">this demo</a> (only on Chrome) by 
+<a href="https://samdutton.com/">Sam Dutton</a>: it shows a video that comes with a WebVTT 
+file that contains longitudes and latitudes. When the video plays, JavaScript functions 
+are called at given times and get the longitude and latitude. A Google Map and a Google 
+Street views are updated in real time.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------- 98. video sync with map and street views (117) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image098.webp?raw=true"
    width="65%"
@@ -5963,9 +6015,9 @@ Check <a href="https://simpl.info/track/map/index.html">this demo</a> (only on
 This example shows how we manage to render music scores in real time as the video plays. 
 
 Some JavaScript code listens to the ontimeupdate event while the video is playing. We use the currentTime property of the video to know exactly where we are in the video. Finally, we also rely on an external library to render in an HTML5 canvas the bars corresponding to the current video explanations. We render in real time guitar pro tablatures using the alphatab.net library.
-<!------------------------------------------------------------------------------------------------>
-<!---- 99. We render in real time guitar pro tablatures using the alphatab.net library (118) ----->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~ 99. We render in real time guitar pro tablatures using the alphatab.net library (118) ~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image099.webp?raw=true"
    width="55%"
@@ -5973,17 +6025,25 @@ Some JavaScript code listens to the ontimeupdate event while the video is play
 &nbsp;
 <br/>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3-8">2.3.8 Enhanced HTML5 Video Players</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+There are numerous "enhanced" video players; most are free and open source, some are 
+commercial. They offer lots of features, which are listed below. Not all of these 
+features are available in every player, this list just illustrates what can be added 
+to the standard &lt;video&gt; element. 
 
-There are numerous "enhanced" video players; most are free and open source, some are commercial. They offer lots of features, which are listed below. Not all of these features are available in every player, this list just illustrates what can be added to the standard &lt;video&gt; element. 
-
-We call them "HTML5 enhanced video players" because on top of being based on the &lt;video&gt; element, they come with custom features, custom look'n'feel, chapters, etc., based on a JavaScript API that makes such customization possible.
+We call them "HTML5 enhanced video players" because on top of being based on the 
+&lt;video&gt; element, they come with custom features, custom look'n'feel, chapters, 
+etc., based on a JavaScript API that makes such customization possible.
 
 <h4>Accessible players</h4>
 
-For those of you interested in this particular topic, here is a very good resource that compares most of the players presented in this section, in terms of accessibility. This resource has links to players designed especially for people with disabilities: <a href="https://www.digitala11y.com/accessible-jquery-html5-media-players/">accessible media players and resources</a>.
+For those of you interested in this particular topic, here is a very good resource 
+that compares most of the players presented in this section, in terms of accessibility. 
+This resource has links to players designed especially for people with disabilities: 
+<a href="https://www.digitala11y.com/accessible-jquery-html5-media-players/">
+accessible media players and resources</a>.
 
 <h4>Advantages and disadvantages of using a custom player</h4>
 
@@ -6012,10 +6072,9 @@ For those of you interested in this particular topic, here is a very good resou
 <h4>Video.js: a framework for building your own custom video player</h4>
 
 Open source, and made for developers, <a href="https://videojs.com/">video.js</a> comes with many plugins (chapters, thumbnails etc.).
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 100. make your player yours (119) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image100.webp?raw=true"
    alt="Video JS Examples: Make your player yours."
@@ -6023,11 +6082,14 @@ Open source, and made for developers, <a href="https://videojs.com/">video.js</
 &nbsp;
 <br/>
 
-<h4>Which should I use? the &lt;video&gt; element and my own customization or an out of the box enhanced player?</h4>
+<h4>Which should I use? the &lt;video&gt; element and my own customization or an out 
+of the box enhanced player?</h4>
 
 Either solution (basic player or enhanced player) is good and HTML5 compliant.
 
-Popular players such as <a href="https://www.jwplayer.com/">JWPlayer</a> have many explanations and examples on their Web sites, and are either free of charge or come with free versions.
+Popular players such as <a href="https://www.jwplayer.com/">JWPlayer</a> have many 
+explanations and examples on their Web sites, and are either free of charge or come 
+with free versions.
 
 <h4>Interesting comparisons and reviews are available on the following Web sites:</h4>
 
@@ -6038,10 +6100,9 @@ Popular players such as <a href="https://www.jwplayer.com/">JWPlayer</a> have 
 <h4>Example screenshots</h4>
 
 Scrub Bar thumbnails (JWPlayer)
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 101. scrub bar thumbnailes (120) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image101.webp?raw=true"
    width="45%"
@@ -6050,10 +6111,9 @@ Scrub Bar thumbnails (JWPlayer)
 <br/>
 
 Custom look'n'feel and logo (Sublime video player):
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 102. custom look and feel and logo (120) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image102.webp?raw=true"
   width="55%"
@@ -6062,10 +6122,9 @@ Custom look'n'feel and logo (Sublime video player):
 <br/>
 
 Chapters and chapter thumbnails (JWPlayer):
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 103. chapters and chapter thumbnails (120) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image103.webp?raw=true"
   width="55%"
@@ -6074,10 +6133,9 @@ Chapters and chapter thumbnails (JWPlayer):
 <br/>
 
 PayPal accessible player:
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------- 104. paypal accessible player (121) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image104.webp?raw=true"
   width="55%"
@@ -6086,38 +6144,47 @@ PayPal accessible player:
 <br/>
 
 LeanBack (says "free for non-commercial use", licensing is not very clear...):
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------------- 105. leanback player (121) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image105.webp?raw=true"
   width="60%"
   alt="Leanback player." />
 &nbsp;
 <br/>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4-1">2.4.1 Webcam</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Introduction</h4>
 
-HTML5 has introduced, with the getUserMedia and MediaDevices APIs, a way to control webcams and microphones programmatically. This allows, for example, to create an identification form where one can simply click on a button to capture his portrait from the Webcam of his computer or smartphone. It will also allow to record a video or audio extract (for example for a "telephone answering machine" type application), to create video conference applications running in the Web browser, or even musical applications if you plug a guitar into a sound card. The possibilities are numerous.
+HTML5 has introduced, with the getUserMedia and MediaDevices APIs, a way to control 
+webcams and microphones programmatically. This allows, for example, to create an 
+identification form where one can simply click on a button to capture his portrait 
+from the Webcam of his computer or smartphone. It will also allow to record a video 
+or audio extract (for example for a "telephone answering machine" type application), 
+to create video conference applications running in the Web browser, or even musical 
+applications if you plug a guitar into a sound card. The possibilities are numerous.
 
-We will therefore study together how to access the audio and video streams of the hardware on which a Web application is going to run, and how to parameterize them (choice of camera, resolution, etc.).
+We will therefore study together how to access the audio and video streams of 
+the hardware on which a Web application is going to run, and how to parameterize 
+them (choice of camera, resolution, etc.).
 
 <h4>The getUserMedia API</h4>
 
-The <a href="https://www.w3.org/TR/mediacapture-streams/">getUserMedia API</a> is useful for controlling a Webcam video stream.
+The <a href="https://www.w3.org/TR/mediacapture-streams/">getUserMedia API</a> 
+is useful for controlling a Webcam video stream.
 
-This API is one component of the <a href="https://www.w3.org/TR/webrtc/">WebRTC specification</a>. When using getUserMedia, to manage a webcam with its video stream, we will always use it in conjunction with the &lt;video&gt; element. We could also use it with the &lt;audio&gt; element if we are only interested in using a microphone (i.e. from a computer), or any sound input .
+This API is one component of the <a href="https://www.w3.org/TR/webrtc/">WebRTC 
+specification</a>. When using getUserMedia, to manage a webcam with its video 
+stream, we will always use it in conjunction with the &lt;video&gt; element. 
+We could also use it with the &lt;audio&gt; element if we are only interested 
+in using a microphone (i.e. from a computer), or any sound input .
 
 The getUserMedia API, when dealing with video streams, is always used in conjunction with the &lt;video&gt; element.
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 106. simple web camera display (122) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 106. simple web camera display (122) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image106.webp?raw=true"
   width="30%"
@@ -6127,7 +6194,12 @@ The getUserMedia API, when dealing with video streams, is always used in conju
 
 <h4>Typical use of the getUserMedia API with a Webcam</h4>
 
-The main idea is to set the srcObject attribute of a &lt;video&gt; element to the live video stream object coming out of the Webcam. To get this stream, you'll have to call the navigator.getUserMedia(params) method from the getUserMedia API, that returns an ES6 promise (ES stands for "ECMAScript" and is the scripting language that forms the basis of JavaScript). Do not panic if you do not know ES6's promises! The syntax is very simple, and you'll learn what you need from the provided examples.
+The main idea is to set the srcObject attribute of a &lt;video&gt; element to the live 
+video stream object coming out of the Webcam. To get this stream, you'll have to call 
+the navigator.getUserMedia(params) method from the getUserMedia API, that returns an 
+ES6 promise (ES stands for "ECMAScript" and is the scripting language that forms the 
+basis of JavaScript). Do not panic if you do not know ES6's promises! The syntax is 
+very simple, and you'll learn what you need from the provided examples.
 
 The stream is passed as a parameter to the then() method returned by the promise, as in this typical example (you can run it and see the result by clicking on the "CodePen" logo at the top right):
 
@@ -6170,21 +6242,24 @@ We can also simplify the code by using a writing with async/await of JavaScript:
 
 </details>
 
-<b>HTTPS is mandatory:</b> for getUserMedia to work, it is mandatory to access the page that contains the JavaScript code through https://, for security reasons.
+<b>HTTPS is mandatory:</b> for getUserMedia to work, it is mandatory to access the 
+page that contains the JavaScript code through https://, for security reasons.
 
-Support of getUserMedia/stream is <a href="https://caniuse.com/stream">very good in all modern browsers</a>, including mobile ones. All the video conferencing applications you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), and even Microsoft Teams is a web application in disguise.
-
-<!------------------------------------------------------------------------------------------------>
+Support of getUserMedia/stream is <a href="https://caniuse.com/stream">very good in 
+all modern browsers</a>, including mobile ones. All the video conferencing applications 
+you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue 
+Button), and even Microsoft Teams is a web application in disguise.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4-1">2.4.1 More On getUserMedia</h3>
-<!------------------------------------------------------------------------------------------------>
-
-Let's see some more examples of what we can do with the getUserMedia API: start/stop the Webcam, take a screenshot from the current video stream from the Webcam, and apply CSS effects in real time. Below, we give links to some cool examples available on the Web.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Let's see some more examples of what we can do with the getUserMedia API: start/stop 
+the Webcam, take a screenshot from the current video stream from the Webcam, and apply 
+CSS effects in real time. Below, we give links to some cool examples available on the Web.
 
 <h4>How to stop/release the Webcam</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 107.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 107. michel buffa using ladle (127) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image107.webp?raw=true"
   width="35%"
@@ -6297,10 +6372,9 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 <h4>Other examples that mix what we've seen in previous chapters, but this time with a live video stream</h4>
 
 <h4> Applying CSS effects on a video element with a live webcam</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 108. example: css filter effects (xx) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 108. example: css filter effects (129) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image108.webp?raw=true"
    width="30%"
@@ -6314,9 +6388,9 @@ Try this example that shows how to use the getUserMedia API. Note the CSS effect
   <summary>Click to expand!</summary>
 
 ```
-//--------------------
+//--
 // GET USER MEDIA CODE
-//--------------------
+//--
 let video;
 let webcamStream;
 function startWebcam() {
@@ -6337,9 +6411,9 @@ function stopWebcam() {
   webcamStream.getTracks()[0].stop(); // audio
   webcamStream.getTracks()[1].stop(); // video
   }
-  //------------------------------
+  //--
   // CODE FOR CHANGING CSS FILTERS
-  //------------------------------
+  //--
   let idx = 0;
   let filters = [
   'grayscale',
@@ -6448,10 +6522,9 @@ Click the button "start webcam at the end of this page, then click on the video 
 <h4>Taking a snapshot from the live Webcam stream</h4>
 
 The trick is to copy and paste the current image from the video stream into a &lt;canvas&gt; element.
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 109. take a snapshot from live webcam stream (129) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 109. take a snapshot from live webcam stream (129) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image109.webp?raw=true"
   width="65%"
@@ -6467,9 +6540,9 @@ The trick is to copy and paste the current image from the video stream into a 
 
 
 ```
-//--------------------
+//--
 // GET USER MEDIA CODE
-//--------------------
+//--
 let video;
 let webcamStream;
 function startWebcam() {
@@ -6491,9 +6564,9 @@ function stopWebcam() {
   webcamStream.getTracks()[0].stop(); // audio
   webcamStream.getTracks()[1].stop(); // video
   }
-  //---------------------
+  //--
   // TAKE A SNAPSHOT CODE
-  //---------------------
+  //--
   var canvas, ctx;
 function init() {
   // Get the canvas and obtain a context for
@@ -6556,40 +6629,50 @@ We will look at this example in greater detail in the next course section (relat
 
 -   <a href="https://webcamtoy.com/">Webcam Toy</a>: video effects on Paul Neave's webcam (using WebGL)
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4-3">2.4.3 Using the Microphone</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Instead of using the getUserMedia API with: navigator.getUserMedia({video:true}, 
+onSuccess, onError), it is also possible to use {audio:true} for the first parameter. 
+In this case, only the microphone input will be captured. Notice that {video:true, 
+audio:true} is also accepted, if you write a video conferencing system and need to 
+capture both the audio and the video (this is often the case when writing WebRTC 
+applications).
 
-Instead of using the getUserMedia API with: navigator.getUserMedia({video:true}, onSuccess, onError), it is also possible to use {audio:true} for the first parameter. In this case, only the microphone input will be captured. Notice that {video:true, audio:true} is also accepted, if you write a video conferencing system and need to capture both the audio and the video (this is often the case when writing WebRTC applications).
+Apart from videoconferencing, microphone input will be used for music Web apps, 
+from the <a href="https://www.w3.org/TR/webaudio/">WebAudio API</a>. This API 
+focuses on real time sound processing and music synthesis. This API is covered 
+in the advanced W3Cx HTML5 course (<a href="https://www.edx.org/course/html5-apps-and-games">HTML5 Apps and Games</a>).
 
-Apart from videoconferencing, microphone input will be used for music Web apps, from the <a href="https://www.w3.org/TR/webaudio/">WebAudio API</a>. This API focuses on real time sound processing and music synthesis. This API is covered in the advanced W3Cx HTML5 course (<a href="https://www.edx.org/course/html5-apps-and-games">HTML5 Apps and Games</a>).
+Check out the <a href="https://webaudiodemos.appspot.com/">WebAudio demonstrations</a> 
+written by Chris Wilson, esp. the one called "Input effects".
 
-Check out the <a href="https://webaudiodemos.appspot.com/">WebAudio demonstrations</a> written by Chris Wilson, esp. the one called "Input effects".
-
-The image below is taken from <a href="https://webaudiodemos.appspot.com/input/index.html">one of the demonstrations</a>, where the sound captured by the microphone is processed in real time. We get visualizations of the signal in real time as an animated waveform, animated frequencies or animated audiogram. If we connect an electric guitar to the sound card input, then this demonstration shows that we can recreate with WebAudio most of the classic effects used by guitarists (delay, reverb, distortion, chorus, etc.).
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 110. webaudio live processing (131) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+The image below is taken from <a href="https://webaudiodemos.appspot.com/input/index.html">
+one of the demonstrations</a>, where the sound captured by the microphone is processed in 
+real time. We get visualizations of the signal in real time as an animated waveform, 
+animated frequencies or animated audiogram. If we connect an electric guitar to the 
+sound card input, then this demonstration shows that we can recreate with WebAudio 
+most of the classic effects used by guitarists (delay, reverb, distortion, chorus, etc.).
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 110. webaudio live processing (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image110.webp?raw=true"
   width="55%"
   alt="WebAudio Live Processing." />
 </p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4-4">2.4.4 Webcam Resolution</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 It is possible to set "hints" for the preferred cam/resolution during video capture. This is done by using a ["constraint" object ](https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4)that is passed as a parameter to the getUserMedia(...) method. It's just the same object we passed in the basic example: navigator.getUserMedia({video:true}, success, error) except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.
 
 For more information, this <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia">article on MDN about the getUserMedia API</a> gives great examples on how to set the camera resolution and/or to choose the front or back camera when using a mobile phone.</p>
 
 <b>Typical use:</b>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 111. set camera resolution (132) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 111. set camera resolution (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image111.webp?raw=true"
    width="65%"
@@ -6714,10 +6797,9 @@ border:1px solid;
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 112. function getusermedia (134) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 112. function getusermedia (134) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image112.webp?raw=true"
   width="45%"
@@ -6792,11 +6874,12 @@ Here are some other constraints you can set. In particular, look at the ones for
 
 <h4>Select input/output for audio and video streams</h4>
 
--   Resource: <a href="https://webrtc.github.io/samples/src/content/devices/input-output/">WebRTC samples: Select sources & outputs</a>
+-   Resource: <a href="https://webrtc.github.io/samples/src/content/devices/input-output/">
+  WebRTC samples: Select sources & outputs</a>
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 113. webapp for selecting audio and video input/output (135) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 113. webapp for selecting audio and video input/output (135) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image113.webp?raw=true"
    width="45%"
@@ -6832,18 +6915,15 @@ Here are some other constraints you can set. In particular, look at the ones for
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4-5">2.4.5 The MediaRecorder API</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This MediaRecoredr API allows to record / capture the audio or video stream. There are many sources for audio or video streams, but we will only consider here the streams coming from a WebCam or a sound input (i.e. microphone).
 
 For example, the MediaRecorder API is used to record the video stream from a WebCam as a file saved on the hard disk. Below is a screenshot of an application allowing to record the WebCam. You will be able to run this example a little further, but for security reasons, it cannot run directly in this Web page.
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 114. webrtc samples mediarecorder (136) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 114. webrtc samples mediarecorder (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image114.webp?raw=true"
    width="40%"
@@ -7119,15 +7199,13 @@ function play() {
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-1-1">3.1.1 HTML5 Graphics</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch3-1-1">3.1.1 Introduction to HTML5 Graphics</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-1">3.2.1 About JavaScript and HTML5</h3>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 115. javascript logo (140) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 115. javascript logo (140) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image115.webp?raw=true"
    width="10%"
@@ -8819,7 +8897,7 @@ We slightly modified the function that draws the monster:
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-3-1">3.3.1 Immediate Mode</h3>
+<h3 id="ch3-3-1">3.3.1 Immediate Drawing Mode</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>
 In the previous sections, we learned how to draw filled or wireframe rectangles.
@@ -11435,20 +11513,17 @@ context.stroke();
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-11">3.4.11 Curved Arrows</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We propose a useful function for drawing curved arrows. See this example:
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 160. example: useful function for drawing curved arrows (217) ----------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 160. example: useful function for drawing curved arrows (217) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image160.webp?raw=true"
-   width="65%"
-   alt="Example: useful function for drawing curved arrows." />
+  width="65%"
+  alt="Example: useful function for drawing curved arrows." />
 &nbsp;
 <br/>
 
@@ -11586,17 +11661,15 @@ It computes the angle of the arrow at its endpoint (<i>line 14</i>) in order to 
 
 Notice that once again, as we modify the context properties (color, lineWidth) in the body of the function, we save and restore the context at the beginning / end of the function.
 </p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-12">3.4.12 Bézier curves</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Introduction</h4>
 
 Bézier curves are interesting. They are mostly used for drawing "S" shapes or asymmetric curves.
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 161. bezier curve in 's' (219) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 161. bezier curve in 's' (219) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image161.webp?raw=true"
    width="35%"
@@ -11606,13 +11679,15 @@ Bézier curves are interesting. They are mostly used for drawing "S" shapes or a
 
 (image taken from [SitePoint](https://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html))
 
-Bézier curves are defined by a context point, like quadratic curves, two control points that define two tangents, and an ending point.
+Bézier curves are defined by a context point, like quadratic curves, two control points that 
+define two tangents, and an ending point.
 
-The first part of the curve is tangential to the imaginary line defined by the context point and the first control point. The second part of the curve is tangential to the imaginary line defined by the second control point and the ending point.
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 162. bezier curve control points (219) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+The first part of the curve is tangential to the imaginary line defined by the context point and 
+the first control point. The second part of the curve is tangential to the imaginary line defined 
+by the second control point and the ending point.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 162. bezier curve control points (219) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image162.webp?raw=true"
    width="65%"
@@ -11649,10 +11724,9 @@ The best way to understand how they work is to check out one of these interactiv
 <h4>Example #1</h4>
 
 Try this:
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 163. bezier curve: example 1 (220) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 163. bezier curve: example 1 (220) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image163.webp?raw=true"
    width="65%"
@@ -11712,14 +11786,13 @@ Try this:
 <h4>Example #2: path with bezier curve, quadratic curve and line in the same, closed path</h4>
 
 <h4>Try this:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!-------- 164. path with bezier curve, quadratic curve & line in same, closed path  (221) ------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~ 164. path with bezier curve, quadratic curve & line in same, closed path  (221) ~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image164.webp?raw=true"
-   width="85%"
-   alt="Path with Bezier and Quadratic curve and line in same, closed path." />
+  width="85%"
+  alt="Path with Bezier and Quadratic curve and line in same, closed path." />
 &nbsp;
 <br/>
 
@@ -11784,13 +11857,13 @@ Try this:
 <p>In this example we use the closePath() method to draw a line between the last path point and the first path point (<i>line 11</i>), so that the drawing looks like a pair of goggles.<br>
 
 Note how the different parts are linked together and make a "path":</p>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 165. bezier curve maker tool (222) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 165. bezier curve maker tool (222) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image165.webp?raw=true"
-   width="85%"
-   alt="Interactive code that draws Bezier curves." />
+  width="85%"
+  alt="Interactive code that draws Bezier curves." />
 &nbsp;
 <br/>
 
@@ -11824,9 +11897,9 @@ Note that:
 -   <i>Line 4</i> defines a "transparent color", the "a" of "rgba" means "alpha channel". Its value is between 0 and 1, where 0 means "completely transparent" and 1 means "opaque".
 
 Here is an example that shows how to draw different filled rectangles in blue, with different levels of transparency:
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 166. colors and transparency example (223) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 166. colors and transparency example (223) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image166.webp?raw=true"
    width="85%"
@@ -11880,20 +11953,17 @@ Here is an example that shows how to draw different filled rectangles in blue, w
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-2">3.5.2 Canvas Context: Linear Gradients</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It is possible to define the stroke or the fill style as a "gradient", a set of interpolated colors, like in this example below:
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 167. define stroke fill style as 'gradient' (224) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 167. define stroke fill style as 'gradient' (224) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image167.webp?raw=true"
-   width="85%"
-   alt="Define stroke fill style as 'gradient'." />
+  width="85%"
+  alt="Define stroke fill style as 'gradient'." />
 </p>
 
 <h4>JavaScript</h4>
@@ -11950,9 +12020,11 @@ function draw() {
 
 </details>
 
-<h4>A linear gradient is seen as an "invisible" rectangle in which a set of colors are interpolated along a line.</h4>
+<h4>A linear gradient is seen as an "invisible" rectangle in which a set of colors are 
+interpolated along a line.</h4>
 
-The gradient becomes visible when we draw shapes on top of the invisible gradient, and when the fillStyle or strokeStyle property has for value this gradient.
+The gradient becomes visible when we draw shapes on top of the invisible gradient, and 
+when the fillStyle or strokeStyle property has for value this gradient.
 
 <h4>How to create gradients</h4>
 
@@ -11966,7 +12038,9 @@ There are 3 steps:
 ctx.createLinearGradient(x0,y0,x1,y1);
 ```
 
-... where the (x0, y0) and (x1, y1) parameters define "the direction of the gradient" (as a vector with a starting and an ending point). This direction is an invisible line along which the colors that compose the gradient will be interpolated.
+... where the (x0, y0) and (x1, y1) parameters define "the direction of the gradient" 
+(as a vector with a starting and an ending point). This direction is an invisible line 
+along which the colors that compose the gradient will be interpolated.
 
 <h4>Let's see an example:</h4>
 
@@ -11974,9 +12048,13 @@ ctx.createLinearGradient(x0,y0,x1,y1);
 grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 0);
 ```
 
-This line defines the direction of the gradient: a virtual, invisible line that goes from the top left corner of the canvas (0, 0) to the top right corner of the canvas (300, 0). The interpolated colors will propagate along this line. 
+This line defines the direction of the gradient: a virtual, invisible line that goes 
+from the top left corner of the canvas (0, 0) to the top right corner of the canvas 
+(300, 0). The interpolated colors will propagate along this line. 
 
-If this gradient is going to be reused by different functions, it is good practice to create/initialize it in a function called when the page is loaded and to store it in a global variable.
+If this gradient is going to be reused by different functions, it is good practice 
+to create/initialize it in a function called when the page is loaded and to store 
+it in a global variable.
 
 <h4>Step #2: add a number of "color stops" to this gradient</h4>
 
@@ -12014,9 +12092,9 @@ grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
 ```
 
 ... then you will define a gradient that goes from the top left corner of the canvas to the bottom right of the canvas. Let's see what it does:
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------- 168. example 1 draw gradient top left to bottom right (226) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image168.webp?raw=true"
   width="65%"
@@ -12027,9 +12105,9 @@ grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
 <h4>Example #2: drawing shapes that do not cover the whole gradient</h4>
 
 Instead of drawing a filled rectangle that covers the whole surface of the canvas, let's draw several smaller rectangles:
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 169. example 2 draw smaller rectangles (226) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image169.webp?raw=true"
    width="65%"
@@ -12085,13 +12163,15 @@ function drawCheckboard(n) {
 
 </details>
 
-The two loops (<i>lines 11-15</i>) draw only one cell out of two (see the j = i % 2 at <i>line 12</i>). i is the column number and if the column is odd or even, either we draw or we do not draw a rectangle.
+The two loops (<i>lines 11-15</i>) draw only one cell out of two (see the j = i % 2 at 
+<i>line 12</i>). i is the column number and if the column is odd or even, either we draw 
+or we do not draw a rectangle.
 
-This code is much more complex than the previous one, taking 16 lines instead of 13, but is much more powerful. Try to call the function with a value of 10, 20, or 2...
-
-<!------------------------------------------------------------------------------------------------>
+This code is much more complex than the previous one, taking 16 lines instead of 13, but is much 
+more powerful. Try to call the function with a value of 10, 20, or 2...
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------------- 170. draw checkboard (227) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image170.webp?raw=true"
    width="65%"
@@ -12165,11 +12245,13 @@ border: 1px solid black;
 
 <h4>Example #3: drawing outlined shapes with gradients</h4>
 
-Just as we used fillStyle and fillRect for drawing rectangles filled with a gradient, we can also use strokeStyle and strokeRect in order to draw wireframed rectangles. In the next example, which is just a variation of the previous one, we have used the lineWidth property to set the outline of the rectangles at 5 pixels:
-
-<!------------------------------------------------------------------------------------------------>
-<!---------- 171. example 3 using strokestyle and strokerect to draw rectangles (228) ------------>
-<!------------------------------------------------------------------------------------------------>
+Just as we used fillStyle and fillRect for drawing rectangles filled with a gradient, we can 
+also use strokeStyle and strokeRect in order to draw wireframed rectangles. In the next example, 
+which is just a variation of the previous one, we have used the lineWidth property to set the 
+outline of the rectangles at 5 pixels:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~ 171. example 3 using strokestyle and strokerect to draw rectangles (228) ~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image171.webp?raw=true"
   width="65%"
@@ -12269,10 +12351,9 @@ grdFrenchFlag = ctx.createLinearGradient(100, 0, 200, 0);
 ```
 
 Like in the first example we will draw a filled rectangle that is the same size as the canvas:
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 172. example 4 draw filled rectangle (230) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image172.webp?raw=true"
    width="65%"
@@ -12345,10 +12426,9 @@ grdFrenchFlag = ctx.createLinearGradient(0, 0, 600, 400);
 ```
 
 And if we draw the same rectangle with the canvas size, here is the result:
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 173. example 5 canvas size (231) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 173. example 5 canvas size (231) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image173.webp?raw=true"
    width="65%"
@@ -12414,15 +12494,17 @@ The red color is beyond the bottom right corner.... we see only the top left qu
 
 <h4>Example #6: drawing shapes that share the same gradient as a whole</h4>
 
-This time, we would like to draw the chessboard with the gradient in each cell. How can we do this with one single gradient?
+This time, we would like to draw the chessboard with the gradient in each cell. How 
+can we do this with one single gradient?
 
 We can't! At least we can't without recreating it for each cell!
 
-It suffices to create a new gradient before drawing each filled rectangle, and set it with the starting and ending point of its direction/virtual line accordingly to the rectangle coordinates. Try this:
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 174. example 6 draw shapes that share gradient (232) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+It suffices to create a new gradient before drawing each filled rectangle, and set 
+it with the starting and ending point of its direction/virtual line accordingly to 
+the rectangle coordinates. Try this:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 174. example 6 draw shapes that share gradient (232) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image174.webp?raw=true"
    width="65%"
@@ -12528,17 +12610,16 @@ function drawCheckboard(n) {
 We wrote a function setGradient(startX, startY, endX, endY) that creates a gradient and set the fillStyle context property so that any filled shape drawn will have this gradient.
 
 In the drawCheckBoard(...) function we call it just before drawing rectangles. In this way, each rectangle is drawn using its own gradient.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-3">3.5.3 Canvas Context: Radial Gradients</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Radial gradients are for creating gradients that propagate/interpolate colors along circles instead of propagating/interpolating along a virtual line, like linear gradients.
 
 Here is an example of a radial gradient that interpolates the color of the rainbow:
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------- 175. example radial gradient interpolates color of rainbow (234) ---------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image175.webp?raw=true"
    width="65%"
@@ -12616,9 +12697,9 @@ context.fillStyle = grd;
 The method from the context object createRadialGradient(cx1, cy1, radius1, cx2, cy2, radius2) takes as the first three parameters the "starting" circle of the gradient, and as the three last parameters, the "ending circle".
 
 In the above example, the gradients starts at a circle located at (150, 100), with a radius of 30, and propagates to a circle with the same center as the first (150, 100), but with a bigger radius of 100, as shown below:
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 176. above example with color stops (235) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image176.webp?raw=true"
    width="40%"
@@ -12637,13 +12718,13 @@ grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
 ```
 
 <h4>Here is the result:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!--- 177.  (xxx) -->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 177. var canvas, ctx, grd (235) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image177.webp?raw=true"
    width="65%"
-   alt="." />
+   alt="var canvas, ctx, grd for function init." />
 &nbsp;
 <br/>
 
@@ -12773,10 +12854,9 @@ imageObj.onload = function(){
 <h4>Example #1: draw two rectangles with a pattern (one filled, one stroked)</h4>
 
 <p>Here we have two rectangles drawn using a pattern (an image that can be repeated along the X and Y axis). The first is a filled rectangle while the second is "stroked" with a lineWidth of 20 pixels:</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------- 178. filled rectange and stroked rectangle with linewidth 20 (238) --------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 178. filled rectange and stroked rectangle with linewidth 20 (238) ~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image178.webp?raw=true"
   width="65%"
@@ -12903,10 +12983,9 @@ Your browser does not support the canvas tag. </canvas>
 <h4>Example 2: the repeatability of a pattern</h4>
 
 <p>To "better" see the repeatability of the pattern, here is the same example with a 1000x1000 pixel wide canvas:</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 179. 1000 by 1000 pixel wide canvas (239) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 179. 1000 by 1000 pixel wide canvas (239) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image179.webp?raw=true"
    width="65%"
@@ -12981,18 +13060,15 @@ Your browser does not support the canvas tag. </canvas>
 ```
 
 <p>Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just change this line in the online example and you will see live results.</p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-5">3.5.5 A Multiple Image Loader</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Draw with multiple patterns? We need to load all of them before drawing!</h4>
 
 Below are 4 rectangles drawn with 4 different patterns.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------ 180. four rectangles drawn with different patterns (241) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image180.webp?raw=true"
   width="35%"
@@ -13011,10 +13087,9 @@ The trick is to have an array of URLs that will be used by our multiple image lo
 When all images have been loaded, we call a callback function that has been passed to our loader.
 
 The complete example code that produces the result shown at the beginning of this page is the following:
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 181. multiple image loader (241) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image181.webp?raw=true"
    width="65%"
@@ -13201,16 +13276,13 @@ Your browser does not support the canvas tag.
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-6">3.5.6 Drawing Shadows</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Context properties to draw with shadows</h4>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 182. a green shadow rectangle (244) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image182.webp?raw=true"
    width="25%"
@@ -13228,10 +13300,9 @@ Your browser does not support the canvas tag.
 <h4>Examples</h4>
 
 <h4>Example #1: simple shadows</h4>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 183. example #1, simple shadows (245) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image183.webp?raw=true"
    width="65%"
@@ -13374,10 +13445,9 @@ Your browser does not support the canvas tag.</canvas>
 </details>
 
 <h4>And here is the result:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 184. setting shadow - not quite correct (247) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 184. setting shadow - not quite correct (247) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image184.webp?raw=true"
    width="65%"
@@ -13448,9 +13518,14 @@ ctx.shadowOffsetY = 15; // vertical offset
 
 </details>
 
-Ah, indeed, the call to ctx.fill() casts a shadow, but the call to ctx.stroke(), that paints the whole path again, casts a shadow too, and this time the outline produces an unwanted shadow... How can we avoid this effect, while using the same technique for drawing the path?
+Ah, indeed, the call to ctx.fill() casts a shadow, but the call to ctx.stroke(), that 
+paints the whole path again, casts a shadow too, and this time the outline produces 
+an unwanted shadow... How can we avoid this effect, while using the same technique 
+for drawing the path?
 
-The trick is to save the context before setting the shadow properties, then draw the filled circle, then restore the context (to its previous state: without shadows), then draw the outlined circle by calling ctx.stroke().
+The trick is to save the context before setting the shadow properties, then draw the 
+filled circle, then restore the context (to its previous state: without shadows), 
+then draw the outlined circle by calling ctx.stroke().
 
 <h4>Correct version of the code:</h4>
 
@@ -13480,9 +13555,9 @@ The trick is to save the context before setting the shadow properties, then dr
 </details>
 
 <h4>And here is the <em>FINAL</em> result:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 185. final result of setting shadow (248) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 185. final result of setting shadow (248) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image185.webp?raw=true"
    width="65%"
@@ -13556,11 +13631,9 @@ The trick is to save the context before setting the shadow properties, then dr
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-7">3.5.7 Styling Lines</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Several context properties can be used to set the thickness of the shape outlines, the way line end caps are drawn, etc.
 
 They apply to all shapes that are drawn in path mode (lines, curves, arcs) and some also apply to rectangles.
@@ -13576,10 +13649,9 @@ ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wiref
 ```
 
 <p>Here is a complete example where we draw with a lineWidth of 20 pixels:</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 186. changing the line thickness (250) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 186. changing the line thickness (250) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image186.webp?raw=true"
    width="65%"
@@ -13635,9 +13707,9 @@ ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wiref
 <h4>Example #2: changing the end caps of a line</h4>
 
 The lineCap property of the context indicates the way line end caps are rendered. Possible values are butt (default), round, square (from top to bottom in the next illustration). Note that a value of "round" or "square" makes the lines slightly longer than the default value "butt".
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 187. line cap values (251) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 187. line cap values (251) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image187.webp?raw=true"
    width="20%"
@@ -13646,9 +13718,9 @@ The lineCap property of the context indicates the way line end caps are render
 <br/>
 
 <h4>Try this:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 188. changing the end caps of a lines (251) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 188. changing the end caps of a lines (251) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image188.webp?raw=true"
    width="65%"
@@ -13697,17 +13769,20 @@ ctx.strokeRect(230, 10, 100, 100);
 
 </details>
 
-Note that in this example, the rectangle is not affected. It has no line ends visible - all its sides meet. However, the next property we're going to look at will have an effect on rectangles!
+Note that in this example, the rectangle is not affected. It has no line ends 
+visible - all its sides meet. However, the next property we're going to look 
+at will have an effect on rectangles!
 
 <h4>Example #3: setting the type of corner when two lines meet</h4>
 
-<p>The lineJoin property of the context indicates the way corners are rendered, when two lines meet. Possible values are miter (the default) for creating sharp corners, round, or bevel for "cut corners".</p>
+<p>The lineJoin property of the context indicates the way corners are rendered, 
+when two lines meet. Possible values are miter (the default) for creating sharp 
+corners, round, or bevel for "cut corners".</p>
 
 <h4>Try this:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 189. setting type of corner when two lines meet (252) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 189. setting type of corner when two lines meet (252) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image189.webp?raw=true"
    width="65%"
@@ -13753,14 +13828,20 @@ ctx.strokeRect(230, 10, 100, 100);
 
 </details>
 
-<h4>Example #4: specific case of lineJoin="miter", the miterLimit property, a way to avoid looooooong corners!</h4>
+<h4>Example #4: specific case of lineJoin="miter", the miterLimit property, a way 
+to avoid looooooong corners!</h4>
 
-The miterLimit property value corresponds to the maximum miter length: the distance between the inner corner and the outer corner where two lines meet. When the angle of a corner between two lines gets smaller, the miter length grows and can become too long.
+The miterLimit property value corresponds to the maximum miter length: the distance 
+between the inner corner and the outer corner where two lines meet. When the angle 
+of a corner between two lines gets smaller, the miter length grows and can become too long.
 
-In order to avoid this situation, we can set the miterLimit property of the context to a threshold value. If the miter length exceeds the miterLimit value, then the corner will be rendered as if the lineJoin property had been set to "bevel" and the corner will be "cut".
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 190. linejoin property - arrows fig 1, 2 and 3 (253) --------------------->
-<!------------------------------------------------------------------------------------------------>
+In order to avoid this situation, we can set the miterLimit property of the context 
+to a threshold value. If the miter length exceeds the miterLimit value, then the 
+corner will be rendered as if the lineJoin property had been set to "bevel" and 
+the corner will be "cut".
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 190. linejoin property - arrows fig 1, 2 and 3 (253) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image190.webp?raw=true"
    width="20%"
@@ -13769,28 +13850,25 @@ In order to avoid this situation, we can set the miterLimit property of the co
 <br/>
 
 <h4>You can try an interactive example here:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 191. miterlimit property explained (253) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 191. miterlimit property explained (253) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image191.webp?raw=true"
    width="65%"
-   alt="Example #4: miterLimit property shown with 3 different angles, we see that the part that goes out of the angle becomes very long." />
+   alt="Example #4: miterLimit property shown with 3 different angles, we see that 
+     the part that goes out of the angle becomes very long." />
 </p>
 
-In the example, try different values for the miterLimit property. You'll see that the way the corners are rendered changes at values around 2 and 3.
-
-<!------------------------------------------------------------------------------------------------>
+In the example, try different values for the miterLimit property. You'll see that the 
+way the corners are rendered changes at values around 2 and 3.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-1-1">4.1.1 Video Intro -- Module 4</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 1:17 video explaining animation.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-1">4.2.1 Animation Techniques</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In order to perform an animation, we need to:
 
 1.  Clear the content of the canvas: this can be done using the ctx.clearRect(0, 0, canvasWidth, canvasHeight) method;
@@ -13801,39 +13879,51 @@ In order to perform an animation, we need to:
 
 4.  Repeat (go to step 1).
 
-These are the basic steps for animating objects in a canvas. The order of the steps can be changed (i.e. you can move the shapes before drawing them), but, the principle is the same: clear-draw-move-repeat.
+These are the basic steps for animating objects in a canvas. The order of the steps can be 
+changed (i.e. you can move the shapes before drawing them), but, the principle is the same: 
+clear-draw-move-repeat.
 
 Step 1 could be avoided if you redraw the whole canvas content during step 2.
 
 <h4>Before HTML5</h4>
 
-Even before HTML5 and the introduction of the canvas element, people created HTML games. They used CSS backgrounds inside &lt;div&gt; elements, and used to change the CSS top, left, width and height properties of the divs to animate graphic images on the screen.
+Even before HTML5 and the introduction of the canvas element, people created HTML games. 
+They used CSS backgrounds inside &lt;div&gt; elements, and used to change the CSS top, 
+left, width and height properties of the divs to animate graphic images on the screen.
 
-During the late 1990s and early 2000s, JavaScript became increasingly popular. The community created a first 'umbrella term' describing a collection of technologies used together to create interactive and animated Web sites - [DHTML (Dynamic HTML)](https://en.wikipedia.org/wiki/Dynamic_HTML). For example, check the [games developed at this time by Brent Silby](https://def-logic.com/) (they all use DHTML).
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 192. mario-like dhtml game (254) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+During the late 1990s and early 2000s, JavaScript became increasingly popular. The 
+community created a first 'umbrella term' describing a collection of technologies 
+used together to create interactive and animated Web sites - 
+[DHTML (Dynamic HTML)](https://en.wikipedia.org/wiki/Dynamic_HTML). For example, 
+check the [games developed at this time by Brent Silby](https://def-logic.com/) 
+(they all use DHTML).
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 192. mario-like dhtml game (254) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image192.webp?raw=true"
    width="25%"
-   alt="A mario like DHTML game." />
+   alt="A Mario like DHTML game." />
 </p>
 
-For animation, the setInterval(function, ms) and setTimeout(function, ms) methods were the only solutions. Both methods take a function as the first parameter, and a number of milliseconds as the second parameter.
+For animation, the setInterval(function, ms) and setTimeout(function, ms) methods 
+were the only solutions. Both methods take a function as the first parameter, 
+and a number of milliseconds as the second parameter.
 
-The only difference is that the code provided to setInterval will run every n milliseconds whereas the code in setTimeout will run only once after n milliseconds (meaning that we will have to repeat a call to setTimeout at step 4 above).
+The only difference is that the code provided to setInterval will run every n 
+milliseconds whereas the code in setTimeout will run only once after n 
+milliseconds (meaning that we will have to repeat a call to setTimeout at step 4 above).
 
 <h4>After HTML5</h4>
 
-The methods described above are now completed by a new method that comes with multiple advantages: the requestAnimationFrame API.
+The methods described above are now completed by a new method that comes with 
+multiple advantages: the requestAnimationFrame API.
 
-We will compare the old methods with the new one, and implement the same  example with each of them to highlight the differences.
-
-<!------------------------------------------------------------------------------------------------>
+We will compare the old methods with the new one, and implement the same 
+example with each of them to highlight the differences.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-2">4.2.2 Basic Animation Techniques</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Below is the example shown in the video, with source code:
 
 <h4>HTML</h4>
@@ -13904,21 +13994,30 @@ Your browser does not support the canvas tag.
 
 </details>
 
-<b>Errata</b>: in the video, we use speed +=1; in order to increment the speed of the rectangle each time it bounces (in the changeColor() function). This is not correct as speed can be negative. The online example fixes this by using speed += Math.sign(speed) * 1; instead this will add +1 or -1 depending on the sign of speed.
-
-<!------------------------------------------------------------------------------------------------>
+<b>Errata</b>: in the video, we use speed +=1; in order to increment the speed of 
+the rectangle each time it bounces (in the changeColor() function). This is not 
+correct as speed can be negative. The online example fixes this by using speed 
++= Math.sign(speed) * 1; instead this will add +1 or -1 depending on the sign of speed.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-3">4.2.3 Animating Using setInterval()</h3>
-<!------------------------------------------------------------------------------------------------>
-
-The setInterval(...) function is still popular on the Web, and even though this is not the recommended way to do 60 frames/second canvas animation, it is worth understanding how it works.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The setInterval(...) function is still popular on the Web, and even though this is 
+not the recommended way to do 60 frames/second canvas animation, it is worth understanding how it works.
 
 Syntax: setInterval(function, ms);
 
-The setInterval(...) function calls another function or evaluates an expression at specified intervals of time (in milliseconds), and returns the unique id of the action. You can always stop it by calling the clearInterval(id) function with the interval identifier as an argument.
+The setInterval(...) function calls another function or evaluates an expression at 
+specified intervals of time (in milliseconds), and returns the unique id of the 
+action. You can always stop it by calling the clearInterval(id) function with 
+the interval identifier as an argument.
 
 <h4>Basic example that shows how to animate a DIV using the DOM API</h4>
 
-This is how pre-HTML5 games were written. Before the introduction of the canvas element, developers made games using div elements. By changing their background color, top and left CSS positions, it was possible to animate characters in games. The animation was created by calling repeatedly a function that did the drawing, using the JavaScript setInterval or setTimeout functions.
+This is how pre-HTML5 games were written. Before the introduction of the canvas 
+element, developers made games using div elements. By changing their background 
+color, top and left CSS positions, it was possible to animate characters in 
+games. The animation was created by calling repeatedly a function that did 
+the drawing, using the JavaScript setInterval or setTimeout functions.
 
 Please try this example that moves/animates a div using setInterval:
 
@@ -14006,9 +14105,14 @@ clearInterval(requestId);
 
 </details>
 
-Here, we define a &lt;div&gt; element, (see the online source code for the CSS properties involved), and we use the setInterval method (<i>line 17</i>) to call every 10ms the render() method that will just increment the position of this element. Notice that since we're using the DOM, the horizontal position of the div is modified by changing its left CSS property.
+Here, we define a &lt;div&gt; element, (see the online source code for the CSS 
+properties involved), and we use the setInterval method (<i>line 17</i>) to 
+call every 10ms the render() method that will just increment the position of 
+this element. Notice that since we're using the DOM, the horizontal position 
+of the div is modified by changing its left CSS property.
 
-The call to setInterval returns an id we can use to stop the animation, by calling clearInterval (<i>line 22</i>).
+The call to setInterval returns an id we can use to stop the animation, by 
+calling clearInterval (<i>line 22</i>).
 
 <h4>Animate a monster in a canvas, using setInterval</h4>
 
@@ -14176,9 +14280,18 @@ We use the drawMonster() function:
 
 <h4>Explanations:</h4>
 <ul>
-  <li><i>Lines 52-61</i>: The code for launching and stopping the animation is similar to that from the previous example.</li>
-  <li><i>Lines 34-50</i>: The code that draws the monster is that which we saw earlier when we presented the 2D transformations. Best practice is to save and restore the context at the beginning and end of each function that changes the context.</li>
-  <li><i>Lines 21-32</i>: <b>The most interesting part is the animation loop</b> that implements the basic animation steps: clear-draw-move. In order to make a shape "movable", we use some "state variables" for its position and angle, and we modify them at each iteration (<i>lines 29-32</i>). We will see later on how to modify the value of these variables on user interactions (keyboard, mouse, etc.).</li>
+  <li><i>Lines 52-61</i>: The code for launching and stopping the animation is 
+    similar to that from the previous example.</li>
+  <li><i>Lines 34-50</i>: The code that draws the monster is that which we saw 
+    earlier when we presented the 2D transformations. Best practice is to save 
+	and restore the context at the beginning and end of each function that changes 
+	the context.</li>
+  <li><i>Lines 21-32</i>: <b>The most interesting part is the animation loop</b> 
+    that implements the basic animation steps: clear-draw-move. In order to make 
+	a shape "movable", we use some "state variables" for its position and angle, 
+	and we modify them at each iteration (<i>lines 29-32</i>). We will see later 
+	on how to modify the value of these variables on user interactions (keyboard, 
+	mouse, etc.).</li>
 </ul>
 
 <h4>Problems with setInterval</h4>
@@ -14187,20 +14300,29 @@ While the above example works, there are several reasons not to use setInterval
 
 <h4>Running several animations simultaneously</h4>
 
-The setInterval function may become hard to debug, particularly if you run several animations simultaneously. For example, if you have two intervals, one running every 100 milliseconds, the other every second, and if you want to debug the second one, the first one will constantly be run at regular intervals, making step by step debugging really difficult.
+The setInterval function may become hard to debug, particularly if you run several 
+animations simultaneously. For example, if you have two intervals, one running 
+every 100 milliseconds, the other every second, and if you want to debug the 
+second one, the first one will constantly be run at regular intervals, making 
+step by step debugging really difficult.
 
 <h4>A single animation may be interrupted by itself to become two simultaneous animations</h4>
 
-setInterval will execute the function passed as first parameter every n milliseconds regardless of when the function was last called or how long the function takes to execute. If the function takes longer than the interval, then setInterval might queue too many function executions back to back when the interval is too short, leading to unpredictable results. 
+setInterval will execute the function passed as first parameter every n 
+milliseconds regardless of when the function was last called or how long 
+the function takes to execute. If the function takes longer than the 
+interval, then setInterval might queue too many function executions 
+back to back when the interval is too short, leading to unpredictable results. 
 
 <b>BEST PRACTICE</b>: AVOID using setInterval for animating in a canvas,
 except for trivial cases (change a color every second).
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-4">4.2.4 Animating Using setTimeout()</h3>
-<!------------------------------------------------------------------------------------------------>
-
-One thing you should always remember about using setInterval: if we set number of milliseconds at - let's say 20ms - it will call our game loop function EACH 20ms, even if the previous one is not yet finished. This may lead to many problems (incomplete rendering, etc.).
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+One thing you should always remember about using setInterval: if we set number of 
+milliseconds at - let's say 20ms - it will call our game loop function EACH 20ms, 
+even if the previous one is not yet finished. This may lead to many problems 
+(incomplete rendering, etc.).
 
 That's where we can use another function: 
 
@@ -14302,7 +14424,9 @@ clearTimeout(requestId);
 
 </details>
 
-This is similar to the previous example except that we called setTimeout(function, delay) instead of setInterval(function, period). As setTimeout runs the function passed as the first parameter only once, we also have to call it at the end of the loop.
+This is similar to the previous example except that we called setTimeout(function, delay) 
+instead of setInterval(function, period). As setTimeout runs the function passed as the 
+first parameter only once, we also have to call it at the end of the loop.
 
 <h4>Extract from source code:</h4>
 
@@ -14341,45 +14465,79 @@ This is similar to the previous example except that we called setTimeout(functi
 
 </details>
 
-This function is certainly more suitable for doing graphic animation, such as for writing an HTML5 game. It will never interrupt an ongoing animation, even if the instructions inside the animation loop take too long.
+This function is certainly more suitable for doing graphic animation, such as for 
+writing an HTML5 game. It will never interrupt an ongoing animation, even if the 
+instructions inside the animation loop take too long.
 
 <h4>Problems with setInterval() and setTimeout()</h4>
 
-setTimeout does not "wait"  during the timeout period. It lets the rest of the JavaScript code run. It schedules a new call to the function passed as first parameter with a timer running in the background. This might cause it to take slightly longer than the expected timeout period to start executing. 
+setTimeout does not "wait"  during the timeout period. It lets the rest of the 
+JavaScript code run. It schedules a new call to the function passed as first 
+parameter with a timer running in the background. This might cause it to take 
+slightly longer than the expected timeout period to start executing. 
 
-This problem also occurs with setInterval, the timing is not "very" reliable. If you plan to run a function every 20ms, and if you measure precisely the real timing, sometimes you will discover big differences between what is scheduled and what is performed. This is because these methods were designed a long time ago, when high precision timers and 60 frames per second animation were not an option.
+This problem also occurs with setInterval, the timing is not "very" reliable. 
+If you plan to run a function every 20ms, and if you measure precisely the 
+real timing, sometimes you will discover big differences between what is 
+scheduled and what is performed. This is because these methods were designed 
+a long time ago, when high precision timers and 60 frames per second animation 
+were not an option.
 
 Here comes the [requestAnimationFrame API,](https://www.w3.org/TR/html51/webappapis.html#animation-frames) a very good companion to the canvas API!
 
 <b>BEST PRACTICE</b>: AVOID using setTimeout for animating in a canvas, except for trivial cases.
 
 For 60 frames/second animation, use requestAnimationFrame!
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-5">4.2.5 The requestAnimationFrame API</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The best way to make animation at 60 frames per second: requestAnimationFrame!
 
 The requestAnimationFrame(animationLoop) is very similar to setTimeout:
 
--   It targets 60 frames/s: requestAnimationFrame asks the browser to schedule a call to the animationLoop function passed as parameter in 1/60th of a second (equivalent to 16.6ms). Keep in mind that most monitors cannot display more than 60 frames per second (FPS). Note that whether humans can tell the difference among high frame rates depends on the application, most games are acceptable above 30 FPS, and virtual reality might require 75 FPS to achieve a natural feel. Some gaming monitors go up to 144 FPS (pro players in e-sport train themselves at Counter Strike with a 150 frames/s rate).
+-   It targets 60 frames/s: requestAnimationFrame asks the browser to schedule a call 
+to the animationLoop function passed as parameter in 1/60th of a second (equivalent 
+to 16.6ms). Keep in mind that most monitors cannot display more than 60 frames per 
+second (FPS). Note that whether humans can tell the difference among high frame 
+rates depends on the application, most games are acceptable above 30 FPS, and 
+virtual reality might require 75 FPS to achieve a natural feel. Some gaming 
+monitors go up to 144 FPS (pro players in e-sport train themselves at Counter 
+Strike with a 150 frames/s rate).
 
--   It calls the function only ONCE, so if you want a continuous animation, like with setTimeout, you need to call again requestAnimationFrame at the end of the animationLoop function.
+-   It calls the function only ONCE, so if you want a continuous animation, like with 
+setTimeout, you need to call again requestAnimationFrame at the end of the animationLoop function.
 
 It has, however, several advantages over setInterval and setTimeout:
 
--   The scheduling is much more accurate: if the code inside the function can be executed in less than 16.6ms, then the average error between the scheduled time and the real time will be much smaller than with the old functions.
+-   The scheduling is much more accurate: if the code inside the function can be executed 
+in less than 16.6ms, then the average error between the scheduled time and the real time 
+will be much smaller than with the old functions.
 
--   High resolution timer: even if this difference is small, the function that is called after 16.6ms has an extra parameter that is a high resolution time, very useful for writing games that do[ time-based animation](https://blog.sklambert.com/using-time-based-animation-implement/). Time-based animation will be studied in detail in the HTML5 Part 2 course at W3Cx. It is a technique that comprises measuring the amount of time elapsed between two frames, then computing the distance in pixels to move objects on screen so that the visible speed for a human eye remains constant, even if the frame rate is not.
+-   High resolution timer: even if this difference is small, the function that is called 
+after 16.6ms has an extra parameter that is a high resolution time, very useful for 
+writing games that do[ time-based animation](https://blog.sklambert.com/using-time-based-animation-implement/). 
+Time-based animation will be studied in detail in the HTML5 Part 2 course at W3Cx. 
+It is a technique that comprises measuring the amount of time elapsed between two 
+frames, then computing the distance in pixels to move objects on screen so that 
+the visible speed for a human eye remains constant, even if the frame rate is not.
 
--   Multiple animations are merged: browsers can bundle animations happening at the same time into a single paint redraw (thus happening faster/with less CPU cycles), solving the problems that can occur with simultaneous setInterval calls.
+-   Multiple animations are merged: browsers can bundle animations happening at 
+the same time into a single paint redraw (thus happening faster/with less CPU 
+cycles), solving the problems that can occur with simultaneous setInterval calls.
 
--   CPU/GPU optimization, battery saved on mobiles:  if the JavaScript execution is occurring in a tab/window which is not visible, it doesn't have to be drawn. However the animation loop is still executed (objects will be moved, not drawn). This is the same when a mobile phone or tablet screen is black or if the application is put in background.
+-   CPU/GPU optimization, battery saved on mobiles:  if the JavaScript execution 
+is occurring in a tab/window which is not visible, it doesn't have to be drawn. 
+However the animation loop is still executed (objects will be moved, not drawn). 
+This is the same when a mobile phone or tablet screen is black or if the application 
+is put in background.
 
 <h4>Typical use</h4>
 
-You will note that  requestAnimationFrame(function) is used like setTimeout(function, delay). A call to requestAnimationFrame just asks the browser to call the function passed as a parameter ONCE, and the target delay is fixed, and corresponds to a 60 frames/s frame rate (16.6ms). Notice that an id is used for stopping an animation with cancelAnimationFrame(id).
+You will note that  requestAnimationFrame(function) is used like setTimeout(function, 
+delay). A call to requestAnimationFrame just asks the browser to call the function 
+passed as a parameter ONCE, and the target delay is fixed, and corresponds to a 60 
+frames/s frame rate (16.6ms). Notice that an id is used for stopping an animation 
+with cancelAnimationFrame(id).
 
 <h4>Source code:</h4>
 
@@ -14469,7 +14627,10 @@ You will note that  requestAnimationFrame(function) is used like setTimeout(
 
 </details>
 
-Notice that calling requestAnimationFrame(animationLoop) at <i>line 19</i>, and after that from within the loop at line 14, asks the browser to call the animationLoop function so that the delta between calls will be as close as possible to 16.6ms  (this corresponds to 1/60th of a second).
+Notice that calling requestAnimationFrame(animationLoop) at <i>line 19</i>, and after 
+that from within the loop at line 14, asks the browser to call the animationLoop 
+function so that the delta between calls will be as close as possible to 16.6ms 
+(this corresponds to 1/60th of a second).
 
 <h4>Is the 16.6ms delay really accurate? Can we trust it?</h4>
 
@@ -14479,23 +14640,33 @@ This target may be hard to reach if:
 
 -   The target device that runs the animation is a low end phone or an old computer,
 
--   The scheduler may be a bit late or a bit in advance (even if this kind of error is much smaller with requestAnimationFrame than with setInterval or setTimeout).
+-   The scheduler may be a bit late or a bit in advance (even if this kind of 
+error is much smaller with requestAnimationFrame than with setInterval or setTimeout).
 
-Many HTML5 games perform what we call a "time-based animation". For this, we need an accurate timer that will tell us the elapsed time between each animation frame.
+Many HTML5 games perform what we call a "time-based animation". For this, we need 
+an accurate timer that will tell us the elapsed time between each animation frame.
 
-Depending on this time, we can compute the distances that must be achieved by each object on the screen in order to move at a constant speed (for a human eye), independently of the CPU or GPU of the computer or mobile device that is running the game.
+Depending on this time, we can compute the distances that must be achieved by each 
+object on the screen in order to move at a constant speed (for a human eye), 
+independently of the CPU or GPU of the computer or mobile device that is running the game.
 
-The timeStamp parameter of the animationLoop function (<i>line 1</i> in the above code) is useful for exactly that: it gives a high resolution time. By measuring deltas between two consecutive calls of the animationLoop, we will know exactly, with a sub-millisecond accuracy, the elapsed time between two frames.
+The timeStamp parameter of the animationLoop function (<i>line 1</i> in the above code) 
+is useful for exactly that: it gives a high resolution time. By measuring deltas 
+between two consecutive calls of the animationLoop, we will know exactly, with a 
+sub-millisecond accuracy, the elapsed time between two frames.
 
-Using time-based animation, and more generally, using the canvas element for writing HTML5 games, is part of the W3Cx HTML5 Apps and Games course.
+Using time-based animation, and more generally, using the canvas element for 
+writing HTML5 games, is part of the W3Cx HTML5 Apps and Games course.
 
-Current <a href="https://caniuse.com/requestanimationframe">support</a> is really good and all modern browsers support this API.
-
-<!------------------------------------------------------------------------------------------------>
+Current <a href="https://caniuse.com/requestanimationframe">support</a> is 
+really good and all modern browsers support this API.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3-1">4.3.1 Events: Input and Output</h3>
-<!------------------------------------------------------------------------------------------------>
-
-In JavaScript, we treat events made by users as an input, and we manipulate the DOM structure as an output. Most of the time in games/animations, we will change state variables of moving objects, such as position or speed of an alien ship, and the animation loop will take care of these variables to move the objects.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+In JavaScript, we treat events made by users as an input, and we manipulate the DOM structure as 
+an output. Most of the time in games/animations, we will change state variables of moving objects, 
+such as position or speed of an alien ship, and the animation loop will take care of these 
+variables to move the objects.
 
 The events are called <i>DOM events</i>, and we use the <i>DOM JavaScript API</i> to create <i>event handlers</i>.
 
@@ -14511,7 +14682,10 @@ You will often find this in examples on the Web:
 3.  </div>
 ```
 
-Note: this is not the recommended way to handle events, even if it's very easy to use. Mixing the 'visual layer' (HTML) and the 'logic layer' (JavaScript) in one place is ok for small examples (we have used this in some examples in this course) but is not the recommended way for full scale applications where a clean separation is best.
+Note: this is not the recommended way to handle events, even if it's very easy to use. 
+Mixing the 'visual layer' (HTML) and the 'logic layer' (JavaScript) in one place is 
+ok for small examples (we have used this in some examples in this course) but is not 
+the recommended way for full scale applications where a clean separation is best.
 
 <h4>Second method: add an event handler to an HTML element in JavaScript</h4>
 
@@ -14523,7 +14697,8 @@ Note: this is not the recommended way to handle events, even if it's very easy t
 3.  }
 ```
 
-This method is fine, but  you will not be able to attach several listener functions. If you need to do this, the preferred version is the next one.
+This method is fine, but  you will not be able to attach several listener functions. 
+If you need to do this, the preferred version is the next one.
 
 <h4>Third method: register a callback to the event listener with the addEventListener method</h4>
 
@@ -14539,7 +14714,8 @@ The third parameter is not important for now, just set it to false, or simply d
 
 <h4>The DOM event that is passed to the event listener function</h4>
 
-When you create an EventListener and attach it to an element,  an event object will be passed as a parameter to your callback, just like this:
+When you create an EventListener and attach it to an element,  an event object will 
+be passed as a parameter to your callback, just like this:
 
 ```
 1.  element.addEventListener('click', function(<b>event</b>) {
@@ -14547,9 +14723,15 @@ When you create an EventListener and attach it to an element,  an event object 
 3.  }, false);
 ```
 
-Depending on the type of event you are listening to, we will use different properties from the event object in order to get useful information like: "what keys have been pressed down?", "what is the position of the mouse cursor?", "which mouse button is down?", etc.
+Depending on the type of event you are listening to, we will use different properties 
+from the event object in order to get useful information like: "what keys have been 
+pressed down?", "what is the position of the mouse cursor?", "which mouse button is 
+down?", etc.
 
-Let's see next how to deal with the keyboard and the mouse. In the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games</a>, we look at additional APIs such as <a href="https://www.w3.org/TR/gamepad/">the gamePad API</a> for using USB or wireless gamepads/joysticks/game controllers.
+Let's see next how to deal with the keyboard and the mouse. In the 
+<a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games</a>, 
+we look at additional APIs such as <a href="https://www.w3.org/TR/gamepad/">
+the gamePad API</a> for using USB or wireless gamepads/joysticks/game controllers.
 
 <h4>Source code for the knowledge check 4.3.1</h4>
 
@@ -14584,12 +14766,12 @@ Let's see next how to deal with the keyboard and the mouse. In the <a href="htt
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
-<!------------------------------------------------------------------------------------------------>
-
-When you listen to keyboard related events (keydown, keyup or keypressed), the event parameter passed to the listener function will contain the code of the key that fired the event. Then it is possible to test what key has been pressed or released, like this:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+When you listen to keyboard related events (keydown, keyup or keypressed), the event 
+parameter passed to the listener function will contain the code of the key that fired 
+the event. Then it is possible to test what key has been pressed or released, like this:
 
 ```
 1.  window.addEventListener('keydown', function(event) {
@@ -14599,7 +14781,8 @@ When you listen to keyboard related events (keydown, keyup or keypressed), th
 5.  }, false);
 ```
 
-At <i>line 2</i>, the value "37" is the key code that corresponds to the left arrow. It might be difficult to know the correspondences between real keyboard keys and codes, so here are handy pointers:
+At <i>line 2</i>, the value "37" is the key code that corresponds to the left arrow. 
+It might be difficult to know the correspondences between real keyboard keys and codes, so here are handy pointers:
 
 -   Try key codes with this [interactive test page](http://www.asquare.net/javascript/tests/KeyCode.html)
 
@@ -14609,10 +14792,12 @@ At <i>line 2</i>, the value "37" is the key code that corresponds to the left a
 
 <h4>Example #1: adding a key listener to the window object</h4>
 
-A lot of people think that the canvas element is not able to get key events. Many examples on the Web handle key events on canvas by adding a listener to the window object directly, like this:
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 193. add key listener to window object (268) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+A lot of people think that the canvas element is not able to get key events. Many 
+examples on the Web handle key events on canvas by adding a listener to the window 
+object directly, like this:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 193. add key listener to window object (268) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image193.webp?raw=true"
   width="25%"
@@ -14634,7 +14819,8 @@ border: 1px solid black;
 <p>
 ```
 
-This example shows how to handle key events in a canvas by adding a key listener to the window object. Like that, all key press in the document will trigger the event listener function.</p>
+This example shows how to handle key events in a canvas by adding a key listener to the 
+window object. Like that, all key press in the document will trigger the event listener function.</p>
 
 <details open>
  <summary>Click to expand!</summary>
@@ -14685,16 +14871,18 @@ return false;
 
 </details>
 
-Indeed this solution works well if you write a game, and want to detect events wherever the mouse cursor is, and without worrying about what HTML element has the focus, etc...
+Indeed this solution works well if you write a game, and want to detect events 
+wherever the mouse cursor is, and without worrying about what HTML element has 
+the focus, etc...
 
 <h4>Example #2: moving the monster with the keyboard</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 194. (xxx) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 194. move monster with keyboard (314) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image194.webp?raw=true"
    width="65%"
-   alt="." />
+   alt="Move monster with keyboard." />
 </p>
 
 <h4>HTML</h4>
@@ -14979,19 +15167,24 @@ Note that the line that forces the focus to the canvas is commented by default. 
 
 </details>
 
-<i>Line 10</i> is useful to initially set the focus on the canvas, but this trick will not work if we click somewhere else in the HTML page.
+<i>Line 10</i> is useful to initially set the focus on the canvas, but this trick will 
+not work if we click somewhere else in the HTML page.
 
 <h4>Example #4: a better way: set the focus when the mouse cursor enters the canvas</h4>
 
-A better way to manage key events on a canvas is to set the focus when the mouse is over the canvas, and to un-focus it otherwise.
+A better way to manage key events on a canvas is to set the focus when the mouse is over 
+the canvas, and to un-focus it otherwise.
 
-Here is a modified version of the "move monster example" seen earlier. This time, you move the monster with the left and right arrow only when the mouse cursor is over the canvas. We added two mouse event listeners on the canvas: one for the mouseenter event and the other for the mouseout event.
+Here is a modified version of the "move monster example" seen earlier. This time, you 
+move the monster with the left and right arrow only when the mouse cursor is over the 
+canvas. We added two mouse event listeners on the canvas: one for the mouseenter event 
+and the other for the mouseout event.
 
-When the mouse enters the canvas we call canvas.focus() to set the focus to the canvas, and when the mouse cursor goes out of the canvas, we call canvas.blur() to unset the focus.
-
-<!------------------------------------------------------------------------------------------------>
-<!----------- 197.  (xxx) ------------>
-<!------------------------------------------------------------------------------------------------>
+When the mouse enters the canvas we call canvas.focus() to set the focus to the canvas, 
+and when the mouse cursor goes out of the canvas, we call canvas.blur() to unset the focus.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 197.  (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image197.webp?raw=true"
   width="65%"
@@ -15148,15 +15341,16 @@ cancelAnimationFrame(requestId);
 
 </details>
 
-The third parameter (false) of <i>lines 12</i> and <i>13</i> means "we do not want to propagate the event to the ancestors of the canvas in the DOM." 
-
-<!------------------------------------------------------------------------------------------------>
+The third parameter (false) of <i>lines 12</i> and <i>13</i> means "we do not want to propagate 
+the event to the ancestors of the canvas in the DOM." 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3-3">4.3.3 Mouse Interaction, Mouse Events</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Detecting mouse events in a canvas is quite straightforward: you add an event listener to the 
+canvas, and the browser invokes that listener when the event occurs.
 
-Detecting mouse events in a canvas is quite straightforward: you add an event listener to the canvas, and the browser invokes that listener when the event occurs.
-
-The example below is about listening to mouseup and mousedown events (when a user presses or releases any mouse button):
+The example below is about listening to mouseup and mousedown events (when a user presses or 
+releases any mouse button):
 
 ```
 1.  canvas.addEventListener('mousedown', function (evt) {
@@ -15164,13 +15358,14 @@ The example below is about listening to mouseup and mousedown events (when a
 3.  });
 ```
 
-The event received by the listener function will be used for getting the button number or the coordinates of the mouse cursor. Before looking at different examples, let's look at the different event types we can listen to.
+The event received by the listener function will be used for getting the button number or 
+the coordinates of the mouse cursor. Before looking at different examples, let's look at 
+the different event types we can listen to.
 
 <h4>The different mouse events</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!----------- 198. mouse events illustrated (xxx) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 198. mouse events illustrated (320) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image198.webp?raw=true"
   width="35%"
@@ -15182,9 +15377,16 @@ We saw in the last example how to detect the mouseenter and mouseout events.
 
 There are other events related to the mouse:
 
--   mouseleave: similar to mouseout, fired when the mouse leaves the surface of the element. The difference between mouseleave and mouseout is that mouseleave does not fire when the cursor moves over descendant elements, and mouseout is fired when the element moved is outside of the bounds of the original element or is a child of the original element.
+-   mouseleave: similar to mouseout, fired when the mouse leaves the surface of the 
+      element. The difference between mouseleave and mouseout is that mouseleave does 
+	  not fire when the cursor moves over descendant elements, and mouseout is fired 
+	  when the element moved is outside of the bounds of the original element or is a 
+	  child of the original element.
 
--   mouseover: the mouse cursor is moving over the element that listens to that event. A mouseover event occurs on an element when you are over it - coming from either its child OR parent element, but a mouseenter event only occurs when the mouse moves from the parent element to the child element.
+-   mouseover: the mouse cursor is moving over the element that listens to that event. 
+      A mouseover event occurs on an element when you are over it - coming from either 
+	  its child OR parent element, but a mouseenter event only occurs when the mouse 
+	  moves from the parent element to the child element.
 
 -   mousedown: fired when a mouse button is pressed.
 
@@ -15192,27 +15394,34 @@ There are other events related to the mouse:
 
 -   mouseclick: fired after a mousedown and a mouseup have occured.
 
--   mousemove: fired while the mouse moves over the element. Each time the mouse moves, a new event is fired, unlike with mouseover or mouseenter, where only one event is fired.
+-   mousemove: fired while the mouse moves over the element. Each time the mouse moves, 
+      a new event is fired, unlike with mouseover or mouseenter, where only one event is fired.
 
 <h4>The tricky part: accurately getting the mouse position relative to the canvas</h4>
 
-When you listen to any of the above events, the event object (we call it a "DOM event"), passed to the listener function, has properties that correspond to the mouse coordinates: clientX and clientY.
+When you listen to any of the above events, the event object (we call it a "DOM event"), 
+passed to the listener function, has properties that correspond to the mouse coordinates: 
+clientX and clientY.
 
-However, these are what we call "window coordinates". Instead of being relative to the canvas itself, they are relative to the window (the page).
+However, these are what we call "window coordinates". Instead of being relative to the 
+canvas itself, they are relative to the window (the page).
 
-Most of the time you need to work with the mouse position relative to the canvas, not to the window, so you must convert the coordinates between the window and the canvas. This will take into account the position of the canvas, and the CSS properties that may affect the canvas position (margin, etc.).
+Most of the time you need to work with the mouse position relative to the canvas, not 
+to the window, so you must convert the coordinates between the window and the canvas. 
+This will take into account the position of the canvas, and the CSS properties that 
+may affect the canvas position (margin, etc.).
 
-Fortunately, there exists a method for getting the position and size of any element in the page: getBoundingClientRect().
+Fortunately, there exists a method for getting the position and size of any element 
+in the page: getBoundingClientRect().
 
 Play with the example below that show the problem:
-
-<!------------------------------------------------------------------------------------------------>
-<!----------- 199.  (xxx) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 199. mouse position 242, 135 (321) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image199.webp?raw=true"
   width="25%"
-  alt="." />
+  alt="Mouse position 242, 135." />
 &nbsp;
 <br/>
 
@@ -17618,34 +17827,40 @@ Please try it in your  browser (Type "F", "E", "O", C" etc., or just click insi
 
 </details>
 
-At <i>lines 3</i> and <i>5</i>, the value of the list attribute of the input field must match the one of the id of the &lt;datalist&gt; element.
-
-<!------------------------------------------------------------------------------------------------>
+At <i>lines 3</i> and <i>5</i>, the value of the list attribute of the input field 
+must match the one of the id of the &lt;datalist&gt; element.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-6">5.5.6 pattern</h3>
-<!------------------------------------------------------------------------------------------------>
-The pattern attribute enables the validation of the user's input on the fly (also at submission time), based on <b>regular expressions</b>. It applies to the text, search, url, tel, email, and password input types. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The pattern attribute enables the validation of the user's input on the fly (also 
+at submission time), based on <b>regular expressions</b>. It applies to the text, 
+search, url, tel, email, and password input types. 
 
 The pattern attribute follows the syntax of [JavaScript regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). 
 
-A <b>must read</b>: a good catalog of ready-to-go patterns is available at html5pattern.com, an excellent Web site that proposes plenty of JavaScript patterns for the pattern attribute of HTML5 forms. The left hand menu proposes categorized patterns for [postal codes](http://html5pattern.com/Postal_Codes), [dates](http://html5pattern.com/Dates), [phones](http://html5pattern.com/Phones), etc. 
+A <b>must read</b>: a good catalog of ready-to-go patterns is available at html5pattern.com, an 
+excellent Web site that proposes plenty of JavaScript patterns for the pattern attribute of 
+HTML5 forms. The left hand menu proposes categorized patterns for 
+[postal codes](http://html5pattern.com/Postal_Codes), [dates](http://html5pattern.com/Dates), [phones](http://html5pattern.com/Phones), etc. 
 
-You can also try [this online JavaScript RegExps tester](https://regex101.com/#javascript), and follow [this tutorial about "using JavaScript RegExps"](https://regexone.com/) that has step by step exercises and explanations.
-
-<!------------------------------------------------------------------------------------------------>
-<!------------- 271. html5patterns.com: menu left, categories & patterns right (xxx) ------------->
-<!------------------------------------------------------------------------------------------------>
+You can also try [this online JavaScript RegExps tester](https://regex101.com/#javascript), and 
+follow [this tutorial about "using JavaScript RegExps"](https://regexone.com/) that has step by 
+step exercises and explanations.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 271. html5patterns.com: menu left, categories & patterns right (368) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image271.webp?raw=true"
-   width="65%"
-   alt="Menu on the left, categories and patterns on the right. html5patterns.com." />
+  width="65%"
+  alt="Menu on the left, categories and patterns on the right. html5patterns.com." />
 </p>
 
 <h4>Typical use</h4>
 
 Just add a pattern attribute with a value that is the JavaScript regular expression that must match the entire string entered in the field. Note that the empty string is valid by default (except if the required attribute is used - this makes empty fields invalid).
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------------- 271c. typical use (326) ------------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 271c. typical use (3xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image271c.webp?raw=true"
   width="65%"
@@ -17667,21 +17882,18 @@ It's best practice to systematically add a title attribute with a value that 
 
 Try this <a href="https://jsbin.com/xeyuqux/1/edit?html,output">online example at JSBin</a> or directly in your browser below:
 
-<!----
-Please enter a 3 letter country code (green = valid, pink = invalid): ![](./images/image266.wmf)
---->
+<!-- Please enter a 3 letter country code (green = valid, pink = invalid): ![](./images/image266.wmf) -->
 
 With the previous example, until the value of the input field is equal to 3 alphabetic characters, the field is invalid.
 
 As seen in the previous examples, we used some CSS pseudo classes for automatically setting the background-color of the input field as we type.
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 271b. type multiple email addresses (329) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 271b. type multiple email addresses (329) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image271b.webp?raw=true"
-   width="65%"
-   alt="Green valid, pink invalid.  Type email, name myemail." />
+  width="65%"
+  alt="Green valid, pink invalid.  Type email, name myemail." />
 </p>
 
 <h4>Complete source code:</h4>
