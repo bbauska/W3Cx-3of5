@@ -4976,10 +4976,9 @@ This example gives the first steps towards writing a custom video player. It sho
   width="85%"
   alt="This example gives the first steps towards writing a custom video player." />
 &nbsp;
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------- 79. cartoon image, custom controls (97) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image079.webp?raw=true"
   width="45%"
@@ -5029,9 +5028,9 @@ This example gives the first steps towards writing a custom video player. It sho
 <p>
 This example listens to the ended event, and calls a callback function when the video is ended.
 </p>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------ 80. example calls a callback function when video ends (98) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image080.webp?raw=true"
    alt="This example listens to the ended event, and calls a callback function when the video is ended."
@@ -5065,10 +5064,9 @@ This example detects the end of a video, then loads the next video, changes the�
 
 Check the online example below: use the progress cursor to go near the end of the first video that is being played, and see how it continues with the next video. 
 </p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------------- 81. manage playlists (99) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image081.webp?raw=true"
    alt=""
@@ -5135,33 +5133,35 @@ Check the online example below: use the progress cursor to go near the end of th
   <li><i>Lines 34-40</i>: we use the DOM to get the JavaScript object corresponding to the video element, then define a listener for the ended event. Each time a video ends, the loadAndplayNextVideo() callback is called. As the video element has no src attribute by default, we also preload the first video (call to loadNextVideo() at <i>line 38</i>).</li>
   <li><i>Lines 17-21</i>: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources [currentVideo % sources.length], we set the src of the video element to sources[0], then to sources[1], and, as we increment the currentVideo index each time (line 19), if it becomes greater than 1, the modulo (the "%" symbol is the modulo in JavaScript) will make it "loop" between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.</li>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-2-8">2.2.8 [Advanced] Extended Examples</h3>
-<!------------------------------------------------------------------------------------------------>
-<p>
-In this section, we propose five extended examples that use more JavaScript and more complex CSS manipulation. They might be a little hard to understand if you are a JavaScript beginner, but don't be afraid to try and test them, look at the code, etc.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this section, we propose five extended examples that use more JavaScript and more complex CSS 
+manipulation. They might be a little hard to understand if you are a JavaScript beginner, but don't 
+be afraid to try and test them, look at the code, etc.</p>
 
-Some examples are given "as is", such as the custom video player that uses SVG (at the end of the page); if you are interested, you may view the code. 
-</p>
+<p>Some examples are given "as is", such as the custom video player that uses SVG (at the end of the 
+page); if you are interested, you may view the code.</p>
 
 <h4>Example #1: a player showing the use of every type of CSS3 transformation</h4>
-<p>
-Please see this example online, originally written by <a href="https://christianheilmann.com/">Chris Heilmann</a>, and tuned by us ;).
-</p>
-<!------------------------------------------------------------------------------------------------>
+
+<p>Please see this example online, originally written by <a href="https://christianheilmann.com/">
+Chris Heilmann</a>, and tuned by us ;).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------- 82. 2d transformations: scale, translate  rotate (100) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image082.webp?raw=true"
-   alt=""
-   width="85%" />
+  alt="2d transformations, scale, translate, rotate."
+  width="85%" />
 &nbsp;
-<p>
-Don't forget to click the JavaScript and CSS tabs of the CodePen in order to display the JavaScript code that creates the buttons on the right of the video, and the CSS that processes the different clicks and applies CSS3 transforms.
-</p>
+
+<p>Don't forget to click the JavaScript and CSS tabs of the CodePen in order to 
+display the JavaScript code that creates the buttons on the right of the video, 
+and the CSS that processes the different clicks and applies CSS3 transforms.</p>
 
 <h4>This example shows a lot:</h4>
+
 <ul>
   <li>It uses the HTML5 elements &lt;nav&gt;, &lt;footer&gt;, &lt;header&gt;.</li>
   <li>It shows the use of CSS3 2D transformations (scale, translate, and rotate).</li>
@@ -7265,9 +7265,9 @@ The H1 element, for example, does not exist in the Document Object Model, and ha
 The only line of code we have is console.log("Some JavaScript code has been executed");
 
 This means "display in the JavaScript console the message...". If we open the console tab provided by jsbin.com in a dedicated tab (that redirects all console.log() messages), and re-execute the page (just type a space at the end of a line, this will re-render the page and display the message in the console), we see the message in the console tab, as well as in the dev. tools console. This is illustrated by the image below:
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------- 116. javascript debugging console view (142) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image116.webp?raw=true"
   width="50%"
@@ -7275,10 +7275,9 @@ This means "display in the JavaScript console the message...". If we open the co
 </p>
 
 It is also possible to use the "real dev. tool console", and for this I recommend running the application in a single window, not in the JS Bin editor. Press the black arrow on the top right of the output window - this will render the page as a standalone Web page, then press <i>F12</i>. You should see:
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------ 117. view of the javascript debug devtool console (143) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image117.webp?raw=true"
    width="40%"
@@ -7286,10 +7285,9 @@ It is also possible to use the "real dev. tool console", and for this I recommen
 </p>
 
 Ok, now, let's make an error: change console.log() into conso<b>lll</b>e.log(). Let's see what happens:
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 118. view of the javascript console (143) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image118.webp?raw=true"
    width="50%"
@@ -7297,10 +7295,9 @@ Ok, now, let's make an error: change console.log() into conso<b>lll</b>e.log(
 </p>
 
 And if we run it standalone and use the dev. tool console:
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 119. view of the javascript console (143) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image119.webp?raw=true"
    width="50%"
@@ -7308,10 +7305,9 @@ And if we run it standalone and use the dev. tool console:
 </p>
 
 And if we click on the line number in the right, the dev. tool shows the source code centered on the line that caused the error:
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 120. view of the javascript console (144) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image120.webp?raw=true"
    width="50%"
@@ -7322,24 +7318,22 @@ Without such tools, debugging JavaScript code is impossible. So you need to look
 
 <h4>About the asynchronous nature of JavaScript</h4>
 
-Some of you may not be used to "asynchronous programming", "callbacks" etc. We recommend to read <a href="https://en.wikipedia.org/wiki/Callback_%28computer_programming%29">this article on WikiPedia</a> and <a href="https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java">this thread on StackOverflow</a>.
-
-<!------------------------------------------------------------------------------------------------>
+Some of you may not be used to "asynchronous programming", "callbacks" etc. We recommend 
+to read <a href="https://en.wikipedia.org/wiki/Callback_%28computer_programming%29">this 
+article on WikiPedia</a> and <a href="https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java">this thread on StackOverflow</a>.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-2">3.2.2 The &lt;canvas&gt; Element</h3>
-<!------------------------------------------------------------------------------------------------>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 121. canvas element logo (144) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 121. canvas element logo (144) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image121.webp?raw=true"
    width="25%"
    alt="View of the JavaScript console. We can see an extract of the source code with different tools for watching variable values over execution etc." />
 </p>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 121. canvas element logo (144) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 121. canvas element logo (144) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image121.webp?raw=true"
    width="10%"
@@ -7361,10 +7355,9 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 <h4>Example #1</h4>
 
 <a href="https://www.ravalmatic.com/portfolio/footchinko/">Foot Chinko</a> is one popular free HTML5 games:
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 122. foot chinko one of the best html5 2D game of 2015 (145) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 122. foot chinko one of the best html5 2D game of 2015 (145) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image122.webp?raw=true"
    width="40%"
@@ -7375,22 +7368,21 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 
 Lots of data visualization tools and JavaScript libraries use the HTML5 canvas element for <a href="http://www.creativebloq.com/design-tools/data-visualization-712402">Data visualization</a>:
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------- 123. html5 data visualization (146) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 123. html5 data visualization, bar graph (146) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image123.webp?raw=true"
-   width="50%"
-   alt="html5 data visualization, bar graphs." />
+  width="50%"
+  alt="HTMLK5 data visualization, bar graphs." />
 </p>
 
 <h4>Example #3</h4>
 
 A version of the <a href="https://intersoft.itch.io/galaxian">arcade game Galaxian</a>, that runs at 60 frames per second in an HTML5 canvas element:
-
-<!------------------------------------------------------------------------------------------------>
-<!------- 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (146) -------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~ 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (146) ~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image124.webp?raw=true"
    width="50%"
@@ -7415,9 +7407,9 @@ Performance is  good and animation is generally very smooth, since most Web bro
 
     -   MDN's [compatibility table of &lt;canvas&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#Browser_compatibility)
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-3">3.2.3 Canvas and Accessibility</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The dynamic nature of the &lt;canvas&gt; element has made it difficult to use in applications that need to be accessible to people with disabilities. To be accessible, it must meet the following principles:
 
@@ -7432,18 +7424,15 @@ The dynamic nature of the &lt;canvas&gt; element has made it difficult to use 
 -   An article on [What the canvas element means for accessibility](https://www.creativebloq.com/web-design/canvas-element-accessibility-41514740)
 
 -   From the W3C wiki: [Canvas Element Accessibility Issues](https://www.w3.org/html/wg/wiki/AddedElementCanvas)
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-4">3.2.4 HTML Canvas Cheatsheet</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.org/wiki/Cheat_sheet)) below. Do not hesitate to keep your favorite one open in a separate browser ta
 
 1.  As a [PDF file](https://courses.edx.org/assets/courseware/v1/4b7360cab7f3bf439c26782ec47cf7a8/asset-v1:W3Cx+HTML5.1x+2T2020+type@asset+block/Infopgraphic-CanvasCheatSheet-Final2.pdf), this canvas cheatsheet:
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------- 125. snapshot of an html canvas cheatsheet from skilled.com (147) --------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 125. snapshot of an html canvas cheatsheet from skilled.com (147) ~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image125.webp?raw=true"
    width="65%"
@@ -7451,42 +7440,42 @@ We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.or
 </p>
 
 2.  Another resource, as an [HTML file](https://simon.html5.org/dump/html5-canvas-cheat-sheet.html):
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 126. snapshot of a canvas cheatsheet api (148) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 126. snapshot of a canvas cheatsheet api (148) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image126.webp?raw=true"
    width="65%"
    alt="Snapshot of a Canvas cheatsheet API." />
 </p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-5">3.2.5 Coordinate System</h3>
-<!------------------------------------------------------------------------------------------------>
-
-The coordinate system used for drawing in canvases is similar to the one used by many drawing APIs like Java2D: the (0 , 0) is in the top left corner while the X axis is going to the right and the Y axis to the bottom, as  shown in the following picture:
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 127. coordinate system (148) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The coordinate system used for drawing in canvases is similar to the one used by many 
+drawing APIs like Java2D: the (0 , 0) is in the top left corner while the X axis is 
+going to the right and the Y axis to the bottom, as  shown in the following picture:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 127. coordinate system (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image127.webp?raw=true"
-   width="55%"
-   alt="Coordinate system." />
+  width="55%"
+  alt="Coordinate system." />
 </p>
 
 -   <b>X</b> axis is horizontal, directed to the right 
 
 -   <b>Y</b> axis is vertical, directed downwards
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-6">3.2.6 Drawing Rectangles in a Canvas</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Small errata about what I said in the above video: "So let's get the canvas using the DOM API 
+method document.getElementById() or better, use document.querySelector() that is a more 
+recent method from the DOM API"..
 
-Small errata about what I said in the above video: "So let's get the canvas using the DOM API method document.getElementById() or better, use document.querySelector() that is a more recent method from the DOM API"..
-
-The part is bold is not correct: querySelector, technically, comes from <a href="https://www.w3.org/TR/selectors-api/">Selectors API</a>. Just in case some people would like to check the specification.
+The part is bold is not correct: querySelector, technically, comes from 
+<a href="https://www.w3.org/TR/selectors-api/">Selectors API</a>. Just in 
+case some people would like to check the specification.
 
 <h4>Detailed explanation of the example shown in the above video</h4>
 
@@ -7719,10 +7708,9 @@ The way the rectangle will be filled depends on the current value of several pro
     ctx.fillRect(0,0,80,100)
 ```
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-7">3.2.7 Drawing Principles</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>More about the "context" object</h4>
 
 Before we go on, we should take some time to clarify the way we draw on HTML5 canvases. We already mentioned that we use a graphic context for all the main operations. Whenever a shape, a text, or an image is drawn, the current values of the different properties of the graphic context are taken into account. Some are relevant only for certain kinds of shapes or drawing modes, but you must be aware that it is always the current values of these drawing properties that are used.
@@ -7759,10 +7747,9 @@ ctx.fillRect(10,10,200,200);
 ```
 
 Produces this result:
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 128. filled rectangle with pink color (153) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 128. filled rectangle with pink color (153) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image128.webp?raw=true"
    width="25%"
@@ -7782,9 +7769,9 @@ ctx.strokeRect(10,10,200,200);
 ```
 
 ... gives this result:
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 129. stroked rectangle - border is in blue (154) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 129. stroked rectangle - border is in blue (154) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image129.webp?raw=true"
    width="25%"
@@ -7805,14 +7792,13 @@ ctx.clearRect(50, 50, 20, 20);
 ```
 
 <h4>The result is:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!------ 130. the use of clearrrect draws a white rectangle against the pink background (xxx) ---->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~ 130. the use of clearrrect draws a white rectangle against the pink background (xxx) ~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image130.webp?raw=true"
-   width="25%"
-   alt="The use of ClearRect draws a white rectangle against the pink background." />
+  width="25%"
+  alt="The use of ClearRect draws a white rectangle against the pink background." />
 </p>
 
 <h4>Let's see some simple examples</h4>
@@ -7831,14 +7817,19 @@ ctx.clearRect(50, 50, 20, 20);
 ```
 
 <p>
-Here, we used "stroke" instead of "fill" in the property and method names (<i>lines 4 and 5</i>): strokeStyle instead of fillStyle, strokeRect(...) instead of fillRect(...).
+Here, we used "stroke" instead of "fill" in the property and method names 
+(<i>lines 4 and 5</i>): strokeStyle instead of fillStyle, strokeRect(...) 
+instead of fillRect(...).
 
-We also introduced a new property of the context, that applies only when drawing in "stroke" mode, the lineWidth property (<i>line 3</i>), that is used for setting the width of the shape outline. The value is in pixels.
-</p>
+We also introduced a new property of the context, that applies only when 
+drawing in "stroke" mode, the lineWidth property (<i>line 3</i>), that is 
+used for setting the width of the shape outline. The value is in pixels.</p>
+
 <h4>Example #2: draw two filled red rectangles with a blue outline of 5 pixels and some text</h4>
-<p>
-Let's continue with another example. This time we will draw several shapes that share the same colors - they will be filled in red, with a blue outline. We also show how to draw a text message with a given font.
-</p>
+
+<p>Let's continue with another example. This time we will draw several shapes that 
+share the same colors - they will be filled in red, with a blue outline. We also 
+show how to draw a text message with a given font.</p>
 
 <h4>HTML</h4>
 
@@ -7942,10 +7933,9 @@ If you would like to draw the filled text message in green, for example, you sho
   <li>To draw a text message use ctx.strokeText(message, x, y) or ctx.fillText(message, x, y), for wireframe text or filled text respectively.</li>
   <li>To set the character font use the ctx.font property; the value is a font in CSS syntax, for example:  ctx.font = 'italic 20pt Calibri';</li>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-8">3.2.8 Transformations</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 We now introduce the basics of 2D transformations, a powerful tool that will make things easier as soon as you have to:
 </p>
@@ -8105,10 +8095,9 @@ Your browser does not support the canvas tag.
 At <i>line 10</i>, we called the drawSomething(...) function with 0 and 100 as parameters, meaning "please add an offset of 0 in X and 100 in Y directions to what is drawn by the function...
 
 If you look at the code of the modified function, you will see that each call to fillRect(...) uses the x and y parameters instead of hard coded values. In this way, if we call it with parameters (0, 100), then all rectangles will be drawn 100 pixels to the bottom (offset in y). Here is the result:
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------- 131. Rectangles are drawn 100 pixels towards the bottom (xx) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 131. Rectangles are drawn 100 pixels towards the bottom (xx) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image131.webp?raw=true"
    width="30%"
@@ -8714,9 +8703,9 @@ ctx.fillRect(250, 0, 100, 100);
 
 Aha, this is a very interesting question... the answer is in the next page!
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-9">3.2.9 Saving and Restoring the Context</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 There are two methods for saving and restoring the context properties: ctx.save() and ctx.restore().
 
@@ -8848,9 +8837,9 @@ We slightly modified the function that draws the monster:
   <li>We restored it at the end (BEST PRACTICE).</li>
 </ul>
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 132. laptop showing unicorn validator (xx) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 132. laptop showing unicorn validator (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image132.webp?raw=true"
   width="40%"
@@ -8895,22 +8884,26 @@ We slightly modified the function that draws the monster:
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-1">3.3.1 Immediate Drawing Mode</h3>
-<!------------------------------------------------------------------------------------------------>
-<p>
-In the previous sections, we learned how to draw filled or wireframe rectangles.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In the previous sections, we learned how to draw filled or wireframe rectangles.</p>
 
-As soon as the ctx.strokeRect(x, y, width, height) or the ctx.fillRect(x, y, width, height) method is called, a rectangle is indeed drawn <i>immediately</i> in the canvas. 
+<p>As soon as the ctx.strokeRect(x, y, width, height) or the ctx.fillRect(x, y, width, 
+height) method is called, a rectangle is indeed drawn <i>immediately</i> in the canvas. 
 
-While drawing rectangles with strokeRect or fillRect, drawing text or drawing images, all these shapes will be drawn in <i>immediate mode</i>.
+<p>While drawing rectangles with strokeRect or fillRect, drawing text or drawing images, 
+all these shapes will be drawn in <i>immediate mode</i>.</p>
 
-Another mode called "path mode" or "buffered mode" will be seen later in this course, which will be useful for drawing lines, curves, arcs, and also rectangles. Rectangles are the only shapes that have methods for drawing them <i>immediately</i> and also other methods for drawing them in "<i>path/buffered mode</i>".
-</p>
+<p>Another mode called "path mode" or "buffered mode" will be seen later in this course, 
+which will be useful for drawing lines, curves, arcs, and also rectangles. Rectangles 
+are the only shapes that have methods for drawing them <i>immediately</i> and also 
+other methods for drawing them in "<i>path/buffered mode</i>".</p>
+
 <h4>Example: drawing rectangles in immediate mode using best practices</h4>
 
-<p>Let's give an example that draws several rectangles, filled or wireframe, with different colors and line widths:</p>
+<p>Let's give an example that draws several rectangles, filled or wireframe, with 
+different colors and line widths:</p>
 
 <h4>HTML</h4>
 
@@ -8918,7 +8911,6 @@ Another mode called "path mode" or "buffered mode" will be seen later in this co
  <summary>Click to expand!</summary>
 
 ```
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8977,11 +8969,9 @@ ctx.restore();
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-2">3.3.2 Drawing Text</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The canvas API provides two main methods for drawing text: ctx.strokeText(message, x, y) and ctx.fillText(message, x, y).
 It also provides a set of context properties for setting the character font and style, for laying out the text, etc.</p>
 
@@ -9341,16 +9331,20 @@ context.fillText("right", 250, 100);
 ```
 
 </details>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-3">3.3.3 Drawing Images</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Working with images is rather simple, except that we need the images to be fully 
+loaded into memory before drawing them. Loading images is an <i>asynchronous</i> 
+process we need to take care of. Working with multiple images might also be difficult 
+for beginners. We present a multiple image loader later on in this course.
 
-Working with images is rather simple, except that we need the images to be fully loaded into memory before drawing them. Loading images is an <i>asynchronous</i> process we need to take care of. Working with multiple images might also be difficult for beginners. We present a multiple image loader later on in this course.
+<b>Let's say it once again</b>: To use an image in a canvas, make sure that the image 
+has been loaded by the Web browser before drawing it!
 
-<b>Let's say it once again</b>: To use an image in a canvas, make sure that the image has been loaded by the Web browser before drawing it!
-
-It is also possible to draw images from a video stream, images corresponding to another canvas content, or images that are defined by <img> HTML elements in the page. We will see that as well in the following parts of this chapter.
+It is also possible to draw images from a video stream, images corresponding to 
+another canvas content, or images that are defined by <img> HTML elements in the 
+page. We will see that as well in the following parts of this chapter.
 
 But let's start with a basic example!
 
@@ -9414,9 +9408,9 @@ But let's start with a basic example!
 -   drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh): for drawing sub-images, (sx, sy, sw, sh) define the source rectangle, while dx, dy, dw, sh define the target rectangle. If these rectangles don't have the same size, the source sub-image is resized.
 
 <h4>See picture below:</h4>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 133. simple image drawing in a canvas (182) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image133.webp?raw=true"
   width="45%"
@@ -9649,12 +9643,12 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 </details>
 
 The <a href="https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents">DOM Level 2 Events specification</a></b> says: "<i>The load event occurs when the DOM implementation finishes loading all content within a document, all frames within a FRAMESET, or an OBJECT element.</i>"
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-4">3.3.4 Drawing Images from a Video Stream</h3>
-<!------------------------------------------------------------------------------------------------>
-
-The drawImage(...) function can take a video element as its first parameter. The image that will be drawn is the one currently played by the video stream. This can be done at video frequency on most modern computers or mobile devices.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The drawImage(...) function can take a video element as its first parameter. The image that 
+will be drawn is the one currently played by the video stream. This can be done at video 
+frequency on most modern computers or mobile devices.
 
 <h4>HTML</h4>
 
@@ -9801,11 +9795,9 @@ This example shows:
 -   <i>Line 43</i>: the video element declared at <i>line 43</i> has autoplay=true and loop=true, it starts playing the video as soon as possible and will loop it.
 
 -   <i>Line 21</i>: We implemented a rotating video effect in the drawRotatingVideo. The use of context save/restore is primordial as this function changes the coordinate system at each call, translating and rotating it. Notice the extra translation at <i>line 31</i> that translates the coordinate system backwards with half of the size of the image that is drawn. We did this in order to make the image rotate around the center of the rectangle, instead of around the top left corner at (0, 0) by default. Try commenting out this line in the running example and you will see what we mean.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-1">3.4.1 Immediate Mode vs. Path Mode</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Immediate mode</h4>
 
 As a reminder: an immediate mode means "executing a call to a drawing method means <i>immediately</i> drawing in the canvas". The drawing appears as soon as the design instruction is executed.
@@ -9894,10 +9886,9 @@ console.timeEnd("time to draw");
 <i>Lines 12-18</i> draw 1000 rectangles of random sizes in immediate mode. We also measure the time using the usual console.time(name_of_timer) and console.timeEnd(name_of_timer) that will write in the browser console the time elapsed. Note that console.time(...) and console.timeEnd(...) display results only in the browser's console, not in the JSBin console.
 
 On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawing all these rectangles:
-
-<!------------------------------------------------------------------------------------------------>
-<!------------ 134. image of the devtool console clocking time to draw rectangles (189) ---------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~ 134. image of the devtool console clocking time to draw rectangles (189) ~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image134.webp?raw=true"
    width="65%"
@@ -9907,9 +9898,16 @@ On a Mac Book Pro from 2015, the result is an average time of 4.034ms for drawin
 
 <h4>Path mode</h4>
 
-There is another drawing mode called "path drawing mode" where you first send drawing orders to the graphics processor, and these orders are stored in a buffer. Then you call methods to draw the whole buffer at once. There are also methods to erase the buffer's content.
+There is another drawing mode called "path drawing mode" where you first send drawing 
+orders to the graphics processor, and these orders are stored in a buffer. Then you 
+call methods to draw the whole buffer at once. There are also methods to erase the buffer's content.
 
-Path drawing mode allows parallelism: if you need to draw 10,000 rectangles, it's better to store the orders in the graphics card, then execute the drawing all at once, rather than doing 10,000 immediate calls to strokeRect(...) for example. With the buffered mode, the Graphic Processing Unit (GPU) of the graphics card hardware will be able to parallelize the computations (modern graphics cards can execute hundreds/thousands of things in parallel).
+Path drawing mode allows parallelism: if you need to draw 10,000 rectangles, it's 
+better to store the orders in the graphics card, then execute the drawing all at 
+once, rather than doing 10,000 immediate calls to strokeRect(...) for example. 
+With the buffered mode, the Graphic Processing Unit (GPU) of the graphics card 
+hardware will be able to parallelize the computations (modern graphics cards can 
+execute hundreds/thousands of things in parallel).
 
 Same example as before, this time using the buffered mode for drawing rectangles:
 
@@ -9976,10 +9974,9 @@ The call to ctx.stroke() (<i>line 9</i>) or to its sister method ctx.fill() 
 And here is what the timer gives: a slightly faster execution time. Changing 1000 to 100,000 will give even larger differences.
 
 <b>Path mode is faster than immediate mode! We have now an average time of 3.1ms</b>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------- 135. image of the devtool console which shows time path vs immediate (191) ----------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image135.webp?raw=true"
   width="65%"
@@ -10013,11 +10010,9 @@ Summary of path mode principles
 4.  It is possible to empty the buffer by calling ctx.beginPath(),
 
 5.  Path drawing is faster than immediate drawing (parallelization is possible).
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-2">3.4.2 A Warning</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Warning</b>: you do not need to spend too much time on each part of this sub-section.
 
 You do not need to memorize or learn by heart all the examples in the following pages. They are given as references. There will be no quizzes about curves as they are not often done "by hand", but are generated by tools such as Adobe Illustrator or online generators.
@@ -10027,11 +10022,9 @@ You do not need to memorize or learn by heart all the examples in the following
 -   You need to draw lines? Arrows? Curves? Same thing: go to the corresponding pages and look at the examples!
 
 Also, do not forget to use your favorite HTML5 canvas cheatsheet (provided before in the last section). You will find it very helpful when you start playing with the canvas.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-3">3.4.3 Drawing Lines</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We have been drawing rectangles so far.
 
 Now let's go a bit further by introducing the notion of "path drawing". This approach uses the ctx.moveTo(x, y) method of the context, in conjunction with other drawing methods that end in "To", such as ctx.lineTo(x, y).
@@ -10055,10 +10048,9 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 <h4>Drawing a grid</h4>
 
 <h4>See the example below:</h4>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 136. draw grid using ctx.stroke (193) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image136.webp?raw=true"
    width="65%"
