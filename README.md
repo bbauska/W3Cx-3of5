@@ -1071,7 +1071,7 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 
 <h4>Here is the result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 20. the aside tag on the right (21) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20. the aside tag on the right (21) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image020.webp?raw=true"
@@ -1082,7 +1082,7 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 
 <h4>Add a &lt;footer&gt; at the end of the blog</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 21. image of the blog footer (21) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21. image of the blog footer (21) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image021.webp?raw=true"
@@ -1128,7 +1128,7 @@ tag cloud definition, to display a page footer:</p>
 
 <h4>And here is the result at the bottom of the page:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------- 22. the resulting footer at the bottom of the page (21) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 22. the resulting footer at the bottom of the page (21) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image022.webp?raw=true"
@@ -1140,7 +1140,7 @@ tag cloud definition, to display a page footer:</p>
 
 <p>Can an &lt;article&gt; contain a &lt;section&gt;?
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------------- 23. picture of eisher (22) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23. picture of eisher (22) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image023.webp?raw=true"
@@ -1245,7 +1245,7 @@ This chart from the <a href="https://html5doctor.com/">HTML5 Doctor Web
 site&lt;/a&gt; may help you decide whether or not to use a &lt;div&gt;:</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------- 24. html5 doctor web site. whether or not to use a <dev> (24) ------------------>
+<!--~~~~~~~~~~~~~ 24. html5 doctor web site. whether or not to use a <dev> (24) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image024.webp?raw=true"
@@ -1278,7 +1278,7 @@ These headings define a hierarchy, as shown by the default sizes given by the br
 
 Here is the result for the previous example:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------ 25. outliner in action from the previous example (25) ----------------------->
+<!--~~~~~~~~~~~~~~~~~~ 25. outliner in action from the previous example (25) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image025.webp?raw=true"
@@ -1324,9 +1324,13 @@ The HTML5 specification says that "each sectioning element potentially has a hea
 
 <h4>Use multiple headings of different rank with sectioning content</h4>
 
-<p>The first element of a heading content in an element of sectioning content represents the heading for that section (the &lt;section&gt;&lt;h1&gt;...&lt;/h1&gt;&lt;/section&gt; in the above example).
+<p>The first element of a heading content in an element of sectioning content 
+represents the heading for that section (the &lt;section&gt;&lt;h1&gt;...&lt;/h1&gt;&lt;/section&gt; 
+in the above example).
 
-Subsequent headings of equal or higher rank start new (implied) sections, headings of lower rank start implied subsections that are part of the previous one. In both cases, the element represents the heading of the implied section.
+Subsequent headings of equal or higher rank start new (implied) sections, headings of 
+lower rank start implied subsections that are part of the previous one. In both cases, 
+the element represents the heading of the implied section.
 
 Let's clarify this by looking at some example code:</p>
 
@@ -1355,7 +1359,7 @@ Let's clarify this by looking at some example code:</p>
 
 <h4>The corresponding outline is:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------------- 26. Heading example (26) ------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26. Heading example (26) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image026.webp?raw=true"
@@ -1419,7 +1423,7 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 
 <h4>The outline of the last example looks like this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 27. outline of previous example (27) ------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 27. outline of previous example (27) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image027.webp?raw=true"
@@ -1478,7 +1482,7 @@ You can use heading elements &lt;h1&gt;...&lt;h6&gt; in a &lt;header&gt; but
 
 <p>Here is the resulting table of contents, notice the two subsections that appear, one for the H1, one for the H2:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 28. outline of previous example (28) ------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 28. outline of previous example (28) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image028.webp?raw=true"
@@ -1557,7 +1561,7 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 
 <p>Both of the examples above are semantically identical and produce the same outline:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 29. outline of previous example (29) ------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 29. outline of previous example (29) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image029.webp?raw=true"
@@ -1572,7 +1576,7 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 unveiled on 18 January 2011</a>, so way before HTML5 became a Web standard. This logo represents 
 HTML5, the cornerstone for modern Web applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------------ 30. html5 logo (30) --------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 30. html5 logo (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image030.webp?raw=true"
@@ -1672,10 +1676,14 @@ to another and was nearly impossible to memorize.</p>
 
 <h4>The "TYPE" attribute is optional</h4>
 
-<p>With a rel="stylesheet" attribute, it is no longer necessary to indicate type="text/css" (from <a href="https://www.w3.org/TR/html5/links.html#link-type-stylesheet"> the 
-specification</a>: "the default type for resources given by the <a href="https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet">stylesheet</a> keyword is text/css.")
+<p>With a rel="stylesheet" attribute, it is no longer necessary to indicate 
+type="text/css" (from <a href="https://www.w3.org/TR/html5/links.html#link-type-stylesheet"> the 
+specification</a>: "the default type for resources given by the 
+<a href="https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet">stylesheet</a> keyword is text/css.")
 
-The "type" attribute is not needed in HTML5, and even old browsers will use text/css as the default type for stylesheets today. So, either way, you can omit the "type" attribute altogether and use:</p>
+The "type" attribute is not needed in HTML5, and even old browsers will use 
+text/css as the default type for stylesheets today. So, either way, you can 
+omit the "type" attribute altogether and use:</p>
 
 ```
 <link href="file.css" rel="stylesheet"/>
@@ -1715,7 +1723,7 @@ If you look at the "minimal document" example, or at other examples in this cour
 <h4>New structural elements</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------- 13. some of the new structural elements introducted by html5 (33) ---------------->
+<!--~~~~~~~~~~~ 13. some of the new structural elements introducted by html5 (33) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image013.webp?raw=true"
@@ -1750,21 +1758,48 @@ and wider variety of Web page statistics".</blockquote>
 </p>
 <h4>New elements added to the HTML5 set</h4>
 <p>
-The results of these surveys led to the addition of new structural elements in HTML5. For example, the very popular &lt;div class="header"&gt; led to the creation of a &lt;header&gt; element, &lt;div class="aside"&gt; to a &lt;aside&gt; element, etc.
+The results of these surveys led to the addition of new structural elements in HTML5. 
+For example, the very popular &lt;div class="header"&gt; led to the creation of a 
+&lt;header&gt; element, &lt;div class="aside"&gt; to a &lt;aside&gt; element, etc.
 
-Finally, the 20 most popular ids and class names found in Hickson's and Opera's surveys gave birth to these new elements (click on the element's name to go to the W3C specification about this element):
+Finally, the 20 most popular ids and class names found in Hickson's and Opera's 
+surveys gave birth to these new elements (click on the element's name to go to 
+the W3C specification about this element):
 </p>
 <h4>HTML5 structural elements with descriptions</h4>
 <ul>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-header-element" target="_blank">&lt;header&gt;</b></a>Introduction of "sectioning elements": an article, a section, the entire document (header page). Typically the header of a Web site that appears on top of each page, or a header of a long &lt;article&gt; or of a long &lt;section&gt;.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element" target="_blank">&lt;footer&gt;</b></a>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element" target="_blank">&lt;nav&gt;</b></a>Section that contains the main navigation links (within the document or to other pages).</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-article-element" target="_blank">&lt;article&gt;</b></a>Independent content, which can be individually extracted from the document and syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-section-element" target="_blank">&lt;section&gt;</b></a>Generic section used to group different articles for different purposes or subjects, or to define the different sections of a single article. Generally used with a header.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element" target="_blank">&lt;time&gt;</b></a>Used for marking up times and dates.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank">&lt;aside&gt;</b></a>Section whose content is not necessarily directly related to the main content that surrounds it, but can provide additional information.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element" target="_blank">&lt;figure&gt;</b></a> and <b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element">&lt;figcaption&gt;</b></a>Used to encapsulate a figure as a single item, and contains a caption for the figure, respectively.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank">&lt;main&gt;</b></a>The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. <b>There can be only one &lt;main&gt; element in a document.</b></li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-header-element" 
+    target="_blank">&lt;header&gt;</b></a>Introduction of "sectioning elements": 
+	an article, a section, the entire document (header page). Typically the header 
+	of a Web site that appears on top of each page, or a header of a long &lt;article&gt; 
+	or of a long &lt;section&gt;.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element" target="_blank">
+    &lt;footer&gt;</b></a>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element" target="_blank">
+    &lt;nav&gt;</b></a>Section that contains the main navigation links (within the document 
+	or to other pages).</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-article-element" target="_blank">
+    &lt;article&gt;</b></a>Independent content, which can be individually extracted from the 
+	document and syndicated (RSS or equivalent) without penalizing its understanding. 
+	Typically a blog post.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-section-element" target="_blank">
+    &lt;section&gt;</b></a>Generic section used to group different articles for different purposes 
+	or subjects, or to define the different sections of a single article. Generally used with a 
+	header.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element" target="_blank">
+    &lt;time&gt;</b></a>Used for marking up times and dates.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank">
+    &lt;aside&gt;</b></a>Section whose content is not necessarily directly related to the main 
+	content that surrounds it, but can provide additional information.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element" target="_blank">
+    &lt;figure&gt;</b></a> and <b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element">
+	&lt;figcaption&gt;</b></a>Used to encapsulate a figure as a single item, and 
+	contains a caption for the figure, respectively.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank">
+    &lt;main&gt;</b></a>The main element represents the main content of the body of a document 
+	or application. The main content area consists of content that is directly related to or 
+	expands upon the central topic of a document or central functionality of an application. 
+	<b>There can be only one &lt;main&gt; element in a document.</b></li>
 </ul>
 <p>
 And there is no &lt;content&gt; element even though the &lt;div class="content"&gt; was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is "default content". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between &lt;article&gt; and &lt;article&gt;.
@@ -1786,7 +1821,7 @@ Read also at the end of this section about the new &lt;main&gt; element .  Th
 <h4>Use a &lt;header&gt; at the top of the blog</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------- 14. image of the header element at the top of the blog (35) ------------------->
+<!--~~~~~~~~~~~~~~ 14. image of the header element at the top of the blog (35) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image014.webp?raw=true"
@@ -1829,7 +1864,7 @@ header span {
 <h4>Use a &lt;nav&gt; for the navigation menu just below the header</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 15. image of the navigation menu (36) ------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 15. image of the navigation menu (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image015.webp?raw=true"
@@ -1904,7 +1939,7 @@ nav span {
 Now, we have one big &lt;section&gt; element that contains a set of &lt;article&gt; elements...</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------- 16. image of sections that contain articles (37) ------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~ 16. image of sections that contain articles (37) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image016.webp?raw=true"
@@ -1961,9 +1996,9 @@ section h2 {
 
 <h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------ 17. image of the header at the top of each article (37) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 17. image of the header at the top of each article (37) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image017.webp?raw=true"
    alt="Image of the header at the top of each article."
@@ -2017,7 +2052,7 @@ Example for the first blog article:
 Also note the way we included a figure using the new "HTML5" method, using a &lt;figure&gt;..&lt;figure&gt; element that embedded a &lt;img src=...&gt; element together with a &lt;figcaption&gt; element.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------- 18. image of figure and figcaption that embed an img (38) -------------------->
+<!--~~~~~~~~~~~~~~~ 18. image of figure and figcaption that embed an img (38) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image018.webp?raw=true"
@@ -2053,10 +2088,9 @@ figcaption {
 <h4>Use an &lt;aside&gt; element to display a tag cloud on the... side of the main content</h4>
 
 After the long &lt;section&gt; element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, "aside"! This is done using - you already guessed it - an &lt;aside&gt; element:
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 19. image of the tag cloud defined as an aside element (39) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 19. image of the tag cloud defined as an aside element (39) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image019.webp?raw=true"
    alt="image of the tag cloud defined as an aside element."
@@ -19908,52 +19942,88 @@ Hi! Welcome for this second video of module 6, in which we will talk about the f
 
 This is an API that has been designed for working with files on the client side in Javascript.
 
-Before HTML5, there was no mean to know the the size, the name, the modification date of a file without sending it to a remote server. 
-It was not possible also to read the content of a file, for example for previewing an image before uploading it into a remote server, or if you wanted to play a local audio file, or a video file without streaming and downloading it from a remote server. It was not possible.
+Before HTML5, there was no mean to know the the size, the name, the modification date 
+of a file without sending it to a remote server. 
+It was not possible also to read the content of a file, for example for previewing an 
+image before uploading it into a remote server, or if you wanted to play a local audio 
+file, or a video file without streaming and downloading it from a remote server. It 
+was not possible.
 
 I'm going first to show you some example of server less applications. 
 
-I mean applications written using HTML, CSS and Javascript that do not rely on data located on a remote server.
+I mean applications written using HTML, CSS and Javascript that do not rely on data 
+located on a remote server.
 
-For example, I can show you this. This is a wave. This is an audio file editor that works with local files. I open the page, and from here I can drop a music file directly. Let's go to get some music somewhere. Some AC/DC song! I can just drop the song and I can edit the song. I can play the song. I can cut, I can save locally, etc.
+For example, I can show you this. This is a wave. This is an audio file editor that 
+works with local files. I open the page, and from here I can drop a music file directly. 
+Let's go to get some music somewhere. Some AC/DC song! I can just drop the song and I 
+can edit the song. I can play the song. I can cut, I can save locally, etc.
 
-Another example is an application, a Chrome application that is also written using Web technologies but doesn't run using HTTP. 
+Another example is an application, a Chrome application that is also written using 
+Web technologies but doesn't run using HTTP. 
 
-It's quite easy to write such applications, because there are regular Web applications using HTML, CSS and Javascript except that you've got to package them for putting them on the Chrome store.
+It's quite easy to write such applications, because there are regular Web applications 
+using HTML, CSS and Javascript except that you've got to package them for putting them 
+on the Chrome store.
 
 I'm going first to show you a local audio file player that is called Remo.
 
-I can just open files, choose one or several, open the files, I've got a playlist and I can play the songs. Normally it works... yes, OK.
+I can just open files, choose one or several, open the files, I've got a playlist and 
+I can play the songs. Normally it works... yes, OK.
 
-Finally, I'm going to show you an image editor that has been written by one of the students from this course. This is an example of Instagram-like filters that have been written by @GeorgianaB from the discussion forum. It's a regular Web application except that you can upload an image, a local image. Ok, no, this one is too small maybe. You can upload an image... it's me with a strange head ;) Then you can apply Instagram filters or add borders. You can even download the result to your local disk.
+Finally, I'm going to show you an image editor that has been written by one of the 
+students from this course. This is an example of Instagram-like filters that have 
+been written by @GeorgianaB from the discussion forum. It's a regular Web application 
+except that you can upload an image, a local image. Ok, no, this one is too small 
+maybe. You can upload an image... it's me with a strange head ;) Then you can apply 
+Instagram filters or add borders. You can even download the result to your local disk.
 
 We saw how to do this when we look at the download attributes in Module 1.
 
-All these examples work with local files. Let's go back to the course and now I'm going to show you how we can, for example, read images using an input type=file like this.
+All these examples work with local files. Let's go back to the course and now I'm going 
+to show you how we can, for example, read images using an input type=file like this.
 
 Select several files, open, and look at the preview directly in the page.
 
-Here, I just read the files using the File API, I read them as what we call data URL and I created some img elements we added in the page.
+Here, I just read the files using the File API, I read them as what we call data URL 
+and I created some img elements we added in the page.
 
 First, before writing the application, I want to talk a little bit about data URLs.
 
-Data URLs are strange set of characters like that ,and if you select them and paste them in the address bar you can see a small red icon. 
+Data URLs are strange set of characters like that ,and if you select them and paste 
+them in the address bar you can see a small red icon. 
 And you can use this everywhere where you would have use an http://URL. 
 
-If I use this image here, I can using it in JSBin for example, and if I add the image here I can see that the content of the image, the pixels, are encoded in the URL itself.
-How can you make such URLs? You've got plenty of Web sites, look for data URL with a search engine and you've got plenty of them.
+If I use this image here, I can using it in JSBin for example, and if I add the image 
+here I can see that the content of the image, the pixels, are encoded in the URL itself.
+How can you make such URLs? You've got plenty of Web sites, look for data URL with a 
+search engine and you've got plenty of them.
 
-The first one here is called DATAURL.net and it included 'Data URL Maker' so you can just open a file, any sort of file, here I take a JPG file and it will produce the data URL that corresponds. But you can also use with mp3 file, or mp4 file video or any sort of file encoding. 
+The first one here is called DATAURL.net and it included 'Data URL Maker' so you can 
+just open a file, any sort of file, here I take a JPG file and it will produce the 
+data URL that corresponds. But you can also use with mp3 file, or mp4 file video 
+or any sort of file encoding. 
 
-This was to introduce this new sort of URL that maybe you've never heard about before. Now, how can we write this?
+This was to introduce this new sort of URL that maybe you've never heard about 
+before. Now, how can we write this?
 
 I'm going to explain with the source code here because it's simpler.
 
-After that I will code it live. What we do is that we use an input type=file for reading the files. We define an event listener that will call this function 'read files and display preview' once the user has chosen some files.
+After that I will code it live. What we do is that we use an input type=file for 
+reading the files. We define an event listener that will call this function 
+'read files and display preview' once the user has chosen some files.
 
-In this callback, we iterate, we've got a 'for' loop, about the files. For each file, we build a file reader, that is a special object, that has a function called 'readAsDataURL', that will take a file descriptor as a parameter here.
+In this callback, we iterate, we've got a 'for' loop, about the files. For 
+each file, we build a file reader, that is a special object, that has a function 
+called 'readAsDataURL', that will take a file descriptor as a parameter here.
 
-When the file is read, because that can take some time if the file is big, then each file is read, the onload callback is executed. It's exactly the same principle we saw with images as reading an image can take some time. You can only work with that image in an onload callback. So, when we enter this function that means that one file has been read and we can get the content of the file through the event using the 'e.target.result' property. Each time I read a file I can get its content here and it's a data URL that contains all the pixels.
+When the file is read, because that can take some time if the file is big, then 
+each file is read, the onload callback is executed. It's exactly the same principle 
+we saw with images as reading an image can take some time. You can only work with 
+that image in an onload callback. So, when we enter this function that means that 
+one file has been read and we can get the content of the file through the event 
+using the 'e.target.result' property. Each time I read a file I can get its content 
+here and it's a data URL that contains all the pixels.
 
 What we do in that example, is that we create a <span>. In the span with the innerHTML, we add an image that has for src attribute the content of the image we read as a data URL.
 
@@ -19965,57 +20035,75 @@ I'm going to live code this one, maybe a simpler version so that you can see the
 'onchange=readImagesAndPreview()'.
 ```
 
-And I'm going to pass the set of file descriptors that have been selected: 'this.files' is the correct way to send the selected files to a Javascript function.
+And I'm going to pass the set of file descriptors that have been selected: 'this.files' 
+is the correct way to send the selected files to a Javascript function.
 
-Now, I'm going to start writing some script. But before, I will add a space, let's say 'div id=thumbnails'. 
+Now, I'm going to start writing some script. But before, I will add a space, let's say 
+'div id=thumbnails'. 
 
 This is an empty container that will be used for inserting the preview of the images. 
 
-Now I'm going in the script part. In the script part, we're going to write this function 'readImagesAndPreview()' and it takes as parameter the files that will be sent. 
+Now I'm going in the script part. In the script part, we're going to write this function 
+'readImagesAndPreview()' and it takes as parameter the files that will be sent. 
 
-And here if I want just to read the first file I will just show you how it works. I create a reader object, like that, and I ask the reader to 'readAsDataURL' the first file. 
+And here if I want just to read the first file I will just show you how it works. I 
+create a reader object, like that, and I ask the reader to 'readAsDataURL' the first file. 
 
-What is happening is that this may take some time and I need to declare, before reading the files, a callback that will be code only once the file would have been read - 'reader.onload'
+What is happening is that this may take some time and I need to declare, before reading 
+the files, a callback that will be code only once the file would have been read - 'reader.onload'
 
 And here, what can I do with the file that has been read, I will create an image element.
 
-So i created an image element, I set the source of this element with the file content that is in the 'e.target.value'. So I created an image. Then, I will add the image to the container here. I'm going to declare the container here. How can I add an element: 'container.appendChild' and I add the image I created.
+So i created an image element, I set the source of this element with the file content 
+that is in the 'e.target.value'. So I created an image. Then, I will add the image 
+to the container here. I'm going to declare the container here. How can I add an 
+element: 'container.appendChild' and I add the image I created.
 
-Let's try it, maybe I made some mistakes. I select several files, I open them and here, apparently, I make a small mistake.
+Let's try it, maybe I made some mistakes. I select several files, I open them and here, 
+apparently, I make a small mistake.
 
 Let's open an image and now read the image and I can see the preview.
 
 If you look carefully, it's just a few lines of code.
 
-So now I'm going to show you how we could work with not only one single image, but several images. The trick consists in adding a 'for' loop.
+So now I'm going to show you how we could work with not only one single image, but 
+several images. The trick consists in adding a 'for' loop.
 
 We will iterate on the length of the file's variable here. If we got 3 files, we do 3 loops. 
 I'm going to define a variable called 'f' that will correspond to the current file. 
 
 What we are going to read this time is the current file 'f'. 
 
-So this loop here, will first read files, for each one we do read as data URL, when the file is read we enter the onload callback, we create an image with the result. 
+So this loop here, will first read files, for each one we do read as data URL, when the 
+file is read we enter the onload callback, we create an image with the result. 
 
-I'm going just to add some constraints on the size, because when I tried earlier I had big images that could not fit on the screen.
+I'm going just to add some constraints on the size, because when I tried earlier I had 
+big images that could not fit on the screen.
 
 I constraint the width to 100px and the height will just follow.
 
 Like this, let's try. If I select several pictures, two of them,
 
-I can see the two pictures. If I select more, then I can see the whole set of pictures that are coming as previews. 
+I can see the two pictures. If I select more, then I can see the whole set of pictures 
+that are coming as previews. 
 
 You can see that the number of lines of code is really small and this is quiet powerful. 
 
-If you want to write, for example, a Web site that will upload pictures, you can preview them, select them and then upload them.
+If you want to write, for example, a Web site that will upload pictures, you can preview 
+them, select them and then upload them.
 
-I show you earlier the application by one of the students that can do Instagram like filters, but you can also find some new on the Chrome store. 
+I show you earlier the application by one of the students that can do Instagram like 
+filters, but you can also find some new on the Chrome store. 
 
-I installed one that is called Polarr that is using HTML for all the functionalities. So you can just import a picture, let's say this one. 
-Then you can select filters, you can do some corrections on it and so on, and finally you can export it and that's all.
+I installed one that is called Polarr that is using HTML for all the functionalities. 
+So you can just import a picture, let's say this one. 
+Then you can select filters, you can do some corrections on it and so on, and finally 
+you can export it and that's all.
 
-All this here is HTML5, this is canvas, these are form elements we saw the last week, some canvas here, or image elements and so on.
+All this here is HTML5, this is canvas, these are form elements we saw the last week, 
+some canvas here, or image elements and so on.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------------- 311. image previews (374) ------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 311. image previews (374) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image311.webp?raw=true"
@@ -20209,7 +20297,7 @@ The <a href="https://www.w3.org/TR/FileAPI/">HTML5 File API specification</a> 
 
 <p>We will not use all of these interfaces, but let's explain the difference between Blob and File, as most of the methods exposed by the FileReader interface take indiscriminately a Blob or a File as parameter.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 312. the blob movie poster (377) -------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 312. the blob movie poster (377) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image312.webp?raw=true"
@@ -20274,18 +20362,26 @@ function readFileContent(f) {
 
 </details>
 
-<p>The above code shows how a file can be read as text. The function is called, for example by clicking on the button corresponding to a &lt;input type="file" id="file"  onchange="readFileContent(this.files)"/&gt;, and by choosing a file.</p>
+<p>The above code shows how a file can be read as text. The function is called, for 
+example by clicking on the button corresponding to a &lt;input type="file" id="file"  
+onchange="readFileContent(this.files)"/&gt;, and by choosing a file.</p>
 
 <ul>
-  <li><i>Line 12</i> is executed first, and asks the Reader object to read the file f as text. As this takes some time, it's an asynchronous operation that will be executed by the browser in the background. When the file is read, the reader.onload callback function is called.</li>
-  <li><i>Line 4</i> is executed after <i>line 12</i>, and is called only when the file content is available. This callback takes an event e as a unique parameter, and e.target.result is the file content.</li>
+  <li><i>Line 12</i> is executed first, and asks the Reader object to read the file 
+    f as text. As this takes some time, it's an asynchronous operation that will be 
+	executed by the browser in the background. When the file is read, the reader.onload 
+	callback function is called.</li>
+  <li><i>Line 4</i> is executed after <i>line 12</i>, and is called only when the file 
+    content is available. This callback takes an event e as a unique parameter, and 
+	e.target.result is the file content.</li>
 </ul>
 
-<p>Try a variation of the above code in your browser, that displays the file content in a text area. This example is detailed further in the course. Click and select a text file below:</p>
+<p>Try a variation of the above code in your browser, that displays the file content in a 
+text area. This example is detailed further in the course. Click and select a text file below:</p>
 
 <p>Choose a text file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 313. select a text file (379) ---------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 313. select a text file (379) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image313.webp?raw=true"
@@ -20508,18 +20604,30 @@ in its pages.</p>
 <h4>Explanations:</h4>
 <ul>
   <li><i>Line 2:</i> we get a pointer to the file selector, the variable fileInput.</li>
-  <li><i>Line 4:</i> we define a change listener. In this example, we use an anonymous function directly included in the listener definition (the listener is the function(e) {...}).</li>
-  <li><i>Line 11:</i> when a user chooses a file, the listener will be executed. Line 11 will start the reading of the file content, as a binary file (this is what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, the onload callback will be asynchronously called by the browser.</li>
-  <li><i>Line 7:</i> is the onload callback, executed when the file content is loaded in memory. We pass the file content to the initSound function (see JSBin example for complete source code) that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio works only with uncompressed audio formats in memory), and to play it.</li>
+  <li><i>Line 4:</i> we define a change listener. In this example, we use an 
+    anonymous function directly included in the listener definition (the listener 
+	is the function(e) {...}).</li>
+  <li><i>Line 11:</i> when a user chooses a file, the listener will be executed. 
+    Line 11 will start the reading of the file content, as a binary file (this is 
+	what readAsArrayBuffer means: read as binary!). Once the file will be entirely 
+	read, the onload callback will be asynchronously called by the browser.</li>
+  <li><i>Line 7:</i> is the onload callback, executed when the file content is 
+    loaded in memory. We pass the file content to the initSound function (see 
+	JSBin example for complete source code) that uses WebAudio to decode it (it 
+	may be a compressed file - an mp3 for example - and WebAudio works only with 
+	uncompressed audio formats in memory), and to play it.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-8">6.3.8 Read file content as dataURL</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>What is a data URL?</h4>
 
-<p>A data URL is a URL that includes type and content at the same time. It is useful, for example,  for in-lining images or videos in the HTML of a Web page (on mobile devices, this may speed up the loading of the page by reducing the number of HTTP requests).</p>
+<p>A data URL is a URL that includes type and content at the same time. It is useful, 
+for example,  for in-lining images or videos in the HTML of a Web page (on mobile devices, 
+this may speed up the loading of the page by reducing the number of HTTP requests).</p>
 
-<p>Here is an example of a red square, as a data URL. Copy and paste it in the address bar of your browser, and you should see the red square:</p>
+<p>Here is an example of a red square, as a data URL. Copy and paste it in the address 
+bar of your browser, and you should see the red square:</p>
 
 <p>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==</p>
 
@@ -20534,7 +20642,9 @@ in its pages.</p>
 &nbsp;
 </p>
 
-<p>If we set the src attribute of an image element <img src="data:image/png...."> with the data URL of the above screenshot, it will work exactly as if you used a URL that started with https://</p>
+<p>If we set the src attribute of an image element <img src="data:image/png...."> 
+with the data URL of the above screenshot, it will work exactly as if you used a 
+URL that started with https://</p>
 
 <p>In your browser, you will see a small red circle rendered by this source code:</p>
 
@@ -20556,9 +20666,14 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 &nbsp;
 </p>
 
-<p>This dataURL format enables file content to be stored in a base64 format (as a string), and adds the MIME type specification of the content. The dataURL can therefore store a file as a URL readable with modern browsers. It is becoming more commonly used on the Web, especially for mobile applications, as inlining images reduces the number of HTTP requests and makes the Web page load faster.</p>
+<p>This dataURL format enables file content to be stored in a base64 format (as a string), 
+and adds the MIME type specification of the content. The dataURL can therefore store a file 
+as a URL readable with modern browsers. It is becoming more commonly used on the Web, 
+especially for mobile applications, as inlining images reduces the number of HTTP 
+requests and makes the Web page load faster.</p>
 
-<p>You will find lots of Web sites and tools for generating dataURL from files, such as <a href="https://ezgif.com/image-to-datauri">Image to Data URI converter</a> (screenshot below):</p>
+<p>You will find lots of Web sites and tools for generating dataURL from files, 
+such as <a href="https://ezgif.com/image-to-datauri">Image to Data URI converter</a> (screenshot below):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------ 319. Online service that converts uploaded images to data uris... ----------------->
 <!-------------- we see an image and its ascii encoded data uri version (384) -------------------->
@@ -20566,12 +20681,15 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 <p align="center">
 <img src="./images/image319.webp?raw=true"
   style="width:55%"
-  alt="Online service that converts uploaded images to data uris...we see an image and its ascii encoded data uri version." />
+  alt="Online service that converts uploaded images to data uris...we see an image and its 
+  ascii encoded data uri version." />
 </p>
 
-<p>With the above example, you can copy and paste the characters on the left and use them with an <img src="...">. Just set the src attribute with it!</p>
+<p>With the above example, you can copy and paste the characters on the left and use them 
+with an <img src="...">. Just set the src attribute with it!</p>
 
-<p>Notice that you can encode any type of file as dataURL, but this format is most frequently used with ./images files (images, audio, video).</p>
+<p>Notice that you can encode any type of file as dataURL, but this format is most frequently 
+used with ./images files (images, audio, video).</p>
 
 <p>Example of HTML5 logo embedded in a document without any real image, just a dataURL and CSS:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20588,9 +20706,12 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 
 <h4>Example #1: read images as data URL and display previews in the page</h4>
 
-<p>This first example is useful for forms that allow the user to select one or more pictures. Before sending the form, you might want to get a preview of the pictures in the HTML page. The reader.readAsDataUrl method is used for that.</p>
+<p>This first example is useful for forms that allow the user to select one or more pictures. 
+Before sending the form, you might want to get a preview of the pictures in the HTML page. 
+The reader.readAsDataUrl method is used for that.</p>
 
-<p><a href="https://jsbin.com/laseye/edit?html,output">Example on JSBin</a> or try it below in your browser:</p>
+<p><a href="https://jsbin.com/laseye/edit?html,output">Example on JSBin</a> or try it below 
+in your browser:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------- 332. preview of selected images (385) ------------------------------>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20648,9 +20769,12 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 <h4>Explanations:</h4>
 
 <ul>
-  <li><i>Line 30:</i> starts the reading of the file f. When f is read, the onload callback will be called.</li>
-  <li><i>Lines 24-30:</i> we build, using the DOM API, a <span class="thumb">...</span> and inside we add an <img src=the data url> element with its src attribute equal to 
-  the url of the image that has been read (the image content as dataURL is in e.target.result). Finally, at <i>line 27</i>, we insert the span in the document before the 
+  <li><i>Line 30:</i> starts the reading of the file f. When f is read, the onload callback 
+    will be called.</li>
+  <li><i>Lines 24-30:</i> we build, using the DOM API, a <span class="thumb">...</span> and 
+    inside we add an <img src=the data url> element with its src attribute equal to 
+    the url of the image that has been read (the image content as dataURL is in e.target.result). 
+    Finally, at <i>line 27</i>, we insert the span in the document before the 
   current children of the <output id="list"> element (declared at <i>line 5</i>).</li>
 </ul>
 
@@ -20942,7 +21066,7 @@ walk for 20 meters and see the position changing.</p>
 to the getCurrentPosition and watchPosition methods, that will hold one or several of the 
 following options:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------- 327. more properties of the coords object (392) ------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~ 327. more properties of the coords object (392) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image327.webp?raw=true"
@@ -20988,7 +21112,7 @@ watchId=navigator.geolocation.watchPosition(onSuccess, onError,
 How to get a map centered on your longitude and latitude.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 328. openstreetmap test (393) ---------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 328. openstreetmap test (393) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image328.webp?raw=true"
@@ -20998,7 +21122,7 @@ How to get a map centered on your longitude and latitude.
 
 <p>This example is just given "as is", as there are so many possibilities for rendering a map with <a href="/leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a basic example might be useful.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 329. openstreetmap test (393) ---------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 329. openstreetmap test (393) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image329.webp?raw=true"
@@ -21184,7 +21308,7 @@ Example #1: how to get a physical address from the longitude and latitude
 
 Google reverse geocoding example (screenshot only):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 330. google reverse geocoding example (396) --------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 330. google reverse geocoding example (396) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image330.webp?raw=true"
@@ -21611,4 +21735,4 @@ this YouTube tutorial about how to get such a key).</li>
 
 . . .The end.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ end readme.md of W3Cx-3of5-HTML5.1x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--- last updated 7-30-2023-4:15pm --->
+<!--- last updated 8-4-2023-10:02am --->
