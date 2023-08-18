@@ -8,9 +8,11 @@
     border-color: #778899;  /* dark grayish blue */
     border-style: solid; }
 
-  ol li { 
+  ol,ul li { 
     padding: 10px; 
+    line-height: 130%;
   }
+
   p { 
     font-size: 13.5px;
     font-family: Bahnschrift, Inter, Helvetic, sans-serif;
