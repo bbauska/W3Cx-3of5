@@ -7381,7 +7381,7 @@ Lots of data visualization tools and JavaScript libraries use the HTML5 canvas e
 
 A version of the <a href="https://intersoft.itch.io/galaxian">arcade game Galaxian</a>, that runs at 60 frames per second in an HTML5 canvas element:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~ 124. A version of the game Galaxian that runs at 60 frames/s in a canvas. (146) ~~~~~~-->
+<!--~~~~~ 124. a version of the game Galaxian that runs at 60 frames/s in a canvas. (146) ~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image124.webp?raw=true"
