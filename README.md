@@ -208,7 +208,7 @@ Tutorials can be found on the Web such as <a href="https://code.tutsplus.com/tut
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. codepen logo (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-<img src="./images/image003.webp?raw=true"
+<img src="./images/image003b.webp?raw=true"
    alt="CodePen logo."
    width="15%">
 &nbsp;
