@@ -191,7 +191,7 @@ Here are a few possibilities for Web editors:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. jsbin logo (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-<img src="./images/image004.webp?raw=true"
+<img src="./images/image002.webp?raw=true"
   alt="JSBin logo."
   width="15%" />
 &nbsp;
@@ -250,7 +250,7 @@ Example of a <a href="https://caniuse.com/">CanIUse browser</a> support table (u
 <p align="center">
 <img src="./images/image004.webp?raw=true"
    alt="Example CSS in CanIUse."
-   width="65%" />
+   width="450px;" />
 &nbsp;
 <br/>
 
