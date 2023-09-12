@@ -3977,14 +3977,14 @@ properties width and height of the video element, to resize the video.</p>
 <h4>And now the JavaScript code:</h4>
 
 <pre>1. var video;
-2. function init() {
-3.   // function called when the page is loaded
-4.   video = document.querySelector(&quot;#myVideo&quot;);
-5.   // For initial value
-6.   video.width = window.innerWidth;
-7.   video.height = window.innerHeight;
-8.   // For dealing with window resize
-9.   window.onresize = function() {
+2.  function init() {
+3.    // function called when the page is loaded
+4.    video = document.querySelector(&quot;#myVideo&quot;);
+5.    // For initial value
+6.    video.width = window.innerWidth;
+7.    video.height = window.innerHeight;
+8.    // For dealing with window resize
+9.    window.onresize = function() {
 10.     video.width = window.innerWidth;
 11.     video.height = window.innerHeight;
 12.   };
@@ -21161,7 +21161,7 @@ good understanding of the material.</p>
 </ul>
 
 <h5>. . .The end.<br>
-<br>last updated 08-14-23 Mon 8:03pm</h5>
+<br>last updated 09-11-23 Mon 6:40pm</h5>
   </body>
 </html>
 
