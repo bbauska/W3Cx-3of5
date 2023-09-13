@@ -133,7 +133,7 @@ rel="noopener noreferrer">HTML5 & CSS Fundamentals</a> courses.</p>
   <li>Basic knowledge of JavaScript and DOM APis is sufficient, and this course 
     will include a recap of basics. You are also more than welcome to follow the 
     <a href="https://www.edx.org/course/javascript-introduction" target="_blank" 
-    rel="noopener noreferrer">JavaScript Introduction</a> course (introductory level).</li>
+	rel="noopener noreferrer">JavaScript Introduction</a> course (introductory level).</li>
 </ul>
 
 <h4>During this course, you will learn:</h4>
@@ -307,11 +307,11 @@ The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validato
 
 <h3 id="cha-3">Internationalization Checker</h3>
 <p>
-The <a href="https://validator.w3.org/i18n-checker/" target="_blank">W3C Internationalization Checker</a> provides information about various internationalization-related aspects of your page, including the HTTP headers that affect it. It will also report a number of issues and offer advice about how to resolve them.
+The <a href="https://validator.w3.org/i18n-checker/" target="_blank" rel="noopener noreferrer">W3C Internationalization Checker</a> provides information about various internationalization-related aspects of your page, including the HTTP headers that affect it. It will also report a number of issues and offer advice about how to resolve them.
 </p>
 <h4>Link Checker</h4>
 <p>
-The <a href="https://validator.w3.org/checklink" target="_blank" rel="noopener noreferrer">W3C Link Checker</a> looks for issues in links, anchors and referenced objects in a Web page, CSS style sheet, or recursively on a whole Web site. For best results, it is recommended to first ensure that the documents checked use valid <a href="https://validator.w3.org/" target="_blank">(X)HTML Markup</a> and <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS</a>.
+The <a href="https://validator.w3.org/checklink" target="_blank" rel="noopener noreferrer">W3C Link Checker</a> looks for issues in links, anchors and referenced objects in a Web page, CSS style sheet, or recursively on a whole Web site. For best results, it is recommended to first ensure that the documents checked use valid <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">(X)HTML Markup</a> and <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">CSS</a>.
 </p>
 <h4>W3C Cheatsheet</h4>
 <p>
@@ -327,7 +327,7 @@ The <a href="https://www.w3.org/2009/cheatsheet/" target="_blank" rel="noopener
 </p>
 <p>Its main feature is a lookup search box, where one can start typing a keyword and get a list of matching properties/elements/attributes/functions in the above-mentioned specifications, and further details on those when selecting the one of interest.</p>
 
-<h4>The W3C cheatsheet is only available as a <a href="https://dev.w3.org/2009/cheatsheet/doc/" target="_blank">pure Web application</a>.</h4>
+<h4>The W3C cheatsheet is only available as a <a href="https://dev.w3.org/2009/cheatsheet/doc/" target="_blank" rel="noopener noreferrer">pure Web application</a>.</h4>
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -337,7 +337,7 @@ The <a href="https://www.w3.org/2009/cheatsheet/" target="_blank" rel="noopener
 <p>
 Most of the technologies you use when developing Web applications and Web sites are designed and standardized in W3C in a completely open and transparent process.
 
-In fact, all W3C specifications are developed in public <a href="https://github.com/w3c/" target="_blank">GitHub repositories</a>, so if you are familiar with GitHub, you already know how to contribute to W3C specifications! This is all about raising issues (with feedback and suggestions) and/or bringing pull requests to fix identified issues.
+In fact, all W3C specifications are developed in public <a href="https://github.com/w3c/" target="_blank" rel="noopener noreferrer">GitHub repositories</a>, so if you are familiar with GitHub, you already know how to contribute to W3C specifications! This is all about raising issues (with feedback and suggestions) and/or bringing pull requests to fix identified issues.
 </p>
 <h4>Contribute</h4>
 <p>
@@ -352,7 +352,7 @@ Contributing to this standardization process might be a bit scary or hard to app
   alt="Github (the octocat) logo." />
 </p>
 <p>
-If you're looking to an easy way to dive into this standardization processes, check out which <a href="https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues">issues in the W3C GitHub repositories have been marked as "good first issue"</a> and see if you find anything where you think you would be ready to help.
+If you're looking to an easy way to dive into this standardization processes, check out which <a href="https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues" target="_blank" rel="noopener noreferrer">issues in the W3C GitHub repositories have been marked as "good first issue"</a> and see if you find anything where you think you would be ready to help.
 </p>
 <h4>Shape the future</h4>
 
@@ -388,11 +388,11 @@ W3C's primary activity is to develop protocols and guidelines that ensure long-t
 
 <h6 align="center">Tim Berners-Lee at his desk in CERN, 1994</h6>
 <p>
-<a href="https://www.w3.org/People/Berners-Lee/" target="_blank">Tim Berners-Lee</a> wrote a <a href="https://www.w3.org/History/1989/proposal.html" target="_blank">proposal</a> in 1989 for a system called the World Wide Web. He then created the first Web browser, server, and Web page. He wrote the first specifications for URLs, HTTP, and HTML.
+<a href="https://www.w3.org/People/Berners-Lee/" target="_blank" rel="noopener noreferrer">Tim Berners-Lee</a> wrote a <a href="https://www.w3.org/History/1989/proposal.html" target="_blank" rel="noopener noreferrer">proposal</a> in 1989 for a system called the World Wide Web. He then created the first Web browser, server, and Web page. He wrote the first specifications for URLs, HTTP, and HTML.
 
-In October 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology, Laboratory for Computer Science [MIT/LCS] in collaboration with <a href="https://home.cern/" target="_blank">CERN</a>, where the Web originated (see information on the <a href="https://www.w3.org/Daemon/" target="_blank">original CERN Server</a>, with support from DARPA and the <a href="https://ec.europa.eu/index_en.htm" target="_blank">European Commission</a>.
+In October 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology, Laboratory for Computer Science [MIT/LCS] in collaboration with <a href="https://home.cern/" target="_blank" rel="noopener noreferrer">CERN</a>, where the Web originated (see information on the <a href="https://www.w3.org/Daemon/" target="_blank" rel="noopener noreferrer">original CERN Server</a>, with support from DARPA and the <a href="https://ec.europa.eu/index_en.htm" target="_blank" rel="noopener noreferrer">European Commission</a>.
 
-In April 1995, <a href="https://www.inria.fr/" target="_blank">Inria</a> became the first European W3C host, followed by <a href="https://www.keio.ac.jp/" target="_blank">Keio University of Japan</a> (Shonan Fujisawa Campus) in Asia in 1996. In 2003, <a href="https://www.ercim.eu/" target="_blank">ERCIM</a> took over the role of European W3C Host from Inria. In 2013, W3C announced <a href="https://ev.buaa.edu.cn/" target="_blank">Beihang University</a> as the fourth Host.
+In April 1995, <a href="https://www.inria.fr/" target="_blank" rel="noopener noreferrer">Inria</a> became the first European W3C host, followed by <a href="https://www.keio.ac.jp/" target="_blank" rel="noopener noreferrer">Keio University of Japan</a> (Shonan Fujisawa Campus) in Asia in 1996. In 2003, <a href="https://www.ercim.eu/" target="_blank" rel="noopener noreferrer">ERCIM</a> took over the role of European W3C Host from Inria. In 2013, W3C announced <a href="https://ev.buaa.edu.cn/" target="_blank" rel="noopener noreferrer">Beihang University</a> as the fourth Host.
 
 In addition to these four Host locations that employ W3C staff, there are <a href="https://www.w3.org/Consortium/Offices/staff" target="_blank">W3C Offices</a> around the globe that support the developer communities in their regions and organize local events. Find the one next to your place!
 </p>
@@ -400,13 +400,13 @@ In addition to these four Host locations that employ W3C staff, there are <a hr
 
 <p>As of June 2020, W3C:</p>
 <ul>
-  <li>Is a <a href="https://www.w3.org/Consortium/Member/List)-driven" target="_blank">member</a>-driven organization composed of nearly 430 companies, universities, start-ups, etc. from all over the world.</li>
-  <li>Holds 44 <a href="https://www.w3.org/groups/" target="_blank">technical groups</a>, including Working and Interest Groups where technical specifications are discussed and developed.</li>
-  <li>Published over 7,181 <a href="https://www.w3.org/TR/" target="_blank">published technical reports</a>, including 430 Web standards (or W3C Recommendations) - since January 1st,1995.</li>
-  <li>Runs a <a href="https://www.w3.org/Consortium/Translation/" target="_blank">translation program</a> to foster the translation of its specifications: see the <a href="https://www.w3.org/Consortium/Translation/matrix.html">translation matrix</a> currently listing 304 available translations of W3C recommendations.</li>
-  <li>Hosts 337 <a href="https://www.w3.org/community/groups/" target="_blank">Community and Business Groups</a>, where developers, designers, and anyone passionate about the Web have a place to hold discussions and publish ideas.</li>
+  <li>Is a <a href="https://www.w3.org/Consortium/Member/List)-driven" target="_blank" rel="noopener noreferrer">member</a>-driven organization composed of nearly 430 companies, universities, start-ups, etc. from all over the world.</li>
+  <li>Holds 44 <a href="https://www.w3.org/groups/" target="_blank" rel="noopener noreferrer">technical groups</a>, including Working and Interest Groups where technical specifications are discussed and developed.</li>
+  <li>Published over 7,181 <a href="https://www.w3.org/TR/" target="_blank" rel="noopener noreferrer">published technical reports</a>, including 430 Web standards (or W3C Recommendations) - since January 1st,1995.</li>
+  <li>Runs a <a href="https://www.w3.org/Consortium/Translation/" target="_blank" rel="noopener noreferrer">translation program</a> to foster the translation of its specifications: see the <a href="https://www.w3.org/Consortium/Translation/matrix.html" target="_blank" rel="noopener noreferrer">translation matrix</a> currently listing 304 available translations of W3C recommendations.</li>
+  <li>Hosts 337 <a href="https://www.w3.org/community/groups/" target="_blank" rel="noopener noreferrer">Community and Business Groups</a>, where developers, designers, and anyone passionate about the Web have a place to hold discussions and publish ideas.</li>
   <li>Gathers over 12,912 active participants constituting the W3C community.</li>
-  <li>Has a <a href="https://www.w3.org/People/" target="_blank">technical staff</a> composed of 64 people, spread on all five continents.</li>
+  <li>Has a <a href="https://www.w3.org/People/" target="_blank" rel="noopener noreferrer">technical staff</a> composed of 64 people, spread on all five continents.</li>
 </ul>
 
 <div align="right">
@@ -419,9 +419,9 @@ People often use the words "Internet" and "Web" interchangeably, but this usage 
 
 The Web is an application of the Internet. 
 
-The Web is the most popular way of accessing the Internet, but other applications of the Internet are <a href="https://en.wikipedia.org/wiki/Email">e-mail</a> and <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol">ftp</a> for example. 
+The Web is the most popular way of accessing the Internet, but other applications of the Internet are <a href="https://en.wikipedia.org/wiki/Email" target="_blank" rel="noopener noreferrer">e-mail</a> and <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol" target="_blank" rel="noopener noreferrer">ftp</a> for example. 
 
-One analogy equates the Internet to a road network where the Web is a car, the email is a bicycle, etc.  Read <a href="https://www.lifewire.com/difference-between-the-internet-and-the-web-2483335">this article</a> for more details about the difference between Internet and the Web.
+One analogy equates the Internet to a road network where the Web is a car, the email is a bicycle, etc.  Read <a href="https://www.lifewire.com/difference-between-the-internet-and-the-web-2483335" target="_blank" rel="noopener noreferrer">this article</a> for more details about the difference between Internet and the Web.
 </p>
 <h4>Internet</h4>
 
@@ -441,11 +441,11 @@ One analogy equates the Internet to a road network where the Web is a car, the e
   <li>Navigation to other pages occurs through hyperlinks.</li>
 </ul>
 <p>
-The internet is a global network of billions of servers, computers, and other <a href="https://www.lifewire.com/computer-hardware-2625895" target="_blank">hardware</a> devices. Each device can connect with any other device as long as both are connected to the internet using a valid <a href="https://www.lifewire.com/what-is-an-ip-address-2625920">IP address</a>. The internet makes the information sharing system known as the web possible.
+The internet is a global network of billions of servers, computers, and other <a href="https://www.lifewire.com/computer-hardware-2625895" target="_blank" rel="noopener noreferrer">hardware</a> devices. Each device can connect with any other device as long as both are connected to the internet using a valid <a href="https://www.lifewire.com/what-is-an-ip-address-2625920" target="_blank" rel="noopener noreferrer">IP address</a>. The internet makes the information sharing system known as the web possible.
 
-The web, which is short for <a href="https://www.lifewire.com/around-the-web-4781469" target="_blank">World Wide Web</a>, is one of the ways information is shared on the internet (others include <a href="https://www.lifewire.com/electronic-mail-overview-1164107">email</a>, File Transfer Protocol <a href="https://www.thoughtco.com/ftp-defined-2654479">(FTP)</a>, and <a href="https://www.lifewire.com/what-is-instant-messaging-2483319">instant messaging</a> services. The web is composed of billions of connected digital documents that are viewed in a web browser, such as Chrome, <a href="https://www.lifewire.com/what-is-safari-4173608">Safari</a>, Microsoft Edge, <a href="https://www.lifewire.com/the-history-of-firefox-446233">Firefox</a>, and others.
+The web, which is short for <a href="https://www.lifewire.com/around-the-web-4781469" target="_blank" rel="noopener noreferrer">World Wide Web</a>, is one of the ways information is shared on the internet (others include <a href="https://www.lifewire.com/electronic-mail-overview-1164107" target="_blank" rel="noopener noreferrer">email</a>, File Transfer Protocol <a href="https://www.thoughtco.com/ftp-defined-2654479" target="_blank" rel="noopener noreferrer">(FTP)</a>, and <a href="https://www.lifewire.com/what-is-instant-messaging-2483319" target="_blank" rel="noopener noreferrer">instant messaging</a> services. The web is composed of billions of connected digital documents that are viewed in a web browser, such as Chrome, <a href="https://www.lifewire.com/what-is-safari-4173608" target="_blank" rel="noopener noreferrer">Safari</a>, Microsoft Edge, <a href="https://www.lifewire.com/the-history-of-firefox-446233" target="_blank" rel="noopener noreferrer">Firefox</a>, and others.
 
-Think of the internet as a library. Think of the books, magazines, newspapers, DVDs, <a href="https://www.lifewire.com/what-are-audiobooks-2438535" target="_blank">audiobooks</a>, and other media it contains as websites.
+Think of the internet as a library. Think of the books, magazines, newspapers, DVDs, <a href="https://www.lifewire.com/what-are-audiobooks-2438535" target="_blank" rel="noopener noreferrer">audiobooks</a>, and other media it contains as websites.
 
 Both the internet and the web serve unique purposes but work hand in hand to provide information, entertainment, and other services to the public.
 
@@ -469,7 +469,7 @@ pages, sites, documents, and other media that are served to visitors.</p>
 
 <p>The web consists of digital documents, referred to as web pages, that are 
 viewable through <a href="https://www.lifewire.com/what-is-a-browser-446234" 
-target="_blank">web browser</a> software on devices like smartphones, tablets, 
+target="_blank" rel="noopener noreferrer">web browser</a> software on devices like smartphones, tablets, 
 and computers. These pages contain many types of content, including static 
 content like encyclopedia pages, but also dynamic content like 
 <a href="https://www.lifewire.com/a-primer-to-ebay-basics-2483229" 
@@ -481,13 +481,13 @@ a single domain name is referred to as a website.</p>
 
 <p>Web pages are connected using 
 <a href="https://www.lifewire.com/hypertext-transfer-protocol-817944" 
-target="_blank">Hypertext Transfer Protocol</a> (HTTP), the coding 
+target="_blank" rel="noopener noreferrer">Hypertext Transfer Protocol</a> (HTTP), the coding 
 language that allows you to visit any public web page. By clicking a 
-<a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287">
+<a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287" target="_blank" rel="noopener noreferrer">
 hyperlink</a> or entering a <a href="https://www.lifewire.com/what-is-a-url-2626035" 
 target="_blank" rel="noopener noreferrer">Uniform Resource Locator</a> (URL), 
 the browser uses this unique address to find and access a web page. 
-<a href="https://www.lifewire.com/best-search-engines-2483352">
+<a href="https://www.lifewire.com/best-search-engines-2483352" target="_blank" rel="noopener noreferrer">
 Search engines</a> like Google make it easy to filter the billions 
 of web pages now populating the web by locating the articles, videos, 
 and other media you want to find based on your search criteria.</p>
@@ -720,7 +720,7 @@ the W3C specification about this element):</p>
 <p>
 And there is no &lt;content&gt; element even though the &lt;div class="content"&gt; was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is "default content". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between &lt;article&gt; and &lt;/article&gt;.
 
-Read also at the end of this section about the new &lt;main&gt; element. This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element">part of the HTML5 recommendation</a> and an integral part of the HTML document structure.
+Read also at the end of this section about the new &lt;main&gt; element. This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank" rel="noopener noreferrer">part of the HTML5 recommendation</a> and an integral part of the HTML document structure.
 </p>
 <h4>External resources:</h4>
 <ul>
@@ -730,7 +730,7 @@ Read also at the end of this section about the new &lt;main&gt; element. This el
 
 <h4>A blog example that uses the structural elements</h4>
 <p>
-Let's study <a href="https://jsbin.com/bucokav/edit?html,output">an example we put on JsBin</a> (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the "Bins/create milestone" menu, share your version with others in the forums, etc. Don't  hesitate to play with the source code, you will never break anything).</p>
+Let's study <a href="https://jsbin.com/bucokav/edit?html,output" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">an example we put on JsBin</a> (all examples we have cooked up are available on the jsbin.com Web site and can be modified freely: you can save your own version using the "Bins/create milestone" menu, share your version with others in the forums, etc. Don't  hesitate to play with the source code, you will never break anything).</p>
 
 <h4>Use a &lt;header&gt; at the top of the blog</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1037,7 +1037,7 @@ an &lt;aside&gt; element:</p>
 <p>We are not going to show the complete CSS here as it uses some tricks to 
 display the list as a "real tag cloud" that uses JavaScript for handling events, 
 etc. Those who are curious can look at 
-<a href="https://jsbin.com/bucokav/edit?html,output" target="_blank">the code 
+<a href="https://jsbin.com/bucokav/edit?html,output" target="_blank" rel="noopener noreferrer">the code 
 of the online example</a>.</p>
 
 <h4>Here is the CSS for the &lt;aside&gt; element:</h4>
@@ -1231,17 +1231,17 @@ semantics and will be taken into account by:</p>
   <li>Browsers natively or browsers extensions, i.e. for automatically generating a 
     table of contents, an outline view of the document, for applying default CSS rules 
 	to these elements, etc. See for example the 
-	<a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">
+	<a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" target="_blank" rel="noopener noreferrer">
 	table-of-contents-crx extension</a> (Chrome extension). More on that in the next 
 	section of the course.</li><br/>
-  <li><a href="https://www.w3.org/WAI/perspective-videos/speech/">Text to speech:</a></li><br/>
+  <li><a href="https://www.w3.org/WAI/perspective-videos/speech/" target="_blank" rel="noopener noreferrer">Text to speech:</a></li><br/>
   <li>Web crawlers, etc.</li><br/>
 </ul>
 <p>
 You can use &lt;div&gt; elements in all cases where the proposed structural 
 elements do not fit your needs: for defining some content that should be styled, for example.
 
-This chart from the <a href="https://html5doctor.com/">HTML5 Doctor Web 
+This chart from the <a href="https://html5doctor.com/" target="_blank" rel="noopener noreferrer">HTML5 Doctor Web 
 site&lt;/a&gt; may help you decide whether or not to use a &lt;div&gt;:</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1288,7 +1288,7 @@ Here is the result for the previous example:</p>
 
 <p>In the above outline, note that we have only used H1... H6 elements, without any new HTML5 structural elements such as &lt;section&gt; or &lt;article&gt;.
 
-Here is a list of browser extensions you can try, for visualizing the outline of a document: <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> (Chrome extension) or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">this Firefox extension</a>.
+Here is a list of browser extensions you can try, for visualizing the outline of a document: <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" target="_blank" rel="noopener noreferrer">table-of-contents-crx</a> (Chrome extension) or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" target="_blank" rel="noopener noreferrer">this Firefox extension</a>.
 
 <h4>Using headings and new sectioning elements (section, article, aside, nav)</h4>
 
@@ -1419,7 +1419,7 @@ In the above example, please note two things:
 <p>
 The last example is bad for accessibility reasons. A screen reader that vocalizes the page will just say "Entering section", while in the previous two good examples it would say "entering section with heading Blog Posts of April 2020". You can also check if your headings and sectioning elements are ok by using a browser extension that displays the outline of the document (just search for "html5 outliner" in your browser's extension search engine).
 
-<b>UPDATE :</b> For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">Outline sidebar for Firefox</a>.</p>
+<b>UPDATE :</b> For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" target="_blank" rel="noopener noreferrer">table-of-contents-crx</a> for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" target="_blank" rel="noopener noreferrer">Outline sidebar for Firefox</a>.</p>
 
 <h4>The outline of the last example looks like this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1572,7 +1572,7 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 
 <h3>1.2.4 The HTML5 Logo</h3>
 
-<p>Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-html5-logo/">
+<p>Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-html5-logo/" target="_blank" rel="noopener noreferrer">
 unveiled on 18 January 2011</a>, so way before HTML5 became a Web standard. This logo represents 
 HTML5, the cornerstone for modern Web applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1621,7 +1621,7 @@ HTML5, the cornerstone for modern Web applications.</p>
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h4>Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/" >this source</a>).</h4>
+<h4>Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/" target="_blank" rel="noopener noreferrer">this source</a>).</h4>
 
 <details open>
  <summary>Click to expand!</summary>
@@ -1646,12 +1646,12 @@ HTML5, the cornerstone for modern Web applications.</p>
 <h4>Simpler character set definition</h4>
 <p>
 One word about the &lt;meta charset="utf-8"&gt; at line 4 in the HTML5 version: it is a <b>best practice</b> to declare the character set of your document to protect against 
-<a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7"> a serious security risk</a>. For more details, please refer to the "Why Internationalization is 
+<a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7" target="_blank" rel="noopener noreferrer"> a serious security risk</a>. For more details, please refer to the "Why Internationalization is 
 important" section in the Course intro chapter.
 </p>
 <h4>No more complicated DOCTYPE definitions</h4>
 <p>
-The "DOCTYPE" (Document Type Declaration) is used by tools such as HTML validators (i.e. <a href="https://validator.w3.org/">the W3C validator</a>), 
+The "DOCTYPE" (Document Type Declaration) is used by tools such as HTML validators (i.e. <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">the W3C validator</a>), 
 and specifies the rules used by  an HTML or an XHTML page. These rules are contained in special documents called "Document Type Definitions" 
 (also abbreviated as DTDs), written in a language that may seem a bit barbaric to humans (they are intended to be read by software), and hosted by W3C.
 
@@ -1677,9 +1677,9 @@ to another and was nearly impossible to memorize.</p>
 <h4>The "TYPE" attribute is optional</h4>
 
 <p>With a rel="stylesheet" attribute, it is no longer necessary to indicate 
-type="text/css" (from <a href="https://www.w3.org/TR/html5/links.html#link-type-stylesheet"> the 
+type="text/css" (from <a href="https://www.w3.org/TR/html5/links.html#link-type-stylesheet" target="_blank" rel="noopener noreferrer"> the 
 specification</a>: "the default type for resources given by the 
-<a href="https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet">stylesheet</a> keyword is text/css.")
+<a href="https://dev.w3.org/html5/spec/single-page.html#link-type-stylesheet" target="_blank" rel="noopener noreferrer">stylesheet</a> keyword is text/css.")
 
 The "type" attribute is not needed in HTML5, and even old browsers will use 
 text/css as the default type for stylesheets today. So, either way, you can 
@@ -1750,7 +1750,7 @@ Even if differences exist between ids, classes and css/js implementations, they
 
 So various studies have been conducted in order to identify the most popular ids, class names, widgets, etc. used on the Web:
 
-Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/">article:</a>
+Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">article:</a>
 <blockquote>"During the creation of HTML5, Ian Hickson used Google's 
 tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 
 million URLs, calling it MAMA ("Metadata Analysis and Mining Application"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger 
@@ -1769,47 +1769,57 @@ the W3C specification about this element):
 <h4>HTML5 structural elements with descriptions</h4>
 <ul>
   <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-header-element" 
-    target="_blank">&lt;header&gt;</b></a>Introduction of "sectioning elements": 
+    target="_blank" rel="noopener noreferrer">&lt;header&gt;</b></a>Introduction of "sectioning elements": 
 	an article, a section, the entire document (header page). Typically the header 
 	of a Web site that appears on top of each page, or a header of a long &lt;article&gt; 
 	or of a long &lt;section&gt;.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element" target="_blank">
-    &lt;footer&gt;</b></a>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element" target="_blank">
-    &lt;nav&gt;</b></a>Section that contains the main navigation links (within the document 
-	or to other pages).</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-article-element" target="_blank">
-    &lt;article&gt;</b></a>Independent content, which can be individually extracted from the 
-	document and syndicated (RSS or equivalent) without penalizing its understanding. 
-	Typically a blog post.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-section-element" target="_blank">
-    &lt;section&gt;</b></a>Generic section used to group different articles for different purposes 
-	or subjects, or to define the different sections of a single article. Generally used with a 
-	header.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element" target="_blank">
-    &lt;time&gt;</b></a>Used for marking up times and dates.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank">
-    &lt;aside&gt;</b></a>Section whose content is not necessarily directly related to the main 
-	content that surrounds it, but can provide additional information.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element" target="_blank">
-    &lt;figure&gt;</b></a> and <b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element">
-	&lt;figcaption&gt;</b></a>Used to encapsulate a figure as a single item, and 
-	contains a caption for the figure, respectively.</li>
-  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" target="_blank">
-    &lt;main&gt;</b></a>The main element represents the main content of the body of a document 
-	or application. The main content area consists of content that is directly related to or 
-	expands upon the central topic of a document or central functionality of an application. 
-	<b>There can be only one &lt;main&gt; element in a document.</b></li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-footer-element" 
+    target="_blank" rel="noopener noreferrer">&lt;footer&gt;</b></a>Contains the 
+	footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-nav-element" 
+    target="_blank" rel="noopener noreferrer">&lt;nav&gt;</b></a>Section that 
+	contains the main navigation links (within the document or to other pages).</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-article-element" 
+    target="_blank" rel="noopener noreferrer">&lt;article&gt;</b></a>Independent 
+	content, which can be individually extracted from the document and syndicated 
+	RSS or equivalent) without penalizing its understanding.  Typically a blog post.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-section-element" 
+    target="_blank" rel="noopener noreferrer">&lt;section&gt;</b></a>Generic section 
+	used to group different articles for different purposes or subjects, or to define 
+	the different sections of a single article. Generally used with a header.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element" 
+    target="_blank" rel="noopener noreferrer">&lt;time&gt;</b></a>Used for marking up 
+	times and dates.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" 
+    target="_blank" rel="noopener noreferrer">&lt;aside&gt;</b></a>Section whose 
+	content is not necessarily directly related to the main content that surrounds 
+	it, but can provide additional information.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figure-element" 
+    target="_blank" rel="noopener noreferrer">&lt;figure&gt;</b></a> and <b><a href="https://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element" 
+	target="_blank" rel="noopener noreferrer">&lt;figcaption&gt;</b></a>Used to 
+	encapsulate a figure as a single item, and contains a caption for the figure, 
+	respectively.</li>
+  <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-aside-element" 
+    target="_blank" rel="noopener noreferrer">&lt;main&gt;</b></a>The main element 
+	represents the main content of the body of a document or application. The main 
+	content area consists of content that is directly related to or expands upon the 
+	central topic of a document or central functionality of an application. <b>There 
+	can be only one &lt;main&gt; element in a document.</b></li>
 </ul>
 <p>
-And there is no &lt;content&gt; element even though the &lt;div class="content"&gt; was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is "default content". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between &lt;article&gt; and &lt;article&gt;.
+And there is no &lt;content&gt; element even though the &lt;div class="content"&gt; was very popular. Instead, the HTML5 group decided that anything not embedded in one of the elements from the above table is "default content". If the content is of a type that corresponds to one of the elements from the table, i.e. if the content is an article, it should be embedded between &lt;article&gt; and &lt;article&gt;.</p>
 
-Read also at the end of this section about the new &lt;main&gt; element .  This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank">part of the HTML5 recommendation</a> and  an integral part of the HTML document structure.
-</p>
+<p>Read also at the end of this section about the new &lt;main&gt; element .  This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank" rel="noopener noreferrer">part of the HTML5 recommendation</a> and  an integral part of the HTML document structure.</p>
+
 <h4>External resources:</h4>
+
 <ul>
-  <li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/" target="_blank">Structural Semantics: The Importance Of HTML5 Sectioning Elements</a></li>
-  <li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank">New Structural Elements in HTML5</a></li>
+  <li>A Smashing Magazine article: <a 
+    href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/" 
+	target="_blank" rel="noopener noreferrer">Structural Semantics: The Importance of 
+	HTML5 Sectioning Elements</a></li>
+  <li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/"
+    target="_blank" rel="noopener noreferrer">New Structural Elements in HTML5</a></li>
 </ul>
 
 <h3 id="ch1-3-3">1.3.3 Mixing All Elements Together: A Blog Example</h3>
@@ -2119,7 +2129,10 @@ After the long &lt;section&gt; element that contains all the blog articles dis
 
 </details>
 
-<p>We are not going to show the complete CSS here as it uses some tricks to display the list as a "real tag cloud" that uses JavaScript for handling events, etc. Those who are curious can look at <a href="https://jsbin.com/bucokav/edit?html,output" target="_blank">the code of the online example</a>.</p>
+<p>We are not going to show the complete CSS here as it uses some tricks to display the 
+list as a "real tag cloud" that uses JavaScript for handling events, etc. Those who are 
+curious can look at <a href="https://jsbin.com/bucokav/edit?html,output" target="_blank" 
+rel="noopener noreferrer">the code of the online example</a>.</p>
 
 <h4>Here is the CSS for the &lt;aside&gt; element:</h4>
 
@@ -2148,10 +2161,11 @@ aside .tag-cloud {
 
 <p>We used a float:right CSS rule to put the tag cloud on the right... In a following section we will provide several examples that explain how to make a nice layout with the new structural elements, using simple CSS rules.
 </p>
+
 <h4>Here is the result:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 19. image of the tag cloud defined as an aside element (40) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 19. image of the tag cloud defined as an aside element (40) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image019.webp?raw=true"
    alt="The aside tag cloud on the right."
@@ -2160,9 +2174,9 @@ aside .tag-cloud {
 <br/>
 
 <h4>Add a &lt;footer&gt; at the end of the blog</h4>
-<!------------------------------------------------------------------------------------------------>
-<!---------------- 20. image of the tag cloud defined as an aside element (40) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 20. image of the tag cloud defined as an aside element (40) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image020.webp?raw=true"
    alt="Image of the blog footer."
@@ -2207,9 +2221,9 @@ footer {
 
 <h4><b>And here is the result at the bottom of the page:</b></h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------- 22. the resulting footer at the bottom of the page (41) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 22. the resulting footer at the bottom of the page (41) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image022.webp?raw=true"
    alt="Image of the tag cloud defined as an aside element."
@@ -2221,9 +2235,9 @@ footer {
 
 <h4>Can an &lt;article&gt; contain a &lt;section&gt;?</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 23. pictures of eisher hands (41) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23. pictures of eisher hands (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image023.webp?raw=true"
    alt="Picture of 'eisher' hands."
@@ -2306,18 +2320,22 @@ Also note that we used in that example a <footer> element in the blog post.</
 <p>The new elements have been primarily designed to better structure the code of HTML pages such as those generated by blog or CMS software, however do not forget that they add new semantics and will be taken into account by:</p>
 
 <ul>
-  <li>Browsers natively or browsers' extensions, i.e. for automatically generating a table of contents, an outline view of the document, for applying default CSS rules to these elements, etc. See for example the <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" target="_blank">table-of-contents-crx extension</a> (Chrome extension). More on that in the next section of the course.</li>
-  <li>Text to speech: <a href="https://www.w3.org/WAI/perspective-videos/speech/" target="_blank"></a></li>
+  <li>Browsers natively or browsers' extensions, i.e. for automatically generating a 
+    table of contents, an outline view of the document, for applying default CSS rules 
+    to these elements, etc. See for example the <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f"  target="_blank" rel="noopener noreferrer">table-of-contents-crx extension</a> (Chrome extension). More on that in the next section of the course.</li>
+  <li>Text to speech: <a href="https://www.w3.org/WAI/perspective-videos/speech/" 
+    target="_blank" rel="noopener noreferrer"></a></li>
   <li>Web crawlers, etc.</li>
 </ul>
 
 <p>You can use &lt;div&gt; elements in all cases where the proposed structural elements do not fit your needs: for defining some content that should be styled, for example.
 
-This chart from the <a href="https://html5doctor.com/" target="_blank">HTML5 Doctor Web site</a> may help you decide whether or not to use a &lt;div&gt;:</p>
+This chart from the <a href="https://html5doctor.com/" target="_blank" rel="noopener 
+noreferrer">HTML5 Doctor Web site</a> may help you decide whether or not to use a &lt;div&gt;:</p>
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 24. chart from html5 doctor web site (43) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 24. chart from html5 doctor web site (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image024.webp?raw=true"
    alt="Flow chart about using header, H1, etc."
@@ -2347,9 +2365,9 @@ Since the very beginning, HTML has had heading elements: &lt;h1&gt;...&lt;h6&gt
 <h6>This is a H6 heading</h6>
 
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define an outline of the document. To illustrate this, we have used a browser extension. Here is the result for the previous example:
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 25. headings 1 thru 6 (44) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 25. headings 1 thru 6 (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image025.webp?raw=true"
    alt="Outliner in action from the previous example."
@@ -2424,9 +2442,9 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 
 <h4>The corresponding outline is:</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 26. outline of previous example (45) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 26. outline of previous example (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image026.webp?raw=true"
    alt="Outline of previous example."
@@ -2486,9 +2504,9 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 <b>UPDATE:</b> For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f">table-of-contents-crx</a> for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search">Outline sidebar</a> for Firefox.</p>
 
 <h4>The outline of the last example looks like this:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 27. outline of the last example (46) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 27. outline of the last example (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image027.webp?raw=true"
    alt="Outline of last example."
@@ -2540,9 +2558,9 @@ You can use heading elements &lt;h1&gt;...&lt;h6&gt; in a &lt;header&gt; but
 
 <p>Here is the resulting table of contents, notice the two subsections that appear, one for the H1, one for the H2:</p>
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 28. example structural elements (47) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 28. example structural elements (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image028.webp?raw=true"
    alt="Example structural elements."
@@ -2616,9 +2634,9 @@ If you do not want the subtitles to be included in the table of contents, just�
 
 <h5>Both of the examples above are semantically identical and produce the same outline:</h5>
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 29. outline of previous example (48) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 29. outline of previous example (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image029.webp?raw=true"
    alt="Outline of the previous example."
@@ -2674,9 +2692,9 @@ They are also useful for checking the presence of headings in each sectioning c
 
 <h3 id="ch1-3-8">1.3.8 The &lt;main&gt; Element</h3>
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 31. the main element (49) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 31. the main element (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image031.webp?raw=true"
    alt="Main element funny."
@@ -2798,6 +2816,7 @@ This element is subject to some constraints:</p>
 We recommend this article written by Steve Faulkner: "<a href="https://www.paciellogroup.com/blog/2015/09/easy-content-organisation-with-html5/" target="_blank">Easy content organisation with HTML5</a>" (24 September 2015). Steve explains in details how to organize an HTML document into "regions" based on the semantic markup elements we have seen so far during Module 1 of this course.</p>
 
 <h4>External resources:</h4>
+
 <ul>
   <li>This <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank">document</a> has been written by the W3C HTML5 Working Group, which details the different use-cases for this element.</li>
   <li><a href="https://www.w3.org/html/wg/wiki/User:Sfaulkne/main-usecases" target="_blank">Rationale and use cases for standardizing a 'main content' HTML feature</a>.</li>
@@ -2805,8 +2824,9 @@ We recommend this article written by Steve Faulkner: "<a href="https://www.pacie
 </ul>
 
 <h3 id="ch1-3-9">1.3.9 The Blog Example, Applying Best Practices</h3>
-<p>
-Let's go back to our blog example and see what can be improved:</p>
+
+<p>Let's go back to our blog example and see what can be improved:</p>
+
 <ul>
   <li>Do we have a heading after each sectioning element?</li>
   <li>Did we use sectioning elements or implicit sections?</li>
@@ -2816,9 +2836,9 @@ Let's go back to our blog example and see what can be improved:</p>
 
 <a href="https://jsbin.com/heboke/edit?html,output" target="_blank">The blog example is online at JsBin</a>:  let's see below what the Google Chrome HTML5 Outliner extension showed.
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------- 32. image of the blog toc, show an untitled nav entry (52) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 32. image of the blog toc, show an untitled nav entry (52) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image032.webp?raw=true"
    alt="Image of the Blog Table of Contents, that show an untitled nav entry"
@@ -2870,9 +2890,9 @@ Beware that this technique will require you to use some CSS styling, and may con
 
 <h4>Here is the fixed result:</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 33. good outline without the untitled nav (53) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 33. good outline without the untitled nav (53) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image033.webp?raw=true"
    alt="Good outline without the untitled nav."
@@ -2940,9 +2960,9 @@ While this is just a warning, we do prefer to use H1s only as top level elements
   <li><a href="https://jsbin.com/heboke/edit?html,output" target="_blank">Check it online with this JsBin</a>.</li>
 </ul>
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 34. blog with embedded table of contents (55) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 34. blog with embedded table of contents (55) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image034.webp?raw=true"
    alt="Blog with embedded table of contents."
@@ -2989,9 +3009,9 @@ In order to fill the whole horizontal space, we prefer here to "force the width
 
 You can look at the complete CSS code in the interactive example below (click on the CSS or HTML text in the menu bar below, or click "edit on codepen" to change the code and see the results):</p>
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------- 35. header with section float left and aside float right (56) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ 35. header with section float left and aside float right (56) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image035.webp?raw=true"
    alt="Header with section float left and aside float right."
@@ -3001,9 +3021,9 @@ You can look at the complete CSS code in the interactive example below (click on
 
 <a href="https://jsbin.com/dufapo/edit?html,css,output" target="_blank">Also available online at JSBin</a>.
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------- 36. michel buffa home page - 3 sections centered (56) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 36. michel buffa home page - 3 sections centered (56) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image036.webp?raw=true"
    width="85%"
@@ -3048,9 +3068,9 @@ You can look at the complete CSS code in the interactive example below (click on
 
 <h4>Look at the CSS code in the example below:</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 37. header and three float sections (57) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 37. header and three float sections (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image037.webp?raw=true"
    alt=""
@@ -3063,9 +3083,9 @@ You can look at the complete CSS code in the interactive example below (click on
 <p>This example uses the CSS flex property to achieve a result similar to the one shown in Example 2.
 There are many articles on Flexbox and we recommend those from Rachel Andrew on Smashing Magazine: "<a href="https://www.smashingmagazine.com/2018/10/flexbox-use-cases/">Use cases for Flexbox</a>", "<a href="https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/">Flexbox: how big is that flexible box</a>", etc.</p>
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 38. same example using the css flex property (57) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 38. same example using the css flex property (57) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image038.webp?raw=true"
    alt="Same example using the CSS Flex property."
@@ -3077,9 +3097,9 @@ There are many articles on Flexbox and we recommend those from Rachel Andrew on 
 
 <p>This example also uses all the structuring elements we saw: main, article, section, etc. It uses only the simplest parts of the FlexBox CSS module, so it should be easy to understand, even for CSS beginners:</p>
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 39. another example using the flex property (58) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 39. another example using the flex property (58) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image039.webp?raw=true"
    alt=""
@@ -3101,9 +3121,9 @@ There are many articles on Flexbox and we recommend those from Rachel Andrew on 
 
 In the screenshot below, taken from the W3C specification page, the text next to the horizontal arrow is a &lt;summary&gt; element, and the text displayed when we click on the summary part, is the &lt;details&gt; element. This is a sort of "accordion" with foldable content.</p>
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------- 40. example of summary details elements from the w3c specs (59) ----------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 40. example of summary details elements from the w3c specs (59) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image040.webp?raw=true"
    alt="Example of summary details elements from the W3C specification."
@@ -3115,25 +3135,25 @@ In the screenshot below, taken from the W3C specification page, the text next 
 
 Here is an example of what can be done using these elements: see the <a href="https://jsbin.com/yociyel/1/edit?html,css,js,output" target="_blank">online version on JSBin</a>:
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 41. example of folded summary details (59) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 41. example of folded summary details (59) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image040.webp?raw=true"
-   alt="Example of folded summary details."
-   width="35%">
+  alt="Example of folded summary details."
+  width="35%">
 &nbsp;
 <br/>
 
 <p>And here is what is displayed after clicking on the small arrow-shaped icon to the left of the summary:</p>
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 42. Example of summary details unfolded (60) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 42. Example of summary details unfolded (60) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image042.webp?raw=true"
-   alt="Example of summary details unfolded."
-   width="35%">
+  alt="Example of summary details unfolded."
+  width="35%">
 &nbsp;
 <br/>
 
@@ -3165,9 +3185,9 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 
 <h5>Step 1: all folded:</h5>
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------------- 43. all folded (60) -------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43. all folded (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image043.webp?raw=true"
    alt="Other example, unfolded."
@@ -3177,9 +3197,9 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 
 <h5>Step 2: click on top level summary icon, the first "hidden" part appears...</h5>
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 44. click top level summary icon (60) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 44. click top level summary icon (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image044.webp?raw=true"
    alt="The unfolded content contains in turn a summary details folded."
@@ -3189,9 +3209,9 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 
 <h5>Step3: click on embedded summary icon inside the part that has been previously unfolded</h5>
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 45. click on embedded summary icon (61) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 45. click on embedded summary icon (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image045.webp?raw=true"
    alt="We unfolded the summary details inside the previous summary details. Recursive accordeons!"
@@ -3230,9 +3250,9 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 
 <h5>Example1 (see <a href="https://jsbin.com/tomehim/1/edit?html,css,output" target="_blank">online example</a>):</h5>
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 46. pseudo classes for styling summary icons (61) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 46. pseudo classes for styling summary icons (61) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image046.webp?raw=true"
    alt="Styling the open/close icon."
@@ -3251,9 +3271,9 @@ summary::-webkit-details-marker {
 }
 ```
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 47. unfold and style (62) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 47. unfold and style (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image047.webp?raw=true"
    alt="Styled summary details icon, unfolded state."
@@ -21311,7 +21331,11 @@ watchId=navigator.geolocation.watchPosition(onSuccess, onError,
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-5">6.4.5 Geolocation and maps</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This section presents an example of how to get an interactive map, using <a href="https://leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMap</a>, and gives links to more resources. Did you know that you can even get an estimation of a physical address from the longitude and latitude, using online Web services?
+<p>This section presents an example of how to get an interactive map, using 
+<a href="https://leafletjs.com/reference-1.6.0.html" target="_blank" 
+rel="noopener noreferrer">the Leaflet API for OpenStreetMap</a>, and gives 
+links to more resources. Did you know that you can even get an estimation 
+of a physical address from the longitude and latitude, using online Web services?
 
 How to get a map centered on your longitude and latitude.
 </p>
@@ -21324,7 +21348,10 @@ How to get a map centered on your longitude and latitude.
   alt="Example/Test OpenStreetMap." />
 </p>
 
-<p>This example is just given "as is", as there are so many possibilities for rendering a map with <a href="/leafletjs.com/reference-1.6.0.html">the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a basic example might be useful.</p>
+<p>This example is just given "as is", as there are so many possibilities for 
+rendering a map with <a href="/leafletjs.com/reference-1.6.0.html" target="_blank" 
+rel="noopener noreferrer">the Leaflet API for OpenStreetMaps</a>https:/. However, 
+we think having such a basic example might be useful.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 329. openstreetmap test (393) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21494,17 +21521,31 @@ display: inline-block;
 </details>
 
 <ul>
-  <li><i>Line 6</i> uses the <a href="https://www.w3.org/TR/geolocation-API/">Geolocation API</a> to get the current position, in case of success it calls the success function, passing the location as parameter,</li>
-  <li><i>Lines 12 and 13></i> show how to get the longitude and latitude properties from the location,</li>
-  <li>The rest is a basic use of the Leaflet API. Notice at <i>line 15</i> that 'map' is the id of the &lt;div&gt; from the HTML part of the code.</li>
+  <li><i>Line 6</i> uses the <a href="https://www.w3.org/TR/geolocation-API/" 
+    target="_blank" rel="noopener noreferrer">Geolocation API</a> to get the 
+	current position, in case of success it calls the success function, passing 
+	the location as parameter,</li>
+  <li><i>Lines 12 and 13></i> show how to get the longitude and latitude properties 
+    from the location,</li>
+  <li>The rest is a basic use of the Leaflet API. Notice at <i>line 15</i> that 
+    'map' is the id of the &lt;div&gt; from the HTML part of the code.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-4-6">6.4.6 Reverse geocoding</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
-Different Web services can be used to get an address from longitude and latitude. Most are free of charge, but they will ask you to register an API key and enter your credit card number. If you send too many requests, you will be charged.  Such a service is the <a href="https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse">Google Reverse Geocoding JavaScript API</a>. For those of you who are really interested to know how this API works, please read the Google documentation and tutorials.
+Different Web services can be used to get an address from longitude and latitude. 
+Most are free of charge, but they will ask you to register an API key and enter your 
+credit card number. If you send too many requests, you will be charged.  Such a 
+service is the <a href="https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse" target="_blank" rel="noopener noreferrer">Google Reverse Geocoding JavaScript 
+API</a>. For those of you who are really interested to know how this API works, 
+please read the Google documentation and tutorials.
 
-There is also an interesting Leaflet plugin (an extension to Leaflet) based on the <a href="https://www.gisgraphy.com/">Gisgraphy</a> (free open source framework) service, that comes with a <a href="https://services.gisgraphy.com/static/leaflet/index.html">nice demo of reverse geocoding</a>.
+There is also an interesting Leaflet plugin (an extension to Leaflet) based on 
+the <a href="https://www.gisgraphy.com/" target="_blank" rel="noopener 
+noreferrer">Gisgraphy</a> (free open source framework) service, that comes with 
+a <a href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" 
+rel="noopener noreferrer">nice demo of reverse geocoding</a>.
 
 Let's see some examples of use.
 
@@ -21625,7 +21666,10 @@ Gisgraphy (free service) reverse geocoding example (screenshot only, click on it
 
 <h4><b>Example #2:</b> reverse geocoding + OpenStreetMap</h4>
 
-<p><b>Important note:</b> these examples below rely on an external <a href="https://github.com/perliedman/leaflet-control-geocoder">GitHub resource</a>. No related questions are asked in this module's exercises or final exam.
+<p><b>Important note:</b> these examples below rely on an external 
+<a href="https://github.com/perliedman/leaflet-control-geocoder" 
+target="_blank" rel="noopener noreferrer">GitHub resource</a>. No related 
+questions are asked in this module's exercises or final exam.
 
 Please, pan and zoom on the map and click. The longitude and latitude are computed from your click and a free reverse geocoding service is used to convert to a physical address.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21823,8 +21867,9 @@ pre-fill the address of a registration form, depending on the current
 location of the person who is registering.</p>
 
 <p>Click on the Codepen logo (on the top right) so to run the 
-<a href="https://codepen.io/w3devcampus/pen/MWKEJqM">online example</a> 
-(for security reasons the embedded version cannot run in this page):</p>
+<a href="https://codepen.io/w3devcampus/pen/MWKEJqM" target="_blank" rel="noopener 
+noreferrer">online example</a> (for security reasons the embedded version cannot 
+run in this page):</p>
 
 <h4>HTML</h4>
 
