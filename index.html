@@ -19,7 +19,7 @@
 
   <title>W3Cx-3of5-HTML5.1x</title>
   <link rel="canonical" href="https://w3cx-3of5.bauska.org">
-  <link rel="stylesheet" href="./css/more-styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
 </head>
 
@@ -3977,14 +3977,14 @@ properties width and height of the video element, to resize the video.</p>
 <h4>And now the JavaScript code:</h4>
 
 <pre>1. var video;
-2. function init() {
-3.   // function called when the page is loaded
-4.   video = document.querySelector(&quot;#myVideo&quot;);
-5.   // For initial value
-6.   video.width = window.innerWidth;
-7.   video.height = window.innerHeight;
-8.   // For dealing with window resize
-9.   window.onresize = function() {
+2.  function init() {
+3.    // function called when the page is loaded
+4.    video = document.querySelector(&quot;#myVideo&quot;);
+5.    // For initial value
+6.    video.width = window.innerWidth;
+7.    video.height = window.innerHeight;
+8.    // For dealing with window resize
+9.    window.onresize = function() {
 10.     video.width = window.innerWidth;
 11.     video.height = window.innerHeight;
 12.   };
@@ -20704,7 +20704,7 @@ a map with <a href="/leafletjs.com/reference-1.6.0.html"
     target="_blank" rel="noopener noreferrer">Geolocation API</a> to get the 
 	current position, in case of success it calls the success function, passing 
 	the location as parameter,</li>
-  <li><i>Lines 12 and 13&gt;</i> show how to get the longitude and latitude properties 
+  <li><i>Lines 12 and 13</i> show how to get the longitude and latitude properties 
     from the location,</li>
   <li>The rest is a basic use of the Leaflet API. Notice at <i>line 15</i> that ‘map’ 
     is the id of the &lt;div&gt; from the HTML part of the code.</li>
@@ -21161,7 +21161,7 @@ good understanding of the material.</p>
 </ul>
 
 <h5>. . .The end.<br>
-<br>last updated 08-14-23 Mon 8:03pm</h5>
+<br>last updated 09-17-23 Sun 10:27pm</h5>
   </body>
 </html>
 
