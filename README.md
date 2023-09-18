@@ -21611,33 +21611,33 @@ function showPosition(position) {
     showOnGoogleMap(new google.maps.LatLng(position.coords.latitude,       
                                            position.coords.longitude));
  }
- function showOnGoogleMap(latlng) {
-   // Ask google geocoder for an address once we get a longitude and
-   // a latitude. In fact, the reverse geocoder sends back an array of "guesses"
-   // i.e. not just one address object, but several. Each entry in this array
-   // has several properties such as street, city, etc. We use the "formatted_address"
-   // one here, but it might be interesting to get the detailed properties in other
-   // applications like a form with street, city, zip code etc.
-   geocoder.geocode({'latLng': latlng},reverseGeocoderSuccess);
-   function reverseGeocoderSuccess(results, status) {
-     if (status == google.maps.GeocoderStatus.OK) {
-        if (results[1]) {
-           map.setZoom(11);
-           marker = new google.maps.Marker({
-                                position: latlng,
-                                map: map
-                        });
-           infowindow.setContent(results[1].formatted_address);
-           infowindow.open(map, marker);
-           // Display address as text in the page
-           myAddress.innerHTML="Adress: " + results[0].formatted_address; 
-        } else {
-           alert('No surface address found');
-        }
-      } else {
-         alert('Geocoder failed due to: ' + status);
-      }
-    } // end of reverseGeocoderSuccess
+function showOnGoogleMap(latlng) {
+  // Ask google geocoder for an address once we get a longitude and
+  // a latitude. In fact, the reverse geocoder sends back an array of "guesses"
+  // i.e. not just one address object, but several. Each entry in this array
+  // has several properties such as street, city, etc. We use the "formatted_address"
+  // one here, but it might be interesting to get the detailed properties in other
+  // applications like a form with street, city, zip code etc.
+  geocoder.geocode({'latLng': latlng},reverseGeocoderSuccess);
+  function reverseGeocoderSuccess(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      if (results[1]) {
+        map.setZoom(11);
+        marker = new google.maps.Marker({
+          position: latlng,
+          map: map
+        });
+        infowindow.setContent(results[1].formatted_address);
+          infowindow.open(map, marker);
+          // Display address as text in the page
+          myAddress.innerHTML="Adress: " + results[0].formatted_address; 
+      } else {
+        alert('No surface address found');
+      }
+    } else {
+      alert('Geocoder failed due to: ' + status);
+    }
+  } // end of reverseGeocoderSuccess
 } // end of showOnGoogleMap
 </script>
 </head>
@@ -21647,7 +21647,9 @@ function showPosition(position) {
 <p id="address"></p>
 <button onclick="getLocation()">Where am I ?</button>
 <div id="map_canvas" style="width: 500px; height: 300px"></div>
+
 </body>
+
 </html>
 ```
 
@@ -21973,13 +21975,13 @@ in this discussion forum. These projects are optional, meaning that they
 won't be graded. However, it is important to complete them to ensure good 
 understanding of the material.
 <ul>
-<li>Project 1 (easy): Add a map showing your location to one of your Web 
-pages. Start with a simple, static map, then try with an interactive map. 
-Reuse the examples from the course.</li>
-<li>Project 2 (a bit harder): The examples provided in the course used 
-OpenStreetMap, but why don't you try to do the same with GoogleMaps? 
-Some services are free of charge, but will ask you to get an API key (see 
-this YouTube tutorial about how to get such a key).</li>
+  <li>Project 1 (easy): Add a map showing your location to one of your Web 
+    pages. Start with a simple, static map, then try with an interactive map. 
+    Reuse the examples from the course.</li>
+  <li>Project 2 (a bit harder): The examples provided in the course used 
+    OpenStreetMap, but why don't you try to do the same with GoogleMaps? 
+    Some services are free of charge, but will ask you to get an API key (see 
+    this YouTube tutorial about how to get such a key).</li>
 </ul>
 
 . . .The end.
