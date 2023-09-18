@@ -8,8 +8,11 @@
     border-color: #778899;  /* dark grayish blue */
     border-style: solid; }
 
-  ol,ul li { 
+  .responsive {
+    width: 100%;
+    height: auto; }
 
+  ol,ul li { 
     line-height: 130%;
   }
 
