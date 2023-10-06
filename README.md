@@ -7772,8 +7772,8 @@ Produces this result:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image128.webp?raw=true"
-   width="25%"
-   alt="Filled rectangle with pink color." />
+  width="25%"
+  alt="Filled rectangle with pink color." />
 </p>
 <!-- ./images/image128.webp){width="2.59375in" height="2.5833333333333335in"} -->
 
@@ -12368,8 +12368,8 @@ Like in the first example we will draw a filled rectangle that is the same sizeÂ
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image172.webp?raw=true"
-   width="65%"
-   alt="Example 4 draw filled rectangles." />
+  width="65%"
+  alt="Example 4 draw filled rectangles." />
 &nbsp;
 <br/>
 
@@ -12443,8 +12443,8 @@ And if we draw the same rectangle with the canvas size, here is the result:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image173.webp?raw=true"
-   width="65%"
-   alt="Example 5 draw same rectangle with the canvas size." />
+  width="65%"
+  alt="Example 5 draw same rectangle with the canvas size." />
 &nbsp;
 <br/>
 
@@ -12519,8 +12519,8 @@ the rectangle coordinates. Try this:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image174.webp?raw=true"
-   width="65%"
-   alt="Example 6 draw shapes that share gradient." />
+  width="65%"
+  alt="Example 6 draw shapes that share gradient." />
 &nbsp;
 <br/>
 
@@ -12630,12 +12630,12 @@ Radial gradients are for creating gradients that propagate/interpolate colors al
 
 Here is an example of a radial gradient that interpolates the color of the rainbow:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------- 175. example radial gradient interpolates color of rainbow (234) ---------------->
+<!--~~~~~~~~~~~~ 175. example radial gradient interpolates color of rainbow (234) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image175.webp?raw=true"
-   width="65%"
-   alt="Example radial gradient which interpolates the color of the rainbow."
+  width="65%"
+  alt="Example radial gradient which interpolates the color of the rainbow."
 &nbsp;
 <br/>
 
@@ -12710,7 +12710,7 @@ The method from the context objectÂ createRadialGradient(cx1, cy1, radius1, cx2,
 
 In the above example, the gradients starts at a circle located at (150, 100), with a radius of 30, and propagates to a circle with the same center as the first (150, 100), but with a bigger radius of 100, as shown below:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------- 176. above example with color stops (235) ---------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 176. above example with color stops (235) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image176.webp?raw=true"
@@ -13079,7 +13079,7 @@ Your browser does not support the canvas tag. </canvas>
 
 Below are 4 rectangles drawn with 4 different patterns.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------ 180. four rectangles drawn with different patterns (241) -------------------->
+<!--~~~~~~~~~~~~~~~~ 180. four rectangles drawn with different patterns (241) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image180.webp?raw=true"
@@ -13100,7 +13100,7 @@ When all images have been loaded, we call a callback function that has been pass
 
 The complete example code that produces the result shown at the beginning of this page is the following:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 181. multiple image loader (241) ------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 181. multiple image loader (241) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image181.webp?raw=true"
