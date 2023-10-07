@@ -152,7 +152,7 @@ We are committed to teach you how to code Web pages, and how to do it the correc
 way. We encourage you to create Web pages and apps and share them in the 
 discussion forums. Have fun!</p>
 
-<h3 id="cha-4">Online Code Editors:</h3>
+<h3 name="cha-4">Online Code Editors:</h3>
 
 <a href="https://jsbin.com" target="_blank" rel="noopener noreferrer">JS Bin</a>
 
@@ -305,7 +305,7 @@ The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validato
 
 <a href="https://validator.w3.org/unicorn/" target="_blank">Unicorn</a> is W3C's unified validator, which helps people improve the quality of their Web pages by performing a variety of checks. Unicorn gathers the results of the popular HTML and CSS validators, as well as other useful services, such as Internationalization, RSS/Atom feeds and http headers.
 
-<h3 id="cha-3">Internationalization Checker</h3>
+<h3 name="cha-3">Internationalization Checker</h3>
 <p>
 The <a href="https://validator.w3.org/i18n-checker/" target="_blank" rel="noopener noreferrer">W3C Internationalization Checker</a> provides information about various internationalization-related aspects of your page, including the HTTP headers that affect it. It will also report a number of issues and offer advice about how to resolve them.
 </p>
@@ -369,7 +369,7 @@ Another approach is to go and bring feedback on ideas for future technologies: t
 
 Happy Web building!
 </p>
-<h3 id="cha-1">What is W3C?</h3>
+<h3 name="cha-1">What is W3C?</h3>
 <p>
 As steward of global Web standards, W3C's mission is to safeguard the openness, accessibility, and freedom of the World Wide Web from a technical perspective.
 
@@ -502,7 +502,7 @@ Without it, we have no way of accessing the thousands of websites out
 there. For most online needs, however, the web is the easiest to use. 
 Each serves an important purpose.</p>
 
-<h3 id="=2">Why Accessibility is Important</h3>
+<h3 name="=2">Why Accessibility is Important</h3>
 
 <i>The power of the Web is in its universality.</i>
 <i>Access by everyone regardless of disability is an essential aspect.</i>
@@ -1253,7 +1253,7 @@ site&lt;/a&gt; may help you decide whether or not to use a &lt;div&gt;:</p>
   alt="HTML5 Doctor Web site.  Whether or not to use a 'dev'." />
 </p>
 
-<h3 id="ch1-3-5">1.3.5 Headings and Structural Elements</h3>
+<h3 name="ch1-3-5">1.3.5 Headings and Structural Elements</h3>
 <p>
 We will now present some best practices for starting to use &lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;, in particular concerning the use of headings (h1, h2, h3, h4, h5 and h6).
 
@@ -1585,7 +1585,7 @@ HTML5, the cornerstone for modern Web applications.</p>
 &nbsp;
 <br/>
 
-<h3 id="ch1-3">1.3 New Structural Elements</h3>
+<h3 name="ch1-3">1.3 New Structural Elements</h3>
 
 <p>Changes have been made to particular elements in HTML5 making it simpler to use. In this section, we will look at some examples highlighting these improvements, including:</p>
 <ul>
@@ -1718,7 +1718,7 @@ If you look at the "minimal document" example, or at other examples in this cour
   <li>Attribute values only need to be quoted if they contain spaces or some non-alphanumeric characters, instead of writing <link rel="stylesheet" href="style.css">, we could have used <link rel=stylesheet href=style.css>. However, for compatibility with older browsers, it is wiser to still use quotes...</li>
 </ul>
 
-<h3 id="ch1-3-2">1.3.2 Structural Elements</h3>
+<h3 name="ch1-3-2">1.3.2 Structural Elements</h3>
 
 <h4>New structural elements</h4>
 
@@ -1822,7 +1822,7 @@ And there is no &lt;content&gt; element even though the &lt;div class="conten
     target="_blank" rel="noopener noreferrer">New Structural Elements in HTML5</a></li>
 </ul>
 
-<h3 id="ch1-3-3">1.3.3 Mixing All Elements Together: A Blog Example</h3>
+<h3 name="ch1-3-3">1.3.3 Mixing All Elements Together: A Blog Example</h3>
 
 <h4>A blog example that uses the structural elements</h4>
 
@@ -2231,7 +2231,7 @@ footer {
 &nbsp;
 <br/>
 
-<h3 id="ch1-3-4">1.3.4 More on &lt;article&gt; and &lt;section&gt;</h3>
+<h3 name="ch1-3-4">1.3.4 More on &lt;article&gt; and &lt;section&gt;</h3>
 
 <h4>Can an &lt;article&gt; contain a &lt;section&gt;?</h4>
 
@@ -2343,7 +2343,7 @@ noreferrer">HTML5 Doctor Web site</a> may help you decide whether or not to us
 &nbsp;
 <br/>
 
-<h3 id="ch1-3-5">1.3.5 Headings and Structural Elements</h3>
+<h3 name="ch1-3-5">1.3.5 Headings and Structural Elements</h3>
 
 <p>We will now present some best practices for starting to use &lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;, in particular concerning the use of headings (h1, h2, h3, h4, h5 and h6).</p>
 
@@ -2458,7 +2458,7 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
   <li>The default size for the H1 and H2 is the same (!). Indeed, when we start a &lt;h1&gt; inside a &lt;section&gt; the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
 </ol>
 
-<h3 id="ch1-3-6">1.3.6 Best Practices When Using Sectioning Elements</h3>
+<h3 name="ch1-3-6">1.3.6 Best Practices When Using Sectioning Elements</h3>
 
 <h4>Best practice #1: always add a heading to explicit sectioning content</h4>
 
@@ -2644,7 +2644,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 &nbsp;
 <br/>
 
-<h3 id="ch1-3-7">1.3.7 Embedding a Table of Contents</h3>
+<h3 name="ch1-3-7">1.3.7 Embedding a Table of Contents</h3>
 
 <p>Here we propose a small piece of JavaScript code you can use in your documents to display an embedded table of contents. 
 
@@ -2690,7 +2690,7 @@ Indeed, tools that generate the table of contents are a good way to debug the 
 
 They are also useful for checking the presence of headings in each sectioning content. If some headings are missing, the table of contents will display some "untitled entries". Remember that having a heading after each sectioning content is a good practice in terms of accessibility.</p>
 
-<h3 id="ch1-3-8">1.3.8 The &lt;main&gt; Element</h3>
+<h3 name="ch1-3-8">1.3.8 The &lt;main&gt; Element</h3>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 31. the main element (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2823,7 +2823,7 @@ We recommend this article written by Steve Faulkner: "<a href="https://www.pacie
   <li>On MDN's Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank">main element.</a></li>
 </ul>
 
-<h3 id="ch1-3-9">1.3.9 The Blog Example, Applying Best Practices</h3>
+<h3 name="ch1-3-9">1.3.9 The Blog Example, Applying Best Practices</h3>
 
 <p>Let's go back to our blog example and see what can be improved:</p>
 
@@ -2970,7 +2970,7 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 &nbsp;
 <br/>
 
-<h3 id="ch1-3-10">1.3.10 Examples of Page Layouts</h3>
+<h3 name="ch1-3-10">1.3.10 Examples of Page Layouts</h3>
 <p>In this section, we show some "classic" CSS layout techniques for designing an HTML page that uses the new sectioning elements. 
 
 We embed examples from this <a href="https://learn.shayhowe.com/html-css/positioning-content/" target="_blank">very good post about "Positioning content"</a>. This is a recommended reading as it details how to use the CSS float property to layout a Web page.
@@ -3115,7 +3115,7 @@ There are many articles on Flexbox and we recommend those from Rachel Andrew on 
   <li>On MDN's Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank">float CSS property</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear" target="_blank">clear CSS property</a></li>
 </ul>
 
-<h3 id="ch1-4-1">1.4.1 The &lt;details&gt; and &lt;summary&gt; Elements</h3>
+<h3 name="ch1-4-1">1.4.1 The &lt;details&gt; and &lt;summary&gt; Elements</h3>
 
 <p>These elements have been introduced for displaying a foldable zone in an HTML document.
 
@@ -3348,7 +3348,7 @@ color: #FFFFFF
   <li>On CanIUse: <a href="https://caniuse.com/#feat=details" target="_blank">compatibility table for details and summary elements</a></li>
 </ul>
 
-<h3 id="ch1-4-2">1.4.2 The &lt;time&gt; and &lt;mark&gt; Elements</h3>
+<h3 name="ch1-4-2">1.4.2 The &lt;time&gt; and &lt;mark&gt; Elements</h3>
 
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- 49. it's about time clock (63) --------------------------------->
@@ -3548,7 +3548,7 @@ mark {
   <li>An article on Web Platform News: <a href="https://webplatform.news/issues/2019-02-28">The &lt;mark&gt; element could help make your text more scannable</a></li>
 </ul>
 
-<h3 id="ch1-4-3">1.4.3 The Download and Translate Attributes</h3>
+<h3 name="ch1-4-3">1.4.3 The Download and Translate Attributes</h3>
 
 <h4>The old way to download files using HTML and HTTP</h4>
 
@@ -3749,7 +3749,7 @@ Using the translate="no" attribute should prevent this behavior...
 <!------------------------------------------------------------------------------------------------>
 <!------------------------------- chapter 1-5-1. microdata (71) ---------------------------------->
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-1">1.5.1 Microdata</h3>
+<h3 name="ch1-5-1">1.5.1 Microdata</h3>
 
 There are several ways to provide machine-readable content embedded in a classical Web document: <a href="https://www.w3.org/TR/html-rdfa/">HTML+RDFa</a>, <a href="http://microformats.org/">microformats</a>, <a href="https://json-ld.org/">JSON-LD</a>, HTML5 microdata. In this section, we focus on microdata.
 
@@ -3842,7 +3842,7 @@ This information is not visible to humans: it is pure <i>semantic information<
   <li><a href="https://diveinto.html5doctor.com/extensibility.html">Chapter from Mark Pilgrim's book about microdata</a>, very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.</li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-2">1.5.2 Testing Tools</h3>
+<h3 name="ch1-5-2">1.5.2 Testing Tools</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <h4>Introduction</h4>
@@ -3952,7 +3952,7 @@ The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> i
 <!------------------------------------------------------------------------------------------------>
 <!-------------------- Chapter 1-5-3. adding microdata to an html page (75) ---------------------->
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
+<h3 name="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <h4>Basic steps</h4>
@@ -4162,7 +4162,7 @@ For example, the value of a property defined in an &lt;img&gt; element will be
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-4">1.5.4 Microdata Tools</h3>
+<h3 name="ch1-5-4">1.5.4 Microdata Tools</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <p>There are many tools available (most are free) that you can use for generating, visualizing and debugging microdata. We list some of them in this page, but feel free to share the tools you find / like in the forums.</p>
@@ -4189,7 +4189,7 @@ To automatically generate microdata for describing persons, restaurants, movie
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch1-5-5">1.5.5 Examples of Well Structured Documents with Microdata</h3>
+<h3 name="ch1-5-5">1.5.5 Examples of Well Structured Documents with Microdata</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Here, we propose a few links to Web pages that were created by students of previous editions of this course).
@@ -4241,11 +4241,11 @@ View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 onlin
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-1">Module 2: HTML5 Multimedia</h3>
+<h3 name="ch2-1">Module 2: HTML5 Multimedia</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-2-1">2.2.1 The &lt;video&gt; Element</h3>
+<h3 name="ch2-2-1">2.2.1 The &lt;video&gt; Element</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <p>Until 2012, it was only possible to integrate an audio or video player using the proprietary Flash technology, marketed by the company Macromedia (later acquired by Adobe). The &lt;video&gt; element of HTML5 is one of the three "Flash killers" (the others being &lt;audio&gt; for the sound and &lt;canvas&gt; for drawing and animation).
@@ -4323,7 +4323,7 @@ Usually you have an "embed" button close to the videos that prompts you with s
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-2-2">2.2.2 The &lt;audio&gt; Element</h3>
+<h3 name="ch2-2-2">2.2.2 The &lt;audio&gt; Element</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <h4>HTML5 audio is composed of several layers:</h4>
@@ -4386,7 +4386,7 @@ Notice the other similarities: between the &lt;audio&gt;...&lt;audio&gt; tags,
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-2-3">2.2.3 Attributes of &lt;video&gt; and &lt;audio&gt;</h3>
+<h3 name="ch2-2-3">2.2.3 Attributes of &lt;video&gt; and &lt;audio&gt;</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <h4>Most useful attributes of the &lt;video&gt; element</h4>
@@ -4438,7 +4438,7 @@ The attributes you can use with the &lt;audio&gt; element are a subset of tho
 As with the &lt;video&gt; element, the same best practice in regard to preload and autoplay attributes should be followed.</p>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-2-4">2.2.4 Styling Media Players with CSS</h3>
+<h3 name="ch2-2-4">2.2.4 Styling Media Players with CSS</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>
 The &lt;video&gt; and &lt;audio&gt; elements are just like other HTML elements, so CSS can be used for styling, including CSS transitions, animations, etc.
@@ -4875,7 +4875,7 @@ Setting the video to 100% width and height results in different behavior:
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-2-5">2.2.5 Control Players From JavaScript</h3>
+<h3 name="ch2-2-5">2.2.5 Control Players From JavaScript</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>
 The &lt;video&gt; and &lt;audio&gt; elements have methods, properties/attributes and events that can be manipulated with JavaScript. Using the DOM API, it's possible to manipulate an audio or video element as a JavaScript object that has:
@@ -4921,7 +4921,7 @@ Note that in order to play the video, you must click on the "vid.play()" text. T
 <b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let's see a little more of what we can do using the JavaScript API of the &lt;video&gt; element (it will be an identical approach for the &lt;audio&gt; element, since it shares the same API by a very small margin).
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-2-6">2.2.6 The JavaScript API</h3>
+<h3 name="ch2-2-6">2.2.6 The JavaScript API</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <h4>Methods, properties, and events</h4>
@@ -4975,7 +4975,7 @@ In the next pages, let's see, through a set of examples, how to use these most i
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch2-2-7">2.2.7 The &lt;video&gt; Element JavaScript API</h3>
+<h3 name="ch2-2-7">2.2.7 The &lt;video&gt; Element JavaScript API</h3>
 <!------------------------------------------------------------------------------------------------>
 <p>
 The JavaScript API is useful for implementing playlists, making custom user interfaces and many other interesting things. The "enhanced HTML5 multimedia players" lesson presented further on the course relies heavily on this API.
@@ -5154,7 +5154,7 @@ Check the online example below: use the progress cursor to go near the end of th
   <li><i>Lines 17-21</i>: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources [currentVideo % sources.length], we set the src of the video element to sources[0], then to sources[1], and, as we increment the currentVideo index each time (line 19), if it becomes greater than 1, the modulo (the "%" symbol is the modulo in JavaScript) will make it "loop" between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-2-8">2.2.8 [Advanced] Extended Examples</h3>
+<h3 name="ch2-2-8">2.2.8 [Advanced] Extended Examples</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this section, we propose five extended examples that use more JavaScript and more complex CSS 
 manipulation. They might be a little hard to understand if you are a JavaScript beginner, but don't 
@@ -5348,7 +5348,7 @@ layout based on the HTML5 structuring elements studied previously.</p>
 
 <p>Here is the online example. We recommend that you look at the source code:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-1">2.3.1 HTML5 Captioning</h3>
+<h3 name="ch2-3-1">2.3.1 HTML5 Captioning</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This section introduces the HTML5 &lt;track&gt; element, useful for adding closed captions, 
 subtitles, descriptions, and metadata to your videos. It comes with a new JavaScript API.
@@ -5475,7 +5475,7 @@ languages and captions only for English):
   <li>An article from 3playmedia: <a href="https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/">How to create a WebVTT file</a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-2">2.3.2 The WebVTT Format</h3>
+<h3 name="ch2-3-2">2.3.2 The WebVTT Format</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The "<a href="http://dev.w3.org/html5/webvtt/">WebVTT: The Web Video Text Tracks Format</a>" 
 defines files that contain text for captions and subtitles, and much more... The WebVTT files are 
@@ -5612,7 +5612,7 @@ The displayed text can span multiple lines, but blank lines are not allowed, as 
   <li>An unofficial <a href="https://quuz.org/webvtt/">Live WebbVTT format</a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-3">2.3.3 Adding Subtitles to a Video</h3>
+<h3 name="ch2-3-3">2.3.3 Adding Subtitles to a Video</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let's look at a simple example. First, you need a video on one of the formats/codecs supported by the browsers you target. A recommended codec is mp4/H264, but other formats, such as webm, may have some advantages if the browser supports them. For example, webm allows the video to start playing after a much shorter buffering time. In other words, try if possible to provide the video encoded with more than one codec.
 
@@ -5671,8 +5671,8 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image089.webp?raw=true"
-   width="60%"
-   alt="Youtube make subtitles." />
+  style="width:60%"
+  alt="Youtube make subtitles." />
 &nbsp;
 <br/>
 
@@ -5689,7 +5689,7 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-4">2.3.4 Styling Captions</h3>
+<h3 name="ch2-3-4">2.3.4 Styling Captions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section, we will look at different possibilities for styling and positioning  the text displayed as captions/subtitles while playing a video.
 
@@ -5860,8 +5860,8 @@ Here is an example that shows the voices of the different characters displayed w
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image095.webp?raw=true"
-   width="65%"
-   alt="V tag example, closed caption." />
+  style="width:65%"
+  alt="V tag example, closed caption." />
 &nbsp;
 <br/>
 
@@ -5878,7 +5878,7 @@ presented in the previous section to see how to specify the colors for the diffe
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-5">2.3.5 Chapter</h3>
+<h3 name="ch2-3-5">2.3.5 Chapter</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When you play a movie in DVD or Blu-Ray format, a menu appears on the screen: play a movie, 
 choose subtitles, etc. Usually there is also a "chapters" menu that allows you to quickly access 
@@ -5957,7 +5957,7 @@ An example of what you can achieve using chapters, using the <a href="https://w
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-6">2.3.6 Tools for Creating WebVTT Files</h3>
+<h3 name="ch2-3-6">2.3.6 Tools for Creating WebVTT Files</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Many tools are available to make and edit HTML5 video and caption/subtitles:
 <ul>
@@ -5981,7 +5981,7 @@ Many tools are available to make and edit HTML5 video and caption/subtitles:
 
 We do not claim that these are the best tools, so feel free to share your discoveries in the discussion forum!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-7">2.3.7 The &lt;track&gt; JavaScript API</h3>
+<h3 name="ch2-3-7">2.3.7 The &lt;track&gt; JavaScript API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Most "complex" HTML elements like forms, audio or video players, come with a JavaScript API that 
 allows you to control them programmatically, customize them, etc.
@@ -6046,7 +6046,7 @@ Some JavaScript code listens to the ontimeupdate event while the video is play
 <br/>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3-8">2.3.8 Enhanced HTML5 Video Players</h3>
+<h3 name="ch2-3-8">2.3.8 Enhanced HTML5 Video Players</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There are numerous "enhanced" video players; most are free and open source, some are 
 commercial. They offer lots of features, which are listed below. Not all of these 
@@ -6174,7 +6174,7 @@ LeanBack (says "free for non-commercial use", licensing is not very clear...):
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4-1">2.4.1 Webcam</h3>
+<h3 name="ch2-4-1">2.4.1 Webcam</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Introduction</h4>
 
@@ -6270,7 +6270,7 @@ all modern browsers</a>, including mobile ones. All the video conferencing appli
 you use that run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue 
 Button), and even Microsoft Teams is a web application in disguise.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4-1">2.4.1 More On getUserMedia</h3>
+<h3 name="ch2-4-1">2.4.1 More On getUserMedia</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Let's see some more examples of what we can do with the getUserMedia API: start/stop 
 the Webcam, take a screenshot from the current video stream from the Webcam, and apply 
@@ -6650,7 +6650,7 @@ We will look at this example in greater detail in the next course section (relat
 -   <a href="https://webcamtoy.com/">Webcam Toy</a>: video effects on Paul Neave's webcam (using WebGL)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4-3">2.4.3 Using the Microphone</h3>
+<h3 name="ch2-4-3">2.4.3 Using the Microphone</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Instead of using the getUserMedia API with: navigator.getUserMedia({video:true}, 
 onSuccess, onError), it is also possible to use {audio:true} for the first parameter. 
@@ -6682,7 +6682,7 @@ most of the classic effects used by guitarists (delay, reverb, distortion, choru
   alt="WebAudio Live Processing." />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4-4">2.4.4 Webcam Resolution</h3>
+<h3 name="ch2-4-4">2.4.4 Webcam Resolution</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 It is possible to set "hints" for the preferred cam/resolution during video capture. This is done by using a ["constraint" object ](https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4)that is passed as a parameter to the getUserMedia(...) method. It's just the same object we passed in the basic example: navigator.getUserMedia({video:true}, success, error) except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.
@@ -6936,7 +6936,7 @@ Here are some other constraints you can set. In particular, look at the ones for
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4-5">2.4.5 The MediaRecorder API</h3>
+<h3 name="ch2-4-5">2.4.5 The MediaRecorder API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This MediaRecoredr API allows to record / capture the audio or video stream. There are many sources for audio or video streams, but we will only consider here the streams coming from a WebCam or a sound input (i.e. microphone).
 
@@ -7220,9 +7220,9 @@ function play() {
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-1-1">3.1.1 Introduction to HTML5 Graphics</h3>
+<h3 name="ch3-1-1">3.1.1 Introduction to HTML5 Graphics</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-2-1">3.2.1 About JavaScript and HTML5</h3>
+<h3 name="ch3-2-1">3.2.1 About JavaScript and HTML5</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 115. javascript logo (140) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7342,7 +7342,7 @@ Some of you may not be used to "asynchronous programming", "callbacks" etc. We r
 to read <a href="https://en.wikipedia.org/wiki/Callback_%28computer_programming%29">this 
 article on WikiPedia</a> and <a href="https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java">this thread on StackOverflow</a>.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-2-2">3.2.2 The &lt;canvas&gt; Element</h3>
+<h3 name="ch3-2-2">3.2.2 The &lt;canvas&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 121. canvas element logo (144) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7428,7 +7428,7 @@ Performance is  good and animation is generally very smooth, since most Web bro
     -   MDN's [compatibility table of &lt;canvas&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas#Browser_compatibility)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-2-3">3.2.3 Canvas and Accessibility</h3>
+<h3 name="ch3-2-3">3.2.3 Canvas and Accessibility</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The dynamic nature of the &lt;canvas&gt; element has made it difficult to use in applications that need to be accessible to people with disabilities. To be accessible, it must meet the following principles:
@@ -7445,7 +7445,7 @@ The dynamic nature of the &lt;canvas&gt; element has made it difficult to use 
 
 -   From the W3C wiki: [Canvas Element Accessibility Issues](https://www.w3.org/html/wg/wiki/AddedElementCanvas)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-2-4">3.2.4 HTML Canvas Cheatsheet</h3>
+<h3 name="ch3-2-4">3.2.4 HTML Canvas Cheatsheet</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.org/wiki/Cheat_sheet)) below. Do not hesitate to keep your favorite one open in a separate browser ta
 
@@ -7469,7 +7469,7 @@ We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.or
    alt="Snapshot of a Canvas cheatsheet API." />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-2-5">3.2.5 Coordinate System</h3>
+<h3 name="ch3-2-5">3.2.5 Coordinate System</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The coordinate system used for drawing in canvases is similar to the one used by many 
 drawing APIs like Java2D: the (0 , 0) is in the top left corner while the X axis is 
@@ -7487,7 +7487,7 @@ going to the right and the Y axis to the bottom, as  shown in the following pic
 
 -   <b>Y</b> axis is vertical, directed downwards
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-2-6">3.2.6 Drawing Rectangles in a Canvas</h3>
+<h3 name="ch3-2-6">3.2.6 Drawing Rectangles in a Canvas</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Small errata about what I said in the above video: "So let's get the canvas using the DOM API 
 method document.getElementById() or better, use document.querySelector() that is a more 
@@ -7729,7 +7729,7 @@ The way the rectangle will be filled depends on the current value of several pro
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-2-7">3.2.7 Drawing Principles</h3>
+<h3 name="ch3-2-7">3.2.7 Drawing Principles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>More about the "context" object</h4>
 
@@ -7954,7 +7954,7 @@ If you would like to draw the filled text message in green, for example, you sho
   <li>To set the character font use the ctx.font property; the value is a font in CSS syntax, for example:  ctx.font = 'italic 20pt Calibri';</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-2-8">3.2.8 Transformations</h3>
+<h3 name="ch3-2-8">3.2.8 Transformations</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 We now introduce the basics of 2D transformations, a powerful tool that will make things easier as soon as you have to:
@@ -8724,7 +8724,7 @@ ctx.fillRect(250, 0, 100, 100);
 Aha, this is a very interesting question... the answer is in the next page!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-2-9">3.2.9 Saving and Restoring the Context</h3>
+<h3 name="ch3-2-9">3.2.9 Saving and Restoring the Context</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 There are two methods for saving and restoring the context properties: ctx.save() and ctx.restore().
@@ -8905,7 +8905,7 @@ We slightly modified the function that draws the monster:
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-3-1">3.3.1 Immediate Drawing Mode</h3>
+<h3 name="ch3-3-1">3.3.1 Immediate Drawing Mode</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In the previous sections, we learned how to draw filled or wireframe rectangles.</p>
 
@@ -8990,7 +8990,7 @@ ctx.restore();
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-3-2">3.3.2 Drawing Text</h3>
+<h3 name="ch3-3-2">3.3.2 Drawing Text</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The canvas API provides two main methods for drawing text: ctx.strokeText(message, x, y) and ctx.fillText(message, x, y).
 It also provides a set of context properties for setting the character font and style, for laying out the text, etc.</p>
@@ -9352,7 +9352,7 @@ context.fillText("right", 250, 100);
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-3-3">3.3.3 Drawing Images</h3>
+<h3 name="ch3-3-3">3.3.3 Drawing Images</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Working with images is rather simple, except that we need the images to be fully 
 loaded into memory before drawing them. Loading images is an <i>asynchronous</i> 
@@ -9664,7 +9664,7 @@ context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 
 The <a href="https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-eventgroupings-htmlevents">DOM Level 2 Events specification</a></b> says: "<i>The load event occurs when the DOM implementation finishes loading all content within a document, all frames within a FRAMESET, or an OBJECT element.</i>"
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-3-4">3.3.4 Drawing Images from a Video Stream</h3>
+<h3 name="ch3-3-4">3.3.4 Drawing Images from a Video Stream</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The drawImage(...) function can take a video element as its first parameter. The image that 
 will be drawn is the one currently played by the video stream. This can be done at video 
@@ -9816,7 +9816,7 @@ This example shows:
 
 -   <i>Line 21</i>: We implemented a rotating video effect in the drawRotatingVideo. The use of context save/restore is primordial as this function changes the coordinate system at each call, translating and rotating it. Notice the extra translation at <i>line 31</i> that translates the coordinate system backwards with half of the size of the image that is drawn. We did this in order to make the image rotate around the center of the rectangle, instead of around the top left corner at (0, 0) by default. Try commenting out this line in the running example and you will see what we mean.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-4-1">3.4.1 Immediate Mode vs. Path Mode</h3>
+<h3 name="ch3-4-1">3.4.1 Immediate Mode vs. Path Mode</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Immediate mode</h4>
 
@@ -10031,7 +10031,7 @@ Summary of path mode principles
 
 5.  Path drawing is faster than immediate drawing (parallelization is possible).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-4-2">3.4.2 A Warning</h3>
+<h3 name="ch3-4-2">3.4.2 A Warning</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Warning</b>: you do not need to spend too much time on each part of this sub-section.
 
@@ -10043,7 +10043,7 @@ You do not need to memorize or learn by heart all the examples in the following
 
 Also, do not forget to use your favorite HTML5 canvas cheatsheet (provided before in the last section). You will find it very helpful when you start playing with the canvas.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-4-3">3.4.3 Drawing Lines</h3>
+<h3 name="ch3-4-3">3.4.3 Drawing Lines</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We have been drawing rectangles so far.
 
@@ -10261,7 +10261,7 @@ Try this:
 In this last example, we simply called the moveTo() method between each part of the path (<i>lines 5 and 10</i>). And we called stroke() (<i>line 16</i>) only once to draw the whole path.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-4">3.4.4 Drawing Lines with Different Styles</h3>
+<h3 name="ch3-4-4">3.4.4 Drawing Lines with Different Styles</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <h4>Common mistake: drawing the same path twice</h4>
@@ -10501,7 +10501,7 @@ ctx.fill();
 This time, in order to draw the two shapes differently, we defined two separate paths. The way to do this is just to call ctx.beginPath() to start a new path. In this example, the first path has been drawn in wireframe mode, then a new path has been started that is drawn in filled mode.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-5">3.4.5 Drawing Lines in Immediate Mode</h3>
+<h3 name="ch3-4-5">3.4.5 Drawing Lines in Immediate Mode</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Sometimes, it might be useful to draw just one line.
@@ -10607,7 +10607,7 @@ drawLine(10, 100, 100, 10, 'green', 10);
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-6">3.4.6 Drawing Arrows</h3>
+<h3 name="ch3-4-6">3.4.6 Drawing Arrows</h3>
 <!------------------------------------------------------------------------------------------------>
 
 In this section, we present a function that draws arrows in a canvas.
@@ -10772,7 +10772,7 @@ Screenshot from a demo available on the above Web site:
 In a later part of the course dedicated to curve drawing in a canvas, we will also show how to draw curved arrows, with very simple code (much simpler than the one used for drawing the clock's hands above).
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-7">3.4.7 Closing a Path</h3>
+<h3 name="ch3-4-7">3.4.7 Closing a Path</h3>
 <!------------------------------------------------------------------------------------------------>
 
 The ctx.closePath() method indicates that we would like a closed path: draw from the last point to the first.
@@ -10854,7 +10854,7 @@ ctx.stroke();
 Try commenting the <i>line 10</i> in the online example and see the results!
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-8">3.4.8 Drawing Circles and Arcs</h3>
+<h3 name="ch3-4-8">3.4.8 Drawing Circles and Arcs</h3>
 <!------------------------------------------------------------------------------------------------>
 
 The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is useful for drawing arcs of circles. It takes the center of the circle/arc, its radius, the starting angle of the arc (turning clockwise), the ending angle of the arc, and an optional parameter we will talk about later.
@@ -11037,7 +11037,7 @@ Notice that we called ctx.arc() only once! And drew it twice, with different s
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-9">3.4.9 Drawing Rounded Rectangles</h3>
+<h3 name="ch3-4-9">3.4.9 Drawing Rounded Rectangles</h3>
 <!------------------------------------------------------------------------------------------------>
 
 There is another method called ctx.arcTo(x1, y1, x2, y2, radius), which is a bit complex to use, but very practical for drawing rounded rectangles.
@@ -11388,7 +11388,7 @@ roundedTriangle(ctx,200,15,300,150,15,100,20,true,true);
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-4-10">3.4.10 Quadratic Curves</h3>
+<h3 name="ch3-4-10">3.4.10 Quadratic Curves</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <h4>Introduction</h4>
@@ -11526,7 +11526,7 @@ context.stroke();
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-4-11">3.4.11 Curved Arrows</h3>
+<h3 name="ch3-4-11">3.4.11 Curved Arrows</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We propose a useful function for drawing curved arrows. See this example:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11674,7 +11674,7 @@ It computes the angle of the arrow at its endpoint (<i>line 14</i>) in order to 
 Notice that once again, as we modify the context properties (color, lineWidth) in the body of the function, we save and restore the context at the beginning / end of the function.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-4-12">3.4.12 Bézier curves</h3>
+<h3 name="ch3-4-12">3.4.12 Bézier curves</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Introduction</h4>
 
@@ -11884,7 +11884,7 @@ Note how the different parts are linked together and make a "path":</p>
 This Bézier tool ("HTML5 &lt;canvas&gt; bezierCurveTo command generator") is available <a href="https://www.victoriakirst.com/beziertool/">online</a>: try it!</p>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch3-5-1">3.5.1 Canvas Context: Colors</h3>
+<h3 name="ch3-5-1">3.5.1 Canvas Context: Colors</h3>
 <!------------------------------------------------------------------------------------------------>
 
 In previous examples, we saw how to set the current color using the strokeStyle and fillStyle properties of the canvas context object.
@@ -11966,7 +11966,7 @@ Here is an example that shows how to draw different filled rectangles in blue, w
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-5-2">3.5.2 Canvas Context: Linear Gradients</h3>
+<h3 name="ch3-5-2">3.5.2 Canvas Context: Linear Gradients</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It is possible to define the stroke or the fill style as a "gradient", a set of interpolated colors, like in this example below:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12623,7 +12623,7 @@ We wrote a function setGradient(startX, startY, endX, endY) that creates a gra
 
 In the drawCheckBoard(...) function we call it just before drawing rectangles. In this way, each rectangle is drawn using its own gradient.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-5-3">3.5.3 Canvas Context: Radial Gradients</h3>
+<h3 name="ch3-5-3">3.5.3 Canvas Context: Radial Gradients</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Radial gradients are for creating gradients that propagate/interpolate colors along circles instead of propagating/interpolating along a virtual line, like linear gradients.
@@ -12805,7 +12805,7 @@ We call the "first color" the color defined for the inner circle, the "last col
 
 -   The colors between the two circles will be interpolated.
 
-<h3 id="ch3-5-4">3.5.4 Canvas Context: Patterns/Textures</h3>
+<h3 name="ch3-5-4">3.5.4 Canvas Context: Patterns/Textures</h3>
 
 <h4>Principle</h4>
 
@@ -13073,7 +13073,7 @@ Your browser does not support the canvas tag. </canvas>
 
 <p>Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just change this line in the online example and you will see live results.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-5-5">3.5.5 A Multiple Image Loader</h3>
+<h3 name="ch3-5-5">3.5.5 A Multiple Image Loader</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Draw with multiple patterns? We need to load all of them before drawing!</h4>
 
@@ -13289,7 +13289,7 @@ Your browser does not support the canvas tag.
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-5-6">3.5.6 Drawing Shadows</h3>
+<h3 name="ch3-5-6">3.5.6 Drawing Shadows</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Context properties to draw with shadows</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -13644,7 +13644,7 @@ then draw the outlined circle by calling ctx.stroke().
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-5-7">3.5.7 Styling Lines</h3>
+<h3 name="ch3-5-7">3.5.7 Styling Lines</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Several context properties can be used to set the thickness of the shape outlines, the way line end caps are drawn, etc.
 
@@ -13875,11 +13875,11 @@ the corner will be "cut".
 In the example, try different values for the miterLimit property. You'll see that the 
 way the corners are rendered changes at values around 2 and 3.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-1-1">4.1.1 Video Intro -- Module 4</h3>
+<h3 name="ch4-1-1">4.1.1 Video Intro -- Module 4</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 1:17 video explaining animation.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-1">4.2.1 Animation Techniques</h3>
+<h3 name="ch4-2-1">4.2.1 Animation Techniques</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In order to perform an animation, we need to:
 
@@ -13934,7 +13934,7 @@ multiple advantages: the requestAnimationFrame API.
 We will compare the old methods with the new one, and implement the same 
 example with each of them to highlight the differences.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-2">4.2.2 Basic Animation Techniques</h3>
+<h3 name="ch4-2-2">4.2.2 Basic Animation Techniques</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Below is the example shown in the video, with source code:
 
@@ -14011,7 +14011,7 @@ the rectangle each time it bounces (in the changeColor() function). This is no
 correct as speed can be negative. The online example fixes this by using speed 
 += Math.sign(speed) * 1; instead this will add +1 or -1 depending on the sign of speed.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-3">4.2.3 Animating Using setInterval()</h3>
+<h3 name="ch4-2-3">4.2.3 Animating Using setInterval()</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The setInterval(...) function is still popular on the Web, and even though this is 
 not the recommended way to do 60 frames/second canvas animation, it is worth understanding how it works.
@@ -14329,7 +14329,7 @@ back to back when the interval is too short, leading to unpredictable results. 
 <b>BEST PRACTICE</b>: AVOID using setInterval for animating in a canvas,
 except for trivial cases (change a color every second).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-4">4.2.4 Animating Using setTimeout()</h3>
+<h3 name="ch4-2-4">4.2.4 Animating Using setTimeout()</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 One thing you should always remember about using setInterval: if we set number of 
 milliseconds at - let's say 20ms - it will call our game loop function EACH 20ms, 
@@ -14501,7 +14501,7 @@ Here comes the [requestAnimationFrame API,](https://www.w3.org/TR/html51/webapp
 
 For 60 frames/second animation, use requestAnimationFrame!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2-5">4.2.5 The requestAnimationFrame API</h3>
+<h3 name="ch4-2-5">4.2.5 The requestAnimationFrame API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The best way to make animation at 60 frames per second: requestAnimationFrame!
 
@@ -14673,7 +14673,7 @@ writing HTML5 games, is part of the W3Cx HTML5 Apps and Games course.
 Current <a href="https://caniuse.com/requestanimationframe">support</a> is 
 really good and all modern browsers support this API.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-3-1">4.3.1 Events: Input and Output</h3>
+<h3 name="ch4-3-1">4.3.1 Events: Input and Output</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In JavaScript, we treat events made by users as an input, and we manipulate the DOM structure as 
 an output. Most of the time in games/animations, we will change state variables of moving objects, 
@@ -14779,7 +14779,7 @@ the gamePad API</a> for using USB or wireless gamepads/joysticks/game controlle
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
+<h3 name="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 When you listen to keyboard related events (keydown, keyup or keypressed), the event 
 parameter passed to the listener function will contain the code of the key that fired 
@@ -15356,7 +15356,7 @@ cancelAnimationFrame(requestId);
 The third parameter (false) of <i>lines 12</i> and <i>13</i> means "we do not want to propagate 
 the event to the ancestors of the canvas in the DOM." 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-3-3">4.3.3 Mouse Interaction, Mouse Events</h3>
+<h3 name="ch4-3-3">4.3.3 Mouse Interaction, Mouse Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Detecting mouse events in a canvas is quite straightforward: you add an event listener to the 
 canvas, and the browser invokes that listener when the event occurs.
@@ -15862,7 +15862,7 @@ We just added mouseup and  mousedown listeners, extract from the source code
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch4-3-4">4.3.4 Responsive Canvas</h3>
+<h3 name="ch4-3-4">4.3.4 Responsive Canvas</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Resizing a canvas can be tricky if we don't know a few rules that might not be easily guessed:
@@ -16085,7 +16085,7 @@ The code is very similar to the previous example, we just replaced drawDiagonal
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-3-5">4.3.5 Advanced Canvas</h3>
+<h3 name="ch4-3-5">4.3.5 Advanced Canvas</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The canvas API is a "big beast", and we have presented all the essential techniques for drawing and animating. However, we could not fit everything in this course. Exotic features that are rarely used by developers, or advanced techniques that require more than 20 lines of JavaScript, have been put aside for [the W3Cx HTML5 Apps and Games course](https://www.edx.org/course/html5-apps-and-games).
 
@@ -16113,7 +16113,7 @@ In that course, you will learn:
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch5-1-1">5.1.1 Video Intro - Module 5</h3>
+<h3 name="ch5-1-1">5.1.1 Video Intro - Module 5</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Congratulations! You made it to module 5.
@@ -16132,7 +16132,7 @@ These additions are very handy when used on mobile devices but raised many criti
 
 The course discusses all the cases and recommend solutions and good practices. Of course, like usual, many examples will be provided that you can run directly this time in the course pages, but also as standalone examples hosted on the JS Bin Web site. If you try to modify them or creates your own examples, please share in the discussion forums as usual. Have fun!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch5-2-1">5.2.1 Introduction</h3>
+<h3 name="ch5-2-1">5.2.1 Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 With HTML5, forms, which had shown little improvement since 1997, evolved considerably.  To achieve this, Web developers relied on many popular JavaScript frameworks for validating input formats, providing various input GUIs, such as calendars for dates, sliders, etc. Frameworks such as jQueryUI, Dojo, and Sencha, all provide a widget set for improving forms. Furthermore, it was time to take into account the specifics of mobile web applications, where the GUI of a date chooser cannot be the same as a 400x400 pixel wide calendar on a desktop. Contextual virtual keyboards provided the way forward on smartphones and tablets thanks to Apple, Google and others.
 
@@ -16152,7 +16152,7 @@ In the examples, we can see: email, URL, and phone number. Look at the differen
 
 -   From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">&lt;form&gt;</a>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch5-2-2">5.2.2 Example</h3>
+<h3 name="ch5-2-2">5.2.2 Example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There is a lot of course content covered this week, and before we get into all the details of the elements and attributes introduced by HTML5, we suggest playing with running examples of full featured forms.
 
@@ -16170,7 +16170,7 @@ Feel free to look at the source code in the <a href="https://jsbin.com/sivula/e
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch5-2-3">5.2.3 Input Elements and Attributes</h3>
+<h3 name="ch5-2-3">5.2.3 Input Elements and Attributes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Live coding video 1: using input elements as widgets to control a Web application</h4>
 
@@ -16201,7 +16201,7 @@ GUI: Graphical User Interface
 -   <a href="https://jsbin.com/ralonem/1/edit?html,js,output">Final version with different types of charts and a GUI</a> (see screenshot below)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch5-2-4">5.2.4 Best Practices</h3>
+<h3 name="ch5-2-4">5.2.4 Best Practices</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Live coding video 3: HTML5 forms - best practices</h4>
 
@@ -16235,7 +16235,7 @@ The following additional example shows the same best practices but presents a mo
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch5-3-1">5.3.1 Accessible Forms</h3>
+<h3 name="ch5-3-1">5.3.1 Accessible Forms</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Forms are commonly used to enable user interaction in Web sites and Web applications. For example, they are used for login, registering, commenting, and purchasing.
 
@@ -16251,7 +16251,7 @@ Examples for each of these two basic guidelines are given in the following pages
 
 The WAI Web site hosts a <a href="https://www.w3.org/WAI/tutorials/forms/">Forms tutorial</a> where to find all guidelines to follow in order to make your forms truly accessible: labeling controls, grouping controls, form instructions, validating input, user notifications, multi-page forms, and custom controls.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch5-3-2">5.3.2 Why is this Important?</h3>
+<h3 name="ch5-3-2">5.3.2 Why is this Important?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Forms can be visually and cognitively complex and difficult to use. Accessible forms are easier to use for everyone, including people with disabilities.
 
@@ -16264,7 +16264,7 @@ Forms can be visually and cognitively complex and difficult to use. Accessible f
 -   People using screen readers can identify and understand form controls more easily because they are associated with labels, field sets, and other structural elements.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch5-3-3">5.3.3 Labeling Controls</h3>
+<h3 name="ch5-3-3">5.3.3 Labeling Controls</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Labels need to describe the purpose of the form control</h4>
 
@@ -16385,7 +16385,7 @@ These give the same results:
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-3-4">5.3.4 Grouping Controls</h3>
+<h3 name="ch5-3-4">5.3.4 Grouping Controls</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Groupings of form controls, typically groups of related checkboxes and radio buttons, sometimes require a higher level description. Grouping related form controls makes forms more understandable for all users, as related controls are easier to identify.
@@ -16471,7 +16471,7 @@ WAI-ARIA provides a grouping role that functions similarly to fieldset and le
 WAI-ARIA roles are very important in the accessibility world, and we invite you to see an example provided in the [associated WAI tutorial](https://www.w3.org/WAI/tutorials/forms/grouping/#associating-related-controls-with-wai-aria). See also this MDN's article about about [WAI-ARIA roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-4-1">5.4.1 Input Types</h3>
+<h3 name="ch5-4-1">5.4.1 Input Types</h3>
 <!------------------------------------------------------------------------------------------------>
 
 In this section, we briefly present the input types, attributes, and elements related to the forms that came with HTML5. Details are given later, illustrated by multiple interactive examples.
@@ -16493,7 +16493,7 @@ Now, let's play with some of these input types and attributes.
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-4-2">5.4.2 "color"</h3>
+<h3 name="ch5-4-2">5.4.2 "color"</h3>
 <!------------------------------------------------------------------------------------------------>
 
 For years, we used hundreds of lines of JavaScript for selecting colors. Now, it's bundled in the browser!
@@ -16619,7 +16619,7 @@ Another problem is that there is no way to control where the dialog that contain
 The solution proposed by the W3C and its contributors is called <i>Web Components</i>, a new approach for designing HTML5 widgets, that is covered in the W3Cx HTML5 Apps and Games course.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-4-3">5.4.3 "date"</h3>
+<h3 name="ch5-4-3">5.4.3 "date"</h3>
 <!------------------------------------------------------------------------------------------------>
 
 For years, date and time pickers in HTML forms made Web developers rely heavily on JavaScript based widgets. The process is simpler in HTML5, which provides a special control to handle this specific kind of data natively.
@@ -16969,7 +16969,7 @@ The HTML5 specification indicates that we can use &lt;input type="date"&gt; an
 </p>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-4-4">5.4.4 "e-mail", "tel", "URL", and "search"</h3>
+<h3 name="ch5-4-4">5.4.4 "e-mail", "tel", "URL", and "search"</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Let's study 4 input types: "email", "tel", "URL" and "search".
@@ -17242,7 +17242,7 @@ Example that shows a drop down list of recent searches (Safari screenshot borro
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-4-5">5.4.5 "number"</h3>
+<h3 name="ch5-4-5">5.4.5 "number"</h3>
 <!------------------------------------------------------------------------------------------------>
 
 This input field is useful for entering numerical values (integer or float), but not for entering zip codes. On desktop implementations and on some mobile implementations, it provides a user interface with small vertical arrows for incrementing/decrementing the current value, while on mobiles it will display a numeric keyboard.
@@ -17338,7 +17338,7 @@ Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid):�
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-4-6">5.4.6 "range"</h3>
+<h3 name="ch5-4-6">5.4.6 "range"</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <!------------------------------------------------------------------------------------------------>
@@ -17565,7 +17565,7 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-1">5.5.1 Form Attributes</h3>
+<h3 name="ch5-5-1">5.5.1 Form Attributes</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <p>In this chapter, we go over the form attributes that have been introduced by HTML5.</p>
@@ -17586,7 +17586,7 @@ In this section, we cover the rest of the form attributes and provide further ex
 In another part of the course, about form validation and visual feedback using CSS, we examine some of the most useful attributes in even greater detail.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-2">5.5.2 form</h3>
+<h3 name="ch5-5-2">5.5.2 form</h3>
 <!------------------------------------------------------------------------------------------------>
 
 This attribute is useful for putting input fields outside the form itself. The form attribute of an external input field must share the same value as the id of the form the field belongs to. This is useful when using &lt;fieldset&gt; elements for making the page/form layout easier.
@@ -17641,7 +17641,7 @@ This attribute is useful for putting input fields outside the form itself. The 
 <i>Lines 12</i> and <i>22</i> shows the form attribute. Make sure that its value matches the id of the form!
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="5-5-3">5.5.3 autocomplete</h3>
+<h3 name="5-5-3">5.5.3 autocomplete</h3>
 <!------------------------------------------------------------------------------------------------>
 
 This attribute applies either to the &lt;form&gt; element or on individual &lt;input&gt; elements. It specifies when input fields must autocomplete the user's input based on the user's typing history. 
@@ -17711,7 +17711,7 @@ Try it in your browser here:
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-4">5.5.4 autofocus</h3>
+<h3 name="ch5-5-4">5.5.4 autofocus</h3>
 <!------------------------------------------------------------------------------------------------>
 
 This attribute is useful for transferring the focus to a field other than the first field in a page/form (by default the first input field has the focus).
@@ -17796,7 +17796,7 @@ Read [these explanations](https://html.spec.whatwg.org/multipage/common-microsy
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id=ch5-5-5">5.5.5 list</h3>
+<h3 name=ch5-5-5">5.5.5 list</h3>
 <!------------------------------------------------------------------------------------------------>
 
 This attribute works together with the new &lt;datalist&gt; element we already studied when we saw the color and date input fields.
@@ -17842,7 +17842,7 @@ Please try it in your  browser (Type "F", "E", "O", C" etc., or just click insi
 At <i>lines 3</i> and <i>5</i>, the value of the list attribute of the input field 
 must match the one of the id of the &lt;datalist&gt; element.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch5-5-6">5.5.6 pattern</h3>
+<h3 name="ch5-5-6">5.5.6 pattern</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The pattern attribute enables the validation of the user's input on the fly (also 
 at submission time), based on <b>regular expressions</b>. It applies to the text, 
@@ -18013,7 +18013,7 @@ Enter the URL of your repository (http, https or ftp): 
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-7">5.5.7 min, max and step</h3>
+<h3 name="ch5-5-7">5.5.7 min, max and step</h3>
 <!------------------------------------------------------------------------------------------------>
 
 These attributes are useful for several input types such as number, range, date and  time (and other variants).
@@ -18047,7 +18047,7 @@ Their detailed use with these input fields have already been explained in sectio
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-8">5.5.8 multiple</h3>
+<h3 name="ch5-5-8">5.5.8 multiple</h3>
 <!------------------------------------------------------------------------------------------------>
 
 The multiple attribute is used with email and file input types. It's a Boolean attribute, so here are the different syntax possibilities:
@@ -18152,7 +18152,7 @@ Example without the multiple attribute:
 Use the standard key modifiers (shift, control, command) for selecting multiple files when the file chooser dialog popup.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-9">5.5.9 a warning</h3>
+<h3 name="ch5-5-9">5.5.9 a warning</h3>
 <!------------------------------------------------------------------------------------------------>
 
 In the following pages, we present a set of rarely used attributes introduced by HTML5. 
@@ -18160,7 +18160,7 @@ In the following pages, we present a set of rarely used attributes introduced by
 You might just glance at them and/or try the examples. The next pages cover their usage and you are welcome to use them for future reference (for those of you who like to cover the topics completely).
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-10">5.5.10 formaction and formmethod</h3>
+<h3 name="ch5-5-10">5.5.10 formaction and formmethod</h3>
 <!------------------------------------------------------------------------------------------------>
 
 These attributes are targeted to the &lt;input type="submit"&gt; input fields. They are rarely used.
@@ -18227,7 +18227,7 @@ The second example shows a form with two submit buttons:
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-11">5.5.11 formnovalidate</h3>
+<h3 name="ch5-5-11">5.5.11 formnovalidate</h3>
 <!------------------------------------------------------------------------------------------------>
 
 The formnovalidate attribute is targeted to the &lt;input type="submit"&gt; input fields. This attribute is rarely used, so there will be no questions about it in the end of the week's exercises.
@@ -18268,7 +18268,7 @@ Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,outp
 <br/>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-12">5.5.12 formtarget</h3>
+<h3 name="ch5-5-12">5.5.12 formtarget</h3>
 <!------------------------------------------------------------------------------------------------>
 
 The formtarget attribute is targeted to the &lt;input type="submit"&gt; input fields. This attribute is rarely used.
@@ -18323,7 +18323,7 @@ This attribute's value indicates where the response from the form submission sho
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-5-13">5.5.13 formenctype</h3>
+<h3 name="ch5-5-13">5.5.13 formenctype</h3>
 <!------------------------------------------------------------------------------------------------>
 
 A word about the enctype attribute of the &lt;form&gt; element
@@ -18450,7 +18450,7 @@ Then, open the devtools and go to the "Network" tab, click on the POST request. 
 And if you start again and click on the left submit button, the one without the formenctype attribute, you should see that the form content has been submitted "normally" (default value is "urlencoded", spaces are replaced by "+", etc.). Here is a screenshot of what you should see:
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-6-1">5.6.1 HTML5 Forms Elements</h3>
+<h3 name="ch5-6-1">5.6.1 HTML5 Forms Elements</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&gt;, &lt;output&gt;, &lt;meter&gt;  and &lt;progress&gt; elements).
@@ -18475,7 +18475,7 @@ Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&g
 </div>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-6-2">5.6.2 &lt;output&gt;</h3>
+<h3 name="ch5-6-2">5.6.2 &lt;output&gt;</h3>
 <!------------------------------------------------------------------------------------------------>
 
 The output element represents the result of a computation or user action. You can see it as a "specialized &lt;div&gt; or &lt;span&gt;" for displaying interactive results.
@@ -18558,7 +18558,7 @@ As input field values are considered as strings by JavaScript, using x.value = 
 This is why we used the valueAsNumber property also introduced by HTML5 for some input fields such as &lt;input type="range"&gt; and &lt;input type="number"&gt;, we also encountered the valueAsDate properties when we studied &lt;input type="date"&gt;.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-6-3">5.6.3 &lt;meter&gt;</h3>
+<h3 name="ch5-6-3">5.6.3 &lt;meter&gt;</h3>
 <!------------------------------------------------------------------------------------------------>
 
 The &lt;meter&gt; element displays colored bars to represent numeric values.
@@ -18656,7 +18656,7 @@ A &lt;meter&gt; element used for displaying blood pressure might be a good can
 -   Good blog post: [How to use and style the meter element](https://www.hongkiat.com/blog/style-html5-meter/)
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-6-4">5.6.4 <progress></h3>
+<h3 name="ch5-6-4">5.6.4 <progress></h3>
 <!------------------------------------------------------------------------------------------------>
 
 The <progress> element is similar to &lt;meter&gt; but it is used for progress bars (i.e., the percentage of a file being uploaded, etc.):
@@ -18719,7 +18719,7 @@ Download progress: 
 ```
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-6-5">5.6.5 &lt;datalist&gt;</h3>
+<h3 name="ch5-6-5">5.6.5 &lt;datalist&gt;</h3>
 <!------------------------------------------------------------------------------------------------>
 
 The &lt;datalist&gt; form element is useful for linking a list of choices to an input element.
@@ -18813,7 +18813,7 @@ Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,outp
 As you can see at <i>lines 2 and 4</i>, the id and list attributes match. The &lt;datalist&gt; element is wrapped around a set of &lt;option&gt; that are available for selection by another form control (in this example the input field from <i>line 2</i>).
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-7-1">5.7.1 Introduction</h3>
+<h3 name="ch5-7-1">5.7.1 Introduction</h3>
 <!------------------------------------------------------------------------------------------------>
 
 In this section of the course, we will look at CSS pseudo classes that are useful for giving instant feedback when the user's input is not valid. We will also look at the new JavaScript API introduced by HTML5 for validating forms and form elements.
@@ -18823,7 +18823,7 @@ In the following pages, we will first illustrate the concept of form validation 
 Form validation is [supported](https://caniuse.com/#feat=form-validation) by all modern browsers.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-7-2">5.7.2 Automate Visual Feedback While Typing</h3>
+<h3 name="ch5-7-2">5.7.2 Automate Visual Feedback While Typing</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Most modern browsers propose default behavior for validating input fields and forms.
@@ -19049,7 +19049,7 @@ Same example on FireFox, the title attribute is ignored:
 <h4>We will show solutions in the last section of this week's course.</h4>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id=ch5-7-3">5.7.3 JavaScript Form Validation API</h3>
+<h3 name=ch5-7-3">5.7.3 JavaScript Form Validation API</h3>
 <!------------------------------------------------------------------------------------------------>
 
 There is a JavaScript API for form validation. This API will let you use your own validation algorithm (i.e. check that you have entered the same password in two different input fields), and customize error messages. Also, together with some HTML/CSS/JavaScript you will be able to make your own message bubbles.
@@ -19139,7 +19139,7 @@ At <i>lines 18</i> and <i>20</i> we added an input event listener: each ti
 <i>Lines 28</i> and <i>29</i> get the input fields' values, and <i>lines 30-35</i> check if the passwords are the same and set the validity of the field using the validation API's method setCustomValidity(error_message).
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-7-4">5.7.4 The validity property of input fields</h3>
+<h3 name="ch5-7-4">5.7.4 The validity property of input fields</h3>
 <!------------------------------------------------------------------------------------------------>
 
 The validity property of input fields helps to get error details when the field is <i>invalid</i>. This property tests the different types of validation error.
@@ -19239,7 +19239,7 @@ It is also possible to get the validation error message, using the validationMe
 This is useful for making custom error messages. More about this topic in the next section of the course.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch5-7-5">5.7.5 Changing the default behavior</h3>
+<h3 name="ch5-7-5">5.7.5 Changing the default behavior</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Custom validation: changing the default behavior, aggregating error messages, removing bubbles, etc.
@@ -19409,7 +19409,7 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 -   <i>Lines 90-93</i>: The focus is given to the first invalid field that shows an error message.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-1-1">6.1.1 Video Intro -- Module 6</h3>
+<h3 name="ch6-1-1">6.1.1 Video Intro -- Module 6</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Final week!
@@ -19427,7 +19427,7 @@ You can provide a customized service that take into account the geolocation, or 
 Instead of typing the zip code, entering the city, entering the country, you can guess that automatically and propose the form that is already filled with the address. I really enjoyed teaching you this HTML5 basic course and I'm looking forward to meeting you the next HTML5 part-2 course that would address more advanced topics
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="6-1-2">6.1.2 HTML5 JavaScript APIs</h3>
+<h3 name="6-1-2">6.1.2 HTML5 JavaScript APIs</h3>
 <!------------------------------------------------------------------------------------------------>
 
 We have already studied some of the HTML5 JavaScript APIs, including:
@@ -19461,7 +19461,7 @@ This week, we will look at some of the most useful APIs. Others will be covered 
 </ul>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-2-1">6.2.1 The Web storage API</h3>
+<h3 name="ch6-2-1">6.2.1 The Web storage API</h3>
 <!------------------------------------------------------------------------------------------------>
 
 <p>The Web storage API introduces "two related mechanisms, similar to HTTP session cookies, for storing structured data on the client side".
@@ -19547,7 +19547,7 @@ Objects managed by Web Storage are no longer carried on the network and HTTP, an
   <li>From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">Web Storage API</a></li>
 </ul>
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-2-2">6.2.2 Example 1</h3>
+<h3 name="ch6-2-2">6.2.2 Example 1</h3>
 <!------------------------------------------------------------------------------------------------>
 
 You can start filling this form and come back another day and complete it. It doesn't matter if you closed your browser before coming back. The form never loses what you entered, even if you reload the page, or press "backspace" by mistake. <b>This form auto saves/restores its content</b>.
@@ -19624,7 +19624,7 @@ This time, we want the form content to be restored on page load/reload. We will 
 The tests at <i>lines 7, 10, 13</i>, etc., verify that data has been saved, before trying to restore it. Without these tests, it would put the "undefined" string as the value of input fields with no corresponding data to restore.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-2-3">6.2.3 localStorage and sessionStorage</h3>
+<h3 name="ch6-2-3">6.2.3 localStorage and sessionStorage</h3>
 <!------------------------------------------------------------------------------------------------>
 
 This time we will look at another example that uses new methods from the API:
@@ -19779,7 +19779,7 @@ Then click on the second button to add data to the store, click on the third to
 You can check in the Chrome dev. tools user interface that the content of the localStorage changes as you click on the buttons.
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="ch6-2-4">6.2.4 Example 2</h3>
+<h3 name="ch6-2-4">6.2.4 Example 2</h3>
 <!------------------------------------------------------------------------------------------------>
 
 Local stores are also useful for<b> saving/restoring user preferences</b> of Web Applications. For example, the JS Bin tool you have been using since the beginning of this course uses localStorage to store the list of tabs you open, and their width:
@@ -19879,7 +19879,7 @@ function applyGUIvalues() {
 </details>
 
 <!------------------------------------------------------------------------------------------------>
-<h3 id="6-2-5">6.2.5 Example 3</h3>
+<h3 name="6-2-5">6.2.5 Example 3</h3>
 <!------------------------------------------------------------------------------------------------>
 
 [Online example at JSBin](https://jsbin.com/zowise/edit?html,js,output)
@@ -19965,7 +19965,7 @@ These generic functions can be used in many different projects
 Indeed, if you look carefully, you will see that these functions are really useful. You may easily embed them in your own projects, or perhaps adapt them for a particular need (i.e. for saving input type="checkboxes" that work a bit differently), etc.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-2-6">6.2.6 Size limitations, etc.</h3>
+<h3 name="ch6-2-6">6.2.6 Size limitations, etc.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Few things to remember, from the Web storage specification:
@@ -19997,7 +19997,7 @@ Note that if all you need is to store session-based data in a manner that is mor
 <b>By using sessionStorage, the data you store will be scoped and therefore not leak across tabs!</b>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-2-7">6.2.7 Storing more than strings? Use JSON!</h3>
+<h3 name="ch6-2-7">6.2.7 Storing more than strings? Use JSON!</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Storing strings is all well and good, but it quickly becomes limiting: you may want to store more complex data with at least a modicum of structure.
@@ -20114,7 +20114,7 @@ HTML5 form elements with builtin and custom validation (the date cannot be in th
 
 It shows how to use the DOM API for dynamically updating the page content (build the HTML table from the array of contacts, add a new line when a new contact is submitted, etc.)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-3-1">6.3.1 Introduction</h3>
+<h3 name="ch6-3-1">6.3.1 Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The objective of this chapter is to provide an overview of the File API.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20160,7 +20160,7 @@ Imagine a multimedia player that accesses (in read-only) your file system, reads
 -   MDN's Web Docs: [Using files from web applications](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-3-2">6.3.2 Working with local files</h3>
+<h3 name="ch6-3-2">6.3.2 Working with local files</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hi! Welcome for this second video of module 6, in which we will talk about the file Javascript API.
 
@@ -20374,7 +20374,7 @@ some canvas here, or image elements and so on.
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-3-3">6.3.3 Reading File Metadata</h3>
+<h3 name="ch6-3-3">6.3.3 Reading File Metadata</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Imagine you have an input field like this:
 
@@ -20503,7 +20503,7 @@ button and choose one file):
   <li><i>Line 14:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the &lt;div id="result"&gt; in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically.</li><br/>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-3-4">6.3.4 Blob and File</h3>
+<h3 name="ch6-3-4">6.3.4 Blob and File</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The <a href="https://www.w3.org/TR/FileAPI/">HTML5 File API specification</a> introduces several interfaces:
 <ul>
@@ -20616,7 +20616,7 @@ text area. This example is detailed further in the course. Click and select a te
 
 <p>In the following pages, we look at different examples that read file contents as text, dataURL and binary.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-3-6">6.3.6 Read file content as text</h3>
+<h3 name="ch6-3-6">6.3.6 Read file content as text</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let's start by reading a pure text file:</p>
 
@@ -20772,7 +20772,7 @@ reader.readAsText(file, 'ISO-8859-1');
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-3-7">6.3.7 Read file content as binary</h3>
+<h3 name="ch6-3-7">6.3.7 Read file content as binary</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This method is rarely used, except for loading "raw" binary data. For images 
 you would like to see in your HTML page using the &lt;img src= tag&gt; or for 
@@ -20842,7 +20842,7 @@ in its pages.</p>
 	uncompressed audio formats in memory), and to play it.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-3-8">6.3.8 Read file content as dataURL</h3>
+<h3 name="ch6-3-8">6.3.8 Read file content as dataURL</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>What is a data URL?</h4>
 
@@ -21176,7 +21176,7 @@ function onError(err) {
     -   on MDN: [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API#Browser_compatibility)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-4-2">6.4.2 The coords object properties</h3>
+<h3 name="ch6-4-2">6.4.2 The coords object properties</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In the previous example, we used the coords property of the position passed as an input parameter to the callback function. This coords object has many properties:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21190,7 +21190,7 @@ function onError(err) {
 
 <p>Not all these values may be available in all Web browsers. When one of these properties is null, it means that it is not available (often the case of the altitudeAccuracy)</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-4-3">6.4.3 Geolocation error codes</h3>
+<h3 name="ch6-4-3">6.4.3 Geolocation error codes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In the last example, we used the navigator.geolocation. getCurrentPosition(showPosition) with only one callback function (in the case of success), but it is also possible to pass a second parameter that is another callback function called in the case of error.</p>
 
@@ -21257,7 +21257,7 @@ function onError(err) {
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-4-4">6.4.4 Tracking a position</h3>
+<h3 name="ch6-4-4">6.4.4 Tracking a position</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In order to track the current position, the geolocation API provides a method similar to the 
 getCurrentPosition(onSuccess, onError) named watchPosition(onSuccess, onError).</p>
@@ -21329,7 +21329,7 @@ watchId=navigator.geolocation.watchPosition(onSuccess, onError,
 
 <p>Look for the explanations in the lines of comment.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-4-5">6.4.5 Geolocation and maps</h3>
+<h3 name="ch6-4-5">6.4.5 Geolocation and maps</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This section presents an example of how to get an interactive map, using 
 <a href="https://leafletjs.com/reference-1.6.0.html" target="_blank" 
@@ -21531,7 +21531,7 @@ display: inline-block;
     'map' is the id of the &lt;div&gt; from the HTML part of the code.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch6-4-6">6.4.6 Reverse geocoding</h3>
+<h3 name="ch6-4-6">6.4.6 Reverse geocoding</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 Different Web services can be used to get an address from longitude and latitude. 
@@ -21965,7 +21965,7 @@ function getPhysicalAddress(latlong) {
 
 </details>
 
-<h3 id="ch6-4-7">6.4.7 Discussion and projects</h3>
+<h3 name="ch6-4-7">6.4.7 Discussion and projects</h3>
 
 <h4>Optional projects</h4>
 
