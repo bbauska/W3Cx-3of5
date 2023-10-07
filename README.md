@@ -1566,7 +1566,7 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 <p align="center">
 <img src="./images/image029.webp?raw=true"
    alt="Outline of previous example."
-   width="55%">
+  style="width:55%">
 &nbsp;
 <br/>
 
@@ -1580,8 +1580,8 @@ HTML5, the cornerstone for modern Web applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image030.webp?raw=true"
-   alt="HTML5 logo"
-   width="35%">
+  alt="HTML5 logo"
+  style="width:35%;">
 &nbsp;
 <br/>
 
