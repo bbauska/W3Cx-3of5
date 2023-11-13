@@ -1359,7 +1359,7 @@ Let's clarify this by looking at some example code:</p>
 
 <h4>The corresponding outline is:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26. Heading example (26) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26. heading example (26) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image026.webp?raw=true"
@@ -3296,19 +3296,18 @@ details[open] summary::-webkit-details-marker {
 
 <h5>Example 2 (see it <a href="https://jsbin.com/sajusop/edit?html,css,output" target="_blank">online</a>):</h5>
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 43. a '+' as a custom open icon for summary (62) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 43. a '+' as a custom open icon for summary (62) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image043.webp?raw=true"
    alt="A "+" as a custom open icon for summary."
    width="35%">
 &nbsp;
 <br/>
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 48. a '-' as a custom close icon (62) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 48. a '-' as a custom close icon (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image048.webp?raw=true"
    alt="A "-" as a custom close icon."
@@ -3348,11 +3347,11 @@ color: #FFFFFF
   <li>On CanIUse: <a href="https://caniuse.com/#feat=details" target="_blank">compatibility table for details and summary elements</a></li>
 </ul>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch1-4-2">1.4.2 The &lt;time&gt; and &lt;mark&gt; Elements</h3>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 49. it's about time clock (63) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 49. it's about time clock (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image049.webp?raw=true"
    alt="Picture of a clock with the words 'it's about time'"
@@ -3408,10 +3407,9 @@ The machine readable part adds semantics that can be used by search engines for 
 <h4>Duration values</h4>
 
 <p>Duration values use the prefix "P" for "period" as in &lt;time datetime="P4D"&gt; (period = four days)...</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 50. duration values (64) ------------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 50. duration values (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image050.webp?raw=true"
    alt="Funny picture duration values"
@@ -3455,10 +3453,9 @@ From Bruce Lawson's article : <i>"Whichever you choose, it's represented intern
 </ul>
 
 <h4>The &lt;mark&gt; element</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 51. yellow highlighter pen (65) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 51. yellow highlighter pen (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image051.webp?raw=true"
    alt="Picture of a yellow hightlighter pen."
@@ -3493,10 +3490,9 @@ The HTML <mark> tag is used for indicating text as marked or highlighted for r
 ```
 
 <h4>Example 2:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 52. another example for marking code (66) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 52. another example for marking code (66) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image052.webp?raw=true"
    alt="Another example for marking code."
@@ -3520,14 +3516,13 @@ The HTML <mark> tag is used for indicating text as marked or highlighted for r
 If you don't like the default yellow background, you may use CSS to change the style of the <mark> element:
 
 <h4>For example:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 53. style the mark element with CSS (66) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 53. style the mark element with CSS (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image053.webp?raw=true"
-   alt="Style the mark element with CSS."
-   width="45%">
+  alt="Style the mark element with CSS."
+  width="45%">
 &nbsp;
 <br/>
 
@@ -3616,10 +3611,9 @@ throws ServletException, IOException {
 The above example will cause the browser that invoked this server-side code to start the download of a file named "DATA.ZIP".
 
 <h4>To download a file using an arbitrary name: the download attribute</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------ 54. picture of a road sign with the words 'new way' (68) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 54. picture of a road sign with the words 'new way' (68) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image054.webp?raw=true"
    alt="Picture of a road sign with the words 'New Way'."
@@ -3636,10 +3630,9 @@ HTML5 proposes the use of a new attribute named download to download resourc
 ```
 
 This will indeed force the download of an image with a filename different from its original filename on the server side. Here is a screen capture of the Web browser while downloading the picture. We can see in the status bar the name of the link (the image is "normal.gif") and the downloaded file is "MichelBuffa.gif":
-
-<!------------------------------------------------------------------------------------------------>
-<!------------ 55. image saved with another names thanks to the download attribute (68) ---------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~ 55. image saved with another names thanks to the download attribute (68) ~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image055.webp?raw=true"
    alt=""
@@ -3650,10 +3643,9 @@ This will indeed force the download of an image with a filename different from i
 <b>WARNING</b>: since 2015, and for security reasons, <b>the image should be located on the same domain as the HTML page that contains the link</b> (using a relative URL works well, for example, but linking a page on another domain will not work - it will keep its original name).
 
 <h4>Interesting applications: serverless download</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 56. no servers picture (68) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 56. no servers picture (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image056.webp?raw=true"
    alt="No server picture."
@@ -3668,10 +3660,9 @@ This demo shows the use of the download attribute together with the HTML5 File
 We won't detail this demo here, but take a look if you are curious to see what can be done with this new download attribute. As the FileWriter and FileSystem APIs are still supported only by Google Chrome (other browsers need polyfills), you will need Google Chrome to try it.
 
 We have also put the simplified <a href="https://jsbin.com/muluwey/1/edit?html,css,js,output">source code of this demo on JSBin.com</a> for you to play with.
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 57. serverless download demo (69) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 57. serverless download demo (69) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image057.webp?raw=true"
    alt="Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server."
@@ -3745,10 +3736,9 @@ Using the translate="no" attribute should prevent this behavior...
 </ul>
   <li>An article from W3C's Internationalization Activity: <a href="https://www.w3.org/International/questions/qa-translate-flag">"Using HTML's translate attribute"</a></li>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- chapter 1-5-1. microdata (71) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ chapter 1-5-1. microdata (71) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch1-5-1">1.5.1 Microdata</h3>
 
 There are several ways to provide machine-readable content embedded in a classical Web document: <a href="https://www.w3.org/TR/html-rdfa/">HTML+RDFa</a>, <a href="http://microformats.org/">microformats</a>, <a href="https://json-ld.org/">JSON-LD</a>, HTML5 microdata. In this section, we focus on microdata.
@@ -3841,16 +3831,15 @@ This information is not visible to humans: it is pure <i>semantic information<
   <li><a href="https://dev.opera.com/articles/microdata-and-the-microdata-dom-api/">Microdata and the microdata DOM API</a>, old article from dev.opera.com,</li>
   <li><a href="https://diveinto.html5doctor.com/extensibility.html">Chapter from Mark Pilgrim's book about microdata</a>, very detailed introduction about semantic metadata in general, contains full examples with explanations about how to describe a Person, etc.</li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch1-5-2">1.5.2 Testing Tools</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Introduction</h4>
 
 <p>After seeing the principle of embedding microdata in an HTML page, we now present some structured data test tools you can use to check if your data are correct.</p>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 58. picture of diverse tools used by workers (72) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 58. picture of diverse tools used by workers (72) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image058.webp?raw=true"
    alt="Picture of diverse tools used by workers."
@@ -3900,9 +3889,9 @@ Let's have a look now at a (small) example of an about page. It renders as a ver
 </details>
 
 <h4>Rendering of the page in a browser:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 59. rendering of michel buffa home page (73) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 59. rendering of michel buffa home page (73) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image059.webp?raw=true"
    alt="Rendering of Michel Buffa home page."
@@ -3912,9 +3901,9 @@ Let's have a look now at a (small) example of an about page. It renders as a ver
 
 Here is what Google sees of the page. We just entered its <a href="https://output.jsbin.com/gunuzus/1">URL</a> in the <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Google page about rich snippets and structured data</a>:
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 60. microdata of the example, as seen by google (74) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 60. microdata of the example, as seen by google (74) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image060.webp?raw=true"
    alt="Microdata of the example, as seen by Google."
@@ -3927,10 +3916,9 @@ Note that the address is a fully featured embedded object in the Person's descri
 <h4>Live Microdata</h4>
 
 The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 61. example live microdata (74) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 61. example live microdata (74) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image061.webp?raw=true"
    alt="Example of live microdata from the previous example. Microdata are displayed as json objects."
@@ -3939,22 +3927,20 @@ The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> i
 <br/>
 
 <h4>And the JSON view of the microdata:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 62. json view of the microdata (74) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 62. json view of the microdata (74) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image062.webp?raw=true"
    alt="JSON view of the microdata."
    width="40%">
 &nbsp;
 <br/>
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- Chapter 1-5-3. adding microdata to an html page (75) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ Chapter 1-5-3. adding microdata to an html page (75) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Basic steps</h4>
 
 <p>Adding microdata to an HTML page is a really simple task and requires only three attributes: <b>itemscope, itemtype</b>  and <b>itemprop</b>.</p>
@@ -3988,10 +3974,9 @@ We notice that one property, such as the address of a Person, may use another vo
 If you are a developer and if you are familiar with object oriented programming, think of properties as class attributes and think of vocabularies as classes.
 </p>
 <h4>Vocabularies are meant to be shared</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 63. picture of 'time to share' (76) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 63. picture of 'time to share' (76) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image063.webp?raw=true"
    alt="Picture with words 'time to share'."
@@ -4161,10 +4146,9 @@ For example, the value of a property defined in an &lt;img&gt; element will be
 <a href="https://www.twitter.com/micbuffa" itemprop="url">profile</a>
 ```
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch1-5-4">1.5.4 Microdata Tools</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There are many tools available (most are free) that you can use for generating, visualizing and debugging microdata. We list some of them in this page, but feel free to share the tools you find / like in the forums.</p>
 
 <h4>Microdata generators</h4>
@@ -4177,21 +4161,18 @@ To automatically generate microdata for describing persons, restaurants, movie
 </ul>
 
 <h4>Example:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 64. microdata person generator (80) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 64. microdata person generator (80) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image064.webp?raw=true"
    width="65%"
    alt="Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata." />
 &nbsp;
 <br/>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch1-5-5">1.5.5 Examples of Well Structured Documents with Microdata</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here, we propose a few links to Web pages that were created by students of previous editions of this course).
 
 The students had to create a Web page to introduce themselves, with some information including: name, job, employer, location, etc., and of course enrich the page with microdata. They also had to follow the best practices concerning the new structural elements, headings, etc.
@@ -4203,10 +4184,9 @@ Click on these pages and look at the source code...
 Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 online</a>.
 
 <h4>Structure:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 65. microdata example #1 (80) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 65. microdata example #1 (80) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image065.webp?raw=true"
    width="40%"
@@ -4215,10 +4195,9 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 <br/>
 
 <h4>Microdata:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 66. schema type/properties from microdata  (81) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 66. schema type/properties from microdata  (81) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image066.webp?raw=true"
    alt="Microdata from the example page."
@@ -4229,33 +4208,27 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 <h4>Example #2:</h4>
 
 View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 online</a>.
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 67. example #2 page - shows microdata (81) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 67. example #2 page - shows microdata (81) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image067.webp?raw=true"
    alt="Example page, shows table of contents."
    width="50%">
 &nbsp;
 <br/>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch2-1">Module 2: HTML5 Multimedia</h3>
-<!------------------------------------------------------------------------------------------------>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch2-2-1">2.2.1 The &lt;video&gt; Element</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Until 2012, it was only possible to integrate an audio or video player using the proprietary Flash technology, marketed by the company Macromedia (later acquired by Adobe). The &lt;video&gt; element of HTML5 is one of the three "Flash killers" (the others being &lt;audio&gt; for the sound and &lt;canvas&gt; for drawing and animation).
 <i>(Note that Adobe <a href="https://www.adobe.com/products/flashplayer/end-of-life.html">no longer supports Flash Player</a> since December 31, 2020)</i></p>
 
 <h4>Check the HTML code of the following CodePen:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 68. codepen snapshot: simple html5 video player (82) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 68. codepen snapshot: simple html5 video player (82) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image068.webp?raw=true"
    alt="Codepen snapshot: simple HTML5 video player."
@@ -4297,10 +4270,9 @@ Usually you have an "embed" button close to the videos that prompts you with s
 ```
 
 <p>The YouTube video embedded in this page by the above code: it's HTML5 but it's not a &lt;video&gt; element directly inserted in the HTML of this page, it's an &lt;iframe&gt;.</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 69. web of things (wot) explainer video snapshot (83) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 69. web of things (wot) explainer video snapshot (83) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image069.webp?raw=true"
    alt="Web of things (WoT) explainer video snapshot."
@@ -4321,17 +4293,15 @@ Usually you have an "embed" button close to the videos that prompts you with s
   <li>From Apple's developer site: <a href="https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/ControllingMediaWithJavaScript/ControllingMediaWithJavaScript.html">Safari HTML5 audio and video guide</a>.</li>
   <li>Article from HTML5 Rocks: <a href="https://www.html5rocks.com/en/tutorials/video/basics/">Media</a></li>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch2-2-2">2.2.2 The &lt;audio&gt; Element</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML5 audio is composed of several layers:</h4>
 <ul>
   <li>The &lt;audio&gt; element is useful for embedding an audio player into a Web page. It is dedicated for <b>streamed audio</b>. It is very similar to the &lt;video&gt; element, both in its use and in its API.</li>
   <li>The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.)</li>
 </ul>
-<!----- https://github.com/bbauska/W3Cx-4of5-HTML5.2x --------->
+<!-- https://github.com/bbauska/W3Cx-4of5-HTML5.2x -->
 <p>
 This course will focus on the &lt;audio&gt; element. We present the <a href="https://www.w3.org/TR/webaudio/">Web Audio API</a> and other advanced HTML5 features in the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games course</a>.
 
@@ -4384,11 +4354,9 @@ Notice the other similarities: between the &lt;audio&gt;...&lt;audio&gt; tags,
   <li>From W3C's specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element">The audio element</a></li>
   <li>From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">&lt;audio&gt;: The Embed Audio element</a></li>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch2-2-3">2.2.3 Attributes of &lt;video&gt; and &lt;audio&gt;</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Most useful attributes of the &lt;video&gt; element</h4>
 <p>
 Here are the most common attributes you can use with the &lt;video&gt; element. They are self explanatory...</p>
@@ -4436,17 +4404,13 @@ The attributes you can use with the &lt;audio&gt; element are a subset of tho
 
 <p>
 As with the &lt;video&gt; element, the same best practice in regard to preload and autoplay attributes should be followed.</p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch2-2-4">2.2.4 Styling Media Players with CSS</h3>
-<!------------------------------------------------------------------------------------------------>
-<p>
-The &lt;video&gt; and &lt;audio&gt; elements are just like other HTML elements, so CSS can be used for styling, including CSS transitions, animations, etc.
-</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The &lt;video&gt; and &lt;audio&gt; elements are just like other HTML elements, so CSS can be used for styling, including CSS transitions, animations, etc.</p>
 
 <h4>An example of an audio player with some style</h4>
-<p>
-You can try this example <a href="https://jsbin.com/zoquru/2/edit?html,css,output">online at JSBin</a>.
+<p>You can try this example <a href="https://jsbin.com/zoquru/2/edit?html,css,output">online at JSBin</a>.
 
 To add some styling to the basic example we saw when we introduced the &lt;audio&gt; element, we just add a &lt;figure&gt; with two children: an &lt;img&gt; and a &lt;figcaption&gt;. Inside the &lt;figcaption&gt; we add the &lt;audio&gt; element from the previous example.
 
@@ -4479,11 +4443,10 @@ Please move the mouse pointer over this player's elements: (does not work in git
 ```
 
 </details>
-</p>
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 70. two gery-black horses in a field (87) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 70. two gery-black horses in a field (87) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image070.webp?raw=true"
    alt="Two gery-black horses in a field."
@@ -4577,10 +4540,9 @@ Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
 <h4>Resizing and rotating a video as the mouse pointer comes over it</h4>
 <p>
 See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example online</a> (where you can modify the code on the fly) or just play the following video, and move the mouse pointer in and out of the video while it's playing.</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 71. pseudo css class: hover (88) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 71. pseudo css class: hover (88) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image071.webp?raw=true"
    width="60%"
@@ -4619,8 +4581,8 @@ This example uses the pseudo CSS class :hover in order to track the mouseover
 ```
 
 <h4>Fullscreen video that resizes and maintains ratios</h4>
-<p>
-This is a trendy way of displaying videos.
+
+<p>This is a trendy way of displaying videos.
 
 Below you will find two examples that show how to do this trick. The first is for a "regular" video, using the &lt;video&gt; and &lt;source&gt; elements. This technique can also be used on any YouTube embedded videos (see Example #2 below).
 
@@ -4629,10 +4591,9 @@ The interesting part is that we use a 100% standard (and really small and simple
 Example #1: with a regular video
 
 Full width, resizable, borderless video, just using plain CSS and JS DOM events.</p>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 72. full width video like paypal site (89) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 72. full width video like paypal site (89) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image072.webp?raw=true"
    width="65%"
@@ -4702,9 +4663,9 @@ function init() {
 <p>
 Full width, resizable, borderless YouTube video. To do this: just 100% standard CSS + DOM manipulation using JavaScript.
 </p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 73. example video cropping (90) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 73. example video cropping (90) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image073.webp?raw=true"
    width="50%"
@@ -4716,18 +4677,16 @@ The CSS and JavaScript codes for this example are exactly the same as in Exam
 </p>
 <h4>Full screen video, pure CSS approaches</h4>
 <p>
-1.  Let's use the video from the PayPal Web site, played full screen using only very simple CSS.
-
-In this example, the video does not rescale; it's just cropped if the browser window is resized. Enlarge your browser and you'll see a man with a phone on the right. Resize your browser and you'll see only part of the video.
+  1.  Let's use the video from the PayPal Web site, played full screen using only very simple CSS.
 </p>
-
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 74. full screen video (90) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<p>In this example, the video does not rescale; it's just cropped if the browser window is resized. Enlarge your browser and you'll see a man with a phone on the right. Resize your browser and you'll see only part of the video.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 74. full screen video (90) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image074.webp?raw=true"
-   width="50%"
-   alt="Full screen video." />
+  width="50%"
+  alt="Full screen video." />
 &nbsp;
 <br/>
 
@@ -4819,15 +4778,14 @@ header video {
 
 <h4>The trick here is that:</h4>
 <p>
-the video is in the header, and the header has a plotted transparent background image ("dots.png") that is repeated in X and Y (see <i>lines 8</i> and <i>9</i>).
+  1.  The video is in the header, and the header has a plotted transparent background image ("dots.png") that is repeated in X and Y (see <i>lines 8</i> and <i>9</i>).
 
-2.  The video is positioned so that it's origin (top left corner) is away from the visible surface (<i>line 25</i>), while it is set to take 100% of the surface (<i>lines 20</i> and <i>21</i>).
-
-Full screen video that resizes and keeps its ratio, using the viewport units.
+  2.  The video is positioned so that it's origin (top left corner) is away from the visible surface (<i>line 25</i>), while it is set to take 100% of the surface (<i>lines 20</i> and <i>21</i>).
 </p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 75. full screen using viweport units (92) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<p>Full screen video that resizes and keeps its ratio, using the viewport units.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 75. full screen using viweport units (92) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image075.webp?raw=true"
    width="65%"
@@ -4873,10 +4831,9 @@ Setting the video to 100% width and height results in different behavior:
   <li>The body tag's height, however, is determined by the size of its children: the body tag's height grows and shrinks to accommodate the size of the children.</li>
   <li>If the browser window is made wide and short, the video is full width, the height is taller than the window, and part of the video is not visible. It seems that just using % does not get us the same effect.</li>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch2-2-5">2.2.5 Control Players From JavaScript</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 The &lt;video&gt; and &lt;audio&gt; elements have methods, properties/attributes and events that can be manipulated with JavaScript. Using the DOM API, it's possible to manipulate an audio or video element as a JavaScript object that has:
 </p>
@@ -4905,9 +4862,9 @@ This will create a complete video player for the file "video.mp4", with control 
 <p>
 Please look at this interesting example:
 </p>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 76. how to call play/pause/rewind functions (94) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 76. how to call play/pause/rewind functions (94) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image076.webp?raw=true"
    width="65%"
@@ -4919,10 +4876,9 @@ Note that in order to play the video, you must click on the "vid.play()" text. T
 </p>
 
 <b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let's see a little more of what we can do using the JavaScript API of the &lt;video&gt; element (it will be an identical approach for the &lt;audio&gt; element, since it shares the same API by a very small margin).
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch2-2-6">2.2.6 The JavaScript API</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h4>Methods, properties, and events</h4>
 <p>
@@ -4934,9 +4890,9 @@ The list of properties can be found at the <a href="https://www.w3.org/2010/05/
 
 Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link</a>, and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
 </p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 77. html5 video events and api (95) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 77. html5 video events and api (95) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image077.webp?raw=true"
    width="65%"
@@ -4973,10 +4929,9 @@ We provide this as a quick reminder - keep in mind that the <a href="https://ht
 <p>
 In the next pages, let's see, through a set of examples, how to use these most important properties, methods, and events...
 </p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch2-2-7">2.2.7 The &lt;video&gt; Element JavaScript API</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 The JavaScript API is useful for implementing playlists, making custom user interfaces and many other interesting things. The "enhanced HTML5 multimedia players" lesson presented further on the course relies heavily on this API.
 </p>
@@ -4988,16 +4943,16 @@ This example gives the first steps towards writing a custom video player. It sho
 
 <h4>Try it online:</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 78. example video player (97) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 78. example video player (97) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image078.webp?raw=true"
   width="85%"
   alt="This example gives the first steps towards writing a custom video player." />
 &nbsp;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 79. cartoon image, custom controls (97) ---------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 79. cartoon image, custom controls (97) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image079.webp?raw=true"
@@ -5049,7 +5004,7 @@ This example gives the first steps towards writing a custom video player. It sho
 This example listens to the ended event, and calls a callback function when the video is ended.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------ 80. example calls a callback function when video ends (98) ------------------>
+<!--~~~~~~~~~~~~~~~~ 80. example calls a callback function when video ends (98) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image080.webp?raw=true"
@@ -5085,7 +5040,7 @@ This example detects the end of a video, then loads the next video, changes the�
 Check the online example below: use the progress cursor to go near the end of the first video that is being played, and see how it continues with the next video. 
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------------- 81. manage playlists (99) ----------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 81. manage playlists (99) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image081.webp?raw=true"
@@ -5168,7 +5123,7 @@ page); if you are interested, you may view the code.</p>
 <p>Please see this example online, originally written by <a href="https://christianheilmann.com/">
 Chris Heilmann</a>, and tuned by us ;).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------- 82. 2d transformations: scale, translate  rotate (100) --------------------->
+<!--~~~~~~~~~~~~~~~~~ 82. 2d transformations: scale, translate  rotate (100) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image082.webp?raw=true"
@@ -5192,7 +5147,7 @@ and the CSS that processes the different clicks and applies CSS3 transforms.</
 
 <p>This example also shows how to handle failures. See the code and play with this example below:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------- 83. how to track all possible events (101) --------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 83. how to track all possible events (101) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image083.webp?raw=true"
@@ -5331,7 +5286,7 @@ using SVG shapes! This example (try it <a href="https://www.w3.org/2010/Talks/0
 online</a>) is given "as is" for those of you who may be curious.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 85. cup on table xhtml5 and svg player (103) -------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 85. cup on table xhtml5 and svg player (103) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image085.webp?raw=true"
@@ -5621,7 +5576,7 @@ For this, use any sort of open source, free or commercial video encoding softwar
 So, let's suppose you have a video like the one below (we included it on YouTube for practical reasons). This video has subtitles (you can activate them in the YouTube player), but the goal of this lesson is to explain how we made them without using the YouTube embedded tools, which do not allow export the subtitle file to be exported in the webVTT format.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 87. picture guitar picking (108) -------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 87. picture guitar picking (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image087.webp?raw=true"
@@ -5656,7 +5611,7 @@ Many tools - both free and commercial - are available to add subtitles to a vid
 Go to the above Web site, click on the "subtitle a video" link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it's better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 88. example subtitles and captions (109) ---------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 88. example subtitles and captions (109) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image088.webp?raw=true"
@@ -5667,7 +5622,7 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 
 <p>Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 89. youtube make subtitles (110) -------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 89. youtube make subtitles (110) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image089.webp?raw=true"
@@ -5680,7 +5635,7 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 
 <h4>Try your subtitled/captioned video</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------- 90. example guitar picking subtitle captions (110) ----------------------->
+<!--~~~~~~~~~~~~~~~~~~~ 90. example guitar picking subtitle captions (110) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image090.webp?raw=true"
@@ -5695,7 +5650,7 @@ In this section, we will look at different possibilities for styling and positio
 
 The example below shows how we can do that (play the video for 40s, look at the positions and styles of the subtitles and captions, look at the HTML):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------------- 91. blank codepen (111) ------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 91. blank codepen (111) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image091.webp?raw=true"
@@ -6004,7 +5959,7 @@ allows you to control them programmatically, customize them, etc.
 chapters as small "clickable" squares. Furthermore, using the JavaScript API of the 
 &lt;track&gt; element, this Web site builds a navigation menu (on the right of the video):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------ 97. navigation menu using the track javascript api (117) -------------------->
+<!--~~~~~~~~~~~~~~~~ 97. navigation menu using the track javascript api (117) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image097.webp?raw=true"
@@ -6021,7 +5976,7 @@ file that contains longitudes and latitudes. When the video plays, JavaScript fu
 are called at given times and get the longitude and latitude. A Google Map and a Google 
 Street views are updated in real time.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------- 98. video sync with map and street views (117) ------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~ 98. video sync with map and street views (117) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image098.webp?raw=true"
@@ -6093,7 +6048,7 @@ accessible media players and resources</a>.
 
 Open source, and made for developers, <a href="https://videojs.com/">video.js</a> comes with many plugins (chapters, thumbnails etc.).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 100. make your player yours (119) ------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 100. make your player yours (119) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image100.webp?raw=true"
@@ -6121,7 +6076,7 @@ with free versions.
 
 Scrub Bar thumbnails (JWPlayer)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 101. scrub bar thumbnailes (120) -------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 101. scrub bar thumbnailes (120) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image101.webp?raw=true"
@@ -17989,15 +17944,14 @@ Complete source code:
 <!---
 Enter the URL of your repository (http, https or ftp): 
 --->
-<!------------------------------------------------------------------------------------------------>
-<!------------- 27x. input type enter url of your repository  () ------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!------------- 271b. input type enter url of your repository  () ------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image271b.webp?raw=true"
    width="65%"
    alt="Green valid, pink invalid.  Type email, name myemail." />
 </p>
-
 
 <h4>Source code extract:</h4>
 
@@ -18012,9 +17966,9 @@ Enter the URL of your repository (http, https or ftp): 
 8.  />
 ```
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-5-7">5.5.7 min, max and step</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 These attributes are useful for several input types such as number, range, date and  time (and other variants).
 
@@ -18046,9 +18000,9 @@ Their detailed use with these input fields have already been explained in sectio
 
 </details>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-5-8">5.5.8 multiple</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The multiple attribute is used with email and file input types. It's a Boolean attribute, so here are the different syntax possibilities:
 
@@ -18066,9 +18020,9 @@ With the &lt;input type="email"&gt;, this attribute enables the user to enter
 
 Or try it below in your browser: type in a list of email addresses separated by a comma, then look at the input field background color (pink = invalid, green = valid), and then submit:
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------- 271b. input type email - single or multiple (329) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image271b.webp?raw=true"
   width="65%"
@@ -18151,17 +18105,17 @@ Example without the multiple attribute:
 
 Use the standard key modifiers (shift, control, command) for selecting multiple files when the file chooser dialog popup.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-5-9">5.5.9 a warning</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 In the following pages, we present a set of rarely used attributes introduced by HTML5. 
 
 You might just glance at them and/or try the examples. The next pages cover their usage and you are welcome to use them for future reference (for those of you who like to cover the topics completely).
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-5-10">5.5.10 formaction and formmethod</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 These attributes are targeted to the &lt;input type="submit"&gt; input fields. They are rarely used.
 
@@ -18200,9 +18154,9 @@ The first shows a form with two submit buttons: 
   <li>the first button submits to the default URL specified by the action attribute of the form,</li>
   <li>the second button submits to another action specified by its formaction attribute.</li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 272. formaction attribute (332) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image272.webp?raw=true"
   width="40%"
@@ -18216,9 +18170,9 @@ The second example shows a form with two submit buttons:
 
 -   the second button using a POST:
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 273. formmethod attribute (332) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image273.webp?raw=true"
   width="40%"
@@ -18226,10 +18180,9 @@ The second example shows a form with two submit buttons:
 &nbsp;
 <br/>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-5-11">5.5.11 formnovalidate</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The formnovalidate attribute is targeted to the &lt;input type="submit"&gt; input fields. This attribute is rarely used, so there will be no questions about it in the end of the week's exercises.
 
 This atrribute allows the submission of a form even if it contains  <i>invalid</i> fields. For example:  a form that has an &lt;input type="email"&gt; field or a field required and which are not filled. 
@@ -18257,9 +18210,9 @@ Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,outp
 
 </details>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 275a. formnovalidate attribute (333) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image275a.webp?raw=true"
   width="40%"
@@ -18267,9 +18220,9 @@ Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,outp
 &nbsp;
 <br/>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-5-12">5.5.12 formtarget</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The formtarget attribute is targeted to the &lt;input type="submit"&gt; input fields. This attribute is rarely used.
 
@@ -18296,9 +18249,9 @@ This attribute's value indicates where the response from the form submission sho
 
 [Online example at JSBin ](https://jsbin.com/godice/2/edit?html,output)or try it in your browser below:
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 276a. formtarget attribute (333) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image276a.webp?raw=true"
   width="40%"
@@ -18322,9 +18275,9 @@ This attribute's value indicates where the response from the form submission sho
 10. </form>
 ```
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-5-13">5.5.13 formenctype</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 A word about the enctype attribute of the &lt;form&gt; element
 
@@ -18379,9 +18332,9 @@ The possible values for this field are:
 
 <a href="https://jsbin.com/lokukam/4/edit?html,output">Try this online example at JSBin</a>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 276. formenctype attribute (335) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image276.webp?raw=true"
    width="40%"
@@ -18423,10 +18376,9 @@ Source code:
 <h4>Explanations and how to see the difference between the two kinds of formenctype values</h4>
 
 If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,output) standalone mode (click the black arrow on the top right of the output tab, in JSBin), you should see this:
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 277. formenctype example in jsbin (335) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image277.webp?raw=true"
    width="50%"
@@ -18436,10 +18388,9 @@ If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,ou
 
 Then, open the devtools and go to the "Network" tab, click on the POST request. Once done, click on the right on the "Header" tab to see the HTTP headers, and scroll down, you should see the form-data entries in the header, like in this screenshot:
 
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 278. something went wrong (336) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image278.webp?raw=true"
    width="50%"
@@ -18449,9 +18400,9 @@ Then, open the devtools and go to the "Network" tab, click on the POST request. 
 
 And if you start again and click on the left submit button, the one without the formenctype attribute, you should see that the form content has been submitted "normally" (default value is "urlencoded", spaces are replaced by "+", etc.). Here is a screenshot of what you should see:
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-6-1">5.6.1 HTML5 Forms Elements</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&gt;, &lt;output&gt;, &lt;meter&gt;  and &lt;progress&gt; elements).
 
@@ -18473,16 +18424,15 @@ Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&g
 | \* Not really useful for most developers.  |
 
 </div>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-6-2">5.6.2 &lt;output&gt;</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The output element represents the result of a computation or user action. You can see it as a "specialized &lt;div&gt; or &lt;span&gt;" for displaying interactive results.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------------- 279. output field (337) ------------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image279.webp?raw=true"
    width="35%"
@@ -18508,9 +18458,9 @@ The oninput event handler directly uses the &lt;output&gt; element using the
 
 Result (do change the input field values):
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------ 278a. oninput event handler (337) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image278a.webp?raw=true"
   width="50%"
@@ -18527,10 +18477,9 @@ Result (do change the input field values):
 -   form:  associates the &lt;output&gt; element with its form owner. The value must be the id of a form in the same document. This allows you to place an &lt;output&gt; element outside of the &lt;form&gt; with which it is associated.
 
 <h4>Example #2</h4>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 278b. output element and attributes (337) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image278b.webp?raw=true"
   width="50%"
@@ -18556,18 +18505,16 @@ HTML5 has introduced new input field properties: valueAsNumber and valueAsDa
 As input field values are considered as strings by JavaScript, using x.value = a.value + b.value would result in a string concatenation instead of an addition. That's why we use the valueAsNumber property.
 
 This is why we used the valueAsNumber property also introduced by HTML5 for some input fields such as &lt;input type="range"&gt; and &lt;input type="number"&gt;, we also encountered the valueAsDate properties when we studied &lt;input type="date"&gt;.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-6-3">5.6.3 &lt;meter&gt;</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The &lt;meter&gt; element displays colored bars to represent numeric values.
 
 It can be useful to display a colored gauge to show disk usage, to highlight the relevance of a query result, or the fraction of a voting population that favours a particular candidate, etc. This element is often used with the &lt;input type="range"&gt; field as an instant feedback indicator.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------------- 280. blood pressure (338) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image280.webp?raw=true"
    width="50%"
@@ -18615,10 +18562,9 @@ Grades:  
 ```
 
 <h4>Explanations:</h4>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 281. slider example javascript code (339) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image281.webp?raw=true"
    width="65%"
@@ -18655,9 +18601,9 @@ A &lt;meter&gt; element used for displaying blood pressure might be a good can
 
 -   Good blog post: [How to use and style the meter element](https://www.hongkiat.com/blog/style-html5-meter/)
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-6-4">5.6.4 <progress></h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The <progress> element is similar to &lt;meter&gt; but it is used for progress bars (i.e., the percentage of a file being uploaded, etc.):
 
@@ -18665,9 +18611,9 @@ The <progress> element is similar to &lt;meter&gt; but it is used for progre
 <progress id=pr value=50 min=0 max=100>
 ```
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------- 282.  (xx) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image282.webp?raw=true"
    width="10%"
@@ -18680,10 +18626,9 @@ Gives:  
 The browser calculates the percentage corresponding to the value, min and max attributes and adjusts the length of the progress bar accordingly.
 
 If no value attribute is set, the progress bar will display an "indeterminate look", that may slightly vary among different browser implementations. 
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 283. progress bar w/indeterminate look (340) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image283.webp?raw=true"
   width="50%"
@@ -18718,22 +18663,22 @@ Download progress: 
 8.  </script>
 ```
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-6-5">5.6.5 &lt;datalist&gt;</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The &lt;datalist&gt; form element is useful for linking a list of choices to an input element.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------------- 284. choice of browsers (341) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="90%">
 <img src="./images/image284.webp?raw=true"
   width="40%"
   alt="Example of datalist for autocompletion." />
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------------- 285. datalist browser (341) ---------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="./images/image285.webp?raw=true"
   width="40%"
   alt="Another example of use of datalist." />
@@ -18742,25 +18687,25 @@ The &lt;datalist&gt; form element is useful for linking a list of choices to a
 
 We have already seen this element in action with different &lt;input&gt; elements, such as &lt;input type="color"&gt;, &lt;input type="date"&gt;, or &lt;input type="range"&gt;.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------------------- 227. autre (341) ---------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image227.webp?raw=true"
    width="15%"
    alt="Restricted choice of color." />
 &nbsp;
 <br/>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------- 286. restrict choices using datalist (341) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image286.webp?raw=true"
    width="60%"
    alt="Restrict choices using a datalist element." />
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 287. data list for sliders tick (341) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image287.webp?raw=true"
    width="65%"
@@ -18777,10 +18722,9 @@ The input field is related to the datalist that will propose auto-completion bas
 <h4>Typical use for auto-completion</h4>
 
 Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,output), or try it here in your browser (type the name of your favorite browser):
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 288. what is your favorite browser? (342) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image288.webp?raw=true"
    width="65%"
@@ -18811,21 +18755,18 @@ Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,outp
 </details>
 
 As you can see at <i>lines 2 and 4</i>, the id and list attributes match. The &lt;datalist&gt; element is wrapped around a set of &lt;option&gt; that are available for selection by another form control (in this example the input field from <i>line 2</i>).
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-7-1">5.7.1 Introduction</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section of the course, we will look at CSS pseudo classes that are useful for giving instant feedback when the user's input is not valid. We will also look at the new JavaScript API introduced by HTML5 for validating forms and form elements.
 
 In the following pages, we will first illustrate the concept of form validation with the &lt;input type="email"/&gt; field. It can be generalized to all kind of input types, such as url, number, etc. Some form attributes, such as pattern,  will also affect input field validity!
 
 Form validation is [supported](https://caniuse.com/#feat=form-validation) by all modern browsers.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-7-2">5.7.2 Automate Visual Feedback While Typing</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Most modern browsers propose default behavior for validating input fields and forms.
 
 The built-in validation system that comes with HTML5 automatically adds a CSS pseudo class to all input fields. Invalid fields (i.e. a badly worded email address in an &lt;input type="email"&gt; input field), will inherit the :invalid pseudo class, valid fields will inherit the :valid pseudo class.
@@ -18834,9 +18775,9 @@ A first step to improve your HTML form is to add some CSS rules to your input fi
 
 Also, at the time of submitting the form, some extra messages may be displayed as pop up text bubbles.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------- 289. popup text bubble examples (343) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image289.webp?raw=true"
    width="35%"
@@ -18863,9 +18804,9 @@ Submit form
 
 <b>Bottom of Form</b>
 --->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------- 288b. css required, valid and invalid rules (343) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image288b.webp?raw=true"
    width="65%"
@@ -18935,9 +18876,9 @@ Submit form
 Bottom of Form
 --->
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 288b. again, validation with css rules (344) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image288b.webp?raw=true"
    width="65%"
@@ -18986,9 +18927,9 @@ Phone number: 
 Submit form
 --->
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 289b. validation with pattern matching (345) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image289b.webp?raw=true"
    width="65%"
@@ -19021,10 +18962,9 @@ Submit form
 You must also take care of the different languages, otherwise you will get error message bubbles that show some parts in the local language, and the message from the title attribute "as is".
 
 Google Chrome on a French desktop computer:
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 290. chrome on french computer (346) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image290.webp?raw=true"
    width="65%"
@@ -19033,10 +18973,9 @@ Google Chrome on a French desktop computer:
 <br/>
 
 Same example on FireFox, the title attribute is ignored:
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------- 291. firefox title attribute (346) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image291.webp?raw=true"
    width="65%"
@@ -19047,16 +18986,13 @@ Same example on FireFox, the title attribute is ignored:
 <h4>The built-in validation system is an improvement on what existed before HTML5 (i.e., nothing), but additional work is required if you want fully localized, hand-made validation feedback.</h4>
 
 <h4>We will show solutions in the last section of this week's course.</h4>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name=ch5-7-3">5.7.3 JavaScript Form Validation API</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There is a JavaScript API for form validation. This API will let you use your own validation algorithm (i.e. check that you have entered the same password in two different input fields), and customize error messages. Also, together with some HTML/CSS/JavaScript you will be able to make your own message bubbles.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------- 290b. js form validation api (346) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image290b.webp?raw=true"
    width="65%"
@@ -19070,7 +19006,7 @@ Be careful when you try this example in JS Bin standalone mode (click the small 
 
 Or, you may try it <a href="https://jsbin.com/nalaxeg/1/edit?html,output">here</a> in your browser.
 
-<!---
+<!--
 Top of Form
 
 Example use of the validation API, enter different passwords and submit Password: ![](./images/image266.wmf)
@@ -19080,7 +19016,7 @@ Repeat password: ![](./images/image218.wmf)
 Submit
 
 Bottom of Form
---->
+-->
 
 <h4>Extract from source code:</h4>
 
@@ -19138,9 +19074,9 @@ At <i>lines 18</i> and <i>20</i> we added an input event listener: each ti
 
 <i>Lines 28</i> and <i>29</i> get the input fields' values, and <i>lines 30-35</i> check if the passwords are the same and set the validity of the field using the validation API's method setCustomValidity(error_message).
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-7-4">5.7.4 The validity property of input fields</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The validity property of input fields helps to get error details when the field is <i>invalid</i>. This property tests the different types of validation error.
 
@@ -19166,10 +19102,9 @@ The possible values for the validity property are: 
 </ul>
 
 Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JSBin that shows how to test the different types of validation errors</a>, or you may try it here in your browser (enter bad values, too big, too small, enter invalid characters, etc.):
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-------------------------- 292. enter value between 10 and 20 (348) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image292.webp?raw=true"
   width="65%"
@@ -19237,16 +19172,13 @@ It is also possible to get the validation error message, using the validationMe
 ```
 
 This is useful for making custom error messages. More about this topic in the next section of the course.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-7-5">5.7.5 Changing the default behavior</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Custom validation: changing the default behavior, aggregating error messages, removing bubbles, etc.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------- 293. in french, submit with one or two invalid fields (349) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image293.webp?raw=true"
   width="35%"
@@ -19271,10 +19203,9 @@ Here is [an adaptation of work presented at the developer.telerik.com Web site]
 <h4>Example that shows aggregation of error messages + overriding default behavior</h4>
 
 Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output) or try it here in your browser: enter invalid values and submit with one or two invalid fields.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 294. name and e-mail fields (350) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image294.webp?raw=true"
    width="65%"
@@ -19408,10 +19339,9 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 -   <i>Line 86</i>: Then we add this list element (a formatted error message corresponding to an invalid input field) to the error message container,
 -   <i>Lines 90-93</i>: The focus is given to the first invalid field that shows an error message.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch6-1-1">6.1.1 Video Intro -- Module 6</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Final week!
 
 Congratulations to all of you. Here, it's summer and it's hot, it's time to get holidays, but before that we need to finish the course. I'm talking from the very nice park of the University of Nice in the south of France where I work. And I want you to be as happy as I am today to teach you this final week. We will look this time at the HTML5 persistence, notably at the HTML5 cache that is useful for creating Web sites and Web applications that work offline. We will also study the web storage API that is useful for saving and restoring data on the client side directly in browser.
@@ -19425,11 +19355,9 @@ Finally, we will look at the geolocation API that is useful for locating the per
 You can provide a customized service that take into account the geolocation, or you can also display the position of the person in a map, we will see example that work with Google Map and with OpenStreetMap. Another classic use is automatic filling of the address input fields in a form.
 
 Instead of typing the zip code, entering the city, entering the country, you can guess that automatically and propose the form that is already filled with the address. I really enjoyed teaching you this HTML5 basic course and I'm looking forward to meeting you the next HTML5 part-2 course that would address more advanced topics
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="6-1-2">6.1.2 HTML5 JavaScript APIs</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We have already studied some of the HTML5 JavaScript APIs, including:
 
 -   The canvas API,
@@ -19445,10 +19373,9 @@ This week, we will look at some of the most useful APIs. Others will be covered 
   <li><b>The "Web Storage" API, sort of "super cookies", for storing pairs of key/values client side.</b> This API is useful for enabling Web sites to save/restore their state, or for writing <i>serverless</i> applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.</li>
   <li><b>The File API, that enables Web applications to work with local files</b>. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.</li>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 295. 'you are here' sign (353) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image295.webp?raw=true"
    width="35%"
@@ -19459,11 +19386,9 @@ This week, we will look at some of the most useful APIs. Others will be covered 
 <ul>
   <li><b>The Geolocation API for obtaining data such as longitude, latitude, altitude (when available), and speed</b>. You will learn how to write applications in combination with interactive maps. You will also learn how to guess the address of a user, for example for pre-filling a registration form with the city, country, and zip code that corresponds with the current location.</li>
 </ul>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch6-2-1">6.2.1 The Web storage API</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Web storage API introduces "two related mechanisms, similar to HTTP session cookies, for storing structured data on the client side".
 
 Indeed, Web Storage provides two interfaces - sessionStorage and localStorage - whose main difference is data longevity. This specification defines an API for persistent data storage of key-value pair data in Web clients.
@@ -19471,10 +19396,9 @@ Indeed, Web Storage provides two interfaces - sessionStorage and localStorag
 <b>With localStorage the data will remain until it is deleted, whereas with sessionStorage the data is erased when the tab/browser is closed.</b>
 
 For convenience, we will mainly illustrate the localStorage object. Just change "local" to "session" and it should work (this time with a session lifetime).</p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--------------------------------- 296. key value pairs (354) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image296.webp?raw=true"
    width="17%"
@@ -19510,10 +19434,9 @@ localStorage is a simple key-value store, in which the keys and values are stri
 <p>This data is located in a store attached to the origin of the page. We created <a href="https://jsbin.com/povuqa/1/edit">a JSBin example in which we included the above code</a>.
 
 Once opened in your browser, the JavaScript code is executed. With the browser dev. tools, we can check what has been stored in the localStorage for this domain:</p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------- 297. example of localStorage (355) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image297.webp?raw=true"
    width="65%"
@@ -19522,10 +19445,9 @@ Once opened in your browser, the JavaScript code is executed. With the browser d
 <br/>
 
 <p>Here is a view of the devtools. In more recent versions of Google Chrome, the "Resources" tab is named "Applications":</p>
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------------- 298. view of the devtools (355) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image298.webp?raw=true"
    width="65%"
@@ -19546,10 +19468,9 @@ Objects managed by Web Storage are no longer carried on the network and HTTP, an
   <li>An Interesting article on Web.dev: <a href="https://web.dev/storage-for-the-web/">Storage for the Web</a></li>
   <li>From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">Web Storage API</a></li>
 </ul>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch6-2-2">6.2.2 Example 1</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You can start filling this form and come back another day and complete it. It doesn't matter if you closed your browser before coming back. The form never loses what you entered, even if you reload the page, or press "backspace" by mistake. <b>This form auto saves/restores its content</b>.
 
 In this example, we use the most simple way to use localStorage:
@@ -19569,10 +19490,9 @@ oninput="localStorage.firstName=this.value;"
 ```
 
 Where firstName in red is the key and this.value the current value of the input field.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 299. example localstorage and html code (355) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image299.webp?raw=true"
    width="65%"
@@ -19622,11 +19542,9 @@ This time, we want the form content to be restored on page load/reload. We will 
 </details>
 
 The tests at <i>lines 7, 10, 13</i>, etc., verify that data has been saved, before trying to restore it. Without these tests, it would put the "undefined" string as the value of input fields with no corresponding data to restore.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch6-2-3">6.2.3 localStorage and sessionStorage</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This time we will look at another example that uses new methods from the API:
 
 -   localStorage.setItem(...),
@@ -19684,10 +19602,9 @@ Local stores (localStorage or sessionStorage) can also be iterated through in 
 Students may note that something seems a bit off in the example above: instead of calling localStorage.getItem(k), we simply access localStorage[k]. Why? Because keys in the local store can also be accessed as if the store were a simple JavaScript object. 
 
 Instead of localStorage.getItem("foo") and localStorage.setItem("foo", "bar"), one can write localStorage.foo and localStorage.foo = "bar". Of course there are limitations to this mapping: any string can serve as a key, so that localStorage.getItem("one two three") works, whereas that string would not be a valid identifier after the dot (but it could still work as localStorage["one two three"]).
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------ 300. number of times this page has shown on browser (359) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image300.webp?raw=true"
    width="40%"
@@ -19777,16 +19694,13 @@ Then click on the second button to add data to the store, click on the third to
 </details>
 
 You can check in the Chrome dev. tools user interface that the content of the localStorage changes as you click on the buttons.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch6-2-4">6.2.4 Example 2</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Local stores are also useful for<b> saving/restoring user preferences</b> of Web Applications. For example, the JS Bin tool you have been using since the beginning of this course uses localStorage to store the list of tabs you open, and their width:
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------ 301. example user preferences of web applications (361) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image301.webp?raw=true"
    width="65%"
@@ -19797,10 +19711,9 @@ Local stores are also useful for<b> saving/restoring user preferences</b> of W
 This way, the next time you come back to JSBin, "it will remember your last settings".
 
 Another example is a guitar FX processor / amp simulator your instructor is writing with some of his students. It uses localStorage to save/restore presets values:
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------- 302. another example of localstorage of preset values (362) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image302.webp?raw=true"
    width="65%"
@@ -19810,9 +19723,9 @@ Another example is a guitar FX processor / amp simulator your instructor is writ
 
 <h4>Save/restore preferences</h4>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------- 303. change color, size, speed of animate rectangle with gui (362) --------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image303.webp?raw=true"
    width="35%"
@@ -21986,4 +21899,4 @@ understanding of the material.
 
 . . .The end.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ end readme.md of W3Cx-3of5-HTML5.1x ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--- last updated 8-4-2023-10:02am --->
+<!-- last updated 8-4-2023-10:02am -->
