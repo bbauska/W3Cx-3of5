@@ -787,7 +787,7 @@ The navigation menu just below the header is a &lt;nav&gt; element. For the pu
 <h4>HTML code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```html5
 <!DOCTYPE html>
@@ -814,7 +814,7 @@ The navigation menu just below the header is a &lt;nav&gt; element. For the pu
 <h4>And here is the CSS we used in this example for the &lt;nav&gt; element:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```css
 nav {
@@ -858,7 +858,7 @@ nav span {
 <h4>HTML code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```html
 <section>
@@ -879,7 +879,7 @@ nav span {
 <h4>And here is the CSS:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```css
 section {
@@ -922,7 +922,7 @@ paragraphs (article content), and so on.</p>
 <h4>Example for the first blog article:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```html
 <section>
@@ -1012,7 +1012,7 @@ an &lt;aside&gt; element:</p>
 <br/>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```html
 <section>
@@ -1041,7 +1041,7 @@ of the online example</a>.</p>
 <h4>Here is the CSS for the &lt;aside&gt; element:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 aside {
@@ -1092,7 +1092,7 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 tag cloud definition, to display a page footer:</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```html
 <html>
@@ -1158,7 +1158,7 @@ that could eventually be syndicated in RSS streams.</p>
 cut into smaller &lt;section&gt; elements:</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```html
 <article id="id1">
@@ -1190,7 +1190,7 @@ each one being an &lt;article&gt; element.</p>
 blog post, for example:</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <article>
@@ -1333,7 +1333,7 @@ the element represents the heading of the implied section.
 Let's clarify this by looking at some example code:</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <body>
@@ -1435,7 +1435,7 @@ Notice that &lt;body&gt; is also a sectioning element. It's called a "sectioni
 <h4>Final good version:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <body>
@@ -1511,7 +1511,7 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 <h4>Ok version (no explicit sections everywhere):</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  <body>
@@ -1533,7 +1533,7 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 <h4>Better version (best practice):</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <body>
@@ -1596,7 +1596,7 @@ HTML5, the cornerstone for modern Web applications.</p>
 <h4>A minimal HTML5 document</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -1622,7 +1622,7 @@ HTML5, the cornerstone for modern Web applications.</p>
 <h4>Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/" target="_blank" rel="noopener noreferrer">this source</a>).</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```html5
 1.  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
@@ -1886,7 +1886,7 @@ header span {
 <h4>HTML code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -1913,7 +1913,7 @@ header span {
 <h4>And here is the CSS we used in this example for the &lt;nav&gt; element:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 nav {
@@ -1975,7 +1975,7 @@ Now, we have one big &lt;section&gt; element that contains a set of &lt;artic
 <h4>And here is the CSS:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 section {
@@ -2020,7 +2020,7 @@ Example for the first blog article:
 </p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <section>
@@ -2107,7 +2107,7 @@ After the long &lt;section&gt; element that contains all the blog articles dis
 <br/>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <section>
@@ -2135,7 +2135,7 @@ rel="noopener noreferrer">the code of the online example</a>.</p>
 <h4>Here is the CSS for the &lt;aside&gt; element:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 aside {
@@ -2185,7 +2185,7 @@ aside .tag-cloud {
 <h4>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below) after the tag cloud definition, to display a page footer:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <html>
@@ -2255,7 +2255,7 @@ It may not be clear whether a &lt;section&gt; may contain one or several &lt;a
 <h4>Example of a blog post defined as a long &lt;article&gt;, that is in turn cut into smaller &lt;section&gt; elements:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <article id="id1">
@@ -2285,7 +2285,7 @@ Indeed, we can also have a &lt;section&gt; that regroups all blog posts per 
 <p>Yes, you can, in case you would like to propose some navigation links with each blog post, for example:</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <article>
@@ -2416,7 +2416,7 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 <h4>Let's clarify this by looking at some example code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```html5
 <body>
@@ -2585,7 +2585,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 <h4>Ok version (no explicit sections everywhere):</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```html5
 1.  <body>
@@ -2607,7 +2607,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 <h4>Better version (best practice):</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
  
 ```
 1.  <body>
@@ -2653,7 +2653,7 @@ This example is a simple document, with a hyperlink that, once clicked, displays
 <h4>Extract of source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <body>
@@ -2714,7 +2714,7 @@ This element is subject to some constraints:</p>
 <p>And finally, here are some examples (from <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank">the HTML5 specification</a>) that mix the &lt;main&gt; element with the other sectioning elements already seen in the course:</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!-- other content -->
@@ -2749,7 +2749,7 @@ This element is subject to some constraints:</p>
 <p>Here is another example (also from the specification). Here the &lt;main&gt; element contains a &lt;nav&gt; element consisting of links to subsections of the main content:</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -2846,7 +2846,7 @@ We recommend this article written by Steve Faulkner: "<a href="https://www.pacie
 <p>Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an &lt;article&gt; that is in a &lt;section&gt; (this corresponds to the third example given in the "heading and sectioning elements" part of the course):</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <section>
@@ -2980,7 +2980,7 @@ The 4 examples below are given "as is" to give you some hints. There are lots of
 <p>This example uses the following HTML structure (notice that we use the "HTML entity syntax" for displaying "<" or ">". For example, "&lt;" displays a "<" character).</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <header>
@@ -3036,7 +3036,7 @@ You can look at the complete CSS code in the interactive example below (click on
 <h4>HTML code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <header>
@@ -3158,7 +3158,7 @@ Here is an example of what can be done using these elements: see the <a href="h
 <h4>Here is the code of this example:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
  
 ```
 <!DOCTYPE html>
@@ -3220,7 +3220,7 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 <h5>Source code of this example, see the summary/details inside another one:</h5>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <details open>
@@ -3578,7 +3578,7 @@ Content-Disposition: attachment; filename="MyImage.png";
 Here are some extracts from a Java Servlet that generate a zip file and forces the browser to propose downloading it using a specified name:
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -3748,7 +3748,7 @@ This information is not visible to humans: it is pure <i>semantic information<
 <h4>Quick example of microdata that describes a person</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <section [itemscope itemtype="https://schema.org/Person"]>
@@ -3780,7 +3780,7 @@ This information is not visible to humans: it is pure <i>semantic information<
 <p>We can also add another embedded data item in the middle, such as the person's address:</p>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  ...
@@ -3856,7 +3856,7 @@ Let's have a look now at a (small) example of an about page. It renders as a ver
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -3993,7 +3993,7 @@ However, if you do not find a vocabulary corresponding to your needs, keep in mi
 <p>Now that you have defined a container element, you may add properties to the HTML inside:</p>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  <section itemscope itemtype="https://schema.org/Person">
@@ -4044,7 +4044,7 @@ Give an element inside a microdata container its own itemscope attribute wit
 <h4>Again, look at the Person/Address example:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  ...
@@ -4315,7 +4315,7 @@ Press play to stream the neigh of a horse: (does not work in git)</p>
 <h4>As you can see, the code is very similar to the basic &lt;video&gt; element usage.</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -4417,7 +4417,7 @@ Please move the mouse pointer over this player's elements: (does not work in git
 <h4>HTML</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  <figure id="figaudio1">
@@ -4457,7 +4457,7 @@ Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
 <h4>HTML source code:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  <figure id="figaudio1">
@@ -4485,7 +4485,7 @@ Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
 <h4>CSS source code:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  #figaudio1 {
@@ -4602,7 +4602,7 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 <h4>Here is the HTML code. It's really simple, just notice the &lt;body onload="init();"&gt; which calls the JavaScript init() function right after the page is loaded.</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -4711,7 +4711,7 @@ This time the video is zoomed in so that it's much bigger than the browser's win
 <h4>HTML code:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -4743,7 +4743,7 @@ This time the video is zoomed in so that it's much bigger than the browser's win
 <h4>CSS code:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 html, body{
@@ -4961,7 +4961,7 @@ This example gives the first steps towards writing a custom video player. It sho
 <h4>Source code extract:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  <video id="vid" controls>
@@ -5013,7 +5013,7 @@ This example listens to the ended event, and calls a callback function when th
 <h4>Source code extract:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 <video src="video.ogv" id="myVideo">
@@ -5049,7 +5049,7 @@ Check the online example below: use the progress cursor to go near the end of th
 <h4>Source code:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -5158,7 +5158,7 @@ Below is a piece of code for handling errors during video playback:
 </p>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 ...
@@ -5228,7 +5228,7 @@ the movie duration for which there is data."</p>
 <h4>Source code extract:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -5389,7 +5389,7 @@ languages and captions only for English):
 </p>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 <video src="brave.webm">
@@ -5451,7 +5451,7 @@ In the interactive example presented before, we used a file called sintel-capti
 And here is an extract of the corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt">sintel-captions.vtt</a> file:
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  WEBVTT
@@ -5660,7 +5660,7 @@ The example below shows how we can do that (play the video for 40s, look at the 
 The WebVTT file is shown below. Notice the new attributes that have been added on the right end of the duration values:
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  WEBVTT
@@ -5867,7 +5867,7 @@ For example, we'll generate a custom navigation menu, using the &lt;track&gt; 
 <h4>Example of a WebVTT file that defines chapters:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  WEBVTT FILE
@@ -6177,7 +6177,7 @@ very simple, and you'll learn what you need from the provided examples.
 The stream is passed as a parameter to the then() method returned by the promise, as in this typical example (you can run it and see the result by clicking on the "CodePen" logo at the top right):
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 <video id="myVideo" autoplay>Fallback msg here.</video>
@@ -6241,7 +6241,7 @@ CSS effects in real time. Below, we give links to some cool examples available o
 <br/>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -6288,7 +6288,7 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 <h4>Code source:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -6358,7 +6358,7 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 Try this example that shows how to use the getUserMedia API. Note the CSS effects (click on the video to cycle from one effect to another):
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 //--
@@ -6413,7 +6413,7 @@ function changeFilter(el) {
 <h4>CSS</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 
 ```
@@ -6467,7 +6467,7 @@ filter: invert(1)
 <h4>HTML</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -6509,7 +6509,7 @@ The trick is to copy and paste the current image from the video stream into a 
 <h4>JavaScript</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 
 ```
@@ -6564,7 +6564,7 @@ border:1px solid black;
 ```
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 
 <h4>HTML</h4>
@@ -6655,7 +6655,7 @@ For more information, this <a href="https://developer.mozilla.org/en-US/docs/We
 <b>JavaScript</b>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 var vgaButton, qvgaButton, hdButton, dimensions, video, stream;
@@ -6741,7 +6741,7 @@ border:1px solid;
 <h4>HTML</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -6782,7 +6782,7 @@ border:1px solid;
 <h4>Code source extract related to the "constraint" object which specifies the desired resolutions:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  var vgaConstraints = {
@@ -6814,7 +6814,7 @@ Use this <a href="https://webrtchacks.github.io/WebRTC-Camera-Resolution/">Web 
 Here are some other constraints you can set. In particular, look at the ones for selecting the front or rear camera (smartphones):
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  // more on video resolution
@@ -6862,7 +6862,7 @@ Here are some other constraints you can set. In particular, look at the ones for
 <h4>Source code extract:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  function gotDevices(deviceInfos) {
@@ -6908,7 +6908,7 @@ Let's record, replay and download the video stream captured using a Webcam. You 
 <h4>JavaScript</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```js
 var mediaRecorder;
@@ -6998,7 +6998,7 @@ function download() {
 <h4>CSS</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 /*
@@ -7056,7 +7056,7 @@ margin: 0 10px 10px 0;
 <h4>HTML</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -7153,7 +7153,7 @@ function play() {
 <p>A trick consists in creating, on the fly, an invisible link with a download attribute (see Module 1) and a href attribute  that points to the blob object containing the recorded stream encoded using a given codec, then generate programmatically a click event on the link. This will force the browser to download a file of type video/webm to the hard disk.</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function download() {
@@ -7524,7 +7524,7 @@ ctx.fillRect(0,0,80,100);
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -7568,7 +7568,7 @@ ctx.fillRect(0,0,80,100);
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -7807,7 +7807,7 @@ show how to draw a text message with a given font.</p>
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -7862,7 +7862,7 @@ Your browser does not support the canvas tag.
 <h4>Source code extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function drawSomething() {
@@ -7929,7 +7929,7 @@ If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) a
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -7993,7 +7993,7 @@ What if we wanted to draw these 3 rectangles at another position, as a group? We
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8039,7 +8039,7 @@ Your browser does not support the canvas tag.
 <h4>Code extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas, ctx;
@@ -8086,7 +8086,7 @@ Now we can start having some fun... let's draw a monster's head using only rect
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8145,7 +8145,7 @@ Your browser does not support the canvas tag.
 <h4>An extract of the JavaScript source code is:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function drawMonster(x, y) {
@@ -8186,7 +8186,7 @@ The idea behind 2D transformations is that instead of modifying all the coordina
 Let's take a piece of code that draws something corresponding to the original coordinate system, located at the top left corner of the canvas:
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function drawMonster(x, y) {
@@ -8225,7 +8225,7 @@ This code is the just the same as in the previous example except that we removed
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -8261,7 +8261,7 @@ ctx.restore();
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8323,7 +8323,7 @@ Now, instead of simply calling drawMonster(0, 0), we will call first ctx.trans
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -8359,7 +8359,7 @@ ctx.restore();
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8442,7 +8442,7 @@ Here is the previous example, but this time we translated the coordinate system
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -8478,7 +8478,7 @@ ctx.restore();
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8558,7 +8558,7 @@ drawMonster(0, 0);
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -8594,7 +8594,7 @@ var angle = Math.atan2(toy-fromy,tox-fromx);
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8696,7 +8696,7 @@ Multiple contexts can be backed up consecutively and restored. Contexts saved w
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 // Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -8732,7 +8732,7 @@ ctx.restore();
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8824,7 +8824,7 @@ We slightly modified the function that draws the monster:
 <h4>function drawMonster</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function drawMonster(x, y, angle, headColor, eyeColor) {
@@ -8881,7 +8881,7 @@ different colors and line widths:</p>
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -8955,7 +8955,7 @@ It also provides a set of context properties for setting the character font and 
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -9033,7 +9033,7 @@ context.fillText("Hello World!", x, y [, maxWidth]);
 <h4>Forcing a text not to exceed a certain width: the maxWidth property</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -9068,7 +9068,7 @@ context.strokeText("Hello World!", 10, 220, 150);
 <h4>Source code extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  ...
@@ -9098,7 +9098,7 @@ The ctx.measureText() method can be used to get the current width in pixels of
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -9136,7 +9136,7 @@ context.stroke();
 <h4>Source code extract from this example:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  context.font = "60pt Calibri";
@@ -9169,7 +9169,7 @@ The textBaseline property of the context is used to specify the different ways
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -9245,7 +9245,7 @@ The textAlign property of the context tells how the x parameter will be used
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -9288,7 +9288,7 @@ context.fillText("right", 250, 100);
 <h4>Typical use (source code taken from the above example):</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  context.textAlign = "center";
@@ -9326,7 +9326,7 @@ But let's start with a basic example!
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE HTML>
@@ -9398,7 +9398,7 @@ This example illustrates the use of the different variants of the drawImage me
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE HTML>
@@ -9449,7 +9449,7 @@ border:1px solid black;
 <h4>Source code extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var imageObj = new Image();
@@ -9518,7 +9518,7 @@ border:1px solid black;
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE HTML>
@@ -9573,7 +9573,7 @@ border:1px solid black;
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE HTML>
@@ -9626,7 +9626,7 @@ frequency on most modern computers or mobile devices.
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE HTML>
@@ -9701,7 +9701,7 @@ This example shows:
 <h4>Source code extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <script>
@@ -9788,7 +9788,7 @@ Here is an example that draws 1000 random rectangles in a canvas, using immedia
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx, w, h;
@@ -9828,7 +9828,7 @@ console.timeEnd("time to draw");
 ```
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas, ctx, w, h;
@@ -9887,7 +9887,7 @@ Same example as before, this time using the buffered mode for drawing rectangles
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx, w, h;
@@ -10034,7 +10034,7 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10072,7 +10072,7 @@ ctx.stroke();
 <h4>Code source extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas=document.getElementById('myCanvas');
@@ -10118,7 +10118,7 @@ In this example, the entire grid is drawn during the execution of the last line 
 <h4>HTML</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10148,7 +10148,7 @@ ctx.stroke();
 <h4>Code source:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas=document.getElementById('myCanvas');
@@ -10188,7 +10188,7 @@ Try this:
 <h4>Code source:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas=document.getElementById('myCanvas');
@@ -10233,7 +10233,7 @@ Let's look at the drawing from the last example of the previous section:
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10287,7 +10287,7 @@ What we will try first is to call stroke() after the first half of the path, t
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10325,7 +10325,7 @@ ctx.fill();
 <h4>Here is the code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas=document.getElementById('myCanvas');
@@ -10381,7 +10381,7 @@ using the ctx.beginPath() method, as shown in the next example.
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10421,7 +10421,7 @@ ctx.fill();
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas=document.getElementById('myCanvas');
@@ -10464,7 +10464,7 @@ It's interesting to see how we can write a single "draw line" function that take
 <h4>Here is the code for this "utility" function that you may find useful:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function drawLine(x1, y1, x2, y2, color, width) {
@@ -10512,7 +10512,7 @@ Notice the save/restore of the context at the beginning/end of the function. Thi
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10572,7 +10572,7 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 <h4>Example #1:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  // Adapted from : https://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
@@ -10641,7 +10641,7 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10744,7 +10744,7 @@ The ctx.closePath() method indicates that we would like a closed path: draw fr
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10777,7 +10777,7 @@ ctx.stroke();
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas=document.getElementById('myCanvas');
@@ -10854,7 +10854,7 @@ The last parameter is optional and has a value of false by default. If true, 
 <br/>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -10928,7 +10928,7 @@ Then, the result is the "complementary" of the previous arc:
 
 <h4>Source code:</h4>
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas = document.getElementById("myCanvas");
@@ -11043,7 +11043,7 @@ This method can be confusing. It was defined mainly for drawing rounded shapes l
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -11098,7 +11098,7 @@ context.stroke();
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -11144,7 +11144,7 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var roundedRect=function(ctx,x,y,width,height,radius,fill,stroke) {
@@ -11199,7 +11199,7 @@ This example at JS Bin is the same as the previous one, except that we added at 
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -11295,7 +11295,7 @@ This could be particularly helpful if you are dealing with something other than 
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -11393,7 +11393,7 @@ The control point controls the curvature - if we move the control point farther 
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas=document.querySelector('#myCanvas1');
@@ -11430,7 +11430,7 @@ Try this:
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -11462,7 +11462,7 @@ context.stroke();
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  context.beginPath();
@@ -11495,7 +11495,7 @@ We propose a useful function for drawing curved arrows. See this example:
 <h4>JavaSscript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas = document.querySelector('#myCanvas');
@@ -11554,7 +11554,7 @@ border: 1px solid black;
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -11574,7 +11574,7 @@ border: 1px solid black;
 <h4>Source code of the function that draws a curved arrow:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function drawCurvedArrow(startPointX, startPointY,
@@ -11702,7 +11702,7 @@ Try this:
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -11764,7 +11764,7 @@ Try this:
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -11798,7 +11798,7 @@ Try this:
 <h4>Extract from source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  context.beginPath();
@@ -11874,7 +11874,7 @@ Here is an example that shows how to draw different filled rectangles in blue, w
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -11963,7 +11963,7 @@ function draw() {
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -12105,7 +12105,7 @@ This code is rather ugly isn't it? It would have been better to use a loop...
 <h4>Here is function that draws a chessboard:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 // n = number of cells per row/column
@@ -12147,7 +12147,7 @@ more powerful. Try to call the function with a value of 10, 20, or 2...
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx, grdFrenchFlag;
@@ -12186,7 +12186,7 @@ ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -12227,7 +12227,7 @@ outline of the rectangles at 5 pixels:
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx, grdFrenchFlag;
@@ -12265,7 +12265,7 @@ ctx.strokeRect(cellWidth*(i), cellHeight*j, cellWidth, cellHeight);
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -12290,7 +12290,7 @@ border: 1px solid black;
 <h4>Extract from source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 function drawCheckboard(n) {
@@ -12329,7 +12329,7 @@ Like in the first example we will draw a filled rectangle that is the same size�
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx, grdFrenchFlag;
@@ -12358,7 +12358,7 @@ ctx.fillRect(0, 0, 300, 200);
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -12404,7 +12404,7 @@ And if we draw the same rectangle with the canvas size, here is the result:
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx, grdFrenchFlag;
@@ -12433,7 +12433,7 @@ ctx.fillRect(0, 0, 300, 200);
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -12480,7 +12480,7 @@ the rectangle coordinates. Try this:
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx, grdFrenchFlag;
@@ -12516,7 +12516,7 @@ ctx.fillRect(x, y, cellWidth, cellHeight);
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -12541,7 +12541,7 @@ border: 1px solid black;
 <h4>Extract from source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 function setGradient(x, y, width, height) {
@@ -12595,7 +12595,7 @@ Here is an example of a radial gradient that interpolates the color of the rainb
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx, grd;
@@ -12623,7 +12623,7 @@ function draw() {
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -12696,7 +12696,7 @@ grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx, grd;
@@ -12724,7 +12724,7 @@ ctx.fillRect(0, 0, 300, 200);
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -12832,7 +12832,7 @@ imageObj.onload = function(){
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx, pattern1;
@@ -12892,7 +12892,7 @@ Your browser does not support the canvas tag. </canvas>
 <h4>JavaScript source code:</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas, ctx, pattern1;
@@ -12961,7 +12961,7 @@ Your browser does not support the canvas tag. </canvas>
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx, pattern1;
@@ -13065,7 +13065,7 @@ The complete example code that produces the result shown at the beginning of thi
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -13163,7 +13163,7 @@ Your browser does not support the canvas tag.
 <h4>The image loader function</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function loadImages(imagesToBeLoaded, drawCallback) {
@@ -13222,7 +13222,7 @@ Your browser does not support the canvas tag.
 <h4>Here is the function:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function drawRectanglesWithPatterns() {
@@ -13277,7 +13277,7 @@ Your browser does not support the canvas tag.
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx;
@@ -13322,7 +13322,7 @@ Your browser does not support the canvas tag.</canvas>
 <h4>JavaScript source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas, ctx;
@@ -13368,7 +13368,7 @@ Your browser does not support the canvas tag.</canvas>
 <p>Let's take a <a href="https://codepen.io/w3devcampus/pen/YzZBxmO">previous example</a>, the one that draws a filled circle with an outline. And, let's add a shadow to it using the following code:</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  ...
@@ -13422,7 +13422,7 @@ Your browser does not support the canvas tag.</canvas>
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -13495,7 +13495,7 @@ then draw the outlined circle by calling ctx.stroke().
 <h4>Correct version of the code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  ...
@@ -13532,7 +13532,7 @@ then draw the outlined circle by calling ctx.stroke().
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -13626,7 +13626,7 @@ ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wiref
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -13696,7 +13696,7 @@ The lineCap property of the context indicates the way line end caps are render
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -13755,7 +13755,7 @@ corners, round, or bevel for "cut corners".</p>
 </p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -13894,7 +13894,7 @@ Below is the example shown in the video, with source code:
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -13989,7 +13989,7 @@ Please try this example that moves/animates a div using setInterval:
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -14037,7 +14037,7 @@ clearInterval(requestId);
 <h4>Extract from the source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <body>
@@ -14086,7 +14086,7 @@ We use the drawMonster() function:
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -14173,7 +14173,7 @@ We use the drawMonster() function:
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <body onload="init();">
@@ -14302,7 +14302,7 @@ Check the example below (click on start animation):
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -14396,7 +14396,7 @@ first parameter only once, we also have to call it at the end of the loop.
 <h4>Extract from source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function animationLoop() {
@@ -14507,7 +14507,7 @@ with cancelAnimationFrame(id).
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <body onload="init();">
@@ -14558,7 +14558,7 @@ with cancelAnimationFrame(id).
 <h4>Source code extract - please compare with the previous example that used setInterval():</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function animationLoop(timeStamp) {
@@ -14703,7 +14703,7 @@ the gamePad API</a> for using USB or wireless gamepads/joysticks/game controlle
 <a href="http://jsbin.com/korele/edit" target="_blank">Online example on JS Bin</a>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -14788,7 +14788,7 @@ This example shows how to handle key events in a canvas by adding a key listener
 window object. Like that, all key press in the document will trigger the event listener function.</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <canvas id="myCanvas" width="350" height="200">
@@ -14813,7 +14813,7 @@ return false;
 <h4>Code source extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <canvas id="myCanvas" width="350" height="200">
@@ -14853,7 +14853,7 @@ the focus, etc...
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -14956,7 +14956,7 @@ cancelAnimationFrame(requestId);
 <h4>Code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <script>
@@ -15047,7 +15047,7 @@ Now, if we try an example with the above canvas declaration, we show when an HT
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -15105,7 +15105,7 @@ Note that the line that forces the focus to the canvas is commented by default. 
 <h4>Extract from the code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas;
@@ -15160,7 +15160,7 @@ and when the mouse cursor goes out of the canvas, we call canvas.blur() to uns
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -15272,7 +15272,7 @@ cancelAnimationFrame(requestId);
 <h4>Code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function init() {
@@ -15393,7 +15393,7 @@ Play with the example below that show the problem:
 <h4>JavaScript</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx, mousePos, mouseButton;
@@ -15446,7 +15446,7 @@ border:1px solid black
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -15486,7 +15486,7 @@ function getMousePos(canvas, evt) {
 <h4>WRONG code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  ...
@@ -15582,7 +15582,7 @@ function getMousePos(canvas, evt) {
 <h4>Extract from source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  var canvas, ctx, mousePos, mouseButton;
@@ -15649,7 +15649,7 @@ This example shows an animation at 60 frames/s using requestAnimationFrame, wer
 <h4>Code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx;
@@ -15719,7 +15719,7 @@ function animationLoop() {
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 ...
@@ -15778,7 +15778,7 @@ function handleMouseMove(evt) {
 We just added mouseup and  mousedown listeners, extract from the source code:
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function handleMouseMove(evt) {
@@ -15843,7 +15843,7 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 <h4>Code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <script>
@@ -15937,7 +15937,7 @@ Yep, this is not a straightforward process...
 <h4>CSS code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <style>
@@ -15959,7 +15959,7 @@ Yep, this is not a straightforward process...
 <h4>JavaScript code for the resize event listener:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 function init() {
@@ -16009,7 +16009,7 @@ When the canvas is resized, its width became smaller than the monster's size. W
 The code is very similar to the previous example, we just replaced drawDiagonals() by drawMonster(...), and we added a test in the drawMonster(...) function for scaling the monster if it's bigger than the canvas width (look at <i>lines 10-16</i>), this is a common trick:
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function drawMonster(x, y, angle, headColor, eyeColor) {
@@ -16366,7 +16366,7 @@ In the example below, there are three radio buttons that allow the user to choos
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <fieldset>
@@ -16402,7 +16402,7 @@ In the example below, there are three checkboxes that are all part of an opt-in 
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <fieldset>
@@ -16509,7 +16509,7 @@ The &lt;input type="color"> can fire change or input events. Here is an ex
 Source code:
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -16728,7 +16728,7 @@ Here is <a href="https://jsbin.com/ganipuv/edit?html,output">an interactive exa
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -16793,7 +16793,7 @@ While if we enter a date in the future:
 <h4>Extract from source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <body>
@@ -16962,7 +16962,7 @@ Typical use:
 Try it on your browser:                         Enter your email: 
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -17028,7 +17028,7 @@ Enter a telephone number: 
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -17079,7 +17079,7 @@ Enter a URL (custom validation, must start with http, https or ftp): 
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -17168,7 +17168,7 @@ Example that shows a drop down list of recent searches (Safari screenshot borro
 <h4>Source code for the knowledge check below</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -17264,7 +17264,7 @@ Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid):�
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -17359,7 +17359,7 @@ This input type renders as a slider. It accepts the same attributes as the &lt;
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -17451,7 +17451,7 @@ Adding "ticks" to the range slider using a &lt;datalist&gt; element
 <h4>Using the &lt;datalist&gt; element, it's possible to display "ticks" above the range slider, at given positions.</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <label for="slider2">value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:</label>
@@ -17560,7 +17560,7 @@ This attribute is useful for putting input fields outside the form itself. The 
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -17643,7 +17643,7 @@ Try it in your browser here:
 <h4>Source code extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <form submit="test.php" method="post" **autocomplete="on"**>
@@ -17689,7 +17689,7 @@ The required attribute makes the input field invalid if kept empty. 
 <h4>Extract from source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <form>
@@ -17717,7 +17717,7 @@ Read [these explanations](https://html.spec.whatwg.org/multipage/common-microsy
 <h4>Source code for the knowledge check 5.5.4</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -17772,7 +17772,7 @@ Please try it in your  browser (Type "F", "E", "O", C" etc., or just click insi
 <h4>Source code extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <form>
@@ -17864,7 +17864,7 @@ As seen in the previous examples, we used some CSS pseudo classes for automatica
 <h4>Complete source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -17906,7 +17906,7 @@ Enter a pseudo (6-12 characters): ![](./images/image218.wmf)
 Complete source code:
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -17977,7 +17977,7 @@ Their detailed use with these input fields have already been explained in sectio
 <h4>Typical use</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <input id="mydate" name="mydate"
@@ -18030,7 +18030,7 @@ Or try it below in your browser: type in a list of email addresses separated by 
 <h4>Complete source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -18190,7 +18190,7 @@ In general, such forms have two submit buttons, one with the formnovalidate at
 Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,output)):
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <form action="form.php">
@@ -18343,7 +18343,7 @@ The possible values for this field are:
 Source code:
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -18733,7 +18733,7 @@ Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,outp
 <h4>Source code of this example:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <form action="demo_form.asp" method="get">
@@ -18814,7 +18814,7 @@ Submit form
 <h4>Source code extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -18886,7 +18886,7 @@ Bottom of Form
 <h4>Source code extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  .myForm input:focus {
@@ -18937,7 +18937,7 @@ Submit form
 <h4>Extract from source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <form class="myForm">
@@ -19019,7 +19019,7 @@ Bottom of Form
 <h4>Extract from source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -19113,7 +19113,7 @@ Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JS
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -19214,7 +19214,7 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 <h4>Complete source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -19411,7 +19411,7 @@ localStorage is a simple key-value store, in which the keys and values are stri
 <h4>Example:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  // Using localStorage
@@ -19511,7 +19511,7 @@ This time, we want the form content to be restored on page load/reload. We will 
 <h4>Source code extract (only addition to the previous example):</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  // Called when the page is loaded
@@ -19617,7 +19617,7 @@ Instead of localStorage.getItem("foo") and localStorage.setItem("foo", "bar")
 Then click on the second button to add data to the store, click on the third to remove data. Finally, the last one clears the whole data store.
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 <h4>Source code:</h4>
 ```
@@ -19746,7 +19746,7 @@ The function initPreferences is executed when the page is loaded.
 <h4>Source code extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 function initPreferences() {
@@ -19842,7 +19842,7 @@ Note that at <i>line 2</i>, we use addEventListener (that is not using the o
 We have seen how to save all input fields' content on the fly. Now, let's see how we can restore saved values and update the form. This is done using the function restoreFormContent():
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1. function restoreFormContent() {
@@ -19939,7 +19939,7 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -20250,7 +20250,7 @@ some canvas here, or image elements and so on.
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -20333,7 +20333,7 @@ button and choose one file):
 <h4>Complete source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -20382,7 +20382,7 @@ button and choose one file):
 <p>Select several images: &lt;input type="file" accept="image/*" multiple onchange="filesProcess(this.files)" name="selection"/&gt;</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1. <p>
@@ -20478,7 +20478,7 @@ The <a href="https://www.w3.org/TR/FileAPI/">HTML5 File API specification</a> 
 <p>All these methods take as a unique parameter a File object (for example, a file chosen by a user after clicking on a &lt;input type=file&gt; input field). Below, we use, as an example, the readAsText method:</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 function readFileContent(f) {
@@ -20549,7 +20549,7 @@ text area. This example is detailed further in the course. Click and select a te
 <h4>Complete source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -20608,7 +20608,7 @@ This time, please select multiple text files (using shift for multiple selection
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -20719,7 +20719,7 @@ in its pages.</p>
 <h4>Source code extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1. // User selects file. Read it as an ArrayBuffer and pass to the API.
@@ -20862,7 +20862,7 @@ in your browser:</p>
 <h4>Source code extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1. <label for="files">Choose multiple files:</label>
@@ -20931,7 +20931,7 @@ in your browser:</p>
 <h4>Source code extract:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 function drawImage(imageFile) {
@@ -20998,7 +20998,7 @@ function readFileAndDraw(files) {
 <h4>Typical use</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 navigator.geolocation.getCurrentPosition(showPosition, onError);
@@ -21026,7 +21026,7 @@ function onError(err) {
 <h4>Source code of this typical example:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
@@ -21118,7 +21118,7 @@ function onError(err) {
 <h4>Source code of the example:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -21214,7 +21214,7 @@ following options:</p>
 <h4>Source code:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 // Just ask to turn GPS on, if available
@@ -21275,7 +21275,7 @@ we think having such a basic example might be useful.</p>
 <h4>JavaScript</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 function getLocation(e) {
@@ -21317,7 +21317,7 @@ function error() {
 <h4>CSS</h4>
 
 <details open>
-  <summary>Click to expand!</summary>
+  <summary>Click to Toggle!</summary>
 
 ```
 html, body {
@@ -21343,7 +21343,7 @@ display: inline-block;
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <html>
@@ -21367,7 +21367,7 @@ display: inline-block;
 <h4>HTML part:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  <html>
@@ -21394,7 +21394,7 @@ display: inline-block;
 <h4>JavaScript part:</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 1.  function getLocation(e) {
@@ -21475,7 +21475,7 @@ Google reverse geocoding example (screenshot only):</p>
 <p>Source code of this example (in order to run it, you need a Google API key, used at <i>line 6</i>).</p>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -21597,7 +21597,7 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -21683,7 +21683,7 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```
 <!DOCTYPE html>
@@ -21787,7 +21787,7 @@ run in this page):</p>
 <h4>HTML</h4>
 
 <details open>
- <summary>Click to expand!</summary>
+ <summary>Click to Toggle!</summary>
 
 ```html
 <!DOCTYPE html>
