@@ -198,7 +198,7 @@ Here are a few possibilities for Web editors:
 <br/>
 
 <ul>
-<li><a href="https://jsbin.com/">JS Bin</a></li>
+  <li><a href="https://jsbin.com/">JS Bin</a></li>
 </ul>
 
 <p>JS Bin is an open source collaborative Web development debugging tool. Most of the examples that are in this course are on JSBin.
@@ -241,9 +241,7 @@ We are then providing references to the browser support of HTML5 features presen
 <h4>Can I use</h4>
 
 <a href="https://caniuse.com/">Can I Use</a> provides up-to-date tables for support of front-end Web technologies on desktop and mobile Web browsers. Below is a snapshot of what information is given by CanIUse when searching for "CSS3 colors".</a>
-<p>
-Example of a <a href="https://caniuse.com/">CanIUse browser</a> support table (using CSS3 colors).
-</p>
+<p>Example of a <a href="https://caniuse.com/">CanIUse browser</a> support table (using CSS3 colors).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. caniuse example (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
