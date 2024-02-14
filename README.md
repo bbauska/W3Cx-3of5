@@ -11,17 +11,18 @@ w3cx-3of5-html5.1x: Coursera - Front-End Web Development - HTML5 Coding Essentia
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img  src="./images/w3c-logo.webp?raw=true"
-  alt="W3C logo"
+  alt="W3Cx logo."
+  title="W3Cx logo"
   style="width:35%;" />
 </p>
 
 <h3 align="center">W3Cx-3of5-HTML5.1x - Coding Essentials and Best Practices</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. W3Cx-3of5-HTML5.1x logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image001.webp?raw=true"
   style="width:65%;"
+  title="W3Cx HTML 5.1x logo"
   alt="W3Cx HTML 5.1x logo" />
 
 <h2><a href="#table-of-contents">Table of Contents</a></h2>
@@ -189,11 +190,11 @@ Here are a few possibilities for Web editors:
 <p>To help you practice during the whole duration of the course, we use the following interactive online editors. Pretty much all the course's examples actually use these tools.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. jsbin logo (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image002.webp?raw=true"
   alt="JSBin logo."
-  width="15%" />
+  title="JSBin logo"
+  style="width:15%" />
 &nbsp;
 <br/>
 
@@ -206,11 +207,11 @@ Here are a few possibilities for Web editors:
 Tutorials can be found on the Web such as <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843" target="_blank">this one</a> or on YouTube. The tool is really simple, just open the link to the provided examples, look at the code, look at the result, etc. And you can modify the examples as you like, you can also modify / clone / save / share them. Keep in mind that it&apos;s always better to be logged in (it&apos;s free) if you do not want to lose your contributions/personal work.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. codepen logo (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image003b.webp?raw=true"
-   alt="CodePen logo."
-   width="15%">
+  alt="CodePen logo."
+  title="CodePen logo"
+  style="width:15%">
 &nbsp;
 <br/>
 
@@ -244,22 +245,22 @@ We are then providing references to the browser support of HTML5 features presen
 <p>Example of a <a href="https://caniuse.com/">CanIUse browser</a> support table (using CSS3 colors).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. caniuse example (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image004.webp?raw=true"
-   alt="Example CSS in CanIUse."
-   width="450px;" />
+  alt="Example CSS in CanIUse."
+  title="Example CSS in CanIUse"
+  style="width:450px;" />
 &nbsp;
 <br/>
 
 <h4>MDN Web Docs</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05. mdn web docs logo (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image005.webp?raw=true"
-   alt="Logo of MDN Web Docs."
-   width="35%">
+  alt="Logo of MDN Web Docs."
+  title="Logo of MDN Web Docs"
+  style="width:35%">
 &nbsp;
 <br/>
 <p>
@@ -292,11 +293,11 @@ The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validato
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 06. laptop showing unicorn validator (06) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image006.webp?raw=true"
-   alt="Laptop Showing Unicorn Validator."
-   width="25%" />
+  alt="Laptop Showing Unicorn Validator."
+  title="Laptop showing unicorn validator"
+  style="width:25%" />
 </p>
 
 <h4>Unicorn</h4>
@@ -317,12 +318,13 @@ The <a href="https://www.w3.org/2009/cheatsheet/" target="_blank" rel="noopener
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 07. w3c cheat sheet snapshot image (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image007.webp?raw=true"
-   alt="W3C Cheat Sheet snapshot image."
-   width="65%" />
+  alt="W3C Cheat Sheet snapshot image."
+  title="W3C Cheat Sheet snapshot image"
+  style="width:65%" />
 </p>
+
 <p>Its main feature is a lookup search box, where one can start typing a keyword and get a list of matching properties/elements/attributes/functions in the above-mentioned specifications, and further details on those when selecting the one of interest.</p>
 
 <h4>The W3C cheatsheet is only available as a <a href="https://dev.w3.org/2009/cheatsheet/doc/" target="_blank" rel="noopener noreferrer">pure Web application</a>.</h4>
@@ -343,10 +345,10 @@ Contributing to this standardization process might be a bit scary or hard to app
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08. github (the octocat) logo (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image008.webp?raw=true"
-  width="15%"
+  style="width:15%"
+  title="GitHub (the octocat) logo"
   alt="Github (the octocat) logo." />
 </p>
 <p>
@@ -356,10 +358,10 @@ If you're looking to an easy way to dive into this standardization processes, ch
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 09. w3c web incubator community group logo (08) ~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image009.webp?raw=true"
-  width="25%"
+  style="width:25%"
+  title="W3C Web Incubator Community Group logo"
   alt="W3C Web Incubator Community Group logo." />
 </p>
 <p>
@@ -376,11 +378,11 @@ W3C's primary activity is to develop protocols and guidelines that ensure long-t
 <h4>A few history bits</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 10. Tim Berners-Lee, WWW developer (08) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image010.webp?raw=true"
   alt="Tim Berners-Lee at his desk in CERN, Switzerland, 1994."
-  width="65%" />
+  title="Tim Berners-Lee at his desk in CERN, Switzerland, 1994"
+  style="width:65%" />
 </p>
 <br/>
 
@@ -597,10 +599,10 @@ synthesized speech.</p>
 Web site. The text alternative is going to be a brief description of the link target.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 11. W3C logo (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image011.webp?raw=true"
-  width="15%"
+  style="width:15%"
+  title="W3C logo"
   alt="W3C logo." />
 </p>
 <br/>
@@ -615,11 +617,11 @@ rel="noopener noreferrer">W3C Home</a></p>
 ```
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 12. html5 logo (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image012.webp?raw=true"
-   alt="HTML5 logo"
-   width="15%" />
+  alt="HTML5 logo."
+  title="HTML5 logo"
+  style="width:15%" />
 </p>
 <br/>
 
@@ -637,11 +639,11 @@ rel="noopener noreferrer">W3C Home</a></p>
 ```
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 13. new structural elements in html5 (13) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image013.webp?raw=true"
-   alt="Some of the new structural elements introduced by HTML5: section, article, etc."
-   width="55%" />
+  alt="Some of the new structural elements introduced by HTML5: section, article, etc."
+  title="Some of the new structural elements introduced by HTML5: section, article, etc"
+  style="width:55%" />
 </p>
 <br/>
 
@@ -733,11 +735,11 @@ Let's study <a href="https://jsbin.com/bucokav/edit?html,output" target="_blank
 <h4>Use a &lt;header&gt; at the top of the blog</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 14. image 'Simple HTML5 Blog' (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image014.webp?raw=true"
-   alt="Simple HTML5 Blog"
-   width="25%" />
+  alt="Simple HTML5 Blog."
+  title="Simple HTML5 Blog"
+  style="width:25%" />
 </p>
 <br/>
 <p>
@@ -775,11 +777,11 @@ header span {
 <h4>Use a &lt;nav&gt; for the navigation menu just below the header</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 15. image of the navigaton menu (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image015.webp?raw=true"
-   alt="Navigation Menu"
-   width="35%" />
+  alt="Navigation Menu."
+  title="Navigation Menu"
+  style="width:35%" />
 </p>
 <p>
 The navigation menu just below the header is a &lt;nav&gt; element. For the purpose of this example we haven't provided any value for the hyperlinks...
@@ -848,11 +850,11 @@ nav span {
 <p>Now, we have one big &lt;section&gt; element that contains a set of &lt;article&gt; elements...</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 16. image of sections that contain articles (17) ~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image016.webp?raw=true"
-   alt="Image of sections that contain articles."
-   width="65%" />
+  alt="Image of sections that contain articles."
+  title="Image of sections that contain articles"
+  style="width:65%" />
 </p>
 
 <h4>HTML code:</h4>
@@ -909,11 +911,11 @@ section h2 {
 <h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 17. image of header at top of each article (18) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image017.webp?raw=true"
-   alt="Image of the header at the top of each article."
-   width="55%" />
+  alt="Image of the header at the top of each article."
+  title="Image of the header at the top of each article"
+  style="width:55%" />
 &nbsp;
 <br/>
 <p>Next, in each article in the section we have a header (to display the article title), 
@@ -964,11 +966,11 @@ using a &lt;figure&gt;..&lt;figure&gt; element that embedded a &lt;img src=..
 element together with a &lt;figcaption&gt; element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18. figure and figcaption (19) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image018.webp?raw=true"
-   alt="Image of figure and figure caption that embed an image."
-   width="55%">
+  alt="Image of figure and figure caption that embed an image."
+  title="Image of figure and figure caption that embed an image"
+  style="width:55%">
 &nbsp;
 <br/>
 <p>Here is the CSS for the &lt;figcaption&gt; element we have used in the example (we 
@@ -1002,11 +1004,11 @@ on the right of the page, "aside"! This is done using - you already guessed it -
 an &lt;aside&gt; element:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 19. image of tag cloud defined as aside element (20) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image019.webp?raw=true"
-   alt="Image of tag cloud defined as aside element."
-   width="35%" />
+  alt="Image of tag cloud defined as aside element."
+  title="Image of tag cloud defined as aside element"
+  style="width:35%" />
 </p>
 
 <br/>
@@ -1070,22 +1072,22 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 <h4>Here is the result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20. the aside tag on the right (21) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image020.webp?raw=true"
-   alt="The aside tag cloud on the right."
-   width="65%" />
+  alt="The aside tag cloud on the right."
+  title="The aside tag cloud on the right"
+  style="width:65%" />
 &nbsp;
 <br/>
 
 <h4>Add a &lt;footer&gt; at the end of the blog</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21. image of the blog footer (21) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image021.webp?raw=true"
-   alt="Image of the blog footer."
-   width="25%" />
+  title="Image of the blog footer'
+  alt="Image of the blog footer."
+  style="width:25%" />
 </p>
 
 <p>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below) after the 
@@ -1127,11 +1129,11 @@ tag cloud definition, to display a page footer:</p>
 <h4>And here is the result at the bottom of the page:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 22. the resulting footer at the bottom of the page (21) ~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image022.webp?raw=true"
-   alt="Image of the blog footer."
-   width="65%" />
+  alt="Image of the blog footer."
+  title="Image of the blog footer"
+  style="width:65%" />
 </p>
 
 <h4>More on &lt;article&gt; and &lt;section&gt;</h4>
@@ -1139,11 +1141,11 @@ tag cloud definition, to display a page footer:</p>
 <p>Can an &lt;article&gt; contain a &lt;section&gt;?
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23. picture of eisher (22) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image023.webp?raw=true"
-   alt="Picture of eisher."
-   width="25%" />
+  alt="Picture of eisher."
+  title="Picture of eisher"
+  style="width:25%" />
 </p>
 <p>It may not be clear whether a &lt;section&gt; may contain one or several 
 &lt;article&gt; elements or if an &lt;article&gt; may contain one or several 
@@ -1244,10 +1246,10 @@ site&lt;/a&gt; may help you decide whether or not to use a &lt;div&gt;:</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ 24. html5 doctor web site. whether or not to use a <dev> (24) ~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image024.webp?raw=true"
-  width="100%"
+  style="width:100%"
+  title="HTML5 Doctor Web Site. Whether or not to use a 'dev'"
   alt="HTML5 Doctor Web site.  Whether or not to use a 'dev'." />
 </p>
 
@@ -1277,11 +1279,11 @@ These headings define a hierarchy, as shown by the default sizes given by the br
 Here is the result for the previous example:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 25. outliner in action from the previous example (25) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image025.webp?raw=true"
-   width="65%"
-   alt="Outliner in action from the previous example." />
+  style="width:65%"
+  title="Outliner in action from previous example"
+  alt="Outliner in action from the previous example." />
 </p>
 
 <p>In the above outline, note that we have only used H1... H6 elements, without any new HTML5 structural elements such as &lt;section&gt; or &lt;article&gt;.
@@ -1358,11 +1360,11 @@ Let's clarify this by looking at some example code:</p>
 <h4>The corresponding outline is:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26. heading example (26) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image026.webp?raw=true"
-   alt="Heading content example."
-   width="55%">
+  alt="Heading content example."
+  title="Heading content example"
+  style="width:55%">
 &nbsp;
 <br/>
 
@@ -1422,11 +1424,11 @@ The last example is bad for accessibility reasons. A screen reader that vocalize
 <h4>The outline of the last example looks like this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 27. outline of previous example (27) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image027.webp?raw=true"
-   alt="Outline of last example."
-   width="55%">
+  alt="Outline of last example."
+  title="Outline of last example"
+  style="width:55%">
 &nbsp;
 <br/>
 
@@ -1481,11 +1483,11 @@ You can use heading elements &lt;h1&gt;...&lt;h6&gt; in a &lt;header&gt; but
 <p>Here is the resulting table of contents, notice the two subsections that appear, one for the H1, one for the H2:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 28. outline of previous example (28) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image028.webp?raw=true"
-   alt="Outline of previous example."
-   width="55%">
+  alt="Outline of previous example."
+  title="Outline of previous example"
+  style="width:55%">
 &nbsp;
 <br/>
 <p>
@@ -1560,10 +1562,10 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 <p>Both of the examples above are semantically identical and produce the same outline:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 29. outline of previous example (29) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image029.webp?raw=true"
-   alt="Outline of previous example."
+  alt="Outline of previous example."
+  title="Outline of previous example"
   style="width:55%">
 &nbsp;
 <br/>
@@ -1575,10 +1577,10 @@ unveiled on 18 January 2011</a>, so way before HTML5 became a Web standard. Thi
 HTML5, the cornerstone for modern Web applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 30. html5 logo (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image030.webp?raw=true"
-  alt="HTML5 logo"
+  alt="HTML5 logo."
+  title="HTML5 logo"
   style="width:35%;">
 &nbsp;
 <br/>
@@ -1642,12 +1644,15 @@ HTML5, the cornerstone for modern Web applications.</p>
 </details>
 
 <h4>Simpler character set definition</h4>
+
 <p>
 One word about the &lt;meta charset="utf-8"&gt; at line 4 in the HTML5 version: it is a <b>best practice</b> to declare the character set of your document to protect against 
 <a href="https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7" target="_blank" rel="noopener noreferrer"> a serious security risk</a>. For more details, please refer to the "Why Internationalization is 
 important" section in the Course intro chapter.
 </p>
+
 <h4>No more complicated DOCTYPE definitions</h4>
+
 <p>
 The "DOCTYPE" (Document Type Declaration) is used by tools such as HTML validators (i.e. <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">the W3C validator</a>), 
 and specifies the rules used by  an HTML or an XHTML page. These rules are contained in special documents called "Document Type Definitions" 
@@ -1657,6 +1662,7 @@ DTDs are not used by current Web browsers to  validate the structure of an HTML
 
 Old HTML1 Web pages will not be rendered the same way as new HTML5 pages, since, in the 90's, some of them were written by hand and may contain errors, embedded HTML elements, etc.
 </p>
+
 <h4>With HTML4, doctype definitions looked like this:</h4>
 
 ```
@@ -1722,11 +1728,11 @@ If you look at the "minimal document" example, or at other examples in this cour
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ 13. some of the new structural elements introducted by html5 (33) ~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image013.webp?raw=true"
-   alt="Some of the new structural elements introduced by HTML5: section, article, etc."
-   width="65%" />
+  alt="Some of the new structural elements introduced by HTML5: section, article, etc."
+  title="Some of the new structural elements introduced by HTML5: section, article, etc"
+  style="width:65%" />
 &nbsp;
 <br/>
 
@@ -1734,8 +1740,8 @@ If you look at the "minimal document" example, or at other examples in this cour
 <p>
 As Web site layouts evolve, HTML5 structural elements such as lists, paragraphs, tables, etc. show their limits. Today, many Web sites offer navigation menus, tabbed panels, headers, footers, and so on. The way these "parts"' are implemented relies heavily on &lt;div&gt; and &lt;span&gt; elements with different id and class attributes, lots of CSS and lots of JavaScript code to apply custom styles and behaviors.
 
-However, there are some issues with this approach:
-</p>
+However, there are some issues with this approach:</p>
+
 <ul>
   <li>id and class names differ from one developer to another, from one country to another, etc.</li>
   <li>Even with the same ids and class names, the css rules may be different.</li>
@@ -1743,20 +1749,23 @@ However, there are some issues with this approach:
   <li>Web pages have become increasingly heavy over the years!</li>
   <li>These elements can not be handled by the Web browser natively...</li>
 </ul>
+
 <p>
 Even if differences exist between ids, classes and css/js implementations, they also share common behaviors, layouts, and "ways of doing things" that could be guessed at first glance by a human.
 
 So various studies have been conducted in order to identify the most popular ids, class names, widgets, etc. used on the Web:
 
 Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">article:</a>
+
 <blockquote>"During the creation of HTML5, Ian Hickson used Google's 
 tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 
 million URLs, calling it MAMA ("Metadata Analysis and Mining Application"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger 
 and wider variety of Web page statistics".</blockquote>
 </p>
+
 <h4>New elements added to the HTML5 set</h4>
-<p>
-The results of these surveys led to the addition of new structural elements in HTML5. 
+
+<p>The results of these surveys led to the addition of new structural elements in HTML5. 
 For example, the very popular &lt;div class="header"&gt; led to the creation of a 
 &lt;header&gt; element, &lt;div class="aside"&gt; to a &lt;aside&gt; element, etc.
 
@@ -1764,7 +1773,9 @@ Finally, the 20 most popular ids and class names found in Hickson's and Opera's
 surveys gave birth to these new elements (click on the element's name to go to 
 the W3C specification about this element):
 </p>
+
 <h4>HTML5 structural elements with descriptions</h4>
+
 <ul>
   <li><b><a href="https://www.w3.org/TR/html5/sections.html#the-header-element" 
     target="_blank" rel="noopener noreferrer">&lt;header&gt;</b></a>Introduction of "sectioning elements": 
@@ -1830,11 +1841,11 @@ And there is no &lt;content&gt; element even though the &lt;div class="conten
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 14. image of the header element at the top of the blog (35) ~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image014.webp?raw=true"
-   alt="image of the header element at the top of the blog"
-   width="35%" />
+  alt="image of the header element at the top of the blog."
+  title="Image of the header element at the top of the blog"
+  style="width:35%" />
 &nbsp;
 <br/>
 <p>
@@ -1873,11 +1884,11 @@ header span {
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 15. image of the navigation menu (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image015.webp?raw=true"
-   alt="Image of the navigation menu."
-   width="35%" />
+  alt="Image of the navigation menu."
+  title="Image of the navigation menu"
+  style="width:35%" />
 &nbsp;
 <br/>
 
@@ -1948,11 +1959,11 @@ Now, we have one big &lt;section&gt; element that contains a set of &lt;artic
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 16. image of sections that contain articles (37) ~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image016.webp?raw=true"
-   alt="Image of sections that contain articles."
-   width="65%" />
+  alt="Image of sections that contain articles."
+  title="Image of sections that contain articles"
+  style="width:65%" />
 &nbsp;
 <br/>
 
@@ -2006,11 +2017,11 @@ section h2 {
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 17. image of the header at the top of each article (37) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image017.webp?raw=true"
-   alt="Image of the header at the top of each article."
-   width="65%" />
+  alt="Image of the header at the top of each article."
+  title="Image of the header at the top of each article"
+  style="width:65%" />
 &nbsp;
 <br/>
 <p>
@@ -2061,11 +2072,11 @@ Also note the way we included a figure using the new "HTML5" method, using a &l
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 18. image of figure and figcaption that embed an img (38) ~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image018.webp?raw=true"
-   alt="image of figure and figcaption that embed an img."
-   width="65%" />
+  alt="Image of figure and figcaption that embed an img."
+  title="Image of figure and figcaption that embed an img"
+  style="width:65%" />
 &nbsp;
 <br/>
 
@@ -2098,11 +2109,11 @@ figcaption {
 After the long &lt;section&gt; element that contains all the blog articles displayed in the page, we added the HTML code for the tag cloud that is displayed on the right of the page, "aside"! This is done using - you already guessed it - an &lt;aside&gt; element:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 19. image of the tag cloud defined as an aside element (39) ~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image019.webp?raw=true"
-   alt="image of the tag cloud defined as an aside element."
-   width="25%" />
+  alt="image of the tag cloud defined as an aside element."
+  title="Image of the tag cloud defined as an aside element"
+  style="width:25%" />
 &nbsp;
 <br/>
 
@@ -2163,22 +2174,22 @@ aside .tag-cloud {
 <h4>Here is the result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 19. image of the tag cloud defined as an aside element (40) ~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image019.webp?raw=true"
-   alt="The aside tag cloud on the right."
-   width="50%" />
+  alt="The aside tag cloud on the right."
+  title="The aside tag cloud on the right"
+  style="width:50%" />
 &nbsp;
 <br/>
 
 <h4>Add a &lt;footer&gt; at the end of the blog</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 20. image of the tag cloud defined as an aside element (40) ~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image020.webp?raw=true"
-   alt="Image of the blog footer."
-   width="25%" />
+  alt="Image of the blog footer."
+  title="Image of the blog footer"
+  style="width:25%" />
 &nbsp;
 <br/>
 
@@ -2221,11 +2232,11 @@ footer {
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 22. the resulting footer at the bottom of the page (41) ~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image022.webp?raw=true"
-   alt="Image of the tag cloud defined as an aside element."
-   width="55%" />
+  alt="Image of the tag cloud defined as an aside element."
+  title="Image of the tag cloud defind as an aside element"
+  style="width:55%" />
 &nbsp;
 <br/>
 
@@ -2235,11 +2246,11 @@ footer {
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23. pictures of eisher hands (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image023.webp?raw=true"
-   alt="Picture of 'eisher' hands."
-   width="25%" />
+  alt="Picture of 'eisher' hands."
+  title="Picture of 'eisher' hands"
+  style="width:25%" />
 &nbsp;
 <br/>
 <p>
@@ -2333,11 +2344,11 @@ noreferrer">HTML5 Doctor Web site</a> may help you decide whether or not to us
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 24. chart from html5 doctor web site (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image024.webp?raw=true"
-   alt="Flow chart about using header, H1, etc."
-   width="65%" />
+  alt="Flow chart about using header, H1, etc."
+  title="Flow chart about using header, h1, etc"
+  style="width:65%" />
 &nbsp;
 <br/>
 
@@ -2365,11 +2376,11 @@ Since the very beginning, HTML has had heading elements: &lt;h1&gt;...&lt;h6&gt
 These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define an outline of the document. To illustrate this, we have used a browser extension. Here is the result for the previous example:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 25. headings 1 thru 6 (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image025.webp?raw=true"
-   alt="Outliner in action from the previous example."
-   width="65%" />
+  alt="Outliner in action from the previous example."
+  title="Outliner in action from the previous example"
+  style="width:65%" />
 &nbsp;
 <br/>
 <p>In the above outline, note that we have only used H1... H6 elements, without any new HTML5 structural elements such as &lt;section&gt; or &lt;article&gt;.
@@ -2442,11 +2453,11 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 26. outline of previous example (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image026.webp?raw=true"
-   alt="Outline of previous example."
-   width="60%" />
+  alt="Outline of previous example."
+  title="Outline of previous example"
+  style="width:60%" />
 &nbsp;
 <br/>
 
@@ -2504,11 +2515,11 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 <h4>The outline of the last example looks like this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 27. outline of the last example (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image027.webp?raw=true"
-   alt="Outline of last example."
-   width="65%" />
+  alt="Outline of last example."
+  title="Outline of last example"
+  style="width:65%" />
 &nbsp;
 <br/>
 
@@ -2558,11 +2569,11 @@ You can use heading elements &lt;h1&gt;...&lt;h6&gt; in a &lt;header&gt; but
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 28. example structural elements (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image028.webp?raw=true"
-   alt="Example structural elements."
-   width="55%">
+  alt="Example structural elements."
+  title="Example structural elements"
+  style="width:55%">
 &nbsp;
 <br/>
 
@@ -2634,16 +2645,17 @@ If you do not want the subtitles to be included in the table of contents, just�
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 29. outline of previous example (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image029.webp?raw=true"
-   alt="Outline of the previous example."
-   width="45%">
+  alt="Outline of the previous example."
+  title="Outline of the previous example"
+  style="width:45%">
 &nbsp;
 <br/>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch1-3-7">1.3.7 Embedding a Table of Contents</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here we propose a small piece of JavaScript code you can use in your documents to display an embedded table of contents. 
 
 This example is a simple document, with a hyperlink that, once clicked, displays the table of contents in an &lt;aside&gt; element in the main &lt;section&gt;. Just look at the source code and copy/paste the link into your own HTML documents.</p>
@@ -2692,11 +2704,11 @@ They are also useful for checking the presence of headings in each sectioning c
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 31. the main element (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image031.webp?raw=true"
-   alt="Main element funny."
-   width="25%" />
+  alt="Main element funny."
+  title="Main element funny"
+  style="width:25%" />
 </p>
 
 <p>If you use &lt;nav&gt; / &lt;header&gt; / &lt;footer&gt; etc. to structure your document, you can also use &lt;main&gt; to identify the main content of the document. Doing so provides a navigable document structure for assistive technology users as well as styling hooks for devs.
@@ -2836,11 +2848,11 @@ We recommend this article written by Steve Faulkner: "<a href="https://www.pacie
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 32. image of the blog toc, show an untitled nav entry (52) ~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image032.webp?raw=true"
-   alt="Image of the Blog Table of Contents, that show an untitled nav entry"
-   width="65%" />
+  alt="Image of the Blog Table of Contents, that show an untitled nav entry."
+  title="Image of the Blog Table of Contents, that show an untitled nav entry"
+  style="width:65%" />
 </p>
 
 <p>Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an &lt;article&gt; that is in a &lt;section&gt; (this corresponds to the third example given in the "heading and sectioning elements" part of the course):</p>
@@ -2890,11 +2902,11 @@ Beware that this technique will require you to use some CSS styling, and may con
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 33. good outline without the untitled nav (53) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image033.webp?raw=true"
-   alt="Good outline without the untitled nav."
-   width="55%" />
+  alt="Good outline without the untitled nav."
+  title="Good outline without the untitled nav"
+  style="width:55%" />
 &nbsp;
 <br/>
 <p>
@@ -2960,11 +2972,11 @@ While this is just a warning, we do prefer to use H1s only as top level elements
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 34. blog with embedded table of contents (55) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image034.webp?raw=true"
-   alt="Blog with embedded table of contents."
-   width="50%" />
+  alt="Blog with embedded table of contents."
+  title="Blog with embedded table of contents"
+  style="width:50%" />
 &nbsp;
 <br/>
 
@@ -16179,8 +16191,7 @@ The example shown in the video shows some best practices for writing accessible 
 The following additional example shows the same best practices but presents a more complete form with CSS rules to make a nice layout. See it [online](https://jsbin.com/zubitex/1/edit?html,output), and illustrated with the screenshot below. It is adapted from <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form">this very good MDN's article "How to structure a web form"</a>.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 216. payment form layout example (294) ----------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 216. payment form layout example (294) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image216.webp?raw=true"
   width="35%"
@@ -16224,8 +16235,7 @@ Forms can be visually and cognitively complex and difficult to use. Accessible f
 Form fields and other form controls usually have visible labels, such as "E-mail Address:" as the label for a text field (see figure below).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 217. e-mail form label text (295) ------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 217. e-mail form label text (295) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image217.webp?raw=true"
   width="25%"
@@ -16244,7 +16254,6 @@ Whenever possible, use the label element to explicitly associate text with for
 Click on the label, not on the input field to see the effect.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 218. example 1 first name (296) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image218.webp?raw=true"
   width="25%"
@@ -16276,7 +16285,6 @@ Click on the label "Subscribe to newsletter" to see what this does.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 219. example 3 first name / subscribe checkbox (296) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image219.webp?raw=true"
   width="25%"
@@ -16313,17 +16321,15 @@ value="Please submit"&gt;, renders a text button.
 
 These give the same results:
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 220. lines 1 and 2 with lines 3 and 4 (297) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 220. lines 1 and 2 with lines 3 and 4 (297) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image220.webp?raw=true"
   width="65%"
   alt="Lines 1 and 2 render as...While 3 and 4 render as..." />
 &nbsp;
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 221. labeling text areas (297) --------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 221. labeling text areas (297) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image221.webp?raw=true"
   width="55%"
@@ -16337,9 +16343,9 @@ These give the same results:
 <label for="address">Enter your address:</label><br> <textarea id="address" name="addresstext"></textarea>
 ```
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-3-4">5.3.4 Grouping Controls</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Groupings of form controls, typically groups of related checkboxes and radio buttons, sometimes require a higher level description. Grouping related form controls makes forms more understandable for all users, as related controls are easier to identify.
 
@@ -16353,9 +16359,8 @@ In the example below, there are three radio buttons that allow the user to choos
 
 <h4>Output format:</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 222. radio buttons 3 (298) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 222. radio buttons 3 (298) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image222.webp?raw=true"
   width="25%"
@@ -16389,9 +16394,8 @@ In the example below, there are three radio buttons that allow the user to choos
 
 In the example below, there are three checkboxes that are all part of an opt-in function for receiving different types of information.
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 223. check boxes 3 (298) ------------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 223. check boxes 3 (298) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image223.webp?raw=true"
   width="55%"
@@ -16423,9 +16427,9 @@ WAI-ARIA provides a grouping role that functions similarly to fieldset and le
 
 WAI-ARIA roles are very important in the accessibility world, and we invite you to see an example provided in the [associated WAI tutorial](https://www.w3.org/WAI/tutorials/forms/grouping/#associating-related-controls-with-wai-aria). See also this MDN's article about about [WAI-ARIA roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-4-1">5.4.1 Input Types</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 In this section, we briefly present the input types, attributes, and elements related to the forms that came with HTML5. Details are given later, illustrated by multiple interactive examples.
 
@@ -16435,9 +16439,8 @@ MDN's Web docs [article on &lt;input&gt; types](https://developer.mozilla.org
 
 Now, let's play with some of these input types and attributes.
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 223. html4 to html5 time to update (299) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 223. html4 to html5 time to update (299) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image223.webp?raw=true"
   width="20%"
@@ -16445,17 +16448,16 @@ Now, let's play with some of these input types and attributes.
 &nbsp;
 <br/>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-4-2">5.4.2 "color"</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 For years, we used hundreds of lines of JavaScript for selecting colors. Now, it's bundled in the browser!
 
 Here is how it looks on some mobile devices:
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 224. html input type color - android (299) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 224. html input type color - android (299) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image224.webp?raw=true"
   width="40%"
@@ -16482,9 +16484,8 @@ Try &lt;input type="color"> online with this <a href="https://jsbin.com/cajuzo
 
 Here is the result on Google Chrome (works with other browsers too, though the <i>look and feel</i> may differ):
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 225. select input type=color (300) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 225. select input type=color (300) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image225.webp?raw=true"
    width="40%"
@@ -16496,9 +16497,8 @@ Here is the result on Google Chrome (works with other browsers too, though the 
 
 The &lt;input type="color"> can fire change or input events. Here is an example that changes the background color of the page when a color is chosen. [Try it online at JSBin](https://jsbin.com/jozuter/1/edit?html,css,js,console,output).
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 226. change backgound color of the body (300) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 226. change backgound color of the body (300) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image226.webp?raw=true"
    width="40%"
@@ -16537,9 +16537,8 @@ By default, the color selector offers many options that may either frighten some
 
 Example: click the black rectangle on the right:  . The following should be displayed:
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 227. restricted choice of colors (301) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 227. restricted choice of colors (301) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image227.webp?raw=true"
   width="40%"
@@ -16571,33 +16570,30 @@ Another problem is that there is no way to control where the dialog that contain
 
 The solution proposed by the W3C and its contributors is called <i>Web Components</i>, a new approach for designing HTML5 widgets, that is covered in the W3Cx HTML5 Apps and Games course.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-4-3">5.4.3 "date"</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 For years, date and time pickers in HTML forms made Web developers rely heavily on JavaScript based widgets. The process is simpler in HTML5, which provides a special control to handle this specific kind of data natively.
 
 Below are a few screenshots of the HTML5 date picker on several mobile devices. Note that the native date pickers of the operating systems are used:
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------- 228. december 22, 2011 sample custom reusable widget (302) ------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 228. december 22, 2011 sample custom reusable widget (302) ~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image228.webp?raw=true"
-   width="20%"
-   alt="Date picker 1." />
-<!------------------------------------------------------------------------------------------------>
-<!-------------------- 229. 03 oct 2013 sample custom reusable widget (302) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+  width="20%"
+  alt="Date picker 1." />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 229. 03 oct 2013 sample custom reusable widget (302) ~~~~~~~~~~~~~~~~~~~~-->
 <img src="./images/image229.webp?raw=true"
-   width="10%"
-   alt="Date picker 2 on mobile." />
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 230. 2012-09-11 sample custom reusable widget (302) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+  width="10%"
+  alt="Date picker 2 on mobile." />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 230. 2012-09-11 sample custom reusable widget (302) ~~~~~~~~~~~~~~~~~~~~-->
 <img src="./images/image230.webp?raw=true"
-   width="30%"
-   alt="Date picker 3 on mobile." />
+  width="30%"
+  alt="Date picker 3 on mobile." />
 </p>
 
 The problem is different on a desktop. While it's great to have native support for a date picker, Web developers would sometimes prefer 100% control over the <i>look and feel</i> of the date picker widget. For this purpose, the solution undoubtedly lies with the new [Web Components](https://webcomponents.org/) (a way to make custom reusable widgets in HTML/CSS/JS), to be detailed in the W3Cx HTML5 Apps and Games course
@@ -16606,13 +16602,12 @@ Why don't you try it yourself? Just click on this input field: (not in github)
 
 With Firefox, it shows this date picker widget:
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 231. firefox date picker widget (302) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 231. firefox date picker widget (302) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image231.webp?raw=true"
-   width="20%"
-   alt="Firefox desktop date picker widget." />
+  width="20%"
+  alt="Firefox desktop date picker widget." />
 </p>
 
 On non-supported browsers, it defaults to an &lt;input type="text"&gt; input field.
@@ -16638,17 +16633,13 @@ The &lt;input type="date"&gt; comes with several useful attributes. In particu
 
 Try this example: just click the next input field or <a href="https://jsbin.com/faluta/1/edit?html,output">try it online on JSBin</a> if you want to tweak the source code:
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------- 232. only dates between min and max are selectable (303) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 232. only dates between min and max are selectable (303) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image232.webp?raw=true"
-   width="40%"
-   alt="Only dates between min and max are selectable." />
+  width="40%"
+  alt="Only dates between min and max are selectable." />
 </p>
-<!-----
-![input type = date with min and max attributes. This will render two non selectable areas (dates before min and dates after max). Only the dates between min and max are selectable in the displayed calendar.](./images/image232.webp){width="4.0in" height="2.2641021434820647in"}
------>
 
 <h4>Source code:</h4>
 
@@ -16668,13 +16659,12 @@ Using the value attribute for setting a date, and using step=7 for example, 
 
 Example: we want to celebrate birthday parties only on Saturdays, [check this on JSBin](https://jsbin.com/hudafo/1/edit?html,output)! (screenshot from Chrome).
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 233. using step to allow only saturdays (304) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 233. using step to allow only saturdays (304) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image233.webp?raw=true"
-   width="40%"
-   alt="Use of the step attribute, allow only Saturdays." />
+  width="40%"
+  alt="Use of the step attribute, allow only Saturdays." />
 </p>
 
 <h4>Extract from source code:</h4>
@@ -16692,9 +16682,8 @@ Example: we want to celebrate birthday parties only on Saturdays, [check this 
 
 <a href="https://jsbin.com/gezawe/1/edit?html,output">Online example at JSBin</a> (screenshot from Chrome).
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 234. only values from datalist are proposed (304) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 234. only values from datalist are proposed (304) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image234.webp?raw=true"
    width="40%"
@@ -17537,20 +17526,18 @@ We have already seen the use of pseudo CSS classes used together with the input 
 In this section, we cover the rest of the form attributes and provide further examples of using the previously discussed attributes. 
 
 In another part of the course, about form validation and visual feedback using CSS, we examine some of the most useful attributes in even greater detail.
-
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-5-2">5.5.2 form</h3>
-<!------------------------------------------------------------------------------------------------>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This attribute is useful for putting input fields outside the form itself. The form attribute of an external input field must share the same value as the id of the form the field belongs to. This is useful when using &lt;fieldset&gt; elements for making the page/form layout easier.
 
 <h4>Typical use</h4>
 <p>
 <a href="http://codepen.io/w3devcampus/pen/jmdpyv)">Try this interactive example in CodePen</a>, or try it directly in your browser:
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 266. html5 form attributes (321) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 266. html5 form attributes (321) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image266.webp?raw=true"
    width="65%"
@@ -17593,21 +17580,21 @@ This attribute is useful for putting input fields outside the form itself. The 
 
 <i>Lines 12</i> and <i>22</i> shows the form attribute. Make sure that its value matches the id of the form!
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="5-5-3">5.5.3 autocomplete</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 This attribute applies either to the &lt;form&gt; element or on individual &lt;input&gt; elements. It specifies when input fields must autocomplete the user's input based on the user's typing history. 
 
 Possible values of this attribute: on/off.
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 267. bright red on off picture (322) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 267. bright red on off picture (322) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image267.webp?raw=true"
-   width="16%"
-   alt="On/off funny picture." />
+  style="width:16%"
+  title="On/off funny picture"
+  alt="On/off funny picture." />
 </p>
 
 If applied to the &lt;form&gt; element, all input fields attached to the form (inside or linked to it using the form attribute), will have auto-completion set by default to the value of the autocomplete attribute of the form.
@@ -17620,23 +17607,23 @@ This attribute targets most input types (those that allow typing in them).
 
 <h4>Typical use</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 268. example of use of autocomplete attribute (323) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 268. example of use of autocomplete attribute (323) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image268.webp?raw=true"
-  width="40%"
+  style="width:40%"
+  title="Example of use of autocomplete attribute"
   alt="Example of use of autocomplete attribute." />
 </p>
 
 Try it in your browser here:
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 268b. example of use of autocomplete attribute (323) --------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 268b. example of use of autocomplete attribute (323) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image268b.webp?raw=true"
-  width="40%"
+  style="width:40%"
+  title="Example of use of autocomplete attribute, #2"
   alt="Example of use of autocomplete attribute, #2." />
 </p>
 
@@ -17663,9 +17650,9 @@ Try it in your browser here:
 
 </details>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-5-4">5.5.4 autofocus</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 This attribute is useful for transferring the focus to a field other than the first field in a page/form (by default the first input field has the focus).
 
@@ -17677,9 +17664,9 @@ The required attribute makes the input field invalid if kept empty. 
 
 <h4>Here is the result in your browser:</h4>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 269. example use of autofocus attribute (323) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image269.webp?raw=true"
   width="65%"
@@ -17748,9 +17735,9 @@ Read [these explanations](https://html.spec.whatwg.org/multipage/common-microsy
 
 </details>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name=ch5-5-5">5.5.5 list</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 This attribute works together with the new &lt;datalist&gt; element we already studied when we saw the color and date input fields.
 
@@ -17760,9 +17747,9 @@ Here is a small code extract from a more complete example shown in the section a
 
 Please try it in your  browser (Type "F", "E", "O", C" etc., or just click inside the field and use the drop down menu). Note that you can also enter any value; if it does not start with one of these letters it will be accepted but will not trigger auto-completion.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!------------------------ 270. preferred browser and submit query (325) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image270.webp?raw=true"
   width="65%"
@@ -17943,7 +17930,7 @@ Complete source code:
 Enter the URL of your repository (http, https or ftp): 
 --->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------- 271b. input type enter url of your repository  () ------------->
+<!--~~~~~~~~~~~~~~~~~~~ 271b. input type enter url of your repository (xxx) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image271b.webp?raw=true"
@@ -18019,7 +18006,7 @@ With the &lt;input type="email"&gt;, this attribute enables the user to enter
 Or try it below in your browser: type in a list of email addresses separated by a comma, then look at the input field background color (pink = invalid, green = valid), and then submit:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------- 271b. input type email - single or multiple (329) ------------------------>
+<!--~~~~~~~~~~~~~~~~~~~ 271b. input type email - single or multiple (329) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image271b.webp?raw=true"
@@ -18153,7 +18140,7 @@ The first shows a form with two submit buttons: 
   <li>the second button submits to another action specified by its formaction attribute.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 272. formaction attribute (332) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 272. formaction attribute (332) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image272.webp?raw=true"
@@ -18169,7 +18156,7 @@ The second example shows a form with two submit buttons:
 -   the second button using a POST:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 273. formmethod attribute (332) -------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 273. formmethod attribute (332) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image273.webp?raw=true"
@@ -18209,7 +18196,7 @@ Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,outp
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 275a. formnovalidate attribute (333) ------------------------------>
+<!---------------------------- 275a. formnovalidate attribute (333) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image275a.webp?raw=true"
@@ -18248,7 +18235,7 @@ This attribute's value indicates where the response from the form submission sho
 [Online example at JSBin ](https://jsbin.com/godice/2/edit?html,output)or try it in your browser below:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 276a. formtarget attribute (333) -------------------------------->
+<!------------------------------ 276a. formtarget attribute (333) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image276a.webp?raw=true"
@@ -18331,7 +18318,7 @@ The possible values for this field are:
 <a href="https://jsbin.com/lokukam/4/edit?html,output">Try this online example at JSBin</a>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 276. formenctype attribute (335) -------------------------------->
+<!------------------------------ 276. formenctype attribute (335) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image276.webp?raw=true"
@@ -18375,7 +18362,7 @@ Source code:
 
 If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,output) standalone mode (click the black arrow on the top right of the output tab, in JSBin), you should see this:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 277. formenctype example in jsbin (335) ----------------------------->
+<!-------------------------- 277. formenctype example in jsbin (335) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image277.webp?raw=true"
@@ -18387,7 +18374,7 @@ If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,ou
 Then, open the devtools and go to the "Network" tab, click on the POST request. Once done, click on the right on the "Header" tab to see the HTTP headers, and scroll down, you should see the form-data entries in the header, like in this screenshot:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 278. something went wrong (336) -------------------------------->
+<!------------------------------- 278. something went wrong (336) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image278.webp?raw=true"
@@ -18429,7 +18416,7 @@ Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&g
 The output element represents the result of a computation or user action. You can see it as a "specialized &lt;div&gt; or &lt;span&gt;" for displaying interactive results.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------------- 279. output field (337) ------------------------------------>
+<!----------------------------------- 279. output field (337) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image279.webp?raw=true"
@@ -18457,7 +18444,7 @@ The oninput event handler directly uses the &lt;output&gt; element using the
 Result (do change the input field values):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 278a. oninput event handler (337) ------------------------------->
+<!------------------------------ 278a. oninput event handler (337) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image278a.webp?raw=true"
@@ -18476,7 +18463,7 @@ Result (do change the input field values):
 
 <h4>Example #2</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 278b. output element and attributes (337) --------------------------->
+<!-------------------------- 278b. output element and attributes (337) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image278b.webp?raw=true"
@@ -18511,8 +18498,7 @@ The &lt;meter&gt; element displays colored bars to represent numeric values.
 It can be useful to display a colored gauge to show disk usage, to highlight the relevance of a query result, or the fraction of a voting population that favours a particular candidate, etc. This element is often used with the &lt;input type="range"&gt; field as an instant feedback indicator.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------------- 280. blood pressure (338) ----------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 280. blood pressure (338) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image280.webp?raw=true"
    width="50%"
@@ -18561,8 +18547,7 @@ Grades:  
 
 <h4>Explanations:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 281. slider example javascript code (339) --------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 281. slider example javascript code (339) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image281.webp?raw=true"
    width="65%"
@@ -18610,12 +18595,11 @@ The <progress> element is similar to &lt;meter&gt; but it is used for progre
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 282.  (xx) ------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 282. picture of a funny progress meme (340) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image282.webp?raw=true"
-   width="10%"
-   alt="Picture of a funny progress meme saying Every mistake you make is progress." />
+  style="width:10%"
+  alt="Picture of a funny progress meme saying Every mistake you make is progress." />
 &nbsp;
 <br/>
 
@@ -18625,11 +18609,10 @@ The browser calculates the percentage corresponding to the value, min and m
 
 If no value attribute is set, the progress bar will display an "indeterminate look", that may slightly vary among different browser implementations. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 283. progress bar w/indeterminate look (340) -------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 283. progress bar w/indeterminate look (340) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image283.webp?raw=true"
-  width="50%"
+  style="width:50%"
   alt="Indetermined progress bar screenshot." />
 &nbsp;
 <br/>
@@ -18668,14 +18651,14 @@ Download progress: 
 The &lt;datalist&gt; form element is useful for linking a list of choices to an input element.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------------- 284. choice of browsers (341) --------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 284. choice of browsers (341) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="90%">
 <img src="./images/image284.webp?raw=true"
   width="40%"
   alt="Example of datalist for autocompletion." />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------------- 285. datalist browser (341) ---------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 285. datalist browser (341) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="./images/image285.webp?raw=true"
   width="40%"
@@ -18686,8 +18669,7 @@ The &lt;datalist&gt; form element is useful for linking a list of choices to a
 We have already seen this element in action with different &lt;input&gt; elements, such as &lt;input type="color"&gt;, &lt;input type="date"&gt;, or &lt;input type="range"&gt;.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------------------- 227. autre (341) ---------------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 227. autre (341) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image227.webp?raw=true"
    width="15%"
@@ -18695,15 +18677,13 @@ We have already seen this element in action with different &lt;input&gt; eleme
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------- 286. restrict choices using datalist (341) --------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 286. restrict choices using datalist (341) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image286.webp?raw=true"
    width="60%"
    alt="Restrict choices using a datalist element." />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 287. data list for sliders tick (341) ----------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 287. data list for sliders tick (341) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image287.webp?raw=true"
    width="65%"
@@ -18721,8 +18701,7 @@ The input field is related to the datalist that will propose auto-completion bas
 
 Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,output), or try it here in your browser (type the name of your favorite browser):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 288. what is your favorite browser? (342) --------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 288. what is your favorite browser? (342) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image288.webp?raw=true"
    width="65%"
@@ -18774,8 +18753,7 @@ A first step to improve your HTML form is to add some CSS rules to your input fi
 Also, at the time of submitting the form, some extra messages may be displayed as pop up text bubbles.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 289. popup text bubble examples (343) ------------------------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 289. popup text bubble examples (343) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image289.webp?raw=true"
    width="35%"
@@ -18803,8 +18781,7 @@ Submit form
 <b>Bottom of Form</b>
 --->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------- 288b. css required, valid and invalid rules (343) ----------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 288b. css required, valid and invalid rules (343) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image288b.webp?raw=true"
    width="65%"
@@ -18875,8 +18852,7 @@ Bottom of Form
 --->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 288b. again, validation with css rules (344) -------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 288b. again, validation with css rules (344) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image288b.webp?raw=true"
    width="65%"
@@ -18918,16 +18894,8 @@ You can simply use the input's title attribute to provide a message for patter
 
 Try the <a href="https://jsbin.com/locedoy/1/edit?html,output">online example at JSBin</a>, or try it here in your browser (type invalid values and look at the custom messages):
 
-<!---
-Type invalid values and see the result, this time with custom messages! E-mail: 
-Homepage (URL): 
-Phone number: 
-Submit form
---->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 289b. validation with pattern matching (345) -------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 289b. validation with pattern matching (345) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image289b.webp?raw=true"
    width="65%"
@@ -18961,8 +18929,7 @@ You must also take care of the different languages, otherwise you will get error
 
 Google Chrome on a French desktop computer:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 290. chrome on french computer (346) ------------------------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 290. chrome on french computer (346) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image290.webp?raw=true"
    width="65%"
@@ -18972,8 +18939,7 @@ Google Chrome on a French desktop computer:
 
 Same example on FireFox, the title attribute is ignored:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 291. firefox title attribute (346) ------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 291. firefox title attribute (346) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image291.webp?raw=true"
    width="65%"
@@ -18989,8 +18955,7 @@ Same example on FireFox, the title attribute is ignored:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There is a JavaScript API for form validation. This API will let you use your own validation algorithm (i.e. check that you have entered the same password in two different input fields), and customize error messages. Also, together with some HTML/CSS/JavaScript you will be able to make your own message bubbles.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 290b. js form validation api (346) ------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 290b. js form validation api (346) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image290b.webp?raw=true"
    width="65%"
@@ -19101,8 +19066,7 @@ The possible values for the validity property are: 
 
 Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JSBin that shows how to test the different types of validation errors</a>, or you may try it here in your browser (enter bad values, too big, too small, enter invalid characters, etc.):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 292. enter value between 10 and 20 (348) ---------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 292. enter value between 10 and 20 (348) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image292.webp?raw=true"
   width="65%"
@@ -19175,8 +19139,7 @@ This is useful for making custom error messages. More about this topic in the ne
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Custom validation: changing the default behavior, aggregating error messages, removing bubbles, etc.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------- 293. in french, submit with one or two invalid fields (349) ------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 293. in french, submit with one or two invalid fields (349) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image293.webp?raw=true"
   width="35%"
@@ -19202,8 +19165,7 @@ Here is [an adaptation of work presented at the developer.telerik.com Web site]
 
 Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output) or try it here in your browser: enter invalid values and submit with one or two invalid fields.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 294. name and e-mail fields (350) --------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 294. name and e-mail fields (350) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image294.webp?raw=true"
    width="65%"
@@ -19372,8 +19334,7 @@ This week, we will look at some of the most useful APIs. Others will be covered 
   <li><b>The File API, that enables Web applications to work with local files</b>. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 295. 'you are here' sign (353) --------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 295. 'you are here' sign (353) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image295.webp?raw=true"
    width="35%"
@@ -19395,8 +19356,7 @@ Indeed, Web Storage provides two interfaces - sessionStorage and localStorag
 
 For convenience, we will mainly illustrate the localStorage object. Just change "local" to "session" and it should work (this time with a session lifetime).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------------- 296. key value pairs (354) ----------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 296. key value pairs (354) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image296.webp?raw=true"
    width="17%"
@@ -19433,8 +19393,7 @@ localStorage is a simple key-value store, in which the keys and values are stri
 
 Once opened in your browser, the JavaScript code is executed. With the browser dev. tools, we can check what has been stored in the localStorage for this domain:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 297. example of localStorage (355) ------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 297. example of localStorage (355) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image297.webp?raw=true"
    width="65%"
@@ -19444,8 +19403,7 @@ Once opened in your browser, the JavaScript code is executed. With the browser d
 
 <p>Here is a view of the devtools. In more recent versions of Google Chrome, the "Resources" tab is named "Applications":</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 298. view of the devtools (355) -------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 298. view of the devtools (355) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image298.webp?raw=true"
    width="65%"
@@ -19489,8 +19447,7 @@ oninput="localStorage.firstName=this.value;"
 
 Where firstName in red is the key and this.value the current value of the input field.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 299. example localstorage and html code (355) ------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 299. example localstorage and html code (355) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image299.webp?raw=true"
    width="65%"
@@ -19601,8 +19558,7 @@ Students may note that something seems a bit off in the example above: instead o
 
 Instead of localStorage.getItem("foo") and localStorage.setItem("foo", "bar"), one can write localStorage.foo and localStorage.foo = "bar". Of course there are limitations to this mapping: any string can serve as a key, so that localStorage.getItem("one two three") works, whereas that string would not be a valid identifier after the dot (but it could still work as localStorage["one two three"]).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------ 300. number of times this page has shown on browser (359) ------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 300. number of times this page has shown on browser (359) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image300.webp?raw=true"
    width="40%"
@@ -19697,8 +19653,7 @@ You can check in the Chrome dev. tools user interface that the content of the l
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Local stores are also useful for<b> saving/restoring user preferences</b> of Web Applications. For example, the JS Bin tool you have been using since the beginning of this course uses localStorage to store the list of tabs you open, and their width:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------ 301. example user preferences of web applications (361) --------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 301. example user preferences of web applications (361) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image301.webp?raw=true"
    width="65%"
@@ -19710,8 +19665,7 @@ This way, the next time you come back to JSBin, "it will remember your last sett
 
 Another example is a guitar FX processor / amp simulator your instructor is writing with some of his students. It uses localStorage to save/restore presets values:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------- 302. another example of localstorage of preset values (362) ------------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 302. another example of localstorage of preset values (362) ~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image302.webp?raw=true"
    width="65%"
@@ -19722,8 +19676,7 @@ Another example is a guitar FX processor / amp simulator your instructor is writ
 <h4>Save/restore preferences</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------- 303. change color, size, speed of animate rectangle with gui (362) --------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 303. change color, size, speed of animate rectangle with gui (362) ~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image303.webp?raw=true"
    width="35%"
@@ -19789,9 +19742,9 @@ function applyGUIvalues() {
 
 </details>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="6-2-5">6.2.5 Example 3</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 [Online example at JSBin](https://jsbin.com/zowise/edit?html,js,output)
 
@@ -19927,8 +19880,7 @@ localStorage.setItem(key, JSON.stringify(object));
 Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,console,output">online at JSBin</a>).  The example below saves a JavaScript object in JSON, then restores it and checks that the object properties are still there!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------- 304. json save/load in local storage (367) --------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 304. json save/load in local storage (367) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image304.webp?raw=true"
   width="65%"
@@ -19981,8 +19933,7 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 <a href="https://jsbin.com/nejewiw/2/edit?html,js,console,output">Online example on JSBin that saves in localStorage an array of contacts in JSON</a>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 305. save local storage in json (368) ------------------------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 305. save local storage in json (368) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image305.webp?raw=true"
   style="width:65%"
@@ -19997,8 +19948,7 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 Add contacts using the form, see how the HTML table is updated. Try to reload the page: data are persisted in localStorage. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 306. serverless contact manager (369) ----------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 306. serverless contact manager (369) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image306.webp?raw=true"
   style="width:65%"
@@ -20008,8 +19958,7 @@ Add contacts using the form, see how the HTML table is updated. Try to reload th
 
 Examine the localStorage:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------- 307. localstorage view in devtools shows the data (369) -------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 307. localstorage view in devtools shows the data (369) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image307.webp?raw=true"
   style="width:65%"
@@ -20029,8 +19978,7 @@ It shows how to use the DOM API for dynamically updating the page content (build
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The objective of this chapter is to provide an overview of the File API.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 308. sound sample editor serverless (370) --------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 308. sound sample editor serverless (370) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image308.webp?raw=true"
   style="width:45%"
@@ -20044,8 +19992,7 @@ Possible actions were limited, both for the developer and the user. However, HT
 
 Imagine a multimedia player that accesses (in read-only) your file system, reads your audio and video files, etc., such as the [Remo Music player](https://chrome.google.com/webstore/detail/remo-music-player/ajilpdcmebalpffmjjopcingplogifhb) below, or an application that edits the audio content of local mp3 files, for example, the [HYA-WAVE sound editor](https://wav.hya.io/#/fx) (screenshot above).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------- 309. audio player that plays local files (370) ------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 309. audio player that plays local files (370) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image309.webp?raw=true"
   style="width:45%"
@@ -20053,8 +20000,7 @@ Imagine a multimedia player that accesses (in read-only) your file system, reads
 &nbsp;
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------- 310. polarr photo editor uses the File API (371) ------------------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 310. polarr photo editor uses the File API (371) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image310.webp?raw=true"
   style="width:45%"
@@ -20433,7 +20379,6 @@ The <a href="https://www.w3.org/TR/FileAPI/">HTML5 File API specification</a> 
 <p>We will not use all of these interfaces, but let's explain the difference between Blob and File, as most of the methods exposed by the FileReader interface take indiscriminately a Blob or a File as parameter.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 312. the blob movie poster (377) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image312.webp?raw=true"
   style="width:25%"
@@ -20517,7 +20462,6 @@ text area. This example is detailed further in the course. Click and select a te
 <p>Choose a text file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 313. select a text file (379) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image313.webp?raw=true"
   style="width:45%"
@@ -20537,8 +20481,7 @@ text area. This example is detailed further in the course. Click and select a te
 
 <p><a href="https://jsbin.com/xewemi/edit?html,output">Example at JSBin</a>, or try it below in your browser:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 314. read single files content (379) ------------------------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 314. read single files content (379) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image314.webp?raw=true"
   style="width:45%"
@@ -20596,8 +20539,7 @@ text area. This example is detailed further in the course. Click and select a te
 <p><a href="https://jsbin.com/zaheyu/edit?html,output">Example on JSBin</a>, or try it below in your browser.
 This time, please select multiple text files (using shift for multiple selection):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 315. choose multiple text files (380) ------------------------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 315. choose multiple text files (380) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image315.webp?raw=true"
   style="width:40%"
@@ -20707,8 +20649,7 @@ in the browser, without the need for a server!</p>
 embed it here on the edX platform as it prevents code that uses Ajax to run 
 in its pages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------- 316. webaudio api - does not work with microsoft shit (382) ------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 316. webaudio api - does not work with microsoft shit (382) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image316.webp?raw=true"
   style="width:55%"
@@ -20768,12 +20709,12 @@ bar of your browser, and you should see the red square:</p>
 
 <h4>This data URL in a browser address bar should look like this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------- 317. data url in address bar shows a red cirle (383) ---------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 317. data url in address bar shows a red cirle (383) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image317.webp?raw=true"
   style="width:85%"
-  alt="Data url in address bar shows a red circle." />
+  title="Data URL in address bar shows a red circle"
+  alt="Data URL in address bar shows a red circle." />
 &nbsp;
 </p>
 
@@ -20792,11 +20733,11 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 
 <h4>And here is the result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------------- 318. red splotch (383) ------------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 318. red splotch (383) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image318.webp?raw=true"
   style="width:15%"
+  title="Red splotch"
   alt="Red splotch." />
 &nbsp;
 </p>
@@ -20810,9 +20751,8 @@ requests and makes the Web page load faster.</p>
 <p>You will find lots of Web sites and tools for generating dataURL from files, 
 such as <a href="https://ezgif.com/image-to-datauri">Image to Data URI converter</a> (screenshot below):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------ 319. Online service that converts uploaded images to data uris... ----------------->
-<!-------------- we see an image and its ascii encoded data uri version (384) -------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!------------ 319. Online service that converts uploaded images to data uris... ~~~~~~~~~~~~~~~-->
+<!-------------- we see an image and its ascii encoded data uri version (384) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image319.webp?raw=true"
   style="width:55%"
@@ -20829,7 +20769,6 @@ used with ./images files (images, audio, video).</p>
 <p>Example of HTML5 logo embedded in a document without any real image, just a dataURL and CSS:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~ 317. screenshot of jsbin ex. shows the html5 logo insterted before a div using css (385) ~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image317.webp?raw=true"
   style="width:65%"
@@ -20848,11 +20787,11 @@ The reader.readAsDataUrl method is used for that.</p>
 <p><a href="https://jsbin.com/laseye/edit?html,output">Example on JSBin</a> or try it below 
 in your browser:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------- 332. preview of selected images (385) ------------------------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 332. preview of selected images (385) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image332.webp?raw=true"
   style="width:45%"
+  title="Preview of selected images"
   alt="Preview of selected images." />
 &nbsp;
 </p>
@@ -20917,11 +20856,11 @@ in your browser:</p>
 
 <a href="https://jsbin.com/miciqu/edit?html,output">Try it on JSBin</a>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 322. example 2 kitty cat (386) --------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 322. example 2 kitty cat (386) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image322.webp?raw=true"
   style="width:55%"
+  title="Example #2 read image as data URL and draw inside a canvas"
   alt="Example #2 read image as dataURL and draw inside a canvas." />
 &nbsp;
 <br/>
@@ -20980,8 +20919,7 @@ function readFileAndDraw(files) {
 
 <p>This chapter presents the new Geolocation API and illustrates its use with several examples.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 323. w3c geolocation logo (388) --------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 323. w3c geolocation logo (388) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image323.webp?raw=true"
   style="width:25%"
