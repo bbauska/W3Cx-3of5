@@ -788,7 +788,7 @@ The navigation menu just below the header is a &lt;nav&gt; element. For the pu
 </p>
 <h4>HTML code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```html5
@@ -815,7 +815,7 @@ The navigation menu just below the header is a &lt;nav&gt; element. For the pu
 
 <h4>And here is the CSS we used in this example for the &lt;nav&gt; element:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```css
@@ -859,7 +859,7 @@ nav span {
 
 <h4>HTML code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```html
@@ -880,7 +880,7 @@ nav span {
 
 <h4>And here is the CSS:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```css
@@ -923,7 +923,7 @@ paragraphs (article content), and so on.</p>
 
 <h4>Example for the first blog article:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```html
@@ -1013,7 +1013,7 @@ an &lt;aside&gt; element:</p>
 
 <br/>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```html
@@ -1042,7 +1042,7 @@ of the online example</a>.</p>
 
 <h4>Here is the CSS for the &lt;aside&gt; element:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -1093,7 +1093,7 @@ We used a float:right CSS rule to put the tag cloud on the right... In the fol
 <p>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below) after the 
 tag cloud definition, to display a page footer:</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```html
@@ -1159,7 +1159,7 @@ that could eventually be syndicated in RSS streams.</p>
 <p>Example of a blog post defined as a long &lt;article&gt;, that is in turn 
 cut into smaller &lt;section&gt; elements:</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```html
@@ -1191,7 +1191,7 @@ each one being an &lt;article&gt; element.</p>
 <p>Yes you can, in case you would like to propose some navigation links with each 
 blog post, for example:</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -1334,7 +1334,7 @@ the element represents the heading of the implied section.
 
 Let's clarify this by looking at some example code:</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -1436,7 +1436,7 @@ Notice that &lt;body&gt; is also a sectioning element. It's called a "sectioni
 
 <h4>Final good version:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -1512,7 +1512,7 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 
 <h4>Ok version (no explicit sections everywhere):</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -1534,7 +1534,7 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 
 <h4>Better version (best practice):</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -1597,7 +1597,7 @@ HTML5, the cornerstone for modern Web applications.</p>
 
 <h4>A minimal HTML5 document</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -1623,7 +1623,7 @@ HTML5, the cornerstone for modern Web applications.</p>
 
 <h4>Let's compare it to the HTML4 minimal document below (taken from <a href="https://www.sitepoint.com/a-minimal-html-document/" target="_blank" rel="noopener noreferrer">this source</a>).</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```html5
@@ -1896,7 +1896,7 @@ header span {
 
 <h4>HTML code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -1923,7 +1923,7 @@ header span {
 
 <h4>And here is the CSS we used in this example for the &lt;nav&gt; element:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -1985,7 +1985,7 @@ Now, we have one big &lt;section&gt; element that contains a set of &lt;artic
 
 <h4>And here is the CSS:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -2030,7 +2030,7 @@ Next, in each article in the section we have a header (to display the article ti
 Example for the first blog article:
 </p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -2117,7 +2117,7 @@ After the long &lt;section&gt; element that contains all the blog articles dis
 &nbsp;
 <br/>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -2145,7 +2145,7 @@ rel="noopener noreferrer">the code of the online example</a>.</p>
 
 <h4>Here is the CSS for the &lt;aside&gt; element:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -2195,7 +2195,7 @@ aside .tag-cloud {
 
 <h4>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below) after the tag cloud definition, to display a page footer:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -2265,7 +2265,7 @@ It may not be clear whether a &lt;section&gt; may contain one or several &lt;a
 
 <h4>Example of a blog post defined as a long &lt;article&gt;, that is in turn cut into smaller &lt;section&gt; elements:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -2295,7 +2295,7 @@ Indeed, we can also have a &lt;section&gt; that regroups all blog posts per 
 
 <p>Yes, you can, in case you would like to propose some navigation links with each blog post, for example:</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -2426,7 +2426,7 @@ Subsequent headings of equal or higher rank start new (implied) sections, headin
 
 <h4>Let's clarify this by looking at some example code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```html5
@@ -2595,7 +2595,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 
 <h4>Ok version (no explicit sections everywhere):</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```html5
@@ -2617,7 +2617,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 
 <h4>Better version (best practice):</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
  
 ```
@@ -2664,7 +2664,7 @@ This example is a simple document, with a hyperlink that, once clicked, displays
 
 <h4>Extract of source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -2725,7 +2725,7 @@ This element is subject to some constraints:</p>
 </ul>
 <p>And finally, here are some examples (from <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" target="_blank">the HTML5 specification</a>) that mix the &lt;main&gt; element with the other sectioning elements already seen in the course:</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -2760,7 +2760,7 @@ This element is subject to some constraints:</p>
 
 <p>Here is another example (also from the specification). Here the &lt;main&gt; element contains a &lt;nav&gt; element consisting of links to subsections of the main content:</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -2857,7 +2857,7 @@ We recommend this article written by Steve Faulkner: "<a href="https://www.pacie
 
 <p>Also note that in this example, we used H1s after each sectioning element, and we still get a hierarchy, some H1s are inside an &lt;article&gt; that is in a &lt;section&gt; (this corresponds to the third example given in the "heading and sectioning elements" part of the course):</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -2991,7 +2991,7 @@ The 4 examples below are given "as is" to give you some hints. There are lots of
 
 <p>This example uses the following HTML structure (notice that we use the "HTML entity syntax" for displaying "<" or ">". For example, "&lt;" displays a "<" character).</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -3045,7 +3045,7 @@ You can look at the complete CSS code in the interactive example below (click on
 
 <h4>HTML code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -3162,14 +3162,14 @@ Here is an example of what can be done using these elements: see the <a href="h
 
 <h4>Here is the code of this example:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
  
 ```
 <!DOCTYPE html>
 <html lang="en"> ...
    <body>
-      <details open>
+      <details>
          <summary>
             How to beat the boss...spoiler alert !
          </summary>
@@ -3221,17 +3221,17 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 
 <h5>Source code of this example, see the summary/details inside another one:</h5>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
-<details open>
+<details>
    <summary>
       How to beat the boss...spoiler alert !
    </summary>
    <p> Just aim to the red spots near his eyes</p>
    <p>Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.</p>
-   <details open>
+   <details>
       <summary>
          Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
       </summary>
@@ -3570,7 +3570,7 @@ Content-Disposition: attachment; filename="MyImage.png";
 
 Here are some extracts from a Java Servlet that generate a zip file and forces the browser to propose downloading it using a specified name:
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -3737,7 +3737,7 @@ This information is not visible to humans: it is pure <i>semantic information<
 
 <h4>Quick example of microdata that describes a person</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -3769,7 +3769,7 @@ This information is not visible to humans: it is pure <i>semantic information<
 
 <p>We can also add another embedded data item in the middle, such as the person's address:</p>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -3844,7 +3844,7 @@ Let's have a look now at a (small) example of an about page. It renders as a ver
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -3976,7 +3976,7 @@ However, if you do not find a vocabulary corresponding to your needs, keep in mi
 
 <p>Now that you have defined a container element, you may add properties to the HTML inside:</p>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -4027,7 +4027,7 @@ Give an element inside a microdata container its own itemscope attribute wit
 </p>
 <h4>Again, look at the Person/Address example:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -4294,7 +4294,7 @@ Press play to stream the neigh of a horse: (does not work in git)</p>
 
 <h4>As you can see, the code is very similar to the basic &lt;video&gt; element usage.</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -4396,7 +4396,7 @@ Please move the mouse pointer over this player's elements: (does not work in git
 
 <h4>HTML</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -4436,7 +4436,7 @@ Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
 </p>
 <h4>HTML source code:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -4464,7 +4464,7 @@ Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
 
 <h4>CSS source code:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -4580,7 +4580,7 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 
 <h4>Here is the HTML code. It's really simple, just notice the &lt;body onload="init();"&gt; which calls the JavaScript init() function right after the page is loaded.</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -4689,7 +4689,7 @@ This time the video is zoomed in so that it's much bigger than the browser's win
 
 <h4>HTML code:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -4721,7 +4721,7 @@ This time the video is zoomed in so that it's much bigger than the browser's win
 
 <h4>CSS code:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -4936,7 +4936,7 @@ This example gives the first steps towards writing a custom video player. It sho
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -4988,7 +4988,7 @@ This example listens to the ended event, and calls a callback function when th
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -5024,7 +5024,7 @@ Check the online example below: use the progress cursor to go near the end of th
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -5132,7 +5132,7 @@ and the CSS that processes the different clicks and applies CSS3 transforms.</
 Below is a piece of code for handling errors during video playback:
 </p>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -5201,7 +5201,7 @@ the movie duration for which there is data."</p>
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -5360,7 +5360,7 @@ from the specification</a>) that includes multiple &lt;track&gt; elements (sub
 languages and captions only for English):
 </p>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -5422,7 +5422,7 @@ In the interactive example presented before, we used a file called sintel-capti
 
 And here is an extract of the corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt">sintel-captions.vtt</a> file:
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -5626,7 +5626,7 @@ The example below shows how we can do that (play the video for 40s, look at the 
 
 The WebVTT file is shown below. Notice the new attributes that have been added on the right end of the duration values:
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -5829,7 +5829,7 @@ For example, we'll generate a custom navigation menu, using the &lt;track&gt; 
 
 <h4>Example of a WebVTT file that defines chapters:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -6132,7 +6132,7 @@ very simple, and you'll learn what you need from the provided examples.
 
 The stream is passed as a parameter to the then() method returned by the promise, as in this typical example (you can run it and see the result by clicking on the "CodePen" logo at the top right):
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -6195,7 +6195,7 @@ CSS effects in real time. Below, we give links to some cool examples available o
 &nbsp;
 <br/>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -6242,7 +6242,7 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 
 <h4>Code source:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -6312,7 +6312,7 @@ In order to stop the Webcam and make the hardware "unlock it", you need to call 
 
 Try this example that shows how to use the getUserMedia API. Note the CSS effects (click on the video to cycle from one effect to another):
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -6367,7 +6367,7 @@ function changeFilter(el) {
 
 <h4>CSS</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 
@@ -6421,7 +6421,7 @@ filter: invert(1)
 
 <h4>HTML</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -6463,7 +6463,7 @@ The trick is to copy and paste the current image from the video stream into a 
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 
@@ -6518,7 +6518,7 @@ border:1px solid black;
 }
 ```
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 
@@ -6608,7 +6608,7 @@ For more information, this <a href="https://developer.mozilla.org/en-US/docs/We
 
 <b>JavaScript</b>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -6694,7 +6694,7 @@ border:1px solid;
 
 <h4>HTML</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -6734,7 +6734,7 @@ border:1px solid;
 
 <h4>Code source extract related to the "constraint" object which specifies the desired resolutions:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -6766,7 +6766,7 @@ Use this <a href="https://webrtchacks.github.io/WebRTC-Camera-Resolution/">Web 
 
 Here are some other constraints you can set. In particular, look at the ones for selecting the front or rear camera (smartphones):
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -6814,7 +6814,7 @@ Here are some other constraints you can set. In particular, look at the ones for
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -6860,7 +6860,7 @@ Let's record, replay and download the video stream captured using a Webcam. You 
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```js
@@ -6950,7 +6950,7 @@ function download() {
 
 <h4>CSS</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -7008,7 +7008,7 @@ margin: 0 10px 10px 0;
 
 <h4>HTML</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -7105,7 +7105,7 @@ function play() {
 
 <p>A trick consists in creating, on the fly, an invisible link with a download attribute (see Module 1) and a href attribute  that points to the blob object containing the recorded stream encoded using a given codec, then generate programmatically a click event on the link. This will force the browser to download a file of type video/webm to the hard disk.</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -7468,7 +7468,7 @@ ctx.fillRect(0,0,80,100);
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -7512,7 +7512,7 @@ ctx.fillRect(0,0,80,100);
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -7751,7 +7751,7 @@ show how to draw a text message with a given font.</p>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -7806,7 +7806,7 @@ Your browser does not support the canvas tag.
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -7873,7 +7873,7 @@ If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) a
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -7937,7 +7937,7 @@ What if we wanted to draw these 3 rectangles at another position, as a group? We
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -7983,7 +7983,7 @@ Your browser does not support the canvas tag.
 
 <h4>Code extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8030,7 +8030,7 @@ Now we can start having some fun... let's draw a monster's head using only rect
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8089,7 +8089,7 @@ Your browser does not support the canvas tag.
 
 <h4>An extract of the JavaScript source code is:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8130,7 +8130,7 @@ The idea behind 2D transformations is that instead of modifying all the coordina
 
 Let's take a piece of code that draws something corresponding to the original coordinate system, located at the top left corner of the canvas:
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8169,7 +8169,7 @@ This code is the just the same as in the previous example except that we removed
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8205,7 +8205,7 @@ ctx.restore();
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8267,7 +8267,7 @@ Now, instead of simply calling drawMonster(0, 0), we will call first ctx.trans
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8303,7 +8303,7 @@ ctx.restore();
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8386,7 +8386,7 @@ Here is the previous example, but this time we translated the coordinate system
 </p>
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8422,7 +8422,7 @@ ctx.restore();
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8502,7 +8502,7 @@ drawMonster(0, 0);
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8538,7 +8538,7 @@ var angle = Math.atan2(toy-fromy,tox-fromx);
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8640,7 +8640,7 @@ Multiple contexts can be backed up consecutively and restored. Contexts saved w
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8676,7 +8676,7 @@ ctx.restore();
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8768,7 +8768,7 @@ We slightly modified the function that draws the monster:
 
 <h4>function drawMonster</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8825,7 +8825,7 @@ different colors and line widths:</p>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8899,7 +8899,7 @@ It also provides a set of context properties for setting the character font and 
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -8977,7 +8977,7 @@ context.fillText("Hello World!", x, y [, maxWidth]);
 
 <h4>Forcing a text not to exceed a certain width: the maxWidth property</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9012,7 +9012,7 @@ context.strokeText("Hello World!", 10, 220, 150);
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9042,7 +9042,7 @@ The ctx.measureText() method can be used to get the current width in pixels of
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9080,7 +9080,7 @@ context.stroke();
 
 <h4>Source code extract from this example:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9113,7 +9113,7 @@ The textBaseline property of the context is used to specify the different ways
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9189,7 +9189,7 @@ The textAlign property of the context tells how the x parameter will be used
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9232,7 +9232,7 @@ context.fillText("right", 250, 100);
 
 <h4>Typical use (source code taken from the above example):</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9270,7 +9270,7 @@ But let's start with a basic example!
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9327,11 +9327,11 @@ But let's start with a basic example!
 
 <h4>See picture below:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------- 133. simple image drawing in a canvas (182) -------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 133. simple image drawing in a canvas (182) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image133.webp?raw=true"
   width="45%"
+  title="Drawing Images with Subimages. Source image within a Destination Canvas"
   alt="Drawing Images with Subimages. Source image within a Destination Canvas." />
 &nbsp;
 <br/>
@@ -9342,7 +9342,7 @@ This example illustrates the use of the different variants of the drawImage me
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9393,7 +9393,7 @@ border:1px solid black;
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9462,7 +9462,7 @@ border:1px solid black;
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9517,7 +9517,7 @@ border:1px solid black;
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9570,7 +9570,7 @@ frequency on most modern computers or mobile devices.
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9645,7 +9645,7 @@ This example shows:
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9732,7 +9732,7 @@ Here is an example that draws 1000 random rectangles in a canvas, using immedia
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9772,7 +9772,7 @@ console.timeEnd("time to draw");
 </html>
 ```
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9831,7 +9831,7 @@ Same example as before, this time using the buffered mode for drawing rectangles
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -9893,11 +9893,11 @@ And here is what the timer gives: a slightly faster execution time. Changing 100
 
 <b>Path mode is faster than immediate mode! We have now an average time of 3.1ms</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------- 135. image of the devtool console which shows time path vs immediate (191) ----------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~ 135. image of the devtool console which shows time path vs immediate (191) ~~~~~~~~~-->
 <p align="center">
 <img src="./images/image135.webp?raw=true"
   width="65%"
+  title="Image of the devtool console which shows time values, path vs immediate mode"
   alt="Image of the devtool console which shows time values, path vs immediate mode." />
 &nbsp;
 <br/>
@@ -9967,18 +9967,18 @@ Note the call to ctx.stroke() or ctx.fill() will use the current values of t
 
 <h4>See the example below:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 136. draw grid using ctx.stroke (193) ----------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 136. draw grid using ctx.stroke (193) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image136.webp?raw=true"
-   width="65%"
-   alt="Draw blue grid using ctx.stroke command." />
+  width="65%"
+  title="Draw blue grid using ctx.stroke command"
+  alt="Draw blue grid using ctx.stroke command." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10016,7 +10016,7 @@ ctx.stroke();
 
 <h4>Code source extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10050,19 +10050,19 @@ In this example, the entire grid is drawn during the execution of the last line 
 
 <h4>Try this:</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------- 137. mix filled & wireframe shapes using different methods (194) ---------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 137. mix filled & wireframe shapes using different methods (194) ~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image137.webp?raw=true"
-   width="65%"
-   alt="Mix filled and wireframe shapes using different methods." />
+  width="65%"
+  title="Mix filled and wireframe shapes using different methods"
+  alt="Mix filled and wireframe shapes using different methods." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -10092,7 +10092,7 @@ ctx.stroke();
 
 <h4>Code source:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10120,19 +10120,19 @@ This example shows that filled and wireframe shapes should be drawn differently 
 <h4>Drawing a single path made with disconnected lines / parts</h4>
 
 Try this:
-<!------------------------------------------------------------------------------------------------>
-<!----------------- 138. drawing single path made with disconnected lines (195) ------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 138. drawing single path made with disconnected lines (195) ~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image138.webp?raw=true"
-   width="65%"
-   alt="Drawing single path made with disconnected lines." />
+  width="65%"
+  title="Drawing single path made with disconnected lines"
+  alt="Drawing single path made with disconnected lines." />
 &nbsp;
 <br/>
 
 <h4>Code source:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10158,26 +10158,26 @@ Try this:
 
 In this last example, we simply called the moveTo() method between each part of the path (<i>lines 5 and 10</i>). And we called stroke() (<i>line 16</i>) only once to draw the whole path.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch3-4-4">3.4.4 Drawing Lines with Different Styles</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h4>Common mistake: drawing the same path twice</h4>
 
 Let's look at the drawing from the last example of the previous section:
-<!------------------------------------------------------------------------------------------------>
-<!-------------- 139. example using moveto() and stroke() command functions (196) ---------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 139. example using moveto() and stroke() command functions (196) ~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image139.webp?raw=true"
-   width="65%"
-   alt="Same drawing as in previous section. Example using moveto() and stroke() command functions." />
+  width="65%"
+  title="Same drawing as in previous section. Example using moveto() and stroke() command functions"
+  alt="Same drawing as in previous section. Example using moveto() and stroke() command functions." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10209,29 +10209,33 @@ ctx.stroke();
 
 </details>
 
-Imagine that we would like to draw them with different styles and colors: the shape on the left will stay as it is now (blue, wireframe), while the shape on the right will be filled, colored in pink. Let's look at how we can do this...
+Imagine that we would like to draw them with different styles and colors: the 
+shape on the left will stay as it is now (blue, wireframe), while the shape on 
+the right will be filled, colored in pink. Let's look at how we can do this...
 
 <h4>Drawing two paths with different styles: the WRONG and the right way!</h4>
 
 <h4>First, the <em>wrong</em> way!</h4>
 
-In this example, we will draw the two parts of the path with different styles: the first part in wireframe mode, and the second part in filled mode.
+In this example, we will draw the two parts of the path with different styles: 
+the first part in wireframe mode, and the second part in filled mode.
 
-What we will try first is to call stroke() after the first half of the path, then call fill() after the second half of the path:
+What we will try first is to call stroke() after the first half of the path, 
+then call fill() after the second half of the path:
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------- 140. the wrong way to draw two paths with different styles (197) ---------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 140. the wrong way to draw two paths with different styles (197) ~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image140.webp?raw=true"
-   width="65%"
-   alt="THE WRONG WAY! Drawing two paths with different styles." />
+  width="65%"
+  title="THE WRONG WAY! Drawing two paths with different styles"
+  alt="THE WRONG WAY! Drawing two paths with different styles." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10269,7 +10273,7 @@ ctx.fill();
 
 <h4>Here is the code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10297,25 +10301,32 @@ ctx.fill();
 
 </details>
 
-Hey - it does not work! Weirdly, the two parts of the path are filled in pink! But we called stroke() after the first half of the path was drawn (<i>lines 5-8</i>). Then we called fill() only after the second part of the path was specified (<i>lines 14-19</i>)... so, what happened?
+Hey - it does not work! Weirdly, the two parts of the path are filled in pink! But we 
+called stroke() after the first half of the path was drawn (<i>lines 5-8</i>). Then we 
+called fill() only after the second part of the path was specified (<i>lines 14-19</i>)
+... so, what happened?
 
-Remember that fill() or stroke() <i>draws the whole path</i>, even if it is disconnected, and even if it has already been drawn!
+Remember that fill() or stroke() <i>draws the whole path</i>, even if it is disconnected, 
+and even if it has already been drawn!
 
 What happened is:
 
-1.  The call to stroke() has drawn the path corresponding to the <i>lines 5-7</i>. Indeed, the first part of the path (on the left) has actually been drawn once in wireframe mode, and in blue.
+1.  The call to stroke() has drawn the path corresponding to the <i>lines 5-7</i>. 
+  Indeed, the first part of the path (on the left) has actually been drawn once in 
+  wireframe mode, and in blue.
 
-2.  Then, the call to fill() at <i>line 20</i> has drawn the whole path again, but in pink and in filled mode. But this time the path corresponds to <i>lines 5-7</i> plus <i>lines 14-16</i> that make up the second shape on the right.
-    <i>So the path that has been drawn this time is made of both of the triangles.</i>
+2.  Then, the call to fill() at <i>line 20</i> has drawn the whole path again, but 
+  in pink and in filled mode. But this time the path corresponds to <i>lines 5-7</i> 
+  plus <i>lines 14-16</i> that make up the second shape on the right.
+  <i>So the path that has been drawn this time is made of both of the triangles.</i>
 
 <b>Important</b>: If you do not want to draw parts of the same path several times, you need to draw two different paths,
 using the ctx.beginPath() method, as shown in the next example.
 
 <h4>Now, the <em>right</em> way!</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------- 141. the right way to draw two paths with different styles (198) ---------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 141. the right way to draw two paths with different styles (198) ~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image141.webp?raw=true"
    width="65%"
@@ -10325,7 +10336,7 @@ using the ctx.beginPath() method, as shown in the next example.
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10365,7 +10376,7 @@ ctx.fill();
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10398,9 +10409,9 @@ ctx.fill();
 
 This time, in order to draw the two shapes differently, we defined two separate paths. The way to do this is just to call ctx.beginPath() to start a new path. In this example, the first path has been drawn in wireframe mode, then a new path has been started that is drawn in filled mode.
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch3-4-5">3.4.5 Drawing Lines in Immediate Mode</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Sometimes, it might be useful to draw just one line.
 
@@ -10408,7 +10419,7 @@ It's interesting to see how we can write a single "draw line" function that take
 
 <h4>Here is the code for this "utility" function that you may find useful:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10443,20 +10454,19 @@ Notice the save/restore of the context at the beginning/end of the function. Thi
 </ul>
 
 <h4>Here is an example:</h4>
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 142. drawing lines in immediate mode (200) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 142. drawing lines in immediate mode (200) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image142.webp?raw=true"
-   width="65%"
-   alt="Drawing lines in immediate mode to avoid affecting other functions' context." />
+  width="65%"
+  title="Drawing lines in immediate mode to avoid affecting other functions' context"
+  alt="Drawing lines in immediate mode to avoid affecting other functions' context." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10504,9 +10514,9 @@ drawLine(0, 50, 150, 200, 'red');
 drawLine(10, 100, 100, 10, 'green', 10);
 ```
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch3-4-6">3.4.6 Drawing Arrows</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 In this section, we present a function that draws arrows in a canvas.
 
@@ -10516,7 +10526,7 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 
 <h4>Example #1:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10573,19 +10583,19 @@ You may find multiple implementations on the Web for drawing arrows in a canvas,
 
 <h4>Example #2</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------------- 143. draw arrows (202) ------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 143. draw arrows (202) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image143.webp?raw=true"
-   width="65%"
-   alt="Function to draw arrows." />
+  width="65%"
+  title="Function to draw arrows"
+  alt="Function to draw arrows." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10657,38 +10667,38 @@ This <a href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArrow.html">
 
 Screenshot from a demo available on the above Web site:
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 144. clock with nicer arrows (204) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 144. clock with nicer arrows (204) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image144.webp?raw=true"
-   width="20%"
-   alt="Round clock with nice arrows." />
+  width="20%"
+  title="Round clock with nice arrows"
+  alt="Round clock with nice arrows." />
 &nbsp;
 <br/>
 
 In a later part of the course dedicated to curve drawing in a canvas, we will also show how to draw curved arrows, with very simple code (much simpler than the one used for drawing the clock's hands above).
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch3-4-7">3.4.7 Closing a Path</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The ctx.closePath() method indicates that we would like a closed path: draw from the last point to the first.
 
 <h4>Try this:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 145. example closing a path (204) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 145. example closing a path (204) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image145.webp?raw=true"
-   width="65%"
-   alt="Example on closing a path in a drawing." />
+  width="65%"
+  title="Example on closing a path in a drawing"
+  alt="Example on closing a path in a drawing." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10721,7 +10731,7 @@ ctx.stroke();
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10751,21 +10761,21 @@ ctx.stroke();
 
 Try commenting the <i>line 10</i> in the online example and see the results!
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch3-4-8">3.4.8 Drawing Circles and Arcs</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is useful for drawing arcs of circles. It takes the center of the circle/arc, its radius, the starting angle of the arc (turning clockwise), the ending angle of the arc, and an optional parameter we will talk about later.
 
 <i>Note</i>: the figures in this page have been borrowed from the <a href="https://www.html5canvastutorials.com/tutorials/html5-canvas-arcs/">HTML5 Canvas Tutorials</a> Web site.
 
-<!------------------------------------------------------------------------------------------------>
-<!------------- 146. html5 canvas arc diagram: drawing circle coordinate system (205) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 146. html5 canvas arc diagram: drawing circle coordinate system (205) ~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image146.webp?raw=true"
-   width="50%"
-   alt="HTML5 canvas arc diagram: drawing circle, coordinate system." />
+  width="50%"
+  title="HTML5 canvas arc diagram: drawing circle, coordinate system"
+  alt="HTML5 canvas arc diagram: drawing circle, coordinate system." />
 &nbsp;
 <br/>
 
@@ -10788,17 +10798,17 @@ The last parameter is optional and has a value of false by default. If true, 
 <h4> Example #1: drawing an arc with radius = 50, starting angle = 0, end angle = PI/2</h4>
 
 <h4>Try this example:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 147. example drawing an arc with radius = 50 (206) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 147. example drawing an arc with radius = 50 (206) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image147.webp?raw=true"
-   width="65%"
-   alt="Example on drawing an arc with radius = 50, start angle = 0, end angle = pi/2." />
+  width="65%"
+  title="Example on drawing an arc with radius = 50, start angle = 0, end angle = pi/2"
+  alt="Example on drawing an arc with radius = 50, start angle = 0, end angle = pi/2." />
 &nbsp;
 <br/>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10849,30 +10859,30 @@ And if we change the last parameter of the arc function call (<i>line 3</i>) t
 ```
 
 Then, the result is the "complementary" of the previous arc:
-<!------------------------------------------------------------------------------------------------>
-<!------------------ 148. example arc complementary of the previous arc (207) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 148. example arc complementary of the previous arc (207) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image148.webp?raw=true"
-   width="65%"
-   alt="Example complementary of the previous arc." />
+  width="65%"
+  title="Example complementary of the previous arc"
+  alt="Example complementary of the previous arc." />
 &nbsp;
 <br/>
 
 <h4>Example #2: drawing a Full circle (filled + outlined)</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 149. example draw a full circle (207) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 149. example draw a full circle (207) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image149.webp?raw=true"
-   width="65%"
-   alt="Example draw a full circle." />
+  width="65%"
+  title="Example draw a full circle"
+  alt="Example draw a full circle." />
 &nbsp;
 <br/>
 
 <h4>Source code:</h4>
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -10912,43 +10922,49 @@ Notice that we called ctx.arc() only once! And drew it twice, with different s
 <h4>Proposed projects</h4>
 
 <h4>Project #1: modify the [previous example](https://codepen.io/w3devcampus/pen/YzZBxmO) in order to get:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------------- 150. half circle (208) ------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 150. half circle (208) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image150.webp?raw=true"
-   width="25%"
-   alt="Example of half circle." />
+  width="25%"
+  title="Example of half circle"
+  alt="Example of half circle." />
 &nbsp;
 <br/>
 
 <h4> Project #2: make a small program that draws a smiling head like this (or make something better!)</h4>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!----------------------------------- 151. smiley face (208) ------------------------------------->
-<!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image151.webp?raw=true"
-   width="30%"
-   alt="Example of smiling head." />
+  width="30%"
+  title="Example of smiling head"
+  alt="Example of smiling head." />
 &nbsp;
 <br/>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch3-4-9">3.4.9 Drawing Rounded Rectangles</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-There is another method called ctx.arcTo(x1, y1, x2, y2, radius), which is a bit complex to use, but very practical for drawing rounded rectangles.
+There is another method called ctx.arcTo(x1, y1, x2, y2, radius), which is a bit 
+complex to use, but very practical for drawing rounded rectangles.
 
-In fact, the arcTo(...) method draws an arc of a circle depending on some tangents. Let's look at these pictures for a better understanding:
+In fact, the arcTo(...) method draws an arc of a circle depending on some tangents. 
+Let's look at these pictures for a better understanding:
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 152. three diagrams to explain arcto method (209) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 152. three diagrams to explain arcto method (209) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image152.webp?raw=true"
-   width="65%"
-   alt="There are three (3) diagrams, all drawn on canvas dynamically. The arcTo really uses carTo() with reduced alpha, and the rest of the diagram is calculated in JavaScript and drawn with lineTo and arc." />
+  width="65%"
+  title"There are three (3) diagrams, all drawn on canvas dynamically. The arcTo 
+    really uses carTo() with reduced alpha, and the rest of the diagram is 
+    calculated in JavaScript and drawn with lineTo and arc." />
+  alt="There are three (3) diagrams, all drawn on canvas dynamically. The arcTo 
+    really uses carTo() with reduced alpha, and the rest of the diagram is 
+    calculated in JavaScript and drawn with lineTo and arc." />
 &nbsp;
 <br/>
 
@@ -10975,19 +10991,19 @@ This method can be confusing. It was defined mainly for drawing rounded shapes l
 <h4>Examples</h4>
 
 <h4>Example #1: simple use</h4>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 153. simple use arcto example 1 (209) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 153. simple use arcto example 1 (209) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image153.webp?raw=true"
-   width="65%"
-   alt="Simple use arcTo example #1." />
+  width="65%"
+  title="Simple use arcTo example #1"
+  alt="Simple use arcTo example #1." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11030,19 +11046,19 @@ context.stroke();
 <h4>Example #2: draw A rounded rectangle</h4>
 
 <h4>Try this:</h4>
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 154. rounded rectange example 2 (210) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 154. rounded rectange example 2 (210) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image154.webp?raw=true"
-   width="65%"
-   alt="Draw a rounded rectange, example #2." />
+  width="65%"
+  title="Draw a rounded rectange, example #2"
+  alt="Draw a rounded rectange, example #2." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11088,7 +11104,7 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11126,24 +11142,28 @@ roundedRect(ctx,15,15,160,120,20,true,true);
 
 </details>
 
-In this example, each call to ctx.arcTo(...) draws a side plus a corner. This makes us suspect that the arcTo() method has been designed primarily for drawing rounded rectangles...
+In this example, each call to ctx.arcTo(...) draws a side plus a corner. This 
+makes us suspect that the arcTo() method has been designed primarily for drawing 
+rounded rectangles...
 
 <h4>Example #3: comparison between lineTo and arcTo</h4>
 
-This example at JS Bin is the same as the previous one, except that we added at the end of the roundedRect function the same lines of code that draw the rounded rectangle, but using lineTo instead of arcTo. Just take a look!
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 155. comparison between arcto and lineto (212) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+This example at JS Bin is the same as the previous one, except that we added at 
+the end of the roundedRect function the same lines of code that draw the rounded 
+rectangle, but using lineTo instead of arcTo. Just take a look!
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 155. comparison between arcto and lineto (212) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image155.webp?raw=true"
-   width="65%"
-   alt="Comparison between lineTo and arcTo." />
+  width="65%"
+  title="Comparison between lineTo and arcTo"
+  alt="Comparison between lineTo and arcTo." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11227,19 +11247,19 @@ which might be easier than trying to figure out where the arc will end like this
 
 This could be particularly helpful if you are dealing with something other than a rectangle, like this rounded triangle:
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 156. rounded triangle example (213) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 156. rounded triangle example (213) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image156.webp?raw=true"
-   width="65%"
-   alt="Example: rounded triangle." />
+  width="65%"
+  title="Example: rounded triangle"
+  alt="Example: rounded triangle." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11285,19 +11305,19 @@ roundedTriangle(ctx,200,15,300,150,15,100,20,true,true);
 
 </details>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch3-4-10">3.4.10 Quadratic Curves</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h4>Introduction</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 157. html5 canvas quadratic curve diagram (214) ------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 157. html5 canvas quadratic curve diagram (214) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image157.webp?raw=true"
-   width="55%"
-   alt="HTML5 Canvas Quadratic Curve Diagram. Control, context & ending points." />
+  width="55%"
+  title="HTML5 Canvas Quadratic Curve Diagram. Control, context & ending points"
+  alt="HTML5 Canvas Quadratic Curve Diagram. Control, context & ending points." />
 &nbsp;
 <br/>
 
@@ -11325,19 +11345,19 @@ The control point controls the curvature - if we move the control point farther 
 
 <h4>Example #1: quadratic curve</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------------- 158. quadratic curve (215) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 158. quadratic curve (215) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image158.webp?raw=true"
-   width="65%"
-   alt="Quadratic curve example." />
+  width="65%"
+  title="Quadratic curve example"
+  alt="Quadratic curve example." />
 &nbsp;
 <br/>
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11362,19 +11382,19 @@ We set a starting point in <i>line 6</i>: moveTo(...), then set the control a
 
 Try this:
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------ 159. example: lines connected with quadratic curve (216) -------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 159. example: lines connected with quadratic curve (216) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image159.webp?raw=true"
-   width="65%"
-   alt="image159.webp - Example: Lines connected with a quadratic curve." />
+  width="65%"
+  title="image159.webp - Example: Lines connected with a quadratic curve"
+  alt="image159.webp - Example: Lines connected with a quadratic curve." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11406,7 +11426,7 @@ context.stroke();
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11429,17 +11449,17 @@ context.stroke();
 We propose a useful function for drawing curved arrows. See this example:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 160. example: useful function for drawing curved arrows (217) ~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image160.webp?raw=true"
   width="65%"
+  title="Example: useful function for drawing curved arrows"
   alt="Example: useful function for drawing curved arrows." />
 &nbsp;
 <br/>
 
 <h4>JavaSscript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11498,7 +11518,7 @@ border: 1px solid black;
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11518,7 +11538,7 @@ border: 1px solid black;
 
 <h4>Source code of the function that draws a curved arrow:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11582,8 +11602,9 @@ Bézier curves are interesting. They are mostly used for drawing "S" shapes or a
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image161.webp?raw=true"
-   width="35%"
-   alt="Bezier curve in S." />
+  width="35%"
+  title="Bezier curve in S"
+  alt="Bezier curve in S." />
 &nbsp;
 <br/>
 
@@ -11597,11 +11618,11 @@ the first control point. The second part of the curve is tangential to the imagi
 by the second control point and the ending point.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 162. bezier curve control points (219) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image162.webp?raw=true"
-   width="65%"
-   alt="Bezier curve control points." />
+  width="65%"
+  title="Bezier curve control points"
+  alt="Bezier curve control points." />
 &nbsp;
 <br/>
 
@@ -11636,17 +11657,17 @@ The best way to understand how they work is to check out one of these interactiv
 Try this:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 163. bezier curve: example 1 (220) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image163.webp?raw=true"
-   width="65%"
-   alt="Bezier curve: Example 1." />
+  width="65%"
+  title="Bezier curve: Example 1"
+  alt="Bezier curve: Example 1." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11698,17 +11719,17 @@ Try this:
 <h4>Try this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~ 164. path with bezier curve, quadratic curve & line in same, closed path  (221) ~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image164.webp?raw=true"
   width="85%"
+  title="Path with Bezier and Quadratic curve and line in same, closed path"
   alt="Path with Bezier and Quadratic curve and line in same, closed path." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11742,7 +11763,7 @@ Try this:
 
 <h4>Extract from source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11818,7 +11839,7 @@ Here is an example that shows how to draw different filled rectangles in blue, w
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -11878,7 +11899,7 @@ It is possible to define the stroke or the fill style as a "gradient", a set of 
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
   <summary>JavaScript code extract!</summary>
 
 ```
@@ -11907,7 +11928,7 @@ function draw() {
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12003,8 +12024,7 @@ grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
 
 ... then you will define a gradient that goes from the top left corner of the canvas to the bottom right of the canvas. Let's see what it does:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------- 168. example 1 draw gradient top left to bottom right (226) ------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 168. example 1 draw gradient top left to bottom right (226) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image168.webp?raw=true"
   width="65%"
@@ -12016,8 +12036,7 @@ grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
 
 Instead of drawing a filled rectangle that covers the whole surface of the canvas, let's draw several smaller rectangles:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 169. example 2 draw smaller rectangles (226) -------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 169. example 2 draw smaller rectangles (226) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image169.webp?raw=true"
    width="65%"
@@ -12049,7 +12068,7 @@ This code is rather ugly isn't it? It would have been better to use a loop...
 
 <h4>Here is function that draws a chessboard:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12080,8 +12099,7 @@ or we do not draw a rectangle.
 This code is much more complex than the previous one, taking 16 lines instead of 13, but is much 
 more powerful. Try to call the function with a value of 10, 20, or 2...
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------------- 170. draw checkboard (227) ----------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--------------------------------- 170. draw checkboard (227) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image170.webp?raw=true"
    width="65%"
@@ -12091,7 +12109,7 @@ more powerful. Try to call the function with a value of 10, 20, or 2...
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12130,7 +12148,7 @@ ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12171,7 +12189,7 @@ outline of the rectangles at 5 pixels:
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12209,7 +12227,7 @@ ctx.strokeRect(cellWidth*(i), cellHeight*j, cellWidth, cellHeight);
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12234,7 +12252,7 @@ border: 1px solid black;
 
 <h4>Extract from source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12262,18 +12280,18 @@ grdFrenchFlag = ctx.createLinearGradient(100, 0, 200, 0);
 
 Like in the first example we will draw a filled rectangle that is the same size as the canvas:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------- 172. example 4 draw filled rectangle (230) --------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 172. example 4 draw filled rectangle (230) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image172.webp?raw=true"
   width="65%"
+  title="Example 4 draw filled rectangles"
   alt="Example 4 draw filled rectangles." />
 &nbsp;
 <br/>
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12302,7 +12320,7 @@ ctx.fillRect(0, 0, 300, 200);
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12338,17 +12356,17 @@ grdFrenchFlag = ctx.createLinearGradient(0, 0, 600, 400);
 And if we draw the same rectangle with the canvas size, here is the result:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 173. example 5 canvas size (231) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image173.webp?raw=true"
   width="65%"
+  title="Example 5 draw same rectangle with the canvas size"
   alt="Example 5 draw same rectangle with the canvas size." />
 &nbsp;
 <br/>
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12377,7 +12395,7 @@ ctx.fillRect(0, 0, 300, 200);
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12414,17 +12432,17 @@ it with the starting and ending point of its direction/virtual line accordingly 
 the rectangle coordinates. Try this:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 174. example 6 draw shapes that share gradient (232) ~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image174.webp?raw=true"
   width="65%"
+  title="Example 6 draw shapes that share gradient"
   alt="Example 6 draw shapes that share gradient." />
 &nbsp;
 <br/>
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12460,7 +12478,7 @@ ctx.fillRect(x, y, cellWidth, cellHeight);
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12485,7 +12503,7 @@ border: 1px solid black;
 
 <h4>Extract from source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12517,29 +12535,33 @@ function drawCheckboard(n) {
 
 </details>
 
-We wrote a function setGradient(startX, startY, endX, endY) that creates a gradient and set the fillStyle context property so that any filled shape drawn will have this gradient.
+We wrote a function setGradient(startX, startY, endX, endY) that creates a gradient 
+and set the fillStyle context property so that any filled shape drawn will have this gradient.
 
-In the drawCheckBoard(...) function we call it just before drawing rectangles. In this way, each rectangle is drawn using its own gradient.
+In the drawCheckBoard(...) function we call it just before drawing rectangles. 
+In this way, each rectangle is drawn using its own gradient.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch3-5-3">3.5.3 Canvas Context: Radial Gradients</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-Radial gradients are for creating gradients that propagate/interpolate colors along circles instead of propagating/interpolating along a virtual line, like linear gradients.
+Radial gradients are for creating gradients that propagate/interpolate colors 
+along circles instead of propagating/interpolating along a virtual line, like 
+linear gradients.
 
 Here is an example of a radial gradient that interpolates the color of the rainbow:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~ 175. example radial gradient interpolates color of rainbow (234) ~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image175.webp?raw=true"
   width="65%"
-  alt="Example radial gradient which interpolates the color of the rainbow."
+  title="Example radial gradient which interpolates the color of the rainbow"
+  alt="Example radial gradient which interpolates the color of the rainbow." />
 &nbsp;
 <br/>
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12567,7 +12589,7 @@ function draw() {
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12604,16 +12626,20 @@ grd.addColorStop(1, "violet");
 context.fillStyle = grd;
 ```
 
-The method from the context object createRadialGradient(cx1, cy1, radius1, cx2, cy2, radius2) takes as the first three parameters the "starting" circle of the gradient, and as the three last parameters, the "ending circle".
+The method from the context object createRadialGradient(cx1, cy1, radius1, 
+cx2, cy2, radius2) takes as the first three parameters the "starting" circle 
+of the gradient, and as the three last parameters, the "ending circle".
 
-In the above example, the gradients starts at a circle located at (150, 100), with a radius of 30, and propagates to a circle with the same center as the first (150, 100), but with a bigger radius of 100, as shown below:
+In the above example, the gradients starts at a circle located at (150, 100), 
+with a radius of 30, and propagates to a circle with the same center as the 
+first (150, 100), but with a bigger radius of 100, as shown below:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 176. above example with color stops (235) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image176.webp?raw=true"
-   width="40%"
-   alt="Radial gradient." />
+  width="40%"
+  title="Radial gradient"
+  alt="Radial gradient." />
 &nbsp;
 <br/>
 
@@ -12621,7 +12647,8 @@ We added color stops using a method similar to that used for linear gradients
 
 <h4>What happens if the circles are not located at the same place?</h4>
 
-You get some nice effects; here we set the second circle's center 60 pixels to the right of the first circle's center (cx = 210 instead of 150):
+You get some nice effects; here we set the second circle's center 60 pixels 
+to the right of the first circle's center (cx = 210 instead of 150):
 
 ```
 grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
@@ -12630,17 +12657,17 @@ grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
 <h4>Here is the result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 177. var canvas, ctx, grd (235) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image177.webp?raw=true"
-   width="65%"
-   alt="var canvas, ctx, grd for function init." />
+  width="65%"
+  title="var canvas, ctx, grd for function init"
+  alt="var canvas, ctx, grd for function init." />
 &nbsp;
 <br/>
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12668,7 +12695,7 @@ ctx.fillRect(0, 0, 300, 200);
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12766,17 +12793,17 @@ imageObj.onload = function(){
 <p>Here we have two rectangles drawn using a pattern (an image that can be repeated along the X and Y axis). The first is a filled rectangle while the second is "stroked" with a lineWidth of 20 pixels:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ 178. filled rectange and stroked rectangle with linewidth 20 (238) ~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image178.webp?raw=true"
   width="65%"
+  title="Filled rectange and a stroked rectangle with lineWidth=20"
   alt="Filled rectange and a stroked rectangle with lineWidth=20." />
 &nbsp;
 <br/>
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12836,7 +12863,7 @@ Your browser does not support the canvas tag. </canvas>
 
 <h4>JavaScript source code:</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -12895,17 +12922,17 @@ Your browser does not support the canvas tag. </canvas>
 <p>To "better" see the repeatability of the pattern, here is the same example with a 1000x1000 pixel wide canvas:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 179. 1000 by 1000 pixel wide canvas (239) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image179.webp?raw=true"
-   width="65%"
-   alt="1000 by 1000 pixel wide canvas." />
+  width="65%"
+  title="1000 by 1000 pixel wide canvas"
+  alt="1000 by 1000 pixel wide canvas." />
 &nbsp;
 <br/>
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -12978,10 +13005,10 @@ Your browser does not support the canvas tag. </canvas>
 Below are 4 rectangles drawn with 4 different patterns.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 180. four rectangles drawn with different patterns (241) ~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image180.webp?raw=true"
   width="35%"
+  title="Four rectangles drawn with different patterns"
   alt="Four rectangles drawn with different patterns." />
 &nbsp;
 <br/>
@@ -12999,17 +13026,17 @@ When all images have been loaded, we call a callback function that has been pass
 The complete example code that produces the result shown at the beginning of this page is the following:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 181. multiple image loader (241) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image181.webp?raw=true"
-   width="65%"
-   alt="A multiple image loader." />
+  width="65%"
+  title="A multiple image loader"
+  alt="A multiple image loader." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -13019,70 +13046,70 @@ The complete example code that produces the result shown at the beginning of thi
 <meta charset="utf-8">
 <title>A multiple image loader</title>
 <style>
-#myCanvas {
-border: 1px solid black;
-}
+  #myCanvas {
+    border: 1px solid black;
+  }
 </style>
 <script>
-var canvas, ctx;
-// List of images to load, we used a JavaScript object instead of
-// an array, so that named indexes (aka properties)
-// can be used -> easier to manipulate
-var imagesToLoad = {
-flowers: https://i.ibb.co/4NN9Sgn/flowers.jpg,
-lion: https://i.ibb.co/3NyqKnY/lion.jpg,
-blackAndWhiteLys: https://i.ibb.co/VNLVpcL/final.jpg,
-tiledFloor:
-https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg{
-};
-function loadImages(imagesToBeLoaded, drawCallback) {
-var imagesLoaded = {};
-var loadedImages = 0;
-var numberOfImagesToLoad = 0;
-// get num of sources
-for(var name in imagesToBeLoaded) {
-numberOfImagesToLoad++;
-}
-for(var name in imagesToBeLoaded) {
-imagesLoaded[name] = new Image();
-imagesLoaded[name].onload = function() {
-if(++loadedImages >= numberOfImagesToLoad) {
-drawCallback(imagesLoaded);
-} // if
-}; // function
-imagesLoaded[name].src = imagesToBeLoaded[name];
-} // for
-} // function
-function init() {
-// This function is called after the page is loaded
-// 1 - Get the canvas
-canvas = document.getElementById('myCanvas');
-// 2 - Get the context
-ctx=canvas.getContext('2d');
-loadImages(imagesToLoad, function(imagesLoaded) {
-patternFlowers = ctx.createPattern(imagesLoaded.flowers, repeat);
-patternLion = ctx.createPattern(imagesLoaded.lion, repeat);
-patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, repeat);
-patternFloor = ctx.createPattern(imagesLoaded.tiledFloor, repeat);
-drawRectanglesWithPatterns();
-});
-}
-function drawRectanglesWithPatterns() {
-ctx.fillStyle=patternFloor;
-ctx.fillRect(0,0,200,200);
-ctx.fillStyle=patternLion;
-ctx.fillRect(200,0,200,200);
-ctx.fillStyle=patternFlowers;
-ctx.fillRect(0,200,200,200);
-ctx.fillStyle=patternBW;
-ctx.fillRect(200,200,200,200);
-}
+  var canvas, ctx;
+  // List of images to load, we used a JavaScript object instead of
+  // an array, so that named indexes (aka properties)
+  // can be used -> easier to manipulate
+  var imagesToLoad = {
+    flowers: https://i.ibb.co/4NN9Sgn/flowers.jpg,
+    lion: https://i.ibb.co/3NyqKnY/lion.jpg,
+    blackAndWhiteLys: https://i.ibb.co/VNLVpcL/final.jpg,
+    tiledFloor:
+    https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg{
+  };
+  function loadImages(imagesToBeLoaded, drawCallback) {
+    var imagesLoaded = {};
+    var loadedImages = 0;
+    var numberOfImagesToLoad = 0;
+    // get num of sources
+    for(var name in imagesToBeLoaded) {
+      numberOfImagesToLoad++;
+    }
+    for(var name in imagesToBeLoaded) {
+      imagesLoaded[name] = new Image();
+      imagesLoaded[name].onload = function() {
+        if(++loadedImages >= numberOfImagesToLoad) {
+          drawCallback(imagesLoaded);
+        } // if
+      }; // function
+      imagesLoaded[name].src = imagesToBeLoaded[name];
+    } // for
+  } // function
+  function init() {
+    // This function is called after the page is loaded
+    // 1 - Get the canvas
+    canvas = document.getElementById('myCanvas');
+    // 2 - Get the context
+    ctx=canvas.getContext('2d');
+    loadImages(imagesToLoad, function(imagesLoaded) {
+      patternFlowers = ctx.createPattern(imagesLoaded.flowers, repeat);
+      patternLion = ctx.createPattern(imagesLoaded.lion, repeat);
+      patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, repeat);
+      patternFloor = ctx.createPattern(imagesLoaded.tiledFloor, repeat);
+      drawRectanglesWithPatterns();
+    });
+  }
+  function drawRectanglesWithPatterns() {
+    ctx.fillStyle=patternFloor;
+    ctx.fillRect(0,0,200,200);
+    ctx.fillStyle=patternLion;
+    ctx.fillRect(200,0,200,200);
+    ctx.fillStyle=patternFlowers;
+    ctx.fillRect(0,200,200,200);
+    ctx.fillStyle=patternBW;
+    ctx.fillRect(200,200,200,200);
+  }
 </script>
 </head>
 <body onload="init();">
-<canvas id="myCanvas" width="400" height="400">
-Your browser does not support the canvas tag.
-</canvas>
+  <canvas id="myCanvas" width="400" height="400">
+    Your browser does not support the canvas tag.
+  </canvas>
 </body>
 ```
 
@@ -13095,11 +13122,11 @@ Your browser does not support the canvas tag.
 2.  // an array, so that named indexes (aka properties)
 3.  // can be used -> easier to read
 4.  var imagesToLoad = {
-5.       flowers: https://i.ibb.co/4NN9Sgn/flowers.jpg,
-6.       lion: https://i.ibb.co/3NyqKnY/lion.jpg,
-7.       blackAndWhiteLys: https://i.ibb.co/VNLVpcL/final.jpg,
-8.       tiledFloor:
-9.        https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg
+5.    flowers: https://i.ibb.co/4NN9Sgn/flowers.jpg,
+6.    lion: https://i.ibb.co/3NyqKnY/lion.jpg,
+7.    blackAndWhiteLys: https://i.ibb.co/VNLVpcL/final.jpg,
+8.    tiledFloor:
+9.    https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg
 10. };
 ```
 
@@ -13107,30 +13134,30 @@ Your browser does not support the canvas tag.
 
 <h4>The image loader function</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
 1.  function loadImages(imagesToBeLoaded, drawCallback) {
-2.       var imagesLoaded = {};
-3.       var loadedImages = 0;
-4.       var numberOfImagesToLoad = 0;
+2.      var imagesLoaded = {};
+3.      var loadedImages = 0;
+4.      var numberOfImagesToLoad = 0;
 5.  
-6.       // get num of images to load
-7.       for(var name in imagesToBeLoaded) {
-8.           numberOfImagesToLoad++;
-9.       }
+6.      // get num of images to load
+7.      for(var name in imagesToBeLoaded) {
+8.        numberOfImagesToLoad++;
+9.      }
 10. 
-11.      for(var name in imagesToBeLoaded) {
-12.          imagesLoaded[name] = new Image();
+11.   for(var name in imagesToBeLoaded) {
+12.     imagesLoaded[name] = new Image();
 13. 
-14.          imagesLoaded[name].onload = function() {
-15.              if(++loadedImages >= numberOfImagesToLoad) {
-16.                  drawCallback(imagesLoaded);
-17.              } // if
-18.          }; // function
-19.          imagesLoaded[name].src = imagesToBeLoaded[name];
-20.       } // for
+14.     imagesLoaded[name].onload = function() {
+15.       if(++loadedImages >= numberOfImagesToLoad) {
+16.         drawCallback(imagesLoaded);
+17.       } // if
+18.     }; // function
+19.     imagesLoaded[name].src = imagesToBeLoaded[name];
+20.   } // for
 21. } // function
 ```
 
@@ -13147,12 +13174,12 @@ Your browser does not support the canvas tag.
 
 ```
 1.  loadImages(imagesToLoad, function(imagesLoaded) {
-2.      patternFlowers = ctx.createPattern(imagesLoaded.flowers, 'repeat');
-3.      patternLion    = ctx.createPattern(imagesLoaded.lion, 'repeat');
-4.      patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, 'repeat');
-5.      patternFloor   = ctx.createPattern(imagesLoaded.tiledFloor, 'repeat');
+2.    patternFlowers = ctx.createPattern(imagesLoaded.flowers, 'repeat');
+3.    patternLion    = ctx.createPattern(imagesLoaded.lion, 'repeat');
+4.    patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, 'repeat');
+5.    patternFloor   = ctx.createPattern(imagesLoaded.tiledFloor, 'repeat');
 6.  
-7.      drawRectanglesWithPatterns();
+7.    drawRectanglesWithPatterns();
 8.  });
 ```
 
@@ -13166,22 +13193,22 @@ Your browser does not support the canvas tag.
 
 <h4>Here is the function:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
 1.  function drawRectanglesWithPatterns() {
-2.      ctx.fillStyle=patternFloor;
-3.      ctx.fillRect(0,0,200,200);
+2.    ctx.fillStyle=patternFloor;
+3.    ctx.fillRect(0,0,200,200);
 4.  
-5.      ctx.fillStyle=patternLion;
-6.      ctx.fillRect(200,0,200,200);
+5.    ctx.fillStyle=patternLion;
+6.    ctx.fillRect(200,0,200,200);
 7.  
-8.      ctx.fillStyle=patternFlowers;
-9.      ctx.fillRect(0,200,200,200);
+8.    ctx.fillStyle=patternFlowers;
+9.    ctx.fillRect(0,200,200,200);
 10.  
-11.     ctx.fillStyle=patternBW;
-12.     ctx.fillRect(200,200,200,200);
+11.   ctx.fillStyle=patternBW;
+12.   ctx.fillRect(200,200,200,200);
 13. }
 ```
 
@@ -13191,12 +13218,12 @@ Your browser does not support the canvas tag.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Context properties to draw with shadows</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 182. a green shadow rectangle (244) ------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 182. a green shadow rectangle (244) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image182.webp?raw=true"
-   width="25%"
-   alt="A green shadowed rectangle." />
+  width="25%"
+  title="A green shadowed rectangle"
+  alt="A green shadowed rectangle." />
 </p>
 
 <p>There are 4 properties of the canvas context that are useful for indicating that we want to draw shapes with shadows:</p>
@@ -13211,38 +13238,38 @@ Your browser does not support the canvas tag.
 
 <h4>Example #1: simple shadows</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 183. example #1, simple shadows (245) ----------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 183. example #1, simple shadows (245) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image183.webp?raw=true"
-   width="65%"
-   alt="Simple shadows, example #1." />
+  width="65%"
+  title="Simple shadows, example #1"
+  alt="Simple shadows, example #1." />
 </p>
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
 var canvas, ctx;
 function init() {
-canvas = document.getElementById('myCanvas');
-ctx = canvas.getContext('2d');
-setShadow();
-// first green filled rectangle
-ctx.fillStyle = "#22FFDD"; // rectangle color
-ctx.fillRect(20, 20, 200, 100);
-// second stroked rectangle
-ctx.strokeStyle = "purple"; // rectangle color
-ctx.lineWidth=10;
-ctx.strokeRect(20, 150, 200, 100);
+  canvas = document.getElementById('myCanvas');
+  ctx = canvas.getContext('2d');
+  setShadow();
+  // first green filled rectangle
+  ctx.fillStyle = "#22FFDD"; // rectangle color
+  ctx.fillRect(20, 20, 200, 100);
+  // second stroked rectangle
+  ctx.strokeStyle = "purple"; // rectangle color
+  ctx.lineWidth=10;
+  ctx.strokeRect(20, 150, 200, 100);
 }
 function setShadow() {
-ctx.shadowColor = "Grey"; // color
-ctx.shadowBlur = 20; // blur level
-ctx.shadowOffsetX = 15; // horizontal offset
-ctx.shadowOffsetY = 15; // vertical offset
+  ctx.shadowColor = "Grey"; // color
+  ctx.shadowBlur = 20; // blur level
+  ctx.shadowOffsetX = 15; // horizontal offset
+  ctx.shadowOffsetY = 15; // vertical offset
 }
 ```
 
@@ -13254,19 +13281,19 @@ ctx.shadowOffsetY = 15; // vertical offset
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Simple shadows - Example #1</title>
+  <meta charset="utf-8">
+  <title>Simple shadows - Example #1</title>
 </head>
 <body onload = init();>
-<canvas id="myCanvas" width="400" height =800>
-Your browser does not support the canvas tag.</canvas>
+  <canvas id="myCanvas" width="400" height =800>
+    Your browser does not support the canvas tag.</canvas>
 </body>
 </html>
 ```
 
 <h4>JavaScript source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -13312,7 +13339,7 @@ Your browser does not support the canvas tag.</canvas>
 
 <p>Let's take a <a href="https://codepen.io/w3devcampus/pen/YzZBxmO">previous example</a>, the one that draws a filled circle with an outline. And, let's add a shadow to it using the following code:</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -13357,16 +13384,16 @@ Your browser does not support the canvas tag.</canvas>
 <h4>And here is the result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 184. setting shadow - not quite correct (247) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image184.webp?raw=true"
-   width="65%"
-   alt="Not quite correct, unwanted shadow." />
+  width="65%"
+  title="Not quite correct, unwanted shadow"
+  alt="Not quite correct, unwanted shadow." />
 </p>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -13439,7 +13466,7 @@ then draw the outlined circle by calling ctx.stroke().
 
 <h4>Correct version of the code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -13467,16 +13494,16 @@ then draw the outlined circle by calling ctx.stroke().
 <h4>And here is the <em>FINAL</em> result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 185. final result of setting shadow (248) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image185.webp?raw=true"
-   width="65%"
-   alt="Final result of setting shadow." />
+  width="65%"
+  title="Final result of setting shadow"
+  alt="Final result of setting shadow." />
 </p>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -13561,16 +13588,16 @@ ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wiref
 <p>Here is a complete example where we draw with a lineWidth of 20 pixels:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 186. changing the line thickness (250) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image186.webp?raw=true"
-   width="65%"
-   alt="Changing the line thickness." />
+  width="65%"
+  title="Changing the line thickness"
+  alt="Changing the line thickness." />
 </p>
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -13619,28 +13646,28 @@ ctx.lineWidth = 10; // set the thickness of every shape drawn in stroke/wiref
 The lineCap property of the context indicates the way line end caps are rendered. Possible values are butt (default), round, square (from top to bottom in the next illustration). Note that a value of "round" or "square" makes the lines slightly longer than the default value "butt".
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 187. line cap values (251) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image187.webp?raw=true"
-   width="20%"
-   alt="Line cap values." />
+  width="20%"
+  title="Line cap values"
+  alt="Line cap values." />
 &nbsp;
 <br/>
 
 <h4>Try this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 188. changing the end caps of a lines (251) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image188.webp?raw=true"
-   width="65%"
-   alt="Changing the end caps of a line.  Example #2." />
+  width="65%"
+  title="Changing the end caps of a line.  Example #2"
+  alt="Changing the end caps of a line.  Example #2." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -13692,14 +13719,14 @@ corners, round, or bevel for "cut corners".</p>
 <h4>Try this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 189. setting type of corner when two lines meet (252) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image189.webp?raw=true"
-   width="65%"
-   alt="Setting type of corner when two lines meet." />
+  width="65%"
+  title="Setting type of corner when two lines meet"
+  alt="Setting type of corner when two lines meet." />
 </p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -13751,23 +13778,24 @@ corner will be rendered as if the lineJoin property had been set to "bevel" an
 the corner will be "cut".
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 190. linejoin property - arrows fig 1, 2 and 3 (253) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image190.webp?raw=true"
-   width="20%"
-   alt="lineJoin property, figure 1, 2 and 3 showing arrows." />
+  width="20%"
+  title="lineJoin property, figure 1, 2 and 3 showing arrows"
+  alt="lineJoin property, figure 1, 2 and 3 showing arrows." />
 &nbsp;
 <br/>
 
 <h4>You can try an interactive example here:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 191. miterlimit property explained (253) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image191.webp?raw=true"
-   width="65%"
-   alt="Example #4: miterLimit property shown with 3 different angles, we see that 
-     the part that goes out of the angle becomes very long." />
+  width="65%"
+  title="Example #4: miterLimit property shown with 3 different angles, we see that 
+    the part that goes out of the angle becomes very long"
+  alt="Example #4: miterLimit property shown with 3 different angles, we see that 
+    the part that goes out of the angle becomes very long." />
 </p>
 
 In the example, try different values for the miterLimit property. You'll see that the 
@@ -13809,11 +13837,11 @@ check the [games developed at this time by Brent Silby](https://def-logic.com/)
 (they all use DHTML).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 192. mario-like dhtml game (254) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image192.webp?raw=true"
-   width="25%"
-   alt="A Mario like DHTML game." />
+  width="25%"
+  title="A Mario like DHTML game"
+  alt="A Mario like DHTML game." />
 </p>
 
 For animation, the setInterval(function, ms) and setTimeout(function, ms) methods 
@@ -13838,7 +13866,7 @@ Below is the example shown in the video, with source code:
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -13933,7 +13961,7 @@ Please try this example that moves/animates a div using setInterval:
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -13981,7 +14009,7 @@ clearInterval(requestId);
 
 <h4>Extract from the source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -14030,7 +14058,7 @@ We use the drawMonster() function:
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -14117,7 +14145,7 @@ We use the drawMonster() function:
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -14246,7 +14274,7 @@ Check the example below (click on start animation):
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -14340,7 +14368,7 @@ first parameter only once, we also have to call it at the end of the loop.
 
 <h4>Extract from source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -14451,7 +14479,7 @@ with cancelAnimationFrame(id).
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -14502,7 +14530,7 @@ with cancelAnimationFrame(id).
 
 <h4>Source code extract - please compare with the previous example that used setInterval():</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -14647,7 +14675,7 @@ the gamePad API</a> for using USB or wireless gamepads/joysticks/game controlle
 
 <a href="http://jsbin.com/korele/edit" target="_blank">Online example on JS Bin</a>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -14732,7 +14760,7 @@ border: 1px solid black;
 This example shows how to handle key events in a canvas by adding a key listener to the 
 window object. Like that, all key press in the document will trigger the event listener function.</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -14757,7 +14785,7 @@ return false;
 
 <h4>Code source extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -14797,7 +14825,7 @@ the focus, etc...
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -14900,7 +14928,7 @@ cancelAnimationFrame(requestId);
 
 <h4>Code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -14980,18 +15008,18 @@ And we force the canvas to get the focus with:
 
 Now, if we try an example with the above canvas declaration, we show when an HTML element has the focus: a border is added to it.
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 195. (xxx) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 195. mario game (316) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image195.webp?raw=true"
-   width="25%"
-   alt="." />
+  width="25%"
+  title="Mario Brothers game"
+  alt="Mario Brothers game." />
 </p>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15038,18 +15066,18 @@ return false;
 
 Note that the line that forces the focus to the canvas is commented by default. Try to click on the canvas, then press a key, then click out of the canvas, then press a key: this time nothing happens!
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 196. (xxx) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 196. red letters, 3d, blue border (317) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image196.webp?raw=true"
-   width="50%"
-   alt="image196.webp a border appears when the canvas has the focus." />
+  width="50%"
+  title="Blue border appears when the canvas has the focus. Red letters in 3d"
+  alt="Blue border appears when the canvas has the focus. Red letters in 3d." />
 </p>
 
 <h4>Extract from the code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15093,18 +15121,18 @@ and the other for the mouseout event.
 When the mouse enters the canvas we call canvas.focus() to set the focus to the canvas, 
 and when the mouse cursor goes out of the canvas, we call canvas.blur() to unset the focus.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 197.  (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 197. green monster using canvas, border, solid black (318) ~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image197.webp?raw=true"
   width="65%"
-  alt="image197.webp" />
+  title="Green monster block with red eyes"
+  alt="Green monster block style with red eyes." />
 &nbsp;
 <br/>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15216,7 +15244,7 @@ cancelAnimationFrame(requestId);
 
 <h4>Code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15275,10 +15303,10 @@ the different event types we can listen to.
 <h4>The different mouse events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 198. mouse events illustrated (320) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image198.webp?raw=true"
   width="35%"
+  title="Mouse events illustrated"
   alt="Mouse events illustrated." />
 &nbsp;
 <br/>
@@ -15327,17 +15355,17 @@ in the page: getBoundingClientRect().
 Play with the example below that show the problem:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 199. mouse position 242, 135 (321) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image199.webp?raw=true"
   width="25%"
+  title="Mouse position 242, 135"
   alt="Mouse position 242, 135." />
 &nbsp;
 <br/>
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15390,7 +15418,7 @@ border:1px solid black
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15430,7 +15458,7 @@ function getMousePos(canvas, evt) {
 
 <h4>WRONG code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15455,48 +15483,48 @@ function getMousePos(canvas, evt) {
 
 <h4>Here is the result, when the mouse is approximately at the top left corner of the canvas:</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!----------- 200.  (xxx) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 200. mouse position 23,55 in canvas of 578, 200 (322) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image200.webp?raw=true"
   width="65%"
-  alt="Bad mouse coordinates." />
+  title="Mouse position 23, 55.  Bad mouse coordinates"
+  alt="Mouse position 23, 55.  Bad mouse coordinates." />
 &nbsp;
 <br/>
 
 <h4>GOOD version of the code:</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!----------- 201.  (xxx) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 201. mouse position 218,76 in canvas (322) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image201.webp?raw=true"
-   width="40%"
-   alt="." />
+  width="40%"
+  title="Mouse position 218,76. Good version of the code"
+  alt="Mouse position 218,76. Good version of the code." />
 &nbsp;
 <br/>
 
 ```
 function getMousePos(canvas, evt) {
-   // necessary to take into account CSS boundaries
-   var rect = canvas.getBoundingClientRect();
-   return {
+  // necessary to take into account CSS boundaries
+  var rect = canvas.getBoundingClientRect();
+  return {
       x: evt.clientX - rect.left,
       y: evt.clientY - rect.top
-   };
+  };
 }
 ```
 
 <h4>Result (the cursor is approximately at the top left corner):</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!----------- 202.  (xxx) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 202. mouse position 0,0 in canvas (323) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image202.webp?raw=true"
   width="30%"
-  alt="Mouse at zero zero." />
+  title="Mouse at zero zero in canvas"
+  alt="Mouse at zero zero in canvas." />
 &nbsp;
 <br/>
 
@@ -15504,29 +15532,29 @@ function getMousePos(canvas, evt) {
 
 <p>This example uses the previous function for computing the mouse position correctly. It listens to mousemove, mousedown and mouseup events, and shows how to get the mouse button number using the evt.button property.</p>
 
-<!------------------------------------------------------------------------------------------------>
-<!----------- 203.  (xxx) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 203. mouse position 203,79 in canvas (324) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image203.webp?raw=true"
   width="40%"
-  alt="." />
+  title="Mouse position at 203,79 in canvas"
+  alt="Mouse position at 203,79 in canvas." />
 &nbsp;
-<br/>
+</p>
 
-<!------------------------------------------------------------------------------------------------>
-<!----------- 204.  (xxx) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 204. mouse position 67,24 with red lettering in 3d (324) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image204.webp?raw=true"
-   width="50%"
-   alt="Mouse event example." />
+  width="50%"
+  title="Mouse event example.  Mouse position 67,24"
+  alt="Mouse event example.  Mouse position 67,24." />
 &nbsp;
-<br/>
+</p>
 
 <h4>Extract from source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15581,9 +15609,8 @@ function getMousePos(canvas, evt) {
 
 This example shows an animation at 60 frames/s using requestAnimationFrame, were the monster is drawn at the mouse position, and if a mouse button is pressed, the monster starts rotating around its center. If we release the mouse button, the rotation stops:
 
-<!------------------------------------------------------------------------------------------------>
-<!----------- 205.  (xxx) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!----------- 205.  (325) ------------>
 <p align="center">
 <img src="./images/image205.webp?raw=true"
   width="40%"
@@ -15593,7 +15620,7 @@ This example shows an animation at 60 frames/s using requestAnimationFrame, wer
 
 <h4>Code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15651,9 +15678,8 @@ function animationLoop() {
 
 <h4>Example #2: draw in a canvas as if you were using a pencil</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!----------- 206.  (xxx) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!----------- 206.  (326) ------------>
 <p align="center">
 <img src="./images/image206.webp?raw=true"
   width="40%"
@@ -15663,7 +15689,7 @@ function animationLoop() {
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15710,19 +15736,18 @@ function handleMouseMove(evt) {
 
 <h4>Example #3: same as example #2 but we draw only when a mouse button is pressed</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!----------- 207.  (xxx) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!----------- 207.  (327) ------------>
 <p align="center">
 <img src="./images/image207.webp?raw=true"
-   width="45%"
-   alt="." />
+  width="45%"
+  alt="." />
 &nbsp;
 <br/>
 
 We just added mouseup and  mousedown listeners, extract from the source code:
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15775,9 +15800,8 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 
 <h4>Example #1: changing the size of a canvas on the fly erases its content!</h4>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!---------------------------- 208. example 1 resize and erase (285) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
 <p align="center">
 <img src="./images/image208.webp?raw=true"
   width="45%"
@@ -15787,7 +15811,7 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 
 <h4>Code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15810,20 +15834,19 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 
 This time we are using a similar example as above, but we removed the button for resizing it, and we set the size of the canvas to 100x100 pixels. Instead of drawing inside, we draw two lines that join the diagonals.
 
-<!------------------------------------------------------------------------------------------------>
-<!----------- 209.  (286) ------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 209. example small canvas 100 x 100 (286) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image209.webp?raw=true"
   width="65%"
-  alt="." />
+  title="Example small canvas, 100x100"
+  alt="Example small canvas, 100x100." />
 &nbsp;
 <br/>
 
 Then, we added this CSS rule:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 210.  (286) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image210.webp?raw=true"
    width="45%"
@@ -15862,12 +15885,12 @@ This is the trick to create a really responsive canvas:
 
 Yep, this is not a straightforward process...
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------- 211. div and canvas inside; div has css width=100% and height=50% (287) ------------>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ 211. div and canvas inside; div has css width=100% and height=50% (287) ~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image211.webp?raw=true"
   width="65%"
-  alt="DIV and canvas inside: div has css width=100% and height=50%" />
+  title="DIV and canvas inside: div has css width=100% and height=50%"
+  alt="DIV and canvas inside: div has css width=100% and height=50%." />
 &nbsp;
 <br/>
 
@@ -15881,7 +15904,7 @@ Yep, this is not a straightforward process...
 
 <h4>CSS code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15903,7 +15926,7 @@ Yep, this is not a straightforward process...
 
 <h4>JavaScript code for the resize event listener:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -15929,8 +15952,7 @@ function resizeCanvasAccordingToParentSize() {
 
 <h4>See the complete example that corresponds to the above code:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------------- 212.  (288) -------------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 212.  (288) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image212.webp?raw=true"
   width="55%"
@@ -15940,8 +15962,7 @@ function resizeCanvasAccordingToParentSize() {
 
 <h4>Example #4: the same example with the monster</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------------- 213. (288) -------------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 213. (288) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image213.webp?raw=true"
   width="55%"
@@ -15953,7 +15974,7 @@ When the canvas is resized, its width became smaller than the monster's size. W
 
 The code is very similar to the previous example, we just replaced drawDiagonals() by drawMonster(...), and we added a test in the drawMonster(...) function for scaling the monster if it's bigger than the canvas width (look at <i>lines 10-16</i>), this is a common trick:
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -16002,11 +16023,11 @@ In that course, you will learn:
   <li>Sprite based animation: like this <a href="https://jsbin.com/libakum/1/edit?html,js,console,output">one</a> (this is ugly code to demonstrate the principle - in the course we develop a clean, sprite animation framework). Use the arrow keys after clicking in the canvas. It's better to try in standalone mode (click on the small black arrow in the top right of the JSBin window).</li><br/>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------------- 214. sprite sheet (289) ------------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 214. sprite sheet (289) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image214.webp?raw=true"
   width="35%"
+  title="Sprite sheet"
   alt="Sprite sheet." />
 &nbsp;
 <br/>
@@ -16020,29 +16041,56 @@ Welcome this time to the wonderful world of HTML5 forms.
 
 There have been no improvements since 1997 to HTML forms.
 
-HTML5 this time comes with a set of new input fields for entering dates, colors, entering phone numbers, URLs, and so on.
+HTML5 this time comes with a set of new input fields for entering dates, colors, 
+entering phone numbers, URLs, and so on.
 
-New attributes related to form validation have also been introduced, and they are related to a new build-in validation system that make things easier than before without the need to use JavaScript.
+New attributes related to form validation have also been introduced, and they are 
+related to a new build-in validation system that make things easier than before 
+without the need to use JavaScript.
 
-However, JavaScript validation API is also available for people who would like to write their own customized validation system.
+However, JavaScript validation API is also available for people who would like 
+to write their own customized validation system.
 
-These additions are very handy when used on mobile devices but raised many critics from Web designers, mainly related to their desktop implementations.
+These additions are very handy when used on mobile devices but raised many critics 
+from Web designers, mainly related to their desktop implementations.
 
-The course discusses all the cases and recommend solutions and good practices. Of course, like usual, many examples will be provided that you can run directly this time in the course pages, but also as standalone examples hosted on the JS Bin Web site. If you try to modify them or creates your own examples, please share in the discussion forums as usual. Have fun!
+The course discusses all the cases and recommend solutions and good practices. Of 
+course, like usual, many examples will be provided that you can run directly this 
+time in the course pages, but also as standalone examples hosted on the JS Bin Web 
+site. If you try to modify them or creates your own examples, please share in the 
+discussion forums as usual. Have fun!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-2-1">5.2.1 Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-With HTML5, forms, which had shown little improvement since 1997, evolved considerably.  To achieve this, Web developers relied on many popular JavaScript frameworks for validating input formats, providing various input GUIs, such as calendars for dates, sliders, etc. Frameworks such as jQueryUI, Dojo, and Sencha, all provide a widget set for improving forms. Furthermore, it was time to take into account the specifics of mobile web applications, where the GUI of a date chooser cannot be the same as a 400x400 pixel wide calendar on a desktop. Contextual virtual keyboards provided the way forward on smartphones and tablets thanks to Apple, Google and others.
+With HTML5, forms, which had shown little improvement since 1997, evolved 
+considerably.  To achieve this, Web developers relied on many popular JavaScript 
+frameworks for validating input formats, providing various input GUIs, such as 
+calendars for dates, sliders, etc. Frameworks such as jQueryUI, Dojo, and Sencha, 
+all provide a widget set for improving forms. Furthermore, it was time to take 
+into account the specifics of mobile web applications, where the GUI of a date 
+chooser cannot be the same as a 400x400 pixel wide calendar on a desktop. 
+Contextual virtual keyboards provided the way forward on smartphones and tablets 
+thanks to Apple, Google and others.
 
 HTML5 took all this into account and thus provides:
 <ul>
-  <li>A set of input fields that include a validation API and visual feedback, contextualized keyboards, etc. Of course the look and feel depends on the web browser's implementations, but the HTML5 forms specification introduced 13 new &lt;input type=.../&gt; fields:  email, tel, color, url, date, datetime, datetime-local, month, week, time, range, number and search.</li><br/>
-  <li>Built-in validation system: JavaScript API for custom validation, CSS pseudo classes that are useful for changing an input field style depending on the validity of the input.</li><br/>
-  <li>Other goodies, such as the option to set an input field out of a &lt;form&gt;, new elements such as &lt;datalist&gt; for autocompletion, &lt;output&gt; for feedback, etc.</li><br/>
+  <li>A set of input fields that include a validation API and visual feedback, 
+    contextualized keyboards, etc. Of course the look and feel depends on the 
+	web browser's implementations, but the HTML5 forms specification introduced 
+	13 new &lt;input type=.../&gt; fields:  email, tel, color, url, date, datetime, 
+	datetime-local, month, week, time, range, number and search.</li><br/>
+  <li>Built-in validation system: JavaScript API for custom validation, CSS pseudo 
+    classes that are useful for changing an input field style depending on the 
+	validity of the input.</li><br/>
+  <li>Other goodies, such as the option to set an input field out of a &lt;form&gt;, 
+    new elements such as &lt;datalist&gt; for autocompletion, &lt;output&gt; for 
+	feedback, etc.</li><br/>
 </ul>
 
-Examples of contextual keyboards are shown above; they differ depending on the type of  &lt;input> fields in the &lt;form&gt;. 
-In the examples, we can see: email, URL, and phone number. Look at the different keyboard layouts. The last picture is a date picker from an IOS phone.
+Examples of contextual keyboards are shown above; they differ depending on the 
+type of  &lt;input> fields in the &lt;form&gt;. 
+In the examples, we can see: email, URL, and phone number. Look at the different 
+keyboard layouts. The last picture is a date picker from an IOS phone.
 
 <h4>External resources:</h4>
 
@@ -16059,12 +16107,12 @@ It uses the geolocation API presented in Module 6 for auto-filling the address i
 
 Feel free to look at the source code in the <a href="https://jsbin.com/sivula/edit"?online example</a>:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------- 215. auto-fill address input (291) ------------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 215. auto-fill address input (291) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image215.webp?raw=true"
-   width="45%"
-   alt="Geo-location API is used to auto-fill address input." />
+  width="45%"
+  title="Geo-location API is used to auto-fill address input"
+  alt="Geo-location API is used to auto-fill address input." />
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16128,6 +16176,7 @@ The following additional example shows the same best practices but presents a mo
 <p align="center">
 <img src="./images/image216.webp?raw=true"
   width="35%"
+  title="Payment form layout example"
   alt="Payment form layout example." />
 &nbsp;
 <br/>
@@ -16172,6 +16221,7 @@ Form fields and other form controls usually have visible labels, such as "E-mail
 <p align="center">
 <img src="./images/image217.webp?raw=true"
   width="25%"
+  title="E-mail form label text"
   alt="E-mail form label text." />
 &nbsp;
 <br/>
@@ -16190,6 +16240,7 @@ Click on the label, not on the input field to see the effect.
 <p align="center">
 <img src="./images/image218.webp?raw=true"
   width="25%"
+  title="Example #1: First name:"
   alt="Example #1: First name:" />
 &nbsp;
 <br/>
@@ -16200,9 +16251,14 @@ Click on the label, not on the input field to see the effect.
 ```
 
 <h4>Example #2</h4>
-<p>
-Note that you can also include the &lt;input&gt; element inside the &lt;label&gt;...&lt;label&gt; element, and also add a &lt;span lang="en"&gt; for example, to indicate the language used in the label. Sometimes, <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#The_%3Clabel%3E_element">nesting labels and inputs can also make CSS styling easier and produce better results with screen readers</a>.
+
+<p>Note that you can also include the &lt;input&gt; element inside the 
+&lt;label&gt;...&lt;label&gt; element, and also add a &lt;span lang="en"&gt; for 
+example, to indicate the language used in the label. Sometimes, 
+<a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#The_%3Clabel%3E_element">
+nesting labels and inputs can also make CSS styling easier and produce better results with screen readers</a>.
 </p>
+
 <h4>Source code (with &lt;input&gt; inside the &lt;label&gt;):</h4>
 
 ```	
@@ -16212,16 +16268,15 @@ Note that you can also include the &lt;input&gt; element inside the &lt;label
 ```
 
 <h4>Example #3</h4>
-<p>
-Click on the label "Subscribe to newsletter" to see what this does.
-</p>
+<p>Click on the label "Subscribe to newsletter" to see what this does.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 219. example 3 first name / subscribe checkbox (296) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 219. example 3, checkbox subscribe (296) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image219.webp?raw=true"
   width="25%"
-  alt="Example #3: First name:" />
+  title="Example #3: Checkbox"
+  alt="Example #3: Checkbox." />
 &nbsp;
 <br/>
 
@@ -16259,6 +16314,7 @@ These give the same results:
 <p align="center">
 <img src="./images/image220.webp?raw=true"
   width="65%"
+  title="Lines 1 and 2 render as...While 3 and 4 render as..."
   alt="Lines 1 and 2 render as...While 3 and 4 render as..." />
 &nbsp;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16266,6 +16322,7 @@ These give the same results:
 <p align="center">
 <img src="./images/image221.webp?raw=true"
   width="55%"
+  title="Labeling text areas. Enter your address"
   alt="Labeling text areas. Enter your address." />
 &nbsp;
 <br/>
@@ -16280,15 +16337,22 @@ These give the same results:
 <h3 name="ch5-3-4">5.3.4 Grouping Controls</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-Groupings of form controls, typically groups of related checkboxes and radio buttons, sometimes require a higher level description. Grouping related form controls makes forms more understandable for all users, as related controls are easier to identify.
+Groupings of form controls, typically groups of related checkboxes and radio 
+buttons, sometimes require a higher level description. Grouping related form 
+controls makes forms more understandable for all users, as related controls 
+are easier to identify.
 
 <h4>Associating related controls with fieldset</h4>
 
-Grouping needs to be carried out visually and in the code, for example, by using the &lt;fieldset&gt; and &lt;legend&gt; elements to associate related form controls. The &lt;fieldset&gt; identifies the entire grouping and &lt;legend&gt; identifies the grouping's descriptive text.
+Grouping needs to be carried out visually and in the code, for example, by 
+using the &lt;fieldset&gt; and &lt;legend&gt; elements to associate related 
+form controls. The &lt;fieldset&gt; identifies the entire grouping and &lt;legend&gt; 
+identifies the grouping's descriptive text.
 
 <h4>Example #1: radio buttons</h4>
 
-In the example below, there are three radio buttons that allow the user to choose an output format. Radio button groups should always be grouped using &lt;fieldset&gt;.
+In the example below, there are three radio buttons that allow the user to choose 
+an output format. Radio button groups should always be grouped using &lt;fieldset&gt;.
 
 <h4>Output format:</h4>
 
@@ -16297,13 +16361,14 @@ In the example below, there are three radio buttons that allow the user to choos
 <p align="center">
 <img src="./images/image222.webp?raw=true"
   width="25%"
+  title="Three radio buttons; Text, CSV or HTML"
   alt="Three radio buttons; Text, CSV or HTML." />
 &nbsp;
 <br/>
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -16325,20 +16390,22 @@ In the example below, there are three radio buttons that allow the user to choos
 
 <h4>Example #2: checkboxes</h4>
 
-In the example below, there are three checkboxes that are all part of an opt-in function for receiving different types of information.
+In the example below, there are three checkboxes that are all part of an opt-in 
+function for receiving different types of information.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 223. check boxes 3 (298) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image223.webp?raw=true"
   width="55%"
+  title="Three Check boxes"
   alt="Three Check boxes." />
 &nbsp;
 <br/>
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -16356,19 +16423,31 @@ In the example below, there are three checkboxes that are all part of an opt-in 
 
 <h4>Associating related controls with WAI-ARIA</h4>
 
-WAI-ARIA provides a grouping role that functions similarly to fieldset and legend. For example, a div element can have role=group to indicate that the contained elements are members of a group.
+WAI-ARIA provides a grouping role that functions similarly to fieldset and legend. 
+For example, a div element can have role=group to indicate that the contained 
+elements are members of a group.
 
-WAI-ARIA roles are very important in the accessibility world, and we invite you to see an example provided in the [associated WAI tutorial](https://www.w3.org/WAI/tutorials/forms/grouping/#associating-related-controls-with-wai-aria). See also this MDN's article about about [WAI-ARIA roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
+WAI-ARIA roles are very important in the accessibility world, and we invite you 
+to see an example provided in the 
+<a href="https://www.w3.org/WAI/tutorials/forms/grouping/#associating-related-controls-with-wai-aria">
+associated WAI tutorial</a>. See also this MDN's article about about 
+<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles">WAI-ARIA roles</a>.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-4-1">5.4.1 Input Types</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-In this section, we briefly present the input types, attributes, and elements related to the forms that came with HTML5. Details are given later, illustrated by multiple interactive examples.
+In this section, we briefly present the input types, attributes, and elements 
+related to the forms that came with HTML5. Details are given later, illustrated 
+by multiple interactive examples.
 
-Compared to HTML4, HTML5 introduced 13 new input types, covering most of the needs of  Web developers. HTML5 packages some of the "form best practices" in its specification. Web browsers providing native implementation give a boost in performance, and reduce the size of JavaScript embedded in complex Web pages.
+Compared to HTML4, HTML5 introduced 13 new input types, covering most of the 
+needs of  Web developers. HTML5 packages some of the "form best practices" in 
+its specification. Web browsers providing native implementation give a boost 
+in performance, and reduce the size of JavaScript embedded in complex Web pages.
 
-MDN's Web docs [article on &lt;input&gt; types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#%3Cinput%3E_types) lists all input types and highlights those that came with HTML5.
+MDN's Web docs <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#%3Cinput%3E_types">
+article on &lt;input&gt; types</a> lists all input types and highlights those that came with HTML5.
 
 Now, let's play with some of these input types and attributes.
 
@@ -16377,6 +16456,7 @@ Now, let's play with some of these input types and attributes.
 <p align="center">
 <img src="./images/image223.webp?raw=true"
   width="20%"
+  title="HTML4 old HTML5"
   alt="HTML4 old HTML5." />
 &nbsp;
 <br/>
@@ -16394,6 +16474,7 @@ Here is how it looks on some mobile devices:
 <p align="center">
 <img src="./images/image224.webp?raw=true"
   width="40%"
+  title="HTML5 input type=color on an android phone"
   alt="HTML5 input type=color on an android phone." />
 &nbsp;
 <br/>
@@ -16411,9 +16492,12 @@ Here is how it looks on some mobile devices:
 </html>
 ```
 
-<i>Note</i>: In this chapter we are simplifying the examples, as we usually embed input elements in a &lt;form&gt;...</form>.
+<i>Note</i>: In this chapter we are simplifying the examples, as we usually 
+embed input elements in a &lt;form&gt;...</form>.
 
-Try &lt;input type="color"> online with this <a href="https://jsbin.com/cajuzob/1/edit?html,output">JSBin example</a>. Or do it here in your browser: just click on the purple square below : 
+Try &lt;input type="color"> online with this 
+<a href="https://jsbin.com/cajuzob/1/edit?html,output">
+JSBin example</a>. Or do it here in your browser: just click on the purple square below : 
 
 Here is the result on Google Chrome (works with other browsers too, though the <i>look and feel</i> may differ):
 
@@ -16421,27 +16505,31 @@ Here is the result on Google Chrome (works with other browsers too, though the 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 225. select input type=color (300) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image225.webp?raw=true"
-   width="40%"
-   alt="Select a color, input type=color." />
+  width="40%"
+  title="Select a color, input type=color"
+  alt="Select a color, input type=color." />
 &nbsp;
 <br/>
 
 <h4>Example: changing the background color of the page</h4>
 
-The &lt;input type="color"> can fire change or input events. Here is an example that changes the background color of the page when a color is chosen. [Try it online at JSBin](https://jsbin.com/jozuter/1/edit?html,css,js,console,output).
+The &lt;input type="color"> can fire change or input events. Here is an example 
+that changes the background color of the page when a color is chosen. 
+<a href="https://jsbin.com/jozuter/1/edit?html,css,js,console,output">Try it online at JSBin</a>.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 226. change backgound color of the body (300) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image226.webp?raw=true"
-   width="40%"
-   alt="Change background color of the page body." />
+  width="40%"
+  title="Change background color of the page body"
+  alt="Change background color of the page body." />
 &nbsp;
 <br/>
 
 Source code:
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -16464,20 +16552,22 @@ Source code:
 
 <h4>Offer a limited choice of colors</h4>
 
-By default, the color selector offers many options that may either frighten some users or just not be appropriate for the purpose of the application. 
+By default, the color selector offers many options that may either frighten 
+some users or just not be appropriate for the purpose of the application. 
 
-<i>Good news</i>: it is possible to restrict the choices, and also simplify the user interface, by using a &lt;datalist&gt; with some &lt;option&gt; elements inside.
+<i>Good news</i>: it is possible to restrict the choices, and also simplify the 
+user interface, by using a &lt;datalist&gt; with some &lt;option&gt; elements inside.
 
-Example: click the black rectangle on the right:  . The following should be displayed:
+Example: click the black rectangle on the right:  The following should be displayed:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 227. restricted choice of colors (301) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image227.webp?raw=true"
   width="40%"
+  title="Restricted choice of colors"
   alt="Restricted choice of colors." />
 &nbsp;
-<!-- {width="3.0in" height="1.872483595800525in"} -->
 
 <a href="https://jsbin.com/lahapu/edit?html,output">Online example at JSBin</a>
 
@@ -16516,20 +16606,28 @@ Below are a few screenshots of the HTML5 date picker on several mobile devices.�
 <p align="center" width="100%">
 <img src="./images/image228.webp?raw=true"
   width="20%"
+  title="Date picker 1"
   alt="Date picker 1." />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 229. 03 oct 2013 sample custom reusable widget (302) ~~~~~~~~~~~~~~~~~~~~-->
 <img src="./images/image229.webp?raw=true"
   width="10%"
+  title="Date picker 2 on mobile"
   alt="Date picker 2 on mobile." />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 230. 2012-09-11 sample custom reusable widget (302) ~~~~~~~~~~~~~~~~~~~~-->
 <img src="./images/image230.webp?raw=true"
   width="30%"
+  title="Date picker 3 on mobile"
   alt="Date picker 3 on mobile." />
 </p>
 
-The problem is different on a desktop. While it's great to have native support for a date picker, Web developers would sometimes prefer 100% control over the <i>look and feel</i> of the date picker widget. For this purpose, the solution undoubtedly lies with the new [Web Components](https://webcomponents.org/) (a way to make custom reusable widgets in HTML/CSS/JS), to be detailed in the W3Cx HTML5 Apps and Games course
+The problem is different on a desktop. While it's great to have native support 
+for a date picker, Web developers would sometimes prefer 100% control over the 
+<i>look and feel</i> of the date picker widget. For this purpose, the solution 
+undoubtedly lies with the new <a href="https://webcomponents.org/">
+Web Components</a> (a way to make custom reusable widgets in HTML/CSS/JS), to be 
+detailed in the W3Cx HTML5 Apps and Games course
 
 Why don't you try it yourself? Just click on this input field: (not in github)
 
@@ -16540,6 +16638,7 @@ With Firefox, it shows this date picker widget:
 <p align="center" width="100%">
 <img src="./images/image231.webp?raw=true"
   width="20%"
+  title="Firefox desktop date picker widget"
   alt="Firefox desktop date picker widget." />
 </p>
 
@@ -16571,6 +16670,7 @@ Try this example: just click the next input field or <a href="https://jsbin.co
 <p align="center" width="100%">
 <img src="./images/image232.webp?raw=true"
   width="40%"
+  title="Only dates between min and max are selectable"
   alt="Only dates between min and max are selectable." />
 </p>
 
@@ -16590,13 +16690,15 @@ Try this example: just click the next input field or <a href="https://jsbin.co
 
 Using the value attribute for setting a date, and using step=7 for example, will make acceptable only the day of the week that corresponds to the value's day (e.g.: only Mondays). Using step=2 will make acceptable only every other day, etc.
 
-Example: we want to celebrate birthday parties only on Saturdays, [check this on JSBin](https://jsbin.com/hudafo/1/edit?html,output)! (screenshot from Chrome).
+Example: we want to celebrate birthday parties only on Saturdays, 
+<a href="https://jsbin.com/hudafo/1/edit?html,output">check this on JSBin</a>! (screenshot from Chrome).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 233. using step to allow only saturdays (304) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image233.webp?raw=true"
   width="40%"
+  title="Use of the step attribute, allow only Saturdays"
   alt="Use of the step attribute, allow only Saturdays." />
 </p>
 
@@ -16619,8 +16721,9 @@ Example: we want to celebrate birthday parties only on Saturdays, [check this 
 <!--~~~~~~~~~~~~~~~~~~~ 234. only values from datalist are proposed (304) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image234.webp?raw=true"
-   width="40%"
-   alt="Restrict choices using a datalist element." />
+  width="40%"
+  title="Restrict choices using a datalist element"
+  alt="Restrict choices using a datalist element." />
 </p>
 
 <h4>Extract from source code:</h4>
@@ -16649,7 +16752,7 @@ Here is <a href="https://jsbin.com/ganipuv/edit?html,output">an interactive exa
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -16692,29 +16795,29 @@ The object returned to the input event handler has a useful property named valu
 
 <a href="https://jsbin.com/renevaf/edit?html,output">The following example at JSBin</a> shows how to ascertain whether a date is in the past or in the future: 
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------- 235. is date in past or future? (306) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 235. is date in past or future? (306) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image235.webp?raw=true"
-   width="40%"
-   alt="Check if date is in the past or future." />
+  width="40%"
+  title="Check if date is in the past or future"
+  alt="Check if date is in the past or future." />
 </p>
 
 While if we enter a date in the future:
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 236. enter your birth date (306) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 236. enter your birth date, incorrectly (306) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image236.webp?raw=true"
-   width="30%"
-   alt="Enter your Birthdate in the future: bad." />
+  width="30%"
+  title="Enter your Birthdate in the future: bad"
+  alt="Enter your Birthdate in the future: bad." />
 </p>
 
 <h4>Extract from source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -16763,127 +16866,130 @@ The HTML5 specification indicates that we can use &lt;input type="date"&gt; an
 
 &lt;input type="time"&gt;
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------------------- 237. select a time (307) ------------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 237. select a time (307) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image237.webp?raw=true"
-   width="30%"
-   alt="Input type=time, select a time." />
+  width="30%"
+  title="Input type=time, select a time"
+  alt="Input type=time, select a time." />
 </p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 238. select a date and time (307) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 238. select a date and time (307) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image238.webp?raw=true"
-   width="20%"
-   alt="Input type=time safari IOS." />
+  width="20%"
+  title="Input type=time Safari IOS"
+  alt="Input type=time Safari IOS." />
 </p>
 
 &lt;input type="datetime"&gt;
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------------- 239. select a time (307) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 239. in french, select a time (307) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image239.webp?raw=true"
-   width="20%"
-   alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element." />
+  width="20%"
+  title="In French, select a time"
+  alt="In French, select a time." />
 </p>
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 240. jun 7, 2011 select date/time (308) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 240. jun 7, 2011 select date/time (308) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image240.webp?raw=true"
-   width="20%"
-   alt="Select date/time. Wed 7:29pm, June 7, 2011. Input type=datetime on Safari IOS." />
+  width="20%"
+  title="Select date/time. Wed 7:29pm, June 7, 2011. Input type=datetime on Safari IOS"
+  alt="Select date/time. Wed 7:29pm, June 7, 2011. Input type=datetime on Safari IOS." />
 </p>
 
 &lt;input type="datetime-local"&gt;
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 241. 2012-02-18 00:08 select date/time (308) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 241. foreign language, 2012-02-18 00:08 select date/time (308) ~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image241.webp?raw=true"
-   width="20%"
-   alt="Select date and time using datetime-local." />
+  width="20%"
+  title="In foreign language, select date and time using datetime-local"
+  alt="In foreign language, select date and time using datetime-local." />
 </p>
 
 &lt;input type="week"&gt;:
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 242. 2012w07 select a week (308) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 242. foreign language, 2012w07 select a week (308) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image242.webp?raw=true"
-   width="40%"
-   alt="Select a Week." />
+  width="40%"
+  title="In foreign language, select a Week"
+  alt="In foreign language, select a Week." />
 </p>
 
 &lt;input type="month"&gt;:
 
-<!------------------------------------------------------------------------------------------------>
-<!---------------------- 243. 2012-02 select birthdate month & year (308) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 243. 2012-02 select birthdate month & year (308) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image243.webp?raw=true"
-   width="40%"
-   alt="2012-02 Select month and year of birthdate." />
+  width="40%"
+  title="2012-02 Select month and year of birthdate"
+  alt="2012-02 Select month and year of birthdate." />
 </p>
-<!-- width="4.0in" height="1.4222222222222223in"} -->
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 244. june 2011 select month & year (309) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 244. june 2011 select month & year (309) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image244.webp?raw=true"
-   width="20%"
-   alt="June, 2011 select input type=month safari." />
+  width="20%"
+  title="June, 2011 select input type=month Safari"
+  alt="June, 2011 select input type=month Safari." />
 </p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-4-4">5.4.4 "e-mail", "tel", "URL", and "search"</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Let's study 4 input types: "email", "tel", "URL" and "search".
 
 &lt;input type="email"&gt;
 
 This input type is relatively straightforward to use. In mobile applications, this new input type pops up a keyboard layout adapted to email input. Note the "@" key, the "." key, etc.
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------- 245. mobile email address (309) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 245. mobile email address (309) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image245.webp?raw=true"
-   width="20%"
-   alt="Contextual mobile keyboard for entering an email address." />
+  width="20%"
+  title="Contextual mobile keyboard for entering an email address"
+  alt="Contextual mobile keyboard for entering an email address." />
 </p>
 
 This input type is very interesting as it provides default validation behaviors:
 
-If the value entered looks like an email address (contains a "@"...), the field is <i>valid</i>, and gets the pseudo CSS class  :valid
+If the value entered looks like an email address (contains a "@"...), the field 
+is <i>valid</i>, and gets the pseudo CSS class  :valid
 
-If the value entered does not contain an "@", and does not look like an email address, the field is <i>invalid</i> and gets the pseudo CSS class :invalid
+If the value entered does not contain an "@", and does not look like an email 
+address, the field is <i>invalid</i> and gets the pseudo CSS class :invalid
 
-See the next example to see this in action. More details will be presented in a later section dedicated to form validation.
+See the next example to see this in action. More details will be presented in a 
+later section dedicated to form validation.
 
 Typical use:
 <a href="https://codepen.io/w3devcampus/pen/aWXKWR">Online example at CodePen</a>
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------------- 246. enter your email (310) ----------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 246. enter your email (310) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image246.webp?raw=true"
-   width="30%"
-   alt="Enter your email." />
+  width="30%"
+  title="Enter your email"
+  alt="Enter your email." />
 </p>
 
-Try it on your browser:                         Enter your email: 
+<p>Try it on your browser:<br>
+Enter your email: </p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -16893,63 +16999,70 @@ Try it on your browser:                         Enter your email: 
 4.  <meta charset="utf-8">
 5.  <title>Example of input type=email</title>
 6.  <style>
-7.  input:invalid {
-8.  background-color:pink;
-9.  }
+7.    input:invalid {
+8.      background-color:pink;
+9.    }
 10. </style>
 11. </head>
 12. <body>
-13. <label for="email">Enter your email </label>
-14. <input type="email" id="email">
+13.   <label for="email">Enter your email </label>
+14.   <input type="email" id="email">
 15. </body>
 16. </html>
 ```
 
 </details>
 
-Note the CSS rule that turns the background color of the email input field to pink if a user enters an invalid address (<i>lines 7-8</i>). Also note that the validation is based only on matching a regular expression (the address should contain a "@",  a ".", etc.). It does not check if the address is an existing one.
+Note the CSS rule that turns the background color of the email input field to 
+pink if a user enters an invalid address (<i>lines 7-8</i>). Also note that the 
+validation is based only on matching a regular expression (the address should 
+contain a "@",  a ".", etc.). It does not check if the address is an existing one.
 
 &lt;input type="tel"&gt;
 
-This input field is really useful on smartphones and tablets, as it makes the browser pop up a keyboard layout suitable for entering phone numbers:
+This input field is really useful on smartphones and tablets, as it makes the 
+browser pop up a keyboard layout suitable for entering phone numbers:
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 247. keypad and tablet keyboard layout #1 (310) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 247. keypad and tablet keyboard layout #1 (310) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image247.webp?raw=true"
   width="20%"
+  title="Mobile keyboard 1 for input type=tel"
   alt="Mobile keyboard 1 for input type=tel." />
 </p>
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 248. keypad and tablet keyboard layout #2 (310) ------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 248. keypad and tablet keyboard layout #2 (310) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image248.webp?raw=true"
   width="20%"
+  title="Other mobile keyboard 1 for input type=tel"
   alt="Other mobile keyboard 1 for input type=tel." />
 </p>
 
-This input type is often used with the new placeholder and pattern attributes that are detailed in another section of this course. It is supported by all recent major Web browsers, on mobile devices and desktops.
+This input type is often used with the new placeholder and pattern attributes 
+that are detailed in another section of this course. It is supported by all 
+recent major Web browsers, on mobile devices and desktops.
 
 <a href="https://codepen.io/w3devcampus/pen/Njozvd">Online example on CodePen</a>
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 249. enter a telephone number (311) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 249. enter a telephone number (311) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image249.webp?raw=true"
-   width="30%"
-   alt="Enter telephone number." />
+  width="30%"
+  title="Enter telephone number"
+  alt="Enter telephone number." />
 </p>
 
-Try it in your browser (we used the same CSS for changing the background-color when the input value is invalid):
+Try it in your browser (we used the same CSS for changing the background-color 
+when the input value is invalid):
 
 Enter a telephone number: 
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -16979,18 +17092,20 @@ Enter a telephone number: 
 
 This input field is really useful on smartphones and tablets, as it makes the browser pop up a keyboard layout suitable for entering URLs:
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------- 250. mobile keyboard for entering urls (311) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 250. mobile keyboard for entering urls (311) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image250.webp?raw=true"
-   width="20%"
-   alt="Mobile keyboard for entering URLs." />
+  width="20%"
+  title="Mobile keyboard for entering URLs"
+  alt="Mobile keyboard for entering URLs." />
 </p>
 
-This field is also compatible with <i>the validation API</i> (more on this in another section).
+This field is also compatible with <i>the validation API</i> (more on this 
+in another section).
 
-Here is an online example that shows the use of the placeholder and pattern attributes for entering only URLs that start with ftp:// or https://
+Here is an online example that shows the use of the placeholder and pattern 
+attributes for entering only URLs that start with ftp:// or https://
 
 Or try it here in your browser:
 
@@ -17000,7 +17115,7 @@ Enter a URL (custom validation, must start with http, https or ftp): 
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -17028,20 +17143,26 @@ Enter a URL (custom validation, must start with http, https or ftp): 
 
 </details>
 
-<i>Lines 16-17</i> show the use of a pattern attribute with a JavaScript regexp that accepts only URLs starting with http, https or ftp. More details on the pattern attribute are given in the section that presents the new HTML5 form attributes.
+<i>Lines 16-17</i> show the use of a pattern attribute with a JavaScript regexp 
+that accepts only URLs starting with http, https or ftp. More details on the 
+pattern attribute are given in the section that presents the new HTML5 form attributes.
 
 &lt;input type="search"&gt;
 
-The search type is used for search fields (i.e., for a search engine). A search field behaves like a regular text field, except that it may provide some feedback GUI for stopping the current request and emptying the search field, or it may provide a drop-down list of recent search results.
+The search type is used for search fields (i.e., for a search engine). A search 
+field behaves like a regular text field, except that it may provide some feedback 
+GUI for stopping the current request and emptying the search field, or it may 
+provide a drop-down list of recent search results.
 
-The specification does not state what the GUI should look like, so current implementations show variations in the look and feel.
-<!------------------------------------------------------------------------------------------------>
-<!------------------ 251. two search options rendered on smart phones (312) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+The specification does not state what the GUI should look like, so current 
+implementations show variations in the look and feel.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 251. two search options rendered on smart phones (312) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image251.webp?raw=true"
   width="40%"
-  alt="input type=search rendered on a smartphone." />
+  title="Input type=search rendered on a smartphone"
+  alt="Input type=search rendered on a smartphone." />
 </p>
 
 <h4>Typical use:</h4>
@@ -17056,40 +17177,40 @@ The specification does not state what the GUI should look like, so current impl
 
 Results on Chrome and Opera desktop - notice the small cross on the right when one enters a value:
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 252. simple search chrome & opera (313) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 252. simple search chrome & opera (313) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image252.webp?raw=true"
   width="40%"
+  title="Input type=search in google chrome and opera"
   alt="Input type=search in google chrome and opera." />
 </p>
 
 Same example with Safari desktop, this time the second line with an attribute results=5 shows a small icon on the left:
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------------- 253. simple search safari desktop (313) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 253. simple search safari desktop (313) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image253.webp?raw=true"
   width="40%"
+  title="Input type=search on Safari"
   alt="Input type=search on Safari." />
 </p>
 
 Example that shows a drop down list of recent searches (Safari screenshot borrowed from [this excellent site about HTML5 forms that is worth reading](https://www.wufoo.com/html5/types/5-search.html)):
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------ 254. drop down list of recent searches (313) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 254. drop down list of recent searches (313) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image254.webp?raw=true"
   width="20%"
-  alt="Example 2 of input type=search on safari, shows recent results." />
+  title="Example 2 of input type=search on Safari, shows recent results"
+  alt="Example 2 of input type=search on Safari, shows recent results." />
 </p>
 
 <h4>Source code for the knowledge check below</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -17116,9 +17237,9 @@ Example that shows a drop down list of recent searches (Safari screenshot borro
 
 </details>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-4-5">5.4.5 "number"</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 This input field is useful for entering numerical values (integer or float), but not for entering zip codes. On desktop implementations and on some mobile implementations, it provides a user interface with small vertical arrows for incrementing/decrementing the current value, while on mobiles it will display a numeric keyboard.
 
@@ -17128,24 +17249,24 @@ Example: <b>&lt;input type="number" value="25" min="0" step="5" max="500"/
 
 <h4>Screenshot example taken with a mobile device:</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 255. input type number display mobile device (314) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 255. input type number display mobile device (314) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image255.webp?raw=true"
   width="20%"
+  title="Numeric keyboard on Safari IOS"
   alt="Numeric keyboard on Safari IOS." />
 </p>
 
 Examples on desktop (the width will be adjusted depending on the min and max attributes):
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 256. quantity between 1 and 5 (314) ------------------------------>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 256. quantity between 1 and 5 (314) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image256.webp?raw=true"
-   width="35%"
-   alt="Input type=number example. Quantity between 1 and 5." />
+  width="35%"
+  title="Input type=number example. Quantity between 1 and 5"
+  alt="Input type=number example. Quantity between 1 and 5." />
 </p>
 
 <h4>Typical usage</h4>
@@ -17158,34 +17279,47 @@ This field accepts specific attributes max, min, step, value (default disp
 
 This input type is very interesting as it provides default validation behaviors:
 
-If the value entered using a keyboard is not a valid number, or is not in the range defined by the min and max attributes, the field is <i>invalid</i> and gets the pseudo CSS class :invalid.
+If the value entered using a keyboard is not a valid number, or is not in the 
+range defined by the min and max attributes, the field is <i>invalid</i> and 
+gets the pseudo CSS class :invalid.
 
-If the difference between the value you enter and min is a multiple of step, then it gets the CSS pseudo class :valid , otherwise it will be <i>invalid</i>. Example: if min=1 and step=5, the field will be valid with value=1, 6, 11, 16 etc. if min=0, with value=0, 5, 10, 15 etc.
+If the difference between the value you enter and min is a multiple of step, 
+then it gets the CSS pseudo class :valid , otherwise it will be <i>invalid</i>. 
+Example: if min=1 and step=5, the field will be valid with value=1, 6, 11, 16 etc. 
+if min=0, with value=0, 5, 10, 15 etc.
 
-<b>WARNING 1</b>: <b>Using a step attribute with an integer value will make the arrows increment/decrement the current value with the step value, and [make the input field valid only when ]the difference between the value you enter and min is a multiple of step. </b>
+<b>WARNING 1</b>: <b>Using a step attribute with an integer value will make the 
+arrows increment/decrement the current value with the step value, and [make the 
+input field valid only when ]the difference between the value you enter and min is a multiple of step. </b>
 
-<b>WARNING 2: by default, omitting the step attribute is equivalent to step="1", [so for entering float values, it is necessary to use step="any" or step equal to a floating point value such as step="0.1"].</b>
+<b>WARNING 2: by default, omitting the step attribute is equivalent to step="1", 
+[so for entering float values, it is necessary to use step="any" or step equal to 
+a floating point value such as step="0.1"].</b>
 
-<b>With step="any", floating point values are valid, but vertical arrows will increment/decrement the value by one. If step="0.1", arrows will increment/decrement by 0.1, etc.</b>
+<b>With step="any", floating point values are valid, but vertical arrows will 
+increment/decrement the value by one. If step="0.1", arrows will increment/decrement 
+by 0.1, etc.</b>
 
-<a href="https://codepen.io/w3devcampus/pen/GJrQzP):">Online example in CodePen</a> try changing the attribute values, use step="any" and try float values, etc).
+<a href="https://codepen.io/w3devcampus/pen/GJrQzP">Online example in CodePen</a> 
+try changing the attribute values, use step="any" and try float values, etc).
 
-<!------------------------------------------------------------------------------------------------>
-<!----------------------------- 257. change attribute values (315) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 257. change attribute values (315) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image257.webp?raw=true"
-   width="40%"
-   alt="Change attribute values.  Use step=any and try float values." />
+  width="40%"
+  title="Change attribute values.  Use step=any and try float values"
+  alt="Change attribute values.  Use step=any and try float values." />
 </p>
 
-Or, do it here in your browser (Manually enter a value that is not in the range, or not a multiple of 5, try the up and down arrows, etc.):
+Or, do it here in your browser (Manually enter a value that is not in the range, 
+or not a multiple of 5, try the up and down arrows, etc.):
 
 Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid): 
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -17212,75 +17346,80 @@ Quantity (between 0 and 500, should be a multiple of 5 otherwise it's invalid):�
 
 </details>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-4-6">5.4.6 "range"</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 258. using zipper as range setting (316) ---------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 258. using zipper as range setting (316) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image258.webp?raw=true"
-   width="50%"
-   alt="zipper with funny label input type=range." />
+  width="50%"
+  title="Zipper with funny label input type=range"
+  alt="Zipper with funny label input type=range." />
 </p>
 
 This input type renders as a slider. It accepts the same attributes as the &lt;input type="number"&gt; : min, max, step and value.
 
 <h4>Example of rendering on a desktop:</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 259. play with attributes on desktop (316) --------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 259. play with attributes on desktop (316) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image259.webp?raw=true"
-   width="30%"
-   alt="Example rendering on desktop." />
+  width="30%"
+  title="Example rendering on desktop"
+  alt="Example rendering on desktop." />
 </p>
 
 <h4>And on mobile devices:</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------- 260. on left range, default, vertical (316) -------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 260. on left range, default, vertical (316) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image260.webp?raw=true"
-   width="20%"
-   alt="Left image, ios range input." />
+  width="20%"
+  title="Left image, IOS range input"
+  alt="Left image, IOS range input." />
 </p>
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 261. on right range android (316) ------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 261. on right range android (316) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image261.webp?raw=true"
-   width="20%"
-   alt="Right image, android range input." />
+  width="20%"
+  title="Right image, android range input"
+  alt="Right image, android range input." />
 </p>
 
 <h4>Typical use</h4>
 
-<p>The basic use is to specify at least the value, min and max attributes, and eventually the step attribute, too:</p>
+<p>The basic use is to specify at least the value, min and max attributes, and 
+eventually the step attribute, too:</p>
 
 ```
 <input id="slider6" type="range" min="0" max="10" step="2" value="5">
 ```
 
-<p>But most of the time, you will need a visual feedback that shows the current value selected by the slider.</p>
+<p>But most of the time, you will need a visual feedback that shows the current 
+value selected by the slider.</p>
 
-<h4><a href="https://codepen.io/w3devcampus/pen/BRMVGW">This online example on CodePen</a> shows how to add a visual feedback using a very short JavaScript function and an &lt;output&gt; element. Just click and drag the small cursor of the slider (or use up and down arrow keys when the field has the focus):</h4>
+<h4><a href="https://codepen.io/w3devcampus/pen/BRMVGW">This online example on 
+CodePen</a> shows how to add a visual feedback using a very short JavaScript 
+function and an &lt;output&gt; element. Just click and drag the small cursor 
+of the slider (or use up and down arrow keys when the field has the focus):</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- 262. add visual feedback with short function (317) ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 262. add visual feedback with short function (317) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image262.webp?raw=true"
-   width="50%"
-   alt="" />
+  width="50%"
+  title="Add visual feedback with short function"
+  alt="Add visual feedback with short function." />
 </p>
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -17325,16 +17464,18 @@ This input type renders as a slider. It accepts the same attributes as the &lt;
 
 <h4>Snapping behavior and the step attribute</h4>
 
-<!------------------------------------------------------------------------------------------------>
-<!-------------------------- 263. example six steps in process (317) ----------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 263. example six steps in process (317) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image263.webp?raw=true"
-   width="30%"
-   alt="Jumps + steps." />
+  width="30%"
+  title="Jumps + steps"
+  alt="Jumps + steps." />
 </p>
 
-When you click and drag the slider, it "jumps" to some snap points corresponding to the integer values of the range defined by the min and max attributes. The "size of the jumps" depends on the value of the step attribute.
+When you click and drag the slider, it "jumps" to some snap points corresponding 
+to the integer values of the range defined by the min and max attributes. The 
+"size of the jumps" depends on the value of the step attribute.
 
 Try these examples in your browser and look at their behavior:
 
@@ -17343,36 +17484,42 @@ value=5 min=0, max=10 step=1:  
 value=12 min=10, max=50 step=4:  
 ```
 
-Note that in the previous example, the default value displayed is 14, not 12 (the value just above min plus an integer step value). 12 is not possible so it's been "snapped" to 14.
+Note that in the previous example, the default value displayed is 14, not 12 
+(the value just above min plus an integer step value). 12 is not possible so 
+it's been "snapped" to 14.
 
 ```
 value=5 min=0, max=10 step="0.5":  
 ```
 
-In the previous example, it's necessary to add quotes for setting step="0.5" (while HTML5 authorizes not using quotes for setting integer values to attributes).
+In the previous example, it's necessary to add quotes for setting step="0.5" 
+(while HTML5 authorizes not using quotes for setting integer values to attributes).
 
 ```
 value=5 min=0, max=10 step="any":  
 ```
 
-<b>WARNING</b>: Using a step attribute with an integer value will make the slider jump corresponding to the step value. By default, omitting the step attribute is equivalent to step="1".
+<b>WARNING</b>: Using a step attribute with an integer value will make the slider 
+jump corresponding to the step value. By default, omitting the step attribute is 
+equivalent to step="1".
 
-For accepting float values, it is necessary to use step="any", or step equal to a floating point value, such as step="0.5".
+For accepting float values, it is necessary to use step="any", or step equal to 
+a floating point value, such as step="0.5".
 
 Adding "ticks" to the range slider using a &lt;datalist&gt; element
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------- 264. display ticks on a rule at given positions (318) ---------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 264. display ticks on a rule at given positions (318) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image264.webp?raw=true"
-   width="45%"
-   alt="Display ticks on a rule at given positions." />
+  width="45%"
+  title="Display ticks on a rule at given positions"
+  alt="Display ticks on a rule at given positions." />
 </p>
 
 <h4>Using the &lt;datalist&gt; element, it's possible to display "ticks" above the range slider, at given positions.</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -17403,9 +17550,15 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 
 <h4>External resources</h4>
 <ul>
-  <li>You can use CSS for "standard" styling (size, color, background color, etc.) . However, some custom attributes are available. Check <a href="https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/">this article from CSS tricks</a>.</li>
-  <li>A script that automatically generates ticks, depending on the min, max and step attributes (Codepen from Dudley Storey): <a href="https://codepen.io/dudleystorey/pen/Klnzy">Auto-Generated HTML5 range input Ticks</a></li>
-  <li>From CSS{Portal}, a CSS generator help you style the html input range tag, very easy to use: <a href="https://www.cssportal.com/style-input-range/">Style Input Range</a></li>
+  <li>You can use CSS for "standard" styling (size, color, background color, etc.) 
+    However, some custom attributes are available. Check 
+	<a href="https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/">
+	this article from CSS tricks</a>.</li>
+  <li>A script that automatically generates ticks, depending on the min, max and step 
+    attributes (Codepen from Dudley Storey): <a href="https://codepen.io/dudleystorey/pen/Klnzy">
+	Auto-Generated HTML5 range input Ticks</a></li>
+  <li>From CSS{Portal}, a CSS generator help you style the html input range tag, very easy to use: 
+    <a href="https://www.cssportal.com/style-input-range/">Style Input Range</a></li>
 </ul>
 
 <div align="center" width="100%">
@@ -17436,29 +17589,35 @@ value=5 min=0, max=10 step="any", ticks at 0, 5 and 10:  
 </div>
 
 <ul>
-  <li>MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">&lt;input type=range&gt;</a></li>
+  <li>MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">
+    &lt;input type=range&gt;</a></li>
 </ul>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-5-1">5.5.1 Form Attributes</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p>In this chapter, we go over the form attributes that have been introduced by HTML5.</p>
 
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------ 265. html5 form attributes (320) -------------------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 265. html5 form attributes (320) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image265.webp?raw=true"
-   width="25%"
-   alt="HTML5 form attributes." />
+  width="25%"
+  title="HTML5 form attributes"
+  alt="HTML5 form attributes." />
 </p>
 
-We have already seen the use of pseudo CSS classes used together with the input field and form validation (pattern attribute, input:invalid CSS rule). We also briefly looked at the use of the placeholder attributes for displaying a helper message in the input field.
+We have already seen the use of pseudo CSS classes used together with the input 
+field and form validation (pattern attribute, input:invalid CSS rule). We also 
+briefly looked at the use of the placeholder attributes for displaying a helper 
+message in the input field.
 
-In this section, we cover the rest of the form attributes and provide further examples of using the previously discussed attributes. 
+In this section, we cover the rest of the form attributes and provide further 
+examples of using the previously discussed attributes. 
 
-In another part of the course, about form validation and visual feedback using CSS, we examine some of the most useful attributes in even greater detail.
+In another part of the course, about form validation and visual feedback using 
+CSS, we examine some of the most useful attributes in even greater detail.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-5-2">5.5.2 form</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17470,16 +17629,16 @@ This attribute is useful for putting input fields outside the form itself. The 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 266. html5 form attributes (321) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image266.webp?raw=true"
-   width="65%"
-   alt="HTML5 form attributes." />
+  width="65%"
+  title="HTML5 form attributes"
+  alt="HTML5 form attributes." />
 </p>
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -17562,7 +17721,7 @@ Try it in your browser here:
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -17598,17 +17757,17 @@ The required attribute makes the input field invalid if kept empty. 
 <h4>Here is the result in your browser:</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 269. example use of autofocus attribute (323) ------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 269. example use of autofocus attribute (323) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image269.webp?raw=true"
   width="65%"
+  title="Example use of autofocus attribute"
   alt="Example use of autofocus attribute." />
 </p>
 
 <h4>Extract from source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -17636,7 +17795,7 @@ Read [these explanations](https://html.spec.whatwg.org/multipage/common-microsy
 
 <h4>Source code for the knowledge check 5.5.4</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -17681,17 +17840,17 @@ Here is a small code extract from a more complete example shown in the section a
 Please try it in your  browser (Type "F", "E", "O", C" etc., or just click inside the field and use the drop down menu). Note that you can also enter any value; if it does not start with one of these letters it will be accepted but will not trigger auto-completion.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------ 270. preferred browser and submit query (325) ------------------------->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 270. preferred browser and submit query (325) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image270.webp?raw=true"
   width="65%"
+  title="Preferred browser prompt and submit query"
   alt="Preferred browser prompt and submit query." />
 </p>
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -17732,11 +17891,11 @@ You can also try [this online JavaScript RegExps tester](https://regex101.com/#
 follow [this tutorial about "using JavaScript RegExps"](https://regexone.com/) that has step by 
 step exercises and explanations.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ 271. html5patterns.com: menu left, categories & patterns right (368) ~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 271. html5patterns.com: menu left, categories & patterns right (326) ~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image271.webp?raw=true"
   width="65%"
+  title="Menu on the left, categories and patterns on the right. html5patterns.com"
   alt="Menu on the left, categories and patterns on the right. html5patterns.com." />
 </p>
 
@@ -17744,11 +17903,11 @@ step exercises and explanations.
 
 Just add a pattern attribute with a value that is the JavaScript regular expression that must match the entire string entered in the field. Note that the empty string is valid by default (except if the required attribute is used - this makes empty fields invalid).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 271c. typical use (3xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 271c. typical use (326) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image271c.webp?raw=true"
   width="65%"
+  title="Typical use"
   alt="Typical use." />
 </p>
 
@@ -17773,17 +17932,17 @@ With the previous example, until the value of the input field is equal to 3 alph
 
 As seen in the previous examples, we used some CSS pseudo classes for automatically setting the background-color of the input field as we type.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 271b. type multiple email addresses (329) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 271b. type multiple email addresses (327) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image271b.webp?raw=true"
   width="65%"
+  title="Green valid, pink invalid.  Type email, name myemail"
   alt="Green valid, pink invalid.  Type email, name myemail." />
 </p>
 
 <h4>Complete source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -17825,7 +17984,7 @@ Enter a pseudo (6-12 characters): ![](./images/image218.wmf)
 
 Complete source code:
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -17859,16 +18018,14 @@ Complete source code:
 <h4>Example #3: an &lt;input type="url"&gt; element with a pattern attribute allowing only certain protocols</h4>
 
 <a href="https://jsbin.com/nulahey/1/edit?html,output)or">Online example at JSBin</a> try it in your browser:
-<!---
-Enter the URL of your repository (http, https or ftp): 
---->
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 271b. input type enter url of your repository (xxx) ~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 271b. input type enter url of your repository (328) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image271b.webp?raw=true"
-   width="65%"
-   alt="Green valid, pink invalid.  Type email, name myemail." />
+  width="65%"
+  title="Green valid, pink invalid.  Type email, name myemail"
+  alt="Green valid, pink invalid.  Type email, name myemail." />
 </p>
 
 <h4>Source code extract:</h4>
@@ -17896,7 +18053,7 @@ Their detailed use with these input fields have already been explained in sectio
 
 <h4>Typical use</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -17940,16 +18097,16 @@ Or try it below in your browser: type in a list of email addresses separated by 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 271b. input type email - single or multiple (329) ~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image271b.webp?raw=true"
   width="65%"
+  title="Enter one or more email addresses"
   alt="Enter one or more email addresses." />
 </p>
 
 <h4>Complete source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -18074,10 +18231,10 @@ The first shows a form with two submit buttons: 
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 272. formaction attribute (332) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image272.webp?raw=true"
   width="40%"
+  title="Example of formaction attribute"
   alt="Example of formaction attribute." />
 &nbsp;
 <br/>
@@ -18090,10 +18247,10 @@ The second example shows a form with two submit buttons:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 273. formmethod attribute (332) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image273.webp?raw=true"
   width="40%"
+  title="Example of formmethod attribute"
   alt="Example of formmethod attribute." />
 &nbsp;
 <br/>
@@ -18101,15 +18258,18 @@ The second example shows a form with two submit buttons:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-5-11">5.5.11 formnovalidate</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The formnovalidate attribute is targeted to the &lt;input type="submit"&gt; input fields. This attribute is rarely used, so there will be no questions about it in the end of the week's exercises.
+The formnovalidate attribute is targeted to the &lt;input type="submit"&gt; input fields. 
+This attribute is rarely used, so there will be no questions about it in the end of the week's exercises.
 
-This atrribute allows the submission of a form even if it contains  <i>invalid</i> fields. For example:  a form that has an &lt;input type="email"&gt; field or a field required and which are not filled. 
+This atrribute allows the submission of a form even if it contains  <i>invalid</i> fields. 
+For example:  a form that has an &lt;input type="email"&gt; field or a field required and which are not filled. 
 
-In general, such forms have two submit buttons, one with the formnovalidate attribute set to a non null value and one without.
+In general, such forms have two submit buttons, one with the formnovalidate attribute set 
+to a non null value and one without.
 
 Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,output)):
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -18129,11 +18289,11 @@ Typical use ([online example at JSBin](https://jsbin.com/doceje/1/edit?html,outp
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 275a. formnovalidate attribute (333) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 275a. formnovalidate attribute (333) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image275a.webp?raw=true"
   width="40%"
+  title="Example of formnovalidate attribute"
   alt="Example of formnovalidate attribute." />
 &nbsp;
 <br/>
@@ -18168,11 +18328,11 @@ This attribute's value indicates where the response from the form submission sho
 [Online example at JSBin ](https://jsbin.com/godice/2/edit?html,output)or try it in your browser below:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 276a. formtarget attribute (333) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 276a. formtarget attribute (333) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image276a.webp?raw=true"
   width="40%"
+  title="Example of formtarget attribute"
   alt="Example of formtarget attribute." />
 &nbsp;
 <br/>
@@ -18251,18 +18411,18 @@ The possible values for this field are:
 <a href="https://jsbin.com/lokukam/4/edit?html,output">Try this online example at JSBin</a>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 276. formenctype attribute (335) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 276. formenctype attribute (335) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image276.webp?raw=true"
-   width="40%"
-   alt="Example of use of the formenctype attribute." />
+  width="40%"
+  title="Example of use of the formenctype attribute"
+  alt="Example of use of the formenctype attribute." />
 &nbsp;
 <br/>
 
 Source code:
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -18295,24 +18455,24 @@ Source code:
 
 If you run [this example in the JSBin](https://jsbin.com/lokukam/4/edit?html,output) standalone mode (click the black arrow on the top right of the output tab, in JSBin), you should see this:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 277. formenctype example in jsbin (335) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 277. formenctype example in jsbin (335) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image277.webp?raw=true"
-   width="50%"
-   alt="JS Bin in standalone mode." />
+  width="50%"
+  title="JS Bin in standalone mode"
+  alt="JS Bin in standalone mode." />
 &nbsp;
 <br/>
 
 Then, open the devtools and go to the "Network" tab, click on the POST request. Once done, click on the right on the "Header" tab to see the HTTP headers, and scroll down, you should see the form-data entries in the header, like in this screenshot:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------- 278. something went wrong (336) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 278. we called a fake server, something went wrong (336) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image278.webp?raw=true"
-   width="50%"
-   alt="." />
+  width="50%"
+  title="Something went wrong!  We called a fake server"
+  alt="Something went wrong!  We called a fake server." />
 &nbsp;
 <br/>
 
@@ -18349,12 +18509,12 @@ Let's look at the HTML5 elements related to forms (specifically: &lt;datalist&g
 The output element represents the result of a computation or user action. You can see it as a "specialized &lt;div&gt; or &lt;span&gt;" for displaying interactive results.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------------- 279. output field (337) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 279. example, output field (337) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image279.webp?raw=true"
-   width="35%"
-   alt="Example of output element use." />
+  width="35%"
+  title="Example, output element use"
+  alt="Example, output element use." />
 &nbsp;
 <br/>
 
@@ -18377,11 +18537,11 @@ The oninput event handler directly uses the &lt;output&gt; element using the
 Result (do change the input field values):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------------------------ 278a. oninput event handler (337) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 278a. oninput event handler (337) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image278a.webp?raw=true"
   width="50%"
+  title="Event handler oninput"
   alt="Event handler oninput." />
 &nbsp;
 </p>
@@ -18396,11 +18556,11 @@ Result (do change the input field values):
 
 <h4>Example #2</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-------------------------- 278b. output element and attributes (337) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 278b. output element and attributes (337) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image278b.webp?raw=true"
   width="50%"
+  title="Attributes and output elements"
   alt="Attributes and output elements." />
 &nbsp;
 </p>
@@ -18434,8 +18594,9 @@ It can be useful to display a colored gauge to show disk usage, to highlight t
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 280. blood pressure (338) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image280.webp?raw=true"
-   width="50%"
-   alt="Blood pressure meter gauge." />
+  width="50%"
+  title="Blood pressure meter gauge"
+  alt="Blood pressure meter gauge." />
 &nbsp;
 <br/>
 
@@ -18483,21 +18644,26 @@ Grades:  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 281. slider example javascript code (339) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image281.webp?raw=true"
-   width="65%"
-   alt="The link between the slider (an &lt;input type=range&gt;) and the meter element is done using an input event handler." />
+  width="65%"
+  title="The link between the slider (an &lt;input type=range&gt;) and the meter 
+    element is done using an input event handler"
+  alt="The link between the slider (an &lt;input type=range&gt;) and the meter 
+    element is done using an input event handler." />
 &nbsp;
 <br/>
-<!--
-![The link between the slider (an &lt;input type=range>) and the meter element is done using an input event handler (oninput="effect(...)" line 4. The effect JavaScript function will change the current value of the &lt;meter&gt; element (line 9) and update the displayed html content of the &lt;output&gt; element (line 10)](./images/image281.webp){width="6.5in" height="2.1131944444444444in"}
---->
 
-The link between the slider (an &lt;input type=range&gt;) and the meter element is done using an input event handler (oninput="effect(...)") at <i>line 4</i>.
+The link between the slider (an &lt;input type=range&gt;) and the meter element 
+is done using an input event handler (oninput="effect(...)") at <i>line 4</i>.
 
-The effect JavaScript function will change the current value of the &lt;meter&gt; element (<i>line 9</i>) and update the displayed html content of the &lt;output&gt; element (<i>line 10</i>).
+The effect JavaScript function will change the current value of the &lt;meter&gt; 
+element (<i>line 9</i>) and update the displayed html content of the &lt;output&gt; 
+element (<i>line 10</i>).
 
 The color of the gauge changes depending on the attribute's values
 
-The optimum attribute indicates the optimal numeric value and gives an indication where along the range is considered preferable. Just think of the &lt;meter&gt; ranges as follows:
+The optimum attribute indicates the optimal numeric value and gives an indication 
+where along the range is considered preferable. Just think of the &lt;meter&gt; 
+ranges as follows:
 
 -   Range 1: between min and low
 
@@ -18505,9 +18671,14 @@ The optimum attribute indicates the optimal numeric value and gives an indicat
 
 -   Range 3: between high and max
 
-... and depending on the value you set to optimum attribute, one of the ranges above becomes the "good (optimum)" range.
+... and depending on the value you set to optimum attribute, one of the ranges 
+above becomes the "good (optimum)" range.
 
-In the previous example, with the value of the optimum attribute set to 19, a number between min and low (not inclusive), the Range 1 (between min=0 and low=20) becomes the "good (optimum)" range (displayed in green), the Range 3 (between high=80 and max=100) becomes the "bad" (displayed in red color) range, and the Range 2, in the middle, will be displayed in yellow (not optimum, not bad).
+In the previous example, with the value of the optimum attribute set to 19, a 
+number between min and low (not inclusive), the Range 1 (between min=0 and low=20) 
+becomes the "good (optimum)" range (displayed in green), the Range 3 (between high=80 
+and max=100) becomes the "bad" (displayed in red color) range, and the Range 2, in 
+the middle, will be displayed in yellow (not optimum, not bad).
 
 A &lt;meter&gt; element used for displaying blood pressure might be a good candidate for setting the optimum value to "Range 2", and a &lt;meter&gt; element used for displaying memory usage might be a good candidate for setting the optimum value to "Range 1", meaning that a low memory usage is "good".
 
@@ -18532,6 +18703,7 @@ The <progress> element is similar to &lt;meter&gt; but it is used for progre
 <p align="center">
 <img src="./images/image282.webp?raw=true"
   style="width:10%"
+  title="Picture of a funny progress meme saying Every mistake you make is progress"
   alt="Picture of a funny progress meme saying Every mistake you make is progress." />
 &nbsp;
 <br/>
@@ -18546,6 +18718,7 @@ If no value attribute is set, the progress bar will display an "indeterminate 
 <p align="center">
 <img src="./images/image283.webp?raw=true"
   style="width:50%"
+  title="Indetermined progress bar screenshot"
   alt="Indetermined progress bar screenshot." />
 &nbsp;
 <br/>
@@ -18585,66 +18758,80 @@ The &lt;datalist&gt; form element is useful for linking a list of choices to a
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 284. choice of browsers (341) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="90%">
 <img src="./images/image284.webp?raw=true"
   width="40%"
+  title="Example of datalist for autocompletion"
   alt="Example of datalist for autocompletion." />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 285. datalist browser (341) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="./images/image285.webp?raw=true"
   width="40%"
+  title="Another example of use of datalist"
   alt="Another example of use of datalist." />
 </p>
 &nbsp;
 
-We have already seen this element in action with different &lt;input&gt; elements, such as &lt;input type="color"&gt;, &lt;input type="date"&gt;, or &lt;input type="range"&gt;.
+We have already seen this element in action with different &lt;input&gt; elements, 
+such as &lt;input type="color"&gt;, &lt;input type="date"&gt;, or &lt;input type="range"&gt;.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 227. autre (341) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image227.webp?raw=true"
-   width="15%"
-   alt="Restricted choice of color." />
+  width="15%"
+  title="Restricted choice of color"
+  alt="Restricted choice of color." />
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 286. restrict choices using datalist (341) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image286.webp?raw=true"
-   width="60%"
-   alt="Restrict choices using a datalist element." />
+  width="60%"
+  title="Restrict choices using a datalist element"
+  alt="Restrict choices using a datalist element." />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 287. data list for sliders tick (341) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image287.webp?raw=true"
-   width="65%"
-   alt="Example of datalist for sliders ticks." />
+  width="65%"
+  title="Example of datalist for sliders ticks"
+  alt="Example of datalist for sliders ticks." />
 &nbsp;
 <br/>
 
-It is often "linked" to input fields either for restricting the value set that can be proposed  (i.e., restricted set of colors or possible dates, or for displaying slider ticks, as shown above), but it may also be used in a more general way, for providing client-side auto-completion without the need to use JavaScript.
+It is often "linked" to input fields either for restricting the value set that 
+can be proposed  (i.e., restricted set of colors or possible dates, or for 
+displaying slider ticks, as shown above), but it may also be used in a more 
+general way, for providing client-side auto-completion without the need to 
+use JavaScript.
 
-It works with the new list attribute of input fields introduced by HTML5. The id of the &lt;datalist&gt; must match the value of the list attribute in the input field. A datalist can be shared by several input fields. It suffices that their list attribute matches the id of the datalist element.
+It works with the new list attribute of input fields introduced by HTML5. The 
+id of the &lt;datalist&gt; must match the value of the list attribute in the 
+input field. A datalist can be shared by several input fields. It suffices 
+that their list attribute matches the id of the datalist element.
 
-The input field is related to the datalist that will propose auto-completion based on &lt;datalist&gt; values.
+The input field is related to the datalist that will propose auto-completion 
+based on &lt;datalist&gt; values.
 
 <h4>Typical use for auto-completion</h4>
 
-Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,output), or try it here in your browser (type the name of your favorite browser):
+Here is an <a href="https://jsbin.com/tiqexel/1/edit?html,output">
+online example at JSBin</a>, or try it here in your browser (type the name of your favorite browser):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 288. what is your favorite browser? (342) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image288.webp?raw=true"
-   width="65%"
-   alt="." />
+  width="65%"
+  title="What is your favorite browser?"
+  alt="What is your favorite browser?" />
 &nbsp;
 <br/>
 
 <h4>Source code of this example:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -18664,13 +18851,22 @@ Here is an [online example at JSBin](https://jsbin.com/tiqexel/1/edit?html,outp
 
 </details>
 
-As you can see at <i>lines 2 and 4</i>, the id and list attributes match. The &lt;datalist&gt; element is wrapped around a set of &lt;option&gt; that are available for selection by another form control (in this example the input field from <i>line 2</i>).
+As you can see at <i>lines 2 and 4</i>, the id and list attributes match. The 
+&lt;datalist&gt; element is wrapped around a set of &lt;option&gt; that are 
+available for selection by another form control (in this example the input 
+field from <i>line 2</i>).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-7-1">5.7.1 Introduction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this section of the course, we will look at CSS pseudo classes that are useful for giving instant feedback when the user's input is not valid. We will also look at the new JavaScript API introduced by HTML5 for validating forms and form elements.
+In this section of the course, we will look at CSS pseudo classes that are 
+useful for giving instant feedback when the user's input is not valid. We 
+will also look at the new JavaScript API introduced by HTML5 for validating 
+forms and form elements.
 
-In the following pages, we will first illustrate the concept of form validation with the &lt;input type="email"/&gt; field. It can be generalized to all kind of input types, such as url, number, etc. Some form attributes, such as pattern,  will also affect input field validity!
+In the following pages, we will first illustrate the concept of form validation 
+with the &lt;input type="email"/&gt; field. It can be generalized to all kind of 
+input types, such as url, number, etc. Some form attributes, such as pattern,  
+will also affect input field validity!
 
 Form validation is [supported](https://caniuse.com/#feat=form-validation) by all modern browsers.
 
@@ -18679,9 +18875,16 @@ Form validation is [supported](https://caniuse.com/#feat=form-validation) by a
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Most modern browsers propose default behavior for validating input fields and forms.
 
-The built-in validation system that comes with HTML5 automatically adds a CSS pseudo class to all input fields. Invalid fields (i.e. a badly worded email address in an &lt;input type="email"&gt; input field), will inherit the :invalid pseudo class, valid fields will inherit the :valid pseudo class.
+The built-in validation system that comes with HTML5 automatically adds a CSS 
+pseudo class to all input fields. Invalid fields (i.e. a badly worded email 
+address in an &lt;input type="email"&gt; input field), will inherit the :invalid 
+pseudo class, valid fields will inherit the :valid pseudo class.
 
-A first step to improve your HTML form is to add some CSS rules to your input fields. This adds visual feedback to the validity of input fields values - while the user is typing - such as changing the color of the border of input fields, or green/red icons on the right of the field, as shown in the small picture at the top right of this page.
+A first step to improve your HTML form is to add some CSS rules to your input 
+fields. This adds visual feedback to the validity of input fields values - while 
+the user is typing - such as changing the color of the border of input fields, 
+or green/red icons on the right of the field, as shown in the small picture at 
+the top right of this page.
 
 Also, at the time of submitting the form, some extra messages may be displayed as pop up text bubbles.
 
@@ -18689,8 +18892,9 @@ Also, at the time of submitting the form, some extra messages may be displayed 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 289. popup text bubble examples (343) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image289.webp?raw=true"
-   width="35%"
-   alt="Bubble message example." />
+  width="35%"
+  title="Bubble message example"
+  alt="Bubble message example." />
 &nbsp;
 <br/>
 The default bubble message and visual feedback differ from one implementation to another, but they may be customized, with some limitations that will be explained later.
@@ -18717,13 +18921,14 @@ Submit form
 <!--~~~~~~~~~~~~~~~~~~~~ 288b. css required, valid and invalid rules (343) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image288b.webp?raw=true"
-   width="65%"
-   alt="CSS rules and validation error messages." />
+  width="65%"
+  title="CSS rules and validation error messages"
+  alt="CSS rules and validation error messages." />
 </p>
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -18765,36 +18970,31 @@ Submit form
 
 </details>
 
-Try the online example with different Web browsers, both with and without the CSS rules. See the differences between FireFox/Chrome/Opera in the default visual feedback behavior. Don't worry: all default behavior can be overridden if you provide your own CSS rules.
+Try the online example with different Web browsers, both with and without the 
+CSS rules. See the differences between FireFox/Chrome/Opera in the default 
+visual feedback behavior. Don't worry: all default behavior can be overridden 
+if you provide your own CSS rules.
 
-Best practice:  We recommend that you ALWAYS provide default CSS rules that give visual feedback to the user's input.
+Best practice:  We recommend that you ALWAYS provide default CSS rules that 
+give visual feedback to the user's input.
 
 Example #2: add CSS transitions + an icon/marker to the right of the input fields
 
-Try this [online example at JSBin](https://jsbin.com/zaxije/2/edit) or try it here in your browser. This example adds a small icon that changes depending on the validity of the input field:
-
-<!---
-Top of Form
-
-Type invalid values and see the resultE-mail: 
-Homepage (URL): 
-Phone number: 
-Submit form
-
-Bottom of Form
---->
+Try this [online example at JSBin](https://jsbin.com/zaxije/2/edit) or try 
+it here in your browser. This example adds a small icon that changes depending on the validity of the input field:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 288b. again, validation with css rules (344) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image288b.webp?raw=true"
-   width="65%"
-   alt="CSS rules and validation error messages." />
+  width="65%"
+  title="CSS rules and validation error messages"
+  alt="CSS rules and validation error messages." />
 </p>
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -18815,29 +19015,39 @@ Bottom of Form
 
 </details>
 
-This time, we just added an attribute class="myForm" to our form, in order to avoid interfering with the other examples on this page, and we tweaked the CSS rules a little.
+This time, we just added an attribute class="myForm" to our form, in order to 
+avoid interfering with the other examples on this page, and we tweaked the CSS 
+rules a little.
 
-The rule at <i>line 1</i> says that any time we click on an input field, it will enlarge itself to the right, while the rule at <i>line 4</i> will make it animated.
+The rule at <i>line 1</i> says that any time we click on an input field, it will 
+enlarge itself to the right, while the rule at <i>line 4</i> will make it animated.
 
-The rules at <i>lines 8</i> and <i>11</i> target the input fields with a required attribute. They will change the background by displaying a small green or red icon, corresponding to the valid/invalid status of the input field.
+The rules at <i>lines 8</i> and <i>11</i> target the input fields with a required 
+attribute. They will change the background by displaying a small green or red icon, 
+corresponding to the valid/invalid status of the input field.
 
 <h4>Use the title attribute for specifying a custom message</h4>
 
-You can simply use the input's title attribute to provide a message for pattern-mismatches, and more generally for all validation errors. This solution is really neat and doesn't require JavaScript!
+You can simply use the input's title attribute to provide a message for pattern-
+mismatches, and more generally for all validation errors. This solution is really 
+neat and doesn't require JavaScript!
 
-Try the <a href="https://jsbin.com/locedoy/1/edit?html,output">online example at JSBin</a>, or try it here in your browser (type invalid values and look at the custom messages):
+Try the <a href="https://jsbin.com/locedoy/1/edit?html,output">online example at 
+JSBin</a>, or try it here in your browser (type invalid values and look at the 
+custom messages):
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 289b. validation with pattern matching (345) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image289b.webp?raw=true"
-   width="65%"
-   alt="Pattern matching and validation error messages." />
+  width="65%"
+  title="Pattern matching and validation error messages"
+  alt="Pattern matching and validation error messages." />
 </p>
 
 <h4>Extract from source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -18856,17 +19066,22 @@ Try the <a href="https://jsbin.com/locedoy/1/edit?html,output">online example a
 
 </details>
 
-<i>Beware</i> that browser implementations may differ. Chrome, Opera will display the title attribute value in error message bubbles when the form is submitted, while Safari and FireFox (desktop and mobile) will simply ignore it.
+<i>Beware</i> that browser implementations may differ. Chrome, Opera will display 
+the title attribute value in error message bubbles when the form is submitted, 
+while Safari and FireFox (desktop and mobile) will simply ignore it.
 
-You must also take care of the different languages, otherwise you will get error message bubbles that show some parts in the local language, and the message from the title attribute "as is".
+You must also take care of the different languages, otherwise you will get error 
+message bubbles that show some parts in the local language, and the message from 
+the title attribute "as is".
 
 Google Chrome on a French desktop computer:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 290. chrome on french computer (346) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image290.webp?raw=true"
-   width="65%"
-   alt="Chrome shows native error message localized and the title attribute content as is." />
+  width="65%"
+  title="Chrome shows native error message localized and the title attribute content as is"
+  alt="Chrome shows native error message localized and the title attribute content as is." />
 &nbsp;
 <br/>
 
@@ -18875,12 +19090,15 @@ Same example on FireFox, the title attribute is ignored:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 291. firefox title attribute (346) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image291.webp?raw=true"
-   width="65%"
-   alt="Same example on firefox, the title attribute is ignored." />
-&nbsp;
-<br/>
+  width="65%"
+  title="Same example on firefox, the title attribute is ignored"
+  alt="Same example on firefox, the title attribute is ignored." />
+</p>
+<!-- &nbsp; <br/> -->
 
-<h4>The built-in validation system is an improvement on what existed before HTML5 (i.e., nothing), but additional work is required if you want fully localized, hand-made validation feedback.</h4>
+<h4>The built-in validation system is an improvement on what existed before HTML5 
+(i.e., nothing), but additional work is required if you want fully localized, 
+hand-made validation feedback.</h4>
 
 <h4>We will show solutions in the last section of this week's course.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18891,8 +19109,9 @@ There is a JavaScript API for form validation. This API will let you use your ow
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 290b. js form validation api (346) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image290b.webp?raw=true"
-   width="65%"
-   alt="JavaScript Form Validation API, with message bubbles." />
+  width="65%"
+  title="JavaScript Form Validation API, with message bubbles"
+  alt="JavaScript Form Validation API, with message bubbles." />
 &nbsp;
 <br/>
 
@@ -18902,21 +19121,9 @@ Be careful when you try this example in JS Bin standalone mode (click the small 
 
 Or, you may try it <a href="https://jsbin.com/nalaxeg/1/edit?html,output">here</a> in your browser.
 
-<!--
-Top of Form
-
-Example use of the validation API, enter different passwords and submit Password: ![](./images/image266.wmf)
-
-Repeat password: ![](./images/image218.wmf)
-
-Submit
-
-Bottom of Form
--->
-
 <h4>Extract from source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -18969,11 +19176,9 @@ The validity API proposes a setCustomValidity() method available on input DOM 
 At <i>lines 18</i> and <i>20</i> we added an input event listener: each time a key is typed, the checkPasswords() function is called.
 
 <i>Lines 28</i> and <i>29</i> get the input fields' values, and <i>lines 30-35</i> check if the passwords are the same and set the validity of the field using the validation API's method setCustomValidity(error_message).
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch5-7-4">5.7.4 The validity property of input fields</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 The validity property of input fields helps to get error details when the field is <i>invalid</i>. This property tests the different types of validation error.
 
 Here is how to get the validity property of an input field:
@@ -19003,13 +19208,14 @@ Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JS
 <p align="center">
 <img src="./images/image292.webp?raw=true"
   width="65%"
+  title="JSBin example which shows how to test the different types of validation errors"
   alt="JSBin example which shows how to test the different types of validation errors." />
 &nbsp;
 <br/>
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -19020,34 +19226,34 @@ Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output">an example at JS
 5.  
 6.  <script>
 7.  function validate() {
-8.       var input = document.getElementById('b');
-9.      ** var validityState_object = input.validity;**
+8.    var input = document.getElementById('b');
+9.    var validityState_object = input.validity;
 10.  
-11.      if(validityState_object.valueMissing) {
-12.          input.setCustomValidity('Please set an age (required)');
-13.      } else if (validityState_object.rangeUnderflow) {
-14.          input.setCustomValidity('Your value is too low');
-15.      } else if (validityState_object.rangeOverflow) {
-16.          input.setCustomValidity('Your value is too high');
-17.      } else if (validityState_object.typeMismatch) {
-18.          input.setCustomValidity('Type mismatch');
-19.      } else if (validityState_object.tooLong) {
-20.          input.setCustomValidity('Too long');
-21.      } else if (validityState_object.stepMismatch) {
-22.          input.setCustomValidity('stepMismatch');
-23.      } else if (validityState_object.patternMismatch) {
-24.          input.setCustomValidity('patternMismatch');
-25.      } else {
-26.          input.setCustomValidity('');
-27.      }
-28. }
+11.   if(validityState_object.valueMissing) {
+12.     input.setCustomValidity('Please set an age (required)');
+13.   } else if (validityState_object.rangeUnderflow) {
+14.     input.setCustomValidity('Your value is too low');
+15.   } else if (validityState_object.rangeOverflow) {
+16.     input.setCustomValidity('Your value is too high');
+17.   } else if (validityState_object.typeMismatch) {
+18.     input.setCustomValidity('Type mismatch');
+19.   } else if (validityState_object.tooLong) {
+20.     input.setCustomValidity('Too long');
+21.   } else if (validityState_object.stepMismatch) {
+22.     input.setCustomValidity('stepMismatch');
+23.   } else if (validityState_object.patternMismatch) {
+24.     input.setCustomValidity('patternMismatch');
+25.   } else {
+26.     input.setCustomValidity('');
+27.   }
+28. }  <!-- function validate() -->
 29. </script>
 30. <form class="myForm">
-31. <label for="b">Enter a value between 10 and 20: </label>
+31.   <label for="b">Enter a value between 10 and 20: </label>
 32.  
-33. <input type="number" name="text" id="b" min="10" max="20"
-34.         required **oninput='validate();'**/>
-35. <button>Submit</button>
+33.   <input type="number" name="text" id="b" min="10" max="20"
+34.     required **oninput='validate();'**/>
+35.   <button>Submit</button>
 36. </form>
 37. 
 38. </body>
@@ -19108,7 +19314,7 @@ Try the [online example at JSBin,](https://jsbin.com/povekur/1/edit?html,output
 
 <h4>Complete source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -19261,7 +19467,8 @@ We have already studied some of the HTML5 JavaScript APIs, including:
 
 However, HTML5 also comes with several APIs that are not directly related to HTML elements, namely: the Orientation API; the Geolocation API; most APIs related to client-side persistence; the Web Storage API; the Web Workers API; and some other APIs that are not in the HTML5 specification, but are related to it, such as the GamePad API, the Web Audio API, etc.
 
-This week, we will look at some of the most useful APIs. Others will be covered in the <a href="https://www.edx.org/course/html5-apps-and-games">W3C HTML5 Apps and Games course</a>:
+This week, we will look at some of the most useful APIs. Others will be covered in the 
+<a href="https://www.edx.org/course/html5-apps-and-games">W3C HTML5 Apps and Games course</a>:
 <ul>
   <li><b>The "Web Storage" API, sort of "super cookies", for storing pairs of key/values client side.</b> This API is useful for enabling Web sites to save/restore their state, or for writing <i>serverless</i> applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.</li>
   <li><b>The File API, that enables Web applications to work with local files</b>. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.</li>
@@ -19303,7 +19510,7 @@ localStorage is a simple key-value store, in which the keys and values are stri
 
 <h4>Example:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -19322,7 +19529,9 @@ localStorage is a simple key-value store, in which the keys and values are stri
 
 </details>
 
-<p>This data is located in a store attached to the origin of the page. We created <a href="https://jsbin.com/povuqa/1/edit">a JSBin example in which we included the above code</a>.
+<p>This data is located in a store attached to the origin of the page. We created 
+<a href="https://jsbin.com/povuqa/1/edit">a JSBin example in which we included the 
+above code</a>.
 
 Once opened in your browser, the JavaScript code is executed. With the browser dev. tools, we can check what has been stored in the localStorage for this domain:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19353,9 +19562,12 @@ Objects managed by Web Storage are no longer carried on the network and HTTP, an
 <h4>External resources</h4>
 
 <ul>
-  <li>From W3C's specification: <a href="https://www.w3.org/TR/webstorage/">The W3C Web Storage API recommendation</a></li>
-  <li>An Interesting article on Web.dev: <a href="https://web.dev/storage-for-the-web/">Storage for the Web</a></li>
-  <li>From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">Web Storage API</a></li>
+  <li>From W3C's specification: <a href="https://www.w3.org/TR/webstorage/">
+    The W3C Web Storage API recommendation</a></li>
+  <li>An Interesting article on Web.dev: <a href="https://web.dev/storage-for-the-web/">
+    Storage for the Web</a></li>
+  <li>From MDN's Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">
+    Web Storage API</a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch6-2-2">6.2.2 Example 1</h3>
@@ -19400,7 +19612,7 @@ This time, we want the form content to be restored on page load/reload. We will 
 
 <h4>Source code extract (only addition to the previous example):</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -19505,7 +19717,7 @@ Instead of localStorage.getItem("foo") and localStorage.setItem("foo", "bar")
 
 Then click on the second button to add data to the store, click on the third to remove data. Finally, the last one clears the whole data store.
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 <h4>Source code:</h4>
@@ -19631,7 +19843,7 @@ The function initPreferences is executed when the page is loaded.
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -19727,7 +19939,7 @@ Note that at <i>line 2</i>, we use addEventListener (that is not using the o
 
 We have seen how to save all input fields' content on the fly. Now, let's see how we can restore saved values and update the form. This is done using the function restoreFormContent():
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -19797,11 +20009,19 @@ Note that if all you need is to store session-based data in a manner that is mor
 <h3 name="ch6-2-7">6.2.7 Storing more than strings? Use JSON!</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-Storing strings is all well and good, but it quickly becomes limiting: you may want to store more complex data with at least a modicum of structure.
+Storing strings is all well and good, but it quickly becomes limiting: you may 
+want to store more complex data with at least a modicum of structure.
 
-There are some simple approaches, such as creating your own minimal record format (e.g. a string with fields separated with a given character, using join() on store and split() upon retrieval) or using multiple keys (e.g. post_17_title, post_17_content, post_17_author, etc.). But these are really hacks. Thankfully, there's a better way,  JSON.stringify() and JSON.parse() methods.
+There are some simple approaches, such as creating your own minimal record format 
+(e.g. a string with fields separated with a given character, using join() on store 
+and split() upon retrieval) or using multiple keys (e.g. post_17_title, 
+post_17_content, post_17_author, etc.). But these are really hacks. Thankfully, 
+there's a better way,  JSON.stringify() and JSON.parse() methods.
 
-<a href="https://www.json.org/">JSON</a> provides a great way of encoding and decoding data that is a really good match for JavaScript. You have to be careful not to use circular data structures or non-serializable objects, but in the vast majority of cases, plugging JSON support into your local store is straightforward.
+<a href="https://www.json.org/">JSON</a> provides a great way of encoding and 
+decoding data that is a really good match for JavaScript. You have to be careful 
+not to use circular data structures or non-serializable objects, but in the vast 
+majority of cases, plugging JSON support into your local store is straightforward.
 
 <h4>Typical usage</h4>
 
@@ -19823,7 +20043,7 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -19863,7 +20083,8 @@ Let's try a simple toy example (<a href="https://jsbin.com/ciricis/2/edit?html,c
 
 <h4>Example #1: showing how we can save a form's content in JSON</h4>
 
-<a href="https://jsbin.com/nejewiw/2/edit?html,js,console,output">Online example on JSBin that saves in localStorage an array of contacts in JSON</a>
+<a href="https://jsbin.com/nejewiw/2/edit?html,js,console,output">
+Online example on JSBin that saves in localStorage an array of contacts in JSON</a>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 305. save local storage in json (368) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20128,7 +20349,7 @@ some canvas here, or image elements and so on.
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -20211,7 +20432,7 @@ button and choose one file):
 
 <h4>Complete source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -20221,24 +20442,24 @@ button and choose one file):
 <meta charset=utf-8 />
 <title>Reading file metadata</title>
 <script>
-     function displayFirstSelectedFileMetadata() {
-        var selectedFile = document.getElementById('input').files[0];
-        document.querySelector("#singleName").innerHTML = selectedFile.name;
-        document.querySelector("#singleSize").innerHTML = selectedFile.size + " bytes";
-        document.querySelector("#singleType").innerHTML = selectedFile.type;
-        document.querySelector("#singleDate").innerHTML = selectedFile.lastModifiedDate;
-}
+  function displayFirstSelectedFileMetadata() {
+    var selectedFile = document.getElementById('input').files[0];
+    document.querySelector("#singleName").innerHTML = selectedFile.name;
+    document.querySelector("#singleSize").innerHTML = selectedFile.size + " bytes";
+    document.querySelector("#singleType").innerHTML = selectedFile.type;
+    document.querySelector("#singleDate").innerHTML = selectedFile.lastModifiedDate;
+  }
 </script>
 </head>
 <body>
-   Select one or more files: <input type="file" id="input"
+  Select one or more files: <input type="file" id="input"
                                     onchange="displayFirstSelectedFileMetadata();"/>
 <p>
 <ul>
-    <li>File name: <span id="singleName"></span></li>
-    <li>File size: <span id="singleSize"></span></li>
-    <li>File type: <span id="singleType"></span></li>
-    <li>File last modification date: <span id="singleDate"></span></li>
+  <li>File name: <span id="singleName"></span></li>
+  <li>File size: <span id="singleSize"></span></li>
+  <li>File type: <span id="singleType"></span></li>
+  <li>File last modification date: <span id="singleDate"></span></li>
 </ul>
 </body>
 </html>
@@ -20248,9 +20469,14 @@ button and choose one file):
 
 <h4>Example #2: display metadata of multiple files, use a filter on the file type</h4>
 
-<p>This example is a bit more complicated, as it will display details about all files selected (not only the first) and allows only images to be selected, using the accept attribute of the input field: &lt;input type="file" accept="image/*".../&gt;.</p>
+<p>This example is a bit more complicated, as it will display details about all 
+files selected (not only the first) and allows only images to be selected, using 
+the accept attribute of the input field: &lt;input type="file" accept="image/*".../&gt;.</p>
 
-<p><a href="https://jsbin.com/deboja/edit?html,output">Example on JSBin</a>, or try it in your browser: click on the button, and select multiple image files. Notice that in the file selector, files that are not images will be greyed and non selectable.</p>
+<p><a href="https://jsbin.com/deboja/edit?html,output">Example on JSBin</a>, or 
+try it in your browser: click on the button, and select multiple image files. 
+Notice that in the file selector, files that are not images will be greyed and 
+non selectable.</p>
 
 <h4>Select several images:</h4>
 
@@ -20260,7 +20486,7 @@ button and choose one file):
 
 <p>Select several images: &lt;input type="file" accept="image/*" multiple onchange="filesProcess(this.files)" name="selection"/&gt;</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -20287,10 +20513,22 @@ button and choose one file):
 <h4>Explanations:</h4>
 
 <ul>
-  <li><i>Line 1:</i> we used the multiple attribute to allow the selection of multiple files in the file chooser (using shift or control keys). The accept="image/"  attribute is a filter that restricts selection to images only. Finally, the onchange listener will call the filesProcess(...) function, passing as parameter the list of selected files for the current element (this.files).</li><br/>
-  <li><i>Lines 7 and 12:</i> we prepare the HTML code for building a &lt;table&gt; with the results.</li><br/>
-  <li><i>Line 10:</i> this for loop builds all the rows that compose the table, adding HTML code to the selection string variable. At the end of the loop, this variable contains all the HTML code that corresponds to the table of results.</li><br/>
-  <li><i>Line 14:</i> the table is added to the page. We use the innerHTML attribute of the DOM element corresponding to the &lt;div id="result"&gt; in order to insert the table as its child in the DOM tree. As such, the table appears on the page dynamically.</li><br/>
+  <li><i>Line 1:</i> we used the multiple attribute to allow the selection of 
+    multiple files in the file chooser (using shift or control keys). The 
+	accept="image/"  attribute is a filter that restricts selection to images 
+	only. Finally, the onchange listener will call the filesProcess(...) function, 
+	passing as parameter the list of selected files for the current element 
+	(this.files).</li><br/>
+  <li><i>Lines 7 and 12:</i> we prepare the HTML code for building a &lt;table&gt; 
+    with the results.</li><br/>
+  <li><i>Line 10:</i> this for loop builds all the rows that compose the table, 
+    adding HTML code to the selection string variable. At the end of the loop, 
+	this variable contains all the HTML code that corresponds to the table of 
+	results.</li><br/>
+  <li><i>Line 14:</i> the table is added to the page. We use the innerHTML 
+    attribute of the DOM element corresponding to the &lt;div id="result"&gt; 
+	in order to insert the table as its child in the DOM tree. As such, the 
+	table appears on the page dynamically.</li><br/>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch6-3-4">6.3.4 Blob and File</h3>
@@ -20309,7 +20547,9 @@ The <a href="https://www.w3.org/TR/FileAPI/">HTML5 File API specification</a> 
   for reading file content (we will see how to use it in the next section of the course).</li>
 </ul>
 
-<p>We will not use all of these interfaces, but let's explain the difference between Blob and File, as most of the methods exposed by the FileReader interface take indiscriminately a Blob or a File as parameter.</p>
+<p>We will not use all of these interfaces, but let's explain the difference 
+between Blob and File, as most of the methods exposed by the FileReader interface 
+take indiscriminately a Blob or a File as parameter.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 312. the blob movie poster (377) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -20321,19 +20561,35 @@ The <a href="https://www.w3.org/TR/FileAPI/">HTML5 File API specification</a> 
 
 <h4>The Blob object</h4>
 
-<p><b>An object of type Blob is a structure that represents binary data available as read-only.</b> Most of the time, you will only encounter these objects when you handle files.</p>
+<p><b>An object of type Blob is a structure that represents binary data available 
+as read-only.</b> Most of the time, you will only encounter these objects when 
+you handle files.</p>
 
-<p>Blob objects have two properties, namely:size and type, which respectively retrieve the size in bytes of the data handled by the Blob and their MIME type.</p>
+<p>Blob objects have two properties, namely:size and type, which respectively 
+retrieve the size in bytes of the data handled by the Blob and their MIME type.</p>
 
 <h4>The File object</h4>
 
-<p><b>File objects are useful for manipulating... files!</b> They inherit the properties and methods of Blob objects, and have two additional properties that are name, for the file name, and lastModifiedDate to get the date of the last modification of the file (in the form of a JavaScript Date object, obviously).</p>
+<p><b>File objects are useful for manipulating... files!</b> They inherit the 
+properties and methods of Blob objects, and have two additional properties that 
+are name, for the file name, and lastModifiedDate to get the date of the last 
+modification of the file (in the form of a JavaScript Date object, obviously).</p>
 
-<p>Most of the time, we will work with File objects. Blob objects will have real interest when you download binary files using Ajax (see example below).</p>
+<p>Most of the time, we will work with File objects. Blob objects will have real 
+interest when you download binary files using Ajax (see example below).</p>
 
 <h4>[Advanced]</h4>
 
-<p>If you are interested in seeing how Blob objects can be used, [here is an example "as is" that shows how to download an image using Xhr2](https://jsbin.com/jefitop/1/edit?html,output) (Xml Http Request version 2). The examples uses a <progress> element to show the download progress, and uses xhr.responseType = 'blob'; to indicate that the file we are going to download is a binary file (a blob). Try the example, then comment the line with responseType='blob'. In this case, you will notice that the image file is not properly decoded by the browser and is not displayed in the page. We explain Xhr2 in the [W3C HTML5 Apps and Games](https://www.edx.org/course/html5-apps-and-games) course.</p>
+<p>If you are interested in seeing how Blob objects can be used, 
+<a href="https://jsbin.com/jefitop/1/edit?html,output">here is an example "as is" 
+that shows how to download an image using Xhr2</a> (Xml Http Request version 2). 
+The examples uses a <progress> element to show the download progress, and uses 
+xhr.responseType = 'blob'; to indicate that the file we are going to download is 
+a binary file (a blob). Try the example, then comment the line with 
+responseType='blob'. In this case, you will notice that the image file is not 
+properly decoded by the browser and is not displayed in the page. We explain 
+Xhr2 in the <a href="https://www.edx.org/course/html5-apps-and-games">
+W3C HTML5 Apps and Games</a> course.</p>
 
 <h3>6.3.5 Reading file content</h3>
 
@@ -20343,33 +20599,41 @@ The <a href="https://www.w3.org/TR/FileAPI/">HTML5 File API specification</a> 
 
 <h4>Step #1: create a FileReader object</h4>
 
-<p>The file API proposes several methods for reading file content, each taken from the FileReader interface. Here is how you create a FileReader object:</p>
+<p>The file API proposes several methods for reading file content, each taken 
+from the FileReader interface. Here is how you create a FileReader object:</p>
 
 ```
 1.  var reader = new FileReader();
 ```
 
-<h4>Steps #2 and #3: first call a method of the FileReader object for reading the file content, then get the file content in an onload callback</h4>
+<h4>Steps #2 and #3: first call a method of the FileReader object for reading 
+the file content, then get the file content in an onload callback</h4>
 
-<p>There are three different methods available for reading a file's content: readAsText, readAsArrayBuffer for binary data and also as readAsDataURL (the content will be a URL you will use to set the src field of an <img src=...>, &lt;audio&gt;, &lt;video&gt;, and also with all existing methods/properties that accept a URL).</p>
+<p>There are three different methods available for reading a file's content: 
+readAsText, readAsArrayBuffer for binary data and also as readAsDataURL (the 
+content will be a URL you will use to set the src field of an <img src=...>, 
+&lt;audio&gt;, &lt;video&gt;, and also with all existing methods/properties 
+that accept a URL).</p>
 
-<p>All these methods take as a unique parameter a File object (for example, a file chosen by a user after clicking on a &lt;input type=file&gt; input field). Below, we use, as an example, the readAsText method:</p>
+<p>All these methods take as a unique parameter a File object (for example, 
+a file chosen by a user after clicking on a &lt;input type=file&gt; input 
+field). Below, we use, as an example, the readAsText method:</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
 function readFileContent(f) {
-   // Executed last: called only when the file content is loaded, e.target.result is
-   // The content
-   reader.onload = function(e) {
-       var content = e.target.result;
-       // do something with the file content
-       console.log("File " + f.name + " content is: " + content);
-   };
-   // Executed first: start reading the file asynchronously, will call the
-   // reader.onload callback only when the file is read entirely
-   reader.readAsText(f);
+  // Executed last: called only when the file content is loaded, e.target.result is
+  // The content
+  reader.onload = function(e) {
+    var content = e.target.result;
+    // do something with the file content
+    console.log("File " + f.name + " content is: " + content);
+  };
+  // Executed first: start reading the file asynchronously, will call the
+  // reader.onload callback only when the file is read entirely
+  reader.readAsText(f);
 }
 ```
 
@@ -20398,6 +20662,7 @@ text area. This example is detailed further in the course. Click and select a te
 <p align="center">
 <img src="./images/image313.webp?raw=true"
   style="width:45%"
+  title="Select a text file"
   alt="Select a text file." />
 &nbsp;
 </p>
@@ -20418,45 +20683,45 @@ text area. This example is detailed further in the course. Click and select a te
 <p align="center">
 <img src="./images/image314.webp?raw=true"
   style="width:45%"
+  title="Read a single file's content"
   alt="Read a single file's content." />
 &nbsp;
 </p>
 
 <h4>Complete source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
 1.  <!DOCTYPE html>
 2.  <html lang="en">
 3.  <head>
-4.  <meta charset="utf-8">
-5.  <title>Example of use of FileReader with a text file</title>
+4.    <meta charset="utf-8">
+5.    <title>Example of use of FileReader with a text file</title>
 6.  </head>
 7.  <body>
-8.  <label for="files">Choose a text file:</label><input type="file" id="file"
+8.    <label for="files">Choose a text file:</label><input type="file" id="file"
 9.                             onchange="readFileContent(this.files)"/><br/>
-10. <p>
-11. <textarea rows=15 cols=50 id="fileContent"></textarea>
+10. <textarea rows=15 cols=50 id="fileContent"></textarea>
 12. 
 13. <script>
 14. function readFileContent(files) {
-15.      console.log("In readFileContent");
-16.      var reader = new FileReader();
+15.   console.log("In readFileContent");
+16.   var reader = new FileReader();
 17. 
-18.     // Executed last: called when the file content is loaded, e.target.result is
-19.     // The content
-20.     reader.onload = function(e) {
-21.         // display content in the textarea with id="fileContent"
-22.         document.getElementById("fileContent").value=** e.target.result;**
-23.     };
+18.   // Executed last: called when the file content is loaded, e.target.result is
+19.   // The content
+20.   reader.onload = function(e) {
+21.     // display content in the textarea with id="fileContent"
+22.     document.getElementById("fileContent").value=** e.target.result;**
+23.   };
 24. 
-25.     console.log("Reading file:" + files[0].name);
+25.   console.log("Reading file:" + files[0].name);
 26. 
-27.     // Executed first: start reading the file asynchronously , will call the onload
-28.     // callback when the file is read
-29.     reader.readAsText(files[0]);
+27.   // Executed first: start reading the file asynchronously , will call the onload
+28.   // callback when the file is read
+29.   reader.readAsText(files[0]);
 30. }
 31. </script>
 32. </body>
@@ -20476,13 +20741,14 @@ This time, please select multiple text files (using shift for multiple selection
 <p align="center">
 <img src="./images/image315.webp?raw=true"
   style="width:40%"
+  title="Choose multiple text files"
   alt="Choose multiple text files." />
 &nbsp;
 </p>
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -20586,22 +20852,23 @@ in its pages.</p>
 <p align="center">
 <img src="./images/image316.webp?raw=true"
   style="width:55%"
+  title="Choose binary audio, pass it to initSound, decode and play in memory on WebAudio"
   alt="Choose binary audio, pass it to initSound, decode and play in memory on WebAudio." />
 &nbsp;
 </p>
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
-1. // User selects file. Read it as an ArrayBuffer and pass to the API.
-2. var fileInput = document.querySelector('input[type="file"]');
-3. fileInput.addEventListener('change', function(e) {
+1.  // User selects file. Read it as an ArrayBuffer and pass to the API.
+2.  var fileInput = document.querySelector('input[type="file"]');
+3.  fileInput.addEventListener('change', function(e) {
 4.    var reader = new FileReader();
 5.    reader.onload = function(e) {
-6.       initSound(e.target.result);
+6.      initSound(e.target.result);
 7.    };
 8.    // THIS IS THE INTERESTING PART!
 9.    reader.readAsArrayBuffer(this.files[0]);
@@ -20684,13 +20951,15 @@ requests and makes the Web page load faster.</p>
 <p>You will find lots of Web sites and tools for generating dataURL from files, 
 such as <a href="https://ezgif.com/image-to-datauri">Image to Data URI converter</a> (screenshot below):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!------------ 319. Online service that converts uploaded images to data uris... ~~~~~~~~~~~~~~~-->
-<!-------------- we see an image and its ascii encoded data uri version (384) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~ 319. Online service that converts uploaded images to data uris... ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ we see an image and its ascii encoded data uri version (384) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image319.webp?raw=true"
   style="width:55%"
+  title="Online service that converts uploaded images to data uris...we see an image and its 
+    ascii encoded data uri version"
   alt="Online service that converts uploaded images to data uris...we see an image and its 
-  ascii encoded data uri version." />
+    ascii encoded data uri version." />
 </p>
 
 <p>With the above example, you can copy and paste the characters on the left and use them 
@@ -20701,11 +20970,12 @@ used with ./images files (images, audio, video).</p>
 
 <p>Example of HTML5 logo embedded in a document without any real image, just a dataURL and CSS:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~ 317. screenshot of jsbin ex. shows the html5 logo insterted before a div using css (385) ~-->
+<!--~ 317. screenshot of jsbin ex. shows the html5 logo inserted before a div using css (385) ~~-->
 <p align="center">
 <img src="./images/image317.webp?raw=true"
   style="width:65%"
-  alt="Data url in address bar shows a red circle." />
+  title="Data URL in address bar shows a red circle"
+  alt="Data URL in address bar shows a red circle." />
 &nbsp;
 </p>
 
@@ -20733,7 +21003,7 @@ in your browser:</p>
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -20794,7 +21064,7 @@ in your browser:</p>
 <img src="./images/image322.webp?raw=true"
   style="width:55%"
   title="Example #2 read image as data URL and draw inside a canvas"
-  alt="Example #2 read image as dataURL and draw inside a canvas." />
+  alt="Example #2 read image as data URL and draw inside a canvas." />
 &nbsp;
 <br/>
 
@@ -20802,37 +21072,37 @@ in your browser:</p>
 
 <h4>Source code extract:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
 function drawImage(imageFile) {
-   var reader = new FileReader();
+  var reader = new FileReader();
  
-   //capture the file information.
-   reader.onload = function(e) {
-      // For drawing an image on a canvas we
-      // need an image object
-      var img = new Image();
-      // Even if the file has been read, decoding
-      // the dataURL format may take some time
-      // so we need to use the regular way of
-      // working with images: onload callback    
-      // that will be called after setting the src attribute
-      img.onload = function(e) {
-         // draw the image!
-         ctx.drawImage(img, 0, 0, 400, 400);
-      }
-      // e.target.result is the dataURL, so we set the
-      // src if the image with it. This will call
-      // asynchonously the onload callback
-      img.src= e.target.result;
+  // Capture the file information.
+  reader.onload = function(e) {
+    // For drawing an image on a canvas we
+    // need an image object
+     var img = new Image();
+     // Even if the file has been read, decoding
+     // the dataURL format may take some time
+     // so we need to use the regular way of
+     // working with images: onload callback    
+     // that will be called after setting the src attribute
+     img.onload = function(e) {
+       // draw the image!
+       ctx.drawImage(img, 0, 0, 400, 400);
+     }
+     // e.target.result is the dataURL, so we set the
+     // src if the image with it. This will call
+     // asynchonously the onload callback
+     img.src= e.target.result;
   };
   // Read in the image file as a data URL.
   reader.readAsDataURL(imageFile);
 }
 function readFileAndDraw(files) {
-    drawImage(files[0]);
+  drawImage(files[0]);
 }
 ```
 
@@ -20868,7 +21138,7 @@ function readFileAndDraw(files) {
 
 <h4>Typical use</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -20896,7 +21166,7 @@ function onError(err) {
 
 <h4>Source code of this typical example:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -20988,7 +21258,7 @@ function onError(err) {
 
 <h4>Source code of the example:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -21084,7 +21354,7 @@ following options:</p>
 
 <h4>Source code:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -21145,7 +21415,7 @@ we think having such a basic example might be useful.</p>
 
 <h4>JavaScript</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -21187,7 +21457,7 @@ function error() {
 
 <h4>CSS</h4>
 
-<details open>
+<details>
   <summary>Click to Toggle!</summary>
 
 ```
@@ -21213,7 +21483,7 @@ display: inline-block;
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -21237,7 +21507,7 @@ display: inline-block;
 
 <h4>HTML part:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -21264,7 +21534,7 @@ display: inline-block;
 
 <h4>JavaScript part:</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -21345,7 +21615,7 @@ Google reverse geocoding example (screenshot only):</p>
 
 <p>Source code of this example (in order to run it, you need a Google API key, used at <i>line 6</i>).</p>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -21467,7 +21737,7 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -21553,7 +21823,7 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```
@@ -21657,7 +21927,7 @@ run in this page):</p>
 
 <h4>HTML</h4>
 
-<details open>
+<details>
  <summary>Click to Toggle!</summary>
 
 ```html
