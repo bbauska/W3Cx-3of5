@@ -211,7 +211,7 @@ Tutorials can be found on the Web such as <a href="https://code.tutsplus.com/tut
 <img src="./images/image003b.webp?raw=true"
   alt="CodePen logo."
   title="CodePen logo"
-  style="width:15%">
+  style="width:15%" />
 &nbsp;
 <br/>
 
@@ -231,18 +231,35 @@ There are many other handy tools such as <a href="https://jsfiddle.net/" targe
 
 <h4>Browser Compatibility:</h4>
 <p>
-The term browser compatibility refers to the ability of a given Web site to appear fully functional on the browsers available in the market.
+The term browser compatibility refers to the ability of a given Web site to 
+appear fully functional on the browsers available in the market.
 
-The most powerful aspect of the Web is what makes it so challenging to build for: its universality. When you create a Web site, you're writing code that needs to be understood by many different browsers on different devices and operating systems!
+The most powerful aspect of the Web is what makes it so challenging to build 
+for: its universality. When you create a Web site, you're writing code that 
+needs to be understood by many different browsers on different devices and operating systems!
 
-To make the Web evolve in a sane and sustainable way for both users and developers, browser vendors work together to standardize new features, whether it's a new <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML element</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index">CSS property</a>, or <a href="https://developer.mozilla.org/en-US/docs/Web/API">JavaScript API</a>. But different vendors have different priorities, resources, and release cycles --- so it's very unlikely that a new feature will land on all the major browsers at once. As a Web developer, this is something you must consider if you're relying on a feature to build your site.
+To make the Web evolve in a sane and sustainable way for both users and 
+developers, browser vendors work together to standardize new features, 
+whether it's a new <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">
+HTML element</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index">
+CSS property</a>, or <a href="https://developer.mozilla.org/en-US/docs/Web/API">JavaScript API</a>. 
+But different vendors have different priorities, resources, and release cycles --- 
+so it's very unlikely that a new feature will land on all the major browsers at 
+once. As a Web developer, this is something you must consider if you're relying 
+on a feature to build your site.
 
-We are then providing references to the browser support of HTML5 features presented in this course using 2 resources: <a href="https://caniuse.com/" target="_blank">Can I Use</a> and <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network (MDN) Web Docs</a>.</p>
+We are then providing references to the browser support of HTML5 features presented 
+in this course using 2 resources: <a href="https://caniuse.com/" target="_blank">
+Can I Use</a> and <a href="https://developer.mozilla.org/en-US/">Mozilla Developer 
+Network (MDN) Web Docs</a>.</p>
 
 <h4>Can I use</h4>
 
-<a href="https://caniuse.com/">Can I Use</a> provides up-to-date tables for support of front-end Web technologies on desktop and mobile Web browsers. Below is a snapshot of what information is given by CanIUse when searching for "CSS3 colors".</a>
-<p>Example of a <a href="https://caniuse.com/">CanIUse browser</a> support table (using CSS3 colors).</p>
+<a href="https://caniuse.com/">Can I Use</a> provides up-to-date tables for support 
+of front-end Web technologies on desktop and mobile Web browsers. Below is a snapshot 
+of what information is given by CanIUse when searching for "CSS3 colors".</a>
+<p>Example of a <a href="https://caniuse.com/">CanIUse browser</a> support table 
+(using CSS3 colors).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. caniuse example (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -260,7 +277,7 @@ We are then providing references to the browser support of HTML5 features presen
 <img src="./images/image005.webp?raw=true"
   alt="Logo of MDN Web Docs."
   title="Logo of MDN Web Docs"
-  style="width:35%">
+  style="width:35%" />
 &nbsp;
 <br/>
 <p>
@@ -382,9 +399,8 @@ W3C's primary activity is to develop protocols and guidelines that ensure long-t
 <img src="./images/image010.webp?raw=true"
   alt="Tim Berners-Lee at his desk in CERN, Switzerland, 1994."
   title="Tim Berners-Lee at his desk in CERN, Switzerland, 1994"
-  style="width:65%" />
+  style="width:45%" />
 </p>
-<br/>
 
 <h6 align="center">Tim Berners-Lee at his desk in CERN, 1994</h6>
 <p>
@@ -970,9 +986,10 @@ element together with a &lt;figcaption&gt; element.</p>
 <img src="./images/image018.webp?raw=true"
   alt="Image of figure and figure caption that embed an image."
   title="Image of figure and figure caption that embed an image"
-  style="width:55%">
+  style="width:55%" />
 &nbsp;
 <br/>
+
 <p>Here is the CSS for the &lt;figcaption&gt; element we have used in the example (we 
 did not apply any style to the &lt;figure&gt; element):</p>
 
@@ -1378,7 +1395,7 @@ Let's clarify this by looking at some example code:</p>
 <img src="./images/image026.webp?raw=true"
   alt="Heading content example."
   title="Heading content example"
-  style="width:55%">
+  style="width:55%" />
 &nbsp;
 <br/>
 
@@ -1460,7 +1477,7 @@ target="_blank" rel="noopener noreferrer">Outline sidebar for Firefox</a>.</p>
 <img src="./images/image027.webp?raw=true"
   alt="Outline of last example."
   title="Outline of last example"
-  style="width:55%">
+  style="width:55%" />
 &nbsp;
 <br/>
 
@@ -1523,7 +1540,7 @@ appear, one for the H1, one for the H2:</p>
 <img src="./images/image028.webp?raw=true"
   alt="Outline of previous example."
   title="Outline of previous example"
-  style="width:55%">
+  style="width:55%" />
 &nbsp;
 <br/>
 
