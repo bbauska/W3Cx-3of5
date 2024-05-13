@@ -1245,7 +1245,7 @@ This chart from the <a href="https://html5doctor.com/" target="_blank" rel="no
 site&lt;/a&gt; may help you decide whether or not to use a &lt;div&gt;:</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~ 24. html5 doctor web site. whether or not to use a <dev> (24) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ 24. html5 doctor web site. whether or not to use a 'dev' (24) ~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image024.webp?raw=true"
   style="width:100%"
@@ -1254,13 +1254,17 @@ site&lt;/a&gt; may help you decide whether or not to use a &lt;div&gt;:</p>
 </p>
 
 <h3 name="ch1-3-5">1.3.5 Headings and Structural Elements</h3>
-<p>
-We will now present some best practices for starting to use &lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;, in particular concerning the use of headings (h1, h2, h3, h4, h5 and h6).
 
-Use &lt;h1&gt;...&lt;h6&gt; for the headings
+<p>We will now present some best practices for starting to use &lt;section&gt;, 
+&lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;, in particular concerning the use 
+of headings (h1, h2, h3, h4, h5 and h6).<br>
 
-Since the very beginning, HTML has had heading elements: &lt;h1&gt;...&lt;h6&gt;. These elements are used to display headings with different sizes by default, when no CSS is used.  The following example shows 6 sentences that are surrounded by &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; and &lt;h6&gt;:
-</p>
+Use &lt;h1&gt;...&lt;h6&gt; for the headings<br>
+
+Since the very beginning, HTML has had heading elements: &lt;h1&gt;...&lt;h6&gt;. 
+These elements are used to display headings with different sizes by default, when 
+no CSS is used.  The following example shows 6 sentences that are surrounded by 
+&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; and &lt;h6&gt;:</p>
 
 <h1>This is a H1 heading</h1>
 
@@ -1273,8 +1277,10 @@ Since the very beginning, HTML has had heading elements: &lt;h1&gt;...&lt;h6&gt
 <h5>This is a H5 heading</h5>
 
 <h6>This is a H6 heading</h6>
-<p>
-These headings define a hierarchy, as shown by the default sizes given by the browser. This hierarchy can also be used to define <i>an outline of the document</i>. To illustrate this, we have used a browser extension. 
+
+<p>These headings define a hierarchy, as shown by the default sizes given by the 
+browser. This hierarchy can also be used to define <i>an outline of the document</i>. 
+To illustrate this, we have used a browser extension.<br>
 
 Here is the result for the previous example:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1286,17 +1292,25 @@ Here is the result for the previous example:</p>
   alt="Outliner in action from the previous example." />
 </p>
 
-<p>In the above outline, note that we have only used H1... H6 elements, without any new HTML5 structural elements such as &lt;section&gt; or &lt;article&gt;.
+<p>In the above outline, note that we have only used H1... H6 elements, without 
+any new HTML5 structural elements such as &lt;section&gt; or &lt;article&gt;.
 
-Here is a list of browser extensions you can try, for visualizing the outline of a document: <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" target="_blank" rel="noopener noreferrer">table-of-contents-crx</a> (Chrome extension) or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" target="_blank" rel="noopener noreferrer">this Firefox extension</a>.
+Here is a list of browser extensions you can try, for visualizing the outline 
+of a document: 
+<a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" 
+target="_blank" rel="noopener noreferrer">table-of-contents-crx</a> (Chrome extension) or 
+<a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" 
+target="_blank" rel="noopener noreferrer">this Firefox extension</a>.
 
 <h4>Using headings and new sectioning elements (section, article, aside, nav)</h4>
 
 <h4>Definition of heading content and sectioning content</h4>
 <p>
-The &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt; elements are called <b>"sectioning elements"</b>. They cut a document into slices we call <b>"sections"</b>.
+The &lt;section&gt;, &lt;article&gt;, &lt;nav&gt; and &lt;aside&gt; elements 
+are called <b>"sectioning elements"</b>. They cut a document into slices we call <b>"sections"</b>.
 
-The HTML5 specification says that "each sectioning element potentially has a heading and has also an outline associated".
+The HTML5 specification says that "each sectioning element potentially has a 
+heading and has also an outline associated".
 
 &lt;h1&gt;...&lt;h6&gt; are called <b>headings</b>, and define the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself). This means that:
 </p>
@@ -1371,14 +1385,21 @@ Let's clarify this by looking at some example code:</p>
 In the above example, please note two things:
 <ol type ="1">
   <li>The outline shows an "Untitled body" at the root of the hierarchy,</li>
-  <li>The default size for the H1 and H2 is the same (!). Indeed, when we start a &lt;h1&gt. inside a &lt;section&gt; the browser lowers its default size automatically, as if a new hierarchy level has been added artificially. We will discuss this further in the following sections, as we introduce some best practices.</li>
+  <li>The default size for the H1 and H2 is the same (!). Indeed, when we start 
+    a &lt;h1&gt. inside a &lt;section&gt; the browser lowers its default size 
+	automatically, as if a new hierarchy level has been added artificially. We 
+	will discuss this further in the following sections, as we introduce some 
+	best practices.</li>
 </ol>
 
 <h4>Best Practices when using Sectioning Elements</h4>
 
 <h4>Best practice #1: always add a heading to explicit sectioning content</h4>
 
-<p>It's always better - mainly for accessibility reasons - to include a heading (a &lt;h1&gt;, &lt;h2&gt;...&lt;h6&gt;) in each sectioning element (&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also after the &lt;body&gt; element (called a "sectioning root").</p>
+<p>It's always better - mainly for accessibility reasons - to include a heading 
+(a &lt;h1&gt;, &lt;h2&gt;...&lt;h6&gt;) in each sectioning element (&lt;section&gt;, 
+&lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also after the &lt;body&gt; element 
+(called a "sectioning root").</p>
 
 <h4>Here are some examples:</h4>
 
@@ -1417,9 +1438,20 @@ In the above example, please note two things:
 ```
 
 <p>
-The last example is bad for accessibility reasons. A screen reader that vocalizes the page will just say "Entering section", while in the previous two good examples it would say "entering section with heading Blog Posts of April 2020". You can also check if your headings and sectioning elements are ok by using a browser extension that displays the outline of the document (just search for "html5 outliner" in your browser's extension search engine).
+The last example is bad for accessibility reasons. A screen reader that vocalizes 
+the page will just say "Entering section", while in the previous two good examples 
+it would say "entering section with heading Blog Posts of April 2020". You can also 
+check if your headings and sectioning elements are ok by using a browser extension 
+that displays the outline of the document (just search for "html5 outliner" in your 
+browser's extension search engine).
 
-<b>UPDATE :</b> For the course screenshots, we used the Google Chrome HTML5 outliner extension that is no more available (it has been removed by its developer), but you can use any other equivalent extension such as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" target="_blank" rel="noopener noreferrer">table-of-contents-crx</a> for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" target="_blank" rel="noopener noreferrer">Outline sidebar for Firefox</a>.</p>
+<b>UPDATE :</b> For the course screenshots, we used the Google Chrome HTML5 outliner 
+extension that is no more available (it has been removed by its developer), but you 
+can use any other equivalent extension such as 
+<a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" 
+target="_blank" rel="noopener noreferrer">table-of-contents-crx</a> 
+for Chrome or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" 
+target="_blank" rel="noopener noreferrer">Outline sidebar for Firefox</a>.</p>
 
 <h4>The outline of the last example looks like this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1465,10 +1497,13 @@ The sectioning root (&lt;body&gt;) and the sectioning elements (&lt;section&gt;�
 
 <h4>More about the &lt;header&gt; element</h4>
 
-<h4>The &lt;header&gt; element is just a container. It is not taken into account for defining new sections of a document nor does it affect the hierarchy levels.</h4>
-<p>
-You can use heading elements &lt;h1&gt;...&lt;h6&gt; in a &lt;header&gt; but be careful if you use more than one, as the rules explained in the previous part of the course will apply and may generate implicit "sections" in the header.
-</p>
+<h4>The &lt;header&gt; element is just a container. It is not taken into account 
+for defining new sections of a document nor does it affect the hierarchy levels.</h4>
+
+<p>You can use heading elements &lt;h1&gt;...&lt;h6&gt; in a &lt;header&gt; but be 
+careful if you use more than one, as the rules explained in the previous part of 
+the course will apply and may generate implicit "sections" in the header.</p>
+
 <h4>This example has two headings in the &lt;header&gt;:</h4>
 
 ```
@@ -1480,7 +1515,8 @@ You can use heading elements &lt;h1&gt;...&lt;h6&gt; in a &lt;header&gt; but
 </section>
 ```
 
-<p>Here is the resulting table of contents, notice the two subsections that appear, one for the H1, one for the H2:</p>
+<p>Here is the resulting table of contents, notice the two subsections that 
+appear, one for the H1, one for the H2:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 28. outline of previous example (28) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1490,11 +1526,13 @@ You can use heading elements &lt;h1&gt;...&lt;h6&gt; in a &lt;header&gt; but
   style="width:55%">
 &nbsp;
 <br/>
-<p>
-Indeed, HTML does not have a dedicated mechanism for marking up subheadings, alternative titles or taglines. 
 
-If you do not want the subtitles to be included in the table of contents, just use standard markup, for example &lt;p&gt; elements, as shown in the next example. Of course, CSS rules can be applied to change colors, sizes, etc.
-</p>
+<p>Indeed, HTML does not have a dedicated mechanism for marking up subheadings, 
+alternative titles or taglines.<br/>
+
+If you do not want the subtitles to be included in the table of contents, just use 
+standard markup, for example &lt;p&gt; elements, as shown in the next example. Of 
+course, CSS rules can be applied to change colors, sizes, etc.</p>
 
 ```
 <header>
@@ -1505,10 +1543,11 @@ If you do not want the subtitles to be included in the table of contents, just�
 ```
 
 <p>
-<b>Best practice #2</b>: try not to rely on implicit sectioning, use &lt;section&gt;, &lt;article&gt;, etc. instead of just &lt;h1&gt;...&lr;h6&gt;.
+<b>Best practice #2</b>: try not to rely on implicit sectioning, use &lt;section&gt;, 
+&lt;article&gt;, etc. instead of just &lt;h1&gt;...&lr;h6&gt;.<br/>
 
-The example below defines several implicit "sections" by using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):
-</p>
+The example below defines several implicit "sections" by using &lt;Hx&gt; directly 
+(at <i>lines 7 and 9</i>):</p>
 
 <h4>Ok version (no explicit sections everywhere):</h4>
 
@@ -1572,7 +1611,8 @@ The example below defines several implicit "sections" by using &lt;Hx&gt; dir
 
 <h3>1.2.4 The HTML5 Logo</h3>
 
-<p>Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-html5-logo/" target="_blank" rel="noopener noreferrer">
+<p>Here is the HTML5 logo! It has been <a href="https://www.w3.org/blog/2011/01/an-html5-logo/" 
+target="_blank" rel="noopener noreferrer">
 unveiled on 18 January 2011</a>, so way before HTML5 became a Web standard. This logo represents 
 HTML5, the cornerstone for modern Web applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1587,7 +1627,10 @@ HTML5, the cornerstone for modern Web applications.</p>
 
 <h3 name="ch1-3">1.3 New Structural Elements</h3>
 
-<p>Changes have been made to particular elements in HTML5 making it simpler to use. In this section, we will look at some examples highlighting these improvements, including:</p>
+<p>Changes have been made to particular elements in HTML5 making it simpler to 
+use. In this section, we will look at some examples highlighting these improvements, 
+including:</p>
+
 <ul>
   <li>the new doctype definition;</li>
   <li>the fact that the "type" attribute of elements such as <link> or <script> are now optional;</li>
@@ -6586,15 +6629,26 @@ most of the classic effects used by guitarists (delay, reverb, distortion, choru
 <p align="center" width="100%">
 <img src="./images/image110.webp?raw=true"
   width="55%"
+  title="WebAudio Live Processing"
   alt="WebAudio Live Processing." />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch2-4-4">2.4.4 Webcam Resolution</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-It is possible to set "hints" for the preferred cam/resolution during video capture. This is done by using a ["constraint" object ](https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4)that is passed as a parameter to the getUserMedia(...) method. It's just the same object we passed in the basic example: navigator.getUserMedia({video:true}, success, error) except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.
 
-For more information, this <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia">article on MDN about the getUserMedia API</a> gives great examples on how to set the camera resolution and/or to choose the front or back camera when using a mobile phone.</p>
+<p>It is possible to set "hints" for the preferred cam/resolution during video 
+capture. This is done by using a  
+<a href="https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4">
+"constraint" object</a> that is passed as a parameter to the getUserMedia(...) 
+method. It's just the same object we passed in the basic example: navigator.getUserMedia({video:true}, 
+success, error) except that this time this object is a little more complex by 
+including new properties in addition to video:true or audio:true.<br>
+
+For more information, this 
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia">
+article on MDN about the getUserMedia API</a> gives great examples on how to 
+set the camera resolution and/or to choose the front or back camera when using 
+a mobile phone.</p>
 
 <b>Typical use:</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6729,6 +6783,7 @@ border:1px solid;
 <p align="center" width="100%">
 <img src="./images/image112.webp?raw=true"
   style="width:45%"
+  title="Call getUserMedia() function for appropriate resolution"
   alt="Call getUserMedia() function for appropriate resolution." />
 </p>
 
@@ -6760,11 +6815,15 @@ border:1px solid;
 
 <h4>How to check which resolutions are supported by a browser?</h4>
 
-Use this <a href="https://webrtchacks.github.io/WebRTC-Camera-Resolution/">Web app that</a> systematically tests a set of "preferred resolutions" and compared them to the actual resolutions returned by the browser. Remember that the requested resolution is a hint, and there is no real guarantee that your configuration will allow it.
+Use this <a href="https://webrtchacks.github.io/WebRTC-Camera-Resolution/">Web app that</a> 
+systematically tests a set of "preferred resolutions" and compared them to the actual 
+resolutions returned by the browser. Remember that the requested resolution is a hint, 
+and there is no real guarantee that your configuration will allow it.
 
 <h4>Selecting the front or rear camera on smartphones</h4>
 
-Here are some other constraints you can set. In particular, look at the ones for selecting the front or rear camera (smartphones):
+Here are some other constraints you can set. In particular, look at the ones for 
+selecting the front or rear camera (smartphones):
 
 <details>
   <summary>Click to Toggle!</summary>
@@ -6801,7 +6860,7 @@ Here are some other constraints you can set. In particular, look at the ones for
 <h4>Select input/output for audio and video streams</h4>
 
 -   Resource: <a href="https://webrtc.github.io/samples/src/content/devices/input-output/">
-  WebRTC samples: Select sources & outputs</a>
+  WebRTC samples: Select sources & outputs</a>.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 113. webapp for selecting audio and video input/output (135) ~~~~~~~~~~~~~~~~-->
@@ -6844,19 +6903,27 @@ Here are some other constraints you can set. In particular, look at the ones for
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch2-4-5">2.4.5 The MediaRecorder API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-This MediaRecoredr API allows to record / capture the audio or video stream. There are many sources for audio or video streams, but we will only consider here the streams coming from a WebCam or a sound input (i.e. microphone).
+This MediaRecoredr API allows to record / capture the audio or video stream. 
+There are many sources for audio or video streams, but we will only consider 
+here the streams coming from a WebCam or a sound input (i.e. microphone).
 
-For example, the MediaRecorder API is used to record the video stream from a WebCam as a file saved on the hard disk. Below is a screenshot of an application allowing to record the WebCam. You will be able to run this example a little further, but for security reasons, it cannot run directly in this Web page.
+For example, the MediaRecorder API is used to record the video stream from a 
+WebCam as a file saved on the hard disk. Below is a screenshot of an application 
+allowing to record the WebCam. You will be able to run this example a little 
+further, but for security reasons, it cannot run directly in this Web page.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 114. webrtc samples mediarecorder (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image114.webp?raw=true"
   style="width:40%"
-  title="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element"
-  alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element." />	
+  title="Screenshot showing on the left the webcam video stream, and on the right 
+    the same stream recorded and playable in a HTML video element"
+  alt="Screenshot showing on the left the webcam video stream, and on the right the 
+    same stream recorded and playable in a HTML video element." />	
 </p>
 
-Let's record, replay and download the video stream captured using a Webcam. You can test it below by clicking on "CodePen" at the top right:
+Let's record, replay and download the video stream captured using a Webcam. You 
+can test it below by clicking on "CodePen" at the top right:
 
 <h4>JavaScript</h4>
 
@@ -7039,7 +7106,10 @@ margin: 0 10px 10px 0;
 
 </details>
 
-Click "start recording", then press the play button on the video element on the right of the app. You can also click the "download" button to download a .webm file, playable offline with a media player such as <a href="https://www.videolan.org/">VLC</a> or online in a Web page with the &lt;video&gt; element.
+Click "start recording", then press the play button on the video element on the 
+right of the app. You can also click the "download" button to download a .webm 
+file, playable offline with a media player such as <a href="https://www.videolan.org/">VLC</a> 
+or online in a Web page with the &lt;video&gt; element.
 
 <h4>Five steps are needed to use the mediaRecorder object</h4>
 
@@ -7075,21 +7145,29 @@ mediaRecorder = new MediaRecorder(stream, options);
 <h4>Explanations:</h4>
 <ul>
   <li><i>Line 1</i>: we declare an array of bytes that will hold the recorded stream.</li>
-  <li><i>Line 2</i>: we declare the callback function that will be called while the stream is being captured. While the Webcam will be used, every xxx seconds, chunks of data will be passed to the handleDataAvailable function.</li>
-  <li><i>Lines 5-10</i>: this function collects the chunk of data that corresponds to a few seconds of video, and stores it in the recordedChunks byte array.</li>
+  <li><i>Line 2</i>: we declare the callback function that will be called while 
+    the stream is being captured. While the Webcam will be used, every xxx seconds, 
+	chunks of data will be passed to the handleDataAvailable function.</li>
+  <li><i>Lines 5-10</i>: this function collects the chunk of data that corresponds 
+    to a few seconds of video, and stores it in the recordedChunks byte array.</li>
 </ul>
 
 <h4>3 - When you've finished recording, tell the mediaRecorder to stop</h4>
 
-<p>When you're done, you need to call the stop() method of the mediaRecorder object. This will end the periodic execution of the handleDataAvailable method, and stop the data capture.</p>
+<p>When you're done, you need to call the stop() method of the mediaRecorder 
+object. This will end the periodic execution of the handleDataAvailable method, 
+and stop the data capture.</p>
 
 ```
 mediaRecorder.stop();
 ```
 
-<h4>4 - Create a BLOB (Binary Large Object) with the collected data, and use it to set the src attribute of an HTML5 video player</h4>
+<h4>4 - Create a BLOB (Binary Large Object) with the collected data, and use it 
+to set the src attribute of an HTML5 video player</h4>
 
-<p>This piece of code creates a blob with the recordedChunks array. Use the URL.createObjectURL(recordedChunks) standard method to create another object that can be used as a value to set the src attribute of an HTML5 video element.
+<p>This piece of code creates a blob with the recordedChunks array. Use the 
+URL.createObjectURL(recordedChunks) standard method to create another object 
+that can be used as a value to set the src attribute of an HTML5 video element.
 
 Like that, the recorded stream can be played using a standard HTML5 &lt;video&gt; element.</p>
 
@@ -7103,7 +7181,11 @@ function play() {
 
 <h4>5 - Download the captured stream</h4>
 
-<p>A trick consists in creating, on the fly, an invisible link with a download attribute (see Module 1) and a href attribute  that points to the blob object containing the recorded stream encoded using a given codec, then generate programmatically a click event on the link. This will force the browser to download a file of type video/webm to the hard disk.</p>
+<p>A trick consists in creating, on the fly, an invisible link with a download 
+attribute (see Module 1) and a href attribute  that points to the blob object 
+containing the recorded stream encoded using a given codec, then generate 
+programmatically a click event on the link. This will force the browser to 
+download a file of type video/webm to the hard disk.</p>
 
 <details>
  <summary>Click to Toggle!</summary>
@@ -7138,25 +7220,39 @@ function play() {
   alt="JavaScript logo." />
 </p>
 
-HTML5 is composed of new elements, but it also comes with many JavaScript APIs for controlling video and sound, drawing and animating things in the new &lt;canvas&gt; element, for offline applications, persistence, geolocation, orientation, etc.
+HTML5 is composed of new elements, but it also comes with many JavaScript APIs 
+for controlling video and sound, drawing and animating things in the new &lt;canvas&gt; 
+element, for offline applications, persistence, geolocation, orientation, etc.
 
-So yes, during this course, in particular in Modules 3 and 4, you will have to do a bit of JavaScript. <b>But, DON'T PANIC!</b>
+So yes, during this course, in particular in Modules 3 and 4, you will have to 
+do a bit of JavaScript. <b>But, DON'T PANIC!</b>
 
-Here we provide a basic introduction to JavaScript. If you want to learn more, many resources are available on the Web; this document is simply here to give you a head start. Remember that one great thing about these MOOCs courses is that everybody can help each other. Some students are very good in JavaScript and are usually very happy to help others when they encounter difficulties.
+Here we provide a basic introduction to JavaScript. If you want to learn more, 
+many resources are available on the Web; this document is simply here to give 
+you a head start. Remember that one great thing about these MOOCs courses is 
+that everybody can help each other. Some students are very good in JavaScript 
+and are usually very happy to help others when they encounter difficulties.
 
-You will learn a lot by looking at examples, tweaking them, cloning and modifying them, etc.</b> Many previous students who were real JavaScript beginners managed to do [all] the assignments (drawing and animating a monster with keyboard/mouse interaction)! And they did this by just studying the provided examples.
+You will learn a lot by looking at examples, tweaking them, cloning and modifying 
+them, etc.</b> Many previous students who were real JavaScript beginners managed 
+to do [all] the assignments (drawing and animating a monster with keyboard/mouse 
+interaction)! And they did this by just studying the provided examples.
 
 <h4>External resources</h4>
 
--   The <a href="https://www.edx.org/course/javascript-introduction">JavaScript Introduction</a> course on W3Cx!
+-   The <a href="https://www.edx.org/course/javascript-introduction">JavaScript 
+  Introduction</a> course on W3Cx!
 
--   Mozilla Developper Network <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">has a JavaScript guide</a>
+-   Mozilla Developper Network <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">
+  has a JavaScript guide</a>
 
 <h4>What do you need? How to debug? How to catch errors?</h4>
 
-We will not look at the JavaScript syntax here, but more at "JavaScript in the browser", how it works, how to start writing code, etc.
+We will not look at the JavaScript syntax here, but more at "JavaScript in the browser", 
+how it works, how to start writing code, etc.
 
-First of all, you need to find a way to debug your code and see errors. If your work does not produce any results, you must know why!
+First of all, you need to find a way to debug your code and see errors. If your work does 
+not produce any results, you must know why!
 
 For that you will use <b>the dev. tools of your browser</b>. Press <i>F12</i> in Windows or <i>cmd-alt-i</i> in Mac to open the dev. tools, then go to the console tab: this is where errors will be displayed, or messages of your own (use the console.log(string) JavaScript function in the JavaScript code embedded in your html page). In the console, you will be able to type any JavaScript command.
 
@@ -7184,18 +7280,29 @@ Let's look at <a href="https://jsbin.com/visariz/1/edit?html,output">this examp
 
 The simplest way to add JavaScript code in an HTML page, is by using the &lt;script&gt;...&lt;/script&gt; element.
 
-<b>The code in this example is executed sequentially when the page is loaded</b>: the JavaScript code is executed before the browser could see the rest of the page (as the &lt;script&gt;&lt;/script&gt; is located before the &lt;body&gt;).
+<b>The code in this example is executed sequentially when the page is loaded</b>: 
+the JavaScript code is executed before the browser could see the rest of the page 
+(as the &lt;script&gt;&lt;/script&gt; is located before the &lt;body&gt;).
 
-The H1 element, for example, does not exist in the Document Object Model, and has not yet been displayed when the JavaScript code is executed. If we move the &lt;script&gt;&lt;/script&gt; at the end of the document, then the H1 would have been built before the JavaScript code is executed.
+The H1 element, for example, does not exist in the Document Object Model, and has 
+not yet been displayed when the JavaScript code is executed. If we move the 
+&lt;script&gt;&lt;/script&gt; at the end of the document, then the H1 would 
+have been built before the JavaScript code is executed.
 
 The only line of code we have is console.log("Some JavaScript code has been executed");
 
-This means "display in the JavaScript console the message...". If we open the console tab provided by jsbin.com in a dedicated tab (that redirects all console.log() messages), and re-execute the page (just type a space at the end of a line, this will re-render the page and display the message in the console), we see the message in the console tab, as well as in the dev. tools console. This is illustrated by the image below:
+This means "display in the JavaScript console the message...". If we open the 
+console tab provided by jsbin.com in a dedicated tab (that redirects all 
+console.log() messages), and re-execute the page (just type a space at the 
+end of a line, this will re-render the page and display the message in the 
+console), we see the message in the console tab, as well as in the dev. tools 
+console. This is illustrated by the image below:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 116. javascript debugging console view (142) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image116.webp?raw=true"
   width="50%"
+  title="JavaScript debugging using the dev tool console"
   alt="JavaScript debugging using the dev tool console." />
 </p>
 
@@ -7275,11 +7382,11 @@ Here are some fun examples that show the interest of the HTML5 canvas.
 <a href="https://www.ravalmatic.com/portfolio/footchinko/">Foot Chinko</a> is one popular free HTML5 games:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 122. foot chinko one of the best html5 2D game of 2015 (145) ~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image122.webp?raw=true"
-   width="40%"
-   alt="Foot chinko one of the best html5 2D game of 2015." />
+  width="40%"
+  title="Foot chinko one of the best html5 2D game of 2015"
+  alt="Foot chinko one of the best html5 2D game of 2015." />
 </p>
 
 <h4>Example #2</h4>
@@ -7288,10 +7395,10 @@ Lots of data visualization tools and JavaScript libraries use the HTML5 canvas e
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 123. html5 data visualization, bar graph (146) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image123.webp?raw=true"
   width="50%"
+  title="HTMLK5 data visualization, bar graphs"
   alt="HTMLK5 data visualization, bar graphs." />
 </p>
 
@@ -7300,11 +7407,11 @@ Lots of data visualization tools and JavaScript libraries use the HTML5 canvas e
 A version of the <a href="https://intersoft.itch.io/galaxian">arcade game Galaxian</a>, that runs at 60 frames per second in an HTML5 canvas element:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~ 124. a version of the game Galaxian that runs at 60 frames/s in a canvas. (146) ~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image124.webp?raw=true"
-   width="50%"
-   alt="A version of the game Galaxian that runs at 60 frames/s in a canvas." />
+  width="50%"
+  title="A version of the game Galaxian that runs at 60 frames/s in a canvas"
+  alt="A version of the game Galaxian that runs at 60 frames/s in a canvas." />
 </p>
 
 Performance is  good and animation is generally very smooth, since most Web browsers (mobile and desktop) support hardware acceleration.
@@ -7350,21 +7457,21 @@ We recommend these 2 quick references (or [cheatsheets](https://en.wikipedia.or
 1.  As a [PDF file](https://courses.edx.org/assets/courseware/v1/4b7360cab7f3bf439c26782ec47cf7a8/asset-v1:W3Cx+HTML5.1x+2T2020+type@asset+block/Infopgraphic-CanvasCheatSheet-Final2.pdf), this canvas cheatsheet:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~ 125. snapshot of an html canvas cheatsheet from skilled.com (147) ~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image125.webp?raw=true"
-   width="65%"
-   alt="Snapshot of an HTML Canvas cheatsheet from skilled.com." />
+  width="65%"
+  title="Snapshot of an HTML Canvas cheatsheet from skilled.com"
+  alt="Snapshot of an HTML Canvas cheatsheet from skilled.com." />
 </p>
 
 2.  Another resource, as an [HTML file](https://simon.html5.org/dump/html5-canvas-cheat-sheet.html):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 126. snapshot of a canvas cheatsheet api (148) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image126.webp?raw=true"
-   width="65%"
-   alt="Snapshot of a Canvas cheatsheet API." />
+  width="65%"
+  title="Snapshot of a Canvas cheatsheet API"
+  alt="Snapshot of a Canvas cheatsheet API." />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch3-2-5">3.2.5 Coordinate System</h3>
@@ -7374,10 +7481,10 @@ drawing APIs like Java2D: the (0 , 0) is in the top left corner while the X axis
 going to the right and the Y axis to the bottom, as  shown in the following picture:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 127. coordinate system (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image127.webp?raw=true"
   width="55%"
+  title="Coordinate system"
   alt="Coordinate system." />
 </p>
 
@@ -7667,13 +7774,12 @@ ctx.fillRect(10,10,200,200);
 Produces this result:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 128. filled rectangle with pink color (153) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image128.webp?raw=true"
   width="25%"
+  title="Filled rectangle with pink color"
   alt="Filled rectangle with pink color." />
 </p>
-<!-- ./images/image128.webp){width="2.59375in" height="2.5833333333333335in"} -->
 
 -   <h4>strokeStyle is a property of the context similar to fillStyle, but this time for indicating how the shape's outline should be rendered</h4>
 
@@ -7689,13 +7795,12 @@ ctx.strokeRect(10,10,200,200);
 ... gives this result:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 129. stroked rectangle - border is in blue (154) ~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image129.webp?raw=true"
-   width="25%"
-   alt="Stroked rectangle - border is in blue." />
+  width="25%"
+  title="Stroked rectangle - border is in blue"
+  alt="Stroked rectangle - border is in blue." />
 </p>
-<!-- ./images/image129.webp){width="2.5833333333333335in" height="2.6041666666666665in"}  -->
 
 Only the outline of the rectangle will be drawn, and it will be drawn using the value of the strokeStyle property.
 
@@ -7712,10 +7817,10 @@ ctx.clearRect(50, 50, 20, 20);
 <h4>The result is:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~ 130. the use of clearrrect draws a white rectangle against the pink background (xxx) ~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image130.webp?raw=true"
   width="25%"
+  title="The use of ClearRect draws a white rectangle against the pink background"
   alt="The use of ClearRect draws a white rectangle against the pink background." />
 </p>
 
@@ -7861,15 +7966,18 @@ We now introduce the basics of 2D transformations, a powerful tool that will mak
   <li>Draw complex shapes at given positions, with given orientations and sizes,</li>
   <li>Draw shapes relative to one another.</li>
 </ul>
-<p>
-Let's start with some simple examples before looking at how we use 2D transforms.
-</p>
+
+<p>Let's start with some simple examples before looking at how we use 2D transforms.</p>
+
 <h4>Examples</h4>
+
 <ul>
   <li>Let's draw three rectangles!</li>
 </ul>
-<p>
-If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) and another at (150, 0), and a third at (300, 0), here is the result and the corresponding code:</p>
+
+<p>If we draw three rectangles of size 100x200 in a 400x400 canvas, one at (0, 0) 
+and another at (150, 0), and a third at (300, 0), here is the result and the 
+corresponding code:</p>
 
 <h4>HTML</h4>
 
@@ -7933,7 +8041,9 @@ JavaScript code extract:
   <li><h4>Let's modify the code so that we can draw these rectangles at any X and Y position</li>
 </ul>
 
-What if we wanted to draw these 3 rectangles at another position, as a group? We would like to draw all of them a little closer to the bottom, for example... Let's add some parameters to the function:  the X and Y position of the rectangles.
+What if we wanted to draw these 3 rectangles at another position, as a group? We 
+would like to draw all of them a little closer to the bottom, for example... 
+Let's add some parameters to the function:  the X and Y position of the rectangles.
 
 <h4>HTML</h4>
 
@@ -8014,12 +8124,12 @@ At <i>line 10</i>, we called the drawSomething(...) function with 0 and 100 
 
 If you look at the code of the modified function, you will see that each call to fillRect(...) uses the x and y parameters instead of hard coded values. In this way, if we call it with parameters (0, 100), then all rectangles will be drawn 100 pixels to the bottom (offset in y). Here is the result:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~ 131. Rectangles are drawn 100 pixels towards the bottom (xx) ~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 131. Rectangles are drawn 100 pixels towards the bottom (158) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image131.webp?raw=true"
-   width="30%"
-   alt="Rectangles are drawn 100 pixels towards the bottom." />
+  width="30%"
+  title="Rectangles are drawn 100 pixels towards the bottom"
+  alt="Rectangles are drawn 100 pixels towards the bottom." />
 &nbsp;
 <br/>
 <ul>
@@ -8120,15 +8230,21 @@ Your browser does not support the canvas tag.
 
 </details>
 
-As you can see, the code uses the same technique, becomes less and less readable. The Xs and Ys at the beginning of each call makes understanding the code harder, etc.
+As you can see, the code uses the same technique, becomes less and less readable. 
+The Xs and Ys at the beginning of each call makes understanding the code harder, etc.
 
 However, there is a way to simplify this => 2D geometric transformations! 
 
 <h4>Geometric transformations: changing the coordinate system</h4>
 
-The idea behind 2D transformations is that instead of modifying all the coordinates passed as parameters to each call to drawing methods like fillRect(...), we will keep all the drawing code "as is". For example, if the monster of our previous example was drawn at (0, 0), we could just translate (or rotate, or scale) the original coordinate system.
+The idea behind 2D transformations is that instead of modifying all the coordinates 
+passed as parameters to each call to drawing methods like fillRect(...), we will 
+keep all the drawing code "as is". For example, if the monster of our previous 
+example was drawn at (0, 0), we could just translate (or rotate, or scale) the 
+original coordinate system.
 
-Let's take a piece of code that draws something corresponding to the original coordinate system, located at the top left corner of the canvas:
+Let's take a piece of code that draws something corresponding to the original 
+coordinate system, located at the top left corner of the canvas:
 
 <details>
  <summary>Click to Toggle!</summary>
@@ -8756,12 +8872,16 @@ We slightly modified the function that draws the monster:
 </ul>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 132. laptop showing unicorn validator (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 132. laptop showing unicorn validator (160) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image132.webp?raw=true"
   width="40%"
-  alt="Example of context save-restore: a monster drawn by a function that saves and restored the context, then a rectangle is drawn, with context as it was previously." />
+  title="Example of context save-restore: a monster drawn by a function that 
+    saves and restored the context, then a rectangle is drawn, with context 
+	as it was previously"
+  alt="Example of context save-restore: a monster drawn by a function that 
+    saves and restored the context, then a rectangle is drawn, with context 
+	as it was previously." />
 </p>
 
 <p>Source code extract of this function: notice at <i>lines 3</i> and <i>26</i> how we save/restore the context at the beginning/end. Right after saving the context, we modify the coordinate system (<i>lines 7-8</i>). The rest of the code is nearly the same as in the last version of the monster example.</p>
@@ -8966,9 +9086,12 @@ The font property accepts values like: font-style,  font-weight, font-size
 
 <h4>Drawing text in solid or wireframe: the fillText() or strokeText() methods</h4>
 
-The fillText(message, x, y) or strokeText(message, x, y) methods from the context will actually draw a text message at the origin of the baseline position. In the "Hello World" example, this is located at the bottom of the left leg of the "H".
+The fillText(message, x, y) or strokeText(message, x, y) methods from the context 
+will actually draw a text message at the origin of the baseline position. In the 
+"Hello World" example, this is located at the bottom of the left leg of the "H".
 
-There is a fourth optional parameter maxWidth that forces the text to fit into a given width, distorting it if necessary:
+There is a fourth optional parameter maxWidth that forces the text to fit into 
+a given width, distorting it if necessary:
 
 ```
 context.strokeText("Hello World!", x, y [, maxWidth]);
@@ -9109,7 +9232,8 @@ context.stroke();
 
 <h4>Changing the way the text is horizontally drawn: the ctx.textbaseline property</h4>
 
-The textBaseline property of the context is used to specify the different ways one can position the baseline of a given text:
+The textBaseline property of the context is used to specify the different ways 
+one can position the baseline of a given text:
 
 <h4>HTML</h4>
 
@@ -9311,11 +9435,16 @@ But let's start with a basic example!
 
 1.  We have to create a JavaScript Image object (<i>line 10</i>),
 
-2.  When we set the src attribute of this object with the URL of the image file, then an asynchronous request is sent in the background by the browser. Loading a big image may take some time, so the rest of the JavaScript code continues running. This is why we call it "asynchronous".
+2.  When we set the src attribute of this object with the URL of the image file, 
+  then an asynchronous request is sent in the background by the browser. Loading 
+  a big image may take some time, so the rest of the JavaScript code continues 
+  running. This is why we call it "asynchronous".
 
-3.  When the image file has been loaded, the browser calls the onload callback associated with the image (<i>line 14</i>).
+3.  When the image file has been loaded, the browser calls the onload callback 
+  associated with the image (<i>line 14</i>).
 
-4.  We draw the image only from inside this callback, otherwise we have no guarantee that the image has been loaded and can be usable. The actual drawing here is done <i>line 17</i>.
+4.  We draw the image only from inside this callback, otherwise we have no guarantee 
+  that the image has been loaded and can be usable. The actual drawing here is done <i>line 17</i>.
 
 5.  There are numerous variants of the drawImage(...) context method at <i>line 17</i>
 
@@ -9323,7 +9452,10 @@ But let's start with a basic example!
 
 -   drawImage(img, x, y, sizeX, sizeY): same as before except that the image drawn is resized.
 
--   drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh): for drawing sub-images, (sx, sy, sw, sh) define the source rectangle, while dx, dy, dw, sh define the target rectangle. If these rectangles don't have the same size, the source sub-image is resized.
+-   drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh): for drawing sub-images, 
+  (sx, sy, sw, sh) define the source rectangle, while dx, dy, dw, sh define 
+  the target rectangle. If these rectangles don't have the same size, the 
+  source sub-image is resized.
 
 <h4>See picture below:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9425,7 +9557,9 @@ border:1px solid black;
 
 <h4>Example #3: draw an image defined in the page by an &lt;img src="..."&gt; element</h4>
 
-Sometimes, you may want to draw an image that is already declared in the HTML document as an <img src="..."> element. Remember that when you add an <img> in the document, the browser starts downloading it in background. 
+Sometimes, you may want to draw an image that is already declared in the HTML 
+document as an &lt;img src="..."&gt; element. Remember that when you add an &lt;img&gt; in 
+the document, the browser starts downloading it in background. 
 
 <h4>You could try drawing it using some code like this:</h4>
 
@@ -9436,15 +9570,17 @@ Sometimes, you may want to draw an image that is already declared in the HTML do
 4.  <b><img id="logo"</b>
 5.  <b>src="https://fc07.deviantart.net/fs70/f/2013/149/b/8/texture_85_by_voyager168-d670m68.jpg"></b>
 6.  <script>
-7.       canvas = document.getElementById("myCanvas");
-8.       var ctx = canvas.getContext("2d");
-9.       var logo = document.querySelector("#logo");
-10.      <b>ctx.drawImage(logo, 0, 0, 100, 100);</b>
+7.    canvas = document.getElementById("myCanvas");
+8.    var ctx = canvas.getContext("2d");
+9.    var logo = document.querySelector("#logo");
+10.   <b>ctx.drawImage(logo, 0, 0, 100, 100);</b>
 11. </script>
 12. </body>
 ```
 
-Although you will find many examples on the Web that do it this way, they will only work most of the time with small images, or with images that are in the browser's cache. Remember that you cannot draw an image that has not been fully loaded!
+Although you will find many examples on the Web that do it this way, they will 
+only work most of the time with small images, or with images that are in the 
+browser's cache. Remember that you cannot draw an image that has not been fully loaded!
 
 If you try to draw an image that is not loaded or partially loaded, you will have unexpected results!
 
@@ -9456,7 +9592,7 @@ The right way to do this is shown in this online example, that starts drawing on
 
 ```
 #myCanvas {
-border:1px solid black;
+  border:1px solid black;
 }
 ```
 
@@ -9472,24 +9608,24 @@ border:1px solid black;
 <meta charset="utf-8"/>
 <title>Drawing an image with <img></title>
 <script>
-var canvas, context, imageObj;
-window.onload = function() {
-canvas = document.getElementById("myCanvas");
-context = canvas.getContext("2d");
-imageObj = document.querySelector("#logo");
-drawAllImages();
-};
+  var canvas, context, imageObj;
+  window.onload = function() {
+    canvas = document.getElementById("myCanvas");
+    context = canvas.getContext("2d");
+    imageObj = document.querySelector("#logo");
+    drawAllImages();
+  };
 function drawAllImages() {
-console.log("image is already loaded, we draw it!");
-// Original image drawn with size = 100x100 pixels
-context.drawImage(imageObj, 0, 10, 100, 100);
-// with size = 150x150
-context.drawImage(imageObj, 80, 10, 150, 150);
-// with size = 200x200
-context.drawImage(imageObj, 210, 10, 200, 200);
-// draw the sub image at 0, 0, width = 512, height = 100
-// at position 100, 250, with a width of 256 and a height of 50
-context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
+  console.log("image is already loaded, we draw it!");
+  // Original image drawn with size = 100x100 pixels
+  context.drawImage(imageObj, 0, 10, 100, 100);
+  // with size = 150x150
+  context.drawImage(imageObj, 80, 10, 150, 150);
+  // with size = 200x200
+  context.drawImage(imageObj, 210, 10, 200, 200);
+  // draw the sub image at 0, 0, width = 512, height = 100
+  // at position 100, 250, with a width of 256 and a height of 50
+  context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 }
 </script>
 </head>
@@ -10935,7 +11071,7 @@ Notice that we called ctx.arc() only once! And drew it twice, with different s
 <h4> Project #2: make a small program that draws a smiling head like this (or make something better!)</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------------------------------- 151. smiley face (208) ------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 151. smiley face (208) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image151.webp?raw=true"
   width="30%"
@@ -11790,10 +11926,10 @@ Try this:
 Note how the different parts are linked together and make a "path":</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 165. bezier curve maker tool (222) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image165.webp?raw=true"
   width="85%"
+  title="Interactive code that draws Bezier curves"
   alt="Interactive code that draws Bezier curves." />
 &nbsp;
 <br/>
@@ -11802,17 +11938,21 @@ Note how the different parts are linked together and make a "path":</p>
 <p>
 This Bézier tool ("HTML5 &lt;canvas&gt; bezierCurveTo command generator") is available <a href="https://www.victoriakirst.com/beziertool/">online</a>: try it!</p>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 165. bezier curve maker tool (222) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch3-5-1">3.5.1 Canvas Context: Colors</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 165. bezier curve maker tool (222) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-In previous examples, we saw how to set the current color using the strokeStyle and fillStyle properties of the canvas context object.
+In previous examples, we saw how to set the current color using the strokeStyle 
+and fillStyle properties of the canvas context object.
 
-Let's look at color in a little more detail, and see how we can use gradients or patterns/textures/images (in other words: fill shapes or fill the outline of the shapes with some images that repeat themselves).
+Let's look at color in a little more detail, and see how we can use gradients or 
+patterns/textures/images (in other words: fill shapes or fill the outline of the 
+shapes with some images that repeat themselves).
 
 <h4>Colors and transparency</h4>
 
-You can use <a href="https://www.w3.org/TR/css3-color/">the same syntax for colors that is supported by CSS3</a>. The next lines show possible values/syntaxes.
+You can use <a href="https://www.w3.org/TR/css3-color/">the same syntax for colors 
+that is supported by CSS3</a>. The next lines show possible values/syntaxes.
 
 ```
 1. ctx.strokeStyle = 'red';
@@ -11825,16 +11965,18 @@ Note that:
 
 -   All values are strings;
 
--   <i>Line 4</i> defines a "transparent color", the "a" of "rgba" means "alpha channel". Its value is between 0 and 1, where 0 means "completely transparent" and 1 means "opaque".
+-   <i>Line 4</i> defines a "transparent color", the "a" of "rgba" means "alpha 
+  channel". Its value is between 0 and 1, where 0 means "completely transparent" 
+  and 1 means "opaque".
 
 Here is an example that shows how to draw different filled rectangles in blue, with different levels of transparency:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 166. colors and transparency example (223) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image166.webp?raw=true"
-   width="85%"
-   alt="Colors and transparency example." />
+  width="85%"
+  title="Colors and transparency example"
+  alt="Colors and transparency example." />
 </p>
 
 <h4>HTML</h4>
@@ -11890,10 +12032,10 @@ Here is an example that shows how to draw different filled rectangles in blue, w
 It is possible to define the stroke or the fill style as a "gradient", a set of interpolated colors, like in this example below:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 167. define stroke fill style as 'gradient' (224) ~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image167.webp?raw=true"
   width="85%"
+  title="Define stroke fill style as 'gradient'"
   alt="Define stroke fill style as 'gradient'." />
 </p>
 
@@ -11917,11 +12059,11 @@ function init() {
   grdFrenchFlag.addColorStop(0.5, "white");
   grdFrenchFlag.addColorStop(1, "red");
   draw();
-  }
+}
 function draw() {
   ctx.fillStyle = grdFrenchFlag;
   ctx.fillRect(0, 0, 300, 200);
-  }
+}
 ```
 
 </details>
@@ -11989,9 +12131,14 @@ it in a global variable.
 
 <h4>Step #2: add a number of "color stops" to this gradient</h4>
 
-We will add a set of "colors" and "stops" to this gradient. The stops go from 0 (beginning of the virtual line defined just above), to 1 (end of the virtual line). A color associated with a value of 0.5 will be right in the middle of the virtual line.
+We will add a set of "colors" and "stops" to this gradient. The stops go from 
+0 (beginning of the virtual line defined just above), to 1 (end of the virtual 
+line). A color associated with a value of 0.5 will be right in the middle of 
+the virtual line.
 
-Here is an example that corresponds to an interpolated version of the French flag, going from blue to white, then to red, with proportional intervals. We define three colors, blue at position 0, white at position 0.5 and red at position 1:
+Here is an example that corresponds to an interpolated version of the French flag, 
+going from blue to white, then to red, with proportional intervals. We define 
+three colors, blue at position 0, white at position 0.5 and red at position 1:
 
 ```
 grdFrenchFlag.addColorStop(0, "blue");
@@ -12001,16 +12148,21 @@ grdFrenchFlag.addColorStop(1, "red");
 
 <h4>Step 3: draw some shapes</h4>
 
-First, let's set the fillStyle or strokeStyle of the context with this gradient, then let's draw some shapes "on top of the gradient".
+First, let's set the fillStyle or strokeStyle of the context with this gradient, 
+then let's draw some shapes "on top of the gradient".
 
-In our example, the gradient corresponds to an invisible rectangle that fills the canvas. If we draw a rectangle of the canvas size, it should be filled with the entire gradient:
+In our example, the gradient corresponds to an invisible rectangle that fills the 
+canvas. If we draw a rectangle of the canvas size, it should be filled with the 
+entire gradient:
 
 ```
 ctx.fillStyle = grdFrenchFlag;
 ctx.fillRect(0, 0, 300, 200);
 ```
 
-The result is shown in the <a href="https://codepen.io/w3devcampus/pen/WNpPZVO">above pen</a>: a big rectangle that fills the whole canvas, with colors going from blue (left) to white (middle) to red (right).
+The result is shown in the <a href="https://codepen.io/w3devcampus/pen/WNpPZVO">
+above pen</a>: a big rectangle that fills the whole canvas, with colors going 
+from blue (left) to white (middle) to red (right).
 
 <h4>Examples</h4>
 
@@ -12022,12 +12174,14 @@ If you modify the source code that defines the direction of the gradient as foll
 grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);
 ```
 
-... then you will define a gradient that goes from the top left corner of the canvas to the bottom right of the canvas. Let's see what it does:
+... then you will define a gradient that goes from the top left corner of the 
+canvas to the bottom right of the canvas. Let's see what it does:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 168. example 1 draw gradient top left to bottom right (226) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image168.webp?raw=true"
   width="65%"
+  title="Example 1 draw gradient from top left to bottom right"
   alt="Example 1 draw gradient from top left to bottom right." />
 &nbsp;
 <br/>
@@ -12039,12 +12193,15 @@ Instead of drawing a filled rectangle that covers the whole surface of the canva
 <!--~~~~~~~~~~~~~~~~~~~~~~ 169. example 2 draw smaller rectangles (226) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image169.webp?raw=true"
-   width="65%"
-   alt="Example 2 draw smaller rectangels - red & blue." />
+  width="65%"
+  title="Example 2 draw smaller rectangels - red & blue"
+  alt="Example 2 draw smaller rectangels - red & blue." />
 &nbsp;
 <br/>
 
-<p>Note that the canvas has its default background color where we did not draw anything. And where we have drawn rectangles, we can see "through" and the colors from the gradient are visible.</p>
+<p>Note that the canvas has its default background color where we did not draw 
+anything. And where we have drawn rectangles, we can see "through" and the 
+colors from the gradient are visible.</p>
 
 <h4>Here is the code that draws the checkboard:</h4>
 
@@ -12099,11 +12256,12 @@ or we do not draw a rectangle.
 This code is much more complex than the previous one, taking 16 lines instead of 13, but is much 
 more powerful. Try to call the function with a value of 10, 20, or 2...
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--------------------------------- 170. draw checkboard (227) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 170. draw checkboard (227) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image170.webp?raw=true"
-   width="65%"
-   alt="Draw red and blue checkboard." />
+  width="65%"
+  title="Draw red and blue checkboard"
+  alt="Draw red and blue checkboard." />
 &nbsp;
 <br/>
 
@@ -12179,10 +12337,10 @@ which is just a variation of the previous one, we have used the lineWidth pro
 outline of the rectangles at 5 pixels:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~ 171. example 3 using strokestyle and strokerect to draw rectangles (228) ~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image171.webp?raw=true"
   width="65%"
+  title="Example 3 draw rectangles using strokeStyle and strokeRect"
   alt="Example 3 draw rectangles using strokeStyle and strokeRect." />
 &nbsp;
 <br/>
@@ -14816,11 +14974,11 @@ the focus, etc...
 <h4>Example #2: moving the monster with the keyboard</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 194. move monster with keyboard (314) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="./images/image194.webp?raw=true"
-   width="65%"
-   alt="Move monster with keyboard." />
+  width="65%"
+  title="Move monster with keyboard"
+  alt="Move monster with keyboard." />
 </p>
 
 <h4>HTML</h4>
@@ -15610,11 +15768,12 @@ function getMousePos(canvas, evt) {
 This example shows an animation at 60 frames/s using requestAnimationFrame, were the monster is drawn at the mouse position, and if a mouse button is pressed, the monster starts rotating around its center. If we release the mouse button, the rotation stops:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------- 205.  (325) ------------>
+<!--~~~~~~~~~~~~~ 205. move the mouse, draw the monster, rotate the monster (325) ~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image205.webp?raw=true"
   width="40%"
-  alt="Image205." />
+  title="Move the mouse, draw the monster at mouse position, press a button, rotate the monster"
+  alt="Move the mouse, draw the monster at mouse position, press a button, rotate the monster." />
 &nbsp;
 <br/>
 
@@ -15679,11 +15838,12 @@ function animationLoop() {
 <h4>Example #2: draw in a canvas as if you were using a pencil</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------- 206.  (326) ------------>
+<!--~~~~~~~~~~~~~~~ 206. example, how to paint in a canvas with a pencil (326) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image206.webp?raw=true"
   width="40%"
-  alt="." />
+  title="Example, how to paint in a canvas with a pencil"
+  alt="Example, how to paint in a canvas with a pencil." />
 &nbsp;
 <br/>
 
@@ -15737,11 +15897,12 @@ function handleMouseMove(evt) {
 <h4>Example #3: same as example #2 but we draw only when a mouse button is pressed</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!----------- 207.  (327) ------------>
+<!--~~~~~~~~~~~~~ 207. again, example how to paint in a canvas with a pencil (327) ~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image207.webp?raw=true"
   width="45%"
-  alt="." />
+  title="Again, example how to paint in a canvas with a pencil"
+  alt="Again, example how to paint in a canvas with a pencil." />
 &nbsp;
 <br/>
 
@@ -15784,9 +15945,9 @@ We just added mouseup and  mousedown listeners, extract from the source code
 
 </details>
 
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch4-3-4">4.3.4 Responsive Canvas</h3>
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Resizing a canvas can be tricky if we don't know a few rules that might not be easily guessed:
 
@@ -15801,11 +15962,12 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 <h4>Example #1: changing the size of a canvas on the fly erases its content!</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!---------------------------- 208. example 1 resize and erase (285) ----------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 208. example 1 resize and erase (285) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image208.webp?raw=true"
   width="45%"
-  alt="Example #1 Changing the size of a canvas on the fly will erase its content. " />
+  title="Example #1 Changing the size of a canvas on the fly will erase its content"
+  alt="Example #1 Changing the size of a canvas on the fly will erase its content." />
 &nbsp;
 <br/>
 
@@ -20701,28 +20863,28 @@ text area. This example is detailed further in the course. Click and select a te
 5.    <title>Example of use of FileReader with a text file</title>
 6.  </head>
 7.  <body>
-8.    <label for="files">Choose a text file:</label><input type="file" id="file"
-9.                             onchange="readFileContent(this.files)"/><br/>
+8.  <label for="files">Choose a text file:</label><input type="file" id="file"
+9.    onchange="readFileContent(this.files)"/><br/>
 10. <textarea rows=15 cols=50 id="fileContent"></textarea>
 12. 
 13. <script>
-14. function readFileContent(files) {
-15.   console.log("In readFileContent");
-16.   var reader = new FileReader();
+14.   function readFileContent(files) {
+15.     console.log("In readFileContent");
+16.     var reader = new FileReader();
 17. 
-18.   // Executed last: called when the file content is loaded, e.target.result is
-19.   // The content
-20.   reader.onload = function(e) {
-21.     // display content in the textarea with id="fileContent"
-22.     document.getElementById("fileContent").value=** e.target.result;**
-23.   };
+18.     // Executed last: called when the file content is loaded, e.target.result is
+19.     // The content
+20.     reader.onload = function(e) {
+21.       // display content in the textarea with id="fileContent"
+22.       document.getElementById("fileContent").value=** e.target.result;**
+23.     };
 24. 
-25.   console.log("Reading file:" + files[0].name);
+25.     console.log("Reading file:" + files[0].name);
 26. 
-27.   // Executed first: start reading the file asynchronously , will call the onload
-28.   // callback when the file is read
-29.   reader.readAsText(files[0]);
-30. }
+27.     // Executed first: start reading the file asynchronously , will call the onload
+28.     // callback when the file is read
+29.     reader.readAsText(files[0]);
+30.   }
 31. </script>
 32. </body>
 33. </html>
@@ -20766,31 +20928,31 @@ This time, please select multiple text files (using shift for multiple selection
 12. <textarea rows=30 cols=50 id="filesContent"></textarea>
 13. 
 14. <script>
-15. var filesContent = document.getElementById("filesContent");
+15.   var filesContent = document.getElementById("filesContent");
 16. 
-17. function readFilesAndDisplayAsText(files) {
-18.   console.log("dans read files");
-19.     // Loop through the FileList
-20.     for (var i = 0, f; f = files[i]; i++) {
+17.   function readFilesAndDisplayAsText(files) {
+18.     console.log("dans read files");
+19.       // Loop through the FileList
+20.       for (var i = 0, f; f = files[i]; i++) {
 21. 
-22.       var reader = new FileReader();
+22.         var reader = new FileReader();
 23. 
-24.       // Add an onload listener to the reader
-25.       addOnLoadListener(reader, f.name);
-26.       // start reading, will call the listener later, when the file f is read
-27.       reader.readAsText(f);
+24.         // Add an onload listener to the reader
+25.         addOnLoadListener(reader, f.name);
+26.         // start reading, will call the listener later, when the file f is read
+27.         reader.readAsText(f);
 28. 
-29.     }
-30. }
+29.       }
+30.   }
 31. 
-32. function addOnLoadListener(reader, name) {
-33.   // Add an onload listener that will be able to print the name of the
-34.   // file...
-35.   reader.onload = function(e) {
-36.     filesContent.value += "###### READING FILE " + name + " ######";
-37.     filesContent.value += e.target.result;
-38.   };
-39. }
+32.   function addOnLoadListener(reader, name) {
+33.     // Add an onload listener that will be able to print the name of the
+34.     // file...
+35.     reader.onload = function(e) {
+36.       filesContent.value += "###### READING FILE " + name + " ######";
+37.       filesContent.value += e.target.result;
+38.     };
+39.   }
 40. </script>
 41. </body>
 42. </html>
@@ -21126,6 +21288,7 @@ function readFileAndDraw(files) {
 <p align="center">
 <img src="./images/image323.webp?raw=true"
   style="width:25%"
+  title="W3C Geolocation logo/icon"
   alt="W3C Geolocation logo/icon." />
 &nbsp;
 </p>
@@ -21156,13 +21319,16 @@ function onError(err) {
 
 </details>
 
-<p><a href="https://jsbin.com/toyeley/1/edit?html,output">This online example at JSBin</a> shows how to get the current longitude and latitude and display them in an HTML page. Try it below in your browser:</p>
+<p><a href="https://jsbin.com/toyeley/1/edit?html,output">This online example at 
+JSBin</a> shows how to get the current longitude and latitude and display them in 
+an HTML page. Try it below in your browser:</p>
 
 <h4>Click the button to get your coordinates:</h4>
 
 <h4>Where am I ?</h4>
 
-<p>Note that the first time you execute this example, for privacy reasons, the browser will ask if you agree to share your position with the application.</p>
+<p>Note that the first time you execute this example, for privacy reasons, the 
+browser will ask if you agree to share your position with the application.</p>
 
 <h4>Source code of this typical example:</h4>
 
@@ -21200,19 +21366,27 @@ function onError(err) {
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 324. function getLocation in geolocation (389) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image324.webp?raw=true"
   style="width:55%"
+  title="Geolocation Callback Illustration"
   alt="Geolocation Callback Illustration." />
 </p>
 
 <h4>Explanations:</h4>
 
 <ul>
-  <li><i>Line 13</i> checks if the Web browser supports the geolocation API by testing the variable navigator.geolocation. If not null, then the geolocation API is supported.</li>
-  <li><i>Line 14</i> calls navigator.geolocation.getCurrentPosition(showPosition) passing a callback function as a parameter (in this example we did not specify a callback in case of error). When a current position is available, the callback function will be called asynchronously, and the input parameter of this callback function will be the current position, like in the function showPosition(position) of the example.</li>
-  <li><i>Line 20</i> the position objects has a coords property that is the object that holds the longitude and the latitude.</li>
+  <li><i>Line 13</i> checks if the Web browser supports the geolocation API by 
+    testing the variable navigator.geolocation. If not null, then the geolocation 
+	API is supported.</li>
+  <li><i>Line 14</i> calls navigator.geolocation.getCurrentPosition(showPosition) 
+    passing a callback function as a parameter (in this example we did not specify 
+	a callback in case of error). When a current position is available, the callback 
+	function will be called asynchronously, and the input parameter of this callback 
+	function will be the current position, like in the function showPosition(position) 
+	of the example.</li>
+  <li><i>Line 20</i> the position objects has a coords property that is the object 
+    that holds the longitude and the latitude.</li>
 </ul>
 
 <h4>External resources:</h4>
@@ -21233,26 +21407,36 @@ function onError(err) {
 <p>In the previous example, we used the coords property of the position passed as an input parameter to the callback function. This coords object has many properties:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 325. properties of the coords object (390) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image325.webp?raw=true"
   style="width:85%"
+  title="Properties of the coords object"
   alt="Properties of the coords object." />
 </p>
 
-<p>Not all these values may be available in all Web browsers. When one of these properties is null, it means that it is not available (often the case of the altitudeAccuracy)</p>
+<p>Not all these values may be available in all Web browsers. When one of these 
+properties is null, it means that it is not available (often the case of the 
+altitudeAccuracy)</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch6-4-3">6.4.3 Geolocation error codes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In the last example, we used the navigator.geolocation. getCurrentPosition(showPosition) with only one callback function (in the case of success), but it is also possible to pass a second parameter that is another callback function called in the case of error.</p>
+<p>In the last example, we used the navigator.geolocation. getCurrentPosition(showPosition) 
+with only one callback function (in the case of success), but it is also possible 
+to pass a second parameter that is another callback function called in the case 
+of error.</p>
 
-<p>A slightly different version of the previous example <a href="https://jsbin.com/bafusik/edit?html,output">shows how to properly check against the different possible errors</a>. Try it, then turn your WiFi off or unplug your Ethernet cable (or turn off GPS and 3G/4G on a mobile phone). You should see an error message Error during geolocation: Location could not be obtained though the available means":</p>
+<p>A slightly different version of the previous example 
+<a href="https://jsbin.com/bafusik/edit?html,output">
+shows how to properly check against the different possible errors</a>. Try it, 
+then turn your WiFi off or unplug your Ethernet cable (or turn off GPS and 
+3G/4G on a mobile phone). You should see an error message Error during geolocation: 
+Location could not be obtained though the available means":</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 326. geolocation error (390) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image326.webp?raw=true"
   style="width:85%"
+  title="Geolocation error"
   alt="Geolocation error." />
 </p>
 
@@ -21265,43 +21449,43 @@ function onError(err) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Basic example of use of the geolocation API</title>
+  <meta charset="utf-8">
+  <title>Basic example of use of the geolocation API</title>
 </head>
 <body>
 <p id="msg">Click the button to get your coordinates:</p>
 <button onclick="getLocation()">Where am I ?</button>
 <script>
-   var displayCoords=document.getElementById("msg");
-   function getLocation() {
-      if (navigator.geolocation) {
-         navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
-      } else {
-        displayCoords.innerHTML="Geolocation API not supported by your browser.";
-      }
-   }
-   function showPosition(position) {
-      displayCoords.innerHTML="Latitude: " + position.coords.latitude +
+  var displayCoords=document.getElementById("msg");
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
+    } else {
+      displayCoords.innerHTML="Geolocation API not supported by your browser.";
+    }
+  }
+  function showPosition(position) {
+    displayCoords.innerHTML="Latitude: " + position.coords.latitude +
                                "<br />Longitude: " + position.coords.longitude;
-   }
-   function errorPosition(error) {
-      var info = "Error during geolocation: ";
-      switch(error.code) {
-         case error.TIMEOUT:
-            info += "Timeout !";
-            break;
-         case error.PERMISSION_DENIED:
-            info += "Permission denied, geolocation could not be obtained...";
-            break;
-         case error.POSITION_UNAVAILABLE:
-            info += "Location could not be obtained though the available means...";
-            break;
-         case error.UNKNOWN_ERROR:
-            info += "Unknown error";
-            break;
-      }
-      displayCoords.innerHTML = info;
-    }
+  }
+  function errorPosition(error) {
+    var info = "Error during geolocation: ";
+    switch(error.code) {
+      case error.TIMEOUT:
+        info += "Timeout !";
+        break;
+      case error.PERMISSION_DENIED:
+        info += "Permission denied, geolocation could not be obtained...";
+        break;
+      case error.POSITION_UNAVAILABLE:
+        info += "Location could not be obtained though the available means...";
+        break;
+      case error.UNKNOWN_ERROR:
+        info += "Unknown error";
+        break;
+    }
+    displayCoords.innerHTML = info;
+  }
 </script>
 </body>
 </html>
@@ -21343,10 +21527,10 @@ to the getCurrentPosition and watchPosition methods, that will hold one or s
 following options:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 327. more properties of the coords object (392) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image327.webp?raw=true"
   style="width:85%"
+  title="More properties of the coords object"
   alt="More properties of the coords object." />
 </p>
 
@@ -21393,10 +21577,10 @@ How to get a map centered on your longitude and latitude.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 328. openstreetmap test (393) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image328.webp?raw=true"
   style="width:85%"
+  title="Example/Test OpenStreetMap"
   alt="Example/Test OpenStreetMap." />
 </p>
 
@@ -21406,10 +21590,10 @@ rel="noopener noreferrer">the Leaflet API for OpenStreetMaps</a>https:/. However
 we think having such a basic example might be useful.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 329. openstreetmap test (393) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image329.webp?raw=true"
   style="width:50%"
+  title="Example/Test OpenStreetMap"
   alt="Example/Test OpenStreetMap." />
 </p>
 
@@ -21462,20 +21646,20 @@ function error() {
 
 ```
 html, body {
-height: 100%
+  height: 100%
 }
 .map {
-height: 300px;
+  height: 300px;
 }
 .btn {
-background-color: rgba(10, 10, 230, .5);
-border: 0;
-color: #fff;
-padding: 10px;
-text-shadow: 0 0 1px rgba(0, 0, 0, .3);
-text-decoration: none;
-margin: 0.5rem 0 1rem;
-display: inline-block;
+  background-color: rgba(10, 10, 230, .5);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+  text-decoration: none;
+  margin: 0.5rem 0 1rem;
+  display: inline-block;
 }
 ```
 
@@ -21606,10 +21790,10 @@ Example #1: how to get a physical address from the longitude and latitude
 Google reverse geocoding example (screenshot only):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 330. google reverse geocoding example (396) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image330.webp?raw=true"
   style="width:45%"
+  title="Example #1 How to get a physical address from the longitude and latitude"
   alt="Example #1 How to get a physical address from the longitude and latitude." />
 </p>
 
@@ -21624,17 +21808,17 @@ Google reverse geocoding example (screenshot only):</p>
 <head>
 <meta charset="utf-8">
 <title>Js bin </title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=PUT_HERE_YOUR_API_KEY&v=3.exp&sensor=false"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=PUT_HERE_YOUR_API_KEY&v=3.exp&sensor=false"></script>
 <script>
-// p elements for displaying lat / long and address
-var displayCoords, myAddress;
-// used with the google apis
-var geocoder;
-var map;
-var infowindow = new google.maps.InfoWindow();
-var marker;
-// Called when the page is loaded
-function init() {
+  // p elements for displaying lat / long and address
+  var displayCoords, myAddress;
+  // used with the google apis
+  var geocoder;
+  var map;
+  var infowindow = new google.maps.InfoWindow();
+  var marker;
+  // Called when the page is loaded
+  function init() {
     displayCoords=document.getElementById("msg");
     myAddress = document.getElementById("address");
     geocoder = new google.maps.Geocoder();
@@ -21646,60 +21830,59 @@ function init() {
        mapTypeId: 'roadmap'
     }
     map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-} // end of init()
-// Called when the button is clicked
-function getLocation() {
+  } // end of init()
+  // Called when the button is clicked
+  function getLocation() {
     if (navigator.geolocation) {
-       navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-       displayCoords.innerHTML="Geolocation API not supported by your browser.";
-    }
-}
-// Called when a position is available
-function showPosition(position) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      displayCoords.innerHTML="Geolocation API not supported by your browser.";
+    }
+  }
+  // Called when a position is available
+  function showPosition(position) {
     displayCoords.innerHTML="Latitude: " + position.coords.latitude +
                             "<br />Longitude: " + position.coords.longitude;
     // Display the map
     showOnGoogleMap(new google.maps.LatLng(position.coords.latitude,       
                                            position.coords.longitude));
- }
-function showOnGoogleMap(latlng) {
-  // Ask google geocoder for an address once we get a longitude and
-  // a latitude. In fact, the reverse geocoder sends back an array of "guesses"
-  // i.e. not just one address object, but several. Each entry in this array
-  // has several properties such as street, city, etc. We use the "formatted_address"
-  // one here, but it might be interesting to get the detailed properties in other
-  // applications like a form with street, city, zip code etc.
-  geocoder.geocode({'latLng': latlng},reverseGeocoderSuccess);
-  function reverseGeocoderSuccess(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      if (results[1]) {
-        map.setZoom(11);
-        marker = new google.maps.Marker({
-          position: latlng,
-          map: map
-        });
-        infowindow.setContent(results[1].formatted_address);
-          infowindow.open(map, marker);
-          // Display address as text in the page
-          myAddress.innerHTML="Adress: " + results[0].formatted_address; 
-      } else {
-        alert('No surface address found');
-      }
-    } else {
-      alert('Geocoder failed due to: ' + status);
-    }
-  } // end of reverseGeocoderSuccess
-} // end of showOnGoogleMap
+  }
+  function showOnGoogleMap(latlng) {
+    // Ask google geocoder for an address once we get a longitude and
+    // a latitude. In fact, the reverse geocoder sends back an array of "guesses"
+    // i.e. not just one address object, but several. Each entry in this array
+    // has several properties such as street, city, etc. We use the "formatted_address"
+    // one here, but it might be interesting to get the detailed properties in other
+    // applications like a form with street, city, zip code etc.
+    geocoder.geocode({'latLng': latlng},reverseGeocoderSuccess);
+    function reverseGeocoderSuccess(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        if (results[1]) {
+          map.setZoom(11);
+          marker = new google.maps.Marker({
+            position: latlng,
+            map: map
+          });
+          infowindow.setContent(results[1].formatted_address);
+            infowindow.open(map, marker);
+            // Display address as text in the page
+            myAddress.innerHTML="Adress: " + results[0].formatted_address; 
+        } else {
+          alert('No surface address found');
+        }
+      } else {
+        alert('Geocoder failed due to: ' + status);
+      }
+    } // end of reverseGeocoderSuccess
+  } // end of showOnGoogleMap
 </script>
 </head>
 <body onload="init()">
-<title>HTML5 + Geolocalisation + Google Maps API Reverse Geocoding</title>
-<p id="msg">Click the button to get your coordinates:</p>
-<p id="address"></p>
-<button onclick="getLocation()">Where am I ?</button>
-<div id="map_canvas" style="width: 500px; height: 300px"></div>
-
+  <title>HTML5 + Geolocalisation + Google Maps API Reverse Geocoding</title>
+  <p id="msg">Click the button to get your coordinates:</p>
+  <p id="address"></p>
+  <button onclick="getLocation()">Where am I ?</button>
+  <div id="map_canvas" style="width: 500px; height: 300px"></div>
 </body>
 
 </html>
@@ -21711,10 +21894,10 @@ Gisgraphy (free service) reverse geocoding example (screenshot only, click on it
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 331. gisgraphy screenshot (398) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image331.webp?raw=true"
   style="width:65%"
+  title="Gisgraphy screenshot"
   alt="Gisgraphy screenshot." />
 </p>
 
@@ -21728,10 +21911,10 @@ questions are asked in this module's exercises or final exam.
 Please, pan and zoom on the map and click. The longitude and latitude are computed from your click and a free reverse geocoding service is used to convert to a physical address.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 332. reverse geocoding - openstreetmap (398) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image332.webp?raw=true"
   style="width:65%"
+  title="Reverse Geocoding - OpenStreetMap"
   alt="Reverse Geocoding - OpenStreetMap." />
 </p>
 
@@ -21755,66 +21938,66 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
   <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
   <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
   <style type="text/css">
-  body {
-  margin: 0;
-  }
-  #map {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    body {
+      margin: 0;
     }
-    </style>
-    </head>
-    <body>
-    <div id="map"></div>
-    <script type="text/javascript">
-    var map = L.map('map').setView([0, 0], 2);
-    var geocoder = L.Control.Geocoder.nominatim();
-    if (URLSearchParams && location.search) {
+    #map {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+<script type="text/javascript">
+  var map = L.map('map').setView([0, 0], 2);
+  var geocoder = L.Control.Geocoder.nominatim();
+  if (URLSearchParams && location.search) {
     // parse /?geocoder=nominatim from URL
     var params = new URLSearchParams(location.search);
     var geocoderString = params.get('geocoder');
     if (geocoderString && L.Control.Geocoder[geocoderString]) {
-    console.log('Using geocoder', geocoderString);
-    geocoder = L.Control.Geocoder[geocoderString]();
+      console.log('Using geocoder', geocoderString);
+      geocoder = L.Control.Geocoder[geocoderString]();
     } else if (geocoderString) {
-    console.warn('Unsupported geocoder', geocoderString);
+      console.warn('Unsupported geocoder', geocoderString);
     }
-    }
-    var control = L.Control.geocoder({
+  }
+  var control = L.Control.geocoder({
     query: 'Moon',
     placeholder: 'Search here...',
     geocoder: geocoder
-    }).addTo(map);
-    var marker;
-    setTimeout(function() {
+  }).addTo(map);
+  var marker;
+  setTimeout(function() {
     control.setQuery('Earth');
-    }, 12000);
-    L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  }, 12000);
+  L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-    map.on('click', function(e) {
+  }).addTo(map);
+  map.on('click', function(e) {
     console.log(e.latlng)
     geocoder.reverse(e.latlng, map.options.crs.scale(map.getZoom()), function(results) {
-    var r = results[0];
-    if (r) {
-    if (marker) {
-    marker
-    .setLatLng(r.center)
-    .setPopupContent(r.html || r.name)
-    .openPopup();
-    } else {
-    marker = L.marker(r.center)
-    .bindPopup(r.name)
-    .addTo(map)
-    .openPopup();
-    }
-    }
+      var r = results[0];
+      if (r) {
+        if (marker) {
+          marker
+          .setLatLng(r.center)
+          .setPopupContent(r.html || r.name)
+          .openPopup();
+        } else {
+          marker = L.marker(r.center)
+          .bindPopup(r.name)
+          .addTo(map)
+          .openPopup();
+        }
+      }
     });
-    });
-    </script>
+  });
+</script>
 </body>
- </html>
+</html>
 ```
 
 </details>
