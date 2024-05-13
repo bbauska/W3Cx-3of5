@@ -2616,7 +2616,7 @@ You can use heading elements &lt;h1&gt;...&lt;h6&gt; in a &lt;header&gt; but
 <img src="./images/image028.webp?raw=true"
   alt="Example structural elements."
   title="Example structural elements"
-  style="width:55%">
+  style="width:55%" />
 &nbsp;
 <br/>
 
@@ -2692,7 +2692,7 @@ If you do not want the subtitles to be included in the table of contents, just�
 <img src="./images/image029.webp?raw=true"
   alt="Outline of the previous example."
   title="Outline of the previous example"
-  style="width:45%">
+  style="width:45%" />
 &nbsp;
 <br/>
 
@@ -3066,8 +3066,9 @@ You can look at the complete CSS code in the interactive example below (click on
 <!--~~~~~~~~~~~~~ 35. header with section float left and aside float right (56) ~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image035.webp?raw=true"
-   alt="Header with section float left and aside float right."
-   width="85%" />
+  title="Header with section float left and aside float right"
+  alt="Header with section float left and aside float right."
+  width="85%" />
 &nbsp;
 <br/>
 
@@ -3077,8 +3078,9 @@ You can look at the complete CSS code in the interactive example below (click on
 <!--~~~~~~~~~~~~~~~~~ 36. michel buffa home page - 3 sections centered (56) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image036.webp?raw=true"
-   width="85%"
-   alt="Michel Buffa home page: 3 sections centered." />
+  width="85%"
+  title="Michel Buffa home page: 3 sections centered"
+  alt="Michel Buffa home page: 3 sections centered." />
 &nbsp;
 <br/>
 
@@ -3137,8 +3139,9 @@ There are many articles on Flexbox and we recommend those from Rachel Andrew on 
 <!--~~~~~~~~~~~~~~~~~~~ 38. same example using the css flex property (57) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image038.webp?raw=true"
-   alt="Same example using the CSS Flex property."
-   width="65%" />
+  title="Same example using the CSS Flex property"
+  alt="Same example using the CSS Flex property."
+  width="65%" />
 &nbsp;
 <br/>
 
@@ -3174,8 +3177,9 @@ In the screenshot below, taken from the W3C specification page, the text next 
 <!--~~~~~~~~~~~~ 40. example of summary details elements from the w3c specs (59) ~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image040.webp?raw=true"
-   alt="Example of summary details elements from the W3C specification."
-   width="35%">
+  title="Example of summary details elements from the W3C specification"
+  alt="Example of summary details elements from the W3C specification."
+  width="35%" />
 &nbsp;
 <br/>
 
@@ -3187,8 +3191,9 @@ Here is an example of what can be done using these elements: see the <a href="h
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 41. example of folded summary details (59) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image040.webp?raw=true"
+  title="Example of folded summary details"
   alt="Example of folded summary details."
-  width="35%">
+  width="35%" />
 &nbsp;
 <br/>
 
@@ -3198,8 +3203,9 @@ Here is an example of what can be done using these elements: see the <a href="h
 <!--~~~~~~~~~~~~~~~~~~~~~~ 42. Example of summary details unfolded (60) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image042.webp?raw=true"
+  title="Example of summary details unfolded"
   alt="Example of summary details unfolded."
-  width="35%">
+  width="35%" />
 &nbsp;
 <br/>
 
@@ -3235,8 +3241,9 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43. all folded (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image043.webp?raw=true"
-   alt="Other example, unfolded."
-   width="35%">
+  title="Other example, unfolded"
+  alt="Other example, unfolded."
+  width="35%" />
 &nbsp;
 <br/>
 
@@ -3246,8 +3253,9 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 44. click top level summary icon (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image044.webp?raw=true"
-   alt="The unfolded content contains in turn a summary details folded."
-   width="35%">
+  title="The unfolded content contains in turn a summary details folded"
+  alt="The unfolded content contains in turn a summary details folded."
+  width="35%" />
 &nbsp;
 <br/>
 
@@ -3257,8 +3265,9 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 45. click on embedded summary icon (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image045.webp?raw=true"
-   alt="We unfolded the summary details inside the previous summary details. Recursive accordeons!"
-   width="35%">
+  title="We unfolded the summary details inside the previous summary details. Recursive accordeons!"
+  alt="We unfolded the summary details inside the previous summary details. Recursive accordeons!"
+  width="35%" />
 &nbsp;
 <br/>
 
@@ -3297,8 +3306,9 @@ The &lt;summary&gt;...&lt;/summary&gt; is inside a &lt;details&gt;...&lt;/det
 <!--~~~~~~~~~~~~~~~~~~~~ 46. pseudo classes for styling summary icons (61) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image046.webp?raw=true"
-   alt="Styling the open/close icon."
-   width="35%">
+  title="Styling the open/close icon"
+  alt="Styling the open/close icon."
+  width="35%" />
 &nbsp;
 <br/>
 
@@ -3317,8 +3327,9 @@ summary::-webkit-details-marker {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 47. unfold and style (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image047.webp?raw=true"
-   alt="Styled summary details icon, unfolded state."
-   width="35%">
+  title="Styled summary details icon, unfolded state"
+  alt="Styled summary details icon, unfolded state."
+  width="35%" />
 &nbsp;
 <br/>
 
@@ -3341,16 +3352,18 @@ details[open] summary::-webkit-details-marker {
 <!--~~~~~~~~~~~~~~~~~~~~ 43. a '+' as a custom open icon for summary (62) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image043.webp?raw=true"
-   alt="A "+" as a custom open icon for summary."
-   width="35%">
+  title="A "+" as a custom open icon for summary"
+  alt="A "+" as a custom open icon for summary."
+  width="35%" />
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 48. a '-' as a custom close icon (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image048.webp?raw=true"
-   alt="A "-" as a custom close icon."
-   width="35%">
+  title="A "-" as a custom close icon"
+  alt="A "-" as a custom close icon."
+  width="35%" />
 &nbsp;
 <br/>
 
@@ -3383,7 +3396,8 @@ color: #FFFFFF
 
 <h4>Current browser support</h4>
 <ul>
-  <li>On CanIUse: <a href="https://caniuse.com/#feat=details" target="_blank">compatibility table for details and summary elements</a></li>
+  <li>On CanIUse: <a href="https://caniuse.com/#feat=details" target="_blank">
+    compatibility table for details and summary elements</a></li>
 </ul>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3392,8 +3406,9 @@ color: #FFFFFF
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 49. it's about time clock (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image049.webp?raw=true"
-   alt="Picture of a clock with the words 'it's about time'"
-   width="20%">
+  title="Picture of a clock with the words 'it's about time'"
+  alt="Picture of a clock with the words 'it's about time'."
+  width="20%" />
 &nbsp;
 <br/>
 
@@ -3449,22 +3464,35 @@ The machine readable part adds semantics that can be used by search engines for 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 50. duration values (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image050.webp?raw=true"
-   alt="Funny picture duration values"
-   width="20%">
+  title="Funny picture duration values"
+  alt="Funny picture duration values."
+  width="20%" />
 &nbsp;
 <br/>
 
-<p>So you start the attribute string value with a "P", followed by a duration value that ends with another letter indicating the unit used: "D" for "days",  "H" for hours, "M" for minutes and "S" for seconds. 
+<p>So you start the attribute string value with a "P", followed by a duration 
+value that ends with another letter indicating the unit used: "D" for "days",  
+"H" for hours, "M" for minutes and "S" for seconds. 
 
-You can separate the different elements "P", value and unit with spaces, but this is optional. So <time datetime="P4D"> is a duration of 4 days, as is <time datetime="P 4 D">.
+You can separate the different elements "P", value and unit with spaces, but 
+this is optional. So &lt;time datetime="P4D"&gt; is a duration of 4 days, as is 
+&lt;time datetime="P 4 D"&gt;.
 
-Using a "T" after the "P" marker allows you to indicate a more accurate duration time: &lt;time datetime="PT4H 6M 12.55S"&gt; is a duration of 4 hours, 6 minutes and 12.55 seconds.
+Using a "T" after the "P" marker allows you to indicate a more accurate duration 
+time: &lt;time datetime="PT4H 6M 12.55S"&gt; is a duration of 4 hours, 6 minutes 
+and 12.55 seconds.
 
 Alternatively, you could use also a duration time component.
 
-From Bruce Lawson's article : <i>"Whichever you choose, it's represented internally as a number of seconds. Because of this, you can't specify a duration in terms of months, because a month isn't a precise number of seconds; a month can last from 28 to 31 days. Similarly, a year isn't a precise number of seconds; it's 12 months and February sometimes has an extra day.</i>
+From Bruce Lawson's article : <i>"Whichever you choose, it's represented internally 
+as a number of seconds. Because of this, you can't specify a duration in terms of 
+months, because a month isn't a precise number of seconds; a month can last from 
+28 to 31 days. Similarly, a year isn't a precise number of seconds; it's 12 months 
+and February sometimes has an extra day.</i>
 
-<i>You still can't represent dates before the Christian era, as years can't be negative. Neither can you indicate date ranges. To mark up From "21/02/2012 to 25/02/2012″, use two separate <time> elements."</i></p>
+<i>You still can't represent dates before the Christian era, as years can't be 
+negative. Neither can you indicate date ranges. To mark up From "21/02/2012 to 25/02/2012″, 
+use two separate <time> elements."</i></p>
 
 <h4>Examples:</h4>
 
@@ -3494,8 +3522,9 @@ From Bruce Lawson's article : <i>"Whichever you choose, it's represented intern
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 51. yellow highlighter pen (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image051.webp?raw=true"
-   alt="Picture of a yellow hightlighter pen."
-   width="45%">
+  title="Picture of a yellow hightlighter pen"
+  alt="Picture of a yellow hightlighter pen."
+  width="45%" />
 &nbsp;
 <br/>
 
@@ -3530,8 +3559,9 @@ The HTML <mark> tag is used for indicating text as marked or highlighted for r
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 52. another example for marking code (66) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image052.webp?raw=true"
-   alt="Another example for marking code."
-   width="45%">
+  title="Another example for marking code"
+  alt="Another example for marking code."
+  width="45%" />
 &nbsp;
 <br/>
 
@@ -3555,6 +3585,7 @@ If you don't like the default yellow background, you may use CSS to change the s
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 53. style the mark element with CSS (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image053.webp?raw=true"
+  title="Style the mark element with CSS"
   alt="Style the mark element with CSS."
   width="45%" />
 &nbsp;
@@ -3668,9 +3699,9 @@ This will indeed force the download of an image with a filename different from i
 <!--~~~~~~~~~~ 55. image saved with another names thanks to the download attribute (68) ~~~~~~~~-->
 <p align="center">
 <img src="./images/image055.webp?raw=true"
-   alt="Image saved with another name thanks to the download attribute."
-   title="Image saved with another name thanks to the download attribute"
-   style="width:25%" />
+  alt="Image saved with another name thanks to the download attribute."
+  title="Image saved with another name thanks to the download attribute"
+  style="width:25%" />
 &nbsp;
 <br/>
 
@@ -3681,8 +3712,9 @@ This will indeed force the download of an image with a filename different from i
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 56. no servers picture (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image056.webp?raw=true"
-   alt="No server picture."
-   width="35%">
+  title="No server picture"
+  alt="No server picture."
+  width="35%" />
 &nbsp;
 <br/>
 
@@ -3697,8 +3729,13 @@ We have also put the simplified <a href="https://jsbin.com/muluwey/1/edit?html,
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 57. serverless download demo (69) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image057.webp?raw=true"
-   alt="Serverless download demo: type text in a text area, press download, enter a filename and voilà! you can download the textarea content into a file, without any server."
-   width="50%">
+  title="Serverless download demo: type text in a text area, press download, 
+    enter a filename and voilà! you can download the textarea content into a 
+	file, without any server"
+  alt="Serverless download demo: type text in a text area, press download, 
+    enter a filename and voilà! you can download the textarea content into 
+	a file, without any server."
+  width="50%" />
 &nbsp;
 <br/>
 
@@ -3872,8 +3909,9 @@ This information is not visible to humans: it is pure <i>semantic information<
 <!--~~~~~~~~~~~~~~~~~~~~ 58. picture of diverse tools used by workers (72) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image058.webp?raw=true"
-   alt="Picture of diverse tools used by workers."
-   width="20%">
+  title="Picture of diverse tools used by workers"
+  alt="Picture of diverse tools used by workers."
+  width="20%" />
 &nbsp;
 <br/>
 
@@ -3881,7 +3919,10 @@ One of the most popular resources for testing microdata (as well as microformats
 
 <h4>Testing a real interactive example with an "about page" for Michel Buffa</h4>
 
-Let's have a look now at a (small) example of an about page. It renders as a very simple paragraph that explains who Michel Buffa is... But we embedded Microdata, so it's interesting to see how a search engine sees it, and how it may produce "augmented search results".
+Let's have a look now at a (small) example of an about page. It renders as a 
+very simple paragraph that explains who Michel Buffa is... But we embedded 
+Microdata, so it's interesting to see how a search engine sees it, and how 
+it may produce "augmented search results".
 
 <a href="https://jsbin.com/gunuzus/1/edit?html,output">Online example at JsBin</a>
 
@@ -3923,8 +3964,9 @@ Let's have a look now at a (small) example of an about page. It renders as a ver
 <!--~~~~~~~~~~~~~~~~~~~~~~ 59. rendering of michel buffa home page (73) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image059.webp?raw=true"
-   alt="Rendering of Michel Buffa home page."
-   width="65%">
+  title="Rendering of Michel Buffa home page"
+  alt="Rendering of Michel Buffa home page."
+  width="65%" />
 &nbsp;
 <br/>
 
@@ -3935,7 +3977,8 @@ Here is what Google sees of the page. We just entered its <a href="https://out
 <p align="center">
 <img src="./images/image060.webp?raw=true"
   style="width:50%"
-   alt="Microdata of the example, as seen by Google." />
+  title="Microdata of the example, as seen by Google"
+  alt="Microdata of the example, as seen by Google." />
 &nbsp;
 <br/>
 
@@ -3943,13 +3986,15 @@ Note that the address is a fully featured embedded object in the Person's descri
 
 <h4>Live Microdata</h4>
 
-The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
+The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> 
+is a bit similar to the previous one except that it shows the extracted metadata as JSON objects: 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 61. example live microdata (74) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image061.webp?raw=true"
   style="width:60%"
-   alt="Example of live microdata from the previous example. Microdata are displayed as json objects." />
+  title="Example of live microdata from the previous example. Microdata are displayed as json objects"
+  alt="Example of live microdata from the previous example. Microdata are displayed as json objects." />
 &nbsp;
 <br/>
 
@@ -3959,7 +4004,8 @@ The <a href="https://foolip.org/microdatajs/live/">Live Microdata Web site</a> i
 <p align="center">
 <img src="./images/image062.webp?raw=true"
   style="width:40%"
-   alt="JSON view of the microdata." />
+  title="JSON view of the microdata"
+  alt="JSON view of the microdata." />
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4005,14 +4051,21 @@ If you are a developer and if you are familiar with object oriented programming,
 <p align="center">
 <img src="./images/image063.webp?raw=true"
   style="width:25%"
-   alt="Picture with words 'time to share'." />
+  title="Picture with words 'time to share'"
+  alt="Picture with words 'time to share'." />
 &nbsp;
 <br/>
-<p>
-If one of the existing vocabularies available at the schema.org Web site fits your needs, you should reuse it, as the most popular vocabularies are becoming de facto standards and will be taken into account by Web crawlers, browsers, and browser extensions.
 
-However, if you do not find a vocabulary corresponding to your needs, keep in mind that anyone can define a microdata vocabulary and start embedding custom properties in their own Web pages. You need to define a namespace and put a description of your vocabulary in a Web page that has the name of your vocabulary.
-</p>
+<p>If one of the existing vocabularies available at the schema.org Web site fits 
+your needs, you should reuse it, as the most popular vocabularies are becoming de 
+facto standards and will be taken into account by Web crawlers, browsers, and 
+browser extensions.</p>
+
+<p>However, if you do not find a vocabulary corresponding to your needs, keep in 
+mind that anyone can define a microdata vocabulary and start embedding custom 
+properties in their own Web pages. You need to define a namespace and put a 
+description of your vocabulary in a Web page that has the name of your vocabulary.</p>
+
 <h4>3 - Add properties using the itemprop attribute in HTML elements inside the container</h4>
 
 <h4>Basics:</h4>
@@ -4049,25 +4102,29 @@ However, if you do not find a vocabulary corresponding to your needs, keep in mi
 
 </details>
 
-<p>
-In this example, the container is a &lt;section&gt; that corresponds to a Person (we have one clue here: the name of the vocabulary given by the itemtype attribute), and each property defined inside this section is identified by the value of the itemprop attribute of sub-elements.
-</p>
+<p>In this example, the container is a &lt;section&gt; that corresponds to a Person 
+(we have one clue here: the name of the vocabulary given by the itemtype attribute), 
+and each property defined inside this section is identified by the value of the 
+itemprop attribute of sub-elements.</p>
+
 <h4>The line:</h4>
 
 ```
 <dd itemprop="name"Michel Buffa</dd>
 ```
 
-<p>
-...defines a property called "name" that has a value of "Michel Buffa" (the text value between the opening and closing tags of the &lt;dd&gt; element).
-</p>
+<p>...defines a property called "name" that has a value of "Michel Buffa" (the text 
+value between the opening and closing tags of the &lt;dd&gt; element).</p>
 
 <h4>Nesting microdata items</h4>
 
-<p>As we saw with the Person/Address example at the beginning of this chapter, it is possible to nest microdata items inside one another.
+<p>As we saw with the Person/Address example at the beginning of this chapter, it 
+is possible to nest microdata items inside one another.</p>
 
-Give an element inside a microdata container its own itemscope attribute with the recommended itemtype attribute for indicating the name of the vocabulary used by the nested microdata.
-</p>
+<p>Give an element inside a microdata container its own itemscope attribute with the 
+recommended itemtype attribute for indicating the name of the vocabulary used by 
+the nested microdata.</p>
+
 <h4>Again, look at the Person/Address example:</h4>
 
 <details>
@@ -4099,11 +4156,14 @@ Give an element inside a microdata container its own itemscope attribute wit
 </details>
 
 <p>
-The properties at <i>lines 8-12</i> refer to the address nested microdata (they are defined in the Address vocabulary, not the Person vocabulary), and "France" (<i>line 14</i>) is a property that refers to the Country vocabulary.
+The properties at <i>lines 8-12</i> refer to the address nested microdata (they 
+are defined in the Address vocabulary, not the Person vocabulary), and "France" 
+(<i>line 14</i>) is a property that refers to the Country vocabulary.
 </p>
 <h4>Several properties with the same name but different values</h4>
 
-<p>It is possible to use the same property name several times in one microdata object, but with different values:</p>
+<p>It is possible to use the same property name several times in one microdata 
+object, but with different values:</p>
 
 ```
 1.  ...
@@ -4117,11 +4177,14 @@ The properties at <i>lines 8-12</i> refer to the address nested microdata (the
 ```
 
 <p>
-This defines the fact that Michel Buffa has two online accounts, and the two properties have the name url, each with its own value.
+This defines the fact that Michel Buffa has two online accounts, and the two 
+properties have the name url, each with its own value.
 
 <h4>It is possible to set more than one property at once, with the same value</h4>
 <p>
-Here are some microdata that represent a song. In this example, at line 5 we set  two different properties: genre and keywords with the same value (see the <a href="https://schema.org/MusicRecording">MusicRecording schema definition</a>):
+Here are some microdata that represent a song. In this example, at line 5 we 
+set  two different properties: genre and keywords with the same value (see the 
+<a href="https://schema.org/MusicRecording">MusicRecording schema definition</a>):
 </p>
 
 ```
@@ -4136,7 +4199,9 @@ Here are some microdata that represent a song. In this example, at line 5 we
 
 <p>And so on...
 
-Now, let's see what elements are compatible with the itemprop attribute and where the values of the properties are located, depending on each element type.</p>
+Now, let's see what elements are compatible with the itemprop attribute and where 
+the values of the properties are located, depending on each element type.</p>
+
 <h4>The HTML elements compatible with the itemprop attribute</h4>
 
 <p>If the itemprop attribute appears on a:</p>
@@ -4174,11 +4239,17 @@ For example, the value of a property defined in an &lt;img&gt; element will be
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch1-5-4">1.5.4 Microdata Tools</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>There are many tools available (most are free) that you can use for generating, visualizing and debugging microdata. We list some of them in this page, but feel free to share the tools you find / like in the forums.</p>
+<p>There are many tools available (most are free) that you can use for generating, 
+visualizing and debugging microdata. We list some of them in this page, but feel 
+free to share the tools you find / like in the forums.</p>
 
 <h4>Microdata generators</h4>
 
-To automatically generate microdata for describing persons, restaurants, movies, products, organizations, etc., there is a wide variety of microdata generators such as these listed below (but do not hesitate to search for "microdata generators" using your favorite search engine, and you will find lots!):
+To automatically generate microdata for describing persons, restaurants, movies, 
+products, organizations, etc., there is a wide variety of microdata generators 
+such as these listed below (but do not hesitate to search for "microdata generators" 
+using your favorite search engine, and you will find lots!):
+
 <ul>
   <li>The <a href="https://webcode.tools/microdata-generator">Ultimate Microdata Generator</a></li>
   <li>The <a href="https://microdatagenerator.org/">MicroData Generator</a></li>
@@ -4191,7 +4262,10 @@ To automatically generate microdata for describing persons, restaurants, movie
 <p align="center">
 <img src="./images/image064.webp?raw=true"
   style="width:65%"
-   alt="Example of generator. I entered my name, job, city in a form and a text area next to it shows the corresponding HTML microdata." />
+  title="Example of generator. I entered my name, job, city in a form and a 
+    text area next to it shows the corresponding HTML microdata"
+  alt="Example of generator. I entered my name, job, city in a form and a 
+    text area next to it shows the corresponding HTML microdata." />
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4223,7 +4297,8 @@ Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output">example #1 on
 <p align="center">
 <img src="./images/image066.webp?raw=true"
   style="width:50%"
-   alt="Microdata from the example page." />
+  title="Microdata from the example page"
+  alt="Microdata from the example page." />
 &nbsp;
 <br/>
 
@@ -4235,7 +4310,8 @@ View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 onlin
 <p align="center">
 <img src="./images/image067.webp?raw=true"
   style="width:50%"
-   alt="Example page, shows table of contents." />
+  title="Example page, shows table of contents"
+  alt="Example page, shows table of contents." />
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4379,24 +4455,41 @@ Notice the other similarities: between the &lt;audio&gt;...&lt;audio&gt; tags,
 <h3 name="ch2-2-3">2.2.3 Attributes of &lt;video&gt; and &lt;audio&gt;</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Most useful attributes of the &lt;video&gt; element</h4>
+
 <p>
 Here are the most common attributes you can use with the &lt;video&gt; element. They are self explanatory...</p>
+
 <ul>
   <li>src: source of the video.</li>
-  <li>width and height: size of the video. If unspecified, the default width and height of the video will be used. If you specify one dimension but not the other, the browser will adjust the size of the unspecified dimension to preserve the aspect ratio of the video.</li>
-  <li>controls: If this boolean attribute is present, the browser displays its own controls for video playback and volume.</li>
-  <li>poster: This attribute allows you to specify an image that the browser will use while video is being downloaded, or until the user starts playing the video. If this attribute is not specified, the first frame of the video will be used instead.</li>
-  <li>autoplay: This attribute asks the browser to start playing the video automatically as soon as the page is ready.</li>
-  <li>preload:  The preload attribute is used when autoplay is not used. It tells the browser what to do before a user plays a video. This attribute is a hint - the browser may ignore it. While autoplay and preload are mutually exclusive, if both are present, then preload is ignored. Possible values:</li>
-<ul>
-     <li>none: do nothing. This saves bandwidth, no video will be downloaded in background before a user or a call to the play() method starts playing the video.</li>
-   <li>metadata: download metadata, such as length of the video or its format.</li>
-   <li>auto (default value): the browser will decide. This will depend on the implementation, and on the kind of connection: wifi, 3G, data roaming etc.</li>
-   </ul>
-<li>loop: Another boolean attribute that indicates to play the video in loop mode (and it starts again when finished).</li>
+  <li>width and height: size of the video. If unspecified, the default width and 
+    height of the video will be used. If you specify one dimension but not the 
+	other, the browser will adjust the size of the unspecified dimension to 
+	preserve the aspect ratio of the video.</li>
+  <li>controls: If this boolean attribute is present, the browser displays its 
+    own controls for video playback and volume.</li>
+  <li>poster: This attribute allows you to specify an image that the browser 
+    will use while video is being downloaded, or until the user starts playing 
+	the video. If this attribute is not specified, the first frame of the video 
+	will be used instead.</li>
+  <li>autoplay: This attribute asks the browser to start playing the video 
+    automatically as soon as the page is ready.</li>
+  <li>preload:  The preload attribute is used when autoplay is not used. It 
+    tells the browser what to do before a user plays a video. This attribute 
+	is a hint - the browser may ignore it. While autoplay and preload are 
+	mutually exclusive, if both are present, then preload is ignored. Possible values:</li>
+    <ul>
+      <li>none: do nothing. This saves bandwidth, no video will be downloaded in 
+        background before a user or a call to the play() method starts playing the video.</li>
+      <li>metadata: download metadata, such as length of the video or its format.</li>
+      <li>auto (default value): the browser will decide. This will depend on the 
+        implementation, and on the kind of connection: wifi, 3G, data roaming etc.</li>
+    </ul>
+  <li>loop: Another boolean attribute that indicates to play the video in loop 
+    mode (and it starts again when finished).</li>
 </ul>
 
 <h4> Be careful if you target mobile applications or if you have multiple videos on the same page</h4>
+
 <p>
 The autoplay attribute is not recommended if your Web site targets mobile applications (actually, it is often ignored by mobile browsers), as it may consume bandwidth even if the user is not interested in watching the proposed video. If you target mobile devices, we recommend using preload=none as well, as the default value for this attribute is auto.
 
@@ -4407,33 +4500,46 @@ The autoplay attribute is not recommended if your Web site targets mobile app
 If the poster attribute is missing, usually the first non-blank frame of the video will be used as the image that is shown when the video is not playing.</p>
 
 <h4>About the autoplay attribute for general use</h4>
+
 <p>
 Do not abuse of the autoplay attribute. We talked earlier about mobile applications, but even on desktop applications it's usually a bad idea to use it (except for WebCams and for some animations with small video loops, without sound, or for sites like YouTube, with just videos).
 
 <b>Best practice</b>: think twice before using the autoplay attribute, even for desktop applications.</p>
 
 <h4>Attributes of the &lt;audio&gt; element</h4>
-<p>
-The attributes you can use with the &lt;audio&gt; element are a subset of those available for the &lt;video&gt; element. Except for the poster attribute, they are all recognized and have the expected meanings: </p>
+
+<p>The attributes you can use with the &lt;audio&gt; element are a subset of those 
+available for the &lt;video&gt; element. Except for the poster attribute, they 
+are all recognized and have the expected meanings: </p>
+
 <ul>
   <li>src: source of an audio stream.</li>
-  <li>controls: if this attribute is present, the browser displays its own controls for audio playback and volume.</li>
-  <li>autoplay: tells the browser to start playing the audio stream automatically as soon as the page is ready - please read details in the above table.</li>
-  <li>preload: tells the browser what to do before a user plays a sound - please read details in the above table.</li>
+  <li>controls: if this attribute is present, the browser displays its own controls 
+    for audio playback and volume.</li>
+  <li>autoplay: tells the browser to start playing the audio stream automatically as 
+    soon as the page is ready - please read details in the above table.</li>
+  <li>preload: tells the browser what to do before a user plays a sound - please 
+    read details in the above table.</li>
   <li>loop:  indicates to play the audio stream in loop mode (start again when finished).</li>
 </ul>
 
 <p>
-As with the &lt;video&gt; element, the same best practice in regard to preload and autoplay attributes should be followed.</p>
+As with the &lt;video&gt; element, the same best practice in regard to preload 
+and autoplay attributes should be followed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch2-2-4">2.2.4 Styling Media Players with CSS</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The &lt;video&gt; and &lt;audio&gt; elements are just like other HTML elements, so CSS can be used for styling, including CSS transitions, animations, etc.</p>
+<p>The &lt;video&gt; and &lt;audio&gt; elements are just like other HTML elements, 
+so CSS can be used for styling, including CSS transitions, animations, etc.</p>
 
 <h4>An example of an audio player with some style</h4>
-<p>You can try this example <a href="https://jsbin.com/zoquru/2/edit?html,css,output">online at JSBin</a>.
+<p>You can try this example <a href="https://jsbin.com/zoquru/2/edit?html,css,output">
+online at JSBin</a>.
 
-To add some styling to the basic example we saw when we introduced the &lt;audio&gt; element, we just add a &lt;figure&gt; with two children: an &lt;img&gt; and a &lt;figcaption&gt;. Inside the &lt;figcaption&gt; we add the &lt;audio&gt; element from the previous example.
+To add some styling to the basic example we saw when we introduced the &lt;audio&gt; 
+element, we just add a &lt;figure&gt; with two children: an &lt;img&gt; and 
+a &lt;figcaption&gt;. Inside the &lt;figcaption&gt; we add the &lt;audio&gt; 
+element from the previous example.
 
 Please move the mouse pointer over this player's elements: (does not work in git)</p>
 
@@ -4474,9 +4580,9 @@ Please move the mouse pointer over this player's elements: (does not work in git
   alt="Two gery-black horses in a field." />
 &nbsp;
 <br/>
-<p>
-Press Play to hear the horse ! (<i><b>does not work</b></i> in git)
-</p>
+
+<p>Press Play to hear the horse ! (<i><b>does not work</b></i> in git)</p>
+
 <h4>HTML source code:</h4>
 
 <details>
@@ -4566,11 +4672,14 @@ See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output">example onlin
 <p align="center">
 <img src="./images/image071.webp?raw=true"
   style="width:60%"
-   alt="Tilted screen example using pseudo css class: hover." />
+  title="Tilted screen example using pseudo css class: hover"
+  alt="Tilted screen example using pseudo css class: hover." />
 &nbsp;
 <br/>
-<p>
-This example uses the pseudo CSS class :hover in order to track the mouseover event. On mouseover, it uses a CSS transition property that interpolates the changes in the scale and orientation of the video element (done using a transform CSS property).</p>
+
+<p>This example uses the pseudo CSS class :hover in order to track the mouseover event. 
+On mouseover, it uses a CSS transition property that interpolates the changes in the 
+scale and orientation of the video element (done using a transform CSS property).</p>
 
 <h4>The corresponding HTML source code is:</h4>
 
@@ -4604,9 +4713,13 @@ This example uses the pseudo CSS class :hover in order to track the mouseover
 
 <p>This is a trendy way of displaying videos.
 
-Below you will find two examples that show how to do this trick. The first is for a "regular" video, using the &lt;video&gt; and &lt;source&gt; elements. This technique can also be used on any YouTube embedded videos (see Example #2 below).
+Below you will find two examples that show how to do this trick. The first is for a "regular" 
+video, using the &lt;video&gt; and &lt;source&gt; elements. This technique can also be used 
+on any YouTube embedded videos (see Example #2 below).
 
-The interesting part is that we use a 100% standard (and really small and simple) JavaScript code here to handle the window resize events and we just set regular CSS properties width and height of the video element, to resize the video.
+The interesting part is that we use a 100% standard (and really small and simple) JavaScript 
+code here to handle the window resize events and we just set regular CSS properties width and 
+height of the video element, to resize the video.
 
 Example #1: with a regular video
 
@@ -4621,7 +4734,8 @@ Full width, resizable, borderless video, just using plain CSS and JS DOM events.
 &nbsp;
 <br/>
 
-<h4>Here is the HTML code. It's really simple, just notice the &lt;body onload="init();"&gt; which calls the JavaScript init() function right after the page is loaded.</h4>
+<h4>Here is the HTML code. It's really simple, just notice the &lt;body onload="init();"&gt; 
+which calls the JavaScript init() function right after the page is loaded.</h4>
 
 <details>
  <summary>Click to Toggle!</summary>
@@ -4692,14 +4806,18 @@ Full width, resizable, borderless YouTube video. To do this: just 100% standard 
   alt="Example video cropping." />
 &nbsp;
 <br/>
-<p>
-The CSS and JavaScript codes for this example are exactly the same as in Example #1.
-</p>
+
+<p>The CSS and JavaScript codes for this example are exactly the same as in Example #1.</p>
+
 <h4>Full screen video, pure CSS approaches</h4>
+
 <p>
   1.  Let's use the video from the PayPal Web site, played full screen using only very simple CSS.
 </p>
-<p>In this example, the video does not rescale; it's just cropped if the browser window is resized. Enlarge your browser and you'll see a man with a phone on the right. Resize your browser and you'll see only part of the video.</p>
+
+<p>In this example, the video does not rescale; it's just cropped if the browser 
+window is resized. Enlarge your browser and you'll see a man with a phone on the 
+right. Resize your browser and you'll see only part of the video.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 74. full screen video (90) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -4728,7 +4846,11 @@ video {
 <p>
 2.  Full screen video with CSS effects
 
-This time the video is zoomed in so that it's much bigger than the browser's window. When we resize the browser, the part of the video that is visible adapts itself. It's not "real resize" of the video. Try this <a href="https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">example and read the explanation in this article by Dudley Storey</a>.</p>
+This time the video is zoomed in so that it's much bigger than the browser's window. 
+When we resize the browser, the part of the video that is visible adapts itself. 
+It's not "real resize" of the video. Try this 
+<a href="https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">
+example and read the explanation in this article by Dudley Storey</a>.</p>
 
 <h4>HTML code:</h4>
 
@@ -4798,9 +4920,12 @@ header video {
 
 <h4>The trick here is that:</h4>
 <p>
-  1.  The video is in the header, and the header has a plotted transparent background image ("dots.png") that is repeated in X and Y (see <i>lines 8</i> and <i>9</i>).
+  1.  The video is in the header, and the header has a plotted transparent background 
+    image ("dots.png") that is repeated in X and Y (see <i>lines 8</i> and <i>9</i>).
 
-  2.  The video is positioned so that it's origin (top left corner) is away from the visible surface (<i>line 25</i>), while it is set to take 100% of the surface (<i>lines 20</i> and <i>21</i>).
+  2.  The video is positioned so that it's origin (top left corner) is away from 
+    the visible surface (<i>line 25</i>), while it is set to take 100% of the 
+	surface (<i>lines 20</i> and <i>21</i>).
 </p>
 <p>Full screen video that resizes and keeps its ratio, using the viewport units.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4808,7 +4933,8 @@ header video {
 <p align="center">
 <img src="./images/image075.webp?raw=true"
   style="width:65%"
-   alt="Full screen video that resized and keeps its ratio using viewport units." />
+  title="Full screen video that resized and keeps its ratio using viewport units"
+  alt="Full screen video that resized and keeps its ratio using viewport units." />
 &nbsp;
 <br/>
 <p>
@@ -4886,33 +5012,54 @@ Please look at this interesting example:
 <p align="center">
 <img src="./images/image076.webp?raw=true"
   style="width:65%"
-   alt="How to call the play/pause/rewind functions." />
+  title="How to call the play/pause/rewind functions"
+  alt="How to call the play/pause/rewind functions." />
 &nbsp;
 <br/>
 <p>
-Note that in order to play the video, you must click on the "vid.play()" text. To pause it, you click on the "vid.pause()" text, and so on. <i>Notice the text at the top of the video, as well as the transparency.</i> The text can be selected, since all the elements displayed are pure DOM objects. You can zoom the page in and out, etc. This was not possible with the Flash technology.
+Note that in order to play the video, you must click on the "vid.play()" text. 
+To pause it, you click on the "vid.pause()" text, and so on. <i>Notice the text 
+at the top of the video, as well as the transparency.</i> The text can be selected, 
+since all the elements displayed are pure DOM objects. You can zoom the page in 
+and out, etc. This was not possible with the Flash technology.
 </p>
 
-<b>Conclusion</b>:  you can very easily change the look and feel of the standard video player by using custom CSS and designing your own control widgets. We can find many examples of such video players that offer extended functionalities on the Web. We will present some of them later in the course, but before that, let's see a little more of what we can do using the JavaScript API of the &lt;video&gt; element (it will be an identical approach for the &lt;audio&gt; element, since it shares the same API by a very small margin).
+<b>Conclusion</b>:  you can very easily change the look and feel of the standard 
+video player by using custom CSS and designing your own control widgets. We can 
+find many examples of such video players that offer extended functionalities on 
+the Web. We will present some of them later in the course, but before that, let's 
+see a little more of what we can do using the JavaScript API of the &lt;video&gt; 
+element (it will be an identical approach for the &lt;audio&gt; element, since it 
+shares the same API by a very small margin).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch2-2-6">2.2.6 The JavaScript API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h4>Methods, properties, and events</h4>
 <p>
-The JavaScript API gives you powerful tools to manipulate the &lt;video&gt; element, as the video object provides many properties, methods and events.
+The JavaScript API gives you powerful tools to manipulate the &lt;video&gt; 
+element, as the video object provides many properties, methods and events.
 
-The complete list of events can be found in the <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#event-definitions">HTML5 living standard specification</a>.
+The complete list of events can be found in the 
+<a href="https://html.spec.whatwg.org/multipage/embedded-content.html#event-definitions">
+HTML5 living standard specification</a>.
 
-The list of properties can be found at the <a href="https://www.w3.org/2010/05/video/mediaevents.html">W3C HTML5 Video Events and API</a> page. This page is interesting for Web developers because it shows an interactive view of the different values and events changing over time while the video is playing within the page.
+The list of properties can be found at the <a href="https://www.w3.org/2010/05/video/mediaevents.html">
+W3C HTML5 Video Events and API</a> page. This page is interesting for Web developers 
+because it shows an interactive view of the different values and events changing over 
+time while the video is playing within the page.
 
-Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link</a>, and play with the different buttons and look at the table of events and properties that will change in real time. The displayed names show the properties, events, and methods from the API.
+Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html">direct link</a>, 
+and play with the different buttons and look at the table of events and properties 
+that will change in real time. The displayed names show the properties, events, and 
+methods from the API.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 77. html5 video events and api (95) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image077.webp?raw=true"
   style="width:65%"
+  title="HTML5 video events and API"
   alt="HTML5 video events and API." />
 &nbsp;
 <br/>
@@ -5141,10 +5288,10 @@ page); if you are interested, you may view the code.</p>
 Chris Heilmann</a>, and tuned by us ;).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 82. 2d transformations: scale, translate  rotate (100) ~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image082.webp?raw=true"
   style="width:85%"
+  title="2d transformations, scale, translate, rotate"
   alt="2d transformations, scale, translate, rotate." />
 &nbsp;
 
@@ -5168,7 +5315,8 @@ and the CSS that processes the different clicks and applies CSS3 transforms.</
 <p align="center">
 <img src="./images/image083.webp?raw=true"
   style="width:65%"
-  alt="Example #2. How to track all possible events.." />
+  title="Example #2. How to track all possible events"
+  alt="Example #2. How to track all possible events." />
 &nbsp;
 
 <p>
@@ -5224,7 +5372,8 @@ See the <a href="https://jsbin.com/xororol/3/edit?html,output">example online</
 <p align="center">
 <img src="./images/image084.webp?raw=true"
   style="width:65%"
-   alt="Example #3. How to display a percentage of buffering." />
+  title="Example #3. How to display a percentage of buffering"
+  alt="Example #3. How to display a percentage of buffering." />
 &nbsp;
 
 <p>Note that on mobile phones, the video does not start until the user presses the play 
@@ -5305,7 +5454,10 @@ online</a>) is given "as is" for those of you who may be curious.
 <p align="center">
 <img src="./images/image085.webp?raw=true"
   style="width:25%"
-   alt="Example #4. Snapshot of the Online Example of a Custom XHTML5/SVG Video Player.  Image Shows a Cup of Coffee on a Table." />
+  title="Example #4. Snapshot of the Online Example of a Custom XHTML5/SVG Video Player. 
+    Image Shows a Cup of Coffee on a Table"
+  alt="Example #4. Snapshot of the Online Example of a Custom XHTML5/SVG Video Player. 
+    Image Shows a Cup of Coffee on a Table." />
 &nbsp;
 
 <h4>Example #5: a custom video player written by a previous student</h4>
@@ -5365,7 +5517,8 @@ Here is an example of a video element that includes a &lt;track&gt; element in
 <p align="center">
 <img src="./images/image086.webp?raw=true"
   style="width:65%"
-   alt=""Example using a track element in the .vtt format." />
+  title=""Example using a track element in the .vtt format"
+  alt=""Example using a track element in the .vtt format." />
 &nbsp;
 <br/>
 
@@ -5593,7 +5746,8 @@ So, let's suppose you have a video like the one below (we included it on YouTube
 <p align="center">
 <img src="./images/image087.webp?raw=true"
   style="width:45%"
-   alt="Picture guitar picking." />
+  title="Picture guitar picking"
+  alt="Picture guitar picking." />
 &nbsp;
 
 And if you've also got it in mp4/H264 and in webm formats, here is how you can embed it in your page using the video element:
@@ -5616,32 +5770,44 @@ At <i>line 9</i>, we added a &lt;track&gt; element to add English subtitles
 
 <h4>Adding subtitles to the video</h4>
 <p>
-Now, we need to create a WebVTT file for this video. How can we synchronize an English translation of what the guitar teacher says in French?
+Now, we need to create a WebVTT file for this video. How can we synchronize an English 
+translation of what the guitar teacher says in French?
 
-Many tools - both free and commercial - are available to add subtitles to a video. Most are native applications you need to install on your computer. However, a free and very practical tool is available for doing this 100% in a Web browser: <a href="https://amara.org/en/">amara</a>.
+Many tools - both free and commercial - are available to add subtitles to a video. Most are 
+native applications you need to install on your computer. However, a free and very practical 
+tool is available for doing this 100% in a Web browser: <a href="https://amara.org/en/">amara</a>.
 
-Go to the above Web site, click on the "subtitle a video" link, then follow the different tutorials/instructions. It will ask for a YouTube URL, so it's better to first upload your video to YouTube (even in private mode). Once you have entered the URL of your video, you will have an online subtitles/caption editor. Enter your subtitles and sync them until you are happy with the results.
+Go to the above Web site, click on the "subtitle a video" link, then follow the different 
+tutorials/instructions. It will ask for a YouTube URL, so it's better to first upload your 
+video to YouTube (even in private mode). Once you have entered the URL of your video, you 
+will have an online subtitles/caption editor. Enter your subtitles and sync them until you 
+are happy with the results.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 88. example subtitles and captions (109) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image088.webp?raw=true"
   style="width:40%"
+  title="Example subtitles and captions"
   alt="Example subtitles and captions." />
 &nbsp;
 <br/>
 
-<p>Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:</p>
+<p>Once your subtitles/captions are ok, you will be able to upload them to YouTube, 
+or -this is what we wanted first- download them as WebVTT format:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 89. youtube make subtitles (110) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image089.webp?raw=true"
   style="width:60%"
-  alt="Youtube make subtitles." />
+  title="YouTube make subtitles"
+  alt="YouTube make subtitles." />
 &nbsp;
 <br/>
 
-<p>Note that YouTube can also help you "make subtitles" with its speech recognition tool, but you will only be able to export in .srt format afterwards. You will have to convert this format afterwards to .vtt.</p>
+<p>Note that YouTube can also help you "make subtitles" with its speech recognition 
+tool, but you will only be able to export in .srt format afterwards. You will have 
+to convert this format afterwards to .vtt.</p>
 
 <h4>Try your subtitled/captioned video</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5649,7 +5815,8 @@ Go to the above Web site, click on the "subtitle a video" link, then follow the
 <p align="center">
 <img src="./images/image090.webp?raw=true"
   style="width:40%"
-   alt="Example guitar picking subtitle captions." />
+  title="Example guitar picking subtitle captions"
+  alt="Example guitar picking subtitle captions." />
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5735,6 +5902,7 @@ The WebVTT file is shown below. Notice the new attributes that have been added 
 <p align="center">
 <img src="./images/image092.webp?raw=true"
   style="width:65%"
+  title="Example video: positioning subtitles"
   alt="Example video: positioning subtitles." />
 &nbsp;
 <br/>
@@ -5788,7 +5956,10 @@ It is possible to style using CSS classes as part of a cue value, using the <c
 <p align="center">
 <img src="./images/image094.webp?raw=true"
   style="width:65%"
-  alt="Snaphot of a video frame showing a cue containing the class 'myclass'. Browsers that support ::cue CSS should make it red." />
+  title="Snaphot of a video frame showing a cue containing the class 'myclass'. 
+    Browsers that support ::cue CSS should make it red"
+  alt="Snaphot of a video frame showing a cue containing the class 'myclass'. 
+    Browsers that support ::cue CSS should make it red." />
 &nbsp;
 <br/>
 
@@ -5982,6 +6153,7 @@ Street views are updated in real time.
 <p align="center">
 <img src="./images/image098.webp?raw=true"
   style="width:65%"
+  title="Video sync with map and street views"
   alt="Video sync with map and street views." />
 &nbsp;
 <br/>
@@ -6082,7 +6254,8 @@ Scrub Bar thumbnails (JWPlayer)
 <p align="center">
 <img src="./images/image101.webp?raw=true"
   style="width:45%"
-   alt="Scrub bar thumbnails." />
+  title="Scrub bar thumbnails"
+  alt="Scrub bar thumbnails." />
 &nbsp;
 <br/>
 
@@ -6103,6 +6276,7 @@ Chapters and chapter thumbnails (JWPlayer):
 <p align="center">
 <img src="./images/image103.webp?raw=true"
   style="width:55%"
+  title="Chapter and Chapter Thumbnails"
   alt="Chapter and Chapter Thumbnails." />
 &nbsp;
 <br/>
@@ -6113,6 +6287,7 @@ PayPal accessible player:
 <p align="center">
 <img src="./images/image104.webp?raw=true"
   style="width:55%"
+  title="Paypal accessible player"
   alt="Paypal accessible player." />
 &nbsp;
 <br/>
@@ -6123,6 +6298,7 @@ LeanBack (says "free for non-commercial use", licensing is not very clear...):
 <p align="center">
 <img src="./images/image105.webp?raw=true"
   style="width:60%"
+  title="Leanback player"
   alt="Leanback player." />
 &nbsp;
 <br/>
@@ -6234,6 +6410,7 @@ CSS effects in real time. Below, we give links to some cool examples available o
 <p align="center">
 <img src="./images/image107.webp?raw=true"
   style="width:35%"
+  title="Resulting image of Michel Buffa using his WebCam, with two custom controls below"
   alt="Resulting image of Michel Buffa using his WebCam, with two custom controls below." />
 &nbsp;
 <br/>
@@ -7333,7 +7510,7 @@ And if we run it standalone and use the dev. tool console:
 <img src="./images/image119.webp?raw=true"
   style="width:50%"
   title="View of the JavaScript console"
-   alt="View of the JavaScript console." />
+  alt="View of the JavaScript console." />
 </p>
 
 And if we click on the line number in the right, the dev. tool shows the source code centered on the line that caused the error:
@@ -10465,8 +10642,9 @@ using the ctx.beginPath() method, as shown in the next example.
 <!--~~~~~~~~~~~~ 141. the right way to draw two paths with different styles (198) ~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image141.webp?raw=true"
-   width="65%"
-   alt="Draw two paths with different styles the RIGHT way." />
+  width="65%"
+  title="Draw two paths with different styles the RIGHT way"
+  alt="Draw two paths with different styles the RIGHT way." />
 &nbsp;
 <br/>
 
@@ -15953,7 +16131,9 @@ Resizing a canvas can be tricky if we don't know a few rules that might not be 
 
 -   Changing the width or height property of a canvas in JavaScript erases its content and resets its context,
 
--   Using percentages (%) in the CSS width and height properties of a canvas does not change its number of pixels/resolution[.] Instead, it scales the existing pixels without erasing the content, giving a blurry effect when a canvas becomes larger, for example.
+-   Using percentages (%) in the CSS width and height properties of a canvas does not 
+  change its number of pixels/resolution[.] Instead, it scales the existing pixels without 
+  erasing the content, giving a blurry effect when a canvas becomes larger, for example.
 
 Before looking at how best to handle canvas resizing, let's see some examples below:
 
@@ -15994,7 +16174,9 @@ Before looking at how best to handle canvas resizing, let's see some examples b
 
 <h4>Example #2 : resize a canvas using CSS width and height properties with percentages</h4>
 
-This time we are using a similar example as above, but we removed the button for resizing it, and we set the size of the canvas to 100x100 pixels. Instead of drawing inside, we draw two lines that join the diagonals.
+This time we are using a similar example as above, but we removed the button for resizing it, 
+and we set the size of the canvas to 100x100 pixels. Instead of drawing inside, we draw two 
+lines that join the diagonals.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 209. example small canvas 100 x 100 (286) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16008,11 +16190,12 @@ This time we are using a similar example as above, but we removed the button fo
 
 Then, we added this CSS rule:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 210.  (286) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 210. this example shows a small canvas of size 100x100 (286) ~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image210.webp?raw=true"
-   width="45%"
-   alt="image210.webp." />
+  width="45%"
+  title="CodePen, this example shows a small canvas of size 100x100"
+  alt="CodePen, this example shows a small canvas of size 100x100." />
 &nbsp;
 <br/>
 
@@ -16041,7 +16224,7 @@ This is the trick to create a really responsive canvas:
 
 3.  Use a resize listener on the  parent of the canvas,
 
-4.  Change the width and height properties of the canvas [from the JavaScript resize listener function] (content will be erased),
+4.  Change the width and height properties of the canvas [from the JavaScript resize listener function](content will be erased),
 
 5.  Redraw the content, scaled accordingly to the size of the parent.
 
@@ -16114,27 +16297,33 @@ function resizeCanvasAccordingToParentSize() {
 
 <h4>See the complete example that corresponds to the above code:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 212.  (288) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 212. codepen, try resizing the window (288) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image212.webp?raw=true"
   width="55%"
-  alt="."
+  title="CodePen, try resizing the window"
+  alt="CodePen, try resizing the window." />
 &nbsp;
 <br/>
 
 <h4>Example #4: the same example with the monster</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 213. (288) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 213. codepen, green monster, try resizing down window (288) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image213.webp?raw=true"
   width="55%"
-  alt="." />
+  title="CodePen, green monster, try resizing down window"
+  alt="CodePen, green monster, try resizing down window." />
 &nbsp;
 <br/>
 
-When the canvas is resized, its width became smaller than the monster's size. We scale down the monster (using ctx.scale!)
+When the canvas is resized, its width became smaller than the monster's size. 
+We scale down the monster (using ctx.scale!)
 
-The code is very similar to the previous example, we just replaced drawDiagonals() by drawMonster(...), and we added a test in the drawMonster(...) function for scaling the monster if it's bigger than the canvas width (look at <i>lines 10-16</i>), this is a common trick:
+The code is very similar to the previous example, we just replaced drawDiagonals() 
+by drawMonster(...), and we added a test in the drawMonster(...) function for 
+scaling the monster if it's bigger than the canvas width (look at <i>lines 10-16</i>), 
+this is a common trick:
 
 <details>
  <summary>Click to Toggle!</summary>
