@@ -277,8 +277,8 @@ tools.</p>
   <li><a href="https://jsbin.com/" target="_blank" rel="noopener noreferrer">JS Bin</a></li>
 </ul>
 
-<p>JS Bin is an open source collaborative Web development debugging
-tool. Most of the examples that are in this course are on JSBin.</p>
+<p>JS Bin is an open source collaborative Web development debugging tool. Most 
+of the examples that are in this course are on JSBin.</p>
 
 <p>Tutorials can be found on the Web such as 
 <a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843" 
@@ -6802,14 +6802,17 @@ download a file of type video/webm to the hard disk.</p>
 JavaScript APIs for controlling video and sound, drawing and animating
 things in the new &lt;canvas&gt; element, for offline applications,
 persistence, geolocation, orientation, etc.</p>
+
 <p>So yes, during this course, in particular in Modules 3 and 4, you
 will have to do a bit of JavaScript. <b>But, DON’T PANIC!</b></p>
+
 <p>Here we provide a basic introduction to JavaScript. If you want to
 learn more, many resources are available on the Web; this document is
 simply here to give you a head start. Remember that one great thing
 about these MOOCs courses is that everybody can help each other.
 Some students are very good in JavaScript and are usually very happy to
 help others when they encounter difficulties.</p>
+
 <p><b>You will learn a lot by looking at examples, tweaking them, cloning
 and modifying them, etc.</b> Many previous students who were real
 JavaScript beginners managed to do [all] the assignments (drawing and
@@ -6827,91 +6830,98 @@ this by just studying the provided examples.</p>
 
 <h4>What do you need? How to debug? How to catch errors?</h4>
 
-<p>We will not look at the JavaScript syntax here, but more at
-“JavaScript in the browser”, how it works, how to start writing code,
-etc.</p>
-<p>First of all, you need to find a way to debug your code and see
-errors. If your work does not produce any results, you must know
-why!</p>
-<p>For that you will use <b>the dev. tools of your
-browser</b>. Press <i>F12</i> in Windows or <i>cmd-alt-i</i> in Mac to
-open the dev. tools, then go to the console tab: this is where errors
-will be displayed, or messages of your own (use
-the console.log(string) JavaScript function in the JavaScript code
-embedded in your html page). In the console, you will be able to type
-any JavaScript command.</p>
+<p>We will not look at the JavaScript syntax here, but more at "JavaScript in 
+the browser", how it works, how to start writing code, etc.</p>
+
+<p>First of all, you need to find a way to debug your code and see errors. If 
+your work does not produce any results, you must know why! For that you will 
+use <b>the dev. tools of your browser</b>. Press <i>F12</i> in Windows or 
+<i>cmd-alt-i</i> in Mac to open the dev. tools, then go to the console tab: 
+this is where errors will be displayed, or messages of your own (use the 
+console.log(string) JavaScript function in the JavaScript code embedded in your 
+html page). In the console, you will be able to type any JavaScript command.</p>
+
 <p>Let’s look at <a href="https://jsbin.com/visariz/1/edit?html,output" 
 target="_blank" rel="noopener noreferrer">this example on JS Bin</a>:</p>
 
-<div>
-<table>
-<colgroup>
-  <col style="width: 1%" />
-  <col style="width: 98%" />
-</colgroup>
-<thead>
-  <tr class="header">
-    <th>#</th>
-    <th>HTML code</th>
-  </tr>
-</thead>
-<tbody>
-  <tr class="odd">
-    <td>1</td>
-    <td>&lt;!DOCTYPE html&gt;</td>
-  </tr>
-  <tr class="even">
-    <td>2</td>
-    <td>&lt;<a href="https://december.com/html/4/element/html.html" target="_blank" rel="noopener noreferrer"><b>html lang=“en”</b></a>&gt;</td>
-  </tr>
-  <tr class="odd">
-    <td>3</td>
-    <td>&lt;<a href="https://december.com/html/4/element/head.html" target="_blank" rel="noopener noreferrer"><b>head</b></a>&gt;</td>
-  </tr>
-  <tr class="even">
-    <td>4</td>
-    <td>&lt;<a href="https://december.com/html/4/element/meta.html" target="_blank" rel="noopener noreferrer"><b>meta</b></a> charset=utf-8 /&gt;</td>
-  </tr>
-  <tr class="odd">
-    <td>5</td>
-    <td>&lt;<a href="https://december.com/html/4/element/title.html" target="_blank" rel="noopener noreferrer"><b>title</b></a>&gt;Web Audio API&lt;/<a href="https://december.com/html/4/element/title.html" target="_blank" rel="noopener noreferrer"><b>title</b></a>&gt;</td>
-  </tr>
-  <tr class="even">
-    <td>6</td>
-    <td>&lt;<a href="https://december.com/html/4/element/script.html" target="_blank" rel="noopener noreferrer"><b>script</b></a>&gt;</td>
-  </tr>
-  <tr class="odd">
-    <td>7</td>
-    <td>console.log(“Some JavaScript code has been executed”);</td>
-  </tr>
-  <tr class="even">
-    <td>8</td>
-    <td>&lt;/<a href="https://december.com/html/4/element/script.html" target="_blank" rel="noopener noreferrer"><b>script</b></a>&gt;</td>
-  </tr>
-  <tr class="odd">
-    <td>9</td>
-    <td>&lt;/<a href="https://december.com/html/4/element/head.html" target="_blank" rel="noopener noreferrer"><b>head</b></a>&gt;</td>
-  </tr>
-  <tr class="even">
-    <td>10</td>
-    <td>&lt;<a href="https://december.com/html/4/element/body.html" target="_blank" rel="noopener noreferrer"><b>body</b></a>&gt;</td>
-  </tr>
-  <tr class="odd">
-    <td>11</td>
-    <td>&lt;<a href="https://december.com/html/4/element/h1.html" target="_blank" rel="noopener noreferrer"><b>h1</b></a>&gt;JavaScript debugging using the dev tool console&lt;/<a href="https://december.com/html/4/element/h1.html" target="_blank" rel="noopener noreferrer"><b>h1</b></a>&gt;</td>
-  </tr>
-  <tr class="even">
-    <td>12</td>
-    <td>&lt;/<a href="https://december.com/html/4/element/body.html" target="_blank" rel="noopener noreferrer"><b>body</b></a>&gt;</td>
-  </tr>
-  <tr class="odd">
-    <td>13</td>
-    <td>&lt;/<a href="https://december.com/html/4/element/html.html" target="_blank" rel="noopener noreferrer"><b>html</b></a>&gt;</td>
-  </tr>
-</tbody>
-</table>
-</div>
-<br>
+<pre>&lt;div&gt;
+  &lt;table&gt;
+    &lt;colgroup&gt;
+      &lt;col style="width: 1%" /&gt;
+      &lt;col style="width: 98%" /&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+    &lt;tr class="header"&gt;
+      &lt;th&gt;#&lt;/th&gt;
+      &lt;th&gt;HTML code&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr class="odd"&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;&lt;!DOCTYPE html&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="even"&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;&lt;&lt;a href="https://december.com/html/4/element/html.html" target="_blank" 
+	  rel="noopener noreferrer"&gt;&lt;b&gt;html lang=“en”&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="odd"&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;&lt;&lt;a href="https://december.com/html/4/element/head.html" target="_blank" 
+	  rel="noopener noreferrer"&gt;&lt;b&gt;head&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="even"&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;&lt;&lt;a href="https://december.com/html/4/element/meta.html" target="_blank" 
+	  rel="noopener noreferrer"&gt;&lt;b&gt;meta&lt;/b&gt;&lt;/a&gt; charset=utf-8 /&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="odd"&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;&lt;&lt;a href="https://december.com/html/4/element/title.html" 
+	  target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;title&lt;/b&gt;&lt;/a&gt;&gt;
+	  Web Audio API&lt;/&lt;a href="https://december.com/html/4/element/title.html" 
+	  target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;title&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="even"&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;&lt;&lt;a href="https://december.com/html/4/element/script.html" 
+	  target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;script&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="odd"&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;console.log("Some JavaScript code has been executed");&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="even"&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;&lt;/&lt;a href="https://december.com/html/4/element/script.html" 
+	  target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;script&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="odd"&gt;
+    &lt;td&gt;9&lt;/td&gt;
+    &lt;td&gt;&lt;/&lt;a href="https://december.com/html/4/element/head.html" target="_blank" 
+      rel="noopener noreferrer"&gt;&lt;b&gt;head&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="even"&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;&lt;&lt;a href="https://december.com/html/4/element/body.html" target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;body&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="odd"&gt;
+    &lt;td&gt;11&lt;/td&gt;
+    &lt;td&gt;&lt;&lt;a href="https://december.com/html/4/element/h1.html" target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;h1&lt;/b&gt;&lt;/a&gt;&gt;JavaScript debugging using the dev tool console&lt;/&lt;a href="https://december.com/html/4/element/h1.html" target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;h1&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="even"&gt;
+    &lt;td&gt;12&lt;/td&gt;
+    &lt;td&gt;&lt;/&lt;a href="https://december.com/html/4/element/body.html" target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;body&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="odd"&gt;
+    &lt;td&gt;13&lt;/td&gt;
+    &lt;td&gt;&lt;/&lt;a href="https://december.com/html/4/element/html.html" 
+	  target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;html&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</pre>
 
 <p>The simplest way to add JavaScript code in an HTML page, is by using
 the &lt;script&gt;…&lt;/script&gt; element.</p>
@@ -7603,6 +7613,8 @@ We also show how to draw a text message with a given font.</p>
 
 </details>
 
+<br/>
+
 <details>
   <summary>JavaScript source code</summary>
 
@@ -7780,6 +7792,8 @@ and Y position of the rectangles.</p>
 
 </details>
 
+<br/>
+
 <details>
   <summary>JavaScript source code</summary>
   
@@ -7882,6 +7896,8 @@ Your browser does not support the canvas tag.
 &lt;/html&gt;</pre>
 
 </details>
+
+<br/>
 
 <details>
   <summary>JavaScript source code</summary>
@@ -7999,6 +8015,8 @@ ctx.restore();
 
 </details>
 
+<br/>
+
 <details>
   <summary>HTML source code</summary>
   
@@ -8087,6 +8105,8 @@ function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
 }</pre>
 
 </details>
+
+<br/>
 
 <details>
   <summary>HTML source code</summary>
@@ -8202,6 +8222,8 @@ function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
 
 </details>
 
+<br/>
+
 <details>
   <summary>HTML source code</summary>
 
@@ -8308,6 +8330,8 @@ var angle = Math.atan2(toy-fromy,tox-fromx);
 }</pre>
 
 </details>
+
+<br/>
 
 <details>
   <summary>HTML source code</summary>
@@ -8440,6 +8464,8 @@ function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
 }</pre>
 
 </details>
+
+<br/>
 
 <details>
   <summary>HTML source code</summary>
@@ -8773,6 +8799,8 @@ fit into a given width, distorting it if necessary:</p>
 
 </details>
 
+<br/>
+
 <details>
   <summary>JavaScript source code</summary>
   
@@ -8836,6 +8864,8 @@ involved such as font, size, shadow, lineWidth, etc.</p>
 &lt;/html&gt;</pre>
 
 </details>
+
+<br/>
 
 <details>
   <summary>JavaScript source code</summary>
@@ -9173,6 +9203,8 @@ the page. We will see that as well in the following parts of this chapter.</p>
   border:1px solid black;
 }</pre>
 
+<br/>
+
 <details>
   <summary>JavaScript source code</summary>
 
@@ -9239,6 +9271,8 @@ drawing only from the onload callback function:</p>
   border:1px solid black;
 }</pre>
 
+<br/>
+
 <details>
   <summary>HTML source code</summary>
 
@@ -9292,6 +9326,8 @@ drawing only from the onload callback function:</p>
 <pre>#myCanvas {
   border:1px solid black;
 }</pre>
+
+<br/>
 
 <details>
   <summary>HTML source code</summary>
@@ -9564,6 +9600,8 @@ function init() {
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
+<br/>
+
 <details>
   <summary>CSS source code</summary>
 
@@ -9787,10 +9825,8 @@ line.</p>
   alt="Draw blue grid using ctx.stroke command."
   style="width:40%;" />
 
-<h4>HTML source code:</h4>
-
 <details>
-  <summary>Click to expand!</summary>
+  <summary>HTML source code</summary>
 
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -9823,10 +9859,10 @@ line.</p>
 
 </details>
 
-<h4>JavaScript source code extract:</h4>
+<br/>
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>JavaScript source code</summary>
 
 <pre>1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
 2.  var ctx=canvas.getContext(&#39;2d&#39;);
@@ -9866,10 +9902,8 @@ of code, with the single call to ctx.stroke().</p>
   alt="Mix filled and wireframe shapes using different methods."
   style="width:40%;" />
 
-<h4>HTML source code:</h4>
-
 <details>
-  <summary>Click to expand!</summary>
+  <summary>HTML source code</summary>
 
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -9894,10 +9928,10 @@ of code, with the single call to ctx.stroke().</p>
 
 </details>
 
-<h4>JavaScript source code:</h4>
+<br/>
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>JavaScript source code</summary>
 
 <pre>1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
 2.  var ctx=canvas.getContext(&#39;2d&#39;);
@@ -9933,10 +9967,8 @@ wireframe set of connected lines is drawn using the stroke() method of the con
   alt="Drawing single path made with disconnected lines."
   style="width:40%;" />
 
-<h4>JavaScript source code:</h4>
-
 <details>
-  <summary>Click to expand!</summary>
+  <summary>JavaScript source code</summary>
 
 <pre>1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
 2.  var ctx=canvas.getContext(&#39;2d&#39;);
@@ -9974,10 +10006,8 @@ called stroke() (<i>line 16</i>) only once to draw the whole path.</p>
   alt="Same drawing as in previous section. Example using moveto() and stroke() command functions."
   style="width:40%;" />
 
-<h4>HTML source code:</h4>
-
 <details>
-  <summary>Click to expand!</summary>
+  <summary>HTML source code</summary>
 
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -10026,10 +10056,8 @@ the path, then call fill() after the second half of the path:</p>
   alt="THE WRONG WAY! Drawing two paths with different styles."
   style="width:40%;" />
 
-<h4>HTML source code:</h4>
-
 <details>
-  <summary>Click to expand!</summary>
+  <summary>HTML source code</summary>
 
 <pre>1. &lt;!DOCTYPE html&gt;
 2. &lt;html lang=&quot;en&quot;&gt;
@@ -10062,10 +10090,10 @@ the path, then call fill() after the second half of the path:</p>
 
 </details>
 
-<h4>JavaScript source code:</h4>
+<br/>
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>JavaScript source code</summary>
 
 <pre>1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
 2.  var ctx=canvas.getContext(&#39;2d&#39;);
@@ -10123,10 +10151,8 @@ the ctx.beginPath() method, as shown in the next example.</p>
   alt="Draw two paths with different styles the RIGHT way."
   style="width:40%;" />
 
-<h4>HTML source code:</h4>
-
 <details>
-  <summary>Click to expand!</summary>
+  <summary>HTML source code</summary>
 
 <pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
@@ -10161,10 +10187,10 @@ the ctx.beginPath() method, as shown in the next example.</p>
 
 </details>
 
-<h4>JavaScript source code:</h4>
+<br/>
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>JavaScript source code</summary>
 
 <pre>1.  var canvas=document.getElementById(&#39;myCanvas&#39;);
 2.  var ctx=canvas.getContext(&#39;2d&#39;);
@@ -21551,8 +21577,7 @@ key, used at <i>line 6</i>.</p>
 <details>
   <summary>HTML source code</summary>
 
-<pre>
-1.  &lt;!DOCTYPE html&gt;
+<pre>1.  &lt;!DOCTYPE html&gt;
 2.  &lt;html lang=&quot;en&quot;&gt;
 3.  &lt;head&gt;
 4.    &lt;meta charset=&quot;utf-8&quot;&gt;
