@@ -20,7 +20,6 @@
   <title>W3Cx-3of5-HTML5.1x</title>
   <link rel="canonical" href="https://w3cx-3of5.bauska.org">
   <link rel="stylesheet" href="./css/styles.min.css">
-<!--  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"> -->
 </head>
 
 <body>
@@ -28,9 +27,6 @@
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ script function: scrollFunction() ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <script src="/js/highlight.min.js"></script> -->
-<!--  <script>hljs.highlightAll();</script> -->
-<!--  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script> -->
   <script>
   <!-- get the button -->
   var mybutton = document.getElementById("myBtn");
@@ -73,14 +69,6 @@
   style="width:35%;" />
 
 <h2><strong>Course Information</strong></h2>
-
-<!--
-<ol type="a">
-  <li><a href="#cha-1"><strong>About W3C and the Web</strong></a><br></li>
-  <li><a href="#cha-2"><strong>Why accessibility is important</strong></a><br></li>
-  <li><a href="#cha-3"><strong>W3C tools</strong></a><br></li>
-</ol>
--->
 
 <h2><strong>Module 1: HTML5 Basics</strong></h2>
 
@@ -5278,18 +5266,24 @@ format.</p>
     kind=&quot;subtitles&quot; srclang=&quot;en&quot; default&gt;
 &lt;/video&gt;</pre>
 
-<p>At <i>line 9</i>, we added a &lt;track&gt; element to add English subtitles, as the guitar teacher there is speaking in French. We will now explain how we created this subtitle track.</p>
+<p>At <i>line 9</i>, we added a &lt;track&gt; element to add English subtitles, as the 
+guitar teacher there is speaking in French. We will now explain how we created this 
+subtitle track.</p>
 
 <h4>Adding subtitles to the video</h4>
 
-<p>Now, we need to create a WebVTT file for this video. How can we synchronize an English translation of what the guitar teacher says in French?</p>
-<p>Many tools - both free and commercial - are available to add subtitles to a video. Most are native applications you need to install on your 
-computer. However, a free and very practical tool is available for doing this 100% in a Web browser: <a href="https://amara.org/en/" 
+<p>Now, we need to create a WebVTT file for this video. How can we synchronize an English 
+translation of what the guitar teacher says in French?</p>
+<p>Many tools - both free and commercial - are available to add subtitles to a video. Most 
+are native applications you need to install on your 
+computer. However, a free and very practical tool is available for doing this 100% in a Web 
+browser: <a href="https://amara.org/en/" 
 target="_blank" rel="noopener noreferrer">amara</a>.</p>
-<p>Go to the above Web site, click on the “subtitle a video” link, then follow the different tutorials/instructions. 
-It will ask for a YouTube URL, so it’s better to first upload your video to YouTube (even in private mode). 
-Once you have entered the URL of your video, you will have an online subtitles/caption editor. 
-Enter your subtitles and sync them until you are happy with the results.</p>
+<p>Go to the above Web site, click on the “subtitle a video” link, then follow the different 
+tutorials/instructions. It will ask for a YouTube URL, so it’s better to first upload your 
+video to YouTube (even in private mode). Once you have entered the URL of your video, you 
+will have an online subtitles/caption editor. Enter your subtitles and sync them until you 
+are happy with the results.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 88. example subtitles and captions (109) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -5299,7 +5293,8 @@ Enter your subtitles and sync them until you are happy with the results.</p>
   alt="Example subtitles and captions."
   style="width:40%;" />
 
-<p>Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this is what we wanted first- download them as WebVTT format:</p>
+<p>Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this 
+is what we wanted first- download them as WebVTT format:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 89. youtube make subtitles (110) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -5309,7 +5304,9 @@ Enter your subtitles and sync them until you are happy with the results.</p>
   alt="Youtube make subtitles."
   style="width:35%;" />
 
-<p>Note that YouTube can also help you “make subtitles” with its speech recognition tool, but you will only be able to export in .srt format afterwards. You will have to convert this format afterwards to .vtt.</p>
+<p>Note that YouTube can also help you “make subtitles” with its speech recognition tool, but 
+you will only be able to export in .srt format afterwards. You will have to convert this format 
+afterwards to .vtt.</p>
 
 <h4>Try your subtitled/captioned video</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9821,26 +9818,27 @@ further section.</p>
 <p>Summary of path mode principles</p>
 
 <ol type="1">
-  <li>Call drawing methods that work in path mode, for example call ctx.rect(…) instead of ctx.strokeRect(…) or ctx.fillRect(…),</li>
+  <li>Call drawing methods that work in path mode, for example call ctx.rect(…) instead 
+    of ctx.strokeRect(…) or ctx.fillRect(…),</li>
   <li>Call ctx.stroke() or ctx.fill() to draw the buffer’s contents,</li>
-  <li>Beware that the buffer is never emptied, two consecutive calls to ctx.stroke() will draw the buffer contents twice! Instead, use ctx.beginPath() to empty it if needed,</li>
+  <li>Beware that the buffer is never emptied, two consecutive calls to ctx.stroke() 
+    will draw the buffer contents twice! Instead, use ctx.beginPath() to empty it if needed,</li>
   <li>It is possible to empty the buffer by calling ctx.beginPath(),</li>
   <li>Path drawing is faster than immediate drawing (parallelization is possible).</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-2">3.4.2 A Warning</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Warning</b>: you do not need to spend too much time on each part
-of this sub-section.</p>
-<p>You do not need to memorize or learn by heart all the examples in the
-following pages. They are given as references. There will be no quizzes
-about curves as they are not often done “by hand”, but are generated by
-tools such as Adobe Illustrator or online generators.</p>
+<p><b>Warning</b>: you do not need to spend too much time on each part of this 
+sub-section.</p>
+<p>You do not need to memorize or learn by heart all the examples in the following 
+pages. They are given as references. There will be no quizzes about curves as they 
+are not often done “by hand”, but are generated by tools such as Adobe Illustrator 
+or online generators.</p>
 
 <ul>
-  <li>You need to draw arcs? Then, please use the corresponding section as a 
-    reference: you know you will find one or more examples and a detailed 
-	explanation.</li>
+  <li>You need to draw arcs? Then, please use the corresponding section as a reference: 
+    you know you will find one or more examples and a detailed explanation.</li>
   <li>You need to draw lines? Arrows? Curves? Same thing: go to the corresponding 
     pages and look at the examples!</li>
 </ul>
@@ -9852,36 +9850,33 @@ helpful when you start playing with the canvas.</p>
 <h3 id="ch3-4-3">3.4.3 Drawing Lines</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>We have been drawing rectangles so far.</p>
-<p>Now let’s go a bit further by introducing the notion of “path
-drawing”. This approach uses the ctx.moveTo(x, y) method of the context,
-in conjunction with other drawing methods that end in “To”, such
-as ctx.lineTo(x, y).</p>
-<p>This makes it easier to draw multiple connected lines. Consecutive
-calls to ctx.lineTo(x, y) will store in the path/buffer a set of
-connected lines that we will draw altogether by a single call
-to ctx.stroke() or ctx.fill().</p>
+
+<p>Now let’s go a bit further by introducing the notion of “path drawing”. This approach 
+uses the ctx.moveTo(x, y) method of the context, in conjunction with other drawing methods 
+that end in “To”, such as ctx.lineTo(x, y).</p>
+
+<p>This makes it easier to draw multiple connected lines. Consecutive calls to ctx.lineTo(x, y) 
+will store in the path/buffer a set of connected lines that we will draw altogether by a single 
+call to ctx.stroke() or ctx.fill().</p>
 
 <h4>Here are the 5 different steps:</h4>
 
 <ol type="1">
-  <li>Put the “pencil” somewhere with a call to ctx.moveTo(x1, y1). This will 
-    be the origin of the first line.</li>
-  <li>Call the ctx.lineTo(x2, y2) method to draw a line from the previous 
-    position (previous step) to the position passed as parameters to the 
-	lineTo(…) method. This position will serve as the origin for the next 
-	line to be drawn.</li>
-  <li>Call lineTo(x3, y3) again to draw a line that goes from (x2, y2) to 
-    (x3, y3). This line will start at the end of the previous one.</li>
+  <li>Put the “pencil” somewhere with a call to ctx.moveTo(x1, y1). This will be the origin 
+    of the first line.</li>
+  <li>Call the ctx.lineTo(x2, y2) method to draw a line from the previous position 
+    (previous step) to the position passed as parameters to the lineTo(…) method. 
+	This position will serve as the origin for the next line to be drawn.</li>
+  <li>Call lineTo(x3, y3) again to draw a line that goes from (x2, y2) to (x3, y3). 
+    This line will start at the end of the previous one.</li>
   <li>Repeat step 3 to draw more connected lines.</li>
-  <li>Call the ctx.stroke() or the ctx.fill() methods to draw the path 
-    defined by the different lines.</li>
+  <li>Call the ctx.stroke() or the ctx.fill() methods to draw the path defined by the 
+    different lines.</li>
 </ol>
 
-<p>Note the call to ctx.stroke() or ctx.fill() will use the current
-values of the strokeStyle or fillStyle properties. It is possible to
-call ctx.moveTo(x, y) in the middle of steps 1 through 5 in order to
-move the pen somewhere else without connecting to the last drawn
-line.</p>
+<p>Note the call to ctx.stroke() or ctx.fill() will use the current values of the strokeStyle 
+or fillStyle properties. It is possible to call ctx.moveTo(x, y) in the middle of steps 1 
+through 5 in order to move the pen somewhere else without connecting to the last drawn line.</p>
 
 <h4>Drawing a grid</h4>
 
@@ -10537,11 +10532,13 @@ drawArrow(ctx, 100, 10, 140, 140, 3, &#39;black&#39;);</pre>
 <h4>How to draw nicer arrows?</h4>
 
 <p>On the Web, you will find many different ways to draw arrows.</p>
-<p>This <a href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArrow.html" target="_blank" rel="noopener noreferrer">article
-on drawing lines and arcs with arrow heads</a> is worth reading. It
-details how to draw arrows with curved heads and different styles for
-the head. Note, however, that you will need to modify some parts if you
-want it to support different line widths, etc.</p>
+
+<p>This <a href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArrow.html" 
+target="_blank" rel="noopener noreferrer">article on drawing lines and arcs with 
+arrow heads</a> is worth reading. It details how to draw arrows with curved heads 
+and different styles for the head. Note, however, that you will need to modify 
+some parts if you want it to support different line widths, etc.</p>
+
 <p>Screenshot from a demo available on the above Web site:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 144. clock with nicer arrows (204) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10627,22 +10624,26 @@ path: draw from the last point to the first.</p>
 <h4>Explanations:</h4>
 
 <ul>
-  <li><i>Lines 5-7</i> corresponds to a path made of two consecutive lines. If we just call stroke() after that, two lines will be drawn on the canvas.</li>
-  <li><i>Line 10</i> indicates that we would like <i>a closed path</i>.  In this case, the call to stroke() at <i>line 14</i> will draw the two lines plus an extra line that connects the last point of the path to the first one. It will draw a closed triangle!</li>
+  <li><i>Lines 5-7</i> corresponds to a path made of two consecutive lines. If we 
+    just call stroke() after that, two lines will be drawn on the canvas.</li>
+  <li><i>Line 10</i> indicates that we would like <i>a closed path</i>.  In this 
+    case, the call to stroke() at <i>line 14</i> will draw the two lines plus an 
+	extra line that connects the last point of the path to the first one. It will 
+	draw a closed triangle!</li>
 </ul>
 
 <p>Try commenting the <i>line 10</i> in the online example and see the results!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-8">3.4.8 Drawing Circles and Arcs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method
-is useful for drawing arcs of circles. It takes the center of the
-circle/arc, its radius, the starting angle of the arc (turning
-clockwise), the ending angle of the arc, and an optional parameter we
-will talk about later.</p>
-<p><i>Note</i>: the figures in this page have been borrowed from
-the <a href="https://www.html5canvastutorials.com/tutorials/html5-canvas-arcs/" target="_blank" rel="noopener noreferrer">HTML5
-Canvas Tutorials</a> Web site.</p>
+<p>The ctx.arc(cx, cy, radius, startAngle, endAngle, drawInverse) method is useful 
+for drawing arcs of circles. It takes the center of the circle/arc, its radius, the 
+starting angle of the arc (turning clockwise), the ending angle of the arc, and an 
+optional parameter we will talk about later.</p>
+
+<p><i>Note</i>: the figures in this page have been borrowed from the 
+<a href="https://www.html5canvastutorials.com/tutorials/html5-canvas-arcs/" 
+target="_blank" rel="noopener noreferrer">HTML5 Canvas Tutorials</a> Web site.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ 146. html5 canvas arc diagram: drawing circle coordinate system (205) ~~~~~~~~~~-->
 <img class="displayed"
@@ -11447,15 +11448,19 @@ second control point and the ending point.</p>
   alt="Bezier curve control points." />
 
 <p>(Picture taken from the <a
-href="https://www.html5canvastutorials.com/tutorials/html5-canvas-bezier-curves/" target="_blank" rel="noopener noreferrer">HTML5 Canvas Tutorials</a> Web site)</p>
+href="https://www.html5canvastutorials.com/tutorials/html5-canvas-bezier-curves/" 
+target="_blank" rel="noopener noreferrer">HTML5 Canvas Tutorials</a> Web site)</p>
+
 <p>The best way to understand how they work is to check out one of these
 interactive applications:</p>
 
 <ul>
   <li><a href="https://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html" 
     target="_blank" rel="noopener noreferrer">Canvas Bézier Curve Example</a></li>
-  <li><a href="http://lib.ivank.net/?p=demos&amp;d=bezier" target="_blank" rel="noopener noreferrer">IvanK Lib graphics demos</a></li>
-  <li>Nice video tutorial: <a href="https://vimeo.com/106757336" target="_blank" rel="noopener noreferrer">Bézier curves under the hood</a></li>
+  <li><a href="http://lib.ivank.net/?p=demos&amp;d=bezier" target="_blank" rel="noopener noreferrer">
+    IvanK Lib graphics demos</a></li>
+  <li>Nice video tutorial: <a href="https://vimeo.com/106757336" target="_blank" rel="noopener noreferrer">
+    Bézier curves under the hood</a></li>
 </ul>
 
 <h4>Typical usage of Bézier curves</h4>
@@ -11625,8 +11630,8 @@ themselves).</p>
 
 <h4>Colors and transparency</h4>
 
-<p>You can use <a href="https://www.w3.org/TR/css3-color/" target="_blank" rel="noopener noreferrer">the same syntax 
-  for colors that is supported by CSS3</a>. The next lines show possible values/syntaxes.</p>
+<p>You can use <a href="https://www.w3.org/TR/css3-color/" target="_blank" rel="noopener noreferrer">
+the same syntax for colors that is supported by CSS3</a>. The next lines show possible values/syntaxes.</p>
 
 <pre>1. ctx.strokeStyle = &#39;red&#39;;
 2. ctx.fillStyle = &quot;#00ff00&quot;;
@@ -11637,10 +11642,12 @@ themselves).</p>
 
 <ul>
   <li>All values are strings;</li>
-  <li><i>Line 4</i> defines a “transparent color”, the “a” of “rgba” means “alpha channel”. Its value is between 0 and 1, where 0 means “completely transparent” and 1 means “opaque”.</li>
+  <li><i>Line 4</i> defines a “transparent color”, the “a” of “rgba” means “alpha channel”. Its 
+    value is between 0 and 1, where 0 means “completely transparent” and 1 means “opaque”.</li>
 </ul>
 
-<h4>Here is an example that shows how to draw different filled rectangles in blue, with different levels of transparency:</h4>
+<h4>Here is an example that shows how to draw different filled rectangles in blue, with different 
+levels of transparency:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 166. colors and transparency example (223) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -11828,8 +11835,7 @@ the whole canvas, with colors going from blue (left) to white (middle) to red (r
 
 <h4>Example #1: changing the direction of the gradient</h4>
 
-<p>If you modify the source code that defines the direction of the
-gradient as follows…</p>
+<p>If you modify the source code that defines the direction of the gradient as follows…</p>
 
 <pre>grdFrenchFlag = ctx.createLinearGradient(0, 0, 300, 200);</pre>
 
@@ -14143,20 +14149,26 @@ your function ONCE and <i>AFTER a given amount of time</i>.</p>
 
 </details>
 
-<p>This function is certainly more suitable for doing graphic animation, such as for writing an HTML5 game. It will never interrupt an ongoing
-animation, even if the instructions inside the animation loop take too long.</p>
+<p>This function is certainly more suitable for doing graphic animation, such as for 
+writing an HTML5 game. It will never interrupt an ongoing animation, even if the 
+instructions inside the animation loop take too long.</p>
 
 <h4>Problems with setInterval() and setTimeout()</h4>
+
 <p>setTimeout does not “wait”  during the timeout period. It lets the rest of the JavaScript code run. 
 It schedules a new call to the function passed as first parameter with a timer running in the background. 
 This might cause it to take slightly longer than the expected timeout period to start executing.</p>
+
 <p>This problem also occurs with setInterval, the timing is not “very” reliable. If you plan to run a 
 function every 20ms, and if you measure precisely the real timing, sometimes you will discover big 
 differences between what is scheduled and what is performed. This is because these methods were 
 designed a long time ago, when high precision timers and 60 frames per second animation were not an option.</p>
+
 <p>Here comes the <a href="https://www.w3.org/TR/html51/webappapis.html#animation-frames" 
 target="_blank" rel="noopener noreferrer">requestAnimationFrame API,</a> a very good companion to the canvas API!</p>
+
 <p><b>BEST PRACTICE</b>: AVOID using setTimeout for animating in a canvas, except for trivial cases.</p>
+
 <p>For 60 frames/second animation, use requestAnimationFrame!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-5">4.2.5 The requestAnimationFrame API</h3>
@@ -14201,12 +14213,10 @@ target="_blank" rel="noopener noreferrer">requestAnimationFrame API,</a> a very
 
 <h4>Typical use</h4>
 
-<p>You will note that  requestAnimationFrame(function) is used
-like setTimeout(function, delay). A call to requestAnimationFrame just
-asks the browser to call the function passed as a parameter ONCE, and
-the target delay is fixed, and corresponds to a 60 frames/s frame rate
-(16.6ms). Notice that an id is used for stopping an animation
-with cancelAnimationFrame(id).</p>
+<p>You will note that  requestAnimationFrame(function) is used like setTimeout(function, delay). 
+A call to requestAnimationFrame just asks the browser to call the function passed as a parameter 
+ONCE, and the target delay is fixed, and corresponds to a 60 frames/s frame rate (16.6ms). 
+Notice that an id is used for stopping an animation with cancelAnimationFrame(id).</p>
 
 <h4>Source code:</h4>
 
@@ -14292,10 +14302,10 @@ with cancelAnimationFrame(id).</p>
 
 </details>
 
-<p>Notice that calling requestAnimationFrame(animationLoop) at <i>line 19</i>, 
-and after that from within the loop at line 14, asks the browser to call the 
-animationLoop function so that the delta between calls will be as close as 
-possible to 16.6ms  (this corresponds to 1/60th of a second).</p>
+<p>Notice that calling requestAnimationFrame(animationLoop) at <i>line 19</i>, and after 
+that from within the loop at line 14, asks the browser to call the animationLoop function 
+so that the delta between calls will be as close as possible to 16.6ms  (this corresponds 
+to 1/60th of a second).</p>
 
 <h4>Is the 16.6ms delay really accurate? Can we trust it?</h4>
 
@@ -14304,30 +14314,31 @@ possible to 16.6ms  (this corresponds to 1/60th of a second).</p>
 <ul>
   <li>The animation loop content is too complex,</li>
   <li>The target device that runs the animation is a low end phone or an old computer,</li>
-  <li>The scheduler may be a bit late or a bit in advance (even if this kind of error is much smaller with requestAnimationFrame than with setInterval or setTimeout).</li>
+  <li>The scheduler may be a bit late or a bit in advance (even if this kind of error is much 
+    smaller with requestAnimationFrame than with setInterval or setTimeout).</li>
 </ul>
 
-<p>Many HTML5 games perform what we call a “time-based animation”. For
-this, we need an accurate timer that will tell us the elapsed time
-between each animation frame.</p>
+<p>Many HTML5 games perform what we call a “time-based animation”. For this, we 
+need an accurate timer that will tell us the elapsed time between each animation 
+frame.</p>
 
-<p>Depending on this time, we can compute the distances that must be
-achieved by each object on the screen in order to move at a
-constant speed (for a human eye), independently of the CPU or GPU of the
-computer or mobile device that is running the game.</p>
+<p>Depending on this time, we can compute the distances that must be achieved by 
+each object on the screen in order to move at a constant speed (for a human eye), 
+independently of the CPU or GPU of the computer or mobile device that is running 
+the game.</p>
 
-<p>The timeStamp parameter of the animationLoop function (<i>line
-1</i> in the above code) is useful for exactly that: it gives a high
-resolution time. By measuring deltas between two consecutive calls of
-the animationLoop, we will know exactly, with a sub-millisecond
-accuracy, the elapsed time between two frames.</p>
+<p>The timeStamp parameter of the animationLoop function (<i>line 1</i> in the 
+above code) is useful for exactly that: it gives a high resolution time. By 
+measuring deltas between two consecutive calls of the animationLoop, we will 
+know exactly, with a sub-millisecond accuracy, the elapsed time between two 
+frames.</p>
 
-<p>Using time-based animation, and more generally, using the canvas
-element for writing HTML5 games, is part of the W3Cx HTML5 Apps and
-Games course.</p>
+<p>Using time-based animation, and more generally, using the canvas element for 
+writing HTML5 games, is part of the W3Cx HTML5 Apps and Games course.</p>
 
-<p>Current <a href="https://caniuse.com/requestanimationframe" target="_blank" rel="noopener noreferrer">support</a> is
-really good and all modern browsers support this API.</p>
+<p>Current <a href="https://caniuse.com/requestanimationframe" 
+target="_blank" rel="noopener noreferrer">support</a> is really good and all 
+modern browsers support this API.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3">4.3 Canvas and User Interaction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -14394,6 +14405,7 @@ this:</p>
 different properties from the event object in order to get useful
 information like: “what keys have been pressed down?”, “what is the
 position of the mouse cursor?”, “which mouse button is down?”, etc.</p>
+
 <p>Let’s see next how to deal with the keyboard and the mouse. In
 the <a href="https://www.edx.org/course/html5-apps-and-games" target="_blank" rel="noopener noreferrer">W3Cx HTML5
 Apps and Games</a>, we look at additional APIs such
@@ -14436,8 +14448,8 @@ on JS Bin</a></p>
 <h3 id="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When you listen to keyboard related events (keydown, keyup or keypressed), the event parameter 
-  passed to the listener function will contain the code of the key that fired the event.  Then it 
-  is possible to test what key has been pressed or released, like this:</p>
+passed to the listener function will contain the code of the key that fired the event.  Then it 
+is possible to test what key has been pressed or released, like this:</p>
 
 <pre>1.  window.addEventListener(&#39;keydown&#39;, function(event) {
 2.     if (event.keyCode === 37) {
@@ -17733,9 +17745,10 @@ section of this course dedicated to form validation.</p>
 
 <h4>Example #1</h4>
 
-<p>Try
-this <a href="https://jsbin.com/xeyuqux/1/edit?html,output" target="_blank" rel="noopener noreferrer">online
-example at JSBin</a> or directly in your browser below:</p>
+<p>Try this <a href="https://jsbin.com/xeyuqux/1/edit?html,output" 
+target="_blank" rel="noopener noreferrer">
+online example at JSBin</a> or directly in your browser below:</p>
+
 <!--
 Please enter a 3 letter country code (green = valid, pink = invalid): ![](./images/image266.wmf)
 -->
@@ -19325,13 +19338,21 @@ values and submit with one or two invalid fields.</p>
 <h4>Explanations:</h4>
 
 <ul>
-  <li><i>Line 32</i>: we added an empty unnumbered list (&lt;ul&gt;…&lt;/ul&gt;) to the form, with the CSS class=“error-messages”. We will use this class attribute for styling, and hiding by default, the error messages using CSS (see lines <i>12-20</i>, <i>line 13</i> hides the messages by default),</li>
-  <li><i>Lines 97-102</i> look at all forms in the document and call a function that will replace the default validation behavior for all of them: the replaceValidationUI(form) function,</li>
-  <li>This function first disables all default behavior (no more display of bubbles during form submission), this is done at <i>lines 45-57</i>,</li>
+  <li><i>Line 32</i>: we added an empty unnumbered list (&lt;ul&gt;…&lt;/ul&gt;) to the form, 
+    with the CSS class=“error-messages”. We will use this class attribute for styling, and 
+	hiding by default, the error messages using CSS (see lines <i>12-20</i>, <i>line 13</i> 
+	hides the messages by default),</li>
+  <li><i>Lines 97-102</i> look at all forms in the document and call a function that will 
+    replace the default validation behavior for all of them: the replaceValidationUI(form) function,</li>
+  <li>This function first disables all default behavior (no more display of bubbles during 
+    form submission), this is done at <i>lines 45-57</i>,</li>
   <li><i>Line 66</i>: we add a click listener to the submit button of the current form,</li>
   <li><i>Line 67</i> gets all invalid input fields for that form,</li>
-  <li><i>Lines 76-83</i>: For each invalid field, we get the value of the name attribute of the corresponding label, we also get the validation error message, and we build a list item(&lt;li&gt;…&lt;/li&gt;),</li>
-  <li><i>Line 86</i>: Then we add this list element (a formatted error message corresponding to an invalid input field) to the error message container,</li>
+  <li><i>Lines 76-83</i>: For each invalid field, we get the value of the name attribute of 
+    the corresponding label, we also get the validation error message, and we build a list 
+	item(&lt;li&gt;…&lt;/li&gt;),</li>
+  <li><i>Line 86</i>: Then we add this list element (a formatted error message corresponding 
+    to an invalid input field) to the error message container,</li>
   <li><i>Lines 90-93</i>: The focus is given to the first invalid field that shows an error message.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19391,11 +19412,18 @@ the Web Workers API; and some other APIs that are not in the HTML5
 specification, but are related to it, such as the GamePad API, the Web
 Audio API, etc.<br>
 This week, we will look at some of the most useful APIs. Others will be
-covered in the <a href="https://www.edx.org/course/html5-apps-and-games" target="_blank" rel="noopener noreferrer">W3C HTML5 Apps and Games course</a>:</p>
+covered in the <a href="https://www.edx.org/course/html5-apps-and-games" 
+target="_blank" rel="noopener noreferrer">W3C HTML5 Apps and Games course</a>:</p>
 
 <ul>
-  <li><b>The “Web Storage” API, sort of “super cookies”, for storing pairs of key/values client side.</b> This API is useful for enabling Web sites to save/restore their state, or for writing <i>serverless</i> applications. You will see a small contact manager that stores its data locally, without the need for a remote Web server.<br></li>
-  <li><b>The File API, that enables Web applications to work with local files</b>. For example, a picture editor, or ./images player that can work with your music and video files - the ones on your phone or your hard disk! With this API you will also be able to preview image files directly in your page - there is no need to send them to a remote server.</li>
+  <li><b>The “Web Storage” API, sort of “super cookies”, for storing pairs of key/values 
+    client side.</b> This API is useful for enabling Web sites to save/restore their state, 
+	or for writing <i>serverless</i> applications. You will see a small contact manager that 
+	stores its data locally, without the need for a remote Web server.<br></li>
+  <li><b>The File API, that enables Web applications to work with local files</b>. For example, 
+    a picture editor, or ./images player that can work with your music and video files - the 
+	ones on your phone or your hard disk! With this API you will also be able to preview image 
+	files directly in your page - there is no need to send them to a remote server.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 295. 'you are here' sign (354) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19407,7 +19435,11 @@ covered in the <a href="https://www.edx.org/course/html5-apps-and-games" target
   style="width:35%;" />
 
 <ul>
-  <li><b>The Geolocation API for obtaining data such as longitude, latitude, altitude (when available), and speed</b>. You will learn how to write applications in combination with interactive maps. You will also learn how to guess the address of a user, for example for pre-filling a registration form with the city, country, and zip code that corresponds with the current location.</li>
+  <li><b>The Geolocation API for obtaining data such as longitude, latitude, altitude 
+    (when available), and speed</b>. You will learn how to write applications in 
+	combination with interactive maps. You will also learn how to guess the address 
+	of a user, for example for pre-filling a registration form with the city, country, 
+	and zip code that corresponds with the current location.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2">6.2 The Web storage API</h3>
@@ -19464,8 +19496,8 @@ available localStorage object. The same applies to sessionStorage.</p>
 </details>
 
 <p>This data is located in a store attached to the origin of the page.
-We created <a href="https://jsbin.com/povuqa/1/edit" target="_blank" rel="noopener noreferrer">a JSBin example in
-which we included the above code</a>.</p>
+We created <a href="https://jsbin.com/povuqa/1/edit" target="_blank" rel="noopener noreferrer">
+a JSBin example in which we included the above code</a>.</p>
 
 <p>Once opened in your browser, the JavaScript code is executed. With the
 browser dev. tools, we can check what has been stored in
@@ -19506,9 +19538,12 @@ JavaScript, using the Web Storage API.</p>
 <h4>External resources</h4>
 
 <ul>
-  <li>From W3C’s specification: <a href="https://www.w3.org/TR/webstorage/" target="_blank" rel="noopener noreferrer">The W3C Web Storage API recommendation</a><br></li>
-  <li>An Interesting article on Web.dev: <a href="https://web.dev/storage-for-the-web/" target="_blank" rel="noopener noreferrer">Storage for the Web</a><br></li>
-  <li>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" target="_blank" rel="noopener noreferrer">Web Storage API</a></li>
+  <li>From W3C’s specification: <a href="https://www.w3.org/TR/webstorage/" 
+    target="_blank" rel="noopener noreferrer">The W3C Web Storage API recommendation</a><br></li>
+  <li>An Interesting article on Web.dev: <a href="https://web.dev/storage-for-the-web/" 
+    target="_blank" rel="noopener noreferrer">Storage for the Web</a><br></li>
+  <li>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" 
+    target="_blank" rel="noopener noreferrer">Web Storage API</a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2-2">6.2.2 Example 1</h3>
@@ -19521,14 +19556,20 @@ its content</b>.</p>
 <p>In this example, we use the most simple way to use localStorage:</p>
 
 <ul>
-  <li><b>Save with the localStorage.key = value syntax. </b>For example, localStorage.firstName = ‘Michel’ will save the value “Michel” with the access key being ‘firstName’<br></li>
-  <li><b>Restore with the var value = localStorage.key syntax</b>. For example, var fn = localStorage.firstName; will set fn with the value ‘Michel’ if this value has been previously saved as in the example from the line above.</li>
+  <li><b>Save with the localStorage.key = value syntax.</b> For example, 
+    localStorage.firstName = ‘Michel’ will save the value “Michel” with the access key being ‘firstName’<br></li>
+  <li><b>Restore with the var value = localStorage.key syntax</b>. For example, 
+    var fn = localStorage.firstName; will set fn with the value ‘Michel’ if this 
+	value has been previously saved as in the example from the line above.</li>
 </ul>
 
 <h4>Saving the form content on the fly</h4>
 
-<p>Open this <a href="https://jsbin.com/pulurir/edit?html,js,output" target="_blank" rel="noopener noreferrer">online example at JSBin</a>, and use F12 or cmd-alt-i (Mac OS) to look at the dev. tools. As you type in the different input fields, their content is updated in the localStorage.<br>
-We just added input event listeners to each input field. For example, in order to save the first name input field’s content, we just added:</p>
+<p>Open this <a href="https://jsbin.com/pulurir/edit?html,js,output" target="_blank" rel="noopener noreferrer">
+online example at JSBin</a>, and use F12 or cmd-alt-i (Mac OS) to look at the dev. tools. As you type in the 
+different input fields, their content is updated in the localStorage.<br>
+We just added input event listeners to each input field. For example, in order to save the first name input 
+field’s content, we just added:</p>
 
 <pre>oninput=&quot;localStorage.&lt;font color="red"&gt;firstName&lt;/font&gt;=this.value;&quot;</pre>
 
@@ -19547,10 +19588,9 @@ in this example’s form.</p>
 
 <h4>Restoring the form content on page load/reload</h4>
 
-<p>This time, we want the form content to be restored on page
-load/reload. We will add a restoreFormContent() function in the
-JavaScript code that will be called each time the page is loaded. In
-this function, we will read the saved data and set the input fields’
+<p>This time, we want the form content to be restored on page load/reload. We will add a 
+restoreFormContent() function in the JavaScript code that will be called each time the 
+page is loaded. In this function, we will read the saved data and set the input fields’
 values.</p>
 
 <p><a href="https://jsbin.com/yivocuz/edit?html,js,output" target="_blank" rel="noopener noreferrer">Complete
@@ -19584,6 +19624,7 @@ example on JSBin</a>: enter data and press reload at any time. The form content 
 21. }</pre>
 
 </details>
+
 <p>The tests at <i>lines 7, 10, 13</i>, etc., verify that data has been
 saved, before trying to restore it. Without these tests, it would put
 the “undefined” string as the value of input fields with no
@@ -19610,13 +19651,14 @@ to show how to use setItem/removeItem methods):</p>
 2. counter++;
 3. localStorage.setItem(&quot;count&quot;, counter);</pre>
 
-<p>As you can easily guess from the above, we use var value =
-getItem(key) to retrieve a key’s value and setItem(key, value) to set
-it. This is similar to what we saw in the examples of the page above,
-except that this time:</p>
+<p>As you can easily guess from the above, we use var value = getItem(key) to retrieve a 
+key’s value and setItem(key, value) to set it. This is similar to what we saw in the 
+examples of the page above, except that this time:</p>
 
 <ul>
-  <li>The key can contain spaces, for example we can write: localStorage.setItem(“Instructor’s name”, “Michel”); and var name =  localStorage.getItem(“Instructor’s name”);, while var name = localStorage.Instructor’s name; will not work!</li>
+  <li>The key can contain spaces, for example we can write: localStorage.setItem(“Instructor’s name”, “Michel”); 
+    and var name =  localStorage.getItem(“Instructor’s name”);, while var name = localStorage.Instructor’s name; 
+	will not work!</li>
   <li>In a loop or in an iterator, sometimes we need to set/get localStorage values using this syntax, for example:</li>
 </ul>
 
@@ -19631,6 +19673,7 @@ except that this time:</p>
 
 <p>Deleting a key can be performed through removeItem(). And if you wish
 to reset the entire store, simply call localStorage.clear().</p>
+
 <p>Note that it will probably only be the rare occasion that you will
 want the entire store to be cleared by the user in production software
 (since that effectively deletes their entire data). However, it is a
@@ -19639,6 +19682,7 @@ store faulty data the persistence of which can break your application,
 since the way you store data may evolve over time, or simply because you
 also need to test the experience of the user when first using the
 application.</p>
+
 <p>One way of handling this is to add a user interface button that
 calls clear() when clicked, but you must then remember to remove it when
 you ship! The recommended approach  to use (whenever possible) is to
@@ -19650,8 +19694,7 @@ simply open the dev. tool’s console and type localStorage.clear() there
 <p>Local stores (localStorage or sessionStorage) can also be iterated
 through in order to list all the content that they contain. The order is
 not guaranteed, but this may be useful at times (if only for debugging
-purposes!). The following code lists everything in the current
-store:</p>
+purposes!). The following code lists everything in the current store:</p>
 
 <pre>1. for (var i = 0, n = localStorage.length; i &lt; n; i++) {
 2.   var k = localStorage.key(i);
@@ -19662,8 +19705,8 @@ store:</p>
 above: instead of calling localStorage.getItem(k), we simply
 access localStorage[k]. Why? Because keys in the local store can also be
 accessed as if the store were a simple JavaScript object.</p>
-<p>Instead
-of localStorage.getItem(“foo”) and localStorage.setItem(“foo”,
+
+<p>Instead of localStorage.getItem(“foo”) and localStorage.setItem(“foo”,
 “bar”), one can write localStorage.foo and localStorage.foo = “bar”. Of
 course there are limitations to this mapping: any string can serve as a
 key, so that localStorage.getItem(“one two three”) works, whereas that
@@ -19685,6 +19728,7 @@ example at JSBin</a>, run it, then click on the first button to show all
 key/values in the localStorage. Open the URL in another tab, and see
 that the data is shared between tabs, as local stores are attached to an
 origin.</p>
+
 <p>Then click on the second button to add data to the store, click on
 the third to remove data. Finally, the last one clears the whole data
 store.</p>
@@ -19782,6 +19826,7 @@ store the list of tabs you open, and their width:</p>
 
 <p>This way, the next time you come back to JSBin, “it will remember
 your last settings”.</p>
+
 <p>Another example is a guitar FX processor / amp simulator your
 instructor is writing with some of his students. It uses localStorage to
 save/restore presets values:</p>
@@ -19805,11 +19850,14 @@ save/restore presets values:</p>
   style="width:35%;" />
 
 <p>Original example on JSBin:</p>
+
 <p>We can change the color, size and speed of the animated rectangle.
 However, each time we come back to the page, default values are
 restored.</p>
+
 <p>We would like to save the current values and find them back as they
 were when we come back to the page.</p>
+
 <p><a href="https://jsbin.com/cebavo/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">Here
 is a modified example that saves/restores its state, you can try it
 at JSBin</a>. In this modified version of the animated rectangle
@@ -19817,11 +19865,13 @@ example, you can set the color, size, speed, etc. And if you reload the
 page, the state of the different input field is restored, but also the
 internal variables. Check the source code in the JS Bin example and read
 the following explanations.</p>
+
 <p>We used the same generic code for saving/restoring input fields’
 values we saw in the first example that used localStorage. The only
 difference is that we renamed the two generic functions so that they
 correspond better to their role here (instead of saveFormContent we
 called the function restorePreferences).</p>
+
 <p>The function initPreferences is executed when the page is loaded.</p>
 
 <h4>Source code extract:</h4>
@@ -19873,15 +19923,19 @@ called the function restorePreferences).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="6-2-5">6.2.5 Example 3</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><a href="https://jsbin.com/zowise/edit?html,js,output" target="_blank" rel="noopener noreferrer">Online example at JSBin</a></p>
+<p><a href="https://jsbin.com/zowise/edit?html,js,output" 
+target="_blank" rel="noopener noreferrer">Online example at JSBin</a></p>
+
 <p>This time, using the setItem and getItem method we saw earlier in the
 course, we could write some generic functions for saving/restoring input
 fields’ content, without having advance knowledge about the number of
 fields in the form, their types, their ids, etc.</p>
+
 <p>Furthermore, we removed all input listeners in the HTML, making it
 cleaner (no more oninput=“localStorage.firstName = this.value;’…)</p>
 <p>Define listeners + restore old values after the page is loaded, use
 generic functions</p>
+
 <p>We start writing an init() function that is called when the page is
 loaded. This function will:</p>
 
@@ -19960,7 +20014,9 @@ get its id, which value is the key in localStorage for the previous data
 saved for this field (<i>lines 15-16</i>). Then if the value is not
 undefined, we restore it by setting the value of the input field
 (<i>lines 19-20</i>).</p>
+
 <p>These generic functions can be used in many different projects</p>
+
 <p>Indeed, if you look carefully, you will see that these functions are
 really useful. You may easily embed them in your own projects, or
 perhaps adapt them for a particular need (i.e. for saving input
@@ -19983,37 +20039,45 @@ exist, such as IndexedDB, a No SQL database, that proposes transactions
 and usually comes with far more available space than local storage.
 IndexedDB usage is for advanced users and will be covered in the W3Cx
 HTML5 Apps and Games.</p>
+
 <p>Additionally, there will be a limit on the amount of data that you
 can store there. Browsers enforce quotas that will prevent you from
 cluttering your users’ drives excessively. These quotas can vary from
 platform to platform, but are usually reasonably generous for simple
 cases (around 5MB), so <b>if you are careful not to store anything huge
 there, you should be fine.</b></p>
+
 <p><b>Finally, keep in mind that this storage is not necessarily
 permanent.</b> Browsers are inconsistent in how they allow for it to be
 wiped, but in several cases it gets deleted with cookies — which is
 logical when you think of how it can be used for tracking in a similar
 fashion.</p>
+
 <p>For serious applications, you might want to synchronize
 existing data with the server on a regular basis, in order to avoid data
 loss (and in general, because users enjoy using the same service from
 multiple devices at once). This is a rather complex feat, and frameworks
 such as Firebase can help. Such techniques are beyond the scope of this
 course and will not be covered.</p>
+
 <p>sessionStorage key/values instead of cookies?</p>
+
 <p>Note that if all you need is to store session-based data in a manner
 that is more powerful than cookies, you can use
 the sessionStorage object which works in exactly the same way as
 localStorage, but the lifetime is limited to a single browser session
 (lifetime of your tab/window).</p>
+
 <p><b>Also note that in addition to being more convenient and capable of
 storing more data than cookies, it has the advantage of being scoped to
 a given browser tab (or similar execution context).</b></p>
+
 <p><b>Cookies’ security drawback: </b>if a user has two tabs open to the
 same site, they will share the same cookies. Which is to say that if you
 are storing information about a given operation using cookies in one
 tab, that information will leak to the other side — this can be
 confusing if the user is performing different tasks in each.</p>
+
 <p><b>By using sessionStorage, the data you store will be scoped and
 therefore not leak across tabs!</b></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20022,12 +20086,14 @@ therefore not leak across tabs!</b></p>
 <p>Storing strings is all well and good, but it quickly
 becomes limiting: you may want to store more complex data with at least
 a modicum of structure.</p>
+
 <p>There are some simple approaches, such as creating your own minimal
 record format (e.g. a string with fields separated with a given
 character, using join() on store and split() upon retrieval) or using
 multiple keys (e.g. post_17_title, post_17_content, post_17_author,
 etc.). But these are really hacks. Thankfully, there’s a better way,
  JSON.stringify() and JSON.parse() methods.</p>
+
 <p><a href="https://www.json.org/" target="_blank" rel="noopener noreferrer">JSON</a> provides a great way of
 encoding and decoding data that is a really good match for JavaScript.
 You have to be careful not to use circular data structures or
@@ -20107,6 +20173,7 @@ JSON</a></p>
 <h4>Example #2: a form and a table that displays the contacts stored in localStorage</h4>
 
 <p><a href="https://jsbin.com/karoboj/3/edit?html,css,console,output" target="_blank" rel="noopener noreferrer">Example on JSBin</a></p>
+
 <p>Add contacts using the form, see how the HTML table is updated. Try
 to reload the page: data are persisted in localStorage. </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20128,7 +20195,8 @@ to reload the page: data are persisted in localStorage. </p>
   alt="localStorage view in devtools shows the data."
   style="width:35%;" />
 
-<p>The source code for this example is a bit long, and we suggest that you examine it in the JS Bin tool. We extensively commented it. It uses:</p>
+<p>The source code for this example is a bit long, and we suggest that you examine 
+it in the JS Bin tool. We extensively commented it. It uses:</p>
 
 <p>Well structured pages with the new elements seen during Module 1
 (section, article, nav, aside, etc.)</p>
@@ -20169,11 +20237,10 @@ need for a server.</p>
 <p>Imagine a multimedia player that accesses (in read-only) your file
 system, reads your audio and video files, etc., such as the <a
 href="https://chrome.google.com/webstore/detail/remo-music-player/ajilpdcmebalpffmjjopcingplogifhb" 
-  target="_blank" rel="noopener noreferrer">Remo Music
-player</a> below, or an application that edits the audio content of
-local mp3 files, for example, the <a
-href="https://wav.hya.io/#/fx" target="_blank" rel="noopener noreferrer">HYA-WAVE sound editor</a> (screenshot
-above).</p>
+target="_blank" rel="noopener noreferrer">Remo Music player</a> below, or an application 
+that edits the audio content of local mp3 files, for example, the 
+<a href="https://wav.hya.io/#/fx" target="_blank" rel="noopener noreferrer">
+HYA-WAVE sound editor</a> (screenshot above).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 309. audio player that plays local files (370) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -20218,8 +20285,7 @@ previewing an image before uploading it into a remote server, or if you
 wanted to play a local audio file, or a video file without streaming and
 downloading it from a remote server. It was not possible.</p>
 
-<p>I’m going first to show you some example of server less
-applications.</p>
+<p>I’m going first to show you some example of server less applications.</p>
 
 <p>I mean applications written using HTML, CSS and Javascript that do
 not rely on data located on a remote server.</p>
@@ -20288,8 +20354,7 @@ use with mp3 file, or mp4 file video or any sort of file encoding.</p>
 <p>This was to introduce this new sort of URL that maybe you’ve never
 heard about before. Now, how can we write this?</p>
 
-<p>I’m going to explain with the source code here because it’s
-simpler.</p>
+<p>I’m going to explain with the source code here because it’s simpler.</p>
 
 <p>After that I will code it live. What we do is that we use an input
 type=file for reading the files. We define an event listener that will
@@ -20955,6 +21020,7 @@ it prevents code that uses Ajax to run in its pages.</p>
 It is useful, for example,  for in-lining images or videos in the HTML
 of a Web page (on mobile devices, this may speed up the loading of the
 page by reducing the number of HTTP requests).</p>
+
 <p>Here is an example of a red square, as a data URL. Copy and paste it
 in the address bar of your browser, and you should see the red
 square:</p>
@@ -20975,8 +21041,8 @@ square:</p>
 &lt;img src=&quot;data:image/png....&quot;&gt; with the data URL of the above
 screenshot, it will work exactly as if you used a URL that started
 with https://</p>
-<p>In your browser, you will see a small red circle rendered by this source
-code:</p>
+
+<p>In your browser, you will see a small red circle rendered by this source code:</p>
 
 <pre>&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
 AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
@@ -20999,6 +21065,7 @@ content. The dataURL can therefore store a file as a URL readable with
 modern browsers. It is becoming more commonly used on the Web,
 especially for mobile applications, as inlining images reduces the
 number of HTTP requests and makes the Web page load faster.</p>
+
 <p>You will find lots of Web sites and tools for generating dataURL from
 files, such as <a href="https://ezgif.com/image-to-datauri" target="_blank" 
 rel="noopener noreferrer">Image to Data URI converter</a> (screenshot below):</p>
@@ -21013,14 +21080,15 @@ rel="noopener noreferrer">Image to Data URI converter</a> (screenshot below):</
   alt="Online service that converts uploaded images to data uris...we see an image and 
     its ascii encoded data uri version."
   style="width:35%;" >
-<!--  style="width:1000px;height:1277px;" -->
 
 <p>With the above example, you can copy and paste the characters on the
 left and use them with an &lt;img src="..."&gt;. Just set the src attribute
 with it!</p>
+
 <p>Notice that you can encode any type of file as dataURL, but this
 format is most frequently used with ./images files (images, audio,
 video).</p>
+
 <p>Example of HTML5 logo embedded in a document without any real image,
 just a dataURL and CSS:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21039,6 +21107,7 @@ just a dataURL and CSS:</p>
 <p>This first example is useful for forms that allow the user to select one or more pictures. 
 Before sending the form, you might want to get a preview of the pictures in the HTML page.
 The reader.readAsDataUrl method is used for that.</p>
+
 <p><a href="https://jsbin.com/laseye/edit?html,output" target="_blank" rel="noopener noreferrer">
 Example on JSBin</a> or try it below in your browser:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21173,6 +21242,7 @@ application reads local image files, draws them into a canvas element
 and proposes different filters. This example is given “as is” for those
 of you who would like to go further. Just click on the link (or on the
 image below) and look at the source code.</p>
+
 <p><a href="https://gianablantin.github.io/CanvasFilters/" target="_blank" 
 rel="noopener noreferrer">Try this example online on gitHub</a>.</p>
 
@@ -21191,6 +21261,7 @@ rel="noopener noreferrer">Try this example online on gitHub</a>.</p>
 <p>The Geolocation HTML5 JavaScript API is implemented by most modern
 Web browsers, and uses different means to get the current location: GPS,
 GSM/3G triangulation, Wifi, IP address, etc.</p>
+
 <p>It is possible to prompt the user to activate the GPS (this is what
 most GPS navigation software does on mobile phones), or ask for a
 particular mean among those available. It is also possible to track the
@@ -21323,6 +21394,7 @@ case of the altitudeAccuracy)</p>
 getCurrentPosition(showPosition) with only one callback function (in the
 case of success), but it is also possible to pass a second parameter
 that is another callback function called in the case of error.</p>
+
 <p>A slightly different version of the previous example 
 <a href="https://jsbin.com/bafusik/edit?html,output" target="_blank" rel="noopener noreferrer">
 shows how to properly check against the different possible errors</a>. Try it,
@@ -21475,9 +21547,8 @@ longitude and latitude, using online Web services?</p>
   style="width:35%;" />
 
 <p>This example is just given "as is", as there are so many possibilities for rendering 
-a map with <a href="/leafletjs.com/reference-1.6.0.html" 
-  target="_blank" rel="noopener noreferrer">the Leaflet API for OpenStreetMaps</a>https:/. 
-  However, we think having such a basic example might be useful.</p>
+a map with <a href="/leafletjs.com/reference-1.6.0.html" target="_blank" rel="noopener noreferrer">
+the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a basic example might be useful.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 329. openstreetmap test (393) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -21791,9 +21862,11 @@ target="_blank" rel="noopener noreferrer"> the demo on the Gisgraphy website</a>
 <p><b>Important note:</b> these examples below rely on an external 
 <a href="https://github.com/perliedman/leaflet-control-geocoder" 
 target="_blank" rel="noopener noreferrer">GitHub resource</a>.</p>
+
 <p>Please, pan and zoom on the map and click.</p>
+
 <p>The longitude and latitude are computed from your click and a free reverse geocoding service is 
-  used to convert to a physical address.</p>
+used to convert to a physical address.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 332. reverse geocoding - openstreetmap (398) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -22090,12 +22163,12 @@ good understanding of the material.</p>
 
 <ul>
   <li>Project 1 (easy): Add a map showing your location to one of your Web
-  pages. Start with a simple, static map, then try with an interactive
-  map. Reuse the examples from the course.</li>
+    pages. Start with a simple, static map, then try with an interactive
+    map. Reuse the examples from the course.</li>
   <li>Project 2 (a bit harder): The examples provided in the course used
-  OpenStreetMap, but why don’t you try to do the same with GoogleMaps?
-  Some services are free of charge, but will ask you to get an API key
-  (see this YouTube tutorial about how to get such a key).</li>
+    OpenStreetMap, but why don’t you try to do the same with GoogleMaps?
+    Some services are free of charge, but will ask you to get an API key
+    (see this YouTube tutorial about how to get such a key).</li>
 </ul>
 
   <h5>. . .The end.</h5>
@@ -22103,6 +22176,7 @@ good understanding of the material.</p>
   <h6>Prior updated 11-20-23 Mon 11:58pm</h6>
   <h6>Last updated 4-12-23 Fri 1:21am</h6>
   <h6>Last updated 7-21-24 Sun 1:20am</h6>
+  <h6>Last updated 8-15-24 Thu 3:28pm</h6>
 
   </body>
 </html>
