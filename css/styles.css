@@ -13,7 +13,7 @@
   }
 
   p { 
-    font-size: 13.5px;
+    font-size: 14.5px;  /* was 13.5 */
     font-family: Bahnschrift, Inter, Helvetic, sans-serif;
     text-align: left; 
     margin-left: 10px;
@@ -35,6 +35,11 @@
   }
   pre:hover, pre:focus { width: min-content; }
 
+a:hover {
+  color: #00000;
+  background-color: #ffff00;  /* yellow */
+  text-decoration: underline;
+}
   a {
     text-decoration: none; 
   }
