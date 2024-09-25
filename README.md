@@ -41,53 +41,53 @@ w3cx-3of5-html5.1x: Coursera - Front-End Web Development - HTML5 Coding Essentia
   <li><a style="margin-left: 2rem;" href="#chb-3" Sub-Heading">Course tools</a></li>
 </ol>
 
-## [**Module 1: HTML5 Basics**](#ch1)
->### 1.1 [**Introduction - Module 1: HTML Basics**](#ch1-1-1)
->### 1.2 [**From HTML1.0 to HTML5**](#ch1-2-1)
->### 1.3 [**Structural element**](#ch1-3-1)
->### 1.4 [**Other elements and attributes**](#ch1-4-1)
->### 1.5 [**Microdata**](#ch1-5-1)
+### [**Module 1: HTML5 Basics**](#ch1)
+>#### 1.1 [**Introduction - Module 1: HTML Basics**](#ch1-1-1)
+>#### 1.2 [**From HTML1.0 to HTML5**](#ch1-2-1)
+>#### 1.3 [**Structural element**](#ch1-3-1)
+>#### 1.4 [**Other elements and attributes**](#ch1-4-1)
+>#### 1.5 [**Microdata**](#ch1-5-1)
 
-## [**Module 2: HTML5 Multimedia**](#ch2)
->### 2.1 [**Introduction - Module 2**](#ch2-1-1)
->### 2.2 [**Streaming multimedia content: the video and audio elements**](#ch2-2-1)
->### 2.3 [**Subtitles and closed captions**](#ch2-3-1)
->### 2.4 [**Enhanced HTML5 media players and frameworks**](#ch2-4-1)
->### 2.5 [**Webcam, microphone: the getUserMedia API**](#ch2-5-1)
->### 2.6 [**Exercises - Module 2**](#ch2-6-1)
+### [**Module 2: HTML5 Multimedia**](#ch2)
+>#### 2.1 [**Introduction - Module 2**](#ch2-1-1)
+>#### 2.2 [**Streaming multimedia content: the video and audio elements**](#ch2-2-1)
+>#### 2.3 [**Subtitles and closed captions**](#ch2-3-1)
+>#### 2.4 [**Enhanced HTML5 media players and frameworks**](#ch2-4-1)
+>#### 2.5 [**Webcam, microphone: the getUserMedia API**](#ch2-5-1)
+>#### 2.6 [**Exercises - Module 2**](#ch2-6-1)
 
-## [**Module 3: HTML5 Graphics**](#ch3)
->### 3.1 [**Introduction - Module 3**](#ch3-1-1)
->### 3.2 [**Basics of HTML5 canvas**](#ch3-2-1)
->### 3.3 [**Immediate drawing mode: rectangles, text, images**](#ch3-3-1)
->### 3.4 [**Path drawing mode: lines, circles, arcs, curves and other path drawing methods**](#ch3-4-1)
->### 3.5 [**Colors, gradients, patterns, shadows, etc.**](#ch3-5-1)
->### 3.6 [**Exercises - Module 3**](#ch3-6-1)
+### [**Module 3: HTML5 Graphics**](#ch3)
+>#### 3.1 [**Introduction - Module 3**](#ch3-1-1)
+>#### 3.2 [**Basics of HTML5 canvas**](#ch3-2-1)
+>#### 3.3 [**Immediate drawing mode: rectangles, text, images**](#ch3-3-1)
+>#### 3.4 [**Path drawing mode: lines, circles, arcs, curves and other path drawing methods**](#ch3-4-1)
+>#### 3.5 [**Colors, gradients, patterns, shadows, etc.**](#ch3-5-1)
+>#### 3.6 [**Exercises - Module 3**](#ch3-6-1)
 
-## [**Module 4: HTML5 Animation**](#ch4)
->### 4.1 [**Introduction - Module 4**](#ch4-1-1)
->### 4.2 [**Basic animation techniques**](#ch4-2-1)
->### 4.3 [**Canvas and user interaction (keyboard, mouse)**](#ch4-3-1)
->### 4.4 [**A glimpse of advanced canvas functionalities**](#ch4-4-1)
->### 4.5 [**Exercises - Module 4**](#ch4-5-1)
+### [**Module 4: HTML5 Animation**](#ch4)
+>#### 4.1 [**Introduction - Module 4**](#ch4-1-1)
+>#### 4.2 [**Basic animation techniques**](#ch4-2-1)
+>#### 4.3 [**Canvas and user interaction (keyboard, mouse)**](#ch4-3-1)
+>#### 4.4 [**A glimpse of advanced canvas functionalities**](#ch4-4-1)
+>#### 4.5 [**Exercises - Module 4**](#ch4-5-1)
 
-## [**Module 5: HTML5 Forms**](#ch5)
->### 5.1 [**Introduction - Module 5**](#ch5-1-1)
->### 5.2 [**Introduction to HTML5 Forms**](#ch5-2-1)
->### 5.3 [**Accessible forms**](#ch5-3-1)
->### 5.4 [**New <input> types**](#ch5-4-1)
->### 5.5 [**New forms attributes**](#ch5-5-1)
->### 5.6 [**New elements related to forms**](#ch5-6-1)
->### 5.7 [**Form validation API**](#ch5-7-1)
->### 5.8 [**Exercises - Module 5**](#ch5-8-1)
+### [**Module 5: HTML5 Forms**](#ch5)
+>#### 5.1 [**Introduction - Module 5**](#ch5-1-1)
+>#### 5.2 [**Introduction to HTML5 Forms**](#ch5-2-1)
+>#### 5.3 [**Accessible forms**](#ch5-3-1)
+>#### 5.4 [**New <input> types**](#ch5-4-1)
+>#### 5.5 [**New forms attributes**](#ch5-5-1)
+>#### 5.6 [**New elements related to forms**](#ch5-6-1)
+>#### 5.7 [**Form validation API**](#ch5-7-1)
+>#### 5.8 [**Exercises - Module 5**](#ch5-8-1)
 
-## [**Module 6: HTML5 Basic APIs**](#ch6)
->### 6.1 [**Introduction - Module 6**](#ch6-1-1)
->### 6.2 [**Introduction to HTML5 APIs**](#ch6-2-1)
->### 6.3 [**HTML5 Cache**](#ch6-3-1)
->### 6.4 [**The Web Storage API**](#ch6-4-1)
->### 6.5 [**The File API**](#ch6-5-1)
->### 6.6 [**The geolocation API**](#ch6-6-1)
+### [**Module 6: HTML5 Basic APIs**](#ch6)
+>#### 6.1 [**Introduction - Module 6**](#ch6-1-1)
+>#### 6.2 [**Introduction to HTML5 APIs**](#ch6-2-1)
+>#### 6.3 [**HTML5 Cache**](#ch6-3-1)
+>#### 6.4 [**The Web Storage API**](#ch6-4-1)
+>#### 6.5 [**The File API**](#ch6-5-1)
+>#### 6.6 [**The geolocation API**](#ch6-6-1)
 
 <div align="right">
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -381,17 +381,20 @@ If you're looking to an easy way to dive into this standardization processes, ch
   title="W3C Web Incubator Community Group logo"
   alt="W3C Web Incubator Community Group logo." />
 </p>
-<p>
-Another approach is to go and bring feedback on ideas for future technologies: the <a href="https://wicg.io/" target="_blank">W3C Web Platform Community Incubator Group</a> was built as an easy place to get started to provide feedback on new proposals or bring brand-new proposals for consideration.
+<p>Another approach is to go and bring feedback on ideas for future technologies: the 
+<a href="https://wicg.io/" target="_blank">W3C Web Platform Community Incubator Group</a> 
+was built as an easy place to get started to provide feedback on new proposals or bring 
+brand-new proposals for consideration.<br/>
+Happy Web building!</p>
 
-Happy Web building!
-</p>
 <h3 name="cha-1">What is W3C?</h3>
-<p>
-As steward of global Web standards, W3C's mission is to safeguard the openness, accessibility, and freedom of the World Wide Web from a technical perspective.
 
-W3C's primary activity is to develop protocols and guidelines that ensure long-term growth for the Web. The widely adopted Web standards define key parts of what actually makes the World Wide Web work.
-</p>
+<p>As steward of global Web standards, W3C's mission is to safeguard the openness, 
+accessibility, and freedom of the World Wide Web from a technical perspective.
+W3C's primary activity is to develop protocols and guidelines that ensure long-term 
+growth for the Web. The widely adopted Web standards define key parts of what actually 
+makes the World Wide Web work.</p>
+
 <h4>A few history bits</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 10. Tim Berners-Lee, WWW developer (08) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -403,26 +406,57 @@ W3C's primary activity is to develop protocols and guidelines that ensure long-t
 </p>
 
 <h6 align="center">Tim Berners-Lee at his desk in CERN, 1994</h6>
-<p>
-<a href="https://www.w3.org/People/Berners-Lee/" target="_blank" rel="noopener noreferrer">Tim Berners-Lee</a> wrote a <a href="https://www.w3.org/History/1989/proposal.html" target="_blank" rel="noopener noreferrer">proposal</a> in 1989 for a system called the World Wide Web. He then created the first Web browser, server, and Web page. He wrote the first specifications for URLs, HTTP, and HTML.
 
-In October 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology, Laboratory for Computer Science [MIT/LCS] in collaboration with <a href="https://home.cern/" target="_blank" rel="noopener noreferrer">CERN</a>, where the Web originated (see information on the <a href="https://www.w3.org/Daemon/" target="_blank" rel="noopener noreferrer">original CERN Server</a>, with support from DARPA and the <a href="https://ec.europa.eu/index_en.htm" target="_blank" rel="noopener noreferrer">European Commission</a>.
+<p><a href="https://www.w3.org/People/Berners-Lee/" target="_blank" rel="noopener noreferrer">
+Tim Berners-Lee</a> wrote a <a href="https://www.w3.org/History/1989/proposal.html" 
+target="_blank" rel="noopener noreferrer">proposal</a> in 1989 for a system called the 
+World Wide Web. He then created the first Web browser, server, and Web page. He wrote 
+the first specifications for URLs, HTTP, and HTML.</p>
+<p>In October 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C) at the 
+Massachusetts Institute of Technology, Laboratory for Computer Science [MIT/LCS] in 
+collaboration with <a href="https://home.cern/" target="_blank" rel="noopener noreferrer">
+CERN</a>, where the Web originated (see information on the <a href="https://www.w3.org/Daemon/" 
+target="_blank" rel="noopener noreferrer">original CERN Server</a>, with support from DARPA 
+and the <a href="https://ec.europa.eu/index_en.htm" target="_blank" rel="noopener noreferrer">
+European Commission</a>.</p>
 
-In April 1995, <a href="https://www.inria.fr/" target="_blank" rel="noopener noreferrer">Inria</a> became the first European W3C host, followed by <a href="https://www.keio.ac.jp/" target="_blank" rel="noopener noreferrer">Keio University of Japan</a> (Shonan Fujisawa Campus) in Asia in 1996. In 2003, <a href="https://www.ercim.eu/" target="_blank" rel="noopener noreferrer">ERCIM</a> took over the role of European W3C Host from Inria. In 2013, W3C announced <a href="https://ev.buaa.edu.cn/" target="_blank" rel="noopener noreferrer">Beihang University</a> as the fourth Host.
+<p>In April 1995, <a href="https://www.inria.fr/" target="_blank" rel="noopener noreferrer">
+Inria</a> became the first European W3C host, followed by <a href="https://www.keio.ac.jp/" 
+target="_blank" rel="noopener noreferrer">Keio University of Japan</a> (Shonan Fujisawa Campus) 
+in Asia in 1996. In 2003, <a href="https://www.ercim.eu/" target="_blank" rel="noopener noreferrer">
+ERCIM</a> took over the role of European W3C Host from Inria. In 2013, W3C announced 
+<a href="https://ev.buaa.edu.cn/" target="_blank" rel="noopener noreferrer">
+Beihang University</a> as the fourth Host.</p>
 
-In addition to these four Host locations that employ W3C staff, there are <a href="https://www.w3.org/Consortium/Offices/staff" target="_blank">W3C Offices</a> around the globe that support the developer communities in their regions and organize local events. Find the one next to your place!
-</p>
+<p>In addition to these four Host locations that employ W3C staff, there are 
+<a href="https://www.w3.org/Consortium/Offices/staff" target="_blank">
+W3C Offices</a> around the globe that support the developer communities in their 
+regions and organize local events. Find the one next to your place!</p>
+
 <h4>A few figures</h4>
 
 <p>As of June 2020, W3C:</p>
 <ul>
-  <li>Is a <a href="https://www.w3.org/Consortium/Member/List)-driven" target="_blank" rel="noopener noreferrer">member</a>-driven organization composed of nearly 430 companies, universities, start-ups, etc. from all over the world.</li>
-  <li>Holds 44 <a href="https://www.w3.org/groups/" target="_blank" rel="noopener noreferrer">technical groups</a>, including Working and Interest Groups where technical specifications are discussed and developed.</li>
-  <li>Published over 7,181 <a href="https://www.w3.org/TR/" target="_blank" rel="noopener noreferrer">published technical reports</a>, including 430 Web standards (or W3C Recommendations) - since January 1st,1995.</li>
-  <li>Runs a <a href="https://www.w3.org/Consortium/Translation/" target="_blank" rel="noopener noreferrer">translation program</a> to foster the translation of its specifications: see the <a href="https://www.w3.org/Consortium/Translation/matrix.html" target="_blank" rel="noopener noreferrer">translation matrix</a> currently listing 304 available translations of W3C recommendations.</li>
-  <li>Hosts 337 <a href="https://www.w3.org/community/groups/" target="_blank" rel="noopener noreferrer">Community and Business Groups</a>, where developers, designers, and anyone passionate about the Web have a place to hold discussions and publish ideas.</li>
+  <li>Is a <a href="https://www.w3.org/Consortium/Member/List)-driven" target="_blank" 
+    rel="noopener noreferrer">member</a>-driven organization composed of nearly 430 companies, 
+	universities, start-ups, etc. from all over the world.</li>
+  <li>Holds 44 <a href="https://www.w3.org/groups/" target="_blank" rel="noopener noreferrer">
+    technical groups</a>, including Working and Interest Groups where technical specifications 
+	are discussed and developed.</li>
+  <li>Published over 7,181 <a href="https://www.w3.org/TR/" target="_blank" rel="noopener noreferrer">
+    published technical reports</a>, including 430 Web standards (or W3C Recommendations) - 
+	since January 1st,1995.</li>
+  <li>Runs a <a href="https://www.w3.org/Consortium/Translation/" target="_blank" rel="noopener 
+    noreferrer">translation program</a> to foster the translation of its specifications: see the 
+	<a href="https://www.w3.org/Consortium/Translation/matrix.html" target="_blank" rel="noopener 
+	noreferrer">translation matrix</a> currently listing 304 available translations of W3C 
+	recommendations.</li>
+  <li>Hosts 337 <a href="https://www.w3.org/community/groups/" target="_blank" rel="noopener 
+    noreferrer">Community and Business Groups</a>, where developers, designers, and anyone 
+	passionate about the Web have a place to hold discussions and publish ideas.</li>
   <li>Gathers over 12,912 active participants constituting the W3C community.</li>
-  <li>Has a <a href="https://www.w3.org/People/" target="_blank" rel="noopener noreferrer">technical staff</a> composed of 64 people, spread on all five continents.</li>
+  <li>Has a <a href="https://www.w3.org/People/" target="_blank" rel="noopener noreferrer">
+    technical staff</a> composed of 64 people, spread on all five continents.</li>
 </ul>
 
 <div align="right">
@@ -430,15 +464,21 @@ In addition to these four Host locations that employ W3C staff, there are <a hr
 </div>
 
 <h4>The Web is Amazing!</h4>
-<p>
-People often use the words "Internet" and "Web" interchangeably, but this usage is technically incorrect.
 
-The Web is an application of the Internet. 
+<p>People often use the words "Internet" and "Web" interchangeably, but this usage is technically incorrect.</p>
 
-The Web is the most popular way of accessing the Internet, but other applications of the Internet are <a href="https://en.wikipedia.org/wiki/Email" target="_blank" rel="noopener noreferrer">e-mail</a> and <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol" target="_blank" rel="noopener noreferrer">ftp</a> for example. 
+<p>The Web is an application of the Internet.</p>
 
-One analogy equates the Internet to a road network where the Web is a car, the email is a bicycle, etc.  Read <a href="https://www.lifewire.com/difference-between-the-internet-and-the-web-2483335" target="_blank" rel="noopener noreferrer">this article</a> for more details about the difference between Internet and the Web.
-</p>
+<p>The Web is the most popular way of accessing the Internet, but other applications of the Internet are 
+<a href="https://en.wikipedia.org/wiki/Email" target="_blank" rel="noopener noreferrer">
+e-mail</a> and <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol" target="_blank" 
+rel="noopener noreferrer">ftp</a> for example.</p>
+
+<p>One analogy equates the Internet to a road network where the Web is a car, the email is a 
+bicycle, etc.  Read <a href="https://www.lifewire.com/difference-between-the-internet-and-the-web-2483335" 
+target="_blank" rel="noopener noreferrer">this article</a> for more details about the difference 
+between Internet and the Web.</p>
+
 <h4>Internet</h4>
 
 <ul>
@@ -457,25 +497,63 @@ One analogy equates the Internet to a road network where the Web is a car, the e
   <li>Navigation to other pages occurs through hyperlinks.</li>
 </ul>
 <p>
-The internet is a global network of billions of servers, computers, and other <a href="https://www.lifewire.com/computer-hardware-2625895" target="_blank" rel="noopener noreferrer">hardware</a> devices. Each device can connect with any other device as long as both are connected to the internet using a valid <a href="https://www.lifewire.com/what-is-an-ip-address-2625920" target="_blank" rel="noopener noreferrer">IP address</a>. The internet makes the information sharing system known as the web possible.
+The internet is a global network of billions of servers, computers, and other 
+<a href="https://www.lifewire.com/computer-hardware-2625895" target="_blank" 
+rel="noopener noreferrer">hardware</a> devices. Each device can connect with any other 
+device as long as both are connected to the internet using a valid 
+<a href="https://www.lifewire.com/what-is-an-ip-address-2625920" target="_blank" 
+rel="noopener noreferrer">IP address</a>. The internet makes the information sharing 
+system known as the web possible.
 
-The web, which is short for <a href="https://www.lifewire.com/around-the-web-4781469" target="_blank" rel="noopener noreferrer">World Wide Web</a>, is one of the ways information is shared on the internet (others include <a href="https://www.lifewire.com/electronic-mail-overview-1164107" target="_blank" rel="noopener noreferrer">email</a>, File Transfer Protocol <a href="https://www.thoughtco.com/ftp-defined-2654479" target="_blank" rel="noopener noreferrer">(FTP)</a>, and <a href="https://www.lifewire.com/what-is-instant-messaging-2483319" target="_blank" rel="noopener noreferrer">instant messaging</a> services. The web is composed of billions of connected digital documents that are viewed in a web browser, such as Chrome, <a href="https://www.lifewire.com/what-is-safari-4173608" target="_blank" rel="noopener noreferrer">Safari</a>, Microsoft Edge, <a href="https://www.lifewire.com/the-history-of-firefox-446233" target="_blank" rel="noopener noreferrer">Firefox</a>, and others.
+The web, which is short for <a href="https://www.lifewire.com/around-the-web-4781469" 
+target="_blank" rel="noopener noreferrer">World Wide Web</a>, is one of the ways 
+information is shared on the internet (others include 
+<a href="https://www.lifewire.com/electronic-mail-overview-1164107" target="_blank" 
+rel="noopener noreferrer">email</a>, File Transfer Protocol 
+<a href="https://www.thoughtco.com/ftp-defined-2654479" target="_blank" 
+rel="noopener noreferrer">(FTP)</a>, and 
+<a href="https://www.lifewire.com/what-is-instant-messaging-2483319" target="_blank" 
+rel="noopener noreferrer">instant messaging</a> services. The web is composed of billions 
+of connected digital documents that are viewed in a web browser, such as Chrome, 
+<a href="https://www.lifewire.com/what-is-safari-4173608" target="_blank" rel="noopener noreferrer">
+Safari</a>, Microsoft Edge, <a href="https://www.lifewire.com/the-history-of-firefox-446233" 
+target="_blank" rel="noopener noreferrer">Firefox</a>, and others.
 
-Think of the internet as a library. Think of the books, magazines, newspapers, DVDs, <a href="https://www.lifewire.com/what-are-audiobooks-2438535" target="_blank" rel="noopener noreferrer">audiobooks</a>, and other media it contains as websites.
+Think of the internet as a library. Think of the books, magazines, newspapers, DVDs, 
+<a href="https://www.lifewire.com/what-are-audiobooks-2438535" target="_blank" rel="noopener noreferrer">
+audiobooks</a>, and other media it contains as websites.
 
-Both the internet and the web serve unique purposes but work hand in hand to provide information, entertainment, and other services to the public.
+Both the internet and the web serve unique purposes but work hand in hand to provide information, 
+entertainment, and other services to the public.
 
-The internet really is the information superhighway. It passes through various kinds of network traffic including, FTP, IRC, and the World Wide Web. Without it, we wouldn't have our favorite and most common way to access websites.
+The internet really is the information superhighway. It passes through various kinds of network 
+traffic including, FTP, IRC, and the World Wide Web. Without it, we wouldn't have our favorite 
+and most common way to access websites.
 
-The internet was born in the 1960s under the name ARPAnet. It was an experiment by the U.S. military to find ways to maintain communications in the case of a nuclear strike. With a decentralized network, communications could be maintained even if parts were taken offline. ARPAnet eventually became a civilian effort, connecting university mainframe computers for academic purposes.
+The internet was born in the 1960s under the name ARPAnet. It was an experiment by the U.S. 
+military to find ways to maintain communications in the case of a nuclear strike. With a 
+decentralized network, communications could be maintained even if parts were taken offline. 
+ARPAnet eventually became a civilian effort, connecting university mainframe computers for 
+academic purposes.
 
-As personal computers became mainstream in the 1980s and 1990s and the internet was opened to commercial interests, it grew exponentially. More and more users plugged their computers into the massive network through dial-up connections, then through faster connections such as ISDN, cable, DSL, and other technologies. Today, the internet has grown into a public spiderweb of interconnected devices and networks.
+As personal computers became mainstream in the 1980s and 1990s and the internet was opened to 
+commercial interests, it grew exponentially. More and more users plugged their computers into 
+the massive network through dial-up connections, then through faster connections such as ISDN, 
+cable, DSL, and other technologies. Today, the internet has grown into a public spiderweb of 
+interconnected devices and networks.
 
-No single entity owns the internet, and no single government has absolute authority over its operation. Some technical rules, and its hardware and software standards, are agreed upon by invested organizations, groups, businesses, and others. These groups help the internet remain functional and accessible. However, for the most part, the internet is a free and open broadcast medium of networked hardware with no single owner.
+No single entity owns the internet, and no single government has absolute authority over its 
+operation. Some technical rules, and its hardware and software standards, are agreed upon by 
+invested organizations, groups, businesses, and others. These groups help the internet remain 
+functional and accessible. However, for the most part, the internet is a free and open broadcast 
+medium of networked hardware with no single owner.
 
-Most consumers are familiar with and comfortable with the World Wide Web. With its easy-to-use interface, it's the best way to get information in a few clicks.
+Most consumers are familiar with and comfortable with the World Wide Web. With its easy-to-use 
+interface, it's the best way to get information in a few clicks.
 
-The World Wide Web was born in 1989. Interestingly enough, the web was built by research physicists so that they could share research findings with one another's computers. Today, that idea has evolved into the greatest collection of human knowledge in history.
+The World Wide Web was born in 1989. Interestingly enough, the web was built by research 
+physicists so that they could share research findings with one another's computers. Today, 
+that idea has evolved into the greatest collection of human knowledge in history.
 
 The credited inventor of the World Wide Web is Tim Berners-Lee.
 
@@ -665,7 +743,11 @@ rel="noopener noreferrer">W3C Home</a></p>
 
 <h4>History</h4>
 <p>
-As Web site layouts evolve, HTML5 structural elements such as lists, paragraphs, tables, etc. show their limits. Today, many Web sites offer navigation menus, tabbed panels, headers, footers, and so on. The way these "parts"' are implemented relies heavily on &lt;div&gt; and &lt;span&gt; elements with different id and class attributes, lots of CSS and lots of JavaScript code to apply custom styles and behaviors.
+As Web site layouts evolve, HTML5 structural elements such as lists, paragraphs, tables, etc. 
+show their limits. Today, many Web sites offer navigation menus, tabbed panels, headers, footers, 
+and so on. The way these "parts"' are implemented relies heavily on &lt;div&gt; and &lt;span&gt; 
+elements with different id and class attributes, lots of CSS and lots of JavaScript code to apply 
+custom styles and behaviors.
 
 However, there are some issues with this approach:</p>
 
@@ -677,17 +759,27 @@ However, there are some issues with this approach:</p>
   <li>These elements can not be handled by the Web browser natively...</li>
 </ul>
 <p>
-Even if differences exist between ids, classes and css/js implementations, they also share common behaviors, layouts, and "ways of doing things" that could be guessed at first glance by a human.
+Even if differences exist between ids, classes and css/js implementations, they also share common 
+behaviors, layouts, and "ways of doing things" that could be guessed at first glance by a human.
 
-So various studies have been conducted in order to identify the most popular ids, class names, widgets, etc. used on the Web:
+So various studies have been conducted in order to identify the most popular ids, class names, 
+widgets, etc. used on the Web:
 
-Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" target="_blank" rel="noopener noreferrer">article: </a>"During the creation of HTML5, Ian Hickson used Google's tools to mine data from over a billion Web pages, surveying what ids and class names are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, calling it MAMA ("Metadata Analysis and Mining Application"). MAMA, as structural Web-paged search engine, had a smaller URL set, but looked at a larger and wider variety of Web page statistics".</p>
+Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" 
+target="_blank" rel="noopener noreferrer">article: </a>"During the creation of HTML5, Ian Hickson 
+used Google's tools to mine data from over a billion Web pages, surveying what ids and class names 
+are most commonly used on the real world Web. Opera did a similar study of 3.5 million URLs, 
+calling it MAMA ("Metadata Analysis and Mining Application"). MAMA, as structural Web-paged 
+search engine, had a smaller URL set, but looked at a larger and wider variety of Web page 
+statistics".</p>
 
 <h3>New elements added to the HTML5 set</h3>
-<p>
-The results of these surveys led to the addition of new structural elements in HTML5. For example, the very popular &lt;div class="header"&gt; led to the creation of a &lt;header&gt; element, &lt;div class="aside"&gt; to a &lt;aside&gt; element, etc.
+<p>The results of these surveys led to the addition of new structural elements in HTML5. For example, 
+the very popular &lt;div class="header"&gt; led to the creation of a &lt;header&gt; element, &lt;div 
+class="aside"&gt; to a &lt;aside&gt; element, etc.
 
-Finally, the 20 most popular ids and class names found in Hickson's and Opera's surveys gave birth to these new elements (click on the element's name to go to 
+Finally, the 20 most popular ids and class names found in Hickson's and Opera's surveys gave 
+birth to these new elements (click on the element's name to go to 
 the W3C specification about this element):</p>
 
 <h4>HTML5 structural elements with description</h4>
@@ -3039,17 +3131,24 @@ While this is just a warning, we do prefer to use H1s only as top level elements
   style="width:50%" />
 &nbsp;
 <br/>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch1-3-10">1.3.10 Examples of Page Layouts</h3>
-<p>In this section, we show some "classic" CSS layout techniques for designing an HTML page that uses the new sectioning elements. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this section, we show some "classic" CSS layout techniques for designing an HTML 
+page that uses the new sectioning elements. 
 
-We embed examples from this <a href="https://learn.shayhowe.com/html-css/positioning-content/" target="_blank">very good post about "Positioning content"</a>. This is a recommended reading as it details how to use the CSS float property to layout a Web page.
+We embed examples from this <a href="https://learn.shayhowe.com/html-css/positioning-content/" 
+target="_blank">very good post about "Positioning content"</a>. This is a recommended 
+reading as it details how to use the CSS float property to layout a Web page.
 
-The 4 examples below are given "as is" to give you some hints. There are lots of other possibilities on using CSS to position element.</p>
+The 4 examples below are given "as is" to give you some hints. There are lots of other 
+possibilities on using CSS to position element.</p>
 
-<h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, using the float and width CSS properties</h4>
+<h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, using 
+the float and width CSS properties</h4>
 
-<p>This example uses the following HTML structure (notice that we use the "HTML entity syntax" for displaying "<" or ">". For example, "&lt;" displays a "<" character).</p>
+<p>This example uses the following HTML structure (notice that we use the "HTML entity 
+syntax" for displaying "<" or ">". For example, "&lt;" displays a "<" character).</p>
 
 <details>
  <summary>Click to Toggle!</summary>
@@ -3074,11 +3173,17 @@ The 4 examples below are given "as is" to give you some hints. There are lots of
 
 </details>
 
-<p>Here we use the CSS rule float:left for the &lt;section&gt; and the CSS rule float:right for the &lt;aside&gt;. When an element floats, it goes out of the normal flow of the HTML element. Then by default it floats to the edge of its parent; and its size depends on the elements it contains. 
-In order to fill the whole horizontal space, we prefer here to "force the width" by setting the CSS width property with a percentage.  We took width: 63% for the &lt;section&gt; on the left and width:30% for the &lt;aside&gt; on the right.
+<p>Here we use the CSS rule float:left for the &lt;section&gt; and the CSS rule float:right 
+for the &lt;aside&gt;. When an element floats, it goes out of the normal flow of the HTML 
+element. Then by default it floats to the edge of its parent; and its size depends on the 
+elements it contains.</p>
+<p>In order to fill the whole horizontal space, we prefer here to "force the width" by setting 
+the CSS width property with a percentage.  We took width: 63% for the &lt;section&gt; on 
+the left and width:30% for the &lt;aside&gt; on the right.</p>
 
-You can look at the complete CSS code in the interactive example below (click on the CSS or HTML text in the menu bar below, or click "edit on codepen" to change the code and see the results):</p>
-
+<p>You can look at the complete CSS code in the interactive example below (click on the CSS 
+or HTML text in the menu bar below, or click "edit on codepen" to change the code and 
+see the results):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ 35. header with section float left and aside float right (56) ~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3089,7 +3194,8 @@ You can look at the complete CSS code in the interactive example below (click on
 &nbsp;
 <br/>
 
-<a href="https://jsbin.com/dufapo/edit?html,css,output" target="_blank">Also available online at JSBin</a>.
+<a href="https://jsbin.com/dufapo/edit?html,css,output" target="_blank">
+Also available online at JSBin</a>.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 36. michel buffa home page - 3 sections centered (56) ~~~~~~~~~~~~~~~~~~~~-->
@@ -3101,7 +3207,8 @@ You can look at the complete CSS code in the interactive example below (click on
 &nbsp;
 <br/>
 
-<h4>Example #2: three sections centered, of equal size, also using the float and width CSS properties</h4>
+<h4>Example #2: three sections centered, of equal size, also using the float and 
+width CSS properties</h4>
 
 <p>Here we show how to make a 3 column layout using the CSS float property.</p>
 
@@ -3134,7 +3241,10 @@ You can look at the complete CSS code in the interactive example below (click on
 
 </details>
 
-<p>Instead of having one element with a float:left and one element with a float:right property, we instead use float:left for all three of them, and we give a  width:30% CSS property value to each &lt;section&gt;. We also set a small margin so that the colums have a gap between them.</p>
+<p>Instead of having one element with a float:left and one element with a float:right 
+property, we instead use float:left for all three of them, and we give a  width:30% 
+CSS property value to each &lt;section&gt;. We also set a small margin so that the 
+colums have a gap between them.</p>
 
 <h4>Look at the CSS code in the example below:</h4>
 
@@ -3142,16 +3252,20 @@ You can look at the complete CSS code in the interactive example below (click on
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 37. header and three float sections (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image037.webp?raw=true"
-   alt=""
-   width="65%" />
+  title="Header and three float sections"
+  alt="Header and three float sections."
+  width="65%" />
 &nbsp;
 <br/>
 
 <h4>Example #3: same result using the CSS flex property</h4>
 
-<p>This example uses the CSS flex property to achieve a result similar to the one shown in Example 2.
-There are many articles on Flexbox and we recommend those from Rachel Andrew on Smashing Magazine: "<a href="https://www.smashingmagazine.com/2018/10/flexbox-use-cases/">Use cases for Flexbox</a>", "<a href="https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/">Flexbox: how big is that flexible box</a>", etc.</p>
-
+<p>This example uses the CSS flex property to achieve a result similar to the one 
+shown in Example 2.
+There are many articles on Flexbox and we recommend those from Rachel Andrew on 
+Smashing Magazine: "<a href="https://www.smashingmagazine.com/2018/10/flexbox-use-cases/">
+Use cases for Flexbox</a>", "<a href="https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/">
+Flexbox: how big is that flexible box</a>", etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 38. same example using the css flex property (57) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3170,22 +3284,27 @@ There are many articles on Flexbox and we recommend those from Rachel Andrew on 
 <!--~~~~~~~~~~~~~~~~~~~~ 39. another example using the flex property (58) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image039.webp?raw=true"
-  alt="Another example using the flex property."
   title="Another example using the flex property"
+  alt="Another example using the flex property."
   style="width:65%" />
 &nbsp;
 <br/>
 
 <h4>External resources</h4>
 <ul>
-  <li>An article on CSS Tricks: <a href="https://css-tricks.com/all-about-floats/" target="_blank">All about floats</a></li>
-  <li>Old but good article on "A List Apart" (ALA): <a href="https://alistapart.com/article/css-floats-101" target="_blank">CSS Floats 101</a></li>
-  <li>Another article on Lifewire:<a href="https://www.lifewire.com/understanding-css-float-3466205" target="_blank"> Understanding CSS float</a></li>
-  <li>On MDN's Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank">float CSS property</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear" target="_blank">clear CSS property</a></li>
+  <li>An article on CSS Tricks: <a href="https://css-tricks.com/all-about-floats/" 
+    target="_blank">All about floats</a></li>
+  <li>Old but good article on "A List Apart" (ALA): 
+    <a href="https://alistapart.com/article/css-floats-101" target="_blank">CSS Floats 101</a></li>
+  <li>Another article on Lifewire:<a href="https://www.lifewire.com/understanding-css-float-3466205" 
+    target="_blank"> Understanding CSS float</a></li>
+  <li>On MDN's Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" 
+    target="_blank">float CSS property</a> and the 
+	<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear" target="_blank">clear CSS property</a></li>
 </ul>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch1-4-1">1.4.1 The &lt;details&gt; and &lt;summary&gt; Elements</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>These elements have been introduced for displaying a foldable zone in an HTML document.
 
 In the screenshot below, taken from the W3C specification page, the text next to the horizontal arrow is a &lt;summary&gt; element, and the text displayed when we click on the summary part, is the &lt;details&gt; element. This is a sort of "accordion" with foldable content.</p>
@@ -4032,11 +4151,15 @@ is a bit similar to the previous one except that it shows the extracted metadata
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Basic steps</h4>
 
-<p>Adding microdata to an HTML page is a really simple task and requires only three attributes: <b>itemscope, itemtype</b>  and <b>itemprop</b>.</p>
+<p>Adding microdata to an HTML page is a really simple task and requires only three attributes: 
+<b>itemscope, itemtype</b>  and <b>itemprop</b>.</p>
 
 <h4>1 - Define a container element by adding an itemscope attribute</h4>
 
-<p>First, you need to add an itemscope attribute to an HTML element. This will define the "global object" for which we will define properties. This element can be of different types that we will describe later, but for now let us keep looking at the same example we used in previous sections:</p>
+<p>First, you need to add an itemscope attribute to an HTML element. This will define the 
+"global object" for which we will define properties. This element can be of different types 
+that we will describe later, but for now let us keep looking at the same example we used 
+in previous sections:</p>
 
 ```
 <section itemscope itemtype="https://schema.org/Person">
@@ -4045,22 +4168,38 @@ is a bit similar to the previous one except that it shows the extracted metadata
 ```
 
 <p>
-We will look at the itemtype attribute later. Now that we have defined a global wrapper object/element (a Person in this case), we can  add properties inside this element to define the first name, last name, etc.
+We will look at the itemtype attribute later. Now that we have defined a global wrapper 
+object/element (a Person in this case), we can  add properties inside this element to 
+define the first name, last name, etc.
 </p>
 
-<h4>2 - Specify the vocabulary used for your microdata with the itemtype attribute of the container element</h4>
+<h4>2 - Specify the vocabulary used for your microdata with the itemtype attribute of 
+the container element</h4>
 <p>
-HTML5 proposes semantic elements for representing sections, articles, headers, etc, but it does not propose any specific elements or attributes to describe an address, a product, a person, etc.
+HTML5 proposes semantic elements for representing sections, articles, headers, etc, but 
+it does not propose any specific elements or attributes to describe an address, a product, 
+a person, etc.
 
-We need a special vocabulary to represent a person or a physical address. With microdata you can define your own vocabulary or better, reuse one of the existing popular vocabularies, such as <a href="https://schema.org/">schema.org</a>. 
+We need a special vocabulary to represent a person or a physical address. With microdata 
+you can define your own vocabulary or better, reuse one of the existing popular vocabularies, 
+such as <a href="https://schema.org/">schema.org</a>. 
 
-Microdata works with properties defined as name/value pairs. The names are defined in the corresponding vocabulary. For example, the vocabulary for representing a <a href="https://schema.org/Person">Person</a> defines a set of property names.
+Microdata works with properties defined as name/value pairs. The names are defined in the 
+corresponding vocabulary. For example, the vocabulary for representing a 
+<a href="https://schema.org/Person">Person</a> defines a set of property names.
 
-As you can see in this small extract from the vocabulary (also called a "schema"), a Person can have a name (some text), an Address (the type is defined by another vocabulary named PostalAddress), an affiliation (defined by another vocabulary named Organization) and so on.
+As you can see in this small extract from the vocabulary (also called a "schema"), a Person 
+can have a name (some text), an Address (the type is defined by another vocabulary named 
+PostalAddress), an affiliation (defined by another vocabulary named Organization) and so on.
 
-We notice that one property, such as the address of a Person, may use another vocabulary. Yes, a vocabulary may link to another vocabulary! There is also inheritance between vocabularies! The above screenshot shows that the Person vocabulary inherits from a Thing vocabulary, and the five first properties of the table come from this vocabulary that describes things.
+We notice that one property, such as the address of a Person, may use another vocabulary. 
+Yes, a vocabulary may link to another vocabulary! There is also inheritance between 
+vocabularies! The above screenshot shows that the Person vocabulary inherits from a 
+Thing vocabulary, and the five first properties of the table come from this vocabulary 
+that describes things.
 
-If you are a developer and if you are familiar with object oriented programming, think of properties as class attributes and think of vocabularies as classes.
+If you are a developer and if you are familiar with object oriented programming, think 
+of properties as class attributes and think of vocabularies as classes.
 </p>
 <h4>Vocabularies are meant to be shared</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4235,7 +4374,8 @@ the values of the properties are located, depending on each element type.</p>
 | anything else | The data is whatever is in the text of the element. |
 </div>
 <p>
-For example, the value of a property defined in an &lt;img&gt; element will be the value of the src attribute:</p>
+For example, the value of a property defined in an &lt;img&gt; element will be the value of 
+the src attribute:</p>
 
 ```
 <img itemprop="image" src="MichelBuffa.png" alt="A great professor">
@@ -4270,7 +4410,8 @@ using your favorite search engine, and you will find lots!):
 <ul>
   <li>The <a href="https://webcode.tools/microdata-generator">Ultimate Microdata Generator</a></li>
   <li>The <a href="https://microdatagenerator.org/">MicroData Generator</a></li>
-  <li>The <a href="https://technicalseo.com/tools/schema-markup-generator/">Schema Markup Generator (JSON-LD)</a></li>
+  <li>The <a href="https://technicalseo.com/tools/schema-markup-generator/">
+    Schema Markup Generator (JSON-LD)</a></li>
 </ul>
 
 <h4>Example:</h4>
@@ -4288,9 +4429,12 @@ using your favorite search engine, and you will find lots!):
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch1-5-5">1.5.5 Examples of Well Structured Documents with Microdata</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here, we propose a few links to Web pages that were created by students of previous editions of this course).
+Here, we propose a few links to Web pages that were created by students of previous editions of 
+this course).
 
-The students had to create a Web page to introduce themselves, with some information including: name, job, employer, location, etc., and of course enrich the page with microdata. They also had to follow the best practices concerning the new structural elements, headings, etc.
+The students had to create a Web page to introduce themselves, with some information including: 
+name, job, employer, location, etc., and of course enrich the page with microdata. They also 
+had to follow the best practices concerning the new structural elements, headings, etc.
 
 Click on these pages and look at the source code...
 
@@ -4332,12 +4476,16 @@ View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 onlin
 &nbsp;
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 name="ch2-1">Module 2: HTML5 Multimedia</h3>
+<h3 name="ch2-1-1">Module 2: HTML5 Multimedia</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch2-2-1">2.2.1 The &lt;video&gt; Element</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Until 2012, it was only possible to integrate an audio or video player using the proprietary Flash technology, marketed by the company Macromedia (later acquired by Adobe). The &lt;video&gt; element of HTML5 is one of the three "Flash killers" (the others being &lt;audio&gt; for the sound and &lt;canvas&gt; for drawing and animation).
-<i>(Note that Adobe <a href="https://www.adobe.com/products/flashplayer/end-of-life.html">no longer supports Flash Player</a> since December 31, 2020)</i></p>
+<p>Until 2012, it was only possible to integrate an audio or video player using the proprietary 
+Flash technology, marketed by the company Macromedia (later acquired by Adobe). The &lt;video&gt; 
+element of HTML5 is one of the three "Flash killers" (the others being &lt;audio&gt; for the 
+sound and &lt;canvas&gt; for drawing and animation).
+<i>(Note that Adobe <a href="https://www.adobe.com/products/flashplayer/end-of-life.html">
+no longer supports Flash Player</a> since December 31, 2020)</i></p>
 
 <h4>Check the HTML code of the following CodePen:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4352,9 +4500,13 @@ View the <a href="https://jsbin.com/karemi/1/edit?html,output">example #2 onlin
 
 <h4>Please note that:</h4>
 <ul>
-  <li>The controls attribute indicates that a control panel with play/stop/volume/progress widgets should be displayed;</li>
-  <li>Usually the browser  will use the first format it recognizes  (in this case, the browser checks whether mp4 is supported, and if not, it will check for the ogg format, and so on). Some browsers may use a different heuristic and choose a "preferred" format;</li>
-  <li>The &lt;video&gt; element is a DOM member, so  CSS styling can be applied, as well as manipulation using the DOM API.</li>
+  <li>The controls attribute indicates that a control panel with play/stop/volume/progress 
+    widgets should be displayed;</li>
+  <li>Usually the browser  will use the first format it recognizes  (in this case, the browser 
+    checks whether mp4 is supported, and if not, it will check for the ogg format, and so on). 
+	Some browsers may use a different heuristic and choose a "preferred" format;</li>
+  <li>The &lt;video&gt; element is a DOM member, so  CSS styling can be applied, as well as 
+    manipulation using the DOM API.</li>
 </ul>
 
 <p>
@@ -4363,17 +4515,25 @@ You will learn more about the different attributes of the &lt;video&gt; eleme
 
 <h4>Current browser support for the &lt;video&gt; element</h4>
 <p>
-The &lt;video&gt; element is supported by all major browsers. See the <a href="https://caniuse.com/video">support table from CanIUse.</a></p>
+The &lt;video&gt; element is supported by all major browsers. See the 
+<a href="https://caniuse.com/video">support table from CanIUse.</a></p>
 
 <h4>Restriction: you cannot embed a YouTube or DailyMotion video using the &lt;video&gt; element</h4>
 <p>
 Help! &lt;video src="my youtube video URL"&gt;&lt;/video&gt; does not work! 
 
-<b>BEWARE</b>: you cannot directly embed videos from most of the popular Web sites such as YouTube, Dailymotion, Vimeo, etc. For commercial reasons, and because advertising is automatically added to the videos, these Web sites do not allow "regular" embedding of their videos.
+<b>BEWARE</b>: you cannot directly embed videos from most of the popular Web sites such 
+as YouTube, Dailymotion, Vimeo, etc. For commercial reasons, and because advertising is 
+automatically added to the videos, these Web sites do not allow "regular" embedding of 
+their videos.
 
-While they use HTML5 to render their videos, these hosting sites (YouTube, etc.) use rather complex techniques in order to prevent you from using them with the &lt;video&gt;element. Instead, you often need to embed an &lt;iframe&gt; that will render the HTML5 videos in your Web site, and of course, the advertising that comes along with them.
+While they use HTML5 to render their videos, these hosting sites (YouTube, etc.) use rather 
+complex techniques in order to prevent you from using them with the &lt;video&gt;element. 
+Instead, you often need to embed an &lt;iframe&gt; that will render the HTML5 videos in 
+your Web site, and of course, the advertising that comes along with them.
 
-Usually you have an "embed" button close to the videos that prompts you with some HTML code that you can copy and paste for embedding.</p>
+Usually you have an "embed" button close to the videos that prompts you with some HTML 
+code that you can copy and paste for embedding.</p>
 
 <h4>An example using YouTube:</h4>
 
@@ -4383,7 +4543,8 @@ Usually you have an "embed" button close to the videos that prompts you with s
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WMFXg-kni0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
-<p>The YouTube video embedded in this page by the above code: it's HTML5 but it's not a &lt;video&gt; element directly inserted in the HTML of this page, it's an &lt;iframe&gt;.</p>
+<p>The YouTube video embedded in this page by the above code: it's HTML5 but it's not a 
+&lt;video&gt; element directly inserted in the HTML of this page, it's an &lt;iframe&gt;.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 69. web of things (wot) explainer video snapshot (83) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -4396,7 +4557,11 @@ Usually you have an "embed" button close to the videos that prompts you with s
 
 <h4>Support for different video CODECS (mp4, ogG, avi, etc.)</h4>
 
-<p>This is one of the main problems encountered in recent years: codec support was not the same from one browser to another, for commercial/economic reasons. For example, between 2010 and 2013, Firefox only supported the ogg/oggm format. It did not support mp3/mp4 encoding for audio/video, while Internet Explorer only supported H.264 encoding. Since 2012, things have changed with browser updates and today most popular formats are supported.
+<p>This is one of the main problems encountered in recent years: codec support was not the 
+same from one browser to another, for commercial/economic reasons. For example, between 
+2010 and 2013, Firefox only supported the ogg/oggm format. It did not support mp3/mp4 
+encoding for audio/video, while Internet Explorer only supported H.264 encoding. Since 
+2012, things have changed with browser updates and today most popular formats are supported.
 
 <i>The recommended CODEC, which works in all popular browsers: H264/mp4.</i></p>
 
@@ -4412,19 +4577,30 @@ Usually you have an "embed" button close to the videos that prompts you with s
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML5 audio is composed of several layers:</h4>
 <ul>
-  <li>The &lt;audio&gt; element is useful for embedding an audio player into a Web page. It is dedicated for <b>streamed audio</b>. It is very similar to the &lt;video&gt; element, both in its use and in its API.</li>
-  <li>The Web Audio API is designed for musical applications and for adding sound effects to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), music synthesis and sound generation (oscillators, etc.). It also comes with a set of predefined sound processing modules (reverb, delay, etc.)</li>
+  <li>The &lt;audio&gt; element is useful for embedding an audio player into a Web page. It 
+    is dedicated for <b>streamed audio</b>. It is very similar to the &lt;video&gt; element, 
+	both in its use and in its API.</li>
+  <li>The Web Audio API is designed for musical applications and for adding sound effects to 
+    games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), 
+	music synthesis and sound generation (oscillators, etc.). It also comes with a set of 
+	predefined sound processing modules (reverb, delay, etc.)</li>
 </ul>
 <!-- https://github.com/bbauska/W3Cx-4of5-HTML5.2x -->
 <p>
-This course will focus on the &lt;audio&gt; element. We present the <a href="https://www.w3.org/TR/webaudio/">Web Audio API</a> and other advanced HTML5 features in the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 Apps and Games course</a>.
+This course will focus on the &lt;audio&gt; element. We present the 
+<a href="https://www.w3.org/TR/webaudio/">Web Audio API</a> and other advanced HTML5 
+features in the <a href="https://www.edx.org/course/html5-apps-and-games">W3Cx HTML5 
+Apps and Games course</a>.
 
-The attributes, event set and JavaScript API  of the &lt;audio&gt; element are just a "reduced" version of the ones from the &lt;video&gt; element, and here we will only address the differences and peculiarities.
+The attributes, event set and JavaScript API  of the &lt;audio&gt; element are just a 
+"reduced" version of the ones from the &lt;video&gt; element, and here we will only 
+address the differences and peculiarities.
 </p>
 
 <h4>The &lt;audio&gt; element, basic usage</h4>
 <p>
-Here is a simple example (also available <a href="https://jsbin.com/yogojis/edit?html,output">online example from JSBin</a>):
+Here is a simple example (also available <a href="https://jsbin.com/yogojis/edit?html,output">
+online example from JSBin</a>):
 
 Press play to stream the neigh of a horse: (does not work in git)</p>
 
@@ -4459,9 +4635,13 @@ Press play to stream the neigh of a horse: (does not work in git)</p>
 </details>
 
 <p>
-In this example, just as for the &lt;video&gt; element, we used the controls attribute in order to render the play/stop, time, volume and progress widgets.
+In this example, just as for the &lt;video&gt; element, we used the controls attribute in 
+order to render the play/stop, time, volume and progress widgets.
 
-Notice the other similarities: between the &lt;audio&gt;...&lt;audio&gt; tags, we added a text message that is displayed if the Web browser doesn't support the &lt;audio&gt; element, and we used several <source>...</source> elements that link to different audio formats for the same file. The browser will use the first format it recognizes.
+Notice the other similarities: between the &lt;audio&gt;...&lt;audio&gt; tags, we added a 
+text message that is displayed if the Web browser doesn't support the &lt;audio&gt; element, 
+and we used several <source>...</source> elements that link to different audio formats for 
+the same file. The browser will use the first format it recognizes.
 </p>
 <h4>External resources</h4>
 <ul>
@@ -4473,8 +4653,8 @@ Notice the other similarities: between the &lt;audio&gt;...&lt;audio&gt; tags,
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Most useful attributes of the &lt;video&gt; element</h4>
 
-<p>
-Here are the most common attributes you can use with the &lt;video&gt; element. They are self explanatory...</p>
+<p>Here are the most common attributes you can use with the &lt;video&gt; element. 
+They are self explanatory...</p>
 
 <ul>
   <li>src: source of the video.</li>
@@ -4508,13 +4688,21 @@ Here are the most common attributes you can use with the &lt;video&gt; element
 <h4> Be careful if you target mobile applications or if you have multiple videos on the same page</h4>
 
 <p>
-The autoplay attribute is not recommended if your Web site targets mobile applications (actually, it is often ignored by mobile browsers), as it may consume bandwidth even if the user is not interested in watching the proposed video. If you target mobile devices, we recommend using preload=none as well, as the default value for this attribute is auto.
+The autoplay attribute is not recommended if your Web site targets mobile applications 
+(actually, it is often ignored by mobile browsers), as it may consume bandwidth even if 
+the user is not interested in watching the proposed video. If you target mobile devices, 
+we recommend using preload=none as well, as the default value for this attribute is auto.
 
-<b>Best practice</b>: do not use autoplay and add preload="none" if you target mobile devices or if you have multiple audio/video files on the same page.  For example, <a href="https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html">this page</a> contains many audio elements and it does not make sense to have them preload or autoplay.</p>
+<b>Best practice</b>: do not use autoplay and add preload="none" if you target mobile 
+devices or if you have multiple audio/video files on the same page.  For example, 
+<a href="https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html">
+this page</a> contains many audio elements and it does not make sense to have them 
+preload or autoplay.</p>
 
 <h4>About the poster attribute</h4>
 <p>
-If the poster attribute is missing, usually the first non-blank frame of the video will be used as the image that is shown when the video is not playing.</p>
+If the poster attribute is missing, usually the first non-blank frame of the video 
+will be used as the image that is shown when the video is not playing.</p>
 
 <h4>About the autoplay attribute for general use</h4>
 
@@ -15058,7 +15246,7 @@ the gamePad API</a> for using USB or wireless gamepads/joysticks/game controlle
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 name="4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
+<h3 name="ch4-3-2">4.3.2 Keyboard Interaction, Key Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 When you listen to keyboard related events (keydown, keyup or keypressed), the event 
 parameter passed to the listener function will contain the code of the key that fired 
@@ -18041,7 +18229,7 @@ This attribute is useful for putting input fields outside the form itself. The 
 <i>Lines 12</i> and <i>22</i> shows the form attribute. Make sure that its value matches the id of the form!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 name="5-5-3">5.5.3 autocomplete</h3>
+<h3 name="ch5-5-3">5.5.3 autocomplete</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 This attribute applies either to the &lt;form&gt; element or on individual &lt;input&gt; elements. It specifies when input fields must autocomplete the user's input based on the user's typing history. 
@@ -22260,42 +22448,42 @@ Please, pan and zoom on the map and click. The longitude and latitude are comput
       map = L.map('map').setView([latitude, longitude], 13);
       // Tile layer using key api at cloudmade.com
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      key: '760506895e284217a7442ce2efe97797',
-      styleId: 103288,
-      maxZoom: 16
+        key: '760506895e284217a7442ce2efe97797',
+        styleId: 103288,
+        maxZoom: 16
       }).addTo(map);
       // Marker using leaflet
       marker = L.marker([latitude, longitude]).addTo(map);
       // Popup in leaflet
       marker.bindPopup('<p></p>').openPopup();
       getPhysicalAddress({lat:latitude, lng:longitude});
-      }
+    }
     // Get current position fail
-  function error() {
-	alert('Get current position fail. Please access codepen to get geolocation.');
+    function error() {
+	  alert('Get current position fail. Please access codepen to get geolocation.');
 	}
     var marker;
-  function getPhysicalAddress(latlong) {
-	geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
-    var r = results[0];
-	if (r) {
-	if (marker) {
-    marker
-	.setLatLng(r.center)
-	.setPopupContent(r.html || r.name)
-	.openPopup();
-	  } else {
-    marker = L.marker(r.center)
-	.bindPopup(r.name)
-	.addTo(map)
-	.openPopup();
-	}
-	  }
-   });
-  }
-  getLocation();
-</script>
-  </body>
+    function getPhysicalAddress(latlong) {
+      geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
+        var r = results[0];
+        if (r) {
+          if (marker) {
+            marker
+            .setLatLng(r.center)
+            .setPopupContent(r.html || r.name)
+            .openPopup();
+          } else {
+            marker = L.marker(r.center)
+            .bindPopup(r.name)
+            .addTo(map)
+            .openPopup();
+          }
+	    }
+      });
+    }
+    getLocation();
+  </script>
+</body>
 </html>
 ```
 
@@ -22342,72 +22530,72 @@ run in this page):</p>
     <fieldset>
       <legend>Surface address</legend>
       <input id="surfaceAddress" size=110 type="text">
-    <fieldset>
+    </fieldset>
     <form>
       <div id="map"></div>
 
       <script type="text/javascript">
-      var geocoder = L.Control.Geocoder.nominatim();
-      var map, marker, latitude, longitude;
-      function getLocation() {
-      if (!navigator.geolocation) {
-        alert("Browser doesn't support geolocation");
-        } else {
-        navigator.geolocation.getCurrentPosition(success, error);
+        var geocoder = L.Control.Geocoder.nominatim();
+        var map, marker, latitude, longitude;
+        function getLocation() {
+          if (!navigator.geolocation) {
+            alert("Browser doesn't support geolocation");
+          } else {
+            navigator.geolocation.getCurrentPosition(success, error);
+          }
         }
-      }
-    // Get current position successfully
-    function success(position) {
-    latitude = position.coords.latitude;
-    longitude = position.coords.longitude;
-    // Instance map using leaflet
-    map = L.map('map').setView([latitude, longitude], 13);
-    // Tile layer using key api at cloudmade.com
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}{x}{y}.png', {
-  key: '760506895e284217a7442ce2efe97797',
-  styleId: 103288,
-  maxZoom: 16
-  }).addTo(map);
-  // Marker using leaflet
-  marker = L.marker([latitude, longitude]).addTo(map);
-  // Popup in leaflet
-  marker.bindPopup('<p></p>').openPopup();
-  getPhysicalAddress({lat:latitude, lng:longitude});
-}
-// Get current position fail
-function error() {
-  alert('Get current position fail. Please access codepen to get geolocation.');
-}
-var marker;
-function getPhysicalAddress(latlong) {
-  geocoder.reverse(latlong, 500000, function(results) {
-  var r = results[0];
-  console.log(r.name);
-  document.querySelector("#surfaceAddress").value = r.name;
-  if (r) {
-    if (marker) {
-    marker
-      .setLatLng(r.center)
-      .setPopupContent(r.html || r.name)
-      .openPopup();
-    } else {
-      marker = L.marker(r.center)
-      .bindPopup(r.name)
-      .addTo(map)
-      .openPopup();
-      }
-      }
-      });
-    }
-    </script>
+        // Get current position successfully
+        function success(position) {
+          latitude = position.coords.latitude;
+          longitude = position.coords.longitude;
+          // Instance map using leaflet
+          map = L.map('map').setView([latitude, longitude], 13);
+          // Tile layer using key api at cloudmade.com
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}{x}{y}.png', {
+            key: '760506895e284217a7442ce2efe97797',
+            styleId: 103288,
+            maxZoom: 16
+          }).addTo(map);
+          // Marker using leaflet
+          marker = L.marker([latitude, longitude]).addTo(map);
+          // Popup in leaflet
+          marker.bindPopup('<p></p>').openPopup();
+          getPhysicalAddress({lat:latitude, lng:longitude});
+        }
+        // Get current position fail
+        function error() {
+          alert('Get current position fail. Please access codepen to get geolocation.');
+        }
+        var marker;
+        function getPhysicalAddress(latlong) {
+          geocoder.reverse(latlong, 500000, function(results) {
+            var r = results[0];
+            console.log(r.name);
+            document.querySelector("#surfaceAddress").value = r.name;
+            if (r) {
+              if (marker) {
+                marker
+                 .setLatLng(r.center)
+                 .setPopupContent(r.html || r.name)
+                 .openPopup();
+              } else {
+                marker = L.marker(r.center)
+                 .bindPopup(r.name)
+                 .addTo(map)
+                 .openPopup();
+              }
+            }
+          });
+        }
+      </script>
   </body>
 </html>
 ```
 
 </details>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 name="ch6-4-7">6.4.7 Discussion and projects</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Optional projects</h4>
 
 Here are a few project ideas. Your classmates and the team who prepared 
