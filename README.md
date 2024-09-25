@@ -93,7 +93,7 @@ w3cx-3of5-html5.1x: Coursera - Front-End Web Development - HTML5 Coding Essentia
   <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
-<h2 id-"cha-1">About W3C and the Web</h2>
+<h2 id="cha-1">a1. About W3C and the Web</h2>
 
 <h2 id="chb">Course Information</h2>
 
@@ -153,7 +153,7 @@ We are committed to teach you how to code Web pages, and how to do it the correc
 way. We encourage you to create Web pages and apps and share them in the 
 discussion forums. Have fun!</p>
 
-<h3 name="cha-4">Online Code Editors:</h3>
+<h3 id="cha-4">a4. Online Code Editors:</h3>
 
 <a href="https://jsbin.com" target="_blank" rel="noopener noreferrer">JS Bin</a>
 
@@ -321,7 +321,7 @@ The <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validato
 
 <a href="https://validator.w3.org/unicorn/" target="_blank">Unicorn</a> is W3C's unified validator, which helps people improve the quality of their Web pages by performing a variety of checks. Unicorn gathers the results of the popular HTML and CSS validators, as well as other useful services, such as Internationalization, RSS/Atom feeds and http headers.
 
-<h3 name="cha-3">Internationalization Checker</h3>
+<h3 id="cha-3">a3. Internationalization Checker</h3>
 <p>
 The <a href="https://validator.w3.org/i18n-checker/" target="_blank" rel="noopener noreferrer">W3C Internationalization Checker</a> provides information about various internationalization-related aspects of your page, including the HTTP headers that affect it. It will also report a number of issues and offer advice about how to resolve them.
 </p>
@@ -387,7 +387,7 @@ was built as an easy place to get started to provide feedback on new proposals o
 brand-new proposals for consideration.<br/>
 Happy Web building!</p>
 
-<h3 name="cha-1">What is W3C?</h3>
+<h3 id="cha-1">a1. What is W3C?</h3>
 
 <p>As steward of global Web standards, W3C's mission is to safeguard the openness, 
 accessibility, and freedom of the World Wide Web from a technical perspective.
@@ -596,7 +596,7 @@ Without it, we have no way of accessing the thousands of websites out
 there. For most online needs, however, the web is the easiest to use. 
 Each serves an important purpose.</p>
 
-<h3 name="=2">Why Accessibility is Important</h3>
+<h3 id="cha-2">a2. Why Accessibility is Important</h3>
 
 <i>The power of the Web is in its universality.</i>
 <i>Access by everyone regardless of disability is an essential aspect.</i>
