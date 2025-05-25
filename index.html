@@ -7642,8 +7642,7 @@ of fillRect(…).</p>
 drawing in "stroke" mode, the lineWidth property (<i>line 3</i>), that is used 
 for setting the width of the shape outline. The value is in pixels.</p>
 
-<h4>Example #2: draw two filled red rectangles with a blue outline of 5 pixels 
-and some text</h4>
+<h4>Example #2: draw two filled red rectangles with a blue outline of 5 pixels and some text</h4>
 
 <p>Let’s continue with another example. This time we will draw several shapes 
 that share the same colors - they will be filled in red, with a blue outline. 
@@ -20682,9 +20681,9 @@ not images will be greyed and non selectable.</p>
 16. &lt;/script&gt;</pre>
 
 </details>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Explanations:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><i>Line 1:</i> we used the multiple attribute to allow the selection of 
     multiple files in the file chooser (using shift or control keys). 
@@ -20732,9 +20731,9 @@ indiscriminately a Blob or a File as parameter.</p>
   title="The Blob movie poster"
   alt="The Blob movie poster."
   style="width:25%;" />
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The Blob object</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>An object of type Blob is a structure that represents binary data
 available as read-only.</b> Most of the time, you will only encounter
 these objects when you handle files.</p>
@@ -20742,9 +20741,9 @@ these objects when you handle files.</p>
 <p>Blob objects have two properties, namely:size and type, which
 respectively retrieve the size in bytes of the data handled by the Blob
 and their MIME type.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The File object</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>File objects are useful for manipulating… files!</b> They inherit
 the properties and methods of Blob objects, and have two additional
 properties that are name, for the file name, and lastModifiedDate to get
@@ -20754,9 +20753,9 @@ JavaScript Date object, obviously) .</p>
 <p>Most of the time, we will work with File objects. Blob objects will
 have real interest when you download binary files using Ajax (see
 example below).</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>[Advanced]</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>If you are interested in seeing how Blob objects can be used, <a
 href="https://jsbin.com/jefitop/1/edit?html,output" target="_blank" 
 rel="noopener noreferrer">here is an example “as is” that shows how to download an image using Xhr2</a> (Xml Http
@@ -20773,21 +20772,21 @@ rel="noopener noreferrer">W3C HTML5 Apps and Games</a> course.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In order to read the content of a file, different steps required.
 Let’s see how to do it.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Typical use is made of three steps</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step #1: create a FileReader object</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The file API proposes several methods for reading file content, each
 taken from the FileReader interface. Here is how you create a FileReader object:</p>
 
 <ol type="1">
   <li>var reader = new FileReader();</li>
 </ol>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Steps #2 and #3: first call a method of the FileReader object for reading 
 the file content, then get the file content in an onload callback</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There are three different methods available for reading a file’s
 content: readAsText, readAsArrayBuffer for binary data and also
 as readAsDataURL (the content will be a URL you will use to set
@@ -20851,11 +20850,11 @@ contents as text, dataURL and binary.</p>
 <h3 id="ch6-3-6">6.3.6 Read file content as text</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Let’s start by reading a pure text file</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Examples</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example #1: read a single file’s content</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><a href="https://jsbin.com/xewemi/edit?html,output" target="_blank" rel="noopener noreferrer">
 Example at JSBin</a>, or try it below in your browser:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20866,9 +20865,9 @@ Example at JSBin</a>, or try it below in your browser:</p>
   title="Read a single file's content"
   alt="Read a single file's content."
   style="width:25%;" />
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Complete source code:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary><b>Click to expand!</b></summary>
 
@@ -20912,9 +20911,9 @@ Example at JSBin</a>, or try it below in your browser:</p>
 we show the complete source code above. Remember that the instruction
 at <i>line 29</i> is executed first, then when the file is read, the
 browser will call asynchronously the onload callback at <i>line 20</i>.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example #2: a variation of the previous one, using multiple files</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><a href="https://jsbin.com/zaheyu/edit?html,output" target="_blank" rel="noopener noreferrer">
 Example on JSBin</a>, or try it below in your browser. This time, please select multiple text 
 files (using shift for multiple selection):</p>
@@ -20926,9 +20925,9 @@ files (using shift for multiple selection):</p>
   title="Choose multiple text files"
   alt="Choose multiple text files."
   style="width:25%;" />
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Source code:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary><b>Click to expand!</b></summary>
 
@@ -20976,9 +20975,9 @@ files (using shift for multiple selection):</p>
 42. &lt;/html&gt;</pre>
 
 </details>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Explanations</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This example is similar to the previous one, except that this time we
 read multiple files.</p>
 <p><i>Line 20:</i> this is the for loop that will iterate on
@@ -20989,9 +20988,9 @@ a reader.onload =… directly in the loop, this time we preferred to write
 a separate function that will do this. This technique is useful when you
 want the listener to work with extra variables computed in the loop (in
 our case, the name of the file).</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>About charter encoding</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Note that you can optionally indicate the encoding of the file you
 are going to read (default is UTF-8):</p>
 
@@ -21012,9 +21011,9 @@ course.</p>
 samples that should be loaded in memory and played using the WebAudio
 API, or for loading textures that you will use with WebGL for 3D
 animations.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: read a local audio file and play it with the WebAudio API</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The WebAudio API is useful for reading audio sound samples from
 memory (no streaming), and has been designed for music application and
 games. This example shows how a local audio file can be read and played
@@ -21031,9 +21030,9 @@ it prevents code that uses Ajax to run in its pages.</p>
   title="Local audio player"
   alt="Local audio player."
   style="width:35%;" />
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Source code extract:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary><b>Webaudio API:</b></summary>
 
@@ -21049,9 +21048,9 @@ it prevents code that uses Ajax to run in its pages.</p>
 10. }, false);</pre>
 
 </details>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Explanations:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><i>Line 2:</i> we get a pointer to the file selector, the variable fileInput.</li>
   <li><i>Line 5:</i> we define a change listener. In this example, we use an anonymous function directly 
@@ -21069,7 +21068,7 @@ it prevents code that uses Ajax to run in its pages.</p>
 <h3 id="ch6-3-8">6.3.8 Read file content as dataURL</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>What is a data URL?</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A data URL is a URL that includes type and content at the same time.
 It is useful, for example,  for in-lining images or videos in the HTML
 of a Web page (on mobile devices, this may speed up the loading of the
@@ -21080,7 +21079,7 @@ in the address bar of your browser, and you should see the red
 square:</p>
 
 <pre>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==</pre>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>This data URL in a browser address bar should look like this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 317. data url in address bar shows a red cirle (383) ~~~~~~~~~~~~~~~~~~~~-->
@@ -21103,6 +21102,7 @@ AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
 
 9TXL0Y4OHwAAAABJRU5ErkJggg==&quot; alt=&quot;Red square&quot; width=50 height=50/&gt;</pre>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>And here is the result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 318. red splotch (383) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21153,11 +21153,11 @@ just a dataURL and CSS:</p>
   title="Data URL in address bar shows a red circle"
   alt="Data URL in address bar shows a red circle."
   style="width:35%;" />
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Examples</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example #1: read images as data URL and display previews in the page</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This first example is useful for forms that allow the user to select one or more pictures. 
 Before sending the form, you might want to get a preview of the pictures in the HTML page.
 The reader.readAsDataUrl method is used for that.</p>
@@ -21173,11 +21173,11 @@ Example on JSBin</a> or try it below in your browser:</p>
   title="Preview of selected images"
   alt="Preview of selected images."
   style="width:35%;" /></a>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Preview of selected images:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Source code extract:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary><b>Click to expand!</b></summary>
 
@@ -21215,9 +21215,9 @@ Example on JSBin</a> or try it below in your browser:</p>
 32. }</pre>
 
 </details>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Explanations:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><i>Line 30:</i> starts the reading of the file f. When f is read, the onload 
     callback will be called.</li>
@@ -21228,9 +21228,9 @@ Example on JSBin</a> or try it below in your browser:</p>
 	in the document before the current children of the &lt;output id="list"&gt;  element 
 	(declared at <i>line 5</i>).</li>
 </ul>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example #2: read a single local image file and use it with drawImage ina canvas</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><a href="https://jsbin.com/miciqu/edit?html,output" target="_blank" rel="noopener noreferrer">Try it on JSBin</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 322. example 2 kitty cat (386) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21278,18 +21278,18 @@ example only works with a single file.</p>
 28. }</pre>
 
 </details>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Explanations:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Remember how we worked with images on a canvas. We had to create an
 empty image object (<i>line 8</i>), set the src attribute of the image
 object (<i>line 23</i>), then use an image.onload callback (<i>line
 15</i>), and we could only draw from inside the callback (<i>line
 17</i>). This time, it’s exactly the same, except that the URL comes
 from e.target.result in the reader.onload callback (<i>line 23</i>).</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example #3 (advanced): an instagram-like photo filter application</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Another very impressive example, has been developed by <span
 class="citation" data-cites="GeorgianaB">@GeorgianaB</span>, a student
 of the first iteration of this course (see her <a
@@ -21328,9 +21328,9 @@ different participants in the case of an application that involves
 several persons at the same time (using WebSockets, for example).<br>
 <a href="https://caniuse.com/#feat=geolocation" target="_blank" rel="noopener noreferrer">
 Browser support for the Geolocation API</a> is excellent, both on mobile and on desktop devices.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Typical use</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary><b>JavaScript source code:</b></summary>
 
@@ -21395,9 +21395,9 @@ the browser will ask if you agree to share your position with the application.</
   title="Geolocation callback illustration"
   alt="Geolocation callback illustration."
   style="width:35%;" />
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Explanations:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><i>Line 13</i> checks if the Web browser supports the geolocation API by testing the 
     variable navigator.geolocation. If not null, then the geolocation API is supported.</li>
@@ -21409,9 +21409,9 @@ the browser will ask if you agree to share your position with the application.</
   <li><i>Line 20</i> the position objects has a coords property that is the object that 
     holds the longitude and the latitude.</li>
 </ul>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>External resources:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>The W3C specification: <a href="https://www.w3.org/TR/geolocation-API/" target="_blank" 
     rel="noopener noreferrer">Geolocation API</a></li>
@@ -21532,9 +21532,9 @@ similar to the getCurrentPosition(onSuccess, onError) named watchPosition(onS
   <li>It returns an id so that you can use the clearWatch(id) method to stop the 
     current tracking.</li>
 </ul>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Typical use</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>// get an id of the current tracking, the showPosition callback is like the one we saw in earlier examples.
 var watchPosId = navigator.geolocation.watchPosition(showPosition);
 ...
@@ -21545,9 +21545,9 @@ navigator.geolocation.clearWatch(watchPosId);</pre>
 change getCurrentPosition to watchPosition in the previous examples, and
 try this code using a mobile phone or tablet, walk for 20 meters and see
 the position changing.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Options available when using the geolocation API, in particular real time tracking</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Several options are available when using HTML5 geolocation. We can pass
 a third parameter to the getCurrentPosition and watchPosition methods,
 that will hold one or several of the following options:</p>
@@ -21559,9 +21559,9 @@ that will hold one or several of the following options:</p>
   title="More properties of the coords object"
   alt="More properties of the coords object."
   style="width:35%;" />
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example of use</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary><b>JavaScript source code:</b></summary>
 
@@ -21700,9 +21700,9 @@ the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a b
 12. &lt;/html&gt;</pre>
 
 </details>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Source code extract:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary><b>HTML source code:</b></summary>
 
@@ -21920,9 +21920,9 @@ target="_blank" rel="noopener noreferrer">
   title="Gisgraphy screenshot"
   alt="Gisgraphy screenshot."
   style="width:35%;" /></a>
-  
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><b>Example #2:</b> reverse geocoding + OpenStreetMap</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Important note:</b> these examples below rely on an external 
 <a href="https://github.com/perliedman/leaflet-control-geocoder" 
 target="_blank" rel="noopener noreferrer">GitHub resource</a>.</p>
@@ -22023,9 +22023,9 @@ used to convert to a physical address.</p>
 75.&lt;/html&gt;</pre>
 
 </details>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example #3: shows the address on the map, from your current longitude and latitude</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <br/>
 
 <details>
@@ -22114,9 +22114,9 @@ used to convert to a physical address.</p>
 81. &lt;/html&gt;</code></pre>
 
 </details>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example #4: use of geolocation, map and reverse geocoder in a HTML form</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This is just a variation of the previous examples. We embedded the interactive map 
 in a form, and we display the results of the reverse geocoder in a form field. This 
 example might be useful if you want to pre-fill the address of a registration form, 
@@ -22219,7 +22219,7 @@ online example</a> (for security reasons the embedded version cannot run in thi
 <h3 id="ch6-4-7">6.4.7 Discussion and projects</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Optional projects</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here are a few project ideas. Your classmates and the team who prepared
 the course will be glad to try them and offer feedback. Please post URLs
 in this discussion forum. These projects are optional, meaning that they
@@ -22236,7 +22236,9 @@ good understanding of the material.</p>
     (see this YouTube tutorial about how to get such a key).</li>
 </ul>
 
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <h5>. . .The end.</h5>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   <h6>Prior updated 11-20-23 Mon 11:58pm<br/>
   Last updated 4-12-23 Fri 1:21am<br/>
@@ -22244,7 +22246,9 @@ good understanding of the material.</p>
   Last updated 8-15-24 Thu 3:28pm<br/>
   Last updated 8-23-24 Fri 4:32pm<br/>
   Last updated 9-25-24 Wed 8:00am<br/>
-  Last updated 10-30-24 Wed 4:46am</h6>
+  Last updated 10-30-24 Wed 4:46am<br/>
+  Last updated 5-24-25 Sat 5:50pm</h6>
+  <script src="./js/scripts.js"></script>
 
   </body>
 </html>
