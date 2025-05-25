@@ -2461,7 +2461,7 @@ icon to the left of the summary:</p>
 8.       &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
 9.       &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
 10.     &lt;/details&gt;
-11.   &lt;/body&gt;
+1&lt;/body&gt;
 12. &lt;/html&gt;</pre>
 
 </details>
@@ -2511,21 +2511,21 @@ target="_blank" rel="noopener noreferrer">
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre>1. &lt;details&gt;
-2.   &lt;summary&gt;
-3.     How to beat the boss...spoiler alert !
-4.   &lt;/summary&gt;
-5.   &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
-6.   &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
-7.   &lt;details&gt;
-8.     &lt;summary&gt;
-9.       Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
-10.     &lt;/summary&gt;
-11.     &lt;p&gt;Before finishing him, try to cut his trail, you will get a new weapon&lt;/p&gt;
-12.     &lt;p&gt;Just try to stay behind him as long as you can, hitting his tail with your melee weapon, 
-13.       after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.&lt;/p&gt;
-14.   &lt;/details&gt;
-15. &lt;/details&gt;</pre>
+<pre>&lt;details&gt;
+  &lt;summary&gt;
+    How to beat the boss...spoiler alert !
+  &lt;/summary&gt;
+  &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
+  &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
+  &lt;details&gt;
+  &lt;summary&gt;
+    Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
+    &lt;/summary&gt;
+    &lt;p&gt;Before finishing him, try to cut his trail, you will get a new weapon&lt;/p&gt;
+    &lt;p&gt;Just try to stay behind him as long as you can, hitting his tail with your melee weapon, 
+      after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.&lt;/p&gt;
+  &lt;/details&gt;
+&lt;/details&gt;</pre>
 
 </details>
 
@@ -2655,11 +2655,11 @@ contain &lt;time&gt; elements in a calendar, etc.</p>
 
 <h4>Examples:</h4>
 
-<pre>1.  We open at &lt;time&gt;10:00&lt;/time&gt; every morning.
-2.  I have a meeting the &lt;time datetime=&quot;2020-02-14&quot;&gt;Monday 14/02/2020.&lt;/time&gt;.
-3.  Blog posts from the year &lt;time datetime=&quot;2020&quot;&gt;2020&lt;/time&gt;.
-4.  Archives, blog posts for &lt;time datetime=&quot;2020-04&quot;&gt;April 2020&lt;/time&gt;
-5.  This recipe was published by Michel the &lt;time datetime=&quot;2020-04-16&quot;&gt;April 16, 2020&lt;/time&gt;.</pre>
+<pre>We open at &lt;time&gt;10:00&lt;/time&gt; every morning.
+I have a meeting the &lt;time datetime=&quot;2020-02-14&quot;&gt;Monday 14/02/2020.&lt;/time&gt;.
+Blog posts from the year &lt;time datetime=&quot;2020&quot;&gt;2020&lt;/time&gt;.
+Archives, blog posts for &lt;time datetime=&quot;2020-04&quot;&gt;April 2020&lt;/time&gt;
+This recipe was published by Michel the &lt;time datetime=&quot;2020-04-16&quot;&gt;April 16, 2020&lt;/time&gt;.</pre>
 
 <h4>The datetime attribute</h4>
 
@@ -2907,9 +2907,9 @@ the browser will be something like this:</p>
 browser will receive in the response HTTP header from the server (and by
 default the browser will display the image in a new tab):</p>
 
-<pre>1.  ...
-2.  Content-type: image/jpg
-3.  ...</pre>
+<pre>...
+Content-type: image/jpg
+...</pre>
 
 <p>However, if the link points to some PHP code,  Java servlet code, or
 any kind of script/application on the server side, this remote server
@@ -2929,27 +2929,27 @@ the browser to propose downloading it using a specified name:</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. protected void doGet(HttpServletRequest request, HttpServletResponse response)
-2. throws ServletException, IOException {
-3.   try {
-4.     // Build the zip file
-5.     String path = getServletContext().getRealPath(&quot;data&quot;);
-6.     File directory = new File(path);
-7.     String[] files = directory.list();
-8.     if (files != null &amp;&amp; files.length &gt; 0) {
-9.       byte[] zip = zipFiles(directory, files);
-10.       ServletOutputStream sos = response.getOutputStream();
-11. 
-12.       // generate a HTTP response that forces the download
-13.       [response.setContentType(&quot;application/zip&quot;);]
-14.       [response.setHeader(&quot;Content-Disposition&quot;,]
-15.       [&quot;attachment; filename=&quot;DATA.ZIP&quot;&quot;);]
-16.         sos.write(zip); sos.flush();
-17.     }
-18.   } catch (Exception e) {
-19.       e.printStackTrace();
-20.     }
-21. }</pre>
+<pre>protected void doGet(HttpServletRequest request, HttpServletResponse response)
+throws ServletException, IOException {
+  try {
+    // Build the zip file
+    String path = getServletContext().getRealPath(&quot;data&quot;);
+    File directory = new File(path);
+    String[] files = directory.list();
+    if (files != null &amp;&amp; files.length &gt; 0) {
+      byte[] zip = zipFiles(directory, files);
+      ServletOutputStream sos = response.getOutputStream();
+ 
+      // generate a HTTP response that forces the download
+      [response.setContentType(&quot;application/zip&quot;);]
+      [response.setHeader(&quot;Content-Disposition&quot;,]
+      [&quot;attachment; filename=&quot;DATA.ZIP&quot;&quot;);]
+        sos.write(zip); sos.flush();
+    }
+  } catch (Exception e) {
+    e.printStackTrace();
+  }
+}</pre>
 
 </details>
 
@@ -3152,28 +3152,29 @@ product description, a geographical location, etc.</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre>1.  &lt;section [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
-2.      &lt;h1&gt;Contact Information&lt;/h1&gt;
-3.      &lt;dl&gt;
-4.          &lt;dt&gt;Name&lt;/dt&gt;
-5.        &lt;dd [itemprop=&quot;name&quot;]&gt;Michel Buffa&lt;/dd&gt;
-6.          &lt;dt&gt;Position&lt;/dt&gt;
-7.        &lt;dd&gt;&lt;span [itemprop=&quot;jobTitle&quot;]&gt;
-8.            Professor/Researcher/Scientist&lt;/span&gt; for
-9.          &lt;span [itemprop=&quot;affiliation&quot;]&gt;
-10.           University of Côte d&#39;Azur, France
-11.         &lt;/span&gt;
-12.       &lt;/dd&gt;
-13.     &lt;/dl&gt;
-14.     &lt;!-- SURFACE ADDRESS GOES HERE --&gt;
-15.     &lt;h1&gt;My different online public accounts&lt;/h1&gt;
-16.   &lt;ul&gt;
-17.     &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;
-18.       [itemprop=&quot;url&quot;]&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
-19.     &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
-20.       [itemprop=&quot;url&quot;]&gt;Michel Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
-21.   &lt;/ul&gt;
-22. &lt;/section&gt;</pre>
+<pre>
+&lt;section [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
+  &lt;h1&gt;Contact Information&lt;/h1&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;Name&lt;/dt&gt;
+      &lt;dd [itemprop=&quot;name&quot;]&gt;Michel Buffa&lt;/dd&gt;
+      &lt;dt&gt;Position&lt;/dt&gt;
+      &lt;dd&gt;&lt;span [itemprop=&quot;jobTitle&quot;]&gt;
+        Professor/Researcher/Scientist&lt;/span&gt; for
+        &lt;span [itemprop=&quot;affiliation&quot;]&gt;
+          University of Côte d&#39;Azur, France
+        &lt;/span&gt;
+      &lt;/dd&gt;
+    &lt;/dl&gt;
+    &lt;!-- SURFACE ADDRESS GOES HERE --&gt;
+  &lt;h1&gt;My different online public accounts&lt;/h1&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;
+      [itemprop=&quot;url&quot;]&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
+      [itemprop=&quot;url&quot;]&gt;Michel Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;</pre>
 
 </details>
 
@@ -3183,26 +3184,26 @@ person’s address:</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre>1.  ...
-2.  &lt;/dl&gt;
-3.  
-4.  &lt;!-- SURFACE ADDRESS GOES HERE --&gt;
-5.  
-6.  &lt;dd [itemprop=]&quot;address&quot;[ itemscope]
-7.    itemtype=&quot;https://schema.org/PostalAddress&quot;&gt;
-8.      &lt;span [itemprop=]&quot;streetAddress&quot;&gt;10 promenade des anglais&lt;/span&gt;&lt;br&gt;
-9.      &lt;span [itemprop=]&quot;addressLocality&quot;&gt;Nice&lt;/span&gt;,
-10.     &lt;span [itemprop=]&quot;addressRegion&quot;&gt;Alpes maritimes, France&lt;/span&gt;
-11.     &lt;span [itemprop=]&quot;postalCode&quot;&gt;06410&lt;/span&gt;&lt;br&gt;
-12.     &lt;span [itemprop=]&quot;addressCountry&quot;[ itemscope]
-13.   [itemtype=]&quot;https://schema.org/Country&quot;&gt;
-14.     &lt;span [itemprop=]&quot;name&quot;&gt;France&lt;/span&gt;
-15.   &lt;/span&gt;
-16. &lt;/dd&gt;
-17. 
-18. &lt;h1&gt;My different online public accounts&lt;/h1&gt;
-19. 
-20. ...</pre>
+<pre>...
+&lt;/dl&gt;
+ 
+&lt;!-- SURFACE ADDRESS GOES HERE --&gt;
+  
+&lt;dd [itemprop=]&quot;address&quot;[ itemscope]
+  itemtype=&quot;https://schema.org/PostalAddress&quot;&gt;
+    &lt;span [itemprop=]&quot;streetAddress&quot;&gt;10 promenade des anglais&lt;/span&gt;&lt;br&gt;
+    &lt;span [itemprop=]&quot;addressLocality&quot;&gt;Nice&lt;/span&gt;,
+    &lt;span [itemprop=]&quot;addressRegion&quot;&gt;Alpes maritimes, France&lt;/span&gt;
+    &lt;span [itemprop=]&quot;postalCode&quot;&gt;06410&lt;/span&gt;&lt;br&gt;
+    &lt;span [itemprop=]&quot;addressCountry&quot;[ itemscope]
+  [itemtype=]&quot;https://schema.org/Country&quot;&gt;
+    &lt;span [itemprop=]&quot;name&quot;&gt;France&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/dd&gt;
+ 
+&lt;h1&gt;My different online public accounts&lt;/h1&gt;
+ 
+...</pre>
 
 </details>
 
@@ -3284,29 +3285,29 @@ at JSBin</a></p>
 <details>
   <summary><b>HTML source code:</b></summary>
   
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.    &lt;meta charset=utf-8 /&gt;
-5.    &lt;title&gt;Michel Buffa&lt;/title&gt;
-6.  &lt;/head&gt;
-7.  &lt;body&gt;
-8.    &lt;div [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
-9.      My name is &lt;span itemprop=&quot;name&quot;&gt;Michel Buffa&lt;/span&gt;,
-10.     And I&#39;m a &lt;span itemprop=&quot;jobTitle&quot;&gt;professor/researcher&lt;/span&gt; at
-11.      &lt;a href=&quot;https://www.i3s.unice.fr/&quot; itemprop=&quot;affiliation&quot;&gt;I3S
-12.     Laboratory&lt;/a&gt; in the south of France, near the city of Nice. My
-13.     email
-14.     is : &lt;span itemprop=&quot;email&quot;&gt;micbuffa@gmail.com&lt;/span&gt;.
-15.     I live in the city of
-16.     &lt;span itemprop=&quot;address&quot; itemscope
-17.       [itemtype=&quot;https://schema.org/PostalAddress&quot;]&gt;
-18.       &lt;span itemprop=&quot;addressLocality&quot;&gt;Biot&lt;/span&gt;, in a region named
-19.       &lt;span itemprop=&quot;addressRegion&quot;&gt;Alpes Maritimes&lt;/span&gt;
-20.     &lt;/span&gt;
-21.   &lt;/div&gt;
-22. &lt;/body&gt;
-23. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=utf-8 /&gt;
+  &lt;title&gt;Michel Buffa&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
+    My name is &lt;span itemprop=&quot;name&quot;&gt;Michel Buffa&lt;/span&gt;,
+    And I&#39;m a &lt;span itemprop=&quot;jobTitle&quot;&gt;professor/researcher&lt;/span&gt; at
+    &lt;a href=&quot;https://www.i3s.unice.fr/&quot; itemprop=&quot;affiliation&quot;&gt;I3S
+    Laboratory&lt;/a&gt; in the south of France, near the city of Nice. My
+    email
+    is : &lt;span itemprop=&quot;email&quot;&gt;micbuffa@gmail.com&lt;/span&gt;.
+    I live in the city of
+    &lt;span itemprop=&quot;address&quot; itemscope
+      [itemtype=&quot;https://schema.org/PostalAddress&quot;]&gt;
+      &lt;span itemprop=&quot;addressLocality&quot;&gt;Biot&lt;/span&gt;, in a region named
+      &lt;span itemprop=&quot;addressRegion&quot;&gt;Alpes Maritimes&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -17321,7 +17322,7 @@ the range slider, at given positions.</h4>
 8.    &lt;option&gt;4&lt;/option&gt;
 9.    &lt;option&gt;6&lt;/option&gt;
 10.   &lt;option&gt;8&lt;/option&gt;
-11.   &lt;option&gt;10&lt;/option&gt;
+1&lt;option&gt;10&lt;/option&gt;
 12. &lt;/datalist&gt;</pre>
 
 </details>
@@ -17709,19 +17710,19 @@ will not trigger auto-completion.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;form&gt;
-2.    ...
-3.    &lt;input list=&quot;browsers&quot; id=&quot;mybrowser&quot; /&gt;
-4.  
-5.    &lt;datalist id=&quot;browsers&quot;&gt;
-6.      &lt;option value=&quot;Internet Explorer&quot;&gt;
-7.      &lt;option value=&quot;Firefox&quot;&gt;
-8.      &lt;option value=&quot;Chrome&quot;&gt;
-9.      &lt;option value=&quot;Opera&quot;&gt;
-10.     &lt;option value=&quot;Safari&quot;&gt;
-11.   &lt;/datalist&gt;
-12.   ...
-13. &lt;/form&gt;</pre>
+<pre>&lt;form&gt;
+  ...
+  &lt;input list=&quot;browsers&quot; id=&quot;mybrowser&quot; /&gt;
+  
+  &lt;datalist id=&quot;browsers&quot;&gt;
+    &lt;option value=&quot;Internet Explorer&quot;&gt;
+    &lt;option value=&quot;Firefox&quot;&gt;
+    &lt;option value=&quot;Chrome&quot;&gt;
+    &lt;option value=&quot;Opera&quot;&gt;
+    &lt;option value=&quot;Safari&quot;&gt;
+  &lt;/datalist&gt;
+  ...
+&lt;/form&gt;</pre>
 
 </details>
 
@@ -17779,10 +17780,10 @@ the required attribute is used - this makes empty fields invalid).</p>
 value that indicates what constitutes a valid entry. More on this in the
 section of this course dedicated to form validation.</p>
 
-<pre>1.  &lt;input type=&quot;text&quot; name=&quot;country_code&quot;
-2.         pattern=&quot;[A-Za-z]{3}&quot;
-3.         title=&quot;3 letter country code&quot;
-4.  /&gt;</pre>
+<pre>&lt;input type=&quot;text&quot; name=&quot;country_code&quot;
+  pattern=&quot;[A-Za-z]{3}&quot;
+  title=&quot;3 letter country code&quot;
+/&gt;</pre>
 
 <h3>Examples</h3>
 
@@ -17816,28 +17817,28 @@ type.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.    &lt;meta charset=&quot;utf-8&quot;&gt;
-5.    &lt;title&gt;Example of the pattern attribute&lt;/title&gt;
-6.    &lt;style&gt;
-7.      input:invalid {
-8.        background-color: lightPink;
-9.      }
-10.     input:valid {
-11.       background-color: lightGreen;
-12.     }
-13.   &lt;/style&gt;
-14. &lt;/head&gt;
-15. &lt;body&gt;
-16.   &lt;label for=&quot;code&quot;&gt;Please enter a 3 letter country code:&lt;/label&gt;
-17.   &lt;input type=&quot;text&quot; name=&quot;country_code&quot;
-18.     pattern=&quot;[A-Za-z]{3}&quot;
-19.     title=&quot;3 letter country code&quot;
-20.     id=&quot;code&quot;/&gt;
-21. &lt;/body&gt;
-22. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of the pattern attribute&lt;/title&gt;
+  &lt;style&gt;
+    input:invalid {
+      background-color: lightPink;
+    }
+    input:valid {
+      background-color: lightGreen;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;label for=&quot;code&quot;&gt;Please enter a 3 letter country code:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;country_code&quot;
+    pattern=&quot;[A-Za-z]{3}&quot;
+    title=&quot;3 letter country code&quot;
+    id=&quot;code&quot;/&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -17854,29 +17855,29 @@ required (empty field = invalid)…</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt;
-4.    &lt;title&gt;Example of use of new HTML5 input field attributes&lt;/title&gt;
-5.    &lt;style&gt;
-6.      input:focus:invalid { background-color: lightPink;}
-7.      input:valid { background-color:lightGreen; }
-8.      input:required {border: 2px solid red; }
-9.      input:optional {border: 2px solid green; }
-10.   &lt;/style&gt;
-11. &lt;/head&gt;
-12. &lt;body&gt;
-13.   &lt;p&gt;Attributes used: placeholder (for displaying a ghost example value), pattern, required (empty = invalid)...
-14.   &lt;p&gt;
-15.   &lt;label for=&quot;inputID&quot;&gt;Enter a pseudo (6-12 characters): &lt;/label&gt;
-16.   &lt;input id=&quot;inputID&quot; name=&quot;Name&quot;
-17.     placeholder=&quot;Name&quot;
-18.     pattern=&quot;w{6,12}&quot;
-19.     required
-20.     title=&quot;6-12 characters allowed please&quot;
-21.     type=&quot;text&quot; /&gt;
-22. &lt;/body&gt;
-23. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of use of new HTML5 input field attributes&lt;/title&gt;
+  &lt;style&gt;
+    input:focus:invalid { background-color: lightPink;}
+    input:valid { background-color:lightGreen; }
+    input:required {border: 2px solid red; }
+    input:optional {border: 2px solid green; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Attributes used: placeholder (for displaying a ghost example value), pattern, required (empty = invalid)...
+  &lt;p&gt;
+  &lt;label for=&quot;inputID&quot;&gt;Enter a pseudo (6-12 characters): &lt;/label&gt;
+  &lt;input id=&quot;inputID&quot; name=&quot;Name&quot;
+    placeholder=&quot;Name&quot;
+    pattern=&quot;w{6,12}&quot;
+    required
+    title=&quot;6-12 characters allowed please&quot;
+    type=&quot;text&quot; /&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -17898,14 +17899,14 @@ target="_blank" rel="noopener noreferrer">
 
 <h4>Source code extract:</h4>
 
-<pre>1.  &lt;input
-2.    id=&quot;website&quot;
-3.    name=&quot;url&quot;
-4.    type=&quot;url&quot;
-5.    placeholder=&quot;http://www.domain.com&quot;
-6.    title=&quot;http, https or ftp allowed&quot;
-7.    pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]&quot;
-8.  /&gt;</pre>
+<pre>&lt;input
+  id=&quot;website&quot;
+  name=&quot;url&quot;
+  type=&quot;url&quot;
+  placeholder=&quot;http://www.domain.com&quot;
+  title=&quot;http, https or ftp allowed&quot;
+  pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]&quot;
+/&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-7">5.5.7 min, max and step</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17924,20 +17925,20 @@ input field types.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;input id=&quot;mydate&quot; name=&quot;mydate&quot;
-2.    type=&quot;date&quot;
-3.    min=&quot;2012-01-01&quot;
-4.    max=&quot;2013-01-01&quot;
-5.    value=&quot;2012-01-01&quot;
-6.  /&gt;
-7.   
-8.  &lt;input name=&quot;time&quot; id=&quot;time&quot; type=&quot;time&quot;
-9.    min=&quot;09:00&quot;
-10.   max=&quot;17:00&quot;
-11.   value=&quot;12:00&quot;
-12. /&gt;
-13.  
-14. &lt;input id=&quot;range&quot; name=&quot;range&quot; type=&quot;range&quot; 
+<pre>&lt;input id=&quot;mydate&quot; name=&quot;mydate&quot;
+  type=&quot;date&quot;
+  min=&quot;2012-01-01&quot;
+  max=&quot;2013-01-01&quot;
+  value=&quot;2012-01-01&quot;
+/&gt;
+   
+&lt;input name=&quot;time&quot; id=&quot;time&quot; type=&quot;time&quot;
+  min=&quot;09:00&quot;
+  max=&quot;17:00&quot;
+  value=&quot;12:00&quot;
+/&gt;
+  
+&lt;input id=&quot;range&quot; name=&quot;range&quot; type=&quot;range&quot; 
       min=&quot;0&quot; 
     max=&quot;100&quot; 
     step=&quot;5&quot;/&gt;</pre>
@@ -17982,54 +17983,54 @@ separated by a comma, then look at the input field background color
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.   &lt;!DOCTYPE html&gt;
-2.   &lt;html lang=&quot;en&quot;&gt;
-3.   &lt;head&gt;
-4.     &lt;meta charset=&quot;utf-8&quot;&gt;
-5.     &lt;title&gt;Jsbin&lt;/title&gt;
-6.     &lt;style&gt;
-7.       input:invalid {
-8.         background-color: lightPink;
-9.       }
-10.      input:valid {
-11.        background-color: lightGreen;
-12.      }
-13.      fieldset {
-14.        border:1px solid;
-15.        padding:20px;
-16.      }
-17.    &lt;/style&gt;
-18.  &lt;/head&gt;
-19. 
-20.  &lt;body&gt;
-21.    &lt;p&gt;This form uses: &lt;code&gt;&lt;input type=&quot;email&quot;
-         name=&quot;myemail&quot; &lt;b&gt;multiple&lt;/b&gt;&gt;&lt;/code&gt;&lt;/p&gt;
-22. 
-23.      &lt;form&gt;
-24.        &lt;fieldset&gt;
-25.          &lt;legend&gt;With the multiple attribute &lt;/legend&gt;
-26.          &lt;label&gt;Enter several email addresses: &lt;/label&gt;
-27.          &lt;input type=&quot;email&quot; name=&quot;myemail&quot; title=&quot;you can enter 
-               multiple emails addresses, separated by a comma&quot; multiple/&gt;
-28.            &lt;button&gt;Submit&lt;/button&gt;
-29.        &lt;/fieldset&gt;
-30.      &lt;/form&gt;
-31.    &lt;p&gt;
-32.    &lt;p&gt;This form does not use the multiple attribute:&lt;/p&gt;
-33. 
-34.      &lt;form&gt;
-35.        &lt;fieldset&gt;
-36.          &lt;legend&gt;Without the multiple attribute &lt;/legend&gt;
-37.          &lt;label&gt;Enter several email addresses: &lt;/label&gt;
-38.          &lt;input type=&quot;email&quot; name=&quot;myemail&quot; title=&quot;only one address please!&quot;/&gt;
-39.          &lt;button&gt;Submit&lt;/button&gt;
-40.        &lt;/fieldset&gt;
-41.      &lt;/form&gt;
-42.    &lt;p&gt;
-43.    Type in a list of email addresses separated by a comma. Look at the input field 
-         background color (pink = invalid, green = valid), try to submit. &lt;/p&gt;
-44.  &lt;/body&gt;
-45.  &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Jsbin&lt;/title&gt;
+  &lt;style&gt;
+    input:invalid {
+    background-color: lightPink;
+  }
+    input:valid {
+    background-color: lightGreen;
+  }
+    fieldset {
+    border:1px solid;
+    padding:20px;
+  }
+  &lt;/style&gt;
+&lt;/head&gt;
+ 
+&lt;body&gt;
+  &lt;p&gt;This form uses: &lt;code&gt;&lt;input type=&quot;email&quot;
+    name=&quot;myemail&quot; &lt;b&gt;multiple&lt;/b&gt;&gt;&lt;/code&gt;&lt;/p&gt;
+ 
+    &lt;form&gt;
+    &lt;fieldset&gt;
+      &lt;legend&gt;With the multiple attribute &lt;/legend&gt;
+      &lt;label&gt;Enter several email addresses: &lt;/label&gt;
+      &lt;input type=&quot;email&quot; name=&quot;myemail&quot; title=&quot;you can enter 
+        multiple emails addresses, separated by a comma&quot; multiple/&gt;
+      &lt;button&gt;Submit&lt;/button&gt;
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+  &lt;p&gt;
+  &lt;p&gt;This form does not use the multiple attribute:&lt;/p&gt;
+ 
+    &lt;form&gt;
+      &lt;fieldset&gt;
+          &lt;legend&gt;Without the multiple attribute &lt;/legend&gt;
+        &lt;label&gt;Enter several email addresses: &lt;/label&gt;
+        &lt;input type=&quot;email&quot; name=&quot;myemail&quot; title=&quot;only one address please!&quot;/&gt;
+        &lt;button&gt;Submit&lt;/button&gt;
+      &lt;/fieldset&gt;
+    &lt;/form&gt;
+  &lt;p&gt;
+  Type in a list of email addresses separated by a comma. Look at the input field 
+    background color (pink = invalid, green = valid), try to submit. &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -18071,8 +18072,8 @@ cover their usage and you are welcome to use them for future reference
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>These attributes are targeted to the &lt;input type=“submit”&gt; input fields. They are rarely used.</p>
 
-<pre>1. &lt;input type=&quot;submit&quot;
-2. formaction=&quot;preview.php&quot; formmethod=&quot;get&quot; value=&quot;Preview&quot;&gt;</pre>
+<pre>&lt;input type=&quot;submit&quot;
+formaction=&quot;preview.php&quot; formmethod=&quot;get&quot; value=&quot;Preview&quot;&gt;</pre>
 
 <p>When you use an &lt;input type=“submit”&gt; field with
 the formaction attribute, the action attribute value of the form is
@@ -18086,12 +18087,12 @@ the method attribute of the form.</p>
 
 <h4>Typical use</h4>
 
-<pre>1. &lt;form action=&quot;post.php&quot; method=&quot;post&quot;&gt;
-2.   &lt;input type=&quot;submit&quot;
-3.     formaction=&quot;preview.php&quot; formmethod=&quot;get&quot;
-4.     value=&quot;Preview&quot;&gt;
-5.   &lt;input type=&quot;submit&quot; value=&quot;Send&quot;&gt;
-6. &lt;/form&gt;</pre>
+<pre>&lt;form action=&quot;post.php&quot; method=&quot;post&quot;&gt;
+  &lt;input type=&quot;submit&quot;
+    formaction=&quot;preview.php&quot; formmethod=&quot;get&quot;
+    value=&quot;Preview&quot;&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Send&quot;&gt;
+&lt;/form&gt;</pre>
 
 <p><i>Line 3</i> overrides the values set in <i>line 1</i>.</p>
 
@@ -18155,17 +18156,17 @@ JSBin</a>):</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;form action=&quot;form.php&quot;&gt;
-2.    &lt;fieldset&gt;
-3.      &lt;legend&gt;Example of formnovalidate attribute&lt;/legend&gt;
-4.      &lt;label for=&quot;email&quot;&gt;E-mail:&lt;/label&gt;
-5.      &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot;/&gt;&lt;br&gt;
-6.      &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;&lt;br&gt;
-7.      &lt;input type=&quot;submit&quot;
-8.        formnovalidate
-9.        value=&quot;Submit without validation&quot; /&gt;
-10.   &lt;/fieldset&gt;
-11. &lt;/form&gt;</pre>
+<pre>&lt;form action=&quot;form.php&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Example of formnovalidate attribute&lt;/legend&gt;
+    &lt;label for=&quot;email&quot;&gt;E-mail:&lt;/label&gt;
+    &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot;/&gt;&lt;br&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;&lt;br&gt;
+    &lt;input type=&quot;submit&quot;
+      formnovalidate
+      value=&quot;Submit without validation&quot; /&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18187,9 +18188,9 @@ submission should be displayed.</p>
 
 <h4>Typical use</h4>
 
-<pre>1. &lt;input type=&quot;submit&quot;
-2.   formtarget=&quot;_blank&quot;
-3.   value=&quot;Submit but show results in a new window/tab&quot;&gt;</pre>
+<pre>&lt;input type=&quot;submit&quot;
+  formtarget=&quot;_blank&quot;
+  value=&quot;Submit but show results in a new window/tab&quot;&gt;</pre>
 
 <h4>Possible values for the formtarget attributes are:</h4>
 <ul>
@@ -18215,16 +18216,16 @@ submission should be displayed.</p>
 
 <h4>Source code:</h4>
 
-<pre>1.  &lt;form action=&quot;defaultAction.php&quot;&gt;
-2.    &lt;label for=&quot;givenName&quot;&gt;Given name:&lt;/label&gt;
-3.    &lt;input type=&quot;text&quot; name=&quot;givenName&quot; id=&quot;givenName&quot;&gt;&lt;br&gt;
-4.    &lt;label for=&quot;familyName&quot;&gt;Family name:&lt;/label&gt;
-5.    &lt;input type=&quot;text&quot; name=&quot;familyName&quot; id=&quot;familyName&quot;&gt;&lt;br&gt;
-6.    &lt;input type=&quot;submit&quot; value=&quot;Submit as usual&quot;&gt;
-7.    &lt;input type=&quot;submit&quot;
-8.      formtarget=&quot;_blank&quot;
-9.      value=&quot;Submit but show results in a new window/tab&quot;&gt;
-10. &lt;/form&gt;</pre>
+<pre>&lt;form action=&quot;defaultAction.php&quot;&gt;
+  &lt;label for=&quot;givenName&quot;&gt;Given name:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;givenName&quot; id=&quot;givenName&quot;&gt;&lt;br&gt;
+  &lt;label for=&quot;familyName&quot;&gt;Family name:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;familyName&quot; id=&quot;familyName&quot;&gt;&lt;br&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit as usual&quot;&gt;
+  &lt;input type=&quot;submit&quot;
+    formtarget=&quot;_blank&quot;
+    value=&quot;Submit but show results in a new window/tab&quot;&gt;
+&lt;/form&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-5-13">5.5.13 formenctype</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18238,20 +18239,20 @@ example below:</p>
 
 <p><a href="https://jsbin.com/magexat/3/edit?html,output" target="_blank" rel="noopener noreferrer">Online example at JSBin</a>:</p>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.    &lt;head&gt;
-4.      &lt;meta charset=&quot;utf-8&quot;&gt;
-5.      &lt;title&gt;Jsbin&lt;/title&gt;
-6.    &lt;/head&gt;
-7.    &lt;body&gt;
-8.      &lt;form action=&quot;default.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
-9.        Given name: &lt;input type=&quot;text&quot; name=&quot;gname&quot;&gt;&lt;br&gt;
-10.       Family name: &lt;input type=&quot;text&quot; name=&quot;fname&quot;&gt;&lt;br&gt;
-11.       &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-12.     &lt;/form&gt;
-13.   &lt;/body&gt;
-14. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Jsbin&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form action=&quot;default.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
+      Given name: &lt;input type=&quot;text&quot; name=&quot;gname&quot;&gt;&lt;br&gt;
+      Family name: &lt;input type=&quot;text&quot; name=&quot;fname&quot;&gt;&lt;br&gt;
+      &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
 <p>Note that when you send form content using Ajax, this attribute is
 not needed, as you will specify the type of data sent to the remote
@@ -18306,27 +18307,27 @@ online example at JSBin</a></p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.    &lt;head&gt;
-4.      &lt;meta charset=&quot;utf-8&quot;&gt;
-5.      &lt;title&gt;Jsbin&lt;/title&gt;
-6.    &lt;/head&gt;
-7.    &lt;body&gt;
-8.      &lt;form action=&quot;defaultAction.php&quot; method=&quot;post&quot;
-9.        enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
-10.       &lt;label for=&quot;givenName&quot;&gt;Given name:&lt;/label&gt;
-11.       &lt;input type=&quot;text&quot; name=&quot;givenName&quot; id=&quot;givenName&quot;&gt;&lt;br&gt;
-12.       &lt;label for=&quot;familyName&quot;&gt;Family name:&lt;/label&gt;
-13.       &lt;input type=&quot;text&quot; name=&quot;familyName&quot; id=&quot;familyName&quot;&gt;&lt;br&gt;
-14.       &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-15.       &lt;input type=&quot;submit&quot;
-16.         formenctype=&quot;multipart/form-data&quot;
-17.         value=&quot;Submit as Multipart/form-data&quot;&gt;
-18.     &lt;/form&gt;
-19.     &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The formenctype attribute is not supported by all browsers.&lt;/p&gt;
-20.   &lt;/body&gt;
-21. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Jsbin&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form action=&quot;defaultAction.php&quot; method=&quot;post&quot;
+      enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+      &lt;label for=&quot;givenName&quot;&gt;Given name:&lt;/label&gt;
+      &lt;input type=&quot;text&quot; name=&quot;givenName&quot; id=&quot;givenName&quot;&gt;&lt;br&gt;
+      &lt;label for=&quot;familyName&quot;&gt;Family name:&lt;/label&gt;
+      &lt;input type=&quot;text&quot; name=&quot;familyName&quot; id=&quot;familyName&quot;&gt;&lt;br&gt;
+      &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+      &lt;input type=&quot;submit&quot;
+        formenctype=&quot;multipart/form-data&quot;
+        value=&quot;Submit as Multipart/form-data&quot;&gt;
+    &lt;/form&gt;
+    &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The formenctype attribute is not supported by all browsers.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -18452,11 +18453,11 @@ to play with the source code of these examples online at JSBin</a>.</p>
 
 <h4>Example #1</h4>
 
-<pre>1. &lt;form oninput=&quot;o.value=a.valueb.value&quot;&gt;
-2.   &lt;input type=&quot;number&quot; name=&quot;a&quot; id=&quot;a&quot; value=&quot;2&quot;&gt; x
-3.   &lt;input type=&quot;number&quot; name=&quot;b&quot; id=&quot;b&quot; value=&quot;3&quot;&gt; =
-4.   &lt;output for=&quot;a b&quot; name=&quot;o&quot;&gt;6&lt;/output&gt;
-5. &lt;/form&gt;</pre>
+<pre>&lt;form oninput=&quot;o.value=a.valueb.value&quot;&gt;
+  &lt;input type=&quot;number&quot; name=&quot;a&quot; id=&quot;a&quot; value=&quot;2&quot;&gt; x
+  &lt;input type=&quot;number&quot; name=&quot;b&quot; id=&quot;b&quot; value=&quot;3&quot;&gt; =
+  &lt;output for=&quot;a b&quot; name=&quot;o&quot;&gt;6&lt;/output&gt;
+&lt;/form&gt;</pre>
 
 <p>The oninput event handler directly uses the &lt;output&gt; element
 using the value of its name attribute.</p>
@@ -18481,14 +18482,14 @@ using the value of its name attribute.</p>
 
 <h4>Source code:</h4>
 
-<pre>1. &lt;form &gt;
-2.   &lt;input name=&quot;a&quot; value=&quot;50&quot; type=&quot;range&quot;
-3.     oninput=&quot;x.value = a.valueAsNumber + b.valueAsNumber;
-4.     y.value = this.value;&quot;/&gt;
-5.   &lt;output id=&quot;y&quot;&gt;50&lt;/output&gt; +
-6.   &lt;input name=&quot;b&quot; value=&quot;50&quot; type=&quot;number&quot; /&gt; =
-7.   &lt;output name=&quot;x&quot; id=&quot;x&quot; for=&quot;a b&quot;&gt;&lt;/output&gt;
-8. &lt;/form&gt;</pre>
+<pre>&lt;form &gt;
+  &lt;input name=&quot;a&quot; value=&quot;50&quot; type=&quot;range&quot;
+    oninput=&quot;x.value = a.valueAsNumber + b.valueAsNumber;
+    y.value = this.value;&quot;/&gt;
+  &lt;output id=&quot;y&quot;&gt;50&lt;/output&gt; +
+  &lt;input name=&quot;b&quot; value=&quot;50&quot; type=&quot;number&quot; /&gt; =
+  &lt;output name=&quot;x&quot; id=&quot;x&quot; for=&quot;a b&quot;&gt;&lt;/output&gt;
+&lt;/form&gt;</pre>
 
 <p>HTML5 has introduced new input field
 properties: valueAsNumber and valueAsDate.The last example is similar to
@@ -18553,18 +18554,18 @@ dragging the slider below:</p>
 
 <h4>Source code of the example:</h4>
 
-<pre>1.  &lt;p&gt;Grades: &lt;meter id=&quot;meter2&quot; value=&quot;75&quot; min=&quot;0&quot; low=&quot;20&quot; high=&quot;80&quot; max=&quot;100&quot;&gt;&lt;/meter&gt;
-2.  
-3.  &lt;input min=&quot;0&quot; max=&quot;100&quot; value=&quot;75&quot; id=&quot;meter2range&quot;
-4.    oninput=&quot;effect(&#39;meter2&#39;, &#39;meter2range&#39;)&quot; type=&quot;range&quot;&gt;
-5.  &lt;output id=&quot;meter2val&quot; for=&quot;meter2range&quot;&gt;&lt;/output&gt;&lt;/p&gt;
-6.  &lt;script&gt;
-7.    function effect(meter, meterrange) {
-8.      var currVal = document.getElementById(meterrange).value;
-9.      document.getElementById(meter).value = currVal;
-10.     document.getElementById(meter+ &quot;val&quot;).innerHTML = currVal;
-11.   }
-12. &lt;/script&gt;</pre>
+<pre>&lt;p&gt;Grades: &lt;meter id=&quot;meter2&quot; value=&quot;75&quot; min=&quot;0&quot; low=&quot;20&quot; high=&quot;80&quot; max=&quot;100&quot;&gt;&lt;/meter&gt;
+  
+&lt;input min=&quot;0&quot; max=&quot;100&quot; value=&quot;75&quot; id=&quot;meter2range&quot;
+  oninput=&quot;effect(&#39;meter2&#39;, &#39;meter2range&#39;)&quot; type=&quot;range&quot;&gt;
+&lt;output id=&quot;meter2val&quot; for=&quot;meter2range&quot;&gt;&lt;/output&gt;&lt;/p&gt;
+&lt;script&gt;
+  function effect(meter, meterrange) {
+    var currVal = document.getElementById(meterrange).value;
+    document.getElementById(meter).value = currVal;
+    document.getElementById(meter+ &quot;val&quot;).innerHTML = currVal;
+  }
+&lt;/script&gt;</pre>
 
 <h4>Explanations:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18671,14 +18672,14 @@ changing in real time the value attribute.</p>
 
 <h4>Source code:</h4>
 
-<pre>1.  Download progress: &lt;progress id=pr value=100 min=0 max=1000&gt;&lt;/progress&gt;
-2.  &lt;script&gt;
-3.     var i=0;
-4.     setInterval(function () {
-5.         i = (i+1) %1000;
-6.         document.getElementById(pr).value = i;
-7.     },1);
-8.  &lt;/script&gt;</pre>
+<pre>Download progress: &lt;progress id=pr value=100 min=0 max=1000&gt;&lt;/progress&gt;
+&lt;script&gt;
+  var i=0;
+  setInterval(function () {
+    i = (i+1) %1000;
+    document.getElementById(pr).value = i;
+  },1);
+&lt;/script&gt;</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-6-5">5.6.5 &lt;datalist&gt;</h3>
@@ -18765,18 +18766,18 @@ favorite browser):</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;form action=&quot;demo_form.asp&quot; method=&quot;get&quot;&gt;
-2.    &lt;input list=&quot;browsers&quot; name=&quot;browser&quot; /&gt;
-3.  
-4.      &lt;datalist id=&quot;browsers&quot;&gt;
-5.        &lt;option value=&quot;Internet Explorer&quot;&gt;
-6.        &lt;option value=&quot;Firefox&quot;&gt;
-7.        &lt;option value=&quot;Chrome&quot;&gt;
-8.        &lt;option value=&quot;Opera&quot;&gt;
-9.        &lt;option value=&quot;Safari&quot;&gt;
-10.     &lt;/datalist&gt;
-11.   &lt;input type=&quot;submit&quot; /&gt;
-12. &lt;/form&gt;</pre>
+<pre>&lt;form action=&quot;demo_form.asp&quot; method=&quot;get&quot;&gt;
+  &lt;input list=&quot;browsers&quot; name=&quot;browser&quot; /&gt;
+  
+    &lt;datalist id=&quot;browsers&quot;&gt;
+      &lt;option value=&quot;Internet Explorer&quot;&gt;
+      &lt;option value=&quot;Firefox&quot;&gt;
+      &lt;option value=&quot;Chrome&quot;&gt;
+      &lt;option value=&quot;Opera&quot;&gt;
+      &lt;option value=&quot;Safari&quot;&gt;
+    &lt;/datalist&gt;
+  &lt;input type=&quot;submit&quot; /&gt;
+&lt;/form&gt;</pre>
 
 </details>
 
@@ -18859,29 +18860,29 @@ at JSBin</a>, or try it below in your browser:</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.    &lt;head&gt;
-4.      &lt;meta charset=&quot;utf-8&quot;&gt;
-5.      &lt;title&gt;CSS3 pseudo-classes for form validation visual feedback&lt;/title&gt;
-6.      &lt;style&gt;
-7.   
-8.        input:invalid { background-color: lightPink;}
-9.        input:valid { background-color:lightGreen; }
-10.       input:required {border: 2px solid red;}
-11.       input:optional {border: 2px solid green;}
-12.       fieldset {
-13.         border:1px solid;
-14.         padding:20px;
-15.         }
-16.       .formLabel { display: inline-block; width: 140px; text-align: right; }
-17.     &lt;/style&gt;
-18.   &lt;/head&gt;
-19.   &lt;body&gt;
-20.  
-21.     &lt;form&gt;
-22.       &lt;fieldset&gt;
-23.         &lt;legend&gt;Type invalid values and see the result&lt;/legend&gt;
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;CSS3 pseudo-classes for form validation visual feedback&lt;/title&gt;
+    &lt;style&gt;
+  
+      input:invalid { background-color: lightPink;}
+      input:valid { background-color:lightGreen; }
+      input:required {border: 2px solid red;}
+      input:optional {border: 2px solid green;}
+      fieldset {
+        border:1px solid;
+        padding:20px;
+        }
+      .formLabel { display: inline-block; width: 140px; text-align: right; }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+    &lt;form&gt;
+      &lt;fieldset&gt;
+        &lt;legend&gt;Type invalid values and see the result&lt;/legend&gt;
             &lt;label for=&quot;myEmail&quot; class=&quot;formLabel&quot;&gt;E-mail:&lt;/label&gt; 
               &lt;input type=&quot;email&quot; id=&quot;myEmail&quot; required/&gt;&lt;br&gt;
             &lt;label for=&quot;myURL&quot; class=&quot;formLabel&quot;&gt;
@@ -18890,13 +18891,13 @@ at JSBin</a>, or try it below in your browser:</p>
             number:&lt;/label&gt; &lt;input type=&quot;tel&quot; id=&quot;myPhone&quot; 
             pattern=&quot;[0-9]{3}-?[0-9]{3}-?[0-9]{4}&quot; placeholder=&quot;e.g.
             416-555-1234&quot; required/&gt;&lt;br&gt;
-24.         &lt;button&gt;Submit form&lt;/button&gt;&lt;br /&gt;
-25.       &lt;/fieldset&gt;
-26.     &lt;/form&gt;
-27.     &lt;p&gt;
-28.  
-29.   &lt;/body&gt;
-30. &lt;/html&gt;</pre>
+        &lt;button&gt;Submit form&lt;/button&gt;&lt;br /&gt;
+      &lt;/fieldset&gt;
+    &lt;/form&gt;
+    &lt;p&gt;
+  
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
