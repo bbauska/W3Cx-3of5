@@ -804,11 +804,11 @@ of a page, and it distinguishes the page from other Web pages.</h5>
 
 <p><i>Example</i>:</p>
 
-<pre class="html5"><code>&lt;head&gt;
+<pre>&lt;head&gt;
   ...
   &lt;title&gt;Web Accessibility Initiative (WAI) - home page&lt;/title&gt;
   ...
-&lt;/head&gt;</code></pre>
+&lt;/head&gt;</pre>
 
 <h4>Example 2: image text alternatives (“alt text”)</h4>
 
@@ -834,10 +834,10 @@ site. The text alternative is going to be a brief description of the link target
 <p style="text-align: center;"><a href="https://www.w3.org/Icons/w3c_home" target="_blank" 
 rel="noopener noreferrer">W3C Home</a></p>
 
-<pre><code>&lt;a href=&quot;https://w3.org&quot;&gt;
+<pre>&lt;a href=&quot;https://w3.org&quot;&gt;
   &lt;img src=&quot;https://w3.org/Icons/w3c_home.png&quot; width=&quot;72&quot; height=&quot;48&quot; 
     alt=&quot;World Wide Web Consortium&quot;&gt;
-&lt;/a&gt;</code></pre>
+&lt;/a&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 12. html5 logo (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -848,7 +848,7 @@ rel="noopener noreferrer">W3C Home</a></p>
   style="width:7.5%;" />
 <br>
 
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -857,7 +857,7 @@ rel="noopener noreferrer">W3C Home</a></p>
   &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  ... &lt;!-- The rest is content --&gt;</code></pre>
+  ... &lt;!-- The rest is content --&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 13. new structural elements in html5 (13) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -1030,7 +1030,7 @@ text that appears on top of the page.</p>
 
 <h4>HTML code:</h4>
 
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -1040,18 +1040,18 @@ text that appears on top of the page.</p>
   &lt;header&gt;
     &lt;h1&gt;Simple &lt;span&gt;HTML5&lt;/span&gt; blog&lt;/h1&gt;
   &lt;/header&gt;
-...</code></pre>
+...</pre>
 
 <h4>The CSS rules we used:</h4>
 
-<pre><code>header {
+<pre>header {
   color: #007e99;
   font-size: 2.5em;
   padding: 20px 50px
 }
 header span {
   color: #722
-}</code></pre>
+}</pre>
 
 <h4>Use a &lt;nav&gt; for the navigation menu just below the header</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1071,23 +1071,23 @@ purpose of this example we haven’t provided any value for the hyperlinks…</p
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>1. &lt;!DOCTYPE html&gt;
-2. &lt;html lang=&quot;en&quot;&gt;
-3. &lt;head&gt;
-4.   &lt;meta charset=&quot;utf-8&quot;/&gt;
-5.   &lt;title&gt;Simple HTML5 blog&lt;/title&gt;
-6. &lt;/head&gt;
-7. &lt;body&gt;
-8.   &lt;header&gt;
-9.     &lt;h1&gt;Simple &lt;span&gt;HTML5&lt;/span&gt; blog&lt;/h1&gt;
-10.   &lt;/header&gt;
-11.   &lt;nav&gt;
-12.     &lt;ul&gt;
-13.       &lt;li&gt;&lt;span&gt;Blog&lt;/span&gt;&lt;/li&gt;
-14.       &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-15.       &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-16.     &lt;/ul&gt;
-17.   &lt;/nav&gt;</code></pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Simple HTML5 blog&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Simple &lt;span&gt;HTML5&lt;/span&gt; blog&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;Blog&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+   &lt;/nav&gt;</pre>
 
 </details>
 
@@ -1096,28 +1096,28 @@ purpose of this example we haven’t provided any value for the hyperlinks…</p
 <details>
   <summary><b>CSS source code:</b></summary>
 
-<pre><code>1. nav {
-2.   font-size: 1.5em;
-3.   margin: 5px 0;
-4.   padding: 20px 50px
-5. }
-6. nav li {
-7.   display: inline;
-8.   margin: 0 15px
-9. }
-10. nav li:first-child {
-11.   margin-left: 0
-12. }
-13. * html nav ul {
-14.   margin-left: -15px
-15. }
-16. nav span, nav a {
-17.   padding: 3px 15px 4px
-18. }
-19. nav span {
-20.   background: #722;
-21.   color: #fff
-22. }</code></pre>
+<pre>nav {
+  font-size: 1.5em;
+  margin: 5px 0;
+  padding: 20px 50px
+}
+nav li {
+  display: inline;
+  margin: 0 15px
+}
+nav li:first-child {
+  margin-left: 0
+}
+* html nav ul {
+  margin-left: -15px
+}
+nav span, nav a {
+  padding: 3px 15px 4px
+}
+nav span {
+  background: #722;
+  color: #fff
+}</pre>
 
 </details>
 
@@ -1149,7 +1149,7 @@ purpose of this example we haven’t provided any value for the hyperlinks…</p
 
 <h4>HTML code:</h4>
 
-<pre><code>&lt;section&gt;
+<pre>&lt;section&gt;
   &lt;article&gt;
     ...
   &lt;/article&gt;
@@ -1159,31 +1159,31 @@ purpose of this example we haven’t provided any value for the hyperlinks…</p
   &lt;article&gt;
     ...
   &lt;/article&gt;
-&lt;/section&gt;</code></pre>
+&lt;/section&gt;</pre>
 
 <br/>
 
 <details>
   <summary><b>CSS source code:</b></summary>
 
-<pre><code>1. section {
-2.   float: left;
-3.   padding: 35px 0;
-4.   position: relative;
-5.   width: 70%
-6. }
-7. section article {
-8.   margin: 0 50px 40px;
-9.   padding: 25px 0 0;
-10.   position: relative
-11. }
-12. section header {
-13.   font-size: 1em;
-14.   padding: 0;
-15. }
-16. section h2 {
-17.   font-size: 2.3em;
-18. }</code></pre>
+<pre>section {
+  float: left;
+  padding: 35px 0;
+  position: relative;
+  width: 70%
+}
+section article {
+ margin: 0 50px 40px;
+ padding: 25px 0 0;
+  position: relative
+}
+section header {
+  font-size: 1em;
+  padding: 0;
+}
+section h2 {
+  font-size: 2.3em;
+}</pre>
 
 </details>
 
@@ -1207,34 +1207,34 @@ article title), paragraphs (article content), and so on.</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>1. &lt;section&gt;
-2.   &lt;article&gt;
-3.     &lt;header&gt;
-4.       &lt;h2&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h2&gt;
-5.     &lt;/header&gt;
-6.     &lt;p&gt;Try to move the mouse on different elements. The structure will be
-7.       highlighted and you will be able
-8.       to see the different inclusions of elements one in each other. If you
-9.       move the cursor to this sentence, it will be highlighted in dark grey,
-10.       showing the presence of an &lt;article&gt; element, surrounded by a
-11.       &lt;section&gt; element (light grey), etc. So we have some articles in
-12.       a single section element. The page title at the top is a &lt;header&gt;
-13.       element, while the tag cloud on the right is a &lt;aside&gt; element. The
-14.       main menu on top (with Blog, About, Contact) is a &lt;nav&gt; element.&lt;/p&gt;
-15.     &lt;figure&gt;
-16.       &lt;img src=&quot;HTML5-tags.png&quot;
-17.         alt=&quot;Example of HTML5 structural tags&quot; /&gt;
-18.         &lt;figcaption&gt;
-19.           Fig. 1 : an example of how new structural elements could
-20.           be used. This page put a &lt;nav&gt; on top, and does not have
-21.           headers and footer for each article, like in this figure,
-22.           but it could... By the way this is a
-23.         &lt;figcaption&gt; inside a &lt;figure&gt; element...
-24.         &lt;/figcaption&gt;
-25.     &lt;/figure&gt;
-26.   &lt;/article&gt;
-27.   ...
-28. &lt;/section&gt;</code></pre>
+<pre><code>&lt;section&gt;
+  &lt;article&gt;
+    &lt;header&gt;
+      &lt;h2&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h2&gt;
+    &lt;/header&gt;
+    &lt;p&gt;Try to move the mouse on different elements. The structure will be
+      highlighted and you will be able
+      to see the different inclusions of elements one in each other. If you
+      move the cursor to this sentence, it will be highlighted in dark grey,
+      showing the presence of an &lt;article&gt; element, surrounded by a
+      &lt;section&gt; element (light grey), etc. So we have some articles in
+      a single section element. The page title at the top is a &lt;header&gt;
+      element, while the tag cloud on the right is a &lt;aside&gt; element. The
+      main menu on top (with Blog, About, Contact) is a &lt;nav&gt; element.&lt;/p&gt;
+    &lt;figure&gt;
+      &lt;img src=&quot;HTML5-tags.png&quot;
+        alt=&quot;Example of HTML5 structural tags&quot; /&gt;
+        &lt;figcaption&gt;
+          Fig. 1 : an example of how new structural elements could
+          be used. This page put a &lt;nav&gt; on top, and does not have
+          headers and footer for each article, like in this figure,
+          but it could... By the way this is a
+        &lt;figcaption&gt; inside a &lt;figure&gt; element...
+        &lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/article&gt;
+  ...
+&lt;/section&gt;</code></pre>
 
 </details>
 
@@ -1289,19 +1289,19 @@ that is displayed on the right of the page, “aside”! This is done using
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>1. &lt;section&gt;
-2.   .... all &lt;article&gt;... &lt;/article&gt; here....
-3. &lt;/section&gt;
-4. &lt;aside&gt;
-5.   &lt;h2&gt;Tag cloud&lt;/h2&gt;
-6.   &lt;ul class=&quot;tag-cloud&quot;&gt;
-7.     &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w2&quot;&gt;ajax&lt;/a&gt;&lt;/li&gt;
-8.     &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w8&quot;&gt;apple&lt;/a&gt;&lt;/li&gt;
-9.     &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w3&quot;&gt;css&lt;/a&gt;&lt;/li&gt;
-10.     ...
-11.   &lt;/ul&gt;
-12. &lt;/aside&gt;
-13. ...</code></pre>
+<pre><code>&lt;section&gt;
+  .... all &lt;article&gt;... &lt;/article&gt; here....
+&lt;/section&gt;
+&lt;aside&gt;
+  &lt;h2&gt;Tag cloud&lt;/h2&gt;
+  &lt;ul class=&quot;tag-cloud&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w2&quot;&gt;ajax&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w8&quot;&gt;apple&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w3&quot;&gt;css&lt;/a&gt;&lt;/li&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/aside&gt;
+...</code></pre>
 
 </details>
 
@@ -1316,21 +1316,21 @@ code of the online example</a>.</p>
 <details>
   <summary><b>CSS source code:</b></summary>
 
-<pre><code>1. aside {
-2.   float: right;
-3.   padding: 70px 0 30px;
-4.   position: relative;
-5.   width: 25%
-6. }
-7. aside h2 {
-8.   color: #888;
-9.   font-size: 1.8em
-10. }
-11. aside .tag-cloud {
-12.   padding: 15px 35px 10px 0;
-13.   text-align: center
-14. }
-15. ...</code></pre>
+<pre><code>aside {
+  float: right;
+  padding: 70px 0 30px;
+  position: relative;
+  width: 25%
+}
+aside h2 {
+  color: #888;
+  font-size: 1.8em
+}
+aside .tag-cloud {
+  padding: 15px 35px 10px 0;
+  text-align: center
+}
+...</code></pre>
 
 </details>
 
@@ -1365,21 +1365,21 @@ after the tag cloud definition, to display a page footer:</h4>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>1. &lt;html&gt;
-2. ...
-3. &lt;body&gt;
-4.   ...
-5.   &lt;section&gt;
-6.     ...
-7.   &lt;/section&gt;
-8.   &lt;aside&gt;
-9.     ...
-10.   &lt;/aside&gt;
-11.   &lt;footer&gt;
-12.     &lt;p&gt;&amp;copy; 2009 Some blog&lt;/p&gt;
-13.   &lt;/footer&gt;
-14. &lt;/body&gt;
-15. &lt;/html&gt;</code></pre>
+<pre><code>&lt;html&gt;
+...
+&lt;body&gt;
+  ...
+  &lt;section&gt;
+    ...
+  &lt;/section&gt;
+  &lt;aside&gt;
+    ...
+  &lt;/aside&gt;
+  &lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2009 Some blog&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
 </details>
 
@@ -1431,17 +1431,17 @@ turn cut into smaller &lt;section&gt; elements:</h4>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>1. &lt;article id=&quot;id1&quot;&gt;
-2.   &lt;section id=&quot;id1part1&quot;&gt;
-3.     &lt;h2&gt;Introduction&lt;/h2&gt;
-4.   &lt;/section&gt;
-5.   &lt;section id=&quot;id1part2&quot;&gt;
-6.     &lt;h2&gt;My travel to India&lt;/h2&gt;
-7.   &lt;/section&gt;
-8.   &lt;section id=&quot;id1part3&quot;&gt;
-9.     &lt;h2&gt;Return to France&lt;/h2&gt;
-10.   &lt;/section&gt;
-11. &lt;/article&gt;</code></pre>
+<pre><code>&lt;article id=&quot;id1&quot;&gt;
+  &lt;section id=&quot;id1part1&quot;&gt;
+    &lt;h2&gt;Introduction&lt;/h2&gt;
+  &lt;/section&gt;
+  &lt;section id=&quot;id1part2&quot;&gt;
+    &lt;h2&gt;My travel to India&lt;/h2&gt;
+  &lt;/section&gt;
+  &lt;section id=&quot;id1part3&quot;&gt;
+    &lt;h2&gt;Return to France&lt;/h2&gt;
+  &lt;/section&gt;
+&lt;/article&gt;</code></pre>
 
 </details>
 
@@ -1460,24 +1460,24 @@ with each blog post, for example:</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>1. &lt;article&gt;
-2.   &lt;header&gt;
-3.     &lt;h1&gt;Blog post title&lt;/h1&gt;
-4.     &lt;p&gt;Author: Michel&lt;/p&gt;
-5.   &lt;/header&gt;
-6.   &lt;nav&gt;
-7.     &lt;ul&gt;
-8.       &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Next post&lt;/a&gt;&lt;/li&gt;
-9.       &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Previous post&lt;/a&gt;&lt;/li&gt;
-10.       &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Contact author&lt;/a&gt;&lt;/li&gt;
-11.     &lt;/ul&gt;
-12.   &lt;/nav&gt;
-13.   &lt;p&gt;Content...&lt;/p&gt;
-14.   &lt;footer&gt;
-15.     &lt;p&gt;Posted by Michel, the &lt;time datetime=&quot;2012-02-02&quot;&gt;February 2,
-16.     2012&lt;/time&gt; &lt;/p&gt;
-17.   &lt;/footer&gt;
-18. &lt;/article&gt;</code></pre>
+<pre><code>&lt;article&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Blog post title&lt;/h1&gt;
+    &lt;p&gt;Author: Michel&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Next post&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Previous post&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Contact author&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;p&gt;Content...&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;p&gt;Posted by Michel, the &lt;time datetime=&quot;2012-02-02&quot;&gt;February 2,
+    2012&lt;/time&gt; &lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/article&gt;</code></pre>
 
 </details>
 
@@ -1616,21 +1616,21 @@ of the implied section.</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre class="html5"><code>1. &lt;body&gt;
-2. &lt;section&gt;
-3.   &lt;h1&gt;This H1 is the heading of an explicit section&lt;/h1&gt;
-4.   ...
-5.   &lt;h2&gt;This H2 is a subheading, part of the same section
-6.     (lower rank)&lt;/h2&gt;
-7.   ....
-8.   &lt;h1&gt;This H1 starts an implicit new section in the explicit
-9.     section (equal or higher rank)&lt;/h1&gt;
-10.  ...
-11.  &lt;h2&gt;This is a H2 heading in the new section that has
-12.    just started&lt;/h2&gt;
-13.  ...
-14. &lt;/section&gt;
-15. &lt;/body&gt;</code></pre>
+<pre class="html5"><code>&lt;body&gt;
+&lt;section&gt;
+  &lt;h1&gt;This H1 is the heading of an explicit section&lt;/h1&gt;
+  ...
+  &lt;h2&gt;This H2 is a subheading, part of the same section
+    (lower rank)&lt;/h2&gt;
+  ....
+  &lt;h1&gt;This H1 starts an implicit new section in the explicit
+    section (equal or higher rank)&lt;/h1&gt;
+  ...
+  &lt;h2&gt;This is a H2 heading in the new section that has
+    just started&lt;/h2&gt;
+  ...
+&lt;/section&gt;
+&lt;/body&gt;</code></pre>
 
 </details>
 
@@ -1760,12 +1760,12 @@ implicit “sections” in the header.</p>
 
 <h4>This example has two headings in the &lt;header&gt;:</h4>
 
-<pre class="html5"><code>1. &lt;section&gt;
-2.   &lt;header&gt;
-3.     &lt;h1&gt;Some text in a h1 in a header of a section&lt;/h1&gt;
-4.     &lt;h2&gt;This a h2 in the header...&lt;/h2&gt;
-5.   &lt;/header&gt;
-6. &lt;/section&gt;</code></pre>
+<pre class="html5"><code>&lt;section&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Some text in a h1 in a header of a section&lt;/h1&gt;
+    &lt;h2&gt;This a h2 in the header...&lt;/h2&gt;
+  &lt;/header&gt;
+&lt;/section&gt;</code></pre>
 
 <p>Here is the resulting table of contents, notice the two subsections that
 appear, one for the H1, one for the H2:</p>
@@ -1786,11 +1786,11 @@ contents, just use standard markup, for example &lt;p&gt; elements, as
 shown in the next example. Of course, CSS rules can be applied to change
 colors, sizes, etc.</p>
 
-<pre class="html5"><code>1. &lt;header&gt;
-2.   &lt;h1&gt;HTML 5.1 Nightly&lt;/h1&gt;
-3.   &lt;p&gt;A vocabulary and associated APIs for HTML and XHTML&lt;/p&gt;
-4.   &lt;p&gt;Editor&#39;s Draft 9 May 2013&lt;/p&gt;
-5. &lt;/header&gt;</code></pre>
+<pre class="html5"><code>&lt;header&gt;
+  &lt;h1&gt;HTML 5.1 Nightly&lt;/h1&gt;
+  &lt;p&gt;A vocabulary and associated APIs for HTML and XHTML&lt;/p&gt;
+  &lt;p&gt;Editor&#39;s Draft 9 May 2013&lt;/p&gt;
+&lt;/header&gt;</code></pre>
 
 <h4>Best practice #2: try not to rely on implicit sectioning,
 use &lt;section&gt;, &lt;article&gt;, etc. instead of
@@ -1804,18 +1804,18 @@ using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre class="html5"><code>1.  &lt;body&gt;
-2.  &lt;h4&gt;Apples&lt;/h4&gt;
-3.  &lt;p&gt;Apples are fruit.&lt;/p&gt;
-4.  &lt;section&gt;
-5.    &lt;h2&gt;Taste&lt;/h2&gt;
-6.    &lt;p&gt;They taste lovely.&lt;/p&gt;
-7.    &lt;h6&gt;Sweet&lt;h6&gt;
-8.    &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
-9.    &lt;h1&gt;Color&lt;/h1&gt;
-10.   &lt;p&gt;Apples come in various colors.&lt;/p&gt;
-11. &lt;/section&gt;
-12. &lt;/body&gt;</code></pre>
+<pre class="html5"><code>&lt;body&gt;
+&lt;h4&gt;Apples&lt;/h4&gt;
+&lt;p&gt;Apples are fruit.&lt;/p&gt;
+&lt;section&gt;
+  &lt;h2&gt;Taste&lt;/h2&gt;
+  &lt;p&gt;They taste lovely.&lt;/p&gt;
+  &lt;h6&gt;Sweet&lt;h6&gt;
+  &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
+  &lt;h1&gt;Color&lt;/h1&gt;
+  &lt;p&gt;Apples come in various colors.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/body&gt;</code></pre>
 
 </details>
 
@@ -1824,22 +1824,22 @@ using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>1.  &lt;body&gt;
-2.  &lt;h1&gt;Apples&lt;/h1&gt;
-3.  &lt;p&gt;Apples are fruit.&lt;/p&gt;
-4.  &lt;section&gt;
-5.    &lt;h2&gt;Taste&lt;/h2&gt;
-6.    &lt;p&gt;They taste lovely.&lt;/p&gt;
-7.    &lt;section&gt;
-8.      &lt;h3&gt;Sweet&lt;/h3&gt;
-9.      &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
-10.   &lt;/section&gt;
-11. &lt;/section&gt;
-12. &lt;section&gt;
-13.   &lt;h2&gt;Color&lt;/h2&gt;
-14.   &lt;p&gt;Apples come in various colors.&lt;/p&gt;
-15. &lt;/section&gt;
-16. &lt;/body&gt;</code></pre>
+<pre><code>&lt;body&gt;
+&lt;h1&gt;Apples&lt;/h1&gt;
+&lt;p&gt;Apples are fruit.&lt;/p&gt;
+&lt;section&gt;
+  &lt;h2&gt;Taste&lt;/h2&gt;
+  &lt;p&gt;They taste lovely.&lt;/p&gt;
+  &lt;section&gt;
+    &lt;h3&gt;Sweet&lt;/h3&gt;
+    &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h2&gt;Color&lt;/h2&gt;
+  &lt;p&gt;Apples come in various colors.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/body&gt;</code></pre>
 
 </details>
 
@@ -1869,28 +1869,28 @@ rel="noopener noreferrer">Online example at JSBin</a>.</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>1.  &lt;body&gt;
-2.  &lt;h1&gt;This is an example of embedded table of content&lt;/h1&gt;
-3.  &lt;section&gt;
-4.    &lt;header&gt;
-5.      &lt;h1&gt;First section of the document (this is a h1)&lt;/h1&gt;
-6.        This is a subheading...
-7.    &lt;/header&gt;
-8.    &lt;h2&gt;First subsection of the first section (a h2)&lt;/h2&gt;
-9.    &lt;p&gt;Blah Blah...&lt;/p&gt;
-10. &lt;/section&gt;
-11. &lt;section&gt;
-12.   &lt;h1&gt;Second section of the document (a h1)&lt;/h1&gt;
-13.   &lt;h2&gt;First subsection (a h2)&lt;/h2&gt;
-14. &lt;/section&gt;
-15. &lt;aside&gt;
-16.   &lt;h3&gt;Table of contents&lt;/h3&gt;
-17.   &lt;a href=&quot;javascript:(function(){...})();&quot;
-18.     title=&quot;TableDeMatiere&quot;&gt;
-19.       Click here to display the table of contents!
-20.   &lt;/a&gt;
-21. &lt;/aside&gt;
-22. &lt;/body&gt;</code></pre>
+<pre><code>&lt;body&gt;
+&lt;h1&gt;This is an example of embedded table of content&lt;/h1&gt;
+&lt;section&gt;
+  &lt;header&gt;
+    &lt;h1&gt;First section of the document (this is a h1)&lt;/h1&gt;
+      This is a subheading...
+  &lt;/header&gt;
+  &lt;h2&gt;First subsection of the first section (a h2)&lt;/h2&gt;
+  &lt;p&gt;Blah Blah...&lt;/p&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h1&gt;Second section of the document (a h1)&lt;/h1&gt;
+  &lt;h2&gt;First subsection (a h2)&lt;/h2&gt;
+&lt;/section&gt;
+&lt;aside&gt;
+  &lt;h3&gt;Table of contents&lt;/h3&gt;
+  &lt;a href=&quot;javascript:(function(){...})();&quot;
+    title=&quot;TableDeMatiere&quot;&gt;
+      Click here to display the table of contents!
+  &lt;/a&gt;
+&lt;/aside&gt;
+&lt;/body&gt;</code></pre>
 
 </details>
 
@@ -1949,31 +1949,31 @@ course:</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>1.  &lt;!-- other content --&gt;
-2.  
-3.  &lt;main&gt;
-4.  
-5.    &lt;h1&gt;Skateboards&lt;/h1&gt;
-6.    &lt;p&gt;The skateboard helps kids to get around.&lt;/p&gt;
-7.  
-8.    &lt;article&gt;
-9.      &lt;h2&gt;Longboards&lt;/h2&gt;
-10.     &lt;p&gt;Longboards are a type of skateboard with a longer
-11.       wheelbase and larger, softer wheels.&lt;/p&gt;
-12.     &lt;p&gt;... &lt;/p&gt;
-13.     &lt;p&gt;... &lt;/p&gt;
-14.   &lt;/article&gt;
-15. 
-16.   &lt;article&gt;
-17.     &lt;h2&gt;Electric Skateboards&lt;/h2&gt;
-18.     &lt;p&gt;These no longer require the propelling of the skateboard by means of the feet; rather an electric motor propels the board, fed by an electric battery.&lt;/p&gt;
-19.     &lt;p&gt;... &lt;/p&gt;
-20.     &lt;p&gt;... &lt;/p&gt;
-21.   &lt;/article&gt;
-22. 
-23. &lt;/main&gt;
-24.  
-25. &lt;!-- other content --&gt;</code></pre>
+<pre><code>&lt;!-- other content --&gt;
+  
+&lt;main&gt;
+  
+  &lt;h1&gt;Skateboards&lt;/h1&gt;
+  &lt;p&gt;The skateboard helps kids to get around.&lt;/p&gt;
+  
+  &lt;article&gt;
+    &lt;h2&gt;Longboards&lt;/h2&gt;
+    &lt;p&gt;Longboards are a type of skateboard with a longer
+      wheelbase and larger, softer wheels.&lt;/p&gt;
+    &lt;p&gt;... &lt;/p&gt;
+    &lt;p&gt;... &lt;/p&gt;
+  &lt;/article&gt;
+ 
+  &lt;article&gt;
+    &lt;h2&gt;Electric Skateboards&lt;/h2&gt;
+    &lt;p&gt;These no longer require the propelling of the skateboard by means of the feet; rather an electric motor propels the board, fed by an electric battery.&lt;/p&gt;
+    &lt;p&gt;... &lt;/p&gt;
+    &lt;p&gt;... &lt;/p&gt;
+  &lt;/article&gt;
+ 
+&lt;/main&gt;
+  
+&lt;!-- other content --&gt;</code></pre>
 
 </details>
 
@@ -21815,95 +21815,95 @@ key, used at <i>line 6</i>.</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.    &lt;meta charset=&quot;utf-8&quot;&gt;
-5.    &lt;title&gt;Js bin &lt;/title&gt;
-6.    &lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=
-7.      PUT_HERE_YOUR_API_KEY&amp;v=3.exp&amp;sensor=false&quot;&gt;
-8.      &lt;/script&gt;&lt;script&gt;
-9.      // p elements for displaying lat / long and address
-10.     var displayCoords, myAddress;
-11.     // used with the google apis
-12.     var geocoder;
-13.     var map;
-14.     var infowindow = new google.maps.InfoWindow();
-15.     var marker;
-16.     // Called when the page is loaded
-17.
-18.     function init() {
-19.       displayCoords=document.getElementById(&quot;msg&quot;);
-20.       myAddress = document.getElementById(&quot;address&quot;);
-21.       geocoder = new google.maps.Geocoder();
-22.       // In order to show something even before a user clicks on the button
-23.       var latlng = new google.maps.LatLng(34.0144, -6.83);
-24.       var mapOptions = {
-25.         zoom: 8,
-26.         center: latlng,
-27.         mapTypeId: &#39;roadmap&#39;
-28.       }
-29.       map = new google.maps.Map(document.getElementById(&#39;map_canvas&#39;), mapOptions);
-30.     } // end of init()
-31.     // Called when the button is clicked
-32.
-33.     function getLocation() {
-34.       if (navigator.geolocation) {
-35.         navigator.geolocation.getCurrentPosition(showPosition);
-36.       } else {
-37.         displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
-38.       }
-39.      }
-40.     // Called when a position is available
-41.  
-42.     function showPosition(position) {
-43.       displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
-44.         &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
-45.       // Display the map
-46.       showOnGoogleMap(new google.maps.LatLng(position.coords.latitude,       
-47.         position.coords.longitude));
-48.     }
-49.
-50.     function showOnGoogleMap(latlng) {
-51.       // Ask google geocoder for an address once we get a longitude and
-52.       // a latitude. In fact, the reverse geocoder sends back an array of &quot;guesses&quot;
-53.       // i.e. not just one address object, but several. Each entry in this array
-54.       // has several properties such as street, city, etc. We use the
-55.       &quot;formatted_address&quot;
-56.       // one here, but it might be interesting to get the detailed properties in other
-57.       // applications like a form with street, city, zip code etc.
-58.       geocoder.geocode({&#39;latLng&#39;: latlng},reverseGeocoderSuccess);
-59.	
-60.         function reverseGeocoderSuccess(results, status) {
-61.           if (status == google.maps.GeocoderStatus.OK) {
-62.             if (results[1]) {
-63.               map.setZoom(11);
-64.               marker = new google.maps.Marker({
-65.                 position: latlng,
-66.                 map: map
-67.               });
-68.               infowindow.setContent(results[1].formatted_address);
-69.               infowindow.open(map, marker);
-70.               // Display address as text in the page
-71.               myAddress.innerHTML=&quot;Adress: &quot; + results[0].formatted_address; 
-72.             } else {
-73.               alert(&#39;No surface address found&#39;);
-74.             }
-75.           } else {
-76.             alert(&#39;Geocoder failed due to: &#39; + status);
-77.           }
-78.         } // end of reverseGeocoderSuccess
-79.       } // end of showOnGoogleMap
-80.   &lt;/script&gt;
-81. &lt;/head&gt;
-82. &lt;body onload=&quot;init()&quot;&gt;
-83.   &lt;title&gt;HTML5 + Geolocalisation + Google Maps API Reverse Geocoding&lt;/title&gt;
-84.   &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
-85.   &lt;p id=&quot;address&quot;&gt;&lt;/p&gt;
-86.   &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
-87.   &lt;div id=&quot;map_canvas&quot; style=&quot;width: 500px; height: 300px&quot;&gt;&lt;/div&gt;
-88. &lt;/body&gt;
-89. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Js bin &lt;/title&gt;
+  &lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=
+    PUT_HERE_YOUR_API_KEY&amp;v=3.exp&amp;sensor=false&quot;&gt;
+    &lt;/script&gt;&lt;script&gt;
+    // p elements for displaying lat / long and address
+    var displayCoords, myAddress;
+    // used with the google apis
+    var geocoder;
+    var map;
+    var infowindow = new google.maps.InfoWindow();
+    var marker;
+
+    // Called when the page is loaded
+    function init() {
+      displayCoords=document.getElementById(&quot;msg&quot;);
+      myAddress = document.getElementById(&quot;address&quot;);
+      geocoder = new google.maps.Geocoder();
+      // In order to show something even before a user clicks on the button
+      var latlng = new google.maps.LatLng(34.0144, -6.83);
+      var mapOptions = {
+        zoom: 8,
+        center: latlng,
+        mapTypeId: &#39;roadmap&#39;
+      }
+      map = new google.maps.Map(document.getElementById(&#39;map_canvas&#39;), mapOptions);
+    } // end of init()
+    // Called when the button is clicked
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
+      }
+     }
+    // Called when a position is available
+ 
+    function showPosition(position) {
+      displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
+        &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
+      // Display the map
+      showOnGoogleMap(new google.maps.LatLng(position.coords.latitude,       
+        position.coords.longitude));
+    }
+
+    function showOnGoogleMap(latlng) {
+      // Ask google geocoder for an address once we get a longitude and
+      // a latitude. In fact, the reverse geocoder sends back an array of &quot;guesses&quot;
+      // i.e. not just one address object, but several. Each entry in this array
+      // has several properties such as street, city, etc. We use the
+      &quot;formatted_address&quot;
+      // one here, but it might be interesting to get the detailed properties in other
+      // applications like a form with street, city, zip code etc.
+      geocoder.geocode({&#39;latLng&#39;: latlng},reverseGeocoderSuccess);
+
+        function reverseGeocoderSuccess(results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+            if (results[1]) {
+              map.setZoom(11);
+              marker = new google.maps.Marker({
+                position: latlng,
+                map: map
+              });
+              infowindow.setContent(results[1].formatted_address);
+              infowindow.open(map, marker);
+              // Display address as text in the page
+              myAddress.innerHTML=&quot;Adress: &quot; + results[0].formatted_address; 
+            } else {
+              alert(&#39;No surface address found&#39;);
+            }
+          } else {
+            alert(&#39;Geocoder failed due to: &#39; + status);
+          }
+        } // end of reverseGeocoderSuccess
+      } // end of showOnGoogleMap
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;init()&quot;&gt;
+  &lt;title&gt;HTML5 + Geolocalisation + Google Maps API Reverse Geocoding&lt;/title&gt;
+  &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
+  &lt;p id=&quot;address&quot;&gt;&lt;/p&gt;
+  &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
+  &lt;div id=&quot;map_canvas&quot; style=&quot;width: 500px; height: 300px&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -21946,7 +21946,7 @@ used to convert to a physical address.</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre>1. &lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 2. &lt;html&gt;
 3. &lt;head&gt;
 4.   &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
@@ -22031,7 +22031,7 @@ used to convert to a physical address.</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>1. &lt;!DOCTYPE html&gt;
+<pre><code>&lt;!DOCTYPE html&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.    &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
@@ -22131,7 +22131,7 @@ online example</a> (for security reasons the embedded version cannot run in thi
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>1.  &lt;!DOCTYPE html&gt;
+<pre><code>&lt;!DOCTYPE html&gt;
 2.  &lt;html&gt;
 3.  &lt;head&gt;
 4.    &lt;title&gt;Gimmee My Location&lt;/title&gt;
