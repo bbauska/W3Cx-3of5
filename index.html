@@ -18928,19 +18928,19 @@ JSBin</a> or try it here in your browser. This example adds a small icon that 
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.   .myForm input:focus {
-2.      padding-right:70px;
-3.   }
-4.   .myForm input {
-5.      transition: padding .25s;
-6.   }
-7.  
-8.   .myForm input:required:valid {
-9.      background:url(https://i.imgur.com/BJolppS.png) no-repeat right top;
-10.  }
-11.   .myForm input:required {
-12.     background:url(https://i.imgur.com/7pIN7wz.png) no-repeat right top;
-13.  }</pre>
+<pre>.myForm input:focus {
+  padding-right:70px;
+}
+.myForm input {
+  transition: padding .25s;
+}
+  
+.myForm input:required:valid {
+  background:url(https://i.imgur.com/BJolppS.png) no-repeat right top;
+}
+.myForm input:required {
+  background:url(https://i.imgur.com/7pIN7wz.png) no-repeat right top;
+}</pre>
 
 </details>
 
@@ -18980,17 +18980,17 @@ messages! E-mail:  Homepage (URL):  Phone number:  Submit form</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;form class=&quot;myForm&quot;&gt;
-2.    &lt;fieldset&gt;
-3.      &lt;legend&gt;Type invalid values and see the result&lt;/legend&gt;
-4.      &lt;label for=&quot;myEmail&quot; class=&quot;formLabel&quot;&gt;E-mail:&lt;/label&gt;
-5.      &lt;input type=&quot;email&quot; id=&quot;myEmail&quot;
-6.        title=&quot;You don&#39;t know what an email address looks like, do you?&quot;
-7.        required/&gt;&lt;br&gt;
-8.      ...
-9.      &lt;button&gt;Submit form&lt;/button&gt;&lt;br /&gt;
-10.   &lt;/fieldset&gt;
-11. &lt;/form&gt;</pre>
+<pre>&lt;form class=&quot;myForm&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Type invalid values and see the result&lt;/legend&gt;
+    &lt;label for=&quot;myEmail&quot; class=&quot;formLabel&quot;&gt;E-mail:&lt;/label&gt;
+    &lt;input type=&quot;email&quot; id=&quot;myEmail&quot;
+      title=&quot;You don&#39;t know what an email address looks like, do you?&quot;
+      required/&gt;&lt;br&gt;
+    ...
+    &lt;button&gt;Submit form&lt;/button&gt;&lt;br /&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
 
 </details>
 
@@ -19068,47 +19068,47 @@ target="_blank" rel="noopener noreferrer">
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.    &lt;meta charset=&quot;utf-8&quot;&gt;
-5.    &lt;title&gt;Example of using the validation API&lt;/title&gt;
-6.    &lt;style&gt;
-7.      .myForm input:invalid { background-color: lightPink;}
-8.      .myForm input:valid { background-color:lightGreen; }
-9.      .myForm input:required {border: 2px solid red;}
-10.     .myForm input:optional {border: 2px solid green;}
-11.     .myForm label { display: inline-block; width: 140px; text-align: right; }
-12.   &lt;/style&gt;
-13. &lt;/head&gt;
-14. &lt;body&gt;
-15.   &lt;form class=&quot;myForm&quot;&gt;
-16.     &lt;fieldset&gt;
-17.       &lt;legend&gt;Example use of the validation API&lt;/legend&gt;
-18.       &lt;label for=&quot;password1&quot; &gt;Password:&lt;/label&gt; &lt;input type=&quot;password&quot; 
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of using the validation API&lt;/title&gt;
+  &lt;style&gt;
+    .myForm input:invalid { background-color: lightPink;}
+    .myForm input:valid { background-color:lightGreen; }
+    .myForm input:required {border: 2px solid red;}
+    .myForm input:optional {border: 2px solid green;}
+    .myForm label { display: inline-block; width: 140px; text-align: right; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;form class=&quot;myForm&quot;&gt;
+   &lt;fieldset&gt;
+      &lt;legend&gt;Example use of the validation API&lt;/legend&gt;
+      &lt;label for=&quot;password1&quot; &gt;Password:&lt;/label&gt; &lt;input type=&quot;password&quot; 
             id=&quot;password1&quot; oninput=&quot;checkPasswords()&quot; required&gt;
-19.       &lt;p&gt;
-20.       &lt;label for=&quot;password2&quot;&gt;
+      &lt;p&gt;
+      &lt;label for=&quot;password2&quot;&gt;
             Repeat password:&lt;/label&gt; &lt;input type=&quot;password&quot; id=&quot;password2&quot; 
             oninput=&quot;checkPasswords()&quot; required&gt;
-21.       &lt;p&gt;
-22.       &lt;button&gt;Submit&lt;/button&gt;
-23.     &lt;/fieldset&gt;
-24.   &lt;/form&gt;
-25.  
-26.   &lt;script&gt;
-27.     function checkPasswords() {
-28.       var password1 = document.getElementById(&#39;password1&#39;);
-29.       var password2 = document.getElementById(&#39;password2&#39;);
-30.       if (password1.value != password2.value) {
-31.         password2.setCustomValidity(&#39;Passwords non identiques&#39;);
-32.       } else {
-33.         password2.setCustomValidity(&#39;&#39;);
-34.       }
-35.     }  <!-- function checkpasswords -->
-36.   &lt;/script&gt;
-37. &lt;/body&gt;
-38. &lt;/html&gt;</pre>
+      &lt;p&gt;
+      &lt;button&gt;Submit&lt;/button&gt;
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+  
+  &lt;script&gt;
+    function checkPasswords() {
+      var password1 = document.getElementById(&#39;password1&#39;);
+      var password2 = document.getElementById(&#39;password2&#39;);
+      if (password1.value != password2.value) {
+        password2.setCustomValidity(&#39;Passwords non identiques&#39;);
+      } else {
+        password2.setCustomValidity(&#39;&#39;);
+      }
+    }  <!-- function checkpasswords -->
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -19137,9 +19137,9 @@ validation error.</p>
 
 <h4>Here is how to get the validity property of an input field:</h4>
 
-<pre>1. var input = document.getElementById(&#39;IdOfField&#39;);
-2.  
-3. var validityState_object = &lt;b&gt;input.validity;&lt;/b&gt;</pre>
+<pre>var input = document.getElementById(&#39;IdOfField&#39;);
+ 
+var validityState_object = &lt;b&gt;input.validity;&lt;/b&gt;</pre>
 
 <h4>The possible values for the validity property are:</h4>
 
@@ -19173,45 +19173,45 @@ values, too big, too small, enter invalid characters, etc.):</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  ...
-4.  &lt;body&gt;
-5.  
-6.    &lt;script&gt;
-7.      function validate() {
-8.        var input = document.getElementById(&#39;b&#39;);
-9.         var validityState_object = input.validity;
-10.  
-11.       if(validityState_object.valueMissing) {
-12.         input.setCustomValidity(&#39;Please set an age (required)&#39;);
-13.       } else if (validityState_object.rangeUnderflow) {
-14.         input.setCustomValidity(&#39;Your value is too low&#39;);
-15.       } else if (validityState_object.rangeOverflow) {
-16.         input.setCustomValidity(&#39;Your value is too high&#39;);
-17.       } else if (validityState_object.typeMismatch) {
-18.         input.setCustomValidity(&#39;Type mismatch&#39;);
-19.       } else if (validityState_object.tooLong) {
-20.         input.setCustomValidity(&#39;Too long&#39;);
-21.       } else if (validityState_object.stepMismatch) {
-22.         input.setCustomValidity(&#39;stepMismatch&#39;);
-23.       } else if (validityState_object.patternMismatch) {
-24.         input.setCustomValidity(&#39;patternMismatch&#39;);
-25.       } else {
-26.         input.setCustomValidity(&#39;&#39;);
-27.       }
-28.     }  <!-- function validate -->
-29.   &lt;/script&gt;
-30.   &lt;form class=&quot;myForm&quot;&gt;
-31.     &lt;label for=&quot;b&quot;&gt;Enter a value between 10 and 20: &lt;/label&gt;
-32.     &lt;input type=&quot;number&quot; name=&quot;text&quot; id=&quot;b&quot; min=&quot;10&quot; 
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+...
+&lt;body&gt;
+ 
+  &lt;script&gt;
+    function validate() {
+      var input = document.getElementById(&#39;b&#39;);
+      var validityState_object = input.validity;
+
+      if(validityState_object.valueMissing) {
+        input.setCustomValidity(&#39;Please set an age (required)&#39;);
+      } else if (validityState_object.rangeUnderflow) {
+        input.setCustomValidity(&#39;Your value is too low&#39;);
+      } else if (validityState_object.rangeOverflow) {
+        input.setCustomValidity(&#39;Your value is too high&#39;);
+      } else if (validityState_object.typeMismatch) {
+        input.setCustomValidity(&#39;Type mismatch&#39;);
+      } else if (validityState_object.tooLong) {
+        input.setCustomValidity(&#39;Too long&#39;);
+      } else if (validityState_object.stepMismatch) {
+         input.setCustomValidity(&#39;stepMismatch&#39;);
+      } else if (validityState_object.patternMismatch) {
+        input.setCustomValidity(&#39;patternMismatch&#39;);
+      } else {
+        input.setCustomValidity(&#39;&#39;);
+      }
+    }  <!-- function validate -->
+  &lt;/script&gt;
+  &lt;form class=&quot;myForm&quot;&gt;
+    &lt;label for=&quot;b&quot;&gt;Enter a value between 10 and 20: &lt;/label&gt;
+    &lt;input type=&quot;number&quot; name=&quot;text&quot; id=&quot;b&quot; min=&quot;10&quot; 
           max=&quot;20&quot;
           required oninput=&#39;validate();&#39;/&gt;
-33.     &lt;button&gt;Submit&lt;/button&gt;
-34.   &lt;/form&gt;
-35. 
-36. &lt;/body&gt;
-37. &lt;/html&gt;</pre>
+    &lt;button&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
+ 
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -19220,9 +19220,9 @@ values, too big, too small, enter invalid characters, etc.):</p>
 <p>It is also possible to get the validation error message, using
 the validationMessage property of input fields.</p>
 
-<pre>1. var input = document.getElementById(b);
-2.   
-3. console.log(&quot;Validation message = &quot; + input.validationMessage);</pre>
+<pre>var input = document.getElementById(b);
+   
+console.log(&quot;Validation message = &quot; + input.validationMessage);</pre>
 
 <p>This is useful for making custom error messages. More about this
 topic in the next section of the course.</p>
@@ -19281,111 +19281,112 @@ values and submit with one or two invalid fields.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.   &lt;!DOCTYPE html&gt;
-2.   &lt;html lang=&quot;en&quot;&gt;
-3.   &lt;head&gt;
-4.     &lt;meta charset=&quot;utf-8&quot;&gt;
-5.     &lt;title&gt;Aggregating error messages&lt;/title&gt;
-6.     &lt;style&gt;
-7.       input:invalid { background-color: lightPink;}
-8.       input:valid { background-color:lightGreen; }
-9.       input:required {border: 2px solid red;}
-10.      input:optional {border: 2px solid green;}
-11.  
-12.      .error-messages {
-13.        display: none;
-14.        margin: 0 10px 15px 10px;
-15.        padding: 8px 35px 8px 30px;
-16.        color: #B94A48;
-17.        background-color: #F2DEDE;
-18.        border: 2px solid #EED3D7;
-19.        border-radius: 4px;
-20.      }
-21.      fieldset {
-22.        border:1px solid;
-23.        padding:20px;
-24.      }
-25.    &lt;/style&gt;
-26.  &lt;/head&gt;
-27.  &lt;body&gt;
-28.  &lt;form&gt;
-29.    &lt;fieldset&gt;
-30.      &lt;legend&gt;Submit with one or two invalid fields&lt;/legend&gt;
-31. 
-32.      &lt;ul class=&quot;error-messages&quot;&gt;&lt;/ul&gt;
-33. 
-34.      &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
-35.      &lt;input id=&quot;name&quot; name=&quot;name&quot; required&gt;
-36.      &lt;p&gt;
-37.      &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
-38.      &lt;input id=&quot;email&quot; name=&quot;email&quot; type=&quot;email&quot; required&gt;
-39.      &lt;p&gt;
-40.      &lt;button&gt;Submit&lt;/button&gt;
-41.    &lt;/fieldset&gt;
-42.  &lt;/form&gt;
-43.  
-44.  &lt;script&gt;
-45.    function replaceValidationUI(form) {
-46.      // Suppress the default bubbles
-47.      form.addEventListener(&quot;invalid&quot;, function (event) {
-48.        event.preventDefault();
-49.      }, true);
-50.  
-51.      // Support Safari, iOS Safari, and the Android browser -- each of which
-52.      // do not prevent form submissions by default
-53.      form.addEventListener(&quot;submit&quot;, function (event) {
-54.        if (!this.checkValidity()) {
-55.          event.preventDefault();
-56.        }
-57.      });
-58.  
-59.      // Container that holds error messages. By default it has a CSS
-60.      // display:none property
-61.      var errorMessages = form.querySelector(&quot;.error-messages&quot;);
-62.  
-63.      var submitButton = form.querySelector(&quot;button:not([type=button]),
-64.        input[type=submit]&quot;);
-65.  
-66.      submitButton.addEventListener(&quot;click&quot;, function (event) {
-67.        var invalidFields = form.querySelectorAll(&quot;input:invalid&quot;);
-68.        var listHtml = &quot;&quot;;
-69.        var errorMessagesContainer = form.querySelector(&quot;.error-messages&quot;);
-70.        var label;
-71.  
-72.        // Get the labels&#39; values of their name attributes + the validation error
-73.        // message of the corresponding input field using the validationMessage
-74.        // property of input fields
-75.        // We build a list of &lt;li&gt;...&lt;/li&gt; that we add to the error message container
-76.        for (var i = 0; i &lt; invalidFields.length; i++) {
-77.          label = form.querySelector(&quot;label[for=&quot; + invalidFields[ i ].id + &quot;]&quot;);
-78.          listHtml += &quot;&lt;li&gt;&quot; +
-79.          label.innerHTML +
-80.          &quot; &quot; +
-81.          invalidFields[ i ].validationMessage +
-82.          &quot;&lt;/li&gt;&quot;;
-83.        }
-84.  
-85.        // Update the list with the new error messages
-86.        errorMessagesContainer.innerHTML = listHtml;
-87.  
-88.        // If there are errors, give focus to the first invalid field and show
-89.        // the error messages container by setting its CSS property display=block
-90.        if (invalidFields.length &gt; 0) {
-91.          invalidFields[ 0 ].focus();
-92.          errorMessagesContainer.style.display = &quot;block&quot;;
-93.        }
-94.      });
-95.    }
-96.  
-97.    // Replace the validation UI for all forms
-98.    var forms = document.querySelectorAll(&quot;form&quot;);
-99. 
-100.   for (var i = 0; i &lt; forms.length; i++) {
-101.     replaceValidationUI(forms[ i ]);
-102.   }
-103. &lt;/script&gt;
-104. &lt;/body&gt;
-105. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Aggregating error messages&lt;/title&gt;
+    &lt;style&gt;
+    input:invalid { background-color: lightPink;}
+    input:valid { background-color:lightGreen; }
+    input:required {border: 2px solid red;}
+    input:optional {border: 2px solid green;}
+  
+    .error-messages {
+      display: none;
+      margin: 0 10px 15px 10px;
+      padding: 8px 35px 8px 30px;
+      color: #B94A48;
+      background-color: #F2DEDE;
+      border: 2px solid #EED3D7;
+      border-radius: 4px;
+    }
+    fieldset {
+      border:1px solid;
+      padding:20px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Submit with one or two invalid fields&lt;/legend&gt;
+ 
+    &lt;ul class=&quot;error-messages&quot;&gt;&lt;/ul&gt;
+ 
+    &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+    &lt;input id=&quot;name&quot; name=&quot;name&quot; required&gt;
+    &lt;p&gt;
+    &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+    &lt;input id=&quot;email&quot; name=&quot;email&quot; type=&quot;email&quot; required&gt;
+    &lt;p&gt;
+    &lt;button&gt;Submit&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+  
+&lt;script&gt;
+  function replaceValidationUI(form) {
+    // Suppress the default bubbles
+
+    form.addEventListener(&quot;invalid&quot;, function (event) {
+      event.preventDefault();
+    }, true);
+  
+    // Support Safari, iOS Safari, and the Android browser -- each of which
+    // do not prevent form submissions by default
+    form.addEventListener(&quot;submit&quot;, function (event) {
+      if (!this.checkValidity()) {
+        event.preventDefault();
+       }
+    });
+  
+    // Container that holds error messages. By default it has a CSS
+    // display:none property
+    var errorMessages = form.querySelector(&quot;.error-messages&quot;);
+  
+    var submitButton = form.querySelector(&quot;button:not([type=button]),
+      input[type=submit]&quot;);
+  
+    submitButton.addEventListener(&quot;click&quot;, function (event) {
+      var invalidFields = form.querySelectorAll(&quot;input:invalid&quot;);
+      var listHtml = &quot;&quot;;
+      var errorMessagesContainer = form.querySelector(&quot;.error-messages&quot;);
+      var label;
+  
+      // Get the labels&#39; values of their name attributes + the validation error
+      // message of the corresponding input field using the validationMessage
+      // property of input fields
+      // We build a list of &lt;li&gt;...&lt;/li&gt; that we add to the error message container
+      for (var i = 0; i &lt; invalidFields.length; i++) {
+        label = form.querySelector(&quot;label[for=&quot; + invalidFields[ i ].id + &quot;]&quot;);
+        listHtml += &quot;&lt;li&gt;&quot; +
+        label.innerHTML +
+        &quot; &quot; +
+        invalidFields[ i ].validationMessage +
+        &quot;&lt;/li&gt;&quot;;
+      }
+  
+      // Update the list with the new error messages
+      errorMessagesContainer.innerHTML = listHtml;
+  
+      // If there are errors, give focus to the first invalid field and show
+      // the error messages container by setting its CSS property display=block
+      if (invalidFields.length &gt; 0) {
+        invalidFields[ 0 ].focus();
+        errorMessagesContainer.style.display = &quot;block&quot;;
+      }
+    });
+  }
+  
+  // Replace the validation UI for all forms
+  var forms = document.querySelectorAll(&quot;form&quot;);
+
+  for (var i = 0; i &lt; forms.length; i++) {
+    replaceValidationUI(forms[ i ]);
+  }
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -19535,17 +19536,17 @@ available localStorage object. The same applies to sessionStorage.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  // using localStorage
-2.  
-3.  // store data
-4.  localStorage.lastName = &quot;Bunny&quot;;
-5.  localStorage.firstName = &quot;Bugs&quot;;
-6.  localStorage.location = &quot;Earth&quot;;
-7.  
-8.  // retrieve data
-9.  var lastName = localStorage.lastName;
-10. var firstName = localStorage.firstName;
-11. var location = localStorage.location;</pre>
+<pre>// using localStorage
+ 
+// store data
+localStorage.lastName = &quot;Bunny&quot;;
+localStorage.firstName = &quot;Bugs&quot;;
+localStorage.location = &quot;Earth&quot;;
+ 
+// retrieve data
+var lastName = localStorage.lastName;
+var firstName = localStorage.firstName;
+var location = localStorage.location;</pre>
 
 </details>
 
@@ -19655,27 +19656,27 @@ example on JSBin</a>: enter data and press reload at any time. The form content 
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  // Called when the page is loaded
-2.  window.onload = restoreFormContent;
-3.   
-4.  function restoreFormContent() {
-5.     console.log(&quot;restoring form content from localStorage&quot;);
-6.  
-7.     if(localStorage.firstName !== undefined)
-8.       document.getElementById(&quot;firstName&quot;).value = localStorage.firstName;
-9.  
-10.    if(localStorage.lastName !== undefined)
-11.      document.getElementById(&quot;lastName&quot;).value = localStorage.lastName;
-12. 
-13.    if(localStorage.email !== undefined)
-14.      document.getElementById(&quot;email&quot;).value = localStorage.email;
-15.  
-16.    if(localStorage.age !== undefined)
-17.      document.getElementById(&quot;age&quot;).value = localStorage.age;
-18. 
-19.    if(localStorage.date !== undefined)
-20.      document.getElementById(&quot;date&quot;).value = localStorage.date;
-21. }</pre>
+<pre>// Called when the page is loaded
+window.onload = restoreFormContent;
+  
+function restoreFormContent() {
+   console.log(&quot;restoring form content from localStorage&quot;);
+
+   if(localStorage.firstName !== undefined)
+     document.getElementById(&quot;firstName&quot;).value = localStorage.firstName;
+ 
+   if(localStorage.lastName !== undefined)
+     document.getElementById(&quot;lastName&quot;).value = localStorage.lastName;
+ 
+   if(localStorage.email !== undefined)
+     document.getElementById(&quot;email&quot;).value = localStorage.email;
+ 
+   if(localStorage.age !== undefined)
+     document.getElementById(&quot;age&quot;).value = localStorage.age;
+
+   if(localStorage.date !== undefined)
+     document.getElementById(&quot;date&quot;).value = localStorage.date;
+}</pre>
 
 </details>
 
@@ -19701,9 +19702,9 @@ corresponding data to restore.</p>
 user has loaded your application, you can use the following code (just
 to show how to use setItem/removeItem methods):</p>
 
-<pre>1. var counter = localStorage.getItem(&quot;count&quot;) || 0;
-2. counter++;
-3. localStorage.setItem(&quot;count&quot;, counter);</pre>
+<pre>var counter = localStorage.getItem(&quot;count&quot;) || 0;
+counter++;
+localStorage.setItem(&quot;count&quot;, counter);</pre>
 
 <p>As you can easily guess from the above, we use var value = getItem(key) to retrieve a 
 key’s value and setItem(key, value) to set it. This is similar to what we saw in the 
@@ -19716,12 +19717,12 @@ examples of the page above, except that this time:</p>
   <li>In a loop or in an iterator, sometimes we need to set/get localStorage values using this syntax, for example:</li>
 </ul>
 
-<pre>1.  var inputField = document.getElementById(&quot;firstName&quot;);
-2.  saveInputFieldValue(inputField);
-3.  ... 
-4.  function saveInputFieldValue(field) {
-5.    localStorage.setItem(field.id, field.value);
-6.  }</pre>
+<pre>var inputField = document.getElementById(&quot;firstName&quot;);
+saveInputFieldValue(inputField);
+... 
+function saveInputFieldValue(field) {
+  localStorage.setItem(field.id, field.value);
+}</pre>
 
 <h4>Deleting a key with removeItem(key), or all keys with clear()</h4>
 
@@ -19750,10 +19751,10 @@ through in order to list all the content that they contain. The order is
 not guaranteed, but this may be useful at times (if only for debugging
 purposes!). The following code lists everything in the current store:</p>
 
-<pre>1. for (var i = 0, n = localStorage.length; i &lt; n; i++) {
-2.   var k = localStorage.key(i);
-3.   console.log(k + &quot;: &quot; + localStorage[k]); // get the ith value, the one with a key that is in the variable k.
-4. }</pre>
+<pre>for (var i = 0, n = localStorage.length; i &lt; n; i++) {
+  var k = localStorage.key(i);
+  console.log(k + &quot;: &quot; + localStorage[k]); // get the ith value, the one with a key that is in the variable k.
+}</pre>
 
 <p>Students may note that something seems a bit off in the example
 above: instead of calling localStorage.getItem(k), we simply
@@ -19792,72 +19793,72 @@ store.</p>
 
 <h4>Source code:</h4>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.  &lt;meta charset=utf-8 /&gt;
-5.  &lt;title&gt;Example of localStorare API use&lt;/title&gt;
-6.    &lt;script&gt;
-7.      // Using localStorage
-8.      var counter = localStorage.getItem(&quot;count&quot;) || 0;
-9.      counter++;
-10.     localStorage.setItem(&quot;count&quot;, counter);
-11. 
-12.     function getCountValue() {
-13.       // retrieve data
-14.       document.querySelector(&quot;#counter&quot;).innerHTML = localStorage.count;
-15.     }
-16. 
-17.     function seeAllKeyValuePairsStored() {
-18.       // clear list first
-19.       document.querySelector(&#39;#list&#39;).innerHTML=&quot;&quot;;
-20. 
-21.       for (var i = 0, n = localStorage.length; i &lt; n; i++) {
-22.          var key = localStorage.key(i);
-23.          var value = localStorage[key];
-24.          console.log(key + &quot;: &quot; + value);
-25. 
-26.          var li = document.createElement(&#39;li&#39;);
-27.          li.innerHTML = key + &quot;: &quot; + value;
-28.          document.querySelector(&#39;#list&#39;).insertBefore(li, null);
-29.       }
-30.     }
-31. 
-32.     function resetStore() {
-33.       // erase all key values from store
-34.         localStorage.clear();
-35.       // reset displayed list too
-36.         document.querySelector(&#39;#list&#39;).innerHTML=&quot;&quot;;
-37.     }
-38. 
-39.     function addSomeData() {
-40.       // store data
-41.       localStorage.lastName = &quot;Buffa&quot;;
-42.       localStorage.firstName = &quot;Michel&quot;;
-43.       // refresh display
-44.       seeAllKeyValuePairsStored();
-45.     }
-46. 
-47.     function removeSomeData() {
-48.       // store data
-49.       localStorage.removeItem(&quot;lastName&quot;);
-50.       localStorage.removeItem(&quot;firstName&quot;);
-51.       // refresh display
-52.       seeAllKeyValuePairsStored();
-53.     }
-54.   &lt;/script&gt;
-55. &lt;/head&gt;
-56. &lt;body onload=&quot;getCountValue()&quot;&gt;
-57.    &lt;h1&gt;Number of times this page has been seen on this browser: &lt;span id=&quot;counter&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
-58. 
-59.    &lt;button onclick=&quot;seeAllKeyValuePairsStored()&quot;&gt;Show all key value pairs stored in localStorage&lt;/button&gt;&lt;br/&gt;
-60.    &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
-61.  
-62.    &lt;button onclick=&quot;addSomeData()&quot;&gt;Add some data to the store&lt;/button&gt;&lt;br/&gt;
-63.    &lt;button onclick=&quot;removeSomeData()&quot;&gt;Remove some data&lt;/button&gt;&lt;br/&gt;
-64.    &lt;button onclick=&quot;resetStore()&quot;&gt;reset store (erase all key/value pairs)&lt;/button&gt;
-65. &lt;/body&gt;
-66. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=utf-8 /&gt;
+&lt;title&gt;Example of localStorare API use&lt;/title&gt;
+  &lt;script&gt;
+    // Using localStorage
+    var counter = localStorage.getItem(&quot;count&quot;) || 0;
+    counter++;
+  localStorage.setItem(&quot;count&quot;, counter);
+ 
+    function getCountValue() {
+       // retrieve data
+       document.querySelector(&quot;#counter&quot;).innerHTML = localStorage.count;
+     }
+ 
+     function seeAllKeyValuePairsStored() {
+       // clear list first
+       document.querySelector(&#39;#list&#39;).innerHTML=&quot;&quot;;
+ 
+       for (var i = 0, n = localStorage.length; i &lt; n; i++) {
+         var key = localStorage.key(i);
+         var value = localStorage[key];
+         console.log(key + &quot;: &quot; + value);
+
+         var li = document.createElement(&#39;li&#39;);
+         li.innerHTML = key + &quot;: &quot; + value;
+         document.querySelector(&#39;#list&#39;).insertBefore(li, null);
+      }
+    }
+ 
+    function resetStore() {
+      // erase all key values from store
+        localStorage.clear();
+      // reset displayed list too
+        document.querySelector(&#39;#list&#39;).innerHTML=&quot;&quot;;
+    }
+
+    function addSomeData() {
+      // store data
+      localStorage.lastName = &quot;Buffa&quot;;
+      localStorage.firstName = &quot;Michel&quot;;
+      // refresh display
+      seeAllKeyValuePairsStored();
+    }
+
+    function removeSomeData() {
+      // store data
+      localStorage.removeItem(&quot;lastName&quot;);
+      localStorage.removeItem(&quot;firstName&quot;);
+      // refresh display
+      seeAllKeyValuePairsStored();
+    }
+  &lt;/script&gt;
+&lt;/head&gt;
+ &lt;body onload=&quot;getCountValue()&quot;&gt;
+   &lt;h1&gt;Number of times this page has been seen on this browser: &lt;span id=&quot;counter&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+
+   &lt;button onclick=&quot;seeAllKeyValuePairsStored()&quot;&gt;Show all key value pairs stored in localStorage&lt;/button&gt;&lt;br/&gt;
+   &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
+ 
+   &lt;button onclick=&quot;addSomeData()&quot;&gt;Add some data to the store&lt;/button&gt;&lt;br/&gt;
+   &lt;button onclick=&quot;removeSomeData()&quot;&gt;Remove some data&lt;/button&gt;&lt;br/&gt;
+   &lt;button onclick=&quot;resetStore()&quot;&gt;reset store (erase all key/value pairs)&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 <p>You can check in the Chrome dev. tools user interface that the
@@ -19933,45 +19934,45 @@ called the function restorePreferences).</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. function initPreferences() {
-2.   console.log(&quot;Adding input listener to all input fields&quot;);
-3.   // add an input listener to all input fields
-4.   var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
-5.   for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
-6.     addInputListener(listOfInputsInForm[i]);
-7.   }
-8.     // restore preferences
-9.     restorePreferences();
-10.     applyGUIvalues(); // Use the input fields&#39; values we just restored to set internal 
-11.                       // size, incX, color, lineWidth variables
-12. }
-13. 
-14. function addInputListener(inputField) {
-15.   // same as before
-16. }
-17. 
-18. function restorePreferences() {
-19.   // same as old restoreFormContent
-20. }
-21. 
-22. function applyGUIvalues() {
-23.   // Check restored input field content to set the size of the rectangle
-24.   var sizeWidget = document.getElementById(&quot;size&quot;);
-25.   size = Math.sign(incX)*parseInt(sizeWidget.value);
-26.   // also update the outline element&#39;s value
-27.   document.getElementById(&quot;sizeValue&quot;).innerHTML = size;
-28.   // Check restored input field content to set the color of the rectangle
-29.   var colorWidget = document.getElementById(&quot;color&quot;);
-30.   ctx.fillStyle = colorWidget.value;
-31.   // Check restored input field content to set the speed of the rectangle
-32.   var speedWidget = document.getElementById(&quot;speed&quot;);
-33.   incX = Math.sign(incX)*parseInt(speedWidget.value);
-34.   // also update the outline element&#39;s value
-35.   document.getElementById(&quot;speedValue&quot;).innerHTML = Math.abs(incX);
-36.   // Check restored input field content to set the lineWidth of the rectangle
-37.   var lineWidthWidget = document.getElementById(&quot;lineWidth&quot;);
-38.   ctx.lineWidth = parseInt(lineWidthWidget.value);
-39. }</pre>
+<pre>function initPreferences() {
+  console.log(&quot;Adding input listener to all input fields&quot;);
+  // add an input listener to all input fields
+  var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
+  for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
+    addInputListener(listOfInputsInForm[i]);
+  }
+    // restore preferences
+    restorePreferences();
+    applyGUIvalues(); // Use the input fields&#39; values we just restored to set internal 
+                      // size, incX, color, lineWidth variables
+}
+
+function addInputListener(inputField) {
+  // same as before
+}
+
+function restorePreferences() {
+  // same as old restoreFormContent
+}
+ 
+function applyGUIvalues() {
+  // Check restored input field content to set the size of the rectangle
+  var sizeWidget = document.getElementById(&quot;size&quot;);
+  size = Math.sign(incX)*parseInt(sizeWidget.value);
+  // also update the outline element&#39;s value
+  document.getElementById(&quot;sizeValue&quot;).innerHTML = size;
+  // Check restored input field content to set the color of the rectangle
+  var colorWidget = document.getElementById(&quot;color&quot;);
+  ctx.fillStyle = colorWidget.value;
+  // Check restored input field content to set the speed of the rectangle
+  var speedWidget = document.getElementById(&quot;speed&quot;);
+  incX = Math.sign(incX)*parseInt(speedWidget.value);
+  // also update the outline element&#39;s value
+  document.getElementById(&quot;speedValue&quot;).innerHTML = Math.abs(incX);
+  // Check restored input field content to set the lineWidth of the rectangle
+  var lineWidthWidget = document.getElementById(&quot;lineWidth&quot;);
+  ctx.lineWidth = parseInt(lineWidthWidget.value);
+}</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20000,30 +20001,30 @@ loaded. This function will:</p>
 
 <h4>Source code:</h4>
 
-<pre>1. // Called when the page is loaded
-2. window.onload = init;
-3.
-4. function init() {
-5.    console.log(&quot;Adding input listener to all input fields&quot;);
-6.    // add an input listener to all input fields
-7.    var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
-8.    for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
-9.       addInputListener(listOfInputsInForm[i]);
-10.    }
-11.    // restore form content with previously saved values
-12.    restoreFormContent();
-13. }</pre>
+<pre>// Called when the page is loaded
+window.onload = init;
+
+function init() {
+  console.log(&quot;Adding input listener to all input fields&quot;);
+  // add an input listener to all input fields
+  var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
+  for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
+     addInputListener(listOfInputsInForm[i]);
+   }
+   // restore form content with previously saved values
+   restoreFormContent();
+}</pre>
 
 <p>And here is the addInputListener(inputField) function. It takes an
 input field as parameter and attaches an oninput listener to it, that
 will save the field’s content each time a value is entered. The key will
 be the id of the input field (<i>line 3</i>):</p>
 
-<pre>1. function addInputListener(inputField) {
-2.   inputField.addEventListener(&#39;input&#39;, function(event) {
-3.     localStorage.setItem(inputField.id, inputField.value);
-4.   }, false);
-5. }</pre>
+<pre>function addInputListener(inputField) {
+  inputField.addEventListener(&#39;input&#39;, function(event) {
+    localStorage.setItem(inputField.id, inputField.value);
+  }, false);
+}</pre>
 
 <p>Note that at <i>line 2</i>, we use addEventListener (that is not
 using the oninput property here). adddEventListener doesnot replace
@@ -20039,26 +20040,26 @@ is done using the function restoreFormContent():</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. function restoreFormContent() {
-2.    console.log(&quot;restoring form content from localStorage&quot;);
-3.    // get the list of all input elements in the form
-4.    var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
-5.    // For each input element,
-6.    // - get its id (that is also the key for it&#39;s saved content
-7.    // in the localStorage)
-8.    // - get the value associated with the id/key in the local
-3.    // storage
-10.   // - If the value is not undefined, restore the value
-11.   // of the input field
-12.   for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
-13.     var fieldToRestore = listOfInputsInForm[i];
-14.     var id = fieldToRestore.id;
-15.     var savedValue = localStorage.getItem(id);
-16.     if(savedValue !== undefined) {
-17.        fieldToRestore.value = savedValue;
-18.     }
-19.   }
-20. }</pre>
+<pre>function restoreFormContent() {
+  console.log(&quot;restoring form content from localStorage&quot;);
+  // get the list of all input elements in the form
+  var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
+  // For each input element,
+  // - get its id (that is also the key for it&#39;s saved content
+  // in the localStorage)
+  // - get the value associated with the id/key in the local
+  // storage
+  // - If the value is not undefined, restore the value
+  // of the input field
+  for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
+    var fieldToRestore = listOfInputsInForm[i];
+    var id = fieldToRestore.id;
+    var savedValue = localStorage.getItem(id);
+    if(savedValue !== undefined) {
+       fieldToRestore.value = savedValue;
+    }
+  }
+}</pre>
 
 </details>
 
@@ -20178,24 +20179,24 @@ there!</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.    &lt;meta charset=utf-8 /&gt;
-5.    &lt;title&gt;Storing JSON Objects with Local Storage&lt;/title&gt;
-6.    &lt;script&gt;
-7.      var personObject= {&#39;givenName&#39;: &#39;Michel&#39;, &#39;familyName&#39;: &#39;Buffa&#39;};
-8.      // Store the object as a JSON String
-9.      localStorage.setItem(&#39;testObject&#39;, JSON.stringify(personObject));
-10.     // Retrieve the object from storage
-11.     var retrievedObject = JSON.parse(localStorage.getItem(&#39;testObject&#39;));
-12.     console.log(retrievedObject.firstName + &quot; &quot; + retrievedObject.lastName);
-13.    // then you can use retrievedObject.givenName, retrievedObject.familyName...
-14.   &lt;/script&gt;
-15. &lt;/head&gt;
-16. &lt;body&gt;
-17. &lt;/body&gt;
-18. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=utf-8 /&gt;
+  &lt;title&gt;Storing JSON Objects with Local Storage&lt;/title&gt;
+  &lt;script&gt;
+    var personObject= {&#39;givenName&#39;: &#39;Michel&#39;, &#39;familyName&#39;: &#39;Buffa&#39;};
+    // Store the object as a JSON String
+    localStorage.setItem(&#39;testObject&#39;, JSON.stringify(personObject));
+    // Retrieve the object from storage
+    var retrievedObject = JSON.parse(localStorage.getItem(&#39;testObject&#39;));
+    console.log(retrievedObject.firstName + &quot; &quot; + retrievedObject.lastName);
+   // then you can use retrievedObject.givenName, retrievedObject.familyName...
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -20529,34 +20530,34 @@ week, some canvas here, or image elements and so on.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. &lt;!DOCTYPE html&gt;
-2. &lt;html lang=&quot;en&quot;&gt;
-3. &lt;head&gt;
-4.   &lt;meta charset=&quot;utf-8&quot;&gt;
-5.   &lt;title&gt;Example of using readAsDataURL&lt;/title&gt;
-6. &lt;/head&gt;
-7. &lt;body&gt;
-8.   &lt;input type=&quot;file&quot; multiple onchange=&quot;readImagesAndPreview(this.files);&quot;&gt;
-9.     &lt;p&gt;
-10.     &lt;div id=&quot;thumbnails&quot;&gt;&lt;/div&gt;
-11.     &lt;script&gt;
-12.       var container = document.getElementById(&quot;thumbnails&quot;);
-13.       function readImagesAndPreview(files) {
-14.         for(var i=0; i &lt; files.length; i++) {
-15.            var f = files[i];
-16.            var reader = new FileReader();
-17.            reader.onload = function(e) {
-18.               var img = document.createElement(&quot;img&quot;);
-19.               img.src = e.target.result;
-20.               img.width = 100;
-21.               container.appendChild(img);
-22.            }
-23.            reader.readAsDataURL(f);
-24.         }
-25.       }
-26.     &lt;/script&gt;
-27. &lt;/body&gt;
-28. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of using readAsDataURL&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;input type=&quot;file&quot; multiple onchange=&quot;readImagesAndPreview(this.files);&quot;&gt;
+  &lt;p&gt;
+    &lt;div id=&quot;thumbnails&quot;&gt;&lt;/div&gt;
+    &lt;script&gt;
+      var container = document.getElementById(&quot;thumbnails&quot;);
+      function readImagesAndPreview(files) {
+        for(var i=0; i &lt; files.length; i++) {
+           var f = files[i];
+           var reader = new FileReader();
+           reader.onload = function(e) {
+              var img = document.createElement(&quot;img&quot;);
+              img.src = e.target.result;
+              img.width = 100;
+              container.appendChild(img);
+           }
+           reader.readAsDataURL(f);
+        }
+      }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -20611,33 +20612,33 @@ about the first selected file. Please try it below on your browser
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. &lt;!DOCTYPE html&gt;
-2. &lt;html lang=&quot;en&quot;&gt;
-3. &lt;head&gt;
-4.   &lt;meta charset=utf-8 /&gt;
-5.   &lt;title&gt;Reading file metadata&lt;/title&gt;
-6.   &lt;script&gt;
-7.     function displayFirstSelectedFileMetadata() {
-8.       var selectedFile = document.getElementById(&#39;input&#39;).files[0];
-9.         document.querySelector(&quot;#singleName&quot;).innerHTML = selectedFile.name;
-10.         document.querySelector(&quot;#singleSize&quot;).innerHTML = selectedFile.size + &quot; bytes&quot;;
-11.         document.querySelector(&quot;#singleType&quot;).innerHTML = selectedFile.type;
-12.         document.querySelector(&quot;#singleDate&quot;).innerHTML = selectedFile.lastModifiedDate;
-13.     }
-14.   &lt;/script&gt;
-15. &lt;/head&gt;
-16. &lt;body&gt;
-17.   Select one or more files: &lt;input type=&quot;file&quot; id=&quot;input&quot;
-18.     onchange=&quot;displayFirstSelectedFileMetadata();&quot;/&gt;
-19.   &lt;p&gt;
-20.   &lt;ul&gt;
-21.     &lt;li&gt;File name: &lt;span id=&quot;singleName&quot;&gt;&lt;/span&gt;&lt;/li&gt;
-22.     &lt;li&gt;File size: &lt;span id=&quot;singleSize&quot;&gt;&lt;/span&gt;&lt;/li&gt;
-23.     &lt;li&gt;File type: &lt;span id=&quot;singleType&quot;&gt;&lt;/span&gt;&lt;/li&gt;
-24.     &lt;li&gt;File last modification date: &lt;span id=&quot;singleDate&quot;&gt;&lt;/span&gt;&lt;/li&gt;
-25.   &lt;/ul&gt;
-26. &lt;/body&gt;
-27. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=utf-8 /&gt;
+  &lt;title&gt;Reading file metadata&lt;/title&gt;
+&lt;script&gt;
+  function displayFirstSelectedFileMetadata() {
+    var selectedFile = document.getElementById(&#39;input&#39;).files[0];
+      document.querySelector(&quot;#singleName&quot;).innerHTML = selectedFile.name;
+      document.querySelector(&quot;#singleSize&quot;).innerHTML = selectedFile.size + &quot; bytes&quot;;
+      document.querySelector(&quot;#singleType&quot;).innerHTML = selectedFile.type;
+      document.querySelector(&quot;#singleDate&quot;).innerHTML = selectedFile.lastModifiedDate;
+    }
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Select one or more files: &lt;input type=&quot;file&quot; id=&quot;input&quot;
+    onchange=&quot;displayFirstSelectedFileMetadata();&quot;/&gt;
+  &lt;p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;File name: &lt;span id=&quot;singleName&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;File size: &lt;span id=&quot;singleSize&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;File type: &lt;span id=&quot;singleType&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;File last modification date: &lt;span id=&quot;singleDate&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -20658,27 +20659,27 @@ not images will be greyed and non selectable.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;p&gt;Select several images: &lt;input
+<pre>&lt;p&gt;Select several images: &lt;input
       type=“file” accept=“image/*“ multiple onchange=”filesProcess(this.files)“ 
       name=”selection”/&gt;&lt;/p&gt;
-2.  &lt;div id=&quot;result&quot;&gt;...&lt;/div&gt;
-3.  &lt;script&gt;
-4.    function filesProcess(files) {
-5.      var selection = &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;
-          /th&gt;&lt;th&gt;Bytes&lt;/th&gt;&lt;th&gt;MIME Type&lt;/th&gt;
-6.      &lt;th&gt;Last modified date&lt;/th&gt;&lt;/tr&gt;&quot;;
-7.      for(i=0; i&lt;files.length ;i++){
-8.        file = files[i];
-9.        selection += &quot;&lt;tr&gt;&lt;td&gt;&quot;+file.name+&quot;&lt;/td&gt;&lt;td
-            style=&quot;text-align:right&quot;&gt;&quot;
-10.         +file.size+&quot;&lt;/td&gt;&lt;td&gt;&quot;
-11.         +file.type+&quot;&lt;/td&gt;&lt;td&gt;
-          &quot;+file.lastModifiedDate+&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
-12.     }
-13.     selection += &quot;&lt;/table&gt;&quot;;
-14.     document.getElementById(&quot;result&quot;).innerHTML = selection;
-15.   }
-16. &lt;/script&gt;</pre>
+&lt;div id=&quot;result&quot;&gt;...&lt;/div&gt;
+&lt;script&gt;
+  function filesProcess(files) {
+    var selection = &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;
+    /th&gt;&lt;th&gt;Bytes&lt;/th&gt;&lt;th&gt;MIME Type&lt;/th&gt;
+    &lt;th&gt;Last modified date&lt;/th&gt;&lt;/tr&gt;&quot;;
+    for(i=0; i&lt;files.length ;i++){
+     file = files[i];
+     selection += &quot;&lt;tr&gt;&lt;td&gt;&quot;+file.name+&quot;&lt;/td&gt;&lt;td
+       style=&quot;text-align:right&quot;&gt;&quot;
+       +file.size+&quot;&lt;/td&gt;&lt;td&gt;&quot;
+       +file.type+&quot;&lt;/td&gt;&lt;td&gt;
+     &quot;+file.lastModifiedDate+&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+  }
+    selection += &quot;&lt;/table&gt;&quot;;
+    document.getElementById(&quot;result&quot;).innerHTML = selection;
+  }
+&lt;/script&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -20801,18 +20802,18 @@ the readAsText method:</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  function readFileContent(f) {
-2.    // Executed last: called only when the file content is loaded, e.target.result is
-3.    // The content
-4.    reader.onload = function(e) {
-5.      var content = e.target.result;
-6.      // do something with the file content
-7.      console.log(&quot;File &quot; + f.name + &quot; content is: &quot; + content);
-8.    };
-9.    // Executed first: start reading the file asynchronously, will call the
-10.   // reader.onload callback only when the file is read entirely
-11.   reader.readAsText(f);
-12. }</pre>
+<pre>function readFileContent(f) {
+  // Executed last: called only when the file content is loaded, e.target.result is
+  // The content
+  reader.onload = function(e) {
+    var content = e.target.result;
+    // do something with the file content
+    console.log(&quot;File &quot; + f.name + &quot; content is: &quot; + content);
+  };
+  // Executed first: start reading the file asynchronously, will call the
+  // reader.onload callback only when the file is read entirely
+  reader.readAsText(f);
+}</pre>
 
 </details>
 
@@ -20871,39 +20872,39 @@ Example at JSBin</a>, or try it below in your browser:</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.    &lt;meta charset=&quot;utf-8&quot;&gt;
-5.    &lt;title&gt;Example of use of FileReader with a text file&lt;/title&gt;
-6.  &lt;/head&gt;
-7.  &lt;body&gt;
-8.  &lt;label for=&quot;files&quot;&gt;Choose a text file:&lt;/label&gt;&lt;input type=&quot;file&quot; id=&quot;file&quot;
-9.    onchange=&quot;readFileContent(this.files)&quot;/&gt;&lt;br/&gt;
-10. &lt;p&gt;
-11. &lt;textarea rows=15 cols=50 id=&quot;fileContent&quot;&gt;&lt;/textarea&gt;
-12. 
-13. &lt;script&gt;
-14.   function readFileContent(files) {
-15.     console.log(&quot;In readFileContent&quot;);
-16.     var reader = new FileReader();
-17. 
-18.     // Executed last: called when the file content is loaded, e.target.result is
-19.     // The content
-20.     reader.onload = function(e) {
-21.       // display content in the textarea with id=&quot;fileContent&quot;
-22.       document.getElementById(&quot;fileContent&quot;).value= e.target.result;
-23.     };
-24. 
-25.     console.log(&quot;Reading file:&quot; + files[0].name);
-26. 
-27.     // Executed first: start reading the file asynchronously , will call the onload
-28.     // callback when the file is read
-29.     reader.readAsText(files[0]);
-30.   }
-31. &lt;/script&gt;
-32. &lt;/body&gt;
-33. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of use of FileReader with a text file&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;label for=&quot;files&quot;&gt;Choose a text file:&lt;/label&gt;&lt;input type=&quot;file&quot; id=&quot;file&quot;
+  onchange=&quot;readFileContent(this.files)&quot;/&gt;&lt;br/&gt;
+&lt;p&gt;
+&lt;textarea rows=15 cols=50 id=&quot;fileContent&quot;&gt;&lt;/textarea&gt;
+
+&lt;script&gt;
+  function readFileContent(files) {
+    console.log(&quot;In readFileContent&quot;);
+    var reader = new FileReader();
+
+    // Executed last: called when the file content is loaded, e.target.result is
+    // The content
+    reader.onload = function(e) {
+      // display content in the textarea with id=&quot;fileContent&quot;
+      document.getElementById(&quot;fileContent&quot;).value= e.target.result;
+    };
+
+    console.log(&quot;Reading file:&quot; + files[0].name);
+
+    // Executed first: start reading the file asynchronously , will call the onload
+    // callback when the file is read
+    reader.readAsText(files[0]);
+  }
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -20931,48 +20932,48 @@ files (using shift for multiple selection):</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.    &lt;meta charset=&quot;utf-8&quot;&gt;
-5.    &lt;title&gt;Example of use of FileReader with a text file&lt;/title&gt;
-6.  &lt;/head&gt;
-7.  &lt;body&gt;
-8.  &lt;label for=&quot;files&quot;&gt;Choose multiple text files:&lt;/label&gt;
-9.  &lt;input type=&quot;file&quot; id=&quot;files&quot;
-10.   multiple onchange=&quot;readFilesAndDisplayAsText(this.files);&quot;/&gt;&lt;br/&gt;
-11. &lt;p&gt;
-12. &lt;textarea rows=30 cols=50 id=&quot;filesContent&quot;&gt;&lt;/textarea&gt;
-13. 
-14. &lt;script&gt;
-15.   var filesContent = document.getElementById(&quot;filesContent&quot;);
-16. 
-17.   function readFilesAndDisplayAsText(files) {
-18.     console.log(&quot;dans read files&quot;);
-19.     // Loop through the FileList
-20.     for (var i = 0, f; f = files[i]; i++) {
-21. 
-22.       var reader = new FileReader();
-23. 
-24.       // Add an onload listener to the reader
-25.       addOnLoadListener(reader, f.name);
-26.       // start reading, will call the listener later, when the file f is read
-27.       reader.readAsText(f);
-28. 
-29.     }
-30.   }
-31. 
-32.   function addOnLoadListener(reader, name) {
-33.     // Add an onload listener that will be able to print the name of the
-34.     // file...
-35.     reader.onload = function(e) {
-36.       filesContent.value += &quot;###### READING FILE &quot; + name + &quot; ######&quot;;
-37.       filesContent.value += e.target.result;
-38.     };
-39.   }
-40. &lt;/script&gt;
-41. &lt;/body&gt;
-42. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of use of FileReader with a text file&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;label for=&quot;files&quot;&gt;Choose multiple text files:&lt;/label&gt;
+&lt;input type=&quot;file&quot; id=&quot;files&quot;
+  multiple onchange=&quot;readFilesAndDisplayAsText(this.files);&quot;/&gt;&lt;br/&gt;
+&lt;p&gt;
+&lt;textarea rows=30 cols=50 id=&quot;filesContent&quot;&gt;&lt;/textarea&gt;
+
+&lt;script&gt;
+  var filesContent = document.getElementById(&quot;filesContent&quot;);
+
+  function readFilesAndDisplayAsText(files) {
+    console.log(&quot;dans read files&quot;);
+    // Loop through the FileList
+    for (var i = 0, f; f = files[i]; i++) {
+
+      var reader = new FileReader();
+
+      // Add an onload listener to the reader
+      addOnLoadListener(reader, f.name);
+      // start reading, will call the listener later, when the file f is read
+      reader.readAsText(f);
+
+    }
+  }
+
+  function addOnLoadListener(reader, name) {
+    // Add an onload listener that will be able to print the name of the
+    // file...
+    reader.onload = function(e) {
+      filesContent.value += &quot;###### READING FILE &quot; + name + &quot; ######&quot;;
+      filesContent.value += e.target.result;
+    };
+  }
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21036,16 +21037,16 @@ it prevents code that uses Ajax to run in its pages.</p>
 <details>
   <summary><b>Webaudio API:</b></summary>
 
-<pre>1.  // User selects file. Read it as an ArrayBuffer and pass to the API.
-2.  var fileInput = document.querySelector(&#39;input[type=&quot;file&quot;]&#39;);
-3.  fileInput.addEventListener(&#39;change&#39;, function(e) {
-4.    var reader = new FileReader();
-5.    reader.onload = function(e) {
-6.      initSound(e.target.result);
-7.    };
-8.    // THIS IS THE INTERESTING PART!
-9.    reader.readAsArrayBuffer(this.files[0]);
-10. }, false);</pre>
+<pre>// User selects file. Read it as an ArrayBuffer and pass to the API.
+var fileInput = document.querySelector(&#39;input[type=&quot;file&quot;]&#39;);
+fileInput.addEventListener(&#39;change&#39;, function(e) {
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    initSound(e.target.result);
+  };
+  // THIS IS THE INTERESTING PART!
+  reader.readAsArrayBuffer(this.files[0]);
+}, false);</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21181,38 +21182,38 @@ Example on JSBin</a> or try it below in your browser:</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;label for=&quot;files&quot;&gt;Choose multiple files:&lt;/label&gt;
-2.  &lt;input type=&quot;file&quot; id=&quot;files&quot; multiple
-3.    onchange=&quot;readFilesAndDisplayPreview(this.files);&quot;/&gt;&lt;br/&gt;
-4.  &lt;p&gt;Preview of selected images:&lt;/p&gt;
-5.  &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
-6.  &lt;script&gt;
-7.  function readFilesAndDisplayPreview(files) {
-8.    // Loop through the FileList and render image files as thumbnails.
-9.    for (var i = 0, f; f = files[i]; i++) {
-10.     // Only process image files.
-11.     if (!f.type.match(&#39;image.*&#39;)) {
-12.       continue;
-13.     }
-14.       var reader = new FileReader();
-15.
-16.     //capture the file information.
-17.     reader.onload = function(e) {
-18.       // Render thumbnail. e.target.result = the image content
-19.       // as a data URL
-20.       // create a span with CSS class=&quot;thumb&quot;, for nicer layout
-21.       var span = document.createElement(&#39;span&#39;);
-22.       // Add an img src=... in the span, with src= the dataURL of
-23.       // the image
-24.       span.innerHTML = &quot;&lt;img class=&#39;thumb&#39; src=&#39;&quot; +
-25.         e.target.result + &quot;&#39; alt=&#39;a picture&#39;/&gt;&quot;;
-26.       // Insert the span in the output id=list
-27.       document.getElementById(&#39;list&#39;).insertBefore(span, null);
-28.     };
-29.     // Read in the image file as a data URL.
-30.     reader.readAsDataURL(f);
-31.   }
-32. }</pre>
+<pre>&lt;label for=&quot;files&quot;&gt;Choose multiple files:&lt;/label&gt;
+&lt;input type=&quot;file&quot; id=&quot;files&quot; multiple
+  onchange=&quot;readFilesAndDisplayPreview(this.files);&quot;/&gt;&lt;br/&gt;
+&lt;p&gt;Preview of selected images:&lt;/p&gt;
+&lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
+&lt;script&gt;
+function readFilesAndDisplayPreview(files) {
+  // Loop through the FileList and render image files as thumbnails.
+  for (var i = 0, f; f = files[i]; i++) {
+    // Only process image files.
+    if (!f.type.match(&#39;image.*&#39;)) {
+      continue;
+    }
+      var reader = new FileReader();
+
+    //capture the file information.
+    reader.onload = function(e) {
+      // Render thumbnail. e.target.result = the image content
+      // as a data URL
+      // create a span with CSS class=&quot;thumb&quot;, for nicer layout
+      var span = document.createElement(&#39;span&#39;);
+      // Add an img src=... in the span, with src= the dataURL of
+      // the image
+      span.innerHTML = &quot;&lt;img class=&#39;thumb&#39; src=&#39;&quot; +
+        e.target.result + &quot;&#39; alt=&#39;a picture&#39;/&gt;&quot;;
+      // Insert the span in the output id=list
+      document.getElementById(&#39;list&#39;).insertBefore(span, null);
+    };
+    // Read in the image file as a data URL.
+    reader.readAsDataURL(f);
+  }
+}</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21248,34 +21249,34 @@ example only works with a single file.</p>
 <details>
   <summary><b>JavaScript source code:</b></summary>
 
-<pre>1. function drawImage(imageFile) {
-2.   var reader = new FileReader();
-3.  
-4.   //capture the file information.
-5.   reader.onload = function(e) {
-6.     // For drawing an image on a canvas we
-7.     // need an image object
-8.     var img = new Image();
-9.     // Even if the file has been read, decoding
-10.     // the dataURL format may take some time
-11.     // so we need to use the regular way of
-12.     // working with images: onload callback    
-13.     // that will be called after setting the src attribute
-14.     img.onload = function(e) {
-15.       // draw the image!
-16.       ctx.drawImage(img, 0, 0, 400, 400);
-17.     }
-18.     // e.target.result is the dataURL, so we set the
-19.     // src if the image with it. This will call
-20.     // asynchonously the onload callback
-21.     img.src= e.target.result;
-22.   };
-23.   // Read in the image file as a data URL.
-24.   reader.readAsDataURL(imageFile);
-25. }
-26. function readFileAndDraw(files) {
-27.   drawImage(files[0]);
-28. }</pre>
+<pre>function drawImage(imageFile) {
+  var reader = new FileReader();
+ 
+  //capture the file information.
+  reader.onload = function(e) {
+    // For drawing an image on a canvas we
+    // need an image object
+    var img = new Image();
+    // Even if the file has been read, decoding
+    // the dataURL format may take some time
+    // so we need to use the regular way of
+    // working with images: onload callback    
+    // that will be called after setting the src attribute
+    img.onload = function(e) {
+      // draw the image!
+      ctx.drawImage(img, 0, 0, 400, 400);
+    }
+    // e.target.result is the dataURL, so we set the
+    // src if the image with it. This will call
+    // asynchonously the onload callback
+    img.src= e.target.result;
+  };
+  // Read in the image file as a data URL.
+  reader.readAsDataURL(imageFile);
+}
+function readFileAndDraw(files) {
+  drawImage(files[0]);
+}</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21360,31 +21361,31 @@ the browser will ask if you agree to share your position with the application.</
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.    &lt;head&gt;
-4.      &lt;meta charset=&quot;utf-8&quot;&gt;
-5.      &lt;title&gt;Basic example of use of the geolocation API&lt;/title&gt;
-6.    &lt;/head&gt;
-7.    &lt;body&gt;
-8.      &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
-9.      &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
-10.     &lt;script&gt;
-11.       var displayCoords=document.getElementById(&quot;msg&quot;);
-12.       function getLocation() {
-13.       if (navigator.geolocation) {
-14.         navigator.geolocation.getCurrentPosition(showPosition);
-15.       } else {
-16.         displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
-17.       }
-18.       }
-19.       function showPosition(position) {
-20.         displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
-21.           &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
-22.       }
-23.     &lt;/script&gt;
-24.   &lt;/body&gt;
-25. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Basic example of use of the geolocation API&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
+    &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
+    &lt;script&gt;
+      var displayCoords=document.getElementById(&quot;msg&quot;);
+      function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
+      }
+      }
+      function showPosition(position) {
+        displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
+          &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
+      }
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21474,49 +21475,49 @@ means”:</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre>1. &lt;!DOCTYPE html&gt;
-2.   &lt;html lang=&quot;en&quot;&gt;
-3.   &lt;head&gt;
-4.     &lt;meta charset=&quot;utf-8&quot;&gt;
-5.     &lt;title&gt;Basic example of use of the geolocation API&lt;/title&gt;
-6.   &lt;/head&gt;
-7.   &lt;body&gt;
-8.     &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
-9.     &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
-10.     &lt;script&gt;
-11.       var displayCoords=document.getElementById(&quot;msg&quot;);
-12.       function getLocation() {
-13.         if (navigator.geolocation) {
-14.           navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
-15.         } else {
-16.           displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
-17.         }
-18.       }
-19.       function showPosition(position) {
-20.         displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
-21.                                 &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
-22.       }
-23.       function errorPosition(error) {
-24.         var info = &quot;Error during geolocation: &quot;;
-25.         switch(error.code) {
-26.           case error.TIMEOUT:
-27.             info += &quot;Timeout !&quot;;
-28.             break;
-29.           case error.PERMISSION_DENIED:
-30.             info += &quot;Permission denied, geolocation could not be obtained...&quot;;
-31.             break;
-32.           case error.POSITION_UNAVAILABLE:
-33.             info += &quot;Location could not be obtained though the available means...&quot;;
-34.             break;
-35.           case error.UNKNOWN_ERROR:
-36.             info += &quot;Unknown error&quot;;
-37.             break;
-38.           }
-39.         displayCoords.innerHTML = info;
-40.       }
-41.     &lt;/script&gt;
-42.   &lt;/body&gt;
-43. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Basic example of use of the geolocation API&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
+    &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
+    &lt;script&gt;
+      var displayCoords=document.getElementById(&quot;msg&quot;);
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
+        } else {
+          displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
+        }
+      }
+      function showPosition(position) {
+        displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
+                                &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
+      }
+      function errorPosition(error) {
+        var info = &quot;Error during geolocation: &quot;;
+        switch(error.code) {
+          case error.TIMEOUT:
+            info += &quot;Timeout !&quot;;
+            break;
+          case error.PERMISSION_DENIED:
+            info += &quot;Permission denied, geolocation could not be obtained...&quot;;
+            break;
+          case error.POSITION_UNAVAILABLE:
+            info += &quot;Location could not be obtained though the available means...&quot;;
+            break;
+          case error.UNKNOWN_ERROR:
+            info += &quot;Unknown error&quot;;
+            break;
+          }
+        displayCoords.innerHTML = info;
+      }
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21565,23 +21566,23 @@ that will hold one or several of the following options:</p>
 <details>
   <summary><b>JavaScript source code:</b></summary>
 
-<pre>1. // Just ask to turn GPS on, if available
-2. navigator.geolocation.getCurrentPosition(onSuccess, onError,
-3.   {enableHighAccuracy:true});
-4. // maximumAge = 10 mins, the position can be cached for 10 mins,
-5. // useful when in tunnels...When the device tries to get
-6. // a position, if it does not succeed, then go on error
-7. // immediately
-8. navigator.geolocation.getCurrentPosition(onSuccess, onError,
-9.   {maximumAge:600000, timeout:0});
-10. // Position will never come from the cache (maximumAge: 0), and
-11. // if after 0.1s the position could not be computed, then go on
-12. // error
-13. navigator.geolocation.getCurrentPosition(onSuccess, onError,
-14.   {maximumAge:0, timeout:100});
-15. // Ask for GPS, cache for 30s, 27s before going on error...
-16. watchId=navigator.geolocation.watchPosition(onSuccess, onError,
-17.   {enableHighAccuracy:true, maximumAge:30000, timeout:27000});</pre>
+<pre>// Just ask to turn GPS on, if available
+navigator.geolocation.getCurrentPosition(onSuccess, onError,
+  {enableHighAccuracy:true});
+// maximumAge = 10 mins, the position can be cached for 10 mins,
+// useful when in tunnels...When the device tries to get
+// a position, if it does not succeed, then go on error
+// immediately
+navigator.geolocation.getCurrentPosition(onSuccess, onError,
+  {maximumAge:600000, timeout:0});
+// Position will never come from the cache (maximumAge: 0), and
+// if after 0.1s the position could not be computed, then go on
+// error
+navigator.geolocation.getCurrentPosition(onSuccess, onError,
+  {maximumAge:0, timeout:100});
+// Ask for GPS, cache for 30s, 27s before going on error...
+watchId=navigator.geolocation.watchPosition(onSuccess, onError,
+  {enableHighAccuracy:true, maximumAge:30000, timeout:27000});</pre>
 
 </details>
 
@@ -21623,37 +21624,37 @@ the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a b
 <details>
   <summary><b>JavaScript source code:</b></summary>
 
-<pre>1.  function getLocation(e) {
-2.    e.preventDefault();
-3.    if (!navigator.geolocation) {
-4.      alert(&quot;Browser doesn&#39;t support geolocation&quot;);
-5.    } else {
-6.      navigator.geolocation.getCurrentPosition(success, error);
-7.    }
-8.  }
-9.  // Get current position successfully
-10. function success(position) {
-11.   var map, marker,
-12.     latitude = position.coords.latitude,
-13.     longitude = position.coords.longitude;
-14.   // Instance map using leaflet
-15.   map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
-16.   // Tile layer using key api at cloudmade.com
-17.   L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
-18.     key: &#39;760506895e284217a7442ce2efe97797&#39;,
-19.     styleId: 103288,
-20.     maxZoom: 16
-21.   }).addTo(map);
-22.   // Marker using leaflet
-23.   marker = L.marker([latitude, longitude]).addTo(map);
-24.   // Popup in leaflet
-25.   marker.bindPopup(&#39;&lt;p&gt;Your location&lt;/p&gt;&#39;).openPopup();
-26. }
-27. // Get current position fail
-28. function error() {
-29.   alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
-30. }
-31.</pre>
+<pre>function getLocation(e) {
+  e.preventDefault();
+  if (!navigator.geolocation) {
+    alert(&quot;Browser doesn&#39;t support geolocation&quot;);
+  } else {
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+}
+// Get current position successfully
+function success(position) {
+  var map, marker,
+    latitude = position.coords.latitude,
+    longitude = position.coords.longitude;
+  // Instance map using leaflet
+  map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
+  // Tile layer using key api at cloudmade.com
+  L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
+    key: &#39;760506895e284217a7442ce2efe97797&#39;,
+    styleId: 103288,
+    maxZoom: 16
+  }).addTo(map);
+  // Marker using leaflet
+  marker = L.marker([latitude, longitude]).addTo(map);
+  // Popup in leaflet
+  marker.bindPopup(&#39;&lt;p&gt;Your location&lt;/p&gt;&#39;).openPopup();
+}
+// Get current position fail
+function error() {
+  alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+}
+</pre>
 
 </details>
 
@@ -21662,22 +21663,22 @@ the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a b
 <details>
   <summary><b>CSS source code:</b></summary>
 
-<pre>1.  html, body {
-2.    height: 100%
-3.  }
-4.  .map {
-5.    height: 300px;
-6.  }
-7.  .btn {
-8.    background-color: rgba(10, 10, 230, .5);
-9.    border: 0;
-10.   color: #fff;
-11.   padding: 10px;
-12.   text-shadow: 0 0 1px rgba(0, 0, 0, .3);
-13.   text-decoration: none;
-14.   margin: 0.5rem 0 1rem;
-15.   display: inline-block;
-16. }</pre>
+<pre>html, body {
+  height: 100%
+}
+.map {
+  height: 300px;
+}
+.btn {
+  background-color: rgba(10, 10, 230, .5);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+  text-decoration: none;
+  margin: 0.5rem 0 1rem;
+  display: inline-block;
+}</pre>
 
 </details>
 
@@ -21686,18 +21687,18 @@ the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a b
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre>1. &lt;html&gt;
-2. &lt;head&gt;
-3.   &lt;meta charset=&quot;utf-8&quot;&gt;
-4.   &lt;title&gt;OpenStreetMap Example&lt;/title&gt;
-5.   &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.css&quot;&gt;
-6.   &lt;script src=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
-7. &lt;/head&gt;
-8. &lt;body&gt;
-9.   &lt;button class=&quot;btn&quot; onclick=&quot;getLocation(event)&quot;&gt;Click to show your location with OpenStreetMap&lt;/button&gt;
-10.   &lt;div id=&quot;map&quot; class=&quot;map&quot;&gt;&lt;/div&gt;
-11. &lt;/body&gt;
-12. &lt;/html&gt;</pre>
+<pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;OpenStreetMap Example&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.css&quot;&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;button class=&quot;btn&quot; onclick=&quot;getLocation(event)&quot;&gt;Click to show your location with OpenStreetMap&lt;/button&gt;
+  &lt;div id=&quot;map&quot; class=&quot;map&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21706,18 +21707,18 @@ the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a b
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre>1.  &lt;html&gt;
-2.  &lt;head&gt;
-3.    &lt;meta charset=&quot;utf-8&quot;&gt;
-4.    &lt;title&gt;OpenStreetMap Example&lt;/title&gt;
-5.    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.css&quot;&gt;
-6.    &lt;script src=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
-7.  &lt;/head&gt;
-8.  &lt;body&gt;
-9.    &lt;button class=&quot;btn&quot; onclick=&quot;getLocation(event)&quot;&gt;Click to show your location with OpenStreetMap&lt;/button&gt;
-10.   &lt;div id=&quot;map&quot; class=&quot;map&quot;&gt;&lt;/div&gt;
-11. &lt;/body&gt;
-12. &lt;/html&gt;</pre>
+<pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;OpenStreetMap Example&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.css&quot;&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;button class=&quot;btn&quot; onclick=&quot;getLocation(event)&quot;&gt;Click to show your location with OpenStreetMap&lt;/button&gt;
+  &lt;div id=&quot;map&quot; class=&quot;map&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -21733,36 +21734,36 @@ the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a b
 <details>
   <summary><b>JavaScript source code:</b></summary>
 
-<pre>1.  function getLocation(e) {
-2.    e.preventDefault();
-3.    if (!navigator.geolocation) {
-4.      alert(&quot;Browser doesn&#39;t support geolocation&quot;);
-5.    } else {
-6.      navigator.geolocation.getCurrentPosition(success, error);
-7.    }
-8.  }
-9.  // Get current position successfully
-10. function success(position) {
-11.    var map, marker,
-12.   latitude = position.coords.latitude,
-13.   longitude = position.coords.longitude;
-14.   // Instance map using leaflet
-15.   map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
-16.   // Tile layer using key api at cloudmade.com
-17.   L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
-18.     key: &#39;760506895e284217a7442ce2efe97797&#39;,
-19.     styleId: 103288,
-20.     maxZoom: 16
-21.   }).addTo(map);
-22.   // Marker using leaflet
-23.   marker = L.marker([latitude, longitude]).addTo(map);
-24.   // Popup in leaflet
-25.   marker.bindPopup(&#39;&lt;p&gt;Your location&lt;/p&gt;&#39;).openPopup();
-26. }
-27. // Get current position fail
-28. function error() {
-29.   alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
-30. }</pre>
+<pre>function getLocation(e) {
+  e.preventDefault();
+  if (!navigator.geolocation) {
+    alert(&quot;Browser doesn&#39;t support geolocation&quot;);
+  } else {
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+}
+// Get current position successfully
+function success(position) {
+  var map, marker,
+  latitude = position.coords.latitude,
+  longitude = position.coords.longitude;
+  // Instance map using leaflet
+  map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
+  // Tile layer using key api at cloudmade.com
+  L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
+    key: &#39;760506895e284217a7442ce2efe97797&#39;,
+    styleId: 103288,
+    maxZoom: 16
+  }).addTo(map);
+  // Marker using leaflet
+  marker = L.marker([latitude, longitude]).addTo(map);
+  // Popup in leaflet
+  marker.bindPopup(&#39;&lt;p&gt;Your location&lt;/p&gt;&#39;).openPopup();
+}
+// Get current position fail
+function error() {
+  alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+}</pre>
 
 </details>
 
@@ -21947,80 +21948,80 @@ used to convert to a physical address.</p>
   <summary><b>HTML source code:</b></summary>
 
 <pre>&lt;!DOCTYPE html&gt;
-2. &lt;html&gt;
-3. &lt;head&gt;
-4.   &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
-5.   &lt;meta charset=&quot;utf-8&quot; /&gt;
-6.   &lt;meta
-7.     name=&quot;viewport&quot;
-8.     content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot;
-9.     /&gt;
-10.  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css
-11.    &quot; /&gt;
-12.  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
-13.  &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
-14.  &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
-15.  &lt;style type=&quot;text/css&quot;&gt;
-16.    body {
-17.      margin: 0;
-18.    }
-19.    #map {
-20.      position: absolute;
-21.      width: 100%;
-22.      height: 100%;
-23.    }
-24.  &lt;/style&gt;
-25.&lt;/head&gt;
-26.&lt;body&gt;
-27.  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
-28.  &lt;script type=&quot;text/javascript&quot;&gt;
-29.  var map = L.map(&#39;map&#39;).setView([0, 0], 2);
-30.  var geocoder = L.Control.Geocoder.nominatim();
-31.  if (URLSearchParams &amp;&amp; location.search) {
-32.    // parse /?geocoder=nominatim from URL
-33.    var params = new URLSearchParams(location.search);
-34.    var geocoderString = params.get(&#39;geocoder&#39;);
-35.    if (geocoderString &amp;&amp; L.Control.Geocoder[geocoderString]) {
-36.      console.log(&#39;Using geocoder&#39;, geocoderString);
-37.      geocoder = L.Control.Geocoder[geocoderString]();
-38.    } else if (geocoderString) {
-39.      console.warn(&#39;Unsupported geocoder&#39;, geocoderString);
-40.    }
-41.  }
-42.  var control = L.Control.geocoder({
-43.    query: &#39;Moon&#39;,
-44.    placeholder: &#39;Search here...&#39;,
-45.    geocoder: geocoder
-46.  }).addTo(map);
-47.  var marker;
-48.  setTimeout(function() {
-49.    control.setQuery(&#39;Earth&#39;);
-50.  }, 12000);
-51.  L.tileLayer(&#39;https://{s}.tile.osm.org/{z}/{x}/{y}.png&#39;, {
-52.    attribution: &#39;&amp;copy; &lt;a href=&quot;https://osm.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;
-53.  }).addTo(map);
-54.  map.on(&#39;click&#39;, function(e) {
-55.    console.log(e.latlng)
-56.    geocoder.reverse(e.latlng, map.options.crs.scale(map.getZoom()), function(results) {
-57.      var r = results[0];
-58.      if (r) {
-59.        if (marker) {
-60.          marker
-61.          .setLatLng(r.center)
-62.          .setPopupContent(r.html || r.name)
-63.          .openPopup();
-64.        } else {
-65.          marker = L.marker(r.center)
-66.          .bindPopup(r.name)
-67.          .addTo(map)
-68.          .openPopup();
-69.        }
-70.      }
-71.    });
-72.  });
-73.  &lt;/script&gt;
-74.&lt;/body&gt;
-75.&lt;/html&gt;</pre>
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta
+    name=&quot;viewport&quot;
+    content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot;
+    /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css
+    &quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    body {
+      margin: 0;
+    }
+    #map {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+  var map = L.map(&#39;map&#39;).setView([0, 0], 2);
+  var geocoder = L.Control.Geocoder.nominatim();
+  if (URLSearchParams &amp;&amp; location.search) {
+    // parse /?geocoder=nominatim from URL
+    var params = new URLSearchParams(location.search);
+    var geocoderString = params.get(&#39;geocoder&#39;);
+    if (geocoderString &amp;&amp; L.Control.Geocoder[geocoderString]) {
+      console.log(&#39;Using geocoder&#39;, geocoderString);
+      geocoder = L.Control.Geocoder[geocoderString]();
+    } else if (geocoderString) {
+      console.warn(&#39;Unsupported geocoder&#39;, geocoderString);
+    }
+  }
+  var control = L.Control.geocoder({
+    query: &#39;Moon&#39;,
+    placeholder: &#39;Search here...&#39;,
+    geocoder: geocoder
+  }).addTo(map);
+  var marker;
+  setTimeout(function() {
+    control.setQuery(&#39;Earth&#39;);
+  }, 12000);
+  L.tileLayer(&#39;https://{s}.tile.osm.org/{z}/{x}/{y}.png&#39;, {
+    attribution: &#39;&amp;copy; &lt;a href=&quot;https://osm.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;
+  }).addTo(map);
+  map.on(&#39;click&#39;, function(e) {
+    console.log(e.latlng)
+    geocoder.reverse(e.latlng, map.options.crs.scale(map.getZoom()), function(results) {
+      var r = results[0];
+     if (r) {
+        if (marker) {
+          marker
+         .setLatLng(r.center)
+          .setPopupContent(r.html || r.name)
+          .openPopup();
+        } else {
+          marker = L.marker(r.center)
+          .bindPopup(r.name)
+          .addTo(map)
+          .openPopup();
+        }
+      }
+    });
+  });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -22032,86 +22033,86 @@ used to convert to a physical address.</p>
   <summary><b>HTML source code:</b></summary>
 
 <pre><code>&lt;!DOCTYPE html&gt;
-2.  &lt;html&gt;
-3.  &lt;head&gt;
-4.    &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
-5.    &lt;meta charset=&quot;utf-8&quot; /&gt;
-6.    &lt;meta
-7.      name=&quot;viewport&quot;
-8.      content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot;
-9.      /&gt;
-10.   &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; /&gt;
-11.   &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
-12.   &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
-13.   &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
-14.   &lt;style type=&quot;text/css&quot;&gt;
-15.     body {
-16.       margin: 0;
-17.     }
-18.     #map {
-19.       position: absolute;
-20.       width: 100%;
-21.       height: 100%;
-22.     }
-23.   &lt;/style&gt;
-24. &lt;/head&gt;
-25. &lt;body&gt;
-26.   &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
-27.   &lt;script type=&quot;text/javascript&quot;&gt;
-28.     var geocoder = L.Control.Geocoder.nominatim();
-29.     var map, marker, latitude, longitude;
-30.     function getLocation() {
-31.       if (!navigator.geolocation) {
-32.         alert(&quot;Browser doesn&#39;t support geolocation&quot;);
-33.       } else {
-34.         navigator.geolocation.getCurrentPosition(success, error);
-35.       }
-36.     }
-37.     // Get current position successfully
-38.     function success(position) {
-39.       latitude = position.coords.latitude;
-40.       longitude = position.coords.longitude;
-41.       // Instance map using leaflet
-42.       map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
-43.       // Tile layer using key api at cloudmade.com
-44.       L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
-45.       key: &#39;760506895e284217a7442ce2efe97797&#39;,
-46.       styleId: 103288,
-47.       maxZoom: 16
-48.       }).addTo(map);
-49.       // Marker using leaflet
-50.       marker = L.marker([latitude, longitude]).addTo(map);
-51.       // Popup in leaflet
-52.       marker.bindPopup(&#39;&lt;p&gt;&lt;/p&gt;&#39;).openPopup();
-53.       getPhysicalAddress({lat:latitude, lng:longitude});
-54.     }
-55.     // Get current position fail
-56.     function error() {
-57.       alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
-58.     }
-59.     var marker;
-60.     function getPhysicalAddress(latlong) {
-61.       geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
-62.       var r = results[0];
-63.         if (r) {
-64.           if (marker) {
-65.             marker
-66.              .setLatLng(r.center)
-67.              .setPopupContent(r.html || r.name)
-68.              .openPopup();
-69.           } else {
-70.               marker = L.marker(r.center)
-71.              .bindPopup(r.name)
-72.              .addTo(map)
-73.              .openPopup();
-74.           }
-75.         }
-76.       });
-77.     }
-78.     getLocation();
-79.   &lt;/script&gt;
-80. &lt;/body&gt;
-81. &lt;/html&gt;</code></pre>
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta
+    name=&quot;viewport&quot;
+    content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot;
+    /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    body {
+      margin: 0;
+    }
+    #map {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var geocoder = L.Control.Geocoder.nominatim();
+    var map, marker, latitude, longitude;
+    function getLocation() {
+      if (!navigator.geolocation) {
+        alert(&quot;Browser doesn&#39;t support geolocation&quot;);
+      } else {
+        navigator.geolocation.getCurrentPosition(success, error);
+      }
+    }
+    // Get current position successfully
+    function success(position) {
+      latitude = position.coords.latitude;
+      longitude = position.coords.longitude;
+      // Instance map using leaflet
+      map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
+      // Tile layer using key api at cloudmade.com
+      L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
+      key: &#39;760506895e284217a7442ce2efe97797&#39;,
+      styleId: 103288,
+      maxZoom: 16
+      }).addTo(map);
+      // Marker using leaflet
+      marker = L.marker([latitude, longitude]).addTo(map);
+      // Popup in leaflet
+      marker.bindPopup(&#39;&lt;p&gt;&lt;/p&gt;&#39;).openPopup();
+      getPhysicalAddress({lat:latitude, lng:longitude});
+    }
+    // Get current position fail
+    function error() {
+      alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+    }
+    var marker;
+    function getPhysicalAddress(latlong) {
+      geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
+      var r = results[0];
+        if (r) {
+          if (marker) {
+            marker
+             .setLatLng(r.center)
+             .setPopupContent(r.html || r.name)
+             .openPopup();
+          } else {
+              marker = L.marker(r.center)
+             .bindPopup(r.name)
+             .addTo(map)
+             .openPopup();
+          }
+        }
+      });
+    }
+    getLocation();
+  &lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -22132,87 +22133,87 @@ online example</a> (for security reasons the embedded version cannot run in thi
   <summary><b>HTML source code:</b></summary>
 
 <pre><code>&lt;!DOCTYPE html&gt;
-2.  &lt;html&gt;
-3.  &lt;head&gt;
-4.    &lt;title&gt;Gimmee My Location&lt;/title&gt;
-5.    &lt;meta charset=&quot;utf-8&quot; /&gt;
-6.    &lt;meta name=&quot;viewport&quot;
-7.    content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot; /&gt;
-8.    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; /&gt;
-9.    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
-10.   &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
-11.   &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
-12. &lt;/head&gt;
-13. &lt;body onload=&quot;getLocation();&quot;&gt;
-14.   &lt;h1&gt;Example of the use of reverse geocoder in a form&lt;/h1&gt;
-15.   &lt;form&gt;
-16.   &lt;fieldset&gt;
-17.   &lt;legend&gt;Form example with map and address...&lt;/legend&gt;
-18.   &lt;div id=&quot;map&quot; style=&quot;width: 500px; height: 300px&quot;&gt;&lt;/div&gt;
-19.   &lt;/fieldset&gt;
-20.   &lt;fieldset&gt;
-21.   &lt;legend&gt;Surface address&lt;/legend&gt;
-22.   &lt;input id=&quot;surfaceAddress&quot; size=110 type=&quot;text&quot;&gt;
-23.   &lt;fieldset&gt;
-24.   &lt;form&gt;
-25.   &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
-26.
-27.   &lt;script type=&quot;text/javascript&quot;&gt;
-28.     var geocoder = L.Control.Geocoder.nominatim();
-29.     var map, marker, latitude, longitude;
-30.     function getLocation() {
-31.       if (!navigator.geolocation) {
-32.         alert(&quot;Browser doesn&#39;t support geolocation&quot;);
-33.       } else {
-34.         navigator.geolocation.getCurrentPosition(success, error);
-35.       }
-36.     }
-37.     // Get current position successfully
-38.     function success(position) {
-39.       latitude = position.coords.latitude;
-40.       longitude = position.coords.longitude;
-41.       // Instance map using leaflet
-42.       map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
-43.       // Tile layer using key api at cloudmade.com
-44.       L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}{x}{y}.png&#39;, {
-45.         key: &#39;760506895e284217a7442ce2efe97797&#39;,
-46.           styleId: 103288,
-47.           maxZoom: 16
-48.       }).addTo(map);
-49.       // Marker using leaflet
-50.         marker = L.marker([latitude, longitude]).addTo(map);
-51.         // Popup in leaflet
-52.         marker.bindPopup(&#39;&lt;p&gt;&lt;/p&gt;&#39;).openPopup();
-53.         getPhysicalAddress({lat:latitude, lng:longitude});
-54.     }
-55.     // Get current position fail
-56.     function error() {
-57.       alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
-58.     }
-59.       var marker;
-60.       function getPhysicalAddress(latlong) {
-61.         geocoder.reverse(latlong, 500000, function(results) {
-62.           var r = results[0];
-63.           console.log(r.name);
-64.           document.querySelector(&quot;#surfaceAddress&quot;).value = r.name;
-65.           if (r) {
-66.             if (marker) {
-67.               marker
-68.                 .setLatLng(r.center)
-69.                 .setPopupContent(r.html || r.name)
-70.                 .openPopup();
-71.             } else {
-72.               marker = L.marker(r.center)
-73.                 .bindPopup(r.name)
-74.                 .addTo(map)
-75.                 .openPopup();
-76.             }
-77.           }
-78.         });
-79.       }
-80.   &lt;/script&gt;
-81. &lt;/body&gt;
-82. &lt;/html&gt;</code></pre>
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Gimmee My Location&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot;
+  content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;getLocation();&quot;&gt;
+  &lt;h1&gt;Example of the use of reverse geocoder in a form&lt;/h1&gt;
+  &lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Form example with map and address...&lt;/legend&gt;
+    &lt;div id=&quot;map&quot; style=&quot;width: 500px; height: 300px&quot;&gt;&lt;/div&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+  &lt;legend&gt;Surface address&lt;/legend&gt;
+  &lt;input id=&quot;surfaceAddress&quot; size=110 type=&quot;text&quot;&gt;
+  &lt;fieldset&gt;
+  &lt;form&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var geocoder = L.Control.Geocoder.nominatim();
+    var map, marker, latitude, longitude;
+    function getLocation() {
+      if (!navigator.geolocation) {
+        alert(&quot;Browser doesn&#39;t support geolocation&quot;);
+      } else {
+        navigator.geolocation.getCurrentPosition(success, error);
+      }
+    }
+    // Get current position successfully
+    function success(position) {
+      latitude = position.coords.latitude;
+      longitude = position.coords.longitude;
+      // Instance map using leaflet
+      map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
+      // Tile layer using key api at cloudmade.com
+      L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}{x}{y}.png&#39;, {
+        key: &#39;760506895e284217a7442ce2efe97797&#39;,
+          styleId: 103288,
+          maxZoom: 16
+      }).addTo(map);
+      // Marker using leaflet
+        marker = L.marker([latitude, longitude]).addTo(map);
+        // Popup in leaflet
+        marker.bindPopup(&#39;&lt;p&gt;&lt;/p&gt;&#39;).openPopup();
+        getPhysicalAddress({lat:latitude, lng:longitude});
+    }
+    // Get current position fail
+    function error() {
+      alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+    }
+      var marker;
+      function getPhysicalAddress(latlong) {
+        geocoder.reverse(latlong, 500000, function(results) {
+          var r = results[0];
+          console.log(r.name);
+          document.querySelector(&quot;#surfaceAddress&quot;).value = r.name;
+          if (r) {
+            if (marker) {
+              marker
+                .setLatLng(r.center)
+                .setPopupContent(r.html || r.name)
+                .openPopup();
+            } else {
+              marker = L.marker(r.center)
+                .bindPopup(r.name)
+                .addTo(map)
+                .openPopup();
+            }
+          }
+        });
+      }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
