@@ -1,95 +1,126 @@
 /* styles.css of w3cx-3of5 */
 
-  img.displayed {
-    display: block;
-    margin: 0 auto; }
-  .border {
-    border-width: 1px;
-    border-color: #778899;  /* dark grayish blue */
-    border-style: solid; }
+img.displayed {
+  display: block;
+  margin: 0 auto; }
+.border {
+  border-width: 1px;
+  border-color: #778899;  /* dark grayish blue */
+  border-style: solid; }
 
-  ol,ul li { 
-    line-height: 130%;
-  }
+ol,ul li { 
+  line-height: 130%;
+}
 
-  p { 
-    font-size: 14.5px;  /* was 13.5 */
-    font-family: Bahnschrift, Inter, Helvetic, sans-serif;
-    text-align: left; 
-    margin-left: 10px;
-  }
+p { 
+  font-size: 14.5px;  /* was 13.5 */
+  font-family: Bahnschrift, Inter, Helvetic, sans-serif;
+  text-align: left; 
+  margin-left: 10px;
+}
 
-  pre, code {
-    font-family: Consolas, monospace, monospace;
-    font-size: 10px;
-    margin-left: 10px;
-  }
-  pre {
-    overflow: auto;
-  }
-  pre > code {
-    display: block;
-    margin-left: 10px;
-    padding: 1rem;
-    word-wrap: normal;
-  }
-  pre:hover, pre:focus { width: min-content; }
+pre > code {
+  display: block;
+  margin-left: 15px;  /* 10px */
+  padding: 1rem;
+  word-wrap: normal;
+}
+pre {
+  font: normal normal 10px/12px consolas,Courier,Monospace;
+  background-color: #eee;
+  overflow: auto;
+  margin: 0 0 1em;
+  padding: .5em 1em;
+  white-space: pre-wraps;
+  overflow-x: auto;
+}
+pre code,
+pre .line-number {
+  font: normal normal 10px/12px consolas,Courier,Monospace;
+  color: black;
+  display: block;
+}
+pre .line-number {
+  font: normal normal 10px/12px consolas,Courier,Monospace;
+  float: left;
+  margin: 0 1em 0 -1em;
+  border-right: 1px solid;
+  text-align: right;
+  color: red;
+}
+pre .line-number span {
+  display: block;
+  padding: 0 .5em 0 1em;
+}
+pre .cl {
+  display: block;
+  clear: both;
+}
+pre {
+  overflow: auto;
+}
+pre[href]:hover  {
+  text-decoration: none;
+}
+pre:hover, pre:focus {
+  width: 50%;  /* was: fit-content; before that; width: min-content */
+}
 
 a:hover {
   color: #00000;
   background-color: #ffff00;  /* yellow */
   text-decoration: underline;
 }
-  a {
-    text-decoration: none; 
-  }
-  a[href]:hover {
-    text-decoration: underline; 
-    text-decoration-color: 0000ff;
-  }
+a {
+  text-decoration: none; 
+}
+a[href]:hover {
+  text-decoration: underline; 
+  text-decoration-color: 0000ff;
+}
 
-  p.em1 {
-    margin-left: 1em; }
-  p.em2 {
-    margin-left: 2em; }
-  p.em3 {
-    margin-left: 3em; }
-  p.em4 {
-    margin-left: 4em; }
+p.em1 {
+  margin-left: 1em; }
+p.em2 {
+  margin-left: 2em; }
+p.em3 {
+  margin-left: 3em; }
+p.em4 {
+  margin-left: 4em; }
 
-  div {
-    float: left; }
+div {
+  float: left; }
 
-  h1 { 
-    font-size: 21px;
-    font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas;
-    text-align: center;
-  }
-  h2 { 
-    font-size: 18px;
-    font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; 
-    padding: 10px;
-  }
-  h3 { 
-    font-size: 17px;
-    font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; 
-	margin-left: 10px;  
-  }
-  h4 { 
-    font-size: 16px;
-    font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; 
-	margin-left: 10px;
-  }
-  h5 { 
-    font-size: 15px;
-    font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; 
-	margin-left: 10px;
-  }
-  h6 { 
-    font-size: 10px;
-    font-family: Bahnschrift, Inter, Helvetic, sans-serif;
-	margin-left: 10px;
-  }
+h1 { 
+  font-size: 21px;
+  font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas;
+  text-align: center;
+}
+h2 { 
+  font-size: 18px;
+  font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; 
+  padding: 10px;
+}
+h3 { 
+  font-size: 17px;
+  font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; 
+  margin-left: 10px;  
+}
+h4 { 
+  font-size: 16px;
+  font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; 
+  margin-left: 10px;
+}
+h5 { 
+  font-size: 15px;
+  font-family: Bahnschrift, Inter, Helvetic, sans-serif, Consolas; 
+  margin-left: 10px;
+}
+h6 { 
+  font-size: 10px;
+  font-family: Bahnschrift, Inter, Helvetic, sans-serif;
+  margin-left: 10px;
+}
 
 details {
   font: 13px Inter, sans-serif, Bahnschrift, Calibri;
