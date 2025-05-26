@@ -14403,26 +14403,24 @@ on JS Bin</a></p>
 
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.    &lt;meta charset=&quot;utf-8&quot;&gt;
-5.    &lt;title&gt;Click on button&lt;/title&gt;
-6.  &lt;/head&gt;
-7.  &lt;body&gt;
-8.    &lt;button id=&quot;myButton&quot;&gt;Click me!&lt;/button&gt;
-9.    &lt;script&gt;
-10.     var button = document.getElementById(&#39;myButton&#39;);
-11.     // Define a click listener on the button
-12.     button.addEventListener(&#39;click&#39;, processClick;
-13. 
-14.     // callback
-15.     function processClick(event) {
-16.       console.log(&quot;Button clicked&quot;);
-17. 
-18.       // What is the event parameter?
-19.     }
-20.   &lt;/script&gt;
-21. &lt;/body&gt;
-22. &lt;/html&gt;</pre>
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Click on button&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;button id=&quot;myButton&quot;&gt;Click me!&lt;/button&gt;
+  &lt;script&gt;
+    var button = document.getElementById(&#39;myButton&#39;);
+    // Define a click listener on the button
+    button.addEventListener(&#39;click&#39;, processClick;
+    // callback
+    function processClick(event) {
+      console.log(&quot;Button clicked&quot;);
+      // What is the event parameter?
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -14434,9 +14432,9 @@ is possible to test what key has been pressed or released, like this:</p>
 
 <pre>window.addEventListener(&#39;keydown&#39;, function(event) {
   if (event.keyCode === 37) {
-3.      //left arrow was pressed
-4.    }
-5.  }, false);</pre>
+    //left arrow was pressed
+  }
+}, false);</pre>
 
 <p>At <i>line 2</i>, the value “37” is the key code that corresponds to
 the left arrow. It might be difficult to know the correspondences
@@ -14485,19 +14483,19 @@ will trigger the event listener function.</p>
 
 <pre>&lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; height=&quot;200&quot;&gt;
 &lt;/canvas&gt;
-3.  &lt;script&gt;
-4.    var canvas;
-5.    function init() {
-6.      // This will work when you press a key, anywhere on the document
-7.      window.addEventListener(&#39;keydown&#39;, handleKeydown, false);
-8.    }
-9.    function handleKeydown(e){
-10.   alert(&#39;keycode: &#39;+e.keyCode);
-11.     return false;
-12.   };
-13. &lt;/script&gt;
-14. &lt;/body&gt;
-15. &lt;/html&gt;</pre>
+  &lt;script&gt;
+    var canvas;
+    function init() {
+      // This will work when you press a key, anywhere on the document
+      window.addEventListener(&#39;keydown&#39;, handleKeydown, false);
+    }
+    function handleKeydown(e){
+      alert(&#39;keycode: &#39;+e.keyCode);
+      return false;
+    };
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -14508,20 +14506,16 @@ will trigger the event listener function.</p>
 
 <pre>&lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; height=&quot;200&quot;&gt;
 &lt;/canvas&gt;
-3.   
-4.  &lt;script&gt;
-5.  
-6.    function init() {
-7.      // This will work when you press a key, anywhere on the document
-8.      window.addEventListener(&#39;keydown&#39;, handleKeydown, false);
-9.    }
-10.  
-11.  
-12.   function handleKeydown(e){
-13.     alert(&#39;keycode: &#39;+e.keyCode);
-14.     return false;
-15.   };
-16. &lt;/script&gt;</pre>
+  &lt;script&gt;
+    function init() {
+      // This will work when you press a key, anywhere on the document
+      window.addEventListener(&#39;keydown&#39;, handleKeydown, false);
+    }
+    function handleKeydown(e){
+      alert(&#39;keycode: &#39;+e.keyCode);
+      return false;
+    };
+&lt;/script&gt;</pre>
 
 </details>
 
@@ -14708,8 +14702,8 @@ Without it, it will never get the focus!</p>
 <h4>And we force the canvas to get the focus with:</h4>
 
 <pre>canvas=document.getElementById(&#39;myCanvas&#39;);
-  ...
-3.  canvas.focus();</pre>
+...
+canvas.focus();</pre>
 
 <p>Now, if we try an example with the above canvas declaration, we
 show when an HTML element has the focus: a border is added to it.</p>
@@ -14790,25 +14784,19 @@ of the canvas, then press a key: this time nothing happens!</p>
   <summary><b>Click to expand!</b></summary>
 
 <pre>var canvas;
-
-3.  function init() {
-4.    canvas=document.getElementById(&#39;myCanvas&#39;);
-5.   
-6.    // This will work only if the canvas has the focus
-7.    canvas.addEventListener(&#39;keydown&#39;, handleKeydown, false);
-8.  
-9.    // We can set the focus on the canvas like this:
-10.   //canvas.focus();
-11. 
-12.   // ... but it will stop working if we click somewhere else
-13.   // in the document
-14. }
-15.  
-16.  
-17. function handleKeydown(e){
-18.   alert(&#39;keycode: &#39;+e.keyCode);
-19.   return false;
-20. };</pre>
+function init() {
+  canvas=document.getElementById(&#39;myCanvas&#39;);
+  // This will work only if the canvas has the focus
+  canvas.addEventListener(&#39;keydown&#39;, handleKeydown, false);
+  // We can set the focus on the canvas like this:
+  //canvas.focus();
+  // ... but it will stop working if we click somewhere else
+  // in the document
+}
+function handleKeydown(e){
+  alert(&#39;keycode: &#39;+e.keyCode);
+  return false;
+};</pre>
 
 </details>
 
@@ -14956,31 +14944,25 @@ we call canvas.blur() to unset the focus.</p>
 
 <pre>function init() {
   // This function is called after the page is loaded
-3.    // 1 - Get the canvas
-4.    canvas = document.getElementById(&#39;myCanvas&#39;);
-5.    // 2 - Get the context
-6.    ctx=canvas.getContext(&#39;2d&#39;);
-7.  
-8.    // 3 - Add key listeners to the window element
-9.    canvas.addEventListener(&#39;keydown&#39;, handleKeydown, false);
-10.   canvas.addEventListener(&#39;keyup&#39;, handleKeyup, false);
-11. 
-12.   canvas.addEventListener(&#39;mouseenter&#39;, setFocus, false);
-13.   canvas.addEventListener(&#39;mouseout&#39;, unsetFocus, false);
-14. 
-15.   // 4 - Start the animation
-16.   requestId = requestAnimationFrame(animationLoop);
-17. }
-18. 
-19. function setFocus(evt) {
-20.   canvas.focus();
-21. };
-22. 
-23. 
-24. function unsetFocus(evt) {
-25.   canvas.blur();
-26.   incrementX = 0; // stop the monster if the mouse exists the canvas
-27. };</pre>
+  // 1 - Get the canvas
+  canvas = document.getElementById(&#39;myCanvas&#39;);
+  // 2 - Get the context
+  ctx=canvas.getContext(&#39;2d&#39;);
+  // 3 - Add key listeners to the window element
+  canvas.addEventListener(&#39;keydown&#39;, handleKeydown, false);
+  canvas.addEventListener(&#39;keyup&#39;, handleKeyup, false);
+  canvas.addEventListener(&#39;mouseenter&#39;, setFocus, false);
+  canvas.addEventListener(&#39;mouseout&#39;, unsetFocus, false);
+  // 4 - Start the animation
+ requestId = requestAnimationFrame(animationLoop);
+}
+function setFocus(evt) {
+  canvas.focus();
+};
+function unsetFocus(evt) {
+  canvas.blur();
+  incrementX = 0; // stop the monster if the mouse exists the canvas
+};</pre>
 
 </details>
 
@@ -15122,35 +15104,35 @@ function getMousePos(canvas, evt) {
   <summary><b>Click to expand!</b></summary>
 
 <pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.    &lt;meta charset=&quot;utf-8&quot;&gt;
-5.    &lt;title&gt;Mouse event - Good code&lt;/title&gt;
-6.    &lt;style&gt;
-7.      body {
-8.        margin: 20px;
-9.        padding: 0px;
-10.     }
-11.   &lt;/style&gt;
-12. &lt;/head&gt;
-13.   &lt;body&gt;
-14.     This is a canvas:&lt;p&gt;&lt;/p&gt;
-15.     &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;&lt;/canvas&gt;
-16.   &lt;/body&gt;
-17. &lt;/html&gt;</pre>
+lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Mouse event - Good code&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      margin: 20px;
+      padding: 0px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+  &lt;body&gt;
+    This is a canvas:&lt;p&gt;&lt;/p&gt;
+    &lt;canvas id=&quot;myCanvas&quot; width=&quot;578&quot; height=&quot;200&quot;&gt;&lt;/canvas&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
 <h4>JavaScript</h4>
 
-<pre>1. function getMousePos(canvas, evt) {
-2.   // necessary to take into account CSS boundaries
-3.   var rect = canvas.getBoundingClientRect();
-4.   return {
-5.     x: evt.clientX - rect.left,
-6.     y: evt.clientY - rect.top
-7.   };
-8. }</pre>
+<pre>function getMousePos(canvas, evt) {
+  // necessary to take into account CSS boundaries
+  var rect = canvas.getBoundingClientRect();
+  return {
+    x: evt.clientX - rect.left,
+    y: evt.clientY - rect.top
+  };
+}</pre>
 
 <h4>WRONG code:</h4>
 
@@ -15159,19 +15141,18 @@ function getMousePos(canvas, evt) {
 
 <pre>...
 canvas.addEventListener(&#39;mousemove&#39;, function (evt) {
-3.      mousePos = getMousePos(canvas, evt);
-4.      var message = &#39;Mouse position: &#39; + mousePos.x + &#39;,&#39; + mousePos.y;
-5.      writeMessage(canvas, message);
-6.  }, false);
-7.   
-8.  ...
-9.  function getMousePos(canvas, evt) {
-10.   // WRONG!!!
-11.   return {
-12.     x: evt.clientX,
-13.     y: evt.clientY
-14.   };
-15. }</pre>
+  mousePos = getMousePos(canvas, evt);
+  var message = &#39;Mouse position: &#39; + mousePos.x + &#39;,&#39; + mousePos.y;
+  writeMessage(canvas, message);
+}, false);
+...
+function getMousePos(canvas, evt) {
+  // WRONG!!!
+  return {
+    x: evt.clientX,
+    y: evt.clientY
+  };
+}</pre>
 
 </details>
 
@@ -15242,46 +15223,40 @@ shows how to get the mouse button number using the evt.button property.</p>
   <summary><b>Click to expand!</b></summary>
 
 <pre>var canvas, ctx, mousePos, mouseButton;
- 
-3.  window.onload = function init() {
-4.      canvas = document.getElementById(&#39;myCanvas&#39;);
-5.      ctx = canvas.getContext(&#39;2d&#39;);
-6.   
-7.      canvas.addEventListener(&#39;mousemove&#39;, function (evt) {
-8.          mousePos = getMousePos(canvas, evt);
-9.          var message = &#39;Mouse position: &#39; + mousePos.x + &#39;,&#39; + mousePos.y;
-10.         writeMessage(canvas, message);
-11.     }, false);
-12.  
-13.     canvas.addEventListener(&#39;mousedown&#39;, function (evt) {
-14.         mouseButton = evt.button;
-15.         var message = &quot;Mouse button &quot; + evt.button + &quot; down at position: &quot; + mousePos.x + &#39;,&#39; + mousePos.y;
-16.         writeMessage(canvas, message);
-17.     }, false);
-18.  
-19.     canvas.addEventListener(&#39;mouseup&#39;, function (evt) {
-20.         var message = &quot;Mouse up at position: &quot; + mousePos.x + &#39;,&#39; + mousePos.y;
-21.         writeMessage(canvas, message);
-22.     }, false);
-23. };
-24.   
-25. function writeMessage(canvas, message) {
-26.    ctx.save();
-27.    ctx.clearRect(0, 0, canvas.width, canvas.height);
-28.    ctx.font = &#39;18pt Calibri&#39;;
-29.    ctx.fillStyle = &#39;black&#39;;
-30.    ctx.fillText(message, 10, 25);
-31.    ctx.restore();
-32. }
-33.  
-34. function getMousePos(canvas, evt) {
-35.    // necessary to take into account CSS boudaries
-36.    var rect = canvas.getBoundingClientRect();
-37.    return {
-38.       x: evt.clientX - rect.left,
-39.       y: evt.clientY - rect.top
-40.    };
-41. }</pre>
+window.onload = function init() {
+  canvas = document.getElementById(&#39;myCanvas&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  canvas.addEventListener(&#39;mousemove&#39;, function (evt) {
+  mousePos = getMousePos(canvas, evt);
+  var message = &#39;Mouse position: &#39; + mousePos.x + &#39;,&#39; + mousePos.y;
+  writeMessage(canvas, message);
+}, false);
+  canvas.addEventListener(&#39;mousedown&#39;, function (evt) {
+    mouseButton = evt.button;
+    var message = &quot;Mouse button &quot; + evt.button + &quot; down at position: &quot; + mousePos.x + &#39;,&#39; + mousePos.y;
+    writeMessage(canvas, message);
+  }, false);
+  canvas.addEventListener(&#39;mouseup&#39;, function (evt) {
+    var message = &quot;Mouse up at position: &quot; + mousePos.x + &#39;,&#39; + mousePos.y;
+    writeMessage(canvas, message);
+  }, false);
+};
+function writeMessage(canvas, message) {
+  ctx.save();
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.font = &#39;18pt Calibri&#39;;
+  ctx.fillStyle = &#39;black&#39;;
+  ctx.fillText(message, 10, 25);
+  ctx.restore();
+}
+function getMousePos(canvas, evt) {
+  // necessary to take into account CSS boudaries
+  var rect = canvas.getBoundingClientRect();
+  return {
+    x: evt.clientX - rect.left,
+    y: evt.clientY - rect.top
+  };
+}</pre>
 
 </details>
 
