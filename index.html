@@ -10852,9 +10852,8 @@ understanding:</p>
   
 <h4>Typical use:</h4>
 
-<pre>1.  ctx.moveTo(x0, y0);
-2.  
-3.  ctx.arcTo(x1, y1, x2, y2, radius);</pre>
+<pre>ctx.moveTo(x0, y0);
+ctx.arcTo(x1, y1, x2, y2, radius);</pre>
 
 <p>This method can be confusing. It was defined mainly for drawing
 rounded shapes like rounded rectangles. We used an excerpt here from the
@@ -10863,11 +10862,11 @@ href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html" target="_
 
 <h4>It works like this:</h4>
 
-<pre>1.  Draw an imaginary line through (x0,y0) and (x1,y1), draw another imaginary line through (x1,y1) and (x2,y2),
-2.  Take an imaginary circle of radius r, and slide it up between the two lines until it just touches both lines. The two points at which the circle touches the lines are called the tangent points.
-3.  arcTo(x1, y1, x2, y2, r) will draw a line from the current point (x0,y0) to the first tangent point on the line from (x0,y0) to (x1,y1),
-4.  It will also draw an arc from that tangent point to the other tangent point on the line from (x1,y1) to (x2,y2) along the circumference of the circle.
-5.  Finally, it adds the tangent point where the arc ends up, on the line from (x1,y1) to (x2,y2) to the path as the new current point on the path.</pre>
+<pre>Draw an imaginary line through (x0,y0) and (x1,y1), draw another imaginary line through (x1,y1) and (x2,y2),
+Take an imaginary circle of radius r, and slide it up between the two lines until it just touches both lines. The two points at which the circle touches the lines are called the tangent points.
+arcTo(x1, y1, x2, y2, r) will draw a line from the current point (x0,y0) to the first tangent point on the line from (x0,y0) to (x1,y1),
+It will also draw an arc from that tangent point to the other tangent point on the line from (x1,y1) to (x2,y2) along the circumference of the circle.
+Finally, it adds the tangent point where the arc ends up, on the line from (x1,y1) to (x2,y2) to the path as the new current point on the path.</pre>
 
 <h4>Examples</h4>
 
@@ -10886,39 +10885,38 @@ href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html" target="_
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. &lt;!DOCTYPE html&gt;
-2. &lt;html lang=&quot;en&quot;&gt;
-3.   &lt;head&gt;
-4.     &lt;meta charset=&quot;utf-8&quot;/&gt;
-5.     &lt;title&gt;Simple use - arcTo - Example #1&lt;/title&gt;
-6.   &lt;/head&gt;
-7.   &lt;body&gt;
-8.     &lt;canvas id=&quot;myCanvas&quot; height = 400 width=&quot;800&quot;&gt;Your browser does not 
-9.   support the canvas tag.&lt;/canvas&gt;
-10.     &lt;script type=&quot;text/javascript&quot;&gt;
-11.       var canvas=document.getElementById(&#39;myCanvas&#39;);
-12.       var context=canvas.getContext(&#39;2d&#39;);
-13.       context.beginPath();
-14.       context.moveTo(0, 20);
-15.       context.arcTo(100, 100, 200, 20, 50);
-16.       context.lineWidth = 5;
-17.       context.strokeStyle = &quot;#0000ff&quot;;
-18.       context.stroke();
-19.     &lt;/script&gt;
-20.   &lt;/body&gt;
-21. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;
+    &lt;title&gt;Simple use - arcTo - Example #1&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;canvas id=&quot;myCanvas&quot; height = 400 width=&quot;800&quot;&gt;Your browser does not 
+      support the canvas tag.&lt;/canvas&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+      var canvas=document.getElementById(&#39;myCanvas&#39;);
+      var context=canvas.getContext(&#39;2d&#39;);
+      context.beginPath();
+      context.moveTo(0, 20);
+      context.arcTo(100, 100, 200, 20, 50);
+      context.lineWidth = 5;
+      context.strokeStyle = &quot;#0000ff&quot;;
+      context.stroke();
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
 <h4>JavaScript source code extract:</h4>
 
-<pre>1.  context.beginPath();
-2.  context.moveTo(0, 20);
-3.  context.arcTo(100, 100, 200, 20, 50);
-4.  
-5.  context.lineWidth = 5;
-6.  context.strokeStyle = &quot;#0000ff&quot;;
-7.  context.stroke();</pre>
+<pre>context.beginPath();
+context.moveTo(0, 20);
+context.arcTo(100, 100, 200, 20, 50);
+context.lineWidth = 5;
+context.strokeStyle = &quot;#0000ff&quot;;
+context.stroke();</pre>
 
 <h4>Example #2: draw A rounded rectangle</h4>
 
@@ -11094,19 +11092,19 @@ a look!</p>
 <h4>Example #4: use the unrounded vertices in arcTo</h4>
 <p>For drawing a rounded square, this code also works:</p>
 
-<pre>1.  ctx.moveTo(x+radius, y);
-2.  ctx.arcTo(x+width, y,x+width, y+height, radius);
-3.  ctx.arcTo(x+width, y+height, x, y+height, radius); 
-4.  ctx.arcTo(x, y+height, x, y,radius);
-5.  ctx.arcTo(x, y, x+width, y,radius);</pre>
+<pre>ctx.moveTo(x+radius, y);
+ctx.arcTo(x+width, y,x+width, y+height, radius);
+ctx.arcTo(x+width, y+height, x, y+height, radius); 
+ctx.arcTo(x, y+height, x, y,radius);
+ctx.arcTo(x, y, x+width, y,radius);</pre>
 
 <p>Which might be easier than trying to figure out where the arc will end like this:</p>
 
-<pre>1.  ctx.moveTo(x+radius, y);
-2.  ctx.arcTo(x+width, y, x+width, y+radius, radius);
-3.  ctx.arcTo(x+width, y+height, x+width-radius, y+height,radius); 
-4.  ctx.arcTo(x, y+height, x, y+height-radius, radius);
-5.  ctx.arcTo(x, y, x+radius, y,radius);</pre>
+<pre>ctx.moveTo(x+radius, y);
+ctx.arcTo(x+width, y, x+width, y+radius, radius);
+ctx.arcTo(x+width, y+height, x+width-radius, y+height,radius); 
+ctx.arcTo(x, y+height, x, y+height-radius, radius);
+ctx.arcTo(x, y, x+radius, y,radius);</pre>
 
 <p>This could be particularly helpful if you are dealing with something other than a rectangle, like this rounded triangle:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11193,13 +11191,13 @@ point farther we get a sharper curve.</p>
 
 <h4>Typical use:</h4>
 
-<pre>1.  context.moveTo(contextX, contextY);
-2.  context.quadraticCurveTo(controlX, controlY, endX, endY);
-3.  // Optional : set lineWidth and stroke color
-4.  context.lineWidth = 5;
-5.  context.strokeStyle = &quot;#0000ff&quot;;
-6.  // Draw!
-7.  context.stroke();</pre>
+<pre>context.moveTo(contextX, contextY);
+context.quadraticCurveTo(controlX, controlY, endX, endY);
+// Optional : set lineWidth and stroke color
+context.lineWidth = 5;
+context.strokeStyle = &quot;#0000ff&quot;;
+// Draw!
+context.stroke();</pre>
 
 <h4>Examples</h4>
 
@@ -11218,17 +11216,14 @@ point farther we get a sharper curve.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  var canvas=document.querySelector(&#39;#myCanvas1&#39;);
-2.  var context=canvas.getContext(&#39;2d&#39;);
-3.   
-4.  context.beginPath();
-5.   
-6.  context.moveTo(100, 20);
-7.  context.quadraticCurveTo(230, 200, 250, 20);
-8.   
-9.  context.lineWidth = 5;
-10. context.strokeStyle = &quot;#0000ff&quot;;
-11. context.stroke();</pre>
+<pre>var canvas=document.querySelector(&#39;#myCanvas1&#39;);
+var context=canvas.getContext(&#39;2d&#39;);
+context.beginPath();
+context.moveTo(100, 20);
+context.quadraticCurveTo(230, 200, 250, 20);
+context.lineWidth = 5;
+context.strokeStyle = &quot;#0000ff&quot;;
+context.stroke();</pre>
 
 </details>
 
@@ -11285,16 +11280,14 @@ call the stroke() method for drawing the curve.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  context.beginPath();
-2.  
-3.  context.moveTo(100, 20);
-4.  context.lineTo(200, 80);
-5.  context.quadraticCurveTo(230, 200, 250, 20);
-6.  context.lineTo(500, 90);
-7.  
-8.  context.lineWidth = 5;
-9.  context.strokeStyle = &quot;#0000ff&quot;;
-10. context.stroke();</pre>
+<pre>context.beginPath();
+context.moveTo(100, 20);
+context.lineTo(200, 80);
+context.quadraticCurveTo(230, 200, 250, 20);
+context.lineTo(500, 90);
+context.lineWidth = 5;
+context.strokeStyle = &quot;#0000ff&quot;;
+context.stroke();</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11370,16 +11363,16 @@ call the stroke() method for drawing the curve.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. &lt;!DOCTYPE html&gt;
-2. &lt;html lang=&quot;en&quot;&gt;
-3. &lt;head&gt;
-4.   &lt;meta charset=&quot;utf-8&quot;&gt;
-5.   &lt;title&gt;Curved arrows&lt;/title&gt;
-6. &lt;/head&gt;
-7. &lt;body&gt;
-8.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;250&quot; height=&quot;150&quot;&gt;&lt;/canvas&gt;
-9. &lt;/body&gt;
-10. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Curved arrows&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;250&quot; height=&quot;150&quot;&gt;&lt;/canvas&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -11490,13 +11483,13 @@ interactive applications:</p>
 
 <h4>JavaScript source code:</h4>
 
-<pre>1.  ctx.moveTo(contextX, contextY);
-2.  context.bezierCurveTo(controlX1, controlY1, controlX2, controlY2, endX, endY);
-3.  // Optional : set lineWidth and stroke color
-4.  context.lineWidth = 5;
-5.  context.strokeStyle = &quot;#0000ff&quot;;
-6.  // Draw!
-7.  ctx.stroke();</pre>
+<pre>ctx.moveTo(contextX, contextY);
+context.bezierCurveTo(controlX1, controlY1, controlX2, controlY2, endX, endY);
+// Optional : set lineWidth and stroke color
+context.lineWidth = 5;
+context.strokeStyle = &quot;#0000ff&quot;;
+// Draw!
+ctx.stroke();</pre>
 
 <h4>Examples</h4>
 
@@ -11548,14 +11541,12 @@ interactive applications:</p>
 
 <h4>Code source:</h4>
 
-<pre>1.  context.beginPath();
-2.  
-3.  context.moveTo(100, 20);
-4.  context.bezierCurveTo(290, -40, 200, 200, 400, 100);
-5.  
-6.  context.lineWidth = 5;
-7.  context.strokeStyle = &quot;#0000ff&quot;;
-8.  context.stroke();</pre>
+<pre>context.beginPath();
+context.moveTo(100, 20);
+context.bezierCurveTo(290, -40, 200, 200, 400, 100);
+context.lineWidth = 5;
+context.strokeStyle = &quot;#0000ff&quot;;
+context.stroke();</pre>
 
 <h4>Example #2: path with bezier curve, quadratic curve and line in the same, closed path</h4>
 
@@ -11656,10 +11647,10 @@ themselves).</p>
 <p>You can use <a href="https://www.w3.org/TR/css3-color/" target="_blank" rel="noopener noreferrer">
 the same syntax for colors that is supported by CSS3</a>. The next lines show possible values/syntaxes.</p>
 
-<pre>1. ctx.strokeStyle = &#39;red&#39;;
-2. ctx.fillStyle = &quot;#00ff00&quot;;
-3. ctx.strokeStyle = &quot;rgb(0, 0, 255)&quot;;
-4. ctx.fillStyle = &quot;rgba(0, 0, 255, 0.5)&quot;;</pre>
+<pre>ctx.strokeStyle = &#39;red&#39;;
+ctx.fillStyle = &quot;#00ff00&quot;;
+ctx.strokeStyle = &quot;rgb(0, 0, 255)&quot;;
+ctx.fillStyle = &quot;rgba(0, 0, 255, 0.5)&quot;;</pre>
 
 <p>Note that:</p>
 
@@ -11685,44 +11676,44 @@ levels of transparency:</h4>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. &lt;!DOCTYPE html&gt;
-2. &lt;html lang=&quot;en&quot;&gt;
-3. &lt;head&gt;
-4.   &lt;meta charset=&quot;utf-8&quot;&gt;
-5.   &lt;title&gt;Colors and transparency&lt;/title&gt;
-6.   &lt;style&gt;
-7.     #myCanvas {
-8.       border: 1px solid black;
-9.     }
-10.   &lt;/style&gt;
-11. &lt;script&gt;
-12.   var canvas, ctx;
-13.   function init() {
-14.     // This function is called after the page is loaded
-15.     // 1 - Get the canvas
-16.     canvas = document.getElementById(&#39;myCanvas&#39;);
-17.     // 2 - Get the context
-18.     ctx=canvas.getContext(&#39;2d&#39;);
-19.     // 3 - we can draw
-20.     drawSomething();
-21.   }
-22.   function drawSomething() {
-23.     // set the global context values
-24.     ctx.fillStyle=&#39;rgba(0, 0, 255, 0.2)&#39;;
-25.     // Draw the two filled red rectangles
-26.     ctx.fillRect(150, 20, 200, 100);
-27.     ctx.fillRect(100, 50, 200, 100);
-28.     ctx.fillStyle = &quot;blue&quot;;
-29.     ctx.fillRect(50, 100, 200, 100);
-30.     }
-31. &lt;/script&gt;
-32. &lt;/head&gt;
-33. &lt;body onload=&quot;init();&quot;&gt;
-34.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;220&quot;&gt;
-35.     Your browser does not support the canvas tag.
-36.   &lt;/canvas&gt;
-37. &lt;/body&gt;
-38. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Colors and transparency&lt;/title&gt;
+  &lt;style&gt;
+   #myCanvas {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
+&lt;script&gt;
+  var canvas, ctx;
+  function init() {
+    // This function is called after the page is loaded
+    // 1 - Get the canvas
+    canvas = document.getElementById(&#39;myCanvas&#39;);
+    // 2 - Get the context
+    ctx=canvas.getContext(&#39;2d&#39;);
+    // 3 - we can draw
+    drawSomething();
+  }
+  function drawSomething() {
+    // set the global context values
+    ctx.fillStyle=&#39;rgba(0, 0, 255, 0.2)&#39;;
+    // Draw the two filled red rectangles
+    ctx.fillRect(150, 20, 200, 100);
+    ctx.fillRect(100, 50, 200, 100);
+    ctx.fillStyle = &quot;blue&quot;;
+    ctx.fillRect(50, 100, 200, 100);
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;init();&quot;&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;220&quot;&gt;
+    Your browser does not support the canvas tag.
+  &lt;/canvas&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11913,22 +11904,19 @@ and the colors from the gradient are visible.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. // n = number of cells per row/column
-2. function drawCheckboard(n) {
-3.     ctx.fillStyle = grdFrenchFlag;
-4. 
-5.     var l = canvas.width;
-6.     var h = canvas.height;
-7.  
-8.     var cellWidth = l / n;
-9.     var cellHeight = h / n;
-10. 
-11.     for(i = 0; i &lt; n; i++) {
-12.        for(j = i % 2; j &lt; n; j++) {
-13.           ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
-14.        }
-15.     }
-16. }</pre>
+<pre>// n = number of cells per row/column
+function drawCheckboard(n) {
+  ctx.fillStyle = grdFrenchFlag;
+  var l = canvas.width;
+  var h = canvas.height;
+  var cellWidth = l / n;
+  var cellHeight = h / n;
+  for(i = 0; i &lt; n; i++) {
+    for(j = i % 2; j &lt; n; j++) {
+      ctx.fillRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
+    }
+  }
+}</pre>
 
 </details>
 
@@ -11991,22 +11979,22 @@ a value of 10, 20, or 2…</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. &lt;!DOCTYPE html&gt;
-2. &lt;html lang=&quot;en&quot;&gt;
-3.   &lt;head&gt;
-4.     &lt;meta charset=&quot;utf-8&quot;&gt;
-5.     &lt;title&gt;Drawing shapes that do not cover the whole gradient - Example #2 bis&lt;/title&gt;
-6.     &lt;style&gt;
-7.       #myCanvas1 {
-8.         border: 1px solid black;
-9.       }
-10.     &lt;/style&gt;
-11.   &lt;/head&gt;
-12.   &lt;body onload=&quot;init();&quot;&gt;
-13.     &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.
-14.     &lt;/canvas&gt;
-15.   &lt;/body&gt;
-16. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Drawing shapes that do not cover the whole gradient - Example #2 bis&lt;/title&gt;
+    &lt;style&gt;
+      #myCanvas1 {
+        border: 1px solid black;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body onload=&quot;init();&quot;&gt;
+    &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.
+    &lt;/canvas&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -12069,21 +12057,21 @@ set the outline of the rectangles at 5 pixels:</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. &lt;!DOCTYPE html&gt;
-2. &lt;html lang=&quot;en&quot;&gt;
-3. &lt;head&gt;
-4.   &lt;meta charset=&quot;utf-8&quot;&gt;
-5.   &lt;title&gt;Drawing outlined shapes with gradients - Example #3&lt;/title&gt;
-6.   &lt;style&gt;
-7.     #myCanvas1 {
-8.       border: 1px solid black;
-9.     }
-10.   &lt;/style&gt;
-11. &lt;/head&gt;
-12. &lt;body onload=&quot;init();&quot;&gt;
-13.   &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas   tag.&lt;/canvas&gt;
-14. &lt;/body&gt;
-15. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Drawing outlined shapes with gradients - Example #3&lt;/title&gt;
+  &lt;style&gt;
+    #myCanvas1 {
+      border: 1px solid black;
+    }
+   &lt;/style&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;init();&quot;&gt;
+  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas   tag.&lt;/canvas&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -12092,16 +12080,16 @@ set the outline of the rectangles at 5 pixels:</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  function drawCheckboard(n) {
-2.    ctx.strokeStyle = grdFrenchFlag;
-3.    ctx.lineWidth=10;
-4.    ...
-5.    for(i = 0; i &lt; n; i++) {
-6.      for(j = i % 2; j &lt; n; j++) {
-7.        ctx.strokeRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
-8.      }
-9.    }
-10. }</pre>
+<pre>function drawCheckboard(n) {
+  ctx.strokeStyle = grdFrenchFlag;
+  ctx.lineWidth=10;
+  ...
+  for(i = 0; i &lt; n; i++) {
+    for(j = i % 2; j &lt; n; j++) {
+      ctx.strokeRect(cellWidth*i, cellHeight*j, cellWidth, cellHeight);
+    }
+  }
+}</pre>
 
 </details>
 
@@ -12440,15 +12428,14 @@ propagating/interpolating along a virtual line, like linear gradients.</p>
 
 <h4>The gradient is defined as follows:</h4>
 
-<pre>1. var grd = context.createRadialGradient(150, 100, 30, 150, 100, 100);
-2. grd.addColorStop(0, &quot;red&quot;);
-3. grd.addColorStop(0.17, &quot;orange&quot;);
-4. grd.addColorStop(0.33, &quot;yellow&quot;);
-5. grd.addColorStop(0.5, &quot;green&quot;);
-6. grd.addColorStop(0.666, &quot;blue&quot;);
-7. grd.addColorStop(1, &quot;violet&quot;);
-8. 
-9. context.fillStyle = grd;</pre>
+<pre>var grd = context.createRadialGradient(150, 100, 30, 150, 100, 100);
+grd.addColorStop(0, &quot;red&quot;);
+grd.addColorStop(0.17, &quot;orange&quot;);
+grd.addColorStop(0.33, &quot;yellow&quot;);
+grd.addColorStop(0.5, &quot;green&quot;);
+grd.addColorStop(0.666, &quot;blue&quot;);
+grd.addColorStop(1, &quot;violet&quot;);
+context.fillStyle = grd;</pre>
 
 <p>The method from the context object createRadialGradient(cx1, cy1,
 radius1, cx2, cy2, radius2) takes as the first three parameters the
@@ -12492,25 +12479,24 @@ to the right of the first circle’s center (cx = 210 instead of 150):</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. var canvas, ctx, grd;
-2. function init() {
-3.   // Good practice 1: set global vars canvas, ctx, gradients, etc here
-4.   canvas = document.querySelector(&#39;#myCanvas1&#39;);
-5.   ctx = canvas.getContext(&#39;2d&#39;);
-6.   grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
-7.   grd.addColorStop(0, &quot;red&quot;);
-8.   grd.addColorStop(0.17, &quot;orange&quot;);
-9.   grd.addColorStop(0.33, &quot;yellow&quot;);
-10.   grd.addColorStop(0.5, &quot;green&quot;);
-11.   grd.addColorStop(0.666, &quot;blue&quot;);
-12.   grd.addColorStop(1, &quot;violet&quot;);
-13.   draw();
-14. }
-15. 
-16. function draw() {
-17.   ctx.fillStyle = grd;
-18.   ctx.fillRect(0, 0, 300, 200);
-19. }</pre>
+<pre>var canvas, ctx, grd;
+function init() {
+  // Good practice 1: set global vars canvas, ctx, gradients, etc here
+  canvas = document.querySelector(&#39;#myCanvas1&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);
+  grd.addColorStop(0, &quot;red&quot;);
+  grd.addColorStop(0.17, &quot;orange&quot;);
+  grd.addColorStop(0.33, &quot;yellow&quot;);
+  grd.addColorStop(0.5, &quot;green&quot;);
+  grd.addColorStop(0.666, &quot;blue&quot;);
+  grd.addColorStop(1, &quot;violet&quot;);
+  draw();
+}
+function draw() {
+  ctx.fillStyle = grd;
+  ctx.fillRect(0, 0, 300, 200);
+}</pre>
 
 </details>
 
@@ -12519,21 +12505,21 @@ to the right of the first circle’s center (cx = 210 instead of 150):</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. &lt;!DOCTYPE html&gt;
-2. &lt;html lang=&quot;en&quot;&gt;
-3. &lt;head&gt;
-4.   &lt;meta charset=&quot;utf-8&quot;&gt;
-5.   &lt;title&gt;Radial gradients with offset circles&lt;/title&gt;
-6.   &lt;style&gt;
-7.     #myCanvas1 {
-8.       border: 1px solid black;
-9.     }
-10.   &lt;/style&gt;
-11. &lt;/head&gt;
-12. &lt;body onload=&quot;init();&quot;&gt;
-13.   &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-14. &lt;/body&gt;
-15. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Radial gradients with offset circles&lt;/title&gt;
+  &lt;style&gt;
+    #myCanvas1 {
+      border: 1px solid black;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;init();&quot;&gt;
+  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -12611,14 +12597,13 @@ imageObj.onload = function(){ 
     the callback), we can finally draw</b>:</li>
 </ol>
 
-<pre>1. // callback called asynchronously, after the src attribute of imageObj is set
-2. imageObj.onload = function(){
-3.     pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
-4. 
-5.     // Draw a textured rectangle
-6.     ctx.fillStyle = pattern1;
-7.     ctx.fillRect(10, 10, 500, 800);
-8. };</pre>
+<pre>// callback called asynchronously, after the src attribute of imageObj is set
+imageObj.onload = function(){
+  pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
+  // Draw a textured rectangle
+  ctx.fillStyle = pattern1;
+  ctx.fillRect(10, 10, 500, 800);
+};</pre>
 
 <h4>Examples</h4>
 
@@ -12641,108 +12626,99 @@ second is “stroked” with a lineWidth of 20 pixels:</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. var canvas, ctx, pattern1;
-2. function init() {
-3.   canvas = document.querySelector(&#39;#myCanvas&#39;);
-4.   ctx = canvas.getContext(&#39;2d&#39;);
-5.   // We need 1) to create an empty image object, 2) to set a callback function
-6.   // that will be called when the image is fully loaded, 3) to create a
-7.   // pattern object, 4) to set the fillStyle or the strokeStyle property of
-8.   // the context with this pattern, 5) to draw something
-9.   // WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -&gt; draw from inside the
-10.   // onload callback only !
-11.   // Allocate an image
-12.   var imageObj = new Image();
-13.   // callback called asynchronously, after the src attribute of imageObj is set
-14.   imageObj.onload = function(){
-15.     // We enter here only when the image has been loaded by the browser
-16.     // Pattern creation using the image object
-17.     // Instead of &quot;repeat&quot;, try different values : repeat-x, repeat-y,
-18.     // or no-repeat, You may draw larger shapes in order to see
-19.     // different results
-20.     // It is a good practice to leave this as a global variable if it
-21.     // will be reused by other functions
-22.     pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
-23.     // Draw a textured rectangle
-24.     ctx.fillStyle = pattern1;
-25.     ctx.fillRect(10, 10, 200, 200);
-26.     // And a wireframe one
-27.     ctx.lineWidth=20;
-28.     ctx.strokeStyle=pattern1;
-29.     ctx.strokeRect(230, 20, 150, 100);
-30.   };
-31.   // This will tell the browser to send an asynchronous request.
-32.   // When the browser will get an answer, the callback above will be called
-33.   imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
-34. }</pre>
+<pre>var canvas, ctx, pattern1;
+function init() {
+  canvas = document.querySelector(&#39;#myCanvas&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  // We need 1) to create an empty image object, 2) to set a callback function
+  // that will be called when the image is fully loaded, 3) to create a
+  // pattern object, 4) to set the fillStyle or the strokeStyle property of
+  // the context with this pattern, 5) to draw something
+  // WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -&gt; draw from inside the
+  // onload callback only !
+  // Allocate an image
+  var imageObj = new Image();
+  // callback called asynchronously, after the src attribute of imageObj is set
+  imageObj.onload = function(){
+    // We enter here only when the image has been loaded by the browser
+    // Pattern creation using the image object
+    // Instead of &quot;repeat&quot;, try different values : repeat-x, repeat-y,
+    // or no-repeat, You may draw larger shapes in order to see
+    // different results
+    // It is a good practice to leave this as a global variable if it
+    // will be reused by other functions
+    pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
+    // Draw a textured rectangle
+    ctx.fillStyle = pattern1;
+    ctx.fillRect(10, 10, 200, 200);
+    // And a wireframe one
+    ctx.lineWidth=20;
+    ctx.strokeStyle=pattern1;
+    ctx.strokeRect(230, 20, 150, 100);
+  };
+  // This will tell the browser to send an asynchronous request.
+  // When the browser will get an answer, the callback above will be called
+  imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
+}</pre>
 
 </details>
 
 <h4>HTML</h4>
 
-<pre>1. &lt;!DOCTYPE html&gt;
-2. &lt;html lang=&quot;en&quot;&gt;
-3. &lt;head&gt;
-4.   &lt;meta charset=&quot;utf-8&quot;&gt;
-5.   &lt;title&gt;Drawing two rectangles with a pattern - Example #1&lt;/title&gt;
-6. &lt;/head&gt;
-7. &lt;body onload=&quot;init();&quot;&gt;
-8.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot; height=&quot;400&quot;&gt;
-9.     Your browser does not support the canvas tag. &lt;/canvas&gt;
-10. &lt;/body&gt;
-11. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Drawing two rectangles with a pattern - Example #1&lt;/title&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;init();&quot;&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot; height=&quot;400&quot;&gt;
+    Your browser does not support the canvas tag. &lt;/canvas&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 <h4>JavaScript source code:</h4>
 
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  var canvas, ctx, pattern1;
-2.   
-3.  function init() {
-4.     canvas = document.querySelector(&#39;#myCanvas&#39;);
-5.     ctx = canvas.getContext(&#39;2d&#39;);
-6.  
-7.     // We need 1) to create an empty image object, 2) to set a callback function
-8.     // that will be called when the image is fully loaded, 3) to create a
-9.     // pattern object, 4) to set the fillStyle or the strokeStyle property of
-10.    // the context with this pattern, 5) to draw something
-11.    // WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -&gt; draw from inside the
-12.    // onload callback only !
-13. 
-14. 
-15.    // 1 - Allocate an image
-16.    var imageObj = new Image();
-17.  
-18.    // 2 - callback called asynchronously, after the src attribute of imageObj
-19.    // is set
-20.    imageObj.onload = function(){
-21.       // We enter here only when the image has been loaded by the browser
-22.       // 4 - Pattern creation using the image object
-23.       // Instead of &quot;repeat&quot;, try different values : repeat-x, repeat-y,
-24.       // or no-repeat, You may draw larger shapes in order to see
-25.       // different results
-26.       // It is good practice to leave this as a global variable if it
-27.       // will be reused by other functions
-28. 
-29.       pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
-30. 
-31.       // 5 - Draw things. Here a textured rectangle
-32.       ctx.fillStyle = pattern1;
-33.       ctx.fillRect(10, 10, 200, 200);
-34. 
-35.       // ... And a wireframe one
-36.       ctx.lineWidth=20;
-37.       ctx.strokeStyle=pattern1;
-38.       ctx.strokeRect(230, 20, 150, 100);
-39.   };
-40. 
-41.   // 3 - Send the request to load the image
-42.   // Setting the src attribute will tell the browser to send an asynchronous
-43.   // request.
-44.   // When the browser gets an answer, the callback above will be called
-45.   imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
-46. }</pre>
+<pre>var canvas, ctx, pattern1;
+function init() {
+  canvas = document.querySelector(&#39;#myCanvas&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  // We need 1) to create an empty image object, 2) to set a callback function
+  // that will be called when the image is fully loaded, 3) to create a
+  // pattern object, 4) to set the fillStyle or the strokeStyle property of
+  // the context with this pattern, 5) to draw something
+  // WE CANNOT DRAW UNTIL THE IMAGE IS FULLY LOADED -&gt; draw from inside the
+  // onload callback only !
+  // 1 - Allocate an image
+var imageObj = new Image();
+  // 2 - callback called asynchronously, after the src attribute of imageObj
+  // is set
+  imageObj.onload = function(){
+      // We enter here only when the image has been loaded by the browser
+      // 4 - Pattern creation using the image object
+      // Instead of &quot;repeat&quot;, try different values : repeat-x, repeat-y,
+      // or no-repeat, You may draw larger shapes in order to see
+      // different results
+      // It is good practice to leave this as a global variable if it
+      // will be reused by other functions
+      pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);
+      // 5 - Draw things. Here a textured rectangle
+      ctx.fillStyle = pattern1;
+      ctx.fillRect(10, 10, 200, 200);
+      // ... And a wireframe one
+      ctx.lineWidth=20;
+      ctx.strokeStyle=pattern1;
+      ctx.strokeRect(230, 20, 150, 100);
+  };
+  // 3 - Send the request to load the image
+  // Setting the src attribute will tell the browser to send an asynchronous
+  // request.
+  // When the browser gets an answer, the callback above will be called
+  imageObj.src = &quot;https://mainline.i3s.unice.fr/mooc/pattern1.jpg&quot;;
+}</pre>
 
 </details>
 
@@ -12802,22 +12778,22 @@ second is “stroked” with a lineWidth of 20 pixels:</p>
 
 <h4>HTML:</h4>
 
-<pre>1. &lt;!DOCTYPE html&gt;
-2. &lt;html lang=&quot;en&quot;&gt;
-3. &lt;head&gt;
-4.   &lt;meta charset=&quot;utf-8&quot;&gt;
-5.   &lt;title&gt;Repeatability of a pattern - Example #2&lt;/title&gt;
-6. &lt;/head&gt;
-7. &lt;body onload=&quot;init();&quot;&gt;
-8.   &lt;canvas id=&quot;myCanvas&quot; width=&quot;1000&quot; height=&quot;1000&quot;&gt;
-9.     Your browser does not support the canvas tag. &lt;/canvas&gt;
-10. &lt;/body&gt;
-11. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Repeatability of a pattern - Example #2&lt;/title&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;init();&quot;&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;1000&quot; height=&quot;1000&quot;&gt;
+  Your browser does not support the canvas tag. &lt;/canvas&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 <h4>You can change the way the pattern is repeated by modifying the second 
 parameter of this method:</h4>
 
-<pre>1.  pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);</pre>
+<pre>pattern1 = ctx.createPattern(imageObj, &quot;repeat&quot;);</pre>
 
 <p>Please try: repeat-x, repeat-y or no-repeat as acceptable values. Just change 
 this line in the online example and you will see live results.</p>
@@ -12954,16 +12930,16 @@ beginning of this page is the following:</p>
 
 <h4>Define the list of images to be loaded:</h4>
 
-<pre>1.  // List of images to load, we used a JavaScript object instead of
-2.  // an array, so that named indexes (aka properties)
-3.  // can be used -&gt; easier to read
-4.  var imagesToLoad = {
-5.       flowers: https://i.ibb.co/4NN9Sgn/flowers.jpg,
-6.       lion: https://i.ibb.co/3NyqKnY/lion.jpg,
-7.       blackAndWhiteLys: https://i.ibb.co/VNLVpcL/final.jpg,
-8.       tiledFloor:
-9.        https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg
-10. };</pre>
+<pre>// List of images to load, we used a JavaScript object instead of
+// an array, so that named indexes (aka properties)
+// can be used -&gt; easier to read
+var imagesToLoad = {
+  flowers: https://i.ibb.co/4NN9Sgn/flowers.jpg,
+  lion: https://i.ibb.co/3NyqKnY/lion.jpg,
+  blackAndWhiteLys: https://i.ibb.co/VNLVpcL/final.jpg,
+  tiledFloor:
+  https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg
+};</pre>
 
 <p>Notice that instead of using a traditional array, we defined this list
 as a JavaScript object, with properties whose names will be easier to
@@ -13008,14 +12984,14 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 
 <h4>Example of use of this loader</h4>
 
-<pre>1.  loadImages(imagesToLoad, function(imagesLoaded) {
-2.      patternFlowers = ctx.createPattern(imagesLoaded.flowers, &#39;repeat&#39;);
-3.      patternLion    = ctx.createPattern(imagesLoaded.lion, &#39;repeat&#39;);
-4.      patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, &#39;repeat&#39;);
-5.      patternFloor   = ctx.createPattern(imagesLoaded.tiledFloor, &#39;repeat&#39;);
-6.  
-7.      drawRectanglesWithPatterns();
-8.  });</pre>
+<pre>
+loadImages(imagesToLoad, function(imagesLoaded) {
+  patternFlowers = ctx.createPattern(imagesLoaded.flowers, &#39;repeat&#39;);
+  patternLion = ctx.createPattern(imagesLoaded.lion, &#39;repeat&#39;);
+  patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, &#39;repeat&#39;);
+  patternFloor = ctx.createPattern(imagesLoaded.tiledFloor, &#39;repeat&#39;);
+  drawRectanglesWithPatterns();
+});</pre>
 
 <h4>Explanations:</h4>
 
@@ -14303,33 +14279,28 @@ Notice that an id is used for stopping an animation with cancelAnimationFrame
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  function animationLoop(timeStamp) {
-2.    // 1 - Clear
-3.    ctx.clearRect(0, 0, canvas.width, canvas.height);
-4.   
-5.    // 2 - Draw
-6.    drawMonster(monsterX, monsterY, monsterAngle, &#39;green&#39;, &#39;yellow&#39;);
-7.   
-8.    // 3 - Move
-9.    monsterX += 10;
-10.   monsterX %= canvas.width
-11.   monsterAngle+= 0.01;
-12.  
-13.   // call mainloop again after 16.6 ms (60 frames/s)
-14.   requestId = requestAnimationFrame(animationLoop);
-15. }
-16. 
-17. function start() {
-18.   // Start the animation loop, targets 60 frames/s, this
-19.   // calls animationLoop only ONCE!
-20.   requestId = requestAnimationFrame(animationLoop);
-21. }
-22. 
-23. function stop() {
-24.   if (requestId) {
-25.     cancelAnimationFrame(requestId);
-26.   }
-27. }</pre>
+<pre>function animationLoop(timeStamp) {
+  // 1 - Clear
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  // 2 - Draw
+  drawMonster(monsterX, monsterY, monsterAngle, &#39;green&#39;, &#39;yellow&#39;);
+  // 3 - Move
+  monsterX += 10;
+  monsterX %= canvas.width
+  monsterAngle+= 0.01;
+  // call mainloop again after 16.6 ms (60 frames/s)
+  requestId = requestAnimationFrame(animationLoop);
+}
+function start() {
+  // Start the animation loop, targets 60 frames/s, this
+  // calls animationLoop only ONCE!
+  requestId = requestAnimationFrame(animationLoop);
+}
+function stop() {
+  if (requestId) {
+    cancelAnimationFrame(requestId);
+  }
+}</pre>
 
 </details>
 
@@ -14388,9 +14359,9 @@ JavaScript API</i> to create <i>event handlers</i>.</p>
 
 <p>You will often find this in examples on the Web:</p>
 
-<pre>1.  &lt;div id=&quot;someDiv&quot; onclick=&quot;alert(&#39;clicked!&#39;);&quot;&gt;
-2.    content of the div
-3.  &lt;/div&gt;</pre>
+<pre>&lt;div id=&quot;someDiv&quot; onclick=&quot;alert(&#39;clicked!&#39;);&quot;&gt;
+  content of the div
+&lt;/div&gt;</pre>
 
 <p>Note: this is not the recommended way to handle events, even if it’s
 very easy to use. Mixing the ‘visual layer’ (HTML) and the ‘logic layer’
@@ -14402,9 +14373,9 @@ scale applications where a clean separation is best.</p>
 
 <h4>Here is an example:</h4>
 
-<pre>1.  document.getElementById(&#39;someDiv&#39;).onclick = function(evt) {
-2.    alert(&#39;clicked!&#39;);
-3.  }</pre>
+<pre>document.getElementById(&#39;someDiv&#39;).onclick = function(evt) {
+  alert(&#39;clicked!&#39;);
+}</pre>
 
 <p>This method is fine, but  you will not be able to attach several
 listener functions. If you need to do this, the preferred version is the
@@ -15367,52 +15338,51 @@ the rotation stops:</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. var canvas, ctx;
-2. var monsterX=100, monsterY=100, monsterAngle=0;
-3. var incrementX = 0;
-4. var incrementAngle =0;
-5. var mousePos;
-6. 
-7. function init() {
-8.   ...
-9.   // 3bis - Add mouse listeners
-10.   canvas.addEventListener(&#39;mousemove&#39;, handleMousemove, false);
-11.   canvas.addEventListener(&#39;mousedown&#39;, handleMousedown, false);
-12.   canvas.addEventListener(&#39;mouseup&#39;, handleMouseup, false);
-13.   // 4 - Start the animation
-14.   requestId = requestAnimationFrame(animationLoop);
-15. }
-16. function handleMousemove(evt) {
-17.   // The mousePos will be taken into account in the animationLoop
-18.   mousePos = getMousePos(canvas, evt);
-19. }
-20. function handleMousedown(evt) {
-21.   // the increment on the angle will be
-22.   // taken into account in the animationLoop
-23.   incrementAngle = 0.1;
-24. }
-25. function handleMouseup(evt) {
-26.   incrementAngle = 0;  // stops the rotation
-27. }
-28. function getMousePos(canvas, evt) {
-29.   ... // same as before
-30. }
-31. ...
-32. function animationLoop() {
-33.   // 1 - Clear
-34.   ctx.clearRect(0, 0, canvas.width, canvas.height);
-35.   // 2 - Draw
-36.   drawMonster(monsterX, monsterY, monsterAngle, &#39;green&#39;, &#39;yellow&#39;);
-37.   // 3 - Move
-38.   if(mousePos !== undefined) { // test necessary, maybe the mouse is not yet on canvas
-39.     monsterX = mousePos.x;
-40.     monsterY = mousePos.y;
-41.     monsterAngle += incrementAngle;
-42.   }
-43.   ...
-44.   // call again mainloop after 16.6 ms (60 frames/s)
-45.   requestId = requestAnimationFrame(animationLoop);
-46. }</pre>
+<pre>var canvas, ctx;
+var monsterX=100, monsterY=100, monsterAngle=0;
+var incrementX = 0;
+var incrementAngle =0;
+var mousePos;
+function init() {
+...
+  // 3bis - Add mouse listeners
+  canvas.addEventListener(&#39;mousemove&#39;, handleMousemove, false);
+  canvas.addEventListener(&#39;mousedown&#39;, handleMousedown, false);
+  canvas.addEventListener(&#39;mouseup&#39;, handleMouseup, false);
+  // 4 - Start the animation
+  requestId = requestAnimationFrame(animationLoop);
+}
+function handleMousemove(evt) {
+  // The mousePos will be taken into account in the animationLoop
+  mousePos = getMousePos(canvas, evt);
+}
+function handleMousedown(evt) {
+  // the increment on the angle will be
+  // taken into account in the animationLoop
+  incrementAngle = 0.1;
+}
+function handleMouseup(evt) {
+  incrementAngle = 0;  // stops the rotation
+}
+function getMousePos(canvas, evt) {
+  ... // same as before
+}
+...
+function animationLoop() {
+  // 1 - Clear
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  // 2 - Draw
+  drawMonster(monsterX, monsterY, monsterAngle, &#39;green&#39;, &#39;yellow&#39;);
+  // 3 - Move
+  if(mousePos !== undefined) { // test necessary, maybe the mouse is not yet on canvas
+    monsterX = mousePos.x;
+    monsterY = mousePos.y;
+    monsterAngle += incrementAngle;
+  }
+  ...
+  // call again mainloop after 16.6 ms (60 frames/s)
+  requestId = requestAnimationFrame(animationLoop);
+}</pre>
 
 </details>
 
@@ -15493,35 +15463,30 @@ test at <i>line 21</i>.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  function handleMouseMove(evt) {
-2.    var mousePos = getMousePos(canvas, evt);
-3.   
-4.    // Let&#39;s draw some lines that follow the mouse pos
-5.    if (painting) {
-6.      drawLineImmediate(previousMousePos.x, previousMousePos.y,
-7.                                mousePos.x,         mousePos.y);
-8.      previousMousePos = mousePos;
-9.    }
-10. }
-11. 
-12. function clicked(evt) {
-13.   previousMousePos = getMousePos(canvas, evt);
-14.   painting = true;
-15. }
-16.  
-17. function released(evt) {
-18.   painting = false;
-19. }
-20.  
-21. window.onload = function () {
-22.   canvas = document.getElementById(&#39;myCanvas&#39;);
-23.   ctx = canvas.getContext(&#39;2d&#39;);
-24.   painting = false;
-25.  
-26.   canvas.addEventListener(&#39;mousemove&#39;, handleMouseMove, false);
-27.   canvas.addEventListener(&#39;mousedown&#39;, clicked);
-28.   canvas.addEventListener(&#39;mouseup&#39;, released);
-29. };</pre>
+<pre>function handleMouseMove(evt) {
+  var mousePos = getMousePos(canvas, evt);
+  // Let&#39;s draw some lines that follow the mouse pos
+  if (painting) {
+    drawLineImmediate(previousMousePos.x, previousMousePos.y,
+    mousePos.x,         mousePos.y);
+    previousMousePos = mousePos;
+  }
+}
+function clicked(evt) {
+  previousMousePos = getMousePos(canvas, evt);
+  painting = true;
+}
+function released(evt) {
+  painting = false;
+}
+window.onload = function () {
+  canvas = document.getElementById(&#39;myCanvas&#39;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+  painting = false;
+  canvas.addEventListener(&#39;mousemove&#39;, handleMouseMove, false);
+  canvas.addEventListener(&#39;mousedown&#39;, clicked);
+  canvas.addEventListener(&#39;mouseup&#39;, released);
+};</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15558,17 +15523,17 @@ might not be easily guessed:</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;script&gt;
-2.    ...
-3.    function resizeCanvas() {
-4.      canvas.width = 300;
-5.    }
-6.   
-7.  &lt;/script&gt;
-8.  ...
-9.  &lt;button onclick=&quot;resizeCanvas();&quot;&gt;
-10.   Click this button to resize the canvas and erase it!
-11. &lt;/button&gt;</pre>
+<pre>&lt;script&gt;
+  ...
+  function resizeCanvas() {
+    canvas.width = 300;
+  }
+ 
+&lt;/script&gt;
+...
+&lt;button onclick=&quot;resizeCanvas();&quot;&gt;
+  Click this button to resize the canvas and erase it!
+&lt;/button&gt;</pre>
 
 </details>
 
@@ -15599,12 +15564,12 @@ diagonals.</p>
 
 <h4>It’s the same example as before, just adding this CSS code:</h4>
 
-<pre>1.  &lt;style&gt;
-2.    #myCanvas {
-3.      border: 1px solid black;
-4.        width:100%
-5.    }
-6.  &lt;/style&gt;</pre>
+<pre>&lt;style&gt;
+  #myCanvas {
+    border: 1px solid black;
+      width:100%
+  }
+&lt;/style&gt;</pre>
 
 <p>And the result shows clearly that the resolution is still the same,
 only the pixels are bigger!</p>
@@ -15637,9 +15602,9 @@ height!</i></b></p>
 
 <h4>HTML code:</h4>
 
-<pre>1.  &lt;div id=&quot;parentDiv&quot;&gt;
-2.    &lt;canvas id=&quot;myCanvas&quot; width=&quot;100&quot; height=&quot;100&quot; &gt;&lt;/canvas&gt;
-3.  &lt;/div&gt;</pre>
+<pre>&lt;div id=&quot;parentDiv&quot;&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;100&quot; height=&quot;100&quot; &gt;&lt;/canvas&gt;
+&lt;/div&gt;</pre>
 
 <h4>CSS code:</h4>
 
@@ -15716,28 +15681,25 @@ trick:</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  function drawMonster(x, y, angle, headColor, eyeColor) {
-2.    // GOOD PRACTICE: SAVE CONTEXT AND RESTORE IT AT THE END
-3.    ctx.save();
-4.  
-5.    // Moves the coordinate system so that the monster is drawn
-6.    // at position (x, y)
-7.    ctx.translate(x, y);
-8.    ctx.rotate(angle);
-9.  
-10.   // Adjust the scale of the monster (200x200) if the canvas
-11.   // is too small
-12.   if(canvas.width &lt; 200) {
-13.     var scaleX = canvas.width/200;
-14.     var scaleY = scaleX;
-15.   }
-16.   ctx.scale(scaleX, scaleY);
-17. 
-18.   // head
-19.   ctx.fillStyle=headColor;
-20.   ctx.fillRect(0,0,200,200);
-21.   ...
-22. }</pre>
+<pre>function drawMonster(x, y, angle, headColor, eyeColor) {
+  // GOOD PRACTICE: SAVE CONTEXT AND RESTORE IT AT THE END
+  ctx.save();
+  // Moves the coordinate system so that the monster is drawn
+  // at position (x, y)
+  ctx.translate(x, y);
+  ctx.rotate(angle);
+  // Adjust the scale of the monster (200x200) if the canvas
+  // is too small
+  if(canvas.width &lt; 200) {
+    var scaleX = canvas.width/200;
+    var scaleY = scaleX;
+  }
+  ctx.scale(scaleX, scaleY);
+  // head
+  ctx.fillStyle=headColor;
+  ctx.fillRect(0,0,200,200);
+  ...
+}</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16073,8 +16035,8 @@ the id of the form control. </p>
 
 <h4>Source code:</h4>
 
-<pre>1.  &lt;label for=&quot;first_name&quot;&gt;Your First Name&lt;/label&gt;
-2.  &lt;input id=&quot;first_name&quot; type=&quot;text&quot; name=&quot;fname&quot;/&gt;</pre>
+<pre>&lt;label for=&quot;first_name&quot;&gt;Your First Name&lt;/label&gt;
+&lt;input id=&quot;first_name&quot; type=&quot;text&quot; name=&quot;fname&quot;/&gt;</pre>
 
 <h4>Example #2</h4>
 
@@ -16100,11 +16062,10 @@ the id of the form control. </p>
 
 <h4>Source code:</h4>
 
-<pre>1. &lt;label for=&quot;firstname&quot;&gt;First name:&lt;/label&gt;
-2. &lt;input type=&quot;text&quot; name=&quot;firstname&quot; id=&quot;firstname&quot;&gt;&lt;br&gt;
-3. 
-4. &lt;label for=&quot;subscribe&quot;&gt;Subscribe to newsletter&lt;/label&gt;
-5. &lt;input type=&quot;checkbox&quot; name=&quot;subscribe&quot; id=&quot;subscribe&quot;&gt;</pre>
+<pre>&lt;label for=&quot;firstname&quot;&gt;First name:&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;firstname&quot; id=&quot;firstname&quot;&gt;&lt;br&gt;
+&lt;label for=&quot;subscribe&quot;&gt;Subscribe to newsletter&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;subscribe&quot; id=&quot;subscribe&quot;&gt;</pre>
 
 <h4>Labeling buttons</h4>
 
@@ -16119,10 +16080,10 @@ type=“submit” value=“Please submit”&gt;, renders a text button.</p>
 
 <h4>Source code for the “Submit” and “Cancel” buttons example:</h4>
 
-<pre>1. &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
-2. &lt;button type=&quot;button&quot;&gt;Cancel&lt;/button&gt;
-3. &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-4. &lt;input type=&quot;button&quot; value=&quot;Cancel&quot;&gt;</pre>
+<pre>&lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+&lt;button type=&quot;button&quot;&gt;Cancel&lt;/button&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot;Cancel&quot;&gt;</pre>
 
 <p>These give the same results:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16565,33 +16526,33 @@ date/time is chosen.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;&lt;head&gt;...&lt;/head&gt;
-3.  &lt;body&gt;
-4.    Testing the new date input field.&lt;p&gt;
-5.    Choose a date/time : &lt;input type=&quot;date&quot; id=&quot;date&quot; /&gt;&lt;/p&gt;
-6.    &lt;p&gt;
-7.      You picked: &lt;span id=&quot;pickedDate&quot;&gt;&lt;/span&gt;
-8.    &lt;/p&gt;
-9.    After you have tried the first example, change the value of the &quot;type&quot; attribute to:
-10.   &lt;ul&gt;
-11.     &lt;li&gt;datetime&lt;/li&gt;
-12.     &lt;li&gt;datetime-local&lt;/li&gt;
-13.     &lt;li&gt;time&lt;/li&gt;
-14.     &lt;li&gt;week&lt;/li&gt;
-15.     &lt;li&gt;month&lt;/li&gt;
-16.   &lt;/ul&gt;
-17.     And see the result.
-18.   &lt;script&gt;
-19.     var field = document.querySelector(&quot;#date&quot;);
-20.     var result = document.querySelector(&quot;#pickedDate&quot;);
-21.     field.oninput = function(evt) {
-22.       var date = this.value;
-23.       pickedDate.innerHTML = &quot;&lt;b&gt;&quot;+date+&quot;&lt;/b&gt;&quot;;
-24.     }
-25.   &lt;/script&gt;
-26. &lt;/body&gt;
-27. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;...&lt;/head&gt;
+&lt;body&gt;
+  Testing the new date input field.&lt;p&gt;
+  Choose a date/time : &lt;input type=&quot;date&quot; id=&quot;date&quot; /&gt;&lt;/p&gt;
+  &lt;p&gt;
+    You picked: &lt;span id=&quot;pickedDate&quot;&gt;&lt;/span&gt;
+  &lt;/p&gt;
+  After you have tried the first example, change the value of the &quot;type&quot; attribute to:
+  &lt;ul&gt;
+    &lt;li&gt;datetime&lt;/li&gt;
+    &lt;li&gt;datetime-local&lt;/li&gt;
+    &lt;li&gt;time&lt;/li&gt;
+    &lt;li&gt;week&lt;/li&gt;
+    &lt;li&gt;month&lt;/li&gt;
+  &lt;/ul&gt;
+    And see the result.
+  &lt;script&gt;
+    var field = document.querySelector(&quot;#date&quot;);
+    var result = document.querySelector(&quot;#pickedDate&quot;);
+    field.oninput = function(evt) {
+      var date = this.value;
+      pickedDate.innerHTML = &quot;&lt;b&gt;&quot;+date+&quot;&lt;/b&gt;&quot;;
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -16630,30 +16591,30 @@ we can get with var date = new Date();</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;body&gt;
-2.    &lt;label for=&quot;birthDate&quot;&gt;Enter your birth date: &lt;/label&gt;&lt;p&gt;
-3.    &lt;input type=&quot;date&quot; id=&quot;birthDate&quot; &gt;
-4.    &lt;p&gt;
-5.      You picked: &lt;span id=&quot;pickedDate&quot;&gt;&lt;/span&gt;&lt;p&gt;
-6.      &lt;span id=&quot;pastFuture&quot;&gt;&lt;/span&gt;
-7.    &lt;/p&gt;
-8.    &lt;script&gt;
-9.      var field = document.querySelector(&quot;#birthDate&quot;);
-10.     var result = document.querySelector(&quot;#pickedDate&quot;);
-11.     var pastFuture = document.querySelector(&quot;#pastFuture&quot;);
-12.     field.oninput = function(evt) {
-13.       var date = this.value;
-14.       pickedDate.innerHTML = &quot;&lt;b&gt;&quot;+date+&quot;&lt;/b&gt;&quot;;
-15.       if(date.valueAsDate &lt;= new Date()) {
-16.         pastFuture.style.color = &#39;green&#39;;
-17.         pastFuture.innerHTML = &quot;&lt;b&gt;Date in the past, ok!&lt;/b&gt;&quot;
-18.       } else {
-19.         pastFuture.style.color = &#39;red&#39;;
-20.         pastFuture.innerHTML = &quot;&lt;b&gt;Date in the future, you&#39;re not even born!&lt;/b&gt;&quot;
-21.       }
-22.     }
-23.   &lt;/script&gt;
-24. &lt;/body&gt;</pre>
+<pre>&lt;body&gt;
+  &lt;label for=&quot;birthDate&quot;&gt;Enter your birth date: &lt;/label&gt;&lt;p&gt;
+  &lt;input type=&quot;date&quot; id=&quot;birthDate&quot; &gt;
+  &lt;p&gt;
+    You picked: &lt;span id=&quot;pickedDate&quot;&gt;&lt;/span&gt;&lt;p&gt;
+    &lt;span id=&quot;pastFuture&quot;&gt;&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;script&gt;
+    var field = document.querySelector(&quot;#birthDate&quot;);
+    var result = document.querySelector(&quot;#pickedDate&quot;);
+    var pastFuture = document.querySelector(&quot;#pastFuture&quot;);
+    field.oninput = function(evt) {
+      var date = this.value;
+      pickedDate.innerHTML = &quot;&lt;b&gt;&quot;+date+&quot;&lt;/b&gt;&quot;;
+      if(date.valueAsDate &lt;= new Date()) {
+        pastFuture.style.color = &#39;green&#39;;
+        pastFuture.innerHTML = &quot;&lt;b&gt;Date in the past, ok!&lt;/b&gt;&quot;
+      } else {
+        pastFuture.style.color = &#39;red&#39;;
+        pastFuture.innerHTML = &quot;&lt;b&gt;Date in the future, you&#39;re not even born!&lt;/b&gt;&quot;
+      }
+    }
+  &lt;/script&gt;
+&lt;/body&gt;</pre>
 
 </details>
 
@@ -16802,22 +16763,22 @@ target="_blank" rel="noopener noreferrer">CodePen example; enter your email</a>.
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.    &lt;meta charset=&quot;utf-8&quot;&gt;
-5.    &lt;title&gt;Example of input type=email&lt;/title&gt;
-6.    &lt;style&gt;
-7.      input:invalid {
-8.        background-color:pink;
-9.      }
-10.   &lt;/style&gt;
-11. &lt;/head&gt;
-12. &lt;body&gt;
-13.   &lt;label for=&quot;email&quot;&gt;Enter your email &lt;/label&gt;
-14.   &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
-15. &lt;/body&gt;
-16. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of input type=email&lt;/title&gt;
+  &lt;style&gt;
+    input:invalid {
+      background-color:pink;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;label for=&quot;email&quot;&gt;Enter your email &lt;/label&gt;
+  &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -16874,24 +16835,24 @@ color when the input value is invalid):</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.    &lt;meta charset=&quot;utf-8&quot;&gt;
-5.    &lt;title&gt;Example of input type=tel&lt;/title&gt;
-6.    &lt;style&gt;
-7.      input:invalid {
-8.        background-color:pink;
-9.      }
-10.   &lt;/style&gt;
-11. &lt;/head&gt;
-12. &lt;body&gt;
-13.   &lt;label for=&quot;tel&quot;&gt;Enter a telephone number:&lt;/label&gt;
-14.   &lt;input type=&quot;tel&quot; id=&quot;tel&quot;
-15.   placeholder=&quot;(555) 555-5555&quot;
-16.   pattern=&quot;(?d{3})?[-s]d{3}[-s]d{4}.*?)&quot;/&gt;
-17. &lt;/body&gt;
-18. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of input type=tel&lt;/title&gt;
+  &lt;style&gt;
+    input:invalid {
+      background-color:pink;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;label for=&quot;tel&quot;&gt;Enter a telephone number:&lt;/label&gt;
+  &lt;input type=&quot;tel&quot; id=&quot;tel&quot;
+  placeholder=&quot;(555) 555-5555&quot;
+  pattern=&quot;(?d{3})?[-s]d{3}[-s]d{4}.*?)&quot;/&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -16922,26 +16883,26 @@ Enter a URL (custom validation, must start with http, https or ftp):</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head &gt;
-4.    &lt;meta charset=&quot;utf-8&quot;&gt;
-5.    &lt;title&gt;Example of input type=url&lt;/title&gt;
-6.    &lt;style&gt;
-7.      input:invalid {
-8.        background-color: lightPink;
-9.      }
-10.   &lt;/style&gt;
-11. &lt;/head&gt;
-12. &lt;body&gt;
-13.   &lt;label for=&quot;url1&quot;&gt;Enter a URL (default validation):&lt;/label&gt;
-14.   &lt;input type=&quot;url&quot; id=&quot;url1&quot;/&gt;
-15.   &lt;p&gt;
-16.   &lt;label for=&quot;url2&quot;&gt;Enter a URL (custom validation, must start with http, https or ftp):&lt;/label&gt;
-17.   &lt;input id=&quot;url2&quot; type=&quot;url&quot; placeholder=&quot;https://www.domain.com&quot;
-18.   pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]*&quot;/&gt;&lt;p&gt;
-19. &lt;/body&gt;
-20. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head &gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of input type=url&lt;/title&gt;
+  &lt;style&gt;
+    input:invalid {
+      background-color: lightPink;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;label for=&quot;url1&quot;&gt;Enter a URL (default validation):&lt;/label&gt;
+  &lt;input type=&quot;url&quot; id=&quot;url1&quot;/&gt;
+  &lt;p&gt;
+  &lt;label for=&quot;url2&quot;&gt;Enter a URL (custom validation, must start with http, https or ftp):&lt;/label&gt;
+  &lt;input id=&quot;url2&quot; type=&quot;url&quot; placeholder=&quot;https://www.domain.com&quot;
+  pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]*&quot;/&gt;&lt;p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -17013,25 +16974,25 @@ attribute results=5 shows a small icon on the left:</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1. &lt;!DOCTYPE html&gt;
-2. &lt;html&gt;
-3.   &lt;head&gt;
-4.   &lt;meta charset=&quot;utf-8&quot;&gt;
-5.     &lt;title&gt;Example of input type=email&lt;/title&gt;
-6.     &lt;style&gt;
-7.        input:? {
-8.        background-color:pink;
-9.        }
-10.        input:?? {
-11.        background-color:lightGreen;
-12.        }
-13.     &lt;/style&gt;
-14.   &lt;/head&gt;
-15.   &lt;body&gt;
-16.     &lt;label for=&quot;email&quot;&gt;Enter your email:&lt;/label&gt;
-17.     &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
-18.   &lt;/body&gt;
-19. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Example of input type=email&lt;/title&gt;
+    &lt;style&gt;
+      input:? {
+        background-color:pink;
+      }
+      input:?? {
+        background-color:lightGreen;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;label for=&quot;email&quot;&gt;Enter your email:&lt;/label&gt;
+    &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17128,29 +17089,28 @@ invalid):</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.    ....
-3.    &lt;style&gt;
-4.      #number:invalid {
-5.        background-color:pink;
-6.      }
-7.      #number:valid {
-8.        background-color:lightGreen;
-9.      }
-10.   &lt;/style&gt;
-11. &lt;/head&gt;
-12. &lt;body&gt;
-13.   Example of &lt;code&gt;&lt;input type=number&gt;&lt;/code&gt;:&lt;p&gt;
-14.   &lt;label for=&quot;number&quot;&gt;Quantity (between 0 and 500, should be a multiple of 5 
-      otherwise it&#39;s invalid): &lt;/label&gt;
-15.
-      &lt;input type=&quot;number&quot; id=&quot;number&quot; value=&quot;25&quot; 
-        min=&quot;0&quot; step=&quot;5&quot; max=&quot;500&quot;/&gt;
-16.   &lt;p&gt;
-17.     Change the different values for attributes step, max, min, value. Don&#39;t forget to try step=&quot;any&quot; 
-          for float values...
-18. &lt;/body&gt;
-19. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+  ....
+  &lt;style&gt;
+    #number:invalid {
+      background-color:pink;
+    }
+    #number:valid {
+      background-color:lightGreen;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Example of &lt;code&gt;&lt;input type=number&gt;&lt;/code&gt;:&lt;p&gt;
+  &lt;label for=&quot;number&quot;&gt;Quantity (between 0 and 500, should be a multiple of 5 
+  otherwise it&#39;s invalid): &lt;/label&gt;
+    &lt;input type=&quot;number&quot; id=&quot;number&quot; value=&quot;25&quot; 
+      min=&quot;0&quot; step=&quot;5&quot; max=&quot;500&quot;/&gt;
+  &lt;p&gt;
+    Change the different values for attributes step, max, min, value. Don&#39;t forget to try step=&quot;any&quot; 
+      for float values...
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17221,41 +17181,41 @@ up and down arrow keys when the field has the focus):</h4>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;
-4.    &lt;meta charset=&quot;utf-8&quot;&gt;
-5.    &lt;title&gt;Example of input type=tel&lt;/title&gt;
-6.    &lt;style&gt;
-7.      #rangeValue1 {
-8.        border:1px solid black;
-9.        padding:2px;
-10.     }
-11.   &lt;/style&gt;
-12.   &lt;script&gt;
-13.     window.onload = function() {
-14.       // Called when the page is loaded, for displaying initial value in the output
-15.       printValue(&#39;slider1&#39;,&#39;rangeValue1&#39;);
-16.     }
-17.     function printValue(sliderId, outputId) {
-18.       var x = document.getElementById(outputId);
-19.       var y = document.getElementById(sliderId);
-20.       x.value = y.value;
-21.     }
-22.   &lt;/script&gt;
-23. &lt;/head&gt;
-24. &lt;body&gt;
-25.   &lt;form &gt;
-26.     &lt;label for=&quot;slider1&quot;&gt;Select a value:&lt;/label&gt;
-27.     &lt;input id=&quot;slider1&quot; type=&quot;range&quot;
-28.     min=&quot;100&quot; max=&quot;500&quot; step=&quot;10&quot; value=&quot;150&quot;
-29.     oninput=&quot;printValue(&#39;slider1&#39;,&#39;rangeValue1&#39;)&quot;/&gt;
-30.     &lt;output id=&quot;rangeValue1&quot;&gt;&lt;/output&gt;
-31.   &lt;/form&gt;
-32.   &lt;br/&gt;
-33.   Play with attributes: value, min, max, step...
-34. &lt;/body&gt;
-35. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of input type=tel&lt;/title&gt;
+  &lt;style&gt;
+    #rangeValue1 {
+      border:1px solid black;
+      padding:2px;
+    }
+  &lt;/style&gt;
+  &lt;script&gt;
+    window.onload = function() {
+      // Called when the page is loaded, for displaying initial value in the output
+      printValue(&#39;slider1&#39;,&#39;rangeValue1&#39;);
+    }
+    function printValue(sliderId, outputId) {
+      var x = document.getElementById(outputId);
+      var y = document.getElementById(sliderId);
+      x.value = y.value;
+    }
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;form &gt;
+    &lt;label for=&quot;slider1&quot;&gt;Select a value:&lt;/label&gt;
+    &lt;input id=&quot;slider1&quot; type=&quot;range&quot;
+    min=&quot;100&quot; max=&quot;500&quot; step=&quot;10&quot; value=&quot;150&quot;
+    oninput=&quot;printValue(&#39;slider1&#39;,&#39;rangeValue1&#39;)&quot;/&gt;
+    &lt;output id=&quot;rangeValue1&quot;&gt;&lt;/output&gt;
+  &lt;/form&gt;
+  &lt;br/&gt;
+  Play with attributes: value, min, max, step...
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -17312,18 +17272,18 @@ the range slider, at given positions.</h4>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;label for=&quot;slider2&quot;&gt;value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:&lt;/label&gt;
-2.  &lt;input id=&quot;slider2&quot; type=&quot;range&quot;
-3.  list=&quot;ticks2&quot;
-4.  min=&quot;0&quot; max=&quot;10&quot; step=&quot;1&quot; value=&quot;5&quot;/&gt;
-5.  &lt;datalist id=ticks2&gt;
-6.    &lt;option&gt;0&lt;/option&gt;
-7.    &lt;option&gt;2&lt;/option&gt;
-8.    &lt;option&gt;4&lt;/option&gt;
-9.    &lt;option&gt;6&lt;/option&gt;
-10.   &lt;option&gt;8&lt;/option&gt;
-1&lt;option&gt;10&lt;/option&gt;
-12. &lt;/datalist&gt;</pre>
+<pre>&lt;label for=&quot;slider2&quot;&gt;value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:&lt;/label&gt;
+&lt;input id=&quot;slider2&quot; type=&quot;range&quot;
+  list=&quot;ticks2&quot;
+  min=&quot;0&quot; max=&quot;10&quot; step=&quot;1&quot; value=&quot;5&quot;/&gt;
+&lt;datalist id=ticks2&gt;
+  &lt;option&gt;0&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+  &lt;option&gt;6&lt;/option&gt;
+  &lt;option&gt;8&lt;/option&gt;
+  &lt;option&gt;10&lt;/option&gt;
+&lt;/datalist&gt;</pre>
 
 </details>
 
@@ -17497,30 +17457,28 @@ target="_blank" rel="noopener noreferrer">CodePen example; HTML5 form attributes
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.    &lt;head&gt;
-4.      &lt;meta charset=&quot;utf-8&quot;&gt;
-5.      &lt;title&gt;Example of input type=tel&lt;/title&gt;
-6.   
-7.    &lt;/head&gt;
-8.    &lt;body&gt;
-9.      &lt;label for=&quot;yourName&quot;&gt;Enter your name:&lt;/label&gt;
-10.     &lt;input type=&quot;text&quot; id=&quot;yourName&quot; name=&quot;yourName&quot; form=&quot;form1&quot;/&gt;
-11.     &lt;p&gt;
-12.     &lt;form id=&quot;form1&quot; action=&quot;sumit.php&quot; method=&quot;post&quot;&gt;
-13.       &lt;fieldset&gt;
-14.         &lt;legend&gt;Choose option&lt;/legend&gt;
-15.         &lt;label for=&quot;free&quot;&gt;Free registering&lt;/label&gt;
-16.         &lt;input type=&quot;checkbox&quot; id=&quot;free&quot;/&gt;
-17.         &lt;label for=&quot;premium&quot;&gt;Premium&lt;/label&gt;
-18.         &lt;input type=&quot;checkbox&quot; id=&quot;premium&quot;/&gt;
-19. 
-20.         &lt;button type=&quot;submit&quot;&gt;Send form&lt;/button&gt;
-21.       &lt;/fieldset&gt;
-22.     &lt;/form&gt;
-23.   &lt;/body&gt;
-24. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Example of input type=tel&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;label for=&quot;yourName&quot;&gt;Enter your name:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;yourName&quot; name=&quot;yourName&quot; form=&quot;form1&quot;/&gt;
+    &lt;p&gt;
+    &lt;form id=&quot;form1&quot; action=&quot;sumit.php&quot; method=&quot;post&quot;&gt;
+      &lt;fieldset&gt;
+        &lt;legend&gt;Choose option&lt;/legend&gt;
+        &lt;label for=&quot;free&quot;&gt;Free registering&lt;/label&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;free&quot;/&gt;
+        &lt;label for=&quot;premium&quot;&gt;Premium&lt;/label&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;premium&quot;/&gt;
+        &lt;button type=&quot;submit&quot;&gt;Send form&lt;/button&gt;
+      &lt;/fieldset&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -17581,19 +17539,19 @@ browsers, and will need to be adjusted in the preferences/settings.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;form submit=&quot;test.php&quot; method=&quot;post&quot; autocomplete=&quot;on&quot;&gt;
-2.    ...
-3.    &lt;label for=&quot;address&quot;&gt;Enter your address (autocomplete off, overrides the
-4.      form&#39;s autocomplete=on attribute):&lt;/label&gt;
-5.    &lt;input type=&quot;text&quot; id=&quot;address&quot; autocomplete=&quot;off&quot;&gt;
-6.    &lt;p&gt;
-7.    &lt;label for=&quot;address1&quot;&gt;Enter your address (autocomplete on by inheritance of
-8.      the form&#39;s autocomplete=on attribute):&lt;/label&gt;
-9.    &lt;input type=&quot;text&quot; id=&quot;address1&quot;&gt;
-10.   &lt;p&gt;
-11.   &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
-12.   ...
-13. &lt;/form&gt;</pre>
+<pre>&lt;form submit=&quot;test.php&quot; method=&quot;post&quot; autocomplete=&quot;on&quot;&gt;
+  ...
+  &lt;label for=&quot;address&quot;&gt;Enter your address (autocomplete off, overrides the
+    form&#39;s autocomplete=on attribute):&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;address&quot; autocomplete=&quot;off&quot;&gt;
+  &lt;p&gt;
+  &lt;label for=&quot;address1&quot;&gt;Enter your address (autocomplete on by inheritance of
+    the form&#39;s autocomplete=on attribute):&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;address1&quot;&gt;
+  &lt;p&gt;
+  &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+  ...
+&lt;/form&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -17627,18 +17585,18 @@ the use of  required, placeholder and pattern attributes.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;form&gt;
-2.    ...
-3.    &lt;input type=&quot;text&quot; id=&quot;test&quot;/&gt;&lt;p&gt;
-4.    ...
-5.    &lt;input id=&quot;name&quot; name=&quot;inputName&quot;
-6.      placeholder=&quot;6 to 9 chars please...&quot;
-7.      pattern=&quot;w{6,9}&quot;
-8.      required
-9.      autofocus
-10.     type=&quot;text&quot;/&gt;
-11.   ...
-12. &lt;/form&gt;</pre>
+<pre>&lt;form&gt;
+  ...
+  &lt;input type=&quot;text&quot; id=&quot;test&quot;/&gt;&lt;p&gt;
+  ...
+  &lt;input id=&quot;name&quot; name=&quot;inputName&quot;
+    placeholder=&quot;6 to 9 chars please...&quot;
+    pattern=&quot;w{6,9}&quot;
+    required
+    autofocus
+    type=&quot;text&quot;/&gt;
+  ...
+&lt;/form&gt;</pre>
 
 </details>
 
@@ -17653,30 +17611,28 @@ the use of  required, placeholder and pattern attributes.</p>
 <details>
   <summary><b>Click to expand!</b></summary>
 
-<pre>1.  &lt;!DOCTYPE html&gt;
-2.  &lt;html lang=&quot;en&quot;&gt;
-3.  &lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
-4.  &lt;title&gt;Example for a knowledge check&lt;/title&gt;
-5.  &lt;/head&gt;
-6.  &lt;body&gt;
-7.  &lt;form&gt;
-8.     &lt;label for=&quot;studentID&quot;&gt;Student ID (disabled field, cannot type in it): &lt;/label&gt;
-9.     &lt;input type=&quot;text&quot; value=&quot;S134356&quot; id=&quot;studentID&quot; disabled/&gt;&lt;p&gt;
-10. 
-11.    &lt;label for=&quot;name&quot;&gt;First name: &lt;/label&gt;
-12.    &lt;input type=&quot;text&quot; id=&quot;firstName&quot;
-13.           placeholder=&quot;John&quot;
-14.           autofocus
-15.    /&gt;
-16. 
-17.    &lt;label for=&quot;lastName&quot;&gt;Last name: &lt;/label&gt;
-18.    &lt;input type=&quot;text&quot; id=&quot;lastName&quot;
-19.           placeholder=&quot;Smith&quot;
-20.           autofocus
-21.    /&gt;
-22. &lt;/form&gt;
-23. &lt;/body&gt;
-24. &lt;/html&gt;</pre>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example for a knowledge check&lt;/title&gt;
+  &lt;/head&gt;
+&lt;body&gt;
+  &lt;form&gt;
+    &lt;label for=&quot;studentID&quot;&gt;Student ID (disabled field, cannot type in it): &lt;/label&gt;
+    &lt;input type=&quot;text&quot; value=&quot;S134356&quot; id=&quot;studentID&quot; disabled/&gt;&lt;p&gt;
+    &lt;label for=&quot;name&quot;&gt;First name: &lt;/label&gt;
+      &lt;input type=&quot;text&quot; id=&quot;firstName&quot;
+      placeholder=&quot;John&quot;
+      autofocus
+    /&gt;
+    &lt;label for=&quot;lastName&quot;&gt;Last name: &lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;lastName&quot;
+      placeholder=&quot;Smith&quot;
+      autofocus
+    /&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
