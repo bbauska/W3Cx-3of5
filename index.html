@@ -3198,9 +3198,7 @@ person’s address:</p>
 
 <pre>...
 &lt;/dl&gt;
- 
 &lt;!-- SURFACE ADDRESS GOES HERE --&gt;
-  
 &lt;dd [itemprop=]&quot;address&quot;[ itemscope]
   itemtype=&quot;https://schema.org/PostalAddress&quot;&gt;
     &lt;span [itemprop=]&quot;streetAddress&quot;&gt;10 promenade des anglais&lt;/span&gt;&lt;br&gt;
@@ -3212,9 +3210,7 @@ person’s address:</p>
     &lt;span [itemprop=]&quot;name&quot;&gt;France&lt;/span&gt;
   &lt;/span&gt;
 &lt;/dd&gt;
- 
 &lt;h1&gt;My different online public accounts&lt;/h1&gt;
- 
 ...</pre>
 
 </details>
@@ -3394,9 +3390,9 @@ This element can be of different types that we will describe later, but
 for now let us keep looking at the same example we used in previous
 sections:</p>
 
-<pre>  &lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
+<pre>&lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
   ...
-  &lt;/section&gt;</pre>
+&lt;/section&gt;</pre>
 
 <p>We will look at the itemtype attribute later. Now that we have defined a global 
 wrapper object/element (a Person in this case), we can add properties inside this 
@@ -3781,7 +3777,8 @@ with some HTML code that you can copy and paste for embedding.</p>
 
 <h4>Here is the HTML code you need to copy and paste in order to embed avideo:</h4>
 
-<pre>  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/WMFXg-kni0U&quot; title=&quot;YouTube video player&quot;
+<pre>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; 
+  src=&quot;https://www.youtube.com/embed/WMFXg-kni0U&quot; title=&quot;YouTube video player&quot;
   frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
   picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
 
@@ -3856,26 +3853,26 @@ target="_blank" rel="noopener noreferrer">online example from JSBin</a>):</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre> &lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
   &lt;html lang=&quot;en&quot;&gt;
-    &lt;head&gt;
-      &lt;meta charset=&quot;utf-8&quot;/&gt;
-      &lt;title&gt;horse song&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;audio controls=&quot;controls&quot;&gt;
-        &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot; 
-          type=&quot;audio/ogg&quot; /&gt;
-        &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot; 
-          type=&quot;audio/mp3&quot; /&gt;
-        Your browser does not support the audio element.
-        Download the audio/video in
-        &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;&gt;OGG&lt;/a&gt;
-        or &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;&gt;MP3&lt;/a&gt;
-          format.
-      &lt;/audio&gt;
-    &lt;/body&gt;
-  &lt;/html&gt;</pre>
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;
+    &lt;title&gt;horse song&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;audio controls=&quot;controls&quot;&gt;
+      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot; 
+        type=&quot;audio/ogg&quot; /&gt;
+      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot; 
+        type=&quot;audio/mp3&quot; /&gt;
+      Your browser does not support the audio element.
+      Download the audio/video in
+      &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;&gt;OGG&lt;/a&gt;
+      or &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;&gt;MP3&lt;/a&gt;
+        format.
+    &lt;/audio&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -4038,8 +4035,7 @@ from the previous example.</p>
 <details>
   <summary><b>HTML source code:</b></summary>
   
-<pre>
-&lt;figure id=&quot;figaudio1&quot;&gt;
+<pre>&lt;figure id=&quot;figaudio1&quot;&gt;
   &lt;img id=&quot;imghorse&quot; width=&quot;200&quot;
     src=&quot;https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg&quot;
     alt = &quot;a horse&quot;/&gt;
@@ -4315,11 +4311,11 @@ article by Dudley Storey</a>.</p>
 <details>
   <summary><b>CSS source code:</b></summary>
 
-<pre>html, body{
+<pre>html, body {
   color:white;
   height: 100%;
 }
-header{
+header {
   height: 100%;
   background-image: url(&#39;https://mainline.i3s.unice.fr/mooc/dots.png&#39;), url(&#39;#&#39;);
   background-repeat: repeat, no-repeat;
@@ -5132,71 +5128,49 @@ target="_blank" rel="noopener noreferrer">sintel-captions.vtt</a> file:</p>
   <summary><b>Click to expand!</b></summary>
 
 <pre>WEBVTT
- 
 00:00:01.000 --&gt; 00:00:02.042
 (drumbeat)
- 
 00:00:07.167 --&gt; 00:00:12.025
 (plaintive violin solo playing)
-
 00:00:15.000 --&gt; 00:00:18.183
 (wind whistling)
-
 00:00:24.167 --&gt; 00:00:27.025
 (orchestra music swells)
- 
 00:00:43.033 --&gt; 00:00:43.192
 (weapons clash)
-
 00:00:44.000 --&gt; 00:00:44.175
 (gasps)
-
 00:00:44.183 --&gt; 00:00:45.158
 (grunts)
-
 00:00:45.167 --&gt; 00:00:47.058
 (groaning)
-
 00:00:54.192 --&gt; 00:00:55.150
 (blade rings)
-
 00:00:55.158 --&gt; 00:00:57.008
 (bellowing)
-
 00:00:57.017 --&gt; 00:00:58.067
 (grunting)
-
 00:00:59.075 --&gt; 00:01:00.133
 (panting)
-
 00:01:05.108 --&gt; 00:01:06.125
 (cries out in agony)
-
 00:01:08.050 --&gt; 00:01:09.058
 (panting)
-
 00:01:12.092 --&gt; 00:01:13.142
 (panting)
- 
 00:01:14.017 --&gt; 00:01:18.125
 (orchestra plays ominous low notes)
-
 00:01:31.058 --&gt; 00:01:35.133
 (plaintive violin solo returns)
-
 00:01:46.158 --&gt; 00:01:49.058
 This blade has a dark past.
-
 00:01:51.092 --&gt; 00:01:54.108
 It has shed much innocent blood.
-
 00:01:57.083 --&gt; 00:02:00.000
 You&#39;re a fool for traveling alone
 so completely unprepared.
-
 00:02:01.100 --&gt; 00:02:03.033
 You&#39;re lucky your blood&#39;s still flowing.
-
 00:02:04.183 --&gt; 00:02:06.075
 Thank you.</pre>
 
@@ -5362,57 +5336,43 @@ on the right end of the duration values:</p>
   <summary><b>Click to expand!</b></summary>
 
 <pre>WEBVTT
-
 00:00:01.000 --&gt; 00:00:05.000
 These captions test some features of the WebVTT formats
-
 00:00:06.000 --&gt; 00:00:10.000 line:5%
 This cue is positioned at the top of the video
-
 00:00:11.000 --&gt; 00:00:15.000 position:5% align:start
 This cue is positioned at the left side of the video.
-
 00:00:16.000 --&gt; 00:00:20.000 position:95% align:end
 And this one ate the right side.
-
 00:00:21.000 --&gt; 00:00:25.000 size:33%
 This cue is only a third of the width of the video, hence the multiple line breaks.
-
 00:00:26.000 --&gt; 00:00:30.000
 This cue contains &lt;b&gt;bold&lt;/b&gt; text.
-
 00:00:31.000 --&gt; 00:00:35.000
 This cue contains &lt;i&gt;italic&lt;/i&gt; text.
-
 00:00:36.000 --&gt; 00:00:40.000
 This cue contains &lt;u&gt; &lt;/u&gt; text.
-
 00:00:41.000 --&gt; 00:00:45.000
 This cue contains &lt;b&gt;&lt;i&gt;&lt;u&gt;bold, italic, 
 underlined&lt;/u&gt;&lt;/i&gt;&lt;/b&gt; text.
 00:00:46.000 --&gt; 00:00:50.000
 &lt;c.myclass&gt;This cue contains the class &quot;myclass&quot;.
 Browsers that support ::cue CSS should make it red.&lt;/c&gt;
-
 00:00:51.000 --&gt; 00:00:55.000
 The following cue contains two voices.
 Tarzan should be blue and Jane green.
-
 00:00:56.000 --&gt; 00:01:00.000
 &lt;v Tarzan&gt;Me Tarzan...
 &lt;v Jane&gt;That would make me Jane!
-
 bigtext
 00:01:01.000 --&gt; 00:01:05.000
 This cue has a unique id.
 Using CSS, its font size should be 150%.
-
 00:01:06.000 --&gt; 00:01:10.000
 The &lt;00:01:06.333&gt;text &lt;00:01:06.666&gt;in &lt;00:01:07.000&gt;this 
 &lt;00:01:07.333&gt;cue &lt;00:01:07.666&gt;should &lt;00:01:08.000&gt;grow
 &lt;00:01:08.333&gt;one &lt;00:01:08.666&gt;word &lt;00:01:09.000&gt;at 
 &lt;00:01:09.333&gt;a &lt;00:01:09.666&gt;time
-
 00:01:11.000 --&gt; 00:01:15.000
 That&#39;s it! For now...</pre>
 
@@ -5431,8 +5391,8 @@ That&#39;s it! For now...</pre>
 <p>The video example tests nearly all the possibilities for positioning subtitles/captions, styling (using HTML element wrapping with &lt;b&gt;, &lt;i&gt;,  etc.), voicing (subtitles corresponding to different characters will be displayed in different colors) and CSS styling.</p>
 <p>It is possible to locate the cues in the video viewport using absolute or relative values. The attributes that position the text are located on the same line as the cue definition, like at <i>line 9</i> of the previous WebVTT example file:</p>
 
-<pre>9.  00:00:11.000 --&gt; 00:00:15.000&lt;b&gt; position:5% align:start&lt;/b&gt;
-10. This cue is positioned at the left side of the video.</pre>
+<pre>00:00:11.000 --&gt; 00:00:15.000&lt;b&gt; position:5% align:start&lt;/b&gt;
+This cue is positioned at the left side of the video.</pre>
 
 <h4>There are several possible values:</h4>
 <ul>
@@ -5461,8 +5421,8 @@ using the &lt;c&gt; element. You can specify the CSS class that should be
 applied by adding “.” followed by the name of your CSS class. Here is an
 example:</p>
 
-<pre>1. &lt;c.myclass&gt;This cue contains the class &quot;myclass&quot;.
-2. Browsers that support ::cue CSS should make it red.&lt;/c&gt;</pre>
+<pre>&lt;c.myclass&gt;This cue contains the class &quot;myclass&quot;.
+Browsers that support ::cue CSS should make it red.&lt;/c&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 94. video frame showing ::cue containing 'myclass' (113) ~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -6062,7 +6022,6 @@ function startWebcam() {
       console.log(&#39;navigator.getUserMedia error: &#39;, error);
     });
   }
-  
 function stopWebcam() {
     webcamStream.getTracks()[0].stop(); // audio
     webcamStream.getTracks()[1].stop(); // video
@@ -6081,7 +6040,6 @@ function stopWebcam() {
     &#39;saturate&#39;,
     &#39;invert&#39;
   ];
-  
 function changeFilter(el) {
   // Remove all CSS classes for element el
   el.className = &#39;&#39;;
@@ -6477,7 +6435,7 @@ var hdConstraints = {
 };
 let constraints = hdConstraints;
 navigator.mediaDevices.getUserMedia(constraints)
-16. .then((stream) =&gt; {...}</pre>
+  .then((stream) =&gt; {...}</pre>
 
 </details>
 
@@ -6590,10 +6548,8 @@ You can test it below by clicking on "CodePen" at the top right:</p>
 
 <pre>var mediaRecorder;
 var recordedBlobs;
-
 var gumVideo = document.querySelector('video#gum');
 var recordedVideo = document.querySelector('video#recorded');
-
 var recordButton = document.querySelector('button#record');
 var playButton = document.querySelector('button#play');
 var downloadButton = document.querySelector('button#download');
@@ -6616,11 +6572,9 @@ function handleDataAvailable(event) {
     recordedBlobs.push(event.data);
   }
 }
-
 function handleStop(event) {
   console.log('Recorder stopped: ', event);
 }
-
 function toggleRecording() {
   if (recordButton.textContent === 'Start Recording') {
     startRecording();
@@ -6650,18 +6604,15 @@ function startRecording() {
   mediaRecorder.start(10); // collect 10ms of data
   console.log('MediaRecorder started', mediaRecorder);
 }
-
 function stopRecording() {
   mediaRecorder.stop();
   console.log('Recorded Blobs: ', recordedBlobs);
   recordedVideo.controls = true;
 }
-
 function play() {
   var superBuffer = new Blob(recordedBlobs, {type: 'video/webm'});
   recordedVideo.src = window.URL.createObjectURL(superBuffer);
 }
-
 function download() {
   var blob = new Blob(recordedBlobs, {type: 'video/webm'});
   var url = window.URL.createObjectURL(blob);
@@ -8142,7 +8093,7 @@ drawArrow(ctx, 0, 0, 0, 100, 10, &#39;red&#39;);
 
 <p>Note that the X and Y parameters are useless for now…</p>
 
-<pre>  Translation using ctx.translate(offsetX, offsetY)</pre>
+<pre>Translation using ctx.translate(offsetX, offsetY)</pre>
 
 <p>Now, instead of simply calling drawMonster(0, 0), we will call
 first ctx.translate(100, 100), and look at the result below:</p>
@@ -8472,14 +8423,13 @@ var angle = Math.atan2(toy-fromy,tox-fromx);
 
 </details>
 
-<pre>  ctx.translate(100, 100);
-  ctx.rotate(Math.PI/4);
-  ctx.scale(0.5, 0.5);
-
+<pre>ctx.translate(100, 100);
+ctx.rotate(Math.PI/4);
+ctx.scale(0.5, 0.5);
 // Draw the monster at (0, 0)
-  drawMonster(0, 0);
+drawMonster(0, 0);
 // Draw a filled rectagle at (250, 0)
-  ctx.fillRect(250, 0, 100, 100);</pre>
+ctx.fillRect(250, 0, 100, 100);</pre>
 
 <h4>How can we reset the coordinate system, how can we go back to the previous one?</h4>
 
@@ -8642,26 +8592,21 @@ code is nearly the same as in the last version of the monster example.</p>
 <pre>function drawMonster(x, y, angle, headColor, eyeColor) {
   // BEST PRACTICE: SAVE CONTEXT AND RESTORE IT AT THE END
   ctx.save();
- 
   // Moves the coordinate system so that the monster is drawn
   // at position (x, y)
   ctx.translate(x, y);
   ctx.rotate(angle);
-
   // head
   ctx.fillStyle=headColor;
   ctx.fillRect(0,0,200,200);
-
   // eyes
   ctx.fillStyle=&#39;red&#39;;
   ctx.fillRect(35,30,20,20);
   ctx.fillRect(140,30,20,20);
-
   // interior of eye
   ctx.fillStyle=eyeColor;
   ctx.fillRect(43,37,10,10);
   ctx.fillRect(143,37,10,10);
-
   ...
   // BEST PRACTICE!
   ctx.restore();
@@ -8789,7 +8734,6 @@ font attributes, etc.:</p>
 
 <pre>context.font = &quot;60pt Calibri&quot;;
 // .. set color, lineWidth, shadow etc.
- 
 // 10, 10 is the start of the baseline, bottom of left leg of the &quot;H&quot; in the
 // &quot;Hello World&quot; example.
 context.fillText(&quot;Hello World!&quot;, 10, 10);
@@ -8835,8 +8779,8 @@ bottom of the left leg of the “H”.</p>
 <p>There is a fourth optional parameter maxWidth that forces the text to
 fit into a given width, distorting it if necessary:</p>
 
-<pre>  context.strokeText(&quot;Hello World!&quot;, x, y [, maxWidth]);
-  context.fillText(&quot;Hello World!&quot;, x, y [, maxWidth]);</pre>
+<pre>context.strokeText(&quot;Hello World!&quot;, x, y [, maxWidth]);
+context.fillText(&quot;Hello World!&quot;, x, y [, maxWidth]);</pre>
 
 <h4>Forcing a text not to exceed a certain width: the maxWidth property</h4>
 
@@ -9530,10 +9474,9 @@ This can be done at video frequency on most modern computers or mobile devices.<
   <summary><b>JavaScript source code:</b></summary>
 
 <pre>&lt;script&gt;
-   var video;
-   var canvas, ctx;
-   var angle = 0;
- 
+  var video;
+  var canvas, ctx;
+  var angle = 0;
 function init() {
   video = document.getElementById(&#39;sourcevid&#39;);
   canvas = document.getElementById(&#39;myCanvas&#39;);
@@ -10230,7 +10173,6 @@ the ctx.beginPath() method, as shown in the next example.</p>
 
 <pre>var canvas=document.getElementById(&#39;myCanvas&#39;);
 var ctx=canvas.getContext(&#39;2d&#39;);
-
 // first part of the path
 ctx.moveTo(20,20);
 ctx.lineTo(100, 100);
@@ -10662,10 +10604,9 @@ below to see the difference.</p>
 
 <pre>ctx.beginPath();
 // we ommited the last parameter
-3.  ctx.arc(100, 75, 50, 0, Math.PI/2);
-4.   
-5.  ctx.lineWidth = 10;
-6.  ctx.stroke();</pre>
+ctx.arc(100, 75, 50, 0, Math.PI/2);
+ctx.lineWidth = 10;
+ctx.stroke();</pre>
 
 <p>And if we change the last parameter of the arc function call (<i>line
 3</i>) to true (we omitted it, so it took a value of false by default)
@@ -10673,10 +10614,9 @@ below to see the difference.</p>
 
 <pre>ctx.beginPath();
 // we omitted the last parameter
-3.  ctx.arc(100, 75, 50, 0, Math.PI/2, true);
-4.   
-5.  ctx.lineWidth = 10;
-6.  ctx.stroke();</pre>
+ctx.arc(100, 75, 50, 0, Math.PI/2, true);
+ctx.lineWidth = 10;
+ctx.stroke();</pre>
 
 <p>Then, the result is the “complementary” of the previous arc:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10705,31 +10645,25 @@ below to see the difference.</p>
 
 <pre>var canvas = document.getElementById(&quot;myCanvas&quot;);
 var ctx = canvas.getContext(&quot;2d&quot;);
-3.  var centerX = canvas.width / 2;
-4.  var centerY = canvas.height / 2;
-5.  var radius = 70;
-6.  
-7.  ctx.beginPath();
-8.  
-9.  // Add to the path a full circle (from 0 to 2PI)
-10. ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
-11. 
-12. // With path drawing you can change the context
-13. // properties until a call to stroke() or fill() is performed
-14. ctx.fillStyle = &quot;lightBlue&quot;;
-15. // Draws the filled circle in light blue
-16. ctx.fill();
-17. 
-18. // Prepare for the outline
-19. ctx.lineWidth = 5;
-20. ctx.strokeStyle = &quot;black&quot;;
-21. 
-22. // draws the path (the circle) AGAIN, this
-23. // time in wireframe
-24. ctx.stroke();
-25. 
-26. // Notice we called ctx.arc() only once ! And drew it twice
-27. // with different styles</pre>
+var centerX = canvas.width / 2;
+var centerY = canvas.height / 2;
+var radius = 70;
+ctx.beginPath();
+// Add to the path a full circle (from 0 to 2PI)
+ctx.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
+// With path drawing you can change the context
+// properties until a call to stroke() or fill() is performed
+ctx.fillStyle = &quot;lightBlue&quot;;
+// Draws the filled circle in light blue
+ctx.fill();
+// Prepare for the outline
+ctx.lineWidth = 5;
+ctx.strokeStyle = &quot;black&quot;;
+// draws the path (the circle) AGAIN, this
+// time in wireframe
+ctx.stroke();
+// Notice we called ctx.arc() only once ! And drew it twice
+// with different styles</pre>
 
 </details>
 
@@ -12879,8 +12813,7 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 
 <h4>Example of use of this loader</h4>
 
-<pre>
-loadImages(imagesToLoad, function(imagesLoaded) {
+<pre>loadImages(imagesToLoad, function(imagesLoaded) {
   patternFlowers = ctx.createPattern(imagesLoaded.flowers, &#39;repeat&#39;);
   patternLion = ctx.createPattern(imagesLoaded.lion, &#39;repeat&#39;);
   patternBW = ctx.createPattern(imagesLoaded.blackAndWhiteLys, &#39;repeat&#39;);
@@ -14217,8 +14150,8 @@ the addEventListener method</h4>
 <h4>This is how we do it:</h4>
 
 <pre>document.getElementById(&#39;someDiv&#39;).addEventListener(&#39;click&#39;, function(evt) {
-    alert(&#39;clicked!&#39;);
-3.  }, false);</pre>
+  alert(&#39;clicked!&#39;);
+}, false);</pre>
 
 <p>The third parameter is not important for now, just set it to false,
 or simply do not add a third parameter.</p>
@@ -14230,8 +14163,8 @@ event object will be passed as a parameter to your callback, just like
 this:</p>
 
 <pre>element.addEventListener(&#39;click&#39;, function(&lt;b&gt;event&lt;/b&gt;) {
-   &lt;b&gt;// now you can use the event object inside the callback&lt;/b&gt;
-3.  }, false);</pre>
+  &lt;b&gt;// now you can use the event object inside the callback&lt;/b&gt;
+}, false);</pre>
 
 <p>Depending on the type of event you are listening to, we will use
 different properties from the event object in order to get useful
@@ -14497,7 +14430,6 @@ what HTML element has the focus, etc…</p>
   var canvas, ctx;
   var monsterX=100, monsterY=100, monsterAngle=0;
   var incrementX = 0;
- 
   function init() {
     // This function is called after the page is loaded
     // 1 - Get the canvas
@@ -15205,7 +15137,6 @@ depending on increments you set in event listeners <i>(lines 23-31)</i>.</p>
 &lt;script&gt;
   var canvas, ctx, previousMousePos;
   ...
-
   function drawLineImmediate(x1, y1, x2, y2) {
     // a line is a path with a single draw order
     // we need to do this in this example otherwise
@@ -15323,7 +15254,6 @@ might not be easily guessed:</p>
   function resizeCanvas() {
     canvas.width = 300;
   }
- 
 &lt;/script&gt;
 ...
 &lt;button onclick=&quot;resizeCanvas();&quot;&gt;
@@ -15413,7 +15343,6 @@ height!</i></b></p>
     margin-right: 10px;
     border: 1px solid red;
   }
-
   canvas {
     border: 2px solid black;
   }
@@ -15434,7 +15363,6 @@ height!</i></b></p>
     resizeCanvasAccordingToParentSize, false);
   ...
 }
- 
 function resizeCanvasAccordingToParentSize() {
   // adjust canvas size, take parent&#39;s size, this erases content
   canvas.width = divcanvas.clientWidth;
@@ -16086,7 +16014,6 @@ href="https://jsbin.com/jozuter/1/edit?html,css,js,console,output" target="_blan
     Select a color : &lt;input type=&quot;color&quot; id=&quot;colorChooser&quot;/&gt;
     &lt;script&gt;
       var colorInputField = document.querySelector(&quot;#colorChooser&quot;);
-
       colorInputField.addEventListener(&#39;input&#39;, function(evt) {
           document.body.style.backgroundColor = this.value;
       }, false);
@@ -16122,11 +16049,10 @@ should be displayed:</p>
 <h4>Source code extract:</h4>
 
 <pre>&lt;input type=&quot;color&quot; value=&quot;#333333&quot; list=&quot;colors&quot;&gt;
-  
 &lt;datalist id=&quot;colors&quot;&gt;
-   &lt;option&gt;#0000FF&lt;/option&gt;
-   &lt;option&gt;#00FF00&lt;/option&gt;
-   &lt;option&gt;#FF0000&lt;/option&gt;
+  &lt;option&gt;#0000FF&lt;/option&gt;
+  &lt;option&gt;#00FF00&lt;/option&gt;
+  &lt;option&gt;#FF0000&lt;/option&gt;
 &lt;/datalist&gt;</pre>
 
 <p>Note that the id of the &lt;datalist&gt; element should be the same
@@ -16239,10 +16165,10 @@ field or <a href="https://jsbin.com/faluta/1/edit?html,output" target="_blank"
 
 <pre>...
 &lt;input type=&quot;date&quot;
-   id=&quot;birthdayParty&quot;
-   value=&quot;2015-06-20&quot;
-   min=&quot;2015-06-20&quot;
-   max=&quot;2015-06-30&quot;&gt;
+  id=&quot;birthdayParty&quot;
+  value=&quot;2015-06-20&quot;
+  min=&quot;2015-06-20&quot;
+  max=&quot;2015-06-30&quot;&gt;
 ...</pre>
 
 <h4>Choosing one day in a given week, etc. with the step: attribute</h4>
@@ -17464,7 +17390,6 @@ will not trigger auto-completion.</p>
 <pre>&lt;form&gt;
   ...
   &lt;input list=&quot;browsers&quot; id=&quot;mybrowser&quot; /&gt;
-  
   &lt;datalist id=&quot;browsers&quot;&gt;
     &lt;option value=&quot;Internet Explorer&quot;&gt;
     &lt;option value=&quot;Firefox&quot;&gt;
@@ -17682,13 +17607,11 @@ input field types.</p>
   max=&quot;2013-01-01&quot;
   value=&quot;2012-01-01&quot;
 /&gt;
-   
 &lt;input name=&quot;time&quot; id=&quot;time&quot; type=&quot;time&quot;
   min=&quot;09:00&quot;
   max=&quot;17:00&quot;
   value=&quot;12:00&quot;
 /&gt;
-  
 &lt;input id=&quot;range&quot; name=&quot;range&quot; type=&quot;range&quot; 
       min=&quot;0&quot; 
     max=&quot;100&quot; 
@@ -18306,7 +18229,6 @@ dragging the slider below:</p>
 <h4>Source code of the example:</h4>
 
 <pre>&lt;p&gt;Grades: &lt;meter id=&quot;meter2&quot; value=&quot;75&quot; min=&quot;0&quot; low=&quot;20&quot; high=&quot;80&quot; max=&quot;100&quot;&gt;&lt;/meter&gt;
-  
 &lt;input min=&quot;0&quot; max=&quot;100&quot; value=&quot;75&quot; id=&quot;meter2range&quot;
   oninput=&quot;effect(&#39;meter2&#39;, &#39;meter2range&#39;)&quot; type=&quot;range&quot;&gt;
 &lt;output id=&quot;meter2val&quot; for=&quot;meter2range&quot;&gt;&lt;/output&gt;&lt;/p&gt;
@@ -18519,7 +18441,6 @@ favorite browser):</p>
 
 <pre>&lt;form action=&quot;demo_form.asp&quot; method=&quot;get&quot;&gt;
   &lt;input list=&quot;browsers&quot; name=&quot;browser&quot; /&gt;
-  
     &lt;datalist id=&quot;browsers&quot;&gt;
       &lt;option value=&quot;Internet Explorer&quot;&gt;
       &lt;option value=&quot;Firefox&quot;&gt;
@@ -18617,7 +18538,6 @@ at JSBin</a>, or try it below in your browser:</p>
     &lt;meta charset=&quot;utf-8&quot;&gt;
     &lt;title&gt;CSS3 pseudo-classes for form validation visual feedback&lt;/title&gt;
     &lt;style&gt;
-  
       input:invalid { background-color: lightPink;}
       input:valid { background-color:lightGreen; }
       input:required {border: 2px solid red;}
@@ -18686,7 +18606,6 @@ JSBin</a> or try it here in your browser. This example adds a small icon that 
 .myForm input {
   transition: padding .25s;
 }
-  
 .myForm input:required:valid {
   background:url(https://i.imgur.com/BJolppS.png) no-repeat right top;
 }
@@ -18973,7 +18892,6 @@ values, too big, too small, enter invalid characters, etc.):</p>
 the validationMessage property of input fields.</p>
 
 <pre>var input = document.getElementById(b);
-   
 console.log(&quot;Validation message = &quot; + input.validationMessage);</pre>
 
 <p>This is useful for making custom error messages. More about this
@@ -19289,12 +19207,10 @@ available localStorage object. The same applies to sessionStorage.</p>
   <summary><b>Click to expand!</b></summary>
 
 <pre>// using localStorage
- 
 // store data
 localStorage.lastName = &quot;Bunny&quot;;
 localStorage.firstName = &quot;Bugs&quot;;
 localStorage.location = &quot;Earth&quot;;
- 
 // retrieve data
 var lastName = localStorage.lastName;
 var firstName = localStorage.firstName;
@@ -19410,22 +19326,16 @@ example on JSBin</a>: enter data and press reload at any time. The form content 
 
 <pre>// Called when the page is loaded
 window.onload = restoreFormContent;
-  
 function restoreFormContent() {
    console.log(&quot;restoring form content from localStorage&quot;);
-
    if(localStorage.firstName !== undefined)
      document.getElementById(&quot;firstName&quot;).value = localStorage.firstName;
- 
    if(localStorage.lastName !== undefined)
      document.getElementById(&quot;lastName&quot;).value = localStorage.lastName;
- 
    if(localStorage.email !== undefined)
      document.getElementById(&quot;email&quot;).value = localStorage.email;
- 
    if(localStorage.age !== undefined)
      document.getElementById(&quot;age&quot;).value = localStorage.age;
-
    if(localStorage.date !== undefined)
      document.getElementById(&quot;date&quot;).value = localStorage.date;
 }</pre>
@@ -19698,15 +19608,12 @@ called the function restorePreferences).</p>
     applyGUIvalues(); // Use the input fields&#39; values we just restored to set internal 
                       // size, incX, color, lineWidth variables
 }
-
 function addInputListener(inputField) {
   // same as before
 }
-
 function restorePreferences() {
   // same as old restoreFormContent
 }
- 
 function applyGUIvalues() {
   // Check restored input field content to set the size of the rectangle
   var sizeWidget = document.getElementById(&quot;size&quot;);
@@ -19755,7 +19662,6 @@ loaded. This function will:</p>
 
 <pre>// Called when the page is loaded
 window.onload = init;
-
 function init() {
   console.log(&quot;Adding input listener to all input fields&quot;);
   // add an input listener to all input fields
@@ -20338,8 +20244,7 @@ metadata related to the first selected file:</p>
 <pre>var selectedFile = document.getElementById(&#39;input&#39;).files[0];
 // do something with selectedFile.name, selectedFile.size, selectedFile.type
 // selectedFile.lastModifiedDate
-...
-</pre>
+...</pre>
 
 <h4>Examples</h4>
 
@@ -21003,7 +20908,6 @@ example only works with a single file.</p>
 
 <pre>function drawImage(imageFile) {
   var reader = new FileReader();
- 
   //capture the file information.
   reader.onload = function(e) {
     // For drawing an image on a canvas we
@@ -21088,12 +20992,10 @@ Browser support for the Geolocation API</a> is excellent, both on mobile and on
   <summary><b>JavaScript source code:</b></summary>
 
 <pre>navigator.geolocation.getCurrentPosition(showPosition, onError);
- 
 function showPosition(position) {
   console.log(&quot;latitude is: &quot; + position.coords.latitude);
   console.log(&quot;longitude is: &quot; + position.coords.longitude);
 }
- 
 function onError(err) {
   console.log(&quot;Could not get the position&quot;);
 }</pre>
