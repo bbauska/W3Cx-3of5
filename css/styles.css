@@ -1,4 +1,4 @@
-/* styles.css of w3cx-3of5 */
+/* css/styles.css of w3cx-3of5 making w3cx-3of5.bauska.org */
 
 img.displayed {
   display: block;
@@ -20,12 +20,6 @@ p {
 }
 
 <!-- 5/24/2-025 6:06pm -->
-pre > code {
-  display: block;
-  margin-left: 15px;  /* 10px */
-  padding: 1rem;
-  word-wrap: normal;
-}
 pre {
   font: normal normal 10px/12px consolas,Courier,Monospace;
   background-color: #eee;
@@ -34,6 +28,12 @@ pre {
   padding: .5em 1em;
   white-space: pre-wraps;
   overflow-x: auto;
+}
+pre > code {
+  display: block;
+  margin-left: 15px;  /* 10px */
+  padding: 1rem;
+  word-wrap: normal;
 }
 pre code,
 pre .line-number {
@@ -58,13 +58,14 @@ pre .cl {
   clear: both;
 }
 pre {
+  width: 450px;
   overflow: auto;
 }
 pre[href]:hover  {
   text-decoration: none;
 }
 pre:hover, pre:focus {
-  width: 50%;  /* was: fit-content; before that; width: min-content */
+  width: 450px;  /* was: 50%;, fit-content; before that; width: min-content */
 }
 
 a:hover {
