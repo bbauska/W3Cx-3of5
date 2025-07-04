@@ -1,0 +1,2828 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-1-1">6.1.1 Introduction Basic APIs – Module 6</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Final week!</h4>
+
+<p>Congratulations to all of you. Here, it’s summer and it’s hot, it’s
+time to get holidays, but before that we need to finish the course. I’m
+talking from the very nice park of the University of Nice in the south
+of France where I work. And I want you to be as happy as I am today to
+teach you this final week. We will look this time at the HTML5
+persistence, notably at the HTML5 cache that is useful for creating Web
+sites and Web applications that work offline. We will also study the web
+storage API that is useful for saving and restoring data on the client
+side directly in browser.</p>
+
+<p>It can be useful for setting some preferences for Web application, or
+for remembering what you typed in a form, for example. We will also look
+at another form of persistence using the file API. This JavaScript API
+is quite simple and can be used together with file choosers.</p>
+
+<p>For example, you choose some pictures, some images you want to send
+to a server and using this API you can visualize them directly in the
+page before sending them to the server.</p>
+
+<p>Finally, we will look at the geolocation API that is useful for
+locating the person that is using the browser.</p>
+
+<p>You can provide a customized service that take into account the
+geolocation, or you can also display the position of the person in a
+map, we will see example that work with Google Map and with
+OpenStreetMap. Another classic use is automatic filling of the address
+input fields in a form.</p>
+
+<p>Instead of typing the zip code, entering the city, entering the
+country, you can guess that automatically and propose the form that is
+already filled with the address. I really enjoyed teaching you this
+HTML5 basic course and I’m looking forward to meeting you the next HTML5
+part-2 course that would address more advanced topics</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="6-1-2">6.1.2 HTML5 JavaScript APIs</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>We have already studied some of the HTML5 JavaScript APIs,
+including:</p>
+
+<ul>
+  <li>The canvas API,<br></li>
+  <li>The form validation API,<br></li>
+  <li>The audio and video elements API, the getUserMedia API (also related to audio and video elements).</li>
+</ul>
+
+<p>However, HTML5 also comes with several APIs that are not directly
+related to HTML elements, namely: the Orientation API; the Geolocation
+API; most APIs related to client-side persistence; the Web Storage API;
+the Web Workers API; and some other APIs that are not in the HTML5
+specification, but are related to it, such as the GamePad API, the Web
+Audio API, etc.<br>
+This week, we will look at some of the most useful APIs. Others will be
+covered in the <a href="https://www.edx.org/course/html5-apps-and-games" 
+target="_blank" rel="noopener noreferrer">W3C HTML5 Apps and Games course</a>:</p>
+
+<ul>
+  <li><b>The “Web Storage” API, sort of “super cookies”, for storing pairs of key/values 
+    client side.</b> This API is useful for enabling Web sites to save/restore their state, 
+    or for writing <i>serverless</i> applications. You will see a small contact manager that 
+    stores its data locally, without the need for a remote Web server.<br></li>
+  <li><b>The File API, that enables Web applications to work with local files</b>. For example, 
+    a picture editor, or ./images player that can work with your music and video files - the 
+    ones on your phone or your hard disk! With this API you will also be able to preview image 
+    files directly in your page - there is no need to send them to a remote server.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 295. 'you are here' sign (354) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image295.webp"
+  loading="lazy"
+  title="You are here sign"
+  alt="You are here sign."
+  style="width:35%;" />
+
+<ul>
+  <li><b>The Geolocation API for obtaining data such as longitude, latitude, altitude 
+    (when available), and speed</b>. You will learn how to write applications in 
+    combination with interactive maps. You will also learn how to guess the address 
+    of a user, for example for pre-filling a registration form with the city, country, 
+    and zip code that corresponds with the current location.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-2-1">6.2.1 The Web storage API</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The Web storage API introduces “two related mechanisms, similar to
+HTTP session cookies, for storing structured data on the client
+side”.</p>
+
+<p>Indeed, Web Storage provides two
+interfaces - sessionStorage and localStorage - whose main difference is
+data longevity. This specification defines an API for persistent data
+storage of key-value pair data in Web clients.</p>
+
+<p><b>With localStorage the data will remain until it is deleted,
+whereas with sessionStorage the data is erased when the tab/browser is
+closed.</b></p>
+
+<p>For convenience, we will mainly illustrate the localStorage object. Just
+change “local” to “session” and it should work (this time with a session
+lifetime).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 296. key value pairs (354) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image296.webp"
+  loading="lazy"
+  title="Key value pairs"
+  alt="Key value pairs."
+  style="width:17%;" />
+  
+<h4>Simple key-value stores, one per domain (following the same origin policy)!</h4>
+
+<p>localStorage is a simple key-value store, in which the keys and
+values are strings. There is only one store per domain. This
+functionality is exposed through the globally
+available localStorage object. The same applies to sessionStorage.</p>
+
+<h4>Example:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>// using localStorage
+// store data
+localStorage.lastName = &quot;Bunny&quot;;
+localStorage.firstName = &quot;Bugs&quot;;
+localStorage.location = &quot;Earth&quot;;
+// retrieve data
+var lastName = localStorage.lastName;
+var firstName = localStorage.firstName;
+var location = localStorage.location;</pre>
+
+</details>
+
+<p>This data is located in a store attached to the origin of the page.
+We created <a href="https://jsbin.com/povuqa/1/edit" target="_blank" rel="noopener noreferrer">
+a JSBin example in which we included the above code</a>.</p>
+
+<p>Once opened in your browser, the JavaScript code is executed. With the
+browser dev. tools, we can check what has been stored in
+the localStorage for this domain:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 297. example of localStorage (355) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image297.webp"
+  loading="lazy"
+  title="Example of read/write localStorage"
+  alt="Example of read/write localStorage."
+  style="width:35%;" />
+
+<p>Here is a view of the devtools. In more recent versions of Google
+Chrome, the “Resources” tab is named “Applications”:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 298. view of the devtools (355) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image298.webp"
+  loading="lazy"
+  title="View of the devtools. Used to show what is in local Storage"
+  alt="View of the devtools. Used to show what is in local Storage."
+  style="width:35%;" />
+
+<h4>Differences with cookies?</h4>
+
+<p>Cookies are also a popular way to store key-value pairs. Web Storage,
+however, is a more powerful technique than cookies. The main difference
+is in size limits: cookies are limited to a few KBytes whereas Web
+Storage may extend to several MBytes. Also cookies generate additional
+HTTP request traffic (whether to request a Web page, an image, a
+stylesheet, a JavaScript file, etc.).</p>
+
+<p>Objects managed by Web Storage are no longer carried on the network and
+HTTP, and are easily accessible (read, change and delete) from
+JavaScript, using the Web Storage API.</p>
+
+<h4>External resources</h4>
+
+<ul>
+  <li>From W3C’s specification: <a href="https://www.w3.org/TR/webstorage/" 
+    target="_blank" rel="noopener noreferrer">The W3C Web Storage API recommendation</a><br></li>
+  <li>An Interesting article on Web.dev: <a href="https://web.dev/storage-for-the-web/" 
+    target="_blank" rel="noopener noreferrer">Storage for the Web</a><br></li>
+  <li>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" 
+    target="_blank" rel="noopener noreferrer">Web Storage API</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-2-2">6.2.2 Example 1</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>You can start filling this form and come back another day and
+complete it. It doesn’t matter if you closed your browser before coming
+back. The form never loses what you entered, even if you reload the
+page, or press “backspace” by mistake. <b>This form auto saves/restores
+its content</b>.</p>
+<p>In this example, we use the most simple way to use localStorage:</p>
+
+<ul>
+  <li><b>Save with the localStorage.key = value syntax.</b> For example, 
+    localStorage.firstName = ‘Michel’ will save the value “Michel” with the access key being ‘firstName’<br></li>
+  <li><b>Restore with the var value = localStorage.key syntax</b>. For example, 
+    var fn = localStorage.firstName; will set fn with the value ‘Michel’ if this 
+    value has been previously saved as in the example from the line above.</li>
+</ul>
+
+<h4>Saving the form content on the fly</h4>
+
+<p>Open this <a href="https://jsbin.com/pulurir/edit?html,js,output" target="_blank" rel="noopener noreferrer">
+online example at JSBin</a>, and use F12 or cmd-alt-i (Mac OS) to look at the dev. tools. As you type in the 
+different input fields, their content is updated in the localStorage.<br>
+We just added input event listeners to each input field. For example, in order to save the first name input 
+field’s content, we just added:</p>
+
+<pre>oninput=&quot;localStorage.&lt;font color="red"&gt;firstName&lt;/font&gt;=this.value;&quot;</pre>
+
+<p>Where firstName in red is the key and this.value the current value of the input field.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 299. example localstorage and html code (355) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image229.webp"
+  loading="lazy"
+  title="Example of Localstorage and its HTML code"
+  alt="Example of Localstorage and its HTML code."
+  style="width:35%;" />
+
+<p>In the same way, we added an input listener to all the input fields
+in this example’s form.</p>
+
+<h4>Restoring the form content on page load/reload</h4>
+
+<p>This time, we want the form content to be restored on page load/reload. We will add a 
+restoreFormContent() function in the JavaScript code that will be called each time the 
+page is loaded. In this function, we will read the saved data and set the input fields’
+values.</p>
+
+<p><a href="https://jsbin.com/yivocuz/edit?html,js,output" target="_blank" rel="noopener noreferrer">Complete
+example on JSBin</a>: enter data and press reload at any time. The form content is restored!</p>
+
+<h4>Source code extract (only addition to the previous example):</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>// Called when the page is loaded
+window.onload = restoreFormContent;
+function restoreFormContent() {
+   console.log(&quot;restoring form content from localStorage&quot;);
+   if(localStorage.firstName !== undefined)
+     document.getElementById(&quot;firstName&quot;).value = localStorage.firstName;
+   if(localStorage.lastName !== undefined)
+     document.getElementById(&quot;lastName&quot;).value = localStorage.lastName;
+   if(localStorage.email !== undefined)
+     document.getElementById(&quot;email&quot;).value = localStorage.email;
+   if(localStorage.age !== undefined)
+     document.getElementById(&quot;age&quot;).value = localStorage.age;
+   if(localStorage.date !== undefined)
+     document.getElementById(&quot;date&quot;).value = localStorage.date;
+}</pre>
+
+</details>
+
+<p>The tests at <i>lines 7, 10, 13</i>, etc., verify that data has been
+saved, before trying to restore it. Without these tests, it would put
+the “undefined” string as the value of input fields with no
+corresponding data to restore.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-2-3">6.2.3 localStorage and sessionStorage</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This time we will look at another example that uses new methods from the API:</p>
+
+<ul>
+  <li>localStorage.setItem(…),</li>
+  <li>localStorage.getItem(…),</li>
+  <li>localStorage.removeItem(…),</li>
+  <li>localStorage.clear().</li>
+</ul>
+
+<h4>Getting/setting values using the getItem(key) and setItem(key, value) methods</h4>
+
+<p>If you want to keep a simple counter of the number of times a given
+user has loaded your application, you can use the following code (just
+to show how to use setItem/removeItem methods):</p>
+
+<pre>var counter = localStorage.getItem(&quot;count&quot;) || 0;
+counter++;
+localStorage.setItem(&quot;count&quot;, counter);</pre>
+
+<p>As you can easily guess from the above, we use var value = getItem(key) to retrieve a 
+key’s value and setItem(key, value) to set it. This is similar to what we saw in the 
+examples of the page above, except that this time:</p>
+
+<ul>
+  <li>The key can contain spaces, for example we can write: localStorage.setItem(“Instructor’s name”, “Michel”); 
+    and var name =  localStorage.getItem(“Instructor’s name”);, while var name = localStorage.Instructor’s name; 
+    will not work!</li>
+  <li>In a loop or in an iterator, sometimes we need to set/get localStorage values using this syntax, for example:</li>
+</ul>
+
+<pre>var inputField = document.getElementById(&quot;firstName&quot;);
+saveInputFieldValue(inputField);
+... 
+function saveInputFieldValue(field) {
+  localStorage.setItem(field.id, field.value);
+}</pre>
+
+<h4>Deleting a key with removeItem(key), or all keys with clear()</h4>
+
+<p>Deleting a key can be performed through removeItem(). And if you wish
+to reset the entire store, simply call localStorage.clear().</p>
+
+<p>Note that it will probably only be the rare occasion that you will
+want the entire store to be cleared by the user in production software
+(since that effectively deletes their entire data). However, it is a
+rather a common operation needed during development, since bugs may
+store faulty data the persistence of which can break your application,
+since the way you store data may evolve over time, or simply because you
+also need to test the experience of the user when first using the
+application.</p>
+
+<p>One way of handling this is to add a user interface button that
+calls clear() when clicked, but you must then remember to remove it when
+you ship! The recommended approach  to use (whenever possible) is to
+simply open the dev. tool’s console and type localStorage.clear() there
+— it’s safer and works just as well.</p>
+
+<h4>Iterating local stores</h4>
+
+<p>Local stores (localStorage or sessionStorage) can also be iterated
+through in order to list all the content that they contain. The order is
+not guaranteed, but this may be useful at times (if only for debugging
+purposes!). The following code lists everything in the current store:</p>
+
+<pre>for (var i = 0, n = localStorage.length; i &lt; n; i++) {
+  var k = localStorage.key(i);
+  console.log(k + &quot;: &quot; + localStorage[k]); // get the ith value, the one with a key that is in the variable k.
+}</pre>
+
+<p>Students may note that something seems a bit off in the example
+above: instead of calling localStorage.getItem(k), we simply
+access localStorage[k]. Why? Because keys in the local store can also be
+accessed as if the store were a simple JavaScript object.</p>
+
+<p>Instead of localStorage.getItem(“foo”) and localStorage.setItem(“foo”,
+“bar”), one can write localStorage.foo and localStorage.foo = “bar”. Of
+course there are limitations to this mapping: any string can serve as a
+key, so that localStorage.getItem(“one two three”) works, whereas that
+string would not be a valid identifier after the dot (but it could still
+work as localStorage[“one two three”]).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 300. number of times this page has shown on browser (359) ~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image300.webp"
+  loading="lazy"
+  title="Example with buttons that show how to iterate on localStorage, clear it etc"
+  alt="Example with buttons that show how to iterate on localStorage, clear it etc."
+  style="width:35%;" />
+  
+<h4>Example that shows all the methods of the local storage API in action</h4>
+
+<p><a href="https://jsbin.com/nedigi/edit?html,css,output" target="_blank" rel="noopener noreferrer">Online
+example at JSBin</a>, run it, then click on the first button to show all
+key/values in the localStorage. Open the URL in another tab, and see
+that the data is shared between tabs, as local stores are attached to an
+origin.</p>
+
+<p>Then click on the second button to add data to the store, click on
+the third to remove data. Finally, the last one clears the whole data
+store.</p>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<h4>Source code:</h4>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=utf-8 /&gt;
+&lt;title&gt;Example of localStorare API use&lt;/title&gt;
+  &lt;script&gt;
+    // Using localStorage
+    var counter = localStorage.getItem(&quot;count&quot;) || 0;
+    counter++;
+  localStorage.setItem(&quot;count&quot;, counter);
+ 
+    function getCountValue() {
+       // retrieve data
+       document.querySelector(&quot;#counter&quot;).innerHTML = localStorage.count;
+     }
+ 
+     function seeAllKeyValuePairsStored() {
+       // clear list first
+       document.querySelector(&#39;#list&#39;).innerHTML=&quot;&quot;;
+ 
+       for (var i = 0, n = localStorage.length; i &lt; n; i++) {
+         var key = localStorage.key(i);
+         var value = localStorage[key];
+         console.log(key + &quot;: &quot; + value);
+
+         var li = document.createElement(&#39;li&#39;);
+         li.innerHTML = key + &quot;: &quot; + value;
+         document.querySelector(&#39;#list&#39;).insertBefore(li, null);
+      }
+    }
+ 
+    function resetStore() {
+      // erase all key values from store
+        localStorage.clear();
+      // reset displayed list too
+        document.querySelector(&#39;#list&#39;).innerHTML=&quot;&quot;;
+    }
+
+    function addSomeData() {
+      // store data
+      localStorage.lastName = &quot;Buffa&quot;;
+      localStorage.firstName = &quot;Michel&quot;;
+      // refresh display
+      seeAllKeyValuePairsStored();
+    }
+
+    function removeSomeData() {
+      // store data
+      localStorage.removeItem(&quot;lastName&quot;);
+      localStorage.removeItem(&quot;firstName&quot;);
+      // refresh display
+      seeAllKeyValuePairsStored();
+    }
+  &lt;/script&gt;
+&lt;/head&gt;
+ &lt;body onload=&quot;getCountValue()&quot;&gt;
+   &lt;h1&gt;Number of times this page has been seen on this browser: &lt;span id=&quot;counter&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+
+   &lt;button onclick=&quot;seeAllKeyValuePairsStored()&quot;&gt;Show all key value pairs stored in localStorage&lt;/button&gt;&lt;br/&gt;
+   &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
+ 
+   &lt;button onclick=&quot;addSomeData()&quot;&gt;Add some data to the store&lt;/button&gt;&lt;br/&gt;
+   &lt;button onclick=&quot;removeSomeData()&quot;&gt;Remove some data&lt;/button&gt;&lt;br/&gt;
+   &lt;button onclick=&quot;resetStore()&quot;&gt;reset store (erase all key/value pairs)&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+<p>You can check in the Chrome dev. tools user interface that the
+content of the localStorage changes as you click on the buttons.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-2-4">6.2.4 Example 2</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Local stores are also useful for<b> saving/restoring user
+preferences</b> of Web Applications. For example, the JS Bin tool you
+have been using since the beginning of this course uses localStorage to
+store the list of tabs you open, and their width:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 301. example user preferences of web applications (361) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image301.webp"
+  loading="lazy"
+  title="Example of preferences"
+  alt="Example of preferences."
+  style="width:35%;" />
+
+<p>This way, the next time you come back to JSBin, “it will remember
+your last settings”.</p>
+
+<p>Another example is a guitar FX processor / amp simulator your
+instructor is writing with some of his students. It uses localStorage to
+save/restore presets values:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 302. another example of localstorage of preset values (362) ~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image302.webp"
+  loading="lazy"
+  title="Guitar fx processor uses localStorage"
+  alt="Guitar fx processor uses localStorage."
+  style="width:35%;" />
+  
+<h4>Save/restore preferences</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 303. change color, size, speed of animate rectangle with gui (362) ~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image303.webp"
+  loading="lazy"
+  title="Change color, size and speed of animated rectangle with GUI"
+  alt="Change color, size and speed of animated rectangle with GUI."
+  style="width:35%;" />
+
+<p>Original example on JSBin:</p>
+
+<p>We can change the color, size and speed of the animated rectangle.
+However, each time we come back to the page, default values are
+restored.</p>
+
+<p>We would like to save the current values and find them back as they
+were when we come back to the page.</p>
+
+<p><a href="https://jsbin.com/cebavo/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">
+Here is a modified example that saves/restores its state, you can try it
+at JSBin</a>. In this modified version of the animated rectangle
+example, you can set the color, size, speed, etc. And if you reload the
+page, the state of the different input field is restored, but also the
+internal variables. Check the source code in the JS Bin example and read
+the following explanations.</p>
+
+<p>We used the same generic code for saving/restoring input fields’
+values we saw in the first example that used localStorage. The only
+difference is that we renamed the two generic functions so that they
+correspond better to their role here (instead of saveFormContent we
+called the function restorePreferences).</p>
+
+<p>The function initPreferences is executed when the page is loaded.</p>
+
+<h4>Source code extract:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>function initPreferences() {
+  console.log(&quot;Adding input listener to all input fields&quot;);
+  // add an input listener to all input fields
+  var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
+  for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
+    addInputListener(listOfInputsInForm[i]);
+  }
+    // restore preferences
+    restorePreferences();
+    applyGUIvalues(); // Use the input fields&#39; values we just restored to set internal 
+                      // size, incX, color, lineWidth variables
+}
+function addInputListener(inputField) {
+  // same as before
+}
+function restorePreferences() {
+  // same as old restoreFormContent
+}
+function applyGUIvalues() {
+  // Check restored input field content to set the size of the rectangle
+  var sizeWidget = document.getElementById(&quot;size&quot;);
+  size = Math.sign(incX)*parseInt(sizeWidget.value);
+  // also update the outline element&#39;s value
+  document.getElementById(&quot;sizeValue&quot;).innerHTML = size;
+  // Check restored input field content to set the color of the rectangle
+  var colorWidget = document.getElementById(&quot;color&quot;);
+  ctx.fillStyle = colorWidget.value;
+  // Check restored input field content to set the speed of the rectangle
+  var speedWidget = document.getElementById(&quot;speed&quot;);
+  incX = Math.sign(incX)*parseInt(speedWidget.value);
+  // also update the outline element&#39;s value
+  document.getElementById(&quot;speedValue&quot;).innerHTML = Math.abs(incX);
+  // Check restored input field content to set the lineWidth of the rectangle
+  var lineWidthWidget = document.getElementById(&quot;lineWidth&quot;);
+  ctx.lineWidth = parseInt(lineWidthWidget.value);
+}</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-2-5">6.2.5 Example 3</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><a href="https://jsbin.com/zowise/edit?html,js,output" 
+target="_blank" rel="noopener noreferrer">Online example at JSBin</a></p>
+
+<p>This time, using the setItem and getItem method we saw earlier in the
+course, we could write some generic functions for saving/restoring input
+fields’ content, without having advance knowledge about the number of
+fields in the form, their types, their ids, etc.</p>
+
+<p>Furthermore, we removed all input listeners in the HTML, making it
+cleaner (no more oninput=“localStorage.firstName = this.value;’…)</p>
+<p>Define listeners + restore old values after the page is loaded, use
+generic functions</p>
+
+<p>We start writing an init() function that is called when the page is
+loaded. This function will:</p>
+
+<ol type="1">
+  <li>Define input listeners for all input fields</li>
+  <li>Restore the last saved value for each input field, if present.</li>
+</ol>
+
+<h4>Source code:</h4>
+
+<pre>// Called when the page is loaded
+window.onload = init;
+function init() {
+  console.log(&quot;Adding input listener to all input fields&quot;);
+  // add an input listener to all input fields
+  var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
+  for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
+     addInputListener(listOfInputsInForm[i]);
+   }
+   // restore form content with previously saved values
+   restoreFormContent();
+}</pre>
+
+<p>And here is the addInputListener(inputField) function. It takes an
+input field as parameter and attaches an oninput listener to it, that
+will save the field’s content each time a value is entered. The key will
+be the id of the input field (<i>line 3</i>):</p>
+
+<pre>function addInputListener(inputField) {
+  inputField.addEventListener(&#39;input&#39;, function(event) {
+    localStorage.setItem(inputField.id, inputField.value);
+  }, false);
+}</pre>
+
+<p>Note that at <i>line 2</i>, we use addEventListener (that is not
+using the oninput property here). adddEventListener doesnot replace
+existing oninput definitions and keep all existing listeners
+unchanged.</p>
+
+<h4>Restore all input fields’ content using a generic function</h4>
+
+<p>We have seen how to save all input fields’ content on the fly.
+Now, let’s see how we can restore saved values and update the form. This
+is done using the function restoreFormContent():</p>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>function restoreFormContent() {
+  console.log(&quot;restoring form content from localStorage&quot;);
+  // get the list of all input elements in the form
+  var listOfInputsInForm = document.querySelectorAll(&quot;input&quot;);
+  // For each input element,
+  // - get its id (that is also the key for it&#39;s saved content
+  // in the localStorage)
+  // - get the value associated with the id/key in the local
+  // storage
+  // - If the value is not undefined, restore the value
+  // of the input field
+  for(var i= 0; i &lt; listOfInputsInForm.length; i++) {
+    var fieldToRestore = listOfInputsInForm[i];
+    var id = fieldToRestore.id;
+    var savedValue = localStorage.getItem(id);
+    if(savedValue !== undefined) {
+       fieldToRestore.value = savedValue;
+    }
+  }
+}</pre>
+
+</details>
+
+<p>In this function, we first get the list of input fields (<i>line
+5</i>), then iterate on it (<i>line 14</i>). For each input field, we
+get its id, which value is the key in localStorage for the previous data
+saved for this field (<i>lines 15-16</i>). Then if the value is not
+undefined, we restore it by setting the value of the input field
+(<i>lines 19-20</i>).</p>
+
+<p>These generic functions can be used in many different projects</p>
+
+<p>Indeed, if you look carefully, you will see that these functions are
+really useful. You may easily embed them in your own projects, or
+perhaps adapt them for a particular need (i.e. for saving input
+type=“checkboxes” that work a bit differently), etc.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-2-6">6.2.6 Size limitations, etc.</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Few things to remember, from the Web storage specification:</p>
+
+<ul>
+  <li>User agents (browsers) should limit the total amount of space allowed for storage areas.</li>
+  <li>User agents may prompt the user when quotas are reached, allowing the user to grant more space to a site. This enables sites to store many user-created documents on the user’s computer, for instance.</li>
+  <li>User agents should allow users to see how much space each domain is using.</li>
+  <li>A mostly arbitrary limit of five megabytes per origin is recommended (translation: give at least 5Mb per origin).</li>
+</ul>
+
+<p><b>In many cases, local storage is all that your application will
+need for saving/loading data on demand</b>. More complex ways to do it
+exist, such as IndexedDB, a No SQL database, that proposes transactions
+and usually comes with far more available space than local storage.
+IndexedDB usage is for advanced users and will be covered in the W3Cx
+HTML5 Apps and Games.</p>
+
+<p>Additionally, there will be a limit on the amount of data that you
+can store there. Browsers enforce quotas that will prevent you from
+cluttering your users’ drives excessively. These quotas can vary from
+platform to platform, but are usually reasonably generous for simple
+cases (around 5MB), so <b>if you are careful not to store anything huge
+there, you should be fine.</b></p>
+
+<p><b>Finally, keep in mind that this storage is not necessarily
+permanent.</b> Browsers are inconsistent in how they allow for it to be
+wiped, but in several cases it gets deleted with cookies — which is
+logical when you think of how it can be used for tracking in a similar
+fashion.</p>
+
+<p>For serious applications, you might want to synchronize
+existing data with the server on a regular basis, in order to avoid data
+loss (and in general, because users enjoy using the same service from
+multiple devices at once). This is a rather complex feat, and frameworks
+such as Firebase can help. Such techniques are beyond the scope of this
+course and will not be covered.</p>
+
+<p>sessionStorage key/values instead of cookies?</p>
+
+<p>Note that if all you need is to store session-based data in a manner
+that is more powerful than cookies, you can use
+the sessionStorage object which works in exactly the same way as
+localStorage, but the lifetime is limited to a single browser session
+(lifetime of your tab/window).</p>
+
+<p><b>Also note that in addition to being more convenient and capable of
+storing more data than cookies, it has the advantage of being scoped to
+a given browser tab (or similar execution context).</b></p>
+
+<p><b>Cookies’ security drawback: </b>if a user has two tabs open to the
+same site, they will share the same cookies. Which is to say that if you
+are storing information about a given operation using cookies in one
+tab, that information will leak to the other side — this can be
+confusing if the user is performing different tasks in each.</p>
+
+<p><b>By using sessionStorage, the data you store will be scoped and
+therefore not leak across tabs!</b></p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-2-7">6.2.7 Storing more than strings? Use JSON!</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Storing strings is all well and good, but it quickly
+becomes limiting: you may want to store more complex data with at least
+a modicum of structure.</p>
+
+<p>There are some simple approaches, such as creating your own minimal
+record format (e.g. a string with fields separated with a given
+character, using join() on store and split() upon retrieval) or using
+multiple keys (e.g. post_17_title, post_17_content, post_17_author,
+etc.). But these are really hacks. Thankfully, there’s a better way,
+ JSON.stringify() and JSON.parse() methods.</p>
+
+<p><a href="https://www.json.org/" target="_blank" rel="noopener noreferrer">JSON</a> provides a great way of
+encoding and decoding data that is a really good match for JavaScript.
+You have to be careful not to use circular data structures or
+non-serializable objects, but in the vast majority of cases, plugging
+JSON support into your local store is straightforward.</p>
+
+<h4>Typical usage</h4>
+
+<pre>locaStorage.key = JSON.stringify(object); // or...
+localStorage.setItem(key, JSON.stringify(object));</pre>
+
+<p>Let’s try a simple toy example
+(<a href="https://jsbin.com/ciricis/2/edit?html,console,output" target="_blank" rel="noopener noreferrer">online
+at JSBin</a>).  The example below saves a JavaScript object in JSON,
+then restores it and checks that the object properties are still
+there!</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 304. json save/load in local storage (367) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image304.webp"
+  loading="lazy"
+  title="JSON save/load in local storage"
+  alt="JSON save/load in local storage."
+  style="width:35%;" />
+
+<h4>Source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=utf-8 /&gt;
+  &lt;title&gt;Storing JSON Objects with Local Storage&lt;/title&gt;
+  &lt;script&gt;
+    var personObject= {&#39;givenName&#39;: &#39;Michel&#39;, &#39;familyName&#39;: &#39;Buffa&#39;};
+    // Store the object as a JSON String
+    localStorage.setItem(&#39;testObject&#39;, JSON.stringify(personObject));
+    // Retrieve the object from storage
+    var retrievedObject = JSON.parse(localStorage.getItem(&#39;testObject&#39;));
+    console.log(retrievedObject.firstName + &quot; &quot; + retrievedObject.lastName);
+   // then you can use retrievedObject.givenName, retrievedObject.familyName...
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Explanations:</h4>
+
+<ul>
+  <li><i>Line 7</i>: we built a JavaScript object that contains a person.</li>
+  <li><i>Line 9</i>: we store it in localStorage as a JSON string object, with a key equal to testObject.</li>
+  <li><i>Line 11</i>: we restore it from localStorage as a string, and the JSON.parse methods turns it back into a JavaScript object.</li>
+  <li><i>Line 12</i>: we print the values of the object properties.</li>
+</ul>
+
+<h4>Examples</h4>
+
+<h4>Example #1: showing how we can save a form’s content in JSON</h4>
+
+<p><a href="https://jsbin.com/nejewiw/2/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">Online
+example on JSBin that saves in localStorage an array of contacts in
+JSON</a></p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 305. save local storage in json (368) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image305.webp"
+  loading="lazy"
+  title="How to save a form's content in localStorage using JSON"
+  alt="How to save a form's content in localStorage using JSON."
+  style="width:35%;" />
+
+<h4>Example #2: a form and a table that displays the contacts stored in localStorage</h4>
+
+<p><a href="https://jsbin.com/karoboj/3/edit?html,css,console,output" target="_blank" rel="noopener noreferrer">Example on JSBin</a></p>
+
+<p>Add contacts using the form, see how the HTML table is updated. Try
+to reload the page: data are persisted in localStorage. </p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 306. serverless contact manager (369) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image306.webp"
+  loading="lazy"
+  title="Serverless contact manager"
+  alt="Serverless contact manager."
+  style="width:35%;" />
+
+<p>Examine the localStorage:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 307. localStorage view in devtools shows the data (369) ~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image307.webp"
+  loading="lazy"
+  title="localStorage view in devtools shows the data"
+  alt="localStorage view in devtools shows the data."
+  style="width:35%;" />
+
+<p>The source code for this example is a bit long, and we suggest that you examine 
+it in the JS Bin tool. We extensively commented it. It uses:</p>
+
+<p>Well structured pages with the new elements seen during Module 1
+(section, article, nav, aside, etc.)</p>
+
+<p>HTML5 form elements with builtin and custom validation (the date
+cannot be in the past, the firstName and lastName fields do not accept
+&amp;, #, ! or $ characters), localStorage for saving / restoring an
+array of contacts in JSON.</p>
+
+<p>It shows how to use the DOM API for dynamically updating the page
+content (build the HTML table from the array of contacts, add a new line
+when a new contact is submitted, etc.)</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-3-1">6.3.1 File API Introduction</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The objective of this chapter is to provide an overview of the File API.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 308. sound sample editor serverless (370) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image308.webp"
+  loading="lazy"
+  title="Sound sample editor serverless"
+  alt="Sound sample editor serverless."
+  style="width:35%;" />
+
+<p>Before HTML5, file management was limited to multipart forms and to
+Ajax for sending/requesting files to/from a remote Web server.</p>
+
+<p>Possible actions were limited, both for the developer and the user.
+However, HTML5 now comes with an API called “File” that holds features
+for accessing file metadata (name, size, type) from client-side
+JavaScript. The API also has methods for reading file contents directly
+in the browser. This is particularly interesting for displaying preview
+of images before uploading them, or - and this is much more interesting
+- for developing Web applications that work with local files without the
+need for a server.</p>
+
+<p>Imagine a multimedia player that accesses (in read-only) your file
+system, reads your audio and video files, etc., such as the <a
+href="https://chrome.google.com/webstore/detail/remo-music-player/ajilpdcmebalpffmjjopcingplogifhb" 
+target="_blank" rel="noopener noreferrer">Remo Music player</a> below, or an application 
+that edits the audio content of local mp3 files, for example, the 
+<a href="https://wav.hya.io/#/fx" target="_blank" rel="noopener noreferrer">
+HYA-WAVE sound editor</a> (screenshot above).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 309. audio player that plays local files (370) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image309.webp"
+  loading="lazy"
+  title="Audio player that plays local files"
+  alt="Audio player that plays local files."
+  style="width:35%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 310. polarr photo editor uses the File API (371) ~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image310.webp"
+  loading="lazy"
+  title="polarr photo editor uses the File API"
+  alt="polarr photo editor uses the File API."
+  style="width:35%;" />
+
+<h4>External resources</h4>
+
+<ul>
+  <li>From W3C’s specification: <a
+    href="https://www.w3.org/TR/FileAPI/" target="_blank" rel="noopener noreferrer">File API</a></li>
+  <li>An article from Web.dev: <a
+    href="https://web.dev/read-files/" target="_blank" rel="noopener noreferrer">Read files in JavaScript</a></li>
+  <li>MDN’s Web Docs: <a
+    href="https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications" target="_blank" 
+      rel="noopener noreferrer">Using files from web applications</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-3-2">6.3.2 Working with local files</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Hi! Welcome for this second video of module 6, in which we will talk
+about the file Javascript API.</p>
+
+<p>This is an API that has been designed for working with files on the
+client side in Javascript.</p>
+
+<p>Before HTML5, there was no mean to know the the size, the name, the
+modification date of a file without sending it to a remote server. It
+was not possible also to read the content of a file, for example for
+previewing an image before uploading it into a remote server, or if you
+wanted to play a local audio file, or a video file without streaming and
+downloading it from a remote server. It was not possible.</p>
+
+<p>I’m going first to show you some example of server less applications.</p>
+
+<p>I mean applications written using HTML, CSS and Javascript that do
+not rely on data located on a remote server.</p>
+
+<p>For example, I can show you this. This is a wave. This is an audio
+file editor that works with local files. I open the page, and from here
+I can drop a music file directly. Let’s go to get some music somewhere.
+Some AC/DC song! I can just drop the song and I can edit the song. I can
+play the song. I can cut, I can save locally, etc.</p>
+
+<p>Another example is an application, a Chrome application that is also
+written using Web technologies but doesn’t run using HTTP.</p>
+
+<p>It’s quite easy to write such applications, because there are regular
+Web applications using HTML, CSS and Javascript except that you’ve got
+to package them for putting them on the Chrome store.</p>
+
+<p>I’m going first to show you a local audio file player that is called
+Remo.</p>
+
+<p>I can just open files, choose one or several, open the files, I’ve
+got a playlist and I can play the songs. Normally it works… yes, OK.</p>
+
+<p>Finally, I’m going to show you an image editor that has been written
+by one of the students from this course. This is an example of
+Instagram-like filters that have been written by <span class="citation"
+data-cites="GeorgianaB">@GeorgianaB</span> from the discussion forum.
+It’s a regular Web application except that you can upload an image, a
+local image. Ok, no, this one is too small maybe. You can upload an
+image… it’s me with a strange head ;) Then you can apply Instagram
+filters or add borders. You can even download the result to your local
+disk.</p>
+
+<p>We saw how to do this when we look at the download attributes in
+Module 1.</p>
+
+<p>All these examples work with local files. Let’s go back to the course
+and now I’m going to show you how we can, for example, read images using
+an input type=file like this.</p>
+
+<p>Select several files, open, and look at the preview directly in the
+page.</p>
+
+<p>Here, I just read the files using the File API, I read them as what
+we call data URL and I created some img elements we added in the
+page.</p>
+
+<p>First, before writing the application, I want to talk a little bit
+about data URLs.</p>
+
+<p>Data URLs are strange set of characters like that ,and if you select
+them and paste them in the address bar you can see a small red icon. And
+you can use this everywhere where you would have use an http://URL.</p>
+
+<p>If I use this image here, I can using it in JSBin for example, and if
+I add the image here I can see that the content of the image, the
+pixels, are encoded in the URL itself. How can you make such URLs?
+You’ve got plenty of Web sites, look for data URL with a search engine
+and you’ve got plenty of them.</p>
+
+<p>The first one here is called DATAURL.net and it included ‘Data URL
+Maker’ so you can just open a file, any sort of file, here I take a JPG
+file and it will produce the data URL that corresponds. But you can also
+use with mp3 file, or mp4 file video or any sort of file encoding.</p>
+
+<p>This was to introduce this new sort of URL that maybe you’ve never
+heard about before. Now, how can we write this?</p>
+
+<p>I’m going to explain with the source code here because it’s simpler.</p>
+
+<p>After that I will code it live. What we do is that we use an input
+type=file for reading the files. We define an event listener that will
+call this function ‘read files and display preview’ once the user has
+chosen some files.</p>
+
+<p>In this callback, we iterate, we’ve got a ‘for’ loop, about the
+files. For each file, we build a file reader, that is a special object,
+that has a function called ‘readAsDataURL’, that will take a file
+descriptor as a parameter here.</p>
+
+<p>When the file is read, because that can take some time if the file is
+big, then each file is read, the onload callback is executed. It’s
+exactly the same principle we saw with images as reading an image can
+take some time. You can only work with that image in an onload callback.
+So, when we enter this function that means that one file has been read
+and we can get the content of the file through the event using the
+‘e.target.result’ property. Each time I read a file I can get its
+content here and it’s a data URL that contains all the pixels.</p>
+
+<p>What we do in that example, is that we create a &lt;span&gt;. In the span with the 
+innerHTML, we add an image that has for src attribute the content of the image we read 
+as a data URL.</p>
+
+<p>And finally, we just insert this image in the document and this is when we see it.</p>
+
+<p>I’m going to live code this one, maybe a simpler version so that you can see the 
+different steps in real time. First, I add an ‘input type=file multiple’ for 
+selecting multiple files. This is what’s happening and here I can select several 
+images. I’m going to add an ‘onchange’ listener:</p>
+
+<pre>&#39;onchange=readImagesAndPreview()&#39;.</pre>
+
+<p>And I’m going to pass the set of file descriptors that have been selected; 
+‘this.files’ is the correct way to send the selected files to a Javascript function.</p>
+<p>Now, I’m going to start writing some script. But before, I will add a space, 
+let’s say ‘div id=thumbnails’.</p>
+
+<p>This is an empty container that will be used for inserting the preview of the images.</p>
+
+<p>Now I’m going in the script part. In the script part, we’re going to write this 
+function ‘readImagesAndPreview()’ and it takes as parameter the files that will be sent.</p>
+
+<p>And here if I want just to read the first file I will just show you how it works. 
+I create a reader object, like that, and I ask the reader to ‘readAsDataURL’ the first 
+file.</p>
+
+<p>What is happening is that this may take some time and I need to declare, before 
+reading the files, a callback that will be code only once the file would have been read 
+- ‘reader.onload’</p>
+
+<p>And here, what can I do with the file that has been read, I will create an image 
+element.</p>
+
+<p>So i created an image element, I set the source of this element with the file content 
+that is in the ‘e.target.value’. So I created an image.  Then, I will add the image to 
+the container here. I’m going to declare the container here. How can I add an element: 
+‘container.appendChild’ and I add the image I created.</p>
+
+<p>Let’s try it, maybe I made some mistakes. I select several files, I open them and 
+here, apparently, I make a small mistake.</p>
+
+<p>Let’s open an image and now read the image and I can see the preview.</p>
+
+<p>If you look carefully, it’s just a few lines of code.</p>
+
+<p>So now I’m going to show you how we could work with not only one single image, 
+but several images. The trick consists in adding a ‘for’ loop.</p>
+
+<p>We will iterate on the length of the file’s variable here. If we got 3 files, 
+we do 3 loops. I’m going to define a variable called ‘f’ that will correspond 
+to the current file.</p>
+
+<p>What we are going to read this time is the current file ‘f’.</p>
+
+<p>So this loop here, will first read files, for each one we do read as data URL, 
+when the file is read we enter the onload callback, we create an image with the 
+result.</p>
+
+<p>I’m going just to add some constraints on the size, because when I tried earlier 
+I had big images that could not fit on the screen.</p>
+
+<p>I constraint the width to 100px and the height will just follow.</p>
+
+<p>Like this, let’s try. If I select several pictures, two of them,</p>
+
+<p>I can see the two pictures. If I select more, then I can see the whole set of 
+pictures that are coming as previews.</p>
+
+<p>You can see that the number of lines of code is really small and this is quiet 
+powerful.</p>
+
+<p>If you want to write, for example, a Web site that will upload
+pictures, you can preview them, select them and then upload them.</p>
+
+<p>I show you earlier the application by one of the students that can do
+Instagram like filters, but you can also find some new on the Chrome
+store.</p>
+
+<p>I installed one that is called Polarr that is using HTML for all the functionalities. 
+So you can just import a picture, let’s say this one.  Then you can select filters, 
+you can do some corrections on it and so on, and finally you can export it and that’s 
+all.</p>
+
+<p>All this here is HTML5, this is canvas, these are form elements we saw the last 
+week, some canvas here, or image elements and so on.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 311. image previews (374) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image311.webp"
+  loading="lazy"
+  title="Image preview"
+  alt="Image preview."
+  style="width:35%;" />
+
+<h4>Source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of using readAsDataURL&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;input type=&quot;file&quot; multiple onchange=&quot;readImagesAndPreview(this.files);&quot;&gt;
+  &lt;p&gt;
+    &lt;div id=&quot;thumbnails&quot;&gt;&lt;/div&gt;
+    &lt;script&gt;
+      var container = document.getElementById(&quot;thumbnails&quot;);
+      function readImagesAndPreview(files) {
+        for(var i=0; i &lt; files.length; i++) {
+           var f = files[i];
+           var reader = new FileReader();
+           reader.onload = function(e) {
+              var img = document.createElement(&quot;img&quot;);
+              img.src = e.target.result;
+              img.width = 100;
+              container.appendChild(img);
+           }
+           reader.readAsDataURL(f);
+        }
+      }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-3-3">6.3.3 Reading File Metadata</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Imagine you have an input field like this:</p>
+
+<ol type="1">
+  <li>Select one or more files: &lt;input type=“file” id=“input”/&gt;</li>
+</ol>
+
+<p>This renders as a “select files” or “browse files” button. If you
+select one file in the file chooser dialog that has popped up, before
+HTML5 you couldn’t do anything with it in the client-side: no access
+from JavaScript. With the File API, you can read what we call “file
+metadata”: name, size, type and last modification date.</p>
+
+<p>Look at the code below: the file API defines a files property on the
+DOM node corresponding to the &lt;input type=“file”…/&gt; input field.
+This property is an array.</p>
+
+<p>In the example below, we get in the selectedFile variable, the
+metadata related to the first selected file:</p>
+
+<pre>var selectedFile = document.getElementById(&#39;input&#39;).files[0];
+// do something with selectedFile.name, selectedFile.size, selectedFile.type
+// selectedFile.lastModifiedDate
+...</pre>
+
+<h4>Examples</h4>
+
+<h4>Example #1: read metadata of the first selected file</h4>
+
+<p><a href="https://jsbin.com/terocu/edit?html,output" target="_blank" rel="noopener noreferrer">
+Here is a complete example on JSBin</a> that uses the code above to get details
+about the first selected file. Please try it below on your browser
+(click on the button and choose one file):</p>
+
+<h4>Select one or more files:</h4>
+
+<ul>
+  <li>File name:</li>
+  <li>File size:</li>
+  <li>File type:</li>
+  <li>File last modification date:</li>
+</ul>
+
+<h4>Complete source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=utf-8 /&gt;
+  &lt;title&gt;Reading file metadata&lt;/title&gt;
+&lt;script&gt;
+  function displayFirstSelectedFileMetadata() {
+    var selectedFile = document.getElementById(&#39;input&#39;).files[0];
+      document.querySelector(&quot;#singleName&quot;).innerHTML = selectedFile.name;
+      document.querySelector(&quot;#singleSize&quot;).innerHTML = selectedFile.size + &quot; bytes&quot;;
+      document.querySelector(&quot;#singleType&quot;).innerHTML = selectedFile.type;
+      document.querySelector(&quot;#singleDate&quot;).innerHTML = selectedFile.lastModifiedDate;
+    }
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Select one or more files: &lt;input type=&quot;file&quot; id=&quot;input&quot;
+    onchange=&quot;displayFirstSelectedFileMetadata();&quot;/&gt;
+  &lt;p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;File name: &lt;span id=&quot;singleName&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;File size: &lt;span id=&quot;singleSize&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;File type: &lt;span id=&quot;singleType&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;File last modification date: &lt;span id=&quot;singleDate&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Example #2: display metadata of multiple files, use a filter on the file type</h4>
+
+<p>This example is a bit more complicated, as it will display details
+about all files selected (not only the first) and allows only images to
+be selected, using the accept attribute of the input field: &lt;input
+type=“file” accept=“image/*“…/&gt;.</p>
+
+<p><a href="https://jsbin.com/deboja/edit?html,output" target="_blank" rel="noopener noreferrer">Example on
+JSBin</a>, or try it in your browser: click on the button, and select
+multiple image files. Notice that in the file selector, files that are
+not images will be greyed and non selectable.</p>
+
+<h4>Select several images:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;p&gt;Select several images: &lt;input
+      type=“file” accept=“image/*“ multiple onchange=”filesProcess(this.files)“ 
+      name=”selection”/&gt;&lt;/p&gt;
+&lt;div id=&quot;result&quot;&gt;...&lt;/div&gt;
+&lt;script&gt;
+  function filesProcess(files) {
+    var selection = &quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;
+    /th&gt;&lt;th&gt;Bytes&lt;/th&gt;&lt;th&gt;MIME Type&lt;/th&gt;
+    &lt;th&gt;Last modified date&lt;/th&gt;&lt;/tr&gt;&quot;;
+    for(i=0; i&lt;files.length ;i++){
+     file = files[i];
+     selection += &quot;&lt;tr&gt;&lt;td&gt;&quot;+file.name+&quot;&lt;/td&gt;&lt;td
+       style=&quot;text-align:right&quot;&gt;&quot;
+       +file.size+&quot;&lt;/td&gt;&lt;td&gt;&quot;
+       +file.type+&quot;&lt;/td&gt;&lt;td&gt;
+     &quot;+file.lastModifiedDate+&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+  }
+    selection += &quot;&lt;/table&gt;&quot;;
+    document.getElementById(&quot;result&quot;).innerHTML = selection;
+  }
+&lt;/script&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Explanations:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li><i>Line 1:</i> we used the multiple attribute to allow the selection of 
+    multiple files in the file chooser (using shift or control keys). 
+    The accept=“image/” attribute is a filter that restricts selection to images only. 
+    Finally, the onchange listener will call the filesProcess(…) function, passing as 
+    parameter the list of selected files for the current element (this.files).<br></li>
+  <li><i>Lines 9 and 13:</i> we prepare the HTML code for building a &lt;table&gt; 
+    with the results.<br></li>
+  <li><i>Line 7:</i> this for loop builds all the rows that compose the table, adding 
+    HTML code to  the selection string variable. At the end of the loop, this variable 
+    contains all the HTML code that corresponds to the table of results.<br></li>
+  <li><i>Line 14:</i> the table is added to the page. We use the innerHTML attribute of 
+    the DOM element corresponding to the &lt;div id=“result”&gt; in order to insert the 
+    table as its child in the DOM tree. As such, the table appears on the page dynamically.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-3-4">6.3.4 Blob and File</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The <a href="https://www.w3.org/TR/FileAPI/" target="_blank" 
+rel="noopener noreferrer">HTML5 File API specification</a> introduces several interfaces:</p>
+
+<ul>
+  <li>the <a href="https://www.w3.org/TR/FileAPI/#filelist-section" target="_blank" 
+    rel="noopener noreferrer">FileList</a>interface (we already met it) the files 
+    property is a FileList,</li>
+  <li>the <a href="https://www.w3.org/TR/FileAPI/#file-section" target="_blank" 
+    rel="noopener noreferrer">File</a> interface that is useful for getting details 
+    about a file (the file variable in the for loop of the last example illustrates this),</li>
+  <li>the <a href="https://www.w3.org/TR/FileAPI/#blob-section" target="_blank" 
+    rel="noopener noreferrer">Blob</a> interface helps read binary data (only) 
+    that is accessed slice by slice (as chunks of data, each one being a “Blob”),</li>
+  <li>and the <a href="https://www.w3.org/TR/FileAPI/#APIASynch" target="_blank" 
+    rel="noopener noreferrer">FileReader</a> interface for reading file content 
+    (we will see how to use it in the next section of the course).</li>
+</ul>
+
+<p>We will not use all of these interfaces, but let’s explain the difference between 
+Blob and File, as most of the methods exposed by the FileReader interface take 
+indiscriminately a Blob or a File as parameter.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 312. the blob movie poster (377) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image312.webp"
+  loading="lazy"
+  title="The Blob movie poster"
+  alt="The Blob movie poster."
+  style="width:25%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>The Blob object</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><b>An object of type Blob is a structure that represents binary data
+available as read-only.</b> Most of the time, you will only encounter
+these objects when you handle files.</p>
+
+<p>Blob objects have two properties, namely:size and type, which
+respectively retrieve the size in bytes of the data handled by the Blob
+and their MIME type.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>The File object</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><b>File objects are useful for manipulating… files!</b> They inherit
+the properties and methods of Blob objects, and have two additional
+properties that are name, for the file name, and lastModifiedDate to get
+the date of the last modification of the file (in the form of a
+JavaScript Date object, obviously) .</p>
+
+<p>Most of the time, we will work with File objects. Blob objects will
+have real interest when you download binary files using Ajax (see
+example below).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>[Advanced]</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>If you are interested in seeing how Blob objects can be used, <a
+href="https://jsbin.com/jefitop/1/edit?html,output" target="_blank" 
+rel="noopener noreferrer">here is an example “as is” that shows how to download an image using Xhr2</a> (Xml Http
+Request version 2). The examples uses a &lt;progress&gt; element to show the
+download progress, and uses xhr.responseType = ‘blob’; to indicate that
+the file we are going to download is a binary file (a blob). Try the
+example, then comment the line with responseType=‘blob’. In this case,
+you will notice that the image file is not properly decoded by the
+browser and is not displayed in the page. We explain Xhr2 in the <a
+href="https://www.edx.org/course/html5-apps-and-games" target="_blank" 
+rel="noopener noreferrer">W3C HTML5 Apps and Games</a> course.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-3-5">6.3.5 Reading file content</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In order to read the content of a file, different steps required.
+Let’s see how to do it.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Typical use is made of three steps</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Step #1: create a FileReader object</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The file API proposes several methods for reading file content, each
+taken from the FileReader interface. Here is how you create a FileReader object:</p>
+
+<ol type="1">
+  <li>var reader = new FileReader();</li>
+</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Steps #2 and #3: first call a method of the FileReader object for reading 
+the file content, then get the file content in an onload callback</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>There are three different methods available for reading a file’s
+content: readAsText, readAsArrayBuffer for binary data and also
+as readAsDataURL (the content will be a URL you will use to set
+the src field of an &lt;img src=...&gt;, &lt;audio&gt;, &lt;video&gt;, and
+also with all existing methods/properties that accept a URL).</p>
+
+<p>All these methods take as a unique parameter a File object (for
+example, a file chosen by a user after clicking on a &lt;input
+type=file&gt; input field). Below, we use, as an example,
+the readAsText method:</p>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>function readFileContent(f) {
+  // Executed last: called only when the file content is loaded, e.target.result is
+  // The content
+  reader.onload = function(e) {
+    var content = e.target.result;
+    // do something with the file content
+    console.log(&quot;File &quot; + f.name + &quot; content is: &quot; + content);
+  };
+  // Executed first: start reading the file asynchronously, will call the
+  // reader.onload callback only when the file is read entirely
+  reader.readAsText(f);
+}</pre>
+
+</details>
+
+<p>The above code shows how a file can be read as text. The function is
+called, for example by clicking on the button corresponding to
+a &lt;input type=“file” id=“file” onchange=“readFileContent(this.files)”/&gt;, and 
+by choosing a file.</p>
+
+<ul>
+  <li><i>Line 11</i> is executed first, and asks the Reader object to read the file f as text. 
+    As this takes some time, it’s an asynchronous operation that will be executed by the 
+    browser in the background.  When the file is read, the reader.onload callback function 
+    is called.</li>
+  <li><i>Line 4</i> is executed after <i>line 11</i>, and is called only when the file 
+    content is available.  This callback takes an event e as a unique parameter, and 
+    e.target.result is the file content.</li>
+</ul>
+
+<p>Try a variation of the above code in your browser, that displays the
+file content in a text area. This example is detailed further in the
+course. Click and select a text file below:</p>
+<p>Choose a text file:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 313. select a text file (379) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image313.webp"
+  loading="lazy"
+  title="Select a text file"
+  alt="Select a text file."
+  style="width:25%;" />
+
+<p>In the following pages, we look at different examples that read file
+contents as text, dataURL and binary.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-3-6">6.3.6 Read file content as text</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Let’s start by reading a pure text file</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Examples</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example #1: read a single file’s content</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><a href="https://jsbin.com/xewemi/edit?html,output" target="_blank" rel="noopener noreferrer">
+Example at JSBin</a>, or try it below in your browser:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 314. read single files content (379) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image314.webp"
+  loading="lazy"
+  title="Read a single file's content"
+  alt="Read a single file's content."
+  style="width:25%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Complete source code:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of use of FileReader with a text file&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;label for=&quot;files&quot;&gt;Choose a text file:&lt;/label&gt;&lt;input type=&quot;file&quot; id=&quot;file&quot;
+  onchange=&quot;readFileContent(this.files)&quot;/&gt;&lt;br/&gt;
+&lt;p&gt;
+&lt;textarea rows=15 cols=50 id=&quot;fileContent&quot;&gt;&lt;/textarea&gt;
+
+&lt;script&gt;
+  function readFileContent(files) {
+    console.log(&quot;In readFileContent&quot;);
+    var reader = new FileReader();
+
+    // Executed last: called when the file content is loaded, e.target.result is
+    // The content
+    reader.onload = function(e) {
+      // display content in the textarea with id=&quot;fileContent&quot;
+      document.getElementById(&quot;fileContent&quot;).value= e.target.result;
+    };
+
+    console.log(&quot;Reading file:&quot; + files[0].name);
+
+    // Executed first: start reading the file asynchronously , will call the onload
+    // callback when the file is read
+    reader.readAsText(files[0]);
+  }
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<p>This example is the one at the end of the previous page. This time,
+we show the complete source code above. Remember that the instruction
+at <i>line 29</i> is executed first, then when the file is read, the
+browser will call asynchronously the onload callback at <i>line 20</i>.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example #2: a variation of the previous one, using multiple files</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><a href="https://jsbin.com/zaheyu/edit?html,output" target="_blank" rel="noopener noreferrer">
+Example on JSBin</a>, or try it below in your browser. This time, please select multiple text 
+files (using shift for multiple selection):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 315. choose multiple text files (380) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image315.webp"
+  loading="lazy"
+  title="Choose multiple text files"
+  alt="Choose multiple text files."
+  style="width:25%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Source code:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of use of FileReader with a text file&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;label for=&quot;files&quot;&gt;Choose multiple text files:&lt;/label&gt;
+&lt;input type=&quot;file&quot; id=&quot;files&quot;
+  multiple onchange=&quot;readFilesAndDisplayAsText(this.files);&quot;/&gt;&lt;br/&gt;
+&lt;p&gt;
+&lt;textarea rows=30 cols=50 id=&quot;filesContent&quot;&gt;&lt;/textarea&gt;
+
+&lt;script&gt;
+  var filesContent = document.getElementById(&quot;filesContent&quot;);
+
+  function readFilesAndDisplayAsText(files) {
+    console.log(&quot;dans read files&quot;);
+    // Loop through the FileList
+    for (var i = 0, f; f = files[i]; i++) {
+
+      var reader = new FileReader();
+
+      // Add an onload listener to the reader
+      addOnLoadListener(reader, f.name);
+      // start reading, will call the listener later, when the file f is read
+      reader.readAsText(f);
+
+    }
+  }
+
+  function addOnLoadListener(reader, name) {
+    // Add an onload listener that will be able to print the name of the
+    // file...
+    reader.onload = function(e) {
+      filesContent.value += &quot;###### READING FILE &quot; + name + &quot; ######&quot;;
+      filesContent.value += e.target.result;
+    };
+  }
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Explanations</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This example is similar to the previous one, except that this time we
+read multiple files.</p>
+<p><i>Line 20:</i> this is the for loop that will iterate on
+the files object passed as parameter by the onchange listener
+declaration at <i>line 10.</i></p>
+<p><i>Line 25:</i> instead of declaring the onload listener with
+a reader.onload =… directly in the loop, this time we preferred to write
+a separate function that will do this. This technique is useful when you
+want the listener to work with extra variables computed in the loop (in
+our case, the name of the file).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>About charter encoding</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Note that you can optionally indicate the encoding of the file you
+are going to read (default is UTF-8):</p>
+
+<pre>reader.readAsText(file, &#39;UTF-8&#39;);
+reader.readAsText(file, &#39;ISO-8859-1&#39;);
+...</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-3-7">6.3.7 Read file content as binary</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This method is rarely used, except for loading “raw” binary data. For
+images you would like to see in your HTML page using the &lt;img src=
+tag&gt; or for drawing in a canvas, or for audio and video files that
+you would like to play using
+the &lt;audio&gt; or &lt;video&gt; elements, it would be preferable
+to use the readAsDataURL method presented on the next page of the
+course.</p>
+<p>readAsArrayBuffer is often used for purposes such as reading audio
+samples that should be loaded in memory and played using the WebAudio
+API, or for loading textures that you will use with WebGL for 3D
+animations.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example: read a local audio file and play it with the WebAudio API</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The WebAudio API is useful for reading audio sound samples from
+memory (no streaming), and has been designed for music application and
+games. This example shows how a local audio file can be read and played
+directly in the browser, without the need for a server!</p>
+<p><a href="https://jsbin.com/xepexuy/1/edit?html,output" target="_blank" 
+rel="noopener noreferrer">Example on JSBin</a> (does not work on IE, as it does 
+not support the WebAudio API). We could not embed it here on the edX platform as 
+it prevents code that uses Ajax to run in its pages.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 316. webaudio api - does not work with microsoft shit (382) ~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image316.webp"
+  loading="lazy"
+  title="Local audio player"
+  alt="Local audio player."
+  style="width:35%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Source code extract:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary><b>Webaudio API:</b></summary>
+
+<pre>// User selects file. Read it as an ArrayBuffer and pass to the API.
+var fileInput = document.querySelector(&#39;input[type=&quot;file&quot;]&#39;);
+fileInput.addEventListener(&#39;change&#39;, function(e) {
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    initSound(e.target.result);
+  };
+  // THIS IS THE INTERESTING PART!
+  reader.readAsArrayBuffer(this.files[0]);
+}, false);</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Explanations:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li><i>Line 2:</i> we get a pointer to the file selector, the variable fileInput.</li>
+  <li><i>Line 5:</i> we define a change listener. In this example, we use an anonymous function directly 
+    included in the listener definition (the listener is the function(e) {…}).</li>
+  <li><i>Line 9:</i> when a user chooses a file, the listener will be executed. 
+    Line 9 will start the reading of the file content, as a binary file (this is 
+    what readAsArrayBuffer means: read as binary!). Once the file will be entirely read, 
+    the onload callback will be asynchronously called by the browser.</li>
+  <li><i>Line 5:</i> is the onload callback, executed when the file content is loaded in memory. 
+    We pass the file content to the initSound function (see JSBin example for complete source code) 
+    that uses WebAudio to decode it (it may be a compressed file - an mp3 for example - and WebAudio 
+    works only with uncompressed audio formats in memory), and to play it.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-3-8">6.3.8 Read file content as dataURL</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>What is a data URL?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>A data URL is a URL that includes type and content at the same time.
+It is useful, for example,  for in-lining images or videos in the HTML
+of a Web page (on mobile devices, this may speed up the loading of the
+page by reducing the number of HTTP requests).</p>
+
+<p>Here is an example of a red square, as a data URL. Copy and paste it
+in the address bar of your browser, and you should see the red
+square:</p>
+
+<pre>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>This data URL in a browser address bar should look like this:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 317. data url in address bar shows a red cirle (383) ~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image317.webp"
+  loading="lazy"
+  title="Data url in address bar shows a red circle"
+  alt="Data url in address bar shows a red circle."
+  style="width:35%;" />
+
+<p>If we set the src attribute of an image element
+&lt;img src=&quot;data:image/png....&quot;&gt; with the data URL of the above
+screenshot, it will work exactly as if you used a URL that started
+with https://</p>
+
+<p>In your browser, you will see a small red circle rendered by this source code:</p>
+
+<pre>&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
+AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
+
+9TXL0Y4OHwAAAABJRU5ErkJggg==&quot; alt=&quot;Red square&quot; width=50 height=50/&gt;</pre>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>And here is the result:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 318. red splotch (383) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image318.webp"
+  loading="lazy"
+  title="Red splotch"
+  alt="Red splotch."
+  style="width:15%;" />
+
+<p>This dataURL format enables file content to be stored in a base64
+format (as a string), and adds the MIME type specification of the
+content. The dataURL can therefore store a file as a URL readable with
+modern browsers. It is becoming more commonly used on the Web,
+especially for mobile applications, as inlining images reduces the
+number of HTTP requests and makes the Web page load faster.</p>
+
+<p>You will find lots of Web sites and tools for generating dataURL from
+files, such as <a href="https://ezgif.com/image-to-datauri" target="_blank" 
+rel="noopener noreferrer">Image to Data URI converter</a> (screenshot below):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~ 319. Online service that converts uploaded images to data uris... ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ we see an image and its ascii encoded data uri version (384) ~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image319.webp"
+  loading="lazy"
+  title="Online service that converts uploaded images to data uris...we see an image and 
+    its ascii encoded data uri version"
+  alt="Online service that converts uploaded images to data uris...we see an image and 
+    its ascii encoded data uri version."
+  style="width:35%;" >
+
+<p>With the above example, you can copy and paste the characters on the
+left and use them with an &lt;img src="..."&gt;. Just set the src attribute
+with it!</p>
+
+<p>Notice that you can encode any type of file as dataURL, but this
+format is most frequently used with ./images files (images, audio,
+video).</p>
+
+<p>Example of HTML5 logo embedded in a document without any real image,
+just a dataURL and CSS:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~ 320. screenshot jsbin example shows the html5 logo inserted before a div using css (385) ~-->
+<img class="displayed"
+  src="./images/image317.webp"
+  loading="lazy"
+  title="Data URL in address bar shows a red circle"
+  alt="Data URL in address bar shows a red circle."
+  style="width:35%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Examples</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example #1: read images as data URL and display previews in the page</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This first example is useful for forms that allow the user to select one or more pictures. 
+Before sending the form, you might want to get a preview of the pictures in the HTML page.
+The reader.readAsDataUrl method is used for that.</p>
+
+<p><a href="https://jsbin.com/laseye/edit?html,output" target="_blank" rel="noopener noreferrer">
+Example on JSBin</a> or try it below in your browser:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 332. preview of selected images (385) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/laseye/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image332.webp"
+  loading="lazy"
+  title="Preview of selected images"
+  alt="Preview of selected images."
+  style="width:35%;" /></a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Preview of selected images:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Source code extract:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;label for=&quot;files&quot;&gt;Choose multiple files:&lt;/label&gt;
+&lt;input type=&quot;file&quot; id=&quot;files&quot; multiple
+  onchange=&quot;readFilesAndDisplayPreview(this.files);&quot;/&gt;&lt;br/&gt;
+&lt;p&gt;Preview of selected images:&lt;/p&gt;
+&lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
+&lt;script&gt;
+function readFilesAndDisplayPreview(files) {
+  // Loop through the FileList and render image files as thumbnails.
+  for (var i = 0, f; f = files[i]; i++) {
+    // Only process image files.
+    if (!f.type.match(&#39;image.*&#39;)) {
+      continue;
+    }
+      var reader = new FileReader();
+
+    //capture the file information.
+    reader.onload = function(e) {
+      // Render thumbnail. e.target.result = the image content
+      // as a data URL
+      // create a span with CSS class=&quot;thumb&quot;, for nicer layout
+      var span = document.createElement(&#39;span&#39;);
+      // Add an img src=... in the span, with src= the dataURL of
+      // the image
+      span.innerHTML = &quot;&lt;img class=&#39;thumb&#39; src=&#39;&quot; +
+        e.target.result + &quot;&#39; alt=&#39;a picture&#39;/&gt;&quot;;
+      // Insert the span in the output id=list
+      document.getElementById(&#39;list&#39;).insertBefore(span, null);
+    };
+    // Read in the image file as a data URL.
+    reader.readAsDataURL(f);
+  }
+}</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Explanations:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li><i>Line 30:</i> starts the reading of the file f. When f is read, the onload 
+    callback will be called.</li>
+  <li><i>Lines 24-30:</i> we build, using the DOM API, a &lt;span class="thumb"&gt;…
+    &lt;/span&gt; and inside we add an &lt;img src=the data url&gt; element with its 
+    src attribute equal to the url of the image that has been read (the image content 
+    as dataURL is in e.target.result). Finally, at <i>line 27</i>, we insert the span 
+    in the document before the current children of the &lt;output id="list"&gt;  element 
+    (declared at <i>line 5</i>).</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example #2: read a single local image file and use it with drawImage ina canvas</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><a href="https://jsbin.com/miciqu/edit?html,output" target="_blank" rel="noopener noreferrer">Try it on JSBin</a></p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 322. example 2 kitty cat (386) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/miciqu/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image322.webp"
+  loading="lazy"
+  title="Example #2 read image as dataURL and draw inside a canvas"
+  alt="Example #2 read image as dataURL and draw inside a canvas."
+  style="width:35%;" /></a>
+
+<p><i>Errata</i>: the above screenshot says "choose multiple files", but the 
+example only works with a single file.</p>
+
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+
+<pre>function drawImage(imageFile) {
+  var reader = new FileReader();
+  //capture the file information.
+  reader.onload = function(e) {
+    // For drawing an image on a canvas we
+    // need an image object
+    var img = new Image();
+    // Even if the file has been read, decoding
+    // the dataURL format may take some time
+    // so we need to use the regular way of
+    // working with images: onload callback    
+    // that will be called after setting the src attribute
+    img.onload = function(e) {
+      // draw the image!
+      ctx.drawImage(img, 0, 0, 400, 400);
+    }
+    // e.target.result is the dataURL, so we set the
+    // src if the image with it. This will call
+    // asynchonously the onload callback
+    img.src= e.target.result;
+  };
+  // Read in the image file as a data URL.
+  reader.readAsDataURL(imageFile);
+}
+function readFileAndDraw(files) {
+  drawImage(files[0]);
+}</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Explanations:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Remember how we worked with images on a canvas. We had to create an
+empty image object (<i>line 8</i>), set the src attribute of the image
+object (<i>line 23</i>), then use an image.onload callback (<i>line
+15</i>), and we could only draw from inside the callback (<i>line
+17</i>). This time, it’s exactly the same, except that the URL comes
+from e.target.result in the reader.onload callback (<i>line 23</i>).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example #3 (advanced): an instagram-like photo filter application</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Another very impressive example, has been developed by <span
+class="citation" data-cites="GeorgianaB">@GeorgianaB</span>, a student
+of the first iteration of this course (see her <a
+href="https://codepen.io/giana/" target="_blank" rel="noopener noreferrer">other creations/examples</a>). This Web
+application reads local image files, draws them into a canvas element
+and proposes different filters. This example is given “as is” for those
+of you who would like to go further. Just click on the link (or on the
+image below) and look at the source code.</p>
+
+<p><a href="https://gianablantin.github.io/CanvasFilters/" target="_blank" 
+rel="noopener noreferrer">Try this example online on gitHub</a>.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-4-1">6.4.1 Geolocation API Introduction</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This chapter presents the new Geolocation API and illustrates its use with several examples.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 323. w3c geolocation logo (388) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image323.webp"
+  loading="lazy"
+  title="W3C Geolocation logo/icon"
+  alt="W3C Geolocation logo/icon."
+  style="width:25%;" />
+
+<p>The Geolocation HTML5 JavaScript API is implemented by most modern
+Web browsers, and uses different means to get the current location: GPS,
+GSM/3G triangulation, Wifi, IP address, etc.</p>
+
+<p>It is possible to prompt the user to activate the GPS (this is what
+most GPS navigation software does on mobile phones), or ask for a
+particular mean among those available. It is also possible to track the
+current position when it changes. This is useful for writing a
+navigation application or for tracking in real time the position of
+different participants in the case of an application that involves
+several persons at the same time (using WebSockets, for example).<br>
+<a href="https://caniuse.com/#feat=geolocation" target="_blank" rel="noopener noreferrer">
+Browser support for the Geolocation API</a> is excellent, both on mobile and on desktop devices.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Typical use</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+
+<pre>navigator.geolocation.getCurrentPosition(showPosition, onError);
+function showPosition(position) {
+  console.log(&quot;latitude is: &quot; + position.coords.latitude);
+  console.log(&quot;longitude is: &quot; + position.coords.longitude);
+}
+function onError(err) {
+  console.log(&quot;Could not get the position&quot;);
+}</pre>
+
+</details>
+
+<p><a href="https://jsbin.com/toyeley/1/edit?html,output" target="_blank" rel="noopener noreferrer">
+This online example at JSBin</a> shows how to get the current longitude and latitude and display 
+them in an HTML page. Try it below in your browser:</p>
+
+<p>Click the button to get your coordinates: Where am I ?
+Note that the first time you execute this example, for privacy reasons,
+the browser will ask if you agree to share your position with the application.</p>
+
+<br/>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Basic example of use of the geolocation API&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
+    &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
+    &lt;script&gt;
+      var displayCoords=document.getElementById(&quot;msg&quot;);
+      function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
+      }
+      }
+      function showPosition(position) {
+        displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
+          &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
+      }
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 324. function getLocation in geolocation (389) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image324.webp"
+  loading="lazy"
+  title="Geolocation callback illustration"
+  alt="Geolocation callback illustration."
+  style="width:35%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Explanations:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li><i>Line 13</i> checks if the Web browser supports the geolocation API by testing the 
+    variable navigator.geolocation. If not null, then the geolocation API is supported.</li>
+  <li><i>Line 14</i> calls navigator.geolocation.getCurrentPosition(showPosition) passing 
+    a callback function as a parameter (in this example we did not specify a callback in 
+    case of error). When a current position is available, the callback function will be 
+    called asynchronously, and the input parameter of this callback function will be the 
+    current position, like in the function showPosition(position) of the example.</li>
+  <li><i>Line 20</i> the position objects has a coords property that is the object that 
+    holds the longitude and the latitude.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>External resources:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>The W3C specification: <a href="https://www.w3.org/TR/geolocation-API/" target="_blank" 
+    rel="noopener noreferrer">Geolocation API</a></li>
+  <li>MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API" 
+    target="_blank" rel="noopener noreferrer">Geolocation API</a></li>
+  <li>Browser support tables:<br>
+  <ul>
+    <li>on CanIuse: <a href="https://caniuse.com/#feat=geolocation" target="_blank" 
+      rel="noopener noreferrer">Geolocation</a></li>
+    <li>on MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API#Browser_compatibility" 
+      target="_blank" rel="noopener noreferrer">Geolocation API</a></li>
+  </ul>
+  </li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-4-2">6.4.2 The coords object properties</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In the previous example, we used the coords property of the position
+passed as an input parameter to the callback function. This coords
+object has many properties:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 325. properties of the coords object (390) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image325.webp"
+  loading="lazy"
+  title="Properties of the coords object"
+  alt="Properties of the coords object."
+  style="width:35%;" />
+
+<p>Not all these values may be available in all Web browsers. When one of
+these properties is null, it means that it is not available (often the
+case of the altitudeAccuracy)</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-4-3">6.4.3 Geolocation error codes</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In the last example, we used the navigator.geolocation.
+getCurrentPosition(showPosition) with only one callback function (in the
+case of success), but it is also possible to pass a second parameter
+that is another callback function called in the case of error.</p>
+
+<p>A slightly different version of the previous example 
+<a href="https://jsbin.com/bafusik/edit?html,output" target="_blank" rel="noopener noreferrer">
+shows how to properly check against the different possible errors</a>. Try it,
+then turn your WiFi off or unplug your Ethernet cable (or turn off
+GPS and 3G/4G on a mobile phone). You should see an error message Error
+during geolocation: Location could not be obtained though the available
+means”:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 326. geolocation error (390) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/bafusik/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image326.webp"
+  loading="lazy"
+  title="Geolocation error"
+  alt="Geolocation error."
+  style="width:35%;" /></a>
+
+<br/>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Basic example of use of the geolocation API&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
+    &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
+    &lt;script&gt;
+      var displayCoords=document.getElementById(&quot;msg&quot;);
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
+        } else {
+          displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
+        }
+      }
+      function showPosition(position) {
+        displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
+                                &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
+      }
+      function errorPosition(error) {
+        var info = &quot;Error during geolocation: &quot;;
+        switch(error.code) {
+          case error.TIMEOUT:
+            info += &quot;Timeout !&quot;;
+            break;
+          case error.PERMISSION_DENIED:
+            info += &quot;Permission denied, geolocation could not be obtained...&quot;;
+            break;
+          case error.POSITION_UNAVAILABLE:
+            info += &quot;Location could not be obtained though the available means...&quot;;
+            break;
+          case error.UNKNOWN_ERROR:
+            info += &quot;Unknown error&quot;;
+            break;
+          }
+        displayCoords.innerHTML = info;
+      }
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-4-4">6.4.4 Tracking a position</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In order to track the current position, the geolocation API provides a method 
+similar to the getCurrentPosition(onSuccess, onError) named watchPosition(onSuccess, onError).</p>
+<p>When getCurrentPosition gives a position when called, watchPosition does the following:</p>
+
+<ul>
+  <li>It gets the callback function only when the current position changes. If you 
+    stay in the same location, the callback function won’t be called regularly.</li>
+  <li>It returns an id so that you can use the clearWatch(id) method to stop the 
+    current tracking.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Typical use</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>// get an id of the current tracking, the showPosition callback is like the one we saw in earlier examples.
+var watchPosId = navigator.geolocation.watchPosition(showPosition);
+...
+// stop the tracking
+navigator.geolocation.clearWatch(watchPosId);</pre>
+
+<p>As a test, you may just try to
+change getCurrentPosition to watchPosition in the previous examples, and
+try this code using a mobile phone or tablet, walk for 20 meters and see
+the position changing.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Options available when using the geolocation API, in particular real time tracking</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Several options are available when using HTML5 geolocation. We can pass
+a third parameter to the getCurrentPosition and watchPosition methods,
+that will hold one or several of the following options:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 327. more properties of the coords object (392) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image327.webp"
+  loading="lazy"
+  title="More properties of the coords object"
+  alt="More properties of the coords object."
+  style="width:35%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example of use</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+
+<pre>// Just ask to turn GPS on, if available
+navigator.geolocation.getCurrentPosition(onSuccess, onError,
+  {enableHighAccuracy:true});
+// maximumAge = 10 mins, the position can be cached for 10 mins,
+// useful when in tunnels...When the device tries to get
+// a position, if it does not succeed, then go on error
+// immediately
+navigator.geolocation.getCurrentPosition(onSuccess, onError,
+  {maximumAge:600000, timeout:0});
+// Position will never come from the cache (maximumAge: 0), and
+// if after 0.1s the position could not be computed, then go on
+// error
+navigator.geolocation.getCurrentPosition(onSuccess, onError,
+  {maximumAge:0, timeout:100});
+// Ask for GPS, cache for 30s, 27s before going on error...
+watchId=navigator.geolocation.watchPosition(onSuccess, onError,
+  {enableHighAccuracy:true, maximumAge:30000, timeout:27000});</pre>
+
+</details>
+
+<p>Look for the explanations in the lines of comment.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-4-5">6.4.5 Geolocation and maps</h3>https://leafletjs.com/index.html
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This section presents an example of how to get an interactive map, using 
+<a href="https://leafletjs.com/reference-1.6.0.html" target="_blank" rel="noopener noreferrer">
+the Leaflet API for OpenStreetMap</a>, and gives links to more resources. 
+Did you know that you can even get an estimation of a physical address from the 
+longitude and latitude, using online Web services?</p>
+<p>How to get a map centered on your longitude and latitude.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 328. openstreetmap test (393) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://leafletjs.com/reference-1.6.0.html" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image328.webp"
+  loading="lazy"
+  title="Example/Test OpenStreetMap"
+  alt="Example/Test OpenStreetMap."
+  style="width:35%;" /></a>
+
+<p>This example is just given "as is", as there are so many possibilities for rendering 
+a map with <a href="/leafletjs.com/reference-1.6.0.html" target="_blank" rel="noopener noreferrer">
+the Leaflet API for OpenStreetMaps</a>https:/. However, we think having such a basic example might be useful.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 329. openstreetmap test (393) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="/leafletjs.com/reference-1.6.0.html" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image329.webp"
+  loading="lazy"
+  title="Example/Test OpenStreetMap"
+  alt="Example/Test OpenStreetMap."
+  style="width:35%;" /></a>
+
+<br/>
+
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+
+<pre>function getLocation(e) {
+  e.preventDefault();
+  if (!navigator.geolocation) {
+    alert(&quot;Browser doesn&#39;t support geolocation&quot;);
+  } else {
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+}
+// Get current position successfully
+function success(position) {
+  var map, marker,
+    latitude = position.coords.latitude,
+    longitude = position.coords.longitude;
+  // Instance map using leaflet
+  map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
+  // Tile layer using key api at cloudmade.com
+  L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
+    key: &#39;760506895e284217a7442ce2efe97797&#39;,
+    styleId: 103288,
+    maxZoom: 16
+  }).addTo(map);
+  // Marker using leaflet
+  marker = L.marker([latitude, longitude]).addTo(map);
+  // Popup in leaflet
+  marker.bindPopup(&#39;&lt;p&gt;Your location&lt;/p&gt;&#39;).openPopup();
+}
+// Get current position fail
+function error() {
+  alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+}
+</pre>
+
+</details>
+
+<br/>
+
+<details>
+  <summary><b>CSS source code:</b></summary>
+
+<pre>html, body {
+  height: 100%
+}
+.map {
+  height: 300px;
+}
+.btn {
+  background-color: rgba(10, 10, 230, .5);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+  text-decoration: none;
+  margin: 0.5rem 0 1rem;
+  display: inline-block;
+}</pre>
+
+</details>
+
+<br/>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;OpenStreetMap Example&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.css&quot;&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;button class=&quot;btn&quot; onclick=&quot;getLocation(event)&quot;&gt;Click to show your location with OpenStreetMap&lt;/button&gt;
+  &lt;div id=&quot;map&quot; class=&quot;map&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Source code extract:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;OpenStreetMap Example&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.css&quot;&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet@1.0.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;button class=&quot;btn&quot; onclick=&quot;getLocation(event)&quot;&gt;Click to show your location with OpenStreetMap&lt;/button&gt;
+  &lt;div id=&quot;map&quot; class=&quot;map&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<ul>
+  <li><i>Lines 5 and 6</i> are the required files to use the Leaflet API (this
+    is the official name of the OpenStreetMaps API),</li>
+  <li><i>Line 10</i> is the &lt;div&gt; container that will be used to display
+    the interactive map.</li>
+</ul>
+
+<br/>
+
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+
+<pre>function getLocation(e) {
+  e.preventDefault();
+  if (!navigator.geolocation) {
+    alert(&quot;Browser doesn&#39;t support geolocation&quot;);
+  } else {
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+}
+// Get current position successfully
+function success(position) {
+  var map, marker,
+  latitude = position.coords.latitude,
+  longitude = position.coords.longitude;
+  // Instance map using leaflet
+  map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
+  // Tile layer using key api at cloudmade.com
+  L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
+    key: &#39;760506895e284217a7442ce2efe97797&#39;,
+    styleId: 103288,
+    maxZoom: 16
+  }).addTo(map);
+  // Marker using leaflet
+  marker = L.marker([latitude, longitude]).addTo(map);
+  // Popup in leaflet
+  marker.bindPopup(&#39;&lt;p&gt;Your location&lt;/p&gt;&#39;).openPopup();
+}
+// Get current position fail
+function error() {
+  alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+}</pre>
+
+</details>
+
+<ul>
+  <li><i>Line 6</i> uses the <a href="https://www.w3.org/TR/geolocation-API/" 
+    target="_blank" rel="noopener noreferrer">Geolocation API</a> to get the 
+    current position, in case of success it calls the success function, passing 
+    the location as parameter,</li>
+  <li><i>Lines 12 and 13&gt;</i> show how to get the longitude and latitude properties 
+    from the location,</li>
+  <li>The rest is a basic use of the Leaflet API. Notice at <i>line 15</i> that ‘map’ 
+    is the id of the &lt;div&gt; from the HTML part of the code.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-4-6">6.4.6 Reverse geocoding</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Different Web services can be used to get an address from longitude and latitude. 
+Most are free of charge, but they will ask you to register an API key and enter your 
+credit card number. If you send too many requests, you will be charged. Such a service 
+is the <a href="https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse" 
+target="_blank" rel="noopener noreferrer">Google Reverse Geocoding JavaScript API</a>. For those 
+of you who are really interested to know how this API works, please read the Google documentation 
+and tutorials.</p>
+
+<p>There is also an interesting Leaflet plugin (an extension to Leaflet) based on the 
+<a href="https://www.gisgraphy.com/" target="_blank" rel="noopener noreferrer">
+Gisgraphy</a> (free open source framework) service, that comes with a 
+<a href="https://services.gisgraphy.com/static/leaflet/index.html" 
+target="_blank" rel="noopener noreferrer">nice demo of reverse geocoding</a>.</p>
+
+<p>Let’s see some examples of use.</p>
+
+<p>Example #1: how to get a physical address from the longitude and latitude.</p>
+
+<p>Google reverse geocoding example (screenshot only):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 330. google reverse geocoding example (396) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://services.gisgraphy.com/static/leaflet/index.html" 
+target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image330.webp"
+  loading="lazy"
+  title="Example #1 How to get a physical address from the longitude and latitude"
+  alt="Example #1 How to get a physical address from the longitude and latitude."
+  style="width:35%;" /></a>
+
+<p>Source code of this example (in order to run it, you need a Google API
+key, used at <i>line 6</i>.</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Js bin &lt;/title&gt;
+  &lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=
+    PUT_HERE_YOUR_API_KEY&amp;v=3.exp&amp;sensor=false&quot;&gt;
+    &lt;/script&gt;&lt;script&gt;
+    // p elements for displaying lat / long and address
+    var displayCoords, myAddress;
+    // used with the google apis
+    var geocoder;
+    var map;
+    var infowindow = new google.maps.InfoWindow();
+    var marker;
+
+    // Called when the page is loaded
+    function init() {
+      displayCoords=document.getElementById(&quot;msg&quot;);
+      myAddress = document.getElementById(&quot;address&quot;);
+      geocoder = new google.maps.Geocoder();
+      // In order to show something even before a user clicks on the button
+      var latlng = new google.maps.LatLng(34.0144, -6.83);
+      var mapOptions = {
+        zoom: 8,
+        center: latlng,
+        mapTypeId: &#39;roadmap&#39;
+      }
+      map = new google.maps.Map(document.getElementById(&#39;map_canvas&#39;), mapOptions);
+    } // end of init()
+    // Called when the button is clicked
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
+      }
+     }
+    // Called when a position is available
+ 
+    function showPosition(position) {
+      displayCoords.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
+        &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
+      // Display the map
+      showOnGoogleMap(new google.maps.LatLng(position.coords.latitude,       
+        position.coords.longitude));
+    }
+
+    function showOnGoogleMap(latlng) {
+      // Ask google geocoder for an address once we get a longitude and
+      // a latitude. In fact, the reverse geocoder sends back an array of &quot;guesses&quot;
+      // i.e. not just one address object, but several. Each entry in this array
+      // has several properties such as street, city, etc. We use the
+      &quot;formatted_address&quot;
+      // one here, but it might be interesting to get the detailed properties in other
+      // applications like a form with street, city, zip code etc.
+      geocoder.geocode({&#39;latLng&#39;: latlng},reverseGeocoderSuccess);
+
+        function reverseGeocoderSuccess(results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+            if (results[1]) {
+              map.setZoom(11);
+              marker = new google.maps.Marker({
+                position: latlng,
+                map: map
+              });
+              infowindow.setContent(results[1].formatted_address);
+              infowindow.open(map, marker);
+              // Display address as text in the page
+              myAddress.innerHTML=&quot;Adress: &quot; + results[0].formatted_address; 
+            } else {
+              alert(&#39;No surface address found&#39;);
+            }
+          } else {
+            alert(&#39;Geocoder failed due to: &#39; + status);
+          }
+        } // end of reverseGeocoderSuccess
+      } // end of showOnGoogleMap
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;init()&quot;&gt;
+  &lt;title&gt;HTML5 + Geolocalisation + Google Maps API Reverse Geocoding&lt;/title&gt;
+  &lt;p id=&quot;msg&quot;&gt;Click the button to get your coordinates:&lt;/p&gt;
+  &lt;p id=&quot;address&quot;&gt;&lt;/p&gt;
+  &lt;button onclick=&quot;getLocation()&quot;&gt;Where am I ?&lt;/button&gt;
+  &lt;div id=&quot;map_canvas&quot; style=&quot;width: 500px; height: 300px&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<p>Gisgraphy (free service) reverse geocoding example (screenshot 
+only, click on it to see <a href="https://services.gisgraphy.com/static/leaflet/index.html" 
+target="_blank" rel="noopener noreferrer"> the demo on the Gisgraphy website</a>):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 331. gisgraphy screenshot (398) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://services.gisgraphy.com/static/leaflet/index.html" 
+target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image331.webp"
+  loading="lazy"
+  title="Gisgraphy screenshot"
+  alt="Gisgraphy screenshot."
+  style="width:35%;" /></a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4><b>Example #2:</b> reverse geocoding + OpenStreetMap</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><b>Important note:</b> these examples below rely on an external 
+<a href="https://github.com/perliedman/leaflet-control-geocoder" 
+target="_blank" rel="noopener noreferrer">GitHub resource</a>.</p>
+
+<p>Please, pan and zoom on the map and click.</p>
+
+<p>The longitude and latitude are computed from your click and a free reverse geocoding service is 
+used to convert to a physical address.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 332. reverse geocoding - openstreetmap (398) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://codepen.io/w3devcampus/pen/MWKEJqM" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image332.webp"
+  loading="lazy"
+  title="Reverse Geocoding - OpenStreetMap"
+  alt="Reverse Geocoding - OpenStreetMap."
+  style="width:35%;" /></a>
+
+<br/>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta
+    name=&quot;viewport&quot;
+    content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot;
+    /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css
+    &quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    body {
+      margin: 0;
+    }
+    #map {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+  var map = L.map(&#39;map&#39;).setView([0, 0], 2);
+  var geocoder = L.Control.Geocoder.nominatim();
+  if (URLSearchParams &amp;&amp; location.search) {
+    // parse /?geocoder=nominatim from URL
+    var params = new URLSearchParams(location.search);
+    var geocoderString = params.get(&#39;geocoder&#39;);
+    if (geocoderString &amp;&amp; L.Control.Geocoder[geocoderString]) {
+      console.log(&#39;Using geocoder&#39;, geocoderString);
+      geocoder = L.Control.Geocoder[geocoderString]();
+    } else if (geocoderString) {
+      console.warn(&#39;Unsupported geocoder&#39;, geocoderString);
+    }
+  }
+  var control = L.Control.geocoder({
+    query: &#39;Moon&#39;,
+    placeholder: &#39;Search here...&#39;,
+    geocoder: geocoder
+  }).addTo(map);
+  var marker;
+  setTimeout(function() {
+    control.setQuery(&#39;Earth&#39;);
+  }, 12000);
+  L.tileLayer(&#39;https://{s}.tile.osm.org/{z}/{x}/{y}.png&#39;, {
+    attribution: &#39;&amp;copy; &lt;a href=&quot;https://osm.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&#39;
+  }).addTo(map);
+  map.on(&#39;click&#39;, function(e) {
+    console.log(e.latlng)
+    geocoder.reverse(e.latlng, map.options.crs.scale(map.getZoom()), function(results) {
+      var r = results[0];
+     if (r) {
+        if (marker) {
+          marker
+         .setLatLng(r.center)
+          .setPopupContent(r.html || r.name)
+          .openPopup();
+        } else {
+          marker = L.marker(r.center)
+          .bindPopup(r.name)
+          .addTo(map)
+          .openPopup();
+        }
+      }
+    });
+  });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example #3: shows the address on the map, from your current longitude and latitude</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<br/>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta
+    name=&quot;viewport&quot;
+    content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot;
+    /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    body {
+      margin: 0;
+    }
+    #map {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var geocoder = L.Control.Geocoder.nominatim();
+    var map, marker, latitude, longitude;
+    function getLocation() {
+      if (!navigator.geolocation) {
+        alert(&quot;Browser doesn&#39;t support geolocation&quot;);
+      } else {
+        navigator.geolocation.getCurrentPosition(success, error);
+      }
+    }
+    // Get current position successfully
+    function success(position) {
+      latitude = position.coords.latitude;
+      longitude = position.coords.longitude;
+      // Instance map using leaflet
+      map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
+      // Tile layer using key api at cloudmade.com
+      L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
+      key: &#39;760506895e284217a7442ce2efe97797&#39;,
+      styleId: 103288,
+      maxZoom: 16
+      }).addTo(map);
+      // Marker using leaflet
+      marker = L.marker([latitude, longitude]).addTo(map);
+      // Popup in leaflet
+      marker.bindPopup(&#39;&lt;p&gt;&lt;/p&gt;&#39;).openPopup();
+      getPhysicalAddress({lat:latitude, lng:longitude});
+    }
+    // Get current position fail
+    function error() {
+      alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+    }
+    var marker;
+    function getPhysicalAddress(latlong) {
+      geocoder.reverse(latlong, map.options.crs.scale(map.getZoom()), function(results) {
+      var r = results[0];
+        if (r) {
+          if (marker) {
+            marker
+             .setLatLng(r.center)
+             .setPopupContent(r.html || r.name)
+             .openPopup();
+          } else {
+              marker = L.marker(r.center)
+             .bindPopup(r.name)
+             .addTo(map)
+             .openPopup();
+          }
+        }
+      });
+    }
+    getLocation();
+  &lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example #4: use of geolocation, map and reverse geocoder in a HTML form</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This is just a variation of the previous examples. We embedded the interactive map 
+in a form, and we display the results of the reverse geocoder in a form field. This 
+example might be useful if you want to pre-fill the address of a registration form, 
+depending on the current location of the person who is registering.</p>
+
+<p>Click on the Codepen logo (on the top right) so to run the 
+<a href="https://codepen.io/w3devcampus/pen/MWKEJqM" target="_blank" rel="noopener noreferrer">
+online example</a> (for security reasons the embedded version cannot run in this page):</p>
+
+<br/>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Gimmee My Location&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot;
+  content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;getLocation();&quot;&gt;
+  &lt;h1&gt;Example of the use of reverse geocoder in a form&lt;/h1&gt;
+  &lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Form example with map and address...&lt;/legend&gt;
+    &lt;div id=&quot;map&quot; style=&quot;width: 500px; height: 300px&quot;&gt;&lt;/div&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+  &lt;legend&gt;Surface address&lt;/legend&gt;
+  &lt;input id=&quot;surfaceAddress&quot; size=110 type=&quot;text&quot;&gt;
+  &lt;fieldset&gt;
+  &lt;form&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var geocoder = L.Control.Geocoder.nominatim();
+    var map, marker, latitude, longitude;
+    function getLocation() {
+      if (!navigator.geolocation) {
+        alert(&quot;Browser doesn&#39;t support geolocation&quot;);
+      } else {
+        navigator.geolocation.getCurrentPosition(success, error);
+      }
+    }
+    // Get current position successfully
+    function success(position) {
+      latitude = position.coords.latitude;
+      longitude = position.coords.longitude;
+      // Instance map using leaflet
+      map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
+      // Tile layer using key api at cloudmade.com
+      L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}{x}{y}.png&#39;, {
+        key: &#39;760506895e284217a7442ce2efe97797&#39;,
+          styleId: 103288,
+          maxZoom: 16
+      }).addTo(map);
+      // Marker using leaflet
+        marker = L.marker([latitude, longitude]).addTo(map);
+        // Popup in leaflet
+        marker.bindPopup(&#39;&lt;p&gt;&lt;/p&gt;&#39;).openPopup();
+        getPhysicalAddress({lat:latitude, lng:longitude});
+    }
+    // Get current position fail
+    function error() {
+      alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+    }
+      var marker;
+      function getPhysicalAddress(latlong) {
+        geocoder.reverse(latlong, 500000, function(results) {
+          var r = results[0];
+          console.log(r.name);
+          document.querySelector(&quot;#surfaceAddress&quot;).value = r.name;
+          if (r) {
+            if (marker) {
+              marker
+                .setLatLng(r.center)
+                .setPopupContent(r.html || r.name)
+                .openPopup();
+            } else {
+              marker = L.marker(r.center)
+                .bindPopup(r.name)
+                .addTo(map)
+                .openPopup();
+            }
+          }
+        });
+      }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-4-7">6.4.7 Discussion and projects</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Optional projects</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Here are a few project ideas. Your classmates and the team who prepared
+the course will be glad to try them and offer feedback. Please post URLs
+in this discussion forum. These projects are optional, meaning that they
+won’t be graded. However, it is important to complete them to ensure
+good understanding of the material.</p>
+
+<ul>
+  <li>Project 1 (easy): Add a map showing your location to one of your Web
+    pages. Start with a simple, static map, then try with an interactive
+    map. Reuse the examples from the course.</li>
+  <li>Project 2 (a bit harder): The examples provided in the course used
+    OpenStreetMap, but why don’t you try to do the same with GoogleMaps?
+    Some services are free of charge, but will ask you to get an API key
+    (see this YouTube tutorial about how to get such a key).</li>
+</ul>
+
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <h5>. . .The end.</h5>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+  <h6>Prior updated 11-20-23 Mon 11:58pm<br/>
+  Last updated 4-12-23 Fri 1:21am<br/>
+  Last updated 7-21-24 Sun 1:20am<br/>
+  Last updated 8-15-24 Thu 3:28pm<br/>
+  Last updated 8-23-24 Fri 4:32pm<br/>
+  Last updated 9-25-24 Wed 8:00am<br/>
+  Last updated 10-30-24 Wed 4:46am<br/>
+  Last updated 5-24-25 Sat 5:50pm<br/>
+  Last updated 6-30-25 Mon 12:53pm<br/>
+  Last updated 7-03-25 Thu 5:15pm</h6>
+  <script src="/js/scripts.js"></script>
+
+  </body>
+</html>
