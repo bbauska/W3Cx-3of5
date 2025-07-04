@@ -1,0 +1,3704 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ index.html of W3Cx-3of5-HTML5.1x making W3Cx-3of5.bauska.org ~~~~~~~~~~~~~~~~-->
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico">
+  <!-- viewport and seo -->
+  <meta name="author" content="Brian Bauska">
+  <meta name="title" content="W3Cx-3of5-HTML5.1x">
+  <meta name="description" content="HTML5.1x - Coding Essentials &amp; Best Practices - 
+    during this course, you will learn: Simplified HTML5 tags, and how to use microdata; 
+    Play with audio and video tags; Use the Webcam; Draw and animate Web graphics; Discover 
+    HTML5 form features; Test basic APIs; Practice coding techniques.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="keywords" content="W3Cx-3of5-HTML5.1x,Silus Gaming World">
+  <meta name=”robots” content="index, follow">
+
+  <title>W3Cx-3of5-HTML5.1x</title>
+  <link rel="canonical" href="https://w3cx-3of5.bauska.org">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ script function: scrollFunction() ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <script>
+  <!-- get the button -->
+  var mybutton = document.getElementById("myBtn");
+  <!-- when the user scrolls down 10px from the top of the document, show the "Top" button -->
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  // when the user clicks on the button, scroll to the table of contents near top of document.
+  function topFunction() {
+    document.getElementById('table-of-contents').scrollIntoView();
+  }
+  </script>
+<h1 style="text-align:center;">W3Cx Front-End Web Developer</h1>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w3cx logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/w3c-logo.webp"
+  title="W3C logo"
+  alt="W3C logo."
+  style="width:156px; height:64px;" />
+
+<h2 style="text-align:center;">W3Cx-3of5-HTML5.1x - Coding Essentials and Best Practices</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. W3Cx-3of5-HTML5.1x logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image001.webp"
+  title="W3Cx HTML 5.1x logo"
+  alt="W3Cx HTML 5.1x logo."
+  style="width:45%;" />
+<!--  style="width:370px; height:208px;" -->
+
+<p id="table-of-contents"></p>
+<h2><a href="#table-of-contents">Table of Contents - W3Cx-3of5-=HTML5.1x - Coding Essentials 
+and Best Practices</a></h2>
+<h2>Syllabus</h2>
+
+<h2><strong>Course Information</strong></h2>
+
+<h2><strong>Module 1: HTML5 Basics</strong></h2>
+
+<blockquote>
+<h3>1.1 <a href="#ch1-1-1"><strong>History of HTML: From HTML1.0 to HTML5.0</strong></a></h3>
+<h3>1.2 <a href="#ch1-2-1"><strong>HTML5 Structural elements</strong></a></h3>
+<h3>1.3 <a href="#ch1-3-1"><strong>A Blog example: Mixing All Elements Together</strong></a></h3>
+<h3>1.4 <a href="#ch1-4-1"><strong>The Details and Summary elements</strong></a></h3>
+<h3>1.5 <a href="#ch1-5-1"><strong>Microdata</strong></a></h3>
+</blockquote>
+
+<h2><strong>Module 2: HTML5 Multimedia</strong></h2>
+
+<blockquote>
+<h3>2.1 <a href="#ch2-1-1"><strong>HTML5 Multimedia: Streaming with Video and Audio Elements</strong></a></h3>
+<h3>2.2 <a href="#ch2-2-1"><strong>Subtitles and closed captions</strong></a></h3>
+<h3>2.3 <a href="#ch2-3-1"><strong>Enhanced HTML5 media players and frameworks</strong></a></h3>
+<h3>2.4 <a href="#ch2-4-1"><strong>Webcam, microphone: the getUserMedia API</strong></a></h3>
+</blockquote>
+
+<h2><strong>Module 3: HTML5 Graphics</strong></h2>
+
+<blockquote>
+<h3>3.1 <a href="#ch3-1-1"><strong>Introduction - Module 3: HTML5 Graphics</strong></a></h3>
+<h3>3.2 <a href="#ch3-2-1"><strong>Basics of HTML5 canvas</strong></a></h3>
+<h3>3.3 <a href="#ch3-3-1"><strong>Immediate drawing mode: rectangles, text, images</strong></a></h3>
+<h3>3.4 <a href="#ch3-4-1"><strong>Path drawing mode: lines, circles, arcs, curves 
+  and other path drawing methods</strong></a></h3>
+<h3>3.5 <a href="#ch3-5-1"><strong>Colors, gradients, patterns, shadows, etc.</strong></a></h3>
+</blockquote>
+
+<h2><strong>Module 4: HTML5 Animation</strong></h2>
+
+<blockquote>
+<h3>4.1 <a href="#ch4-1-1"><strong>Introduction - Module 4: Animations</strong></a></h3>
+<h3>4.2 <a href="#ch4-2-1"><strong>Basic animation techniques</strong></a></h3>
+<h3>4.3 <a href="#ch4-3-1"><strong>Canvas and user interaction (keyboard, mouse)</strong></a></h3>
+<h3>4.4 <a href="#ch4-4-1"><strong>A glimpse of advanced canvas functionalities</strong></a></h3>
+</blockquote>
+
+<h2><strong>Module 5: HTML5 Forms</strong></h2>
+
+<blockquote>
+<h3>5.1 <a href="#ch5-1-1"><strong>Introduction - Module 5: Forms</strong></a></h3>
+<h3>5.2 <a href="#ch5-2-1"><strong>Elements and Attributes</strong></a></h3>
+<h3>5.3 <a href="#ch5-3-1"><strong>Accessible Forms</strong></a></h3>
+<h3>5.4 <a href="#ch5-4-1"><strong>&lt;input&gt; Types</strong></a></h3>
+<h3>5.5 <a href="#ch5-5-1"><strong>Forms Attributes</strong></a></h3>
+<h3>5.6 <a href="#ch5-6-1"><strong>Forms Elements</strong></a></h3>
+<h3>5.7 <a href="#ch5-7-1"><strong>Form Validation API</strong></a></h3>
+</blockquote>
+
+<h2><strong>Module 6: HTML5 Basic APIs</strong></h2>
+
+<blockquote>
+<h3>6.1 <a href="#ch6-1-1"><strong>Introduction - Module 6: HTML5 Basic APIs</strong></a></h3>
+<h3>6.2 <a href="#ch6-2-1"><strong>The Web Storage API</strong></a></h3>
+<h3>6.3 <a href="#ch6-3-1"><strong>The File API</strong></a></h3>
+<h3>6.4 <a href="#ch6-4-1"><strong>The Geolocation API</strong></a></h3>
+</blockquote>
+
+<h2 id="cha-1">About W3C and the Web</h2>
+
+<h2>Course Information</h2>
+
+<h3>Welcome to “HTML5 Coding Essentials and Best Practices”</h3>
+
+<ul>
+  <li>Course outline (syllabus)</li>
+  <li>Course forums</li>
+  <li>Course tools</li>
+  <li>About W3C and the Web</li>
+</ul>
+
+<p>W3C has designed a <a href="https://www.edx.org/professional-certificate/front-end-web-developer-9" 
+  target="_blank" rel="noopener noreferrer">“Front-End Web Developer” (FEWD) Professional Certificate</a> 
+  where you learn all of the necessary skills needed to build interactive and responsive user experiences 
+  on the Web. This program deepens your knowledge of the 3 foundational languages that power the Web: 
+  HTML5, CSS and JavaScript.
+<br>The <b>W3C FEWD</b> program is composed of 5 courses:</p>
+
+<ol type="1">
+  <li>CSS Basics</li>
+  <li>5.0x HTML5 and CSS Fundamentals</li>
+  <li>This course: <b><i>5.1x HTML5 Coding Essentials and Best Practices</i></b></li>
+  <li>5.2x HTML5 Apps and Games</li>
+  <li>JavaScript Introduction</li>
+</ol>
+
+<p>This course is a natural follow up to the <a href="https://www.edx.org/course/css-basics" 
+  target="_blank" rel="noopener noreferrer">CSS Basics</a> and 
+  <a href="https://www.edx.org/course/html5-and-css-fundamentals" target="_blank" 
+  rel="noopener noreferrer">HTML5 &amp; CSS Fundamentals</a> courses.</p>
+  
+<h4>As such, required prerequisites are:</h4>
+
+<ul>
+  <li>Be comfortable putting together an HTML document,</li>
+  <li>Have minimal familiarity with CSS,</li>
+  <li>Basic knowledge of JavaScript and DOM APIs is sufficient, and this course 
+    will include a recap of basics. You are also more than welcome to follow the 
+    <a href="https://www.edx.org/course/javascript-introduction" target="_blank" 
+    rel="noopener noreferrer">JavaScript Introduction</a> course (introductory 
+    level).</li>
+</ul>
+
+<h4>During this course, you will:</h4>
+
+<ul>
+  <li>Learn the simplified HTML5 tags, and how to use microdata,</li>
+  <li>Play with the audio and video tags,</li>
+  <li>Use the Webcam,</li>
+  <li>Draw and animate fun Web graphics,</li>
+  <li>Discover HTML5 form features,</li>
+  <li>Test the basic APIs, such as Web storage and geolocation,</li>
+  <li>And most of all, practice coding techniques thanks to multiple interactive examples.</li>
+</ul>
+
+<p>The HTML5 course team is thrilled to guide you in your learning experience. We are 
+committed to teach you how to code Web pages, and how to do it the correct way. We 
+encourage you to create Web pages and apps and share them in the discussion forums. 
+Have fun!</p>
+
+<h3 id="cha-3">a.3 W3C Tools - Online Code Editors:</h3>
+
+<ul>
+  <li><a href="https://jsbin.com" target="_blank" rel="noopener noreferrer">JS Bin</a></li>
+  <li><a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843" 
+    target="_blank" rel="noopener noreferrer">CodePen Tutorial</a></li>
+  <li><a href="https://codepen.io" target="_blank" rel="noopener noreferrer">CodePen</a></li>
+  <li><a href="https://css-tricks.com/video-screencasts/112-using-codepen/" target="_blank" 
+  rel="noopener noreferrer">CodePen CSS Tutorial</a></li>
+</ul>
+
+<h4>Web Editors:</h4>
+
+<p>While any text editor, like NotePad or TextEdit, can be used to create Web pages, 
+they don’t necessarily offer a lot of help towards that end. Other options offer more 
+facilities for error checking, syntax coloring and saving some typing by filling things 
+out for you.</p>
+
+<h4>Here are a few possibilities for Web editors:</h4>
+
+<ul>
+  <li><a href="https://notepad-plus-plus.org/" target="_blank" 
+    rel="noopener noreferrer">Notepad</a> - on Windows PC's.</li>
+  <li><a href="https://code.visualstudio.com/" target="_blank" 
+    rel="noopener noreferrer">Visual Studio Code</a> - a free open source editor 
+      that can run on any operating system. Many developers are already familiar 
+      with Visual Studio Code. Many coding videos in this course are demonstrated 
+      using Visual Studio Code.</li>
+  <li><a href="https://developer.apple.com/xcode/" target="_blank" rel="noopener 
+    noreferrer">XCode</a> - Mac developers may be familiar with XCode.</li>
+  <li><a href="https://discussions.apple.com/message/5014514#5014514" 
+    target="_blank" rel="noopener noreferrer">TextEdit - this is available on 
+    Macs</a>, but be sure you're [saving as plain text, not as a “.rtf” or “.doc” 
+    file.</li>
+  <li><a href="https://www.sublimetext.com/" target="_blank" rel="noopener 
+    noreferrer">Sublime Text</a> - it is quite popular with developers, 
+    though there can be a bit of a learning curve to use its many features.</li>
+  <li><a href="http://bluegriffon.org/" target="_blank" rel="noopener 
+    noreferrer">BlueGriffon</a> - a WYSIWYG (“What You See Is What You Get”) 
+    content editor for the World Wide Web. Powered by Gecko, the rendering 
+    engine of Firefox, it’s a modern and robust solution to edit Web pages 
+    in conformance to the latest Web Standards.</li>
+  <li><a href="https://atom.io/" target="_blank" rel="noopener noreferrer">
+    Atom</a> - another cross platform editor, created by <a href="https://github.com/" 
+    target="_blank" rel="noopener noreferrer">GitHub</a>.</li>
+  <li><a href="https://github.com/" target="_blank" rel="noopener 
+    noreferrer">GitHub</a> itself - check 
+    <a href="https://towardsdatascience.com/how-to-create-a-free-github-pages-website-53743d7524e1" 
+    target="_blank" rel="noopener noreferrer">this resource that explains how to create a Web site 
+    using GitHub</a>.</li>
+  <li><a href="https://www.vim.org/" target="_blank" rel="noopener noreferrer">Vim</a> or 
+    <a href="https://www.gnu.org/software/emacs/" target="_blank">Emacs</a> - great editors, 
+    but if you're not already familiar with these, this isn't the time to try.</li>
+</ul>
+
+<h4>Online Editors:</h4>
+
+<p>To help you practice during the whole duration of the course, we use the following 
+interactive online editors. Pretty much all the course’s examples actually use these 
+tools.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. jsbin logo (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image002.webp"
+  loading="lazy"
+  title="JSBin logo"
+  alt="JSBin logo."
+  style="width:15%;" /></a>
+
+<ul>
+  <li><a href="https://jsbin.com/" target="_blank" rel="noopener noreferrer">JS Bin</a></li>
+</ul>
+
+<p>JS Bin is an open source collaborative Web development debugging tool. Most 
+of the examples that are in this course are on JSBin.</p>
+
+<p>Tutorials can be found on the Web such as 
+<a href="https://code.tutsplus.com/tutorials/javascript-tools-of-the-trade-jsbin--net-36843" 
+target="_blank" rel="noopener noreferrer">this one</a> or on YouTube.</p>
+
+<p>The tool is really simple, just open the link to the provided examples, look at the 
+code, look at the result, etc.</p>
+
+<p>And you can modify the examples as you like, you can also modify / clone / save / 
+share them.</p>
+
+<p>Keep in mind that it's always better to be logged in (it's free) if you do not want 
+to lose your contributions/personal work.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. codepen logo (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image003b.webp"
+  loading="lazy"
+  title="CodePen.io logo"
+  alt="CodePen.io logo."
+  style="width:15%;" />
+  style="width:</a>
+
+<ul>
+  <li><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">CodePen</a></li>
+</ul>
+
+<p>CodePen is an HTML, CSS, and JavaScript code editor that previews/showcases your 
+code bits in your browser. It helps with cross-device testing, real-time remote pair 
+programming and teaching.</p>
+
+<p>Here's an article of interest if you use CodePen: 
+<a href="https://codepen.io/brentmiller/post/things-you-can-do-with-codepen" 
+target="_blank" rel="noopener noreferrer">Things you can do with CodePen</a> 
+[Brent Miller, February 6, 2019].</p>
+
+<p>There are many other handy tools such as <a href="https://jsfiddle.net/" target="_blank" 
+rel="noopener noreferrer">JSFiddle</a>, and <a href="https://dabblet.com/" target="_blank" 
+rel="noopener noreferrer">Dabblet</a>. Please share your favorite tool on the discussion 
+forum, and explain why! Share also your own code contributions, such as a nice canvas 
+animation, a great looking HTML5 form, etc.</p>
+
+<h4>Browser Compatibility:</h4>
+
+<p>The term browser compatibility refers to the ability of a given Web site to appear 
+fully functional on the browsers available in the market.</p>
+
+<p>The most powerful aspect of the Web is what makes it so challenging to build for: 
+its universality. When you create a Web site, you’re writing code that needs to be 
+understood by many different browsers on different devices and operating systems!</p>
+
+<p>To make the Web evolve in a sane and sustainable way for both users and developers, 
+browser vendors work together to standardize newfeatures, whether it’s a new 
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" 
+rel="noopener noreferrer">HTML element</a>, 
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index" 
+target="_blank" rel="noopener noreferrer">CSS
+property</a>, or <a href="https://developer.mozilla.org/en-US/docs/Web/API" 
+target="_blank" rel="noopener noreferrer">JavaScript API</a>. But different 
+vendors have different priorities, resources, and release cycles — so it’s 
+very unlikely that a new feature will land on all the major browsers at once. 
+As a Web developer, this is something you must consider if you’re relying on 
+a feature to build your site.</p>
+
+<p>We are then providing references to the browser support of HTML5 features presented in 
+this course using 2 resources: <a href="https://caniuse.com/" target="_blank" 
+rel="noopener noreferrer">Can I Use</a> and <a href="https://developer.mozilla.org/en-US/" 
+target="_blank" rel="noopener noreferrer">Mozilla Developer Network (MDN) Web Docs</a>.</p>
+
+<h4>Can I use</h4>
+
+<p><a href="https://caniuse.com/" target="_blank" rel="noopener noreferrer">Can I Use</a> 
+provides up-to-date tables for support of front-end Web technologies on desktop and mobile 
+Web browsers. Below is a snapshot of what information is given by CanIUse when searching 
+for “CSS3 colors”.</p>
+
+<p>Example of a <a href="./images/image004.webp" target="_blank" 
+rel="noopener noreferrer">CanIUse browser</a> support table (using CSS3 colors);</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. caniuse example (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="/images/image004.webp"
+  loading="lazy"
+  title="Example CSS in CanIUse"
+  alt="Example CSS in CanIUse."
+  style="width:35%;" />
+
+<h4>MDN Web Docs</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05. mdn web docs logo (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="/images/image005.webp"
+  loading="lazy"
+  title="Logo of MDN Web Docs"
+  alt="Logo of MDN Web Docs."
+  style="width:25%;" />
+
+<p>To help developers make these decisions consciously rather than accidentally, 
+<a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">
+MDN Web Docs</a> provides browser compatibility tables in its documentation pages, 
+so that when looking up a feature you’re considering for your project, you know 
+exactly which browsers will support it.</p>
+
+<h4>External resources:</h4>
+
+<ul>
+  <li><a href="https://hacks.mozilla.org/2018/02/mdn-browser-compatibility-data/" 
+  target="_blank" rel="noopener noreferrer">MDN browser compatibility data: Taking 
+  the guesswork out of web compatibility</a>.</li>
+  <li><a href="https://hacks.mozilla.org/2019/09/caniuse-and-mdn-compat-data-collaboration/" 
+  target="_blank" rel="noopener noreferrer">Caniuse and MDN compatibility data collaboration</a>.</li>
+</ul>
+
+<h3>W3C Validators:</h3>
+
+<p>For over 15 years, the W3C has been developing and hosting 
+<a href="https://w3c.github.io/developers/" target="_blank" rel="noopener noreferrer">
+free and open source tools</a> used every day by millions of Web developers and Web 
+designers.<br>All the tools listed below are Web-based, and are available as downloadable 
+sources or as free services on the 
+<a href="https://w3c.github.io/developers/tools/" target="_blank" rel="noopener noreferrer">
+W3C Developers tools</a> site.</p>
+
+<h4>W3C Validator</h4>
+
+<p>The <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">
+W3C validator</a> checks the 
+<a href="https://validator.w3.org/docs/help.html#validation_basics" target="_blank">
+markup validity</a> of various Web document formats, such as HTML. Note that you are 
+automatically directed to the <a href="https://validator.w3.org/nu/" target="_blank" 
+rel="noopener noreferrer">Nu Html Checker</a> when validating an HTML5 document.</p>
+
+<h4>CSS Validator</h4>
+
+<p>The <a href="https://jigsaw.w3.org/css-validator/" target="_blank" 
+rel="noopener noreferrer">CSS validator</a> checks Cascading Style Sheets (CSS) and 
+(X)HTML documents that use CSS stylesheets.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 06. laptop showing unicorn validator (06) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image006.webp"
+  loading="lazy"
+  title="Laptop showing unicorn validator"
+  alt="Laptop showing unicorn validator."
+  style="width:25%;" />
+
+<h4>Unicorn</h4>
+
+<p><a href="https://validator.w3.org/unicorn/" target="_blank" rel="noopener noreferrer">
+Unicorn</a>is W3C’s unified validator, which helps people improve the quality of their 
+Web pages by performing a variety of checks. Unicorn gathers the results of the popular 
+HTML and CSS validators, as well as other useful services, such as Internationalization, 
+RSS/Atom feeds and http headers.</p>
+
+<h4>Internationalization Checker</h4>
+
+<p>The <a href="https://validator.w3.org/i18n-checker/" target="_blank" rel="noopener noreferrer">
+W3C Internationalization Checker</a> provides information about various internationalization-
+related aspects of your page, including the HTTP headers that affect it. It will also report 
+a number of issues and offer advice about how to resolve them.</p>
+
+<h4>Link Checker</h4>
+
+<p>The <a href="https://validator.w3.org/checklink" target="_blank" rel="noopener noreferrer">
+W3C Link Checker</a> looks for issues in links, anchors and referenced objects in a Web 
+page, CSS style sheet, or recursively on a whole Web site.</p>
+
+<p>For best results, it is recommended to first ensure that the documents checked use 
+valid <a href="https://validator.w3.org/" target="_blank">
+(X)HTML Markup</a> and <a href="https://jigsaw.w3.org/css-validator/" target="_blank" 
+rel="noopener noreferrer">CSS</a>.</p>
+
+<h4>W3C Cheatsheet</h4>
+
+<p>The <a href="https://www.w3.org/2009/cheatsheet/" target="_blank" rel="noopener noreferrer">
+W3C cheatsheet</a> provides quick access to useful information from a variety of 
+specifications published by W3C. It aims at giving in a very compact and mobile-friendly 
+format a compilation of useful knowledge extracted from W3C specifications, completed by 
+summaries of guidelines developed at W3C, in particular Web accessibility guidelines, the 
+Mobile Web Best Practices, and a number of internationalization tips.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 07. w3c cheat sheet snapshot image (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image007.webp"
+  loading="lazy"
+  title="W3C Cheat Sheet snapshot image"
+  alt="W3C Cheat Sheet snapshot image."
+  style="width:25%;" />
+
+<p>Its main feature is a lookup search box, where one can start typing a keyword and get 
+a list of matching properties/elements/attributes/functions in the above-mentioned 
+specifications, and further details on those when selecting the one of interest.</p>
+
+<h4>The W3C cheatsheet is only available as a 
+<a href="https://dev.w3.org/2009/cheatsheet/doc/" target="_blank" rel="noopener noreferrer">
+pure Web application</a>.</h4>
+
+<h4>Help Build the Web Platform</h4>
+
+<p>Most of the technologies you use when developing Web applications and Web sites are 
+designed and standardized in W3C in a completely open and transparent process.</p>
+
+<p>In fact, all W3C specifications are developed in public <a href="https://github.com/w3c/" 
+target="_blank" rel="noopener noreferrer">GitHub repositories</a>, so if you are familiar 
+with GitHub, you already know how to contribute to W3C specifications! This is all about 
+raising issues (with feedback and suggestions) and/or bringing pull requests to fix 
+identified issues.</p>
+
+<h4>Contribute</h4>
+
+<p>Contributing to this standardization process might be a bit scary or hard to approach 
+at first, but understanding at a deeper level how these technologies are built is a great 
+way to build your expertise.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08. github (the octocat) logo (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image008.webp"
+  loading="lazy"
+  title="Github (the octocat) logo"
+  alt="Github (the octocat) logo."
+  style="width:10%;" />
+
+<p>If you’re looking to an easy way to dive into this standardization processes, check 
+out which <a href="https://github.com/search?q=org%3Aw3c+label%3A%22good+first+issue%22+state%3Aopen&type=Issues" 
+target="_blank" rel="noopener noreferrer">issues in the W3C GitHub repositories have been 
+marked as “good first issue”</a> and see if you find anything where you think you would 
+be ready to help.</p>
+
+<h4>Shape the future</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 09. w3c web incubator community group logo (08) ~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image009.webp"
+  loading="lazy"
+  title="W3C Web Incubator Community Group logo"
+  alt="W3C Web Incubator Community Group logo."
+  style="width:15%;" />
+
+<p>Another approach is to go and bring feedback ideas for future technologies: the 
+<a href="https://wicg.io/" target="_blank" rel="noopener noreferrer">
+W3C Web Platform Community Incubator Group</a> was built as an easy place to get started 
+to provide feedback on new proposals or bring brand-new proposals for consideration.</p>
+
+<p>Happy Web building!</p>
+
+<h3>What is W3C?</h3>
+
+<p>As steward of global Web standards, W3C’s mission is to safeguard the openness, 
+accessibility, and freedom of the World Wide Web from a technical perspective.</p>
+
+<p>W3C’s primary activity is to develop protocols and guidelines that ensure long-
+term growth for the Web. The widely adopted Web standards define key parts of what 
+actually makes the World Wide Web work.</p>
+
+<h4>A few history bits</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 10. Tim Berners-Lee, WWW developer (08) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image010.webp"
+  loading="lazy"
+  title="Tim Berners-Lee at his desk in CERN, Switzerland, 1994"
+  alt="Tim Berners-Lee at his desk in CERN, Switzerland, 1994."
+  style="width:25%;" />
+
+<h6 style="text-align: center;">Tim Berners-Lee at his desk in CERN, 1994</h6>
+
+<p><a href="https://www.w3.org/People/Berners-Lee/" target="_blank" 
+rel="noopener noreferrer">Tim Berners-Lee</a> wrote
+a <a href="https://www.w3.org/History/1989/proposal.html" target="_blank" 
+rel="noopener noreferrer">proposal</a> in 1989 for a system called the World 
+Wide Web. He then created the first Web browser, server, and Web page. He 
+wrote the first specifications for URLs, HTTP, and HTML.</p>
+
+<p>In October 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C) at the 
+Massachusetts Institute of Technology, Laboratory for Computer Science [MIT/LCS] in 
+collaboration with <a href="https://home.cern/" target="_blank" rel="noopener noreferrer">
+CERN</a>, where the Web originated (see information on the <a href="https://www.w3.org/Daemon/" 
+target="_blank" rel="noopener noreferrer">original CERN Server</a>, with support from 
+DARPA and the <a href="https://ec.europa.eu/index_en.htm" target="_blank" 
+rel="noopener noreferrer">European Commission</a>.</p>
+
+<p>In April 1995, <a href="https://www.inria.fr/" target="_blank" rel="noopener noreferrer">
+Inria</a> became the first European W3C host, followed by <a href="https://www.keio.ac.jp/" 
+target="_blank" rel="noopener noreferrer">Keio University of Japan</a> (Shonan Fujisawa 
+Campus) in Asia in 1996. In 2003, <a href="https://www.ercim.eu/" target="_blank" 
+rel="noopener noreferrer">ERCIM</a> took over the role of European W3C Host from Inria. 
+In 2013, W3C announced <a href="https://ev.buaa.edu.cn/" target="_blank" 
+rel="noopener noreferrer">Beihang University</a> as the fourth Host.</p>
+
+<p>In addition to these four Host locations that employ W3C staff, there are 
+<a href="https://www.w3.org/Consortium/Offices/staff" target="_blank" rel="noopener noreferrer">
+W3C Offices</a> around the globe that support the developer communities in their regions 
+and organize local events. Find the one next to your place!</p>
+
+<h4>A few figures</h4>
+
+<p>As of June 2020, W3C:</p>
+<ul>
+  <li>Is a <a href="https://www.w3.org/Consortium/Member/List)-driven" target="_blank" 
+    rel="noopener noreferrer">member</a>-driven organization composed of nearly 430 
+    companies, universities, start-ups, etc. from all over the world.</li>
+  <li>Holds 44 <a href="https://www.w3.org/groups/" target="_blank" rel="noopener 
+    noreferrer">technical groups</a>, including Working and Interest Groups where technical 
+    specifications are discussed and developed.</li>
+  <li>Published over 7,181 <a href="https://www.w3.org/TR/" target="_blank" 
+    rel="noopener noreferrer">published technical reports</a>, including 430 
+    Web standards (or W3C Recommendations) - since January 1st,1995.</li>
+  <li>Runs a <a href="https://www.w3.org/Consortium/Translation/" target="_blank" 
+    rel="noopener noreferrer">translation program</a> to foster the translation of 
+    its specifications: see the <a href="https://www.w3.org/Consortium/Translation/matrix.html" 
+    target="_blank" rel="noopener noreferrer">translation matrix</a> currently listing 304 
+    available translations of W3C recommendations.</li>
+  <li>Hosts 337 <a href="https://www.w3.org/community/groups/" target="_blank" rel="noopener 
+    noreferrer">Community and Business Groups</a>, where developers, designers, and anyone 
+    passionate about the Web have a place to hold discussions and publish ideas.</li>
+  <li>Gathers over 12,912 active participants constituting the W3C community.</li>
+  <li>Has a <a href="https://www.w3.org/People/" target="_blank" rel="noopener noreferrer">
+    technical staff</a> composed of 64 people, spread on all five continents.</li>
+</ul>
+
+<h4>The Web is Amazing!</h4>
+
+<p>People often use the words “Internet” and “Web” interchangeably, but this usage is 
+technically incorrect.</p>
+
+<p>The Web is an application of the Internet.</p>
+
+<p>The Web is the most popular way of accessing the Internet, but other applications 
+of the Internet are <a href="https://en.wikipedia.org/wiki/Email" target="_blank" 
+rel="noopener noreferrer">e-mail</a> and <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol" 
+target="_blank" rel="noopener noreferrer">ftp</a> for example.</p>
+
+<p>One analogy equates the Internet to a road network where the Web is a car, the email 
+is a bicycle, etc.<br>
+Read <a href="https://www.lifewire.com/difference-between-the-internet-and-the-web-2483335" 
+target="_blank" rel="noopener noreferrer">this article for more details about the 
+difference between Internet and the Web</a>.</p>
+
+<h4>Internet</h4>
+
+<ul>
+  <li>A global network of networks and computers.</li>
+  <li>The network infrastructure.</li>
+  <li>Information travels via network protocols.</li>
+  <li>Can access through a variety of ways.</li>
+</ul>
+
+<h4>Web</h4>
+
+<ul>
+  <li>A collection of information accessed through the internet.</li>
+  <li>Information travels primarily through HTTP.</li>
+  <li>Uses browsers to access documents and web pages.</li>
+  <li>Navigation to other pages occurs through hyperlinks.</li>
+</ul>
+
+<p>The internet is a global network of billions of servers, computers, and other 
+<a href="https://www.lifewire.com/computer-hardware-2625895" target="_blank" 
+rel="noopener noreferrer">hardware</a> devices. Each device can connect with 
+any other device as long as both are connected to the internet using a valid 
+<a href="https://www.lifewire.com/what-is-an-ip-address-2625920" target="_blank" 
+rel="noopener noreferrer">IP address</a>. The internet makes the information 
+sharing system known as the web possible.</p>
+<p>The web, which is short for <a href="https://www.lifewire.com/around-the-web-4781469" 
+target="_blank" rel="noopener noreferrer">World Wide Web</a>, is one of the ways 
+information is shared on the internet (others include 
+<a href="https://www.lifewire.com/electronic-mail-overview-1164107" target="_blank" 
+rel="noopener noreferrer">email</a>, File Transfer Protocol 
+<a href="https://www.thoughtco.com/ftp-defined-2654479" target="_blank" rel="noopener 
+noreferrer">(FTP)</a>, and <a href="https://www.lifewire.com/what-is-instant-messaging-2483319" 
+target="_blank" rel="noopener noreferrer">instant messaging</a> services. The web is composed 
+of billions of connected
+digital documents that are viewed in a web browser, such as Chrome, 
+<a href="https://www.lifewire.com/what-is-safari-4173608" target="_blank" rel="noopener 
+noreferrer">Safari</a>, Microsoft Edge, <a href="https://www.lifewire.com/the-history-of-firefox-446233" 
+target="_blank" rel="noopener noreferrer">Firefox</a>, and others.</p>
+
+<p>Think of the internet as a library. Think of the books, magazines, newspapers, DVDs, 
+<a href="https://www.lifewire.com/what-are-audiobooks-2438535" target="_blank" rel="noopener 
+noreferrer">audiobooks</a>, and other media it contains as websites.</p>
+
+<p>Both the internet and the web serve unique purposes but work hand in hand to provide 
+information, entertainment, and other services to the public.</p>
+
+<p>The internet really is the information superhighway. It passes through various kinds 
+of network traffic including, FTP, IRC, and the World Wide Web. Without it, we wouldn’t 
+have our favorite and most common way to access websites.</p>
+
+<p>The internet was born in the 1960s under the name ARPAnet. It was an experiment by 
+the U.S. military to find ways to maintain communications in the case of a nuclear 
+strike. With a decentralized network, communications could be maintained even if parts 
+were taken offline. ARPAnet eventually became a civilian effort, connecting university
+mainframe computers for academic purposes.</p>
+
+<p>As personal computers became mainstream in the 1980s and 1990s and the internet was 
+opened to commercial interests, it grew exponentially. More and more users plugged their 
+computers into the massive network through dial-up connections, then through faster 
+connections such as ISDN, cable, DSL, and other technologies. Today, the internet has 
+grown into a public spiderweb of interconnected devices and networks.</p>
+
+<p>No single entity owns the internet, and no single government has absolute authority 
+over its operation. Some technical rules, and its hardware and software standards, 
+are agreed upon by invested organizations, groups, businesses, and others. These 
+groups help the internet remain functional and accessible. However, for the most 
+part, the internet is a free and open broadcast medium of networked hardware with 
+no single owner.</p>
+<p>Most consumers are familiar with and comfortable with the World Wide Web. With 
+its easy-to-use interface, it’s the best way to get information in a few clicks.</p>
+
+<p>The World Wide Web was born in 1989. Interestingly enough, the web was built 
+by research physicists so that they could share research findings with one 
+another’s computers. Today, that idea has evolved into the greatest collection 
+of human knowledge in history.</p>
+
+<p>The credited inventor of the World Wide Web is Tim Berners-Lee.</p>
+
+<p>You have to access the internet to view the World Wide Web and the web pages 
+or other content it contains. The web is the collective name for all the pages, 
+sites, documents, and other media that are served to visitors.</p>
+
+<p>The web consists of digital documents, referred to as web pages, that
+are viewable through <a href="https://www.lifewire.com/what-is-a-browser-446234" 
+target="_blank" rel="noopener noreferrer">web browser</a> software on devices 
+like smartphones, tablets, and computers. These pages contain many types of 
+content, including static content like encyclopedia pages, but also dynamic 
+content like <a href="https://www.lifewire.com/a-primer-to-ebay-basics-2483229" 
+target="_blank" rel="noopener noreferrer">eBay</a> sales, stocks, weather, news, 
+and traffic reports.</p>
+
+<p>A collection of connected web pages that are publicly accessible and under a 
+single domain name is referred to as a website.</p>
+
+<p>Web pages are connected using 
+<a href="https://www.lifewire.com/hypertext-transfer-protocol-817944" 
+target="_blank" rel="noopener noreferrer">Hypertext Transfer Protocol</a> (HTTP), 
+the coding language that allows you to visit any public web page. By clicking a 
+<a href="https://www.lifewire.com/how-do-hyperlinks-work-2483287" target="_blank" 
+rel="noopener noreferrer">hyperlink</a> or entering a 
+<a href="https://www.lifewire.com/what-is-a-url-2626035" target="_blank" rel="noopener 
+noreferrer">Uniform Resource Locator</a> (URL), the browser uses this unique address 
+to find and access a web page. <a href="https://www.lifewire.com/best-search-engines-2483352" 
+target="_blank" rel="noopener noreferrer">Search engines</a> like Google make it easy 
+to filter the billions of web pages now populating the web by locating the articles, 
+videos, and other media you want to find based on your search criteria.</p>
+
+<h4>Final Verdict: You Can’t Have the Web Without the Internet</h4>
+
+<p>Plain and simple, the internet allows access to the World Wide Web.  Without it, we 
+have no way of accessing the thousands of websites out there. For most online needs, 
+however, the web is the easiest to use.  Each serves an important purpose.</p>
+
+<h3 id="cha-2">a.2 Why Accessibility is Important</h3>
+
+<p><i>The power of the Web is in its universality.</i> <i>Access by everyone regardless 
+of disability is an essential aspect.</i></p>
+
+<h4>Tim Berners-Lee, W3C Director and inventor of the World Wide Web</h4>
+
+<p>The Web has become an essential aspect of our daily lives, and everyone should have 
+access to this technology. Web accessibility focuses on ensuring equivalent access for 
+people with disabilities. It is increasingly important to many organizations and 
+governments from around the world, and has many business benefits. Access to 
+information, including on the Web, is also recognized by the UN Convention on 
+the Rights of Persons with Disabilities (CRPD).</p>
+
+<h4>Who is impacted?</h4>
+
+<p>Web accessibility addresses all disabilities, including hearing, learning and 
+cognitive, neurological, physical, speech, and visual disabilities. Some examples 
+of Web accessibility features include:</p>
+
+<ul>
+  <li><i>Captions</i> on audio and multimedia content for people who are hard of hearing,</li>
+  <li><i>Clear and consistent layout</i> for people with learning and cognitive disabilities,</li>
+  <li><i>Keyboard support</i> for people with physical disabilities and who do not use a mouse,</li>
+  <li><i>Text alternatives</i> for people with visual disabilities and who are using screen readers.</li>
+</ul>
+
+<h4>Web accessibility benefits people with and <i>without</i> disabilities</h4>
+
+<p>Web accessibility features also benefit many more users, such as:</p>
+
+<ul>
+  <li>People with temporary situational limitations, such as a broken arm,</li>
+  <li>People using mobile devices, televisions, and other access channels,</li>
+  <li>People using older computers, with low bandwidth, and other limitations,</li>
+  <li>People who are new to computers, to the Web, or to your own Web site,</li>
+  <li>People who are not fluent in the language of your particular Web site.</li>
+</ul>
+
+<p>The Web is an increasingly important resource in many aspects of life: education, 
+employment, government, commerce, health care, recreation, and more. When Web pages, 
+Web technologies, Web tools, or Web applications are badly designed, they can create 
+barriers that exclude people from using the Web. More information is available in the 
+<a href="https://www.w3.org/standards/webdesign/accessibility" target="_blank" 
+rel="noopener noreferrer">W3C Accessibility</a> overview.</p>
+
+<h4>First Steps in Web Accessibility</h4>
+
+<p>There are many simple Web accessibility improvements that you can implement and check 
+right away, even when you are new to this topic.</p>
+
+<p>Remember that when developing or redesigning a website or Web application, it is best 
+to evaluate accessibility early and throughout the development process to identify 
+accessibility problems early, when it is easier to address them.</p>
+
+<p>Two examples are provided below but you can find more tips and information in 
+these 2 resources:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/gettingstarted/tips/" target="_blank" 
+    rel="noopener noreferrer">Tips for Getting Started with Web Accessibility.</a></li>
+  <li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/" target="_blank" 
+    rel="noopener noreferrer">Easy Checks - A First Review of Web Accessibility.</a></li>
+</ul>
+
+<h4>Example #1: page title</h4>
+
+<p>Good page titles are particularly important for orientation — to help people know 
+where they are and move between pages open in their browser.  The first thing screen 
+readers say when the user goes to a different Web page is the page title. In the Web 
+page markup, they are the words &lt;title&gt; within the &lt;head&gt;.</p>
+
+<h5><i>Check #1</i>: There is a title that adequately and briefly describes the content 
+of a page, and it distinguishes the page from other Web pages.</h5>
+
+<p><i>Example</i>:</p>
+
+<pre>&lt;head&gt;
+  ...
+  &lt;title&gt;Web Accessibility Initiative (WAI) - home page&lt;/title&gt;
+  ...
+&lt;/head&gt;</pre>
+
+<h4>Example 2: image text alternatives (“alt text”)</h4>
+
+<p>Text alternatives (“alt text”) are a primary way of making visual information accessible, 
+because they can be rendered through any sensory modality (for example, visual, auditory or 
+tactile) to match the needs of the user. Providing text alternatives allows the information 
+to be rendered in a variety of ways by a variety of user agents. For example, a person who 
+cannot see a picture can have the text alternative read aloud using synthesized speech.</p>
+
+<h5><i>Check #2</i>: Every image has alt with appropriate alternative text.</h5>
+
+<p><i>Example</i>: See the W3C logo below. It contains a link that points to the W3C Web 
+site. The text alternative is going to be a brief description of the link target.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 11. W3C logo (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image011.webp"
+  loading="lazy"
+  title="W3C logo"
+  alt="W3C logo."
+  style="width:15%;" />
+
+<p style="text-align: center;"><a href="https://www.w3.org/Icons/w3c_home" target="_blank" 
+rel="noopener noreferrer">W3C Home</a></p>
+
+<pre>&lt;a href=&quot;https://w3.org&quot;&gt;
+  &lt;img src=&quot;https://w3.org/Icons/w3c_home.png&quot; width=&quot;72&quot; height=&quot;48&quot; 
+    alt=&quot;World Wide Web Consortium&quot;&gt;
+&lt;/a&gt;</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 12. html5 logo (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image012.webp"
+  loading="lazy"
+  title="HTML5 logo"
+  alt="HTML5 logo."
+  style="width:7.5%;" />
+<br>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+  &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  ... &lt;!-- The rest is content --&gt;</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 13. new structural elements in html5 (13) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image013.webp"
+  loading="lazy"
+  title="Some of the new structural elements introduced by HTML5: section, article, etc"
+  alt="Some of the new structural elements introduced by HTML5: section, article, etc."
+  style="width:25%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-1-1">1.1.1 History of HTML: From HTML1.0 to HTML5.0</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>As Web site layouts evolve, HTML5 structural elements such as lists, paragraphs, 
+tables, etc. show their limits.<br>
+<br>Today, many Web sites offer navigation menus, tabbed panels, headers, footers, and so on.<br>
+<br>The way these “parts”’ are implemented relies heavily on &lt;div&gt; 
+and &lt;span&gt; elements with different id and class attributes, lots of 
+CSS and lots of JavaScript code to apply custom styles and behaviors.</p>
+
+<p>However, there are some issues with this approach:</p>
+
+<ul>
+  <li>id and class names differ from one developer to another, from one country to another, etc.</li>
+  <li>Even with the same ids and class names, the css rules may be different.</li>
+  <li>JavaScript libraries have become increasingly heavy over the years.</li>
+  <li>Web pages have become increasingly heavy over the years!</li>
+  <li>These elements can not be handled by the Web browser natively…</li>
+</ul>
+
+<p>Even if differences exist between ids, classes and css/js implementations, they also share 
+common behaviors, layouts, and “ways of doing things” that could be guessed at first glance by a human.</p>
+
+<p>So various studies have been conducted in order to identify the most popular ids, class names, 
+widgets, etc. used on the Web:</p>
+
+<p>Quoting from this <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" 
+target="_blank" rel="noopener noreferrer">article: </a>“During the creation of HTML5, 
+Ian Hickson used Google’s tools to mine data from over a billion Web pages, surveying 
+what ids and class names are most commonly used on the real world Web. Opera did a 
+similar study of 3.5 million URLs, calling it MAMA (”Metadata Analysis and Mining 
+Application”). MAMA, as structural Web-paged search engine, had a smaller URL set, 
+but looked at a larger and wider variety of Web page statistics”.</p>
+
+<h3>New elements added to the HTML5 set</h3>
+
+<p>The results of these surveys led to the addition of new structural elements in HTML5. 
+For example, the very popular &lt;div class=“header”&gt; led to the creation of 
+a &lt;header&gt; element, &lt;div class=“aside”&gt; to a &lt;aside&gt; element, etc.</p>
+
+<p>Finally, the 20 most popular ids and class names found in Hickson’s and Opera’s 
+surveys gave birth to these new elements (click on the element’s
+name to go to the W3C specification about this element):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-2-1">1.2.1 HTML5 structural elements with description</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table>
+  <tr>
+    <th>HTML5 element</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-header-element" 
+      target="_blank" rel="noopener noreferrer">&lt;header&gt;</a></td>
+    <td>Introduction of “sectioning elements”: an article, a section, the entire document (header page). 
+    Typically the header of a Web site that appears on the top of each page, or a header of a long 
+    &lt;article&gt; or of a long &lt;section&gt;.</td>
+  </tr>
+  <tr>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-footer-element" 
+      target="_blank" rel="noopener noreferrer">&lt;footer&gt;</a></td>
+    <td>Contains the footer of a site, a long &lt;article&gt;, or a long &lt;section&gt;.</td>
+  </tr>
+  <tr>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-nav-element" 
+      target="_blank" rel="noopener noreferrer">&lt;nav&gt; </a></td>
+    <td>Section that contains the main navigation links (within the document or to other pages).</td>
+  </tr>
+  <tr>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-article-element" 
+      target="_blank" rel="noopener noreferrer">&lt;article&gt;</a></td>
+    <td>Independent content, which can be individually extracted from the document and 
+    syndicated (RSS or equivalent) without penalizing its understanding. Typically a blog post.</td>
+  </tr>
+  <tr>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-section-element" 
+      target="_blank" rel="noopener noreferrer">&lt;section&gt;</a></td>
+    <td>Generic section used to group different articles for different purposes 
+      or subjects, or to define the different sections of a single article.  Generally used with a header.</td>
+  </tr>
+  <tr>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-time-element" 
+      target="_blank" rel="noopener noreferrer">&lt;time&gt;</a></td>
+    <td>Used for marking up times and dates.</td>
+  </tr>
+  <tr>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-aside-element" 
+      target="_blank" rel="noopener noreferrer">&lt;aside&gt;</a></td>
+    <td>Section whose content is not necessarily directly related to the main content 
+      that surrounds it, but can provide additional information.</td>
+  </tr>
+  <tr>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-figure-element" 
+      target="_blank" rel="noopener noreferrer">&lt;figure&gt;</a> and 
+      <a href="https://html.spec.whatwg.org/multipage/sections.html#the-figcaption-element" 
+      target="_blank" rel="noopener noreferrer">&lt;figcaption&gt;</a></td>
+    <td>Used to encapsulate a figure as a single item, and contains a caption for 
+      the figure, respectively.</td>
+  </tr>
+  <tr>
+    <td><a href="https://html.spec.whatwg.org/multipage/sections.html#the-main-element" 
+      target="_blank" rel="noopener noreferrer">&lt;main&gt;</a></td>
+    <td>The main element represents the main content of the body of a document 
+      or application. The main content area consists of content that is directly 
+      related to or expands upon the central topic of a document or central 
+      functionality of an application. <b>There can be only one &lt;main&gt; 
+      element in a document</b>.</td>
+  </tr>
+</table>
+
+<p>And there is no &lt;content&gt; element even though the &lt;div class=“content”&gt; 
+was very popular. Instead, the HTML5 group decided that anything not embedded in one of 
+the elements from the above table is “default content”.</p>
+
+<p>If the content is of a type that corresponds to one of the elements from the table, 
+i.e. if the content is an article, it should be embedded between &lt;article&gt; and 
+&lt;/article&gt;.</p>
+
+<p>Read also at the end of this section about the new &lt;main&gt; element.
+This element is <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" 
+target="_blank" rel="noopener noreferrer">part of the HTML5 recommendation</a> 
+and an integral part of the HTML document structure.</p>
+
+<h4>External resources:</h4>
+
+<ul>
+  <li>A Smashing Magazine article: <a href="https://coding.smashingmagazine.com/2013/01/18/the-importance-of-sections/" 
+    target="_blank" rel="noopener noreferrer">Structural Semantics: The 
+    Importance Of HTML5 Sectioning Elements</a>.</li>
+  <li>A Dev. Opera article: <a href="https://dev.opera.com/articles/new-structural-elements-in-html5/" 
+    target="_blank" rel="noopener noreferrer">New Structural Elements 
+    in HTML5</a>.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-3-1">1.3.1 A Blog Example: Mixing All Elements Together</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>A blog example that uses the structural elements</h4>
+
+<p>Let’s study <a href="https://jsbin.com/bucokav/edit?html,output" 
+target="_blank" rel="noopener noreferrer">an example we put on JSBin</a> 
+(all examples we have cooked up are available on the jsbin.com Web site 
+and can be modified freely: you can save your own version using the 
+“Bins/create milestone” menu, share your version with others in the 
+forums, etc. Don’t  hesitate to play with the source code, you will 
+never break anything).</p>
+
+<h4>Use a &lt;header&gt; at the top of the blog</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 14. image of 'simple html5 blog' header (35) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/bucokav/edit?html,output" 
+target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image014.webp"
+  loading="lazy"
+  title="Image of the header element at the top of the blog"
+  alt="Image of the header element at the top of the blog."
+  style="width:35%;" /></a>
+
+<p>This is an example of one way to organize a blog. Here, we have designed the 
+HTML page using a &lt;header&gt; element that contains the “Simple HTML5 blog” 
+text that appears on top of the page.</p>
+
+<h4>HTML code:</h4>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Simple HTML5 blog&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Simple &lt;span&gt;HTML5&lt;/span&gt; blog&lt;/h1&gt;
+  &lt;/header&gt;
+...</pre>
+
+<h4>The CSS rules we used:</h4>
+
+<pre>header {
+  color: #007e99;
+  font-size: 2.5em;
+  padding: 20px 50px
+}
+header span {
+  color: #722
+}</pre>
+
+<h4>Use a &lt;nav&gt; for the navigation menu just below the header</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 15. image of the navigation menu (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image015.webp"
+  loading="lazy"
+  title="Image of the navigation menu"
+  alt="Image of the navigation menu."
+  style="width:35%;" />
+  
+<p>The navigation menu just below the header is a &lt;nav&gt; element. For the 
+purpose of this example we haven’t provided any value for the hyperlinks…</p>
+
+<br/>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;Simple HTML5 blog&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Simple &lt;span&gt;HTML5&lt;/span&gt; blog&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span&gt;Blog&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+   &lt;/nav&gt;</pre>
+
+</details>
+
+<h4>And here is the CSS we used in this example for the &lt;nav&gt; element:</h4>
+
+<details>
+  <summary><b>CSS source code:</b></summary>
+
+<pre>nav {
+  font-size: 1.5em;
+  margin: 5px 0;
+  padding: 20px 50px
+}
+nav li {
+  display: inline;
+  margin: 0 15px
+}
+nav li:first-child {
+  margin-left: 0
+}
+* html nav ul {
+  margin-left: -15px
+}
+nav span, nav a {
+  padding: 3px 15px 4px
+}
+nav span {
+  background: #722;
+  color: #fff
+}</pre>
+
+</details>
+
+<h4>A &lt;section&gt; for each month and an &lt;article&gt; for each post in the blog</h4>
+
+<p>Now, we have one big &lt;section&gt; element that contains a set of &lt;article&gt; elements…</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 16. image of sections that contain articles (37) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p>
+<img class="displayed"
+  src="./images/image018.webp"
+  loading="lazy"
+  title="Image of figure and figcaption that embed an img"
+  alt="Image of figure and figcaption that embed an img."
+  style="width:30%;" />
+<img class="displayed"
+  src="./images/image015.webp"
+  loading="lazy"
+  title="Image of the navigation menu"
+  alt="Image of the navigation menu."
+  style="width:30%;" />
+<img class="displayed"
+  src="./images/image016.webp"
+  loading="lazy"
+  title="Image of sections that contain articles"
+  alt="Image of sections that contain articles."
+  style="width:30%;" />
+</p>
+
+<h4>HTML code:</h4>
+
+<pre>&lt;section&gt;
+  &lt;article&gt;
+    ...
+  &lt;/article&gt;
+  &lt;article&gt;
+    ...
+  &lt;/article&gt;
+  &lt;article&gt;
+    ...
+  &lt;/article&gt;
+&lt;/section&gt;</pre>
+
+<br/>
+
+<details>
+  <summary><b>CSS source code:</b></summary>
+
+<pre>section {
+  float: left;
+  padding: 35px 0;
+  position: relative;
+  width: 70%
+}
+section article {
+ margin: 0 50px 40px;
+ padding: 25px 0 0;
+  position: relative
+}
+section header {
+  font-size: 1em;
+  padding: 0;
+}
+section h2 {
+  font-size: 2.3em;
+}</pre>
+
+</details>
+
+<p>Note that the H2, article, article header, etc. will be styled using these rules.</p>
+
+<h4>Add a &lt;header&gt; at the beginning of each &lt;article&gt;</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 17. image of the header at the top of each article (37) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image017.webp"
+  loading="lazy"
+  title="Image of the header at the top of each article"
+  alt="Image of the header at the top of each article."
+  style="width:35%;" />
+  
+<p>Next, in each article in the section we have a header (to display the
+article title), paragraphs (article content), and so on.</p>
+
+<h4>Example for the first blog article:</h4>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;section&gt;
+  &lt;article&gt;
+    &lt;header&gt;
+      &lt;h2&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h2&gt;
+    &lt;/header&gt;
+    &lt;p&gt;Try to move the mouse on different elements. The structure will be
+      highlighted and you will be able
+      to see the different inclusions of elements one in each other. If you
+      move the cursor to this sentence, it will be highlighted in dark grey,
+      showing the presence of an &lt;article&gt; element, surrounded by a
+      &lt;section&gt; element (light grey), etc. So we have some articles in
+      a single section element. The page title at the top is a &lt;header&gt;
+      element, while the tag cloud on the right is a &lt;aside&gt; element. The
+      main menu on top (with Blog, About, Contact) is a &lt;nav&gt; element.&lt;/p&gt;
+    &lt;figure&gt;
+      &lt;img src=&quot;HTML5-tags.png&quot;
+        alt=&quot;Example of HTML5 structural tags&quot; /&gt;
+        &lt;figcaption&gt;
+          Fig. 1 : an example of how new structural elements could
+          be used. This page put a &lt;nav&gt; on top, and does not have
+          headers and footer for each article, like in this figure,
+          but it could... By the way this is a
+        &lt;figcaption&gt; inside a &lt;figure&gt; element...
+        &lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/article&gt;
+  ...
+&lt;/section&gt;</pre>
+
+</details>
+
+<h4>Use &lt;figure&gt; and &lt;figcaption&gt; and embed &lt;img&gt; inside</h4>
+
+<p>Also note the way we included a figure using the new “HTML5” method, using a &lt;figure&gt;..&lt;figure&gt; element that embedded a &lt;img src=…&gt; element together with a &lt;figcaption&gt; element.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 18. image of figure and figcaption that embed an img (38) ~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image018.webp"
+  loading="lazy"
+  title="Image of figure and figcaption that embed an img"
+  alt="Image of figure and figcaption that embed an img."
+  style="width:35%;" />
+  
+<p>Here is the CSS for the &lt;figcaption&gt; element we have used in the
+example (we did not apply any style to the &lt;figure&gt; element):</p>
+
+<h4>HTML code:</h4>
+
+<pre>&lt;figure&gt;
+  &lt;img src=&quot;HTML5-tags.png&quot;
+  alt=&quot;Example of HTML5 structural tags&quot; /&gt;
+  &lt;figcaption&gt;
+    Fig. 1 : an example of how .....
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</pre>
+
+<h4>CSS code:</h4>
+
+<pre>figcaption {
+  font-style:italic;
+  font-size: 0.8em;
+  width: 100%
+}</pre>
+
+<h4>Use an &lt;aside&gt; element to display a tag cloud on the… side of the main content</h4>
+
+<p>After the long &lt;section&gt; element that contains all the blog
+articles displayed in the page, we added the HTML code for the tag cloud
+that is displayed on the right of the page, “aside”! This is done using
+- you already guessed it - an &lt;aside&gt; element:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 19. image of the tag cloud defined as an aside element (39) ~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image019.webp"
+  loading="lazy"
+  title="image of the tag cloud defined as an aside element"
+  alt="image of the tag cloud defined as an aside element."
+  style="width:25%;" />
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;section&gt;
+  .... all &lt;article&gt;... &lt;/article&gt; here....
+&lt;/section&gt;
+&lt;aside&gt;
+  &lt;h2&gt;Tag cloud&lt;/h2&gt;
+  &lt;ul class=&quot;tag-cloud&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w2&quot;&gt;ajax&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w8&quot;&gt;apple&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot; rel=&quot;tag&quot; class=&quot;w3&quot;&gt;css&lt;/a&gt;&lt;/li&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/aside&gt;
+...</pre>
+
+</details>
+
+<p>We are not going to show the complete CSS here as it uses some tricks to
+display the list as a “real tag cloud” that uses JavaScript for handling
+events, etc. Those who are curious can look at
+<a href="https://jsbin.com/bucokav/edit?html,output" target="_blank" rel="noopener noreferrer">the
+code of the online example</a>.</p>
+
+<h4>Here is the CSS for the &lt;aside&gt; element:</h4>
+
+<details>
+  <summary><b>CSS source code:</b></summary>
+
+<pre>aside {
+  float: right;
+  padding: 70px 0 30px;
+  position: relative;
+  width: 25%
+}
+aside h2 {
+  color: #888;
+  font-size: 1.8em
+}
+aside .tag-cloud {
+  padding: 15px 35px 10px 0;
+  text-align: center
+}
+...</pre>
+
+</details>
+
+<p>We used a float:right CSS rule to put the tag cloud on the right… In a
+following section we will provide several examples that explain how to
+make a nice layout with the new structural elements, using simple CSS
+rules.</p>
+
+<h4>Here is the result:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 19. image of the tag cloud defined as an aside element (40) ~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image019.webp"
+  loading="lazy"
+  title="The aside tag cloud on the right"
+  alt="The aside tag cloud on the right."
+  style="width:30%;" />
+
+<h4>Add a &lt;footer&gt; at the end of the blog</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 20. image of the tag cloud defined as an aside element (40) ~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image020.webp"
+  loading="lazy"
+  title="Image of the blog footer"
+  alt="Image of the blog footer."
+  style="width:25%;" />
+
+<h4>Finally, we added a &lt;footer&gt; element (<i>lines 12-14</i> below)
+after the tag cloud definition, to display a page footer:</h4>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;html&gt;
+...
+&lt;body&gt;
+  ...
+  &lt;section&gt;
+    ...
+  &lt;/section&gt;
+  &lt;aside&gt;
+    ...
+  &lt;/aside&gt;
+  &lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2009 Some blog&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>With this CSS rule:</h4>
+
+<pre>footer {
+  clear: both;
+  color: #777;
+  padding: 10px 50px
+}</pre>
+
+<h4><b>And here is the result at the bottom of the page:</b></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 22. the resulting footer at the bottom of the page (41) ~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image022.webp"
+  loading="lazy"
+  title="The resulting footer at the bottom of the page"
+  alt="The resulting footer at the bottom of the page."
+  style="width:35%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>1.3.4 More on &lt;article&gt; and &lt;section&gt;</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Can an &lt;article&gt; contain a &lt;section&gt;?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23. pictures of eisher hands (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image023.webp"
+  loading="lazy"
+  title="Picture of 'eisher' hands"
+  alt="Picture of 'eisher' hands."
+  style="width:25%;" />
+
+<p>It may not be clear whether a &lt;section&gt; may contain one or several
+&lt;article&gt; elements or if an &lt;article&gt; may contain one or
+several &lt;section&gt; elements.</p>
+
+<ul>
+  <li>The &lt;article&gt; element was designed for stand-alone parts of a
+    document that could eventually be syndicated in RSS streams.</li>
+  <li>&lt;section&gt; elements are used to cut a logical part into subparts.</li>
+</ul>
+
+<h4>An &lt;article&gt; may be cut into different &lt;section&gt; elements!</h4>
+
+<h4>Example of a blog post defined as a long &lt;article&gt;, that is in
+turn cut into smaller &lt;section&gt; elements:</h4>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;article id=&quot;id1&quot;&gt;
+  &lt;section id=&quot;id1part1&quot;&gt;
+    &lt;h2&gt;Introduction&lt;/h2&gt;
+  &lt;/section&gt;
+  &lt;section id=&quot;id1part2&quot;&gt;
+    &lt;h2&gt;My travel to India&lt;/h2&gt;
+  &lt;/section&gt;
+  &lt;section id=&quot;id1part3&quot;&gt;
+    &lt;h2&gt;Return to France&lt;/h2&gt;
+  &lt;/section&gt;
+&lt;/article&gt;</pre>
+
+</details>
+
+<p>The blog example from the previous part of the course, on the other hand, uses 
+a single &lt;section&gt; that contains several &lt;article&gt; elements. Indeed, 
+we can also have a &lt;section&gt; that regroups all blog posts per month, each 
+one being an &lt;article&gt; element.</p>
+
+<h4>A &lt;section&gt; may be cut into different &lt;article&gt; elements, too!</h4>
+
+<h4>Can you put a &lt;nav&gt; in an &lt;article&gt;?</h4>
+
+<p>Yes, you can, in case you would like to propose some navigation links
+with each blog post, for example:</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;article&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Blog post title&lt;/h1&gt;
+    &lt;p&gt;Author: Michel&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Next post&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Previous post&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;...&quot;&gt;Contact author&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;p&gt;Content...&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;p&gt;Posted by Michel, the &lt;time datetime=&quot;2012-02-02&quot;&gt;February 2,
+    2012&lt;/time&gt; &lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/article&gt;</pre>
+
+</details>
+
+<p>In that case, the &lt;nav&gt; element proposes navigation links to
+the next or previous blog post, as well as a link to contact the author
+of the blog post.</p>
+<p>Also note that we used in that example a &lt;footer&gt; element in the blog post.</p>
+
+<h4>What about the &lt;div&gt; element? Is it still useful?</h4>
+<p>The new elements have been primarily designed to better structure the
+code of HTML pages such as those generated by blog or CMS software,
+however do not forget that they add new semantics and will be taken into
+account by:</p>
+
+<ul>
+  <li>Browsers natively or browsers’ extensions, i.e. for
+    automatically generating a table of contents, an outline view of
+    the document, for applying default CSS rules to these elements, etc. See
+    for example the <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" 
+    target="_blank" rel="noopener noreferrer">
+    table-of-contents-crx extension</a> (Chrome extension). More on that in the next section of the course.</li>
+  <li>Text to speech: <a href="https://www.w3.org/WAI/perspective-videos/speech/" 
+    target="_blank" rel="noopener noreferrer">
+    Perspective Video Speech</a></li>
+  <li>Web crawlers, etc.</li>
+</ul>
+
+<p>You can use &lt;div&gt; elements in all cases where the proposed
+structural elements do not fit your needs: for defining some content
+that should be styled, for example.</p>
+
+<p>This chart from the <a href="https://html5doctor.com/" target="_blank" rel="noopener noreferrer">
+HTML5 Doctor Web site</a> may help you decide whether or not to use a &lt;div&gt;:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 24. chart from html5 doctor web site (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image024.webp"
+  loading="lazy"
+  title="Flow chart about using header, H1, etc"
+  alt="Flow chart about using header, H1, etc."
+  style="width:35%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>1.3.5 Headings and Structural Elements</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>We will now present some best practices for starting to
+use &lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;, in
+particular concerning the use of headings (h1, h2, h3, h4, h5 and h6).</p>
+
+<h4>Use &lt;h1&gt;…&lt;h6&gt; for the headings</h4>
+
+<p>Since the very beginning, HTML has had heading
+elements: &lt;h1&gt;…&lt;h6&gt;. These elements are used to display
+headings with different sizes by default, when no CSS is used.  The
+following example shows 6 sentences that are surrounded by &lt;h1&gt;,
+&lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; and &lt;h6&gt;:</p>
+
+<h1>This is a H1 heading</h1>
+<h2>This is a H2 heading</h2>
+<h3>This is a H3 heading</h3>
+<h4>This is a H4 heading</h4>
+<h5>This is a H5 heading</h5>
+<h6>This is a H6 heading</h6>
+
+<p>These headings define a hierarchy, as shown by the default sizes given by the 
+browser. This hierarchy can also be used to define an outline of the document. 
+To illustrate this, we have used a browser extension. Here is the result for the 
+previous example:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 25. headings 1 thru 6 (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image025.webp"
+  loading="lazy"
+  title="Outliner in action from the previous example"
+  alt="Outliner in action from the previous example."
+  style="width:35%;" />
+
+<p>In the above outline, note that we have only used H1… H6 elements, without 
+any new HTML5 structural elements such as &lt;section&gt; or &lt;article&gt;.</p>
+
+<p>Here is a list of browser extensions you can try, for visualizing the
+outline of a document: 
+<a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" 
+target="_blank" rel="noopener noreferrer">table-of-contents-crx</a> Chrome
+extension
+or <a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" 
+target="_blank" rel="noopener noreferrer">this Firefox extension</a>.</p>
+
+<h4>Using headings and new sectioning elements (section, article, aside, nav)</h4>
+
+<h4>Definition of heading content and sectioning content</h4>
+
+<p>The &lt;section&gt;, &lt;article&gt;,
+&lt;nav&gt; and &lt;aside&gt; elements are called “sectioning elements”.
+They cut a document into slices we call “sections”.</p>
+
+<p>The HTML5 specification says that “each sectioning element potentially
+has a heading and has also an outline associated”.</p>
+
+<p>&lt;h1&gt; … &lt;h6&gt;</p>
+
+<p>are called <b>headings</b>, and define the header of a section
+(whether explicitly marked up using sectioning content elements, or
+implied by the heading content itself). This means that:</p>
+
+<pre class="html5">&lt;body&gt;
+  &lt;h1&gt;Title of my document&lt;/h1&gt;
+  ...
+&lt;/body&gt;</pre>
+
+<h4>… defines the header of a section <i>implicitly</i>, while:</h4>
+
+<pre class="html5">&lt;body&gt;
+  ...
+  &lt;section&gt;
+    &lt;h1&gt;Title of my section&lt;/h1&gt;
+    ...
+  &lt;/section&gt;
+&lt;/body&gt;</pre>
+
+<h4>… defines the heading of <i>the explicit section</i> (its parent element &lt;section&gt;)</h4>
+
+<h4>Use multiple headings of different rank with sectioning content</h4>
+
+<p>The first element of a heading content in an element of sectioning
+content represents the heading for that section
+(the &lt;section&gt;&lt;h1&gt;…&lt;/h1&gt;&lt;/section&gt; in the above
+example).</p>
+
+<p>Subsequent headings of equal or higher rank start new (implied)
+sections, headings of lower rank start implied subsections that are part
+of the previous one. In both cases, the element represents the heading
+of the implied section.</p>
+
+<h4>Let’s clarify this by looking at some example code:</h4>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre class="html5">&lt;body&gt;
+&lt;section&gt;
+  &lt;h1&gt;This H1 is the heading of an explicit section&lt;/h1&gt;
+  ...
+  &lt;h2&gt;This H2 is a subheading, part of the same section
+    (lower rank)&lt;/h2&gt;
+  ....
+  &lt;h1&gt;This H1 starts an implicit new section in the explicit
+    section (equal or higher rank)&lt;/h1&gt;
+  ...
+  &lt;h2&gt;This is a H2 heading in the new section that has
+    just started&lt;/h2&gt;
+  ...
+&lt;/section&gt;
+&lt;/body&gt;</pre>
+
+</details>
+
+<h4>The corresponding outline is:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 26. outline of previous example (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image026.webp"
+  loading="lazy"
+  title="Outline of previous example"
+  alt="Outline of previous example."
+  style="width:35%;" />
+
+<p>In the above example, please note two things:</p>
+
+<ol type="1">
+  <li>The outline shows an “Untitled body” at the root of the hierarchy,</li>
+  <li>The default size for the H1 and H2 is the same (!). Indeed, when we
+    start a &lt;h1&gt; inside a &lt;section&gt; the browser lowers
+    its default size automatically, as if a new hierarchy level has been
+    added artificially. We will discuss this further in the following
+    sections, as we introduce some best practices.</li>
+</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>1.3.6 Best Practices When Using Sectioning Elements</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Best practice #1: always add a heading to explicit sectioning content</h4>
+
+<p>It’s always better - mainly for accessibility reasons - to include a
+heading (a &lt;h1&gt;, &lt;h2&gt;…&lt;h6&gt;) in each sectioning element
+(&lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;), but also
+after the &lt;body&gt; element (called a “sectioning root”).</p>
+
+<h4>Here are some examples:</h4>
+
+<h4>Good (heading in each explicit section):</h4>
+
+<pre class="html5">&lt;section&gt;
+  &lt;h1&gt;Blog post of April 2020&lt;/h1&gt;
+  ...
+&lt;/section&gt;</pre>
+
+<h4>Good (heading in a &lt;header&gt; does not change anything):</h4>
+
+<pre class="html5">&lt;section&gt;
+  &lt;b&gt;&lt;header&gt;&lt;/b&gt;
+  &lt;b&gt;&lt;h1&gt;Blog post of April 2020&lt;/h1&gt;&lt;/b&gt;
+  &lt;b&gt;&lt;p&gt;Posted by Michel Buffa...&lt;/p&gt;&lt;/b&gt;
+  &lt;b&gt;&lt;/header&gt;&lt;/b&gt;
+...
+&lt;/section&gt;</pre>
+
+<h4>Bad (there is no Hx after the &lt;section&gt; - no heading):</h4>
+
+<pre class="html5">&lt;section&gt;
+  &lt;header&gt;
+    &lt;p class=&quot;article title&quot;&gt;Blog post of April 2020&lt;/p&gt;
+    &lt;p&gt;Posted by Michel Buffa...&lt;/p&gt;
+  &lt;/header&gt;
+  ...
+&lt;/section&gt;</pre>
+
+<p>The last example is bad for accessibility reasons. A screen reader
+that vocalizes the page will just say “Entering section”, while in the
+previous two good examples it would say “entering section with heading
+Blog Posts of April 2020”. You can also check if your headings and
+sectioning elements are ok by using a browser extension that displays
+the outline of the document (just search for “html5 outliner” in your
+browser’s extension search engine).</p>
+
+<p><b>UPDATE:</b> For the course screenshots, we used the Google Chrome
+HTML5 outliner extension that is no more available (it has been removed
+by its developer), but you can use any other equivalent extension such
+as <a href="https://chrome.google.com/webstore/detail/table-of-contents-crx/eeknhipceeelbgdbcmchicoaoalfdnhi?hl=f" 
+target="_blank" rel="noopener noreferrer">table-of-contents-crx</a> for Chrome or 
+<a href="https://addons.mozilla.org/fr/firefox/addon/outline-sidebar/?src=search" 
+target="_blank" rel="noopener noreferrer">Outline sidebar</a> for Firefox.</p>
+
+<h4>The outline of the last example looks like this;</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 27. outline of the last example (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image027.webp"
+  loading="lazy"
+  title="Outline of last example"
+  alt="Outline of last example."
+  style="width:35%;" />
+
+<p>Notice that &lt;body&gt; is also a sectioning element. It’s called a
+“sectioning root”, and would also need a heading.</p>
+
+<h4>Final good version:</h4>
+
+<pre class="html5">&lt;body&gt;
+  &lt;b&gt;&lt;h1&gt;Example Blog&lt;/h1&gt;&lt;/b&gt;
+  &lt;section&gt;
+    &lt;header&gt;
+      &lt;b&gt;&lt;h2&gt;Blog post of April 2020&lt;/h2&gt;&lt;/b&gt;
+      &lt;p&gt;Posted by Michel Buffa...&lt;/p&gt;
+    &lt;/header&gt;
+    &lt;p&gt;Content of the blog post...&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/body&gt;</pre>
+
+<p>The sectioning root (&lt;body&gt;) and the sectioning elements
+(&lt;section&gt; here…), each have a heading.</p>
+<h4>To sum up:</h4>
+
+<ul>
+  <li>Always use a heading element after a sectioning element, for example 
+    &lt;section&gt;&lt;Hx&gt;…&lt;Hx&gt;…&lt;section&gt;, and after &lt;body&gt;, 
+    where x can be 1..6,</li>
+  <li>Or, use a &lt;header&gt; element, like in &lt;section&gt;&lt;header&gt;&lt;Hx&gt; 
+    …&lt;Hx&gt;…..&lt;header&gt;…&lt;section&gt;</li>
+</ul>
+
+<h4>More about the &lt;header&gt; element</h4>
+
+<p>The &lt;header&gt; element is just a container. It is not taken into
+account for defining new sections of a document nor does it affect the
+hierarchy levels.</p>
+
+<p>You can use heading elements &lt;h1&gt;…&lt;h6&gt; in
+a &lt;header&gt; but be careful if you use more than one, as the rules
+explained in the previous part of the course will apply and may generate
+implicit “sections” in the header.</p>
+
+<h4>This example has two headings in the &lt;header&gt;:</h4>
+
+<pre class="html5">&lt;section&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Some text in a h1 in a header of a section&lt;/h1&gt;
+    &lt;h2&gt;This a h2 in the header...&lt;/h2&gt;
+  &lt;/header&gt;
+&lt;/section&gt;</pre>
+
+<p>Here is the resulting table of contents, notice the two subsections that
+appear, one for the H1, one for the H2:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 28. example structural elements (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image028.webp"
+  loading="lazy"
+  title="Example structural elements"
+  alt="Example structural elements."
+  style="width:35%;" />
+
+<p>Indeed, HTML does not have a dedicated mechanism for marking up
+subheadings, alternative titles or taglines. </p>
+
+<p>If you do not want the subtitles to be included in the table of
+contents, just use standard markup, for example &lt;p&gt; elements, as
+shown in the next example. Of course, CSS rules can be applied to change
+colors, sizes, etc.</p>
+
+<pre class="html5">&lt;header&gt;
+  &lt;h1&gt;HTML 5.1 Nightly&lt;/h1&gt;
+  &lt;p&gt;A vocabulary and associated APIs for HTML and XHTML&lt;/p&gt;
+  &lt;p&gt;Editor&#39;s Draft 9 May 2013&lt;/p&gt;
+&lt;/header&gt;</pre>
+
+<h4>Best practice #2: try not to rely on implicit sectioning,
+use &lt;section&gt;, &lt;article&gt;, etc. instead of
+just &lt;h1&gt;…&lt;h6&gt;</h4>
+
+<p>The example below defines several implicit “sections” by
+using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):</p>
+
+<h4>Ok version (no explicit sections everywhere):</h4>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre class="html5">&lt;body&gt;
+&lt;h4&gt;Apples&lt;/h4&gt;
+&lt;p&gt;Apples are fruit.&lt;/p&gt;
+&lt;section&gt;
+  &lt;h2&gt;Taste&lt;/h2&gt;
+  &lt;p&gt;They taste lovely.&lt;/p&gt;
+  &lt;h6&gt;Sweet&lt;h6&gt;
+  &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
+  &lt;h1&gt;Color&lt;/h1&gt;
+  &lt;p&gt;Apples come in various colors.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/body&gt;</pre>
+
+</details>
+
+<h4>Better version (best practice):</h4>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;body&gt;
+&lt;h1&gt;Apples&lt;/h1&gt;
+&lt;p&gt;Apples are fruit.&lt;/p&gt;
+&lt;section&gt;
+  &lt;h2&gt;Taste&lt;/h2&gt;
+  &lt;p&gt;They taste lovely.&lt;/p&gt;
+  &lt;section&gt;
+    &lt;h3&gt;Sweet&lt;/h3&gt;
+    &lt;p&gt;Red apples are sweeter than green ones.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h2&gt;Color&lt;/h2&gt;
+  &lt;p&gt;Apples come in various colors.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/body&gt;</pre>
+
+</details>
+
+<h5>Both of the examples above are semantically identical and produce the
+same outline:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 29. best practice example of section (article) (48) ~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image029.webp"
+  loading="lazy"
+  title="Best Practice example of section"
+  alt="Best Practice example of section."
+  style="width:35%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>1.3.7 Embedding a Table of Contents</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Here we propose a small piece of JavaScript code you can use in your
+documents to display an embedded table of contents. </p>
+<p>This example is a simple document, with a hyperlink that, once clicked,
+displays the table of contents in an &lt;aside&gt; element in the
+main &lt;section&gt;. Just look at the source code and copy/paste the
+link into your own HTML documents.</p>
+
+<p><a href="https://jsbin.com/tolagec/1/edit?html,css,js,output" target="_blank" 
+rel="noopener noreferrer">Online example at JSBin</a>.</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;body&gt;
+&lt;h1&gt;This is an example of embedded table of content&lt;/h1&gt;
+&lt;section&gt;
+  &lt;header&gt;
+    &lt;h1&gt;First section of the document (this is a h1)&lt;/h1&gt;
+      This is a subheading...
+  &lt;/header&gt;
+  &lt;h2&gt;First subsection of the first section (a h2)&lt;/h2&gt;
+  &lt;p&gt;Blah Blah...&lt;/p&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h1&gt;Second section of the document (a h1)&lt;/h1&gt;
+  &lt;h2&gt;First subsection (a h2)&lt;/h2&gt;
+&lt;/section&gt;
+&lt;aside&gt;
+  &lt;h3&gt;Table of contents&lt;/h3&gt;
+  &lt;a href=&quot;javascript:(function(){...})();&quot;
+    title=&quot;TableDeMatiere&quot;&gt;
+      Click here to display the table of contents!
+  &lt;/a&gt;
+&lt;/aside&gt;
+&lt;/body&gt;</pre>
+
+</details>
+
+<p><b>Best practice</b>: visualizing the table of contents is useful for debugging 
+the structure of your page, and checking the presence of headings after sectioning content.</p>
+
+<p>Indeed, tools that generate the table of contents are a good way to debug the 
+structure of your page. Is the hierarchy correct? Is it what I wanted when I 
+designed my page?</p>
+
+<p>They are also useful for checking the presence of headings in each sectioning 
+content. If some headings are missing, the table of contents will display some 
+"untitled entries". Remember that having a heading after each sectioning content 
+is a good practice in terms of accessibility.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>1.3.8 The &lt;main&gt; Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 31. the main element (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image031.webp"
+  loading="lazy"
+  title="Main element, Earth, Water, Fire, Space &amp; Air"
+  alt="Main element, Earth, Water, Fire, Space &amp; Air."
+  style="width:25%;" />
+  
+<p>If you use &lt;nav&gt; / &lt;header&gt; / &lt;footer&gt; etc. to
+structure your document, you can also use &lt;main&gt; to identify the
+main content of the document. Doing so provides a navigable document
+structure for assistive technology users as well as styling hooks for
+devs.</p>
+
+<p>We have seen the different sectioning elements of HTML5, so why didn’t we talk 
+about the &lt;main&gt; element earlier in this part of the course? Shouldn’t 
+&lt;main&gt;…&lt;/main&gt; be used in place of &lt;div class="main"&gt;…&lt;/div&gt;?</p>
+
+<p>The &lt;main&gt; element is supported by major modern browsers (see the 
+corresponding <a href="https://caniuse.com/#feat=mdn-html_elements_main" 
+target="_blank" rel="noopener noreferrer">support
+table</a> on CanIUse and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main#Browser_compatibility" 
+target="_blank" rel="noopener noreferrer">MDN’s brower compatibility page</a>.</p>
+
+<p>This element is subject to some constraints:</p>
+
+<ul>
+  <li>There must not be more than one &lt;main&gt; element in a document,</li>
+  <li>It must not be a descendant of an &lt;article&gt;,&lt;aside&gt;,
+    &lt;footer&gt;, &lt;header&gt;, or &lt;nav&gt; element.</li>
+</ul>
+
+<p>And finally, here are some examples 
+(from <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" 
+target="_blank" rel="noopener noreferrer">the HTML5 specification</a>) that mix 
+the &lt;main&gt; element with the other sectioning elements already seen in the 
+course:</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!-- other content --&gt;
+  
+&lt;main&gt;
+  
+  &lt;h1&gt;Skateboards&lt;/h1&gt;
+  &lt;p&gt;The skateboard helps kids to get around.&lt;/p&gt;
+  
+  &lt;article&gt;
+    &lt;h2&gt;Longboards&lt;/h2&gt;
+    &lt;p&gt;Longboards are a type of skateboard with a longer
+      wheelbase and larger, softer wheels.&lt;/p&gt;
+    &lt;p&gt;... &lt;/p&gt;
+    &lt;p&gt;... &lt;/p&gt;
+  &lt;/article&gt;
+ 
+  &lt;article&gt;
+    &lt;h2&gt;Electric Skateboards&lt;/h2&gt;
+    &lt;p&gt;These no longer require the propelling of the skateboard by means of the feet; rather an electric motor propels the board, fed by an electric battery.&lt;/p&gt;
+    &lt;p&gt;... &lt;/p&gt;
+    &lt;p&gt;... &lt;/p&gt;
+  &lt;/article&gt;
+ 
+&lt;/main&gt;
+  
+&lt;!-- other content --&gt;</pre>
+
+</details>
+
+<p>Here is another example (also from the specification). Here the &lt;main&gt; 
+element contains a &lt;nav&gt; element consisting of links to subsections of the 
+main content:</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+      &lt;meta charset=&quot;utf-8&quot;/&gt;
+      &lt;title&gt;Graduation Ceremony Summer 2022&lt;/title&gt;
+    &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;The Lawson Academy:
+      &lt;nav&gt;
+        &lt;h2&gt;Click these links to navigate...&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;courses.html&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;fees.html&quot;&gt;Fees&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Graduation&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+      &lt;h1&gt;Graduation&lt;/h1&gt;
+      &lt;nav&gt;
+        &lt;h2&gt;Please choose:&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#ceremony&quot;&gt;Ceremony&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#graduates&quot;&gt;Graduates&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#awards&quot;&gt;Awards&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+      &lt;h2 id=&quot;ceremony&quot;&gt;Ceremony&lt;/h2&gt;
+        &lt;p&gt;Opening Procession&lt;/p&gt;
+        &lt;p&gt;Speech by Valedictorian&lt;/p&gt;
+        &lt;p&gt;Speech by Class President&lt;/p&gt;
+        &lt;p&gt;Presentation of Diplomas&lt;/p&gt;
+        &lt;p&gt;Closing Speech by Headmaster&lt;/p&gt;
+      &lt;h2 id=&quot;graduates&quot;&gt;Graduates&lt;/h2&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Eileen Williams&lt;/li&gt;
+        &lt;li&gt;Andy Maseyk&lt;/li&gt;
+        &lt;li&gt;Blanca Sainz Garcia&lt;/li&gt;
+        &lt;li&gt;Clara Faulkner&lt;/li&gt;
+        &lt;li&gt;Gez Lemon&lt;/li&gt;
+        &lt;li&gt;Eloisa Faulkner&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;h2 id=&quot;awards&quot;&gt;Awards&lt;/h2&gt;
+        &lt;ul&gt;
+        &lt;li&gt;Clara Faulkner&lt;/li&gt;
+        &lt;li&gt;Eloisa Faulkner&lt;/li&gt;
+        &lt;li&gt;Blanca Sainz Garcia&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;Copyright 2023 B.Bauska&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Best practice</h4>
+
+<p>For accessibility matters, a best practice is to split your page
+content into “regions” defined by the five 5 elements
+(aside, footer, header, main and nav) learned this week. </p>
+<p>We recommend this article written by Steve Faulkner:
+“<a href="https://www.paciellogroup.com/blog/2015/09/easy-content-organisation-with-html5/" 
+target="_blank" rel="noopener noreferrer">Easy content organisation with HTML5</a>” (24 September 2015). Steve explains
+in details how to organize an HTML document into “regions” based on the
+semantic markup elements we have seen so far during Module 1 of this course.</p>
+
+<h4>External resources:</h4>
+
+<ul>
+  <li>This <a href="https://www.w3.org/TR/html5/grouping-content.html#the-main-element" 
+    target="_blank" rel="noopener noreferrer">document has been written by the W3C HTML5 Working Group</a>, 
+    which details the different use-cases for this element.</li>
+  <li><a href="https://www.w3.org/html/wg/wiki/User:Sfaulkne/main-usecases" target="_blank" rel="noopener noreferrer">
+    Rationale and use cases for standardizing a ‘main content’ HTML feature</a>.</li>
+  <li>On MDN’s Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" 
+    target="_blank" rel="noopener noreferrer">main element.</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>1.3.9 The Blog Example, Applying Best Practices</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Let’s go back to our blog example and see what can be improved:</p>
+<ul>
+  <li>Do we have a heading after each sectioning element?</li>
+  <li>Did we use sectioning elements or implicit sections?</li>
+  <li>Can we embed a table of contents?</li>
+</ul>
+
+<p><a href="https://jsbin.com/heboke/edit?html,output" target="_blank" rel="noopener noreferrer">The
+blog example is online at JSBin</a>:  let’s see below what the Google
+Chrome HTML5 Outliner extension showed.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 32. image of blog toc, with untitled nav entry (52) ~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/heboke/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image032.webp"
+  loading="lazy"
+  title="Image of Blog Table of Contents, with untitled nav entry"
+  alt="Image of Blog Table of Contents, with untitled nav entry."
+  style="width:35%;" /></a>
+  
+<p>Also note that in this example, we used H1s after each sectioning element, 
+and we still get a hierarchy, some H1s are inside an &lt;article&gt; that is 
+in a &lt;section&gt; (this corresponds to the third example given in the 
+"heading and sectioning elements" part of the course):</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;section&gt;
+  &lt;header&gt;
+    &lt;b&gt;&lt;h1&gt;Blog posts for April 2012&lt;/h1&gt;&lt;/b&gt;
+  &lt;/header&gt;
+  &lt;article&gt;
+    &lt;header&gt;
+      &lt;b&gt;&lt;h1&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h1&gt;&lt;/b&gt;
+        This example is a modified version
+        of &lt;a href=&quot;https://example.com/blog/index.html&quot;&gt;https://example.com/blog/index.html&lt;/a&gt;
+    &lt;/header&gt;
+    ...
+  &lt;/article&gt;
+&lt;/section&gt;</pre>
+
+</details>
+
+<p>With this technique, parts of the document can be moved more easily,
+or integrated inside an RSS stream, without the need to renumber the
+headings.</p>
+<p>Beware that this technique will require you to use some CSS styling, and
+may confuse some screen readers that do not yet take into account this
+way of computing the heading hierarchy. A simple fix is to use an H1
+right after the &lt;body&gt; and use only H2…H6 inside &lt;section&gt;,
+&lt;article&gt;, &lt;nav&gt; and &lt;aside&gt;.</p>
+
+<h4>Let’s fix the missing heading</h4>
+
+<p>We need to add a heading in the &lt;nav&gt; element. This will both fix the outline of the document by removing the untitled entry, and will also make 
+screen readers happy as they will better vocalize the structure of the page (it will say “entering nav” followed by the vocalization of the heading content).</p>
+
+<pre>&lt;nav&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Navigation menu&lt;/h1&gt;
+    &lt;b&gt;
+  &lt;/header&gt;&lt;/b&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;span&gt;Blog&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+<h4>Here is the fixed result:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 33. good outline without the untitled nav (53) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image033.webp"
+  loading="lazy"
+  title="Good outline without the untitled nav"
+  alt="Good outline without the untitled nav."
+  style="width:35%;" />
+
+<p>A common remark from Web designers is: “we do not want a heading content 
+displayed systematically after a &lt;nav&gt;, or an &lt;aside&gt; element…”</p>
+
+<p><b>BEST PRACTICE #1:</b> In order to NOT display the heading content on 
+screen the recommended technique is described in <a href="https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/" 
+target="_blank" rel="noopener noreferrer">this article by Steve Faulkner</a>. 
+Do not use display:none or visibility:hidden in your CSS stylesheet, as in that 
+case the heading content will never be vocalized by screen readers, and more 
+generally by assistive technologies.</p>
+
+<p>As an illustration of the recommended technique, see 
+<a href="https://jsbin.com/savabo/edit?html,output" 
+target="_blank" rel="noopener noreferrer">this JSBin version of the blog example</a> 
+that hides the &lt;h2&gt;Navigation menu&lt;/h2&gt; from the &lt;nav&gt;…&lt;/nav&gt; 
+element, using the CSS technique explained in the above link.</p>
+
+<p><b>BEST PRACTICE #2:</b> It is not advised to include interactive content 
+(links, controls etc) that is hidden offscreen it is in fact a violation of
+the <a href="https://www.w3.org/TR/WCAG20/)" target="_blank" rel="noopener noreferrer">
+W3C WCAG 2.0 Guidelines</a>. All interactive content must have a visible focus 
+indicator (and be on screen when focused).</p>
+
+<h4>Embedding a table of contents and adding a &lt;main&gt; element</h4>
+
+<p>In the previous section, we saw how to embed a table of contents using some 
+JavaScript code borrowed from the Google Chrome HTML5 outliner extension.</p>
+
+<p>Let’s add this piece of code (we removed the JS details from this extract):</p>
+
+<pre>&lt;aside&gt;
+  &lt;h1&gt;
+    &lt;a href=&quot;javascript:(function(){...});&quot;
+      title=&quot;TableOfContents&quot;&gt;
+      Click here to display the table of contents!
+    &lt;/a&gt;
+  &lt;/h1&gt;
+&lt;/aside&gt;</pre>
+
+<h4>We also added a &lt;main&gt; element to identify the main content of the 
+page composed of the big section with all blog posts:</h4>
+
+<pre>&lt;main&gt;
+  &lt;section&gt;
+    &lt;header&gt;
+      &lt;h2&gt;Blog posts for April 2012&lt;/h2&gt;
+    &lt;/header&gt;
+    ...
+&lt;/main&gt;</pre>
+
+<h4>Use H1 as top level headings only, use H2…H6 in sectioning content</h4>
+
+<p>As explained in the article <a href="https://www.paciellogroup.com/blog/2013/10/html5-document-outline/" 
+target="_blank" rel="noopener noreferrer">HTML5 Document Outline</a> and in 
+<a href="https://www.w3.org/wiki/HTML/Usage/Headings" target="_blank" rel="noopener noreferrer">
+the W3C HTML Wiki</a>, it is risky to use nested H1s, as browsers do not correctly 
+implement the “outline algorithm”.</p>
+
+<p>The blog example uses nested H1’s. If you check it with <a href="https://validator.w3.org/nu" 
+target="_blank" rel="noopener noreferrer">the W3C conformance checker</a>, it issues a warning: 
+"<i>Consider using the h1 element as a top-level heading only (all h1 elements 
+are treated as top-level headings by many screen readers and other tools).</i>"</p>
+
+<p>While this is just a warning, we do prefer to use H1s only as top level 
+elements, and replace the H1s we had after &lt;section&gt;, &lt;article&gt;, 
+&lt;nav&gt; and &lt;aside&gt; elements respectively by a H2s and H3s.</p>
+
+<h4>Extract from source code:</h4>
+
+<pre>&lt;nav&gt;
+  &lt;header&gt;
+    &lt;h2&gt;Navigation menu&lt;/h2&gt;
+  &lt;/header&gt;
+  ...
+&lt;/nav&gt;</pre>
+
+<h4>Finally, the fixed example</h4>
+
+<ul>
+  <li><a href="https://jsbin.com/heboke/edit?html,output" target="_blank" 
+    rel="noopener noreferrer">Check it online with this JSBin</a>.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 34. blog with embedded table of contents (55) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/heboke/edit?html,output" target="_blank" 
+    rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image034.webp"
+  loading="lazy"
+  title="Blog with embedded table of contents"
+  alt="Blog with embedded table of contents."
+  style="width:35%;" /></a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>1.3.10 Examples of Page Layouts</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this section, we show some "classic" CSS layout techniques for designing 
+an HTML page that uses the new sectioning elements.</p>
+
+<p>We embed examples from this <a href="https://learn.shayhowe.com/html-css/positioning-content/" 
+target="_blank" rel="noopener noreferrer">very good post about "Positioning content"</a>. 
+This is a recommended reading as it details how to use the CSS float property 
+to layout a Web page.</p>
+
+<p>The 4 examples below are given “as is” to give you some hints. There are lots 
+of other possibilities on using CSS to position element.</p>
+
+<h4>Example #1: a &lt;section&gt; on the left and an &lt;aside&gt; on the right, 
+using the float and width CSS properties</h4>
+
+<p>This example uses the following HTML structure (notice that we use the "HTML 
+entity syntax" for displaying "&lt;" or "&gt;". For example, "&lt;" displays a 
+"&lt;" character).</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+  
+<pre>&lt;header&gt;
+  &lt;code&gt;&lt;header&gt;&lt;/code&gt;
+&lt;/header&gt;
+&lt;section&gt;
+  &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
+&lt;/section&gt;
+&lt;aside&gt;
+  &lt;code&gt; right;&lt;/code&gt;
+&lt;/aside&gt;
+&lt;footer&gt;
+  &lt;code&gt;&lt;footer&gt;&lt;/code&gt;
+&lt;/footer&gt;</pre>
+
+</details>
+
+<p>Here we use the CSS rule float:left for the &lt;section&gt; and the
+CSS rule float:right for the &lt;aside&gt;. When an element floats, it
+goes out of the normal flow of the HTML element. Then by default it
+floats to the edge of its parent; and its size depends on the elements
+it contains. In order to fill the whole horizontal space, we prefer
+here to “force the width” by setting the CSS width property with a
+percentage.  We took width: 63% for the &lt;section&gt; on the left
+and width:30% for the &lt;aside&gt; on the right.</p>
+
+<p>You can look at the complete CSS code in the interactive example below
+(click on the CSS or HTML text in the menu bar below, or click “edit on
+codepen” to change the code and see the results):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ 35. header with section float left and aside float right (56) ~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image035.webp"
+  loading="lazy"
+  title="Header with section float left and aside float right"
+  alt="Header with section float left and aside float right."
+  style="width:35%;" />
+
+<p><a href="https://jsbin.com/dufapo/edit?html,css,output" 
+target="_blank" rel="noopener noreferrer">Also available online at JSBin</a>.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 36. michel buffa home page - 3 sections centered (56) ~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/dufapo/edit?html,css,output" 
+target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image036.webp"
+  loading="lazy"
+  title="Michel Buffa home page: 3 sections centered"
+  alt="Michel Buffa home page: 3 sections centered."
+  style="width:35%;" /></a>
+
+<h4>Example #2: three sections centered, of equal size, also using the float and 
+width CSS properties</h4>
+
+<p>Here we show how to make a 3 column layout using the CSS float property.</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+  
+<pre>&lt;header&gt;
+  &lt;code&gt;&lt;header&gt;&lt;/code&gt;
+&lt;/header&gt;
+&lt;section&gt;
+  &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;code&gt;&lt;section&gt; &lt;br&gt; float: left;&lt;/code&gt;
+&lt;/section&gt;
+&lt;footer&gt;
+  &lt;code&gt;&lt;footer&gt;&lt;/code&gt;
+&lt;/footer&gt;</pre>
+
+</details>
+
+<p>Instead of having one element with a float:left and one element with a 
+float:right property, we instead use float:left for all three of them, and 
+we give a width:30% CSS property value to each &lt;section&gt;. We also set 
+a small margin so that the colums have a gap between them.</p>
+
+<h4>Look at the CSS code in the example below:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 37. header and three float sections (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image037.webp"
+  loading="lazy"
+  title="Header with three float sections"
+  alt="Header with three float sections."
+  style="width:35%;" />
+
+<h4>Example #3: same result using the CSS flex property</h4>
+
+<p>This example uses the CSS flex property to achieve a result similar to the 
+one shown in Example 2. There are many articles on Flexbox and we recommend 
+those from Rachel Andrew on Smashing Magazine: “
+<a href="https://www.smashingmagazine.com/2018/10/flexbox-use-cases/" 
+target="_blank" rel="noopener noreferrer">Use cases for Flexbox</a>”, 
+“<a href="https://www.smashingmagazine.com/2018/09/flexbox-sizing-flexible-box/" 
+target="_blank" rel="noopener noreferrer">Flexbox: how big is that flexible box</a>”, etc.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 38. same example using the css flex property (57) ~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image038.webp"
+  loading="lazy"
+  title="Same example using the CSS Flex property"
+  alt="Same example using the CSS Flex property."
+  style="width:35%;" />
+
+<h4>Example #4: another example written by a student, that uses the flex property</h4>
+
+<p>This example also uses all the structuring elements we saw: main, article, 
+section, etc. It uses only the simplest parts of the FlexBox CSS module, so it 
+should be easy to understand, even for CSS beginners:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 39. another example using the flex property (58) ~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image039.webp"
+  loading="lazy"
+  title="Another example using the flex property"
+  alt="Another example using the flex property."
+  style="width:35%;" />
+  
+<h4>External resources</h4>
+
+<ul>
+  <li>An article on CSS Tricks: <a href="https://css-tricks.com/all-about-floats/" 
+    target="_blank" rel="noopener noreferrer">All about floats</a></li>
+  <li>Old but good article on “A List Apart” (ALA): 
+    <a href="https://alistapart.com/article/css-floats-101" 
+    target="_blank" rel="noopener noreferrer">CSS Floats 101</a></li>
+  <li>Another article on Lifewire:
+    <a href="https://www.lifewire.com/understanding-css-float-3466205" 
+    target="_blank" rel="noopener noreferrer"> Understanding CSS float</a></li>
+  <li>On MDN’s Web Docs: the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" 
+    target="_blank" rel="noopener noreferrer">float CSS property</a> and the 
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear" 
+    target="_blank" rel="noopener noreferrer">clear CSS property</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-4-1">1.4.1 The &lt;details&gt; and &lt;summary&gt; Elements</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>These elements have been introduced for displaying a foldable zone in an HTML document.</p>
+
+<p>In the screenshot below, taken from the W3C specification page, the text next 
+to the horizontal arrow is a &lt;summary&gt; element, and the text displayed when 
+we click on the summary part, is the &lt;details&gt; element. This is a sort of 
+“accordion” with foldable content.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 40. example of summary details elements from the w3c specs (59) ~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image040.webp"
+  loading="lazy"
+  title="Example of summary details elements from the W3C specification"
+  alt="Example of summary details elements from the W3C specification."
+  style="width:35%;" />
+
+<p>The &lt;details&gt; element generates a simple widget to show/hide
+element contents, optionally by clicking on its child &lt;summary&gt; element.</p>
+
+<p>Here is an example of what can be done using these elements: see
+the <a href="https://jsbin.com/yociyel/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">online
+version on JSBin</a>:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 41. example of folded summary details (59) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/yociyel/1/edit?html,css,js,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image041.webp"
+  loading="lazy"
+  title="Example of folded summary details"
+  alt="Example of folded summary details."
+  style="width:35%;" /></a>
+
+<p>And here is what is displayed after clicking on the small arrow-shaped
+icon to the left of the summary:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 42. Example of summary details unfolded (60) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image042.webp"
+  loading="lazy"
+  title="Example of summary details unfolded"
+  alt="Example of summary details unfolded."
+  style="width:35%;" />
+  
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt; ...
+  &lt;body&gt;
+    &lt;details&gt;
+      &lt;summary&gt;
+        How to beat the boss...spoiler alert !
+      &lt;/summary&gt;
+      &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
+      &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
+    &lt;/details&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<p>The &lt;summary&gt;…&lt;/summary&gt; is inside
+a &lt;details&gt;…&lt;/details&gt; element. By clicking on the icon at
+the left of the summary, the content of the &lt;details&gt; value is
+displayed/hidden.</p>
+
+<p>&lt;details&gt; blocks can be <a href="https://jsbin.com/dejagi/edit?html,css,output" 
+target="_blank" rel="noopener noreferrer">bembedded inside one another, like in this example</a>:</p>
+
+<h5>Step 1: all folded:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43. all folded (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/dejagi/edit?html,css,output" 
+target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image043.webp"
+  loading="lazy"
+  title="Other example, unfolded"
+  alt="Other example, unfolded."
+  style="width:35%;" /></a>
+
+<h5>Step 2: click on top level summary icon, the first “hidden” part appears…</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 44. click top level summary icon (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image044.webp"
+  loading="lazy"
+  title="The unfolded content contains in turn a summary details folded"
+  alt="The unfolded content contains in turn a summary details folded."
+  style="width:35%;" />
+
+<h5>Step3: click on embedded summary icon inside the part that has been previously unfolded</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 45. click on embedded summary icon (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image045.webp"
+  loading="lazy"
+  title="We unfolded the summary details inside the previous summary details. Recursive accordeons!"
+  alt="We unfolded the summary details inside the previous summary details. Recursive accordeons!"
+  style="width:35%;" />
+  
+<h5>Source code of this example, see the summary/details inside another one:</h5>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;details&gt;
+  &lt;summary&gt;
+    How to beat the boss...spoiler alert !
+  &lt;/summary&gt;
+  &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
+  &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
+  &lt;details&gt;
+  &lt;summary&gt;
+    Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
+    &lt;/summary&gt;
+    &lt;p&gt;Before finishing him, try to cut his trail, you will get a new weapon&lt;/p&gt;
+    &lt;p&gt;Just try to stay behind him as long as you can, hitting his tail with your melee weapon, 
+      after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.&lt;/p&gt;
+  &lt;/details&gt;
+&lt;/details&gt;</pre>
+
+</details>
+
+<h4>CSS pseudo classes for styling summary icons</h4>
+
+<p>There are CSS pseudo classes to style this icon when it is in the open or 
+closed state. Support for these is still incomplete as of June 2020 (works on 
+Google Chrome, Opera, Safari, not in FF).</p>
+
+<h5>Example1 (see <a href="https://jsbin.com/tomehim/1/edit?html,css,output" 
+target="_blank" rel="noopener noreferrer">online example</a>):</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 46. pseudo classes for styling summary icons (61) ~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/tomehim/1/edit?html,css,output" 
+target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image046.webp"
+  loading="lazy"
+  title="Styling the open/close icon"
+  alt="Styling the open/close icon."
+  style="width:35%;" /></a>
+
+<p>The color and background of the icon on the left are specified by the following 
+CSS rule, which uses the pseudo class ::-webkit-details-marker</p>
+
+<p>In this example: red arrow, white background.</p>
+
+<pre>summary::-webkit-details-marker {
+  color:#FF0000;
+  background:#FFFFFF;
+}</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 47. unfold and style (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image047.webp"
+  loading="lazy"
+  title="Styled summary details icon, unfolded state"
+  alt="Styled summary details icon, unfolded state."
+  style="width:35%;" />
+  
+<p>Once opened, the selector details [open] can style the icon when &lt;details&gt; 
+is unfolded. In this example: blue arrow, turquoise background.</p>
+
+<h4>Here is the corresponding CSS rule:</h4>
+
+<pre>details[open] summary::-webkit-details-marker {
+  color:#0000FF;
+  background:#00FFFF;
+}</pre>
+
+<p>It is also possible to change the icon itself using the CSS pseudo class :after</p>
+
+<h5>Example 2 (<a href="https://jsbin.com/sajusop/edit?html,css,output" 
+target="_blank" rel="noopener noreferrer">see it online</a>):</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 43. a '+' as a custom open icon for summary (62) ~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/sajusop/edit?html,css,output" 
+target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image043.webp"
+  loading="lazy"
+  title="'A+' as a custom open icon for summary"
+  alt="'A+' as a custom open icon for summary."
+  style="width:35%;" /></a>
+<p></p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 48. a '-' as a custom close icon (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image048.webp"
+  loading="lazy"
+  title="'A-' as a custom closed icon"
+  alt="'A-' as a custom closed icon."
+  style="width:35%;" />
+
+<h5>CSS rules used in this example:</h5>
+
+<p>Use a “+” shaped icon, pink, bold, etc… :</p>
+
+<pre>summary:after {
+  content: &quot;+&quot;;
+  color: #FF00FF;
+  float: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: -5px 5px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 20px;
+}</pre>
+
+<p>Use a “-” shaped icon, white, when details are displayed:</p>
+
+<pre>details[open] summary:after {
+  content: &quot;-&quot;;
+  color: #FFFFFF
+}</pre>
+
+<h4>Current browser support</h4>
+
+<ul>
+  <li>On CanIUse: <a href="https://caniuse.com/#feat=details" target="_blank" 
+    rel="noopener noreferrer">compatibility table for details and summary elements</a>.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-4-2">1.4.2 The &lt;time&gt; and &lt;mark&gt; Elements</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 49. it's about time clock (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image049.webp"
+  loading="lazy"
+  title="Picture of a clock with the words 'it's about time'"
+  alt="Picture of a clock with the words 'it's about time'."
+  style="width:20%;" />
+
+<h4>The &lt;time&gt; element</h4>
+
+<p>The &lt;time&gt; element is useful for marking a time or a duration
+in a document.</p>
+<p>It provides both a human readable part (the part
+between &lt;time&gt; and &lt;/time&gt;) and a machine readable part
+contained within a datetime attribute. Dates are expressed
+as YYYY-MM-DD.</p>
+<p>The machine readable part adds semantics that can be used by search
+engines for indexing, by browsers or by browser extensions, or by
+JavaScript code. Useful scenarios include generating alerts for
+birthdays, automatically adding dates or events that
+contain &lt;time&gt; elements in a calendar, etc.</p>
+
+<h4>Examples:</h4>
+
+<pre>We open at &lt;time&gt;10:00&lt;/time&gt; every morning.
+I have a meeting the &lt;time datetime=&quot;2020-02-14&quot;&gt;Monday 14/02/2020.&lt;/time&gt;.
+Blog posts from the year &lt;time datetime=&quot;2020&quot;&gt;2020&lt;/time&gt;.
+Archives, blog posts for &lt;time datetime=&quot;2020-04&quot;&gt;April 2020&lt;/time&gt;
+This recipe was published by Michel the &lt;time datetime=&quot;2020-04-16&quot;&gt;April 16, 2020&lt;/time&gt;.</pre>
+
+<h4>The datetime attribute</h4>
+
+<p>The datetime attribute can be used for indicating a date/time or a duration.</p>
+
+<h5>Date/time values</h5>
+
+<p>Supports different specifications of time such as “a year”, “a month in
+a year”, “a week in a year”, “a time”, etc… </p>
+
+<h4>Here are some examples:</h4>
+
+<h4>Different syntaxes of the datetime attribute</h4>
+
+<!-- <div style="text-align:left"> -->
+
+<div style="width: 100%; text-align: left;">
+<table>
+  <colgroup>
+    <col style="width: 35%" />
+    <col style="width: 64%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>datetime attribute values</th>
+      <th>Interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>&lt;time datetime=“2020”&gt;</td>
+      <td>The year 2020</td>
+    </tr>
+    <tr class="even">
+      <td>&lt;time datetime=“2020-11”&gt;</td>
+      <td>November 2020</td>
+    </tr>
+    <tr class="odd">
+      <td>&lt;time datetime=“11-13”&gt;</td>
+      <td>November 13th (any year)</td>
+    </tr>
+    <tr class="even">
+      <td>&lt;time datetime=“2020-W21”&gt;</td>
+      <td>Week 21 from year 2020</td>
+    </tr>
+    <tr class="odd">
+      <td>&lt;time datetime=“2020-11-13 09:00”&gt;</td>
+      <td>November 13th year 2020, time = 9:00</td>
+    </tr>
+    <tr class="even">
+      <td>&lt;time datetime=“2020-11-13TO9:00”&gt;</td>
+      <td>Same as prev ex, both syntaxes are supported, with and without the
+        “T” between date and time</td>
+    </tr>
+    <tr class="odd">
+      <td>&lt;time datetime=“09:00%”&gt;</td>
+      <td>9:00 in the morning, GMT</td>
+    </tr>
+    <tr class="even">
+      <td>&lt;time datetime=“09:00-05”&gt;</td>
+      <td>9:00 in the morning, GMT minus 5 hours</td>
+    </tr>
+    <tr class="odd">
+      <td>&lt;time datetime=“09:00+05:45”&gt;</td>
+      <td>9:00 in the morning, GMT plus 5 hours 45 mins, (for example, Nepal is 5:45 ahead of GMT</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h4>Duration values</h4>
+
+<p>Duration values use the prefix “P” for “period” as in &lt;time
+datetime=“P4D”&gt; (period = four days)…</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 50. duration values (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image050.webp"
+  loading="lazy"
+  title="Funny picture duration values"
+  alt="Funny picture duration values."
+  style="width:20%;" />
+
+<p>So you start the attribute string value with a “P”, followed by a
+duration value that ends with another letter indicating the unit
+used: “D” for “days”,  “H” for hours, “M” for minutes and “S” for
+seconds. </p>
+<p>You can separate the different elements “P”, value and unit with
+spaces, but this is optional. So &lt;time datetime="P4D"&gt; is a duration of
+4 days, as is &lt;time datetime="P 4 D"&gt;.</p>
+<p>Using a “T” after the “P” marker allows you to indicate a more
+accurate duration time: &lt;time datetime=“PT4H 6M 12.55S”&gt; is a
+duration of 4 hours, 6 minutes and 12.55 seconds.</p>
+<p>Alternatively, you could use also a duration time component.</p>
+<p>From Bruce Lawson’s article : <i>“Whichever you choose, it’s
+represented internally as a number of seconds. Because of this, you
+can’t specify a duration in terms of months, because a month isn’t a
+precise number of seconds; a month can last from 28 to 31 days.
+Similarly, a year isn’t a precise number of seconds; it’s 12 months and
+February sometimes has an extra day.</i></p>
+<p><i>You still can’t represent dates before the Christian era, as years
+can’t be negative. Neither can you indicate date ranges. To mark up From
+“21/02/2012 to 25/02/2012″, use two separate &lt;time&gt; elements.”</i></p>
+
+<h4>Examples:</h4>
+
+<pre class="html5">&lt;h2&gt;Recipe:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt; Preparation time: &lt;time datetime=&quot;PT30M&quot;&gt;30 minutes&lt;/time&gt; &lt;/li&gt;
+  &lt;li&gt; Cooking time:     &lt;time datetime=&quot;PT10M&quot;&gt;10 minutes&lt;/time&gt; &lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+<h4>The &lt;time&gt; element with no attributes</h4>
+
+<p>Used without attributes, the value between the opening &lt;time&gt; and
+closing &lt;time&gt; should follow the syntax given by the specification
+so that machines can understand it (same syntax as the one presented for
+the datetime attribute in the previous section). However it is
+recommended to use a datetime attribute, as it gives more freedom in the
+way you can display the date/time/duration in a human-readable form.</p>
+
+<h4>External resources:</h4>
+
+<ul>
+  <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element" 
+    target="_blank" rel="noopener noreferrer">From the specification</a>:</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" target="_blank" 
+    rel="noopener noreferrer">On MDN’s Web Docs</a>:&gt;</li>
+  <li>MDN’s browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Browser_compatibility" 
+    target="_blank" rel="noopener noreferrer">table</a> for &lt;time&gt;</li>
+  <li><a href="https://www.brucelawson.co.uk/2012/best-of-time" target="_blank" rel="noopener 
+    noreferrer">Old but interesting article by Bruce Lawson:</a></li>
+  <li>A CSS Tricks’ article: “<a href="https://css-tricks.com/time-element/" target="_blank" 
+    rel="noopener noreferrer">The ‘time’ element</a>”</li>
+</ul>
+
+<h4>The &lt;mark&gt; element</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 51. yellow highlighter pen (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image051.webp"
+  loading="lazy"
+  title="Picture of a yellow hightlighter pen"
+  alt="Picture of a yellow hightlighter pen."
+  style="width:35%;" />
+
+<p>The HTML &lt;mark&gt; tag is used for indicating text as marked or highlighted for reference purposes, 
+due to its relevance in another context.</p>
+
+<h4>Some use cases:</h4>
+
+<ul>
+  <li>Display search results with search strings highlighted in the results.</li>
+  <li>Highlight important parts of a text, such as "quoting parts", etc.</li>
+  <li>Replace &lt;strong&gt; and &lt;em&gt; with &lt;mark&gt; when suitable.</li>
+</ul>
+
+<h4>Example 1:</h4>
+<!-- &lt;https://jsbin.com/tafelic/edit?html,output&gt;</h4> -->
+
+<h4>Source code:</h4>
+
+<pre class="html5">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=utf-8 /&gt;
+    &lt;title&gt;JS Bin&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Project is due in &lt;b&gt;&lt;mark&gt;.zip format&lt;/mark&gt;&lt;/b&gt; next monday.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<h4>Example 2:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 52. another example for marking code (66) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image052.webp"
+  loading="lazy"
+  title="Another example for marking code, yellow hightlighted background"
+  alt="Another example for marking code, yellow hightlighted background."
+  style="width:35%;" />
+
+<h4>Source code:</h4>
+
+<pre class="html5">&lt;body&gt;
+  &lt;pre&gt;
+    &lt;code&gt;&lt;mark&gt;var&lt;/mark&gt; i = 3;&lt;/code&gt;
+  &lt;/pre&gt;
+  &lt;p&gt;The var keyword is used to declare a variable in JavaScript.&lt;/p&gt;
+&lt;/body&gt;</pre>
+
+<h4>Change the default style of the &lt;mark&gt; element</h4>
+
+<p>If you don’t like the default yellow background, you may use CSS to change the style of the &lt;mark&gt; element:</p>
+
+<h4>For example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 53. style the mark element with CSS (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image053.webp"
+  loading="lazy"
+  title="Style the mark element with CSS, highlighted green background"
+  alt="Style the mark element with CSS, highlighted green background."
+  style="width:35%;" />
+
+<h4>… comes with this CSS rule:</h4>
+
+<pre>mark {
+  background-color: green;
+  color: yellow;
+}</pre>
+
+<h4>External resources:</h4>
+
+<ul>
+  <li>From the specification: On MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="_blank" 
+    rel="noopener noreferrer">The 'mark' element</a></li>
+  <li>MDN’s browser compatibility <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark#Browser_compatibility" 
+    target="_blank" rel="noopener noreferrer">table</a> for &lt;time&gt;</li>
+  <li>An article on Web Platform News: <a href="https://webplatform.news/issues/2019-02-28">
+    The &lt;mark&gt; element could help make your text more scannable</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-4-3">1.4.3 The Download and Translate Attributes</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>The old way to download files using HTML and HTTP</h4>
+
+<p>Everyone knows the classic way to make hyperlinks,
+using &lt;a href="..."&gt;some text. What happens when you click on the
+hyperlink depends on the MIME type received by the browser. If you link
+to a file the browser knows how to render (an html page, a gif, jpg, or
+png image, etc.) there is a good chance that the MIME type received by
+the browser will be something like this:</p>
+
+<pre>Content-type: text/html, text/plain, image/gif, image/jpg, etc.</pre>
+
+<h4>For example, HTML code such as this:</h4>
+
+<pre>&lt;a href=&quot;toto.jpg&quot;&gt;
+  please right click this link to download
+  the toto.jpg picture&lt;/a&gt;</pre>
+
+<p>…will ask the remote HTTP server to send back the toto.jpg file. The
+browser will receive in the response HTTP header from the server (and by
+default the browser will display the image in a new tab):</p>
+
+<pre>...
+Content-type: image/jpg
+...</pre>
+
+<p>However, if the link points to some PHP code,  Java servlet code, or
+any kind of script/application on the server side, this remote server
+code can send in its HTTP response a Content-type that may force the
+browser to download the image instead of rendering it.</p>
+<p>It may also propose a name for the file to be downloaded that may be
+different from the one that appears in the URL of the href attribute.
+This can be done by generating, in addition to the Content-type line in
+the response HTTP header, a Content-Disposition line that looks like
+this:</p>
+
+<pre>Content-Disposition: attachment; filename=&quot;MyImage.png&quot;;</pre>
+
+<p>Here are some extracts from a Java Servlet that generate a zip file and forces 
+the browser to propose downloading it using a specified name:</p>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>protected void doGet(HttpServletRequest request, HttpServletResponse response)
+throws ServletException, IOException {
+  try {
+    // Build the zip file
+    String path = getServletContext().getRealPath(&quot;data&quot;);
+    File directory = new File(path);
+    String[] files = directory.list();
+    if (files != null &amp;&amp; files.length &gt; 0) {
+      byte[] zip = zipFiles(directory, files);
+      ServletOutputStream sos = response.getOutputStream();
+ 
+      // generate a HTTP response that forces the download
+      [response.setContentType(&quot;application/zip&quot;);]
+      [response.setHeader(&quot;Content-Disposition&quot;,]
+      [&quot;attachment; filename=&quot;DATA.ZIP&quot;&quot;);]
+        sos.write(zip); sos.flush();
+    }
+  } catch (Exception e) {
+    e.printStackTrace();
+  }
+}</pre>
+
+</details>
+
+<p>The above example will cause the browser that invoked this server-side code to start the 
+download of a file named “DATA.ZIP”.</p>
+
+<h4>To download a file using an arbitrary name: the download attribute</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 54. picture of a road sign with the words 'new way' (68) ~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image054.webp"
+  loading="lazy"
+  title="Picture of a road sign with the words 'New Way'"
+  alt="Picture of a road sign with the words 'New Way'."
+  style="width:15%;" />
+
+<p>HTML5 proposes the use of a new attribute named download to download
+resources rather than navigating to them. The example below shows how to
+trigger the download of an image by the browser (instead of rendering
+it, which is the default behavior) with a name different from the name
+of the resource.</p>
+
+<pre>&lt;a href=&quot;normal.gif&quot; [download]=[&quot;MichelBuffa.gif&quot;]&gt;
+  download a picture of Michel Buffa
+&lt;/a&gt;</pre>
+
+<p>This will indeed force the download of an image with a filename
+different from its original filename on the server side. Here is a
+screen capture of the Web browser while downloading the picture. We can
+see in the status bar the name of the link (the image is “normal.gif”)
+and the downloaded file is “MichelBuffa.gif”:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~ 55. image saved with another names thanks to the download attribute (68) ~~~~~~~~-->
+<img class="displayed"
+  src="./images/image055.webp"
+  loading="lazy"
+  title="Image saved with another 'new' name, thanks to the download attribute"
+  alt="Image saved with another 'new' name, thanks to the download attribute."
+  style="width:25%;" />
+  
+<p><b>WARNING</b>: since 2015, and for security reasons, <b>the image
+should be located on the same domain as the HTML page that contains the
+link</b> (using a relative URL works well, for example, but linking a
+page on another domain will not work - it will keep its original
+name).</p>
+
+<h4>Interesting applications: serverless download</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 56. no servers picture (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image056.webp"
+  loading="lazy"
+  title="No server picture"
+  alt="No server picture."
+  style="width:35%;" />
+
+<h4>Serverless download demo (by E.Bilderman)</h4>
+
+<p>This demo shows the use of the download attribute together with the HTML5 File, 
+FileSystem and FileWriter APIs (to be studied later in this course) for generating 
+on-the-fly content from JavaScript code, and proposing downloading it to a file.</p>
+<p>We won’t detail this demo here, but take a look if you are curious to see what 
+can be done with this new download attribute. As the FileWriter and FileSystem 
+APIs are still supported only by Google Chrome (other browsers need polyfills), 
+you will need Google Chrome to try it.</p>
+<p>We have also put the simplified <a href="https://jsbin.com/muluwey/1/edit?html,css,js,output" 
+target="_blank" rel="noopener noreferrer">source code of this demo on JSBin.com</a> for you to 
+play with.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 57. serverless download demo (69) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/muluwey/1/edit?html,css,js,output" 
+target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image057.webp"
+  loading="lazy"
+  title="Serverless download demo: type text in a text area, press download, enter 
+    a filename and voilà! you can download the textarea content into a file, 
+    without any server"
+  alt="Serverless download demo: type text in a text area, press download, enter 
+    a filename and voilà! you can download the textarea content into a file, 
+    without any server."
+  style="width:35%;" /></a>
+
+<h4>External resources:</h4>
+
+<ul>
+  <li>From the specification: <a href="https://www.w3.org/TR/2014/REC-html5-20141028/links.html#downloading-resources" 
+    target="_blank" rel="noopener noreferrer">downloading resources</a>.</li>
+  <li>From CanIUse: the <a href="https://caniuse.com/#feat=download" target="_blank" rel="noopener noreferrer">
+    browser support of the download attribute</a>.</li>
+</ul>
+
+<h4>The HTML5 translate attribute</h4>
+
+<p>HTML5 gives us a new translate attribute. This attribute is used to limit the impact 
+of  translation tools such as <a href="https://translate.google.com/" target="_blank" 
+rel="noopener noreferrer">Google Translate</a> by prohibiting the translation of 
+certain content. In many cases some parts of a document should not be translated.</p>
+
+<h4>Use cases include:</h4>
+
+<ul>
+  <li>HTML pages that contain source code: you would certainly not like to see the Java 
+    or PHP or whatever programming language parts of your page translated into another 
+    spoken language!</li>
+  <li>Video game Web sites that propose cheat codes; the codes do not have to be translated,</li>
+  <li>Street names, author names in an “about” page must not be translated,</li>
+  <li>etc.</li>
+</ul>
+
+<p>Both <a href="https://translate.google.com/" target="_blank" rel="noopener noreferrer">
+Google translate</a> and <a href="https://www.microsofttranslator.com/" target="_blank" 
+rel="noopener noreferrer">Microsoft online translation services</a> already offer the 
+ability to prevent translation of content by adding markup to your content, although 
+they do it in (multiple) different ways. Hopefully, the new attribute will help 
+significantly by providing a standard approach.</p>
+
+<h4>Principle: give hints to translating tools</h4>
+
+<p><a href="https://www.w3.org/TR/html5/dom.html#the-translate-attribute" 
+target="_blank" rel="noopener noreferrer">The specification about the translate 
+attribute</a> tells us that <i>“The translate attribute is an enumerated attribute 
+that is used to specify whether an element’s attribute values and the values of its
+Text node children are to be translated when the page is localized, or whether to 
+leave them unchanged.</i></p>
+<p><i>The attribute’s keywords are the empty string, yes, and no. The
+empty string and the yes keyword map to the yes state. The no keyword
+maps to the no state. In addition, there is a third state, the inherit
+state, which is the missing value default (and the invalid value
+default).”</i></p>
+
+<h4>Example illustrating how to specify parts of an HTML element that should
+not be translated:</h4>
+
+<pre>&lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt;</pre>
+
+<p>In the above example, a &lt;span&gt; element defines an author (of a blog,
+for example) who is named Michel Ham. However, his family name is the
+same as pork and would be translated to “Michel Jambon” in French, or
+Michel Jamón in Spanish…</p>
+<p>Using the translate=“no” attribute should prevent this behavior…</p>
+
+<pre>&lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt; is a professor from the University of Nice, France.</pre>
+
+<p>Will be correctly translated into French by:</p>
+
+<pre>&quot;[Michel Ham] est un professeur de l&#39;Université de Nice, France.&quot;</pre>
+
+<p>…where all of the end of the sentence has been translated except the
+author’s name.</p>
+
+<h4>Inheritance between elements</h4>
+
+<p>When you define an element as not being translatable, its children
+inherit this behavior and are themselves not translatable. The reverse
+is also true.</p>
+
+<pre>&lt;p translate=&quot;no&quot;&gt;This is a text in a paragraph element, that should not be translated: the p element has a translate=&quot;no&quot; attribute.&lt;span&gt; 
+  This part that is in a span element embedded within the paragraph. 
+  It does not have a translate attribute but inherits the translation-mode of the p and will not be translated
+too&lt;/span&gt;. This is the end of the paragraph...&lt;/p&gt;</pre>
+
+<h4>External resources:</h4>
+
+<ul>
+  <li>From the specification: <a href="https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute" 
+    target="_blank" rel="noopener noreferrer">the translate attribute</a></li>
+  <li>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate" 
+    target="_blank" rel="noopener noreferrer">Gobal Attributes</a>.
+    <ul>
+      <li>Its corresponding <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate#Browser_compatibility" 
+        target="_blank" rel="noopener noreferrer">browser compatibility table</a></li>
+    </ul></li>
+  <li>An article from W3C’s Internationalization Activity: 
+    <a href="https://www.w3.org/International/questions/qa-translate-flag" 
+    target="_blank" rel="noopener noreferrer">“Using HTML’s translate attribute”</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-5-1">1.5.1 Microdata</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>There are several ways to provide machine-readable content embedded 
+in a classical Web document: <a href="https://www.w3.org/TR/html-rdfa/" 
+target="_blank" rel="noopener noreferrer">HTML+RDFa</a>, <a href="http://microformats.org/" 
+target="_blank" rel="noopener noreferrer">microformats</a>, <a href="https://json-ld.org/" 
+target="_blank" rel="noopener noreferrer">JSON-LD</a>,
+HTML5 microdata. In this section, we focus on microdata.</p>
+
+<p>Adding microdata to Web pages helps search engines to better
+understand the pages’ content, their topics, etc. The main purpose of
+microdata is <a href="https://en.wikipedia.org/wiki/Search_engine_optimization" 
+target="_blank" rel="noopener noreferrer">Search Engine Optimization</a>(SEO).</p>
+
+<p>This information is not visible to humans: it is pure <i>semantic
+information</i>. Popular kinds of microdata are events, a person’s
+profile, the description of an organization, the details of a recipe, a
+product description, a geographical location, etc.</p>
+
+<h4>Quick example of microdata that describes a person</h4>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>
+&lt;section [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
+  &lt;h1&gt;Contact Information&lt;/h1&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;Name&lt;/dt&gt;
+      &lt;dd [itemprop=&quot;name&quot;]&gt;Michel Buffa&lt;/dd&gt;
+      &lt;dt&gt;Position&lt;/dt&gt;
+      &lt;dd&gt;&lt;span [itemprop=&quot;jobTitle&quot;]&gt;
+        Professor/Researcher/Scientist&lt;/span&gt; for
+        &lt;span [itemprop=&quot;affiliation&quot;]&gt;
+          University of Côte d&#39;Azur, France
+        &lt;/span&gt;
+      &lt;/dd&gt;
+    &lt;/dl&gt;
+    &lt;!-- SURFACE ADDRESS GOES HERE --&gt;
+  &lt;h1&gt;My different online public accounts&lt;/h1&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;
+      [itemprop=&quot;url&quot;]&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
+      [itemprop=&quot;url&quot;]&gt;Michel Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;</pre>
+
+</details>
+
+<p>We can also add another embedded data item in the middle, such as the
+person’s address:</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>...
+&lt;/dl&gt;
+&lt;!-- SURFACE ADDRESS GOES HERE --&gt;
+&lt;dd [itemprop=]&quot;address&quot;[ itemscope]
+  itemtype=&quot;https://schema.org/PostalAddress&quot;&gt;
+    &lt;span [itemprop=]&quot;streetAddress&quot;&gt;10 promenade des anglais&lt;/span&gt;&lt;br&gt;
+    &lt;span [itemprop=]&quot;addressLocality&quot;&gt;Nice&lt;/span&gt;,
+    &lt;span [itemprop=]&quot;addressRegion&quot;&gt;Alpes maritimes, France&lt;/span&gt;
+    &lt;span [itemprop=]&quot;postalCode&quot;&gt;06410&lt;/span&gt;&lt;br&gt;
+    &lt;span [itemprop=]&quot;addressCountry&quot;[ itemscope]
+  [itemtype=]&quot;https://schema.org/Country&quot;&gt;
+    &lt;span [itemprop=]&quot;name&quot;&gt;France&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/dd&gt;
+&lt;h1&gt;My different online public accounts&lt;/h1&gt;
+...</pre>
+
+</details>
+
+<p>In the following sections, we look more closely
+at the itemprop, itemscope and itemtype attributes.</p>
+
+<h4>Data that can be processed, organized, structured, or presented in a given context</h4>
+
+<h4>Different use cases:</h4>
+
+<ul>
+  <li>The browser, or a browser extension, may interpret the last example as an address 
+    and may propose to send it to a map application,</li>
+  <li>A Web crawler may interpret this as an address and display it in its responses 
+    using a dedicated presentation layout,</li>
+  <li>Some JavaScript code in the page can access this data,</li>
+  <li>With other types of microdata, for events, for example, the browser may pop up 
+    a calendar application, etc.</li>
+</ul>
+
+<p><b>Note</b>: For advanced users, Microdata is very similar
+to <a href="http://microformats.org/" target="_blank" rel="noopener noreferrer">microformats</a>, 
+which use HTML classes, or to <a href="https://www.w3.org/TR/xhtml-rdfa-primer/" target="_blank" 
+rel="noopener noreferrer">RDFa</a>, which doesn’t validate in HTML4 or HTML5. Because RDFa was 
+considered to be too hard for authors to write, microdata is HTML5’s answer to help embed 
+semantics into html documents.</p>
+
+<h4>External resources</h4>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/microdata/" target="_blank" rel="noopener noreferrer">
+    W3C’s HTML Microdata Working Draft</a>,</li>
+  <li>MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata" 
+    target="_blank" rel="noopener noreferrer">Microdata</a>,</li>
+  <li>Very good <a href="https://journal.code4lib.org/articles/6400" target="_blank" 
+    rel="noopener noreferrer">Microdata</a> paper from code{4}lib journal,</li>
+  <li><a href="https://dev.opera.com/articles/microdata-and-the-microdata-dom-api/" 
+    target="_blank" rel="noopener noreferrer">Microdata and the microdata DOM API</a>, 
+    old article from dev.opera.com,</li>
+  <li><a href="https://diveinto.html5doctor.com/extensibility.html" target="_blank" 
+    rel="noopener noreferrer">Chapter from Mark Pilgrim’s book about microdata</a>, 
+    very detailed introduction about semantic metadata in general, contains full 
+    examples with explanations about how to describe a Person, etc.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-5-2">1.5.2 Testing Tools</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Introduction</h4>
+<p>After seeing the principle of embedding microdata in an HTML page, we
+now present some structured data test tools you can use to check if your
+data are correct.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 58. picture of diverse tools used by workers (72) ~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image058.webp"
+  loading="lazy"
+  title="Picture of diverse tools used by workers"
+  alt="Picture of diverse tools used by workers."
+  style="width:20%;" />
+  
+<p>One of the most popular resources for testing microdata (as well as
+microformats and RDFa) is
+this <a href="https://developers.google.com/search/docs/guides/intro-structured-data" 
+target="_blank" rel="noopener noreferrer">Google page about understanding how structured 
+data works</a>. This page contains a link to a structured data testing tool that you can 
+use to see how Google recognizes the semantic data you embed in your HTML code.</p>
+
+<h4>Testing a real interactive example with an “about page” for Michel Buffa</h4>
+
+<p>Let’s have a look now at a (small) example of an about page. It
+renders as a very simple paragraph that explains who Michel Buffa is…
+But we embedded Microdata, so it’s interesting to see how a search
+engine sees it, and how it may produce “augmented search results”.</p>
+<p><a href="https://jsbin.com/gunuzus/1/edit?html,output" target="_blank" rel="noopener noreferrer">Online example
+at JSBin</a></p>
+
+<h4>Source code:</h4>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+  
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=utf-8 /&gt;
+  &lt;title&gt;Michel Buffa&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div [itemscope itemtype=&quot;https://schema.org/Person&quot;]&gt;
+    My name is &lt;span itemprop=&quot;name&quot;&gt;Michel Buffa&lt;/span&gt;,
+    And I&#39;m a &lt;span itemprop=&quot;jobTitle&quot;&gt;professor/researcher&lt;/span&gt; at
+    &lt;a href=&quot;https://www.i3s.unice.fr/&quot; itemprop=&quot;affiliation&quot;&gt;I3S
+    Laboratory&lt;/a&gt; in the south of France, near the city of Nice. My
+    email
+    is : &lt;span itemprop=&quot;email&quot;&gt;micbuffa@gmail.com&lt;/span&gt;.
+    I live in the city of
+    &lt;span itemprop=&quot;address&quot; itemscope
+      [itemtype=&quot;https://schema.org/PostalAddress&quot;]&gt;
+      &lt;span itemprop=&quot;addressLocality&quot;&gt;Biot&lt;/span&gt;, in a region named
+      &lt;span itemprop=&quot;addressRegion&quot;&gt;Alpes Maritimes&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Rendering of the page in a browser:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 59. rendering of michel buffa home page (73) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image059.webp"
+  loading="lazy"
+  title="Rendering of Michael Buffa's home page"
+  alt="Rendering of Michael Buffa's home page."
+  style="width:35%;" />
+
+<p>Here is what Google sees of the page. We just entered its 
+<a href="https://output.jsbin.com/gunuzus/1" target="_blank" rel="noopener noreferrer">
+URL</a> in the <a href="https://developers.google.com/search/docs/guides/intro-structured-data" 
+target="_blank" rel="noopener noreferrer">Google page about rich snippets and structured data</a>:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 60. microdata of the example, as seen by google (74) ~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://output.jsbin.com/gunuzus/1" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image060.webp"
+  loading="lazy"
+  title="Microdata of the example, as seen by Google"
+  alt="Microdata of the example, as seen by Google."
+  style="width:35%;" /></a>
+
+<p>Note that the address is a fully featured embedded object in the Person’s description.</p>
+
+<h4>Live Microdata</h4>
+
+<p>The <a href="https://foolip.org/microdatajs/live/" 
+target="_blank" rel="noopener noreferrer">Live Microdata Web site</a> is a bit 
+similar to the previous one except that it shows the extracted metadata as JSON 
+objects:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 61. example live microdata (74) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image061.webp"
+  loading="lazy"
+  title="Example of live microdata from the previous example. Microdata are 
+    displayed as json objects"
+  alt="Example of live microdata from the previous example. Microdata are 
+    displayed as json objects."
+  style="width:35%;" />
+  
+<h4>And the JSON view of the microdata:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 62. json view of the microdata (74) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image062.webp"
+  loading="lazy"
+  title="JSON view of the microdata"
+  alt="JSON view of the microdata."
+  style="width:35%;" />
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ Chapter 1-5-3. adding microdata to an html page (75) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-5-3">1.5.3 Adding Microdata to an HTML Page</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Basic steps</h4>
+
+<p>Adding microdata to an HTML page is a really simple task and requires only three 
+attributes: <b>itemscope, itemtype</b> and <b>itemprop</b>.</p>
+
+<h4>1 - Define a container element by adding an itemscope attribute</h4>
+
+<p>First, you need to add an itemscope attribute to an HTML element. This
+will define the “global object” for which we will define properties.
+This element can be of different types that we will describe later, but
+for now let us keep looking at the same example we used in previous
+sections:</p>
+
+<pre>&lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
+  ...
+&lt;/section&gt;</pre>
+
+<p>We will look at the itemtype attribute later. Now that we have defined a global 
+wrapper object/element (a Person in this case), we can add properties inside this 
+element to define the first name, last name, etc.</p>
+
+<h4>2 - Specify the vocabulary used for your microdata with the itemtype attribute of 
+the container element</h4>
+
+<p>HTML5 proposes semantic elements for representing sections, articles, headers, etc, 
+but it does not propose any specific elements or attributes to describe an address, a 
+product, a person, etc.</p>
+<p>We need a special vocabulary to represent a person or a physical address. With 
+microdata you can define your own vocabulary or better, reuse one of the existing 
+popular vocabularies, such as <a href="https://schema.org/" target="_blank" 
+rel="noopener noreferrer">schema.org</a>.</p>
+<p>Microdata works with properties defined as name/value pairs. The names are 
+defined in the corresponding vocabulary. For example, the vocabulary for 
+representing a <a href="https://schema.org/Person" target="_blank" 
+rel="noopener noreferrer">Person</a> defines a set of property names.</p>
+<p>As you can see in this small extract from the vocabulary (also called
+a “schema”), a Person can have a name (some text), an Address (the type
+is defined by another vocabulary named PostalAddress), an affiliation
+(defined by another vocabulary named Organization) and so on.</p>
+<p>We notice that one property, such as the address of a Person, may use
+another vocabulary. Yes, a vocabulary may link to another vocabulary!
+There is also inheritance between vocabularies! The above screenshot
+shows that the Person vocabulary inherits from a Thing vocabulary, and
+the five first properties of the table come from this vocabulary that
+describes things.</p>
+<p>If you are a developer and if you are familiar with object oriented
+programming, think of properties as class attributes and think of
+vocabularies as classes.</p>
+
+<h4>Vocabularies are meant to be shared</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 63. picture of 'time to share' (76) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image063.webp"
+  loading="lazy"
+  title="Picture with words 'time to share'"
+  alt="Picture with words 'time to share'."
+  style="width:25%;" />
+  
+<p>If one of the existing vocabularies available at the schema.org Web
+site fits your needs, you should reuse it, as the most popular
+vocabularies are becoming de facto standards and will be taken into
+account by Web crawlers, browsers, and browser extensions.</p>
+<p>However, if you do not find a vocabulary corresponding to your needs,
+keep in mind that anyone can define a microdata vocabulary and start
+embedding custom properties in their own Web pages. You need to define a
+namespace and put a description of your vocabulary in a Web page that
+has the name of your vocabulary.</p>
+
+<h4>3 - Add properties using the itemprop attribute in HTML elements inside the container</h4>
+
+<h4>Basics:</h4>
+
+<p>Now that you have defined a container element, you may add properties to the HTML inside:</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+  
+<pre>&lt;section itemscope itemtype=&quot;https://schema.org/Person&quot;&gt;
+  &lt;h1&gt;Contact Information&lt;/h1&gt;
+  &lt;dl&gt;
+    &lt;dt&gt;Name&lt;/dt&gt;
+    &lt;dd [itemprop=&quot;name&quot;]&gt;Michel Buffa&lt;/dd&gt;
+      &lt;dt&gt;Position&lt;/dt&gt;
+      &lt;dd&gt;&lt;span [itemprop=&quot;jobTitle&quot;]&gt;
+        Professor/Researcher/Scientist
+      &lt;/span&gt; for
+      &lt;span [itemprop=&quot;affiliation&quot;]&gt;University of Nice,
+         France
+      &lt;/span&gt;
+    &lt;/dd&gt;
+  &lt;/dl&gt;
+  &lt;h1&gt;My different online public accounts&lt;/h1&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;
+      [itemprop=&quot;url&quot;]&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;
+      [itemprop=&quot;url&quot;]&gt;Michel Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;</pre>
+
+</details>
+
+<p>In this example, the container is a &lt;section&gt; that corresponds to
+a Person (we have one clue here: the name of the vocabulary given by
+the itemtype attribute), and each property defined inside this section
+is identified by the value of the itemprop attribute of sub-elements.</p>
+
+<h4>The line:</h4>
+
+<pre>&lt;dd itemprop=&quot;name&quot;Michel Buffa&lt;/dd&gt;</pre>
+
+<p>…defines a property called “name” that has a value of “Michel Buffa” 
+(the text value between the opening and closing tags of the &lt;dd&gt; element).</p>
+
+<h4>Nesting microdata items</h4>
+
+<p>As we saw with the Person/Address example at the beginning of this
+chapter, it is possible to nest microdata items inside one another.<br>
+Give an element inside a microdata container its own itemscope attribute
+with the recommended itemtype attribute for indicating the name of the
+vocabulary used by the nested microdata.</p>
+
+<h4>Again, look at the Person/Address example:</h4>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>...
+&lt;/dl&gt;
+  &lt;!-- SURFACE ADDRESS GOES HERE --&gt;
+  &lt;dd itemprop=&quot;address&quot;[ itemscope]
+    [itemtype=&quot;https://schema.org/PostalAddress&quot;]&gt;
+    &lt;span itemprop=&quot;streetAddress&quot;&gt;10 promenade des anglais&lt;/span&gt;&lt;br&gt;
+    &lt;span itemprop=&quot;addressLocality&quot;&gt;Nice&lt;/span&gt;,
+    &lt;span itemprop=&quot;addressRegion&quot;&gt;Alpes maritimes, France&lt;/span&gt;
+    &lt;span itemprop=&quot;postalCode&quot;&gt;06410&lt;/span&gt;&lt;br&gt;
+    &lt;span itemprop=&quot;addressCountry&quot; itemscope
+    [itemtype=&quot;https://schema.org/Country&quot;]&gt;
+    &lt;span itemprop=&quot;name&quot;&gt;France&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/dd&gt;
+&lt;h1&gt;My different online public accounts&lt;/h1&gt;
+...</pre>
+
+</details>
+
+<p>The properties at <i>lines 8-12</i> refer to the address nested microdata (they are 
+defined in the Address vocabulary, not the Person vocabulary), and “France” 
+(<i>line 14</i>) is a property that refers to the Country vocabulary.</p>
+
+<h4>Several properties with the same name but different values</h4>
+
+<p>It is possible to use the same property name several times in one microdata 
+object, but with different values: </p>
+
+<pre>...
+&lt;h1&gt;My different online public accounts&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.twitter.com/micbuffa&quot;[ itemprop=&quot;url&quot;]&gt;Twitter
+    profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.blogger.com/micbuffa&quot;[ itemprop=&quot;url&quot;]&gt;Michel
+    Buffa&#39;s blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+<p>This defines the fact that Michel Buffa has two online accounts, and
+the two properties have the name url, each with its own value.</p>
+
+<h4>It is possible to set more than one property at once, with the same value</h4>
+
+<p>Here are some microdata that represent a song. In this example, at line 5 we set two 
+different properties: genre and keywords with the same value (see the 
+<a href="https://schema.org/MusicRecording" target="_blank" rel="noopener noreferrer">
+MusicRecording schema definition</a>):</p>
+
+<pre>&lt;div itemscope itemtype=&quot;https://schema.org/MusicRecording&quot;&gt;
+  &lt;h2&gt;The song I just published&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Name: &lt;span itemprop=&quot;name&quot;&gt;Please buy me on itunes, 
+      I need money!&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;Band: &lt;span [itemprop=&quot;genre keywords&quot;]&gt;[Punk, Ska]&lt;/span&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+<p>And so on…<br>
+Now, let’s see what elements are compatible with the itemprop attribute and where the 
+values of the properties are located, depending on each element type.</p>
+
+<h4>The HTML elements compatible with the itemprop attribute</h4>
+
+<p>If the itemprop attribute appears on a:</p>
+
+<h4>Elements that can be associated with microdata</h4>
+
+<div>
+  <table>
+    <colgroup>
+      <col style="width: 35%" />
+      <col style="width: 64%" />
+    </colgroup>
+    <thead>
+      <tr class="header">
+        <th>HTML5 elements</th>
+        <th>microdata value associated</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <td>&lt;a&gt;, &lt;area&gt;, &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, 
+		  &lt;img&gt;, &lt;link&gt;, &lt;object&gt;, &lt;source&gt;, or &lt;video&gt; 
+		  element</td>
+        <td>The data is the url in the element’s href, src, or data attribute, as 
+		  appropriate. For example, an image element inside a container of personal 
+		  contact information can be recognized as that person’s photo and downloaded 
+          accordingly.</td>
+      </tr>
+      <tr class="even">
+        <td>&lt;time&gt; element</td>
+        <td>The data is the time in the element’s datetime attribute. This lets you, for 
+		  example, just say “last week” in your text content but still indicate exact 
+		  date and time.</td>
+      </tr>
+      <tr class="odd">
+        <td>&lt;meta&gt; element</td>
+        <td>The data is whatever appears in the content attribute of the &lt;meta&gt; 
+		  element. This is used when you need to include some data that isn’t actually 
+		  in the text of your page.</td>
+      </tr>
+      <tr class="even">
+        <td>anything else</td>
+        <td>The data is whatever is in the text of the element.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>For example, the value of a property defined in an &lt;img&gt; element will be the value of the src attribute:</p>
+
+<pre>&lt;img itemprop=&quot;image&quot; src=&quot;MichelBuffa.png&quot; alt=&quot;A great professor&quot;&gt;</pre>
+
+<p>Or, for a &lt;time&gt;, it will be the value of the datetime attribute:</p>
+
+<pre>&lt;time itemprop=&quot;birthday&quot; datetime=&quot;1965-04-16&quot;&gt;April 16, 1965&lt;/time&gt;</pre>
+
+<p>Or, for an &lt;a&gt; element, the value will be the value of the href attribute:</p>
+
+<pre>&lt;a href=&quot;https://www.twitter.com/micbuffa&quot; itemprop=&quot;url&quot;&gt;profile&lt;/a&gt;</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-5-4">1.5.4 Microdata Tools</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>There are many tools available (most are free) that you can use for generating, 
+visualizing and debugging microdata. We list some of them in this page, but feel 
+free to share the tools you find / like in the forums.</p>
+
+<h4>Microdata generators</h4>
+
+<p>To automatically generate microdata for describing persons, restaurants, movies, 
+products, organizations, etc., there is a wide variety of microdata generators such 
+as these listed below (but do not hesitate to search for “microdata generators” 
+using your favorite search engine, and you will find lots!):</p>
+
+<ul>
+  <li>The <a href="https://webcode.tools/microdata-generator" target="_blank" rel="noopener
+    noreferrer">Ultimate Microdata Generator</a></li>
+  <li>The <a href="https://microdatagenerator.org/" target="_blank" rel="noopener 
+    noreferrer">MicroData Generator</a></li>
+  <li>The <a href="https://technicalseo.com/tools/schema-markup-generator/" 
+    target="_blank" rel="noopener noreferrer">Schema Markup Generator (JSON-LD)</a></li>
+</ul>
+
+<h4>Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 64. microdata person generator (80) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://webcode.tools/microdata-generator" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image064.webp"
+  loading="lazy"
+  alt="Example of generator. I entered my name, job, city in a form and a text area 
+  next to it shows the corresponding HTML microdata."
+  style="width:35%;" /></a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-5-5">1.5.5 Examples of Well Structured Documents with Microdata</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Here, we propose a few links to Web pages that were created by students of previous 
+editions of this course).</p>
+<p>The students had to create a Web page to introduce themselves, with some information 
+including: name, job, employer, location, etc., and of course enrich the page with 
+microdata. They also had to follow the best practices concerning the new structural 
+elements, headings, etc.</p>
+<p>Click on these pages and look at the source code…</p>
+
+<h4>Example #1</h4>
+
+<p>Visit the <a href="https://jsbin.com/cuzipa/edit?html,css,output" target="_blank" 
+rel="noopener noreferrer">example #1 online</a>.</p>
+
+<h4>Structure:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 65. microdata example #1 (80) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/cuzipa/edit?html,css,output" target="_blank" 
+rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image065.webp"
+  loading="lazy"
+  title="Picture of the first 'about me' page example. Shows the table of contents"
+  alt="Picture of the first 'about me' page example. Shows the table of contents."
+  style="width:35%;" /></a>
+
+<h4>Microdata:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 66. schema type/properties from microdata  (81) ~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image066.webp"
+  loading="lazy"
+  title="Microdata from the example page"
+  alt="Microdata from the example page."
+  style="width:35%;" />
+
+<h4>Example #2:</h4>
+
+<p>View the <a href="https://jsbin.com/karemi/1/edit?html,output" target="_blank" 
+rel="noopener noreferrer">example #2 online</a>.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 67. example #2 page - shows microdata (81) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/karemi/1/edit?html,output" target="_blank" 
+rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image067.webp"
+  loading="lazy"
+  title="Example page, shows table of contents"
+  alt="Example page, shows table of contents."
+  style="width:35%;" /></a>
