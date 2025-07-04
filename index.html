@@ -306,7 +306,8 @@ to lose your contributions/personal work.</p>
   loading="lazy"
   title="CodePen.io logo"
   alt="CodePen.io logo."
-  style="width:15%;" /></a>
+  style="width:15%;" />
+  style="width:</a>
 
 <ul>
   <li><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">CodePen</a></li>
@@ -1216,7 +1217,7 @@ article title), paragraphs (article content), and so on.</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>&lt;section&gt;
+<pre>&lt;section&gt;
   &lt;article&gt;
     &lt;header&gt;
       &lt;h2&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h2&gt;
@@ -1243,7 +1244,7 @@ article title), paragraphs (article content), and so on.</p>
     &lt;/figure&gt;
   &lt;/article&gt;
   ...
-&lt;/section&gt;</code></pre>
+&lt;/section&gt;</pre>
 
 </details>
 
@@ -1264,21 +1265,21 @@ example (we did not apply any style to the &lt;figure&gt; element):</p>
 
 <h4>HTML code:</h4>
 
-<pre><code>&lt;figure&gt;
+<pre>&lt;figure&gt;
   &lt;img src=&quot;HTML5-tags.png&quot;
   alt=&quot;Example of HTML5 structural tags&quot; /&gt;
   &lt;figcaption&gt;
     Fig. 1 : an example of how .....
   &lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
+&lt;/figure&gt;</pre>
 
 <h4>CSS code:</h4>
 
-<pre><code>figcaption {
+<pre>figcaption {
   font-style:italic;
   font-size: 0.8em;
   width: 100%
-}</code></pre>
+}</pre>
 
 <h4>Use an &lt;aside&gt; element to display a tag cloud on the… side of the main content</h4>
 
@@ -1298,7 +1299,7 @@ that is displayed on the right of the page, “aside”! This is done using
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>&lt;section&gt;
+<pre>&lt;section&gt;
   .... all &lt;article&gt;... &lt;/article&gt; here....
 &lt;/section&gt;
 &lt;aside&gt;
@@ -1310,7 +1311,7 @@ that is displayed on the right of the page, “aside”! This is done using
     ...
   &lt;/ul&gt;
 &lt;/aside&gt;
-...</code></pre>
+...</pre>
 
 </details>
 
@@ -1325,7 +1326,7 @@ code of the online example</a>.</p>
 <details>
   <summary><b>CSS source code:</b></summary>
 
-<pre><code>aside {
+<pre>aside {
   float: right;
   padding: 70px 0 30px;
   position: relative;
@@ -1339,7 +1340,7 @@ aside .tag-cloud {
   padding: 15px 35px 10px 0;
   text-align: center
 }
-...</code></pre>
+...</pre>
 
 </details>
 
@@ -1374,7 +1375,7 @@ after the tag cloud definition, to display a page footer:</h4>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>&lt;html&gt;
+<pre>&lt;html&gt;
 ...
 &lt;body&gt;
   ...
@@ -1388,17 +1389,17 @@ after the tag cloud definition, to display a page footer:</h4>
     &lt;p&gt;&amp;copy; 2009 Some blog&lt;/p&gt;
   &lt;/footer&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;</pre>
 
 </details>
 
 <h4>With this CSS rule:</h4>
 
-<pre><code>footer {
+<pre>footer {
   clear: both;
   color: #777;
   padding: 10px 50px
-}</code></pre>
+}</pre>
 
 <h4><b>And here is the result at the bottom of the page:</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1440,7 +1441,7 @@ turn cut into smaller &lt;section&gt; elements:</h4>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>&lt;article id=&quot;id1&quot;&gt;
+<pre>&lt;article id=&quot;id1&quot;&gt;
   &lt;section id=&quot;id1part1&quot;&gt;
     &lt;h2&gt;Introduction&lt;/h2&gt;
   &lt;/section&gt;
@@ -1450,7 +1451,7 @@ turn cut into smaller &lt;section&gt; elements:</h4>
   &lt;section id=&quot;id1part3&quot;&gt;
     &lt;h2&gt;Return to France&lt;/h2&gt;
   &lt;/section&gt;
-&lt;/article&gt;</code></pre>
+&lt;/article&gt;</pre>
 
 </details>
 
@@ -1469,7 +1470,7 @@ with each blog post, for example:</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>&lt;article&gt;
+<pre>&lt;article&gt;
   &lt;header&gt;
     &lt;h1&gt;Blog post title&lt;/h1&gt;
     &lt;p&gt;Author: Michel&lt;/p&gt;
@@ -1486,7 +1487,7 @@ with each blog post, for example:</p>
     &lt;p&gt;Posted by Michel, the &lt;time datetime=&quot;2012-02-02&quot;&gt;February 2,
     2012&lt;/time&gt; &lt;/p&gt;
   &lt;/footer&gt;
-&lt;/article&gt;</code></pre>
+&lt;/article&gt;</pre>
 
 </details>
 
@@ -1591,20 +1592,20 @@ has a heading and has also an outline associated”.</p>
 (whether explicitly marked up using sectioning content elements, or
 implied by the heading content itself). This means that:</p>
 
-<pre class="html5"><code>&lt;body&gt;
+<pre class="html5">&lt;body&gt;
   &lt;h1&gt;Title of my document&lt;/h1&gt;
   ...
-&lt;/body&gt;</code></pre>
+&lt;/body&gt;</pre>
 
 <h4>… defines the header of a section <i>implicitly</i>, while:</h4>
 
-<pre class="html5"><code>&lt;body&gt;
+<pre class="html5">&lt;body&gt;
   ...
   &lt;section&gt;
     &lt;h1&gt;Title of my section&lt;/h1&gt;
     ...
   &lt;/section&gt;
-&lt;/body&gt;</code></pre>
+&lt;/body&gt;</pre>
 
 <h4>… defines the heading of <i>the explicit section</i> (its parent element &lt;section&gt;)</h4>
 
@@ -1625,7 +1626,7 @@ of the implied section.</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre class="html5"><code>&lt;body&gt;
+<pre class="html5">&lt;body&gt;
 &lt;section&gt;
   &lt;h1&gt;This H1 is the heading of an explicit section&lt;/h1&gt;
   ...
@@ -1639,7 +1640,7 @@ of the implied section.</p>
     just started&lt;/h2&gt;
   ...
 &lt;/section&gt;
-&lt;/body&gt;</code></pre>
+&lt;/body&gt;</pre>
 
 </details>
 
@@ -1677,30 +1678,30 @@ after the &lt;body&gt; element (called a “sectioning root”).</p>
 
 <h4>Good (heading in each explicit section):</h4>
 
-<pre class="html5"><code>&lt;section&gt;
+<pre class="html5">&lt;section&gt;
   &lt;h1&gt;Blog post of April 2020&lt;/h1&gt;
   ...
-&lt;/section&gt;</code></pre>
+&lt;/section&gt;</pre>
 
 <h4>Good (heading in a &lt;header&gt; does not change anything):</h4>
 
-<pre class="html5"><code>&lt;section&gt;
+<pre class="html5">&lt;section&gt;
   &lt;b&gt;&lt;header&gt;&lt;/b&gt;
   &lt;b&gt;&lt;h1&gt;Blog post of April 2020&lt;/h1&gt;&lt;/b&gt;
   &lt;b&gt;&lt;p&gt;Posted by Michel Buffa...&lt;/p&gt;&lt;/b&gt;
   &lt;b&gt;&lt;/header&gt;&lt;/b&gt;
 ...
-&lt;/section&gt;</code></pre>
+&lt;/section&gt;</pre>
 
 <h4>Bad (there is no Hx after the &lt;section&gt; - no heading):</h4>
 
-<pre class="html5"><code>&lt;section&gt;
+<pre class="html5">&lt;section&gt;
   &lt;header&gt;
     &lt;p class=&quot;article title&quot;&gt;Blog post of April 2020&lt;/p&gt;
     &lt;p&gt;Posted by Michel Buffa...&lt;/p&gt;
   &lt;/header&gt;
   ...
-&lt;/section&gt;</code></pre>
+&lt;/section&gt;</pre>
 
 <p>The last example is bad for accessibility reasons. A screen reader
 that vocalizes the page will just say “Entering section”, while in the
@@ -1733,7 +1734,7 @@ target="_blank" rel="noopener noreferrer">Outline sidebar</a> for Firefox.</p>
 
 <h4>Final good version:</h4>
 
-<pre class="html5"><code>&lt;body&gt;
+<pre class="html5">&lt;body&gt;
   &lt;b&gt;&lt;h1&gt;Example Blog&lt;/h1&gt;&lt;/b&gt;
   &lt;section&gt;
     &lt;header&gt;
@@ -1742,7 +1743,7 @@ target="_blank" rel="noopener noreferrer">Outline sidebar</a> for Firefox.</p>
     &lt;/header&gt;
     &lt;p&gt;Content of the blog post...&lt;/p&gt;
   &lt;/section&gt;
-&lt;/body&gt;</code></pre>
+&lt;/body&gt;</pre>
 
 <p>The sectioning root (&lt;body&gt;) and the sectioning elements
 (&lt;section&gt; here…), each have a heading.</p>
@@ -1769,12 +1770,12 @@ implicit “sections” in the header.</p>
 
 <h4>This example has two headings in the &lt;header&gt;:</h4>
 
-<pre class="html5"><code>&lt;section&gt;
+<pre class="html5">&lt;section&gt;
   &lt;header&gt;
     &lt;h1&gt;Some text in a h1 in a header of a section&lt;/h1&gt;
     &lt;h2&gt;This a h2 in the header...&lt;/h2&gt;
   &lt;/header&gt;
-&lt;/section&gt;</code></pre>
+&lt;/section&gt;</pre>
 
 <p>Here is the resulting table of contents, notice the two subsections that
 appear, one for the H1, one for the H2:</p>
@@ -1795,11 +1796,11 @@ contents, just use standard markup, for example &lt;p&gt; elements, as
 shown in the next example. Of course, CSS rules can be applied to change
 colors, sizes, etc.</p>
 
-<pre class="html5"><code>&lt;header&gt;
+<pre class="html5">&lt;header&gt;
   &lt;h1&gt;HTML 5.1 Nightly&lt;/h1&gt;
   &lt;p&gt;A vocabulary and associated APIs for HTML and XHTML&lt;/p&gt;
   &lt;p&gt;Editor&#39;s Draft 9 May 2013&lt;/p&gt;
-&lt;/header&gt;</code></pre>
+&lt;/header&gt;</pre>
 
 <h4>Best practice #2: try not to rely on implicit sectioning,
 use &lt;section&gt;, &lt;article&gt;, etc. instead of
@@ -1813,7 +1814,7 @@ using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre class="html5"><code>&lt;body&gt;
+<pre class="html5">&lt;body&gt;
 &lt;h4&gt;Apples&lt;/h4&gt;
 &lt;p&gt;Apples are fruit.&lt;/p&gt;
 &lt;section&gt;
@@ -1824,7 +1825,7 @@ using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):</p>
   &lt;h1&gt;Color&lt;/h1&gt;
   &lt;p&gt;Apples come in various colors.&lt;/p&gt;
 &lt;/section&gt;
-&lt;/body&gt;</code></pre>
+&lt;/body&gt;</pre>
 
 </details>
 
@@ -1833,7 +1834,7 @@ using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>&lt;body&gt;
+<pre>&lt;body&gt;
 &lt;h1&gt;Apples&lt;/h1&gt;
 &lt;p&gt;Apples are fruit.&lt;/p&gt;
 &lt;section&gt;
@@ -1848,7 +1849,7 @@ using &lt;Hx&gt; directly (at <i>lines 7 and 9</i>):</p>
   &lt;h2&gt;Color&lt;/h2&gt;
   &lt;p&gt;Apples come in various colors.&lt;/p&gt;
 &lt;/section&gt;
-&lt;/body&gt;</code></pre>
+&lt;/body&gt;</pre>
 
 </details>
 
@@ -1878,7 +1879,7 @@ rel="noopener noreferrer">Online example at JSBin</a>.</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>&lt;body&gt;
+<pre>&lt;body&gt;
 &lt;h1&gt;This is an example of embedded table of content&lt;/h1&gt;
 &lt;section&gt;
   &lt;header&gt;
@@ -1899,7 +1900,7 @@ rel="noopener noreferrer">Online example at JSBin</a>.</p>
       Click here to display the table of contents!
   &lt;/a&gt;
 &lt;/aside&gt;
-&lt;/body&gt;</code></pre>
+&lt;/body&gt;</pre>
 
 </details>
 
@@ -1958,7 +1959,7 @@ course:</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>&lt;!-- other content --&gt;
+<pre>&lt;!-- other content --&gt;
   
 &lt;main&gt;
   
@@ -1982,7 +1983,7 @@ course:</p>
  
 &lt;/main&gt;
   
-&lt;!-- other content --&gt;</code></pre>
+&lt;!-- other content --&gt;</pre>
 
 </details>
 
@@ -1993,7 +1994,7 @@ main content:</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
   &lt;html lang=&quot;en&quot;&gt;
     &lt;head&gt;
       &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -2044,7 +2045,7 @@ main content:</p>
     &lt;/main&gt;
     &lt;footer&gt;Copyright 2023 B.Bauska&lt;/footer&gt;
   &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;</pre>
 
 </details>
 
@@ -2101,7 +2102,7 @@ in a &lt;section&gt; (this corresponds to the third example given in the
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>&lt;section&gt;
+<pre>&lt;section&gt;
   &lt;header&gt;
     &lt;b&gt;&lt;h1&gt;Blog posts for April 2012&lt;/h1&gt;&lt;/b&gt;
   &lt;/header&gt;
@@ -2113,7 +2114,7 @@ in a &lt;section&gt; (this corresponds to the third example given in the
     &lt;/header&gt;
     ...
   &lt;/article&gt;
-&lt;/section&gt;</code></pre>
+&lt;/section&gt;</pre>
 
 </details>
 
@@ -2131,7 +2132,7 @@ right after the &lt;body&gt; and use only H2…H6 inside &lt;section&gt;,
 <p>We need to add a heading in the &lt;nav&gt; element. This will both fix the outline of the document by removing the untitled entry, and will also make 
 screen readers happy as they will better vocalize the structure of the page (it will say “entering nav” followed by the vocalization of the heading content).</p>
 
-<pre><code>&lt;nav&gt;
+<pre>&lt;nav&gt;
   &lt;header&gt;
     &lt;h1&gt;Navigation menu&lt;/h1&gt;
     &lt;b&gt;
@@ -2141,7 +2142,7 @@ screen readers happy as they will better vocalize the structure of the page (it 
     &lt;li&gt;&lt;a href=&quot;&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
+&lt;/nav&gt;</pre>
 
 <h4>Here is the fixed result:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5449,8 +5450,8 @@ Note however that most of the enhanced players presented further on in the cours
 <img class="displayed"
   src="./images/image095.webp"
   loading="lazy"
-  title="v tag example.  Tarzan and Jane"
-  alt="v tag example.  Tarzan and Jane."
+  title="v tag example. Tarzan and Jane"
+  alt="v tag example. Tarzan and Jane."
   style="width:40%;" />
 
 <p>Using the &lt;v&gt; tag, you will distinguish different voices that should be displayed in 
@@ -21664,7 +21665,7 @@ used to convert to a physical address.</p>
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
   &lt;title&gt;Leaflet Control Geocoder&lt;/title&gt;
@@ -21744,7 +21745,7 @@ used to convert to a physical address.</p>
     getLocation();
   &lt;/script&gt;
  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21764,7 +21765,7 @@ online example</a> (for security reasons the embedded version cannot run in thi
 <details>
   <summary><b>HTML source code:</b></summary>
 
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
   &lt;title&gt;Gimmee My Location&lt;/title&gt;
@@ -21789,7 +21790,6 @@ online example</a> (for security reasons the embedded version cannot run in thi
   &lt;fieldset&gt;
   &lt;form&gt;
   &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
-
   &lt;script type=&quot;text/javascript&quot;&gt;
     var geocoder = L.Control.Geocoder.nominatim();
     var map, marker, latitude, longitude;
@@ -21845,7 +21845,7 @@ online example</a> (for security reasons the embedded version cannot run in thi
       }
   &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21881,7 +21881,8 @@ good understanding of the material.</p>
   Last updated 9-25-24 Wed 8:00am<br/>
   Last updated 10-30-24 Wed 4:46am<br/>
   Last updated 5-24-25 Sat 5:50pm<br/>
-  Last updated 6-30-25 Mon 12:53pm</h6>
+  Last updated 6-30-25 Mon 12:53pm<br/>
+  Last updated 7-03-25 Thu 5:15pm</h6>
   <script src="/js/scripts.js"></script>
 
   </body>
