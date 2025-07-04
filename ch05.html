@@ -1,0 +1,3617 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-1-1">5.1.1 HTML5 Forms Introduction - Module 5</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Congratulations! You made it to module 5.
+Welcome this time to the wonderful world of HTML5 forms.
+There have been no improvements since 1997 to HTML forms.</p>
+
+<p>HTML5 this time comes with a set of new input fields for entering
+dates, colors, entering phone numbers, URLs, and so on.
+New attributes related to form validation have also been introduced,
+and they are related to a new build-in validation system that make
+things easier than before without the need to use JavaScript.
+However, JavaScript validation API is also available for people who
+would like to write their own customized validation system.
+These additions are very handy when used on mobile devices but raised
+many critics from Web designers, mainly related to their desktop
+implementations.</p>
+
+<p>The course discusses all the cases and recommend solutions and good
+practices. Of course, like usual, many examples will be provided that
+you can run directly this time in the course pages, but also as
+standalone examples hosted on the JS Bin Web site. If you try to modify
+them or creates your own examples, please share in the discussion forums
+as usual. Have fun!</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-2-1">5.2.1 Elements and Attributes</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>With HTML5, forms, which had shown little improvement since 1997,
+evolved considerably.  To achieve this, Web developers relied on many
+popular JavaScript frameworks for validating input formats, providing
+various input GUIs, such as calendars for dates, sliders, etc.
+Frameworks such as jQueryUI, Dojo, and Sencha, all provide a widget set
+for improving forms. Furthermore, it was time to take into account the
+specifics of mobile web applications, where the GUI of a date chooser
+cannot be the same as a 400x400 pixel wide calendar on a desktop.
+Contextual virtual keyboards provided the way forward on smartphones and
+tablets thanks to Apple, Google and others.</p>
+
+<h4>HTML5 took all this into account and thus provides:</h4>
+
+<ul>
+  <li>A set of input fields that include a validation API and visual feedback, 
+    contextualized keyboards, etc. Of course the look and feel depends on the 
+    web browser’s implementations, but  the HTML5 forms specification introduced 
+    13 new &lt;input type=…/&gt; fields:  email, tel, color, url, date, datetime, 
+    datetime-local, month, week, time, range, number and search.<br></li>
+  <li>Built-in validation system: JavaScript API for custom validation, CSS 
+    pseudo classes that are useful for changing an input field style depending 
+    on the validity of the input.<br></li>
+  <li>Other goodies, such as the option to set an input field out of a &lt;form&gt;, 
+    new elements such as &lt;datalist&gt; for autocompletion, &lt;output&gt; for 
+    feedback, etc.<br></li>
+</ul>
+
+<p>Examples of contextual keyboards are shown above; they differ
+depending on the type of  &lt;input&gt; fields in the &lt;form&gt;. In
+the examples, we can see: email, URL, and phone number. Look at the
+different keyboard layouts. The last picture is a date picker from an
+IOS phone.</p>
+
+<h4>External resources:</h4>
+
+<ul>
+  <li>From the specification: <a href="https://html.spec.whatwg.org/multipage/forms.html" 
+    target="_blank" rel="noopener noreferrer">Forms</a></li>
+  <li>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" 
+    target="_blank" rel="noopener noreferrer">&lt;form&gt;</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-2-2">5.2.2 Example</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>There is a lot of course content covered this week, and before we get
+into all the details of the elements and attributes introduced by
+HTML5, we suggest playing with running examples of full featured
+forms.</p>
+
+<p>This example was created by a learner (by Mels Le N.) from a previous
+version of this course. It uses the geolocation API presented in Module
+6 for auto-filling the address input fields.</p>
+
+<p>Feel free to look at the source code in the <a href="https://jsbin.com/sivula/edit?online%20example/" 
+target="_blank" rel="noopener noreferrer">JS Bin</a>:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 215. auto-fill address input (292) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/sivula/edit?online%20example/" 
+target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image215.webp"
+  loading="lazy"
+  title="Geo-location API is used to auto-fill address input"
+  alt="Geo-location API is used to auto-fill address input."
+  style="width:45%;" /></a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-2-3">5.2.3 Input Elements and Attributes</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Live coding video 1: using input elements as widgets to control a Web application</h4>
+
+<h4>Live coding video 2: creating GUI elements dynamically</h4>
+
+<p>Input elements, in particular the elements introduced by HTML5, can
+be used as widgets to control the behavior of a Web application. In this
+situation, they do not need to be inside a &lt;form&gt; element. We just
+bind event listeners to them and we use them as client-side widgets.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 215b. gui: speed, color and size of rectangle (293) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image215b.webp"
+  loading="lazy"
+  title="GUI: to resize, change color and speed"
+  alt="GUI: to resize, change color and speed."
+  style="width:45%;" />
+
+<h4>Examples</h4>
+
+<p>GUI: Graphical User Interface</p>
+
+<h4>Example #1: choose the color, line width and speed of an animation</h4>
+
+<ul>
+  <li><a href="https://jsbin.com/ciwefo/1/edit?html,css,output" target="_blank" rel="noopener noreferrer">Bouncing rectangle without GUI</a></li>
+  <li><a href="https://jsbin.com/newojij/1/edit?html,css,output" target="_blank" rel="noopener noreferrer">Bouncing rectangle with GUI</a> (see screenshot at the top right of this page)</li>
+</ul>
+
+<h4>Example #2: data visualization control</h4>
+
+<ul>
+  <li><a href="https://jsbin.com/UxuCOPa/3/edit?html,js,output" target="_blank" rel="noopener noreferrer">Simple chart without a GUI</a></li>
+  <li><a href="https://jsbin.com/gesive/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">Simple chart with a GUI</a> (see screenshot on the right)</li>
+  <li><a href="https://jsbin.com/ralonem/1/edit?html,js,output" target="_blank" rel="noopener noreferrer">Final version with different types of charts and a GUI</a> (see screenshot below)</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 215c. simple chart without gui (293) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/UxuCOPa/3/edit?html,js,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image215c.webp"
+  loading="lazy"
+  title="Simple chart without GUI"
+  alt="Simple chart without GUI."
+  style="width:45%;" /></a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 215d. simple chart with gui (286) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/gesive/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image215d.webp"
+  loading="lazy"
+  title="Simple chart with GUI"
+  alt="Simple chart with GUI."
+  style="width:45%;" /></a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-2-4">5.2.4 Best Practices</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Live coding video 3: HTML5 forms - best practices</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 216a. example #1 html5 forms: personal information (287) ~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/jagodi/edit?html,css,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image216a.webp"
+  loading="lazy"
+  title="HTML5 forms and best practices, personal information"
+  alt="HTML5 forms and best practices, personal information."
+  style="width:45%;" /></a>
+
+<p>The example used in the video is
+available <a href="https://jsbin.com/jagodi/edit?html,css,output" target="_blank" rel="noopener noreferrer">online at JSBin</a>. A screenshot of the resulted form is shown on the right.</p>
+
+<p>Forms are a way to get user input which is sent to a remote server.
+This section of the course focuses on the HTML5 additions to forms, and
+as such will only cover the client-side part.</p>
+
+<p>On the server side, you may have PHP, Java, C#, Ruby, Python, etc.
+components. There are several ways to collect server-side data from a
+form in a Web page: REST Web services, servlets, Microsoft ASP pages,
+etc.</p>
+
+<p>On the client side, the forms indicate to which server and how the
+data should be sent,  using the action and method attributes
+respectively. A &lt;button type=“submit”&gt; or an &lt;input
+type=submit&gt; field is used to submit the form content.</p>
+
+<p>For example: &lt;form action=“myServerCode.php”
+method=“POST”&gt;…&lt;/form&gt;. Here, we set the URL of the server side
+code (myServerCode.php), and the HTTP method that will be used by the
+browser for sending the form content (POST).</p>
+<p>Another approach is to use JavaScript for sending the form content
+with <a href="https://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank" rel="noopener noreferrer">Ajax</a>. This is covered in W3Cx HTML5 Apps and Games course.</p>
+<p>This week, let’s study the elements and attributes offered by HTML5,
+as well the HTML5 form validation API. </p>
+<p>The example shown in the video shows some best practices for writing
+accessible forms and does some basic layout using CSS.</p>
+<p>The following additional example shows the same best practices but
+presents a more complete form with CSS rules to make a nice layout. See
+it <a href="https://jsbin.com/zubitex/1/edit?html,output" target="_blank" rel="noopener noreferrer">online</a>,
+and illustrated with the screenshot below. It is adapted
+from <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form" target="_blank" rel="noopener noreferrer">this
+very good MDN’s article “How to structure a web form”</a>.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 216. payment form layout example (288) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/zubitex/1/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image216.webp"
+  loading="lazy"
+  title="Payment form layout example"
+  alt="Payment form layout example."
+  style="width:35%;" /></a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-3-1">5.3.1 Accessible Forms</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Forms are commonly used to enable user interaction in Web sites and
+Web applications. For example, they are used for login, registering,
+commenting, and purchasing.</p>
+<p>Since HTML5 provides functionalities to assist with accessibility,
+developers should make a concerted effort to mark up Web based forms.
+The following two guidelines are to give you a good start to make your
+forms accessible:</p>
+
+<ol type="1">
+  <li>For every form field, ensure that a descriptive label is provided and use the &lt;label&gt; element to identify each form control.</li>
+  <li>For larger or complex forms, use the &lt;fieldset&gt; and &lt;legend&gt; elements to respectively group and associate related form controls.</li>
+</ol>
+
+<p>Examples for each of these two basic guidelines are given in the
+following pages.</p>
+
+<h4>Further reading</h4>
+
+<p>The WAI Web site hosts
+a <a href="https://www.w3.org/WAI/tutorials/forms/" target="_blank" rel="noopener noreferrer">Forms
+tutorial</a> where to find all guidelines to follow in order to make
+your forms truly accessible: labeling controls, grouping controls, form
+instructions, validating input, user notifications, multi-page forms,
+and custom controls.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-3-2">5.3.2 Why is this Important?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Forms can be visually and cognitively complex and difficult to use.
+Accessible forms are easier to use for everyone, including people with
+disabilities.</p>
+
+<ul>
+  <li>People with cognitive disabilities can better understand the form and how to complete it, as making forms accessible improves the layout structure, instructions, and feedback.</li>
+  <li>People using speech input can use the labels via voice commands to activate controls and move the focus to the fields that they need to complete.</li>
+  <li>People with limited dexterity benefit from large clickable areas that include the labels, especially for smaller controls, such as radio buttons and checkboxes.</li>
+  <li>People using screen readers can identify and understand form controls more easily because they are associated with labels, field sets, and other structural elements.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-3-3">5.3.3 Labeling Controls</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Labels need to describe the purpose of the form control</h4>
+
+<p>Form fields and other form controls usually have visible labels, such as “E-mail Address:” as the label for a text field (see figure below).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 217. e-mail form label text (289) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image217.webp"
+  loading="lazy"
+  title="Email form label text"
+  alt="Email form label text."
+  style="width:25%;" />
+
+<p>When these labels are marked up correctly, people can interact with
+them using only the keyboard, using voice input, and using screen
+readers. Also, the label itself becomes clickable, which enables a
+person who has difficulty clicking on small radio buttons or checkboxes
+to click anywhere on the label text.</p>
+
+<h4>Associating labels explicitly</h4>
+
+<p>Whenever possible, use the label element to explicitly associate text
+with form elements. The for attribute of the label must exactly match
+the id of the form control. </p>
+
+<h4>Example #1</h4>
+
+<p>Click on the label, not on the input field to see the effect.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 218. first name on form (289) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image218.webp"
+  loading="lazy"
+  title="First name label text"
+  alt="First name label text."
+  style="width:25%;" />
+
+<h4>Source code:</h4>
+
+<pre>&lt;label for=&quot;first_name&quot;&gt;Your First Name&lt;/label&gt;
+&lt;input id=&quot;first_name&quot; type=&quot;text&quot; name=&quot;fname&quot;/&gt;</pre>
+
+<h4>Example #2</h4>
+
+<p>Note that you can also include the &lt;input&gt; element inside the &lt;label&gt;…&lt;label&gt; element, and also add a &lt;span lang=“en”&gt; for example, to indicate the language used in the label. Sometimes, <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#The_%3Clabel%3E_element" target="_blank" rel="noopener noreferrer">nesting labels and inputs can also make CSS styling easier and produce better results with screen readers</a>.</p>
+
+<h4>Source code (with &lt;input&gt; inside the &lt;label&gt;):</h4>
+
+<pre>&lt;label for=first_name&quot;&gt;&lt;span lang=en&quot;&gt;Your First Name&lt;/span&gt;
+  &lt;input id=&quot;first_name&quot; type=&quot;text&quot; name=&quot;fname&quot;/&gt;
+&lt;/label&gt;</pre>
+
+<h4>Example #3</h4>
+
+<p>Click on the label “Subscribe to newsletter” to see what this does.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 219. first name with subscription check box (290) ~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image219.webp"
+  loading="lazy"
+  title="First name with subscription check box"
+  alt="First name with subscription check box."
+  style="width:25%;" />
+
+<h4>Source code:</h4>
+
+<pre>&lt;label for=&quot;firstname&quot;&gt;First name:&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;firstname&quot; id=&quot;firstname&quot;&gt;&lt;br&gt;
+&lt;label for=&quot;subscribe&quot;&gt;Subscribe to newsletter&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;subscribe&quot; id=&quot;subscribe&quot;&gt;</pre>
+
+<h4>Labeling buttons</h4>
+
+<p>The label of a &lt;button&gt; element is set inside the element and
+can include markup. This allows advanced accessibility hints to be
+included, such as marking up language change. Example: &lt;button&gt;Mon
+&lt;span lang=“fr”&gt;bouton&lt;/span&gt;&lt;/button&gt;,for a button
+with a label in French.</p>
+<p>When using the &lt;input&gt; element to create buttons, the label is
+set in the value attribute of the element. Example: &lt;input
+type=“submit” value=“Please submit”&gt;, renders a text button.</p>
+
+<h4>Source code for the “Submit” and “Cancel” buttons example:</h4>
+
+<pre>&lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+&lt;button type=&quot;button&quot;&gt;Cancel&lt;/button&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot;Cancel&quot;&gt;</pre>
+
+<p>These give the same results:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 220. submit and cancel buttons (290) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image220.webp"
+  loading="lazy"
+  title="Example submit and cancel buttons"
+  alt="Example submit and cancel buttons."
+  style="width:25%;" />
+
+<p><i>Lines 1 and 2</i> render as: <b>Submit Cancel</b></p>
+<p>… while <i>lines 3 and 4</i> render as:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 221. label for address (290) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image220.webp"
+  loading="lazy"
+  title="Example submit and cancel buttons"
+  alt="Example submit and cancel buttons."
+  style="width:25%;" />
+
+<h4>Source code:</h4>
+
+<pre>&lt;label for=&quot;address&quot;&gt;Enter your address:&lt;/label&gt;&lt;br&gt; &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-3-4">5.3.4 Grouping Controls</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Groupings of form controls, typically groups of related checkboxes
+and radio buttons, sometimes require a higher level description.
+Grouping related form controls makes forms more understandable for all
+users, as related controls are easier to identify.</p>
+<h4>Associating related controls with fieldset</h4>
+<p>Grouping needs to be carried out visually and in the code, for
+example, by using the &lt;fieldset&gt; and &lt;legend&gt; elements to
+associate related form controls. The &lt;fieldset&gt; identifies the
+entire grouping and &lt;legend&gt; identifies the grouping’s descriptive
+text.</p>
+<h4>Example #1: radio buttons</h4>
+<p>In the example below, there are three radio buttons that allow the
+user to choose an output format. Radio button groups should always be
+grouped using &lt;fieldset&gt;.</p>
+
+<p>Output format:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 222. label for radio button sample (299) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image222.webp"
+  loading="lazy"
+  title="Example label for button select"
+  alt="Example label for button select."
+  style="width:25%;" />
+
+<h4>Source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;fieldset&gt;
+  &lt;legend&gt;Output format&lt;/legend&gt;
+  &lt;div&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;format&quot; id=&quot;txt&quot; value=&quot;txt&quot; checked&gt;
+    &lt;label for=&quot;txt&quot;&gt;Text file&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;format&quot; id=&quot;csv&quot; value=&quot;csv&quot;&gt;
+    &lt;label for=&quot;csv&quot;&gt;CSV file&lt;/label&gt;
+  &lt;/div&gt;
+  [...]
+&lt;/fieldset&gt;</pre>
+
+</details>
+
+<h4>Example #2: checkboxes</h4>
+
+<p>In the example below, there are three checkboxes that are all part of
+an opt-in function for receiving different types of information.</p>
+<p>I want to receive</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 223. label for check box sample (299) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image223.webp"
+  loading="lazy"
+  title="Example label for check box select"
+  alt="Example label for check box select."
+  style="width:25%;" />
+
+<h4>Source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;fieldset&gt;
+  &lt;legend&gt;I want to receive&lt;/legend&gt;
+    &lt;div&gt;
+      &lt;input type=&quot;checkbox&quot; name=&quot;newsletter&quot; id=&quot;check_1&quot;&gt;
+      &lt;label for=&quot;check_1&quot;&gt;The weekly newsletter&lt;/label&gt;
+    &lt;/div&gt;
+ [...]
+&lt;/fieldset&gt;</pre>
+
+</details>
+
+<h4>Associating related controls with WAI-ARIA</h4>
+
+<p>WAI-ARIA provides a grouping role that functions similarly
+to fieldset and legend. For example, a div element can
+have role=group to indicate that the contained elements are members of a
+group.</p>
+
+<p>WAI-ARIA roles are very important in the accessibility world, and we invite you to see 
+an example provided in the 
+<a href="https://www.w3.org/WAI/tutorials/forms/grouping/#associating-related-controls-with-wai-aria" 
+target="_blank" rel="noopener noreferrer">associated WAI tutorial</a>. See also this MDN’s 
+article about about 
+<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles" target="_blank" 
+rel="noopener noreferrer">WAI-ARIA roles</a>.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-4-1">5.4.1 Input Types</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this section, we briefly present the input types, attributes, and elements related 
+to the forms that came with HTML5. Details are given later, illustrated by multiple 
+interactive examples.</p>
+
+<p>Compared to HTML4, HTML5 introduced 13 new input types, covering most of the needs of 
+Web developers. HTML5 packages some of the “form best practices” in its specification. 
+Web browsers providing native implementation give a boost in performance, and reduce the 
+size of JavaScript embedded in complex Web pages.</p>
+
+<p>MDN’s Web docs 
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#%3Cinput%3E_types" 
+target="_blank" rel="noopener noreferrer">article on &lt;input&gt; types</a> lists all input 
+types and highlights those that came with HTML5.</p>
+
+<p>Now, let’s play with some of these input types and attributes.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 223. html4 to html5 time to update (299) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image223.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="HTML4 to HTML5"
+  alt="HTML4 to HTML5." />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-4-2">5.4.2 "color"</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>For years, we used hundreds of lines of JavaScript for selecting colors. Now, it’s 
+bundled in the browser!</p>
+
+<p>Here is how it looks on some mobile devices:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 224. html input type color - android (299) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image224.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="HTML5 input type=color on an android phone"
+  alt="HTML5 input type=color on an android phone." />
+
+<h4>Typical use</h4>
+<h4>Inserting a color chooser is as simple as:</h4>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;...&lt;/head&gt;
+  &lt;body&gt;
+    Choose a color : &lt;b&gt;&lt;input type=&quot;color&quot; value=&quot;#FF00F&quot;/&gt;&lt;/b&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<p><i>Note</i>: In this chapter we are simplifying the examples, as we usually embed input 
+elements in a &lt;form&gt;…&lt;/form&gt;.</p>
+
+<p>Try &lt;input type=“color”&gt; online with this
+<a href="https://jsbin.com/cajuzob/1/edit?html,output" target="_blank" rel="noopener noreferrer">
+JSBin example</a>. Or do it here in your browser: just click on the purple square below:</p>
+
+<p>Here is the result on Google Chrome (works with other browsers too, though the <i>look 
+and feel</i> may differ):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 225. select input type=color (300) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/cajuzob/1/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image225.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Select a color, input type=color"
+  alt="Select a color, input type=color." /></a>
+
+<h4>Example: changing the background color of the page</h4>
+
+<p>The &lt;input type=“color”&gt; can fire change or input events. Here is an example that 
+changes the background color of the page when a color is chosen. 
+<a href="https://jsbin.com/jozuter/1/edit?html,css,js,console,output" 
+target="_blank" rel="noopener noreferrer">Try it online at JSBin</a>.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 226. change backgound color of the body (300) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/jozuter/1/edit?html,css,js,console,output" target="_blank" 
+  rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image226.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Change background color of the page body"
+  alt="Change background color of the page body." /></a>
+
+<h4>Source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;
+    Select a color : &lt;input type=&quot;color&quot; id=&quot;colorChooser&quot;/&gt;
+    &lt;script&gt;
+      var colorInputField = document.querySelector(&quot;#colorChooser&quot;);
+      colorInputField.addEventListener(&#39;input&#39;, function(evt) {
+          document.body.style.backgroundColor = this.value;
+      }, false);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Offer a limited choice of colors</h4>
+
+<p>By default, the color selector offers many options that may either frighten some users 
+or just not be appropriate for the purpose of the application. </p>
+
+<p><i>Good news</i>: it is possible to restrict the choices, and also simplify the user 
+interface, by using a &lt;datalist&gt; with some &lt;option&gt; elements inside.</p>
+
+<p>Example: click the black rectangle on the right. The following should be displayed:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 227. restricted choice of colors (301) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image227.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Restricted choice of colors"
+  alt="Restricted choice of colors." />
+<!-- {width="3.0in" height="1.872483595800525in"} -->
+
+<p><a href="https://jsbin.com/lahapu/edit?html,output" target="_blank" rel="noopener noreferrer">
+Online example at JSBin</a></p>
+
+<h4>Source code extract:</h4>
+
+<pre>&lt;input type=&quot;color&quot; value=&quot;#333333&quot; list=&quot;colors&quot;&gt;
+&lt;datalist id=&quot;colors&quot;&gt;
+  &lt;option&gt;#0000FF&lt;/option&gt;
+  &lt;option&gt;#00FF00&lt;/option&gt;
+  &lt;option&gt;#FF0000&lt;/option&gt;
+&lt;/datalist&gt;</pre>
+
+<p>Note that the id of the &lt;datalist&gt; element should be the same as the value of 
+the list attribute of the input field.</p>
+
+<h4>What are the main problems with this element?</h4>
+
+<p>The main criticism that Web designers make about this element is related to its default 
+appearance being strongly dependent on the browser and its underlying operating system. 
+Changing the <i>look and feel</i> is not possible, except with the use of the options we 
+saw in the previous sections of this page. This problem is also true for other input 
+elements that renders as complex widgets, like &lt;input type=“date”&gt; and its variants.</p>
+
+<p>Another problem is that there is no way to control where the dialog that contains the 
+color chooser will appear - no positioning via CSS or JavaScript is possible. The 
+specification does not say anything about how to position it over the page, thus the 
+result is vendor specific.</p>
+
+<p>The solution proposed by the W3C and its contributors is called <i>Web Components</i>, 
+a new approach for designing HTML5 widgets, that is covered in the W3Cx HTML5 Apps and 
+Games course.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-4-3">5.4.3 “date”</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>For years, date and time pickers in HTML forms made Web developers rely heavily on 
+JavaScript based widgets. The process is simpler in HTML5, which provides a special 
+control to handle this specific kind of data natively.</p>
+ 
+<p>Below are a few screenshots of the HTML5 date picker on several mobile devices. Note 
+that the native date pickers of the operating systems are used:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 228. december 22, 2011 sample custom reusable widget (302) ~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image228.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Date picker 1"
+  alt="Date picker 1." />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 229. 03 oct 2013 sample custom reusable widget (302) ~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image229.webp"
+  loading="lazy"
+  style="width:10%;"
+  title="Date picker 2 on mobile"
+  alt="Date picker 2 on mobile." />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 230. 2012-09-11 sample custom reusable widget (302) ~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image230.webp"
+  loading="lazy"
+  style="width:30%;"
+  title="Date picker 3 on mobile"
+  alt="Date picker 3 on mobile." />
+
+<p>The problem is different on a desktop. While it’s great to have native support for a 
+date picker, Web developers would sometimes prefer 100% control over the <i>look and feel</i> 
+of the date picker widget. For this purpose, the solution undoubtedly lies with the new 
+<a href="https://webcomponents.org/" target="_blank" rel="noopener noreferrer">
+Web Components</a> (a way to make custom reusable widgets in HTML/CSS/JS), to be detailed 
+in the W3Cx HTML5 Apps and Games course</p>
+
+<p>Why don’t you try it yourself? Just click on this input field: (not in github)</p>
+<p>With Firefox, it shows this date picker widget:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 231. firefox date picker widget (302) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image231.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Firefox desktop date picker widget"
+  alt="Firefox desktop date picker widget." />
+
+<p>On non-supported browsers, it defaults to an &lt;input type=“text”&gt; input field.</p>
+
+<h4>Typical use of &lt;input type=“date”&gt;</h4>
+
+<h4>Default use</h4>
+
+<p>The default usage is something like:</p>
+
+<pre>&lt;label for=&quot;birthday&quot;&gt;Choose birthday party date: &lt;/label&gt;
+&lt;input type=&quot;date&quot; id=&quot;birthday&quot;&gt;</pre>
+
+<p>Result:             Choose birthday party date:      </p>
+<p>Most of the time you will add other attributes to give some
+restrictions (choose a date in the past, in the future, only on a
+Saturday, etc.).</p>
+
+<h4>Restrict choice to an interval of dates: attributes min, max and value</h4>
+
+<p>The &lt;input type=“date”&gt; comes with several useful attributes.
+In particular the value, min and max attributes are used to propose a
+default date, a min and a max date, or for defining an interval of
+acceptable values.</p>
+<p>Try this example: just click the next input
+field or <a href="https://jsbin.com/faluta/1/edit?html,output" target="_blank" rel="noopener noreferrer">try it online on JSBin</a> if you want to tweak the source code:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 232. only dates between min and max are selectable (303) ~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/faluta/1/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image232.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Only dates between min and max are selectable"
+  alt="Only dates between min and max are selectable." /></a>
+
+<!--
+![input type = date with min and max attributes. This will render two non selectable areas (dates before min and dates after max). Only the dates between min and max are selectable in the displayed calendar.](./images/image232.webp){width="4.0in" height="2.2641021434820647in"}
+-->
+<h4>Source code:</h4>
+
+<pre>...
+&lt;input type=&quot;date&quot;
+  id=&quot;birthdayParty&quot;
+  value=&quot;2015-06-20&quot;
+  min=&quot;2015-06-20&quot;
+  max=&quot;2015-06-30&quot;&gt;
+...</pre>
+
+<h4>Choosing one day in a given week, etc. with the step: attribute</h4>
+
+<p>Using the value attribute for setting a date, and using step=7 for
+example, will make acceptable only the day of the week that corresponds
+to the value’s day (e.g.: only Mondays). Using step=2 will make
+acceptable only every other day, etc.</p>
+<p>Example: we want to celebrate birthday parties only on Saturdays, <a
+href="https://jsbin.com/hudafo/1/edit?html,output" target="_blank" rel="noopener noreferrer">check this on
+JSBin</a>! (screenshot from Chrome).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 233. using step to allow only saturdays (304) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/hudafo/1/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image233.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Use of the step attribute, allow only Saturdays"
+  alt="Use of the step attribute, allow only Saturdays." /></a>
+
+<h4>Extract from source code:</h4>
+
+<pre>&lt;input type=&quot;date&quot;
+  id=&quot;birthdayParty&quot;
+  value=&quot;2015-06-20&quot;
+  min=&quot;2015-06-20&quot;
+  max=&quot;2015-06-30&quot;
+  step=&quot;7&quot;&gt;</pre>
+
+<h4>Combining with the &lt;datalist&gt; element to restrict the choice of possible values</h4>
+
+<p><a href="https://jsbin.com/gezawe/1/edit?html,output" target="_blank" rel="noopener noreferrer">Online example at JSBin</a> (screenshot from Chrome).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 234. only values from datalist are proposed (304) ~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/gezawe/1/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image234.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Restrict choices using a datalist element"
+  alt="Restrict choices using a datalist element." /></a>
+
+<h4>Extract from source code:</h4>
+
+<pre>&lt;input type=&quot;date&quot;
+  id=&quot;birthdayParty&quot;
+  list=&quot;birthdayPartyPossibleDates&quot;
+  value=&quot;2015-06-20&quot;&gt;
+&lt;datalist id=&quot;birthdayPartyPossibleDates&quot;&gt;
+  &lt;option label=&quot;Best for me&quot;&gt;2015-06-20&lt;/option&gt;
+  &lt;option label=&quot;Ok for me too &quot;&gt;2015-06-27&lt;/option&gt;
+  &lt;option label=&quot;This one is a sunday, hmmm&quot;&gt;2015-06-28&lt;/option&gt;
+&lt;/datalist&gt;</pre>
+
+<p><b>The list attribute of the input element must match
+the id attribute of the datalist element.</b></p>
+<p><b>If you use the min, max, or step attributes with a list attribute,
+it may filter the restricted list even
+more.</b> Check <a href="https://jsbin.com/gucuxon/1/edit?html,output" target="_blank" rel="noopener noreferrer">this
+example on JSBin</a> (tested with Google Chrome), that has a restricted
+list of three elements, one of which is filtered because it is not in in
+the min/max range.</p>
+
+<h4>Responding to date changes, trying date/time and other variants</h4>
+
+<h4>Listening to the input event</h4>
+
+<p>Here is <a href="https://jsbin.com/ganipuv/edit?html,output" target="_blank" rel="noopener noreferrer">an
+interactive example at JSBin</a> where you can change the type of
+date/time chooser. It also shows how to listen to the input event when a
+date/time is chosen.</p>
+
+<h4>Source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;...&lt;/head&gt;
+&lt;body&gt;
+  Testing the new date input field.&lt;p&gt;
+  Choose a date/time : &lt;input type=&quot;date&quot; id=&quot;date&quot; /&gt;&lt;/p&gt;
+  &lt;p&gt;
+    You picked: &lt;span id=&quot;pickedDate&quot;&gt;&lt;/span&gt;
+  &lt;/p&gt;
+  After you have tried the first example, change the value of the &quot;type&quot; attribute to:
+  &lt;ul&gt;
+    &lt;li&gt;datetime&lt;/li&gt;
+    &lt;li&gt;datetime-local&lt;/li&gt;
+    &lt;li&gt;time&lt;/li&gt;
+    &lt;li&gt;week&lt;/li&gt;
+    &lt;li&gt;month&lt;/li&gt;
+  &lt;/ul&gt;
+    And see the result.
+  &lt;script&gt;
+    var field = document.querySelector(&quot;#date&quot;);
+    var result = document.querySelector(&quot;#pickedDate&quot;);
+    field.oninput = function(evt) {
+      var date = this.value;
+      pickedDate.innerHTML = &quot;&lt;b&gt;&quot;+date+&quot;&lt;/b&gt;&quot;;
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<p><i>Lines 20-26</i> show how we can detect a date change using
+JavaScript.</p>
+
+<h4>Checking if the chosen date is in the past or in the future using the valueAsDate property</h4>
+
+<p>The object returned to the input event handler has a useful property
+named valueAsDate. This is a JavaScript date object that can be compared
+to other JavaScript date objects, in particular to the date of the day
+we can get with var date = new Date();</p>
+<p><a href="https://jsbin.com/renevaf/edit?html,output" target="_blank" rel="noopener noreferrer">The following example at JSBin</a> shows how to ascertain whether a date is in the past or in the future: </p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 235. is date in past or future? (306) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/renevaf/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image235.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Check if date is in the past or future"
+  alt="Check if date is in the past or future." /></a>
+
+<p>While if we enter a date in the future:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 236. enter your birth date (306) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image236.webp"
+  loading="lazy"
+  style="width:30%;"
+  title="Enter your Birthdate in the future: bad"
+  alt="Enter your Birthdate in the future: bad." />
+
+<h4>Extract from source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;body&gt;
+  &lt;label for=&quot;birthDate&quot;&gt;Enter your birth date: &lt;/label&gt;&lt;p&gt;
+  &lt;input type=&quot;date&quot; id=&quot;birthDate&quot; &gt;
+  &lt;p&gt;
+    You picked: &lt;span id=&quot;pickedDate&quot;&gt;&lt;/span&gt;&lt;p&gt;
+    &lt;span id=&quot;pastFuture&quot;&gt;&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;script&gt;
+    var field = document.querySelector(&quot;#birthDate&quot;);
+    var result = document.querySelector(&quot;#pickedDate&quot;);
+    var pastFuture = document.querySelector(&quot;#pastFuture&quot;);
+    field.oninput = function(evt) {
+      var date = this.value;
+      pickedDate.innerHTML = &quot;&lt;b&gt;&quot;+date+&quot;&lt;/b&gt;&quot;;
+      if(date.valueAsDate &lt;= new Date()) {
+        pastFuture.style.color = &#39;green&#39;;
+        pastFuture.innerHTML = &quot;&lt;b&gt;Date in the past, ok!&lt;/b&gt;&quot;
+      } else {
+        pastFuture.style.color = &#39;red&#39;;
+        pastFuture.innerHTML = &quot;&lt;b&gt;Date in the future, you&#39;re not even born!&lt;/b&gt;&quot;
+      }
+    }
+  &lt;/script&gt;
+&lt;/body&gt;</pre>
+
+</details>
+
+<p><i>Lines 17-23</i> show how we can compare the date picked in the
+calendar widget with the current date. Note that we can compare any
+given dates using JavaScript. To check that the chosen date is before
+2000 we would do this:</p>
+
+<pre>if(this.valueAsDate &lt;= new Date(2000,1,1)) {
+  ...
+}
+&lt;input type=&quot;datetime&quot;&gt;, &quot;week&quot;, &quot;month&quot;, &quot;datetime-local&quot;, etc.</pre>
+
+<p>The HTML5 specification indicates that we can use &lt;input
+type=“date”&gt; and &lt;input type=“time”&gt; while for some years
+(before the specification became a frozen standard in October 2014),
+other variants were also present, such
+as type=datetime, datetime-local, month and week.</p>
+<p><a href="https://jsbin.com/supope/1/edit" target="_blank" rel="noopener noreferrer">Here is an interactive example at JSBin</a> where you can change the type of date chooser and
+try all the different possible values for the type attribute of date pickers.</p>
+
+<h4>Some screenshots from Opera desktops and Safari IOS:</h4>
+
+<p>&lt;input type=“time”&gt;</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 237. select a time (307) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image237.webp"
+  loading="lazy"
+  style="width:30%;"
+  title="Input type=time, select a time"
+  alt="Input type=time, select a time." />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 238. select a date and time (307) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image238.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Input type=time safari IOS"
+  alt="Input type=time safari IOS." />
+
+<p>&lt;input type=“datetime”&gt;</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 239. select a time (307) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image239.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element"
+  alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element." />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 240. jun 7, 2011 select date/time (308) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image240.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Select date/time. Wed 7:29pm, June 7, 2011. Input type=datetime on Safari IOS"
+  alt="Select date/time. Wed 7:29pm, June 7, 2011. Input type=datetime on Safari IOS." />
+
+<p>&lt;input type=“datetime-local”&gt;</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 241. 2012-02-18 00:08 select date/time (308) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image241.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Select date and time using datetime-local"
+  alt="Select date and time using datetime-local." />
+
+<p>&lt;input type=“week”&gt;:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 242. 2012w07 select a week (308) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image242.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Select a Week"
+  alt="Select a Week." />
+
+<p>&lt;input type=“month”&gt;:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 243. 2012-02 select birthdate month & year (308) ~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image243.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="2012-02 Select month and year of birthdate"
+  alt="2012-02 Select month and year of birthdate." />
+<!-- width="4.0in" height="1.4222222222222223in"} -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 244. june 2011 select month & year (309) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image244.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="June, 2011 select input type=month safari"
+  alt="June, 2011 select input type=month safari." />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-4-4">5.4.4 “e-mail”, “tel”, “URL”, and “search”</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Let’s study 4 input types: email”, “tel”, “URL” and “search”.</p>
+
+<p>&lt;input type=“email”&gt;</p>
+
+<p>This input type is relatively straightforward to use. In mobile
+applications, this new input type pops up a keyboard layout adapted to
+email input. Note the “@” key, the “.” key, etc.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 245. mobile email address (309) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image245.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Contextual mobile keyboard for entering an email address"
+  alt="Contextual mobile keyboard for entering an email address." />
+
+<p>This input type is very interesting as it provides default validation
+behaviors:</p>
+
+<p>If the value entered looks like an email address (contains a “@”…),
+the field is <i>valid</i>, and gets the pseudo CSS class  :valid</p>
+
+<p>If the value entered does not contain an “@”, and does not look like
+an email address, the field is <i>invalid</i> and gets the pseudo CSS
+class :invalid</p>
+
+<p>See the next example to see this in action. More details will be
+presented in a later section dedicated to form validation.</p>
+
+<p>Typical use:
+<a href="https://codepen.io/w3devcampus/pen/aWXKWR" target="_blank" rel="noopener noreferrer">
+Online example at CodePen</a></p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 246. enter your email (310) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image246.webp"
+  loading="lazy"
+  style="width:30%;"
+  title="Enter your email"
+  alt="Enter your email." />
+<h6 style="text-align:center;"><a href="https://codepen.io/w3devcampus/pen/aWXKWR"  
+target="_blank" rel="noopener noreferrer">CodePen example; enter your email</a>.</h6>
+
+<p>Try it on your browser:</p>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of input type=email&lt;/title&gt;
+  &lt;style&gt;
+    input:invalid {
+      background-color:pink;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;label for=&quot;email&quot;&gt;Enter your email &lt;/label&gt;
+  &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<p>Note the CSS rule that turns the background color of the email input
+field to pink if a user enters an invalid address (<i>lines 7-8</i>).
+Also note that the validation is based only on matching a regular
+expression (the address should contain a “@”,  a “.”, etc.). It does not
+check if the address is an existing one.</p>
+
+<h4>&lt;input type=“tel”&gt;</h4>
+
+<p>This input field is really useful on smartphones and tablets, as it
+makes the browser pop up a keyboard layout suitable for entering phone
+numbers:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 247. enter your telephone number (311) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image247.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Mobile keyboard 1 for input type=tel"
+  alt="Mobile keyboard 1 for input type=tel." />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 248. other mobile keyboard for input type=tel (311) ~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image248.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Other mobile keyboard 1 for input type=tel"
+  alt="Other mobile keyboard 1 for input type=tel." />
+
+<p>This input type is often used with the new placeholder and pattern attributes that 
+are detailed in another section of this course. It is supported by all recent major 
+Web browsers, on mobile devices and desktops.</p>
+
+<p><a href="https://codepen.io/w3devcampus/pen/Njozvd" target="_blank" 
+rel="noopener noreferrer">Online example on CodePen</a></p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 249. enter a telephone number prompt (312) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image249.webp"
+  loading="lazy"
+  style="width:30%;"
+  title="Enter a telephone number"
+  alt="Enter a telephone number." />
+
+<p>Try it in your browser (we used the same CSS for changing the background-
+color when the input value is invalid):</p>
+
+<h4>Enter a telephone number:</h4>
+
+<h4>Source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of input type=tel&lt;/title&gt;
+  &lt;style&gt;
+    input:invalid {
+      background-color:pink;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;label for=&quot;tel&quot;&gt;Enter a telephone number:&lt;/label&gt;
+  &lt;input type=&quot;tel&quot; id=&quot;tel&quot;
+  placeholder=&quot;(555) 555-5555&quot;
+  pattern=&quot;(?d{3})?[-s]d{3}[-s]d{4}.*?)&quot;/&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>&lt;input type=“URL”&gt;</h4>
+
+<p>This input field is really useful on smartphones and tablets, as it
+makes the browser pop up a keyboard layout suitable for entering
+URLs:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 250. mobile keyboard for entering urls (313) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image250.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Mobile keyboard for entering URLs"
+  alt="Mobile keyboard for entering URLs." />
+
+<p>This field is also compatible with <i>the validation API</i> (more on this in another section).</p>
+
+<p>Here is an online example that shows the use of the placeholder and pattern attributes 
+for entering only URLs that start with ftp:// or https://<br/>
+Or try it here in your browser:<br/>
+Enter a URL (default validation):<br/>
+Enter a URL (custom validation, must start with http, https or ftp):</p>
+
+<h4>Source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head &gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of input type=url&lt;/title&gt;
+  &lt;style&gt;
+    input:invalid {
+      background-color: lightPink;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;label for=&quot;url1&quot;&gt;Enter a URL (default validation):&lt;/label&gt;
+  &lt;input type=&quot;url&quot; id=&quot;url1&quot;/&gt;
+  &lt;p&gt;
+  &lt;label for=&quot;url2&quot;&gt;Enter a URL (custom validation, must start with http, https or ftp):&lt;/label&gt;
+  &lt;input id=&quot;url2&quot; type=&quot;url&quot; placeholder=&quot;https://www.domain.com&quot;
+  pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]*&quot;/&gt;&lt;p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<p><i>Lines 16-17</i> show the use of a pattern attribute with a
+JavaScript regexp that accepts only URLs starting with http, https or
+ftp. More details on the pattern attribute are given in the section that
+presents the new HTML5 form attributes.</p>
+
+<h4>&lt;input type=“search”&gt;</h4>
+
+<p>The search type is used for search fields (i.e., for a search
+engine). A search field behaves like a regular text field, except that
+it may provide some feedback GUI for stopping the current request and
+emptying the search field, or it may provide a drop-down list of recent
+search results.<br>
+<br>The specification does not state what the GUI should look like, so
+current implementations show variations in the look and feel.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 251. input type=search rendered on a smartphone (314) ~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image251.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Input type=search rendered on a smartphone"
+  alt="Input type=search rendered on a smartphone." />
+
+<h4>Typical use:</h4>
+
+<pre>&lt;label for=&quot;search1&quot;&gt;Simple search: &lt;/label&gt;
+  &lt;input type=search id=&quot;search1&quot;&gt;
+  &lt;p&gt;
+    &lt;label for=&quot;search2&quot;&gt;Search with attribute &lt;code&gt;results=5&lt;/code&gt; (try with Safari): &lt;/label&gt;
+    &lt;input type=search id=&quot;search2&quot; results=5&gt;</pre>
+
+<p>Results on Chrome and Opera desktop - notice the small cross on the
+right when one enters a value:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 252. simple search chrome & opera (314) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image252.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Input type=search in google chrome and opera"
+  alt="Input type=search in google chrome and opera." />
+
+<p>Same example with Safari desktop, this time the second line with an
+attribute results=5 shows a small icon on the left:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 253. simple search safari desktop (314) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image253.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Input type=search on Safari"
+  alt="Input type=search on Safari." />
+
+<p>Example that shows a drop down list of recent searches (Safari screenshot borrowed from <a href="https://www.wufoo.com/html5/types/5-search.html" target="_blank" rel="noopener noreferrer">this excellent site about HTML5 forms that is worth reading</a>):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 254. drop down list of recent searches (315) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image254.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Example 2 of input type=search on safari, shows recent results"
+  alt="Example 2 of input type=search on safari, shows recent results." />
+
+<h4>Source code for the knowledge check below</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Example of input type=email&lt;/title&gt;
+    &lt;style&gt;
+      input:? {
+        background-color:pink;
+      }
+      input:?? {
+        background-color:lightGreen;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;label for=&quot;email&quot;&gt;Enter your email:&lt;/label&gt;
+    &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-4-5">5.4.5 “number”</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This input field is useful for entering numerical values (integer or
+float), but not for entering zip codes. On desktop implementations and
+on some mobile implementations, it provides a user interface with small
+vertical arrows for incrementing/decrementing the current value, while
+on mobiles it will display a numeric keyboard.</p>
+
+<p>For zip codes, a &lt;input type=“text” pattern=“……”&gt; is
+preferable. See examples given in the pattern attribute section of this
+course.</p>
+
+<p>Example: <b>&lt;input type=“number” value=“25” min=“0” step=“5” max=“500”/&gt;</b></p>
+
+<h4>Screenshot example taken with a mobile device:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 255. input type number display mobile device (332) ~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image255.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Numeric keyboard on Safari IOS"
+  alt="Numeric keyboard on Safari IOS." />
+
+<p>Examples on desktop (the width will be adjusted depending on the min and max 
+attributes):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 256. quantity between 1 and 5 (333) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image256.webp"
+  loading="lazy"
+  style="width:35%;"
+  title="Input type=number example. Quantity between 1 and 5"
+  alt="Input type=number example. Quantity between 1 and 5." />
+
+<h4>Typical usage</h4>
+
+<pre>&lt;input type=&quot;number&quot; value=&quot;25&quot; min=&quot;0&quot; step=&quot;5&quot; max=&quot;500&quot;/&gt;</pre>
+
+<p>This field accepts specific attributes max, min, step, value (default
+displayed value).</p>
+
+<p>This input type is very interesting as it provides default validation
+behaviors:</p>
+
+<p>If the value entered using a keyboard is not a valid number, or is
+not in the range defined by the min and max attributes, the field
+is <i>invalid</i> and gets the pseudo CSS class :invalid.</p>
+
+<p>If the difference between the value you enter and min is a multiple
+of step, then it gets the CSS pseudo class :valid , otherwise it will
+be <i>invalid</i>. Example: if min=1 and step=5, the field will be valid
+with value=1, 6, 11, 16 etc. if min=0, with value=0, 5, 10, 15 etc.</p>
+
+<p><b>WARNING 1</b>: <b>Using a step attribute with an integer value
+will make the arrows increment/decrement the current value with
+the step value, and [make the input field valid only when ]the
+difference between the value you enter and min is a multiple
+of step.</b></p>
+
+<p><b>WARNING 2: by default, omitting the step attribute is equivalent
+to step=“1”, [so for entering float values, it is necessary to
+use step=“any” or step equal to a floating point value such
+as step=“0.1”].</b></p>
+
+<p><b>With step=“any”, floating point values are valid, but vertical
+arrows will increment/decrement the value by one. If step=“0.1”, arrows
+will increment/decrement by 0.1, etc.</b></p>
+
+<p><a href="https://codepen.io/w3devcampus/pen/GJrQzP):" target="_blank" 
+rel="noopener noreferrer">Online example in CodePen</a> try changing the 
+attribute values, use step=“any” and try float values, etc).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 257. change attribute values (333) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image257.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Change attribute values.  Use step=any and try float values"
+  alt="Change attribute values.  Use step=any and try float values." />
+
+<p>Or, do it here in your browser (Manually enter a value that is not in
+the range, or not a multiple of 5, try the up and down arrows,
+etc.):</p>
+
+<p>Quantity (between 0 and 500, should be a multiple of 5 otherwise it’s
+invalid):</p>
+
+<h4>Source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+  ....
+  &lt;style&gt;
+    #number:invalid {
+      background-color:pink;
+    }
+    #number:valid {
+      background-color:lightGreen;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Example of &lt;code&gt;&lt;input type=number&gt;&lt;/code&gt;:&lt;p&gt;
+  &lt;label for=&quot;number&quot;&gt;Quantity (between 0 and 500, should be a multiple of 5 
+  otherwise it&#39;s invalid): &lt;/label&gt;
+    &lt;input type=&quot;number&quot; id=&quot;number&quot; value=&quot;25&quot; 
+      min=&quot;0&quot; step=&quot;5&quot; max=&quot;500&quot;/&gt;
+  &lt;p&gt;
+    Change the different values for attributes step, max, min, value. Don&#39;t forget to try step=&quot;any&quot; 
+      for float values...
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-4-6">5.4.6 “range”</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 258. using zipper as range setting (334) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image258.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="zipper with funny label input type=range"
+  alt="zipper with funny label input type=range." />
+
+<p>This input type renders as a slider. It accepts the same attributes
+as the &lt;input type=“number”&gt; : min, max, step and value.</p>
+
+<h4>Example of rendering on a desktop:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 259. play with attributes on desktop (334) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image259.webp"
+  loading="lazy"
+  style="width:30%;"
+  title="Example rendering on desktop"
+  alt="Example rendering on desktop." />
+
+<h4>And on mobile devices:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 260. on left range, default, vertical (335) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image260.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Left image, ios range input"
+  alt="Left image, ios range input." />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 261. on right range android (335) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image261.webp"
+  loading="lazy"
+  style="width:20%;"
+  title="Right image, android range input"
+  alt="Right image, android range input." />
+
+<h4>Typical use</h4>
+
+<p>The basic use is to specify at least the value, min and max attributes, and eventually the step attribute, too:</p>
+
+<pre>&lt;input id=&quot;slider6&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;10&quot; step=&quot;2&quot; value=&quot;5&quot;&gt;</pre>
+
+<p>But most of the time, you will need a visual feedback that shows the current value selected by the slider.</p>
+
+<h4><a href="https://codepen.io/w3devcampus/pen/BRMVGW" target="_blank" rel="noopener noreferrer">
+This online example on CodePen</a> shows how to add a visual feedback using a very short JavaScript 
+function and an &lt;output&gt; element. Just click and drag the small cursor of the slider (or use 
+up and down arrow keys when the field has the focus):</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 262. add visual feedback with short function (335) ~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image262.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Add visual feedback with short function"
+  alt="Add visual feedback with short function." />
+
+<h4>Source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of input type=tel&lt;/title&gt;
+  &lt;style&gt;
+    #rangeValue1 {
+      border:1px solid black;
+      padding:2px;
+    }
+  &lt;/style&gt;
+  &lt;script&gt;
+    window.onload = function() {
+      // Called when the page is loaded, for displaying initial value in the output
+      printValue(&#39;slider1&#39;,&#39;rangeValue1&#39;);
+    }
+    function printValue(sliderId, outputId) {
+      var x = document.getElementById(outputId);
+      var y = document.getElementById(sliderId);
+      x.value = y.value;
+    }
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;form &gt;
+    &lt;label for=&quot;slider1&quot;&gt;Select a value:&lt;/label&gt;
+    &lt;input id=&quot;slider1&quot; type=&quot;range&quot;
+    min=&quot;100&quot; max=&quot;500&quot; step=&quot;10&quot; value=&quot;150&quot;
+    oninput=&quot;printValue(&#39;slider1&#39;,&#39;rangeValue1&#39;)&quot;/&gt;
+    &lt;output id=&quot;rangeValue1&quot;&gt;&lt;/output&gt;
+  &lt;/form&gt;
+  &lt;br/&gt;
+  Play with attributes: value, min, max, step...
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Snapping behavior and the step attribute</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 263. example six steps in process (336) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image263.webp"
+  loading="lazy"
+  style="width:30%;"
+  title="Jumps + steps"
+  alt="Jumps + steps." />
+
+<p>When you click and drag the slider, it “jumps” to some snap points
+corresponding to the integer values of the range defined by
+the min and max attributes. The “size of the jumps” depends on the value
+of the step attribute.</p>
+<p>Try these examples in your browser and look at their behavior:</p>
+
+<pre>value=5 min=0, max=10 step=1:  
+value=12 min=10, max=50 step=4:</pre>
+
+<p>Note that in the previous example, the default value displayed is 14,
+not 12 (the value just above min plus an integer step value). 12 is not
+possible so it’s been “snapped” to 14.</p>
+
+<pre>value=5 min=0, max=10 step=&quot;0.5&quot;:</pre>
+
+<p>In the previous example, it’s necessary to add quotes for
+setting step=“0.5” (while HTML5 authorizes not using quotes for setting
+integer values to attributes).</p>
+
+<pre>value=5 min=0, max=10 step=&quot;any&quot;:</pre>
+
+<p><b>WARNING</b>: Using a step attribute with an integer value will
+make the slider jump corresponding to the step value. By default,
+omitting the step attribute is equivalent to step=“1”.</p>
+<p>For accepting float values, it is necessary to use step=“any”, or
+step equal to a floating point value, such as step=“0.5”.</p>
+<p>Adding “ticks” to the range slider using
+a &lt;datalist&gt; element</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 264. display ticks on a rule at given positions (337) ~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image264.webp"
+  loading="lazy"
+  style="width:45%;"
+  title="Display ticks on a rule at given positions"
+  alt="Display ticks on a rule at given positions." />
+
+<h4>Using the &lt;datalist&gt; element, it’s possible to display “ticks” above 
+the range slider, at given positions.</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;label for=&quot;slider2&quot;&gt;value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:&lt;/label&gt;
+&lt;input id=&quot;slider2&quot; type=&quot;range&quot;
+  list=&quot;ticks2&quot;
+  min=&quot;0&quot; max=&quot;10&quot; step=&quot;1&quot; value=&quot;5&quot;/&gt;
+&lt;datalist id=ticks2&gt;
+  &lt;option&gt;0&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+  &lt;option&gt;6&lt;/option&gt;
+  &lt;option&gt;8&lt;/option&gt;
+  &lt;option&gt;10&lt;/option&gt;
+&lt;/datalist&gt;</pre>
+
+</details>
+
+<h4>Try the sliders below:</h4>
+
+<pre>value=5 min=0, max=10 step=1, ticks at 2, 4, 6, 8 and 10:  
+value=20 min=10, max=50 step=5, ticks at 0, 10, 20, 30, 40 and 50:  
+value=5 min=0, max=10 step=&quot;0.5&quot;, ticks at 0, 0.5, 1, 2, 4, 8:  
+value=5 min=0, max=10 step=&quot;any&quot;, ticks at 0, 5 and 10:</pre>
+
+<h4>External resources</h4>
+
+<ul>
+  <li>You can use CSS for “standard” styling (size, color, background color, etc.). 
+    However, some custom attributes are available. Check 
+    <a href="https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/" 
+    target="_blank" rel="noopener noreferrer">this article from CSS tricks</a>.</li>
+  <li>A script that automatically generates ticks, depending on the min, max and step 
+    attributes (Codepen from Dudley Storey): <a href="https://codepen.io/dudleystorey/pen/Klnzy" 
+    target="_blank" rel="noopener noreferrer">Auto-Generated HTML5 range input Ticks</a></li>
+  <li>From CSS{Portal}, a CSS generator help you style the html input range tag, very easy to 
+    use: <a href="https://www.cssportal.com/style-input-range/" target="_blank" 
+    rel="noopener noreferrer">Style Input Range</a></li>
+</ul>
+
+<div style="width: 100%; text-align: center;">
+<table>
+  <colgroup>
+    <col style="width: 67%" />
+    <col style="width: 32%" />
+  </colgroup>
+  <tbody>
+    <tr class="odd">
+      <td>- <b>name</b></td>
+      <td>- <b>form</b></td>
+    </tr>
+    <tr class="even">
+      <td>- <b><i>disabled</i></b>*</td>
+      <td>- <b>readonly</b></td>
+    </tr>
+    <tr class="odd">
+      <td>- <b>type</b></td>
+      <td>- <b>autocomplete</b></td>
+    </tr>
+    <tr class="even">
+      <td>- <b>maxlength</b></td>
+      <td>- <b>autofocus</b></td>
+    </tr>
+    <tr class="odd">
+      <td>- <b>readonly</b></td>
+      <td>- <b>list</b></td>
+    </tr>
+    <tr class="even">
+      <td>- <b>size</b></td>
+      <td>- <b>pattern</b></td>
+    </tr>
+    <tr class="odd">
+      <td>- <b>value</b></td>
+      <td>- <b><i>required</i></b>*</td>
+    </tr>
+    <tr class="even">
+      <td>- <b>alt</b></td>
+      <td>- <b>placeholder</b></td>
+    </tr>
+    <tr class="odd">
+      <td>- <b>src</b></td>
+      <td>- <b>multiple</b></td>
+    </tr>
+    <tr class="even">
+      <td>- <b>height</b></td>
+      <td>- <b>list</b></td>
+    </tr>
+    <tr class="odd">
+      <td>- <b>width</b></td>
+      <td>- <b>min</b></td>
+    </tr>
+    <tr class="even">
+      <td>- <b><i>checked</i></b>*</td>
+      <td>- <b>max</b></td>
+    </tr>
+    <tr class="odd">
+      <td>- <b><i>align</i></b></td>
+      <td>- <b>step</b></td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td>- <b>formaction</b></td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>- <b>formenctype</b></td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td>- <b>formmethod</b></td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>- <b>formtarget</b></td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td>- <b>formnovalidate</b></td>
+    </tr>
+    <tr class="odd">
+      <td>*  pseudoclasses CSS target with :disabled and :checked or :required selectors</td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>** <i>align</i> is deprecated, CSS rules should be used instead</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<ul>
+  <li>MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range" target="_blank" rel="noopener noreferrer">&lt;input type=range&gt;</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-5-1">5.5.1 Form Attributes</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this chapter, we go over the form attributes that have been introduced by HTML5.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 265. html5 form attributes (338) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image265.webp"
+  loading="lazy"
+  style="width:25%;"
+  title="HTML5 form attributes"
+  alt="HTML5 form attributes." />
+
+<p>We have already seen the use of pseudo CSS classes used together with
+the input field and form validation
+(pattern attribute, input:invalid CSS rule). We also briefly looked at
+the use of the placeholder attributes for displaying a helper message in
+the input field.</p>
+
+<p>In this section, we cover the rest of the form attributes and provide
+further examples of using the previously discussed attributes.</p>
+
+<p>In another part of the course, about form validation and visual
+feedback using CSS, we examine some of the most useful attributes in
+even greater detail.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-5-2">5.5.2 form</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This attribute is useful for putting input fields outside the form
+itself. The form attribute of an external input field must share the
+same value as the id of the form the field belongs to. This is useful
+when using &lt;fieldset&gt; elements for making the page/form layout
+easier.</p>
+
+<h4>Typical use</h4>
+
+<p><a href="http://codepen.io/w3devcampus/pen/jmdpyv)" target="_blank" rel="noopener noreferrer">
+Try this interactive example in CodePen</a>, or try it directly in your browser:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 266. html5 form attributes (339) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image266.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="HTML5 sample form attributes"
+  alt="HTML5 sample form attributes." />
+<h6 style="text-align:center;"><a href="http://codepen.io/w3devcampus/pen/jmdpyv)" 
+target="_blank" rel="noopener noreferrer">CodePen example; HTML5 form attributes</a>.</h6>
+
+<h4>Source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Example of input type=tel&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;label for=&quot;yourName&quot;&gt;Enter your name:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;yourName&quot; name=&quot;yourName&quot; form=&quot;form1&quot;/&gt;
+    &lt;p&gt;
+    &lt;form id=&quot;form1&quot; action=&quot;sumit.php&quot; method=&quot;post&quot;&gt;
+      &lt;fieldset&gt;
+        &lt;legend&gt;Choose option&lt;/legend&gt;
+        &lt;label for=&quot;free&quot;&gt;Free registering&lt;/label&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;free&quot;/&gt;
+        &lt;label for=&quot;premium&quot;&gt;Premium&lt;/label&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;premium&quot;/&gt;
+        &lt;button type=&quot;submit&quot;&gt;Send form&lt;/button&gt;
+      &lt;/fieldset&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<p><i>Lines 12</i> and <i>22</i> shows the form attribute. Make sure that its 
+value matches the id of the form!</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="5-5-3">5.5.3 autocomplete</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This attribute applies either to the &lt;form&gt; element or on individual 
+&lt;input&gt; elements. It specifies when input fields must autocomplete the 
+user’s input based on the user’s typing history.</p>
+
+<p>Possible values of this attribute: on/off.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 267. bright red on off picture (340) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image267.webp"
+  loading="lazy"
+  style="width:16%;"
+  title="On/off funny picture"
+  alt="On/off funny picture." />
+
+<p>If applied to the &lt;form&gt; element, all input fields attached to the form 
+(inside or linked to it using the form attribute), will have auto-completion set 
+by default to the value of the autocomplete attribute of the form.</p>
+
+<p>This default behavior can be overridden by setting it individually to any 
+input field inside. In other words: it is possible to have autocomplete “on” 
+for the form, and “off” for specific input fields, or vice-versa.</p>
+
+<p>Sometimes this autocomplete behavior is disabled by default in some Web 
+browsers, and will need to be adjusted in the preferences/settings.</p>
+
+<p>This attribute targets most input types (those that allow typing in them).</p>
+
+<h4>Typical use</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 268. example of use of autocomplete attribute (340) ~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image268.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Example of use of autocomplete attribute, #1 of 2"
+  alt="Example of use of autocomplete attribute, #1 of 2." />
+
+<p>Try it in your browser here:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 268b. example of use of autocomplete attribute (323) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image268b.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Example of use of autocomplete attribute, #2 of 2"
+  alt="Example of use of autocomplete attribute, #2 of 2." />
+
+<h4>Source code extract:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;form submit=&quot;test.php&quot; method=&quot;post&quot; autocomplete=&quot;on&quot;&gt;
+  ...
+  &lt;label for=&quot;address&quot;&gt;Enter your address (autocomplete off, overrides the
+    form&#39;s autocomplete=on attribute):&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;address&quot; autocomplete=&quot;off&quot;&gt;
+  &lt;p&gt;
+  &lt;label for=&quot;address1&quot;&gt;Enter your address (autocomplete on by inheritance of
+    the form&#39;s autocomplete=on attribute):&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;address1&quot;&gt;
+  &lt;p&gt;
+  &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+  ...
+&lt;/form&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-5-4">5.5.4 autofocus</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This attribute is useful for transferring the focus to a field other
+than the first field in a page/form (by default the first input field
+has the focus).</p>
+
+<p><i>Attention</i>: there must not be more than one element in the
+document with the autofocus attribute specified!</p>
+
+<p>This example below illustrates the use of the autofocus attribute:
+the focus is put on the second input field of the page. It also shows
+the use of  required, placeholder and pattern attributes.</p>
+
+<p>The required attribute makes the input field invalid if kept empty. </p>
+
+<h4>Here is the result in your browser:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 269. example use of autofocus attribute (323) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image269.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Example use of autofocus attribute"
+  alt="Example use of autofocus attribute." />
+
+<h4>Extract from source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;form&gt;
+  ...
+  &lt;input type=&quot;text&quot; id=&quot;test&quot;/&gt;&lt;p&gt;
+  ...
+  &lt;input id=&quot;name&quot; name=&quot;inputName&quot;
+    placeholder=&quot;6 to 9 chars please...&quot;
+    pattern=&quot;w{6,9}&quot;
+    required
+    autofocus
+    type=&quot;text&quot;/&gt;
+  ...
+&lt;/form&gt;</pre>
+
+</details>
+
+<h4>Note about Boolean attributes syntax</h4>
+
+<p>Important: : For “Boolean” attributes, such as autofocus, required, optional, etc., you are able to either write autofocus=“autofocus”, or just use the attribute name “autofocus” without setting a value.</p>
+
+<p>Read <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes" target="_blank" rel="noopener noreferrer">these explanations</a> for a complete description of the syntax of Boolean attributes.</p>
+
+<h4>Source code for the knowledge check 5.5.4</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example for a knowledge check&lt;/title&gt;
+  &lt;/head&gt;
+&lt;body&gt;
+  &lt;form&gt;
+    &lt;label for=&quot;studentID&quot;&gt;Student ID (disabled field, cannot type in it): &lt;/label&gt;
+    &lt;input type=&quot;text&quot; value=&quot;S134356&quot; id=&quot;studentID&quot; disabled/&gt;&lt;p&gt;
+    &lt;label for=&quot;name&quot;&gt;First name: &lt;/label&gt;
+      &lt;input type=&quot;text&quot; id=&quot;firstName&quot;
+      placeholder=&quot;John&quot;
+      autofocus
+    /&gt;
+    &lt;label for=&quot;lastName&quot;&gt;Last name: &lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;lastName&quot;
+      placeholder=&quot;Smith&quot;
+      autofocus
+    /&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-5-5">5.5.5 list</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This attribute works together with the new &lt;datalist&gt; element we already 
+studied when we saw the color and date input fields.</p>
+
+<p>This attribute’s value must match the id of a &lt;datalist&gt; element. It is 
+useful for providing local auto-completion to some input fields, or for restricting 
+the possible values on some others like &lt;input type=date&gt; or &lt;input type=color&gt;.</p>
+
+<p>Here is a small code extract from a more complete example shown in the section 
+about the new &lt;datalist&gt; element (see next unit).</p>
+
+<p>Please try it in your  browser (Type “F”, “E”, “O”, C” etc., or just click 
+inside the field and use the drop down menu). Note that you can also enter any 
+value; if it does not start with one of these letters it will be accepted but 
+will not trigger auto-completion.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 270. preferred browser and submit query (325) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image270.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Preferred browser prompt and submit query"
+  alt="Preferred browser prompt and submit query." />
+
+<h4>Source code extract:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;form&gt;
+  ...
+  &lt;input list=&quot;browsers&quot; id=&quot;mybrowser&quot; /&gt;
+  &lt;datalist id=&quot;browsers&quot;&gt;
+    &lt;option value=&quot;Internet Explorer&quot;&gt;
+    &lt;option value=&quot;Firefox&quot;&gt;
+    &lt;option value=&quot;Chrome&quot;&gt;
+    &lt;option value=&quot;Opera&quot;&gt;
+    &lt;option value=&quot;Safari&quot;&gt;
+  &lt;/datalist&gt;
+  ...
+&lt;/form&gt;</pre>
+
+</details>
+
+<p>At <i>lines 3</i> and <i>5</i>, the value of the list attribute of
+the input field must match the one of the id of
+the &lt;datalist&gt; element.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-5-6">5.5.6 pattern</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The pattern attribute enables the validation of the user’s input on
+the fly (also at submission time), based on <b>regular expressions</b>.
+It applies to the text, search, url, tel, email, and password input
+types.</p>
+
+<p>The pattern attribute follows the syntax of <a
+href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" rel="noopener noreferrer">JavaScript
+regular expressions</a>.</p>
+
+<p>A <b>must read</b>: a good catalog of ready-to-go patterns is
+available at html5pattern.com, an excellent Web site that proposes
+plenty of JavaScript patterns for the pattern attribute of HTML5 forms.
+The left hand menu proposes categorized patterns for <a
+href="http://html5pattern.com/Postal_Codes" target="_blank" rel="noopener noreferrer">postal codes</a>, <a
+href="http://html5pattern.com/Dates" target="_blank" rel="noopener noreferrer">dates</a>, <a
+href="http://html5pattern.com/Phones" target="_blank" rel="noopener noreferrer">phones</a>, etc.</p>
+
+<p>You can also try <a href="https://regex101.com/#javascript" target="_blank" rel="noopener noreferrer">this
+online JavaScript RegExps tester</a>, and follow <a
+href="https://regexone.com/" target="_blank" rel="noopener noreferrer">this tutorial about “using JavaScript RegExps”</a> that has step by step exercises and explanations.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 271. html5patterns.com: menu left, categories & patterns right (319) ~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image271.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Menu on the left, categories and patterns on the right. html5patterns.com"
+  alt="Menu on the left, categories and patterns on the right. html5patterns.com." />
+
+<h4>Typical use:</h4>
+
+<p>Just add a pattern attribute with a value that is the JavaScript regular
+expression that must match the entire string entered in the field. Note
+that the empty string is valid by default (except if
+the required attribute is used - this makes empty fields invalid).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 271c. typical use of form validation (319) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image271c.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Typical use of form validation"
+  alt="Typical use of form validation." />
+
+<p>It’s best practice to systematically add a title attribute with a
+value that indicates what constitutes a valid entry. More on this in the
+section of this course dedicated to form validation.</p>
+
+<pre>&lt;input type=&quot;text&quot; name=&quot;country_code&quot;
+  pattern=&quot;[A-Za-z]{3}&quot;
+  title=&quot;3 letter country code&quot;
+/&gt;</pre>
+
+<h3>Examples</h3>
+
+<h4>Example #1</h4>
+
+<p>Try this <a href="https://jsbin.com/xeyuqux/1/edit?html,output" 
+target="_blank" rel="noopener noreferrer">
+online example at JSBin</a> or directly in your browser below:</p>
+
+<!--
+Please enter a 3 letter country code (green = valid, pink = invalid): ![](./images/image266.wmf)
+-->
+
+<p>With the previous example, until the value of the input field is
+equal to 3 alphabetic characters, the field is invalid.</p>
+
+<p>As seen in the previous examples, we used some CSS pseudo classes for
+automatically setting the background-color of the input field as we
+type.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 271b. type multiple email addresses (329) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image271b.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Green valid, pink invalid.  Type email, name myemail"
+  alt="Green valid, pink invalid.  Type email, name myemail." />
+
+<h4>Complete source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of the pattern attribute&lt;/title&gt;
+  &lt;style&gt;
+    input:invalid {
+      background-color: lightPink;
+    }
+    input:valid {
+      background-color: lightGreen;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;label for=&quot;code&quot;&gt;Please enter a 3 letter country code:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;country_code&quot;
+    pattern=&quot;[A-Za-z]{3}&quot;
+    title=&quot;3 letter country code&quot;
+    id=&quot;code&quot;/&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Example #2: mixing several other attributes with the pattern attribute</h4>
+
+<p>Try this <a href="https://jsbin.com/bozudeg/1/edit?html,output" 
+target="_blank" rel="noopener noreferrer">example online</a> or in your browser below:</p>
+
+<p>Attributes used: placeholder (for displaying a ghost example value), pattern, 
+required (empty field = invalid)…</p>
+
+<h4>Complete source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of use of new HTML5 input field attributes&lt;/title&gt;
+  &lt;style&gt;
+    input:focus:invalid { background-color: lightPink;}
+    input:valid { background-color:lightGreen; }
+    input:required {border: 2px solid red; }
+    input:optional {border: 2px solid green; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Attributes used: placeholder (for displaying a ghost example value), pattern, required (empty = invalid)...
+  &lt;p&gt;
+  &lt;label for=&quot;inputID&quot;&gt;Enter a pseudo (6-12 characters): &lt;/label&gt;
+  &lt;input id=&quot;inputID&quot; name=&quot;Name&quot;
+    placeholder=&quot;Name&quot;
+    pattern=&quot;w{6,12}&quot;
+    required
+    title=&quot;6-12 characters allowed please&quot;
+    type=&quot;text&quot; /&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Example #3: an &lt;input type=“url”&gt; element with a pattern attribute allowing only certain 
+protocols</h4>
+
+<p><a href="https://jsbin.com/nulahey/1/edit?html,output)or" 
+target="_blank" rel="noopener noreferrer">Online example at JSBin</a> try it in your browser:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 271b. input type enter url of your repository (328) ~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/nulahey/1/edit?html,output)or" 
+target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image271b.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Green valid, pink invalid.  Type email, name myemail"
+  alt="Green valid, pink invalid.  Type email, name myemail." /></a>
+
+<h4>Source code extract:</h4>
+
+<pre>&lt;input
+  id=&quot;website&quot;
+  name=&quot;url&quot;
+  type=&quot;url&quot;
+  placeholder=&quot;http://www.domain.com&quot;
+  title=&quot;http, https or ftp allowed&quot;
+  pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]&quot;
+/&gt;</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-5-7">5.5.7 min, max and step</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>These attributes are useful for several input types such
+as number, range, date and  time (and other variants).</p>
+
+<p>The min and max attributes are used to set ranges to input fields
+that accept numerical values or a date/time.</p>
+
+<p>Their detailed use with these input fields have already been
+explained in section 5.4 of this course dedicated to these particular
+input field types.</p>
+
+<h4>Typical use:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;input id=&quot;mydate&quot; name=&quot;mydate&quot;
+  type=&quot;date&quot;
+  min=&quot;2012-01-01&quot;
+  max=&quot;2013-01-01&quot;
+  value=&quot;2012-01-01&quot;
+/&gt;
+&lt;input name=&quot;time&quot; id=&quot;time&quot; type=&quot;time&quot;
+  min=&quot;09:00&quot;
+  max=&quot;17:00&quot;
+  value=&quot;12:00&quot;
+/&gt;
+&lt;input id=&quot;range&quot; name=&quot;range&quot; type=&quot;range&quot; 
+      min=&quot;0&quot; 
+    max=&quot;100&quot; 
+    step=&quot;5&quot;/&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-5-8">5.5.8 multiple</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The multiple attribute is used with email and file input types. It’s
+a Boolean attribute, so here are the different syntax possibilities:</p>
+
+<ul>
+  <li>&lt;input type=“email|file” multiple&gt;</li>
+  <li>&lt;input type=“email|file” multiple=“multiple”&gt;</li>
+  <li>&lt;input type=“email|file” multiple=““&gt;</li>
+</ul>
+
+<p>With &lt;input type=“email”&gt;</p>
+
+<p>With the &lt;input type=“email”&gt;, this attribute enables the
+user to enter <i>a set of addresses, separated by a comma</i> instead of
+a single address. Entering several addresses will keep the input
+field <i>valid</i>.</p>
+
+<p><a href="https://jsbin.com/mexirif/1/edit?html,output" target="_blank" rel="noopener noreferrer">Online example
+at JSBin</a></p>
+
+<p>Or try it below in your browser: type in a list of email addresses
+separated by a comma, then look at the input field background color
+(pink = invalid, green = valid), and then submit:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 271b. input type email - single or multiple (329) ~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image271b.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Enter one or more email addresses"
+  alt="Enter one or more email addresses." />
+
+<h4>Complete source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Jsbin&lt;/title&gt;
+  &lt;style&gt;
+    input:invalid {
+    background-color: lightPink;
+  }
+    input:valid {
+    background-color: lightGreen;
+  }
+    fieldset {
+    border:1px solid;
+    padding:20px;
+  }
+  &lt;/style&gt;
+&lt;/head&gt;
+ 
+&lt;body&gt;
+  &lt;p&gt;This form uses: &lt;code&gt;&lt;input type=&quot;email&quot;
+    name=&quot;myemail&quot; &lt;b&gt;multiple&lt;/b&gt;&gt;&lt;/code&gt;&lt;/p&gt;
+ 
+    &lt;form&gt;
+    &lt;fieldset&gt;
+      &lt;legend&gt;With the multiple attribute &lt;/legend&gt;
+      &lt;label&gt;Enter several email addresses: &lt;/label&gt;
+      &lt;input type=&quot;email&quot; name=&quot;myemail&quot; title=&quot;you can enter 
+        multiple emails addresses, separated by a comma&quot; multiple/&gt;
+      &lt;button&gt;Submit&lt;/button&gt;
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+  &lt;p&gt;
+  &lt;p&gt;This form does not use the multiple attribute:&lt;/p&gt;
+ 
+    &lt;form&gt;
+      &lt;fieldset&gt;
+          &lt;legend&gt;Without the multiple attribute &lt;/legend&gt;
+        &lt;label&gt;Enter several email addresses: &lt;/label&gt;
+        &lt;input type=&quot;email&quot; name=&quot;myemail&quot; title=&quot;only one address please!&quot;/&gt;
+        &lt;button&gt;Submit&lt;/button&gt;
+      &lt;/fieldset&gt;
+    &lt;/form&gt;
+  &lt;p&gt;
+  Type in a list of email addresses separated by a comma. Look at the input field 
+    background color (pink = invalid, green = valid), try to submit. &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<p><b>Best practice:  add a title attribute indicating what you expect
+as a valid entry</b> (<i>lines 25</i> and <i>38</i>). If you enter bad
+values and submit, you will see in the error message the string value of
+the title attribute.</p>
+
+<p>With &lt;input type=“file”&gt;</p>
+
+<p>With this type of input field, multiple files can be chosen (whereas
+before HTML5, only a single file could be chosen).</p>
+
+<p>Typical use: &lt;input type=file multiple&gt;</p>
+
+<p>Try these in your browser, look at the small variations (text in the
+buttons, messages):</p>
+<p>Example with &lt;input type=file multiple&gt;</p>
+
+<p>                    Select one or more files: </p>
+
+<p>Example without the multiple attribute:</p>
+
+<p>                    Select only one file: </p>
+
+<p>Use the standard key modifiers (shift, control, command) for
+selecting multiple files when the file chooser dialog popup.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-5-9">5.5.9 a warning</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In the following pages, we present a set of rarely used attributes
+introduced by HTML5.</p>
+
+<p>You might just glance at them and/or try the examples. The next pages
+cover their usage and you are welcome to use them for future reference
+(for those of you who like to cover the topics completely).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-5-10">5.5.10 formaction and formmethod</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>These attributes are targeted to the &lt;input type=“submit”&gt; input fields. They are rarely used.</p>
+
+<pre>&lt;input type=&quot;submit&quot;
+formaction=&quot;preview.php&quot; formmethod=&quot;get&quot; value=&quot;Preview&quot;&gt;</pre>
+
+<p>When you use an &lt;input type=“submit”&gt; field with
+the formaction attribute, the action attribute value of the form is
+overridden. The form will be submitted to the URL / value of
+the formaction attribute of the  &lt;input type=“submit”&gt; field.</p>
+
+<p>The formmethod attribute does the same with the
+POST/GET method attribute of the form. If an &lt;input
+type=“submit”&gt; has a formmethod attribute, it overrides the value of
+the method attribute of the form.</p>
+
+<h4>Typical use</h4>
+
+<pre>&lt;form action=&quot;post.php&quot; method=&quot;post&quot;&gt;
+  &lt;input type=&quot;submit&quot;
+    formaction=&quot;preview.php&quot; formmethod=&quot;get&quot;
+    value=&quot;Preview&quot;&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Send&quot;&gt;
+&lt;/form&gt;</pre>
+
+<p><i>Line 3</i> overrides the values set in <i>line 1</i>.</p>
+
+<h4>Examples</h4>
+
+<p>Here are two online examples at JSBin:</p>
+
+<ul>
+  <li><a href="https://jsbin.com/tequkak/2/edit?html,output" target="_blank" rel="noopener noreferrer">Example 1</a></li>
+  <li><a href="https://jsbin.com/tequkak/2/edit?html,output" target="_blank" rel="noopener noreferrer">Example 2</a></li>
+</ul>
+
+<p>The first shows a form with two submit buttons: </p>
+
+<ul>
+  <li>The first button submits to the default URL specified by the action attribute of the form,</li>
+  <li>The second button submits to another action specified by its formaction attribute.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 272. formaction attribute (325) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image272.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Example of formaction attribute"
+  alt="Example of formaction attribute." />
+
+<p>The second example shows a form with two submit buttons:</p>
+
+<ul>
+  <li>the first button submits using a GET,</li>
+  <li>the second button using a POST:</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 273. formmethod attribute (325) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image273.webp"
+  loading="lazy"
+  style="width:40%;"
+  title="Example of formmethod attribute"
+  alt="Example of formmethod attribute." />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-5-11">5.5.11 formnovalidate</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The formnovalidate attribute is targeted to the &lt;input
+type=“submit”&gt; input fields. This attribute is rarely used.</p>
+
+<p>This atrribute allows the submission of a form even if it
+contains  <i>invalid</i> fields. For example:  a form that has
+an &lt;input type=“email”&gt; field or a field required and which are
+not filled.</p>
+
+<p>In general, such forms have two submit buttons, one with
+the formnovalidate attribute set to a non null value and one
+without.</p>
+
+<p>Typical use (<a
+href="https://jsbin.com/doceje/1/edit?html,output" target="_blank" rel="noopener noreferrer">online example at
+JSBin</a>):</p>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;form action=&quot;form.php&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Example of formnovalidate attribute&lt;/legend&gt;
+    &lt;label for=&quot;email&quot;&gt;E-mail:&lt;/label&gt;
+    &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot;/&gt;&lt;br&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;&lt;br&gt;
+    &lt;input type=&quot;submit&quot;
+      formnovalidate
+      value=&quot;Submit without validation&quot; /&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 275a. formnovalidate attribute (326) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image275a.webp"
+  loading="lazy"
+  title="Example of formnovalidate attribute"
+  alt="Example of formnovalidate attribute."
+  style="width:40%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-5-12">5.5.12 formtarget</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The formtarget attribute is targeted to the &lt;input
+type=“submit”&gt; input fields. This attribute is rarely used.</p>
+
+<p>This attribute’s value indicates where the response from the form
+submission should be displayed.</p>
+
+<h4>Typical use</h4>
+
+<pre>&lt;input type=&quot;submit&quot;
+  formtarget=&quot;_blank&quot;
+  value=&quot;Submit but show results in a new window/tab&quot;&gt;</pre>
+
+<h4>Possible values for the formtarget attributes are:</h4>
+<ul>
+  <li>_blank: the response is displayed in a new window or tab,</li>
+  <li>_self: the response is displayed in the same frame (this is default),</li>
+  <li>_parent: the response is displayed in the parent frame,</li>
+  <li>_top: the response is displayed in the full body of the window,</li>
+  <li>framename: the response is displayed in a named iframe.</li>
+</ul>
+
+<h4>Complete example:</h4>
+
+<p><a href="https://jsbin.com/godice/2/edit?html,output" target="_blank" rel="noopener noreferrer">Online example at JSBin </a>or try it in your browser below:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 276a. formtarget attribute (326) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/godice/2/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image276a.webp"
+  loading="lazy"
+  title="Example of formtarget attribute"
+  alt="Example of formtarget attribute."
+  style="width:40%;" /></a>
+
+<h4>Source code:</h4>
+
+<pre>&lt;form action=&quot;defaultAction.php&quot;&gt;
+  &lt;label for=&quot;givenName&quot;&gt;Given name:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;givenName&quot; id=&quot;givenName&quot;&gt;&lt;br&gt;
+  &lt;label for=&quot;familyName&quot;&gt;Family name:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;familyName&quot; id=&quot;familyName&quot;&gt;&lt;br&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit as usual&quot;&gt;
+  &lt;input type=&quot;submit&quot;
+    formtarget=&quot;_blank&quot;
+    value=&quot;Submit but show results in a new window/tab&quot;&gt;
+&lt;/form&gt;</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-5-13">5.5.13 formenctype</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>A word about the enctype attribute of the &lt;form&gt; element</p>
+
+<p>The enctype attribute existed before HTML5. It is often used together
+with forms that contain file input fields. For sending files to a remote
+server, we use <b>“<i>multipart</i>” forms</b>. This special encoding of
+forms needs to be specified using the enctype attribute, as shown in the
+example below:</p>
+
+<p><a href="https://jsbin.com/magexat/3/edit?html,output" target="_blank" rel="noopener noreferrer">Online example at JSBin</a>:</p>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Jsbin&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form action=&quot;default.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
+      Given name: &lt;input type=&quot;text&quot; name=&quot;gname&quot;&gt;&lt;br&gt;
+      Family name: &lt;input type=&quot;text&quot; name=&quot;fname&quot;&gt;&lt;br&gt;
+      &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<p>Note that when you send form content using Ajax, this attribute is
+not needed, as you will specify the type of data sent to the remote
+server in JavaScript, using the <a
+href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects" target="_blank" rel="noopener noreferrer">FormData
+object</a>.</p>
+
+<h4>As an attribute of the &lt;input type=“submit” enctype=…&gt; element</h4>
+
+<p>Since HTML5, this attribute can also be used in &lt;input
+type=“submit”&gt; input fields.</p>
+
+<p>If an &lt;input type=“submit”&gt; field has this attribute,
+then, <b>when submitted using method=POST</b>, the browser will send the
+form content encoded with the method specified by
+the formenctype attribute. And this overrides the value of
+the enctype attribute specified in the &lt;form enctype=…&gt; element
+(or its default value, if not present).</p>
+
+<h4>Typical use:</h4>
+
+<pre>&lt;form action=&quot;defaultAction.php&quot;&gt;
+  ...
+  &lt;input type=&quot;submit&quot; formenctype=&quot;multipart/form-data&quot;
+           value=&quot;Submit as Multipart/form-data&quot;&gt;
+&lt;/form&gt;</pre>
+
+<h4>The possible values for this field are:</h4>
+
+<ul>
+  <li>application/x-www-form-urlencoded: all characters are escaped/encoded before submission, for example, spaces become “+”, accentuated characters are transformed into hexadecimal, etc.</li>
+  <li>multipart/form-data: encoding is not done. Usually we use this value for submitting binary data such as images, files, etc.</li>
+  <li>text/plain: some encoding is done on standard characters like space (that becomes a “+”), nothing is done for special characters.</li>
+</ul>
+
+<h4>Example</h4>
+
+<p><a href="https://jsbin.com/lokukam/4/edit?html,output" target="_blank" rel="noopener noreferrer">Try this
+online example at JSBin</a></p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 276. formenctype attribute (335) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/lokukam/4/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image276.webp"
+  loading="lazy"
+  title="Example of use of the formenctype attribute"
+  alt="Example of use of the formenctype attribute."
+  style="width:40%;" /></a>
+
+<p>Source code:</p>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Jsbin&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form action=&quot;defaultAction.php&quot; method=&quot;post&quot;
+      enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+      &lt;label for=&quot;givenName&quot;&gt;Given name:&lt;/label&gt;
+      &lt;input type=&quot;text&quot; name=&quot;givenName&quot; id=&quot;givenName&quot;&gt;&lt;br&gt;
+      &lt;label for=&quot;familyName&quot;&gt;Family name:&lt;/label&gt;
+      &lt;input type=&quot;text&quot; name=&quot;familyName&quot; id=&quot;familyName&quot;&gt;&lt;br&gt;
+      &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+      &lt;input type=&quot;submit&quot;
+        formenctype=&quot;multipart/form-data&quot;
+        value=&quot;Submit as Multipart/form-data&quot;&gt;
+    &lt;/form&gt;
+    &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The formenctype attribute is not supported by all browsers.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Explanations and how to see the difference between the two kinds of formenctype values</h4>
+
+<p>If you run <a href="https://jsbin.com/lokukam/4/edit?html,output" target="_blank" rel="noopener noreferrer">this example in the
+JSBin</a> standalone mode (click the black arrow on the top right of the
+output tab, in JSBin), you should see this:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 277. formenctype example in jsbin (328) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/lokukam/4/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image277.webp"
+  loading="lazy"
+  title="JS Bin in standalone mode"
+  alt="JS Bin in standalone mode."
+  style="width:40%;" /></a>
+
+<p>Then, open the devtools and go to the “Network” tab, click on the
+POST request. Once done, click on the right on the “Header” tab to see
+the HTTP headers, and scroll down, you should see the form-data entries
+in the header, like in this screenshot:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 278. something went wrong (329) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image278.webp"
+  loading="lazy"
+  title="blank blank"
+  alt="blank blank."
+  style="width:40%;" />
+
+<p>And if you start again and click on the left submit button, the one
+without the formenctype attribute, you should see that the form content
+has been submitted “normally” (default value is “urlencoded”, spaces are
+replaced by “+”, etc.). Here is a screenshot of what you should see:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-6-1">5.6.1 HTML5 Forms Elements</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Let’s look at the HTML5 elements related to forms
+(specifically: &lt;datalist&gt;, &lt;output&gt;, &lt;meter&gt; 
+and &lt;progress&gt; elements).</p>
+
+<div style="width: 100%; text-align: center;">
+<table>
+  <thead>
+    <tr class="header">
+      <th>HTML4</th>
+      <th>HTML5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>- &lt;form&gt;</td>
+      <td>- &lt;datalist&gt;</td>
+    </tr>
+    <tr class="even">
+      <td>- &lt;fieldset&gt;</td>
+      <td>- &lt;output&gt;</td>
+    </tr>
+    <tr class="odd">
+      <td>- &lt;legend&gt;</td>
+      <td>- &lt;meter&gt;</td>
+    </tr>
+    <tr class="even">
+      <td>- &lt;textarea&gt;</td>
+      <td>- &lt;progress&gt;</td>
+    </tr>
+    <tr class="odd">
+      <td>- &lt;label&gt;</td>
+      <td>- &lt;keygen&gt; *</td>
+    </tr>
+    <tr class="even">
+      <td>- &lt;select&gt;</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>- &lt;option&gt;</td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>- &lt;optgroup&gt;</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>- &lt;input&gt;</td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>- &lt;button&gt;</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>* Not really useful for most developers.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-6-2">5.6.2 &lt;output&gt;</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The output element represents the result of a computation or user
+action. You can see it as a “specialized &lt;div&gt; or &lt;span&gt;”
+for displaying interactive results.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 279. output field (330) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image279.webp"
+  loading="lazy"
+  title="Example of output element use"
+  alt="Example of output element use."
+  style="width:35%;" />
+
+<h4>Typical use / interactive examples</h4>
+
+<p><a href="https://jsbin.com/yuvani/1/edit?html,output" 
+target="_blank" rel="noopener noreferrer">Do not hesitate
+to play with the source code of these examples online at JSBin</a>.</p>
+
+<h4>Example #1</h4>
+
+<pre>&lt;form oninput=&quot;o.value=a.valueb.value&quot;&gt;
+  &lt;input type=&quot;number&quot; name=&quot;a&quot; id=&quot;a&quot; value=&quot;2&quot;&gt; x
+  &lt;input type=&quot;number&quot; name=&quot;b&quot; id=&quot;b&quot; value=&quot;3&quot;&gt; =
+  &lt;output for=&quot;a b&quot; name=&quot;o&quot;&gt;6&lt;/output&gt;
+&lt;/form&gt;</pre>
+
+<p>The oninput event handler directly uses the &lt;output&gt; element
+using the value of its name attribute.</p>
+
+<p>Result (do change the input field values):</p>
+
+<h4>Explanations about the attributes specific to the &lt;output&gt; element:</h4>
+
+<ul>
+  <li>for: a space-separated list containing the elements ids whose values went into the calculation.</li>
+  <li>name: the name of the element.</li>
+  <li>form:  associates the &lt;output&gt; element with its form owner. The value must be the id of a form in the same document. This allows you to place an &lt;output&gt; element outside of the &lt;form&gt; with which it is associated.</li>
+</ul>
+
+<h4>Example #2</h4>
+
+<p>Top of Form</p>
+
+<p>50 + =</p>
+
+<p>Bottom of Form</p>
+
+<h4>Source code:</h4>
+
+<pre>&lt;form &gt;
+  &lt;input name=&quot;a&quot; value=&quot;50&quot; type=&quot;range&quot;
+    oninput=&quot;x.value = a.valueAsNumber + b.valueAsNumber;
+    y.value = this.value;&quot;/&gt;
+  &lt;output id=&quot;y&quot;&gt;50&lt;/output&gt; +
+  &lt;input name=&quot;b&quot; value=&quot;50&quot; type=&quot;number&quot; /&gt; =
+  &lt;output name=&quot;x&quot; id=&quot;x&quot; for=&quot;a b&quot;&gt;&lt;/output&gt;
+&lt;/form&gt;</pre>
+
+<p>HTML5 has introduced new input field
+properties: valueAsNumber and valueAsDate.The last example is similar to
+the previous one except that we use an addition instead of a
+multiplication.</p>
+
+<p>As input field values are considered as strings by JavaScript,
+using x.value = a.value + b.value would result in a string concatenation
+instead of an addition. That’s why we use
+the valueAsNumber property.</p>
+
+<p>This is why we used the valueAsNumber property also introduced by
+HTML5 for some input fields such as &lt;input
+type=“range”&gt; and &lt;input type=“number”&gt;, we also encountered
+the valueAsDate properties when we studied &lt;input
+type=“date”&gt;.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-6-3">5.6.3 &lt;meter&gt;</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The &lt;meter&gt; element displays colored bars to represent numeric
+values.</p>
+
+<p>It can be useful to display a colored gauge to show disk usage, to
+highlight the relevance of a query result, or the fraction of a voting
+population that favours a particular candidate, etc. This element is
+often used with the &lt;input type=“range”&gt; field as an instant
+feedback indicator.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 280. blood pressure (331) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image280.webp"
+  loading="lazy"
+  title="Blood pressure meter gauge"
+  alt="Blood pressure meter gauge."
+  style="width:40%;" />
+
+<p>The &lt;meter&gt; element should not be used to indicate progress.
+You should instead use a &lt;progress&gt; element.</p>
+
+<h4>Typical use</h4>
+
+<pre>Storage space used: &lt;meter value=75 min=0 low=20 high=80 max=100 optimum=50&gt;&lt;/meter&gt;</pre>
+
+<p>The &lt;meter&gt; element uses the easy-to-understand value, min, max, 
+low, high and optimum attributes.<br>
+The optimum attribute, along with min, low, high and max attributes will
+affect the color of the bar, and of course the constraint min &lt; low &lt; 
+high &lt; max should be respected.</p>
+
+<p>More explanations about the colors and the meaning of
+the optimum attribute will come further in this lesson.</p>
+
+<h4>Interactive example</h4>
+
+<p><a href="https://jsbin.com/jumahox/1/edit?html,output" target="_blank" rel="noopener noreferrer">Try the next
+example online at JSBin</a> or just play with it in your browser by
+dragging the slider below:</p>
+
+<pre>&lt;meter value=75 min=0 low=20 high=80 max=100 optimum=19&gt;&lt;/meter&gt;</pre>
+
+<h4>Grades:</h4>
+
+<h4>Source code of the example:</h4>
+
+<pre>&lt;p&gt;Grades: &lt;meter id=&quot;meter2&quot; value=&quot;75&quot; min=&quot;0&quot; low=&quot;20&quot; high=&quot;80&quot; max=&quot;100&quot;&gt;&lt;/meter&gt;
+&lt;input min=&quot;0&quot; max=&quot;100&quot; value=&quot;75&quot; id=&quot;meter2range&quot;
+  oninput=&quot;effect(&#39;meter2&#39;, &#39;meter2range&#39;)&quot; type=&quot;range&quot;&gt;
+&lt;output id=&quot;meter2val&quot; for=&quot;meter2range&quot;&gt;&lt;/output&gt;&lt;/p&gt;
+&lt;script&gt;
+  function effect(meter, meterrange) {
+    var currVal = document.getElementById(meterrange).value;
+    document.getElementById(meter).value = currVal;
+    document.getElementById(meter+ &quot;val&quot;).innerHTML = currVal;
+  }
+&lt;/script&gt;</pre>
+
+<h4>Explanations:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 281. slider example javascript code (332) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image281.webp"
+  loading="lazy"
+  title="The link between the slider (an &lt;input type=range&gt;) and the meter 
+    element is done using an input event handler"
+  alt="The link between the slider (an &lt;input type=range&gt;) and the meter element is done using an input event handler."
+  style="width:40%;" />
+
+<!-- {width="6.5in" height="2.1131944444444444in"} -->
+
+<p>The link between the slider (an &lt;input type=range&gt;) and the
+meter element is done using an input event handler (oninput=“effect(…)”)
+at <i>line 4</i>.</p>
+
+<p>The effect JavaScript function will change the current value of the
+&lt;meter&gt; element (<i>line 9</i>) and update the displayed html
+content of the &lt;output&gt; element (<i>line 10</i>).</p>
+
+<p>The color of the gauge changes depending on the attribute’s
+values</p>
+
+<p>The optimum attribute indicates the optimal numeric value and gives
+an indication where along the range is considered preferable. Just think
+of the &lt;meter&gt; ranges as follows:</p>
+
+<ul>
+  <li>Range 1: between min and low</li>
+  <li>Range 2: between low and high</li>
+  <li>Range 3: between high and max</li>
+</ul>
+
+<p>… and depending on the value you set to optimum attribute, one of the
+ranges above becomes the “good (optimum)” range.</p>
+
+<p>In the previous example, with the value of the optimum attribute set
+to 19, a number between min and low (not inclusive), the Range 1
+(between min=0 and low=20) becomes the “good (optimum)” range (displayed
+in green), the Range 3 (between high=80 and max=100) becomes the “bad”
+(displayed in red color) range, and the Range 2, in the middle, will be
+displayed in yellow (not optimum, not bad).</p>
+
+<p>A &lt;meter&gt; element used for displaying blood pressure might be a
+good candidate for setting the optimum value to “Range 2”, and
+a &lt;meter&gt; element used for displaying memory usage might be a good
+candidate for setting the optimum value to “Range 1”, meaning that a low
+memory usage is “good”.</p>
+
+<h4>External resources</h4>
+
+<ul>
+  <li>From MDN’s Web  Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter" target="_blank" rel="noopener noreferrer">The HTML Meter element</a></li>
+  <li>Good blog post: <a href="https://www.hongkiat.com/blog/style-html5-meter/" target="_blank" rel="noopener noreferrer">How to use and style the meter element</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-6-4">5.6.4 &lt;progress&gt;</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The &lt;progress&gt; element is similar to &lt;meter&gt; but it is used for
+progress bars (i.e., the percentage of a file being uploaded, etc.):</p>
+
+<pre>&lt;progress id=pr value=50 min=0 max=100&gt;</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 282. every mistake you make is progress (333) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image282.webp"
+  loading="lazy"
+  title="Picture of the funny progress meme saying Every mistake you make is progress"
+  alt="Picture of the funny progress meme saying Every mistake you make is progress."
+  style="width:10%;" />
+
+<h4>Gives:</h4>
+
+<p>The browser calculates the percentage corresponding to the value, min and 
+max attributes and adjusts the length of the progress bar accordingly.</p>
+
+<p>If no value attribute is set, the progress bar will display an
+“indeterminate look”, that may slightly vary among different browser
+implementations.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 283. progress with integers (333) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image283.webp"
+  loading="lazy"
+  title="Indetermined progress bar screenshot"
+  alt="Indetermined progress bar screenshot."
+  style="width:40%;" />
+
+<h4>Typical use:</h4>
+
+<p><a href="https://jsbin.com/hebiju/edit?html,output" target="_blank" rel="noopener noreferrer">
+Here is an online example at JSBin</a>, or try it below in your browser:</p>
+
+<p>This example uses some JavaScript to simulate a download progress by
+changing in real time the value attribute.</p>
+
+<p>The progress below is defined like this:</p>
+
+<pre>&lt;progress id=pr value=100 max=1000&gt;</pre>
+
+<h4>Download progress:</h4>
+
+<h4>Source code:</h4>
+
+<pre>Download progress: &lt;progress id=pr value=100 min=0 max=1000&gt;&lt;/progress&gt;
+&lt;script&gt;
+  var i=0;
+  setInterval(function () {
+    i = (i+1) %1000;
+    document.getElementById(pr).value = i;
+  },1);
+&lt;/script&gt;</pre>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-6-5">5.6.5 &lt;datalist&gt;</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The &lt;datalist&gt; form element is useful for linking a list of
+choices to an input element.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 284. input options; web browsers (342) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image284.webp"
+  loading="lazy"
+  title="Input field choices; web browsers"
+  alt="Input field choices; web browsers."
+  style="width:30%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 285. input options; lookahead (342) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image285.webp"
+  loading="lazy"
+  title="Another example input field choices with lookahead"
+  alt="Another example input field choices with lookahead."
+  style="width:30%;" />
+
+<p>We have already seen this element in action with different &lt;input&gt; 
+elements, such as &lt;input type=“color”&gt;, &lt;input type=“date”&gt;, 
+or &lt;input type=“range”&gt;.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 227. color pallette with blue, green, red (342) ~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image227.webp"
+  loading="lazy"
+  title="Restricted choice of color"
+  alt="Restricted choice of color."
+  style="width:15%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 286. restricted data list choices (342) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image286.webp"
+  loading="lazy"
+  title="Restrict choices using a datalist element"
+  alt="Restrict choices using a datalist element."
+  style="width:35%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 287. slider with min, max, step & ticks (342) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image287.webp"
+  loading="lazy"
+  title="Example of datalist for sliders ticks"
+  alt="Example of datalist for sliders ticks."
+  style="width:35%;" />
+   
+<p>It is often “linked” to input fields either for restricting the value
+set that can be proposed  (i.e., restricted set of colors or possible
+dates, or for displaying slider ticks, as shown above), but it may also
+be used in a more general way, for providing client-side auto-completion
+without the need to use JavaScript.</p>
+
+<p>It works with the new list attribute of input fields introduced by
+HTML5. The id of the &lt;datalist&gt; must match the value of
+the list attribute in the input field. A datalist can be shared by
+several input fields. It suffices that their list attribute matches the
+id of the datalist element.</p>
+
+<p>The input field is related to the datalist that will propose
+auto-completion based on &lt;datalist&gt; values.</p>
+
+<h4>Typical use for auto-completion</h4>
+
+<p>Here is an <a href="https://jsbin.com/tiqexel/1/edit?html,output" target="_blank" rel="noopener noreferrer">online example at
+JSBin</a>, or try it here in your browser (type the name of your
+favorite browser):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 288. what is your favorite browser submit query (343) ~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/tiqexel/1/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image288.webp"
+  loading="lazy"
+  title="What is your favorite browser submit query"
+  alt="What is your favorite browser submit query."
+  style="width:35%;" /></a>
+  
+<h4>Source code of this example:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;form action=&quot;demo_form.asp&quot; method=&quot;get&quot;&gt;
+  &lt;input list=&quot;browsers&quot; name=&quot;browser&quot; /&gt;
+    &lt;datalist id=&quot;browsers&quot;&gt;
+      &lt;option value=&quot;Internet Explorer&quot;&gt;
+      &lt;option value=&quot;Firefox&quot;&gt;
+      &lt;option value=&quot;Chrome&quot;&gt;
+      &lt;option value=&quot;Opera&quot;&gt;
+      &lt;option value=&quot;Safari&quot;&gt;
+    &lt;/datalist&gt;
+  &lt;input type=&quot;submit&quot; /&gt;
+&lt;/form&gt;</pre>
+
+</details>
+
+<p>As you can see at <i>lines 2 and 4</i>, the id and list attributes
+match. The &lt;datalist&gt; element is wrapped around a
+set of &lt;option&gt; that are available for selection by another form
+control (in this example the input field from <i>line 2</i>).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-7-1">5.7.1 Form Validation API</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this section of the course, we will look at CSS pseudo classes
+that are useful for giving instant feedback when the user’s input is not
+valid. We will also look at the new JavaScript API introduced by HTML5
+for validating forms and form elements.</p>
+
+<p>In the following pages, we will first illustrate the concept of form
+validation with the &lt;input type=“email”/&gt; field. It can be
+generalized to all kind of input types, such as url, number, etc. Some
+form attributes, such as pattern,  will also affect input field
+validity!</p>
+
+<p>Form validation is <a
+href="https://caniuse.com/#feat=form-validation" target="_blank" rel="noopener noreferrer">supported</a> by
+all modern browsers.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-7-2">5.7.2 Automate Visual Feedback While Typing</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Most modern browsers propose default behavior for validating input
+fields and forms.</p>
+
+<p>The built-in validation system that comes with HTML5 automatically
+adds a CSS pseudo class to all input fields. Invalid fields (i.e. a
+badly worded email address in an &lt;input type=“email”&gt; input
+field), will inherit the :invalid pseudo class, valid fields will
+inherit the :valid pseudo class.</p>
+
+<p>A first step to improve your HTML form is to add some CSS rules to
+your input fields. This adds visual feedback to the validity of input
+fields values - while the user is typing - such as changing the color of
+the border of input fields, or green/red icons on the right of the
+field, as shown in the small picture at the top right of this page.</p>
+<p>Also, at the time of submitting the form, some extra messages may be
+displayed as pop up text bubbles.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 289. bubble message example (344) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image289.webp"
+  loading="lazy"
+  title="Bubble message example"
+  alt="Bubble message example."
+  style="width:35%;" />
+
+<p>The default bubble message and visual feedback differ from one implementation 
+to another, but they may be customized, with some limitations that will be 
+explained later.</p>
+
+<p>For example, browsers may provides default feedback on the input field’s border 
+(red = invalid, green = ok). This default behavior can be overridden by CSS rules 
+as illustrated in the section about new input type attributes.</p>
+
+<h4>Examples</h4>
+
+<h4>Example #1: styling “required”, “valid” and” invalid” fields using CSS3 pseudo-classes</h4>
+
+<p>Here is
+an <a href="https://jsbin.com/palifuy/edit?html,output" target="_blank" rel="noopener noreferrer">online example
+at JSBin</a>, or try it below in your browser:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 288b. form with custom error messages (344) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/palifuy/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image288b.webp"
+  loading="lazy"
+  title="Custom error messages on form"
+  alt="Custom error messages on form."
+  style="width:35%;" /></a>
+
+<h4>Source code extract:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;CSS3 pseudo-classes for form validation visual feedback&lt;/title&gt;
+    &lt;style&gt;
+      input:invalid { background-color: lightPink;}
+      input:valid { background-color:lightGreen; }
+      input:required {border: 2px solid red;}
+      input:optional {border: 2px solid green;}
+      fieldset {
+        border:1px solid;
+        padding:20px;
+        }
+      .formLabel { display: inline-block; width: 140px; text-align: right; }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+    &lt;form&gt;
+      &lt;fieldset&gt;
+        &lt;legend&gt;Type invalid values and see the result&lt;/legend&gt;
+            &lt;label for=&quot;myEmail&quot; class=&quot;formLabel&quot;&gt;E-mail:&lt;/label&gt; 
+              &lt;input type=&quot;email&quot; id=&quot;myEmail&quot; required/&gt;&lt;br&gt;
+            &lt;label for=&quot;myURL&quot; class=&quot;formLabel&quot;&gt;
+            Homepage (URL):&lt;/label&gt; &lt;input type=&quot;url&quot; id=&quot;myURL&quot; 
+            required/&gt;&lt;br&gt; &lt;label for=&quot;myPhone&quot; class=&quot;formLabel&quot;&gt; Phone 
+            number:&lt;/label&gt; &lt;input type=&quot;tel&quot; id=&quot;myPhone&quot; 
+            pattern=&quot;[0-9]{3}-?[0-9]{3}-?[0-9]{4}&quot; placeholder=&quot;e.g.
+            416-555-1234&quot; required/&gt;&lt;br&gt;
+        &lt;button&gt;Submit form&lt;/button&gt;&lt;br /&gt;
+      &lt;/fieldset&gt;
+    &lt;/form&gt;
+    &lt;p&gt;
+  
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<p>Try the online example with different Web browsers, both with and
+without the CSS rules. See the differences between FireFox/Chrome/Opera
+in the default visual feedback behavior. Don’t worry: all default
+behavior can be overridden if you provide your own CSS rules.</p>
+
+<p>Best practice:  We recommend that you ALWAYS provide default CSS
+rules that give visual feedback to the user’s input.</p>
+
+<h4>Example #2: add CSS transitions + an icon/marker to the right of the
+input fields</h4>
+
+<p>Try this <a href="https://jsbin.com/zaxije/2/edit" target="_blank" rel="noopener noreferrer">online example at
+JSBin</a> or try it here in your browser. This example adds a small icon that changes depending on the validity of the input field:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 289b. last example + css transitions  + icon/marker (345) ~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/zaxije/2/edit" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image289b.webp"
+  loading="lazy"
+  title="Custom error messages on form + css"
+  alt="Custom error messages on form + css."
+  style="width:35%;" /></a>
+
+<h4>Source code extract:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>.myForm input:focus {
+  padding-right:70px;
+}
+.myForm input {
+  transition: padding .25s;
+}
+.myForm input:required:valid {
+  background:url(https://i.imgur.com/BJolppS.png) no-repeat right top;
+}
+.myForm input:required {
+  background:url(https://i.imgur.com/7pIN7wz.png) no-repeat right top;
+}</pre>
+
+</details>
+
+<p>This time, we just added an attribute class=“myForm” to our form, in
+order to avoid interfering with the other examples on this page, and we
+tweaked the CSS rules a little.</p>
+
+<p>The rule at <i>line 1</i> says that any time we click on an input
+field, it will enlarge itself to the right, while the rule at <i>line
+4</i> will make it animated.</p>
+
+<p>The rules at <i>lines 8</i> and <i>11</i> target the input fields
+with a required attribute. They will change the background by displaying
+a small green or red icon, corresponding to the valid/invalid status of
+the input field.</p>
+
+<h4>Use the title attribute for specifying a custom message</h4>
+
+<p>You can simply use the input’s title attribute to provide a message
+for pattern-mismatches, and more generally for all validation errors.
+This solution is really neat and doesn’t require JavaScript!</p>
+
+<p>Try the <a href="https://jsbin.com/locedoy/1/edit?html,output" 
+target="_blank" rel="noopener noreferrer">online example at JSBin</a>, 
+or try it here in your browser (type invalid values and look at the custom 
+messages):</p>
+
+<h4>Top of Form</h4>
+
+<p>Type invalid values and see the result, this time with custom
+messages! E-mail:  Homepage (URL):  Phone number:  Submit form</p>
+
+<h4>Bottom of Form</h4>
+
+<h4>Extract from source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;form class=&quot;myForm&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Type invalid values and see the result&lt;/legend&gt;
+    &lt;label for=&quot;myEmail&quot; class=&quot;formLabel&quot;&gt;E-mail:&lt;/label&gt;
+    &lt;input type=&quot;email&quot; id=&quot;myEmail&quot;
+      title=&quot;You don&#39;t know what an email address looks like, do you?&quot;
+      required/&gt;&lt;br&gt;
+    ...
+    &lt;button&gt;Submit form&lt;/button&gt;&lt;br /&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+
+</details>
+
+<p><i>Beware</i> that browser implementations may differ. Chrome, Opera
+will display the title attribute value in error message bubbles when the
+form is submitted, while Safari and FireFox (desktop and mobile) will
+simply ignore it.</p>
+
+<p>You must also take care of the different languages, otherwise you
+will get error message bubbles that show some parts in the local
+language, and the message from the title attribute “as is”.</p>
+
+<h4>Google Chrome on a French desktop computer:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 290. chrome shows native error msg and localized (347) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image290.webp"
+  loading="lazy"
+  title="Chrome shows native error message localized and the title attribute content as is"
+  alt="Chrome shows native error message localized and the title attribute content as is."
+  style="width:35%;" />
+
+<h4>Same example on FireFox, the title attribute is ignored:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 291. firefox title attribute (347) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image291.webp"
+  loading="lazy"
+  title="Same example on Firefox, the title attribute is ignored"
+  alt="Same example on Firefox, the title attribute is ignored."
+  style="width:35%;" />
+  
+<h4>The built-in validation system is an improvement on what existed before
+HTML5 (i.e., nothing), but additional work is required if you want fully
+localized, hand-made validation feedback.</h4>
+
+<h4>We will show solutions in the last section of this week’s course.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-7-3">5.7.3 JavaScript Form Validation API</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>There is a JavaScript API for form validation. This API will let you
+use your own validation algorithm (i.e. check that you have entered the
+same password in two different input fields), and customize error
+messages. Also, together with some HTML/CSS/JavaScript you will be able
+to make your own message bubbles.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 292b. javascript form validation api (347) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image292b.webp"
+  loading="lazy"
+  title="JavaScript form validation API"
+  alt="JavaScript form validation API."
+  style="width:35%;" />
+
+<h4>Typical use</h4>
+
+<p>Be careful when you try this example in JS Bin standalone mode (click the small black arrow on 
+the top right of the output tab).</p>
+
+<p>Or, you may try it <a href="https://jsbin.com/nalaxeg/1/edit?html,output" 
+target="_blank" rel="noopener noreferrer">here in your browser</a>.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 292c. example use of validation api (347) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/nalaxeg/1/edit?html,output" 
+target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image292c.webp"
+  loading="lazy"
+  title="Example use of validation API"
+  alt="Example use of validation API."
+  style="width:35%;" /></a>
+
+<h4>Extract from source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example of using the validation API&lt;/title&gt;
+  &lt;style&gt;
+    .myForm input:invalid { background-color: lightPink;}
+    .myForm input:valid { background-color:lightGreen; }
+    .myForm input:required {border: 2px solid red;}
+    .myForm input:optional {border: 2px solid green;}
+    .myForm label { display: inline-block; width: 140px; text-align: right; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;form class=&quot;myForm&quot;&gt;
+   &lt;fieldset&gt;
+      &lt;legend&gt;Example use of the validation API&lt;/legend&gt;
+      &lt;label for=&quot;password1&quot; &gt;Password:&lt;/label&gt; &lt;input type=&quot;password&quot; 
+            id=&quot;password1&quot; oninput=&quot;checkPasswords()&quot; required&gt;
+      &lt;p&gt;
+      &lt;label for=&quot;password2&quot;&gt;
+            Repeat password:&lt;/label&gt; &lt;input type=&quot;password&quot; id=&quot;password2&quot; 
+            oninput=&quot;checkPasswords()&quot; required&gt;
+      &lt;p&gt;
+      &lt;button&gt;Submit&lt;/button&gt;
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+  
+  &lt;script&gt;
+    function checkPasswords() {
+      var password1 = document.getElementById(&#39;password1&#39;);
+      var password2 = document.getElementById(&#39;password2&#39;);
+      if (password1.value != password2.value) {
+        password2.setCustomValidity(&#39;Passwords non identiques&#39;);
+      } else {
+        password2.setCustomValidity(&#39;&#39;);
+      }
+    }  <!-- function checkpasswords -->
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Explanations:</h4>
+
+<p>The validity API proposes a setCustomValidity() method available on
+input DOM objects. This method allows you to customize error messages.
+It takes a string parameter. When this string is empty, the element is
+considered <i>valid</i>, when the string is not empty, the field
+is <i>invalid</i> and the validation error message displayed in the
+bubble will be equal to that string.</p>
+
+<p>At <i>lines 18</i> and <i>20</i> we added an input event listener:
+each time a key is typed, the checkPasswords() function is called.</p>
+
+<p><i>Lines 28</i> and <i>29</i> get the input fields’ values, and
+<i>lines 30-35</i> check if the passwords are the same and set the
+validity of the field using the validation API’s
+method setCustomValidity(error_message).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-7-4">5.7.4 The validity property of input fields</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The validity property of input fields helps to get error details when
+the field is <i>invalid</i>. This property tests the different types of
+validation error.</p>
+
+<h4>Here is how to get the validity property of an input field:</h4>
+
+<pre>var input = document.getElementById(&#39;IdOfField&#39;);
+ 
+var validityState_object = &lt;b&gt;input.validity;&lt;/b&gt;</pre>
+
+<h4>The possible values for the validity property are:</h4>
+
+<ul>
+  <li>valueMissing<br></li>
+  <li>typeMismatch<br></li>
+  <li>patternMismatch<br></li>
+  <li>tooLong<br></li>
+  <li>rangeUnderflow<br></li>
+  <li>rangeOverflow<br></li>
+  <li>stepMismatch<br></li>
+  <li>valid<br></li>
+  <li>customError</li>
+</ul>
+
+<p>Here is <a href="https://jsbin.com/nalaxeg/1/edit?html,output" target="_blank" rel="noopener noreferrer">
+an example at JSBin that shows how to test the different types of validation errors</a>, or you may try it here in your browser (enter bad
+values, too big, too small, enter invalid characters, etc.):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 292. enter value between 10 and 20 (349) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/nalaxeg/1/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image292.webp"
+  loading="lazy"
+  title="JSBin example which shows how to test the different types of validation errors"
+  alt="JSBin example which shows how to test the different types of validation errors."
+  style="width:35%;" /></a>
+
+<h4>Source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+...
+&lt;body&gt;
+ 
+  &lt;script&gt;
+    function validate() {
+      var input = document.getElementById(&#39;b&#39;);
+      var validityState_object = input.validity;
+
+      if(validityState_object.valueMissing) {
+        input.setCustomValidity(&#39;Please set an age (required)&#39;);
+      } else if (validityState_object.rangeUnderflow) {
+        input.setCustomValidity(&#39;Your value is too low&#39;);
+      } else if (validityState_object.rangeOverflow) {
+        input.setCustomValidity(&#39;Your value is too high&#39;);
+      } else if (validityState_object.typeMismatch) {
+        input.setCustomValidity(&#39;Type mismatch&#39;);
+      } else if (validityState_object.tooLong) {
+        input.setCustomValidity(&#39;Too long&#39;);
+      } else if (validityState_object.stepMismatch) {
+         input.setCustomValidity(&#39;stepMismatch&#39;);
+      } else if (validityState_object.patternMismatch) {
+        input.setCustomValidity(&#39;patternMismatch&#39;);
+      } else {
+        input.setCustomValidity(&#39;&#39;);
+      }
+    }  <!-- function validate -->
+  &lt;/script&gt;
+  &lt;form class=&quot;myForm&quot;&gt;
+    &lt;label for=&quot;b&quot;&gt;Enter a value between 10 and 20: &lt;/label&gt;
+    &lt;input type=&quot;number&quot; name=&quot;text&quot; id=&quot;b&quot; min=&quot;10&quot; 
+          max=&quot;20&quot;
+          required oninput=&#39;validate();&#39;/&gt;
+    &lt;button&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
+ 
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>The validationMessage property</h4>
+
+<p>It is also possible to get the validation error message, using
+the validationMessage property of input fields.</p>
+
+<pre>var input = document.getElementById(b);
+console.log(&quot;Validation message = &quot; + input.validationMessage);</pre>
+
+<p>This is useful for making custom error messages. More about this
+topic in the next section of the course.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-7-5">5.7.5 Changing the default behavior</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Custom validation: changing the default behavior, aggregating error
+messages, removing bubbles, etc.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 293. in french, submit with one or two invalid fields (350) ~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image293.webp"
+  loading="lazy"
+  title="Custom validation"
+  alt="Custom validation."
+  style="width:35%;" />
+  
+<h4>Criticism of the default behavior of HTML5 built-in validation</h4>
+
+<p>The techniques we have seen so far for enhancing HTML forms are
+powerful and provide interesting features, but are also criticized by
+Web developers:</p>
+
+<ul>
+  <li>Browser support is still not 100% complete (Safari and Internet Explorer still lack several important features),</li>
+  <li>It is not possible to aggregate error messages.  On submission, browsers show an error bubble next to the first invalid field, and there is no built-in way to <i>display all error messages for all invalid fields at the same time</i>,</li>
+  <li>You cannot style the bubbles.</li>
+</ul>
+
+<p>However, the validation API gives enough power to make your own
+validation behavior, overriding the default when necessary.</p>
+
+<p>Here is <a
+href="https://www.telerik.com/blogs/building-html5-form-validation-bubble-replacements" target="_blank" rel="noopener noreferrer">
+an adaptation of work presented at the developer.telerik.com Web site</a>.
+ This link is really worth reading, as it presents different approaches
+and gives external references for those who would like to go
+further.</p>
+
+<h4>Example that shows aggregation of error messages + overriding default behavior</h4>
+
+<p>Try the <a href="https://jsbin.com/povekur/1/edit?html,output" target="_blank" rel="noopener noreferrer">online
+example at JSBin,</a> or try it here in your browser: enter invalid
+values and submit with one or two invalid fields.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 294. name and e-mail fields (351) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image294.webp"
+  loading="lazy"
+  title="Prompt for name and e-mail address fields"
+  alt="Prompt for name and e-mail address fields."
+  style="width:35%;" />
+ 
+<h4>Complete source code:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Aggregating error messages&lt;/title&gt;
+    &lt;style&gt;
+    input:invalid { background-color: lightPink;}
+    input:valid { background-color:lightGreen; }
+    input:required {border: 2px solid red;}
+    input:optional {border: 2px solid green;}
+  
+    .error-messages {
+      display: none;
+      margin: 0 10px 15px 10px;
+      padding: 8px 35px 8px 30px;
+      color: #B94A48;
+      background-color: #F2DEDE;
+      border: 2px solid #EED3D7;
+      border-radius: 4px;
+    }
+    fieldset {
+      border:1px solid;
+      padding:20px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Submit with one or two invalid fields&lt;/legend&gt;
+ 
+    &lt;ul class=&quot;error-messages&quot;&gt;&lt;/ul&gt;
+ 
+    &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+    &lt;input id=&quot;name&quot; name=&quot;name&quot; required&gt;
+    &lt;p&gt;
+    &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+    &lt;input id=&quot;email&quot; name=&quot;email&quot; type=&quot;email&quot; required&gt;
+    &lt;p&gt;
+    &lt;button&gt;Submit&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+  
+&lt;script&gt;
+  function replaceValidationUI(form) {
+    // Suppress the default bubbles
+
+    form.addEventListener(&quot;invalid&quot;, function (event) {
+      event.preventDefault();
+    }, true);
+  
+    // Support Safari, iOS Safari, and the Android browser -- each of which
+    // do not prevent form submissions by default
+    form.addEventListener(&quot;submit&quot;, function (event) {
+      if (!this.checkValidity()) {
+        event.preventDefault();
+       }
+    });
+  
+    // Container that holds error messages. By default it has a CSS
+    // display:none property
+    var errorMessages = form.querySelector(&quot;.error-messages&quot;);
+  
+    var submitButton = form.querySelector(&quot;button:not([type=button]),
+      input[type=submit]&quot;);
+  
+    submitButton.addEventListener(&quot;click&quot;, function (event) {
+      var invalidFields = form.querySelectorAll(&quot;input:invalid&quot;);
+      var listHtml = &quot;&quot;;
+      var errorMessagesContainer = form.querySelector(&quot;.error-messages&quot;);
+      var label;
+  
+      // Get the labels&#39; values of their name attributes + the validation error
+      // message of the corresponding input field using the validationMessage
+      // property of input fields
+      // We build a list of &lt;li&gt;...&lt;/li&gt; that we add to the error message container
+      for (var i = 0; i &lt; invalidFields.length; i++) {
+        label = form.querySelector(&quot;label[for=&quot; + invalidFields[ i ].id + &quot;]&quot;);
+        listHtml += &quot;&lt;li&gt;&quot; +
+        label.innerHTML +
+        &quot; &quot; +
+        invalidFields[ i ].validationMessage +
+        &quot;&lt;/li&gt;&quot;;
+      }
+  
+      // Update the list with the new error messages
+      errorMessagesContainer.innerHTML = listHtml;
+  
+      // If there are errors, give focus to the first invalid field and show
+      // the error messages container by setting its CSS property display=block
+      if (invalidFields.length &gt; 0) {
+        invalidFields[ 0 ].focus();
+        errorMessagesContainer.style.display = &quot;block&quot;;
+      }
+    });
+  }
+  
+  // Replace the validation UI for all forms
+  var forms = document.querySelectorAll(&quot;form&quot;);
+
+  for (var i = 0; i &lt; forms.length; i++) {
+    replaceValidationUI(forms[ i ]);
+  }
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Explanations:</h4>
+
+<ul>
+  <li><i>Line 32</i>: we added an empty unnumbered list (&lt;ul&gt;…&lt;/ul&gt;) to the form, 
+    with the CSS class=“error-messages”. We will use this class attribute for styling, and 
+    hiding by default, the error messages using CSS (see lines <i>12-20</i>, <i>line 13</i> 
+    hides the messages by default),</li>
+  <li><i>Lines 97-102</i> look at all forms in the document and call a function that will 
+    replace the default validation behavior for all of them: the replaceValidationUI(form) function,</li>
+  <li>This function first disables all default behavior (no more display of bubbles during 
+    form submission), this is done at <i>lines 45-57</i>,</li>
+  <li><i>Line 66</i>: we add a click listener to the submit button of the current form,</li>
+  <li><i>Line 67</i> gets all invalid input fields for that form,</li>
+  <li><i>Lines 76-83</i>: For each invalid field, we get the value of the name attribute of 
+    the corresponding label, we also get the validation error message, and we build a list 
+    item(&lt;li&gt;…&lt;/li&gt;),</li>
+  <li><i>Line 86</i>: Then we add this list element (a formatted error message corresponding 
+    to an invalid input field) to the error message container,</li>
+  <li><i>Lines 90-93</i>: The focus is given to the first invalid field that shows an error message.</li>
+</ul>
