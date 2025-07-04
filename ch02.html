@@ -1,0 +1,3102 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>Module 2: HTML5 Multimedia - An Introduction</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-1-1">2.1.1 HTML5 Multimedia - Streaming with &lt;video&gt; &amp; &lt;audio&gt; Elements</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Until 2012, it was only possible to integrate an audio or video player
+using the proprietary Flash technology, marketed by the company
+Macromedia (later acquired by Adobe). The &lt;video&gt; element of HTML5
+is one of the three “Flash killers” (the others being &lt;audio&gt; for
+the sound and &lt;canvas&gt; for drawing and animation). <i>(Note that
+Adobe <a href="https://www.adobe.com/products/flashplayer/end-of-life.html" 
+target="_blank" rel="noopener noreferrer">no longer supports Flash Player</a> 
+since December 31, 2020)</i></p>
+
+<h4>Check the HTML code of the following CodePen:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 68. codepen snapshot: simple html5 video player (82) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image068.webp"
+  loading="lazy"
+  title="Codepen snapshot: simple HTML5 video player"
+  alt="Codepen snapshot: simple HTML5 video player."
+  style="width:35%;" />
+
+<h4>Please note that:</h4>
+
+<ul>
+  <li>The controls attribute indicates that a control panel with play/stop/volume/progress 
+    widgets should be displayed;</li>
+  <li>Usually the browser  will use the first format it recognizes  (in this case, the 
+    browser checks whether mp4 is supported, and if not, it will check for the ogg format, 
+    and so on). Some browsers may use a different heuristic and choose a “preferred” 
+    format;</li>
+  <li>The &lt;video&gt; element is a DOM member, so  CSS styling can be applied, as 
+    well as manipulation using the DOM API.</li>
+</ul>
+
+<p>You will learn more about the different attributes of the &lt;video&gt; element 
+later on in the course.</p>
+
+<h4>Current browser support for the &lt;video&gt; element</h4>
+
+<p>The &lt;video&gt; element is supported by all major browsers. See
+the <a href="https://caniuse.com/video" target="_blank" rel="noopener noreferrer">
+support table from CanIUse.</a></p>
+
+<h4>Restriction: you cannot embed a YouTube or DailyMotion video using the 
+&lt;video&gt; element</h4>
+
+<p>Help! &lt;video src=“my youtube video URL”&gt;&lt;/video&gt; does not
+work! </p>
+<p><b>BEWARE</b>: you cannot directly embed videos from most of the
+popular Web sites such as YouTube, Dailymotion, Vimeo, etc. For
+commercial reasons, and because advertising is automatically added to
+the videos, these Web sites do not allow “regular” embedding of their
+videos.</p>
+<p>While they use HTML5 to render their videos, these
+hosting sites (YouTube, etc.) use rather complex techniques in order to
+prevent you from using them with the &lt;video&gt;element. Instead, you
+often need to embed an &lt;iframe&gt; that will render the HTML5 videos
+in your Web site, and of course, the advertising that comes along with
+them.</p>
+<p>Usually you have an “embed” button close to the videos that prompts you
+with some HTML code that you can copy and paste for embedding.</p>
+
+<h4>An example using YouTube:</h4>
+
+<h4>Here is the HTML code you need to copy and paste in order to embed avideo:</h4>
+
+<pre>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; 
+  src=&quot;https://www.youtube.com/embed/WMFXg-kni0U&quot; title=&quot;YouTube video player&quot;
+  frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+  picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
+
+<p>The YouTube video embedded in this page by the above code: it’s HTML5 but it’s not a 
+&lt;video&gt; element directly inserted in the HTML of this page, it’s an &lt;iframe&gt;.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 69. web of things (wot) explainer video snapshot (83) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image069.webp"
+  loading="lazy"
+  title="Web of things (WoT) explainer video snapshot"
+  alt="Web of things (WoT) explainer video snapshot."
+  style="width:35%;" />
+
+<h4>Support for different video CODECS (mp4, ogG, avi, etc.)</h4>
+
+<p>This is one of the main problems encountered in recent years: codec support was not 
+the same from one browser to another, for commercial/economic reasons. For example, 
+between 2010 and 2013, Firefox only supported the ogg/oggm format. It did not support 
+mp3/mp4 encoding for audio/video, while Internet Explorer only supported H.264 encoding. 
+Since 2012, things have changed with browser updates and today most popular formats are 
+supported.</p>
+<p><i>The recommended CODEC, which works in all popular browsers: H264/mp4.</i></p>
+
+<h4>External resources</h4>
+
+<ul>
+  <li>From W3C’s specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-video-element" 
+    target="_blank" rel="noopener noreferrer">The video element</a></li>
+  <li>MDN’s Web Docs: <a href="(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" 
+    target="_blank" rel="noopener noreferrer">&lt;video&amp;g;: The Video Embed element</a>)</li>
+  <li>From Apple’s developer site: 
+    <a href="https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/ControllingMediaWithJavaScript/ControllingMediaWithJavaScript.html" 
+      target="_blank" rel="noopener noreferrer">Safari HTML5 audio and video guide</a>.</li>
+  <li>Article from HTML5 Rocks: <a href="https://www.html5rocks.com/en/tutorials/video/basics/" 
+    target="_blank" rel="noopener noreferrer">Media</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-1-2">2.1.2 The &lt;audio&gt; Element</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML5 audio is composed of several layers:</h4>
+
+<ul>
+  <li>The &lt;audio&gt; element is useful for embedding an audio player into a Web page. 
+    It is dedicated for <b>streamed audio</b>. It is very similar to the &lt;video&gt; 
+    element, both in its use and in its API.</li>
+  <li>The Web Audio API is designed for musical applications and for adding sound effects 
+    to games. This pure JavaScript API supports manipulation of sound samples (loops, etc.), 
+    music synthesis and sound generation (oscillators, etc.). It also comes with a set of 
+    predefined sound processing modules (reverb, delay, etc.)</li>
+</ul>
+
+<p>This course will focus on the &lt;audio&gt; element. We present the 
+<a href="https://www.w3.org/TR/webaudio/" target="_blank" rel="noopener noreferrer">Web Audio
+API</a> and other advanced HTML5 features in the 
+<a href="https://www.edx.org/course/html5-apps-and-games" target="_blank" 
+rel="noopener noreferrer">W3Cx HTML5 Apps and Games course</a>.</p>
+
+<p>The attributes, event set and JavaScript API of the &lt;audio&gt; element 
+are just a “reduced” version of the ones from the &lt;video&gt; element, and 
+here we will only address the differences and peculiarities.</p>
+
+<h4>The &lt;audio&gt; element, basic usage</h4>
+
+<p>Here is a simple example (also available <a href="https://jsbin.com/yogojis/edit?html,output" 
+target="_blank" rel="noopener noreferrer">online example from JSBin</a>):</p>
+
+<p>Press play to stream the neigh of a horse: (does not work in git)</p>
+
+<h4>As you can see, the code is very similar to the basic &lt;video&gt; element usage.</h4>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;
+    &lt;title&gt;horse song&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;audio controls=&quot;controls&quot;&gt;
+      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot; 
+        type=&quot;audio/ogg&quot; /&gt;
+      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot; 
+        type=&quot;audio/mp3&quot; /&gt;
+      Your browser does not support the audio element.
+      Download the audio/video in
+      &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;&gt;OGG&lt;/a&gt;
+      or &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;&gt;MP3&lt;/a&gt;
+        format.
+    &lt;/audio&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<p>In this example, just as for the &lt;video&gt; element, we used
+the controls attribute in order to render the play/stop, time, volume
+and progress widgets.</p>
+<p>Notice the other similarities: between the &lt;audio&gt;…&lt;audio&gt; tags, we 
+added a text message that is displayed if the Web browser doesn’t support the 
+&lt;audio&gt; element,
+and we used several &lt;source&gt;…&lt;/source&gt; elements that link to different 
+audio formats for the same file. The browser will use the first format it recognizes.</p>
+
+<h4>External resources</h4>
+
+<ul>
+  <li>From W3C’s specification: <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#the-audio-element" 
+    target="_blank" rel="noopener noreferrer">The audio element</a></li>
+  <li>From MDN’s Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" 
+    target="_blank" rel="noopener noreferrer">&lt;audio&gt;: The Embed Audio element</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-1-3">2.1.3 Attributes of &lt;video&gt; and &lt;audio&gt;</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Most useful attributes of the &lt;video&gt; element</h4>
+
+<p>Here are the most common attributes you can use with the &lt;video&gt; element. They are self explanatory… </p>
+
+<ul>
+  <li>src: source of the video.</li>
+  <li>width and height: size of the video. If unspecified, the default width and height 
+    of the video will be used. If you specify one dimension but not the other, the 
+    browser will adjust the size of the unspecified dimension to preserve the aspect 
+    ratio of the video.</li>
+  <li>controls: If this boolean attribute is present, the browser displays its own 
+    controls for video playback and volume</li>
+  <li>poster: This attribute allows you to specify an image that the browser will 
+    use while video is being downloaded, or until the user starts playing the video. 
+    If this attribute is not specified, the first frame of the video will be used 
+    instead.</li>
+  <li>autoplay: This attribute asks the browser to start playing the video 
+    automatically as soon as the page is ready.</li>
+  <li>preload:  The preload attribute is used when autoplay is not used. It 
+    tells the browser what to do before a user plays a video. This attribute is a hint 
+    - the browser may ignore it. While autoplay and preload are mutually exclusive, 
+    if both are present, then preload is ignored. Possible values:
+    <ul>
+      <li>none: do nothing. This saves bandwidth, no video will be downloaded in background 
+        before a user or a call to the play() method starts playing the video.</li>
+      <li>metadata: download metadata, such as length of the video or its format.</li>
+      <li>auto (default value): the browser will decide. This will depend on the 
+        implementation, and on the kind of connection: wifi, 3G, data roaming etc.</li>
+    </ul>
+  </li>
+  <li>loop: Another boolean attribute that indicates to play the video in loop mode (and 
+    it starts again when finished).</li>
+</ul>
+
+<h4>Be careful if you target mobile applications or if you have multiple videos 
+on the same page</h4>
+
+<p>The autoplay attribute is not recommended if your Web site targets mobile 
+applications (actually, it is often ignored by mobile browsers), as it may 
+consume bandwidth even if the user is not interested in watching the proposed 
+video. If you target mobile devices, we recommend using preload=none as well, 
+as the default value for this attribute is auto.</p>
+<p><b>Best practice</b>: do not use autoplay and add preload=“none” if you 
+target mobile devices or if you have multiple audio/video files on the same 
+page.  For example, 
+<a href="https://thepaciellogroup.github.io/AT-browser-tests/test-files/audio.html" 
+target="_blank" rel="noopener noreferrer">this page contains many audio elements</a> 
+and it does not make sense to have them preload or autoplay.</p>
+
+<h4>About the poster attribute</h4>
+
+<p>If the poster attribute is missing, usually the first non-blank frame of the video 
+will be used as the image that is shown when the video is not playing.</p>
+
+<h4>About the autoplay attribute for general use</h4>
+
+<p>Do not abuse of the autoplay attribute. We talked earlier about mobile applications, 
+but even on desktop applications it’s usually a bad idea to use it (except for WebCams 
+and for some animations with small video loops, without sound, or for sites like 
+YouTube, with just videos).</p>
+<p><b>Best practice</b>: think twice before using the autoplay attribute, even 
+for desktop applications.</p>
+
+<h4>Attributes of the &lt;audio&gt; element</h4>
+
+<p>The attributes you can use with the &lt;audio&gt; element are a subset of 
+those available for the &lt;video&gt; element. Except for the poster attribute, 
+they are all recognized and have the
+expected meanings:</p>
+
+<ul>
+  <li>src: source of an audio stream.</li>
+  <li>controls: if this attribute is present, the browser displays its own controls 
+    for audio playback and volume.</li>
+  <li>autoplay: tells the browser to start playing the audio stream automatically as 
+    soon as the page is ready - please read details in the above table.</li>
+  <li>preload: tells the browser what to do before a user plays a sound - please read 
+    details in the above table.</li>
+  <li>loop:  indicates to play the audio stream in loop mode (start again when finished).</li>
+</ul>
+
+<p>As with the &lt;video&gt; element, the same best practice in regard to preload and autoplay 
+attributes should be followed.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-1-4">2.1.4 Styling Media Players with CSS</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The &lt;video&gt; and &lt;audio&gt; elements are just like other HTML elements, so CSS 
+can be used for styling, including CSS transitions, animations, etc.</p>
+
+<h4>An example of an audio player with some style</h4>
+
+<p>You can try this example <a href="https://jsbin.com/zoquru/2/edit?html,css,output" 
+target="_blank" rel="noopener noreferrer">online at JSBin</a>.</p>
+
+<p>To add some styling to the basic example we saw when we introduced the &lt;audio&gt; 
+element, we just add a &lt;figure&gt; with two children: an &lt;img&gt; and a 
+&lt;figcaption&gt;. Inside the &lt;figcaption&gt; we add the &lt;audio&gt; element 
+from the previous example.</p>
+
+<p>Please move the mouse pointer over this player’s elements: (does not work in git)</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;figure id=&quot;figaudio1&quot;&gt;
+  &lt;img id=&quot;imghorse&quot; width=&quot;200&quot;
+    src=&quot;https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg&quot;
+      alt = &quot;a horse&quot;/&gt;
+  &lt;figcaption id=&quot;figcptionaudio1&quot;&gt; Press Play to hear the horse!
+    &lt;audio controls=&quot;controls&quot;&gt;
+      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;
+        type=&quot;audio/ogg&quot; /&gt;
+      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;
+        type=&quot;audio/mp3&quot; /&gt;
+      Your browser does not support the audio element.
+      Download the audio/video in
+      &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;&gt;OGG&lt;/a&gt;
+      or &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;&gt;MP3&lt;/a&gt;
+        format.
+    &lt;/audio&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 70. two gery-black horses in a field (87) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image070.webp"
+  loading="lazy"
+  title="Two gery-black horses in a field"
+  alt="Two gery-black horses in a field."
+  style="width:20%;" />
+
+<p>Press Play to hear the horse! (<i><b>does not work</b></i> in git)</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+  
+<pre>&lt;figure id=&quot;figaudio1&quot;&gt;
+  &lt;img id=&quot;imghorse&quot; width=&quot;200&quot;
+    src=&quot;https://upload.wikimedia.org/wikipedia/commons/d/d4/Nokota_Horses.jpg&quot;
+    alt = &quot;a horse&quot;/&gt;
+  &lt;figcaption id=&quot;figcptionaudio1&quot;&gt; Press Play to hear the horse!
+    &lt;audio controls=&quot;controls&quot;&gt;
+      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;
+        type=&quot;audio/ogg&quot; /&gt;
+      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;
+        type=&quot;audio/mp3&quot; /&gt;
+        Your browser does not support the audio element.
+        Download the audio/video in
+      &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.ogg&quot;&gt;OGG&lt;/a&gt;
+        or &lt;a href=&quot;https://mainline.i3s.unice.fr/mooc/horse.mp3&quot;&gt;MP3&lt;/a&gt;
+        format.
+    &lt;/audio&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</pre>
+
+</details>
+
+<br/>
+
+<details>
+  <summary><b>CSS source code:</b></summary>
+  
+<pre>#figaudio1 {
+  width : 420px;;
+  text-align:center;
+  padding : 6px;
+  background : white;
+  margin : 0 11px 0px 0;
+  border :solid 1px #888888;
+  border-radius : 8px ;
+}
+#figcptionaudio1 {
+  font-size : .8em;
+  padding : 6px 8px;
+  background : #dddddd;
+  display :block;
+  text-align :center;
+  font-family : georgia, serif;
+  font-style : italic;
+  border-radius : 7px ;
+}
+#figaudio1 &gt; img {
+  background : #eeeeee;
+  padding : 5px;
+  border : solid 1px #444444;
+}
+/* For audio and img transitions/animation */
+audio, #figaudio1 &gt; img {
+  transition:all 0.5s;
+}
+#figaudio1 &gt; img:hover {
+  box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+  transform: scale(1.05);
+}
+audio:hover, audio:focus, audio:active {
+  box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+  transform: scale(1.05);
+}</pre>
+
+</details>
+
+<h4>Changing the size of a video on the fly using CSS transforms</h4>
+
+<h4>Resizing and rotating a video as the mouse pointer comes over it</h4>
+
+<p>See this <a href="https://jsbin.com/zoquru/4/edit?html,css,output" target="_blank" 
+rel="noopener noreferrer">example online</a> (where you can modify the code on the fly) 
+or just play the following video, and move the mouse pointer in and out of the video 
+while it’s playing.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 71. pseudo css class: hover (88) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/zoquru/4/edit?html,css,output" target="_blank" 
+rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image071.webp"
+  loading="lazy"
+  style="width:35%"
+  title="Tilted screen example using pseudo css class: hover"
+  alt="Tilted screen example using pseudo css class: hover." /></a>
+
+<p>This example uses the pseudo CSS class :hover in order to track the mouseover event. 
+On mouseover, it uses a CSS transition property that interpolates the changes in the 
+scale and orientation of the video element (done using a transform CSS property).</p>
+
+<h4>The corresponding HTML source code is:</h4>
+
+<pre>&lt;video &lt;b&gt;id=&quot;w3devCampusVideo&quot;&lt;/b&gt; autoplay controls&gt;
+  &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
+    type=video/webm&gt;
+  &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
+    type=video/ogg&gt;
+  &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
+    type=video/mp4&gt;
+&lt;/video&gt;</pre>
+
+<h4>… and the CSS source code is as follows:</h4>
+
+<pre>#w3devCampusVideo {
+  width: 300px;
+  &lt;b&gt;transition: all 0.5s ease-in-out;&lt;/b&gt;
+}
+#w3devCampusVideo&lt;/b&gt;:hover&lt;/b&gt; {
+  width:400px;
+  transform:rotate(-5deg);
+}</pre>
+
+<h4>Fullscreen video that resizes and maintains ratios</h4>
+
+<p>This is a trendy way of displaying videos.</p>
+<p>Below you will find two examples that show how to do this trick. The first is for a 
+“regular” video, using the &lt;video&gt; and &lt;source&gt; elements. This technique 
+can also be used on any YouTube embedded videos (see Example #2 below).</p>
+<p>The interesting part is that we use a 100% standard (and really small and simple) 
+JavaScript code here to handle the window resize events and we just set regular CSS 
+properties width and height of the video element, to resize the video.</p>
+
+<h4>Example #1: with a regular video</h4>
+
+<p>Full width, resizable, borderless video, just using plain CSS and JS DOM events.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 72. full width video like paypal site (89) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image072.webp"
+  loading="lazy"
+  style="width:40%"
+  title="Full width video like paypal site"
+  alt="Full width video like paypal site." />
+
+<h4>Here is the HTML code. It’s really simple, just notice the &lt;body onload="init();"&gt; 
+which calls the JavaScript init() function right after the page is loaded.</h4>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Full width video like PayPal site&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body onload=&quot;init();&quot;&gt;
+    &lt;video id=&quot;myVideo&quot; autoplay&gt;
+      &lt;source
+      src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
+      type=video/webm&gt;
+    &lt;source
+      src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg
+      type=video/ogg&gt;
+    &lt;source
+      src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4
+      type=video/mp4&gt;
+  &lt;/video&gt;
+&lt;/body&gt;</pre>
+
+</details>
+
+<h4>Here is the CSS (remove margins, remove padding, hide parts that could overflow from the &lt;body&gt;):</h4>
+
+<pre>body {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}</pre>
+
+<h4>And now the JavaScript code:</h4>
+
+<pre>var video;
+function init() {
+  // function called when the page is loaded
+  video = document.querySelector(&quot;#myVideo&quot;);
+  // For initial value
+  video.width = window.innerWidth;
+  video.height = window.innerHeight;
+  // For dealing with window resize
+  window.onresize = function() {
+    video.width = window.innerWidth;
+    video.height = window.innerHeight;
+  };
+}</pre>
+
+<h4>Example #2: with a YouTube video</h4>
+
+<p>Full width, resizable, borderless YouTube video. To do this: just 100%
+standard CSS + DOM manipulation using JavaScript.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 73. example video cropping (90) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image073.webp"
+  loading="lazy"
+  style="width:40%"
+  title="Example video cropping"
+  alt="Example video cropping." />
+
+<p>The CSS and JavaScript codes for this example are exactly the same as in
+Example #1.</p>
+
+<h4>Full screen video, pure CSS approaches</h4>
+
+<ol type="1">
+  <li>Let’s use the video from the PayPal Web site, played full screen using only very simple CSS.</li>
+</ol>
+
+<p>In this example, the video does not rescale; it’s just cropped if the
+browser window is resized. Enlarge your browser and you’ll see a man
+with a phone on the right. Resize your browser and you’ll see only part
+of the video.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 74. full screen video (90) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image074.webp"
+  loading="lazy"
+  style="width:40%"
+  title="Full screen video"
+  alt="Full screen video." />
+
+<h4>CSS code:</h4>
+
+<pre>body {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+ 
+video {
+  width:100%;
+  height:auto;
+}</pre>
+
+<ol start="2" type="1">
+  <li>Full screen video with CSS effects</li>
+</ol>
+
+<p>This time the video is zoomed in so that it’s much bigger than the browser’s 
+window. When we resize the browser, the part of the video that is visible adapts 
+itself. It’s not “real resize” of the video. Try this 
+<a href="https://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video" 
+target="_blank" rel="noopener noreferrer">example and read the explanation in this 
+article by Dudley Storey</a>.</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Full screen video with CSS effects &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;video autoplay loop=&quot;&quot;
+      poster=&quot;https://mainline.i3s.unice.fr/mooc/polina.jpg&quot;
+      id=&quot;bgvid&quot;&gt;
+      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.webm&quot;
+        type=&quot;video/webm&quot;&gt;
+      &lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/polina.mp4&quot;
+        type=&quot;video/mp4&quot;&gt;
+    &lt;/video&gt;
+  &lt;/header&gt;
+  &lt;section&gt;
+    &lt;h1&gt;Full screen video with CSS effects&lt;/h1&gt;
+  &lt;/section&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<br/>
+
+<details>
+  <summary><b>CSS source code:</b></summary>
+
+<pre>html, body {
+  color:white;
+  height: 100%;
+}
+header {
+  height: 100%;
+  background-image: url(&#39;https://mainline.i3s.unice.fr/mooc/dots.png&#39;), url(&#39;#&#39;);
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: center center, top left;
+  font-family: sans-serif;
+  color: #051a00;
+}
+header video {
+  position:fixed;
+  top:50%;
+  left:50%;
+  min-width:100%;
+  min-height:100%;
+  width:auto;
+  height:auto;
+  z-index:-100;
+  transform:translateX(-50%) translateY(-50%);
+}</pre>
+
+</details>
+
+<h4>The trick here is that:</h4>
+
+<p>the video is in the header, and the header has a plotted transparent
+background image (“dots.png”) that is repeated in X and Y (see <i>lines
+8</i> and <i>9</i>).</p>
+
+<ol start="2" type="1">
+  <li>The video is positioned so that it’s origin (top left corner) is away from the 
+    visible surface (<i>line 25</i>), while it is set to take 100% of the surface 
+    (<i>lines 20</i> and <i>21</i>).</li>
+</ol>
+
+<p>Full screen video that resizes and keeps its ratio, using the viewport units.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 75. full screen using viweport units (88) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image075.webp"
+  loading="lazy"
+  style="width:40%"
+  title="Full screen video that resized and keeps its ratio using viewport units"
+  alt="Full screen video that resized and keeps its ratio using viewport units." />
+
+<p>This time we obtain the same result as with the first example that used
+JavaScript and a resize event. The video resizes correctly and keeps its
+ratio.</p>
+
+<details>
+  <summary><b>CSS source code:</b></summary>
+
+<pre>body {
+  margin: 0;
+}
+video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center center;
+}</pre>
+
+</details>
+
+<h4>Discussion: why can’t we achieve perfect resizing with only CSS and the
+use of properties width=100% and height=100%?</h4>
+<p>Let’s use the same video to compare the different approaches again:</p>
+
+<ol>
+  <li><a href="https://jsbin.com/zowuqey/edit?html,css,js,output" target="_blank" 
+    rel="noopener noreferrer">Original approach</a>, using JavaScript. This solution 
+    works on any browser, so we will focus on the two following methods, based on pure 
+    CSS.</li>
+  <li><a href="https://jsbin.com/sakujuv/1/edit?html,css,output" target="_blank" 
+    rel="noopener noreferrer">Using CSS 100%</a> width and height properties (no 
+    JavaScript).</li>
+  <li><a href="https://jsbin.com/xureyu/3/edit?html,css,output" target="_blank" 
+  rel="noopener noreferrer">Using CSS viewport</a> units for width and height 
+  (no JavaScript).</li>
+</ol>
+
+<p>Resizing the browser window shows that #1 (JavaScript) and #3
+(viewport units) behave in the same way: the width or height of the
+video always fills the window (whichever is smaller), and we always see
+the whole video.</p>
+<p><b>Conclusion</b>: we can get full size video without JavaScript by
+using viewport units (vw and vh), unless we need to support some old
+browsers (see
+their <a href="https://caniuse.com/#feat=viewport-units" target="_blank" rel="noopener noreferrer">current support on CanIUse</a>).</p>
+<p>Setting the video to 100% width and height results in different behavior:</p>
+
+<ul>
+  <li>100% means 100% of the size of the &lt;body&gt; tag.</li>
+  <li>The body tag’s width is 100% of the browser window width, so the video is always full width.</li>
+  <li>The body tag’s height, however, is determined by the size of its children: the body tag’s height grows and shrinks to accommodate the size of the children.</li>
+  <li>If the browser window is made wide and short, the video is full width, the height is taller than the window, and part of the video is not visible. It seems that just using % does not get us the same effect.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-1-5">2.1.5 Control Players From JavaScript</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The &lt;video&gt; and &lt;audio&gt; elements have methods,
+properties/attributes and events that can be manipulated with
+JavaScript. Using the DOM API, it’s possible to manipulate an audio or
+video element as a JavaScript object that has:</p>
+<ul>
+  <li><b>Methods</b> for controlling the behavior, such as play(), pause(), etc.</li>
+  <li><b>Properties</b> (duration, current position, etc.), either in read/write mode (such as volume), or in read-only mode (such as encoding, duration, etc.)</li>
+  <li><b>Events</b> generated during the life cycle of the element that can be processed using JavaScript callbacks. It is also possible to send events to control the video player.</li>
+</ul>
+
+<p>The set of properties/attributes/methods of the &lt;audio&gt; and
+&lt;video&gt; elements is called an “API” (Application Programming
+Interface). For example, we will speak here of the “media API” to talk
+about the associated API.</p>
+<p>Like any HTML element, the &lt;video&gt; element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a &lt;video&gt; element:</p>
+
+<pre>var video = document.createElement(&#39;video&#39;);
+video.src = &#39;video.mp4&#39;;
+video.controls = true;
+document.body.appendChild(video);</pre>
+
+<p>This will create a complete video player for the file “video.mp4”, with
+control buttons, and will add it to the &lt;body&gt; element of the page.</p>
+
+<h4>Example that shows how to call play/pause or rewind a video</h4>
+
+<p>Please look at this interesting example:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 76. how to call play/pause/rewind functions (94) ~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image076.webp"
+  loading="lazy"
+  style="width:40%"
+  title="How to call the play/pause/rewind functions"
+  alt="How to call the play/pause/rewind functions." />
+
+<p>Note that in order to play the video, you must click on the “vid.play()”
+text. To pause it, you click on the “vid.pause()” text, and so
+on. <i>Notice the text at the top of the video, as well as the
+transparency.</i> The text can be selected, since all the elements
+displayed are pure DOM objects. You can zoom the page in and out, etc.
+This was not possible with the Flash technology.</p>
+<p><b>Conclusion</b>:  you can very easily change the look and feel of
+the standard video player by using custom CSS and designing your own
+control widgets. We can find many examples of such video players that
+offer extended functionalities on the Web. We will present some of them
+later in the course, but before that, let’s see a little more of what we
+can do using the JavaScript API of the &lt;video&gt; element (it will be
+an identical approach for the &lt;audio&gt; element, since it shares the
+same API by a very small margin).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-1-6">2.1.6 The JavaScript API</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Methods, properties, and events</h4>
+
+<p>The JavaScript API gives you powerful tools to manipulate
+the &lt;video&gt; element, as the video object provides many properties,
+methods and events.</p>
+<p>The complete list of events can be found in the <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#event-definitions" 
+target="_blank" rel="noopener noreferrer">HTML5 living standard specification</a>.</p>
+<p>The list of properties can be found at the <a href="https://www.w3.org/2010/05/video/mediaevents.html" 
+target="_blank" rel="noopener noreferrer">W3C HTML5 Video Events and API</a> page. 
+This page is interesting for Web developers because it shows an interactive view of the 
+different values and events changing over time while the video is playing within the page.</p>
+<p>Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html" target="_blank" 
+rel="noopener noreferrer">direct link</a>, and play with the different buttons and look 
+at the table of events and properties that will change in real time. The displayed names
+show the properties, events, and methods from the API.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 77. html5 video events and api (95) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image077.webp"
+  loading="lazy"
+  style="width:40%"
+  title="HTML5 video events and API"
+  alt="HTML5 video events and API." />
+
+<h4>Here is a table that shows the most interesting methods, properties, and events provided by the &lt;video&gt; element API</h4>
+
+<p>We provide this as a quick reminder - keep in mind that the 
+<a href="https://html.spec.whatwg.org/multipage/media.html#mediaevents" 
+target="_blank" rel="noopener noreferrer">complete list</a> is much longer!</p>
+
+<div>
+<table>
+  <thead>
+    <tr class="header">
+      <th><b>Methods</b></th>
+      <th><b>Properties</b></th>
+      <th><b>Events</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td><b>play()</b></td>
+      <td><b>currentSrc</b></td>
+      <td><b>play</b></td>
+    </tr>
+    <tr class="even">
+      <td><b>pause()</b></td>
+      <td><b>currentTime</b></td>
+      <td><b>pause</b></td>
+    </tr>
+    <tr class="odd">
+      <td>load()</td>
+      <td>startTime (readonly)</td>
+      <td>progress</td>
+    </tr>
+    <tr class="even">
+      <td>canPlayType()</td>
+      <td>videoWidth</td>
+      <td>error</td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>videoHeight</td>
+      <td>timeupdate</td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td>duration (readonly)</td>
+      <td>ended</td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>ended (readonly)</td>
+      <td>abort</td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td>error</td>
+      <td>empty</td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>paused (readonly)</td>
+      <td>emptied</td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td>muted</td>
+      <td>waiting</td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td>seeking</td>
+      <td>loadedmetadata</td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td>volume</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td><b>height</b></td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td><b>width</b></td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td></td>
+      <td><b>seekable (readonly)</b></td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td><b>played (readonly)</b></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<br>
+<p></p>
+<p>In the next pages, let’s see, through a set of examples, how to use
+these most important properties, methods, and events…</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-1-7">2.1.7 The &lt;video&gt; Element JavaScript API</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The JavaScript API is useful for implementing playlists, making custom
+user interfaces and many other interesting things. The “enhanced HTML5
+multimedia players” lesson presented further on the course relies
+heavily on this API.</p>
+
+<h4>Example #1: how to use external buttons to control the player’s behavior</h4>
+<p>This example gives the first steps towards writing a custom video
+player. It shows basic usage of the JavaScript API for adding custom
+buttons to play/pause the video or to go back to the beginning by
+setting the currentTime property to zero.</p>
+
+<h4>Try it online:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 78. example video player (97) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image078.webp"
+  loading="lazy"
+  style="width:40%"
+  title="This example gives the first steps towards writing a custom video player"
+  alt="This example gives the first steps towards writing a custom video player." />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 79. cartoon image, custom controls (97) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image079.webp"
+  loading="lazy"
+  style="width:35%"
+  title="Example of custom controls"
+  alt="Example of custom controls." />
+
+<h4>Source code extract:</h4>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>&lt;video id=&quot;vid&quot; controls&gt;
+  &lt;source src=https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm
+    type=video/webm&gt;
+&lt;/video&gt;
+&lt;p&gt;Example of custom controls:&lt;/p&gt;
+&lt;button onclick=&quot;playVideo();&quot; style=&quot;cursor: pointer;&quot;&gt;Play&lt;/button&gt;
+&lt;button onclick=&quot;pauseVideo();&quot; style=&quot;cursor: pointer;&quot;&gt;Pause&lt;/button&gt;
+&lt;button onclick=&quot;rewindVideo();&quot; style=&quot;cursor: pointer;&quot;&gt;
+  Back to beginning&lt;/button&gt;
+&lt;script&gt;
+  vid = document.querySelector(&quot;#vid&quot;);
+  function playVideo() {
+    vid.play();
+  }
+  function pauseVideo() {
+    vid.pause();
+  }
+  function rewindVideo() {
+    vid.currentTime = 0;
+  }
+&lt;/script&gt;</pre>
+
+</details>
+
+<h4>Explanations:</h4>
+
+<ul>
+  <li><i>Lines 6, 7 and 8</i>: we add a click listener to each button, in order to call a JavaScript function when each button is clicked.</li>
+  <li><i>Line 11</i>: using the DOM API, we get the JavaScript object that corresponds to the video element we inserted in the HTML document. This line is outside a function, it will be executed when the page loads.</li>
+  <li><i>Lines 12 and 15</i>: we call methods from the API for playing/pausing the video.</li>
+  <li><i>Line 19</i>: we modify the currentTime property in order to rewind the video. Note that vid.load() also rewinds the video, shows the poster image again, but also pauses the video. By using currentTime=0, the playback does not stop.</li>
+</ul>
+
+<h4>Example #2: how to detect the end of a video and start another one</h4>
+
+<p>This example listens to the ended event, and calls a callback function
+when the video is ended.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 80. example calls a callback function when video ends (98) ~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image080.webp"
+  loading="lazy"
+  style="width:40%"
+  title="This example listens to the ended event, and calls a callback function when the video is ended"
+  alt="This example listens to the ended event, and calls a callback function when the video is ended." />
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;video src=&quot;video.ogv&quot; id=&quot;myVideo&quot;&gt;
+  video not supported
+&lt;/video&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+  var vid = document.querySelector(&#39;#myVideo&#39;);
+  vid.addEventListener(&#39;ended&#39;, playNextVideo, false);
+  function playNextVideo(e) {
+    // Whatever you want to do after the event, change the src attribute
+    // of the video element, for example, in order to play another video
+  }
+&lt;/script&gt;</pre>
+
+</details>
+
+<h4>Example #3: how to manage playlists - sequential movies</h4>
+
+<p>This example detects the end of a video, then loads the next video,
+changes the src attribute of the video element and plays the video.</p>
+
+<p>Check the online example below: use the progress cursor to go near the
+end of the first video that is being played, and see how it
+continues with the next video.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 81. manage playlists (99) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image081.webp"
+  loading="lazy"
+  style="width:40%"
+  title="Manage playlists"
+  alt="Manage playlists." />
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;
+    &lt;title&gt;Sequential Movies&lt;/title&gt;
+    &lt;script&gt;
+      var myVideo;
+      var currentVideo = 0;
+      var sources = [
+        &quot;https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4&quot;,
+        &quot;https://www.archive.org/download/AnimatedMechanicalArtPiecesAtMit/P1120973_512kb.mp4&quot;
+      ];
+      // Set the src of the video to the next URL in the playlist
+      // If at the end we start again from beginning (the modulo
+      // source.length does that)
+      function loadNextVideo() {
+        myVideo.src = sources[currentVideo % sources.length]
+        myVideo.load();
+        currentVideo++;
+      }
+      // listener plays the video
+      function loadAndplayNextVideo() {
+        console.log(&quot;playing &quot; + sources[currentVideo % sources.length])
+        loadNextVideo();
+        myVideo.play();
+      }
+      // Called when the page is loaded
+      function init(){
+        // get the video element using the DOM api
+        myVideo = document.querySelector(&quot;#myVideo&quot;);
+        // Defines a callback function called each time a video ended
+        myVideo.addEventListener(&#39;ended&#39;, loadAndplayNextVideo, false);
+        // Loads the first video when the page is loaded
+        loadNextVideo();
+      }
+    &lt;/script&gt;
+  &lt;/head&gt;
+&lt;body onload=&quot;init()&quot;&gt;
+  &lt;video id=&quot;myVideo&quot;
+    controls&gt;
+  &lt;/video&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Explanations:</h4>
+
+<ul>
+  <li><i>Line 9</i>: the JavaScript array that contains the URLs of the videos in the playlist. In this example, we’ve got only two of them, but if the array is larger the example still works.</li>
+  <li><i>Line 44</i>: when the page is loaded, an init() function is called.</li>
+  <li><i>Lines 34-40</i>: we use the DOM to get the JavaScript object corresponding to the video element, then define a listener for the ended event. Each time a video ends, the loadAndplayNextVideo() callback is called. As the video element has no src attribute by default, we also preload the first video (call to loadNextVideo() at <i>line 38</i>).</li>
+  <li><i>Lines 17-21</i>: the loadNextVideo() function uses a variable called currentVideo that corresponds to the index of the current video. By setting myVideo.src = sources [currentVideo % sources.length], we set the src of the video element to sources[0], then to sources[1], and, as we increment the currentVideo index each time (line 19), if it becomes greater than 1, the modulo (the “%” symbol is the modulo in JavaScript) will make it “loop” between 0 and the number of videos in the playlist. In other words, when the last video ends, it starts back to the first one.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-1-8">2.1.8 <b>Advanced</b> Extended Examples</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this section, we propose five extended examples that use more
+JavaScript and more complex CSS manipulation. They might be a little
+hard to understand if you are a JavaScript beginner, but don’t be afraid
+to try and test them, look at the code, etc.</p>
+
+<p>Some examples are given “as is”, such as the custom video player that
+uses SVG (at the end of the page); if you are interested, you may view
+the code.</p>
+
+<h4>Example #1: a player showing the use of every type of CSS3 transformation</h4>
+
+<p>Please see this example online, originally written by <a href="https://christianheilmann.com/" 
+target="_blank" rel="noopener noreferrer">Chris Heilmann</a>, and tuned by us ;).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 82. 2d transformations: scale, translate  rotate (100) ~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image082.webp"
+  loading="lazy"
+  style="width:40%"
+  title="2d transformations: scale, translate & rotate"
+  alt="2d transformations: scale, translate & rotate." />
+
+<p>Don’t forget to click the JavaScript and CSS tabs of the CodePen in order to display the 
+JavaScript code that creates the buttons on the right of the video, and the CSS that 
+processes the different clicks and applies CSS3 transforms.</p>
+
+<h4>This example shows a lot:</h4>
+
+<ul>
+  <li>It uses the HTML5 elements &lt;nav&gt;, &lt;footer&gt;, &lt;header&gt;.</li>
+  <li>It shows the use of CSS3 2D transformations (scale, translate, and rotate).</li>
+  <li>It shows how to handle DOM events using JavaScript and how to modify CSS 
+    properties of the &lt;video&gt; element from JavaScript.</li>
+</ul>
+
+<h4>Example #2: how to track all possible events and manipulate many properties</h4>
+
+<p>This example also shows how to handle failures. See the code and play with this example below:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 83. how to track all possible events (101) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image083.webp"
+  loading="lazy"
+  style="width:40%"
+  title="Example #2. How to track all possible events"
+  alt="Example #2. How to track all possible events." />
+
+<p>Below is a piece of code for handling errors during video playback:</p>
+
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+
+<pre>...
+vid.addEventListener(&#39;error&#39;, function(evt) {
+  logEvent(evt,&#39;red&#39;);
+}, false);
+...
+function logEvent(evt, color) {
+  switch (evt.type) {
+    ...
+      case &#39;error&#39;:
+      var error = document.querySelector(&#39;video&#39;).error;
+      switch (error.code) {
+        case error.MEDIA_ERR_ABORTED:
+          note.innerHTML = &quot;fetching aborted at the user&#39;s request&quot;;
+          break;
+        case error.MEDIA_ERR_NETWORK:
+          note.innerHTML = &quot;a network error caused the browser to stop fetching the media&quot;;
+          break;
+        case error.MEDIA_ERR_DECODE:
+          note.innerHTML = &quot;an error occurred while decoding the media&quot;;
+          break;
+        case error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+          note.innerHTML = &quot;the media indicated by the src
+            attribute was not suitable&quot;;
+          break;
+        default:
+          note.innerHTML = &quot;an error occurred&quot;;
+          break;
+      }
+    break;
+  }
+  ...
+}</pre>
+
+</details>
+
+<h4>Example #3: how to display a percentage of buffering when using a slow connection</h4>
+
+<p>See the <a href="https://jsbin.com/xororol/3/edit?html,output" target="_blank" rel="noopener noreferrer">
+JSBin example online</a> here too.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 84. display percentage of buffering (102) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<a href="https://jsbin.com/xororol/3/edit?html,output" target="_blank" rel="noopener noreferrer">
+<img class="displayed"
+  src="./images/image084.webp"
+  loading="lazy"
+  style="width:40%"
+  title="Example #3. How to display a percentage of buffering"
+  alt="Example #3. How to display a percentage of buffering." /></a>
+
+<p>Note that on mobile phones, the video does not start until the user presses 
+the play control or clicks on the video picture. Using the "canplaythrough" event 
+is a trick to call a function that starts the video player as soon as the page 
+is loaded on desktop. This event is not supported by mobile devices, so if you 
+try this example on a mobile, the video will not start automatically.</p>
+
+<p>As explained by the <a href="https://developer.apple.com/" target="_blank" 
+rel="noopener noreferrer">Apple Developer Web site</a>: "The buffered property 
+is a TimeRanges object: an array of start and stop times, not a single value. 
+Consider what happens if the person watching the media uses the time scrubber 
+to jump forward to a point in the movie that hasn’t loaded yet—the movie stops
+loading and jumps forward to the new point in time, then starts buffering again 
+from there. So the buffered property can contain an array of discontinuous ranges. 
+The example simply seeks the end of the array and reads the last value, so it 
+actually shows the percentage into the movie duration for which there is data."</p>
+
+<br/>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;title&gt;JavaScript Progress Monitor&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;script&gt;
+    function getPercentProg() {
+      var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
+      var endBuf = myVideo.buffered.end(0);
+      var soFar = parseInt(((endBuf / myVideo.duration) * 100));
+      document.getElementById(&quot;loadStatus&quot;).innerHTML = soFar + &#39;%&#39;;
+    }
+    // Will be called as soon as the page is ready on desktop computer,
+    // Only when a user clicks on play control or image on mobile
+    function myAutoPlay() {
+      var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
+      myVideo.play();
+    }
+    function addMyListeners(){
+      var myVideo = document.getElementsByTagName(&#39;video&#39;)[0];
+      myVideo.addEventListener(&#39;progress&#39;, getPercentProg, false);
+      // Calls autoplay only if the device is adapted
+      myVideo.addEventListener(&#39;canplaythrough&#39;, myAutoPlay, false);
+    }
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;addMyListeners()&quot;&gt;
+  &lt;h1&gt;Check progression of buffering before playing a movie. Useful withy
+    slow connexion (3G, etc.)&lt;/h1&gt;
+  &lt;div&gt;
+    &lt;video controls&gt;
+      &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.webm
+        type=video/webm&gt;
+      &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.ogg  
+        type=video/ogg&gt;
+      &lt;source src=https://html5doctor.com/demos/video-canvas-magic/video.mp4
+        type=video/mp4&gt;
+    &lt;/video&gt;
+    &lt;p id=&quot;loadStatus&quot;&gt;Buffering...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Example #4: how to use SVG elements as external controllers</h4>
+
+<p>This is the ultimate way of doing a real custom player: redesign your own controls using SVG shapes! 
+This example  <a href="https://www.w3.org/2010/Talks/0430-www2010-plh/video-player.xhtml" 
+target="_blank" rel="noopener noreferrer">(try it online) is given “as is” for those of you who may be curious</a>.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 85. cup on table xhtml5 and svg player (103) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image085.webp"
+  loading="lazy"
+  style="width:25%"
+  title="Example #4. Snapshot of the Online Example of a Custom XHTML5/SVG Video 
+    Player.  Image Shows a Cup of Coffee on a Table"
+  alt="Example #4. Snapshot of the Online Example of a Custom XHTML5/SVG Video 
+    Player.  Image Shows a Cup of Coffee on a Table." />
+
+<h4>Example #5: a custom video player written by a previous student</h4>
+
+<p>This is more an example than a tutorial. Maurice, a student who
+followed the precursor version of this MOOC, had the assignment to write
+a custom video player with playlist, video thumbnails, custom
+play/pause/next/previous/volume controls, and present it in a Web page
+that used a nice layout based on the HTML5 structuring elements studied
+previously.</p>
+<p>Here is the online example. We recommend that you look at the source
+code:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-3-1">2.3.1 Enhanced HTML5 Media Players and Frameworks</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This section introduces the HTML5 &lt;track&gt; element, useful for
+adding closed captions, subtitles, descriptions, and metadata to your
+videos. It comes with a new JavaScript API.</p>
+<p>The WebVTT format used for describing a track file is also presented in
+this chapter.</p>
+
+<h4>Most of the major desktop browsers support HTML5 captioning</h4>
+
+<p>Please check the <a href="https://caniuse.com/mdn-html_elements_track" target="_blank" rel="noopener noreferrer">
+browser support</a> related to the &lt;track&gt; element support by browsers.</p>
+
+<h4>Some definitions</h4>
+
+<ul>
+  <li><b>closed captions</b> describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).</li>
+  <li><b>subtitles</b> are only for spoken words.</li>
+</ul>
+
+<br>
+<p>The accessibility features of TV programs often propose both options for people with hearing deficiencies.</p>
+
+<h4>Typical use: add a subtitle/caption track to a &lt;video&gt; element</h4>
+
+<h4>Important warning!!</h4>
+
+<p>The &lt;track&gt; element cannot be used with a file:// URL. Please use https:// and a Web server. 
+Your server must use a special MIME format for the .vtt files: text/vtt;charset=utf-8 (set by default on most servers now).</p>
+
+<h4>Examples of the lines to add to an Apache Web server:</h4>
+
+<pre>&lt;Files mysubtitle.vtt&gt;
+  ForceType text/vtt;charset=utf-8
+&lt;/Files&gt;</pre>
+
+<p>It is worth mentioning that most browsers work well with WebVTT, even
+if the MIME type is not defined.</p>
+
+<p>Here is an example of a video element that includes a &lt;track&gt; element 
+in the .vtt (WebVTT) format (<i>line 9</i> in the source code shown below):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 86. example snapshot (104) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image086.webp"
+  loading="lazy"
+  title="Example using a track element in the .vtt format"
+  alt="Example using a track element in the .vtt format."
+  style="width:40%;" />
+  
+<p>The example uses a &lt;track&gt; element to insert basic captions to the video: 
+sounds and music are described, in addition to standard subtitles that correspond 
+to what the different movie characters say.</p>
+
+<pre>&lt;video height=&quot;272&quot; width=&quot;640&quot;
+  poster=&quot;https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg&quot;
+  crossorigin=&quot;anonymous&quot;
+  controls&gt;
+&lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/sintel.mp4&quot;
+  type=&quot;video/mp4&quot;&gt;
+&lt;source src=&quot;https://mainline.i3s.unice.fr/mooc/sintel.webm&quot;
+  type=&quot;video/webm&quot;&gt;
+&lt;track src=&quot;https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt&quot;
+  kind=&quot;captions&quot; label=&quot;Closed Captions&quot; default&gt;
+&lt;/video&gt;</pre>
+
+<h4>Notes:</h4>
+
+<ul>
+  <li>The &lt;track&gt; element at <i>line 9</i> has an attribute named kind that 
+    indicates the type of the track that is included. Possible values are: subtitles, 
+    captions, descriptions, chapters or metadata.</li>
+  <li>The &lt;track&gt; element also has an attribute default that indicates that 
+    we want this track to be displayed by default when reading the video.</li>
+  <li>We also used an attribute named crossorigin that is necessary just to run this 
+    demo, as it is required by the server that hosts the video from this example 
+    (server = codepen.io, but as the video and .vtt files come from another origin 
+    -another server-, this attribute is necessary).</li>
+</ul>
+
+<h4>Multiple tracks may be included in a video element</h4>
+
+<p>Multiple tracks are needed to support different langages, video captions for the hearing-impaired, subtitles, etc.</p>
+
+<p>Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element" 
+target="_blank" rel="noopener noreferrer">from the specification</a>) that includes multiple &lt;track&gt; 
+elements (subtitles for three languages and captions only for English):</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;video src=&quot;brave.webm&quot;&gt;
+  &lt;track kind=subtitles src=brave.en.vtt
+    srclang=en
+    label=&quot;English&quot;&gt;
+  &lt;track kind=captions src=brave.en.hoh.vtt
+    srclang=en
+    label=&quot;English for the Hard of Hearing&quot;&gt;
+  &lt;track kind=subtitles src=brave.fr.vtt
+    srclang=fr
+    lang=fr 
+    label=&quot;Français&quot;&gt;
+  &lt;track kind=subtitles src=brave.de.vtt
+    srclang=de
+    lang=de
+    label=&quot;Deutsch&quot;&gt;
+&lt;/video&gt;</pre>
+
+</details>
+
+<p>Note the use of some new attributes in the &lt;track&gt; element:</p>
+
+<ul>
+  <li>label: the label value will be displayed in the GUI control that is included in the default HTML5 video player.</li>
+  <li>srclang:  gives the language for the text track data. The value must be a valid 
+    <a href="https://tools.ietf.org/html/bcp47" target="_blank" rel="noopener noreferrer">BCP 47 language tag</a>. 
+    This attribute must be present if <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind" 
+    target="_blank" rel="noopener noreferrer">the element’s kind attribute</a> is in the 
+    <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles" 
+    target="_blank" rel="noopener noreferrer">subtitles state</a>.</li>
+</ul>
+
+<h4>External resources</h4>
+
+<ul>
+  <li>From the HTML specification: <a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element" 
+    target="_blank" rel="noopener noreferrer">The track element</a></li>
+  <li>From the W3C specification: <a href="https://www.w3.org/TR/webvtt1/" 
+    target="_blank" rel="noopener noreferrer">WebVTT: The Web Video Text Tracks Format</a></li>
+  <li>From MDN’s Web Docs: <a href="https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/" 
+    target="_blank" rel="noopener noreferrer">WebVTT</a> and 
+    <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video" 
+    target="_blank" rel="noopener noreferrer">Adding captions and subtitles to HTML5 video</a></li>
+  <li>An article from 3playmedia: <a href="https://www.3playmedia.com/2017/06/30/how-to-create-a-webvtt-file/" 
+    target="_blank" rel="noopener noreferrer">How to create a WebVTT file</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-3-2">2.3.2 The WebVTT Format</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The "<a href="http://dev.w3.org/html5/webvtt/" target="_blank" rel="noopener noreferrer">
+;WebVTT: The Web Video Text Tracks Format </a>" defines files that contain text for captions 
+and subtitles, and much more… The WebVTT files are used with the src attribute of the &lt;track&gt; 
+element, that can be used inside a &lt;video&gt;…&lt;/video&gt;.</p>
+<p>In the interactive example presented before, we used a file called sintel-captions.vtt:</p>
+
+<pre>&lt;video height=&quot;272&quot; width=&quot;640&quot;
+  poster=&quot;https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg&quot;
+  crossorigin=&quot;anonymous&quot;
+  controls&gt;
+  ...
+&lt;track src=&quot;https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt&quot;
+  kind=&quot;captions&quot; label=&quot;Closed Captions&quot; default&gt;
+&lt;/video&gt;</pre>
+
+<p>And here is an extract of the corresponding <a href="https://mainline.i3s.unice.fr/mooc/sintel-captions.vtt" 
+target="_blank" rel="noopener noreferrer">sintel-captions.vtt</a> file:</p>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>WEBVTT
+00:00:01.000 --&gt; 00:00:02.042
+(drumbeat)
+00:00:07.167 --&gt; 00:00:12.025
+(plaintive violin solo playing)
+00:00:15.000 --&gt; 00:00:18.183
+(wind whistling)
+00:00:24.167 --&gt; 00:00:27.025
+(orchestra music swells)
+00:00:43.033 --&gt; 00:00:43.192
+(weapons clash)
+00:00:44.000 --&gt; 00:00:44.175
+(gasps)
+00:00:44.183 --&gt; 00:00:45.158
+(grunts)
+00:00:45.167 --&gt; 00:00:47.058
+(groaning)
+00:00:54.192 --&gt; 00:00:55.150
+(blade rings)
+00:00:55.158 --&gt; 00:00:57.008
+(bellowing)
+00:00:57.017 --&gt; 00:00:58.067
+(grunting)
+00:00:59.075 --&gt; 00:01:00.133
+(panting)
+00:01:05.108 --&gt; 00:01:06.125
+(cries out in agony)
+00:01:08.050 --&gt; 00:01:09.058
+(panting)
+00:01:12.092 --&gt; 00:01:13.142
+(panting)
+00:01:14.017 --&gt; 00:01:18.125
+(orchestra plays ominous low notes)
+00:01:31.058 --&gt; 00:01:35.133
+(plaintive violin solo returns)
+00:01:46.158 --&gt; 00:01:49.058
+This blade has a dark past.
+00:01:51.092 --&gt; 00:01:54.108
+It has shed much innocent blood.
+00:01:57.083 --&gt; 00:02:00.000
+You&#39;re a fool for traveling alone
+so completely unprepared.
+00:02:01.100 --&gt; 00:02:03.033
+You&#39;re lucky your blood&#39;s still flowing.
+00:02:04.183 --&gt; 00:02:06.075
+Thank you.</pre>
+
+</details>
+
+<p>This format is rather simple, but we still recommend reading 
+<a href="https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API" target="_blank" rel="noopener noreferrer">
+this excellent article from Mozilla Developer Network</a> that explains in detail all the different options.</p>
+<p>Each “element” in this file has a starting and ending time, plus a value (the text that will be displayed), 
+followed by a blank line (blanklines are separators between elements).</p>
+<p><b>Each element is called “a cue”</b>, and may optionally have an ID that will be useful when using the 
+track element JavaScript API, inparticular the getCueById() method of TextTrack objects.</p>
+
+<h4>Example of a .vtt file with numeric IDs:</h4>
+
+<pre>9
+00:00:21.000 --&gt; 00:00:22.000
+to hear from you
+10
+00:00:22.500 --&gt; 00:00:25.000
+We want to hear what inspires you as a developer</pre>
+
+<h4>IDs may also be defined as strings, and values can use HTML as well:</h4>
+
+<pre>Opening
+00:00:00.000 --&gt; 00:00:30.000
+Welcome to our &lt;i&gt;nice film&lt;/i&gt;</pre>
+
+<p>The displayed text can span multiple lines, but blank lines are not
+allowed, as they would be interpreted as a separator:</p>
+
+<pre>00:01:57.083 --&gt; 00:02:00.000
+&lt;p&gt;You&#39;re a fool for traveling alone&lt;/p&gt;
+&lt;p&gt;so completely unprepared.&lt;/p&gt;</pre>
+
+<h4>External resource:</h4>
+
+<ul>
+  <li>An unofficial <a href="https://quuz.org/webvtt/" target="_blank" rel="noopener noreferrer">Live WebbVTT format</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-3-3">2.3.3 Adding Subtitles to a Video</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Let’s look at a simple example. First, you need a video on one of the
+formats/codecs supported by the browsers you target. A recommended
+codec is mp4/H264, but other formats, such as webm, may have some
+advantages if the browser supports them. For example, webm allows the
+video to start playing after a much shorter buffering time. In other
+words, try if possible to provide the video encoded with more than one
+codec.</p>
+
+<p>For this, use any sort of open source, free or commercial video encoding software, such
+as <a href="https://handbrake.fr/" target="_blank" rel="noopener noreferrer">Handbrake</a> (free, open source) or 
+<a href="https://www.erightsoft.com/SUPER.html" target="_blank" rel="noopener noreferrer">
+Super</a> (free). There are also online video encoding services, and you can even upload
+your video to YouTube, let it encode your video in several resolutions and codecs, and use 
+a browser extension such as <a href="https://addons.mozilla.org/fr/firefox/addon/video-downloadhelper/" 
+target="_blank" rel="noopener noreferrer">Video DownloadHelper</a> (for Firefox)
+or <a href="https://jdownloader.org/" target="_blank" rel="noopener noreferrer">
+JDownloader</a>, to download the video in your chosen formats.</p>
+
+<p>So, let’s suppose you have a video like the one below (we included it on
+YouTube for practical reasons). This video has subtitles (you can
+activate them in the YouTube player), but the goal of this lesson is to
+explain how we made them without using the YouTube embedded tools, which
+do not allow export the subtitle file to be exported in the webVTT
+format.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 87. picture guitar picking (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image087.webp"
+  loading="lazy"
+  title="Picture guitar picking"
+  alt="Picture guitar picking."
+  style="width:45%;" />
+
+<p>And if you’ve also got it in mp4/H264 and in webm formats, here is how you can embed it in your page using the video element:</p>
+
+<pre>&lt;video id=&quot;myVideo&quot; width=500 controls&gt;
+  &lt;source
+    src=&quot;videos/SameOldSongAndDanceRogerLathaudPart1MidRes.mp4&quot;
+    type=&quot;video/mp4&quot;&gt;
+  &lt;source
+    src=&quot;videos/SameOldSongAndDanceRogerLathaudPart1MidRes.webm&quot;
+    type=&quot;video/webm&quot;&gt;
+  &lt;track src=&quot;videos/subtitles.vtt&quot;
+    kind=&quot;subtitles&quot; srclang=&quot;en&quot; default&gt;
+&lt;/video&gt;</pre>
+
+<p>At <i>line 9</i>, we added a &lt;track&gt; element to add English subtitles, as the 
+guitar teacher there is speaking in French. We will now explain how we created this 
+subtitle track.</p>
+
+<h4>Adding subtitles to the video</h4>
+
+<p>Now, we need to create a WebVTT file for this video. How can we synchronize an English 
+translation of what the guitar teacher says in French?</p>
+<p>Many tools - both free and commercial - are available to add subtitles to a video. Most 
+are native applications you need to install on your 
+computer. However, a free and very practical tool is available for doing this 100% in a Web 
+browser: <a href="https://amara.org/en/" 
+target="_blank" rel="noopener noreferrer">amara</a>.</p>
+<p>Go to the above Web site, click on the “subtitle a video” link, then follow the different 
+tutorials/instructions. It will ask for a YouTube URL, so it’s better to first upload your 
+video to YouTube (even in private mode). Once you have entered the URL of your video, you 
+will have an online subtitles/caption editor. Enter your subtitles and sync them until you 
+are happy with the results.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 88. example subtitles and captions (109) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image088.webp"
+  loading="lazy"
+  title="Example subtitles and captions"
+  alt="Example subtitles and captions."
+  style="width:40%;" />
+
+<p>Once your subtitles/captions are ok, you will be able to upload them to YouTube, or -this 
+is what we wanted first- download them as WebVTT format:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 89. youtube make subtitles (110) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image089.webp"
+  loading="lazy"
+  title="Youtube make subtitles"
+  alt="Youtube make subtitles."
+  style="width:35%;" />
+
+<p>Note that YouTube can also help you “make subtitles” with its speech recognition tool, but 
+you will only be able to export in .srt format afterwards. You will have to convert this format 
+afterwards to .vtt.</p>
+
+<h4>Try your subtitled/captioned video</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 90. example guitar picking subtitle captions (110) ~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image090.webp"
+  loading="lazy"
+  title="Example guitar picking subtitle captions"
+  alt="Example guitar picking subtitle captions."
+  style="width:40%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-3-4">2.3.4 Styling Captions</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this section, we will look at different possibilities for styling
+and positioning  the text displayed as captions/subtitles while playing
+a video.</p>
+<p>The example below shows how we can do that (play the video for 40s, look
+at the positions and styles of the subtitles and captions, look at the
+HTML):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 91. blank codepen (111) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image091.webp"
+  loading="lazy"
+  title="Blank CodePen"
+  alt="Blank CodePen."
+  style="width:35%;" />
+   
+<p>The WebVTT file is shown below. Notice the new attributes that have been added 
+on the right end of the duration values:</p>
+
+<details>
+  <summary><b>Click to expand!</b></summary>
+
+<pre>WEBVTT
+00:00:01.000 --&gt; 00:00:05.000
+These captions test some features of the WebVTT formats
+00:00:06.000 --&gt; 00:00:10.000 line:5%
+This cue is positioned at the top of the video
+00:00:11.000 --&gt; 00:00:15.000 position:5% align:start
+This cue is positioned at the left side of the video.
+00:00:16.000 --&gt; 00:00:20.000 position:95% align:end
+And this one ate the right side.
+00:00:21.000 --&gt; 00:00:25.000 size:33%
+This cue is only a third of the width of the video, hence the multiple line breaks.
+00:00:26.000 --&gt; 00:00:30.000
+This cue contains &lt;b&gt;bold&lt;/b&gt; text.
+00:00:31.000 --&gt; 00:00:35.000
+This cue contains &lt;i&gt;italic&lt;/i&gt; text.
+00:00:36.000 --&gt; 00:00:40.000
+This cue contains &lt;u&gt; &lt;/u&gt; text.
+00:00:41.000 --&gt; 00:00:45.000
+This cue contains &lt;b&gt;&lt;i&gt;&lt;u&gt;bold, italic, 
+underlined&lt;/u&gt;&lt;/i&gt;&lt;/b&gt; text.
+00:00:46.000 --&gt; 00:00:50.000
+&lt;c.myclass&gt;This cue contains the class &quot;myclass&quot;.
+Browsers that support ::cue CSS should make it red.&lt;/c&gt;
+00:00:51.000 --&gt; 00:00:55.000
+The following cue contains two voices.
+Tarzan should be blue and Jane green.
+00:00:56.000 --&gt; 00:01:00.000
+&lt;v Tarzan&gt;Me Tarzan...
+&lt;v Jane&gt;That would make me Jane!
+bigtext
+00:01:01.000 --&gt; 00:01:05.000
+This cue has a unique id.
+Using CSS, its font size should be 150%.
+00:01:06.000 --&gt; 00:01:10.000
+The &lt;00:01:06.333&gt;text &lt;00:01:06.666&gt;in &lt;00:01:07.000&gt;this 
+&lt;00:01:07.333&gt;cue &lt;00:01:07.666&gt;should &lt;00:01:08.000&gt;grow
+&lt;00:01:08.333&gt;one &lt;00:01:08.666&gt;word &lt;00:01:09.000&gt;at 
+&lt;00:01:09.333&gt;a &lt;00:01:09.666&gt;time
+00:01:11.000 --&gt; 00:01:15.000
+That&#39;s it! For now...</pre>
+
+</details>
+
+<h4>How to position the subtitles</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 92. example video: positioning subtitles (112) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image092.webp"
+  loading="lazy"
+  title="Example video: positioning subtitles"
+  alt="Example video: positioning subtitles."
+  style="width:40%;" />
+
+<p>The video example tests nearly all the possibilities for positioning subtitles/captions, styling (using HTML element wrapping with &lt;b&gt;, &lt;i&gt;,  etc.), voicing (subtitles corresponding to different characters will be displayed in different colors) and CSS styling.</p>
+<p>It is possible to locate the cues in the video viewport using absolute or relative values. The attributes that position the text are located on the same line as the cue definition, like at <i>line 9</i> of the previous WebVTT example file:</p>
+
+<pre>00:00:11.000 --&gt; 00:00:15.000&lt;b&gt; position:5% align:start&lt;/b&gt;
+This cue is positioned at the left side of the video.</pre>
+
+<h4>There are several possible values:</h4>
+<ul>
+  <li><b>line:5%</b> means “vertical position at a line 5% of the height of the video viewport (it will be located at the top of the video”, proportional to its vertical size). </li>
+  <li><b>position:5% align:start</b> means “regular location at the bottom of the video, the start of the sentence will be located at 5% of the width of the video”, i.e., near the left side.</li>
+  <li><b>position:95% align:end</b> means “regular location at the bottom of the video, the end of the sentence will be at 95% of the horizontal width of the video”.</li>
+  <li><b>size:33%</b> The size of each line will be one third of the size of the video. Since the sentence won’t fit, it will be displayed in multiple lines.</li>
+</ul>
+
+<p>And so on. Please look at the video as it is self-explanatory.</p>
+
+<h4>Use of &lt;b&gt;, &lt;i&gt;, &lt;u&gt; for styling subtitles / captions</h4>
+<p>One can use the HTML elements  &lt;b&gt;, &lt;i&gt;, &lt;u&gt; to modify the rendering of subtitles and captions, as illustrated in the example below:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 93. This cue contains bold, italic and underline text (113) ~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image093.webp"
+  loading="lazy"
+  title="This cue contains bold, italic and underline text"
+  alt="This cue contains bold, italic and underline text."
+  style="width:40%;" />
+   
+<h4>Using CSS classes for styling</h4>
+<p>It is possible to style using CSS classes as part of a cue value,
+using the &lt;c&gt; element. You can specify the CSS class that should be
+applied by adding “.” followed by the name of your CSS class. Here is an
+example:</p>
+
+<pre>&lt;c.myclass&gt;This cue contains the class &quot;myclass&quot;.
+Browsers that support ::cue CSS should make it red.&lt;/c&gt;</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 94. video frame showing ::cue containing 'myclass' (113) ~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image094.webp"
+  loading="lazy"
+  title="Image of a video frame showing cue containing the class 'myclass'"
+  alt="Image of a video frame showing cue containing the class 'myclass'."
+  style="width:40%;" />
+
+<h4>CSS rules used in this example:</h4>
+
+<pre>&lt;style type=&quot;text/css&quot;&gt;
+  ::cue(.myclass) { color: red; }
+  ::cue(v[voice=&quot;Tarzan&quot;]) { color: blue; }
+  ::cue(v[voice=&quot;Jane&quot;]) { color: green; }
+  ::cue(#bigtext) { font-size: 150%; }
+&lt;/style&gt;</pre>
+
+<p>The ::cue pseudo element selector is used to match “cues” in the webVTT file. You add 
+parenthesis and a secondary CSS selector to match cues that have a particular id, or a 
+particular CSS class, etc. Look at the CSS above and at the extract from the webVTT file, 
+play the video, you will understand how the above CSS classes affect the rendering of the 
+subtitles for Jane and Tarzan’s voices.</p>
+<p>Support differs from one browser to another, see <a href="https://caniuse.com/#feat=webvtt" 
+target="_blank" rel="noopener noreferrer">this compatibility table</a> (from CanIuse). 
+Note however that most of the enhanced players presented further on in the course provide full support.</p>
+
+<h4>Using voicing for styling: the &lt;v&gt; element</h4>
+<p>Here is an example that shows the voices of the different characters displayed with different colors:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 95. v tag example (114) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image095.webp"
+  loading="lazy"
+  title="v tag example. Tarzan and Jane"
+  alt="v tag example. Tarzan and Jane."
+  style="width:40%;" />
+
+<p>Using the &lt;v&gt; tag, you will distinguish different voices that should be displayed in 
+different colors (depending on the HTML5 video player implementation). See the CSS presented 
+in the previous section to see how to specify the colors for the different voices.</p>
+
+<h4>Example source code:</h4>
+
+<pre>00:00:56.000 --&gt; 00:01:04.000
+&lt;v Tarzan&gt;Me Tarzan...
+&lt;v Jane&gt;That would make me Jane!</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-3-5">2.3.5 Chapter</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>When you play a movie in DVD or Blu-Ray format, a menu appears on the
+screen: play a movie, choose subtitles, etc. Usually there is also a
+“chapters” menu that allows you to quickly access a part of the movie.
+With videos on the Web, one can also indicate the chapter breakdown,
+using WebVTT files and a &lt;track&gt; element/tag.</p>
+<p>Adding chapters is very similar to adding subtitles/captions. Look
+at <i>line 5</i> in the code below, where we use an
+extra &lt;track&gt; element with a kind=“chapters” attribute.
+</p>
+
+<pre>&lt;video poster=&quot;webvtt_talk.png&quot; style=&quot;width:100%&quot; preload=&quot;metadata&quot;&gt;
+  &lt;source src=&quot;webvtt_talk.webm&quot;&gt;
+  &lt;source src=&quot;webvtt_talk.mp4&quot;&gt;
+  &lt;source src=&quot;webvtt_talk.ogv&quot;&gt;
+  &lt;track id=&quot;nav&quot; src=&quot;webvtt_talk_navigation.vtt&quot; 
+    &lt;b&gt;kind=&quot;chapters&quot;&lt;b&gt; srclang=&quot;en&quot;&gt;
+  &lt;track id=&quot;cc&quot; src=&quot;webvtt_talk_captions.vtt&quot; kind=&quot;captions&quot;
+    label=&quot;captions&quot; srclang=&quot;en&quot; default&gt;
+&lt;/video&gt;</pre>
+
+<p>Here is an example of WebVTT files with defined chapters. Each "CUE" at 
+<i>lines 3, 7, 11</i>, … can bear any name. We use "Chapter 1, Chapter 2, 
+Ending, etc." but you are free to name them as you wish.</p>
+
+<p>What makes them special is that the track has an attribute kind="chapters".
+Often, the &lt;video&gt; elements rendered in standard browsers ignore chapters, 
+but enhanced HTML5 players take them into account, and it’s not much of a stretch 
+to make your own enhanced player with a nice chapter presentation, as we’ll see 
+in a more advanced chapter of this course.  For example, we’ll generate a custom 
+navigation menu, using the &lt;track&gt; JavaScript API (explained later in this 
+section).</p>
+
+<h4>Example of a WebVTT file that defines chapters:</h4>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>WEBVTT FILE
+Chapter 1
+00:00:00.000 --&gt; 00:00:10.700
+Title Slide
+Chapter 2
+00:00:10.700 --&gt; 00:00:47.600
+Introduction by Naomi Black
+Chapter 3
+00:00:47.600 --&gt; 00:01:50.100
+Impact of Captions on the Web
+Chapter 4
+00:01:50.100 --&gt; 00:03:33.000
+Requirements of a Video text format
+Ending
+00:03:33.000 --&gt; 00:04:57.766
+Simple WebVTT file
+Greetings 6
+00:04:57.766 --&gt; 00:06:16.666
+Styled WebVTT file</pre>
+
+</details>
+
+<p>An example of what you can achieve using chapters, using the 
+<a href="https://www.jwplayer.com/" target="_blank" rel="noopener noreferrer">JW Player</a></p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 96. using the jw player (115) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image096.webp"
+  loading="lazy"
+  title="Using the JW player"
+  alt="Using the JW player."
+  style="width:40%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-3-6">2.3.6 Tools for Creating WebVTT Files</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Many tools are available to make and edit HTML5 video and caption/subtitles:</p>
+
+<ul>
+  <li>Tools for converting existing file formats to WebVTT files, such as 
+    <a href="https://atelier.u-sub.net/srt2vtt/" target="_blank" rel="noopener noreferrer">
+    Simple SubRip to WebVTT</a> converter, which is popular in the DivX/AVI/Mkv/mp4 scene. 
+    Do a quick Web search and you will get plenty of other results.</li>
+  <li>Tools for creating subtitles/captions from scratch. Use these to generate a 
+    WebVTT file. You can embed the &lt;track&gt; element in your own videos, on your 
+    own Web pages, or upload the WebVTT file to YouTube.  We recommend 
+    <a href="https://amara.org/en/" target="_blank" rel="noopener noreferrer">
+    amara</a>. It’s a free online tool that is very easy to use. There are also 
+    apps such as <a href="https://www.macupdate.com/app/mac/25826/subs-factory" 
+    target="_blank" rel="noopener noreferrer">Subs Factory</a> (Mac OS), 
+    <a href="https://jubler.org/" target="_blank" rel="noopener noreferrer">
+    Jubler</a> or <a href="https://nikse.dk/SubtitleEdit" target="_blank" 
+    rel="noopener noreferrer">Subtitle Edit</a>) (Windows).</li>
+  <li>Enhanced HTML5 video players that use the &lt;video&gt;, &lt;source&gt; and 
+    &lt;track&gt; elements under the hood. They also provide many extra features, 
+    including support for subtitle/caption formats other than WebVTT (by converting 
+    on the fly).</li>
+</ul>
+
+<p>We do not claim that these are the best tools, so feel free to share your 
+discoveries in the discussion forum!</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-3-7">2.3.7 The &lt;track&gt; JavaScript API</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Most “complex” HTML elements like forms, audio or video players, come with a 
+JavaScript API that allows you to control them programmatically, customize them, etc.</p>
+
+<h4>The &lt;track&gt; element comes with a powerful API that is used to develop 
+many interesting features such as:</h4>
+<ul>
+  <li>Dynamically building a navigation menu that shows the different chapters of 
+    the video.</li>
+  <li>Synchronizing page content with timestamps in the WebVTT file (for example: 
+    show a map next to the video, that shows the location corresponding to the 
+    video content).</li>
+  <li>Displaying all the subtitles/captions at once as HTML in the page.</li>
+  <li>Making an app for creating on the fly subtitles/captions.</li>
+  <li>Etc.</li>
+</ul>
+
+<h3>Examples of use</h3>
+
+<h4>Example #1: add a navigation menu to start playing the video at given 
+chapters</h4>
+
+<p>This example shows a video with an enhanced progress bar that displays the 
+different chapters as small "clickable" squares. Furthermore, using the JavaScript 
+API of the &lt;track&gt; element, this Web site builds a navigation menu (on the 
+right of the video):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 97. navigation menu using the track javascript api (117) ~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image097.webp"
+  loading="lazy"
+  title="Navigation menu using the track JavaScript API"
+  alt="Navigation menu using the track JavaScript API."
+  style="width:40%;" />
+
+<h4>Example #2: sync video with Google Map and Google Street View</h4>
+
+<p>Check <a href="https://simpl.info/track/map/index.html" target="_blank" 
+rel="noopener noreferrer">this demo (only on Chrome)</a> by 
+<a href="https://samdutton.com/" target="_blank" rel="noopener noreferrer">
+Sam Dutton</a>: it shows a video that comes with a WebVTT file that contains 
+longitudes and latitudes. When the video plays, JavaScript functions are called 
+at given times and get the longitude and latitude. A Google Map and a Google 
+Street views are updated in real time.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 98. video sync with map and street views (117) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image098.webp"
+  loading="lazy"
+  title="Video sync with map and street views"
+  alt="Video sync with map and street views."
+  style="width:40%;" />
+
+<h4>Example #3: sync guitar tablatures and music score with a video</h4>
+<p>This example shows how we manage to render music scores in real time as the 
+video plays. Some JavaScript code listens to the ontimeupdate event while the 
+video is playing. We use the currentTime property of the video to know exactly 
+where we are in the video. Finally, we also rely on an external library to render 
+in an HTML5 canvas the bars corresponding to the current video explanations. We 
+render in real time guitar pro tablatures using the alphatab.net library.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~ 99. we render in real time guitar pro tablatures using the alphatab.net library (118) ~~~-->
+<img class="displayed"
+  src="./images/image099.webp"
+  loading="lazy"
+  title="We render in real time guitar pro tablatures using the alphatab.net library"
+  alt="We render in real time guitar pro tablatures using the alphatab.net library."
+  style="width:40%;" />
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-3-8">2.3.8 Enhanced HTML5 Video Players</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>There are numerous "enhanced" video players; most are free and open source, 
+some are commercial. They offer lots of features, which are listed below. Not 
+all of these features are available in every player, this list just illustrates 
+what can be added to the standard &lt;video&gt; element.</p>
+
+<p>We call them "HTML5 enhanced video players" because on top of being based on 
+the &lt;video&gt; element, they come with custom features, custom look’n’feel, 
+chapters, etc., based on a JavaScript API that makes such customization possible.</p>
+
+<h4>Accessible players</h4>
+
+<p>For those of you interested in this particular topic, here is a very good 
+resource that compares most of the players presented in this section, in terms 
+of accessibility. This resource has links to players designed especially for 
+people with disabilities: <a href="https://www.digitala11y.com/accessible-jquery-html5-media-players/" 
+target="_blank" rel="noopener noreferrer">accessible media players and resources</a>.</p>
+
+<h4>Advantages and disadvantages of using a custom player</h4>
+
+<h4>Advantages of enhanced video players:</h4>
+<ul>
+  <li>Support for all kinds of subtitle formats.</li>
+  <li>Customizable look’n’feel (add your logo, custom themes, etc.)</li>
+  <li>Full screen mode without borders on old browsers (today’s implementations 
+    of the &lt;video&gt; element support full screen mode)</li>
+  <li>Consistent look’n’feel across browsers (menus for subtitles, etc.)</li>
+  <li>1.5x, 2x, 3x speeds for fast playback.</li>
+  <li>Social buttons for sharing on Facebook, Twitter, etc.</li>
+  <li>Support for chapters.</li>
+  <li>Support for scrub bar thumbnails.</li>
+  <li>Extra features for better accessibility.</li>
+  <li>And so on…</li>
+</ul>
+
+<h4>Advantages of relying only on the &lt;video&gt; element rather than onan enhanced player:</h4>
+
+<ul>
+  <li>Total control!</li>
+  <li>No need for external dependencies.</li>
+  <li>Lightweight: no need to download lots of JavaScript and CSS code.</li>
+</ul>
+
+<h4>Video.js: a framework for building your own custom video player</h4>
+<p>Open source, and made for developers, <a href="https://videojs.com/" 
+target="_blank" rel="noopener noreferrer">video.js</a> comes with many 
+plugins (chapters, thumbnails etc.).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 100. make your player yours (119) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image100.webp"
+  loading="lazy"
+  title="Video JS Examples: Make your player yours"
+  alt="Video JS Examples: Make your player yours."
+  style="width:40%;" />
+
+<h4>Which should I use? the &lt;video&gt; element and my own customization or 
+an out of the box enhanced player?</h4>
+
+<p>Either solution (basic player or enhanced player) is good and HTML5 compliant.</p>
+<p>Popular players such as <a href="https://www.jwplayer.com/" target="_blank" 
+rel="noopener noreferrer">JWPlayer</a> have many explanations and examples on 
+their Web sites, and are either free of charge or come with free versions.</p>
+
+<h4>Interesting comparisons and reviews are available on the following Web sites:</h4>
+
+<ul>
+  <li>Comparison matrix of most of <a href="https://videosws.praegnanz.de/" 
+    target="_blank" rel="noopener noreferrer">existing HTML5 video players.</a></li>
+  <li><a href="https://toppersworld.com/10-html5-video-players-as-alternatives-to-flash-player/" 
+    target="_blank" rel="noopener noreferrer">10 HTML5 video players compared.</a></li>
+</ul>
+
+<h4>Example screenshots</h4>
+<p>Scrub Bar thumbnails (JWPlayer)</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 101. scrub bar thumbnails (120) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image101.webp"
+  loading="lazy"
+  title="Scrub bar thumbnails"
+  alt="Scrub bar thumbnails."
+  style="width:45%;" />
+
+<p>Custom look’n’feel and logo (Sublime video player):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 102. custom look and feel and logo (120) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image102.webp"
+  loading="lazy"
+  title="Custom look and feel with logo"
+  alt="Custom look and feel with logo."
+  style="width:40%;" />
+
+<p>Chapters and chapter thumbnails (JWPlayer):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 103. chapters and chapter thumbnails (120) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image103.webp"
+  loading="lazy"
+  title="Chapters and chapter thumbnails"
+  alt="Chapters and chapter thumbnails."
+  style="width:40%;" />
+
+<p>PayPal accessible player:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 104. paypal accessible player (121) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image104.webp"
+  loading="lazy"
+  title="Paypal accessible player"
+  alt="Paypal accessible player."
+  style="width:40%;" />
+
+<p>LeanBack (says "free for non-commercial use", licensing is not very clear…):</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 105. leanback player (121) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image105.webp"
+  loading="lazy"
+  title="Leanback player"
+  alt="Leanback player."
+  style="width:35%;" />
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-4-1">2.4.1 Webcam, microphone: the getUserMediaAPI</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Introduction</h4>
+
+<p>HTML5 has introduced, with the getUserMedia and MediaDevices APIs, a
+way to control webcams and microphones programmatically. This allows,
+for example, to create an identification form where one can simply click
+on a button to capture his portrait from the Webcam of his computer or
+smartphone. It will also allow to record a video or audio extract (for
+example for a "telephone answering machine" type application), to create
+video conference applications running in the Web browser, or even
+musical applications if you plug a guitar into a sound card. The
+possibilities are numerous.</p>
+
+<p>We will therefore study together how to access the audio and video
+streams of the hardware on which a Web application is going to run, and
+how to parameterize them (choice of camera, resolution, etc.).</p>
+
+<h4>The getUserMedia API</h4>
+
+<p>The <a href="https://www.w3.org/TR/mediacapture-streams/" target="_blank" 
+rel="noopener noreferrer">getUserMedia API</a> is useful for controlling a 
+Webcam video stream.</p>
+
+<p>This API is one component of
+the <a href="https://www.w3.org/TR/webrtc/" target="_blank" rel="noopener 
+noreferrer">WebRTC specification</a>. When using getUserMedia, to manage a 
+webcam with its video stream, we will always use it in conjunction with the 
+&lt;video&gt; element. We could also use it with the &lt;audio&gt; element if 
+we are only interested in using a microphone (i.e. from a computer), or any sound
+input .</p>
+
+<p>The getUserMedia API, when dealing with video streams, is always used in 
+conjunction with the &lt;video&gt; element.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 106. simple web camera display (122) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image106.webp"
+  loading="lazy"
+  style="width:30%"
+  title="Screenshot of a simple Web camera webcam display in a Web page"
+  alt="Screenshot of a simple Web camera webcam display in a Web page." />
+
+<h4>Typical use of the getUserMedia API with a Webcam</h4>
+
+<p>The main idea is to set the srcObject attribute of a &lt;video&gt; element 
+to the live video stream object coming out of the Webcam. To get this stream, 
+you’ll have to call the navigator.getUserMedia(params) method from the getUserMedia 
+API, that returns an ES6 promise (ES stands for "ECMAScript" and is the scripting 
+language that forms the basis of JavaScript). Do not panic if you do not know 
+ES6’s promises! The syntax is very simple, and you’ll learn what you need from 
+the provided examples.</p>
+
+<p>The stream is passed as a parameter to the then() method returned by the promise, 
+as in this typical example (you can run it and see the result by clicking on the 
+"CodePen" logo at the top right):</p>
+
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+
+<pre>&lt;video id=&quot;myVideo&quot; autoplay&gt;Fallback msg here.&lt;/video&gt;
+&lt;script&gt;
+  if (navigator.mediaDevices.getUserMedia) {
+    // request video and audio stream from the user&#39;s webcam
+    navigator.mediaDevices.getUserMedia({
+      audio: true,
+     video: true
+   }).then((stream) =&gt; {
+     let video = document.querySelector(&#39;#myVideo&#39;);
+      video.srcObject = stream;
+      video.play();
+    }).catch((error) =&gt; {
+      console.log(&#39;navigator.getUserMedia error: &#39;, error);
+    });
+  }
+&lt;/script&gt;
+We can also simplify the code by using a writing with async/await of JavaScript:
+&lt;video id=&quot;myVideo&quot; autoplay&gt;Fallback msg here.&lt;/video&gt;
+&lt;script&gt;
+  async function startWebCam() {
+    // request video and audio stream from the user&#39;s webcam
+    let stream = await navigator.mediaDevices.getUserMedia({
+      audio: true,
+      video: true
+    });
+    let video = document.querySelector(&#39;#myVideo&#39;);
+    video.srcObject = stream;
+    video.play();
+  }
+  startWebCam();
+&lt;/script&gt;</pre>
+
+</details>
+
+<p><b>HTTPS is mandatory:</b> for getUserMedia to work, it is mandatory to access 
+the page that contains the JavaScript code through https://, for security reasons.</p>
+<p>Support of getUserMedia/stream is <a href="https://caniuse.com/stream" 
+target="_blank" rel="noopener noreferrer">very good in all modern browsers</a>, 
+including mobile ones. All the video conferencing applications you use that 
+run in a Web browser are based on this API (Google Meet, Jitsi, Bigblue Button), 
+and even Microsoft Teams is a web application in disguise.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-4-2">2.4.2 More On getUserMedia</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Let’s see some more examples of what we can do with the getUserMedia API: 
+start/stop the Webcam, take a screenshot from the current video stream from 
+the Webcam, and apply CSS effects in real time. Below, we give links to some 
+cool examples available on the Web.</p>
+
+<h4>How to stop/release the Webcam</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 107. resulting image of michel buffa using webcam (125) ~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image107.webp"
+  loading="lazy"
+  style="width:35%"
+  title="Resulting image of Michel Buffa using his WebCam, drinking from a ladle 
+    with two custom controls below"
+  alt="Resulting image of Michel Buffa using his WebCam, drinking from a ladle 
+    with two custom controls below." />
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Webcam start/stop&lt;/title&gt;
+  &lt;script&gt;
+    let webcamStream;
+    function startWebcam() {
+      // request video and audio stream from the user&#39;s webcam
+      navigator.mediaDevices.getUserMedia({
+        audio: true,
+        video: true
+      }).then((stream) =&gt; {
+        let video = document.querySelector(&#39;#video&#39;);
+        video.srcObject = stream;
+        video.play();
+        webcamStream = stream;
+      }).catch((error) =&gt; {
+        console.log(&#39;navigator.getUserMedia error: &#39;, error);
+      });
+    }
+    function stopWebcam() {
+      webcamStream.getTracks()[0].stop(); // audio
+      webcamStream.getTracks()[1].stop(); // video
+    }
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body &gt;
+  &lt;video width=400 height=400 id=&quot;video&quot; controls&gt;&lt;/video&gt;
+  &lt;p&gt;
+    &lt;button onclick=&quot;startWebcam();&quot;&gt;Start WebCam&lt;/button&gt;
+    &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
+  &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<p>In order to stop the Webcam and make the hardware "unlock it", you need to 
+call the stop() method of the video stream.</p>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+  
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Webcam start/stop&lt;/title&gt;
+&lt;script&gt;
+  let webcamStream;
+  
+  function startWebcam() {
+    // request video and audio stream from the user&#39;s webcam
+    navigator.mediaDevices.getUserMedia({
+      audio: true,
+      video: true
+    }).then((stream) =&gt; {
+      let video = document.querySelector(&#39;#video&#39;);
+      video.srcObject = stream;
+      video.play();
+ 
+      webcamStream = stream;
+    }).catch((error) =&gt; {
+        console.log(&#39;navigator.getUserMedia error: &#39;, error);
+    });
+  }
+ 
+  function stopWebcam() {
+    webcamStream.getTracks()[0].stop(); // audio
+    webcamStream.getTracks()[1].stop(); // video
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;video width=400 height=400 id=&quot;video&quot; controls&gt;&lt;/video&gt;
+  &lt;p&gt;
+    &lt;button onclick=&quot;startWebcam();&quot;&gt;Start WebCam&lt;/button&gt;
+    &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
+  &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Explanations:</h4>
+
+<ul>
+  <li><i>Lines 11-13</i>: we call navigator.getUserMedia. The parameters indicate that we want to capture the video and the audio from the current device (default Webcam). The call to getUserMedia returns an ES6 promise: the then(stream) method that follows.</li>
+  <li><i>Line 14</i>: the then(stream) method is called in case of success and gets the current audio/video stream as parameter. This is passed by the browser to your JavaScript code.</li>
+  <li><i>Lines 15-19</i>: The <i>line 16 </i>sets the audio/video stream of the default Webcam to the srcObject attribute of the video element, while <i>line 18</i> starts displaying it in the video player (there can be more than one Webcam, we’ll see how to select one in particular next). <i>Line 19</i> stores the stream in a global variable so that we can use it from another function (for stopping/starting the Webcam…)</li>
+  <li><i>Lines 19-23</i> define the catch method called in case of error (it could be that the Webcam cannot be accessed, or authorizations have not been granted).</li>
+  <li><i>Lines 25-27</i>: a function for stopping the Webcam. We use the global variable webcamStream here, that has been initialized when we started using the Webcam in <i>line 19</i>. We have to stop separately the audio and the video streams.</li>
+</ul>
+
+<h4>Other examples that mix what we’ve seen in previous chapters, but this time with a live video stream</h4>
+
+<h4>Applying CSS effects on a video element with a live webcam</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 108. example: css filter effects (128) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image108.webp"
+  loading="lazy"
+  style="width:30%"
+  title="Resulting image of Michel Buffa using his WebCam with css filter effects on live stream"
+  alt="Resulting image of Michel Buffa using his WebCam with css filter effects on live stream." />
+
+<p>Try this example that shows how to use the getUserMedia API. Note the CSS 
+effects (click on the video to cycle from one effect to another):</p>
+
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+
+<pre>//~~~~~~~~~~~~~~~~~~~~
+// GET USER MEDIA CODE
+//~~~~~~~~~~~~~~~~~~~~
+let video;
+let webcamStream;
+function startWebcam() {
+  // request video and audio stream from the user&#39;s webcam
+    navigator.mediaDevices.getUserMedia({
+      audio: true,
+      video: true
+    }).then((stream) =&gt; {
+      let video = document.querySelector(&#39;#video&#39;);
+      video.srcObject = stream;
+      video.play();
+      webcamStream = stream;
+    }).catch((error) =&gt; {
+      console.log(&#39;navigator.getUserMedia error: &#39;, error);
+    });
+  }
+function stopWebcam() {
+    webcamStream.getTracks()[0].stop(); // audio
+    webcamStream.getTracks()[1].stop(); // video
+  }
+  //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // CODE FOR CHANGING CSS FILTERS
+  //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  let idx = 0;
+  let filters = [
+    &#39;grayscale&#39;,
+    &#39;sepia&#39;,
+    &#39;blur&#39;,
+    &#39;brightness&#39;,
+    &#39;contrast&#39;,
+    &#39;hue-rotate&#39;, &#39;hue-rotate2&#39;, &#39;hue-rotate3&#39;,
+    &#39;saturate&#39;,
+    &#39;invert&#39;
+  ];
+function changeFilter(el) {
+  // Remove all CSS classes for element el
+  el.className = &#39;&#39;;
+  // Choose a CSS class name
+  console.log(&quot;toggling effect: &quot; + filters[idx  filters.length]);
+  let effect = filters[idx++ % filters.length];
+  el.classList.add(effect);
+}</pre>
+
+</details>
+
+<br/>
+
+<details>
+  <summary><b>CSS source code:</b></summary>
+
+<pre>#output {
+  width: 307px;
+  height: 250px;
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #ccc;
+}
+#screenshot-stream {
+  width: initial;
+  height: initial;
+}
+#screenshot {
+  vertical-align: top;
+}
+.blur {
+  filter: blur(3px);
+}
+.brightness {
+  filter: brightness(5);
+}
+.contrast {
+  filter: contrast(8);
+}
+.hue-rotate {
+  filter: hue-rotate(90deg);
+}
+.hue-rotate2 {
+  filter: hue-rotate(180deg);
+}
+.hue-rotate3 {
+  filter: hue-rotate(270deg);
+}
+.saturate {
+  filter: saturate(10);
+}
+.grayscale {
+  filter: grayscale(1);
+}
+.sepia {
+  filter: sepia(1);
+}
+.invert {
+  filter: invert(1)
+}</pre>
+
+</details>
+
+<br/>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Webcam and CSS effects&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Example of CSS effects on a live video stream&lt;/h1&gt;
+  &lt;p&gt;
+    Click the button &quot;start webcam at the end of this page, then click on the video to toggle the 
+    different effects.&lt;/p&gt;
+  &lt;/p&gt;
+  &lt;video onclick=&quot;changeFilter(this);&quot; width=400 height=400 id=&quot;video&quot; controls autoplay&gt;&lt;/video&gt;
+  &lt;p&gt;
+    &lt;button onclick=&quot;startWebcam();&quot;&gt;Start WebCam&lt;/button&gt;
+    &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
+  &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<h4>Taking a snapshot from the live Webcam stream</h4>
+
+<p>The trick is to copy and paste the current image from the video
+stream into a &lt;canvas&gt; element.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 109. take a snapshot from live webcam stream (130) ~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image109.webp"
+  loading="lazy"
+  style="width:40%"
+  title="Take a snapshot from the live Webcam stream"
+  alt="Take a snapshot from the live Webcam stream." />
+
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+  
+<pre>//~~~~~~~~~~~~~~~~~~~~
+// GET USER MEDIA CODE
+//~~~~~~~~~~~~~~~~~~~~
+let video;
+let webcamStream;
+function startWebcam() {
+  // request video and audio stream from the user&#39;s webcam
+  navigator.mediaDevices.getUserMedia({
+    audio: true,
+    video: true
+  &gt;
+  }).then((stream) =&gt; {
+    video = document.querySelector(&#39;#video&#39;);
+    video.srcObject = stream;
+    video.play();
+    webcamStream = stream;
+  }).catch((error) =&gt; {
+    console.log(&#39;navigator.getUserMedia error: &#39;, error);
+  });
+}
+
+function stopWebcam() {
+  webcamStream.getTracks()[0].stop(); // audio
+  webcamStream.getTracks()[1].stop(); // video
+}
+  //~~~~~~~~~~~~~~~~~~~~~
+  // TAKE A SNAPSHOT CODE
+  //~~~~~~~~~~~~~~~~~~~~~
+  var canvas, ctx;
+
+function init() {
+  // Get the canvas and obtain a context for
+  // drawing in it
+  canvas = document.getElementById(&quot;myCanvas&quot;);
+  ctx = canvas.getContext(&#39;2d&#39;);
+}
+  
+function snapshot() {
+  // Draws current image from the video element into the canvas
+  ctx.drawImage(video, 0,0, canvas.width, canvas.height);
+}</pre>
+
+</details>
+
+<h4>CSS</h4>
+
+<pre>canvas {
+  border:1px solid black;
+}</pre>
+
+<br/>
+
+<h4>HTML</h4>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;title&gt;WebCam screenshot&lt;/title&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;init();&quot;&gt;
+  &lt;h1&gt;Take a snapshot of the current video stream&lt;/h1&gt;
+    Check the CSS and JavaScript tabs. Click on the Start WebCam button.
+  &lt;p&gt;
+    &lt;button onclick=&quot;startWebcam();&quot;&gt;Start WebCam&lt;/button&gt;
+    &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
+    &lt;button onclick=&quot;snapshot();&quot;&gt;Prendre un screenshot&lt;/button&gt;
+  &lt;/p&gt;
+  &lt;video onclick=&quot;snapshot(this);&quot; width=200 height=200 id=&quot;video&quot; controls autoplay&gt;&lt;/video&gt;
+  &lt;p&gt;
+    Screenshots : &lt;/p&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;150&quot;&gt;&lt;/canvas&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<p>We will look at this example in greater detail in the next course
+section (related to the &lt;canvas&gt; element).</p>
+
+<h4>Impressive demonstrations available on the Web</h4>
+
+<ul>
+  <li><a href="https://codepen.io/dlueth/pen/zBhwv" target="_blank" rel="noopener noreferrer">
+    WebCam pixelization! Fun!</a></li>
+  <li><a href="https://webcamtoy.com/" target="_blank" rel="noopener noreferrer">Webcam Toy</a>
+    : video effects on Paul Neave’s webcam (using WebGL)</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-4-3">2.4.3 Using the Microphone</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Instead of using the getUserMedia API
+with: navigator.getUserMedia({video:true}, onSuccess, onError), it is
+also possible to use {audio:true} for the first parameter. In this case,
+only the microphone input will be captured. Notice that {video:true,
+audio:true} is also accepted, if you write a video conferencing system
+and need to capture both the audio and the video (this is often the case
+when writing WebRTC applications).</p>
+<p>Apart from videoconferencing, microphone input will be used for music
+Web apps, from the <a href="https://www.w3.org/TR/webaudio/" target="_blank" rel="noopener noreferrer">WebAudio
+API</a>. This API focuses on real time sound processing and music
+synthesis. This API is covered in the advanced W3Cx HTML5 course
+(<a href="https://www.edx.org/course/html5-apps-and-games" target="_blank" rel="noopener noreferrer">HTML5 Apps
+and Games</a>).</p>
+<p>Check out the <a href="https://webaudiodemos.appspot.com/" target="_blank" rel="noopener noreferrer">WebAudio
+demonstrations</a> written by Chris Wilson, esp. the one called “Input
+effects”.</p>
+<p>The image below is taken
+from <a href="https://webaudiodemos.appspot.com/input/index.html" 
+target="_blank" rel="noopener noreferrer">one of the demonstrations</a>, 
+where the sound captured by the microphone is processed in real time. 
+We get visualizations of the signal in real time as an animated waveform, 
+animated frequencies or animated audiogram. If we connect an electric guitar 
+to the sound card input, then this demonstration shows that we can recreate 
+with WebAudio most of the classic effects used by guitarists (delay, reverb, 
+distortion, chorus, etc.).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 110. webaudio live processing (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image110.webp"
+  loading="lazy"
+  style="width:40%"
+  title="WebAudio Live Processing"
+  alt="WebAudio Live Processing." />
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-4-4">2.4.4 Webcam Resolution</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>It is possible to set “hints” for the preferred cam/resolution during
+video capture. This is done by using a <a href="https://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4" 
+target="_blank" rel="noopener noreferrer">"constraint" object</a> that is passed as a parameter to the 
+getUserMedia(…) method. It’s just the same object we passed in the basic example: navigator.getUserMedia({video:true}, success, error) 
+except that this time this object is a little more complex by including new properties in addition to video:true or audio:true.</p>
+<p>For more information, this <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia" 
+target="_blank" rel="noopener noreferrer">article on MDN about the getUserMedia API</a> gives great examples on 
+how to set the camera resolution and/or to choose the front or back camera when using a mobile phone.</p>
+
+<h4>Typical use:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 111. set camera resolution (127) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image111.webp"
+  loading="lazy"
+  style="width:40%"
+  title="How to set camera resolution on mobile phone"
+  alt="How to set camera resolution on mobile phone." />
+
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+
+<pre>var vgaButton, qvgaButton, hdButton, dimensions, video, stream;
+function init() {
+  vgaButton = document.querySelector(&#39;button#vga&#39;);
+  qvgaButton = document.querySelector(&#39;button#qvga&#39;);
+  hdButton = document.querySelector(&#39;button#hd&#39;);
+  dimensions = document.querySelector(&#39;p#dimensions&#39;);
+  video = document.querySelector(&#39;video&#39;);
+    // Defines event listeners for the buttons that set the resolution
+    qvgaButton.onclick = function() {
+      getMedia(qvgaConstraints);
+    };
+    vgaButton.onclick = function() {
+      getMedia(vgaConstraints);
+    };
+    hdButton.onclick = function() {
+      getMedia(hdConstraints);
+    };
+    // Trick: check regularly the size of the video element and display it
+    // When getUserMedia is called the video element changes it sizes but for
+    // a while its size is zero pixels... o we check every half a second
+    video.addEventListener(&#39;play&#39;, function() {
+    setTimeout(function() {
+      displayVideoDimensions();
+    }, 500);
+  });
+}
+  // The different values for the constraints on resolution
+  var qvgaConstraints = {
+    video: {
+      width: { max: 320 },
+      height: { max: 180 }
+    }
+  };
+  var vgaConstraints = {
+    video: {
+      width: { max: 640 },
+      height: { max: 360 }
+    }
+  };
+  var hdConstraints = {
+    video: {
+      width: { min: 1280 },
+      height: { min: 720 }
+    }
+  };
+  // The function that is called when a button has been clicked: starts the video
+  // with the preferred resolution
+
+function getMedia(constraints) {
+  if (!!stream) {
+    video.srcObject = null;
+    stream.getTracks()[0].stop();
+  }
+  navigator.mediaDevices.getUserMedia(constraints)
+  .then((stream) =&gt; {
+    video.srcObject = stream;
+    video.play();
+    window.stream = stream;
+  })
+  .catch((error) =&gt;{
+    console.log(&#39;navigator.getUserMedia error: &#39;, error);
+  });
+}
+  // util function that is called by the setInterval(...) every 0.5s, for
+  // displaying the video dimensions
+  function displayVideoDimensions() {
+  dimensions.innerHTML = &#39;Actual video dimensions: &#39; + video.videoWidth +
+  &#39;x&#39; + video.videoHeight + &#39;px.&#39;;
+  }</pre>
+
+</details>
+
+<h4>CSS</h4>
+
+<pre>video {
+  border:1px solid;
+}</pre>
+
+<br/>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;/&gt;
+  &lt;title&gt;getUserMedia constraints for Webcam resolutions&lt;/title&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;init();&quot;&gt;
+  &lt;h1&gt;Set the camera resolution&lt;/h1&gt;
+  Example adapted from:
+  &lt;a href=&quot;https://www.simpl.info/getusermedia/constraints/&quot;&gt;
+    https://www.simpl.info/getusermedia/constraints/
+  &lt;/a&gt;
+  &lt;br&gt;
+  &lt;p&gt;Click a button to call &lt;code&gt;getUserMedia()&lt;/code&gt; with appropriate resolution. &lt;/p&gt;
+  &lt;div id=&quot;buttons&quot;&gt;
+    &lt;button id=&quot;qvga&quot;&gt;QVGA&lt;/button&gt;
+    &lt;button id=&quot;vga&quot;&gt;VGA&lt;/button&gt;
+    &lt;button id=&quot;hd&quot;&gt;HD&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;p id=&quot;dimensions&quot;&gt;&lt;/p&gt;
+  &lt;video autoplay&gt;&lt;/video&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 112. function getusermedia (130) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image112.webp"
+  loading="lazy"
+  style="width:45%"
+  title="Call getUserMedia() function for appropriate resolution"
+  alt="Call getUserMedia() function for appropriate resolution." />
+
+<h4>Code source extract related to the "constraint" object which specifies the 
+desired resolutions:</h4>
+
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+  
+<pre>var vgaConstraints = {
+  video: {
+    width: { max: 640 },
+    height: { max: 360 }
+  }
+};
+var hdConstraints = {
+  video: {
+    width: { min: 1280 },
+    height: { min: 720 }
+  }
+};
+let constraints = hdConstraints;
+navigator.mediaDevices.getUserMedia(constraints)
+  .then((stream) =&gt; {...}</pre>
+
+</details>
+
+<h4>How to check which resolutions are supported by a browser?</h4>
+
+<p>Use this <a href="https://webrtchacks.github.io/WebRTC-Camera-Resolution/" 
+target="_blank" rel="noopener noreferrer">Web app that</a> systematically tests 
+a set of "preferred resolutions" and compared them to the actual resolutions 
+returned by the browser. Remember that the requested resolution is a hint, and 
+there is no real guarantee that your configuration will allow it.</p>
+
+<h4>Selecting the front or rear camera on smartphones</h4>
+
+<p>Here are some other constraints you can set. In particular, look at
+the ones for selecting the front or rear camera (smartphones):</p>
+
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+
+<pre>// more on video resolution
+constraints = {
+  video: {
+    width: { min: 1024, ideal: 1280, max: 1920 },
+    height: { min: 776, ideal: 720, max: 1080 }
+  }
+}
+// Framerate
+constraints = { video: { frameRate: { ideal: 10, max: 15 } } };
+// front and back camera (mobile), some examples
+var front = false;
+document.getElementById(&#39;flip-button&#39;).onclick = function() {
+  front = !front;
+};
+// toggle front and back camera (mobile) by clicking a button
+constraints = { video: { facingMode: (front? &quot;user&quot; : &quot;environment&quot;) } };
+// prefer front camera
+constraints = { audio: true, video: { facingMode: &quot;user&quot; } }
+// require rear camera
+constraints = { audio: true, video: { facingMode: { exact: &quot;environment&quot; } } }</pre>
+
+</details>
+
+<h4>Select input/output for audio and video streams</h4>
+
+<ul>
+  <li>Resource: <a href="https://webrtc.github.io/samples/src/content/devices/input-output/" 
+    target="_blank" rel="noopener noreferrer">WebRTC samples: Select sources &amp; outputs</a></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 113. webapp for selecting audio and video input/output (131) ~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image113.webp"
+  loading="lazy"
+  style="width:45%"
+  title="Webapp for selecting audio and video input/output"
+  alt="Webapp for selecting audio and video input/output." />
+
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+  
+<pre>function gotDevices(deviceInfos) {
+  for (var i = 0; i !== deviceInfos.length; ++i) {
+    var deviceInfo = deviceInfos[i];
+    console.log(&quot;device with id: &quot; + deviceInfo.deviceId);
+    // possible values: audioinput, audiooutput, videoinput
+    console.log(&quot;device with kind: &quot; + deviceInfo.kind);
+    // &#39;speaker&#39; or &#39;camera&#39; for example
+    console.log(&quot;device with label: &quot; + deviceInfo.label);
+    //... should build a menu, test kind/label and set
+    // audioSource and videoSource variables
+  }
+}
+// ...
+var constraints = {
+  audio: {deviceId: audioSource ? {exact: audioSource} : undefined},
+  video: {deviceId: videoSource ? {exact: videoSource} : undefined}
+};
+navigator.mediaDevices.getUserMedia(constraints).
+then(gotStream).then(gotDevices).catch(handleError)</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-4-5">2.4.5 The MediaRecorder API</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This MediaRecoredr API allows to record / capture the audio or video
+stream. There are many sources for audio or video streams, but we will
+only consider here the streams coming from a WebCam or a sound input
+(i.e. microphone).</p>
+<p>For example, the MediaRecorder API is used to record the video stream
+from a WebCam as a file saved on the hard disk. Below is a screenshot of
+an application allowing to record the WebCam. You will be able to run
+this example a little further, but for security reasons, it cannot run
+directly in this Web page.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 114. webrtc samples mediarecorder (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image114.webp"
+  loading="lazy"
+  style="width:40%"
+  title="Screenshot showing on the left the webcam video stream, and on the right 
+    the same stream recorded and playable in a HTML video element"
+  alt="Screenshot showing on the left the webcam video stream, and on the right 
+    the same stream recorded and playable in a HTML video element." />
+
+<p>Let’s record, replay and download the video stream captured using a Webcam. 
+You can test it below by clicking on "CodePen" at the top right:</p>
+
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+
+<pre>var mediaRecorder;
+var recordedBlobs;
+var gumVideo = document.querySelector('video#gum');
+var recordedVideo = document.querySelector('video#recorded');
+var recordButton = document.querySelector('button#record');
+var playButton = document.querySelector('button#play');
+var downloadButton = document.querySelector('button#download');
+recordButton.onclick = toggleRecording;
+playButton.onclick = play;
+downloadButton.onclick = download;
+// get stream using getUserMedia
+navigator.mediaDevices.getUserMedia({ audio: true,video: true})
+  .then((stream) => {
+    recordButton.disabled = false;
+    console.log('getUserMedia() got stream: ', stream);
+    window.stream = stream;
+    gumVideo.srcObject = stream;
+  })
+  .catch((error) => {
+    console.log('navigator.getUserMedia error: ', error);
+  });
+function handleDataAvailable(event) {
+  if (event.data && event.data.size > 0) {
+    recordedBlobs.push(event.data);
+  }
+}
+function handleStop(event) {
+  console.log('Recorder stopped: ', event);
+}
+function toggleRecording() {
+  if (recordButton.textContent === 'Start Recording') {
+    startRecording();
+  } else {
+    stopRecording();
+    recordButton.textContent = 'Start Recording';
+    playButton.disabled = false;
+    downloadButton.disabled = false;
+  }
+}
+// create the media recorder
+function startRecording() {
+  recordedBlobs = [];
+    
+  try {
+    mediaRecorder = new MediaRecorder(window.stream);
+  } catch (e) {
+    console.error('Exception while creating MediaRecorder: ' + e);
+    return;
+  }
+  console.log('Created MediaRecorder', mediaRecorder);
+  recordButton.textContent = 'Stop Recording';
+  playButton.disabled = true;
+  downloadButton.disabled = true;
+  mediaRecorder.onstop = handleStop;
+  mediaRecorder.ondataavailable = handleDataAvailable;
+  mediaRecorder.start(10); // collect 10ms of data
+  console.log('MediaRecorder started', mediaRecorder);
+}
+function stopRecording() {
+  mediaRecorder.stop();
+  console.log('Recorded Blobs: ', recordedBlobs);
+  recordedVideo.controls = true;
+}
+function play() {
+  var superBuffer = new Blob(recordedBlobs, {type: 'video/webm'});
+  recordedVideo.src = window.URL.createObjectURL(superBuffer);
+}
+function download() {
+  var blob = new Blob(recordedBlobs, {type: 'video/webm'});
+  var url = window.URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.style.display = 'none';
+  a.href = url;
+  a.download = 'test.webm';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(function() {
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  }, 100);
+}</pre>
+
+</details>
+
+<br/>
+
+<details>
+  <summary><b>CSS source code:</b></summary>
+  
+<pre>/*
+* Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+*
+* Use of this source code is governed by a BSD-style license
+* that can be found in the LICENSE file in the root of the source
+* tree.
+*/
+button {
+  margin: 0 3px 10px 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 99px;
+}
+button:last-of-type {
+  margin: 0;
+}
+p.borderBelow {
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+video {
+  height: 232px;
+  margin: 0 12px 20px 0;
+  vertical-align: top;
+  width: calc(20em - 10px);
+}
+video:last-of-type {
+  margin: 0 0 20px 0;
+}
+video#gumVideo {
+  &gt; margin: 0 20px 20px 0;
+}
+@media screen and (max-width: 500px) {
+  button {
+    font-size: 0.8em;
+    width: calc(33% - 5px);
+  }
+}
+@media screen and (max-width: 720px) {
+  video {
+    height: calc((50vw - 48px) * 3 / 4);
+    margin: 0 10px 10px 0;
+    width: calc(50vw - 48px);
+  }
+  video#gumVideo {
+    margin: 0 10px 10px 0;
+  }
+}</pre>
+
+</details>
+
+<br/>
+
+<details>
+  <summary><b>HTML source code:</b></summary>
+  
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
+  &lt;title&gt;MediaRecorder API usage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;container&quot;&gt;
+    &lt;h1&gt;&lt;a href=&quot;//webrtc.github.io/samples/&quot; title=&quot;WebRTC samples homepage&quot;&gt;WebRTC example:&lt;/a&gt; &lt;span&gt;MediaRecorder&lt;/span&gt;&lt;/h1&gt;
+    &lt;p&gt;For more info, see the &lt;a href=&quot;https://w3c.github.io/mediacapture-record/MediaRecorder.html&quot; 
+      title=&quot;W3C MediaStream Recording API - Editor&#39;s Draft&quot;&gt;MediaStream Recording API Editor&#39;s Draft&lt;/a&gt;.&lt;/p&gt;
+      &lt;video id=&quot;gum&quot; autoplay muted&gt;&lt;/video&gt;
+      &lt;video id=&quot;recorded&quot; loop controls&gt;&lt;/video&gt;
+    &lt;div&gt;
+      &lt;button id=&quot;record&quot; disabled&gt;Start Recording&lt;/button&gt;
+      &lt;button id=&quot;play&quot; disabled&gt;Play&lt;/button&gt;
+      &lt;button id=&quot;download&quot; disabled&gt;Download&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record&quot; title=&quot;View source for this page on GitHub&quot; id=&quot;viewSource&quot;&gt;View source on GitHub&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+</details>
+
+<p>Click “start recording”, then press the play button on the video
+element on the right of the app. You can also click the “download”
+button to download a .webm file, playable offline with a media player
+such as <a href="https://www.videolan.org/" target="_blank" 
+rel="noopener noreferrer">VLC</a> or online in a Web page with the &lt;video&gt; element.</p>
+
+<h4>Five steps are needed to use the mediaRecorder object</h4>
+
+<h4>1 - Create a mediaRecorder from a stream</h4>
+
+<h4>Source code extract:</h4>
+
+<pre>var options = {mimeType: &#39;video/webm; codecs=vp9&#39;};
+mediaRecorder = new MediaRecorder(stream, options);</pre>
+
+<p>… where stream is typically the object returned by the call to getUserMedia (see previous examples).</p>
+
+<h4>2 - Add a “data handler” and call the start() method of the mediaRecorder object</h4>
+
+<h4>Source code extract:</h4>
+
+<pre>var recordedChunks = []; // will hold the recorded stream
+mediaRecorder.ondataavailable = handleDataAvailable;
+mediaRecorder.start();
+function handleDataAvailable(event) {
+  if (event.data.size &gt; 0) {
+    recordedChunks.push(event.data);
+  } else {
+  // ...
+}</pre>
+
+<h4>Explanations:</h4>
+
+<ul>
+  <li><i>Line 1</i>: we declare an array of bytes that will hold the recorded stream.</li>
+  <li><i>Line 2</i>: we declare the callback function that will be called while the 
+    stream is being captured. While the Webcam will be used, every xxx seconds, chunks 
+    of data will be passed to the handleDataAvailable function.</li>
+  <li><i>Lines 5-10</i>: this function collects the chunk of data that corresponds to a 
+    few seconds of video, and stores it in the recordedChunks byte array.</li>
+</ul>
+
+<h4>3 - When you’ve finished recording, tell the mediaRecorder to stop</h4>
+
+<p>When you’re done, you need to call the stop() method of the mediaRecorder 
+object. This will end the periodic execution of the handleDataAvailable method, 
+and stop the data capture.</p>
+
+<pre>mediaRecorder.stop();</pre>
+
+<h4>4 - Create a BLOB (Binary Large Object) with the collected data, and use it 
+to set the src attribute of an HTML5 video player</h4>
+
+<p>This piece of code creates a blob with the recordedChunks array. Use the 
+URL.createObjectURL(recordedChunks) standard method to create another object 
+that can be used as a value to set the src attribute of an HTML5 video element.</p>
+
+<p>Like that, the recorded stream can be played using a standard HTML5 &lt;video&gt; element.</p>
+
+<pre>function play() {
+  var superBuffer = new Blob(recordedChunks);
+  videoElement.src =
+  window.URL.createObjectURL(superBuffer);
+}</pre>
+
+<h4>5 - Download the captured stream</h4>
+
+<p>A trick consists in creating, on the fly, an invisible link with a download 
+attribute (see Module 1) and a href attribute that points to the blob object 
+containing the recorded stream encoded using a given codec, then generate 
+programmatically a click event on the link. This will force the browser to 
+download a file of type video/webm to the hard disk.</p>
+
+<details>
+  <summary><b>JavaScript source code:</b></summary>
+  
+<pre>function download() {
+  var blob = new Blob(recordedChunks, {
+    type: &#39;video/webm&#39;
+  });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement(&#39;a&#39;);
+   document.body.appendChild(a);
+     a.style = &#39;display: none&#39;;
+     a.href = url;
+     a.download = &#39;test.webm&#39;;
+     a.click();
+  window.URL.revokeObjectURL(url);
+}</pre>
+
+</details>
