@@ -60,14 +60,13 @@ pre .cl {
   clear: both;
 }
 pre {
-  width: 450px;  /* was 400px; */
   overflow: auto;
 }
 pre[href]:hover  {
   text-decoration: none;
 }
 pre:hover, pre:focus {
-  width: 450px;  /* was 400px;, 50%;, fit-content; before that; width: min-content */
+  width: min-content;  /* was 400px;, 50%;, fit-content; before that; width: min-content */
 }
 
 a:link {
