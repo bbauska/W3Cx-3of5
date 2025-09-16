@@ -51,7 +51,7 @@ pre {
   padding:.5em 1em;
   white-space: pre-wraps;
   overflow-x: auto;
-  width: min-content; 
+  width: min-content + 2px; 
 }
 pre code,
 pre .line-number {
