@@ -22,7 +22,6 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="./images/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
 
   <!-- viewport and seo -->
   <meta name="author" content="Brian Bauska" />
@@ -3731,21 +3730,19 @@ support table from CanIUse.</a></p>
 <h4>Restriction: you cannot embed a YouTube or DailyMotion video using the 
 &lt;video&gt; element</h4>
 
-<p>Help! &lt;video src=“my youtube video URL”&gt;&lt;/video&gt; does not
-work! </p>
-<p><b>BEWARE</b>: you cannot directly embed videos from most of the
-popular Web sites such as YouTube, Dailymotion, Vimeo, etc. For
-commercial reasons, and because advertising is automatically added to
-the videos, these Web sites do not allow “regular” embedding of their
-videos.</p>
-<p>While they use HTML5 to render their videos, these
-hosting sites (YouTube, etc.) use rather complex techniques in order to
-prevent you from using them with the &lt;video&gt;element. Instead, you
-often need to embed an &lt;iframe&gt; that will render the HTML5 videos
-in your Web site, and of course, the advertising that comes along with
-them.</p>
-<p>Usually you have an “embed” button close to the videos that prompts you
-with some HTML code that you can copy and paste for embedding.</p>
+<p>Help! &lt;video src=“my youtube video URL”&gt;&lt;/video&gt; does not work! </p>
+
+<p><b>BEWARE</b>: you cannot directly embed videos from most of the popular Web sites such as 
+YouTube, Dailymotion, Vimeo, etc. For commercial reasons, and because advertising is automatically 
+added to the videos, these Web sites do not allow “regular” embedding of their videos.</p>
+
+<p>While they use HTML5 to render their videos, these hosting sites (YouTube, etc.) use rather 
+complex techniques in order to prevent you from using them with the &lt;video&gt;element. Instead, 
+you often need to embed an &lt;iframe&gt; that will render the HTML5 videos in your Web site, and 
+of course, the advertising that comes along with them.</p>
+
+<p>Usually you have an “embed” button close to the videos that prompts you with some HTML code 
+that you can copy and paste for embedding.</p>
 
 <h4>An example using YouTube:</h4>
 
@@ -3935,19 +3932,17 @@ for desktop applications.</p>
 
 <h4>Attributes of the &lt;audio&gt; element</h4>
 
-<p>The attributes you can use with the &lt;audio&gt; element are a subset of 
-those available for the &lt;video&gt; element. Except for the poster attribute, 
-they are all recognized and have the
-expected meanings:</p>
+<p>The attributes you can use with the &lt;audio&gt; element are a subset of those available for the &lt;video&gt; element. Except for the poster attribute, they are all recognized and have the expected 
+meanings:</p>
 
 <ul>
   <li>src: source of an audio stream.</li>
-  <li>controls: if this attribute is present, the browser displays its own controls 
-    for audio playback and volume.</li>
-  <li>autoplay: tells the browser to start playing the audio stream automatically as 
-    soon as the page is ready - please read details in the above table.</li>
-  <li>preload: tells the browser what to do before a user plays a sound - please read 
-    details in the above table.</li>
+  <li>controls: if this attribute is present, the browser displays its own controls for audio 
+    playback and volume.</li>
+  <li>autoplay: tells the browser to start playing the audio stream automatically as soon as the 
+    page is ready - please read details in the above table.</li>
+  <li>preload: tells the browser what to do before a user plays a sound - please read details in 
+  the above table.</li>
   <li>loop:  indicates to play the audio stream in loop mode (start again when finished).</li>
 </ul>
 
@@ -4194,8 +4189,8 @@ function init() {
 
 <h4>Example #2: with a YouTube video</h4>
 
-<p>Full width, resizable, borderless YouTube video. To do this: just 100%
-standard CSS + DOM manipulation using JavaScript.</p>
+<p>Full width, resizable, borderless YouTube video. To do this: just 100% standard CSS + DOM 
+manipulation using JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 73. example video cropping (90) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4205,8 +4200,7 @@ standard CSS + DOM manipulation using JavaScript.</p>
   title="Example video cropping"
   alt="Example video cropping." />
 
-<p>The CSS and JavaScript codes for this example are exactly the same as in
-Example #1.</p>
+<p>The CSS and JavaScript codes for this example are exactly the same as in Example #1.</p>
 
 <h4>Full screen video, pure CSS approaches</h4>
 
@@ -4214,10 +4208,9 @@ Example #1.</p>
   <li>Let’s use the video from the PayPal Web site, played full screen using only very simple CSS.</li>
 </ol>
 
-<p>In this example, the video does not rescale; it’s just cropped if the
-browser window is resized. Enlarge your browser and you’ll see a man
-with a phone on the right. Resize your browser and you’ll see only part
-of the video.</p>
+<p>In this example, the video does not rescale; it’s just cropped if the browser window is resized. 
+Enlarge your browser and you’ll see a man with a phone on the right. Resize your browser and you’ll 
+see only part of the video.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 74. full screen video (90) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4836,8 +4829,8 @@ function logEvent(evt, color) {
 
 <h4>Example #3: how to display a percentage of buffering when using a slow connection</h4>
 
-<p>See the <a href="https://jsbin.com/xororol/3/edit?html,output" target="_blank" rel="noopener noreferrer">
-JSBin example online</a> here too.</p>
+<p>See the <a href="https://jsbin.com/xororol/3/edit?html,output" target="_blank" rel="noopener 
+noreferrer">JSBin example online</a> here too.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 84. display percentage of buffering (102) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <a href="https://jsbin.com/xororol/3/edit?html,output" target="_blank" rel="noopener noreferrer">
@@ -4943,33 +4936,36 @@ code:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3-1">2.3.1 Enhanced HTML5 Media Players and Frameworks</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This section introduces the HTML5 &lt;track&gt; element, useful for
-adding closed captions, subtitles, descriptions, and metadata to your
-videos. It comes with a new JavaScript API.</p>
-<p>The WebVTT format used for describing a track file is also presented in
-this chapter.</p>
+<p>This section introduces the HTML5 &lt;track&gt; element, useful for adding closed captions, 
+subtitles, descriptions, and metadata to your videos. It comes with a new JavaScript API.</p>
+
+<p>The WebVTT format used for describing a track file is also presented in this chapter.</p>
 
 <h4>Most of the major desktop browsers support HTML5 captioning</h4>
 
-<p>Please check the <a href="https://caniuse.com/mdn-html_elements_track" target="_blank" rel="noopener noreferrer">
-browser support</a> related to the &lt;track&gt; element support by browsers.</p>
+<p>Please check the <a href="https://caniuse.com/mdn-html_elements_track" target="_blank" 
+rel="noopener noreferrer">browser support</a> related to the &lt;track&gt; element support by 
+browsers.</p>
 
 <h4>Some definitions</h4>
 
 <ul>
-  <li><b>closed captions</b> describe all relevant audio present in the video (fire, rain, birds, gun fights, etc.).</li>
+  <li><b>closed captions</b> describe all relevant audio present in the video (fire, rain, birds, 
+    gun fights, etc.).</li>
   <li><b>subtitles</b> are only for spoken words.</li>
 </ul>
 
 <br>
-<p>The accessibility features of TV programs often propose both options for people with hearing deficiencies.</p>
+<p>The accessibility features of TV programs often propose both options for people with hearing 
+deficiencies.</p>
 
 <h4>Typical use: add a subtitle/caption track to a &lt;video&gt; element</h4>
 
 <h4>Important warning!!</h4>
 
 <p>The &lt;track&gt; element cannot be used with a file:// URL. Please use https:// and a Web server. 
-Your server must use a special MIME format for the .vtt files: text/vtt;charset=utf-8 (set by default on most servers now).</p>
+Your server must use a special MIME format for the .vtt files: text/vtt;charset=utf-8 (set by default 
+on most servers now).</p>
 
 <h4>Examples of the lines to add to an Apache Web server:</h4>
 
@@ -4977,11 +4973,11 @@ Your server must use a special MIME format for the .vtt files: text/vtt;chars
   ForceType text/vtt;charset=utf-8
 &lt;/Files&gt;</pre>
 
-<p>It is worth mentioning that most browsers work well with WebVTT, even
-if the MIME type is not defined.</p>
+<p>It is worth mentioning that most browsers work well with WebVTT, even if the MIME type is not 
+defined.</p>
 
-<p>Here is an example of a video element that includes a &lt;track&gt; element 
-in the .vtt (WebVTT) format (<i>line 9</i> in the source code shown below):</p>
+<p>Here is an example of a video element that includes a &lt;track&gt; element in the .vtt (WebVTT) 
+format (<i>line 9</i> in the source code shown below):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 86. example snapshot (104) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -4991,9 +4987,9 @@ in the .vtt (WebVTT) format (<i>line 9</i> in the source code shown below):</p
   alt="Example using a track element in the .vtt format."
   style="width:40%;" />
   
-<p>The example uses a &lt;track&gt; element to insert basic captions to the video: 
-sounds and music are described, in addition to standard subtitles that correspond 
-to what the different movie characters say.</p>
+<p>The example uses a &lt;track&gt; element to insert basic captions to the video: sounds and music 
+are described, in addition to standard subtitles that correspond to what the different movie 
+characters say.</p>
 
 <pre>&lt;video height=&quot;272&quot; width=&quot;640&quot;
   poster=&quot;https://mainline.i3s.unice.fr/mooc/q1fx20VZ-640.jpg&quot;
@@ -5023,11 +5019,12 @@ to what the different movie characters say.</p>
 
 <h4>Multiple tracks may be included in a video element</h4>
 
-<p>Multiple tracks are needed to support different langages, video captions for the hearing-impaired, subtitles, etc.</p>
+<p>Multiple tracks are needed to support different langages, video captions for the 
+hearing-impaired, subtitles, etc.</p>
 
 <p>Below is an example (<a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element" 
-target="_blank" rel="noopener noreferrer">from the specification</a>) that includes multiple &lt;track&gt; 
-elements (subtitles for three languages and captions only for English):</p>
+target="_blank" rel="noopener noreferrer">from the specification</a>) that includes 
+multiple &lt;track&gt; elements (subtitles for three languages and captions only for English):</p>
 
 <details>
   <summary><b>HTML source code:</b></summary>
@@ -5054,10 +5051,12 @@ elements (subtitles for three languages and captions only for English):</p>
 <p>Note the use of some new attributes in the &lt;track&gt; element:</p>
 
 <ul>
-  <li>label: the label value will be displayed in the GUI control that is included in the default HTML5 video player.</li>
+  <li>label: the label value will be displayed in the GUI control that is included in the default 
+    HTML5 video player.</li>
   <li>srclang:  gives the language for the text track data. The value must be a valid 
-    <a href="https://tools.ietf.org/html/bcp47" target="_blank" rel="noopener noreferrer">BCP 47 language tag</a>. 
-    This attribute must be present if <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind" 
+    <a href="https://tools.ietf.org/html/bcp47" target="_blank" rel="noopener noreferrer">BCP 47 
+	language tag</a>. This attribute must be present if 
+	<a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind" 
     target="_blank" rel="noopener noreferrer">the element’s kind attribute</a> is in the 
     <a href="https://www.w3.org/TR/html5/embedded-content-0.html#attr-track-kind-subtitles" 
     target="_blank" rel="noopener noreferrer">subtitles state</a>.</li>
