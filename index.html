@@ -9603,19 +9603,17 @@ for drawing all these rectangles:</p>
 
 <h4>Path mode</h4>
 
-<p>There is another drawing mode called “path drawing mode” where you
-first send drawing orders to the graphics processor, and these orders
-are stored in a buffer. Then you call methods to draw the whole buffer
-at once. There are also methods to erase the buffer’s content.</p>
-<p>Path drawing mode allows parallelism: if you need to draw 10,000
-rectangles, it’s better to store the orders in the graphics card, then
-execute the drawing all at once, rather than doing 10,000 immediate
-calls to strokeRect(…) for example. With the buffered mode, the Graphic
-Processing Unit (GPU) of the graphics card hardware will be able to
-parallelize the computations (modern graphics cards can execute
-hundreds/thousands of things in parallel).</p>
-<p>Same example as before, this time using the buffered mode for drawing
-rectangles:</p>
+<p>There is another drawing mode called “path drawing mode” where you first send drawing orders to 
+the graphics processor, and these orders are stored in a buffer. Then you call methods to draw the 
+whole buffer at once. There are also methods to erase the buffer’s content.</p>
+
+<p>Path drawing mode allows parallelism: if you need to draw 10,000 rectangles, it’s better to 
+store the orders in the graphics card, then execute the drawing all at once, rather than doing 
+10,000 immediate calls to strokeRect(…) for example. With the buffered mode, the Graphic 
+Processing Unit (GPU) of the graphics card hardware will be able to parallelize the computations 
+(modern graphics cards can execute hundreds/thousands of things in parallel).</p>
+
+<p>Same example as before, this time using the buffered mode for drawing rectangles:</p>
 
 <h4>JavaScript source code:</h4>
 
@@ -9668,17 +9666,18 @@ function init() {
 }
 ctx.stroke(); // draws the whole buffer (the 1000 rectangles) at once
 </pre>
-<p>Instead of calling strokeRect(…) or fillRect(…), we just call
-the rect(…) method of the context (<i>line 7</i>). This is how we can
-delay the drawing of the rectangles. The 1000 rectangles are stored in a
-buffer in the hardware.</p>
-<p>The call to ctx.stroke() (<i>line 9</i>) or to its sister
-method ctx.fill() will draw the entire buffer contents in fill or stroke
-mode.</p>
-<p>And here is what the timer gives: a slightly faster execution time.
-Changing 1000 to 100,000 will give even larger differences.</p>
-<p><b>Path mode is faster than immediate mode! We have now an average
-time of 3.1ms</b></p>
+
+<p>Instead of calling strokeRect(…) or fillRect(…), we just call the rect(…) method of the context 
+(<i>line 7</i>). This is how we can delay the drawing of the rectangles. The 1000 rectangles are 
+stored in a buffer in the hardware.</p>
+
+<p>The call to ctx.stroke() (<i>line 9</i>) or to its sister method ctx.fill() will draw the entire 
+buffer contents in fill or stroke mode.</p>
+
+<p>And here is what the timer gives: a slightly faster execution time. Changing 1000 to 100,000 
+will give even larger differences.</p>
+
+<p><b>Path mode is faster than immediate mode! We have now an average time of 3.1ms</b></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~ 135. image of the devtool console which shows time path vs immediate (191) ~~~~~~~~-->
 <img class="displayed"
@@ -9690,9 +9689,8 @@ time of 3.1ms</b></p>
 
 <h4>Reset the path mode buffer</h4>
 
-<p>A call to ctx.beginPath() will reset the buffer (empty its contents).
-We will see many more examples of using the path drawing mode in another
-further section.</p>
+<p>A call to ctx.beginPath() will reset the buffer (empty its contents). We will see many more 
+examples of using the path drawing mode in another further section.</p>
 
 <pre>// start a new buffer / path
 ctx.beginPath();
@@ -9706,8 +9704,8 @@ ctx.stroke();</pre>
 <p>Summary of path mode principles</p>
 
 <ol type="1">
-  <li>Call drawing methods that work in path mode, for example call ctx.rect(…) instead 
-    of ctx.strokeRect(…) or ctx.fillRect(…),</li>
+  <li>Call drawing methods that work in path mode, for example call ctx.rect(…) instead of 
+  ctx.strokeRect(…) or ctx.fillRect(…),</li>
   <li>Call ctx.stroke() or ctx.fill() to draw the buffer’s contents,</li>
   <li>Beware that the buffer is never emptied, two consecutive calls to ctx.stroke() 
     will draw the buffer contents twice! Instead, use ctx.beginPath() to empty it if needed,</li>
@@ -9717,12 +9715,10 @@ ctx.stroke();</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-2">3.4.2 A Warning</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Warning</b>: you do not need to spend too much time on each part of this 
-sub-section.</p>
-<p>You do not need to memorize or learn by heart all the examples in the following 
-pages. They are given as references. There will be no quizzes about curves as they 
-are not often done “by hand”, but are generated by tools such as Adobe Illustrator 
-or online generators.</p>
+<p><b>Warning</b>: you do not need to spend too much time on each part of this sub-section.</p>
+<p>You do not need to memorize or learn by heart all the examples in the following pages. They are 
+given as references. There will be no quizzes about curves as they are not often done “by hand”, 
+but are generated by tools such as Adobe Illustrator or online generators.</p>
 
 <ul>
   <li>You need to draw arcs? Then, please use the corresponding section as a reference: 
@@ -9731,9 +9727,8 @@ or online generators.</p>
     pages and look at the examples!</li>
 </ul>
 
-<p>Also, do not forget to use your favorite HTML5 canvas cheatsheet
-(provided before in the last section). You will find it very
-helpful when you start playing with the canvas.</p>
+<p>Also, do not forget to use your favorite HTML5 canvas cheatsheet (provided before in the last 
+section). You will find it very helpful when you start playing with the canvas.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-3">3.4.3 Drawing Lines</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12219,15 +12214,13 @@ grd.addColorStop(0.666, &quot;blue&quot;);
 grd.addColorStop(1, &quot;violet&quot;);
 context.fillStyle = grd;</pre>
 
-<p>The method from the context object createRadialGradient(cx1, cy1,
-radius1, cx2, cy2, radius2) takes as the first three parameters the
-“starting” circle of the gradient, and as the three last parameters, the
-“ending circle”.</p>
+<p>The method from the context object createRadialGradient(cx1, cy1, radius1, cx2, cy2, radius2) 
+takes as the first three parameters the “starting” circle of the gradient, and as the three last 
+parameters, the “ending circle”.</p>
 
-In the above example, the gradients starts at a circle located at (150,
-100), with a radius of 30, and propagates to a circle with the same
-center as the first (150, 100), but with a bigger radius of 100, as
-shown below:
+In the above example, the gradients starts at a circle located at (150, 100), with a radius of 30, 
+and propagates to a circle with the same center as the first (150, 100), but with a bigger radius 
+of 100, as shown below:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 176. above example with color stops (235) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -12241,8 +12234,8 @@ shown below:
 
 <h4>What happens if the circles are not located at the same place?</h4>
 
-<p>You get some nice effects; here we set the second circle’s center 60 pixels 
-to the right of the first circle’s center (cx = 210 instead of 150):</p>
+<p>You get some nice effects; here we set the second circle’s center 60 pixels to the right of the 
+first circle’s center (cx = 210 instead of 150):</p>
 
 <pre>grd = ctx.createRadialGradient(150, 100, 30, 210, 100, 100);</pre>
 
@@ -12594,31 +12587,27 @@ this line in the online example and you will see live results.</p>
   title="Four rectangles drawn with different patterns"
   alt="Four rectangles drawn with different patterns." />
 
-<p>We said earlier that we cannot draw before the image used by
-a pattern is loaded. This can become rapidly complicated if we need to
-draw using multiple patterns. We need a way to load all images and
+<p>We said earlier that we cannot draw before the image used by a pattern is loaded. This can become 
+rapidly complicated if we need to draw using multiple patterns. We need a way to load all images and
 then, <i>only when all images have been loaded, start drawing</i>.</p>
 
-<p>JavaScript is an asynchronous language. When you set
-the src attribute of an image, then an asynchronous request is sent by
-the browser, and then after a while, the onload callback is called… The
-difficult part to understand for those who are not familiar with
-JavaScript is that these requests are done in parallel and we do not
-know when, and in what order, the images will be loaded.</p>
-
-<p>The solution is to use a multiple image loader that counts the loaded
-images and calls a function you pass when done!</p>
-
-<p>The trick is to have an array of URLs that will be used by our
-multiple image loader, and have the onload callback called once per
-image loaded, so we can count the number of images effectively
+<p>JavaScript is an asynchronous language. When you set the src attribute of an image, then an 
+asynchronous request is sent by the browser, and then after a while, the onload callback is called… 
+The difficult part to understand for those who are not familiar with JavaScript is that these 
+requests are done in parallel and we do not know when, and in what order, the images will be 
 loaded.</p>
 
-<p>When all images have been loaded, we call a callback function that
-has been passed to our loader.</p>
+<p>The solution is to use a multiple image loader that counts the loaded images and calls a function 
+you pass when done!</p>
 
-<p>The complete example code that produces the result shown at the
-beginning of this page is the following:</p>
+<p>The trick is to have an array of URLs that will be used by our multiple image loader, and have 
+the onload callback called once per image loaded, so we can count the number of images effectively
+loaded.</p>
+
+<p>When all images have been loaded, we call a callback function that has been passed to our loader.</p>
+
+<p>The complete example code that produces the result shown at the beginning of this page is the 
+following:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 181. multiple image loader (241) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -12720,9 +12709,8 @@ var imagesToLoad = {
   https://i.ibb.co/Dt6txmG/repeatable-Pattern.jpg
 };</pre>
 
-<p>Notice that instead of using a traditional array, we defined this list
-as a JavaScript object, with properties whose names will be easier to
-manipulate (flowers, lion, tiledFloor, etc.).</p>
+<p>Notice that instead of using a traditional array, we defined this list as a JavaScript object, 
+with properties whose names will be easier to manipulate (flowers, lion, tiledFloor, etc.).</p>
 
 <h4>The image loader function:</h4>
 
@@ -12753,9 +12741,16 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 <h4>Explanations:</h4>
 
 <ul>
-  <li>This function takes as a parameter the list of images to be loaded, and a drawCallback function that will be called only once all images have been loaded. This callback takes as a parameter a new object that is the list of images that have been loaded (see <i>line 16</i>).</li>
-  <li>We first count the number of images to load (<i>lines 7-9</i>), then for each image to be loaded we create a new JavaScript image object (<i>line 12</i>) and set its src attribute (<i>line 19</i>) - this will start to load the image.</li>
-  <li>When an image comes in, the onload callback is called (<i>line 14</i>) and inside, we increment the number of images loaded (<i>line 15</i>) and test if this number is &gt;=  the total number of images that should be loaded. If this is the case, the callback function is called (<i>line 16</i>).</li>
+  <li>This function takes as a parameter the list of images to be loaded, and a drawCallback 
+    function that will be called only once all images have been loaded. This callback takes as a 
+	parameter a new object that is the list of images that have been loaded (see <i>line 16</i>).</li>
+  <li>We first count the number of images to load (<i>lines 7-9</i>), then for each image to be 
+    loaded we create a new JavaScript image object (<i>line 12</i>) and set its src attribute 
+	(<i>line 19</i>) - this will start to load the image.</li>
+  <li>When an image comes in, the onload callback is called (<i>line 14</i>) and inside, we 
+    increment the number of images loaded (<i>line 15</i>) and test if this number is &gt;= the 
+	total number of images that should be loaded. If this is the case, the callback function is 
+	called (<i>line 16</i>).</li>
 </ul>
 
 <h4>Example of use of this loader</h4>
@@ -12771,8 +12766,11 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
 <h4>Explanations:</h4>
 
 <ul>
-  <li><i>Line 1</i> is the call to the image loader, the first parameter is the list of images to be loaded, while the second parameter is the callback function that will be called once all images have been loaded.</li>
-  <li><i>Lines 2-5</i>: in this callback we create patterns from the loaded images (note the use of the property names imagesLoaded.flowers, etc. that makes the code easier to read).</li>
+  <li><i>Line 1</i> is the call to the image loader, the first parameter is the list of images to 
+    be loaded, while the second parameter is the callback function that will be called once all 
+	images have been loaded.</li>
+  <li><i>Lines 2-5</i>: in this callback we create patterns from the loaded images (note the use 
+    of the property names imagesLoaded.flowers, etc. that makes the code easier to read).</li>
   <li><i>Line 7</i>: then we call a function that will draw the rectangles.</li>
 </ul>
 
@@ -12806,7 +12804,8 @@ manipulate (flowers, lion, tiledFloor, etc.).</p>
   title="A green shadowed rectangle"
   alt="A green shadowed rectangle." />
 
-<p>There are 4 properties of the canvas context that are useful for indicating that we want to draw shapes with shadows:</p>
+<p>There are 4 properties of the canvas context that are useful for indicating that we want to draw 
+shapes with shadows:</p>
 
 <ol type="1">
   <li>shadowColor: color to use for shadows,</li>
@@ -13018,14 +13017,13 @@ function addShadows() {
 
 </details>
 
-<p>Ah, indeed, the call to ctx.fill() casts a shadow, but the call
-to ctx.stroke(), that paints the whole path again, casts a shadow too,
-and this time the outline produces an unwanted shadow… How can we avoid
-this effect, while using the same technique for drawing the path?</p>
-<p>The trick is to save the context before setting the shadow
-properties, then draw the filled circle, then restore the context (to
-its previous state: without shadows), then draw the outlined circle by
-calling ctx.stroke().</p>
+<p>Ah, indeed, the call to ctx.fill() casts a shadow, but the call to ctx.stroke(), that paints the 
+whole path again, casts a shadow too, and this time the outline produces an unwanted shadow… How 
+can we avoid this effect, while using the same technique for drawing the path?</p>
+
+<p>The trick is to save the context before setting the shadow properties, then draw the filled 
+circle, then restore the context (to its previous state: without shadows), then draw the outlined 
+circle by calling ctx.stroke().</p>
 
 <h4>Correct version of the code:</h4>
 
@@ -13126,10 +13124,11 @@ ctx.restore();
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-7">3.5.7 Styling Lines</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Several context properties can be used to set the thickness of the
-shape outlines, the way line end caps are drawn, etc.</p>
-<p>They apply to all shapes that are drawn in path mode (lines, curves,
-arcs) and some also apply to rectangles.</p>
+<p>Several context properties can be used to set the thickness of the shape outlines, the way line 
+end caps are drawn, etc.</p>
+
+<p>They apply to all shapes that are drawn in path mode (lines, curves, arcs) and some also 
+apply to rectangles.</p>
 
 <h4>Examples of line styles</h4>
 
@@ -13189,10 +13188,9 @@ pixels) of the lineWidth property of the context:</p>
 
 <h4>Example #2: changing the end caps of a line</h4>
 
-<p>The lineCap property of the context indicates the way line end caps are
-rendered. Possible values are butt (default), round, square (from top to
-bottom in the next illustration). Note that a value of “round” or
-“square” makes the lines slightly longer than the default value “butt”.</p>
+<p>The lineCap property of the context indicates the way line end caps are rendered. Possible values 
+are butt (default), round, square (from top to bottom in the next illustration). Note that a value 
+of “round” or “square” makes the lines slightly longer than the default value “butt”.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 187. line cap values (251) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -13251,11 +13249,13 @@ bottom in the next illustration). Note that a value of “round” or
 
 </details>
 
-<p>Note that in this example, the rectangle is not affected. It has no line ends visible - all its sides meet. However, the next property we’re going to look at will have an effect on rectangles!</p>
+<p>Note that in this example, the rectangle is not affected. It has no line ends visible - all its 
+sides meet. However, the next property we’re going to look at will have an effect on rectangles!</p>
 
 <h4>Example #3: setting the type of corner when two lines meet</h4>
 
-<p>The lineJoin property of the context indicates the way corners are rendered, when two lines meet. Possible values are miter (the default) for creating sharp corners, round, or bevel for “cut corners”.</p>
+<p>The lineJoin property of the context indicates the way corners are rendered, when two lines meet. 
+Possible values are miter (the default) for creating sharp corners, round, or bevel for “cut corners”.</p>
 
 <h4>Try this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -13277,7 +13277,7 @@ bottom in the next illustration). Note that a value of “round” or
   &lt;title&gt;Setting the type of corner when two lines meet - Example #3&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the   canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
   &lt;script&gt;
     var canvas = document.getElementById(&#39;myCanvas&#39;);
     var ctx = canvas.getContext(&#39;2d&#39;);
@@ -13304,10 +13304,15 @@ bottom in the next illustration). Note that a value of “round” or
 
 </details>
 
-<h4>Example #4: specific case of lineJoin=“miter”, the miterLimit property, a way to avoid looooooong corners!</h4>
+<h4>Example #4: specific case of lineJoin=“miter”, the miterLimit property, a way to avoid 
+looooooong corners!</h4>
 
-<p>The miterLimit property value corresponds to the maximum miter length: the distance between the inner corner and the outer corner where two lines meet. When the angle of a corner between two lines gets smaller, the miter length grows and can become too long.</p>
-<p>In order to avoid this situation, we can set the miterLimit property of the context to a threshold value. If the miter length exceeds the miterLimit value, then the corner will be rendered as if the lineJoin property had been set to “bevel” and the corner will be “cut”.</p>
+<p>The miterLimit property value corresponds to the maximum miter length: the distance between 
+the inner corner and the outer corner where two lines meet. When the angle of a corner between 
+two lines gets smaller, the miter length grows and can become too long.</p>
+<p>In order to avoid this situation, we can set the miterLimit property of the context to a 
+threshold value. If the miter length exceeds the miterLimit value, then the corner will be 
+rendered as if the lineJoin property had been set to “bevel” and the corner will be “cut”.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 190. linejoin property - arrows fig 1, 2 and 3 (253) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -13329,7 +13334,8 @@ bottom in the next illustration). Note that a value of “round” or
     that the part that goes out of the angle becomes very long."
   style="width:40%;" />
 
-<p>In the example, try different values for the miterLimit property.  You’ll see that the way the corners are rendered changes at values around 2 and 3.</p>
+<p>In the example, try different values for the miterLimit property.  You’ll see that the way the 
+corners are rendered changes at values around 2 and 3.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2">4.2 Animations - An Introduction – Module 4</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -13344,7 +13350,10 @@ bottom in the next illustration). Note that a value of “round” or
   <li>Repeat (go to step 1).</li>
 </ol>
 
-<p>These are the basic steps for animating objects in a canvas. The order of the steps can be changed (i.e. you can move the shapes before drawing them), but, the principle is the same: clear-draw-move-repeat.</p>
+<p>These are the basic steps for animating objects in a canvas. The order of the steps can be 
+changed (i.e. you can move the shapes before drawing them), but, the principle is the same: 
+clear-draw-move-repeat.</p>
+
 <p>Step 1 could be avoided if you redraw the whole canvas content during step 2.</p>
 
 <h4>Before HTML5</h4>
@@ -13353,9 +13362,9 @@ bottom in the next illustration). Note that a value of “round” or
 They used CSS backgrounds inside &lt;div&gt; elements, and used to change the CSS 
 top, left, width and height properties of the divs to animate graphic images on the screen.</p>
 
-<p>During the late 1990s and early 2000s, JavaScript became increasingly popular. 
-The community created a first ‘umbrella term’ describing a collection of technologies 
-used together to create interactive and animated Web sites - <a href="https://en.wikipedia.org/wiki/Dynamic_HTML" 
+<p>During the late 1990s and early 2000s, JavaScript became increasingly popular. The community 
+created a first ‘umbrella term’ describing a collection of technologies used together to create 
+interactive and animated Web sites - <a href="https://en.wikipedia.org/wiki/Dynamic_HTML" 
 target="_blank" rel="noopener noreferrer">DHTML (Dynamic HTML)</a>. For example, check the 
 <a href="https://def-logic.com/" target="_blank" rel="noopener noreferrer">
 games developed at this time by Brent Silby</a> (they all use DHTML).</p>
@@ -15137,9 +15146,8 @@ depending on increments you set in event listeners <i>(lines 23-31)</i>.</p>
 
 </details>
 
-<p>We had to define a variable started=false; as we cannot draw any line before 
-the mouse moved (we need at least two consecutive positions).This is done in the 
-test at <i>line 21</i>.</p>
+<p>We had to define a variable started=false; as we cannot draw any line before the mouse moved 
+(we need at least two consecutive positions).This is done in the test at <i>line 21</i>.</p>
 
 <h4>Example #3: same as example #2 but we draw only when a mouse button is pressed</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15185,16 +15193,14 @@ window.onload = function () {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3-4">4.3.4 Responsive Canvas</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Resizing a canvas can be tricky if we don’t know a few rules that
-might not be easily guessed:</p>
+<p>Resizing a canvas can be tricky if we don’t know a few rules that might not be easily guessed:</p>
 
 <ul>
-  <li>Changing the width or height property of a canvas in JavaScript erases its 
-    content and resets its context,</li>
-  <li>Using percentages (%) in the CSS width and height properties of a canvas 
-    does not change its number of pixels/resolution[.] Instead, it scales the 
-    existing pixels without erasing the content, giving a blurry effect when a 
-    canvas becomes larger, for example.</li>
+  <li>Changing the width or height property of a canvas in JavaScript erases its content and 
+    resets its context,</li>
+  <li>Using percentages (%) in the CSS width and height properties of a canvas does not change its 
+    number of pixels/resolution[.] Instead, it scales the existing pixels without erasing the 
+	content, giving a blurry effect when a canvas becomes larger, for example.</li>
 </ul>
 
 <p>Before looking at how best to handle canvas resizing, let’s see some examples below:</p>
@@ -15263,10 +15269,9 @@ diagonals.</p>
   }
 &lt;/style&gt;</pre>
 
-<p>And the result shows clearly that the resolution is still the same,
-only the pixels are bigger!</p>
-<p><b><i>BEST PRACTICE: never use CSS percentages on a canvas width or
-height!</i></b></p>
+<p>And the result shows clearly that the resolution is still the same, only the pixels are bigger!</p>
+
+<p><b><i>BEST PRACTICE: never use CSS percentages on a canvas width or height!</i></b></p>
 
 <h4>Example #3: a responsive canvas using a resize listener +  a parent element</h4>
 
@@ -15360,12 +15365,9 @@ function resizeCanvasAccordingToParentSize() {
   alt="Same as last example with monster."
   style="width:40%;" />
 
-<p>When the canvas is resized, its width became smaller than the
-monster’s size. We scale down the monster (using ctx.scale!)
-The code is very similar to the previous example, we just
-replaced drawDiagonals() by drawMonster(…), and we added a test in
-the drawMonster(…) function for scaling the monster if it’s bigger than
-the canvas width (look at <i>lines 10-16</i>), this is a common
+<p>When the canvas is resized, its width became smaller than the monster’s size. We scale down the 
+monster (using ctx.scale!) The code is very similar to the previous example, we just replaced drawDiagonals() by drawMonster(…), and we added a test in the drawMonster(…) function for scaling 
+the monster if it’s bigger than the canvas width (look at <i>lines 10-16</i>), this is a common 
 trick:</p>
 
 <details>
@@ -15395,12 +15397,10 @@ trick:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4-1">4.4.1 A Glimpse of Advanced Canvas Functionalities</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The canvas API is a “big beast”, and we have presented all the essential 
-techniques for drawing and animating. However, we could not fit everything 
-in this course. Exotic features that are rarely used by developers, or advanced 
-techniques that require more than 20 lines of
-JavaScript, have been put aside for 
-<a href="https://www.edx.org/course/html5-apps-and-games" 
+<p>The canvas API is a “big beast”, and we have presented all the essential techniques for 
+drawing and animating. However, we could not fit everything in this course. Exotic features that 
+are rarely used by developers, or advanced techniques that require more than 20 lines of 
+JavaScript, have been put aside for <a href="https://www.edx.org/course/html5-apps-and-games" 
 target="_blank" rel="noopener noreferrer">the W3Cx HTML5 Apps and Games course</a>.</p>
 
 <p>In that course, you will learn:</p>
@@ -15443,40 +15443,31 @@ target="_blank" rel="noopener noreferrer">the W3Cx HTML5 Apps and Games course</
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-1-1">5.1.1 HTML5 Forms Introduction - Module 5</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Congratulations! You made it to module 5.
-Welcome this time to the wonderful world of HTML5 forms.
-There have been no improvements since 1997 to HTML forms.</p>
+<p>Congratulations! You made it to module 5. Welcome this time to the wonderful world of HTML5 
+forms. There have been no improvements since 1997 to HTML forms.</p>
 
-<p>HTML5 this time comes with a set of new input fields for entering
-dates, colors, entering phone numbers, URLs, and so on.
-New attributes related to form validation have also been introduced,
-and they are related to a new build-in validation system that make
-things easier than before without the need to use JavaScript.
-However, JavaScript validation API is also available for people who
-would like to write their own customized validation system.
-These additions are very handy when used on mobile devices but raised
-many critics from Web designers, mainly related to their desktop
-implementations.</p>
+<p>HTML5 this time comes with a set of new input fields for entering dates, colors, entering phone 
+numbers, URLs, and so on. New attributes related to form validation have also been introduced, and 
+they are related to a new build-in validation system that make things easier than before without 
+the need to use JavaScript. However, JavaScript validation API is also available for people who 
+would like to write their own customized validation system. These additions are very handy when 
+used on mobile devices but raised many critics from Web designers, mainly related to their 
+desktop implementations.</p>
 
-<p>The course discusses all the cases and recommend solutions and good
-practices. Of course, like usual, many examples will be provided that
-you can run directly this time in the course pages, but also as
-standalone examples hosted on the JS Bin Web site. If you try to modify
-them or creates your own examples, please share in the discussion forums
-as usual. Have fun!</p>
+<p>The course discusses all the cases and recommend solutions and good practices. Of course, like 
+usual, many examples will be provided that you can run directly this time in the course pages, but 
+also as standalone examples hosted on the JS Bin Web site. If you try to modify them or creates your 
+own examples, please share in the discussion forums as usual. Have fun!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2-1">5.2.1 Elements and Attributes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>With HTML5, forms, which had shown little improvement since 1997,
-evolved considerably.  To achieve this, Web developers relied on many
-popular JavaScript frameworks for validating input formats, providing
-various input GUIs, such as calendars for dates, sliders, etc.
-Frameworks such as jQueryUI, Dojo, and Sencha, all provide a widget set
-for improving forms. Furthermore, it was time to take into account the
-specifics of mobile web applications, where the GUI of a date chooser
-cannot be the same as a 400x400 pixel wide calendar on a desktop.
-Contextual virtual keyboards provided the way forward on smartphones and
-tablets thanks to Apple, Google and others.</p>
+<p>With HTML5, forms, which had shown little improvement since 1997, evolved considerably. To 
+achieve this, Web developers relied on many popular JavaScript frameworks for validating input 
+formats, providing various input GUIs, such as calendars for dates, sliders, etc. Frameworks such 
+as jQueryUI, Dojo, and Sencha, all provide a widget set for improving forms. Furthermore, it was 
+time to take into account the specifics of mobile web applications, where the GUI of a date 
+chooser cannot be the same as a 400x400 pixel wide calendar on a desktop. Contextual virtual 
+keyboards provided the way forward on smartphones and tablets thanks to Apple, Google and others.</p>
 
 <h4>HTML5 took all this into account and thus provides:</h4>
 
@@ -15494,11 +15485,10 @@ tablets thanks to Apple, Google and others.</p>
     feedback, etc.<br></li>
 </ul>
 
-<p>Examples of contextual keyboards are shown above; they differ
-depending on the type of  &lt;input&gt; fields in the &lt;form&gt;. In
-the examples, we can see: email, URL, and phone number. Look at the
-different keyboard layouts. The last picture is a date picker from an
-IOS phone.</p>
+<p>Examples of contextual keyboards are shown above; they differ depending on the type of 
+&lt;input&gt; fields in the &lt;form&gt;. In the examples, we can see: email, URL, and phone 
+number. Look at the different keyboard layouts. The last picture is a date picker from an IOS 
+phone.</p>
 
 <h4>External resources:</h4>
 
@@ -15511,14 +15501,12 @@ IOS phone.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-2-2">5.2.2 Example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>There is a lot of course content covered this week, and before we get
-into all the details of the elements and attributes introduced by
-HTML5, we suggest playing with running examples of full featured
-forms.</p>
+<p>There is a lot of course content covered this week, and before we get into all the details of 
+the elements and attributes introduced by HTML5, we suggest playing with running examples of full 
+featured forms.</p>
 
-<p>This example was created by a learner (by Mels Le N.) from a previous
-version of this course. It uses the geolocation API presented in Module
-6 for auto-filling the address input fields.</p>
+<p>This example was created by a learner (by Mels Le N.) from a previous version of this course. It 
+uses the geolocation API presented in Module 6 for auto-filling the address input fields.</p>
 
 <p>Feel free to look at the source code in the <a href="https://jsbin.com/sivula/edit?online%20example/" 
 target="_blank" rel="noopener noreferrer">JS Bin</a>:</p>
@@ -15539,10 +15527,9 @@ target="_blank" rel="noopener noreferrer">
 
 <h4>Live coding video 2: creating GUI elements dynamically</h4>
 
-<p>Input elements, in particular the elements introduced by HTML5, can
-be used as widgets to control the behavior of a Web application. In this
-situation, they do not need to be inside a &lt;form&gt; element. We just
-bind event listeners to them and we use them as client-side widgets.</p>
+<p>Input elements, in particular the elements introduced by HTML5, can be used as widgets to 
+control the behavior of a Web application. In this situation, they do not need to be inside a 
+&lt;form&gt; element. We just bind event listeners to them and we use them as client-side widgets.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 215b. gui: speed, color and size of rectangle (293) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -19385,27 +19372,23 @@ simply open the dev. tool’s console and type localStorage.clear() there
 
 <h4>Iterating local stores</h4>
 
-<p>Local stores (localStorage or sessionStorage) can also be iterated
-through in order to list all the content that they contain. The order is
-not guaranteed, but this may be useful at times (if only for debugging
-purposes!). The following code lists everything in the current store:</p>
+<p>Local stores (localStorage or sessionStorage) can also be iterated through in order to list all 
+the content that they contain. The order is not guaranteed, but this may be useful at times (if 
+only for debugging purposes!). The following code lists everything in the current store:</p>
 
 <pre>for (var i = 0, n = localStorage.length; i &lt; n; i++) {
   var k = localStorage.key(i);
-  console.log(k + &quot;: &quot; + localStorage[k]); // get the ith value, the one with a key that is in the variable k.
-}</pre>
+  console.log(k + &quot;: &quot; + localStorage[k]); // get the ith value, the one with a key that 
+    is in the variable k.}</pre>
 
-<p>Students may note that something seems a bit off in the example
-above: instead of calling localStorage.getItem(k), we simply
-access localStorage[k]. Why? Because keys in the local store can also be
-accessed as if the store were a simple JavaScript object.</p>
+<p>Students may note that something seems a bit off in the example above: instead of calling 
+localStorage.getItem(k), we simply access localStorage[k]. Why? Because keys in the local store 
+can also be accessed as if the store were a simple JavaScript object.</p>
 
-<p>Instead of localStorage.getItem(“foo”) and localStorage.setItem(“foo”,
-“bar”), one can write localStorage.foo and localStorage.foo = “bar”. Of
-course there are limitations to this mapping: any string can serve as a
-key, so that localStorage.getItem(“one two three”) works, whereas that
-string would not be a valid identifier after the dot (but it could still
-work as localStorage[“one two three”]).</p>
+<p>Instead of localStorage.getItem(“foo”) and localStorage.setItem(“foo”, “bar”), one can write localStorage.foo and localStorage.foo = “bar”. Of course there are limitations to this mapping: 
+any string can serve as a key, so that localStorage.getItem(“one two three”) works, whereas that 
+string would not be a valid identifier after the dot (but it could still work as localStorage[“one 
+two three”]).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 300. number of times this page has shown on browser (359) ~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -19417,15 +19400,13 @@ work as localStorage[“one two three”]).</p>
   
 <h4>Example that shows all the methods of the local storage API in action</h4>
 
-<p><a href="https://jsbin.com/nedigi/edit?html,css,output" target="_blank" rel="noopener noreferrer">Online
-example at JSBin</a>, run it, then click on the first button to show all
-key/values in the localStorage. Open the URL in another tab, and see
-that the data is shared between tabs, as local stores are attached to an
-origin.</p>
+<p><a href="https://jsbin.com/nedigi/edit?html,css,output" target="_blank" rel="noopener noreferrer">
+Online example at JSBin</a>, run it, then click on the first button to show all key/values in the 
+localStorage. Open the URL in another tab, and see that the data is shared between tabs, as local 
+stores are attached to an origin.</p>
 
-<p>Then click on the second button to add data to the store, click on
-the third to remove data. Finally, the last one clears the whole data
-store.</p>
+<p>Then click on the second button to add data to the store, click on the third to remove data. 
+Finally, the last one clears the whole data store.</p>
 
 <details>
   <summary><b>Click to expand!</b></summary>
@@ -19500,15 +19481,14 @@ store.</p>
 &lt;/html&gt;</pre>
 
 </details>
-<p>You can check in the Chrome dev. tools user interface that the
-content of the localStorage changes as you click on the buttons.</p>
+<p>You can check in the Chrome dev. tools user interface that the content of the localStorage 
+changes as you click on the buttons.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2-4">6.2.4 Example 2</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Local stores are also useful for<b> saving/restoring user
-preferences</b> of Web Applications. For example, the JS Bin tool you
-have been using since the beginning of this course uses localStorage to
-store the list of tabs you open, and their width:</p>
+<p>Local stores are also useful for<b> saving/restoring user preferences</b> of Web Applications. 
+For example, the JS Bin tool you have been using since the beginning of this course uses 
+localStorage to store the list of tabs you open, and their width:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 301. example user preferences of web applications (361) ~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -19518,12 +19498,10 @@ store the list of tabs you open, and their width:</p>
   alt="Example of preferences."
   style="width:35%;" />
 
-<p>This way, the next time you come back to JSBin, “it will remember
-your last settings”.</p>
+<p>This way, the next time you come back to JSBin, “it will remember your last settings”.</p>
 
-<p>Another example is a guitar FX processor / amp simulator your
-instructor is writing with some of his students. It uses localStorage to
-save/restore presets values:</p>
+<p>Another example is a guitar FX processor / amp simulator your instructor is writing with some 
+of his students. It uses localStorage to save/restore presets values:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 302. another example of localstorage of preset values (362) ~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -19545,26 +19523,23 @@ save/restore presets values:</p>
 
 <p>Original example on JSBin:</p>
 
-<p>We can change the color, size and speed of the animated rectangle.
-However, each time we come back to the page, default values are
-restored.</p>
+<p>We can change the color, size and speed of the animated rectangle. However, each time we come 
+back to the page, default values are restored.</p>
 
-<p>We would like to save the current values and find them back as they
-were when we come back to the page.</p>
+<p>We would like to save the current values and find them back as they were when we come back to 
+the page.</p>
 
-<p><a href="https://jsbin.com/cebavo/edit?html,js,console,output" target="_blank" rel="noopener noreferrer">
-Here is a modified example that saves/restores its state, you can try it
-at JSBin</a>. In this modified version of the animated rectangle
-example, you can set the color, size, speed, etc. And if you reload the
-page, the state of the different input field is restored, but also the
-internal variables. Check the source code in the JS Bin example and read
-the following explanations.</p>
+<p><a href="https://jsbin.com/cebavo/edit?html,js,console,output" target="_blank" rel="noopener 
+noreferrer">Here is a modified example that saves/restores its state, you can try it at JSBin</a>. 
+In this modified version of the animated rectangle example, you can set the color, size, speed, 
+etc. And if you reload the page, the state of the different input field is restored, but also 
+the internal variables. Check the source code in the JS Bin example and read the following 
+explanations.</p>
 
-<p>We used the same generic code for saving/restoring input fields’
-values we saw in the first example that used localStorage. The only
-difference is that we renamed the two generic functions so that they
-correspond better to their role here (instead of saveFormContent we
-called the function restorePreferences).</p>
+<p>We used the same generic code for saving/restoring input fields’ values we saw in the first 
+example that used localStorage. The only difference is that we renamed the two generic functions 
+so that they correspond better to their role here (instead of saveFormContent we called the 
+function restorePreferences).</p>
 
 <p>The function initPreferences is executed when the page is loaded.</p>
 
@@ -19614,8 +19589,8 @@ function applyGUIvalues() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2-5">6.2.5 Example 3</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><a href="https://jsbin.com/zowise/edit?html,js,output" 
-target="_blank" rel="noopener noreferrer">Online example at JSBin</a></p>
+<p><a href="https://jsbin.com/zowise/edit?html,js,output" target="_blank" rel="noopener noreferrer">
+Online example at JSBin</a></p>
 
 <p>This time, using the setItem and getItem method we saw earlier in the course, we could write 
 some generic functions for saving/restoring input fields’ content, without having advance 
@@ -19841,7 +19816,8 @@ contacts in JSON</a></p>
 
 <h4>Example #2: a form and a table that displays the contacts stored in localStorage</h4>
 
-<p><a href="https://jsbin.com/karoboj/3/edit?html,css,console,output" target="_blank" rel="noopener noreferrer">Example on JSBin</a></p>
+<p><a href="https://jsbin.com/karoboj/3/edit?html,css,console,output" target="_blank" rel="noopener 
+noreferrer">Example on JSBin</a></p>
 
 <p>Add contacts using the form, see how the HTML table is updated. Try to reload the page: data 
 are persisted in localStorage.</p>
@@ -19928,13 +19904,14 @@ HYA-WAVE sound editor</a> (screenshot above).</p>
 <h4>External resources</h4>
 
 <ul>
-  <li>From W3C’s specification: <a
-    href="https://www.w3.org/TR/FileAPI/" target="_blank" rel="noopener noreferrer">File API</a></li>
-  <li>An article from Web.dev: <a
-    href="https://web.dev/read-files/" target="_blank" rel="noopener noreferrer">Read files in JavaScript</a></li>
-  <li>MDN’s Web Docs: <a
-    href="https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications" target="_blank" 
-      rel="noopener noreferrer">Using files from web applications</a></li>
+  <li>From W3C’s specification: 
+    <a href="https://www.w3.org/TR/FileAPI/" target="_blank" rel="noopener noreferrer">File API</a></li>
+  <li>An article from Web.dev: 
+    <a href="https://web.dev/read-files/" target="_blank" rel="noopener noreferrer">Read files in 
+	JavaScript</a></li>
+  <li>MDN’s Web Docs: 
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications" 
+	target="_blank" rel="noopener noreferrer">Using files from web applications</a></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-3-2">6.3.2 Working with local files</h3>
@@ -21344,7 +21321,8 @@ target="_blank" rel="noopener noreferrer">
   loading="lazy"
   title="Example #1 How to get a physical address from the longitude and latitude"
   alt="Example #1 How to get a physical address from the longitude and latitude."
-  style="width:35%;" /></a>
+  style="width:35%;" />
+</a>
 
 <p>Source code of this example (in order to run it, you need a Google API key, used at <i>line 6</i>.</p>
 
@@ -21448,20 +21426,21 @@ target="_blank" rel="noopener noreferrer">
 noreferrer"> the demo on the Gisgraphy website</a>):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 331. gisgraphy screenshot (398) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<a href="https://services.gisgraphy.com/static/leaflet/index.html" 
-target="_blank" rel="noopener noreferrer">
+<a href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" rel="noopener 
+noreferrer">
 <img class="displayed"
   src="./images/image331.webp"
   loading="lazy"
   title="Gisgraphy screenshot"
   alt="Gisgraphy screenshot."
-  style="width:35%;" /></a>
+  style="width:35%;" />
+</a>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><b>Example #2:</b> reverse geocoding + OpenStreetMap</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Important note:</b> these examples below rely on an external 
-<a href="https://github.com/perliedman/leaflet-control-geocoder" 
-target="_blank" rel="noopener noreferrer">GitHub resource</a>.</p>
+<a href="https://github.com/perliedman/leaflet-control-geocoder" target="_blank" rel="noopener 
+noreferrer">GitHub resource</a>.</p>
 
 <p>Please, pan and zoom on the map and click.</p>
 
@@ -21789,4 +21768,5 @@ good understanding of the material.</p>
 
   </body>
 </html>
+
 
