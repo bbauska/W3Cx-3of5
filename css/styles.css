@@ -48,10 +48,12 @@ pre {
   background-color:#eee;
   overflow:auto;
   margin:0 0 0 3em;  /* 0 0 1em */
-  padding:.5em 1em;
-  white-space: pre-wraps;
+  padding: .5em 1em;
+  white-space: pre-wrap;
   overflow-x: auto;
-  width: min-content + 2px; 
+  width: min-content + 2px;
+  /* Calculates the minimum content width and then adds 2 pixels */
+  width: calc-size(min-content, size + 2px);
 }
 pre code,
 pre .line-number {
@@ -102,7 +104,7 @@ a:hover {
 }
 a[href]:hover {
   text-decoration: underline; 
-  text-decoration-color: 0000ff;
+  text-decoration-color: #0000ff;  /* blue */
 }
 
 div {
@@ -163,7 +165,7 @@ details[open] > summary {
   background-color: #ffff00;  /* pure (or mostly pure) yellow */
 }
 
-background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)
+background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
 
 body {
   font-family: Bahnschrift, Inter, Helvetic, sans-serif;
@@ -208,7 +210,7 @@ pre {
   overflow: auto;
   margin: 0 0 1em;
   padding: .5em 1em;
-  white-space: pre-wraps;
+  white-space: pre-wrap;
   overflow-x: auto;
 }
 pre > code {
