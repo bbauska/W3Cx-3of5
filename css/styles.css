@@ -44,22 +44,21 @@ pre > code {
   word-wrap: normal;
 }
 pre {
-  font:normal normal 10px/12px consolas,Courier,Monospace;
-  background-color:#eee;
-  overflow:auto;
-  margin:0 0 0 3em;  /* 0 0 1em */
+  font: normal normal 10px/12px consolas,Courier,Monospace;
+  background-color: #eee;
+  overflow: auto;
+  margin: 0 0 0 3em;  /* 0 0 1em */
   padding: .5em 1em;
   white-space: pre-wrap;
   overflow-x: auto;
-  width: min-content + 2px;
   /* Calculates the minimum content width and then adds 2 pixels */
   width: calc-size(min-content, size + 2px);
 }
 pre code,
 pre .line-number {
-  font:normal normal 10px/12px consolas,Courier,Monospace;
-  color:black;
-  display:block;
+  font: normal normal 10px/12px consolas,Courier,Monospace;
+  color: black;
+  display: block;
 }
 pre .line-number {
   font:normal normal 10px/12px consolas,Courier,Monospace;
