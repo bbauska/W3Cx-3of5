@@ -675,6 +675,7 @@ any other device as long as both are connected to the internet using a valid 
 <a href="https://www.lifewire.com/what-is-an-ip-address-2625920" target="_blank" 
 rel="noopener noreferrer">IP address</a>. The internet makes the information 
 sharing system known as the web possible.</p>
+
 <p>The web, which is short for <a href="https://www.lifewire.com/around-the-web-4781469" 
 target="_blank" rel="noopener noreferrer">World Wide Web</a>, is one of the ways 
 information is shared on the internet (others include 
@@ -718,6 +719,7 @@ are agreed upon by invested organizations, groups, businesses, and others. These
 groups help the internet remain functional and accessible. However, for the most 
 part, the internet is a free and open broadcast medium of networked hardware with 
 no single owner.</p>
+
 <p>Most consumers are familiar with and comfortable with the World Wide Web. With 
 its easy-to-use interface, it’s the best way to get information in a few clicks.</p>
 
@@ -2631,10 +2633,12 @@ target="_blank" rel="noopener noreferrer">
 
 <p>The &lt;time&gt; element is useful for marking a time or a duration
 in a document.</p>
+
 <p>It provides both a human readable part (the part
 between &lt;time&gt; and &lt;/time&gt;) and a machine readable part
 contained within a datetime attribute. Dates are expressed
 as YYYY-MM-DD.</p>
+
 <p>The machine readable part adds semantics that can be used by search
 engines for indexing, by browsers or by browser extensions, or by
 JavaScript code. Useful scenarios include generating alerts for
@@ -2735,19 +2739,24 @@ datetime=“P4D”&gt; (period = four days)…</p>
 duration value that ends with another letter indicating the unit
 used: “D” for “days”,  “H” for hours, “M” for minutes and “S” for
 seconds. </p>
+
 <p>You can separate the different elements “P”, value and unit with
 spaces, but this is optional. So &lt;time datetime="P4D"&gt; is a duration of
 4 days, as is &lt;time datetime="P 4 D"&gt;.</p>
+
 <p>Using a “T” after the “P” marker allows you to indicate a more
 accurate duration time: &lt;time datetime=“PT4H 6M 12.55S”&gt; is a
 duration of 4 hours, 6 minutes and 12.55 seconds.</p>
+
 <p>Alternatively, you could use also a duration time component.</p>
+
 <p>From Bruce Lawson’s article : <i>“Whichever you choose, it’s
 represented internally as a number of seconds. Because of this, you
 can’t specify a duration in terms of months, because a month isn’t a
 precise number of seconds; a month can last from 28 to 31 days.
 Similarly, a year isn’t a precise number of seconds; it’s 12 months and
 February sometimes has an extra day.</i></p>
+
 <p><i>You still can’t represent dates before the Christian era, as years
 can’t be negative. Neither can you indicate date ranges. To mark up From
 “21/02/2012 to 25/02/2012″, use two separate &lt;time&gt; elements.”</i></p>
@@ -2903,6 +2912,7 @@ Content-type: image/jpg
 any kind of script/application on the server side, this remote server
 code can send in its HTTP response a Content-type that may force the
 browser to download the image instead of rendering it.</p>
+
 <p>It may also propose a name for the file to be downloaded that may be
 different from the one that appears in the URL of the href attribute.
 This can be done by generating, in addition to the Content-type line in
@@ -3080,6 +3090,7 @@ not be translated:</h4>
 for example) who is named Michel Ham. However, his family name is the
 same as pork and would be translated to “Michel Jambon” in French, or
 Michel Jamón in Spanish…</p>
+
 <p>Using the translate=“no” attribute should prevent this behavior…</p>
 
 <pre>&lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt; is a professor from the University of Nice, France.</pre>
@@ -3234,6 +3245,7 @@ semantics into html documents.</p>
 <h3 id="ch1-5-2">1.5.2 Testing Tools</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Introduction</h4>
+
 <p>After seeing the principle of embedding microdata in an HTML page, we
 now present some structured data test tools you can use to check if your
 data are correct.</p>
@@ -3259,6 +3271,7 @@ use to see how Google recognizes the semantic data you embed in your HTML code.<
 renders as a very simple paragraph that explains who Michel Buffa is…
 But we embedded Microdata, so it’s interesting to see how a search
 engine sees it, and how it may produce “augmented search results”.</p>
+
 <p><a href="https://jsbin.com/gunuzus/1/edit?html,output" target="_blank" rel="noopener noreferrer">Online example
 at JSBin</a></p>
 
@@ -3378,10 +3391,12 @@ the container element</h4>
 <p>HTML5 proposes semantic elements for representing sections, articles, headers, etc, 
 but it does not propose any specific elements or attributes to describe an address, a 
 product, a person, etc.</p>
+
 <p>We need a special vocabulary to represent a person or a physical address. With 
 microdata you can define your own vocabulary or better, reuse one of the existing 
 popular vocabularies, such as <a href="https://schema.org/" target="_blank" 
 rel="noopener noreferrer">schema.org</a>.</p>
+
 <p>Microdata works with properties defined as name/value pairs. The names are 
 defined in the corresponding vocabulary. For example, the vocabulary for 
 representing a <a href="https://schema.org/Person" target="_blank" 
@@ -3390,12 +3405,14 @@ rel="noopener noreferrer">Person</a> defines a set of property names.</p>
 a “schema”), a Person can have a name (some text), an Address (the type
 is defined by another vocabulary named PostalAddress), an affiliation
 (defined by another vocabulary named Organization) and so on.</p>
+
 <p>We notice that one property, such as the address of a Person, may use
 another vocabulary. Yes, a vocabulary may link to another vocabulary!
 There is also inheritance between vocabularies! The above screenshot
 shows that the Person vocabulary inherits from a Thing vocabulary, and
 the five first properties of the table come from this vocabulary that
 describes things.</p>
+
 <p>If you are a developer and if you are familiar with object oriented
 programming, think of properties as class attributes and think of
 vocabularies as classes.</p>
@@ -3414,6 +3431,7 @@ vocabularies as classes.</p>
 site fits your needs, you should reuse it, as the most popular
 vocabularies are becoming de facto standards and will be taken into
 account by Web crawlers, browsers, and browser extensions.</p>
+
 <p>However, if you do not find a vocabulary corresponding to your needs,
 keep in mind that anyone can define a microdata vocabulary and start
 embedding custom properties in their own Web pages. You need to define a
@@ -3636,10 +3654,12 @@ using your favorite search engine, and you will find lots!):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here, we propose a few links to Web pages that were created by students of previous 
 editions of this course).</p>
+
 <p>The students had to create a Web page to introduce themselves, with some information 
 including: name, job, employer, location, etc., and of course enrich the page with 
 microdata. They also had to follow the best practices concerning the new structural 
 elements, headings, etc.</p>
+
 <p>Click on these pages and look at the source code…</p>
 
 <h4>Example #1</h4>
@@ -3775,6 +3795,7 @@ between 2010 and 2013, Firefox only supported the ogg/oggm format. It did not su
 mp3/mp4 encoding for audio/video, while Internet Explorer only supported H.264 encoding. 
 Since 2012, things have changed with browser updates and today most popular formats are 
 supported.</p>
+
 <p><i>The recommended CODEC, which works in all popular browsers: H264/mp4.</i></p>
 
 <h4>External resources</h4>
@@ -3853,6 +3874,7 @@ target="_blank" rel="noopener noreferrer">online example from JSBin</a>):</p>
 <p>In this example, just as for the &lt;video&gt; element, we used
 the controls attribute in order to render the play/stop, time, volume
 and progress widgets.</p>
+
 <p>Notice the other similarities: between the &lt;audio&gt;…&lt;audio&gt; tags, we 
 added a text message that is displayed if the Web browser doesn’t support the 
 &lt;audio&gt; element,
@@ -3912,6 +3934,7 @@ applications (actually, it is often ignored by mobile browsers), as it may
 consume bandwidth even if the user is not interested in watching the proposed 
 video. If you target mobile devices, we recommend using preload=none as well, 
 as the default value for this attribute is auto.</p>
+
 <p><b>Best practice</b>: do not use autoplay and add preload=“none” if you 
 target mobile devices or if you have multiple audio/video files on the same 
 page.  For example, 
@@ -3930,6 +3953,7 @@ will be used as the image that is shown when the video is not playing.</p>
 but even on desktop applications it’s usually a bad idea to use it (except for WebCams 
 and for some animations with small video loops, without sound, or for sites like 
 YouTube, with just videos).</p>
+
 <p><b>Best practice</b>: think twice before using the autoplay attribute, even 
 for desktop applications.</p>
 
@@ -4119,9 +4143,11 @@ scale and orientation of the video element (done using a transform CSS propert
 <h4>Fullscreen video that resizes and maintains ratios</h4>
 
 <p>This is a trendy way of displaying videos.</p>
+
 <p>Below you will find two examples that show how to do this trick. The first is for a 
 “regular” video, using the &lt;video&gt; and &lt;source&gt; elements. This technique 
 can also be used on any YouTube embedded videos (see Example #2 below).</p>
+
 <p>The interesting part is that we use a 100% standard (and really small and simple) 
 JavaScript code here to handle the window resize events and we just set regular CSS 
 properties width and height of the video element, to resize the video.</p>
@@ -4351,6 +4377,7 @@ video {
 
 <h4>Discussion: why can’t we achieve perfect resizing with only CSS and the
 use of properties width=100% and height=100%?</h4>
+
 <p>Let’s use the same video to compare the different approaches again:</p>
 
 <ol>
@@ -4370,10 +4397,12 @@ use of properties width=100% and height=100%?</h4>
 (viewport units) behave in the same way: the width or height of the
 video always fills the window (whichever is smaller), and we always see
 the whole video.</p>
+
 <p><b>Conclusion</b>: we can get full size video without JavaScript by
 using viewport units (vw and vh), unless we need to support some old
 browsers (see
 their <a href="https://caniuse.com/#feat=viewport-units" target="_blank" rel="noopener noreferrer">current support on CanIUse</a>).</p>
+
 <p>Setting the video to 100% width and height results in different behavior:</p>
 
 <ul>
@@ -4389,6 +4418,7 @@ their <a href="https://caniuse.com/#feat=viewport-units" target="_blank" rel="n
 properties/attributes and events that can be manipulated with
 JavaScript. Using the DOM API, it’s possible to manipulate an audio or
 video element as a JavaScript object that has:</p>
+
 <ul>
   <li><b>Methods</b> for controlling the behavior, such as play(), pause(), etc.</li>
   <li><b>Properties</b> (duration, current position, etc.), either in read/write mode (such as volume), or in read-only mode (such as encoding, duration, etc.)</li>
@@ -4399,6 +4429,7 @@ video element as a JavaScript object that has:</p>
 &lt;video&gt; elements is called an “API” (Application Programming
 Interface). For example, we will speak here of the “media API” to talk
 about the associated API.</p>
+
 <p>Like any HTML element, the &lt;video&gt; element can be manipulated/created using the DOM JavaScript API. Here is an example of programmatically creating a &lt;video&gt; element:</p>
 
 <pre>var video = document.createElement(&#39;video&#39;);
@@ -4427,6 +4458,7 @@ on. <i>Notice the text at the top of the video, as well as the
 transparency.</i> The text can be selected, since all the elements
 displayed are pure DOM objects. You can zoom the page in and out, etc.
 This was not possible with the Flash technology.</p>
+
 <p><b>Conclusion</b>:  you can very easily change the look and feel of
 the standard video player by using custom CSS and designing your own
 control widgets. We can find many examples of such video players that
@@ -4443,12 +4475,15 @@ same API by a very small margin).</p>
 <p>The JavaScript API gives you powerful tools to manipulate
 the &lt;video&gt; element, as the video object provides many properties,
 methods and events.</p>
+
 <p>The complete list of events can be found in the <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#event-definitions" 
 target="_blank" rel="noopener noreferrer">HTML5 living standard specification</a>.</p>
+
 <p>The list of properties can be found at the <a href="https://www.w3.org/2010/05/video/mediaevents.html" 
 target="_blank" rel="noopener noreferrer">W3C HTML5 Video Events and API</a> page. 
 This page is interesting for Web developers because it shows an interactive view of the 
 different values and events changing over time while the video is playing within the page.</p>
+
 <p>Try the <a href="https://www.w3.org/2010/05/video/mediaevents.html" target="_blank" 
 rel="noopener noreferrer">direct link</a>, and play with the different buttons and look 
 at the table of events and properties that will change in real time. The displayed names
@@ -4564,6 +4599,7 @@ target="_blank" rel="noopener noreferrer">complete list</a> is much longer!</p>
 
 <br>
 <p></p>
+
 <p>In the next pages, let’s see, through a set of examples, how to use
 these most important properties, methods, and events…</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4575,6 +4611,7 @@ multimedia players” lesson presented further on the course relies
 heavily on this API.</p>
 
 <h4>Example #1: how to use external buttons to control the player’s behavior</h4>
+
 <p>This example gives the first steps towards writing a custom video
 player. It shows basic usage of the JavaScript API for adding custom
 buttons to play/pause the video or to go back to the beginning by
@@ -4934,6 +4971,7 @@ a custom video player with playlist, video thumbnails, custom
 play/pause/next/previous/volume controls, and present it in a Web page
 that used a nice layout based on the HTML5 structuring elements studied
 previously.</p>
+
 <p>Here is the online example. We recommend that you look at the source
 code:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5086,6 +5124,7 @@ multiple &lt;track&gt; elements (subtitles for three languages and captions on
 ;WebVTT: The Web Video Text Tracks Format </a>" defines files that contain text for captions 
 and subtitles, and much more… The WebVTT files are used with the src attribute of the &lt;track&gt; 
 element, that can be used inside a &lt;video&gt;…&lt;/video&gt;.</p>
+
 <p>In the interactive example presented before, we used a file called sintel-captions.vtt:</p>
 
 <pre>&lt;video height=&quot;272&quot; width=&quot;640&quot;
@@ -5155,8 +5194,10 @@ Thank you.</pre>
 <p>This format is rather simple, but we still recommend reading 
 <a href="https://developer.mozilla.org/fr/docs/Web/API/WebVTT_API" target="_blank" rel="noopener noreferrer">
 this excellent article from Mozilla Developer Network</a> that explains in detail all the different options.</p>
+
 <p>Each “element” in this file has a starting and ending time, plus a value (the text that will be displayed), 
 followed by a blank line (blanklines are separators between elements).</p>
+
 <p><b>Each element is called “a cue”</b>, and may optionally have an ID that will be useful when using the 
 track element JavaScript API, inparticular the getCueById() method of TextTrack objects.</p>
 
@@ -7036,15 +7077,18 @@ around 2010 as a “Flash killer.” At the time, popular video games used
 this proprietary technology and only a few browsers supported it. The
 HTML canvas allows drawing and animation at 60 frames per second, in 2D
 or 3D.</p>
+
 <p><b>The canvas has been designed for pixel-based graphics</b>, while
 SVG (Scalable Vector Graphics, another W3C standard) is for vector-based
 graphics.</p>
+
 <p>Indeed, the canvas JavaScript drawing API supports different kind of
 shapes: lines, rectangles, ellipses, arcs, curves, text, images. Some
 drawing styles need to be specified that will affect the way shapes are
 drawn (color, drawing width, shadows, etc.). An alpha channel for
 drawing in transparent mode is also supported, as well as many advanced
 drawing modes and global filters (blur, etc.).</p>
+
 <p>The canvas is also used to do animations at 60 frames per second (useful
 for games), to display videos with special effects, to display a webcam
 stream, and so on.</p>
@@ -7097,6 +7141,7 @@ second in an HTML5 canvas element:</p>
 
 <p>Performance is  good and animation is generally very smooth, since most Web browsers 
 (mobile and desktop) support hardware acceleration.</p>
+
 <p><b>Note</b>: 3D drawing using the WebGL API is also possible in a &lt;canvas&gt;, 
 but will not be covered in this course. For the most curious among you, please have 
 a look at the two popular libraries for doing 3D drawing/animation in a &lt;canvas&gt;: 
@@ -7146,9 +7191,7 @@ it must meet the following principles:</p>
 <h3 id="ch3-2-4">3.2.4 HTML Canvas Cheatsheet</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>We recommend these 2 quick references (or <a
-href="https://en.wikipedia.org/wiki/Cheat_sheet" target="_blank" rel="noopener noreferrer">cheatsheets</a>) below.
-Do not hesitate to keep your favorite one open in a separate browser
-ta</p>
+href="https://en.wikipedia.org/wiki/Cheat_sheet" target="_blank" rel="noopener noreferrer">cheatsheets</a>) below. Do not hesitate to keep your favorite one open in a separate browser ta</p>
 
 <ol type="1">
   <li>As a <a href="https://courses.edx.org/assets/courseware/v1/4b7360cab7f3bf439c26782ec47cf7a8/asset-v1:W3Cx+HTML5.1x+2T2020+type@asset+block/Infopgraphic-CanvasCheatSheet-Final2.pdf" 
@@ -7363,6 +7406,7 @@ also have used ctx.fillStyle=‘red’);</p>
 
 <p>This line is a call to the method fillRect(top left X coordinate, top left Y 
 coordinate, width, height), which draws a filled rectangle.</p>
+
 <p>The way the rectangle will be filled depends on the current value of several 
 properties of the context, in particular the value of the fillStyle property. 
 In our case, the rectangle will be red.</p>
@@ -7412,6 +7456,7 @@ drawn, the current values of the different properties of the graphic
 context are taken into account. Some are relevant only for certain kinds
 of shapes or drawing modes, but you must be aware that it is always the
 current values of these drawing properties that are used.</p>
+
 <p>Later on we’ll see that there are ways to save and restore this whole
 set of values, but for now, let’s examine in greater detail some of the
 properties and methods we’ve already encountered, and introduce new
@@ -7435,11 +7480,14 @@ ones.</p>
 mode” will use the value of this property to determine how to render the
 “filled part” of the drawing: any filled rectangle will be filled black
 by default, any filled circle will be filled in black, and so on.</p>
+
 <p>As long as we don’t modify the value of this property, all drawing
 commands for filled shapes will use the current value.</p>
+
 <p>Note that we will study in detail how to use colors, gradients and
 patterns later, but for now we introduce some properties and values so
 that you can understand the principles of canvas drawing.</p>
+
 <p>fillStyle and the other context properties can be considered to be
 “global variables” of the context.</p>
 
@@ -8579,10 +8627,13 @@ example.</p>
 <h3 id="ch3-3-1">3.3.1 Immediate Mode</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In the previous sections, we learned how to draw filled or wireframe rectangles.</p>
+
 <p>As soon as the ctx.strokeRect(x, y, width, height) or the ctx.fillRect(x, y, width, height) 
 method is called, a rectangle is indeed drawn <i>immediately</i> in the canvas.</p>
+
 <p>While drawing rectangles with strokeRect or fillRect, drawing text or drawing 
 images, all these shapes will be drawn in <i>immediate mode</i>.</p>
+
 <p>Another mode called “path mode” or “buffered mode” will be seen later in this 
 course, which will be useful for drawing lines, curves, arcs, and also rectangles. 
 Rectangles are the only shapes that have methods for drawing them <i>immediately</i> 
@@ -8738,6 +8789,7 @@ going to be taken into account.</p>
 the context will actually draw a text message at the origin of the
 baseline position. In the “Hello World” example, this is located at the
 bottom of the left leg of the “H”.</p>
+
 <p>There is a fourth optional parameter maxWidth that forces the text to
 fit into a given width, distorting it if necessary:</p>
 
@@ -9590,8 +9642,8 @@ function init() {
 We also measure the time using the usual console.time(name_of_timer) and 
 console.timeEnd(name_of_timer) that will write in the browser console the 
 time elapsed. Note that console.time(…) and console.timeEnd(…) display 
-results only in the
-browser’s console, not in the JSBin console.</p>
+results only in the browser’s console, not in the JSBin console.</p>
+
 <p>On a Mac Book Pro from 2015, the result is an average time of 4.034ms 
 for drawing all these rectangles:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9718,6 +9770,7 @@ ctx.stroke();</pre>
 <h3 id="ch3-4-2">3.4.2 A Warning</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Warning</b>: you do not need to spend too much time on each part of this sub-section.</p>
+
 <p>You do not need to memorize or learn by heart all the examples in the following pages. They are 
 given as references. There will be no quizzes about curves as they are not often done “by hand”, 
 but are generated by tools such as Adobe Illustrator or online generators.</p>
@@ -9936,6 +9989,7 @@ called stroke() (<i>line 16</i>) only once to draw the whole path.</p>
 <h3 id="ch3-4-4">3.4.4 Drawing Lines with Different Styles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Common mistake: drawing the same path twice</h4>
+
 <p>Let’s look at the drawing from the last example of the previous section:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~ 139. example using moveto() and stroke() command functions (196) ~~~~~~~~~~~~~~-->
@@ -9980,11 +10034,15 @@ called stroke() (<i>line 16</i>) only once to draw the whole path.</p>
 colors: the shape on the left will stay as it is now (blue, wireframe),
 while the shape on the right will be filled, colored in pink. Let’s look
 at how we can do this…</p>
+
 <h4>Drawing two paths with different styles: the WRONG and the right way!</h4>
+
 <h4>First, the <em>wrong</em> way!</h4>
+
 <p>In this example, we will draw the two parts of the path with
 different styles: the first part in wireframe mode, and the second part
 in filled mode.</p>
+
 <p>What we will try first is to call stroke() after the first half of
 the path, then call fill() after the second half of the path:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10059,8 +10117,10 @@ in pink! But we called stroke() after the first half of the path was
 drawn (<i>lines 5-8</i>). Then we called fill() only after the second
 part of the path was specified (<i>lines 14-19</i>)… so, what
 happened?</p>
+
 <p>Remember that fill() or stroke() <i>draws the whole path</i>, even if
 it is disconnected, and even if it has already been drawn!</p>
+
 <p>What happened is:</p>
 
 <ol type="1">
@@ -10158,6 +10218,7 @@ that is drawn in filled mode.</p>
 <h3 id="ch3-4-5">3.4.5 Drawing Lines in Immediate Mode</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Sometimes, it might be useful to draw just one line.</p>
+
 <p>It’s interesting to see how we can write a single “draw line”
 function that takes the start and end coordinates, the color, the line
 width, etc., and give the impression of being done in “immediate”
@@ -10513,6 +10574,7 @@ ctx.arc(centerX, centerY, radius, startAngle, endAngle, false);</pre>
 <p>The angles are in radians (between 0 and 2*Math.PI). The arc is drawn
 clockwise. Beware that this may not seem natural if you’re used to the
 trigonometric order.</p>
+
 <p>The last parameter is optional and has a value of false by default.
 If true, instead of drawing an arc of circle that corresponds to the
 parameters, <i>it will draw its complementary</i>. See the examples
@@ -10656,6 +10718,7 @@ target="_blank" rel="noopener noreferrer">previous example</a> in order to get:
 <p>There is another method called ctx.arcTo(x1, y1, x2, y2,
 radius), which is a bit complex to use, but very practical for drawing
 rounded rectangles.</p>
+
 <p>In fact, the arcTo(…) method draws an arc of a circle depending on
 some tangents. Let’s look at these pictures for a better
 understanding:</p>
@@ -10829,6 +10892,7 @@ corner. This makes us suspect that the arcTo() method has been designed
 primarily for drawing rounded rectangles…</p>
 
 <h4>Example #3: comparison between lineTo and arcTo</h4>
+
 <p>This example at JS Bin is the same as the previous one, except that we
 added at the end of the roundedRect function the same lines of code that
 draw the rounded rectangle, but using lineTo instead of arcTo. Just take
@@ -10899,9 +10963,11 @@ a look!</p>
 &lt;/html&gt;</pre>
 
 </details>
+
 <p>Red = arcTo and Pink = lineTo</p>
 
 <h4>Example #4: use the unrounded vertices in arcTo</h4>
+
 <p>For drawing a rounded square, this code also works:</p>
 
 <pre>ctx.moveTo(x+radius, y);
@@ -10989,15 +11055,18 @@ ctx.arcTo(x, y, x+radius, y,radius);</pre>
 <p>(Picture taken from the <a
 href="https://www.html5canvastutorials.com/tutorials/html5-canvas-quadratic-curves/" target="_blank" rel="noopener noreferrer">HTML5
 Canvas Tutorials</a> Web site)</p>
+
 <p>Quadratic curves are defined by a starting point (called a “context
 point”), a control point, and an ending point. The curve fits the
 tangents between the context and control points and between the control
 and ending points.</p>
+
 <p>The context point may be defined by a call to the moveTo(x, y) method
 of the context, or it may be the ending point of a previous path, if
 we’re drawing a path made of several shapes. For example, drawing a line
 and a quadratic curve will make the endpoint of the line the context
 point for the quadratic curve.</p>
+
 <p>The control point controls the curvature - if we move the control
 point farther we get a sharper curve.</p>
 
@@ -11228,9 +11297,11 @@ color) {
 <p>This function takes as parameters the start and end points, the
 control point of the curve, the arrow width, the width of the arrow
 head.</p>
+
 <p>It computes the angle of the arrow at its endpoint (<i>line 14</i>)
 in order to compute the rotated endpoints of the two lines of the arrow
 head (<i>lines 24</i> and <i>29</i>).</p>
+
 <p>Notice that once again, as we modify the context properties (color,
 lineWidth) in the body of the function, we save and restore the context
 at the beginning / end of the function.</p>
@@ -11253,6 +11324,7 @@ at the beginning / end of the function.</p>
 href="https://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html" target="_blank" rel="noopener noreferrer">SitePoint</a>)</p>
 <p>Bézier curves are defined by a context point, like quadratic curves,
 two control points that define two tangents, and an ending point.</p>
+
 <p>The first part of the curve is tangential to the imaginary line
 defined by the context point and the first control point. The second
 part of the curve is tangential to the imaginary line defined by the
@@ -11270,8 +11342,7 @@ second control point and the ending point.</p>
 href="https://www.html5canvastutorials.com/tutorials/html5-canvas-bezier-curves/" 
 target="_blank" rel="noopener noreferrer">HTML5 Canvas Tutorials</a> Web site)</p>
 
-<p>The best way to understand how they work is to check out one of these
-interactive applications:</p>
+<p>The best way to understand how they work is to check out one of these interactive applications:</p>
 
 <ul>
   <li><a href="https://blogs.sitepointstatic.com/examples/tech/canvas-curves/bezier-curve.html" 
@@ -12305,6 +12376,7 @@ function draw() {
 <p>A gradient is an invisible shape on the screen: the radial gradient
 is made of two circles: an inner and an outer circle. Between these two
 circles, colors are interpolated.</p>
+
 <p>We call the “first color” the color defined for the inner circle, the
 “last color” the last color of the gradient, that corresponds to the
 outer circle:</p>
@@ -12324,12 +12396,12 @@ outer circle:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Principle</h4>
 
-<p>The principle of “pattern” drawing is based on repeating an image (if
-the image is smaller than the surface of the shape you are going to
-draw) for filling the surface of objects to be drawn (either filled or
-stroked).</p>
-<p>To illustrate this principle, in the next examples, we are going to
-draw rectangles using a pattern.</p>
+<p>The principle of “pattern” drawing is based on repeating an image (if the image is smaller than 
+the surface of the shape you are going to draw) for filling the surface of objects to be drawn 
+(either filled or stroked).</p>
+
+<p>To illustrate this principle, in the next examples, we are going to draw rectangles using a pattern.</p>
+
 <p>There are a few steps we have to take before doing this:</p>
 
 <ol type="1">
@@ -13739,36 +13811,32 @@ the DOM, the horizontal position of the div is modified by changing its left 
 
 <h4>Problems with setInterval</h4>
 
-<p>While the above example works, there are several reasons not to
-use setInterval for doing smooth animations.</p>
+<p>While the above example works, there are several reasons not to use setInterval for doing 
+smooth animations.</p>
 
 <h4>Running several animations simultaneously</h4>
 
-<p>The setInterval function may become hard to debug, particularly if
-you run several animations simultaneously. For example, if you have two
-intervals, one running every 100 milliseconds, the other every second,
-and if you want to debug the second one, the first one will constantly
-be run at regular intervals, making step by step debugging really
-difficult.</p>
+<p>The setInterval function may become hard to debug, particularly if you run several animations
+simultaneously. For example, if you have two intervals, one running every 100 milliseconds, the 
+other every second, and if you want to debug the second one, the first one will constantly be 
+run at regular intervals, making step by step debugging really difficult.</p>
 
 <h4>A single animation may be interrupted by itself to become two simultaneous animations</h4>
 
-<p>setInterval will execute the function passed as first parameter
-every n milliseconds regardless of when the function was last called or
-how long the function takes to execute. If the function takes longer
-than the interval, then setInterval might queue too many function
-executions back to back when the interval is too short, leading to
-unpredictable results. </p>
+<p>setInterval will execute the function passed as first parameter every n milliseconds regardless 
+of when the function was last called or how long the function takes to execute. If the function 
+takes longer than the interval, then setInterval might queue too many function executions back to 
+back when the interval is too short, leading to unpredictable results. </p>
 
-<p><b>BEST PRACTICE</b>: AVOID using setInterval for animating in a
-canvas, except for trivial cases (change a color every second).</p>
+<p><b>BEST PRACTICE</b>: AVOID using setInterval for animating in a canvas, except for trivial cases 
+(change a color every second).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-4">4.2.4 Animating Using setTimeout()</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>One thing you should always remember about using setInterval: if we
-set number of milliseconds at - let’s say 20ms - it will call our game
-loop function EACH 20ms, even if the previous one is not yet finished.
-This may lead to many problems (incomplete rendering, etc.).</p>
+<p>One thing you should always remember about using setInterval: if we set number of milliseconds 
+at - let’s say 20ms - it will call our game loop function EACH 20ms, even if the previous one is 
+not yet finished. This may lead to many problems (incomplete rendering, etc.).</p>
+
 <p>That’s where we can use another function: </p>
 
 <ul>
@@ -14085,14 +14153,13 @@ modern browsers support this API.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3-1">4.3.1 Canvas and User Interaction</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In JavaScript, we treat events made by users as an input, and we
-manipulate the DOM structure as an output. Most of the time in
-games/animations, we will change state variables of moving objects, such
-as position or speed of an alien ship, and the animation loop will take
-care of these variables to move the objects.</p>
+<p>In JavaScript, we treat events made by users as an input, and we manipulate the DOM structure 
+as an output. Most of the time in games/animations, we will change state variables of moving 
+objects, such as position or speed of an alien ship, and the animation loop will take care of 
+these variables to move the objects.</p>
 
-<p>The events are called <i>DOM events</i>, and we use the <i>DOM
-JavaScript API</i> to create <i>event handlers</i>.</p>
+<p>The events are called <i>DOM events</i>, and we use the <i>DOM JavaScript API</i> to create 
+<i>event handlers</i>.</p>
 
 <h4>There are three ways to manage events in the DOM structure</h4>
 
@@ -14104,11 +14171,10 @@ JavaScript API</i> to create <i>event handlers</i>.</p>
   content of the div
 &lt;/div&gt;</pre>
 
-<p>Note: this is not the recommended way to handle events, even if it’s
-very easy to use. Mixing the ‘visual layer’ (HTML) and the ‘logic layer’
-(JavaScript) in one place is ok for small examples (we have used this in
-some examples in this course) but is not the recommended way for full
-scale applications where a clean separation is best.</p>
+<p>Note: this is not the recommended way to handle events, even if it’s very easy to use. Mixing 
+the ‘visual layer’ (HTML) and the ‘logic layer’ (JavaScript) in one place is ok for small examples 
+(we have used this in some examples in this course) but is not the recommended way for full scale
+applications where a clean separation is best.</p>
 
 <h4>Second method: add an event handler to an HTML element in JavaScript</h4>
 
@@ -14118,12 +14184,10 @@ scale applications where a clean separation is best.</p>
   alert(&#39;clicked!&#39;);
 }</pre>
 
-<p>This method is fine, but  you will not be able to attach several
-listener functions. If you need to do this, the preferred version is the
-next one.</p>
+<p>This method is fine, but  you will not be able to attach several listener functions. If you need 
+to do this, the preferred version is the next one.</p>
 
-<h4>Third method: register a callback to the event listener with
-the addEventListener method</h4>
+<h4>Third method: register a callback to the event listener with the addEventListener method</h4>
 
 <h4>This is how we do it:</h4>
 
@@ -14131,27 +14195,24 @@ the addEventListener method</h4>
   alert(&#39;clicked!&#39;);
 }, false);</pre>
 
-<p>The third parameter is not important for now, just set it to false,
-or simply do not add a third parameter.</p>
+<p>The third parameter is not important for now, just set it to false, or simply do not add a 
+third parameter.</p>
 
 <h4>The DOM event that is passed to the event listener function</h4>
 
-<p>When you create an EventListener and attach it to an element,  an
-event object will be passed as a parameter to your callback, just like
-this:</p>
+<p>When you create an EventListener and attach it to an element, an event object will be passed as 
+a parameter to your callback, just like this:</p>
 
 <pre>element.addEventListener(&#39;click&#39;, function(&lt;b&gt;event&lt;/b&gt;) {
   &lt;b&gt;// now you can use the event object inside the callback&lt;/b&gt;
 }, false);</pre>
 
-<p>Depending on the type of event you are listening to, we will use
-different properties from the event object in order to get useful
-information like: “what keys have been pressed down?”, “what is the
-position of the mouse cursor?”, “which mouse button is down?”, etc.</p>
+<p>Depending on the type of event you are listening to, we will use different properties from the 
+event object in order to get useful information like: “what keys have been pressed down?”, “what 
+is the position of the mouse cursor?”, “which mouse button is down?”, etc.</p>
 
 <p>Let’s see next how to deal with the keyboard and the mouse. In
-the <a href="https://www.edx.org/course/html5-apps-and-games" target="_blank" rel="noopener noreferrer">W3Cx HTML5
-Apps and Games</a>, we look at additional APIs such
+the <a href="https://www.edx.org/course/html5-apps-and-games" target="_blank" rel="noopener noreferrer">W3Cx HTML5 Apps and Games</a>, we look at additional APIs such
 as <a href="https://www.w3.org/TR/gamepad/" target="_blank" rel="noopener noreferrer">the gamePad API</a> for
 using USB or wireless gamepads/joysticks/game controllers.</p>
 
@@ -14198,22 +14259,24 @@ is possible to test what key has been pressed or released, like this:</p>
   }
 }, false);</pre>
 
-<p>At <i>line 2</i>, the value “37” is the key code that corresponds to
-the left arrow. It might be difficult to know the correspondences
-between real keyboard keys and codes, so here are handy pointers:</p>
+<p>At <i>line 2</i>, the value “37” is the key code that corresponds to the left arrow. It might 
+be difficult to know the correspondences between real keyboard keys and codes, so here are handy 
+pointers:</p>
 
 <ul>
-  <li>Try key codes with this <a href="http://www.asquare.net/javascript/tests/KeyCode.html" target="_blank" rel="noopener noreferrer">interactive test page</a></li>
-  <li>And find a list of keyCodes in this <a href="https://css-tricks.com/snippets/javascript/javascript-keycodes/#keycode-values" target="_blank" rel="noopener noreferrer">CSS Tricks article</a>).</li>
+  <li>Try key codes with this <a href="http://www.asquare.net/javascript/tests/KeyCode.html" 
+    target="_blank" rel="noopener noreferrer">interactive test page</a></li>
+  <li>And find a list of keyCodes in this 
+    <a href="https://css-tricks.com/snippets/javascript/javascript-keycodes/#keycode-values" 
+	target="_blank" rel="noopener noreferrer">CSS Tricks article</a>).</li>
 </ul>
 
 <h4>Examples</h4>
 
 <h4>Example #1: adding a key listener to the window object</h4>
 
-<p>A lot of people think that the canvas element is not able to get key
-events. Many examples on the Web handle key events on canvas by adding a
-listener to the window object directly, like this:</p>
+<p>A lot of people think that the canvas element is not able to get key events. Many examples on 
+the Web handle key events on canvas by adding a listener to the window object directly, like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 193. add key listener to window object (269) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -14221,7 +14284,8 @@ listener to the window object directly, like this:</p>
   loading="lazy"
   title="Add key listener to window object"
   alt="Add key listener to window object."
-  style="width:25%;">
+  style="width:40%;">
+<br><br>
 
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -14236,9 +14300,8 @@ listener to the window object directly, like this:</p>
 &lt;body onload=&quot;init();&quot;&gt;
   &lt;p&gt;</pre>
 
-<p>This example shows how to handle key events in a canvas by adding a key
-listener to the window object. Like that, all key press in the document
-will trigger the event listener function.</p>
+<p>This example shows how to handle key events in a canvas by adding a key listener to the window 
+object. Like that, all key press in the document will trigger the event listener function.</p>
 
 <details>
   <summary><b>Click to expand!</b></summary>
@@ -14281,9 +14344,8 @@ will trigger the event listener function.</p>
 
 </details>
 
-<p>Indeed this solution works well if you write a game, and want to
-detect events wherever the mouse cursor is, and without worrying about
-what HTML element has the focus, etc…</p>
+<p>Indeed this solution works well if you write a game, and want to detect events wherever the mouse 
+cursor is, and without worrying about what HTML element has the focus, etc…</p>
 
 <h4>Example #2: moving the monster with the keyboard</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -14448,12 +14510,11 @@ what HTML element has the focus, etc…</p>
 
 <h4>Example #3: what if I want to listen to key events only in my canvas?</h4>
 
-<p>If you add a key listener to a canvas element, the problem is that it
-will get events only when it has the focus. And by default, it will
-never have the focus!</p>
+<p>If you add a key listener to a canvas element, the problem is that it will get events only when 
+it has the focus. And by default, it will never have the focus!</p>
 
-<p>The tabindex attribute of the canvas element makes it focusable.
-Without it, it will never get the focus!</p>
+<p>The tabindex attribute of the canvas element makes it focusable. Without it, it will never get 
+the focus!</p>
 
 <p>The trick is to declare the canvas like this:</p>
 
@@ -14466,8 +14527,8 @@ Without it, it will never get the focus!</p>
 ...
 canvas.focus();</pre>
 
-<p>Now, if we try an example with the above canvas declaration, we
-show when an HTML element has the focus: a border is added to it.</p>
+<p>Now, if we try an example with the above canvas declaration, we show when an HTML element has 
+the focus: a border is added to it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 195. example with focus and added border (273) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -14527,9 +14588,9 @@ show when an HTML element has the focus: a border is added to it.</p>
 
 </details>
 
-<p>Note that the line that forces the focus to the canvas is commented by default. Try to 
-click on the canvas, then press a key, then click out of the canvas, then press a key: 
-this time nothing happens!</p>
+<p>Note that the line that forces the focus to the canvas is commented by default. Try to click on 
+the canvas, then press a key, then click out of the canvas, then press a key: this time nothing 
+happens!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 196. border appears when canvas has focus (274) ~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -14561,24 +14622,21 @@ function handleKeydown(e){
 
 </details>
 
-<p><i>Line 10</i> is useful to initially set the focus on the canvas,
-but this trick will not work if we click somewhere else in the HTML
-page.</p>
+<p><i>Line 10</i> is useful to initially set the focus on the canvas, but this trick will not work 
+if we click somewhere else in the HTML page.</p>
 
 <h4>Example #4: a better way: set the focus when the mouse cursor enters the canvas</h4>
 
-<p>A better way to manage key events on a canvas is to set the focus
-when the mouse is over the canvas, and to un-focus it otherwise.</p>
+<p>A better way to manage key events on a canvas is to set the focus when the mouse is over the 
+canvas, and to un-focus it otherwise.</p>
 
-<p>Here is a modified version of the “move monster example” seen
-earlier. This time, you move the monster with the left and right arrow
-only when the mouse cursor is over the canvas. We added two mouse event
-listeners on the canvas: one for the mouseenter event and the other for
-the mouseout event.</p>
+<p>Here is a modified version of the “move monster example” seen earlier. This time, you move the 
+monster with the left and right arrow only when the mouse cursor is over the canvas. We added two 
+mouse event listeners on the canvas: one for the mouseenter event and the other for the mouseout 
+event.</p>
 
-<p>When the mouse enters the canvas we call canvas.focus() to set the
-focus to the canvas, and when the mouse cursor goes out of the canvas,
-we call canvas.blur() to unset the focus.</p>
+<p>When the mouse enters the canvas we call canvas.focus() to set the focus to the canvas, and when 
+the mouse cursor goes out of the canvas, we call canvas.blur() to unset the focus.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ 197. setting the focus when the mouse cursor enters the canvas (275) ~~~~~~~~~~~-->
 <img class="displayed"
@@ -14727,27 +14785,24 @@ function unsetFocus(evt) {
 
 </details>
 
-<p>The third parameter (false) of <i>lines 12</i> and <i>13</i> means
-“we do not want to propagate the event to the ancestors of the canvas in
-the DOM.”</p>
+<p>The third parameter (false) of <i>lines 12</i> and <i>13</i> means “we do not want to propagate 
+the event to the ancestors of the canvas in the DOM.”</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3-3">4.3.3 Mouse Interaction, Mouse Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Detecting mouse events in a canvas is quite straightforward: you add
-an event listener to the canvas, and the browser invokes that listener
-when the event occurs.</p>
+<p>Detecting mouse events in a canvas is quite straightforward: you add an event listener to the 
+canvas, and the browser invokes that listener when the event occurs.</p>
 
-<p>The example below is about listening to mouseup and mousedown events
-(when a user presses or releases any mouse button):</p>
+<p>The example below is about listening to mouseup and mousedown events (when a user presses or 
+releases any mouse button):</p>
 
 <pre>canvas.addEventListener(&#39;mousedown&#39;, function (evt) {
   // do something with to the mousedown event
 });</pre>
 
-<p>The event received by the listener function will be used for getting
-the button number or the coordinates of the mouse cursor. Before looking
-at different examples, let’s look at the different event types we can
-listen to.</p>
+<p>The event received by the listener function will be used for getting the button number or the 
+coordinates of the mouse cursor. Before looking at different examples, let’s look at the different 
+event types we can listen to.</p>
 
 <h4>The different mouse events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -14760,6 +14815,7 @@ listen to.</p>
   style="width:35%;">
 
 <p>We saw in the last example how to detect the mouseenter and mouseout events.</p>
+
 <p>There are other events related to the mouse:</p>
 
 <ul>
@@ -14782,22 +14838,20 @@ listen to.</p>
 
 <h4>The tricky part: accurately getting the mouse position relative to the canvas</h4>
 
-<p>When you listen to any of the above events, the event object (we call
-it a “DOM event”), passed to the listener function, has properties that
-correspond to the mouse coordinates: clientX and clientY.</p>
+<p>When you listen to any of the above events, the event object (we call it a “DOM event”), passed 
+to the listener function, has properties that correspond to the mouse coordinates: clientX and 
+clientY.</p>
 
-<p>However, these are what we call “window coordinates”. Instead of
-being relative to the canvas itself, they are relative to the window
-(the page).</p>
+<p>However, these are what we call “window coordinates”. Instead of being relat ve to the canvas 
+itself, they are relative to the window (the page).</p>
 
-<p>Most of the time you need to work with the mouse position relative to
-the canvas, not to the window, so you must convert the coordinates
-between the window and the canvas. This will take into account the
-position of the canvas, and the CSS properties that may affect the
-canvas position (margin, etc.).</p>
+<p>Most of the time you need to work with the mouse position relative to the canvas, not to the 
+window, so you must convert the coordinates between the window and the canvas. This will take 
+into account the position of the canvas, and the CSS properties that may affect the canvas 
+position (margin, etc.).</p>
 
-<p>Fortunately, there exists a method for getting the position and size
-of any element in the page: getBoundingClientRect().</p>
+<p>Fortunately, there exists a method for getting the position and size of any element in the page:
+getBoundingClientRect().</p>
 
 <p>Play with the example below that show the problem:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -14958,9 +15012,9 @@ function getMousePos(canvas, evt) {
 
 <h4>How to display the mouse position, and the mouse button that has been pressed or released</h4>
 
-<p>This example uses the previous function for computing the mouse position
-correctly. It listens to mousemove, mousedown and mouseup events, and
-shows how to get the mouse button number using the evt.button property.</p>
+<p>This example uses the previous function for computing the mouse position correctly. It listens
+to mousemove, mousedown and mouseup events, and shows how to get the mouse button number using
+the evt.button property.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 203. mouse position and pressed or released (274) ~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -15025,10 +15079,9 @@ function getMousePos(canvas, evt) {
 
 <h4>Example #1: move the monster with the mouse, rotate it when a mouse button is pressed</h4>
 
-<p>This example shows an animation at 60 frames/s using requestAnimationFrame, 
-were the monster is drawn at the mouse position, and if a mouse button is pressed, 
-the monster starts rotating around its center. If we release the mouse button, 
-the rotation stops:</p>
+<p>This example shows an animation at 60 frames/s using requestAnimationFrame, were the monster is 
+drawn at the mouse position, and if a mouse button is pressed, the monster starts rotating around 
+its center. If we release the mouse button, the rotation stops:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ 205. move and rotate the monster with mouse (283) ~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -15091,10 +15144,9 @@ function animationLoop() {
 
 </details>
 
-<p>This example shows one very important good practice when doing animation
-and interaction: if you want to achieve a smooth animation, set the
-state variables 60 times/s inside the animation loop <i>(lines 45-49)</i>,
-depending on increments you set in event listeners <i>(lines 23-31)</i>.</p>
+<p>This example shows one very important good practice when doing animation and interaction: if you 
+want to achieve a smooth animation, set the state variables 60 times/s inside the animation loop 
+<i>(lines 45-49)</i>, depending on increments you set in event listeners <i>(lines 23-31)</i>.</p>
 
 <h4>Example #2: draw in a canvas as if you were using a pencil</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15239,10 +15291,9 @@ window.onload = function () {
 
 <h4>Example #2 : resize a canvas using CSS width and height properties with percentages</h4>
 
-<p>This time we are using a similar example as above, but we removed the
-button for resizing it, and we set the size of the canvas to 100x100
-pixels. Instead of drawing inside, we draw two lines that join the
-diagonals.</p>
+<p>This time we are using a similar example as above, but we removed the button for resizing it, 
+and we set the size of the canvas to 100x100 pixels. Instead of drawing inside, we draw two lines 
+that join the diagonals.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ 209. draw two lines that join diagonals on 100 x 100 px canvas (287) ~~~~~~~~~~~-->
 <img class="displayed"
@@ -15594,30 +15645,31 @@ control the behavior of a Web application. In this situation, they do not need t
 <p>The example used in the video is
 available <a href="https://jsbin.com/jagodi/edit?html,css,output" target="_blank" rel="noopener noreferrer">online at JSBin</a>. A screenshot of the resulted form is shown on the right.</p>
 
-<p>Forms are a way to get user input which is sent to a remote server.
-This section of the course focuses on the HTML5 additions to forms, and
-as such will only cover the client-side part.</p>
+<p>Forms are a way to get user input which is sent to a remote server. This section of the course 
+focuses on the HTML5 additions to forms, and as such will only cover the client-side part.</p>
 
-<p>On the server side, you may have PHP, Java, C#, Ruby, Python, etc.
-components. There are several ways to collect server-side data from a
-form in a Web page: REST Web services, servlets, Microsoft ASP pages,
-etc.</p>
+<p>On the server side, you may have PHP, Java, C#, Ruby, Python, etc. components. There are several 
+ways to collect server-side data from a form in a Web page: REST Web services, servlets, Microsoft 
+ASP pages, etc.</p>
 
-<p>On the client side, the forms indicate to which server and how the
-data should be sent,  using the action and method attributes
-respectively. A &lt;button type=“submit”&gt; or an &lt;input
+<p>On the client side, the forms indicate to which server and how the data should be sent, using 
+the action and method attributes respectively. A &lt;button type=“submit”&gt; or an &lt;input 
 type=submit&gt; field is used to submit the form content.</p>
 
 <p>For example: &lt;form action=“myServerCode.php”
 method=“POST”&gt;…&lt;/form&gt;. Here, we set the URL of the server side
 code (myServerCode.php), and the HTTP method that will be used by the
 browser for sending the form content (POST).</p>
+
 <p>Another approach is to use JavaScript for sending the form content
 with <a href="https://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank" rel="noopener noreferrer">Ajax</a>. This is covered in W3Cx HTML5 Apps and Games course.</p>
+
 <p>This week, let’s study the elements and attributes offered by HTML5,
 as well the HTML5 form validation API. </p>
+
 <p>The example shown in the video shows some best practices for writing
 accessible forms and does some basic layout using CSS.</p>
+
 <p>The following additional example shows the same best practices but
 presents a more complete form with CSS rules to make a nice layout. See
 it <a href="https://jsbin.com/zubitex/1/edit?html,output" target="_blank" rel="noopener noreferrer">online</a>,
@@ -15636,36 +15688,34 @@ very good MDN’s article “How to structure a web form”</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-3-1">5.3.1 Accessible Forms</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Forms are commonly used to enable user interaction in Web sites and
-Web applications. For example, they are used for login, registering,
-commenting, and purchasing.</p>
-<p>Since HTML5 provides functionalities to assist with accessibility,
-developers should make a concerted effort to mark up Web based forms.
-The following two guidelines are to give you a good start to make your
-forms accessible:</p>
+<p>Forms are commonly used to enable user interaction in Web sites and Web applications. For example, 
+they are used for login, registering, commenting, and purchasing.</p>
+
+<p>Since HTML5 provides functionalities to assist with accessibility, developers should make a 
+concerted effort to mark up Web based forms. The following two guidelines are to give you a good 
+start to make your forms accessible:</p>
 
 <ol type="1">
-  <li>For every form field, ensure that a descriptive label is provided and use the &lt;label&gt; element to identify each form control.</li>
-  <li>For larger or complex forms, use the &lt;fieldset&gt; and &lt;legend&gt; elements to respectively group and associate related form controls.</li>
+  <li>For every form field, ensure that a descriptive label is provided and use the &lt;label&gt; 
+    element to identify each form control.</li>
+  <li>For larger or complex forms, use the &lt;fieldset&gt; and &lt;legend&gt; elements to 
+    respectively group and associate related form controls.</li>
 </ol>
 
-<p>Examples for each of these two basic guidelines are given in the
-following pages.</p>
+<p>Examples for each of these two basic guidelines are given in the following pages.</p>
 
 <h4>Further reading</h4>
 
 <p>The WAI Web site hosts
 a <a href="https://www.w3.org/WAI/tutorials/forms/" target="_blank" rel="noopener noreferrer">Forms
-tutorial</a> where to find all guidelines to follow in order to make
-your forms truly accessible: labeling controls, grouping controls, form
-instructions, validating input, user notifications, multi-page forms,
-and custom controls.</p>
+tutorial</a> where to find all guidelines to follow in order to make your forms truly accessible: 
+labeling controls, grouping controls, form instructions, validating input, user notifications, 
+multi-page forms, and custom controls.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-3-2">5.3.2 Why is this Important?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Forms can be visually and cognitively complex and difficult to use.
-Accessible forms are easier to use for everyone, including people with
-disabilities.</p>
+<p>Forms can be visually and cognitively complex and difficult to use. Accessible forms are easier 
+to use for everyone, including people with disabilities.</p>
 
 <ul>
   <li>People with cognitive disabilities can better understand the form and how to complete it, as making forms accessible improves the layout structure, instructions, and feedback.</li>
@@ -15688,17 +15738,14 @@ disabilities.</p>
   alt="Email form label text."
   style="width:25%;">
 
-<p>When these labels are marked up correctly, people can interact with
-them using only the keyboard, using voice input, and using screen
-readers. Also, the label itself becomes clickable, which enables a
-person who has difficulty clicking on small radio buttons or checkboxes
-to click anywhere on the label text.</p>
+<p>When these labels are marked up correctly, people can interact with them using only the keyboard, 
+using voice input, and using screen readers. Also, the label itself becomes clickable, which enables 
+a person who has difficulty clicking on small radio buttons or checkboxes to click anywhere on the 
+label text.</p>
 
 <h4>Associating labels explicitly</h4>
 
-<p>Whenever possible, use the label element to explicitly associate text
-with form elements. The for attribute of the label must exactly match
-the id of the form control. </p>
+<p>Whenever possible, use the label element to explicitly associate text with form elements. The for attribute of the label must exactly match the id of the form control. </p>
 
 <h4>Example #1</h4>
 
@@ -15719,7 +15766,10 @@ the id of the form control. </p>
 
 <h4>Example #2</h4>
 
-<p>Note that you can also include the &lt;input&gt; element inside the &lt;label&gt;…&lt;label&gt; element, and also add a &lt;span lang=“en”&gt; for example, to indicate the language used in the label. Sometimes, <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#The_%3Clabel%3E_element" target="_blank" rel="noopener noreferrer">nesting labels and inputs can also make CSS styling easier and produce better results with screen readers</a>.</p>
+<p>Note that you can also include the &lt;input&gt; element inside the &lt;label&gt;…&lt;label&gt; 
+element, and also add a &lt;span lang=“en”&gt; for example, to indicate the language used in the 
+label. Sometimes, <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form#The_%3Clabel%3E_element" target="_blank" rel="noopener noreferrer">nesting labels and inputs can also make CSS styling 
+easier and produce better results with screen readers</a>.</p>
 
 <h4>Source code (with &lt;input&gt; inside the &lt;label&gt;):</h4>
 
@@ -15748,14 +15798,12 @@ the id of the form control. </p>
 
 <h4>Labeling buttons</h4>
 
-<p>The label of a &lt;button&gt; element is set inside the element and
-can include markup. This allows advanced accessibility hints to be
-included, such as marking up language change. Example: &lt;button&gt;Mon
-&lt;span lang=“fr”&gt;bouton&lt;/span&gt;&lt;/button&gt;,for a button
-with a label in French.</p>
-<p>When using the &lt;input&gt; element to create buttons, the label is
-set in the value attribute of the element. Example: &lt;input
-type=“submit” value=“Please submit”&gt;, renders a text button.</p>
+<p>The label of a &lt;button&gt; element is set inside the element and can include markup. This 
+allows advanced accessibility hints to be included, such as marking up language change. Example: &lt;button&gt;Mon &lt;span lang=“fr”&gt;bouton&lt;/span&gt;&lt;/button&gt;,for a button with a 
+label in French.</p>
+
+<p>When using the &lt;input&gt; element to create buttons, the label is set in the value attribute 
+of the element. Example: &lt;input type=“submit” value=“Please submit”&gt;, renders a text button.</p>
 
 <h4>Source code for the “Submit” and “Cancel” buttons example:</h4>
 
@@ -15775,6 +15823,7 @@ type=“submit” value=“Please submit”&gt;, renders a text button.</p>
   style="width:25%;">
 
 <p><i>Lines 1 and 2</i> render as: <b>Submit Cancel</b></p>
+
 <p>… while <i>lines 3 and 4</i> render as:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 221. label for address (290) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15791,20 +15840,19 @@ type=“submit” value=“Please submit”&gt;, renders a text button.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-3-4">5.3.4 Grouping Controls</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Groupings of form controls, typically groups of related checkboxes
-and radio buttons, sometimes require a higher level description.
-Grouping related form controls makes forms more understandable for all
-users, as related controls are easier to identify.</p>
+<p>Groupings of form controls, typically groups of related checkboxes and radio buttons, sometimes 
+require a higher level description. Grouping related form controls makes forms more understandable 
+for all users, as related controls are easier to identify.</p>
+
 <h4>Associating related controls with fieldset</h4>
-<p>Grouping needs to be carried out visually and in the code, for
-example, by using the &lt;fieldset&gt; and &lt;legend&gt; elements to
-associate related form controls. The &lt;fieldset&gt; identifies the
-entire grouping and &lt;legend&gt; identifies the grouping’s descriptive
-text.</p>
+
+<p>Grouping needs to be carried out visually and in the code, for example, by using the 
+&lt;fieldset&gt; and  &lt;legend&gt; elements to associate related form controls. The &lt;fieldset&gt; identifies the entire grouping and &lt;legend&gt; identifies the grouping’s descriptive text.</p>
+
 <h4>Example #1: radio buttons</h4>
-<p>In the example below, there are three radio buttons that allow the
-user to choose an output format. Radio button groups should always be
-grouped using &lt;fieldset&gt;.</p>
+
+<p>In the example below, there are three radio buttons that allow the user to choose an output format. 
+Radio button groups should always be grouped using &lt;fieldset&gt;.</p>
 
 <p>Output format:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15838,8 +15886,9 @@ grouped using &lt;fieldset&gt;.</p>
 
 <h4>Example #2: checkboxes</h4>
 
-<p>In the example below, there are three checkboxes that are all part of
-an opt-in function for receiving different types of information.</p>
+<p>In the example below, there are three checkboxes that are all part of an opt-in function for 
+receiving different types of information.</p>
+
 <p>I want to receive</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 223. label for check box sample (299) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21771,4 +21820,5 @@ good understanding of the material.</p>
 
   </body>
 </html>
+
 
