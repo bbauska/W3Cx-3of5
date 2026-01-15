@@ -97,7 +97,7 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: #006700;
+  color: #006700;  /* very dark lime green */
   background-color: #ffff00;  /* yellow */
   text-decoration: underline;
 }
