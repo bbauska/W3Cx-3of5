@@ -19581,7 +19581,8 @@ back to the page, default values are restored.</p>
 the page.</p>
 
 <p><a href="https://jsbin.com/cebavo/edit?html,js,console,output" target="_blank" rel="noopener 
-noreferrer">Here is a modified example that saves/restores its state, you can try it at JSBin</a>. 
+noreferrer" title="JSBin modified example that saves/restores its state">
+Here is a modified example that saves/restores its state, you can try it at JSBin</a>. 
 In this modified version of the animated rectangle example, you can set the color, size, speed, 
 etc. And if you reload the page, the state of the different input field is restored, but also 
 the internal variables. Check the source code in the JS Bin example and read the following 
@@ -19608,8 +19609,8 @@ function restorePreferences).</p>
   }
     // restore preferences
     restorePreferences();
-    applyGUIvalues(); // Use the input fields&#39; values we just restored to set internal 
-                      // size, incX, color, lineWidth variables
+    applyGUIvalues(); // Use the input fields&#39; values we just restored
+                      // to set internal size, incX, color, lineWidth variables
 }
 function addInputListener(inputField) {
   // same as before
@@ -19640,18 +19641,20 @@ function applyGUIvalues() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2-5">6.2.5 Example 3</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><a href="https://jsbin.com/zowise/edit?html,js,output" target="_blank" rel="noopener noreferrer">
-Online example at JSBin</a></p>
+<p><a href="https://jsbin.com/zowise/edit?html,js,output" target="_blank" rel="noopener 
+noreferrer" title="JSBin online example">Online example at JSBin</a></p>
 
 <p>This time, using the setItem and getItem method we saw earlier in the course, we could write 
 some generic functions for saving/restoring input fields’ content, without having advance 
 knowledge about the number of fields in the form, their types, their ids, etc.</p>
 
-<p>Furthermore, we removed all input listeners in the HTML, making it cleaner (no more oninput=“localStorage.firstName = this.value;’…)</p>
+<p>Furthermore, we removed all input listeners in the HTML, making it cleaner (no more 
+oninput=“localStorage.firstName = this.value;’…)</p>
 
 <p>Define listeners + restore old values after the page is loaded, use generic functions</p>
 
-<p>We start writing an init() function that is called when the page is loaded. This function will:</p>
+<p>We start writing an init() function that is called when the page is loaded. This function 
+will:</p>
 
 <ol type="1">
   <li>Define input listeners for all input fields</li>
@@ -19736,11 +19739,11 @@ saving input type=“checkboxes” that work a bit differently), etc.</p>
 <ul>
   <li>User agents (browsers) should limit the total amount of space allowed for storage areas.</li>
   <li>User agents may prompt the user when quotas are reached, allowing the user to grant more 
-    space to a site. This enables sites to store many user-created documents on the user’s computer, 
-    for instance.</li>
+    space to a site. This enables sites to store many user-created documents on the user’s 
+	computer, for instance.</li>
   <li>User agents should allow users to see how much space each domain is using.</li>
-  <li>A mostly arbitrary limit of five megabytes per origin is recommended (translation: give at least 
-    5Mb per origin).</li>
+  <li>A mostly arbitrary limit of five megabytes per origin is recommended (translation: give at 
+    least 5Mb per origin).</li>
 </ul>
 
 <p><b>In many cases, local storage is all that your application will need for saving/loading data on 
@@ -19785,15 +19788,16 @@ tabs!</b></p>
 <p>Storing strings is all well and good, but it quickly becomes limiting: you may want to store 
 more complex data with at least a modicum of structure.</p>
 
-<p>There are some simple approaches, such as creating your own minimal record format (e.g. a string 
-with fields separated with a given character, using join() on store and split() upon retrieval) or 
-using multiple keys (e.g. post_17_title, post_17_content, post_17_author, etc.). But these are really 
-hacks. Thankfully, there’s a better way, JSON.stringify() and JSON.parse() methods.</p>
+<p>There are some simple approaches, such as creating your own minimal record format (e.g. a 
+string with fields separated with a given character, using join() on store and split() upon 
+retrieval) or using multiple keys (e.g. post_17_title, post_17_content, post_17_author, etc.). 
+But these are really hacks. Thankfully, there’s a better way, JSON.stringify() and JSON.parse() 
+methods.</p>
 
-<p><a href="https://www.json.org/" target="_blank" rel="noopener noreferrer">JSON</a> provides a 
-great way of encoding and decoding data that is a really good match for JavaScript. You have to be 
-careful not to use circular data structures or non-serializable objects, but in the vast majority 
-of cases, plugging JSON support into your local store is straightforward.</p>
+<p><a href="https://www.json.org/" target="_blank" rel="noopener noreferrer" title="JSON.org">JSON</a> 
+provides a great way of encoding and decoding data that is a really good match for JavaScript. You 
+have to be careful not to use circular data structures or non-serializable objects, but in the vast 
+majority of cases, plugging JSON support into your local store is straightforward.</p>
 
 <h4>Typical usage</h4>
 
@@ -19801,10 +19805,9 @@ of cases, plugging JSON support into your local store is straightforward.</p>
 localStorage.setItem(key, JSON.stringify(object));</pre>
 
 <p>Let’s try a simple toy example
-(<a href="https://jsbin.com/ciricis/2/edit?html,console,output" target="_blank" rel="noopener noreferrer">online
-at JSBin</a>).  The example below saves a JavaScript object in JSON,
-then restores it and checks that the object properties are still
-there!</p>
+(<a href="https://jsbin.com/ciricis/2/edit?html,console,output" target="_blank" rel="noopener 
+noreferrer" title="JSBin of simple toy example">online at JSBin</a>). The example below saves a 
+JavaScript object in JSON, then restores it and checks that the object properties are still there!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 304. json save/load in local storage (367) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -21814,11 +21817,13 @@ good understanding of the material.</p>
   Last updated 9-24-25 Wed 5:56pm<br>
   Last updated 10-06-25 Mon 6:37am<br>
   Last updated 10-13-25 Mon 1:17pm<br>
-  Last updated 11-02-25 Sun 1:55pm</h6>
+  Last updated 11-02-25 Sun 1:55pm<br>
+  Last updated 01-21-26 Wed 3:03pm</h6>
   
   <script src="/js/scripts.js"></script>
 
   </body>
 </html>
+
 
 
