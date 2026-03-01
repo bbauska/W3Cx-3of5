@@ -21706,18 +21706,24 @@ online example</a> (for security reasons the embedded version cannot run in thi
   &lt;title&gt;Gimmee My Location&lt;/title&gt;
   &lt;meta charset=&quot;utf-8&quot; /&gt;
   &lt;meta name=&quot;viewport&quot;
-  content=&quot;width=device-width, user-scalable=no initial-scale=1, maximum-scale=1&quot; /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot; /&gt;
-  &lt;script src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
+  content=&quot;width=device-width, user-scalable=no initial-scale=1, 
+    maximum-scale=1&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; 
+    href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot;
+    href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot;/&gt;
+  &lt;script 
+    src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet-control-
+    geocoder/dist/Control.Geocoder.js&quot;&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;getLocation();&quot;&gt;
   &lt;h1&gt;Example of the use of reverse geocoder in a form&lt;/h1&gt;
   &lt;form&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Form example with map and address...&lt;/legend&gt;
-    &lt;div id=&quot;map&quot; style=&quot;width: 500px; height: 300px&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;map&quot; style=&quot;width: 500px; 
+	  height: 300px&quot;&gt;&lt;/div&gt;
   &lt;/fieldset&gt;
   &lt;fieldset&gt;
   &lt;legend&gt;Surface address&lt;/legend&gt;
@@ -21742,7 +21748,8 @@ online example</a> (for security reasons the embedded version cannot run in thi
       // Instance map using leaflet
       map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
       // Tile layer using key api at cloudmade.com
-      L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}{x}{y}.png&#39;, {
+      L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/
+	    {z}{x}{y}.png&#39;, {
         key: &#39;760506895e284217a7442ce2efe97797&#39;,
           styleId: 103288,
           maxZoom: 16
@@ -21755,14 +21762,16 @@ online example</a> (for security reasons the embedded version cannot run in thi
     }
     // Get current position fail
     function error() {
-      alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
+      alert(&#39;Get current position fail. 
+	    Please access codepen to get geolocation.&#39;);
     }
       var marker;
       function getPhysicalAddress(latlong) {
         geocoder.reverse(latlong, 500000, function(results) {
           var r = results[0];
           console.log(r.name);
-          document.querySelector(&quot;#surfaceAddress&quot;).value = r.name;
+          document.querySelector(&quot;#surfaceAddress&quot;).value 
+		    = r.name;
           if (r) {
             if (marker) {
               marker
@@ -21818,12 +21827,10 @@ good understanding of the material.</p>
   Last updated 10-06-25 Mon 6:37am<br>
   Last updated 10-13-25 Mon 1:17pm<br>
   Last updated 11-02-25 Sun 1:55pm<br>
-  Last updated 01-21-26 Wed 3:03pm</h6>
+  Last updated 01-21-26 Wed 3:03pm<br>
+  Last updated 03-01-26 Sun 2:19pm</h6>
   
   <script src="/js/scripts.js"></script>
 
   </body>
 </html>
-
-
-
