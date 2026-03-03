@@ -1,4 +1,4 @@
-/* ~~~~~~~~~~~~~~~~~ css/styles.css of w3cx-3of5 making w3cx-3of5.bauska.org ~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~ css/styles.css of w3cx-3of5 for w3cx-3of5.bauska.org ~~~~~~~~~~~~~~~~~~ */
 img.displayed {
   display: block;
   margin: 0 auto; 
@@ -21,6 +21,8 @@ p {
   text-align: left; 
   margin-left: 15px;  /* was 10px; */
 }
+
+/* comment out all 'pre' code.
 pre {
   margin: 0;
   font: 1rem/1.5 'Roboto Mono', monospace;
@@ -85,6 +87,10 @@ pre[href]: hover  {
 pre:hover, pre:focus { 
   width: min-content; 
 }
+*/
+
+/* new 'pre' code goes here */
+
 
 a:link {
   color: #3333ff;  /* vivid blue, was; #013220 very dark green */
@@ -140,6 +146,7 @@ h6 {
   margin-left: 15px;
 }
 
+/* Comment out all details/summary code.
 details {
   font: 14px Bahnschrift, Inter, sans-serif, Calibri;
   width: 65%;
@@ -156,6 +163,33 @@ details > summary {
 details > p {
   border-radius: 0 0 10px 10px;
   background-color: #fff;  /* white */
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px #00008b;  /* dark blue*/
+}
+details[open] > summary {
+  background-color: #ffff00;  /* pure (or mostly pure) yellow */
+}
+*/
+
+
+/* details/summary code from coding-templates goes here */
+details {
+  font: 14px Bahnschrift, Inter, sans-serif, Calibri;
+  width: 13em;  /* 100px; then 65%; */
+}
+details > summary {
+  width: 13em;  /* 12em; */
+  padding: 2px 6px;
+  background-color: #eeeeee;  /* very light gray */
+  border: none;
+  box-shadow: 3px 3px 4px #00008b;  /* dark blue */
+  cursor: pointer;
+  margin-left: 15px;
+}
+details > p {
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;  /* white */
   padding: 2px 6px;
   margin: 0;
   box-shadow: 3px 3px 4px #00008b;  /* dark blue*/
@@ -203,6 +237,8 @@ table {
   margin-left: 15px;
   border: 1px solid #000;  /* black */
 }
+
+/* more 'pre' code to comment out.
 pre {
   font: normal normal 10px/12px consolas,Courier,Monospace;
   background-color: #eee;  /* very light gray */
@@ -250,6 +286,57 @@ pre[href]:hover  {
 pre:hover, pre:focus {
   width: 400px;  /* was: 50%, fit-content; before that; width: min-content */
 }
+*/
+
+/* New 'pre' code goes here */
+pre {
+  font: normal normal 10px/12px consolas,Courier,Monospace;
+  background-color: #eeeeee;  /* very light gray */
+  overflow: auto;
+  margin: 0 0 1em;
+  padding: .5em 1em;
+  white-space: pre-wraps;
+  overflow-x: auto;
+}
+pre > code {
+  display: block;
+  margin-left: 15px;  /* 10px */
+  padding: 1rem;
+  word-wrap: normal;
+}
+pre code,
+pre .line-number {
+  font: normal normal 10px/12px consolas,Courier,Monospace;
+  color: #000000;  /* black */
+  display: block;
+}
+pre .line-number {
+  font: normal normal 10px/12px consolas,Courier,Monospace;
+  float: left;
+  margin: 0 1em 0 -1em;
+  border-right: 1px solid;
+  text-align: right;
+  color: #ff0000;  /* pure (or mostly pure) red */
+}
+pre .line-number span {
+  display: block;
+  padding: 0 .5em 0 1em;
+}
+pre .cl {
+  display: block;
+  clear: both;
+}
+pre {
+  width: 485px;  /* 450px; */
+  overflow: auto;
+}
+pre[href]:hover  {
+  text-decoration: none;
+}
+pre:hover, pre:focus {
+  width: 485px;  /* last: 50%, was: fit-content; before that; width: min-content */
+}
+
 
 @media all and (max-width: 500px) {
   img.frame { 
