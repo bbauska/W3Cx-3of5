@@ -179,7 +179,7 @@ details {
   width: 13em;  /* 100px; then 65%; */
 }
 details > summary {
-  width: 13em;  /* 12em; */
+  width: 12em;  /* 12em; */
   padding: 2px 6px;
   background-color: #eeeeee;  /* very light gray */
   border: none;
