@@ -79,7 +79,7 @@ h6 {
 
 /* Comment out all details/summary code.
 details {
-  font: 14px Bahnschrift, Inter, sans-serif, Calibri;
+  font: 12px Bahnschrift, Inter, sans-serif, Calibri;  /* 14px */
   width: 65%;
 }
 details > summary {
@@ -106,7 +106,7 @@ details[open] > summary {
 
 /* details/summary code from coding-templates goes here */
 details {
-  font: 14px Bahnschrift, Inter, sans-serif, Calibri;
+  font: 12px Bahnschrift, Inter, sans-serif, Calibri;  /* 14px */
   width: 13em;  /* 100px; then 65%; */
 }
 details > summary {
