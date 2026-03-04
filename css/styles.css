@@ -190,7 +190,6 @@ pre:hover, pre:focus {
   width: 485px;  /* last: 50%, was: fit-content; before that; width: min-content */
 }
 
-
 @media all and (max-width: 500px) {
   img.frame { 
     border-width: 0px;
