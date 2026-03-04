@@ -22,76 +22,7 @@ p {
   margin-left: 15px;  /* was 10px; */
 }
 
-/* comment out all 'pre' code.
-pre {
-  margin: 0;
-  font: 1rem/1.5 'Roboto Mono', monospace;
-}
-code {
-  -webkit-user-select: all;
-  user-select: all;
-  display: block;
-  padding: 20px;
-  border: 2px dashed #c9baa7;
-  color: #31808c;
-  background-color: #f5f4ef;
-  text-align: left;
-  font-family: inherit;
-  overflow: auto;
-}
-pre > code {
-  display: block;
-  margin-left: 15px;  /* 10px */
-  padding: 1rem;
-  word-wrap: normal;
-}
-pre {
-  font: normal normal 10px/12px consolas,Courier,Monospace;
-  background-color: #eee;
-  overflow: auto;
-  margin: 0 0 0 3em;  /* 0 0 1em */
-  padding: .5em 1em;
-  white-space: pre-wrap;
-  overflow-x: auto;
-  /* Calculates the minimum content width and then adds 2 pixels */
-  width: calc-size(min-content, size + 2px);
-}
-pre code,
-pre .line-number {
-  font: normal normal 10px/12px consolas,Courier,Monospace;
-  color: black;
-  display: block;
-}
-pre .line-number {
-  font: normal normal 10px/12px consolas,Courier,Monospace;
-  float: left;
-  margin: 0 1em 0 -1em;
-  border-right: 1px solid;
-  text-align: right;
-  color: red;
-}
-pre .line-number span {
-  display: block;
-  padding: 0 .5em 0 1em;
-}
-pre .cl {
-  display: block;
-  clear: both;
-}
-pre {
-  overflow: auto;
-}
-pre[href]: hover  {
-  text-decoration: none;
-}
-pre:hover, pre:focus { 
-  width: min-content; 
-}
-*/
-
 /* new 'pre' code goes here */
-
-
 a:link {
   color: #3333ff;  /* vivid blue, was; #013220 very dark green */
   background-color: transparent;
@@ -237,56 +168,6 @@ table {
   margin-left: 15px;
   border: 1px solid #000;  /* black */
 }
-
-/* more 'pre' code to comment out.
-pre {
-  font: normal normal 10px/12px consolas,Courier,Monospace;
-  background-color: #eee;  /* very light gray */
-  overflow: auto;
-  margin: 0 0 1em;
-  padding: .5em 1em;
-  white-space: pre-wrap;
-  overflow-x: auto;
-}
-pre > code {
-  display: block;
-  margin-left: 15px;  /* 10px */
-  padding: 1rem;
-  word-wrap: normal;
-}
-pre code,
-pre .line-number {
-  font: normal normal 10px/12px consolas,Courier,Monospace;
-  color: #000;  /* black */
-  display: block;
-}
-pre .line-number {
-  font: normal normal 10px/12px consolas,Courier,Monospace;
-  float: left;
-  margin: 0 1em 0 -1em;
-  border-right: 1px solid;
-  text-align: right;
-  color: #ff0000;  /* pure (or mostly pure) red */
-}
-pre .line-number span {
-  display: block;
-  padding: 0 .5em 0 1em;
-}
-pre .cl {
-  display: block;
-  clear: both;
-}
-pre {
-  width: 400px;
-  overflow: auto;
-}
-pre[href]:hover  {
-  text-decoration: none;
-}
-pre:hover, pre:focus {
-  width: 400px;  /* was: 50%, fit-content; before that; width: min-content */
-}
-*/
 
 /* New 'pre' code goes here */
 pre {
