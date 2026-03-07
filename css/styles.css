@@ -9,10 +9,10 @@ img.displayed {
   border-style: solid; 
 }
 
-ul li, ol li { 
-  font-size: 14.5px;
-  padding: 14.5px;
-  margin-left: 1.0em;
+ul, ol li { 
+  font-size: 1.2em;
+  padding: 15px;
+  margin-left: 15px;
   line-height: 110%;
   font-family: Bahnschrift, Inter, Helvetic, sans-serif, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVue Sans Mono";
 }
@@ -79,8 +79,8 @@ h6 {
 }
 
 details {
-  font: 14px Bahnschrift, Inter, sans-serif, Calibri;  /* 12px */
-  width: 75%;  /* 13em; 65% */
+  font: 10px Inter, sans-serif, Bahnschrift, Calibri;  /* 12px */
+  width: 65%;
 }
 details > summary {
   width: 12em;
@@ -89,7 +89,6 @@ details > summary {
   border: none;
   box-shadow: 3px 3px 4px #00008b;  /* dark blue */
   cursor: pointer;
-  margin-left: 15px;
 }
 details > p {
   border-radius: 0 0 10px 10px;
@@ -112,8 +111,6 @@ body {
   text-align: left;
   padding: 10px;
   margin: 15px;
-  background-attachment: fixed;
-  min-height: 100vh;
 }
 
 #myBtn {
@@ -182,11 +179,27 @@ pre .cl {
   display: block;
   clear: both;
 }
+pre {
+  width: 400px;
+  overflow: auto;
+}
 pre[href]:hover  {
   text-decoration: none;
 }
 pre:hover, pre:focus {
-  width: 475px;
+  width: 400px;
+}
+
+table {
+  table-layout: fixed;
+  width: 120px;
+  border: 1px solid red;
+}
+td {
+  border: 1px solid blue;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @media all and (max-width: 500px) {
