@@ -15837,7 +15837,8 @@ of the element. Example: &lt;input type=“submit” value=“Please submit”&
 
 <h4>Source code:</h4>
 
-<pre>&lt;label for=&quot;address&quot;&gt;Enter your address:&lt;/label&gt;&lt;br&gt; &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;</pre>
+<pre>&lt;label for=&quot;address&quot;&gt;Enter your address:&lt;/label&gt;&lt;br&gt; 
+  &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-3-4">5.3.4 Grouping Controls</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15848,7 +15849,8 @@ for all users, as related controls are easier to identify.</p>
 <h4>Associating related controls with fieldset</h4>
 
 <p>Grouping needs to be carried out visually and in the code, for example, by using the 
-&lt;fieldset&gt; and  &lt;legend&gt; elements to associate related form controls. The &lt;fieldset&gt; identifies the entire grouping and &lt;legend&gt; identifies the grouping’s descriptive text.</p>
+&lt;fieldset&gt; and  &lt;legend&gt; elements to associate related form controls. The &lt;fieldset&gt; 
+identifies the entire grouping and &lt;legend&gt; identifies the grouping’s descriptive text.</p>
 
 <h4>Example #1: radio buttons</h4>
 
@@ -15873,11 +15875,13 @@ Radio button groups should always be grouped using &lt;fieldset&gt;.</p>
 <pre>&lt;fieldset&gt;
   &lt;legend&gt;Output format&lt;/legend&gt;
   &lt;div&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;format&quot; id=&quot;txt&quot; value=&quot;txt&quot; checked&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;format&quot; id=&quot;txt&quot; 
+	  value=&quot;txt&quot; checked&gt;
     &lt;label for=&quot;txt&quot;&gt;Text file&lt;/label&gt;
   &lt;/div&gt;
   &lt;div&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;format&quot; id=&quot;csv&quot; value=&quot;csv&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;format&quot; 
+	  id=&quot;csv&quot; value=&quot;csv&quot;&gt;
     &lt;label for=&quot;csv&quot;&gt;CSV file&lt;/label&gt;
   &lt;/div&gt;
   [...]
@@ -15918,13 +15922,11 @@ receiving different types of information.</p>
 
 <h4>Associating related controls with WAI-ARIA</h4>
 
-<p>WAI-ARIA provides a grouping role that functions similarly
-to fieldset and legend. For example, a div element can
-have role=group to indicate that the contained elements are members of a
-group.</p>
+<p>WAI-ARIA provides a grouping role that functions similarly to fieldset and legend. For example, 
+a div element can have role=group to indicate that the contained elements are members of a group.</p>
 
-<p>WAI-ARIA roles are very important in the accessibility world, and we invite you to see 
-an example provided in the 
+<p>WAI-ARIA roles are very important in the accessibility world, and we invite you to see an 
+example provided in the 
 <a href="https://www.w3.org/WAI/tutorials/forms/grouping/#associating-related-controls-with-wai-aria" 
 target="_blank" rel="noopener noreferrer">associated WAI tutorial</a>. See also this MDN’s 
 article about about 
@@ -15933,14 +15935,13 @@ rel="noopener noreferrer">WAI-ARIA roles</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-4-1">5.4.1 Input Types</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this section, we briefly present the input types, attributes, and elements related 
-to the forms that came with HTML5. Details are given later, illustrated by multiple 
-interactive examples.</p>
+<p>In this section, we briefly present the input types, attributes, and elements related to the 
+forms that came with HTML5. Details are given later, illustrated by multiple interactive examples.</p>
 
-<p>Compared to HTML4, HTML5 introduced 13 new input types, covering most of the needs of 
-Web developers. HTML5 packages some of the “form best practices” in its specification. 
-Web browsers providing native implementation give a boost in performance, and reduce the 
-size of JavaScript embedded in complex Web pages.</p>
+<p>Compared to HTML4, HTML5 introduced 13 new input types, covering most of the needs of Web 
+developers. HTML5 packages some of the “form best practices” in its specification. Web browsers 
+providing native implementation give a boost in performance, and reduce the size of JavaScript 
+embedded in complex Web pages.</p>
 
 <p>MDN’s Web docs 
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#%3Cinput%3E_types" 
@@ -15959,8 +15960,8 @@ types and highlights those that came with HTML5.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-4-2">5.4.2 "color"</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>For years, we used hundreds of lines of JavaScript for selecting colors. Now, it’s 
-bundled in the browser!</p>
+<p>For years, we used hundreds of lines of JavaScript for selecting colors. Now, it’s bundled in 
+the browser!</p>
 
 <p>Here is how it looks on some mobile devices:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -19310,7 +19311,8 @@ different input fields, their content is updated in the localStorage.<br>
 We just added input event listeners to each input field. For example, in order to save the first name input 
 field’s content, we just added:</p>
 
-<pre>oninput=&quot;localStorage.&lt;font color="red"&gt;firstName&lt;/font&gt;=this.value;&quot;</pre>
+<pre>oninput=&quot;localStorage.&lt;font color="red"&gt;firstName
+  &lt;/font&gt;=this.value;&quot;</pre>
 
 <p>Where firstName in red is the key and this.value the current value of the input field.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -21443,34 +21445,34 @@ target="_blank" rel="noopener noreferrer">
       // Ask google geocoder for an address once we get a longitude and
       // a latitude. In fact, the reverse geocoder sends back an array 
       // of &quot;guesses&quot; i.e. not just one address object, but 
-	  // several. Each entry in this array has several properties
+      // several. Each entry in this array has several properties
       // such as street, city, etc. We use the
       &quot;formatted_address&quot;
       // one here, but it might be interesting to get the detailed
       // propertis in other applications like a form with street, 
-	  // city, zip code etc.
+      // city, zip code etc.
       geocoder.geocode({&#39;latLng&#39;: latlng},reverseGeocoderSuccess);
-        function reverseGeocoderSuccess(results, status) {
-          if (status == google.maps.GeocoderStatus.OK) {
-            if (results[1]) {
-              map.setZoom(11);
-              marker = new google.maps.Marker({
-                position: latlng,
-                map: map
-              });
-              infowindow.setContent(results[1].formatted_address);
-              infowindow.open(map, marker);
-              // Display address as text in the page
-              myAddress.innerHTML=&quot;Adress: &quot; 
-              + results[0].formatted_address; 
-            } else {
-              alert(&#39;No surface address found&#39;);
-            }
-          } else {
-            alert(&#39;Geocoder failed due to: &#39; + status);
-          }
-        } // end of reverseGeocoderSuccess
-      } // end of showOnGoogleMap
+      function reverseGeocoderSuccess(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          if (results[1]) {
+            map.setZoom(11);
+            marker = new google.maps.Marker({
+              position: latlng,
+              map: map
+            });
+            infowindow.setContent(results[1].formatted_address);
+            infowindow.open(map, marker);
+            // Display address as text in the page
+            myAddress.innerHTML=&quot;Adress: &quot; 
+            + results[0].formatted_address; 
+          } else {
+            alert(&#39;No surface address found&#39;);
+          }
+        } else {
+          alert(&#39;Geocoder failed due to: &#39; + status);
+        }
+      } // end of reverseGeocoderSuccess
+    } // end of showOnGoogleMap
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init()&quot;&gt;
@@ -21490,8 +21492,8 @@ target="_blank" rel="noopener noreferrer">
 noreferrer"> the demo on the Gisgraphy website</a>):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 331. gisgraphy screenshot (398) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<a href="https://services.gisgraphy.com/static/leaflet/index.html" target="_blank" rel="noopener 
-noreferrer">
+<a href="https://services.gisgraphy.com/static/leaflet/index.html" 
+  target="_blank" rel="noopener noreferrer">
 <img class="displayed"
   src="./images/image331.webp"
   loading="lazy"
@@ -21503,13 +21505,13 @@ noreferrer">
 <h4><b>Example #2:</b> reverse geocoding + OpenStreetMap</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Important note:</b> these examples below rely on an external 
-<a href="https://github.com/perliedman/leaflet-control-geocoder" target="_blank" rel="noopener 
-noreferrer">GitHub resource</a>.</p>
+<a href="https://github.com/perliedman/leaflet-control-geocoder" 
+  target="_blank" rel="noopener noreferrer">GitHub resource</a>.</p>
 
 <p>Please, pan and zoom on the map and click.</p>
 
-<p>The longitude and latitude are computed from your click and a free reverse geocoding service is 
-used to convert to a physical address.</p>
+<p>The longitude and latitude are computed from your click and a free reverse geocoding service 
+is used to convert to a physical address.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 332. reverse geocoding - openstreetmap (398) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <a href="https://codepen.io/w3devcampus/pen/MWKEJqM" target="_blank" rel="noopener noreferrer">
@@ -21533,7 +21535,7 @@ used to convert to a physical address.</p>
   &lt;meta
     name=&quot;viewport&quot;
     content=&quot;width=device-width, user-scalable=no initial-scale=1, 
-	maximum-scale=1&quot;
+    maximum-scale=1&quot;
     /&gt;
   &lt;link rel=&quot;stylesheet&quot; 
   href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css
@@ -21582,8 +21584,8 @@ used to convert to a physical address.</p>
   }, 12000);
   L.tileLayer(&#39;https://{s}.tile.osm.org/{z}/{x}/{y}.png&#39;, {
     attribution: &#39;&amp;copy; 
-	&lt;a href=&quot;https://osm.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; 
-	contributors&#39;
+    &lt;a href=&quot;https://osm.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; 
+    contributors&#39;
   }).addTo(map);
   map.on(&#39;click&#39;, function(e) {
     console.log(e.latlng)
@@ -21625,22 +21627,22 @@ used to convert to a physical address.</p>
   &lt;meta
     name=&quot;viewport&quot;
     content=&quot;width=device-width, user-scalable=no initial-scale=1, 
-	maximum-scale=1&quot;
+    maximum-scale=1&quot;
     /&gt;
   &lt;link rel=&quot;stylesheet&quot; 
     href=&quot;https://unpkg.com/leaflet@latest/dist/leaflet.css&quot; 
-	/&gt;
+    /&gt;
   &lt;link rel=&quot;stylesheet&quot; 
     href=&quot;https://unpkg.com/leaflet-control-
-	geocoder/dist/Control.Geocoder.css&quot; /&gt;
+    geocoder/dist/Control.Geocoder.css&quot; /&gt;
   &lt;script 
     src=&quot;https://unpkg.com/leaflet@latest/
-	dist/leaflet-src.js&quot;&gt;
-	&lt;/script&gt;
+    dist/leaflet-src.js&quot;&gt;
+    &lt;/script&gt;
   &lt;script 
     src=&quot;https://unpkg.com/leaflet-control-geocoder/
-	dist/Control.Geocoder.js&quot;&gt;
-	&lt;/script&gt;
+    dist/Control.Geocoder.js&quot;&gt;
+    &lt;/script&gt;
   &lt;style type=&quot;text/css&quot;&gt;
     body {
       margin: 0;
@@ -21671,7 +21673,7 @@ used to convert to a physical address.</p>
       // Instance map using leaflet
       map = L.map(&#39;map&#39;).setView([latitude, longitude], 13);
       // Tile layer using key api at cloudmade.com
-	  L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
+      L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
         key: &#39;760506895e284217a7442ce2efe97797&#39;,
         styleId: 103288,
         maxZoom: 16
@@ -21685,13 +21687,13 @@ used to convert to a physical address.</p>
     // Get current position fail
     function error() {
       alert(&#39;Get current position fail. Please access codepen to 
-	    get geolocation.&#39;);
+        get geolocation.&#39;);
     }
     var marker;
     function getPhysicalAddress(latlong) {
       geocoder.reverse(latlong, 
-	    map.options.crs.scale(map.getZoom()), 
-		function(results) {
+        map.options.crs.scale(map.getZoom()), 
+        function(results) {
       var r = results[0];
         if (r) {
           if (marker) {
