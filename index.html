@@ -1981,7 +1981,9 @@ element with the other sectioning elements already seen in the course:</p>
   &lt;/article&gt;
   &lt;article&gt;
     &lt;h2&gt;Electric Skateboards&lt;/h2&gt;
-    &lt;p&gt;These no longer require the propelling of the skateboard by means of the feet; rather an electric motor propels the board, fed by an electric battery.&lt;/p&gt;
+    &lt;p&gt;These no longer require the propelling of the skateboard by means 
+      of the feet; rather an electric motor propels the board, fed by an electric 
+	  battery.&lt;/p&gt;
     &lt;p&gt;... &lt;/p&gt;
     &lt;p&gt;... &lt;/p&gt;
   &lt;/article&gt;
@@ -2112,7 +2114,8 @@ to the third example given in the "heading and sectioning elements" part of the 
     &lt;header&gt;
       &lt;b&gt;&lt;h1&gt;&lt;a href=&quot;&quot;&gt;Information about this example&lt;/a&gt;&lt;/h1&gt;&lt;/b&gt;
         This example is a modified version
-        of &lt;a href=&quot;https://example.com/blog/index.html&quot;&gt;https://example.com/blog/index.html&lt;/a&gt;
+        of &lt;a href=&quot;https://example.com/blog/index.html&quot;&gt;
+		https://example.com/blog/index.html&lt;/a&gt;
     &lt;/header&gt;
     ...
   &lt;/article&gt;
@@ -2416,7 +2419,7 @@ content.</p>
   loading="lazy"
   title="Example of summary details elements from the W3C specification"
   alt="Example of summary details elements from the W3C specification."
-  style="width:35%;">
+  style="width:25%;">
 
 <p>The &lt;details&gt; element generates a simple widget to show/hide element contents, optionally 
 by clicking on its child &lt;summary&gt; element.</p>
@@ -2456,7 +2459,8 @@ summary:</p>
         How to beat the boss...spoiler alert !
       &lt;/summary&gt;
       &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
-      &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
+      &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly 
+	  both eyes with your laser beam.&lt;/p&gt;
     &lt;/details&gt;
   &lt;/body&gt;
 &lt;/html&gt;</pre>
@@ -2511,15 +2515,17 @@ target="_blank" rel="noopener noreferrer">
   &lt;summary&gt;
     How to beat the boss...spoiler alert !
   &lt;/summary&gt;
-  &lt;p&gt; Just aim to the red spots near his eyes&lt;/p&gt;
-  &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both eyes with your laser beam.&lt;/p&gt;
+  &lt;p&gt;Just aim to the red spots near his eyes&lt;/p&gt;
+  &lt;p&gt;Keep shooting at these spots until the eyes open, then hit quickly both 
+    eyes with your laser beam.&lt;/p&gt;
   &lt;details&gt;
-  &lt;summary&gt;
-    Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
+    &lt;summary&gt;
+      Bonus and spoiler No 2: get a new weapon by cutting the tail of the boss.
     &lt;/summary&gt;
     &lt;p&gt;Before finishing him, try to cut his trail, you will get a new weapon&lt;/p&gt;
-    &lt;p&gt;Just try to stay behind him as long as you can, hitting his tail with your melee weapon, 
-      after a few hits the trail will fall and you will get a new bonus weapon, then finish the boss.&lt;/p&gt;
+    &lt;p&gt;Just try to stay behind him as long as you can, hitting his tail with 
+      your melee weapon, after a few hits the trail will fall and you will get a 
+  	new bonus weapon, then finish the boss.&lt;/p&gt;
   &lt;/details&gt;
 &lt;/details&gt;</pre>
 
@@ -2641,16 +2647,14 @@ target="_blank" rel="noopener noreferrer">
 <p>The &lt;time&gt; element is useful for marking a time or a duration
 in a document.</p>
 
-<p>It provides both a human readable part (the part
-between &lt;time&gt; and &lt;/time&gt;) and a machine readable part
-contained within a datetime attribute. Dates are expressed
+<p>It provides both a human readable part (the part between &lt;time&gt; and &lt;/time&gt;) 
+and a machine readable part contained within a datetime attribute. Dates are expressed
 as YYYY-MM-DD.</p>
 
-<p>The machine readable part adds semantics that can be used by search
-engines for indexing, by browsers or by browser extensions, or by
-JavaScript code. Useful scenarios include generating alerts for
-birthdays, automatically adding dates or events that
-contain &lt;time&gt; elements in a calendar, etc.</p>
+<p>The machine readable part adds semantics that can be used by search engines for indexing, by 
+browsers or by browser extensions, or by JavaScript code. Useful scenarios include generating 
+alerts for birthdays, automatically adding dates or events that contain &lt;time&gt; elements 
+in a calendar, etc.</p>
 
 <h4>Examples:</h4>
 
@@ -2658,7 +2662,8 @@ contain &lt;time&gt; elements in a calendar, etc.</p>
 I have a meeting the &lt;time datetime=&quot;2020-02-14&quot;&gt;Monday 14/02/2020.&lt;/time&gt;.
 Blog posts from the year &lt;time datetime=&quot;2020&quot;&gt;2020&lt;/time&gt;.
 Archives, blog posts for &lt;time datetime=&quot;2020-04&quot;&gt;April 2020&lt;/time&gt;
-This recipe was published by Michel the &lt;time datetime=&quot;2020-04-16&quot;&gt;April 16, 2020&lt;/time&gt;.</pre>
+This recipe was published by Michel the &lt;time datetime=
+  &quot;2020-04-16&quot;&gt;April 16, 2020&lt;/time&gt;.</pre>
 
 <h4>The datetime attribute</h4>
 
@@ -2728,7 +2733,7 @@ a year”, “a week in a year”, “a time”, etc… </p>
   </tbody>
 </table>
 </div>
-
+<br><br>
 <h4>Duration values</h4>
 
 <p>Duration values use the prefix “P” for “period” as in &lt;time
@@ -3111,9 +3116,9 @@ themselves not translatable. The reverse is also true.</p>
 
 <pre>&lt;p translate=&quot;no&quot;&gt;This is a text in a paragraph element, that should not be 
 translated: the p element has a translate=&quot;no&quot; attribute.&lt;span&gt; This part that 
-is in a span element embedded within the paragraph. It does not have a translate attribute but 
-inherits the translation-mode of the p and will not be translated too&lt;/span&gt;. This is the 
-end of the paragraph...&lt;/p&gt;</pre>
+is in a span element embedded within the paragraph. It does not have a translate 
+attribute but inherits the translation-mode of the p and will not be translated 
+too&lt;/span&gt;. This is the end of the paragraph...&lt;/p&gt;</pre>
 
 <h4>External resources:</h4>
 
@@ -21863,7 +21868,8 @@ good understanding of the material.</p>
   Last updated 01-21-26 Wed 3:03pm<br>
   Last updated 03-01-26 Sun 2:19pm<br>
   Last updated 03-02-26 Mon 11:37pm<br>
-  Last updated 03-13-26 Fri 10:01pm</h6>
+  Last updated 03-13-26 Fri 10:01pm<br>
+  Last updated 04-06-26 Mon 11:29am</h6>
   
   <script src="/js/scripts.js"></script>
 
