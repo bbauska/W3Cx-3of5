@@ -6729,9 +6729,13 @@ video#gumVideo {
 &lt;/head&gt;
 &lt;body&gt;
   &lt;div id=&quot;container&quot;&gt;
-    &lt;h1&gt;&lt;a href=&quot;//webrtc.github.io/samples/&quot; title=&quot;WebRTC samples homepage&quot;&gt;WebRTC example:&lt;/a&gt; &lt;span&gt;MediaRecorder&lt;/span&gt;&lt;/h1&gt;
-    &lt;p&gt;For more info, see the &lt;a href=&quot;https://w3c.github.io/mediacapture-record/MediaRecorder.html&quot; 
-      title=&quot;W3C MediaStream Recording API - Editor&#39;s Draft&quot;&gt;MediaStream Recording API Editor&#39;s Draft&lt;/a&gt;.&lt;/p&gt;
+    &lt;h1&gt;&lt;a href=&quot;//webrtc.github.io/samples/&quot; 
+	  title=&quot;WebRTC samples homepage&quot;&gt;WebRTC example:&lt;/a&gt; 
+	  &lt;span&gt;MediaRecorder&lt;/span&gt;&lt;/h1&gt;
+    &lt;p&gt;For more info, see the 
+	  &lt;a href=&quot;https://w3c.github.io/mediacapture-record/MediaRecorder.html&quot; 
+      title=&quot;W3C MediaStream Recording API - Editor&#39;s Draft&quot;&gt;MediaStream 
+	    Recording API Editor&#39;s Draft&lt;/a&gt;.&lt;/p&gt;
       &lt;video id=&quot;gum&quot; autoplay muted&gt;&lt;/video&gt;
       &lt;video id=&quot;recorded&quot; loop controls&gt;&lt;/video&gt;
     &lt;div&gt;
@@ -6739,7 +6743,9 @@ video#gumVideo {
       &lt;button id=&quot;play&quot; disabled&gt;Play&lt;/button&gt;
       &lt;button id=&quot;download&quot; disabled&gt;Download&lt;/button&gt;
     &lt;/div&gt;
-    &lt;a href=&quot;https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record&quot; title=&quot;View source for this page on GitHub&quot; id=&quot;viewSource&quot;&gt;View source on GitHub&lt;/a&gt;
+    &lt;a href=&quot;https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record&quot; 
+	  title=&quot;View source for this page on GitHub&quot; 
+	  id=&quot;viewSource&quot;&gt;View source on GitHub&lt;/a&gt;
   &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
@@ -6950,15 +6956,20 @@ target="_blank" rel="noopener noreferrer">this example on JS Bin</a>:</p>
   &lt;/tr&gt;
   &lt;tr class="even"&gt;
     &lt;td&gt;10&lt;/td&gt;
-    &lt;td&gt;&lt;&lt;a href="https://december.com/html/4/element/body.html" target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;body&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;&lt;a href="https://december.com/html/4/element/body.html" target="_blank" 
+	  rel="noopener noreferrer"&gt;&lt;b&gt;body&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr class="odd"&gt;
     &lt;td&gt;11&lt;/td&gt;
-    &lt;td&gt;&lt;&lt;a href="https://december.com/html/4/element/h1.html" target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;h1&lt;/b&gt;&lt;/a&gt;&gt;JavaScript debugging using the dev tool console&lt;/&lt;a href="https://december.com/html/4/element/h1.html" target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;h1&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;&lt;a href="https://december.com/html/4/element/h1.html" target="_blank" 
+	  rel="noopener noreferrer"&gt;&lt;b&gt;h1&lt;/b&gt;&lt;/a&gt;&gt;JavaScript 
+	  debugging using the dev tool console&lt;/&lt;a href="https://december.com/html/4/element/h1.html"
+	  target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;h1&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr class="even"&gt;
     &lt;td&gt;12&lt;/td&gt;
-    &lt;td&gt;&lt;/&lt;a href="https://december.com/html/4/element/body.html" target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;body&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/&lt;a href="https://december.com/html/4/element/body.html" target="_blank" 
+	  rel="noopener noreferrer"&gt;&lt;b&gt;body&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr class="odd"&gt;
     &lt;td&gt;13&lt;/td&gt;
@@ -8000,31 +8011,36 @@ below:</p>
 <details>
   <summary><b>JS source code:</b></summary>
   
-<pre>// Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
-function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
-//variables to be used when creating the arrow
-var headlen = 10;
-var angle = Math.atan2(toy-fromy,tox-fromx);
-ctx.save();
-ctx.strokeStyle = color;
-//starting path of the arrow from the start square to the end square and drawing the stroke
-ctx.beginPath();
-ctx.moveTo(fromx, fromy);
-ctx.lineTo(tox, toy);
-ctx.lineWidth = arrowWidth;
-ctx.stroke();
-//starting a new path from the head of the arrow to one of the sides of the point
-ctx.beginPath();
-ctx.moveTo(tox, toy);
-ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
-//path from the side point of the arrow, to the other side point
-ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
-//path from the side point back to the tip of the arrow, and then again to the opposite side point
-ctx.lineTo(tox, toy);
-ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
-//draws the paths created above
-ctx.stroke();
-ctx.restore();
+<pre>// Borrowed and adapted from: 
+// http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
+function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color) {
+  // Variables to be used when creating the arrow.
+  var headlen = 10;
+  var angle = Math.atan2(toy-fromy,tox-fromx);
+  ctx.save();
+  ctx.strokeStyle = color;
+  // Starting path of the arrow from the start square to the end square and 
+  // drawing the stroke.
+  ctx.beginPath();
+  ctx.moveTo(fromx, fromy);
+  ctx.lineTo(tox, toy);
+  ctx.lineWidth = arrowWidth;
+  ctx.stroke();
+  // Starting a new path from the head of the arrow to one of the sides 
+  // of the point.
+  ctx.beginPath();
+  ctx.moveTo(tox, toy);
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+    toy-headlen*Math.sin(angle-Math.PI/7));
+  // Path from the side point of the arrow, to the other side point.
+  ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
+  // Path from the side point back to the tip of the arrow, and then again to the 
+  // opposite side point.
+  ctx.lineTo(tox, toy);
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
+  // Draws the paths created above.
+  ctx.stroke();
+  ctx.restore();
 }</pre>
 
 </details>
@@ -8091,29 +8107,36 @@ first ctx.translate(100, 100), and look at the result below:</p>
 <details>
   <summary><b>JS source code:</b></summary>
   
-<pre>// Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
+<pre>// Borrowed and adapted from: 
+// http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
 function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
-  //variables to be used when creating the arrow
+  // Variables to be used when creating the arrow.
   var headlen = 10;
   var angle = Math.atan2(toy-fromy,tox-fromx);
   ctx.save();
   ctx.strokeStyle = color;
-  //starting path of the arrow from the start square to the end square and drawing the stroke
+  // Starting path of the arrow from the start square to the end square 
+  // and drawing the stroke.
   ctx.beginPath();
   ctx.moveTo(fromx, fromy);
   ctx.lineTo(tox, toy);
   ctx.lineWidth = arrowWidth;
   ctx.stroke();
-  //starting a new path from the head of the arrow to one of the sides of the point
+  // Starting a new path from the head of the arrow to one of the sides 
+  // of the point.
   ctx.beginPath();
   ctx.moveTo(tox, toy);
-  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
-  //path from the side point of the arrow, to the other side point
-  ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
-  //path from the side point back to the tip of the arrow, and then again to the opposite side point
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+    toy-headlen*Math.sin(angle-Math.PI/7));
+  // Path from the side point of the arrow, to the other side point.
+  ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),
+    toy-headlen*Math.sin(angle+Math.PI/7));
+  // Path from the side point back to the tip of the arrow, and then 
+  // again to the opposite side point.
   ctx.lineTo(tox, toy);
-  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
-  //draws the paths created above
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+    toy-headlen*Math.sin(angle-Math.PI/7));
+  // Draws the paths created above.
   ctx.stroke();
   ctx.restore();
 }</pre>
@@ -8213,28 +8236,35 @@ it with an angle equal to PI/4 , then we scaled it so that units are half as bi
 <details>
   <summary><b>JS source code:</b></summary>
   
-<pre>// Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
-function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
-  //variables to be used when creating the arrow
+<pre>// Borrowed and adapted from: 
+// http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
+function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color) {
+  // Vars to be used when creating the arrow.
   var headlen = 10;
   var angle = Math.atan2(toy-fromy,tox-fromx);
   ctx.save();
   ctx.strokeStyle = color;
-  //starting path of the arrow from the start square to the end square and drawing the stroke
+  // Starting path of the arrow from the start square to the end square 
+  // and drawing the stroke.
   ctx.beginPath();
   ctx.moveTo(fromx, fromy);
   ctx.lineTo(tox, toy);
   ctx.lineWidth = arrowWidth;
   ctx.stroke();
-  //starting a new path from the head of the arrow to one of the sides of the point
+  // Starting a new path from the head of the arrow to one of the 
+  // sides of the point.
   ctx.beginPath();
   ctx.moveTo(tox, toy);
-  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
-  //path from the side point of the arrow, to the other side point
-  ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
-  //path from the side point back to the tip of the arrow, and then again to the opposite side point
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+    toy-headlen*Math.sin(angle-Math.PI/7));
+  // Path from the side point of the arrow, to the other side point.
+  ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),
+    toy-headlen*Math.sin(angle+Math.PI/7));
+  // Path from the side point back to the tip of the arrow, and then 
+  // again to the opposite side point.
   ctx.lineTo(tox, toy);
-  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+    toy-headlen*Math.sin(angle-Math.PI/7));
   //draws the paths created above
   ctx.stroke();
   ctx.restore();
@@ -8324,29 +8354,36 @@ system.</p>
 <details>
   <summary><b>JS source code:</b></summary>
   
-<pre>// Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
-function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
-//variables to be used when creating the arrow
-var headlen = 10;
-var angle = Math.atan2(toy-fromy,tox-fromx);
+<pre>// Borrowed and adapted from: 
+// http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
+function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color) {
+  // Vars to be used when creating the arrow.
+  var headlen = 10;
+  var angle = Math.atan2(toy-fromy,tox-fromx);
   ctx.save();
   ctx.strokeStyle = color;
-  //starting path of the arrow from the start square to the end square and drawing the stroke
+  // Starting path of the arrow from the start square to the end 
+  // square and drawing the stroke.
   ctx.beginPath();
   ctx.moveTo(fromx, fromy);
   ctx.lineTo(tox, toy);
   ctx.lineWidth = arrowWidth;
   ctx.stroke();
-  //starting a new path from the head of the arrow to one of the sides of the point
+  // Starting a new path from the head of the arrow to one of the 
+  // sides of the point.
   ctx.beginPath();
   ctx.moveTo(tox, toy);
-  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
-  //path from the side point of the arrow, to the other side point
-  ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
-  //path from the side point back to the tip of the arrow, and then again to the opposite side point
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+    toy-headlen*Math.sin(angle-Math.PI/7));
+  // Path from the side point of the arrow, to the other side point.
+  ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),
+    toy-headlen*Math.sin(angle+Math.PI/7));
+  // Path from the side point back to the tip of the arrow, 
+  // and then again to the opposite side point.
   ctx.lineTo(tox, toy);
-  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
-  //draws the paths created above
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+    toy-headlen*Math.sin(angle-Math.PI/7));
+  // Draws the paths created above.
   ctx.stroke();
   ctx.restore();
 }</pre>
@@ -21869,7 +21906,8 @@ good understanding of the material.</p>
   Last updated 03-01-26 Sun 2:19pm<br>
   Last updated 03-02-26 Mon 11:37pm<br>
   Last updated 03-13-26 Fri 10:01pm<br>
-  Last updated 04-06-26 Mon 11:29am</h6>
+  Last updated 04-06-26 Mon 11:29am<br>
+  Last updated 04-12-26 Sun 2:14pm</h6>
   
   <script src="/js/scripts.js"></script>
 
