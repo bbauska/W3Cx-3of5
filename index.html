@@ -8493,29 +8493,30 @@ context, restore it at the end of the function!</i></p>
 <details>
   <summary><b>JS source code:</b></summary>
 
-<pre>// Borrowed and adapted from : http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
-function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color){
-  //variables to be used when creating the arrow
+<pre>// Borrowed and adapted from: 
+// http://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
+function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color) {
+  // Variables to be used when creating the arrow
   var headlen = 10;
   var angle = Math.atan2(toy-fromy,tox-fromx);
   ctx.save();
   ctx.strokeStyle = color;
-  //starting path of the arrow from the start square to the end square and drawing the stroke
+  // Starting path of arrow from start square to end square and draw stroke
   ctx.beginPath();
   ctx.moveTo(fromx, fromy);
   ctx.lineTo(tox, toy);
   ctx.lineWidth = arrowWidth;
   ctx.stroke();
-  //starting a new path from the head of the arrow to one of the sides of the point
+  // Starting new path from head of arrow to one of the sides of point
   ctx.beginPath();
   ctx.moveTo(tox, toy);
   ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
-  //path from the side point of the arrow, to the other side point
+  // Path from side point of arrow, to other side point
   ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
-  //path from the side point back to the tip of the arrow, and then again to the opposite side point
+  // Path from side point back to tip of arrow, and to opposite side point
   ctx.lineTo(tox, toy);
   ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
-  //draws the paths created above
+  // Draws the paths created above
   ctx.stroke();
   ctx.restore();
 }</pre>
@@ -8686,11 +8687,11 @@ different colors and line widths:</p>
     window.onload = function () {
       canvas = document.getElementById(&#39;myCanvas&#39;);
       ctx = canvas.getContext(&#39;2d&#39;);
-      // black rectangle, default color (black)
+      // Black rectangle, default color (black)
       ctx.fillRect(10, 10, 100, 100);
-      // outlined rectangle, default color
+      // Outlined rectangle, default color
       ctx.strokeRect(150, 10, 100, 100);
-      // outlined rectangle filled in red, outline blue
+      // Outlined rectangle filled in red, outline blue
       ctx.fillStyle = &#39;red&#39;;
       ctx.strokeStyle = &#39;lightBlue&#39;;
       ctx.lineWidth = 10;
@@ -8702,23 +8703,21 @@ different colors and line widths:</p>
       drawFilledRectangle(300, 150, 150, 150, &#39;yellow&#39;, &#39;purple&#39;, 10, angle + 0.5);
     };
     function drawFilledRectangle(x, y, w, h, fillColor, strokeColor, lw, angle) {
-      // GOOD PRACTICE : save if the function change the context or coordinate
-      // system
+      // Save if the function change the context or coordinate system
       ctx.save();
-      // position coordinate system
+      // Position coordinate system
       ctx.translate(x, y);
       ctx.rotate(angle);
-      // set colors, line width...
+      // Set colors, line width...
       ctx.lineWidth = lw;
       ctx.fillStyle = fillColor;
       ctx.strokeStyle = strokeColor;
-      // draw at 0, 0 as we translated the coordinate
-      // system already
+      // Draw at 0, 0 as we translated the coordinate system already
       ctx.fillRect(0, 0, w, h);
       ctx.strokeRect(0, 0, w, h);
-      // GOOD PRACTICE : a restore for a save!
+      // A restore for a save!
       ctx.restore();
-      }
+    }
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -8771,10 +8770,10 @@ font attributes, etc.:</p>
 
 <pre>context.font = &quot;60pt Calibri&quot;;
 // .. set color, lineWidth, shadow etc.
-// 10, 10 is the start of the baseline, bottom of left leg of the &quot;H&quot; in the
+// 10, 10 is start of baseline, bottom of left leg of &quot;H&quot; in 
 // &quot;Hello World&quot; example.
 context.fillText(&quot;Hello World!&quot;, 10, 10);
-// Or
+// Or,
 context.strokeText(&quot;Hello World!&quot;, 10, 10);</pre>
 
 <h4>Properties and methods useful for drawing text</h4>
@@ -8910,7 +8909,7 @@ involved such as font, size, shadow, lineWidth, etc.</p>
     context.font = &quot;20pt Arial&quot;;
     context.fillText(&quot;Width of previous text: &quot; + width 
   + &quot;pixels&quot;, 10, 150);
-    // Draw the baseline of the given width
+    // Draw baseline of given width
     context.moveTo(10, 100);
     context.lineTo(width+10, 100);
     context.stroke();
@@ -8933,11 +8932,11 @@ context.fillText(&quot;Hello World!&quot;, 10, 100);
 context.strokeText(&quot;Hello World!&quot;, 10, 100);
 var textMetrics = context.measureText(&quot;Hello World!&quot;);
 var width = textMetrics.width;
-// Draw a text that displays the width of the previous drawn text
+// Draw a text that displays width of previous drawn text
 context.font = &quot;20pt Arial&quot;;
 context.fillText(&quot;Width of previous text: &quot; 
   + width + &quot;pixels&quot;, 10, 150);
-// Draw the baseline of the given width
+// Draw baseline of given width
 context.moveTo(10, 100);
 context.lineTo(width+10, 100);
 context.stroke();</pre>
@@ -8996,6 +8995,9 @@ what has been used in the previous "Hello World" example.</p>
 
 <h3>Possible values for the textbaseline property:</h3>
 
+<details>
+  <summary><b>HTML source code:</b></summary>
+
 <pre>&lt;div data-align="center"&gt;
 &lt;table&gt;
   &lt;colgroup&gt;
@@ -9011,12 +9013,12 @@ what has been used in the previous "Hello World" example.</p>
 &lt;tbody&gt;
   &lt;tr class="odd"&gt;
     &lt;td&gt;top&lt;/td&gt;
-    &lt;td&gt;The text is aligned based on the top of the tallest glyph in the text.&lt;/td&gt;
+    &lt;td&gt;The text is aligned based on the top of the tallest glyph in text.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr class="even"&gt;
     &lt;td&gt;hanging&lt;/td&gt;
-    &lt;td&gt;The text is aligned based on the line the text seems to hang from.  This 
-      is almost identical to top, and in many cases, you cannot see the difference.&lt;/td&gt;
+    &lt;td&gt;The text is aligned based on the line the text seems to hang from. This 
+      is almost identical to top, and sometimes, you cannot see the difference.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr class="odd"&gt;
     &lt;td&gt;middle&lt;/td&gt;
@@ -9024,7 +9026,7 @@ what has been used in the previous "Hello World" example.</p>
   &lt;/tr&gt;
   &lt;tr class="even"&gt;
     &lt;td&gt;alphabetic&lt;/td&gt;
-    &lt;td&gt;The bottom of vertically oriented glyphs, e.g. western alphabet like the Latin.&lt;/td&gt;
+    &lt;td&gt;Bottom of vertically oriented glyphs, e.g. western alphabet like Latin.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr class="odd"&gt;
     &lt;td&gt;ideographic&lt;/td&gt;
@@ -9038,6 +9040,8 @@ what has been used in the previous "Hello World" example.</p>
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;</pre>
+
+</details>
 
 <p>Typical use (taken from the example above):</p>
 
@@ -9143,14 +9147,14 @@ the page. We will see that as well in the following parts of this chapter.</p>
     &lt;title&gt;Simple image drawing in a canvas&lt;/title&gt;
     &lt;script&gt;
       window.onload = function () {
-      // Necessity to run this code only after the web page has been loaded.
+      // Necessity to run code only after web page has been loaded
       var canvas = document.getElementById(&quot;myCanvas&quot;);
       var context = canvas.getContext(&quot;2d&quot;);
       var imageObj = new Image();
-      // Callback function called by the imageObj.src = .... line
-      //located after this function
+      // Callback function by imageObj.src = .... line
+      // located after this function
       imageObj.onload = function () {
-      // Draw the image only when we have the guarantee
+      // Draw image only when we have the guarantee
       // that it has been loaded
       context.drawImage(imageObj, 0, 0);
     };
@@ -9222,8 +9226,8 @@ the page. We will see that as well in the following parts of this chapter.</p>
     var context = canvas.getContext(&quot;2d&quot;);
     var imageObj = new Image();
     imageObj.onload = function() {
-    // Try commenting/uncommenting the following lines to see the
-    // effect of the different drawImage variants
+    // Try commenting/uncommenting following lines to see 
+    // effect of different drawImage variants
     // Original, big image
     // context.drawImage(imageObj, 0, 10);
     // Original image drawn with size = 100x100 pixels
@@ -9232,7 +9236,7 @@ the page. We will see that as well in the following parts of this chapter.</p>
     context.drawImage(imageObj, 80, 10, 150, 150);
     // with size = 200x200
     context.drawImage(imageObj, 210, 10, 200, 200);
-    // draw the sub image at 0, 0, width = 512, height = 100
+    // Draw the sub image at 0, 0, width = 512, height = 100
     // at position 100, 250, with a width of 256 and a height of 50 
     context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
     };
@@ -9260,18 +9264,18 @@ the page. We will see that as well in the following parts of this chapter.</p>
 
 <pre>var imageObj = new Image();
 imageObj.onload = function() {
-  // try commenting/uncommenting the following lines to see the
+  // Try commenting/uncommenting following lines to see 
   // effect of the different drawImage variants
-  // original, big image
+  // Original, big image
   // context.drawImage(imageObj, 0, 10);
-  // original image drawn with size = 100x100 pixels
+  // Original image drawn with size = 100x100 pixels
   context.drawImage(imageObj, 0, 10, 100, 100);
-  // with size = 150x150
+  // With size = 150x150
   context.drawImage(imageObj, 80, 10, 150, 150);
-  // with size = 200x200
+  // With size = 200x200
   context.drawImage(imageObj, 210, 10, 200, 200);
-  // draw the sub image at 0, 0, width = 512, height = 100
-  // at position 100, 250, with a width of 256 and a height of 50
+  // Draw sub image at 0, 0, width = 512, height = 100
+  // At position 100, 250, with a width of 256 and a height of 50
   context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
 };
 imageObj.src = &quot;https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png&quot;;
@@ -9340,12 +9344,12 @@ drawing only from the onload callback function:</p>
       console.log(&quot;image is already loaded, we draw it!&quot;);
       // Original image drawn with size = 100x100 pixels
       context.drawImage(imageObj, 0, 10, 100, 100);
-      // with size = 150x150
+      // With size = 150x150
       context.drawImage(imageObj, 80, 10, 150, 150);
-      // with size = 200x200
+      // With size = 200x200
       context.drawImage(imageObj, 210, 10, 200, 200);
-      // draw the sub image at 0, 0, width = 512, height = 100
-      // at position 100, 250, with a width of 256 and a height of 50
+      // Draw sub image at 0, 0, width = 512, height = 100
+      // at position 100, 250, with width of 256 and height of 50
       context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
     }
   &lt;/script&gt;
@@ -9396,12 +9400,12 @@ drawing only from the onload callback function:</p>
       console.log(&quot;Image has been loaded, let&#39;s draw it!&quot;);
       // Original image drawn with size = 100x100 pixels
       context.drawImage(imageObj, 0, 10, 100, 100);
-      // with size = 150x150
+      // With size = 150x150
       context.drawImage(imageObj, 80, 10, 150, 150);
-      // with size = 200x200
+      // With size = 200x200
       context.drawImage(imageObj, 210, 10, 200, 200);
-      // draw the sub image at 0, 0, width = 512, height = 100
-      // at position 100, 250, with a width of 256 and a height of 50
+      // Draw sub image at 0, 0, width = 512, height = 100
+      // at position 100, 250, with width of 256 and height of 50
       context.drawImage(imageObj, 0, 0, 512, 100, 100, 250, 256, 50);
     }
   &lt;/script&gt;
@@ -9461,9 +9465,9 @@ This can be done at video frequency on most modern computers or mobile devices.<
     }
   
     function processFrame() {
-      // Uncomment next line for drawing 100% copy of the video content
+      // Uncomment next line for drawing 100% copy of video content
       //ctx.drawImage(video, 0, 0);
-      // Comment these 4 lines if you uncommented the previous one
+      // Comment these 4 lines if you uncommented previous one
       ctx.drawImage(video, 0, 0, 320, 180);
       drawRotatingVideo(480, 90);
       ctx.drawImage(video, 0, 180, 320, 180);
@@ -9471,17 +9475,17 @@ This can be done at video frequency on most modern computers or mobile devices.<
     }
 
     function drawRotatingVideo(x, y) {
-      // Clear thze zone at the top right quarter of the canvas
+      // Clear thze zone at top right quarter of canvas
       ctx.clearRect(320, 0, 320, 180);
-      // We are going to change the coordinate system, save the context !
+      // We are going to change coordinate system, save context
       ctx.save();
-      // translate, rotate and recenter the image at its &quot;real&quot; center,
-      //not the top left corner
+      // Translate, rotate and recenter image at &quot;real&quot; center,
+      // not the top left corner
       ctx.translate(x, y);
       ctx.rotate(angle += 0.01);
       ctx.translate(-80, -45);
       ctx.drawImage(video, 0, 0, 160, 90);
-      // restore the context
+      // Restore context
       ctx.restore();
     }
   &lt;/script&gt;
@@ -9519,7 +9523,7 @@ function init() {
   video = document.getElementById(&#39;sourcevid&#39;);
   canvas = document.getElementById(&#39;myCanvas&#39;);
   ctx = canvas.getContext(&#39;2d&#39;);
-  setInterval(&quot;processFrame()&quot;, 25); // call processFrame each 25ms
+  setInterval(&quot;processFrame()&quot;, 25); // Call processFrame each 25ms
 }
 function processFrame() {
   ctx.drawImage(video, 0, 0, 320, 180);
@@ -9528,11 +9532,11 @@ function processFrame() {
   ctx.drawImage(video, 320, 180, 320, 180);
 }
 function drawRotatingVideo(x, y) {
-  // Clear the zone at the top right quarter of the canvas
+  // Clear the zone at top right quarter of canvas
   ctx.clearRect(320, 0, 320, 180);
-  // We are going to change the coordinate system, save the context!
+  // We are going to change the coordinate system, save context
   ctx.save();
-  // translate, rotate and recenter the image at its &quot;real&quot; center,
+  // Translate, rotate and recenter image at &quot;real&quot; center,
   //not the top left corner
   ctx.translate(x, y);
   ctx.rotate(angle += 0.01); // rotate and increment the current angle
@@ -21910,7 +21914,8 @@ good understanding of the material.</p>
   Last updated 03-13-26 Fri 10:01pm<br>
   Last updated 04-06-26 Mon 11:29am<br>
   Last updated 04-12-26 Sun 2:14pm<br>
-  Last updated 05-19-26 Tue 7:28pm</h6>
+  Last updated 05-19-26 Tue 7:28pm<br>
+  Last updated 06-09-26 Tue 4:20pm</h6>
   
   <script src="/js/scripts.js"></script>
 
