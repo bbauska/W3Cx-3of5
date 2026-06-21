@@ -8962,7 +8962,8 @@ different ways one can position the baseline of a given text:</p>
   &lt;meta charset=&quot;utf-8&quot;/&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=500 height=300&gt;Your browser does not 
+  support the canvas tag.&lt;/canvas&gt;
   &lt;script type=&quot;text/javascript&quot;&gt;
     var canvas=document.getElementById(&#39;myCanvas&#39;);
     var context=canvas.getContext(&#39;2d&#39;);
@@ -9021,8 +9022,10 @@ what has been used in the previous "Hello World" example.</p>
   &lt;/tr&gt;
   &lt;tr class="even"&gt;
     &lt;td&gt;hanging&lt;/td&gt;
-    &lt;td&gt;The text is aligned based on the line the text seems to hang from. This 
-      is almost identical to top, and sometimes, you cannot see the difference.&lt;/td&gt;
+    &lt;td&gt;
+	  The text is aligned based on the line the text seems to hang from. This 
+      is almost identical to top, and sometimes, you cannot see the difference.
+	&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr class="odd"&gt;
     &lt;td&gt;middle&lt;/td&gt;
@@ -13975,7 +13978,9 @@ your function ONCE and <i>AFTER a given amount of time</i>.</p>
 
 </details>
 
-<p>This is similar to the previous example except that we called setTimeout(function, delay) instead of setInterval(function, period). As setTimeout runs the function passed as the first parameter only once, we also have to call it at the end of the loop.</p>
+<p>This is similar to the previous example except that we called setTimeout(function, delay) 
+instead of setInterval(function, period). As setTimeout runs the function passed as the first 
+parameter only once, we also have to call it at the end of the loop.</p>
 
 <h4>Extract from source code:</h4>
 
@@ -15249,7 +15254,7 @@ want to achieve a smooth animation, set the state variables 60 times/s inside th
   loading="lazy"
   title="Same as example #1 but draw only when a mouse button is depressed"
   alt="Same as example #1 but draw only when a mouse button is depressed."
-  style="width:45%;">
+  style="width:35%;">
 
 <p>We just added mouseup and mousedown listeners, extract from the source code:</p>
 
@@ -15305,7 +15310,7 @@ window.onload = function () {
 <img class="displayed"
   src="./images/image208.webp"
   loading="lazy"
-  style="width:45%;"
+  style="width:35%;"
   title="Example #1 Changing the size of a canvas on the fly will erase its content."
   alt="Example #1 Changing the size of a canvas on the fly will erase its content.">
 
@@ -15339,7 +15344,7 @@ that join the diagonals.</p>
   loading="lazy"
   title="Draw two diagonal lines on 100 x 100 pixel canvas"
   alt="Draw two diagonal lines on 100 x 100 pixel canvas."
-  style="width:40%;">
+  style="width:35%;">
 
 <p>Then, we added this CSS rule:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15349,7 +15354,7 @@ that join the diagonals.</p>
   loading="lazy"
   title="Resize canvas using pixels, 100 by 100"
   alt="Resize canvas using pixels, 100 by 100."
-  style="width:45%;">
+  style="width:35%;">
 
 <h4>It’s the same example as before, just adding this CSS code:</h4>
 
@@ -15444,7 +15449,7 @@ function resizeCanvasAccordingToParentSize() {
   loading="lazy"
   title="Example #4: the same example with the monster"
   alt="Example #4: the same example with the monster."
-  style="width:40%;">
+  style="width:35%;">
 
 <h4>Example #4: the same example with the monster</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15454,7 +15459,7 @@ function resizeCanvasAccordingToParentSize() {
   loading="lazy"
   title="Same as last example with monster"
   alt="Same as last example with monster."
-  style="width:40%;">
+  style="width:35%;">
 
 <p>When the canvas is resized, its width became smaller than the monster’s size. We scale down the 
 monster (using ctx.scale!) The code is very similar to the previous example, we just replaced drawDiagonals() by drawMonster(…), and we added a test in the drawMonster(…) function for scaling 
@@ -16322,7 +16327,8 @@ date/time is chosen.</p>
   &lt;p&gt;
     You picked: &lt;span id=&quot;pickedDate&quot;&gt;&lt;/span&gt;
   &lt;/p&gt;
-  After you have tried the first example, change the value of the &quot;type&quot; attribute to:
+  After you have tried the first example, change the value of the &quot;type&quot; 
+    attribute to:
   &lt;ul&gt;
     &lt;li&gt;datetime&lt;/li&gt;
     &lt;li&gt;datetime-local&lt;/li&gt;
@@ -16686,7 +16692,8 @@ Enter a URL (custom validation, must start with http, https or ftp):</p>
   &lt;label for=&quot;url1&quot;&gt;Enter a URL (default validation):&lt;/label&gt;
   &lt;input type=&quot;url&quot; id=&quot;url1&quot;/&gt;
   &lt;p&gt;
-  &lt;label for=&quot;url2&quot;&gt;Enter a URL (custom validation, must start with http, https or ftp):&lt;/label&gt;
+  &lt;label for=&quot;url2&quot;&gt;Enter a URL (custom validation, must start with http, https 
+    or ftp):&lt;/label&gt;
   &lt;input id=&quot;url2&quot; type=&quot;url&quot; placeholder=&quot;https://www.domain.com&quot;
   pattern=&quot;(http|https|ftp)://[a-zA-Z0-9-./]*&quot;/&gt;&lt;p&gt;
 &lt;/body&gt;
@@ -16701,13 +16708,11 @@ presents the new HTML5 form attributes.</p>
 
 <h4>&lt;input type=“search”&gt;</h4>
 
-<p>The search type is used for search fields (i.e., for a search
-engine). A search field behaves like a regular text field, except that
-it may provide some feedback GUI for stopping the current request and
-emptying the search field, or it may provide a drop-down list of recent
-search results.<br>
-<br>The specification does not state what the GUI should look like, so
-current implementations show variations in the look and feel.</p>
+<p>The search type is used for search fields (i.e., for a search engine). A search field behaves 
+like a regular text field, except that it may provide some feedback GUI for stopping the current 
+request and emptying the search field, or it may provide a drop-down list of recent search results.<br>
+<br>The specification does not state what the GUI should look like, so current implementations show 
+variations in the look and feel.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 251. input type=search rendered on a smartphone (314) ~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -16722,7 +16727,8 @@ current implementations show variations in the look and feel.</p>
 <pre>&lt;label for=&quot;search1&quot;&gt;Simple search: &lt;/label&gt;
   &lt;input type=search id=&quot;search1&quot;&gt;
   &lt;p&gt;
-    &lt;label for=&quot;search2&quot;&gt;Search with attribute &lt;code&gt;results=5&lt;/code&gt; (try with Safari): &lt;/label&gt;
+    &lt;label for=&quot;search2&quot;&gt;Search with attribute &lt;code&gt;results=5&lt;/code&gt; 
+	  (try with Safari): &lt;/label&gt;
     &lt;input type=search id=&quot;search2&quot; results=5&gt;</pre>
 
 <p>Results on Chrome and Opera desktop - notice the small cross on the
@@ -16808,8 +16814,7 @@ course.</p>
   title="Numeric keyboard on Safari IOS"
   alt="Numeric keyboard on Safari IOS.">
 
-<p>Examples on desktop (the width will be adjusted depending on the min and max 
-attributes):</p>
+<p>Examples on desktop (the width will be adjusted depending on the min and max attributes):</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 256. quantity between 1 and 5 (333) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -16895,8 +16900,8 @@ invalid):</p>
     &lt;input type=&quot;number&quot; id=&quot;number&quot; value=&quot;25&quot; 
       min=&quot;0&quot; step=&quot;5&quot; max=&quot;500&quot;/&gt;
   &lt;p&gt;
-    Change the different values for attributes step, max, min, value. Don&#39;t forget to try step=&quot;any&quot; 
-      for float values...
+    Change the different values for attributes step, max, min, value. Don&#39;t forget 
+	  to try step=&quot;any&quot; for float values...
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -17610,7 +17615,8 @@ required (empty field = invalid)…</p>
   &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;p&gt;Attributes used: placeholder (for displaying a ghost example value), pattern, required (empty = invalid)...
+  &lt;p&gt;Attributes used: placeholder (for displaying a ghost example value), 
+    pattern, required (empty = invalid)...
   &lt;p&gt;
   &lt;label for=&quot;inputID&quot;&gt;Enter a pseudo (6-12 characters): &lt;/label&gt;
   &lt;input id=&quot;inputID&quot; name=&quot;Name&quot;
@@ -18074,9 +18080,9 @@ online example at JSBin</a></p>
 
 <h4>Explanations and how to see the difference between the two kinds of formenctype values</h4>
 
-<p>If you run <a href="https://jsbin.com/lokukam/4/edit?html,output" target="_blank" rel="noopener noreferrer">this example in the
-JSBin</a> standalone mode (click the black arrow on the top right of the
-output tab, in JSBin), you should see this:</p>
+<p>If you run <a href="https://jsbin.com/lokukam/4/edit?html,output" target="_blank" 
+rel="noopener noreferrer">this example in the JSBin</a> standalone mode (click the black arrow on 
+the top right of the output tab, in JSBin), you should see this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 277. formenctype example in jsbin (328) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <a href="https://jsbin.com/lokukam/4/edit?html,output" target="_blank" rel="noopener noreferrer">
@@ -18087,10 +18093,9 @@ output tab, in JSBin), you should see this:</p>
   alt="JS Bin in standalone mode."
   style="width:40%;"></a>
 
-<p>Then, open the devtools and go to the “Network” tab, click on the
-POST request. Once done, click on the right on the “Header” tab to see
-the HTTP headers, and scroll down, you should see the form-data entries
-in the header, like in this screenshot:</p>
+<p>Then, open the devtools and go to the “Network” tab, click on the POST request. Once done, click 
+on the right on the “Header” tab to see the HTTP headers, and scroll down, you should see the form-
+data entries in the header, like in this screenshot:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 278. something went wrong (329) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -18100,16 +18105,14 @@ in the header, like in this screenshot:</p>
   alt="blank blank."
   style="width:40%;">
 
-<p>And if you start again and click on the left submit button, the one
-without the formenctype attribute, you should see that the form content
-has been submitted “normally” (default value is “urlencoded”, spaces are
-replaced by “+”, etc.). Here is a screenshot of what you should see:</p>
+<p>And if you start again and click on the left submit button, the one without the formenctype 
+attribute, you should see that the form content has been submitted “normally” (default value is 
+“urlencoded”, spaces are replaced by “+”, etc.). Here is a screenshot of what you should see:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-6-1">5.6.1 HTML5 Forms Elements</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Let’s look at the HTML5 elements related to forms
-(specifically: &lt;datalist&gt;, &lt;output&gt;, &lt;meter&gt; 
-and &lt;progress&gt; elements).</p>
+<p>Let’s look at the HTML5 elements related to forms (specifically: &lt;datalist&gt;, &lt;output&gt;, 
+&lt;meter&gt;  and &lt;progress&gt; elements).</p>
 
 <div style="width: 100%; text-align: center;">
 <table style="width:100%">
@@ -18295,7 +18298,8 @@ dragging the slider below:</p>
 
 <h4>Source code of the example:</h4>
 
-<pre>&lt;p&gt;Grades: &lt;meter id=&quot;meter2&quot; value=&quot;75&quot; min=&quot;0&quot; low=&quot;20&quot; high=&quot;80&quot; max=&quot;100&quot;&gt;&lt;/meter&gt;
+<pre>&lt;p&gt;Grades: &lt;meter id=&quot;meter2&quot; value=&quot;75&quot; min=&quot;0&quot; low=&quot;20&quot; high=&quot;80&quot; 
+  max=&quot;100&quot;&gt;&lt;/meter&gt;
 &lt;input min=&quot;0&quot; max=&quot;100&quot; value=&quot;75&quot; id=&quot;meter2range&quot;
   oninput=&quot;effect(&#39;meter2&#39;, &#39;meter2range&#39;)&quot; type=&quot;range&quot;&gt;
 &lt;output id=&quot;meter2val&quot; for=&quot;meter2range&quot;&gt;&lt;/output&gt;&lt;/p&gt;
@@ -18639,19 +18643,18 @@ at JSBin</a>, or try it below in your browser:</p>
 
 </details>
 
-<p>Try the online example with different Web browsers, both with and
-without the CSS rules. See the differences between FireFox/Chrome/Opera
-in the default visual feedback behavior. Don’t worry: all default
-behavior can be overridden if you provide your own CSS rules.</p>
+<p>Try the online example with different Web browsers, both with and without the CSS rules. See the 
+differences between FireFox/Chrome/Opera in the default visual feedback behavior. Don’t worry: all 
+default behavior can be overridden if you provide your own CSS rules.</p>
 
-<p>Best practice:  We recommend that you ALWAYS provide default CSS
-rules that give visual feedback to the user’s input.</p>
+<p>Best practice:  We recommend that you ALWAYS provide default CSS rules that give visual feedback 
+to the user’s input.</p>
 
-<h4>Example #2: add CSS transitions + an icon/marker to the right of the
-input fields</h4>
+<h4>Example #2: add CSS transitions + an icon/marker to the right of the input fields</h4>
 
-<p>Try this <a href="https://jsbin.com/zaxije/2/edit" target="_blank" rel="noopener noreferrer">online example at
-JSBin</a> or try it here in your browser. This example adds a small icon that changes depending on the validity of the input field:</p>
+<p>Try this <a href="https://jsbin.com/zaxije/2/edit" target="_blank" rel="noopener noreferrer">
+online example at JSBin</a> or try it here in your browser. This example adds a small icon that 
+changes depending on the validity of the input field:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 289b. last example + css transitions  + icon/marker (345) ~~~~~~~~~~~~~~~~~~-->
 <a href="https://jsbin.com/zaxije/2/edit" target="_blank" rel="noopener noreferrer">
@@ -18682,34 +18685,30 @@ JSBin</a> or try it here in your browser. This example adds a small icon that 
 
 </details>
 
-<p>This time, we just added an attribute class=“myForm” to our form, in
-order to avoid interfering with the other examples on this page, and we
-tweaked the CSS rules a little.</p>
+<p>This time, we just added an attribute class=“myForm” to our form, in order to avoid 
+interfering with the other examples on this page, and we tweaked the CSS rules a little.</p>
 
-<p>The rule at <i>line 1</i> says that any time we click on an input
-field, it will enlarge itself to the right, while the rule at <i>line
-4</i> will make it animated.</p>
+<p>The rule at <i>line 1</i> says that any time we click on an input field, it will enlarge 
+itself to the right, while the rule at <i>line 4</i> will make it animated.</p>
 
-<p>The rules at <i>lines 8</i> and <i>11</i> target the input fields
-with a required attribute. They will change the background by displaying
-a small green or red icon, corresponding to the valid/invalid status of
-the input field.</p>
+<p>The rules at <i>lines 8</i> and <i>11</i> target the input fields with a required attribute. 
+They will change the background by displaying a small green or red icon, corresponding to the 
+valid/invalid status of the input field.</p>
 
 <h4>Use the title attribute for specifying a custom message</h4>
 
-<p>You can simply use the input’s title attribute to provide a message
-for pattern-mismatches, and more generally for all validation errors.
-This solution is really neat and doesn’t require JavaScript!</p>
+<p>You can simply use the input’s title attribute to provide a message for pattern-mismatches, 
+and more generally for all validation errors. This solution is really neat and doesn’t require 
+JavaScript!</p>
 
 <p>Try the <a href="https://jsbin.com/locedoy/1/edit?html,output" 
-target="_blank" rel="noopener noreferrer">online example at JSBin</a>, 
-or try it here in your browser (type invalid values and look at the custom 
-messages):</p>
+target="_blank" rel="noopener noreferrer">online example at JSBin</a>, or try it here in your 
+browser (type invalid values and look at the custom messages):</p>
 
 <h4>Top of Form</h4>
 
-<p>Type invalid values and see the result, this time with custom
-messages! E-mail:  Homepage (URL):  Phone number:  Submit form</p>
+<p>Type invalid values and see the result, this time with custom messages! E-mail:  Homepage 
+(URL):  Phone number:  Submit form</p>
 
 <h4>Bottom of Form</h4>
 
@@ -18732,14 +18731,12 @@ messages! E-mail:  Homepage (URL):  Phone number:  Submit form</p>
 
 </details>
 
-<p><i>Beware</i> that browser implementations may differ. Chrome, Opera
-will display the title attribute value in error message bubbles when the
-form is submitted, while Safari and FireFox (desktop and mobile) will
-simply ignore it.</p>
+<p><i>Beware</i> that browser implementations may differ. Chrome, Opera will display the title 
+attribute value in error message bubbles when the form is submitted, while Safari and FireFox 
+(desktop and mobile) will simply ignore it.</p>
 
-<p>You must also take care of the different languages, otherwise you
-will get error message bubbles that show some parts in the local
-language, and the message from the title attribute “as is”.</p>
+<p>You must also take care of the different languages, otherwise you will get error message bubbles 
+that show some parts in the local language, and the message from the title attribute “as is”.</p>
 
 <h4>Google Chrome on a French desktop computer:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18761,19 +18758,17 @@ language, and the message from the title attribute “as is”.</p>
   alt="Same example on Firefox, the title attribute is ignored."
   style="width:35%;">
   
-<h4>The built-in validation system is an improvement on what existed before
-HTML5 (i.e., nothing), but additional work is required if you want fully
-localized, hand-made validation feedback.</h4>
+<h4>The built-in validation system is an improvement on what existed before HTML5 (i.e., nothing), 
+but additional work is required if you want fully localized, hand-made validation feedback.</h4>
 
 <h4>We will show solutions in the last section of this week’s course.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-7-3">5.7.3 JavaScript Form Validation API</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>There is a JavaScript API for form validation. This API will let you
-use your own validation algorithm (i.e. check that you have entered the
-same password in two different input fields), and customize error
-messages. Also, together with some HTML/CSS/JavaScript you will be able
-to make your own message bubbles.</p>
+<p>There is a JavaScript API for form validation. This API will let you use your own validation 
+algorithm (i.e. check that you have entered the same password in two different input fields), and 
+customize error messages. Also, together with some HTML/CSS/JavaScript you will be able to make your 
+own message bubbles.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 292b. javascript form validation api (347) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -19092,8 +19087,8 @@ values and submit with one or two invalid fields.</p>
   
       // Get the labels&#39; values of their name attributes + the validation error
       // message of the corresponding input field using the validationMessage
-      // property of input fields
-      // We build a list of &lt;li&gt;...&lt;/li&gt; that we add to the error message container
+      // property of input fields. We build a list of &lt;li&gt;...&lt;/li&gt;
+      // that we add to the error message container.
       for (var i = 0; i &lt; invalidFields.length; i++) {
         label = form.querySelector(&quot;label[for=&quot; + invalidFields[ i ].id + &quot;]&quot;);
         listHtml += &quot;&lt;li&gt;&quot; +
@@ -19314,17 +19309,14 @@ Chrome, the “Resources” tab is named “Applications”:</p>
 
 <h4>Differences with cookies?</h4>
 
-<p>Cookies are also a popular way to store key-value pairs. Web Storage,
-however, is a more powerful technique than cookies. The main difference
-is in size limits: cookies are limited to a few KBytes whereas Web
-Storage may extend to several MBytes. Also cookies generate additional
-HTTP request traffic (whether to request a Web page, an image, a
-stylesheet, a JavaScript file, etc.).</p>
+<p>Cookies are also a popular way to store key-value pairs. Web Storage, however, is a more powerful 
+technique than cookies. The main difference is in size limits: cookies are limited to a few KBytes 
+whereas Web Storage may extend to several MBytes. Also cookies generate additional HTTP request traffic 
+(whether to request a Web page, an image, a stylesheet, a JavaScript file, etc.).</p>
 
-<p>Objects managed by Web Storage are no longer carried on the network and
-HTTP, and are easily accessible (read, change and delete) from
-JavaScript, using the Web Storage API.</p>
-
+<p>Objects managed by Web Storage are no longer carried on the network and HTTP, and are easily accessible 
+(read, change and delete) from JavaScript, using the Web Storage API.</p>
+                   
 <h4>External resources</h4>
 
 <ul>
@@ -19338,11 +19330,10 @@ JavaScript, using the Web Storage API.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6-2-2">6.2.2 Example 1</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>You can start filling this form and come back another day and
-complete it. It doesn’t matter if you closed your browser before coming
-back. The form never loses what you entered, even if you reload the
-page, or press “backspace” by mistake. <b>This form auto saves/restores
-its content</b>.</p>
+<p>You can start filling this form and come back another day and complete it. It doesn’t matter if 
+you closed your browser before coming back. The form never loses what you entered, even if you 
+reload the page, or press “backspace” by mistake. <b>This form auto saves/restores its content</b>.</p>
+
 <p>In this example, we use the most simple way to use localStorage:</p>
 
 <ul>
@@ -19372,7 +19363,7 @@ field’s content, we just added:</p>
   loading="lazy"
   title="Example of Localstorage and its HTML code"
   alt="Example of Localstorage and its HTML code."
-  style="width:35%;">
+  style="width:25%;">
 
 <p>In the same way, we added an input listener to all the input fields
 in this example’s form.</p>
@@ -19395,17 +19386,17 @@ example on JSBin</a>: enter data and press reload at any time. The form content 
 <pre>// Called when the page is loaded
 window.onload = restoreFormContent;
 function restoreFormContent() {
-   console.log(&quot;restoring form content from localStorage&quot;);
-   if(localStorage.firstName !== undefined)
-     document.getElementById(&quot;firstName&quot;).value = localStorage.firstName;
-   if(localStorage.lastName !== undefined)
-     document.getElementById(&quot;lastName&quot;).value = localStorage.lastName;
-   if(localStorage.email !== undefined)
-     document.getElementById(&quot;email&quot;).value = localStorage.email;
-   if(localStorage.age !== undefined)
-     document.getElementById(&quot;age&quot;).value = localStorage.age;
-   if(localStorage.date !== undefined)
-     document.getElementById(&quot;date&quot;).value = localStorage.date;
+  console.log(&quot;restoring form content from localStorage&quot;);
+  if(localStorage.firstName !== undefined)
+    document.getElementById(&quot;firstName&quot;).value = localStorage.firstName;
+  if(localStorage.lastName !== undefined)
+    document.getElementById(&quot;lastName&quot;).value = localStorage.lastName;
+  if(localStorage.email !== undefined)
+    document.getElementById(&quot;email&quot;).value = localStorage.email;
+  if(localStorage.age !== undefined)
+    document.getElementById(&quot;age&quot;).value = localStorage.age;
+  if(localStorage.date !== undefined)
+    document.getElementById(&quot;date&quot;).value = localStorage.date;
 }</pre>
 
 </details>
@@ -19482,8 +19473,8 @@ only for debugging purposes!). The following code lists everything in the curren
 
 <pre>for (var i = 0, n = localStorage.length; i &lt; n; i++) {
   var k = localStorage.key(i);
-  console.log(k + &quot;: &quot; + localStorage[k]); // get the ith value, the one with a key that 
-    is in the variable k.}</pre>
+  console.log(k + &quot;: &quot; + localStorage[k]); // get the ith value, the one with
+                                                     // a key that is in the variable k.}</pre>
 
 <p>Students may note that something seems a bit off in the example above: instead of calling 
 localStorage.getItem(k), we simply access localStorage[k]. Why? Because keys in the local store 
@@ -19572,15 +19563,17 @@ Finally, the last one clears the whole data store.</p>
     }
   &lt;/script&gt;
 &lt;/head&gt;
- &lt;body onload=&quot;getCountValue()&quot;&gt;
-   &lt;h1&gt;Number of times this page has been seen on this browser: &lt;span id=&quot;counter&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+  &lt;body onload=&quot;getCountValue()&quot;&gt;
+    &lt;h1&gt;Number of times this page has been seen on this browser: &lt;span id=&quot;counter&quot;
+      &gt;&lt;/span&gt;&lt;/h1&gt;
 
-   &lt;button onclick=&quot;seeAllKeyValuePairsStored()&quot;&gt;Show all key value pairs stored in localStorage&lt;/button&gt;&lt;br/&gt;
-   &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
+    &lt;button onclick=&quot;seeAllKeyValuePairsStored()&quot;&gt;Show all key value pairs stored 
+      in localStorage&lt;/button&gt;&lt;br/&gt;
+    &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
  
-   &lt;button onclick=&quot;addSomeData()&quot;&gt;Add some data to the store&lt;/button&gt;&lt;br/&gt;
-   &lt;button onclick=&quot;removeSomeData()&quot;&gt;Remove some data&lt;/button&gt;&lt;br/&gt;
-   &lt;button onclick=&quot;resetStore()&quot;&gt;reset store (erase all key/value pairs)&lt;/button&gt;
+    &lt;button onclick=&quot;addSomeData()&quot;&gt;Add some data to the store&lt;/button&gt;&lt;br/&gt;
+    &lt;button onclick=&quot;removeSomeData()&quot;&gt;Remove some data&lt;/button&gt;&lt;br/&gt;
+    &lt;button onclick=&quot;resetStore()&quot;&gt;reset store (erase all key/value pairs)&lt;/button&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -20288,9 +20281,11 @@ selected file. Please try it below on your browser (click on the button and choo
   function displayFirstSelectedFileMetadata() {
     var selectedFile = document.getElementById(&#39;input&#39;).files[0];
       document.querySelector(&quot;#singleName&quot;).innerHTML = selectedFile.name;
-      document.querySelector(&quot;#singleSize&quot;).innerHTML = selectedFile.size + &quot; bytes&quot;;
+      document.querySelector(&quot;#singleSize&quot;).innerHTML = selectedFile.size 
+        + &quot; bytes&quot;;
       document.querySelector(&quot;#singleType&quot;).innerHTML = selectedFile.type;
-      document.querySelector(&quot;#singleDate&quot;).innerHTML = selectedFile.lastModifiedDate;
+      document.querySelector(&quot;#singleDate&quot;).innerHTML 
+        = selectedFile.lastModifiedDate;
     }
   &lt;/script&gt;
 &lt;/head&gt;
@@ -21157,7 +21152,8 @@ similar to the getCurrentPosition(onSuccess, onError) named watchPosition(onS
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Typical use</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>// get an id of the current tracking, the showPosition callback is like the one we saw in earlier examples.
+<pre>// get an id of the current tracking, the showPosition 
+// callback is like the one we saw in earlier examples.
 var watchPosId = navigator.geolocation.watchPosition(showPosition);
 ...
 // stop the tracking
@@ -21641,7 +21637,9 @@ is used to convert to a physical address.</p>
   }).addTo(map);
   map.on(&#39;click&#39;, function(e) {
     console.log(e.latlng)
-    geocoder.reverse(e.latlng, map.options.crs.scale(map.getZoom()), function(results) {
+    geocoder.reverse(e.latlng, 
+	  map.options.crs.scale(map.getZoom()), 
+	  function(results) {
       var r = results[0];
      if (r) {
         if (marker) {
@@ -21799,8 +21797,9 @@ online example</a> (for security reasons the embedded version cannot run in thi
     href=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css&quot;/&gt;
   &lt;script 
     src=&quot;https://unpkg.com/leaflet@latest/dist/leaflet-src.js&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js&quot;&gt;
-    &lt;/script&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet-control-
+    geocoder/dist/Control.Geocoder.js&quot;&gt;
+  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;getLocation();&quot;&gt;
   &lt;h1&gt;Example of the use of reverse geocoder in a form&lt;/h1&gt;
