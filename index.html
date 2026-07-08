@@ -8037,11 +8037,13 @@ function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color) {
   ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
     toy-headlen*Math.sin(angle-Math.PI/7));
   // Path from the side point of the arrow, to the other side point.
-  ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
+  ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),
+    toy-headlen*Math.sin(angle+Math.PI/7));
   // Path from the side point back to the tip of the arrow, and then again to the 
   // opposite side point.
   ctx.lineTo(tox, toy);
-  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+    toy-headlen*Math.sin(angle-Math.PI/7));
   // Draws the paths created above.
   ctx.stroke();
   ctx.restore();
@@ -8514,12 +8516,15 @@ function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color) {
   // Starting new path from head of arrow to one of the sides of point
   ctx.beginPath();
   ctx.moveTo(tox, toy);
-  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+    toy-headlen*Math.sin(angle-Math.PI/7));
   // Path from side point of arrow, to other side point
-  ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),toy-headlen*Math.sin(angle+Math.PI/7));
+  ctx.lineTo(tox-headlen*Math.cos(angle+Math.PI/7),
+    toy-headlen*Math.sin(angle+Math.PI/7));
   // Path from side point back to tip of arrow, and to opposite side point
   ctx.lineTo(tox, toy);
-  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),toy-headlen*Math.sin(angle-Math.PI/7));
+  ctx.lineTo(tox-headlen*Math.cos(angle-Math.PI/7),
+    toy-headlen*Math.sin(angle-Math.PI/7));
   // Draws the paths created above
   ctx.stroke();
   ctx.restore();
@@ -8704,7 +8709,8 @@ different colors and line widths:</p>
       // A function to automatize previous drawing
       var angle = Math.PI / 10;
       drawFilledRectangle(300, 150, 150, 150, &#39;pink&#39;, &#39;green&#39;, 10, angle);
-      drawFilledRectangle(300, 150, 150, 150, &#39;yellow&#39;, &#39;purple&#39;, 10, angle + 0.5);
+      drawFilledRectangle(300, 150, 150, 150, &#39;yellow&#39;, 
+	    &#39;purple&#39;, 10, angle + 0.5);
     };
     function drawFilledRectangle(x, y, w, h, fillColor, strokeColor, lw, angle) {
       // Save if the function change the context or coordinate system
@@ -9033,7 +9039,8 @@ what has been used in the previous "Hello World" example.</p>
   &lt;/tr&gt;
   &lt;tr class="even"&gt;
     &lt;td&gt;alphabetic&lt;/td&gt;
-    &lt;td&gt;Bottom of vertically oriented glyphs, e.g. western alphabet like Latin.&lt;/td&gt;
+    &lt;td&gt;Bottom of vertically oriented glyphs, e.g. western alphabet like 
+	  Latin.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr class="odd"&gt;
     &lt;td&gt;ideographic&lt;/td&gt;
@@ -9302,7 +9309,8 @@ in the document, the browser starts downloading it in background.</p>
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
   &lt;p&gt;Original image as an &lt;img&gt; element:&lt;/p&gt;
   &lt;b&gt;&lt;img id=&quot;logo&quot;&lt;/b&gt;
-  &lt;b&gt;src=&quot;https://fc07.deviantart.net/fs70/f/2013/149/b/8/texture_85_by_voyager168-d670m68.jpg&quot;&gt;&lt;/b&gt;
+  &lt;b&gt;src=&quot;https://fc07.deviantart.net/fs70/f/2013/149/b/8/
+    texture_85_by_voyager168-d670m68.jpg&quot;&gt;&lt;/b&gt;
   &lt;script&gt;
     canvas = document.getElementById(&quot;myCanvas&quot;);
     var ctx = canvas.getContext(&quot;2d&quot;);
@@ -9364,8 +9372,8 @@ drawing only from the onload callback function:</p>
 &lt;body&gt;
   &lt;p&gt;A canvas with an image that is further in the page, loaded by the 
     &lt;img src=...&gt; tag. This is not the recommended way to load images, 
-      except if the image is already in your page. Use the onload callback to be sure that the 
-      image is in the page. &lt;/p&gt;
+      except if the image is already in your page. Use the onload callback to 
+	  be sure that the image is in the page. &lt;/p&gt;
     &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;&lt;/canvas&gt;
     &lt;p&gt;Original image is an &amp;lt;img&gt; element:
   &lt;/p&gt;
@@ -9418,13 +9426,14 @@ drawing only from the onload callback function:</p>
   &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;p&gt;It is possible that the drawing in the canvas below appears only after a few seconds, 
-    because the image is very large!&lt;/p&gt;
+  &lt;p&gt;It is possible that the drawing in the canvas below appears only after 
+    a few seconds, because the image is very large!&lt;/p&gt;
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;512&quot; 
     height=&quot;512&quot;&gt;&lt;/canvas&gt;
   &lt;p&gt;Very large original image, declared as an &amp;lt;img&gt; element:
   &lt;/p&gt;
-  &lt;img id=&quot;logo&quot; alt=&quot;logo&quot; src=&quot;https://mainline.i3s.unice.fr/mooc/texture_85_by_voyager168-d670m68.jpg&quot; 
+  &lt;img id=&quot;logo&quot; alt=&quot;logo&quot; 
+    src=&quot;https://mainline.i3s.unice.fr/mooc/texture_85_by_voyager168-d670m68.jpg&quot; 
     width=&quot;512&quot; height=&quot;512&quot;&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
@@ -9741,8 +9750,7 @@ function init() {
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height =400&gt;
     Your browser does not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
 
 <p>Extract from source code (the part that draws the rectangles):</p>
 
@@ -9753,8 +9761,7 @@ function init() {
   var height = Math.random() * h;
   ctx.rect(x, y, width, height); // store a rectangle in path/buffer
 }
-ctx.stroke(); // draws the whole buffer (the 1000 rectangles) at once
-</pre>
+ctx.stroke(); // draws the whole buffer (the 1000 rectangles) at once</pre>
 
 <p>Instead of calling strokeRect(…) or fillRect(…), we just call the rect(…) method of the context 
 (<i>line 7</i>). This is how we can delay the drawing of the rectangles. The 1000 rectangles are 
@@ -10776,11 +10783,17 @@ href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html" target="_
 
 <h4>It works like this:</h4>
 
-<pre>Draw an imaginary line through (x0,y0) and (x1,y1), draw another imaginary line through (x1,y1) and (x2,y2),
-Take an imaginary circle of radius r, and slide it up between the two lines until it just touches both lines. The two points at which the circle touches the lines are called the tangent points.
-arcTo(x1, y1, x2, y2, r) will draw a line from the current point (x0,y0) to the first tangent point on the line from (x0,y0) to (x1,y1),
-It will also draw an arc from that tangent point to the other tangent point on the line from (x1,y1) to (x2,y2) along the circumference of the circle.
-Finally, it adds the tangent point where the arc ends up, on the line from (x1,y1) to (x2,y2) to the path as the new current point on the path.</pre>
+<pre>Draw an imaginary line through (x0,y0) and (x1,y1), draw another imaginary line 
+through (x1,y1) and (x2,y2),
+Take an imaginary circle of radius r, and slide it up between the two lines until 
+it just touches both lines. The two points at which the circle touches the lines are 
+called the tangent points.
+arcTo(x1, y1, x2, y2, r) will draw a line from the current point (x0,y0) to the first 
+tangent point on the line from (x0,y0) to (x1,y1),
+It will also draw an arc from that tangent point to the other tangent point on the 
+line from (x1,y1) to (x2,y2) along the circumference of the circle.
+Finally, it adds the tangent point where the arc ends up, on the line from (x1,y1) 
+to (x2,y2) to the path as the new current point on the path.</pre>
 
 <h4>Examples</h4>
 
@@ -11169,8 +11182,8 @@ call the stroke() method for drawing the curve.</p>
     &lt;title&gt;Lines connected with a quadratic curve - Example #2&lt;/title&gt;
    &lt;/head&gt;
  &lt;body&gt;
-   &lt;canvas id=&quot;myCanvas1&quot; height = 400 width=&quot;800&quot;&gt;Your browser does not support the 
-   canvas tag.&lt;/canvas&gt;
+   &lt;canvas id=&quot;myCanvas1&quot; height = 400 width=&quot;800&quot;&gt;Your browser does 
+   not support the canvas tag.&lt;/canvas&gt;
   &lt;script type=&quot;text/javascript&quot;&gt;
       var canvas=document.querySelector(&#39;#myCanvas1&#39;);
       var context=canvas.getContext(&#39;2d&#39;);
@@ -11246,7 +11259,8 @@ color) {
   ctx.strokeStyle = color;
   ctx.lineWidth = lineWidth;
   // Angle of the end tangeant, useful for drawing the arrow head.
-  var arrowAngle = Math.atan2(quadPointX - endPointX, quadPointY - endPointY) + Math.PI;
+  var arrowAngle = Math.atan2(quadPointX - endPointX, 
+    quadPointY - endPointY) + Math.PI;
   // Start a new path.
   ctx.beginPath();
   ctx.moveTo(startPointX, startPointY);
@@ -11305,7 +11319,8 @@ color) {
     ctx.strokeStyle = color;
     ctx.lineWidth = lineWidth;
     // Angle of the end tangeant, useful for drawing the arrow head.
-    var arrowAngle = Math.atan2(quadPointX - endPointX, quadPointY - endPointY) + Math.PI;
+    var arrowAngle = Math.atan2(quadPointX - endPointX, quadPointY 
+      - endPointY) + Math.PI;
     // Start a new path.
     ctx.beginPath();
     // Body of the arrow.
@@ -11423,8 +11438,8 @@ ctx.stroke();</pre>
     &lt;title&gt;Bézier curve - Example #1&lt;/title&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;canvas id=&quot;myCanvas1&quot; height = 400 width=&quot;800&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
-    &lt;script type=&quot;text/javascript&quot;&gt;
+    &lt;canvas id=&quot;myCanvas1&quot; height = 400 width=&quot;800&quot;&gt;Your browser 
+	does not support the canvas tag.&lt;/canvas&gt; &lt;script type=&quot;text/javascript&quot;&gt;
       var canvas=document.querySelector(&#39;#myCanvas1&#39;);
       var context=canvas.getContext(&#39;2d&#39;);
       context.beginPath();
@@ -11475,11 +11490,12 @@ context.stroke();</pre>
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Path with Bézier curve, quadratic curve and line in the same, closed path - Example #2&lt;/title&gt;
+  &lt;title&gt;Path with Bézier curve, quadratic curve and line in the same, closed 
+    path - Example #2&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
- &lt;canvas id=&quot;myCanvas1 height = 400 width=&quot;800&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
- &lt;script type=&quot;text/javascript&quot;&gt;
+ &lt;canvas id=&quot;myCanvas1 height = 400 width=&quot;800&quot;&gt;Your browser does not 
+   support the canvas tag.&lt;/canvas&gt; &lt;script type=&quot;text/javascript&quot;&gt;
     var canvas=document.querySelector(&#39;#myCanvas1&#39;);
     var context=canvas.getContext(&#39;2d&#39;);
     context.beginPath();
@@ -11635,7 +11651,7 @@ colors, like in this example below:</p>
 <h4>JS source code:</h4>
 
 <details>
-  <summary><b>JavaScript code extract!</b></summary>
+  <summary><b>JS code extract!</b></summary>
 
 <pre>var canvas, ctx, grdFrenchFlag;
 function init() {
@@ -11676,7 +11692,8 @@ function draw() {
   &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does 
+    not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -11879,7 +11896,8 @@ function drawCheckboard(n) {
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Drawing shapes that do not cover the whole gradient - Example #2 bis&lt;/title&gt;
+    &lt;title&gt;Drawing shapes that do not cover the whole gradient - 
+	  Example #2 bis&lt;/title&gt;
     &lt;style&gt;
       #myCanvas1 {
         border: 1px solid black;
@@ -11887,8 +11905,8 @@ function drawCheckboard(n) {
     &lt;/style&gt;
   &lt;/head&gt;
   &lt;body onload=&quot;init();&quot;&gt;
-    &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.
-    &lt;/canvas&gt;
+    &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does 
+	  not support the canvas tag.&lt;/canvas&gt;
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -11963,7 +11981,8 @@ function drawCheckboard(n) {
    &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas   tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does 
+    not support the canvas   tag.&lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -12049,7 +12068,8 @@ function draw() {
   &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-   &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+   &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does 
+     not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -12122,7 +12142,8 @@ function draw() {
   &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does 
+    not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -12201,7 +12222,8 @@ function drawCheckboard(n) {
   &lt;/style&gt;
 &lt;/head&gt;
   &lt;body onload=&quot;init();&quot;&gt;
-    &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+    &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does 
+	  not support the canvas tag.&lt;/canvas&gt;
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -12302,7 +12324,8 @@ function draw() {
     &lt;/style&gt;
   &lt;/head&gt;
   &lt;body onload=&quot;init();&quot;&gt;
-      &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+      &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does 
+	    not support the canvas tag.&lt;/canvas&gt;
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -12397,7 +12420,8 @@ function draw() {
   &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas1&quot; width=&quot;300&quot; height=200&gt;Your browser does 
+    not support the canvas tag.&lt;/canvas&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -21918,6 +21942,7 @@ good understanding of the material.</p>
   Last updated 04-12-26 Sun 2:14pm<br>
   Last updated 05-19-26 Tue 7:28pm<br>
   Last updated 06-09-26 Tue 4:20pm</h6>
+  Last updated 07-07-26 Tue 9:52pm</h6>
   
   <script src="/js/scripts.js"></script>
 
