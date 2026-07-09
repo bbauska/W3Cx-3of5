@@ -8396,7 +8396,7 @@ function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color) {
 
 </details>
 
-<br/>
+<br/><br/>
 
 <details>
   <summary><b>HTML source code:</b></summary>
@@ -8463,6 +8463,9 @@ function drawArrow(ctx, fromx, fromy, tox, toy, arrowWidth, color) {
 &lt;/html&gt;</pre>
 
 </details>
+<br/><br/>
+<details>
+  <summary><b>JS source code:</b></summary>
 
 <pre>ctx.translate(100, 100);
 ctx.rotate(Math.PI/4);
@@ -8471,6 +8474,8 @@ ctx.scale(0.5, 0.5);
 drawMonster(0, 0);
 // Draw a filled rectagle at (250, 0)
 ctx.fillRect(250, 0, 100, 100);</pre>
+
+</details>
 
 <h4>How can we reset the coordinate system, how can we go back to the previous one?</h4>
 
@@ -10783,17 +10788,18 @@ href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html" target="_
 
 <h4>It works like this:</h4>
 
-<pre>Draw an imaginary line through (x0,y0) and (x1,y1), draw another imaginary line 
-through (x1,y1) and (x2,y2),
-Take an imaginary circle of radius r, and slide it up between the two lines until 
-it just touches both lines. The two points at which the circle touches the lines are 
-called the tangent points.
-arcTo(x1, y1, x2, y2, r) will draw a line from the current point (x0,y0) to the first 
-tangent point on the line from (x0,y0) to (x1,y1),
-It will also draw an arc from that tangent point to the other tangent point on the 
-line from (x1,y1) to (x2,y2) along the circumference of the circle.
-Finally, it adds the tangent point where the arc ends up, on the line from (x1,y1) 
-to (x2,y2) to the path as the new current point on the path.</pre>
+<pre>Draw an imaginary line through (x0,y0) and (x1,y1), 
+draw another imaginary line through (x1,y1) and (x2,y2),
+Take an imaginary circle of radius r, and slide it up between the two lines 
+until it just touches both lines. 
+The two points at which the circle touches the lines are called the tangent points.
+arcTo(x1, y1, x2, y2, r) will draw a line from the current point (x0,y0) 
+to the first tangent point on the line from (x0,y0) to (x1,y1),
+It will also draw an arc from that tangent point to the other tangent point 
+on the line from (x1,y1) to (x2,y2) along the circumference of the circle.
+Finally, it adds the tangent point where the arc ends up, 
+on the line from (x1,y1) to (x2,y2) 
+to the path as the new current point on the path.</pre>
 
 <h4>Examples</h4>
 
@@ -12214,7 +12220,8 @@ function drawCheckboard(n) {
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Drawing shapes that share the same gradient as a whole - Example #6&lt;/title&gt;
+  &lt;title&gt;Drawing shapes that share the same gradient as a whole - 
+    Example #6&lt;/title&gt;
   &lt;style&gt;
     #myCanvas1 {
       border: 1px solid black;
@@ -13272,7 +13279,8 @@ apply to rectangles.</p>
 <p>We have seen this before. This is done by changing the value (in
 pixels) of the lineWidth property of the context:</p>
 
-<pre>ctx.lineWidth = 10; // Set the thickness of every shape drawn in stroke/wireframe mode to 10 pixels</pre>
+<pre>ctx.lineWidth = 10; // Set the thickness of every shape drawn in stroke/wireframe 
+  mode to 10 pixels</pre>
 
 <p>Here is a complete example where we draw with a lineWidth of 20 pixels:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -13296,7 +13304,8 @@ pixels) of the lineWidth property of the context:</p>
     &lt;title&gt;A simple example of lineWidth property use&lt;/title&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+    &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the 
+	  canvas tag.&lt;/canvas&gt;
     &lt;script&gt;
       var canvas = document.getElementById(&#39;myCanvas&#39;);
       var ctx = canvas.getContext(&#39;2d&#39;);
@@ -13357,7 +13366,8 @@ of “round” or “square” makes the lines slightly longer than the default 
   &lt;title&gt;Changing the end caps of a line - Example #2&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the 
+    canvas tag.&lt;/canvas&gt;
   &lt;script&gt;
     var canvas = document.getElementById(&#39;myCanvas&#39;);
     var ctx = canvas.getContext(&#39;2d&#39;);
@@ -13412,7 +13422,8 @@ Possible values are miter (the default) for creating sharp corners, round, or
   &lt;title&gt;Setting the type of corner when two lines meet - Example #3&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the canvas tag.&lt;/canvas&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;500&quot;&gt;Your browser does not support the 
+    canvas tag.&lt;/canvas&gt;
   &lt;script&gt;
     var canvas = document.getElementById(&#39;myCanvas&#39;);
     var ctx = canvas.getContext(&#39;2d&#39;);
@@ -14620,14 +14631,16 @@ the focus: a border is added to it.</p>
   &lt;/style&gt;
 &lt;/head&gt;
 &lt;body onload=&quot;init();&quot;&gt;
-  This example shows how to handle key events in a canvas by adding a key listener to the canvas object 
-  (see the blue border around the canvas... it shows that the canvas has the focus. Try to click outside 
-  of the canvas: it will lose the focus).
+  This example shows how to handle key events in a canvas by adding a key 
+  listener to the canvas object (see the blue border around the canvas... 
+  it shows that the canvas has the focus. Try to click outside of the canvas: 
+  it will lose the focus).
   &lt;p&gt;
     If you don&#39;t want a border to appear when you click on the canvas, 
     set its style to outline: none
   &lt;/p&gt;
-  &lt;p&gt;Press a key when the canvas has the focus: an alert will display the keycode of the key you pressed. 
+  &lt;p&gt;Press a key when the canvas has the focus: an alert will display 
+    the keycode of the key you pressed. 
     Problem: if the canvas looses the focus, key press are no more detected...&lt;/p&gt;
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; 
     tabindex=&quot;1&quot; height=&quot;200&quot;&gt;
@@ -14720,7 +14733,8 @@ the mouse cursor goes out of the canvas, we call canvas.blur() to unset the fo
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Setting the focus when the mouse cursor enters the canvas - Example #4&lt;/title&gt;
+  &lt;title&gt;Setting the focus when the mouse cursor enters the canvas - 
+    Example #4&lt;/title&gt;
   &lt;style type=&quot;text/css&quot;&gt;
     canvas {
       border:1px solid black;
@@ -14944,8 +14958,8 @@ window.onload = function init() {
   }, false);
   canvas.addEventListener(&#39;mousedown&#39;, function (evt) {
     mouseButton = evt.button;
-    var message = &quot;Mouse button &quot; + evt.button + &quot; down at position: &quot; 
-    + mousePos.x + &#39;,&#39; + mousePos.y;
+    var message = &quot;Mouse button &quot; + evt.button + &quot; 
+	  down at position: &quot; + mousePos.x + &#39;,&#39; + mousePos.y;
     writeMessage(canvas, message);
   }, false);
   canvas.addEventListener(&#39;mouseup&#39;, function (evt) {
@@ -15197,7 +15211,8 @@ function animationLoop() {
   // 2 - Draw
   drawMonster(monsterX, monsterY, monsterAngle, &#39;green&#39;, &#39;yellow&#39;);
   // 3 - Move
-  if(mousePos !== undefined) { // test necessary, maybe the mouse is not yet on canvas
+  if(mousePos !== undefined) { 
+    // test necessary, maybe the mouse is not yet on canvas
     monsterX = mousePos.x;
     monsterY = mousePos.y;
     monsterAngle += incrementAngle;
@@ -16479,8 +16494,10 @@ try all the different possible values for the type attribute of date pickers.</p
   src="./images/image239.webp"
   loading="lazy"
   style="width:20%;"
-  title="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element"
-  alt="Screenshot showing on the left the webcam video stream, and on the right the same stream recorded and playable in a HTML video element.">
+  title="Screenshot showing on the left the webcam video stream, and on the right the same stream 
+  recorded and playable in a HTML video element"
+  alt="Screenshot showing on the left the webcam video stream, and on the right the same stream 
+  recorded and playable in a HTML video element.">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 240. jun 7, 2011 select date/time (308) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -16547,18 +16564,16 @@ email input. Note the “@” key, the “.” key, etc.</p>
   title="Contextual mobile keyboard for entering an email address"
   alt="Contextual mobile keyboard for entering an email address.">
 
-<p>This input type is very interesting as it provides default validation
-behaviors:</p>
+<p>This input type is very interesting as it provides default validation behaviors:</p>
 
-<p>If the value entered looks like an email address (contains a “@”…),
-the field is <i>valid</i>, and gets the pseudo CSS class  :valid</p>
+<p>If the value entered looks like an email address (contains a “@”…), the field is <i>valid</i>, 
+and gets the pseudo CSS class  :valid</p>
 
-<p>If the value entered does not contain an “@”, and does not look like
-an email address, the field is <i>invalid</i> and gets the pseudo CSS
-class :invalid</p>
+<p>If the value entered does not contain an “@”, and does not look like an email address, the field 
+is <i>invalid</i> and gets the pseudo CSS class :invalid</p>
 
-<p>See the next example to see this in action. More details will be
-presented in a later section dedicated to form validation.</p>
+<p>See the next example to see this in action. More details will be presented in a later section 
+dedicated to form validation.</p>
 
 <p>Typical use:
 <a href="https://codepen.io/w3devcampus/pen/aWXKWR" target="_blank" rel="noopener noreferrer">
@@ -16598,17 +16613,15 @@ target="_blank" rel="noopener noreferrer">CodePen example; enter your email</a>.
 
 </details>
 
-<p>Note the CSS rule that turns the background color of the email input
-field to pink if a user enters an invalid address (<i>lines 7-8</i>).
-Also note that the validation is based only on matching a regular
-expression (the address should contain a “@”,  a “.”, etc.). It does not
-check if the address is an existing one.</p>
+<p>Note the CSS rule that turns the background color of the email input field to pink if a user 
+enters an invalid address (<i>lines 7-8</i>). Also note that the validation is based only on 
+matching a regular expression (the address should contain a “@”,  a “.”, etc.). It does not check 
+if the address is an existing one.</p>
 
 <h4>&lt;input type=“tel”&gt;</h4>
 
-<p>This input field is really useful on smartphones and tablets, as it
-makes the browser pop up a keyboard layout suitable for entering phone
-numbers:</p>
+<p>This input field is really useful on smartphones and tablets, as it makes the browser pop up a 
+keyboard layout suitable for entering phone numbers:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 247. enter your telephone number (311) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -16641,8 +16654,8 @@ rel="noopener noreferrer">Online example on CodePen</a></p>
   title="Enter a telephone number"
   alt="Enter a telephone number.">
 
-<p>Try it in your browser (we used the same CSS for changing the background-
-color when the input value is invalid):</p>
+<p>Try it in your browser (we used the same CSS for changing the background-color when the input 
+value is invalid):</p>
 
 <h4>Enter a telephone number:</h4>
 
@@ -16674,9 +16687,8 @@ color when the input value is invalid):</p>
 
 <h4>&lt;input type=“URL”&gt;</h4>
 
-<p>This input field is really useful on smartphones and tablets, as it
-makes the browser pop up a keyboard layout suitable for entering
-URLs:</p>
+<p>This input field is really useful on smartphones and tablets, as it makes the browser pop up a 
+keyboard layout suitable for entering URLs:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 250. mobile keyboard for entering urls (313) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
@@ -16853,28 +16865,21 @@ course.</p>
 <p>This field accepts specific attributes max, min, step, value (default
 displayed value).</p>
 
-<p>This input type is very interesting as it provides default validation
-behaviors:</p>
+<p>This input type is very interesting as it provides default validation behaviors:</p>
 
-<p>If the value entered using a keyboard is not a valid number, or is
-not in the range defined by the min and max attributes, the field
-is <i>invalid</i> and gets the pseudo CSS class :invalid.</p>
+<p>If the value entered using a keyboard is not a valid number, or is not in the range defined by  the min and max attributes, the field is <i>invalid</i> and gets the pseudo CSS class :invalid.</p>
 
-<p>If the difference between the value you enter and min is a multiple
-of step, then it gets the CSS pseudo class :valid , otherwise it will
-be <i>invalid</i>. Example: if min=1 and step=5, the field will be valid
-with value=1, 6, 11, 16 etc. if min=0, with value=0, 5, 10, 15 etc.</p>
+<p>If the difference between the value you enter and min is a multiple of step, then it gets the 
+CSS pseudo class :valid , otherwise it will be <i>invalid</i>. Example: if min=1 and step=5, the 
+field will be valid with value=1, 6, 11, 16 etc. if min=0, with value=0, 5, 10, 15 etc.</p>
 
-<p><b>WARNING 1</b>: <b>Using a step attribute with an integer value
-will make the arrows increment/decrement the current value with
-the step value, and [make the input field valid only when ]the
-difference between the value you enter and min is a multiple
-of step.</b></p>
+<p><b>WARNING 1</b>: <b>Using a step attribute with an integer value will make the arrows increment/
+decrement the current value with the step value, and [make the input field valid only when] the 
+difference between the value you enter and min is a multiple of step.</b></p>
 
-<p><b>WARNING 2: by default, omitting the step attribute is equivalent
-to step=“1”, [so for entering float values, it is necessary to
-use step=“any” or step equal to a floating point value such
-as step=“0.1”].</b></p>
+<p><b>WARNING 2: by default, omitting the step attribute is equivalent to step=“1”, [so for entering 
+float values, it is necessary to use step=“any” or step equal to a floating point value such as 
+step=“0.1”].</b></p>
 
 <p><b>With step=“any”, floating point values are valid, but vertical
 arrows will increment/decrement the value by one. If step=“0.1”, arrows
@@ -16892,12 +16897,10 @@ attribute values, use step=“any” and try float values, etc).</p>
   title="Change attribute values.  Use step=any and try float values"
   alt="Change attribute values.  Use step=any and try float values.">
 
-<p>Or, do it here in your browser (Manually enter a value that is not in
-the range, or not a multiple of 5, try the up and down arrows,
-etc.):</p>
+<p>Or, do it here in your browser (Manually enter a value that is not in the range, or not a 
+multiple of 5, try the up and down arrows, etc.):</p>
 
-<p>Quantity (between 0 and 500, should be a multiple of 5 otherwise it’s
-invalid):</p>
+<p>Quantity (between 0 and 500, should be a multiple of 5 otherwise it’s invalid):</p>
 
 <h4>Source code:</h4>
 
@@ -16916,14 +16919,15 @@ invalid):</p>
   &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  Example of &lt;code&gt;&lt;input type=number&gt;&lt;/code&gt;:&lt;p&gt;
+  Example of &lt;code&gt;&lt;input type=number&gt;&lt;/code&gt;:
+  &lt;p&gt;
   &lt;label for=&quot;number&quot;&gt;Quantity (between 0 and 500, should be a multiple of 5 
   otherwise it&#39;s invalid): &lt;/label&gt;
     &lt;input type=&quot;number&quot; id=&quot;number&quot; value=&quot;25&quot; 
       min=&quot;0&quot; step=&quot;5&quot; max=&quot;500&quot;/&gt;
-  &lt;p&gt;
-    Change the different values for attributes step, max, min, value. Don&#39;t forget 
-      to try step=&quot;any&quot; for float values...
+    Change the different values for attributes step, max, min, value. Don&#39;t 
+    forget to try step=&quot;any&quot; for float values...
+  &lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -17009,7 +17013,8 @@ up and down arrow keys when the field has the focus):</h4>
   &lt;/style&gt;
   &lt;script&gt;
     window.onload = function() {
-      // Called when the page is loaded, for displaying initial value in the output
+      // Called when the page is loaded, for displaying initial value 
+      // in the output
       printValue(&#39;slider1&#39;,&#39;rangeValue1&#39;);
     }
     function printValue(sliderId, outputId) {
@@ -17434,7 +17439,8 @@ the use of  required, placeholder and pattern attributes.</p>
   &lt;/head&gt;
 &lt;body&gt;
   &lt;form&gt;
-    &lt;label for=&quot;studentID&quot;&gt;Student ID (disabled field, cannot type in it): &lt;/label&gt;
+    &lt;label for=&quot;studentID&quot;&gt;Student ID (disabled field, cannot 
+	  type in it): &lt;/label&gt;
     &lt;input type=&quot;text&quot; value=&quot;S134356&quot; id=&quot;studentID&quot; disabled/&gt;&lt;p&gt;
     &lt;label for=&quot;name&quot;&gt;First name: &lt;/label&gt;
       &lt;input type=&quot;text&quot; id=&quot;firstName&quot;
@@ -17709,9 +17715,10 @@ input field types.</p>
   value=&quot;12:00&quot;
 /&gt;
 &lt;input id=&quot;range&quot; name=&quot;range&quot; type=&quot;range&quot; 
-      min=&quot;0&quot; 
-    max=&quot;100&quot; 
-    step=&quot;5&quot;/&gt;</pre>
+  min=&quot;0&quot; 
+  max=&quot;100&quot; 
+  step=&quot;5&quot;
+/&gt;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18095,7 +18102,8 @@ online example at JSBin</a></p>
         formenctype=&quot;multipart/form-data&quot;
         value=&quot;Submit as Multipart/form-data&quot;&gt;
     &lt;/form&gt;
-    &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The formenctype attribute is not supported by all browsers.&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The formenctype attribute is not 
+      supported by all browsers.&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -19496,8 +19504,9 @@ only for debugging purposes!). The following code lists everything in the curren
 
 <pre>for (var i = 0, n = localStorage.length; i &lt; n; i++) {
   var k = localStorage.key(i);
-  console.log(k + &quot;: &quot; + localStorage[k]); // get the ith value, the one with
-                                                     // a key that is in the variable k.}</pre>
+  // get the ith value, the one with
+  // a key that is in the variable k.}
+  console.log(k + &quot;: &quot; + localStorage[k]);</pre>
 
 <p>Students may note that something seems a bit off in the example above: instead of calling 
 localStorage.getItem(k), we simply access localStorage[k]. Why? Because keys in the local store 
@@ -19586,17 +19595,17 @@ Finally, the last one clears the whole data store.</p>
     }
   &lt;/script&gt;
 &lt;/head&gt;
-  &lt;body onload=&quot;getCountValue()&quot;&gt;
-    &lt;h1&gt;Number of times this page has been seen on this browser: &lt;span id=&quot;counter&quot;
-      &gt;&lt;/span&gt;&lt;/h1&gt;
+&lt;body onload=&quot;getCountValue()&quot;&gt;
+  &lt;h1&gt;Number of times this page has been seen on this 
+    browser: &lt;span id=&quot;counter&quot; &gt;&lt;/span&gt;&lt;/h1&gt;
 
-    &lt;button onclick=&quot;seeAllKeyValuePairsStored()&quot;&gt;Show all key value pairs stored 
-      in localStorage&lt;/button&gt;&lt;br/&gt;
-    &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
+  &lt;button onclick=&quot;seeAllKeyValuePairsStored()&quot;&gt;Show all key value pairs stored 
+    in localStorage&lt;/button&gt;&lt;br/&gt;
+  &lt;output id=&quot;list&quot;&gt;&lt;/output&gt;
  
-    &lt;button onclick=&quot;addSomeData()&quot;&gt;Add some data to the store&lt;/button&gt;&lt;br/&gt;
-    &lt;button onclick=&quot;removeSomeData()&quot;&gt;Remove some data&lt;/button&gt;&lt;br/&gt;
-    &lt;button onclick=&quot;resetStore()&quot;&gt;reset store (erase all key/value pairs)&lt;/button&gt;
+  &lt;button onclick=&quot;addSomeData()&quot;&gt;Add some data to the store&lt;/button&gt;&lt;br/&gt;
+  &lt;button onclick=&quot;removeSomeData()&quot;&gt;Remove some data&lt;/button&gt;&lt;br/&gt;
+  &lt;button onclick=&quot;resetStore()&quot;&gt;reset store (erase all key/value pairs)&lt;/button&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
@@ -20473,8 +20482,8 @@ clicking on a &lt;input type=file&gt; input field). Below, we use, as an examp
   <summary><b>Click to expand!</b></summary>
 
 <pre>function readFileContent(f) {
-  // Executed last: called only when the file content is loaded, e.target.result is
-  // The content
+  // Executed last: called only when the file content is loaded, 
+  // e.target.result is the content
   reader.onload = function(e) {
     var content = e.target.result;
     // do something with the file content
@@ -20557,8 +20566,8 @@ Example at JSBin</a>, or try it below in your browser:</p>
     console.log(&quot;In readFileContent&quot;);
     var reader = new FileReader();
 
-    // Executed last: called when the file content is loaded, e.target.result is
-    // The content
+    // Executed last: called when the file content is loaded, 
+    // e.target.result is the content
     reader.onload = function(e) {
       // display content in the textarea with id=&quot;fileContent&quot;
       document.getElementById(&quot;fileContent&quot;).value= e.target.result;
@@ -20566,8 +20575,8 @@ Example at JSBin</a>, or try it below in your browser:</p>
 
     console.log(&quot;Reading file:&quot; + files[0].name);
 
-    // Executed first: start reading the file asynchronously , will call the onload
-    // callback when the file is read
+    // Executed first: start reading the file asynchronously , will call the
+    // onload callback when the file is read
     reader.readAsText(files[0]);
   }
 &lt;/script&gt;
@@ -21129,7 +21138,8 @@ obtained though the available means”:</p>
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(showPosition, errorPosition);
         } else {
-          displayCoords.innerHTML=&quot;Geolocation API not supported by your browser.&quot;;
+          displayCoords.innerHTML=&quot;Geolocation API not supported by 
+            your browser.&quot;;
         }
       }
       function showPosition(position) {
@@ -21146,7 +21156,8 @@ obtained though the available means”:</p>
             info += &quot;Permission denied, geolocation could not be obtained...&quot;;
             break;
           case error.POSITION_UNAVAILABLE:
-            info += &quot;Location could not be obtained though the available means...&quot;;
+            info += &quot;Location could not be obtained though the available 
+              means...&quot;;
             break;
           case error.UNKNOWN_ERROR:
             info += &quot;Unknown error&quot;;
@@ -21295,8 +21306,7 @@ function success(position) {
 // Get current position fail
 function error() {
   alert(&#39;Get current position fail. Please access codepen to get geolocation.&#39;);
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -21941,8 +21951,9 @@ good understanding of the material.</p>
   Last updated 04-06-26 Mon 11:29am<br>
   Last updated 04-12-26 Sun 2:14pm<br>
   Last updated 05-19-26 Tue 7:28pm<br>
-  Last updated 06-09-26 Tue 4:20pm</h6>
-  Last updated 07-07-26 Tue 9:52pm</h6>
+  Last updated 06-09-26 Tue 4:20pm<br>
+  Last updated 07-07-26 Tue 9:52pm<br>
+  Last updated 07-09-26 Thu 4:45pm</h6>
   
   <script src="/js/scripts.js"></script>
 
