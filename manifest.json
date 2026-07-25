@@ -1,7 +1,7 @@
 {
   "name": "W3Cx-3of5-HTML5.1x",
   "short_name": "W3Cx-3of5", 
-  "start_url": "/w3cx-3of5.bauska.org",
+  "start_url": "index.html",
   "display": "standalone",
   "icons": [
     {
