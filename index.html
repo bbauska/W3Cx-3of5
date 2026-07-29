@@ -3106,7 +3106,8 @@ Michel Jamón in Spanish…</p>
 
 <p>Using the translate=“no” attribute should prevent this behavior…</p>
 
-<pre>&lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt; is a professor from the University of Nice, France.</pre>
+<pre>&lt;span &lt;b&gt;[translate=&quot;no&quot;]&lt;/b&gt; class=&quot;author&quot;&gt;[Michel Ham]&lt;/span&gt; 
+is a professor from the University of Nice, France.</pre>
 
 <p>Will be correctly translated into French by:</p>
 
@@ -6163,10 +6164,11 @@ function changeFilter(el) {
 &lt;body&gt;
   &lt;h1&gt;Example of CSS effects on a live video stream&lt;/h1&gt;
   &lt;p&gt;
-    Click the button &quot;start webcam at the end of this page, then click on the video to toggle the 
-    different effects.&lt;/p&gt;
+    Click the button &quot;start webcam at the end of this page, then click 
+	on the video to toggle the different effects.&lt;/p&gt;
   &lt;/p&gt;
-  &lt;video onclick=&quot;changeFilter(this);&quot; width=400 height=400 id=&quot;video&quot; controls autoplay&gt;&lt;/video&gt;
+  &lt;video onclick=&quot;changeFilter(this);&quot; width=400 height=400 id=&quot;video&quot; 
+    controls autoplay&gt;&lt;/video&gt;
   &lt;p&gt;
     &lt;button onclick=&quot;startWebcam();&quot;&gt;Start WebCam&lt;/button&gt;
     &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
@@ -6263,7 +6265,8 @@ function snapshot() {
     &lt;button onclick=&quot;stopWebcam();&quot;&gt;Stop WebCam&lt;/button&gt;
     &lt;button onclick=&quot;snapshot();&quot;&gt;Prendre un screenshot&lt;/button&gt;
   &lt;/p&gt;
-  &lt;video onclick=&quot;snapshot(this);&quot; width=200 height=200 id=&quot;video&quot; controls autoplay&gt;&lt;/video&gt;
+  &lt;video onclick=&quot;snapshot(this);&quot; width=200 height=200 id=&quot;video&quot; 
+    controls autoplay&gt;&lt;/video&gt;
   &lt;p&gt;
     Screenshots : &lt;/p&gt;
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;150&quot;&gt;&lt;/canvas&gt;
@@ -6439,7 +6442,8 @@ function getMedia(constraints) {
     https://www.simpl.info/getusermedia/constraints/
   &lt;/a&gt;
   &lt;br&gt;
-  &lt;p&gt;Click a button to call &lt;code&gt;getUserMedia()&lt;/code&gt; with appropriate resolution. &lt;/p&gt;
+  &lt;p&gt;Click a button to call &lt;code&gt;getUserMedia()&lt;/code&gt; with 
+    appropriate resolution. &lt;/p&gt;
   &lt;div id=&quot;buttons&quot;&gt;
     &lt;button id=&quot;qvga&quot;&gt;QVGA&lt;/button&gt;
     &lt;button id=&quot;vga&quot;&gt;VGA&lt;/button&gt;
@@ -6756,7 +6760,8 @@ video#gumVideo {
       &lt;button id=&quot;play&quot; disabled&gt;Play&lt;/button&gt;
       &lt;button id=&quot;download&quot; disabled&gt;Download&lt;/button&gt;
     &lt;/div&gt;
-    &lt;a href=&quot;https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record&quot; 
+    &lt;a href=&quot;https://github.com/webrtc/samples/tree/
+	  gh-pages/src/content/getusermedia/record&quot; 
       title=&quot;View source for this page on GitHub&quot; 
       id=&quot;viewSource&quot;&gt;View source on GitHub&lt;/a&gt;
   &lt;/div&gt;
@@ -6976,7 +6981,8 @@ target="_blank" rel="noopener noreferrer">this example on JS Bin</a>:</p>
     &lt;td&gt;11&lt;/td&gt;
     &lt;td&gt;&lt;&lt;a href="https://december.com/html/4/element/h1.html" target="_blank" 
       rel="noopener noreferrer"&gt;&lt;b&gt;h1&lt;/b&gt;&lt;/a&gt;&gt;JavaScript 
-      debugging using the dev tool console&lt;/&lt;a href="https://december.com/html/4/element/h1.html"
+      debugging using the dev tool console&lt;/&lt;a 
+	  href="https://december.com/html/4/element/h1.html"
       target="_blank" rel="noopener noreferrer"&gt;&lt;b&gt;h1&lt;/b&gt;&lt;/a&gt;&gt;&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr class="even"&gt;
@@ -10801,7 +10807,8 @@ href="http://www.dbp-consulting.com/tutorials/canvas/CanvasArcTo.html" target="_
 draw another imaginary line through (x1,y1) and (x2,y2),
 Take an imaginary circle of radius r, and slide it up between the two lines 
 until it just touches both lines. 
-The two points at which the circle touches the lines are called the tangent points.
+The two points at which the circle touches the lines are called the 
+tangent points.
 arcTo(x1, y1, x2, y2, r) will draw a line from the current point (x0,y0) 
 to the first tangent point on the line from (x0,y0) to (x1,y1),
 It will also draw an arc from that tangent point to the other tangent point 
@@ -14650,7 +14657,8 @@ the focus: a border is added to it.</p>
   &lt;/p&gt;
   &lt;p&gt;Press a key when the canvas has the focus: an alert will display 
     the keycode of the key you pressed. 
-    Problem: if the canvas looses the focus, key press are no more detected...&lt;/p&gt;
+    Problem: if the canvas looses the focus, key press are no more detected...
+  &lt;/p&gt;
   &lt;canvas id=&quot;myCanvas&quot; width=&quot;350&quot; 
     tabindex=&quot;1&quot; height=&quot;200&quot;&gt;
   &lt;/canvas&gt;
@@ -15140,7 +15148,8 @@ window.onload = function init() {
     writeMessage(canvas, message);
   }, false);
   canvas.addEventListener(&#39;mouseup&#39;, function (evt) {
-    var message = &quot;Mouse up at position: &quot; + mousePos.x + &#39;,&#39; + mousePos.y;
+    var message = &quot;Mouse up at position: &quot; + mousePos.x 
+      + &#39;,&#39; + mousePos.y;
     writeMessage(canvas, message);
   }, false);
 };
@@ -21964,6 +21973,7 @@ good understanding of the material.</p>
   Last updated 07-07-26 Tue 9:52pm<br>
   Last updated 07-09-26 Thu 4:45pm<br>
   Last updated 07-12-26 Sun 7:41pm</h6>
+  Last updated 07-28-26 Tue 10:17pm</h6>
   
   <script src="/js/scripts.js"></script>
 
